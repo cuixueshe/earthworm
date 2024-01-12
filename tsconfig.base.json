@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/.nuxt/**",
+    "**/nuxt.d.ts",
+    "**/examples/**",
+    "**/docs/**",
+    "**/playground/**",
+    "**/test/**",
+  ]
+}

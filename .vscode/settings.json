@@ -1,0 +1,30 @@
+{
+  // Use `eslint` for vue, ts and js
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[js]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[ts]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue"
+  ],
+  // Tailwind Support, see https://tailwindcss.nuxt.dev/tailwind/editor-support
+  "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.cjs",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // Auto-complete `.value` attribute when volar is installed
+  "volar.autoCompleteRefs": true,
+}

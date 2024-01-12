@@ -1,0 +1,23 @@
+{
+  "name": "earthwrom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:push": "drizzle-kit push:mysql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "drizzle-kit": "^0.20.10",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "^0.7.1",
+    "drizzle-orm": "^0.29.3",
+    "mysql2": "^3.7.0",
+    "zod": "^3.22.4"
+  }
+}
