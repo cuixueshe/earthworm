@@ -33,6 +33,9 @@ importers:
 
   apps/api:
     dependencies:
+      '@earthwrom/shared':
+        specifier: workspace:*
+        version: link:../../libs/shared
       '@nestjs/common':
         specifier: ^10.0.0
         version: 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)

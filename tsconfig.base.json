@@ -17,6 +17,9 @@
     "types": [
       "node"
     ],
+    "paths": {
+        "@shared/*": ["libs/shared/src/*"],
+    }
   },
   "exclude": [
     "**/dist/**",
