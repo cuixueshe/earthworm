@@ -24,6 +24,7 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "^7.1.17",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
     "start": "^5.1.0"
