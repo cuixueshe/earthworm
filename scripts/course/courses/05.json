@@ -1,0 +1,1027 @@
+[
+	{
+		"chinese": "可以",
+		"english": "can",
+		"soundmark": "/kæn/"
+	},
+	{
+		"chinese": "我可以",
+		"english": "I can",
+		"soundmark": "/aɪ/ /kæn/"
+	},
+	{
+		"chinese": "做这件事",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我可以做这件事",
+		"english": "I can do it",
+		"soundmark": "/aɪ/ /kæn/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "单独",
+		"english": "alone",
+		"soundmark": "/ə'lon/"
+	},
+	{
+		"chinese": "我可以单独做这件事",
+		"english": "I can do it alone",
+		"soundmark": "/aɪ/ /kæn/ /du/ /ɪt/ /ə'lon/"
+	},
+	{
+		"chinese": "我不可以单独做这件事",
+		"english": "I can not do it alone",
+		"soundmark": "/aɪ/ /kæn/ /nɑt/ /du/ /ɪt/ /ə'lon/"
+	},
+	{
+		"chinese": "你必须帮助我",
+		"english": "you have to help me",
+		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "你必须帮助我因为我不可以单独做这件事",
+		"english": "you have to help me because I can not do it alone",
+		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /bɪ'kɔz/ /aɪ/ /kæn/ /nɑt/ /du/ /ɪt/ /ə'lon/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "be here",
+		"soundmark": "/bi/ /hɪr/"
+	},
+	{
+		"chinese": "我可以在这里",
+		"english": "I can be here",
+		"soundmark": "/aɪ/ /kæn/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "我可以明天在这里",
+		"english": "I can be here tomorrow",
+		"soundmark": "/aɪ/ /kæn/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"chinese": "我不可以明天在这里",
+		"english": "I can not be here tomorrow",
+		"soundmark": "/aɪ/ /kæn/ /nɑt/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"chinese": "他需要知道",
+		"english": "he needs to know",
+		"soundmark": "/hi/ /nidz/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "他需要知道是否我可以明天在这里",
+		"english": "he needs to know if I can be here tomorrow",
+		"soundmark": "/hi/ /nidz/ /tə/ /no/ /ɪf/ /aɪ/ /kæn/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "eat the food",
+		"soundmark": "/it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我可以吃这个食物",
+		"english": "I can eat the food",
+		"soundmark": "/aɪ/ /kæn/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我可以现在吃这个食物",
+		"english": "I can eat the food now",
+		"soundmark": "/aɪ/ /kæn/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "我不可以现在吃这个食物",
+		"english": "I can not eat the food now",
+		"soundmark": "/aɪ/ /kæn/ /nɑt/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "我想要知道",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "我想要知道是否我可以现在吃这个食物",
+		"english": "I want to know if I can eat the food now",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /kæn/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "tell me",
+		"soundmark": "/tɛl/ /mi/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉我事实",
+		"english": "tell me the truth",
+		"soundmark": "/tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你可以告诉我事实",
+		"english": "you can tell me the truth",
+		"soundmark": "/ju/ /kæn/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你不可以告诉我事实",
+		"english": "you can not tell me the truth",
+		"soundmark": "/ju/ /kæn/ /nɑt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我需要知道",
+		"english": "I need to know",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "我需要知道是否你可以告诉我事实",
+		"english": "I need to know if you can tell me the truth",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "帮助我",
+		"english": "help me",
+		"soundmark": "/hɛlp/ /mi/"
+	},
+	{
+		"chinese": "你可以帮助我",
+		"english": "you can help me",
+		"soundmark": "/ju/ /kæn/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "你不可以帮助我",
+		"english": "you can not help me",
+		"soundmark": "/ju/ /kæn/ /nɑt/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "我需要知道是否你可以帮助我",
+		"english": "I need to know if you can help me",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "在家里",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "read at home",
+		"soundmark": "/rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "你可以在家里阅读",
+		"english": "you can read at home",
+		"soundmark": "/ju/ /kæn/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "你不可以在家里阅读",
+		"english": "you can not read at home",
+		"soundmark": "/ju/ /kæn/ /nɑt/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "你需要告诉我",
+		"english": "you need to tell me",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "你需要告诉我原因",
+		"english": "you need to tell me the reason",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "为什么",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"chinese": "你需要告诉我原因为什么你不可以在家里阅读",
+		"english": "you need to tell me the reason why you can not read at home",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /ˈrizən/ /waɪ/ /ju/ /kæn/ /nɑt/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "他可以",
+		"english": "he can",
+		"soundmark": "/hi/ /kæn/"
+	},
+	{
+		"chinese": "他可以做这件事",
+		"english": "he can do it",
+		"soundmark": "/hi/ /kæn/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "以后",
+		"english": "later",
+		"soundmark": "/'letɚ/"
+	},
+	{
+		"chinese": "他可以以后做这件事",
+		"english": "he can do it later",
+		"soundmark": "/hi/ /kæn/ /du/ /ɪt/ /'letɚ/"
+	},
+	{
+		"chinese": "他不可以以后做这件事",
+		"english": "he can not do it later",
+		"soundmark": "/hi/ /kæn/ /nɑt/ /du/ /ɪt/ /'letɚ/"
+	},
+	{
+		"chinese": "和我说话",
+		"english": "talk with me",
+		"soundmark": "/tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "他可以和我说话",
+		"english": "he can talk with me",
+		"soundmark": "/hi/ /kæn/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "今晚",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"chinese": "他今晚可以和我说话",
+		"english": "he can talk with me tonight",
+		"soundmark": "/hi/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "他今晚不可以和我说话",
+		"english": "he can not talk with me tonight",
+		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "我想要知道",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "我想要知道是否他今晚可以和我说话",
+		"english": "I want to know if he can talk with me tonight",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /hi/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "她可以",
+		"english": "she can",
+		"soundmark": "/ʃi/ /kæn/"
+	},
+	{
+		"chinese": "解释",
+		"english": "explain",
+		"soundmark": "/ɪk'splen/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "解释原因",
+		"english": "explain the reason",
+		"soundmark": "/ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "她可以解释原因",
+		"english": "she can explain the reason",
+		"soundmark": "/ʃi/ /kæn/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "她不可以解释原因",
+		"english": "she can not explain the reason",
+		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "为什么",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"chinese": "他今晚不可以和我说话",
+		"english": "he can not talk with me tonight",
+		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "她可以解释原因为什么他今晚不可以和我说话",
+		"english": "she can explain the reason why he can not talk with me tonight",
+		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "问我",
+		"english": "ask me",
+		"soundmark": "/æsk/ /mi/"
+	},
+	{
+		"chinese": "一个问题",
+		"english": "a question",
+		"soundmark": "/ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "问我一个问题",
+		"english": "ask me a question",
+		"soundmark": "/æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "她可以问我一个问题",
+		"english": "she can ask me a question",
+		"soundmark": "/ʃi/ /kæn/ /æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "它可以",
+		"english": "it can",
+		"soundmark": "/ɪt/ /kæn/"
+	},
+	{
+		"chinese": "飞翔",
+		"english": "fly",
+		"soundmark": "/flaɪ/"
+	},
+	{
+		"chinese": "它可以飞翔",
+		"english": "it can fly",
+		"soundmark": "/ɪt/ /kæn/ /flaɪ/"
+	},
+	{
+		"chinese": "在天空中",
+		"english": "in the sky",
+		"soundmark": "/ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "它可以在天空中飞翔",
+		"english": "it can fly in the sky",
+		"soundmark": "/ɪt/ /kæn/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "它不可以在天空中飞翔",
+		"english": "it can not fly in the sky",
+		"soundmark": "/ɪt/ /kæn/ /nɑt/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "解释",
+		"english": "explain",
+		"soundmark": "/ɪk'splen/"
+	},
+	{
+		"chinese": "它可以解释",
+		"english": "it can explain",
+		"soundmark": "/ɪt/ /kæn/ /ɪk'splen/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "它可以解释原因",
+		"english": "it can explain the reason",
+		"soundmark": "/ɪt/ /kæn/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "它不可以解释原因",
+		"english": "it can not explain the reason",
+		"soundmark": "/ɪt/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "星荣可以",
+		"english": "Xingrong can",
+		"soundmark": "/kæn/"
+	},
+	{
+		"chinese": "散步",
+		"english": "walk",
+		"soundmark": "/wɔk/"
+	},
+	{
+		"chinese": "在公园里",
+		"english": "in the park",
+		"soundmark": "/ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "在公园里散步",
+		"english": "walk in the park",
+		"soundmark": "/wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "星荣可以在公园里散步",
+		"english": "Xingrong can walk in the park",
+		"soundmark": "/kæn/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "星荣不可以在公园里散步",
+		"english": "Xingrong can not walk in the park",
+		"soundmark": "/kæn/ /nɑt/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "应该",
+		"english": "should",
+		"soundmark": "/ʃʊd/"
+	},
+	{
+		"chinese": "我应该",
+		"english": "I should",
+		"soundmark": "/aɪ/ /ʃʊd/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "eat the food",
+		"soundmark": "/it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我应该吃这个食物",
+		"english": "I should eat the food",
+		"soundmark": "/aɪ/ /ʃʊd/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我不应该吃这个食物",
+		"english": "I should not eat the food",
+		"soundmark": "/aɪ/ /ʃʊd/ /nɑt/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "和你说话",
+		"english": "talk with you",
+		"soundmark": "/tɔk/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "我应该和你说话",
+		"english": "I should talk with you",
+		"soundmark": "/aɪ/ /ʃʊd/ /tɔk/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "我不应该和你说话",
+		"english": "I should not talk with you",
+		"soundmark": "/aɪ/ /ʃʊd/ /nɑt/ /tɔk/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "相信你",
+		"english": "believe you",
+		"soundmark": "/bɪ'liv/ /ju/"
+	},
+	{
+		"chinese": "我应该相信你",
+		"english": "I should believe you",
+		"soundmark": "/aɪ/ /ʃʊd/ /bɪ'liv/ /ju/"
+	},
+	{
+		"chinese": "我不应该相信你",
+		"english": "I should not believe you",
+		"soundmark": "/aɪ/ /ʃʊd/ /nɑt/ /bɪ'liv/ /ju/"
+	},
+	{
+		"chinese": "你应该",
+		"english": "you should",
+		"soundmark": "/ju/ /ʃʊd/"
+	},
+	{
+		"chinese": "帮助我",
+		"english": "help me",
+		"soundmark": "/hɛlp/ /mi/"
+	},
+	{
+		"chinese": "你应该帮助我",
+		"english": "you should help me",
+		"soundmark": "/ju/ /ʃʊd/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "你应该现在帮助我",
+		"english": "you should help me now",
+		"soundmark": "/ju/ /ʃʊd/ /hɛlp/ /mi/ /naʊ/"
+	},
+	{
+		"chinese": "你不应该现在帮助我",
+		"english": "you should not help me now",
+		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /hɛlp/ /mi/ /naʊ/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "be here",
+		"soundmark": "/bi/ /hɪr/"
+	},
+	{
+		"chinese": "你应该在这里",
+		"english": "you should be here",
+		"soundmark": "/ju/ /ʃʊd/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "你应该每天在这里",
+		"english": "you should be here every day",
+		"soundmark": "/ju/ /ʃʊd/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "你不应该每天在这里",
+		"english": "you should not be here every day",
+		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "阅读",
+		"english": "read",
+		"soundmark": "/rid/"
+	},
+	{
+		"chinese": "你应该阅读",
+		"english": "you should read",
+		"soundmark": "/ju/ /ʃʊd/ /rid/"
+	},
+	{
+		"chinese": "在家里",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"chinese": "你应该在家里阅读",
+		"english": "you should read at home",
+		"soundmark": "/ju/ /ʃʊd/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "你不应该在家里阅读",
+		"english": "you should not read at home",
+		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "他应该",
+		"english": "he should",
+		"soundmark": "/hi/ /ʃʊd/"
+	},
+	{
+		"chinese": "和我说话",
+		"english": "talk with me",
+		"soundmark": "/tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "他应该和我说话",
+		"english": "he should talk with me",
+		"soundmark": "/hi/ /ʃʊd/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "他不应该和我说话",
+		"english": "he should not talk with me",
+		"soundmark": "/hi/ /ʃʊd/ /nɑt/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "read at home",
+		"soundmark": "/rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "他应该在家里阅读",
+		"english": "he should read at home",
+		"soundmark": "/hi/ /ʃʊd/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "他不应该在家里阅读",
+		"english": "he should not read at home",
+		"soundmark": "/hi/ /ʃʊd/ /nɑt/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "她应该",
+		"english": "she should",
+		"soundmark": "/ʃi/ /ʃʊd/"
+	},
+	{
+		"chinese": "在公园里散步",
+		"english": "walk in the park",
+		"soundmark": "/wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "她应该在公园里散步",
+		"english": "she should walk in the park",
+		"soundmark": "/ʃi/ /ʃʊd/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "她不应该在公园里散步",
+		"english": "she should not walk in the park",
+		"soundmark": "/ʃi/ /ʃʊd/ /nɑt/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "sleep",
+		"soundmark": "/slip/"
+	},
+	{
+		"chinese": "在床上",
+		"english": "on the bed",
+		"soundmark": "/ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "在床上睡觉",
+		"english": "sleep on the bed",
+		"soundmark": "/slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "她应该在床上睡觉",
+		"english": "she should sleep on the bed",
+		"soundmark": "/ʃi/ /ʃʊd/ /slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "她不应该在床上睡觉",
+		"english": "she should not sleep on the bed",
+		"soundmark": "/ʃi/ /ʃʊd/ /nɑt/ /slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "它应该",
+		"english": "it should",
+		"soundmark": "/ɪt/ /ʃʊd/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "be here",
+		"soundmark": "/bi/ /hɪr/"
+	},
+	{
+		"chinese": "它应该在这里",
+		"english": "it should be here",
+		"soundmark": "/ɪt/ /ʃʊd/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "它不应该在这里",
+		"english": "it should not be here",
+		"soundmark": "/ɪt/ /ʃʊd/ /nɑt/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "星荣应该在这里",
+		"english": "Xingrong should be here",
+		"soundmark": "/ʃʊd/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "星荣不应该在这里",
+		"english": "Xingrong should not be here",
+		"soundmark": "/ʃʊd/ /nɑt/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "将会",
+		"english": "will",
+		"soundmark": "/wɪl/"
+	},
+	{
+		"chinese": "我将会",
+		"english": "I will",
+		"soundmark": "/aɪ/ /wɪl/"
+	},
+	{
+		"chinese": "见到你",
+		"english": "see you",
+		"soundmark": "/si/ /ju/"
+	},
+	{
+		"chinese": "我将会见到你",
+		"english": "I will see you",
+		"soundmark": "/aɪ/ /wɪl/ /si/ /ju/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "我明天将会见到你",
+		"english": "I will see you tomorrow",
+		"soundmark": "/aɪ/ /wɪl/ /si/ /ju/ /tə'mɔro/"
+	},
+	{
+		"chinese": "我明天将不会见到你",
+		"english": "I will not see you tomorrow",
+		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /si/ /ju/ /tə'mɔro/"
+	},
+	{
+		"chinese": "告诉你",
+		"english": "tell you",
+		"soundmark": "/tɛl/ /ju/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉你事实",
+		"english": "tell you the truth",
+		"soundmark": "/tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我将会告诉你事实",
+		"english": "I will tell you the truth",
+		"soundmark": "/aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我将不会告诉你事实",
+		"english": "I will not tell you the truth",
+		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "未来",
+		"english": "the future",
+		"soundmark": "/ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "在未来",
+		"english": "in the future",
+		"soundmark": "/ɪn/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "我将会在未来告诉你事实",
+		"english": "I will tell you the truth in the future",
+		"soundmark": "/aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "我将不会在未来告诉你事实",
+		"english": "I will not tell you the truth in the future",
+		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是不重要的",
+		"english": "it is not important",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "它是不重要的所以我将会在未来告诉你事实",
+		"english": "it is not important so I will tell you the truth in the future",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /so/ /aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "解释",
+		"english": "explain",
+		"soundmark": "/ɪk'splen/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "解释原因",
+		"english": "explain the reason",
+		"soundmark": "/ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "我将会解释原因",
+		"english": "I will explain the reason",
+		"soundmark": "/aɪ/ /wɪl/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "星期",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"chinese": "下周",
+		"english": "next week",
+		"soundmark": "/nekst/ /wik/"
+	},
+	{
+		"chinese": "我将会在下周解释原因",
+		"english": "I will explain the reason next week",
+		"soundmark": "/aɪ/ /wɪl/ /ɪk'splen/ /ðə/ /ˈrizən/ /nekst/ /wik/"
+	},
+	{
+		"chinese": "我将不会在下周解释原因",
+		"english": "I will not explain the reason next week",
+		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/ /nekst/ /wik/"
+	},
+	{
+		"chinese": "紧急的",
+		"english": "urgent",
+		"soundmark": "/'ɝdʒənt/"
+	},
+	{
+		"chinese": "它是不紧急的",
+		"english": "it is not urgent",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "它是不紧急的所以我将会在下周解释原因",
+		"english": "it is not urgent so I will explain the reason next week",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/ /so/ /aɪ/ /wɪl/ /ɪk'splen/ /ðə/ /ˈrizən/ /nekst/ /wik/"
+	},
+	{
+		"chinese": "你将会",
+		"english": "you will",
+		"soundmark": "/ju/ /wɪl/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "read at home",
+		"soundmark": "/rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "你将会在家里阅读",
+		"english": "you will read at home",
+		"soundmark": "/ju/ /wɪl/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "今晚",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"chinese": "你今晚将会在家里阅读",
+		"english": "you will read at home tonight",
+		"soundmark": "/ju/ /wɪl/ /rid/ /ət/ /hom/ /tə'naɪt/"
+	},
+	{
+		"chinese": "你今晚将不会在家里阅读",
+		"english": "you will not read at home tonight",
+		"soundmark": "/ju/ /wɪl/ /nɑt/ /rid/ /ət/ /hom/ /tə'naɪt/"
+	},
+	{
+		"chinese": "在床上睡觉",
+		"english": "sleep on the bed",
+		"soundmark": "/slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "你今晚将会在床上睡觉",
+		"english": "you will sleep on the bed tonight",
+		"soundmark": "/ju/ /wɪl/ /slip/ /ɑn/ /ðə/ /bɛd/ /tə'naɪt/"
+	},
+	{
+		"chinese": "你今晚将不会在床上睡觉",
+		"english": "you will not sleep on the bed tonight",
+		"soundmark": "/ju/ /wɪl/ /nɑt/ /slip/ /ɑn/ /ðə/ /bɛd/ /tə'naɪt/"
+	},
+	{
+		"chinese": "他将会",
+		"english": "he will",
+		"soundmark": "/hi/ /wɪl/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "tell me",
+		"soundmark": "/tɛl/ /mi/"
+	},
+	{
+		"chinese": "他将会告诉我",
+		"english": "he will tell me",
+		"soundmark": "/hi/ /wɪl/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他将会告诉我事实",
+		"english": "he will tell me the truth",
+		"soundmark": "/hi/ /wɪl/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他将不会告诉我事实",
+		"english": "he will not tell me the truth",
+		"soundmark": "/hi/ /wɪl/ /nɑt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "相信我",
+		"english": "believe me",
+		"soundmark": "/bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "他将会相信我",
+		"english": "he will believe me",
+		"soundmark": "/hi/ /wɪl/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "他将不会相信我",
+		"english": "he will not believe me",
+		"soundmark": "/hi/ /wɪl/ /nɑt/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "她将会",
+		"english": "she will",
+		"soundmark": "/ʃi/ /wɪl/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "tell me",
+		"soundmark": "/tɛl/ /mi/"
+	},
+	{
+		"chinese": "她将会告诉我",
+		"english": "she will tell me",
+		"soundmark": "/ʃi/ /wɪl/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "一个故事",
+		"english": "a story",
+		"soundmark": "/ə/ /'stɔri/"
+	},
+	{
+		"chinese": "她将会告诉我一个故事",
+		"english": "she will tell me a story",
+		"soundmark": "/ʃi/ /wɪl/ /tɛl/ /mi/ /ə/ /'stɔri/"
+	},
+	{
+		"chinese": "今晚",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"chinese": "她今晚将会告诉我一个故事",
+		"english": "she will tell me a story tonight",
+		"soundmark": "/ʃi/ /wɪl/ /tɛl/ /mi/ /ə/ /'stɔri/ /tə'naɪt/"
+	},
+	{
+		"chinese": "她今晚将不会告诉我一个故事",
+		"english": "she will not tell me a story tonight",
+		"soundmark": "/ʃi/ /wɪl/ /nɑt/ /tɛl/ /mi/ /ə/ /'stɔri/ /tə'naɪt/"
+	},
+	{
+		"chinese": "帮助我",
+		"english": "help me",
+		"soundmark": "/hɛlp/ /mi/"
+	},
+	{
+		"chinese": "她将会帮助我",
+		"english": "she will help me",
+		"soundmark": "/ʃi/ /wɪl/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "她将不会帮助我",
+		"english": "she will not help me",
+		"soundmark": "/ʃi/ /wɪl/ /nɑt/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "它将会",
+		"english": "it will",
+		"soundmark": "/ɪt/ /wɪl/"
+	},
+	{
+		"chinese": "在天空中飞翔",
+		"english": "fly in the sky",
+		"soundmark": "/flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "它将会在天空中飞翔",
+		"english": "it will fly in the sky",
+		"soundmark": "/ɪt/ /wɪl/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "它将不会在天空中飞翔",
+		"english": "it will not fly in the sky",
+		"soundmark": "/ɪt/ /wɪl/ /nɑt/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	}
+]

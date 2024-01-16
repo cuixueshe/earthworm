@@ -4,3 +4,5 @@ export const course = mysqlTable("courses", {
     id: int("id").autoincrement().primaryKey(),
     title: text("title").notNull(),
 })
+
+export type NewCourse = typeof course.$inferInsert

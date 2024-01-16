@@ -1,0 +1,16 @@
+{
+    "name": "@earthwrom/scripts-courses",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.ts",
+    "scripts": {
+        "data:create": "tsx createCourses.ts",
+        "data:upload": "tsx uploadCourseData.ts"
+    },
+    "dependencies": {
+        "pdf-parse": "^1.1.1"
+    },
+    "devDependencies": {
+        "@types/pdf-parse": "^1.1.4"
+    }
+}

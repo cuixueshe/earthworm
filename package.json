@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "db:push": "drizzle-kit push:mysql"
+    "db:push": "drizzle-kit push:mysql",
+    "data:init": "pnpm -F @earthwrom/scripts-courses data:create && pnpm -F @earthwrom/scripts-courses data:upload"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "dotenv": "^16.3.1",
     "drizzle-kit": "^0.20.10",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {

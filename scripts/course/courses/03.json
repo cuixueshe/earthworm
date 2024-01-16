@@ -1,0 +1,917 @@
+[
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "它；这件事情",
+		"english": "it",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"chinese": "我需要做这件事情",
+		"english": "I need to do it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "我需要今天做这件事情",
+		"english": "I need to do it today",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "你需要",
+		"english": "you need",
+		"soundmark": "/ju/ /nid/"
+	},
+	{
+		"chinese": "你需要今天做这件事情",
+		"english": "you need to do it today",
+		"soundmark": "/ju/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他需要",
+		"english": "he needs",
+		"soundmark": "/hi/ /nidz/"
+	},
+	{
+		"chinese": "他需要今天做这件事情",
+		"english": "he needs to do it today",
+		"soundmark": "/hi/ /nidz/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "相信",
+		"english": "to believe",
+		"soundmark": "/tə/ /bɪ'liv/"
+	},
+	{
+		"chinese": "相信我",
+		"english": "to believe me",
+		"soundmark": "/tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "他需要相信我",
+		"english": "he needs to believe me",
+		"soundmark": "/hi/ /nidz/ /tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她需要",
+		"english": "she needs",
+		"soundmark": "/ʃi/ /nidz/"
+	},
+	{
+		"chinese": "她需要相信我",
+		"english": "she needs to believe me",
+		"soundmark": "/ʃi/ /nidz/ /tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "这个食物",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "现在吃这个食物",
+		"english": "to eat the food now",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "她需要",
+		"english": "she needs",
+		"soundmark": "/ʃi/ /nidz/"
+	},
+	{
+		"chinese": "她需要现在吃这个食物",
+		"english": "she needs to eat the food now",
+		"soundmark": "/ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "它",
+		"english": "it",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "它需要",
+		"english": "it needs",
+		"soundmark": "/ɪt/ /nidz/"
+	},
+	{
+		"chinese": "它需要现在吃这个食物",
+		"english": "it needs to eat the food now",
+		"soundmark": "/ɪt/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "to sleep",
+		"soundmark": "/tə/ /slip/"
+	},
+	{
+		"chinese": "它需要睡觉",
+		"english": "it needs to sleep",
+		"soundmark": "/ɪt/ /nidz/ /tə/ /slip/"
+	},
+	{
+		"chinese": "星荣需要",
+		"english": "Xingrong needs",
+		"soundmark": "/nidz/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "to sleep",
+		"soundmark": "/tə/ /slip/"
+	},
+	{
+		"chinese": "星荣需要睡觉",
+		"english": "Xingrong needs to sleep",
+		"soundmark": "/nidz/ /tə/ /slip/"
+	},
+	{
+		"chinese": "某件事",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "重要的某件事",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "告诉你",
+		"english": "to tell you",
+		"soundmark": "/tə/ /tɛl/ /ju/"
+	},
+	{
+		"chinese": "告诉你重要的某件事",
+		"english": "to tell you something important",
+		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"chinese": "我想要告诉你重要的某件事",
+		"english": "I want to tell you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "你想要",
+		"english": "you want",
+		"soundmark": "/ju/ /wɑnt/"
+	},
+	{
+		"chinese": "你想要告诉我重要的某件事",
+		"english": "you want to tell me something important",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /tɛl/ /mi/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "他想要",
+		"english": "he wants",
+		"soundmark": "/hi/ /wɑnts/"
+	},
+	{
+		"chinese": "他想要告诉我重要的某件事",
+		"english": "he wants to tell me something important",
+		"soundmark": "/hi/ /wɑnts/ /tə/ /tɛl/ /mi/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "解释",
+		"english": "to explain",
+		"soundmark": "/tə/ /ɪk'splen/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "解释原因",
+		"english": "to explain the reason",
+		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "他想要",
+		"english": "he wants",
+		"soundmark": "/hi/ /wɑnts/"
+	},
+	{
+		"chinese": "他想要解释原因",
+		"english": "he wants to explain the reason",
+		"soundmark": "/hi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "她想要",
+		"english": "she wants",
+		"soundmark": "/ʃi/ /wɑnts/"
+	},
+	{
+		"chinese": "她想要解释原因",
+		"english": "she wants to explain the reason",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "她需要",
+		"english": "she needs",
+		"soundmark": "/ʃi/ /nidz/"
+	},
+	{
+		"chinese": "她现在需要吃这个食物",
+		"english": "she needs to eat the food now",
+		"soundmark": "/ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "为什么",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"chinese": "她想要解释原因为什么她现在需要吃这个食物",
+		"english": "she wants to explain the reason why she needs to eat the food now",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "问",
+		"english": "to ask",
+		"soundmark": "/tə/ /æsk/"
+	},
+	{
+		"chinese": "问我",
+		"english": "to ask me",
+		"soundmark": "/tə/ /æsk/ /mi/"
+	},
+	{
+		"chinese": "一个问题",
+		"english": "a question",
+		"soundmark": "/ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "问我一个问题",
+		"english": "to ask me a question",
+		"soundmark": "/tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "她想要",
+		"english": "she wants",
+		"soundmark": "/ʃi/ /wɑnts/"
+	},
+	{
+		"chinese": "她想要问我一个问题",
+		"english": "she wants to ask me a question",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "关于",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"chinese": "这个食物",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"chinese": "关于这个食物的一个问题",
+		"english": "a question about the food",
+		"soundmark": "/ə/ /'kwɛstʃən/ /ə'baʊt/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "她想要问我关于这个食物的一个问题",
+		"english": "she wants to ask me a question about the food",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/ /ə'baʊt/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "飞翔",
+		"english": "to fly",
+		"soundmark": "/tə/ /flaɪ/"
+	},
+	{
+		"chinese": "天空",
+		"english": "sky",
+		"soundmark": "/skaɪ/"
+	},
+	{
+		"chinese": "在天空中",
+		"english": "in the sky",
+		"soundmark": "/ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "在天空中飞翔",
+		"english": "to fly in the sky",
+		"soundmark": "/tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "这个小鸟",
+		"english": "the bird",
+		"soundmark": "/ðə/ /bɝd/"
+	},
+	{
+		"chinese": "这个小鸟想要",
+		"english": "the bird wants",
+		"soundmark": "/ðə/ /bɝd/ /wɑnts/"
+	},
+	{
+		"chinese": "这个小鸟想要在天空中飞翔",
+		"english": "the bird wants to fly in the sky",
+		"soundmark": "/ðə/ /bɝd/ /wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "星荣想要",
+		"english": "Xingrong wants",
+		"soundmark": "/wɑnts/"
+	},
+	{
+		"chinese": "星荣想要在天空中飞翔",
+		"english": "Xingrong wants to fly in the sky",
+		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bət/"
+	},
+	{
+		"chinese": "不可能的",
+		"english": "impossible",
+		"soundmark": "/ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "它是不可能的",
+		"english": "it is impossible",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "星荣想要在天空中飞翔但是它是不可能的",
+		"english": "Xingrong wants to fly in the sky but it is impossible",
+		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/ /bət/ /ɪt/ /ɪz/ /ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "在家里",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "to read at home",
+		"soundmark": "/tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "我喜欢",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
+	},
+	{
+		"chinese": "我喜欢在家里阅读",
+		"english": "I like to read at home",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "你喜欢",
+		"english": "you like",
+		"soundmark": "/ju/ /laɪk/"
+	},
+	{
+		"chinese": "你喜欢在家里阅读",
+		"english": "you like to read at home",
+		"soundmark": "/ju/ /laɪk/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "他喜欢",
+		"english": "he likes",
+		"soundmark": "/hi/ /laɪks/"
+	},
+	{
+		"chinese": "他喜欢在家里阅读",
+		"english": "he likes to read at home",
+		"soundmark": "/hi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "散步",
+		"english": "to walk",
+		"soundmark": "/tə/ /wɔk/"
+	},
+	{
+		"chinese": "公园",
+		"english": "park",
+		"soundmark": "/pɑrk/"
+	},
+	{
+		"chinese": "在公园里",
+		"english": "in the park",
+		"soundmark": "/ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "在公园里散步",
+		"english": "to walk in the park",
+		"soundmark": "/tə/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "他喜欢",
+		"english": "he likes",
+		"soundmark": "/hi/ /laɪks/"
+	},
+	{
+		"chinese": "他喜欢在公园里散步",
+		"english": "he likes to walk in the park",
+		"soundmark": "/hi/ /laɪks/ /tə/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "她喜欢",
+		"english": "she likes",
+		"soundmark": "/ʃi/ /laɪks/"
+	},
+	{
+		"chinese": "她喜欢在公园里散步",
+		"english": "she likes to walk in the park",
+		"soundmark": "/ʃi/ /laɪks/ /tə/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "to sleep",
+		"soundmark": "/tə/ /slip/"
+	},
+	{
+		"chinese": "床",
+		"english": "bed",
+		"soundmark": "/bɛd/"
+	},
+	{
+		"chinese": "在床上",
+		"english": "on the bed",
+		"soundmark": "/ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "在床上睡觉",
+		"english": "to sleep on the bed",
+		"soundmark": "/tə/ /slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "他喜欢",
+		"english": "he likes",
+		"soundmark": "/hi/ /laɪks/"
+	},
+	{
+		"chinese": "他喜欢在床上睡觉",
+		"english": "he likes to sleep on the bed",
+		"soundmark": "/hi/ /laɪks/ /tə/ /slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "星荣喜欢",
+		"english": "Xingrong likes",
+		"soundmark": "/laɪks/"
+	},
+	{
+		"chinese": "星荣喜欢在床上睡觉",
+		"english": "Xingrong likes to sleep on the bed",
+		"soundmark": "/laɪks/ /tə/ /slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉你事实",
+		"english": "to tell you the truth",
+		"soundmark": "/tə/ /tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我必须告诉你事实",
+		"english": "I have to tell you the truth",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你必须告诉我事实",
+		"english": "you have to tell me the truth",
+		"soundmark": "/ju/ /hæv/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他必须告诉",
+		"english": "he has to tell",
+		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/"
+	},
+	{
+		"chinese": "他必须告诉我事实",
+		"english": "he has to tell me the truth",
+		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "解释",
+		"english": "to explain",
+		"soundmark": "/tə/ /ɪk'splen/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "解释原因",
+		"english": "to explain the reason",
+		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "他必须解释",
+		"english": "he has to explain",
+		"soundmark": "/hi/ /hæz/ /tə/ /ɪk'splen/"
+	},
+	{
+		"chinese": "他必须解释原因",
+		"english": "he has to explain the reason",
+		"soundmark": "/hi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "她必须解释",
+		"english": "she has to explain",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/"
+	},
+	{
+		"chinese": "她必须解释原因",
+		"english": "she has to explain the reason",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "在家里",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "to read at home",
+		"soundmark": "/tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "她喜欢在家里阅读",
+		"english": "she likes to read at home",
+		"soundmark": "/ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "为什么",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"chinese": "她必须解释原因为什么她喜欢在家里阅读",
+		"english": "she has to explain the reason why she likes to read at home",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "她必须在家里阅读",
+		"english": "she has to read at home",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "to sleep",
+		"soundmark": "/tə/ /slip/"
+	},
+	{
+		"chinese": "它必须睡觉",
+		"english": "it has to sleep",
+		"soundmark": "/ɪt/ /hæz/ /tə/ /slip/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "它现在必须睡觉",
+		"english": "it has to sleep now",
+		"soundmark": "/ɪt/ /hæz/ /tə/ /slip/ /naʊ/"
+	},
+	{
+		"chinese": "星荣现在必须睡觉",
+		"english": "Xingrong has to sleep now",
+		"soundmark": "/hæz/ /tə/ /slip/ /naʊ/"
+	},
+	{
+		"chinese": "劳累的",
+		"english": "tired",
+		"soundmark": "/taɪrd/"
+	},
+	{
+		"chinese": "他是",
+		"english": "he is",
+		"soundmark": "/hi/ /ɪz/"
+	},
+	{
+		"chinese": "他是劳累的",
+		"english": "he is tired",
+		"soundmark": "/hi/ /ɪz/ /taɪrd/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "他是非常劳累的",
+		"english": "he is very tired",
+		"soundmark": "/hi/ /ɪz/ /ˈvɛri/ /taɪrd/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为他是非常劳累的",
+		"english": "because he is very tired",
+		"soundmark": "/bɪ'kɔz/ /hi/ /ɪz/ /ˈvɛri/ /taɪrd/"
+	},
+	{
+		"chinese": "星荣现在必须睡觉因为他是非常劳累的",
+		"english": "Xingrong has to sleep now because he is very tired",
+		"soundmark": "/hæz/ /tə/ /slip/ /naʊ/ /bɪ'kɔz/ /hi/ /ɪz/ /ˈvɛri/ /taɪrd/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉我事实",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他必须告诉我事实",
+		"english": "He has to tell me the truth",
+		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "知道",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "知道这件事",
+		"english": "to know it",
+		"soundmark": "/tə/ /no/ /ɪt/"
+	},
+	{
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"chinese": "我需要知道这件事",
+		"english": "I need to know it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪt/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "他必须告诉我事实因为我需要知道它",
+		"english": "He has to tell me the truth because I need to know it",
+		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /aɪ/ /nid/ /tə/ /no/ /ɪt/"
+	},
+	{
+		"chinese": "解释原因",
+		"english": "to explain the reason",
+		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "她必须解释原因",
+		"english": "she has to explain the reason",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "to read at home",
+		"soundmark": "/tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "她喜欢",
+		"english": "she likes",
+		"soundmark": "/ʃi/ /laɪks/"
+	},
+	{
+		"chinese": "她喜欢在家里阅读",
+		"english": "she likes to read at home",
+		"soundmark": "/ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "为什么",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"chinese": "她必须解释原因为什么她喜欢在家里阅读",
+		"english": "she has to explain the reason why she likes to read at home",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "它是非常重要的",
+		"english": "it is very important",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "她必须解释原因为什么她喜欢在家里阅读因为它是非常重要的",
+		"english": "she has to explain the reason why she likes to read at home because it is very important",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "她想要",
+		"english": "she wants",
+		"soundmark": "/ʃi/ /wɑnts/"
+	},
+	{
+		"chinese": "见到",
+		"english": "to see",
+		"soundmark": "/tə/ /si/"
+	},
+	{
+		"chinese": "她想要见到我",
+		"english": "she wants to see me",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /si/ /mi/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我必须在这里",
+		"english": "I have to be here",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我今天必须在这里",
+		"english": "I have to be here today",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /bi/ /hɪr/ /tə'de/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "她想要见到我所以我今天必须在这里",
+		"english": "she wants to see me so I have to be here today",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /si/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /bi/ /hɪr/ /tə'de/"
+	},
+	{
+		"chinese": "我需要做这件事情",
+		"english": "I need to do it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你需要做这件事",
+		"english": "you need to do it",
+		"soundmark": "/ju/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "他需要做这件事",
+		"english": "he needs to do it",
+		"soundmark": "/hi/ /nidz/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "她喜欢做这件事",
+		"english": "she likes to do it",
+		"soundmark": "/ʃi/ /laɪks/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "它想要做这件事",
+		"english": "it wants to do it",
+		"soundmark": "/ɪt/ /wɑnts/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "星荣必须做这件事",
+		"english": "Xingrong has to do it",
+		"soundmark": "/hæz/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "为什么",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"chinese": "解释原因",
+		"english": "to explain the reason",
+		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "问我一个问题",
+		"english": "to ask me a question",
+		"soundmark": "/tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "在天空中飞翔",
+		"english": "to fly in the sky",
+		"soundmark": "/tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"chinese": "在家里阅读",
+		"english": "to read at home",
+		"soundmark": "/tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"chinese": "在公园里散步",
+		"english": "to walk in the park",
+		"soundmark": "/tə/ /wɔk/ /ɪn/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "在床上睡觉",
+		"english": "to sleep on the bed",
+		"soundmark": "/tə/ /slip/ /ɑn/ /ðə/ /bɛd/"
+	},
+	{
+		"chinese": "告诉我事实",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	}
+]

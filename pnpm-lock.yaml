@@ -24,9 +24,15 @@ importers:
       '@types/node':
         specifier: ^20.11.0
         version: 20.11.0
+      dotenv:
+        specifier: ^16.3.1
+        version: 16.3.1
       drizzle-kit:
         specifier: ^0.20.10
         version: 0.20.10
+      tsx:
+        specifier: ^4.7.0
+        version: 4.7.0
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -144,6 +150,16 @@ importers:
         version: 4.2.5(vue@3.4.10)
 
   libs/shared: {}
+
+  scripts/course:
+    dependencies:
+      pdf-parse:
+        specifier: ^1.1.1
+        version: 1.1.1
+    devDependencies:
+      '@types/pdf-parse':
+        specifier: ^1.1.4
+        version: 1.1.4
 
 packages:
 
@@ -2742,6 +2758,10 @@ packages:
       undici-types: 5.26.5
     dev: true
 
+  /@types/pdf-parse@1.1.4:
+    resolution: {integrity: sha512-+gbBHbNCVGGYw1S9lAIIvrHW47UYOhMIFUsJcMkMrzy1Jf0vulBN3XQIjPgnoOXveMuHnF3b57fXROnY/Or7eg==}
+    dev: true
+
   /@types/qs@6.9.11:
     resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
     dev: true
@@ -4479,7 +4499,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.3
-    dev: true
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -7689,6 +7708,10 @@ packages:
       lodash: 4.17.21
     dev: true
 
+  /node-ensure@0.0.0:
+    resolution: {integrity: sha512-DRI60hzo2oKN1ma0ckc6nQWlHU69RH6xN0sjQTjMpChPfTYvKZdcQFfdYK2RWbJcKyUizSIy/l8OTGxMAM1QDw==}
+    dev: false
+
   /node-fetch-native@1.6.1:
     resolution: {integrity: sha512-bW9T/uJDPAJB2YNYEpWzE54U5O3MQidXsOyTfnbKYtTtFexRvGzb1waphBN4ZwP6EcIvYYEOwW0b72BpAqydTw==}
     dev: true
@@ -8288,6 +8311,16 @@ packages:
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
     dev: true
+
+  /pdf-parse@1.1.1:
+    resolution: {integrity: sha512-v6ZJ/efsBpGrGGknjtq9J/oC8tZWq0KWL5vQrk2GlzLEQPUDB1ex+13Rmidl1neNN358Jn9EHZw5y07FFtaC7A==}
+    engines: {node: '>=6.8.1'}
+    dependencies:
+      debug: 3.2.7
+      node-ensure: 0.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
@@ -9988,6 +10021,17 @@ packages:
   /tsscmp@1.0.6:
     resolution: {integrity: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==}
     engines: {node: '>=0.6.x'}
+    dev: true
+
+  /tsx@4.7.0:
+    resolution: {integrity: sha512-I+t79RYPlEYlHn9a+KzwrvEwhJg35h/1zHsLC2JXvhC2mdynMv6Zxzvhv5EMV6VF5qJlLlkSnMVvdZV3PSIGcg==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
+    dependencies:
+      esbuild: 0.19.11
+      get-tsconfig: 4.7.2
+    optionalDependencies:
+      fsevents: 2.3.3
     dev: true
 
   /tuf-js@2.2.0:

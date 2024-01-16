@@ -1,0 +1,692 @@
+[
+	{
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
+	},
+	{
+		"chinese": "保存",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"chinese": "钱",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
+	},
+	{
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"chinese": "一些",
+		"english": "some",
+		"soundmark": "/sʌm/"
+	},
+	{
+		"chinese": "存一些钱",
+		"english": "to save some money",
+		"soundmark": "/tə/ /sev/ /sʌm/ /ˈmʌni/"
+	},
+	{
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"chinese": "我需要存一些钱",
+		"english": "I need to save some money",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/"
+	},
+	{
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
+	},
+	{
+		"chinese": "车",
+		"english": "car",
+		"soundmark": "/kɑr/"
+	},
+	{
+		"chinese": "新",
+		"english": "new",
+		"soundmark": "/nu/"
+	},
+	{
+		"chinese": "一辆新车",
+		"english": "a new car",
+		"soundmark": "/ə/ /nu/ /kɑr/"
+	},
+	{
+		"chinese": "买一辆新车",
+		"english": "to buy a new car",
+		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /kɑr/"
+	},
+	{
+		"chinese": "我需要存一些钱买一辆新车",
+		"english": "I need to save some money to buy a new car",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /nu/ /kɑr/"
+	},
+	{
+		"chinese": "未来",
+		"english": "the future",
+		"soundmark": "/ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
+	},
+	{
+		"chinese": "为了未来",
+		"english": "for the future",
+		"soundmark": "/fɝ/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "我需要存一些钱",
+		"english": "I need to save some money",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/"
+	},
+	{
+		"chinese": "我需要为了未来存一些钱",
+		"english": "I need to save some money for the future",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "每一个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
+	},
+	{
+		"chinese": "身体",
+		"english": "body",
+		"soundmark": "/'bɑdi/"
+	},
+	{
+		"chinese": "每个人",
+		"english": "everybody",
+		"soundmark": "/'ɛvrɪbɑdi/"
+	},
+	{
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"chinese": "每个人需要",
+		"english": "everybody needs",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/"
+	},
+	{
+		"chinese": "为了未来存一些钱",
+		"english": "to save some money for the future",
+		"soundmark": "/tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "每个人需要为了未来存一些钱",
+		"english": "everybody needs to save some money for the future",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"chinese": "足够的",
+		"english": "enough",
+		"soundmark": "/ɪ'nʌf/"
+	},
+	{
+		"chinese": "存足够的钱",
+		"english": "to save enough money",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
+	},
+	{
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
+	},
+	{
+		"chinese": "一个房子",
+		"english": "a house",
+		"soundmark": "/ə/ /haʊs/"
+	},
+	{
+		"chinese": "买一个房子",
+		"english": "to buy a house",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
+	},
+	{
+		"chinese": "存足够的钱买一个房子",
+		"english": "to save enough money to buy a house",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/"
+	},
+	{
+		"chinese": "家庭",
+		"english": "family",
+		"soundmark": "/ˈfæməli/"
+	},
+	{
+		"chinese": "他的",
+		"english": "his",
+		"soundmark": "/hɪz/"
+	},
+	{
+		"chinese": "他的家庭",
+		"english": "his family",
+		"soundmark": "/hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
+	},
+	{
+		"chinese": "为了他的家庭",
+		"english": "for his family",
+		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "买一个房子",
+		"english": "to buy a house",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
+	},
+	{
+		"chinese": "为了他的家庭买一个房子",
+		"english": "to buy a house for his family",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "存足够的钱",
+		"english": "to save enough money",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
+	},
+	{
+		"chinese": "为了他的家庭存足够的钱买一个房子",
+		"english": "to save enough money to buy a house for his family",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "尝试",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
+	},
+	{
+		"chinese": "尝试（ing形式）",
+		"english": "trying",
+		"soundmark": "/ˈtraɪɪŋ/"
+	},
+	{
+		"chinese": "正在尝试",
+		"english": "be trying",
+		"soundmark": "/bi/ /'traɪɪŋ/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他（现在）正在尝试",
+		"english": "he is trying",
+		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/"
+	},
+	{
+		"chinese": "他（现在）正在尝试为了他的家庭存足够的钱买一个房子",
+		"english": "he is trying to save enough money to buy a house for his family",
+		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"chinese": "方法",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"chinese": "好的",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"chinese": "一个好的方法",
+		"english": "a good way",
+		"soundmark": "/ə/ /ɡʊd/ /we/"
+	},
+	{
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"chinese": "存钱的一个好的方法",
+		"english": "a good way to save money",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"chinese": "这",
+		"english": "this",
+		"soundmark": "/ðɪs/"
+	},
+	{
+		"chinese": "是",
+		"english": "is",
+		"soundmark": "/ɪz/"
+	},
+	{
+		"chinese": "这是",
+		"english": "this is",
+		"soundmark": "/ðɪs/ /ɪz/"
+	},
+	{
+		"chinese": "这是存钱的一个好的方法",
+		"english": "this is a good way to save money",
+		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"chinese": "存钱的一个好的方法是这个",
+		"english": "a good way to save money is this",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/ /ɪz/ /ðɪs/"
+	},
+	{
+		"chinese": "保存；节省",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "节省时间",
+		"english": "to save time",
+		"soundmark": "/tə/ /sev/ /taɪm/"
+	},
+	{
+		"chinese": "钱",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
+	},
+	{
+		"chinese": "节省时间和金钱",
+		"english": "to save time and money",
+		"soundmark": "/tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "尝试（ing形式）",
+		"english": "trying",
+		"soundmark": "/ˈtraɪɪŋ/"
+	},
+	{
+		"chinese": "我（现在）正在尝试",
+		"english": "I am trying",
+		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/"
+	},
+	{
+		"chinese": "我（现在）正在尝试节省时间和金钱",
+		"english": "I am trying to save time and money",
+		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "最好的",
+		"english": "the best",
+		"soundmark": "/ðə/ /bɛst/"
+	},
+	{
+		"chinese": "方法",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"chinese": "最好的方法",
+		"english": "the best way",
+		"soundmark": "/ðə/ /bɛst/ /we/"
+	},
+	{
+		"chinese": "节省时间和金钱",
+		"english": "to save time and money",
+		"soundmark": "/tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "节省时间和金钱最好的方法",
+		"english": "the best way to save time and money",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "计划",
+		"english": "plan",
+		"soundmark": "/plæn/"
+	},
+	{
+		"chinese": "做一个计划",
+		"english": "to make a plan",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
+	},
+	{
+		"chinese": "东西；事情",
+		"english": "thing",
+		"soundmark": "/θɪŋ/"
+	},
+	{
+		"chinese": "任何",
+		"english": "any",
+		"soundmark": "/'ɛni/"
+	},
+	{
+		"chinese": "任何事情",
+		"english": "anything",
+		"soundmark": "/'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做任何事情",
+		"english": "to do anything",
+		"soundmark": "/tə/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "你做任何事情",
+		"english": "you do anything",
+		"soundmark": "/ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "在......之前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "在你做任何事情之前",
+		"english": "before you do anything",
+		"soundmark": "/bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "做一个计划",
+		"english": "to make a plan",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
+	},
+	{
+		"chinese": "在你做任何事情之前做一个计划",
+		"english": "to make a plan before you do anything",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "节省时间和金钱最好的方法",
+		"english": "the best way to save time and money",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "节省时间和金钱最好的方法是你做任何事情之前做一个计划",
+		"english": "the best way to save time and money is to make a plan before you do anything",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/ /ɪz/ /tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "保存；节省",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"chinese": "水",
+		"english": "water",
+		"soundmark": "/'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"chinese": "我们必须节约水",
+		"english": "we have to save water",
+		"soundmark": "/wi/ /hæv/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "一个好的方法",
+		"english": "a good way",
+		"soundmark": "/ə/ /ɡʊd/ /we/"
+	},
+	{
+		"chinese": "节约水",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水的一个好的方法",
+		"english": "a good way to save water",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "这是",
+		"english": "this is",
+		"soundmark": "/ðɪs/ /ɪz/"
+	},
+	{
+		"chinese": "这是节约水的一个好的方法",
+		"english": "this is a good way to save water",
+		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水的一个好方法是这个",
+		"english": "a good way to save water is this",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɪs/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "节约水的一个好方法在这里",
+		"english": "a good way to save water is here",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /hɪr/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "节约水的一个好方法在那里",
+		"english": "a good way to save water is there",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɛr/"
+	},
+	{
+		"chinese": "在那里有节约水的一个好方法",
+		"english": "there is a good way to save water",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "一本书",
+		"english": "a book",
+		"soundmark": "/ə/ /bʊk/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "一本书在那里",
+		"english": "a book is there",
+		"soundmark": "/ə/ /bʊk/ /ɪz/ /ðɛr/"
+	},
+	{
+		"chinese": "在那里有一本书",
+		"english": "there is a book",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/"
+	},
+	{
+		"chinese": "桌子",
+		"english": "desk",
+		"soundmark": "/dɛsk/"
+	},
+	{
+		"chinese": "在......上",
+		"english": "on",
+		"soundmark": "/ɑn/"
+	},
+	{
+		"chinese": "在桌子上",
+		"english": "on the desk",
+		"soundmark": "/ɑn/ /ðə/ /dɛsk/"
+	},
+	{
+		"chinese": "有一本书在桌子上",
+		"english": "there is a book on the desk",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /ɑn/ /ðə/ /dɛsk/"
+	},
+	{
+		"chinese": "有一本书在那里",
+		"english": "there is a book there",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /ðɛr/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "有一本书在这里",
+		"english": "there is a book here",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /hɪr/"
+	},
+	{
+		"chinese": "有（单数存在）",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"chinese": "一把刀",
+		"english": "a knife",
+		"soundmark": "/ə/ /naɪf/"
+	},
+	{
+		"chinese": "有一把刀",
+		"english": "there is a knife",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /naɪf/"
+	},
+	{
+		"chinese": "厨房",
+		"english": "kitchen",
+		"soundmark": "/'kɪtʃɪn/"
+	},
+	{
+		"chinese": "在厨房里",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "有一把刀在厨房里",
+		"english": "there is a knife in the kitchen",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /naɪf/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "鸡蛋",
+		"english": "egg",
+		"soundmark": "/ɛɡ/"
+	},
+	{
+		"chinese": "五个",
+		"english": "five",
+		"soundmark": "/faɪv/"
+	},
+	{
+		"chinese": "五个鸡蛋",
+		"english": "five eggs",
+		"soundmark": "/faɪv/ /ɛɡz/"
+	},
+	{
+		"chinese": "有（复数存在）",
+		"english": "there are",
+		"soundmark": "/ðɛr/ /ɚ/"
+	},
+	{
+		"chinese": "有五个鸡蛋",
+		"english": "there are five eggs",
+		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/"
+	},
+	{
+		"chinese": "在厨房里",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "有五个鸡蛋仔厨房里",
+		"english": "there are five eggs in the kitchen",
+		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "保存；节省",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"chinese": "水",
+		"english": "water",
+		"soundmark": "/'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "方法",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"chinese": "许多",
+		"english": "many",
+		"soundmark": "/'mɛni/"
+	},
+	{
+		"chinese": "许多方法",
+		"english": "many ways",
+		"soundmark": "/'mɛni/ /wez/"
+	},
+	{
+		"chinese": "节约水的许多方法",
+		"english": "many ways to save water",
+		"soundmark": "/'mɛni/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "不同的",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"chinese": "节约水的许多不同的方法",
+		"english": "many different ways to save water",
+		"soundmark": "/'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "有（复数存在）",
+		"english": "there are",
+		"soundmark": "/ðɛr/ /ɚ/"
+	},
+	{
+		"chinese": "存在节约水的许多不同的方法",
+		"english": "there are many different ways to save water",
+		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	}
+]

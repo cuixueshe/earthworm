@@ -1,0 +1,742 @@
+[
+	{
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "这本书",
+		"english": "the book",
+		"soundmark": "/ðə/ /bʊk/"
+	},
+	{
+		"chinese": "阅读这本书",
+		"english": "to read the book",
+		"soundmark": "/tə/ /rid/ /ðə/ /bʊk/"
+	},
+	{
+		"chinese": "阅读这本书(ing形式)",
+		"english": "reading the book",
+		"soundmark": "/'ridɪŋ/ /ðə/ /bʊk/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "他完成",
+		"english": "he finishes",
+		"soundmark": "/hi/ /'fɪnɪʃɪz/"
+	},
+	{
+		"chinese": "他(过去)完成",
+		"english": "he finished",
+		"soundmark": "/hi/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "他(过去)完成阅读这本书",
+		"english": "he finished reading the book",
+		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/"
+	},
+	{
+		"chinese": "天",
+		"english": "day",
+		"soundmark": "/de/"
+	},
+	{
+		"chinese": "一天",
+		"english": "one day",
+		"soundmark": "/wʌn/ /de/"
+	},
+	{
+		"chinese": "在一天内",
+		"english": "in one day",
+		"soundmark": "/ɪn/ /wʌn/ /de/"
+	},
+	{
+		"chinese": "他在一天内完成了阅读这本书",
+		"english": "he finished reading the book in one day",
+		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/ /ɪn/ /wʌn/ /de/"
+	},
+	{
+		"chinese": "晚上",
+		"english": "night",
+		"soundmark": "/naɪt/"
+	},
+	{
+		"chinese": "在一个晚上内",
+		"english": "in one night",
+		"soundmark": "/ɪn/ /wʌn/ /naɪt/"
+	},
+	{
+		"chinese": "他在一个晚上内完成了阅读这本书",
+		"english": "he finished reading the book in one night",
+		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/ /ɪn/ /wʌn/ /naɪt/"
+	},
+	{
+		"chinese": "洗",
+		"english": "to wash",
+		"soundmark": "/tə/ /wɔʃ/"
+	},
+	{
+		"chinese": "碟",
+		"english": "dish",
+		"soundmark": "/dɪʃ/"
+	},
+	{
+		"chinese": "那些碗碟",
+		"english": "the dishes",
+		"soundmark": "/ðə/ /dɪʃɪz/"
+	},
+	{
+		"chinese": "洗那些碗碟",
+		"english": "to wash the dishes",
+		"soundmark": "/tə/ /wɔʃ/ /ðə/ /dɪʃɪz/"
+	},
+	{
+		"chinese": "洗那些碗碟(ing形式)",
+		"english": "washing the dishes",
+		"soundmark": "/'wɑʃɪŋ/ /ðə/ /dɪʃɪz/"
+	},
+	{
+		"chinese": "晚饭",
+		"english": "dinner",
+		"soundmark": "/'dɪnɚ/"
+	},
+	{
+		"chinese": "在......之后",
+		"english": "after",
+		"soundmark": "/'æftɚ/"
+	},
+	{
+		"chinese": "在晚饭之后",
+		"english": "after dinner",
+		"soundmark": "/'æftɚ/ /'dɪnɚ/"
+	},
+	{
+		"chinese": "在晚饭之后洗那些碗碟(ing形式)",
+		"english": "washing the dishes after dinner",
+		"soundmark": "/'wɑʃɪŋ/ /ðə/ /dɪʃɪz/ /'æftɚ/ /'dɪnɚ/"
+	},
+	{
+		"chinese": "他(过去)完成",
+		"english": "he finished",
+		"soundmark": "/hi/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "他在晚饭之后完成了洗碗",
+		"english": "he finished washing the dishes after dinner",
+		"soundmark": "/hi/ /'fɪnɪʃt/ /'wɑʃɪŋ/ /ðə/ /dɪʃɪz/ /'æftɚ/ /'dɪnɚ/"
+	},
+	{
+		"chinese": "作画",
+		"english": "to paint",
+		"soundmark": "/tə/ /pent/"
+	},
+	{
+		"chinese": "墙",
+		"english": "the wall",
+		"soundmark": "/ðə/ /wɔl/"
+	},
+	{
+		"chinese": "刷墙",
+		"english": "to paint the wall",
+		"soundmark": "/tə/ /pent/ /ðə/ /wɔl/"
+	},
+	{
+		"chinese": "刷墙(ing形式)",
+		"english": "painting the wall",
+		"soundmark": "/'pentɪŋ/ /ðə/ /wɔl/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "他们完成",
+		"english": "they finish",
+		"soundmark": "/ðe/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "他们(过去)完成",
+		"english": "they finished",
+		"soundmark": "/ðe/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "他们完成了刷墙",
+		"english": "they finished painting the wall",
+		"soundmark": "/ðe/ /'fɪnɪʃt/ /'pentɪŋ/ /ðə/ /wɔl/"
+	},
+	{
+		"chinese": "太阳",
+		"english": "sun",
+		"soundmark": "/sʌn/"
+	},
+	{
+		"chinese": "日落",
+		"english": "sunset",
+		"soundmark": "/'sʌnsɛt/"
+	},
+	{
+		"chinese": "在......之前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "在日落之前",
+		"english": "before sunset",
+		"soundmark": "/bɪ'fɔr/ /'sʌnsɛt/"
+	},
+	{
+		"chinese": "他们在落日之前完成了刷墙",
+		"english": "they finished painting the wall before sunset",
+		"soundmark": "/ðe/ /'fɪnɪʃt/ /'pentɪŋ/ /ðə/ /wɔl/ /bɪ'fɔr/ /'sʌnsɛt/"
+	},
+	{
+		"chinese": "清理",
+		"english": "to clean",
+		"soundmark": "/tə/ /klin/"
+	},
+	{
+		"chinese": "这个房子",
+		"english": "the house",
+		"soundmark": "/ðə/ /haʊs/"
+	},
+	{
+		"chinese": "清理这个房子",
+		"english": "to clean the house",
+		"soundmark": "/tə/ /klin/ /ðə/ /haʊs/"
+	},
+	{
+		"chinese": "清理这个房子(ing形式)",
+		"english": "cleaning the house",
+		"soundmark": "/'klinɪŋ/ /ðə/ /haʊs/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "你(过去)完成",
+		"english": "you finished",
+		"soundmark": "/ju/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "你完成了清理这个房子",
+		"english": "you finished cleaning the house",
+		"soundmark": "/ju/ /'fɪnɪʃt/ /'klinɪŋ/ /ðə/ /haʊs/"
+	},
+	{
+		"chinese": "你自己",
+		"english": "yourself",
+		"soundmark": "/jɔr'sɛlf/"
+	},
+	{
+		"chinese": "通过你自己",
+		"english": "by yourself",
+		"soundmark": "/baɪ/ /jɔr'sɛlf/"
+	},
+	{
+		"chinese": "你自己一个人完成了清理这个房子",
+		"english": "you finished cleaning the house by yourself",
+		"soundmark": "/ju/ /'fɪnɪʃt/ /'klinɪŋ/ /ðə/ /haʊs/ /baɪ/ /jɔr'sɛlf/"
+	},
+	{
+		"chinese": "打破",
+		"english": "to break",
+		"soundmark": "/tə/ /brek/"
+	},
+	{
+		"chinese": "那个窗户",
+		"english": "the window",
+		"soundmark": "/ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "打破那个窗户",
+		"english": "to break the window",
+		"soundmark": "/tə/ /brek/ /ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "一个石头",
+		"english": "a stone",
+		"soundmark": "/ə/ /ston/"
+	},
+	{
+		"chinese": "和......一起",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "和一个石头一起",
+		"english": "with a stone",
+		"soundmark": "/wɪð/ /ə/ /ston/"
+	},
+	{
+		"chinese": "用一个石头打破那个窗户",
+		"english": "to break the window with a stone",
+		"soundmark": "/tə/ /brek/ /ðə/ /'wɪndo/ /wɪð/ /ə/ /ston/"
+	},
+	{
+		"chinese": "用一个石头打破那个窗户(ing形式)",
+		"english": "breaking the window with a stone",
+		"soundmark": "/'brekɪŋ/ /ðə/ /'wɪndo/ /wɪð/ /ə/ /ston/"
+	},
+	{
+		"chinese": "否认",
+		"english": "to deny",
+		"soundmark": "/tə/ /dɪ'naɪ/"
+	},
+	{
+		"chinese": "他们否认",
+		"english": "they deny",
+		"soundmark": "/ðe/ /dɪ'naɪ/"
+	},
+	{
+		"chinese": "他们(过去)否认",
+		"english": "they denied",
+		"soundmark": "/ðe/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他们(过去)否认用一个石头打破那个窗户",
+		"english": "they denied breaking the window with a stone.",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /'brekɪŋ/ /ðə/ /'wɪndo/ /wɪð/ /ə/ /ston/"
+	},
+	{
+		"chinese": "他(过去)否认",
+		"english": "he denied",
+		"soundmark": "/hi/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "改变",
+		"english": "to change",
+		"soundmark": "/tə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "想法",
+		"english": "mind",
+		"soundmark": "/maɪnd/"
+	},
+	{
+		"chinese": "他的想法",
+		"english": "his mind",
+		"soundmark": "/hɪz/ /maɪnd/"
+	},
+	{
+		"chinese": "改变他的想法",
+		"english": "to change his mind",
+		"soundmark": "/tə/ /tʃendʒ/ /hɪz/ /maɪnd/"
+	},
+	{
+		"chinese": "分钟",
+		"english": "minute",
+		"soundmark": "/'mɪnɪt/"
+	},
+	{
+		"chinese": "最后",
+		"english": "last",
+		"soundmark": "/læst/"
+	},
+	{
+		"chinese": "最后一分钟",
+		"english": "the last minute",
+		"soundmark": "/ðə/ /læst/ /'mɪnɪt/"
+	},
+	{
+		"chinese": "在最后一个刻",
+		"english": "at the last minute",
+		"soundmark": "/ət/ /ðə/ /læst/ /'mɪnɪt/"
+	},
+	{
+		"chinese": "在最后一刻改变他的想法",
+		"english": "to change his mind at the last minute",
+		"soundmark": "/tə/ /tʃendʒ/ /hɪz/ /maɪnd/ /ət/ /ðə/ /læst/ /'mɪnɪt/"
+	},
+	{
+		"chinese": "在最后一刻改变他的想法(ing形式)",
+		"english": "changing his mind at the last minute",
+		"soundmark": "/'tʃendʒɪŋ/ /hɪz/ /maɪnd/ /ət/ /ðə/ /læst/ /'mɪnɪt/"
+	},
+	{
+		"chinese": "他(过去)否认",
+		"english": "he denied",
+		"soundmark": "/hi/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他(过去)否认在最后一刻改变他的想法",
+		"english": "he denied changing his mind at the last minute",
+		"soundmark": "/hi/ /dɪ'naɪd/ /'tʃendʒɪŋ/ /hɪz/ /maɪnd/ /ət/ /ðə/ /læst/ /'mɪnɪt/"
+	},
+	{
+		"chinese": "父母",
+		"english": "parents",
+		"soundmark": "/'pɛrənts/"
+	},
+	{
+		"chinese": "他的父母",
+		"english": "his parents",
+		"soundmark": "/hɪz/ /'pɛrənts/"
+	},
+	{
+		"chinese": "撒谎",
+		"english": "to lie",
+		"soundmark": "/tə/ /laɪ/"
+	},
+	{
+		"chinese": "向他的父母撒谎",
+		"english": "to lie to his parents",
+		"soundmark": "/tə/ /laɪ/ /tə/ /hɪz/ /'pɛrənts/"
+	},
+	{
+		"chinese": "撒谎(ing形式)",
+		"english": "lying",
+		"soundmark": "/'laɪɪŋ/"
+	},
+	{
+		"chinese": "向他的父母撒谎(ing形式)",
+		"english": "lying to his parents",
+		"soundmark": "/'laɪɪŋ/ /tə/ /hɪz/ /'pɛrənts/"
+	},
+	{
+		"chinese": "否认",
+		"english": "to deny",
+		"soundmark": "/tə/ /dɪ'naɪ/"
+	},
+	{
+		"chinese": "他(过去)否认",
+		"english": "he denied",
+		"soundmark": "/hi/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他(过去)否认向他的父母撒谎",
+		"english": "he denied lying to his parents",
+		"soundmark": "/hi/ /dɪ'naɪd/ /'laɪɪŋ/ /tə/ /hɪz/ /'pɛrənts/"
+	},
+	{
+		"chinese": "有病的",
+		"english": "sick",
+		"soundmark": "/sɪk/"
+	},
+	{
+		"chinese": "他是有病的",
+		"english": "he is sick",
+		"soundmark": "/hi/ /ɪz/ /sɪk/"
+	},
+	{
+		"chinese": "假装",
+		"english": "to pretend",
+		"soundmark": "/tə/ /prɪ'tɛnd/"
+	},
+	{
+		"chinese": "假装是有病的",
+		"english": "to pretend to be sick",
+		"soundmark": "/tə/ /prɪ'tɛnd/ /tə/ /bi/ /sɪk/"
+	},
+	{
+		"chinese": "假装是有病的(ing形式)",
+		"english": "pretending to be sick",
+		"soundmark": "/prɪ'tɛndɪŋ/ /tə/ /bi/ /sɪk/"
+	},
+	{
+		"chinese": "否认",
+		"english": "to deny",
+		"soundmark": "/tə/ /dɪ'naɪ/"
+	},
+	{
+		"chinese": "他(过去)否认",
+		"english": "he denied",
+		"soundmark": "/hi/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他(过去)否认假装是有病的",
+		"english": "he denied pretending to be sick",
+		"soundmark": "/hi/ /dɪ'naɪd/ /prɪ'tɛndɪŋ/ /tə/ /bi/ /sɪk/"
+	},
+	{
+		"chinese": "监狱",
+		"english": "prison",
+		"soundmark": "/'prɪzn/"
+	},
+	{
+		"chinese": "从监狱",
+		"english": "from prison",
+		"soundmark": "/frʌm/ /'prɪzn/"
+	},
+	{
+		"chinese": "逃跑",
+		"english": "to escape",
+		"soundmark": "/tə/ /ɪ'skep/"
+	},
+	{
+		"chinese": "越狱",
+		"english": "to escape from prison",
+		"soundmark": "/tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+	},
+	{
+		"chinese": "计划",
+		"english": "to plan",
+		"soundmark": "/tə/ /plæn/"
+	},
+	{
+		"chinese": "计划越狱",
+		"english": "to plan to escape from prison",
+		"soundmark": "/tə/ /plæn/ /tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+	},
+	{
+		"chinese": "计划越狱(ing形式)",
+		"english": "planning to escape from prison",
+		"soundmark": "/'plænɪŋ/ /tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+	},
+	{
+		"chinese": "否认",
+		"english": "to deny",
+		"soundmark": "/tə/ /dɪ'naɪ/"
+	},
+	{
+		"chinese": "他们(过去)否认",
+		"english": "they denied",
+		"soundmark": "/ðe/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他们(过去)否认计划越狱",
+		"english": "they denied planning to escape from prison",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /'plænɪŋ/ /tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+	},
+	{
+		"chinese": "偷",
+		"english": "to steal",
+		"soundmark": "/tə/ /stil/"
+	},
+	{
+		"chinese": "钱",
+		"english": "the money",
+		"soundmark": "/ðə/ /'mʌni/"
+	},
+	{
+		"chinese": "偷钱",
+		"english": "to steal the money",
+		"soundmark": "/tə/ /stil/ /ðə/ /'mʌni/"
+	},
+	{
+		"chinese": "偷钱(ing形式)",
+		"english": "stealing the money",
+		"soundmark": "/stilɪŋ/ /ðə/ /'mʌni/"
+	},
+	{
+		"chinese": "银行",
+		"english": "the bank",
+		"soundmark": "/ðə/ /bæŋk/"
+	},
+	{
+		"chinese": "从银行",
+		"english": "from the bank",
+		"soundmark": "/frʌm/ /ðə/ /bæŋk/"
+	},
+	{
+		"chinese": "从银行偷钱(ing形式)",
+		"english": "stealing the money from the bank",
+		"soundmark": "/stilɪŋ/ /ðə/ /'mʌni/ /frʌm/ /ðə/ /bæŋk/"
+	},
+	{
+		"chinese": "否认",
+		"english": "to deny",
+		"soundmark": "/tə/ /dɪ'naɪ/"
+	},
+	{
+		"chinese": "他(过去)否认",
+		"english": "he denied",
+		"soundmark": "/hi/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他(过去)否认从银行偷钱",
+		"english": "he denied stealing the money from the bank",
+		"soundmark": "/hi/ /dɪ'naɪd/ /stilɪŋ/ /ðə/ /'mʌni/ /frʌm/ /ðə/ /bæŋk/"
+	},
+	{
+		"chinese": "接受",
+		"english": "to accept",
+		"soundmark": "/tə/ /ək'sɛpt/"
+	},
+	{
+		"chinese": "接受(ed形式)",
+		"english": "accepted",
+		"soundmark": "/ək'sɛptɪd/"
+	},
+	{
+		"chinese": "被接受了",
+		"english": "be accepted",
+		"soundmark": "/bi/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "他被接受了",
+		"english": "he is accepted",
+		"soundmark": "/hi/ /ɪz/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "他(过去)被接受了",
+		"english": "he was accepted",
+		"soundmark": "/hi/ /wəz/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "大学",
+		"english": "the university",
+		"soundmark": "/ðə/ /ˌjunɪ'vɝsəti/"
+	},
+	{
+		"chinese": "通过大学",
+		"english": "by the university",
+		"soundmark": "/baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+	},
+	{
+		"chinese": "他(过去)被大学录取了",
+		"english": "he was accepted by the university",
+		"soundmark": "/hi/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+	},
+	{
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"chinese": "那个他(过去)被大学录取了",
+		"english": "that he was accepted by the university",
+		"soundmark": "/ðæt/ /hi/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+	},
+	{
+		"chinese": "他(过去)否认",
+		"english": "he denied",
+		"soundmark": "/hi/ /dɪ'naɪd/"
+	},
+	{
+		"chinese": "他(过去)否认(那个)他(过去)被大学录取了",
+		"english": "he denied that he was accepted by the university",
+		"soundmark": "/hi/ /dɪ'naɪd/ /ðæt/ /hi/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+	},
+	{
+		"chinese": "他(过去)否认(那个)",
+		"english": "he denied that",
+		"soundmark": "/hi/ /dɪ'naɪd/ /ðæt/"
+	},
+	{
+		"chinese": "他们(过去)否认(那个)",
+		"english": "they denied that",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/"
+	},
+	{
+		"chinese": "邀请",
+		"english": "to invite",
+		"soundmark": "/tə/ /ɪn'vaɪt/"
+	},
+	{
+		"chinese": "邀请(ed形式)",
+		"english": "invited",
+		"soundmark": "/ɪn'vaɪtɪd/"
+	},
+	{
+		"chinese": "被邀请",
+		"english": "be invited",
+		"soundmark": "/bi/ /ɪn'vaɪtɪd/"
+	},
+	{
+		"chinese": "他们被邀请",
+		"english": "they are invited",
+		"soundmark": "/ðe/ /ɚ/ /ɪn'vaɪtɪd/"
+	},
+	{
+		"chinese": "他们(过去)被邀请",
+		"english": "they were invited",
+		"soundmark": "/ðe/ /wɚ/ /ɪn'vaɪtɪd/"
+	},
+	{
+		"chinese": "总统",
+		"english": "the president",
+		"soundmark": "/ðə/ /'prɛzɪdənt/"
+	},
+	{
+		"chinese": "通过总统",
+		"english": "by the president",
+		"soundmark": "/baɪ/ /ðə/ /'prɛzɪdənt/"
+	},
+	{
+		"chinese": "他们(过去)被总统邀请",
+		"english": "they were invited by the president",
+		"soundmark": "/ðe/ /wɚ/ /ɪn'vaɪtɪd/ /baɪ/ /ðə/ /'prɛzɪdənt/"
+	},
+	{
+		"chinese": "他们(过去)否认(那个)",
+		"english": "they denied that",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/"
+	},
+	{
+		"chinese": "他们(过去)否认(那个)他们(过去)被总统邀请",
+		"english": "they denied that they were invited by the president",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/ /ðe/ /wɚ/ /ɪn'vaɪtɪd/ /baɪ/ /ðə/ /'prɛzɪdənt/"
+	},
+	{
+		"chinese": "教",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
+	},
+	{
+		"chinese": "教(ed形式)",
+		"english": "taught",
+		"soundmark": "/tɔt/"
+	},
+	{
+		"chinese": "被教",
+		"english": "be taught",
+		"soundmark": "/bi/ /tɔt/"
+	},
+	{
+		"chinese": "他们被教",
+		"english": "they are taught",
+		"soundmark": "/ðe/ /ɚ/ /tɔt/"
+	},
+	{
+		"chinese": "他们(过去)被教",
+		"english": "they were taught",
+		"soundmark": "/ðe/ /wɚ/ /tɔt/"
+	},
+	{
+		"chinese": "教授",
+		"english": "professor",
+		"soundmark": "/prə'fɛsər/"
+	},
+	{
+		"chinese": "有名的",
+		"english": "famous",
+		"soundmark": "/'feməs/"
+	},
+	{
+		"chinese": "一个有名的教授",
+		"english": "a famous professor",
+		"soundmark": "/ə/ /'feməs/ /prə'fɛsər/"
+	},
+	{
+		"chinese": "通过一个有名的教授",
+		"english": "by a famous professor",
+		"soundmark": "/baɪ/ /ə/ /'feməs/ /prə'fɛsər/"
+	},
+	{
+		"chinese": "他们(过去)被教",
+		"english": "they were taught",
+		"soundmark": "/ðe/ /wɚ/ /tɔt/"
+	},
+	{
+		"chinese": "他们(过去)被一个有名的教授所教",
+		"english": "they were taught by a famous professor",
+		"soundmark": "/ðe/ /wɚ/ /tɔt/ /baɪ/ /ə/ /'feməs/ /prə'fɛsər/"
+	},
+	{
+		"chinese": "他们(过去)否认(那个)",
+		"english": "they denied that",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/"
+	},
+	{
+		"chinese": "他们(过去)否认(那个)他们(过去)被一个有名的教授所教",
+		"english": "they denied that they were taught by a famous professor",
+		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/ /ðe/ /wɚ/ /tɔt/ /baɪ/ /ə/ /'feməs/ /prə'fɛsər/"
+	}
+]
