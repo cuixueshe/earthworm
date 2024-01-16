@@ -1,13 +1,13 @@
 import { FactoryProvider, Logger } from '@nestjs/common';
 import { type MySql2Database } from 'drizzle-orm/mysql2';
 import { drizzle } from 'drizzle-orm/mysql2';
-import * as  mysql from 'mysql2/promise';
+import * as mysql from 'mysql2/promise';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
 
 export const DB = Symbol('DB_SERVICE');
 export type DbType = MySql2Database;
 
-const env = process.env
+const env = process.env;
 
 export const DbProvider: FactoryProvider<DbType> = {
   provide: DB,

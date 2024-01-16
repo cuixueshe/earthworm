@@ -1,1 +1,2 @@
-export * from "./env";
+// export * from "./env";
+export * from "./schema";
