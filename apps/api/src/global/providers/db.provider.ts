@@ -3,20 +3,22 @@ import { type MySql2Database } from 'drizzle-orm/mysql2';
 import { drizzle } from 'drizzle-orm/mysql2';
 import * as mysql from 'mysql2/promise';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
+import { schemas } from '@earthwrom/shared';
 
 export const DB = Symbol('DB_SERVICE');
-export type DbType = MySql2Database;
+export type DbType = MySql2Database<typeof schemas>;
 
 const env = process.env;
 
 export const DbProvider: FactoryProvider<DbType> = {
   provide: DB,
-  useFactory: () => {
+  useFactory: async () => {
     const logger = new Logger('DB');
 
     logger.debug(`Connecting to ${env.DATABASE_URL}`);
+    logger.debug(`SECRET: ${env.SECRET}`);
 
-    const connection = mysql.createPool({
+    const connection = await mysql.createConnection({
       uri: env.DATABASE_URL,
       multipleStatements: true,
       waitForConnections: true,
@@ -36,8 +38,11 @@ export const DbProvider: FactoryProvider<DbType> = {
       }
     }
 
-    return drizzle(connection, {
+    const db = drizzle(connection, {
+      schema: schemas,
       logger: new DefaultLogger({ writer: new CustomDbLogWriter() }),
+      mode: 'planetscale',
     });
+    return db;
   },
 };
