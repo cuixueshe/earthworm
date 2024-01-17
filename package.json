@@ -6,7 +6,8 @@
   "scripts": {
     "db:push": "drizzle-kit push:mysql",
     "data:init": "pnpm -F @earthwrom/scripts-courses data:create && pnpm -F @earthwrom/scripts-courses data:upload",
-    "serve:dev": "pnpm -F api start:dev"
+    "schema:build": "pnpm -F @earthwrom/shared build",
+    "serve:dev": "pnpm schema:build && pnpm -F api start:dev"
   },
   "keywords": [],
   "author": "",
