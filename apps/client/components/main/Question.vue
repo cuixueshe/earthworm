@@ -1,7 +1,7 @@
 <template>
   <div class="text-5xl text-center mb-20 mt-10">
     <div class="text-fuchsia-500 dark:text-gray-50">
-      {{ currentStatement?.chinese }}
+      {{ coursesStore.currentStatement?.chinese }}
     </div>
     <div class="code-box">
       <template v-for="i in lineNum" :key="i">
@@ -36,7 +36,7 @@ import { useCoursesStore } from "~/store/courses";
 
 const emit = defineEmits(["bingo"]);
 
-const { currentStatement, checkCorrect } = useCoursesStore();
+const coursesStore  = useCoursesStore();
 
 const lineNum = ref(1);
 const focusing = ref(true);
@@ -47,8 +47,9 @@ const activeInputIndex = computed(() => {
   return Math.min(words.value.length - 1, lineNum.value - 1);
 });
 
+
 watchEffect(() => {
-  lineNum.value = currentStatement?.english.split(" ").length || 1;
+  lineNum.value = coursesStore.currentStatement?.english.split(" ").length || 1;
 });
 
 watchEffect(() => {
@@ -57,7 +58,7 @@ watchEffect(() => {
 
 function handleKeyDown(e: KeyboardEvent) {
   if (e.code === "Enter") {
-    if (checkCorrect(inputValue.value.trim())) {
+    if (coursesStore.checkCorrect(inputValue.value.trim())) {
       emit("bingo");
     }
     inputValue.value = "";

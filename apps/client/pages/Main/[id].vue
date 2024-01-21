@@ -15,7 +15,9 @@ import { useCoursesStore } from "~/store/courses";
 const route = useRoute();
 const coursesStore = useCoursesStore();
 
-await coursesStore.fetchCourseData(route.params.id as string);
+onMounted(async () => {
+  await coursesStore.setup(+route.params.id);
+});
 </script>
 
 <style scoped></style>

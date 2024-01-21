@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import { fetchCourse } from "~/api/courses";
 
 interface Statement {
   id: number;
@@ -7,14 +8,17 @@ interface Statement {
   soundmark: string;
 }
 
-type Course = { statements: Statement[] };
+type Course = { id: number; title: string; statements: Statement[] };
 
 export const useCoursesStore = defineStore("courses", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
-  const currentStatement = computed(() => {
-    return currentCourse.value?.statements[statementIndex.value];
-  })
+  const currentStatement = ref<Statement>();
+
+  watchEffect(() => {
+    currentStatement.value =
+      currentCourse.value?.statements[statementIndex.value];
+  });
 
   function toNextStatement() {
     statementIndex.value = statementIndex.value + 1;
@@ -29,35 +33,17 @@ export const useCoursesStore = defineStore("courses", () => {
     );
   }
 
-  async function fetchCourseData(courseId: string) {
-    const courseData = {
-      "1": {
-        title: "第一课",
-        statements: [
-          {
-            id: 1,
-            chinese: "我",
-            english: "I",
-            soundmark: "/aɪ/",
-          },
-          {
-            id: 2,
-            chinese: "不",
-            english: "don't",
-            soundmark: "/dont/",
-          },
-        ],
-      },
-    };
-
-    currentCourse.value = courseData[courseId];
+  async function setup(courseId: number) {
+    const course = await fetchCourse(courseId);
+    currentCourse.value = course.value;
   }
+
 
   return {
     statementIndex,
     currentCourse,
     currentStatement,
-    fetchCourseData,
+    setup,
     checkCorrect,
     toNextStatement,
   };
