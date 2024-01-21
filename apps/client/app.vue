@@ -1,6 +1,9 @@
 <template>
-  <div class="text-3xl font-bold underline text-wrap tex">
-    Hello world!
+  <div>
+    <NuxtPage />
   </div>
-  <button class="btn w-64 rounded-full">Button</button>
 </template>
+
+<script setup lang="ts">
+import "vfonts/Lato.css";
+</script>
