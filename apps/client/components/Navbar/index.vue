@@ -1,9 +1,11 @@
 <template>
   <nav class="h-20 flex items-center justify-between">
-    <div class="logo flex">
-      <img width="48" height="48" class="rounded-md overflow-hidden mr-2" src="/logo.png" alt="earth-worm-logo">
-      <h1 class="w-14 text-md font-black leading-normal text-wrap text-[#C683D7]">Earth Worm</h1>
-    </div>
+    <NuxtLink to="/">
+      <div class="logo flex">
+        <img width="48" height="48" class="rounded-md overflow-hidden mr-2" src="/logo.png" alt="earth-worm-logo">
+        <h1 class="w-14 text-md font-black leading-normal text-wrap text-[#C683D7]">Earth Worm</h1>
+      </div>
+    </NuxtLink>
     <div>
       <button class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
