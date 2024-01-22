@@ -11,8 +11,8 @@
           <h1 class="w-48 text-6xl font-black leading-snug text-wrap text-[#C683D7]">Earth Worm</h1>
         </div>
         <div class="mb-12 leading-loose text-3xl opacity-60 items-center">
-          <p>Why did you not good at English?</p>
-          <p class="align-middle">Because you have not use Earthworm yet 🤪 !<i class="animate-wink inline-flex w-1 h-8 bg-white mx-2 leading-snug"></i></p>
+          <div class="">Why did you not good at English?</div>
+          <div class="align-middle">Because you have not use Earthworm yet 🤪 !<i class="animate-wink inline w-1 h-8 bg-white mx-2 text-2xl p-[2px]"></i></div>
         </div>
         <button class="btn w-48"> Go and get it <kbd class="kbd"> ↵ </kbd></button>
       </div>
