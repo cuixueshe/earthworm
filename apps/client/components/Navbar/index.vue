@@ -9,6 +9,21 @@ const toggleDarkMode = () => {
   document.documentElement.classList.toggle('dark')
 }
 
+const setDarkMode = (state = false) => {
+  if (state) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");       
+    document.documentElement.classList.remove('dark')
+  }
+}
+
+onMounted(() => {
+  const state = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  setDarkMode(state)
+})
+
 </script>
 
 <template>
