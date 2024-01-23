@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <NuxtLayout>
     <n-message-provider>
       <NuxtPage />
     </n-message-provider>
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
