@@ -6,13 +6,9 @@
   <div class="container w-full">
     <section class="flex md:flex-row md:justify-between justify-center flex-col py-8">
       <div class="w-1/2">
-        <div class="flex mb-12">
-          <img width="160" height="160" class="rounded-xl overflow-hidden mr-2" src="/logo.png" alt="earth-worm-logo">
-          <h1 class="w-48 text-6xl font-black leading-snug text-wrap text-fuchsia-400">Earth Worm</h1>
-        </div>
         <div class="mb-12 leading-loose text-3xl opacity-80 items-center">
           <div class="">Why aren’t you good at English?</div>
-          <div class="align-middle">It’s because you haven’t used Earthworm yet! 🤪 <i class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i></div>
+          <div class="align-middle">It’s because you haven’t used <span class="text-fuchsia-400 font-bold">Earthworm</span> yet! 🤪 <i class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i></div>
         </div>
         <a target="_blank" href="https://github.com/cuixueshe/earthworm">
           <button class="indicator btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300 mr-4">
@@ -51,6 +47,8 @@
 </template>
 
 <style>
+
+
 .bg-dot {
   aspect-ratio: 1;
   position: relative;
@@ -60,6 +58,10 @@
   isolation: isolate;
   opacity: .4;
   overflow: hidden;
+}
+
+.dark .bg-dot {
+  opacity: 1;
 }
 
 .bg-dot::after {
