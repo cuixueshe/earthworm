@@ -1,6 +1,8 @@
 <template>
   <div>
-    <NuxtPage />
+    <n-message-provider>
+      <NuxtPage />
+    </n-message-provider>
   </div>
 </template>
 

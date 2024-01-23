@@ -7,7 +7,7 @@ import {
 import { UserService } from '../user/user.service';
 import { JwtService } from '@nestjs/jwt';
 import { SignDto } from './model/auth.dto';
-import argon2 from 'argon2';
+import * as argon2 from 'argon2';
 import { CreateUserDto } from '../user/model/user.dto';
 
 @Injectable()
@@ -15,10 +15,13 @@ export class AuthService {
   constructor(
     private userService: UserService,
     private jwtService: JwtService,
-  ) {}
+  ) { }
 
   async signIn(dto: SignDto) {
     const user = await this.userService.findWithPhone(dto);
+    if (!user) {
+      throw new HttpException('User not exists', HttpStatus.BAD_REQUEST);
+    }
     if (!(await argon2.verify(user.password, dto.password))) {
       throw new UnauthorizedException();
     }
