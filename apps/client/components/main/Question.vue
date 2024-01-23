@@ -1,7 +1,7 @@
 <template>
   <div class="text-5xl text-center mb-20 mt-10">
     <div class="text-fuchsia-500 dark:text-gray-50">
-      {{ coursesStore.currentStatement?.chinese }}
+      {{ coursesStore.currentStatement?.chinese || '生存还是毁灭，这是一个问题' }}
     </div>
     <div class="code-box">
       <template v-for="i in lineNum" :key="i">

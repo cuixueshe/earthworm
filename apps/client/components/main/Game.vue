@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full flex justify-center items-center relative">
-    <div>
+  <div class="h-full w-full flex flex-col justify-center items-center">
+    <div class="flex-1 mb-8">
       <template v-if="mode === 'question'">
         <Question @bingo="handleBingo"></Question>
       </template>
@@ -8,7 +8,7 @@
         <Answer @next-question="handleNextQuestion"></Answer>
       </template>
     </div>
-    <div class="absolute bottom-10 mb-10 w-full flex flex-col items-center">
+    <div class="">
       <CourseProgress></CourseProgress>
       <Tips onShowAnswer="{handleShowAnswer}"></Tips>
     </div>
