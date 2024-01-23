@@ -1,10 +1,5 @@
 <template>
-  <div class="flex flex-col h-full">
-    <!-- <Header></Header> -->
-    <main>
-      <Game></Game>
-    </main>
-  </div>
+  <Game></Game>
 </template>
 
 <script setup lang="ts">
