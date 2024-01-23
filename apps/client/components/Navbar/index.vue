@@ -1,6 +1,11 @@
 <script setup lang="ts">
 
 const toggleDarkMode = () => {
+  if (document.documentElement.classList.contains('dark')) {
+    document.documentElement.setAttribute("data-theme", "light"); 
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
   document.documentElement.classList.toggle('dark')
 }
 
@@ -11,7 +16,7 @@ const toggleDarkMode = () => {
     <NuxtLink to="/">
       <div class="logo flex">
         <img width="48" height="48" class="rounded-md overflow-hidden mr-2" src="/logo.png" alt="earth-worm-logo">
-        <h1 class="w-14 text-md font-black leading-normal text-wrap text-[#C683D7]">Earth Worm</h1>
+        <h1 class="w-14 text-md font-black leading-normal text-wrap text-fuchsia-400">Earth Worm</h1>
       </div>
     </NuxtLink>
     <div>
