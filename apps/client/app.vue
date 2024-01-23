@@ -1,6 +1,8 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <n-message-provider>
+      <NuxtPage />
+    </n-message-provider>
   </NuxtLayout>
 </template>
 

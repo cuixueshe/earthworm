@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@bg-dev/nuxt-naiveui": "^1.9.0",
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@vueuse/core": "^10.7.2",
     "@vueuse/nuxt": "^10.7.2",

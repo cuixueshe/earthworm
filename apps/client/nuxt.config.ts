@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@vueuse/nuxt",
     "@nuxt/image",
+    "@bg-dev/nuxt-naiveui",
   ],
   runtimeConfig: {
     public: {
