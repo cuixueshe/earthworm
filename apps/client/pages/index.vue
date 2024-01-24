@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+
 </script>
 
 <template>
@@ -8,47 +9,59 @@
       <div class="w-1/2">
         <div class="mb-12 leading-loose text-3xl opacity-80 items-center">
           <div class="">Why aren’t you good at English?</div>
-          <div class="align-middle">It’s because you haven’t used <span class="text-fuchsia-400 font-bold">Earthworm</span> yet! 🤪 <i class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i></div>
+          <div class="align-middle">It’s because you haven’t used <span
+              class="text-fuchsia-400 font-bold">EARTHWORM</span> yet! 🤪 <i
+              class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i></div>
         </div>
-        <a target="_blank" href="https://github.com/cuixueshe/earthworm">
-          <button class="indicator btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300 mr-4">
+        <NuxtLink href="/main/1">
+          <button
+            class="indicator btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300 mr-4">
             <span class="indicator-item">🌟</span>
-            Star us on GitHub 
+            Go and get it <kbd class="kbd"> ↵ </kbd>
+          </button>
+        </NuxtLink>
+
+        <a target="_blank" href="https://github.com/cuixueshe/earthworm">
+          <button class="btn w-48">
+            Star us on GitHub
           </button>
         </a>
-        <button class="btn w-48"> Go and get it <kbd class="kbd"> ↵ </kbd></button>
       </div>
       <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative">
         <div class="absolute flex h-full w-full card">
           <div class="bg-dot rounded-[64px]"></div>
-          <div class="absolute left-0 right-0 top-12 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all">📖</div>
-          <div class="absolute left-40 right-0 top-32 text-[80px] -ml-28 text-center color-gray group-hover:-skew-y-12 group-hover:rotate-[30deg] group-hover:-ml-32 group-hover:-mt-6  transition-all">🪱</div>
+          <div
+            class="absolute left-0 right-0 top-12 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all">
+            📖</div>
+          <div
+            class="absolute left-40 right-0 top-32 text-[80px] -ml-28 text-center color-gray group-hover:-skew-y-12 group-hover:rotate-[30deg] group-hover:-ml-32 group-hover:-mt-6  transition-all">
+            🪱</div>
         </div>
       </div>
     </section>
     <section class="flex flex-col py-8">
-      <h2 class="text-4xl text-center">What is Earthworm?</h2> 
+      <h2 class="text-4xl text-center">What is Earthworm?</h2>
       <p class="text-center">an open-source, collaborative, user-friendly English learning tool.</p>
       <div class="flex">
-        <div class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-2xl">
+        <div
+          class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-2xl">
           <div class="h-[330px] flex p-4"> wip... </div>
         </div>
-        <div class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl">
+        <div
+          class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl">
           <div class="h-[330px] flex p-4"> wip... </div>
         </div>
-      </div>       
+      </div>
       <div class="w-1/2"></div>
       <div class="w-1/2"></div>
     </section>
     <section class="flex flex-col py-8">
-      <h2 class="text-4xl text-center">Why Earthworm?</h2> 
+      <h2 class="text-4xl text-center">Why Earthworm?</h2>
     </section>
   </div>
 </template>
 
 <style>
-
-
 .bg-dot {
   aspect-ratio: 1;
   position: relative;
