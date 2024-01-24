@@ -1,21 +1,21 @@
 import { type ErrorVo, isError } from "./common";
 
-interface SignInDto {
+interface LoginDto {
   phone: string;
   password: string;
 }
 
-interface SignUpDto extends SignInDto {
+interface SignUpDto extends LoginDto {
   name: string;
 }
 
-interface SignInVo {
+interface LoginVo {
   token: string;
 }
 
-export async function signin(dto: SignInDto) {
+export async function login(dto: LoginDto) {
   const message = useMessage();
-  const { data } = await useFetchPlus<SignInVo | ErrorVo>("/auth/signin", {
+  const { data } = await useFetchPlus<LoginVo | ErrorVo>("/auth/login", {
     body: dto,
     method: "post",
   });
@@ -23,12 +23,12 @@ export async function signin(dto: SignInDto) {
     message.error(data.value.message);
     return;
   }
-  return data.value as SignInVo;
+  return data.value as LoginVo;
 }
 
 export async function signUp(dto: SignUpDto) {
   const message = useMessage();
-  const { data } = await useFetchPlus<SignInVo | ErrorVo>("/auth/signup", {
+  const { data } = await useFetchPlus<LoginVo | ErrorVo>("/auth/signup", {
     body: dto,
     method: "post",
   });
@@ -36,5 +36,5 @@ export async function signUp(dto: SignUpDto) {
     message.error(data.value.message);
     return;
   }
-  return data.value as SignInVo;
+  return data.value as LoginVo;
 }

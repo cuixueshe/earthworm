@@ -31,7 +31,7 @@
 </template>
 <script setup lang="ts">
 import { type FormInst, type FormRules } from 'naive-ui'
-import { signin } from '../../api/auth'
+import { login } from '../../api/auth'
 const formRef = ref<FormInst | null>(null)
 
 interface ModelType {
@@ -61,7 +61,7 @@ const router = useRouter()
 const handleLogin = () => {
     formRef.value?.validate(async errors => {
         if (!errors) {
-            const data = await signin({
+            const data = await login({
                 phone: model.value.phone ?? '',
                 password: model.value.password ?? ''
             })

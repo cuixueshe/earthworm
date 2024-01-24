@@ -13,11 +13,11 @@ import { CreateUserDto } from '../user/model/user.dto';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) { }
+  constructor(private readonly authService: AuthService) {}
 
-  @Post('signin')
+  @Post('login')
   sign(@Body() dto: SignDto) {
-    return this.authService.signIn(dto);
+    return this.authService.login(dto);
   }
 
   @Post('signup')
