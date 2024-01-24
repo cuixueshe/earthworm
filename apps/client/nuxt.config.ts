@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
     "@bg-dev/nuxt-naiveui",
+    '@nuxt/test-utils/module'
   ],
   runtimeConfig: {
     public: {

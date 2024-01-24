@@ -1,7 +1,23 @@
 <script setup lang="ts">
 const userInfo = useState('userInfo')
 console.log(userInfo.value, 'singup');
+import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
+useShortcutToGame();
+
+function useShortcutToGame() {
+  const router = useRouter();
+  function handleKeydown() {
+    router.push("/main/1");
+  }
+  onMounted(() => {
+    registerShortcut("enter", handleKeydown);
+  });
+
+  onUnmounted(() => {
+    cancelShortcut("enter", handleKeydown);
+  });
+}
 </script>
 
 <template>
@@ -10,9 +26,13 @@ console.log(userInfo.value, 'singup');
       <div class="w-1/2 mx-4">
         <div class="mb-12 leading-loose text-3xl opacity-80 items-center">
           <div class="">Why aren’t you good at English?</div>
-          <div class="align-middle">It’s because you haven’t used <span
-              class="text-fuchsia-400 font-bold">EARTHWORM</span> yet! 🤪 <i
-              class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i></div>
+          <div class="align-middle">
+            It’s because you haven’t used
+            <span class="text-fuchsia-400 font-bold">EARTHWORM</span> yet! 🤪
+            <i
+              class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"
+            ></i>
+          </div>
         </div>
         <a class="mr-4" target="_blank" href="https://github.com/cuixueshe/earthworm">
           <button class="btn w-48 indicator">
@@ -37,15 +57,19 @@ console.log(userInfo.value, 'singup');
     </section>
     <section class="flex flex-col py-8">
       <h2 class="text-4xl text-center">What is Earthworm?</h2>
-      <p class="text-center">an open-source, collaborative, user-friendly English learning tool.</p>
+      <p class="text-center">
+        an open-source, collaborative, user-friendly English learning tool.
+      </p>
       <div class="flex">
         <div
-          class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-2xl">
-          <div class="h-[330px] flex p-4"> wip... </div>
+          class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-2xl"
+        >
+          <div class="h-[330px] flex p-4">wip...</div>
         </div>
         <div
-          class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl">
-          <div class="h-[330px] flex p-4"> wip... </div>
+          class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl"
+        >
+          <div class="h-[330px] flex p-4">wip...</div>
         </div>
       </div>
       <div class="w-1/2"></div>
@@ -65,7 +89,7 @@ console.log(userInfo.value, 'singup');
   filter: contrast(50) invert(0);
   mix-blend-mode: multiply;
   isolation: isolate;
-  opacity: .4;
+  opacity: 0.4;
   overflow: hidden;
 }
 
@@ -74,13 +98,19 @@ console.log(userInfo.value, 'singup');
 }
 
 .bg-dot::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at center, #a800b2 0.06rem, transparent 0.65rem);
+  background-image: radial-gradient(
+    circle at center,
+    #a800b2 0.06rem,
+    transparent 0.65rem
+  );
   background-size: var(--bgSize, 1rem) var(--bgSize, 1rem);
   background-repeat: round;
-  background-position: 0 0, var(--bgPosition) var(--bgPosition);
+  background-position:
+    0 0,
+    var(--bgPosition) var(--bgPosition);
   mask-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 0.5));
 }
 </style>

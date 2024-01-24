@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { fetchCourse } from "~/api/courses";
+import { fetchCourse, fetchNextCourse } from "~/api/courses";
 
 interface Statement {
   id: number;
@@ -26,6 +26,14 @@ export const useCoursesStore = defineStore("courses", () => {
     return statementIndex.value;
   }
 
+  function isAllDone() {
+    return statementIndex.value + 1 === currentCourse.value.statements.length;
+  }
+
+  function doAgain() {
+    statementIndex.value = 0;
+  }
+
   function checkCorrect(input: string) {
     return (
       input.toLocaleLowerCase() ===
@@ -33,17 +41,30 @@ export const useCoursesStore = defineStore("courses", () => {
     );
   }
 
-  async function setup(courseId: number) {
-    const course = await fetchCourse(courseId);
-    currentCourse.value = course.value;
+  async function toNextCourse(cId: number) {
+    const nextCourse = await fetchNextCourse(cId);
+    currentCourse.value = nextCourse.value;
+    statementIndex.value = 0;
+    return currentCourse
   }
 
+  async function setup(courseId: number) {
+    // 1. 基于用户 id ，获取当前的 course id
+    // 2. 没登录的话 直接获取第一个 course id
+    console.log(courseId)
+    const course = await fetchCourse(courseId);
+    currentCourse.value = course.value;
+    statementIndex.value = 0;
+  }
 
   return {
     statementIndex,
     currentCourse,
     currentStatement,
+    toNextCourse,
     setup,
+    doAgain,
+    isAllDone,
     checkCorrect,
     toNextStatement,
   };

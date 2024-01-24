@@ -1,7 +1,9 @@
 <template>
   <div class="text-5xl text-center mb-20 mt-10">
     <div class="text-fuchsia-500 dark:text-gray-50">
-      {{ coursesStore.currentStatement?.chinese || '生存还是毁灭，这是一个问题' }}
+      {{
+        coursesStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
+      }}
     </div>
     <div class="code-box">
       <template v-for="i in lineNum" :key="i">
@@ -19,10 +21,11 @@
         </div>
       </template>
       <input
+        ref="input"
         class="code-input"
         type="text"
         v-model="inputValue"
-        @keydown="handleKeyDown"
+        @keyup="handleKeyup"
         @focus="handleInputFocus"
         @blur="handleBlur"
         autoFocus
@@ -33,11 +36,13 @@
 
 <script setup lang="ts">
 import { useCoursesStore } from "~/store/courses";
+import { useMode } from "./game";
 
-const emit = defineEmits(["bingo"]);
+const { showAnswer } = useMode();
 
-const coursesStore  = useCoursesStore();
+const coursesStore = useCoursesStore();
 
+const input = ref<HTMLInputElement>();
 const lineNum = ref(1);
 const focusing = ref(true);
 const inputValue = ref("");
@@ -47,7 +52,6 @@ const activeInputIndex = computed(() => {
   return Math.min(words.value.length - 1, lineNum.value - 1);
 });
 
-
 watchEffect(() => {
   lineNum.value = coursesStore.currentStatement?.english.split(" ").length || 1;
 });
@@ -56,14 +60,20 @@ watchEffect(() => {
   words.value = inputValue.value.trimStart().split(" ");
 });
 
-function handleKeyDown(e: KeyboardEvent) {
+function handleKeyup(e: KeyboardEvent) {
   if (e.code === "Enter") {
+    e.stopPropagation();
+
     if (coursesStore.checkCorrect(inputValue.value.trim())) {
-      emit("bingo");
+      showAnswer();
     }
     inputValue.value = "";
   }
 }
+
+onMounted(() => {
+  input.value?.focus();
+});
 
 function handleInputFocus() {
   focusing.value = true;

@@ -7,18 +7,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "devDependencies": {
     "@bg-dev/nuxt-naiveui": "^1.9.0",
+    "@nuxt/test-utils": "^3.10.0",
     "@nuxtjs/tailwindcss": "^6.10.4",
+    "@vue/test-utils": "^2.4.3",
     "@vueuse/core": "^10.7.2",
     "@vueuse/nuxt": "^10.7.2",
     "daisyui": "^4.6.0",
+    "happy-dom": "^13.3.1",
     "naive-ui": "^2.37.3",
     "nuxt": "^3.9.0",
     "tailwindcss": "^3.4.1",
     "vfonts": "^0.0.3",
+    "vitest": "^1.2.1",
     "vue": "^3.4.6",
     "vue-router": "^4.2.5"
   },
