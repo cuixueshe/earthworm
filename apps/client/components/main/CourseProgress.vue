@@ -1,5 +1,6 @@
 <template>
-  <progress class="progress w-56 m-2" value="8" max="100"></progress>
+  <progress class="progress w-56 m-2" :value="currentSchedule" :max="max"></progress>
+  <div class="text-center">({{ currentSchedule }} / {{ max }})</div>
 </template>
 
 <script setup lang="ts">
@@ -7,8 +8,9 @@ import { useCoursesStore } from "~/store/courses";
 
 const coursesStore = useCoursesStore();
 
+
 const currentSchedule = computed(() => {
-  return coursesStore.statementIndex.value + 1;
+  return coursesStore.statementIndex + 1;
 });
 
 const max = computed(() => {
