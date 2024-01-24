@@ -3,7 +3,7 @@
     <div>
       <NuxtLink href="/courses"> 更多课程 </NuxtLink>
     </div>
-    <div>{{ coursesStore.currentCourse.title }}</div>
+    <div>{{ coursesStore.currentCourse?.title }}</div>
     <div>
       <button @click="handleDoAgain">重新开始</button>
     </div>
