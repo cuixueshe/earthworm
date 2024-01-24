@@ -6,7 +6,17 @@ export class CourseController {
   constructor(private courseService: CourseService) {}
 
   @Get(':courseId')
-  getStatements(@Param('courseId') courseId: number) {
+  findOne(@Param('courseId') courseId: number) {
     return this.courseService.find(courseId);
+  }
+
+  @Get('')
+  findAll() {
+    return this.courseService.findAll();
+  }
+
+  @Get(':courseId/next')
+  findNext(@Param('courseId') courseId: number) {
+    return this.courseService.findNext(courseId);
   }
 }

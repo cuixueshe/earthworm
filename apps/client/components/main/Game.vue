@@ -2,16 +2,17 @@
   <div class="h-full w-full flex flex-col justify-center items-center">
     <div class="flex-1 mb-8">
       <template v-if="mode === 'question'">
-        <Question @bingo="handleBingo"></Question>
+        <Question></Question>
       </template>
       <template v-else-if="mode === 'answer'">
-        <Answer @next-question="handleNextQuestion"></Answer>
+        <Answer></Answer>
       </template>
     </div>
     <div class="">
       <CourseProgress></CourseProgress>
-      <Tips onShowAnswer="{handleShowAnswer}"></Tips>
+      <Tips></Tips>
     </div>
+    <Summary></Summary>
   </div>
 </template>
 
@@ -19,17 +20,13 @@
 import Question from "./Question.vue";
 import Answer from "./Answer.vue";
 import CourseProgress from "./CourseProgress.vue";
-import Tips from './Tips.vue';
+import Summary from "./Summary.vue";
+import Tips from "./Tips.vue";
+import { useMode } from "./game";
 
-const mode = ref<"question" | "answer">("question");
+const { mode } = useMode();
 
-function handleBingo() {
-  mode.value = "answer";
-}
-
-function handleNextQuestion() {
-  mode.value = "question";
-}
+const showModal = ref(false);
 </script>
 
 <style scoped></style>

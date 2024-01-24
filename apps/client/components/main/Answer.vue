@@ -27,51 +27,64 @@
 
 <script setup lang="ts">
 import { useCoursesStore } from "~/store/courses";
-import { useEnglishSound } from "~/composables/useEnglishSound";
+import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
+import { useMode } from "./game";
+import { useSummary } from "./summary";
 
-const emit = defineEmits(["nextQuestion"]);
+const { showQuestion } = useMode();
+const { showSummary } = useSummary();
+const { sound } = useCurrentStatementEnglishSound();
+const coursesStore = useCoursesStore();
 
-const { currentStatement, toNextStatement } = useCoursesStore();
+const { soundmark, word } = useShowInfo();
+useShortcutToNext();
+autoPlayEnglishSound();
 
-const soundmark = ref("");
-const word = ref("");
+function useShowInfo() {
+  const soundmark = ref("");
+  const word = ref("");
 
-onMounted(() => {
-  play();
-});
+  watchEffect(() => {
+    soundmark.value = coursesStore.currentStatement?.soundmark;
+    word.value = coursesStore.currentStatement?.english;
+  });
 
-const { play } = useEnglishSound(word);
+  return {
+    soundmark,
+    word,
+  };
+}
 
-watchEffect(() => {
-  soundmark.value = currentStatement?.soundmark!;
-  word.value = currentStatement?.english!;
-});
+function autoPlayEnglishSound() {
+  onMounted(() => {
+    sound.play();
+  });
+}
 
-async function handleToNextStatement() {
-  toNextStatement();
-  emit("nextQuestion");
+function handleToNextStatement() {
+  if (coursesStore.isAllDone()) {
+    showSummary();
+    return;
+  }
+
+  coursesStore.toNextStatement();
+  showQuestion();
 }
 
 function handlePlaySound() {
-  play();
+  sound.play();
 }
 
-// TODO 后续处理
-// useKeyboardShortcut()
-function useKeyboardShortcut() {
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === "Enter") {
-      console.log("enter");
-      //       handleToNextStatement();
-    }
-  };
-
+function useShortcutToNext() {
+  function handleKeydown() {
+    handleToNextStatement();
+  }
   onMounted(() => {
-    document.addEventListener("keydown", handleKeyDown);
+    registerShortcut("enter", handleKeydown);
   });
 
   onUnmounted(() => {
-    document.removeEventListener("keydown", handleKeyDown);
+    cancelShortcut("enter", handleKeydown);
   });
 }
 </script>
