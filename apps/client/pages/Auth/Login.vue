@@ -32,6 +32,7 @@
 <script setup lang="ts">
 import { type FormInst, type FormRules } from 'naive-ui'
 import { login } from '../../api/auth'
+
 const formRef = ref<FormInst | null>(null)
 
 interface ModelType {

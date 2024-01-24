@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const route = useRoute()
+const token = ref(sessionStorage.getItem('token'))
+console.log(route);
 
 const toggleDarkMode = () => {
   if (document.documentElement.classList.contains('dark')) {
@@ -19,6 +22,14 @@ const setDarkMode = (state = false) => {
   }
 }
 
+const handleLogin = () => {
+  navigateTo('/auth/login')
+}
+
+const handleSignup = () => {
+  navigateTo('/auth/signup')
+}
+
 onMounted(() => {
   const state = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   setDarkMode(state)
@@ -34,8 +45,14 @@ onMounted(() => {
         <h1 class="text-2xl leading-none font-black leading-normal text-wrap text-fuchsia-400">Earthworm</h1>
       </div>
     </NuxtLink>
-    <div>
-      <button class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0">
+    <div class="flex items-center">
+      <button v-if="!token && route.name !== 'Auth-Login'" class="btn btn-sm btn-ghost mx-1 h-8 px-2" @click="handleLogin">
+        Log in
+      </button> 
+      <button v-else-if="!token && route.name !== 'Auth-Signup' " class="btn btn-sm btn-ghost mx-1 h-8 px-2" @click="handleSignup">
+        Sign up
+      </button>
+      <button v-else class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
         </svg>
