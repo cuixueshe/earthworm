@@ -6,7 +6,7 @@
 <template>
   <div class="container w-full">
     <section class="flex md:flex-row md:justify-between justify-center flex-col py-8">
-      <div class="w-1/2">
+      <div class="w-1/2 mx-4">
         <div class="mb-12 leading-loose text-3xl opacity-80 items-center">
           <div class="">Why aren’t you good at English?</div>
           <div class="align-middle">It’s because you haven’t used <span
@@ -27,15 +27,11 @@
           </button>
         </a>
       </div>
-      <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative">
+      <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative m-4">
         <div class="absolute flex h-full w-full card">
           <div class="bg-dot rounded-[64px]"></div>
-          <div
-            class="absolute left-0 right-0 top-12 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all">
-            📖</div>
-          <div
-            class="absolute left-40 right-0 top-32 text-[80px] -ml-28 text-center color-gray group-hover:-skew-y-12 group-hover:rotate-[30deg] group-hover:-ml-32 group-hover:-mt-6  transition-all">
-            🪱</div>
+          <div class="absolute left-0 right-0 top-0 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all">📖</div>
+          <div class="absolute left-48 right-0 top-24 text-[80px] -ml-28 text-center color-gray group-hover:-skew-y-12 group-hover:rotate-[30deg] group-hover:-ml-32 group-hover:-mt-6  transition-all">🪱</div>
         </div>
       </div>
     </section>
@@ -87,4 +83,3 @@
   background-position: 0 0, var(--bgPosition) var(--bgPosition);
   mask-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 0.5));
 }
-</style>
