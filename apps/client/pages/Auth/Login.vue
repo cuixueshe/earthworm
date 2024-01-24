@@ -3,7 +3,7 @@
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img className="mx-auto h-10 w-auto" src="/logo.png" alt="earthworm" />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                Sign in to your account
+                Log in to your account
             </h2>
         </div>
 
@@ -16,7 +16,7 @@
                     <n-input v-model:value="model.password" type="password" @keydown.enter.prevent />
                 </n-form-item>
                 <n-button type="primary" size="large" block @click="handleLogin">
-                    Sign in
+                    Log in
                 </n-button>
             </n-form>
 
@@ -58,6 +58,7 @@ const rules: FormRules = {
 
 const message = useMessage()
 const router = useRouter()
+const userInfo = useState('userInfo')
 
 const handleLogin = () => {
     formRef.value?.validate(async errors => {
@@ -68,6 +69,8 @@ const handleLogin = () => {
             })
             if (data) {
                 localStorage.setItem('token', data.token)
+                localStorage.setItem('userInfo', JSON.stringify(data.user))
+                userInfo.value = data.user
                 message.success('login success')
                 setTimeout(() => {
                     router.replace('/')

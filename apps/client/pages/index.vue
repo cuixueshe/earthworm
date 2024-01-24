@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+const userInfo = useState('userInfo')
+console.log(userInfo.value, 'singup');
 
 </script>
 
@@ -13,19 +14,18 @@
               class="text-fuchsia-400 font-bold">EARTHWORM</span> yet! 🤪 <i
               class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i></div>
         </div>
-        <NuxtLink href="/main/1">
-          <button
-            class="indicator btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300 mr-4">
+        <a class="mr-4" target="_blank" href="https://github.com/cuixueshe/earthworm">
+          <button class="btn w-48 indicator">
             <span class="indicator-item">🌟</span>
-            Go and get it <kbd class="kbd"> ↵ </kbd>
-          </button>
-        </NuxtLink>
-
-        <a target="_blank" href="https://github.com/cuixueshe/earthworm">
-          <button class="btn w-48">
             Star us on GitHub
           </button>
         </a>
+        <NuxtLink href="/main/1">
+          <button
+            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
+            Go and get it <kbd class="kbd"> ↵ </kbd>
+          </button>
+        </NuxtLink>
       </div>
       <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative m-4">
         <div class="absolute flex h-full w-full card">
@@ -83,3 +83,4 @@
   background-position: 0 0, var(--bgPosition) var(--bgPosition);
   mask-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 0.5));
 }
+</style>

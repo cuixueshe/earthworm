@@ -88,6 +88,7 @@ const handleRegister = () => {
                 name: model.value.name ?? '',
                 password: model.value.password ?? ''
             })
+            console.log(data);
             if (data) {
                 localStorage.setItem('token', data.token)
                 message.success('register success')

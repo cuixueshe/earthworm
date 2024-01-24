@@ -5,12 +5,19 @@ interface LoginDto {
   password: string;
 }
 
+export interface UserInfo {
+  userId: string;
+  username: string;
+  phone: string;
+}
+
 interface SignUpDto extends LoginDto {
   name: string;
 }
 
 interface LoginVo {
   token: string;
+  user: UserInfo
 }
 
 export async function login(dto: LoginDto) {
