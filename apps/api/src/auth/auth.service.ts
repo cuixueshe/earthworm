@@ -15,9 +15,9 @@ export class AuthService {
   constructor(
     private userService: UserService,
     private jwtService: JwtService,
-  ) { }
+  ) {}
 
-  async signIn(dto: SignDto) {
+  async login(dto: SignDto) {
     const user = await this.userService.findWithPhone(dto);
     if (!user) {
       throw new HttpException('User not exists', HttpStatus.BAD_REQUEST);
@@ -26,9 +26,10 @@ export class AuthService {
       throw new UnauthorizedException();
     }
 
-    const payload = { userId: user.id, username: user.name };
+    const payload = { userId: user.id, username: user.name, phone: user.phone };
     return {
       token: await this.jwtService.signAsync(payload),
+      user: payload,
     };
   }
 
