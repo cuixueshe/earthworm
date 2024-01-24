@@ -16,7 +16,7 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post('login')
-  sign(@Body() dto: SignDto) {
+  login(@Body() dto: SignDto) {
     return this.authService.login(dto);
   }
 
@@ -26,8 +26,8 @@ export class AuthController {
   }
 
   @UseGuards(AuthGuard)
-  @Get('test')
-  tets(@Request() req) {
+  @Get('userInfo')
+  userInfo(@Request() req) {
     return req.user;
   }
 }
