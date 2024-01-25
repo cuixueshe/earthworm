@@ -29,14 +29,9 @@
 </template>
 
 <script setup lang="ts">
-import { useFetchPlus } from "~/composables/useFetch";
+import { fetchCourses } from '~/api/course';
 
-interface Course {
-  title: string;
-  id: number;
-}
-
-const { data: courses } = await useFetchPlus<Course[]>("/");
+const courses = await fetchCourses()
 
 
 </script>

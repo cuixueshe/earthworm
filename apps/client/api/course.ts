@@ -8,3 +8,7 @@ export async function fetchCourse(courseId: number) {
 export async function fetchNextCourse(courseId: number) {
   return await http.get<Course, Course>(`/courses/${courseId}/next`);
 }
+
+export async function fetchCourses() {
+  return await http.get<Course[], Course[]>("/courses");
+}

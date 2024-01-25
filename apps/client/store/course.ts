@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { fetchCourse, fetchNextCourse } from "~/api/courses";
+import { fetchCourse, fetchNextCourse } from "~/api/course";
 
 interface Statement {
   id: number;

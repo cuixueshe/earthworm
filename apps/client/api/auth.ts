@@ -1,4 +1,5 @@
 import { type ErrorVo, isError } from "./common";
+import { http } from "./http";
 
 interface LoginDto {
   phone: string;
@@ -17,31 +18,13 @@ interface SignUpDto extends LoginDto {
 
 interface LoginVo {
   token: string;
-  user: UserInfo
+  user: UserInfo;
 }
 
 export async function login(dto: LoginDto) {
-  const message = useMessage();
-  const { data } = await useFetchPlus<LoginVo | ErrorVo>("/auth/login", {
-    body: dto,
-    method: "post",
-  });
-  if (isError(data.value)) {
-    message.error(data.value.message);
-    return;
-  }
-  return data.value as LoginVo;
+  return await http.post<LoginVo, LoginVo>("/auth/login", dto);
 }
 
 export async function signUp(dto: SignUpDto) {
-  const message = useMessage();
-  const { data } = await useFetchPlus<LoginVo | ErrorVo>("/auth/signup", {
-    body: dto,
-    method: "post",
-  });
-  if (isError(data.value)) {
-    message.error(data.value.message);
-    return;
-  }
-  return data.value as LoginVo;
+  return await http.post<LoginVo, LoginVo>("/auth/signup", dto);
 }
