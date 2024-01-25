@@ -6,6 +6,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: earthworm_nest
+    volumes:
+      - data:/var/lib/mysql
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
@@ -17,5 +19,5 @@ services:
     ports:
       - 6379:6379
 volumes:
-  redis_data:
+  data:
     driver: local
