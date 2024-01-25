@@ -14,11 +14,4 @@ export default defineNuxtConfig({
     "@bg-dev/nuxt-naiveui",
     "@nuxt/test-utils/module",
   ],
-  runtimeConfig: {
-    public: {
-      baseURL: isProd
-        ? "http://earthworm.cuixueshe.com:81/api"
-        : "http://localhost:3001",
-    },
-  },
 });
