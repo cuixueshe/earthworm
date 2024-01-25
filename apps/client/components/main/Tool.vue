@@ -3,7 +3,7 @@
     <div>
       <NuxtLink href="/courses"> 更多课程 </NuxtLink>
     </div>
-    <div>{{ coursesStore.currentCourse.title }}</div>
+    <div>{{ coursesStore.currentCourse?.title }}</div>
     <div>
       <button @click="handleDoAgain">重新开始</button>
     </div>
@@ -12,16 +12,24 @@
 
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
-import { useMode } from "./game";
+import { useGameMode } from "~/composables/main/game";
 
 const coursesStore = useCourseStore();
-const { showQuestion } = useMode();
+const { handleDoAgain } = useDoAgain()
 
-function handleDoAgain() {
-  coursesStore.doAgain();
-  showQuestion()
+function useDoAgain() {
+  const { showQuestion } = useGameMode();
+
+  function handleDoAgain() {
+    coursesStore.doAgain();
+    showQuestion()
+  }
+
+  return {
+    handleDoAgain
+  }
+
 }
-</script>
 
-<style scoped></style>
-~/store/course~/store/course-new
+
+</script>

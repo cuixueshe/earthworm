@@ -15,6 +15,3 @@ const coursesStore = useCourseStore();
 
 await coursesStore.setup(+route.params.id);
 </script>
-
-<style scoped></style>
-~/store/course~/store/course-new

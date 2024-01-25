@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
-import { useMode } from "./game";
+import { useGameMode } from "~/composables/main/game";
 
 const courseStore = useCourseStore();
 const { userInputWords, activeInputIndex, inputValue } = useInput();
@@ -62,7 +62,7 @@ function useInput() {
 }
 
 function registerShortcutKeyForInputEl() {
-  const { showAnswer } = useMode();
+  const { showAnswer } = useGameMode();
 
   function handleKeyup(e: KeyboardEvent) {
     if (e.code === "Enter") {
@@ -140,4 +140,3 @@ function useFocus() {
   border-bottom: 3px solid #1e80ff !important;
 }
 </style>
-~/store/course-new~/store/course

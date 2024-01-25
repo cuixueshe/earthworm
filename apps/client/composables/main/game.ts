@@ -1,6 +1,6 @@
 const mode = ref<"question" | "answer">("question");
 
-export function useMode() {
+export function useGameMode() {
   function showAnswer() {
     mode.value = "answer";
   }

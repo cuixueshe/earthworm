@@ -12,8 +12,9 @@
 </template>
 
 <script setup lang="ts">
-import { useMode } from "./game";
+import { useGameMode } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
+import { useCurrentStatementEnglishSound } from '~/composables/main/englishSound';
 
 
 const { handlePlaySound } = usePlaySound()
@@ -41,7 +42,7 @@ function usePlaySound() {
 }
 
 function useShowAnswer() {
-  const { showAnswer } = useMode();
+  const { showAnswer } = useGameMode();
 
   onMounted(() => {
     registerShortcut("ctrl+n", handleShowAnswer);

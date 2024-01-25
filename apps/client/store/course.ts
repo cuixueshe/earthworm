@@ -15,7 +15,6 @@ export interface Course {
   statements: Statement[];
 }
 
-
 export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
@@ -28,6 +27,10 @@ export const useCourseStore = defineStore("course", () => {
 
   const wordCount = computed(() => {
     return currentStatement.value?.english.split(" ").length || 1;
+  });
+
+  const totalQuestionsCount = computed(() => {
+    return currentCourse.value?.statements.length || 0;
   });
 
   function toNextStatement() {
@@ -51,11 +54,13 @@ export const useCourseStore = defineStore("course", () => {
     );
   }
 
-  async function toNextCourse(cId: number) {
+  async function goToNextCourse(cId: number) {
     const nextCourse = await fetchNextCourse(cId);
+    if(!nextCourse) return false
+
     currentCourse.value = nextCourse;
     statementIndex.value = 0;
-    return currentCourse;
+    return true;
   }
 
   async function setup(courseId: number) {
@@ -71,7 +76,8 @@ export const useCourseStore = defineStore("course", () => {
     currentCourse,
     currentStatement,
     wordCount,
-    toNextCourse,
+    totalQuestionsCount,
+    goToNextCourse,
     setup,
     doAgain,
     isAllDone,

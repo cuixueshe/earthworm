@@ -18,8 +18,7 @@ export function useCurrentStatementEnglishSound() {
   const coursesStore = useCourseStore();
 
   watchEffect(() => {
-    word.value = coursesStore.currentStatement?.english;
-    console.log(word)
+    word.value = coursesStore.currentStatement?.english || "";
   });
 
   const sound = useEnglishSound(word);
@@ -28,5 +27,3 @@ export function useCurrentStatementEnglishSound() {
     sound,
   };
 }
-
-

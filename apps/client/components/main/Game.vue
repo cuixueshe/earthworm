@@ -22,9 +22,9 @@ import Answer from "./Answer.vue";
 import CourseProgress from "./CourseProgress.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
-import { useMode } from "./game";
+import { useGameMode } from "~/composables/main/game";
 
-const { mode } = useMode();
+const { mode } = useGameMode();
 </script>
 
 <style scoped></style>
