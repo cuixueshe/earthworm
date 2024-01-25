@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+const isProd = process.env.NODE_ENV === "production";
+
 export default defineNuxtConfig({
   css: ["~/assets/css/globals.css"],
   ssr: false,
@@ -10,11 +12,13 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
     "@bg-dev/nuxt-naiveui",
-    '@nuxt/test-utils/module'
+    "@nuxt/test-utils/module",
   ],
   runtimeConfig: {
     public: {
-      baseURL: process.env.BASE_URL || "http://localhost:3001",
+      baseURL: isProd
+        ? "http://earthworm.cuixueshe.com:81/api"
+        : "http://localhost:3001",
     },
   },
 });
