@@ -2,12 +2,16 @@
 
 ## How to run
 
-### in mac
 
-1. Install dependencies
+1. Install dependencies  
+mac:   
 ```bash
 brew install docker orbstack
 ```
+
+win:  
+install [docker-desktop](https://www.docker.com/products/docker-desktop/)
+
 2. open orbstack
 
 3. run commands
