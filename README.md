@@ -4,13 +4,12 @@
 
 
 1. Install dependencies  
-mac:   
-```bash
-brew install docker orbstack
-```
-
-win:  
-install [docker-desktop](https://www.docker.com/products/docker-desktop/)
+    mac:   
+    ```bash
+    brew install docker orbstack
+    ```
+    win:  
+    install [docker-desktop](https://www.docker.com/products/docker-desktop/)
 
 2. open orbstack
 
