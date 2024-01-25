@@ -1,7 +1,7 @@
 <template>
   <div class="text-center mb-20 mt-10">
     <div class="text-5xl mb-3 text-fuchsia-500 dark:text-gray-50">
-      {{ word }}
+      {{ courseStore.currentStatement?.english }}
       <svg
         class="w-7 h-7 inline-block ml-1 cursor-pointer"
         viewBox="0 0 1024 1024"
@@ -15,10 +15,12 @@
         ></path>
       </svg>
     </div>
-    <div class="text-2xl text-slate-600">{{ soundmark }}</div>
+    <div class="text-2xl text-slate-600">
+      {{ courseStore.currentStatement?.soundmark }}
+    </div>
     <button
       class="border-solid border-2 border-slate-400 bg-slate-100 dark:bg-fuchsia-500 rounded-lg mt-8 mb-11 indent-1 h-10 text-2xl pl-10 pr-10 hover:bg-slate-200"
-      @click="handleToNextStatement"
+      @click="goToNextQuestion"
     >
       next
     </button>
@@ -31,53 +33,29 @@ import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useMode } from "./game";
 import { useSummary } from "./summary";
 
-const { showQuestion } = useMode();
-const { showSummary } = useSummary();
-const { sound } = useCurrentStatementEnglishSound();
-const coursesStore = useCourseStore();
+const courseStore = useCourseStore();
+registerShortcutKeyForNextQuestion();
+const { handlePlaySound } = usePlayEnglishSound();
 
-const { soundmark, word } = useShowInfo();
-useShortcutToNext();
-autoPlayEnglishSound();
+function usePlayEnglishSound() {
+  const { sound } = useCurrentStatementEnglishSound();
 
-function useShowInfo() {
-  const soundmark = ref("");
-  const word = ref("");
-
-  watchEffect(() => {
-    soundmark.value = coursesStore.currentStatement?.soundmark;
-    word.value = coursesStore.currentStatement?.english;
-  });
-
-  return {
-    soundmark,
-    word,
-  };
-}
-
-function autoPlayEnglishSound() {
   onMounted(() => {
     sound.play();
   });
-}
 
-function handleToNextStatement() {
-  if (coursesStore.isAllDone()) {
-    showSummary();
-    return;
+  function handlePlaySound() {
+    sound.play();
   }
 
-  coursesStore.toNextStatement();
-  showQuestion();
+  return {
+    handlePlaySound,
+  };
 }
 
-function handlePlaySound() {
-  sound.play();
-}
-
-function useShortcutToNext() {
+function registerShortcutKeyForNextQuestion() {
   function handleKeydown() {
-    handleToNextStatement();
+    goToNextQuestion();
   }
   onMounted(() => {
     registerShortcut("enter", handleKeydown);
@@ -87,4 +65,18 @@ function useShortcutToNext() {
     cancelShortcut("enter", handleKeydown);
   });
 }
-</script>~/store/course-new
+
+function goToNextQuestion() {
+  const { showQuestion } = useMode();
+  const { showSummary } = useSummary();
+
+  if (courseStore.isAllDone()) {
+    showSummary();
+    return;
+  }
+
+  courseStore.toNextStatement();
+  showQuestion();
+}
+</script>
+~/store/course-new
