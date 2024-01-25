@@ -15,24 +15,49 @@
 import { useMode } from "./game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
-const { showAnswer } = useMode();
-const { sound } = useCurrentStatementEnglishSound();
 
-function handleShowAnswer() {
-  showAnswer();
+const { handlePlaySound } = usePlaySound()
+const { handleShowAnswer } = useShowAnswer()
+
+
+function usePlaySound() {
+  const { sound } = useCurrentStatementEnglishSound();
+
+  onMounted(() => {
+    registerShortcut("ctrl+p", handlePlaySound);
+  })
+
+  onUnmounted(() => {
+    cancelShortcut("ctrl+p", handlePlaySound);
+  });
+
+  function handlePlaySound() {
+    sound.play();
+  }
+
+  return {
+    handlePlaySound
+  }
 }
 
-function handlePlaySound() {
-  sound.play();
+function useShowAnswer() {
+  const { showAnswer } = useMode();
+
+  onMounted(() => {
+    registerShortcut("ctrl+n", handleShowAnswer);
+  });
+
+  onUnmounted(() => {
+    cancelShortcut("ctrl+n", handleShowAnswer);
+  });
+
+  function handleShowAnswer() {
+    showAnswer();
+  }
+
+  return {
+    handleShowAnswer
+  }
+
 }
-
-onMounted(() => {
-  registerShortcut("ctrl+p", handlePlaySound);
-  registerShortcut("ctrl+n", handleShowAnswer);
-});
-
-onUnmounted(() => {
-  cancelShortcut("ctrl+p", handlePlaySound);
-  cancelShortcut("ctrl+n", handleShowAnswer);
-});
 </script>
