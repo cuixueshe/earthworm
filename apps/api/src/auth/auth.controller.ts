@@ -5,6 +5,7 @@ import {
   Get,
   UseGuards,
   Request,
+  HttpException,
 } from '@nestjs/common';
 import { SignDto } from './model/auth.dto';
 import { AuthService } from './auth.service';
