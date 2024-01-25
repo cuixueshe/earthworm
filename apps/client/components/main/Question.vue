@@ -2,12 +2,11 @@
   <div class="text-5xl text-center mb-20 mt-10">
     <div class="text-fuchsia-500 dark:text-gray-50">
       {{
-        courseStore.currentStatement?.chinese ||
-        "生存还是毁灭，这是一个问题"
+        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
       }}
     </div>
     <div class="code-box">
-      <template v-for="i in lineNum" :key="i">
+      <template v-for="i in courseStore.wordCount" :key="i">
         <div
           :class="[
             'code-item',
@@ -18,11 +17,11 @@
             'dark:text-indigo-500  text-[rgba(32,32,32,0.6)]',
           ]"
         >
-          {{ words[i - 1] }}
+          {{ userInputWords[i - 1] }}
         </div>
       </template>
       <input
-        ref="input"
+        ref="inputEl"
         class="code-input"
         type="text"
         v-model="inputValue"
@@ -39,49 +38,69 @@
 import { useCourseStore } from "~/store/course";
 import { useMode } from "./game";
 
-const { showAnswer } = useMode();
-
 const courseStore = useCourseStore();
+const { userInputWords, activeInputIndex, inputValue } = useInput();
+const { handleKeyup } = registerShortcutKeyForInputEl();
+const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
 
-const input = ref<HTMLInputElement>();
-const lineNum = ref(1);
-const focusing = ref(true);
-const inputValue = ref("");
-const words = ref<string[]>([]);
+function useInput() {
+  const inputValue = ref("");
 
-const activeInputIndex = computed(() => {
-  return Math.min(words.value.length - 1, lineNum.value - 1);
-});
+  const userInputWords = computed(() => {
+    return inputValue.value.trimStart().split(" ");
+  });
 
-watchEffect(() => {
-  lineNum.value = courseStore.currentStatement?.english.split(" ").length || 1;
-});
+  const activeInputIndex = computed(() => {
+    return Math.min(userInputWords.value.length - 1, courseStore.wordCount - 1);
+  });
 
-watchEffect(() => {
-  words.value = inputValue.value.trimStart().split(" ");
-});
+  return {
+    inputValue,
+    userInputWords,
+    activeInputIndex,
+  };
+}
 
-function handleKeyup(e: KeyboardEvent) {
-  if (e.code === "Enter") {
-    e.stopPropagation();
+function registerShortcutKeyForInputEl() {
+  const { showAnswer } = useMode();
 
-    if (courseStore.checkCorrect(inputValue.value.trim())) {
-      showAnswer();
+  function handleKeyup(e: KeyboardEvent) {
+    if (e.code === "Enter") {
+      e.stopPropagation();
+
+      if (courseStore.checkCorrect(inputValue.value.trim())) {
+        showAnswer();
+      }
+      inputValue.value = "";
     }
-    inputValue.value = "";
   }
+
+  return {
+    handleKeyup,
+  };
 }
 
-onMounted(() => {
-  input.value?.focus();
-});
+function useFocus() {
+  const focusing = ref(true);
+  const inputEl = ref<HTMLInputElement>();
+  onMounted(() => {
+    inputEl.value?.focus();
+  });
 
-function handleInputFocus() {
-  focusing.value = true;
-}
+  function handleInputFocus() {
+    focusing.value = true;
+  }
 
-function handleBlur() {
-  focusing.value = false;
+  function handleBlur() {
+    focusing.value = false;
+  }
+
+  return {
+    inputEl,
+    focusing,
+    handleInputFocus,
+    handleBlur,
+  };
 }
 </script>
 
