@@ -15,7 +15,7 @@ services:
     image: redis:5-alpine
     restart: always
     volumes:
-      - redis_data:/var/lib/redis
+      - data:/var/lib/redis
     ports:
       - 6379:6379
 volumes:
