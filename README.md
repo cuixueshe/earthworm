@@ -26,6 +26,6 @@ pnpm data:init
 pnpm serve:dev
 ```
 5. run client
-```run
+```bash
 pnpm client:dev
 ```
