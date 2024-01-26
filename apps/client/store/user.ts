@@ -11,7 +11,7 @@ const LOCAL_STORAGE_KEY = "userInfo";
 export const useUserStore = defineStore("user", () => {
   const user = ref<User>();
 
-  function loginUser(userInfo: User) {
+  function initUser(userInfo: User) {
     user.value = userInfo;
     saveUserInfo();
   }
@@ -41,7 +41,7 @@ export const useUserStore = defineStore("user", () => {
 
   return {
     user,
-    loginUser,
+    initUser,
     logoutUser,
     restoreUser,
     getUserInfo,

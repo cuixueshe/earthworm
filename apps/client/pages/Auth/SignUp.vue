@@ -12,7 +12,7 @@
     </div>
 
     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <n-form ref="formRef" :rules="rules" :model="model">
+      <n-form ref="formEl" :rules="rules" :model="model">
         <n-form-item path="name" label="Name" required>
           <n-input v-model:value="model.name" @keydown.enter.prevent />
         </n-form-item>
@@ -52,9 +52,8 @@
 </template>
 <script setup lang="ts">
 import { type FormInst, type FormRules, type FormItemRule } from "naive-ui";
-import { signUp } from "../../api/auth";
-import { setToken } from "~/utils/token";
-const formRef = ref<FormInst | null>(null);
+import { useAuth } from "~/composables/auth";
+import { delay } from "~/utils";
 
 interface ModelType {
   name: string | null;
@@ -62,6 +61,9 @@ interface ModelType {
   password: string | null;
   confirmPassword: string | null;
 }
+
+const { signup } = useAuth();
+const formEl = ref<FormInst | null>(null);
 
 const model = ref<ModelType>({
   name: null,
@@ -102,22 +104,22 @@ const rules: FormRules = {
 const message = useMessage();
 const router = useRouter();
 
+async function gotoHomePage() {
+  await delay(500);
+  router.replace("/");
+}
+
 const handleRegister = () => {
-  formRef.value?.validate(async (errors) => {
+  formEl.value?.validate(async (errors) => {
     if (!errors) {
-      const data = await signUp({
+      await signup({
         phone: model.value.phone ?? "",
         name: model.value.name ?? "",
         password: model.value.password ?? "",
       });
-      console.log(data);
-      if (data) {
-        setToken(data.token);
-        message.success("register success");
-        setTimeout(() => {
-          router.replace("/");
-        }, 500);
-      }
+
+      message.success("register success");
+      await gotoHomePage();
     }
   });
 };

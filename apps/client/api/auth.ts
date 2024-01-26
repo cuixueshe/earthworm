@@ -20,10 +20,10 @@ interface LoginVo {
   user: UserInfo;
 }
 
-export async function login(dto: LoginDto) {
+export async function fetchLogin(dto: LoginDto) {
   return await http.post<LoginVo, LoginVo>("/auth/login", dto);
 }
 
-export async function signUp(dto: SignUpDto) {
+export async function fetchSignUp(dto: SignUpDto) {
   return await http.post<LoginVo, LoginVo>("/auth/signup", dto);
 }

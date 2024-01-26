@@ -19,7 +19,7 @@ describe("user", () => {
     const mockUser = generateUserInfo();
     const userStore = useUserStore();
 
-    userStore.loginUser(mockUser);
+    userStore.initUser(mockUser);
 
     expect(userStore.user).toEqual(mockUser);
     expect(userStore.getUserInfo()).toMatchInlineSnapshot(
@@ -30,7 +30,7 @@ describe("user", () => {
   it("should restore user", () => {
     const mockUser = generateUserInfo();
     const userStore = useUserStore();
-    userStore.loginUser(mockUser);
+    userStore.initUser(mockUser);
 
     userStore.user = undefined;
     userStore.restoreUser();
@@ -41,7 +41,7 @@ describe("user", () => {
   it("should logout user", () => {
     const mockUser = generateUserInfo();
     const userStore = useUserStore();
-    userStore.loginUser(mockUser);
+    userStore.initUser(mockUser);
 
     userStore.logoutUser();
 
