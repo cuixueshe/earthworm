@@ -351,12 +351,12 @@
 	},
 	{
 		"chinese": "你可以递给我我的手机吗？",
-		"english": "can you hand me my phone?",
+		"english": "can you hand me my phone",
 		"soundmark": "/kən/ /ju/ /hænd/ /mi/ /maɪ/ /fon/"
 	},
 	{
 		"chinese": "你可以......吗？",
-		"english": "can you?",
+		"english": "can you",
 		"soundmark": "/kən/ /ju/"
 	},
 	{
@@ -376,7 +376,7 @@
 	},
 	{
 		"chinese": "你可以递给我一个香蕉吗？",
-		"english": "can you hand me a banana?",
+		"english": "can you hand me a banana",
 		"soundmark": "/kən/ /ju/ /hænd/ /mi/ /ə/ /bə'nænə/"
 	},
 	{
@@ -386,12 +386,12 @@
 	},
 	{
 		"chinese": "你可以麻烦一下递给我我的手机吗？",
-		"english": "can you please hand me my phone?",
+		"english": "can you please hand me my phone",
 		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"
 	},
 	{
 		"chinese": "你可以麻烦一下......吗？",
-		"english": "can you please?",
+		"english": "can you please",
 		"soundmark": "/kən/ /ju/ /pliz/"
 	},
 	{
@@ -401,7 +401,7 @@
 	},
 	{
 		"chinese": "你可以麻烦一下递给我一个香蕉吗？",
-		"english": "can you please hand me a banana?",
+		"english": "can you please hand me a banana",
 		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
 	},
 	{
@@ -416,17 +416,17 @@
 	},
 	{
 		"chinese": "你可以麻烦一下递给我一个香蕉吗？",
-		"english": "can you please hand me a banana?",
+		"english": "can you please hand me a banana",
 		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下递给我一个香蕉吗？",
-		"english": "could you please hand me a banana?",
+		"english": "could you please hand me a banana",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
@@ -436,12 +436,12 @@
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下递给我我的手机吗？",
-		"english": "could you please hand me my phone?",
+		"english": "could you please hand me my phone",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
@@ -451,12 +451,12 @@
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下递给我我的书包吗？",
-		"english": "could you please hand me my school bag?",
+		"english": "could you please hand me my school bag",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
@@ -471,7 +471,7 @@
 	},
 	{
 		"chinese": "你可以（礼貌版）麻烦一下帮助我吗？",
-		"english": "could you please help me?",
+		"english": "could you please help me",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /hɛlp/ /mi/"
 	},
 	{
@@ -501,12 +501,12 @@
 	},
 	{
 		"chinese": "请问你可以......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
 		"chinese": "请问你可以告诉我真相吗？",
-		"english": "could you please tell me the truth?",
+		"english": "could you please tell me the truth",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
@@ -536,12 +536,12 @@
 	},
 	{
 		"chinese": "请问你可以......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
 		"chinese": "请问你可以走开别烦我吗？",
-		"english": "could you please leave me alone?",
+		"english": "could you please leave me alone",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /tə/ /liv/ /mi/ /ə'lon/"
 	},
 	{
@@ -571,12 +571,12 @@
 	},
 	{
 		"chinese": "请问你可以......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
 		"chinese": "请问你可以今晚打电话给我吗？",
-		"english": "could you please call me tonight?",
+		"english": "could you please call me tonight",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /kɔl/ /mi/ /tə'naɪt/"
 	},
 	{
@@ -611,12 +611,12 @@
 	},
 	{
 		"chinese": "请问你可以......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
 		"chinese": "请问你可以给我帮把手吗？",
-		"english": "could you please give me a hand?",
+		"english": "could you please give me a hand",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /ɡɪv/ /mi/ /ə/ /hænd/"
 	},
 	{
@@ -636,12 +636,12 @@
 	},
 	{
 		"chinese": "请问你可以......吗？",
-		"english": "could you please?",
+		"english": "could you please",
 		"soundmark": "/kʊd/ /ju/ /pliz/"
 	},
 	{
 		"chinese": "请问你可以打开门吗",
-		"english": "could you please open the door?",
+		"english": "could you please open the door",
 		"soundmark": "/kʊd/ /ju/ /pliz/ /'opən/ /ðə/ /dɔr/"
 	}
 ]

@@ -56,7 +56,7 @@
 	},
 	{
 		"chinese": "我不想在这里我想要去那里",
-		"english": "I don't want to be here, I want to be there",
+		"english": "I don't want to be here I want to be there",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
@@ -80,13 +80,13 @@
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "当我在这里的时候我想要去那里",
-		"english": "when I am here, I want to be there",
+		"chinese": "当我在这里的时候，我想要去那里",
+		"english": "when I am here I want to be there",
 		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "当我(过去)在这里的时候我",
-		"english": "(过去)想要去那里 when I was here, I wanted to be there",
+		"chinese": "当我(过去)在这里的时候，我(过去)想要去那里",
+		"english": "when I was here I wanted to be there",
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /aɪ/ /wɑntɪd/ /tə/ /bi/ /ðɛr/"
 	},
 	{

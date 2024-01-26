@@ -376,7 +376,7 @@
 	},
 	{
 		"chinese": "你不告诉我",
-		"english": "you don ́t tell me",
+		"english": "you don't tell me",
 		"soundmark": "/ju/ /dont/ /tɛl/ /mi/"
 	},
 	{
@@ -665,8 +665,8 @@
 		"soundmark": "/wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "她（过去）想要改变世界当她",
-		"english": "（过去）是年轻的时候 she wanted to change the world when she was young",
+		"chinese": "她（过去）想要改变世界当她（过去）是年轻的时候",
+		"english": "she wanted to change the world when she was young",
 		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
@@ -680,8 +680,8 @@
 		"soundmark": "/ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她",
-		"english": "（过去）是年轻的时候 I talked with her last weekend and she told me she wanted to change the world when she was young",
+		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她（过去）是年轻的时候",
+		"english": "I talked with her last weekend and she told me she wanted to change the world when she was young",
 		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/ /ənd/ /ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	}
 ]
