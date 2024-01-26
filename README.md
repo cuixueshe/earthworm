@@ -21,7 +21,7 @@ docker compose up -d
 ## Configure environment variables 
 cp .env.example .env
 pnpm install
-pnpm db:init
+pnpm db:push
 pnpm data:init
 ```
 4. run serve
