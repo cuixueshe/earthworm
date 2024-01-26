@@ -7,11 +7,11 @@
       </div>
     </NuxtLink>
     <div class="flex items-center">
-      <button v-if="!userInfo && route.name !== 'Auth-Login'" class="btn btn-sm btn-ghost mx-1 h-8 px-2"
+      <button v-if="!userStore.user && route.name !== 'Auth-Login'" class="btn btn-sm btn-ghost mx-1 h-8 px-2"
         @click="handleLogin">
         Log in
       </button>
-      <button v-else-if="!userInfo && route.name !== 'Auth-Signup'" class="btn btn-sm btn-ghost mx-1 h-8 px-2"
+      <button v-else-if="!userStore.user && route.name !== 'Auth-Signup'" class="btn btn-sm btn-ghost mx-1 h-8 px-2"
         @click="handleSignup">
         Sign up
       </button>
@@ -41,10 +41,10 @@
 </template>
 
 <script setup lang="ts">
-import type { UserInfo } from '~/api/auth';
+import {useUserStore} from '~/store/user';
 const route = useRoute()
 
-const userInfo = useState<null | UserInfo>('userInfo', () => JSON.parse(localStorage.getItem('userInfo') || 'null'))
+const userStore = useUserStore()
 
 const toggleDarkMode = () => {
   if (document.documentElement.classList.contains('dark')) {
@@ -74,8 +74,7 @@ const handleSignup = () => {
 }
 
 const handleLogout = () => {
-  userInfo.value = null
-  localStorage.removeItem('userInfo') 
+  userStore.logoutUser()
   cleanToken()
 }
 

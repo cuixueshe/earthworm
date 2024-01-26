@@ -44,6 +44,7 @@
 import { type FormInst, type FormRules } from "naive-ui";
 import { login } from "../../api/auth";
 import { setToken } from "~/utils/token";
+import { useUserStore } from "~/store/user";
 
 const formRef = ref<FormInst | null>(null);
 
@@ -73,8 +74,8 @@ const rules: FormRules = {
 
 const message = useMessage();
 const router = useRouter();
-const userInfo = useState("userInfo");
 const route = useRoute();
+const userStore = useUserStore()
 
 const handleLogin = () => {
   formRef.value?.validate(async (errors) => {
@@ -85,8 +86,7 @@ const handleLogin = () => {
       });
       if (data) {
         setToken(data.token);
-        localStorage.setItem("userInfo", JSON.stringify(data.user));
-        userInfo.value = data.user;
+        userStore.loginUser(data.user)
         message.success("login success");
         setTimeout(() => {
           router.replace(route.query.callback?.toString() ?? "/");

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const userInfo = useState('userInfo')
-console.log(userInfo.value, 'singup');
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
 useShortcutToGame();
