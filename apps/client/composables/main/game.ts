@@ -1,18 +1,17 @@
-const mode = ref<"question" | "answer">("question");
+const gameMode = ref<"question" | "answer">("question");
 
 export function useGameMode() {
   function showAnswer() {
-    mode.value = "answer";
+    gameMode.value = "answer";
   }
 
   function showQuestion() {
-    mode.value = "question";
+    gameMode.value = "question";
   }
 
   return {
-    mode,
+    gameMode,
     showAnswer,
     showQuestion,
   };
 }
-
