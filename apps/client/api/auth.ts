@@ -1,4 +1,3 @@
-import { type ErrorVo, isError } from "./common";
 import { http } from "./http";
 
 interface LoginDto {

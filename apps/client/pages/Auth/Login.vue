@@ -59,6 +59,7 @@ const rules: FormRules = {
 const message = useMessage()
 const router = useRouter()
 const userInfo = useState('userInfo')
+const route = useRoute()
 
 const handleLogin = () => {
     formRef.value?.validate(async errors => {
@@ -73,7 +74,7 @@ const handleLogin = () => {
                 userInfo.value = data.user
                 message.success('login success')
                 setTimeout(() => {
-                    router.replace('/')
+                    router.replace(route.query.callback?.toString() ?? '/')
                 }, 500)
             }
         }

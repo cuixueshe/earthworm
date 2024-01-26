@@ -4,6 +4,12 @@ import { checkHaveToken, getToken } from "~/utils/token";
 
 const isProd = process.env.NODE_ENV === "production";
 
+interface Response<T extends Record<PropertyKey, unknown>> {
+  code: number;
+  message: string;
+  data: T | null;
+}
+
 export const http: AxiosInstance = axios.create({
   baseURL: isProd
     ? "http://earthworm.cuixueshe.com:81/api"
@@ -19,10 +25,9 @@ http.interceptors.request.use((config) => {
 });
 
 http.interceptors.response.use(
-  (response: AxiosResponse) => {
+  (response: AxiosResponse<Response<any>>) => {
     const { code, message, data } = response.data;
-
-    if (code === 1) {
+    if (code === 200) {
       return data;
     } else {
       console.error(message);
@@ -36,8 +41,9 @@ http.interceptors.response.use(
           console.error(error.message);
           break;
         case 401:
-          // TODO 跳转到登录
-          console.error(error.message, "跳转到登录")
+          const callback = window.location.pathname;
+          window.location.href = `/auth/login?callback=${callback}`;
+          console.error(error.message, "跳转到登录");
           break;
       }
       return Promise.reject(error);

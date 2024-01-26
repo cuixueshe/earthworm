@@ -75,7 +75,7 @@ const handleSignup = () => {
 
 const handleLogout = () => {
   userInfo.value = null
-  localStorage.removeItem('token')
+  cleanToken()
 }
 
 onMounted(() => {
