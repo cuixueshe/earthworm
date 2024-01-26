@@ -3,7 +3,7 @@ import { type MySql2Database } from 'drizzle-orm/mysql2';
 import { drizzle } from 'drizzle-orm/mysql2';
 import * as mysql from 'mysql2/promise';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
-import { schemas } from '@earthwrom/shared';
+import { schemas } from '@earthworm/shared';
 
 export const DB = Symbol('DB_SERVICE');
 export type DbType = MySql2Database<typeof schemas>;

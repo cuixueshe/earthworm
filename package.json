@@ -1,12 +1,12 @@
 {
-  "name": "earthwrom",
+  "name": "earthworm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "db:push": "drizzle-kit push:mysql",
-    "data:init": "pnpm -F @earthwrom/scripts-courses data:create && pnpm -F @earthwrom/scripts-courses data:upload",
-    "schema:build": "pnpm -F @earthwrom/shared build",
+    "data:init": "pnpm -F @earthworm/scripts-courses data:create && pnpm -F @earthworm/scripts-courses data:upload",
+    "schema:build": "pnpm -F @earthworm/shared build",
     "serve:dev": "pnpm schema:build && pnpm -F api start:dev",
     "client:dev": "pnpm -F client dev"
   },

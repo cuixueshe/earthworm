@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { DB, DbType } from '../global/providers/db.provider';
-import { userProgress } from '@earthwrom/shared';
+import { userProgress } from '@earthworm/shared';
 import { eq } from 'drizzle-orm';
 
 @Injectable()

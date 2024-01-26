@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { CreateUserDto, FindUserDto } from './model/user.dto';
 import { DB, DbType } from '../global/providers/db.provider';
-import { user } from '@earthwrom/shared';
+import { user } from '@earthworm/shared';
 import { eq } from 'drizzle-orm';
 import * as argon2 from 'argon2';
 
