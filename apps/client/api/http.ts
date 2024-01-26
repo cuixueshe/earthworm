@@ -27,7 +27,7 @@ http.interceptors.request.use((config) => {
 http.interceptors.response.use(
   (response: AxiosResponse<Response<any>>) => {
     const { code, message, data } = response.data;
-    if (code === 200) {
+    if (code === 1) {
       return data;
     } else {
       console.error(message);

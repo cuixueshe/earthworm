@@ -75,6 +75,7 @@ const handleSignup = () => {
 
 const handleLogout = () => {
   userInfo.value = null
+  localStorage.removeItem('userInfo') 
   cleanToken()
 }
 
