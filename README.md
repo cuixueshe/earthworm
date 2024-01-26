@@ -4,7 +4,7 @@
 
 ## 如何开始？
 
-### ⚠️ 开始前的注意事项
+### ⚠️ 先看注意事项
 
 - **Node.js version >= v20**
 - 该项目依赖 **Docker**，所以请确保你本地已安装并成功运行
@@ -32,7 +32,7 @@ pnpm install
 cp .env.example .env
 ```
 
-### 3. 启动/停止/删除 Docker 服务
+### 3. 启动/停止/删除 Docker Compose 服务
 
 后端用到了 MySQL 和 Redis 服务，通过下面在 `package.json` 中配置的命令启动和停止
 
@@ -73,20 +73,22 @@ pnpm db:upload
 ### 6. 启动后端服务
 
 ```bash
-pnpm serve:dev
+pnpm dev:serve
 ```
 
 ### 7. 启动前端服务
 
 ```bash
-pnpm client:dev
+pnpm dev:client
 ```
 
 ## 常见问题解答
 
 ### 如何正确的更新课程数据？
 
-⚠️ 多次执行 `pnpm db:upload` 会导致数据库中课程 `id` 持续自增并覆盖，所以当你发现有错误的课程数据并更改对应 `json` 文件后，应当使用下面的命令将课程数据更新到数据库中
+在你多次执行 `pnpm db:upload` 命令时，就会导致数据库中课程 `id` 持续自增并覆盖
+
+所以当你发现有错误的课程数据并修改后，应当使用下面的命令将课程数据更新到数据库中
 
 ```bash
 pnpm db:update
@@ -96,9 +98,9 @@ pnpm db:update
 
 **尝试删除掉 Docker 容器，但重新启动后还是保留了之前的数据？**
 
-因为数据是被存储在本地的 Docker Volumes 中，具体在 [docker-compose.yml](./docker-compose.yml) 最顶层中的配置参数 `volumes` 可以看到，所以即使你停止或者删除掉了容器，但数据还是会保留的。
+因为数据是被存储在本地的 Docker Volumes 中，具体在 [docker-compose.yml](./docker-compose.yml) 中顶层的配置参数 `volumes`，所以即使你停止或者删掉了容器，数据还是会保留哒。
 
-⚠️ 要解决这个问题其实很简单，把 volumes 数据删除即可，当然我们也提供了一个命令给你，但需要注意的是使用之后，会删除数据库中的所有数据，你也需要重新跑一遍 **如何开始** 的步骤（从步骤 3 开始即可）
+要解决这个问题其实很简单，把 volumes 数据删除即可，当然我们也提供了一个命令给你
 
 ```bash
 pnpm docker:down
@@ -106,6 +108,8 @@ pnpm docker:down
 # 本质上就是执行下面这个，意思是停止并删除容器服务 + 创建的 volumes 数据
 docker-compose down --volumes
 ```
+
+⚠️ 但需要注意的是使用之后，会删除数据库中的所有数据，你也需要重新跑一遍 **如何开始** 的步骤（从步骤 3 开始即可）
 
 **TODO**: 后面看看有没有更优雅的方式规避或解决这个问题，一开始本来是想着直接删数据库数据，但是发现有外键约束。
 
