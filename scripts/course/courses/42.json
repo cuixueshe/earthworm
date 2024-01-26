@@ -201,7 +201,7 @@
 	},
 	{
 		"chinese": "你(过去)有做这件事吗？",
-		"english": "did you do it?",
+		"english": "did you do it",
 		"soundmark": "/dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
@@ -210,8 +210,8 @@
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "你(过去)如何做这件事的？ how did you do it？",
-		"english": "",
+		"chinese": "你(过去)如何做这件事的？ ",
+		"english": "how did you do it？",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
@@ -221,12 +221,12 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到这件事的？",
-		"english": "how did you manage to do it?",
+		"english": "how did you manage to do it",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /du/ /ɪt/"
 	},
 	{
 		"chinese": "你(过去)如何设法做到......",
-		"english": "how did you manage...",
+		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
@@ -271,7 +271,7 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到如此迅速地到达这里的？",
-		"english": "how did you manage to get here so quickly?",
+		"english": "how did you manage to get here so quickly",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /ɡɛt/ /hɪr/ /so/ /ˈkwɪklɪ/"
 	},
 	{
@@ -336,7 +336,7 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到赚如此多的钱的？",
-		"english": "how did you manage to make so much money?",
+		"english": "how did you manage to make so much money",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
 	},
 	{
@@ -376,12 +376,12 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到赚如此多的钱的？",
-		"english": "how did you manage to make so much money?",
+		"english": "how did you manage to make so much money",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
 	},
 	{
 		"chinese": "你(过去)如何设法做到在一段如此短的时间里赚如此多的钱的？",
-		"english": "how did you manage to make so much money in such a short time?",
+		"english": "how did you manage to make so much money in such a short time",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/ /ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
@@ -406,7 +406,7 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到写这本书的？",
-		"english": "how did you manage to write this book?",
+		"english": "how did you manage to write this book",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/"
 	},
 	{
@@ -446,12 +446,12 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到写这本书的？",
-		"english": "how did you manage to write this book?",
+		"english": "how did you manage to write this book",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/"
 	},
 	{
 		"chinese": "你(过去)如何设法做到写这本书的当你(过去)在监狱里？",
-		"english": "how did you manage to write this book when you were in prison?",
+		"english": "how did you manage to write this book when you were in prison",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/ /wɛn/ /ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
 	},
 	{
@@ -506,7 +506,7 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到克服你的公开演讲的恐惧的？",
-		"english": "how did you manage to overcome your fear of public speaking?",
+		"english": "how did you manage to overcome your fear of public speaking",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /ˌovɚˈkʌm/ /jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
@@ -561,7 +561,7 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到保持在工作和生活之间的平衡的？",
-		"english": "how did you manage to keep the balance between work and life?",
+		"english": "how did you manage to keep the balance between work and life",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /kip/ /ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
@@ -611,7 +611,7 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
-		"english": "how did you manage to save enough money for that vacation?",
+		"english": "how did you manage to save enough money for that vacation",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
 	},
 	{
@@ -636,12 +636,12 @@
 	},
 	{
 		"chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
-		"english": "how did you manage to save enough money for that vacation?",
+		"english": "how did you manage to save enough money for that vacation",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
 	},
 	{
 		"chinese": "你(过去)如何设法做到在一段如此短的时间里为那个度假存足够的钱的？",
-		"english": "how did you manage to save enough money for that vacation in such a short time?",
+		"english": "how did you manage to save enough money for that vacation in such a short time",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/ /ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
 	}
 ]
