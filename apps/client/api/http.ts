@@ -1,8 +1,7 @@
 import type { AxiosInstance, AxiosResponse } from "axios";
 import axios from "axios";
 import { checkHaveToken, getToken } from "~/utils/token";
-
-const isProd = process.env.NODE_ENV === "production";
+import { isProd } from "~/utils/env";
 
 interface Response<T extends Record<PropertyKey, unknown>> {
   code: number;
@@ -11,7 +10,7 @@ interface Response<T extends Record<PropertyKey, unknown>> {
 }
 
 export const http: AxiosInstance = axios.create({
-  baseURL: isProd
+  baseURL: isProd()
     ? "http://earthworm.cuixueshe.com:81/api"
     : "http://localhost:3001",
   timeout: 10000,

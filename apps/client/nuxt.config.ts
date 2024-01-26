@@ -1,7 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
-const isProd = process.env.NODE_ENV === "production";
-
 export default defineNuxtConfig({
   css: ["~/assets/css/globals.css"],
   ssr: false,
