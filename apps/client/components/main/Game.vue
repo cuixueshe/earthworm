@@ -1,10 +1,10 @@
 <template>
   <div class="h-full w-full flex flex-col justify-center items-center">
     <div class="flex-1 mb-8">
-      <template v-if="gameMode === 'question'">
+      <template v-if="isQuestion()">
         <Question></Question>
       </template>
-      <template v-else-if="gameMode === 'answer'">
+      <template v-else-if="isAnswer()">
         <Answer></Answer>
       </template>
     </div>
@@ -24,7 +24,7 @@ import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
 import { useGameMode } from "~/composables/main/game";
 
-const { gameMode } = useGameMode();
+const { gameMode, isAnswer, isQuestion } = useGameMode();
 </script>
 
 <style scoped></style>
