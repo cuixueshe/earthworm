@@ -2,6 +2,8 @@
 
 ## How to run
 
+**node version >= 20**  
+if you encounter problems installing argon2, you can check [before-installing](https://www.npmjs.com/package/argon2#before-installing)
 
 1. Install dependencies  
     mac:   
