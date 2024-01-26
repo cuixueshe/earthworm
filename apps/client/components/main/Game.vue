@@ -24,7 +24,7 @@ import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
 import { useGameMode } from "~/composables/main/game";
 
-const { gameMode, isAnswer, isQuestion } = useGameMode();
+const { isAnswer, isQuestion } = useGameMode();
 </script>
 
 <style scoped></style>
