@@ -1,16 +1,22 @@
 <template>
   <NuxtLayout>
     <n-message-provider>
-      <NuxtPage />
+      <HttpErrorProvider>
+        <NuxtPage />
+      </HttpErrorProvider>
     </n-message-provider>
   </NuxtLayout>
 </template>
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import "vfonts/Lato.css";
 import { useUserStore } from "~/store/user";
 
-const userStore = useUserStore();
+useRestoreUser();
 
-userStore.restoreUser();
+function useRestoreUser() {
+  const userStore = useUserStore();
+  userStore.restoreUser();
+}
+
 </script>

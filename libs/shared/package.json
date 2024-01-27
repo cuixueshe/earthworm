@@ -1,5 +1,5 @@
 {
-    "name": "@earthwrom/shared",
+    "name": "@earthworm/shared",
     "version": "1.0.0",
     "description": "",
     "main": "dist/index.js",

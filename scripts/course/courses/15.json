@@ -440,8 +440,8 @@
 		"soundmark": "/ɪn/ /ə/ /de/"
 	},
 	{
-		"chinese": "在一天内完成这个工作",
-		"english": "（它）是困难的 it is difficult to finish the work in a day",
+		"chinese": "在一天内完成这个工作（它）是困难的",
+		"english": "it is difficult to finish the work in a day",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /'fɪnɪʃ/ /ðə/ /wɝk/ /ɪn/ /ə/ /de/"
 	},
 	{
@@ -495,8 +495,8 @@
 		"soundmark": "/aɪ/ /θɪŋk/ /ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
 	},
 	{
-		"chinese": "我不认为在大海里游泳",
-		"english": "（它）是危险的 I don't think it is dangerous to swim in the sea",
+		"chinese": "我不认为在大海里游泳（它）是危险的",
+		"english": "I don't think it is dangerous to swim in the sea",
 		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
 	},
 	{
@@ -675,14 +675,9 @@
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "而且我知道我将会在不远的",
-		"english": "and I know I will master english",
-		"soundmark": "/ənd/ /aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "将来掌握英语",
-		"english": "in the near future",
-		"soundmark": "/ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
+		"chinese": "而且我知道我将会在不远的将来掌握英语",
+		"english": "and I know I will master english in the near future",
+		"soundmark": "/ənd/ /aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
 	},
 	{
 		"chinese": "英语不是一个大的挑战对我来说",

@@ -1,14 +1,19 @@
 {
-  "name": "earthwrom",
+  "name": "earthworm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "db:push": "drizzle-kit push:mysql",
-    "data:init": "pnpm -F @earthwrom/scripts-courses data:create && pnpm -F @earthwrom/scripts-courses data:upload",
-    "schema:build": "pnpm -F @earthwrom/shared build",
-    "serve:dev": "pnpm schema:build && pnpm -F api start:dev",
-    "client:dev": "pnpm -F client dev"
+    "schema:build": "pnpm -F @earthworm/shared build",
+    "db:init": "drizzle-kit push:mysql",
+    "db:upload": "pnpm -F @earthworm/scripts-courses data:create && pnpm -F @earthworm/scripts-courses data:upload",
+    "db:update": "pnpm -F @earthworm/scripts-courses data:upload",
+    "dev:serve:": "pnpm schema:build && pnpm -F api start:dev",
+    "dev:client": "pnpm -F client dev",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose stop",
+    "docker:delete": "docker-compose down",
+    "docker:down": "docker-compose down --volumes"
   },
   "keywords": [],
   "author": "",

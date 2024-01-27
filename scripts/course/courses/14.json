@@ -156,13 +156,13 @@
 	},
 	{
 		"chinese": "我们昨天想要邀请她参加聚会",
-		"english": "we wanted to invite her to join the",
-		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/"
+		"english": "we wanted to invite her to join the party yesterday",
+		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
 	},
 	{
 		"chinese": "但是她（过去）不想加入我们",
-		"english": "party yesterday but she didn't want to join us",
-		"soundmark": "/ðə/ /'pɑrti/ /'jɛstɚde/ /bət/ /ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
+		"english": "but she didn't want to join us",
+		"soundmark": "/bət/ /ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
 		"chinese": "我们昨天不想邀请她参加聚会但是她真的（过去）想要加入我们",
@@ -475,7 +475,7 @@
 		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /（过去）想要 wanted/ /wɑntɪd/"
 	},
 	{
-		"chinese": "我只是（过去）想要完成我的",
+		"chinese": "我只是（过去）想要完成我的工作",
 		"english": "I just wanted to finish my work",
 		"soundmark": "/aɪ/ /dʒʌst/ /wɑntɪd/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
@@ -640,14 +640,9 @@
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "我上周末想看一个电影但是我（过去）没有足够的时",
-		"english": "I wanted to watch a movie last weekend but I didn't have enough",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/ /bət/ /aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/"
-	},
-	{
-		"chinese": "间",
-		"english": "time",
-		"soundmark": "/taɪm/"
+		"chinese": "我上周末想看一个电影但是我（过去）没有足够的时间",
+		"english": "I wanted to watch a movie last weekend but I didn't have enough time",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/ /bət/ /aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
 		"chinese": "完成",

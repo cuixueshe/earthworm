@@ -1,5 +1,5 @@
 {
-    "name": "@earthwrom/scripts-courses",
+    "name": "@earthworm/scripts-courses",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.ts",

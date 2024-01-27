@@ -29,23 +29,27 @@ http.interceptors.response.use(
     if (code === 1) {
       return data;
     } else {
-      console.error(message);
+      apiCodeErrorHandler?.(message)
       return Promise.reject(new Error(message));
     }
   },
   (error) => {
     if (error.response.status) {
-      switch (error.response.status) {
-        case 400:
-          console.error(error.message);
-          break;
-        case 401:
-          const callback = window.location.pathname;
-          window.location.href = `/auth/login?callback=${callback}`;
-          console.error(error.message, "跳转到登录");
-          break;
-      }
+      httpStatusErrorHandler?.(error.message, error.response.status);
       return Promise.reject(error);
     }
   }
 );
+
+
+type ApiCodeErrorHandler = (message: string) => void;
+let apiCodeErrorHandler: ApiCodeErrorHandler;
+export function injectApiCodeErrorHandler(handler: ApiCodeErrorHandler) {
+  apiCodeErrorHandler = handler;
+}
+
+type HttpStatusErrorHandler = (message: string, statusCode: number) => void;
+let httpStatusErrorHandler: HttpStatusErrorHandler
+export function injectHttpStatusErrorHandler(handler: HttpStatusErrorHandler) {
+  httpStatusErrorHandler = handler
+}

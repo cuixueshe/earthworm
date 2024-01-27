@@ -270,14 +270,9 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "他在昨天这个时候没有正在注",
-		"english": "he was not paying attention to",
-		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/"
-	},
-	{
-		"chinese": "意这个信息",
-		"english": "this information at this time yesterday",
-		"soundmark": "/ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
+		"chinese": "他在昨天这个时候没有注意到这个信息",
+		"english": "he was not paying attention to this information at this time yesterday",
+		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
 	{
 		"chinese": "是；赋值(原型)",
