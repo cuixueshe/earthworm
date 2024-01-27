@@ -1,29 +1,25 @@
 import { useCourseStore } from "~/store/course";
 
 var audio = new Audio();
-export function useEnglishSound(word: Ref<string>) {
-  watchEffect(() => {
-    audio.src = `https://dict.youdao.com/dictvoice?audio=${word.value}&type=1`;
-  });
-
-  return {
-    play: () => {
-      audio.play();
-    },
-  };
+function updateEnglishSound(word: string) {
+  audio.src = `https://dict.youdao.com/dictvoice?audio=${word}&type=1`;
+  audio.load();
 }
 
-const word = ref("");
+let prevEnglish = "";
 export function useCurrentStatementEnglishSound() {
-  const coursesStore = useCourseStore();
+  const courseStore = useCourseStore();
 
   watchEffect(() => {
-    word.value = coursesStore.currentStatement?.english || "";
+    if (prevEnglish !== courseStore.currentStatement?.english) {
+      updateEnglishSound(courseStore.currentStatement?.english);
+    }
+    prevEnglish = courseStore.currentStatement?.english;
   });
 
-  const sound = useEnglishSound(word);
-
   return {
-    sound,
+    playSound: () => {
+      audio.play();
+    },
   };
 }

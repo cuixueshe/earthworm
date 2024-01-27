@@ -4,20 +4,10 @@
 
 <script setup lang="ts">
 import {
-  injectApiCodeErrorHandler,
   injectHttpStatusErrorHandler,
 } from "~/api/http";
 
 useHttpStatusError();
-useApiCodeError();
-
-function useApiCodeError() {
-  const message = useMessage();
-
-  injectApiCodeErrorHandler((msg) => {
-    message.error(msg);
-  });
-}
 
 function useHttpStatusError() {
   const message = useMessage();

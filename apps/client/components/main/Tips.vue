@@ -22,7 +22,7 @@ const { handleShowAnswer } = useShowAnswer()
 
 
 function usePlaySound() {
-  const { sound } = useCurrentStatementEnglishSound();
+  const { playSound } = useCurrentStatementEnglishSound();
 
   onMounted(() => {
     registerShortcut("ctrl+p", handlePlaySound);
@@ -33,7 +33,7 @@ function usePlaySound() {
   });
 
   function handlePlaySound() {
-    sound.play();
+    playSound()
   }
 
   return {

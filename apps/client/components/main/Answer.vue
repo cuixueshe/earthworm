@@ -32,14 +32,14 @@ registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 
 function usePlayEnglishSound() {
-  const { sound } = useCurrentStatementEnglishSound();
+  const { playSound } = useCurrentStatementEnglishSound();
 
   onMounted(() => {
-    sound.play();
+    playSound()
   });
 
   function handlePlaySound() {
-    sound.play();
+    playSound()
   }
 
   return {

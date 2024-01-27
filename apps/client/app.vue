@@ -1,11 +1,11 @@
 <template>
-  <NuxtLayout>
-    <n-message-provider>
+  <n-message-provider>
+    <NuxtLayout>
       <HttpErrorProvider>
         <NuxtPage />
       </HttpErrorProvider>
-    </n-message-provider>
-  </NuxtLayout>
+    </NuxtLayout>
+  </n-message-provider>
 </template>
 
 <script setup lang="tsx">
@@ -18,5 +18,4 @@ function useRestoreUser() {
   const userStore = useUserStore();
   userStore.restoreUser();
 }
-
 </script>
