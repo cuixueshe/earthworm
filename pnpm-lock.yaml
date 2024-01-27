@@ -42,7 +42,7 @@ importers:
 
   apps/api:
     dependencies:
-      '@earthwrom/shared':
+      '@earthworm/shared':
         specifier: workspace:*
         version: link:../../libs/shared
       '@nestjs/common':

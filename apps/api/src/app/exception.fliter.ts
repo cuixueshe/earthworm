@@ -12,14 +12,13 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const response = ctx.getResponse();
     const status = exception.getStatus();
 
-    const message = exception.message
-      ? exception.message
-      : `${status >= 500 ? 'Service Error' : 'Client Error'}`;
+    const message =
+      exception.message ??
+      `${status >= 500 ? 'Service Error' : 'Client Error'}`;
 
     const errorResponse = {
       data: {},
       message,
-      code: -1,
     };
 
     response.status(status);
