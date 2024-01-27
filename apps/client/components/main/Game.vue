@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full flex-1 flex flex-col justify-center items-center pb-12">
-    <div class="flex-1 mb-8">
+  <div class="h-full pt-20">
+    <div class="h-[40vh] flex flex-col justify-center">
       <template v-if="isQuestion()">
         <Question></Question>
       </template>
@@ -8,10 +8,8 @@
         <Answer></Answer>
       </template>
     </div>
-    <div class="py-8">
-      <CourseProgress></CourseProgress>
-      <Tips></Tips>
-    </div>
+    <CourseProgress></CourseProgress>
+    <Tips></Tips>
     <Summary></Summary>
     <AuthRequired></AuthRequired>
   </div>
@@ -29,4 +27,3 @@ import { useGameMode } from "~/composables/main/game";
 const { isAnswer, isQuestion } = useGameMode();
 </script>
 
-<style scoped></style>

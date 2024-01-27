@@ -1,13 +1,13 @@
 <template>
-  <div class="relative flex-1 flex flex-col">
-    <Game></Game>
+  <div class="h-full">
     <Tool></Tool>
+    <Game></Game>
     <ProgressRank />
   </div>
 </template>
 
 <script setup lang="ts">
-import Game from "~/components/main/Game.vue";
+import Game from '~/components/main/Game.vue';
 import Tool from '~/components/main/Tool.vue';
 import ProgressRank from '~/components/rank/ProgressRank.vue';
 import { useCourseStore } from "~/store/course";
