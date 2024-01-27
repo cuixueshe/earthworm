@@ -32,6 +32,8 @@ import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import { fetchUpdateProgress } from "~/api/userProgress";
 import confetti from 'canvas-confetti';
+import { useAuthRequire } from "~/composables/main/authRequire";
+import { useUserStore } from "~/store/user";
 
 const courseStore = useCourseStore();
 const { showModal, hideSummary } = useSummary();
@@ -88,8 +90,17 @@ function useConfetti(){
 function useGoToNextCourse() {
   const { showQuestion } = useGameMode();
   const router = useRouter();
+  const { showAuthRequireModal } = useAuthRequire()
+
+  const userStore = useUserStore() 
 
   async function handleGoToNextCourse() {
+    if (!userStore.user) {
+      hideSummary()
+      showAuthRequireModal()
+      return
+    }
+
     await courseStore.goToNextCourse(
       +router.currentRoute.value.params.id
     );

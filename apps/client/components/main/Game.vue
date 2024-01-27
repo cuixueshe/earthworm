@@ -13,6 +13,7 @@
       <Tips></Tips>
     </div>
     <Summary></Summary>
+    <AuthRequired></AuthRequired>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import Answer from "./Answer.vue";
 import CourseProgress from "./CourseProgress.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
+import AuthRequired from './AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";
 
 const { isAnswer, isQuestion } = useGameMode();
