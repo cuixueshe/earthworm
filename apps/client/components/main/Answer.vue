@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center mb-20 mt-10">
-    <div class="text-5xl mb-3 text-fuchsia-500 dark:text-gray-50">
+  <div class="text-center">
+    <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg class="w-7 h-7 inline-block ml-1 cursor-pointer" viewBox="0 0 1024 1024" version="1.1"
         xmlns="http://www.w3.org/2000/svg" @click="handlePlaySound">
@@ -9,12 +9,22 @@
           fill="#666666"></path>
       </svg>
     </div>
-    <div class="text-2xl text-slate-600">
+    <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.soundmark }}
     </div>
-    <button
-      class="border-solid border-2 border-slate-400 bg-slate-100 dark:bg-fuchsia-500 rounded-lg mt-8 mb-11 indent-1 h-10 text-2xl pl-10 pr-10 hover:bg-slate-200"
-      @click="goToNextQuestion">
+    <button class="
+          btn
+          btn-sm
+          text-xl
+          text-gray-500
+          bg-gray-100
+          hover:text-gray-100
+          hover:bg-gray-500
+          dark:text-white 
+          dark:bg-gray-500
+          dark:hover:text-white
+          dark:hover:bg-fuchsia-500
+          shadow-md" @click="goToNextQuestion">
       next
     </button>
   </div>
@@ -24,7 +34,6 @@
 import { useCourseStore } from "~/store/course";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useGameMode } from "~/composables/main/game";
-import { useSummary } from "~/composables/main/summary";
 import { useCurrentStatementEnglishSound } from '~/composables/main/englishSound';
 
 const courseStore = useCourseStore();
@@ -61,8 +70,7 @@ function registerShortcutKeyForNextQuestion() {
 }
 
 function goToNextQuestion() {
-  const { showQuestion } = useGameMode();
-  const { showSummary } = useSummary();
+  const { showQuestion, showSummary } = useGameMode();
 
   if (courseStore.isAllDone()) {
     showSummary();
