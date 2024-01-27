@@ -1,28 +1,18 @@
 <template>
-  <div class="text-5xl text-center mb-20 mt-10">
-    <div class="text-fuchsia-500 dark:text-gray-50">
-      {{
-        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
-      }}
-    </div>
-    <div class="code-box">
+  <div class="text-center pt-2">
+    <div class="flex relative flex-wrap justify-center ml-2 transition-all">
       <template v-for="i in courseStore.wordCount" :key="i">
         <div
+          class="flex items-end justify-center h-16 min-w-20 px-4 mr-2 border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
-            'code-item',
-            'border-b-2',
-            'border-b-solid',
-            'border-b-gray-300 dark:border-b-gray-500',
-            i - 1 === activeInputIndex && focusing ? 'active' : '',
-            'dark:text-indigo-500  text-[rgba(32,32,32,0.6)]',
-          ]"
-        >
+            i - 1 === activeInputIndex && focusing ? 'text-fuchsia-500 border-b-fuchsia-500' : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
+          ]">
           {{ userInputWords[i - 1] }}
         </div>
       </template>
       <input
         ref="inputEl"
-        class="code-input"
+        class="absolute h-full w-full opacity-0"
         type="text"
         v-model="inputValue"
         @keyup="handleKeyup"
@@ -31,12 +21,15 @@
         autoFocus
       />
     </div>
+    <div class="mt-12 text-xl dark:text-gray-50">
+      {{ courseStore.currentStatement?.chinese || '生存还是毁灭，这是一个问题' }}
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useCourseStore } from "~/store/course";
-import { useGameMode } from "~/composables/main/game";
+import { useCourseStore } from '~/store/course';
+import { useGameMode } from '~/composables/main/game';
 
 const courseStore = useCourseStore();
 const { userInputWords, activeInputIndex, inputValue } = useInput();
@@ -44,10 +37,10 @@ const { handleKeyup } = registerShortcutKeyForInputEl();
 const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
 
 function useInput() {
-  const inputValue = ref("");
+  const inputValue = ref('');
 
   const userInputWords = computed(() => {
-    return inputValue.value.trimStart().split(" ");
+    return inputValue.value.trimStart().split(' ');
   });
 
   const activeInputIndex = computed(() => {
@@ -65,13 +58,13 @@ function registerShortcutKeyForInputEl() {
   const { showAnswer } = useGameMode();
 
   function handleKeyup(e: KeyboardEvent) {
-    if (e.code === "Enter") {
+    if (e.code === 'Enter') {
       e.stopPropagation();
 
       if (courseStore.checkCorrect(inputValue.value.trim())) {
         showAnswer();
       }
-      inputValue.value = "";
+      inputValue.value = '';
     }
   }
 
@@ -103,40 +96,3 @@ function useFocus() {
   };
 }
 </script>
-
-<style scoped>
-.code-box {
-  height: 10vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 80vw;
-  position: relative;
-  margin-top: 8px;
-}
-
-.code-box .code-item {
-  min-width: 10vw;
-  min-height: 6vh;
-  text-align: center;
-  font-size: 4vw;
-  transition: border 0.3s;
-  box-sizing: border-box;
-  margin-right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.code-box .code-input {
-  position: absolute;
-  width: 100%;
-
-  height: 100%;
-  opacity: 0;
-}
-
-.active {
-  border-bottom: 3px solid #1e80ff !important;
-}
-</style>
