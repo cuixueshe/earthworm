@@ -11,4 +11,12 @@ export default defineNuxtConfig({
     "@bg-dev/nuxt-naiveui",
     "@nuxt/test-utils/module",
   ],
+  app: {
+    head: {
+      title: "earthworm",
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }
+      ],
+    }
+  }
 });
