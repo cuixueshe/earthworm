@@ -13,6 +13,7 @@ import {
   CreateUserProgressDto,
   UpdateUserProgressDto,
 } from './model/user-progress.dto';
+import { User, UserEntity } from '../user/user.decorators';
 
 @Controller('user-progress')
 export class UserProgressController {
@@ -32,7 +33,11 @@ export class UserProgressController {
 
   @UseGuards(AuthGuard)
   @Put()
-  updateOne(@Request() req, @Body() dto: UpdateUserProgressDto) {
-    return this.userProgressService.update(+req.user.userId, +dto.courseId);
+  updateOne(@User() user: UserEntity, @Body() dto: UpdateUserProgressDto) {
+    return this.userProgressService.update(
+      +user.userId,
+      +dto.courseId,
+      user.username,
+    );
   }
 }
