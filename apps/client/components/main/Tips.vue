@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col">
-    <div class="flex mb-2">
-      <button className="btn btn-xs" @click="handleShowAnswer">⌃ Ctrl+n</button>
-      <p class="ml-2">show answer</p>
+  <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
+    <div class="w-[210px] mb-4">
+      <button class="tip-btn" @click="handlePlaySound">⌃ Ctrl+p</button>
+      <span class="ml-2">play sound</span>
     </div>
-    <div class="flex">
-      <button className="btn btn-xs" @click="handlePlaySound">⌃ Ctrl+p</button>
-      <p class="ml-2">play soundmark</p>
+    <div class="w-[210px]">
+      <button class="tip-btn" @click="handleShowAnswer">⌃ Ctrl+n</button>
+      <span class="ml-2">show answer</span>
     </div>
   </div>
 </template>
@@ -62,3 +62,9 @@ function useShowAnswer() {
 
 }
 </script>
+
+<style scoped>
+.tip-btn {
+  @apply btn btn-xs text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500
+}
+</style>
