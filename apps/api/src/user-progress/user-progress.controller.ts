@@ -6,11 +6,13 @@ import {
   Request,
   Get,
   Put,
-  Param,
 } from '@nestjs/common';
 import { UserProgressService } from './user-progress.service';
 import { AuthGuard } from '../auth/auth.guard';
-import { CreateUserProgressDto } from './model/update-user-progress.dto';
+import {
+  CreateUserProgressDto,
+  UpdateUserProgressDto,
+} from './model/user-progress.dto';
 
 @Controller('user-progress')
 export class UserProgressController {
@@ -29,8 +31,8 @@ export class UserProgressController {
   }
 
   @UseGuards(AuthGuard)
-  @Put(':courseId')
-  updateOne(@Request() req, @Param('courseId') courseId: number) {
-    return this.userProgressService.update(+req.user.userId, +courseId);
+  @Put()
+  updateOne(@Request() req, @Body() dto: UpdateUserProgressDto) {
+    return this.userProgressService.update(+req.user.userId, +dto.courseId);
   }
 }
