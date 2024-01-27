@@ -32,7 +32,8 @@
     "class-validator": "^0.14.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "start": "^5.1.0"
+    "start": "^5.1.0",
+    "superagent": "^8.1.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
