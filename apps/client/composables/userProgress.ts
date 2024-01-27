@@ -9,8 +9,10 @@ export function useUserProgress() {
   const initProgress = async () => {
     initing.value = true
     const { courseId } = await fetchUserProgress()
-    activeCourseId.value = +courseId
-    updateProgressLocal(+courseId)
+    if (courseId) {
+      activeCourseId.value = +courseId
+      updateProgressLocal(+courseId)
+    }
     initing.value = false
   }
 
