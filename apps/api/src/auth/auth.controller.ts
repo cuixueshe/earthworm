@@ -11,6 +11,7 @@ import { SignDto } from './model/auth.dto';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { CreateUserDto } from '../user/model/user.dto';
+import { UserEntity, User } from '../user/user.decorators';
 
 @Controller('auth')
 export class AuthController {
@@ -28,7 +29,7 @@ export class AuthController {
 
   @UseGuards(AuthGuard)
   @Get('userInfo')
-  userInfo(@Request() req) {
-    return req.user;
+  userInfo(@User() user: UserEntity) {
+    return user;
   }
 }
