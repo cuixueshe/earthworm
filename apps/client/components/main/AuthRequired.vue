@@ -5,7 +5,7 @@
       <p class="text-xl px-4">注册以进行下一课</p>
       <div className="modal-action">
         <button class="btn" @click="hideAuthRequireModal">取消</button>
-        <button class="btn" @click="navigateTo('/signup')">去注册</button>
+        <button class="btn" @click="navigateTo('/auth/signup')">去注册</button>
       </div>
     </div>
   </dialog>

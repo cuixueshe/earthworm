@@ -10,6 +10,10 @@ import Game from "~/components/main/Game.vue";
 import Tool from '~/components/main/Tool.vue';
 import { useCourseStore } from "~/store/course";
 
+definePageMeta({
+  middleware: 'auth'
+})
+
 const route = useRoute();
 const coursesStore = useCourseStore();
 
