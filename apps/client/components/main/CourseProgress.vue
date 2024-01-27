@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6">
+  <div class="py-6 flex flex-col  items-center">
     <progress class="progress w-56 m-2" :value="currentSchedule" :max="courseStore.totalQuestionsCount"></progress>
     <div class="text-center">({{ currentSchedule }} / {{ courseStore.totalQuestionsCount }})</div>
   </div>
