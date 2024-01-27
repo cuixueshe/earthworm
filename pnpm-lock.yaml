@@ -179,6 +179,9 @@ importers:
       '@nuxtjs/tailwindcss':
         specifier: ^6.10.4
         version: 6.10.4
+      '@pinia/testing':
+        specifier: ^0.1.3
+        version: 0.1.3(pinia@2.1.7)(vue@3.4.10)
       '@vue/test-utils':
         specifier: ^2.4.3
         version: 2.4.3(vue@3.4.10)
@@ -2751,6 +2754,18 @@ packages:
       - typescript
       - vue
     dev: false
+
+  /@pinia/testing@0.1.3(pinia@2.1.7)(vue@3.4.10):
+    resolution: {integrity: sha512-D2Ds2s69kKFaRf2KCcP1NhNZEg5+we59aRyQalwRm7ygWfLM25nDH66267U3hNvRUOTx8ofL24GzodZkOmB5xw==}
+    peerDependencies:
+      pinia: '>=2.1.5'
+    dependencies:
+      pinia: 2.1.7(typescript@5.3.3)(vue@3.4.10)
+      vue-demi: 0.14.6(vue@3.4.10)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: true
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -9337,7 +9352,6 @@ packages:
       typescript: 5.3.3
       vue: 3.4.10(typescript@5.3.3)
       vue-demi: 0.14.6(vue@3.4.10)
-    dev: false
 
   /pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
