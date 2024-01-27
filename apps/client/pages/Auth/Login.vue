@@ -43,7 +43,6 @@
 <script setup lang="ts">
 import { type FormInst, type FormRules } from "naive-ui";
 import { useAuth } from "~/composables/auth";
-import { delay } from "~/utils";
 
 interface ModelType {
   phone: string | null;
