@@ -4,7 +4,7 @@ import { IsNotEmpty, Length } from 'class-validator';
 export class CreateUserDto {
   @ApiProperty()
   @IsNotEmpty({ message: ' 用户名不能为空' })
-  @Length(1, 8, { message: '用户名长度为1-8位' })
+  @Length(2, 20, { message: '用户名长度为2-20位' })
   name: string;
 
   @ApiProperty()
