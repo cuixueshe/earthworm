@@ -1,76 +1,3 @@
-<script setup lang="ts">
-import { fetchUpdateProgress, fetchUserProgress } from "~/api/userProgress";
-import { useUserStore } from "~/store/user";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
-
-
-const useProgress = () => {
-
-  const activeCourseId = ref(1)
-  const ACTIVE_COURSE_ID = 'activeCourseId'
-
-  const initing = ref(false)
-  const initProgress = async () => {
-    initing.value = true
-    const { courseId } = await fetchUserProgress()
-    activeCourseId.value = +courseId
-    updateProgressLocal(+courseId)
-    initing.value = false
-  }
-
-  const updateProgress = async (courseId: number) => {
-    const { courseId: updatedCourseId } = await fetchUpdateProgress({courseId}) 
-    updateProgressLocal(updatedCourseId)
-  }
-
-  const updateProgressLocal = async (courseId: number) => {
-    localStorage.setItem(ACTIVE_COURSE_ID, `${courseId}`)
-  }
-  
-  return {
-    activeCourseId,
-    initing,
-    updateProgressLocal,
-    updateProgress,
-    initProgress
-  }
-}
-
-const { handleKeydown, initing } = useShortcutToGame();
-
-function useShortcutToGame() {
-  const router = useRouter();
-  const userStore = useUserStore();
-  const { activeCourseId, initing, initProgress } = useProgress()
-
-  function handleKeydown() {
-    if (userStore.user) {
-      if (initing.value)
-        return
-      router.push(`/main/${activeCourseId.value}`);
-    } else {
-      router.push("/main/1");
-    }
-  }
-  onMounted(() => {
-    registerShortcut("enter", handleKeydown);
-    console.log(userStore.user);
-    if (userStore.user) {
-      initProgress()
-    }
-  });
-
-  onUnmounted(() => {
-    cancelShortcut("enter", handleKeydown);
-  });
-
-  return {
-    initing,
-    handleKeydown
-  }
-}
-</script>
-
 <template>
   <div class="container w-full">
     <section
@@ -150,27 +77,76 @@ function useShortcutToGame() {
 </template>
 
 <script setup lang="ts">
+import { fetchUpdateProgress, fetchUserProgress } from "~/api/userProgress";
+import { useUserStore } from "~/store/user";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
-registerShortcutToStart();
 
+const useProgress = () => {
 
-function registerShortcutToStart() {
+  const activeCourseId = ref(1)
+  const ACTIVE_COURSE_ID = 'activeCourseId'
+
+  const initing = ref(false)
+  const initProgress = async () => {
+    initing.value = true
+    const { courseId } = await fetchUserProgress()
+    activeCourseId.value = +courseId
+    updateProgressLocal(+courseId)
+    initing.value = false
+  }
+
+  const updateProgress = async (courseId: number) => {
+    const { courseId: updatedCourseId } = await fetchUpdateProgress({courseId}) 
+    updateProgressLocal(updatedCourseId)
+  }
+
+  const updateProgressLocal = async (courseId: number) => {
+    localStorage.setItem(ACTIVE_COURSE_ID, `${courseId}`)
+  }
+  
+  return {
+    activeCourseId,
+    initing,
+    updateProgressLocal,
+    updateProgress,
+    initProgress
+  }
+}
+
+const { handleKeydown, initing } = useShortcutToGame();
+
+function useShortcutToGame() {
   const router = useRouter();
+  const userStore = useUserStore();
+  const { activeCourseId, initing, initProgress } = useProgress()
+
   function handleKeydown() {
-    router.push("/main/1");
+    if (userStore.user) {
+      if (initing.value)
+        return
+      router.push(`/main/${activeCourseId.value}`);
+    } else {
+      router.push("/main/1");
+    }
   }
   onMounted(() => {
     registerShortcut("enter", handleKeydown);
+    console.log(userStore.user);
+    if (userStore.user) {
+      initProgress()
+    }
   });
 
   onUnmounted(() => {
     cancelShortcut("enter", handleKeydown);
   });
+
+  return {
+    initing,
+    handleKeydown
+  }
 }
-
-
-
 </script>
 
 <style>
