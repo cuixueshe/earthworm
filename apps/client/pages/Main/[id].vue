@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative flex-1 flex flex-col">
     <Game></Game>
     <Tool></Tool>
   </div>

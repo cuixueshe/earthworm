@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-full flex flex-col justify-center items-center">
+  <div class="w-full flex-1 flex flex-col justify-center items-center pb-12">
     <div class="flex-1 mb-8">
       <template v-if="isQuestion()">
         <Question></Question>
@@ -8,7 +8,7 @@
         <Answer></Answer>
       </template>
     </div>
-    <div class="">
+    <div class="py-8">
       <CourseProgress></CourseProgress>
       <Tips></Tips>
     </div>
