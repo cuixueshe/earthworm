@@ -1,32 +1,76 @@
 <template>
   <div>
-    <n-modal v-model:show="showModal" transform-origin="center">
-      <n-card style="width: 800px; height: 400px" title="结算面板" :bordered="false" size="huge" role="dialog"
-        aria-modal="true">
-        不错不错 又学到了那么多句子和单词 加油 坚持就是胜利:)
-        <template #footer>
+    <dialog className="modal" :open="showModal">
+      <div className="modal-box max-w-[48rem]">
+        <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
+        <div class="flex flex-col">
           <div class="flex">
-            <n-button @click="handleDoAgain">再来一次</n-button>
-            <n-button @click="handleGoToNextCourse">开始下一课</n-button>
+            <span class="text-6xl font-bold">"</span>
+            <div class="flex-1 text-xl text-center leading-loose">{{ enSentence }}</div>
+            <span class="text-6xl font-bold invisible">"</span>
           </div>
-        </template>
-      </n-card>
-    </n-modal>
+          
+          <div class="flex">
+            <span class="text-6xl font-bold invisible">"</span>
+            <div class="flex-1 text-center text-xl leading-loose">{{ zhSentence }}</div>
+            <span class="text-6xl font-bold">"</span>
+          </div>
+        </div>
+        <div className="modal-action">
+          <button class="btn" @click="handleDoAgain">再来一次</button>
+          <button class="btn" @click="handleGoToNextCourse">开始下一课</button>
+        </div>
+      </div>
+      <canvas ref="confettiCanvasRef" class="absolute top-0 left-0 h-full w-full pointer-events-none"></canvas>
+    </dialog>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
-import { useSummary } from "~/composables/main/summary";
+import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import { fetchUpdateProgress } from "~/api/userProgress";
+import confetti from 'canvas-confetti';
 
+const useConfetti = () => {
+  const confettiCanvasRef = ref<HTMLCanvasElement>()
+
+  const playConfetti = () => {
+    console.log('----- 1');
+    const myConfetti = confetti.create(confettiCanvasRef.value, {
+      resize: true,
+      useWorker: true
+    })
+
+    myConfetti({
+      particleCount: 300,
+      spread: 180,
+      origin: { y: -0.1 },
+      startVelocity: -35
+    })
+  }
+
+  return {
+    confettiCanvasRef,
+    playConfetti,
+  }
+}
+
+const { confettiCanvasRef, playConfetti } = useConfetti()
 const courseStore = useCourseStore();
 const { showModal, hideSummary } = useSummary();
+
+watch(showModal, (val) => {
+  val && setTimeout(() => {
+    playConfetti() 
+  }, 300);
+})
 
 const { handleDoAgain } = useDoAgain()
 const { handleGoToNextCourse } = useGoToNextCourse()
 
+const { zhSentence, enSentence } = useDailySentence()
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
@@ -52,13 +96,15 @@ function useGoToNextCourse() {
       +router.currentRoute.value.params.id
     );
 
-    if (!courseStore.currentCourse.value?.id) {
+    console.log(courseStore.currentCourse.id)
+
+    if (!courseStore.currentCourse.id) {
       return
     }
     await fetchUpdateProgress({
-      courseId: courseStore.currentCourse.value?.id 
+      courseId: courseStore.currentCourse.id 
     }) 
-    router.push(`/main/${courseStore.currentCourse.value.id}`);
+    router.push(`/main/${courseStore.currentCourse.id}`);
 
     hideSummary();
     showQuestion();
