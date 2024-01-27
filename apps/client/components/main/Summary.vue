@@ -32,45 +32,18 @@ import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import { fetchUpdateProgress } from "~/api/userProgress";
 import confetti from 'canvas-confetti';
+import { useAuthRequire } from "~/composables/main/authRequire";
+import { useUserStore } from "~/store/user";
 
-const useConfetti = () => {
-  const confettiCanvasRef = ref<HTMLCanvasElement>()
-
-  const playConfetti = () => {
-    console.log('----- 1');
-    const myConfetti = confetti.create(confettiCanvasRef.value, {
-      resize: true,
-      useWorker: true
-    })
-
-    myConfetti({
-      particleCount: 300,
-      spread: 180,
-      origin: { y: -0.1 },
-      startVelocity: -35
-    })
-  }
-
-  return {
-    confettiCanvasRef,
-    playConfetti,
-  }
-}
-
-const { confettiCanvasRef, playConfetti } = useConfetti()
 const courseStore = useCourseStore();
 const { showModal, hideSummary } = useSummary();
-
-watch(showModal, (val) => {
-  val && setTimeout(() => {
-    playConfetti() 
-  }, 300);
-})
 
 const { handleDoAgain } = useDoAgain()
 const { handleGoToNextCourse } = useGoToNextCourse()
 
 const { zhSentence, enSentence } = useDailySentence()
+
+const { confettiCanvasRef } = useConfetti()
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
@@ -84,19 +57,53 @@ function useDoAgain() {
   return {
     handleDoAgain
   }
+}
 
+function useConfetti(){
+  const confettiCanvasRef = ref<HTMLCanvasElement>()
+
+  const playConfetti = () => {
+    const myConfetti = confetti.create(confettiCanvasRef.value, {
+      resize: true,
+      useWorker: true
+    })
+
+    myConfetti({
+      particleCount: 300,
+      spread: 180,
+      origin: { y: -0.1 },
+      startVelocity: -35
+    })
+  }
+
+  watch(showModal, (val) => {
+    val && setTimeout(() => {
+      playConfetti() 
+    }, 300);
+  })
+
+  return {
+    confettiCanvasRef,
+  }
 }
 
 function useGoToNextCourse() {
   const { showQuestion } = useGameMode();
   const router = useRouter();
+  const { showAuthRequireModal } = useAuthRequire()
+
+  const userStore = useUserStore() 
 
   async function handleGoToNextCourse() {
+    if (!userStore.user) {
+      hideSummary()
+      showAuthRequireModal()
+      return
+    }
+
     await courseStore.goToNextCourse(
       +router.currentRoute.value.params.id
     );
-
-    console.log(courseStore.currentCourse.id)
 
     if (!courseStore.currentCourse.id) {
       return
@@ -115,8 +122,6 @@ function useGoToNextCourse() {
     handleGoToNextCourse
   };
 }
-
-
 </script>
 
 <style scoped></style>

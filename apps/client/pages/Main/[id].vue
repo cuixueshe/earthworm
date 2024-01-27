@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative flex-1 flex flex-col">
     <Game></Game>
     <Tool></Tool>
     <ProgressRank />
@@ -11,6 +11,10 @@ import Game from "~/components/main/Game.vue";
 import Tool from '~/components/main/Tool.vue';
 import ProgressRank from '~/components/rank/ProgressRank.vue';
 import { useCourseStore } from "~/store/course";
+
+definePageMeta({
+  middleware: 'auth'
+})
 
 const route = useRoute();
 const coursesStore = useCourseStore();

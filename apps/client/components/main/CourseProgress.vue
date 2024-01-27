@@ -1,6 +1,8 @@
 <template>
-  <progress class="progress w-56 m-2" :value="currentSchedule" :max="courseStore.totalQuestionsCount"></progress>
-  <div class="text-center">({{ currentSchedule }} / {{ courseStore.totalQuestionsCount }})</div>
+  <div class="py-6">
+    <progress class="progress w-56 m-2" :value="currentSchedule" :max="courseStore.totalQuestionsCount"></progress>
+    <div class="text-center">({{ currentSchedule }} / {{ courseStore.totalQuestionsCount }})</div>
+  </div>
 </template>
 
 <script setup lang="ts">
