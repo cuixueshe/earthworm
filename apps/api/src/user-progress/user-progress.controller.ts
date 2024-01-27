@@ -21,14 +21,14 @@ export class UserProgressController {
 
   @UseGuards(AuthGuard)
   @Post()
-  create(@Request() req, @Body() body: CreateUserProgressDto) {
-    return this.userProgressService.create(+req.user.userId, body.courseId);
+  create(@User() user: UserEntity, @Body() body: CreateUserProgressDto) {
+    return this.userProgressService.create(+user.userId, body.courseId);
   }
 
   @UseGuards(AuthGuard)
   @Get()
-  findOne(@Request() req) {
-    return this.userProgressService.findOne(+req.user.userId);
+  findOne(@User() user: UserEntity) {
+    return this.userProgressService.findOne(+user.userId);
   }
 
   @UseGuards(AuthGuard)
