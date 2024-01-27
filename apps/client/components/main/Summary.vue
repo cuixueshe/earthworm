@@ -33,7 +33,31 @@ import { useGameMode } from "~/composables/main/game";
 import { fetchUpdateProgress } from "~/api/userProgress";
 import confetti from 'canvas-confetti';
 
-const useConfetti = () => {
+const courseStore = useCourseStore();
+const { showModal, hideSummary } = useSummary();
+
+const { handleDoAgain } = useDoAgain()
+const { handleGoToNextCourse } = useGoToNextCourse()
+
+const { zhSentence, enSentence } = useDailySentence()
+
+const { confettiCanvasRef } = useConfetti()
+
+function useDoAgain() {
+  const { showQuestion } = useGameMode();
+
+  function handleDoAgain() {
+    courseStore.doAgain();
+    hideSummary();
+    showQuestion();
+  }
+
+  return {
+    handleDoAgain
+  }
+}
+
+function useConfetti(){
   const confettiCanvasRef = ref<HTMLCanvasElement>()
 
   const playConfetti = () => {
@@ -50,40 +74,15 @@ const useConfetti = () => {
     })
   }
 
+  watch(showModal, (val) => {
+    val && setTimeout(() => {
+      playConfetti() 
+    }, 300);
+  })
+
   return {
     confettiCanvasRef,
-    playConfetti,
   }
-}
-
-const { confettiCanvasRef, playConfetti } = useConfetti()
-const courseStore = useCourseStore();
-const { showModal, hideSummary } = useSummary();
-
-watch(showModal, (val) => {
-  val && setTimeout(() => {
-    playConfetti() 
-  }, 300);
-})
-
-const { handleDoAgain } = useDoAgain()
-const { handleGoToNextCourse } = useGoToNextCourse()
-
-const { zhSentence, enSentence } = useDailySentence()
-
-function useDoAgain() {
-  const { showQuestion } = useGameMode();
-
-  function handleDoAgain() {
-    courseStore.doAgain();
-    hideSummary();
-    showQuestion();
-  }
-
-  return {
-    handleDoAgain
-  }
-
 }
 
 function useGoToNextCourse() {
@@ -112,8 +111,6 @@ function useGoToNextCourse() {
     handleGoToNextCourse
   };
 }
-
-
 </script>
 
 <style scoped></style>
