@@ -53,7 +53,6 @@
 <script setup lang="ts">
 import { type FormInst, type FormRules, type FormItemRule } from "naive-ui";
 import { useAuth } from "~/composables/auth";
-import { delay } from "~/utils";
 
 interface ModelType {
   name: string | null;
@@ -104,11 +103,6 @@ const rules: FormRules = {
 const message = useMessage();
 const router = useRouter();
 
-async function gotoHomePage() {
-  await delay(500);
-  router.replace("/");
-}
-
 const handleRegister = () => {
   formEl.value?.validate(async (errors) => {
     if (!errors) {
@@ -118,8 +112,12 @@ const handleRegister = () => {
         password: model.value.password ?? "",
       });
 
-      message.success("register success");
-      await gotoHomePage();
+      message.success("register success", {
+        duration: 500,
+        onLeave() {
+          router.replace("/");
+        },
+      });
     }
   });
 };

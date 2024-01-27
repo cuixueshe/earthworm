@@ -2,10 +2,14 @@ import { Injectable, Inject } from '@nestjs/common';
 import { DB, DbType } from '../global/providers/db.provider';
 import { userProgress } from '@earthworm/shared';
 import { eq } from 'drizzle-orm';
+import { RankService } from '../rank/rank.service';
 
 @Injectable()
 export class UserProgressService {
-  constructor(@Inject(DB) private db: DbType) {}
+  constructor(
+    @Inject(DB) private db: DbType,
+    private readonly rankService: RankService,
+  ) {}
 
   async create(userId: number, courseId: number) {
     await this.db.insert(userProgress).values({
@@ -29,11 +33,12 @@ export class UserProgressService {
     };
   }
 
-  async update(userId: number, courseId: number) {
+  async update(userId: number, courseId: number, username: string) {
     await this.db
       .update(userProgress)
       .set({ courseId })
       .where(eq(userProgress.userId, userId));
+    await this.rankService.userFinishCourse(userId, username);
     return {
       courseId,
     };

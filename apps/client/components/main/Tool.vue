@@ -7,6 +7,9 @@
     <div>
       <button @click="handleDoAgain">重新开始</button>
     </div>
+    <div>
+      <button @click="openRank">排行榜</button>
+    </div>
   </div>
 </template>
 
@@ -29,6 +32,10 @@ function useDoAgain() {
     handleDoAgain
   }
 
+}
+
+function openRank() {
+  document.getElementById("rank-progress").showModal();
 }
 
 
