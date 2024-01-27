@@ -37,7 +37,6 @@ const useConfetti = () => {
   const confettiCanvasRef = ref<HTMLCanvasElement>()
 
   const playConfetti = () => {
-    console.log('----- 1');
     const myConfetti = confetti.create(confettiCanvasRef.value, {
       resize: true,
       useWorker: true
@@ -95,8 +94,6 @@ function useGoToNextCourse() {
     await courseStore.goToNextCourse(
       +router.currentRoute.value.params.id
     );
-
-    console.log(courseStore.currentCourse.id)
 
     if (!courseStore.currentCourse.id) {
       return
