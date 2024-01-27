@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dialog className="modal" :open="showModal">
+    <dialog className="modal mt-[-8vh]" :open="true">
       <div className="modal-box max-w-[48rem]">
         <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
         <div class="flex flex-col">
@@ -9,7 +9,7 @@
             <div class="flex-1 text-xl text-center leading-loose">{{ enSentence }}</div>
             <span class="text-6xl font-bold invisible">"</span>
           </div>
-          
+
           <div class="flex">
             <span class="text-6xl font-bold invisible">"</span>
             <div class="flex-1 text-center text-xl leading-loose">{{ zhSentence }}</div>
@@ -28,7 +28,7 @@
 
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
-import { useDailySentence, useSummary } from "~/composables/main/summary";
+import { useDailySentence } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import { fetchUpdateProgress } from "~/api/userProgress";
 import confetti from 'canvas-confetti';
@@ -36,21 +36,23 @@ import { useAuthRequire } from "~/composables/main/authRequire";
 import { useUserStore } from "~/store/user";
 
 const courseStore = useCourseStore();
-const { showModal, hideSummary } = useSummary();
 
 const { handleDoAgain } = useDoAgain()
 const { handleGoToNextCourse } = useGoToNextCourse()
 
 const { zhSentence, enSentence } = useDailySentence()
 
-const { confettiCanvasRef } = useConfetti()
+const { confettiCanvasRef, playConfetti } = useConfetti()
+
+onMounted(() => {
+  playConfetti()
+})
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {
     courseStore.doAgain();
-    hideSummary();
     showQuestion();
   }
 
@@ -59,7 +61,7 @@ function useDoAgain() {
   }
 }
 
-function useConfetti(){
+function useConfetti() {
   const confettiCanvasRef = ref<HTMLCanvasElement>()
 
   const playConfetti = () => {
@@ -76,14 +78,9 @@ function useConfetti(){
     })
   }
 
-  watch(showModal, (val) => {
-    val && setTimeout(() => {
-      playConfetti() 
-    }, 300);
-  })
-
   return {
     confettiCanvasRef,
+    playConfetti
   }
 }
 
@@ -92,11 +89,11 @@ function useGoToNextCourse() {
   const router = useRouter();
   const { showAuthRequireModal } = useAuthRequire()
 
-  const userStore = useUserStore() 
+  const userStore = useUserStore()
 
   async function handleGoToNextCourse() {
     if (!userStore.user) {
-      hideSummary()
+      console.log('userStore.user 到这里了')
       showAuthRequireModal()
       return
     }
@@ -109,11 +106,10 @@ function useGoToNextCourse() {
       return
     }
     await fetchUpdateProgress({
-      courseId: courseStore.currentCourse.id 
-    }) 
+      courseId: courseStore.currentCourse.id
+    })
     router.push(`/main/${courseStore.currentCourse.id}`);
 
-    hideSummary();
     showQuestion();
   }
 
@@ -123,5 +119,3 @@ function useGoToNextCourse() {
   };
 }
 </script>
-
-<style scoped></style>
