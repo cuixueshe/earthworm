@@ -19,6 +19,7 @@
 import { useCourseStore } from "~/store/course";
 import { useSummary } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
+import { fetchUpdateProgress } from "~/api/userProgress";
 
 const courseStore = useCourseStore();
 const { showModal, hideSummary } = useSummary();
@@ -51,7 +52,14 @@ function useGoToNextCourse() {
       +router.currentRoute.value.params.id
     );
 
-    router.push(`/main/${courseStore.currentCourse?.id}`);
+    if (!courseStore.currentCourse.value?.id) {
+      return
+    }
+    await fetchUpdateProgress({
+      courseId: courseStore.currentCourse.value?.id 
+    }) 
+    router.push(`/main/${courseStore.currentCourse.value.id}`);
+
     hideSummary();
     showQuestion();
   }

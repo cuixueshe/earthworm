@@ -1,20 +1,73 @@
 <script setup lang="ts">
+import { fetchUpdateProgress, fetchUserProgress } from "~/api/userProgress";
+import { useUserStore } from "~/store/user";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
-useShortcutToGame();
+
+const useProgress = () => {
+
+  const activeCourseId = ref(1)
+  const ACTIVE_COURSE_ID = 'activeCourseId'
+
+  const initing = ref(false)
+  const initProgress = async () => {
+    initing.value = true
+    const { courseId } = await fetchUserProgress()
+    activeCourseId.value = +courseId
+    updateProgressLocal(+courseId)
+    initing.value = false
+  }
+
+  const updateProgress = async (courseId: number) => {
+    const { courseId: updatedCourseId } = await fetchUpdateProgress({courseId}) 
+    updateProgressLocal(updatedCourseId)
+  }
+
+  const updateProgressLocal = async (courseId: number) => {
+    localStorage.setItem(ACTIVE_COURSE_ID, `${courseId}`)
+  }
+  
+  return {
+    activeCourseId,
+    initing,
+    updateProgressLocal,
+    updateProgress,
+    initProgress
+  }
+}
+
+const { handleKeydown, initing } = useShortcutToGame();
 
 function useShortcutToGame() {
   const router = useRouter();
+  const userStore = useUserStore();
+  const { activeCourseId, initing, initProgress } = useProgress()
+
   function handleKeydown() {
-    router.push("/main/1");
+    if (userStore.user) {
+      if (initing.value)
+        return
+      router.push(`/main/${activeCourseId.value}`);
+    } else {
+      router.push("/main/1");
+    }
   }
   onMounted(() => {
     registerShortcut("enter", handleKeydown);
+    console.log(userStore.user);
+    if (userStore.user) {
+      initProgress()
+    }
   });
 
   onUnmounted(() => {
     cancelShortcut("enter", handleKeydown);
   });
+
+  return {
+    initing,
+    handleKeydown
+  }
 }
 </script>
 
@@ -38,12 +91,13 @@ function useShortcutToGame() {
             Star us on GitHub
           </button>
         </a>
-        <NuxtLink href="/main/1">
-          <button
-            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
-            Go and get it <kbd class="kbd"> ↵ </kbd>
-          </button>
-        </NuxtLink>
+        <button
+          :disabled="initing"
+          @click="handleKeydown"
+          class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
+          <span v-show="initing" class="loading loading-spinner"></span>
+          Go and get it <kbd class="kbd"> ↵ </kbd>
+        </button>
       </div>
       <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative m-4">
         <div class="absolute flex h-full w-full card">
