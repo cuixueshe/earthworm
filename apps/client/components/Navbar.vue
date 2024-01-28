@@ -1,5 +1,5 @@
 <template>
-  <nav class="h-20 flex items-center justify-between">
+  <nav class="h-20 flex items-center justify-between shrink-0">
     <NuxtLink to="/">
       <div class="logo flex items-center">
         <img width="48" height="48" class="rounded-md overflow-hidden mr-6" src="/logo.png" alt="earth-worm-logo" />

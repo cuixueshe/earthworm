@@ -1,5 +1,5 @@
 <template>
-  <div class=" p-16 relative  h-screen flex flex-col ">
+  <div class="p-16 relative h-full flex flex-col">
     <div>
       <Link href="/">
       <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="absolute right-20 top-5 mr-2 h-7 w-7 cursor-pointer
