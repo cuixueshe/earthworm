@@ -34,12 +34,13 @@
       class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
       :style="{ width: currentPercentage + '%' }"></div>
   </div>
+  <ProgressRank></ProgressRank>
 </template>
 
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
-import { useSummary } from '~/composables/main/summary';
+import ProgressRank from '~/components/rank/ProgressRank.vue';
 
 const courseStore = useCourseStore();
 
@@ -69,7 +70,6 @@ function useDoAgain() {
   return {
     handleDoAgain
   }
-
 }
 
 function openRank() {

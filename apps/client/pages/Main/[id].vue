@@ -2,14 +2,12 @@
   <div class="h-full flex flex-col pt-2">
     <Tool></Tool>
     <Game></Game>
-    <ProgressRank></ProgressRank>
   </div>
 </template>
 
 <script setup lang="ts">
 import Game from '~/components/main/Game.vue';
 import Tool from '~/components/main/Tool.vue';
-import ProgressRank from '~/components/rank/ProgressRank.vue';
 import { useCourseStore } from "~/store/course";
 
 definePageMeta({
