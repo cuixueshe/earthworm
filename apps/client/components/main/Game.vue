@@ -1,5 +1,6 @@
 <template>
-  <div class="h-full pt-20">
+  <Loading class="mt-[-12vh]" v-if="!courseStore.currentStatement?.id"></Loading>
+  <div v-else class="h-full pt-20">
     <div class="h-[40vh] flex flex-col justify-center">
       <template v-if="isQuestion()">
         <Question></Question>
@@ -7,24 +8,23 @@
       <template v-else-if="isAnswer()">
         <Answer></Answer>
       </template>
-
     </div>
-    <Tips></Tips>
-    <Summary></Summary>
-    <AuthRequired></AuthRequired>
   </div>
+  <Tips></Tips>
+  <Summary></Summary>
+  <AuthRequired></AuthRequired>
 </template>
 
 <script setup lang="ts">
 import Question from "./Question.vue";
 import Answer from "./Answer.vue";
-import CourseProgress from "./CourseProgress.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
 import AuthRequired from './AuthRequired.vue';
+import Loading from '~/components/Loading.vue';
 import { useGameMode } from "~/composables/main/game";
+import { useCourseStore } from '~/store/course';
 
 const { isAnswer, isQuestion } = useGameMode();
+const courseStore = useCourseStore();
 </script>
-
-

@@ -2,7 +2,7 @@
   <div class="h-full flex flex-col pt-2">
     <Tool></Tool>
     <Game></Game>
-    <ProgressRank />
+    <ProgressRank></ProgressRank>
   </div>
 </template>
 
@@ -19,5 +19,8 @@ definePageMeta({
 const route = useRoute();
 const coursesStore = useCourseStore();
 
-await coursesStore.setup(+route.params.id);
+onMounted(async () => {
+  await coursesStore.setup(+route.params.id);
+})
+
 </script>
