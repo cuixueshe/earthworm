@@ -54,7 +54,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function doAgain() {
-    statementIndex.value = 0;
+    resetStatementIndex()
   }
 
   function checkCorrect(input: string) {
@@ -66,7 +66,7 @@ export const useCourseStore = defineStore("course", () => {
 
   async function completeCourse(cId: number) {
     const nextCourse = await fetchCompleteCourse(cId);
-    statementIndex.value = 0;
+    resetStatementIndex()
     return nextCourse;
   }
 
@@ -74,6 +74,11 @@ export const useCourseStore = defineStore("course", () => {
     const course = await fetchCourse(courseId);
     currentCourse.value = course;
     statementIndex.value = loadProgress(courseId);
+  }
+
+
+  function resetStatementIndex () {
+    statementIndex.value = 0
   }
 
   return {
@@ -89,6 +94,7 @@ export const useCourseStore = defineStore("course", () => {
     completeCourse,
     toNextStatement,
     cleanProgress,
+    resetStatementIndex
   };
 });
 
