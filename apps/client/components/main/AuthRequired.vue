@@ -1,8 +1,8 @@
 <template>
-  <dialog className="modal" :open="authRequireModalState">
+  <dialog className="modal top-[-8vh]" :open="authRequireModalState">
     <div className="modal-box">
       <h3 className="font-bold text-lg mb-4">✨</h3>
-      <p class="text-xl px-4">注册以进行下一课</p>
+      <p class="py-4 text-xl text-center">注册以进行下一课学习~ 😊</p>
       <div className="modal-action">
         <button class="btn" @click="hideAuthRequireModal">取消</button>
         <button class="btn" @click="handleSignup">去注册</button>
@@ -18,7 +18,7 @@ import { useCourseStore } from '~/store/course';
 
 const { authRequireModalState, hideAuthRequireModal } = useAuthRequire()
 const { showQuestion } = useGameMode();
-const  courseStore = useCourseStore()
+const courseStore = useCourseStore()
 
 function handleSignup() {
   navigateTo('/auth/signup')
