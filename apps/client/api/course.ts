@@ -5,8 +5,12 @@ export async function fetchCourse(courseId: number) {
   return await http.get<Course, Course>(`/courses/${courseId}`);
 }
 
-export async function fetchNextCourse(courseId: number) {
-  return await http.get<Course, Course>(`/courses/${courseId}/next`);
+export async function fetchCompleteCourse(courseId: number) {
+  return await http.post<Course, Course>(`/courses/${courseId}/complete`);
+}
+
+export async function fetchStartCourse(courseId: number) {
+  return await http.post<Course, Course>(`/courses/start`);
 }
 
 export async function fetchCourses() {

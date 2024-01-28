@@ -25,10 +25,9 @@
           </button>
         </a>
         <button
-          :disabled="initing"
           @click="handleKeydown"
-          class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
-          <span v-show="initing" class="loading loading-spinner"></span>
+          class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300"
+        >
           Go and get it <kbd class="kbd"> ↵ </kbd>
         </button>
       </div>
@@ -77,31 +76,20 @@
 </template>
 
 <script setup lang="ts">
-import { useUserStore } from "~/store/user";
+import { startCourse } from "~/composables/userProgress";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
-const { handleKeydown, initing } = useShortcutToGame();
+const { handleKeydown } = useShortcutToGame();
 
 function useShortcutToGame() {
   const router = useRouter();
-  const userStore = useUserStore();
-  const { activeCourseId, initing, initProgress } = useUserProgress()
 
-  function handleKeydown() {
-    if (userStore.user) {
-      if (initing.value)
-        return
-      router.push(`/main/${activeCourseId.value}`);
-    } else {
-      router.push("/main/1");
-    }
+  async function handleKeydown() {
+    const { courseId } = await startCourse();
+    router.push(`/main/${courseId}`);
   }
   onMounted(() => {
     registerShortcut("enter", handleKeydown);
-    console.log(userStore.user);
-    if (userStore.user) {
-      initProgress()
-    }
   });
 
   onUnmounted(() => {
@@ -109,9 +97,8 @@ function useShortcutToGame() {
   });
 
   return {
-    initing,
-    handleKeydown
-  }
+    handleKeydown,
+  };
 }
 </script>
 

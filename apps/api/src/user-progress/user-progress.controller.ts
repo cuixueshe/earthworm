@@ -1,12 +1,4 @@
-import {
-  Controller,
-  Post,
-  Body,
-  UseGuards,
-  Request,
-  Get,
-  Put,
-} from '@nestjs/common';
+import { Controller, Post, Body, UseGuards, Get, Put } from '@nestjs/common';
 import { UserProgressService } from './user-progress.service';
 import { AuthGuard } from '../auth/auth.guard';
 import {
@@ -34,10 +26,6 @@ export class UserProgressController {
   @UseGuards(AuthGuard)
   @Put()
   updateOne(@User() user: UserEntity, @Body() dto: UpdateUserProgressDto) {
-    return this.userProgressService.update(
-      +user.userId,
-      +dto.courseId,
-      user.username,
-    );
+    return this.userProgressService.update(+user.userId, +dto.courseId);
   }
 }

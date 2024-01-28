@@ -2,10 +2,17 @@ import { DB, DbType } from '../global/providers/db.provider';
 import { eq, asc, gt } from 'drizzle-orm';
 import { statement, course } from '@earthworm/shared';
 import { Injectable, Inject, HttpException, HttpStatus } from '@nestjs/common';
+import { UserEntity } from 'src/user/user.decorators';
+import { UserProgressService } from '../user-progress/user-progress.service';
+import { RankService } from '../rank/rank.service';
 
 @Injectable()
 export class CourseService {
-  constructor(@Inject(DB) private db: DbType) {}
+  constructor(
+    @Inject(DB) private db: DbType,
+    private readonly userProgressService: UserProgressService,
+    private readonly rankService: RankService,
+  ) {}
 
   async findNext(courseId: number) {
     const result = await this.db
@@ -21,17 +28,7 @@ export class CourseService {
       );
     }
 
-    const nextCourse = result[0];
-
-    const statementsResult = await this.findStatements(nextCourse.id);
-
-    const finalResult = {
-      id: nextCourse.id,
-      title: nextCourse.title,
-      statements: statementsResult,
-    };
-
-    return finalResult;
+    return result[0];
   }
 
   async findAll() {
@@ -43,6 +40,11 @@ export class CourseService {
       .from(course);
 
     return courseResult;
+  }
+
+  private async getFirstCourse() {
+    const courses = await this.findAll();
+    return courses[0];
   }
 
   async find(courseId: number) {
@@ -76,5 +78,26 @@ export class CourseService {
       .from(statement)
       .where(eq(statement.courseId, courseId))
       .orderBy(asc(statement.order));
+  }
+
+  async completeCourse(user: UserEntity, courseId: number) {
+    const nextCourse = await this.findNext(courseId);
+    await this.userProgressService.update(user.userId, nextCourse.id);
+    await this.rankService.userFinishCourse(user.userId, user.username);
+    return nextCourse;
+  }
+
+  async startCourse(user: UserEntity) {
+    const { courseId } = await this.userProgressService.findOne(user.userId);
+    const { id } = await this.getFirstCourse();
+
+    if (!courseId) {
+      await this.userProgressService.create(user.userId, id);
+      return {
+        cId: id,
+      };
+    }
+
+    return { cId: courseId };
   }
 }

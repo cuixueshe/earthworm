@@ -6,13 +6,17 @@
         <div class="flex flex-col">
           <div class="flex">
             <span class="text-6xl font-bold">"</span>
-            <div class="flex-1 text-xl text-center leading-loose">{{ enSentence }}</div>
+            <div class="flex-1 text-xl text-center leading-loose">
+              {{ enSentence }}
+            </div>
             <span class="text-6xl font-bold invisible">"</span>
           </div>
 
           <div class="flex">
             <span class="text-6xl font-bold invisible">"</span>
-            <div class="flex-1 text-center text-xl leading-loose">{{ zhSentence }}</div>
+            <div class="flex-1 text-center text-xl leading-loose">
+              {{ zhSentence }}
+            </div>
             <span class="text-6xl font-bold">"</span>
           </div>
         </div>
@@ -21,7 +25,10 @@
           <button class="btn" @click="handleGoToNextCourse">开始下一课</button>
         </div>
       </div>
-      <canvas ref="confettiCanvasRef" class="absolute top-0 left-0 h-full w-full pointer-events-none"></canvas>
+      <canvas
+        ref="confettiCanvasRef"
+        class="absolute top-0 left-0 h-full w-full pointer-events-none"
+      ></canvas>
     </dialog>
   </div>
 </template>
@@ -30,23 +37,32 @@
 import { useCourseStore } from "~/store/course";
 import { useDailySentence } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
-import { fetchUpdateProgress } from "~/api/userProgress";
-import confetti from 'canvas-confetti';
+import confetti from "canvas-confetti";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useUserStore } from "~/store/user";
 
 const courseStore = useCourseStore();
+const { nextCourse } = await completeCourse();
 
-const { handleDoAgain } = useDoAgain()
-const { handleGoToNextCourse } = useGoToNextCourse()
+const { handleDoAgain } = useDoAgain();
+const { handleGoToNextCourse } = useGoToNextCourse(nextCourse);
 
-const { zhSentence, enSentence } = useDailySentence()
+const { zhSentence, enSentence } = useDailySentence();
 
-const { confettiCanvasRef, playConfetti } = useConfetti()
+const { confettiCanvasRef, playConfetti } = useConfetti();
 
 onMounted(() => {
-  playConfetti()
-})
+  playConfetti();
+});
+
+async function completeCourse() {
+  const nextCourse = await courseStore.goToNextCourse(
+    courseStore.currentCourse.id
+  );
+  return {
+    nextCourse,
+  };
+}
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
@@ -57,65 +73,51 @@ function useDoAgain() {
   }
 
   return {
-    handleDoAgain
-  }
+    handleDoAgain,
+  };
 }
 
 function useConfetti() {
-  const confettiCanvasRef = ref<HTMLCanvasElement>()
+  const confettiCanvasRef = ref<HTMLCanvasElement>();
 
   const playConfetti = () => {
     const myConfetti = confetti.create(confettiCanvasRef.value, {
       resize: true,
-      useWorker: true
-    })
+      useWorker: true,
+    });
 
     myConfetti({
       particleCount: 300,
       spread: 180,
       origin: { y: -0.1 },
-      startVelocity: -35
-    })
-  }
+      startVelocity: -35,
+    });
+  };
 
   return {
     confettiCanvasRef,
-    playConfetti
-  }
+    playConfetti,
+  };
 }
 
-function useGoToNextCourse() {
+function useGoToNextCourse(nextCourse: { id: number }) {
   const { showQuestion } = useGameMode();
   const router = useRouter();
-  const { showAuthRequireModal } = useAuthRequire()
+  const { showAuthRequireModal } = useAuthRequire();
 
-  const userStore = useUserStore()
+  const userStore = useUserStore();
 
   async function handleGoToNextCourse() {
     if (!userStore.user) {
-      console.log('userStore.user 到这里了')
-      showAuthRequireModal()
-      return
+      showAuthRequireModal();
+      return;
     }
-
-    await courseStore.goToNextCourse(
-      +router.currentRoute.value.params.id
-    );
-
-    if (!courseStore.currentCourse.id) {
-      return
-    }
-    await fetchUpdateProgress({
-      courseId: courseStore.currentCourse.id
-    })
-    router.push(`/main/${courseStore.currentCourse.id}`);
-
+    router.push(`/main/${nextCourse.id}`);
     showQuestion();
   }
 
-
   return {
-    handleGoToNextCourse
+    handleGoToNextCourse,
   };
 }
 </script>

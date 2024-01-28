@@ -33,12 +33,12 @@ export class UserProgressService {
     };
   }
 
-  async update(userId: number, courseId: number, username: string) {
+  async update(userId: number, courseId: number) {
     await this.db
       .update(userProgress)
       .set({ courseId })
       .where(eq(userProgress.userId, userId));
-    await this.rankService.userFinishCourse(userId, username);
+
     return {
       courseId,
     };

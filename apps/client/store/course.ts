@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { fetchCourse, fetchNextCourse } from "~/api/course";
+import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 
 interface Statement {
   id: number;
@@ -54,21 +54,15 @@ export const useCourseStore = defineStore("course", () => {
     );
   }
 
-  async function goToNextCourse(cId: number) {
-    const nextCourse = await fetchNextCourse(cId);
-    if(!nextCourse) return false
-
-    currentCourse.value = nextCourse;
-    statementIndex.value = 0;
-    return true;
+  async function completeCourse(cId: number) {
+    const nextCourse = await fetchCompleteCourse(cId);
+    return nextCourse
   }
 
   async function setup(courseId: number) {
-    // 1. 基于用户 id ，获取当前的 course id
-    // 2. 没登录的话 直接获取第一个 course id
     const course = await fetchCourse(courseId);
     currentCourse.value = course;
-    statementIndex.value = 0;
+    statementIndex.value = 217;
   }
 
   return {
@@ -77,7 +71,7 @@ export const useCourseStore = defineStore("course", () => {
     currentStatement,
     wordCount,
     totalQuestionsCount,
-    goToNextCourse,
+    goToNextCourse: completeCourse,
     setup,
     doAgain,
     isAllDone,

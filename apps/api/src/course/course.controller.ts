@@ -1,5 +1,7 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { CourseService } from './course.service';
+import { AuthGuard } from 'src/auth/auth.guard';
+import { User, UserEntity } from 'src/user/user.decorators';
 
 @Controller('courses')
 export class CourseController {
@@ -18,5 +20,21 @@ export class CourseController {
   @Get(':courseId/next')
   findNext(@Param('courseId') courseId: number) {
     return this.courseService.findNext(courseId);
+  }
+
+  @UseGuards(AuthGuard)
+  @Post(':courseId/complete')
+  async completeCourse(
+    @User() user: UserEntity,
+    @Param('courseId') courseId: number,
+  ) {
+    const result = this.courseService.completeCourse(user, courseId);
+    return result;
+  }
+
+  @UseGuards(AuthGuard)
+  @Post('/start')
+  async startCourse(@User() user: UserEntity) {
+    return await this.courseService.startCourse(user);
   }
 }
