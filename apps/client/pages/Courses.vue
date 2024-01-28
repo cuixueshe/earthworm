@@ -1,5 +1,5 @@
 <template>
-  <div class="p-16 relative h-full flex flex-col">
+  <div class="relative w-full flex flex-col p-16">
     <div>
       <Link href="/">
       <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="absolute right-20 top-5 mr-2 h-7 w-7 cursor-pointer
@@ -10,7 +10,7 @@
       </Link>
       <h1 class="m-4 text-3xl text-indigo-500 ml-0 ">English Course</h1>
     </div>
-    <div class="overflow-y-auto scrollbar-hide h-full">
+    <div class="h-full overflow-y-auto scrollbar-hide">
       <Loading v-if="!courses.length" />
       <ul v-else class="flex gap-14 flex-wrap p-1 overflow-y-auto md:justify-start justify-center">
         <template v-for="course in courses" :key="course.id">

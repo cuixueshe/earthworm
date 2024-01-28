@@ -1,5 +1,5 @@
 <template>
-  <Loading class="mt-[-12vh]" v-if="!courseStore.currentStatement?.id"></Loading>
+  <Loading class="mt-[-16vh]" v-if="!courseStore.currentStatement?.id"></Loading>
   <div v-else class="h-full pt-20">
     <div class="h-[40vh] flex flex-col justify-center">
       <template v-if="isQuestion()">
