@@ -6,7 +6,7 @@
     </div>
     <div class="w-[210px]">
       <button class="tip-btn" @click="handleShowAnswer">⌃ Ctrl+n</button>
-      <span class="ml-2">show answer</span>
+      <span class="ml-2">show {{ toggleTipText }}</span>
     </div>
   </div>
 </template>
@@ -20,6 +20,10 @@ import { useCurrentStatementEnglishSound } from '~/composables/main/englishSound
 const { handlePlaySound } = usePlaySound()
 const { handleShowAnswer } = useShowAnswer()
 
+const toggleTipText = computed(() => {
+  const { isAnswer } = useGameMode()
+  return isAnswer() ? "question" : "answer";
+})
 
 function usePlaySound() {
   const { playSound } = useCurrentStatementEnglishSound();
@@ -42,7 +46,7 @@ function usePlaySound() {
 }
 
 function useShowAnswer() {
-  const { showAnswer } = useGameMode();
+  const { showAnswer, showQuestion } = useGameMode();
 
   onMounted(() => {
     registerShortcut("ctrl+n", handleShowAnswer);
@@ -53,7 +57,17 @@ function useShowAnswer() {
   });
 
   function handleShowAnswer() {
-    showAnswer();
+    // NOTE: registerShortcut 事件会记住注册时的面板状态，所以这里要重新获取下面板信息
+    const { isSummary, isAnswer } = useGameMode();
+    if (isSummary()) {
+      // 结算面板不做切换处理
+      return
+    }
+    if (isAnswer()) {
+      showQuestion()
+    } else {
+      showAnswer()
+    }
   }
 
   return {
