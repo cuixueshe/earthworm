@@ -12,21 +12,8 @@
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.soundmark }}
     </div>
-    <button class="
-          btn
-          btn-sm
-          text-xl
-          text-gray-500
-          bg-gray-100
-          hover:text-gray-100
-          hover:bg-gray-500
-          dark:text-white 
-          dark:bg-gray-500
-          dark:hover:text-white
-          dark:hover:bg-fuchsia-500
-          shadow-md" @click="goToNextQuestion">
-      next
-    </button>
+    <button class="btn-item" @click="showQuestion">again</button>
+    <button class="btn-item ml-5" @click="goToNextQuestion">next</button>
   </div>
 </template>
 
@@ -41,6 +28,7 @@ const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary()
+const { showQuestion } = useGameMode();
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
@@ -71,9 +59,8 @@ function registerShortcutKeyForNextQuestion() {
   });
 }
 
-function goToNextQuestion() {
-  const { showQuestion } = useGameMode();
 
+function goToNextQuestion() {
   if (courseStore.isAllDone()) {
     showSummary();
     return;
@@ -83,3 +70,9 @@ function goToNextQuestion() {
   showQuestion();
 }
 </script>
+
+<style scoped>
+.btn-item {
+  @apply btn btn-sm text-xl text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500 shadow-md
+}
+</style>
