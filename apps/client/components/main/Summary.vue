@@ -25,10 +25,7 @@
           <button class="btn" @click="handleGoToNextCourse">开始下一课</button>
         </div>
       </div>
-      <canvas
-        ref="confettiCanvasRef"
-        class="absolute top-0 left-0 h-full w-full pointer-events-none"
-      ></canvas>
+      <canvas ref="confettiCanvasRef" class="absolute top-0 left-0 h-full w-full pointer-events-none"></canvas>
     </dialog>
   </div>
 </template>
@@ -42,10 +39,10 @@ import { useAuthRequire } from "~/composables/main/authRequire";
 import { useUserStore } from "~/store/user";
 
 const courseStore = useCourseStore();
-const { nextCourse } = await completeCourse();
+const nextCourse = await completeCourse();
 
 const { handleDoAgain } = useDoAgain();
-const { handleGoToNextCourse } = useGoToNextCourse(nextCourse);
+const { handleGoToNextCourse } = useGoToNextCourse(nextCourse?.id!);
 
 const { zhSentence, enSentence } = useDailySentence();
 
@@ -56,12 +53,15 @@ onMounted(() => {
 });
 
 async function completeCourse() {
-  const nextCourse = await courseStore.completeCourse(
-    courseStore.currentCourse.id
-  );
-  return {
-    nextCourse,
-  };
+  const userStore = useUserStore();
+
+  if (userStore.user) {
+    const nextCourse = await courseStore.completeCourse(
+      courseStore.currentCourse.id
+    );
+
+    return nextCourse
+  }
 }
 
 function useDoAgain() {
@@ -100,7 +100,7 @@ function useConfetti() {
   };
 }
 
-function useGoToNextCourse(nextCourse: { id: number }) {
+function useGoToNextCourse(nextCourseId: number) {
   const { showQuestion } = useGameMode();
   const router = useRouter();
   const { showAuthRequireModal } = useAuthRequire();
@@ -112,7 +112,7 @@ function useGoToNextCourse(nextCourse: { id: number }) {
       showAuthRequireModal();
       return;
     }
-    router.push(`/main/${nextCourse.id}`);
+    router.push(`/main/${nextCourseId}`);
     showQuestion();
   }
 
