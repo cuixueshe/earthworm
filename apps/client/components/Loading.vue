@@ -1,15 +1,9 @@
 <template>
-    <div v-if="showLoading" class="loading-container">
+    <div class="loading-container">
         <div class="loading-square"></div>
     </div>
 </template>
-  
-<script setup lang="ts">
-defineProps({
-    showLoading: Boolean
-});
-</script>
-  
+
 <style scoped>
 .loading-container {
     display: flex;
@@ -21,9 +15,9 @@ defineProps({
 .loading-square {
     width: 50px;
     height: 50px;
-    background-color: #7a7dbd;
+    background-color: #82afdf;
     animation: spin 1s linear infinite;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 @keyframes spin {
@@ -36,7 +30,3 @@ defineProps({
     }
 }
 </style>
-    
-  
-  
-  
