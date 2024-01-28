@@ -56,7 +56,7 @@ onMounted(() => {
 });
 
 async function completeCourse() {
-  const nextCourse = await courseStore.goToNextCourse(
+  const nextCourse = await courseStore.completeCourse(
     courseStore.currentCourse.id
   );
   return {

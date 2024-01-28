@@ -20,10 +20,19 @@ export const useCourseStore = defineStore("course", () => {
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
 
+  const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
+
   watchEffect(() => {
     currentStatement.value =
       currentCourse.value?.statements[statementIndex.value];
   });
+
+  watch(
+    () => statementIndex.value,
+    () => {
+      saveProgress(currentCourse.value?.id!, statementIndex.value);
+    }
+  );
 
   const wordCount = computed(() => {
     return currentStatement.value?.english.split(" ").length || 1;
@@ -34,7 +43,8 @@ export const useCourseStore = defineStore("course", () => {
   });
 
   function toNextStatement() {
-    statementIndex.value = statementIndex.value + 1;
+    const nextIndex = statementIndex.value + 1;
+    statementIndex.value = nextIndex;
 
     return statementIndex.value;
   }
@@ -56,13 +66,14 @@ export const useCourseStore = defineStore("course", () => {
 
   async function completeCourse(cId: number) {
     const nextCourse = await fetchCompleteCourse(cId);
-    return nextCourse
+    statementIndex.value = 0;
+    return nextCourse;
   }
 
   async function setup(courseId: number) {
     const course = await fetchCourse(courseId);
     currentCourse.value = course;
-    statementIndex.value = 217;
+    statementIndex.value = loadProgress(courseId);
   }
 
   return {
@@ -71,11 +82,35 @@ export const useCourseStore = defineStore("course", () => {
     currentStatement,
     wordCount,
     totalQuestionsCount,
-    goToNextCourse: completeCourse,
     setup,
     doAgain,
     isAllDone,
     checkCorrect,
+    completeCourse,
     toNextStatement,
+    cleanProgress,
   };
 });
+
+function useCourseProgress() {
+  function saveProgress(courseId: number, index: number) {
+    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    progress[courseId] = index;
+    localStorage.setItem("courseProgress", JSON.stringify(progress));
+  }
+
+  function loadProgress(courseId: number) {
+    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    return progress[courseId] || 0;
+  }
+
+  function cleanProgress() {
+    localStorage.removeItem("courseProgress");
+  }
+
+  return {
+    saveProgress,
+    loadProgress,
+    cleanProgress,
+  };
+}

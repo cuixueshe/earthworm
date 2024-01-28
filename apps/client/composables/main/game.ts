@@ -1,7 +1,10 @@
+import { fetchStartGame } from "~/api/game";
+import { useUserStore } from "~/store/user";
+
 export enum GameMode {
-  Question = 'question',
-  Answer = 'answer',
-  Summary = 'summary',
+  Question = "question",
+  Answer = "answer",
+  Summary = "summary",
 }
 
 const gameMode = ref<GameMode>(GameMode.Question);
@@ -32,7 +35,6 @@ export function useGameMode() {
   }
 
   return {
-    GameMode,
     gameMode,
     isAnswer,
     isQuestion,
@@ -40,5 +42,22 @@ export function useGameMode() {
     showAnswer,
     showQuestion,
     showSummary,
+  };
+}
+
+export async function startGame() {
+  const userStore = useUserStore();
+  const firstCourseId = 1;
+
+  let courseId;
+  if (!userStore.user) {
+    courseId = firstCourseId;
+  } else {
+    const { cId } = await fetchStartGame();
+    courseId = cId;
+  }
+
+  return {
+    courseId,
   };
 }

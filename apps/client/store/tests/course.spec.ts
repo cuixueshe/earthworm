@@ -1,7 +1,7 @@
 import { setActivePinia, createPinia } from "pinia";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { useCourseStore } from "../course";
-import { fetchCourse, fetchNextCourse } from "~/api/course";
+import { fetchCourse, fetchCompleteCourse } from "~/api/course";
 import { type Course } from "../course";
 
 vi.mock("~/api/course");
@@ -28,12 +28,17 @@ const secondCourse: Course = {
   ],
 };
 
-vi.mocked(fetchCourse).mockImplementation(async () => firstCourse);
-vi.mocked(fetchNextCourse).mockImplementation(async () => secondCourse);
+vi.mocked(fetchCourse).mockImplementation(async (courseId) => {
+  if (courseId === 2) return secondCourse;
+  return firstCourse;
+});
+vi.mocked(fetchCompleteCourse).mockImplementation(async () => firstCourse);
 
 describe("course", () => {
   beforeEach(() => {
     setActivePinia(createPinia());
+    const store = useCourseStore();
+    store.cleanProgress();
   });
 
   it("initializes with a course", async () => {
@@ -42,16 +47,6 @@ describe("course", () => {
     await store.setup(1);
 
     expect(store.currentCourse).toEqual(firstCourse);
-    expect(store.statementIndex).toBe(0);
-  });
-
-  it("goes to the next course", async () => {
-    const store = useCourseStore();
-
-    const result = await store.goToNextCourse(1);
-
-    expect(result).toBe(true);
-    expect(store.currentCourse).toEqual(secondCourse);
     expect(store.statementIndex).toBe(0);
   });
 
@@ -106,5 +101,46 @@ describe("course", () => {
     await store.setup(firstCourse.id);
 
     expect(store.totalQuestionsCount).toBe(2);
+  });
+
+  describe("course progress", () => {
+    it("should be restored when there is a progress record", async () => {
+      const store = useCourseStore();
+      await store.setup(firstCourse.id);
+      store.toNextStatement();
+
+      // 重置
+      await store.setup(firstCourse.id);
+
+      expect(store.statementIndex).toBe(1);
+    });
+
+    it("resets on completeCourse", async () => {
+      const store = useCourseStore();
+      await store.setup(firstCourse.id); // 假设初始化课程并完成一些进度
+      store.toNextStatement();
+
+      await store.completeCourse(1);
+
+      await store.setup(firstCourse.id); // 在重新加载
+
+      expect(store.statementIndex).toBe(0); // 验证 statementIndex 是否重置
+    });
+
+    it("saves and restores progress independently for multiple courses", async () => {
+      const store = useCourseStore();
+      await store.setup(firstCourse.id); // 初始化第一个课程
+      store.toNextStatement(); // 更新进度
+
+      await store.setup(secondCourse.id); // 切换到第二个课程
+      expect(store.statementIndex).toBe(0); // 验证新课程的初始进度
+
+      store.toNextStatement(); // 更新第二个课程的进度
+      await store.setup(firstCourse.id); // 再次切换回第一个课程
+      expect(store.statementIndex).toBe(1); // 验证第一个课程的进度被正确恢复
+
+      await store.setup(secondCourse.id); // 切换到第二个课程
+      expect(store.statementIndex).toBe(1); // 验证第二个课程的进度也被正确恢复
+    });
   });
 });

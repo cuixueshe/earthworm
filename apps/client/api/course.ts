@@ -9,10 +9,6 @@ export async function fetchCompleteCourse(courseId: number) {
   return await http.post<Course, Course>(`/courses/${courseId}/complete`);
 }
 
-export async function fetchStartCourse(courseId: number) {
-  return await http.post<Course, Course>(`/courses/start`);
-}
-
 export async function fetchCourses() {
   return await http.get<Course[], Course[]>("/courses");
 }

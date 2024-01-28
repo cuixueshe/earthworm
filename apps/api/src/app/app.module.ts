@@ -7,6 +7,7 @@ import { UserProgressModule } from '../user-progress/user-progress.module';
 import { ToolModule } from 'src/tool/tool.module';
 import { RedisModule } from '@nestjs-modules/ioredis';
 import { RankModule } from '../rank/rank.module';
+import { GameModule } from '../game/game.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { RankModule } from '../rank/rank.module';
     UserProgressModule,
     ToolModule,
     RankModule,
+    GameModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: 'single',

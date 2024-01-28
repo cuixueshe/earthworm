@@ -9,5 +9,6 @@ import { RankService } from '../rank/rank.service';
   imports: [GlobalModule],
   providers: [CourseService, UserProgressService, RankService],
   controllers: [CourseController],
+  exports: [CourseService],
 })
 export class CourseModule {}

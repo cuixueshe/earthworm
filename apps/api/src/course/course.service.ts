@@ -42,7 +42,7 @@ export class CourseService {
     return courseResult;
   }
 
-  private async getFirstCourse() {
+  async getFirstCourse() {
     const courses = await this.findAll();
     return courses[0];
   }
