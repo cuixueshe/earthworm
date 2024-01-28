@@ -13,7 +13,9 @@
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose stop",
     "docker:delete": "docker-compose down",
-    "docker:down": "docker-compose down --volumes"
+    "docker:down": "docker-compose down --volumes",
+    "prod:serve":"pnpm -F api start:prod:pm",
+    "prod:client": "pnpm -F client generate"
   },
   "keywords": [],
   "author": "",
