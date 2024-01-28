@@ -31,18 +31,19 @@
 </template>
 
 <script setup lang="ts">
-import { useCourseStore } from "~/store/course";
+import { useCourseStore, type Course } from "~/store/course";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import confetti from "canvas-confetti";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useUserStore } from "~/store/user";
 
+let nextCourseId = 1
 const courseStore = useCourseStore();
-const nextCourse = await completeCourse();
+
 
 const { handleDoAgain } = useDoAgain();
-const { handleGoToNextCourse } = useGoToNextCourse(nextCourse?.id!);
+const { handleGoToNextCourse } = useGoToNextCourse();
 
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
@@ -52,7 +53,8 @@ const { confettiCanvasRef, playConfetti } = useConfetti();
 
 
 watch(showModal, (val) => {
-  val && setTimeout(() => {
+  val && setTimeout(async () => {
+    await completeCourse();
     playConfetti()
   }, 300);
 })
@@ -65,7 +67,7 @@ async function completeCourse() {
       courseStore.currentCourse.id
     );
 
-    return nextCourse
+    nextCourseId = nextCourse.id
   }
 }
 
@@ -106,7 +108,7 @@ function useConfetti() {
   };
 }
 
-function useGoToNextCourse(nextCourseId: number) {
+function useGoToNextCourse() {
   const { showQuestion } = useGameMode();
   const router = useRouter();
   const { showAuthRequireModal } = useAuthRequire();
@@ -121,6 +123,7 @@ function useGoToNextCourse(nextCourseId: number) {
     }
     router.push(`/main/${nextCourseId}`);
     showQuestion();
+    hideSummary()
   }
 
   return {
