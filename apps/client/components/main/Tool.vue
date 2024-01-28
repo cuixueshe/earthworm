@@ -47,7 +47,11 @@ const currentSchedule = computed(() => {
 });
 
 const currentPercentage = computed(() => {
-  return Math.round(currentSchedule.value / courseStore.totalQuestionsCount * 100)
+  const { isSummary } = useGameMode()
+  if (isSummary()) {
+    return 100
+  }
+  return (courseStore.statementIndex / courseStore.totalQuestionsCount * 100).toFixed(2)
 })
 
 const coursesStore = useCourseStore();
