@@ -43,11 +43,11 @@
       <div class="flex">
         <div
           class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-2xl">
-          <div class="h-[330px] flex p-4">wip...</div>
+          <div class="h-[330px] flex p-4">使用介绍 就是还没来得及写 -_-</div>
         </div>
         <div
           class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl">
-          <div class="h-[330px] flex p-4">wip...</div>
+          <div class="h-[330px] flex p-4">这里是 earthworm 背后的学习原理  写的好不好?</div>
         </div>
       </div>
       <div class="w-1/2"></div>
