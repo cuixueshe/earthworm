@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full pt-2">
+  <div class="h-full flex flex-col">
     <Tool></Tool>
     <Game></Game>
     <ProgressRank />
