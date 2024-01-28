@@ -39,6 +39,7 @@
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
+import { useSummary } from '~/composables/main/summary';
 
 const courseStore = useCourseStore();
 
@@ -47,8 +48,7 @@ const currentSchedule = computed(() => {
 });
 
 const currentPercentage = computed(() => {
-  const { isSummary } = useGameMode()
-  if (isSummary()) {
+  if (courseStore.isAllDone()) {
     return 100
   }
   return (courseStore.statementIndex / courseStore.totalQuestionsCount * 100).toFixed(2)

@@ -15,6 +15,7 @@
 import { useGameMode } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from '~/composables/main/englishSound';
+import { useSummary } from '~/composables/main/summary';
 
 
 const { handlePlaySound } = usePlaySound()
@@ -58,8 +59,9 @@ function useShowAnswer() {
 
   function handleShowAnswer() {
     // NOTE: registerShortcut 事件会记住注册时的面板状态，所以这里要重新获取下面板信息
-    const { isSummary, isAnswer } = useGameMode();
-    if (isSummary()) {
+    const { isAnswer } = useGameMode();
+    const { showModal } = useSummary()
+    if (showModal.value) {
       // 结算面板不做切换处理
       return
     }

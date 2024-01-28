@@ -35,10 +35,12 @@ import { useCourseStore } from "~/store/course";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useGameMode } from "~/composables/main/game";
 import { useCurrentStatementEnglishSound } from '~/composables/main/englishSound';
+import { useSummary } from '~/composables/main/summary';
 
 const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
+const { showSummary } = useSummary()
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
@@ -70,7 +72,7 @@ function registerShortcutKeyForNextQuestion() {
 }
 
 function goToNextQuestion() {
-  const { showQuestion, showSummary } = useGameMode();
+  const { showQuestion } = useGameMode();
 
   if (courseStore.isAllDone()) {
     showSummary();

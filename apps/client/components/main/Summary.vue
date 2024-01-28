@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dialog className="modal mt-[-8vh]" :open="true">
+    <dialog className="modal mt-[-8vh]" :open="showModal">
       <div className="modal-box max-w-[48rem]">
         <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
         <div class="flex flex-col">
@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
-import { useDailySentence } from "~/composables/main/summary";
+import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import confetti from "canvas-confetti";
 import { useAuthRequire } from "~/composables/main/authRequire";
@@ -44,13 +44,18 @@ const nextCourse = await completeCourse();
 const { handleDoAgain } = useDoAgain();
 const { handleGoToNextCourse } = useGoToNextCourse(nextCourse?.id!);
 
+const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
+
 
 const { confettiCanvasRef, playConfetti } = useConfetti();
 
-onMounted(() => {
-  playConfetti();
-});
+
+watch(showModal, (val) => {
+  val && setTimeout(() => {
+    playConfetti()
+  }, 300);
+})
 
 async function completeCourse() {
   const userStore = useUserStore();
@@ -69,6 +74,7 @@ function useDoAgain() {
 
   function handleDoAgain() {
     courseStore.doAgain();
+    hideSummary()
     showQuestion();
   }
 
@@ -109,6 +115,7 @@ function useGoToNextCourse(nextCourseId: number) {
 
   async function handleGoToNextCourse() {
     if (!userStore.user) {
+      hideSummary()
       showAuthRequireModal();
       return;
     }

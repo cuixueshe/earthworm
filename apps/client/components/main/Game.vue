@@ -7,12 +7,10 @@
       <template v-else-if="isAnswer()">
         <Answer></Answer>
       </template>
-      <template v-else-if="isSummary()">
-        <Summary></Summary>
-      </template>
+
     </div>
-    <!-- <CourseProgress></CourseProgress> -->
     <Tips></Tips>
+    <Summary></Summary>
     <AuthRequired></AuthRequired>
   </div>
 </template>
@@ -26,7 +24,7 @@ import Tips from "./Tips.vue";
 import AuthRequired from './AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";
 
-const { isAnswer, isQuestion, isSummary } = useGameMode();
+const { isAnswer, isQuestion } = useGameMode();
 </script>
 
 
