@@ -26,6 +26,7 @@ import { useSummary } from '~/composables/main/summary';
 
 const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
+registerShortcutKeyForAgain();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary()
 const { showQuestion } = useGameMode();
@@ -45,6 +46,20 @@ function usePlayEnglishSound() {
     handlePlaySound,
   };
 }
+
+function registerShortcutKeyForAgain() {
+  function handleKeydown() {
+    showQuestion();
+  }
+  onMounted(() => {
+    registerShortcut("Tab", handleKeydown);
+  });
+
+  onUnmounted(() => {
+    cancelShortcut("Tab", handleKeydown);
+  });
+}
+
 
 function registerShortcutKeyForNextQuestion() {
   function handleKeydown() {
