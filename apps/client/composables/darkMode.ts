@@ -76,10 +76,12 @@ export function useDarkMode() {
   const setDarkMode = (state = false) => {
     if (state) {
       document.documentElement.classList.add("dark");
+      document.documentElement.setAttribute("data-theme", "dark");
       darkMode.value = Theme.DARK
       sessionStorage.setItem(DARK_MODE, Theme.DARK)
     } else {
       document.documentElement.classList.remove("dark");
+      document.documentElement.setAttribute("data-theme", "light");
       darkMode.value = Theme.LIGHT
       sessionStorage.setItem(DARK_MODE, Theme.LIGHT)
     }
