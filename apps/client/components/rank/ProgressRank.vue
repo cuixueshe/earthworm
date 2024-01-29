@@ -1,6 +1,6 @@
 <template>
   <dialog id="rank-progress" class="modal">
-    <div class="modal-box rounded-[8px] flex flex-col w-auto py-4 px-[10px] relative">
+    <div class="modal-box rounded-[8px] flex flex-col w-auto py-4 px-[10px] relative dark:bg-[#1E2329]">
       <div class="modal-action absolute top-[10px] right-3 mt-0">
         <form method="dialog">
           <!-- close svg -->
@@ -13,7 +13,7 @@
         </form>
 
       </div>
-      <h3 class="font-bold text-[24px] self-stretch text-center">Rank</h3>
+      <h3 class="font-bold text-[24px] self-stretch text-center dark:text-white">Rank</h3>
       <div v-if="data.list.length === 0" class="flex flex-col w-[350px] px-4 items-center min-h-52 justify-center">暂无数据
       </div>
       <div v-else class=" flex flex-col py-3 gap-2">
