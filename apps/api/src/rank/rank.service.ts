@@ -44,14 +44,22 @@ export class RankService {
       9,
       'WITHSCORES',
     );
+    let self = null;
+    if (user) {
+      const userRank = await this.redis.zrevrank(
+        this.FINISH_COUNT_KEY,
+        `${user.userId}-${user.username}`,
+      );
+      const userCount =
+        (await this.redis.zscore(
+          this.FINISH_COUNT_KEY,
+          `${user.userId}-${user.username}`,
+        )) ?? 0;
+      self = { username: user.username, count: userCount, rank: userRank };
+    }
     return {
       list: this.translateList(rankList),
-      self: user
-        ? await this.redis.zrevrank(
-            this.FINISH_COUNT_KEY,
-            `${user.userId}-${user.username}`,
-          )
-        : null,
+      self,
     };
   }
 }
