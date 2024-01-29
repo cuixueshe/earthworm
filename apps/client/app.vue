@@ -14,7 +14,7 @@
 import "vfonts/Lato.css";
 import { useUserStore } from "~/store/user";
 import { darkTheme, lightTheme } from 'naive-ui';
-import { Theme } from '~/composables/darkMode';
+import { Theme, useDarkMode } from '~/composables/darkMode';
 
 useRestoreUser();
 
