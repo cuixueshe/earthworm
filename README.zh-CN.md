@@ -125,8 +125,32 @@ docker-compose down --volumes
 以下列出已经碰到过的具体问题。
 
 **argon2模块安装失败，windows环境下的处理方式**
+
 - 安装Visual Studio 2015以上版本的组件，具体来说是"使用C++的桌面开发"这个组件。（实际上包含C++相关开发工具库的组件都可以）
 - 编译过程中遇到中文乱码时，在命令行中执行`chcp 437`后，再重新运行install命令。
+
+### WSL2 中 docker 无权访问?
+
+在 Windows 中使用 wsl2 做为开发环境时，通过 `docker compose up -d` 启动 docker 出现如下错误：
+
+```bash
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+```
+
+解决方法：
+
+- 将当前的用户添加到docker组中：
+
+```bash
+# 添加 docker 用户组
+sudo groupadd docker
+# 将登录用户加入到 docker 用户组中
+sudo gpasswd -a $USER docker
+# 更新用户组
+newgrp docker
+# 测试 docker 命令是否正常使用
+docker images
+```
 
 ## 前端开发规范
 

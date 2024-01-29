@@ -118,14 +118,37 @@ docker-compose down --volumes
 
 ### pnpm install Error?
 
-Some dependencies require compilation during installation, necessitating the presence of relevant build environments. 
-If these environments are not available, the compilation process may fail. Additionally, different modules may require different build environments, so specific issues need to be analyzed individually. 
+Some dependencies require compilation during installation, necessitating the presence of relevant build environments.
+If these environments are not available, the compilation process may fail. Additionally, different modules may require different build environments, so specific issues need to be analyzed individually.
 Below are specific problems encountered along with their solutions.
 
 **Error installing the argon2 module on Windows:**
+
 - Install Visual Studio 2015 or later, specifically the "Desktop development with C++" component. (In practice, any component containing C++ development tools and libraries will suffice.)
 - If you encounter Chinese characters display issues during compilation, execute `chcp 437` in the command prompt, then rerun the install command.
 
+### Docker Permission Denied in Docker?
+
+When using WSL2 as a development environment in Windows, the following error occurs when starting Docker with `docker compose up -d` :
+
+```bash
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+```
+
+Solution:
+
+- Add the current user to the docker group:
+
+```bash
+# Add docker user group
+sudo groupadd docker
+# Add the logged-in user to the docker user group
+sudo gpasswd -a $USER docker
+# Update user group
+newgrp docker
+# Test if docker command is working properly
+docker images
+```
 
 ## Frontend Development Guideline
 
@@ -135,3 +158,7 @@ Below are specific problems encountered along with their solutions.
 2. Avoid including UI logic in composables.
    1. Such as `useMessage`
    2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
+
+```
+
+```
