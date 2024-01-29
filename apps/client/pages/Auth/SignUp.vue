@@ -41,10 +41,10 @@
       <p className="mt-10 text-center text-sm text-gray-500">
         Has a account?
         <NuxtLink
-          href="/auth/signin"
+          href="/auth/login"
           className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
         >
-          Sign in
+          Log in
         </NuxtLink>
       </p>
     </div>
