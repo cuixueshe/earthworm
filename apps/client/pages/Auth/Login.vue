@@ -5,7 +5,7 @@
     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <img className="mx-auto h-10 w-auto" src="/logo.png" alt="earthworm" />
       <h2
-        className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+        className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-300"
       >
         Log in to your account
       </h2>
@@ -23,7 +23,7 @@
             @keydown.enter.prevent
           />
         </n-form-item>
-        <n-button type="primary" size="large" block @click="handleLogin">
+        <n-button type="primary" size="large" block @click="handleLogin" class="mt-2">
           Log in
         </n-button>
       </n-form>
@@ -32,7 +32,7 @@
         Not a account?
         <NuxtLink
           href="/auth/signup"
-          className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+          className="font-semibold text-[1.2em] leading-6 text-fuchsia-500 hover:text-fuchsia-400"
         >
           Sign up
         </NuxtLink>
