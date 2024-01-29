@@ -158,7 +158,3 @@ docker images
 2. Avoid including UI logic in composables.
    1. Such as `useMessage`
    2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
-
-```
-
-```
