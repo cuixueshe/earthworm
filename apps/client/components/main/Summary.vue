@@ -19,6 +19,7 @@
             </div>
             <span class="text-6xl font-bold">"</span>
           </div>
+          <p class="text-3 text-right text-gray-200"> —— 金山词霸「每日一句」</p>
         </div>
         <div className="modal-action">
           <button class="btn" @click="handleDoAgain">再来一次</button>
