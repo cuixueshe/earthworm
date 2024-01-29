@@ -48,69 +48,7 @@ const route = useRoute();
 
 const userStore = useUserStore();
 
-const isAppearanceTransition =
-  // @ts-expect-error: Transition API
-  document.startViewTransition &&
-  !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches
-
-const toggle = (isDark: boolean) => {
-  if (!isDark) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    document.documentElement.classList.remove("dark");
-  }
-};
-
-const toggleDarkMode = (event: MouseEvent) => {
-  const isDark = document.documentElement.classList.contains("dark");
-
-  if (!isAppearanceTransition) {
-    toggle(isDark)
-    return
-  }
-  const x = event.clientX
-  const y = event.clientY
-  const endRadius = Math.hypot(
-    Math.max(x, innerWidth - x),
-    Math.max(y, innerHeight - y)
-  )
-
-  // @ts-expect-error: Transition API
-  const transition = document.startViewTransition(() => {
-    toggle(isDark)
-  })
-
-  transition.ready.then(() => {
-    const clipPath = [
-      `circle(0px at ${x}px ${y}px)`,
-      `circle(${endRadius}px at ${x}px ${y}px)`
-    ]
-    document.documentElement.animate(
-      {
-        clipPath: isDark ? clipPath : [...clipPath].reverse()
-      },
-      {
-        duration: 300,
-        easing: 'ease-in',
-        pseudoElement: isDark
-          ? '::view-transition-new(root)'
-          : '::view-transition-old(root)'
-      }
-    )
-  })
-};
-
-const setDarkMode = (state = false) => {
-  if (state) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    document.documentElement.classList.remove("dark");
-  }
-};
+const { setDarkMode, toggleDarkMode } = useDarkMode()
 
 const handleLogin = () => {
   navigateTo("/auth/login");
@@ -132,11 +70,5 @@ const handleLogout = () => {
   });
 };
 
-onMounted(() => {
-  const state =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  setDarkMode(state);
-});
 </script>
 <style></style>

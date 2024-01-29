@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full flex flex-col pt-2">
+  <div class="w-full flex flex-col pt-2">
     <Tool></Tool>
     <Game></Game>
   </div>

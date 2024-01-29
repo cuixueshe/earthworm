@@ -14,8 +14,9 @@
     "docker:stop": "docker-compose stop",
     "docker:delete": "docker-compose down",
     "docker:down": "docker-compose down --volumes",
-    "prod:serve":"pnpm -F api start:prod:pm",
-    "prod:client": "pnpm -F client generate"
+    "build:serve":"pnpm -F api build",
+    "build:client": "pnpm schema:build && pnpm -F client generate",
+    "prod:serve":"pnpm -F api start:prod:pm"
   },
   "keywords": [],
   "author": "",
