@@ -5,7 +5,7 @@ import { isProd } from "~/utils/env";
 
 export const http: AxiosInstance = axios.create({
   baseURL: isProd()
-    ? "http://earthworm.cuixueshe.com:81/api"
+    ? "https://earthworm.cuixueshe.com/api"
     : "http://localhost:3001",
   timeout: 10000,
   headers: { "Content-Type": "application/json" },
