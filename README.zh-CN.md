@@ -119,15 +119,23 @@ docker-compose down --volumes
 
 **TODO**: 后面看看有没有更优雅的方式规避或解决这个问题，一开始本来是想着直接删数据库数据，但是发现有外键约束。
 
-### pnpm install报错？
+### pnpm install 报错？
 
 某些依赖模块需要编译安装，因此需要相关编译环境。如果没有对应环境则会编译失败， 且不同模块所需编译环境不同，因此具体问题需要具体分析。
 以下列出已经碰到过的具体问题。
 
-**argon2模块安装失败，windows环境下的处理方式**
+先尝试使用下面的命令更新 `pnpm`
 
-- 安装Visual Studio 2015以上版本的组件，具体来说是"使用C++的桌面开发"这个组件。（实际上包含C++相关开发工具库的组件都可以）
-- 编译过程中遇到中文乱码时，在命令行中执行`chcp 437`后，再重新运行install命令。
+```shell
+pnpm i -g
+# or
+pnpm i -g pnpm
+```
+
+**argon2 模块安装失败，Windows 环境下的处理方式**
+
+- 安装 Visual Studio 2015 以上版本的组件，具体来说是 “使用 C++的桌面开发” 这个组件。（实际上包含 C++相关开发工具库的组件都可以）
+- 编译过程中遇到中文乱码时，在命令行中执行 `chcp 437` 后，再重新运行 install 命令。
 
 ### WSL2 中 docker 无权访问?
 
@@ -139,7 +147,7 @@ permission denied while trying to connect to the Docker daemon socket at unix://
 
 解决方法：
 
-- 将当前的用户添加到docker组中：
+- 将当前的用户添加到 docker 组中：
 
 ```bash
 # 添加 docker 用户组

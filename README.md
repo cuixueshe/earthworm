@@ -122,6 +122,14 @@ Some dependencies require compilation during installation, necessitating the pre
 If these environments are not available, the compilation process may fail. Additionally, different modules may require different build environments, so specific issues need to be analyzed individually.
 Below are specific problems encountered along with their solutions.
 
+First try the following command to update `pnpm`
+
+```shell
+pnpm i -g
+# or
+pnpm i -g pnpm
+```
+
 **Error installing the argon2 module on Windows:**
 
 - Install Visual Studio 2015 or later, specifically the "Desktop development with C++" component. (In practice, any component containing C++ development tools and libraries will suffice.)
