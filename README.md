@@ -116,6 +116,17 @@ docker-compose down --volumes
 
 ⚠️ However, please note that using this command will delete all data in the database. You will need to rerun the steps in 'How to Start' (starting from step 3)
 
+### pnpm install Error?
+
+Some dependencies require compilation during installation, necessitating the presence of relevant build environments. 
+If these environments are not available, the compilation process may fail. Additionally, different modules may require different build environments, so specific issues need to be analyzed individually. 
+Below are specific problems encountered along with their solutions.
+
+**Error installing the argon2 module on Windows:**
+- Install Visual Studio 2015 or later, specifically the "Desktop development with C++" component. (In practice, any component containing C++ development tools and libraries will suffice.)
+- If you encounter Chinese characters display issues during compilation, execute `chcp 437` in the command prompt, then rerun the install command.
+
+
 ## Frontend Development Guideline
 
 1. Do not Destructure Pinia store.
