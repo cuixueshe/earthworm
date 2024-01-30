@@ -16,6 +16,7 @@
         type="text"
         v-model="inputValue"
         @keyup="handleKeyup"
+        @keydown="handleKeydown"
         @focus="handleInputFocus"
         @blur="handleBlur"
         autoFocus
@@ -33,7 +34,7 @@ import { useGameMode } from '~/composables/main/game';
 
 const courseStore = useCourseStore();
 const { userInputWords, activeInputIndex, inputValue } = useInput();
-const { handleKeyup } = registerShortcutKeyForInputEl();
+const { handleKeyup, handleKeydown } = registerShortcutKeyForInputEl();
 const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
 
 function useInput() {
@@ -68,8 +69,22 @@ function registerShortcutKeyForInputEl() {
     }
   }
 
+  function handleKeydown(e: KeyboardEvent) {
+    const inputLastStr = inputValue.value[inputValue.value.length - 1]
+    if (e.code === 'Space' && inputLastStr === ' ') {
+      // prevent input multiple spaces
+      e.preventDefault()
+    }
+    if (e.code === 'Backspace' && userInputWords.value.length - courseStore.wordCount === 1 && inputLastStr === ' ') {
+      // remove the last space and the last letter
+      e.preventDefault()
+      inputValue.value = inputValue.value.slice(0, -2)
+    }
+  }
+
   return {
     handleKeyup,
+    handleKeydown
   };
 }
 
