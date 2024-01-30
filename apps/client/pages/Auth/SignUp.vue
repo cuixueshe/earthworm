@@ -39,7 +39,7 @@
       </n-form>
 
       <p className="mt-10 text-center text-sm text-gray-500 dark:text-gray-400">
-        Has a account?
+        Has an account?
         <NuxtLink
           href="/auth/login"
           className="font-semibold text-[1.2em] leading-6 text-fuchsia-500 hover:text-fuchsia-400"
