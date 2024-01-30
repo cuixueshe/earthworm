@@ -10,16 +10,8 @@
           {{ userInputWords[i - 1] }}
         </div>
       </template>
-      <input
-        ref="inputEl"
-        class="absolute h-full w-full opacity-0"
-        type="text"
-        v-model="inputValue"
-        @keyup="handleKeyup"
-        @focus="handleInputFocus"
-        @blur="handleBlur"
-        autoFocus
-      />
+      <input ref="inputEl" class="absolute h-full w-full opacity-0" type="text" v-model="inputValue" @keyup="handleKeyup"
+        @focus="handleInputFocus" @blur="handleBlur" autoFocus />
     </div>
     <div class="mt-12 text-xl dark:text-gray-50">
       {{ courseStore.currentStatement?.chinese || '生存还是毁灭，这是一个问题' }}
@@ -35,6 +27,21 @@ const courseStore = useCourseStore();
 const { userInputWords, activeInputIndex, inputValue } = useInput();
 const { handleKeyup } = registerShortcutKeyForInputEl();
 const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
+
+// 监听 shouldRestoreCursor 状态，决定是否恢复光标位置
+watch(() => courseStore.shouldRestoreCursor, (shouldRestore) => {
+  if (shouldRestore) {
+    nextTick(() => {
+      const position = courseStore.cursorPosition;
+      if (inputEl.value && typeof position === 'number') {
+        inputEl.value.setSelectionRange(position, position);
+        inputEl.value.focus();
+        // 恢复后，重置标志
+        courseStore.resetCursorRestore();
+      }
+    });
+  }
+});
 
 function useInput() {
   const inputValue = ref('');

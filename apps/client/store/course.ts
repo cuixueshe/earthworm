@@ -19,6 +19,10 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
+  // 新增状态：用于保存当前文本框中的光标位置
+  const cursorPosition = ref<number | null>(null);
+  // 新增状态：标志是否需要恢复光标位置
+  const shouldRestoreCursor = ref(false);
 
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
@@ -54,7 +58,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function doAgain() {
-    resetStatementIndex()
+    resetStatementIndex();
   }
 
   function checkCorrect(input: string) {
@@ -66,7 +70,7 @@ export const useCourseStore = defineStore("course", () => {
 
   async function completeCourse(cId: number) {
     const nextCourse = await fetchCompleteCourse(cId);
-    resetStatementIndex()
+    resetStatementIndex();
     return nextCourse;
   }
 
@@ -76,9 +80,20 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex.value = loadProgress(courseId);
   }
 
-
-  function resetStatementIndex () {
-    statementIndex.value = 0
+  function resetStatementIndex() {
+    statementIndex.value = 0;
+  }
+// 新增方法：保存光标位置
+  function saveCursorPosition(position: number) {
+    cursorPosition.value = position;
+  }
+// 新增方法：触发光标位置恢复的标志
+  function triggerCursorRestore() {
+    shouldRestoreCursor.value = true;
+  }
+// 新增方法：重置光标位置恢复的标志
+  function resetCursorRestore() {
+    shouldRestoreCursor.value = false;
   }
 
   return {
@@ -94,7 +109,12 @@ export const useCourseStore = defineStore("course", () => {
     completeCourse,
     toNextStatement,
     cleanProgress,
-    resetStatementIndex
+    resetStatementIndex,
+    cursorPosition,
+    shouldRestoreCursor,
+    saveCursorPosition,
+    triggerCursorRestore,
+    resetCursorRestore,
   };
 });
 

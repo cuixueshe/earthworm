@@ -17,7 +17,8 @@ import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from '~/composables/main/englishSound';
 import { useSummary } from '~/composables/main/summary';
 
-
+import { useCourseStore } from '~/store/course';
+const courseStore = useCourseStore();
 const { handlePlaySound } = usePlaySound()
 const { handleShowAnswer } = useShowAnswer()
 
@@ -25,6 +26,23 @@ const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode()
   return isAnswer() ? "question" : "answer";
 })
+
+//防止默认行为
+const preventDefaultCtrlP = (event: any) => {
+  if (event.ctrlKey && event.key === 'p') {
+    event.preventDefault();
+  }
+};
+
+
+onMounted(() => {
+  window.addEventListener('keydown', preventDefaultCtrlP);
+});
+
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', preventDefaultCtrlP);
+});
 
 function usePlaySound() {
   const { playSound } = useCurrentStatementEnglishSound();
@@ -38,9 +56,20 @@ function usePlaySound() {
   });
 
   function handlePlaySound() {
-    playSound()
-  }
+    // 播放声音前保存当前的光标位置
+    const inputElement = document.querySelector('input[type="text"]');
+    if (inputElement instanceof HTMLInputElement) {
+      const selectionStart = inputElement.selectionStart;
+      if (typeof selectionStart === 'number') {
+        courseStore.saveCursorPosition(selectionStart);
+      }
+    }
 
+    playSound();
+
+    // 播放声音后恢复光标位置
+    courseStore.triggerCursorRestore();
+  }
   return {
     handlePlaySound
   }
