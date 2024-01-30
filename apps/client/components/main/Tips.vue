@@ -5,8 +5,8 @@
       <span class="ml-2">play sound</span>
     </div>
     <div class="w-[210px]">
-      <button class="tip-btn" @click="toggleGameMode">⌃ Ctrl+n</button>
-      <span class="ml-2">show {{ toggleTipText }}</span>
+      <button class="tip-btn" @click="toggleGameMode">⌃ Ctrl+'</button>
+      <span class="ml-2">{{ toggleTipText }}</span>
     </div>
   </div>
 </template>
@@ -22,7 +22,7 @@ const { toggleGameMode } = useShowAnswer();
 
 const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
-  return isAnswer() ? "question" : "answer";
+  return isAnswer() ? "again" : "show answer";
 });
 
 function usePlaySound() {
@@ -50,11 +50,11 @@ function useShowAnswer() {
   const { showAnswer, showQuestion } = useGameMode();
 
   onMounted(() => {
-    registerShortcut("ctrl+n", handleShowAnswer);
+    registerShortcut("ctrl+'", handleShowAnswer);
   });
 
   onUnmounted(() => {
-    cancelShortcut("ctrl+n", handleShowAnswer);
+    cancelShortcut("ctrl+'", handleShowAnswer);
   });
 
   function handleShowAnswer(e: KeyboardEvent) {
