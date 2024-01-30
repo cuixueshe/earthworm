@@ -54,7 +54,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function doAgain() {
-    resetStatementIndex()
+    resetStatementIndex();
   }
 
   function checkCorrect(input: string) {
@@ -66,7 +66,9 @@ export const useCourseStore = defineStore("course", () => {
 
   async function completeCourse(cId: number) {
     const nextCourse = await fetchCompleteCourse(cId);
-    resetStatementIndex()
+    // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
+    // 当完成课程的时候并不希望 UI 立刻被重置
+    saveProgress(currentCourse.value?.id!, 0);
     return nextCourse;
   }
 
@@ -76,9 +78,8 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex.value = loadProgress(courseId);
   }
 
-
-  function resetStatementIndex () {
-    statementIndex.value = 0
+  function resetStatementIndex() {
+    statementIndex.value = 0;
   }
 
   return {
@@ -94,7 +95,7 @@ export const useCourseStore = defineStore("course", () => {
     completeCourse,
     toNextStatement,
     cleanProgress,
-    resetStatementIndex
+    resetStatementIndex,
   };
 });
 

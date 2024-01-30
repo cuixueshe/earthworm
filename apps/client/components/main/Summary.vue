@@ -55,10 +55,16 @@ const { confettiCanvasRef, playConfetti } = useConfetti();
 
 watch(showModal, (val) => {
   val && setTimeout(async () => {
-    await completeCourse();
+    completeCourse();
     playConfetti()
   }, 300);
+
+  if(!val){
+    courseStore.resetStatementIndex()
+  }
 })
+
+
 
 async function completeCourse() {
   const userStore = useUserStore();
