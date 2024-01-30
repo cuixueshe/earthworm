@@ -33,3 +33,11 @@ const theme = computed(() => {
   return darkMode.value === Theme.DARK ? darkTheme : lightTheme
 })
 </script>
+
+
+<style>
+#jfToolbar,
+.mod-json {
+  display: none !important;
+}
+</style>
