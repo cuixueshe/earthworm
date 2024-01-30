@@ -1,11 +1,11 @@
 <template>
   <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
     <div class="w-[210px] mb-4">
-      <button class="tip-btn" @click="handlePlaySound">⌃ Ctrl+;</button>
+      <button class="tip-btn" @click="playSound">⌃ Ctrl+;</button>
       <span class="ml-2">play sound</span>
     </div>
     <div class="w-[210px]">
-      <button class="tip-btn" @click="handleShowAnswer">⌃ Ctrl+n</button>
+      <button class="tip-btn" @click="toggleGameMode">⌃ Ctrl+n</button>
       <span class="ml-2">show {{ toggleTipText }}</span>
     </div>
   </div>
@@ -17,8 +17,8 @@ import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
 
-const { handlePlaySound } = usePlaySound();
-const { handleShowAnswer } = useShowAnswer();
+const { playSound } = usePlaySound();
+const { toggleGameMode } = useShowAnswer();
 
 const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
@@ -29,20 +29,20 @@ function usePlaySound() {
   const { playSound } = useCurrentStatementEnglishSound();
 
   onMounted(() => {
-    registerShortcut("ctrl+;", handlePlaySound);
+    registerShortcut("ctrl+;", playSoundCommand);
   });
 
   onUnmounted(() => {
-    cancelShortcut("ctrl+;", handlePlaySound);
+    cancelShortcut("ctrl+;", playSoundCommand);
   });
 
-  function handlePlaySound(e: KeyboardEvent) {
+  function playSoundCommand(e: KeyboardEvent) {
     e.preventDefault();
     playSound();
   }
 
   return {
-    handlePlaySound,
+    playSound,
   };
 }
 
@@ -59,6 +59,10 @@ function useShowAnswer() {
 
   function handleShowAnswer(e: KeyboardEvent) {
     e.preventDefault();
+    toggleGameMode();
+  }
+
+  function toggleGameMode() {
     // NOTE: registerShortcut 事件会记住注册时的面板状态，所以这里要重新获取下面板信息
     const { isAnswer } = useGameMode();
     const { showModal } = useSummary();
@@ -74,7 +78,7 @@ function useShowAnswer() {
   }
 
   return {
-    handleShowAnswer,
+    toggleGameMode
   };
 }
 </script>
