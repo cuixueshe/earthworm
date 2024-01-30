@@ -29,7 +29,7 @@
       </n-form>
 
       <p className="mt-10 text-center text-sm text-gray-500">
-        Not a account?
+        Not an account?
         <NuxtLink
           href="/auth/signup"
           className="font-semibold text-[1.2em] leading-6 text-fuchsia-500 hover:text-fuchsia-400"
