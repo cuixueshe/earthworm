@@ -2,7 +2,7 @@
 interface Shortcut {
   key: string;
   ctrlKey: boolean;
-  command: Function;
+  command: (keyboardEvent: KeyboardEvent) => void;
 }
 
 const shortcuts: Shortcut[] = [];
@@ -11,7 +11,7 @@ window.addEventListener("keyup", (e: KeyboardEvent) => {
   const shortcut = findMatchingShortcut(e);
 
   if (shortcut) {
-    shortcut.command();
+    shortcut.command(e);
   }
 });
 
@@ -35,7 +35,7 @@ function parseKey(keyString: string) {
   return result;
 }
 
-export function registerShortcut(key: string, command: Function) {
+export function registerShortcut(key: string, command: Shortcut["command"]) {
   const shortcut = createShortcut(key, command);
 
   shortcuts.push(shortcut);
@@ -43,7 +43,7 @@ export function registerShortcut(key: string, command: Function) {
   return shortcut;
 }
 
-function createShortcut(key: string, command: Function): Shortcut {
+function createShortcut(key: string, command: Shortcut["command"]): Shortcut {
   return {
     ...parseKey(key),
     command,
@@ -55,7 +55,7 @@ export function cancelShortcut(shortcut: Shortcut): void;
 export function cancelShortcut(
   keyOrShortcut: string | Shortcut,
   command?: Function
-){
+) {
   if (typeof keyOrShortcut === "string") {
     const matchingShortcut = shortcuts.find((shortcut) => {
       return shortcut.key === keyOrShortcut && shortcut.command === command;
