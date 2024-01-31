@@ -59,7 +59,7 @@ watch(showModal, (val) => {
     playConfetti()
   }, 300);
 
-  if(!val){
+  if (!val) {
     courseStore.resetStatementIndex()
   }
 })
@@ -128,8 +128,8 @@ function useGoToNextCourse() {
       showAuthRequireModal();
       return;
     }
+
     router.push(`/main/${nextCourseId}`);
-    showQuestion();
     hideSummary()
   }
 
