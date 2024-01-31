@@ -1,33 +1,41 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import {course as courseSchema, statement} from '@shared/schema'
-import { db } from './db';
-
+import fs from "node:fs";
+import { eq } from "drizzle-orm";
+import path from "node:path";
+import { course as courseSchema } from "@shared/schema";
+import { db } from "./db";
 
 const loadCourses = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "./loadCourses.json"), "utf-8")
 );
 
 (async function () {
-
-  // 先删除所有的 courses
-  await db.delete(statement)
-  await db.delete(courseSchema)
-
-
   const result = [];
 
   for (const course of loadCourses) {
-    const [response] = await db.insert(courseSchema).values({
-      title: course.title,
-    })
+    const existingCourses = await db
+      .select()
+      .from(courseSchema)
+      .where(eq(courseSchema.title, course.title));
 
+    const existingCourse = existingCourses?.[0];
 
-    result.push({
-      title: course.title,
-      fileName: course.fileName,
-      cId: response.insertId,
-    });
+    if (existingCourse) {
+      result.push({
+        title: existingCourse.title,
+        fileName: course.fileName,
+        cId: existingCourse.id,
+      });
+    } else {
+      const [response] = await db.insert(courseSchema).values({
+        title: course.title,
+      });
+      console.log("新创建:", course.title)
+      result.push({
+        title: course.title,
+        fileName: course.fileName,
+        cId: response.insertId,
+      });
+    }
   }
 
   fs.writeFileSync(

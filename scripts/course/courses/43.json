@@ -1,0 +1,667 @@
+[
+	{
+		"chinese": "清洗",
+		"english": "to wash",
+		"soundmark": "/tə/ /wɑʃ/"
+	},
+	{
+		"chinese": "清洗(ing形式)",
+		"english": "washing",
+		"soundmark": "/'wɑʃɪŋ/"
+	},
+	{
+		"chinese": "正在清洗",
+		"english": "be washing",
+		"soundmark": "/bi/ /'wɑʃɪŋ/"
+	},
+	{
+		"chinese": "我(现在)正在清洗",
+		"english": "I am washing",
+		"soundmark": "/aɪ/ /æm/ /'wɑʃɪŋ/"
+	},
+	{
+		"chinese": "我的车",
+		"english": "my car",
+		"soundmark": "/maɪ/ /kɑr/"
+	},
+	{
+		"chinese": "我(现在)正在清洗我的车",
+		"english": "I am washing my car",
+		"soundmark": "/aɪ/ /æm/ /'wɑʃɪŋ/ /maɪ/ /kɑr/"
+	},
+	{
+		"chinese": "正在清洗",
+		"english": "be washing",
+		"soundmark": "/bi/ /'wɑʃɪŋ/"
+	},
+	{
+		"chinese": "清洗(ed形式)",
+		"english": "washed",
+		"soundmark": "/wɑʃt/"
+	},
+	{
+		"chinese": "被清洗了",
+		"english": "be washed",
+		"soundmark": "/bi/ /wɑʃt/"
+	},
+	{
+		"chinese": "我的车",
+		"english": "my car",
+		"soundmark": "/maɪ/ /kɑr/"
+	},
+	{
+		"chinese": "我的车被清洗了",
+		"english": "my car is washed",
+		"soundmark": "/maɪ/ /kɑr/ /ɪz/ /wɑʃt/ /(已经)洗完了 have washed/ /hæv/ /wɑʃt/"
+	},
+	{
+		"chinese": "我(已经)洗完了我的车",
+		"english": "I have washed my car",
+		"soundmark": "/aɪ/ /hæv/ /wɑʃt/ /maɪ/ /kɑr/"
+	},
+	{
+		"chinese": "手",
+		"english": "hand",
+		"soundmark": "/hænd/"
+	},
+	{
+		"chinese": "我(已经)洗完了我的手",
+		"english": "I have washed my hands",
+		"soundmark": "/aɪ/ /hæv/ /wɑʃt/ /maɪ/ /hændz/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "完成(ed形式)",
+		"english": "finished",
+		"soundmark": "/'fɪnɪʃt/"
+	},
+	{
+		"chinese": "我(已经)完成了",
+		"english": "I have finished",
+		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "家庭作业",
+		"english": "homework",
+		"soundmark": "/'homwɝk/"
+	},
+	{
+		"chinese": "我的家庭作业",
+		"english": "my homework",
+		"soundmark": "/maɪ/ /'homwɝk/"
+	},
+	{
+		"chinese": "我(已经)完成了我的家庭作业",
+		"english": "I have finished my homework",
+		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/ /maɪ/ /'homwɝk/"
+	},
+	{
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"chinese": "我们(已经)完成了",
+		"english": "we have finished",
+		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "项目",
+		"english": "project",
+		"soundmark": "/ˈprɑdʒɛkt/"
+	},
+	{
+		"chinese": "我们的项目",
+		"english": "our project",
+		"soundmark": "/'aʊɚ/ /ˈprɑdʒɛkt/"
+	},
+	{
+		"chinese": "我们(已经)完成了我们的项目",
+		"english": "we have finished our project",
+		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/ /'aʊɚ/ /ˈprɑdʒɛkt/"
+	},
+	{
+		"chinese": "去",
+		"english": "to go",
+		"soundmark": "/tə/ /ɡo/"
+	},
+	{
+		"chinese": "公园",
+		"english": "the park",
+		"soundmark": "/ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "去公园",
+		"english": "to go to the park",
+		"soundmark": "/tə/ /ɡo/ /tə/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "去(ed形式)",
+		"english": "gone",
+		"soundmark": "/ɡɔn/ /(已经)去了 have gone/ /hæv/ /ɡɔn/"
+	},
+	{
+		"chinese": "他们(已经)去了",
+		"english": "they have gone",
+		"soundmark": "/ðe/ /hæv/ /ɡɔn/"
+	},
+	{
+		"chinese": "他们(已经)去了公园",
+		"english": "they have gone to the park",
+		"soundmark": "/ðe/ /hæv/ /ɡɔn/ /tə/ /ðə/ /pɑrk/"
+	},
+	{
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "读(ed形式)",
+		"english": "read",
+		"soundmark": "/rɛd/ /(已经)读过 have read/ /hæv/ /rɛd/"
+	},
+	{
+		"chinese": "我(已经)读过",
+		"english": "I have read",
+		"soundmark": "/aɪ/ /hæv/ /rɛd/"
+	},
+	{
+		"chinese": "那本书",
+		"english": "that book",
+		"soundmark": "/ðæt/ /bʊk/"
+	},
+	{
+		"chinese": "我(已经)读过那本书",
+		"english": "I have read that book",
+		"soundmark": "/aɪ/ /hæv/ /rɛd/ /ðæt/ /bʊk/"
+	},
+	{
+		"chinese": "次",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "两次",
+		"english": "two times",
+		"soundmark": "/tu/ /taɪmz/"
+	},
+	{
+		"chinese": "两次",
+		"english": "twice",
+		"soundmark": "/twaɪs/"
+	},
+	{
+		"chinese": "我(已经)读过那本书两次了",
+		"english": "I have read that book twice",
+		"soundmark": "/aɪ/ /hæv/ /rɛd/ /ðæt/ /bʊk/ /twaɪs/"
+	},
+	{
+		"chinese": "学到",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɝn/"
+	},
+	{
+		"chinese": "学到(ed形式)",
+		"english": "learned",
+		"soundmark": "/lɝnd/ /(已经)学到了 have learned/ /hæv/ /lɝnd/"
+	},
+	{
+		"chinese": "我(已经)学到了",
+		"english": "I have learned",
+		"soundmark": "/aɪ/ /hæv/ /lɝnd/"
+	},
+	{
+		"chinese": "大量的",
+		"english": "lot",
+		"soundmark": "/lɑt/"
+	},
+	{
+		"chinese": "很多",
+		"english": "a lot",
+		"soundmark": "/ə/ /lɑt/"
+	},
+	{
+		"chinese": "我(已经)学到了很多",
+		"english": "I have learned a lot",
+		"soundmark": "/aɪ/ /hæv/ /lɝnd/ /ə/ /lɑt/"
+	},
+	{
+		"chinese": "课程",
+		"english": "course",
+		"soundmark": "/kɔrs/"
+	},
+	{
+		"chinese": "这个课程",
+		"english": "this course",
+		"soundmark": "/ðɪs/ /kɔrs/"
+	},
+	{
+		"chinese": "从",
+		"english": "from",
+		"soundmark": "/frʌm/"
+	},
+	{
+		"chinese": "从这个课程",
+		"english": "from this course",
+		"soundmark": "/frʌm/ /ðɪs/ /kɔrs/"
+	},
+	{
+		"chinese": "我从这个课程(已经)学到了很多",
+		"english": "I have learned a lot from this course",
+		"soundmark": "/aɪ/ /hæv/ /lɝnd/ /ə/ /lɑt/ /frʌm/ /ðɪs/ /kɔrs/"
+	},
+	{
+		"chinese": "提高",
+		"english": "to improve",
+		"soundmark": "/tə/ /ɪmˈpruv/"
+	},
+	{
+		"chinese": "提高(ed形式)",
+		"english": "improved",
+		"soundmark": "/ɪmˈpruvd/ /(已经)提高了 have improved/ /hæv/ /ɪmˈpruvd/"
+	},
+	{
+		"chinese": "你(已经)提高了",
+		"english": "you have improved",
+		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/"
+	},
+	{
+		"chinese": "英文",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "你的英文",
+		"english": "your English",
+		"soundmark": "/jʊr/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "你(已经)提高了你的英文",
+		"english": "you have improved your English",
+		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/ /jʊr/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "大量的",
+		"english": "lot",
+		"soundmark": "/lɑt/"
+	},
+	{
+		"chinese": "很多",
+		"english": "a lot",
+		"soundmark": "/ə/ /lɑt/"
+	},
+	{
+		"chinese": "你(已经)提高了你的英文很多",
+		"english": "you have improved your English a lot",
+		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/ /jʊr/ /ˈɪŋɡlɪʃ/ /ə/ /lɑt/"
+	},
+	{
+		"chinese": "参观",
+		"english": "to visit",
+		"soundmark": "/tə/ /'vɪzɪt/"
+	},
+	{
+		"chinese": "参观(ed形式)",
+		"english": "visited",
+		"soundmark": "/'vɪzɪtɪd/ /(已经)参观过 have visited/ /hæv/ /'vɪzɪtɪd/"
+	},
+	{
+		"chinese": "我(已经)参观过",
+		"english": "I have visited",
+		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/"
+	},
+	{
+		"chinese": "墙",
+		"english": "wall",
+		"soundmark": "/wɔl/"
+	},
+	{
+		"chinese": "伟大的",
+		"english": "great",
+		"soundmark": "/ɡret/"
+	},
+	{
+		"chinese": "长城",
+		"english": "The Great Wall",
+		"soundmark": "/ðə/ /ɡret/ /wɔl/"
+	},
+	{
+		"chinese": "我(已经)参观过长城",
+		"english": "I have visited The Great Wall",
+		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/ /ðə/ /ɡret/ /wɔl/"
+	},
+	{
+		"chinese": "两次",
+		"english": "twice",
+		"soundmark": "/twaɪs/"
+	},
+	{
+		"chinese": "我(已经)参观过长城两次了",
+		"english": "I have visited the Great Wall twice",
+		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/ /ðə/ /ɡret/ /wɔl/ /twaɪs/"
+	},
+	{
+		"chinese": "写",
+		"english": "to write",
+		"soundmark": "/raɪt/"
+	},
+	{
+		"chinese": "写(ed形式)",
+		"english": "written",
+		"soundmark": "/'rɪtn/"
+	},
+	{
+		"chinese": "我(已经)写了",
+		"english": "I have written",
+		"soundmark": "/aɪ/ /hæv/ /'rɪtn/"
+	},
+	{
+		"chinese": "书",
+		"english": "book",
+		"soundmark": "/bʊk/"
+	},
+	{
+		"chinese": "三本书",
+		"english": "three books",
+		"soundmark": "/θri/ /bʊks/"
+	},
+	{
+		"chinese": "我(已经)写了三本书",
+		"english": "I have written three books",
+		"soundmark": "/aɪ/ /hæv/ /'rɪtn/ /θri/ /bʊks/"
+	},
+	{
+		"chinese": "职业生涯",
+		"english": "career",
+		"soundmark": "/kəˈrɪr/"
+	},
+	{
+		"chinese": "我的职业生涯",
+		"english": "my career",
+		"soundmark": "/maɪ/ /kəˈrɪr/"
+	},
+	{
+		"chinese": "在我的职业生涯里",
+		"english": "in my career",
+		"soundmark": "/ɪn/ /maɪ/ /kəˈrɪr/"
+	},
+	{
+		"chinese": "我在我的职业生涯里(已经)写了三本书",
+		"english": "I have written three books in my career",
+		"soundmark": "/aɪ/ /hæv/ /'rɪtn/ /θri/ /bʊks/ /ɪn/ /maɪ/ /kəˈrɪr/"
+	},
+	{
+		"chinese": "教",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
+	},
+	{
+		"chinese": "教(ed形式)",
+		"english": "taught",
+		"soundmark": "/tɔt/ /(已经)教 have taught/ /hæv/ /tɔt/"
+	},
+	{
+		"chinese": "我(已经)教了",
+		"english": "I have taught",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/"
+	},
+	{
+		"chinese": "我(已经)教了你",
+		"english": "I have taught you",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/ /ju/"
+	},
+	{
+		"chinese": "每一个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
+	},
+	{
+		"chinese": "东西",
+		"english": "thing",
+		"soundmark": "/θɪŋ/"
+	},
+	{
+		"chinese": "一切",
+		"english": "everything",
+		"soundmark": "/'ɛvriθɪŋ/"
+	},
+	{
+		"chinese": "我知道",
+		"english": "I know",
+		"soundmark": "/aɪ/ /no/"
+	},
+	{
+		"chinese": "我知道的一切",
+		"english": "everything I know",
+		"soundmark": "/'ɛvriθɪŋ/ /aɪ/ /no/"
+	},
+	{
+		"chinese": "我(已经)教了你我知道的一切",
+		"english": "I have taught you everything I know",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/ /ju/ /'ɛvriθɪŋ/ /aɪ/ /no/"
+	},
+	{
+		"chinese": "我(已经)教了",
+		"english": "I have taught",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/"
+	},
+	{
+		"chinese": "我自己",
+		"english": "myself",
+		"soundmark": "/maɪ'sɛlf/"
+	},
+	{
+		"chinese": "我(已经)教了我自己",
+		"english": "I have taught myself",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/"
+	},
+	{
+		"chinese": "玩",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
+	},
+	{
+		"chinese": "钢琴",
+		"english": "the piano",
+		"soundmark": "/ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "弹钢琴",
+		"english": "to play the piano",
+		"soundmark": "/tə/ /ple/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"chinese": "如何弹钢琴",
+		"english": "how to play the piano",
+		"soundmark": "/haʊ/ /tə/ /ple/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "我(已经)自学了",
+		"english": "I have taught myself",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/"
+	},
+	{
+		"chinese": "我(已经)自学了如何弹钢琴",
+		"english": "I have taught myself how to play the piano",
+		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/ /haʊ/ /tə/ /ple/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "居住",
+		"english": "to live",
+		"soundmark": "/tə/ /lɪv/"
+	},
+	{
+		"chinese": "居住(ed形式)",
+		"english": "lived",
+		"soundmark": "/lɪvd/"
+	},
+	{
+		"chinese": "我(已经)居住了",
+		"english": "I have lived",
+		"soundmark": "/aɪ/ /hæv/ /lɪvd/"
+	},
+	{
+		"chinese": "城市",
+		"english": "city",
+		"soundmark": "/'sɪti/"
+	},
+	{
+		"chinese": "这个",
+		"english": "this city",
+		"soundmark": "/ðɪs/ /'sɪti/"
+	},
+	{
+		"chinese": "在这个城市里",
+		"english": "in this city",
+		"soundmark": "/ɪn/ /ðɪs/ /'sɪti/"
+	},
+	{
+		"chinese": "我(已经)在这个城市里居住了",
+		"english": "I have lived in this city",
+		"soundmark": "/aɪ/ /hæv/ /lɪvd/ /ɪn/ /ðɪs/ /'sɪti/"
+	},
+	{
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
+	},
+	{
+		"chinese": "五年",
+		"english": "five years",
+		"soundmark": "/faɪv/ /jɪrz/"
+	},
+	{
+		"chinese": "我(已经)在这个城市里居住了五年了",
+		"english": "I have lived in this city for five years",
+		"soundmark": "/aɪ/ /hæv/ /lɪvd/ /ɪn/ /ðɪs/ /'sɪti/ /fɚ/ /faɪv/ /jɪrz/"
+	},
+	{
+		"chinese": "工作",
+		"english": "to work",
+		"soundmark": "/tə/ /wɝk/"
+	},
+	{
+		"chinese": "工作(ed形式)",
+		"english": "worked",
+		"soundmark": "/wɝkt/"
+	},
+	{
+		"chinese": "我(已经)工作了",
+		"english": "I have worked",
+		"soundmark": "/aɪ/ /hæv/ /wɝkt/"
+	},
+	{
+		"chinese": "公司",
+		"english": "company",
+		"soundmark": "/ˈkʌmpəni/"
+	},
+	{
+		"chinese": "那个公司",
+		"english": "that company",
+		"soundmark": "/ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "在那个公司",
+		"english": "at that company",
+		"soundmark": "/ət/ /ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "我(已经)在那个公司工作了",
+		"english": "I have worked at that company",
+		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
+	},
+	{
+		"chinese": "三年",
+		"english": "three years",
+		"soundmark": "/θri/ /jɪrz/"
+	},
+	{
+		"chinese": "我(已经)在那个公司工作了三年了",
+		"english": "I have worked at that company for three years",
+		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/ /fɚ/ /θri/ /jɪrz/"
+	},
+	{
+		"chinese": "自从......以来",
+		"english": "since",
+		"soundmark": "/sɪns/ /twenty twenty/ /'twɛnti/ /'twɛnti/"
+	},
+	{
+		"chinese": "自从2020年以来",
+		"english": "since 2020",
+		"soundmark": "/sɪns/ /'twɛnti/ /'twɛnti/"
+	},
+	{
+		"chinese": "我自从2020年以来(已经)在那个公司工作了",
+		"english": "I have worked at that company since 2020",
+		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/ /sɪns/ /'twɛnti/ /'twɛnti/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to study",
+		"soundmark": "/tə/ /'stʌdi/"
+	},
+	{
+		"chinese": "学习(ed形式)",
+		"english": "studied",
+		"soundmark": "/ˈstʌdid/"
+	},
+	{
+		"chinese": "我们(已经)学习了",
+		"english": "we have studied",
+		"soundmark": "/wi/ /hæv/ /ˈstʌdid/"
+	},
+	{
+		"chinese": "英文",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "我们(已经)学习了英文",
+		"english": "we have studied English",
+		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
+	},
+	{
+		"chinese": "三年",
+		"english": "three years",
+		"soundmark": "/θri/ /jɪrz/"
+	},
+	{
+		"chinese": "我们(已经)学习了英文三年了",
+		"english": "we have studied English for three years",
+		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/ /fɚ/ /θri/ /jɪrz/"
+	},
+	{
+		"chinese": "自从......以来",
+		"english": "since",
+		"soundmark": "/sɪns/ /twenty twenty/ /'twɛnti/ /'twɛnti/"
+	},
+	{
+		"chinese": "自从2020年以来",
+		"english": "since 2020",
+		"soundmark": "/sɪns/ /'twɛnti/ /'twɛnti/"
+	},
+	{
+		"chinese": "我们自从2020年以来(已经)学习英文了",
+		"english": "we have studied English since",
+		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/ /sɪns/ /'twɛnti/ /'twɛnti/"
+	}
+]
