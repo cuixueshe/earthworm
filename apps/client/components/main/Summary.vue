@@ -19,7 +19,7 @@
             </div>
             <span class="text-6xl font-bold">"</span>
           </div>
-          <p class="text-3 text-right text-gray-200"> —— 金山词霸「每日一句」</p>
+          <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
         </div>
         <div className="modal-action">
           <button class="btn" @click="handleDoAgain">再来一次</button>
@@ -33,14 +33,16 @@
 
 <script setup lang="ts">
 import confetti from "canvas-confetti";
+import { watch, ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { useUserStore } from "~/store/user";
-import { useCourseStore, type Course } from "~/store/course";
-import { useSummary, useDailySentence } from "~/composables/main/summary";
+import { useCourseStore } from "~/store/course";
+import { useActiveCourseId } from '~/store/course';
 import { useGameMode } from "~/composables/main/game";
 import { useAuthRequire } from "~/composables/main/authRequire";
-import { useActiveCourseId } from '~/store/course';
+import { useSummary, useDailySentence } from "~/composables/main/summary";
 
-let nextCourseId = 1
+let nextCourseId = 1;
 const courseStore = useCourseStore();
 const { handleDoAgain } = useDoAgain();
 const { handleGoToNextCourse } = useGoToNextCourse();
@@ -49,13 +51,14 @@ const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 
 watch(showModal, (val) => {
-  val && setTimeout(async () => {
-    completeCourse();
-    playConfetti()
-  }, 300);
+  val &&
+    setTimeout(async () => {
+      completeCourse();
+      playConfetti();
+    }, 300);
 
   if (!val) {
-    courseStore.resetStatementIndex()
+    courseStore.resetStatementIndex();
   }
 })
 
@@ -73,7 +76,7 @@ function useDoAgain() {
 
   function handleDoAgain() {
     courseStore.doAgain();
-    hideSummary()
+    hideSummary();
     showQuestion();
   }
 

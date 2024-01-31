@@ -1,5 +1,6 @@
-import { ref } from "vue";
-import { fetchCompleteCourse, fetchCourse } from "~/api/course";
+import { computed, ref, watchEffect, watch } from 'vue';
+import { defineStore } from 'pinia';
+import { fetchCompleteCourse, fetchCourse } from '~/api/course';
 
 interface Statement {
   id: number;
@@ -14,7 +15,7 @@ export interface Course {
   statements: Statement[];
 }
 
-export const useCourseStore = defineStore("course", () => {
+export const useCourseStore = defineStore('course', () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
@@ -22,19 +23,18 @@ export const useCourseStore = defineStore("course", () => {
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
-    currentStatement.value =
-      currentCourse.value?.statements[statementIndex.value];
+    currentStatement.value = currentCourse.value?.statements[statementIndex.value];
   });
 
   watch(
     () => statementIndex.value,
     () => {
       saveProgress(currentCourse.value?.id!, statementIndex.value);
-    }
+    },
   );
 
   const wordCount = computed(() => {
-    return currentStatement.value?.english.split(" ").length || 1;
+    return currentStatement.value?.english.split(' ').length || 1;
   });
 
   const totalQuestionsCount = computed(() => {
@@ -57,10 +57,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function checkCorrect(input: string) {
-    return (
-      input.toLocaleLowerCase() ===
-      currentStatement.value?.english.toLocaleLowerCase()
-    );
+    return input.toLocaleLowerCase() === currentStatement.value?.english.toLocaleLowerCase();
   }
 
   async function completeCourse(cId: number) {
@@ -98,7 +95,7 @@ export const useCourseStore = defineStore("course", () => {
   };
 });
 
-const COURSE_PROGRESS = "courseProgress";
+const COURSE_PROGRESS = 'courseProgress';
 function useCourseProgress() {
   function saveProgress(courseId: number, index: number) {
     const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
@@ -122,18 +119,18 @@ function useCourseProgress() {
   };
 }
 
-const ACTIVE_COURSE_ID = "activeCourseId";
-export function useActiveCourseId () {
-  function getCourseId () {
+const ACTIVE_COURSE_ID = 'activeCourseId';
+export function useActiveCourseId() {
+  function getCourseId() {
     return Number(localStorage.getItem(ACTIVE_COURSE_ID));
   }
 
-  function updateCourseId (courseId: number) {
+  function updateCourseId(courseId: number) {
     localStorage.setItem(ACTIVE_COURSE_ID, String(courseId));
   }
 
   return {
     getCourseId,
     updateCourseId,
-  }
+  };
 }

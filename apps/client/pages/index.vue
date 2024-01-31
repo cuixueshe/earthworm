@@ -66,9 +66,12 @@
 
 <script setup lang="ts">
 import Loading from '~/components/Loading.vue'
-import { startGame } from '~/composables/main/game';
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
+import { ref } from 'vue';
+import { onMounted, onUnmounted } from "vue";
+import { useRouter } from "vue-router";
 import { useActiveCourseId } from '~/store/course';
+import { startGame } from "~/composables/main/game";
+import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
 const isLoading = ref(false)
 const { handleKeydown } = useShortcutToGame();

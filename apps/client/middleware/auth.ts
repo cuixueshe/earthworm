@@ -1,3 +1,4 @@
+import { defineNuxtRouteMiddleware, navigateTo } from "nuxt/app";
 import { useUserStore } from "~/store/user"
 
 export default defineNuxtRouteMiddleware((to, from) => {
