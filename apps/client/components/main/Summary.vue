@@ -26,33 +26,27 @@
           <button class="btn" @click="handleGoToNextCourse">开始下一课</button>
         </div>
       </div>
-      <canvas
-        ref="confettiCanvasRef"
-        class="absolute top-0 left-0 h-full w-full pointer-events-none"
-      ></canvas>
+      <canvas ref="confettiCanvasRef" class="absolute top-0 left-0 h-full w-full pointer-events-none"></canvas>
     </dialog>
   </div>
 </template>
 
 <script setup lang="ts">
+import confetti from "canvas-confetti";
+import { useUserStore } from "~/store/user";
 import { useCourseStore } from "~/store/course";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
-import confetti from "canvas-confetti";
 import { useAuthRequire } from "~/composables/main/authRequire";
-import { useUserStore } from "~/store/user";
-import { watch, ref } from "vue";
-import { useRouter } from "vue-router";
+import { watch, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
-
 const { handleDoAgain } = useDoAgain();
 const { handleGoToNextCourse } = useGoToNextCourse();
-
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
-
 const { confettiCanvasRef, playConfetti } = useConfetti();
 
 watch(showModal, (val) => {
@@ -65,7 +59,7 @@ watch(showModal, (val) => {
   if (!val) {
     courseStore.resetStatementIndex();
   }
-});
+})
 
 async function completeCourse() {
   const userStore = useUserStore();
@@ -118,19 +112,18 @@ function useConfetti() {
 
 function useGoToNextCourse() {
   const router = useRouter();
+  const userStore = useUserStore();
   const { showAuthRequireModal } = useAuthRequire();
 
-  const userStore = useUserStore();
-
   async function handleGoToNextCourse() {
+    // 无论后续如何处理，都需要先隐藏 Summary 页面
+    hideSummary()
+
     if (!userStore.user) {
-      hideSummary();
       showAuthRequireModal();
       return;
     }
-
     router.push(`/main/${nextCourseId}`);
-    hideSummary();
   }
 
   return {
