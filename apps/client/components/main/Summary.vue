@@ -51,13 +51,15 @@ const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 
 watch(showModal, (val) => {
-  val &&
+  if (val) {
+    // 显示结算面板代表当前课程已经完成
+    completeCourse();
+    // 延迟一小会放彩蛋
     setTimeout(async () => {
-      completeCourse();
       playConfetti();
     }, 300);
-
-  if (!val) {
+  } else {
+    // 从显示状态关闭结算面板
     courseStore.resetStatementIndex();
   }
 })
@@ -68,6 +70,9 @@ async function completeCourse() {
   if (userStore.user && courseStore.currentCourse) {
     const nextCourse = await courseStore.completeCourse(courseStore.currentCourse.id);
     nextCourseId = nextCourse.id
+    // 缓存下一课的课程 id
+    const { updateCourseId } = useActiveCourseId();
+    updateCourseId(nextCourseId)
   }
 }
 
@@ -122,9 +127,6 @@ function useGoToNextCourse() {
       return;
     }
 
-    // 缓存下一课课程 id 并跳转
-    const { updateCourseId } = useActiveCourseId();
-    updateCourseId(nextCourseId)
     router.push(`/main/${nextCourseId}`);
   }
 
