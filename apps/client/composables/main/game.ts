@@ -24,6 +24,9 @@ export function useGameMode() {
   function isQuestion() {
     return gameMode.value === GameMode.Question;
   }
+  function resetGameMode() {
+    gameMode.value = GameMode.Question;
+  }
 
   return {
     gameMode,
@@ -31,6 +34,7 @@ export function useGameMode() {
     isQuestion,
     showAnswer,
     showQuestion,
+    resetGameMode,
   };
 }
 
