@@ -49,7 +49,8 @@ export const useCourseStore = defineStore('course', () => {
   }
 
   function isAllDone() {
-    return statementIndex.value + 1 === currentCourse.value?.statements.length;
+    // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
+    return statementIndex.value + 1 >= currentCourse.value?.statements.length;
   }
 
   function doAgain() {
