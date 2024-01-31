@@ -33,13 +33,14 @@
 
 <script setup lang="ts">
 import confetti from "canvas-confetti";
-import { useUserStore } from "~/store/user";
-import { useCourseStore } from "~/store/course";
-import { useSummary, useDailySentence } from "~/composables/main/summary";
-import { useGameMode } from "~/composables/main/game";
-import { useAuthRequire } from "~/composables/main/authRequire";
 import { watch, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useUserStore } from "~/store/user";
+import { useCourseStore } from "~/store/course";
+import { useActiveCourseId } from '~/store/course';
+import { useGameMode } from "~/composables/main/game";
+import { useAuthRequire } from "~/composables/main/authRequire";
+import { useSummary, useDailySentence } from "~/composables/main/summary";
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
@@ -64,12 +65,9 @@ watch(showModal, (val) => {
 async function completeCourse() {
   const userStore = useUserStore();
 
-  if (userStore.user) {
-    const nextCourse = await courseStore.completeCourse(
-      courseStore.currentCourse.id
-    );
-
-    nextCourseId = nextCourse.id;
+  if (userStore.user && courseStore.currentCourse) {
+    const nextCourse = await courseStore.completeCourse(courseStore.currentCourse.id);
+    nextCourseId = nextCourse.id
   }
 }
 
@@ -118,11 +116,15 @@ function useGoToNextCourse() {
   async function handleGoToNextCourse() {
     // 无论后续如何处理，都需要先隐藏 Summary 页面
     hideSummary()
-
     if (!userStore.user) {
+      // 去注册
       showAuthRequireModal();
       return;
     }
+
+    // 缓存下一课课程 id 并跳转
+    const { updateCourseId } = useActiveCourseId();
+    updateCourseId(nextCourseId)
     router.push(`/main/${nextCourseId}`);
   }
 
