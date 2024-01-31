@@ -51,7 +51,6 @@ const userStore = useUserStore();
 const { setDarkMode, toggleDarkMode } = useDarkMode()
 
 const handleViewUserInfo = () => {
-  console.log(1111)
   navigateTo('/user/info')
 }
 

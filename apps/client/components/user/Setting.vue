@@ -42,94 +42,22 @@
 </template>
 
 <script setup lang="ts">
-let showModal = ref<boolean>(false);
-let currentKeyType = ref<string>("");
-const handleEdit = (type: string) => {
-  showModal.value = true;
-  currentKeyType.value = type;
-};
-const handleCloseDialog = () => {
-  showModal.value = false;
+import { DEFAULT_SHORTCUT_KEYS } from "~/store/user";
+import {
+  useShortcutDialogMode,
+  useShortcutKeyMode,
+} from "~/composables/user/setting.ts";
 
-  shortcutKeyStr.value = "";
-};
+const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
+const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeyData } = useShortcutKeyMode();
 
 let dialogBoxRef = ref<HTMLElement | null>(null);
 document.addEventListener("mouseup", (e) => {
+  if (!showModal.value) return;
   if (!dialogBoxRef.value?.contains(e.target as Node)) {
     handleCloseDialog();
   }
 });
 
-let shortcutKeyData = ref<{ [key: string]: any }>({
-  sound: "",
-  answer: "",
-});
-const setShortcutKeyData = () => {
-  const data = localStorage.getItem("shortcutKeys");
-  shortcutKeyData.value = JSON.parse(data);
-};
-onMounted(() => setShortcutKeyData());
-
-let shortcutKeyStr = ref<string>("");
-const shortcutKeyTip = computed(() => {
-  return shortcutKeyStr.value.trim().replace(/\s/g, " 加上 ");
-});
-
-const saveShortcutKeys = () => {
-  shortcutKeyData.value[currentKeyType.value] = shortcutKeyStr.value.trim();
-  localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeyData.value));
-  handleCloseDialog();
-};
-
-const specialKeys = ["Alt", "Shift", "Ctrl", "Command"];
-const convertCtrlKey = (key: string) => {
-  return key === "Control" ? "Ctrl" : key;
-};
-
-const handleKeyup = (e: KeyboardEvent) => {
-  if (e.key === "Enter") {
-    saveShortcutKeys();
-  }
-
-  // 组合键
-  if (e.altKey || e.shiftKey || e.ctrlKey) {
-    const mainKey =
-      (e.altKey && "Alt") ||
-      (e.shiftKey && "Shift") ||
-      (e.ctrlKey && "Ctrl") ||
-      (e.metaKey && "Command");
-    shortcutKeyStr.value += `${mainKey}+${e.key} `;
-  } else {
-    // 单个键入
-    const key = convertCtrlKey(e.key);
-    if ((shortcutKeyStr.value.includes(key) && specialKeys.includes(key)) || e.key === 'Enter') return;
-    shortcutKeyStr.value += e.key === "Control" ? "Ctrl " : `${e.key} `;
-  }
-};
-
-function throttle(func, delay) {
-  let timeoutId;
-  let lastExecTime = 0;
-
-  return function (...args) {
-    const currentTime = Date.now();
-    const elapsedTime = currentTime - lastExecTime;
-
-    const execute = () => {
-      func.apply(this, args);
-      lastExecTime = currentTime;
-    };
-
-    if (elapsedTime >= delay) {
-      execute();
-    } else {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(execute, delay - elapsedTime);
-    }
-  };
-}
-
-const throttledHandleKeyup = throttle(handleKeyup, 100);
-document.addEventListener("keyup", throttledHandleKeyup);
+document.addEventListener("keyup", handleKeyup);
 </script>

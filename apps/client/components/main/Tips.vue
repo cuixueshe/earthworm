@@ -20,6 +20,7 @@ import { useGameMode } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
+import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
 
 const { shortcutKeys } = setShortcutKey();
 const { playSound } = usePlaySound(shortcutKeys.sound);
@@ -31,10 +32,7 @@ const toggleTipText = computed(() => {
 });
 
 function setShortcutKey() {
-  let shortcutKeys = {
-    sound: "Ctrl+'",
-    answer: "ctrl+;",
-  };
+  let shortcutKeys = DEFAULT_SHORTCUT_KEYS;
   const localKeys = localStorage.getItem("shortcutKeys");
   if (localKeys) {
     shortcutKeys = JSON.parse(localKeys);
