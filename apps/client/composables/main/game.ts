@@ -1,3 +1,4 @@
+import { ref } from "vue";
 import { fetchStartGame } from "~/api/game";
 import { useUserStore } from "~/store/user";
 

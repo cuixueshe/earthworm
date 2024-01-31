@@ -33,7 +33,13 @@
             @keydown.enter.prevent
           />
         </n-form-item>
-        <n-button type="primary" size="large" block @click="handleRegister" class="mt-2">
+        <n-button
+          type="primary"
+          size="large"
+          block
+          @click="handleRegister"
+          class="mt-2"
+        >
           Sign in
         </n-button>
       </n-form>
@@ -53,6 +59,9 @@
 <script setup lang="ts">
 import { type FormInst, type FormRules, type FormItemRule } from "naive-ui";
 import { useAuth } from "~/composables/auth";
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+import { useMessage } from "naive-ui";
 
 interface ModelType {
   name: string | null;

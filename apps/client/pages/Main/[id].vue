@@ -6,23 +6,25 @@
 </template>
 
 <script setup lang="ts">
-import Game from '~/components/main/Game.vue';
-import Tool from '~/components/main/Tool.vue';
+import Game from "~/components/main/Game.vue";
+import Tool from "~/components/main/Tool.vue";
 import { useCourseStore } from "~/store/course";
-import { useGameMode } from '~/composables/main/game';
+import { useGameMode } from "~/composables/main/game";
+import { useRoute } from "vue-router";
+import { definePageMeta } from "#imports";
+import { onMounted } from "vue";
 
 definePageMeta({
-  middleware: 'auth'
-})
+  middleware: "auth",
+});
 
 const route = useRoute();
 const coursesStore = useCourseStore();
-const { showQuestion } = useGameMode()
+const { showQuestion } = useGameMode();
 
-showQuestion()
+showQuestion();
 
 onMounted(async () => {
   await coursesStore.setup(+route.params.id);
-})
-
+});
 </script>

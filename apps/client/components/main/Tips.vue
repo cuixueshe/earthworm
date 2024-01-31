@@ -16,6 +16,7 @@ import { useGameMode } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
+import { onMounted, computed, onUnmounted } from "vue";
 
 const { playSound } = usePlaySound();
 const { toggleGameMode } = useShowAnswer();
@@ -78,7 +79,7 @@ function useShowAnswer() {
   }
 
   return {
-    toggleGameMode
+    toggleGameMode,
   };
 }
 </script>

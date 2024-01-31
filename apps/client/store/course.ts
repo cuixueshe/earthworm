@@ -1,4 +1,5 @@
-import { ref } from "vue";
+import { computed, ref, watchEffect, watch } from "vue";
+import { defineStore } from "pinia";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 
 interface Statement {

@@ -19,29 +19,33 @@
             </div>
             <span class="text-6xl font-bold">"</span>
           </div>
-          <p class="text-3 text-right text-gray-200"> —— 金山词霸「每日一句」</p>
+          <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
         </div>
         <div className="modal-action">
           <button class="btn" @click="handleDoAgain">再来一次</button>
           <button class="btn" @click="handleGoToNextCourse">开始下一课</button>
         </div>
       </div>
-      <canvas ref="confettiCanvasRef" class="absolute top-0 left-0 h-full w-full pointer-events-none"></canvas>
+      <canvas
+        ref="confettiCanvasRef"
+        class="absolute top-0 left-0 h-full w-full pointer-events-none"
+      ></canvas>
     </dialog>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useCourseStore, type Course } from "~/store/course";
+import { useCourseStore } from "~/store/course";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameMode } from "~/composables/main/game";
 import confetti from "canvas-confetti";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useUserStore } from "~/store/user";
+import { watch, ref } from "vue";
+import { useRouter } from "vue-router";
 
-let nextCourseId = 1
+let nextCourseId = 1;
 const courseStore = useCourseStore();
-
 
 const { handleDoAgain } = useDoAgain();
 const { handleGoToNextCourse } = useGoToNextCourse();
@@ -49,22 +53,19 @@ const { handleGoToNextCourse } = useGoToNextCourse();
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 
-
 const { confettiCanvasRef, playConfetti } = useConfetti();
 
-
 watch(showModal, (val) => {
-  val && setTimeout(async () => {
-    completeCourse();
-    playConfetti()
-  }, 300);
+  val &&
+    setTimeout(async () => {
+      completeCourse();
+      playConfetti();
+    }, 300);
 
   if (!val) {
-    courseStore.resetStatementIndex()
+    courseStore.resetStatementIndex();
   }
-})
-
-
+});
 
 async function completeCourse() {
   const userStore = useUserStore();
@@ -74,7 +75,7 @@ async function completeCourse() {
       courseStore.currentCourse.id
     );
 
-    nextCourseId = nextCourse.id
+    nextCourseId = nextCourse.id;
   }
 }
 
@@ -83,7 +84,7 @@ function useDoAgain() {
 
   function handleDoAgain() {
     courseStore.doAgain();
-    hideSummary()
+    hideSummary();
     showQuestion();
   }
 
@@ -116,7 +117,6 @@ function useConfetti() {
 }
 
 function useGoToNextCourse() {
-  const { showQuestion } = useGameMode();
   const router = useRouter();
   const { showAuthRequireModal } = useAuthRequire();
 
@@ -124,13 +124,13 @@ function useGoToNextCourse() {
 
   async function handleGoToNextCourse() {
     if (!userStore.user) {
-      hideSummary()
+      hideSummary();
       showAuthRequireModal();
       return;
     }
 
     router.push(`/main/${nextCourseId}`);
-    hideSummary()
+    hideSummary();
   }
 
   return {
