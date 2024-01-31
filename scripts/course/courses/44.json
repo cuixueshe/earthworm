@@ -1,0 +1,872 @@
+[
+	{
+		"chinese": "解决",
+		"english": "to solve",
+		"soundmark": "/tə/ /sɑlv/"
+	},
+	{
+		"chinese": "解决办法",
+		"english": "solution",
+		"soundmark": "/səˈluʃn/"
+	},
+	{
+		"chinese": "那个问题",
+		"english": "the problem",
+		"soundmark": "/ðə/ /'prɑbləm/"
+	},
+	{
+		"chinese": "那个问题的一个解决办法",
+		"english": "a solution to the problem",
+		"soundmark": "/ə/ /səˈluʃn/ /tə/ /ðə/ /'prɑbləm/"
+	},
+	{
+		"chinese": "找到",
+		"english": "to find",
+		"soundmark": "/tə/ /faɪnd/"
+	},
+	{
+		"chinese": "找到(ed形式)",
+		"english": "found",
+		"soundmark": "/faʊnd/ /(已经)找到 have found/ /hæv/ /faʊnd/"
+	},
+	{
+		"chinese": "我们(已经)找到",
+		"english": "we have found",
+		"soundmark": "/wi/ /hæv/ /faʊnd/"
+	},
+	{
+		"chinese": "我们(已经)找到那个问题的一个解决办法",
+		"english": "we have found a solution to the problem",
+		"soundmark": "/wi/ /hæv/ /faʊnd/ /ə/ /səˈluʃn/ /tə/ /ðə/ /'prɑbləm/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "haven't",
+		"soundmark": "/ˈhævnt/"
+	},
+	{
+		"chinese": "我们(还没有)找到那个问题的一个解决办法",
+		"english": "we haven't found a solution to the problem",
+		"soundmark": "/wi/ /ˈhævnt/ /faʊnd/ /ə/ /səˈluʃn/ /tə/ /ðə/ /'prɑbləm/"
+	},
+	{
+		"chinese": "参观",
+		"english": "to visit",
+		"soundmark": "/tə/ /'vɪzɪt/"
+	},
+	{
+		"chinese": "参观(ed形式)",
+		"english": "visited",
+		"soundmark": "/'vɪzɪtɪd/"
+	},
+	{
+		"chinese": "他们(已经)参观过",
+		"english": "they have visited",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/"
+	},
+	{
+		"chinese": "博物馆",
+		"english": "museum",
+		"soundmark": "/mjuˈziəm/"
+	},
+	{
+		"chinese": "那个博物馆",
+		"english": "that museum",
+		"soundmark": "/ðæt/ /mjuˈziəm/"
+	},
+	{
+		"chinese": "他们(已经)参观过那个博物馆",
+		"english": "they have visited that museum",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/"
+	},
+	{
+		"chinese": "两次",
+		"english": "twice",
+		"soundmark": "/twaɪs/"
+	},
+	{
+		"chinese": "他们(已经)参观过那个博物馆两次",
+		"english": "they have visited that museum twice",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/ /twaɪs/"
+	},
+	{
+		"chinese": "遗弃",
+		"english": "to abandon",
+		"soundmark": "/tə/ /əˈbændən/"
+	},
+	{
+		"chinese": "遗弃(ed形式)",
+		"english": "abandoned",
+		"soundmark": "/ə'bændənd/"
+	},
+	{
+		"chinese": "被遗弃了",
+		"english": "be abandoned",
+		"soundmark": "/bi/ /ə'bændənd/"
+	},
+	{
+		"chinese": "那个博物馆",
+		"english": "that museum",
+		"soundmark": "/ðæt/ /mjuˈziəm/"
+	},
+	{
+		"chinese": "那个博物馆被遗弃了",
+		"english": "that museum is abandoned",
+		"soundmark": "/ðæt/ /mjuˈziəm/ /ɪz/ /ə'bændənd/"
+	},
+	{
+		"chinese": "被遗弃了的",
+		"english": "abandoned",
+		"soundmark": "/ə'bændənd/"
+	},
+	{
+		"chinese": "那个博物馆",
+		"english": "that museum",
+		"soundmark": "/ðæt/ /mjuˈziəm/"
+	},
+	{
+		"chinese": "那个被遗弃的博物馆",
+		"english": "that abandoned museum",
+		"soundmark": "/ðæt/ /ə'bændənd/ /mjuˈziəm/"
+	},
+	{
+		"chinese": "他们(已经)参观过那个被遗弃的博物馆两次",
+		"english": "they have visited that abandoned museum twice",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /ə'bændənd/ /mjuˈziəm/ /twaɪs/"
+	},
+	{
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
+	},
+	{
+		"chinese": "今年",
+		"english": "this year",
+		"soundmark": "/ðɪs/ /jɪr/"
+	},
+	{
+		"chinese": "他们今年(已经)参观过那个被遗弃的博物馆两次",
+		"english": "they have visited that abandoned museum twice this year",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /ə'bændənd/ /mjuˈziəm/ /twaɪs/ /ðɪs/ /jɪr/"
+	},
+	{
+		"chinese": "许多",
+		"english": "many",
+		"soundmark": "/'mɛni/"
+	},
+	{
+		"chinese": "次数",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "多次",
+		"english": "many times",
+		"soundmark": "/'mɛni/ /taɪmz/"
+	},
+	{
+		"chinese": "他们(已经)参观过那个被遗弃的博物馆多次",
+		"english": "they have visited that abandoned museum many times",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /ə'bændənd/ /mjuˈziəm/ /'mɛni/ /taɪmz/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "haven't",
+		"soundmark": "/ˈhævnt/"
+	},
+	{
+		"chinese": "他们(还没)参观过那个博物馆",
+		"english": "they haven't visited that museum",
+		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/"
+	},
+	{
+		"chinese": "以前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "他们以前(还没有)参观过那个博物馆",
+		"english": "they haven't visited that museum before",
+		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/ /bɪ'fɔr/"
+	},
+	{
+		"chinese": "地",
+		"english": "land",
+		"soundmark": "/lænd/"
+	},
+	{
+		"chinese": "标志",
+		"english": "mark",
+		"soundmark": "/mɑrk/"
+	},
+	{
+		"chinese": "地标",
+		"english": "landmark",
+		"soundmark": "/ˈlændmɑrk/"
+	},
+	{
+		"chinese": "有名的",
+		"english": "famous",
+		"soundmark": "/'feməs/"
+	},
+	{
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
+	},
+	{
+		"chinese": "最有名的",
+		"english": "the most famous",
+		"soundmark": "/ðə/ /most/ /'feməs/"
+	},
+	{
+		"chinese": "最有名的地标",
+		"english": "the most famous landmark",
+		"soundmark": "/ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
+	},
+	{
+		"chinese": "他们(已经)参观过",
+		"english": "they have visited",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/"
+	},
+	{
+		"chinese": "他们(已经)参观过那个最有名的地标",
+		"english": "they have visited the most famous landmark",
+		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "haven't",
+		"soundmark": "/ˈhævnt/"
+	},
+	{
+		"chinese": "他们(还没有)参观过",
+		"english": "they haven't visited",
+		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/"
+	},
+	{
+		"chinese": "他们(还没有)参观过那个最有名的地标",
+		"english": "they haven't visited the most famous landmark",
+		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
+	},
+	{
+		"chinese": "以前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "他们以前(还没有)参观过那个最有名的地标",
+		"english": "they haven't visited the most famous landmark before",
+		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/ /bɪ'fɔr/"
+	},
+	{
+		"chinese": "那个餐厅",
+		"english": "the restaurant",
+		"soundmark": "/ðe/ /'rɛstrɑnt/"
+	},
+	{
+		"chinese": "新的",
+		"english": "new",
+		"soundmark": "/nu/"
+	},
+	{
+		"chinese": "那个新餐厅",
+		"english": "the new restaurant",
+		"soundmark": "/ðə/ /nu/ /'rɛstrɑnt/"
+	},
+	{
+		"chinese": "城镇",
+		"english": "town",
+		"soundmark": "/taʊn/"
+	},
+	{
+		"chinese": "在镇上",
+		"english": "in town",
+		"soundmark": "/ɪn/ /taʊn/"
+	},
+	{
+		"chinese": "在镇上的那家新餐厅",
+		"english": "the new restaurant in town",
+		"soundmark": "/ðə/ /nu/ /'rɛstrɑnt/ /ɪn/ /taʊn/"
+	},
+	{
+		"chinese": "尝试",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
+	},
+	{
+		"chinese": "尝试(ed形式)",
+		"english": "tried",
+		"soundmark": "/traɪd/ /(已经)尝试了 have tried/ /hæv/ /traɪd/"
+	},
+	{
+		"chinese": "我们(已经)尝试了",
+		"english": "we have tried",
+		"soundmark": "/wi/ /hæv/ /traɪd/"
+	},
+	{
+		"chinese": "我们(已经)尝试了在镇上的那家新餐厅",
+		"english": "we have tried the new restaurant in town",
+		"soundmark": "/wi/ /hæv/ /traɪd/ /ðə/ /nu/ /'rɛstrɑnt/ /ɪn/ /taʊn/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "haven't",
+		"soundmark": "/ˈhævnt/"
+	},
+	{
+		"chinese": "我们(还没有)尝试在镇上的那家新餐厅",
+		"english": "we haven't tried the new restaurant in town",
+		"soundmark": "/wi/ /ˈhævnt/ /traɪd/ /ðə/ /nu/ /'rɛstrɑnt/ /ɪn/ /taʊn/"
+	},
+	{
+		"chinese": "见",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
+	},
+	{
+		"chinese": "见(ed形式)",
+		"english": "met",
+		"soundmark": "/mɛt/ /(已经)见过 have met/ /hæv/ /mɛt/"
+	},
+	{
+		"chinese": "他们(已经)见过",
+		"english": "they have met",
+		"soundmark": "/ðe/ /hæv/ /mɛt/"
+	},
+	{
+		"chinese": "邻居",
+		"english": "neighbor",
+		"soundmark": "/ˈnebɚ/"
+	},
+	{
+		"chinese": "新的邻居",
+		"english": "new neighbor",
+		"soundmark": "/nu/ /ˈnebɚ/"
+	},
+	{
+		"chinese": "他们的",
+		"english": "their",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "他们的新邻居",
+		"english": "their new neighbors",
+		"soundmark": "/ðɛr/ /nu/ /ˈnebɚ/"
+	},
+	{
+		"chinese": "他们(已经)见过",
+		"english": "they have met",
+		"soundmark": "/ðe/ /hæv/ /mɛt/"
+	},
+	{
+		"chinese": "他们(已经)见过他们的新邻居",
+		"english": "they have met their new neighbors",
+		"soundmark": "/ðe/ /hæv/ /mɛt/ /ðɛr/ /nu/ /ˈnebɚ/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "haven't",
+		"soundmark": "/ˈhævnt/"
+	},
+	{
+		"chinese": "他们(还没有)见过他们的新邻居",
+		"english": "they haven't met their new neighbors",
+		"soundmark": "/ðe/ /ˈhævnt/ /mɛt/ /ðɛr/ /nu/ /ˈnebɚ/"
+	},
+	{
+		"chinese": "参加",
+		"english": "to attend",
+		"soundmark": "/tə/ /əˈtɛnd/"
+	},
+	{
+		"chinese": "参加(ed形式)",
+		"english": "attended",
+		"soundmark": "/əˈtɛndɪd/"
+	},
+	{
+		"chinese": "她(已经)参加过",
+		"english": "she has attended",
+		"soundmark": "/ʃi/ /hæz/ /əˈtɛndɪd/"
+	},
+	{
+		"chinese": "课程",
+		"english": "class",
+		"soundmark": "/klæs/"
+	},
+	{
+		"chinese": "瑜伽",
+		"english": "yoga",
+		"soundmark": "/ˈjoɡə/"
+	},
+	{
+		"chinese": "一个瑜伽课程",
+		"english": "a yoga class",
+		"soundmark": "/ə/ /ˈjoɡə/ /klæs/"
+	},
+	{
+		"chinese": "她(已经)参加过一个瑜伽课程",
+		"english": "she has attend a yoga class",
+		"soundmark": "/ʃi/ /hæz/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "hasn't",
+		"soundmark": "/ˈhæzənt/"
+	},
+	{
+		"chinese": "她(还没)参加过一个瑜伽课程",
+		"english": "she hasn't attended a yoga class",
+		"soundmark": "/ʃi/ /ˈhæzənt/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/"
+	},
+	{
+		"chinese": "以前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "她以前(还没有)参加过一个瑜伽课程",
+		"english": "she hasn't attended a yoga class before",
+		"soundmark": "/ʃi/ /ˈhæzənt/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/ /bɪ'fɔr/"
+	},
+	{
+		"chinese": "修理",
+		"english": "to fix",
+		"soundmark": "/tə/ /fɪks/"
+	},
+	{
+		"chinese": "修理(ed形式)",
+		"english": "fixed",
+		"soundmark": "/fɪkst/"
+	},
+	{
+		"chinese": "他(已经)修理了",
+		"english": "he has fixed",
+		"soundmark": "/hi/ /hæz/ /fɪkst/"
+	},
+	{
+		"chinese": "那个窗户",
+		"english": "the window",
+		"soundmark": "/ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "他(已经)修理了那个窗户",
+		"english": "he has fixed the window",
+		"soundmark": "/hi/ /hæz/ /fɪkst/ /ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "打破",
+		"english": "to break",
+		"soundmark": "/tə/ /brek/"
+	},
+	{
+		"chinese": "打破(ed形式)",
+		"english": "broken",
+		"soundmark": "/'brokən/"
+	},
+	{
+		"chinese": "被打破",
+		"english": "be broken",
+		"soundmark": "/bi/ /'brokən/"
+	},
+	{
+		"chinese": "那个窗户",
+		"english": "the window",
+		"soundmark": "/ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "那个窗户被打破了",
+		"english": "the window is broken",
+		"soundmark": "/ðə/ /'wɪndo/ /ɪz/ /'brokən/"
+	},
+	{
+		"chinese": "被打破的",
+		"english": "broken",
+		"soundmark": "/'brokən/"
+	},
+	{
+		"chinese": "那个被打破了的窗户",
+		"english": "the broken window",
+		"soundmark": "/ðə/ /'brokən/ /'wɪndo/"
+	},
+	{
+		"chinese": "他(已经)修理了那个被打破的窗户",
+		"english": "he has fixed the broken window",
+		"soundmark": "/hi/ /hæz/ /fɪkst/ /ðə/ /'brokən/ /'wɪndo/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "hasn't",
+		"soundmark": "/ˈhæzənt/"
+	},
+	{
+		"chinese": "他(还没有)修理那个被打破的窗户",
+		"english": "he hasn't fixed the broken window",
+		"soundmark": "/hi/ /ˈhæzənt/ /fɪkst/ /ðə/ /'brokən/ /'wɪndo/"
+	},
+	{
+		"chinese": "收到",
+		"english": "to receive",
+		"soundmark": "/tə/ /rɪ'siv/"
+	},
+	{
+		"chinese": "收到(ed形式)",
+		"english": "received",
+		"soundmark": "/rɪ'sivd/"
+	},
+	{
+		"chinese": "他(已经)收到",
+		"english": "he has received",
+		"soundmark": "/hi/ /hæz/ /rɪ'sivd/"
+	},
+	{
+		"chinese": "那个电子邮件",
+		"english": "the email",
+		"soundmark": "/ði/ /ˈimel/"
+	},
+	{
+		"chinese": "他(已经)收到那个电子邮件",
+		"english": "he has received the email",
+		"soundmark": "/hi/ /hæz/ /rɪ'sivd/ /ði/ /ˈimel/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "hasn't",
+		"soundmark": "/ˈhæzənt/"
+	},
+	{
+		"chinese": "他(还没有)收到那个电子邮件",
+		"english": "he hasn't received the email",
+		"soundmark": "/hi/ /ˈhæzənt/ /rɪ'sivd/ /ði/ /ˈimel/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "完成(ed形式)",
+		"english": "finished",
+		"soundmark": "/'fɪnɪʃt/"
+	},
+	{
+		"chinese": "他(已经)完成了",
+		"english": "he has finished",
+		"soundmark": "/hi/ /hæz/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "家庭作业",
+		"english": "homework",
+		"soundmark": "/'homwɝk/"
+	},
+	{
+		"chinese": "他的家庭作业",
+		"english": "his homework",
+		"soundmark": "/hɪz/ /'homwɝk/"
+	},
+	{
+		"chinese": "他(已经)完成了他的家庭作业",
+		"english": "he has finished his homework",
+		"soundmark": "/hi/ /hæz/ /'fɪnɪʃt/ /hɪz/ /'homwɝk/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "hasn't",
+		"soundmark": "/ˈhæzənt/"
+	},
+	{
+		"chinese": "他(还没有)完成他的家庭作业",
+		"english": "he hasn't finished his homework",
+		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/ /hɪz/ /'homwɝk/"
+	},
+	{
+		"chinese": "那份报告",
+		"english": "the report",
+		"soundmark": "/ðə/ /rɪ'pɔrt/"
+	},
+	{
+		"chinese": "写",
+		"english": "to write",
+		"soundmark": "/tə/ /raɪt/"
+	},
+	{
+		"chinese": "写那份报告",
+		"english": "to write the report",
+		"soundmark": "/tə/ /raɪt/ /ðə/ /rɪ'pɔrt/"
+	},
+	{
+		"chinese": "写(ing形式)",
+		"english": "writing",
+		"soundmark": "/'raɪtɪŋ/"
+	},
+	{
+		"chinese": "写那份报告(ing形式)",
+		"english": "writing the report",
+		"soundmark": "/'raɪtɪŋ/ /ðə/ /rɪ'pɔrt/"
+	},
+	{
+		"chinese": "他(还没有)完成",
+		"english": "he hasn't finished",
+		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "他(还没有)完成写那份报告",
+		"english": "he hasn't finished writing the report",
+		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/ /'raɪtɪŋ/ /ðə/ /rɪ'pɔrt/"
+	},
+	{
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "那本小说",
+		"english": "the novel",
+		"soundmark": "/ðə/ /ˈnɑvl/"
+	},
+	{
+		"chinese": "阅读那本小说",
+		"english": "to read the novel",
+		"soundmark": "/tə/ /rid/ /ðə/ /ˈnɑvl/"
+	},
+	{
+		"chinese": "阅读(ing形式)",
+		"english": "reading",
+		"soundmark": "/'ridɪŋ/"
+	},
+	{
+		"chinese": "阅读那本小说(ing形式)",
+		"english": "reading the novel",
+		"soundmark": "/'ridɪŋ/ /ðə/ /ˈnɑvl/"
+	},
+	{
+		"chinese": "他(还没有)完成",
+		"english": "he hasn't finished",
+		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/"
+	},
+	{
+		"chinese": "他(还没有)完成阅读那本小说",
+		"english": "he hasn't finished reading the novel",
+		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /ˈnɑvl/"
+	},
+	{
+		"chinese": "树",
+		"english": "tree",
+		"soundmark": "/tri/"
+	},
+	{
+		"chinese": "圣诞节",
+		"english": "Christmas",
+		"soundmark": "/ˈkrɪsməs/"
+	},
+	{
+		"chinese": "一棵圣诞树",
+		"english": "a Christmas tree",
+		"soundmark": "/ə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
+	},
+	{
+		"chinese": "买一棵圣诞树",
+		"english": "to buy a Christmas tree",
+		"soundmark": "/tə/ /baɪ/ /ə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "买(ed形式)",
+		"english": "bought",
+		"soundmark": "/bɔt/"
+	},
+	{
+		"chinese": "他(已经)买了",
+		"english": "he has bought",
+		"soundmark": "/hi/ /hæz/ /bɔt/"
+	},
+	{
+		"chinese": "他(已经)买了一棵圣诞树",
+		"english": "he has bought a Christmas tree",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "家庭",
+		"english": "family",
+		"soundmark": "/ˈfæməli/"
+	},
+	{
+		"chinese": "他的家庭",
+		"english": "his family",
+		"soundmark": "/hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "为了他的家庭",
+		"english": "for his family",
+		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"english": "he has bought a Christmas tree for his family",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "装饰",
+		"english": "to decorate",
+		"soundmark": "/tə/ /ˈdɛkəret/"
+	},
+	{
+		"chinese": "装饰(ed形式)",
+		"english": "decorated",
+		"soundmark": "/ˈdɛkəretɪd/"
+	},
+	{
+		"chinese": "被装饰",
+		"english": "be decorated",
+		"soundmark": "/bi/ /ˈdɛkəretɪd/"
+	},
+	{
+		"chinese": "那棵圣诞树",
+		"english": "the Christmas tree",
+		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "那棵圣诞树",
+		"english": "the Christmas tree is decorated",
+		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/ /ɪz/ /ˈdɛkəretɪd/"
+	},
+	{
+		"chinese": "被装饰了的",
+		"english": "decorated",
+		"soundmark": "/ˈdɛkəretɪd/"
+	},
+	{
+		"chinese": "一棵被装饰的圣诞树",
+		"english": "a decorated Christmas tree",
+		"soundmark": "/ə/ /ˈdɛkəretɪd/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵装饰好了的圣诞树",
+		"english": "he has bought a decorated Christmas tree for his family",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈdɛkəretɪd/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "装饰",
+		"english": "to decorate",
+		"soundmark": "/tə/ /ˈdɛkəret/"
+	},
+	{
+		"chinese": "装饰(ed形式)",
+		"english": "decorated",
+		"soundmark": "/ˈdɛkəretɪd/"
+	},
+	{
+		"chinese": "他(已经)装饰了",
+		"english": "he has decorated",
+		"soundmark": "/hi/ /hæz/ /ˈdɛkəretɪd/"
+	},
+	{
+		"chinese": "那棵圣诞树",
+		"english": "the Christmas tree",
+		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "他(已经)装饰了那棵圣诞树",
+		"english": "he has decorated the Christmas tree",
+		"soundmark": "/hi/ /hæz/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "还没有",
+		"english": "hasn't",
+		"soundmark": "/ˈhæzənt/"
+	},
+	{
+		"chinese": "他(还没有)装饰那棵圣诞树",
+		"english": "he hasn't decorated the Christmas tree",
+		"soundmark": "/hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bʌt/"
+	},
+	{
+		"chinese": "但是他(还没有)装饰那棵圣诞树",
+		"english": "but he hasn't decorated the Christmas tree",
+		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"english": "he has bought a Christmas tree for his family",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰那棵圣诞树",
+		"english": "he has bought a Christmas tree for his family, but he hasn't decorated the Christmas tree",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰它",
+		"english": "he has bought a Christmas tree for his family, but he hasn't decorated it",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/"
+	},
+	{
+		"chinese": "迄今为止",
+		"english": "yet",
+		"soundmark": "/jɛt/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它",
+		"english": "he has bought a Christmas tree for his family, but he hasn't decorated it yet",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/"
+	},
+	{
+		"chinese": "繁忙的",
+		"english": "busy",
+		"soundmark": "/'bɪzi/"
+	},
+	{
+		"chinese": "他是繁忙的",
+		"english": "he is busy",
+		"soundmark": "/hi/ /ɪz/ /'bɪzi/"
+	},
+	{
+		"chinese": "非常",
+		"english": "too",
+		"soundmark": "/tu/"
+	},
+	{
+		"chinese": "他是非常忙的",
+		"english": "he is too busy",
+		"soundmark": "/hi/ /ɪz/ /tu/ /'bɪzi/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为他太忙了",
+		"english": "because he is too busy",
+		"soundmark": "/bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
+	},
+	{
+		"chinese": "但是迄今为止他(还没有)装饰它",
+		"english": "but he hasn't decorated it yet",
+		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/"
+	},
+	{
+		"chinese": "但是迄今为止他(还没有)装饰它因为他太忙了",
+		"english": "but he hasn't decorated it yet because he is too busy",
+		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"english": "he has bought a Christmas tree for his family",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它因为他太忙了",
+		"english": "he has bought a Christmas tree for his family, but he hasn't decorated it yet because he is too busy",
+		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
+	}
+]
