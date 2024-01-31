@@ -98,20 +98,21 @@ export const useCourseStore = defineStore("course", () => {
   };
 });
 
+const COURSE_PROGRESS = "courseProgress";
 function useCourseProgress() {
   function saveProgress(courseId: number, index: number) {
-    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
     progress[courseId] = index;
-    localStorage.setItem("courseProgress", JSON.stringify(progress));
+    localStorage.setItem(COURSE_PROGRESS, JSON.stringify(progress));
   }
 
   function loadProgress(courseId: number) {
-    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
     return progress[courseId] || 0;
   }
 
   function cleanProgress() {
-    localStorage.removeItem("courseProgress");
+    localStorage.removeItem(COURSE_PROGRESS);
   }
 
   return {
@@ -119,4 +120,20 @@ function useCourseProgress() {
     loadProgress,
     cleanProgress,
   };
+}
+
+const ACTIVE_COURSE_ID = "activeCourseId";
+export function useActiveCourseId () {
+  function getCourseId () {
+    return Number(localStorage.getItem(ACTIVE_COURSE_ID));
+  }
+
+  function updateCourseId (courseId: number) {
+    localStorage.setItem(ACTIVE_COURSE_ID, String(courseId));
+  }
+
+  return {
+    getCourseId,
+    updateCourseId,
+  }
 }
