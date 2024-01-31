@@ -1,4 +1,3 @@
-import { defineStore } from "pinia";
 import { ref } from "vue";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 
