@@ -7,6 +7,7 @@ interface Statement {
   chinese: string;
   english: string;
   soundmark: string;
+  incorrectQuestionId?: number;
 }
 
 export interface Course {
@@ -21,6 +22,7 @@ export const useCourseStore = defineStore('course', () => {
   const currentStatement = ref<Statement>();
 
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
+  const { saveIncorrectQuestion, loadIncorrectQuestion, cleanIncorrectQuestion, convertQuestionData } = useIncorrectQuestion()
 
   watchEffect(() => {
     currentStatement.value = currentCourse.value?.statements[statementIndex.value];
@@ -72,11 +74,32 @@ export const useCourseStore = defineStore('course', () => {
   async function setup(courseId: number) {
     const course = await fetchCourse(courseId);
     currentCourse.value = course;
+    currentCourse.value.statements = currentCourse.value.statements.slice(0, 3);
+    currentCourse.value.statements = [...currentCourse.value.statements, ...loadIncorrectQuestion(courseId)]
     statementIndex.value = loadProgress(courseId);
   }
 
   function resetStatementIndex() {
     statementIndex.value = 0;
+  }
+
+  function updateIncorrectQuestions() {
+    let currentIncorrectQuestion: Statement = convertQuestionData(currentStatement.value)
+    const mistakeIsExist = currentCourse?.value.statements.some(
+      (item: Statement) =>
+        item.incorrectQuestionId ===
+        currentIncorrectQuestion.incorrectQuestionId
+    );
+    if (!mistakeIsExist) {
+      currentCourse?.value.statements.push(currentIncorrectQuestion);
+      saveIncorrectQuestion(currentCourse?.value.id, currentIncorrectQuestion);
+    }
+  }
+  function resetCurrentCourse(courseId: number) {
+    if(currentCourse.value?.statements.length) {
+      currentCourse.value.statements = currentCourse.value?.statements.filter(((item: Statement) => !item.incorrectQuestionId))
+    }
+    cleanIncorrectQuestion(courseId)
   }
 
   return {
@@ -93,6 +116,9 @@ export const useCourseStore = defineStore('course', () => {
     toNextStatement,
     cleanProgress,
     resetStatementIndex,
+    resetCurrentCourse,
+    convertQuestionData,
+    updateIncorrectQuestions,
   };
 });
 
@@ -134,4 +160,38 @@ export function useActiveCourseId() {
     getCourseId,
     updateCourseId,
   };
+}
+
+function useIncorrectQuestion() {
+  function saveIncorrectQuestion(courseId: number, question: Statement) {
+    const courseIncorrectQuestion = JSON.parse(localStorage.getItem("courseIncorrectQuestion")!) || {};
+    const currentQuestions = courseIncorrectQuestion[courseId] || [];
+    courseIncorrectQuestion[courseId] = [...currentQuestions, question];
+    localStorage.setItem("courseIncorrectQuestion", JSON.stringify(courseIncorrectQuestion));
+  }
+  function loadIncorrectQuestion(courseId: number) {
+    const question = JSON.parse(localStorage.getItem("courseIncorrectQuestion")!) || {};
+    return question[courseId] || [];
+  }
+  function cleanIncorrectQuestion(courseId?: number) {
+    if(!courseId) {
+      localStorage.removeItem("courseIncorrectQuestion");
+    } else {
+      const courseIncorrectQuestion = JSON.parse(localStorage.getItem("courseIncorrectQuestion")!) || {};
+      courseIncorrectQuestion[courseId] && delete courseIncorrectQuestion[courseId]
+      localStorage.setItem("courseIncorrectQuestion", JSON.stringify(courseIncorrectQuestion));
+    }
+  }
+  function convertQuestionData(statement: Statement) {
+    let currentIncorrectQuestion: Statement = JSON.parse(JSON.stringify(statement));
+    currentIncorrectQuestion.id = new Date().getTime();
+    currentIncorrectQuestion.incorrectQuestionId = statement?.id;
+    return currentIncorrectQuestion
+  }
+  return {
+    saveIncorrectQuestion,
+    loadIncorrectQuestion,
+    cleanIncorrectQuestion,
+    convertQuestionData,
+  }
 }
