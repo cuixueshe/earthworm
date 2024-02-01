@@ -2,9 +2,7 @@ import { ToolController } from './tool.controller';
 import { ToolService } from './tool.service';
 import * as superagent from 'superagent';
 
-jest.mock('superagent');
-
-describe.only('Tool', () => {
+describe('Tool', () => {
   let toolController: ToolController;
   let toolService: ToolService;
 
@@ -13,9 +11,6 @@ describe.only('Tool', () => {
     toolController = new ToolController(toolService);
   });
 
-  it('happy path', () => {
-    expect(true).toBe(true);
-  });
   it('should return dailySentence', async () => {
     jest.spyOn(superagent, 'get').mockResolvedValueOnce({
       text: '{"note": "中文", "content": "english"}',
