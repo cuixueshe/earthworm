@@ -1,4 +1,4 @@
-import { mockRedis } from '../utils/helpers/mockRedis.module';
+import { mockRedis } from '../utils/helpers/mockRedis';
 import { resetDbHelper } from '../utils/helpers/resetDb';
 import { createSignInfo } from '../utils/helpers/user';
 import { RankController } from './rank.controller';
