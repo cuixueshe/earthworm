@@ -14,7 +14,7 @@
     "start:prod": "node dist/main",
     "start:prod:pm": "pm2 start ecosystem.config.js",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
+    "test": "DOTENV_CONFIG_PATH=../../.env jest --setupFiles dotenv/config",
     "test:watch": "DOTENV_CONFIG_PATH=../../.env jest --watch --setupFiles dotenv/config",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
