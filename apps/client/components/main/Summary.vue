@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 import confetti from "canvas-confetti";
-import { watch, ref } from 'vue';
+import { watch, ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from "~/store/user";
 import { useCourseStore } from "~/store/course";
@@ -41,6 +41,7 @@ import { useActiveCourseId } from '~/store/course';
 import { useGameMode } from "~/composables/main/game";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
+import { isTheFirstDayOfLunarYear, isTheLastDayOfLunarYear } from '~/utils/bonus';
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
