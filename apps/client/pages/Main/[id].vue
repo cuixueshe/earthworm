@@ -4,7 +4,9 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <Tool></Tool>
+      <n-dialog-provider>
+        <Tool></Tool>
+      </n-dialog-provider>
       <Game></Game>
     </template>
   </div>

@@ -94,6 +94,7 @@ import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import ProgressRank from "~/components/rank/ProgressRank.vue";
 import { computed } from "vue";
+import { useDialog } from "naive-ui";
 
 const courseStore = useCourseStore();
 
@@ -114,12 +115,24 @@ const currentPercentage = computed(() => {
 const coursesStore = useCourseStore();
 const { handleDoAgain } = useDoAgain();
 
+const dialog = useDialog();
 function useDoAgain() {
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {
-    coursesStore.doAgain();
-    showQuestion();
+    dialog.warning({
+      title: "Tips",
+      content: "Do you confirm the clearing progress?",
+      positiveText: "Confirm",
+      negativeText: "Cancel",
+      onPositiveClick: () => {
+        coursesStore.doAgain();
+        showQuestion();
+      },
+      onNegativeClick: () => {
+        return;
+      },
+    });
   }
 
   return {
