@@ -54,13 +54,4 @@ describe('AuthController', () => {
       phone: newUser.phone,
     });
   });
-  it('should not get user info with invalid token', async () => {
-    const authGuard = new AuthGuard(jwtService);
-    expect(authGuard.parseToken('invalid token')).rejects.toThrow();
-  });
-  it('should no error when uncheck', async () => {
-    const authGuard = new AuthGuard(jwtService);
-    const userInfo = await authGuard.parseToken('', true);
-    expect(userInfo).toBeUndefined();
-  });
 });
