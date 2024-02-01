@@ -14,16 +14,17 @@
     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
       <n-form ref="formEl" :rules="rules" :model="model">
         <n-form-item path="name" label="Name" required>
-          <n-input v-model:value="model.name" @keydown.enter.prevent />
+          <n-input v-model:value="model.name" @keydown.enter.prevent @keyup.enter="handleRegister"/>
         </n-form-item>
         <n-form-item path="phone" label="Phone" required>
-          <n-input v-model:value="model.phone" @keydown.enter.prevent />
+          <n-input v-model:value="model.phone" @keydown.enter.prevent @keyup.enter="handleRegister"/>
         </n-form-item>
         <n-form-item path="password" label="Password" required>
           <n-input
             v-model:value="model.password"
             type="password"
             @keydown.enter.prevent
+            @keyup.enter="handleRegister"
           />
         </n-form-item>
         <n-form-item path="confirmPassword" label="ConfirmPassword" required>
@@ -31,6 +32,7 @@
             v-model:value="model.confirmPassword"
             type="password"
             @keydown.enter.prevent
+            @keyup.enter="handleRegister"
           />
         </n-form-item>
         <n-button
