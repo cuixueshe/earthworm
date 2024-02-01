@@ -27,7 +27,6 @@ function useActiveCourseId() {
 }
 
 export const useGameStore = defineStore("game", () => {
-  debugger;
   const { updateActiveCourseId, restActiveCourseId, activeCourseId } =
     useActiveCourseId();
 
@@ -63,6 +62,7 @@ export const useGameStore = defineStore("game", () => {
   return {
     startGame,
     resetGame,
+    updateActiveCourseId,
     activeCourseId,
   };
 });

@@ -119,19 +119,3 @@ function useCourseProgress() {
     cleanProgress,
   };
 }
-
-const ACTIVE_COURSE_ID = 'activeCourseId';
-export function useActiveCourseId() {
-  function getCourseId() {
-    return Number(localStorage.getItem(ACTIVE_COURSE_ID));
-  }
-
-  function updateCourseId(courseId: number) {
-    localStorage.setItem(ACTIVE_COURSE_ID, String(courseId));
-  }
-
-  return {
-    getCourseId,
-    updateCourseId,
-  };
-}
