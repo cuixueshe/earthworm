@@ -3,6 +3,8 @@
 </template>
 
 <script setup lang="ts">
+import { useMessage } from "naive-ui";
+import { useRouter } from "vue-router";
 import {
   injectHttpStatusErrorHandler,
 } from "~/api/http";

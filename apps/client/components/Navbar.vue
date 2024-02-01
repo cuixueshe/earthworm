@@ -43,7 +43,12 @@
 </template>
 
 <script setup lang="ts">
+import { useMessage } from "naive-ui";
+import { navigateTo } from "nuxt/app";
+import { useRoute } from "vue-router";
+import { useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
+import { cleanToken } from "~/utils/token";
 const route = useRoute();
 
 const userStore = useUserStore();

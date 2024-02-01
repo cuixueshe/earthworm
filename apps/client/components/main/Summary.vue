@@ -19,7 +19,7 @@
             </div>
             <span class="text-6xl font-bold">"</span>
           </div>
-          <p class="text-3 text-right text-gray-200"> —— 金山词霸「每日一句」</p>
+          <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
         </div>
         <div className="modal-action">
           <button class="btn" @click="handleDoAgain">再来一次</button>
@@ -32,49 +32,47 @@
 </template>
 
 <script setup lang="ts">
-import { useCourseStore, type Course } from "~/store/course";
-import { useSummary, useDailySentence } from "~/composables/main/summary";
-import { useGameMode } from "~/composables/main/game";
 import confetti from "canvas-confetti";
-import { useAuthRequire } from "~/composables/main/authRequire";
+import { watch, ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { useUserStore } from "~/store/user";
+import { useCourseStore } from "~/store/course";
+import { useActiveCourseId } from '~/store/course';
+import { useGameMode } from "~/composables/main/game";
+import { useAuthRequire } from "~/composables/main/authRequire";
+import { useSummary, useDailySentence } from "~/composables/main/summary";
 
-let nextCourseId = 1
+let nextCourseId = 1;
 const courseStore = useCourseStore();
-
-
 const { handleDoAgain } = useDoAgain();
 const { handleGoToNextCourse } = useGoToNextCourse();
-
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
-
-
 const { confettiCanvasRef, playConfetti } = useConfetti();
 
-
 watch(showModal, (val) => {
-  val && setTimeout(async () => {
+  if (val) {
+    // 显示结算面板代表当前课程已经完成
     completeCourse();
-    playConfetti()
-  }, 300);
-
-  if (!val) {
-    courseStore.resetStatementIndex()
+    // 延迟一小会放彩蛋
+    setTimeout(async () => {
+      playConfetti();
+    }, 300);
+  } else {
+    // 从显示状态关闭结算面板
+    courseStore.resetStatementIndex();
   }
 })
-
-
 
 async function completeCourse() {
   const userStore = useUserStore();
 
-  if (userStore.user) {
-    const nextCourse = await courseStore.completeCourse(
-      courseStore.currentCourse.id
-    );
-
+  if (userStore.user && courseStore.currentCourse) {
+    const nextCourse = await courseStore.completeCourse(courseStore.currentCourse.id);
     nextCourseId = nextCourse.id
+    // 缓存下一课的课程 id
+    const { updateCourseId } = useActiveCourseId();
+    updateCourseId(nextCourseId)
   }
 }
 
@@ -83,7 +81,7 @@ function useDoAgain() {
 
   function handleDoAgain() {
     courseStore.doAgain();
-    hideSummary()
+    hideSummary();
     showQuestion();
   }
 
@@ -116,21 +114,20 @@ function useConfetti() {
 }
 
 function useGoToNextCourse() {
-  const { showQuestion } = useGameMode();
   const router = useRouter();
+  const userStore = useUserStore();
   const { showAuthRequireModal } = useAuthRequire();
 
-  const userStore = useUserStore();
-
   async function handleGoToNextCourse() {
+    // 无论后续如何处理，都需要先隐藏 Summary 页面
+    hideSummary()
     if (!userStore.user) {
-      hideSummary()
+      // 去注册
       showAuthRequireModal();
       return;
     }
 
     router.push(`/main/${nextCourseId}`);
-    hideSummary()
   }
 
   return {

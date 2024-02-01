@@ -21,6 +21,7 @@ import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
 import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
+import { onMounted, computed, onUnmounted } from "vue";
 
 const { shortcutKeys } = setShortcutKey();
 const { playSound } = usePlaySound(shortcutKeys.sound);
