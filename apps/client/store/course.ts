@@ -1,5 +1,6 @@
-import { ref } from "vue";
-import { fetchCompleteCourse, fetchCourse } from "~/api/course";
+import { computed, ref, watchEffect, watch } from 'vue';
+import { defineStore } from 'pinia';
+import { fetchCompleteCourse, fetchCourse } from '~/api/course';
 
 interface Statement {
   id: number;
@@ -14,7 +15,7 @@ export interface Course {
   statements: Statement[];
 }
 
-export const useCourseStore = defineStore("course", () => {
+export const useCourseStore = defineStore('course', () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
@@ -22,19 +23,18 @@ export const useCourseStore = defineStore("course", () => {
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
-    currentStatement.value =
-      currentCourse.value?.statements[statementIndex.value];
+    currentStatement.value = currentCourse.value?.statements[statementIndex.value];
   });
 
   watch(
     () => statementIndex.value,
     () => {
       saveProgress(currentCourse.value?.id!, statementIndex.value);
-    }
+    },
   );
 
   const wordCount = computed(() => {
-    return currentStatement.value?.english.split(" ").length || 1;
+    return currentStatement.value?.english.split(' ').length || 1;
   });
 
   const totalQuestionsCount = computed(() => {
@@ -49,7 +49,8 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function isAllDone() {
-    return statementIndex.value + 1 === currentCourse.value?.statements.length;
+    // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
+    return statementIndex.value + 1 >= currentCourse.value?.statements.length;
   }
 
   function doAgain() {
@@ -57,10 +58,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function checkCorrect(input: string) {
-    return (
-      input.toLocaleLowerCase() ===
-      currentStatement.value?.english.toLocaleLowerCase()
-    );
+    return input.toLocaleLowerCase() === currentStatement.value?.english.toLocaleLowerCase();
   }
 
   async function completeCourse(cId: number) {
@@ -98,25 +96,42 @@ export const useCourseStore = defineStore("course", () => {
   };
 });
 
+const COURSE_PROGRESS = 'courseProgress';
 function useCourseProgress() {
   function saveProgress(courseId: number, index: number) {
-    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
     progress[courseId] = index;
-    localStorage.setItem("courseProgress", JSON.stringify(progress));
+    localStorage.setItem(COURSE_PROGRESS, JSON.stringify(progress));
   }
 
   function loadProgress(courseId: number) {
-    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
     return progress[courseId] || 0;
   }
 
   function cleanProgress() {
-    localStorage.removeItem("courseProgress");
+    localStorage.removeItem(COURSE_PROGRESS);
   }
 
   return {
     saveProgress,
     loadProgress,
     cleanProgress,
+  };
+}
+
+const ACTIVE_COURSE_ID = 'activeCourseId';
+export function useActiveCourseId() {
+  function getCourseId() {
+    return Number(localStorage.getItem(ACTIVE_COURSE_ID));
+  }
+
+  function updateCourseId(courseId: number) {
+    localStorage.setItem(ACTIVE_COURSE_ID, String(courseId));
+  }
+
+  return {
+    getCourseId,
+    updateCourseId,
   };
 }

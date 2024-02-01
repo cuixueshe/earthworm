@@ -1,5 +1,6 @@
 import { useCourseStore } from "~/store/course";
 import { updateSource, play } from "./audio";
+import { watchEffect } from "vue";
 
 let prevWord = "";
 export function useCurrentStatementEnglishSound() {
@@ -10,7 +11,7 @@ export function useCurrentStatementEnglishSound() {
     if (prevWord !== word) {
       updateSource(`https://dict.youdao.com/dictvoice?audio=${word}&type=1`);
     }
-    prevWord = courseStore.currentStatement?.english;
+    prevWord = courseStore.currentStatement?.english!
   });
 
   return {
