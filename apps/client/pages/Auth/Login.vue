@@ -21,6 +21,7 @@
             v-model:value="model.password"
             type="password"
             @keydown.enter.prevent
+            @keyup.enter="handleLogin"
           />
         </n-form-item>
         <n-button type="primary" size="large" block @click="handleLogin">

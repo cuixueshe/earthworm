@@ -1,12 +1,8 @@
 <template>
-  <div
-    className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
-  >
+  <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <img className="mx-auto h-10 w-auto" src="/logo.png" alt="earthworm" />
-      <h2
-        className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
-      >
+      <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
         Sign up to your account
       </h2>
     </div>
@@ -14,24 +10,18 @@
     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
       <n-form ref="formEl" :rules="rules" :model="model">
         <n-form-item path="name" label="Name" required>
-          <n-input v-model:value="model.name" @keydown.enter.prevent />
+          <n-input v-model:value="model.name" @keydown.enter.prevent @keyup.enter="handleRegister" />
         </n-form-item>
         <n-form-item path="phone" label="Phone" required>
-          <n-input v-model:value="model.phone" @keydown.enter.prevent />
+          <n-input v-model:value="model.phone" @keydown.enter.prevent @keyup.enter="handleRegister" />
+
         </n-form-item>
         <n-form-item path="password" label="Password" required>
-          <n-input
-            v-model:value="model.password"
-            type="password"
-            @keydown.enter.prevent
-          />
+          <n-input v-model:value="model.password" type="password" @keydown.enter.prevent @keyup.enter="handleRegister" />
         </n-form-item>
         <n-form-item path="confirmPassword" label="ConfirmPassword" required>
-          <n-input
-            v-model:value="model.confirmPassword"
-            type="password"
-            @keydown.enter.prevent
-          />
+          <n-input v-model:value="model.confirmPassword" type="password" @keydown.enter.prevent
+            @keyup.enter="handleRegister" />
         </n-form-item>
         <n-button type="primary" size="large" block @click="handleRegister">
           Sign in
@@ -40,10 +30,7 @@
 
       <p className="mt-10 text-center text-sm text-gray-500">
         Has a account?
-        <NuxtLink
-          href="/auth/login"
-          className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-        >
+        <NuxtLink href="/auth/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
           Log in
         </NuxtLink>
       </p>
