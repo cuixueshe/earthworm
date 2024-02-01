@@ -2,10 +2,10 @@ import { JwtService } from '@nestjs/jwt';
 import { AuthService } from './auth.service';
 import { UserService } from '../user/user.service';
 import { testDb } from '../utils/helpers/test-db';
-import { resetDb } from '../utils/helpers/resetDb';
 import { user } from '@earthworm/shared';
 import { AuthController } from './auth.controller';
 import { AuthGuard } from './auth.guard';
+import { resetDbHelper } from '../utils/helpers/resetDb';
 
 describe('AuthController', () => {
   let authController: AuthController;
@@ -29,10 +29,10 @@ describe('AuthController', () => {
     authService = new AuthService(userService, jwtService);
     authController = new AuthController(authService);
 
-    await resetDb(user);
+    await resetDbHelper();
   });
   afterAll(async () => {
-    await resetDb(user);
+    await resetDbHelper();
   });
   it('should signup', async () => {
     const res = await authController.signup(newUser);

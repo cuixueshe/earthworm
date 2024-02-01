@@ -2,10 +2,11 @@ import { user } from '@earthworm/shared';
 import { JwtService } from '@nestjs/jwt';
 import { AuthService } from '../../auth/auth.service';
 import { UserService } from '../../user/user.service';
-import { resetDb } from './resetDb';
+import { resetDbHelper } from './resetDb';
 import { testDb } from './test-db';
 
-async function createToken() {
+// only use this in test
+export async function createSignInfo() {
   let userService = new UserService(testDb);
   let jwtService = new JwtService({
     secret: process.env.SECRET,
@@ -14,13 +15,9 @@ async function createToken() {
   let authService = new AuthService(userService, jwtService);
   const newUser = {
     name: 'test',
-    phone: '12345678901',
+    phone: '1550211222',
     password: 'password',
   };
   const res = await authService.signup(newUser);
-  return res.token;
-}
-
-async function clearToken() {
-  await resetDb(user);
+  return res;
 }

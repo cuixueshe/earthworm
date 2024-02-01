@@ -1,7 +1,7 @@
 import { user } from '@earthworm/shared';
 import { testDb } from '../utils/helpers/test-db';
 import { UserService } from './user.service';
-import { resetDb } from '../utils/helpers/resetDb';
+import { resetDbHelper } from '../utils/helpers/resetDb';
 
 describe('UserService', () => {
   let userService: UserService;
@@ -12,11 +12,11 @@ describe('UserService', () => {
     password: 'password',
   };
   beforeAll(async () => {
-    await resetDb(user);
+    await resetDbHelper();
     userService = new UserService(testDb);
   });
   afterAll(async () => {
-    await resetDb(user);
+    await resetDbHelper();
   });
 
   it('should create a user', async () => {
