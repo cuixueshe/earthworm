@@ -26,8 +26,8 @@
     </tbody>
   </n-table>
 
-  <dialog id="shortcutDialog" class="modal mt-[-8vh]">
-    <div class="modal-box max-w-[48rem]">
+  <dialog class="modal mt-[-8vh]" :open="showModal">
+    <div ref="dialogBoxRef" class="modal-box max-w-[48rem]">
       <h3 class="font-bold text-center mb-4">
         先按所需的组合键，再按 Enter 键。
       </h3>
@@ -38,27 +38,34 @@
         {{ shortcutKeyTip }}
       </div>
     </div>
-    <form method="dialog" class="modal-backdrop">
-      <button @click="handleCloseDialog">close</button>
-    </form>
   </dialog>
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import {
   useShortcutDialogMode,
   useShortcutKeyMode,
 } from "~/composables/user/setting";
 
-const { handleEdit, handleCloseDialog } = useShortcutDialogMode();
+const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
 const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeyData } =
   useShortcutKeyMode();
 
+let dialogBoxRef = ref<HTMLElement | null>(null);
+function pointDialogOutside(e: MouseEvent) {
+  if (!showModal.value) return;
+  if (!dialogBoxRef.value?.contains(e.target as Node)) {
+    handleCloseDialog();
+  }
+}
+
 onMounted(() => {
+  document.addEventListener("mouseup", pointDialogOutside);
   document.addEventListener("keyup", handleKeyup);
 });
 onUnmounted(() => {
+  document.removeEventListener("mouseup", pointDialogOutside);
   document.removeEventListener("keyup", handleKeyup);
 });
 </script>

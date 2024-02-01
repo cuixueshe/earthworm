@@ -6,7 +6,6 @@ let currentKeyType = ref<string>("");
 
 export function useShortcutDialogMode() {
   function handleEdit(type: string) {
-    (document.getElementById("shortcutDialog") as any).showModal();
     showModal.value = true;
     currentKeyType.value = type;
   }
