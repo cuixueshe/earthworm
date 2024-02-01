@@ -7,4 +7,5 @@ export default {
   dbCredentials: {
     uri: process.env.DATABASE_URL || "",
   },
+  strict: true,
 } satisfies Config;
