@@ -81,6 +81,7 @@ function useDoAgain() {
 
   function handleDoAgain() {
     courseStore.doAgain();
+    courseStore.currentCourse?.id && courseStore.resetCurrentCourse(courseStore.currentCourse?.id)
     hideSummary();
     showQuestion();
   }
@@ -121,6 +122,7 @@ function useGoToNextCourse() {
   async function handleGoToNextCourse() {
     // 无论后续如何处理，都需要先隐藏 Summary 页面
     hideSummary()
+    courseStore.currentCourse?.id && courseStore.resetCurrentCourse(courseStore.currentCourse?.id)
     if (!userStore.user) {
       // 去注册
       showAuthRequireModal();

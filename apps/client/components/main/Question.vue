@@ -70,6 +70,8 @@ function registerShortcutKeyForInputEl() {
 
       if (courseStore.checkCorrect(inputValue.value.trim())) {
         showAnswer();
+      } else if (courseStore.currentStatement && !courseStore.currentStatement.incorrectQuestionId) {
+        courseStore.updateIncorrectQuestions()
       }
       inputValue.value = "";
     }
