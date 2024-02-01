@@ -23,18 +23,22 @@ export class AuthGuard implements CanActivate {
     } else if (!token) {
       throw new UnauthorizedException();
     }
-    // get metadata
+    const user = await this.parseToken(token, uncheck);
+    if (user) request['user'] = user;
+    return true;
+  }
+
+  async parseToken(token: string, uncheck = false) {
     try {
       const payload = await this.jwtService.verifyAsync(token, {
         secret: process.env.SECRET,
       });
-      request['user'] = payload;
+      return payload;
     } catch {
       if (!uncheck) {
         throw new UnauthorizedException();
       }
     }
-    return true;
   }
 
   private extractTokenFromHeader(request: Request): string | undefined {
