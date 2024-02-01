@@ -73,7 +73,8 @@ function useDoAgain() {
 }
 
 function openRank() {
-  document.getElementById("rank-progress").showModal();
+  const dialog = document.getElementById("rank-progress") as HTMLDialogElement
+  dialog.showModal();
 }
 </script>
 

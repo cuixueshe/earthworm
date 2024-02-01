@@ -63,7 +63,7 @@ async function completeCourse() {
 
   if (userStore.user) {
     const nextCourse = await courseStore.completeCourse(
-      courseStore.currentCourse.id
+      courseStore.currentCourse!.id
     );
 
     nextCourseId = nextCourse.id

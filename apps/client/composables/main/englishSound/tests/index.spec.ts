@@ -19,6 +19,7 @@ describe("useCurrentStatementEnglishSound", () => {
     });
 
     const courseStore = useCourseStore();
+    // @ts-ignore
     courseStore.currentStatement = {
       english: "I",
     };
@@ -42,7 +43,7 @@ describe("useCurrentStatementEnglishSound", () => {
 
     // update english value
     const courseStore = useCourseStore();
-    courseStore.currentStatement.english = "like";
+    courseStore.currentStatement!.english = "like";
     await vi.advanceTimersToNextTimerAsync();
 
     expect(updateSource).toBeCalledTimes(2);
@@ -53,6 +54,7 @@ describe("useCurrentStatementEnglishSound", () => {
     const { playSound } = useCurrentStatementEnglishSound();
 
     const courseStore = useCourseStore();
+    // @ts-ignore
     courseStore.currentStatement = {
       english: "I",
     };

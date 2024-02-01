@@ -6,11 +6,13 @@ export function useCurrentStatementEnglishSound() {
   const courseStore = useCourseStore();
 
   watchEffect(() => {
-    const word = courseStore.currentStatement?.english;
+    const currentStatement = courseStore.currentStatement;
+    if (!currentStatement) throw new Error("Please run courseStore.setup to initialize course first.");
+    const word = currentStatement.english;
     if (prevWord !== word) {
       updateSource(`https://dict.youdao.com/dictvoice?audio=${word}&type=1`);
     }
-    prevWord = courseStore.currentStatement?.english;
+    prevWord = currentStatement.english;
   });
 
   return {
