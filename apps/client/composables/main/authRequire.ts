@@ -1,4 +1,6 @@
-const authRequireModalState = ref()
+import { ref } from "vue";
+
+const authRequireModalState = ref(false);
 
 export function useAuthRequire() {
   function showAuthRequireModal() {
@@ -8,10 +10,10 @@ export function useAuthRequire() {
   function hideAuthRequireModal() {
     authRequireModalState.value = false;
   }
-  
+
   return {
     showAuthRequireModal,
     hideAuthRequireModal,
-    authRequireModalState
-  }
+    authRequireModalState,
+  };
 }

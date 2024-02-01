@@ -1,5 +1,6 @@
 import { useCourseStore } from "~/store/course";
 import { updateSource, play } from "./audio";
+import { watchEffect } from "vue";
 
 let prevWord = "";
 export function useCurrentStatementEnglishSound() {

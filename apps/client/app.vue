@@ -13,12 +13,13 @@
 <script setup lang="tsx">
 import "vfonts/Lato.css";
 import { useUserStore } from "~/store/user";
-import { darkTheme, lightTheme } from 'naive-ui';
-import { Theme, useDarkMode } from '~/composables/darkMode';
+import { darkTheme, lightTheme } from "naive-ui";
+import { Theme, useDarkMode } from "~/composables/darkMode";
+import { computed, onMounted } from "vue";
 
 useRestoreUser();
 
-const { initDarkMode, darkMode, } = useDarkMode()
+const { initDarkMode, darkMode } = useDarkMode();
 
 function useRestoreUser() {
   const userStore = useUserStore();
@@ -26,14 +27,13 @@ function useRestoreUser() {
 }
 
 onMounted(() => {
-  initDarkMode()
-})
+  initDarkMode();
+});
 
 const theme = computed(() => {
-  return darkMode.value === Theme.DARK ? darkTheme : lightTheme
-})
+  return darkMode.value === Theme.DARK ? darkTheme : lightTheme;
+});
 </script>
-
 
 <style>
 #jfToolbar,

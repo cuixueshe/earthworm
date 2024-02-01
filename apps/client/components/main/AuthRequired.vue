@@ -12,19 +12,19 @@
 </template>
 
 <script setup lang="ts">
+import { navigateTo } from "nuxt/app";
 import { useAuthRequire } from "~/composables/main/authRequire";
-import { useGameMode } from '~/composables/main/game';
-import { useCourseStore } from '~/store/course';
+import { useGameMode } from "~/composables/main/game";
+import { useCourseStore } from "~/store/course";
 
-const { authRequireModalState, hideAuthRequireModal } = useAuthRequire()
+const { authRequireModalState, hideAuthRequireModal } = useAuthRequire();
 const { showQuestion } = useGameMode();
-const courseStore = useCourseStore()
+const courseStore = useCourseStore();
 
 function handleSignup() {
-  navigateTo('/auth/signup')
-  hideAuthRequireModal()
-  courseStore.resetStatementIndex()
+  navigateTo("/auth/signup");
+  hideAuthRequireModal();
+  courseStore.resetStatementIndex();
   showQuestion();
 }
-
 </script>
