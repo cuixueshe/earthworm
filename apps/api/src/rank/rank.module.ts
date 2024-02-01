@@ -5,5 +5,6 @@ import { RankService } from './rank.service';
 @Module({
   controllers: [RankController],
   providers: [RankService],
+  exports: [RankService],
 })
 export class RankModule {}

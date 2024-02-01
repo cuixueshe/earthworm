@@ -1,11 +1,11 @@
 import { JwtService } from '@nestjs/jwt';
 import { AuthService } from './auth.service';
 import { UserService } from '../user/user.service';
-import { testDb } from '../utils/helpers/test-db';
+import { mockDb } from '../utils/helpers/mockDb';
 import { user } from '@earthworm/shared';
 import { AuthController } from './auth.controller';
 import { AuthGuard } from './auth.guard';
-import { resetDbHelper } from '../utils/helpers/resetDb';
+import { cleanupMockDb } from '../utils/helpers/cleanupDb';
 
 describe('AuthController', () => {
   let authController: AuthController;
@@ -21,7 +21,7 @@ describe('AuthController', () => {
   };
 
   beforeAll(async () => {
-    userService = new UserService(testDb);
+    userService = new UserService(mockDb);
     jwtService = new JwtService({
       secret: process.env.SECRET,
       signOptions: { expiresIn: '7d' },
@@ -29,10 +29,10 @@ describe('AuthController', () => {
     authService = new AuthService(userService, jwtService);
     authController = new AuthController(authService);
 
-    await resetDbHelper();
+    await cleanupMockDb();
   });
   afterAll(async () => {
-    await resetDbHelper();
+    await cleanupMockDb();
   });
   it('should signup', async () => {
     const res = await authController.signup(newUser);

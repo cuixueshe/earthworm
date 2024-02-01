@@ -1,5 +1,5 @@
-import { resetDbHelper } from '../utils/helpers/resetDb';
-import { testDb } from '../utils/helpers/test-db';
+import { cleanupMockDb } from '../utils/helpers/cleanupDb';
+import { mockDb } from '../utils/helpers/mockDb';
 import { UserProgressController } from './user-progress.controller';
 import { UserProgressService } from './user-progress.service';
 import { createSignInfo } from '../utils/helpers/user';
@@ -11,13 +11,13 @@ describe('UserProgress', () => {
 
   beforeAll(async () => {
     userInfo = await createSignInfo();
-    userProgressService = new UserProgressService(testDb);
+    userProgressService = new UserProgressService(mockDb);
     userProgressController = new UserProgressController(userProgressService);
-    await resetDbHelper();
+    await cleanupMockDb();
   });
 
   afterAll(async () => {
-    await resetDbHelper();
+    await cleanupMockDb();
   });
 
   it('happy path', () => {

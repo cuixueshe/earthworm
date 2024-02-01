@@ -1,7 +1,7 @@
 import { user } from '@earthworm/shared';
-import { testDb } from '../utils/helpers/test-db';
+import { mockDb } from '../utils/helpers/mockDb';
 import { UserService } from './user.service';
-import { resetDbHelper } from '../utils/helpers/resetDb';
+import { cleanupMockDb } from '../utils/helpers/cleanupDb';
 
 describe('UserService', () => {
   let userService: UserService;
@@ -12,11 +12,11 @@ describe('UserService', () => {
     password: 'password',
   };
   beforeAll(async () => {
-    await resetDbHelper();
-    userService = new UserService(testDb);
+    await cleanupMockDb();
+    userService = new UserService(mockDb);
   });
   afterAll(async () => {
-    await resetDbHelper();
+    await cleanupMockDb();
   });
 
   it('should create a user', async () => {

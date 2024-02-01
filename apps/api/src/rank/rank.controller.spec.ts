@@ -1,5 +1,5 @@
 import { mockRedis } from '../utils/helpers/mockRedis';
-import { resetDbHelper } from '../utils/helpers/resetDb';
+import { cleanupMockDb } from '../utils/helpers/cleanupDb';
 import { createSignInfo } from '../utils/helpers/user';
 import { RankController } from './rank.controller';
 import { RankService } from './rank.service';
@@ -17,7 +17,7 @@ describe('Rank', () => {
 
   afterAll(async () => {
     await mockRedis.flushall();
-    await resetDbHelper();
+    await cleanupMockDb();
   });
 
   it('happy end', () => {

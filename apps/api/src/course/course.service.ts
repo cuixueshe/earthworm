@@ -2,7 +2,7 @@ import { DB, DbType } from '../global/providers/db.provider';
 import { eq, asc, gt } from 'drizzle-orm';
 import { statement, course } from '@earthworm/shared';
 import { Injectable, Inject, HttpException, HttpStatus } from '@nestjs/common';
-import { UserEntity } from 'src/user/user.decorators';
+import { UserEntity } from '../user/user.decorators';
 import { UserProgressService } from '../user-progress/user-progress.service';
 import { RankService } from '../rank/rank.service';
 
