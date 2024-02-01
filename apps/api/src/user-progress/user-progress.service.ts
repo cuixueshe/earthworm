@@ -37,13 +37,20 @@ export class UserProgressService {
   }
 
   async update(userId: number, courseId: number) {
-    await this.db
-      .update(userProgress)
-      .set({ courseId })
-      .where(eq(userProgress.userId, userId));
+    try {
+      await this.db
+        .update(userProgress)
+        .set({ courseId })
+        .where(eq(userProgress.userId, userId));
 
-    return {
-      courseId,
-    };
+      return {
+        courseId,
+      };
+    } catch (e) {
+      throw new HttpException(
+        `update userProgress with userId ${userId} failed`,
+        400,
+      );
+    }
   }
 }

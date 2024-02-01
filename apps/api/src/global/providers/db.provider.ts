@@ -5,7 +5,7 @@ import * as mysql from 'mysql2/promise';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
 import { schemas } from '@earthworm/shared';
 
-export const DB = Symbol('DB_SERVICE');
+export const DB = 'DB_SERVICE';
 export type DbType = MySql2Database<typeof schemas>;
 
 const env = process.env;
