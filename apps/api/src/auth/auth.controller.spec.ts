@@ -6,6 +6,7 @@ import { user } from '@earthworm/shared';
 import { AuthController } from './auth.controller';
 import { AuthGuard } from './auth.guard';
 import { cleanupMockDb } from '../utils/helpers/cleanupDb';
+import { generateRandomPhone } from '../utils/helpers/user';
 
 describe('AuthController', () => {
   let authController: AuthController;
@@ -16,7 +17,7 @@ describe('AuthController', () => {
 
   const newUser = {
     name: 'test',
-    phone: '12345678901',
+    phone: generateRandomPhone(),
     password: 'password',
   };
 
@@ -28,8 +29,6 @@ describe('AuthController', () => {
     });
     authService = new AuthService(userService, jwtService);
     authController = new AuthController(authService);
-
-    await cleanupMockDb();
   });
   afterAll(async () => {
     await cleanupMockDb();

@@ -22,7 +22,7 @@ export async function createSignInfo() {
 }
 
 // 随机生成 11 位数的手机号
-function generateRandomPhone(): string {
+export function generateRandomPhone(): string {
   let phone = '1'; // 手机号以1开头
   for (let i = 0; i < 10; i++) {
     phone += Math.floor(Math.random() * 10); // 生成0-9的随机数

@@ -13,7 +13,6 @@ describe('UserProgress', () => {
     userInfo = await createSignInfo();
     userProgressService = new UserProgressService(mockDb);
     userProgressController = new UserProgressController(userProgressService);
-    await cleanupMockDb();
   });
 
   afterAll(async () => {

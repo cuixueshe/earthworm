@@ -12,7 +12,6 @@ describe('UserService', () => {
     password: 'password',
   };
   beforeAll(async () => {
-    await cleanupMockDb();
     userService = new UserService(mockDb);
   });
   afterAll(async () => {

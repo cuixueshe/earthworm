@@ -58,12 +58,12 @@ describe('Course', () => {
     expect(res.id).toBe(2);
   });
 
-  it('should startCourse with first course', async () => {
+  it('should startCourse is first course', async () => {
     const res = await courseController.startCourse(userInfo.user);
     expect(res.cId).toBe(1);
   });
 
-  it('should startCourse with userProgress', async () => {
+  it('should startCourse is userProgress', async () => {
     await userProgressService.update(userInfo.user.userId, 2);
     const res = await courseController.startCourse(userInfo.user);
     expect(res.cId).toBe(2);
