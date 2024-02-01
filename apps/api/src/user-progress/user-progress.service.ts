@@ -1,25 +1,28 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable, Inject, HttpException } from '@nestjs/common';
 import { DB, DbType } from '../global/providers/db.provider';
 import { userProgress } from '@earthworm/shared';
 import { eq } from 'drizzle-orm';
-import { RankService } from '../rank/rank.service';
 
 @Injectable()
 export class UserProgressService {
-  constructor(
-    @Inject(DB) private db: DbType,
-    private readonly rankService: RankService,
-  ) {}
+  constructor(@Inject(DB) private db: DbType) {}
 
   async create(userId: number, courseId: number) {
-    await this.db.insert(userProgress).values({
-      courseId,
-      userId,
-    });
+    try {
+      await this.db.insert(userProgress).values({
+        courseId,
+        userId,
+      });
 
-    return {
-      courseId,
-    };
+      return {
+        courseId,
+      };
+    } catch (e) {
+      throw new HttpException(
+        `create userProgress repeatedly with userId ${userId}`,
+        400,
+      );
+    }
   }
 
   async findOne(userId: number) {
