@@ -9,7 +9,7 @@ export interface User {
 const LOCAL_STORAGE_KEY = "userInfo";
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
-  answer: "ctrl+;",
+  answer: "Ctrl+;",
 };
 
 export const useUserStore = defineStore("user", () => {

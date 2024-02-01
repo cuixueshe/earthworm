@@ -1,3 +1,4 @@
+import { ref, onMounted, computed } from "vue";
 import { DEFAULT_SHORTCUT_KEYS } from "~/store/user";
 
 let showModal = ref<boolean>(false);
@@ -5,6 +6,7 @@ let currentKeyType = ref<string>("");
 
 export function useShortcutDialogMode() {
   function handleEdit(type: string) {
+    (document.getElementById("shortcutDialog") as any).showModal();
     showModal.value = true;
     currentKeyType.value = type;
   }
@@ -58,6 +60,8 @@ export function useShortcutKeyMode() {
    * 有待讨论，产品角度出发，快捷键应该只支持组合键形式，单键组合在使用过程中不方便写单词
    */
   function handleKeyup(e: KeyboardEvent) {
+    if (!showModal.value) return;
+
     if (e.key === "Enter") {
       saveShortcutKeys();
     }

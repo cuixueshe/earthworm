@@ -11,6 +11,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted } from "vue";
+
 type Menu = {
   name: string;
   component: any;
