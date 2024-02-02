@@ -40,15 +40,16 @@
   </div>
   <ProgressRank></ProgressRank>
   <MessageBox
+    class="mt-[-4vh]"
     :show="showTipModal"
-    content="Do you confirm the clearing progress?"
+    content="Do you confirm the reset progress?"
     @cancel="handleTipCancel"
     @confirm="handleTipConfirm"
   ></MessageBox>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { ref, computed } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import { useRankModal } from "~/composables/rank/modal";
@@ -77,15 +78,17 @@ const { showTipModal, handleDoAgain, handleTipCancel, handleTipConfirm } =
   useDoAgain();
 
 function useDoAgain() {
-  let showTipModal = ref<boolean>(false);
+  const showTipModal = ref<boolean>(false);
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {
     showTipModal.value = true;
   }
+
   function handleTipCancel() {
     showTipModal.value = false;
   }
+
   function handleTipConfirm() {
     coursesStore.doAgain();
     showQuestion();
@@ -106,7 +109,6 @@ function useDoAgain() {
 .icon-item {
   @apply w-6 h-6;
 }
-
 .link-item {
   @apply cursor-pointer hover:text-fuchsia-500;
 }
