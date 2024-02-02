@@ -8,12 +8,13 @@
 
 By constructing sentences with conjunctions, it helps you learn English better~ 😊
 
-
 ## How to start ?
 
 ### ⚠️ Requirements
 
+- **pnpm version >= 8**
 - **Node.js version >= v20**
+- **MySQL version >= 8**
 - **Docker**. please make sure it is installed and running successfully on your local machine.
   - If Docker is not used, it is necessary to ensure that MySQL version is >= 8.0.0 and Redis version is >= 5.0.0.
 - The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors.
@@ -22,6 +23,8 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 docker --version # Docker version 24.0.7, build afdd53b
 
 node --version # v20+
+
+pnpm -v # 8+
 ```
 
 ### 1. Install dependencies
@@ -168,9 +171,9 @@ docker images
 2. Avoid including UI logic in composables.
    1. Such as `useMessage`
    2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
-  
+
 ## Contributing
 
-Thanks to everyone who has already contributed to earthworm !
+Thanks to everyone who has already contributed to Earthworm! 🎉
 
 <a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>

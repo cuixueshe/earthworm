@@ -12,7 +12,9 @@
 
 ### ⚠️ 先看注意事项
 
+- **pnpm version >= 8**
 - **Node.js version >= v20**
+- **MySQL version >= 8**
 - 该项目依赖 **Docker**，所以请确保你本地已安装并成功运行
   - 如果不使用Docker，则需确保MySQL version >= 8.0.0，Redis version >= 5.0.0
 - 下面所提到的相关操作基于当前项目的根目录位置，请注意检查不要出错
@@ -21,6 +23,8 @@
 docker --version # Docker version 24.0.7, build afdd53b
 
 node --version # v20+
+
+pnpm -v # 8+
 ```
 
 ### 1. 安装依赖
@@ -170,3 +174,9 @@ docker images
 2. composables 里面不要包含 UI 逻辑
    1. useMessage 之类的
    2. router 相关的也不要放进去（不便于测试 我们把 router 划分为 UI 逻辑）
+
+## 贡献者
+
+在此感谢所有为 Earthworm 做出过贡献的人！🎉
+
+<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>
