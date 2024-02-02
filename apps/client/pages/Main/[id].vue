@@ -32,16 +32,7 @@ const { showQuestion } = useGameMode();
 showQuestion();
 
 onMounted(async () => {
-  const id = Number(route.params.id)
-  const oldId = coursesStore.currentCourse?.id
-
-  // 说明当前课程数据有缓存，不需要重新请求
-  if (id === oldId) {
-    isLoading.value = false
-    return
-  }
-
-  await coursesStore.setup(id);
+  await coursesStore.setup(Number(route.params.id));
   isLoading.value = false
 })
 

@@ -1,5 +1,5 @@
 import { it, expect, describe, beforeEach } from "vitest";
-import { getToken, cleanToken, checkHaveToken } from "../token";
+import { getToken, cleanToken, checkHaveToken, setToken } from "../token";
 
 describe("token", () => {
   beforeEach(() => {
@@ -13,7 +13,7 @@ describe("token", () => {
   });
 
   it("should check if token exists", () => {
-    expect(checkHaveToken()).toBe(null); 
+    expect(checkHaveToken()).toBe(null);
     setToken("123456");
     expect(checkHaveToken()).toBe("123456");
   });
