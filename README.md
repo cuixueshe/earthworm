@@ -14,9 +14,9 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 
 - **pnpm version >= 8**
 - **Node.js version >= v20**
-- **MySQL version >= 8**
+- **MySQL version >= 8.0.0**
+- **Redis version >= 5.0.0**
 - **Docker**. please make sure it is installed and running successfully on your local machine.
-  - If Docker is not used, it is necessary to ensure that MySQL version is >= 8.0.0 and Redis version is >= 5.0.0.
 - The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors.
 
 ```bash
