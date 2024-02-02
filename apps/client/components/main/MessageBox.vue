@@ -16,10 +16,10 @@
 <script setup lang="ts">
 interface IMessageBoxProps {
   show: boolean;
-  title: string;
-  content: string;
-  confirmBtnText: string;
-  cancelBtnText: string;
+  content?: string;
+  title?: string;
+  confirmBtnText?: string;
+  cancelBtnText?: string;
 }
 
 withDefaults(defineProps<IMessageBoxProps>(), {
