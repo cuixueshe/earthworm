@@ -51,7 +51,9 @@
           </div>
           <div
             class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl">
-            <div class="h-[330px] flex p-4">这里是 earthworm 背后的学习原理 写的好不好?</div>
+            <div class="h-[330px] flex p-4">
+              这里是 earthworm 背后的学习原理 写的好不好?
+            </div>
           </div>
         </div>
         <div class="w-1/2"></div>
@@ -65,35 +67,27 @@
 </template>
 
 <script setup lang="ts">
-import Loading from '~/components/Loading.vue'
-import { ref } from 'vue';
-import { onMounted, onUnmounted } from "vue";
+import Loading from "~/components/Loading.vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
-import { useActiveCourseId } from '~/store/course';
-import { startGame } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
+import { useGameStore } from "~/store/game";
 
-const isLoading = ref(false)
-const { handleKeydown } = useShortcutToGame();
+const { handleKeydown, isLoading } = useShortcutToGame();
+const gameStore = useGameStore();
+
 
 function useShortcutToGame() {
   const router = useRouter();
+  const isLoading = ref(false);
 
   async function handleKeydown() {
-    const { updateCourseId, getCourseId } = useActiveCourseId();
-    let courseId = getCourseId()
-    if (!courseId) {
-      // 显示 Loading
-      isLoading.value = true
-      // 更新缓存的课程 id
-      let res = await startGame();
-      courseId = res.courseId
-      updateCourseId(courseId)
-      // 关闭 Loading
-      isLoading.value = false
-    }
+    isLoading.value = true;
+    const { courseId } = await gameStore.startGame();
+    isLoading.value = false;
     router.push(`/main/${courseId}`);
   }
+
   onMounted(() => {
     registerShortcut("enter", handleKeydown);
   });
@@ -104,6 +98,7 @@ function useShortcutToGame() {
 
   return {
     handleKeydown,
+    isLoading
   };
 }
 </script>
