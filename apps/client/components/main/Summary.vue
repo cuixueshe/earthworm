@@ -71,8 +71,6 @@ async function completeCourse() {
   if (userStore.user && courseStore.currentCourse) {
     const nextCourse = await courseStore.completeCourse(courseStore.currentCourse.id);
     nextCourseId = nextCourse.id
-    // TODO 这里的逻辑都需要重构到 game 里面 先临时这么写
-    // 缓存下一课的课程 id
     gameStore.updateActiveCourseId(nextCourseId)
   }
 }

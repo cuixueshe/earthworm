@@ -26,7 +26,7 @@
           </svg>
         </button>
         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-          <li><a>User info</a></li>
+          <li @click="handleViewUserInfo"><a>User info</a></li>
           <li @click="handleLogout"><a>Log out</a></li>
           <!-- <li><a>Item 2</a></li> -->
         </ul>
@@ -54,6 +54,10 @@ const route = useRoute();
 const userStore = useUserStore();
 
 const { setDarkMode, toggleDarkMode } = useDarkMode()
+
+const handleViewUserInfo = () => {
+  navigateTo('/user/info')
+}
 
 const handleLogin = () => {
   navigateTo("/auth/login");
