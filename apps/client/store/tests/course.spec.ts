@@ -122,6 +122,8 @@ describe("course", () => {
 
       await store.completeCourse(1);
 
+      // 重新开始之后 才可以在 setup 
+      store.doAgain()
       await store.setup(firstCourse.id); // 在重新加载
 
       expect(store.statementIndex).toBe(0); // 验证 statementIndex 是否重置
