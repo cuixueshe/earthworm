@@ -3,7 +3,7 @@
     <div class="flex relative flex-wrap justify-center ml-2 transition-all">
       <template v-for="i in courseStore.wordCount" :key="i">
         <div
-          class="flex items-end justify-center h-[4.2rem] min-w-20 px-4 mr-2 border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
+          class="flex items-end justify-center h-[4.8rem] min-w-28 px-2 mr-2 border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
             i - 1 === activeInputIndex && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
