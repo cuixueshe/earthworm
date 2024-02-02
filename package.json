@@ -14,13 +14,16 @@
     "docker:stop": "docker-compose stop",
     "docker:delete": "docker-compose down",
     "docker:down": "docker-compose down --volumes",
-    "build:serve":"pnpm schema:build && pnpm -F api build",
+    "build:serve": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
-    "prod:serve":"pnpm -F api start:prod:pm"
+    "prod:serve": "pnpm -F api start:prod:pm"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=20.11.0"
+  },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "dotenv": "^16.3.1",

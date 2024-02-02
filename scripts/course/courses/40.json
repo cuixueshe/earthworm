@@ -380,14 +380,9 @@
 		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/"
 	},
 	{
-		"chinese": "他在他回家的路上停下来去买",
-		"english": "he stopped to buy some flowers",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/ /ɑn/"
-	},
-	{
-		"chinese": "一些花",
-		"english": "on his way home",
-		"soundmark": "/hɪz/ /we/ /hom/"
+		"chinese": "他在他回家的路上停下来去买一些花",
+		"english": "he stopped to buy some flowers on his way home",
+		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/ /ɑn/ /hɪz/ /we/ /hom/"
 	},
 	{
 		"chinese": "买(ing形式)",
@@ -430,7 +425,7 @@
 		"soundmark": "/fɚ/ /hɚ/"
 	},
 	{
-		"chinese": "她停止为她买花",
+		"chinese": "他停止为她买花",
 		"english": "he stopped buying flowers for her",
 		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/"
 	},

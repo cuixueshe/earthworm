@@ -145,22 +145,6 @@ function useCourseProgress() {
   };
 }
 
-const ACTIVE_COURSE_ID = 'activeCourseId';
-export function useActiveCourseId() {
-  function getCourseId() {
-    return Number(localStorage.getItem(ACTIVE_COURSE_ID));
-  }
-
-  function updateCourseId(courseId: number) {
-    localStorage.setItem(ACTIVE_COURSE_ID, String(courseId));
-  }
-
-  return {
-    getCourseId,
-    updateCourseId,
-  };
-}
-
 function useIncorrectQuestion() {
   function saveIncorrectQuestion(courseId: number, question: Statement) {
     const courseIncorrectQuestion = JSON.parse(localStorage.getItem("courseIncorrectQuestion")!) || {};
