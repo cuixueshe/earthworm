@@ -8,7 +8,7 @@
 
 通过连词构句的方式让你更好的学习英语~ 😊
 
-## 如何开始？
+## 🚀 如何开始？
 
 ### ⚠️ 先看注意事项
 
@@ -97,32 +97,11 @@ pnpm dev:client
 
 ### 如何正确的更新课程数据？
 
-在你多次执行 `pnpm db:upload` 命令时，就会导致数据库中课程 `id` 持续自增并覆盖
-
-所以当你发现有错误的课程数据并修改后，应当使用下面的命令将课程数据更新到数据库中
+当你发现有错误的课程数据并修改后，应当使用下面的命令将课程数据更新到数据库中
 
 ```bash
 pnpm db:update
 ```
-
-### 数据库中的课程 id 被脚本自增覆盖后导致后端服务报错？
-
-**尝试删除掉 Docker 容器，但重新启动后还是保留了之前的数据？**
-
-因为数据是被存储在本地的 Docker Volumes 中，具体在 [docker-compose.yml](./docker-compose.yml) 中顶层的配置参数 `volumes`，所以即使你停止或者删掉了容器，数据还是会保留哒。
-
-要解决这个问题其实很简单，把 volumes 数据删除即可，当然我们也提供了一个命令给你
-
-```bash
-pnpm docker:down
-
-# 本质上就是执行下面这个，意思是停止并删除容器服务 + 创建的 volumes 数据
-docker-compose down --volumes
-```
-
-⚠️ 但需要注意的是使用之后，会删除数据库中的所有数据，你也需要重新跑一遍 **如何开始** 的步骤（从步骤 3 开始即可）
-
-**TODO**: 后面看看有没有更优雅的方式规避或解决这个问题，一开始本来是想着直接删数据库数据，但是发现有外键约束。
 
 ### pnpm install 报错？
 
@@ -135,9 +114,11 @@ docker-compose down --volumes
 pnpm i -g
 # or
 pnpm i -g pnpm
+# or
+npx pnpm i -g pnpm@latest
 ```
 
-**argon2 模块安装失败，Windows 环境下的处理方式**
+**在 Windows 上安装 argon2 模块失败的处理方式**
 
 - 安装 Visual Studio 2015 以上版本的组件，具体来说是 “使用 C++的桌面开发” 这个组件。（实际上包含 C++相关开发工具库的组件都可以）
 - 编译过程中遇到中文乱码时，在命令行中执行 `chcp 437` 后，再重新运行 install 命令。
@@ -150,9 +131,9 @@ pnpm i -g pnpm
 permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
 ```
 
-解决方法：
+> 解决方法
 
-- 将当前的用户添加到 docker 组中：
+将当前的用户添加到 docker 组中
 
 ```bash
 # 添加 docker 用户组
