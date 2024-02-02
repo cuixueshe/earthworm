@@ -14,6 +14,7 @@
 
 - **Node.js version >= v20**
 - 该项目依赖 **Docker**，所以请确保你本地已安装并成功运行
+  - 如果不使用Docker，则需确保MySQL version >= 8.0.0，Redis version >= 5.0.0
 - 下面所提到的相关操作基于当前项目的根目录位置，请注意检查不要出错
 
 ```bash
