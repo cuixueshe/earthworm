@@ -8,6 +8,12 @@
 
 By constructing sentences with conjunctions, it helps you learn English better~ 😊
 
+## Contributing
+
+Thanks to everyone who has already contributed to earthworm !
+
+<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>
+
 ## How to start ?
 
 ### ⚠️ Requirements
