@@ -8,11 +8,6 @@
 
 By constructing sentences with conjunctions, it helps you learn English better~ 😊
 
-## Contributing
-
-Thanks to everyone who has already contributed to earthworm !
-
-<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>
 
 ## How to start ?
 
@@ -173,3 +168,9 @@ docker images
 2. Avoid including UI logic in composables.
    1. Such as `useMessage`
    2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
+  
+## Contributing
+
+Thanks to everyone who has already contributed to earthworm !
+
+<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>
