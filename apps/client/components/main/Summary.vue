@@ -32,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import confetti from "canvas-confetti";
 import { watch, ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from "~/store/user";
@@ -40,8 +39,8 @@ import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
-import { isTheFirstDayOfLunarYear, isTheLastDayOfLunarYear } from '~/utils/bonus';
 import { useGameStore } from "~/store/game";
+import { useConfetti } from '~/composables/main/confetti';
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
@@ -87,100 +86,6 @@ function useDoAgain() {
 
   return {
     handleDoAgain,
-  };
-}
-
-function useConfetti() {
-  const confettiCanvasRef = ref<HTMLCanvasElement>();
-  let myConfetti: ReturnType<typeof confetti.create>
-
-  const initMyConfetti = () => {
-    myConfetti = confetti.create(confettiCanvasRef.value, {
-      resize: true,
-      useWorker: true,
-    });
-  }
-
-  const normalConfetti = () => {
-    myConfetti({
-      particleCount: 300,
-      spread: 180,
-      origin: { y: -0.1 },
-      startVelocity: -35,
-    });   
-  }
-
-  function randomInRange(min: number, max: number) {
-    return Math.random() * (max - min) + min;
-  }
-
-  const lastDayConfetti = () => {
-    const end = Date.now() + (15 * 1000);
-    
-    const colors = ['#bb0000', '#ffffff'];
-
-    (function frame() {
-      myConfetti({
-        particleCount: 2,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 },
-        colors: colors
-      });
-      myConfetti({
-        particleCount: 2,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 },
-        colors: colors
-      });
-
-      if (Date.now() < end) {
-        requestAnimationFrame(frame);
-      }
-    }());
-  }
-
-  const firstDayConfetti = () => {
-    const duration = 15 * 1000;
-    const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-    const chineseReds = ['#ed5a65', '#c04851', '#c02c38', '#7c1823']
-    const interval:NodeJS.Timeout = setInterval(function() {
-      const timeLeft = animationEnd - Date.now();
-
-      if (timeLeft <= 0) {
-        return clearInterval(interval);
-      }
-
-      const particleCount = 50 * (timeLeft / duration);
-      // since particles fall down, start a bit higher than random
-      myConfetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }, colors: chineseReds });
-      myConfetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }, colors: chineseReds });
-    }, 250);
-  }
-
-  const playConfetti = () => {
-    if (isTheFirstDayOfLunarYear()) {
-      firstDayConfetti()
-      return
-    }
-
-    if (isTheLastDayOfLunarYear()) {
-      lastDayConfetti()
-      return
-    }
-    
-    normalConfetti()
-  };
-
-  onMounted(() => {
-    initMyConfetti()
-  })
-
-  return {
-    confettiCanvasRef,
-    playConfetti,
   };
 }
 
