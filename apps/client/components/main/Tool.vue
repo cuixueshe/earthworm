@@ -87,14 +87,20 @@
     ></div>
   </div>
   <ProgressRank></ProgressRank>
+  <MessageBox
+    :show="showTipModal"
+    content="Do you confirm the clearing progress?"
+    @cancel="handleTipCancel"
+    @confirm="handleTipConfirm"
+  ></MessageBox>
 </template>
 
 <script setup lang="ts">
+import { computed, ref, watch } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import ProgressRank from "~/components/rank/ProgressRank.vue";
-import { computed } from "vue";
-import { useDialog } from "naive-ui";
+import MessageBox from "~/components/main/MessageBox.vue";
 
 const courseStore = useCourseStore();
 
@@ -113,35 +119,35 @@ const currentPercentage = computed(() => {
 });
 
 const coursesStore = useCourseStore();
-const { handleDoAgain } = useDoAgain();
+const { showTipModal, handleDoAgain, handleTipCancel, handleTipConfirm } =
+  useDoAgain();
 
-const dialog = useDialog();
 function useDoAgain() {
+  let showTipModal = ref<boolean>(false);
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {
-    dialog.warning({
-      title: "Tips",
-      content: "Do you confirm the clearing progress?",
-      positiveText: "Confirm",
-      negativeText: "Cancel",
-      onPositiveClick: () => {
-        coursesStore.doAgain();
-        showQuestion();
-      },
-      onNegativeClick: () => {
-        return;
-      },
-    });
+    showTipModal.value = true;
+  }
+  function handleTipCancel() {
+    showTipModal.value = false;
+  }
+  function handleTipConfirm() {
+    coursesStore.doAgain();
+    showQuestion();
+    handleTipCancel();
   }
 
   return {
+    showTipModal,
     handleDoAgain,
+    handleTipCancel,
+    handleTipConfirm,
   };
 }
 
 function openRank() {
-  document.getElementById("rank-progress").showModal();
+  (document.getElementById("rank-progress") as any).showModal();
 }
 </script>
 
