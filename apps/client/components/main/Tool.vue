@@ -39,14 +39,22 @@
       :style="{ width: currentPercentage + '%' }"></div>
   </div>
   <ProgressRank></ProgressRank>
+  <MessageBox
+    class="mt-[-4vh]"
+    :show="showTipModal"
+    content="Do you confirm the reset progress?"
+    @cancel="handleTipCancel"
+    @confirm="handleTipConfirm"
+  ></MessageBox>
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import { useRankModal } from "~/composables/rank/modal";
 import ProgressRank from "~/components/rank/ProgressRank.vue";
-import { computed } from "vue";
+import MessageBox from "~/components/main/MessageBox.vue";
 
 const rankModal = useRankModal();
 const courseStore = useCourseStore();
@@ -66,21 +74,34 @@ const currentPercentage = computed(() => {
 });
 
 const coursesStore = useCourseStore();
-const { handleDoAgain } = useDoAgain();
+const { showTipModal, handleDoAgain, handleTipCancel, handleTipConfirm } =
+  useDoAgain();
 
 function useDoAgain() {
+  const showTipModal = ref<boolean>(false);
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {
+    showTipModal.value = true;
+  }
+
+  function handleTipCancel() {
+    showTipModal.value = false;
+  }
+
+  function handleTipConfirm() {
     coursesStore.doAgain();
     showQuestion();
+    handleTipCancel();
   }
 
   return {
+    showTipModal,
     handleDoAgain,
+    handleTipCancel,
+    handleTipConfirm,
   };
 }
-
 
 </script>
 
@@ -88,7 +109,6 @@ function useDoAgain() {
 .icon-item {
   @apply w-6 h-6;
 }
-
 .link-item {
   @apply cursor-pointer hover:text-fuchsia-500;
 }
