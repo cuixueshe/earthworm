@@ -27,7 +27,12 @@
         </button>
         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
           <li @click="handleViewUserInfo"><a>User info</a></li>
-          <li @click="handleLogout"><a>Log out</a></li>
+          <n-popconfirm negative-text="No" positive-text="Yes" @positive-click="handleLogout">
+            <template #trigger>
+              <li><a>Log out</a></li>
+            </template>
+            Are you sure?
+          </n-popconfirm>
           <!-- <li><a>Item 2</a></li> -->
         </ul>
       </div>
