@@ -14,15 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
-
-interface IMessageBoxProps {
-  modelValue: boolean;
-  content?: string;
-  title?: string;
-  confirmBtnText?: string;
-  cancelBtnText?: string;
-}
+import { ref, } from "vue";
+import { useMessageBox, type IMessageBoxProps, type MessageBoxEmit } from '../../composables/main/messageBox';
 
 const props = withDefaults(defineProps<IMessageBoxProps>(), {
   modelValue: false,
@@ -31,32 +24,9 @@ const props = withDefaults(defineProps<IMessageBoxProps>(), {
   confirmBtnText: "Confirm",
   cancelBtnText: "Cancel",
 });
-const emits = defineEmits(["update:modelValue", "confirm"]);
+const emit = defineEmits<MessageBoxEmit>();
 
-function handleCancel() {
-  emits("update:modelValue", false);
-}
-function handleConfirm() {
-  emits("update:modelValue", true);
-  emits("confirm");
-}
+const dialogBoxRef = ref<HTMLElement | null>(null);
+const { handleCancel, handleConfirm } = useMessageBox(props, emit, dialogBoxRef)
 
-let dialogBoxRef = ref<HTMLElement | null>(null);
-function pointDialogOutside(e: MouseEvent) {
-  if (!props.modelValue) return;
-  if (!dialogBoxRef.value?.contains(e.target as Node)) {
-    handleCancel();
-  }
-}
-
-watch(
-  () => props.modelValue,
-  (isShow) => {
-    if (isShow) {
-      document.addEventListener("mouseup", pointDialogOutside);
-    } else {
-      document.removeEventListener("mouseup", pointDialogOutside);
-    }
-  }
-);
 </script>
