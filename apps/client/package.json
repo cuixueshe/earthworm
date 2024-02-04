@@ -33,6 +33,8 @@
     "@types/canvas-confetti": "^1.6.4",
     "axios": "^1.6.6",
     "canvas-confetti": "^1.9.2",
-    "pinia": "^2.1.7"
+    "pinia": "^2.1.7",
+    "vee-validate": "^4.12.5",
+    "yup": "^1.3.3"
   }
 }
