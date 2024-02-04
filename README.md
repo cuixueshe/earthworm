@@ -8,19 +8,23 @@
 
 By constructing sentences with conjunctions, it helps you learn English better~ 😊
 
-## How to start ?
+## 🚀 How to start ?
 
 ### ⚠️ Requirements
 
+- **pnpm version >= 8**
 - **Node.js version >= v20**
+- **MySQL version >= 8.0.0**
+- **Redis version >= 5.0.0**
 - **Docker**. please make sure it is installed and running successfully on your local machine.
-  - If Docker is not used, it is necessary to ensure that MySQL version is >= 8.0.0 and Redis version is >= 5.0.0.
 - The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors.
 
 ```bash
 docker --version # Docker version 24.0.7, build afdd53b
 
 node --version # v20+
+
+pnpm -v # 8+
 ```
 
 ### 1. Install dependencies
@@ -93,29 +97,11 @@ pnpm dev:client
 
 ### How to correctly update course data ?
 
-Repeatedly executing the pnpm `db:upload` command may lead to a continuous increment of course `id` in the database, potentially causing overwrites.So, when you identify incorrect course data and make modifications, you should use the following command to update the course data in the database.
+when you identify incorrect course data and make modifications, you should use the following command to update the course data in the database.
 
 ```bash
 pnpm db:update
 ```
-
-### The backend service encounters errors when the course id in the database are overwritten due to script-based auto-increment ?
-
-**Attempted to delete Docker container, but after restarting, the previous data is still retained?**
-
-Because the data is stored in the local Docker Volumes, specifically configured in the top-level parameters 'volumes' in the [docker-compose.yml](./docker-compose.yml) file, even if you stop or delete the containers, the data will still be retained.
-
-To solve this issue is actually quite simple; you just need to delete the volumes data. Of course, we also provide a command for you.
-
-```bash
-pnpm docker:down
-
-# Run the command `pnpm docker:down`,which essentially performs the following command:
-# stop and delete the container service and the created volumes data
-docker-compose down --volumes
-```
-
-⚠️ However, please note that using this command will delete all data in the database. You will need to rerun the steps in 'How to Start' (starting from step 3)
 
 ### pnpm install Error?
 
@@ -129,9 +115,11 @@ First try the following command to update `pnpm`
 pnpm i -g
 # or
 pnpm i -g pnpm
+# or
+npx pnpm i -g pnpm@latest
 ```
 
-**Error installing the argon2 module on Windows:**
+**Error installing the argon2 module on Windows**
 
 - Install Visual Studio 2015 or later, specifically the "Desktop development with C++" component. (In practice, any component containing C++ development tools and libraries will suffice.)
 - If you encounter Chinese characters display issues during compilation, execute `chcp 437` in the command prompt, then rerun the install command.
@@ -144,9 +132,9 @@ When using WSL2 as a development environment in Windows, the following error occ
 permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
 ```
 
-Solution:
+> Solution
 
-- Add the current user to the docker group:
+Add the current user to the docker group
 
 ```bash
 # Add docker user group
@@ -167,3 +155,9 @@ docker images
 2. Avoid including UI logic in composables.
    1. Such as `useMessage`
    2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
+
+## Contributing
+
+Thanks to everyone who has already contributed to Earthworm! 🎉
+
+<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>
