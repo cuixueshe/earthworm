@@ -1,5 +1,5 @@
 <template>
-  <dialog class="modal" :open="show">
+  <dialog class="modal" :open="props.modelValue">
     <div ref="dialogBoxRef" class="modal-box">
       <h3 class="font-bold text-lg">{{ title }}</h3>
       <p class="py-4">{{ content }}</p>
@@ -14,10 +14,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, watch } from "vue";
 
 interface IMessageBoxProps {
-  show: boolean;
+  modelValue: boolean;
   content?: string;
   title?: string;
   confirmBtnText?: string;
@@ -25,33 +25,38 @@ interface IMessageBoxProps {
 }
 
 const props = withDefaults(defineProps<IMessageBoxProps>(), {
-  show: false,
+  modelValue: false,
   title: "Tips",
   content: "Are you sure?",
   confirmBtnText: "Confirm",
   cancelBtnText: "Cancel",
 });
-const emits = defineEmits(["confirm", "cancel"]);
+const emits = defineEmits(["update:modelValue", "confirm"]);
 
 function handleCancel() {
-  emits("cancel", false);
+  emits("update:modelValue", false);
 }
 function handleConfirm() {
-  emits("confirm", true);
+  emits("update:modelValue", true);
+  emits("confirm");
 }
 
 let dialogBoxRef = ref<HTMLElement | null>(null);
 function pointDialogOutside(e: MouseEvent) {
-  if (!props.show) return;
+  if (!props.modelValue) return;
   if (!dialogBoxRef.value?.contains(e.target as Node)) {
-    handleCancel()
+    handleCancel();
   }
 }
 
-onMounted(() => {
-  document.addEventListener("mouseup", pointDialogOutside);
-});
-onUnmounted(() => {
-  document.removeEventListener("mouseup", pointDialogOutside);
-});
+watch(
+  () => props.modelValue,
+  (isShow) => {
+    if (isShow) {
+      document.addEventListener("mouseup", pointDialogOutside);
+    } else {
+      document.removeEventListener("mouseup", pointDialogOutside);
+    }
+  }
+);
 </script>
