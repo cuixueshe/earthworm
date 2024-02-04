@@ -1,7 +1,7 @@
 import { onMounted, ref } from "vue";
 import confetti from "canvas-confetti";
 import { isTheFirstDayOfLunarYear, isTheLastDayOfLunarYear } from '~/utils/bonus';
-import { redFireworksEffect, schoolPrideEffect, normalEffect } from '~/utils/confettiEffect';
+import { redFireworksEffect, schoolPrideEffect, normalEffect } from './confettiEffect';
 
 export function useConfetti() {
   const confettiCanvasRef = ref<HTMLCanvasElement>();

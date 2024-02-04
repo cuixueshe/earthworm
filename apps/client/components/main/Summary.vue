@@ -40,7 +40,7 @@ import { useGameMode } from "~/composables/main/game";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameStore } from "~/store/game";
-import { useConfetti } from '~/composables/main/confetti';
+import { useConfetti } from '~/composables/main/confetti/useConfetti';
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();

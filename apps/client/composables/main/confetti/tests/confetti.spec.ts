@@ -1,8 +1,8 @@
 import { it, expect, describe, beforeEach, vi } from 'vitest'
-import { useConfetti } from '../confetti'
-import { redFireworksEffect, normalEffect, schoolPrideEffect } from '~/utils/confettiEffect';
+import { useConfetti } from '../useConfetti'
+import { redFireworksEffect, normalEffect, schoolPrideEffect } from '../confettiEffect';
 
-vi.mock('~/utils/confettiEffect', () => {
+vi.mock('../confettiEffect', () => {
   return {
     redFireworksEffect: vi.fn(),
     normalEffect: vi.fn(),
