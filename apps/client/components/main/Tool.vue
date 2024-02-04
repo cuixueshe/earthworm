@@ -40,8 +40,8 @@
       :style="{ width: currentPercentage + '%' }"></div>
   </div>
   <ProgressRank></ProgressRank>
-  <MessageBox class="mt-[-4vh]" :show="showTipModal" content="Do you confirm the reset progress?"
-    @cancel="handleTipCancel" @confirm="handleTipConfirm"></MessageBox>
+  <MessageBox class="mt-[-4vh]" v-model:isShowModal="showTipModal" content="Do you confirm the reset progress?"
+    @confirm="handleTipConfirm"></MessageBox>
 </template>
 
 <script setup lang="ts">
@@ -71,7 +71,7 @@ const currentPercentage = computed(() => {
 });
 
 const coursesStore = useCourseStore();
-const { showTipModal, handleDoAgain, handleTipCancel, handleTipConfirm } =
+const { showTipModal, handleDoAgain, handleTipConfirm } =
   useDoAgain();
 
 function useDoAgain() {
@@ -82,20 +82,14 @@ function useDoAgain() {
     showTipModal.value = true;
   }
 
-  function handleTipCancel() {
-    showTipModal.value = false;
-  }
-
   function handleTipConfirm() {
     coursesStore.doAgain();
     showQuestion();
-    handleTipCancel();
   }
 
   return {
     showTipModal,
     handleDoAgain,
-    handleTipCancel,
     handleTipConfirm,
   };
 }
