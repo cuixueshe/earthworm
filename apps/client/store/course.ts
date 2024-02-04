@@ -13,6 +13,7 @@ export interface Course {
   id: number;
   title: string;
   statements: Statement[];
+  tvLink:string;
 }
 
 export const useCourseStore = defineStore("course", () => {

@@ -26,6 +26,11 @@
     <div>
       （{{ currentSchedule }}<span class="mx-[2px]">/</span>{{ courseStore.totalQuestionsCount }}）
     </div>
+    <div>
+      <a :href="coursesStore.currentCourse?.tvLink" target="_blank" rel="noopener noreferrer">
+        <img class="w-[24px]" src="../../assets/img/tv_b.png" alt="TV_B">
+      </a>
+    </div>
     <div class="flex-1"></div>
     <div @click="handleDoAgain" class="link-item mr-4">
       <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
@@ -39,13 +44,8 @@
       :style="{ width: currentPercentage + '%' }"></div>
   </div>
   <ProgressRank></ProgressRank>
-  <MessageBox
-    class="mt-[-4vh]"
-    :show="showTipModal"
-    content="Do you confirm the reset progress?"
-    @cancel="handleTipCancel"
-    @confirm="handleTipConfirm"
-  ></MessageBox>
+  <MessageBox class="mt-[-4vh]" :show="showTipModal" content="Do you confirm the reset progress?"
+    @cancel="handleTipCancel" @confirm="handleTipConfirm"></MessageBox>
 </template>
 
 <script setup lang="ts">
@@ -109,6 +109,7 @@ function useDoAgain() {
 .icon-item {
   @apply w-6 h-6;
 }
+
 .link-item {
   @apply cursor-pointer hover:text-fuchsia-500;
 }
