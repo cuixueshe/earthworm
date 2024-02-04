@@ -32,8 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import confetti from "canvas-confetti";
-import { watch, ref } from 'vue';
+import { watch, ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from "~/store/user";
 import { useCourseStore } from "~/store/course";
@@ -41,6 +40,7 @@ import { useGameMode } from "~/composables/main/game";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameStore } from "~/store/game";
+import { useConfetti } from '~/composables/main/confetti/useConfetti';
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
@@ -86,29 +86,6 @@ function useDoAgain() {
 
   return {
     handleDoAgain,
-  };
-}
-
-function useConfetti() {
-  const confettiCanvasRef = ref<HTMLCanvasElement>();
-
-  const playConfetti = () => {
-    const myConfetti = confetti.create(confettiCanvasRef.value, {
-      resize: true,
-      useWorker: true,
-    });
-
-    myConfetti({
-      particleCount: 300,
-      spread: 180,
-      origin: { y: -0.1 },
-      startVelocity: -35,
-    });
-  };
-
-  return {
-    confettiCanvasRef,
-    playConfetti,
   };
 }
 
