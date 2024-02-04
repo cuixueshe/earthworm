@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="tooltip text-xl cursor-pointer fill-current  hover:text-[#d946ef]" :data-tip="NOTE_TIP"
+  <NuxtLink class="tooltip text-xl cursor-pointer fill-current hover:text-[#d946ef]" :data-tip="NOTE_TIP"
     :href="NOTE_LINK" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
       <path
