@@ -26,7 +26,7 @@
           </svg>
         </button>
         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-          <li><a>User info</a></li>
+          <li @click="handleViewUserInfo"><a>User info</a></li>
           <li @click="handleLogout"><a>Log out</a></li>
           <!-- <li><a>Item 2</a></li> -->
         </ul>
@@ -39,6 +39,8 @@
         </svg>
       </button>
     </div>
+    <MessageBox :show="isShowModal" title="Notice" content="Are you sure to exit?" @confirm="handleLogoutConfirm"
+      @cancel="handleLogoutCancel" />
   </nav>
 </template>
 
@@ -47,13 +49,21 @@ import { useMessage } from "naive-ui";
 import { navigateTo } from "nuxt/app";
 import { useRoute } from "vue-router";
 import { useDarkMode } from "~/composables/darkMode";
+import MessageBox from "./main/MessageBox.vue";
 import { useUserStore } from "~/store/user";
+import { useModalBox } from '~/composables/logout/modal'
 import { cleanToken } from "~/utils/token";
 const route = useRoute();
 
 const userStore = useUserStore();
 
+const { handleCloseModal, handleConfirmModal, handleOpenModal, isShowModal } = useModalBox()
+
 const { setDarkMode, toggleDarkMode } = useDarkMode()
+
+const handleViewUserInfo = () => {
+  navigateTo('/user/info')
+}
 
 const handleLogin = () => {
   navigateTo("/auth/login");
@@ -64,7 +74,17 @@ const handleSignup = () => {
 };
 
 const message = useMessage();
+
 const handleLogout = () => {
+  handleOpenModal()
+};
+
+const handleLogoutCancel = () => {
+  handleCloseModal()
+}
+
+const handleLogoutConfirm = () => {
+  handleConfirmModal()
   userStore.logoutUser();
   cleanToken();
   message.success("logout success", {
@@ -73,7 +93,7 @@ const handleLogout = () => {
       navigateTo("/");
     },
   });
-};
+}
 
 </script>
 <style></style>

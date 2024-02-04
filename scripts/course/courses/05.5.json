@@ -370,14 +370,9 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "我必须告诉你某件事情",
-		"english": "I have to tell you something",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "事情因为它是非常紧急的",
-		"english": "important now because it is very urgent",
-		"soundmark": "/naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'ɝdʒənt/"
+		"chinese": "我必须现在告诉你重要的某件事情因为它是非常紧急的",
+		"english": "I have to tell you something important now because it is very urgent",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'ɝdʒənt/"
 	},
 	{
 		"chinese": "这个食物",

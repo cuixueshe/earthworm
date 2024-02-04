@@ -1,0 +1,57 @@
+<template>
+  <dialog class="modal" :open="show">
+    <div ref="dialogBoxRef" class="modal-box">
+      <h3 class="font-bold text-lg">{{ title }}</h3>
+      <p class="py-4">{{ content }}</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn" @click="handleCancel">{{ cancelBtnText }}</button>
+        </form>
+        <button class="btn" @click="handleConfirm">{{ confirmBtnText }}</button>
+      </div>
+    </div>
+  </dialog>
+</template>
+
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue';
+
+interface IMessageBoxProps {
+  show: boolean;
+  content?: string;
+  title?: string;
+  confirmBtnText?: string;
+  cancelBtnText?: string;
+}
+
+const props = withDefaults(defineProps<IMessageBoxProps>(), {
+  show: false,
+  title: "Tips",
+  content: "Are you sure?",
+  confirmBtnText: "Confirm",
+  cancelBtnText: "Cancel",
+});
+const emits = defineEmits(["confirm", "cancel"]);
+
+function handleCancel() {
+  emits("cancel", false);
+}
+function handleConfirm() {
+  emits("confirm", true);
+}
+
+let dialogBoxRef = ref<HTMLElement | null>(null);
+function pointDialogOutside(e: MouseEvent) {
+  if (!props.show) return;
+  if (!dialogBoxRef.value?.contains(e.target as Node)) {
+    handleCancel()
+  }
+}
+
+onMounted(() => {
+  document.addEventListener("mouseup", pointDialogOutside);
+});
+onUnmounted(() => {
+  document.removeEventListener("mouseup", pointDialogOutside);
+});
+</script>

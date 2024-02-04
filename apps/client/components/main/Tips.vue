@@ -1,11 +1,15 @@
 <template>
   <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
     <div class="w-[210px] mb-4">
-      <button class="tip-btn" @click="playSound">⌃ Ctrl+;</button>
+      <button class="tip-btn" @click="playSound">
+        ⌃ {{ shortcutKeys.sound }}
+      </button>
       <span class="ml-2">play sound</span>
     </div>
     <div class="w-[210px]">
-      <button class="tip-btn" @click="toggleGameMode">⌃ Ctrl+'</button>
+      <button class="tip-btn" @click="toggleGameMode">
+        ⌃ {{ shortcutKeys.answer }}
+      </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
   </div>
@@ -16,25 +20,40 @@ import { useGameMode } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
+import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
 import { onMounted, computed, onUnmounted } from "vue";
 
-const { playSound } = usePlaySound();
-const { toggleGameMode } = useShowAnswer();
+const { shortcutKeys } = setShortcutKey();
+const { playSound } = usePlaySound(shortcutKeys.sound);
+const { toggleGameMode } = useShowAnswer(shortcutKeys.answer);
 
 const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
   return isAnswer() ? "again" : "show answer";
 });
 
-function usePlaySound() {
+function setShortcutKey() {
+  let shortcutKeys = DEFAULT_SHORTCUT_KEYS;
+  const localKeys = localStorage.getItem("shortcutKeys");
+  if (localKeys) {
+    shortcutKeys = JSON.parse(localKeys);
+  } else {
+    localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeys));
+  }
+  return {
+    shortcutKeys,
+  };
+}
+
+function usePlaySound(key: string) {
   const { playSound } = useCurrentStatementEnglishSound();
 
   onMounted(() => {
-    registerShortcut("ctrl+;", playSoundCommand);
+    registerShortcut(key, playSoundCommand);
   });
 
   onUnmounted(() => {
-    cancelShortcut("ctrl+;", playSoundCommand);
+    cancelShortcut(key, playSoundCommand);
   });
 
   function playSoundCommand(e: KeyboardEvent) {
@@ -47,15 +66,15 @@ function usePlaySound() {
   };
 }
 
-function useShowAnswer() {
+function useShowAnswer(key: string) {
   const { showAnswer, showQuestion } = useGameMode();
 
   onMounted(() => {
-    registerShortcut("ctrl+'", handleShowAnswer);
+    registerShortcut(key, handleShowAnswer);
   });
 
   onUnmounted(() => {
-    cancelShortcut("ctrl+'", handleShowAnswer);
+    cancelShortcut(key, handleShowAnswer);
   });
 
   function handleShowAnswer(e: KeyboardEvent) {

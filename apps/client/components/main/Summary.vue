@@ -37,10 +37,10 @@ import { watch, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from "~/store/user";
 import { useCourseStore } from "~/store/course";
-import { useActiveCourseId } from '~/store/course';
 import { useGameMode } from "~/composables/main/game";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
+import { useGameStore } from "~/store/game";
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
@@ -66,13 +66,12 @@ watch(showModal, (val) => {
 
 async function completeCourse() {
   const userStore = useUserStore();
+  const gameStore = useGameStore()
 
   if (userStore.user && courseStore.currentCourse) {
     const nextCourse = await courseStore.completeCourse(courseStore.currentCourse.id);
     nextCourseId = nextCourse.id
-    // 缓存下一课的课程 id
-    const { updateCourseId } = useActiveCourseId();
-    updateCourseId(nextCourseId)
+    gameStore.updateActiveCourseId(nextCourseId)
   }
 }
 
