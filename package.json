@@ -18,7 +18,8 @@
     "build:serve": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
     "prod:serve": "pnpm -F api start:prod:pm",
-    "test":"pnpm -F api test && pnpm -F client test"
+    "test": "pnpm -F api test && pnpm -F client test",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -27,9 +28,18 @@
     "node": ">=20.11.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
     "@types/node": "^20.11.0",
     "dotenv": "^16.3.1",
     "drizzle-kit": "^0.20.10",
+    "husky": "^9.0.10",
+    "semantic-release": "^23.0.0",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
