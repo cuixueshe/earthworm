@@ -21,7 +21,7 @@ export class CourseService {
       .where(gt(course.id, courseId))
       .orderBy(asc(course.id));
 
-    if (result.length < 0) {
+    if (result.length <= 0) {
       throw new HttpException(
         'There is no next course',
         HttpStatus.BAD_REQUEST,
@@ -85,19 +85,5 @@ export class CourseService {
     await this.userProgressService.update(user.userId, nextCourse.id);
     await this.rankService.userFinishCourse(user.userId, user.username);
     return nextCourse;
-  }
-
-  async startCourse(user: UserEntity) {
-    const { courseId } = await this.userProgressService.findOne(user.userId);
-    const { id } = await this.getFirstCourse();
-
-    if (!courseId) {
-      await this.userProgressService.create(user.userId, id);
-      return {
-        cId: id,
-      };
-    }
-
-    return { cId: courseId };
   }
 }

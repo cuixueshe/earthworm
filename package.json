@@ -6,6 +6,7 @@
   "scripts": {
     "schema:build": "pnpm -F @earthworm/shared build",
     "db:init": "drizzle-kit push:mysql",
+    "test:db:init": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
     "db:upload": "pnpm -F @earthworm/scripts-courses data:create && pnpm -F @earthworm/scripts-courses data:upload",
     "db:update": "pnpm -F @earthworm/scripts-courses data:upload",
     "dev:serve": "pnpm schema:build && pnpm -F api start:dev",
@@ -16,7 +17,8 @@
     "docker:down": "docker-compose down --volumes",
     "build:serve": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
-    "prod:serve": "pnpm -F api start:prod:pm"
+    "prod:serve": "pnpm -F api start:prod:pm",
+    "test":"pnpm -F api test && pnpm -F client test"
   },
   "keywords": [],
   "author": "",
