@@ -1,16 +1,12 @@
 import { migrate } from "drizzle-orm/mysql2/migrator";
 import { drizzle } from "drizzle-orm/mysql2";
 import * as mysql from "mysql2/promise";
-import path from "path";
-import dotenv from "dotenv";
-
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 async function main() {
   console.log("Running your migrations...");
 
   const connection = await mysql.createConnection({
-    uri: process.env.DATABASE_URL,
+    uri: process.env.TEST_DATABASE_URL,
     multipleStatements: true,
     waitForConnections: true,
     connectionLimit: 10,
