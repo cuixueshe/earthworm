@@ -40,8 +40,11 @@ export function useShortcutKeyMode() {
   onMounted(() => setShortcutKeyData());
 
   function saveShortcutKeys() {
-    shortcutKeyData.value[currentKeyType.value] = shortcutKeyStr.value.trim();
-    localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeyData.value));
+    const trimmedShortcutKeyStr = shortcutKeyStr.value.trim();
+    if (trimmedShortcutKeyStr) {
+      shortcutKeyData.value[currentKeyType.value] = trimmedShortcutKeyStr
+      localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeyData.value));
+    }
 
     const { handleCloseDialog } = useShortcutDialogMode();
     handleCloseDialog();
