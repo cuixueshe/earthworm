@@ -30,18 +30,22 @@ import { useGameMode } from "~/composables/main/game";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { onMounted, onUnmounted } from "vue";
 import { useSummary } from "~/composables/main/summary";
+import { useAutoSound } from "~/composables/user/sound";
 
 const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
+const { isAutoPlaySound } = useAutoSound()
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
 
   onMounted(() => {
-    playSound();
+    if (isAutoPlaySound()) {
+      playSound();
+    }
   });
 
   function handlePlaySound() {
