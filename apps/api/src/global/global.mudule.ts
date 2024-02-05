@@ -7,7 +7,7 @@ import * as path from 'node:path';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: path.resolve(__dirname, '../../../../.env'),
+      envFilePath: path.resolve(__dirname, '../../../../../.env'),
       isGlobal: true,
     }),
   ],

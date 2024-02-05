@@ -6,7 +6,8 @@
   "scripts": {
     "schema:build": "pnpm -F @earthworm/shared build",
     "db:init": "drizzle-kit push:mysql",
-    "test:db:init": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
+    "db:init:test": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
+    "db:init:test:ci": "npx tsx scripts/db.ts",
     "db:upload": "pnpm -F @earthworm/scripts-courses data:create && pnpm -F @earthworm/scripts-courses data:upload",
     "db:update": "pnpm -F @earthworm/scripts-courses data:upload",
     "dev:serve": "pnpm schema:build && pnpm -F api start:dev",
