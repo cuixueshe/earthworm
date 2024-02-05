@@ -65,6 +65,8 @@ docker compose down
 
 # 兼容老版本 docker 的命令
 docker-compose up -d
+# 清除缓存(mysql会有缓存)
+docker-compose down -v
 ```
 
 ### 4. 初始化数据库

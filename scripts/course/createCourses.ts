@@ -23,16 +23,19 @@ const loadCourses = JSON.parse(
       result.push({
         title: existingCourse.title,
         fileName: course.fileName,
+        tvLink: course.tvLink,
         cId: existingCourse.id,
       });
     } else {
       const [response] = await db.insert(courseSchema).values({
         title: course.title,
+        tvLink: course.tvLink,
       });
       console.log("新创建:", course.title)
       result.push({
         title: course.title,
         fileName: course.fileName,
+        tvLink: course.tvLink,
         cId: response.insertId,
       });
     }

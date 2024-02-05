@@ -65,6 +65,8 @@ docker compose down
 
 # commands compatible with older versions of Docker
 docker-compose up -d
+# clear the cache(mysql cache)
+docker-compose down -v
 ```
 
 ### 4. Initialize Database

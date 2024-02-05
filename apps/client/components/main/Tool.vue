@@ -26,11 +26,7 @@
     <div>
       （{{ currentSchedule }}<span class="mx-[2px]">/</span>{{ courseStore.totalQuestionsCount }}）
     </div>
-    <div>
-      <a :href="coursesStore.currentCourse?.tvLink" target="_blank" rel="noopener noreferrer">
-        <img class="w-[24px]" src="../../assets/img/tv_b.png" alt="TV_B">
-      </a>
-    </div>
+    <StudyVideoLink :tvLink="coursesStore.currentCourse?.tvLink" v-if="coursesStore.currentCourse?.tvLink" />
     <div class="flex-1"></div>
     <div @click="handleDoAgain" class="link-item mr-4">
       <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
@@ -55,6 +51,7 @@ import { useGameMode } from "~/composables/main/game";
 import { useRankModal } from "~/composables/rank/modal";
 import ProgressRank from "~/components/rank/ProgressRank.vue";
 import MessageBox from "~/components/main/MessageBox.vue";
+import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankModal = useRankModal();
 const courseStore = useCourseStore();

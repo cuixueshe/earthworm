@@ -36,6 +36,7 @@ export class CourseService {
       .select({
         id: course.id,
         title: course.title,
+        tvLink: course.tvLink,
       })
       .from(course);
 
@@ -52,6 +53,7 @@ export class CourseService {
       .select({
         id: course.id,
         title: course.title,
+        tvLink: course.tvLink,
       })
       .from(course)
       .where(eq(course.id, courseId));
@@ -61,6 +63,7 @@ export class CourseService {
     const finalResult = {
       id: courseResult[0].id,
       title: courseResult[0].title,
+      tvLink: courseResult[0].tvLink,
       statements: statementsResult,
     };
 
