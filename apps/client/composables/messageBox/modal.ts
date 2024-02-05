@@ -12,9 +12,9 @@ export interface EmitsType {
   (event: "confirm"): void;
 }
 
-let dialogBoxRef = ref<HTMLElement | null>(null);
-
 export function useMessageBoxModal(props: IMessageBoxProps, emits: EmitsType) {
+  let dialogBoxRef = ref<HTMLElement | null>(null);
+
   function handleConfirm() {
     isShow.value = false;
     emits("confirm");
