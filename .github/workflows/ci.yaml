@@ -9,6 +9,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      TEST_DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test 
 
     services:
       # 定义测试专用的 MySQL 服务
@@ -42,13 +44,12 @@ jobs:
 
       - name: Run database initialization command
         run: pnpm db:init:test:ci
-        env:
-          TEST_DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test
+
+      - name: Run build schema 
+        run: pnpm schema:build
 
       - name: Run tests
         run: pnpm test
-        env:
-          TEST_DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test
 
   # lint:
 
