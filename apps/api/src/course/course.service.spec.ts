@@ -1,28 +1,27 @@
 import { JwtModule } from '@nestjs/jwt';
 import { RankService } from '../rank/rank.service';
 import { UserProgressService } from '../user-progress/user-progress.service';
-import { cleanupMockDb } from '../../tests/helper/cleanupDb';
-import { MockDBModule } from '../../tests/helper/mockDb';
 import { CourseService } from './course.service';
 import { Test } from '@nestjs/testing';
 import { MockRedisModule } from '../../tests/helper/mockRedis';
-import { sql } from 'drizzle-orm';
 import { type DbType, DB } from '../global/providers/db.provider';
 import { course, statement } from '@earthworm/shared';
 import { HttpException } from '@nestjs/common';
 import { createUser } from '../../tests/fixture/user';
+import { GlobalModule } from '../global/global.mudule';
 import {
   createFirstCourse,
   createSecondCourse,
 } from '../../tests/fixture/course';
 import { createStatement } from '../../tests/fixture/statement';
+import { cleanDB, startDB, endDB } from '../../tests/helper/utils';
 
 const user = createUser();
 const firstCourse = createFirstCourse();
 const secondCourse = createSecondCourse();
 
 describe('course service', () => {
-  let mockDb: DbType;
+  let db: DbType;
   let courseService: CourseService;
   let userProgressService: UserProgressService;
   let rankService: RankService;
@@ -31,24 +30,23 @@ describe('course service', () => {
     const testHelper = await setupTesting();
     await setupDatabaseData(testHelper.db);
 
-    mockDb = testHelper.db;
+    db = testHelper.db;
     courseService = testHelper.courseService;
     userProgressService = testHelper.UserProgressService;
     rankService = testHelper.rankService;
   });
 
   afterAll(async () => {
-    await cleanupMockDb();
-    await cleanDb(mockDb);
+    await cleanDB(db);
   });
 
   beforeEach(async () => {
-    await mockDb.execute(sql`START TRANSACTION;`);
+    await startDB(db);
   });
 
   afterEach(async () => {
     jest.clearAllMocks();
-    await mockDb.execute(sql`ROLLBACK;`);
+    await endDB(db);
   });
 
   it('should return course details with statements given a course ID', async () => {
@@ -100,8 +98,8 @@ describe('course service', () => {
 });
 
 async function setupDatabaseData(db: DbType) {
-  await cleanDb(db);
-  await setupData(db);
+  await cleanDB(db);
+  await setupDBData(db);
 }
 
 async function setupTesting() {
@@ -114,7 +112,7 @@ async function setupTesting() {
 
   const moduleRef = await Test.createTestingModule({
     imports: [
-      MockDBModule,
+      GlobalModule,
       MockRedisModule,
       JwtModule.register({
         secret: process.env.SECRET,
@@ -138,16 +136,7 @@ async function setupTesting() {
   };
 }
 
-async function cleanDb(db: DbType) {
-  await db.execute(sql`SET FOREIGN_KEY_CHECKS = 0;`);
-
-  await db.execute(sql`TRUNCATE TABLE courses;`);
-  await db.execute(sql`TRUNCATE TABLE statements;`);
-
-  await db.execute(sql`SET FOREIGN_KEY_CHECKS = 1;`);
-}
-
-async function setupData(db: DbType) {
+async function setupDBData(db: DbType) {
   await db.insert(course).values(firstCourse);
   await db.insert(course).values(secondCourse);
 

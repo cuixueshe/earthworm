@@ -9,16 +9,17 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start:dev": "NODE_ENV=dev nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
-    "start:prod:pm": "pm2 start ecosystem.config.js",
+    "start:prod": "NODE_ENV=prod node dist/src/main",
+    "start:prod:pm": "NODE_ENV=prod pm2 start ecosystem.config.js",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "DOTENV_CONFIG_PATH=../../.env jest course --setupFiles dotenv/config",
+    "test": "pnpm test:unit",
+    "test:unit": "NODE_ENV=test jest",
+    "test:e2e": "NODE_ENV=test jest course.e2e",
     "test:watch": "DOTENV_CONFIG_PATH=../../.env jest --watch --setupFiles dotenv/config",
     "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
     "@earthworm/shared": "workspace:*",

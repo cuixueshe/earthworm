@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      TEST_DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test 
+      DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test 
 
     services:
       # 定义测试专用的 MySQL 服务

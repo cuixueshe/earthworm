@@ -6,7 +6,7 @@ async function main() {
   console.log("Running your migrations...");
 
   const connection = await mysql.createConnection({
-    uri: process.env.TEST_DATABASE_URL,
+    uri: process.env.DATABASE_URL,
     multipleStatements: true,
     waitForConnections: true,
     connectionLimit: 10,

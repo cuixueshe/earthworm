@@ -5,7 +5,7 @@ export default {
   out: "./drizzle",
   driver: "mysql2",
   dbCredentials: {
-    uri: process.env.TEST_DATABASE_URL || "",
+    uri: "mysql://root:password@localhost:3307/earthworm_test",
   },
   strict: true,
 } satisfies Config;

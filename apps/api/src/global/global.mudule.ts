@@ -1,13 +1,13 @@
 import { Global, Module } from '@nestjs/common';
 import { DB, DbProvider } from './providers/db.provider';
 import { ConfigModule } from '@nestjs/config';
-import * as path from 'node:path';
 
 @Global()
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: path.resolve(__dirname, '../../../../../.env'),
+      // TODO 缺一个 prod
+      envFilePath: process.env.NODE_ENV === 'dev' ? '.env' : '.env.test',
       isGlobal: true,
     }),
   ],

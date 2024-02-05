@@ -1,13 +1,13 @@
 import { JwtModule } from '@nestjs/jwt';
 import { RankService } from '../rank/rank.service';
 import { UserProgressService } from '../user-progress/user-progress.service';
-import { MockDBModule } from '../../tests/helper/mockDb';
 import { CourseController } from './course.controller';
 import { CourseService } from './course.service';
 import { Test } from '@nestjs/testing';
 import { MockRedisModule } from '../../tests/helper/mockRedis';
 import { createUser } from '../../tests/fixture/user';
 import { createFirstCourse } from '../../tests/fixture/course';
+import { GlobalModule } from '../global/global.mudule';
 
 const user = createUser();
 const course = createFirstCourse();
@@ -16,7 +16,7 @@ describe('Course', () => {
   let courseController: CourseController;
   let courseService: CourseService;
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     const testHelper = await setupTesting();
     courseController = testHelper.courseController;
     courseService = testHelper.courseService;
@@ -64,8 +64,8 @@ async function setupTesting() {
 
   const moduleRef = await Test.createTestingModule({
     imports: [
-      MockDBModule,
       MockRedisModule,
+      GlobalModule,
       JwtModule.register({
         secret: process.env.SECRET,
         signOptions: { expiresIn: '7d' },
