@@ -406,7 +406,7 @@
 	},
 	{
 		"chinese": "她(已经)参加过一个瑜伽课程",
-		"english": "she has attend a yoga class",
+		"english": "she has attended a yoga class",
 		"soundmark": "/ʃi/ /hæz/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/"
 	},
 	{
@@ -730,14 +730,9 @@
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "那棵圣诞树",
+		"chinese": "那棵圣诞树被装饰了的",
 		"english": "the Christmas tree is decorated",
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/ /ɪz/ /ˈdɛkəretɪd/"
-	},
-	{
-		"chinese": "被装饰了的",
-		"english": "decorated",
-		"soundmark": "/ˈdɛkəretɪd/"
 	},
 	{
 		"chinese": "一棵被装饰的圣诞树",
@@ -801,12 +796,12 @@
 	},
 	{
 		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰那棵圣诞树",
-		"english": "he has bought a Christmas tree for his family, but he hasn't decorated the Christmas tree",
+		"english": "he has bought a Christmas tree for his family but he hasn't decorated the Christmas tree",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
 		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰它",
-		"english": "he has bought a Christmas tree for his family, but he hasn't decorated it",
+		"english": "he has bought a Christmas tree for his family but he hasn't decorated it",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/"
 	},
 	{
@@ -816,7 +811,7 @@
 	},
 	{
 		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它",
-		"english": "he has bought a Christmas tree for his family, but he hasn't decorated it yet",
+		"english": "he has bought a Christmas tree for his family but he hasn't decorated it yet",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/"
 	},
 	{
@@ -866,7 +861,7 @@
 	},
 	{
 		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它因为他太忙了",
-		"english": "he has bought a Christmas tree for his family, but he hasn't decorated it yet because he is too busy",
+		"english": "he has bought a Christmas tree for his family but he hasn't decorated it yet because he is too busy",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
 	}
 ]
