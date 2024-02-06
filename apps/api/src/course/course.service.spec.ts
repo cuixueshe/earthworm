@@ -14,7 +14,8 @@ import {
   createSecondCourse,
 } from '../../tests/fixture/course';
 import { createStatement } from '../../tests/fixture/statement';
-import { cleanDB, startDB, endDB } from '../../tests/helper/utils';
+import { cleanDB, startDB } from '../../tests/helper/utils';
+import { endDB } from '../../src/common/db';
 
 const user = createUser();
 const firstCourse = createFirstCourse();
@@ -38,6 +39,7 @@ describe('course service', () => {
 
   afterAll(async () => {
     await cleanDB(db);
+    await endDB();
   });
 
   beforeEach(async () => {
@@ -46,7 +48,6 @@ describe('course service', () => {
 
   afterEach(async () => {
     jest.clearAllMocks();
-    await endDB(db);
   });
 
   it('should return course details with statements given a course ID', async () => {

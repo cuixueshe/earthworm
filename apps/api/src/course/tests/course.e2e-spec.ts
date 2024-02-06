@@ -10,6 +10,7 @@ import {
 import { createStatement } from '../../../tests/fixture/statement';
 import { course, statement } from '@earthworm/shared';
 import * as request from 'supertest';
+import { endDB } from '../../common/db';
 
 const firstCourse = createFirstCourse();
 
@@ -29,6 +30,12 @@ describe('course e2e', () => {
 
     await cleanDB(db);
     await setupDBData(db);
+  });
+
+  afterAll(async () => {
+    await cleanDB(db);
+    await endDB();
+    await app.close();
   });
 
   it('should fetch superhero details', () => {
