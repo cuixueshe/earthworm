@@ -20,30 +20,18 @@ import { useGameMode } from "~/composables/main/game";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
-import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
 import { onMounted, computed, onUnmounted } from "vue";
+import { useShortcutKeyMode } from '~/composables/user/shortcutKey';
 
-const { shortcutKeys } = setShortcutKey();
-const { playSound } = usePlaySound(shortcutKeys.sound);
-const { toggleGameMode } = useShowAnswer(shortcutKeys.answer);
+const { shortcutKeys } = useShortcutKeyMode()
+const { playSound } = usePlaySound(shortcutKeys.value.sound);
+const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 
 const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
   return isAnswer() ? "again" : "show answer";
 });
 
-function setShortcutKey() {
-  let shortcutKeys = DEFAULT_SHORTCUT_KEYS;
-  const localKeys = localStorage.getItem("shortcutKeys");
-  if (localKeys) {
-    shortcutKeys = JSON.parse(localKeys);
-  } else {
-    localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeys));
-  }
-  return {
-    shortcutKeys,
-  };
-}
 
 function usePlaySound(key: string) {
   const { playSound } = useCurrentStatementEnglishSound();

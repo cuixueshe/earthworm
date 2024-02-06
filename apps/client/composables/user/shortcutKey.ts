@@ -21,7 +21,15 @@ export function useShortcutDialogMode() {
   };
 }
 
-let shortcutKeyData = ref<{ [key: string]: any }>({
+export const CUSTOM_SHORTCUT_KEY = "shortcutKeys";
+
+type ShortcutKey = {
+  sound: string;
+  answer: string;
+  [k: string]: any;
+};
+
+let shortcutKeys = ref<ShortcutKey>({
   ...DEFAULT_SHORTCUT_KEYS,
 });
 let shortcutKeyStr = ref<string>("");
@@ -33,19 +41,28 @@ const SPECIAL_KEYS = new Map([
 ]);
 
 export function useShortcutKeyMode() {
-  function setShortcutKeyData() {
-    const localKeys = localStorage.getItem("shortcutKeys");
-    if (localKeys) shortcutKeyData.value = JSON.parse(localKeys);
+  function setShortcutKeys() {
+    const localKeys = localStorage.getItem(CUSTOM_SHORTCUT_KEY);
+    if (localKeys) {
+      shortcutKeys.value = JSON.parse(localKeys);
+    } else {
+      localStorage.setItem(
+        CUSTOM_SHORTCUT_KEY,
+        JSON.stringify(shortcutKeys.value)
+      );
+    }
   }
-  onMounted(() => setShortcutKeyData());
+  onMounted(() => setShortcutKeys());
 
   function saveShortcutKeys() {
     const trimmedShortcutKeyStr = shortcutKeyStr.value.trim();
     if (trimmedShortcutKeyStr) {
-      shortcutKeyData.value[currentKeyType.value] = trimmedShortcutKeyStr
-      localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeyData.value));
+      shortcutKeys.value[currentKeyType.value] = trimmedShortcutKeyStr;
+      localStorage.setItem(
+        CUSTOM_SHORTCUT_KEY,
+        JSON.stringify(shortcutKeys.value)
+      );
     }
-
     const { handleCloseDialog } = useShortcutDialogMode();
     handleCloseDialog();
   }
@@ -59,7 +76,8 @@ export function useShortcutKeyMode() {
 
   /**
    * 参考于vscode快捷键
-   * 有待讨论，产品角度出发，快捷键应该只支持组合键形式，单键组合在使用过程中不方便写单词
+   * 有待讨论，产品角度出发，快捷键应该只支持组合键形式
+   * 单键组合在使用过程中不方便写单词
    */
   function handleKeyup(e: KeyboardEvent) {
     if (!showModal.value) return;
@@ -88,9 +106,10 @@ export function useShortcutKeyMode() {
   }
 
   return {
-    shortcutKeyStr,
-    shortcutKeyTip,
+    shortcutKeys, // 快捷键对象
+    setShortcutKeys,
+    shortcutKeyStr, // 单个修改的快捷键
+    shortcutKeyTip, // 快捷键输入框底部注释
     handleKeyup,
-    shortcutKeyData,
   };
 }
