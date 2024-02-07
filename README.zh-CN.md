@@ -33,14 +33,14 @@ pnpm -v # 8+
 pnpm install
 ```
 
-### 2. 复制 `.env.example` 内容到 `.env` 文件
+### 2. 复制 `.env.example` 内容到 `./apps/api/.env` 文件
 
 若文件不存在则需要手动创建，Linux 用户可以通过下面的命令进行操作
 
 > 主要存储系统的环境变量信息，如数据库连接地址、用户名、密码、端口、密钥等等，后端服务会从此文件中读取配置，当然你也可以更改为你的配置信息
 
 ```bash
-cp .env.example .env
+cp .env.example ./apps/api/.env
 ```
 
 ### 3. 启动/停止/删除 Docker Compose 服务

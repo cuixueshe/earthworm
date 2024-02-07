@@ -33,14 +33,14 @@ pnpm -v # 8+
 pnpm install
 ```
 
-### 2. Copy the contents of `.env.example` to the `.env` file
+### 2. Copy the contents of `.env.example` to the `./apps/api/.env` file
 
 If the file doesn't exist, you need to create it manually. Linux users can perform the operation with the following command.
 
 > It primarily stores environmental variable information for the main storage system, such as database connection addresses, usernames, passwords, ports, keys, and so on. The backend service will read configuration from this file. Of course, you can also customize it with your own configuration information.
 
 ```bash
-cp .env.example .env
+cp .env.example ./apps/api/.env
 ```
 
 ### 3. Start/stop/delete Docker Compose service
