@@ -1,13 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppModule } from '../../app/app.module';
 import { INestApplication } from '@nestjs/common';
-import { cleanDB } from '../../../tests/helper/utils';
+import { cleanDB } from '../../../test/helper/utils';
 import { DbType, DB } from '../../global/providers/db.provider';
 import {
   createFirstCourse,
   createSecondCourse,
-} from '../../../tests/fixture/course';
-import { createStatement } from '../../../tests/fixture/statement';
+} from '../../../test/fixture/course';
+import { createStatement } from '../../../test/fixture/statement';
 import { course, statement } from '@earthworm/shared';
 import * as request from 'supertest';
 import { endDB } from '../../common/db';

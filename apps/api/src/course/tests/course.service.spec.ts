@@ -1,21 +1,21 @@
 import { JwtModule } from '@nestjs/jwt';
-import { RankService } from '../rank/rank.service';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { CourseService } from './course.service';
+import { RankService } from '../../rank/rank.service';
+import { UserProgressService } from '../../user-progress/user-progress.service';
+import { CourseService } from '../course.service';
 import { Test } from '@nestjs/testing';
-import { MockRedisModule } from '../../tests/helper/mockRedis';
-import { type DbType, DB } from '../global/providers/db.provider';
+import { MockRedisModule } from '../../../test/helper/mockRedis';
+import { type DbType, DB } from '../../global/providers/db.provider';
 import { course, statement } from '@earthworm/shared';
 import { HttpException } from '@nestjs/common';
-import { createUser } from '../../tests/fixture/user';
-import { GlobalModule } from '../global/global.mudule';
+import { createUser } from '../../../test/fixture/user';
+import { GlobalModule } from '../../global/global.mudule';
 import {
   createFirstCourse,
   createSecondCourse,
-} from '../../tests/fixture/course';
-import { createStatement } from '../../tests/fixture/statement';
-import { cleanDB, startDB } from '../../tests/helper/utils';
-import { endDB } from '../../src/common/db';
+} from '../../../test/fixture/course';
+import { createStatement } from '../../../test/fixture/statement';
+import { cleanDB, startDB } from '../../../test/helper/utils';
+import { endDB } from '../../common/db';
 
 const user = createUser();
 const firstCourse = createFirstCourse();

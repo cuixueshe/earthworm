@@ -1,13 +1,13 @@
 import { JwtModule } from '@nestjs/jwt';
-import { RankService } from '../rank/rank.service';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { CourseController } from './course.controller';
-import { CourseService } from './course.service';
+import { RankService } from '../../rank/rank.service';
+import { UserProgressService } from '../../user-progress/user-progress.service';
+import { CourseController } from '../course.controller';
+import { CourseService } from '../course.service';
 import { Test } from '@nestjs/testing';
-import { MockRedisModule } from '../../tests/helper/mockRedis';
-import { createUser } from '../../tests/fixture/user';
-import { createFirstCourse } from '../../tests/fixture/course';
-import { GlobalModule } from '../global/global.mudule';
+import { MockRedisModule } from '../../../test/helper/mockRedis';
+import { createUser } from '../../../test/fixture/user';
+import { createFirstCourse } from '../../../test/fixture/course';
+import { GlobalModule } from '../../global/global.mudule';
 
 const user = createUser();
 const course = createFirstCourse();
