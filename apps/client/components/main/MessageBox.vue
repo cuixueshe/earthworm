@@ -5,9 +5,9 @@
       <p class="py-4">{{ content }}</p>
       <div class="modal-action">
         <form method="dialog">
-          <button class="btn" @click="isShow = false">{{ cancelBtnText }}</button>
+          <button class="btn cancel" @click="handleCancel">{{ cancelBtnText }}</button>
         </form>
-        <button class="btn" @click="handleConfirm">{{ confirmBtnText }}</button>
+        <button class="btn confirm" @click="handleConfirm">{{ confirmBtnText }}</button>
       </div>
     </div>
   </dialog>
@@ -27,6 +27,6 @@ const props = withDefaults(defineProps<IMessageBoxProps>(), {
 
 const emits = defineEmits<EmitsType>();
 
-const { dialogBoxRef, isShow, handleConfirm } = useMessageBoxModal(props, emits)
+const { dialogBoxRef, isShow, handleConfirm, handleCancel } = useMessageBoxModal(props, emits)
 
 </script>
