@@ -1,6 +1,7 @@
 import { computed, ref, watchEffect, watch } from "vue";
 import { defineStore } from "pinia";
-import { fetchCompleteCourse, fetchCourse } from "~/api/course";
+import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { useUserStore } from "~/store/user";
 
 interface Statement {
   id: number;
@@ -76,8 +77,15 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(courseId: number) {
     if (courseId === currentCourse.value?.id) return;
 
-    const course = await fetchCourse(courseId);
-    currentCourse.value = course;
+    const userStore = useUserStore();
+    if (!userStore.user) {
+      let course = await fetchTryCourse()
+      currentCourse.value = course
+    } else {
+      let course = await fetchCourse(courseId);
+      currentCourse.value = course;
+    }
+
     statementIndex.value = loadProgress(courseId);
   }
 

@@ -1,8 +1,9 @@
 import { setActivePinia, createPinia } from "pinia";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { useCourseStore } from "../course";
-import { fetchCourse, fetchCompleteCourse } from "~/api/course";
+import { fetchCourse, fetchCompleteCourse, fetchTryCourse } from "~/api/course";
 import { type Course } from "../course";
+import { useUserStore } from "../user";
 
 vi.mock("~/api/course");
 
@@ -39,6 +40,23 @@ describe("course", () => {
     setActivePinia(createPinia());
     const store = useCourseStore();
     store.cleanProgress();
+
+    const userStore = useUserStore();
+    userStore.initUser({
+      userId: "1",
+      username: "cxr",
+      phone: "18518518521",
+    });
+  });
+
+  it("should be fetch try course when user is a tourist", async () => {
+    const userStore = useUserStore();
+    userStore.logoutUser();
+
+    const store = useCourseStore();
+    await store.setup(1);
+
+    expect(fetchTryCourse).toBeCalled();
   });
 
   it("initializes with a course", async () => {
@@ -122,8 +140,8 @@ describe("course", () => {
 
       await store.completeCourse(1);
 
-      // 重新开始之后 才可以在 setup 
-      store.doAgain()
+      // 重新开始之后 才可以在 setup
+      store.doAgain();
       await store.setup(firstCourse.id); // 在重新加载
 
       expect(store.statementIndex).toBe(0); // 验证 statementIndex 是否重置
