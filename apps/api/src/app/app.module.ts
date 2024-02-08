@@ -23,6 +23,8 @@ import { GameModule } from '../game/game.module';
       useFactory: () => ({
         type: 'single',
         url: process.env.REDIS_URL,
+        password:
+          process.env.NODE_ENV === 'prod' ? process.env.REDIS_PASSWORD : '',
       }),
     }),
   ],
