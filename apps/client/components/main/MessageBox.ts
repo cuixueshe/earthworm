@@ -1,21 +1,63 @@
 import { createVNode, render, type ComponentPublicInstance } from "vue";
 import MessageBoxConstructor from "./MessageBox.vue";
+import type { IMessageBoxProps } from "~/composables/messageBox/modal";
 
-const messageInstance = new Map<any, any>();
+interface MessageBoxOptions {
+  /** Text content of confirm button */
+  confirmBtnText: string;
+  /** Text content of cancel button */
+  cancelBtnText: string;
+  /** Custom element to append the message box to */
+  appendTo?: HTMLElement | string;
+}
+
+type Action = "confirm" | "cancel";
+
+interface MessageBoxProps extends IMessageBoxProps {
+  container: HTMLElement;
+}
+
+const messageInstance = new Map<
+  ComponentPublicInstance<MessageBoxProps>,
+  {
+    options: any;
+    reject: (res: any) => void;
+    resolve: (reson?: any) => void;
+  }
+>();
 
 const genContainer = () => {
   return document.createElement("div");
 };
 
-const getAppendToElement = (): any => {
-  const appendTo: any | null = document.body;
+const getAppendToElement = (props: any): HTMLElement => {
+  let appendTo: HTMLElement | null = document.body;
+  if (props.appendTo) {
+    if (typeof props.appendTo === "string") {
+      appendTo = document.querySelector<HTMLElement>(props.appendTo);
+    }
+    if (props.appendTo instanceof Element) {
+      appendTo = props.appendTo;
+    }
+    if (!(appendTo instanceof Element)) {
+      appendTo = document.body;
+    }
+  }
   return appendTo;
+};
+
+const teardown = (
+  vm: ComponentPublicInstance<MessageBoxProps>,
+  container: HTMLElement
+) => {
+  render(null, container);
+  messageInstance.delete(vm);
 };
 
 const initInstance = (props: any, container: HTMLElement) => {
   const vnode = createVNode(MessageBoxConstructor, props);
   render(vnode, container);
-  getAppendToElement().appendChild(container.firstElementChild!);
+  getAppendToElement(props).appendChild(container.firstElementChild!);
   return vnode.component;
 };
 
@@ -26,21 +68,21 @@ const showMessage = (options: any) => {
     const currentMsg = messageInstance.get(vm)!;
     currentMsg.resolve("confirm");
 
-    render(null, container);
-    messageInstance.delete(vm);
+    teardown(vm, container);
   };
 
   options.onCancel = () => {
     const currentMsg = messageInstance.get(vm)!;
     currentMsg.reject("cancel");
 
-    render(null, container);
-    messageInstance.delete(vm);
+    teardown(vm, container);
   };
 
-  const instance: any = initInstance(options, container);
+  const instance = initInstance(options, container)!;
 
-  const vm = instance.proxy;
+  const vm = instance.proxy as ComponentPublicInstance<MessageBoxProps>;
+
+  vm.container = container;
 
   for (const prop in options) {
     if (Object.hasOwn(options, prop) && !Object.hasOwn(vm.$props, prop)) {
@@ -54,8 +96,8 @@ const showMessage = (options: any) => {
 function MessageBox(
   content: string = "Are you sure?",
   title: string = "Tips",
-  options?: any
-): Promise<any> {
+  options?: MessageBoxOptions
+): Promise<Action> {
   return new Promise((resolve, reject) => {
     const vm = showMessage(
       Object.assign(
@@ -79,10 +121,8 @@ function MessageBox(
 
 MessageBox.close = () => {
   messageInstance.forEach((_, vm) => {
-    vm.isShowModel = false;
+    teardown(vm, vm.container);
   });
-
-  messageInstance.clear();
 };
 
 export default MessageBox;

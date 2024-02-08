@@ -31,6 +31,14 @@ describe("MessageBox", () => {
     expect(msgbox.querySelector(".py-4").textContent).toEqual("这是一段内容");
   });
 
+  test("close messageBox", async () => {
+    MessageBox("这是一段内容", "消息");
+
+    MessageBox.close();
+    let msgbox: any = document.querySelector(selector);
+    expect(msgbox).toBe(null);
+  });
+
   describe("promise", () => {
     test("confirm", async () => {
       let msgAction = "";
