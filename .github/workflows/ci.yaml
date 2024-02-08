@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test 
+      SECRET: sjldk92#sd903mnc./xklsjdf9sdfj 
 
     services:
       # 定义测试专用的 MySQL 服务
