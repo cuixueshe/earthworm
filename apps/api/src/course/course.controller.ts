@@ -7,16 +7,25 @@ import { User, UserEntity } from '../user/user.decorators';
 export class CourseController {
   constructor(private courseService: CourseService) {}
 
+  @Get('try')
+  tryCourse() {
+    // 专门让游客体验的接口 不需要做 auth 验证
+    return this.courseService.tryCourse();
+  }
+
+  @UseGuards(AuthGuard)
   @Get(':courseId')
   findOne(@Param('courseId') courseId: number) {
     return this.courseService.find(courseId);
   }
 
+  @UseGuards(AuthGuard)
   @Get('')
   findAll() {
     return this.courseService.findAll();
   }
 
+  @UseGuards(AuthGuard)
   @Get(':courseId/next')
   findNext(@Param('courseId') courseId: number) {
     return this.courseService.findNext(courseId);
