@@ -1,16 +1,17 @@
 <template>
   <div class="text-center pt-2">
-    <div class="flex relative flex-wrap justify-center ml-2 transition-all">
-      <template v-for="i in courseStore.wordCount" :key="i">
+    <div class="flex relative flex-wrap justify-center gap-2 transition-all">
+      <template v-for="(w, i) in courseStore.words" :key="i">
         <div
-          class="flex items-end justify-center h-[4.8rem] min-w-28 px-2 mr-2 border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
+          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
-            i - 1 === activeInputIndex && focusing
+            i === activeInputIndex && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
               : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
           ]"
+          :style="{ width: `${w.length}ch` }"
         >
-          {{ userInputWords[i - 1] }}
+          {{ userInputWords[i] }}
         </div>
       </template>
       <input
@@ -51,7 +52,7 @@ function useInput() {
   });
 
   const activeInputIndex = computed(() => {
-    return Math.min(userInputWords.value.length - 1, courseStore.wordCount - 1);
+    return Math.min(userInputWords.value.length - 1, courseStore.words.length - 1);
   });
 
   return {
@@ -83,7 +84,7 @@ function registerShortcutKeyForInputEl() {
     }
     if (
       e.code === "Backspace" &&
-      userInputWords.value.length - courseStore.wordCount === 1 &&
+      userInputWords.value.length - courseStore.words.length === 1 &&
       inputLastStr === " "
     ) {
       // remove the last space and the last letter

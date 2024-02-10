@@ -111,7 +111,7 @@ describe("course", () => {
     const store = useCourseStore();
     await store.setup(firstCourse.id);
 
-    expect(store.wordCount).toBe(1);
+    expect(store.words.length).toBe(1);
   });
 
   it("the count of first course question should be two", async () => {
