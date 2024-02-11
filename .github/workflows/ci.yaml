@@ -53,7 +53,7 @@ jobs:
         run: pnpm schema:build
 
       - name: Run tests
-        run: pnpm test
+        run: pnpm test:ci
 
   # lint:
 

@@ -8,8 +8,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "vitest run && cypress run",
-    "test:watch": "vitest",
+    "test": "pnpm run test:unit:run &&pnpm run test:e2e:run",
+    "test:unit:watch": "vitest",
+    "test:unit:run":"vitest run",
+    "test:e2e:run":"cypress run",
+    "test:ci": "start-server-and-test dev http://localhost:3000 test",
     "cypress:open": "cypress open"
   },
   "devDependencies": {
@@ -25,6 +28,7 @@
     "happy-dom": "^13.3.1",
     "naive-ui": "^2.37.3",
     "nuxt": "^3.9.0",
+    "start-server-and-test": "^2.0.3",
     "tailwindcss": "^3.4.1",
     "vfonts": "^0.0.3",
     "vite": "^5.1.0",
