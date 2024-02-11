@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "vitest run",
+    "test": "vitest run && cypress run",
     "test:watch": "vitest",
     "cypress:open": "cypress open"
   },
