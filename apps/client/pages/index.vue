@@ -21,8 +21,7 @@
             </button>
           </a>
           <button @click="handleKeydown"
-            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
-            Go and get it <kbd class="kbd"> ↵ </kbd>
+            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">Get Started<kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
         <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative m-4">
