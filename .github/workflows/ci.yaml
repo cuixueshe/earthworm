@@ -43,9 +43,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Start client service
-        run: pnpm dev:client
-
       - name: Run database initialization command
         run: pnpm db:init:test:ci
 
