@@ -31,10 +31,10 @@
               class="absolute left-0 right-0 top-0 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all">
               📖
             </div>
-            <div
+            <!-- <div
               class="absolute left-48 right-0 top-24 text-[80px] -ml-28 text-center color-gray group-hover:-skew-y-12 group-hover:rotate-[30deg] group-hover:-ml-32 group-hover:-mt-6 transition-all">
               🪱
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
