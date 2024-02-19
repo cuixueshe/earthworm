@@ -81,6 +81,12 @@ function registerShortcutKeyForInputEl() {
       e.preventDefault();
       inputValue.value = inputValue.value.slice(0, -2);
     }
+    // 新增逻辑：阻止在最后一个单词后添加空格
+    const words = inputValue.value.trim().split(" ");
+    const isLastWord = words.length === courseStore.wordCount;
+    if (e.code === "Space" && isLastWord) {
+      e.preventDefault();
+    }
   }
 
   return {
