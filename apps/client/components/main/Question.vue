@@ -8,22 +8,12 @@
             i - 1 === activeInputIndex && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
               : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
-          ]"
-        >
+          ]">
           {{ userInputWords[i - 1] }}
         </div>
       </template>
-      <input
-        ref="inputEl"
-        class="absolute h-full w-full opacity-0"
-        type="text"
-        v-model="inputValue"
-        @keyup="handleKeyup"
-        @keydown="handleKeydown"
-        @focus="handleInputFocus"
-        @blur="handleBlur"
-        autoFocus
-      />
+      <input ref="inputEl" class="absolute h-full w-full opacity-0" type="text" v-model="inputValue" @keyup="handleKeyup"
+        @keydown="handleKeydown" @focus="handleInputFocus" @blur="handleBlur" autoFocus />
     </div>
     <div class="mt-12 text-xl dark:text-gray-50">
       {{
@@ -65,10 +55,11 @@ function registerShortcutKeyForInputEl() {
   const { showAnswer } = useGameMode();
 
   function handleKeyup(e: KeyboardEvent) {
-    if (e.code === "Enter") {
+    const isLastStr = courseStore.checkCorrect(inputValue.value.trim())
+    if (e.code === "Enter" || (e.code === "Space" && isLastStr)) {
       e.stopPropagation();
 
-      if (courseStore.checkCorrect(inputValue.value.trim())) {
+      if (isLastStr) {
         showAnswer();
       }
       inputValue.value = "";
