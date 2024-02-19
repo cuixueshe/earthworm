@@ -8,22 +8,12 @@
             i - 1 === activeInputIndex && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
               : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
-          ]"
-        >
+          ]">
           {{ userInputWords[i - 1] }}
         </div>
       </template>
-      <input
-        ref="inputEl"
-        class="absolute h-full w-full opacity-0"
-        type="text"
-        v-model="inputValue"
-        @keyup="handleKeyup"
-        @keydown="handleKeydown"
-        @focus="handleInputFocus"
-        @blur="handleBlur"
-        autoFocus
-      />
+      <input ref="inputEl" class="absolute h-full w-full opacity-0" type="text" v-model="inputValue" @keyup="handleKeyup"
+        @keydown="handleKeydown" @focus="handleInputFocus" @blur="handleBlur" autoFocus />
     </div>
     <div class="mt-12 text-xl dark:text-gray-50">
       {{
@@ -89,6 +79,12 @@ function registerShortcutKeyForInputEl() {
       // remove the last space and the last letter
       e.preventDefault();
       inputValue.value = inputValue.value.slice(0, -2);
+    }
+    // 新增逻辑：阻止在最后一个单词后添加空格
+    const words = inputValue.value.trim().split(" ");
+    const isLastWord = words.length === courseStore.wordCount;
+    if (e.code === "Space" && isLastWord) {
+      e.preventDefault();
     }
   }
 
