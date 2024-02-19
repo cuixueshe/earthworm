@@ -1,13 +1,11 @@
-import { JwtModule } from '@nestjs/jwt';
 import { RankService } from '../../rank/rank.service';
 import { UserProgressService } from '../../user-progress/user-progress.service';
 import { CourseController } from '../course.controller';
 import { CourseService } from '../course.service';
 import { Test } from '@nestjs/testing';
-import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { createUser } from '../../../test/fixture/user';
 import { createFirstCourse } from '../../../test/fixture/course';
-import { GlobalModule } from '../../global/global.mudule';
+import { testImportModules } from '../../../test/helper/utils';
 
 const user = createUser();
 const course = createFirstCourse();
@@ -71,14 +69,7 @@ async function setupTesting() {
   };
 
   const moduleRef = await Test.createTestingModule({
-    imports: [
-      MockRedisModule,
-      GlobalModule,
-      JwtModule.register({
-        secret: process.env.SECRET,
-        signOptions: { expiresIn: '7d' },
-      }),
-    ],
+    imports: testImportModules,
     providers: [
       { provide: CourseService, useValue: mockCourseService },
       UserProgressService,

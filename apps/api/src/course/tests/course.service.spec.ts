@@ -1,20 +1,21 @@
-import { JwtModule } from '@nestjs/jwt';
 import { RankService } from '../../rank/rank.service';
 import { UserProgressService } from '../../user-progress/user-progress.service';
 import { CourseService } from '../course.service';
 import { Test } from '@nestjs/testing';
-import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { type DbType, DB } from '../../global/providers/db.provider';
 import { course, statement } from '@earthworm/shared';
 import { HttpException } from '@nestjs/common';
 import { createUser } from '../../../test/fixture/user';
-import { GlobalModule } from '../../global/global.mudule';
 import {
   createFirstCourse,
   createSecondCourse,
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
-import { cleanDB, startDB } from '../../../test/helper/utils';
+import {
+  cleanDB,
+  startDB,
+  testImportModules,
+} from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 
 const user = createUser();
@@ -123,14 +124,7 @@ async function setupTesting() {
   };
 
   const moduleRef = await Test.createTestingModule({
-    imports: [
-      GlobalModule,
-      MockRedisModule,
-      JwtModule.register({
-        secret: process.env.SECRET,
-        signOptions: { expiresIn: '7d' },
-      }),
-    ],
+    imports: testImportModules,
     providers: [
       CourseService,
       { provide: UserProgressService, useValue: mockUserProgressService },

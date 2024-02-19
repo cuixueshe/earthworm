@@ -2,6 +2,9 @@ import { INestApplication } from '@nestjs/common';
 import { DbType } from 'src/global/providers/db.provider';
 import { sql } from 'drizzle-orm';
 import * as request from 'supertest';
+import { MockRedisModule } from './mockRedis';
+import { GlobalModule } from '../../src/global/global.mudule';
+import { JwtModule } from '@nestjs/jwt';
 
 export async function cleanDB(db: DbType) {
   await db.execute(sql`SET FOREIGN_KEY_CHECKS = 0;`);
@@ -34,3 +37,12 @@ export async function signup(
     token: res.body.token,
   };
 }
+
+export const testImportModules = [
+  MockRedisModule,
+  GlobalModule,
+  JwtModule.register({
+    secret: process.env.SECRET,
+    signOptions: { expiresIn: '7d' },
+  }),
+];
