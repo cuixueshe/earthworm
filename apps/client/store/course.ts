@@ -35,9 +35,9 @@ export const useCourseStore = defineStore("course", () => {
     }
   );
 
-  const wordCount = computed(() => {
-    return currentStatement.value?.english.split(" ").length || 1;
-  });
+  const words = computed(() => {
+    return currentStatement.value?.english.split(" ") || [];
+  })
 
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
@@ -97,7 +97,7 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex,
     currentCourse,
     currentStatement,
-    wordCount,
+    words,
     totalQuestionsCount,
     setup,
     doAgain,
