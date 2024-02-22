@@ -21,8 +21,7 @@
             </button>
           </a>
           <button @click="handleKeydown"
-            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
-            Go and get it <kbd class="kbd"> ↵ </kbd>
+            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">Get Started<kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
         <div class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative m-4">
@@ -32,10 +31,10 @@
               class="absolute left-0 right-0 top-0 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all">
               📖
             </div>
-            <div
+            <!-- <div
               class="absolute left-48 right-0 top-24 text-[80px] -ml-28 text-center color-gray group-hover:-skew-y-12 group-hover:rotate-[30deg] group-hover:-ml-32 group-hover:-mt-6 transition-all">
               🪱
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -63,6 +62,9 @@
         <h2 class="text-4xl text-center">Why Earthworm?</h2>
       </section>
     </template>
+
+    <MessageBox v-model:is-show-modal="showMobileTip" content="The app isn't mobile-friendly, so stay tuned!"
+      cancel-btn-text="fine" confirm-btn-text=""></MessageBox>
   </div>
 </template>
 
@@ -72,10 +74,28 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useGameStore } from "~/store/game";
+import MessageBox from "~/components/main/MessageBox.vue";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
 
+const { showMobileTip } = useMonitorSystem();
+
+function useMonitorSystem() {
+  const showMobileTip = ref(false);
+
+  function mobileSystem() {
+    return "ontouchstart" in document.documentElement;
+  }
+
+  onMounted(() => {
+    showMobileTip.value = mobileSystem()
+  });
+
+  return {
+    showMobileTip,
+  };
+}
 
 function useShortcutToGame() {
   const router = useRouter();
@@ -98,7 +118,7 @@ function useShortcutToGame() {
 
   return {
     handleKeydown,
-    isLoading
+    isLoading,
   };
 }
 </script>
