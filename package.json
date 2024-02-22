@@ -32,6 +32,8 @@
     "@types/node": "^20.11.0",
     "dotenv": "^16.3.1",
     "drizzle-kit": "^0.20.10",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.9.0",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
@@ -41,5 +43,13 @@
     "drizzle-orm": "^0.29.3",
     "mysql2": "^3.7.0",
     "zod": "^3.22.4"
+  },
+  "simple-git-hooks": {
+    "pre-push": "pnpm run test && npx lint-staged && pnpm run build:serve && pnpm run build:client"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
   }
 }
