@@ -27,11 +27,13 @@
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import { ref, computed, onMounted } from "vue";
+import { useSubmitKey } from '~/composables/user/submitKey';
 
 const courseStore = useCourseStore();
 const { userInputWords, activeInputIndex, inputValue } = useInput();
 const { handleKeyup, handleKeydown } = registerShortcutKeyForInputEl();
 const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
+const { showSubmitKey } = useSubmitKey()
 
 function useInput() {
   const inputValue = ref("");
@@ -55,13 +57,15 @@ function registerShortcutKeyForInputEl() {
   const { showAnswer } = useGameMode();
 
   function handleKeyup(e: KeyboardEvent) {
+    const submitKey = showSubmitKey()
     const isLastStr = courseStore.checkCorrect(inputValue.value.trim())
-    if (e.code === "Enter" || (e.code === "Space" && isLastStr)) {
+    if ((submitKey === 'All' && (e.code === "Enter" || (e.code === "Space" && isLastStr))) || (e.code === submitKey && isLastStr)) {
       e.stopPropagation();
 
       if (isLastStr) {
         showAnswer();
       }
+
       inputValue.value = "";
     }
   }

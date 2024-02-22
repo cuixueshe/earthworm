@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <section>
-      <h2 class="pb-2">快捷键设置</h2>
+      <h2 class="text-lg">快捷键设置</h2>
       <n-table :bordered="false" :single-line="false">
         <thead>
           <tr>
@@ -30,11 +30,23 @@
     </section>
 
     <section>
-      <h2>声音设置</h2>
+      <h2 class="text-lg">声音设置</h2>
       <div className="form-control w-52">
         <label className="cursor-pointer label">
-          <span className="label-text">自动播放</span> 
-          <input type="checkbox" className="toggle toggle-primary" :checked="autoPlaySound" @change="toggleAutoPlaySound" />
+          <span className="label-text">自动播放</span>
+          <input type="checkbox" className="toggle toggle-primary" :checked="autoPlaySound"
+            @change="toggleAutoPlaySound" />
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-lg">提交动作设置</h2>
+      <div className="form-control w-80 flex flex-row">
+        <label v-for="item in answerSubmitKeys" :key="item.value" className="cursor-pointer label flex-1 pr-4">
+          <span className="label-text">{{ item.label }}</span>
+          <input type="radio" name="submitKey" className="radio radio-primary" :checked="item.defaultChecked"
+            :value="item.value" @change="handleCheckRadio(item)" />
         </label>
       </div>
     </section>
@@ -62,6 +74,7 @@ import {
   useShortcutKeyMode,
 } from "~/composables/user/setting";
 import { useAutoSound } from "~/composables/user/sound";
+import { useSubmitKey } from '~/composables/user/submitKey'
 
 const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
 const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeyData } =
@@ -75,7 +88,8 @@ function pointDialogOutside(e: MouseEvent) {
   }
 }
 
-const { autoPlaySound, toggleAutoPlaySound } = useAutoSound()
+const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
+const { answerSubmitKeys, handleCheckRadio } = useSubmitKey()
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
@@ -85,4 +99,6 @@ onUnmounted(() => {
   document.removeEventListener("mouseup", pointDialogOutside);
   document.removeEventListener("keyup", handleKeyup);
 });
+
+
 </script>
