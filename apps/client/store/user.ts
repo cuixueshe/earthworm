@@ -6,6 +6,12 @@ export interface User {
   phone: string;
 }
 
+export interface SignupFormValues {
+  phone: string;
+  name: string;
+  password: string;
+}
+
 const LOCAL_STORAGE_KEY = "userInfo";
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
