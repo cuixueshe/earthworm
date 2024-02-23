@@ -365,14 +365,9 @@
 		"soundmark": "/hi/ /ɔl'rɛdi/ /nju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "我（过去）忘记告诉你他已经",
-		"english": "I forgot to tell you he already knew",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /tə/ /tɛl/ /ju/ /hi/ /ɔl'rɛdi/ /nju/"
-	},
-	{
-		"chinese": "知道问题的答案",
-		"english": "the answer to the question",
-		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+		"chinese": "我（过去）忘记告诉你他已经知道问题的答案",
+		"english": "I forgot to tell you he already knew the answer to the question",
+		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /tə/ /tɛl/ /ju/ /hi/ /ɔl'rɛdi/ /nju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
 	},
 	{
 		"chinese": "我的",
