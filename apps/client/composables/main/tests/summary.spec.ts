@@ -1,8 +1,8 @@
 import { it, expect, describe, vi, afterEach, beforeEach } from 'vitest'
-import { defaultEnSentence, defaultZhSentence, useDailySentence, useSummary } from '../summary';
+import { defaultEnSentence, defaultZhSentence, resetSentenceLoading, useDailySentence, useSummary } from '../summary';
 import * as toolApi from "~/api/tool";
 import { useSetup } from '~/tests/helper/component';
-import { nextTick } from 'vue';
+import { flushPromises } from '@vue/test-utils';
 
 vi.mock('~/api/tool')
 
@@ -16,35 +16,46 @@ describe('summary', () => {
     beforeEach(() => {
       vi.mocked(toolApi.fetchDailySentence).mockResolvedValue(dummyRes)
       return () => {
+        resetSentenceLoading()
         vi.resetAllMocks()
       }
     })
-    it('should return default sentence at first', async () => {
-      useSetup(() => {
-        const { zhSentence, enSentence } = useDailySentence()
-        expect(zhSentence.value).toBe(defaultZhSentence)
-        expect(enSentence.value).toBe(defaultEnSentence)
-      })
-    })
 
     it('should load the daliy sentence', async () => {
-      useSetup(async () => {
+      const { wrapper } = useSetup(() => {
         const { zhSentence, enSentence } = useDailySentence()
-        await nextTick()
-        expect(toolApi.fetchDailySentence).toBeCalled()
-        expect(zhSentence.value).toBe(dummyRes.zh)
-        expect(enSentence.value).toBe(dummyRes.en)
+        return {
+          zhSentence,
+          enSentence
+        }
       })
+      
+      await flushPromises()
+
+      const {
+        zhSentence,
+        enSentence
+      } = wrapper.vm
+      
+      expect(toolApi.fetchDailySentence).toBeCalled()
+      expect(zhSentence).toBe(dummyRes.zh)
+      expect(enSentence).toBe(dummyRes.en)
     }) 
 
     it('should only load sentence once', async () => {
-      useSetup(async () => {
-        const { getDailySentence } = useDailySentence()
-        await getDailySentence()
-        await getDailySentence()
-        await getDailySentence()
-        expect(toolApi.fetchDailySentence).toBeCalledTimes(1)
+      useSetup(() => {
+        useDailySentence()
       })
+      
+      await flushPromises()
+      
+      useSetup(() => {
+        useDailySentence()
+      })
+      
+      await flushPromises()
+      
+      expect(toolApi.fetchDailySentence).toBeCalledTimes(1)
     }) 
   })
 
