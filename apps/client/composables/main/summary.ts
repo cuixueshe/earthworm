@@ -23,18 +23,23 @@ export const defaultZhSentence = '生存还是毁灭，这是一个问题。'
 
 const enSentence = ref(defaultEnSentence);
 const zhSentence = ref(defaultZhSentence);
-const setenceLoading = ref(false);
+const hasLoadingDailySentence = ref(false);
+
+export const resetSentenceLoading = () => (hasLoadingDailySentence.value = false)
+
 export function useDailySentence() {
   const getDailySentence = async () => {
-    if (!setenceLoading.value) {
-      const { en, zh } = await fetchDailySentence();
+    if (!hasLoadingDailySentence.value) {
+      hasLoadingDailySentence.value = true;
+      const { en, zh } = await fetchDailySentence().catch((err) => {
+        hasLoadingDailySentence.value = false
+        return Promise.reject(err)
+      });
       enSentence.value = en;
       zhSentence.value = zh;
-      setenceLoading.value = true;
     }
   };
 
-  const resetSentenceLoading = () => (setenceLoading.value = false)
 
   onMounted(() => {
     getDailySentence();
@@ -44,6 +49,5 @@ export function useDailySentence() {
     enSentence,
     zhSentence,
     getDailySentence,
-    resetSentenceLoading
   };
 }
