@@ -1,10 +1,4 @@
-import { nextTick, watch, reactive, ref, watchEffect, type Ref } from "vue";
-
-enum Mode {
-  Input = "input",
-  Fix = "fix",
-  Fix_Input = "fix-input",
-}
+import { nextTick, reactive, ref, watchEffect, type Ref } from "vue";
 
 interface Word {
   text: string;
@@ -16,25 +10,43 @@ interface Word {
   position: number;
 }
 
-export function useInput(
-  source: () => string,
-  {
-    setInputCursorPosition,
-    getInputCursorPosition,
-  }: {
-    setInputCursorPosition: (position: number) => void;
-    getInputCursorPosition: () => number;
-  }
-) {
+interface InputOptions {
+  source: () => string;
+  setInputCursorPosition: (position: number) => void;
+  getInputCursorPosition: () => number;
+}
+
+enum Mode {
+  Input = "input",
+  Fix = "fix",
+  Fix_Input = "fix-input",
+}
+
+const separator = " ";
+
+export function useInput({
+  source,
+  setInputCursorPosition,
+  getInputCursorPosition,
+}: InputOptions) {
   let mode: Mode = Mode.Input;
+  let currentEditWord: Word;
+
   const inputValue = ref("");
   const userInputWords = reactive<Word[]>([]);
 
-  let currentEditWord: any;
+  setupUserInputWords();
+  updateActiveWord(getInputCursorPosition());
 
-  function createWord(word: string, id: number) {
+  function setInputValue(val: string) {
+    inputValue.value = val;
+    resetAllWordUserInput();
+    inputSyncUserInputWords();
+    updateActiveWord(getInputCursorPosition());
+  }
+
+  function createWord(word: string) {
     return reactive({
-      id,
       text: word,
       isActive: false,
       userInput: "",
@@ -45,18 +57,16 @@ export function useInput(
     });
   }
 
-  watchEffect(() => {
-    const english = source();
-    english
-      .split(" ")
-      .map(createWord)
-      .forEach((word, i) => {
-        userInputWords[i] = word;
-      });
-  });
-
-  function userHasNoInput() {
-    return inputValue.value.length < 1;
+  function setupUserInputWords() {
+    watchEffect(() => {
+      const english = source();
+      english
+        .split(separator)
+        .map(createWord)
+        .forEach((word, i) => {
+          userInputWords[i] = word;
+        });
+    });
   }
 
   function userInputWordsSyncInput() {
@@ -64,13 +74,13 @@ export function useInput(
       .map(({ userInput }) => {
         return userInput;
       })
-      .join(" ");
+      .join(separator);
   }
 
   function inputSyncUserInputWords() {
     let position = 0;
 
-    inputValue.value.split(" ").forEach((input, index) => {
+    inputValue.value.split(separator).forEach((input, index) => {
       userInputWords[index].userInput = input;
 
       userInputWords[index].start = position;
@@ -135,7 +145,7 @@ export function useInput(
     })!;
   }
 
-  function clearNextIncorrectWord() {
+  async function clearNextIncorrectWord() {
     const word = findNextIncorrectWordNew();
     word.userInput = "";
     word.incorrect = false;
@@ -144,30 +154,11 @@ export function useInput(
 
     userInputWordsSyncInput();
 
-    nextTick(() => {
-      setInputCursorPosition(word.start);
-      updateActiveWord(word.start);
-    });
+    await nextTick();
+
+    setInputCursorPosition(word.start);
+    updateActiveWord(word.start);
   }
-
-  watch(
-    () => inputValue.value,
-    () => {
-      resetAllWordUserInput();
-      if (userHasNoInput()) return;
-      inputSyncUserInputWords();
-    }
-  );
-
-  watch(
-    () => inputValue.value,
-    () => {
-      updateActiveWord(getInputCursorPosition());
-    },
-    {
-      immediate: true,
-    }
-  );
 
   function submitAnswer(correctCallback: () => void) {
     if (mode === Mode.Fix) return;
@@ -183,15 +174,15 @@ export function useInput(
     }
   }
 
-  function firstFix() {
+  async function fixFirstIncorrectWord() {
     if (mode === Mode.Fix) {
       mode = Mode.Fix_Input;
 
-      clearNextIncorrectWord();
+      await clearNextIncorrectWord();
     }
   }
 
-  function nextFix() {
+  async function fixNextIncorrectWord() {
     if (mode === Mode.Fix_Input) {
       if (checkWordCorrect()) {
         mode = Mode.Input;
@@ -199,15 +190,15 @@ export function useInput(
         return;
       }
 
-      clearNextIncorrectWord();
+      await clearNextIncorrectWord();
     }
   }
 
-  function fix() {
+  async function fixIncorrectWord() {
     if (mode === Mode.Fix) {
-      firstFix();
+      await fixFirstIncorrectWord();
     } else if (mode === Mode.Fix_Input) {
-      nextFix();
+      await fixNextIncorrectWord();
     }
   }
 
@@ -254,10 +245,10 @@ export function useInput(
   return {
     inputValue,
     userInputWords,
-    nextFix,
-    firstFix,
-    fix,
+    fixFirstIncorrectWord,
+    fixIncorrectWord,
     preventInput,
     submitAnswer,
+    setInputValue,
   };
 }
