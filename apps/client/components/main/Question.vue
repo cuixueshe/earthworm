@@ -11,7 +11,7 @@
                 ? 'text-fuchsia-500 border-b-fuchsia-500'
                 : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
           ]"
-          :style="{ width: `${w.length}ch` }"
+          :style="{ width: `${w.length + (w.length / 2)}ch` }"
         >
           {{ userInputWords[i]["userInput"] }}
         </div>
