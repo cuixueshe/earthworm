@@ -43,13 +43,5 @@
     "drizzle-orm": "^0.29.3",
     "mysql2": "^3.7.0",
     "zod": "^3.22.4"
-  },
-  "simple-git-hooks": {
-    "pre-push": "pnpm run test && npx lint-staged && pnpm run build:serve && pnpm run build:client"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx,vue,md}": [
-      "eslint --cache --fix"
-    ]
   }
 }
