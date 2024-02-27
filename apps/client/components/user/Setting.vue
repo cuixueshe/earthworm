@@ -39,6 +39,17 @@
         </label>
       </div>
     </section>
+
+    <section>
+      <h2>是否展示每个单词长度</h2>
+      <div className="form-control w-52">
+        <label className="cursor-pointer label">
+          <span className="label-text">是</span>
+          <input type="checkbox" className="toggle toggle-primary" :checked="autoShowWordsWidth"
+            @change="toggleAutoWordsWidth" />
+        </label>
+      </div>
+    </section>
   </div>
 
   <dialog class="modal mt-[-8vh]" :open="showModal">
@@ -63,6 +74,7 @@ import {
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
+import { useShowWordsWidth } from "~/composables/user/words";
 
 const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
 const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeys } =
@@ -77,6 +89,8 @@ function pointDialogOutside(e: MouseEvent) {
 }
 
 const { autoPlaySound, toggleAutoPlaySound } = useAutoSound()
+
+const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth()
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
