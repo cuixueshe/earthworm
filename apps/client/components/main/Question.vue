@@ -2,31 +2,19 @@
   <div class="text-center pt-2">
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
       <template v-for="(w, i) in courseStore.words" :key="i">
-        <div
-          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
-          :class="[
-            userInputWords[i]['incorrect']
-              ? 'text-red-500 border-b-red-500'
-              : userInputWords[i]?.['isActive'] && focusing
-                ? 'text-fuchsia-500 border-b-fuchsia-500'
-                : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
-          ]"
-          :style="{ width: `${w.length}ch` }"
-        >
+        <div class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all" :class="[
+          userInputWords[i]['incorrect']
+            ? 'text-red-500 border-b-red-500'
+            : userInputWords[i]?.['isActive'] && focusing
+              ? 'text-fuchsia-500 border-b-fuchsia-500'
+              : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
+          isShowWordsWidth() ? '' : 'min-w-28'
+        ]" :style="isShowWordsWidth() ? { width: `${w.length}ch` } : {}">
           {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
-      <input
-        ref="inputEl"
-        class="absolute h-full w-full opacity-0"
-        type="text"
-        v-model="inputValue"
-        @keyup="handleKeyup"
-        @keydown="handleKeydown"
-        @focus="handleInputFocus"
-        @blur="handleBlur"
-        autoFocus
-      />
+      <input ref="inputEl" class="absolute h-full w-full opacity-0" type="text" v-model="inputValue" @keyup="handleKeyup"
+        @keydown="handleKeydown" @focus="handleInputFocus" @blur="handleBlur" autoFocus />
     </div>
     <div class="mt-12 text-xl dark:text-gray-50">
       {{
@@ -41,12 +29,15 @@ import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import { ref, onMounted, watch } from "vue";
 import { useInput } from "~/composables/main/question";
+import { useShowWordsWidth } from '~/composables/user/words'
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
 const { setInputCursorPosition, getInputCursorPosition } = useCursor();
 const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
+const { isShowWordsWidth } = useShowWordsWidth()
+
 
 const {
   inputValue,
