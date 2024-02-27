@@ -2,11 +2,10 @@ import { InjectRedis } from '@nestjs-modules/ioredis';
 import { Injectable, Logger } from '@nestjs/common';
 import Redis from 'ioredis';
 import { UserEntity } from '../user/user.decorators';
-import { Cron } from '@nestjs/schedule';
 
 @Injectable()
 export class RankService {
-  private readonly FINISH_COUNT_KEY = `user:finishCount`;
+  public readonly FINISH_COUNT_KEY = `user:finishCount`;
   private static readonly EVERY_MONDAY_AT_2AM = '0 2 * * 1';
   private readonly logger = new Logger(RankService.name);
 
@@ -66,7 +65,6 @@ export class RankService {
     };
   }
 
-  @Cron(RankService.EVERY_MONDAY_AT_2AM)
   async resetRankList() {
     try {
       await this.redis.del(this.FINISH_COUNT_KEY);
