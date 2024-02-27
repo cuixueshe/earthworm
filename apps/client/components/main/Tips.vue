@@ -6,11 +6,18 @@
       </button>
       <span class="ml-2">play sound</span>
     </div>
-    <div class="w-[210px]">
+    <div class="w-[210px] mb-4">
       <button class="tip-btn" @click="toggleGameMode">
         ⌃ {{ shortcutKeys.answer }}
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
+    </div>
+
+    <div class="w-[210px]">
+      <button class="tip-btn" @click="toggleGameMode">
+        Space
+      </button>
+      <span class="ml-2">fix incorrect word</span>
     </div>
   </div>
 </template>

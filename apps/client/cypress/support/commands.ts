@@ -36,7 +36,7 @@ Cypress.Commands.add(
 
     cy.visit("/auth/login");
 
-    cy.get('input[type="text"]').as("phoneInput").type("13812345678");
+    cy.get('input[type="tel"]').as("phoneInput").type("13812345678");
     cy.get('input[type="password"]')
       .as("passwordInput")
       .type("yourPassword{enter}");

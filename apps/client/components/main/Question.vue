@@ -2,16 +2,14 @@
   <div class="text-center pt-2">
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
       <template v-for="(w, i) in courseStore.words" :key="i">
-        <div
-          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
-          :class="[
-            i === activeInputIndex && focusing
+        <div class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all" :class="[
+          userInputWords[i]['incorrect']
+            ? 'text-red-500 border-b-red-500'
+            : userInputWords[i]?.['isActive'] && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
               : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
-          ]"
-          :style="{ width: `${w.length}ch` }"
-        >
-          {{ userInputWords[i] }}
+        ]" :style="{ width: `${w.length}ch` }">
+          {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
       <input ref="inputEl" class="absolute h-full w-full opacity-0" type="text" v-model="inputValue" @keyup="handleKeyup"
@@ -28,82 +26,71 @@
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
-import { ref, computed, onMounted } from "vue";
-import { useSubmitKey } from '~/composables/user/submitKey';
+import { ref, onMounted, watch } from "vue";
+import { useInput } from "~/composables/main/question";
 
 const courseStore = useCourseStore();
-const { userInputWords, activeInputIndex, inputValue } = useInput();
-const { handleKeyup, handleKeydown } = registerShortcutKeyForInputEl();
-const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
-const { showSubmitKey } = useSubmitKey()
+const inputEl = ref<HTMLInputElement>();
+const { setInputCursorPosition, getInputCursorPosition } = useCursor();
+const { focusing, handleInputFocus, handleBlur } = useFocus();
+const { showAnswer } = useGameMode();
 
-function useInput() {
-  const inputValue = ref("");
+const {
+  inputValue,
+  userInputWords,
+  preventInput,
+  submitAnswer,
+  setInputValue,
+  fixIncorrectWord,
+  fixFirstIncorrectWord,
+} = useInput({
+  source: () => courseStore.currentStatement?.english!,
+  setInputCursorPosition,
+  getInputCursorPosition,
+});
 
-  const userInputWords = computed(() => {
-    return inputValue.value.trimStart().split(" ");
-  });
+watch(
+  () => inputValue.value,
+  (val) => {
+    setInputValue(val);
+  }
+);
 
-  const activeInputIndex = computed(() => {
-    return Math.min(userInputWords.value.length - 1, courseStore.words.length - 1);
-  });
-
-  return {
-    inputValue,
-    userInputWords,
-    activeInputIndex,
-  };
+function handleKeyup(e: KeyboardEvent) {
+  if (e.code === "Enter") {
+    e.stopPropagation();
+    submitAnswer(() => {
+      showAnswer();
+    });
+  } else if (e.code === "Backspace") {
+    fixFirstIncorrectWord();
+  } else if (e.code === "Space") {
+    fixIncorrectWord();
+  }
 }
 
-function registerShortcutKeyForInputEl() {
-  const { showAnswer } = useGameMode();
+function handleKeydown(e: KeyboardEvent) {
+  preventInput(e);
+}
 
-  function handleKeyup(e: KeyboardEvent) {
-    const submitKey = showSubmitKey()
-    const isLastStr = courseStore.checkCorrect(inputValue.value.trim())
-    if ((submitKey === 'All' && (e.code === "Enter" || (e.code === "Space" && isLastStr))) || (e.code === submitKey && isLastStr)) {
-      e.stopPropagation();
-
-      if (isLastStr) {
-        showAnswer();
-      }
-
-      inputValue.value = "";
-    }
+function useCursor() {
+  function setInputCursorPosition(position: number) {
+    inputEl.value?.setSelectionRange(position, position);
   }
 
-  function handleKeydown(e: KeyboardEvent) {
-    const inputLastStr = inputValue.value[inputValue.value.length - 1];
-    if (e.code === "Space" && inputLastStr === " ") {
-      // prevent input multiple spaces
-      e.preventDefault();
-    }
-    if (
-      e.code === "Backspace" &&
-      userInputWords.value.length - courseStore.words.length === 1 &&
-      inputLastStr === " "
-    ) {
-      // remove the last space and the last letter
-      e.preventDefault();
-      inputValue.value = inputValue.value.slice(0, -2);
-    }
-    // 新增逻辑：阻止在最后一个单词后添加空格
-    const words = inputValue.value.trim().split(" ");
-    const isLastWord = words.length === courseStore.wordCount;
-    if (e.code === "Space" && isLastWord) {
-      e.preventDefault();
-    }
+  function getInputCursorPosition() {
+    return inputEl.value?.selectionStart || 0;
   }
 
   return {
-    handleKeyup,
-    handleKeydown,
+    setInputCursorPosition,
+    getInputCursorPosition,
   };
 }
 
 function useFocus() {
   const focusing = ref(true);
-  const inputEl = ref<HTMLInputElement>();
+
   onMounted(() => {
     inputEl.value?.focus();
   });
@@ -117,7 +104,6 @@ function useFocus() {
   }
 
   return {
-    inputEl,
     focusing,
     handleInputFocus,
     handleBlur,
