@@ -1,11 +1,14 @@
 import { InjectRedis } from '@nestjs-modules/ioredis';
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import Redis from 'ioredis';
 import { UserEntity } from '../user/user.decorators';
+import { Cron } from '@nestjs/schedule';
 
 @Injectable()
 export class RankService {
   private readonly FINISH_COUNT_KEY = `user:finishCount`;
+  private static readonly EVERY_MONDAY_AT_2AM = '0 2 * * 1';
+  private readonly logger = new Logger(RankService.name);
 
   constructor(@InjectRedis() private readonly redis: Redis) {}
 
@@ -26,10 +29,10 @@ export class RankService {
   }
 
   private translateList(rankList: string[]) {
-    let res = [];
+    const res = [];
     for (let i = 0; i < rankList.length; i += 2) {
-      let username = this.getUserName(rankList[i]);
-      let count = rankList[i + 1];
+      const username = this.getUserName(rankList[i]);
+      const count = rankList[i + 1];
       res.push({ username, count });
     }
     return res;
@@ -38,7 +41,7 @@ export class RankService {
   // return top 10 and self rank
   async getRankList(user: UserEntity) {
     // return [member, count, member, count, ...]
-    let rankList = await this.redis.zrevrange(
+    const rankList = await this.redis.zrevrange(
       this.FINISH_COUNT_KEY,
       0,
       9,
@@ -61,5 +64,15 @@ export class RankService {
       list: this.translateList(rankList),
       self,
     };
+  }
+
+  @Cron(RankService.EVERY_MONDAY_AT_2AM)
+  async resetRankList() {
+    try {
+      await this.redis.del(this.FINISH_COUNT_KEY);
+      this.logger.verbose(`每周重置排行榜成功: ${new Date()}`);
+    } catch (error) {
+      this.logger.error(`重置排行榜时发生错误: ${error}`);
+    }
   }
 }

@@ -8,6 +8,7 @@ import { ToolModule } from '../tool/tool.module';
 import { RedisModule } from '@nestjs-modules/ioredis';
 import { RankModule } from '../rank/rank.module';
 import { GameModule } from '../game/game.module';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { GameModule } from '../game/game.module';
         password: process.env.REDIS_PASSWORD,
       }),
     }),
+    ScheduleModule.forRoot(),
   ],
 })
 export class AppModule {}
