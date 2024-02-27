@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
-import { RankService } from 'src/rank/rank.service';
+import { RankService } from '../rank/rank.service';
 
 @Injectable()
 export class ScheduleService {
