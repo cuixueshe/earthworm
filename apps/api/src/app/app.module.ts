@@ -9,7 +9,7 @@ import { RedisModule } from '@nestjs-modules/ioredis';
 import { RankModule } from '../rank/rank.module';
 import { GameModule } from '../game/game.module';
 import { ScheduleModule as Schedule } from '@nestjs/schedule';
-import { ScheduleModule } from 'src/schedule/schedule.module';
+import { ScheduleModule } from '../schedule/schedule.module';
 
 @Module({
   imports: [

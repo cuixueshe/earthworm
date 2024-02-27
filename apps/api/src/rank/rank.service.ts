@@ -5,8 +5,7 @@ import { UserEntity } from '../user/user.decorators';
 
 @Injectable()
 export class RankService {
-  public readonly FINISH_COUNT_KEY = `user:finishCount`;
-  private static readonly EVERY_MONDAY_AT_2AM = '0 2 * * 1';
+  private readonly FINISH_COUNT_KEY = `user:finishCount`;
   private readonly logger = new Logger(RankService.name);
 
   constructor(@InjectRedis() private readonly redis: Redis) {}
