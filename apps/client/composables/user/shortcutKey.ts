@@ -1,6 +1,18 @@
 import { ref, onMounted, computed } from "vue";
 import { DEFAULT_SHORTCUT_KEYS } from "~/store/user";
 
+export const KEYBOARD = {
+  ENTER: "Enter",
+  COMMAND: "Command",
+  CONTROL: "Control",
+  ALT: "Alt",
+  SHIFT: "Shift",
+  ESC: "Esc",
+  META: "Meta",
+  CTRL: "Ctrl",
+};
+export const SHORTCUT_KEYS = "shortcutKeys";
+
 let showModal = ref<boolean>(false);
 let currentKeyType = ref<string>("");
 
@@ -70,10 +82,15 @@ export function useShortcutKeyMode() {
     return shortcutKeyStr.value.trim().replace(/\s/g, " 加上 ");
   });
 
-  function convertCtrlKey(key: string) {
-    return key === "Control" ? "Ctrl" : key;
+  function convertKey(key: string) {
+    return (
+      {
+        [KEYBOARD.CONTROL]: KEYBOARD.CTRL,
+        [KEYBOARD.META]: KEYBOARD.COMMAND,
+      }[key] || key
+    );
   }
-
+  const isEnterKey = (key: string) => key === KEYBOARD.ENTER;
   /**
    * 参考于vscode快捷键
    * 有待讨论，产品角度出发，快捷键应该只支持组合键形式
@@ -81,24 +98,21 @@ export function useShortcutKeyMode() {
    */
   function handleKeyup(e: KeyboardEvent) {
     if (!showModal.value) return;
-
-    if (e.key === "Enter") {
-      saveShortcutKeys();
-    }
+    isEnterKey(e.key) && saveShortcutKeys();
     // 组合键
     if (e.altKey || e.shiftKey || e.ctrlKey || e.metaKey) {
       const mainKey =
-        (e.altKey && "Alt") ||
-        (e.shiftKey && "Shift") ||
-        (e.ctrlKey && "Ctrl") ||
-        (e.metaKey && "Command");
+        (e.altKey && KEYBOARD.ALT) ||
+        (e.shiftKey && KEYBOARD.SHIFT) ||
+        (e.ctrlKey && KEYBOARD.CTRL) ||
+        (e.metaKey && KEYBOARD.COMMAND);
       shortcutKeyStr.value += `${mainKey}+${e.key} `;
     } else {
       // 单个键入
-      const key = convertCtrlKey(e.key);
+      const key = convertKey(e.key);
       if (
         (shortcutKeyStr.value.includes(key) && SPECIAL_KEYS.has(key)) ||
-        e.key === "Enter"
+        isEnterKey(e.key)
       )
         return;
       shortcutKeyStr.value += `${key} `;

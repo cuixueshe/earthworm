@@ -1,14 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppModule } from '../../app/app.module';
 import { INestApplication } from '@nestjs/common';
-import { cleanDB } from '../../../tests/helper/utils';
+import { cleanDB, signup } from '../../../test/helper/utils';
 import { DbType, DB } from '../../global/providers/db.provider';
 import {
   createFirstCourse,
   createSecondCourse,
-} from '../../../tests/fixture/course';
-import { createStatement } from '../../../tests/fixture/statement';
+} from '../../../test/fixture/course';
+import { createStatement } from '../../../test/fixture/statement';
 import { course, statement } from '@earthworm/shared';
+import { endDB } from '../../common/db';
 import * as request from 'supertest';
 
 const firstCourse = createFirstCourse();
@@ -16,6 +17,7 @@ const firstCourse = createFirstCourse();
 describe('course e2e', () => {
   let app: INestApplication;
   let db: DbType;
+  let token: string;
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
@@ -29,11 +31,36 @@ describe('course e2e', () => {
 
     await cleanDB(db);
     await setupDBData(db);
+
+    const signupBody = await signup(app);
+    token = signupBody.token;
   });
 
-  it('should fetch superhero details', () => {
+  afterEach(async () => {
+    await cleanDB(db);
+    await endDB();
+    await app.close();
+  });
+
+  it('should fetch superhero details', async () => {
     return request(app.getHttpServer())
       .get('/courses/1')
+      .set('Authorization', `Bearer ${token}`)
+      .expect(200)
+      .expect(({ body }) => {
+        expect(body).toEqual(
+          expect.objectContaining({
+            id: firstCourse.id,
+            title: firstCourse.title,
+          }),
+        );
+        expect(body.statements.length).toBeGreaterThan(0);
+      });
+  });
+
+  it('should allow trying a course without authentication', async () => {
+    await request(app.getHttpServer())
+      .get('/courses/try')
       .expect(200)
       .expect(({ body }) => {
         expect(body).toEqual(

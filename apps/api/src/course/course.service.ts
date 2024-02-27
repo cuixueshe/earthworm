@@ -14,6 +14,17 @@ export class CourseService {
     private readonly rankService: RankService,
   ) {}
 
+  async tryCourse() {
+    const firstCourse = await this.getFirstCourse();
+
+    const statementsResult = await this.findStatements(firstCourse.id);
+
+    return {
+      ...firstCourse,
+      statements: statementsResult,
+    };
+  }
+
   async findNext(courseId: number) {
     const result = await this.db
       .select({ id: course.id, title: course.title })

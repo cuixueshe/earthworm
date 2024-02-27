@@ -19,7 +19,8 @@
     "build:serve": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
     "prod:serve": "pnpm -F api start:prod:pm",
-    "test":"pnpm -F api test && pnpm -F client test"
+    "test": "pnpm -F api test && pnpm -F client test",
+    "test:ci": "pnpm -F api test && pnpm -F client test:ci"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +32,8 @@
     "@types/node": "^20.11.0",
     "dotenv": "^16.3.1",
     "drizzle-kit": "^0.20.10",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.9.0",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"

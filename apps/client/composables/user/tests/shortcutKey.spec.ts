@@ -1,11 +1,5 @@
-import { it, expect, describe, beforeEach } from "vitest";
-import {
-  useShortcutDialogMode,
-  CUSTOM_SHORTCUT_KEY,
-  useShortcutKeyMode,
-} from "../shortcutKey";
-import UserSetting from "~/components/user/Setting.vue";
-import { mount } from "@vue/test-utils";
+import { it, expect, describe } from "vitest";
+import { useShortcutDialogMode } from "../shortcutKey";
 
 describe("exchange shortcut key dialog", () => {
   const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();

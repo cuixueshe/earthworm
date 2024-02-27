@@ -1,20 +1,21 @@
 import { JwtModule } from '@nestjs/jwt';
-import { RankService } from '../rank/rank.service';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { CourseService } from './course.service';
+import { RankService } from '../../rank/rank.service';
+import { UserProgressService } from '../../user-progress/user-progress.service';
+import { CourseService } from '../course.service';
 import { Test } from '@nestjs/testing';
-import { MockRedisModule } from '../../tests/helper/mockRedis';
-import { type DbType, DB } from '../global/providers/db.provider';
+import { MockRedisModule } from '../../../test/helper/mockRedis';
+import { type DbType, DB } from '../../global/providers/db.provider';
 import { course, statement } from '@earthworm/shared';
 import { HttpException } from '@nestjs/common';
-import { createUser } from '../../tests/fixture/user';
-import { GlobalModule } from '../global/global.mudule';
+import { createUser } from '../../../test/fixture/user';
+import { GlobalModule } from '../../global/global.mudule';
 import {
   createFirstCourse,
   createSecondCourse,
-} from '../../tests/fixture/course';
-import { createStatement } from '../../tests/fixture/statement';
-import { cleanDB, startDB, endDB } from '../../tests/helper/utils';
+} from '../../../test/fixture/course';
+import { createStatement } from '../../../test/fixture/statement';
+import { cleanDB, startDB } from '../../../test/helper/utils';
+import { endDB } from '../../common/db';
 
 const user = createUser();
 const firstCourse = createFirstCourse();
@@ -38,6 +39,7 @@ describe('course service', () => {
 
   afterAll(async () => {
     await cleanDB(db);
+    await endDB();
   });
 
   beforeEach(async () => {
@@ -46,7 +48,17 @@ describe('course service', () => {
 
   afterEach(async () => {
     jest.clearAllMocks();
-    await endDB(db);
+  });
+
+  it('should return try course data', async () => {
+    const course = await courseService.tryCourse();
+
+    expect(course).toEqual(
+      expect.objectContaining({
+        ...firstCourse,
+      }),
+    );
+    expect(course.statements.length).toBeGreaterThan(0);
   });
 
   it('should return course details with statements given a course ID', async () => {

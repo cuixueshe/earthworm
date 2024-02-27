@@ -1,16 +1,19 @@
 <template>
   <div class="text-center pt-2">
-    <div class="flex relative flex-wrap justify-center ml-2 transition-all">
-      <template v-for="i in courseStore.wordCount" :key="i">
+    <div class="flex relative flex-wrap justify-center gap-2 transition-all">
+      <template v-for="(w, i) in courseStore.words" :key="i">
         <div
-          class="flex items-end justify-center h-[4.8rem] min-w-28 px-2 mr-2 border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
+          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
-            i - 1 === activeInputIndex && focusing
-              ? 'text-fuchsia-500 border-b-fuchsia-500'
-              : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
+            userInputWords[i]['incorrect']
+              ? 'text-red-500 border-b-red-500'
+              : userInputWords[i]?.['isActive'] && focusing
+                ? 'text-fuchsia-500 border-b-fuchsia-500'
+                : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
           ]"
+          :style="{ width: `${w.length}ch` }"
         >
-          {{ userInputWords[i - 1] }}
+          {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
       <input
@@ -36,71 +39,71 @@
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
-import { ref, computed, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
+import { useInput } from "~/composables/main/question";
 
 const courseStore = useCourseStore();
-const { userInputWords, activeInputIndex, inputValue } = useInput();
-const { handleKeyup, handleKeydown } = registerShortcutKeyForInputEl();
-const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
+const inputEl = ref<HTMLInputElement>();
+const { setInputCursorPosition, getInputCursorPosition } = useCursor();
+const { focusing, handleInputFocus, handleBlur } = useFocus();
+const { showAnswer } = useGameMode();
 
-function useInput() {
-  const inputValue = ref("");
+const {
+  inputValue,
+  userInputWords,
+  preventInput,
+  submitAnswer,
+  setInputValue,
+  fixIncorrectWord,
+  fixFirstIncorrectWord,
+} = useInput({
+  source: () => courseStore.currentStatement?.english!,
+  setInputCursorPosition,
+  getInputCursorPosition,
+});
 
-  const userInputWords = computed(() => {
-    return inputValue.value.trimStart().split(" ");
-  });
+watch(
+  () => inputValue.value,
+  (val) => {
+    setInputValue(val);
+  }
+);
 
-  const activeInputIndex = computed(() => {
-    return Math.min(userInputWords.value.length - 1, courseStore.wordCount - 1);
-  });
-
-  return {
-    inputValue,
-    userInputWords,
-    activeInputIndex,
-  };
+function handleKeyup(e: KeyboardEvent) {
+  if (e.code === "Enter") {
+    e.stopPropagation();
+    submitAnswer(() => {
+      showAnswer();
+    });
+  } else if (e.code === "Backspace") {
+    fixFirstIncorrectWord();
+  } else if (e.code === "Space") {
+    fixIncorrectWord();
+  }
 }
 
-function registerShortcutKeyForInputEl() {
-  const { showAnswer } = useGameMode();
+function handleKeydown(e: KeyboardEvent) {
+  preventInput(e);
+}
 
-  function handleKeyup(e: KeyboardEvent) {
-    if (e.code === "Enter") {
-      e.stopPropagation();
-
-      if (courseStore.checkCorrect(inputValue.value.trim())) {
-        showAnswer();
-      }
-      inputValue.value = "";
-    }
+function useCursor() {
+  function setInputCursorPosition(position: number) {
+    inputEl.value?.setSelectionRange(position, position);
   }
 
-  function handleKeydown(e: KeyboardEvent) {
-    const inputLastStr = inputValue.value[inputValue.value.length - 1];
-    if (e.code === "Space" && inputLastStr === " ") {
-      // prevent input multiple spaces
-      e.preventDefault();
-    }
-    if (
-      e.code === "Backspace" &&
-      userInputWords.value.length - courseStore.wordCount === 1 &&
-      inputLastStr === " "
-    ) {
-      // remove the last space and the last letter
-      e.preventDefault();
-      inputValue.value = inputValue.value.slice(0, -2);
-    }
+  function getInputCursorPosition() {
+    return inputEl.value?.selectionStart || 0;
   }
 
   return {
-    handleKeyup,
-    handleKeydown,
+    setInputCursorPosition,
+    getInputCursorPosition,
   };
 }
 
 function useFocus() {
   const focusing = ref(true);
-  const inputEl = ref<HTMLInputElement>();
+
   onMounted(() => {
     inputEl.value?.focus();
   });
@@ -114,7 +117,6 @@ function useFocus() {
   }
 
   return {
-    inputEl,
     focusing,
     handleInputFocus,
     handleBlur,
