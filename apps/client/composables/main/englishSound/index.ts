@@ -21,6 +21,12 @@ export function useCurrentStatementEnglishSound() {
   };
 }
 
+// 朗读每日一句
+export function readOneSentencePerDayAloud(str: string) {
+  updateSource(`https://dict.youdao.com/dictvoice?audio=${str}&type=1`);
+  play();
+}
+
 export function reset() {
   prevWord = "";
 }
