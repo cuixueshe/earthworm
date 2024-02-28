@@ -8,8 +8,8 @@ import { ToolModule } from '../tool/tool.module';
 import { RedisModule } from '@nestjs-modules/ioredis';
 import { RankModule } from '../rank/rank.module';
 import { GameModule } from '../game/game.module';
-import { ScheduleModule as Schedule } from '@nestjs/schedule';
-import { ScheduleModule } from '../schedule/schedule.module';
+import { ScheduleModule } from '@nestjs/schedule';
+import { CronJobModule } from '../cron-job/cron-job.module';
 
 @Module({
   imports: [
@@ -21,7 +21,7 @@ import { ScheduleModule } from '../schedule/schedule.module';
     ToolModule,
     RankModule,
     GameModule,
-    ScheduleModule,
+    CronJobModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: 'single',
@@ -29,7 +29,7 @@ import { ScheduleModule } from '../schedule/schedule.module';
         password: process.env.REDIS_PASSWORD,
       }),
     }),
-    Schedule.forRoot(),
+    ScheduleModule.forRoot(),
   ],
 })
 export class AppModule {}

@@ -3,12 +3,12 @@ import { Cron } from '@nestjs/schedule';
 import { RankService } from '../rank/rank.service';
 
 @Injectable()
-export class ScheduleService {
+export class CronJobService {
   private static readonly EVERY_MONDAY_AT_2AM = '0 2 * * 1';
 
   constructor(private readonly rankService: RankService) {}
 
-  @Cron(ScheduleService.EVERY_MONDAY_AT_2AM)
+  @Cron(CronJobService.EVERY_MONDAY_AT_2AM)
   async resetRankList() {
     this.rankService.resetRankList();
   }
