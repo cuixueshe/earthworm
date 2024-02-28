@@ -20,7 +20,8 @@
     "build:client": "pnpm -F client generate",
     "prod:serve": "pnpm -F api start:prod:pm",
     "test": "pnpm -F api test && pnpm -F client test",
-    "test:ci": "pnpm -F api test && pnpm -F client test:ci"
+    "test:ci": "pnpm -F api test && pnpm -F client test:ci",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "simple-git-hooks": {
     "commit-msg": "npx tsx ./scripts/verify-commit.ts"
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
     "drizzle-kit": "^0.20.10",
     "lint-staged": "^15.2.2",
