@@ -17,7 +17,7 @@ const userFinishedTwice = createRankListWithUserFinishedCourse2Times();
 describe('rank service', () => {
   let rankService: RankService;
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     const testHelper = await setupTesting();
 
     rankService = testHelper.rankService;
