@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { RankService } from '../rank.service';
-import { RedisModule } from '@nestjs-modules/ioredis';
+import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { JwtModule } from '@nestjs/jwt';
 import { createUser } from '../../../test/fixture/user';
 import {
@@ -68,16 +68,7 @@ describe('rank service', () => {
 async function setupTesting() {
   const moduleRef: TestingModule = await Test.createTestingModule({
     imports: [
-      RedisModule.forRootAsync({
-        useFactory: () => ({
-          type: 'single',
-          url: process.env.REDIS_URL,
-          password: process.env.REDIS_PASSWORD,
-          options: {
-            db: 2,
-          },
-        }),
-      }),
+      MockRedisModule,
       JwtModule.register({
         secret: process.env.SECRET,
         signOptions: { expiresIn: '7d' },
