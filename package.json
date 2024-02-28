@@ -22,6 +22,9 @@
     "test": "pnpm -F api test && pnpm -F client test",
     "test:ci": "pnpm -F api test && pnpm -F client test:ci"
   },
+  "simple-git-hooks": {
+    "commit-msg": "npx tsx ./scripts/verify-commit.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
