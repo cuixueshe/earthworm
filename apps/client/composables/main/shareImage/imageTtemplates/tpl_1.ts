@@ -5,12 +5,12 @@ export const tpl_1 = ({zhSentence, enSentence}:{
   return {
     type: "div",
     props: {
-      tw: "w-full h-full bg-[#EEA2A4] rounded-md px-8 pt-8 flex flex-col items-center tracking-normal font-sans",
+      tw: "w-full h-full bg-[#EEA2A4] px-8 pt-8 flex flex-col items-center tracking-normal font-sans",
       children: [
         {
           type: "div",
           props: {
-            tw: "bg-white rounded-xl flex-1 w-full flex flex-col px-2 py-4 mb-2 shadow-xl",
+            tw: "bg-white rounded-xl flex-1 w-full flex flex-col px-2 py-4 mb-6 shadow-xl",
             children: [
               {
                 type: "div",
@@ -22,14 +22,14 @@ export const tpl_1 = ({zhSentence, enSentence}:{
               {
                 type: "span",
                 props: {
-                  tw: "text-slate-400 font-bold text-md",
+                  tw: "text-slate-400 font-bold text-2xl",
                   children: "Course 7",
                 },
               },
               {
                 type: "div",
                 props: {
-                  tw: "flex-1 flex flex-col font-bold text-slate-600 text-lg leading-loose italic font-serif",
+                  tw: "flex-1 flex flex-col font-bold text-slate-600 text-lg leading-snug italic font-serif text-2xl",
                   style: {
                     fontFamily: '"EBGaramond", "nzgrKangxi", serif',
                   },
@@ -37,6 +37,7 @@ export const tpl_1 = ({zhSentence, enSentence}:{
                     {
                       type: "div",
                       props: {
+                        tw: "mb-2",
                         children: enSentence,
                       },
                     },
@@ -71,7 +72,7 @@ export const tpl_1 = ({zhSentence, enSentence}:{
         {
           type: "p",
           props: {
-            tw: "text-sm mb-2",
+            tw: "text-lg mb-2",
             children: "© earthworm.cuixueshe.com",
           },
         },
