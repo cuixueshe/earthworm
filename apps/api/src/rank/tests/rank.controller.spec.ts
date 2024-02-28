@@ -19,7 +19,7 @@ describe('rank controller', () => {
   let rankController: RankController;
   let rankService: RankService;
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     const testHelper = await setupTesting();
 
     rankService = testHelper.rankService;
