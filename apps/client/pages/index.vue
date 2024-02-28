@@ -53,7 +53,7 @@
                 当前页面，点击按钮
                 <span class="inline-block px-1 text-fuchsia-300 border border-solid border-fuchsia-300 rounded-lg">Get
                   Started</span>
-                (或快捷键 Enter)，开启你的第一节课。
+                <span class="text-gray-500"> (或快捷键 Enter)</span> 开启你的第一节课。
               </p>
               <p class="py-1">
                 课程页面，紫色下划线为聚焦状态，输入你的答案，敲击回车键验证结果。

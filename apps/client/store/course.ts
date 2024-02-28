@@ -37,7 +37,7 @@ export const useCourseStore = defineStore("course", () => {
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
-  })
+  });
 
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
@@ -79,8 +79,8 @@ export const useCourseStore = defineStore("course", () => {
 
     const userStore = useUserStore();
     if (!userStore.user) {
-      let course = await fetchTryCourse()
-      currentCourse.value = course
+      let course = await fetchTryCourse();
+      currentCourse.value = course;
     } else {
       let course = await fetchCourse(courseId);
       currentCourse.value = course;
@@ -110,17 +110,22 @@ export const useCourseStore = defineStore("course", () => {
   };
 });
 
-const COURSE_PROGRESS = "courseProgress";
+export const COURSE_PROGRESS = "courseProgress";
 function useCourseProgress() {
+  const courseStore = useCourseStore();
+
   function saveProgress(courseId: number, index: number) {
     const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
-    progress[courseId] = index;
+    progress[courseId] = {
+      index,
+      total: courseStore.totalQuestionsCount,
+    };
     localStorage.setItem(COURSE_PROGRESS, JSON.stringify(progress));
   }
 
   function loadProgress(courseId: number) {
     const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
-    return progress[courseId] || 0;
+    return progress[courseId]?.index || 0;
   }
 
   function cleanProgress() {
