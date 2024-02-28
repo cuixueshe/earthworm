@@ -1,4 +1,5 @@
-export const tpl_1 = ({zhSentence, enSentence}:{
+export const tpl_1 = ({zhSentence, enSentence, courseNum}:{
+  courseNum: number
   zhSentence: string
   enSentence: string
 }) => {
@@ -23,7 +24,7 @@ export const tpl_1 = ({zhSentence, enSentence}:{
                 type: "span",
                 props: {
                   tw: "text-slate-400 font-bold text-2xl",
-                  children: "Course 7",
+                  children: `Course ${courseNum}`,
                 },
               },
               {

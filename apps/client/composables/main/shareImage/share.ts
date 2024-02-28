@@ -2,6 +2,7 @@ import { ref, watch } from "vue";
 import satori from 'satori';
 import { tpl_1 } from "./imageTtemplates/tpl_1";
 import { useDailySentence } from "../summary";
+import { useCourseStore } from "~/store/course";
 
 const shareModalVisible = ref(false);
 export function useShareModal() {
@@ -49,6 +50,7 @@ const generateconfig = async () => {
 };
 
 export function useGenerateShareImage() {
+  const courseStore = useCourseStore();
   const { zhSentence, enSentence } = useDailySentence();
 
   const shareImageSrc = ref("");
@@ -81,9 +83,14 @@ export function useGenerateShareImage() {
     shareImageSrc.value = dataURL;
   };
 
+  
   const generateImage = async () => {
+    if (!courseStore.currentCourse) {
+      return
+    }
     const svg = await satori(
       tpl_1({
+        courseNum: courseStore.currentCourse.id,
         zhSentence: zhSentence.value,
         enSentence: enSentence.value,
       }),
