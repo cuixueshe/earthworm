@@ -9,7 +9,7 @@
               ? 'text-fuchsia-500 border-b-fuchsia-500'
               : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
           isShowWordsWidth() ? '' : 'min-w-28'
-        ]" :style="isShowWordsWidth() ? { width: `${w.length}ch` } : {}">
+        ]" :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}">
           {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
@@ -71,6 +71,75 @@ function handleKeyup(e: KeyboardEvent) {
   } else if (e.code === "Space") {
     fixIncorrectWord();
   }
+}
+
+// 输入宽度
+function inputWidth(word: string) {
+  // 单词宽度
+  let width = 0;
+
+  // 单词转小写字符数组
+  word = word.toLocaleLowerCase()
+  const wordArr = word.split("");
+
+  // 字符宽度1.1的字符数组
+  const onePointOneLetters = ['u', 'o', 'p', 'q', 'n', 'h', 'g', 'd', 'b'];
+
+  // 字符宽度0.9的字符数组
+  const zeroPointNineLetters = ['z', 'y', 'x', 'v', 'c'];
+
+  for(let letter of wordArr) {
+    if(letter === 'w' || letter === 'm') {
+      width += 1.5
+      continue;
+    }
+    if(letter === 's') {
+      width += 0.8
+      continue;
+    }
+    if(letter === 't' || letter === 'r' || letter === 'f') {
+      width += 0.7
+      continue;
+    }
+    if(letter === 'j') {
+      width += 0.6
+      continue;
+    }
+    if(letter === 'i' || letter === 'l') {
+      width += 0.5
+      continue;
+    }
+
+    // 记录是否已经增加宽度
+    let increasedWidth = false
+
+    for(let key of onePointOneLetters) {
+      if(key === letter) {
+        width += 1.1;
+        increasedWidth = true
+        break;
+      }
+    }
+
+    for(let key of zeroPointNineLetters) {
+      if(key === letter) {
+        width += 0.9;
+        increasedWidth = true
+        break;
+      }
+    }
+
+    // 未增加宽度
+    if(!increasedWidth) {
+      width += 1
+    }
+
+  }
+
+  // 左右留白
+  width += 1
+
+  return width;
 }
 
 function handleKeydown(e: KeyboardEvent) {
