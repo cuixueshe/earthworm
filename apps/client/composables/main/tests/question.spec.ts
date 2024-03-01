@@ -18,6 +18,7 @@ describe("question", () => {
       [
         {
           "end": 1,
+          "id": 0,
           "incorrect": false,
           "isActive": true,
           "position": 0,
@@ -27,6 +28,7 @@ describe("question", () => {
         },
         {
           "end": 5,
+          "id": 1,
           "incorrect": false,
           "isActive": false,
           "position": 0,
@@ -185,7 +187,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, preventInput } = useInput({
+    const { setInputValue, submitAnswer, handleKeyboardInput } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -196,7 +198,7 @@ describe("question", () => {
     submitAnswer(() => {});
 
     const preventDefault = vi.fn();
-    preventInput({
+    handleKeyboardInput({
       code: "i",
       preventDefault,
     } as any as KeyboardEvent);
@@ -208,7 +210,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, preventInput } = useInput({
+    const { setInputValue, submitAnswer, handleKeyboardInput } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -218,7 +220,7 @@ describe("question", () => {
 
     // move to left
     const preventDefaultLeft = vi.fn();
-    preventInput({
+    handleKeyboardInput({
       code: "ArrowLeft",
       preventDefault: preventDefaultLeft,
     } as any as KeyboardEvent);
@@ -226,7 +228,7 @@ describe("question", () => {
 
     // move to right
     const preventDefaultRight = vi.fn();
-    preventInput({
+    handleKeyboardInput({
       code: "ArrowLeft",
       preventDefault: preventDefaultRight,
     } as any as KeyboardEvent);
@@ -237,19 +239,23 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, preventInput, fixIncorrectWord } =
-      useInput({
-        source: () => "i eat apple",
-        setInputCursorPosition,
-        getInputCursorPosition,
-      });
+    const {
+      setInputValue,
+      submitAnswer,
+      fixIncorrectWord,
+      handleKeyboardInput,
+    } = useInput({
+      source: () => "i eat apple",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
 
     setInputValue("i ea ap");
     submitAnswer(() => {});
     await fixIncorrectWord();
 
     const preventDefault = vi.fn();
-    preventInput({
+    handleKeyboardInput({
       code: "Space",
       preventDefault,
     } as any as KeyboardEvent);
@@ -261,19 +267,23 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, preventInput, fixIncorrectWord } =
-      useInput({
-        source: () => "i eat apple",
-        setInputCursorPosition,
-        getInputCursorPosition,
-      });
+    const {
+      setInputValue,
+      submitAnswer,
+      fixIncorrectWord,
+      handleKeyboardInput,
+    } = useInput({
+      source: () => "i eat apple",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
 
     setInputValue("i ea apple");
     submitAnswer(() => {});
     await fixIncorrectWord();
 
     const preventDefault = vi.fn();
-    preventInput({
+    handleKeyboardInput({
       code: "Backspace",
       preventDefault,
     } as any as KeyboardEvent);
@@ -285,7 +295,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = vi.fn();
 
-    const { setInputValue, preventInput } = useInput({
+    const { setInputValue, handleKeyboardInput } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -296,11 +306,40 @@ describe("question", () => {
     setInputValue(inputValue);
 
     const preventDefault = vi.fn();
-    preventInput({
+    handleKeyboardInput({
       code: "Space",
       preventDefault,
     } as any as KeyboardEvent);
 
     expect(preventDefault).toBeCalled();
+  });
+
+  it("should back to previous incorrect word ", async () => {
+    let getInputCursorPosition = () => 0;
+    let setInputCursorPosition = () => {};
+
+    const {
+      userInputWords,
+      setInputValue,
+      submitAnswer,
+      activePreviousIncorrectWord,
+      fixIncorrectWord
+    } = useInput({
+      source: () => "i eat apple",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    setInputValue("he eat banana");
+    submitAnswer(() => {});
+
+    await fixIncorrectWord()
+    setInputValue("a")
+    await fixIncorrectWord()
+
+    await activePreviousIncorrectWord();
+    
+    expect(userInputWords[0].isActive).toBe(true)
+    expect(userInputWords[0].userInput).toBe("a")
   });
 });
