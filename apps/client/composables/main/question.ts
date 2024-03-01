@@ -8,6 +8,7 @@ interface Word {
   end: number;
   start: number;
   position: number;
+  id: number;
 }
 
 interface InputOptions {
@@ -45,7 +46,7 @@ export function useInput({
     updateActiveWord(getInputCursorPosition());
   }
 
-  function createWord(word: string) {
+  function createWord(word: string, id: number) {
     return reactive({
       text: word,
       isActive: false,
@@ -54,7 +55,8 @@ export function useInput({
       start: 0,
       end: 0,
       position: 0,
-    });
+      id,
+    } as Word);
   }
 
   function setupUserInputWords() {
@@ -124,14 +126,10 @@ export function useInput({
         word.userInput.toLocaleLowerCase() !== word.text.toLocaleLowerCase()
       ) {
         word.incorrect = true;
+      } else {
+        word.incorrect = false;
       }
     });
-  }
-
-  function focusOnLastWord() {
-    const position = inputValue.value.length;
-    updateActiveWord(position);
-    setInputCursorPosition(position);
   }
 
   function lastWordIsActive() {
@@ -140,15 +138,32 @@ export function useInput({
   }
 
   function findNextIncorrectWordNew() {
-    return userInputWords.find((word) => {
-      return word.incorrect;
-    })!;
+    if (!currentEditWord) return;
+
+    const wordIndex = userInputWords.findIndex(
+      (w) => w.id === currentEditWord.id
+    );
+
+    let len = userInputWords.length;
+    for (let i = wordIndex + 1; i < len; i++) {
+      const word = userInputWords[i];
+      if (word.incorrect) {
+        return word;
+      }
+    }
+  }
+
+  function getFirstIncorrectWord() {
+    return userInputWords.find((w) => w.incorrect);
   }
 
   async function clearNextIncorrectWord() {
-    const word = findNextIncorrectWordNew();
+    let word = findNextIncorrectWordNew();
+    if (!word) {
+      word = getFirstIncorrectWord()!;
+    }
+
     word.userInput = "";
-    word.incorrect = false;
 
     currentEditWord = word;
 
@@ -184,12 +199,6 @@ export function useInput({
 
   async function fixNextIncorrectWord() {
     if (mode === Mode.Fix_Input) {
-      if (checkWordCorrect()) {
-        mode = Mode.Input;
-        focusOnLastWord();
-        return;
-      }
-
       await clearNextIncorrectWord();
     }
   }
@@ -202,53 +211,89 @@ export function useInput({
     }
   }
 
-  function preventAnyInputWhenFix(e: KeyboardEvent) {
-    if (mode === Mode.Fix) {
-      e.preventDefault();
-    }
+  function isEmptyOfCurrentEditWord() {
+    return currentEditWord.userInput.length <= 0;
   }
 
-  function preventMove(e: KeyboardEvent) {
-    if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
-      e.preventDefault();
-    }
-  }
+  function findPreviousIncorrectWord() {
+    if (!currentEditWord) return;
 
-  function preventSpaceWhenFixInput(e: KeyboardEvent) {
-    if (e.code === "Space" && mode === Mode.Fix_Input) {
-      e.preventDefault();
-    }
-  }
+    const wordIndex = userInputWords.findIndex(
+      (w) => w.id === currentEditWord.id
+    );
 
-  function preventInputSpaceOnLastWord(e: KeyboardEvent) {
-    if (e.code === "Space" && lastWordIsActive()) {
-      e.preventDefault();
-    }
-  }
-
-  function preventBackspaceWhenFixInput(e: KeyboardEvent) {
-    if (e.code === "Backspace" && mode === Mode.Fix_Input) {
-      if (currentEditWord.userInput.length <= 0) {
-        e.preventDefault();
+    for (let i = wordIndex - 1; i >= 0; i--) {
+      const word = userInputWords[i];
+      if (word.incorrect) {
+        return word;
       }
     }
   }
 
-  function preventInput(e: KeyboardEvent) {
-    preventAnyInputWhenFix(e);
-    preventMove(e);
-    preventSpaceWhenFixInput(e);
-    preventInputSpaceOnLastWord(e);
-    preventBackspaceWhenFixInput(e);
+  async function activePreviousIncorrectWord() {
+    const previousIncorrectWord = findPreviousIncorrectWord();
+
+    if (previousIncorrectWord) {
+      currentEditWord = previousIncorrectWord;
+
+      await nextTick();
+
+      updateActiveWord(previousIncorrectWord.end);
+      setInputCursorPosition(previousIncorrectWord.end);
+    }
+  }
+
+  function handleKeyboardInput(
+    e: KeyboardEvent,
+    options: {
+      useSpaceSubmitAnswer?: { enable: boolean; callback: () => void };
+    } = {}
+  ) {
+    if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
+      e.preventDefault();
+      return;
+    }
+
+    if (e.code !== "Space" && e.code !== "Backspace" && mode === Mode.Fix) {
+      e.preventDefault();
+      return;
+    }
+
+    if (e.code === "Space" && lastWordIsActive()) {
+      e.preventDefault();
+      if (options.useSpaceSubmitAnswer?.enable) {
+        submitAnswer(options.useSpaceSubmitAnswer.callback);
+      }
+      return;
+    }
+
+    if (
+      e.code === "Backspace" &&
+      mode === Mode.Fix_Input &&
+      isEmptyOfCurrentEditWord()
+    ) {
+      e.preventDefault();
+      activePreviousIncorrectWord();
+      return;
+    }
+
+    if (e.code === "Space" && mode !== Mode.Input) {
+      e.preventDefault();
+      fixIncorrectWord();
+    } else if (e.code === "Backspace" && mode === Mode.Fix) {
+      e.preventDefault();
+      fixFirstIncorrectWord();
+    }
   }
 
   return {
     inputValue,
     userInputWords,
-    fixFirstIncorrectWord,
-    fixIncorrectWord,
-    preventInput,
     submitAnswer,
     setInputValue,
+    activePreviousIncorrectWord,
+    handleKeyboardInput,
+    fixIncorrectWord,
+    fixFirstIncorrectWord,
   };
 }
