@@ -19,7 +19,7 @@
       </template>
       <input
         ref="inputEl"
-        class="absolute h-full w-full top-48"
+        class="absolute h-full w-full opacity-0"
         type="text"
         v-model="inputValue"
         @keyup="handleKeyup"
