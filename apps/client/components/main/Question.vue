@@ -43,6 +43,7 @@ import { useGameMode } from "~/composables/main/game";
 import { ref, onMounted, watch } from "vue";
 import { useInput } from "~/composables/main/question";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
@@ -50,6 +51,7 @@ const { setInputCursorPosition, getInputCursorPosition } = useCursor();
 const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
+const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 
 const {
   inputValue,
@@ -148,7 +150,12 @@ function inputWidth(word: string) {
 }
 
 function handleKeydown(e: KeyboardEvent) {
-  handleKeyboardInput(e);
+  handleKeyboardInput(e, {
+    useSpaceSubmitAnswer: {
+      enable: isUseSpaceSubmitAnswer(),
+      callback: showAnswer,
+    },
+  });
 }
 
 function useCursor() {
