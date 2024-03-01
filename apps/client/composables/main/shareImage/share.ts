@@ -41,8 +41,8 @@ export function useShareModal() {
 }
 
 const generateconfig = async () => {
-  const fontEnData = await fontEn;
-  const fontZhData = await fontZh;
+  const fontEnData = await fontEn();
+  const fontZhData = await fontZh();
   return {
     width: 400,
     height: 600,

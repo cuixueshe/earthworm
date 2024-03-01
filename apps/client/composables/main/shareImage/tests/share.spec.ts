@@ -9,8 +9,8 @@ import { mockCanvasPrototypes } from "./helper";
 vi.mock("~/api/course");
 vi.mock("~/api/tool", () => {
   return {
-    fontEn: Promise.resolve(new ArrayBuffer(0)),
-    fontZh: Promise.resolve(new ArrayBuffer(0)),
+    fontEn: () => Promise.resolve(new ArrayBuffer(0)),
+    fontZh: () => Promise.resolve(new ArrayBuffer(0)),
   };
 });
 vi.mock("satori", () => {
