@@ -132,7 +132,6 @@ function useGoToNextCourse() {
 }
 
 const toShare = () => {
-  hideSummary()
   showShareModal()
 }
 </script>
