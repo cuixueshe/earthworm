@@ -12,3 +12,7 @@ export async function fetchCompleteCourse(courseId: number) {
 export async function fetchCourses() {
   return await http.get<Course[], Course[]>("/courses");
 }
+
+export async function fetchTryCourse() {
+  return await http.get<Course, Course>(`/courses/try`);
+}

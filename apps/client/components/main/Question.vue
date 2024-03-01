@@ -1,16 +1,20 @@
 <template>
   <div class="text-center pt-2">
-    <div class="flex relative flex-wrap justify-center ml-2 transition-all">
-      <template v-for="i in courseStore.wordCount" :key="i">
+    <div class="flex relative flex-wrap justify-center gap-2 transition-all">
+      <template v-for="(w, i) in courseStore.words" :key="i">
         <div
-          class="flex items-end justify-center h-[4.8rem] min-w-28 px-2 mr-2 border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
+          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
-            i - 1 === activeInputIndex && focusing
+            userInputWords[i]['isActive'] && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
-              : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
+              : userInputWords[i]?.['incorrect'] && focusing
+                ? 'text-red-500 border-b-red-500'
+                : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
+            isShowWordsWidth() ? '' : 'min-w-28',
           ]"
+          :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}"
         >
-          {{ userInputWords[i - 1] }}
+          {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
       <input
@@ -36,71 +40,142 @@
 <script setup lang="ts">
 import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
-import { ref, computed, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
+import { useInput } from "~/composables/main/question";
+import { useShowWordsWidth } from "~/composables/user/words";
+import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 
 const courseStore = useCourseStore();
-const { userInputWords, activeInputIndex, inputValue } = useInput();
-const { handleKeyup, handleKeydown } = registerShortcutKeyForInputEl();
-const { inputEl, focusing, handleInputFocus, handleBlur } = useFocus();
+const inputEl = ref<HTMLInputElement>();
+const { setInputCursorPosition, getInputCursorPosition } = useCursor();
+const { focusing, handleInputFocus, handleBlur } = useFocus();
+const { showAnswer } = useGameMode();
+const { isShowWordsWidth } = useShowWordsWidth();
+const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 
-function useInput() {
-  const inputValue = ref("");
+const {
+  inputValue,
+  userInputWords,
+  submitAnswer,
+  setInputValue,
+  handleKeyboardInput,
+} = useInput({
+  source: () => courseStore.currentStatement?.english!,
+  setInputCursorPosition,
+  getInputCursorPosition,
+});
 
-  const userInputWords = computed(() => {
-    return inputValue.value.trimStart().split(" ");
-  });
+watch(
+  () => inputValue.value,
+  (val) => {
+    setInputValue(val);
+  }
+);
 
-  const activeInputIndex = computed(() => {
-    return Math.min(userInputWords.value.length - 1, courseStore.wordCount - 1);
-  });
-
-  return {
-    inputValue,
-    userInputWords,
-    activeInputIndex,
-  };
+function handleKeyup(e: KeyboardEvent) {
+  if (e.code === "Enter") {
+    e.stopPropagation();
+    submitAnswer(() => {
+      showAnswer();
+    });
+  }
 }
 
-function registerShortcutKeyForInputEl() {
-  const { showAnswer } = useGameMode();
+// 输入宽度
+function inputWidth(word: string) {
+  // 单词宽度
+  let width = 0;
 
-  function handleKeyup(e: KeyboardEvent) {
-    if (e.code === "Enter") {
-      e.stopPropagation();
+  // 单词转小写字符数组
+  word = word.toLocaleLowerCase();
+  const wordArr = word.split("");
 
-      if (courseStore.checkCorrect(inputValue.value.trim())) {
-        showAnswer();
+  // 字符宽度1.1的字符数组
+  const onePointOneLetters = ["u", "o", "p", "q", "n", "h", "g", "d", "b"];
+
+  // 字符宽度0.9的字符数组
+  const zeroPointNineLetters = ["z", "y", "x", "v", "c"];
+
+  for (let letter of wordArr) {
+    if (letter === "w" || letter === "m") {
+      width += 1.5;
+      continue;
+    }
+    if (letter === "s") {
+      width += 0.8;
+      continue;
+    }
+    if (letter === "t" || letter === "r" || letter === "f") {
+      width += 0.7;
+      continue;
+    }
+    if (letter === "j") {
+      width += 0.6;
+      continue;
+    }
+    if (letter === "i" || letter === "l") {
+      width += 0.5;
+      continue;
+    }
+
+    // 记录是否已经增加宽度
+    let increasedWidth = false;
+
+    for (let key of onePointOneLetters) {
+      if (key === letter) {
+        width += 1.1;
+        increasedWidth = true;
+        break;
       }
-      inputValue.value = "";
+    }
+
+    for (let key of zeroPointNineLetters) {
+      if (key === letter) {
+        width += 0.9;
+        increasedWidth = true;
+        break;
+      }
+    }
+
+    // 未增加宽度
+    if (!increasedWidth) {
+      width += 1;
     }
   }
 
-  function handleKeydown(e: KeyboardEvent) {
-    const inputLastStr = inputValue.value[inputValue.value.length - 1];
-    if (e.code === "Space" && inputLastStr === " ") {
-      // prevent input multiple spaces
-      e.preventDefault();
-    }
-    if (
-      e.code === "Backspace" &&
-      userInputWords.value.length - courseStore.wordCount === 1 &&
-      inputLastStr === " "
-    ) {
-      // remove the last space and the last letter
-      e.preventDefault();
-      inputValue.value = inputValue.value.slice(0, -2);
-    }
+  // 左右留白
+  width += 1;
+
+  return width;
+}
+
+function handleKeydown(e: KeyboardEvent) {
+  handleKeyboardInput(e, {
+    useSpaceSubmitAnswer: {
+      enable: isUseSpaceSubmitAnswer(),
+      callback: showAnswer,
+    },
+  });
+}
+
+function useCursor() {
+  function setInputCursorPosition(position: number) {
+    inputEl.value?.setSelectionRange(position, position);
+  }
+
+  function getInputCursorPosition() {
+    return inputEl.value?.selectionStart || 0;
   }
 
   return {
-    handleKeyup,
-    handleKeydown,
+    setInputCursorPosition,
+    getInputCursorPosition,
   };
 }
 
 function useFocus() {
   const focusing = ref(true);
-  const inputEl = ref<HTMLInputElement>();
+
   onMounted(() => {
     inputEl.value?.focus();
   });
@@ -114,7 +189,6 @@ function useFocus() {
   }
 
   return {
-    inputEl,
     focusing,
     handleInputFocus,
     handleBlur,

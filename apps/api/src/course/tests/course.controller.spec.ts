@@ -22,6 +22,13 @@ describe('Course', () => {
     courseService = testHelper.courseService;
   });
 
+  it('should return try course data', async () => {
+    const res = await courseController.tryCourse();
+
+    expect(res).toEqual(course);
+    expect(courseService.tryCourse).toHaveBeenCalled();
+  });
+
   it('should return first course statements', async () => {
     const res = await courseController.findOne(1);
 
@@ -60,6 +67,7 @@ async function setupTesting() {
       id: id + 1,
     })),
     startCourse: jest.fn(),
+    tryCourse: jest.fn(() => course),
   };
 
   const moduleRef = await Test.createTestingModule({

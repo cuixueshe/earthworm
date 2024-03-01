@@ -10,7 +10,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test 
+      DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test
+      SECRET: sjldk92#sd903mnc./xklsjdf9sdfj
 
     services:
       # 定义测试专用的 MySQL 服务
@@ -27,14 +28,13 @@ jobs:
           --health-timeout=5s
           --health-retries=5
 
-
     steps:
       - uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "20.11.0" 
+          node-version: "20.11.0"
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -45,11 +45,11 @@ jobs:
       - name: Run database initialization command
         run: pnpm db:init:test:ci
 
-      - name: Run build schema 
+      - name: Run build schema
         run: pnpm schema:build
 
       - name: Run tests
-        run: pnpm test
+        run: pnpm test:ci
 
   # lint:
 

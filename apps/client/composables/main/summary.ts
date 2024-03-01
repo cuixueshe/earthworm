@@ -18,18 +18,28 @@ export function useSummary() {
   };
 }
 
-const enSentence = ref("To be, or not to be, that is the question.");
-const zhSentence = ref("生存还是毁灭，这是一个问题。");
-const setenceLoading = ref(false);
+export const defaultEnSentence = 'To be, or not to be, that is the question.'
+export const defaultZhSentence = '生存还是毁灭，这是一个问题。'
+
+const enSentence = ref(defaultEnSentence);
+const zhSentence = ref(defaultZhSentence);
+const hasLoadingDailySentence = ref(false);
+
+export const resetSentenceLoading = () => (hasLoadingDailySentence.value = false)
+
 export function useDailySentence() {
   const getDailySentence = async () => {
-    if (!setenceLoading.value) {
-      const { en, zh } = await fetchDailySentence();
+    if (!hasLoadingDailySentence.value) {
+      hasLoadingDailySentence.value = true;
+      const { en, zh } = await fetchDailySentence().catch((err) => {
+        hasLoadingDailySentence.value = false
+        return Promise.reject(err)
+      });
       enSentence.value = en;
       zhSentence.value = zh;
-      setenceLoading.value = true;
     }
   };
+
 
   onMounted(() => {
     getDailySentence();
@@ -38,5 +48,6 @@ export function useDailySentence() {
   return {
     enSentence,
     zhSentence,
+    getDailySentence,
   };
 }

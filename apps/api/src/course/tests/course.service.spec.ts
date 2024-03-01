@@ -50,6 +50,17 @@ describe('course service', () => {
     jest.clearAllMocks();
   });
 
+  it('should return try course data', async () => {
+    const course = await courseService.tryCourse();
+
+    expect(course).toEqual(
+      expect.objectContaining({
+        ...firstCourse,
+      }),
+    );
+    expect(course.statements.length).toBeGreaterThan(0);
+  });
+
   it('should return course details with statements given a course ID', async () => {
     const course = await courseService.find(firstCourse.id);
 

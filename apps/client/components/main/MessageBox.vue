@@ -7,7 +7,7 @@
         <form method="dialog">
           <button class="btn cancel" @click="handleCancel">{{ cancelBtnText }}</button>
         </form>
-        <button class="btn confirm" @click="handleConfirm">{{ confirmBtnText }}</button>
+        <button v-if="confirmBtnText" class="btn confirm" @click="handleConfirm">{{ confirmBtnText }}</button>
       </div>
     </div>
   </dialog>
