@@ -243,7 +243,12 @@ export function useInput({
     }
   }
 
-  function handleKeyboardInput(e: KeyboardEvent) {
+  function handleKeyboardInput(
+    e: KeyboardEvent,
+    options: {
+      useSpaceSubmitAnswer?: { enable: boolean; callback: () => void };
+    } = {}
+  ) {
     if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
       e.preventDefault();
       return;
@@ -256,6 +261,9 @@ export function useInput({
 
     if (e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
+      if (options.useSpaceSubmitAnswer?.enable) {
+        submitAnswer(options.useSpaceSubmitAnswer.callback);
+      }
       return;
     }
 
@@ -272,7 +280,7 @@ export function useInput({
     if (e.code === "Space" && mode !== Mode.Input) {
       e.preventDefault();
       fixIncorrectWord();
-    } else if (e.code === "Backspace" && mode !== Mode.Fix) {
+    } else if (e.code === "Backspace" && mode === Mode.Fix) {
       e.preventDefault();
       fixFirstIncorrectWord();
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <section>
-      <h2 class="pb-2">快捷键设置</h2>
+      <h2 class="text-lg">快捷键设置</h2>
       <n-table :bordered="false" :single-line="false">
         <thead>
           <tr>
@@ -30,7 +30,7 @@
     </section>
 
     <section>
-      <h2>声音设置</h2>
+      <h2 class="text-lg">声音设置</h2>
       <div className="form-control w-52">
         <label className="cursor-pointer label">
           <span className="label-text">自动播放</span>
@@ -47,6 +47,17 @@
           <span className="label-text">是</span>
           <input type="checkbox" className="toggle toggle-primary" :checked="autoShowWordsWidth"
             @change="toggleAutoWordsWidth" />
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-lg">提交设置</h2>
+      <div className="form-control w-52">
+        <label className="cursor-pointer label">
+          <span className="label-text">使用空格</span>
+          <input type="checkbox" className="toggle toggle-primary" :checked="useSpace"
+            @change="toggleUseSpaceSubmitAnswer" />
         </label>
       </div>
     </section>
@@ -75,6 +86,7 @@ import {
 } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { useSpaceSubmitAnswer } from '~/composables/user/submitKey'
 
 const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
 const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeys } =
@@ -88,7 +100,8 @@ function pointDialogOutside(e: MouseEvent) {
   }
 }
 
-const { autoPlaySound, toggleAutoPlaySound } = useAutoSound()
+const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
+const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer()
 
 const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth()
 
@@ -100,4 +113,6 @@ onUnmounted(() => {
   document.removeEventListener("mouseup", pointDialogOutside);
   document.removeEventListener("keyup", handleKeyup);
 });
+
+
 </script>

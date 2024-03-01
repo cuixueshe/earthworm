@@ -323,7 +323,7 @@ describe("question", () => {
       setInputValue,
       submitAnswer,
       activePreviousIncorrectWord,
-      fixIncorrectWord
+      fixIncorrectWord,
     } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
@@ -333,13 +333,45 @@ describe("question", () => {
     setInputValue("he eat banana");
     submitAnswer(() => {});
 
-    await fixIncorrectWord()
-    setInputValue("a")
-    await fixIncorrectWord()
+    await fixIncorrectWord();
+    setInputValue("a");
+    await fixIncorrectWord();
 
     await activePreviousIncorrectWord();
-    
-    expect(userInputWords[0].isActive).toBe(true)
-    expect(userInputWords[0].userInput).toBe("a")
+
+    expect(userInputWords[0].isActive).toBe(true);
+    expect(userInputWords[0].userInput).toBe("a");
+  });
+
+  it("should submit answer when enable use space", () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = vi.fn();
+
+    const { setInputValue, handleKeyboardInput } = useInput({
+      source: () => "i eat apple",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    const inputValue = "i eat apple";
+    getInputCursorPosition.mockReturnValue(inputValue.length);
+    setInputValue(inputValue);
+
+    const submitAnswerCallback = vi.fn();
+
+    handleKeyboardInput(
+      {
+        code: "Space",
+        preventDefault: () => {},
+      } as any as KeyboardEvent,
+      {
+        useSpaceSubmitAnswer: {
+          enable: true,
+          callback: submitAnswerCallback,
+        },
+      }
+    );
+
+    expect(submitAnswerCallback).toBeCalled();
   });
 });
