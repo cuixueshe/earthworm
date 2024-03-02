@@ -43,6 +43,22 @@ export const copyImage = (canvasEl: HTMLCanvasElement, fullFormat: string) => {
   }, fullFormat);
 };
 
+export const copyImageV2 = (container: HTMLElement) => {
+  const myrange = document.createRange();
+  myrange.setStartBefore(container);
+  myrange.setEndAfter(container);
+  myrange.selectNode(container);
+  // 添加到选区
+  const selection = window.getSelection();
+  if (!selection) return;
+  selection.removeAllRanges();
+  selection.addRange(myrange);
+  // 复制图片
+  document.execCommand('copy');
+  // 删除图片清除选区
+  selection.removeAllRanges();
+}
+
 export const clearCanvas = (canvasEl: HTMLCanvasElement) => {
   const ctx = canvasEl.getContext('2d');
   ctx?.clearRect(0, 0, canvasEl.width, canvasEl.height);

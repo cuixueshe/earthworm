@@ -3,7 +3,7 @@ import satori, { type SatoriNode } from "satori";
 import { tpl_1 } from "./imageTtemplates/tpl_1";
 import { useDailySentence } from "../summary";
 import { useCourseStore } from "~/store/course";
-import { clearCanvas, convertSVGtoImg, copyImage, initCanvas } from "./helper";
+import { clearCanvas, convertSVGtoImg, copyImage, copyImageV2, initCanvas } from "./helper";
 import { fontEn, fontZh } from "~/api/tool";
 
 export enum ShareImageTemplate {
@@ -101,10 +101,13 @@ export function useGenerateShareImage() {
 
   const copyShareImage = () => copyImage(canvasEl, fullFormat);
 
+  const copyShareImageV2 = (container: HTMLElement) => copyImageV2(container)
+
   return {
     shareImageSrc,
     generateImage,
     copyShareImage,
     clearShareImageSrc,
+    copyShareImageV2
   };
 }
