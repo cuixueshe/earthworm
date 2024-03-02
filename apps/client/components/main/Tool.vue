@@ -26,7 +26,7 @@
     <div>
       （{{ currentSchedule }}<span class="mx-[2px]">/</span>{{ courseStore.totalQuestionsCount }}）
     </div>
-    <StudyVideoLink />
+    <StudyVideoLink :course-id="courseStore.currentCourse?.id" />
     <div class="flex-1"></div>
     <div @click="handleDoAgain" class="link-item mr-4">
       <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
