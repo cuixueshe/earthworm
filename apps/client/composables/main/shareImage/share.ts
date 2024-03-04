@@ -2,8 +2,7 @@ import { ref } from "vue";
 import satori, { type SatoriNode } from "satori";
 import { tpl_1 } from "./imageTtemplates/tpl_1";
 import { useDailySentence } from "../summary";
-import { useCourseStore } from "~/store/course";
-import { clearCanvas, convertSVGtoImg, copyImage, copyImageV2, initCanvas, fontEn, fontZh } from "./helper";
+import { clearCanvas, convertSVGtoImg, copyImage, initCanvas, fontEn, fontZh } from "./helper";
 
 export enum ShareImageTemplate {
   TPL_1 = "tpl_1",
@@ -60,7 +59,6 @@ const generateconfig = async () => {
 };
 
 export function useGenerateShareImage() {
-  const courseStore = useCourseStore();
   const { zhSentence, enSentence } = useDailySentence();
 
   const shareImageSrc = ref("");
@@ -69,20 +67,17 @@ export function useGenerateShareImage() {
 
   const canvasEl = initCanvas();
 
-  const chosenTemplate = (templateKey: ShareImageTemplate) => {
-    if (!courseStore.currentCourse) {
-      return;
-    }
+  const chosenTemplate = (templateKey: ShareImageTemplate, courseNum: number) => {
     return imageTtemplates[templateKey]({
-      courseNum: courseStore.currentCourse.id,
+      courseNum,
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
     });
   };
 
-  const generateImage = async () => {
+  const generateImage = async (courseNum: number) => {
     const svg = await satori(
-      chosenTemplate(ShareImageTemplate.TPL_1),
+      chosenTemplate(ShareImageTemplate.TPL_1, courseNum),
       await generateconfig()
     ).catch((e) => {
       console.error("Error generating SVG");
@@ -100,13 +95,10 @@ export function useGenerateShareImage() {
 
   const copyShareImage = () => copyImage(canvasEl, fullFormat);
 
-  const copyShareImageV2 = (container: HTMLElement) => copyImageV2(container)
-
   return {
     shareImageSrc,
     generateImage,
     copyShareImage,
     clearShareImageSrc,
-    copyShareImageV2
   };
 }

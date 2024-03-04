@@ -17,20 +17,20 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { useGenerateShareImage, useShareModal } from '~/composables/main/shareImage/share';
-
+import { useCourseStore } from '~/store/course';
+const courseStore = useCourseStore();
 const imageContainer = ref<HTMLDivElement>()
 
 const { shareModalVisible, hideShareModal } = useShareModal()
 const { 
   generateImage,
   copyShareImage,
-  // copyShareImageV2,
   shareImageSrc,
   clearShareImageSrc
 }  = useGenerateShareImage()
 watch(shareModalVisible, newVal => {
-  if (newVal) {
-    generateImage()
+  if (newVal && courseStore.currentCourse?.id) {
+    generateImage(courseStore.currentCourse.id)
   } else {
     clearShareImageSrc()
   }
@@ -38,8 +38,6 @@ watch(shareModalVisible, newVal => {
 
 const copyAndClose = () => {
   copyShareImage()
-  // copyShareImageV2(imageContainer.value!) 
   hideShareModal()
 }
-
 </script>

@@ -1,13 +1,10 @@
 import { it, expect, describe, vi, beforeEach } from "vitest";
 import { useGenerateShareImage } from "../share";
-import { createPinia, setActivePinia } from "pinia";
-import { useCourseStore } from "~/store/course";
 import satori from "satori";
 import { flushPromises } from "@vue/test-utils";
 import { mockCanvasPrototypes } from "./helper";
 
 vi.mock("~/api/course");
-vi.mock("~/api/tool");
 vi.mock("satori", () => {
   return {
     default: vi.fn().mockResolvedValue("svg"),
@@ -25,26 +22,21 @@ vi.mock("../helper", async (importOriginal) => {
 
 describe("Share Image", () => {
   beforeEach(() => {
-    setActivePinia(createPinia());
     mockCanvasPrototypes();
     return () => {
       vi.clearAllMocks();
     };
   });
   it("should generate an image", async () => {
-    const store = useCourseStore();
-    await store.setup(1);
     const { generateImage, shareImageSrc } = useGenerateShareImage();
-    await generateImage();
+    await generateImage(1);
     expect(satori).toBeCalled();
     expect(shareImageSrc.value).toBe("final image url");
   });
 
   it("should copy the image", async () => {
-    const store = useCourseStore();
-    await store.setup(1);   
     const { generateImage, copyShareImage } = useGenerateShareImage();
-    await generateImage();
+    await generateImage(1);
     vi.spyOn(navigator.clipboard, "write");
     copyShareImage();
     await flushPromises();

@@ -1,3 +1,7 @@
+// 通过 Satori 的在线调试工具 (https://og-playground.vercel.app/) 可以看到生成的图片效果
+// 由于调试工具中，使用的是 jsx, 所以需要自己转换成以下格式（借助 GPT）会更方便转换
+// 本模板使用了 tailwindcss，这是 Satori 的实验性功能
+
 export const tpl_1 = ({zhSentence, enSentence, courseNum}:{
   courseNum: number
   zhSentence: string
