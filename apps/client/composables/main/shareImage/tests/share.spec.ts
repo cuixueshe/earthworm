@@ -7,12 +7,7 @@ import { flushPromises } from "@vue/test-utils";
 import { mockCanvasPrototypes } from "./helper";
 
 vi.mock("~/api/course");
-vi.mock("~/api/tool", () => {
-  return {
-    fontEn: () => Promise.resolve(new ArrayBuffer(0)),
-    fontZh: () => Promise.resolve(new ArrayBuffer(0)),
-  };
-});
+vi.mock("~/api/tool");
 vi.mock("satori", () => {
   return {
     default: vi.fn().mockResolvedValue("svg"),
@@ -22,6 +17,8 @@ vi.mock("satori", () => {
 vi.mock("../helper", async (importOriginal) => {
   return {
     ...((await importOriginal()) as any),
+    fontEn: () => Promise.resolve(new ArrayBuffer(0)),
+    fontZh: () => Promise.resolve(new ArrayBuffer(0)),
     convertSVGtoImg: vi.fn().mockResolvedValue("final image url"),
   };
 });

@@ -63,3 +63,11 @@ export const clearCanvas = (canvasEl: HTMLCanvasElement) => {
   const ctx = canvasEl.getContext('2d');
   ctx?.clearRect(0, 0, canvasEl.width, canvasEl.height);
 }
+
+export const fontEn = () => fetch(new URL('~/assets/fonts/EBGaramond-BoldItalic.ttf', import.meta.url)).then(
+  (res) => res.arrayBuffer(),
+);
+
+export const fontZh = () => fetch(new URL('~/assets/fonts/nzgrKangxi.ttf', import.meta.url)).then(
+  (res) => res.arrayBuffer(),
+)

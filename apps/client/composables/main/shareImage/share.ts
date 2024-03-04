@@ -3,8 +3,7 @@ import satori, { type SatoriNode } from "satori";
 import { tpl_1 } from "./imageTtemplates/tpl_1";
 import { useDailySentence } from "../summary";
 import { useCourseStore } from "~/store/course";
-import { clearCanvas, convertSVGtoImg, copyImage, copyImageV2, initCanvas } from "./helper";
-import { fontEn, fontZh } from "~/api/tool";
+import { clearCanvas, convertSVGtoImg, copyImage, copyImageV2, initCanvas, fontEn, fontZh } from "./helper";
 
 export enum ShareImageTemplate {
   TPL_1 = "tpl_1",
