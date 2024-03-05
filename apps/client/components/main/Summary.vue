@@ -31,6 +31,7 @@
           <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
         </div>
         <div className="modal-action">
+          <button class="btn btn-primary" @click="toShare">生成打卡图</button>
           <button class="btn" @click="handleDoAgain">再来一次</button>
           <button class="btn" @click="handleGoToNextCourse">开始下一课</button>
         </div>
@@ -50,6 +51,7 @@ import { useAuthRequire } from "~/composables/main/authRequire";
 import { useSummary, useDailySentence } from "~/composables/main/summary";
 import { useGameStore } from "~/store/game";
 import { useConfetti } from '~/composables/main/confetti/useConfetti';
+import { useShareModal } from '~/composables/main/shareImage/share';
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 
 let nextCourseId = 1;
@@ -59,6 +61,7 @@ const { handleGoToNextCourse } = useGoToNextCourse();
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
+const { showShareModal } = useShareModal()
 
 watch(showModal, (val) => {
   if (val) {
@@ -126,5 +129,9 @@ function useGoToNextCourse() {
   return {
     handleGoToNextCourse,
   };
+}
+
+const toShare = () => {
+  showShareModal()
 }
 </script>
