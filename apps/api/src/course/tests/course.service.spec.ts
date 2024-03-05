@@ -111,7 +111,7 @@ describe('course service', () => {
     );
     expect(courseHistoryService.find).toHaveBeenCalledWith(
       user.userId,
-      user.username,
+      firstCourse.id,
     );
   });
 });
