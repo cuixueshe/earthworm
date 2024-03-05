@@ -1,6 +1,10 @@
 import { vi, it, expect, describe } from "vitest";
 import { fireEvent } from "~/tests/helper/fireEvent";
-import { registerShortcut, cancelShortcut } from "../keyboardShortcuts";
+import {
+  registerShortcut,
+  cancelShortcut,
+  cleanAllShortcut,
+} from "../keyboardShortcuts";
 import { beforeEach } from "node:test";
 
 describe("keyboardShortcuts", () => {
@@ -33,6 +37,22 @@ describe("keyboardShortcuts", () => {
     });
 
     expect(command).toBeCalled();
+  });
+
+  it("should trigger multiple same shortcut key", () => {
+    let commandA = vi.fn();
+    let commandB = vi.fn();
+
+    registerShortcut("enter", commandA);
+    registerShortcut("enter", commandB);
+
+    // 触发
+    fireEvent.keyUp({
+      key: "enter",
+    });
+
+    expect(commandA).toBeCalled();
+    expect(commandB).toBeCalled();
   });
 
   describe("cancel", () => {
