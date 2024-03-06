@@ -25,12 +25,11 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { onMounted, onUnmounted } from "vue";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoSound } from "~/composables/user/sound";
-import { watch } from "vue";
 
 const courseStore = useCourseStore();
-const { showSummary, showModal } = useSummary();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
+const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoSound()
 
@@ -51,18 +50,11 @@ function usePlayEnglishSound() {
     handlePlaySound,
   };
 }
+
 function registerShortcutKeyForNextQuestion() {
   function handleKeydown() {
     goToNextQuestion();
   }
-  function toggleShortcut(val: boolean) {
-    if (val) {
-      cancelShortcut('enter', handleKeydown);
-    } else {
-      registerShortcut('enter', handleKeydown);
-    }
-  };
-
   onMounted(() => {
     registerShortcut("enter", handleKeydown);
   });
@@ -70,7 +62,6 @@ function registerShortcutKeyForNextQuestion() {
   onUnmounted(() => {
     cancelShortcut("enter", handleKeydown);
   });
-  watch(showModal, toggleShortcut);
 }
 
 function goToNextQuestion() {
