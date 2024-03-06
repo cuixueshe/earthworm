@@ -85,6 +85,7 @@ function useDoAgain() {
   function handleTipConfirm() {
     coursesStore.doAgain();
     showQuestion();
+    location.reload()
   }
 
   return {
