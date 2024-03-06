@@ -32,8 +32,8 @@ const {
 watch(shareModalVisible, newVal => {
   if (newVal && courseStore.currentCourse?.title) {
     const convertedTitle = convertTitleToNumber(courseStore.currentCourse.title);
-    const titleAsNumber = Number(convertedTitle);
-    generateImage(titleAsNumber)
+    // const titleAsNumber = Number(convertedTitle);
+    generateImage(convertedTitle)
   } else {
     clearShareImageSrc()
   }

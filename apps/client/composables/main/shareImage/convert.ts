@@ -33,7 +33,7 @@ export function convertTitleToNumber(title: string): string {
     return num.toString();
   });
 
-  return result.join(".");
+  return result.join(" . ");
 }
 
 console.log(convertTitleToNumber("第二十.五课")); // 应输出 "20・5"

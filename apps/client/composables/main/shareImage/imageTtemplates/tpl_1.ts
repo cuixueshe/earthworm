@@ -2,10 +2,14 @@
 // 由于调试工具中，使用的是 jsx, 所以需要自己转换成以下格式（借助 GPT）会更方便转换
 // 本模板使用了 tailwindcss，这是 Satori 的实验性功能
 
-export const tpl_1 = ({zhSentence, enSentence, courseNum}:{
-  courseNum: number
-  zhSentence: string
-  enSentence: string
+export const tpl_1 = ({
+  zhSentence,
+  enSentence,
+  courseNum,
+}: {
+  courseNum: string;
+  zhSentence: string;
+  enSentence: string;
 }) => {
   return {
     type: "div",
@@ -49,7 +53,7 @@ export const tpl_1 = ({zhSentence, enSentence, courseNum}:{
                     {
                       type: "div",
                       props: {
-                        children:  zhSentence,
+                        children: zhSentence,
                       },
                     },
                   ],
@@ -83,5 +87,5 @@ export const tpl_1 = ({zhSentence, enSentence, courseNum}:{
         },
       ],
     },
-  }
-}
+  };
+};
