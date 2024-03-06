@@ -2,9 +2,9 @@
   <div
     class="course-card"
     :class="{
-      'current-card': currentCourse,
       'state-underway': courseState === 'underway',
       'state-finished': courseState === 'finished',
+      'current-card': currentCourse,
     }"
   >
     <h3 class="text-xl font-bold dark:text-gray-100">{{ title }}</h3>
@@ -28,8 +28,8 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { useGameStore } from "~/store/game";
-import { COURSE_PROGRESS } from "~/store/course";
+import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useCourseProgress } from "~/composables/courses/progress";
 
 const props = defineProps<{
   title: string;
@@ -37,21 +37,19 @@ const props = defineProps<{
   count: number | undefined;
 }>();
 
-const gameStore = useGameStore();
-const currentCourse = computed(() => gameStore.activeCourseId == props.id);
+const { activeCourseId } = useActiveCourseId();
+const currentCourse = computed(() => activeCourseId.value == props.id);
 const dataTip = computed(
   () => `Congratulations! you've completed the course ${props.count} times.`
 );
 
-function load() {
-  const courseProgress = localStorage.getItem(COURSE_PROGRESS);
-  if (!courseProgress) return;
-  return JSON.parse(courseProgress);
-}
+const { loadProgress } = useCourseProgress();
 
 const courseProgress = computed(() => {
-  const value = load()[props.id];
-  if (value) {
+  const progress = loadProgress();
+  if (!progress) return;
+  const value = progress[props.id];
+  if (value && value.total) {
     let ratio = value.index / value.total;
     // 如果是0，认定该节课已完成
     if (ratio == 0) {
@@ -62,8 +60,10 @@ const courseProgress = computed(() => {
 });
 
 const courseState = computed(() => {
+  const progress = loadProgress();
+  if (!progress) return;
   let state = "unplayed";
-  const value = load()[props.id];
+  const value = progress[props.id];
   if (value) {
     let ratio = value.index / value.total;
     // 如果是0，认定该节课已完成
@@ -80,10 +80,6 @@ const courseState = computed(() => {
 <style scoped>
 .course-card {
   @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[280px] xl:w-[260px] p-4 pb-6 border border-slate-400 hover:shadow-lg hover:shadow-slate-400/50 hover:border-slate-400 rounded-xl transition-all duration-500 relative;
-}
-
-.current-card {
-  @apply bg-[rgba(242,100,25,1)] text-white hover:shadow-[rgba(242,100,25,0.5)] hover:border-[rgba(242,100,25,1)];
 }
 
 .count {
@@ -104,6 +100,10 @@ const courseState = computed(() => {
 
 .state-finished-count {
   @apply bg-[rgba(154,78,255,1)];
+}
+
+.current-card {
+  @apply bg-[rgba(242,100,25,1)] border-[rgba(242,100,25,1)] text-white hover:shadow-[rgba(242,100,25,0.5)] hover:border-[rgba(242,100,25,1)];
 }
 
 .current-count {

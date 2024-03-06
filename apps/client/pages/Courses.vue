@@ -7,7 +7,10 @@
         class="h-[79vh] flex flex-wrap p-1 pb-96 gap-8 overflow-y-auto justify-start"
       >
         <template v-for="course in courses" :key="course.id">
-          <NuxtLink :href="`/main/${course.id}`">
+          <NuxtLink
+            :href="`/main/${course.id}`"
+            @click="handleChangeCourse(course)"
+          >
             <CourseCard
               :title="course.title"
               :id="course.id"
@@ -28,6 +31,7 @@ import Loading from "~/components/Loading.vue";
 import CourseCard from "~/components/courses/CourseCard.vue";
 import { ref, onMounted } from "vue";
 import { fetchCompletionCount } from "~/api/courseHistory";
+import { useActiveCourseId } from "~/composables/courses/activeCourse";
 
 const courses = ref<Course[]>([]);
 
@@ -58,4 +62,10 @@ async function getCourses() {
 onMounted(async () => {
   courses.value = await getCourses();
 });
+
+const { updateActiveCourseId } = useActiveCourseId();
+
+function handleChangeCourse(course: Course) {
+  updateActiveCourseId(course.id);
+}
 </script>
