@@ -8,15 +8,15 @@ interface Shortcut {
 const shortcuts: Shortcut[] = [];
 
 window.addEventListener("keyup", (e: KeyboardEvent) => {
-  const shortcut = findMatchingShortcut(e);
+  const shortcuts = findMatchingShortcut(e);
 
-  if (shortcut) {
+  shortcuts.forEach((shortcut) => {
     shortcut.command(e);
-  }
+  });
 });
 
-function findMatchingShortcut(event: KeyboardEvent): Shortcut | undefined {
-  return shortcuts.find((shortcut) => {
+function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
+  return shortcuts.filter((shortcut) => {
     return (
       shortcut.ctrlKey === event.ctrlKey &&
       shortcut.key === event.key.toLowerCase()
