@@ -45,7 +45,7 @@ export function useShareModal() {
   };
 }
 
-const generateconfig = async () => {
+const generateConfig = async () => {
   const fontEnData = await fontEn();
   const fontZhData = await fontZh();
   return {
@@ -88,7 +88,7 @@ export function useGenerateShareImage() {
   const generateImage = async (courseNum: string) => {
     const svg = await satori(
       chosenTemplate(ShareImageTemplate.TPL_1, courseNum),
-      await generateconfig()
+      await generateConfig()
     ).catch((e) => {
       console.error("Error generating SVG");
       console.error(e);
