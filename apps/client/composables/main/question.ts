@@ -153,6 +153,21 @@ export function useInput({
     }
   }
 
+  // 判断当前编辑的单词是否为最后一个错误单词
+  function isLastIncorrectWord() {
+    // 未进入编辑模式
+    if (!currentEditWord) return false
+
+    // 找到下一个错误单词
+    const nextIncorrectWord = findNextIncorrectWordNew()
+    if (nextIncorrectWord) {
+      return false
+    }
+
+    // 是最后一个错误单词
+    return true
+  }
+
   function getFirstIncorrectWord() {
     return userInputWords.find((w) => w.incorrect);
   }
@@ -259,7 +274,7 @@ export function useInput({
       return;
     }
 
-    if (e.code === "Space" && lastWordIsActive()) {
+    if (e.code === "Space" && mode !== Mode.Fix && (lastWordIsActive() || isLastIncorrectWord())) {
       e.preventDefault();
       if (options.useSpaceSubmitAnswer?.enable) {
         submitAnswer(options.useSpaceSubmitAnswer.callback);
