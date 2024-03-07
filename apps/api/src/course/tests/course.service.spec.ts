@@ -109,7 +109,7 @@ describe('course service', () => {
       user.userId,
       user.username,
     );
-    expect(courseHistoryService.find).toHaveBeenCalledWith(
+    expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,
       firstCourse.id,
     );
@@ -129,7 +129,7 @@ async function setupTesting() {
     userFinishCourse: jest.fn(),
   };
   const mockCourseHistoryService = {
-    find: jest.fn(),
+    setCompletionCount: jest.fn(),
   };
 
   const moduleRef = await Test.createTestingModule({

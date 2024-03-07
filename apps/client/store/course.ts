@@ -2,6 +2,7 @@ import { computed, ref, watchEffect, watch } from "vue";
 import { defineStore } from "pinia";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useUserStore } from "~/store/user";
+import { useCourseProgress } from "~/composables/courses/progress";
 
 interface Statement {
   id: number;
@@ -15,6 +16,7 @@ export interface Course {
   title: string;
   statements: Statement[];
   count?: number;
+  progress?: string;
 }
 
 export const useCourseStore = defineStore("course", () => {
@@ -24,6 +26,10 @@ export const useCourseStore = defineStore("course", () => {
 
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
+  const totalQuestionsCount = computed(() => {
+    return currentCourse.value?.statements.length || 0;
+  });
+
   watchEffect(() => {
     currentStatement.value =
       currentCourse.value?.statements[statementIndex.value];
@@ -32,16 +38,16 @@ export const useCourseStore = defineStore("course", () => {
   watch(
     () => statementIndex.value,
     () => {
-      saveProgress(currentCourse.value?.id!, statementIndex.value);
+      saveProgress(
+        currentCourse.value?.id!,
+        statementIndex.value,
+        totalQuestionsCount.value
+      );
     }
   );
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
-  });
-
-  const totalQuestionsCount = computed(() => {
-    return currentCourse.value?.statements.length || 0;
   });
 
   function toNextStatement() {
@@ -71,7 +77,7 @@ export const useCourseStore = defineStore("course", () => {
     const nextCourse = await fetchCompleteCourse(cId);
     // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
     // 当完成课程的时候并不希望 UI 立刻被重置
-    saveProgress(currentCourse.value?.id!, 0);
+    saveProgress(currentCourse.value?.id!, 0, totalQuestionsCount.value);
     return nextCourse;
   }
 
@@ -110,32 +116,3 @@ export const useCourseStore = defineStore("course", () => {
     resetStatementIndex,
   };
 });
-
-export const COURSE_PROGRESS = "courseProgress";
-function useCourseProgress() {
-  const courseStore = useCourseStore();
-
-  function saveProgress(courseId: number, index: number) {
-    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
-    progress[courseId] = {
-      index,
-      total: courseStore.totalQuestionsCount,
-    };
-    localStorage.setItem(COURSE_PROGRESS, JSON.stringify(progress));
-  }
-
-  function loadProgress(courseId: number) {
-    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
-    return progress[courseId]?.index || 0;
-  }
-
-  function cleanProgress() {
-    localStorage.removeItem(COURSE_PROGRESS);
-  }
-
-  return {
-    saveProgress,
-    loadProgress,
-    cleanProgress,
-  };
-}

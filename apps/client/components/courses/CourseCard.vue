@@ -10,7 +10,7 @@
     <h3 class="text-xl font-bold dark:text-gray-100">{{ title }}</h3>
     <p class="mt-4 truncate">this is the course's description</p>
 
-    <span class="absolute top-5 right-5">{{ courseProgress }}</span>
+    <span class="absolute top-5 right-5">{{ progress }}</span>
     <div
       v-if="!!count"
       class="tooltip count"
@@ -29,12 +29,12 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
-import { useCourseProgress } from "~/composables/courses/progress";
 
 const props = defineProps<{
   title: string;
   id: number;
   count: number | undefined;
+  progress: string | undefined;
 }>();
 
 const { activeCourseId } = useActiveCourseId();
@@ -43,31 +43,10 @@ const dataTip = computed(
   () => `Congratulations! you've completed the course ${props.count} times.`
 );
 
-const { loadProgress } = useCourseProgress();
-
-const courseProgress = computed(() => {
-  const progress = loadProgress();
-  if (!progress) return;
-  const value = progress[props.id];
-  if (value && value.total) {
-    let ratio = value.index / value.total;
-    // 如果是0，认定该节课已完成
-    if (ratio == 0) {
-      ratio = 1;
-    }
-    return `${parseFloat((ratio * 100).toFixed(2))}%`;
-  }
-});
-
 const courseState = computed(() => {
-  const progress = loadProgress();
-  if (!progress) return;
   let state = "unplayed";
-  const value = progress[props.id];
-  if (value) {
-    let ratio = value.index / value.total;
-    // 如果是0，认定该节课已完成
-    if (ratio == 0) {
+  if (props.progress) {
+    if (props.progress === "100%") {
       state = "finished";
     } else {
       state = "underway";

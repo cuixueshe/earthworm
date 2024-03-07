@@ -15,6 +15,7 @@
               :title="course.title"
               :id="course.id"
               :count="course.count"
+              :progress="course.progress"
             />
           </NuxtLink>
         </template>
@@ -30,28 +31,31 @@ import { fetchCourses } from "~/api/course";
 import Loading from "~/components/Loading.vue";
 import CourseCard from "~/components/courses/CourseCard.vue";
 import { ref, onMounted } from "vue";
-import { fetchCompletionCount } from "~/api/courseHistory";
+import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 
 const courses = ref<Course[]>([]);
 
-async function getCourseCompletionCount() {
-  const res = await fetchCompletionCount();
-  const completionMap: Map<number, number> = new Map();
+async function getCourseHistory() {
+  const res = await fetchCourseHistory();
+  const historyMap: Map<number, any> = new Map();
   res.forEach((item) => {
-    completionMap.set(item.courseId, item.completionCount);
+    historyMap.set(item.courseId, {
+      count: item.completionCount,
+      progress: item.progress,
+    });
   });
-  return completionMap;
+  return historyMap;
 }
 
 async function getCourses() {
-  const completionMap = await getCourseCompletionCount();
+  const completionMap = await getCourseHistory();
   const courses = await fetchCourses();
   return courses.map((item) => {
     if (completionMap.has(item.id)) {
       return {
         ...item,
-        count: completionMap.get(item.id),
+        ...completionMap.get(item.id),
       };
     } else {
       return item;
@@ -64,7 +68,6 @@ onMounted(async () => {
 });
 
 const { updateActiveCourseId } = useActiveCourseId();
-
 function handleChangeCourse(course: Course) {
   updateActiveCourseId(course.id);
 }
