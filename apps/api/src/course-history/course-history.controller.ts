@@ -9,8 +9,8 @@ export class CourseHistoryController {
 
   @UseGuards(AuthGuard)
   @Get('')
-  courseCompletionCount() {
-    return this.courseHistoryService.findAll();
+  courseCompletionCount(@User() user: UserEntity) {
+    return this.courseHistoryService.findAll(user);
   }
 
   @UseGuards(AuthGuard)

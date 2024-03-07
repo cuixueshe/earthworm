@@ -52,8 +52,11 @@ export class CourseHistoryService {
     }
   }
 
-  async findAll() {
-    return await this.db.select().from(courseHistory);
+  async findAll(user: UserEntity) {
+    return await this.db
+      .select()
+      .from(courseHistory)
+      .where(eq(courseHistory.userId, user.userId));
   }
 
   async setCourseProgress(
