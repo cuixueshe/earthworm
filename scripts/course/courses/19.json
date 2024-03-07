@@ -142,7 +142,7 @@
 	{
 		"chinese": "我们",
 		"english": "we",
-		"soundmark": "/wi/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/"
 	},
 	{
 		"chinese": "我们(现在)正在尝试",
@@ -252,7 +252,7 @@
 	{
 		"chinese": "我们",
 		"english": "we",
-		"soundmark": "/wi/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/"
 	},
 	{
 		"chinese": "我们(现在)正在面对",
@@ -327,7 +327,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我(现在)正在尝试",
@@ -362,7 +362,7 @@
 	{
 		"chinese": "我们",
 		"english": "we",
-		"soundmark": "/wi/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/"
 	},
 	{
 		"chinese": "我们(现在)正在面对",
@@ -612,7 +612,7 @@
 	{
 		"chinese": "正在疑惑",
 		"english": "be wondering",
-		"soundmark": "/bi/ /'wʌndərɪŋ/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/bi/ /'wʌndərɪŋ/"
 	},
 	{
 		"chinese": "我(过去)正在疑惑",
@@ -662,7 +662,7 @@
 	{
 		"chinese": "他",
 		"english": "he",
-		"soundmark": "/hi/ /(he，现在时)be is/ /ɪz/"
+		"soundmark": "/hi/"
 	},
 	{
 		"chinese": "他(现在)正在疑惑",
