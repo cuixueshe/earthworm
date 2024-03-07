@@ -37,7 +37,7 @@
 	{
 		"chinese": "我是一名老师",
 		"english": "I am a teacher",
-		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/ /be(ed形式) been/ /bɪn/"
+		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/"
 	},
 	{
 		"chinese": "我(已经)是一名老师了",
@@ -77,12 +77,12 @@
 	{
 		"chinese": "他是一名医生",
 		"english": "he is a doctor",
-		"soundmark": "/hi/ /ɪz/ /ə/ /'dɑktɚ/ /be(ed形式) been/ /bɪn/"
+		"soundmark": "/hi/ /ɪz/ /ə/ /'dɑktɚ/"
 	},
 	{
 		"chinese": "他(已经)是一名医生了",
 		"english": "he has been a doctor",
-		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/ /fifteen/ /ˌfɪfˈtin/ /15年 15 years/ /ˌfɪfˈtin/ /jɪrz/"
+		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/ /fifteen/"
 	},
 	{
 		"chinese": "他(已经)是一名医生15年了",
@@ -127,7 +127,7 @@
 	{
 		"chinese": "他们是结婚的",
 		"english": "they are married",
-		"soundmark": "/ðe/ /ɚ/ /ˈmærid/ /be(ed形式) been/ /bɪn/"
+		"soundmark": "/ðe/ /ɚ/ /ˈmærid/"
 	},
 	{
 		"chinese": "他们(已经)结婚了",
