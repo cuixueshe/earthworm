@@ -162,12 +162,12 @@
 	{
 		"chinese": "读(ed形式)",
 		"english": "read",
-		"soundmark": "/rɛd/"
+		"soundmark": "/rid/"
 	},
 	{
 		"chinese": "我(已经)读过",
 		"english": "I have read",
-		"soundmark": "/aɪ/ /hæv/ /rɛd/"
+		"soundmark": "/aɪ/ /hæv/ /rid/"
 	},
 	{
 		"chinese": "那本书",
@@ -177,7 +177,7 @@
 	{
 		"chinese": "我(已经)读过那本书",
 		"english": "I have read that book",
-		"soundmark": "/aɪ/ /hæv/ /rɛd/ /ðæt/ /bʊk/"
+		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/"
 	},
 	{
 		"chinese": "次",
@@ -197,7 +197,7 @@
 	{
 		"chinese": "我(已经)读过那本书两次了",
 		"english": "I have read that book twice",
-		"soundmark": "/aɪ/ /hæv/ /rɛd/ /ðæt/ /bʊk/ /twaɪs/"
+		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/ /twaɪs/"
 	},
 	{
 		"chinese": "学到",
