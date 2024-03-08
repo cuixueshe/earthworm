@@ -587,21 +587,21 @@
 	{
 		"chinese": "说",
 		"english": "to say",
-		"soundmark": "/tə/ /se/"
+		"soundmark": "/tə/ /seɪ/"
 	},
 	{
 		"chinese": "你说",
 		"english": "you say",
-		"soundmark": "/ju/ /se/"
+		"soundmark": "/ju/ /seɪ/"
 	},
 	{
 		"chinese": "你说的内容",
 		"english": "what you say",
-		"soundmark": "/wɑt/ /ju/ /se/"
+		"soundmark": "/wɑt/ /ju/ /seɪ/"
 	},
 	{
 		"chinese": "你做的内容比你说的内容是更重要的",
 		"english": "what you do is more important than what you say",
-		"soundmark": "/wɑt/ /ju/ /du/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /wɑt/ /ju/ /se/"
+		"soundmark": "/wɑt/ /ju/ /du/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /wɑt/ /ju/ /seɪ/"
 	}
 ]
