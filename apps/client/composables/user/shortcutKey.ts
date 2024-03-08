@@ -45,6 +45,8 @@ const SPECIAL_KEYS = new Map([
 ]);
 
 export function useShortcutKeyMode() {
+  setShortcutKeys()
+
   function setShortcutKeys() {
     const localKeys = localStorage.getItem(SHORTCUT_KEYS);
     if (localKeys) {
@@ -53,7 +55,6 @@ export function useShortcutKeyMode() {
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(shortcutKeys.value));
     }
   }
-  onMounted(() => setShortcutKeys());
 
   function saveShortcutKeys() {
     const trimmedShortcutKeyStr = shortcutKeyStr.value.trim();

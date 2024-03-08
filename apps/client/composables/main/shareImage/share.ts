@@ -2,14 +2,21 @@ import { ref } from "vue";
 import satori, { type SatoriNode } from "satori";
 import { tpl_1 } from "./imageTtemplates/tpl_1";
 import { useDailySentence } from "../summary";
-import { clearCanvas, convertSVGtoImg, copyImage, initCanvas, fontEn, fontZh } from "./helper";
+import {
+  clearCanvas,
+  convertSVGtoImg,
+  copyImage,
+  initCanvas,
+  fontEn,
+  fontZh,
+} from "./helper";
 
 export enum ShareImageTemplate {
   TPL_1 = "tpl_1",
 }
 
 interface ShareImageTemplateData {
-  courseNum: number;
+  courseNum: string;
   zhSentence: string;
   enSentence: string;
 }
@@ -38,7 +45,7 @@ export function useShareModal() {
   };
 }
 
-const generateconfig = async () => {
+const generateConfig = async () => {
   const fontEnData = await fontEn();
   const fontZhData = await fontZh();
   return {
@@ -67,7 +74,10 @@ export function useGenerateShareImage() {
 
   const canvasEl = initCanvas();
 
-  const chosenTemplate = (templateKey: ShareImageTemplate, courseNum: number) => {
+  const chosenTemplate = (
+    templateKey: ShareImageTemplate,
+    courseNum: string
+  ) => {
     return imageTtemplates[templateKey]({
       courseNum,
       zhSentence: zhSentence.value,
@@ -75,10 +85,10 @@ export function useGenerateShareImage() {
     });
   };
 
-  const generateImage = async (courseNum: number) => {
+  const generateImage = async (courseNum: string) => {
     const svg = await satori(
       chosenTemplate(ShareImageTemplate.TPL_1, courseNum),
-      await generateconfig()
+      await generateConfig()
     ).catch((e) => {
       console.error("Error generating SVG");
       console.error(e);
