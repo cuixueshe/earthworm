@@ -7,10 +7,19 @@
       'current-card': currentCourse,
     }"
   >
-    <h3 class="text-xl font-bold dark:text-gray-100">{{ title }}</h3>
-    <p class="mt-4 truncate">this is the course's description</p>
+    <h3 class="text-base font-bold dark:text-gray-100">{{ title }}</h3>
+    <p
+      class="text-sm mt-4 truncate"
+      :class="
+        currentCourse
+          ? 'text-[rgba(255,255,255,0.8)]'
+          : 'text-[rgba(136,136,136,1)]'
+      "
+    >
+      this is the course's description
+    </p>
 
-    <span class="absolute top-5 right-5">{{ progress }}</span>
+    <span class="absolute top-4 right-4 text-xs">{{ progress }}</span>
     <div
       v-if="!!count"
       class="tooltip count"
@@ -58,11 +67,11 @@ const courseState = computed(() => {
 
 <style scoped>
 .course-card {
-  @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[280px] xl:w-[260px] p-4 pb-6 border border-slate-400 hover:shadow-lg hover:shadow-slate-400/50 hover:border-slate-400 rounded-xl transition-all duration-500 relative;
+  @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[280px] xl:w-[260px] p-4 pb-6 border border-[rgba(164,175,191,1)] hover:shadow-lg hover:shadow-[rgba(164,175,191,0.5)] hover:border-[rgba(164,175,191,1)] rounded-xl transition-all duration-500 relative;
 }
 
 .count {
-  @apply absolute bottom-2.5 right-5 w-10 h-6 leading-6 text-center text-white bg-slate-400 rounded-md;
+  @apply absolute bottom-1.5 right-2 text-xs w-7 h-5 leading-5 text-center text-white bg-[rgba(164,175,191,1)] rounded-md;
 }
 
 .state-underway {
@@ -74,11 +83,11 @@ const courseState = computed(() => {
 }
 
 .state-finished {
-  @apply border-[rgba(154,78,255,1)] hover:shadow-[rgba(154,78,255,0.5)] hover:border-[rgba(154,78,255,1)];
+  @apply border-[rgba(151,71,255,1)] hover:shadow-[rgba(151,71,255,0.5)] hover:border-[rgba(151,71,255,1)];
 }
 
 .state-finished-count {
-  @apply bg-[rgba(154,78,255,1)];
+  @apply bg-[rgba(151,71,255,1)];
 }
 
 .current-card {
