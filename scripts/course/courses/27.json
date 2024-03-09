@@ -167,7 +167,7 @@
 	{
 		"chinese": "正在钓鱼",
 		"english": "be fishing",
-		"soundmark": "/bi/ /'fɪʃɪŋ/ /（you，现在时）be are/ /ɚ/"
+		"soundmark": "/bi/ /'fɪʃɪŋ/"
 	},
 	{
 		"chinese": "你（现在）正在钓鱼",
@@ -277,7 +277,7 @@
 	{
 		"chinese": "说",
 		"english": "to say",
-		"soundmark": "/tə/ /se/ /（过去）说 said/ /sɛd/"
+		"soundmark": "/tə/ /seɪ/"
 	},
 	{
 		"chinese": "她（过去）说",
@@ -472,7 +472,7 @@
 	{
 		"chinese": "告诉",
 		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/ /（过去）告诉 told/ /told/"
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
 		"chinese": "我（过去）告诉你",
@@ -532,7 +532,7 @@
 	{
 		"chinese": "承诺",
 		"english": "to promise",
-		"soundmark": "/tə/ /'prɑmɪs/ /（过去）承诺 promised/ /'prɑmɪst/"
+		"soundmark": "/tə/ /'prɑmɪs/"
 	},
 	{
 		"chinese": "你（过去）承诺",

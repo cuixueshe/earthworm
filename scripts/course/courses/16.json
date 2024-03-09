@@ -47,7 +47,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /（I，现在时）be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我（现在）正在阅读一本英语书",
@@ -67,7 +67,7 @@
 	{
 		"chinese": "我此刻正在阅读一本英语书",
 		"english": "I am reading an English book at the moment",
-		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /æt/ /ðə/ /'momənt/ /（I，过去时）be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我（过去）正在阅读一本英语书",
@@ -142,7 +142,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在做她的家庭作业",
@@ -177,7 +177,7 @@
 	{
 		"chinese": "我的女儿此刻正在做她的家庭作业",
 		"english": "my daughter is doing her homework at the moment",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我的女儿（过去）正在做她的家庭作业",
@@ -242,7 +242,7 @@
 	{
 		"chinese": "他",
 		"english": "he",
-		"soundmark": "/hi/ /（he，现在时）be is/ /ɪz/"
+		"soundmark": "/hi/"
 	},
 	{
 		"chinese": "他（现在）正在在街上跑步",
@@ -257,7 +257,7 @@
 	{
 		"chinese": "他此刻正在在街上跑步",
 		"english": "he is running in the street at the moment",
-		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/ /（he，过去时）be was/ /wəz/"
+		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "他（过去）正在在街上跑步",
@@ -307,7 +307,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在游泳池里游泳",
@@ -322,7 +322,7 @@
 	{
 		"chinese": "她此刻正在游泳池里游泳",
 		"english": "she is swimming in the pool at the moment",
-		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/ /æt/ /ðə/ /moment/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/ /æt/ /ðə/ /moment/ /'momənt/"
 	},
 	{
 		"chinese": "她（过去）正在游泳池里游泳",
@@ -392,7 +392,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在做家务",
@@ -427,7 +427,7 @@
 	{
 		"chinese": "我妈此刻正在做家务",
 		"english": "my mother is doing the housework at the moment",
-		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我妈（过去）正在做家务",
@@ -477,7 +477,7 @@
 	{
 		"chinese": "他",
 		"english": "he",
-		"soundmark": "/hi/ /（he，现在时）be is/ /ɪz/"
+		"soundmark": "/hi/"
 	},
 	{
 		"chinese": "他（现在）正在手机上说话",
@@ -512,7 +512,7 @@
 	{
 		"chinese": "我爸此刻正在手机上说话",
 		"english": "my father is talking on the phone at the moment",
-		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/ /æt/ /ðə/ /'momənt/ /（he，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我爸（过去）正在手机上说话",
@@ -572,7 +572,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在看电视",
@@ -602,7 +602,7 @@
 	{
 		"chinese": "我女儿此刻正在看电视",
 		"english": "my daughter is watching TV at the moment",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我女儿（过去）正在看电视",
@@ -672,7 +672,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在做牛肉烧土豆",
@@ -707,7 +707,7 @@
 	{
 		"chinese": "她妈妈此刻正在做牛肉烧土豆",
 		"english": "her mother is cooking beef with potatoes at the moment",
-		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "她妈妈（过去）正在做牛肉烧土豆",

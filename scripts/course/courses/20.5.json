@@ -167,7 +167,7 @@
 	{
 		"chinese": "他们",
 		"english": "they",
-		"soundmark": "/ðe/ /(they，现在时)be are/ /ɚ/"
+		"soundmark": "/ðe/"
 	},
 	{
 		"chinese": "看(ing形式)",
@@ -397,7 +397,7 @@
 	{
 		"chinese": "你",
 		"english": "you",
-		"soundmark": "/ju/ /(you，现在时)be are/ /ɚ/"
+		"soundmark": "/ju/"
 	},
 	{
 		"chinese": "你(现在)正在寻找",
@@ -517,12 +517,12 @@
 	{
 		"chinese": "听见；听说",
 		"english": "to hear",
-		"soundmark": "/tə/ /hɪr/ /(过去)听说 heard/ /hɚd/"
+		"soundmark": "/tə/ /hɪr/"
 	},
 	{
 		"chinese": "我(过去)听说",
 		"english": "I heard",
-		"soundmark": "/aɪ/ /hɚd/ /(you，过去时)be were/ /wɚ/"
+		"soundmark": "/aɪ/ /hɚd/"
 	},
 	{
 		"chinese": "你(过去)正在寻找我",

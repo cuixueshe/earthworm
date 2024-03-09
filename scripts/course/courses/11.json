@@ -47,12 +47,12 @@
 	{
 		"chinese": "她现在想要做这件事",
 		"english": "she wants to do it now",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/ /（第三人称单数）不 doesn't/ /ˈdʌznt/"
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
 		"chinese": "她现在不想做这件事",
 		"english": "she doesn't want to do it now",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
 		"chinese": "我（过去）想要做这件事情",
@@ -67,7 +67,7 @@
 	{
 		"chinese": "我昨天想要做这件事情",
 		"english": "I wanted to do it yesterday",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/ /'jɛstɚde/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/ /'jɛstɚde/"
 	},
 	{
 		"chinese": "我昨天不想做这件事情",
@@ -117,12 +117,12 @@
 	{
 		"chinese": "我不喜欢每天待在那里",
 		"english": "I don't like to stay there every day",
-		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/ /（过去）喜欢 liked/ /laikt/"
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
 	},
 	{
 		"chinese": "我（过去）喜欢待在那里",
 		"english": "I liked to stay there",
-		"soundmark": "/aɪ/ /laikt/ /tə/ /ste/ /ðɛr/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/aɪ/ /laikt/ /tə/ /ste/ /ðɛr/"
 	},
 	{
 		"chinese": "我（过去）不喜欢待在那里",
@@ -192,7 +192,7 @@
 	{
 		"chinese": "我必须在那时离开这座城市",
 		"english": "I had to leave the city at that time",
-		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
 	},
 	{
 		"chinese": "我不必在那时离开这座城市",
@@ -227,12 +227,12 @@
 	{
 		"chinese": "我不打算去那里",
 		"english": "I don't plan to get there",
-		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ɡɛt/ /ðɛr/ /（过去）打算 planned/ /plænd/"
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
 	},
 	{
 		"chinese": "我（过去）打算去那里",
 		"english": "I planned to get there",
-		"soundmark": "/aɪ/ /plænd/ /tə/ /ɡɛt/ /ðɛr/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/aɪ/ /plænd/ /tə/ /ɡɛt/ /ðɛr/"
 	},
 	{
 		"chinese": "我（过去）不打算去那里",
@@ -277,12 +277,12 @@
 	{
 		"chinese": "我不需要知道真相",
 		"english": "I don't need to know the truth",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /no/ /ðə/ /trʊθ/ /（过去）需要 needed/ /nidɪd/"
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
 	},
 	{
 		"chinese": "我（过去）需要知道真相",
 		"english": "I needed to know the truth",
-		"soundmark": "/aɪ/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/aɪ/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
 	},
 	{
 		"chinese": "我（过去）不需要知道真相",
@@ -292,7 +292,7 @@
 	{
 		"chinese": "她（过去）需要知道真相",
 		"english": "she needed to know the truth",
-		"soundmark": "/ʃi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/ʃi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
 	},
 	{
 		"chinese": "她（过去）不需要知道真相",
@@ -322,7 +322,7 @@
 	{
 		"chinese": "你现在不做这件事情",
 		"english": "you don't do it now",
-		"soundmark": "/ju/ /dont/ /du/ /ɪt/ /naʊ/ /（过去）做 did/ /dɪd/"
+		"soundmark": "/ju/ /dont/ /du/ /ɪt/ /naʊ/"
 	},
 	{
 		"chinese": "你（过去）做这件事情",
@@ -347,7 +347,7 @@
 	{
 		"chinese": "你去年做这件事情",
 		"english": "you did it last year",
-		"soundmark": "/ju/ /dɪd/ /ɪt/ /læst/ /jɪr/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/ju/ /dɪd/ /ɪt/ /læst/ /jɪr/"
 	},
 	{
 		"chinese": "你去年没做这件事情",
@@ -382,17 +382,17 @@
 	{
 		"chinese": "她告诉我",
 		"english": "she tells me",
-		"soundmark": "/ʃi/ /tɛlz/ /mi/ /（第三人称单数）不 doesn't/ /ˈdʌznt/"
+		"soundmark": "/ʃi/ /tɛlz/ /mi/"
 	},
 	{
 		"chinese": "她不告诉我",
 		"english": "she doesn't tell me",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /tɛl/ /mi/ /（过去）告诉 told/ /told/ /（过去）告诉我 told me/ /told/ /mi/"
+		"soundmark": "/ʃi/ /ˈdʌznt/ /tɛl/ /mi/"
 	},
 	{
 		"chinese": "他（过去）告诉我",
 		"english": "he told me",
-		"soundmark": "/hi/ /told/ /mi/ /（过去）不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/hi/ /told/ /mi/"
 	},
 	{
 		"chinese": "他（过去）没告诉我",
@@ -407,7 +407,7 @@
 	{
 		"chinese": "他（过去）没告诉我真相",
 		"english": "he didn't tell me the truth",
-		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/ /ðə/ /trʊθ/ /（过去）需要 needed/ /nidɪd/"
+		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
 		"chinese": "知道",
@@ -482,7 +482,7 @@
 	{
 		"chinese": "成为一个老师",
 		"english": "to be a teacher",
-		"soundmark": "/tə/ /bi/ /ə/ /'titʃɚ/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
 		"chinese": "我（过去）想要成为一个老师",
@@ -542,7 +542,7 @@
 	{
 		"chinese": "交谈；聊天",
 		"english": "to talk",
-		"soundmark": "/tə/ /tɔk/ /（过去）聊天 talked/ /tɔkt/"
+		"soundmark": "/tə/ /tɔk/"
 	},
 	{
 		"chinese": "我们（过去）聊天",
