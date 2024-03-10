@@ -10,8 +10,8 @@ export const KEYBOARD = {
   ESC: "Esc",
   META: "Meta",
   CTRL: "Ctrl",
-}
-export const SHORTCUT_KEYS = "shortcutKeys"
+};
+export const SHORTCUT_KEYS = "shortcutKeys";
 
 let showModal = ref<boolean>(false);
 let currentKeyType = ref<string>("");
@@ -33,7 +33,7 @@ export function useShortcutDialogMode() {
   };
 }
 
-let shortcutKeyData = ref<{ [key: string]: any }>({
+let shortcutKeys = ref<{ [key: string]: any }>({
   ...DEFAULT_SHORTCUT_KEYS,
 });
 let shortcutKeyStr = ref<string>("");
@@ -45,19 +45,23 @@ const SPECIAL_KEYS = new Map([
 ]);
 
 export function useShortcutKeyMode() {
-  function setShortcutKeyData() {
+  setShortcutKeys()
+
+  function setShortcutKeys() {
     const localKeys = localStorage.getItem(SHORTCUT_KEYS);
-    if (localKeys) shortcutKeyData.value = JSON.parse(localKeys);
+    if (localKeys) {
+      shortcutKeys.value = JSON.parse(localKeys);
+    } else {
+      localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(shortcutKeys.value));
+    }
   }
-  onMounted(() => setShortcutKeyData());
 
   function saveShortcutKeys() {
     const trimmedShortcutKeyStr = shortcutKeyStr.value.trim();
     if (trimmedShortcutKeyStr) {
-      shortcutKeyData.value[currentKeyType.value] = trimmedShortcutKeyStr
-      localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(shortcutKeyData.value));
+      shortcutKeys.value[currentKeyType.value] = trimmedShortcutKeyStr;
+      localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(shortcutKeys.value));
     }
-
     const { handleCloseDialog } = useShortcutDialogMode();
     handleCloseDialog();
   }
@@ -66,18 +70,20 @@ export function useShortcutKeyMode() {
   });
 
   function convertKey(key: string) {
-    return {
-      [KEYBOARD.CONTROL]: KEYBOARD.CTRL,
-      [KEYBOARD.META]: KEYBOARD.COMMAND,
-    }[key] || key;
+    return (
+      {
+        [KEYBOARD.CONTROL]: KEYBOARD.CTRL,
+        [KEYBOARD.META]: KEYBOARD.COMMAND,
+      }[key] || key
+    );
   }
   const isEnterKey = (key: string) => key === KEYBOARD.ENTER;
   /**
    * 参考于vscode快捷键
-   * 有待讨论，产品角度出发，快捷键应该只支持组合键形式，单键组合在使用过程中不方便写单词
+   * 有待讨论，产品角度出发，快捷键应该只支持组合键形式
+   * 单键组合在使用过程中不方便写单词
    */
   function handleKeyup(e: KeyboardEvent) {
-
     if (!showModal.value) return;
     isEnterKey(e.key) && saveShortcutKeys();
     // 组合键
@@ -101,9 +107,10 @@ export function useShortcutKeyMode() {
   }
 
   return {
-    shortcutKeyStr,
-    shortcutKeyTip,
+    shortcutKeys, // 快捷键对象
+    setShortcutKeys,
+    shortcutKeyStr, // 单个修改的快捷键
+    shortcutKeyTip, // 快捷键输入框底部注释
     handleKeyup,
-    shortcutKeyData,
   };
 }

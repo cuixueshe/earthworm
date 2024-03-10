@@ -11,13 +11,15 @@
   </div>
   <Tips></Tips>
   <Summary></Summary>
+  <Share></Share>
   <AuthRequired></AuthRequired>
 </template>
 
 <script setup lang="ts">
-import Question from "./Question.vue";
+import Question from './Question.vue';
 import Answer from "./Answer.vue";
 import Summary from "./Summary.vue";
+import Share from './Share.vue';
 import Tips from "./Tips.vue";
 import AuthRequired from './AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";

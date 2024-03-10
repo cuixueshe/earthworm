@@ -10,8 +10,8 @@
     "postinstall": "nuxt prepare",
     "test": "pnpm run test:unit:run &&pnpm run test:e2e:run",
     "test:unit:watch": "vitest",
-    "test:unit:run":"vitest run",
-    "test:e2e:run":"cypress run",
+    "test:unit:run": "vitest run",
+    "test:e2e:run": "cypress run",
     "test:ci": "start-server-and-test dev http://localhost:3000 test",
     "cypress:open": "cypress open"
   },
@@ -41,6 +41,9 @@
     "@types/canvas-confetti": "^1.6.4",
     "axios": "^1.6.6",
     "canvas-confetti": "^1.9.2",
-    "pinia": "^2.1.7"
+    "pinia": "^2.1.7",
+    "satori": "^0.10.13",
+    "vee-validate": "^4.12.5",
+    "yup": "^1.3.3"
   }
 }

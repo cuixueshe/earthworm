@@ -22,7 +22,7 @@
 	{
 		"chinese": "我想要见到你",
 		"english": "I want to see you",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /si/ /ju/ /(有意识地)看 to look/ /tə/ /lʊk/"
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /si/ /ju/"
 	},
 	{
 		"chinese": "我想要(有意识地)看你",
@@ -87,12 +87,12 @@
 	{
 		"chinese": "正在看着你",
 		"english": "be looking at you",
-		"soundmark": "/bi/ /ˈlʊkɪŋ/ /ət/ /ju/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/bi/ /ˈlʊkɪŋ/ /ət/ /ju/"
 	},
 	{
 		"chinese": "我(现在)正在看着你",
 		"english": "I am looking at you",
-		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /ju/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /ju/"
 	},
 	{
 		"chinese": "我(过去)正在看着你",
@@ -122,12 +122,12 @@
 	{
 		"chinese": "我(过去)正在在镜子里看着我自己",
 		"english": "I was looking at myself in the mirror",
-		"soundmark": "/aɪ/ /wəz/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/ /wəz/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
 		"chinese": "我(现在)正在在镜子里看着我自己",
 		"english": "I am looking at myself in the mirror",
-		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/ /(you，现在时)be are/ /ɚ/"
+		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
 		"chinese": "你(现在)正在看着",
@@ -157,7 +157,7 @@
 	{
 		"chinese": "你(现在)正在在镜子里看着你自己",
 		"english": "you are looking at yourself in the mirror",
-		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/ /(you，过去时)be were/ /wɚ/"
+		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
 		"chinese": "你(过去)正在在镜子里看着你自己",
@@ -167,7 +167,7 @@
 	{
 		"chinese": "他们",
 		"english": "they",
-		"soundmark": "/ðe/ /(they，现在时)be are/ /ɚ/"
+		"soundmark": "/ðe/"
 	},
 	{
 		"chinese": "看(ing形式)",
@@ -217,7 +217,7 @@
 	{
 		"chinese": "为了一个新的工作",
 		"english": "for a new job",
-		"soundmark": "/fɝ/ /ə/ /nu/ /dʒɑb/ /(有意识地)看 to look/ /tə/ /lʊk/"
+		"soundmark": "/fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
 		"chinese": "为了一个新的工作(有意识地)看",
@@ -272,7 +272,7 @@
 	{
 		"chinese": "正在寻找一个新的工作",
 		"english": "be looking for a new job",
-		"soundmark": "/bi/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/bi/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
 		"chinese": "我(现在)正在寻找一个新的工作",
@@ -287,7 +287,7 @@
 	{
 		"chinese": "我(现在)仍然正在寻找一个新的工作",
 		"english": "I am still looking for a new job",
-		"soundmark": "/aɪ/ /æm/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/ /(I，过去时)be was/ /wəz/ /(过去)正在寻找 was looking for/ /wəz/ /ˈlʊkɪŋ/ /fɝ/"
+		"soundmark": "/aɪ/ /æm/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
 		"chinese": "我(过去)正在寻找一个新的工作",
@@ -352,7 +352,7 @@
 	{
 		"chinese": "但是我不能找到我的钥匙",
 		"english": "but I can't find my keys",
-		"soundmark": "/bʌt/ /aɪ/ /kænt/ /faɪnd/ /maɪ/ /kiz/ /(过去)能 could/ /kʊd/ /(过去)不能 couldn't/ /kʊdnt/"
+		"soundmark": "/bʌt/ /aɪ/ /kænt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
 		"chinese": "但是我(过去)不能找到我的钥匙",
@@ -397,7 +397,7 @@
 	{
 		"chinese": "你",
 		"english": "you",
-		"soundmark": "/ju/ /(you，现在时)be are/ /ɚ/"
+		"soundmark": "/ju/"
 	},
 	{
 		"chinese": "你(现在)正在寻找",
@@ -442,7 +442,7 @@
 	{
 		"chinese": "你(现在)正在寻找那个人",
 		"english": "you are looking for the person",
-		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /ðə/ /'pɝsn/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /ðə/ /'pɝsn/"
 	},
 	{
 		"chinese": "我是",
@@ -517,12 +517,12 @@
 	{
 		"chinese": "听见；听说",
 		"english": "to hear",
-		"soundmark": "/tə/ /hɪr/ /(过去)听说 heard/ /hɚd/"
+		"soundmark": "/tə/ /hɪr/"
 	},
 	{
 		"chinese": "我(过去)听说",
 		"english": "I heard",
-		"soundmark": "/aɪ/ /hɚd/ /(you，过去时)be were/ /wɚ/"
+		"soundmark": "/aɪ/ /hɚd/"
 	},
 	{
 		"chinese": "你(过去)正在寻找我",

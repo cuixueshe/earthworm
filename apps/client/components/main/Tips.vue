@@ -6,11 +6,18 @@
       </button>
       <span class="ml-2">play sound</span>
     </div>
-    <div class="w-[210px]">
+    <div class="w-[210px] mb-4">
       <button class="tip-btn" @click="toggleGameMode">
         ⌃ {{ shortcutKeys.answer }}
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
+    </div>
+
+    <div class="w-[210px]">
+      <button class="tip-btn" @click="toggleGameMode">
+        Space
+      </button>
+      <span class="ml-2">fix incorrect word</span>
     </div>
   </div>
 </template>
@@ -22,28 +29,17 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useSummary } from "~/composables/main/summary";
 import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
 import { onMounted, computed, onUnmounted } from "vue";
+import { useShortcutKeyMode } from '~/composables/user/shortcutKey';
 
-const { shortcutKeys } = setShortcutKey();
-const { playSound } = usePlaySound(shortcutKeys.sound);
-const { toggleGameMode } = useShowAnswer(shortcutKeys.answer);
+const { shortcutKeys } = useShortcutKeyMode()
+const { playSound } = usePlaySound(shortcutKeys.value.sound);
+const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 
 const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
   return isAnswer() ? "again" : "show answer";
 });
 
-function setShortcutKey() {
-  let shortcutKeys = DEFAULT_SHORTCUT_KEYS;
-  const localKeys = localStorage.getItem("shortcutKeys");
-  if (localKeys) {
-    shortcutKeys = JSON.parse(localKeys);
-  } else {
-    localStorage.setItem("shortcutKeys", JSON.stringify(shortcutKeys));
-  }
-  return {
-    shortcutKeys,
-  };
-}
 
 function usePlaySound(key: string) {
   const { playSound } = useCurrentStatementEnglishSound();
