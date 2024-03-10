@@ -3,7 +3,7 @@ import { DbType } from 'src/global/providers/db.provider';
 import { sql } from 'drizzle-orm';
 import * as request from 'supertest';
 import { MockRedisModule } from './mockRedis';
-import { GlobalModule } from '../../src/global/global.mudule';
+import { GlobalModule } from '../../src/global/global.module';
 import { JwtModule } from '@nestjs/jwt';
 
 export async function cleanDB(db: DbType) {
