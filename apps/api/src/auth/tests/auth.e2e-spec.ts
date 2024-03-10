@@ -87,6 +87,51 @@ describe('auth e2e', () => {
         .expect(400);
     });
   });
+
+  describe('login', () => {
+    it('should login', async () => {
+      await request(app.getHttpServer())
+        .post('/auth/login')
+        .send({
+          phone: userData.phone,
+          password,
+        })
+        .expect(201)
+        .expect(({ body }) => {
+          expect(body).toEqual(
+            expect.objectContaining({
+              token: expect.any(String),
+              user: expect.objectContaining({
+                username: userData.username,
+                phone: userData.phone,
+              }),
+            }),
+          );
+        });
+    });
+  });
+
+  it('get user info', async () => {
+    // get token
+    const res = await request(app.getHttpServer()).post('/auth/login').send({
+      phone: userData.phone,
+      password,
+    });
+
+    // get user info
+    await request(app.getHttpServer())
+      .get('/auth/userInfo')
+      .set('Authorization', `Bearer ${res.body.token}`)
+      .expect(200)
+      .expect(({ body }) => {
+        expect(body).toEqual(
+          expect.objectContaining({
+            username: userData.username,
+            phone: userData.phone,
+          }),
+        );
+      });
+  });
 });
 
 async function setupDBData(db: DbType) {
