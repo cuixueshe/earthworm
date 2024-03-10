@@ -153,19 +153,9 @@ export function useInput({
     }
   }
 
-  // 判断当前编辑的单词是否为最后一个错误单词
+  // 当前编辑的单词是否为最后一个错误单词
   function isLastIncorrectWord() {
-    // 未进入编辑模式
-    if (!currentEditWord) return false
-
-    // 找到下一个错误单词
-    const nextIncorrectWord = findNextIncorrectWordNew()
-    if (nextIncorrectWord) {
-      return false
-    }
-
-    // 是最后一个错误单词
-    return true
+    return !findNextIncorrectWordNew();
   }
 
   function getFirstIncorrectWord() {
@@ -258,6 +248,13 @@ export function useInput({
     }
   }
 
+  function checkSpaceSubmitAnswer (e: KeyboardEvent, useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined) {
+    e.preventDefault()
+    if (useSpaceSubmitAnswer?.enable) {
+      submitAnswer(useSpaceSubmitAnswer.callback);
+    }
+  }
+
   function handleKeyboardInput(
     e: KeyboardEvent,
     options: {
@@ -274,11 +271,19 @@ export function useInput({
       return;
     }
 
-    if (e.code === "Space" && mode !== Mode.Fix && (lastWordIsActive() || isLastIncorrectWord())) {
-      e.preventDefault();
-      if (options.useSpaceSubmitAnswer?.enable) {
-        submitAnswer(options.useSpaceSubmitAnswer.callback);
-      }
+
+    // 校验正常输入时最后一个单词空格提交
+    if (e.code === "Space" && lastWordIsActive()) {
+      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
+      return;
+    }
+
+    if (
+      e.code === "Space" &&
+      mode === Mode.Fix_Input &&
+      isLastIncorrectWord()
+    ) {
+      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
       return;
     }
 
