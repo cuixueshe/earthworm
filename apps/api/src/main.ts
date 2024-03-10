@@ -1,8 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { ValidationPipe } from '@nestjs/common';
-import { HttpExceptionFilter } from './app/exception.fliter';
+import { appBindGlobal } from './app/useGlobal';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -13,8 +12,7 @@ async function bootstrap() {
     ],
   });
 
-  app.useGlobalPipes(new ValidationPipe());
-  app.useGlobalFilters(new HttpExceptionFilter());
+  appBindGlobal(app);
   const config = new DocumentBuilder()
     .setTitle('Cats example')
     .setDescription('The cats API description')
