@@ -17,8 +17,8 @@ export function useMessageBoxModal(props: IMessageBoxProps, emits: EmitsType) {
   let dialogBoxRef = ref<HTMLElement | null>(null);
 
   function handleConfirm() {
-    handleCancel()
     emits("confirm");
+    handleCancel()
   }
 
   function handleCancel() {
