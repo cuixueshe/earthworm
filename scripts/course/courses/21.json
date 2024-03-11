@@ -82,7 +82,7 @@
 	{
 		"chinese": "正在工作",
 		"english": "be working",
-		"soundmark": "/bi/ /'wɝkɪŋ/ /(he，现在时)be is/ /ɪz/"
+		"soundmark": "/bi/ /'wɝkɪŋ/"
 	},
 	{
 		"chinese": "他(现在)正在工作",
@@ -112,7 +112,7 @@
 	{
 		"chinese": "正在工作",
 		"english": "be working",
-		"soundmark": "/bi/ /'wɝkɪŋ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/bi/ /'wɝkɪŋ/"
 	},
 	{
 		"chinese": "我(现在)正在工作",
@@ -152,7 +152,7 @@
 	{
 		"chinese": "我们",
 		"english": "we",
-		"soundmark": "/wi/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/"
 	},
 	{
 		"chinese": "我们(现在)正在在那件事上工作",
@@ -262,7 +262,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /(she，现在时)be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她(现在)正在寻找",
@@ -392,12 +392,12 @@
 	{
 		"chinese": "我的女儿(现在)正在寻找她的玩具但是她不能找到它",
 		"english": "my daughter is looking for her toy but she can't find it",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /ʃi/ /kænt/ /faɪnd/ /ɪt/ /(she，过去时)be was/ /wəz/"
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /ʃi/ /kænt/ /faɪnd/ /ɪt/"
 	},
 	{
 		"chinese": "我的女儿(过去)正在寻找她的玩具",
 		"english": "my daughter was looking for her toy",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /(过去)能 could/ /kʊd/ /(过去)不能 couldn't/ /kʊdnt/"
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
 		"chinese": "但是她(过去)不能找到它",
@@ -537,7 +537,7 @@
 	{
 		"chinese": "听(ing形式)",
 		"english": "listening",
-		"soundmark": "/ˈlɪsnɪŋ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/ˈlɪsnɪŋ/"
 	},
 	{
 		"chinese": "我(现在)正在听",
@@ -557,12 +557,12 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /(she，现在时)be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她(现在)正在听音乐",
 		"english": "she is listening to music",
-		"soundmark": "/ʃi/ /ɪz/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/ /(she，过去时)be was/ /wəz/"
+		"soundmark": "/ʃi/ /ɪz/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/"
 	},
 	{
 		"chinese": "她(过去)正在听音乐",
@@ -587,7 +587,7 @@
 	{
 		"chinese": "我(过去)正在听一些音乐",
 		"english": "I was listening to some music",
-		"soundmark": "/aɪ/ /wəz/ /ˈlɪsnɪŋ/ /tə/ /səm/ /'mjuzɪk/ /(you，现在时)be are/ /ɚ/"
+		"soundmark": "/aɪ/ /wəz/ /ˈlɪsnɪŋ/ /tə/ /səm/ /'mjuzɪk/"
 	},
 	{
 		"chinese": "你(现在)正在听",

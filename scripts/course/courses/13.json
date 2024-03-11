@@ -22,7 +22,7 @@
 	{
 		"chinese": "付钱给他",
 		"english": "to pay him",
-		"soundmark": "/tə/ /pe/ /hɪm/ /(过去)付钱 paid/ /ped/ /(过去)付钱给他 paid him/ /ped/ /hɪm/"
+		"soundmark": "/tə/ /pe/ /hɪm/"
 	},
 	{
 		"chinese": "你",
@@ -202,7 +202,7 @@
 	{
 		"chinese": "我开那辆车",
 		"english": "I drive the car",
-		"soundmark": "/aɪ/ /draɪv/ /ðə/ /kɑr/ /(过去)驾驶 drove/ /drov/"
+		"soundmark": "/aɪ/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
 		"chinese": "我(过去)开那辆车",
@@ -257,7 +257,7 @@
 	{
 		"chinese": "你不相信我",
 		"english": "you don't believe me",
-		"soundmark": "/ju/ /dont/ /bɪ'liv/ /mi/ /(过去)相信 believed/ /bɪ'livd/"
+		"soundmark": "/ju/ /dont/ /bɪ'liv/ /mi/"
 	},
 	{
 		"chinese": "你(过去)相信我",
@@ -347,7 +347,7 @@
 	{
 		"chinese": "决定",
 		"english": "to decide",
-		"soundmark": "/tə/ /dɪ'saɪd/ /(过去)决定 decided/ /dɪ'saɪdɪd/"
+		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
 		"chinese": "开那辆车",
@@ -392,7 +392,7 @@
 	{
 		"chinese": "我不尝试开那辆车",
 		"english": "I don't try to drive the car",
-		"soundmark": "/aɪ/ /dont/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/ /(过去)尝试 tried/ /traɪd/"
+		"soundmark": "/aɪ/ /dont/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
 		"chinese": "我(过去)尝试开那辆车",
@@ -412,7 +412,7 @@
 	{
 		"chinese": "我不开那辆车",
 		"english": "I don't drive the car",
-		"soundmark": "/aɪ/ /dont/ /draɪv/ /ðə/ /kɑr/ /(过去)驾驶 drove/ /drov/"
+		"soundmark": "/aɪ/ /dont/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
 		"chinese": "我(过去)开那辆车",
@@ -507,7 +507,7 @@
 	{
 		"chinese": "我找到一个方法阻止他",
 		"english": "I find a way to stop him",
-		"soundmark": "/aɪ/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/ /(过去)找到 found/ /faʊnd/"
+		"soundmark": "/aɪ/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
 		"chinese": "我(过去)找到一个方法阻止他",
@@ -522,7 +522,7 @@
 	{
 		"chinese": "我阻止他",
 		"english": "I stop him",
-		"soundmark": "/aɪ/ /stɑp/ /hɪm/ /(过去)阻止 stopped/ /stɑpt/"
+		"soundmark": "/aɪ/ /stɑp/ /hɪm/"
 	},
 	{
 		"chinese": "我阻止了他",

@@ -122,7 +122,7 @@
 	{
 		"chinese": "见到",
 		"english": "to see",
-		"soundmark": "/tə/ /si/ /（过去）见到 saw/ /sɔ/"
+		"soundmark": "/tə/ /si/"
 	},
 	{
 		"chinese": "我（过去）见到你",
@@ -312,7 +312,7 @@
 	{
 		"chinese": "知道",
 		"english": "to know",
-		"soundmark": "/tə/ /no/ /（过去）知道 knew/ /nju/ /（过去）知道答案 knew the answer/ /nju/ /ði/ /'ænsɚ/"
+		"soundmark": "/tə/ /no/"
 	},
 	{
 		"chinese": "他（过去）知道答案",
@@ -347,7 +347,7 @@
 	{
 		"chinese": "忘记",
 		"english": "to forget",
-		"soundmark": "/tə/ /fɚ'ɡɛt/ /（过去）忘记 forgot/ /fɚ'ɡɑt/"
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
 	},
 	{
 		"chinese": "告诉",
@@ -482,7 +482,7 @@
 	{
 		"chinese": "睡觉",
 		"english": "to sleep",
-		"soundmark": "/tə/ /slip/ /（过去）睡觉 slept/ /slɛpt/"
+		"soundmark": "/tə/ /slip/"
 	},
 	{
 		"chinese": "房间",
@@ -542,7 +542,7 @@
 	{
 		"chinese": "你不明白",
 		"english": "you don't understand",
-		"soundmark": "/ju/ /dont/ /ʌndɚ'stænd/ /（过去）明白 understood/ /ʌndɚˈstʊd/"
+		"soundmark": "/ju/ /dont/ /ʌndɚ'stænd/"
 	},
 	{
 		"chinese": "你（过去）明白",

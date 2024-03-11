@@ -7,7 +7,7 @@
 	{
 		"chinese": "注意力",
 		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/ /(付出注意力)注意 to pay attention/ /tə/ /pe/ /ə'tɛnʃən/"
+		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
 		"chinese": "需要",
@@ -67,12 +67,12 @@
 	{
 		"chinese": "你不需要注意这个问题",
 		"english": "you don't need to pay attention to this question",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/ /(过去)需要 needed/ /nidɪd/"
+		"soundmark": "/ju/ /dont/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
 		"chinese": "你(过去)需要注意这个问题",
 		"english": "you needed to pay attention to this question",
-		"soundmark": "/ju/ /nidɪd/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/ /(过去)不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/ju/ /nidɪd/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
 		"chinese": "你(过去)不需要注意这个问题",
@@ -117,17 +117,17 @@
 	{
 		"chinese": "你没有注意这个信息",
 		"english": "you don't pay attention to this information",
-		"soundmark": "/ju/ /dont/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /(过去)付出 paid/ /ped/"
+		"soundmark": "/ju/ /dont/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
 		"chinese": "注意力",
 		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/ /(过去)付出注意力 paid attention/ /ped/ /ə'tɛnʃən/"
+		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
 		"chinese": "你(过去)注意这个信息",
 		"english": "you paid attention to this information",
-		"soundmark": "/ju/ /ped/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /(过去)不 didn't/ /ˈdɪdnt/"
+		"soundmark": "/ju/ /ped/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
 		"chinese": "你(过去)没有注意这个信息",
@@ -202,7 +202,7 @@
 	{
 		"chinese": "你",
 		"english": "you",
-		"soundmark": "/ju/ /(you，现在时)be are/ /ɚ/"
+		"soundmark": "/ju/"
 	},
 	{
 		"chinese": "你(现在)正在注意这个信息",
@@ -212,7 +212,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我(现在)正在注意这个信息",
@@ -222,7 +222,7 @@
 	{
 		"chinese": "他",
 		"english": "he",
-		"soundmark": "/hi/ /(he，现在时)be is/ /ɪz/"
+		"soundmark": "/hi/"
 	},
 	{
 		"chinese": "他(现在)正在注意这个信息",
@@ -237,7 +237,7 @@
 	{
 		"chinese": "他(现在)没有正在注意这个信息",
 		"english": "he is not paying attention to this information",
-		"soundmark": "/hi/ /ɪz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /(he，过去时)be was/ /wəz/"
+		"soundmark": "/hi/ /ɪz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
 		"chinese": "他(过去)正在注意这个信息",
@@ -597,7 +597,7 @@
 	{
 		"chinese": "正在一起讨论这个计划的所有细节",
 		"english": "be discussing all the details of the plan together",
-		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
 		"chinese": "我们(现在)正在讨论",
@@ -622,7 +622,7 @@
 	{
 		"chinese": "我们(现在)正在一起讨论这个计划的所有的细节",
 		"english": "we are discussing all the details of the plan together",
-		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /(we，过去时)be were/ /wɚ/"
+		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
 		"chinese": "我们(过去)正在一起讨论这个计划的所有的细节",

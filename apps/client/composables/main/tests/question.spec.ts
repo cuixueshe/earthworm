@@ -314,7 +314,7 @@ describe("question", () => {
     expect(preventDefault).toBeCalled();
   });
 
-  it("should back to previous incorrect word ", async () => {
+  it("should back to previous incorrect word", async () => {
     let getInputCursorPosition = () => 0;
     let setInputCursorPosition = () => {};
 
@@ -359,6 +359,46 @@ describe("question", () => {
 
     const submitAnswerCallback = vi.fn();
 
+    handleKeyboardInput(
+      {
+        code: "Space",
+        preventDefault: () => {},
+      } as any as KeyboardEvent,
+      {
+        useSpaceSubmitAnswer: {
+          enable: true,
+          callback: submitAnswerCallback,
+        },
+      }
+    );
+
+    expect(submitAnswerCallback).toBeCalled();
+  });
+
+  it("should submit answer when enable use space and fix the last incorrect word", async () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = vi.fn();
+
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useInput({
+      source: () => "i eat apple",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    const inputValue = "i e apple";
+    getInputCursorPosition.mockReturnValue(inputValue.length);
+    setInputValue(inputValue);
+    submitAnswer(() => {});
+
+    await fixIncorrectWord();
+
+    expect(userInputWords[1].userInput).toBe("")
+    expect(userInputWords[1].isActive).toBe(true);
+
+    getInputCursorPosition.mockReturnValue(2);
+    userInputWords[1].userInput = "eat";
+    
+    const submitAnswerCallback = vi.fn();
     handleKeyboardInput(
       {
         code: "Space",

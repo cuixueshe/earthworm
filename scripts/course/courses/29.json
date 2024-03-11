@@ -7,7 +7,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我在这里",
@@ -132,7 +132,7 @@
 	{
 		"chinese": "我在这里",
 		"english": "I am here",
-		"soundmark": "/aɪ/ /æm/ /hɪr/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
 		"chinese": "我(过去)在这里",
@@ -182,12 +182,12 @@
 	{
 		"chinese": "我注意到那个",
 		"english": "I notice that",
-		"soundmark": "/aɪ/ /ˈnotɪs/ /ðæt/ /(过去)注意到 noticed/ /ˈnotɪst/"
+		"soundmark": "/aɪ/ /ˈnotɪs/ /ðæt/"
 	},
 	{
 		"chinese": "我(过去)注意到那个",
 		"english": "I noticed that",
-		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /(过去)没有 didn't/ /ˈdɪdnt/"
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/"
 	},
 	{
 		"chinese": "我(过去)没有注意到那个",
@@ -252,7 +252,7 @@
 	{
 		"chinese": "这里有错误的某个东西",
 		"english": "there is something wrong here",
-		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/ /(过去)存在 there was/ /ðɛr/ /wəz/"
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
 	},
 	{
 		"chinese": "这里(过去)有错误的某个东西",
@@ -307,7 +307,7 @@
 	{
 		"chinese": "这里有不同的某个东西",
 		"english": "there is something different here",
-		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/ /(过去)存在 there was/ /ðɛr/ /wəz/"
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
 	},
 	{
 		"chinese": "这里(过去)有不同的某个东西",
