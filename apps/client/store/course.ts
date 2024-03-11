@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useUserStore } from "~/store/user";
 import { useCourseProgress } from "~/composables/courses/progress";
+import { useActiveCourseId } from "~/composables/courses/activeCourse";
 
 interface Statement {
   id: number;
@@ -57,8 +58,11 @@ export const useCourseStore = defineStore("course", () => {
     return statementIndex.value + 1 >= currentCourse.value?.statements.length;
   }
 
+  const { updateActiveCourseId } = useActiveCourseId();
+
   function doAgain() {
     resetStatementIndex();
+    updateActiveCourseId(currentCourse.value?.id!);
   }
 
   function checkCorrect(input: string) {

@@ -1,7 +1,7 @@
 import { it, expect, describe, beforeEach } from "vitest";
 import { ACTIVE_COURSE_ID, useActiveCourseId } from "../activeCourse";
 
-describe("auto play sound", () => {
+describe("change active course", () => {
   beforeEach(() => {
     localStorage.removeItem(ACTIVE_COURSE_ID);
   });
