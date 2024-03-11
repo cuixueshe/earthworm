@@ -7,7 +7,7 @@ function saveProgressInLocal(courseId: number, index: number) {
 }
 
 export function useCourseProgress() {
-  async function saveProgress(courseId: number, index: number, total: number) {
+  async function saveProgress(courseId: number, index: number) {
     saveProgressInLocal(courseId, index);
   }
 

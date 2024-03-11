@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { GlobalModule } from '../global/global.mudule';
+import { GlobalModule } from '../global/global.module';
 import { UserModule } from '../user/user.module';
 import { AuthModule } from '../auth/auth.module';
 import { CourseModule } from '../course/course.module';

@@ -1,19 +1,22 @@
 import { DB, DbType } from '../global/providers/db.provider';
 import { eq, asc, gt } from 'drizzle-orm';
 import { statement, course } from '@earthworm/shared';
-import { Injectable, Inject, HttpException, HttpStatus } from '@nestjs/common';
+import {
+  Injectable,
+  Inject,
+  HttpException,
+  HttpStatus,
+  forwardRef,
+} from '@nestjs/common';
 import { UserEntity } from 'src/user/user.decorators';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { RankService } from '../rank/rank.service';
-import { CourseHistoryService } from '../course-history/course-history.service';
+import { GameService } from '../game/game.service';
 
 @Injectable()
 export class CourseService {
   constructor(
     @Inject(DB) private db: DbType,
-    private readonly userProgressService: UserProgressService,
-    private readonly rankService: RankService,
-    private readonly courseHistoryService: CourseHistoryService,
+    @Inject(forwardRef(() => GameService))
+    private readonly gameService: GameService,
   ) {}
 
   async tryCourse() {
@@ -94,10 +97,6 @@ export class CourseService {
   }
 
   async completeCourse(user: UserEntity, courseId: number) {
-    const nextCourse = await this.findNext(courseId);
-    await this.userProgressService.update(user.userId, nextCourse.id);
-    await this.rankService.userFinishCourse(user.userId, user.username);
-    await this.courseHistoryService.setCompletionCount(user.userId, courseId);
-    return nextCourse;
+    return await this.gameService.completeGame(user, courseId);
   }
 }
