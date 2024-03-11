@@ -2,8 +2,7 @@
   <div
     class="course-card"
     :class="{
-      'state-underway': courseState === 'underway',
-      'state-finished': courseState === 'finished',
+      'state-finished': hasFinished,
       'current-card': currentCourse,
     }"
   >
@@ -19,13 +18,11 @@
       this is the course's description
     </p>
 
-    <span class="absolute top-4 right-4 text-xs">{{ progress }}</span>
     <div
-      v-if="!!count"
+      v-if="hasFinished"
       class="tooltip count"
       :class="{
-        'state-underway-count': courseState === 'underway',
-        'state-finished-count': courseState === 'finished',
+        'state-finished-count': hasFinished,
         'current-count': currentCourse,
       }"
       :data-tip="dataTip"
@@ -43,7 +40,6 @@ const props = defineProps<{
   title: string;
   id: number;
   count: number | undefined;
-  progress: string | undefined;
 }>();
 
 const { activeCourseId } = useActiveCourseId();
@@ -52,17 +48,7 @@ const dataTip = computed(
   () => `Congratulations! you've completed the course ${props.count} times.`
 );
 
-const courseState = computed(() => {
-  let state = "unplayed";
-  if (props.progress) {
-    if (props.progress === "100%") {
-      state = "finished";
-    } else {
-      state = "underway";
-    }
-  }
-  return state;
-});
+const hasFinished = computed(() => !!props.count);
 </script>
 
 <style scoped>

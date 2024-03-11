@@ -15,7 +15,6 @@
               :title="course.title"
               :id="course.id"
               :count="course.count"
-              :progress="course.progress"
             />
           </NuxtLink>
         </template>
@@ -42,7 +41,6 @@ async function getCourseHistory() {
   res.forEach((item) => {
     historyMap.set(item.courseId, {
       count: item.completionCount,
-      progress: item.progress,
     });
   });
   return historyMap;

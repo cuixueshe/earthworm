@@ -1,4 +1,4 @@
-import { Controller, Get, UseGuards, Post, Body } from '@nestjs/common';
+import { Controller, Get, UseGuards } from '@nestjs/common';
 import { CourseHistoryService } from './course-history.service';
 import { AuthGuard } from '../auth/auth.guard';
 import { User, UserEntity } from '../user/user.decorators';
@@ -11,15 +11,5 @@ export class CourseHistoryController {
   @Get('')
   courseCompletionCount(@User() user: UserEntity) {
     return this.courseHistoryService.findAll(user);
-  }
-
-  @UseGuards(AuthGuard)
-  @Post('course-progress')
-  async courseProgress(@User() user: UserEntity, @Body() body) {
-    return await this.courseHistoryService.setCourseProgress(
-      user,
-      body.courseId,
-      body.progress,
-    );
   }
 }

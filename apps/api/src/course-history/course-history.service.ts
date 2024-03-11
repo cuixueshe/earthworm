@@ -58,33 +58,4 @@ export class CourseHistoryService {
       .from(courseHistory)
       .where(eq(courseHistory.userId, user.userId));
   }
-
-  async setCourseProgress(
-    user: UserEntity,
-    courseId: number,
-    progress: string,
-  ) {
-    const result = await this.findOne(user.userId, courseId);
-    if (result && result.length) {
-      await this.db
-        .update(courseHistory)
-        .set({
-          progress,
-        })
-        .where(
-          and(
-            eq(courseHistory.userId, user.userId),
-            eq(courseHistory.courseId, courseId),
-          ),
-        );
-    } else {
-      await this.db.insert(courseHistory).values({
-        courseId,
-        userId: user.userId,
-        progress,
-      });
-    }
-
-    return { ...result[0], progress };
-  }
 }

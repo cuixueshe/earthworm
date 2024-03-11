@@ -16,7 +16,6 @@ export interface Course {
   title: string;
   statements: Statement[];
   count?: number;
-  progress?: string;
 }
 
 export const useCourseStore = defineStore("course", () => {
