@@ -8,7 +8,7 @@ import { type DbType, DB } from '../../global/providers/db.provider';
 import { course, statement } from '@earthworm/shared';
 import { HttpException } from '@nestjs/common';
 import { createUser } from '../../../test/fixture/user';
-import { GlobalModule } from '../../global/global.mudule';
+import { GlobalModule } from '../../global/global.module';
 import {
   createFirstCourse,
   createSecondCourse,

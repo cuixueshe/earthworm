@@ -7,7 +7,7 @@ import { Test } from '@nestjs/testing';
 import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { createUser } from '../../../test/fixture/user';
 import { createFirstCourse } from '../../../test/fixture/course';
-import { GlobalModule } from '../../global/global.mudule';
+import { GlobalModule } from '../../global/global.module';
 
 const user = createUser();
 const course = createFirstCourse();
