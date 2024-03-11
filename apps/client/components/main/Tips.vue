@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
+  <div class="absolute left-0 right-0 bottom-[16vh] flex" :class="customStyle">
     <div class="w-[210px] mb-4">
       <button class="tip-btn" @click="playSound">
         ⌃ {{ shortcutKeys.sound }}
@@ -28,7 +28,7 @@ import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useSummary } from "~/composables/main/summary";
 import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
-import { onMounted, computed, onUnmounted } from "vue";
+import { onMounted, computed, onUnmounted, ref } from "vue";
 import { useShortcutKeyMode } from '~/composables/user/shortcutKey';
 
 const { shortcutKeys } = useShortcutKeyMode()
@@ -40,7 +40,19 @@ const toggleTipText = computed(() => {
   return isAnswer() ? "again" : "show answer";
 });
 
+const customStyle = ref('')
+const initStyle = () => {
+  const screen = window.screen
+  const w = screen.availWidth
+  const h = screen.availHeight
+  if (h / w < 0.68) {
+    customStyle.value = 'justify-center'
+  } else {
+    customStyle.value = 'flex-col items-center'
+  }
 
+}
+initStyle()
 function usePlaySound(key: string) {
   const { playSound } = useCurrentStatementEnglishSound();
 
