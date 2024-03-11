@@ -2,18 +2,8 @@ import { fetchCourseProgress } from "~/api/courseHistory";
 
 export const COURSE_PROGRESS = "courseProgress";
 
-async function saveProgressInApi(
-  courseId: number,
-  index: number,
-  total: number
-) {
-  let ratio = index / total;
-  // 如果是0，认定该节课已完成
-  if (ratio == 0) {
-    ratio = 1;
-  }
-  const progressNum = `${parseFloat((ratio * 100).toFixed(2))}%`;
-  await fetchCourseProgress(courseId, progressNum);
+async function saveProgressInApi(courseId: number, index: number) {
+  await fetchCourseProgress(courseId, index);
 }
 
 function saveProgressInLocal(courseId: number, index: number) {
@@ -23,9 +13,9 @@ function saveProgressInLocal(courseId: number, index: number) {
 }
 
 export function useCourseProgress() {
-  async function saveProgress(courseId: number, index: number, total: number) {
+  async function saveProgress(courseId: number, index: number) {
     saveProgressInLocal(courseId, index);
-    await saveProgressInApi(courseId, index, total);
+    await saveProgressInApi(courseId, index);
   }
 
   function loadProgress(courseId: number) {

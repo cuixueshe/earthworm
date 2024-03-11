@@ -19,7 +19,7 @@ export class CourseHistoryController {
     return await this.courseHistoryService.setCourseProgress(
       user,
       body.courseId,
-      body.progress,
+      body.courseIndex,
     );
   }
 }

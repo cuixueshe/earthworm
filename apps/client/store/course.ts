@@ -26,10 +26,6 @@ export const useCourseStore = defineStore("course", () => {
 
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
-  const totalQuestionsCount = computed(() => {
-    return currentCourse.value?.statements.length || 0;
-  });
-
   watchEffect(() => {
     currentStatement.value =
       currentCourse.value?.statements[statementIndex.value];
@@ -38,16 +34,16 @@ export const useCourseStore = defineStore("course", () => {
   watch(
     () => statementIndex.value,
     () => {
-      saveProgress(
-        currentCourse.value?.id!,
-        statementIndex.value,
-        totalQuestionsCount.value
-      );
+      saveProgress(currentCourse.value?.id!, statementIndex.value);
     }
   );
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
+  });
+
+  const totalQuestionsCount = computed(() => {
+    return currentCourse.value?.statements.length || 0;
   });
 
   function toNextStatement() {
@@ -77,7 +73,7 @@ export const useCourseStore = defineStore("course", () => {
     const nextCourse = await fetchCompleteCourse(cId);
     // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
     // 当完成课程的时候并不希望 UI 立刻被重置
-    saveProgress(currentCourse.value?.id!, 0, totalQuestionsCount.value);
+    saveProgress(currentCourse.value?.id!, 0);
     return nextCourse;
   }
 

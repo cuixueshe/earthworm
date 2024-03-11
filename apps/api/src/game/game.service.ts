@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable, forwardRef } from '@nestjs/common';
 import { CourseService } from '../course/course.service';
 import { DB, DbType } from '../global/providers/db.provider';
 import { UserProgressService } from '../user-progress/user-progress.service';
@@ -10,6 +10,7 @@ import { CourseHistoryService } from '../course-history/course-history.service';
 export class GameService {
   constructor(
     @Inject(DB) private db: DbType,
+    @Inject(forwardRef(() => CourseService))
     private readonly courseService: CourseService,
     private readonly userProgressService: UserProgressService,
     private readonly rankService: RankService,

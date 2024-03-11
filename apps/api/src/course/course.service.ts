@@ -1,14 +1,22 @@
 import { DB, DbType } from '../global/providers/db.provider';
 import { eq, asc, gt } from 'drizzle-orm';
 import { statement, course } from '@earthworm/shared';
-import { Injectable, Inject, HttpException, HttpStatus } from '@nestjs/common';
-import { CourseHistoryService } from '../course-history/course-history.service';
+import {
+  Injectable,
+  Inject,
+  HttpException,
+  HttpStatus,
+  forwardRef,
+} from '@nestjs/common';
+import { UserEntity } from 'src/user/user.decorators';
+import { GameService } from '../game/game.service';
 
 @Injectable()
 export class CourseService {
   constructor(
     @Inject(DB) private db: DbType,
-    private readonly courseHistoryService: CourseHistoryService,
+    @Inject(forwardRef(() => GameService))
+    private readonly gameService: GameService,
   ) {}
 
   async tryCourse() {
@@ -86,5 +94,9 @@ export class CourseService {
       .from(statement)
       .where(eq(statement.courseId, courseId))
       .orderBy(asc(statement.order));
+  }
+
+  async completeCourse(user: UserEntity, courseId: number) {
+    return await this.gameService.completeGame(user, courseId);
   }
 }

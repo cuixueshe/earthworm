@@ -1,12 +1,17 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable, Inject, forwardRef } from '@nestjs/common';
 import { DB, DbType } from '../global/providers/db.provider';
 import { courseHistory } from '@earthworm/shared';
 import { eq, and } from 'drizzle-orm';
 import { UserEntity } from 'src/user/user.decorators';
+import { CourseService } from '../course/course.service';
 
 @Injectable()
 export class CourseHistoryService {
-  constructor(@Inject(DB) private db: DbType) {}
+  constructor(
+    @Inject(DB) private db: DbType,
+    @Inject(forwardRef(() => CourseService))
+    private readonly courseService: CourseService,
+  ) {}
 
   async findOne(userId: number, courseId: number) {
     return await this.db
@@ -62,8 +67,15 @@ export class CourseHistoryService {
   async setCourseProgress(
     user: UserEntity,
     courseId: number,
-    progress: string,
+    courseIndex: number,
   ) {
+    const total = await this.courseService.findAll();
+    let ratio = courseIndex / total.length;
+    // 如果是0，认定该节课已完成
+    if (ratio == 0) {
+      ratio = 1;
+    }
+    const progress = `${parseFloat((ratio * 100).toFixed(2))}%`;
     const result = await this.findOne(user.userId, courseId);
     if (result && result.length) {
       await this.db
