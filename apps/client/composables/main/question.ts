@@ -62,6 +62,7 @@ export function useInput({
   function setupUserInputWords() {
     watchEffect(() => {
       const english = source();
+      userInputWords.length = 0;
       english
         .split(separator)
         .map(createWord)
@@ -180,12 +181,12 @@ export function useInput({
     updateActiveWord(word.start);
   }
 
-  function submitAnswer(correctCallback: () => void) {
+  function submitAnswer(correctCallback: () => void, reset = false) {
     if (mode === Mode.Fix) return;
     resetAllWordActive();
     markIncorrectWord();
 
-    if (checkWordCorrect()) {
+    if (checkWordCorrect() || reset) {
       mode = Mode.Input;
       correctCallback();
       inputValue.value = "";
@@ -248,8 +249,11 @@ export function useInput({
     }
   }
 
-  function checkSpaceSubmitAnswer (e: KeyboardEvent, useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined) {
-    e.preventDefault()
+  function checkSpaceSubmitAnswer(
+    e: KeyboardEvent,
+    useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined
+  ) {
+    e.preventDefault();
     if (useSpaceSubmitAnswer?.enable) {
       submitAnswer(useSpaceSubmitAnswer.callback);
     }
@@ -270,7 +274,6 @@ export function useInput({
       e.preventDefault();
       return;
     }
-
 
     // 校验正常输入时最后一个单词空格提交
     if (e.code === "Space" && lastWordIsActive()) {

@@ -84,6 +84,7 @@ function useDoAgain() {
 
   function handleTipConfirm() {
     coursesStore.doAgain();
+    courseStore.resetInputValue()
     showQuestion();
   }
 

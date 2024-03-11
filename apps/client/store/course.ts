@@ -20,7 +20,7 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
-
+  let resetInputValue = () => {};
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
@@ -37,7 +37,7 @@ export const useCourseStore = defineStore("course", () => {
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
-  })
+  });
 
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
@@ -79,8 +79,8 @@ export const useCourseStore = defineStore("course", () => {
 
     const userStore = useUserStore();
     if (!userStore.user) {
-      let course = await fetchTryCourse()
-      currentCourse.value = course
+      let course = await fetchTryCourse();
+      currentCourse.value = course;
     } else {
       let course = await fetchCourse(courseId);
       currentCourse.value = course;
@@ -101,6 +101,7 @@ export const useCourseStore = defineStore("course", () => {
     totalQuestionsCount,
     setup,
     doAgain,
+    resetInputValue,
     isAllDone,
     checkCorrect,
     completeCourse,
