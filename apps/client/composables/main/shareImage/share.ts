@@ -10,9 +10,11 @@ import {
   fontEn,
   fontZh,
 } from "./helper";
+import { tpl_2 } from "./imageTtemplates/tpl_2";
 
 export enum ShareImageTemplate {
   TPL_1 = "tpl_1",
+  TPL_2 = "tpl_2",
 }
 
 interface ShareImageTemplateData {
@@ -26,6 +28,7 @@ export const imageTtemplates: Record<
   (data: ShareImageTemplateData) => Partial<SatoriNode>
 > = {
   [ShareImageTemplate.TPL_1]: tpl_1,
+  [ShareImageTemplate.TPL_2]: tpl_2,
 };
 
 const shareModalVisible = ref(false);
@@ -65,14 +68,20 @@ const generateConfig = async () => {
   };
 };
 
+export interface GalleryItem {
+  src: string;
+  canvasEl: HTMLCanvasElement;
+}
+
 export function useGenerateShareImage() {
   const { zhSentence, enSentence } = useDailySentence();
 
-  const shareImageSrc = ref("");
+  const currImageSrc = ref("");
+  const currImageIndex = ref(0)
   const format = "jpg";
   const fullFormat = `image/${format}`;
+  const galleryImgs = ref<GalleryItem[]>([]);
 
-  const canvasEl = initCanvas();
 
   const chosenTemplate = (
     templateKey: ShareImageTemplate,
@@ -85,9 +94,20 @@ export function useGenerateShareImage() {
     });
   };
 
-  const generateImage = async (courseNum: string) => {
+  const generateGalleryImage = async (courseNum: string) => {
+    Object.values(ShareImageTemplate).forEach(async (template, index) => {
+      generateImage(courseNum, template, index);
+    })
+  }
+
+  const generateImage = async (courseNum: string, template: ShareImageTemplate, index: number) => {
+    const canvasEl = initCanvas();
+    galleryImgs.value[index] = {
+      src: "",
+      canvasEl
+    };
     const svg = await satori(
-      chosenTemplate(ShareImageTemplate.TPL_1, courseNum),
+      chosenTemplate(template, courseNum),
       await generateConfig()
     ).catch((e) => {
       console.error("Error generating SVG");
@@ -95,20 +115,38 @@ export function useGenerateShareImage() {
       return Promise.reject(e);
     });
 
-    shareImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    // currImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    galleryImgs.value[index].src = await convertSVGtoImg(svg, canvasEl, fullFormat);
+
+    if (index === 0) {
+      currImageSrc.value = galleryImgs.value[index].src;
+    }
   };
 
   const clearShareImageSrc = () => {
-    shareImageSrc.value = "";
-    clearCanvas(canvasEl);
+    currImageSrc.value = "";
+    galleryImgs.value = [];
+    currImageIndex.value = 0;
   };
 
-  const copyShareImage = () => copyImage(canvasEl, fullFormat);
+  const copyShareImage = (index: number) => copyImage(galleryImgs.value[index].canvasEl, fullFormat);
+
+  const handleSelectImage = (index: number) => {
+    const src = galleryImgs.value[index].src;
+    if (!src) 
+      return
+    currImageSrc.value = src
+    currImageIndex.value = index;
+  }
 
   return {
-    shareImageSrc,
+    shareImageSrc: currImageSrc,
     generateImage,
+    generateGalleryImage,
     copyShareImage,
+    galleryImgs,
     clearShareImageSrc,
+    handleSelectImage,
+    currImageIndex
   };
 }

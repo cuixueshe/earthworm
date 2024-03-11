@@ -47,10 +47,16 @@ export const clearCanvas = (canvasEl: HTMLCanvasElement) => {
   ctx?.clearRect(0, 0, canvasEl.width, canvasEl.height);
 }
 
-export const fontEn = () => fetch(new URL('~/assets/fonts/EBGaramond-BoldItalic.ttf', import.meta.url)).then(
+export const fontEn = () => fetch(new URL('/public/fonts/EBGaramond-BoldItalic.ttf', import.meta.url), {cache: 'force-cache'}).then(
   (res) => res.arrayBuffer(),
 );
 
-export const fontZh = () => fetch(new URL('~/assets/fonts/nzgrKangxi.ttf', import.meta.url)).then(
+export const fontZh = () => fetch(new URL('/public/fonts/nzgrKangxi.ttf', import.meta.url), {cache: 'force-cache'} ).then(
   (res) => res.arrayBuffer(),
 )
+
+// export const fontLoder = async (url) => {
+//   const loader = new FontFace("EBGaramond-BoldItalic", `url(${url})`, {});
+//   const data = await loader.load();
+
+// }
