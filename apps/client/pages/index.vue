@@ -68,7 +68,7 @@
               <p class="py-1">
                 点击按钮
                 <button class="instruction-btn">next</button>
-                <span class="text-gray-500">(或快捷键 Ctrl+;)</span>
+                <span class="text-gray-500">(或快捷键 Enter)</span>
                 开始下一个，冲冲冲霸占榜首。
               </p>
 

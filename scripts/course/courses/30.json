@@ -357,12 +357,12 @@
 	{
 		"chinese": "你注意到",
 		"english": "you notice",
-		"soundmark": "/ju/ /ˈnotɪs/ /（过去）注意到 noticed/ /ˈnotɪst/"
+		"soundmark": "/ju/ /ˈnotɪs/"
 	},
 	{
 		"chinese": "你（过去）注意到",
 		"english": "you noticed",
-		"soundmark": "/ju/ /ˈnotɪst/ /（过去）没有 didn't/ /ˈdɪdnt/"
+		"soundmark": "/ju/ /ˈnotɪst/"
 	},
 	{
 		"chinese": "你（过去）没有注意到",
@@ -487,7 +487,7 @@
 	{
 		"chinese": "没有东西比我们的友谊是更重要的",
 		"english": "nothing is more important than our friendship",
-		"soundmark": "/'nʌθɪŋ/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /'aʊɚ/ /ˈfrɛndʃɪp/ /A比B是更重要的 A is more important than B/ /e/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /bi/"
+		"soundmark": "/'nʌθɪŋ/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /'aʊɚ/ /ˈfrɛndʃɪp/"
 	},
 	{
 		"chinese": "家庭",
@@ -587,21 +587,21 @@
 	{
 		"chinese": "说",
 		"english": "to say",
-		"soundmark": "/tə/ /se/"
+		"soundmark": "/tə/ /seɪ/"
 	},
 	{
 		"chinese": "你说",
 		"english": "you say",
-		"soundmark": "/ju/ /se/"
+		"soundmark": "/ju/ /seɪ/"
 	},
 	{
 		"chinese": "你说的内容",
 		"english": "what you say",
-		"soundmark": "/wɑt/ /ju/ /se/ /A比B是更重要的 A is more important than B/ /e/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /bi/"
+		"soundmark": "/wɑt/ /ju/ /seɪ/"
 	},
 	{
 		"chinese": "你做的内容比你说的内容是更重要的",
 		"english": "what you do is more important than what you say",
-		"soundmark": "/wɑt/ /ju/ /du/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /wɑt/ /ju/ /se/"
+		"soundmark": "/wɑt/ /ju/ /du/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /wɑt/ /ju/ /seɪ/"
 	}
 ]

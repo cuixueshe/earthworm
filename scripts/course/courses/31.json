@@ -12,17 +12,17 @@
 	{
 		"chinese": "更重要的",
 		"english": "more important",
-		"soundmark": "/mɔr/ /ɪm'pɔrtnt/ /A是更重要的 A is more important/ /e/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/"
+		"soundmark": "/mɔr/ /ɪm'pɔrtnt/"
 	},
 	{
 		"chinese": "比",
 		"english": "than",
-		"soundmark": "/ðæn/ /A比B是更重要的 A is more important than B/ /e/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /bi/"
+		"soundmark": "/ðæn/"
 	},
 	{
 		"chinese": "困难的",
 		"english": "difficult",
-		"soundmark": "/'dɪfɪkəlt/ /A比B是更难的 A is more difficult than B/ /e/ /ɪz/ /mɔr/ /'dɪfɪkəlt/ /ðæn/ /bi/"
+		"soundmark": "/'dɪfɪkəlt/"
 	},
 	{
 		"chinese": "中文",

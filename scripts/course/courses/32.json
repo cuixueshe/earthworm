@@ -92,7 +92,7 @@
 	{
 		"chinese": "迈克尔杰克逊是在世界上最有名的歌手",
 		"english": "Michael Jackson is the most famous singer in the world",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/ /（过去）是 was/ /wəz/"
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
 		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手",
@@ -161,8 +161,8 @@
 	},
 	{
 		"chinese": "蒙娜丽莎是最有名的画",
-		"english": "The Mona Lisa is the most",
-		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /ðə/ /most/ /'feməs/ /famous painting/ /'pentɪŋ/"
+		"english": "The Mona Lisa is the most famous painting",
+		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /ðə/ /most/ /'feməs/ /'pentɪŋ/"
 	},
 	{
 		"chinese": "在世界上",
@@ -187,7 +187,7 @@
 	{
 		"chinese": "最有名的画（复数）",
 		"english": "the most famous paintings",
-		"soundmark": "/ðə/ /most/ /'feməs/ /'pentɪŋz/ /......之一 one of/ /wʌn/ /əv/"
+		"soundmark": "/ðə/ /most/ /'feməs/ /'pentɪŋz/"
 	},
 	{
 		"chinese": "最有名的画（复数）之一",
@@ -327,7 +327,7 @@
 	{
 		"chinese": "地标（复数）",
 		"english": "landmarks",
-		"soundmark": "/ˈlændmɑrks/ /......之一 one of/ /wʌn/ /əv/"
+		"soundmark": "/ˈlændmɑrks/"
 	},
 	{
 		"chinese": "最有名的地标之一",
@@ -347,7 +347,7 @@
 	{
 		"chinese": "更好的",
 		"english": "better",
-		"soundmark": "/ˈbɛtɚ/ /A是更好的 A is better/ /e/ /ɪz/ /ˈbɛtɚ/ /A比B是更好的 A is better than B/ /e/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /bi/"
+		"soundmark": "/ˈbɛtɚ/"
 	},
 	{
 		"chinese": "中文",
@@ -377,7 +377,7 @@
 	{
 		"chinese": "我的英文",
 		"english": "my English",
-		"soundmark": "/maɪ/ /ˈɪŋɡlɪʃ/ /A比B是更好的 A is better than B/ /e/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /bi/"
+		"soundmark": "/maɪ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
 		"chinese": "你的中文比我的英文是更好的",
@@ -412,7 +412,7 @@
 	{
 		"chinese": "完成比完美是更好的",
 		"english": "done is better than perfect",
-		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'pɝfɪkt/ /A比B是更好的 A is better than B/ /e/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /bi/"
+		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'pɝfɪkt/"
 	},
 	{
 		"chinese": "夏天",
@@ -447,7 +447,7 @@
 	{
 		"chinese": "没有东西",
 		"english": "nothing",
-		"soundmark": "/'nʌθɪŋ/ /A比B是更好的 A is better than B/ /'sʌmθɪŋ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'nʌθɪŋ/"
+		"soundmark": "/'nʌθɪŋ/"
 	},
 	{
 		"chinese": "某个东西比没有东西是更好的",
@@ -557,7 +557,7 @@
 	{
 		"chinese": "我最好的朋友们",
 		"english": "my best friends",
-		"soundmark": "/maɪ/ /bɛst/ /frendz/ /......之一 one of/ /wʌn/ /əv/"
+		"soundmark": "/maɪ/ /bɛst/ /frendz/"
 	},
 	{
 		"chinese": "我最好的朋友们之一",
@@ -592,7 +592,7 @@
 	{
 		"chinese": "我尽我的最大努力",
 		"english": "I do my best",
-		"soundmark": "/aɪ/ /du/ /maɪ/ /bɛst/ /（过去）做 did/ /dɪd/"
+		"soundmark": "/aɪ/ /du/ /maɪ/ /bɛst/"
 	},
 	{
 		"chinese": "我（过去）尽我最大努力",

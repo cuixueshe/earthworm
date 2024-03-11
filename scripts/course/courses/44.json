@@ -27,7 +27,7 @@
 	{
 		"chinese": "找到(ed形式)",
 		"english": "found",
-		"soundmark": "/faʊnd/ /(已经)找到 have found/ /hæv/ /faʊnd/"
+		"soundmark": "/faʊnd/"
 	},
 	{
 		"chinese": "我们(已经)找到",
@@ -297,7 +297,7 @@
 	{
 		"chinese": "尝试(ed形式)",
 		"english": "tried",
-		"soundmark": "/traɪd/ /(已经)尝试了 have tried/ /hæv/ /traɪd/"
+		"soundmark": "/traɪd/"
 	},
 	{
 		"chinese": "我们(已经)尝试了",
@@ -327,7 +327,7 @@
 	{
 		"chinese": "见(ed形式)",
 		"english": "met",
-		"soundmark": "/mɛt/ /(已经)见过 have met/ /hæv/ /mɛt/"
+		"soundmark": "/mɛt/"
 	},
 	{
 		"chinese": "他们(已经)见过",
