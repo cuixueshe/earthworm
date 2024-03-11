@@ -1,17 +1,12 @@
-import { Injectable, Inject, forwardRef } from '@nestjs/common';
+import { Injectable, Inject } from '@nestjs/common';
 import { DB, DbType } from '../global/providers/db.provider';
 import { courseHistory } from '@earthworm/shared';
 import { eq, and } from 'drizzle-orm';
 import { UserEntity } from 'src/user/user.decorators';
-import { CourseService } from '../course/course.service';
 
 @Injectable()
 export class CourseHistoryService {
-  constructor(
-    @Inject(DB) private db: DbType,
-    @Inject(forwardRef(() => CourseService))
-    private readonly courseService: CourseService,
-  ) {}
+  constructor(@Inject(DB) private db: DbType) {}
 
   async findOne(userId: number, courseId: number) {
     return await this.db

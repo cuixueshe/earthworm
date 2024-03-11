@@ -1,12 +1,13 @@
-import { Module, forwardRef } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { CourseService } from './course.service';
 import { CourseController } from './course.controller';
 import { GlobalModule } from '../global/global.module';
-import { GameModule } from '../game/game.module';
+import { UserProgressService } from '../user-progress/user-progress.service';
+import { RankService } from '../rank/rank.service';
 
 @Module({
-  imports: [GlobalModule, forwardRef(() => GameModule)],
-  providers: [CourseService],
+  imports: [GlobalModule],
+  providers: [CourseService, UserProgressService, RankService],
   controllers: [CourseController],
   exports: [CourseService],
 })
