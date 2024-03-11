@@ -17,7 +17,7 @@ CREATE TABLE `statements` (
 --> statement-breakpoint
 CREATE TABLE `users` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`phone` varchar(11) NOT NULL,
+	`phone` varchar(20) NOT NULL,
 	`name` text NOT NULL,
 	`password` text NOT NULL,
 	`created_at` timestamp NOT NULL DEFAULT (now()),
