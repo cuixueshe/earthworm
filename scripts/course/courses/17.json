@@ -97,7 +97,7 @@
 	{
 		"chinese": "我们",
 		"english": "we",
-		"soundmark": "/wi/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/"
 	},
 	{
 		"chinese": "我们(现在)正在购物",
@@ -122,7 +122,7 @@
 	{
 		"chinese": "我们现在正在在超市购物",
 		"english": "we are shopping at the supermarket now",
-		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /naʊ/ /(we，过去时)be were/ /wɚ/"
+		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /naʊ/"
 	},
 	{
 		"chinese": "我们(过去)正在在超市购物",
@@ -132,12 +132,12 @@
 	{
 		"chinese": "打电话",
 		"english": "to call",
-		"soundmark": "/tə/ /kɔl/ /(过去)打电话 called/ /kɔld/"
+		"soundmark": "/tə/ /kɔl/"
 	},
 	{
 		"chinese": "我",
 		"english": "me",
-		"soundmark": "/mi/ /(过去)打电话给我 called me/ /kɔld/ /mi/"
+		"soundmark": "/mi/"
 	},
 	{
 		"chinese": "你(过去)打电话给我",
@@ -187,7 +187,7 @@
 	{
 		"chinese": "我们(过去)正在购物",
 		"english": "we were shopping",
-		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/"
 	},
 	{
 		"chinese": "我们(现在)正在购物",
@@ -302,7 +302,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我(现在)正在等待",
@@ -357,7 +357,7 @@
 	{
 		"chinese": "我现在在公交车站正在为了我的朋友等待",
 		"english": "I am waiting for my friend at the bus stop now",
-		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /naʊ/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /naʊ/"
 	},
 	{
 		"chinese": "我在公交车站(过去)正在为了我的朋友等待",
@@ -452,7 +452,7 @@
 	{
 		"chinese": "我(过去)正在为了我的朋友等待",
 		"english": "I was waiting for my friend",
-		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
 		"chinese": "我(现在)正在为了我的朋友等待",
@@ -792,7 +792,7 @@
 	{
 		"chinese": "问题",
 		"english": "that question",
-		"soundmark": "/ðæt/ /'kwɛstʃən/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/ðæt/ /'kwɛstʃən/"
 	},
 	{
 		"chinese": "我(过去)正在等你问我那个问题",

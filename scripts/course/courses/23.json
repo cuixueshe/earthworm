@@ -257,7 +257,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我(现在)正在操作",
@@ -382,7 +382,7 @@
 	{
 		"chinese": "他们",
 		"english": "they",
-		"soundmark": "/ðe/ /(they，现在时)be are/ /ɚ/"
+		"soundmark": "/ðe/"
 	},
 	{
 		"chinese": "他们(现在)正在处理",
@@ -437,7 +437,7 @@
 	{
 		"chinese": "他们",
 		"english": "they",
-		"soundmark": "/ðe/ /(they，现在时)be are/ /ɚ/"
+		"soundmark": "/ðe/"
 	},
 	{
 		"chinese": "他们(现在)正在面对",

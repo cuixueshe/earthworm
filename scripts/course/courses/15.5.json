@@ -57,17 +57,17 @@
 	{
 		"chinese": "我在厨房里（现在）正在吃鸡蛋",
 		"english": "I am eating eggs in the kitchen",
-		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/ /（I，现在时）be am/ /æm/ /（I，过去时）be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
 		"chinese": "我在厨房里（过去）正在吃鸡蛋",
 		"english": "I was eating eggs in the kitchen",
-		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/ /（you，现在时）be are/ /ɚ/"
+		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
 		"chinese": "你在厨房里（现在）正在吃鸡蛋",
 		"english": "you are eating eggs in the kitchen",
-		"soundmark": "/ju/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/ /（you，过去时）be were/ /wɚ/"
+		"soundmark": "/ju/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
 		"chinese": "你在厨房里（过去）正在吃鸡蛋",
@@ -77,12 +77,12 @@
 	{
 		"chinese": "他们",
 		"english": "they",
-		"soundmark": "/ðe/ /（they，现在时）be are/ /ɚ/"
+		"soundmark": "/ðe/"
 	},
 	{
 		"chinese": "他们在厨房里（现在）正在吃鸡蛋",
 		"english": "they are eating eggs in the kitchen",
-		"soundmark": "/ðe/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/ /（they，过去时）be were/ /wɚ/"
+		"soundmark": "/ðe/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
 		"chinese": "他们在厨房里（过去）正在吃鸡蛋",
@@ -117,7 +117,7 @@
 	{
 		"chinese": "他们",
 		"english": "they",
-		"soundmark": "/ðe/ /（they，现在时）be are/ /ɚ/"
+		"soundmark": "/ðe/"
 	},
 	{
 		"chinese": "他们（现在）正在喝茶",
@@ -217,12 +217,12 @@
 	{
 		"chinese": "正在教我们如何说英语",
 		"english": "teaching us how to speak English",
-		"soundmark": "/'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/ /（he，现在时）be is/ /ɪz/"
+		"soundmark": "/'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
 		"chinese": "星荣正在教我们如何说英语",
 		"english": "Xingrong is teaching us how to speak English",
-		"soundmark": "/ɪz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/ /（he，过去时）be was/ /wəz/"
+		"soundmark": "/ɪz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
 		"chinese": "星荣（过去）正在教我们如何说英语",
@@ -252,7 +252,7 @@
 	{
 		"chinese": "正在学习英语",
 		"english": "learning English",
-		"soundmark": "/'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /（I，现在时）be am/ /æm/"
+		"soundmark": "/'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
 		"chinese": "我正在学习英语",
@@ -312,7 +312,7 @@
 	{
 		"chinese": "我正在通过观看他的视频的方式学习英语",
 		"english": "I am learning English by watching his videos",
-		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/ /（I，过去时）be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
 		"chinese": "我（过去）正在通过观看他的视频的方式学习英语",
@@ -372,12 +372,12 @@
 	{
 		"chinese": "正在从学校走路回家",
 		"english": "walking home from school",
-		"soundmark": "/'wɔkɪŋ/ /hom/ /frʌm/ /skul/ /（I，现在时）be am/ /æm/"
+		"soundmark": "/'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
 		"chinese": "我正在从学校走路回家",
 		"english": "I am walking home from school",
-		"soundmark": "/aɪ/ /æm/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/ /（I，过去时）be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
 		"chinese": "我（过去）正在从学校走路回家",
@@ -407,7 +407,7 @@
 	{
 		"chinese": "遇见一个老朋友",
 		"english": "to meet an old friend",
-		"soundmark": "/tə/ /mit/ /ən/ /old/ /frɛnd/ /（过去）遇见 met/ /mɛt/ /（过去）遇见一个老朋友 met an old friend/ /mɛt/ /ən/ /old/ /frɛnd/"
+		"soundmark": "/tə/ /mit/ /ən/ /old/ /frɛnd/"
 	},
 	{
 		"chinese": "我（过去）遇见一个老朋友",
@@ -462,12 +462,12 @@
 	{
 		"chinese": "正在在卧室里睡觉",
 		"english": "sleeping in the bedroom",
-		"soundmark": "/ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/ /（I，现在时）be am/ /æm/"
+		"soundmark": "/ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
 		"chinese": "我正在在卧室里睡觉",
 		"english": "I am sleeping in the bedroom",
-		"soundmark": "/aɪ/ /æm/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/ /（I，过去时）be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
 		"chinese": "我（过去）正在在卧室里睡觉",
@@ -482,7 +482,7 @@
 	{
 		"chinese": "打电话给我",
 		"english": "to call me",
-		"soundmark": "/tə/ /kɔl/ /mi/ /（过去）打电话 called/ /kɔld/ /（过去）打电话给我 called me/ /kɔld/ /mi/"
+		"soundmark": "/tə/ /kɔl/ /mi/"
 	},
 	{
 		"chinese": "她",
@@ -537,12 +537,12 @@
 	{
 		"chinese": "正在弹钢琴",
 		"english": "playing the piano",
-		"soundmark": "/pleɪŋ/ /ðə/ /pɪ'æno/ /（她，现在时）be is/ /ɪz/"
+		"soundmark": "/pleɪŋ/ /ðə/ /pɪ'æno/"
 	},
 	{
 		"chinese": "她正在弹钢琴",
 		"english": "she is playing the piano",
-		"soundmark": "/ʃi/ /ɪz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /（她，过去时）be was/ /wəz/"
+		"soundmark": "/ʃi/ /ɪz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
 	},
 	{
 		"chinese": "她（过去）正在弹钢琴",

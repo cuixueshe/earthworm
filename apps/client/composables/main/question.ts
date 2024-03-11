@@ -153,6 +153,11 @@ export function useInput({
     }
   }
 
+  // 当前编辑的单词是否为最后一个错误单词
+  function isLastIncorrectWord() {
+    return !findNextIncorrectWordNew();
+  }
+
   function getFirstIncorrectWord() {
     return userInputWords.find((w) => w.incorrect);
   }
@@ -243,6 +248,13 @@ export function useInput({
     }
   }
 
+  function checkSpaceSubmitAnswer (e: KeyboardEvent, useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined) {
+    e.preventDefault()
+    if (useSpaceSubmitAnswer?.enable) {
+      submitAnswer(useSpaceSubmitAnswer.callback);
+    }
+  }
+
   function handleKeyboardInput(
     e: KeyboardEvent,
     options: {
@@ -259,11 +271,19 @@ export function useInput({
       return;
     }
 
+
+    // 校验正常输入时最后一个单词空格提交
     if (e.code === "Space" && lastWordIsActive()) {
-      e.preventDefault();
-      if (options.useSpaceSubmitAnswer?.enable) {
-        submitAnswer(options.useSpaceSubmitAnswer.callback);
-      }
+      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
+      return;
+    }
+
+    if (
+      e.code === "Space" &&
+      mode === Mode.Fix_Input &&
+      isLastIncorrectWord()
+    ) {
+      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
       return;
     }
 

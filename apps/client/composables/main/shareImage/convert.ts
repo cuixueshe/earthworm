@@ -35,9 +35,3 @@ export function convertTitleToNumber(title: string): string {
 
   return result.join(" . ");
 }
-
-console.log(convertTitleToNumber("第二十.五课")); // 应输出 "20・5"
-console.log(convertTitleToNumber("第五.五课")); // 应输出 "5・5"
-console.log(convertTitleToNumber("第十五课")); // 应输出 "15"
-console.log(convertTitleToNumber("第十课")); // 应输出 "10"
-console.log(convertTitleToNumber("第十.五课")); // 应输出 "25"

@@ -52,7 +52,7 @@
 	{
 		"chinese": "我们不想邀请她参加聚会",
 		"english": "we don't want to invite her to join the party",
-		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
 		"chinese": "我们（过去）想要邀请她参加聚会",
@@ -87,7 +87,7 @@
 	{
 		"chinese": "我们经常邀请她参加聚会",
 		"english": "we often invite her to join the party",
-		"soundmark": "/wi/ /'ɔfn/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /（过去）邀请 invited/ /ɪn'vaɪtɪd/"
+		"soundmark": "/wi/ /'ɔfn/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
 		"chinese": "我们（过去）邀请她参加聚会",
@@ -122,7 +122,7 @@
 	{
 		"chinese": "她想要加入我们",
 		"english": "she wants to join us",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /dʒɔɪn/ /ʌs/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
 		"chinese": "她（过去）想要加入我们",
@@ -172,7 +172,7 @@
 	{
 		"chinese": "拒绝",
 		"english": "to refuse",
-		"soundmark": "/tə/ /ri'fjuz/ /（过去）拒绝 refused/ /ri'fjuzd/"
+		"soundmark": "/tə/ /ri'fjuz/"
 	},
 	{
 		"chinese": "她（过去）拒绝",
@@ -217,7 +217,7 @@
 	{
 		"chinese": "她有足够的时间",
 		"english": "she has enough time",
-		"soundmark": "/ʃi/ /hæz/ /ɪ'nʌf/ /taɪm/ /（过去）拥有 had/ /hæd/"
+		"soundmark": "/ʃi/ /hæz/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
 		"chinese": "她（过去）有足够的时间",
@@ -272,7 +272,7 @@
 	{
 		"chinese": "他拒绝承担责任",
 		"english": "he refuses to accept the responsibility",
-		"soundmark": "/hi/ /ri'fjuzɪz/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/ /（过去）拒绝 refused/ /ri'fjuzd/"
+		"soundmark": "/hi/ /ri'fjuzɪz/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
 		"chinese": "他（过去）拒绝承担责任",
@@ -347,7 +347,7 @@
 	{
 		"chinese": "我真的不想学习如何开车",
 		"english": "I really don't want to learn how to drive",
-		"soundmark": "/aɪ/ /'rili/ /dont/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/aɪ/ /'rili/ /dont/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
 		"chinese": "我真的（过去）想要学习如何开车",
@@ -472,7 +472,7 @@
 	{
 		"chinese": "我只是想要完成我的工作",
 		"english": "I just want to finish my work",
-		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
 		"chinese": "我只是（过去）想要完成我的工作",
@@ -547,7 +547,7 @@
 	{
 		"chinese": "我不想看那个电影",
 		"english": "I don't want to watch the movie",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /wɔtʃ/ /ðə/ /'muvi/ /（过去）想要 wanted/ /wɑntɪd/"
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /wɔtʃ/ /ðə/ /'muvi/"
 	},
 	{
 		"chinese": "我（过去）想要看一个电影",

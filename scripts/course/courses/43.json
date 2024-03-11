@@ -52,7 +52,7 @@
 	{
 		"chinese": "我的车被清洗了",
 		"english": "my car is washed",
-		"soundmark": "/maɪ/ /kɑr/ /ɪz/ /wɑʃt/ /(已经)洗完了 have washed/ /hæv/ /wɑʃt/"
+		"soundmark": "/maɪ/ /kɑr/ /ɪz/ /wɑʃt/"
 	},
 	{
 		"chinese": "我(已经)洗完了我的车",
@@ -142,7 +142,7 @@
 	{
 		"chinese": "去(ed形式)",
 		"english": "gone",
-		"soundmark": "/ɡɔn/ /(已经)去了 have gone/ /hæv/ /ɡɔn/"
+		"soundmark": "/ɡɔn/"
 	},
 	{
 		"chinese": "他们(已经)去了",
@@ -162,12 +162,12 @@
 	{
 		"chinese": "读(ed形式)",
 		"english": "read",
-		"soundmark": "/rɛd/ /(已经)读过 have read/ /hæv/ /rɛd/"
+		"soundmark": "/rid/"
 	},
 	{
 		"chinese": "我(已经)读过",
 		"english": "I have read",
-		"soundmark": "/aɪ/ /hæv/ /rɛd/"
+		"soundmark": "/aɪ/ /hæv/ /rid/"
 	},
 	{
 		"chinese": "那本书",
@@ -177,7 +177,7 @@
 	{
 		"chinese": "我(已经)读过那本书",
 		"english": "I have read that book",
-		"soundmark": "/aɪ/ /hæv/ /rɛd/ /ðæt/ /bʊk/"
+		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/"
 	},
 	{
 		"chinese": "次",
@@ -197,7 +197,7 @@
 	{
 		"chinese": "我(已经)读过那本书两次了",
 		"english": "I have read that book twice",
-		"soundmark": "/aɪ/ /hæv/ /rɛd/ /ðæt/ /bʊk/ /twaɪs/"
+		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/ /twaɪs/"
 	},
 	{
 		"chinese": "学到",
@@ -207,7 +207,7 @@
 	{
 		"chinese": "学到(ed形式)",
 		"english": "learned",
-		"soundmark": "/lɝnd/ /(已经)学到了 have learned/ /hæv/ /lɝnd/"
+		"soundmark": "/lɝnd/"
 	},
 	{
 		"chinese": "我(已经)学到了",
@@ -262,7 +262,7 @@
 	{
 		"chinese": "提高(ed形式)",
 		"english": "improved",
-		"soundmark": "/ɪmˈpruvd/ /(已经)提高了 have improved/ /hæv/ /ɪmˈpruvd/"
+		"soundmark": "/ɪmˈpruvd/"
 	},
 	{
 		"chinese": "你(已经)提高了",
@@ -307,7 +307,7 @@
 	{
 		"chinese": "参观(ed形式)",
 		"english": "visited",
-		"soundmark": "/'vɪzɪtɪd/ /(已经)参观过 have visited/ /hæv/ /'vɪzɪtɪd/"
+		"soundmark": "/'vɪzɪtɪd/"
 	},
 	{
 		"chinese": "我(已经)参观过",
@@ -402,7 +402,7 @@
 	{
 		"chinese": "教(ed形式)",
 		"english": "taught",
-		"soundmark": "/tɔt/ /(已经)教 have taught/ /hæv/ /tɔt/"
+		"soundmark": "/tɔt/"
 	},
 	{
 		"chinese": "我(已经)教了",
