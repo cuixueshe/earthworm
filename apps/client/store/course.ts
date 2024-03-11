@@ -37,7 +37,7 @@ export const useCourseStore = defineStore("course", () => {
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
-  })
+  });
 
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
@@ -52,7 +52,7 @@ export const useCourseStore = defineStore("course", () => {
 
   function isAllDone() {
     // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
-    return statementIndex.value + 1 >= currentCourse.value?.statements.length;
+    return statementIndex.value + 1 >= totalQuestionsCount.value;
   }
 
   function doAgain() {
@@ -79,8 +79,8 @@ export const useCourseStore = defineStore("course", () => {
 
     const userStore = useUserStore();
     if (!userStore.user) {
-      let course = await fetchTryCourse()
-      currentCourse.value = course
+      let course = await fetchTryCourse();
+      currentCourse.value = course;
     } else {
       let course = await fetchCourse(courseId);
       currentCourse.value = course;

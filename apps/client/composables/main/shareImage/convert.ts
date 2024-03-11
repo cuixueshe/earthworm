@@ -1,7 +1,7 @@
 export function convertTitleToNumber(title: string): string {
   title = title.replace(/第|课/g, "");
 
-  const numMap = {
+  const numMap: Record<string, number> = {
     一: 1,
     二: 2,
     三: 3,
