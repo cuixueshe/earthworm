@@ -17,10 +17,12 @@ export enum ShareImageTemplate {
   TPL_2 = "tpl_2",
 }
 
-interface ShareImageTemplateData {
+export interface ShareImageTemplateData {
   courseNum: string;
   zhSentence: string;
   enSentence: string;
+  userName: string,
+  dateStr: string,
 }
 
 export const imageTtemplates: Record<
@@ -85,29 +87,33 @@ export function useGenerateShareImage() {
 
   const chosenTemplate = (
     templateKey: ShareImageTemplate,
-    courseNum: string
+    courseNum: string,
+    userName: string,
+    dateStr: string
   ) => {
     return imageTtemplates[templateKey]({
       courseNum,
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
+      userName,
+      dateStr
     });
   };
 
-  const generateGalleryImage = async (courseNum: string) => {
+  const generateGalleryImage = async (courseNum: string, userName: string, dateStr: string) => {
     Object.values(ShareImageTemplate).forEach(async (template, index) => {
-      generateImage(courseNum, template, index);
+      generateImage(courseNum, template, index, userName, dateStr);
     })
   }
 
-  const generateImage = async (courseNum: string, template: ShareImageTemplate, index: number) => {
+  const generateImage = async (courseNum: string, template: ShareImageTemplate, index: number, userName: string, dateStr: string) => {
     const canvasEl = initCanvas();
     galleryImgs.value[index] = {
       src: "",
       canvasEl
     };
     const svg = await satori(
-      chosenTemplate(template, courseNum),
+      chosenTemplate(template, courseNum, userName, dateStr),
       await generateConfig()
     ).catch((e) => {
       console.error("Error generating SVG");

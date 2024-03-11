@@ -2,7 +2,7 @@
   <div>
     <dialog className="modal mt-[-8vh]" :open="shareModalVisible">
       <div ref="dialogBoxRef" className="modal-box w-[27rem] flex flex-col items-center overflow-hidden">
-        <div class="flex flex-col flex-1 w-[24rem] h-[32rem]" ref="imageContainer">
+        <div :class="{'skeleton': !shareImageSrc}" class="flex flex-col w-[24rem] h-[32rem]" ref="imageContainer" >
           <img v-show="shareImageSrc" :src="shareImageSrc" alt="" width="400" height="600" class="rounded-md">
         </div>
         <div class="gallery flex w-full py-2">
@@ -24,7 +24,10 @@ import { ref, watch } from 'vue';
 import { useGenerateShareImage, useShareModal } from '~/composables/main/shareImage/share';
 import { convertTitleToNumber } from '~/composables/main/shareImage/convert'
 import { useCourseStore } from '~/store/course';
+import { useUserStore } from '~/store/user';
+import { getToday } from '~/utils/date';
 const courseStore = useCourseStore();
+const userStore = useUserStore();
 const imageContainer = ref<HTMLDivElement>()
 
 const { shareModalVisible, hideShareModal } = useShareModal()
@@ -38,11 +41,10 @@ const {
   currImageIndex
 } = useGenerateShareImage()
 watch(shareModalVisible, newVal => {
-  if (newVal && courseStore.currentCourse?.title) {
+  if (newVal && courseStore.currentCourse?.title && userStore.user?.username) {
     const convertedTitle = convertTitleToNumber(courseStore.currentCourse.title);
-    // const titleAsNumber = Number(convertedTitle);
-    // generateImage(convertedTitle)
-    generateGalleryImage(convertedTitle)
+    const { year, month, day } = getToday()
+    generateGalleryImage(convertedTitle, userStore.user.username, `${year}/${month}/${day}`)
   } else {
     clearShareImageSrc()
   }
