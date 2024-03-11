@@ -61,6 +61,9 @@ export function useInput({
 
   function setupUserInputWords() {
     watchEffect(() => {
+      // 赋值前先清空 userInputWords 数组
+      userInputWords.splice(0, userInputWords.length);
+
       const english = source();
       english
         .split(separator)
