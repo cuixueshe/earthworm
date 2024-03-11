@@ -53,6 +53,15 @@ const yearOptions = ref<Options[]>([]);
 const thead = ref<TableHead[]>([]);
 const tbody = ref<(null | TableBody)[][]>([]);
 
+/**
+ * format date
+ * @param date date
+ * @returns YYYY-MM-DD
+ */
+export function format(date: Date) {
+  return date.toISOString().slice(0, 10);
+}
+
 export function useCalendarGraph(emits: EmitsType) {
   function getOptions() {
     for (let i = 2018; i <= new Date().getFullYear(); i++) {
@@ -69,7 +78,6 @@ export function useCalendarGraph(emits: EmitsType) {
       return { 1: "st", 2: "nd", 3: "rd" }[lastDigit] as string;
     return "th";
   }
-  // TODO: 计算活跃度 需要完善规则
   function getActivityLevel(count?: number) {
     if (!count) return "";
     if (count < 3) return "low";
@@ -83,7 +91,7 @@ export function useCalendarGraph(emits: EmitsType) {
         if (!item) return null;
         const month = item.date.getMonth();
         const day = item.date.getDate();
-        const date = item.date.toISOString().slice(0, 10);
+        const date = format(item.date);
         const current = list.find((f) => f.date === date);
         const tips = `${current?.count || "No"} contributions on ${
           months[month]
@@ -105,7 +113,7 @@ export function useCalendarGraph(emits: EmitsType) {
   async function initTable(value?: number) {
     emits("toggleYear", value);
     year.value = value;
-    const data = initData();
+    const data = initData(value);
     thead.value = renderHead(data.thead);
     tbody.value = data.tbody;
   }
@@ -116,7 +124,7 @@ export function useCalendarGraph(emits: EmitsType) {
     return new Date(date.setDate(startDay));
   }
 
-  function calcDateRange(year: number) {
+  function calcDateRange(year?: number) {
     const startDate = year
       ? new Date(`${year}-01-01`)
       : calcStartDate(new Date());
@@ -134,8 +142,8 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   // TODO: REFACTOR
-  function initData() {
-    const { startDate, endDate } = calcDateRange(year.value);
+  function initData(year?: number) {
+    const { startDate, endDate } = calcDateRange(year);
 
     const tbody: (null | TableBody)[][] = initTbody(startDate);
     const thead: { offset: number; month: number }[] = [];
@@ -179,5 +187,20 @@ export function useCalendarGraph(emits: EmitsType) {
     return { thead, tbody };
   }
 
-  return { initTable, renderBody, weeks, thead, tbody, year, yearOptions };
+  return {
+    calcStartDate,
+    calcDateRange,
+    getActivityLevel,
+    getOrdinalSuffix,
+    initTable,
+    initTbody,
+    initData,
+    renderHead,
+    renderBody,
+    weeks,
+    thead,
+    tbody,
+    year,
+    yearOptions,
+  };
 }

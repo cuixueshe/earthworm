@@ -1,25 +1,18 @@
 <template>
-  <!-- <div>TODO</div>
-  <div>for instance</div>
-  <div>
-    打卡模块
-    <a href="https://github.com/cuixueshe/earthworm/issues/1">(from Issues #1)</a>
-  </div> -->
-
   <CalendarGraph :data="data" @toggleYear="toggleYear" />
 </template>
 
 <script setup lang="ts">
-import type { CalendarData } from "~/composables/user/calendarGraph";
-import CalendarGraph from "./CalendarGraph.vue";
 import { ref } from "vue";
+import { format, type CalendarData } from "~/composables/user/calendarGraph";
+import CalendarGraph from "./CalendarGraph.vue";
 
 const data = ref<CalendarData[]>([]);
 
 async function toggleYear(year?: number) {
   const query = {
-    startDate: year ? new Date(year).toISOString().slice(0, 10) : undefined,
-    endDate: year ? new Date(year).toISOString().slice(0, 10) : undefined,
+    startDate: year ? format(new Date(year)) : undefined,
+    endDate: year ? format(new Date(year)) : undefined,
   }
   console.log(`( Home.vue: query )===============>`, query);
   // const res = await getList(query);

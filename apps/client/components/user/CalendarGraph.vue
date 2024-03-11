@@ -58,7 +58,6 @@ onMounted(() => {
 
 watchEffect(() => {
   tbody.value = renderBody(props.data)
-  console.log(`( CalendarGraph.vue: tbody.value )===============>`, tbody.value);
 })
 
 </script>
