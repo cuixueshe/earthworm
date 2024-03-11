@@ -5,6 +5,7 @@ import { GlobalModule } from '../global/global.mudule';
 import { UserProgressService } from '../user-progress/user-progress.service';
 import { RankService } from '../rank/rank.service';
 import { CourseHistoryService } from '../course-history/course-history.service';
+import { GameService } from '../game/game.service';
 
 @Module({
   imports: [GlobalModule],
@@ -13,6 +14,7 @@ import { CourseHistoryService } from '../course-history/course-history.service';
     UserProgressService,
     RankService,
     CourseHistoryService,
+    GameService,
   ],
   controllers: [CourseController],
   exports: [CourseService],

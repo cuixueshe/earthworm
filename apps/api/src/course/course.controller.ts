@@ -2,10 +2,14 @@ import { Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { CourseService } from './course.service';
 import { AuthGuard } from '../auth/auth.guard';
 import { User, UserEntity } from '../user/user.decorators';
+import { GameService } from '../game/game.service';
 
 @Controller('courses')
 export class CourseController {
-  constructor(private courseService: CourseService) {}
+  constructor(
+    private courseService: CourseService,
+    private gameService: GameService,
+  ) {}
 
   @Get('try')
   tryCourse() {
@@ -37,7 +41,7 @@ export class CourseController {
     @User() user: UserEntity,
     @Param('courseId') courseId: number,
   ) {
-    const result = await this.courseService.completeCourse(user, courseId);
+    const result = await this.gameService.completeGame(user, courseId);
     return result;
   }
 }

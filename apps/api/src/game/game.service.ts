@@ -3,6 +3,8 @@ import { CourseService } from '../course/course.service';
 import { DB, DbType } from '../global/providers/db.provider';
 import { UserProgressService } from '../user-progress/user-progress.service';
 import { UserEntity } from '../user/user.decorators';
+import { RankService } from '../rank/rank.service';
+import { CourseHistoryService } from '../course-history/course-history.service';
 
 @Injectable()
 export class GameService {
@@ -10,6 +12,8 @@ export class GameService {
     @Inject(DB) private db: DbType,
     private readonly courseService: CourseService,
     private readonly userProgressService: UserProgressService,
+    private readonly rankService: RankService,
+    private readonly courseHistoryService: CourseHistoryService,
   ) {}
 
   async startGame(user: UserEntity) {
@@ -24,5 +28,13 @@ export class GameService {
     }
 
     return { cId: courseId };
+  }
+
+  async completeGame(user: UserEntity, courseId: number) {
+    const nextCourse = await this.courseService.findNext(courseId);
+    await this.userProgressService.update(user.userId, nextCourse.id);
+    await this.rankService.userFinishCourse(user.userId, user.username);
+    await this.courseHistoryService.setCompletionCount(user.userId, courseId);
+    return nextCourse;
   }
 }
