@@ -145,6 +145,13 @@ export function useGenerateShareImage() {
     currImageIndex.value = index;
   }
 
+  const preLoadFont = () => {
+    fontEn()
+    fontZh()  
+  };
+
+  preLoadFont();
+
   return {
     shareImageSrc: currImageSrc,
     generateImage,
@@ -153,6 +160,6 @@ export function useGenerateShareImage() {
     galleryImgs,
     clearShareImageSrc,
     handleSelectImage,
-    currImageIndex
+    currImageIndex,
   };
 }
