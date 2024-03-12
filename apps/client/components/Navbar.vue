@@ -1,5 +1,8 @@
 <template>
-  <nav class="h-20 flex items-center justify-between shrink-0">
+  <nav 
+    class="h-20 flex items-center justify-between shrink-0 bg-white dark:bg-slate-900 fixed w-full px-10 z-50" 
+    :class='isScrolled ? "shadow-lg shadow-cyan-500/20 opacity-95": ""'
+  >
     <NuxtLink to="/">
       <div class="logo flex items-center">
         <img width="48" height="48" class="rounded-md overflow-hidden mr-6" src="/logo.png" alt="earth-worm-logo" />
@@ -46,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onBeforeUnmount } from 'vue'
 import { useMessage } from "naive-ui";
 import { navigateTo } from "nuxt/app";
 import { useRoute } from "vue-router";
@@ -60,6 +63,7 @@ const route = useRoute();
 const userStore = useUserStore();
 
 const isShowModal = ref(false)
+const isScrolled = ref(false)
 
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode()
 
@@ -93,6 +97,16 @@ const handleLogoutConfirm = () => {
     },
   });
 }
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 0;  
+}
+
+window.addEventListener('scroll', handleScroll);
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+})
 
 </script>
 <style></style>
