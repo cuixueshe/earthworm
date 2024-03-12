@@ -675,318 +675,318 @@
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "中文 原形 第三人称单数 过去式想要",
-		"english": "want wants",
-		"soundmark": "/wanted/"
+		"chinese": "想要 (原形 第三人称单数 过去式)",
+		"english": "want wants wanted",
+		"soundmark": "/wɑːnt/ /ˈwɒnts/ /ˈwɑːntɪd/"
 	},
 	{
-		"chinese": "喜欢",
-		"english": "like likes",
-		"soundmark": "/liked/"
+		"chinese": "喜欢 (原形 第三人称单数 过去式)",
+		"english": "like likes liked",
+		"soundmark": "/laɪk/ /laɪks/ /laɪkt/"
 	},
 	{
-		"chinese": "有；(+to)不得不",
-		"english": "have has",
-		"soundmark": "/had/"
+		"chinese": "有；(+to)不得不 (原形 第三人称单数 过去式)",
+		"english": "have has had",
+		"soundmark": "/hæv; həv/ /hæz; həz/ /hæd; həd/"
 	},
 	{
-		"chinese": "计划",
-		"english": "plan plans",
-		"soundmark": "/planned/"
+		"chinese": "计划 (原形 第三人称单数 过去式)",
+		"english": "plan plans planned",
+		"soundmark": "/plæn/ /plænz/ /plænd/"
 	},
 	{
-		"chinese": "需要",
-		"english": "need needs",
-		"soundmark": "/needed/"
+		"chinese": "需要 (原形 第三人称单数 过去式)",
+		"english": "need needs needed",
+		"soundmark": "/niːd/ /niːdz/ /ˈniːdɪd/"
 	},
 	{
-		"chinese": "做",
-		"english": "do does",
-		"soundmark": "/did/"
+		"chinese": "做 (原形 第三人称单数 过去式)",
+		"english": "do does did",
+		"soundmark": "/duː; də/ /dʌz/ /dɪd/"
 	},
 	{
-		"chinese": "告诉",
-		"english": "tell tells",
-		"soundmark": "/told/"
+		"chinese": "告诉 (原形 第三人称单数 过去式)",
+		"english": "tell tells told",
+		"soundmark": "/tel/ /telz/ /toʊld/"
 	},
 	{
-		"chinese": "说话",
-		"english": "talk talks",
-		"soundmark": "/talked/"
+		"chinese": "说话 (原形 第三人称单数 过去式)",
+		"english": "talk talks talked",
+		"soundmark": "/tɔːk/ /tɔːks/ /tɔːkt/"
 	},
 	{
-		"chinese": "是 be（am）",
-		"english": "is",
-		"soundmark": "/was/"
+		"chinese": "是 (am 过去式)",
+		"english": "was",
+		"soundmark": "/wʌz; wəz/"
 	},
 	{
-		"chinese": "是 be（is ）",
-		"english": "is",
-		"soundmark": "/was/"
+		"chinese": "是 (is 过去式)",
+		"english": "was",
+		"soundmark": "/wʌz; wəz/"
 	},
 	{
-		"chinese": "是 be（are）",
-		"english": "is",
-		"soundmark": "/were/"
+		"chinese": "是 (are 过去式)",
+		"english": "were",
+		"soundmark": "/wɜːr; wər/"
 	},
 	{
-		"chinese": "看到",
-		"english": "see sees",
-		"soundmark": "/saw/"
+		"chinese": "看到 (原形 第三人称单数 过去式)",
+		"english": "see sees saw",
+		"soundmark": "/siː/ /siːz/ /sɔː/"
 	},
 	{
-		"chinese": "吃",
-		"english": "eat eats",
-		"soundmark": "/ate/"
+		"chinese": "吃 (原形 第三人称单数 过去式)",
+		"english": "eat eats ate",
+		"soundmark": "/iːt/ /iːts/ /eɪt/"
 	},
 	{
-		"chinese": "喝",
-		"english": "drink drinks",
-		"soundmark": "/drank/"
+		"chinese": "喝 (原形 第三人称单数 过去式)",
+		"english": "drink drinks drank",
+		"soundmark": "/drɪŋk/ /drɪŋks/ /dræŋk/"
 	},
 	{
-		"chinese": "知道",
-		"english": "know knows",
-		"soundmark": "/knew/"
+		"chinese": "知道 (原形 第三人称单数 过去式)",
+		"english": "know knows knew",
+		"soundmark": "/noʊ/ /noʊz/ /nuː/"
 	},
 	{
-		"chinese": "忘记",
-		"english": "forget forgets",
-		"soundmark": "/forgot/"
+		"chinese": "忘记 (原形 第三人称单数 过去式)",
+		"english": "forget forgets forgot",
+		"soundmark": "/fərˈɡet/ /fərˈɡets/ /fərˈɡɑːt/"
 	},
 	{
-		"chinese": "失去",
-		"english": "lose loses",
-		"soundmark": "/lost/"
+		"chinese": "失去 (原形 第三人称单数 过去式)",
+		"english": "lose loses lost",
+		"soundmark": "/luːz/ /ˈluːzɪz/ /lɔːst/"
 	},
 	{
-		"chinese": "离开",
-		"english": "leave leaves",
-		"soundmark": "/left/"
+		"chinese": "离开 (原形 第三人称单数 过去式)",
+		"english": "leave leaves left",
+		"soundmark": "/liːv/ /liːvz/ /left/"
 	},
 	{
-		"chinese": "睡觉",
-		"english": "sleep sleeps",
-		"soundmark": "/slept/"
+		"chinese": "睡觉 (原形 第三人称单数 过去式)",
+		"english": "sleep sleeps slept",
+		"soundmark": "/sliːp/ /sliːps/ /slept/"
 	},
 	{
-		"chinese": "明白",
-		"english": "understand understands",
-		"soundmark": "/understood/"
+		"chinese": "明白 (原形 第三人称单数 过去式)",
+		"english": "understand understands understood",
+		"soundmark": "/ˌʌndərˈstænd/ /ˌʌndərˈstændz/ /ˌʌndərˈstʊd/"
 	},
 	{
-		"chinese": "买",
-		"english": "buy buys",
-		"soundmark": "/bought/"
+		"chinese": "买 (原形 第三人称单数 过去式)",
+		"english": "buy buys bought",
+		"soundmark": "/baɪ/ /baɪz/ /bɔːt/"
 	},
 	{
-		"chinese": "洗",
-		"english": "wash washes",
-		"soundmark": "/washed/"
+		"chinese": "洗 (原形 第三人称单数 过去式)",
+		"english": "wash washes washed",
+		"soundmark": "/wɑːʃ/ /wɑːʃiz/ /wɑːʃt/"
 	},
 	{
-		"chinese": "打电话",
-		"english": "call calls",
-		"soundmark": "/called/"
+		"chinese": "打电话 (原形 第三人称单数 过去式)",
+		"english": "call calls called",
+		"soundmark": "/kɔːl/ /kɔːlz/ /kɔːld/"
 	},
 	{
-		"chinese": "帮助",
-		"english": "help helps",
-		"soundmark": "/helped/"
+		"chinese": "帮助 (原形 第三人称单数 过去式)",
+		"english": "help helps helped",
+		"soundmark": "/help/ /helps/ /helpt/"
 	},
 	{
-		"chinese": "相信",
-		"english": "believe believes",
-		"soundmark": "/believed/"
+		"chinese": "相信 (原形 第三人称单数 过去式)",
+		"english": "believe believes believed",
+		"soundmark": "/bɪˈliːv/ /bɪˈliːvz/ /bɪˈliːvd/"
 	},
 	{
-		"chinese": "学习",
-		"english": "study studies",
-		"soundmark": "/studied/"
+		"chinese": "学习 (原形 第三人称单数 过去式)",
+		"english": "study studies studied",
+		"soundmark": "/ˈstʌdi/ /ˈstʌdiz/ /ˈstʌdid/"
 	},
 	{
-		"chinese": "解释",
-		"english": "explain explains",
-		"soundmark": "/explained/"
+		"chinese": "解释 (原形 第三人称单数 过去式)",
+		"english": "explain explains explained",
+		"soundmark": "/ɪkˈspleɪn/ /ɪkˈspleɪnz/ /ɪkˈspleɪnd/"
 	},
 	{
-		"chinese": "问",
-		"english": "ask asks",
-		"soundmark": "/asked/"
+		"chinese": "问 (原形 第三人称单数 过去式)",
+		"english": "ask asks asked",
+		"soundmark": "/æsk/ /æsks/ /æskt/"
 	},
 	{
-		"chinese": "飞",
-		"english": "fly flies",
-		"soundmark": "/flew/"
+		"chinese": "飞 (原形 第三人称单数 过去式)",
+		"english": "fly flies flew",
+		"soundmark": "/flaɪ/ /flaɪz/ /fluː/"
 	},
 	{
-		"chinese": "阅读",
-		"english": "read reads",
-		"soundmark": "/read/"
+		"chinese": "阅读 (原形 第三人称单数 过去式)",
+		"english": "read reads read",
+		"soundmark": "/riːd/ /riːdz/ /riːd/"
 	},
 	{
-		"chinese": "走路",
-		"english": "walk walks",
-		"soundmark": "/walked/"
+		"chinese": "走路 (原形 第三人称单数 过去式)",
+		"english": "walk walks walked",
+		"soundmark": "/wɔːk/ /wɔːks/ /wɔːkt/"
 	},
 	{
-		"chinese": "跳舞",
-		"english": "dance dances",
-		"soundmark": "/danced/"
+		"chinese": "跳舞 (原形 第三人称单数 过去式)",
+		"english": "dance dances danced",
+		"soundmark": "/dæns/ /ˈdɑːnsɪz/ /dɑːnst/"
 	},
 	{
-		"chinese": "回答",
-		"english": "answer answers",
-		"soundmark": "/answered/"
+		"chinese": "回答 (原形 第三人称单数 过去式)",
+		"english": "answer answers answered",
+		"soundmark": "/ˈænsər/ /ˈænsər/ /ˈænsər/"
 	},
 	{
-		"chinese": "工作",
-		"english": "work works",
-		"soundmark": "/worked/"
+		"chinese": "工作 (原形 第三人称单数 过去式)",
+		"english": "work works worked",
+		"soundmark": "/wɜːrk/ /wɜːrks/ /wɜːrkt/"
 	},
 	{
-		"chinese": "待在",
-		"english": "stay stays",
-		"soundmark": "/stayed/"
+		"chinese": "待在 (原形 第三人称单数 过去式)",
+		"english": "stay stays stayed",
+		"soundmark": "/steɪ/ /steɪz/ /steɪd/"
 	},
 	{
-		"chinese": "支付",
-		"english": "pay pays",
-		"soundmark": "/paid/"
+		"chinese": "支付 (原形 第三人称单数 过去式)",
+		"english": "pay pays paid",
+		"soundmark": "/peɪ/ /peɪz/ /peɪd/"
 	},
 	{
-		"chinese": "旅行",
-		"english": "travel travels",
-		"soundmark": "/traveled/"
+		"chinese": "旅行 (原形 第三人称单数 过去式)",
+		"english": "travel travels travelled",
+		"soundmark": "/ˈtræv(ə)l/ /ˈtrævlz/ /ˈtrævld/"
 	},
 	{
-		"chinese": "给",
-		"english": "give gives",
-		"soundmark": "/gave/"
+		"chinese": "给 (原形 第三人称单数 过去式)",
+		"english": "give gives gave",
+		"soundmark": "/ɡɪv/ /ɡɪvz/ /ɡeɪv/"
 	},
 	{
-		"chinese": "达到",
-		"english": "get gets",
-		"soundmark": "/got/"
+		"chinese": "达到 (原形 第三人称单数 过去式)",
+		"english": "get gets got",
+		"soundmark": "/ɡet/ /ɡets/ /ɡɑːt/"
 	},
 	{
-		"chinese": "锁",
-		"english": "lock locks",
-		"soundmark": "/locked/"
+		"chinese": "锁 (原形 第三人称单数 过去式)",
+		"english": "lock locks locked",
+		"soundmark": "/lɑːk/ /lɒks/ /lɒkt/"
 	},
 	{
-		"chinese": "记得",
-		"english": "remember remembers",
-		"soundmark": "/remembered/"
+		"chinese": "记得 (原形 第三人称单数 过去式)",
+		"english": "remember remembers remembered",
+		"soundmark": "/rɪˈmembər/ /rɪˈmembərs/ /rɪˈmembəd/"
 	},
 	{
-		"chinese": "清理",
-		"english": "clean cleans",
-		"soundmark": "/cleaned/"
+		"chinese": "清理 (原形 第三人称单数 过去式)",
+		"english": "clean cleans cleaned",
+		"soundmark": "/kliːn/ /kliːnz/ /kliːnd/"
 	},
 	{
-		"chinese": "找到",
-		"english": "find finds",
-		"soundmark": "/found/"
+		"chinese": "找到 (原形 第三人称单数 过去式)",
+		"english": "find finds found",
+		"soundmark": "/faɪnd/ /faɪndz/ /faʊnd/"
 	},
 	{
-		"chinese": "关闭",
-		"english": "close closes",
-		"soundmark": "/closed/"
+		"chinese": "关闭 (原形 第三人称单数 过去式)",
+		"english": "close closes closed",
+		"soundmark": "/kloʊz/ /kloʊzɪz/ /kloʊzd/"
 	},
 	{
-		"chinese": "教",
-		"english": "teach teaches",
-		"soundmark": "/taught/"
+		"chinese": "教 (原形 第三人称单数 过去式)",
+		"english": "teach teaches taught",
+		"soundmark": "/tiːtʃ/ /ˈtiːtʃɪz/ /tɔːt/"
 	},
 	{
-		"chinese": "展示",
-		"english": "show shows",
-		"soundmark": "/showed/"
+		"chinese": "展示 (原形 第三人称单数 过去式)",
+		"english": "show shows showed",
+		"soundmark": "/ʃoʊ/ /ʃoʊz/ /ʃoʊd/"
 	},
 	{
-		"chinese": "让",
-		"english": "let lets",
-		"soundmark": "/let/"
+		"chinese": "让 (原形 第三人称单数 过去式)",
+		"english": "let lets let",
+		"soundmark": "/let/ /lets/ /let/"
 	},
 	{
-		"chinese": "休息",
-		"english": "rest rests",
-		"soundmark": "/rested/"
+		"chinese": "休息 (原形 第三人称单数 过去式)",
+		"english": "rest rests rested",
+		"soundmark": "/rest/ /rests/ /ˈrestɪd/"
 	},
 	{
-		"chinese": "用",
-		"english": "use uses",
-		"soundmark": "/used/"
+		"chinese": "用 (原形 第三人称单数 过去式)",
+		"english": "use uses used",
+		"soundmark": "/juːz/ /ˈjuːzɪz/ /juːst/"
 	},
 	{
-		"chinese": "做饭",
-		"english": "cook cooks",
-		"soundmark": "/cooked/"
+		"chinese": "做饭 (原形 第三人称单数 过去式)",
+		"english": "cook cooks cooked",
+		"soundmark": "/kʊk/ /kʊks/ /kʊkt/"
 	},
 	{
-		"chinese": "去",
-		"english": "go goes",
-		"soundmark": "/went/"
+		"chinese": "去 (原形 第三人称单数 过去式)",
+		"english": "go goes went",
+		"soundmark": "/ɡoʊ/ /ɡoʊz/ /went/"
 	},
 	{
-		"chinese": "决定",
-		"english": "decide decides",
-		"soundmark": "/decided/"
+		"chinese": "决定 (原形 第三人称单数 过去式)",
+		"english": "decide decides decided",
+		"soundmark": "/dɪˈsaɪd/ /dɪˈsaɪdz/ /dɪˈsaɪdɪd/"
 	},
 	{
-		"chinese": "驾驶",
-		"english": "drive drives",
-		"soundmark": "/drove/"
+		"chinese": "驾驶 (原形 第三人称单数 过去式)",
+		"english": "drive drives drove",
+		"soundmark": "/draɪv/ /draɪvz/ /droʊv/"
 	},
 	{
-		"chinese": "改变",
-		"english": "change changes",
-		"soundmark": "/changed/"
+		"chinese": "改变 (原形 第三人称单数 过去式)",
+		"english": "change changes changed",
+		"soundmark": "/tʃeɪndʒ/ /ˈtʃeɪndʒɪz/ /tʃeɪndʒd/"
 	},
 	{
-		"chinese": "尝试",
-		"english": "try tries",
-		"soundmark": "/tried/"
+		"chinese": "尝试 (原形 第三人称单数 过去式)",
+		"english": "try tries tried",
+		"soundmark": "/traɪ/ /traɪz/ /traɪd/"
 	},
 	{
-		"chinese": "停止",
-		"english": "stop stops",
-		"soundmark": "/Stopped/"
+		"chinese": "停止 (原形 第三人称单数 过去式)",
+		"english": "stop stops stopped",
+		"soundmark": "/stɑːp/ /stɑːpz/ /stɑːpt/"
 	},
 	{
-		"chinese": "参加",
-		"english": "join joins",
-		"soundmark": "/joined/"
+		"chinese": "参加 (原形 第三人称单数 过去式)",
+		"english": "join joins joined",
+		"soundmark": "/dʒɔɪn/ /dʒɔɪnz/ /dʒɔɪnd/"
 	},
 	{
-		"chinese": "邀请",
-		"english": "invite invites",
-		"soundmark": "/invited/"
+		"chinese": "邀请 (原形 第三人称单数 过去式)",
+		"english": "invite invites invited",
+		"soundmark": "/ɪnˈvaɪt/ /ɪnˈvaɪts; ˈɪnvaɪts/ /ɪnˈvaɪtɪd/"
 	},
 	{
-		"chinese": "拒绝",
-		"english": "refuse refuses",
-		"soundmark": "/refused/"
+		"chinese": "拒绝 (原形 第三人称单数 过去式)",
+		"english": "refuse refuses refused",
+		"soundmark": "/rɪˈfjuːz/ /rɪˈfjuːzɪz/ /rɪˈfjuːzd; ˈrefjuːs/"
 	},
 	{
-		"chinese": "接受",
-		"english": "accept accepts",
-		"soundmark": "/accepted/"
+		"chinese": "接受 (原形 第三人称单数 过去式)",
+		"english": "accept accepts accepted",
+		"soundmark": "/əkˈsept/ /əkˈsepts/ /əkˈseptɪd/"
 	},
 	{
-		"chinese": "学习",
-		"english": "learn learns",
-		"soundmark": "/learnt/"
+		"chinese": "学习 (原形 第三人称单数 过去式)",
+		"english": "learn learns learnt",
+		"soundmark": "/lɜːrn/ /lɜːrnz/ /lɜːrnt/"
 	},
 	{
-		"chinese": "完成",
-		"english": "finish finishes",
-		"soundmark": "/finished/"
+		"chinese": "完成 (原形 第三人称单数 过去式)",
+		"english": "finish finishes finished",
+		"soundmark": "/ˈfɪnɪʃ/ /ˈfɪnɪʃɪz/ /ˈfɪnɪʃt/"
 	},
 	{
-		"chinese": "看",
-		"english": "watch watches",
-		"soundmark": "/watched/"
+		"chinese": "看 (原形 第三人称单数 过去式)",
+		"english": "watch watches watched",
+		"soundmark": "/wɑːtʃ/ /ˈwɑːtʃɪz/ /wɑːtʃt/"
 	}
 ]
