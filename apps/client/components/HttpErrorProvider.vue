@@ -5,9 +5,8 @@
 <script setup lang="ts">
 import { useMessage } from "naive-ui";
 import { useRouter } from "vue-router";
-import {
-  injectHttpStatusErrorHandler,
-} from "~/api/http";
+import { useUserStore } from "~/store/user";
+import { injectHttpStatusErrorHandler } from "~/api/http";
 
 useHttpStatusError();
 
@@ -26,6 +25,7 @@ function useHttpStatusError() {
           onLeave() {
             const callback = window.location.pathname;
             router.push(`/auth/login?callback=${callback}`);
+            useUserStore().logoutUser();
           },
         });
         break;
