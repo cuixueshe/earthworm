@@ -12,7 +12,7 @@
                 : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
             isShowWordsWidth() ? '' : 'min-w-28',
           ]"
-          :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}"
+          :style="isShowWordsWidth() ? { minWidth: `${inputWidth(w)}ch` } : {}"
         >
           {{ userInputWords[i]["userInput"] }}
         </div>

@@ -248,8 +248,11 @@ export function useInput({
     }
   }
 
-  function checkSpaceSubmitAnswer (e: KeyboardEvent, useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined) {
-    e.preventDefault()
+  function checkSpaceSubmitAnswer(
+    e: KeyboardEvent,
+    useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined
+  ) {
+    e.preventDefault();
     if (useSpaceSubmitAnswer?.enable) {
       submitAnswer(useSpaceSubmitAnswer.callback);
     }
@@ -270,7 +273,6 @@ export function useInput({
       e.preventDefault();
       return;
     }
-
 
     // 校验正常输入时最后一个单词空格提交
     if (e.code === "Space" && lastWordIsActive()) {

@@ -715,19 +715,29 @@
 		"soundmark": "/talked/"
 	},
 	{
-		"chinese": "是",
-		"english": "be(am) is",
-		"soundmark": "/was/"
+		"chinese": "是(单数，和我连用)",
+		"english": "be am",
+		"soundmark": "/bi/ /əm/"
 	},
 	{
-		"chinese": "是",
-		"english": "be(is ) is",
-		"soundmark": "/was/"
+		"chinese": "是(单数)",
+		"english": "be is",
+		"soundmark": "/bi/ /ɪz/"
 	},
 	{
-		"chinese": "是",
-		"english": "be(are) is",
-		"soundmark": "/were/"
+		"chinese": "是(单数)(过去)",
+		"english": "be was",
+		"soundmark": "/bi/ /was/"
+	},
+	{
+		"chinese": "是(复数)",
+		"english": "be are",
+		"soundmark": "/bi/ /ɚ/"
+	},
+	{
+		"chinese": "是(复数)(过去)",
+		"english": "be were",
+		"soundmark": "/bi/ /were/"
 	},
 	{
 		"chinese": "看到",

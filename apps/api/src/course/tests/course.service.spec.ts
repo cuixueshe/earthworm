@@ -8,7 +8,7 @@ import { type DbType, DB } from '../../global/providers/db.provider';
 import { course, statement } from '@earthworm/shared';
 import { HttpException } from '@nestjs/common';
 import { createUser } from '../../../test/fixture/user';
-import { GlobalModule } from '../../global/global.mudule';
+import { GlobalModule } from '../../global/global.module';
 import {
   createFirstCourse,
   createSecondCourse,
@@ -16,6 +16,7 @@ import {
 import { createStatement } from '../../../test/fixture/statement';
 import { cleanDB, startDB } from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
+import { CourseHistoryService } from '../../course-history/course-history.service';
 
 const user = createUser();
 const firstCourse = createFirstCourse();
@@ -26,6 +27,7 @@ describe('course service', () => {
   let courseService: CourseService;
   let userProgressService: UserProgressService;
   let rankService: RankService;
+  let courseHistoryService: CourseHistoryService;
 
   beforeAll(async () => {
     const testHelper = await setupTesting();
@@ -35,6 +37,7 @@ describe('course service', () => {
     courseService = testHelper.courseService;
     userProgressService = testHelper.UserProgressService;
     rankService = testHelper.rankService;
+    courseHistoryService = testHelper.courseHistoryService;
   });
 
   afterAll(async () => {
@@ -106,6 +109,10 @@ describe('course service', () => {
       user.userId,
       user.username,
     );
+    expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
+      user.userId,
+      firstCourse.id,
+    );
   });
 });
 
@@ -121,6 +128,9 @@ async function setupTesting() {
   const mockRankService = {
     userFinishCourse: jest.fn(),
   };
+  const mockCourseHistoryService = {
+    setCompletionCount: jest.fn(),
+  };
 
   const moduleRef = await Test.createTestingModule({
     imports: [
@@ -135,6 +145,7 @@ async function setupTesting() {
       CourseService,
       { provide: UserProgressService, useValue: mockUserProgressService },
       { provide: RankService, useValue: mockRankService },
+      { provide: CourseHistoryService, useValue: mockCourseHistoryService },
     ],
   }).compile();
 
@@ -143,6 +154,8 @@ async function setupTesting() {
     UserProgressService:
       moduleRef.get<UserProgressService>(UserProgressService),
     rankService: moduleRef.get<RankService>(RankService),
+    courseHistoryService:
+      moduleRef.get<CourseHistoryService>(CourseHistoryService),
     db: moduleRef.get<DbType>(DB),
     moduleRef,
   };
