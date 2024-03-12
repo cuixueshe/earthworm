@@ -1,40 +1,27 @@
 <template>
   <div class="text-center pt-2">
+    <div class="mt-12 text-xl dark:text-gray-50">
+      {{
+      courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
+      }}
+    </div>
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
       <template v-for="(w, i) in courseStore.words" :key="i">
-        <div
-          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
-          :class="[
-            userInputWords[i]['isActive'] && focusing
+        <div class="h-[3rem] leading-[3rem] border-solid rounded-[2px] border-b-2 text-lg transition-all" :class="[
+            userInputWords[i]['isActive'] 
               ? 'text-fuchsia-500 border-b-fuchsia-500'
-              : userInputWords[i]?.['incorrect'] && focusing
+              : userInputWords[i]?.['incorrect'] 
                 ? 'text-red-500 border-b-red-500'
                 : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
             isShowWordsWidth() ? '' : 'min-w-28',
-          ]"
-          :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}"
-        >
+          ]" :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}">
           {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
-      <input
-        ref="inputEl"
-        class="absolute h-full w-full opacity-0"
-        type="text"
-        v-model="inputValue"
-        @keyup="handleKeyup"
-        @keydown="handleKeydown"
-        @focus="handleInputFocus"
-        @blur="handleBlur"
-        autoFocus
-      />
     </div>
-    {{ isUseSpaceSubmitAnswer() }}
-    <div class="mt-12 text-xl dark:text-gray-50">
-      {{
-        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
-      }}
-    </div>
+    <MInput @setInputValue="setInputValueByMInput" @delInputValue="delInputValueByMInput"
+      @handleEnterKeyup="handleEnterKeyup">
+    </MInput>
   </div>
 </template>
 
@@ -45,15 +32,14 @@ import { ref, onMounted, watch } from "vue";
 import { useInput } from "~/composables/main/question";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
+import MInput from "./MInput.vue"
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
-const { setInputCursorPosition, getInputCursorPosition } = useCursor();
-const { focusing, handleInputFocus, handleBlur } = useFocus();
+const { useCursorPosition, setInputCursorPosition, getInputCursorPosition } = useCursor();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-
 const {
   inputValue,
   userInputWords,
@@ -63,8 +49,39 @@ const {
 } = useInput({
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
-  getInputCursorPosition,
+  getInputCursorPosition
 });
+
+
+function setInputValueByMInput(val: string, code: string) {
+
+  inputValue.value = insertChar(inputValue.value, useCursorPosition.value, val);
+  setInputCursorPosition(useCursorPosition.value + 1)
+  handleKeydown({code, preventDefault: () => {
+    inputValue.value = inputValue.value.slice(0, -1);
+    setInputCursorPosition(useCursorPosition.value - 1)
+  }} as KeyboardEvent)
+}
+
+
+function delInputValueByMInput(code: string) {
+  let originVal = inputValue.value
+
+  inputValue.value = deleteChar(inputValue.value, useCursorPosition.value - 1)
+  setInputCursorPosition(useCursorPosition.value - 1)
+  handleKeydown({code, preventDefault: () => {
+    inputValue.value = originVal;
+    setInputCursorPosition(useCursorPosition.value + 1)
+  }} as KeyboardEvent)
+}
+
+function insertChar(str: string, index: number, char: string) {
+    return str.slice(0, index) + char + str.slice(index);
+}
+
+function deleteChar(str: string, index: number) {
+    return str.slice(0, index) + str.slice(index + 1);
+}
 
 watch(
   () => inputValue.value,
@@ -73,13 +90,11 @@ watch(
   }
 );
 
-function handleKeyup(e: KeyboardEvent) {
-  if (e.code === "Enter") {
-    e.stopPropagation();
-    submitAnswer(() => {
+// next button
+function handleEnterKeyup(e: KeyboardEvent) {
+  submitAnswer(() => {
       showAnswer();
-    });
-  }
+  });
 }
 
 // 输入宽度
@@ -160,15 +175,18 @@ function handleKeydown(e: KeyboardEvent) {
 }
 
 function useCursor() {
+  const useCursorPosition = ref(0)
+
   function setInputCursorPosition(position: number) {
-    inputEl.value?.setSelectionRange(position, position);
+    useCursorPosition.value = position
   }
 
   function getInputCursorPosition() {
-    return inputEl.value?.selectionStart || 0;
+    return useCursorPosition.value
   }
 
   return {
+    useCursorPosition,
     setInputCursorPosition,
     getInputCursorPosition,
   };

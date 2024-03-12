@@ -106,9 +106,10 @@ export function useInput({
 
   function updateActiveWord(position: number) {
     resetAllWordActive();
-
+    // console.log(userInputWords, 999);
     for (let i = 0; i < userInputWords.length; i++) {
       const word = userInputWords[i];
+      // console.log(userInputWords.length, 999, position, word.start, word.end )
       if (position >= word.start && position <= word.end) {
         word.isActive = true;
         break;
@@ -181,6 +182,7 @@ export function useInput({
   }
 
   function submitAnswer(correctCallback: () => void) {
+    console.log(11)
     if (mode === Mode.Fix) return;
     resetAllWordActive();
     markIncorrectWord();

@@ -4,14 +4,16 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <Tool></Tool>
-      <Game></Game>
+      <!-- <Tool></Tool> -->
+      <!-- <Game></Game> -->
+      <MGame></MGame>
     </template>
   </div>
 </template>
 
 <script setup lang="ts">
 import Game from '~/components/main/Game.vue';
+import MGame from '~/components/main/MGame.vue';
 import Tool from '~/components/main/Tool.vue';
 import Loading from '~/components/Loading.vue';
 import { useCourseStore } from "~/store/course";
