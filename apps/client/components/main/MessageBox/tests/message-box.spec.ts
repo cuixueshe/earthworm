@@ -1,25 +1,15 @@
 import { afterEach, describe, expect, test } from "vitest";
 import MessageBox from "../MessageBox";
 import { nextTick } from "vue";
+import { flushPromises } from "@vue/test-utils";
 
 const selector = ".modal";
-
-const rAF = async () => {
-  return new Promise((res) => {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(async () => {
-        res(null);
-        await nextTick();
-      });
-    });
-  });
-};
 
 describe("MessageBox", () => {
   afterEach(async () => {
     MessageBox.close();
     document.body.innerHTML = "";
-    await rAF();
+    await flushPromises();
   });
 
   test("create messageBox", async () => {
@@ -45,12 +35,12 @@ describe("MessageBox", () => {
       MessageBox("此操作将永久删除该文件, 是否继续?", "提示").then((action) => {
         msgAction = action;
       });
-      await rAF();
+      await flushPromises();
       const btn = document
         .querySelector(selector)!
         .querySelector(".confirm") as HTMLButtonElement;
       btn.click();
-      await rAF();
+      await flushPromises();
 
       expect(msgAction).toEqual("confirm");
     });
@@ -62,12 +52,12 @@ describe("MessageBox", () => {
           msgAction = action;
         }
       );
-      await rAF();
+      await flushPromises();
       const btn = document
         .querySelector(selector)!
         .querySelector(".cancel") as HTMLButtonElement;
       btn.click();
-      await rAF();
+      await flushPromises();
 
       expect(msgAction).toEqual("cancel");
     });

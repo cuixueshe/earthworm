@@ -51,7 +51,7 @@ import { useMessage } from "naive-ui";
 import { navigateTo } from "nuxt/app";
 import { useRoute } from "vue-router";
 import { Theme, useDarkMode } from "~/composables/darkMode";
-import MessageBox from "./main/MessageBox.vue";
+import MessageBox from "./main/MessageBox/MessageBox.vue";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
 import { computed } from "vue";
