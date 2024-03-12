@@ -13,7 +13,7 @@ body:
       label: Clear and concise description of the problem
       description: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
     validations:
-      required: false
+      required: true
   - type: textarea
     id: suggested-solution
     attributes:
@@ -27,7 +27,7 @@ body:
         2. Click on '....'
         3. ....
     validations:
-      required: false
+      required: true
   - type: textarea
     validations:
       required: false
