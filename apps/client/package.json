@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "pnpm run test:unit:run &&pnpm run test:e2e:run",
+    "test": "pnpm run test:unit:run && pnpm run test:e2e:run",
     "test:unit:watch": "vitest",
     "test:unit:run": "vitest run",
     "test:e2e:run": "cypress run",
