@@ -7,6 +7,10 @@ export function updateSource(src: string) {
 }
 
 export function play() {
-  audio.play()
+  audio.play();
+}
+
+export function isPlay() {
+  return !audio.ended;
 }
 
