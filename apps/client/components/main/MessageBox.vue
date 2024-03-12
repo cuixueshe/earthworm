@@ -1,5 +1,5 @@
 <template>
-  <dialog class="modal" :open="isShow">
+  <dialog class="modal invisible" :open="isShow">
     <div ref="dialogBoxRef" class="modal-box">
       <h3 class="font-bold text-lg">{{ title }}</h3>
       <p class="py-4">{{ content }}</p>

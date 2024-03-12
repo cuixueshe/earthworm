@@ -14,11 +14,9 @@
               <i class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"></i>
             </div>
           </div>
-          <a class="mr-4" target="_blank" href="https://github.com/cuixueshe/earthworm">
-            <button class="btn w-48 indicator">
+          <a class="mr-4 btn w-48 indicator" target="_blank" href="https://github.com/cuixueshe/earthworm">
               <span class="indicator-item">🌟</span>
               Star us on GitHub
-            </button>
           </a>
           <button @click="handleKeydown"
             class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300">
