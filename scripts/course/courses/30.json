@@ -531,18 +531,18 @@
 	},
 	{
 		"chinese": "人",
-		"english": "man",
-		"soundmark": "/mæn/"
+		"english": "human",
+		"soundmark": "/ˈhjuːmən/"
 	},
 	{
 		"chinese": "人的生命",
-		"english": "man's life",
-		"soundmark": "/mænz/ /laɪf/"
+		"english": "human's life",
+		"soundmark": "/ˈhjuːmənz/ /laɪf/"
 	},
 	{
 		"chinese": "一个人的生命",
-		"english": "a man's life",
-		"soundmark": "/ə/ /mænz/ /laɪf/"
+		"english": "a human's life",
+		"soundmark": "/ə/ /ˈhjuːmənz/ /laɪf/"
 	},
 	{
 		"chinese": "金钱",
@@ -551,8 +551,8 @@
 	},
 	{
 		"chinese": "一个人的生命比金钱是更重要的",
-		"english": "a man's life is more important than money",
-		"soundmark": "/ə/ /mænz/ /laɪf/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /ˈmʌni/"
+		"english": "a human's life is more important than money",
+		"soundmark": "/ə/ /ˈhjuːmənz/ /laɪf/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /ˈmʌni/"
 	},
 	{
 		"chinese": "做",
