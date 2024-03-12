@@ -61,8 +61,7 @@ export function useInput({
 
   function setupUserInputWords() {
     watchEffect(() => {
-      // 赋值前先清空 userInputWords 数组
-      userInputWords.splice(0, userInputWords.length);
+      resetUserInputWords();
 
       const english = source();
       english
@@ -309,6 +308,11 @@ export function useInput({
     }
   }
 
+  function resetUserInputWords () {
+    inputValue.value = "";
+    userInputWords.splice(0, userInputWords.length);
+  }
+
   return {
     inputValue,
     userInputWords,
@@ -318,5 +322,6 @@ export function useInput({
     handleKeyboardInput,
     fixIncorrectWord,
     fixFirstIncorrectWord,
+    resetUserInputWords
   };
 }
