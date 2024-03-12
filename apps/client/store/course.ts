@@ -2,6 +2,8 @@ import { computed, ref, watchEffect, watch } from "vue";
 import { defineStore } from "pinia";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useUserStore } from "~/store/user";
+import { useCourseProgress } from "~/composables/courses/progress";
+import { useActiveCourseId } from "~/composables/courses/activeCourse";
 
 interface Statement {
   id: number;
@@ -14,6 +16,7 @@ export interface Course {
   id: number;
   title: string;
   statements: Statement[];
+  count?: number;
 }
 
 export const useCourseStore = defineStore("course", () => {
@@ -55,8 +58,11 @@ export const useCourseStore = defineStore("course", () => {
     return statementIndex.value + 1 >= totalQuestionsCount.value;
   }
 
+  const { updateActiveCourseId } = useActiveCourseId();
+
   function doAgain() {
     resetStatementIndex();
+    updateActiveCourseId(currentCourse.value?.id!);
   }
 
   function checkCorrect(input: string) {
@@ -109,27 +115,3 @@ export const useCourseStore = defineStore("course", () => {
     resetStatementIndex,
   };
 });
-
-const COURSE_PROGRESS = "courseProgress";
-function useCourseProgress() {
-  function saveProgress(courseId: number, index: number) {
-    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
-    progress[courseId] = index;
-    localStorage.setItem(COURSE_PROGRESS, JSON.stringify(progress));
-  }
-
-  function loadProgress(courseId: number) {
-    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
-    return progress[courseId] || 0;
-  }
-
-  function cleanProgress() {
-    localStorage.removeItem(COURSE_PROGRESS);
-  }
-
-  return {
-    saveProgress,
-    loadProgress,
-    cleanProgress,
-  };
-}
