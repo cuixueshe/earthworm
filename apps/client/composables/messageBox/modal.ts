@@ -10,18 +10,20 @@ export interface IMessageBoxProps {
 export interface EmitsType {
   (event: "update:isShowModal", isShow: boolean): void;
   (event: "confirm"): void;
+  (event: "cancel"): void;
 }
 
 export function useMessageBoxModal(props: IMessageBoxProps, emits: EmitsType) {
   let dialogBoxRef = ref<HTMLElement | null>(null);
 
   function handleConfirm() {
-    handleClose()
     emits("confirm");
+    handleCancel()
   }
 
-  function handleClose() {
+  function handleCancel() {
     isShow.value = false;
+    emits("cancel");
   }
 
   const isShow = computed({
@@ -52,6 +54,6 @@ export function useMessageBoxModal(props: IMessageBoxProps, emits: EmitsType) {
     dialogBoxRef,
     isShow,
     handleConfirm,
-    handleClose
+    handleCancel,
   };
 }

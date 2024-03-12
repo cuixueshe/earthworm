@@ -50,7 +50,7 @@ import { useCourseStore } from "~/store/course";
 import { useGameMode } from "~/composables/main/game";
 import { useRankModal } from "~/composables/rank/modal";
 import ProgressRank from "~/components/rank/ProgressRank.vue";
-import MessageBox from "~/components/main/MessageBox.vue";
+import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankModal = useRankModal();

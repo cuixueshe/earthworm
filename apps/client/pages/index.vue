@@ -120,7 +120,7 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useGameStore } from "~/store/game";
-import MessageBox from "~/components/main/MessageBox.vue";
+import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
