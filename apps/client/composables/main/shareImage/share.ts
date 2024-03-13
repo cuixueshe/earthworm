@@ -1,7 +1,5 @@
 import { ref } from "vue";
 import satori, { type SatoriNode } from "satori";
-import { tpl_1 } from "./imageTtemplates/tpl_1";
-import { useDailySentence } from "../summary";
 import {
   clearCanvas,
   convertSVGtoImg,
@@ -10,7 +8,9 @@ import {
   fontEn,
   fontZh,
 } from "./helper";
-import { tpl_2 } from "./imageTtemplates/tpl_2";
+import { useDailySentence } from "../summary";
+import { tpl_1 } from "./imageTemplates/tpl_1";
+import { tpl_2 } from "./imageTemplates/tpl_2";
 
 export enum ShareImageTemplate {
   TPL_1 = "tpl_1",
@@ -21,8 +21,8 @@ export interface ShareImageTemplateData {
   courseNum: string;
   zhSentence: string;
   enSentence: string;
-  userName: string,
-  dateStr: string,
+  userName: string;
+  dateStr: string;
 }
 
 export const imageTtemplates: Record<
@@ -79,11 +79,10 @@ export function useGenerateShareImage() {
   const { zhSentence, enSentence } = useDailySentence();
 
   const currImageSrc = ref("");
-  const currImageIndex = ref(0)
+  const currImageIndex = ref(0);
   const format = "jpg";
   const fullFormat = `image/${format}`;
   const galleryImgs = ref<GalleryItem[]>([]);
-
 
   const chosenTemplate = (
     templateKey: ShareImageTemplate,
@@ -96,21 +95,31 @@ export function useGenerateShareImage() {
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
       userName,
-      dateStr
+      dateStr,
     });
   };
 
-  const generateGalleryImage = async (courseNum: string, userName: string, dateStr: string) => {
+  const generateGalleryImage = async (
+    courseNum: string,
+    userName: string,
+    dateStr: string
+  ) => {
     Object.values(ShareImageTemplate).forEach(async (template, index) => {
       generateImage(courseNum, template, index, userName, dateStr);
-    })
-  }
+    });
+  };
 
-  const generateImage = async (courseNum: string, template: ShareImageTemplate, index: number, userName: string, dateStr: string) => {
+  const generateImage = async (
+    courseNum: string,
+    template: ShareImageTemplate,
+    index: number,
+    userName: string,
+    dateStr: string
+  ) => {
     const canvasEl = initCanvas();
     galleryImgs.value[index] = {
       src: "",
-      canvasEl
+      canvasEl,
     };
     const svg = await satori(
       chosenTemplate(template, courseNum, userName, dateStr),
@@ -122,7 +131,11 @@ export function useGenerateShareImage() {
     });
 
     // currImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
-    galleryImgs.value[index].src = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    galleryImgs.value[index].src = await convertSVGtoImg(
+      svg,
+      canvasEl,
+      fullFormat
+    );
 
     if (index === 0) {
       currImageSrc.value = galleryImgs.value[index].src;
@@ -135,19 +148,19 @@ export function useGenerateShareImage() {
     currImageIndex.value = 0;
   };
 
-  const copyShareImage = (index: number) => copyImage(galleryImgs.value[index].canvasEl, fullFormat);
+  const copyShareImage = (index: number) =>
+    copyImage(galleryImgs.value[index].canvasEl, fullFormat);
 
   const handleSelectImage = (index: number) => {
     const src = galleryImgs.value[index].src;
-    if (!src) 
-      return
-    currImageSrc.value = src
+    if (!src) return;
+    currImageSrc.value = src;
     currImageIndex.value = index;
-  }
+  };
 
   const preLoadFont = () => {
-    fontEn()
-    fontZh()  
+    fontEn();
+    fontZh();
   };
 
   preLoadFont();
