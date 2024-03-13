@@ -1,4 +1,7 @@
 <template>
+  <div class="relative">
+    <Progress :currentPercentage="currentPercentage"></Progress>
+  </div>
   <div class="h-full pt-20">
     <div class="h-[40vh] flex flex-col justify-center">
       <template v-if="isQuestion()">
@@ -16,6 +19,7 @@
 </template>
 
 <script setup lang="ts">
+import Progress from '~/components/main/Progress.vue';
 import MQuestion from './MQuestion.vue';
 import MAnswer from "./MAnswer.vue";
 import Summary from "./Summary.vue";
@@ -24,10 +28,18 @@ import MTips from "./MTips.vue";
 import AuthRequired from './AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from '~/store/course';
+import { computed } from 'vue';
 
 const { isAnswer, isQuestion } = useGameMode();
 const courseStore = useCourseStore();
-</script>
 
-// button next 
-// char button 
+const currentPercentage = computed(() => {
+  if (courseStore.isAllDone()) {
+    return 100;
+  }
+  return +(
+    (courseStore.statementIndex / courseStore.totalQuestionsCount) *
+    100
+  ).toFixed(2);
+});
+</script>

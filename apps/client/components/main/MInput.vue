@@ -1,13 +1,15 @@
 <template>
-  <div class="text-center pt-10 flex flex-col items-center" @click="handleCharClick">
-    <div v-for="(listItem, index) in charList" :key="index" class="flex">
-      <div v-for="(item, i) in listItem" :key="i"
-        :class="[item === 'Space' ?  'w-48' : item === 'Backspace' ? 'w-24' : 'w-8']"
-        class="char char-button rounded-button border-4 h-8 leading-5 flex-shrink-0 mx-0.5 mb-1">{{ item }}</div>
+  <div class="text-center pt-10 flex flex-col items-center">
+    <div class="flex flex-col items-center" @click="handleCharClick">
+      <div v-for="(listItem, index) in charList" :key="index" class="flex">
+        <div v-for="(item, i) in listItem" :key="i"
+          :class="[item === 'Space' ?  'w-48' : item === 'Backspace' ? 'w-24' : 'w-8']"
+          class="char char-button rounded-button border-4 h-8 leading-5 flex-shrink-0 mx-0.5 mb-1">{{ item }}</div>
+      </div>
     </div>
+  
+    <div @click="submit" class="char-button rounded-button border-4 mt-4 w-48">Submit</div>
   </div>
-
-  <div @click="submit" class="char-button rounded-button border-4 mt-4">Submit</div>
 </template>
 
 <script setup lang="ts">
@@ -44,7 +46,7 @@ function dispatch(text: string, code: string) {
   }
 }
 
-function actions(type: string, {code, text}) {
+function actions(type: string, {code, text}: {code: string, text: string}) {
   if(type === 'Backspace') {
     emits('delInputValue', code)
   return
@@ -65,5 +67,3 @@ function actions(type: string, {code, text}) {
     transform: scale(.9);
 }
 </style>
-
-// 错误的时候 删除 建 删除当前位置的单词 但是不能一直往前删除 这个修复

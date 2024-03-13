@@ -4,9 +4,11 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <!-- <Tool></Tool> -->
-      <!-- <Game></Game> -->
-      <MGame></MGame>
+      <MGame v-if="isMobileSystem()"></MGame>
+      <template v-else>
+        <Tool></Tool>
+        <Game></Game>
+      </template>
     </template>
   </div>
 </template>
@@ -21,6 +23,7 @@ import { useGameMode } from "~/composables/main/game";
 import { useRoute } from "vue-router";
 import { definePageMeta } from "#imports";
 import { onMounted, ref } from "vue";
+import { isMobileSystem } from "~/utils/system";
 
 definePageMeta({
   middleware: "auth",

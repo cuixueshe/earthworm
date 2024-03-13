@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
+    <div class="ml-8 text-xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg class="inline-block ml-1 cursor-pointer w-7 h-7" viewBox="0 0 1024 1024" version="1.1"
         xmlns="http://www.w3.org/2000/svg" @click="handlePlaySound">
@@ -63,7 +63,7 @@ function registerShortcutKeyForNextQuestion() {
     cancelShortcut("enter", handleKeydown);
   });
 }
-
+showSummary();
 function goToNextQuestion() {
   if (courseStore.isAllDone()) {
     showSummary();
