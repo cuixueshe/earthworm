@@ -11,6 +11,7 @@ import { GameModule } from '../game/game.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { CronJobModule } from '../cron-job/cron-job.module';
 import { CourseHistoryModule } from '../course-history/course-history.module';
+import { UserLearnRecordModule } from '../user-learn-record/user-learn-record.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { CourseHistoryModule } from '../course-history/course-history.module';
     AuthModule,
     CourseModule,
     UserProgressModule,
+    UserLearnRecordModule,
     ToolModule,
     RankModule,
     GameModule,

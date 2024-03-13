@@ -17,6 +17,7 @@ import { createStatement } from '../../../test/fixture/statement';
 import { cleanDB, startDB } from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 import { CourseHistoryService } from '../../course-history/course-history.service';
+import { UserLearnRecordService } from '../../user-learn-record/user-learn-record.service';
 
 const user = createUser();
 const firstCourse = createFirstCourse();
@@ -28,6 +29,7 @@ describe('course service', () => {
   let userProgressService: UserProgressService;
   let rankService: RankService;
   let courseHistoryService: CourseHistoryService;
+  let userLearnRecordService: UserLearnRecordService;
 
   beforeAll(async () => {
     const testHelper = await setupTesting();
@@ -38,6 +40,7 @@ describe('course service', () => {
     userProgressService = testHelper.UserProgressService;
     rankService = testHelper.rankService;
     courseHistoryService = testHelper.courseHistoryService;
+    userLearnRecordService = testHelper.userLearnRecordService;
   });
 
   afterAll(async () => {
@@ -109,6 +112,10 @@ describe('course service', () => {
       user.userId,
       user.username,
     );
+    expect(userLearnRecordService.userLearnRecord).toHaveBeenCalledWith(
+      user.userId,
+      firstCourse.id,
+    );
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,
       firstCourse.id,
@@ -131,6 +138,9 @@ async function setupTesting() {
   const mockCourseHistoryService = {
     setCompletionCount: jest.fn(),
   };
+  const mockUserLearnRecordService = {
+    userLearnRecord: jest.fn(),
+  };
 
   const moduleRef = await Test.createTestingModule({
     imports: [
@@ -146,6 +156,7 @@ async function setupTesting() {
       { provide: UserProgressService, useValue: mockUserProgressService },
       { provide: RankService, useValue: mockRankService },
       { provide: CourseHistoryService, useValue: mockCourseHistoryService },
+      { provide: UserLearnRecordService, useValue: mockUserLearnRecordService },
     ],
   }).compile();
 
@@ -156,6 +167,9 @@ async function setupTesting() {
     rankService: moduleRef.get<RankService>(RankService),
     courseHistoryService:
       moduleRef.get<CourseHistoryService>(CourseHistoryService),
+    userLearnRecordService: moduleRef.get<UserLearnRecordService>(
+      UserLearnRecordService,
+    ),
     db: moduleRef.get<DbType>(DB),
     moduleRef,
   };

@@ -3,16 +3,19 @@ import { statement } from "./statement";
 import { user } from "./user";
 import { userProgress } from "./userProgress";
 import { courseHistory } from "./courseHistory";
+import { userLearnRecord } from "./userLearnRecord";
 
 export * from "./course";
 export * from "./statement";
 export * from "./user";
 export * from "./userProgress";
 export * from "./courseHistory";
+export * from "./userLearnRecord";
 export const schemas = {
   course,
   statement,
   user,
   userProgress,
   courseHistory,
+  userLearnRecord,
 };
