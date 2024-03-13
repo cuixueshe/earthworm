@@ -5,6 +5,7 @@
       'state-finished': hasFinished,
       'current-card': currentCourse,
     }"
+    ref="courseCardRef"
   >
     <h3 class="text-base font-bold dark:text-gray-100">{{ title }}</h3>
     <p
@@ -33,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 
 const props = defineProps<{
@@ -41,7 +42,7 @@ const props = defineProps<{
   id: number;
   count: number | undefined;
 }>();
-
+const courseCardRef = ref<HTMLDivElement | null>(null);
 const { activeCourseId } = useActiveCourseId();
 const currentCourse = computed(() => activeCourseId.value == props.id);
 const dataTip = computed(
@@ -49,6 +50,15 @@ const dataTip = computed(
 );
 
 const hasFinished = computed(() => !!props.count);
+
+onMounted(() => {
+  if (currentCourse.value && courseCardRef.value) {
+    courseCardRef.value.scrollIntoView({
+      behavior: "instant",
+      block: "start",
+    });
+  }
+});
 </script>
 
 <style scoped>
