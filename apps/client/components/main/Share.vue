@@ -41,10 +41,13 @@ const {
   currImageIndex
 } = useGenerateShareImage()
 watch(shareModalVisible, newVal => {
-  if (newVal && courseStore.currentCourse?.title && userStore.user?.username) {
+
+  if (newVal && courseStore.currentCourse?.title) {
+    console.log(userStore.user);
+    const username = userStore.user?.username || ''
     const convertedTitle = convertTitleToNumber(courseStore.currentCourse.title);
     const { year, month, day } = getToday()
-    generateGalleryImage(convertedTitle, userStore.user.username, `${year}/${month}/${day}`)
+    generateGalleryImage(convertedTitle, username, `${year}/${month}/${day}`)
   } else {
     clearShareImageSrc()
   }
