@@ -35,4 +35,12 @@ CREATE TABLE `user-progress` (
 	CONSTRAINT `user-progress_id` PRIMARY KEY(`id`)
 );
 --> statement-breakpoint
+CREATE TABLE `user-learn-record` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`course_id` int NOT NULL,
+	`user_id` int NOT NULL,
+	`created_at` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `user-learn-record_id` PRIMARY KEY(`id`)
+);
+--> statement-breakpoint
 ALTER TABLE `statements` ADD CONSTRAINT `statements_course_id_courses_id_fk` FOREIGN KEY (`course_id`) REFERENCES `courses`(`id`) ON DELETE no action ON UPDATE no action;

@@ -1,9 +1,10 @@
 import { it, expect, describe, vi } from "vitest";
-import { useCalendarGraph, format, type EmitsType } from "../calendarGraph";
+import { useCalendarGraph, type EmitsType } from "../calendarGraph";
 
 describe("use calendar graph", () => {
   const emits: EmitsType = vi.fn();
   const {
+    format,
     getOrdinalSuffix,
     getActivityLevel,
     calcStartDate,
