@@ -5,6 +5,7 @@ import { Injectable, Inject, HttpException, HttpStatus } from '@nestjs/common';
 import { UserEntity } from 'src/user/user.decorators';
 import { UserProgressService } from '../user-progress/user-progress.service';
 import { RankService } from '../rank/rank.service';
+import { CourseHistoryService } from '../course-history/course-history.service';
 
 @Injectable()
 export class CourseService {
@@ -12,6 +13,7 @@ export class CourseService {
     @Inject(DB) private db: DbType,
     private readonly userProgressService: UserProgressService,
     private readonly rankService: RankService,
+    private readonly courseHistoryService: CourseHistoryService,
   ) {}
 
   async tryCourse() {
@@ -95,6 +97,7 @@ export class CourseService {
     const nextCourse = await this.findNext(courseId);
     await this.userProgressService.update(user.userId, nextCourse.id);
     await this.rankService.userFinishCourse(user.userId, user.username);
+    await this.courseHistoryService.setCompletionCount(user.userId, courseId);
     return nextCourse;
   }
 }

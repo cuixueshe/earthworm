@@ -99,3 +99,20 @@ body {
 .dark::view-transition-new(root) {
   z-index: 1;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e9e2e243;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1ddddc7;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cecacac7;
+}

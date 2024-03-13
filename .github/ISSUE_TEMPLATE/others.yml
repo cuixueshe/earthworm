@@ -1,0 +1,13 @@
+name: Others
+
+description: Create an issue for earthworm
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear and concise description of the issue. Thanks!
+      placeholder: There are some thing I want to ...
+    validations:
+      required: true

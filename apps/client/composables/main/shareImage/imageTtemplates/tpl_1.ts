@@ -2,15 +2,13 @@
 // 由于调试工具中，使用的是 jsx, 所以需要自己转换成以下格式（借助 GPT）会更方便转换
 // 本模板使用了 tailwindcss，这是 Satori 的实验性功能
 
+import type { ShareImageTemplateData } from "../share";
+
 export const tpl_1 = ({
   zhSentence,
   enSentence,
   courseNum,
-}: {
-  courseNum: string;
-  zhSentence: string;
-  enSentence: string;
-}) => {
+}: ShareImageTemplateData) => {
   return {
     type: "div",
     props: {
