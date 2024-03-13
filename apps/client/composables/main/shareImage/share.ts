@@ -25,7 +25,7 @@ export interface ShareImageTemplateData {
   dateStr: string;
 }
 
-export const imageTtemplates: Record<
+export const imageTemplates: Record<
   ShareImageTemplate,
   (data: ShareImageTemplateData) => Partial<SatoriNode>
 > = {
@@ -90,7 +90,7 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string
   ) => {
-    return imageTtemplates[templateKey]({
+    return imageTemplates[templateKey]({
       courseNum,
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
