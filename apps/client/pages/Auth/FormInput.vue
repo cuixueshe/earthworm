@@ -41,7 +41,6 @@ function updateValue(event: Event) {
   const input = event.target as HTMLInputElement;
   if (props.onlyNumbers) {
     input.value = input.value.replace(/\D/g, '');
-    console.log(input.value); 
   }
   emit("update:modelValue", input.value);
 }
