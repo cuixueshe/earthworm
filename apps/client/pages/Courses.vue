@@ -10,6 +10,7 @@
           <NuxtLink
             :href="`/main/${course.id}`"
             @click="handleChangeCourse(course)"
+            :course-id="course.id"
           >
             <CourseCard
               :title="course.title"
@@ -29,9 +30,12 @@ import { type Course } from "~/store/course";
 import { fetchCourses } from "~/api/course";
 import Loading from "~/components/Loading.vue";
 import CourseCard from "~/components/courses/CourseCard.vue";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, nextTick } from "vue";
 import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useCourseScrollIntoView } from "~/composables/courses/scroll"
+
+const { scrollIntoView } = useCourseScrollIntoView()
 
 const courses = ref<Course[]>([]);
 
@@ -63,9 +67,11 @@ async function getCourses() {
 
 onMounted(async () => {
   courses.value = await getCourses();
+  await nextTick();
+  scrollIntoView(document.querySelector(`[course-id="${activeCourseId.value}"]`)!);
 });
 
-const { updateActiveCourseId } = useActiveCourseId();
+const { updateActiveCourseId, activeCourseId } = useActiveCourseId();
 function handleChangeCourse(course: Course) {
   updateActiveCourseId(course.id);
 }
