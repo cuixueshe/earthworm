@@ -1,777 +1,672 @@
 [
 	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
+		"chinese": "有名的",
+		"english": "famous",
+		"soundmark": "/'feməs/"
 	},
 	{
-		"chinese": "他需要",
-		"english": "he needs",
-		"soundmark": "/hi/ /nidz/"
+		"chinese": "他是有名的",
+		"english": "he is famous",
+		"soundmark": "/hi/ /ɪz/ /'feməs/"
 	},
 	{
-		"chinese": "他需要保持",
-		"english": "he needs to keep",
-		"soundmark": "/hi/ /nidz/ /tə/ /kip/"
+		"chinese": "更",
+		"english": "more",
+		"soundmark": "/mɔr/"
 	},
 	{
-		"chinese": "练习",
-		"english": "to practice",
-		"soundmark": "/tə/ /ˈpræktɪs/"
+		"chinese": "更有名的",
+		"english": "more famous",
+		"soundmark": "/mɔr/ /'feməs/"
 	},
 	{
-		"chinese": "练习(ing形式)",
-		"english": "practicing",
-		"soundmark": "/ˈpræktɪsɪŋ/"
+		"chinese": "他是更有名的",
+		"english": "he is more famous",
+		"soundmark": "/hi/ /ɪz/ /mɔr/ /'feməs/"
 	},
 	{
-		"chinese": "他需要保持练习",
-		"english": "he needs to keep practicing",
-		"soundmark": "/hi/ /nidz/ /tə/ /kip/ /ˈpræktɪsɪŋ/"
+		"chinese": "比我",
+		"english": "than me",
+		"soundmark": "/ðæn/ /mi/"
 	},
 	{
-		"chinese": "技术",
-		"english": "skills",
-		"soundmark": "/'skɪlz/"
+		"chinese": "他是比我更有名的",
+		"english": "he is more famous than me",
+		"soundmark": "/hi/ /ɪz/ /mɔr/ /'feməs/ /ðæn/ /mi/"
 	},
 	{
-		"chinese": "他的技术",
-		"english": "his skills",
-		"soundmark": "/hɪz/ /'skɪlz/"
+		"chinese": "没有人",
+		"english": "nobody",
+		"soundmark": "/ˈnobɑdi/"
 	},
 	{
-		"chinese": "提升",
-		"english": "to improve",
-		"soundmark": "/tə/ /ɪmˈpruv/"
+		"chinese": "迈克尔杰克逊",
+		"english": "Michael Jackson",
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/"
 	},
 	{
-		"chinese": "提升他的技术",
-		"english": "to improve his skills",
-		"soundmark": "/tə/ /ɪmˈpruv/ /hɪz/ /'skɪlz/"
+		"chinese": "没有人比迈克尔杰克逊是更有名的",
+		"english": "nobody is more famous than Michael Jackson",
+		"soundmark": "/ˈnobɑdi/ /ɪz/ /mɔr/ /'feməs/ /ðæn/ /ˈmaɪkəl/ /ˈdʒæksən/"
 	},
 	{
-		"chinese": "他需要保持练习",
-		"english": "he needs to keep practicing",
-		"soundmark": "/hi/ /nidz/ /tə/ /kip/ /ˈpræktɪsɪŋ/"
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "他需要保持练习来提升他的技术",
-		"english": "he needs to keep practicing to improve his skills",
-		"soundmark": "/hi/ /nidz/ /tə/ /kip/ /ˈpræktɪsɪŋ/ /tə/ /ɪmˈpruv/ /hɪz/ /'skɪlz/"
+		"chinese": "最有名的",
+		"english": "the most famous",
+		"soundmark": "/ðə/ /most/ /'feməs/"
 	},
 	{
-		"chinese": "掌握",
-		"english": "to master",
-		"soundmark": "/'mæstɚ/"
+		"chinese": "迈克尔杰克逊是最有名的",
+		"english": "Michael Jackson is the most famous",
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/"
 	},
 	{
-		"chinese": "你将会",
-		"english": "you will",
-		"soundmark": "/ju/ /wɪl/"
+		"chinese": "唱歌",
+		"english": "to sing",
+		"soundmark": "/tə/ /sɪŋ/"
 	},
 	{
-		"chinese": "你将会掌握",
-		"english": "you will master",
-		"soundmark": "/ju/ /wɪl/ /'mæstɚ/"
+		"chinese": "歌手",
+		"english": "singer",
+		"soundmark": "/'sɪŋɚ/"
 	},
 	{
-		"chinese": "那个技术",
-		"english": "the skill",
-		"soundmark": "/ðə/ /'skɪl/"
+		"chinese": "最有名的歌手",
+		"english": "the most famous singer",
+		"soundmark": "/ðə/ /most/ /'feməs/ /'sɪŋɚ/"
 	},
 	{
-		"chinese": "你将会掌握那个技术",
-		"english": "you will master the skill",
-		"soundmark": "/ju/ /wɪl/ /'mæstɚ/ /ðə/ /'skɪl/"
+		"chinese": "迈克尔杰克逊是最有名的歌手",
+		"english": "Michael Jackson is the most famous singer",
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/"
 	},
 	{
-		"chinese": "你保持",
-		"english": "you keep",
-		"soundmark": "/ju/ /kip/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "练习",
-		"english": "to practice",
-		"soundmark": "/tə/ /ˈpræktɪs/"
+		"chinese": "迈克尔杰克逊是在世界上最有名的歌手",
+		"english": "Michael Jackson is the most famous singer in the world",
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "练习(ing形式)",
-		"english": "practicing",
-		"soundmark": "/ˈpræktɪsɪŋ/"
+		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手",
+		"english": "Michael Jackson was the most famous singer in the world",
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /wəz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "你保持练习",
-		"english": "you keep practicing",
-		"soundmark": "/ju/ /kip/ /ˈpræktɪsɪŋ/"
+		"chinese": "歌手",
+		"english": "singer",
+		"soundmark": "/'sɪŋɚ/"
 	},
 	{
-		"chinese": "你保持练习那么你将会掌握那个技术",
-		"english": "you keep practicing and you will master the skill",
-		"soundmark": "/ju/ /kip/ /ˈpræktɪsɪŋ/ /ənd/ /ju/ /wɪl/ /'mæstɚ/ /ðə/ /'skɪl/"
+		"chinese": "两个歌手",
+		"english": "two singers",
+		"soundmark": "/tu/ /'sɪŋɚz/"
 	},
 	{
-		"chinese": "保持练习那么你将会掌握那个技术",
-		"english": "keep practicing and you will master the skill",
-		"soundmark": "/kip/ /ˈpræktɪsɪŋ/ /ənd/ /ju/ /wɪl/ /'mæstɚ/ /ðə/ /'skɪl/"
+		"chinese": "一个",
+		"english": "one",
+		"soundmark": "/wʌn/"
 	},
 	{
-		"chinese": "新的",
-		"english": "new",
-		"soundmark": "/nu/"
+		"chinese": "两个歌手之一",
+		"english": "one of two singers",
+		"soundmark": "/wʌn/ /əv/ /tu/ /'sɪŋɚz/"
 	},
 	{
-		"chinese": "新的技术",
-		"english": "new skills",
-		"soundmark": "/nu/ /'skɪlz/"
+		"chinese": "最有名的歌手们",
+		"english": "the most famous singers",
+		"soundmark": "/ðə/ /most/ /'feməs/ /'sɪŋɚz/"
 	},
 	{
-		"chinese": "学习",
-		"english": "to learn",
-		"soundmark": "/tə/ /lɝn/"
+		"chinese": "最有名的歌手们之一",
+		"english": "one of the most famous singers",
+		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'sɪŋɚz/"
 	},
 	{
-		"chinese": "学习新的技术",
-		"english": "to learn new skills",
-		"soundmark": "/tə/ /lɝn/ /nu/ /'skɪlz/"
+		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手之一",
+		"english": "Michael Jackson was one of the most famous singers in the world",
+		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /wəz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'sɪŋɚz/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "学习新的技术(ing形式)",
-		"english": "learning new skills",
-		"soundmark": "/'lɝnɪŋ/ /nu/ /'skɪlz/"
+		"chinese": "最有名的",
+		"english": "the most famous",
+		"soundmark": "/ðə/ /most/ /'feməs/"
 	},
 	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
+		"chinese": "作画",
+		"english": "to paint",
+		"soundmark": "/tə/ /pent/"
 	},
 	{
-		"chinese": "她保持",
-		"english": "she keeps",
-		"soundmark": "/ʃi/ /kips/"
+		"chinese": "画",
+		"english": "painting",
+		"soundmark": "/'pentɪŋ/"
 	},
 	{
-		"chinese": "她一直学习新的技术",
-		"english": "she keeps learning new skills",
-		"soundmark": "/ʃi/ /kips/ /'lɝnɪŋ/ /nu/ /'skɪlz/"
+		"chinese": "最有名的画",
+		"english": "the most famous painting",
+		"soundmark": "/ðə/ /most/ /'feməs/ /'pentɪŋ/"
 	},
 	{
-		"chinese": "提升",
-		"english": "to improve",
-		"soundmark": "/tə/ /ɪmˈpruv/"
+		"chinese": "蒙娜丽莎",
+		"english": "The Mona Lisa",
+		"soundmark": "/ðə/ /'monə/ /ˈlisə/"
 	},
 	{
-		"chinese": "她自己",
-		"english": "herself",
-		"soundmark": "/hɝ'sɛlf/"
+		"chinese": "蒙娜丽莎是最有名的画",
+		"english": "The Mona Lisa is the most famous painting",
+		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /ðə/ /most/ /'feməs/ /'pentɪŋ/"
 	},
 	{
-		"chinese": "提升她自己",
-		"english": "to improve herself",
-		"soundmark": "/tə/ /ɪmˈpruv/ /hɝ'sɛlf/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "她一直学习新的技术来提升她自己",
-		"english": "she keeps learning new skills to improve herself",
-		"soundmark": "/ʃi/ /kips/ /'lɝnɪŋ/ /nu/ /'skɪlz/ /tə/ /ɪmˈpruv/ /hɝ'sɛlf/"
+		"chinese": "蒙娜丽莎是世界上最有名的画",
+		"english": "The Mona Lisa is the most famous painting in the world",
+		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /ðə/ /most/ /'feməs/ /'pentɪŋ/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "锁",
-		"english": "to lock",
-		"soundmark": "/tə/ /lɑk/"
+		"chinese": "画",
+		"english": "painting",
+		"soundmark": "/'pentɪŋ/"
 	},
 	{
-		"chinese": "门",
-		"english": "the door",
-		"soundmark": "/ðə/ /dɔr/"
+		"chinese": "画（复数）",
+		"english": "paintings",
+		"soundmark": "/'pentɪŋz/"
 	},
 	{
-		"chinese": "锁门",
-		"english": "to lock the door",
-		"soundmark": "/tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "最有名的画（复数）",
+		"english": "the most famous paintings",
+		"soundmark": "/ðə/ /most/ /'feməs/ /'pentɪŋz/"
 	},
 	{
-		"chinese": "忘记",
-		"english": "to forget",
-		"soundmark": "/tə/ /fɚ'ɡɛt/"
+		"chinese": "最有名的画（复数）之一",
+		"english": "one of the most famous paintings",
+		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'pentɪŋz/"
 	},
 	{
-		"chinese": "忘记锁门",
-		"english": "to forget to lock the door",
-		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "蒙娜丽莎",
+		"english": "The Mona Lisa",
+		"soundmark": "/ðə/ /'monə/ /ˈlisə/"
 	},
 	{
-		"chinese": "忘记锁门(ing形式)",
-		"english": "forgetting to lock the door",
-		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
+		"chinese": "蒙娜丽莎是世界上最有名的画之一",
+		"english": "The Mona Lisa is one of the most famous paintings in the world",
+		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'pentɪŋz/ /in the world/"
 	},
 	{
-		"chinese": "她保持",
-		"english": "she keeps",
-		"soundmark": "/ʃi/ /kips/"
+		"chinese": "地",
+		"english": "land",
+		"soundmark": "/lænd/"
 	},
 	{
-		"chinese": "她总是忘记锁门",
-		"english": "she keeps forgetting to lock the door",
-		"soundmark": "/ʃi/ /kips/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "标志",
+		"english": "mark",
+		"soundmark": "/mɑrk/"
 	},
 	{
-		"chinese": "离开",
-		"english": "to leave",
-		"soundmark": "/tə/ /liv/"
+		"chinese": "地标",
+		"english": "landmark",
+		"soundmark": "/ˈlændmɑrk/"
 	},
 	{
-		"chinese": "她离开",
-		"english": "she leaves",
-		"soundmark": "/ʃi/ /livz/"
+		"chinese": "最有名的",
+		"english": "the most famous",
+		"soundmark": "/ðə/ /most/ /'feməs/"
 	},
 	{
-		"chinese": "当......的时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"chinese": "最有名的地标",
+		"english": "the most famous landmark",
+		"soundmark": "/ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "当她离开的时候",
-		"english": "when she leaves",
-		"soundmark": "/wɛn/ /ʃi/ /livz/"
+		"chinese": "塔",
+		"english": "tower",
+		"soundmark": "/'taʊɚ/"
 	},
 	{
-		"chinese": "她总是忘记锁门",
-		"english": "she keeps forgetting to lock the door",
-		"soundmark": "/ʃi/ /kips/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "埃菲尔铁塔",
+		"english": "The Eiffel Tower",
+		"soundmark": "/ði/ /ˈaɪfəl/ /'taʊɚ/"
 	},
 	{
-		"chinese": "她总是忘记锁门当她离开的时候",
-		"english": "she keeps forgetting to lock the door when she leaves",
-		"soundmark": "/ʃi/ /kips/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/ /wɛn/ /ʃi/ /livz/"
+		"chinese": "埃菲尔铁塔是最有名的地标",
+		"english": "The Eiffel Tower is the most famous landmark",
+		"soundmark": "/ði/ /ˈaɪfəl/ /'taʊɚ/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "钥匙",
-		"english": "keys",
-		"soundmark": "/kiz/"
+		"chinese": "巴黎",
+		"english": "Paris",
+		"soundmark": "/ˈpærɪs/"
 	},
 	{
-		"chinese": "他的钥匙",
-		"english": "his keys",
-		"soundmark": "/hɪz/ /kiz/"
+		"chinese": "在巴黎",
+		"english": "in Paris",
+		"soundmark": "/ɪn/ /ˈpærɪs/"
 	},
 	{
-		"chinese": "忘记",
-		"english": "to forget",
-		"soundmark": "/tə/ /fɚ'ɡɛt/"
+		"chinese": "埃菲尔铁塔是巴黎最有名的地标",
+		"english": "The Eiffel Tower is the most famous landmark in Paris",
+		"soundmark": "/ði/ /ˈaɪfəl/ /'taʊɚ/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/ /ɪn/ /ˈpærɪs/"
 	},
 	{
-		"chinese": "忘记他的钥匙",
-		"english": "to forget his keys",
-		"soundmark": "/tə/ /fɚ'ɡɛt/ /hɪz/ /kiz/"
+		"chinese": "最有名的",
+		"english": "the most famous",
+		"soundmark": "/ðə/ /most/ /'feməs/"
 	},
 	{
-		"chinese": "家",
-		"english": "home",
-		"soundmark": "/hom/"
+		"chinese": "地标",
+		"english": "landmark",
+		"soundmark": "/ˈlændmɑrk/"
 	},
 	{
-		"chinese": "在家",
-		"english": "at home",
-		"soundmark": "/ət/ /hom/"
+		"chinese": "最有名的地标",
+		"english": "the most famous landmark",
+		"soundmark": "/ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "忘记他的钥匙在家里",
-		"english": "to forget his keys at home",
-		"soundmark": "/tə/ /fɚ'ɡɛt/ /hɪz/ /kiz/ /ət/ /hom/"
+		"chinese": "墙",
+		"english": "wall",
+		"soundmark": "/wɔl/"
 	},
 	{
-		"chinese": "忘记他的钥匙在家里(ing形式)",
-		"english": "forgetting his keys at home",
-		"soundmark": "/fɚ'ɡɛtɪŋ/ /hɪz/ /kiz/ /ət/ /hom/"
+		"chinese": "伟大的",
+		"english": "great",
+		"soundmark": "/ɡret/"
 	},
 	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
+		"chinese": "长城",
+		"english": "The Great Wall",
+		"soundmark": "/ðə/ /ɡret/ /wɔl/"
 	},
 	{
-		"chinese": "他保持",
-		"english": "he keeps",
-		"soundmark": "/hi/ /kips/"
+		"chinese": "中国",
+		"english": "China",
+		"soundmark": "/ˈtʃaɪnə/"
 	},
 	{
-		"chinese": "他总是忘记他的钥匙在家里",
-		"english": "he keeps forgetting his keys at home",
-		"soundmark": "/hi/ /kips/ /fɚ'ɡɛtɪŋ/ /hɪz/ /kiz/ /ət/ /hom/"
+		"chinese": "中国的长城",
+		"english": "The Great Wall of China",
+		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/"
 	},
 	{
-		"chinese": "想法",
-		"english": "mind",
-		"soundmark": "/maɪnd/"
+		"chinese": "中国的长城是最有名的地标",
+		"english": "The Great Wall of China is the most famous landmark",
+		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "他的想法",
-		"english": "his mind",
-		"soundmark": "/hɪz/ /maɪnd/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "改变",
-		"english": "to change",
-		"soundmark": "/tə/ /tʃendʒ/"
+		"chinese": "中国的长城是世界上最有名的地标",
+		"english": "The Great Wall of China is the most famous landmark in the world",
+		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "改变他的想法",
-		"english": "to change his mind",
-		"soundmark": "/tə/ /tʃendʒ/ /hɪz/ /maɪnd/"
+		"chinese": "地标",
+		"english": "landmark",
+		"soundmark": "/ˈlændmɑrk/"
 	},
 	{
-		"chinese": "改变他的想法(ing形式)",
-		"english": "changing his mind",
-		"soundmark": "/'tʃendʒɪŋ/ /hɪz/ /maɪnd/"
+		"chinese": "地标（复数）",
+		"english": "landmarks",
+		"soundmark": "/ˈlændmɑrks/"
 	},
 	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
+		"chinese": "最有名的地标之一",
+		"english": "one of the most famous landmarks",
+		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /ˈlændmɑrks/"
 	},
 	{
-		"chinese": "他保持",
-		"english": "he keeps",
-		"soundmark": "/hi/ /kips/"
+		"chinese": "中国的长城是世界上最有名的地标之一",
+		"english": "The Great Wall of China is one of the most famous landmarks in the world",
+		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/ /ɪz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /ˈlændmɑrks/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "他总是改变他的想法",
-		"english": "he keeps changing his mind",
-		"soundmark": "/hi/ /kips/ /'tʃendʒɪŋ/ /hɪz/ /maɪnd/"
+		"chinese": "好",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
 	},
 	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
+		"chinese": "更好的",
+		"english": "better",
+		"soundmark": "/ˈbɛtɚ/"
 	},
 	{
-		"chinese": "所有的时间",
-		"english": "all the time",
-		"soundmark": "/ɔl/ /ðə/ /taɪm/"
+		"chinese": "中文",
+		"english": "Chinese",
+		"soundmark": "/tʃaɪˈniz/"
 	},
 	{
-		"chinese": "他(一直)总是改变他的想法",
-		"english": "he keeps changing his mind all the time",
-		"soundmark": "/hi/ /kips/ /'tʃendʒɪŋ/ /hɪz/ /maɪnd/ /ɔl/ /ðə/ /taɪm/"
+		"chinese": "你的",
+		"english": "your",
+		"soundmark": "/jʊr/"
 	},
 	{
-		"chinese": "想法",
-		"english": "mind",
-		"soundmark": "/maɪnd/"
+		"chinese": "你的中文",
+		"english": "your Chinese",
+		"soundmark": "/jʊr/ /tʃaɪˈniz/"
 	},
 	{
-		"chinese": "介意",
-		"english": "to mind",
-		"soundmark": "/tə/ /maɪnd/"
+		"chinese": "英文",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我介意",
-		"english": "I mind",
-		"soundmark": "/aɪ/ /maɪnd/"
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "打开",
-		"english": "to open",
-		"soundmark": "/tə/ /'opən/"
+		"chinese": "我的英文",
+		"english": "my English",
+		"soundmark": "/maɪ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "这个窗户",
-		"english": "the window",
-		"soundmark": "/ðə/ /'wɪndo/"
+		"chinese": "你的中文比我的英文是更好的",
+		"english": "Your Chinese is better than my English",
+		"soundmark": "/jʊr/ /tʃaɪˈniz/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /maɪ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "打开这个窗户",
-		"english": "to open the window",
-		"soundmark": "/tə/ /'opən/ /ðə/ /'wɪndo/"
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "打开这个窗户(ing形式)",
-		"english": "opening the window",
-		"soundmark": "/'opənɪŋ/ /ðə/ /'wɪndo/"
+		"chinese": "完成",
+		"english": "done",
+		"soundmark": "/dʌn/"
 	},
 	{
-		"chinese": "我介意打开这个窗户",
-		"english": "I mind opening the window",
-		"soundmark": "/aɪ/ /maɪnd/ /'opənɪŋ/ /ðə/ /'wɪndo/"
+		"chinese": "完成是更好的",
+		"english": "done is better",
+		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/"
 	},
 	{
-		"chinese": "我不介意打开这个窗户",
-		"english": "I don't mind opening the window",
-		"soundmark": "/aɪ/ /dont/ /maɪnd/ /'opənɪŋ/ /ðə/ /'wɪndo/"
+		"chinese": "完美的",
+		"english": "perfect",
+		"soundmark": "/'pɝfɪkt/"
 	},
 	{
-		"chinese": "支付",
-		"english": "to pay",
-		"soundmark": "/tə/ /pe/"
+		"chinese": "比",
+		"english": "than",
+		"soundmark": "/ðæn/"
 	},
 	{
-		"chinese": "账单",
-		"english": "the bill",
-		"soundmark": "/ðə/ /bɪl/"
+		"chinese": "完成比完美是更好的",
+		"english": "done is better than perfect",
+		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'pɝfɪkt/"
 	},
 	{
-		"chinese": "支付账单",
-		"english": "to pay the bill",
-		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
+		"chinese": "夏天",
+		"english": "summer",
+		"soundmark": "/'sʌmɚ/"
 	},
 	{
-		"chinese": "支付账单(ing形式)",
-		"english": "paying the bill",
-		"soundmark": "/'peɪŋ/ /ðə/ /bɪl/"
+		"chinese": "冬天",
+		"english": "winter",
+		"soundmark": "/'wɪntɚ/"
 	},
 	{
-		"chinese": "介意",
-		"english": "to mind",
-		"soundmark": "/tə/ /maɪnd/"
+		"chinese": "夏天比冬天是更好的",
+		"english": "summer is better than winter",
+		"soundmark": "/'sʌmɚ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'wɪntɚ/"
 	},
 	{
-		"chinese": "他介意",
-		"english": "he minds",
-		"soundmark": "/hi/ /maɪndz/"
+		"chinese": "我认为",
+		"english": "I think",
+		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "他介意支付账单",
-		"english": "he minds paying the bill",
-		"soundmark": "/hi/ /maɪndz/ /'peɪŋ/ /ðə/ /bɪl/"
+		"chinese": "我认为夏天比冬天是更好的",
+		"english": "I think summer is better than winter",
+		"soundmark": "/aɪ/ /θɪŋk/ /'sʌmɚ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'wɪntɚ/"
 	},
 	{
-		"chinese": "他不介意支付账单",
-		"english": "he doesn't mind paying the bill",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'peɪŋ/ /ðə/ /bɪl/"
+		"chinese": "某个东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "玩具",
-		"english": "toy",
-		"soundmark": "/tɔɪ/"
+		"chinese": "没有东西",
+		"english": "nothing",
+		"soundmark": "/'nʌθɪŋ/"
 	},
 	{
-		"chinese": "他的玩具",
-		"english": "his toys",
-		"soundmark": "/hɪz/ /tɔɪz/"
+		"chinese": "某个东西比没有东西是更好的",
+		"english": "something is better than nothing",
+		"soundmark": "/'sʌmθɪŋ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'nʌθɪŋ/"
 	},
 	{
-		"chinese": "分享",
-		"english": "to share",
-		"soundmark": "/tə/ /ʃɛr/"
+		"chinese": "更好的",
+		"english": "better",
+		"soundmark": "/ˈbɛtɚ/"
 	},
 	{
-		"chinese": "分享他的玩具",
-		"english": "to share his toys",
-		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /tɔɪz/"
+		"chinese": "最好的",
+		"english": "the best",
+		"soundmark": "/ðə/ /bɛst/"
+	},
+	{
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"chinese": "你是最好的",
+		"english": "you are the best",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /bɛst/"
+	},
+	{
+		"chinese": "人",
+		"english": "person",
+		"soundmark": "/'pɝsn/"
+	},
+	{
+		"chinese": "你是最好的人",
+		"english": "you are the best person",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /bɛst/ /'pɝsn/"
+	},
+	{
+		"chinese": "认识",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "我认识",
+		"english": "I know",
+		"soundmark": "/aɪ/ /no/"
+	},
+	{
+		"chinese": "最好的人",
+		"english": "the best person",
+		"soundmark": "/ðə/ /bɛst/ /'pɝsn/"
+	},
+	{
+		"chinese": "我认识的最好的人",
+		"english": "the best person I know",
+		"soundmark": "/ðə/ /bɛst/ /'pɝsn/ /aɪ/ /no/"
+	},
+	{
+		"chinese": "你是我认识的最好的人",
+		"english": "you are the best person I know",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /bɛst/ /'pɝsn/ /aɪ/ /no/"
+	},
+	{
+		"chinese": "最好的",
+		"english": "the best",
+		"soundmark": "/ðə/ /bɛst/"
 	},
 	{
 		"chinese": "朋友",
 		"english": "friend",
-		"soundmark": "/frɛnd/"
+		"soundmark": "/frend/"
 	},
 	{
-		"chinese": "他的朋友们",
-		"english": "his friends",
-		"soundmark": "/hɪz/ /frɛndz/"
+		"chinese": "最好的朋友",
+		"english": "the best friend",
+		"soundmark": "/ðə/ /bɛst/ /frend/"
 	},
 	{
-		"chinese": "和",
-		"english": "with",
-		"soundmark": "/wɪð/"
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "和他的朋友们",
-		"english": "with his friends",
-		"soundmark": "/wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "我的最好的朋友",
+		"english": "my best friend",
+		"soundmark": "/maɪ/ /bɛst/ /frend/"
 	},
 	{
-		"chinese": "和他的朋友们分享他的玩具",
-		"english": "to share his toys with his friends",
-		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
 	},
 	{
-		"chinese": "和他的朋友们分享他的玩具（ing 形式）",
-		"english": "sharing his toys with his friends",
-		"soundmark": "/'ʃɛriŋ/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "你是我最好的朋友",
+		"english": "you are my best friend",
+		"soundmark": "/ju/ /ɚ/ /maɪ/ /bɛst/ /frend/"
 	},
 	{
-		"chinese": "他介意",
-		"english": "he minds",
-		"soundmark": "/hi/ /maɪndz/"
+		"chinese": "他们是",
+		"english": "they are",
+		"soundmark": "/ðe/ /ɚ/"
 	},
 	{
-		"chinese": "他介意和他的朋友们分享他的玩具",
-		"english": "he minds sharing his toys with his friends",
-		"soundmark": "/hi/ /maɪndz/ /'ʃɛəriŋ/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "他们是我最好的朋友",
+		"english": "they are my best friends",
+		"soundmark": "/ðe/ /ɚ/ /maɪ/ /bɛst/ /frendz/"
 	},
 	{
-		"chinese": "他不介意和他的朋友们分享他的玩具",
-		"english": "he doesn't mind sharing his toys with his friends",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'ʃɛəriŋ/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "我最好的朋友们",
+		"english": "my best friends",
+		"soundmark": "/maɪ/ /bɛst/ /frendz/"
 	},
 	{
-		"chinese": "他不介意",
-		"english": "he doesn't mind",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+		"chinese": "我最好的朋友们之一",
+		"english": "one of my best friends",
+		"soundmark": "/wʌn/ /əv/ /maɪ/ /bɛst/ /frendz/"
 	},
 	{
-		"chinese": "他的食物",
-		"english": "his food",
-		"soundmark": "/hɪz/ /fud/"
+		"chinese": "他是",
+		"english": "he is",
+		"soundmark": "/hi/ /ɪz/"
 	},
 	{
-		"chinese": "分享",
-		"english": "to share",
-		"soundmark": "/tə/ /ʃɛr/"
+		"chinese": "他是我最好的朋友们之一",
+		"english": "he is one of my best friends",
+		"soundmark": "/hi/ /ɪz/ /wʌn/ /əv/ /maɪ/ /bɛst/ /frendz/"
 	},
 	{
-		"chinese": "分享他的食物",
-		"english": "to share his food",
-		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /fud/"
+		"chinese": "我的最佳",
+		"english": "my best",
+		"soundmark": "/maɪ/ /bɛst/"
 	},
 	{
-		"chinese": "别人",
-		"english": "others",
-		"soundmark": "/'ʌðɚz/"
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "和",
-		"english": "with",
-		"soundmark": "/wɪð/"
+		"chinese": "尽我的最大努力",
+		"english": "to do my best",
+		"soundmark": "/tə/ /du/ /maɪ/ /bɛst/"
 	},
 	{
-		"chinese": "和别人",
-		"english": "with others",
-		"soundmark": "/wɪð/ /'ʌðɚz/"
+		"chinese": "我尽我的最大努力",
+		"english": "I do my best",
+		"soundmark": "/aɪ/ /du/ /maɪ/ /bɛst/"
 	},
 	{
-		"chinese": "和别人分享他的食物",
-		"english": "to share his food with others",
-		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /fud/ /wɪð/ /'ʌðɚz/"
+		"chinese": "我（过去）尽我最大努力",
+		"english": "I did my best",
+		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/"
 	},
 	{
-		"chinese": "和别人分享他的食物(ing形式)",
-		"english": "sharing his food with others",
-		"soundmark": "/'ʃɛriŋ/ /hɪz/ /fud/ /wɪð/ /'ʌðɚz/"
+		"chinese": "平衡",
+		"english": "balance",
+		"soundmark": "/'bæləns/"
 	},
 	{
-		"chinese": "介意",
-		"english": "to mind",
-		"soundmark": "/tə/ /maɪnd/"
+		"chinese": "好的",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
 	},
 	{
-		"chinese": "他介意",
-		"english": "he minds",
-		"soundmark": "/hi/ /maɪndz/"
+		"chinese": "一个好的平衡",
+		"english": "a good balance",
+		"soundmark": "/ə/ /ɡʊd/ /'bæləns/"
 	},
 	{
-		"chinese": "他不介意",
-		"english": "he doesn't mind",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "他不介意和别人分享他的食物",
-		"english": "he doesn't mind sharing his food with others",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'ʃɛriŋ/ /hɪz/ /fud/ /wɪð/ /'ʌðɚz/"
+		"chinese": "保持一个好的平衡",
+		"english": "to keep a good balance",
+		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
 	},
 	{
-		"chinese": "等",
-		"english": "to wait",
-		"soundmark": "/tə/ /wet/"
+		"chinese": "我（过去）尽我最大努力",
+		"english": "I did my best",
+		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/"
 	},
 	{
-		"chinese": "她",
-		"english": "her",
-		"soundmark": "/hɚ/"
+		"chinese": "我（过去）尽我最大努力保持一个好的平衡",
+		"english": "I did my best to keep a good balance",
+		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
 	},
 	{
-		"chinese": "等她",
-		"english": "to wait for her",
-		"soundmark": "/tə/ /wet/ /fɚ/ /hɚ/"
+		"chinese": "工作和生活",
+		"english": "work and life",
+		"soundmark": "/wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "机场",
-		"english": "airport",
-		"soundmark": "/'ɛrpɔrt/"
+		"chinese": "在......之间",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
 	},
 	{
-		"chinese": "在机场",
-		"english": "at the airport",
-		"soundmark": "/ət/ /ði/ /'ɛrpɔrt/"
+		"chinese": "在工作和生活之间",
+		"english": "between work and life",
+		"soundmark": "/bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "在机场等她",
-		"english": "to wait for her at the airport",
-		"soundmark": "/tə/ /wet/ /fɚ/ /hɚ/ /ət/ /ði/ /'ɛrpɔrt/"
+		"chinese": "保持一个好的平衡",
+		"english": "to keep a good balance",
+		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
 	},
 	{
-		"chinese": "在机场等她(ing形式)",
-		"english": "waiting for her at the airport",
-		"soundmark": "/'wetɪŋ/ /fɚ/ /hɚ/ /ət/ /ði/ /'ɛrpɔrt/"
+		"chinese": "在工作和生活之间保持一个好的平衡",
+		"english": "to keep a good balance between work and life",
+		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "他不介意",
-		"english": "he doesn't mind",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+		"chinese": "我（过去）尽我最大努力",
+		"english": "I did my best",
+		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/"
 	},
 	{
-		"chinese": "他不介意在机场等她",
-		"english": "he doesn't mind waiting for her at the airport",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'wetɪŋ/ /fɚ/ /hɚ/ /ət/ /ði/ /'ɛrpɔrt/"
-	},
-	{
-		"chinese": "介意",
-		"english": "to mind",
-		"soundmark": "/tə/ /maɪnd/"
-	},
-	{
-		"chinese": "他们介意",
-		"english": "they mind",
-		"soundmark": "/ðe/ /maɪnd/"
-	},
-	{
-		"chinese": "秘密",
-		"english": "secret",
-		"soundmark": "/'sikrət/"
-	},
-	{
-		"chinese": "他们的秘密",
-		"english": "their secrets",
-		"soundmark": "/ðɛr/ /'sikrəts/"
-	},
-	{
-		"chinese": "分享",
-		"english": "to share",
-		"soundmark": "/tə/ /ʃɛr/"
-	},
-	{
-		"chinese": "分享他们的秘密",
-		"english": "to share their secrets",
-		"soundmark": "/tə/ /ʃɛr/ /ðɛr/ /'sikrəts/"
-	},
-	{
-		"chinese": "任何人",
-		"english": "anyone",
-		"soundmark": "/'ɛnɪwʌn/"
-	},
-	{
-		"chinese": "和",
-		"english": "with",
-		"soundmark": "/wɪð/"
-	},
-	{
-		"chinese": "和任何人",
-		"english": "with anyone",
-		"soundmark": "/wɪð/ /'ɛnɪwʌn/"
-	},
-	{
-		"chinese": "和任何人分享他们的秘密",
-		"english": "to share their secrets with anyone",
-		"soundmark": "/tə/ /ʃɛr/ /ðɛr/ /'sikrəts/ /wɪð/ /'ɛnɪwʌn/"
-	},
-	{
-		"chinese": "和任何人分享他们的秘密(ing形式)",
-		"english": "sharing their secrets with anyone",
-		"soundmark": "/'ʃɛriŋ/ /ðɛr/ /'sikrəts/ /wɪð/ /'ɛnɪwʌn/"
-	},
-	{
-		"chinese": "他们介意",
-		"english": "they mind",
-		"soundmark": "/ðe/ /maɪnd/"
-	},
-	{
-		"chinese": "他们不介意",
-		"english": "they don't mind",
-		"soundmark": "/ðe/ /dont/ /maɪnd/"
-	},
-	{
-		"chinese": "他们不介意和任何人分享他们的秘密",
-		"english": "they don't mind sharing their secrets with anyone",
-		"soundmark": "/ðe/ /dont/ /maɪnd/ /'ʃɛriŋ/ /ðɛr/ /'sikrəts/ /wɪð/ /'ɛnɪwʌn/"
-	},
-	{
-		"chinese": "他介意",
-		"english": "he minds",
-		"soundmark": "/hi/ /maɪndz/"
-	},
-	{
-		"chinese": "建议",
-		"english": "advice",
-		"soundmark": "/əd'vaɪs/"
-	},
-	{
-		"chinese": "一些",
-		"english": "some",
-		"soundmark": "/səm/"
-	},
-	{
-		"chinese": "一些建议",
-		"english": "some advice",
-		"soundmark": "/səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "问题",
-		"english": "problem",
-		"soundmark": "/'prɑbləm/"
-	},
-	{
-		"chinese": "这个问题",
-		"english": "this problem",
-		"soundmark": "/ðɪs/ /'prɑbləm/"
-	},
-	{
-		"chinese": "关于",
-		"english": "about",
-		"soundmark": "/ə'baʊt/"
-	},
-	{
-		"chinese": "关于这个问题",
-		"english": "about this problem",
-		"soundmark": "/ə'baʊt/ /ðɪs/ /'prɑbləm/"
-	},
-	{
-		"chinese": "关于这个问题的一些建议",
-		"english": "some advice about this problem",
-		"soundmark": "/səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
-	},
-	{
-		"chinese": "给",
-		"english": "to give",
-		"soundmark": "/tə/ /ɡɪv/"
-	},
-	{
-		"chinese": "给我",
-		"english": "to give me",
-		"soundmark": "/tə/ /ɡɪv/ /mi/"
-	},
-	{
-		"chinese": "给我一些建议",
-		"english": "to give me some advice",
-		"soundmark": "/tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "给我关于这个问题的一些建议",
-		"english": "to give me some advice about this problem",
-		"soundmark": "/tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
-	},
-	{
-		"chinese": "给我关于这个问题的一些建议（ing 形式）",
-		"english": "giving me some advice about this problem",
-		"soundmark": "/ɡɪviŋ/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
-	},
-	{
-		"chinese": "他介意",
-		"english": "he minds",
-		"soundmark": "/hi/ /maɪndz/"
-	},
-	{
-		"chinese": "他不介意",
-		"english": "he doesn't mind",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
-	},
-	{
-		"chinese": "他不介意给我关于这个问题的一些建议",
-		"english": "he doesn't mind giving me some advice about this problem",
-		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /ɡɪviŋ/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
+		"chinese": "我（过去）尽我最大努力在工作和生活之间保持一个好的平衡",
+		"english": "I did my best to keep a good balance between work and life",
+		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	}
 ]

@@ -1,608 +1,253 @@
 [
 	{
-		"chinese": "有名的",
-		"english": "famous",
-		"soundmark": "/'feməs/"
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "他是有名的",
-		"english": "he is famous",
-		"soundmark": "/hi/ /ɪz/ /'feməs/"
+		"chinese": "保存",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
 	},
 	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
+		"chinese": "钱",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "更有名的",
-		"english": "more famous",
-		"soundmark": "/mɔr/ /'feməs/"
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "他是更有名的",
-		"english": "he is more famous",
-		"soundmark": "/hi/ /ɪz/ /mɔr/ /'feməs/"
+		"chinese": "一些",
+		"english": "some",
+		"soundmark": "/sʌm/"
 	},
 	{
-		"chinese": "比我",
-		"english": "than me",
-		"soundmark": "/ðæn/ /mi/"
+		"chinese": "存一些钱",
+		"english": "to save some money",
+		"soundmark": "/tə/ /sev/ /sʌm/ /ˈmʌni/"
 	},
 	{
-		"chinese": "他是比我更有名的",
-		"english": "he is more famous than me",
-		"soundmark": "/hi/ /ɪz/ /mɔr/ /'feməs/ /ðæn/ /mi/"
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "没有人",
-		"english": "nobody",
-		"soundmark": "/ˈnobɑdi/"
+		"chinese": "我需要存一些钱",
+		"english": "I need to save some money",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/"
 	},
 	{
-		"chinese": "迈克尔杰克逊",
-		"english": "Michael Jackson",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/"
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "没有人比迈克尔杰克逊是更有名的",
-		"english": "nobody is more famous than Michael Jackson",
-		"soundmark": "/ˈnobɑdi/ /ɪz/ /mɔr/ /'feməs/ /ðæn/ /ˈmaɪkəl/ /ˈdʒæksən/"
+		"chinese": "车",
+		"english": "car",
+		"soundmark": "/kɑr/"
 	},
 	{
-		"chinese": "最",
-		"english": "the most",
-		"soundmark": "/ðə/ /most/"
+		"chinese": "新",
+		"english": "new",
+		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "最有名的",
-		"english": "the most famous",
-		"soundmark": "/ðə/ /most/ /'feməs/"
+		"chinese": "一辆新车",
+		"english": "a new car",
+		"soundmark": "/ə/ /nu/ /kɑr/"
 	},
 	{
-		"chinese": "迈克尔杰克逊是最有名的",
-		"english": "Michael Jackson is the most famous",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/"
+		"chinese": "买一辆新车",
+		"english": "to buy a new car",
+		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /kɑr/"
 	},
 	{
-		"chinese": "唱歌",
-		"english": "to sing",
-		"soundmark": "/tə/ /sɪŋ/"
+		"chinese": "我需要存一些钱买一辆新车",
+		"english": "I need to save some money to buy a new car",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /nu/ /kɑr/"
 	},
 	{
-		"chinese": "歌手",
-		"english": "singer",
-		"soundmark": "/'sɪŋɚ/"
+		"chinese": "未来",
+		"english": "the future",
+		"soundmark": "/ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "最有名的歌手",
-		"english": "the most famous singer",
-		"soundmark": "/ðə/ /most/ /'feməs/ /'sɪŋɚ/"
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "迈克尔杰克逊是最有名的歌手",
-		"english": "Michael Jackson is the most famous singer",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/"
+		"chinese": "为了未来",
+		"english": "for the future",
+		"soundmark": "/fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
+		"chinese": "我需要存一些钱",
+		"english": "I need to save some money",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/"
 	},
 	{
-		"chinese": "迈克尔杰克逊是在世界上最有名的歌手",
-		"english": "Michael Jackson is the most famous singer in the world",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "我需要为了未来存一些钱",
+		"english": "I need to save some money for the future",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手",
-		"english": "Michael Jackson was the most famous singer in the world",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /wəz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "每一个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "歌手",
-		"english": "singer",
-		"soundmark": "/'sɪŋɚ/"
+		"chinese": "身体",
+		"english": "body",
+		"soundmark": "/'bɑdi/"
 	},
 	{
-		"chinese": "两个歌手",
-		"english": "two singers",
-		"soundmark": "/tu/ /'sɪŋɚz/"
+		"chinese": "每个人",
+		"english": "everybody",
+		"soundmark": "/'ɛvrɪbɑdi/"
 	},
 	{
-		"chinese": "一个",
-		"english": "one",
-		"soundmark": "/wʌn/"
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "两个歌手之一",
-		"english": "one of two singers",
-		"soundmark": "/wʌn/ /əv/ /tu/ /'sɪŋɚz/"
+		"chinese": "每个人需要",
+		"english": "everybody needs",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/"
 	},
 	{
-		"chinese": "最有名的歌手们",
-		"english": "the most famous singers",
-		"soundmark": "/ðə/ /most/ /'feməs/ /'sɪŋɚz/"
+		"chinese": "为了未来存一些钱",
+		"english": "to save some money for the future",
+		"soundmark": "/tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "最有名的歌手们之一",
-		"english": "one of the most famous singers",
-		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'sɪŋɚz/"
+		"chinese": "每个人需要为了未来存一些钱",
+		"english": "everybody needs to save some money for the future",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手之一",
-		"english": "Michael Jackson was one of the most famous singers in the world",
-		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /wəz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'sɪŋɚz/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "最有名的",
-		"english": "the most famous",
-		"soundmark": "/ðə/ /most/ /'feməs/"
+		"chinese": "足够的",
+		"english": "enough",
+		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "作画",
-		"english": "to paint",
-		"soundmark": "/tə/ /pent/"
+		"chinese": "存足够的钱",
+		"english": "to save enough money",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "画",
-		"english": "painting",
-		"soundmark": "/'pentɪŋ/"
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "最有名的画",
-		"english": "the most famous painting",
-		"soundmark": "/ðə/ /most/ /'feməs/ /'pentɪŋ/"
+		"chinese": "一个房子",
+		"english": "a house",
+		"soundmark": "/ə/ /haʊs/"
 	},
 	{
-		"chinese": "蒙娜丽莎",
-		"english": "The Mona Lisa",
-		"soundmark": "/ðə/ /'monə/ /ˈlisə/"
+		"chinese": "买一个房子",
+		"english": "to buy a house",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "蒙娜丽莎是最有名的画",
-		"english": "The Mona Lisa is the most famous painting",
-		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /ðə/ /most/ /'feməs/ /'pentɪŋ/"
+		"chinese": "存足够的钱买一个房子",
+		"english": "to save enough money to buy a house",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
+		"chinese": "家庭",
+		"english": "family",
+		"soundmark": "/ˈfæməli/"
 	},
 	{
-		"chinese": "蒙娜丽莎是世界上最有名的画",
-		"english": "The Mona Lisa is the most famous painting in the world",
-		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /ðə/ /most/ /'feməs/ /'pentɪŋ/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "他的",
+		"english": "his",
+		"soundmark": "/hɪz/"
 	},
 	{
-		"chinese": "画",
-		"english": "painting",
-		"soundmark": "/'pentɪŋ/"
+		"chinese": "他的家庭",
+		"english": "his family",
+		"soundmark": "/hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "画（复数）",
-		"english": "paintings",
-		"soundmark": "/'pentɪŋz/"
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "最有名的画（复数）",
-		"english": "the most famous paintings",
-		"soundmark": "/ðə/ /most/ /'feməs/ /'pentɪŋz/"
+		"chinese": "为了他的家庭",
+		"english": "for his family",
+		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "最有名的画（复数）之一",
-		"english": "one of the most famous paintings",
-		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'pentɪŋz/"
+		"chinese": "买一个房子",
+		"english": "to buy a house",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "蒙娜丽莎",
-		"english": "The Mona Lisa",
-		"soundmark": "/ðə/ /'monə/ /ˈlisə/"
+		"chinese": "为了他的家庭买一个房子",
+		"english": "to buy a house for his family",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
+		"chinese": "存足够的钱",
+		"english": "to save enough money",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "蒙娜丽莎是世界上最有名的画之一",
-		"english": "The Mona Lisa is one of the most famous paintings in the world",
-		"soundmark": "/ðə/ /'monə/ /ˈlisə/ /ɪz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'pentɪŋz/ /in the world/"
+		"chinese": "为了他的家庭存足够的钱买一个房子",
+		"english": "to save enough money to buy a house for his family",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "地",
-		"english": "land",
-		"soundmark": "/lænd/"
+		"chinese": "尝试",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "标志",
-		"english": "mark",
-		"soundmark": "/mɑrk/"
+		"chinese": "尝试（ing形式）",
+		"english": "trying",
+		"soundmark": "/ˈtraɪɪŋ/"
 	},
 	{
-		"chinese": "地标",
-		"english": "landmark",
-		"soundmark": "/ˈlændmɑrk/"
+		"chinese": "正在尝试",
+		"english": "be trying",
+		"soundmark": "/bi/ /'traɪɪŋ/"
 	},
 	{
-		"chinese": "最有名的",
-		"english": "the most famous",
-		"soundmark": "/ðə/ /most/ /'feməs/"
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "最有名的地标",
-		"english": "the most famous landmark",
-		"soundmark": "/ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
+		"chinese": "他（现在）正在尝试",
+		"english": "he is trying",
+		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/"
 	},
 	{
-		"chinese": "塔",
-		"english": "tower",
-		"soundmark": "/'taʊɚ/"
+		"chinese": "他（现在）正在尝试为了他的家庭存足够的钱买一个房子",
+		"english": "he is trying to save enough money to buy a house for his family",
+		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "埃菲尔铁塔",
-		"english": "The Eiffel Tower",
-		"soundmark": "/ði/ /ˈaɪfəl/ /'taʊɚ/"
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "埃菲尔铁塔是最有名的地标",
-		"english": "The Eiffel Tower is the most famous landmark",
-		"soundmark": "/ði/ /ˈaɪfəl/ /'taʊɚ/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
-	},
-	{
-		"chinese": "巴黎",
-		"english": "Paris",
-		"soundmark": "/ˈpærɪs/"
-	},
-	{
-		"chinese": "在巴黎",
-		"english": "in Paris",
-		"soundmark": "/ɪn/ /ˈpærɪs/"
-	},
-	{
-		"chinese": "埃菲尔铁塔是巴黎最有名的地标",
-		"english": "The Eiffel Tower is the most famous landmark in Paris",
-		"soundmark": "/ði/ /ˈaɪfəl/ /'taʊɚ/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/ /ɪn/ /ˈpærɪs/"
-	},
-	{
-		"chinese": "最有名的",
-		"english": "the most famous",
-		"soundmark": "/ðə/ /most/ /'feməs/"
-	},
-	{
-		"chinese": "地标",
-		"english": "landmark",
-		"soundmark": "/ˈlændmɑrk/"
-	},
-	{
-		"chinese": "最有名的地标",
-		"english": "the most famous landmark",
-		"soundmark": "/ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
-	},
-	{
-		"chinese": "墙",
-		"english": "wall",
-		"soundmark": "/wɔl/"
-	},
-	{
-		"chinese": "伟大的",
-		"english": "great",
-		"soundmark": "/ɡret/"
-	},
-	{
-		"chinese": "长城",
-		"english": "The Great Wall",
-		"soundmark": "/ðə/ /ɡret/ /wɔl/"
-	},
-	{
-		"chinese": "中国",
-		"english": "China",
-		"soundmark": "/ˈtʃaɪnə/"
-	},
-	{
-		"chinese": "中国的长城",
-		"english": "The Great Wall of China",
-		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/"
-	},
-	{
-		"chinese": "中国的长城是最有名的地标",
-		"english": "The Great Wall of China is the most famous landmark",
-		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
-	},
-	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
-	},
-	{
-		"chinese": "中国的长城是世界上最有名的地标",
-		"english": "The Great Wall of China is the most famous landmark in the world",
-		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/ /ɪz/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/ /ɪn/ /ðə/ /wɝld/"
-	},
-	{
-		"chinese": "地标",
-		"english": "landmark",
-		"soundmark": "/ˈlændmɑrk/"
-	},
-	{
-		"chinese": "地标（复数）",
-		"english": "landmarks",
-		"soundmark": "/ˈlændmɑrks/"
-	},
-	{
-		"chinese": "最有名的地标之一",
-		"english": "one of the most famous landmarks",
-		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /ˈlændmɑrks/"
-	},
-	{
-		"chinese": "中国的长城是世界上最有名的地标之一",
-		"english": "The Great Wall of China is one of the most famous landmarks in the world",
-		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/ /ɪz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /ˈlændmɑrks/ /ɪn/ /ðə/ /wɝld/"
-	},
-	{
-		"chinese": "好",
-		"english": "good",
-		"soundmark": "/ɡʊd/"
-	},
-	{
-		"chinese": "更好的",
-		"english": "better",
-		"soundmark": "/ˈbɛtɚ/"
-	},
-	{
-		"chinese": "中文",
-		"english": "Chinese",
-		"soundmark": "/tʃaɪˈniz/"
-	},
-	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
-	},
-	{
-		"chinese": "你的中文",
-		"english": "your Chinese",
-		"soundmark": "/jʊr/ /tʃaɪˈniz/"
-	},
-	{
-		"chinese": "英文",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的英文",
-		"english": "my English",
-		"soundmark": "/maɪ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "你的中文比我的英文是更好的",
-		"english": "Your Chinese is better than my English",
-		"soundmark": "/jʊr/ /tʃaɪˈniz/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /maɪ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "做",
-		"english": "to do",
-		"soundmark": "/tə/ /du/"
-	},
-	{
-		"chinese": "完成",
-		"english": "done",
-		"soundmark": "/dʌn/"
-	},
-	{
-		"chinese": "完成是更好的",
-		"english": "done is better",
-		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/"
-	},
-	{
-		"chinese": "完美的",
-		"english": "perfect",
-		"soundmark": "/'pɝfɪkt/"
-	},
-	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
-	},
-	{
-		"chinese": "完成比完美是更好的",
-		"english": "done is better than perfect",
-		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'pɝfɪkt/"
-	},
-	{
-		"chinese": "夏天",
-		"english": "summer",
-		"soundmark": "/'sʌmɚ/"
-	},
-	{
-		"chinese": "冬天",
-		"english": "winter",
-		"soundmark": "/'wɪntɚ/"
-	},
-	{
-		"chinese": "夏天比冬天是更好的",
-		"english": "summer is better than winter",
-		"soundmark": "/'sʌmɚ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'wɪntɚ/"
-	},
-	{
-		"chinese": "我认为",
-		"english": "I think",
-		"soundmark": "/aɪ/ /θɪŋk/"
-	},
-	{
-		"chinese": "我认为夏天比冬天是更好的",
-		"english": "I think summer is better than winter",
-		"soundmark": "/aɪ/ /θɪŋk/ /'sʌmɚ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'wɪntɚ/"
-	},
-	{
-		"chinese": "某个东西",
-		"english": "something",
-		"soundmark": "/'sʌmθɪŋ/"
-	},
-	{
-		"chinese": "没有东西",
-		"english": "nothing",
-		"soundmark": "/'nʌθɪŋ/"
-	},
-	{
-		"chinese": "某个东西比没有东西是更好的",
-		"english": "something is better than nothing",
-		"soundmark": "/'sʌmθɪŋ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'nʌθɪŋ/"
-	},
-	{
-		"chinese": "更好的",
-		"english": "better",
-		"soundmark": "/ˈbɛtɚ/"
-	},
-	{
-		"chinese": "最好的",
-		"english": "the best",
-		"soundmark": "/ðə/ /bɛst/"
-	},
-	{
-		"chinese": "你是",
-		"english": "you are",
-		"soundmark": "/ju/ /ɚ/"
-	},
-	{
-		"chinese": "你是最好的",
-		"english": "you are the best",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /bɛst/"
-	},
-	{
-		"chinese": "人",
-		"english": "person",
-		"soundmark": "/'pɝsn/"
-	},
-	{
-		"chinese": "你是最好的人",
-		"english": "you are the best person",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /bɛst/ /'pɝsn/"
-	},
-	{
-		"chinese": "认识",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
-	},
-	{
-		"chinese": "我认识",
-		"english": "I know",
-		"soundmark": "/aɪ/ /no/"
-	},
-	{
-		"chinese": "最好的人",
-		"english": "the best person",
-		"soundmark": "/ðə/ /bɛst/ /'pɝsn/"
-	},
-	{
-		"chinese": "我认识的最好的人",
-		"english": "the best person I know",
-		"soundmark": "/ðə/ /bɛst/ /'pɝsn/ /aɪ/ /no/"
-	},
-	{
-		"chinese": "你是我认识的最好的人",
-		"english": "you are the best person I know",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /bɛst/ /'pɝsn/ /aɪ/ /no/"
-	},
-	{
-		"chinese": "最好的",
-		"english": "the best",
-		"soundmark": "/ðə/ /bɛst/"
-	},
-	{
-		"chinese": "朋友",
-		"english": "friend",
-		"soundmark": "/frend/"
-	},
-	{
-		"chinese": "最好的朋友",
-		"english": "the best friend",
-		"soundmark": "/ðə/ /bɛst/ /frend/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的最好的朋友",
-		"english": "my best friend",
-		"soundmark": "/maɪ/ /bɛst/ /frend/"
-	},
-	{
-		"chinese": "你是",
-		"english": "you are",
-		"soundmark": "/ju/ /ɚ/"
-	},
-	{
-		"chinese": "你是我最好的朋友",
-		"english": "you are my best friend",
-		"soundmark": "/ju/ /ɚ/ /maɪ/ /bɛst/ /frend/"
-	},
-	{
-		"chinese": "他们是",
-		"english": "they are",
-		"soundmark": "/ðe/ /ɚ/"
-	},
-	{
-		"chinese": "他们是我最好的朋友",
-		"english": "they are my best friends",
-		"soundmark": "/ðe/ /ɚ/ /maɪ/ /bɛst/ /frendz/"
-	},
-	{
-		"chinese": "我最好的朋友们",
-		"english": "my best friends",
-		"soundmark": "/maɪ/ /bɛst/ /frendz/"
-	},
-	{
-		"chinese": "我最好的朋友们之一",
-		"english": "one of my best friends",
-		"soundmark": "/wʌn/ /əv/ /maɪ/ /bɛst/ /frendz/"
-	},
-	{
-		"chinese": "他是",
-		"english": "he is",
-		"soundmark": "/hi/ /ɪz/"
-	},
-	{
-		"chinese": "他是我最好的朋友们之一",
-		"english": "he is one of my best friends",
-		"soundmark": "/hi/ /ɪz/ /wʌn/ /əv/ /maɪ/ /bɛst/ /frendz/"
-	},
-	{
-		"chinese": "我的最佳",
-		"english": "my best",
-		"soundmark": "/maɪ/ /bɛst/"
-	},
-	{
-		"chinese": "做",
-		"english": "to do",
-		"soundmark": "/tə/ /du/"
-	},
-	{
-		"chinese": "尽我的最大努力",
-		"english": "to do my best",
-		"soundmark": "/tə/ /du/ /maɪ/ /bɛst/"
-	},
-	{
-		"chinese": "我尽我的最大努力",
-		"english": "I do my best",
-		"soundmark": "/aɪ/ /du/ /maɪ/ /bɛst/"
-	},
-	{
-		"chinese": "我（过去）尽我最大努力",
-		"english": "I did my best",
-		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/"
-	},
-	{
-		"chinese": "平衡",
-		"english": "balance",
-		"soundmark": "/'bæləns/"
+		"chinese": "方法",
+		"english": "way",
+		"soundmark": "/we/"
 	},
 	{
 		"chinese": "好的",
@@ -610,63 +255,438 @@
 		"soundmark": "/ɡʊd/"
 	},
 	{
-		"chinese": "一个好的平衡",
-		"english": "a good balance",
-		"soundmark": "/ə/ /ɡʊd/ /'bæləns/"
+		"chinese": "一个好的方法",
+		"english": "a good way",
+		"soundmark": "/ə/ /ɡʊd/ /we/"
 	},
 	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
+		"chinese": "存钱",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "保持一个好的平衡",
-		"english": "to keep a good balance",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
+		"chinese": "存钱的一个好的方法",
+		"english": "a good way to save money",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "我（过去）尽我最大努力",
-		"english": "I did my best",
-		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/"
+		"chinese": "这",
+		"english": "this",
+		"soundmark": "/ðɪs/"
 	},
 	{
-		"chinese": "我（过去）尽我最大努力保持一个好的平衡",
-		"english": "I did my best to keep a good balance",
-		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
+		"chinese": "是",
+		"english": "is",
+		"soundmark": "/ɪz/"
 	},
 	{
-		"chinese": "工作和生活",
-		"english": "work and life",
-		"soundmark": "/wɝk/ /ənd/ /laɪf/"
+		"chinese": "这是",
+		"english": "this is",
+		"soundmark": "/ðɪs/ /ɪz/"
 	},
 	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
+		"chinese": "这是存钱的一个好的方法",
+		"english": "this is a good way to save money",
+		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "在工作和生活之间",
-		"english": "between work and life",
-		"soundmark": "/bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "存钱的一个好的方法是这个",
+		"english": "a good way to save money is this",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/ /ɪz/ /ðɪs/"
 	},
 	{
-		"chinese": "保持一个好的平衡",
-		"english": "to keep a good balance",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
+		"chinese": "保存；节省",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
 	},
 	{
-		"chinese": "在工作和生活之间保持一个好的平衡",
-		"english": "to keep a good balance between work and life",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "我（过去）尽我最大努力",
-		"english": "I did my best",
-		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/"
+		"chinese": "节省时间",
+		"english": "to save time",
+		"soundmark": "/tə/ /sev/ /taɪm/"
 	},
 	{
-		"chinese": "我（过去）尽我最大努力在工作和生活之间保持一个好的平衡",
-		"english": "I did my best to keep a good balance between work and life",
-		"soundmark": "/aɪ/ /dɪd/ /maɪ/ /bɛst/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "钱",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
+	},
+	{
+		"chinese": "节省时间和金钱",
+		"english": "to save time and money",
+		"soundmark": "/tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "尝试（ing形式）",
+		"english": "trying",
+		"soundmark": "/ˈtraɪɪŋ/"
+	},
+	{
+		"chinese": "我（现在）正在尝试",
+		"english": "I am trying",
+		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/"
+	},
+	{
+		"chinese": "我（现在）正在尝试节省时间和金钱",
+		"english": "I am trying to save time and money",
+		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "最好的",
+		"english": "the best",
+		"soundmark": "/ðə/ /bɛst/"
+	},
+	{
+		"chinese": "方法",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"chinese": "最好的方法",
+		"english": "the best way",
+		"soundmark": "/ðə/ /bɛst/ /we/"
+	},
+	{
+		"chinese": "节省时间和金钱",
+		"english": "to save time and money",
+		"soundmark": "/tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "节省时间和金钱最好的方法",
+		"english": "the best way to save time and money",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "计划",
+		"english": "plan",
+		"soundmark": "/plæn/"
+	},
+	{
+		"chinese": "做一个计划",
+		"english": "to make a plan",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
+	},
+	{
+		"chinese": "东西；事情",
+		"english": "thing",
+		"soundmark": "/θɪŋ/"
+	},
+	{
+		"chinese": "任何",
+		"english": "any",
+		"soundmark": "/'ɛni/"
+	},
+	{
+		"chinese": "任何事情",
+		"english": "anything",
+		"soundmark": "/'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做任何事情",
+		"english": "to do anything",
+		"soundmark": "/tə/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "你做任何事情",
+		"english": "you do anything",
+		"soundmark": "/ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "在......之前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "在你做任何事情之前",
+		"english": "before you do anything",
+		"soundmark": "/bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "做一个计划",
+		"english": "to make a plan",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
+	},
+	{
+		"chinese": "在你做任何事情之前做一个计划",
+		"english": "to make a plan before you do anything",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "节省时间和金钱最好的方法",
+		"english": "the best way to save time and money",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"chinese": "节省时间和金钱最好的方法是你做任何事情之前做一个计划",
+		"english": "the best way to save time and money is to make a plan before you do anything",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/ /ɪz/ /tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "保存；节省",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"chinese": "水",
+		"english": "water",
+		"soundmark": "/'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"chinese": "我们必须节约水",
+		"english": "we have to save water",
+		"soundmark": "/wi/ /hæv/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "一个好的方法",
+		"english": "a good way",
+		"soundmark": "/ə/ /ɡʊd/ /we/"
+	},
+	{
+		"chinese": "节约水",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水的一个好的方法",
+		"english": "a good way to save water",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "这是",
+		"english": "this is",
+		"soundmark": "/ðɪs/ /ɪz/"
+	},
+	{
+		"chinese": "这是节约水的一个好的方法",
+		"english": "this is a good way to save water",
+		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水的一个好方法是这个",
+		"english": "a good way to save water is this",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɪs/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "节约水的一个好方法在这里",
+		"english": "a good way to save water is here",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /hɪr/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "节约水的一个好方法在那里",
+		"english": "a good way to save water is there",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɛr/"
+	},
+	{
+		"chinese": "在那里有节约水的一个好方法",
+		"english": "there is a good way to save water",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "一本书",
+		"english": "a book",
+		"soundmark": "/ə/ /bʊk/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "一本书在那里",
+		"english": "a book is there",
+		"soundmark": "/ə/ /bʊk/ /ɪz/ /ðɛr/"
+	},
+	{
+		"chinese": "在那里有一本书",
+		"english": "there is a book",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/"
+	},
+	{
+		"chinese": "桌子",
+		"english": "desk",
+		"soundmark": "/dɛsk/"
+	},
+	{
+		"chinese": "在......上",
+		"english": "on",
+		"soundmark": "/ɑn/"
+	},
+	{
+		"chinese": "在桌子上",
+		"english": "on the desk",
+		"soundmark": "/ɑn/ /ðə/ /dɛsk/"
+	},
+	{
+		"chinese": "有一本书在桌子上",
+		"english": "there is a book on the desk",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /ɑn/ /ðə/ /dɛsk/"
+	},
+	{
+		"chinese": "有一本书在那里",
+		"english": "there is a book there",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /ðɛr/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "有一本书在这里",
+		"english": "there is a book here",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /hɪr/"
+	},
+	{
+		"chinese": "有（单数存在）",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"chinese": "一把刀",
+		"english": "a knife",
+		"soundmark": "/ə/ /naɪf/"
+	},
+	{
+		"chinese": "有一把刀",
+		"english": "there is a knife",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /naɪf/"
+	},
+	{
+		"chinese": "厨房",
+		"english": "kitchen",
+		"soundmark": "/'kɪtʃɪn/"
+	},
+	{
+		"chinese": "在厨房里",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "有一把刀在厨房里",
+		"english": "there is a knife in the kitchen",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /naɪf/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "鸡蛋",
+		"english": "egg",
+		"soundmark": "/ɛɡ/"
+	},
+	{
+		"chinese": "五个",
+		"english": "five",
+		"soundmark": "/faɪv/"
+	},
+	{
+		"chinese": "五个鸡蛋",
+		"english": "five eggs",
+		"soundmark": "/faɪv/ /ɛɡz/"
+	},
+	{
+		"chinese": "有（复数存在）",
+		"english": "there are",
+		"soundmark": "/ðɛr/ /ɚ/"
+	},
+	{
+		"chinese": "有五个鸡蛋",
+		"english": "there are five eggs",
+		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/"
+	},
+	{
+		"chinese": "在厨房里",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "有五个鸡蛋仔厨房里",
+		"english": "there are five eggs in the kitchen",
+		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "保存；节省",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"chinese": "水",
+		"english": "water",
+		"soundmark": "/'wɔtɚ/"
+	},
+	{
+		"chinese": "节约水",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "方法",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"chinese": "许多",
+		"english": "many",
+		"soundmark": "/'mɛni/"
+	},
+	{
+		"chinese": "许多方法",
+		"english": "many ways",
+		"soundmark": "/'mɛni/ /wez/"
+	},
+	{
+		"chinese": "节约水的许多方法",
+		"english": "many ways to save water",
+		"soundmark": "/'mɛni/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "不同的",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"chinese": "节约水的许多不同的方法",
+		"english": "many different ways to save water",
+		"soundmark": "/'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"chinese": "有（复数存在）",
+		"english": "there are",
+		"soundmark": "/ðɛr/ /ɚ/"
+	},
+	{
+		"chinese": "存在节约水的许多不同的方法",
+		"english": "there are many different ways to save water",
+		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
 	}
 ]

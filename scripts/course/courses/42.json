@@ -1,458 +1,203 @@
 [
 	{
-		"chinese": "这个",
-		"english": "this",
-		"soundmark": "/ðɪs/"
+		"chinese": "锁",
+		"english": "to lock",
+		"soundmark": "/tə/ /lɑk/"
 	},
 	{
-		"chinese": "问题",
-		"english": "problem",
-		"soundmark": "/'prɑbləm/"
+		"chinese": "门",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
 	},
 	{
-		"chinese": "这个问题",
-		"english": "this problem",
-		"soundmark": "/ðɪs/ /'prɑbləm/"
+		"chinese": "锁门",
+		"english": "to lock the door",
+		"soundmark": "/lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "解决",
-		"english": "to solve",
-		"soundmark": "/tə/ /sɑlv/"
+		"chinese": "忘记",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
 	},
 	{
-		"chinese": "解决这个问题",
-		"english": "to solve this problem",
-		"soundmark": "/tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
+		"chinese": "忘记锁门",
+		"english": "to forget to lock the door",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "应该",
-		"english": "should",
-		"soundmark": "/ʃʊd/"
+		"chinese": "忘记锁门(ing形式)",
+		"english": "forgetting to lock the door",
+		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我们应该",
-		"english": "we should",
-		"soundmark": "/wi/ /ʃʊd/"
+		"chinese": "承认",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "尝试",
-		"english": "to try",
-		"soundmark": "/tə/ /traɪ/"
+		"chinese": "他们承认",
+		"english": "they admit",
+		"soundmark": "/ðe/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "我们应该尝试",
-		"english": "we should try",
-		"soundmark": "/wi/ /ʃʊd/ /traɪ/"
+		"chinese": "他们(过去)承认",
+		"english": "they admitted",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "解决这个问题",
-		"english": "to solve this problem",
-		"soundmark": "/tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
+		"chinese": "他们(过去)承认忘记锁门",
+		"english": "they admitted forgetting to lock the door",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我们应该尝试解决这个问题",
-		"english": "we should try to solve this problem",
-		"soundmark": "/wi/ /ʃʊd/ /traɪ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
+		"chinese": "灯",
+		"english": "light",
+		"soundmark": "/laɪt/"
 	},
 	{
-		"chinese": "很快",
-		"english": "soon",
-		"soundmark": "/sun/"
+		"chinese": "红色",
+		"english": "red",
+		"soundmark": "/rɛd/"
 	},
 	{
-		"chinese": "可能",
-		"english": "possible",
-		"soundmark": "/'pɑsəbl/"
+		"chinese": "一个红灯",
+		"english": "a red light",
+		"soundmark": "/ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "尽可能地快",
-		"english": "as soon as possible",
-		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
+		"chinese": "跑",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
 	},
 	{
-		"chinese": "我们应该尝试尽快解决这个问题",
-		"english": "we should try to solve this problem as soon as possible",
-		"soundmark": "/wi/ /ʃʊd/ /traɪ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/ /əz/ /sun/ /əz/ /'pɑsəbl/"
+		"chinese": "闯一个红灯",
+		"english": "to run a red light",
+		"soundmark": "/tə/ /rʌn/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
+		"chinese": "闯一个红灯(ing形式)",
+		"english": "running a red light",
+		"soundmark": "/'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "我将会尝试解决这个问题",
-		"english": "I will try to solve this problem",
-		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
+		"chinese": "驾驶",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "设法做到",
-		"english": "to manage",
-		"soundmark": "/tə/ /ˈmænɪdʒ/"
+		"chinese": "司机",
+		"english": "the driver",
+		"soundmark": "/ðə/ /'draɪvɚ/"
 	},
 	{
-		"chinese": "我将会设法解决这个问题",
-		"english": "I will manage to solve this problem",
-		"soundmark": "/aɪ/ /wɪl/ /ˈmænɪdʒ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
+		"chinese": "司机(过去)承认",
+		"english": "the driver admitted",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "家庭作业",
-		"english": "homework",
-		"soundmark": "/’homwɝk/"
+		"chinese": "司机(过去)承认闯一个红灯",
+		"english": "the driver admitted running a red light",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/ /'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "我的家庭作业",
-		"english": "my homework",
-		"soundmark": "/maɪ/ /’homwɝk/"
+		"chinese": "答案",
+		"english": "the answers",
+		"soundmark": "/ði/ /'ænsɚz/"
 	},
 	{
-		"chinese": "完成",
-		"english": "to finish",
-		"soundmark": "/tə/ /ˈfɪnɪʃ/"
+		"chinese": "复制",
+		"english": "to copy",
+		"soundmark": "/tə/ /ˈkɑpɪ/"
 	},
 	{
-		"chinese": "完成我的家庭作业",
-		"english": "to finish my homework",
-		"soundmark": "/tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/"
+		"chinese": "抄答案",
+		"english": "to copy the answers",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/"
 	},
 	{
-		"chinese": "我将会尝试完成我的家庭作业",
-		"english": "I will try to finish my homework",
-		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/"
+		"chinese": "同学",
+		"english": "classmate",
+		"soundmark": "/'klæsmet/"
 	},
 	{
-		"chinese": "就寝时间",
-		"english": "bedtime",
-		"soundmark": "/'bɛdtaɪm/"
+		"chinese": "从......那里",
+		"english": "from",
+		"soundmark": "/frʌm/"
 	},
 	{
-		"chinese": "在......之前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"chinese": "从一个同学那里",
+		"english": "from a classmate",
+		"soundmark": "/frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "在睡觉之前",
-		"english": "before bedtime",
-		"soundmark": "/bɪ'fɔr/ /'bɛdtaɪm/"
+		"chinese": "从一个同学那里抄答案",
+		"english": "to copy the answers from a classmate",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "我将会尝试在睡觉之前完成我的家庭作业",
-		"english": "I will try to finish my homework before bedtime",
-		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/ /bɪ'fɔr/ /'bɛdtaɪm/"
+		"chinese": "从一个同学那里抄答案(ing形式)",
+		"english": "copying the answers from a classmate",
+		"soundmark": "/ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "设法做到",
-		"english": "to manage",
-		"soundmark": "/tə/ /ˈmænɪdʒ/"
+		"chinese": "那个学生",
+		"english": "the student",
+		"soundmark": "/ðə/ /'studnt/"
 	},
 	{
-		"chinese": "我将会设法在睡觉之前完成我的家庭作业",
-		"english": "I will manage to finish my homework before bedtime",
-		"soundmark": "/aɪ/ /wɪl/ /ˈmænɪdʒ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/ /bɪ'fɔr/ /'bɛdtaɪm/"
+		"chinese": "那个学生(过去)承认",
+		"english": "the student admitted",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "设法做到",
-		"english": "to manage",
-		"soundmark": "/tə/ /ˈmænɪdʒ/"
+		"chinese": "那个学生(过去)承认从一个学生那里抄答案",
+		"english": "the student admitted copying the answers from a classmate",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/ /ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "做",
-		"english": "to do",
-		"soundmark": "/tə/ /du/"
+		"chinese": "迟到的",
+		"english": "late",
+		"soundmark": "/let/"
 	},
 	{
-		"chinese": "做这件事",
-		"english": "to do it",
-		"soundmark": "/tə/ /du/ /ɪt/"
+		"chinese": "她是迟到的",
+		"english": "she is late",
+		"soundmark": "/ʃi/ /ɪz/ /let/"
 	},
 	{
-		"chinese": "你做这件事",
-		"english": "you do it",
-		"soundmark": "/ju/ /du/ /ɪt/"
+		"chinese": "碰面；见到",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "没有",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"chinese": "会议",
+		"english": "meeting",
+		"soundmark": "/'mitɪŋ/"
 	},
 	{
-		"chinese": "你没有做这件事",
-		"english": "you don't do it",
-		"soundmark": "/ju/ /dont/ /du/ /ɪt/"
+		"chinese": "为了；对于",
+		"english": "for",
+		"soundmark": "/fɚ/"
 	},
 	{
-		"chinese": "你有做这件事",
-		"english": "you do do it",
-		"soundmark": "/ju/ /du/ /du/ /ɪt/"
+		"chinese": "对于这个会议",
+		"english": "for the meeting",
+		"soundmark": "/fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "你没有做这件事",
-		"english": "you don't do it",
-		"soundmark": "/ju/ /dont/ /du/ /ɪt/"
+		"chinese": "她是迟到的对于这个会议",
+		"english": "she is late for the meeting",
+		"soundmark": "/ʃi/ /ɪz/ /let/ /fɚ/ /ðə/ /'mitɪŋ/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "你(过去)没有做这件事",
-		"english": "you didn't do it",
-		"soundmark": "/ju/ /ˈdɪdnt/ /du/ /ɪt/"
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "你(过去)有做这件事",
-		"english": "you did do it",
-		"soundmark": "/ju/ /dɪd/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "你(过去)有做这件事吗？",
-		"english": "did you do it",
-		"soundmark": "/dɪd/ /ju/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "如何",
-		"english": "how",
-		"soundmark": "/haʊ/"
-	},
-	{
-		"chinese": "你(过去)如何做这件事的？ ",
-		"english": "how did you do it",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "设法做到",
-		"english": "to manage",
-		"soundmark": "/tə/ /ˈmænɪdʒ/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到这件事的？",
-		"english": "how did you manage to do it",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到......",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
-	},
-	{
-		"chinese": "到达",
-		"english": "to get",
-		"soundmark": "/tə/ /ɡɛt/"
-	},
-	{
-		"chinese": "这里",
-		"english": "here",
-		"soundmark": "/hɪr/"
-	},
-	{
-		"chinese": "到达这里",
-		"english": "to get here",
-		"soundmark": "/tə/ /ɡɛt/ /hɪr/"
-	},
-	{
-		"chinese": "迅速地",
-		"english": "quickly",
-		"soundmark": "/ˈkwɪklɪ/"
-	},
-	{
-		"chinese": "如此",
-		"english": "so",
-		"soundmark": "/so/"
-	},
-	{
-		"chinese": "如此迅速地",
-		"english": "so quickly",
-		"soundmark": "/so/ /ˈkwɪklɪ/"
-	},
-	{
-		"chinese": "如此迅速地到达这里",
-		"english": "to get here so quickly",
-		"soundmark": "/tə/ /ɡɛt/ /hɪr/ /so/ /ˈkwɪklɪ/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到如此迅速地到达这里的？",
-		"english": "how did you manage to get here so quickly",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /ɡɛt/ /hɪr/ /so/ /ˈkwɪklɪ/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
-	},
-	{
-		"chinese": "钱",
-		"english": "money",
-		"soundmark": "/ˈmʌni/"
-	},
-	{
-		"chinese": "做",
-		"english": "to make",
-		"soundmark": "/tə/ /mek/"
-	},
-	{
-		"chinese": "赚钱",
-		"english": "to make money",
-		"soundmark": "/tə/ /mek/ /ˈmʌni/"
-	},
-	{
-		"chinese": "如此",
-		"english": "so",
-		"soundmark": "/so/"
-	},
-	{
-		"chinese": "多",
-		"english": "much",
-		"soundmark": "/mʌtʃ/"
-	},
-	{
-		"chinese": "如此多",
-		"english": "so much",
-		"soundmark": "/so/ /mʌtʃ/"
-	},
-	{
-		"chinese": "钱",
-		"english": "money",
-		"soundmark": "/ˈmʌni/"
-	},
-	{
-		"chinese": "如此多的钱",
-		"english": "so much money",
-		"soundmark": "/so/ /mʌtʃ/ /ˈmʌni/"
-	},
-	{
-		"chinese": "做",
-		"english": "to make",
-		"soundmark": "/tə/ /mek/"
-	},
-	{
-		"chinese": "赚如此多的钱",
-		"english": "to make so much money",
-		"soundmark": "/tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到赚如此多的钱的？",
-		"english": "how did you manage to make so much money",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
-	},
-	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "短",
-		"english": "short",
-		"soundmark": "/ʃɔrt/"
-	},
-	{
-		"chinese": "一段短的时间",
-		"english": "a short time",
-		"soundmark": "/ə/ /ʃɔrt/ /taɪm/"
-	},
-	{
-		"chinese": "在......里",
-		"english": "in",
-		"soundmark": "/ɪn/"
-	},
-	{
-		"chinese": "在一段短的时间里",
-		"english": "in a short time",
-		"soundmark": "/ɪn/ /ə/ /ʃɔrt/ /taɪm/"
-	},
-	{
-		"chinese": "如此",
-		"english": "such",
-		"soundmark": "/sʌtʃ/"
-	},
-	{
-		"chinese": "在一段如此短的时间里",
-		"english": "in such a short time",
-		"soundmark": "/ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到赚如此多的钱的？",
-		"english": "how did you manage to make so much money",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到在一段如此短的时间里赚如此多的钱的？",
-		"english": "how did you manage to make so much money in such a short time",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/ /ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
-	},
-	{
-		"chinese": "写",
-		"english": "to write",
-		"soundmark": "/tə/ /raɪt/"
-	},
-	{
-		"chinese": "这本书",
-		"english": "this book",
-		"soundmark": "/ðɪs/ /bʊk/"
-	},
-	{
-		"chinese": "写这本书",
-		"english": "to write this book",
-		"soundmark": "/tə/ /raɪt/ /ðɪs/ /bʊk/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到写这本书的？",
-		"english": "how did you manage to write this book",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/"
-	},
-	{
-		"chinese": "监狱",
-		"english": "prison",
-		"soundmark": "/ˈprɪzn/"
-	},
-	{
-		"chinese": "在监狱里",
-		"english": "in prison",
-		"soundmark": "/ɪn/ /ˈprɪzn/"
-	},
-	{
-		"chinese": "你",
-		"english": "you",
-		"soundmark": "/ju/"
-	},
-	{
-		"chinese": "你在监狱里",
-		"english": "you are in prison",
-		"soundmark": "/ju/ /ɚ/ /ɪn/ /ˈprɪzn/"
-	},
-	{
-		"chinese": "你(过去)在监狱里",
-		"english": "you were in prison",
-		"soundmark": "/ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
-	},
-	{
-		"chinese": "当",
-		"english": "when",
-		"soundmark": "/wɛn/"
-	},
-	{
-		"chinese": "当你(过去)在监狱里",
-		"english": "when you were in prison",
-		"soundmark": "/wɛn/ /ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到写这本书的？",
-		"english": "how did you manage to write this book",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/"
-	},
-	{
-		"chinese": "你(过去)如何设法做到写这本书的当你(过去)在监狱里？",
-		"english": "how did you manage to write this book when you were in prison",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/ /wɛn/ /ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
+		"chinese": "她(过去)承认是迟到的对于这个会议",
+		"english": "she admitted being late for the meeting",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /let/ /fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
 		"chinese": "说话",
@@ -475,44 +220,79 @@
 		"soundmark": "/ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "恐惧",
-		"english": "fear",
-		"soundmark": "/fɪr/"
+		"chinese": "害怕的",
+		"english": "afraid",
+		"soundmark": "/ə'fred/"
 	},
 	{
-		"chinese": "公开演讲的恐惧",
-		"english": "fear of public speaking",
-		"soundmark": "/fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "她是害怕的",
+		"english": "she is afraid",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/"
 	},
 	{
-		"chinese": "你的公开演讲的恐惧",
-		"english": "your fear of public speaking",
-		"soundmark": "/jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "她害怕公开演讲",
+		"english": "she is afraid of public speaking",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "克服",
-		"english": "to overcome",
-		"soundmark": "/tə/ /ˌovɚˈkʌm/"
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "克服你的公开演讲的恐惧",
-		"english": "to overcome your fear of public speaking",
-		"soundmark": "/tə/ /ˌovɚˈkʌm/ /jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "她(过去)承认",
+		"english": "she admitted",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
+		"chinese": "她(过去)承认害怕公开演讲",
+		"english": "she admitted being afraid of public speaking",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到克服你的公开演讲的恐惧的？",
-		"english": "how did you manage to overcome your fear of public speaking",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /ˌovɚˈkʌm/ /jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "食物",
+		"english": "food",
+		"soundmark": "/fud/"
 	},
 	{
-		"chinese": "工作",
-		"english": "work",
-		"soundmark": "/wɝk/"
+		"chinese": "垃圾",
+		"english": "junk",
+		"soundmark": "/dʒʌŋk/"
+	},
+	{
+		"chinese": "垃圾食物",
+		"english": "junk food",
+		"soundmark": "/dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "吃垃圾食物",
+		"english": "to eat junk food",
+		"soundmark": "/tə/ /it/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "吃垃圾食物(ing形式)",
+		"english": "eating junk food",
+		"soundmark": "/'itɪŋ/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "她避免",
+		"english": "she avoids",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/"
+	},
+	{
+		"chinese": "她避免吃垃圾食物",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
 		"chinese": "生活",
@@ -520,29 +300,159 @@
 		"soundmark": "/laɪf/"
 	},
 	{
-		"chinese": "工作和生活",
-		"english": "work and life",
-		"soundmark": "/wɝk/ /ənd/ /laɪf/"
+		"chinese": "方式",
+		"english": "style",
+		"soundmark": "/staɪl/"
 	},
 	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
+		"chinese": "生活方式",
+		"english": "lifestyle",
+		"soundmark": "/'laɪfstaɪl/"
 	},
 	{
-		"chinese": "在工作和生活之间",
-		"english": "between work and life",
-		"soundmark": "/bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
 	},
 	{
-		"chinese": "平衡",
-		"english": "the balance",
-		"soundmark": "/ðə/ /'bæləns/"
+		"chinese": "一个健康的生活方式",
+		"english": "a healthy lifestyle",
+		"soundmark": "/ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "在工作和生活之间的平衡",
-		"english": "the balance between work and life",
-		"soundmark": "/ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "保持",
+		"english": "to maintain",
+		"soundmark": "/tə/ /menˈten/"
+	},
+	{
+		"chinese": "保持一个健康的生活方式",
+		"english": "to maintain a healthy lifestyle",
+		"soundmark": "/tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
+	},
+	{
+		"chinese": "她避免吃垃圾食物",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "她避免吃垃圾食物来保持一个健康的生活方式",
+		"english": "she avoids eating junk food to maintain a healthy lifestyle",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/ /tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉事实",
+		"english": "to tell the truth",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉事实(ing形式)",
+		"english": "telling the truth",
+		"soundmark": "/ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "她(过去)避免",
+		"english": "she avoided",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/"
+	},
+	{
+		"chinese": "她(过去)避免告诉事实",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "说谎",
+		"english": "to lie",
+		"soundmark": "/tə/ /laɪ/"
+	},
+	{
+		"chinese": "说谎(ing形式)",
+		"english": "lying",
+		"soundmark": "/'laɪɪŋ/"
+	},
+	{
+		"chinese": "父母",
+		"english": "parents",
+		"soundmark": "/'pɛrənts/"
+	},
+	{
+		"chinese": "她的父母",
+		"english": "her parents",
+		"soundmark": "/hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "向她的父母说谎(ing形式)",
+		"english": "lying to her parents",
+		"soundmark": "/'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过向她的父母说谎",
+		"english": "by lying to her parents",
+		"soundmark": "/baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "她(过去)避免告诉事实",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "她通过向她的父母说谎来(过去)避免告诉事实",
+		"english": "she avoided telling the truth by lying to her parents",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/ /baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "伤害",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "伤害她",
+		"english": "to hurt her",
+		"soundmark": "/tə/ /hɝt/ /hɚ/"
+	},
+	{
+		"chinese": "伤害她(ing形式)",
+		"english": "hurting her",
+		"soundmark": "/ˈhɝtɪŋ/ /hɚ/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "我(过去)避免",
+		"english": "I avoided",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/"
+	},
+	{
+		"chinese": "我(过去)避免伤害她",
+		"english": "I avoided hurting her",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/"
 	},
 	{
 		"chinese": "保持",
@@ -550,98 +460,253 @@
 		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "保持在工作和生活之间的平衡",
-		"english": "to keep the balance between work and life",
-		"soundmark": "/tə/ /kip/ /ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "沉默",
+		"english": "silent",
+		"soundmark": "/'saɪlənt/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
+		"chinese": "保持沉默",
+		"english": "to keep silent",
+		"soundmark": "/tə/ /kip/ /'saɪlənt/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到保持在工作和生活之间的平衡的？",
-		"english": "how did you manage to keep the balance between work and life",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /kip/ /ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
+		"chinese": "保持沉默(ing形式)",
+		"english": "keeping silent",
+		"soundmark": "/'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "钱",
-		"english": "money",
-		"soundmark": "/ˈmʌni/"
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "足够的",
-		"english": "enough",
-		"soundmark": "/ɪ'nʌf/"
+		"chinese": "通过保持沉默",
+		"english": "by keeping silent",
+		"soundmark": "/baɪ/ /'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "足够的钱",
-		"english": "enough money",
-		"soundmark": "/ɪ'nʌf/ /ˈmʌni/"
+		"chinese": "我通过保持沉默来(过去)避免伤害她",
+		"english": "I avoided hurting her by keeping silent",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/ /baɪ/ /'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "存",
-		"english": "to save",
-		"soundmark": "/tə/ /sev/"
+		"chinese": "迟到的",
+		"english": "late",
+		"soundmark": "/let/"
 	},
 	{
-		"chinese": "存足够的钱",
-		"english": "to save enough money",
-		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
+		"chinese": "我是迟到的",
+		"english": "I am late",
+		"soundmark": "/aɪ/ /æm/ /let/"
 	},
 	{
-		"chinese": "度假",
-		"english": "vacation",
-		"soundmark": "/veˈkeʃn/"
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "那个度假",
-		"english": "that vacation",
-		"soundmark": "/ðæt/ /veˈkeʃn/"
+		"chinese": "我(过去)避免迟到",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
 	},
 	{
-		"chinese": "为那个度假存足够的钱",
-		"english": "to save enough money for that vacation",
-		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
+		"chinese": "出租车",
+		"english": "taxi",
+		"soundmark": "/'tæksi/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
-		"english": "how did you manage",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
+		"chinese": "乘坐",
+		"english": "to take",
+		"soundmark": "/tə/ /tek/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
-		"english": "how did you manage to save enough money for that vacation",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
+		"chinese": "乘坐一辆出租车",
+		"english": "to take a taxi",
+		"soundmark": "/tə/ /tek/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "短",
-		"english": "short",
-		"soundmark": "/ʃɔrt/"
+		"chinese": "乘坐一辆出租车(ing形式)",
+		"english": "taking a taxi",
+		"soundmark": "/ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "一段短的时间",
-		"english": "a short time",
-		"soundmark": "/ə/ /ʃɔrt/ /taɪm/"
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "在一段短的时间里",
-		"english": "in a short time",
-		"soundmark": "/ɪn/ /ə/ /ʃɔrt/ /taɪm/"
+		"chinese": "通过乘坐一辆出租车",
+		"english": "by taking a taxi",
+		"soundmark": "/baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "在一段如此短的时间里",
-		"english": "in such a short time",
-		"soundmark": "/ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
+		"chinese": "我(过去)避免迟到",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
-		"english": "how did you manage to save enough money for that vacation",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
+		"chinese": "我通过乘坐一辆出租车来(过去)避免迟到",
+		"english": "I avoided being late by taking a taxi",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/ /baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到在一段如此短的时间里为那个度假存足够的钱的？",
-		"english": "how did you manage to save enough money for that vacation in such a short time",
-		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/ /ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "他避免",
+		"english": "he avoids",
+		"soundmark": "/hi/ /əˈvɔɪdz/"
+	},
+	{
+		"chinese": "抽烟",
+		"english": "to smoke",
+		"soundmark": "/tə/ /smok/"
+	},
+	{
+		"chinese": "抽烟(ing形式)",
+		"english": "smoking",
+		"soundmark": "/'smokɪŋ/"
+	},
+	{
+		"chinese": "他避免抽烟",
+		"english": "he avoids smoking",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/"
+	},
+	{
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
+	},
+	{
+		"chinese": "健康",
+		"english": "health",
+		"soundmark": "/hɛlθ/"
+	},
+	{
+		"chinese": "他的健康",
+		"english": "his health",
+		"soundmark": "/hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "保护",
+		"english": "to protect",
+		"soundmark": "/tə/ /prə'tɛkt/"
+	},
+	{
+		"chinese": "保护他的健康",
+		"english": "to protect his health",
+		"soundmark": "/tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "他避免抽烟来保护他的健康",
+		"english": "he avoids smoking to protect his health",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/ /tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "谎言",
+		"english": "lie",
+		"soundmark": "/laɪ/"
+	},
+	{
+		"chinese": "一个谎言",
+		"english": "a lie",
+		"soundmark": "/ə/ /laɪ/"
+	},
+	{
+		"chinese": "白色的",
+		"english": "white",
+		"soundmark": "/waɪt/"
+	},
+	{
+		"chinese": "一个善意的谎言",
+		"english": "a white lie",
+		"soundmark": "/ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "说一个善意的谎言",
+		"english": "to tell a white lie",
+		"soundmark": "/tə/ /tɛl/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "说一个善意的谎言(ing形式)",
+		"english": "telling a white lie",
+		"soundmark": "/ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "承认",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
+	},
+	{
+		"chinese": "他(过去)承认",
+		"english": "he admitted",
+		"soundmark": "/hi/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言(ing形式)",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "感觉",
+		"english": "to feel",
+		"soundmark": "/tə/ /fil/"
+	},
+	{
+		"chinese": "感情",
+		"english": "feelings",
+		"soundmark": "/'filɪŋz/"
+	},
+	{
+		"chinese": "某个人",
+		"english": "someone",
+		"soundmark": "/'sʌmwʌn/"
+	},
+	{
+		"chinese": "某个人的感情",
+		"english": "someone's feelings",
+		"soundmark": "/'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "伤害",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
+	},
+	{
+		"chinese": "伤害某个人的感情",
+		"english": "to hurt someone's feelings",
+		"soundmark": "/tə/ /hɝt/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "伤害某个人的感情(ing形式)",
+		"english": "hurting someone's feelings",
+		"soundmark": "/ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "避免伤害某个人的感情",
+		"english": "to avoid hurting someone's feelings",
+		"soundmark": "/tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言来避免伤害某个人的感情",
+		"english": "he admitted telling a white lie to avoid hurting someone's feelings",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /tə/ /ədˈmɪt/ /tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	}
 ]

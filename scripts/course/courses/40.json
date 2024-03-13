@@ -1,583 +1,193 @@
 [
 	{
-		"chinese": "允许",
-		"english": "to permit",
-		"soundmark": "/tə/ /pɚˈmɪt/"
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "老师",
-		"english": "the teacher",
-		"soundmark": "/ðə/ /'titʃɚ/"
+		"chinese": "他需要",
+		"english": "he needs",
+		"soundmark": "/hi/ /nidz/"
 	},
 	{
-		"chinese": "老师允许",
-		"english": "the teacher permits",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/"
+		"chinese": "他需要保持",
+		"english": "he needs to keep",
+		"soundmark": "/hi/ /nidz/ /tə/ /kip/"
 	},
 	{
-		"chinese": "唱歌",
-		"english": "to sing",
-		"soundmark": "/tə/ /sɪŋ/"
+		"chinese": "练习",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
 	},
 	{
-		"chinese": "课堂",
-		"english": "class",
-		"soundmark": "/klæs/"
+		"chinese": "练习(ing形式)",
+		"english": "practicing",
+		"soundmark": "/ˈpræktɪsɪŋ/"
 	},
 	{
-		"chinese": "在",
-		"english": "in",
-		"soundmark": "/ɪn/"
+		"chinese": "他需要保持练习",
+		"english": "he needs to keep practicing",
+		"soundmark": "/hi/ /nidz/ /tə/ /kip/ /ˈpræktɪsɪŋ/"
 	},
 	{
-		"chinese": "在课堂",
-		"english": "in the class",
-		"soundmark": "/ɪn/ /ðə/ /klæs/"
+		"chinese": "技术",
+		"english": "skills",
+		"soundmark": "/'skɪlz/"
 	},
 	{
-		"chinese": "音乐",
-		"english": "music",
-		"soundmark": "/'mjuzɪk/"
+		"chinese": "他的技术",
+		"english": "his skills",
+		"soundmark": "/hɪz/ /'skɪlz/"
 	},
 	{
-		"chinese": "在音乐课",
-		"english": "in the music class",
-		"soundmark": "/ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"chinese": "提升",
+		"english": "to improve",
+		"soundmark": "/tə/ /ɪmˈpruv/"
 	},
 	{
-		"chinese": "在音乐课唱歌",
-		"english": "to sing in the music class",
-		"soundmark": "/tə/ /sɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"chinese": "提升他的技术",
+		"english": "to improve his skills",
+		"soundmark": "/tə/ /ɪmˈpruv/ /hɪz/ /'skɪlz/"
 	},
 	{
-		"chinese": "在音乐课唱歌(ing形式)",
-		"english": "singing in the music class",
-		"soundmark": "/'sɪŋɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"chinese": "他需要保持练习",
+		"english": "he needs to keep practicing",
+		"soundmark": "/hi/ /nidz/ /tə/ /kip/ /ˈpræktɪsɪŋ/"
 	},
 	{
-		"chinese": "老师允许",
-		"english": "the teacher permits",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/"
+		"chinese": "他需要保持练习来提升他的技术",
+		"english": "he needs to keep practicing to improve his skills",
+		"soundmark": "/hi/ /nidz/ /tə/ /kip/ /ˈpræktɪsɪŋ/ /tə/ /ɪmˈpruv/ /hɪz/ /'skɪlz/"
 	},
 	{
-		"chinese": "老师允许在音乐课唱歌",
-		"english": "the teacher permits singing in the music class",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/ /'sɪŋɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"chinese": "掌握",
+		"english": "to master",
+		"soundmark": "/'mæstɚ/"
 	},
 	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
+		"chinese": "你将会",
+		"english": "you will",
+		"soundmark": "/ju/ /wɪl/"
 	},
 	{
-		"chinese": "老师允许他",
-		"english": "the teacher permits him",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/ /hɪm/"
+		"chinese": "你将会掌握",
+		"english": "you will master",
+		"soundmark": "/ju/ /wɪl/ /'mæstɚ/"
 	},
 	{
-		"chinese": "在音乐课唱歌",
-		"english": "to sing in the music class",
-		"soundmark": "/tə/ /sɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"chinese": "那个技术",
+		"english": "the skill",
+		"soundmark": "/ðə/ /'skɪl/"
 	},
 	{
-		"chinese": "老师允许他在音乐课唱歌",
-		"english": "the teacher permits him to sing in the music class",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/ /hɪm/ /tə/ /sɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"chinese": "你将会掌握那个技术",
+		"english": "you will master the skill",
+		"soundmark": "/ju/ /wɪl/ /'mæstɚ/ /ðə/ /'skɪl/"
 	},
 	{
-		"chinese": "大海",
-		"english": "the sea",
-		"soundmark": "/ðə/ /si/"
+		"chinese": "你保持",
+		"english": "you keep",
+		"soundmark": "/ju/ /kip/"
 	},
 	{
-		"chinese": "在......里",
-		"english": "in",
-		"soundmark": "/ɪn/"
+		"chinese": "练习",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
 	},
 	{
-		"chinese": "在大海里",
-		"english": "in the sea",
-		"soundmark": "/ɪn/ /ðə/ /si/"
+		"chinese": "练习(ing形式)",
+		"english": "practicing",
+		"soundmark": "/ˈpræktɪsɪŋ/"
 	},
 	{
-		"chinese": "游泳",
-		"english": "to swim",
-		"soundmark": "/tə/ /swɪm/"
+		"chinese": "你保持练习",
+		"english": "you keep practicing",
+		"soundmark": "/ju/ /kip/ /ˈpræktɪsɪŋ/"
 	},
 	{
-		"chinese": "在大海里游泳",
-		"english": "to swim in the sea",
-		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/"
+		"chinese": "你保持练习那么你将会掌握那个技术",
+		"english": "you keep practicing and you will master the skill",
+		"soundmark": "/ju/ /kip/ /ˈpræktɪsɪŋ/ /ənd/ /ju/ /wɪl/ /'mæstɚ/ /ðə/ /'skɪl/"
 	},
 	{
-		"chinese": "日落",
-		"english": "sunset",
-		"soundmark": "/'sʌnsɛt/"
+		"chinese": "保持练习那么你将会掌握那个技术",
+		"english": "keep practicing and you will master the skill",
+		"soundmark": "/kip/ /ˈpræktɪsɪŋ/ /ənd/ /ju/ /wɪl/ /'mæstɚ/ /ðə/ /'skɪl/"
 	},
 	{
-		"chinese": "在......之前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"chinese": "新的",
+		"english": "new",
+		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "在日落之前",
-		"english": "before sunset",
-		"soundmark": "/bɪ'fɔr/ /'sʌnsɛt/"
+		"chinese": "新的技术",
+		"english": "new skills",
+		"soundmark": "/nu/ /'skɪlz/"
 	},
 	{
-		"chinese": "在日落之前在大海里游泳",
-		"english": "to swim in the sea before sunset",
-		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
+		"chinese": "学习",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "在日落之前在大海里游泳(ing形式)",
-		"english": "swimming in the sea before sunset",
-		"soundmark": "/'swɪmɪŋ/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
+		"chinese": "学习新的技术",
+		"english": "to learn new skills",
+		"soundmark": "/tə/ /lɝn/ /nu/ /'skɪlz/"
 	},
 	{
-		"chinese": "允许",
-		"english": "to permit",
-		"soundmark": "/tə/ /pɚˈmɪt/"
+		"chinese": "学习新的技术(ing形式)",
+		"english": "learning new skills",
+		"soundmark": "/'lɝnɪŋ/ /nu/ /'skɪlz/"
 	},
 	{
-		"chinese": "政策",
-		"english": "the policy",
-		"soundmark": "/ðə/ /ˈpɑləsi/"
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "政策允许",
-		"english": "the policy permits",
-		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/"
+		"chinese": "她保持",
+		"english": "she keeps",
+		"soundmark": "/ʃi/ /kips/"
 	},
 	{
-		"chinese": "政策允许在日落之前在大海里游泳",
-		"english": "the policy permits swimming in the sea before sunset",
-		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/ /'swɪmɪŋ/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
+		"chinese": "她一直学习新的技术",
+		"english": "she keeps learning new skills",
+		"soundmark": "/ʃi/ /kips/ /'lɝnɪŋ/ /nu/ /'skɪlz/"
 	},
 	{
-		"chinese": "父亲",
-		"english": "father",
-		"soundmark": "/'fɑðɚ/"
+		"chinese": "提升",
+		"english": "to improve",
+		"soundmark": "/tə/ /ɪmˈpruv/"
 	},
 	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
+		"chinese": "她自己",
+		"english": "herself",
+		"soundmark": "/hɝ'sɛlf/"
 	},
 	{
-		"chinese": "他的父亲",
-		"english": "his father",
-		"soundmark": "/hɪz/ /'fɑðɚ/"
+		"chinese": "提升她自己",
+		"english": "to improve herself",
+		"soundmark": "/tə/ /ɪmˈpruv/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "允许",
-		"english": "to permit",
-		"soundmark": "/tə/ /pɚˈmɪt/"
+		"chinese": "她一直学习新的技术来提升她自己",
+		"english": "she keeps learning new skills to improve herself",
+		"soundmark": "/ʃi/ /kips/ /'lɝnɪŋ/ /nu/ /'skɪlz/ /tə/ /ɪmˈpruv/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "他的父亲允许",
-		"english": "his father permits",
-		"soundmark": "/hɪz/ /'fɑðɚ/ /pɚˈmɪts/"
+		"chinese": "锁",
+		"english": "to lock",
+		"soundmark": "/tə/ /lɑk/"
 	},
 	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
+		"chinese": "门",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
 	},
 	{
-		"chinese": "他的父亲允许他",
-		"english": "his father permits him",
-		"soundmark": "/hɪz/ /'fɑðɚ/ /pɚˈmɪts/ /hɪm/"
-	},
-	{
-		"chinese": "在日落之前在大海里游泳",
-		"english": "to swim in the sea before sunset",
-		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "他的父亲允许他在日落之前在大海里游泳",
-		"english": "his father permits him to swim in the sea before sunset",
-		"soundmark": "/hɪz/ /'fɑðɚ/ /pɚˈmɪts/ /hɪm/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "停止",
-		"english": "to stop",
-		"soundmark": "/tə/ /stɑp/"
-	},
-	{
-		"chinese": "他",
-		"english": "he",
-		"soundmark": "/hi/"
-	},
-	{
-		"chinese": "他停止",
-		"english": "he stops",
-		"soundmark": "/hi/ /stɑps/"
-	},
-	{
-		"chinese": "他停止(过去)",
-		"english": "he stopped",
-		"soundmark": "/hi/ /stɑpt/"
-	},
-	{
-		"chinese": "抽烟",
-		"english": "to smoke",
-		"soundmark": "/tə/ /smok/"
-	},
-	{
-		"chinese": "抽烟(ing形式)",
-		"english": "smoking",
-		"soundmark": "/'smokɪŋ/"
-	},
-	{
-		"chinese": "他停止抽烟",
-		"english": "he stopped smoking",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/"
-	},
-	{
-		"chinese": "健康",
-		"english": "health",
-		"soundmark": "/hɛlθ/"
-	},
-	{
-		"chinese": "他的健康",
-		"english": "his health",
-		"soundmark": "/hɪz/ /hɛlθ/"
-	},
-	{
-		"chinese": "为了",
-		"english": "for",
-		"soundmark": "/fɚ/"
-	},
-	{
-		"chinese": "为了他的健康",
-		"english": "for his health",
-		"soundmark": "/fɚ/ /hɪz/ /hɛlθ/"
-	},
-	{
-		"chinese": "他停止抽烟",
-		"english": "he stopped smoking",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/"
-	},
-	{
-		"chinese": "他为了他的健康停止抽烟",
-		"english": "he stopped smoking for his health",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/ /fɚ/ /hɪz/ /hɛlθ/"
-	},
-	{
-		"chinese": "他停止抽烟",
-		"english": "he stopped smoking",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/"
-	},
-	{
-		"chinese": "抽烟",
-		"english": "to smoke",
-		"soundmark": "/tə/ /smok/"
-	},
-	{
-		"chinese": "他停下来去抽烟",
-		"english": "he stopped to smoke",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /smok/"
-	},
-	{
-		"chinese": "公交车",
-		"english": "bus",
-		"soundmark": "/bʌs/"
-	},
-	{
-		"chinese": "停止",
-		"english": "stop",
-		"soundmark": "/stɑp/"
-	},
-	{
-		"chinese": "公交车站",
-		"english": "bus stop",
-		"soundmark": "/bʌs/ /stɑp/"
-	},
-	{
-		"chinese": "在公交车站",
-		"english": "at the bus stop",
-		"soundmark": "/ət/ /ðə/ /bʌs/ /stɑp/"
-	},
-	{
-		"chinese": "他停下来去抽烟",
-		"english": "he stopped to smoke",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /smok/"
-	},
-	{
-		"chinese": "他在公交车站停下来去抽烟",
-		"english": "he stopped to smoke at the bus stop",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /smok/ /ət/ /ðə/ /bʌs/ /stɑp/"
-	},
-	{
-		"chinese": "买",
-		"english": "to buy",
-		"soundmark": "/tə/ /baɪ/"
-	},
-	{
-		"chinese": "花",
-		"english": "flower",
-		"soundmark": "/'flaʊɚ/"
-	},
-	{
-		"chinese": "一些",
-		"english": "some",
-		"soundmark": "/səm/"
-	},
-	{
-		"chinese": "一些花",
-		"english": "some flowers",
-		"soundmark": "/səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "买一些花",
-		"english": "to buy some flowers",
-		"soundmark": "/tə/ /baɪ/ /səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "他停止",
-		"english": "he stopped",
-		"soundmark": "/hi/ /stɑpt/"
-	},
-	{
-		"chinese": "他停下来去买一些花",
-		"english": "he stopped to buy some flowers",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "路",
-		"english": "way",
-		"soundmark": "/we/"
-	},
-	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
-	},
-	{
-		"chinese": "他的路",
-		"english": "his way",
-		"soundmark": "/hɪz/ /we/"
-	},
-	{
-		"chinese": "家",
-		"english": "home",
-		"soundmark": "/hom/"
-	},
-	{
-		"chinese": "他回家的路",
-		"english": "his way home",
-		"soundmark": "/hɪz/ /we/ /hom/"
-	},
-	{
-		"chinese": "在他回家的路上",
-		"english": "on his way home",
-		"soundmark": "/ɑn/ /hɪz/ /we/ /hom/"
-	},
-	{
-		"chinese": "他停下来去买一些花",
-		"english": "he stopped to buy some flowers",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "他在他回家的路上停下来去买一些花",
-		"english": "he stopped to buy some flowers on his way home",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/ /ɑn/ /hɪz/ /we/ /hom/"
-	},
-	{
-		"chinese": "买(ing形式)",
-		"english": "buying",
-		"soundmark": "/'baɪɪŋ/"
-	},
-	{
-		"chinese": "花",
-		"english": "flowers",
-		"soundmark": "/'flaʊɚz/"
-	},
-	{
-		"chinese": "买花(ing形式)",
-		"english": "buying flowers",
-		"soundmark": "/'baɪɪŋ/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "他停止",
-		"english": "he stopped",
-		"soundmark": "/hi/ /stɑpt/"
-	},
-	{
-		"chinese": "他停止买花",
-		"english": "he stopped buying flowers",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "她",
-		"english": "her",
-		"soundmark": "/hɚ/"
-	},
-	{
-		"chinese": "为了",
-		"english": "for",
-		"soundmark": "/fɚ/"
-	},
-	{
-		"chinese": "为她",
-		"english": "for her",
-		"soundmark": "/fɚ/ /hɚ/"
-	},
-	{
-		"chinese": "他停止为她买花",
-		"english": "he stopped buying flowers for her",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/"
-	},
-	{
-		"chinese": "争吵",
-		"english": "fight",
-		"soundmark": "/faɪt/"
-	},
-	{
-		"chinese": "一次争吵",
-		"english": "a fight",
-		"soundmark": "/ə/ /faɪt/"
-	},
-	{
-		"chinese": "他们",
-		"english": "they",
-		"soundmark": "/ðe/"
-	},
-	{
-		"chinese": "有",
-		"english": "have",
-		"soundmark": "/hæv/"
-	},
-	{
-		"chinese": "他们有",
-		"english": "they have",
-		"soundmark": "/ðe/ /hæv/"
-	},
-	{
-		"chinese": "他们有一次争吵",
-		"english": "they have a fight",
-		"soundmark": "/ðe/ /hæv/ /ə/ /faɪt/"
-	},
-	{
-		"chinese": "他们(过去)有一次争吵",
-		"english": "they had a fight",
-		"soundmark": "/ðe/ /hæd/ /ə/ /faɪt/"
-	},
-	{
-		"chinese": "在......之后",
-		"english": "after",
-		"soundmark": "/'æftɚ/"
-	},
-	{
-		"chinese": "在他们(过去)有一次争吵之后",
-		"english": "after they had a fight",
-		"soundmark": "/'æftɚ/ /ðe/ /hæd/ /ə/ /faɪt/"
-	},
-	{
-		"chinese": "他停止为她买花",
-		"english": "he stopped buying flowers for her",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/"
-	},
-	{
-		"chinese": "在他们(过去)有一次争吵之后他停止为她买花",
-		"english": "he stopped buying flowers for her after they had a fight",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/ /'æftɚ/ /ðe/ /hæd/ /ə/ /faɪt/"
-	},
-	{
-		"chinese": "记得",
-		"english": "to remember",
-		"soundmark": "/tə/ /rɪ'mɛmbɚ/"
-	},
-	{
-		"chinese": "我需要",
-		"english": "I need",
-		"soundmark": "/aɪ/ /nid/"
-	},
-	{
-		"chinese": "我需要记得",
-		"english": "I need to remember",
-		"soundmark": "/aɪ/ /nid/ /tə/ /rɪ'mɛmbɚ/"
-	},
-	{
-		"chinese": "打电话给......",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
-	},
-	{
-		"chinese": "妈妈",
-		"english": "mom",
-		"soundmark": "/mɑm/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的妈妈",
-		"english": "my mom",
-		"soundmark": "/maɪ/ /mɑm/"
-	},
-	{
-		"chinese": "打电话给我的妈妈",
-		"english": "to call my mom",
-		"soundmark": "/tə/ /kɔl/ /maɪ/ /mɑm/"
-	},
-	{
-		"chinese": "明天",
-		"english": "tomorrow",
-		"soundmark": "/tə'mɔro/"
-	},
-	{
-		"chinese": "明天打电话给我的妈妈",
-		"english": "to call my mom tomorrow",
-		"soundmark": "/tə/ /kɔl/ /maɪ/ /mɑm/ /tə'mɔro/"
-	},
-	{
-		"chinese": "我需要记得",
-		"english": "I need to remember",
-		"soundmark": "/aɪ/ /nid/ /tə/ /rɪ'mɛmbɚ/"
-	},
-	{
-		"chinese": "我需要记得明天打电话给我的妈妈",
-		"english": "I need to remember to call my mom tomorrow",
-		"soundmark": "/aɪ/ /nid/ /tə/ /rɪ'mɛmbɚ/ /tə/ /kɔl/ /maɪ/ /mɑm/ /tə'mɔro/"
-	},
-	{
-		"chinese": "打电话给......",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
-	},
-	{
-		"chinese": "打电话给你",
-		"english": "to call you",
-		"soundmark": "/tə/ /kɔl/ /ju/"
-	},
-	{
-		"chinese": "打电话给你(ing形式)",
-		"english": "calling you",
-		"soundmark": "/ˈkɔlɪŋ/ /ju/"
-	},
-	{
-		"chinese": "昨天晚上",
-		"english": "last night",
-		"soundmark": "/læst/ /naɪt/"
-	},
-	{
-		"chinese": "昨天晚上打电话给你(ing形式)",
-		"english": "calling you last night",
-		"soundmark": "/ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
-	},
-	{
-		"chinese": "我记得",
-		"english": "I remember",
-		"soundmark": "/aɪ/ /rɪ'mɛmbɚ/"
-	},
-	{
-		"chinese": "我记得昨天晚上打电话给你",
-		"english": "I remember calling you last night",
-		"soundmark": "/aɪ/ /rɪ'mɛmbɚ/ /ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"chinese": "锁门",
+		"english": "to lock the door",
+		"soundmark": "/tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
 		"chinese": "忘记",
@@ -585,38 +195,583 @@
 		"soundmark": "/tə/ /fɚ'ɡɛt/"
 	},
 	{
-		"chinese": "我忘记",
-		"english": "I forget",
-		"soundmark": "/aɪ/ /fɚ'ɡɛt/"
+		"chinese": "忘记锁门",
+		"english": "to forget to lock the door",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我忘记(过去)",
-		"english": "I forgot",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/"
+		"chinese": "忘记锁门(ing形式)",
+		"english": "forgetting to lock the door",
+		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "昨天晚上打电话给你(ing形式)",
-		"english": "calling you last night",
-		"soundmark": "/ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "我忘记昨天晚上打电话给你",
-		"english": "I forgot calling you last night",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"chinese": "她保持",
+		"english": "she keeps",
+		"soundmark": "/ʃi/ /kips/"
 	},
 	{
-		"chinese": "打电话给......",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
+		"chinese": "她总是忘记锁门",
+		"english": "she keeps forgetting to lock the door",
+		"soundmark": "/ʃi/ /kips/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "昨天晚上打电话给你",
-		"english": "to call you last night",
-		"soundmark": "/tə/ /kɔl/ /ju/ /læst/ /naɪt/"
+		"chinese": "离开",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "我忘记昨晚去给你打电话",
-		"english": "I forgot to call you last night",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /tə/ /kɔl/ /ju/ /læst/ /naɪt/"
+		"chinese": "她离开",
+		"english": "she leaves",
+		"soundmark": "/ʃi/ /livz/"
+	},
+	{
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当她离开的时候",
+		"english": "when she leaves",
+		"soundmark": "/wɛn/ /ʃi/ /livz/"
+	},
+	{
+		"chinese": "她总是忘记锁门",
+		"english": "she keeps forgetting to lock the door",
+		"soundmark": "/ʃi/ /kips/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"chinese": "她总是忘记锁门当她离开的时候",
+		"english": "she keeps forgetting to lock the door when she leaves",
+		"soundmark": "/ʃi/ /kips/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/ /wɛn/ /ʃi/ /livz/"
+	},
+	{
+		"chinese": "钥匙",
+		"english": "keys",
+		"soundmark": "/kiz/"
+	},
+	{
+		"chinese": "他的钥匙",
+		"english": "his keys",
+		"soundmark": "/hɪz/ /kiz/"
+	},
+	{
+		"chinese": "忘记",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
+	},
+	{
+		"chinese": "忘记他的钥匙",
+		"english": "to forget his keys",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /hɪz/ /kiz/"
+	},
+	{
+		"chinese": "家",
+		"english": "home",
+		"soundmark": "/hom/"
+	},
+	{
+		"chinese": "在家",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"chinese": "忘记他的钥匙在家里",
+		"english": "to forget his keys at home",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /hɪz/ /kiz/ /ət/ /hom/"
+	},
+	{
+		"chinese": "忘记他的钥匙在家里(ing形式)",
+		"english": "forgetting his keys at home",
+		"soundmark": "/fɚ'ɡɛtɪŋ/ /hɪz/ /kiz/ /ət/ /hom/"
+	},
+	{
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
+	},
+	{
+		"chinese": "他保持",
+		"english": "he keeps",
+		"soundmark": "/hi/ /kips/"
+	},
+	{
+		"chinese": "他总是忘记他的钥匙在家里",
+		"english": "he keeps forgetting his keys at home",
+		"soundmark": "/hi/ /kips/ /fɚ'ɡɛtɪŋ/ /hɪz/ /kiz/ /ət/ /hom/"
+	},
+	{
+		"chinese": "想法",
+		"english": "mind",
+		"soundmark": "/maɪnd/"
+	},
+	{
+		"chinese": "他的想法",
+		"english": "his mind",
+		"soundmark": "/hɪz/ /maɪnd/"
+	},
+	{
+		"chinese": "改变",
+		"english": "to change",
+		"soundmark": "/tə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "改变他的想法",
+		"english": "to change his mind",
+		"soundmark": "/tə/ /tʃendʒ/ /hɪz/ /maɪnd/"
+	},
+	{
+		"chinese": "改变他的想法(ing形式)",
+		"english": "changing his mind",
+		"soundmark": "/'tʃendʒɪŋ/ /hɪz/ /maɪnd/"
+	},
+	{
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
+	},
+	{
+		"chinese": "他保持",
+		"english": "he keeps",
+		"soundmark": "/hi/ /kips/"
+	},
+	{
+		"chinese": "他总是改变他的想法",
+		"english": "he keeps changing his mind",
+		"soundmark": "/hi/ /kips/ /'tʃendʒɪŋ/ /hɪz/ /maɪnd/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "所有的时间",
+		"english": "all the time",
+		"soundmark": "/ɔl/ /ðə/ /taɪm/"
+	},
+	{
+		"chinese": "他(一直)总是改变他的想法",
+		"english": "he keeps changing his mind all the time",
+		"soundmark": "/hi/ /kips/ /'tʃendʒɪŋ/ /hɪz/ /maɪnd/ /ɔl/ /ðə/ /taɪm/"
+	},
+	{
+		"chinese": "想法",
+		"english": "mind",
+		"soundmark": "/maɪnd/"
+	},
+	{
+		"chinese": "介意",
+		"english": "to mind",
+		"soundmark": "/tə/ /maɪnd/"
+	},
+	{
+		"chinese": "我介意",
+		"english": "I mind",
+		"soundmark": "/aɪ/ /maɪnd/"
+	},
+	{
+		"chinese": "打开",
+		"english": "to open",
+		"soundmark": "/tə/ /'opən/"
+	},
+	{
+		"chinese": "这个窗户",
+		"english": "the window",
+		"soundmark": "/ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "打开这个窗户",
+		"english": "to open the window",
+		"soundmark": "/tə/ /'opən/ /ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "打开这个窗户(ing形式)",
+		"english": "opening the window",
+		"soundmark": "/'opənɪŋ/ /ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "我介意打开这个窗户",
+		"english": "I mind opening the window",
+		"soundmark": "/aɪ/ /maɪnd/ /'opənɪŋ/ /ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "我不介意打开这个窗户",
+		"english": "I don't mind opening the window",
+		"soundmark": "/aɪ/ /dont/ /maɪnd/ /'opənɪŋ/ /ðə/ /'wɪndo/"
+	},
+	{
+		"chinese": "支付",
+		"english": "to pay",
+		"soundmark": "/tə/ /pe/"
+	},
+	{
+		"chinese": "账单",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付账单",
+		"english": "to pay the bill",
+		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付账单(ing形式)",
+		"english": "paying the bill",
+		"soundmark": "/'peɪŋ/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "介意",
+		"english": "to mind",
+		"soundmark": "/tə/ /maɪnd/"
+	},
+	{
+		"chinese": "他介意",
+		"english": "he minds",
+		"soundmark": "/hi/ /maɪndz/"
+	},
+	{
+		"chinese": "他介意支付账单",
+		"english": "he minds paying the bill",
+		"soundmark": "/hi/ /maɪndz/ /'peɪŋ/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "他不介意支付账单",
+		"english": "he doesn't mind paying the bill",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'peɪŋ/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "玩具",
+		"english": "toy",
+		"soundmark": "/tɔɪ/"
+	},
+	{
+		"chinese": "他的玩具",
+		"english": "his toys",
+		"soundmark": "/hɪz/ /tɔɪz/"
+	},
+	{
+		"chinese": "分享",
+		"english": "to share",
+		"soundmark": "/tə/ /ʃɛr/"
+	},
+	{
+		"chinese": "分享他的玩具",
+		"english": "to share his toys",
+		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /tɔɪz/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
+	},
+	{
+		"chinese": "他的朋友们",
+		"english": "his friends",
+		"soundmark": "/hɪz/ /frɛndz/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "和他的朋友们",
+		"english": "with his friends",
+		"soundmark": "/wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"chinese": "和他的朋友们分享他的玩具",
+		"english": "to share his toys with his friends",
+		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"chinese": "和他的朋友们分享他的玩具（ing 形式）",
+		"english": "sharing his toys with his friends",
+		"soundmark": "/'ʃɛriŋ/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"chinese": "他介意",
+		"english": "he minds",
+		"soundmark": "/hi/ /maɪndz/"
+	},
+	{
+		"chinese": "他介意和他的朋友们分享他的玩具",
+		"english": "he minds sharing his toys with his friends",
+		"soundmark": "/hi/ /maɪndz/ /'ʃɛəriŋ/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"chinese": "他不介意和他的朋友们分享他的玩具",
+		"english": "he doesn't mind sharing his toys with his friends",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'ʃɛəriŋ/ /hɪz/ /tɔɪz/ /wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"chinese": "他不介意",
+		"english": "he doesn't mind",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+	},
+	{
+		"chinese": "他的食物",
+		"english": "his food",
+		"soundmark": "/hɪz/ /fud/"
+	},
+	{
+		"chinese": "分享",
+		"english": "to share",
+		"soundmark": "/tə/ /ʃɛr/"
+	},
+	{
+		"chinese": "分享他的食物",
+		"english": "to share his food",
+		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /fud/"
+	},
+	{
+		"chinese": "别人",
+		"english": "others",
+		"soundmark": "/'ʌðɚz/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "和别人",
+		"english": "with others",
+		"soundmark": "/wɪð/ /'ʌðɚz/"
+	},
+	{
+		"chinese": "和别人分享他的食物",
+		"english": "to share his food with others",
+		"soundmark": "/tə/ /ʃɛr/ /hɪz/ /fud/ /wɪð/ /'ʌðɚz/"
+	},
+	{
+		"chinese": "和别人分享他的食物(ing形式)",
+		"english": "sharing his food with others",
+		"soundmark": "/'ʃɛriŋ/ /hɪz/ /fud/ /wɪð/ /'ʌðɚz/"
+	},
+	{
+		"chinese": "介意",
+		"english": "to mind",
+		"soundmark": "/tə/ /maɪnd/"
+	},
+	{
+		"chinese": "他介意",
+		"english": "he minds",
+		"soundmark": "/hi/ /maɪndz/"
+	},
+	{
+		"chinese": "他不介意",
+		"english": "he doesn't mind",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+	},
+	{
+		"chinese": "他不介意和别人分享他的食物",
+		"english": "he doesn't mind sharing his food with others",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'ʃɛriŋ/ /hɪz/ /fud/ /wɪð/ /'ʌðɚz/"
+	},
+	{
+		"chinese": "等",
+		"english": "to wait",
+		"soundmark": "/tə/ /wet/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "等她",
+		"english": "to wait for her",
+		"soundmark": "/tə/ /wet/ /fɚ/ /hɚ/"
+	},
+	{
+		"chinese": "机场",
+		"english": "airport",
+		"soundmark": "/'ɛrpɔrt/"
+	},
+	{
+		"chinese": "在机场",
+		"english": "at the airport",
+		"soundmark": "/ət/ /ði/ /'ɛrpɔrt/"
+	},
+	{
+		"chinese": "在机场等她",
+		"english": "to wait for her at the airport",
+		"soundmark": "/tə/ /wet/ /fɚ/ /hɚ/ /ət/ /ði/ /'ɛrpɔrt/"
+	},
+	{
+		"chinese": "在机场等她(ing形式)",
+		"english": "waiting for her at the airport",
+		"soundmark": "/'wetɪŋ/ /fɚ/ /hɚ/ /ət/ /ði/ /'ɛrpɔrt/"
+	},
+	{
+		"chinese": "他不介意",
+		"english": "he doesn't mind",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+	},
+	{
+		"chinese": "他不介意在机场等她",
+		"english": "he doesn't mind waiting for her at the airport",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /'wetɪŋ/ /fɚ/ /hɚ/ /ət/ /ði/ /'ɛrpɔrt/"
+	},
+	{
+		"chinese": "介意",
+		"english": "to mind",
+		"soundmark": "/tə/ /maɪnd/"
+	},
+	{
+		"chinese": "他们介意",
+		"english": "they mind",
+		"soundmark": "/ðe/ /maɪnd/"
+	},
+	{
+		"chinese": "秘密",
+		"english": "secret",
+		"soundmark": "/'sikrət/"
+	},
+	{
+		"chinese": "他们的秘密",
+		"english": "their secrets",
+		"soundmark": "/ðɛr/ /'sikrəts/"
+	},
+	{
+		"chinese": "分享",
+		"english": "to share",
+		"soundmark": "/tə/ /ʃɛr/"
+	},
+	{
+		"chinese": "分享他们的秘密",
+		"english": "to share their secrets",
+		"soundmark": "/tə/ /ʃɛr/ /ðɛr/ /'sikrəts/"
+	},
+	{
+		"chinese": "任何人",
+		"english": "anyone",
+		"soundmark": "/'ɛnɪwʌn/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "和任何人",
+		"english": "with anyone",
+		"soundmark": "/wɪð/ /'ɛnɪwʌn/"
+	},
+	{
+		"chinese": "和任何人分享他们的秘密",
+		"english": "to share their secrets with anyone",
+		"soundmark": "/tə/ /ʃɛr/ /ðɛr/ /'sikrəts/ /wɪð/ /'ɛnɪwʌn/"
+	},
+	{
+		"chinese": "和任何人分享他们的秘密(ing形式)",
+		"english": "sharing their secrets with anyone",
+		"soundmark": "/'ʃɛriŋ/ /ðɛr/ /'sikrəts/ /wɪð/ /'ɛnɪwʌn/"
+	},
+	{
+		"chinese": "他们介意",
+		"english": "they mind",
+		"soundmark": "/ðe/ /maɪnd/"
+	},
+	{
+		"chinese": "他们不介意",
+		"english": "they don't mind",
+		"soundmark": "/ðe/ /dont/ /maɪnd/"
+	},
+	{
+		"chinese": "他们不介意和任何人分享他们的秘密",
+		"english": "they don't mind sharing their secrets with anyone",
+		"soundmark": "/ðe/ /dont/ /maɪnd/ /'ʃɛriŋ/ /ðɛr/ /'sikrəts/ /wɪð/ /'ɛnɪwʌn/"
+	},
+	{
+		"chinese": "他介意",
+		"english": "he minds",
+		"soundmark": "/hi/ /maɪndz/"
+	},
+	{
+		"chinese": "建议",
+		"english": "advice",
+		"soundmark": "/əd'vaɪs/"
+	},
+	{
+		"chinese": "一些",
+		"english": "some",
+		"soundmark": "/səm/"
+	},
+	{
+		"chinese": "一些建议",
+		"english": "some advice",
+		"soundmark": "/səm/ /əd'vaɪs/"
+	},
+	{
+		"chinese": "问题",
+		"english": "problem",
+		"soundmark": "/'prɑbləm/"
+	},
+	{
+		"chinese": "这个问题",
+		"english": "this problem",
+		"soundmark": "/ðɪs/ /'prɑbləm/"
+	},
+	{
+		"chinese": "关于",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"chinese": "关于这个问题",
+		"english": "about this problem",
+		"soundmark": "/ə'baʊt/ /ðɪs/ /'prɑbləm/"
+	},
+	{
+		"chinese": "关于这个问题的一些建议",
+		"english": "some advice about this problem",
+		"soundmark": "/səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
+	},
+	{
+		"chinese": "给",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
+	},
+	{
+		"chinese": "给我",
+		"english": "to give me",
+		"soundmark": "/tə/ /ɡɪv/ /mi/"
+	},
+	{
+		"chinese": "给我一些建议",
+		"english": "to give me some advice",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
+	},
+	{
+		"chinese": "给我关于这个问题的一些建议",
+		"english": "to give me some advice about this problem",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
+	},
+	{
+		"chinese": "给我关于这个问题的一些建议（ing 形式）",
+		"english": "giving me some advice about this problem",
+		"soundmark": "/ɡɪviŋ/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
+	},
+	{
+		"chinese": "他介意",
+		"english": "he minds",
+		"soundmark": "/hi/ /maɪndz/"
+	},
+	{
+		"chinese": "他不介意",
+		"english": "he doesn't mind",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/"
+	},
+	{
+		"chinese": "他不介意给我关于这个问题的一些建议",
+		"english": "he doesn't mind giving me some advice about this problem",
+		"soundmark": "/hi/ /ˈdʌznt/ /maɪnd/ /ɡɪviŋ/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /ðɪs/ /'prɑbləm/"
 	}
 ]

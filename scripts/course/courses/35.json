@@ -1,293 +1,78 @@
 [
 	{
-		"chinese": "我喜欢",
-		"english": "I like",
-		"soundmark": "/aɪ/ /laɪk/"
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "阅读",
-		"english": "to read",
-		"soundmark": "/tə/ /rid/"
+		"chinese": "更",
+		"english": "more",
+		"soundmark": "/mɔr/"
 	},
 	{
-		"chinese": "我喜欢阅读",
-		"english": "I like to read",
-		"soundmark": "/aɪ/ /laɪk/ /tə/ /rid/"
+		"chinese": "更重要的",
+		"english": "more important",
+		"soundmark": "/mɔr/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "阅读(ing形式)",
-		"english": "reading",
-		"soundmark": "/'ridɪŋ/"
+		"chinese": "比",
+		"english": "than",
+		"soundmark": "/ðæn/"
 	},
 	{
-		"chinese": "我喜欢阅读",
-		"english": "I like reading",
-		"soundmark": "/aɪ/ /laɪk/ /ridɪŋ/"
+		"chinese": "困难的",
+		"english": "difficult",
+		"soundmark": "/'dɪfɪkəlt/"
 	},
 	{
-		"chinese": "烹饪",
-		"english": "to cook",
-		"soundmark": "/tə/ /kʊk/"
+		"chinese": "中文",
+		"english": "Chinese",
+		"soundmark": "/tʃaɪˈniz/"
 	},
 	{
-		"chinese": "烹饪(ing形式)",
-		"english": "cooking",
-		"soundmark": "/'kʊkɪŋ/"
+		"chinese": "英文",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我喜欢烹饪",
-		"english": "I like cooking",
-		"soundmark": "/aɪ/ /laɪk/ /'kʊkɪŋ/"
+		"chinese": "中文比英文是更难的",
+		"english": "Chinese is more difficult than English",
+		"soundmark": "/tʃaɪˈniz/ /ɪz/ /mɔr/ /'dɪfɪkəlt/ /ðæn/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "购物",
-		"english": "to shop",
-		"soundmark": "/tə/ /ʃɑp/"
+		"chinese": "更困难的",
+		"english": "more difficult",
+		"soundmark": "/mɔr/ /'dɪfɪkəlt/"
 	},
 	{
-		"chinese": "购物(ing形式)",
-		"english": "shopping",
-		"soundmark": "/'ʃɑpɪŋ/"
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "我喜欢购物",
-		"english": "I like shopping",
-		"soundmark": "/aɪ/ /laɪk/ /'ʃɑpɪŋ/"
+		"chinese": "最困难的",
+		"english": "the most difficult",
+		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/"
 	},
 	{
-		"chinese": "篮球",
-		"english": "basketball",
-		"soundmark": "/'bæskɪtbɔl/"
+		"chinese": "语言",
+		"english": "language",
+		"soundmark": "/'læŋɡwɪdʒ/"
 	},
 	{
-		"chinese": "打",
-		"english": "to play",
-		"soundmark": "/tə/ /ple/"
+		"chinese": "最难的语言",
+		"english": "the most difficult language",
+		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/ /'læŋɡwɪdʒ/"
 	},
 	{
-		"chinese": "打篮球",
-		"english": "to play basketball",
-		"soundmark": "/tə/ /ple/ /'bæskɪtbɔl/"
+		"chinese": "中文",
+		"english": "Chinese",
+		"soundmark": "/tʃaɪˈniz/"
 	},
 	{
-		"chinese": "打(ing形式)",
-		"english": "playing",
-		"soundmark": "/'pleɪŋ/"
-	},
-	{
-		"chinese": "打篮球(ing形式)",
-		"english": "playing basketball",
-		"soundmark": "/'pleɪŋ/ /'bæskɪtbɔl/"
-	},
-	{
-		"chinese": "我喜欢打篮球",
-		"english": "I like playing basketball",
-		"soundmark": "/aɪ/ /laɪk/ /'pleɪŋ/ /'bæskɪtbɔl/"
-	},
-	{
-		"chinese": "享受",
-		"english": "to enjoy",
-		"soundmark": "/tə/ /ɪn'dʒɔɪ/"
-	},
-	{
-		"chinese": "我享受",
-		"english": "I enjoy",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/"
-	},
-	{
-		"chinese": "打篮球(ing形式)",
-		"english": "playing basketball",
-		"soundmark": "/'pleɪŋ/ /'bæskɪtbɔl/"
-	},
-	{
-		"chinese": "我享受打篮球",
-		"english": "I enjoy playing basketball",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /'pleɪŋ/ /'bæskɪtbɔl/"
-	},
-	{
-		"chinese": "书",
-		"english": "books",
-		"soundmark": "/bʊks/"
-	},
-	{
-		"chinese": "阅读(ing形式)",
-		"english": "reading",
-		"soundmark": "/'ridɪŋ/"
-	},
-	{
-		"chinese": "读书(ing形式）",
-		"english": "reading books",
-		"soundmark": "/'ridɪŋ/ /bʊks/"
-	},
-	{
-		"chinese": "我享受",
-		"english": "I enjoy",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/"
-	},
-	{
-		"chinese": "我享受读书",
-		"english": "I enjoy reading books",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /'ridɪŋ/ /bʊks/"
-	},
-	{
-		"chinese": "自由的",
-		"english": "free",
-		"soundmark": "/fri/"
-	},
-	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "自由时间",
-		"english": "free time",
-		"soundmark": "/fri/ /taɪm/"
-	},
-	{
-		"chinese": "我的自由时间",
-		"english": "my free time",
-		"soundmark": "/maɪ/ /fri/ /taɪm/"
-	},
-	{
-		"chinese": "在我的自由时间里",
-		"english": "in my free time",
-		"soundmark": "/ɪn/ /maɪ/ /fri/ /taɪm/"
-	},
-	{
-		"chinese": "在我空闲的时候我享受读书",
-		"english": "I enjoy reading books in my free time",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /'ridɪŋ/ /bʊks/ /ɪn/ /maɪ/ /fri/ /taɪm/"
-	},
-	{
-		"chinese": "他享受",
-		"english": "he enjoys",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
-	},
-	{
-		"chinese": "做",
-		"english": "to make",
-		"soundmark": "/tə/ /mek/"
-	},
-	{
-		"chinese": "朋友",
-		"english": "friends",
-		"soundmark": "/frɛndz/"
-	},
-	{
-		"chinese": "交朋友",
-		"english": "to make friends",
-		"soundmark": "/tə/ /mek/ /frɛndz/"
-	},
-	{
-		"chinese": "交朋友(ing形式)",
-		"english": "making friends",
-		"soundmark": "/'mekɪŋ/ /frɛndz/"
-	},
-	{
-		"chinese": "他享受交朋友",
-		"english": "he enjoys making friends",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'mekɪŋ/ /frɛndz/"
-	},
-	{
-		"chinese": "人",
-		"english": "people",
-		"soundmark": "/'pipl/"
-	},
-	{
-		"chinese": "不同的",
-		"english": "different",
-		"soundmark": "/'dɪfrənt/"
-	},
-	{
-		"chinese": "不同的人",
-		"english": "different people",
-		"soundmark": "/'dɪfrənt/ /'pipl/"
-	},
-	{
-		"chinese": "和不同的人",
-		"english": "with different people",
-		"soundmark": "/wɪð/ /'dɪfrənt/ /'pipl/"
-	},
-	{
-		"chinese": "他享受交朋友",
-		"english": "he enjoys making friends",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'mekɪŋ/ /frɛndz/"
-	},
-	{
-		"chinese": "他享受和不同的人交朋友",
-		"english": "he enjoys making friends with different people",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'mekɪŋ/ /frɛndz/ /wɪð/ /'dɪfrənt/ /'pipl/"
-	},
-	{
-		"chinese": "看",
-		"english": "to watch",
-		"soundmark": "/tə/ /wɑtʃ/"
-	},
-	{
-		"chinese": "电影",
-		"english": "movies",
-		"soundmark": "/'muviz/"
-	},
-	{
-		"chinese": "看电影",
-		"english": "to watch movies",
-		"soundmark": "/tə/ /wɑtʃ/ /'muviz/"
-	},
-	{
-		"chinese": "看电影(ing形式)",
-		"english": "watching movies",
-		"soundmark": "/'wɑtʃɪŋ/ /'muviz/"
-	},
-	{
-		"chinese": "他享受",
-		"english": "he enjoys",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
-	},
-	{
-		"chinese": "他享受看电影",
-		"english": "he enjoys watching movies",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'wɑtʃɪŋ/ /'muviz/"
-	},
-	{
-		"chinese": "朋友",
-		"english": "friend",
-		"soundmark": "/frɛnd/"
-	},
-	{
-		"chinese": "女孩",
-		"english": "girl",
-		"soundmark": "/ɡɝl/"
-	},
-	{
-		"chinese": "女朋友",
-		"english": "girlfriend",
-		"soundmark": "/'ɡɝlfrɛnd/"
-	},
-	{
-		"chinese": "他的女朋友",
-		"english": "his girlfriend",
-		"soundmark": "/hɪz/ /'ɡɝlfrɛnd/"
-	},
-	{
-		"chinese": "和......一起",
-		"english": "with",
-		"soundmark": "/wɪð/"
-	},
-	{
-		"chinese": "和他的女朋友一起",
-		"english": "with his girlfriend",
-		"soundmark": "/wɪð/ /hɪz/ /'ɡɝlfrɛnd/"
-	},
-	{
-		"chinese": "他享受看电影",
-		"english": "he enjoys watching movies",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'wɑtʃɪŋ/ /'muviz/"
-	},
-	{
-		"chinese": "他享受和他的女朋友一起看电影",
-		"english": "he enjoys watching movies with his girlfriend",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'wɑtʃɪŋ/ /'muviz/ /wɪð/ /hɪz/ /'ɡɝlfrɛnd/"
+		"chinese": "中文是最难的语言",
+		"english": "Chinese is the most difficult language",
+		"soundmark": "/tʃaɪˈniz/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'læŋɡwɪdʒ/"
 	},
 	{
 		"chinese": "世界",
@@ -295,364 +80,399 @@
 		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "围着",
-		"english": "around",
-		"soundmark": "/ə'raʊnd/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "围着世界",
-		"english": "around the world",
-		"soundmark": "/ə'raʊnd/ /ðə/ /wɝld/"
+		"chinese": "中文是世界上最难的语言",
+		"english": "Chinese is the most difficult language in the world",
+		"soundmark": "/tʃaɪˈniz/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'læŋɡwɪdʒ/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "旅行",
-		"english": "to travel",
-		"soundmark": "/tə/ /'trævl/"
+		"chinese": "问题",
+		"english": "problem",
+		"soundmark": "/'prɑbləm/"
 	},
 	{
-		"chinese": "环游世界",
-		"english": "to travel around the world",
-		"soundmark": "/tə/ /'trævl/ /ə'raʊnd/ /ðə/ /wɝld/"
+		"chinese": "最困难的",
+		"english": "the most difficult",
+		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/"
 	},
 	{
-		"chinese": "环游世界(ing形式)",
-		"english": "traveling around the world",
-		"soundmark": "/'trævlɪŋ/ /ə'raʊnd/ /ðə/ /wɝld/"
+		"chinese": "最困难的问题",
+		"english": "the most difficult problem",
+		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/ /'prɑbləm/"
 	},
 	{
-		"chinese": "他们享受",
-		"english": "they enjoy",
-		"soundmark": "/ðe/ /ɪn'dʒɔɪ/"
+		"chinese": "这是最困难的问题",
+		"english": "this is the most difficult problem",
+		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'prɑbləm/"
 	},
 	{
-		"chinese": "他们享受环游世界",
-		"english": "they enjoy traveling around the world",
-		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /'trævlɪŋ/ /ə'raʊnd/ /ðə/ /wɝld/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "游戏",
-		"english": "games",
-		"soundmark": "/ɡemz/"
+		"chinese": "这是在世界上最困难的问题",
+		"english": "this is the most difficult problem in the world",
+		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'prɑbləm/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "视频",
-		"english": "video",
-		"soundmark": "/'vɪdɪo/"
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "电子游戏",
-		"english": "video games",
-		"soundmark": "/'vɪdɪo/ /ɡemz/"
+		"chinese": "危险的",
+		"english": "dangerous",
+		"soundmark": "/ˈdendʒərəs/"
 	},
 	{
-		"chinese": "玩",
-		"english": "to play",
-		"soundmark": "/tə/ /ple/"
+		"chinese": "最危险的",
+		"english": "the most dangerous",
+		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/"
 	},
 	{
-		"chinese": "玩电子游戏",
-		"english": "to play video games",
-		"soundmark": "/tə/ /ple/ /'vɪdɪo/ /ɡemz/"
+		"chinese": "人",
+		"english": "man",
+		"soundmark": "/mæn/"
 	},
 	{
-		"chinese": "玩电子游戏(ing形式)",
-		"english": "playing video games",
-		"soundmark": "/'pleɪŋ/ /'vɪdɪo/ /ɡemz/"
+		"chinese": "最危险的人",
+		"english": "the most dangerous man",
+		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/ /mæn/"
 	},
 	{
-		"chinese": "他享受",
-		"english": "he enjoys",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
+		"chinese": "他是最危险的人",
+		"english": "he is the most dangerous man",
+		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /mæn/"
 	},
 	{
-		"chinese": "他享受玩电子游戏",
-		"english": "he enjoys playing video games",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'pleɪŋ/ /'vɪdɪo/ /ɡemz/"
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "朋友们",
-		"english": "friends",
-		"soundmark": "/frɛndz/"
+		"chinese": "他是在世界上最危险的人",
+		"english": "he is the most dangerous man in the world",
+		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /mæn/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "他的朋友们",
-		"english": "his friends",
-		"soundmark": "/hɪz/ /frɛndz/"
+		"chinese": "他们是",
+		"english": "they are",
+		"soundmark": "/ðe/ /ɚ/"
 	},
 	{
-		"chinese": "和......一起",
-		"english": "with",
-		"soundmark": "/wɪð/"
+		"chinese": "他们是危险的",
+		"english": "they are dangerous",
+		"soundmark": "/ðe/ /ɚ/ /ˈdendʒərəs/"
 	},
 	{
-		"chinese": "和他的朋友们一起",
-		"english": "with his friends",
-		"soundmark": "/wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "以为",
+		"english": "to think",
+		"soundmark": "/tə/ /θɪŋk/"
 	},
 	{
-		"chinese": "他享受和他的朋友们一起玩电子游戏",
-		"english": "he enjoys playing video games with his friends",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'pleɪŋ/ /'vɪdɪo/ /ɡemz/ /wɪð/ /hɪz/ /frɛndz/"
+		"chinese": "你以为",
+		"english": "you think",
+		"soundmark": "/ju/ /θɪŋk/"
 	},
 	{
-		"chinese": "练习",
-		"english": "to practice",
-		"soundmark": "/tə/ /ˈpræktɪs/"
+		"chinese": "你以为他们是危险的",
+		"english": "you think they are dangerous",
+		"soundmark": "/ju/ /θɪŋk/ /ðe/ /ɚ/ /ˈdendʒərəs/"
 	},
 	{
-		"chinese": "瑜伽",
-		"english": "yoga",
-		"soundmark": "/ˈjoɡə/"
-	},
-	{
-		"chinese": "练习瑜伽",
-		"english": "to practice yoga",
-		"soundmark": "/tə/ /ˈpræktɪs/ /ˈjoɡə/"
-	},
-	{
-		"chinese": "练习瑜伽(ing形式)",
-		"english": "practicing yoga",
-		"soundmark": "/ˈpræktɪsɪŋ/ /ˈjoɡə/"
-	},
-	{
-		"chinese": "我享受",
-		"english": "I enjoy",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/"
-	},
-	{
-		"chinese": "我享受练习瑜伽",
-		"english": "I enjoy practicing yoga",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ˈjoɡə/"
-	},
-	{
-		"chinese": "每天早上",
-		"english": "every morning",
-		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我享受每天早上练习瑜伽",
-		"english": "I enjoy practicing yoga every morning",
-		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ˈjoɡə/ /'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "他们享受",
-		"english": "they enjoy",
-		"soundmark": "/ðe/ /ɪn'dʒɔɪ/"
-	},
-	{
-		"chinese": "练习(ing形式)",
-		"english": "practicing",
-		"soundmark": "/ˈpræktɪsɪŋ/"
-	},
-	{
-		"chinese": "他们享受练习",
-		"english": "they enjoy practicing",
-		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/"
-	},
-	{
-		"chinese": "英语",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "他们的",
-		"english": "their",
-		"soundmark": "/ðɛr/"
-	},
-	{
-		"chinese": "他们的英语",
-		"english": "their English",
-		"soundmark": "/ðɛr/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "他们享受练习他们的英语",
-		"english": "they enjoy practicing their English",
-		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ðɛr/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "说话",
-		"english": "to speak",
-		"soundmark": "/tə/ /spik/"
-	},
-	{
-		"chinese": "说话的人",
-		"english": "speaker",
-		"soundmark": "/'spikɚ/"
-	},
-	{
-		"chinese": "当地的",
-		"english": "native",
-		"soundmark": "/ˈnetɪv/"
-	},
-	{
-		"chinese": "母语使用者",
-		"english": "native speakers",
-		"soundmark": "/ˈnetɪv/ /'spikɚz/"
-	},
-	{
-		"chinese": "和母语使用者",
-		"english": "with native speakers",
-		"soundmark": "/wɪð/ /ˈnetɪv/ /'spikɚz/"
-	},
-	{
-		"chinese": "他们享受和母语使用者练习他们的英语",
-		"english": "they enjoy practicing their English with native speakers",
-		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ðɛr/ /ˈɪŋɡlɪʃ/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
-	},
-	{
-		"chinese": "吉他",
-		"english": "guitar",
-		"soundmark": "/ɡɪ'tɑr/"
-	},
-	{
-		"chinese": "技术",
-		"english": "skills",
-		"soundmark": "/'skɪlz/"
-	},
-	{
-		"chinese": "吉他技术",
-		"english": "guitar skills",
-		"soundmark": "/ɡɪ'tɑr/ /'skɪlz/"
-	},
-	{
-		"chinese": "他的吉他技术",
-		"english": "his guitar skills",
-		"soundmark": "/hɪz/ /ɡɪ'tɑr/ /'skɪlz/"
-	},
-	{
-		"chinese": "练习(ing形式)",
-		"english": "practicing",
-		"soundmark": "/ˈpræktɪsɪŋ/"
-	},
-	{
-		"chinese": "练习他的吉他技术",
-		"english": "practicing his guitar skills",
-		"soundmark": "/ˈpræktɪsɪŋ/ /hɪz/ /ɡɪ'tɑr/ /'skɪlz/"
-	},
-	{
-		"chinese": "他享受",
-		"english": "he enjoys",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
-	},
-	{
-		"chinese": "他享受练习他的吉他技术",
-		"english": "he enjoys practicing his guitar skills",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /ˈpræktɪsɪŋ/ /hɪz/ /ɡɪ'tɑr/ /'skɪlz/"
-	},
-	{
-		"chinese": "每天",
-		"english": "every day",
-		"soundmark": "/'ɛvri/ /de/"
-	},
-	{
-		"chinese": "他享受每天练习他的吉他技术",
-		"english": "he enjoys practicing his guitar skills every day",
-		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /ˈpræktɪsɪŋ/ /hɪz/ /ɡɪ'tɑr/ /'skɪlz/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "你应该",
-		"english": "you should",
-		"soundmark": "/ju/ /ʃʊd/"
-	},
-	{
-		"chinese": "练习",
-		"english": "to practice",
-		"soundmark": "/tə/ /ˈpræktɪs/"
-	},
-	{
-		"chinese": "你应该练习",
-		"english": "you should practice",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/"
-	},
-	{
-		"chinese": "跳舞",
-		"english": "to dance",
-		"soundmark": "/tə/ /dæns/"
-	},
-	{
-		"chinese": "跳舞(ing形式)",
-		"english": "dancing",
-		"soundmark": "/'dænsɪŋ/"
-	},
-	{
-		"chinese": "你应该练习跳舞",
-		"english": "you should practice dancing",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'dænsɪŋ/"
-	},
-	{
-		"chinese": "更加",
+		"chinese": "更",
 		"english": "more",
 		"soundmark": "/mɔr/"
 	},
 	{
-		"chinese": "经常",
-		"english": "often",
-		"soundmark": "/'ɔfn/"
+		"chinese": "更危险的",
+		"english": "more dangerous",
+		"soundmark": "/mɔr/ /ˈdendʒərəs/"
 	},
 	{
-		"chinese": "更加经常",
-		"english": "more often",
-		"soundmark": "/mɔr/ /'ɔfn/"
+		"chinese": "他们是更危险的",
+		"english": "they are more dangerous",
+		"soundmark": "/ðe/ /ɚ/ /mɔr/ /ˈdendʒərəs/"
 	},
 	{
-		"chinese": "你应该更加经常地练习跳舞",
-		"english": "you should practice dancing more often",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'dænsɪŋ/ /mɔr/ /'ɔfn/"
+		"chinese": "比",
+		"english": "than",
+		"soundmark": "/ðæn/"
 	},
 	{
-		"chinese": "练习",
-		"english": "to practice",
-		"soundmark": "/tə/ /ˈpræktɪs/"
+		"chinese": "你以为",
+		"english": "you think",
+		"soundmark": "/ju/ /θɪŋk/"
 	},
 	{
-		"chinese": "他需要",
-		"english": "he needs",
-		"soundmark": "/hi/ /nidz/"
+		"chinese": "比你以为",
+		"english": "than you think",
+		"soundmark": "/ðæn/ /ju/ /θɪŋk/"
 	},
 	{
-		"chinese": "他需要练习",
-		"english": "he needs to practice",
-		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/"
+		"chinese": "他们是比你以为的更危险的",
+		"english": "they are more dangerous than you think",
+		"soundmark": "/ðe/ /ɚ/ /mɔr/ /ˈdendʒərəs/ /ðæn/ /ju/ /θɪŋk/"
 	},
 	{
-		"chinese": "说",
-		"english": "to speak",
-		"soundmark": "/tə/ /spik/"
+		"chinese": "宝贵的",
+		"english": "valuable",
+		"soundmark": "/'væljuəbl/"
 	},
 	{
-		"chinese": "英语",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "说英语",
-		"english": "to speak English",
-		"soundmark": "/tə/ /spik/ /ˈɪŋɡlɪʃ/"
+		"chinese": "最宝贵的",
+		"english": "the most valuable",
+		"soundmark": "/ðə/ /most/ /'væljuəbl/"
 	},
 	{
-		"chinese": "说英语(ing形式)",
-		"english": "speaking English",
-		"soundmark": "/'spikɪŋ/ /ˈɪŋɡlɪʃ/"
+		"chinese": "东西",
+		"english": "thing",
+		"soundmark": "/θɪŋ/"
 	},
 	{
-		"chinese": "他需要练习",
-		"english": "he needs to practice",
-		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/"
+		"chinese": "最宝贵的东西",
+		"english": "the most valuable thing",
+		"soundmark": "/ðə/ /most/ /'væljuəbl/ /θɪŋ/"
 	},
 	{
-		"chinese": "他需要练习说英语",
-		"english": "he needs to practice speaking English",
-		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/ /'spikɪŋ/ /ˈɪŋɡlɪʃ/"
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "更加经常",
-		"english": "more often",
-		"soundmark": "/mɔr/ /'ɔfn/"
+		"chinese": "时间是最宝贵的东西",
+		"english": "time is the most valuable thing",
+		"soundmark": "/taɪm/ /ɪz/ /ðə/ /most/ /'væljuəbl/ /θɪŋ/"
 	},
 	{
-		"chinese": "他需要更经常地练习说英语",
-		"english": "he needs to practice speaking English more often",
-		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/ /'spikɪŋ/ /ˈɪŋɡlɪʃ/ /mɔr/ /'ɔfn/"
+		"chinese": "拥有",
+		"english": "to have",
+		"soundmark": "/tə/ /hæv/"
+	},
+	{
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"chinese": "我们拥有",
+		"english": "we have",
+		"soundmark": "/wi/ /hæv/"
+	},
+	{
+		"chinese": "那个东西",
+		"english": "the thing",
+		"soundmark": "/ðə/ /θɪŋ/"
+	},
+	{
+		"chinese": "我们拥有那个东西",
+		"english": "we have the thing",
+		"soundmark": "/wi/ /hæv/ /ðə/ /θɪŋ/"
+	},
+	{
+		"chinese": "我们拥有的那个东西",
+		"english": "the thing we have",
+		"soundmark": "/ðə/ /θɪŋ/ /wi/ /hæv/"
+	},
+	{
+		"chinese": "最宝贵的东西",
+		"english": "the most valuable thing",
+		"soundmark": "/ðə/ /most/ /'væljuəbl/ /θɪŋ/"
+	},
+	{
+		"chinese": "我们拥有的最宝贵的东西",
+		"english": "the most valuable thing we have",
+		"soundmark": "/ðə/ /most/ /'væljuəbl/ /θɪŋ/ /wi/ /hæv/"
+	},
+	{
+		"chinese": "时间是我们拥有的最宝贵的东西",
+		"english": "time is the most valuable thing we have",
+		"soundmark": "/taɪm/ /ɪz/ /ðə/ /most/ /'væljuəbl/ /θɪŋ/ /wi/ /hæv/"
+	},
+	{
+		"chinese": "宝贵的",
+		"english": "valuable",
+		"soundmark": "/'væljuəbl/"
+	},
+	{
+		"chinese": "更",
+		"english": "more",
+		"soundmark": "/mɔr/"
+	},
+	{
+		"chinese": "更宝贵的",
+		"english": "more valuable",
+		"soundmark": "/mɔr/ /'væljuəbl/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "时间是更宝贵的",
+		"english": "time is more valuable",
+		"soundmark": "/taɪm/ /ɪz/ /mɔr/ /'væljuəbl/"
+	},
+	{
+		"chinese": "金钱",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
+	},
+	{
+		"chinese": "比",
+		"english": "than",
+		"soundmark": "/ðæn/"
+	},
+	{
+		"chinese": "比金钱",
+		"english": "than money",
+		"soundmark": "/ðæn/ /ˈmʌni/"
+	},
+	{
+		"chinese": "时间比金钱是更宝贵的",
+		"english": "time is more valuable than money",
+		"soundmark": "/taɪm/ /ɪz/ /mɔr/ /'væljuəbl/ /ðæn/ /ˈmʌni/"
+	},
+	{
+		"chinese": "车",
+		"english": "car",
+		"soundmark": "/kɑr/"
+	},
+	{
+		"chinese": "新的",
+		"english": "new",
+		"soundmark": "/nu/"
+	},
+	{
+		"chinese": "一辆新车",
+		"english": "a new car",
+		"soundmark": "/ə/ /nu/ /kɑr/"
+	},
+	{
+		"chinese": "昂贵的",
+		"english": "expensive",
+		"soundmark": "/ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "一辆新车是昂贵的",
+		"english": "a new car is expensive",
+		"soundmark": "/ə/ /nu/ /kɑr/ /ɪz/ /ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "更",
+		"english": "more",
+		"soundmark": "/mɔr/"
+	},
+	{
+		"chinese": "更贵的",
+		"english": "more expensive",
+		"soundmark": "/mɔr/ /ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "一辆新车是更贵的",
+		"english": "a new car is more expensive",
+		"soundmark": "/ə/ /nu/ /kɑr/ /ɪz/ /mɔr/ /ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "使用",
+		"english": "to use",
+		"soundmark": "/tə/ /juz/"
+	},
+	{
+		"chinese": "用过的",
+		"english": "used",
+		"soundmark": "/juzd/"
+	},
+	{
+		"chinese": "一辆旧车",
+		"english": "a used car",
+		"soundmark": "/ə/ /juzd/ /kɑr/"
+	},
+	{
+		"chinese": "比",
+		"english": "than",
+		"soundmark": "/ðæn/"
+	},
+	{
+		"chinese": "比一辆旧车",
+		"english": "than a used car",
+		"soundmark": "/ðæn/ /ə/ /juzd/ /kɑr/"
+	},
+	{
+		"chinese": "一辆新车比一辆旧车是更贵的",
+		"english": "a new car is more expensive than a used car",
+		"soundmark": "/ə/ /nu/ /kɑr/ /ɪz/ /mɔr/ /ɪk'spɛnsɪv/ /ðæn/ /ə/ /juzd/ /kɑr/"
+	},
+	{
+		"chinese": "昂贵的",
+		"english": "expensive",
+		"soundmark": "/ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "礼物",
+		"english": "gift",
+		"soundmark": "/ɡɪft/"
+	},
+	{
+		"chinese": "这个礼物是昂贵的",
+		"english": "the gift is expensive",
+		"soundmark": "/ðə/ /ɡɪft/ /ɪz/ /ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
+	},
+	{
+		"chinese": "最贵的",
+		"english": "the most expensive",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/"
+	},
+	{
+		"chinese": "礼物",
+		"english": "gift",
+		"soundmark": "/ɡɪft/"
+	},
+	{
+		"chinese": "最贵的礼物",
+		"english": "the most expensive gift",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/"
+	},
+	{
+		"chinese": "找到",
+		"english": "to find",
+		"soundmark": "/tə/ /faɪnd/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kən/"
+	},
+	{
+		"chinese": "你可以找到",
+		"english": "you can find",
+		"soundmark": "/ju/ /kən/ /faɪnd/"
+	},
+	{
+		"chinese": "你可以找到最贵的礼物",
+		"english": "you can find the most expensive gift",
+		"soundmark": "/ju/ /kən/ /faɪnd/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/"
+	},
+	{
+		"chinese": "你可以找到的最贵的礼物",
+		"english": "the most expensive gift you can find",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
 	},
 	{
 		"chinese": "你应该",
@@ -660,73 +480,218 @@
 		"soundmark": "/ju/ /ʃʊd/"
 	},
 	{
-		"chinese": "练习",
-		"english": "to practice",
-		"soundmark": "/tə/ /ˈpræktɪs/"
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "你应该练习",
-		"english": "you should practice",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/"
+		"chinese": "你应该买",
+		"english": "you should buy",
+		"soundmark": "/ju/ /ʃʊd/ /baɪ/"
 	},
 	{
-		"chinese": "阅读",
-		"english": "to read",
-		"soundmark": "/tə/ /rid/"
+		"chinese": "你可以找到的最贵的礼物",
+		"english": "the most expensive gift you can find",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
 	},
 	{
-		"chinese": "大声的",
-		"english": "aloud",
-		"soundmark": "/ə'laʊd/"
+		"chinese": "你应该买你可以找到的最贵的礼物",
+		"english": "you should buy the most expensive gift you can find",
+		"soundmark": "/ju/ /ʃʊd/ /baɪ/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
 	},
 	{
-		"chinese": "大声地读",
-		"english": "to read aloud",
-		"soundmark": "/tə/ /rid/ /ə'laʊd/"
+		"chinese": "你的女儿",
+		"english": "your daughter",
+		"soundmark": "/jʊr/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "大声地读(ing形式)",
-		"english": "reading aloud",
-		"soundmark": "/'ridɪŋ/ /ə'laʊd/"
+		"chinese": "你应该买",
+		"english": "you should buy",
+		"soundmark": "/ju/ /ʃʊd/ /baɪ/"
 	},
 	{
-		"chinese": "你应该练习",
-		"english": "you should practice",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/"
+		"chinese": "你应该买给你的女儿",
+		"english": "you should buy your daughter",
+		"soundmark": "/ju/ /ʃʊd/ /baɪ/ /jʊr/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "你应该练习大声地读",
-		"english": "you should practice reading aloud",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'ridɪŋ/ /ə'laʊd/"
+		"chinese": "你可以找到的最贵的礼物",
+		"english": "the most expensive gift you can find",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
 	},
 	{
-		"chinese": "发音",
-		"english": "pronunciation",
-		"soundmark": "/prənʌnsɪ'eʃən/"
+		"chinese": "你应该买给你的女儿你可以找到的最贵的礼物",
+		"english": "you should buy your daughter the most expensive gift you can find",
+		"soundmark": "/ju/ /ʃʊd/ /baɪ/ /jʊr/ /'dɔtɚ/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
 	},
 	{
-		"chinese": "你的发音",
-		"english": "your pronunciation",
-		"soundmark": "/jʊr/ /prənʌnsɪ'eʃən/"
+		"chinese": "最贵的",
+		"english": "the most expensive",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/"
 	},
 	{
-		"chinese": "改善",
-		"english": "to improve",
-		"soundmark": "/tə/ /ɪmˈpruv/"
+		"chinese": "旅馆",
+		"english": "hotel",
+		"soundmark": "/ho'tɛl/"
 	},
 	{
-		"chinese": "改善你的发音",
-		"english": "to improve your pronunciation",
-		"soundmark": "/tə/ /ɪmˈpruv/ /jʊr/ /prənʌnsɪ'eʃən/"
+		"chinese": "最贵的旅馆",
+		"english": "the most expensive hotel",
+		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ho'tɛl/"
 	},
 	{
-		"chinese": "你应该练习大声地读",
-		"english": "you should practice reading aloud",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'ridɪŋ/ /ə'laʊd/"
+		"chinese": "这是最贵的旅馆",
+		"english": "this is the most expensive hotel",
+		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ho'tɛl/"
 	},
 	{
-		"chinese": "你应该练习大声地读去改善你的发音",
-		"english": "you should practice reading aloud to improve your pronunciation",
-		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'ridɪŋ/ /ə'laʊd/ /tə/ /ɪmˈpruv/ /jʊr/ /prənʌnsɪ'eʃən/"
+		"chinese": "这个城市",
+		"english": "the city",
+		"soundmark": "/ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "在这个城市里",
+		"english": "in the city",
+		"soundmark": "/ɪn/ /ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "这是在这个城市里最贵的旅馆",
+		"english": "this is the most expensive hotel in the city",
+		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ho'tɛl/ /ɪn/ /ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "漂亮的",
+		"english": "beautiful",
+		"soundmark": "/'bjʊtəfəl/"
+	},
+	{
+		"chinese": "最",
+		"english": "the most",
+		"soundmark": "/ðə/ /most/"
+	},
+	{
+		"chinese": "最漂亮的",
+		"english": "the most beautiful",
+		"soundmark": "/ðə/ /most/ /'bjʊtəfəl/"
+	},
+	{
+		"chinese": "女孩",
+		"english": "girl",
+		"soundmark": "/ɡɝl/"
+	},
+	{
+		"chinese": "最漂亮的女孩",
+		"english": "the most beautiful girl",
+		"soundmark": "/ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/"
+	},
+	{
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"chinese": "你是最漂亮的女孩",
+		"english": "you are the most beautiful girl",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/"
+	},
+	{
+		"chinese": "在世界上",
+		"english": "in the world",
+		"soundmark": "/ɪn/ /ðə/ /wɝld/ /C40/"
+	},
+	{
+		"chinese": "你是世界上最漂亮的女孩",
+		"english": "you are the most beautiful girl in the world",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/ /ɪn/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "漂亮的",
+		"english": "beautiful",
+		"soundmark": "/'bjʊtəfəl/"
+	},
+	{
+		"chinese": "更",
+		"english": "more",
+		"soundmark": "/mɔr/"
+	},
+	{
+		"chinese": "更漂亮的",
+		"english": "more beautiful",
+		"soundmark": "/mɔr/ /'bjʊtəfəl/"
+	},
+	{
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"chinese": "你是更漂亮的",
+		"english": "you are more beautiful",
+		"soundmark": "/ju/ /ɚ/ /mɔr/ /'bjʊtəfəl/"
+	},
+	{
+		"chinese": "笑",
+		"english": "to smile",
+		"soundmark": "/tə/ /smaɪl/"
+	},
+	{
+		"chinese": "你笑",
+		"english": "you smile",
+		"soundmark": "/ju/ /smaɪl/"
+	},
+	{
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当你笑的时候",
+		"english": "when you smile",
+		"soundmark": "/wɛn/ /ju/ /smaɪl/"
+	},
+	{
+		"chinese": "当你笑的时候你是更漂亮的",
+		"english": "you are more beautiful when you smile",
+		"soundmark": "/ju/ /ɚ/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+	},
+	{
+		"chinese": "看",
+		"english": "to look",
+		"soundmark": "/tə/ /lʊk/"
+	},
+	{
+		"chinese": "你看起来更漂亮",
+		"english": "you look more beautiful",
+		"soundmark": "/ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/"
+	},
+	{
+		"chinese": "当你笑的时候",
+		"english": "when you smile",
+		"soundmark": "/wɛn/ /ju/ /smaɪl/"
+	},
+	{
+		"chinese": "你看起来是更漂亮的当你笑的时候",
+		"english": "you look more beautiful when you smile",
+		"soundmark": "/ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bʌt/"
+	},
+	{
+		"chinese": "但是你看起来是更漂亮的当你笑的时候",
+		"english": "but you look more beautiful when you smile",
+		"soundmark": "/bʌt/ /ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+	},
+	{
+		"chinese": "你是世界上最漂亮的女孩",
+		"english": "you are the most beautiful girl in the world",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/ /ɪn/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "你是世界上最漂亮的女孩但是当你笑的时候你看起来是更漂亮的",
+		"english": "you are the most beautiful girl in the world but you look more beautiful when you smile",
+		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/ /ɪn/ /ðə/ /wɝld/ /bʌt/ /ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
 	}
 ]

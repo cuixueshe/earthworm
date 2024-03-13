@@ -25,6 +25,8 @@ import path from 'node:path'
   }
 
   let orderIndex = 1;
+  console.log('============================',courses.length);
+  
   for (let i = 0; i < courses.length; i++) {
     const {cId, fileName} = courses[i];
     const courseDataText = fs.readFileSync(

@@ -1,13 +1,508 @@
 [
 	{
-		"chinese": "我",
-		"english": "I",
-		"soundmark": "/aɪ/"
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "我是",
-		"english": "I am",
-		"soundmark": "/aɪ/ /æm/"
+		"chinese": "这件事情",
+		"english": "it",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "我想要做这件事情",
+		"english": "I want to do it",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我现在想要做这件事情",
+		"english": "I want to do it now",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "我现在不想做这件事情",
+		"english": "I don't want to do it now",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "她现在想要做这件事",
+		"english": "she wants to do it now",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "她现在不想做这件事",
+		"english": "she doesn't want to do it now",
+		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "我（过去）想要做这件事情",
+		"english": "I wanted to do it",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "昨天",
+		"english": "yesterday",
+		"soundmark": "/'jɛstɚde/"
+	},
+	{
+		"chinese": "我昨天想要做这件事情",
+		"english": "I wanted to do it yesterday",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我昨天不想做这件事情",
+		"english": "I didn't want to do it yesterday",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "留；待在",
+		"english": "to stay",
+		"soundmark": "/tə/ /ste/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "待在那里",
+		"english": "to stay there",
+		"soundmark": "/tə/ /ste/ /ðɛr/"
+	},
+	{
+		"chinese": "喜欢",
+		"english": "like",
+		"soundmark": "/laɪk/"
+	},
+	{
+		"chinese": "我喜欢待在那里",
+		"english": "I like to stay there",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /ste/ /ðɛr/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我喜欢每天待在那里",
+		"english": "I like to stay there every day",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "我不喜欢每天待在那里",
+		"english": "I don't like to stay there every day",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我（过去）喜欢待在那里",
+		"english": "I liked to stay there",
+		"soundmark": "/aɪ/ /laikt/ /tə/ /ste/ /ðɛr/"
+	},
+	{
+		"chinese": "我（过去）不喜欢待在那里",
+		"english": "I didn't like to stay there",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /laɪk/ /tə/ /ste/ /ðɛr/"
+	},
+	{
+		"chinese": "离开",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"chinese": "这座城市",
+		"english": "the city",
+		"soundmark": "/ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "我必须离开这座城市",
+		"english": "I have to leave the city",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "我今天必须离开这座城市",
+		"english": "I have to leave the city today",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /tə'de/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "我今天不必离开这座城市",
+		"english": "I don't have to leave the city today",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /tə'de/"
+	},
+	{
+		"chinese": "我（过去）必须",
+		"english": "I had to",
+		"soundmark": "/aɪ/ /hæd/ /tə/"
+	},
+	{
+		"chinese": "我（过去）必须离开这座城市",
+		"english": "I had to leave the city",
+		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"chinese": "在那时",
+		"english": "at that time",
+		"soundmark": "/ət/ /ðæt/ /taɪm/"
+	},
+	{
+		"chinese": "我必须在那时离开这座城市",
+		"english": "I had to leave the city at that time",
+		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
+	},
+	{
+		"chinese": "我不必在那时离开这座城市",
+		"english": "I didn't have to leave the city at that time",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
+	},
+	{
+		"chinese": "计划；打算",
+		"english": "plan",
+		"soundmark": "/plæn/"
+	},
+	{
+		"chinese": "去；达到",
+		"english": "to get",
+		"soundmark": "/tə/ /ɡɛt/"
+	},
+	{
+		"chinese": "去那里",
+		"english": "to get there",
+		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "我打算去那里",
+		"english": "I plan to get there",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "我不打算去那里",
+		"english": "I don't plan to get there",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "我（过去）打算去那里",
+		"english": "I planned to get there",
+		"soundmark": "/aɪ/ /plænd/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "我（过去）不打算去那里",
+		"english": "I didn't plan to get there",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "知道",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "事实；真相",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"chinese": "我需要知道真相",
+		"english": "I need to know the truth",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "尽快；尽可能地快",
+		"english": "as soon as possible",
+		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "我需要尽快知道真相",
+		"english": "I need to know the truth as soon as possible",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ðə/ /trʊθ/ /əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "我不需要知道真相",
+		"english": "I don't need to know the truth",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我（过去）需要知道真相",
+		"english": "I needed to know the truth",
+		"soundmark": "/aɪ/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我（过去）不需要知道真相",
+		"english": "I didn't need to know the truth",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "她（过去）需要知道真相",
+		"english": "she needed to know the truth",
+		"soundmark": "/ʃi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "她（过去）不需要知道真相",
+		"english": "she didn't need to know the truth",
+		"soundmark": "/ʃi/ /ˈdɪdnt/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你做这件事情",
+		"english": "you do it",
+		"soundmark": "/ju/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你现在做这件事情",
+		"english": "you do it now",
+		"soundmark": "/ju/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "你现在不做这件事情",
+		"english": "you don't do it now",
+		"soundmark": "/ju/ /dont/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "你（过去）做这件事情",
+		"english": "you did it",
+		"soundmark": "/ju/ /dɪd/ /ɪt/"
+	},
+	{
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
+	},
+	{
+		"chinese": "上一个",
+		"english": "last",
+		"soundmark": "/læst/"
+	},
+	{
+		"chinese": "去年",
+		"english": "last year",
+		"soundmark": "/læst/ /jɪr/"
+	},
+	{
+		"chinese": "你去年做这件事情",
+		"english": "you did it last year",
+		"soundmark": "/ju/ /dɪd/ /ɪt/ /læst/ /jɪr/"
+	},
+	{
+		"chinese": "你去年没做这件事情",
+		"english": "you didn't do it last year",
+		"soundmark": "/ju/ /ˈdɪdnt/ /du/ /ɪt/ /læst/ /jɪr/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "to tell me",
+		"soundmark": "/tə/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "你告诉我",
+		"english": "you tell me",
+		"soundmark": "/ju/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "你不告诉我",
+		"english": "you don't tell me",
+		"soundmark": "/ju/ /dont/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "她告诉我",
+		"english": "she tells me",
+		"soundmark": "/ʃi/ /tɛlz/ /mi/"
+	},
+	{
+		"chinese": "她不告诉我",
+		"english": "she doesn't tell me",
+		"soundmark": "/ʃi/ /ˈdʌznt/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "他（过去）告诉我",
+		"english": "he told me",
+		"soundmark": "/hi/ /told/ /mi/"
+	},
+	{
+		"chinese": "他（过去）没告诉我",
+		"english": "he didn't tell me",
+		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "事实；真相",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他（过去）没告诉我真相",
+		"english": "he didn't tell me the truth",
+		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "知道",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "知道真相",
+		"english": "to know the truth",
+		"soundmark": "/tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他（过去）需要知道真相",
+		"english": "he needed to know the truth",
+		"soundmark": "/hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他（过去）告诉我",
+		"english": "he told me",
+		"soundmark": "/hi/ /told/ /mi/"
+	},
+	{
+		"chinese": "他（过去）告诉我他（过去）需要知道真相",
+		"english": "he told me he needed to know the truth",
+		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "it is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它（过去）是重要的",
+		"english": "it was important",
+		"soundmark": "/ɪt/ /wəz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为它（过去）是重要的",
+		"english": "because it was important",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "他（过去）告诉我他（过去）需要知道真相",
+		"english": "he told me he needed to know the truth",
+		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "他（过去）告诉我他（过去）需要知道真相因为它（过去）是重要的",
+		"english": "he told me he needed to know the truth because it was important",
+		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "存在；成为",
+		"english": "to be",
+		"soundmark": "/tə/ /bi/"
+	},
+	{
+		"chinese": "一个老师",
+		"english": "a teacher",
+		"soundmark": "/ə/ /'titʃɚ/"
+	},
+	{
+		"chinese": "成为一个老师",
+		"english": "to be a teacher",
+		"soundmark": "/tə/ /bi/ /ə/ /'titʃɚ/"
+	},
+	{
+		"chinese": "我（过去）想要成为一个老师",
+		"english": "I wanted to be a teacher",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我是重要的",
+		"english": "I am important",
+		"soundmark": "/aɪ/ /æm/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我（过去）是重要的",
+		"english": "I was important",
+		"soundmark": "/aɪ/ /wəz/ /ɪm'pɔrtnt/"
 	},
 	{
 		"chinese": "年轻的",
@@ -20,114 +515,9 @@
 		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
 	},
 	{
-		"chinese": "我是不年轻的",
-		"english": "I am not young",
-		"soundmark": "/aɪ/ /æm/ /nɑt/ /jʌŋ/"
-	},
-	{
 		"chinese": "我（过去）是年轻的",
 		"english": "I was young",
 		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
-	},
-	{
-		"chinese": "我（过去）是不年轻的",
-		"english": "I was not young",
-		"soundmark": "/aɪ/ /wəz/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "他是",
-		"english": "he is",
-		"soundmark": "/hi/ /ɪz/"
-	},
-	{
-		"chinese": "他是年轻的",
-		"english": "he is young",
-		"soundmark": "/hi/ /ɪz/ /jʌŋ/"
-	},
-	{
-		"chinese": "他是不年轻的",
-		"english": "he is not young",
-		"soundmark": "/hi/ /ɪz/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "他（过去）是年轻的",
-		"english": "he was young",
-		"soundmark": "/hi/ /wəz/ /jʌŋ/"
-	},
-	{
-		"chinese": "他（过去）是不年轻的",
-		"english": "he was not young",
-		"soundmark": "/hi/ /wəz/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "我们是",
-		"english": "we are",
-		"soundmark": "/wi/ /ɚ/"
-	},
-	{
-		"chinese": "我们是年轻的",
-		"english": "we are young",
-		"soundmark": "/wi/ /ɚ/ /jʌŋ/"
-	},
-	{
-		"chinese": "我们是不年轻的",
-		"english": "we are not young",
-		"soundmark": "/wi/ /ɚ/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "我们（过去）是年轻的",
-		"english": "we were young",
-		"soundmark": "/wi/ /wɚ/ /jʌŋ/"
-	},
-	{
-		"chinese": "我们（过去）是不年轻的",
-		"english": "we were not young",
-		"soundmark": "/wi/ /wɚ/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "你是",
-		"english": "you are",
-		"soundmark": "/ju/ /ɚ/"
-	},
-	{
-		"chinese": "你是年轻的",
-		"english": "you are young",
-		"soundmark": "/ju/ /ɚ/ /jʌŋ/"
-	},
-	{
-		"chinese": "你是不年轻的",
-		"english": "you are not young",
-		"soundmark": "/ju/ /ɚ/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "你（过去）是年轻的",
-		"english": "you were young",
-		"soundmark": "/ju/ /wɚ/ /jʌŋ/"
-	},
-	{
-		"chinese": "你（过去）是不年轻的",
-		"english": "you were not young",
-		"soundmark": "/ju/ /wɚ/ /nɑt/ /jʌŋ/"
-	},
-	{
-		"chinese": "非常",
-		"english": "very",
-		"soundmark": "/ˈvɛri/"
-	},
-	{
-		"chinese": "你（过去）是非常年轻的",
-		"english": "you were very young",
-		"soundmark": "/ju/ /wɚ/ /ˈvɛri/ /jʌŋ/"
-	},
-	{
-		"chinese": "见到",
-		"english": "to see",
-		"soundmark": "/tə/ /si/"
-	},
-	{
-		"chinese": "我（过去）见到你",
-		"english": "I saw you",
-		"soundmark": "/aɪ/ /sɔ/ /ju/"
 	},
 	{
 		"chinese": "当......的时候",
@@ -135,369 +525,74 @@
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我（过去）见到你的时候",
-		"english": "when I saw you",
-		"soundmark": "/wɛn/ /aɪ/ /sɔ/ /ju/"
+		"chinese": "当我（过去）是年轻的时候",
+		"english": "when I was young",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "第一次",
-		"english": "first",
-		"soundmark": "/fɝst/"
+		"chinese": "我（过去）想要成为一个老师",
+		"english": "I wanted to be a teacher",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "当我第一次（过去）见到你的时候",
-		"english": "when I first saw you",
-		"soundmark": "/wɛn/ /aɪ/ /fɝst/ /sɔ/ /ju/"
+		"chinese": "我（过去）想要成为一个老师当我（过去）是年轻的时候",
+		"english": "I wanted to be a teacher when I was young",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "当我第一次（过去）见到你的时候你（过去）是非常年轻的",
-		"english": "you were very young when I first saw you",
-		"soundmark": "/ju/ /wɚ/ /ˈvɛri/ /jʌŋ/ /wɛn/ /aɪ/ /fɝst/ /sɔ/ /ju/"
+		"chinese": "交谈；聊天",
+		"english": "to talk",
+		"soundmark": "/tə/ /tɔk/"
 	},
 	{
-		"chinese": "吃",
-		"english": "to eat",
-		"soundmark": "/tə/ /it/"
+		"chinese": "我们（过去）聊天",
+		"english": "we talked",
+		"soundmark": "/wi/ /tɔkt/"
 	},
 	{
-		"chinese": "一个苹果",
-		"english": "an apple",
-		"soundmark": "/ən/ /'æpl/"
+		"chinese": "在......之前；以前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "吃一个苹果",
-		"english": "to eat an apple",
-		"soundmark": "/tə/ /it/ /ən/ /'æpl/"
+		"chinese": "我们以前聊过天",
+		"english": "we talked before",
+		"soundmark": "/wi/ /tɔkt/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "我想要吃一个苹果",
-		"english": "I want to eat an apple",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /it/ /ən/ /'æpl/"
+		"chinese": "和她（过去）聊天",
+		"english": "talked with her",
+		"soundmark": "/tɔkt/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "每天",
-		"english": "every day",
-		"soundmark": "/'ɛvri/ /de/"
+		"chinese": "我和她聊过天",
+		"english": "I talked with her",
+		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "我想要每天吃一个苹果",
-		"english": "I want to eat an apple every day",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /it/ /ən/ /'æpl/ /'ɛvri/ /de/"
+		"chinese": "我以前和她聊过天",
+		"english": "I talked with her before",
+		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "我每天吃一个苹果",
-		"english": "I eat an apple every day",
-		"soundmark": "/aɪ/ /it/ /ən/ /'æpl/ /'ɛvri/ /de/"
+		"chinese": "昨天",
+		"english": "yesterday",
+		"soundmark": "/'jɛstɚde/"
 	},
 	{
-		"chinese": "吃了",
-		"english": "ate",
-		"soundmark": "/et/"
+		"chinese": "那一天",
+		"english": "the day",
+		"soundmark": "/ðə/ /de/"
 	},
 	{
-		"chinese": "吃了一个苹果",
-		"english": "ate an apple",
-		"soundmark": "/et/ /ən/ /'æpl/"
+		"chinese": "在......之前；以前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "我吃了一个苹果",
-		"english": "I ate an apple",
-		"soundmark": "/aɪ/ /et/ /ən/ /'æpl/"
-	},
-	{
-		"chinese": "她吃了一个苹果",
-		"english": "she ate an apple",
-		"soundmark": "/ʃi/ /et/ /ən/ /'æpl/"
-	},
-	{
-		"chinese": "在......之前",
-		"english": "ago",
-		"soundmark": "/ə'ɡo/"
-	},
-	{
-		"chinese": "一小时",
-		"english": "an hour",
-		"soundmark": "/ən/ /'aʊɚ/"
-	},
-	{
-		"chinese": "在一小时之前",
-		"english": "an hour ago",
-		"soundmark": "/ən/ /'aʊɚ/ /ə'ɡo/"
-	},
-	{
-		"chinese": "她在一小时之前吃了一个苹果",
-		"english": "she ate an apple an hour ago",
-		"soundmark": "/ʃi/ /et/ /ən/ /'æpl/ /ən/ /'aʊɚ/ /ə'ɡo/"
-	},
-	{
-		"chinese": "她在一小时之前没吃一个苹果",
-		"english": "she didn't eat an apple an hour ago",
-		"soundmark": "/ʃi/ /dɪdnt/ /it/ /ən/ /'æpl/ /ən/ /'aʊɚ/ /ə'ɡo/"
-	},
-	{
-		"chinese": "喝",
-		"english": "to drink",
-		"soundmark": "/tə/ /drɪŋk/"
-	},
-	{
-		"chinese": "一些水",
-		"english": "some water",
-		"soundmark": "/səm/ /'wɔtɚ/"
-	},
-	{
-		"chinese": "喝一些水",
-		"english": "to drink some water",
-		"soundmark": "/tə/ /drɪŋk/ /səm/ /'wɔtɚ/"
-	},
-	{
-		"chinese": "我想要喝一些水",
-		"english": "I want to drink some water",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /drɪŋk/ /səm/ /'wɔtɚ/"
-	},
-	{
-		"chinese": "每天早上",
-		"english": "every morning",
-		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我想要每天早上喝一些水",
-		"english": "I want to drink some water every morning",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /drɪŋk/ /səm/ /'wɔtɚ/ /'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我每天早上喝一些水",
-		"english": "I drink some water every morning",
-		"soundmark": "/aɪ/ /drɪŋk/ /səm/ /'wɔtɚ/ /'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "喝了",
-		"english": "drank",
-		"soundmark": "/dræŋk/"
-	},
-	{
-		"chinese": "我喝了一些水",
-		"english": "I drank some water",
-		"soundmark": "/aɪ/ /dræŋk/ /səm/ /'wɔtɚ/"
-	},
-	{
-		"chinese": "这个",
-		"english": "this",
-		"soundmark": "/ðɪs/"
-	},
-	{
-		"chinese": "早上",
-		"english": "morning",
-		"soundmark": "/'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "今天早上",
-		"english": "this morning",
-		"soundmark": "/ðɪs/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我今天早上喝了一些水",
-		"english": "I drank some water this morning",
-		"soundmark": "/aɪ/ /dræŋk/ /səm/ /'wɔtɚ/ /ðɪs/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "任何",
-		"english": "any",
-		"soundmark": "/'ɛni/"
-	},
-	{
-		"chinese": "我今天早上没喝任何水",
-		"english": "I didn't drink any water this morning",
-		"soundmark": "/aɪ/ /dɪdnt/ /drɪŋk/ /'ɛni/ /'wɔtɚ/ /ðɪs/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
-	},
-	{
-		"chinese": "他（过去）知道答案",
-		"english": "he knew the answer",
-		"soundmark": "/hi/ /nju/ /ði/ /'ænsɚ/"
-	},
-	{
-		"chinese": "问题的答案",
-		"english": "the answer to the question",
-		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "他（过去）知道问题的答案",
-		"english": "he knew the answer to the question",
-		"soundmark": "/hi/ /nju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "已经",
-		"english": "already",
-		"soundmark": "/ɔl'rɛdi/"
-	},
-	{
-		"chinese": "他已经知道问题的答案",
-		"english": "he already knew the answer to the question",
-		"soundmark": "/hi/ /ɔl'rɛdi/ /nju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "他（过去）不知道问题的答案",
-		"english": "he didn't know the answer to the question",
-		"soundmark": "/hi/ /dɪdnt/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "忘记",
-		"english": "to forget",
-		"soundmark": "/tə/ /fɚ'ɡɛt/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
-	},
-	{
-		"chinese": "我（过去）忘记告诉你",
-		"english": "I forgot to tell you",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /tə/ /tɛl/ /ju/"
-	},
-	{
-		"chinese": "他已经知道问题的答案",
-		"english": "he already knew the answer to the question",
-		"soundmark": "/hi/ /ɔl'rɛdi/ /nju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我（过去）忘记告诉你他已经知道问题的答案",
-		"english": "I forgot to tell you he already knew the answer to the question",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /tə/ /tɛl/ /ju/ /hi/ /ɔl'rɛdi/ /nju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "工作",
-		"english": "job",
-		"soundmark": "/dʒɑb/"
-	},
-	{
-		"chinese": "我的工作",
-		"english": "my job",
-		"soundmark": "/maɪ/ /dʒɑb/"
-	},
-	{
-		"chinese": "失去",
-		"english": "to lose",
-		"soundmark": "/tə/ /luz/"
-	},
-	{
-		"chinese": "失去了",
-		"english": "lost",
-		"soundmark": "/lɔst/"
-	},
-	{
-		"chinese": "我失去了我的工作",
-		"english": "I lost my job",
-		"soundmark": "/aɪ/ /lɔst/ /maɪ/ /dʒɑb/"
-	},
-	{
-		"chinese": "在......之前",
-		"english": "ago",
-		"soundmark": "/ə'ɡo/"
-	},
-	{
-		"chinese": "两年",
-		"english": "two years",
-		"soundmark": "/tu/ /jɪrz/"
-	},
-	{
-		"chinese": "在两年之前",
-		"english": "two years ago",
-		"soundmark": "/tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我在两年前失去了我的工作",
-		"english": "I lost my job two years ago",
-		"soundmark": "/aɪ/ /lɔst/ /maɪ/ /dʒɑb/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我在两年前没有失去我的工作",
-		"english": "I didn't lose my job two years ago",
-		"soundmark": "/aɪ/ /dɪdnt/ /luz/ /maɪ/ /dʒɑb/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "离开",
-		"english": "to leave",
-		"soundmark": "/tə/ /liv/"
-	},
-	{
-		"chinese": "离开了",
-		"english": "left",
-		"soundmark": "/lɛft/"
-	},
-	{
-		"chinese": "她的",
-		"english": "her",
-		"soundmark": "/hɚ/"
-	},
-	{
-		"chinese": "办公室",
-		"english": "office",
-		"soundmark": "/'ɑfɪs/"
-	},
-	{
-		"chinese": "她的办公室",
-		"english": "her office",
-		"soundmark": "/hɚ/ /'ɑfɪs/"
-	},
-	{
-		"chinese": "我离开了她的办公室",
-		"english": "I left her office",
-		"soundmark": "/aɪ/ /lɛft/ /hɚ/ /'ɑfɪs/"
-	},
-	{
-		"chinese": "在......之前",
-		"english": "ago",
-		"soundmark": "/ə'ɡo/"
-	},
-	{
-		"chinese": "一小时",
-		"english": "an hour",
-		"soundmark": "/ən/ /'aʊɚ/"
-	},
-	{
-		"chinese": "在一小时之前",
-		"english": "an hour ago",
-		"soundmark": "/ən/ /'aʊɚ/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我在一小时之前离开了她的办公室",
-		"english": "I left her office an hour ago",
-		"soundmark": "/aɪ/ /lɛft/ /hɚ/ /'ɑfɪs/ /ən/ /'aʊɚ/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我在一小时之前没有离开她的办公室",
-		"english": "I didn't leave her office an hour ago",
-		"soundmark": "/aɪ/ /dɪdnt/ /liv/ /hɚ/ /'ɑfɪs/ /ən/ /'aʊɚ/ /ə'ɡo/"
-	},
-	{
-		"chinese": "睡觉",
-		"english": "to sleep",
-		"soundmark": "/tə/ /slip/"
-	},
-	{
-		"chinese": "房间",
-		"english": "room",
-		"soundmark": "/rum/"
-	},
-	{
-		"chinese": "我的房间",
-		"english": "my room",
-		"soundmark": "/maɪ/ /rum/"
-	},
-	{
-		"chinese": "在我的房间（过去）睡觉",
-		"english": "slept in my room",
-		"soundmark": "/slɛpt/ /ɪn/ /maɪ/ /rum/"
+		"chinese": "我前天和她聊过天",
+		"english": "I talked with her the day before yesterday",
+		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
 	},
 	{
 		"chinese": "上一个",
@@ -505,313 +600,88 @@
 		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "晚上",
-		"english": "night",
-		"soundmark": "/naɪt/"
+		"chinese": "星期；周",
+		"english": "week",
+		"soundmark": "/wik/"
 	},
 	{
-		"chinese": "昨晚",
-		"english": "last night",
-		"soundmark": "/læst/ /naɪt/"
+		"chinese": "周末",
+		"english": "weekend",
+		"soundmark": "/'wikɛnd/"
 	},
 	{
-		"chinese": "她昨晚睡在我的房间",
-		"english": "she slept in my room last night",
-		"soundmark": "/ʃi/ /slɛpt/ /ɪn/ /maɪ/ /rum/ /læst/ /naɪt/"
+		"chinese": "上周末",
+		"english": "last weekend",
+		"soundmark": "/læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "她昨晚没有睡在我的房间",
-		"english": "she didn't sleep in my room last night",
-		"soundmark": "/ʃi/ /dɪdnt/ /slip/ /ɪn/ /maɪ/ /rum/ /læst/ /naɪt/"
+		"chinese": "我上周末和她聊过天",
+		"english": "I talked with her last weekend",
+		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "明白",
-		"english": "to understand",
-		"soundmark": "/tə/ /ʌndɚ'stænd/"
+		"chinese": "改变",
+		"english": "to change",
+		"soundmark": "/tə/ /tʃendʒ/"
 	},
 	{
-		"chinese": "你必须明白",
-		"english": "you have to understand",
-		"soundmark": "/ju/ /hæv/ /tə/ /ʌndɚ'stænd/"
+		"chinese": "世界",
+		"english": "the world",
+		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "你明白",
-		"english": "you understand",
-		"soundmark": "/ju/ /ʌndɚ'stænd/"
+		"chinese": "改变世界",
+		"english": "to change the world",
+		"soundmark": "/tə/ /tʃendʒ/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "你不明白",
-		"english": "you don't understand",
-		"soundmark": "/ju/ /dont/ /ʌndɚ'stænd/"
+		"chinese": "她想要改变世界",
+		"english": "she wants to change the world",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /tʃendʒ/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "你（过去）明白",
-		"english": "you understood",
-		"soundmark": "/ju/ /ʌndɚˈstʊd/"
+		"chinese": "她（过去）想要改变世界",
+		"english": "she wanted to change the world",
+		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "你不（过去）明白",
-		"english": "you didn't understand",
-		"soundmark": "/ju/ /dɪdnt/ /ʌndɚ'stænd/"
+		"chinese": "年轻的",
+		"english": "young",
+		"soundmark": "/jʌŋ/"
 	},
 	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
+		"chinese": "她（过去）是年轻的",
+		"english": "she was young",
+		"soundmark": "/ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "告诉过",
-		"english": "told",
-		"soundmark": "/told/"
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "我告诉过你",
-		"english": "I told you",
-		"soundmark": "/aɪ/ /told/ /ju/"
+		"chinese": "当她（过去）是年轻的时候",
+		"english": "when she was young",
+		"soundmark": "/wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "她昨晚没有睡在我的房间",
-		"english": "she didn't sleep in my room last night",
-		"soundmark": "/ʃi/ /dɪdnt/ /slip/ /ɪn/ /maɪ/ /rum/ /læst/ /naɪt/"
+		"chinese": "她（过去）想要改变世界当她（过去）是年轻的时候",
+		"english": "she wanted to change the world when she was young",
+		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "我告诉过你她昨晚没有睡在我的房间",
-		"english": "I told you she didn't sleep in my room last night",
-		"soundmark": "/aɪ/ /told/ /ju/ /ʃi/ /dɪdnt/ /slip/ /ɪn/ /maɪ/ /rum/ /læst/ /naɪt/"
+		"chinese": "她（过去）告诉我",
+		"english": "she told me",
+		"soundmark": "/ʃi/ /told/ /mi/"
 	},
 	{
-		"chinese": "但是",
-		"english": "but",
-		"soundmark": "/bʌt/"
+		"chinese": "她（过去）告诉我她（过去）想要改变世界当她（过去）是年轻的时候",
+		"english": "she told me she wanted to change the world when she was young",
+		"soundmark": "/ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "你（过去）不明白",
-		"english": "you didn't understand",
-		"soundmark": "/ju/ /dɪdnt/ /ʌndɚ'stænd/"
-	},
-	{
-		"chinese": "但是你（过去）不明白",
-		"english": "but you didn't understand",
-		"soundmark": "/bʌt/ /ju/ /dɪdnt/ /ʌndɚ'stænd/"
-	},
-	{
-		"chinese": "我告诉过你她昨晚没有睡在我的房间但是你（过去）不明白",
-		"english": "I told you she didn't sleep in my room last night but you didn't understand",
-		"soundmark": "/aɪ/ /told/ /ju/ /ʃi/ /dɪdnt/ /slip/ /ɪn/ /maɪ/ /rum/ /læst/ /naɪt/ /bʌt/ /ju/ /dɪdnt/ /ʌndɚ'stænd/"
-	},
-	{
-		"chinese": "买",
-		"english": "to buy",
-		"soundmark": "/tə/ /baɪ/"
-	},
-	{
-		"chinese": "一个房子",
-		"english": "a house",
-		"soundmark": "/ə/ /haʊs/"
-	},
-	{
-		"chinese": "买一个房子",
-		"english": "to buy a house",
-		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
-	},
-	{
-		"chinese": "我想要买一个房子",
-		"english": "I want to buy a house",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /baɪ/ /ə/ /haʊs/"
-	},
-	{
-		"chinese": "买了",
-		"english": "bought",
-		"soundmark": "/bɔt/"
-	},
-	{
-		"chinese": "我买了一个房子",
-		"english": "I bought a house",
-		"soundmark": "/aɪ/ /bɔt/ /ə/ /haʊs/"
-	},
-	{
-		"chinese": "在......之前",
-		"english": "ago",
-		"soundmark": "/ə'ɡo/"
-	},
-	{
-		"chinese": "两年",
-		"english": "two years",
-		"soundmark": "/tu/ /jɪrz/"
-	},
-	{
-		"chinese": "在两年之前",
-		"english": "two years ago",
-		"soundmark": "/tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我在两年之前买了一个房子",
-		"english": "I bought a house two years ago",
-		"soundmark": "/aɪ/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我在两年之前没有买一个房子",
-		"english": "I didn't buy a house two years ago",
-		"soundmark": "/aɪ/ /dɪdnt/ /baɪ/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "他在两年之前买了一个房子",
-		"english": "he bought a house two years ago",
-		"soundmark": "/hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "他在两年之前没有买一个房子",
-		"english": "he didn't buy a house two years ago",
-		"soundmark": "/hi/ /dɪdnt/ /baɪ/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "明白",
-		"english": "to understand",
-		"soundmark": "/tə/ /ʌndɚ'stænd/"
-	},
-	{
-		"chinese": "你必须明白",
-		"english": "you have to understand",
-		"soundmark": "/ju/ /hæv/ /tə/ /ʌndɚ'stænd/"
-	},
-	{
-		"chinese": "你必须明白我在两年之前买了一个房子",
-		"english": "you have to understand I bought a house two years ago",
-		"soundmark": "/ju/ /hæv/ /tə/ /ʌndɚ'stænd/ /aɪ/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "洗",
-		"english": "to wash",
-		"soundmark": "/tə/ /wɔʃ/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "脸",
-		"english": "face",
-		"soundmark": "/fes/"
-	},
-	{
-		"chinese": "我的脸",
-		"english": "my face",
-		"soundmark": "/maɪ/ /fes/"
-	},
-	{
-		"chinese": "洗我的脸",
-		"english": "to wash my face",
-		"soundmark": "/tə/ /wɔʃ/ /maɪ/ /fes/"
-	},
-	{
-		"chinese": "我需要洗我的脸",
-		"english": "I need to wash my face",
-		"soundmark": "/aɪ/ /nid/ /tə/ /wɔʃ/ /maɪ/ /fes/"
-	},
-	{
-		"chinese": "每天",
-		"english": "every day",
-		"soundmark": "/'ɛvri/ /de/"
-	},
-	{
-		"chinese": "我需要每天洗我的脸",
-		"english": "I need to wash my face every day",
-		"soundmark": "/aɪ/ /nid/ /tə/ /wɑʃ/ /maɪ/ /fes/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "我每天洗我的脸",
-		"english": "I wash my face every day",
-		"soundmark": "/aɪ/ /wɔʃ/ /maɪ/ /fes/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "洗了",
-		"english": "washed",
-		"soundmark": "/wɔʃt/"
-	},
-	{
-		"chinese": "我洗了我的脸",
-		"english": "I washed my face",
-		"soundmark": "/aɪ/ /wɔʃt/ /maɪ/ /fes/"
-	},
-	{
-		"chinese": "今天早上",
-		"english": "this morning",
-		"soundmark": "/ðɪs/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我今天早上洗了我的脸",
-		"english": "I washed my face this morning",
-		"soundmark": "/aɪ/ /wɔʃt/ /maɪ/ /fes/ /ðɪs/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我告诉过你",
-		"english": "I told you",
-		"soundmark": "/aɪ/ /told/ /ju/"
-	},
-	{
-		"chinese": "我告诉过你我今天早上洗了我的脸",
-		"english": "I told you I washed my face this morning",
-		"soundmark": "/aɪ/ /told/ /ju/ /aɪ/ /wɔʃt/ /maɪ/ /fes/ /ðɪs/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "打电话给",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
-	},
-	{
-		"chinese": "打电话给他",
-		"english": "to call him",
-		"soundmark": "/tə/ /kɔl/ /hɪm/"
-	},
-	{
-		"chinese": "我需要打电话给他",
-		"english": "I need to call him",
-		"soundmark": "/aɪ/ /nid/ /tə/ /kɔl/ /hɪm/"
-	},
-	{
-		"chinese": "我打电话给他",
-		"english": "I call him",
-		"soundmark": "/aɪ/ /kɔl/ /hɪm/"
-	},
-	{
-		"chinese": "打了电话给",
-		"english": "called",
-		"soundmark": "/kɔld/"
-	},
-	{
-		"chinese": "我打了电话给他",
-		"english": "I called him",
-		"soundmark": "/aɪ/ /kɔld/ /hɪm/"
-	},
-	{
-		"chinese": "昨晚",
-		"english": "last night",
-		"soundmark": "/læst/ /naɪt/"
-	},
-	{
-		"chinese": "我昨晚打了电话给他",
-		"english": "I called him last night",
-		"soundmark": "/aɪ/ /kɔld/ /hɪm/ /læst/ /naɪt/"
-	},
-	{
-		"chinese": "他告诉我",
-		"english": "he told me",
-		"soundmark": "/hi/ /told/ /mi/"
-	},
-	{
-		"chinese": "他两年前买了一个房子",
-		"english": "he bought a house two years ago",
-		"soundmark": "/hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "他告诉我他两年前买了一个房子",
-		"english": "he told me he bought a house two years ago",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
-	},
-	{
-		"chinese": "我昨晚打了电话给他而且他告诉我他在两年之前买了一个房子",
-		"english": "I called him last night and he told me he bought a house two years ago",
-		"soundmark": "/aɪ/ /kɔld/ /hɪm/ /læst/ /naɪt/ /ənd/ /hi/ /told/ /mi/ /hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
+		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她（过去）是年轻的时候",
+		"english": "I talked with her last weekend and she told me she wanted to change the world when she was young",
+		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/ /ənd/ /ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	}
 ]
