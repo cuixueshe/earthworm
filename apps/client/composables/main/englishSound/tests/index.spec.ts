@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { useCurrentStatementEnglishSound, reset } from "..";
-import { updateSource, play } from "../audio";
+import { updateSource, play, isPlay } from "../audio";
 import { createTestingPinia } from "@pinia/testing";
 import { useCourseStore } from "~/store/course";
 
@@ -8,6 +8,7 @@ vi.mock("../audio.ts", () => {
   return {
     updateSource: vi.fn(),
     play: vi.fn(),
+    isPlay: vi.fn(),
   };
 });
 
@@ -35,10 +36,10 @@ describe("useCurrentStatementEnglishSound", () => {
     expect(play).toHaveBeenCalled();
   });
 
-  it('should updates audio source', async () => {
+  it("should updates audio source", async () => {
     useCurrentStatementEnglishSound();
 
-    expect(updateSource).toBeCalledTimes(1)
+    expect(updateSource).toBeCalledTimes(1);
 
     // update english value
     const courseStore = useCourseStore();
@@ -46,7 +47,6 @@ describe("useCurrentStatementEnglishSound", () => {
     await vi.advanceTimersToNextTimerAsync();
 
     expect(updateSource).toBeCalledTimes(2);
-	
   });
 
   it("does not update audio source if the word is the same", async () => {
