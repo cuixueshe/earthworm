@@ -65,13 +65,29 @@ const props = defineProps({
   modelValue: String,
   errorMessage: String,
 });
+const specialCountries = new Map([
+  ["tw", "中国台湾"],
+  ["hk", "中国香港"],
+  ["mo", "中国澳门"],
+]);
 const countries = ref(
   countriesData
     .sort((a, b) => (a.dialCode > b.dialCode ? 1 : -1))
-    .map((country) => ({
-      ...country,
-      flag: countryCodesToFlagEmoji(country.iso2),
-    }))
+    .map((country) => {
+      const specialName = specialCountries.get(country.iso2);
+      if (specialName) {
+        return {
+          ...country,
+          name: specialName,
+          flag: countryCodesToFlagEmoji(country.iso2),
+        };
+      } else {
+        return {
+          ...country,
+          flag: countryCodesToFlagEmoji(country.iso2),
+        };
+      }
+    })
 );
 const defaultCountryIso2 = "cn";
 const defaultCountry = countries.value.find(
@@ -103,6 +119,9 @@ function emitUpdate() {
 }
 
 function countryCodesToFlagEmoji(iso2) {
+  if (["tw"].includes(iso2.toLowerCase())) {
+    iso2 = "cn";
+  }
   return iso2
     .toUpperCase()
     .replace(/./g, (char) => String.fromCodePoint(char.charCodeAt(0) + 127397));

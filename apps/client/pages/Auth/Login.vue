@@ -76,7 +76,8 @@ const schema = yup.object({
   password: yup
     .string()
     .required("Please input your password")
-    .min(6, "Password length must be greater than 6"),
+    .min(6, "Password length must be greater than 6")
+    .max(20, "Password must be no more than 20 characters"),
 });
 
 const { handleSubmit } = useForm<SignupFormValues>({
