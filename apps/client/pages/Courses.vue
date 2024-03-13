@@ -32,7 +32,7 @@ import CourseCard from "~/components/courses/CourseCard.vue";
 import { ref, onMounted } from "vue";
 import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
-
+import { numberToChinese } from "~/utils/utils";
 const courses = ref<Course[]>([]);
 
 async function getCourseHistory() {
@@ -62,7 +62,11 @@ async function getCourses() {
 }
 
 onMounted(async () => {
-  courses.value = await getCourses();
+  const data = await getCourses();
+  courses.value = data.map((item) => {
+    item.title = `第${numberToChinese(item.id)}课`;
+    return item;
+  });
 });
 
 const { updateActiveCourseId } = useActiveCourseId();
