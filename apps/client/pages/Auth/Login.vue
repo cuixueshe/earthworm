@@ -62,31 +62,12 @@
 
 <script setup lang="ts">
 import FormInput from "~/pages/Auth/FormInput.vue";
-import { useForm, useField } from "vee-validate";
-import * as yup from "yup";
 import { useAuth } from "~/composables/auth";
 import { useRouter, useRoute } from "vue-router";
-import { type SignupFormValues } from "~/store/user";
+import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
 
-const schema = yup.object({
-  phone: yup
-    .string()
-    .required("Please input your phone number")
-    .matches(/^\d{7,15}$/, "Please input a valid phone number"),
-  password: yup
-    .string()
-    .required("Please input your password")
-    .min(6, "Password length must be greater than 6")
-    .max(20, "Password must be no more than 20 characters"),
-});
-
-const { handleSubmit } = useForm<SignupFormValues>({
-  validationSchema: schema,
-});
-
-const { value: phone, errorMessage: phoneError } = useField<string>("phone");
-const { value: password, errorMessage: passwordError } =
-  useField<string>("password");
+const { handleSubmit, phone, phoneError, password, passwordError } =
+  useLoginForm();
 
 const router = useRouter();
 const route = useRoute();
