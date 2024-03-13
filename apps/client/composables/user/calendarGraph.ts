@@ -53,16 +53,16 @@ const yearOptions = ref<Options[]>([]);
 const thead = ref<TableHead[]>([]);
 const tbody = ref<(null | TableBody)[][]>([]);
 
-/**
- * format date
- * @param date date
- * @returns YYYY-MM-DD
- */
-export function format(date: Date) {
-  return date.toISOString().slice(0, 10);
-}
-
 export function useCalendarGraph(emits: EmitsType) {
+  /**
+   * format date
+   * @param date date
+   * @returns YYYY-MM-DD
+   */
+  function format(date: Date) {
+    return date.toISOString().slice(0, 10);
+  }
+
   function getOptions() {
     for (let i = 2018; i <= new Date().getFullYear(); i++) {
       yearOptions.value.unshift({ label: i.toString(), value: i });
@@ -110,7 +110,7 @@ export function useCalendarGraph(emits: EmitsType) {
     });
   }
 
-  async function initTable(value?: number) {
+  function initTable(value?: number) {
     emits("toggleYear", value);
     year.value = value;
     const data = initData(value);
@@ -141,7 +141,6 @@ export function useCalendarGraph(emits: EmitsType) {
     return tbody;
   }
 
-  // TODO: REFACTOR
   function initData(year?: number) {
     const { startDate, endDate } = calcDateRange(year);
 
@@ -155,10 +154,7 @@ export function useCalendarGraph(emits: EmitsType) {
       const week = nextDate.getDay();
       const day = nextDate.getDate();
 
-      // 抽出去？
       if (day === 1 && thead.length < theadLen) {
-        // const isExisted = thead.some((f) => f.month === month);
-        // if (day === 1 && !isExisted) {
         const rowIndex = week;
         const preRowIndex = rowIndex - 1;
         const colIndex = tbody[rowIndex].length;
@@ -188,6 +184,7 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   return {
+    format,
     calcStartDate,
     calcDateRange,
     getActivityLevel,

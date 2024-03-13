@@ -21,12 +21,13 @@
       </tbody>
     </table>
 
-    <div class="flex items-center justify-between px-8">
-      <div class="dropdown dropdown-bottom">
+    <div class="flex items-center justify-between px-8 py-2">
+      <div class="dropdown dropdown-bottom flex items-center">
         <div tabindex="0" role="button" class="btn btn-xs">{{ year || yearOptions[0].label }}</div>
         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
           <li v-for="item in yearOptions" :key="item.value" @click="initTable(item.value)"><a>{{ item.label }}</a></li>
         </ul>
+        <span class="pl-2 text-sm">{{ totalCount }} contributions in {{ year ? year : 'the last year' }}</span>
       </div>
 
       <div class="flex items-center gap-1 text-xs">
@@ -47,7 +48,7 @@ import { onMounted, watchEffect } from 'vue';
 import { useCalendarGraph } from '~/composables/user/calendarGraph'
 import type { CalendarData, EmitsType } from '~/composables/user/calendarGraph'
 
-const props = defineProps<{ data: CalendarData[] }>()
+const props = defineProps<{ data: CalendarData[], totalCount: number }>()
 const emits = defineEmits<EmitsType>()
 
 const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } = useCalendarGraph(emits)
