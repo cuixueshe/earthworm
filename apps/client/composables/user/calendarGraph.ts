@@ -39,7 +39,7 @@ interface Options {
   value: number;
 }
 interface TableHead {
-  colspan: number;
+  colSpan: number;
   month: string;
 }
 interface TableBody {
@@ -83,19 +83,20 @@ export function useCalendarGraph(emits: EmitsType) {
     if (count < 3) return "low";
     if (count < 5) return "moderate";
     if (count < 10) return "high";
-    return "veryhigh";
+    return "higher";
   }
   function renderBody(list: CalendarData[]) {
     return tbody.value.map((row) => {
       return row.map((item) => {
         if (!item) return null;
+        const year = item.date.getFullYear();
         const month = item.date.getMonth();
         const day = item.date.getDate();
         const date = format(item.date);
         const current = list.find((f) => f.date === date);
         const tips = `${current?.count || "No"} contributions on ${
           months[month]
-        } ${day}${getOrdinalSuffix(day)}.`;
+        } ${day}${getOrdinalSuffix(day)}, ${year}`;
         return { date: item.date, tips, bg: getActivityLevel(current?.count) };
       });
     });
@@ -104,9 +105,9 @@ export function useCalendarGraph(emits: EmitsType) {
   function renderHead(thead: { offset: number; month: number }[]) {
     return thead.map((item, i) => {
       const nextItem = thead[i + 1] || { offset: 53 };
-      const colspan = nextItem.offset - item.offset;
+      const colSpan = nextItem.offset - item.offset;
       const month = months[item.month]?.slice(0, 3);
-      return { colspan, month };
+      return { colSpan, month };
     });
   }
 

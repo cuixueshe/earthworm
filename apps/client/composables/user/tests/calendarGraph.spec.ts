@@ -42,7 +42,7 @@ describe("use calendar graph", () => {
     [1, "low"],
     [3, "moderate"],
     [5, "high"],
-    [10, "veryhigh"],
+    [10, "higher"],
   ])("%s should return the activity level %s", (day, expected) => {
     expect(getActivityLevel(day)).toBe(expected);
   });
@@ -112,18 +112,18 @@ describe("use calendar graph", () => {
     const data = renderHead(thead);
 
     expect(data).toEqual([
-      { colspan: 5, month: "Jan" },
-      { colspan: 4, month: "Feb" },
-      { colspan: 5, month: "Mar" },
-      { colspan: 4, month: "Apr" },
-      { colspan: 4, month: "May" },
-      { colspan: 5, month: "Jun" },
-      { colspan: 4, month: "Jul" },
-      { colspan: 4, month: "Aug" },
-      { colspan: 5, month: "Sep" },
-      { colspan: 4, month: "Oct" },
-      { colspan: 4, month: "Nov" },
-      { colspan: 5, month: "Dec" },
+      { colSpan: 5, month: "Jan" },
+      { colSpan: 4, month: "Feb" },
+      { colSpan: 5, month: "Mar" },
+      { colSpan: 4, month: "Apr" },
+      { colSpan: 4, month: "May" },
+      { colSpan: 5, month: "Jun" },
+      { colSpan: 4, month: "Jul" },
+      { colSpan: 4, month: "Aug" },
+      { colSpan: 5, month: "Sep" },
+      { colSpan: 4, month: "Oct" },
+      { colSpan: 4, month: "Nov" },
+      { colSpan: 5, month: "Dec" },
     ]);
   });
 
@@ -138,13 +138,13 @@ describe("use calendar graph", () => {
 
     const tbody = renderBody(apiData);
 
-    expect(tbody[1][0]?.tips).toBe("1 contributions on January 1st.");
+    expect(tbody[1][0]?.tips).toBe("1 contributions on January 1st, 2024");
     expect(tbody[1][0]?.bg).toBe("low");
-    expect(tbody[2][0]?.tips).toBe("3 contributions on January 2nd.");
+    expect(tbody[2][0]?.tips).toBe("3 contributions on January 2nd, 2024");
     expect(tbody[2][0]?.bg).toBe("moderate");
-    expect(tbody[3][0]?.tips).toBe("5 contributions on January 3rd.");
+    expect(tbody[3][0]?.tips).toBe("5 contributions on January 3rd, 2024");
     expect(tbody[3][0]?.bg).toBe("high");
-    expect(tbody[4][0]?.tips).toBe("10 contributions on January 4th.");
-    expect(tbody[4][0]?.bg).toBe("veryhigh");
+    expect(tbody[4][0]?.tips).toBe("10 contributions on January 4th, 2024");
+    expect(tbody[4][0]?.bg).toBe("higher");
   });
 });

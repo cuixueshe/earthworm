@@ -3,17 +3,24 @@
     <table class="text-xs border-separate border-spacing-1/2">
       <thead>
         <th></th>
-        <th :colspan="colspan" v-for="{ colspan, month } in thead" :key="month" class="text-left font-normal">
+        <th
+          :colspan="colSpan"
+          v-for="{ colSpan, month } in thead"
+          :key="month"
+          class="font-normal text-left"
+        >
           {{ month }}
         </th>
       </thead>
       <tbody>
         <tr v-for="(row, i) in tbody" :key="weeks[i]">
           <td class="relative w-8">
-            <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : '' }}</span>
+            <span class="absolute bottom-[-3px]">{{
+              i % 2 !== 0 ? weeks[i] : ""
+            }}</span>
           </td>
           <td class="p-0" v-for="(cell, j) in row" :key="j">
-            <div v-if="cell" class="tooltip block" :data-tip="cell.tips">
+            <div v-if="cell" class="block tooltip" :data-tip="cell.tips">
               <div :class="`cell ${cell.bg}`"></div>
             </div>
           </td>
@@ -22,45 +29,58 @@
     </table>
 
     <div class="flex items-center justify-between px-8 py-2">
-      <div class="dropdown dropdown-bottom flex items-center">
-        <div tabindex="0" role="button" class="btn btn-xs">{{ year || yearOptions[0].label }}</div>
-        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-          <li v-for="item in yearOptions" :key="item.value" @click="initTable(item.value)"><a>{{ item.label }}</a></li>
+      <div class="flex items-center dropdown dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-xs">
+          {{ year || yearOptions[0].label }}
+        </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li
+            v-for="item in yearOptions"
+            :key="item.value"
+            @click="initTable(item.value)"
+          >
+            <a>{{ item.label }}</a>
+          </li>
         </ul>
-        <span class="pl-2 text-sm">{{ totalCount }} contributions in {{ year ? year : 'the last year' }}</span>
+        <span class="pl-2 text-sm"
+          >{{ totalCount }} contributions in {{ year ?? "the last year" }}</span
+        >
       </div>
 
       <div class="flex items-center gap-1 text-xs">
-        <div>Less</div>
+        <div class="text-gray-500">Less</div>
         <div class="cell"></div>
         <div class="cell low"></div>
         <div class="cell moderate"></div>
         <div class="cell high"></div>
-        <div class="cell veryhigh"></div>
-        <div>More</div>
+        <div class="cell higher"></div>
+        <div class="text-gray-500">More</div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, watchEffect } from 'vue';
-import { useCalendarGraph } from '~/composables/user/calendarGraph'
-import type { CalendarData, EmitsType } from '~/composables/user/calendarGraph'
+import { onMounted, watchEffect } from "vue";
+import { useCalendarGraph } from "~/composables/user/calendarGraph";
+import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
 
-const props = defineProps<{ data: CalendarData[], totalCount: number }>()
-const emits = defineEmits<EmitsType>()
+const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
+const emits = defineEmits<EmitsType>();
 
-const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } = useCalendarGraph(emits)
+const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } =
+  useCalendarGraph(emits);
 
 onMounted(() => {
-  initTable()
-})
+  initTable();
+});
 
 watchEffect(() => {
-  tbody.value = renderBody(props.data)
-})
-
+  tbody.value = renderBody(props.data);
+});
 </script>
 
 <style scoped>
@@ -80,7 +100,7 @@ watchEffect(() => {
   @apply bg-[#30a14e] dark:bg-[#26a641];
 }
 
-.veryhigh {
+.higher {
   @apply bg-[#216e39] dark:bg-[#39d353];
 }
 </style>
