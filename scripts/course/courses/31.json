@@ -136,18 +136,18 @@
 	},
 	{
 		"chinese": "人",
-		"english": "man",
-		"soundmark": "/mæn/"
+		"english": "human",
+		"soundmark": "/ˈhjuːmən/"
 	},
 	{
 		"chinese": "最危险的人",
-		"english": "the most dangerous man",
-		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/ /mæn/"
+		"english": "the most dangerous human",
+		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/ /ˈhjuːmən/"
 	},
 	{
 		"chinese": "他是最危险的人",
-		"english": "he is the most dangerous man",
-		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /mæn/"
+		"english": "he is the most dangerous human",
+		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /ˈhjuːmən/"
 	},
 	{
 		"chinese": "在世界上",
@@ -156,8 +156,8 @@
 	},
 	{
 		"chinese": "他是在世界上最危险的人",
-		"english": "he is the most dangerous man in the world",
-		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /mæn/ /ɪn/ /ðə/ /wɝld/"
+		"english": "he is the most dangerous human in the world",
+		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /ˈhjuːmən/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
 		"chinese": "他们是",
