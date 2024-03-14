@@ -1,7 +1,6 @@
 <template>
   <div class="h-full pt-20">
     <div class="h-[40vh] flex flex-col justify-center">
-      {{ isQuestion() }} {{ isAnswer() }}
       <template v-if="isQuestion()">
         <Question></Question>
       </template>

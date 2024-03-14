@@ -22,10 +22,10 @@
 import Progress from '~/components/main/Progress.vue';
 import MQuestion from './MQuestion.vue';
 import MAnswer from "./MAnswer.vue";
-import Summary from "./Summary.vue";
-import Share from './Share.vue';
+import Summary from "~/components/main/Summary.vue";
+import Share from '~/components/main/Share.vue';
 import MTips from "./MTips.vue";
-import AuthRequired from './AuthRequired.vue';
+import AuthRequired from '~/components/main/AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from '~/store/course';
 import { computed } from 'vue';

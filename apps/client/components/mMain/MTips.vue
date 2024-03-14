@@ -96,10 +96,6 @@ function useShowAnswer(key: string) {
 </script>
 
 <style scoped>
-.tip-btn {
-  @apply btn btn-xs text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500;
-}
-
 .icon {
     transition: transform 100ms cubic-bezier(0, 0, 0.58, 1);
 }

@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import Game from '~/components/main/Game.vue';
-import MGame from '~/components/main/MGame.vue';
+import MGame from '~/components/mMain/MGame.vue';
 import Tool from '~/components/main/Tool.vue';
 import Loading from '~/components/Loading.vue';
 import { useCourseStore } from "~/store/course";
