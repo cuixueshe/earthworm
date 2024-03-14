@@ -8,7 +8,7 @@
 
 By constructing sentences with conjunctions, it helps you learn English better~ 😊
 
-## 🚀 How to start ?
+## 🚀 How To Start ?
 
 ### ⚠️ Requirements
 
@@ -27,13 +27,13 @@ node --version # v20+
 pnpm -v # 8+
 ```
 
-### 1. Install dependencies
+### 1. Install Dependencies
 
 ```bash
 pnpm install
 ```
 
-### 2. Copy the contents of `.env.example` to the `./apps/api/.env` file
+### 2. Copy the Contents of `.env.example` to the `./apps/api/.env` File
 
 If the file doesn't exist, you need to create it manually. Linux users can perform the operation with the following command.
 
@@ -43,7 +43,7 @@ If the file doesn't exist, you need to create it manually. Linux users can perfo
 cp .env.example ./apps/api/.env
 ```
 
-### 3. Start/stop/delete Docker Compose service
+### 3. Start/Stop/Delete Docker Compose Service
 
 The backend relies on MySQL and Redis services. Start and stop these services using the commands configured in `package.json` below.
 
@@ -75,19 +75,19 @@ When executing the current command, try to wait for a short interval after the p
 pnpm db:init
 ```
 
-### 5. Create and upload course data (only execute this during the initial database initialization)
+### 5. Create and Upload Course Data (Only Execute This During the Initial Database Initialization)
 
 ```bash
 pnpm db:upload
 ```
 
-### 6. Start the backend service
+### 6. Start the Backend Service
 
 ```bash
 pnpm dev:serve
 ```
 
-### 7. Start the frontend service
+### 7. Start the Frontend Service
 
 ```bash
 pnpm dev:client
@@ -95,7 +95,7 @@ pnpm dev:client
 
 ## FAQ
 
-### How to correctly update course data ?
+### How To Correctly Update Course Data ?
 
 when you identify incorrect course data and make modifications, you should use the following command to update the course data in the database.
 
@@ -103,7 +103,7 @@ when you identify incorrect course data and make modifications, you should use t
 pnpm db:update
 ```
 
-### pnpm install Error?
+### pnpm Install Error?
 
 Some dependencies require compilation during installation, necessitating the presence of relevant build environments.
 If these environments are not available, the compilation process may fail. Additionally, different modules may require different build environments, so specific issues need to be analyzed individually.
@@ -119,7 +119,7 @@ pnpm i -g pnpm
 npx pnpm i -g pnpm@latest
 ```
 
-**Error installing the argon2 module on Windows**
+**Error Installing the argon2 Module On Windows**
 
 - Install Visual Studio 2015 or later, specifically the "Desktop development with C++" component. (In practice, any component containing C++ development tools and libraries will suffice.)
 - If you encounter Chinese characters display issues during compilation, execute `chcp 437` in the command prompt, then rerun the install command.

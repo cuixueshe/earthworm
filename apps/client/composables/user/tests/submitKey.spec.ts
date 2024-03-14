@@ -1,7 +1,7 @@
 import { it, expect, describe, beforeEach } from "vitest";
 import { USE_SPACE_SUBMIT_ANSWER, useSpaceSubmitAnswer } from "../submitKey";
 
-describe("auto play sound", () => {
+describe("submit shortcut", () => {
   beforeEach(() => {
     localStorage.removeItem(USE_SPACE_SUBMIT_ANSWER);
   });
@@ -18,7 +18,7 @@ describe("auto play sound", () => {
 
   it("should be toggle value", () => {
     const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-    useSpace.value = false
+    useSpace.value = false;
     toggleUseSpaceSubmitAnswer();
     expect(useSpace.value).toBe(true);
   });

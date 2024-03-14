@@ -43,7 +43,7 @@ export function useInput({
     inputValue.value = val;
     resetAllWordUserInput();
     inputSyncUserInputWords();
-    updateActiveWord(getInputCursorPosition());
+    updateActiveWord(val ? getInputCursorPosition() : 0);
   }
 
   function createWord(word: string, id: number) {
@@ -61,6 +61,8 @@ export function useInput({
 
   function setupUserInputWords() {
     watchEffect(() => {
+      resetUserInputWords();
+
       const english = source();
       english
         .split(separator)
@@ -250,8 +252,11 @@ export function useInput({
     }
   }
 
-  function checkSpaceSubmitAnswer (e: KeyboardEvent, useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined) {
-    e.preventDefault()
+  function checkSpaceSubmitAnswer(
+    e: KeyboardEvent,
+    useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined
+  ) {
+    e.preventDefault();
     if (useSpaceSubmitAnswer?.enable) {
       submitAnswer(useSpaceSubmitAnswer.callback);
     }
@@ -272,7 +277,6 @@ export function useInput({
       e.preventDefault();
       return;
     }
-
 
     // 校验正常输入时最后一个单词空格提交
     if (e.code === "Space" && lastWordIsActive()) {
@@ -308,6 +312,13 @@ export function useInput({
     }
   }
 
+  function resetUserInputWords() {
+    // 避免在 Fix 模式下重置导致用户不能输入
+    mode = Mode.Input;
+    inputValue.value = "";
+    userInputWords.splice(0, userInputWords.length);
+  }
+
   return {
     inputValue,
     userInputWords,
@@ -317,5 +328,6 @@ export function useInput({
     handleKeyboardInput,
     fixIncorrectWord,
     fixFirstIncorrectWord,
+    resetUserInputWords,
   };
 }
