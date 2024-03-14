@@ -51,17 +51,14 @@ export function useCourseTime() {
 
   // 离开游戏
   async function pauseTiming(courseId: number) {
+    // 1. 存储结束时间
+    await saveEndAt(courseId);
+    // 2. 重置开始时间0
     const course = await db.queryCourse(courseId);
-    if (course && course.id) {
-      debugger;
-      // 1. 存储结束时间
-      await saveEndAt(courseId);
-      // 2. 重置开始时间0
-      await db.updateCourse({
-        ...course,
-        startAt: 0,
-      });
-    }
+    await db.updateCourse({
+      ...course,
+      startAt: 0,
+    });
   }
 
   async function getCourseTime(courseId: number) {

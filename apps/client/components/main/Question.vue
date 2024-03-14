@@ -72,7 +72,6 @@ watch(
   () => inputValue.value,
   (val, oldVal) => {
     if (val && !oldVal) {
-      console.log("first input ===>", val, oldVal);
       saveStartTime(courseStore.currentCourse?.id!);
     }
 
