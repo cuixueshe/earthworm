@@ -310,7 +310,9 @@ export function useInput({
     }
   }
 
-  function resetUserInputWords () {
+  function resetUserInputWords() {
+    // 避免在 Fix 模式下重置导致用户不能输入
+    mode = Mode.Input;
     inputValue.value = "";
     userInputWords.splice(0, userInputWords.length);
   }
@@ -324,6 +326,6 @@ export function useInput({
     handleKeyboardInput,
     fixIncorrectWord,
     fixFirstIncorrectWord,
-    resetUserInputWords
+    resetUserInputWords,
   };
 }
