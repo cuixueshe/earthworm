@@ -43,7 +43,7 @@ export function useInput({
     inputValue.value = val;
     resetAllWordUserInput();
     inputSyncUserInputWords();
-    updateActiveWord(getInputCursorPosition());
+    updateActiveWord(val ? getInputCursorPosition() : 0);
   }
 
   function createWord(word: string, id: number) {
@@ -61,6 +61,8 @@ export function useInput({
 
   function setupUserInputWords() {
     watchEffect(() => {
+      resetUserInputWords();
+
       const english = source();
       english
         .split(separator)
@@ -308,6 +310,11 @@ export function useInput({
     }
   }
 
+  function resetUserInputWords () {
+    inputValue.value = "";
+    userInputWords.splice(0, userInputWords.length);
+  }
+
   return {
     inputValue,
     userInputWords,
@@ -317,5 +324,6 @@ export function useInput({
     handleKeyboardInput,
     fixIncorrectWord,
     fixFirstIncorrectWord,
+    resetUserInputWords
   };
 }
