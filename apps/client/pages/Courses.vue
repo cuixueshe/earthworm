@@ -4,7 +4,7 @@
     <div class="h-full overflow-y-auto scrollbar-hide">
       <div
         v-if="courses.length"
-        class="h-[79vh] flex flex-wrap p-1 pb-96 gap-8 overflow-y-auto justify-start"
+        class="h-[79vh] flex flex-wrap p-1 pb-96 gap-8 overflow-x-hidden overflow-y-auto justify-start"
       >
         <template v-for="course in courses" :key="course.id">
           <NuxtLink
