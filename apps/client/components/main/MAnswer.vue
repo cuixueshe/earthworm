@@ -63,7 +63,7 @@ function registerShortcutKeyForNextQuestion() {
     cancelShortcut("enter", handleKeydown);
   });
 }
-showSummary();
+
 function goToNextQuestion() {
   if (courseStore.isAllDone()) {
     showSummary();

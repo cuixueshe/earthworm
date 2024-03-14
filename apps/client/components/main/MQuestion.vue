@@ -14,7 +14,7 @@
                 ? 'text-red-500 border-b-red-500'
                 : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
             isShowWordsWidth() ? '' : 'min-w-28',
-          ]" :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}">
+          ]" :style="isShowWordsWidth() ? { minWidth: `${inputWidth(w)}ch` } : {}">
           {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
@@ -58,7 +58,7 @@ function setInputValueByMInput(val: string, code: string) {
   inputValue.value = insertChar(inputValue.value, useCursorPosition.value, val);
   setInputCursorPosition(useCursorPosition.value + 1)
   handleKeydown({code, preventDefault: () => {
-    inputValue.value = inputValue.value.slice(0, -1);
+    inputValue.value = deleteChar(inputValue.value, useCursorPosition.value - 1);
     setInputCursorPosition(useCursorPosition.value - 1)
   }} as KeyboardEvent)
 }
