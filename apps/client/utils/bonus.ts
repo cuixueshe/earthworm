@@ -1,9 +1,4 @@
-interface Day {
-  year: number
-  month: number
-  day: number
-}
-
+import { isTheDay, type Day } from './date';
 const theLastDayOfTheLunarYear:Day = {
   year: 2024,
   month: 2,
@@ -16,13 +11,6 @@ const theFirstDayOfTheLunarYear:Day = {
   day: 10
 }
 
-function isTheDay(theDay:Day) {
-  const today = new Date();
-  const year = today.getFullYear();
-  const month = today.getMonth() + 1;
-  const day = today.getDate();
-  return (year === theDay.year) && (month === theDay.month) && (day == theDay.day)
-}
 
 export function isTheFirstDayOfLunarYear() {
   return isTheDay(theFirstDayOfTheLunarYear)

@@ -1,7 +1,5 @@
 import { ref } from "vue";
 import satori, { type SatoriNode } from "satori";
-import { tpl_1 } from "./imageTtemplates/tpl_1";
-import { useDailySentence } from "../summary";
 import {
   clearCanvas,
   convertSVGtoImg,
@@ -10,22 +8,29 @@ import {
   fontEn,
   fontZh,
 } from "./helper";
+import { useDailySentence } from "../summary";
+import { tpl_1 } from "./imageTemplates/tpl_1";
+import { tpl_2 } from "./imageTemplates/tpl_2";
 
 export enum ShareImageTemplate {
   TPL_1 = "tpl_1",
+  TPL_2 = "tpl_2",
 }
 
-interface ShareImageTemplateData {
+export interface ShareImageTemplateData {
   courseNum: string;
   zhSentence: string;
   enSentence: string;
+  userName: string;
+  dateStr: string;
 }
 
-export const imageTtemplates: Record<
+export const imageTemplates: Record<
   ShareImageTemplate,
   (data: ShareImageTemplateData) => Partial<SatoriNode>
 > = {
   [ShareImageTemplate.TPL_1]: tpl_1,
+  [ShareImageTemplate.TPL_2]: tpl_2,
 };
 
 const shareModalVisible = ref(false);
@@ -65,29 +70,59 @@ const generateConfig = async () => {
   };
 };
 
+export interface GalleryItem {
+  src: string;
+  canvasEl: HTMLCanvasElement;
+}
+
 export function useGenerateShareImage() {
   const { zhSentence, enSentence } = useDailySentence();
 
-  const shareImageSrc = ref("");
+  const currImageSrc = ref("");
+  const currImageIndex = ref(0);
   const format = "jpg";
   const fullFormat = `image/${format}`;
-
-  const canvasEl = initCanvas();
+  const galleryImgs = ref<GalleryItem[]>([]);
 
   const chosenTemplate = (
     templateKey: ShareImageTemplate,
-    courseNum: string
+    courseNum: string,
+    userName: string,
+    dateStr: string
   ) => {
-    return imageTtemplates[templateKey]({
+    return imageTemplates[templateKey]({
       courseNum,
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
+      userName,
+      dateStr,
     });
   };
 
-  const generateImage = async (courseNum: string) => {
+  const generateGalleryImage = async (
+    courseNum: string,
+    userName: string,
+    dateStr: string
+  ) => {
+    Object.values(ShareImageTemplate).forEach(async (template, index) => {
+      generateImage(courseNum, template, index, userName, dateStr);
+    });
+  };
+
+  const generateImage = async (
+    courseNum: string,
+    template: ShareImageTemplate,
+    index: number,
+    userName: string,
+    dateStr: string
+  ) => {
+    const canvasEl = initCanvas();
+    galleryImgs.value[index] = {
+      src: "",
+      canvasEl,
+    };
     const svg = await satori(
-      chosenTemplate(ShareImageTemplate.TPL_1, courseNum),
+      chosenTemplate(template, courseNum, userName, dateStr),
       await generateConfig()
     ).catch((e) => {
       console.error("Error generating SVG");
@@ -95,20 +130,49 @@ export function useGenerateShareImage() {
       return Promise.reject(e);
     });
 
-    shareImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    // currImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    galleryImgs.value[index].src = await convertSVGtoImg(
+      svg,
+      canvasEl,
+      fullFormat
+    );
+
+    if (index === 0) {
+      currImageSrc.value = galleryImgs.value[index].src;
+    }
   };
 
   const clearShareImageSrc = () => {
-    shareImageSrc.value = "";
-    clearCanvas(canvasEl);
+    currImageSrc.value = "";
+    galleryImgs.value = [];
+    currImageIndex.value = 0;
   };
 
-  const copyShareImage = () => copyImage(canvasEl, fullFormat);
+  const copyShareImage = (index: number) =>
+    copyImage(galleryImgs.value[index].canvasEl, fullFormat);
+
+  const handleSelectImage = (index: number) => {
+    const src = galleryImgs.value[index].src;
+    if (!src) return;
+    currImageSrc.value = src;
+    currImageIndex.value = index;
+  };
+
+  const preLoadFont = () => {
+    fontEn();
+    fontZh();
+  };
+
+  preLoadFont();
 
   return {
-    shareImageSrc,
+    shareImageSrc: currImageSrc,
     generateImage,
+    generateGalleryImage,
     copyShareImage,
+    galleryImgs,
     clearShareImageSrc,
+    handleSelectImage,
+    currImageIndex,
   };
 }
