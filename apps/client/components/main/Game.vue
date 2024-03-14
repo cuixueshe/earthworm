@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted, ref } from "vue";
+import { onUnmounted } from "vue";
 import Question from "./Question.vue";
 import Answer from "./Answer.vue";
 import Summary from "./Summary.vue";

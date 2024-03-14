@@ -7,9 +7,9 @@ function formatTime(time: number) {
   const minutes = Math.floor((time % 3600) / 60);
   const seconds = time % 60;
   return (
-    (hours ? `${hours}时` : "") +
-    (minutes ? `${minutes}分` : "") +
-    (seconds ? `${seconds}秒` : "")
+    (hours ? `${hours}小时` : "") +
+    (minutes ? `${minutes}分钟` : "") +
+    `${seconds}秒`
   );
 }
 
@@ -51,20 +51,27 @@ export function useCourseTime() {
 
   // 离开游戏
   async function pauseTiming(courseId: number) {
-    // 1. 存储结束时间
-    await saveEndAt(courseId);
-    // 2. 重置开始时间0
     const course = await db.queryCourse(courseId);
-    await db.updateCourse({
-      ...course,
-      startAt: 0,
-    });
+    if (course && course.id) {
+      debugger;
+      // 1. 存储结束时间
+      await saveEndAt(courseId);
+      // 2. 重置开始时间0
+      await db.updateCourse({
+        ...course,
+        startAt: 0,
+      });
+    }
+  }
+
+  async function getCourseTime(courseId: number) {
+    const { time } = await db.queryCourse(courseId);
+    return formatTime(time);
   }
 
   async function stopTiming(courseId: number) {
     await saveEndAt(courseId);
-    const { time } = await db.queryCourse(courseId);
-    courseTime.value = formatTime(time);
+    courseTime.value = await getCourseTime(courseId);
   }
 
   async function cleanCourseTime(courseId: number) {
@@ -77,5 +84,6 @@ export function useCourseTime() {
     stopTiming,
     courseTime,
     cleanCourseTime,
+    getCourseTime,
   };
 }

@@ -8,6 +8,7 @@ export const tpl_1 = ({
   zhSentence,
   enSentence,
   courseNum,
+  time,
 }: ShareImageTemplateData) => {
   return {
     type: "div",
@@ -64,13 +65,13 @@ export const tpl_1 = ({
                   children: '"',
                 },
               },
-              // {
-              //   type: "span",
-              //   props: {
-              //     tw: "text-slate-400 font-bold text-2xl",
-              //     children: `用时：${time}`,
-              //   },
-              // },
+              {
+                type: "span",
+                props: {
+                  tw: "text-slate-400 font-bold text-2xl",
+                  children: `用时：${time}`,
+                },
+              },
             ],
           },
         },
