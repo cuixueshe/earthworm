@@ -43,10 +43,7 @@ export function useInput({
     inputValue.value = val;
     resetAllWordUserInput();
     inputSyncUserInputWords();
-
-    const position = val ? getInputCursorPosition() : 0
-
-    updateActiveWord(position);
+    updateActiveWord(val ? getInputCursorPosition() : 0);
   }
 
   function createWord(word: string, id: number) {
