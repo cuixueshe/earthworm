@@ -2,7 +2,7 @@
   <div
     class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
   >
-    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
       <img
         class="mx-auto h-10 w-auto"
         src="/logo.png"
@@ -15,7 +15,7 @@
       </h2>
     </div>
 
-    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
       <form
         @submit.prevent="handleLogin"
         class="space-y-6"
@@ -51,7 +51,7 @@
         Not an account?
         <NuxtLink
           href="/auth/signup"
-          class="font-semibold text-[1.2em] leading-6 text-indigo-600 hover:text-indigo-500"
+          class="font-semibold text-[1.2em] leading-6 text-indigo-400 hover:text-indigo-500"
         >
           Sign up
         </NuxtLink>
