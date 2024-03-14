@@ -15,7 +15,7 @@ import "vfonts/Lato.css";
 import { useUserStore } from "~/store/user";
 import { darkTheme, lightTheme } from "naive-ui";
 import { Theme, useDarkMode } from "~/composables/darkMode";
-import { ref, computed, onMounted } from "vue";
+import { computed, onMounted } from "vue";
 import { isMobileSystem } from "./utils/system";
 
 useRestoreUser();
