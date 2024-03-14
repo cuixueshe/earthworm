@@ -44,6 +44,7 @@ import { ref, onMounted, watch } from "vue";
 import { useInput } from "~/composables/main/question";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
+import { useCourseTime } from "~/composables/courses/time";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
@@ -65,9 +66,16 @@ const {
   getInputCursorPosition,
 });
 
+const { saveStartTime } = useCourseTime();
+
 watch(
   () => inputValue.value,
-  (val) => {
+  (val, oldVal) => {
+    if (val && !oldVal) {
+      console.log("first input ===>", val, oldVal);
+      saveStartTime(courseStore.currentCourse?.id!);
+    }
+
     setInputValue(val);
   }
 );

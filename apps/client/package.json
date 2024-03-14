@@ -41,6 +41,8 @@
     "@types/canvas-confetti": "^1.6.4",
     "axios": "^1.6.6",
     "canvas-confetti": "^1.9.2",
+    "dayjs": "^1.11.10",
+    "dexie": "^3.2.6",
     "pinia": "^2.1.7",
     "satori": "^0.10.13",
     "vee-validate": "^4.12.5",

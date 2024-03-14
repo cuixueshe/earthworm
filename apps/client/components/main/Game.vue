@@ -1,6 +1,6 @@
 <template>
   <div class="h-full pt-20">
-    <div class="h-[40vh] flex flex-col justify-center">
+    <div class="flex flex-col justify-center">
       <template v-if="isQuestion()">
         <Question></Question>
       </template>
@@ -16,15 +16,29 @@
 </template>
 
 <script setup lang="ts">
-import Question from './Question.vue';
+import { onUnmounted, ref } from "vue";
+import Question from "./Question.vue";
 import Answer from "./Answer.vue";
 import Summary from "./Summary.vue";
-import Share from './Share.vue';
+import Share from "./Share.vue";
 import Tips from "./Tips.vue";
-import AuthRequired from './AuthRequired.vue';
+import AuthRequired from "./AuthRequired.vue";
 import { useGameMode } from "~/composables/main/game";
-import { useCourseStore } from '~/store/course';
+import { useCourseTime } from "~/composables/courses/time";
+import { useCourseStore } from "~/store/course";
+
+import dayjs from "dayjs";
+import duration from "dayjs/plugin/duration";
+dayjs.extend(duration);
 
 const { isAnswer, isQuestion } = useGameMode();
 const courseStore = useCourseStore();
+const { pauseTiming } = useCourseTime();
+
+// 离开答题页面记录结束时间
+onUnmounted(() => {
+  if (courseStore.currentCourse) {
+    pauseTiming(courseStore.currentCourse.id);
+  }
+});
 </script>
