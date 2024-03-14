@@ -64,7 +64,7 @@
         Already have an account?
         <NuxtLink
           to="/auth/login"
-          class="font-semibold text-indigo-600 hover:text-indigo-500"
+          class="font-semibold text-[1.2em] leading-6 text-indigo-600 hover:text-indigo-500"
         >
           Log in
         </NuxtLink>

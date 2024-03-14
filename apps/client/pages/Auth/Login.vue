@@ -51,7 +51,7 @@
         Not an account?
         <NuxtLink
           href="/auth/signup"
-          class="font-semibold text-[1.2em] leading-6 text-fuchsia-500 hover:text-fuchsia-400"
+          class="font-semibold text-[1.2em] leading-6 text-indigo-600 hover:text-indigo-500"
         >
           Sign up
         </NuxtLink>
