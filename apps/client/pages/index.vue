@@ -52,7 +52,7 @@
       </section>
       <section class="flex flex-col py-8">
         <h2 class="text-4xl text-center">What is Earthworm?</h2>
-        <p class="text-center">
+        <p class="pt-2 text-center">
           an open-source, collaborative, user-friendly English learning tool.
         </p>
         <div class="flex">
@@ -155,11 +155,11 @@
             <div class="h-[330px] flex flex-col pt-4 pl-4 pb-4 text-sm">
               <div class="pr-2 overflow-y-auto">
                 <h2 class="py-4 text-xl font-bold">
-                  学习原理：通过连词造句的方法来练习英语😄
+                  学习原理：通过连词造句的方法来练习英语 😄
                 </h2>
                 <h3 class="pb-2 text-base font-semibold">以句子为核心</h3>
                 <p class="py-1">
-                  每个句子包含单词/词组/语法，当学会一个句子后，就可以清晰地表达出来。
+                  每个句子包含单词/词组/语法，所以学会一个句子后，就可以清晰地表达出来。
                 </p>
                 <h3 class="py-2 text-base font-semibold">任务拆分</h3>
                 <p class="py-1 leading-7">
@@ -169,11 +169,11 @@
                 <p class="py-1 leading-7">通过不断地重复来形成肌肉记忆</p>
                 <h3 class="py-2 text-base font-semibold">i+1</h3>
                 <p class="py-1 leading-7">
-                  逐渐增加难度，先从最简单的句型开始，再到更加丰富的概念
+                  循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念
                 </p>
                 <h3 class="pb-2 text-base font-semibold">正向反馈来的快</h3>
                 <p class="py-1 leading-7">
-                  当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案——背单词（还记得 abandon 吗？ oh不，现在是 aback 了）
+                  当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案 ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
                 </p>
               </div>
             </div>
