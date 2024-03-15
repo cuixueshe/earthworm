@@ -3,7 +3,8 @@
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
-    <template v-else>
+
+<template v-else>
       <section
         class="flex md:flex-row md:justify-between justify-center flex-col py-8"
       >
@@ -160,18 +161,96 @@
         <div class="w-1/2"></div>
         <div class="w-1/2"></div>
       </section>
-      <section class="flex flex-col py-8">
+      <!-- <section class="flex flex-col py-8">
         <h2 class="text-4xl text-center">Why Earthworm?</h2>
+      </section> -->
+      <section class="flex flex-col py-8">
+        <div class="mx-auto max-w-screen-xl py-12 sm:px-6 lg:px-8 lg:py-16">
+          <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+            User feedback
+          </h2>
+
+          <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
+            <div v-for="(item, index) in CommentsList" :key='index' class="mb-8 sm:break-inside-avoid" >
+              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    alt=""
+                    :src="item.avatar"
+                    class="size-14 rounded-full object-cover"
+                  />
+
+                  <div>
+                    <div class="flex justify-center gap-0.5 text-green-500">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <p class="mt-0.5 text-lg font-medium text-gray-900">{{item.name}}</p>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-gray-700">
+                  {{ item.comment }}
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
       </section>
     </template>
 
-    <MessageBox
-      v-model:is-show-modal="showMobileTip"
-      content="The app isn't mobile-friendly, so stay tuned!"
-      cancel-btn-text="fine"
-      confirm-btn-text=""
-    ></MessageBox>
-  </div>
+<MessageBox v-model:is-show-modal="showMobileTip" content="The app isn't mobile-friendly, so stay tuned!"
+  cancel-btn-text="fine" confirm-btn-text=""></MessageBox>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -181,6 +260,7 @@ import { useRouter } from "vue-router";
 import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useGameStore } from "~/store/game";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+import CommentsList from "~/assets/comments";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
@@ -249,11 +329,9 @@ function useShortcutToGame() {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(
-    circle at center,
-    #a800b2 0.06rem,
-    transparent 0.65rem
-  );
+  background-image: radial-gradient(circle at center,
+      #a800b2 0.06rem,
+      transparent 0.65rem);
   background-size: var(--bgSize, 1rem) var(--bgSize, 1rem);
   background-repeat: round;
   background-position:
