@@ -1,5 +1,9 @@
 <template>
   <div class="relative">
+    <p class="ml-4 mr-1 text-gray-400">
+      {{ courseStore.currentCourse?.title }}
+      （{{ courseStore.statementIndex + 1 }}<span class="mx-[2px]">/</span>{{ courseStore.totalQuestionsCount }}）
+    </p>
     <Progress :currentPercentage="currentPercentage"></Progress>
   </div>
   <div class="h-full pt-20">
@@ -14,7 +18,7 @@
   </div>
   <MTips></MTips>
   <Summary></Summary>
-  <Share></Share>
+  <MShare></MShare>
   <AuthRequired></AuthRequired>
 </template>
 
@@ -23,7 +27,7 @@ import Progress from '~/components/main/Progress.vue';
 import MQuestion from './MQuestion.vue';
 import MAnswer from "./MAnswer.vue";
 import Summary from "~/components/main/Summary.vue";
-import Share from '~/components/main/Share.vue';
+import MShare from './MShare.vue';
 import MTips from "./MTips.vue";
 import AuthRequired from '~/components/main/AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";

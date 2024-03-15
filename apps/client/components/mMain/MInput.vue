@@ -3,29 +3,24 @@
     <div class="flex flex-col items-center" @click="handleCharClick">
       <div v-for="(listItem, index) in charList" :key="index" class="flex">
         <div v-for="(item, i) in listItem" :key="i"
-          :class="[item === 'Space' ?  'w-48' : item === 'Backspace' ? 'w-24' : 'w-8']"
-          class="char char-button rounded-button border-4 h-8 leading-5 flex-shrink-0 mx-0.5 mb-1">{{ item }}</div>
+          :class="[item === 'Space' ?  'w-36' : item === 'Backspace' || item === 'Enter' ? 'w-24' : 'w-8']"
+          class="char char-button select-none rounded-button border-4 h-8 leading-5 flex-shrink-0 mx-0.5 mb-1">{{ item }}</div>
       </div>
     </div>
-  
-    <div @click="submit" class="char-button rounded-button border-4 mt-4 w-48">Submit</div>
   </div>
 </template>
 
 <script setup lang="ts">
 // 模拟手机26键小写字母的数组 
 const charList: string[][] = [
-  ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
-  [ 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'], 
-  ['z', 'x', 'c', 'v', 'b', 'n', 'm', "'"],
-  ["Space", 'Backspace']
+  ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i','o'],
+  ['p', 'a', 's', 'd', 'f', 'g', 'h', 'j'], 
+  ['k', 'l', 'z', 'x', 'c', 'v', 'b'],
+  ['n', 'm', "'", 'Backspace'],
+  ["Space", "Enter"]
 ]
 
 const emits = defineEmits(['setInputValue', 'delInputValue', 'handleEnterKeyup'])
-
-function submit() {
-  emits('handleEnterKeyup')
-}
 
 function handleCharClick(e: Event) {
   const element = e.target as HTMLDivElement
@@ -38,7 +33,10 @@ function handleCharClick(e: Event) {
 function dispatch(text: string, code: string) {
   switch(text) {
     case 'Backspace':
-      actions('Backspace', {code, text})
+      actions(text, {code, text})
+      break;
+    case 'Enter':
+      actions(text, {code, text})
       break;
     default:
       actions('input', {code, text})
@@ -49,7 +47,11 @@ function dispatch(text: string, code: string) {
 function actions(type: string, {code, text}: {code: string, text: string}) {
   if(type === 'Backspace') {
     emits('delInputValue', code)
-  return
+    return
+  }
+  if(type === 'Enter') {
+    emits('handleEnterKeyup')
+    return
   }
   if(type === 'input') {
     emits('setInputValue', text, code)
