@@ -4,20 +4,22 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <section class='w-full'>
+      <section class="w-full">
         <div
-          class="bg-indigo-600 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+          class="bg-purple-200 dark:bg-gray-800 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-lg"
         >
-          <p class="text-center font-medium sm:text-left">
-          Earthworm is now available! 🎉
-          <br class="sm:hidden" />
-          Start your English learning journey now!
+          <p
+            class="text-center font-medium sm:text-left text-black dark:text-white"
+          >
+            Earthworm is now available! 🎉
+            <br class="sm:hidden" />
+            Start your English learning journey now!
           </p>
           <a
-              class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-indigo-600 transition hover:bg-white/90 focus:outline-none focus:ring active:text-indigo-500 sm:mt-0"
-              href="https://github.com/cuixueshe/earthworm"
+            class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-purple-600 transition hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
+            href="https://github.com/cuixueshe/earthworm"
           >
-          Learn More
+            Learn More
           </a>
         </div>
       </section>
