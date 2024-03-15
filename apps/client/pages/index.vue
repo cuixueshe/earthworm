@@ -67,7 +67,7 @@
                   点击按钮
                   <span
                     class="inline-block px-1 mx-1 border border-solid rounded-lg text-fuchsia-300 border-fuchsia-300"
-                    >Get Started</span
+                    >Get started</span
                   >
                   <span class="text-gray-500">（或快捷键 Enter ⏎）</span>
                   开启你的第一节课！
