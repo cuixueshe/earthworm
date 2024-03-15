@@ -30,7 +30,7 @@
             @click="handleKeydown"
             class="w-48 btn btn-outline hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300"
           >
-            Get Started<kbd class="kbd"> ↵ </kbd>
+            Get started<kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
         <div
