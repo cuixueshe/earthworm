@@ -1,17 +1,17 @@
 <template>
   <div
+    :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     class="course-card"
     :class="{
       'state-finished': hasFinished,
-      'current-card': currentCourse,
+      'current-card': isActiveCourse,
     }"
-    ref="courseCardRef"
   >
     <h3 class="text-base font-bold dark:text-gray-100">{{ title }}</h3>
     <p
       class="text-sm mt-4 truncate"
       :class="
-        currentCourse
+        isActiveCourse
           ? 'text-[rgba(255,255,255,0.8)]'
           : 'text-[rgba(136,136,136,1)]'
       "
@@ -24,7 +24,7 @@
       class="tooltip count"
       :class="{
         'state-finished-count': hasFinished,
-        'current-count': currentCourse,
+        'current-count': isActiveCourse,
       }"
       :data-tip="dataTip"
     >
@@ -42,22 +42,20 @@ const props = defineProps<{
   id: number;
   count: number | undefined;
 }>();
-const courseCardRef = ref<HTMLDivElement | null>(null);
 const { activeCourseId } = useActiveCourseId();
-const currentCourse = computed(() => activeCourseId.value == props.id);
+
+const activeCourseRef = ref<HTMLDivElement>();
+const hasFinished = computed(() => !!props.count);
+const isActiveCourse = computed(() => activeCourseId.value == props.id);
 const dataTip = computed(
   () => `Congratulations! you've completed the course ${props.count} times.`
 );
 
-const hasFinished = computed(() => !!props.count);
-
 onMounted(() => {
-  if (currentCourse.value && courseCardRef.value) {
-    courseCardRef.value.scrollIntoView({
-      behavior: "instant",
-      block: "start",
-    });
-  }
+  activeCourseRef.value?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
 });
 </script>
 
