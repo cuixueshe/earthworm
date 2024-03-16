@@ -89,9 +89,9 @@
 </template>
 
 <script setup lang="ts">
+import { onBeforeUnmount, onMounted, ref } from "vue";
 import { fetchProgressRank, type ProgressRankVo } from "~/api/rank";
-import { ref, onMounted } from "vue";
-import { useRankModal } from '~/composables/rank/modal'
+import { useRankModal } from '~/composables/rank/modal';
 const { showModal, hide } = useRankModal()
 
 const data = ref<ProgressRankVo>({
@@ -99,7 +99,19 @@ const data = ref<ProgressRankVo>({
   self: null,
 });
 
+function handleClickOutside(event:Event){
+  const target = event.target as HTMLElement;
+  if (!target.closest('.modal-box')){
+    hide()
+  }
+}
+
+onBeforeUnmount(() => {
+  document.removeEventListener("click", handleClickOutside, true);
+});
 onMounted(async () => {
+  document.addEventListener("click", handleClickOutside, true);
+
   const res = await fetchProgressRank();
   data.value = res;
 });
