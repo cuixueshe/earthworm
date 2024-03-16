@@ -168,77 +168,45 @@
           </h2>
 
           <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-            <div v-for="(item, index) in CommentsList" :key='index' class="mb-8 sm:break-inside-avoid" >
-              <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-                <div class="flex items-center gap-4">
-                  <img
+            <div v-for="(item, index) in CommentsList" :key='index' class="mb-8 sm:break-inside-avoid">
+              <!-- Tips: Used for subsequent redirects to corresponding twitter pages -->
+              <!-- <a :href="item.link" target="_blank"> -->
+              <blockquote class="rounded-lg bg-gray-50 p-3 shadow-sm sm:p-3 hover:bg-gray-100 border cursor-pointer">
+                <div class="flex items-center gap-4 justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
                     alt=""
                     :src="item.avatar"
                     class="size-14 rounded-full object-cover"
                   />
 
                   <div>
-                    <div class="flex justify-center gap-0.5 text-green-500">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-0.5 text-lg font-medium text-gray-900">{{item.name}}</p>
+                    <p class="mt-0.5 text-lg font-bold text-gray-900">{{item.nickname}}</p>
+                    <p class="mt-0.5 text-gray-500 text-xs">@{{item.account}}</p>
                   </div>
+                  </div>
+                  <img width="30" :src="item.icon" class="self-start"/>
                 </div>
-
                 <p class="mt-4 text-gray-700">
                   {{ item.comment }}
                 </p>
+                <div class="flex items-center justify-between my-2">
+                  <div class="text-gray-500 text-xs">{{ formatTimestamp({ timestamp: item.time }) }}</div>
+                  <svg t="1710569875595" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1454" width="20"><path d="M512 170.666667C324.266667 170.666667 170.666667 324.266667 170.666667 512s153.6 341.333333 341.333333 341.333333 341.333333-153.6 341.333333-341.333333S699.733333 170.666667 512 170.666667z m0 640c-164.266667 0-298.666667-134.4-298.666667-298.666667s134.4-298.666667 298.666667-298.666667 298.666667 134.4 298.666667 298.666667-134.4 298.666667-298.666667 298.666667z" fill="#bfbfbf" p-id="1455"></path><path d="M512 448c-12.8 0-21.333333 8.533333-21.333333 21.333333v213.333334c0 10.666667 8.533333 21.333333 21.333333 21.333333s21.333333-8.533333 21.333333-21.333333V469.333333c0-10.666667-8.533333-21.333333-21.333333-21.333333zM512 320c-12.8 0-21.333333 10.666667-21.333333 21.333333v42.666667c0 12.8 8.533333 21.333333 21.333333 21.333333s21.333333-10.666667 21.333333-21.333333v-42.666667c0-12.8-8.533333-21.333333-21.333333-21.333333z" fill="#bfbfbf" p-id="1456"></path></svg>
+                </div>
+                <div class="border-t border-gray-200 mx-auto mb-2"></div>
+                <div class="flex items-center justify-between flex-row">
+                  <div class='flex items-center flex-shrink-0 justify-between'>
+                    <svg t="1710570175625" class="icon" viewBox="0 0 1040 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2583" width="24" height="24"><path d="M520 288.192l-9.552-9.552-4-3.888c-73.28-69.088-188.432-67.488-259.808 3.888-72.848 72.848-72.848 190.96 0 263.808l262.048 262.048a16 16 0 0 0 22.624 0l262.048-262.048c72.848-72.848 72.848-190.96 0-263.808-72.848-72.848-190.96-72.848-263.808 0l-9.552 9.552z m-46.736 21.232l3.488 3.408 43.248 43.232 43.488-43.488a138.544 138.544 0 0 1 195.936 0l3.184 3.296a138.544 138.544 0 0 1-3.2 192.64L520 747.92 280.576 508.512a138.544 138.544 0 0 1 189.568-201.92l3.12 2.832z" fill="#bfbfbf" p-id="2584"></path></svg>
+                    <span class="ml-1 text-gray-500 text-xs">{{ item.like_count }}</span>
+                  </div>
+                  <div class='flex items-center flex-shrink-0 justify-end ml-auto'>
+                    <svg t="1710570345080" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3731" width="15" height="15"><path d="M486.4 563.2C331.1104 563.2 204.8 436.8896 204.8 281.6S331.1104 0 486.4 0 768 126.3104 768 281.6 641.6896 563.2 486.4 563.2z m0-512C359.3728 51.2 256 154.5728 256 281.6S359.3728 512 486.4 512 716.8 408.6272 716.8 281.6 613.4272 51.2 486.4 51.2zM896 1024h-819.2C34.4576 1024 0 989.5424 0 947.2c0-3.4816 0.7168-86.272 62.72-168.96 36.096-48.128 85.504-86.3744 146.8928-113.6128C284.5696 631.296 377.7024 614.4 486.4 614.4s201.8304 16.896 276.7872 50.2272c61.3888 27.2896 110.7968 65.4848 146.8928 113.6128C972.0832 860.928 972.8 943.7184 972.8 947.2c0 42.3424-34.4576 76.8-76.8 76.8z m-409.6-358.4c-178.5344 0-310.272 48.7936-380.9792 141.1072C52.4288 875.8784 51.2512 946.5856 51.2 947.3024a25.6 25.6 0 0 0 25.6 25.4976h819.2a25.6 25.6 0 0 0 25.6-25.6c0-0.6144-1.1776-71.3216-54.2208-140.4928C796.6208 714.3936 664.8832 665.6 486.4 665.6z" fill="#bfbfbf" p-id="3732"></path></svg>
+                    <p class="ml-1 text-gray-500 text-xs overflow-hidden overflow-ellipsis whitespace-nowrap max-w-xs">See {{ item.account }}'s</p>
+                  </div>
+                </div>
               </blockquote>
+              <!-- </a> -->
             </div>
           </div>
         </div>
@@ -258,6 +226,7 @@ import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 import { useGameStore } from "~/store/game";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import CommentsList from "~/assets/comments";
+import { formatTimestamp, type Timestamp } from "~/utils/date";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
