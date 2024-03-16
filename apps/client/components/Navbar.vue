@@ -31,7 +31,7 @@
       >
         Sign up
       </button>
-      <div v-else-if="userStore.user" class="dropdown dropdown-end">
+      <div v-else class="dropdown dropdown-end">
         <button
           tabindex="0"
           class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"

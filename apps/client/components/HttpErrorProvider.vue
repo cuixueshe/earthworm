@@ -5,8 +5,8 @@
 <script setup lang="ts">
 import { useMessage } from "naive-ui";
 import { useRouter } from "vue-router";
-import { useUserStore } from "~/store/user";
 import { injectHttpStatusErrorHandler } from "~/api/http";
+import { useUserStore } from "~/store/user";
 
 useHttpStatusError();
 
@@ -24,8 +24,9 @@ function useHttpStatusError() {
           duration: 500,
           onLeave() {
             const callback = window.location.pathname;
-            router.push(`/auth/login?callback=${callback}`);
+            // 鉴权失败，退出用户到登录页面
             useUserStore().logoutUser();
+            router.push(`/auth/login?callback=${callback}`);
           },
         });
         break;
