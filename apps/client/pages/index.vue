@@ -162,7 +162,7 @@
                   切换到设置页面，自定义你喜欢的快捷键，也可以控制语音是否自动播放、单词下划线固定长度、使用空格提交等等……更多个人设置会持续更新
                   😊
                   <i
-                    class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-sm p-[2px]"
+                    class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 ml-2 text-sm p-[2px]"
                   ></i>
                 </p>
               </div>
