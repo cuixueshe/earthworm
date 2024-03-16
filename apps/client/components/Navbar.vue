@@ -17,12 +17,12 @@
       </div>
     </NuxtLink>
     <div class="flex items-center">
+      <div class="mx-2">{{ userStore.user?.username }}</div>
       <div v-if="userStore.user" class="dropdown dropdown-end">
         <button
           tabindex="0"
           class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
         >
-          {{ userStore.user.username }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

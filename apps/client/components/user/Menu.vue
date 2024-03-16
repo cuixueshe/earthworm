@@ -1,17 +1,23 @@
-
 <template>
   <div class="w-24 border-r border-solid border-gray-200">
-    <div v-for="(menu, index) in menus" :key="index" class="box-content h-8 leading-8 py-2 cursor-pointer" :class="currentMenu === menu.name
-      ? 'border-r-2 border-solid border-r-fuchsia-500 text-fuchsia-500'
-      : ''
-      " @click="handleChangeMenu(menu)">
+    <div
+      v-for="(menu, index) in menus"
+      :key="index"
+      class="box-content h-8 leading-8 py-2 cursor-pointer"
+      :class="
+        currentMenu === menu.name
+          ? 'border-r-2 border-solid border-r-fuchsia-500 text-fuchsia-500'
+          : ''
+      "
+      @click="handleChangeMenu(menu)"
+    >
       {{ menu.name }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { onMounted, ref } from "vue";
 
 type Menu = {
   name: string;
@@ -31,7 +37,7 @@ const handleChangeMenu = (menu: Menu) => {
 };
 
 const setDefaultMenu = () => {
-  handleChangeMenu(props.menus[0])
-}
-onMounted(() => setDefaultMenu())
+  handleChangeMenu(props.menus[0]);
+};
+onMounted(() => setDefaultMenu());
 </script>

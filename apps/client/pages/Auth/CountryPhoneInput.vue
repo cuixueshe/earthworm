@@ -58,8 +58,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
 import { allCountries as countriesData } from "country-telephone-data";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 const emit = defineEmits(["update:modelValue"]);
 const props = defineProps({
   modelValue: String,

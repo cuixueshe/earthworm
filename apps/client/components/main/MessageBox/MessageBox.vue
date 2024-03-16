@@ -5,17 +5,28 @@
       <p class="py-4">{{ content }}</p>
       <div class="modal-action">
         <form method="dialog">
-          <button class="btn cancel" @click="handleCancel">{{ cancelBtnText }}</button>
+          <button class="btn cancel" @click="handleCancel">
+            {{ cancelBtnText }}
+          </button>
         </form>
-        <button v-if="confirmBtnText" class="btn confirm" @click="handleConfirm">{{ confirmBtnText }}</button>
+        <button
+          v-if="confirmBtnText"
+          class="btn confirm"
+          @click="handleConfirm"
+        >
+          {{ confirmBtnText }}
+        </button>
       </div>
     </div>
   </dialog>
 </template>
 
 <script setup lang="ts">
-import { type IMessageBoxProps, type EmitsType, useMessageBoxModal } from '~/composables/messageBox/modal'
-
+import {
+  useMessageBoxModal,
+  type EmitsType,
+  type IMessageBoxProps,
+} from "~/composables/messageBox/modal";
 
 const props = withDefaults(defineProps<IMessageBoxProps>(), {
   isShowModal: false,
@@ -27,6 +38,6 @@ const props = withDefaults(defineProps<IMessageBoxProps>(), {
 
 const emits = defineEmits<EmitsType>();
 
-const { dialogBoxRef, isShow, handleConfirm, handleCancel } = useMessageBoxModal(props, emits)
-
+const { dialogBoxRef, isShow, handleConfirm, handleCancel } =
+  useMessageBoxModal(props, emits);
 </script>

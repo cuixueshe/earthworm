@@ -11,20 +11,20 @@
 </template>
 
 <script setup lang="ts">
-import Game from '~/components/main/Game.vue';
-import Tool from '~/components/main/Tool.vue';
-import Loading from '~/components/Loading.vue';
-import { useCourseStore } from "~/store/course";
-import { useGameMode } from "~/composables/main/game";
-import { useRoute } from "vue-router";
 import { definePageMeta } from "#imports";
 import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
+import Loading from "~/components/Loading.vue";
+import Game from "~/components/main/Game.vue";
+import Tool from "~/components/main/Tool.vue";
+import { useGameMode } from "~/composables/main/game";
+import { useCourseStore } from "~/store/course";
 
 definePageMeta({
   middleware: "auth",
 });
 
-const isLoading = ref(true)
+const isLoading = ref(true);
 const route = useRoute();
 const coursesStore = useCourseStore();
 const { showQuestion } = useGameMode();
@@ -33,7 +33,6 @@ showQuestion();
 
 onMounted(async () => {
   await coursesStore.setup(Number(route.params.id));
-  isLoading.value = false
-})
-
+  isLoading.value = false;
+});
 </script>
