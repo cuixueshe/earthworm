@@ -55,7 +55,7 @@
           tabindex="0"
           class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32"
         >
-          <li @click="handleViewUserInfo"><a>User info</a></li>
+          <li @click="handleViewUserInfo"><a>User Info</a></li>
           <li @click="handleLogout"><a>Log out</a></li>
           <!-- <li><a>Item 2</a></li> -->
         </ul>
@@ -103,21 +103,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
 import { useMessage } from "naive-ui";
 import { navigateTo } from "nuxt/app";
+import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import { Theme, useDarkMode } from "~/composables/darkMode";
-import MessageBox from "./main/MessageBox/MessageBox.vue";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
-import { computed } from "vue";
+import MessageBox from "./main/MessageBox/MessageBox.vue";
+
 const route = useRoute();
-
 const userStore = useUserStore();
-
+const message = useMessage();
 const isShowModal = ref(false);
-
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
@@ -133,8 +131,6 @@ const handleLogin = () => {
 const handleSignup = () => {
   navigateTo("/auth/signup");
 };
-
-const message = useMessage();
 
 const handleLogout = () => {
   isShowModal.value = true;
