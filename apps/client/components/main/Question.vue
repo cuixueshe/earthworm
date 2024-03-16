@@ -92,7 +92,7 @@ function handleKeyup(e: KeyboardEvent) {
 function inputWidth(word: string) {
   // 单词宽度
   let width = 0;
-
+  
   // 单词转小写字符数组
   word = word.toLocaleLowerCase();
   const wordArr = word.split("");
@@ -120,7 +120,7 @@ function inputWidth(word: string) {
       width += 0.6;
       continue;
     }
-    if (letter === "i" || letter === "l") {
+    if (letter === "i" || letter === "l" || letter === "\'") {
       width += 0.5;
       continue;
     }

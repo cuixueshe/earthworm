@@ -68,19 +68,19 @@
 </template>
 
 <script setup lang="ts">
-import { watch, ref } from "vue";
+import { watch } from "vue";
 import { useRouter } from "vue-router";
-import { useUserStore } from "~/store/user";
-import { useCourseStore } from "~/store/course";
-import { useGameMode } from "~/composables/main/game";
-import { useAuthRequire } from "~/composables/main/authRequire";
-import { useSummary, useDailySentence } from "~/composables/main/summary";
-import { useGameStore } from "~/store/game";
-import { useConfetti } from "~/composables/main/confetti/useConfetti";
-import { useShareModal } from "~/composables/main/shareImage/share";
-import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseTime } from "~/composables/courses/time";
+import { useAuthRequire } from "~/composables/main/authRequire";
+import { useConfetti } from "~/composables/main/confetti/useConfetti";
+import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
+import { useGameMode } from "~/composables/main/game";
+import { useShareModal } from "~/composables/main/shareImage/share";
+import { useDailySentence, useSummary } from "~/composables/main/summary";
+import { useCourseStore } from "~/store/course";
+import { useUserStore } from "~/store/user";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();
@@ -114,15 +114,14 @@ watch(showModal, (val) => {
 
 async function completeCourse() {
   const userStore = useUserStore();
-  const gameStore = useGameStore();
+  const { updateActiveCourseId } = useActiveCourseId();
 
   if (userStore.user && courseStore.currentCourse) {
-    await stopTiming(courseStore.currentCourse.id);
     const nextCourse = await courseStore.completeCourse(
       courseStore.currentCourse.id
     );
     nextCourseId = nextCourse.id;
-    gameStore.updateActiveCourseId(nextCourseId);
+    updateActiveCourseId(nextCourseId);
   }
 }
 

@@ -6,7 +6,8 @@
   "prettier.trailingComma": "es5",
   // Use `eslint` for vue, ts and js
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"

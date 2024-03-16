@@ -1,14 +1,14 @@
 import { defineStore } from "pinia";
-import { useUserStore } from "./user";
 import { fetchStartGame } from "~/api/game";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useUserStore } from "./user";
 
 export const useGameStore = defineStore("game", () => {
-  const { updateActiveCourseId, restActiveCourseId, activeCourseId } =
-    useActiveCourseId();
-
+  const { updateActiveCourseId, restActiveCourseId } = useActiveCourseId();
   async function startGame() {
     const userStore = useUserStore();
+    // 保证每次获取的 activeCourseId 都是最新的
+    const { activeCourseId } = useActiveCourseId();
 
     if (!userStore.user) {
       const firstCourseId = 1;
@@ -39,7 +39,5 @@ export const useGameStore = defineStore("game", () => {
   return {
     startGame,
     resetGame,
-    updateActiveCourseId,
-    activeCourseId,
   };
 });
