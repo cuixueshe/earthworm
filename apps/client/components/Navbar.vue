@@ -10,32 +10,19 @@
           alt="earth-worm-logo"
         />
         <h1
-          class="text-2xl leading-none font-black leading-normal text-wrap text-fuchsia-400"
+          class="text-2xl font-black leading-normal text-wrap text-fuchsia-400"
         >
           Earthworm
         </h1>
       </div>
     </NuxtLink>
     <div class="flex items-center">
-      <button
-        v-if="!userStore.user && route.name !== 'Auth-Login'"
-        class="btn btn-sm btn-ghost mx-1 h-8 px-2"
-        @click="handleLogin"
-      >
-        Log in
-      </button>
-      <button
-        v-else-if="!userStore.user && route.name !== 'Auth-Signup'"
-        class="btn btn-sm btn-ghost mx-1 h-8 px-2"
-        @click="handleSignup"
-      >
-        Sign up
-      </button>
-      <div v-else class="dropdown dropdown-end">
+      <div v-if="userStore.user" class="dropdown dropdown-end">
         <button
           tabindex="0"
-          class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
+          class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
         >
+          {{ userStore.user.username }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -57,9 +44,25 @@
         >
           <li @click="handleViewUserInfo"><a>User Info</a></li>
           <li @click="handleLogout"><a>Log out</a></li>
-          <!-- <li><a>Item 2</a></li> -->
         </ul>
       </div>
+      <button
+        v-show="
+          !userStore.user &&
+          (route.name === 'Auth-SignUp' || route.name !== 'Auth-Login')
+        "
+        class="btn btn-sm btn-ghost mx-1 h-8 px-2"
+        @click="handleLogin"
+      >
+        Log in
+      </button>
+      <button
+        v-show="route.name === 'Auth-Login'"
+        class="btn btn-sm btn-ghost mx-1 h-8 px-2"
+        @click="handleSignup"
+      >
+        Sign up
+      </button>
       <button
         class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
         @click="toggleDarkMode"
