@@ -62,7 +62,7 @@ onMounted(() => {
         />
       </svg>
       <svg
-        v-else-if="type === Type.Error"
+        v-else-if="type === Type.ERROR"
         xmlns="http://www.w3.org/2000/svg"
         class="stroke-current shrink-0 h-4 w-4 mr-4"
         fill="none"
