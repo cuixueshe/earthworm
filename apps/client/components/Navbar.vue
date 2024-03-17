@@ -106,48 +106,50 @@
 </template>
 
 <script setup lang="ts">
-import { useMessage } from "naive-ui";
-import { navigateTo } from "nuxt/app";
-import { computed, ref } from "vue";
-import { useRoute } from "vue-router";
-import { Theme, useDarkMode } from "~/composables/darkMode";
-import { useUserStore } from "~/store/user";
-import { cleanToken } from "~/utils/token";
-import MessageBox from "./main/MessageBox/MessageBox.vue";
+  import { navigateTo } from "nuxt/app";
+  import { computed, ref } from "vue";
+  import { useRoute } from "vue-router";
+  import { Theme, useDarkMode } from "~/composables/darkMode";
+  import { useUserStore } from "~/store/user";
+  import { cleanToken } from "~/utils/token";
+  import MessageBox from "./main/MessageBox/MessageBox.vue";
+  import Message from "~/components/main/Message/Message";
+  const route = useRoute();
+  const userStore = useUserStore();
+  const isShowModal = ref(false);
+  const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
-const route = useRoute();
-const userStore = useUserStore();
-const message = useMessage();
-const isShowModal = ref(false);
-const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
+  const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 
-const isDarkMode = computed(() => darkMode.value === Theme.DARK);
+  const handleViewUserInfo = () => {
+    navigateTo("/user/info");
+  };
 
-const handleViewUserInfo = () => {
-  navigateTo("/user/info");
-};
+  const handleLogin = () => {
+    navigateTo("/auth/login");
+  };
 
-const handleLogin = () => {
-  navigateTo("/auth/login");
-};
+  const handleSignup = () => {
+    navigateTo("/auth/signup");
+  };
 
-const handleSignup = () => {
-  navigateTo("/auth/signup");
-};
+  const handleLogout = () => {
+    isShowModal.value = true;
+  };
 
-const handleLogout = () => {
-  isShowModal.value = true;
-};
-
-const handleLogoutConfirm = () => {
-  userStore.logoutUser();
-  cleanToken();
-  message.success("logout success", {
-    duration: 500,
-    onLeave() {
-      navigateTo("/");
-    },
-  });
-};
+  const handleLogoutConfirm = () => {
+    userStore.logoutUser();
+    cleanToken();
+    try {
+      Message.success("logout success!", {
+        duration: 500,
+        onLeave() {
+          navigateTo("/");
+        },
+      });
+    } catch (error) {
+      Message.error("logout error!");
+    }
+  };
 </script>
 <style></style>

@@ -66,37 +66,41 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter } from "vue-router";
-import { useAuth } from "~/composables/auth";
-import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
-import FormInput from "~/pages/Auth/FormInput.vue";
-import { useSignupForm } from "~/pages/Auth/hooks/useSignUpForm";
-const {
-  handleSubmit,
-  name,
-  nameError,
-  phone,
-  phoneError,
-  password,
-  passwordError,
-  confirmPassword,
-  confirmPasswordError,
-  updateCountryCode,
-} = useSignupForm();
+  import { useRouter } from "vue-router";
+  import { useAuth } from "~/composables/auth";
+  import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
+  import FormInput from "~/pages/Auth/FormInput.vue";
+  import { useSignupForm } from "~/pages/Auth/hooks/useSignUpForm";
+  import Message from "~/components/main/Message/Message";
+  const {
+    handleSubmit,
+    name,
+    nameError,
+    phone,
+    phoneError,
+    password,
+    passwordError,
+    confirmPassword,
+    confirmPasswordError,
+    updateCountryCode,
+  } = useSignupForm();
 
-const router = useRouter();
-const { signup } = useAuth();
+  const router = useRouter();
+  const { signup } = useAuth();
 
-const handleRegister = handleSubmit(async (values) => {
-  //  countryCode :maybe backend api want to use it
-  const [countryCode, purePhoneNumber] = values.phone.split("_");
-  const modifiedValues = {
-    ...values,
-    phone: purePhoneNumber,
-  };
-  try {
-    await signup(modifiedValues);
-    router.replace("/");
-  } catch (error) {}
-});
+  const handleRegister = handleSubmit(async (values) => {
+    //  countryCode :maybe backend api want to use it
+    const [countryCode, purePhoneNumber] = values.phone.split("_");
+    const modifiedValues = {
+      ...values,
+      phone: purePhoneNumber,
+    };
+    try {
+      await signup(modifiedValues);
+      Message.success("register success!");
+      router.replace("/");
+    } catch (error) {
+      Message.error("register error!");
+    }
+  });
 </script>

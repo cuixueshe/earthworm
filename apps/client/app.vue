@@ -1,43 +1,41 @@
 <template>
-  <n-message-provider>
-    <n-config-provider :theme="theme">
-      <NuxtLayout>
-        <HttpErrorProvider>
-          <NuxtPage />
-        </HttpErrorProvider>
-      </NuxtLayout>
-    </n-config-provider>
-  </n-message-provider>
+  <n-config-provider :theme="theme">
+    <NuxtLayout>
+      <HttpErrorProvider>
+        <NuxtPage />
+      </HttpErrorProvider>
+    </NuxtLayout>
+  </n-config-provider>
 </template>
 
 <script setup lang="tsx">
-import "vfonts/Lato.css";
-import { useUserStore } from "~/store/user";
-import { darkTheme, lightTheme } from "naive-ui";
-import { Theme, useDarkMode } from "~/composables/darkMode";
-import { computed, onMounted } from "vue";
+  import "vfonts/Lato.css";
+  import { useUserStore } from "~/store/user";
+  import { darkTheme, lightTheme } from "naive-ui";
+  import { Theme, useDarkMode } from "~/composables/darkMode";
+  import { computed, onMounted } from "vue";
 
-useRestoreUser();
+  useRestoreUser();
 
-const { initDarkMode, darkMode } = useDarkMode();
+  const { initDarkMode, darkMode } = useDarkMode();
 
-function useRestoreUser() {
-  const userStore = useUserStore();
-  userStore.restoreUser();
-}
+  function useRestoreUser() {
+    const userStore = useUserStore();
+    userStore.restoreUser();
+  }
 
-onMounted(() => {
-  initDarkMode();
-});
+  onMounted(() => {
+    initDarkMode();
+  });
 
-const theme = computed(() => {
-  return darkMode.value === Theme.DARK ? darkTheme : lightTheme;
-});
+  const theme = computed(() => {
+    return darkMode.value === Theme.DARK ? darkTheme : lightTheme;
+  });
 </script>
 
 <style>
-#jfToolbar,
-.mod-json {
-  display: none !important;
-}
+  #jfToolbar,
+  .mod-json {
+    display: none !important;
+  }
 </style>
