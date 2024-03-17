@@ -1,7 +1,7 @@
 import { watchEffect } from "vue";
 import { useCourseStore } from "~/store/course";
 import { play, updateSource } from "./audio";
-const PRONUNCIATION = "pronunciationType";
+const PRONUNCIATION = "isAmericanPronunciation";
 
 
 function getPronunciationType(){
@@ -12,8 +12,8 @@ function getPronunciationType(){
 let prevWord = "";
 export function useCurrentStatementEnglishSound() {
   const courseStore = useCourseStore();
-  let soundType = getPronunciationType();
-  let param =  soundType === 'American' ? `type=0` : `type=1`;
+  let soundIsAmerican = getPronunciationType();
+  let param = soundIsAmerican === 'true' ? `type=0` : `type=1`;
   watchEffect(() => {
     const word = courseStore.currentStatement?.english;
     if (prevWord !== word) {
@@ -38,8 +38,8 @@ export function useCurrentStatementEnglishSound() {
 
 // 朗读每日一句
 export function readOneSentencePerDayAloud(str: string) {
-  let soundType = getPronunciationType();
-  let param =  soundType === 'American' ? `type=0` : `type=1`;
+  let soundIsAmerican = getPronunciationType();
+  let param =  soundIsAmerican === 'true' ? `type=0` : `type=1`;
   let requestUrl = `https://dict.youdao.com/dictvoice?audio=${str}&${param}`
   updateSource(requestUrl);
   play();

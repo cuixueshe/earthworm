@@ -67,7 +67,7 @@
           <input
             type="checkbox"
             className="toggle toggle-primary"
-            :checked="pronunciationType === 'American' ? true : false"
+            :checked="isAmericanPronunciation"
             @change="togglePronunciation"
           />
         </label>
@@ -109,11 +109,12 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useTogglePronunciation } from "~/composables/user/pronunciation";
 import {
   useShortcutDialogMode,
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
-import { useAutoSound, useTogglePronunciation } from "~/composables/user/sound";
+import { useAutoSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
@@ -134,7 +135,7 @@ const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer();
 
 const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 
-const { pronunciationType, togglePronunciation } = useTogglePronunciation();
+const { isAmericanPronunciation, togglePronunciation } = useTogglePronunciation();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);

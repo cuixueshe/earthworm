@@ -1,47 +1,24 @@
-import { ref } from "vue";
-
-type storeParamsType = {
-  name:string;
-  value : string | boolean;
-}
+import { ref } from "vue"
 
 export const AUTO_PLAY_SOUND = 'autoPlaySound'
-export const AUTO_PLAY_SOUND_TYPE = 'pronunciationType'
-const autoPlaySound = ref(true);
 
-
-
-
-const pronunciationType = ref('American');
+const autoPlaySound = ref(true)
 
 function loadCache() {
   const value = localStorage.getItem(AUTO_PLAY_SOUND)
-  const pronunciation_value = localStorage.getItem(AUTO_PLAY_SOUND)
-  store('autoSound',value !== 'false'); 
-  store('pronunciationType',pronunciation_value === 'American' ? true : false); 
+  store(value !== 'false')  
 }
 
-const store = function(type: string,value: boolean) {
-  if(type === 'autoSound') {
-    autoPlaySound.value = value
-    localStorage.setItem(AUTO_PLAY_SOUND, `${value}`)
-  }else{
-    pronunciationType.value = !value ? 'American' : 'British';
-    localStorage.setItem(AUTO_PLAY_SOUND_TYPE, `${pronunciationType.value}`)
-  }
-  
+const store = function(value: boolean) {
+  autoPlaySound.value = value
+  localStorage.setItem(AUTO_PLAY_SOUND, `${value}`)
 }
 
 const toggleAutoPlaySound = () => {
-  store('autoSound', !autoPlaySound.value);
-}
-
-const togglePronunciation = () => {
-  store('pronunciationType',pronunciationType.value === 'American' ? true : false)
+  store(!autoPlaySound.value)
 }
 
 const isAutoPlaySound = () => autoPlaySound.value
-const pronunciation = () => pronunciationType.value
 
 export function useAutoSound() {
   loadCache()
@@ -49,14 +26,5 @@ export function useAutoSound() {
     autoPlaySound,
     isAutoPlaySound,
     toggleAutoPlaySound
-  }
-}
-
-export function useTogglePronunciation() {
-  loadCache()
-  return {
-    pronunciationType,
-    pronunciation,
-    togglePronunciation
   }
 }
