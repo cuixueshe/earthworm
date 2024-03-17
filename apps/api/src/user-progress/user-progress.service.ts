@@ -1,15 +1,11 @@
-import { Injectable, Inject } from '@nestjs/common';
-import { DB, DbType } from '../global/providers/db.provider';
 import { userProgress } from '@earthworm/shared';
+import { Inject, Injectable } from '@nestjs/common';
 import { eq } from 'drizzle-orm';
-import { RankService } from '../rank/rank.service';
+import { DB, DbType } from '../global/providers/db.provider';
 
 @Injectable()
 export class UserProgressService {
-  constructor(
-    @Inject(DB) private db: DbType,
-    private readonly rankService: RankService,
-  ) {}
+  constructor(@Inject(DB) private db: DbType) {}
 
   async create(userId: number, courseId: number) {
     await this.db.insert(userProgress).values({
