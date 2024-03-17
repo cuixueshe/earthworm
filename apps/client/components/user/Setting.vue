@@ -60,6 +60,21 @@
     </section>
 
     <section>
+      <h2>美/英式发音</h2>
+      <div className="form-control w-52">
+        <label className="cursor-pointer label">
+          <span className="label-text">美式</span>
+          <input
+            type="checkbox"
+            className="toggle toggle-primary"
+            :checked="pronunciationType === 'American' ? true : false"
+            @change="togglePronunciation"
+          />
+        </label>
+      </div>
+    </section>
+
+    <section>
       <h2 class="text-lg">提交设置</h2>
       <div className="form-control w-52">
         <label className="cursor-pointer label">
@@ -98,7 +113,7 @@ import {
   useShortcutDialogMode,
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
-import { useAutoSound } from "~/composables/user/sound";
+import { useAutoSound, useTogglePronunciation } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
@@ -118,6 +133,8 @@ const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
 const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer();
 
 const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+
+const { pronunciationType, togglePronunciation } = useTogglePronunciation();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
