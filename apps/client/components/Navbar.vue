@@ -18,7 +18,10 @@
     </NuxtLink>
     <div class="flex items-center">
       <div class="mx-2">{{ userStore.user?.username }}</div>
-      <div v-if="userStore.user" class="dropdown dropdown-end">
+      <div
+        v-if="userStore.user"
+        class="dropdown dropdown-end"
+      >
         <button
           tabindex="0"
           class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
@@ -106,50 +109,50 @@
 </template>
 
 <script setup lang="ts">
-  import { navigateTo } from "nuxt/app";
-  import { computed, ref } from "vue";
-  import { useRoute } from "vue-router";
-  import { Theme, useDarkMode } from "~/composables/darkMode";
-  import { useUserStore } from "~/store/user";
-  import { cleanToken } from "~/utils/token";
-  import MessageBox from "./main/MessageBox/MessageBox.vue";
-  import Message from "~/components/main/Message/Message";
-  const route = useRoute();
-  const userStore = useUserStore();
-  const isShowModal = ref(false);
-  const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
+import { navigateTo } from "nuxt/app";
+import { computed, ref } from "vue";
+import { useRoute } from "vue-router";
+import { Theme, useDarkMode } from "~/composables/darkMode";
+import { useUserStore } from "~/store/user";
+import { cleanToken } from "~/utils/token";
+import MessageBox from "./main/MessageBox/MessageBox.vue";
+import Message from "~/components/main/Message/Message";
+const route = useRoute();
+const userStore = useUserStore();
+const isShowModal = ref(false);
+const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
-  const isDarkMode = computed(() => darkMode.value === Theme.DARK);
+const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 
-  const handleViewUserInfo = () => {
-    navigateTo("/user/info");
-  };
+const handleViewUserInfo = () => {
+  navigateTo("/user/info");
+};
 
-  const handleLogin = () => {
-    navigateTo("/auth/login");
-  };
+const handleLogin = () => {
+  navigateTo("/auth/login");
+};
 
-  const handleSignup = () => {
-    navigateTo("/auth/signup");
-  };
+const handleSignup = () => {
+  navigateTo("/auth/signup");
+};
 
-  const handleLogout = () => {
-    isShowModal.value = true;
-  };
+const handleLogout = () => {
+  isShowModal.value = true;
+};
 
-  const handleLogoutConfirm = () => {
-    userStore.logoutUser();
-    cleanToken();
-    try {
-      Message.success("logout success!", {
-        duration: 500,
-        onLeave() {
-          navigateTo("/");
-        },
-      });
-    } catch (error) {
-      Message.error("logout error!");
-    }
-  };
+const handleLogoutConfirm = () => {
+  userStore.logoutUser();
+  cleanToken();
+  try {
+    Message.success("You've been logged out successfully!", {
+      duration: 2000,
+      onLeave() {
+        navigateTo("/");
+      },
+    });
+  } catch (error) {
+    Message.error("logout error!");
+  }
+};
 </script>
 <style></style>
