@@ -25,7 +25,7 @@ export class UserProgressService {
       .where(eq(userProgress.userId, userId));
 
     return {
-      courseId: res.length ? res[0].courseId : null,
+      courseId: res.length ? res[res.length - 1].courseId : null,
     };
   }
 
