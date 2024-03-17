@@ -62,10 +62,10 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
+import Message from "~/components/main/Message/Message";
 import { useAuth } from "~/composables/auth";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
-import Message from "~/components/main/Message/Message";
 const { handleSubmit, phone, phoneError, password, passwordError } =
   useLoginForm();
 

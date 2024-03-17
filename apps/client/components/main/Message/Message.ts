@@ -1,5 +1,5 @@
 import { h, render } from "vue";
-import MessageContrustor from "./message.vue";
+import MessageConstructor from "./message.vue";
 // 使用函数
 type Params = {
   type: "success" | "error" | "warning";
@@ -15,7 +15,7 @@ function Message({ type, text, duration = 2000 }: Params) {
 
   const rootContainer = document.body;
 
-  const vNode = h(MessageContrustor, { type, text });
+  const vNode = h(MessageConstructor, { type, text });
   render(vNode, rootContainer);
   clearTimeout(timer);
   timer = setTimeout(() => {

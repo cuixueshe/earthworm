@@ -75,11 +75,11 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+import Message from "~/components/main/Message/Message";
 import { useAuth } from "~/composables/auth";
 import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useSignupForm } from "~/pages/Auth/hooks/useSignUpForm";
-import Message from "~/components/main/Message/Message";
 const {
   handleSubmit,
   name,
