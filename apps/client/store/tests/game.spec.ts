@@ -1,8 +1,9 @@
-import { beforeEach, it, expect, describe, vi } from "vitest";
-import { useGameStore } from "../game";
-import { setActivePinia, createPinia } from "pinia";
-import { useUserStore } from "../user";
+import { createPinia, setActivePinia } from "pinia";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { fetchStartGame } from "~/api/game";
+import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useGameStore } from "../game";
+import { useUserStore } from "../user";
 
 vi.mock("~/api/game");
 
@@ -54,6 +55,18 @@ describe("game store", () => {
 
       expect(fetchStartGame).toHaveBeenCalled();
       expect(result).toEqual({ courseId: 2 });
+    });
+
+    it("should get the courseId again after updating the cache", async () => {
+      const gameStore = useGameStore();
+      const { updateActiveCourseId } = useActiveCourseId();
+
+      // 其他地方更新了缓存的 activeCourseId
+      updateActiveCourseId(999);
+      const { courseId } = await gameStore.startGame();
+
+      // 此时 courseId 应该是更新后的数据
+      expect(courseId).toEqual(999);
     });
   });
 });

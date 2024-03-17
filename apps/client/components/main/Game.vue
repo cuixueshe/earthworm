@@ -16,15 +16,13 @@
 </template>
 
 <script setup lang="ts">
-import Question from './Question.vue';
-import Answer from "./Answer.vue";
-import Summary from "./Summary.vue";
-import Share from './Share.vue';
-import Tips from "./Tips.vue";
-import AuthRequired from './AuthRequired.vue';
 import { useGameMode } from "~/composables/main/game";
-import { useCourseStore } from '~/store/course';
+import Answer from "./Answer.vue";
+import AuthRequired from "./AuthRequired.vue";
+import Question from "./Question.vue";
+import Share from "./Share.vue";
+import Summary from "./Summary.vue";
+import Tips from "./Tips.vue";
 
 const { isAnswer, isQuestion } = useGameMode();
-const courseStore = useCourseStore();
 </script>

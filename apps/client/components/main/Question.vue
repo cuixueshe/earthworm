@@ -12,7 +12,7 @@
                 : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
             isShowWordsWidth() ? '' : 'min-w-28',
           ]"
-          :style="isShowWordsWidth() ? { width: `${inputWidth(w)}ch` } : {}"
+          :style="isShowWordsWidth() ? { minWidth: `${inputWidth(w)}ch` } : {}"
         >
           {{ userInputWords[i]["userInput"] }}
         </div>
@@ -38,12 +38,12 @@
 </template>
 
 <script setup lang="ts">
-import { useCourseStore } from "~/store/course";
+import { onMounted, ref, watch } from "vue";
 import { useGameMode } from "~/composables/main/game";
-import { ref, onMounted, watch } from "vue";
 import { useInput } from "~/composables/main/question";
-import { useShowWordsWidth } from "~/composables/user/words";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
+import { useShowWordsWidth } from "~/composables/user/words";
+import { useCourseStore } from "~/store/course";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
@@ -113,7 +113,7 @@ function inputWidth(word: string) {
       width += 0.6;
       continue;
     }
-    if (letter === "i" || letter === "l") {
+    if (letter === "i" || letter === "l" || letter === "'") {
       width += 0.5;
       continue;
     }

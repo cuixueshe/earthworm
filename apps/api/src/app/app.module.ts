@@ -10,6 +10,7 @@ import { RankModule } from '../rank/rank.module';
 import { GameModule } from '../game/game.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { CronJobModule } from '../cron-job/cron-job.module';
+import { CourseHistoryModule } from '../course-history/course-history.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { CronJobModule } from '../cron-job/cron-job.module';
     RankModule,
     GameModule,
     CronJobModule,
+    CourseHistoryModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: 'single',

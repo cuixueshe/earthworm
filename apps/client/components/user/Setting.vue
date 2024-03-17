@@ -34,8 +34,12 @@
       <div className="form-control w-52">
         <label className="cursor-pointer label">
           <span className="label-text">自动播放</span>
-          <input type="checkbox" className="toggle toggle-primary" :checked="autoPlaySound"
-            @change="toggleAutoPlaySound" />
+          <input
+            type="checkbox"
+            className="toggle toggle-primary"
+            :checked="autoPlaySound"
+            @change="toggleAutoPlaySound"
+          />
         </label>
       </div>
     </section>
@@ -45,8 +49,12 @@
       <div className="form-control w-52">
         <label className="cursor-pointer label">
           <span className="label-text">是</span>
-          <input type="checkbox" className="toggle toggle-primary" :checked="autoShowWordsWidth"
-            @change="toggleAutoWordsWidth" />
+          <input
+            type="checkbox"
+            className="toggle toggle-primary"
+            :checked="autoShowWordsWidth"
+            @change="toggleAutoWordsWidth"
+          />
         </label>
       </div>
     </section>
@@ -56,8 +64,12 @@
       <div className="form-control w-52">
         <label className="cursor-pointer label">
           <span className="label-text">使用空格</span>
-          <input type="checkbox" className="toggle toggle-primary" :checked="useSpace"
-            @change="toggleUseSpaceSubmitAnswer" />
+          <input
+            type="checkbox"
+            className="toggle toggle-primary"
+            :checked="useSpace"
+            @change="toggleUseSpaceSubmitAnswer"
+          />
         </label>
       </div>
     </section>
@@ -68,7 +80,9 @@
       <h3 class="font-bold text-center mb-4">
         先按所需的组合键，再按 Enter 键。
       </h3>
-      <div class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center">
+      <div
+        class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center"
+      >
         {{ shortcutKeyStr }}
       </div>
       <div class="text-center mt-2 text-xs">
@@ -79,14 +93,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import {
   useShortcutDialogMode,
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
+import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
-import { useSpaceSubmitAnswer } from '~/composables/user/submitKey'
 
 const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
 const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeys } =
@@ -101,9 +115,9 @@ function pointDialogOutside(e: MouseEvent) {
 }
 
 const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
-const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer()
+const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer();
 
-const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth()
+const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
@@ -113,6 +127,4 @@ onUnmounted(() => {
   document.removeEventListener("mouseup", pointDialogOutside);
   document.removeEventListener("keyup", handleKeyup);
 });
-
-
 </script>

@@ -1,10 +1,19 @@
 {
+  "prettier.enable": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "prettier.printWidth": 80,
+  "prettier.trailingComma": "es5",
   // Use `eslint` for vue, ts and js
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[js]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"

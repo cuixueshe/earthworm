@@ -1,11 +1,11 @@
+import { Test } from '@nestjs/testing';
+import { createFirstCourse } from '../../../test/fixture/course';
+import { createUser } from '../../../test/fixture/user';
+import { testImportModules } from '../../../test/helper/utils';
 import { RankService } from '../../rank/rank.service';
 import { UserProgressService } from '../../user-progress/user-progress.service';
 import { CourseController } from '../course.controller';
 import { CourseService } from '../course.service';
-import { Test } from '@nestjs/testing';
-import { createUser } from '../../../test/fixture/user';
-import { createFirstCourse } from '../../../test/fixture/course';
-import { testImportModules } from '../../../test/helper/utils';
 
 const user = createUser();
 const course = createFirstCourse();
