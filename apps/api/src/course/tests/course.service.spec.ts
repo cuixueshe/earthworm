@@ -7,7 +7,11 @@ import {
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
 import { createUser } from '../../../test/fixture/user';
-import { cleanDB, startDB } from '../../../test/helper/utils';
+import {
+  cleanDB,
+  startDB,
+  testImportModules,
+} from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 import { CourseHistoryService } from '../../course-history/course-history.service';
 import { DB, type DbType } from '../../global/providers/db.provider';
