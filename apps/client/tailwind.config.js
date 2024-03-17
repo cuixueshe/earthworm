@@ -13,6 +13,10 @@ export default {
           '50%': { opacity: '0' },
         }
       },
+      colors: {
+        'custom-pink': "#e879f9",
+        'custom-pink-600': "#d379f9"
+      }
     },
   },
   plugins: [require("daisyui")],
