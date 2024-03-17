@@ -9,8 +9,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import UserMenus from "~/components/user/Menu.vue";
 import UserHome from "~/components/user/Home.vue";
+import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
 type Menu = {

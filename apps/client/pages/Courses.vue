@@ -1,10 +1,10 @@
 <template>
   <div class="relative w-full flex flex-col">
     <h2 class="my-4 text-3xl text-blue-500">English Course</h2>
-    <div class="h-full overflow-y-auto scrollbar-hide">
+    <div class="h-full scrollbar-hide">
       <div
         v-if="courses.length"
-        class="h-[79vh] flex flex-wrap p-1 pb-96 gap-8 overflow-x-hidden overflow-y-auto justify-start"
+        class="h-[79vh] flex flex-wrap p-1 pb-96 overflow-x-hidden overflow-y-auto gap-8 justify-start"
       >
         <template v-for="course in courses" :key="course.id">
           <NuxtLink
@@ -25,13 +25,15 @@
 </template>
 
 <script setup lang="ts">
-import { type Course } from "~/store/course";
+import { onMounted, ref } from "vue";
 import { fetchCourses } from "~/api/course";
+import { fetchCourseHistory } from "~/api/courseHistory";
+
 import Loading from "~/components/Loading.vue";
 import CourseCard from "~/components/courses/CourseCard.vue";
-import { ref, onMounted } from "vue";
-import { fetchCourseHistory } from "~/api/courseHistory";
+
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { type Course } from "~/store/course";
 
 const courses = ref<Course[]>([]);
 

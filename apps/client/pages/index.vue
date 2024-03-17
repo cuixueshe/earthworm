@@ -4,6 +4,25 @@
       <Loading></Loading>
     </template>
     <template v-else>
+      <section class="w-full">
+        <div
+          class="bg-purple-200 dark:bg-gray-800 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-lg"
+        >
+          <p
+            class="text-center font-medium sm:text-left text-black dark:text-white"
+          >
+            Earthworm is now available! 🎉
+            <br class="sm:hidden" />
+            Start your English learning journey now!
+          </p>
+          <a
+            class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-purple-600 transition hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
+            href="https://github.com/cuixueshe/earthworm"
+          >
+            Learn More
+          </a>
+        </div>
+      </section>
       <section
         class="flex flex-col justify-center py-8 md:flex-row md:justify-between"
       >
@@ -59,8 +78,8 @@
           <div
             class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-2xl"
           >
-            <div class="h-[330px] flex flex-col pt-4 pl-4 pb-4 text-sm">
-              <div class="pr-2 overflow-y-auto">
+            <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
+              <div class="pr-2 overflow-x-hidden overflow-y-auto">
                 <h2 class="py-4 text-xl font-bold">快速上手</h2>
                 <h3 class="pb-2 text-base font-semibold">当前页面</h3>
                 <p class="py-1">
@@ -152,8 +171,8 @@
           <div
             class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-xl"
           >
-            <div class="h-[330px] flex flex-col pt-4 pl-4 pb-4 text-sm">
-              <div class="pr-2 overflow-y-auto">
+            <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
+              <div class="pr-2 overflow-x-hidden overflow-y-auto">
                 <h2 class="py-4 text-xl font-bold">
                   学习原理：通过连词造句的方法来练习英语 😄
                 </h2>
@@ -173,7 +192,8 @@
                 </p>
                 <h3 class="pb-2 text-base font-semibold">正向反馈来的快</h3>
                 <p class="py-1 leading-7">
-                  当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案 ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
+                  当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案
+                  ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
                 </p>
               </div>
             </div>
@@ -190,12 +210,12 @@
 </template>
 
 <script setup lang="ts">
-import Loading from "~/components/Loading.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
-import { isMobileSystem } from "~/utils/system";
+import Loading from "~/components/Loading.vue";
 import { useGameStore } from "~/store/game";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import { isMobileSystem } from "~/utils/system";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();

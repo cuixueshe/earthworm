@@ -1,4 +1,4 @@
-import { nextTick, reactive, ref, watchEffect, type Ref } from "vue";
+import { nextTick, reactive, ref, watchEffect } from "vue";
 
 interface Word {
   text: string;
@@ -69,6 +69,8 @@ export function useInput({
         .map(createWord)
         .forEach((word, i) => {
           userInputWords[i] = word;
+          // 首个单词自动聚焦
+          i === 0 && (userInputWords[0].isActive = true);
         });
     });
   }
