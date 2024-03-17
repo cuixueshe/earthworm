@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app/app.module';
-import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { appBindGlobal } from './app/useGlobal';
+import { appGlobalMiddleware } from './app/useGlobal';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -12,7 +12,7 @@ async function bootstrap() {
     ],
   });
 
-  appBindGlobal(app);
+  appGlobalMiddleware(app);
   const config = new DocumentBuilder()
     .setTitle('Cats example')
     .setDescription('The cats API description')

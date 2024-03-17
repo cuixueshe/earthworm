@@ -1,14 +1,14 @@
 import { user } from '@earthworm/shared';
-import { createUser } from '../../../test/fixture/user';
-import { DB, DbType } from '../../global/providers/db.provider';
-import * as argon2 from 'argon2';
-import * as request from 'supertest';
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppModule } from '../../app/app.module';
+import * as argon2 from 'argon2';
+import * as request from 'supertest';
+import { createUser } from '../../../test/fixture/user';
 import { cleanDB } from '../../../test/helper/utils';
+import { AppModule } from '../../app/app.module';
+import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
-import { appBindGlobal } from '../../app/useGlobal';
+import { DB, DbType } from '../../global/providers/db.provider';
 
 const createUserData = {
   name: 'test',
@@ -29,7 +29,7 @@ describe('auth e2e', () => {
     }).compile();
 
     app = moduleFixture.createNestApplication();
-    appBindGlobal(app);
+    appGlobalMiddleware(app);
     db = moduleFixture.get<DbType>(DB);
 
     await app.init();

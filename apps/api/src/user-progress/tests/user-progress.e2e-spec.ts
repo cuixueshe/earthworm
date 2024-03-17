@@ -10,7 +10,7 @@ import {
 import { createUser } from '../../../test/fixture/user';
 import { cleanDB } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
-import { appBindGlobal } from '../../app/useGlobal';
+import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
@@ -31,7 +31,7 @@ describe('user-progress e2e', () => {
     }).compile();
 
     app = moduleFixture.createNestApplication();
-    appBindGlobal(app);
+    appGlobalMiddleware(app);
     db = moduleFixture.get<DbType>(DB);
 
     await app.init();

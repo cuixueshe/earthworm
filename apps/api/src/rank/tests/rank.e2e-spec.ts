@@ -1,16 +1,16 @@
 import { user } from '@earthworm/shared';
-import { createUser } from '../../../test/fixture/user';
-import { DB, DbType } from '../../global/providers/db.provider';
-import * as argon2 from 'argon2';
-import * as request from 'supertest';
+import { getRedisConnectionToken } from '@nestjs-modules/ioredis';
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppModule } from '../../app/app.module';
-import { cleanDB } from '../../../test/helper/utils';
-import { endDB } from '../../common/db';
-import { appBindGlobal } from '../../app/useGlobal';
+import * as argon2 from 'argon2';
 import { Redis } from 'ioredis';
-import { getRedisConnectionToken } from '@nestjs-modules/ioredis';
+import * as request from 'supertest';
+import { createUser } from '../../../test/fixture/user';
+import { cleanDB } from '../../../test/helper/utils';
+import { AppModule } from '../../app/app.module';
+import { appGlobalMiddleware } from '../../app/useGlobal';
+import { endDB } from '../../common/db';
+import { DB, DbType } from '../../global/providers/db.provider';
 
 let userData = createUser();
 let password = '123456';
@@ -25,7 +25,7 @@ describe('rank e2e', () => {
     }).compile();
 
     app = moduleFixture.createNestApplication();
-    appBindGlobal(app);
+    appGlobalMiddleware(app);
     db = moduleFixture.get<DbType>(DB);
     redis = moduleFixture.get<Redis>(getRedisConnectionToken());
 
