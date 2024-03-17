@@ -2,9 +2,9 @@ import { h, render } from "vue";
 import MessageConstructor from "./message.vue";
 
 export enum Type {
-  SUCCESS,
-  ERROR,
-  WARNING
+  SUCCESS = 'success',
+  ERROR = 'error',
+  WARNING = 'warning'
 }
 
 // 使用函数
