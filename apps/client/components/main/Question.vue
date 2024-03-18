@@ -1,7 +1,10 @@
 <template>
   <div class="text-center pt-2">
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
-      <template v-for="(w, i) in courseStore.words" :key="i">
+      <template
+        v-for="(w, i) in courseStore.words"
+        :key="i"
+      >
         <div
           class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
@@ -39,6 +42,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
+import { useCourseTime } from "~/composables/courses/time";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
@@ -65,9 +69,12 @@ const {
   getInputCursorPosition,
 });
 
+const { updateCourseTime } = useCourseTime();
+
 watch(
   () => inputValue.value,
-  (val) => {
+  (val, oldVal) => {
+    if (val && !oldVal) updateCourseTime();
     setInputValue(val);
   }
 );

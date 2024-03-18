@@ -28,7 +28,11 @@
                 values="10;0"
               />
             </path>
-            <path stroke-dasharray="16" stroke-dashoffset="16" d="M5 5H19">
+            <path
+              stroke-dasharray="16"
+              stroke-dashoffset="16"
+              d="M5 5H19"
+            >
               <animate
                 fill="freeze"
                 attributeName="stroke-dashoffset"
@@ -36,7 +40,11 @@
                 values="16;0"
               />
             </path>
-            <path stroke-dasharray="12" stroke-dashoffset="12" d="M5 12H14">
+            <path
+              stroke-dasharray="12"
+              stroke-dashoffset="12"
+              d="M5 12H14"
+            >
               <animate
                 fill="freeze"
                 attributeName="stroke-dashoffset"
@@ -45,7 +53,11 @@
                 values="12;0"
               />
             </path>
-            <path stroke-dasharray="16" stroke-dashoffset="16" d="M5 19H19">
+            <path
+              stroke-dasharray="16"
+              stroke-dashoffset="16"
+              d="M5 19H19"
+            >
               <animate
                 fill="freeze"
                 attributeName="stroke-dashoffset"
@@ -67,7 +79,10 @@
     </div>
     <StudyVideoLink :course-id="courseStore.currentCourse?.id" />
     <div class="flex-1"></div>
-    <div @click="handleDoAgain" class="link-item mr-4">
+    <div
+      @click="handleDoAgain"
+      class="link-item mr-4"
+    >
       <svg
         class="icon-item"
         xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +96,12 @@
         />
       </svg>
     </div>
-    <div @click="rankModal.show" class="link-item">排行榜</div>
+    <div
+      @click="rankModal.show"
+      class="link-item"
+    >
+      排行榜
+    </div>
     <div
       class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
       :style="{ width: currentPercentage + '%' }"
@@ -100,6 +120,7 @@
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import ProgressRank from "~/components/rank/ProgressRank.vue";
+import { useCourseTime } from "~/composables/courses/time";
 import { useGameMode } from "~/composables/main/game";
 import { useRankModal } from "~/composables/rank/modal";
 import { useCourseStore } from "~/store/course";
@@ -107,6 +128,7 @@ import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankModal = useRankModal();
 const courseStore = useCourseStore();
+const { restCourseTime } = useCourseTime();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
@@ -136,6 +158,7 @@ function useDoAgain() {
   function handleTipConfirm() {
     coursesStore.doAgain();
     showQuestion();
+    restCourseTime();
   }
 
   return {

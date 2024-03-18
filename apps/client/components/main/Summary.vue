@@ -1,6 +1,9 @@
 <template>
   <div>
-    <dialog className="modal mt-[-8vh]" :open="showModal">
+    <dialog
+      className="modal mt-[-8vh]"
+      :open="showModal"
+    >
       <div className="modal-box max-w-[48rem]">
         <div class="relative">
           <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
@@ -44,11 +47,27 @@
             <span class="text-6xl font-bold">"</span>
           </div>
           <p class="text-right text-gray-200 text-3">—— 金山词霸「每日一句」</p>
+          <p class="text-gray-600 text-base leading-loose pl-14">
+            {{ courseTimeSummary }}
+          </p>
         </div>
         <div className="modal-action">
-          <button class="btn btn-primary" @click="toShare">生成打卡图</button>
-          <button class="btn" @click="handleDoAgain">再来一次</button>
-          <button class="btn" @click="handleGoToNextCourse">
+          <button
+            class="btn btn-primary"
+            @click="toShare"
+          >
+            生成打卡图
+          </button>
+          <button
+            class="btn"
+            @click="handleDoAgain"
+          >
+            再来一次
+          </button>
+          <button
+            class="btn"
+            @click="handleGoToNextCourse"
+          >
             开始下一课<kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
@@ -65,6 +84,7 @@
 import { watch } from "vue";
 import { useRouter } from "vue-router";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useCourseTime } from "~/composables/courses/time";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
@@ -83,6 +103,7 @@ const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
+const { getCourseTime, restCourseTime, courseTimeSummary } = useCourseTime();
 
 watch(showModal, (val) => {
   if (val) {
@@ -114,6 +135,7 @@ async function completeCourse() {
     );
     nextCourseId = nextCourse.id;
     updateActiveCourseId(nextCourseId);
+    getCourseTime();
   }
 }
 
@@ -124,6 +146,7 @@ function useDoAgain() {
     courseStore.doAgain();
     hideSummary();
     showQuestion();
+    restCourseTime();
   }
 
   return {
@@ -149,6 +172,7 @@ function useGoToNextCourse() {
       showAuthRequireModal();
       return;
     }
+    restCourseTime();
 
     router.push(`/main/${nextCourseId}`);
   }

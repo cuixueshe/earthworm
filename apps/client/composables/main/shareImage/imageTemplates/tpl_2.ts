@@ -5,7 +5,8 @@ export const tpl_2 = ({
   enSentence,
   courseNum,
   userName,
-  dateStr
+  dateStr,
+  time,
 }: ShareImageTemplateData) => ({
   type: "div",
   props: {
@@ -50,18 +51,18 @@ export const tpl_2 = ({
                 tw: "font-bold text-3xl pt-2",
                 children: `Course ${courseNum}`,
               },
-            }, 
+            },
             {
-              type: 'div',
+              type: "div",
               props: {
-                tw: 'w-1/2 border-0 border-t-2 border-white my-2',
-              }
+                tw: "w-1/2 border-0 border-t-2 border-white my-2",
+              },
             },
             {
               type: "p",
               props: {
                 tw: "text-lg m-0",
-                children: `${userName}${userName ? '  •  ' : ''}${dateStr}`,
+                children: `${userName}${userName ? "  •  " : ""}${dateStr}`,
               },
             },
           ],
@@ -71,7 +72,7 @@ export const tpl_2 = ({
         type: "div",
         props: {
           tw: "flex flex-col w-full justify-center text-white text-2xl px-10",
-          children: [ 
+          children: [
             {
               type: "p",
               props: {
@@ -84,7 +85,21 @@ export const tpl_2 = ({
                 children: zhSentence,
               },
             },
-            
+          ],
+        },
+      },
+      {
+        type: "div",
+        props: {
+          tw: "p-12 flex flex-col justify-start w-full text-white text-lg",
+          children: [
+            {
+              type: "span",
+              props: {
+                tw: "font-bold text-xl pb-2",
+                children: `${time}`,
+              },
+            },
           ],
         },
       },

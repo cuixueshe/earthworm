@@ -8,6 +8,7 @@ export const tpl_1 = ({
   zhSentence,
   enSentence,
   courseNum,
+  time,
 }: ShareImageTemplateData) => {
   return {
     type: "div",
@@ -62,6 +63,13 @@ export const tpl_1 = ({
                 props: {
                   tw: "text-6xl font-bold flex justify-end",
                   children: '"',
+                },
+              },
+              {
+                type: "span",
+                props: {
+                  tw: "text-slate-400 font-bold text-xl",
+                  children: `${time}`,
                 },
               },
             ],
