@@ -45,7 +45,7 @@ const SPECIAL_KEYS = new Map([
 ]);
 
 export function useShortcutKeyMode() {
-  setShortcutKeys()
+  setShortcutKeys();
 
   function setShortcutKeys() {
     const localKeys = localStorage.getItem(SHORTCUT_KEYS);
@@ -83,7 +83,8 @@ export function useShortcutKeyMode() {
    * 有待讨论，产品角度出发，快捷键应该只支持组合键形式
    * 单键组合在使用过程中不方便写单词
    */
-  function handleKeyup(e: KeyboardEvent) {
+  function handleKeydown(e: KeyboardEvent) {
+    e.preventDefault();
     if (!showModal.value) return;
     isEnterKey(e.key) && saveShortcutKeys();
     // 组合键
@@ -93,7 +94,7 @@ export function useShortcutKeyMode() {
         (e.shiftKey && KEYBOARD.SHIFT) ||
         (e.ctrlKey && KEYBOARD.CTRL) ||
         (e.metaKey && KEYBOARD.COMMAND);
-      shortcutKeyStr.value += `${mainKey}+${e.key} `;
+      shortcutKeyStr.value = `${mainKey}+${e.key} `;
     } else {
       // 单个键入
       const key = convertKey(e.key);
@@ -102,7 +103,7 @@ export function useShortcutKeyMode() {
         isEnterKey(e.key)
       )
         return;
-      shortcutKeyStr.value += `${key} `;
+      shortcutKeyStr.value = `${key} `;
     }
   }
 
@@ -111,6 +112,6 @@ export function useShortcutKeyMode() {
     setShortcutKeys,
     shortcutKeyStr, // 单个修改的快捷键
     shortcutKeyTip, // 快捷键输入框底部注释
-    handleKeyup,
+    handleKeydown,
   };
 }

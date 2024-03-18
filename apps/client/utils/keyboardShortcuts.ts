@@ -2,12 +2,13 @@
 interface Shortcut {
   key: string;
   ctrlKey: boolean;
+  metaKey: boolean;
   command: (keyboardEvent: KeyboardEvent) => void;
 }
 
 const shortcuts: Shortcut[] = [];
 
-window.addEventListener("keyup", (e: KeyboardEvent) => {
+window.addEventListener("keydown", (e: KeyboardEvent) => {
   const shortcuts = findMatchingShortcut(e);
 
   shortcuts.forEach((shortcut) => {
@@ -19,6 +20,7 @@ function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
   return shortcuts.filter((shortcut) => {
     return (
       shortcut.ctrlKey === event.ctrlKey &&
+      shortcut.metaKey === event.metaKey &&
       shortcut.key === event.key.toLowerCase()
     );
   });
@@ -30,6 +32,7 @@ function parseKey(keyString: string) {
   const result = {
     key: keys.pop()!, // 取数组最后一个元素作为 key
     ctrlKey: keys.includes("ctrl"),
+    metaKey: keys.includes("command") || keys.includes("meta"),
   };
 
   return result;

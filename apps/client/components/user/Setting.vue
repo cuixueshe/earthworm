@@ -89,7 +89,7 @@ import { useShowWordsWidth } from "~/composables/user/words";
 import { useSpaceSubmitAnswer } from '~/composables/user/submitKey'
 
 const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
-const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeys } =
+const { shortcutKeyStr, shortcutKeyTip, handleKeydown, shortcutKeys } =
   useShortcutKeyMode();
 
 let dialogBoxRef = ref<HTMLElement | null>(null);
@@ -107,11 +107,11 @@ const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth()
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
-  document.addEventListener("keyup", handleKeyup);
+  document.addEventListener("keydown", handleKeydown);
 });
 onUnmounted(() => {
   document.removeEventListener("mouseup", pointDialogOutside);
-  document.removeEventListener("keyup", handleKeyup);
+  document.removeEventListener("keydown", handleKeydown);
 });
 
 
