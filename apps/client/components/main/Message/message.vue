@@ -10,19 +10,16 @@
 
   const style = {
     warning: {
-      icon: "icon-warning",
       color: "#E6A23C",
       backgroundColor: "rgb(253, 246, 236)",
       borderColor: "rgb(250, 236, 216)",
     },
     error: {
-      icon: "icon-shanchu",
       color: "#F56C6C",
       backgroundColor: "rgb(254, 240, 240)",
       borderColor: "rgb(253, 226, 226)",
     },
     success: {
-      icon: `<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
       color: "#67C23A",
       backgroundColor: "rgb(240, 249, 235)",
       borderColor: "rgb(225, 243, 216)",
