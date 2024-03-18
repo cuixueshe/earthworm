@@ -3,7 +3,11 @@
     class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-      <img class="mx-auto h-10 w-auto" src="/logo.png" alt="earthworm" />
+      <img
+        class="mx-auto h-10 w-auto"
+        src="/logo.png"
+        alt="earthworm"
+      />
       <h2
         class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-300"
       >
@@ -12,7 +16,11 @@
     </div>
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
-      <form @submit.prevent="handleLogin" class="space-y-6" novalidate>
+      <form
+        @submit.prevent="handleLogin"
+        class="space-y-6"
+        novalidate
+      >
         <FormInput
           label="Phone"
           name="phone"
@@ -53,25 +61,25 @@
 </template>
 
 <script setup lang="ts">
-  import { useRoute, useRouter } from "vue-router";
-  import { useAuth } from "~/composables/auth";
-  import FormInput from "~/pages/Auth/FormInput.vue";
-  import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
-  import Message from "~/components/main/Message/Message";
-  const { handleSubmit, phone, phoneError, password, passwordError } =
-    useLoginForm();
+import { useRoute, useRouter } from "vue-router";
+import Message from "~/components/main/Message/Message";
+import { useAuth } from "~/composables/auth";
+import FormInput from "~/pages/Auth/FormInput.vue";
+import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
+const { handleSubmit, phone, phoneError, password, passwordError } =
+  useLoginForm();
 
-  const router = useRouter();
-  const route = useRoute();
-  const { login } = useAuth();
+const router = useRouter();
+const route = useRoute();
+const { login } = useAuth();
 
-  const handleLogin = handleSubmit(async (values) => {
-    try {
-      await login(values);
-      Message.success("login success!");
-      router.replace(route.query.callback?.toString() || "/");
-    } catch (error) {
-      Message.error("register error!");
-    }
-  });
+const handleLogin = handleSubmit(async (values) => {
+  try {
+    await login(values);
+    Message.success("login success!");
+    router.replace(route.query.callback?.toString() || "/");
+  } catch (error) {
+    Message.error("register error!");
+  }
+});
 </script>
