@@ -1,7 +1,8 @@
 <script lang="ts" setup name="Message">
-import { onMounted, ref, render } from "vue";
-export type Type = "success" | "error" | "warning";
-const { type = "success", duration = 2000 } = defineProps<{
+import { onMounted, ref } from "vue";
+import { Type } from './Message.ts';
+
+const { type = Type.SUCCESS, duration = 2000 } = defineProps<{
   type?: Type;
   text: string;
   duration?: number;
@@ -47,7 +48,7 @@ onMounted(() => {
       v-if="isShow"
     >
       <svg
-        v-if="type === 'success'"
+        v-if="type === Type.SUCCESS"
         xmlns="http://www.w3.org/2000/svg"
         class="stroke-current shrink-0 h-4 w-4 mr-4"
         fill="none"
@@ -61,7 +62,7 @@ onMounted(() => {
         />
       </svg>
       <svg
-        v-else-if="type === 'error'"
+        v-else-if="type === Type.ERROR"
         xmlns="http://www.w3.org/2000/svg"
         class="stroke-current shrink-0 h-4 w-4 mr-4"
         fill="none"
