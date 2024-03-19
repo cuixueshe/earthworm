@@ -4,22 +4,41 @@
       <Loading></Loading>
     </template>
     <template v-else>
+      <section class="w-full">
+        <div
+          class="bg-purple-200 dark:bg-gray-800 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-lg"
+        >
+          <p
+            class="text-center font-medium sm:text-left text-black dark:text-white"
+          >
+            Earthworm is now available! 🎉
+            <br class="sm:hidden" />
+            Start your English learning journey now!
+          </p>
+          <a
+            class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-purple-600 transition hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
+            href="https://github.com/cuixueshe/earthworm"
+          >
+            Learn More
+          </a>
+        </div>
+      </section>
       <section
-        class="flex md:flex-row md:justify-between justify-center flex-col py-8"
+        class="flex flex-col justify-center py-8 md:flex-row md:justify-between"
       >
         <div class="w-1/2 mx-4">
-          <div class="mb-12 leading-loose text-3xl opacity-80 items-center">
+          <div class="items-center mb-12 text-3xl leading-loose opacity-80">
             <div class="">Why aren’t you good at English?</div>
             <div class="align-middle">
               It’s because you haven’t used
-              <span class="text-fuchsia-400 font-bold">EARTHWORM</span> yet! 🤪
+              <span class="font-bold text-fuchsia-400">EARTHWORM</span> yet! 🤪
               <i
                 class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-2xl p-[2px]"
               ></i>
             </div>
           </div>
           <a
-            class="mr-4 btn w-48 indicator"
+            class="w-48 mr-4 btn indicator"
             target="_blank"
             href="https://github.com/cuixueshe/earthworm"
           >
@@ -28,15 +47,15 @@
           </a>
           <button
             @click="handleKeydown"
-            class="btn btn-outline w-48 hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300"
+            class="w-48 btn btn-outline hover:text-fuchsia-400 hover:border-fuchsia-400 hover:bg-fuchsia-100 text-fuchsia-300 border-fuchsia-300"
           >
             Get Started<kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
         <div
-          class="w-1/2 flex items-center justify-center group select-none cursor-pointer rounded-xl relative m-4"
+          class="relative flex items-center justify-center w-1/2 m-4 cursor-pointer select-none group rounded-xl"
         >
-          <div class="absolute flex h-full w-full card">
+          <div class="absolute flex w-full h-full card">
             <div class="bg-dot rounded-[64px]"></div>
             <div
               class="absolute left-0 right-0 top-0 text-[220px] text-center group-hover:-skew-y-12 group-hover:rotate-12 transition-all"
@@ -52,21 +71,21 @@
       </section>
       <section class="flex flex-col py-8">
         <h2 class="text-4xl text-center">What is Earthworm?</h2>
-        <p class="text-center">
+        <p class="pt-2 text-center">
           an open-source, collaborative, user-friendly English learning tool.
         </p>
         <div class="flex">
           <div
-            class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-2xl"
+            class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-2xl"
           >
-            <div class="h-[330px] flex flex-col pt-4 pl-4 pb-4 text-sm">
-              <div class="pr-2 overflow-y-auto">
+            <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
+              <div class="pr-2 overflow-x-hidden overflow-y-auto">
                 <h2 class="py-4 text-xl font-bold">快速上手</h2>
                 <h3 class="pb-2 text-base font-semibold">当前页面</h3>
                 <p class="py-1">
                   点击按钮
                   <span
-                    class="inline-block mx-1 px-1 text-fuchsia-300 border border-solid border-fuchsia-300 rounded-lg"
+                    class="inline-block px-1 mx-1 border border-solid rounded-lg text-fuchsia-300 border-fuchsia-300"
                     >Get Started</span
                   >
                   <span class="text-gray-500">（或快捷键 Enter ⏎）</span>
@@ -130,7 +149,7 @@
                   下一题，冲冲冲霸占榜首！🏄‍♂️
                 </p>
 
-                <h2 class="text-xl font-bold py-4">帮助</h2>
+                <h2 class="py-4 text-xl font-bold">帮助</h2>
                 <h3 class="pb-2 text-base font-semibold">课程页面</h3>
                 <p class="py-1 leading-7">
                   输入下划线全是灰色，没有
@@ -150,10 +169,33 @@
             </div>
           </div>
           <div
-            class="rounded-3xl my-8 mx-2 border dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 transition duration-300 dark:from-neutral-600/90 dark:to-neutral-450/90 w-1/2 hover:shadow-xl"
+            class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-xl"
           >
-            <div class="h-[330px] flex p-4">
-              这里是 Earthworm 背后的学习原理……
+            <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
+              <div class="pr-2 overflow-x-hidden overflow-y-auto">
+                <h2 class="py-4 text-xl font-bold">
+                  学习原理：通过连词造句的方法来练习英语 😄
+                </h2>
+                <h3 class="pb-2 text-base font-semibold">以句子为核心</h3>
+                <p class="py-1">
+                  每个句子包含单词/词组/语法，所以学会一个句子后，就可以清晰地表达出来。
+                </p>
+                <h3 class="py-2 text-base font-semibold">任务拆分</h3>
+                <p class="py-1 leading-7">
+                  将一个长难句拆分成一个个的小单元（单词/词组）
+                </p>
+                <h3 class="py-2 text-base font-semibold">重复</h3>
+                <p class="py-1 leading-7">通过不断地重复来形成肌肉记忆</p>
+                <h3 class="py-2 text-base font-semibold">i+1</h3>
+                <p class="py-1 leading-7">
+                  循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念
+                </p>
+                <h3 class="pb-2 text-base font-semibold">正向反馈来的快</h3>
+                <p class="py-1 leading-7">
+                  当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案
+                  ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -175,12 +217,14 @@
 </template>
 
 <script setup lang="ts">
-import Loading from "~/components/Loading.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
-import { useGameStore } from "~/store/game";
+
+import Loading from "~/components/Loading.vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+
+import { useGameStore } from "~/store/game";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();

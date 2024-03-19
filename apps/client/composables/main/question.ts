@@ -1,4 +1,4 @@
-import { nextTick, reactive, ref, watchEffect, type Ref } from "vue";
+import { nextTick, reactive, ref, watchEffect } from "vue";
 
 interface Word {
   text: string;
@@ -43,7 +43,7 @@ export function useInput({
     inputValue.value = val;
     resetAllWordUserInput();
     inputSyncUserInputWords();
-    updateActiveWord(getInputCursorPosition());
+    updateActiveWord(val ? getInputCursorPosition() : 0);
   }
 
   function createWord(word: string, id: number) {
@@ -61,12 +61,16 @@ export function useInput({
 
   function setupUserInputWords() {
     watchEffect(() => {
+      resetUserInputWords();
+
       const english = source();
       english
         .split(separator)
         .map(createWord)
         .forEach((word, i) => {
           userInputWords[i] = word;
+          // 首个单词自动聚焦
+          i === 0 && (userInputWords[0].isActive = true);
         });
     });
   }
@@ -308,6 +312,13 @@ export function useInput({
     }
   }
 
+  function resetUserInputWords() {
+    // 避免在 Fix 模式下重置导致用户不能输入
+    mode = Mode.Input;
+    inputValue.value = "";
+    userInputWords.splice(0, userInputWords.length);
+  }
+
   return {
     inputValue,
     userInputWords,
@@ -317,5 +328,6 @@ export function useInput({
     handleKeyboardInput,
     fixIncorrectWord,
     fixFirstIncorrectWord,
+    resetUserInputWords,
   };
 }

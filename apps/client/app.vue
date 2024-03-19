@@ -1,13 +1,11 @@
 <template>
-  <n-message-provider>
-    <n-config-provider :theme="theme">
-      <NuxtLayout>
-        <HttpErrorProvider>
-          <NuxtPage />
-        </HttpErrorProvider>
-      </NuxtLayout>
-    </n-config-provider>
-  </n-message-provider>
+  <n-config-provider :theme="theme">
+    <NuxtLayout>
+      <HttpErrorProvider>
+        <NuxtPage />
+      </HttpErrorProvider>
+    </NuxtLayout>
+  </n-config-provider>
 </template>
 
 <script setup lang="tsx">

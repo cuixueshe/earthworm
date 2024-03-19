@@ -2,7 +2,10 @@
   <div class="space-y-4">
     <section>
       <h2 class="text-lg">快捷键设置</h2>
-      <n-table :bordered="false" :single-line="false">
+      <n-table
+        :bordered="false"
+        :single-line="false"
+      >
         <thead>
           <tr>
             <th>命令</th>
@@ -15,14 +18,24 @@
             <td>play sound</td>
             <td>{{ shortcutKeys.sound }}</td>
             <td>
-              <n-button text @click="handleEdit('sound')"> 编辑 </n-button>
+              <n-button
+                text
+                @click="handleEdit('sound')"
+              >
+                编辑
+              </n-button>
             </td>
           </tr>
           <tr>
             <td>show answer</td>
             <td>{{ shortcutKeys.answer }}</td>
             <td>
-              <n-button text @click="handleEdit('answer')"> 编辑 </n-button>
+              <n-button
+                text
+                @click="handleEdit('answer')"
+              >
+                编辑
+              </n-button>
             </td>
           </tr>
         </tbody>
@@ -75,8 +88,14 @@
     </section>
   </div>
 
-  <dialog class="modal mt-[-8vh]" :open="showModal">
-    <div ref="dialogBoxRef" class="modal-box max-w-[48rem] min-h-[156px]">
+  <dialog
+    class="modal mt-[-8vh]"
+    :open="showModal"
+  >
+    <div
+      ref="dialogBoxRef"
+      class="modal-box max-w-[48rem] min-h-[156px]"
+    >
       <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
         请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
@@ -93,11 +112,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
-import { useShowWordsWidth } from "~/composables/user/words";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
+import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const {
@@ -109,9 +128,6 @@ const {
   handleCloseDialog,
   handleKeydown,
 } = useShortcutKeyMode();
-const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
-const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 
 function pointDialogOutside(e: MouseEvent) {
   if (!showModal.value) return;
@@ -119,6 +135,10 @@ function pointDialogOutside(e: MouseEvent) {
     handleCloseDialog();
   }
 }
+
+const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
+const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
