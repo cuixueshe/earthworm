@@ -1,1 +1,647 @@
-[{"chinese":"手","english":"hand","soundmark":"/hænd/"},{"chinese":"手（复数）","english":"hands","soundmark":"/hændz/"},{"chinese":"递给","english":"to hand","soundmark":"/tə/ /hænd/"},{"chinese":"他","english":"him","soundmark":"/hɪm/"},{"chinese":"递给他","english":"to hand him","soundmark":"/tə/ /hænd/ /hɪm/"},{"chinese":"香蕉","english":"banana","soundmark":"/bə'nænə/"},{"chinese":"一个香蕉","english":"a banana","soundmark":"/ə/ /bə'nænə/"},{"chinese":"递给他一个香蕉","english":"to hand him a banana","soundmark":"/tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"},{"chinese":"他","english":"he","soundmark":"/hi/"},{"chinese":"想要","english":"want","soundmark":"/wɑnt/"},{"chinese":"他想要","english":"he wants","soundmark":"/hi/ /wɑnts/"},{"chinese":"我","english":"me","soundmark":"/mi/"},{"chinese":"他想要我","english":"he wants me","soundmark":"/hi/ /wɑnts/ /mi/"},{"chinese":"递给他一个香蕉","english":"to hand him a banana","soundmark":"/tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"},{"chinese":"他想要我递给他一个香蕉","english":"he wants me to hand him a banana","soundmark":"/hi/ /wɑnts/ /mi/ /tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"},{"chinese":"手机","english":"phone","soundmark":"/fon/"},{"chinese":"他的","english":"his","soundmark":"/hɪz/"},{"chinese":"他的手机","english":"his phone","soundmark":"/hɪz/ /fon/"},{"chinese":"递给他","english":"to hand him","soundmark":"/tə/ /hænd/ /hɪm/"},{"chinese":"递给他他的手机","english":"to hand him his phone","soundmark":"/tə/ /hænd/ /hɪm/ /hɪz/ /fon/"},{"chinese":"他想要我","english":"he wants me","soundmark":"/hi/ /wɑnts/ /mi/"},{"chinese":"他想要我递给他他的手机","english":"he wants me to hand him his phone","soundmark":"/hi/ /wɑnts/ /mi/ /tə/ /hænd/ /hɪm/ /hɪz/ /fon/"},{"chinese":"我","english":"me","soundmark":"/mi/"},{"chinese":"递给我","english":"to hand me","soundmark":"/tə/ /hænd/ /mi/"},{"chinese":"包","english":"bag","soundmark":"/bæɡ/"},{"chinese":"你的","english":"your","soundmark":"/jʊr/"},{"chinese":"你的包","english":"your bag","soundmark":"/jʊr/ /bæɡ/"},{"chinese":"递给我你的包","english":"to hand me your bag","soundmark":"/tə/ /hænd/ /mi/ /jʊr/ /bæɡ/"},{"chinese":"想要","english":"want","soundmark":"/wɑnt/"},{"chinese":"我想要你","english":"I want you","soundmark":"/aɪ/ /wɑnt/ /ju/"},{"chinese":"我想要你递给我你的包","english":"I want you to hand me your bag","soundmark":"/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /jʊr/ /bæɡ/"},{"chinese":"学校","english":"school","soundmark":"/skul/"},{"chinese":"包","english":"bag","soundmark":"/bæɡ/"},{"chinese":"书包","english":"school bag","soundmark":"/skul/ /bæɡ/"},{"chinese":"你的","english":"your","soundmark":"/jʊr/"},{"chinese":"你的书包","english":"your school bag","soundmark":"/jʊr/ /skul/ /bæɡ/"},{"chinese":"递给我","english":"to hand me","soundmark":"/tə/ /hænd/ /mi/"},{"chinese":"递给我你的书包","english":"to hand me your school bag","soundmark":"/tə/ /hænd/ /mi/ /jʊr/ /skul/ /bæɡ/"},{"chinese":"我想要你","english":"I want you","soundmark":"/aɪ/ /wɑnt/ /ju/"},{"chinese":"我想要你递给我你的书包","english":"I want you to hand me your school bag","soundmark":"/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /jʊr/ /skul/ /bæɡ/"},{"chinese":"我的","english":"my","soundmark":"/maɪ/"},{"chinese":"我的包","english":"my school bag","soundmark":"/maɪ/ /skul/ /bæɡ/"},{"chinese":"递给我我的书包","english":"to hand me my school bag","soundmark":"/tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"},{"chinese":"我想要你","english":"I want you","soundmark":"/aɪ/ /wɑnt/ /ju/"},{"chinese":"我想要你递给我我的书包","english":"I want you to hand me my school bag","soundmark":"/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"},{"chinese":"手机","english":"phone","soundmark":"/fon/"},{"chinese":"我的","english":"my","soundmark":"/maɪ/"},{"chinese":"我的手机","english":"my phone","soundmark":"/maɪ/ /fon/"},{"chinese":"递给我","english":"to hand me","soundmark":"/tə/ /hænd/ /mi/"},{"chinese":"递给我我的手机","english":"to hand me my phone","soundmark":"/tə/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"我想要你","english":"I want you","soundmark":"/aɪ/ /wɑnt/ /ju/"},{"chinese":"我想要你递给我我的手机","english":"I want you to hand me my phone","soundmark":"/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"需要","english":"need","soundmark":"/nid/"},{"chinese":"你需要","english":"you need","soundmark":"/ju/ /nid/"},{"chinese":"递给我我的手机","english":"to hand me my phone","soundmark":"/tə/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你需要递给我我的手机","english":"you need to hand me my phone","soundmark":"/ju/ /nid/ /tə/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你递给我我的手机","english":"you hand me my phone","soundmark":"/ju/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"递给我我的手机","english":"hand me my phone","soundmark":"/hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"一个香蕉","english":"a banana","soundmark":"/ə/ /bə'nænə/"},{"chinese":"递给我一个香蕉","english":"hand me a banana","soundmark":"/hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"我的包","english":"my bag","soundmark":"/maɪ/ /bæɡ/"},{"chinese":"递给我我的包","english":"hand me my bag","soundmark":"/hænd/ /mi/ /maɪ/ /bæɡ/"},{"chinese":"请求麻烦一下","english":"please","soundmark":"/pliz/"},{"chinese":"麻烦一下递给我我的包","english":"please hand me my bag","soundmark":"/pliz/ /hænd/ /mi/ /maɪ/ /bæɡ/"},{"chinese":"麻烦一下递给我一个香蕉","english":"please hand me a banana","soundmark":"/pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"麻烦一下递给我我的手机","english":"please hand me my phone","soundmark":"/pliz/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"可以","english":"can","soundmark":"/kən/"},{"chinese":"你可以","english":"you can","soundmark":"/ju/ /kən/"},{"chinese":"递给我我的手机","english":"to hand me my phone","soundmark":"/tə/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你可以递给我我的手机","english":"you can hand me my phone","soundmark":"/ju/ /kən/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你可以递给我我的手机吗？ can you hand me my phone？","english":"","soundmark":"/kən/ /ju/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你可以......吗？","english":"can you...?","soundmark":"/kən/ /ju/"},{"chinese":"一个香蕉","english":"a banana","soundmark":"/ə/ /bə'nænə/"},{"chinese":"递给我","english":"to hand me","soundmark":"/tə/ /hænd/ /mi/"},{"chinese":"递给我一个香蕉","english":"to hand me a banana","soundmark":"/tə/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"你可以递给我一个香蕉吗？ can you hand me a banana？","english":"","soundmark":"/kən/ /ju/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"请求麻烦一下","english":"please","soundmark":"/pliz/"},{"chinese":"你可以麻烦一下递给我我的手机吗？","english":"can you please hand me my phone?","soundmark":"/kən/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你可以麻烦一下......吗？","english":"can you please...?","soundmark":"/kən/ /ju/ /pliz/"},{"chinese":"递给我一个香蕉","english":"to hand me a banana","soundmark":"/tə/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"你可以麻烦一下递给我一个香蕉吗？","english":"can you please hand me a banana?","soundmark":"/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"可以","english":"can","soundmark":"/kən/"},{"chinese":"可以（礼貌版）","english":"could","soundmark":"/kʊd/"},{"chinese":"你可以麻烦一下递给我一个香蕉吗？","english":"can you please hand me a banana?","soundmark":"/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"你可以（礼貌版）麻烦一下递给我一个香蕉吗？","english":"could you please hand me a banana?","soundmark":"/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"},{"chinese":"你可以（礼貌版）麻烦一下......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"递给我我的手机","english":"to hand me my phone","soundmark":"/tə/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你可以（礼貌版）麻烦一下递给我我的手机吗？","english":"could you please hand me my phone?","soundmark":"/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"},{"chinese":"你可以（礼貌版）麻烦一下......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"递给我我的书包","english":"to hand me my school bag","soundmark":"/tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"},{"chinese":"你可以（礼貌版）麻烦一下递给我我的书包吗？","english":"could you please hand me my school bag?","soundmark":"/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"},{"chinese":"你可以（礼貌版）麻烦一下......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"帮助","english":"to help","soundmark":"/tə/ /hɛlp/"},{"chinese":"帮助我","english":"to help me","soundmark":"/tə/ /hɛlp/ /mi/"},{"chinese":"你可以（礼貌版）麻烦一下帮助我吗？","english":"could you please help me?","soundmark":"/kʊd/ /ju/ /pliz/ /hɛlp/ /mi/"},{"chinese":"告诉","english":"to tell","soundmark":"/tə/ /tɛl/"},{"chinese":"我","english":"me","soundmark":"/mi/"},{"chinese":"告诉我","english":"to tell me","soundmark":"/tə/ /tɛl/ /mi/"},{"chinese":"事实；真相","english":"the truth","soundmark":"/ðə/ /trʊθ/"},{"chinese":"告诉我真相","english":"to tell me the truth","soundmark":"/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"},{"chinese":"请问你可以......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"请问你可以告诉我真相吗？","english":"could you please tell me the truth?","soundmark":"/kʊd/ /ju/ /pliz/ /tɛl/ /mi/ /ðə/ /trʊθ/"},{"chinese":"离开","english":"to leave","soundmark":"/tə/ /liv/"},{"chinese":"我","english":"me","soundmark":"/mi/"},{"chinese":"离开我","english":"to leave me","soundmark":"/tə/ /liv/ /mi/"},{"chinese":"单独；一个人","english":"alone","soundmark":"/ə'lon/"},{"chinese":"离开我（让我变成）单独一个人","english":"to leave me alone","soundmark":"/tə/ /liv/ /mi/ /ə'lon/"},{"chinese":"请问你可以......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"请问你可以走开别烦我吗？","english":"could you please leave me alone?","soundmark":"/kʊd/ /ju/ /pliz/ /tə/ /liv/ /mi/ /ə'lon/"},{"chinese":"打电话","english":"to call","soundmark":"/tə/ /kɔl/"},{"chinese":"我","english":"me","soundmark":"/mi/"},{"chinese":"打电话给我","english":"to call me","soundmark":"/tə/ /kɔl/ /mi/"},{"chinese":"今晚","english":"tonight","soundmark":"/tə'naɪt/"},{"chinese":"今晚打电话给我","english":"to call me tonight","soundmark":"/tə/ /kɔl/ /mi/ /tə'naɪt/"},{"chinese":"请问你可以......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"请问你可以今晚打电话给我吗？","english":"could you please call me tonight?","soundmark":"/kʊd/ /ju/ /pliz/ /kɔl/ /mi/ /tə'naɪt/"},{"chinese":"给","english":"to give","soundmark":"/tə/ /ɡɪv/"},{"chinese":"我","english":"me","soundmark":"/mi/"},{"chinese":"给我","english":"to give me","soundmark":"/tə/ /ɡɪv/ /mi/"},{"chinese":"手","english":"hand","soundmark":"/hænd/"},{"chinese":"一只手","english":"a hand","soundmark":"/ə/ /hænd/"},{"chinese":"给我帮把手","english":"to give me a hand","soundmark":"/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"},{"chinese":"请问你可以......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"请问你可以给我帮把手吗？","english":"could you please give me a hand?","soundmark":"/kʊd/ /ju/ /pliz/ /ɡɪv/ /mi/ /ə/ /hænd/"},{"chinese":"打开","english":"to open","soundmark":"/tə/ /'opən/"},{"chinese":"门","english":"the door","soundmark":"/ðə/ /dɔr/"},{"chinese":"打开门","english":"to open the door","soundmark":"/tə/ /'opən/ /ðə/ /dɔr/"},{"chinese":"请问你可以......吗？","english":"could you please...?","soundmark":"/kʊd/ /ju/ /pliz/"},{"chinese":"请问你可以打开门吗","english":"could you please open the door?","soundmark":"/kʊd/ /ju/ /pliz/ /'opən/ /ðə/ /dɔr/"},{"chinese":"中文 原形 第三人称单数 过去式想要","english":"want wants","soundmark":"/wanted/"},{"chinese":"喜欢","english":"like likes","soundmark":"/liked/"},{"chinese":"有；(+to)不得不","english":"have has","soundmark":"/had/"},{"chinese":"计划","english":"plan plans","soundmark":"/planned/"},{"chinese":"需要","english":"need needs","soundmark":"/needed/"},{"chinese":"做","english":"do does","soundmark":"/did/"},{"chinese":"告诉","english":"tell tells","soundmark":"/told/"},{"chinese":"说话","english":"talk talks","soundmark":"/talked/"},{"chinese":"是","english":"be(am) is","soundmark":"/was/"},{"chinese":"是","english":"be(is ) is","soundmark":"/was/"},{"chinese":"是","english":"be(are) is","soundmark":"/were/"},{"chinese":"看到","english":"see sees","soundmark":"/saw/"},{"chinese":"吃","english":"eat eats","soundmark":"/ate/"},{"chinese":"喝","english":"drink drinks","soundmark":"/drank/"},{"chinese":"知道","english":"know knows","soundmark":"/knew/"},{"chinese":"忘记","english":"forget forgets","soundmark":"/forgot/"},{"chinese":"失去","english":"lose loses","soundmark":"/lost/"},{"chinese":"离开","english":"leave leaves","soundmark":"/left/"},{"chinese":"睡觉","english":"sleep sleeps","soundmark":"/slept/"},{"chinese":"明白","english":"understand understands","soundmark":"/understood/"},{"chinese":"买","english":"buy buys","soundmark":"/bought/"},{"chinese":"洗","english":"wash washes","soundmark":"/washed/"},{"chinese":"打电话","english":"call calls","soundmark":"/called/"},{"chinese":"帮助","english":"help helps","soundmark":"/helped/"},{"chinese":"相信","english":"believe believes","soundmark":"/believed/"},{"chinese":"学习","english":"study studies","soundmark":"/studied/"},{"chinese":"解释","english":"explain explains","soundmark":"/explained/"},{"chinese":"问","english":"ask asks","soundmark":"/asked/"},{"chinese":"飞","english":"fly flies","soundmark":"/flew/"},{"chinese":"阅读","english":"read reads","soundmark":"/read/"},{"chinese":"走路","english":"walk walks","soundmark":"/walked/"},{"chinese":"跳舞","english":"dance dances","soundmark":"/danced/"},{"chinese":"回答","english":"answer answers","soundmark":"/answered/"},{"chinese":"工作","english":"work works","soundmark":"/worked/"},{"chinese":"待在","english":"stay stays","soundmark":"/stayed/"},{"chinese":"支付","english":"pay pays","soundmark":"/paid/"},{"chinese":"旅行","english":"travel travels","soundmark":"/traveled/"},{"chinese":"给","english":"give gives","soundmark":"/gave/"},{"chinese":"达到","english":"get gets","soundmark":"/got/"},{"chinese":"锁","english":"lock locks","soundmark":"/locked/"},{"chinese":"记得","english":"remember remembers","soundmark":"/Remembered/"},{"chinese":"清理","english":"clean cleans","soundmark":"/cleaned/"},{"chinese":"找到","english":"find finds","soundmark":"/found/"},{"chinese":"关闭","english":"close closes","soundmark":"/closed/"},{"chinese":"教","english":"teach teaches","soundmark":"/taught/"},{"chinese":"展示","english":"show shows","soundmark":"/showed/"},{"chinese":"让","english":"let lets","soundmark":"/let/"},{"chinese":"休息","english":"rest rests","soundmark":"/rested/"},{"chinese":"用","english":"use uses","soundmark":"/used/"},{"chinese":"做饭","english":"cook cooks","soundmark":"/cooked/"},{"chinese":"去","english":"go goes","soundmark":"/went/"},{"chinese":"决定","english":"decide decides","soundmark":"/decided/"},{"chinese":"驾驶","english":"drive drives","soundmark":"/drove/"},{"chinese":"改变","english":"change changes","soundmark":"/changed/"},{"chinese":"尝试","english":"try tries","soundmark":"/tried/"},{"chinese":"停止","english":"stop stops","soundmark":"/Stopped/"},{"chinese":"参加","english":"join joins","soundmark":"/joined/"},{"chinese":"邀请","english":"invite invites","soundmark":"/invited/"},{"chinese":"拒绝","english":"refuse refuses","soundmark":"/refused/"},{"chinese":"接受","english":"accept accepts","soundmark":"/accepted/"},{"chinese":"学习","english":"learn learns","soundmark":"/learnt/"},{"chinese":"完成","english":"finish finishes","soundmark":"/finished/"},{"chinese":"看","english":"watch watches","soundmark":"/watched/"},{"chinese":"游泳","english":"swim swims","soundmark":"/swam/"},{"chinese":"掌握","english":"master masters","soundmark":"/mastered/"},{"chinese":"购物","english":"shop shops","soundmark":"/shopped/"},{"chinese":"等待","english":"wait waits","soundmark":"/waited/"},{"chinese":"讨论","english":"discuss discusses","soundmark":"/Discussed/"},{"chinese":"面对","english":"face faces","soundmark":"/faced/"},{"chinese":"解决","english":"solve solves","soundmark":"/solved/"},{"chinese":"疑惑","english":"wonder wonders","soundmark":"/Wondered/"},{"chinese":"递给","english":"hand hands","soundmark":"/handed/"}]
+[
+	{
+		"chinese": "手",
+		"english": "hand",
+		"soundmark": "/hænd/"
+	},
+	{
+		"chinese": "手（复数）",
+		"english": "hands",
+		"soundmark": "/hændz/"
+	},
+	{
+		"chinese": "递给",
+		"english": "to hand",
+		"soundmark": "/tə/ /hænd/"
+	},
+	{
+		"chinese": "他",
+		"english": "him",
+		"soundmark": "/hɪm/"
+	},
+	{
+		"chinese": "递给他",
+		"english": "to hand him",
+		"soundmark": "/tə/ /hænd/ /hɪm/"
+	},
+	{
+		"chinese": "香蕉",
+		"english": "banana",
+		"soundmark": "/bə'nænə/"
+	},
+	{
+		"chinese": "一个香蕉",
+		"english": "a banana",
+		"soundmark": "/ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "递给他一个香蕉",
+		"english": "to hand him a banana",
+		"soundmark": "/tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "他想要",
+		"english": "he wants",
+		"soundmark": "/hi/ /wɑnts/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "他想要我",
+		"english": "he wants me",
+		"soundmark": "/hi/ /wɑnts/ /mi/"
+	},
+	{
+		"chinese": "递给他一个香蕉",
+		"english": "to hand him a banana",
+		"soundmark": "/tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "他想要我递给他一个香蕉",
+		"english": "he wants me to hand him a banana",
+		"soundmark": "/hi/ /wɑnts/ /mi/ /tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "手机",
+		"english": "phone",
+		"soundmark": "/fon/"
+	},
+	{
+		"chinese": "他的",
+		"english": "his",
+		"soundmark": "/hɪz/"
+	},
+	{
+		"chinese": "他的手机",
+		"english": "his phone",
+		"soundmark": "/hɪz/ /fon/"
+	},
+	{
+		"chinese": "递给他",
+		"english": "to hand him",
+		"soundmark": "/tə/ /hænd/ /hɪm/"
+	},
+	{
+		"chinese": "递给他他的手机",
+		"english": "to hand him his phone",
+		"soundmark": "/tə/ /hænd/ /hɪm/ /hɪz/ /fon/"
+	},
+	{
+		"chinese": "他想要我",
+		"english": "he wants me",
+		"soundmark": "/hi/ /wɑnts/ /mi/"
+	},
+	{
+		"chinese": "他想要我递给他他的手机",
+		"english": "he wants me to hand him his phone",
+		"soundmark": "/hi/ /wɑnts/ /mi/ /tə/ /hænd/ /hɪm/ /hɪz/ /fon/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "递给我",
+		"english": "to hand me",
+		"soundmark": "/tə/ /hænd/ /mi/"
+	},
+	{
+		"chinese": "包",
+		"english": "bag",
+		"soundmark": "/bæɡ/"
+	},
+	{
+		"chinese": "你的",
+		"english": "your",
+		"soundmark": "/jʊr/"
+	},
+	{
+		"chinese": "你的包",
+		"english": "your bag",
+		"soundmark": "/jʊr/ /bæɡ/"
+	},
+	{
+		"chinese": "递给我你的包",
+		"english": "to hand me your bag",
+		"soundmark": "/tə/ /hænd/ /mi/ /jʊr/ /bæɡ/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+	},
+	{
+		"chinese": "我想要你递给我你的包",
+		"english": "I want you to hand me your bag",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /jʊr/ /bæɡ/"
+	},
+	{
+		"chinese": "学校",
+		"english": "school",
+		"soundmark": "/skul/"
+	},
+	{
+		"chinese": "包",
+		"english": "bag",
+		"soundmark": "/bæɡ/"
+	},
+	{
+		"chinese": "书包",
+		"english": "school bag",
+		"soundmark": "/skul/ /bæɡ/"
+	},
+	{
+		"chinese": "你的",
+		"english": "your",
+		"soundmark": "/jʊr/"
+	},
+	{
+		"chinese": "你的书包",
+		"english": "your school bag",
+		"soundmark": "/jʊr/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "递给我",
+		"english": "to hand me",
+		"soundmark": "/tə/ /hænd/ /mi/"
+	},
+	{
+		"chinese": "递给我你的书包",
+		"english": "to hand me your school bag",
+		"soundmark": "/tə/ /hænd/ /mi/ /jʊr/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+	},
+	{
+		"chinese": "我想要你递给我你的书包",
+		"english": "I want you to hand me your school bag",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /jʊr/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的书包",
+		"english": "my school bag",
+		"soundmark": "/maɪ/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "递给我我的书包",
+		"english": "to hand me my school bag",
+		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+	},
+	{
+		"chinese": "我想要你递给我我的书包",
+		"english": "I want you to hand me my school bag",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "手机",
+		"english": "phone",
+		"soundmark": "/fon/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的手机",
+		"english": "my phone",
+		"soundmark": "/maɪ/ /fon/"
+	},
+	{
+		"chinese": "递给我",
+		"english": "to hand me",
+		"soundmark": "/tə/ /hænd/ /mi/"
+	},
+	{
+		"chinese": "递给我我的手机",
+		"english": "to hand me my phone",
+		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+	},
+	{
+		"chinese": "我想要你递给我我的手机",
+		"english": "I want you to hand me my phone",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"chinese": "你需要",
+		"english": "you need",
+		"soundmark": "/ju/ /nid/"
+	},
+	{
+		"chinese": "递给我我的手机",
+		"english": "to hand me my phone",
+		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你需要递给我我的手机",
+		"english": "you need to hand me my phone",
+		"soundmark": "/ju/ /nid/ /tə/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你递给我我的手机",
+		"english": "you hand me my phone",
+		"soundmark": "/ju/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "递给我我的手机",
+		"english": "hand me my phone",
+		"soundmark": "/hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "一个香蕉",
+		"english": "a banana",
+		"soundmark": "/ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "递给我一个香蕉",
+		"english": "hand me a banana",
+		"soundmark": "/hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "我的包",
+		"english": "my bag",
+		"soundmark": "/maɪ/ /bæɡ/"
+	},
+	{
+		"chinese": "递给我我的包",
+		"english": "hand me my bag",
+		"soundmark": "/hænd/ /mi/ /maɪ/ /bæɡ/"
+	},
+	{
+		"chinese": "请求麻烦一下",
+		"english": "please",
+		"soundmark": "/pliz/"
+	},
+	{
+		"chinese": "麻烦一下递给我我的包",
+		"english": "please hand me my bag",
+		"soundmark": "/pliz/ /hænd/ /mi/ /maɪ/ /bæɡ/"
+	},
+	{
+		"chinese": "麻烦一下递给我一个香蕉",
+		"english": "please hand me a banana",
+		"soundmark": "/pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "麻烦一下递给我我的手机",
+		"english": "please hand me my phone",
+		"soundmark": "/pliz/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "可以",
+		"english": "can",
+		"soundmark": "/kən/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kən/"
+	},
+	{
+		"chinese": "递给我我的手机",
+		"english": "to hand me my phone",
+		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你可以递给我我的手机",
+		"english": "you can hand me my phone",
+		"soundmark": "/ju/ /kən/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你可以递给我我的手机吗？",
+		"english": "can you hand me my phone",
+		"soundmark": "/kən/ /ju/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你可以......吗？",
+		"english": "can you",
+		"soundmark": "/kən/ /ju/"
+	},
+	{
+		"chinese": "一个香蕉",
+		"english": "a banana",
+		"soundmark": "/ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "递给我",
+		"english": "to hand me",
+		"soundmark": "/tə/ /hænd/ /mi/"
+	},
+	{
+		"chinese": "递给我一个香蕉",
+		"english": "to hand me a banana",
+		"soundmark": "/tə/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "你可以递给我一个香蕉吗？",
+		"english": "can you hand me a banana",
+		"soundmark": "/kən/ /ju/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "请求麻烦一下",
+		"english": "please",
+		"soundmark": "/pliz/"
+	},
+	{
+		"chinese": "你可以麻烦一下递给我我的手机吗？",
+		"english": "can you please hand me my phone",
+		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你可以麻烦一下......吗？",
+		"english": "can you please",
+		"soundmark": "/kən/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "递给我一个香蕉",
+		"english": "to hand me a banana",
+		"soundmark": "/tə/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "你可以麻烦一下递给我一个香蕉吗？",
+		"english": "can you please hand me a banana",
+		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "可以",
+		"english": "can",
+		"soundmark": "/kən/"
+	},
+	{
+		"chinese": "可以（礼貌版）",
+		"english": "could",
+		"soundmark": "/kʊd/"
+	},
+	{
+		"chinese": "你可以麻烦一下递给我一个香蕉吗？",
+		"english": "can you please hand me a banana",
+		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下递给我一个香蕉吗？",
+		"english": "could you please hand me a banana",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "递给我我的手机",
+		"english": "to hand me my phone",
+		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下递给我我的手机吗？",
+		"english": "could you please hand me my phone",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "递给我我的书包",
+		"english": "to hand me my school bag",
+		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下递给我我的书包吗？",
+		"english": "could you please hand me my school bag",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "帮助",
+		"english": "to help",
+		"soundmark": "/tə/ /hɛlp/"
+	},
+	{
+		"chinese": "帮助我",
+		"english": "to help me",
+		"soundmark": "/tə/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "你可以（礼貌版）麻烦一下帮助我吗？",
+		"english": "could you please help me",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "to tell me",
+		"soundmark": "/tə/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "事实；真相",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉我真相",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "请问你可以......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "请问你可以告诉我真相吗？",
+		"english": "could you please tell me the truth",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "离开",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "离开我",
+		"english": "to leave me",
+		"soundmark": "/tə/ /liv/ /mi/"
+	},
+	{
+		"chinese": "单独；一个人",
+		"english": "alone",
+		"soundmark": "/ə'lon/"
+	},
+	{
+		"chinese": "离开我（让我变成）单独一个人",
+		"english": "to leave me alone",
+		"soundmark": "/tə/ /liv/ /mi/ /ə'lon/"
+	},
+	{
+		"chinese": "请问你可以......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "请问你可以走开别烦我吗？",
+		"english": "could you please leave me alone",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /tə/ /liv/ /mi/ /ə'lon/"
+	},
+	{
+		"chinese": "打电话",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "打电话给我",
+		"english": "to call me",
+		"soundmark": "/tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "今晚",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"chinese": "今晚打电话给我",
+		"english": "to call me tonight",
+		"soundmark": "/tə/ /kɔl/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "请问你可以......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "请问你可以今晚打电话给我吗？",
+		"english": "could you please call me tonight",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /kɔl/ /mi/ /tə'naɪt/"
+	},
+	{
+		"chinese": "给",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "给我",
+		"english": "to give me",
+		"soundmark": "/tə/ /ɡɪv/ /mi/"
+	},
+	{
+		"chinese": "手",
+		"english": "hand",
+		"soundmark": "/hænd/"
+	},
+	{
+		"chinese": "一只手",
+		"english": "a hand",
+		"soundmark": "/ə/ /hænd/"
+	},
+	{
+		"chinese": "给我帮把手",
+		"english": "to give me a hand",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"chinese": "请问你可以......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "请问你可以给我帮把手吗？",
+		"english": "could you please give me a hand",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"chinese": "打开",
+		"english": "to open",
+		"soundmark": "/tə/ /'opən/"
+	},
+	{
+		"chinese": "门",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
+	},
+	{
+		"chinese": "打开门",
+		"english": "to open the door",
+		"soundmark": "/tə/ /'opən/ /ðə/ /dɔr/"
+	},
+	{
+		"chinese": "请问你可以......吗？",
+		"english": "could you please",
+		"soundmark": "/kʊd/ /ju/ /pliz/"
+	},
+	{
+		"chinese": "请问你可以打开门吗",
+		"english": "could you please open the door",
+		"soundmark": "/kʊd/ /ju/ /pliz/ /'opən/ /ðə/ /dɔr/"
+	}
+]
