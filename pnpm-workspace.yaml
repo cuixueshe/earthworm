@@ -2,3 +2,4 @@ packages:
   - 'apps/*'
   - 'libs/*'
   - 'scripts/*'
+  - 'packages/*'

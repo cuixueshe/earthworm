@@ -6,5 +6,8 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsup"
+    },
+    "dependencies": {
+        "drizzle-orm": "^0.30.3"
     }
 }
