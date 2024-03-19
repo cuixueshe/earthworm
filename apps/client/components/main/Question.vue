@@ -145,7 +145,7 @@ function handleKeydown(e: KeyboardEvent) {
     submitAnswer(() => {
       showAnswer();
     });
-    reutrn ;
+    return;
   }
 
   handleKeyboardInput(e, {

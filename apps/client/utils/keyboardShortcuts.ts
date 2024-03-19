@@ -1,3 +1,5 @@
+import { convertMacKey } from "~/composables/user/shortcutKey";
+
 // 添加全局快捷键
 interface Shortcut {
   key: string;
@@ -16,12 +18,19 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   });
 });
 
+function createShortcut(key: string, command: Shortcut["command"]): Shortcut {
+  return {
+    ...parseKey(key),
+    command,
+  };
+}
+
 function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
   return shortcuts.filter((shortcut) => {
     return (
       shortcut.ctrlKey === event.ctrlKey &&
       shortcut.metaKey === event.metaKey &&
-      shortcut.key === event.key.toLowerCase()
+      shortcut.key === convertMacKey(event.key).toLowerCase()
     );
   });
 }
@@ -30,9 +39,9 @@ function parseKey(keyString: string) {
   const keys = keyString.toLowerCase().split("+");
 
   const result = {
-    key: keys.pop()!, // 取数组最后一个元素作为 key
+    key: keys[keys.length - 1], // 取数组最后一个元素作为 key
     ctrlKey: keys.includes("ctrl"),
-    metaKey: keys.includes("command") || keys.includes("meta"),
+    metaKey: keys.includes("command"),
   };
 
   return result;
@@ -40,17 +49,8 @@ function parseKey(keyString: string) {
 
 export function registerShortcut(key: string, command: Shortcut["command"]) {
   const shortcut = createShortcut(key, command);
-
   shortcuts.push(shortcut);
-
   return shortcut;
-}
-
-function createShortcut(key: string, command: Shortcut["command"]): Shortcut {
-  return {
-    ...parseKey(key),
-    command,
-  };
 }
 
 export function cancelShortcut(key: string, command: Function): void;
