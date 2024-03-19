@@ -5,8 +5,8 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 import { injectHttpStatusErrorHandler } from "~/api/http";
-import { useUserStore } from "~/store/user";
 import Message from "~/components/main/Message/Message";
+import { useUserStore } from "~/store/user";
 useHttpStatusError();
 
 function useHttpStatusError() {
@@ -34,3 +34,4 @@ function useHttpStatusError() {
 </script>
 
 <style scoped></style>
+~/components/main/Message/useMessage

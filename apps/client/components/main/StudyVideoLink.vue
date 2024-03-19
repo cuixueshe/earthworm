@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, withDefaults } from "vue";
+import { computed, withDefaults } from "vue";
 import { getCourseLink } from "~/utils/courseLinks";
 
 const NOTE_TIP = "边学边练：点击跳转至星荣英语笔记";
