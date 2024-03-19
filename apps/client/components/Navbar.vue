@@ -112,7 +112,7 @@
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
-import Message from "~/components/main/Message/Message";
+import Message from "~/components/main/Message/useMessage";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
@@ -156,4 +156,3 @@ const handleLogoutConfirm = () => {
 };
 </script>
 <style></style>
-~/components/main/Message/useMessage

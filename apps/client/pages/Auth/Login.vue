@@ -62,7 +62,7 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
-import Message from "~/components/main/Message/Message";
+import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
@@ -83,4 +83,3 @@ const handleLogin = handleSubmit(async (values) => {
   }
 });
 </script>
-~/components/main/Message/useMessage
