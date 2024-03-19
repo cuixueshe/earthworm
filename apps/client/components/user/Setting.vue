@@ -2,7 +2,10 @@
   <div class="space-y-4">
     <section>
       <h2 class="text-lg">快捷键设置</h2>
-      <n-table :bordered="false" :single-line="false">
+      <n-table
+        :bordered="false"
+        :single-line="false"
+      >
         <thead>
           <tr>
             <th>命令</th>
@@ -15,14 +18,24 @@
             <td>play sound</td>
             <td>{{ shortcutKeys.sound }}</td>
             <td>
-              <n-button text @click="handleEdit('sound')"> 编辑 </n-button>
+              <n-button
+                text
+                @click="handleEdit('sound')"
+              >
+                编辑
+              </n-button>
             </td>
           </tr>
           <tr>
             <td>show answer</td>
             <td>{{ shortcutKeys.answer }}</td>
             <td>
-              <n-button text @click="handleEdit('answer')"> 编辑 </n-button>
+              <n-button
+                text
+                @click="handleEdit('answer')"
+              >
+                编辑
+              </n-button>
             </td>
           </tr>
         </tbody>
@@ -75,10 +88,16 @@
     </section>
   </div>
 
-  <dialog class="modal mt-[-8vh]" :open="showModal">
-    <div ref="dialogBoxRef" class="modal-box max-w-[48rem]">
-      <h3 class="font-bold text-center mb-4">
-        先按所需的组合键，再按 Enter 键。
+  <dialog
+    class="modal mt-[-8vh]"
+    :open="showModal"
+  >
+    <div
+      ref="dialogBoxRef"
+      class="modal-box max-w-[48rem] min-h-[156px]"
+    >
+      <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
+        请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
       <div
         class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center"
@@ -94,19 +113,22 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
-import {
-  useShortcutDialogMode,
-  useShortcutKeyMode,
-} from "~/composables/user/shortcutKey";
+import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
-const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
-const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeys } =
-  useShortcutKeyMode();
+const dialogBoxRef = ref<HTMLElement | null>(null);
+const {
+  showModal,
+  shortcutKeys,
+  shortcutKeyStr,
+  shortcutKeyTip,
+  handleEdit,
+  handleCloseDialog,
+  handleKeydown,
+} = useShortcutKeyMode();
 
-let dialogBoxRef = ref<HTMLElement | null>(null);
 function pointDialogOutside(e: MouseEvent) {
   if (!showModal.value) return;
   if (!dialogBoxRef.value?.contains(e.target as Node)) {
@@ -115,16 +137,15 @@ function pointDialogOutside(e: MouseEvent) {
 }
 
 const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
-const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer();
-
 const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
-  document.addEventListener("keyup", handleKeyup);
+  document.addEventListener("keydown", handleKeydown);
 });
 onUnmounted(() => {
   document.removeEventListener("mouseup", pointDialogOutside);
-  document.removeEventListener("keyup", handleKeyup);
+  document.removeEventListener("keydown", handleKeydown);
 });
 </script>
