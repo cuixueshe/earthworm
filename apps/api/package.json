@@ -20,7 +20,7 @@
     "test:cov": "jest --coverage"
   },
   "dependencies": {
-    "@earthworm/shared": "workspace:*",
+    "@earthworm/schema": "workspace:^",
     "@nestjs-modules/ioredis": "^2.0.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.1.1",

@@ -1,5 +1,5 @@
 import { db } from "@earthworm/db";
-import { statement } from "@shared/schema";
+import { statement } from "@earthworm/schema";
 import fs from "node:fs";
 import path from "node:path";
 

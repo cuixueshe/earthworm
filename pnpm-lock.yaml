@@ -42,9 +42,9 @@ importers:
 
   apps/api:
     dependencies:
-      '@earthworm/shared':
-        specifier: workspace:*
-        version: link:../../libs/shared
+      '@earthworm/schema':
+        specifier: workspace:^
+        version: link:../../packages/schema
       '@nestjs-modules/ioredis':
         specifier: ^2.0.1
         version: 2.0.1(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(ioredis@5.3.2)(reflect-metadata@0.1.14)(rxjs@7.8.1)
@@ -285,6 +285,12 @@ importers:
         specifier: ^3.9.2
         version: 3.9.2
 
+  packages/schema:
+    dependencies:
+      drizzle-orm:
+        specifier: ^0.30.3
+        version: 0.30.3(mysql2@3.9.2)
+
   packages/xingrong-course:
     dependencies:
       '@earthworm/db':
@@ -304,8 +310,11 @@ importers:
   packages/xingrong-courses:
     dependencies:
       '@earthworm/db':
-        specifier: link:../db
+        specifier: workspace:^
         version: link:../db
+      '@earthworm/schema':
+        specifier: workspace:^
+        version: link:../schema
       inquirer:
         specifier: ^9.2.13
         version: 9.2.13

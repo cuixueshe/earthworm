@@ -10,7 +10,8 @@
         "pdf:parse": "tsx src/parsePDF/index.ts"
     },
     "dependencies": {
-        "@earthworm/db": "link:../db",
+        "@earthworm/db": "workspace:^",
+        "@earthworm/schema": "workspace:^",
         "inquirer": "^9.2.13",
         "pdf-parse": "^1.1.1"
     },

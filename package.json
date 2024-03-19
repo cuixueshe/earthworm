@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "schema:build": "pnpm -F @earthworm/shared build",
+    "schema:build": "pnpm -F @earthworm/schema build",
     "db:init": "pnpm -F @earthworm/db run init",
     "db:init:test": "pnpm -F @earthworm/db run init:test",
     "db:init:test:ci": "pnpm -F @earthworm/db run init:ci",

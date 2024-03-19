@@ -1,5 +1,5 @@
 import { db } from "@earthworm/db";
-import { course as courseSchema } from "@shared/schema";
+import { course as courseSchema } from "@earthworm/schema";
 import fs from "fs";
 import path from "path";
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));

@@ -1,7 +1,7 @@
-import { Injectable, Inject } from '@nestjs/common';
-import { DB, DbType } from '../global/providers/db.provider';
-import { userProgress } from '@earthworm/shared';
+import { userProgress } from '@earthworm/schema';
+import { Inject, Injectable } from '@nestjs/common';
 import { eq } from 'drizzle-orm';
+import { DB, DbType } from '../global/providers/db.provider';
 import { RankService } from '../rank/rank.service';
 
 @Injectable()
