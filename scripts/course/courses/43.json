@@ -1,667 +1,712 @@
 [
 	{
-		"chinese": "清洗",
-		"english": "to wash",
-		"soundmark": "/tə/ /wɑʃ/"
+		"chinese": "锁",
+		"english": "to lock",
+		"soundmark": "/tə/ /lɑk/"
 	},
 	{
-		"chinese": "清洗(ing形式)",
-		"english": "washing",
-		"soundmark": "/'wɑʃɪŋ/"
+		"chinese": "门",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
 	},
 	{
-		"chinese": "正在清洗",
-		"english": "be washing",
-		"soundmark": "/bi/ /'wɑʃɪŋ/"
+		"chinese": "锁门",
+		"english": "to lock the door",
+		"soundmark": "/lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我(现在)正在清洗",
-		"english": "I am washing",
-		"soundmark": "/aɪ/ /æm/ /'wɑʃɪŋ/"
+		"chinese": "忘记",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
 	},
 	{
-		"chinese": "我的车",
-		"english": "my car",
-		"soundmark": "/maɪ/ /kɑr/"
+		"chinese": "忘记锁门",
+		"english": "to forget to lock the door",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我(现在)正在清洗我的车",
-		"english": "I am washing my car",
-		"soundmark": "/aɪ/ /æm/ /'wɑʃɪŋ/ /maɪ/ /kɑr/"
+		"chinese": "忘记锁门(ing形式)",
+		"english": "forgetting to lock the door",
+		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "正在清洗",
-		"english": "be washing",
-		"soundmark": "/bi/ /'wɑʃɪŋ/"
+		"chinese": "承认",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "清洗(ed形式)",
-		"english": "washed",
-		"soundmark": "/wɑʃt/"
+		"chinese": "他们承认",
+		"english": "they admit",
+		"soundmark": "/ðe/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "被清洗了",
-		"english": "be washed",
-		"soundmark": "/bi/ /wɑʃt/"
+		"chinese": "他们(过去)承认",
+		"english": "they admitted",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "我的车",
-		"english": "my car",
-		"soundmark": "/maɪ/ /kɑr/"
+		"chinese": "他们(过去)承认忘记锁门",
+		"english": "they admitted forgetting to lock the door",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我的车被清洗了",
-		"english": "my car is washed",
-		"soundmark": "/maɪ/ /kɑr/ /ɪz/ /wɑʃt/"
+		"chinese": "灯",
+		"english": "light",
+		"soundmark": "/laɪt/"
 	},
 	{
-		"chinese": "我(已经)洗完了我的车",
-		"english": "I have washed my car",
-		"soundmark": "/aɪ/ /hæv/ /wɑʃt/ /maɪ/ /kɑr/"
+		"chinese": "红色",
+		"english": "red",
+		"soundmark": "/rɛd/"
 	},
 	{
-		"chinese": "手",
-		"english": "hand",
-		"soundmark": "/hænd/"
+		"chinese": "一个红灯",
+		"english": "a red light",
+		"soundmark": "/ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "我(已经)洗完了我的手",
-		"english": "I have washed my hands",
-		"soundmark": "/aɪ/ /hæv/ /wɑʃt/ /maɪ/ /hændz/"
+		"chinese": "跑",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
 	},
 	{
-		"chinese": "完成",
-		"english": "to finish",
-		"soundmark": "/tə/ /'fɪnɪʃ/"
+		"chinese": "闯一个红灯",
+		"english": "to run a red light",
+		"soundmark": "/tə/ /rʌn/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "完成(ed形式)",
-		"english": "finished",
-		"soundmark": "/'fɪnɪʃt/"
+		"chinese": "闯一个红灯(ing形式)",
+		"english": "running a red light",
+		"soundmark": "/'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "我(已经)完成了",
-		"english": "I have finished",
-		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/"
+		"chinese": "驾驶",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "家庭作业",
-		"english": "homework",
-		"soundmark": "/'homwɝk/"
+		"chinese": "司机",
+		"english": "the driver",
+		"soundmark": "/ðə/ /'draɪvɚ/"
 	},
 	{
-		"chinese": "我的家庭作业",
-		"english": "my homework",
-		"soundmark": "/maɪ/ /'homwɝk/"
+		"chinese": "司机(过去)承认",
+		"english": "the driver admitted",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "我(已经)完成了我的家庭作业",
-		"english": "I have finished my homework",
-		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/ /maɪ/ /'homwɝk/"
+		"chinese": "司机(过去)承认闯一个红灯",
+		"english": "the driver admitted running a red light",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/ /'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
+		"chinese": "答案",
+		"english": "the answers",
+		"soundmark": "/ði/ /'ænsɚz/"
 	},
 	{
-		"chinese": "我们(已经)完成了",
-		"english": "we have finished",
-		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/"
+		"chinese": "复制",
+		"english": "to copy",
+		"soundmark": "/tə/ /ˈkɑpɪ/"
 	},
 	{
-		"chinese": "项目",
-		"english": "project",
-		"soundmark": "/ˈprɑdʒɛkt/"
+		"chinese": "抄答案",
+		"english": "to copy the answers",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/"
 	},
 	{
-		"chinese": "我们的项目",
-		"english": "our project",
-		"soundmark": "/'aʊɚ/ /ˈprɑdʒɛkt/"
+		"chinese": "同学",
+		"english": "classmate",
+		"soundmark": "/'klæsmet/"
 	},
 	{
-		"chinese": "我们(已经)完成了我们的项目",
-		"english": "we have finished our project",
-		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/ /'aʊɚ/ /ˈprɑdʒɛkt/"
-	},
-	{
-		"chinese": "去",
-		"english": "to go",
-		"soundmark": "/tə/ /ɡo/"
-	},
-	{
-		"chinese": "公园",
-		"english": "the park",
-		"soundmark": "/ðə/ /pɑrk/"
-	},
-	{
-		"chinese": "去公园",
-		"english": "to go to the park",
-		"soundmark": "/tə/ /ɡo/ /tə/ /ðə/ /pɑrk/"
-	},
-	{
-		"chinese": "去(ed形式)",
-		"english": "gone",
-		"soundmark": "/ɡɔn/"
-	},
-	{
-		"chinese": "他们(已经)去了",
-		"english": "they have gone",
-		"soundmark": "/ðe/ /hæv/ /ɡɔn/"
-	},
-	{
-		"chinese": "他们(已经)去了公园",
-		"english": "they have gone to the park",
-		"soundmark": "/ðe/ /hæv/ /ɡɔn/ /tə/ /ðə/ /pɑrk/"
-	},
-	{
-		"chinese": "阅读",
-		"english": "to read",
-		"soundmark": "/tə/ /rid/"
-	},
-	{
-		"chinese": "读(ed形式)",
-		"english": "read",
-		"soundmark": "/rid/"
-	},
-	{
-		"chinese": "我(已经)读过",
-		"english": "I have read",
-		"soundmark": "/aɪ/ /hæv/ /rid/"
-	},
-	{
-		"chinese": "那本书",
-		"english": "that book",
-		"soundmark": "/ðæt/ /bʊk/"
-	},
-	{
-		"chinese": "我(已经)读过那本书",
-		"english": "I have read that book",
-		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/"
-	},
-	{
-		"chinese": "次",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "两次",
-		"english": "two times",
-		"soundmark": "/tu/ /taɪmz/"
-	},
-	{
-		"chinese": "两次",
-		"english": "twice",
-		"soundmark": "/twaɪs/"
-	},
-	{
-		"chinese": "我(已经)读过那本书两次了",
-		"english": "I have read that book twice",
-		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/ /twaɪs/"
-	},
-	{
-		"chinese": "学到",
-		"english": "to learn",
-		"soundmark": "/tə/ /lɝn/"
-	},
-	{
-		"chinese": "学到(ed形式)",
-		"english": "learned",
-		"soundmark": "/lɝnd/"
-	},
-	{
-		"chinese": "我(已经)学到了",
-		"english": "I have learned",
-		"soundmark": "/aɪ/ /hæv/ /lɝnd/"
-	},
-	{
-		"chinese": "大量的",
-		"english": "lot",
-		"soundmark": "/lɑt/"
-	},
-	{
-		"chinese": "很多",
-		"english": "a lot",
-		"soundmark": "/ə/ /lɑt/"
-	},
-	{
-		"chinese": "我(已经)学到了很多",
-		"english": "I have learned a lot",
-		"soundmark": "/aɪ/ /hæv/ /lɝnd/ /ə/ /lɑt/"
-	},
-	{
-		"chinese": "课程",
-		"english": "course",
-		"soundmark": "/kɔrs/"
-	},
-	{
-		"chinese": "这个课程",
-		"english": "this course",
-		"soundmark": "/ðɪs/ /kɔrs/"
-	},
-	{
-		"chinese": "从",
+		"chinese": "从......那里",
 		"english": "from",
 		"soundmark": "/frʌm/"
 	},
 	{
-		"chinese": "从这个课程",
-		"english": "from this course",
-		"soundmark": "/frʌm/ /ðɪs/ /kɔrs/"
+		"chinese": "从一个同学那里",
+		"english": "from a classmate",
+		"soundmark": "/frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "我从这个课程(已经)学到了很多",
-		"english": "I have learned a lot from this course",
-		"soundmark": "/aɪ/ /hæv/ /lɝnd/ /ə/ /lɑt/ /frʌm/ /ðɪs/ /kɔrs/"
+		"chinese": "从一个同学那里抄答案",
+		"english": "to copy the answers from a classmate",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "提高",
-		"english": "to improve",
-		"soundmark": "/tə/ /ɪmˈpruv/"
+		"chinese": "从一个同学那里抄答案(ing形式)",
+		"english": "copying the answers from a classmate",
+		"soundmark": "/ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "提高(ed形式)",
-		"english": "improved",
-		"soundmark": "/ɪmˈpruvd/"
+		"chinese": "那个学生",
+		"english": "the student",
+		"soundmark": "/ðə/ /'studnt/"
 	},
 	{
-		"chinese": "你(已经)提高了",
-		"english": "you have improved",
-		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/"
+		"chinese": "那个学生(过去)承认",
+		"english": "the student admitted",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "英文",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
+		"chinese": "那个学生(过去)承认从一个学生那里抄答案",
+		"english": "the student admitted copying the answers from a classmate",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/ /ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "你的英文",
-		"english": "your English",
-		"soundmark": "/jʊr/ /ˈɪŋɡlɪʃ/"
+		"chinese": "迟到的",
+		"english": "late",
+		"soundmark": "/let/"
 	},
 	{
-		"chinese": "你(已经)提高了你的英文",
-		"english": "you have improved your English",
-		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/ /jʊr/ /ˈɪŋɡlɪʃ/"
+		"chinese": "她是迟到的",
+		"english": "she is late",
+		"soundmark": "/ʃi/ /ɪz/ /let/"
 	},
 	{
-		"chinese": "大量的",
-		"english": "lot",
-		"soundmark": "/lɑt/"
+		"chinese": "碰面；见到",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "很多",
-		"english": "a lot",
-		"soundmark": "/ə/ /lɑt/"
+		"chinese": "会议",
+		"english": "meeting",
+		"soundmark": "/'mitɪŋ/"
 	},
 	{
-		"chinese": "你(已经)提高了你的英文很多",
-		"english": "you have improved your English a lot",
-		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/ /jʊr/ /ˈɪŋɡlɪʃ/ /ə/ /lɑt/"
+		"chinese": "为了；对于",
+		"english": "for",
+		"soundmark": "/fɚ/"
 	},
 	{
-		"chinese": "参观",
-		"english": "to visit",
-		"soundmark": "/tə/ /'vɪzɪt/"
+		"chinese": "对于这个会议",
+		"english": "for the meeting",
+		"soundmark": "/fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "参观(ed形式)",
-		"english": "visited",
-		"soundmark": "/'vɪzɪtɪd/"
+		"chinese": "她是迟到的对于这个会议",
+		"english": "she is late for the meeting",
+		"soundmark": "/ʃi/ /ɪz/ /let/ /fɚ/ /ðə/ /'mitɪŋ/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "我(已经)参观过",
-		"english": "I have visited",
-		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/"
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "墙",
-		"english": "wall",
-		"soundmark": "/wɔl/"
+		"chinese": "她(过去)承认是迟到的对于这个会议",
+		"english": "she admitted being late for the meeting",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /let/ /fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "伟大的",
-		"english": "great",
-		"soundmark": "/ɡret/"
+		"chinese": "说话",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
 	},
 	{
-		"chinese": "长城",
-		"english": "The Great Wall",
-		"soundmark": "/ðə/ /ɡret/ /wɔl/"
+		"chinese": "演讲",
+		"english": "speaking",
+		"soundmark": "/'spikɪŋ/"
 	},
 	{
-		"chinese": "我(已经)参观过长城",
-		"english": "I have visited The Great Wall",
-		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/ /ðə/ /ɡret/ /wɔl/"
+		"chinese": "公开的",
+		"english": "public",
+		"soundmark": "/ˈpʌblɪk/"
 	},
 	{
-		"chinese": "两次",
-		"english": "twice",
-		"soundmark": "/twaɪs/"
+		"chinese": "公开演讲",
+		"english": "public speaking",
+		"soundmark": "/ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "我(已经)参观过长城两次了",
-		"english": "I have visited the Great Wall twice",
-		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/ /ðə/ /ɡret/ /wɔl/ /twaɪs/"
+		"chinese": "害怕的",
+		"english": "afraid",
+		"soundmark": "/ə'fred/"
 	},
 	{
-		"chinese": "写",
-		"english": "to write",
-		"soundmark": "/raɪt/"
+		"chinese": "她是害怕的",
+		"english": "she is afraid",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/"
 	},
 	{
-		"chinese": "写(ed形式)",
-		"english": "written",
-		"soundmark": "/'rɪtn/"
+		"chinese": "她害怕公开演讲",
+		"english": "she is afraid of public speaking",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "我(已经)写了",
-		"english": "I have written",
-		"soundmark": "/aɪ/ /hæv/ /'rɪtn/"
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "书",
-		"english": "book",
-		"soundmark": "/bʊk/"
+		"chinese": "她(过去)承认",
+		"english": "she admitted",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "三本书",
-		"english": "three books",
-		"soundmark": "/θri/ /bʊks/"
+		"chinese": "她(过去)承认害怕公开演讲",
+		"english": "she admitted being afraid of public speaking",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "我(已经)写了三本书",
-		"english": "I have written three books",
-		"soundmark": "/aɪ/ /hæv/ /'rɪtn/ /θri/ /bʊks/"
+		"chinese": "食物",
+		"english": "food",
+		"soundmark": "/fud/"
 	},
 	{
-		"chinese": "职业生涯",
-		"english": "career",
-		"soundmark": "/kəˈrɪr/"
+		"chinese": "垃圾",
+		"english": "junk",
+		"soundmark": "/dʒʌŋk/"
 	},
 	{
-		"chinese": "我的职业生涯",
-		"english": "my career",
-		"soundmark": "/maɪ/ /kəˈrɪr/"
+		"chinese": "垃圾食物",
+		"english": "junk food",
+		"soundmark": "/dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "在我的职业生涯里",
-		"english": "in my career",
-		"soundmark": "/ɪn/ /maɪ/ /kəˈrɪr/"
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "我在我的职业生涯里(已经)写了三本书",
-		"english": "I have written three books in my career",
-		"soundmark": "/aɪ/ /hæv/ /'rɪtn/ /θri/ /bʊks/ /ɪn/ /maɪ/ /kəˈrɪr/"
+		"chinese": "吃垃圾食物",
+		"english": "to eat junk food",
+		"soundmark": "/tə/ /it/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "教",
-		"english": "to teach",
-		"soundmark": "/tə/ /titʃ/"
+		"chinese": "吃垃圾食物(ing形式)",
+		"english": "eating junk food",
+		"soundmark": "/'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "教(ed形式)",
-		"english": "taught",
-		"soundmark": "/tɔt/"
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "我(已经)教了",
-		"english": "I have taught",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/"
+		"chinese": "她避免",
+		"english": "she avoids",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/"
 	},
 	{
-		"chinese": "我(已经)教了你",
-		"english": "I have taught you",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/ /ju/"
+		"chinese": "她避免吃垃圾食物",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "每一个",
-		"english": "every",
-		"soundmark": "/'ɛvri/"
+		"chinese": "生活",
+		"english": "life",
+		"soundmark": "/laɪf/"
 	},
 	{
-		"chinese": "东西",
-		"english": "thing",
-		"soundmark": "/θɪŋ/"
+		"chinese": "方式",
+		"english": "style",
+		"soundmark": "/staɪl/"
 	},
 	{
-		"chinese": "一切",
-		"english": "everything",
-		"soundmark": "/'ɛvriθɪŋ/"
+		"chinese": "生活方式",
+		"english": "lifestyle",
+		"soundmark": "/'laɪfstaɪl/"
 	},
 	{
-		"chinese": "我知道",
-		"english": "I know",
-		"soundmark": "/aɪ/ /no/"
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
 	},
 	{
-		"chinese": "我知道的一切",
-		"english": "everything I know",
-		"soundmark": "/'ɛvriθɪŋ/ /aɪ/ /no/"
+		"chinese": "一个健康的生活方式",
+		"english": "a healthy lifestyle",
+		"soundmark": "/ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "我(已经)教了你我知道的一切",
-		"english": "I have taught you everything I know",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/ /ju/ /'ɛvriθɪŋ/ /aɪ/ /no/"
+		"chinese": "保持",
+		"english": "to maintain",
+		"soundmark": "/tə/ /menˈten/"
 	},
 	{
-		"chinese": "我(已经)教了",
-		"english": "I have taught",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/"
+		"chinese": "保持一个健康的生活方式",
+		"english": "to maintain a healthy lifestyle",
+		"soundmark": "/tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "我自己",
-		"english": "myself",
-		"soundmark": "/maɪ'sɛlf/"
+		"chinese": "她避免吃垃圾食物",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "我(已经)教了我自己",
-		"english": "I have taught myself",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/"
+		"chinese": "她避免吃垃圾食物来保持一个健康的生活方式",
+		"english": "she avoids eating junk food to maintain a healthy lifestyle",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/ /tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "玩",
-		"english": "to play",
-		"soundmark": "/tə/ /ple/"
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "钢琴",
-		"english": "the piano",
-		"soundmark": "/ðə/ /pɪ'æno/"
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "弹钢琴",
-		"english": "to play the piano",
-		"soundmark": "/tə/ /ple/ /ðə/ /pɪ'æno/"
+		"chinese": "告诉事实",
+		"english": "to tell the truth",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "如何",
-		"english": "how",
-		"soundmark": "/haʊ/"
+		"chinese": "告诉事实(ing形式)",
+		"english": "telling the truth",
+		"soundmark": "/ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "如何弹钢琴",
-		"english": "how to play the piano",
-		"soundmark": "/haʊ/ /tə/ /ple/ /ðə/ /pɪ'æno/"
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "我(已经)自学了",
-		"english": "I have taught myself",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/"
+		"chinese": "她(过去)避免",
+		"english": "she avoided",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/"
 	},
 	{
-		"chinese": "我(已经)自学了如何弹钢琴",
-		"english": "I have taught myself how to play the piano",
-		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/ /haʊ/ /tə/ /ple/ /ðə/ /pɪ'æno/"
+		"chinese": "她(过去)避免告诉事实",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "居住",
-		"english": "to live",
-		"soundmark": "/tə/ /lɪv/"
+		"chinese": "说谎",
+		"english": "to lie",
+		"soundmark": "/tə/ /laɪ/"
 	},
 	{
-		"chinese": "居住(ed形式)",
-		"english": "lived",
-		"soundmark": "/lɪvd/"
+		"chinese": "说谎(ing形式)",
+		"english": "lying",
+		"soundmark": "/'laɪɪŋ/"
 	},
 	{
-		"chinese": "我(已经)居住了",
-		"english": "I have lived",
-		"soundmark": "/aɪ/ /hæv/ /lɪvd/"
+		"chinese": "父母",
+		"english": "parents",
+		"soundmark": "/'pɛrənts/"
 	},
 	{
-		"chinese": "城市",
-		"english": "city",
-		"soundmark": "/'sɪti/"
+		"chinese": "她的父母",
+		"english": "her parents",
+		"soundmark": "/hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "这个城市",
-		"english": "this city",
-		"soundmark": "/ðɪs/ /'sɪti/"
+		"chinese": "向她的父母说谎(ing形式)",
+		"english": "lying to her parents",
+		"soundmark": "/'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "在这个城市里",
-		"english": "in this city",
-		"soundmark": "/ɪn/ /ðɪs/ /'sɪti/"
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "我(已经)在这个城市里居住了",
-		"english": "I have lived in this city",
-		"soundmark": "/aɪ/ /hæv/ /lɪvd/ /ɪn/ /ðɪs/ /'sɪti/"
+		"chinese": "通过向她的父母说谎",
+		"english": "by lying to her parents",
+		"soundmark": "/baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "年",
-		"english": "year",
-		"soundmark": "/jɪr/"
+		"chinese": "她(过去)避免告诉事实",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "五年",
-		"english": "five years",
-		"soundmark": "/faɪv/ /jɪrz/"
+		"chinese": "她通过向她的父母说谎来(过去)避免告诉事实",
+		"english": "she avoided telling the truth by lying to her parents",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/ /baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "我(已经)在这个城市里居住了五年了",
-		"english": "I have lived in this city for five years",
-		"soundmark": "/aɪ/ /hæv/ /lɪvd/ /ɪn/ /ðɪs/ /'sɪti/ /fɚ/ /faɪv/ /jɪrz/"
+		"chinese": "伤害",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
 	},
 	{
-		"chinese": "工作",
-		"english": "to work",
-		"soundmark": "/tə/ /wɝk/"
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "工作(ed形式)",
-		"english": "worked",
-		"soundmark": "/wɝkt/"
+		"chinese": "伤害她",
+		"english": "to hurt her",
+		"soundmark": "/tə/ /hɝt/ /hɚ/"
 	},
 	{
-		"chinese": "我(已经)工作了",
-		"english": "I have worked",
-		"soundmark": "/aɪ/ /hæv/ /wɝkt/"
+		"chinese": "伤害她(ing形式)",
+		"english": "hurting her",
+		"soundmark": "/ˈhɝtɪŋ/ /hɚ/"
 	},
 	{
-		"chinese": "公司",
-		"english": "company",
-		"soundmark": "/ˈkʌmpəni/"
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "那个公司",
-		"english": "that company",
-		"soundmark": "/ðæt/ /ˈkʌmpəni/"
+		"chinese": "我(过去)避免",
+		"english": "I avoided",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/"
 	},
 	{
-		"chinese": "在那个公司",
-		"english": "at that company",
-		"soundmark": "/ət/ /ðæt/ /ˈkʌmpəni/"
+		"chinese": "我(过去)避免伤害她",
+		"english": "I avoided hurting her",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/"
 	},
 	{
-		"chinese": "我(已经)在那个公司工作了",
-		"english": "I have worked at that company",
-		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/"
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "年",
-		"english": "year",
-		"soundmark": "/jɪr/"
+		"chinese": "沉默",
+		"english": "silent",
+		"soundmark": "/'saɪlənt/"
 	},
 	{
-		"chinese": "三年",
-		"english": "three years",
-		"soundmark": "/θri/ /jɪrz/"
+		"chinese": "保持沉默",
+		"english": "to keep silent",
+		"soundmark": "/tə/ /kip/ /'saɪlənt/"
 	},
 	{
-		"chinese": "我(已经)在那个公司工作了三年了",
-		"english": "I have worked at that company for three years",
-		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/ /fɚ/ /θri/ /jɪrz/"
+		"chinese": "保持沉默(ing形式)",
+		"english": "keeping silent",
+		"soundmark": "/'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "自从......以来",
-		"english": "since",
-		"soundmark": "/sɪns/ /twenty twenty/ /'twɛnti/ /'twɛnti/"
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "自从2020年以来",
-		"english": "since 2020",
-		"soundmark": "/sɪns/ /'twɛnti/ /'twɛnti/"
+		"chinese": "通过保持沉默",
+		"english": "by keeping silent",
+		"soundmark": "/baɪ/ /'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "我自从2020年以来(已经)在那个公司工作了",
-		"english": "I have worked at that company since 2020",
-		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/ /sɪns/ /'twɛnti/ /'twɛnti/"
+		"chinese": "我通过保持沉默来(过去)避免伤害她",
+		"english": "I avoided hurting her by keeping silent",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/ /baɪ/ /'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "学习",
-		"english": "to study",
-		"soundmark": "/tə/ /'stʌdi/"
+		"chinese": "迟到的",
+		"english": "late",
+		"soundmark": "/let/"
 	},
 	{
-		"chinese": "学习(ed形式)",
-		"english": "studied",
-		"soundmark": "/ˈstʌdid/"
+		"chinese": "我是迟到的",
+		"english": "I am late",
+		"soundmark": "/aɪ/ /æm/ /let/"
 	},
 	{
-		"chinese": "我们(已经)学习了",
-		"english": "we have studied",
-		"soundmark": "/wi/ /hæv/ /ˈstʌdid/"
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "英文",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
+		"chinese": "我(过去)避免迟到",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
 	},
 	{
-		"chinese": "我们(已经)学习了英文",
-		"english": "we have studied English",
-		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/"
+		"chinese": "出租车",
+		"english": "taxi",
+		"soundmark": "/'tæksi/"
 	},
 	{
-		"chinese": "年",
-		"english": "year",
-		"soundmark": "/jɪr/"
+		"chinese": "乘坐",
+		"english": "to take",
+		"soundmark": "/tə/ /tek/"
 	},
 	{
-		"chinese": "三年",
-		"english": "three years",
-		"soundmark": "/θri/ /jɪrz/"
+		"chinese": "乘坐一辆出租车",
+		"english": "to take a taxi",
+		"soundmark": "/tə/ /tek/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "我们(已经)学习了英文三年了",
-		"english": "we have studied English for three years",
-		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/ /fɚ/ /θri/ /jɪrz/"
+		"chinese": "乘坐一辆出租车(ing形式)",
+		"english": "taking a taxi",
+		"soundmark": "/ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "自从......以来",
-		"english": "since",
-		"soundmark": "/sɪns/ /twenty twenty/ /'twɛnti/ /'twɛnti/"
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "自从2020年以来",
-		"english": "since 2020",
-		"soundmark": "/sɪns/ /'twɛnti/ /'twɛnti/"
+		"chinese": "通过乘坐一辆出租车",
+		"english": "by taking a taxi",
+		"soundmark": "/baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "我们自从2020年以来(已经)学习英文了",
-		"english": "we have studied English since 2020",
-		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/ /sɪns/ /'twɛnti/ /'twɛnti/"
+		"chinese": "我(过去)避免迟到",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
+	},
+	{
+		"chinese": "我通过乘坐一辆出租车来(过去)避免迟到",
+		"english": "I avoided being late by taking a taxi",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/ /baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "他避免",
+		"english": "he avoids",
+		"soundmark": "/hi/ /əˈvɔɪdz/"
+	},
+	{
+		"chinese": "抽烟",
+		"english": "to smoke",
+		"soundmark": "/tə/ /smok/"
+	},
+	{
+		"chinese": "抽烟(ing形式)",
+		"english": "smoking",
+		"soundmark": "/'smokɪŋ/"
+	},
+	{
+		"chinese": "他避免抽烟",
+		"english": "he avoids smoking",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/"
+	},
+	{
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
+	},
+	{
+		"chinese": "健康",
+		"english": "health",
+		"soundmark": "/hɛlθ/"
+	},
+	{
+		"chinese": "他的健康",
+		"english": "his health",
+		"soundmark": "/hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "保护",
+		"english": "to protect",
+		"soundmark": "/tə/ /prə'tɛkt/"
+	},
+	{
+		"chinese": "保护他的健康",
+		"english": "to protect his health",
+		"soundmark": "/tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "他避免抽烟来保护他的健康",
+		"english": "he avoids smoking to protect his health",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/ /tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "谎言",
+		"english": "lie",
+		"soundmark": "/laɪ/"
+	},
+	{
+		"chinese": "一个谎言",
+		"english": "a lie",
+		"soundmark": "/ə/ /laɪ/"
+	},
+	{
+		"chinese": "白色的",
+		"english": "white",
+		"soundmark": "/waɪt/"
+	},
+	{
+		"chinese": "一个善意的谎言",
+		"english": "a white lie",
+		"soundmark": "/ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "说一个善意的谎言",
+		"english": "to tell a white lie",
+		"soundmark": "/tə/ /tɛl/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "说一个善意的谎言(ing形式)",
+		"english": "telling a white lie",
+		"soundmark": "/ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "承认",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
+	},
+	{
+		"chinese": "他(过去)承认",
+		"english": "he admitted",
+		"soundmark": "/hi/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言(ing形式)",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "感觉",
+		"english": "to feel",
+		"soundmark": "/tə/ /fil/"
+	},
+	{
+		"chinese": "感情",
+		"english": "feelings",
+		"soundmark": "/'filɪŋz/"
+	},
+	{
+		"chinese": "某个人",
+		"english": "someone",
+		"soundmark": "/'sʌmwʌn/"
+	},
+	{
+		"chinese": "某个人的感情",
+		"english": "someone's feelings",
+		"soundmark": "/'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "伤害",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
+	},
+	{
+		"chinese": "伤害某个人的感情",
+		"english": "to hurt someone's feelings",
+		"soundmark": "/tə/ /hɝt/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "伤害某个人的感情(ing形式)",
+		"english": "hurting someone's feelings",
+		"soundmark": "/ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "避免伤害某个人的感情",
+		"english": "to avoid hurting someone's feelings",
+		"soundmark": "/tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言来避免伤害某个人的感情",
+		"english": "he admitted telling a white lie to avoid hurting someone's feelings",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /tə/ /ədˈmɪt/ /tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	}
 ]

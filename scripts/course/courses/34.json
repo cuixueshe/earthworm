@@ -1,168 +1,528 @@
 [
 	{
-		"chinese": "清洗",
-		"english": "to wash",
-		"soundmark": "/tə/ /wɔʃ/"
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "清洗（ed形式）",
-		"english": "washed",
-		"soundmark": "/wɔʃt/"
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "被清洗了",
-		"english": "be washed",
-		"soundmark": "/bi/ /wɔʃt/"
+		"chinese": "我在这里",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "这辆车",
-		"english": "the car",
-		"soundmark": "/ðə/ /kɑr/"
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "这辆车被清洗了",
-		"english": "the car is washed",
-		"soundmark": "/ðə/ /kɑr/ /ɪz/ /wɔʃt/"
+		"chinese": "我在这里",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
+		"chinese": "我想要在这里",
+		"english": "I want to be here",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "通过",
-		"english": "by",
-		"soundmark": "/baɪ/"
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "通过他",
-		"english": "by him",
-		"soundmark": "/baɪ/ /hɪm/"
+		"chinese": "我不想在这里",
+		"english": "I don't want to be here",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "这辆车通过他被清洗了",
-		"english": "the car is washed by him",
-		"soundmark": "/ðə/ /kɑr/ /ɪz/ /wɔʃt/ /baɪ/ /hɪm/"
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "这辆车（过去）被他清洗了",
-		"english": "the car was washed by him",
-		"soundmark": "/ðə/ /kɑr/ /wəz/ /wɔʃt/ /baɪ/ /hɪm/"
+		"chinese": "我不想去那里",
+		"english": "I don't want to be there",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "昨天",
-		"english": "yesterday",
-		"soundmark": "/'jɛstɚde/"
+		"chinese": "我想要去那里",
+		"english": "I want to be there",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "这辆车昨天被他清洗了",
-		"english": "the car was washed by him yesterday",
-		"soundmark": "/ðə/ /kɑr/ /wəz/ /wɔʃt/ /baɪ/ /hɪm/ /'jɛstɚde/"
+		"chinese": "我不想在这里我想要去那里",
+		"english": "I don't want to be here I want to be there",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "回答",
-		"english": "to answer",
-		"soundmark": "/tə/ /'ænsɚ/"
+		"chinese": "我在这里",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "回答（ed形式）",
-		"english": "answered",
-		"soundmark": "/'ænsɚd/"
+		"chinese": "当......时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "被回答了",
-		"english": "be answered",
-		"soundmark": "/bi/ /'ænsɚd/"
+		"chinese": "当我在这里的时候",
+		"english": "when I am here",
+		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "这个问题",
-		"english": "the question",
-		"soundmark": "/ðə/ /'kwɛstʃən/"
+		"chinese": "我想要去那里",
+		"english": "I want to be there",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "这个问题被回答了",
-		"english": "the question is answered",
-		"soundmark": "/ðə/ /'kwɛstʃən/ /ɪz/ /'ænsɚd/"
+		"chinese": "当我在这里的时候，我想要去那里",
+		"english": "when I am here I want to be there",
+		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "那个学生",
-		"english": "the student",
-		"soundmark": "/ðə/ /'studnt/"
+		"chinese": "当我(过去)在这里的时候，我(过去)想要去那里",
+		"english": "when I was here I wanted to be there",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /aɪ/ /wɑntɪd/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "通过那个学生",
-		"english": "by the student",
-		"soundmark": "/baɪ/ /ðə/ /'studnt/"
+		"chinese": "老师",
+		"english": "teacher",
+		"soundmark": "/'titʃɚ/"
 	},
 	{
-		"chinese": "这个问题被那个学生回答了",
-		"english": "the question is answered by the student",
-		"soundmark": "/ðə/ /'kwɛstʃən/ /ɪz/ /'ænsɚd/ /baɪ/ /ðə/ /'studnt/"
+		"chinese": "我是一名老师",
+		"english": "I am a teacher",
+		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "这个问题（过去）被那个学生回答了",
-		"english": "the question was answered by the student",
-		"soundmark": "/ðə/ /'kwɛstʃən/ /wəz/ /'ænsɚd/ /baɪ/ /ðə/ /'studnt/"
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "解决",
-		"english": "to solve",
-		"soundmark": "/tə/ /sɑlv/"
+		"chinese": "我想要成为一名老师",
+		"english": "I want to be a teacher",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "解决（ed形式）",
-		"english": "solved",
-		"soundmark": "/sɑlvd/"
+		"chinese": "富有的",
+		"english": "rich",
+		"soundmark": "/rɪtʃ/"
 	},
 	{
-		"chinese": "被解决了",
-		"english": "be solved",
-		"soundmark": "/bi/ /sɑlvd/"
+		"chinese": "我是富有的",
+		"english": "I am rich",
+		"soundmark": "/aɪ/ /æm/ /rɪtʃ/"
 	},
 	{
-		"chinese": "那个问题",
-		"english": "the problem",
-		"soundmark": "/ðə/ /'prɑbləm/"
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "那个问题被解决了",
-		"english": "the problem is solved",
-		"soundmark": "/ðə/ /'prɑbləm/ /ɪz/ /sɑlvd/"
+		"chinese": "我想要变得富有",
+		"english": "I want to be rich",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /rɪtʃ/"
 	},
 	{
-		"chinese": "那个问题（过去）被解决了",
-		"english": "the problem was solved",
-		"soundmark": "/ðə/ /'prɑbləm/ /wəz/ /sɑlvd/"
+		"chinese": "我在这里",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "紧急",
-		"english": "urgent",
-		"soundmark": "/'ɝdʒənt/"
+		"chinese": "我(过去)在这里",
+		"english": "I was here",
+		"soundmark": "/aɪ/ /wəz/ /hɪr/"
 	},
 	{
-		"chinese": "那个紧急的问题",
-		"english": "the urgent problem",
-		"soundmark": "/ðə/ /'ɝdʒənt/ /'prɑbləm/"
+		"chinese": "当......时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "那个紧急的问题（过去）被解决了",
-		"english": "the urgent problem was solved",
-		"soundmark": "/ðə/ /'ɝdʒənt/ /'prɑbləm/ /wəz/ /sɑlvd/"
+		"chinese": "当我(过去)在这里的时候",
+		"english": "when I was here",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/"
 	},
 	{
-		"chinese": "他们",
-		"english": "them",
-		"soundmark": "/ðəm/"
+		"chinese": "在......之前；以前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "通过他们",
-		"english": "by them",
-		"soundmark": "/baɪ/ /ðəm/"
+		"chinese": "当我以前在这里的时候",
+		"english": "when I was here before",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "那个紧急的问题（过去）被他们解决了",
-		"english": "the urgent problem was solved by them",
-		"soundmark": "/ðə/ /'ɝdʒənt/ /'prɑbləm/ /wəz/ /sɑlvd/ /baɪ/ /ðəm/"
+		"chinese": "注意到；察觉到",
+		"english": "to notice",
+		"soundmark": "/tə/ /ˈnotɪs/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我注意到",
+		"english": "I notice",
+		"soundmark": "/aɪ/ /ˈnotɪs/"
+	},
+	{
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"chinese": "我注意到那个",
+		"english": "I notice that",
+		"soundmark": "/aɪ/ /ˈnotɪs/ /ðæt/"
+	},
+	{
+		"chinese": "我(过去)注意到那个",
+		"english": "I noticed that",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/"
+	},
+	{
+		"chinese": "我(过去)没有注意到那个",
+		"english": "I didn't notice that",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/"
+	},
+	{
+		"chinese": "当我以前在这里的时候",
+		"english": "when I was here before",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
+	},
+	{
+		"chinese": "我(过去)没有注意那个当我以前在这里的时候",
+		"english": "I didn't notice that when I was here before",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/ /wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
+	},
+	{
+		"chinese": "我(过去)注意到",
+		"english": "I noticed",
+		"soundmark": "/aɪ/ /ˈnotɪst/"
+	},
+	{
+		"chinese": "某个东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "错误的",
+		"english": "wrong",
+		"soundmark": "/rɔŋ/"
+	},
+	{
+		"chinese": "错误的某个东西",
+		"english": "something wrong",
+		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "错误的某个东西在那里",
+		"english": "something wrong is there",
+		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/ /ɪz/ /ðɛr/"
+	},
+	{
+		"chinese": "存在",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"chinese": "存在错误的某个东西",
+		"english": "there is something wrong",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "这里有错误的某个东西",
+		"english": "there is something wrong here",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"chinese": "这里(过去)有错误的某个东西",
+		"english": "there was something wrong here",
+		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"chinese": "我(过去)注意到",
+		"english": "I noticed",
+		"soundmark": "/aɪ/ /ˈnotɪst/"
+	},
+	{
+		"chinese": "我(过去)注意到这里(过去)有错误的某个东西",
+		"english": "I noticed there was something wrong here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"chinese": "我(过去)注意到(那个)这里(过去)有错误的某个东西",
+		"english": "I noticed that there was something wrong here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"chinese": "不同的",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"chinese": "某个东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "不同的某个东西",
+		"english": "something different",
+		"soundmark": "/'sʌmθɪŋ/ /'dɪfrənt/"
+	},
+	{
+		"chinese": "存在不同的某个东西",
+		"english": "there is something different",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "这里有不同的某个东西",
+		"english": "there is something different here",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"chinese": "这里(过去)有不同的某个东西",
+		"english": "there was something different here",
+		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"chinese": "我(过去)注意到",
+		"english": "I noticed",
+		"soundmark": "/aɪ/ /ˈnotɪst/"
+	},
+	{
+		"chinese": "我(过去)注意到这里(过去)存在不同的某个东西",
+		"english": "I noticed there was something different here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"chinese": "我(过去)注意到(那个)这里(过去)存在不同的某个东西",
+		"english": "I noticed that there was something different here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"chinese": "不同的",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"chinese": "不同之处",
+		"english": "difference",
+		"soundmark": "/'dɪfrəns/"
+	},
+	{
+		"chinese": "在......之间",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"chinese": "和",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"chinese": "你和我",
+		"english": "you and me",
+		"soundmark": "/ju/ /ənd/ /mi/"
+	},
+	{
+		"chinese": "在你和我之间",
+		"english": "between you and me",
+		"soundmark": "/bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"chinese": "在你和我之间的不同",
+		"english": "difference between you and me",
+		"soundmark": "/'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"chinese": "大的",
+		"english": "big",
+		"soundmark": "/bɪɡ/"
+	},
+	{
+		"chinese": "一个大的不同",
+		"english": "a big difference",
+		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/"
+	},
+	{
+		"chinese": "在你和我之间的一个大的不同",
+		"english": "a big difference between you and me",
+		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "在你和我之间的一个大的不同在那里",
+		"english": "a big difference between you and me is there",
+		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/ /ɪz/ /ðɛr/"
+	},
+	{
+		"chinese": "存在",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"chinese": "存在在你和我之间的一个大的不同",
+		"english": "there is a big difference between you and me",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"chinese": "武器",
+		"english": "weapon",
+		"soundmark": "/ˈwɛpən/"
+	},
+	{
+		"chinese": "工具",
+		"english": "tool",
+		"soundmark": "/tul/"
+	},
+	{
+		"chinese": "一个武器和一个工具",
+		"english": "a weapon and a tool",
+		"soundmark": "/ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
+	},
+	{
+		"chinese": "在......之间",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"chinese": "在一个武器和一个工具之间",
+		"english": "between a weapon and a tool",
+		"soundmark": "/bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
+	},
+	{
+		"chinese": "存在一个大的不同",
+		"english": "there is a big difference",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/"
+	},
+	{
+		"chinese": "存在在一个武器和一个工具之间的一个大的不同",
+		"english": "there is a big difference between a weapon and a tool",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
+	},
+	{
+		"chinese": "正确",
+		"english": "right",
+		"soundmark": "/raɪt/"
+	},
+	{
+		"chinese": "错误",
+		"english": "wrong",
+		"soundmark": "/rɔŋ/"
+	},
+	{
+		"chinese": "正确和错误",
+		"english": "right and wrong",
+		"soundmark": "/raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"chinese": "在......之间",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"chinese": "在对和错之间",
+		"english": "between right and wrong",
+		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"chinese": "不同之处",
+		"english": "difference",
+		"soundmark": "/'dɪfrəns/"
+	},
+	{
+		"chinese": "那个不同之处(区别)",
+		"english": "the difference",
+		"soundmark": "/ðə/ /'dɪfrəns/"
+	},
+	{
+		"chinese": "在对和错之间的区别",
+		"english": "the difference between right and wrong",
+		"soundmark": "/ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"chinese": "知道",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "知道对与错的区别",
+		"english": "to know the difference between right and wrong",
+		"soundmark": "/tə/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"chinese": "我们知道",
+		"english": "we know",
+		"soundmark": "/wi/ /no/"
+	},
+	{
+		"chinese": "所有；全部",
+		"english": "all",
+		"soundmark": "/ɔl/"
+	},
+	{
+		"chinese": "我们都知道",
+		"english": "we all know",
+		"soundmark": "/wi/ /ɔl/ /no/"
+	},
+	{
+		"chinese": "我们都知道对与错的区别",
+		"english": "we all know the difference between right and wrong",
+		"soundmark": "/wi/ /ɔl/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"chinese": "你必须知道",
+		"english": "you have to know",
+		"soundmark": "/ju/ /hæv/ /tə/ /no/"
+	},
+	{
+		"chinese": "你必须知道对与错的区别",
+		"english": "you have to know the difference between right and wrong",
+		"soundmark": "/ju/ /hæv/ /tə/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
 		"chinese": "告诉",
@@ -170,748 +530,138 @@
 		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "告诉（ed形式）",
-		"english": "told",
-		"soundmark": "/told/"
+		"chinese": "区别",
+		"english": "the difference",
+		"soundmark": "/ðə/ /'dɪfrəns/"
 	},
 	{
-		"chinese": "被告诉",
-		"english": "be told",
-		"soundmark": "/bi/ /told/"
+		"chinese": "分辨区别",
+		"english": "to tell the difference",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/"
 	},
 	{
-		"chinese": "故事",
-		"english": "story",
-		"soundmark": "/'stɔri/"
+		"chinese": "在......之间",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
 	},
 	{
-		"chinese": "这个故事",
-		"english": "the story",
-		"soundmark": "/ðə/ /'stɔri/"
+		"chinese": "正确和错误",
+		"english": "right and wrong",
+		"soundmark": "/raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "这个故事被讲述",
-		"english": "the story is told",
-		"soundmark": "/ðə/ /'stɔri/ /ɪz/ /told/"
+		"chinese": "在对和错之间",
+		"english": "between right and wrong",
+		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "这个故事（过去）被讲述",
-		"english": "the story was told",
-		"soundmark": "/ðə/ /'stɔri/ /wəz/ /told/"
+		"chinese": "对与错的区别",
+		"english": "the difference between right and wrong",
+		"soundmark": "/ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "父亲",
-		"english": "father",
-		"soundmark": "/'fɑðɚ/"
+		"chinese": "分辨是非",
+		"english": "to tell the difference between right and wrong",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "爷爷",
-		"english": "grandfather",
-		"soundmark": "/'grænfɑðɚ/"
+		"chinese": "年龄大的；老的",
+		"english": "old",
+		"soundmark": "/old/"
 	},
 	{
-		"chinese": "我的爷爷",
-		"english": "my grandfather",
-		"soundmark": "/maɪ/ /'grænfɑðɚ/"
+		"chinese": "足够",
+		"english": "enough",
+		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "通过我的爷爷",
-		"english": "by my grandfather",
-		"soundmark": "/baɪ/ /maɪ/ /'grænfɑðɚ/"
+		"chinese": "足够年龄大",
+		"english": "old enough",
+		"soundmark": "/old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "这个故事（过去）被我的爷爷讲述",
-		"english": "the story was told by my grandfather",
-		"soundmark": "/ðə/ /'stɔri/ /wəz/ /told/ /baɪ/ /maɪ/ /'grænfɑðɚ/"
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
 	},
 	{
-		"chinese": "被告诉",
-		"english": "be told",
-		"soundmark": "/bi/ /told/"
+		"chinese": "你是足够年龄大的",
+		"english": "you are old enough",
+		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "她（过去）被告诉",
-		"english": "she was told",
-		"soundmark": "/ʃi/ /wəz/ /told/"
+		"chinese": "你是年龄大的足够分辨是非",
+		"english": "you are old enough to tell the difference between right and wrong",
+		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "喝",
-		"english": "to drink",
-		"soundmark": "/tə/ /drɪŋk/"
+		"chinese": "孩子",
+		"english": "child",
+		"soundmark": "/tʃaɪld/"
 	},
 	{
-		"chinese": "水",
-		"english": "water",
-		"soundmark": "/'wɔtɚ/"
+		"chinese": "孩子们",
+		"english": "children",
+		"soundmark": "/'tʃɪldrən/"
 	},
 	{
-		"chinese": "喝水",
-		"english": "to drink water",
-		"soundmark": "/tə/ /drɪŋk/ /'wɔtɚ/"
+		"chinese": "我们的",
+		"english": "our",
+		"soundmark": "/'aʊɚ/"
 	},
 	{
-		"chinese": "更多",
-		"english": "more",
-		"soundmark": "/mɔr/"
+		"chinese": "我们的孩子们",
+		"english": "our children",
+		"soundmark": "/'aʊɚ/ /'tʃɪldrən/"
 	},
 	{
-		"chinese": "喝更多的水",
-		"english": "to drink more water",
-		"soundmark": "/tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
+		"chinese": "教",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
 	},
 	{
-		"chinese": "她（过去）被告诉",
-		"english": "she was told",
-		"soundmark": "/ʃi/ /wəz/ /told/"
+		"chinese": "我们需要",
+		"english": "we need",
+		"soundmark": "/wi/ /nid/"
 	},
 	{
-		"chinese": "她（过去）被告诉喝更多的水",
-		"english": "she was told to drink more water",
-		"soundmark": "/ʃi/ /wəz/ /told/ /tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
+		"chinese": "我们需要教",
+		"english": "we need to teach",
+		"soundmark": "/wi/ /nid/ /tə/ /titʃ/"
 	},
 	{
-		"chinese": "医生",
-		"english": "the doctor",
-		"soundmark": "/ðə/ /'dɑktɚ/"
+		"chinese": "我们需要教我们的孩子们",
+		"english": "we need to teach our children",
+		"soundmark": "/wi/ /nid/ /tə/ /titʃ/ /'aʊɚ/ /'tʃɪldrən/"
 	},
 	{
-		"chinese": "通过医生",
-		"english": "by the doctor",
-		"soundmark": "/baɪ/ /ðə/ /'dɑktɚ/"
+		"chinese": "分辨区别",
+		"english": "to tell the difference",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/"
 	},
 	{
-		"chinese": "她被医生告诉",
-		"english": "she was told by the doctor",
-		"soundmark": "/ʃi/ /wəz/ /told/ /baɪ/ /ðə/ /'dɑktɚ/"
+		"chinese": "在对和错之间",
+		"english": "between right and wrong",
+		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "喝更多的水",
-		"english": "to drink more water",
-		"soundmark": "/tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
+		"chinese": "辨别是非",
+		"english": "to tell the difference between right and wrong",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "她（过去）被医生告诉喝更多的水",
-		"english": "she was told by the doctor to drink more water",
-		"soundmark": "/ʃi/ /wəz/ /told/ /baɪ/ /ðə/ /'dɑktɚ/ /tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "水",
-		"english": "water",
-		"soundmark": "/'wɔtɚ/"
+		"chinese": "如何辨别是非",
+		"english": "how to tell the difference between right and wrong",
+		"soundmark": "/haʊ/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},
 	{
-		"chinese": "浇水",
-		"english": "to water",
-		"soundmark": "/tə/ /'wɔtɚ/"
-	},
-	{
-		"chinese": "浇水（ed形式）",
-		"english": "watered",
-		"soundmark": "/'wɔtɚd/"
-	},
-	{
-		"chinese": "被浇水",
-		"english": "be watered",
-		"soundmark": "/bi/ /'wɔtɚd/"
-	},
-	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
-	},
-	{
-		"chinese": "将会被浇水",
-		"english": "will be watered",
-		"soundmark": "/wɪl/ /bi/ /'wɔtɚd/"
-	},
-	{
-		"chinese": "花",
-		"english": "flower",
-		"soundmark": "/'flaʊɚ/"
-	},
-	{
-		"chinese": "这些花",
-		"english": "the flowers",
-		"soundmark": "/ðə/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "这些花将会被浇水",
-		"english": "the flowers will be watered",
-		"soundmark": "/ðə/ /'flaʊɚz/ /wɪl/ /bi/ /'wɔtɚd/"
-	},
-	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
-	},
-	{
-		"chinese": "通过我",
-		"english": "by me",
-		"soundmark": "/baɪ/ /mi/"
-	},
-	{
-		"chinese": "这些花将会被我浇水",
-		"english": "the flowers will be watered by me",
-		"soundmark": "/ðə/ /'flaʊɚz/ /wɪl/ /bi/ /'wɔtɚd/ /baɪ/ /mi/"
-	},
-	{
-		"chinese": "说",
-		"english": "to speak",
-		"soundmark": "/tə/ /spik/"
-	},
-	{
-		"chinese": "演讲者",
-		"english": "speaker",
-		"soundmark": "/'spikɚ/"
-	},
-	{
-		"chinese": "那个演讲者",
-		"english": "the speaker",
-		"soundmark": "/ðə/ /'spikɚ/"
-	},
-	{
-		"chinese": "邀请",
-		"english": "to invite",
-		"soundmark": "/tə/ /ɪn'vaɪt/"
-	},
-	{
-		"chinese": "邀请（ed形式）",
-		"english": "invited",
-		"soundmark": "/ɪn'vaɪtɪd/"
-	},
-	{
-		"chinese": "被邀请",
-		"english": "be invited",
-		"soundmark": "/bi/ /ɪn'vaɪtɪd/"
-	},
-	{
-		"chinese": "那个演讲者被邀请了",
-		"english": "the speaker is invited",
-		"soundmark": "/ðə/ /'spikɚ/ /ɪz/ /ɪn'vaɪtɪd/"
-	},
-	{
-		"chinese": "那个演讲者（过去）被邀请了",
-		"english": "the speaker was invited",
-		"soundmark": "/ðə/ /'spikɚ/ /wəz/ /ɪn'vaɪtɪd/"
-	},
-	{
-		"chinese": "通过他们",
-		"english": "by them",
-		"soundmark": "/baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "那个演讲者（过去）被他们邀请了",
-		"english": "the speaker was invited by them",
-		"soundmark": "/ðə/ /'spikɚ/ /wəz/ /ɪn'vaɪtɪd/ /baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "邀请",
-		"english": "to invite",
-		"soundmark": "/tə/ /ɪn'vaɪt/"
-	},
-	{
-		"chinese": "邀请（名词）",
-		"english": "invitation",
-		"soundmark": "/ɪnvɪ'teʃən/"
-	},
-	{
-		"chinese": "那个邀请",
-		"english": "the invitation",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
-	},
-	{
-		"chinese": "接受",
-		"english": "to accept",
-		"soundmark": "/tə/ /ək'sɛpt/"
-	},
-	{
-		"chinese": "接受（ed形式）",
-		"english": "accepted",
-		"soundmark": "/ək'sɛptɪd/"
-	},
-	{
-		"chinese": "被接受了",
-		"english": "be accepted",
-		"soundmark": "/bi/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "那个邀请被接受了",
-		"english": "the invitation is accepted",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /ɪz/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "那个邀请（过去）被接受了",
-		"english": "the invitation was accepted",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wəz/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "通过他们",
-		"english": "by them",
-		"soundmark": "/baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "那个邀请（过去）被他们接受了",
-		"english": "the invitation was accepted by them",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "加入",
-		"english": "to join",
-		"soundmark": "/tə/ /dʒɔɪn/"
-	},
-	{
-		"chinese": "团队",
-		"english": "team",
-		"soundmark": "/tim/"
-	},
-	{
-		"chinese": "我们的团队",
-		"english": "our team",
-		"soundmark": "/'aʊɚ/ /tim/"
-	},
-	{
-		"chinese": "加入我们的团队",
-		"english": "to join our team",
-		"soundmark": "/tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
-	},
-	{
-		"chinese": "那个邀请",
-		"english": "the invitation",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
-	},
-	{
-		"chinese": "加入我们团队的那个邀请",
-		"english": "the invitation to join our team",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
-	},
-	{
-		"chinese": "被接受了",
-		"english": "be accepted",
-		"soundmark": "/bi/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "加入我们团队的那个邀请（过去）被接受了",
-		"english": "the invitation to join our team was accepted",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/ /wəz/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "通过他们",
-		"english": "by them",
-		"soundmark": "/baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "加入我们团队的那个邀请（过去）被他们接受了",
-		"english": "the invitation to join our team was accepted by them",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "被接受",
-		"english": "be accepted",
-		"soundmark": "/bi/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
-	},
-	{
-		"chinese": "将会被接受",
-		"english": "will be accepted",
-		"soundmark": "/wɪl/ /bi/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "那个挑战",
-		"english": "the challenge",
-		"soundmark": "/ðə/ /ˈtʃælɪndʒ/"
-	},
-	{
-		"chinese": "那个挑战将会被接受",
-		"english": "the challenge will be accepted",
-		"soundmark": "/ðə/ /ˈtʃælɪndʒ/ /wɪl/ /bi/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "通过我们",
-		"english": "by us",
-		"soundmark": "/baɪ/ /ʌs/"
-	},
-	{
-		"chinese": "那个挑战将会被我们接受",
-		"english": "the challenge will be accepted by us",
-		"soundmark": "/ðə/ /ˈtʃælɪndʒ/ /wɪl/ /bi/ /ək'sɛptɪd/ /baɪ/ /ʌs/"
-	},
-	{
-		"chinese": "完成",
-		"english": "to finish",
-		"soundmark": "/tə/ /'fɪnɪʃ/"
-	},
-	{
-		"chinese": "完成（ed形式）",
-		"english": "finished",
-		"soundmark": "/'fɪnɪʃt/"
-	},
-	{
-		"chinese": "被完成",
-		"english": "be finished",
-		"soundmark": "/bi/ /'fɪnɪʃt/"
-	},
-	{
-		"chinese": "应该",
-		"english": "should",
-		"soundmark": "/ʃʊd/"
-	},
-	{
-		"chinese": "应该被完成",
-		"english": "should be finished",
-		"soundmark": "/ʃʊd/ /bi/ /'fɪnɪʃt/"
-	},
-	{
-		"chinese": "家庭作业",
-		"english": "the homework",
-		"soundmark": "/ðə/ /'homwɝk/"
-	},
-	{
-		"chinese": "家庭作业应该被完成",
-		"english": "the homework should be finished",
-		"soundmark": "/ðə/ /'homwɝk/ /ʃʊd/ /bi/ /'fɪnɪʃt/"
-	},
-	{
-		"chinese": "通过你",
-		"english": "by you",
-		"soundmark": "/baɪ/ /ju/"
-	},
-	{
-		"chinese": "家庭作业应该被你完成",
-		"english": "the homework should be finished by you",
-		"soundmark": "/ðə/ /'homwɝk/ /ʃʊd/ /bi/ /'fɪnɪʃt/ /baɪ/ /ju/"
-	},
-	{
-		"chinese": "晚饭",
-		"english": "dinner",
-		"soundmark": "/'dɪnɚ/"
-	},
-	{
-		"chinese": "在......之前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
-	},
-	{
-		"chinese": "在晚饭之前",
-		"english": "before dinner",
-		"soundmark": "/bɪ'fɔr/ /'dɪnɚ/"
-	},
-	{
-		"chinese": "家庭作业应该在晚饭之前被你完成",
-		"english": "the homework should be finished by you before dinner",
-		"soundmark": "/ðə/ /'homwɝk/ /ʃʊd/ /bi/ /'fɪnɪʃt/ /baɪ/ /ju/ /bɪ'fɔr/ /'dɪnɚ/"
-	},
-	{
-		"chinese": "烹饪；做饭",
-		"english": "to cook",
-		"soundmark": "/tə/ /kʊk/"
-	},
-	{
-		"chinese": "烹饪（ed形式）",
-		"english": "cooked",
-		"soundmark": "/kʊkt/"
-	},
-	{
-		"chinese": "被烹饪",
-		"english": "be cooked",
-		"soundmark": "/bi/ /kʊkt/"
-	},
-	{
-		"chinese": "母亲",
-		"english": "mother",
-		"soundmark": "/'mʌðɚ/"
-	},
-	{
-		"chinese": "我的母亲",
-		"english": "my mother",
-		"soundmark": "/maɪ/ /'mʌðɚ/"
-	},
-	{
-		"chinese": "通过我的母亲",
-		"english": "by my mother",
-		"soundmark": "/baɪ/ /maɪ/ /'mʌðɚ/"
-	},
-	{
-		"chinese": "被我妈烹饪",
-		"english": "be cooked by my mother",
-		"soundmark": "/bi/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
-	},
-	{
-		"chinese": "晚饭",
-		"english": "dinner",
-		"soundmark": "/'dɪnɚ/"
-	},
-	{
-		"chinese": "这顿晚饭",
-		"english": "the dinner",
-		"soundmark": "/ðə/ /'dɪnɚ/"
-	},
-	{
-		"chinese": "这顿晚饭是被我妈做的",
-		"english": "the dinner is cooked by my mother",
-		"soundmark": "/ðə/ /'dɪnɚ/ /ɪz/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
-	},
-	{
-		"chinese": "这顿晚饭（过去）是被我妈做的",
-		"english": "the dinner was cooked by my mother",
-		"soundmark": "/ðə/ /'dɪnɚ/ /wəz/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
-	},
-	{
-		"chinese": "打破",
-		"english": "to break",
-		"soundmark": "/tə/ /brek/"
-	},
-	{
-		"chinese": "打破（ed形式）",
-		"english": "broken",
-		"soundmark": "/'brokən/"
-	},
-	{
-		"chinese": "被打破",
-		"english": "be broken",
-		"soundmark": "/bi/ /'brokən/"
-	},
-	{
-		"chinese": "窗户",
-		"english": "window",
-		"soundmark": "/'wɪndo/"
-	},
-	{
-		"chinese": "那个窗户",
-		"english": "the window",
-		"soundmark": "/ðə/ /'wɪndo/"
-	},
-	{
-		"chinese": "那个窗户被打破了",
-		"english": "the window is broken",
-		"soundmark": "/ðə/ /'wɪndo/ /ɪz/ /'brokən/"
-	},
-	{
-		"chinese": "石头",
-		"english": "stone",
-		"soundmark": "/ston/"
-	},
-	{
-		"chinese": "通过",
-		"english": "by",
-		"soundmark": "/baɪ/"
-	},
-	{
-		"chinese": "通过一个石头",
-		"english": "by a stone",
-		"soundmark": "/baɪ/ /ə/ /ston/"
-	},
-	{
-		"chinese": "那个窗户被一个石头打破了",
-		"english": "the window is broken by a stone",
-		"soundmark": "/ðə/ /'wɪndo/ /ɪz/ /'brokən/ /baɪ/ /ə/ /ston/"
-	},
-	{
-		"chinese": "那个窗户（过去）被一个石头打破了",
-		"english": "the window was broken by a stone",
-		"soundmark": "/ðə/ /'wɪndo/ /wəz/ /'brokən/ /baɪ/ /ə/ /ston/"
-	},
-	{
-		"chinese": "关闭",
-		"english": "to close",
-		"soundmark": "/tə/ /kloz/"
-	},
-	{
-		"chinese": "关闭（ed形式）",
-		"english": "closed",
-		"soundmark": "/klozd/"
-	},
-	{
-		"chinese": "被关闭",
-		"english": "be closed",
-		"soundmark": "/bi/ /klozd/"
-	},
-	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
-	},
-	{
-		"chinese": "将会被关闭",
-		"english": "will be closed",
-		"soundmark": "/wɪl/ /bi/ /klozd/"
-	},
-	{
-		"chinese": "那个窗户",
-		"english": "the window",
-		"soundmark": "/ðə/ /'wɪndo/"
-	},
-	{
-		"chinese": "那个窗户将会被关闭",
-		"english": "the window will be closed",
-		"soundmark": "/ðə/ /'wɪndo/ /wɪl/ /bi/ /klozd/"
-	},
-	{
-		"chinese": "通过我",
-		"english": "by me",
-		"soundmark": "/baɪ/ /mi/"
-	},
-	{
-		"chinese": "那个窗户将会被我关闭",
-		"english": "the window will be closed by me",
-		"soundmark": "/ðə/ /'wɪndo/ /wɪl/ /bi/ /klozd/ /baɪ/ /mi/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "保持（ed形式）",
-		"english": "kept",
-		"soundmark": "/kɛpt/"
-	},
-	{
-		"chinese": "被保持",
-		"english": "be kept",
-		"soundmark": "/bi/ /kɛpt/"
-	},
-	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
-	},
-	{
-		"chinese": "将会被保持",
-		"english": "will be kept",
-		"soundmark": "/wɪl/ /bi/ /kɛpt/"
-	},
-	{
-		"chinese": "秘密",
-		"english": "secret",
-		"soundmark": "/'sikrət/"
-	},
-	{
-		"chinese": "这个秘密",
-		"english": "the secret",
-		"soundmark": "/ðə/ /'sikrət/"
-	},
-	{
-		"chinese": "这个秘密将会被保持",
-		"english": "the secret will be kept",
-		"soundmark": "/ðə/ /'sikrət/ /wɪl/ /bi/ /kɛpt/"
-	},
-	{
-		"chinese": "通过他",
-		"english": "by him",
-		"soundmark": "/baɪ/ /hɪm/"
-	},
-	{
-		"chinese": "这个秘密将会被他保持",
-		"english": "the secret will be kept by him",
-		"soundmark": "/ðə/ /'sikrət/ /wɪl/ /bi/ /kɛpt/ /baɪ/ /hɪm/"
-	},
-	{
-		"chinese": "保存；拯救",
-		"english": "to save",
-		"soundmark": "/tə/ /sev/"
-	},
-	{
-		"chinese": "拯救（ed形式）",
-		"english": "saved",
-		"soundmark": "/sevd/"
-	},
-	{
-		"chinese": "被拯救",
-		"english": "be saved",
-		"soundmark": "/bi/ /sevd/"
-	},
-	{
-		"chinese": "将会被拯救",
-		"english": "will be saved",
-		"soundmark": "/wɪl/ /bi/ /sevd/"
-	},
-	{
-		"chinese": "世界",
-		"english": "the world",
-		"soundmark": "/ðə/ /wɝld/"
-	},
-	{
-		"chinese": "世界将会被拯救",
-		"english": "the world will be saved",
-		"soundmark": "/ðə/ /wɝld/ /wɪl/ /bi/ /sevd/"
-	},
-	{
-		"chinese": "通过他们",
-		"english": "by them",
-		"soundmark": "/baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "世界将会被他们拯救",
-		"english": "the world will be saved by them",
-		"soundmark": "/ðə/ /wɝld/ /wɪl/ /bi/ /sevd/ /baɪ/ /ðəm/"
-	},
-	{
-		"chinese": "脚",
-		"english": "foot",
-		"soundmark": "/fʊt/"
-	},
-	{
-		"chinese": "球",
-		"english": "ball",
-		"soundmark": "/bɔl/"
-	},
-	{
-		"chinese": "足球",
-		"english": "football",
-		"soundmark": "/'fʊtbɔl/"
-	},
-	{
-		"chinese": "比赛",
-		"english": "match",
-		"soundmark": "/mætʃ/"
-	},
-	{
-		"chinese": "足球比赛",
-		"english": "football match",
-		"soundmark": "/'fʊtbɔl/ /mætʃ/"
-	},
-	{
-		"chinese": "那场足球比赛",
-		"english": "the football match",
-		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/"
-	},
-	{
-		"chinese": "举行",
-		"english": "to hold",
-		"soundmark": "/tə/ /hold/"
-	},
-	{
-		"chinese": "举行（ed形式）",
-		"english": "held",
-		"soundmark": "/hɛld/"
-	},
-	{
-		"chinese": "被举行",
-		"english": "be held",
-		"soundmark": "/bi/ /hɛld/"
-	},
-	{
-		"chinese": "将会被举行",
-		"english": "will be held",
-		"soundmark": "/wɪl/ /bi/ /hɛld/"
-	},
-	{
-		"chinese": "那场足球比赛将会被举行",
-		"english": "the football match will be held",
-		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/ /wɪl/ /bi/ /hɛld/"
-	},
-	{
-		"chinese": "明天",
-		"english": "tomorrow",
-		"soundmark": "/tə'mɔro/"
-	},
-	{
-		"chinese": "那场足球比赛明天将会被举行",
-		"english": "the football match will be held tomorrow",
-		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/ /wɪl/ /bi/ /hɛld/ /tə'mɔro/"
+		"chinese": "我们需要教我们的孩子们如何辨别是非",
+		"english": "we need to teach our children how to tell the difference between right and wrong",
+		"soundmark": "/wi/ /nid/ /tə/ /titʃ/ /'aʊɚ/ /'tʃɪldrən/ /haʊ/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	}
 ]

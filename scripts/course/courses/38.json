@@ -1,563 +1,443 @@
 [
 	{
-		"chinese": "锁",
-		"english": "to lock",
-		"soundmark": "/tə/ /lɑk/"
+		"chinese": "球",
+		"english": "ball",
+		"soundmark": "/bɔl/"
 	},
 	{
-		"chinese": "门",
-		"english": "the door",
-		"soundmark": "/ðə/ /dɔr/"
+		"chinese": "篮子",
+		"english": "basket",
+		"soundmark": "/'bæskɪt/"
 	},
 	{
-		"chinese": "锁门",
-		"english": "to lock the door",
-		"soundmark": "/lɑk/ /ðə/ /dɔr/"
+		"chinese": "篮球",
+		"english": "basketball",
+		"soundmark": "/'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "忘记",
-		"english": "to forget",
-		"soundmark": "/tə/ /fɚ'ɡɛt/"
+		"chinese": "玩",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
 	},
 	{
-		"chinese": "忘记锁门",
-		"english": "to forget to lock the door",
-		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "打篮球",
+		"english": "to play basketball",
+		"soundmark": "/tə/ /ple/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "忘记锁门(ing形式)",
-		"english": "forgetting to lock the door",
-		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "承认",
-		"english": "to admit",
-		"soundmark": "/tə/ /ədˈmɪt/"
+		"chinese": "我想要打篮球",
+		"english": "I want to play basketball",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ple/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "他们承认",
-		"english": "they admit",
-		"soundmark": "/ðe/ /ədˈmɪt/"
+		"chinese": "我(过去)想要打篮球",
+		"english": "I wanted to play basketball",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /ple/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "他们(过去)承认",
-		"english": "they admitted",
-		"soundmark": "/ðe/ /ədˈmɪtɪd/"
+		"chinese": "使用",
+		"english": "to use",
+		"soundmark": "/tə/ /juz/"
 	},
 	{
-		"chinese": "他们(过去)承认忘记锁门",
-		"english": "they admitted forgetting to lock the door",
-		"soundmark": "/ðe/ /ədˈmɪtɪd/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+		"chinese": "我(过去)想要打篮球",
+		"english": "I wanted to play basketball",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /ple/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "灯",
-		"english": "light",
-		"soundmark": "/laɪt/"
+		"chinese": "我过去常常打篮球",
+		"english": "I used to play basketball",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "红色",
-		"english": "red",
-		"soundmark": "/rɛd/"
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
 	},
 	{
-		"chinese": "一个红灯",
-		"english": "a red light",
-		"soundmark": "/ə/ /rɛd/ /laɪt/"
+		"chinese": "学校",
+		"english": "school",
+		"soundmark": "/skul/"
 	},
 	{
-		"chinese": "跑",
-		"english": "to run",
-		"soundmark": "/tə/ /rʌn/"
+		"chinese": "高",
+		"english": "high",
+		"soundmark": "/haɪ/"
 	},
 	{
-		"chinese": "闯一个红灯",
-		"english": "to run a red light",
-		"soundmark": "/tə/ /rʌn/ /ə/ /rɛd/ /laɪt/"
+		"chinese": "高中",
+		"english": "high school",
+		"soundmark": "/haɪ/ /skul/"
 	},
 	{
-		"chinese": "闯一个红灯(ing形式)",
-		"english": "running a red light",
-		"soundmark": "/'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
+		"chinese": "在高中",
+		"english": "in high school",
+		"soundmark": "/ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "驾驶",
-		"english": "to drive",
-		"soundmark": "/tə/ /draɪv/"
+		"chinese": "我在高中常常打篮球",
+		"english": "I used to play basketball in high school",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/ /ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "司机",
-		"english": "the driver",
-		"soundmark": "/ðə/ /'draɪvɚ/"
+		"chinese": "在高中",
+		"english": "in high school",
+		"soundmark": "/ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "司机(过去)承认",
-		"english": "the driver admitted",
-		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/"
+		"chinese": "我在高中",
+		"english": "I am in high school",
+		"soundmark": "/aɪ/ /æm/ /ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "司机(过去)承认闯一个红灯",
-		"english": "the driver admitted running a red light",
-		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/ /'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
+		"chinese": "我(过去)在高中",
+		"english": "I was in high school",
+		"soundmark": "/aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "答案",
-		"english": "the answers",
-		"soundmark": "/ði/ /'ænsɚz/"
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "复制",
-		"english": "to copy",
-		"soundmark": "/tə/ /ˈkɑpɪ/"
+		"chinese": "当我(过去)在高中的时候",
+		"english": "when I was in high school",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "抄答案",
-		"english": "to copy the answers",
-		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/"
+		"chinese": "我过去常常打篮球当我在高中的时候",
+		"english": "I used to play basketball when I was in high school",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/ /ɪn/ /haɪ/ /skul/ /wɛn/ /aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "同学",
-		"english": "classmate",
-		"soundmark": "/'klæsmet/"
+		"chinese": "象棋",
+		"english": "chess",
+		"soundmark": "/tʃɛs/"
 	},
 	{
-		"chinese": "从......那里",
-		"english": "from",
-		"soundmark": "/frʌm/"
+		"chinese": "玩",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
 	},
 	{
-		"chinese": "从一个同学那里",
-		"english": "from a classmate",
-		"soundmark": "/frʌm/ /ə/ /'klæsmet/"
+		"chinese": "下象棋",
+		"english": "to play chess",
+		"soundmark": "/tə/ /ple/ /tʃɛs/"
 	},
 	{
-		"chinese": "从一个同学那里抄答案",
-		"english": "to copy the answers from a classmate",
-		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
 	},
 	{
-		"chinese": "从一个同学那里抄答案(ing形式)",
-		"english": "copying the answers from a classmate",
-		"soundmark": "/ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
+		"chinese": "我过去常常下象棋",
+		"english": "I used to play chess",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /tʃɛs/"
 	},
 	{
-		"chinese": "那个学生",
-		"english": "the student",
-		"soundmark": "/ðə/ /'studnt/"
+		"chinese": "年轻的",
+		"english": "young",
+		"soundmark": "/jʌŋ/"
 	},
 	{
-		"chinese": "那个学生(过去)承认",
-		"english": "the student admitted",
-		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/"
+		"chinese": "我是年轻的",
+		"english": "I am young",
+		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
 	},
 	{
-		"chinese": "那个学生(过去)承认从一个学生那里抄答案",
-		"english": "the student admitted copying the answers from a classmate",
-		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/ /ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
+		"chinese": "我(过去)是年轻的",
+		"english": "I was young",
+		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "迟到的",
-		"english": "late",
-		"soundmark": "/let/"
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "她是迟到的",
-		"english": "she is late",
-		"soundmark": "/ʃi/ /ɪz/ /let/"
+		"chinese": "当我(过去)是年轻的时候",
+		"english": "when I was young",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "碰面；见到",
-		"english": "to meet",
-		"soundmark": "/tə/ /mit/"
+		"chinese": "我过去常常下象棋当我(过去)是年轻的时候",
+		"english": "I used to play chess when I was young",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /tʃɛs/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "会议",
-		"english": "meeting",
-		"soundmark": "/'mitɪŋ/"
+		"chinese": "看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɑtʃ/"
 	},
 	{
-		"chinese": "为了；对于",
-		"english": "for",
-		"soundmark": "/fɚ/"
+		"chinese": "卡通片",
+		"english": "cartoons",
+		"soundmark": "/kɑrˈtunz/"
 	},
 	{
-		"chinese": "对于这个会议",
-		"english": "for the meeting",
-		"soundmark": "/fɚ/ /ðə/ /'mitɪŋ/"
+		"chinese": "看卡通片",
+		"english": "to watch cartoons",
+		"soundmark": "/tə/ /wɑtʃ/ /kɑrˈtunz/"
 	},
 	{
-		"chinese": "她是迟到的对于这个会议",
-		"english": "she is late for the meeting",
-		"soundmark": "/ʃi/ /ɪz/ /let/ /fɚ/ /ðə/ /'mitɪŋ/ /ədˈmɪtɪd/"
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
 	},
 	{
-		"chinese": "是(ing形式)",
-		"english": "being",
-		"soundmark": "/ˈbiɪŋ/"
+		"chinese": "我过去常常看卡通片",
+		"english": "I used to watch cartoons",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/"
 	},
 	{
-		"chinese": "她(过去)承认是迟到的对于这个会议",
-		"english": "she admitted being late for the meeting",
-		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /let/ /fɚ/ /ðə/ /'mitɪŋ/"
+		"chinese": "早上",
+		"english": "morning",
+		"soundmark": "/'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "说话",
-		"english": "to speak",
-		"soundmark": "/tə/ /spik/"
+		"chinese": "每一个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "演讲",
-		"english": "speaking",
-		"soundmark": "/'spikɪŋ/"
+		"chinese": "每天早上",
+		"english": "every morning",
+		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "公开的",
-		"english": "public",
-		"soundmark": "/ˈpʌblɪk/"
+		"chinese": "我过去每天早上都会看卡通片",
+		"english": "I used to watch cartoons every morning",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "公开演讲",
-		"english": "public speaking",
-		"soundmark": "/ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "孩子",
+		"english": "kid",
+		"soundmark": "/kɪd/"
 	},
 	{
-		"chinese": "害怕的",
-		"english": "afraid",
-		"soundmark": "/ə'fred/"
+		"chinese": "我是一个孩子",
+		"english": "I am a kid",
+		"soundmark": "/aɪ/ /æm/ /ə/ /kɪd/"
 	},
 	{
-		"chinese": "她是害怕的",
-		"english": "she is afraid",
-		"soundmark": "/ʃi/ /ɪz/ /ə'fred/"
+		"chinese": "我(过去)是一个孩子",
+		"english": "I was a kid",
+		"soundmark": "/aɪ/ /wəz/ /ə/ /kɪd/"
 	},
 	{
-		"chinese": "她害怕公开演讲",
-		"english": "she is afraid of public speaking",
-		"soundmark": "/ʃi/ /ɪz/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "当我(过去)是一个孩子的时候",
+		"english": "when I was a kid",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ə/ /kɪd/"
 	},
 	{
-		"chinese": "是(ing形式)",
-		"english": "being",
-		"soundmark": "/ˈbiɪŋ/"
+		"chinese": "我过去每天早上都会看卡通片当我(过去)是一个孩子的时候",
+		"english": "I used to watch cartoons every morning when I was a kid",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/ /'ɛvri/ /'mɔrnɪŋ/ /wɛn/ /aɪ/ /wəz/ /ə/ /kɪd/"
 	},
 	{
-		"chinese": "她(过去)承认",
-		"english": "she admitted",
-		"soundmark": "/ʃi/ /ədˈmɪtɪd/"
+		"chinese": "喝",
+		"english": "to drink",
+		"soundmark": "/tə/ /drɪŋk/"
 	},
 	{
-		"chinese": "她(过去)承认害怕公开演讲",
-		"english": "she admitted being afraid of public speaking",
-		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+		"chinese": "咖啡",
+		"english": "coffee",
+		"soundmark": "/'kɔfi/"
 	},
 	{
-		"chinese": "食物",
-		"english": "food",
-		"soundmark": "/fud/"
+		"chinese": "喝咖啡",
+		"english": "to drink coffee",
+		"soundmark": "/tə/ /drɪŋk/ /'kɔfi/"
 	},
 	{
-		"chinese": "垃圾",
-		"english": "junk",
-		"soundmark": "/dʒʌŋk/"
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
 	},
 	{
-		"chinese": "垃圾食物",
-		"english": "junk food",
-		"soundmark": "/dʒʌŋk/ /fud/"
+		"chinese": "过去常常喝咖啡",
+		"english": "used to drink coffee",
+		"soundmark": "/juzd/ /tə/ /drɪŋk/ /'kɔfi/"
 	},
 	{
-		"chinese": "吃",
-		"english": "to eat",
-		"soundmark": "/tə/ /it/"
+		"chinese": "我过去常常喝咖啡",
+		"english": "I used to drink coffee",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/"
 	},
 	{
-		"chinese": "吃垃圾食物",
-		"english": "to eat junk food",
-		"soundmark": "/tə/ /it/ /dʒʌŋk/ /fud/"
+		"chinese": "早上",
+		"english": "morning",
+		"soundmark": "/'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "吃垃圾食物(ing形式)",
-		"english": "eating junk food",
-		"soundmark": "/'itɪŋ/ /dʒʌŋk/ /fud/"
+		"chinese": "每天早上",
+		"english": "every morning",
+		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "避免",
-		"english": "to avoid",
-		"soundmark": "/tə/ /əˈvɔɪd/"
+		"chinese": "我过去每天早上喝咖啡",
+		"english": "I used to drink coffee every morning",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "她避免",
-		"english": "she avoids",
-		"soundmark": "/ʃi/ /əˈvɔɪdz/"
+		"chinese": "喜欢",
+		"english": "like",
+		"soundmark": "/laɪk/"
 	},
 	{
-		"chinese": "她避免吃垃圾食物",
-		"english": "she avoids eating junk food",
-		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
+		"chinese": "更喜欢",
+		"english": "to prefer",
+		"soundmark": "/tə/ /prɪˈfɝ/"
 	},
 	{
-		"chinese": "生活",
-		"english": "life",
-		"soundmark": "/laɪf/"
+		"chinese": "茶",
+		"english": "tea",
+		"soundmark": "/ti/"
 	},
 	{
-		"chinese": "方式",
-		"english": "style",
-		"soundmark": "/staɪl/"
+		"chinese": "更喜欢茶",
+		"english": "to prefer tea",
+		"soundmark": "/tə/ /prɪˈfɝ/ /ti/"
 	},
 	{
-		"chinese": "生活方式",
-		"english": "lifestyle",
-		"soundmark": "/'laɪfstaɪl/"
+		"chinese": "我更喜欢茶",
+		"english": "I prefer tea",
+		"soundmark": "/aɪ/ /prɪˈfɝ/ /ti/"
 	},
 	{
-		"chinese": "健康的",
-		"english": "healthy",
-		"soundmark": "/'hɛlθi/"
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "一个健康的生活方式",
-		"english": "a healthy lifestyle",
-		"soundmark": "/ə/ /'hɛlθi/ /'laɪfstaɪl/"
+		"chinese": "现在我更喜欢茶",
+		"english": "now I prefer tea",
+		"soundmark": "/naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
 	},
 	{
-		"chinese": "保持",
-		"english": "to maintain",
-		"soundmark": "/tə/ /menˈten/"
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "保持一个健康的生活方式",
-		"english": "to maintain a healthy lifestyle",
-		"soundmark": "/tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
+		"chinese": "但是现在我更喜欢茶",
+		"english": "but now I prefer tea",
+		"soundmark": "/bʌt/ /naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
 	},
 	{
-		"chinese": "她避免吃垃圾食物",
-		"english": "she avoids eating junk food",
-		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
+		"chinese": "我过去每天早上喝咖啡",
+		"english": "I used to drink coffee every morning",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "她避免吃垃圾食物来保持一个健康的生活方式",
-		"english": "she avoids eating junk food to maintain a healthy lifestyle",
-		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/ /tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
+		"chinese": "我过去每天早上喝咖啡但是现在我更喜欢茶",
+		"english": "I used to drink coffee every morning but now I prefer tea",
+		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/ /bʌt/ /naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
 	},
 	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
+		"chinese": "老师",
+		"english": "teacher",
+		"soundmark": "/'titʃɚ/"
 	},
 	{
-		"chinese": "事实",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
+		"chinese": "她是一名老师",
+		"english": "she is a teacher",
+		"soundmark": "/ʃi/ /ɪz/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "告诉事实",
-		"english": "to tell the truth",
-		"soundmark": "/tə/ /tɛl/ /ðə/ /trʊθ/"
+		"chinese": "她(过去)是一名老师",
+		"english": "she was a teacher",
+		"soundmark": "/ʃi/ /wəz/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "告诉事实(ing形式)",
-		"english": "telling the truth",
-		"soundmark": "/ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
 	},
 	{
-		"chinese": "避免",
-		"english": "to avoid",
-		"soundmark": "/tə/ /əˈvɔɪd/"
+		"chinese": "曾经是......",
+		"english": "used to be",
+		"soundmark": "/juzd/ /tə/ /bi/"
 	},
 	{
-		"chinese": "她(过去)避免",
-		"english": "she avoided",
-		"soundmark": "/ʃi/ /əˈvɔɪdɪd/"
+		"chinese": "她曾经是一名老师",
+		"english": "she used to be a teacher",
+		"soundmark": "/ʃi/ /juzd/ /tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "她(过去)避免告诉事实",
-		"english": "she avoided telling the truth",
-		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+		"chinese": "退出",
+		"english": "to quit",
+		"soundmark": "/tə/ /kwɪt/"
 	},
 	{
-		"chinese": "说谎",
-		"english": "to lie",
-		"soundmark": "/tə/ /laɪ/"
+		"chinese": "工作",
+		"english": "job",
+		"soundmark": "/dʒɑb/"
 	},
 	{
-		"chinese": "说谎(ing形式)",
-		"english": "lying",
-		"soundmark": "/'laɪɪŋ/"
+		"chinese": "她的工作",
+		"english": "her job",
+		"soundmark": "/hɚ/ /dʒɑb/"
 	},
 	{
-		"chinese": "父母",
-		"english": "parents",
-		"soundmark": "/'pɛrənts/"
+		"chinese": "辞去她的工作",
+		"english": "to quit her job",
+		"soundmark": "/tə/ /kwɪt/ /hɚ/ /dʒɑb/"
 	},
 	{
-		"chinese": "她的父母",
-		"english": "her parents",
-		"soundmark": "/hɚ/ /'pɛrənts/"
+		"chinese": "她辞去她的工作",
+		"english": "she quit her job",
+		"soundmark": "/ʃi/ /kwɪt/ /hɚ/ /dʒɑb/"
 	},
 	{
-		"chinese": "向她的父母说谎(ing形式)",
-		"english": "lying to her parents",
-		"soundmark": "/'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+		"chinese": "她辞去了她的工作",
+		"english": "she quit her job",
+		"soundmark": "/ʃi/ /kwɪt/ /hɚ/ /dʒɑb/"
 	},
 	{
-		"chinese": "通过",
-		"english": "by",
-		"soundmark": "/baɪ/"
+		"chinese": "但是她辞去了她的工作",
+		"english": "but she quit her job",
+		"soundmark": "/bʌt/ /ʃi/ /kwɪt/ /hɚ/ /dʒɑb/"
 	},
 	{
-		"chinese": "通过向她的父母说谎",
-		"english": "by lying to her parents",
-		"soundmark": "/baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+		"chinese": "上一个",
+		"english": "last",
+		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "她(过去)避免告诉事实",
-		"english": "she avoided telling the truth",
-		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "她通过向她的父母说谎来(过去)避免告诉事实",
-		"english": "she avoided telling the truth by lying to her parents",
-		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/ /baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+		"chinese": "去年",
+		"english": "last year",
+		"soundmark": "/læst/ /jɪr/"
 	},
 	{
-		"chinese": "伤害",
-		"english": "to hurt",
-		"soundmark": "/tə/ /hɝt/"
+		"chinese": "但是去年她辞去了她的工作",
+		"english": "but she quit her job last year",
+		"soundmark": "/bʌt/ /ʃi/ /kwɪt/ /hɚ/ /dʒɑb/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "她",
-		"english": "her",
-		"soundmark": "/hɚ/"
+		"chinese": "她曾经是一名老师",
+		"english": "she used to be a teacher",
+		"soundmark": "/ʃi/ /juzd/ /tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "伤害她",
-		"english": "to hurt her",
-		"soundmark": "/tə/ /hɝt/ /hɚ/"
+		"chinese": "她曾经是一名老师但是她去年辞去了她的工作",
+		"english": "she used to be a teacher but she quit her job last year",
+		"soundmark": "/ʃi/ /juzd/ /tə/ /bi/ /ə/ /'titʃɚ/ /bʌt/ /ʃi/ /kwɪt/ /hɚ/ /dʒɑb/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "伤害她(ing形式)",
-		"english": "hurting her",
-		"soundmark": "/ˈhɝtɪŋ/ /hɚ/"
-	},
-	{
-		"chinese": "避免",
-		"english": "to avoid",
-		"soundmark": "/tə/ /əˈvɔɪd/"
-	},
-	{
-		"chinese": "我(过去)避免",
-		"english": "I avoided",
-		"soundmark": "/aɪ/ /əˈvɔɪdɪd/"
-	},
-	{
-		"chinese": "我(过去)避免伤害她",
-		"english": "I avoided hurting her",
-		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "沉默",
-		"english": "silent",
-		"soundmark": "/'saɪlənt/"
-	},
-	{
-		"chinese": "保持沉默",
-		"english": "to keep silent",
-		"soundmark": "/tə/ /kip/ /'saɪlənt/"
-	},
-	{
-		"chinese": "保持沉默(ing形式)",
-		"english": "keeping silent",
-		"soundmark": "/'kipɪŋ/ /'saɪlənt/"
-	},
-	{
-		"chinese": "通过",
-		"english": "by",
-		"soundmark": "/baɪ/"
-	},
-	{
-		"chinese": "通过保持沉默",
-		"english": "by keeping silent",
-		"soundmark": "/baɪ/ /'kipɪŋ/ /'saɪlənt/"
-	},
-	{
-		"chinese": "我通过保持沉默来(过去)避免伤害她",
-		"english": "I avoided hurting her by keeping silent",
-		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/ /baɪ/ /'kipɪŋ/ /'saɪlənt/"
-	},
-	{
-		"chinese": "迟到的",
-		"english": "late",
-		"soundmark": "/let/"
-	},
-	{
-		"chinese": "我是迟到的",
-		"english": "I am late",
-		"soundmark": "/aɪ/ /æm/ /let/"
-	},
-	{
-		"chinese": "是(ing形式)",
-		"english": "being",
-		"soundmark": "/ˈbiɪŋ/"
-	},
-	{
-		"chinese": "我(过去)避免迟到",
-		"english": "I avoided being late",
-		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
-	},
-	{
-		"chinese": "出租车",
-		"english": "taxi",
-		"soundmark": "/'tæksi/"
-	},
-	{
-		"chinese": "乘坐",
-		"english": "to take",
-		"soundmark": "/tə/ /tek/"
-	},
-	{
-		"chinese": "乘坐一辆出租车",
-		"english": "to take a taxi",
-		"soundmark": "/tə/ /tek/ /ə/ /'tæksi/"
-	},
-	{
-		"chinese": "乘坐一辆出租车(ing形式)",
-		"english": "taking a taxi",
-		"soundmark": "/ˈtekɪŋ/ /ə/ /'tæksi/"
-	},
-	{
-		"chinese": "通过",
-		"english": "by",
-		"soundmark": "/baɪ/"
-	},
-	{
-		"chinese": "通过乘坐一辆出租车",
-		"english": "by taking a taxi",
-		"soundmark": "/baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
-	},
-	{
-		"chinese": "我(过去)避免迟到",
-		"english": "I avoided being late",
-		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
-	},
-	{
-		"chinese": "我通过乘坐一辆出租车来(过去)避免迟到",
-		"english": "I avoided being late by taking a taxi",
-		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/ /baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
-	},
-	{
-		"chinese": "避免",
-		"english": "to avoid",
-		"soundmark": "/tə/ /əˈvɔɪd/"
-	},
-	{
-		"chinese": "他避免",
-		"english": "he avoids",
-		"soundmark": "/hi/ /əˈvɔɪdz/"
+		"chinese": "曾经是......",
+		"english": "used to be",
+		"soundmark": "/juzd/ /tə/ /bi/"
 	},
 	{
 		"chinese": "抽烟",
@@ -565,148 +445,568 @@
 		"soundmark": "/tə/ /smok/"
 	},
 	{
-		"chinese": "抽烟(ing形式)",
-		"english": "smoking",
-		"soundmark": "/'smokɪŋ/"
+		"chinese": "烟民",
+		"english": "smoker",
+		"soundmark": "/'smokɚ/"
 	},
 	{
-		"chinese": "他避免抽烟",
-		"english": "he avoids smoking",
-		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/"
+		"chinese": "曾经是一个烟民",
+		"english": "used to be a smoker",
+		"soundmark": "/juzd/ /tə/ /bi/ /ə/ /'smokɚ/"
 	},
 	{
-		"chinese": "健康的",
-		"english": "healthy",
-		"soundmark": "/'hɛlθi/"
+		"chinese": "你曾经是一个烟民",
+		"english": "you used to be a smoker",
+		"soundmark": "/ju/ /juzd/ /tə/ /bi/ /ə/ /'smokɚ/"
 	},
 	{
-		"chinese": "健康",
-		"english": "health",
-		"soundmark": "/hɛlθ/"
+		"chinese": "退出",
+		"english": "to quit",
+		"soundmark": "/tə/ /kwɪt/"
 	},
 	{
-		"chinese": "他的健康",
-		"english": "his health",
-		"soundmark": "/hɪz/ /hɛlθ/"
+		"chinese": "你退出",
+		"english": "you quit",
+		"soundmark": "/ju/ /kwɪt/"
 	},
 	{
-		"chinese": "保护",
-		"english": "to protect",
-		"soundmark": "/tə/ /prə'tɛkt/"
+		"chinese": "你戒了",
+		"english": "you quit",
+		"soundmark": "/ju/ /kwɪt/"
 	},
 	{
-		"chinese": "保护他的健康",
-		"english": "to protect his health",
-		"soundmark": "/tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+		"chinese": "但是现在",
+		"english": "but now",
+		"soundmark": "/bʌt/ /naʊ/"
 	},
 	{
-		"chinese": "他避免抽烟来保护他的健康",
-		"english": "he avoids smoking to protect his health",
-		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/ /tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+		"chinese": "但是现在你戒了",
+		"english": "but now you quit",
+		"soundmark": "/bʌt/ /naʊ/ /ju/ /kwɪt/"
 	},
 	{
-		"chinese": "谎言",
-		"english": "lie",
-		"soundmark": "/laɪ/"
+		"chinese": "你曾经是一个烟民",
+		"english": "you used to be a smoker",
+		"soundmark": "/ju/ /juzd/ /tə/ /bi/ /ə/ /'smokɚ/"
 	},
 	{
-		"chinese": "一个谎言",
-		"english": "a lie",
-		"soundmark": "/ə/ /laɪ/"
+		"chinese": "你曾经是一个烟民但是现在你戒了",
+		"english": "you used to be a smoker but now you quit",
+		"soundmark": "/ju/ /juzd/ /tə/ /bi/ /ə/ /'smokɚ/ /bʌt/ /naʊ/ /ju/ /kwɪt/"
 	},
 	{
-		"chinese": "白色的",
-		"english": "white",
-		"soundmark": "/waɪt/"
+		"chinese": "陌生的",
+		"english": "strange",
+		"soundmark": "/strendʒ/"
 	},
 	{
-		"chinese": "一个善意的谎言",
-		"english": "a white lie",
-		"soundmark": "/ə/ /waɪt/ /laɪ/"
+		"chinese": "陌生人",
+		"english": "stranger",
+		"soundmark": "/'strendʒɚ/"
 	},
 	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
+		"chinese": "我们是陌生人",
+		"english": "we are strangers",
+		"soundmark": "/wi/ /ɚ/ /'strendʒɚz/"
 	},
 	{
-		"chinese": "说一个善意的谎言",
-		"english": "to tell a white lie",
-		"soundmark": "/tə/ /tɛl/ /ə/ /waɪt/ /laɪ/"
+		"chinese": "曾经是......",
+		"english": "used to be",
+		"soundmark": "/juzd/ /tə/ /bi/"
 	},
 	{
-		"chinese": "说一个善意的谎言(ing形式)",
-		"english": "telling a white lie",
-		"soundmark": "/ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+		"chinese": "我们曾经是陌生人",
+		"english": "we used to be strangers",
+		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /'strendʒɚz/"
 	},
 	{
-		"chinese": "承认",
-		"english": "to admit",
-		"soundmark": "/tə/ /ədˈmɪt/"
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
 	},
 	{
-		"chinese": "他(过去)承认",
-		"english": "he admitted",
-		"soundmark": "/hi/ /ədˈmɪtɪd/"
+		"chinese": "我们是朋友",
+		"english": "we are friends",
+		"soundmark": "/wi/ /ɚ/ /frɛndz/"
 	},
 	{
-		"chinese": "他(过去)承认说一个善意的谎言(ing形式)",
-		"english": "he admitted telling a white lie",
-		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+		"chinese": "但是现在",
+		"english": "but now",
+		"soundmark": "/bʌt/ /naʊ/"
 	},
 	{
-		"chinese": "感觉",
-		"english": "to feel",
-		"soundmark": "/tə/ /fil/"
+		"chinese": "但是现在我们是朋友",
+		"english": "but now we are friends",
+		"soundmark": "/bʌt/ /naʊ/ /wi/ /ɚ/ /frɛndz/"
 	},
 	{
-		"chinese": "感情",
-		"english": "feelings",
-		"soundmark": "/'filɪŋz/"
+		"chinese": "我们曾经是陌生人",
+		"english": "we used to be strangers",
+		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /'strendʒɚz/"
 	},
 	{
-		"chinese": "某个人",
-		"english": "someone",
-		"soundmark": "/'sʌmwʌn/"
+		"chinese": "我们曾经是陌生人但是现在我们是朋友",
+		"english": "we used to be strangers but now we are friends",
+		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /'strendʒɚz/ /bʌt/ /naʊ/ /wi/ /ɚ/ /frɛndz/"
 	},
 	{
-		"chinese": "某个人的感情",
-		"english": "someone's feelings",
-		"soundmark": "/'sʌmwʌnz/ /'filɪŋz/"
+		"chinese": "我们是朋友",
+		"english": "we are friends",
+		"soundmark": "/wi/ /ɚ/ /frɛndz/"
 	},
 	{
-		"chinese": "伤害",
-		"english": "to hurt",
-		"soundmark": "/tə/ /hɝt/"
+		"chinese": "曾经是......",
+		"english": "used to be",
+		"soundmark": "/juzd/ /tə/ /bi/"
 	},
 	{
-		"chinese": "伤害某个人的感情",
-		"english": "to hurt someone's feelings",
-		"soundmark": "/tə/ /hɝt/ /'sʌmwʌnz/ /'filɪŋz/"
+		"chinese": "我们曾经是朋友",
+		"english": "we used to be friends",
+		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /frɛndz/"
 	},
 	{
-		"chinese": "伤害某个人的感情(ing形式)",
-		"english": "hurting someone's feelings",
-		"soundmark": "/ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+		"chinese": "亲密的",
+		"english": "close",
+		"soundmark": "/klos/"
 	},
 	{
-		"chinese": "避免",
-		"english": "to avoid",
-		"soundmark": "/tə/ /əˈvɔɪd/"
+		"chinese": "我们曾经是亲密的朋友",
+		"english": "we used to be close friends",
+		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /klos/ /frɛndz/"
 	},
 	{
-		"chinese": "避免伤害某个人的感情",
-		"english": "to avoid hurting someone's feelings",
-		"soundmark": "/tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+		"chinese": "更多",
+		"english": "more",
+		"soundmark": "/mɔr/"
 	},
 	{
-		"chinese": "他(过去)承认说一个善意的谎言",
-		"english": "he admitted telling a white lie",
-		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+		"chinese": "任何",
+		"english": "any",
+		"soundmark": "/'ɛni/"
 	},
 	{
-		"chinese": "他(过去)承认说一个善意的谎言来避免伤害某个人的感情",
-		"english": "he admitted telling a white lie to avoid hurting someone's feelings",
-		"soundmark": "/hi/ /ədˈmɪtɪd/ /tə/ /ədˈmɪt/ /tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+		"chinese": "任何更多",
+		"english": "anymore",
+		"soundmark": "/ɛniˈmɔr/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "我们曾经是亲密的朋友但是再也不是了",
+		"english": "we used to be close friends but not anymore",
+		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /klos/ /frɛndz/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "爱",
+		"english": "to love",
+		"soundmark": "/tə/ /lʌv/"
+	},
+	{
+		"chinese": "他",
+		"english": "him",
+		"soundmark": "/hɪm/"
+	},
+	{
+		"chinese": "爱他",
+		"english": "to love him",
+		"soundmark": "/tə/ /lʌv/ /hɪm/"
+	},
+	{
+		"chinese": "她爱他",
+		"english": "she loves him",
+		"soundmark": "/ʃi/ /lʌvz/ /hɪm/"
+	},
+	{
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
+	},
+	{
+		"chinese": "她过去爱他",
+		"english": "she used to love him",
+		"soundmark": "/ʃi/ /juzd/ /tə/ /lʌv/ /hɪm/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "她过去爱他但是再也不会了",
+		"english": "she used to love him but not anymore",
+		"soundmark": "/ʃi/ /juzd/ /tə/ /lʌv/ /hɪm/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "驾驶",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
+	},
+	{
+		"chinese": "汽车",
+		"english": "car",
+		"soundmark": "/kɑr/"
+	},
+	{
+		"chinese": "开车",
+		"english": "to drive a car",
+		"soundmark": "/tə/ /draɪv/ /ə/ /kɑr/"
+	},
+	{
+		"chinese": "去工作",
+		"english": "to work",
+		"soundmark": "/tə/ /wɝk/"
+	},
+	{
+		"chinese": "开车去工作",
+		"english": "to drive a car to work",
+		"soundmark": "/tə/ /draɪv/ /ə/ /kɑr/ /tə/ /wɝk/"
+	},
+	{
+		"chinese": "他开车去工作",
+		"english": "he drives a car to work",
+		"soundmark": "/hi/ /draɪvz/ /ə/ /kɑr/ /tə/ /wɝk/"
+	},
+	{
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
+	},
+	{
+		"chinese": "他过去常常开车去工作",
+		"english": "he used to drive a car to work",
+		"soundmark": "/hi/ /juzd/ /tə/ /draɪv/ /ə/ /kɑr/ /tə/ /wɝk/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "他过去常常开车去工作但是再也不会了",
+		"english": "he used to drive a car to work but not anymore",
+		"soundmark": "/hi/ /juzd/ /tə/ /draɪv/ /ə/ /kɑr/ /tə/ /wɝk/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "工作",
+		"english": "to work",
+		"soundmark": "/tə/ /wɝk/"
+	},
+	{
+		"chinese": "公司",
+		"english": "company",
+		"soundmark": "/ˈkʌmpəni/"
+	},
+	{
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"chinese": "那个公司",
+		"english": "that company",
+		"soundmark": "/ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "在那个公司",
+		"english": "at that company",
+		"soundmark": "/ət/ /ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "在那个公司工作",
+		"english": "to work at that company",
+		"soundmark": "/tə/ /wɝk/ /ət/ /ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "他在那个公司工作",
+		"english": "he works at that company",
+		"soundmark": "/hi/ /wɝks/ /ət/ /ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
+	},
+	{
+		"chinese": "他曾经在那个公司工作",
+		"english": "he used to work at that company",
+		"soundmark": "/hi/ /juzd/ /tə/ /wɝk/ /ət/ /ðæt/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "他曾经在那个公司工作但是再也不会了",
+		"english": "he used to work at that company but not anymore",
+		"soundmark": "/hi/ /juzd/ /tə/ /wɝk/ /ət/ /ðæt/ /ˈkʌmpəni/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "餐厅",
+		"english": "restaurant",
+		"soundmark": "/'rɛstrɑnt/"
+	},
+	{
+		"chinese": "那个餐厅",
+		"english": "that restaurant",
+		"soundmark": "/ðæt/ /'rɛstrɑnt/"
+	},
+	{
+		"chinese": "去",
+		"english": "to go",
+		"soundmark": "/tə/ /ɡo/"
+	},
+	{
+		"chinese": "去那个餐厅",
+		"english": "to go to that restaurant",
+		"soundmark": "/tə/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/"
+	},
+	{
+		"chinese": "我们去那个餐厅",
+		"english": "we go to that restaurant",
+		"soundmark": "/wi/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/"
+	},
+	{
+		"chinese": "过去常常做......",
+		"english": "used to do",
+		"soundmark": "/juzd/ /tə/ /du/"
+	},
+	{
+		"chinese": "我们过去常常去那个餐厅",
+		"english": "we used to go to that restaurant",
+		"soundmark": "/wi/ /juzd/ /tə/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "我们过去常常去那个餐厅但是再也不会了",
+		"english": "we used to go to that restaurant but not anymore",
+		"soundmark": "/wi/ /juzd/ /tə/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
+	},
+	{
+		"chinese": "我们是朋友",
+		"english": "we are friends",
+		"soundmark": "/wi/ /ɚ/ /frɛndz/"
+	},
+	{
+		"chinese": "我们不是朋友",
+		"english": "we are not friends",
+		"soundmark": "/wi/ /ɚ/ /nɑt/ /frɛndz/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "我们再也不是朋友",
+		"english": "we are not friends anymore",
+		"soundmark": "/wi/ /ɚ/ /nɑt/ /frɛndz/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "有名的",
+		"english": "famous",
+		"soundmark": "/'feməs/"
+	},
+	{
+		"chinese": "她是有名的",
+		"english": "she is famous",
+		"soundmark": "/ʃi/ /ɪz/ /'feməs/"
+	},
+	{
+		"chinese": "她不是有名的",
+		"english": "she is not famous",
+		"soundmark": "/ʃi/ /ɪz/ /nɑt/ /'feməs/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "她再也不是有名的",
+		"english": "she is not famous anymore",
+		"soundmark": "/ʃi/ /ɪz/ /nɑt/ /'feməs/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "老板",
+		"english": "boss",
+		"soundmark": "/bɔs/"
+	},
+	{
+		"chinese": "我的老板",
+		"english": "my boss",
+		"soundmark": "/maɪ/ /bɔs/"
+	},
+	{
+		"chinese": "你是我的老板",
+		"english": "you are my boss",
+		"soundmark": "/ju/ /ɚ/ /maɪ/ /bɔs/"
+	},
+	{
+		"chinese": "你不是我的老板",
+		"english": "you are not my boss",
+		"soundmark": "/ju/ /ɚ/ /nɑt/ /maɪ/ /bɔs/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "你再也不是我的老板",
+		"english": "you are not my boss anymore",
+		"soundmark": "/ju/ /ɚ/ /nɑt/ /maɪ/ /bɔs/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "退出",
+		"english": "to quit",
+		"soundmark": "/tə/ /kwɪt/"
+	},
+	{
+		"chinese": "我辞职",
+		"english": "I quit",
+		"soundmark": "/aɪ/ /kwɪt/"
+	},
+	{
+		"chinese": "你再也不是我的老板。我辞职。",
+		"english": "you are not my boss anymore I quit",
+		"soundmark": "/ju/ /ɚ/ /nɑt/ /maɪ/ /bɔs/ /ɛniˈmɔr/ /aɪ/ /kwɪt/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "it is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它不是重要的",
+		"english": "it is not important",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "它再也不是重要的",
+		"english": "it is not important anymore",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "喝",
+		"english": "to drink",
+		"soundmark": "/tə/ /drɪŋk/"
+	},
+	{
+		"chinese": "咖啡",
+		"english": "coffee",
+		"soundmark": "/'kɔfi/"
+	},
+	{
+		"chinese": "喝咖啡",
+		"english": "to drink coffee",
+		"soundmark": "/tə/ /drɪŋk/ /'kɔfi/"
+	},
+	{
+		"chinese": "我喝咖啡",
+		"english": "I drink coffee",
+		"soundmark": "/aɪ/ /drɪŋk/ /'kɔfi/"
+	},
+	{
+		"chinese": "我不喝咖啡",
+		"english": "I don't drink coffee",
+		"soundmark": "/aɪ/ /dont/ /drɪŋk/ /'kɔfi/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "我再也不喝咖啡了",
+		"english": "I don't drink coffee anymore",
+		"soundmark": "/aɪ/ /dont/ /drɪŋk/ /'kɔfi/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "玩",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
+	},
+	{
+		"chinese": "游戏",
+		"english": "games",
+		"soundmark": "/ɡemz/"
+	},
+	{
+		"chinese": "玩游戏",
+		"english": "to play games",
+		"soundmark": "/tə/ /ple/ /ɡemz/"
+	},
+	{
+		"chinese": "视频",
+		"english": "video",
+		"soundmark": "/'vɪdɪo/"
+	},
+	{
+		"chinese": "电子游戏",
+		"english": "video games",
+		"soundmark": "/'vɪdɪo/ /ɡemz/"
+	},
+	{
+		"chinese": "玩电子游戏",
+		"english": "to play video games",
+		"soundmark": "/tə/ /ple/ /'vɪdɪo/ /ɡemz/"
+	},
+	{
+		"chinese": "他玩电子游戏",
+		"english": "he plays video games",
+		"soundmark": "/hi/ /plez/ /'vɪdɪo/ /ɡemz/"
+	},
+	{
+		"chinese": "他不玩电子游戏",
+		"english": "he doesn't play video games",
+		"soundmark": "/hi/ /ˈdʌznt/ /ple/ /'vɪdɪo/ /ɡemz/"
+	},
+	{
+		"chinese": "再也不",
+		"english": "not anymore",
+		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "他再也不玩电子游戏",
+		"english": "he doesn't play video games anymore",
+		"soundmark": "/hi/ /ˈdʌznt/ /ple/ /'vɪdɪo/ /ɡemz/ /ɛniˈmɔr/"
+	},
+	{
+		"chinese": "我们玩电子游戏",
+		"english": "we play video games",
+		"soundmark": "/wi/ /ple/ /'vɪdɪo/ /ɡemz/"
+	},
+	{
+		"chinese": "我们不玩电子游戏",
+		"english": "we don't play video games",
+		"soundmark": "/wi/ /dont/ /ple/ /'vɪdɪo/ /ɡemz/"
+	},
+	{
+		"chinese": "我们再也不玩电子游戏",
+		"english": "we don't play video games anymore",
+		"soundmark": "/wi/ /dont/ /ple/ /'vɪdɪo/ /ɡemz/ /ɛniˈmɔr/"
 	}
 ]

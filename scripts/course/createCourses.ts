@@ -1,47 +1,52 @@
-import fs from "node:fs";
-import { eq } from "drizzle-orm";
-import path from "node:path";
 import { course as courseSchema } from "@shared/schema";
+import fs from "fs";
+import path from "path";
 import { db } from "./db";
-
-const loadCourses = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "./loadCourses.json"), "utf-8")
-);
+const courses = fs.readdirSync(path.resolve(__dirname, "./courses"));
 
 (async function () {
-  const result = [];
+  await db.delete(courseSchema);
 
-  for (const course of loadCourses) {
-    const existingCourses = await db
-      .select()
-      .from(courseSchema)
-      .where(eq(courseSchema.title, course.title));
+  for (const [index, course] of courses.entries()) {
+    const [response] = await db.insert(courseSchema).values({
+      id: index + 1,
+      title: convertToChineseNumber(path.parse(course).name),
+    });
 
-    const existingCourse = existingCourses?.[0];
-
-    if (existingCourse) {
-      result.push({
-        title: existingCourse.title,
-        fileName: course.fileName,
-        cId: existingCourse.id,
-      });
-    } else {
-      const [response] = await db.insert(courseSchema).values({
-        title: course.title,
-      });
-      console.log("新创建:", course.title)
-      result.push({
-        title: course.title,
-        fileName: course.fileName,
-        cId: response.insertId,
-      });
-    }
+    console.log("创建:", course);
   }
 
-  fs.writeFileSync(
-    path.resolve(__dirname, "./courses.json"),
-    JSON.stringify(result)
-  );
-  console.log("生成 courses.json 成功");
+  console.log("全部创建完成");
   process.exit(0);
 })();
+
+function convertToChineseNumber(numStr: string): string {
+  const chineseNumbers = [
+    "零",
+    "一",
+    "二",
+    "三",
+    "四",
+    "五",
+    "六",
+    "七",
+    "八",
+    "九",
+    "十",
+  ];
+  let chineseStr = "第";
+  if (parseInt(numStr) >= 10) {
+    const [tens, ones] = numStr.split("");
+    if (tens !== "1") {
+      chineseStr += chineseNumbers[parseInt(tens, 10)];
+    }
+    chineseStr += "十";
+    if (ones !== "0") {
+      chineseStr += chineseNumbers[parseInt(ones, 10)];
+    }
+  } else {
+    chineseStr += chineseNumbers[parseInt(numStr, 10)];
+  }
+  chineseStr += "课";
+  return chineseStr;
+}

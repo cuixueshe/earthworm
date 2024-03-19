@@ -1,173 +1,73 @@
 [
 	{
-		"chinese": "某件事；某个东西",
-		"english": "something",
-		"soundmark": "/'sʌmθɪŋ/"
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
+		"chinese": "待着；留下",
+		"english": "to stay",
+		"soundmark": "/tə/ /ste/"
 	},
 	{
-		"chinese": "重要的某件事",
-		"english": "something important",
-		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+		"chinese": "我想要待着",
+		"english": "I want to stay",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ste/"
 	},
 	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "告诉你",
-		"english": "to tell you",
-		"soundmark": "/tə/ /tɛl/ /ju/"
+		"chinese": "我想要待在这里",
+		"english": "I want to stay here",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "告诉你重要的某件事",
-		"english": "to tell you something important",
-		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+		"chinese": "和你一起",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我需要",
-		"english": "I need",
-		"soundmark": "/aɪ/ /nid/"
+		"chinese": "我想要和你一起待在这里",
+		"english": "I want to stay here with you",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我需要告诉你重要的某件事",
-		"english": "I need to tell you something important",
-		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+		"chinese": "我不想和你一起待在这里",
+		"english": "I don't want to stay here with you",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "给",
-		"english": "to give",
-		"soundmark": "/tə/ /ɡɪv/"
+		"chinese": "计划；打算",
+		"english": "plan",
+		"soundmark": "/plæn/"
 	},
 	{
-		"chinese": "某个东西",
-		"english": "something",
-		"soundmark": "/'sʌmθɪŋ/"
+		"chinese": "我打算",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
 	},
 	{
-		"chinese": "重要的某个东西",
-		"english": "something important",
-		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+		"chinese": "我打算待在这里",
+		"english": "I plan to stay here",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "我需要给你重要的某个东西",
-		"english": "I need to give you something important",
-		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɪv/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+		"chinese": "和你一起",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "答案",
-		"english": "the answer",
-		"soundmark": "/ði/ /'ænsɚ/"
+		"chinese": "我打算和你一起待在这里",
+		"english": "I plan to stay here with you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我需要给你答案",
-		"english": "I need to give you the answer",
-		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɪv/ /ju/ /ði/ /'ænsɚ/"
-	},
-	{
-		"chinese": "问题",
-		"english": "the question",
-		"soundmark": "/ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "问题的答案",
-		"english": "the answer to the question",
-		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我需要给你问题的答案",
-		"english": "I need to give you the answer to the question",
-		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɪv/ /ju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我不需要给你问题的答案",
-		"english": "I don't need to give you the answer to the question",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /ɡɪv/ /ju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "她",
-		"english": "she",
-		"soundmark": "/ʃi/"
-	},
-	{
-		"chinese": "给",
-		"english": "to give",
-		"soundmark": "/tə/ /ɡɪv/"
-	},
-	{
-		"chinese": "给我们",
-		"english": "to give us",
-		"soundmark": "/tə/ /ɡɪv/ /ʌs/"
-	},
-	{
-		"chinese": "她需要给我们",
-		"english": "she needs to give us",
-		"soundmark": "/ʃi/ /nidz/ /tə/ /ɡɪv/ /ʌs/"
-	},
-	{
-		"chinese": "问题的答案",
-		"english": "the answer to the question",
-		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "她需要给我们问题的答案",
-		"english": "she needs to give us the answer to the question",
-		"soundmark": "/ʃi/ /nidz/ /tə/ /ɡɪv/ /ʌs/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "她不需要给我们问题的答案",
-		"english": "she doesn't need to give us the answer to the question",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /nid/ /tə/ /ɡɪv/ /ʌs/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "想要",
-		"english": "want",
-		"soundmark": "/wɑnt/"
-	},
-	{
-		"chinese": "我想要给你问题的答案",
-		"english": "I want to give you the answer to the question",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡɪv/ /ju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我不想给你问题的答案",
-		"english": "I don't want to give you the answer to the question",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /ɡɪv/ /ju/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我想要你给我问题的答案",
-		"english": "I want you to give me the answer to the question",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /ɡɪv/ /mi/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "我不想要你给我问题的答案",
-		"english": "I don't want you to give me the answer to the question",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /ju/ /tə/ /ɡɪv/ /mi/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "一个理由；一个原因",
-		"english": "a reason",
-		"soundmark": "/ə/ /ˈrizən/"
-	},
-	{
-		"chinese": "给我一个理由",
-		"english": "to give me a reason",
-		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/"
-	},
-	{
-		"chinese": "我需要你给我一个理由",
-		"english": "I need you to give me a reason",
-		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/"
-	},
-	{
-		"chinese": "我不需要你给我一个理由",
-		"english": "I don't need you to give me a reason",
-		"soundmark": "/aɪ/ /dont/ /nid/ /ju/ /tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/"
+		"chinese": "我不打算和你一起待在这里",
+		"english": "I don't plan to stay here with you",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
 		"chinese": "知道",
@@ -175,24 +75,44 @@
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我们应该知道",
-		"english": "we should know",
-		"soundmark": "/wi/ /ʃʊd/ /no/"
+		"chinese": "想要知道",
+		"english": "want to know",
+		"soundmark": "/wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "问题的答案",
-		"english": "the answer to the question",
-		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+		"chinese": "他们想要知道",
+		"english": "they want to know",
+		"soundmark": "/ðe/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "我们应该知道问题的答案",
-		"english": "we should know the answer to the question",
-		"soundmark": "/wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+		"chinese": "只是；仅仅",
+		"english": "just",
+		"soundmark": "/dʒʌst/"
 	},
 	{
-		"chinese": "我们不应该知道问题的答案",
-		"english": "we should not know the answer to the question",
-		"soundmark": "/wi/ /ʃʊd/ /nɑt/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+		"chinese": "他们只是想要知道",
+		"english": "they just want to know",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "他们只是想要知道是否我打算和你一起待在这里",
+		"english": "they just want to know if I plan to stay here with you",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "原因",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"chinese": "他们只是想要知道原因",
+		"english": "they just want to know the reason",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/"
 	},
 	{
 		"chinese": "为什么",
@@ -200,154 +120,374 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "我需要你给我一个理由为什么我们应该知道问题的答案",
-		"english": "I need you to give me a reason why we should know the answer to the question",
-		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/ /waɪ/ /wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+		"chinese": "他们只是想要知道原因为什么我不打算和你一起待在这里",
+		"english": "they just want to know the reason why I don't plan to stay here with you",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/ /waɪ/ /aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "电话",
-		"english": "phone",
-		"soundmark": "/fon/"
+		"chinese": "你打算",
+		"english": "you plan",
+		"soundmark": "/ju/ /plæn/"
 	},
 	{
-		"chinese": "号码",
-		"english": "number",
-		"soundmark": "/'nʌmbɚ/"
+		"chinese": "你打算待在这里",
+		"english": "you plan to stay here",
+		"soundmark": "/ju/ /plæn/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "电话号码",
-		"english": "phone number",
-		"soundmark": "/fon/ /'nʌmbɚ/"
+		"chinese": "和我一起",
+		"english": "with me",
+		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
+		"chinese": "你打算和我一起待在这里",
+		"english": "you plan to stay here with me",
+		"soundmark": "/ju/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "我的电话号码",
-		"english": "my phone number",
-		"soundmark": "/maɪ/ /fon/ /'nʌmbɚ/"
+		"chinese": "你不打算和我一起待在这里",
+		"english": "you don't plan to stay here with me",
+		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "可以",
-		"english": "can",
-		"soundmark": "/kæn/"
+		"chinese": "和他一起",
+		"english": "with him",
+		"soundmark": "/wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我可以给你",
-		"english": "I can give you",
-		"soundmark": "/aɪ/ /kæn/ /ɡɪv/ /ju/"
+		"chinese": "你打算和他一起待在这里",
+		"english": "you plan to stay here with him",
+		"soundmark": "/ju/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我可以给你我的电话号码",
-		"english": "I can give you my phone number",
-		"soundmark": "/aɪ/ /kæn/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/"
+		"chinese": "你不打算和他一起待在这里",
+		"english": "you don't plan to stay here with him",
+		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我不可以给你我的电话号码",
-		"english": "I can not give you my phone number",
-		"soundmark": "/aɪ/ /kæn/ /nɑt/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/"
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "你想要",
-		"english": "you want",
-		"soundmark": "/ju/ /wɑnt/"
+		"chinese": "我们打算和他一起待在这里",
+		"english": "we plan to stay here with him",
+		"soundmark": "/wi/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
+		"chinese": "我们不打算和他一起待在这里",
+		"english": "we don't plan to stay here with him",
+		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "它",
-		"english": "it",
-		"soundmark": "/ɪt/"
+		"chinese": "他们",
+		"english": "they",
+		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "你想要知道它",
-		"english": "you want to know it",
-		"soundmark": "/ju/ /wɑnt/ /tə/ /no/ /ɪt/"
+		"chinese": "他们打算和他一起待在这里",
+		"english": "they plan to stay here with him",
+		"soundmark": "/ðe/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "如果",
-		"english": "if",
-		"soundmark": "/ɪf/"
+		"chinese": "他们不打算和他一起待在这里",
+		"english": "they don't plan to stay here with him",
+		"soundmark": "/ðe/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/ /him/"
 	},
 	{
-		"chinese": "我可以给你我的电话号码如果你想要知道它",
-		"english": "I can give you my phone number if you want to know it",
-		"soundmark": "/aɪ/ /kæn/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/ /ɪf/ /ju/ /wɑnt/ /tə/ /no/ /ɪt/"
+		"chinese": "和我们一起",
+		"english": "with us",
+		"soundmark": "/wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "我将会",
-		"english": "I will",
-		"soundmark": "/aɪ/ /wɪl/"
+		"chinese": "他们打算和我们一起待在这里",
+		"english": "they plan to stay here with us",
+		"soundmark": "/ðe/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "我将会给你我的电话号码",
-		"english": "I will give you my phone number",
-		"soundmark": "/aɪ/ /wɪl/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/"
+		"chinese": "他们不打算和我们一起待在这里",
+		"english": "they don't plan to stay here with us",
+		"soundmark": "/ðe/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "我将不会给你我的电话号码",
-		"english": "I will not give you my phone number",
-		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/"
+		"chinese": "他打算",
+		"english": "he plans",
+		"soundmark": "/hi/ /plænz/"
 	},
 	{
-		"chinese": "你不想要",
-		"english": "you don't want",
-		"soundmark": "/ju/ /dont/ /wɑnt/"
+		"chinese": "他打算和我们一起待在这里",
+		"english": "he plans to stay here with us",
+		"soundmark": "/hi/ /plænz/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
+		"chinese": "他不打算和我们一起待在这里",
+		"english": "he doesn't plan to stay here with us",
+		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "你不想知道它",
-		"english": "you don't want to know it",
-		"soundmark": "/ju/ /dont/ /wɑnt/ /tə/ /no/ /ɪt/"
+		"chinese": "和他们一起",
+		"english": "with them",
+		"soundmark": "/wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "我将不会给你我的电话号码如果你不想知道它",
-		"english": "I will not give you my phone number if you don't want to know it",
-		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/ /ɪf/ /ju/ /dont/ /wɑnt/ /tə/ /no/ /ɪt/"
+		"chinese": "他打算和他们一起待在这里",
+		"english": "he plans to stay here with them",
+		"soundmark": "/hi/ /plænz/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
+		"chinese": "他不打算和他们一起待在这里",
+		"english": "he doesn't plan to stay here with them",
+		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "电话号码",
-		"english": "phone number",
-		"soundmark": "/fon/ /'nʌmbɚ/"
+		"chinese": "她打算",
+		"english": "she plans",
+		"soundmark": "/ʃi/ /plænz/"
 	},
 	{
-		"chinese": "你的电话号码",
-		"english": "your phone number",
-		"soundmark": "/jʊr/ /fon/ /'nʌmbɚ/"
+		"chinese": "她打算和他们一起待在这里",
+		"english": "she plans to stay here with them",
+		"soundmark": "/ʃi/ /plænz/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "你应该",
-		"english": "you should",
-		"soundmark": "/ju/ /ʃʊd/"
+		"chinese": "她不打算和他们一起待在这里",
+		"english": "she doesn't plan to stay here with them",
+		"soundmark": "/ʃi/ /ˈdʌznt/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "你应该给我你的电话号码",
-		"english": "you should give me your phone number",
-		"soundmark": "/ju/ /ʃʊd/ /ɡɪv/ /mi/ /jʊr/ /fon/ /'nʌmbɚ/"
+		"chinese": "星荣打算",
+		"english": "Xingrong plans",
+		"soundmark": "/plænz/"
 	},
 	{
-		"chinese": "你不应该给我你的电话号码",
-		"english": "you should not give me your phone number",
-		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /ɡɪv/ /mi/ /jʊr/ /fon/ /'nʌmbɚ/"
+		"chinese": "星荣打算和小月亮待在这里",
+		"english": "Xingrong plans to stay here with Xiaoyueliang",
+		"soundmark": "/plænz/ /tə/ /ste/ /hɪr/ /wɪð/"
 	},
 	{
-		"chinese": "因为",
-		"english": "because",
-		"soundmark": "/bɪ'kɔz/"
+		"chinese": "离开",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "我想要离开",
+		"english": "I want to leave",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /liv/"
+	},
+	{
+		"chinese": "我不想离开",
+		"english": "I don't want to leave",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /liv/"
+	},
+	{
+		"chinese": "打算；计划",
+		"english": "plan",
+		"soundmark": "/plæn/"
+	},
+	{
+		"chinese": "我打算离开",
+		"english": "I plan to leave",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "我打算离开这里",
+		"english": "I plan to leave here",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/ /hɪr/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "我打算明天离开这里",
+		"english": "I plan to leave here tomorrow",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"chinese": "晚上",
+		"english": "night",
+		"soundmark": "/naɪt/"
+	},
+	{
+		"chinese": "我打算明天晚上离开这里",
+		"english": "I plan to leave here tomorrow night",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/ /hɪr/ /tə'mɔro/ /naɪt/"
+	},
+	{
+		"chinese": "我不打算明天晚上离开这里",
+		"english": "I don't plan to leave here tomorrow night",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /liv/ /hɪr/ /tə'mɔro/ /naɪt/"
+	},
+	{
+		"chinese": "离开",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"chinese": "这座城市",
+		"english": "the city",
+		"soundmark": "/ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "离开这座城市",
+		"english": "to leave the city",
+		"soundmark": "/tə/ /liv/ /ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "你打算",
+		"english": "you plan",
+		"soundmark": "/ju/ /plæn/"
+	},
+	{
+		"chinese": "你打算离开这座城市",
+		"english": "you plan to leave the city",
+		"soundmark": "/ju/ /plæn/ /tə/ /liv/ /ðə/ /'sɪti/"
+	},
+	{
+		"chinese": "下一个",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"chinese": "周；星期",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"chinese": "下周",
+		"english": "next week",
+		"soundmark": "/nɛkst/ /wik/"
+	},
+	{
+		"chinese": "你打算下周离开这座城市",
+		"english": "you plan to leave the city next week",
+		"soundmark": "/ju/ /plæn/ /tə/ /liv/ /ðə/ /'sɪti/ /nɛkst/ /wik/"
+	},
+	{
+		"chinese": "你不打算下周离开这座城市",
+		"english": "you don't plan to leave the city next week",
+		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /liv/ /ðə/ /'sɪti/ /nɛkst/ /wik/"
+	},
+	{
+		"chinese": "她打算",
+		"english": "she plans",
+		"soundmark": "/ʃi/ /plænz/"
+	},
+	{
+		"chinese": "离开",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"chinese": "这个国家",
+		"english": "the country",
+		"soundmark": "/ðə/ /'kʌntri/"
+	},
+	{
+		"chinese": "离开这个国家",
+		"english": "to leave the country",
+		"soundmark": "/tə/ /liv/ /ðə/ /'kʌntri/"
+	},
+	{
+		"chinese": "她打算离开这个国家",
+		"english": "she plans to leave the country",
+		"soundmark": "/ʃi/ /plænz/ /tə/ /liv/ /ðə/ /'kʌntri/"
+	},
+	{
+		"chinese": "下一个",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"chinese": "月",
+		"english": "month",
+		"soundmark": "/mʌnθ/"
+	},
+	{
+		"chinese": "下个月",
+		"english": "next month",
+		"soundmark": "/nɛkst/ /mʌnθ/"
+	},
+	{
+		"chinese": "她打算下个月离开这个国家",
+		"english": "she plans to leave the country next month",
+		"soundmark": "/ʃi/ /plænz/ /tə/ /liv/ /ðə/ /'kʌntri/ /nɛkst/ /mʌnθ/"
+	},
+	{
+		"chinese": "她不打算下个月离开这个国家",
+		"english": "she doesn't plan to leave the country next month",
+		"soundmark": "/ʃi/ /ˈdʌznt/ /plæn/ /tə/ /liv/ /ðə/ /'kʌntri/ /nɛkst/ /mʌnθ/"
+	},
+	{
+		"chinese": "我们打算",
+		"english": "we plan",
+		"soundmark": "/wi/ /plæn/"
+	},
+	{
+		"chinese": "离开这里",
+		"english": "to leave here",
+		"soundmark": "/tə/ /liv/ /hɪr/"
+	},
+	{
+		"chinese": "我们打算离开这里",
+		"english": "we plan to leave here",
+		"soundmark": "/wi/ /plæn/ /tə/ /liv/ /hɪr/"
+	},
+	{
+		"chinese": "我们不打算离开这里",
+		"english": "we don't plan to leave here",
+		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /liv/ /hɪr/"
+	},
+	{
+		"chinese": "早点",
+		"english": "early",
+		"soundmark": "/ˈɚli/"
+	},
+	{
+		"chinese": "我们打算早点离开这里",
+		"english": "we plan to leave here early",
+		"soundmark": "/wi/ /plæn/ /tə/ /liv/ /hɪr/ /ˈɚli/"
+	},
+	{
+		"chinese": "可能",
+		"english": "possible",
+		"soundmark": "/'pɑsəbl/"
+	},
+	{
+		"chinese": "尽早；尽可能地早",
+		"english": "as early as possible",
+		"soundmark": "/əz/ /ˈɚli/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "我们打算尽早离开这里",
+		"english": "we plan to leave here as early as possible",
+		"soundmark": "/wi/ /plæn/ /tə/ /liv/ /hɪr/ /əz/ /ˈɚli/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "支付",
+		"english": "to pay",
+		"soundmark": "/tə/ /pe/"
+	},
+	{
+		"chinese": "账单",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付账单",
+		"english": "to pay the bill",
+		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
 		"chinese": "我需要",
@@ -355,419 +495,59 @@
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我需要知道它",
-		"english": "I need to know it",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪt/"
+		"chinese": "我需要支付账单",
+		"english": "I need to pay the bill",
+		"soundmark": "/aɪ/ /nid/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "你应该给我你的电话号码因为我需要知道它",
-		"english": "you should give me your phone number because I need to know it",
-		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /ɡɪv/ /mi/ /jʊr/ /fon/ /'nʌmbɚ/ /bɪ'kɔz/ /aɪ/ /nid/ /tə/ /no/ /ɪt/"
+		"chinese": "我不需要支付账单",
+		"english": "I don't need to pay the bill",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
+		"chinese": "我打算",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
 	},
 	{
-		"chinese": "电话号码",
-		"english": "phone number",
-		"soundmark": "/fon/ /'nʌmbɚ/"
+		"chinese": "我打算支付账单",
+		"english": "I plan to pay the bill",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "他的电话号码",
-		"english": "his phone number",
-		"soundmark": "/hɪz/ /fon/ /'nʌmbɚ/"
+		"chinese": "为你",
+		"english": "for you",
+		"soundmark": "/fɝ/ /ju/"
 	},
 	{
-		"chinese": "你应该给我他的电话号码",
-		"english": "you should give me his phone number",
-		"soundmark": "/ju/ /ʃʊd/ /ɡɪv/ /mi/ /hɪz/ /fon/ /'nʌmbɚ/"
+		"chinese": "我打算为你支付账单",
+		"english": "I plan to pay the bill for you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ju/"
 	},
 	{
-		"chinese": "你不应该给我他的电话号码",
-		"english": "you should not give me his phone number",
-		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /ɡɪv/ /mi/ /hɪz/ /fon/ /'nʌmbɚ/"
+		"chinese": "我不打算为你支付账单",
+		"english": "I don't plan to pay the bill for you",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ju/"
 	},
 	{
-		"chinese": "你可以给我他的电话号码",
-		"english": "you can give me his phone number",
-		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /hɪz/ /fon/ /'nʌmbɚ/"
+		"chinese": "你打算支付账单",
+		"english": "you plan to pay the bill",
+		"soundmark": "/ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "希望",
-		"english": "hope",
-		"soundmark": "/hop/"
-	},
-	{
-		"chinese": "我希望",
-		"english": "I hope",
-		"soundmark": "/aɪ/ /hop/"
-	},
-	{
-		"chinese": "我希望你可以给我他的电话号码",
-		"english": "I hope you can give me his phone number",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /hɪz/ /fon/ /'nʌmbɚ/"
-	},
-	{
-		"chinese": "她的",
-		"english": "her",
-		"soundmark": "/hɚ/"
-	},
-	{
-		"chinese": "她的电话号码",
-		"english": "her phone number",
-		"soundmark": "/hɚ/ /fon/ /'nʌmbɚ/"
-	},
-	{
-		"chinese": "你可以给我她的电话号码",
-		"english": "you can give me her phone number",
-		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /hɚ/ /fon/ /'nʌmbɚ/"
-	},
-	{
-		"chinese": "我希望",
-		"english": "I hope",
-		"soundmark": "/aɪ/ /hop/"
-	},
-	{
-		"chinese": "我希望你可以给我她的电话号码",
-		"english": "I hope you can give me her phone number",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /hɚ/ /fon/ /'nʌmbɚ/"
-	},
-	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "它是重要的",
-		"english": "it is important",
-		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "对我来说",
+		"chinese": "为我",
 		"english": "for me",
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是重要的对我来说",
-		"english": "it is important for me",
-		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+		"chinese": "你打算为我支付账单",
+		"english": "you plan to pay the bill for me",
+		"soundmark": "/ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "非常",
-		"english": "very",
-		"soundmark": "/ˈvɛri/"
-	},
-	{
-		"chinese": "它是非常重要的对我来说",
-		"english": "it is very important for me",
-		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
-	},
-	{
-		"chinese": "因为",
-		"english": "because",
-		"soundmark": "/bɪ'kɔz/"
-	},
-	{
-		"chinese": "因为它是非常重要的对我来说",
-		"english": "because it is very important for me",
-		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
-	},
-	{
-		"chinese": "我希望你可以给我她的电话号码因为这件事是非常重要的对我来说",
-		"english": "I hope you can give me her phone number because it is very important for me",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /hɚ/ /fon/ /'nʌmbɚ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
-	},
-	{
-		"chinese": "手",
-		"english": "hand",
-		"soundmark": "/hænd/"
-	},
-	{
-		"chinese": "一只手",
-		"english": "a hand",
-		"soundmark": "/ə/ /hænd/"
-	},
-	{
-		"chinese": "给我一只手（搭把手）",
-		"english": "to give me a hand",
-		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"
-	},
-	{
-		"chinese": "你可以给我搭把手",
-		"english": "you can give me a hand",
-		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
-	},
-	{
-		"chinese": "我希望",
-		"english": "I hope",
-		"soundmark": "/aɪ/ /hop/"
-	},
-	{
-		"chinese": "我希望你可以给我搭把手",
-		"english": "I hope you can give me a hand",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
-	},
-	{
-		"chinese": "因为",
-		"english": "because",
-		"soundmark": "/bɪ'kɔz/"
-	},
-	{
-		"chinese": "它是非常重要的对我来说",
-		"english": "it is very important for me",
-		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
-	},
-	{
-		"chinese": "因为它是非常重要的对我来说",
-		"english": "because it is very important for me",
-		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
-	},
-	{
-		"chinese": "我希望你可以给我搭把手因为它是非常重要的对我来说",
-		"english": "I hope you can give me a hand because it is very important for me",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
-	},
-	{
-		"chinese": "而且",
-		"english": "and",
-		"soundmark": "/ənd/"
-	},
-	{
-		"chinese": "我需要",
-		"english": "I need",
-		"soundmark": "/aɪ/ /nid/"
-	},
-	{
-		"chinese": "帮助",
-		"english": "to help",
-		"soundmark": "/tə/ /hɛlp/"
-	},
-	{
-		"chinese": "我需要你帮助我",
-		"english": "I need you to help me",
-		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/"
-	},
-	{
-		"chinese": "现在",
-		"english": "now",
-		"soundmark": "/naʊ/"
-	},
-	{
-		"chinese": "我需要你现在帮助我",
-		"english": "I need you to help me now",
-		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/ /naʊ/"
-	},
-	{
-		"chinese": "我希望你可以给我搭把手因为它是非常重要的对我来说而且我需要你现在帮助我",
-		"english": "I hope you can give me a hand because it is very important for me and I need you to help me now",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /ənd/ /aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/ /naʊ/"
-	},
-	{
-		"chinese": "建议",
-		"english": "advice",
-		"soundmark": "/əd'vaɪs/"
-	},
-	{
-		"chinese": "一些",
-		"english": "some",
-		"soundmark": "/səm/"
-	},
-	{
-		"chinese": "一些建议",
-		"english": "some advice",
-		"soundmark": "/səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "你可以给我",
-		"english": "you can give me",
-		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/"
-	},
-	{
-		"chinese": "你可以给我一些建议",
-		"english": "you can give me some advice",
-		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "我希望",
-		"english": "I hope",
-		"soundmark": "/aɪ/ /hop/"
-	},
-	{
-		"chinese": "我希望你可以给我一些建议",
-		"english": "I hope you can give me some advice",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的工作",
-		"english": "my work",
-		"soundmark": "/maɪ/ /wɝk/"
-	},
-	{
-		"chinese": "关于",
-		"english": "about",
-		"soundmark": "/ə'baʊt/"
-	},
-	{
-		"chinese": "关于我的工作",
-		"english": "about my work",
-		"soundmark": "/ə'baʊt/ /maɪ/ /wɝk/"
-	},
-	{
-		"chinese": "我希望你可以给我关于我的工作的一些建议",
-		"english": "I hope you can give me some advice about my work",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /maɪ/ /wɝk/"
-	},
-	{
-		"chinese": "我可以给你一些建议",
-		"english": "I can give you some advice",
-		"soundmark": "/aɪ/ /kæn/ /ɡɪv/ /ju/ /səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "想要",
-		"english": "want to",
-		"soundmark": "/wɑnt/ /tə/"
-	},
-	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
-	},
-	{
-		"chinese": "关于",
-		"english": "about",
-		"soundmark": "/ə'baʊt/"
-	},
-	{
-		"chinese": "关于你的工作",
-		"english": "about your work",
-		"soundmark": "/ə'baʊt/ /jʊr/ /wɝk/"
-	},
-	{
-		"chinese": "我想要给你关于你的工作的一些建议",
-		"english": "I want to give you some advice about your work",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡɪv/ /ju/ /səm/ /əd'vaɪs/ /ə'baʊt/ /jʊr/ /wɝk/"
-	},
-	{
-		"chinese": "我想要你给我一些建议",
-		"english": "I want you to give me some advice",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
-	},
-	{
-		"chinese": "关于我的工作",
-		"english": "about my work",
-		"soundmark": "/ə'baʊt/ /maɪ/ /wɝk/"
-	},
-	{
-		"chinese": "我想要你给我关于我的工作的一些建议",
-		"english": "I want you to give me some advice about my work",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /maɪ/ /wɝk/"
-	},
-	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
-	},
-	{
-		"chinese": "他的工作",
-		"english": "his work",
-		"soundmark": "/hɪz/ /wɝk/"
-	},
-	{
-		"chinese": "给他",
-		"english": "to give him",
-		"soundmark": "/tə/ /ɡɪv/ /hɪm/"
-	},
-	{
-		"chinese": "你可以给他关于他的工作的一些建议",
-		"english": "you can give him some advice about his work",
-		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /hɪz/ /wɝk/"
-	},
-	{
-		"chinese": "我希望你可以给他关于他的工作的一些建议",
-		"english": "I hope you can give him some advice about his work",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /hɪz/ /wɝk/"
-	},
-	{
-		"chinese": "她的",
-		"english": "her",
-		"soundmark": "/hɚ/"
-	},
-	{
-		"chinese": "她的工作",
-		"english": "her work",
-		"soundmark": "/hɚ/ /wɝk/"
-	},
-	{
-		"chinese": "给她",
-		"english": "to give her",
-		"soundmark": "/tə/ /ɡɪv/ /hɚ/"
-	},
-	{
-		"chinese": "我希望你可以给她关于她的工作的一些建议",
-		"english": "I hope you can give her some advice about her work",
-		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /hɚ/ /səm/ /əd'vaɪs/ /ə'baʊt/ /hɚ/ /wɝk/"
-	},
-	{
-		"chinese": "我希望她可以给我关于我的工作的一些建议",
-		"english": "I hope she can give me some advice about my work",
-		"soundmark": "/aɪ/ /hop/ /ʃi/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /maɪ/ /wɝk/"
-	},
-	{
-		"chinese": "使用",
-		"english": "to use",
-		"soundmark": "/tə/ /juz/"
-	},
-	{
-		"chinese": "字典",
-		"english": "the dictionary",
-		"soundmark": "/ðə/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "使用字典",
-		"english": "to use the dictionary",
-		"soundmark": "/tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我需要",
-		"english": "I need",
-		"soundmark": "/aɪ/ /nid/"
-	},
-	{
-		"chinese": "我需要使用字典",
-		"english": "I need to use the dictionary",
-		"soundmark": "/aɪ/ /nid/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不需要使用字典",
-		"english": "I don't need to use the dictionary",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我必须使用字典",
-		"english": "I have to use the dictionary",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不必使用字典",
-		"english": "I don't have to use the dictionary",
-		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的字典",
-		"english": "my dictionary",
-		"soundmark": "/maɪ/ /'dɪkʃənɛri/"
+		"chinese": "你不打算为我支付账单",
+		"english": "you don't plan to pay the bill for me",
+		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
 		"chinese": "我想要",
@@ -775,234 +555,89 @@
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要使用我的字典",
-		"english": "I want to use my dictionary",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /juz/ /maɪ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不想使用我的字典",
-		"english": "I don't want to use my dictionary",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /juz/ /maɪ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我想要你使用我的字典",
-		"english": "I want you to use my dictionary",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /juz/ /maɪ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不想要你使用我的字典",
-		"english": "I don't want you to use my dictionary",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /ju/ /tə/ /juz/ /maɪ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "他的字典",
-		"english": "his dictionary",
-		"soundmark": "/hɪz/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我想要你使用他的字典",
-		"english": "I want you to use his dictionary",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /juz/ /hɪz/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不想要你使用他的字典",
-		"english": "I don't want you to use his dictionary",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /ju/ /tə/ /juz/ /hɪz/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她的",
-		"english": "her",
-		"soundmark": "/hɚ/"
-	},
-	{
-		"chinese": "她的字典",
-		"english": "her dictionary",
-		"soundmark": "/hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我想要你使用她的字典",
-		"english": "I want you to use her dictionary",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不想要你使用她的字典",
-		"english": "I don't want you to use her dictionary",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "你的字典",
-		"english": "your dictionary",
-		"soundmark": "/jʊr/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我需要使用你的字典",
-		"english": "I need to use your dictionary",
-		"soundmark": "/aɪ/ /nid/ /tə/ /juz/ /jʊr/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "我不需要使用你的字典",
-		"english": "I don't need to use your dictionary",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /juz/ /jʊr/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "使用",
-		"english": "to use",
-		"soundmark": "/tə/ /juz/"
-	},
-	{
-		"chinese": "她必须使用",
-		"english": "she has to use",
-		"soundmark": "/ʃi/ /hæz/ /tə/ /juz/"
-	},
-	{
-		"chinese": "她的字典",
-		"english": "her dictionary",
-		"soundmark": "/hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她必须使用她的字典",
-		"english": "she has to use her dictionary",
-		"soundmark": "/ʃi/ /hæz/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她不必使用她的字典",
-		"english": "she doesn't have to use her dictionary",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /hæv/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她想要使用她的字典",
-		"english": "she wants to use her dictionary",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她不想使用她的字典",
-		"english": "she doesn't want to use her dictionary",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她想要我使用她的字典",
-		"english": "she wants me to use her dictionary",
-		"soundmark": "/ʃi/ /wɑnts/ /mi/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "她不想要我使用她的字典",
-		"english": "she doesn't want me to use her dictionary",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /mi/ /tə/ /juz/ /hɚ/ /'dɪkʃənɛri/"
-	},
-	{
-		"chinese": "如何",
-		"english": "how",
-		"soundmark": "/haʊ/"
-	},
-	{
-		"chinese": "如何使用字典",
-		"english": "how to use the dictionary",
-		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
-	},
-	{
 		"chinese": "知道",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我需要知道如何使用字典",
-		"english": "I need to know how to use the dictionary",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+		"chinese": "我想要知道",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "我必须知道如何使用字典",
-		"english": "I have to know how to use the dictionary",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道如何使用字典",
-		"english": "I want to know how to use the dictionary",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+		"chinese": "我想要知道是否你打算为我支付账单",
+		"english": "I want to know if you plan to pay the bill for me",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "电话",
-		"english": "the phone",
-		"soundmark": "/ðə/ /fon/"
+		"chinese": "他打算",
+		"english": "he plans",
+		"soundmark": "/hi/ /plænz/"
 	},
 	{
-		"chinese": "使用电话",
-		"english": "to use the phone",
-		"soundmark": "/tə/ /juz/ /ðə/ /fon/"
+		"chinese": "他打算为我支付账单",
+		"english": "he plans to pay the bill for me",
+		"soundmark": "/hi/ /plænz/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我需要使用电话",
-		"english": "I need to use the phone",
-		"soundmark": "/aɪ/ /nid/ /tə/ /juz/ /ðə/ /fon/"
+		"chinese": "他不打算为我支付账单",
+		"english": "he doesn't plan to pay the bill for me",
+		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "如何使用电话",
-		"english": "how to use the phone",
-		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /fon/"
+		"chinese": "为他",
+		"english": "for him",
+		"soundmark": "/fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "我需要知道如何使用电话",
-		"english": "I need to know how to use the phone",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /haʊ/ /tə/ /juz/ /ðə/ /fon/"
+		"chinese": "我打算为他支付账单",
+		"english": "I plan to pay the bill for him",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
+		"chinese": "我不打算为他支付账单",
+		"english": "I don't plan to pay the bill for him",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "你的电话",
-		"english": "your phone",
-		"soundmark": "/jʊr/ /fon/"
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我需要使用你的电话",
-		"english": "I need to use your phone",
-		"soundmark": "/aɪ/ /nid/ /tə/ /juz/ /jʊr/ /fon/"
+		"chinese": "这件事是重要的",
+		"english": "it is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我不需要使用你的电话",
-		"english": "I don't need to use your phone",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /juz/ /jʊr/ /fon/"
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "他需要",
-		"english": "he needs",
-		"soundmark": "/hi/ /nidz/"
+		"chinese": "这件事是非常重要的",
+		"english": "it is very important",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "她的",
-		"english": "her",
-		"soundmark": "/hɚ/"
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "她的电话",
-		"english": "her phone",
-		"soundmark": "/hɚ/ /fon/"
+		"chinese": "因为这件事是非常重要的",
+		"english": "because it is very important",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "他需要使用她的电话",
-		"english": "he needs to use her phone",
-		"soundmark": "/hi/ /nidz/ /tə/ /juz/ /hɚ/ /fon/"
-	},
-	{
-		"chinese": "他不需要使用她的电话",
-		"english": "he doesn't need to use her phone",
-		"soundmark": "/hi/ /ˈdʌznt/ /nid/ /tə/ /juz/ /hɚ/ /fon/"
-	},
-	{
-		"chinese": "洗手间",
-		"english": "the bathroom",
-		"soundmark": "/ðə/ /'bæθrum/"
-	},
-	{
-		"chinese": "使用洗手间",
-		"english": "to use the bathroom",
-		"soundmark": "/tə/ /juz/ /ðə/ /'bæθrum/"
+		"chinese": "我打算为他支付账单因为这件事是非常重要的",
+		"english": "I plan to pay the bill for him because it is very important",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
 		"chinese": "我需要",
@@ -1010,78 +645,458 @@
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我需要使用洗手间",
-		"english": "I need to use the bathroom",
-		"soundmark": "/aɪ/ /nid/ /tə/ /juz/ /ðə/ /'bæθrum/"
+		"chinese": "做这件事",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "只是",
-		"english": "just",
-		"soundmark": "/dʒʌst/"
+		"chinese": "我需要做这件事",
+		"english": "I need to do it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我只是需要使用洗手间",
-		"english": "I just need to use the bathroom",
-		"soundmark": "/aɪ/ /dʒʌst/ /nid/ /tə/ /juz/ /ðə/ /'bæθrum/"
+		"chinese": "而且",
+		"english": "and",
+		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
+		"chinese": "而且我需要做这件事",
+		"english": "and I need to do it",
+		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你的洗手间",
-		"english": "your bathroom",
-		"soundmark": "/jʊr/ /'bæθrum/"
+		"chinese": "我打算为他支付账单因为这件事是非常重要的而且我需要做这件事",
+		"english": "I plan to pay the bill for him because it is very important and I need to do it",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我只是需要使用你的洗手间",
-		"english": "I just need to use your bathroom",
-		"soundmark": "/aɪ/ /dʒʌst/ /nid/ /tə/ /juz/ /jʊr/ /'bæθrum/"
+		"chinese": "为她",
+		"english": "for her",
+		"soundmark": "/fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "他的洗手间",
-		"english": "his bathroom",
-		"soundmark": "/hɪz/ /'bæθrum/"
+		"chinese": "他打算为她支付账单",
+		"english": "he plans to pay the bill for her",
+		"soundmark": "/hi/ /plænz/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "我只是需要使用他的洗手间",
-		"english": "I just need to use his bathroom",
-		"soundmark": "/aɪ/ /dʒʌst/ /nid/ /tə/ /juz/ /hɪz/ /'bæθrum/"
+		"chinese": "他不打算为她支付账单",
+		"english": "he doesn't plan to pay the bill for her",
+		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "她的洗手间",
-		"english": "her bathroom",
-		"soundmark": "/hɚ/ /'bæθrum/"
+		"chinese": "我们打算",
+		"english": "we plan",
+		"soundmark": "/wi/ /plæn/"
 	},
 	{
-		"chinese": "我只是需要使用她的洗手间",
-		"english": "I just need to use her bathroom",
-		"soundmark": "/aɪ/ /dʒʌst/ /nid/ /tə/ /juz/ /hɚ/ /'bæθrum/"
+		"chinese": "我们打算为她支付账单",
+		"english": "we plan to pay the bill for her",
+		"soundmark": "/wi/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "他们的",
-		"english": "their",
-		"soundmark": "/ðɛr/"
+		"chinese": "我们不打算为她支付账单",
+		"english": "we don't plan to pay the bill for her",
+		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "他们的洗手间",
-		"english": "their bathroom",
-		"soundmark": "/ðɛr/ /'bæθrum/"
+		"chinese": "为他们",
+		"english": "for them",
+		"soundmark": "/fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我只是需要使用他们的洗手间",
-		"english": "I just need to use their bathroom",
-		"soundmark": "/aɪ/ /dʒʌst/ /nid/ /tə/ /juz/ /ðɛr/ /'bæθrum/"
+		"chinese": "我们打算为他们支付账单",
+		"english": "we plan to pay the bill for them",
+		"soundmark": "/wi/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我想要使用他们的洗手间",
-		"english": "I want to use their bathroom",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /juz/ /ðɛr/ /'bæθrum/"
+		"chinese": "我们不打算为他们支付账单",
+		"english": "we don't plan to pay the bill for them",
+		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我必须使用他们的洗手间",
-		"english": "I have to use their bathroom",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /juz/ /ðɛr/ /'bæθrum/"
+		"chinese": "旅行",
+		"english": "to travel",
+		"soundmark": "/tə/ /'trævl/"
+	},
+	{
+		"chinese": "世界",
+		"english": "the world",
+		"soundmark": "/ðə/ /wɝld/"
+	},
+	{
+		"chinese": "周游世界",
+		"english": "to travel the world",
+		"soundmark": "/tə/ /'trævl/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "我打算",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
+	},
+	{
+		"chinese": "我打算周游世界",
+		"english": "I plan to travel the world",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "和你一起",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
+	},
+	{
+		"chinese": "我打算和你一起周游世界",
+		"english": "I plan to travel the world with you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "下一个",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"chinese": "年",
+		"english": "year",
+		"soundmark": "/jɪr/"
+	},
+	{
+		"chinese": "明年",
+		"english": "next year",
+		"soundmark": "/nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "我打算明年和你一起周游世界",
+		"english": "I plan to travel the world with you next year",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /ju/ /nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "我不打算明年和你一起周游世界",
+		"english": "I don't plan to travel the world with you next year",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /ju/ /nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "和我一起",
+		"english": "with me",
+		"soundmark": "/wɪð/ /mi/"
+	},
+	{
+		"chinese": "你打算明年和我一起周游世界",
+		"english": "you plan to travel the world with me next year",
+		"soundmark": "/ju/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /mi/ /nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "你不打算明年和我一起周游世界",
+		"english": "you don't plan to travel the world with me next year",
+		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /mi/ /nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "他打算",
+		"english": "he plans",
+		"soundmark": "/hi/ /plænz/"
+	},
+	{
+		"chinese": "和她一起",
+		"english": "with her",
+		"soundmark": "/wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "他打算明年和她一起周游世界",
+		"english": "he plans to travel the world with her next year",
+		"soundmark": "/hi/ /plænz/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "他不打算明年和她一起周游世界",
+		"english": "he doesn't plan to travel the world with her next year",
+		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /nɛkst/ /jɪr/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "愿意；委婉地想要",
+		"english": "would like",
+		"soundmark": "/wʊd/ /laɪk/"
+	},
+	{
+		"chinese": "待着；留下",
+		"english": "to stay",
+		"soundmark": "/tə/ /ste/"
+	},
+	{
+		"chinese": "待在这里",
+		"english": "to stay here",
+		"soundmark": "/tə/ /ste/ /hɪr/"
+	},
+	{
+		"chinese": "我愿意待在这里",
+		"english": "I would like to stay here",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"chinese": "和你一起",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
+	},
+	{
+		"chinese": "我愿意和你一起待在这里",
+		"english": "I would like to stay here with you",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "我不愿意和你一起待在这里",
+		"english": "I would not like to stay here with you",
+		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "和我一起",
+		"english": "with me",
+		"soundmark": "/wɪð/ /mi/"
+	},
+	{
+		"chinese": "你愿意和我一起待在这里",
+		"english": "you would like to stay here with me",
+		"soundmark": "/ju/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "你不愿意和我一起待在这里",
+		"english": "you would not like to stay here with me",
+		"soundmark": "/ju/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "和他一起",
+		"english": "with him",
+		"soundmark": "/wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "你愿意和他一起待在这里",
+		"english": "you would like to stay here with him",
+		"soundmark": "/ju/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "你不愿意和他一起待在这里",
+		"english": "you would not like to stay here with him",
+		"soundmark": "/ju/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "我们愿意和他一起待在这里",
+		"english": "we would like to stay here with him",
+		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "我们不愿意和他一起待在这里",
+		"english": "we would not like to stay here with him",
+		"soundmark": "/wi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "和她一起",
+		"english": "with her",
+		"soundmark": "/wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "我们愿意和她一起待在这里",
+		"english": "we would like to stay here with her",
+		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "我们不愿意和她一起待在这里",
+		"english": "we would not like to stay here with her",
+		"soundmark": "/wi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "和他们一起",
+		"english": "with them",
+		"soundmark": "/wɪð/ /ðəm/"
+	},
+	{
+		"chinese": "我们愿意和他们一起待在这里",
+		"english": "we would like to stay here with them",
+		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
+	},
+	{
+		"chinese": "我们不愿意和他们一起待在这里",
+		"english": "we would not like to stay here with them",
+		"soundmark": "/wi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
+	},
+	{
+		"chinese": "他们愿意和她一起待在这里",
+		"english": "they would like to stay here with her",
+		"soundmark": "/ðe/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "他们不愿意和她一起待在这里",
+		"english": "they would not like to stay here with her",
+		"soundmark": "/ðe/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "和我们一起",
+		"english": "with us",
+		"soundmark": "/wɪð/ /ʌs/"
+	},
+	{
+		"chinese": "他们愿意和我们一起待在这里",
+		"english": "they would like to stay here with us",
+		"soundmark": "/ðe/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
+	},
+	{
+		"chinese": "他们不愿意和我们一起待在这里",
+		"english": "they would not like to stay here with us",
+		"soundmark": "/ðe/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
+	},
+	{
+		"chinese": "旅行",
+		"english": "to travel",
+		"soundmark": "/tə/ /'trævl/"
+	},
+	{
+		"chinese": "世界",
+		"english": "the world",
+		"soundmark": "/ðə/ /wɝld/"
+	},
+	{
+		"chinese": "环游世界",
+		"english": "to travel the world",
+		"soundmark": "/tə/ /'trævl/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "我愿意环游世界",
+		"english": "I would like to travel the world",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "和她一起",
+		"english": "with her",
+		"soundmark": "/wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "我愿意和她一起环游世界",
+		"english": "I would like to travel the world with her",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "我不愿意和她一起环游世界",
+		"english": "I would not like to travel the world with her",
+		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/"
+	},
+	{
+		"chinese": "我打算",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
+	},
+	{
+		"chinese": "我打算待在这里",
+		"english": "I plan to stay here",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"chinese": "和你一起",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
+	},
+	{
+		"chinese": "我打算和你一起待在这里",
+		"english": "I plan to stay here with you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为我打算和你一起待在这里",
+		"english": "because I plan to stay here with you",
+		"soundmark": "/bɪ'kɔz/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "我不愿意和她一起环游世界因为我打算和你一起待在这里",
+		"english": "I would not like to travel the world with her because I plan to stay here with you",
+		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /bɪ'kɔz/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她愿意环游世界",
+		"english": "she would like to travel the world",
+		"soundmark": "/ʃi/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/"
+	},
+	{
+		"chinese": "和他一起",
+		"english": "with him",
+		"soundmark": "/wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "她愿意和他一起环游世界",
+		"english": "she would like to travel the world with him",
+		"soundmark": "/ʃi/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "她不愿意和他一起环游世界",
+		"english": "she would not like to travel the world with him",
+		"soundmark": "/ʃi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɪm/"
+	},
+	{
+		"chinese": "支付",
+		"english": "to pay",
+		"soundmark": "/tə/ /pe/"
+	},
+	{
+		"chinese": "账单",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付账单",
+		"english": "to pay the bill",
+		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "我愿意支付账单",
+		"english": "I would like to pay the bill",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "为他们",
+		"english": "for them",
+		"soundmark": "/fɝ/ /ðəm/"
+	},
+	{
+		"chinese": "我愿意为他们支付账单",
+		"english": "I would like to pay the bill for them",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
+	},
+	{
+		"chinese": "我不愿意为他们支付账单",
+		"english": "I would not like to pay the bill for them",
+		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他愿意支付账单",
+		"english": "he would like to pay the bill",
+		"soundmark": "/hi/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "为我们",
+		"english": "for us",
+		"soundmark": "/fɝ/ /ʌs/"
+	},
+	{
+		"chinese": "他愿意为我们支付账单",
+		"english": "he would like to pay the bill for us",
+		"soundmark": "/hi/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ʌs/"
+	},
+	{
+		"chinese": "他不愿意为我们支付账单",
+		"english": "he would not like to pay the bill for us",
+		"soundmark": "/hi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ʌs/"
 	}
 ]

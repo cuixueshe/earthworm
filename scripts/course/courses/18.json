@@ -1,677 +1,582 @@
 [
 	{
-		"chinese": "支付；付出",
-		"english": "to pay",
-		"soundmark": "/tə/ /pe/"
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "注意力",
-		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/"
+		"chinese": "鸡蛋",
+		"english": "eggs",
+		"soundmark": "/ɛgz/"
 	},
 	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
+		"chinese": "吃鸡蛋",
+		"english": "to eat eggs",
+		"soundmark": "/tə/ /it/ /ɛgz/"
 	},
 	{
-		"chinese": "你需要",
-		"english": "you need",
-		"soundmark": "/ju/ /nid/"
+		"chinese": "正在吃",
+		"english": "eating",
+		"soundmark": "/'itɪŋ/"
 	},
 	{
-		"chinese": "你需要注意",
-		"english": "you need to pay attention",
-		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/"
+		"chinese": "正在吃鸡蛋",
+		"english": "eating eggs",
+		"soundmark": "/'itɪŋ/ /ɛgz/"
 	},
 	{
-		"chinese": "问题",
-		"english": "question",
-		"soundmark": "/'kwɛstʃən/"
+		"chinese": "我是",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
 	},
 	{
-		"chinese": "这个",
-		"english": "this",
-		"soundmark": "/ðɪs/"
+		"chinese": "我是星荣",
+		"english": "I am Xingrong",
+		"soundmark": "/aɪ/ /æm/"
 	},
 	{
-		"chinese": "这个问题",
-		"english": "this question",
-		"soundmark": "/ðɪs/ /'kwɛstʃən/"
+		"chinese": "正在吃鸡蛋",
+		"english": "eating eggs",
+		"soundmark": "/'itɪŋ/ /ɛgz/"
 	},
 	{
-		"chinese": "注意",
-		"english": "to pay attention",
-		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/"
+		"chinese": "我正在吃鸡蛋",
+		"english": "I am eating eggs",
+		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/"
 	},
 	{
-		"chinese": "注意这个问题",
-		"english": "to pay attention to this question",
-		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
+		"chinese": "厨房",
+		"english": "the kitchen",
+		"soundmark": "/ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你需要",
-		"english": "you need",
-		"soundmark": "/ju/ /nid/"
+		"chinese": "在厨房里",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你需要注意这个问题",
-		"english": "you need to pay attention to this question",
-		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
+		"chinese": "我在厨房里（现在）正在吃鸡蛋",
+		"english": "I am eating eggs in the kitchen",
+		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"english": "I was eating eggs in the kitchen",
+		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你不需要注意这个问题",
-		"english": "you don't need to pay attention to this question",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
+		"chinese": "你在厨房里（现在）正在吃鸡蛋",
+		"english": "you are eating eggs in the kitchen",
+		"soundmark": "/ju/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你(过去)需要注意这个问题",
-		"english": "you needed to pay attention to this question",
-		"soundmark": "/ju/ /nidɪd/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
+		"chinese": "你在厨房里（过去）正在吃鸡蛋",
+		"english": "you were eating eggs in the kitchen",
+		"soundmark": "/ju/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你(过去)不需要注意这个问题",
-		"english": "you didn't need to pay attention to this question",
-		"soundmark": "/ju/ /ˈdɪdnt/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
+		"chinese": "他们",
+		"english": "they",
+		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "你需要注意这个问题",
-		"english": "you need to pay attention to this question",
-		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
+		"chinese": "他们在厨房里（现在）正在吃鸡蛋",
+		"english": "they are eating eggs in the kitchen",
+		"soundmark": "/ðe/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "信息",
-		"english": "information",
-		"soundmark": "/ɪnfɚ'meʃən/"
+		"chinese": "他们在厨房里（过去）正在吃鸡蛋",
+		"english": "they were eating eggs in the kitchen",
+		"soundmark": "/ðe/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "这个",
-		"english": "this",
-		"soundmark": "/ðɪs/"
+		"chinese": "喝",
+		"english": "to drink",
+		"soundmark": "/tə/ /drɪŋk/"
 	},
 	{
-		"chinese": "这个信息",
-		"english": "this information",
-		"soundmark": "/ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "茶",
+		"english": "tea",
+		"soundmark": "/ti/"
 	},
 	{
-		"chinese": "你需要注意这个信息",
-		"english": "you need to pay attention to this information",
-		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "喝茶",
+		"english": "to drink tea",
+		"soundmark": "/tə/ /drɪŋk/ /ti/"
 	},
 	{
-		"chinese": "你注意这个信息",
-		"english": "you pay attention to this information",
-		"soundmark": "/ju/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "正在喝",
+		"english": "drinking",
+		"soundmark": "/'drɪŋkɪŋ/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"chinese": "正在喝茶",
+		"english": "drinking tea",
+		"soundmark": "/'drɪŋkɪŋ/ /ti/"
 	},
 	{
-		"chinese": "你没有注意这个信息",
-		"english": "you don't pay attention to this information",
-		"soundmark": "/ju/ /dont/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "他们",
+		"english": "they",
+		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "注意力",
-		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/"
+		"chinese": "他们（现在）正在喝茶",
+		"english": "they are drinking tea",
+		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/"
 	},
 	{
-		"chinese": "你(过去)注意这个信息",
-		"english": "you paid attention to this information",
-		"soundmark": "/ju/ /ped/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "花园",
+		"english": "the garden",
+		"soundmark": "/ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "你(过去)没有注意这个信息",
-		"english": "you didn't pay attention to this information",
-		"soundmark": "/ju/ /ˈdɪdnt/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "在花园里",
+		"english": "in the garden",
+		"soundmark": "/ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "应该",
-		"english": "should",
-		"soundmark": "/ʃʊd/"
+		"chinese": "他们在花园里（现在）正在喝茶",
+		"english": "they are drinking tea in the garden",
+		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "你应该",
-		"english": "you should",
-		"soundmark": "/ju/ /ʃʊd/"
+		"chinese": "茶",
+		"english": "tea",
+		"soundmark": "/tiː/"
 	},
 	{
-		"chinese": "你应该注意这个信息",
-		"english": "you should pay attention to this information",
-		"soundmark": "/ju/ /ʃʊd/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "他们在花园里（过去）正在喝茶",
+		"english": "they were drinking tea in the garden",
+		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "你不应该",
-		"english": "you should not",
-		"soundmark": "/ju/ /ʃʊd/ /nɑt/"
+		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"english": "I was eating eggs in the kitchen",
+		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你不应该注意这个信息",
-		"english": "you should not pay attention to this information",
-		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "支付；付出(ing形式)",
-		"english": "paying",
-		"soundmark": "/peɪŋ/"
+		"chinese": "他们在花园里（过去）正在喝茶与此同时我在厨房里（过去）正在吃鸡蛋",
+		"english": "they were drinking tea in the garden while I was eating eggs in the kitchen",
+		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/ /waɪl/ /aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
-		"english": "be",
-		"soundmark": "/bi/"
-	},
-	{
-		"chinese": "正在付出",
-		"english": "be paying",
-		"soundmark": "/bi/ /peɪŋ/"
-	},
-	{
-		"chinese": "注意力",
-		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/"
-	},
-	{
-		"chinese": "正在注意(付出注意力)",
-		"english": "be paying attention",
-		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "信息",
-		"english": "information",
-		"soundmark": "/ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "这个信息",
-		"english": "this information",
-		"soundmark": "/ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "正在注意这个信息",
-		"english": "be paying attention to this information",
-		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "你",
-		"english": "you",
-		"soundmark": "/ju/"
-	},
-	{
-		"chinese": "你(现在)正在注意这个信息",
-		"english": "you are paying attention to this information",
-		"soundmark": "/ju/ /ɚ/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "我",
-		"english": "I",
-		"soundmark": "/aɪ/"
-	},
-	{
-		"chinese": "我(现在)正在注意这个信息",
-		"english": "I am paying attention to this information",
-		"soundmark": "/aɪ/ /æm/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "他",
-		"english": "he",
-		"soundmark": "/hi/"
-	},
-	{
-		"chinese": "他(现在)正在注意这个信息",
-		"english": "he is paying attention to this information",
-		"soundmark": "/hi/ /ɪz/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "不",
-		"english": "not",
-		"soundmark": "/nɑt/"
-	},
-	{
-		"chinese": "他(现在)没有正在注意这个信息",
-		"english": "he is not paying attention to this information",
-		"soundmark": "/hi/ /ɪz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "他(过去)正在注意这个信息",
-		"english": "he was paying attention to this information",
-		"soundmark": "/hi/ /wəz/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "不",
-		"english": "not",
-		"soundmark": "/nɑt/"
-	},
-	{
-		"chinese": "他(过去)没有正在注意这个信息",
-		"english": "he was not paying attention to this information",
-		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "昨天",
-		"english": "yesterday",
-		"soundmark": "/'jɛstɚde/"
-	},
-	{
-		"chinese": "在这个时候",
-		"english": "at this time",
-		"soundmark": "/ət/ /ðɪs/ /taɪm/"
-	},
-	{
-		"chinese": "在昨天这个时候",
-		"english": "at this time yesterday",
-		"soundmark": "/ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
-	},
-	{
-		"chinese": "他在昨天这个时候没有注意到这个信息",
-		"english": "he was not paying attention to this information at this time yesterday",
-		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
-	},
-	{
-		"chinese": "是；赋值(原型)",
-		"english": "be",
-		"soundmark": "/bi/"
-	},
-	{
-		"chinese": "正在注意(付出注意力)",
-		"english": "be paying attention",
-		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "正在注意这个信息",
-		"english": "be paying attention to this information",
-		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
-	},
-	{
-		"chinese": "他将会",
-		"english": "he will",
-		"soundmark": "/hi/ /wɪl/"
-	},
-	{
-		"chinese": "他将会正在注意这个信息",
-		"english": "he will be paying attention to this information",
-		"soundmark": "/hi/ /wɪl/ /bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
-	},
-	{
-		"chinese": "明天",
-		"english": "tomorrow",
-		"soundmark": "/tə'mɔro/"
-	},
-	{
-		"chinese": "在这个时候",
-		"english": "at this time",
-		"soundmark": "/ət/ /ðɪs/ /taɪm/"
-	},
-	{
-		"chinese": "在明天这个时候",
-		"english": "at this time tomorrow",
-		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
-	},
-	{
-		"chinese": "他在明天这个时候将会正在注意这个信息",
-		"english": "he will be paying attention to this information at this time tomorrow",
-		"soundmark": "/hi/ /wɪl/ /bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
-	},
-	{
-		"chinese": "细节",
-		"english": "the detail",
-		"soundmark": "/ðə/ /ˈditel/"
-	},
-	{
-		"chinese": "细节(复数)",
-		"english": "the details",
-		"soundmark": "/ðə/ /ˈditelz/"
-	},
-	{
-		"chinese": "所有的",
-		"english": "all",
-		"soundmark": "/ɔl/"
-	},
-	{
-		"chinese": "所有的细节",
-		"english": "all the details",
-		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
-	},
-	{
-		"chinese": "支付；付出",
-		"english": "to pay",
-		"soundmark": "/tə/ /pe/"
-	},
-	{
-		"chinese": "注意力",
-		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/"
-	},
-	{
-		"chinese": "注意(付出注意力)",
-		"english": "to pay attention",
-		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "注意所有的细节",
-		"english": "to pay attention to all the details",
-		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/ /tə/ /ɔl/ /ðə/ /ˈditelz/"
-	},
-	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "它",
-		"english": "it",
-		"soundmark": "/ɪt/"
-	},
-	{
-		"chinese": "它是重要的",
-		"english": "it is important",
-		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "非常",
-		"english": "very",
-		"soundmark": "/ˈvɛri/"
-	},
-	{
-		"chinese": "它是非常重要的",
-		"english": "it is very important",
-		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "注意所有的细节(它)是非常重要的",
-		"english": "it is very important to pay attention to all the details",
-		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ɔl/ /ðə/ /ˈditelz/"
-	},
-	{
-		"chinese": "讨论",
-		"english": "to discuss",
-		"soundmark": "/tə/ /dɪ'skʌs/"
-	},
-	{
-		"chinese": "某件事情",
-		"english": "something",
-		"soundmark": "/'sʌmθɪŋ/"
-	},
-	{
-		"chinese": "讨论某件事情",
-		"english": "to discuss something",
-		"soundmark": "/tə/ /dɪ'skʌs/ /'sʌmθɪŋ/"
-	},
-	{
-		"chinese": "想要(直接地)",
-		"english": "want",
-		"soundmark": "/wɑnt/"
-	},
-	{
-		"chinese": "愿意;想要(委婉地)",
-		"english": "would like",
-		"soundmark": "/wʊd/ /laɪk/"
-	},
-	{
-		"chinese": "我想要",
-		"english": "I would like",
-		"soundmark": "/aɪ/ /wʊd/ /laɪk/"
-	},
-	{
-		"chinese": "我想要讨论某件事情",
-		"english": "I would like to discuss something",
-		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/"
-	},
-	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "重要的某件事情",
-		"english": "something important",
-		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "我想要讨论重要的某件事情",
-		"english": "I would like to discuss something important",
-		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "和......一起",
-		"english": "with",
-		"soundmark": "/wɪð/"
-	},
-	{
-		"chinese": "和你一起",
-		"english": "with you",
-		"soundmark": "/wɪð/ /ju/"
-	},
-	{
-		"chinese": "我想要和你一起讨论重要的某件事情",
-		"english": "I would like to discuss something important with you",
-		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /wɪð/ /ju/"
+		"chinese": "教",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
 	},
 	{
 		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
+		"english": "us",
+		"soundmark": "/ʌs/"
 	},
 	{
-		"chinese": "我们想要讨论重要的某件事情",
-		"english": "we would like to discuss something important",
-		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+		"chinese": "教我们",
+		"english": "to teach us",
+		"soundmark": "/tə/ /titʃ/ /ʌs/"
 	},
 	{
-		"chinese": "我们讨论",
-		"english": "we discuss",
-		"soundmark": "/wi/ /dɪ'skʌs/"
+		"chinese": "正在教",
+		"english": "teaching",
+		"soundmark": "/'titʃɪŋ/"
 	},
 	{
-		"chinese": "可以",
-		"english": "can",
-		"soundmark": "/kən/"
+		"chinese": "正在教我们",
+		"english": "teaching us",
+		"soundmark": "/'titʃɪŋ/ /ʌs/"
 	},
 	{
-		"chinese": "我们可以讨论",
-		"english": "we can discuss",
-		"soundmark": "/wi/ /kən/ /dɪ'skʌs/"
+		"chinese": "说",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
 	},
 	{
-		"chinese": "所有的",
-		"english": "all",
-		"soundmark": "/ɔl/"
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "细节(复数)",
-		"english": "the details",
-		"soundmark": "/ðə/ /ˈditelz/"
+		"chinese": "说英语",
+		"english": "to speak English",
+		"soundmark": "/tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "所有的细节",
-		"english": "all the details",
-		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "我们可以讨论所有的细节",
-		"english": "we can discuss all the details",
-		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/"
+		"chinese": "如何说英语",
+		"english": "how to speak English",
+		"soundmark": "/haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "这个计划",
-		"english": "the plan",
-		"soundmark": "/ðə/ /plæn/"
+		"chinese": "正在教我们如何说英语",
+		"english": "teaching us how to speak English",
+		"soundmark": "/'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "所有的细节",
-		"english": "all the details",
-		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
+		"chinese": "星荣正在教我们如何说英语",
+		"english": "Xingrong is teaching us how to speak English",
+		"soundmark": "/ɪz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
-		"english": "all the details of the plan",
-		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
+		"chinese": "星荣（过去）正在教我们如何说英语",
+		"english": "Xingrong was teaching us how to speak English",
+		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我们可以讨论这个计划的所有的细节",
-		"english": "we can discuss all the details of the plan",
-		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
+		"chinese": "学习",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "一起",
-		"english": "together",
-		"soundmark": "/tə'ɡɛðɚ/"
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我们可以一起讨论这个计划的所有的细节",
-		"english": "we can discuss all the details of the plan together",
-		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "学习英语",
+		"english": "to learn English",
+		"soundmark": "/tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
+		"chinese": "正在学习",
+		"english": "learning",
+		"soundmark": "/'lɝnɪŋ/"
 	},
 	{
-		"chinese": "我们将会一起讨论这个计划的所有的细节",
-		"english": "we will discuss all the details of the plan together",
-		"soundmark": "/wi/ /wɪl/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "正在学习英语",
+		"english": "learning English",
+		"soundmark": "/'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "明天",
-		"english": "tomorrow",
-		"soundmark": "/tə'mɔro/"
+		"chinese": "我正在学习英语",
+		"english": "I am learning English",
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "早上",
-		"english": "morning",
-		"soundmark": "/'mɔrnɪŋ/"
+		"chinese": "视频",
+		"english": "videos",
+		"soundmark": "/'vɪdɪoz/"
 	},
 	{
-		"chinese": "明天早上",
-		"english": "tomorrow morning",
-		"soundmark": "/tə'mɔro/ /'mɔrnɪŋ/"
+		"chinese": "他的",
+		"english": "his",
+		"soundmark": "/hɪz/"
 	},
 	{
-		"chinese": "我们明天早上将会一起讨论这个计划的所有的细节",
-		"english": "we will discuss all the details of the plan together tomorrow morning",
-		"soundmark": "/wi/ /wɪl/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /tə'mɔro/ /'mɔrnɪŋ/"
+		"chinese": "他的视频",
+		"english": "his videos",
+		"soundmark": "/hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "讨论(ing形式)",
-		"english": "discussing",
-		"soundmark": "/dɪ'skʌsɪŋ/"
+		"chinese": "观看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɑtʃ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
-		"english": "be",
-		"soundmark": "/bi/"
+		"chinese": "观看他的视频",
+		"english": "to watch his videos",
+		"soundmark": "/tə/ /wɑtʃ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "正在讨论",
-		"english": "be discussing",
-		"soundmark": "/bi/ /dɪ'skʌsɪŋ/"
+		"chinese": "正在观看",
+		"english": "watching",
+		"soundmark": "/'wɑtʃɪŋ/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
-		"english": "all the details of the plan",
-		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
+		"chinese": "正在观看他的视频",
+		"english": "watching his videos",
+		"soundmark": "/'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "正在讨论这个计划的所有细节",
-		"english": "be discussing all the details of the plan",
-		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
+		"chinese": "通过......的方式",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "一起",
-		"english": "together",
-		"soundmark": "/tə'ɡɛðɚ/"
+		"chinese": "通过观看他的视频的方式",
+		"english": "by watching his videos",
+		"soundmark": "/baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "正在一起讨论这个计划的所有细节",
-		"english": "be discussing all the details of the plan together",
-		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "我正在学习英语",
+		"english": "I am learning English",
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我们(现在)正在讨论",
-		"english": "we are discussing",
-		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/"
+		"chinese": "我正在通过观看他的视频的方式学习英语",
+		"english": "I am learning English by watching his videos",
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
-		"english": "all the details of the plan",
-		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
+		"chinese": "我（过去）正在通过观看他的视频的方式学习英语",
+		"english": "I was learning English by watching his videos",
+		"soundmark": "/aɪ/ /wəz/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "我们(现在)正在讨论这个计划的所有的细节",
-		"english": "we are discussing all the details of the plan",
-		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
+		"chinese": "星荣（过去）正在教我们如何说英语",
+		"english": "Xingrong was teaching us how to speak English",
+		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "一起",
-		"english": "together",
-		"soundmark": "/tə'ɡɛðɚ/"
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "我们(现在)正在一起讨论这个计划的所有的细节",
-		"english": "we are discussing all the details of the plan together",
-		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "星荣（过去）正在教我们如何说英语与此同时我（过去）正在通过观看他的视频的方式学习英语",
+		"english": "Xingrong was teaching us how to speak English while I was learning English by watching his videos",
+		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/ /waɪl/ /aɪ/ /wəz/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "我们(过去)正在一起讨论这个计划的所有的细节",
-		"english": "we were discussing all the details of the plan together",
-		"soundmark": "/wi/ /wɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "走路",
+		"english": "to walk",
+		"soundmark": "/tə/ /wɔk/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
-		"english": "be",
-		"soundmark": "/bi/"
+		"chinese": "家",
+		"english": "home",
+		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "正在讨论",
-		"english": "be discussing",
-		"soundmark": "/bi/ /dɪ'skʌsɪŋ/"
+		"chinese": "走路回家",
+		"english": "to walk home",
+		"soundmark": "/tə/ /wɔk/ /hom/"
 	},
 	{
-		"chinese": "正在一起讨论这个计划的所有细节",
-		"english": "be discussing all the details of the plan together",
-		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "学校",
+		"english": "school",
+		"soundmark": "/skul/"
 	},
 	{
-		"chinese": "我们将会",
-		"english": "we will",
-		"soundmark": "/wi/ /wɪl/"
+		"chinese": "从",
+		"english": "from",
+		"soundmark": "/frʌm/"
 	},
 	{
-		"chinese": "我们将会正在一起讨论这个计划的所有的细节",
-		"english": "we will be discussing all the details of the plan together",
-		"soundmark": "/wi/ /wɪl/ /bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
+		"chinese": "从学校",
+		"english": "from school",
+		"soundmark": "/frʌm/ /skul/"
 	},
 	{
-		"chinese": "明天",
-		"english": "tomorrow",
-		"soundmark": "/tə'mɔro/"
+		"chinese": "从学校走路回家",
+		"english": "to walk home from school",
+		"soundmark": "/tə/ /wɔk/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "在这个时候",
-		"english": "at this time",
-		"soundmark": "/ət/ /ðɪs/ /taɪm/"
+		"chinese": "正在从学校走路回家",
+		"english": "walking home from school",
+		"soundmark": "/'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "在明天这个时候",
-		"english": "at this time tomorrow",
-		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
+		"chinese": "我正在从学校走路回家",
+		"english": "I am walking home from school",
+		"soundmark": "/aɪ/ /æm/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "我们在明天这个时候将会正在一起讨论这个计划的所有的细节",
-		"english": "we will be discussing all the details of the plan together at this time tomorrow",
-		"soundmark": "/wi/ /wɪl/ /bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
+		"chinese": "我（过去）正在从学校走路回家",
+		"english": "I was walking home from school",
+		"soundmark": "/aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
+	},
+	{
+		"chinese": "老的",
+		"english": "old",
+		"soundmark": "/old/"
+	},
+	{
+		"chinese": "一个老朋友",
+		"english": "an old friend",
+		"soundmark": "/ən/ /old/ /frɛnd/"
+	},
+	{
+		"chinese": "遇见",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
+	},
+	{
+		"chinese": "遇见一个老朋友",
+		"english": "to meet an old friend",
+		"soundmark": "/tə/ /mit/ /ən/ /old/ /frɛnd/"
+	},
+	{
+		"chinese": "我（过去）遇见一个老朋友",
+		"english": "I met an old friend",
+		"soundmark": "/aɪ/ /mɛt/ /ən/ /old/ /frɛnd/"
+	},
+	{
+		"chinese": "我（过去）正在从学校走路回家",
+		"english": "I was walking home from school",
+		"soundmark": "/aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当我（过去）正在从学校走路回家的时候",
+		"english": "when I was walking home from school",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "当我（过去）正在从学校走路回家的时候我（过去）遇见一个老朋友",
+		"english": "I met an old friend when I was walking home from school",
+		"soundmark": "/aɪ/ /mɛt/ /ən/ /old/ /frɛnd/ /wɛn/ /aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "to sleep",
+		"soundmark": "/tə/ /slip/"
+	},
+	{
+		"chinese": "卧室",
+		"english": "the bedroom",
+		"soundmark": "/ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "在卧室里",
+		"english": "in the bedroom",
+		"soundmark": "/ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "在卧室里睡觉",
+		"english": "to sleep in the bedroom",
+		"soundmark": "/tə/ /slip/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "正在睡觉",
+		"english": "sleeping",
+		"soundmark": "/ˈslipɪŋ/"
+	},
+	{
+		"chinese": "正在在卧室里睡觉",
+		"english": "sleeping in the bedroom",
+		"soundmark": "/ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "我正在在卧室里睡觉",
+		"english": "I am sleeping in the bedroom",
+		"soundmark": "/aɪ/ /æm/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "打电话",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"chinese": "打电话给我",
+		"english": "to call me",
+		"soundmark": "/tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（过去）打电话给我",
+		"english": "she called me",
+		"soundmark": "/ʃi/ /kɔld/ /mi/"
+	},
+	{
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当她（过去）打电话给我的时候",
+		"english": "when she called me",
+		"soundmark": "/wɛn/ /ʃi/ /kɔld/ /mi/"
+	},
+	{
+		"chinese": "我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "当她打电话给我的时候我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom when she called me",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/ /wɛn/ /ʃi/ /kɔld/ /mi/"
+	},
+	{
+		"chinese": "玩",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
+	},
+	{
+		"chinese": "钢琴",
+		"english": "the piano",
+		"soundmark": "/ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "弹钢琴",
+		"english": "to play the piano",
+		"soundmark": "/tə/ /ple/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "正在玩",
+		"english": "playing",
+		"soundmark": "/pleɪŋ/"
+	},
+	{
+		"chinese": "正在弹钢琴",
+		"english": "playing the piano",
+		"soundmark": "/pleɪŋ/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "她正在弹钢琴",
+		"english": "she is playing the piano",
+		"soundmark": "/ʃi/ /ɪz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "她（过去）正在弹钢琴",
+		"english": "she was playing the piano",
+		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "起居室；客厅",
+		"english": "the living room",
+		"soundmark": "/ðə/ /'lɪvɪŋ/ /rum/"
+	},
+	{
+		"chinese": "在客厅",
+		"english": "in the living room",
+		"soundmark": "/ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
+	},
+	{
+		"chinese": "她（过去）正在在客厅弹钢琴",
+		"english": "she was playing the piano in the living room",
+		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "她（过去）正在在客厅弹钢琴与此同时我（过去）正在在卧室里睡觉",
+		"english": "she was playing the piano in the living room while I was sleeping in the bedroom",
+		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/ /waɪl/ /aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	}
 ]

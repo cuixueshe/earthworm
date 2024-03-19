@@ -1,48 +1,8 @@
 [
 	{
-		"chinese": "手",
-		"english": "hand",
-		"soundmark": "/hænd/"
-	},
-	{
-		"chinese": "手（复数）",
-		"english": "hands",
-		"soundmark": "/hændz/"
-	},
-	{
-		"chinese": "递给",
-		"english": "to hand",
-		"soundmark": "/tə/ /hænd/"
-	},
-	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
-	},
-	{
-		"chinese": "递给他",
-		"english": "to hand him",
-		"soundmark": "/tə/ /hænd/ /hɪm/"
-	},
-	{
-		"chinese": "香蕉",
-		"english": "banana",
-		"soundmark": "/bə'nænə/"
-	},
-	{
-		"chinese": "一个香蕉",
-		"english": "a banana",
-		"soundmark": "/ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "递给他一个香蕉",
-		"english": "to hand him a banana",
-		"soundmark": "/tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "他",
-		"english": "he",
-		"soundmark": "/hi/"
+		"chinese": "购物",
+		"english": "to shop",
+		"soundmark": "/tə/ /ʃɑp/"
 	},
 	{
 		"chinese": "想要",
@@ -50,499 +10,124 @@
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "他想要",
-		"english": "he wants",
-		"soundmark": "/hi/ /wɑnts/"
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
+		"chinese": "我们想要",
+		"english": "we want",
+		"soundmark": "/wi/ /wɑnt/"
 	},
 	{
-		"chinese": "他想要我",
-		"english": "he wants me",
-		"soundmark": "/hi/ /wɑnts/ /mi/"
+		"chinese": "我们想要购物",
+		"english": "we want to shop",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /ʃɑp/"
 	},
 	{
-		"chinese": "递给他一个香蕉",
-		"english": "to hand him a banana",
-		"soundmark": "/tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"
+		"chinese": "市场",
+		"english": "the market",
+		"soundmark": "/ðə/ /'mɑrkɪt/"
 	},
 	{
-		"chinese": "他想要我递给他一个香蕉",
-		"english": "he wants me to hand him a banana",
-		"soundmark": "/hi/ /wɑnts/ /mi/ /tə/ /hænd/ /hɪm/ /ə/ /bə'nænə/"
+		"chinese": "在",
+		"english": "at",
+		"soundmark": "/ət/"
 	},
 	{
-		"chinese": "手机",
-		"english": "phone",
-		"soundmark": "/fon/"
+		"chinese": "在市场",
+		"english": "at the market",
+		"soundmark": "/ət/ /ðə/ /'mɑrkɪt/"
 	},
 	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
+		"chinese": "购物",
+		"english": "to shop",
+		"soundmark": "/tə/ /ʃɑp/"
 	},
 	{
-		"chinese": "他的手机",
-		"english": "his phone",
-		"soundmark": "/hɪz/ /fon/"
+		"chinese": "在市场购物",
+		"english": "to shop at the market",
+		"soundmark": "/tə/ /ʃɑp/ /ət/ /ðə/ /'mɑrkɪt/"
 	},
 	{
-		"chinese": "递给他",
-		"english": "to hand him",
-		"soundmark": "/tə/ /hænd/ /hɪm/"
+		"chinese": "我们想要在市场购物",
+		"english": "we want to shop at the market",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /ʃɑp/ /ət/ /ðə/ /'mɑrkɪt/"
 	},
 	{
-		"chinese": "递给他他的手机",
-		"english": "to hand him his phone",
-		"soundmark": "/tə/ /hænd/ /hɪm/ /hɪz/ /fon/"
+		"chinese": "超级",
+		"english": "super",
+		"soundmark": "/'sʊpɚ/"
 	},
 	{
-		"chinese": "他想要我",
-		"english": "he wants me",
-		"soundmark": "/hi/ /wɑnts/ /mi/"
+		"chinese": "超级市场",
+		"english": "supermarket",
+		"soundmark": "/'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "他想要我递给他他的手机",
-		"english": "he wants me to hand him his phone",
-		"soundmark": "/hi/ /wɑnts/ /mi/ /tə/ /hænd/ /hɪm/ /hɪz/ /fon/"
+		"chinese": "在超市",
+		"english": "at the supermarket",
+		"soundmark": "/ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
+		"chinese": "我们想要在超市购物",
+		"english": "we want to shop at the supermarket",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /ʃɑp/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "递给我",
-		"english": "to hand me",
-		"soundmark": "/tə/ /hænd/ /mi/"
+		"chinese": "我们在超市购物",
+		"english": "we shop at the supermarket",
+		"soundmark": "/wi/ /ʃɑp/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "包",
-		"english": "bag",
-		"soundmark": "/bæɡ/"
+		"chinese": "购物(ing形式)",
+		"english": "shopping",
+		"soundmark": "/'ʃɑpɪŋ/"
 	},
 	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
+		"chinese": "是；赋值(原型)",
+		"english": "be",
+		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "你的包",
-		"english": "your bag",
-		"soundmark": "/jʊr/ /bæɡ/"
+		"chinese": "正在购物",
+		"english": "be shopping",
+		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "递给我你的包",
-		"english": "to hand me your bag",
-		"soundmark": "/tə/ /hænd/ /mi/ /jʊr/ /bæɡ/"
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "想要",
-		"english": "want",
-		"soundmark": "/wɑnt/"
+		"chinese": "我们(现在)正在购物",
+		"english": "we are shopping",
+		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/"
 	},
 	{
-		"chinese": "我想要你",
-		"english": "I want you",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+		"chinese": "在超市",
+		"english": "at the supermarket",
+		"soundmark": "/ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "我想要你递给我你的包",
-		"english": "I want you to hand me your bag",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /jʊr/ /bæɡ/"
+		"chinese": "我们(现在)正在在超市购物",
+		"english": "we are shopping at the supermarket",
+		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "学校",
-		"english": "school",
-		"soundmark": "/skul/"
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "包",
-		"english": "bag",
-		"soundmark": "/bæɡ/"
+		"chinese": "我们现在正在在超市购物",
+		"english": "we are shopping at the supermarket now",
+		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /naʊ/"
 	},
 	{
-		"chinese": "书包",
-		"english": "school bag",
-		"soundmark": "/skul/ /bæɡ/"
-	},
-	{
-		"chinese": "你的",
-		"english": "your",
-		"soundmark": "/jʊr/"
-	},
-	{
-		"chinese": "你的书包",
-		"english": "your school bag",
-		"soundmark": "/jʊr/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "递给我",
-		"english": "to hand me",
-		"soundmark": "/tə/ /hænd/ /mi/"
-	},
-	{
-		"chinese": "递给我你的书包",
-		"english": "to hand me your school bag",
-		"soundmark": "/tə/ /hænd/ /mi/ /jʊr/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "我想要你",
-		"english": "I want you",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/"
-	},
-	{
-		"chinese": "我想要你递给我你的书包",
-		"english": "I want you to hand me your school bag",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /jʊr/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的书包",
-		"english": "my school bag",
-		"soundmark": "/maɪ/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "递给我我的书包",
-		"english": "to hand me my school bag",
-		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "我想要你",
-		"english": "I want you",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/"
-	},
-	{
-		"chinese": "我想要你递给我我的书包",
-		"english": "I want you to hand me my school bag",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "手机",
-		"english": "phone",
-		"soundmark": "/fon/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的手机",
-		"english": "my phone",
-		"soundmark": "/maɪ/ /fon/"
-	},
-	{
-		"chinese": "递给我",
-		"english": "to hand me",
-		"soundmark": "/tə/ /hænd/ /mi/"
-	},
-	{
-		"chinese": "递给我我的手机",
-		"english": "to hand me my phone",
-		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "我想要你",
-		"english": "I want you",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/"
-	},
-	{
-		"chinese": "我想要你递给我我的手机",
-		"english": "I want you to hand me my phone",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "你需要",
-		"english": "you need",
-		"soundmark": "/ju/ /nid/"
-	},
-	{
-		"chinese": "递给我我的手机",
-		"english": "to hand me my phone",
-		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你需要递给我我的手机",
-		"english": "you need to hand me my phone",
-		"soundmark": "/ju/ /nid/ /tə/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你递给我我的手机",
-		"english": "you hand me my phone",
-		"soundmark": "/ju/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "递给我我的手机",
-		"english": "hand me my phone",
-		"soundmark": "/hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "一个香蕉",
-		"english": "a banana",
-		"soundmark": "/ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "递给我一个香蕉",
-		"english": "hand me a banana",
-		"soundmark": "/hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "我的包",
-		"english": "my bag",
-		"soundmark": "/maɪ/ /bæɡ/"
-	},
-	{
-		"chinese": "递给我我的包",
-		"english": "hand me my bag",
-		"soundmark": "/hænd/ /mi/ /maɪ/ /bæɡ/"
-	},
-	{
-		"chinese": "请求麻烦一下",
-		"english": "please",
-		"soundmark": "/pliz/"
-	},
-	{
-		"chinese": "麻烦一下递给我我的包",
-		"english": "please hand me my bag",
-		"soundmark": "/pliz/ /hænd/ /mi/ /maɪ/ /bæɡ/"
-	},
-	{
-		"chinese": "麻烦一下递给我一个香蕉",
-		"english": "please hand me a banana",
-		"soundmark": "/pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "麻烦一下递给我我的手机",
-		"english": "please hand me my phone",
-		"soundmark": "/pliz/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "可以",
-		"english": "can",
-		"soundmark": "/kən/"
-	},
-	{
-		"chinese": "你可以",
-		"english": "you can",
-		"soundmark": "/ju/ /kən/"
-	},
-	{
-		"chinese": "递给我我的手机",
-		"english": "to hand me my phone",
-		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你可以递给我我的手机",
-		"english": "you can hand me my phone",
-		"soundmark": "/ju/ /kən/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你可以递给我我的手机吗？",
-		"english": "can you hand me my phone",
-		"soundmark": "/kən/ /ju/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你可以......吗？",
-		"english": "can you",
-		"soundmark": "/kən/ /ju/"
-	},
-	{
-		"chinese": "一个香蕉",
-		"english": "a banana",
-		"soundmark": "/ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "递给我",
-		"english": "to hand me",
-		"soundmark": "/tə/ /hænd/ /mi/"
-	},
-	{
-		"chinese": "递给我一个香蕉",
-		"english": "to hand me a banana",
-		"soundmark": "/tə/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "你可以递给我一个香蕉吗？",
-		"english": "can you hand me a banana",
-		"soundmark": "/kən/ /ju/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "请求麻烦一下",
-		"english": "please",
-		"soundmark": "/pliz/"
-	},
-	{
-		"chinese": "你可以麻烦一下递给我我的手机吗？",
-		"english": "can you please hand me my phone",
-		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你可以麻烦一下......吗？",
-		"english": "can you please",
-		"soundmark": "/kən/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "递给我一个香蕉",
-		"english": "to hand me a banana",
-		"soundmark": "/tə/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "你可以麻烦一下递给我一个香蕉吗？",
-		"english": "can you please hand me a banana",
-		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "可以",
-		"english": "can",
-		"soundmark": "/kən/"
-	},
-	{
-		"chinese": "可以（礼貌版）",
-		"english": "could",
-		"soundmark": "/kʊd/"
-	},
-	{
-		"chinese": "你可以麻烦一下递给我一个香蕉吗？",
-		"english": "can you please hand me a banana",
-		"soundmark": "/kən/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下递给我一个香蕉吗？",
-		"english": "could you please hand me a banana",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /ə/ /bə'nænə/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "递给我我的手机",
-		"english": "to hand me my phone",
-		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下递给我我的手机吗？",
-		"english": "could you please hand me my phone",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /fon/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "递给我我的书包",
-		"english": "to hand me my school bag",
-		"soundmark": "/tə/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下递给我我的书包吗？",
-		"english": "could you please hand me my school bag",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /hænd/ /mi/ /maɪ/ /skul/ /bæɡ/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "帮助",
-		"english": "to help",
-		"soundmark": "/tə/ /hɛlp/"
-	},
-	{
-		"chinese": "帮助我",
-		"english": "to help me",
-		"soundmark": "/tə/ /hɛlp/ /mi/"
-	},
-	{
-		"chinese": "你可以（礼貌版）麻烦一下帮助我吗？",
-		"english": "could you please help me",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /hɛlp/ /mi/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
-	},
-	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
-	},
-	{
-		"chinese": "告诉我",
-		"english": "to tell me",
-		"soundmark": "/tə/ /tɛl/ /mi/"
-	},
-	{
-		"chinese": "事实；真相",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "告诉我真相",
-		"english": "to tell me the truth",
-		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "请问你可以......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "请问你可以告诉我真相吗？",
-		"english": "could you please tell me the truth",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /tɛl/ /mi/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "离开",
-		"english": "to leave",
-		"soundmark": "/tə/ /liv/"
-	},
-	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
-	},
-	{
-		"chinese": "离开我",
-		"english": "to leave me",
-		"soundmark": "/tə/ /liv/ /mi/"
-	},
-	{
-		"chinese": "单独；一个人",
-		"english": "alone",
-		"soundmark": "/ə'lon/"
-	},
-	{
-		"chinese": "离开我（让我变成）单独一个人",
-		"english": "to leave me alone",
-		"soundmark": "/tə/ /liv/ /mi/ /ə'lon/"
-	},
-	{
-		"chinese": "请问你可以......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "请问你可以走开别烦我吗？",
-		"english": "could you please leave me alone",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /tə/ /liv/ /mi/ /ə'lon/"
+		"chinese": "我们(过去)正在在超市购物",
+		"english": "we were shopping at the supermarket",
+		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
 		"chinese": "打电话",
@@ -555,34 +140,474 @@
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "打电话给我",
-		"english": "to call me",
-		"soundmark": "/tə/ /kɔl/ /mi/"
+		"chinese": "你(过去)打电话给我",
+		"english": "you called me",
+		"soundmark": "/ju/ /kɔld/ /mi/"
 	},
 	{
-		"chinese": "今晚",
-		"english": "tonight",
-		"soundmark": "/tə'naɪt/"
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "今晚打电话给我",
-		"english": "to call me tonight",
-		"soundmark": "/tə/ /kɔl/ /mi/ /tə'naɪt/"
+		"chinese": "当你(过去)打电话给我的时候",
+		"english": "when you called me",
+		"soundmark": "/wɛn/ /ju/ /kɔld/ /mi/"
 	},
 	{
-		"chinese": "请问你可以......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
+		"chinese": "星期天",
+		"english": "Sunday",
+		"soundmark": "/ˈsʌnde/"
 	},
 	{
-		"chinese": "请问你可以今晚打电话给我吗？",
-		"english": "could you please call me tonight",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /kɔl/ /mi/ /tə'naɪt/"
+		"chinese": "上一个",
+		"english": "last",
+		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "给",
-		"english": "to give",
-		"soundmark": "/tə/ /ɡɪv/"
+		"chinese": "上周日",
+		"english": "last Sunday",
+		"soundmark": "/læst/ /ˈsʌnde/"
+	},
+	{
+		"chinese": "当你上周日打电话给我的时候",
+		"english": "when you called me last Sunday",
+		"soundmark": "/wɛn/ /ju/ /kɔld/ /mi/ /læst/ /ˈsʌnde/"
+	},
+	{
+		"chinese": "我们(过去)正在在超市购物当你上周日打电话给我的时候",
+		"english": "we were shopping at the supermarket when you called me last Sunday",
+		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /wɛn/ /ju/ /kɔld/ /mi/ /læst/ /ˈsʌnde/"
+	},
+	{
+		"chinese": "我们上周日正在在超市购物",
+		"english": "we were shopping at the supermarket last Sunday",
+		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /læst/ /ˈsʌnde/"
+	},
+	{
+		"chinese": "我们(过去)正在购物",
+		"english": "we were shopping",
+		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/"
+	},
+	{
+		"chinese": "我们(现在)正在购物",
+		"english": "we are shopping",
+		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/"
+	},
+	{
+		"chinese": "将会",
+		"english": "will",
+		"soundmark": "/wɪl/"
+	},
+	{
+		"chinese": "我们将会正在购物",
+		"english": "we will be shopping",
+		"soundmark": "/wi/ /wɪl/ /bi/ /'ʃɑpɪŋ/"
+	},
+	{
+		"chinese": "在超市",
+		"english": "at the supermarket",
+		"soundmark": "/ət/ /ðə/ /'sʊpɚmɑrkɪt/"
+	},
+	{
+		"chinese": "我们将会正在在超市购物",
+		"english": "we will be shopping at the supermarket",
+		"soundmark": "/wi/ /wɪl/ /bi/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
+	},
+	{
+		"chinese": "星期一",
+		"english": "Monday",
+		"soundmark": "/ˈmʌnde/"
+	},
+	{
+		"chinese": "下一个",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"chinese": "下周一",
+		"english": "next Monday",
+		"soundmark": "/nɛkst/ /ˈmʌnde/"
+	},
+	{
+		"chinese": "我们将会在下周一正在在超市购物",
+		"english": "we will be shopping at the supermarket next Monday",
+		"soundmark": "/wi/ /wɪl/ /bi/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /nɛkst/ /ˈmʌnde/"
+	},
+	{
+		"chinese": "等待",
+		"english": "to wait",
+		"soundmark": "/tə/ /wet/"
+	},
+	{
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"chinese": "我需要等待",
+		"english": "I need to wait",
+		"soundmark": "/aɪ/ /nid/ /tə/ /wet/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的朋友",
+		"english": "my friend",
+		"soundmark": "/maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
+	},
+	{
+		"chinese": "为了我的朋友",
+		"english": "for my friend",
+		"soundmark": "/fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "我需要为了我的朋友等待",
+		"english": "I need to wait for my friend",
+		"soundmark": "/aɪ/ /nid/ /tə/ /wet/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "我为了我的朋友等待",
+		"english": "I wait for my friend",
+		"soundmark": "/aɪ/ /wet/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "等待(ing形式)",
+		"english": "waiting",
+		"soundmark": "/'wetɪŋ/"
+	},
+	{
+		"chinese": "是；赋值(原型)",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在等待",
+		"english": "be waiting",
+		"soundmark": "/bi/ /'wetɪŋ/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我(现在)正在等待",
+		"english": "I am waiting",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/"
+	},
+	{
+		"chinese": "为了我的朋友",
+		"english": "for my friend",
+		"soundmark": "/fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "我(现在)正在为了我的朋友等待",
+		"english": "I am waiting for my friend",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "公交车",
+		"english": "the bus",
+		"soundmark": "/ðə/ /bʌs/"
+	},
+	{
+		"chinese": "停止",
+		"english": "stop",
+		"soundmark": "/stɑp/"
+	},
+	{
+		"chinese": "公交车站",
+		"english": "the bus stop",
+		"soundmark": "/ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "在",
+		"english": "at",
+		"soundmark": "/ət/"
+	},
+	{
+		"chinese": "在公交车站",
+		"english": "at the bus stop",
+		"soundmark": "/ət/ /ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "我在公交车站(现在)正在为了我的朋友等待",
+		"english": "I am waiting for my friend at the bus stop",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我现在在公交车站正在为了我的朋友等待",
+		"english": "I am waiting for my friend at the bus stop now",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /naʊ/"
+	},
+	{
+		"chinese": "我在公交车站(过去)正在为了我的朋友等待",
+		"english": "I was waiting for my friend at the bus stop",
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "昨天",
+		"english": "yesterday",
+		"soundmark": "/'jɛstɚde/"
+	},
+	{
+		"chinese": "我昨天在公交车站正在为了我的朋友等待",
+		"english": "I was waiting for my friend at the bus stop yesterday",
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "时间；时候",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "这个",
+		"english": "this",
+		"soundmark": "/ðɪs/"
+	},
+	{
+		"chinese": "这个时候",
+		"english": "this time",
+		"soundmark": "/ðɪs/ /taɪm/"
+	},
+	{
+		"chinese": "在",
+		"english": "at",
+		"soundmark": "/ət/"
+	},
+	{
+		"chinese": "在这个时候",
+		"english": "at this time",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/"
+	},
+	{
+		"chinese": "昨天",
+		"english": "yesterday",
+		"soundmark": "/'jɛstɚde/"
+	},
+	{
+		"chinese": "在昨天这个时候",
+		"english": "at this time yesterday",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我在昨天这个时候在公交车站正在为了我的朋友等待",
+		"english": "I was waiting for my friend at the bus stop at this time yesterday",
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "在......之前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "在昨天之前",
+		"english": "before yesterday",
+		"soundmark": "/bɪ'fɔr/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "那一天",
+		"english": "the day",
+		"soundmark": "/ðə/ /de/"
+	},
+	{
+		"chinese": "在昨天之前的那一天(前天)",
+		"english": "the day before yesterday",
+		"soundmark": "/ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "在这个时候",
+		"english": "at this time",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/"
+	},
+	{
+		"chinese": "在前天这个时候",
+		"english": "at this time the day before yesterday",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我在前天这个时候在公交车站正在为了我的朋友等待",
+		"english": "I was waiting for my friend at the bus stop at this time the day before yesterday",
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我(过去)正在为了我的朋友等待",
+		"english": "I was waiting for my friend",
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "我(现在)正在为了我的朋友等待",
+		"english": "I am waiting for my friend",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "将来",
+		"english": "will",
+		"soundmark": "/wɪl/"
+	},
+	{
+		"chinese": "我将会正在为了我的朋友等待",
+		"english": "I will be waiting for my friend",
+		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "公交车",
+		"english": "the bus",
+		"soundmark": "/ðə/ /bʌs/"
+	},
+	{
+		"chinese": "停止",
+		"english": "stop",
+		"soundmark": "/stɑp/"
+	},
+	{
+		"chinese": "公交车站",
+		"english": "the bus stop",
+		"soundmark": "/ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "在公交车站",
+		"english": "at the bus stop",
+		"soundmark": "/ət/ /ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "我将会在公交车站正在为了我的朋友等待",
+		"english": "I will be waiting for my friend at the bus stop",
+		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/"
+	},
+	{
+		"chinese": "在这个时候",
+		"english": "at this time",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "在明天这个时候",
+		"english": "at this time tomorrow",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
+	},
+	{
+		"chinese": "我将会在明天这个时候在公交车站正在为了我的朋友等待",
+		"english": "I will be waiting for my friend at the bus stop at this time tomorrow",
+		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
+	},
+	{
+		"chinese": "在......之后",
+		"english": "after",
+		"soundmark": "/'æftɚ/"
+	},
+	{
+		"chinese": "在明天之后",
+		"english": "after tomorrow",
+		"soundmark": "/'æftɚ/ /tə'mɔro/"
+	},
+	{
+		"chinese": "那一天",
+		"english": "the day",
+		"soundmark": "/ðə/ /de/"
+	},
+	{
+		"chinese": "在明天之后的那一天(后天)",
+		"english": "the day after tomorrow",
+		"soundmark": "/ðə/ /de/ /'æftɚ/ /tə'mɔro/"
+	},
+	{
+		"chinese": "在这个时候",
+		"english": "at this time",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/"
+	},
+	{
+		"chinese": "后天这个时候",
+		"english": "at this time the day after tomorrow",
+		"soundmark": "/ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /'æftɚ/ /tə'mɔro/"
+	},
+	{
+		"chinese": "我将会在后天这个时候在公交车站正在为了我的朋友等待",
+		"english": "I will be waiting for my friend at the bus stop at this time the day after tomorrow",
+		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /'æftɚ/ /tə'mɔro/"
+	},
+	{
+		"chinese": "我将会为了我的朋友正在等待",
+		"english": "I will be waiting for my friend",
+		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他将会为了我的朋友正在等待",
+		"english": "he will be waiting for my friend",
+		"soundmark": "/hi/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "他们",
+		"english": "they",
+		"soundmark": "/ðe/"
+	},
+	{
+		"chinese": "他们将会为了我的朋友正在等待",
+		"english": "they will be waiting for my friend",
+		"soundmark": "/ðe/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "我(现在)正在为了我的朋友等待",
+		"english": "I am waiting for my friend",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "我(现在)正在等待",
+		"english": "I am waiting",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
+	},
+	{
+		"chinese": "为了你",
+		"english": "for you",
+		"soundmark": "/fɝ/ /ju/"
+	},
+	{
+		"chinese": "我(现在)正在为了你等待",
+		"english": "I am waiting for you",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /ju/"
+	},
+	{
+		"chinese": "问",
+		"english": "to ask",
+		"soundmark": "/tə/ /æsk/"
 	},
 	{
 		"chinese": "我",
@@ -590,58 +615,53 @@
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "给我",
-		"english": "to give me",
-		"soundmark": "/tə/ /ɡɪv/ /mi/"
+		"chinese": "问我",
+		"english": "to ask me",
+		"soundmark": "/tə/ /æsk/ /mi/"
 	},
 	{
-		"chinese": "手",
-		"english": "hand",
-		"soundmark": "/hænd/"
+		"chinese": "那个",
+		"english": "that",
+		"soundmark": "/ðæt/"
 	},
 	{
-		"chinese": "一只手",
-		"english": "a hand",
-		"soundmark": "/ə/ /hænd/"
+		"chinese": "问题",
+		"english": "question",
+		"soundmark": "/'kwɛstʃən/"
 	},
 	{
-		"chinese": "给我帮把手",
-		"english": "to give me a hand",
-		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"
+		"chinese": "那个问题",
+		"english": "that question",
+		"soundmark": "/ðæt/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "请问你可以......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
+		"chinese": "问我那个问题",
+		"english": "to ask me that question",
+		"soundmark": "/tə/ /æsk/ /mi/ /ðæt/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "请问你可以给我帮把手吗？",
-		"english": "could you please give me a hand",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /ɡɪv/ /mi/ /ə/ /hænd/"
+		"chinese": "我(现在)正在等你问我",
+		"english": "I am waiting for you to ask me",
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /ju/ /tə/ /æsk/ /mi/"
 	},
 	{
-		"chinese": "打开",
-		"english": "to open",
-		"soundmark": "/tə/ /'opən/"
+		"chinese": "问题",
+		"english": "that question",
+		"soundmark": "/ðæt/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "门",
-		"english": "the door",
-		"soundmark": "/ðə/ /dɔr/"
+		"chinese": "我(过去)正在等你问我那个问题",
+		"english": "I was waiting for you to ask me that question",
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /ju/ /tə/ /æsk/ /mi/ /ðæt/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "打开门",
-		"english": "to open the door",
-		"soundmark": "/tə/ /'opən/ /ðə/ /dɔr/"
+		"chinese": "将会",
+		"english": "will",
+		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "请问你可以......吗？",
-		"english": "could you please",
-		"soundmark": "/kʊd/ /ju/ /pliz/"
-	},
-	{
-		"chinese": "请问你可以打开门吗",
-		"english": "could you please open the door",
-		"soundmark": "/kʊd/ /ju/ /pliz/ /'opən/ /ðə/ /dɔr/"
+		"chinese": "我将会正在等你问我那个问题",
+		"english": "I will be waiting for you to ask me that question",
+		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /ju/ /tə/ /æsk/ /mi/ /ðæt/ /'kwɛstʃən/"
 	}
 ]

@@ -15,8 +15,8 @@ export async function inquire(folderPath: string): Promise<string[]> {
       .then((answers) => {
         if (answers.action === "生成所有文件路径") {
           const allFiles = listAllFiles(folderPath);
-          const result = allFiles.forEach((file) => console.log(file));
-          resolve(result);
+          allFiles.forEach((file) => console.log(file));
+          resolve(allFiles.map(({value})=> value));
         } else if (answers.action === "手动选取文件") {
           const files = listAllFiles(folderPath);
           inquirer
@@ -39,6 +39,11 @@ export async function inquire(folderPath: string): Promise<string[]> {
 
 function listAllFiles(folderPath) {
   const files = fs.readdirSync(folderPath);
+  files.sort((a, b) => {
+    return parseFloat(a) - parseFloat(b);
+  });
+
+  // files
   return files.map((file, index) => ({
     name: `${index + 1}. ${file}`,
     value: `${folderPath}/${file}`,

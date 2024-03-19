@@ -1,7 +1,7 @@
-import {drizzle} from 'drizzle-orm/mysql2'
-import * as  mysql from 'mysql2/promise';
-import path from 'node:path'
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
+import { drizzle } from 'drizzle-orm/mysql2';
+import * as mysql from 'mysql2/promise';
+import path from 'node:path';
 
 dotenv.config({ path: path.resolve(__dirname, "../../apps/api/.env") });
 

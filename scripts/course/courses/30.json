@@ -1,298 +1,78 @@
 [
 	{
-		"chinese": "注意到；察觉到",
-		"english": "to notice",
-		"soundmark": "/tə/ /ˈnotɪs/"
+		"chinese": "惊喜",
+		"english": "surprise",
+		"soundmark": "/sɚ'praɪz/"
 	},
 	{
-		"chinese": "你将会",
-		"english": "you will",
-		"soundmark": "/ju/ /wɪl/"
+		"chinese": "一个惊喜",
+		"english": "a surprise",
+		"soundmark": "/ə/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "你将会注意到",
-		"english": "you will notice",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/"
+		"chinese": "大的",
+		"english": "big",
+		"soundmark": "/bɪɡ/"
 	},
 	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
+		"chinese": "一个大惊喜",
+		"english": "a big surprise",
+		"soundmark": "/ə/ /bɪɡ/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "你将会注意到那个",
-		"english": "you will notice that",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/"
-	},
-	{
-		"chinese": "付出",
-		"english": "to pay",
-		"soundmark": "/tə/ /pe/"
-	},
-	{
-		"chinese": "注意力",
-		"english": "attention",
-		"soundmark": "/ə'tɛnʃən/"
-	},
-	{
-		"chinese": "付出注意力",
-		"english": "to pay attention",
-		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "付出注意力在......",
-		"english": "to pay attention to",
-		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/ /tə/"
-	},
-	{
-		"chinese": "密切的",
-		"english": "close",
-		"soundmark": "/kloz/"
-	},
-	{
-		"chinese": "密切关注",
-		"english": "to pay close attention",
-		"soundmark": "/tə/ /pe/ /kloz/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "你密切关注",
-		"english": "you pay close attention",
-		"soundmark": "/ju/ /pe/ /kloz/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "如果",
-		"english": "if",
-		"soundmark": "/ɪf/"
-	},
-	{
-		"chinese": "如果你密切关注",
-		"english": "if you pay close attention",
-		"soundmark": "/ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "你将会注意到那个如果你密切关注",
-		"english": "you will notice that if you pay close attention",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/ /ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "不同的",
-		"english": "different",
-		"soundmark": "/'dɪfrənt/"
-	},
-	{
-		"chinese": "不同之处",
-		"english": "difference",
-		"soundmark": "/'dɪfrəns/"
-	},
-	{
-		"chinese": "很多",
-		"english": "many",
-		"soundmark": "/'mɛni/"
-	},
-	{
-		"chinese": "很多不同之处",
-		"english": "many differences",
-		"soundmark": "/'mɛni/ /'dɪfrənsɪz/"
-	},
-	{
-		"chinese": "存在（复数）",
-		"english": "there are",
-		"soundmark": "/ðɛr/ /ɚ/"
-	},
-	{
-		"chinese": "存在很多不同之处",
-		"english": "there are many differences",
-		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənsɪz/"
-	},
-	{
-		"chinese": "美国的",
-		"english": "American",
-		"soundmark": "/ə'mɛrikən/"
-	},
-	{
-		"chinese": "英语",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "美式英语",
-		"english": "American English",
-		"soundmark": "/ə'mɛrikən/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "英国的",
-		"english": "British",
-		"soundmark": "/'brɪtɪʃ/"
-	},
-	{
-		"chinese": "英式英语",
-		"english": "British English",
-		"soundmark": "/'brɪtɪʃ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "美式英语和英式英语",
-		"english": "American English and British English",
-		"soundmark": "/ə'mɛrikən/ /ˈɪŋɡlɪʃ/ /ənd/ /'brɪtɪʃ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "在美式英语和英式英语之间",
-		"english": "between American English and British English",
-		"soundmark": "/bɪ'twin/ /ə'mɛrikən/ /ˈɪŋɡlɪʃ/ /ənd/ /'brɪtɪʃ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "存在很多不同之处",
-		"english": "there are many differences",
-		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənsɪz/"
-	},
-	{
-		"chinese": "在美式英语和英式英语之间存在很多不同之处",
-		"english": "there are many differences between American English and British English",
-		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənsɪz/ /bɪ'twin/ /ə'mɛrikən/ /ˈɪŋɡlɪʃ/ /ənd/ /'brɪtɪʃ/ /ˈɪŋɡlɪʃ/"
-	},
-	{
-		"chinese": "你将会注意到",
-		"english": "you will notice",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/"
-	},
-	{
-		"chinese": "你将会注意到那个",
-		"english": "you will notice that",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/"
-	},
-	{
-		"chinese": "你将会注意到（那个）在美式英语和英式英语之间存在很多不同之处",
-		"english": "you will notice that there are many differences between American English and British",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/ /ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənsɪz/ /bɪ'twin/ /ə'mɛrikən/ /ˈɪŋɡlɪʃ/ /ənd/ /'brɪtɪʃ/ /ˈɪŋɡlɪʃ/ /English/"
-	},
-	{
-		"chinese": "如果你密切关注",
-		"english": "if you pay close attention",
-		"soundmark": "/ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "你将会注意到（那个）在美式英语和英式英语之间存在很多不同之处如果你密切关注",
-		"english": "you will notice that there are many differences between American English and British English if you pay close attention",
-		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/ /ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənsɪz/ /bɪ'twin/ /ə'mɛrikən/ /ˈɪŋɡlɪʃ/ /ənd/ /'brɪtɪʃ/ /ˈɪŋɡlɪʃ/ /ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
-	},
-	{
-		"chinese": "不同之处",
-		"english": "difference",
-		"soundmark": "/'dɪfrəns/"
-	},
-	{
-		"chinese": "不同的",
-		"english": "different",
-		"soundmark": "/'dɪfrənt/"
-	},
-	{
-		"chinese": "你",
-		"english": "you",
-		"soundmark": "/ju/"
-	},
-	{
-		"chinese": "你是不同的",
-		"english": "you are different",
-		"soundmark": "/ju/ /ɚ/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "假装",
-		"english": "to pretend",
-		"soundmark": "/tə/ /prɪˈtɛnd/"
-	},
-	{
-		"chinese": "你假装是不同的",
-		"english": "you pretend to be different",
-		"soundmark": "/ju/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "你需要假装是不同的",
-		"english": "you need to pretend to be different",
-		"soundmark": "/ju/ /nid/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "你不需要假装是不同的",
-		"english": "you don't need to pretend to be different",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "无辜的",
-		"english": "innocent",
-		"soundmark": "/ˈɪnəsnt/"
-	},
-	{
-		"chinese": "你不需要假装是无辜的",
-		"english": "you don't need to pretend to be innocent",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /ˈɪnəsnt/"
-	},
-	{
-		"chinese": "我不想",
-		"english": "I don't want",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/"
-	},
-	{
-		"chinese": "我不想假装是不同的",
-		"english": "I don't want to pretend to be different",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "那个人",
-		"english": "the person",
-		"soundmark": "/ðə/ /'pɝsn/"
-	},
-	{
-		"chinese": "我不想假装是那个人",
-		"english": "I don't want to pretend to be the person",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /ðə/ /'pɝsn/"
+		"chinese": "给",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
 		"chinese": "她",
-		"english": "she",
-		"soundmark": "/ʃi/"
+		"english": "her",
+		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "医生",
-		"english": "doctor",
-		"soundmark": "/'dɑktɚ/"
+		"chinese": "给她",
+		"english": "to give her",
+		"soundmark": "/tə/ /ɡɪv/ /hɚ/"
 	},
 	{
-		"chinese": "她是一名医生",
-		"english": "she is a doctor",
-		"soundmark": "/ʃi/ /ɪz/ /ə/ /'dɑktɚ/"
+		"chinese": "给她一个大惊喜",
+		"english": "to give her a big surprise",
+		"soundmark": "/tə/ /ɡɪv/ /hɚ/ /ə/ /bɪɡ/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "她想要",
-		"english": "she wants",
-		"soundmark": "/ʃi/ /wɑnts/"
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "她想要成为一名医生",
-		"english": "she wants to be a doctor",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /bi/ /ə/ /'dɑktɚ/"
+		"chinese": "我想要给她一个大惊喜",
+		"english": "I want to give her a big surprise",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡɪv/ /hɚ/ /ə/ /bɪɡ/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "那个人",
-		"english": "the person",
-		"soundmark": "/ðə/ /'pɝsn/"
+		"chinese": "给",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "她想要成为那个人",
-		"english": "she wants to be the person",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /bi/ /ðə/ /'pɝsn/"
+		"chinese": "建议",
+		"english": "advice",
+		"soundmark": "/əd'vaɪs/"
+	},
+	{
+		"chinese": "一些",
+		"english": "some",
+		"soundmark": "/səm/"
+	},
+	{
+		"chinese": "一些建议",
+		"english": "some advice",
+		"soundmark": "/səm/ /əd'vaɪs/"
+	},
+	{
+		"chinese": "给一些建议",
+		"english": "to give some advice",
+		"soundmark": "/tə/ /ɡɪv/ /səm/ /əd'vaɪs/"
 	},
 	{
 		"chinese": "我",
@@ -300,264 +80,74 @@
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "她想要我成为那个人",
-		"english": "she wants me to be the person",
-		"soundmark": "/ʃi/ /wɑnts/ /mi/ /tə/ /bi/ /ðə/ /'pɝsn/"
+		"chinese": "给我",
+		"english": "to give me",
+		"soundmark": "/tə/ /ɡɪv/ /mi/"
 	},
 	{
-		"chinese": "她想要我成为的那个人",
-		"english": "the person she wants me to be",
-		"soundmark": "/ðə/ /'pɝsn/ /ʃi/ /wɑnts/ /mi/ /tə/ /bi/"
+		"chinese": "给我一些建议",
+		"english": "to give me some advice",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "我不想假装是那个人",
-		"english": "I don't want to pretend to be the person",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /ðə/ /'pɝsn/"
+		"chinese": "可以",
+		"english": "can",
+		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "我不想假装是她想要我成为的那个人",
-		"english": "I don't want to pretend to be the person she wants me to be",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /ðə/ /'pɝsn/ /ʃi/ /wɑnts/ /mi/ /tə/ /bi/"
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "假装",
-		"english": "to pretend",
-		"soundmark": "/tə/ /prɪˈtɛnd/"
+		"chinese": "你可以给我一些建议",
+		"english": "you can give me some advice",
+		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "你需要",
-		"english": "you need",
-		"soundmark": "/ju/ /nid/"
+		"chinese": "你可以给我一些建议吗？",
+		"english": "can you give me some advice",
+		"soundmark": "/kæn/ /ju/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "你不需要",
-		"english": "you don't need",
-		"soundmark": "/ju/ /dont/ /nid/"
+		"chinese": "希望",
+		"english": "to hope",
+		"soundmark": "/tə/ /hop/"
 	},
 	{
-		"chinese": "你不需要假装",
-		"english": "you don't need to pretend",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /prɪˈtɛnd/"
+		"chinese": "我希望",
+		"english": "I hope",
+		"soundmark": "/aɪ/ /hop/"
 	},
 	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
+		"chinese": "我希望你可以给我一些建议",
+		"english": "I hope you can give me some advice",
+		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "你不需要假装（那个）",
-		"english": "you don't need to pretend that",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /prɪˈtɛnd/ /ðæt/"
+		"chinese": "希望",
+		"english": "hope",
+		"soundmark": "/hop/"
 	},
 	{
-		"chinese": "注意到；察觉到",
-		"english": "to notice",
-		"soundmark": "/tə/ /ˈnotɪs/"
+		"chinese": "给",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "你注意到",
-		"english": "you notice",
-		"soundmark": "/ju/ /ˈnotɪs/"
+		"chinese": "给希望",
+		"english": "to give hope",
+		"soundmark": "/tə/ /ɡɪv/ /hop/"
 	},
 	{
-		"chinese": "你（过去）注意到",
-		"english": "you noticed",
-		"soundmark": "/ju/ /ˈnotɪst/"
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "你（过去）没有注意到",
-		"english": "you didn't notice",
-		"soundmark": "/ju/ /ˈdɪdnt/ /ˈnotɪs/"
-	},
-	{
-		"chinese": "你不需要假装（那个）你（过去）没有注意到",
-		"english": "you don't need to pretend that you didn't notice",
-		"soundmark": "/ju/ /dont/ /nid/ /tə/ /prɪˈtɛnd/ /ðæt/ /ju/ /ˈdɪdnt/ /ˈnotɪs/"
-	},
-	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "它",
-		"english": "it",
-		"soundmark": "/ɪt/"
-	},
-	{
-		"chinese": "它是重要的",
-		"english": "it is important",
-		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
-	},
-	{
-		"chinese": "它是更重要的",
-		"english": "it is more important",
-		"soundmark": "/ɪt/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "任何事情",
-		"english": "anything",
-		"soundmark": "/’ɛnɪθɪŋ/"
-	},
-	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
-	},
-	{
-		"chinese": "比任何事情",
-		"english": "than anything",
-		"soundmark": "/ðæn/ /’ɛnɪθɪŋ/"
-	},
-	{
-		"chinese": "它是比任何事情更重要的",
-		"english": "it is more important than anything",
-		"soundmark": "/ɪt/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/"
-	},
-	{
-		"chinese": "其他的",
-		"english": "else",
-		"soundmark": "/ɛls/"
-	},
-	{
-		"chinese": "其他的任何事情",
-		"english": "anything else",
-		"soundmark": "/’ɛnɪθɪŋ/ /ɛls/"
-	},
-	{
-		"chinese": "它是比其他的任何事情更重要的",
-		"english": "it is more important than anything else",
-		"soundmark": "/ɪt/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/ /ɛls/"
-	},
-	{
-		"chinese": "家庭",
-		"english": "family",
-		"soundmark": "/ˈfæməli/"
-	},
-	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
-	},
-	{
-		"chinese": "比家庭",
-		"english": "than family",
-		"soundmark": "/ðæn/ /ˈfæməli/"
-	},
-	{
-		"chinese": "没有东西",
-		"english": "nothing",
-		"soundmark": "/'nʌθɪŋ/"
-	},
-	{
-		"chinese": "没有东西比家庭是更重要的",
-		"english": "nothing is more important than family",
-		"soundmark": "/'nʌθɪŋ/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /ˈfæməli/"
-	},
-	{
-		"chinese": "朋友",
-		"english": "friend",
-		"soundmark": "/frɛnd/"
-	},
-	{
-		"chinese": "船",
-		"english": "ship",
-		"soundmark": "/ʃɪp/"
-	},
-	{
-		"chinese": "友谊",
-		"english": "friendship",
-		"soundmark": "/ˈfrɛndʃɪp/"
-	},
-	{
-		"chinese": "我们的",
-		"english": "our",
-		"soundmark": "/'aʊɚ/"
-	},
-	{
-		"chinese": "我们的友谊",
-		"english": "our friendship",
-		"soundmark": "/'aʊɚ/ /ˈfrɛndʃɪp/"
-	},
-	{
-		"chinese": "没有东西比我们的友谊是更重要的",
-		"english": "nothing is more important than our friendship",
-		"soundmark": "/'nʌθɪŋ/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /'aʊɚ/ /ˈfrɛndʃɪp/"
-	},
-	{
-		"chinese": "家庭",
-		"english": "family",
-		"soundmark": "/ˈfæməli/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的家庭",
-		"english": "my family",
-		"soundmark": "/maɪ/ /ˈfæməli/"
-	},
-	{
-		"chinese": "任何事情",
-		"english": "anything",
-		"soundmark": "/’ɛnɪθɪŋ/"
-	},
-	{
-		"chinese": "我的家庭比任何事情是更重要的",
-		"english": "my family is more important than anything",
-		"soundmark": "/maɪ/ /ˈfæməli/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/"
-	},
-	{
-		"chinese": "其他的",
-		"english": "else",
-		"soundmark": "/ɛls/"
-	},
-	{
-		"chinese": "我的家庭比其他的任何事情是更重要的",
-		"english": "my family is more important than anything else",
-		"soundmark": "/maɪ/ /ˈfæməli/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/ /ɛls/"
-	},
-	{
-		"chinese": "生活；生命",
-		"english": "life",
-		"soundmark": "/laɪf/"
-	},
-	{
-		"chinese": "人",
-		"english": "man",
-		"soundmark": "/mæn/"
-	},
-	{
-		"chinese": "人的生命",
-		"english": "man's life",
-		"soundmark": "/mænz/ /laɪf/"
-	},
-	{
-		"chinese": "一个人的生命",
-		"english": "a man's life",
-		"soundmark": "/ə/ /mænz/ /laɪf/"
-	},
-	{
-		"chinese": "金钱",
-		"english": "money",
-		"soundmark": "/ˈmʌni/"
-	},
-	{
-		"chinese": "一个人的生命比金钱是更重要的",
-		"english": "a man's life is more important than money",
-		"soundmark": "/ə/ /mænz/ /laɪf/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /ˈmʌni/"
-	},
-	{
-		"chinese": "做",
-		"english": "to do",
-		"soundmark": "/tə/ /du/"
+		"chinese": "给我希望",
+		"english": "to give me hope",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /hop/"
 	},
 	{
 		"chinese": "你",
@@ -565,43 +155,718 @@
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你做",
-		"english": "you do",
-		"soundmark": "/ju/ /du/"
+		"chinese": "你给我希望",
+		"english": "you give me hope",
+		"soundmark": "/ju/ /ɡɪv/ /mi/ /hop/"
 	},
 	{
-		"chinese": "那件事情",
-		"english": "the thing",
-		"soundmark": "/ðə/ /θɪŋ/"
+		"chinese": "手",
+		"english": "hand",
+		"soundmark": "/hænd/"
 	},
 	{
-		"chinese": "你做的那件事情",
-		"english": "the thing you do",
-		"soundmark": "/ðə/ /θɪŋ/ /ju/ /du/"
+		"chinese": "你的手",
+		"english": "your hand",
+		"soundmark": "/jʊr/ /hænd/"
 	},
 	{
-		"chinese": "你做的内容",
-		"english": "what you do",
-		"soundmark": "/wɑt/ /ju/ /du/"
+		"chinese": "给我",
+		"english": "to give me",
+		"soundmark": "/tə/ /ɡɪv/ /mi/"
 	},
 	{
-		"chinese": "说",
-		"english": "to say",
-		"soundmark": "/tə/ /seɪ/"
+		"chinese": "给我你的手",
+		"english": "to give me your hand",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /jʊr/ /hænd/"
 	},
 	{
-		"chinese": "你说",
-		"english": "you say",
-		"soundmark": "/ju/ /seɪ/"
+		"chinese": "给我帮把手",
+		"english": "to give me a hand",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"
 	},
 	{
-		"chinese": "你说的内容",
-		"english": "what you say",
-		"soundmark": "/wɑt/ /ju/ /seɪ/"
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你做的内容比你说的内容是更重要的",
-		"english": "what you do is more important than what you say",
-		"soundmark": "/wɑt/ /ju/ /du/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /wɑt/ /ju/ /seɪ/"
+		"chinese": "你可以给我帮把手",
+		"english": "you can give me a hand",
+		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"chinese": "你可以给我帮把手?",
+		"english": "can you give me a hand",
+		"soundmark": "/kæn/ /ju/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"chinese": "希望",
+		"english": "to hope",
+		"soundmark": "/tə/ /hop/"
+	},
+	{
+		"chinese": "我希望",
+		"english": "I hope",
+		"soundmark": "/aɪ/ /hop/"
+	},
+	{
+		"chinese": "我希望你可以给我帮把手",
+		"english": "I hope you can give me a hand",
+		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"chinese": "递",
+		"english": "to hand",
+		"soundmark": "/tə/ /hænd/"
+	},
+	{
+		"chinese": "刀",
+		"english": "knife",
+		"soundmark": "/naɪf/"
+	},
+	{
+		"chinese": "那把刀",
+		"english": "the knife",
+		"soundmark": "/ðə/ /naɪf/"
+	},
+	{
+		"chinese": "递那把刀",
+		"english": "to hand the knife",
+		"soundmark": "/tə/ /hænd/ /ðə/ /naɪf/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "递给我",
+		"english": "to hand me",
+		"soundmark": "/tə/ /hænd/ /mi/"
+	},
+	{
+		"chinese": "那把刀",
+		"english": "the knife",
+		"soundmark": "/ðə/ /naɪf/"
+	},
+	{
+		"chinese": "递给我那把刀",
+		"english": "to hand me the knife",
+		"soundmark": "/tə/ /hænd/ /mi/ /ðə/ /naɪf/"
+	},
+	{
+		"chinese": "可以",
+		"english": "can",
+		"soundmark": "/kæn/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
+	},
+	{
+		"chinese": "你可以递给我那把刀",
+		"english": "you can hand me the knife",
+		"soundmark": "/ju/ /kæn/ /hænd/ /mi/ /ðə/ /naɪf/"
+	},
+	{
+		"chinese": "你可以递给我那把刀吗?",
+		"english": "can you hand me the knife",
+		"soundmark": "/kæn/ /ju/ /hænd/ /mi/ /ðə/ /naɪf/"
+	},
+	{
+		"chinese": "可以（礼貌版）",
+		"english": "could",
+		"soundmark": "/kʊd/"
+	},
+	{
+		"chinese": "你可以（礼貌版）递给我那把刀吗？",
+		"english": "could you hand me the knife",
+		"soundmark": "/kʊd/ /ju/ /hænd/ /mi/ /ðə/ /naɪf/"
+	},
+	{
+		"chinese": "读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "故事",
+		"english": "story",
+		"soundmark": "/'stɔri/"
+	},
+	{
+		"chinese": "读一个故事",
+		"english": "to read a story",
+		"soundmark": "/tə/ /rid/ /ə/ /'stɔri/"
+	},
+	{
+		"chinese": "床",
+		"english": "bed",
+		"soundmark": "/bɛd/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "就寝时间",
+		"english": "bedtime",
+		"soundmark": "/'bɛdtaɪm/"
+	},
+	{
+		"chinese": "故事",
+		"english": "story",
+		"soundmark": "/'stɔri/"
+	},
+	{
+		"chinese": "睡前故事",
+		"english": "a bedtime story",
+		"soundmark": "/ə/ /'bɛdtaɪm/ /'stɔri/"
+	},
+	{
+		"chinese": "读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "读一个睡前故事",
+		"english": "to read a bedtime story",
+		"soundmark": "/tə/ /rid/ /ə/ /'bɛdtaɪm/ /'stɔri/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "读给她",
+		"english": "to read her",
+		"soundmark": "/tə/ /rid/ /hɚ/"
+	},
+	{
+		"chinese": "读给她一个睡前故事",
+		"english": "to read her a bedtime story",
+		"soundmark": "/tə/ /rid/ /hɚ/ /ə/ /'bɛdtaɪm/ /'stɔri/"
+	},
+	{
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "想要",
+		"english": "wants",
+		"soundmark": "/wɑnts/"
+	},
+	{
+		"chinese": "我的女儿想要我",
+		"english": "my daughter wants me",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wɑnts/ /mi/"
+	},
+	{
+		"chinese": "我的女儿想要我读给她一个睡前故事",
+		"english": "my daughter wants me to read her a bedtime story",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wɑnts/ /mi/ /tə/ /rid/ /hɚ/ /ə/ /'bɛdtaɪm/ /'stɔri/"
+	},
+	{
+		"chinese": "打电话",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "打电话给我",
+		"english": "to call me",
+		"soundmark": "/tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "忘记",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
+	},
+	{
+		"chinese": "忘记打电话给我",
+		"english": "to forget to call me",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "你忘记打电话给我",
+		"english": "you forget to call me",
+		"soundmark": "/ju/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "不要",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "你不要忘记打电话给我",
+		"english": "you don't forget to call me",
+		"soundmark": "/ju/ /dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "不要忘记打电话给我",
+		"english": "don't forget to call me",
+		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "到达",
+		"english": "to get",
+		"soundmark": "/tə/ /ɡɛt/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "到达那里",
+		"english": "to get there",
+		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "你到达那里",
+		"english": "you get there",
+		"soundmark": "/ju/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "当......时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当你达到那里的时候",
+		"english": "when you get there",
+		"soundmark": "/wɛn/ /ju/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "不要忘记打电话给我当你到达那里的时候",
+		"english": "don't forget to call me when you get there",
+		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/ /wɛn/ /ju/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
+	},
+	{
+		"chinese": "裙子",
+		"english": "dress",
+		"soundmark": "/drɛs/"
+	},
+	{
+		"chinese": "新的",
+		"english": "new",
+		"soundmark": "/nu/"
+	},
+	{
+		"chinese": "一件新裙子",
+		"english": "a new dress",
+		"soundmark": "/ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "买一件新裙子",
+		"english": "to buy a new dress",
+		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "买给她",
+		"english": "to buy her",
+		"soundmark": "/tə/ /baɪ/ /hɚ/"
+	},
+	{
+		"chinese": "买给她一件新裙子",
+		"english": "to buy her a new dress",
+		"soundmark": "/tə/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我买给她一件新裙子",
+		"english": "I buy her a new dress",
+		"soundmark": "/aɪ/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "我（过去）买给她一件新裙子",
+		"english": "I bought her a new dress",
+		"soundmark": "/aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "女儿",
+		"english": "daughter",
+		"soundmark": "/'dɔtɚ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "我（过去）买给我的女儿一件新裙子",
+		"english": "I bought my daughter a new dress",
+		"soundmark": "/aɪ/ /bɔt/ /maɪ/ /'dɔtɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "周",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"chinese": "上一个",
+		"english": "last",
+		"soundmark": "/læst/"
+	},
+	{
+		"chinese": "上周",
+		"english": "last week",
+		"soundmark": "/læst/ /wik/"
+	},
+	{
+		"chinese": "我上周买给我女儿一件新裙子",
+		"english": "I bought my daughter a new dress last week",
+		"soundmark": "/aɪ/ /bɔt/ /maɪ/ /'dɔtɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
+	},
+	{
+		"chinese": "出生",
+		"english": "birth",
+		"soundmark": "/bɝθ/"
+	},
+	{
+		"chinese": "日",
+		"english": "day",
+		"soundmark": "/de/"
+	},
+	{
+		"chinese": "生日",
+		"english": "birthday",
+		"soundmark": "/'bɝθde/"
+	},
+	{
+		"chinese": "礼物",
+		"english": "gift",
+		"soundmark": "/ɡɪft/"
+	},
+	{
+		"chinese": "生日礼物",
+		"english": "birthday gift",
+		"soundmark": "/'bɝθde/ /ɡɪft/"
+	},
+	{
+		"chinese": "一个生日礼物",
+		"english": "a birthday gift",
+		"soundmark": "/ə/ /'bɝθde/ /ɡɪft/"
+	},
+	{
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
+	},
+	{
+		"chinese": "买一个生日礼物",
+		"english": "to buy a birthday gift",
+		"soundmark": "/tə/ /baɪ/ /ə/ /'bɝθde/ /ɡɪft/"
+	},
+	{
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "买给我的女儿",
+		"english": "to buy my daughter",
+		"soundmark": "/tə/ /baɪ/ /maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "买给我的女儿一个生日礼物",
+		"english": "to buy my daughter a birthday gift",
+		"soundmark": "/tə/ /baɪ/ /maɪ/ /'dɔtɚ/ /ə/ /'bɝθde/ /ɡɪft/"
+	},
+	{
+		"chinese": "我将会",
+		"english": "I will",
+		"soundmark": "/aɪ/ /wɪl/"
+	},
+	{
+		"chinese": "我将会买给我的女儿一个生日礼物",
+		"english": "I will buy my daughter a birthday gift",
+		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /maɪ/ /'dɔtɚ/ /ə/ /'bɝθde/ /ɡɪft/"
+	},
+	{
+		"chinese": "月",
+		"english": "month",
+		"soundmark": "/mʌnθ/"
+	},
+	{
+		"chinese": "下一个",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"chinese": "下个月",
+		"english": "next month",
+		"soundmark": "/nɛkst/ /mʌnθ/"
+	},
+	{
+		"chinese": "下个月我将会买给我女儿一个生日礼物",
+		"english": "I will buy my daughter a birthday gift next month",
+		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /maɪ/ /'dɔtɚ/ /ə/ /'bɝθde/ /ɡɪft/ /nɛkst/ /mʌnθ/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "杯",
+		"english": "cup",
+		"soundmark": "/kʌp/"
+	},
+	{
+		"chinese": "一杯",
+		"english": "a cup",
+		"soundmark": "/ə/ /kʌp/"
+	},
+	{
+		"chinese": "咖啡",
+		"english": "coffee",
+		"soundmark": "/'kɔfi/"
+	},
+	{
+		"chinese": "一杯咖啡",
+		"english": "a cup of coffee",
+		"soundmark": "/ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "做一杯咖啡",
+		"english": "to make a cup of coffee",
+		"soundmark": "/tə/ /mek/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我做一杯咖啡",
+		"english": "I make a cup of coffee",
+		"soundmark": "/aɪ/ /mek/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "我自己",
+		"english": "myself",
+		"soundmark": "/maɪ'sɛlf/"
+	},
+	{
+		"chinese": "我做给我自己一杯咖啡",
+		"english": "I make myself a cup of coffee",
+		"soundmark": "/aɪ/ /mek/ /maɪ'sɛlf/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "早晨",
+		"english": "morning",
+		"soundmark": "/'mɔrnɪŋ/"
+	},
+	{
+		"chinese": "每个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
+	},
+	{
+		"chinese": "每天早晨",
+		"english": "every morning",
+		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
+	},
+	{
+		"chinese": "每天早晨我做给自己一杯咖啡",
+		"english": "I make myself a cup of coffee every morning",
+		"soundmark": "/aɪ/ /mek/ /maɪ'sɛlf/ /ə/ /kʌp/ /əv/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "做给我",
+		"english": "to make me",
+		"soundmark": "/tə/ /mek/ /mi/"
+	},
+	{
+		"chinese": "做给我一杯咖啡",
+		"english": "to make me a cup of coffee",
+		"soundmark": "/tə/ /mek/ /mi/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
+	},
+	{
+		"chinese": "你可以做给我一杯咖啡",
+		"english": "you can make me a cup of coffee",
+		"soundmark": "/ju/ /kæn/ /mek/ /mi/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "你可以做给我一杯咖啡吗？",
+		"english": "can you make me a cup of coffee",
+		"soundmark": "/kæn/ /ju/ /mek/ /mi/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "做给她",
+		"english": "to make her",
+		"soundmark": "/tə/ /mek/ /hɚ/"
+	},
+	{
+		"chinese": "你可以做给她一杯咖啡吗？",
+		"english": "can you make her a cup of coffee",
+		"soundmark": "/kæn/ /ju/ /mek/ /hɚ/ /ə/ /kʌp/ /əv/ /'kɔfi/"
+	},
+	{
+		"chinese": "开心",
+		"english": "happy",
+		"soundmark": "/'hæpi/"
+	},
+	{
+		"chinese": "你可以让她开心吗？",
+		"english": "can you make her happy",
+		"soundmark": "/kæn/ /ju/ /mek/ /hɚ/ /'hæpi/"
+	},
+	{
+		"chinese": "让她开心",
+		"english": "to make her happy",
+		"soundmark": "/tə/ /mek/ /hɚ/ /'hæpi/"
+	},
+	{
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"chinese": "我想要让她开心",
+		"english": "I want to make her happy",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /hɚ/ /'hæpi/"
+	},
+	{
+		"chinese": "生日",
+		"english": "birthday",
+		"soundmark": "/'bɝθde/"
+	},
+	{
+		"chinese": "小月亮的生日",
+		"english": "Xiaoyueliang's birthday",
+		"soundmark": "/'bɝθde/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "明天是小月亮的生日",
+		"english": "tomorrow is Xiaoyueliang's birthday",
+		"soundmark": "/tə'mɔro/ /ɪz/ /'bɝθde/"
+	},
+	{
+		"chinese": "明天是小月亮的生日而且我想要让她开心",
+		"english": "tomorrow is Xiaoyueliang's birthday and I want to make her happy",
+		"soundmark": "/tə'mɔro/ /ɪz/ /'bɝθde/ /ənd/ /aɪ/ /wɑnt/ /tə/ /mek/ /hɚ/ /'hæpi/"
+	},
+	{
+		"chinese": "买",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
+	},
+	{
+		"chinese": "一件新裙子",
+		"english": "a new dress",
+		"soundmark": "/ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "买一件新裙子",
+		"english": "to buy a new dress",
+		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "买给她",
+		"english": "to buy her",
+		"soundmark": "/tə/ /baɪ/ /hɚ/"
+	},
+	{
+		"chinese": "买给她一件新裙子",
+		"english": "to buy her a new dress",
+		"soundmark": "/tə/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "我买给她一件新裙子",
+		"english": "I buy her a new dress",
+		"soundmark": "/aɪ/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "我（过去）买给她一件新裙子",
+		"english": "I bought her a new dress",
+		"soundmark": "/aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/"
+	},
+	{
+		"chinese": "上周",
+		"english": "last week",
+		"soundmark": "/læst/ /wik/"
+	},
+	{
+		"chinese": "我上周买给她一件新裙子",
+		"english": "I bought her a new dress last week",
+		"soundmark": "/aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "所以我上周买给她一件新裙子",
+		"english": "so I bought her a new dress last week",
+		"soundmark": "/so/ /aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
+	},
+	{
+		"chinese": "明天是小月亮的生日而且我想要让她开心所以我上周买给她一件新裙子",
+		"english": "tomorrow is Xiaoyueliang's birthday and I want to make her happy so I bought her a new dress last week",
+		"soundmark": "/tə'mɔro/ /ɪz/ /'bɝθde/ /ənd/ /aɪ/ /wɑnt/ /tə/ /mek/ /hɚ/ /'hæpi/ /so/ /aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
 	}
 ]

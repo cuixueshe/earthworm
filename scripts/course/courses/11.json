@@ -1,18 +1,38 @@
 [
 	{
-		"chinese": "做",
-		"english": "to do",
-		"soundmark": "/tə/ /du/"
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "这件事情",
-		"english": "it",
-		"soundmark": "/ɪt/"
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "做这件事情",
-		"english": "to do it",
-		"soundmark": "/tə/ /du/ /ɪt/"
+		"chinese": "告诉你",
+		"english": "to tell you",
+		"soundmark": "/tə/ /tɛl/ /ju/"
+	},
+	{
+		"chinese": "某些事情；某些东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "重要的某些事情",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "告诉你重要的某些事情",
+		"english": "to tell you something important",
+		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
 		"chinese": "想要",
@@ -20,64 +40,184 @@
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "我想要做这件事情",
-		"english": "I want to do it",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/"
+		"chinese": "我想要告诉你重要的某些事情",
+		"english": "I want to tell you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "现在",
-		"english": "now",
-		"soundmark": "/naʊ/"
+		"chinese": "教",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
 	},
 	{
-		"chinese": "我现在想要做这件事情",
-		"english": "I want to do it now",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+		"chinese": "某些事情；某些东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"chinese": "重要的某些东西",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我现在不想做这件事情",
-		"english": "I don't want to do it now",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+		"chinese": "我想要教你重要的某些东西",
+		"english": "I want to teach you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "她现在想要做这件事",
-		"english": "she wants to do it now",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/"
+		"chinese": "任何东西",
+		"english": "anything",
+		"soundmark": "/'ɛnɪθɪŋ/"
 	},
 	{
-		"chinese": "她现在不想做这件事",
-		"english": "she doesn't want to do it now",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+		"chinese": "任何重要的东西",
+		"english": "anything important",
+		"soundmark": "/'ɛnɪθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我（过去）想要做这件事情",
-		"english": "I wanted to do it",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/"
+		"chinese": "我不想教你任何重要的东西",
+		"english": "I don't want to teach you anything important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /'ɛnɪθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "昨天",
-		"english": "yesterday",
-		"soundmark": "/'jɛstɚde/"
+		"chinese": "一堂课",
+		"english": "a lesson",
+		"soundmark": "/ə/ /'lɛsn/"
 	},
 	{
-		"chinese": "我昨天想要做这件事情",
-		"english": "I wanted to do it yesterday",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/ /'jɛstɚde/"
+		"chinese": "我想要教你一堂课",
+		"english": "I want to teach you a lesson",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /ə/ /'lɛsn/"
 	},
 	{
-		"chinese": "我昨天不想做这件事情",
-		"english": "I didn't want to do it yesterday",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /du/ /ɪt/"
+		"chinese": "我必须给你上一课",
+		"english": "I have to teach you a lesson",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /titʃ/ /ju/ /ə/ /'lɛsn/"
 	},
 	{
-		"chinese": "留；待在",
-		"english": "to stay",
-		"soundmark": "/tə/ /ste/"
+		"chinese": "我将会给你上一课",
+		"english": "I will teach you a lesson",
+		"soundmark": "/aɪ/ /wɪl/ /tə/ /titʃ/ /ju/ /ə/ /'lɛsn/"
+	},
+	{
+		"chinese": "教他",
+		"english": "to teach him",
+		"soundmark": "/tə/ /titʃ/ /hɪm/"
+	},
+	{
+		"chinese": "你必须教他一堂课",
+		"english": "you have to teach him a lesson",
+		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /hɪm/ /ə/ /'lɛsn/"
+	},
+	{
+		"chinese": "使用",
+		"english": "to use",
+		"soundmark": "/tə/ /juz/"
+	},
+	{
+		"chinese": "字典",
+		"english": "the dictionary",
+		"soundmark": "/ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "使用字典",
+		"english": "to use the dictionary",
+		"soundmark": "/tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"chinese": "如何使用字典",
+		"english": "how to use the dictionary",
+		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "你必须教我",
+		"english": "you have to teach me",
+		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /mi/"
+	},
+	{
+		"chinese": "你必须教我如何使用字典",
+		"english": "you have to teach me how to use the dictionary",
+		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "你不必教我如何使用字典",
+		"english": "you don't have to teach me how to use the dictionary",
+		"soundmark": "/ju/ /dont/ /hæv/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "网络",
+		"english": "the internet",
+		"soundmark": "/ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "使用网络",
+		"english": "to use the internet",
+		"soundmark": "/tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "如何使用网络",
+		"english": "how to use the internet",
+		"soundmark": "/haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "你必须教我如何使用网络",
+		"english": "you have to teach me how to use the internet",
+		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "你不必教我如何使用网络",
+		"english": "you don't have to teach me how to use the internet",
+		"soundmark": "/ju/ /dont/ /hæv/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "做饭",
+		"english": "to cook",
+		"soundmark": "/tə/ /kʊk/"
+	},
+	{
+		"chinese": "如何做饭",
+		"english": "how to cook",
+		"soundmark": "/haʊ/ /tə/ /kʊk/"
+	},
+	{
+		"chinese": "你需要教我如何做饭",
+		"english": "you need to teach me how to cook",
+		"soundmark": "/ju/ /nid/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /kʊk/"
+	},
+	{
+		"chinese": "不需要",
+		"english": "don't need",
+		"soundmark": "/dont/ /nid/"
+	},
+	{
+		"chinese": "你不需要教我如何做饭",
+		"english": "you don't need to teach me how to cook",
+		"soundmark": "/ju/ /dont/ /nid/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /kʊk/"
+	},
+	{
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+	},
+	{
+		"chinese": "教我如何做饭",
+		"english": "to teach me how to cook",
+		"soundmark": "/tə/ /titʃ/ /mi/ /haʊ/ /tə/ /kʊk/"
+	},
+	{
+		"chinese": "我想要你教我如何做饭",
+		"english": "I want you to teach me how to cook",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /kʊk/"
+	},
+	{
+		"chinese": "到达",
+		"english": "to get",
+		"soundmark": "/tə/ /ɡɛt/"
 	},
 	{
 		"chinese": "那里",
@@ -85,354 +225,54 @@
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "待在那里",
-		"english": "to stay there",
-		"soundmark": "/tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "喜欢",
-		"english": "like",
-		"soundmark": "/laɪk/"
-	},
-	{
-		"chinese": "我喜欢待在那里",
-		"english": "I like to stay there",
-		"soundmark": "/aɪ/ /laɪk/ /tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "每天",
-		"english": "every day",
-		"soundmark": "/'ɛvri/ /de/"
-	},
-	{
-		"chinese": "我喜欢每天待在那里",
-		"english": "I like to stay there every day",
-		"soundmark": "/aɪ/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我不喜欢每天待在那里",
-		"english": "I don't like to stay there every day",
-		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "我（过去）喜欢待在那里",
-		"english": "I liked to stay there",
-		"soundmark": "/aɪ/ /laikt/ /tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "我（过去）不喜欢待在那里",
-		"english": "I didn't like to stay there",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /laɪk/ /tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "离开",
-		"english": "to leave",
-		"soundmark": "/tə/ /liv/"
-	},
-	{
-		"chinese": "这座城市",
-		"english": "the city",
-		"soundmark": "/ðə/ /'sɪti/"
-	},
-	{
-		"chinese": "我必须离开这座城市",
-		"english": "I have to leave the city",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/"
-	},
-	{
-		"chinese": "今天",
-		"english": "today",
-		"soundmark": "/tə'de/"
-	},
-	{
-		"chinese": "我今天必须离开这座城市",
-		"english": "I have to leave the city today",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /tə'de/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我今天不必离开这座城市",
-		"english": "I don't have to leave the city today",
-		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /tə'de/"
-	},
-	{
-		"chinese": "我（过去）必须",
-		"english": "I had to",
-		"soundmark": "/aɪ/ /hæd/ /tə/"
-	},
-	{
-		"chinese": "我（过去）必须离开这座城市",
-		"english": "I had to leave the city",
-		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/"
-	},
-	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
-	},
-	{
-		"chinese": "在那时",
-		"english": "at that time",
-		"soundmark": "/ət/ /ðæt/ /taɪm/"
-	},
-	{
-		"chinese": "我必须在那时离开这座城市",
-		"english": "I had to leave the city at that time",
-		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
-	},
-	{
-		"chinese": "我不必在那时离开这座城市",
-		"english": "I didn't have to leave the city at that time",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
-	},
-	{
-		"chinese": "计划；打算",
-		"english": "plan",
-		"soundmark": "/plæn/"
-	},
-	{
-		"chinese": "去；达到",
-		"english": "to get",
-		"soundmark": "/tə/ /ɡɛt/"
-	},
-	{
-		"chinese": "去那里",
+		"chinese": "到达那里",
 		"english": "to get there",
 		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "我打算去那里",
-		"english": "I plan to get there",
-		"soundmark": "/aɪ/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
+		"chinese": "如何到达那里",
+		"english": "how to get there",
+		"soundmark": "/haʊ/ /tə/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
 	},
 	{
-		"chinese": "我不打算去那里",
-		"english": "I don't plan to get there",
-		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
+		"chinese": "教我",
+		"english": "to teach me",
+		"soundmark": "/tə/ /titʃ/ /mi/"
 	},
 	{
-		"chinese": "我（过去）打算去那里",
-		"english": "I planned to get there",
-		"soundmark": "/aɪ/ /plænd/ /tə/ /ɡɛt/ /ðɛr/"
+		"chinese": "我想要你教我如何到达那里",
+		"english": "I want you to teach me how to get there",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "我（过去）不打算去那里",
-		"english": "I didn't plan to get there",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
+		"chinese": "展示",
+		"english": "to show",
+		"soundmark": "/tə/ /ʃo/"
 	},
 	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
+		"chinese": "展示给你",
+		"english": "to show you",
+		"soundmark": "/tə/ /ʃo/ /ju/"
 	},
 	{
-		"chinese": "事实；真相",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
+		"chinese": "某些东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
+		"chinese": "展示给你某些东西",
+		"english": "to show you something",
+		"soundmark": "/tə/ /ʃo/ /ju/ /'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "我需要知道真相",
-		"english": "I need to know the truth",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "尽快；尽可能地快",
-		"english": "as soon as possible",
-		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
-	},
-	{
-		"chinese": "我需要尽快知道真相",
-		"english": "I need to know the truth as soon as possible",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ðə/ /trʊθ/ /əz/ /sun/ /əz/ /'pɑsəbl/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我不需要知道真相",
-		"english": "I don't need to know the truth",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "我（过去）需要知道真相",
-		"english": "I needed to know the truth",
-		"soundmark": "/aɪ/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "我（过去）不需要知道真相",
-		"english": "I didn't need to know the truth",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "她（过去）需要知道真相",
-		"english": "she needed to know the truth",
-		"soundmark": "/ʃi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "她（过去）不需要知道真相",
-		"english": "she didn't need to know the truth",
-		"soundmark": "/ʃi/ /ˈdɪdnt/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "做这件事情",
-		"english": "to do it",
-		"soundmark": "/tə/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "你做这件事情",
-		"english": "you do it",
-		"soundmark": "/ju/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "你现在做这件事情",
-		"english": "you do it now",
-		"soundmark": "/ju/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "你现在不做这件事情",
-		"english": "you don't do it now",
-		"soundmark": "/ju/ /dont/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "你（过去）做这件事情",
-		"english": "you did it",
-		"soundmark": "/ju/ /dɪd/ /ɪt/"
-	},
-	{
-		"chinese": "年",
-		"english": "year",
-		"soundmark": "/jɪr/"
-	},
-	{
-		"chinese": "上一个",
-		"english": "last",
-		"soundmark": "/læst/"
-	},
-	{
-		"chinese": "去年",
-		"english": "last year",
-		"soundmark": "/læst/ /jɪr/"
-	},
-	{
-		"chinese": "你去年做这件事情",
-		"english": "you did it last year",
-		"soundmark": "/ju/ /dɪd/ /ɪt/ /læst/ /jɪr/"
-	},
-	{
-		"chinese": "你去年没做这件事情",
-		"english": "you didn't do it last year",
-		"soundmark": "/ju/ /ˈdɪdnt/ /du/ /ɪt/ /læst/ /jɪr/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
-	},
-	{
-		"chinese": "告诉我",
-		"english": "to tell me",
-		"soundmark": "/tə/ /tɛl/ /mi/"
-	},
-	{
-		"chinese": "你告诉我",
-		"english": "you tell me",
-		"soundmark": "/ju/ /tɛl/ /mi/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "你不告诉我",
-		"english": "you don't tell me",
-		"soundmark": "/ju/ /dont/ /tɛl/ /mi/"
-	},
-	{
-		"chinese": "她告诉我",
-		"english": "she tells me",
-		"soundmark": "/ʃi/ /tɛlz/ /mi/"
-	},
-	{
-		"chinese": "她不告诉我",
-		"english": "she doesn't tell me",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /tɛl/ /mi/"
-	},
-	{
-		"chinese": "他（过去）告诉我",
-		"english": "he told me",
-		"soundmark": "/hi/ /told/ /mi/"
-	},
-	{
-		"chinese": "他（过去）没告诉我",
-		"english": "he didn't tell me",
-		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/"
-	},
-	{
-		"chinese": "事实；真相",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "他（过去）没告诉我真相",
-		"english": "he didn't tell me the truth",
-		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
-	},
-	{
-		"chinese": "知道真相",
-		"english": "to know the truth",
-		"soundmark": "/tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "他（过去）需要知道真相",
-		"english": "he needed to know the truth",
-		"soundmark": "/hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "他（过去）告诉我",
-		"english": "he told me",
-		"soundmark": "/hi/ /told/ /mi/"
-	},
-	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相",
-		"english": "he told me he needed to know the truth",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+		"chinese": "我想要展示给你某些东西",
+		"english": "I want to show you something",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ʃo/ /ju/ /'sʌmθɪŋ/"
 	},
 	{
 		"chinese": "重要的",
@@ -440,14 +280,299 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
-		"english": "it is important",
-		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+		"chinese": "我想要展示给你重要的某些东西",
+		"english": "I want to show you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ʃo/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它（过去）是重要的",
-		"english": "it was important",
-		"soundmark": "/ɪt/ /wəz/ /ɪm'pɔrtnt/"
+		"chinese": "任何东西",
+		"english": "anything",
+		"soundmark": "/'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "我不想展示给你任何东西",
+		"english": "I don't want to show you anything",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /ʃo/ /ju/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "展示给我",
+		"english": "to show me",
+		"soundmark": "/tə/ /ʃo/ /mi/"
+	},
+	{
+		"chinese": "你必须展示给我",
+		"english": "you have to show me",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/"
+	},
+	{
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"chinese": "使用字典",
+		"english": "to use the dictionary",
+		"soundmark": "/tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "如何使用字典",
+		"english": "how to use the dictionary",
+		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "你必须展示给我如何使用字典",
+		"english": "you have to show me how to use the dictionary",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"chinese": "使用网络",
+		"english": "to use the internet",
+		"soundmark": "/tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "如何使用网络",
+		"english": "how to use the internet",
+		"soundmark": "/haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "你必须展示给我如何使用网络",
+		"english": "you have to show me how to use the internet",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
+	},
+	{
+		"chinese": "做这件事",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "如何做这件事",
+		"english": "how to do it",
+		"soundmark": "/haʊ/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "展示给我们",
+		"english": "to show us",
+		"soundmark": "/tə/ /ʃo/ /ʌs/"
+	},
+	{
+		"chinese": "你需要展示给我们如何做这件事",
+		"english": "you need to show us how to do it",
+		"soundmark": "/ju/ /nid/ /tə/ /ʃo/ /ʌs/ /haʊ/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你不需要展示给我们如何做这件事",
+		"english": "you don't need to show us how to do it",
+		"soundmark": "/ju/ /dont/ /nid/ /tə/ /ʃo/ /ʌs/ /haʊ/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "房子",
+		"english": "house",
+		"soundmark": "/haʊs/"
+	},
+	{
+		"chinese": "新的",
+		"english": "new",
+		"soundmark": "/nu/"
+	},
+	{
+		"chinese": "新房子",
+		"english": "new house",
+		"soundmark": "/nu/ /haʊs/"
+	},
+	{
+		"chinese": "你的",
+		"english": "your",
+		"soundmark": "/jʊr/"
+	},
+	{
+		"chinese": "你的新房子",
+		"english": "your new house",
+		"soundmark": "/jʊr/ /nu/ /haʊs/"
+	},
+	{
+		"chinese": "你必须展示给我",
+		"english": "you have to show me",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/"
+	},
+	{
+		"chinese": "你必须展示给我你的新房子",
+		"english": "you have to show me your new house",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /jʊr/ /nu/ /haʊs/"
+	},
+	{
+		"chinese": "你不必展示给我你的新房子",
+		"english": "you don't have to show me your new house",
+		"soundmark": "/ju/ /dont/ /hæv/ /tə/ /ʃo/ /mi/ /jʊr/ /nu/ /haʊs/"
+	},
+	{
+		"chinese": "手（复数）",
+		"english": "hands",
+		"soundmark": "/hændz/"
+	},
+	{
+		"chinese": "你的手",
+		"english": "your hands",
+		"soundmark": "/jʊr/ /hændz/"
+	},
+	{
+		"chinese": "展示给我你的手",
+		"english": "to show me your hands",
+		"soundmark": "/tə/ /ʃo/ /mi/ /jʊr/ /hændz/"
+	},
+	{
+		"chinese": "你必须展示给我你的手",
+		"english": "you have to show me your hands",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /jʊr/ /hændz/"
+	},
+	{
+		"chinese": "让",
+		"english": "to let",
+		"soundmark": "/tə/ /lɛt/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "让你",
+		"english": "to let you",
+		"soundmark": "/tə/ /lɛt/ /ju/"
+	},
+	{
+		"chinese": "知道",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "让你知道",
+		"english": "to let you know",
+		"soundmark": "/tə/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"chinese": "我想要让你知道",
+		"english": "I want to let you know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "我想要让你知道事实",
+		"english": "I want to let you know the truth",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "关于",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"chinese": "关于我",
+		"english": "about me",
+		"soundmark": "/ə'baʊt/ /mi/"
+	},
+	{
+		"chinese": "我想要让你知道关于我的事实",
+		"english": "I want to let you know the truth about me",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/ /ə'baʊt/ /mi/"
+	},
+	{
+		"chinese": "我将会",
+		"english": "I will",
+		"soundmark": "/aɪ/ /wɪl/"
+	},
+	{
+		"chinese": "让你知道",
+		"english": "to let you know",
+		"soundmark": "/tə/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"chinese": "我将会让你知道",
+		"english": "I will let you know",
+		"soundmark": "/aɪ/ /wɪl/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"chinese": "我将会让你知道关于我的事实",
+		"english": "I will let you know the truth about me",
+		"soundmark": "/aɪ/ /wɪl/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/ /ə'baʊt/ /mi/"
+	},
+	{
+		"chinese": "下一个",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"chinese": "周",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"chinese": "下周",
+		"english": "next week",
+		"soundmark": "/nɛkst/ /wik/"
+	},
+	{
+		"chinese": "我下周将会让你知道关于我的事实",
+		"english": "I will let you know the truth about me next week",
+		"soundmark": "/aɪ/ /wɪl/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/ /ə'baʊt/ /mi/ /nɛkst/ /wik/"
+	},
+	{
+		"chinese": "去",
+		"english": "to go",
+		"soundmark": "/tə/ /ɡo/"
+	},
+	{
+		"chinese": "外面",
+		"english": "out",
+		"soundmark": "/aʊt/"
+	},
+	{
+		"chinese": "去外面",
+		"english": "to go out",
+		"soundmark": "/tə/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "我想要去外面",
+		"english": "I want to go out",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "让你",
+		"english": "to let you",
+		"soundmark": "/tə/ /lɛt/ /ju/"
+	},
+	{
+		"chinese": "让你去外面",
+		"english": "to let you go out",
+		"soundmark": "/tə/ /lɛt/ /ju/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "我想要让你去外面",
+		"english": "I want to let you go out",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "我不想让你去外面",
+		"english": "I don't want to let you go out",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "在晚上",
+		"english": "at night",
+		"soundmark": "/ət/ /naɪt/"
+	},
+	{
+		"chinese": "我不想让你在晚上去外面",
+		"english": "I don't want to let you go out at night",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/"
 	},
 	{
 		"chinese": "因为",
@@ -455,233 +580,378 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为它（过去）是重要的",
-		"english": "because it was important",
-		"soundmark": "/bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
+		"chinese": "危险的",
+		"english": "dangerous",
+		"soundmark": "/'dendʒərəs/"
 	},
 	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相",
-		"english": "he told me he needed to know the truth",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相因为它（过去）是重要的",
-		"english": "he told me he needed to know the truth because it was important",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
+		"chinese": "这件事是非常危险的",
+		"english": "it is very dangerous",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
 	},
 	{
-		"chinese": "存在；成为",
-		"english": "to be",
-		"soundmark": "/tə/ /bi/"
+		"chinese": "因为这件事是非常危险的",
+		"english": "because it is very dangerous",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
 	},
 	{
-		"chinese": "一个老师",
-		"english": "a teacher",
-		"soundmark": "/ə/ /'titʃɚ/"
+		"chinese": "我不想让你在晚上去外面因为这件事是非常危险的",
+		"english": "I don't want to let you go out at night because it is very dangerous",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
 	},
 	{
-		"chinese": "成为一个老师",
-		"english": "to be a teacher",
-		"soundmark": "/tə/ /bi/ /ə/ /'titʃɚ/"
+		"chinese": "待在",
+		"english": "to stay",
+		"soundmark": "/tə/ /ste/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师",
-		"english": "I wanted to be a teacher",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
+		"chinese": "待在这里",
+		"english": "to stay here",
+		"soundmark": "/tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "我是重要的",
-		"english": "I am important",
-		"soundmark": "/aɪ/ /æm/ /ɪm'pɔrtnt/"
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "我（过去）是重要的",
-		"english": "I was important",
-		"soundmark": "/aɪ/ /wəz/ /ɪm'pɔrtnt/"
+		"chinese": "我需要你待在这里",
+		"english": "I need you to stay here",
+		"soundmark": "/aɪ/ /nid/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "年轻的",
-		"english": "young",
-		"soundmark": "/jʌŋ/"
+		"chinese": "而且",
+		"english": "and",
+		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "我是年轻的",
-		"english": "I am young",
-		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
+		"chinese": "而且我需要你待在这里",
+		"english": "and I need you to stay here",
+		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "我（过去）是年轻的",
-		"english": "I was young",
-		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
+		"chinese": "我不想让你在晚上去外面因为这件事是非常危险的而且我需要你待在这里",
+		"english": "I don't want to let you go out at night because it is very dangerous and I need you to stay here",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/ /ənd/ /aɪ/ /nid/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "当......的时候",
+		"chinese": "父亲",
+		"english": "father",
+		"soundmark": "/'fɑðɚ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的父亲",
+		"english": "my father",
+		"soundmark": "/maɪ/ /'fɑðɚ/"
+	},
+	{
+		"chinese": "打电话给",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"chinese": "打电话给我的父亲",
+		"english": "to call my father",
+		"soundmark": "/tə/ /kɔl/ /maɪ/ /'fɑðɚ/"
+	},
+	{
+		"chinese": "让我",
+		"english": "to let me",
+		"soundmark": "/tə/ /lɛt/ /mi/"
+	},
+	{
+		"chinese": "让我打电话给我的父亲",
+		"english": "to let me call my father",
+		"soundmark": "/tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/"
+	},
+	{
+		"chinese": "记得",
+		"english": "to remember",
+		"soundmark": "/tə/ /rɪ'mɛmbɚ/"
+	},
+	{
+		"chinese": "你必须记得",
+		"english": "you have to remember",
+		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/"
+	},
+	{
+		"chinese": "你必须记得让我打电话给我的父亲",
+		"english": "you have to remember to let me call my father",
+		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/ /tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/"
+	},
+	{
+		"chinese": "到达",
+		"english": "to get",
+		"soundmark": "/tə/ /ɡɛt/"
+	},
+	{
+		"chinese": "那里",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"chinese": "到达那里",
+		"english": "to get there",
+		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "我们到达那里",
+		"english": "we get there",
+		"soundmark": "/wi/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"chinese": "当......时候",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我（过去）是年轻的时候",
-		"english": "when I was young",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"chinese": "当我们到达那里的时候",
+		"english": "when we get there",
+		"soundmark": "/wɛn/ /wi/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师",
-		"english": "I wanted to be a teacher",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
+		"chinese": "你必须记得当我们到达那里的时候让我打电话给我的父亲",
+		"english": "you have to remember to let me call my father when we get there",
+		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/ /tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/ /wɛn/ /wi/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师当我（过去）是年轻的时候",
-		"english": "I wanted to be a teacher when I was young",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"chinese": "让",
+		"english": "to let",
+		"soundmark": "/tə/ /lɛt/"
 	},
 	{
-		"chinese": "交谈；聊天",
-		"english": "to talk",
-		"soundmark": "/tə/ /tɔk/"
+		"chinese": "我们",
+		"english": "us",
+		"soundmark": "/ʌs/"
 	},
 	{
-		"chinese": "我们（过去）聊天",
-		"english": "we talked",
-		"soundmark": "/wi/ /tɔkt/"
+		"chinese": "让我们",
+		"english": "to let us",
+		"soundmark": "/tə/ /lɛt/ /ʌs/"
 	},
 	{
-		"chinese": "在......之前；以前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"chinese": "去",
+		"english": "to go",
+		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "我们以前聊过天",
-		"english": "we talked before",
-		"soundmark": "/wi/ /tɔkt/ /bɪ'fɔr/"
+		"chinese": "让我们去",
+		"english": "to let us go",
+		"soundmark": "/tə/ /lɛt/ /ʌs/ /ɡo/"
 	},
 	{
-		"chinese": "和她（过去）聊天",
-		"english": "talked with her",
-		"soundmark": "/tɔkt/ /wɪð/ /hɚ/"
+		"chinese": "你必须让我们去",
+		"english": "you have to let us go",
+		"soundmark": "/ju/ /hæv/ /tə/ /lɛt/ /ʌs/ /ɡo/"
 	},
 	{
-		"chinese": "我和她聊过天",
-		"english": "I talked with her",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/"
+		"chinese": "让我们去",
+		"english": "let us go",
+		"soundmark": "/lɛt/ /ʌs/ /ɡo/"
 	},
 	{
-		"chinese": "我以前和她聊过天",
-		"english": "I talked with her before",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /bɪ'fɔr/"
+		"chinese": "里面；进去",
+		"english": "in",
+		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "昨天",
-		"english": "yesterday",
-		"soundmark": "/'jɛstɚde/"
+		"chinese": "让我们进去",
+		"english": "let us in",
+		"soundmark": "/lɛt/ /ʌs/ /ɪn/"
 	},
 	{
-		"chinese": "那一天",
-		"english": "the day",
-		"soundmark": "/ðə/ /de/"
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "在......之前；以前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"chinese": "让我进去",
+		"english": "let me in",
+		"soundmark": "/lɛt/ /mi/ /ɪn/"
 	},
 	{
-		"chinese": "我前天和她聊过天",
-		"english": "I talked with her the day before yesterday",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
+		"chinese": "门",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
 	},
 	{
-		"chinese": "上一个",
-		"english": "last",
-		"soundmark": "/læst/"
+		"chinese": "开门",
+		"english": "open the door",
+		"soundmark": "/'opən/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "星期；周",
-		"english": "week",
-		"soundmark": "/wik/"
+		"chinese": "开门  让我进去",
+		"english": "open the door let me in",
+		"soundmark": "/'opən/ /ðə/ /dɔr/ /lɛt/ /mi/ /ɪn/"
 	},
 	{
-		"chinese": "周末",
-		"english": "weekend",
-		"soundmark": "/'wikɛnd/"
+		"chinese": "外面；出去",
+		"english": "out",
+		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "上周末",
-		"english": "last weekend",
-		"soundmark": "/læst/ /'wikɛnd/"
+		"chinese": "让我出去",
+		"english": "let me out",
+		"soundmark": "/lɛt/ /mi/ /aʊt/"
 	},
 	{
-		"chinese": "我上周末和她聊过天",
-		"english": "I talked with her last weekend",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/"
+		"chinese": "开门  让我出去",
+		"english": "open the door let me out",
+		"soundmark": "/'opən/ /ðə/ /dɔr/ /lɛt/ /mi/ /aʊt/"
 	},
 	{
-		"chinese": "改变",
-		"english": "to change",
-		"soundmark": "/tə/ /tʃendʒ/"
+		"chinese": "告诉你",
+		"english": "to tell you",
+		"soundmark": "/tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "世界",
-		"english": "the world",
-		"soundmark": "/ðə/ /wɝld/"
+		"chinese": "让我",
+		"english": "let me",
+		"soundmark": "/lɛt/ /mi/"
 	},
 	{
-		"chinese": "改变世界",
-		"english": "to change the world",
-		"soundmark": "/tə/ /tʃendʒ/ /ðə/ /wɝld/"
+		"chinese": "让我告诉你",
+		"english": "let me tell you",
+		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "她想要改变世界",
-		"english": "she wants to change the world",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /tʃendʒ/ /ðə/ /wɝld/"
+		"chinese": "某些事情；某些东西",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "她（过去）想要改变世界",
-		"english": "she wanted to change the world",
-		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/"
+		"chinese": "让我告诉你某些事情",
+		"english": "let me tell you something",
+		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/ /'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "年轻的",
-		"english": "young",
-		"soundmark": "/jʌŋ/"
+		"chinese": "关于",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
 	},
 	{
-		"chinese": "她（过去）是年轻的",
-		"english": "she was young",
-		"soundmark": "/ʃi/ /wəz/ /jʌŋ/"
+		"chinese": "你的工作",
+		"english": "your work",
+		"soundmark": "/jʊr/ /wɝk/"
 	},
 	{
-		"chinese": "当......的时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"chinese": "关于你的工作",
+		"english": "about your work",
+		"soundmark": "/ə'baʊt/ /jʊr/ /wɝk/"
 	},
 	{
-		"chinese": "当她（过去）是年轻的时候",
-		"english": "when she was young",
-		"soundmark": "/wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"chinese": "让我告诉你关于你的工作的某些事情",
+		"english": "let me tell you something about your work",
+		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ə'baʊt/ /jʊr/ /wɝk/"
 	},
 	{
-		"chinese": "她（过去）想要改变世界当她（过去）是年轻的时候",
-		"english": "she wanted to change the world when she was young",
-		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"chinese": "一个问题",
+		"english": "a question",
+		"soundmark": "/ə/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "她（过去）告诉我",
-		"english": "she told me",
-		"soundmark": "/ʃi/ /told/ /mi/"
+		"chinese": "问",
+		"english": "to ask",
+		"soundmark": "/tə/ /æsk/"
 	},
 	{
-		"chinese": "她（过去）告诉我她（过去）想要改变世界当她（过去）是年轻的时候",
-		"english": "she told me she wanted to change the world when she was young",
-		"soundmark": "/ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"chinese": "问你一个问题",
+		"english": "to ask you a question",
+		"soundmark": "/tə/ /æsk/ /ju/ /ə/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她（过去）是年轻的时候",
-		"english": "I talked with her last weekend and she told me she wanted to change the world when she was young",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/ /ənd/ /ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"chinese": "让我",
+		"english": "let me",
+		"soundmark": "/lɛt/ /mi/"
+	},
+	{
+		"chinese": "让我问你一个问题",
+		"english": "let me ask you a question",
+		"soundmark": "/lɛt/ /mi/ /æsk/ /ju/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉你事实",
+		"english": "to tell you the truth",
+		"soundmark": "/tə/ /tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "让我",
+		"english": "let me",
+		"soundmark": "/lɛt/ /mi/"
+	},
+	{
+		"chinese": "让我告诉你事实",
+		"english": "let me tell you the truth",
+		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "一个故事",
+		"english": "a story",
+		"soundmark": "/ə/ /'stɔri/"
+	},
+	{
+		"chinese": "让我告诉你一个故事",
+		"english": "let me tell you a story",
+		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/ /ə/ /'stɔri/"
+	},
+	{
+		"chinese": "解释",
+		"english": "to explain",
+		"soundmark": "/tə/ /ɪk'splen/"
+	},
+	{
+		"chinese": "让我",
+		"english": "let me",
+		"soundmark": "/lɛt/ /mi/"
+	},
+	{
+		"chinese": "让我解释",
+		"english": "let me explain",
+		"soundmark": "/lɛt/ /mi/ /ɪk'splen/"
+	},
+	{
+		"chinese": "你的手",
+		"english": "your hands",
+		"soundmark": "/jʊr/ /hændz/"
+	},
+	{
+		"chinese": "看到",
+		"english": "to see",
+		"soundmark": "/tə/ /si/"
+	},
+	{
+		"chinese": "看到你的手",
+		"english": "to see your hands",
+		"soundmark": "/tə/ /si/ /jʊr/ /hændz/"
+	},
+	{
+		"chinese": "让我",
+		"english": "let me",
+		"soundmark": "/lɛt/ /mi/"
+	},
+	{
+		"chinese": "让我看到你的手",
+		"english": "let me see your hands",
+		"soundmark": "/lɛt/ /mi/ /si/ /jʊr/ /hændz/"
 	}
 ]

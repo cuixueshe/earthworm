@@ -1,483 +1,218 @@
 [
 	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
+		"chinese": "递",
+		"english": "to hand",
+		"soundmark": "/tə/ /hænd/"
 	},
 	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "更重要的",
-		"english": "more important",
-		"soundmark": "/mɔr/ /ɪm'pɔrtnt/"
+		"chinese": "递给我",
+		"english": "to hand me",
+		"soundmark": "/tə/ /hænd/ /mi/"
 	},
 	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
+		"chinese": "钥匙",
+		"english": "key",
+		"soundmark": "/ki/"
 	},
 	{
-		"chinese": "困难的",
-		"english": "difficult",
-		"soundmark": "/'dɪfɪkəlt/"
+		"chinese": "那个钥匙",
+		"english": "the key",
+		"soundmark": "/ðə/ /ki/"
 	},
 	{
-		"chinese": "中文",
-		"english": "Chinese",
-		"soundmark": "/tʃaɪˈniz/"
+		"chinese": "递给我那个钥匙",
+		"english": "to hand me the key",
+		"soundmark": "/tə/ /hænd/ /mi/ /ðə/ /ki/"
 	},
 	{
-		"chinese": "英文",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "中文比英文是更难的",
-		"english": "Chinese is more difficult than English",
-		"soundmark": "/tʃaɪˈniz/ /ɪz/ /mɔr/ /'dɪfɪkəlt/ /ðæn/ /ˈɪŋɡlɪʃ/"
+		"chinese": "你递给我那个钥匙",
+		"english": "you hand me the key",
+		"soundmark": "/ju/ /hænd/ /mi/ /ðə/ /ki/"
 	},
 	{
-		"chinese": "更困难的",
-		"english": "more difficult",
-		"soundmark": "/mɔr/ /'dɪfɪkəlt/"
+		"chinese": "你递那个钥匙",
+		"english": "you hand the key",
+		"soundmark": "/ju/ /hænd/ /ðə/ /ki/"
 	},
 	{
-		"chinese": "最",
-		"english": "the most",
-		"soundmark": "/ðə/ /most/"
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "最困难的",
-		"english": "the most difficult",
-		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/"
+		"chinese": "你递那个钥匙给我",
+		"english": "you hand the key to me",
+		"soundmark": "/ju/ /hænd/ /ðə/ /ki/ /tə/ /mi/"
 	},
 	{
-		"chinese": "语言",
-		"english": "language",
-		"soundmark": "/'læŋɡwɪdʒ/"
+		"chinese": "给",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "最难的语言",
-		"english": "the most difficult language",
-		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/ /'læŋɡwɪdʒ/"
+		"chinese": "你把那个钥匙给我",
+		"english": "you give the key to me",
+		"soundmark": "/ju/ /ɡɪv/ /ðə/ /ki/ /tə/ /mi/"
 	},
 	{
-		"chinese": "中文",
-		"english": "Chinese",
-		"soundmark": "/tʃaɪˈniz/"
+		"chinese": "你给我那个钥匙",
+		"english": "you give me the key",
+		"soundmark": "/ju/ /ɡɪv/ /mi/ /ðə/ /ki/"
 	},
 	{
-		"chinese": "中文是最难的语言",
-		"english": "Chinese is the most difficult language",
-		"soundmark": "/tʃaɪˈniz/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'læŋɡwɪdʒ/"
+		"chinese": "你把那个钥匙给我",
+		"english": "you give the key to me",
+		"soundmark": "/ju/ /ɡɪv/ /ðə/ /ki/ /tə/ /mi/"
 	},
 	{
-		"chinese": "世界",
-		"english": "the world",
-		"soundmark": "/ðə/ /wɝld/"
+		"chinese": "钱",
+		"english": "the money",
+		"soundmark": "/ðə/ /'mʌni/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
+		"chinese": "你给我钱",
+		"english": "you give me the money",
+		"soundmark": "/ju/ /ɡɪv/ /mi/ /ðə/ /'mʌni/"
 	},
 	{
-		"chinese": "中文是世界上最难的语言",
-		"english": "Chinese is the most difficult language in the world",
-		"soundmark": "/tʃaɪˈniz/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'læŋɡwɪdʒ/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "你把钱给我",
+		"english": "you give the money to me",
+		"soundmark": "/ju/ /ɡɪv/ /ðə/ /'mʌni/ /tə/ /mi/"
 	},
 	{
-		"chinese": "问题",
-		"english": "problem",
-		"soundmark": "/'prɑbləm/"
+		"chinese": "它",
+		"english": "it",
+		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "最困难的",
-		"english": "the most difficult",
-		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/"
+		"chinese": "你把它给我",
+		"english": "you give it to me",
+		"soundmark": "/ju/ /ɡɪv/ /ɪt/ /tə/ /mi/"
 	},
 	{
-		"chinese": "最困难的问题",
-		"english": "the most difficult problem",
-		"soundmark": "/ðə/ /most/ /'dɪfɪkəlt/ /'prɑbləm/"
+		"chinese": "往回",
+		"english": "back",
+		"soundmark": "/bæk/"
 	},
 	{
-		"chinese": "这是最困难的问题",
-		"english": "this is the most difficult problem",
-		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'prɑbləm/"
+		"chinese": "你把它还给我",
+		"english": "you give it back to me",
+		"soundmark": "/ju/ /ɡɪv/ /ɪt/ /bæk/ /tə/ /mi/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
+		"chinese": "把它还给我",
+		"english": "give it back to me",
+		"soundmark": "/ɡɪv/ /ɪt/ /bæk/ /tə/ /mi/"
 	},
 	{
-		"chinese": "这是在世界上最困难的问题",
-		"english": "this is the most difficult problem in the world",
-		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /'dɪfɪkəlt/ /'prɑbləm/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "最",
-		"english": "the most",
-		"soundmark": "/ðə/ /most/"
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "危险的",
-		"english": "dangerous",
-		"soundmark": "/ˈdendʒərəs/"
+		"chinese": "读给她",
+		"english": "to read her",
+		"soundmark": "/tə/ /rid/ /hɚ/"
 	},
 	{
-		"chinese": "最危险的",
-		"english": "the most dangerous",
-		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/"
+		"chinese": "一个故事",
+		"english": "a story",
+		"soundmark": "/ə/ /'stɔri/"
 	},
 	{
-		"chinese": "人",
-		"english": "man",
-		"soundmark": "/mæn/"
+		"chinese": "读给她一个故事",
+		"english": "to read her a story",
+		"soundmark": "/tə/ /rid/ /hɚ/ /ə/ /'stɔri/"
 	},
 	{
-		"chinese": "最危险的人",
-		"english": "the most dangerous man",
-		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/ /mæn/"
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "他是最危险的人",
-		"english": "he is the most dangerous man",
-		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /mæn/"
+		"chinese": "我读给她一个故事",
+		"english": "I read her a story",
+		"soundmark": "/aɪ/ /rid/ /hɚ/ /ə/ /'stɔri/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/"
+		"chinese": "晚上",
+		"english": "night",
+		"soundmark": "/naɪt/"
 	},
 	{
-		"chinese": "他是在世界上最危险的人",
-		"english": "he is the most dangerous man in the world",
-		"soundmark": "/hi/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /mæn/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "每一个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "他们是",
-		"english": "they are",
-		"soundmark": "/ðe/ /ɚ/"
+		"chinese": "每天晚上",
+		"english": "every night",
+		"soundmark": "/'ɛvri/ /naɪt/"
 	},
 	{
-		"chinese": "他们是危险的",
-		"english": "they are dangerous",
-		"soundmark": "/ðe/ /ɚ/ /ˈdendʒərəs/"
+		"chinese": "我每天晚上读给她一个故事",
+		"english": "I read her a story every night",
+		"soundmark": "/aɪ/ /rid/ /hɚ/ /ə/ /'stɔri/ /'ɛvri/ /naɪt/"
 	},
 	{
-		"chinese": "以为",
-		"english": "to think",
-		"soundmark": "/tə/ /θɪŋk/"
+		"chinese": "我读一个故事",
+		"english": "I read a story",
+		"soundmark": "/aɪ/ /rid/ /ə/ /'stɔri/"
 	},
 	{
-		"chinese": "你以为",
-		"english": "you think",
-		"soundmark": "/ju/ /θɪŋk/"
+		"chinese": "给她",
+		"english": "to her",
+		"soundmark": "/tə/ /hɚ/"
 	},
 	{
-		"chinese": "你以为他们是危险的",
-		"english": "you think they are dangerous",
-		"soundmark": "/ju/ /θɪŋk/ /ðe/ /ɚ/ /ˈdendʒərəs/"
+		"chinese": "我给她读一个故事",
+		"english": "I read a story to her",
+		"soundmark": "/aɪ/ /rid/ /ə/ /'stɔri/ /tə/ /hɚ/"
 	},
 	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
+		"chinese": "每天晚上",
+		"english": "every night",
+		"soundmark": "/'ɛvri/ /naɪt/"
 	},
 	{
-		"chinese": "更危险的",
-		"english": "more dangerous",
-		"soundmark": "/mɔr/ /ˈdendʒərəs/"
+		"chinese": "我每天晚上为她读一个故事",
+		"english": "I read a story to her every night",
+		"soundmark": "/aɪ/ /rid/ /ə/ /'stɔri/ /tə/ /hɚ/ /'ɛvri/ /naɪt/"
 	},
 	{
-		"chinese": "他们是更危险的",
-		"english": "they are more dangerous",
-		"soundmark": "/ðe/ /ɚ/ /mɔr/ /ˈdendʒərəs/"
+		"chinese": "就寝时间",
+		"english": "bedtime",
+		"soundmark": "/'bɛdtaɪm/"
 	},
 	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
+		"chinese": "睡前故事",
+		"english": "bedtime story",
+		"soundmark": "/'bɛdtaɪm/ /'stɔri/"
 	},
 	{
-		"chinese": "你以为",
-		"english": "you think",
-		"soundmark": "/ju/ /θɪŋk/"
+		"chinese": "我每天晚上给她读一个睡前故事",
+		"english": "I read a bedtime story to her every night",
+		"soundmark": "/aɪ/ /rid/ /ə/ /'bɛdtaɪm/ /'stɔri/ /tə/ /hɚ/ /'ɛvri/ /naɪt/"
 	},
 	{
-		"chinese": "比你以为",
-		"english": "than you think",
-		"soundmark": "/ðæn/ /ju/ /θɪŋk/"
-	},
-	{
-		"chinese": "他们是比你以为的更危险的",
-		"english": "they are more dangerous than you think",
-		"soundmark": "/ðe/ /ɚ/ /mɔr/ /ˈdendʒərəs/ /ðæn/ /ju/ /θɪŋk/"
-	},
-	{
-		"chinese": "宝贵的",
-		"english": "valuable",
-		"soundmark": "/'væljuəbl/"
-	},
-	{
-		"chinese": "最",
-		"english": "the most",
-		"soundmark": "/ðə/ /most/"
-	},
-	{
-		"chinese": "最宝贵的",
-		"english": "the most valuable",
-		"soundmark": "/ðə/ /most/ /'væljuəbl/"
-	},
-	{
-		"chinese": "东西",
-		"english": "thing",
-		"soundmark": "/θɪŋ/"
-	},
-	{
-		"chinese": "最宝贵的东西",
-		"english": "the most valuable thing",
-		"soundmark": "/ðə/ /most/ /'væljuəbl/ /θɪŋ/"
-	},
-	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "时间是最宝贵的东西",
-		"english": "time is the most valuable thing",
-		"soundmark": "/taɪm/ /ɪz/ /ðə/ /most/ /'væljuəbl/ /θɪŋ/"
-	},
-	{
-		"chinese": "拥有",
-		"english": "to have",
-		"soundmark": "/tə/ /hæv/"
-	},
-	{
-		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
-	},
-	{
-		"chinese": "我们拥有",
-		"english": "we have",
-		"soundmark": "/wi/ /hæv/"
-	},
-	{
-		"chinese": "那个东西",
-		"english": "the thing",
-		"soundmark": "/ðə/ /θɪŋ/"
-	},
-	{
-		"chinese": "我们拥有那个东西",
-		"english": "we have the thing",
-		"soundmark": "/wi/ /hæv/ /ðə/ /θɪŋ/"
-	},
-	{
-		"chinese": "我们拥有的那个东西",
-		"english": "the thing we have",
-		"soundmark": "/ðə/ /θɪŋ/ /wi/ /hæv/"
-	},
-	{
-		"chinese": "最宝贵的东西",
-		"english": "the most valuable thing",
-		"soundmark": "/ðə/ /most/ /'væljuəbl/ /θɪŋ/"
-	},
-	{
-		"chinese": "我们拥有的最宝贵的东西",
-		"english": "the most valuable thing we have",
-		"soundmark": "/ðə/ /most/ /'væljuəbl/ /θɪŋ/ /wi/ /hæv/"
-	},
-	{
-		"chinese": "时间是我们拥有的最宝贵的东西",
-		"english": "time is the most valuable thing we have",
-		"soundmark": "/taɪm/ /ɪz/ /ðə/ /most/ /'væljuəbl/ /θɪŋ/ /wi/ /hæv/"
-	},
-	{
-		"chinese": "宝贵的",
-		"english": "valuable",
-		"soundmark": "/'væljuəbl/"
-	},
-	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
-	},
-	{
-		"chinese": "更宝贵的",
-		"english": "more valuable",
-		"soundmark": "/mɔr/ /'væljuəbl/"
-	},
-	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "时间是更宝贵的",
-		"english": "time is more valuable",
-		"soundmark": "/taɪm/ /ɪz/ /mɔr/ /'væljuəbl/"
-	},
-	{
-		"chinese": "金钱",
-		"english": "money",
-		"soundmark": "/ˈmʌni/"
-	},
-	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
-	},
-	{
-		"chinese": "比金钱",
-		"english": "than money",
-		"soundmark": "/ðæn/ /ˈmʌni/"
-	},
-	{
-		"chinese": "时间比金钱是更宝贵的",
-		"english": "time is more valuable than money",
-		"soundmark": "/taɪm/ /ɪz/ /mɔr/ /'væljuəbl/ /ðæn/ /ˈmʌni/"
-	},
-	{
-		"chinese": "车",
-		"english": "car",
-		"soundmark": "/kɑr/"
-	},
-	{
-		"chinese": "新的",
-		"english": "new",
-		"soundmark": "/nu/"
-	},
-	{
-		"chinese": "一辆新车",
-		"english": "a new car",
-		"soundmark": "/ə/ /nu/ /kɑr/"
-	},
-	{
-		"chinese": "昂贵的",
-		"english": "expensive",
-		"soundmark": "/ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "一辆新车是昂贵的",
-		"english": "a new car is expensive",
-		"soundmark": "/ə/ /nu/ /kɑr/ /ɪz/ /ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
-	},
-	{
-		"chinese": "更贵的",
-		"english": "more expensive",
-		"soundmark": "/mɔr/ /ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "一辆新车是更贵的",
-		"english": "a new car is more expensive",
-		"soundmark": "/ə/ /nu/ /kɑr/ /ɪz/ /mɔr/ /ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "使用",
-		"english": "to use",
-		"soundmark": "/tə/ /juz/"
-	},
-	{
-		"chinese": "用过的",
-		"english": "used",
-		"soundmark": "/juzd/"
-	},
-	{
-		"chinese": "一辆旧车",
-		"english": "a used car",
-		"soundmark": "/ə/ /juzd/ /kɑr/"
-	},
-	{
-		"chinese": "比",
-		"english": "than",
-		"soundmark": "/ðæn/"
-	},
-	{
-		"chinese": "比一辆旧车",
-		"english": "than a used car",
-		"soundmark": "/ðæn/ /ə/ /juzd/ /kɑr/"
-	},
-	{
-		"chinese": "一辆新车比一辆旧车是更贵的",
-		"english": "a new car is more expensive than a used car",
-		"soundmark": "/ə/ /nu/ /kɑr/ /ɪz/ /mɔr/ /ɪk'spɛnsɪv/ /ðæn/ /ə/ /juzd/ /kɑr/"
-	},
-	{
-		"chinese": "昂贵的",
-		"english": "expensive",
-		"soundmark": "/ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "礼物",
-		"english": "gift",
-		"soundmark": "/ɡɪft/"
-	},
-	{
-		"chinese": "这个礼物是昂贵的",
-		"english": "the gift is expensive",
-		"soundmark": "/ðə/ /ɡɪft/ /ɪz/ /ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "最",
-		"english": "the most",
-		"soundmark": "/ðə/ /most/"
-	},
-	{
-		"chinese": "最贵的",
-		"english": "the most expensive",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/"
-	},
-	{
-		"chinese": "礼物",
-		"english": "gift",
-		"soundmark": "/ɡɪft/"
-	},
-	{
-		"chinese": "最贵的礼物",
-		"english": "the most expensive gift",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/"
-	},
-	{
-		"chinese": "找到",
-		"english": "to find",
-		"soundmark": "/tə/ /faɪnd/"
-	},
-	{
-		"chinese": "你可以",
-		"english": "you can",
-		"soundmark": "/ju/ /kən/"
-	},
-	{
-		"chinese": "你可以找到",
-		"english": "you can find",
-		"soundmark": "/ju/ /kən/ /faɪnd/"
-	},
-	{
-		"chinese": "你可以找到最贵的礼物",
-		"english": "you can find the most expensive gift",
-		"soundmark": "/ju/ /kən/ /faɪnd/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/"
-	},
-	{
-		"chinese": "你可以找到的最贵的礼物",
-		"english": "the most expensive gift you can find",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
-	},
-	{
-		"chinese": "你应该",
-		"english": "you should",
-		"soundmark": "/ju/ /ʃʊd/"
+		"chinese": "我每天晚上读给她一个睡前故事",
+		"english": "I read her a bedtime story every night",
+		"soundmark": "/aɪ/ /rid/ /hɚ/ /ə/ /'bɛdtaɪm/ /'stɔri/ /'ɛvri/ /naɪt/"
 	},
 	{
 		"chinese": "买",
@@ -485,213 +220,553 @@
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "你应该买",
-		"english": "you should buy",
-		"soundmark": "/ju/ /ʃʊd/ /baɪ/"
+		"chinese": "他",
+		"english": "him",
+		"soundmark": "/hɪm/"
 	},
 	{
-		"chinese": "你可以找到的最贵的礼物",
-		"english": "the most expensive gift you can find",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
+		"chinese": "买给他",
+		"english": "to buy him",
+		"soundmark": "/tə/ /baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "你应该买你可以找到的最贵的礼物",
-		"english": "you should buy the most expensive gift you can find",
-		"soundmark": "/ju/ /ʃʊd/ /baɪ/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
+		"chinese": "玩具",
+		"english": "toy",
+		"soundmark": "/tɔɪ/"
 	},
 	{
-		"chinese": "你的女儿",
-		"english": "your daughter",
-		"soundmark": "/jʊr/ /'dɔtɚ/"
+		"chinese": "一个玩具",
+		"english": "a toy",
+		"soundmark": "/ə/ /tɔɪ/"
 	},
 	{
-		"chinese": "你应该买",
-		"english": "you should buy",
-		"soundmark": "/ju/ /ʃʊd/ /baɪ/"
+		"chinese": "汽车",
+		"english": "car",
+		"soundmark": "/kɑr/"
 	},
 	{
-		"chinese": "你应该买给你的女儿",
-		"english": "you should buy your daughter",
-		"soundmark": "/ju/ /ʃʊd/ /baɪ/ /jʊr/ /'dɔtɚ/"
+		"chinese": "一个玩具车",
+		"english": "a toy car",
+		"soundmark": "/ə/ /tɔɪ/ /kɑr/"
 	},
 	{
-		"chinese": "你可以找到的最贵的礼物",
-		"english": "the most expensive gift you can find",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
+		"chinese": "买给他一个玩具车",
+		"english": "to buy him a toy car",
+		"soundmark": "/tə/ /baɪ/ /hɪm/ /ə/ /tɔɪ/ /kɑr/"
 	},
 	{
-		"chinese": "你应该买给你的女儿你可以找到的最贵的礼物",
-		"english": "you should buy your daughter the most expensive gift you can find",
-		"soundmark": "/ju/ /ʃʊd/ /baɪ/ /jʊr/ /'dɔtɚ/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ɡɪft/ /ju/ /kən/ /faɪnd/"
+		"chinese": "我将会",
+		"english": "I will",
+		"soundmark": "/aɪ/ /wɪl/"
 	},
 	{
-		"chinese": "最贵的",
-		"english": "the most expensive",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/"
+		"chinese": "我将会买给他一个玩具车",
+		"english": "I will buy him a toy car",
+		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /hɪm/ /ə/ /tɔɪ/ /kɑr/"
 	},
 	{
-		"chinese": "旅馆",
-		"english": "hotel",
-		"soundmark": "/ho'tɛl/"
+		"chinese": "我将会买一个玩具车",
+		"english": "I will buy a toy car",
+		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /ə/ /tɔɪ/ /kɑr/"
 	},
 	{
-		"chinese": "最贵的旅馆",
-		"english": "the most expensive hotel",
-		"soundmark": "/ðə/ /most/ /ɪk'spɛnsɪv/ /ho'tɛl/"
+		"chinese": "为他",
+		"english": "for him",
+		"soundmark": "/fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "这是最贵的旅馆",
-		"english": "this is the most expensive hotel",
-		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ho'tɛl/"
+		"chinese": "我将会为他买一个玩具车",
+		"english": "I will buy a toy car for him",
+		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /ə/ /tɔɪ/ /kɑr/ /fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "这个城市",
-		"english": "the city",
-		"soundmark": "/ðə/ /'sɪti/"
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "在这个城市里",
-		"english": "in the city",
-		"soundmark": "/ɪn/ /ðə/ /'sɪti/"
+		"chinese": "我明天将会为他买一个玩具车",
+		"english": "I will buy a toy car for him tomorrow",
+		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /ə/ /tɔɪ/ /kɑr/ /fɝ/ /hɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "这是在这个城市里最贵的旅馆",
-		"english": "this is the most expensive hotel in the city",
-		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /ɪk'spɛnsɪv/ /ho'tɛl/ /ɪn/ /ðə/ /'sɪti/"
+		"chinese": "出生",
+		"english": "birth",
+		"soundmark": "/bɝθ/"
 	},
 	{
-		"chinese": "漂亮的",
-		"english": "beautiful",
-		"soundmark": "/'bjʊtəfəl/"
+		"chinese": "日",
+		"english": "day",
+		"soundmark": "/de/"
 	},
 	{
-		"chinese": "最",
-		"english": "the most",
-		"soundmark": "/ðə/ /most/"
+		"chinese": "生日",
+		"english": "birthday",
+		"soundmark": "/'bɝθde/"
 	},
 	{
-		"chinese": "最漂亮的",
-		"english": "the most beautiful",
-		"soundmark": "/ðə/ /most/ /'bjʊtəfəl/"
+		"chinese": "蛋糕",
+		"english": "cake",
+		"soundmark": "/kek/"
 	},
 	{
-		"chinese": "女孩",
-		"english": "girl",
-		"soundmark": "/ɡɝl/"
+		"chinese": "生日蛋糕",
+		"english": "birthday cake",
+		"soundmark": "/'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "最漂亮的女孩",
-		"english": "the most beautiful girl",
-		"soundmark": "/ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/"
+		"chinese": "一个生日蛋糕",
+		"english": "a birthday cake",
+		"soundmark": "/ə/ /'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "你是",
-		"english": "you are",
-		"soundmark": "/ju/ /ɚ/"
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "你是最漂亮的女孩",
-		"english": "you are the most beautiful girl",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/"
+		"chinese": "做一个生日蛋糕",
+		"english": "to make a birthday cake",
+		"soundmark": "/tə/ /mek/ /ə/ /'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "在世界上",
-		"english": "in the world",
-		"soundmark": "/ɪn/ /ðə/ /wɝld/ /C40/"
+		"chinese": "我们将会",
+		"english": "we will",
+		"soundmark": "/wi/ /wɪl/"
 	},
 	{
-		"chinese": "你是世界上最漂亮的女孩",
-		"english": "you are the most beautiful girl in the world",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "我们将会做一个生日蛋糕",
+		"english": "we will make a birthday cake",
+		"soundmark": "/wi/ /wɪl/ /mek/ /ə/ /'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "漂亮的",
-		"english": "beautiful",
-		"soundmark": "/'bjʊtəfəl/"
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "更",
-		"english": "more",
-		"soundmark": "/mɔr/"
+		"chinese": "我们将会做给她一个生日蛋糕",
+		"english": "we will make her a birthday cake",
+		"soundmark": "/wi/ /wɪl/ /mek/ /hɚ/ /ə/ /'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "更漂亮的",
-		"english": "more beautiful",
-		"soundmark": "/mɔr/ /'bjʊtəfəl/"
+		"chinese": "为她",
+		"english": "for her",
+		"soundmark": "/fɚ/ /hɚ/"
 	},
 	{
-		"chinese": "你是",
-		"english": "you are",
-		"soundmark": "/ju/ /ɚ/"
+		"chinese": "我们将会为她做一个生日蛋糕",
+		"english": "we will make a birthday cake for her",
+		"soundmark": "/wi/ /wɪl/ /mek/ /ə/ /'bɝθde/ /kek/ /fɚ/ /hɚ/"
 	},
 	{
-		"chinese": "你是更漂亮的",
-		"english": "you are more beautiful",
-		"soundmark": "/ju/ /ɚ/ /mɔr/ /'bjʊtəfəl/"
+		"chinese": "做（ing形式）",
+		"english": "making",
+		"soundmark": "/'mekɪŋ/"
 	},
 	{
-		"chinese": "笑",
-		"english": "to smile",
-		"soundmark": "/tə/ /smaɪl/"
+		"chinese": "是;赋值(原型)",
+		"english": "be",
+		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "你笑",
-		"english": "you smile",
-		"soundmark": "/ju/ /smaɪl/"
+		"chinese": "正在做",
+		"english": "be making",
+		"soundmark": "/bi/ /'mekɪŋ/"
 	},
 	{
-		"chinese": "当......的时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"chinese": "我们正在做",
+		"english": "we are making",
+		"soundmark": "/wi/ /ɚ/ /'mekɪŋ/"
 	},
 	{
-		"chinese": "当你笑的时候",
-		"english": "when you smile",
-		"soundmark": "/wɛn/ /ju/ /smaɪl/"
+		"chinese": "一个生日蛋糕",
+		"english": "a birthday cake",
+		"soundmark": "/ə/ /'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "当你笑的时候你是更漂亮的",
-		"english": "you are more beautiful when you smile",
-		"soundmark": "/ju/ /ɚ/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+		"chinese": "我们正在做一个生日蛋糕",
+		"english": "we are making a birthday cake",
+		"soundmark": "/wi/ /ɚ/ /'mekɪŋ/ /ə/ /'bɝθde/ /kek/"
 	},
 	{
-		"chinese": "看",
-		"english": "to look",
-		"soundmark": "/tə/ /lʊk/"
+		"chinese": "为她",
+		"english": "for her",
+		"soundmark": "/fɚ/ /hɚ/"
 	},
 	{
-		"chinese": "你看起来更漂亮",
-		"english": "you look more beautiful",
-		"soundmark": "/ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/"
+		"chinese": "我们正在为她做一个生日蛋糕",
+		"english": "we are making a birthday cake for her",
+		"soundmark": "/wi/ /ɚ/ /'mekɪŋ/ /ə/ /'bɝθde/ /kek/ /fɚ/ /hɚ/"
 	},
 	{
-		"chinese": "当你笑的时候",
-		"english": "when you smile",
-		"soundmark": "/wɛn/ /ju/ /smaɪl/"
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "你看起来是更漂亮的当你笑的时候",
-		"english": "you look more beautiful when you smile",
-		"soundmark": "/ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+		"chinese": "钱",
+		"english": "money",
+		"soundmark": "/'mʌni/"
 	},
 	{
-		"chinese": "但是",
-		"english": "but",
-		"soundmark": "/bʌt/"
+		"chinese": "赚钱",
+		"english": "to make money",
+		"soundmark": "/tə/ /mek/ /'mʌni/"
 	},
 	{
-		"chinese": "但是你看起来是更漂亮的当你笑的时候",
-		"english": "but you look more beautiful when you smile",
-		"soundmark": "/bʌt/ /ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+		"chinese": "身体",
+		"english": "body",
+		"soundmark": "/'bɑdi/"
 	},
 	{
-		"chinese": "你是世界上最漂亮的女孩",
-		"english": "you are the most beautiful girl in the world",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/ /ɪn/ /ðə/ /wɝld/"
+		"chinese": "每一个",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "你是世界上最漂亮的女孩但是当你笑的时候你看起来是更漂亮的",
-		"english": "you are the most beautiful girl in the world but you look more beautiful when you smile",
-		"soundmark": "/ju/ /ɚ/ /ðə/ /most/ /'bjʊtəfəl/ /ɡɝl/ /ɪn/ /ðə/ /wɝld/ /bʌt/ /ju/ /lʊk/ /mɔr/ /'bjʊtəfəl/ /wɛn/ /ju/ /smaɪl/"
+		"chinese": "每个人",
+		"english": "everybody",
+		"soundmark": "/'ɛvrɪbɑdi/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "每个人想要",
+		"english": "everybody wants",
+		"soundmark": "/'ɛvrɪbɑdi/ /wɑnts/"
+	},
+	{
+		"chinese": "每个人想要赚钱",
+		"english": "everybody wants to make money",
+		"soundmark": "/'ɛvrɪbɑdi/ /wɑnts/ /tə/ /mek/ /'mʌni/"
+	},
+	{
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"chinese": "每个人需要赚钱",
+		"english": "everybody needs to make money",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/ /tə/ /mek/ /'mʌni/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "打电话",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"chinese": "呼叫",
+		"english": "call",
+		"soundmark": "/kɔl/"
+	},
+	{
+		"chinese": "一个呼叫",
+		"english": "a call",
+		"soundmark": "/ə/ /kɔl/"
+	},
+	{
+		"chinese": "打一个电话",
+		"english": "to make a call",
+		"soundmark": "/tə/ /mek/ /ə/ /kɔl/"
+	},
+	{
+		"chinese": "视频",
+		"english": "video",
+		"soundmark": "/'vɪdɪo/"
+	},
+	{
+		"chinese": "打一个视频电话",
+		"english": "to make a video call",
+		"soundmark": "/tə/ /mek/ /ə/ /'vɪdɪo/ /kɔl/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的朋友",
+		"english": "my friend",
+		"soundmark": "/maɪ/ /frɛnd/"
+	},
+	{
+		"chinese": "最好的",
+		"english": "best",
+		"soundmark": "/bɛst/"
+	},
+	{
+		"chinese": "我最好的朋友",
+		"english": "my best friend",
+		"soundmark": "/maɪ/ /bɛst/ /frɛnd/"
+	},
+	{
+		"chinese": "打一个视频电话",
+		"english": "to make a video call",
+		"soundmark": "/tə/ /mek/ /ə/ /'vɪdɪo/ /kɔl/"
+	},
+	{
+		"chinese": "打一个视频电话给我最好的朋友",
+		"english": "to make a video call to my best friend",
+		"soundmark": "/tə/ /mek/ /ə/ /'vɪdɪo/ /kɔl/ /tə/ /maɪ/ /bɛst/ /frɛnd/"
+	},
+	{
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"chinese": "我想要打一个视频电话",
+		"english": "I want to make a video call",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /ə/ /'vɪdɪo/ /kɔl/"
+	},
+	{
+		"chinese": "我想要打一个视频电话给我最好的朋友",
+		"english": "I want to make a video call to my best friend",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /ə/ /'vɪdɪo/ /kɔl/ /tə/ /maɪ/ /bɛst/ /frɛnd/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "一个视频",
+		"english": "a video",
+		"soundmark": "/ə/ /'vɪdɪo/"
+	},
+	{
+		"chinese": "做一个视频",
+		"english": "to make a video",
+		"soundmark": "/tə/ /mek/ /ə/ /'vɪdɪo/"
+	},
+	{
+		"chinese": "我想要做一个视频",
+		"english": "I want to make a video",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /ə/ /'vɪdɪo/"
+	},
+	{
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɝn/"
+	},
+	{
+		"chinese": "如何学习",
+		"english": "how to learn",
+		"soundmark": "/haʊ/ /tə/ /lɝn/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "如何学习英语",
+		"english": "how to learn English",
+		"soundmark": "/haʊ/ /tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "关于",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"chinese": "关于如何学习英语",
+		"english": "about how to learn English",
+		"soundmark": "/ə'baʊt/ /haʊ/ /tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "我想要做一个视频",
+		"english": "I want to make a video",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /ə/ /'vɪdɪo/"
+	},
+	{
+		"chinese": "我想要做一个关于如何学习英语的视频",
+		"english": "I want to make a video about how to learn English",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /ə/ /'vɪdɪo/ /ə'baʊt/ /haʊ/ /tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "改变",
+		"english": "to change",
+		"soundmark": "/tə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "改变",
+		"english": "change",
+		"soundmark": "/tʃendʒ/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "做改变",
+		"english": "to make a change",
+		"soundmark": "/tə/ /mek/ /ə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "决定",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "决定做改变",
+		"english": "to decide to make a change",
+		"soundmark": "/tə/ /dɪ'saɪd/ /tə/ /mek/ /ə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "我们",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"chinese": "我们决定做改变",
+		"english": "we decide to make a change",
+		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /mek/ /ə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "我们（过去）决定做改变",
+		"english": "we decided to make a change",
+		"soundmark": "/wi/ /dɪ'saɪdɪd/ /tə/ /mek/ /ə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "决定",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "决定",
+		"english": "decision",
+		"soundmark": "/dɪ'sɪʒn/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "做决定",
+		"english": "to make a decision",
+		"soundmark": "/tə/ /mek/ /ə/ /dɪ'sɪʒn/"
+	},
+	{
+		"chinese": "我们需要",
+		"english": "we need",
+		"soundmark": "/wi/ /nid/"
+	},
+	{
+		"chinese": "我们需要做决定",
+		"english": "we need to make a decision",
+		"soundmark": "/wi/ /nid/ /tə/ /mek/ /ə/ /dɪ'sɪʒn/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我们现在需要做决定",
+		"english": "we need to make a decision now",
+		"soundmark": "/wi/ /nid/ /tə/ /mek/ /ə/ /dɪ'sɪʒn/ /naʊ/"
+	},
+	{
+		"chinese": "我认为",
+		"english": "I think",
+		"soundmark": "/aɪ/ /θɪŋk/"
+	},
+	{
+		"chinese": "我认为我们现在需要做决定",
+		"english": "I think we need to make a decision now",
+		"soundmark": "/aɪ/ /θɪŋk/ /wi/ /nid/ /tə/ /mek/ /ə/ /dɪ'sɪʒn/ /naʊ/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "我不认为我们现在需要做决定",
+		"english": "I don't think we need to make a decision now",
+		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /wi/ /nid/ /tə/ /mek/ /ə/ /dɪ'sɪʒn/ /naʊ/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friends",
+		"soundmark": "/frɛndz/"
+	},
+	{
+		"chinese": "做",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"chinese": "交朋友",
+		"english": "to make friends",
+		"soundmark": "/tə/ /mek/ /frɛndz/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
+	},
+	{
+		"chinese": "你可以交朋友",
+		"english": "you can make friends",
+		"soundmark": "/ju/ /kæn/ /mek/ /frɛndz/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "他们",
+		"english": "them",
+		"soundmark": "/ðəm/"
+	},
+	{
+		"chinese": "和他们",
+		"english": "with them",
+		"soundmark": "/wɪð/ /ðəm/"
+	},
+	{
+		"chinese": "你可以和他们交朋友",
+		"english": "you can make friends with them",
+		"soundmark": "/ju/ /kæn/ /mek/ /frɛndz/ /wɪð/ /ðəm/"
+	},
+	{
+		"chinese": "不可以",
+		"english": "can't",
+		"soundmark": "/kænt/"
+	},
+	{
+		"chinese": "你不可以和他们交朋友",
+		"english": "you can't make friends with them",
+		"soundmark": "/ju/ /kænt/ /mek/ /frɛndz/ /wɪð/ /ðəm/"
 	}
 ]

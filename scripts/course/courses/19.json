@@ -1,328 +1,48 @@
 [
 	{
-		"chinese": "这个问题",
-		"english": "the question",
-		"soundmark": "/ðə/ /'kwɛstʃən/"
+		"chinese": "书",
+		"english": "book",
+		"soundmark": "/bʊk/"
 	},
 	{
-		"chinese": "回答",
-		"english": "to answer",
-		"soundmark": "/tə/ /'ænsɚ/"
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "回答这个问题",
-		"english": "to answer the question",
-		"soundmark": "/tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+		"chinese": "一本英语书",
+		"english": "an English book",
+		"soundmark": "/æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
 	},
 	{
-		"chinese": "这个问题；这个麻烦",
-		"english": "the problem",
-		"soundmark": "/ðə/ /'prɑbləm/"
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "解决",
-		"english": "to solve",
-		"soundmark": "/tə/ /sɑlv/"
+		"chinese": "阅读一本英语书",
+		"english": "to read an English book",
+		"soundmark": "/tə/ /rid/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
 	},
 	{
-		"chinese": "解决这个问题",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
+		"chinese": "阅读（ing形式）",
+		"english": "reading",
+		"soundmark": "/ridɪŋ/"
 	},
 	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "我们需要",
-		"english": "we need",
-		"soundmark": "/wi/ /nid/"
-	},
-	{
-		"chinese": "解决这个麻烦",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们需要解决这个麻烦",
-		"english": "we need to solve the problem",
-		"soundmark": "/wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "一起",
-		"english": "together",
-		"soundmark": "/tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们需要一起解决这个麻烦",
-		"english": "we need to solve the problem together",
-		"soundmark": "/wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "不需要",
-		"english": "don't need",
-		"soundmark": "/dont/ /nid/"
-	},
-	{
-		"chinese": "我们不需要一起解决这个麻烦",
-		"english": "we don't need to solve the problem together",
-		"soundmark": "/wi/ /dont/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "可以",
-		"english": "can",
-		"soundmark": "/kən/"
-	},
-	{
-		"chinese": "我们可以一起解决这个麻烦",
-		"english": "we can solve the problem together",
-		"soundmark": "/wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们不可以一起解决这个麻烦",
-		"english": "we can not solve the problem together",
-		"soundmark": "/wi/ /kən/ /nɑt/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "将会",
-		"english": "will",
-		"soundmark": "/wɪl/"
-	},
-	{
-		"chinese": "我们将会一起解决这个麻烦",
-		"english": "we will solve the problem together",
-		"soundmark": "/wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们将不会一起解决这个麻烦",
-		"english": "we will not solve the problem together",
-		"soundmark": "/wi/ /wɪl/ /nɑt/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "尝试",
-		"english": "to try",
-		"soundmark": "/tə/ /traɪ/"
-	},
-	{
-		"chinese": "解决这个麻烦",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们尝试解决这个麻烦",
-		"english": "we try to solve the problem",
-		"soundmark": "/wi/ /traɪ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "一起",
-		"english": "together",
-		"soundmark": "/tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们尝试一起解决这个麻烦",
-		"english": "we try to solve the problem together",
-		"soundmark": "/wi/ /traɪ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "尝试(ing形式)",
-		"english": "trying",
-		"soundmark": "/'traɪɪŋ/"
-	},
-	{
-		"chinese": "是；赋值(原型)",
+		"chinese": "是；赋值（原型）",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在尝试",
-		"english": "be trying",
-		"soundmark": "/bi/ /'traɪɪŋ/"
+		"chinese": "正在阅读",
+		"english": "be reading",
+		"soundmark": "/bi/ /ridɪŋ/"
 	},
 	{
-		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
-	},
-	{
-		"chinese": "我们(现在)正在尝试",
-		"english": "we are trying",
-		"soundmark": "/wi/ /ɚ/ /'traɪɪŋ/"
-	},
-	{
-		"chinese": "解决这个麻烦",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们(现在)正在尝试解决这个麻烦",
-		"english": "we are trying to solve the problem",
-		"soundmark": "/wi/ /ɚ/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "一起",
-		"english": "together",
-		"soundmark": "/tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们(现在)正在尝试一起解决这个麻烦",
-		"english": "we are trying to solve the problem together",
-		"soundmark": "/wi/ /ɚ/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "脸",
-		"english": "face",
-		"soundmark": "/fes/"
-	},
-	{
-		"chinese": "面对",
-		"english": "to face",
-		"soundmark": "/tə/ /fes/"
-	},
-	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
-	},
-	{
-		"chinese": "面对我",
-		"english": "to face me",
-		"soundmark": "/tə/ /fes/ /mi/"
-	},
-	{
-		"chinese": "真相；现实",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "面对现实",
-		"english": "to face the truth",
-		"soundmark": "/tə/ /fes/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "你需要面对现实",
-		"english": "you need to face the truth",
-		"soundmark": "/ju/ /nid/ /tə/ /fes/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "这个麻烦",
-		"english": "the problem",
-		"soundmark": "/ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "面对这个麻烦",
-		"english": "to face the problem",
-		"soundmark": "/tə/ /fes/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们需要",
-		"english": "we need",
-		"soundmark": "/wi/ /nid/"
-	},
-	{
-		"chinese": "我们需要面对这个麻烦",
-		"english": "we need to face the problem",
-		"soundmark": "/wi/ /nid/ /tə/ /fes/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们面对这个麻烦",
-		"english": "we face the problem",
-		"soundmark": "/wi/ /fes/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "面对(ing形式)",
-		"english": "facing",
-		"soundmark": "/'fesɪŋ/"
-	},
-	{
-		"chinese": "是；赋值(原型)",
-		"english": "be",
-		"soundmark": "/bi/"
-	},
-	{
-		"chinese": "正在面对",
-		"english": "be facing",
-		"soundmark": "/bi/ /'fesɪŋ/"
-	},
-	{
-		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
-	},
-	{
-		"chinese": "我们(现在)正在面对",
-		"english": "we are facing",
-		"soundmark": "/wi/ /ɚ/ /'fesɪŋ/"
-	},
-	{
-		"chinese": "一个",
-		"english": "a",
-		"soundmark": "/ə/"
-	},
-	{
-		"chinese": "一个麻烦",
-		"english": "a problem",
-		"soundmark": "/ə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "大的",
-		"english": "big",
-		"soundmark": "/bɪɡ/"
-	},
-	{
-		"chinese": "一个大麻烦",
-		"english": "a big problem",
-		"soundmark": "/ə/ /bɪɡ/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们(现在)正在面对一个大麻烦",
-		"english": "we are facing a big problem",
-		"soundmark": "/wi/ /ɚ/ /'fesɪŋ/ /ə/ /bɪɡ/ /'prɑbləm/"
-	},
-	{
-		"chinese": "这个麻烦",
-		"english": "the problem",
-		"soundmark": "/ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "解决",
-		"english": "to solve",
-		"soundmark": "/tə/ /sɑlv/"
-	},
-	{
-		"chinese": "解决这个麻烦",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "尝试",
-		"english": "to try",
-		"soundmark": "/tə/ /traɪ/"
-	},
-	{
-		"chinese": "我尝试解决这个麻烦",
-		"english": "I try to solve the problem",
-		"soundmark": "/aɪ/ /traɪ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "尝试(ing形式)",
-		"english": "trying",
-		"soundmark": "/'traɪɪŋ/"
-	},
-	{
-		"chinese": "是；赋值(原型)",
-		"english": "be",
-		"soundmark": "/bi/"
-	},
-	{
-		"chinese": "正在尝试",
-		"english": "be trying",
-		"soundmark": "/bi/ /'traɪɪŋ/"
+		"chinese": "正在阅读一本英语书",
+		"english": "be reading an English book",
+		"soundmark": "/bi/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
 	},
 	{
 		"chinese": "我",
@@ -330,219 +50,194 @@
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我(现在)正在尝试",
-		"english": "I am trying",
-		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/"
+		"chinese": "我（现在）正在阅读一本英语书",
+		"english": "I am reading an English book",
+		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
 	},
 	{
-		"chinese": "解决这个麻烦",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
+		"chinese": "这一瞬间；这一刻",
+		"english": "the moment",
+		"soundmark": "/ðə/ /'momənt/"
 	},
 	{
-		"chinese": "我(现在)正在尝试解决这个麻烦",
-		"english": "I am trying to solve the problem",
-		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/"
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "面对(ing形式)",
-		"english": "facing",
-		"soundmark": "/'fesɪŋ/"
+		"chinese": "我此刻正在阅读一本英语书",
+		"english": "I am reading an English book at the moment",
+		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"chinese": "我（过去）正在阅读一本英语书",
+		"english": "I was reading an English book",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "昨晚",
+		"english": "last night",
+		"soundmark": "/læst/ /naɪt/"
+	},
+	{
+		"chinese": "我昨晚正在阅读一本英语书",
+		"english": "I was reading an English book last night",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /læst/ /naɪt/"
+	},
+	{
+		"chinese": "家",
+		"english": "home",
+		"soundmark": "/hom/"
+	},
+	{
+		"chinese": "工作",
+		"english": "work",
+		"soundmark": "/wɝk/"
+	},
+	{
+		"chinese": "家庭作业",
+		"english": "homework",
+		"soundmark": "/'homwɝk/"
+	},
+	{
+		"chinese": "她的",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "她的家庭作业",
+		"english": "her homework",
+		"soundmark": "/hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做她的家庭作业",
+		"english": "to do her homework",
+		"soundmark": "/tə/ /du/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "做（ing形式）",
+		"english": "doing",
+		"soundmark": "/ˈduɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在面对",
-		"english": "be facing",
-		"soundmark": "/bi/ /'fesɪŋ/"
+		"chinese": "正在做",
+		"english": "be doing",
+		"soundmark": "/bi/ /ˈduɪŋ/"
 	},
 	{
-		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
+		"chinese": "正在做她的家庭作业",
+		"english": "be doing her homework",
+		"soundmark": "/bi/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "我们(现在)正在面对",
-		"english": "we are facing",
-		"soundmark": "/wi/ /ɚ/ /'fesɪŋ/"
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "这个麻烦",
-		"english": "the problem",
-		"soundmark": "/ðə/ /'prɑbləm/"
+		"chinese": "她（现在）正在做她的家庭作业",
+		"english": "she is doing her homework",
+		"soundmark": "/ʃi/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "我们(现在)正在面对的这个麻烦",
-		"english": "the problem we are facing",
-		"soundmark": "/ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/"
+		"chinese": "女儿",
+		"english": "daughter",
+		"soundmark": "/'dɔtɚ/"
 	},
 	{
-		"chinese": "我(现在)正在尝试解决这个麻烦",
-		"english": "I am trying to solve the problem",
-		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/"
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我(现在)正在尝试解决我们面对的这个麻烦",
-		"english": "I am trying to solve the problem we are facing",
-		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/"
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "现在",
-		"english": "now",
-		"soundmark": "/naʊ/"
+		"chinese": "我的女儿（现在）正在做她的家庭作业",
+		"english": "my daughter is doing her homework",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "我(现在)正在尝试解决我们现在正在面对的这个麻烦",
-		"english": "I am trying to solve the problem we are facing now",
-		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/ /naʊ/"
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "解决这个麻烦",
-		"english": "to solve the problem",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/"
+		"chinese": "我的女儿此刻正在做她的家庭作业",
+		"english": "my daughter is doing her homework at the moment",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "我解决这个麻烦",
-		"english": "I solve the problem",
-		"soundmark": "/aɪ/ /sɑlv/ /ðə/ /'prɑbləm/"
+		"chinese": "我的女儿（过去）正在做她的家庭作业",
+		"english": "my daughter was doing her homework",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "解决(ing形式)",
-		"english": "solving",
-		"soundmark": "/sɑlvɪŋ/"
+		"chinese": "我（过去）正在阅读一本英语书",
+		"english": "I was reading an English book",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我（过去）正在阅读一本英语书与此同时我的女儿（过去）正在做她的家庭作业",
+		"english": "I was reading an English book while my daughter was doing her homework",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /waɪl/ /maɪ/ /'dɔtɚ/ /wəz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "跑步",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
+	},
+	{
+		"chinese": "街道",
+		"english": "the street",
+		"soundmark": "/ðə/ /strit/"
+	},
+	{
+		"chinese": "在街上",
+		"english": "in the street",
+		"soundmark": "/ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "在街上跑步",
+		"english": "to run in the street",
+		"soundmark": "/tə/ /rʌn/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "跑步（ing形式）",
+		"english": "running",
+		"soundmark": "/'rʌnɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在解决",
-		"english": "be solving",
-		"soundmark": "/bi/ /sɑlvɪŋ/"
+		"chinese": "正在跑步",
+		"english": "be running",
+		"soundmark": "/bi/ /'rʌnɪŋ/"
 	},
 	{
-		"chinese": "我(现在)正在解决",
-		"english": "I am solving",
-		"soundmark": "/aɪ/ /æm/ /sɑlvɪŋ/"
-	},
-	{
-		"chinese": "这个麻烦",
-		"english": "the problem",
-		"soundmark": "/ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我(现在)正在解决这个麻烦",
-		"english": "I am solving the problem",
-		"soundmark": "/aɪ/ /æm/ /sɑlvɪŋ/ /ðə/ /'prɑbləm/"
-	},
-	{
-		"chinese": "我们(现在)正在面对",
-		"english": "we are facing",
-		"soundmark": "/wi/ /ɚ/ /'fesɪŋ/"
-	},
-	{
-		"chinese": "我们(现在)正在面对的这个麻烦",
-		"english": "the problem we are facing",
-		"soundmark": "/ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/"
-	},
-	{
-		"chinese": "我(现在)正在解决我们(现在)正在面对的这个麻烦",
-		"english": "I am solving the problem we are facing",
-		"soundmark": "/aɪ/ /æm/ /sɑlvɪŋ/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/"
-	},
-	{
-		"chinese": "现在",
-		"english": "now",
-		"soundmark": "/naʊ/"
-	},
-	{
-		"chinese": "我(现在)正在解决我们现在正在面对的这个麻烦",
-		"english": "I am solving the problem we are facing now",
-		"soundmark": "/aɪ/ /æm/ /sɑlvɪŋ/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/ /naʊ/"
-	},
-	{
-		"chinese": "疑惑",
-		"english": "to wonder",
-		"soundmark": "/tə/ /'wʌndɚ/"
-	},
-	{
-		"chinese": "我疑惑",
-		"english": "I wonder",
-		"soundmark": "/aɪ/ /'wʌndɚ/"
-	},
-	{
-		"chinese": "一起解决这个麻烦",
-		"english": "to solve the problem together",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们可以",
-		"english": "we can",
-		"soundmark": "/wi/ /kən/"
-	},
-	{
-		"chinese": "我们可以一起解决这个麻烦",
-		"english": "we can solve the problem together",
-		"soundmark": "/wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "是否",
-		"english": "if",
-		"soundmark": "/ɪf/"
-	},
-	{
-		"chinese": "是否我们可以一起解决这个麻烦",
-		"english": "if we can solve the problem together",
-		"soundmark": "/ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我疑惑",
-		"english": "I wonder",
-		"soundmark": "/aɪ/ /'wʌndɚ/"
-	},
-	{
-		"chinese": "我疑惑是否我们可以一起解决这个麻烦",
-		"english": "I wonder if we can solve the problem together",
-		"soundmark": "/aɪ/ /'wʌndɚ/ /ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "一起解决这个麻烦",
-		"english": "to solve the problem together",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我们需要",
-		"english": "we need",
-		"soundmark": "/wi/ /nid/"
-	},
-	{
-		"chinese": "我们需要一起解决这个麻烦",
-		"english": "we need to solve the problem together",
-		"soundmark": "/wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "为什么",
-		"english": "why",
-		"soundmark": "/waɪ/"
-	},
-	{
-		"chinese": "为什么我们需要一起解决这个麻烦",
-		"english": "why we need to solve the problem together",
-		"soundmark": "/waɪ/ /wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "我疑惑",
-		"english": "I wonder",
-		"soundmark": "/aɪ/ /'wʌndɚ/"
-	},
-	{
-		"chinese": "我疑惑为什么我们需要一起解决这个麻烦",
-		"english": "I wonder why we need to solve the problem together",
-		"soundmark": "/aɪ/ /'wʌndɚ/ /waɪ/ /wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "正在在街上跑步",
+		"english": "be running in the street",
+		"soundmark": "/bi/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
 	{
 		"chinese": "他",
@@ -550,114 +245,234 @@
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他疑惑",
-		"english": "he wonders",
-		"soundmark": "/hi/ /'wʌndɚz/"
+		"chinese": "他（现在）正在在街上跑步",
+		"english": "he is running in the street",
+		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
 	{
-		"chinese": "一起解决这个麻烦",
-		"english": "to solve the problem together",
-		"soundmark": "/tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "我们将会",
-		"english": "we will",
-		"soundmark": "/wi/ /wɪl/"
+		"chinese": "他此刻正在在街上跑步",
+		"english": "he is running in the street at the moment",
+		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "我们将会一起解决这个麻烦",
-		"english": "we will solve the problem together",
-		"soundmark": "/wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "他（过去）正在在街上跑步",
+		"english": "he was running in the street",
+		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
 	{
-		"chinese": "在什么时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"chinese": "游泳",
+		"english": "to swim",
+		"soundmark": "/tə/ /swɪm/"
 	},
 	{
-		"chinese": "我们将会在什么时候一起解决这个麻烦",
-		"english": "when we will solve the problem together",
-		"soundmark": "/wɛn/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "游泳池",
+		"english": "the pool",
+		"soundmark": "/ðə/ /pul/"
 	},
 	{
-		"chinese": "他疑惑我们将会在什么时候一起解决这个麻烦",
-		"english": "he wonders when we will solve the problem together",
-		"soundmark": "/hi/ /'wʌndɚz/ /wɛn/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "在游泳池里",
+		"english": "in the pool",
+		"soundmark": "/ɪn/ /ðə/ /pul/"
 	},
 	{
-		"chinese": "如何",
-		"english": "how",
-		"soundmark": "/haʊ/"
+		"chinese": "在游泳池里游泳",
+		"english": "to swim in the pool",
+		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /pul/"
 	},
 	{
-		"chinese": "我们将会如何一起解决这个问题",
-		"english": "how we will solve the problem together",
-		"soundmark": "/haʊ/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "游泳（ing形式）",
+		"english": "swimming",
+		"soundmark": "/'swɪmɪŋ/"
 	},
 	{
-		"chinese": "他疑惑我们将会如何一起解决这个麻烦",
-		"english": "he wonders how we will solve the problem together",
-		"soundmark": "/hi/ /'wʌndɚz/ /haʊ/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
-	},
-	{
-		"chinese": "疑惑(ing形式)",
-		"english": "wondering",
-		"soundmark": "/'wʌndərɪŋ/"
-	},
-	{
-		"chinese": "是；赋值(原型)",
+		"chinese": "是；赋值（原型）",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在疑惑",
-		"english": "be wondering",
-		"soundmark": "/bi/ /'wʌndərɪŋ/"
+		"chinese": "正在游泳",
+		"english": "be swimming",
+		"soundmark": "/bi/ /'swɪmɪŋ/"
 	},
 	{
-		"chinese": "我(过去)正在疑惑",
-		"english": "I was wondering",
-		"soundmark": "/aɪ/ /wəz/ /'wʌndərɪŋ/"
+		"chinese": "正在在游泳池里游泳",
+		"english": "be swimming in the pool",
+		"soundmark": "/bi/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
 	},
 	{
-		"chinese": "是否我们可以一起解决这个麻烦",
-		"english": "if we can solve the problem together",
-		"soundmark": "/ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "我(过去)正在疑惑是否我们可以一起解决这个麻烦",
-		"english": "I was wondering if we can solve the problem together",
-		"soundmark": "/aɪ/ /wəz/ /'wʌndərɪŋ/ /ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "她（现在）正在游泳池里游泳",
+		"english": "she is swimming in the pool",
+		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
 	},
 	{
-		"chinese": "我(过去)正在疑惑",
-		"english": "I was wondering",
-		"soundmark": "/aɪ/ /wəz/ /'wʌndərɪŋ/"
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "为什么我们需要一起解决这个麻烦",
-		"english": "why we need to solve the problem together",
-		"soundmark": "/waɪ/ /wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "她此刻正在游泳池里游泳",
+		"english": "she is swimming in the pool at the moment",
+		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/ /æt/ /ðə/ /moment/ /'momənt/"
 	},
 	{
-		"chinese": "我(过去)正在疑惑为什么我们需要一起解决这个麻烦",
-		"english": "I was wondering why we need to solve the problem together",
-		"soundmark": "/aɪ/ /wəz/ /'wʌndərɪŋ/ /waɪ/ /wi/ /nid/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "她（过去）正在游泳池里游泳",
+		"english": "she was swimming in the pool",
+		"soundmark": "/ʃi/ /wəz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
 	},
 	{
-		"chinese": "疑惑(ing形式)",
-		"english": "wondering",
-		"soundmark": "/'wʌndərɪŋ/"
+		"chinese": "他（过去）正在在街上跑步",
+		"english": "he was running in the street",
+		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "他（过去）正在在街上跑步与此同时她（过去）正在游泳池里游泳",
+		"english": "he was running in the street while she was swimming in the pool",
+		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /waɪl/ /ʃi/ /wəz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "房子",
+		"english": "house",
+		"soundmark": "/haʊs/"
+	},
+	{
+		"chinese": "工作",
+		"english": "work",
+		"soundmark": "/wɝk/"
+	},
+	{
+		"chinese": "家务",
+		"english": "the housework",
+		"soundmark": "/ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做家务",
+		"english": "to do the housework",
+		"soundmark": "/tə/ /du/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "做（ing形式）",
+		"english": "doing",
+		"soundmark": "/ˈduɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在疑惑",
-		"english": "be wondering",
-		"soundmark": "/bi/ /'wʌndərɪŋ/"
+		"chinese": "正在做",
+		"english": "be doing",
+		"soundmark": "/bi/ /ˈduɪŋ/"
+	},
+	{
+		"chinese": "正在做家务",
+		"english": "be doing the housework",
+		"soundmark": "/bi/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在做家务",
+		"english": "she is doing the housework",
+		"soundmark": "/ʃi/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "母亲；妈妈",
+		"english": "mother",
+		"soundmark": "/'mʌðɚ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的妈妈",
+		"english": "my mother",
+		"soundmark": "/maɪ/ /'mʌðɚ/"
+	},
+	{
+		"chinese": "我的妈妈（现在）正在做家务",
+		"english": "my mother is doing the housework",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我妈此刻正在做家务",
+		"english": "my mother is doing the housework at the moment",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我妈（过去）正在做家务",
+		"english": "my mother was doing the housework",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /wəz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "说话",
+		"english": "to talk",
+		"soundmark": "/tə/ /tɔk/"
+	},
+	{
+		"chinese": "手机",
+		"english": "the phone",
+		"soundmark": "/ðə/ /fon/"
+	},
+	{
+		"chinese": "在手机上",
+		"english": "on the phone",
+		"soundmark": "/ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "在手机上说话",
+		"english": "to talk on the phone",
+		"soundmark": "/tə/ /tɔk/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "说话（ing形式）",
+		"english": "talking",
+		"soundmark": "/'tɔkɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在说话",
+		"english": "be talking",
+		"soundmark": "/bi/ /'tɔkɪŋ/"
+	},
+	{
+		"chinese": "正在在手机上说话",
+		"english": "be talking on the phone",
+		"soundmark": "/bi/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
 	},
 	{
 		"chinese": "他",
@@ -665,38 +480,253 @@
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他(现在)正在疑惑",
-		"english": "he is wondering",
-		"soundmark": "/hi/ /ɪz/ /'wʌndərɪŋ/"
+		"chinese": "他（现在）正在手机上说话",
+		"english": "he is talking on the phone",
+		"soundmark": "/hi/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
 	},
 	{
-		"chinese": "我们将会在什么时候一起解决这个麻烦",
-		"english": "when we will solve the problem together",
-		"soundmark": "/wɛn/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "父亲；爸爸",
+		"english": "father",
+		"soundmark": "/'fɑðɚ/"
 	},
 	{
-		"chinese": "他(现在)正在疑惑我们将会在什么时候一起解决这个麻烦",
-		"english": "he is wondering when we will solve the problem together",
-		"soundmark": "/hi/ /ɪz/ /'wʌndərɪŋ/ /wɛn/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "如何",
-		"english": "how",
-		"soundmark": "/haʊ/"
+		"chinese": "我的父亲",
+		"english": "my father",
+		"soundmark": "/maɪ/ /'fɑðɚ/"
 	},
 	{
-		"chinese": "我们将会如何一起解决这个问题",
-		"english": "how we will solve the problem together",
-		"soundmark": "/haʊ/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "我爸（现在）正在手机上说话",
+		"english": "my father is talking on the phone",
+		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
 	},
 	{
-		"chinese": "他(现在)正在疑惑",
-		"english": "he is wondering",
-		"soundmark": "/hi/ /ɪz/ /'wʌndərɪŋ/"
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "他(现在)正在疑惑我们将会如何一起解决这个问题",
-		"english": "he is wondering how we will solve the problem together",
-		"soundmark": "/hi/ /ɪz/ /'wʌndərɪŋ/ /haʊ/ /wi/ /wɪl/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
+		"chinese": "我爸此刻正在手机上说话",
+		"english": "my father is talking on the phone at the moment",
+		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我爸（过去）正在手机上说话",
+		"english": "my father was talking on the phone",
+		"soundmark": "/maɪ/ /'fɑðɚ/ /wəz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我妈（过去）正在做家务",
+		"english": "my mother was doing the housework",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /wəz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "我妈（过去）正在做家务与此同时我爸（过去）正在手机上说话",
+		"english": "my mother was doing the housework while my father was talking on the phone",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /wəz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /waɪl/ /maɪ/ /'fɑðɚ/ /wəz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɑtʃ/"
+	},
+	{
+		"chinese": "电视",
+		"english": "TV",
+		"soundmark": "/ˈtiˈvi/"
+	},
+	{
+		"chinese": "看电视",
+		"english": "to watch TV",
+		"soundmark": "/tə/ /'wɑtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "看（ing形式）",
+		"english": "watching",
+		"soundmark": "/'wɑtʃɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在看",
+		"english": "be watching",
+		"soundmark": "/bi/ /'wɑtʃɪŋ/"
+	},
+	{
+		"chinese": "正在看电视",
+		"english": "be watching TV",
+		"soundmark": "/bi/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在看电视",
+		"english": "she is watching TV",
+		"soundmark": "/ʃi/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "女儿",
+		"english": "daughter",
+		"soundmark": "/'dɔtɚ/"
+	},
+	{
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "我女儿（现在）正在看电视",
+		"english": "my daughter is watching TV",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我女儿此刻正在看电视",
+		"english": "my daughter is watching TV at the moment",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我女儿（过去）正在看电视",
+		"english": "my daughter was watching TV",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "烹饪；做饭",
+		"english": "to cook",
+		"soundmark": "/tə/ /kʊk/"
+	},
+	{
+		"chinese": "牛肉",
+		"english": "beef",
+		"soundmark": "/bif/"
+	},
+	{
+		"chinese": "做牛肉",
+		"english": "to cook beef",
+		"soundmark": "/tə/ /kʊk/ /bif/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "土豆",
+		"english": "potatoes",
+		"soundmark": "/pə'tetoz/"
+	},
+	{
+		"chinese": "和土豆",
+		"english": "with potatoes",
+		"soundmark": "/wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "牛肉和土豆",
+		"english": "beef with potatoes",
+		"soundmark": "/bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "烹饪牛肉和土豆",
+		"english": "to cook beef with potatoes",
+		"soundmark": "/tə/ /kʊk/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "烹饪；做饭（ing形式）",
+		"english": "cooking",
+		"soundmark": "/'kʊkɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在烹饪",
+		"english": "be cooking",
+		"soundmark": "/bi/ /'kʊkɪŋ/"
+	},
+	{
+		"chinese": "正在做牛肉烧土豆",
+		"english": "be cooking beef with potatoes",
+		"soundmark": "/bi/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在做牛肉烧土豆",
+		"english": "she is cooking beef with potatoes",
+		"soundmark": "/ʃi/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "母亲；妈妈",
+		"english": "mother",
+		"soundmark": "/'mʌðɚ/"
+	},
+	{
+		"chinese": "她的",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "她的妈妈",
+		"english": "her mother",
+		"soundmark": "/hɚ/ /'mʌðɚ/"
+	},
+	{
+		"chinese": "她妈妈（现在）正在做牛肉烧土豆",
+		"english": "her mother is cooking beef with potatoes",
+		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "她妈妈此刻正在做牛肉烧土豆",
+		"english": "her mother is cooking beef with potatoes at the moment",
+		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "她妈妈（过去）正在做牛肉烧土豆",
+		"english": "her mother was cooking beef with potatoes",
+		"soundmark": "/hɚ/ /'mʌðɚ/ /wəz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "我女儿（过去）正在看电视",
+		"english": "my daughter was watching TV",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我女儿（过去）正在看电视与此同时她妈妈（过去）正在做牛肉烧土豆",
+		"english": "my daughter was watching TV while her mother was cooking beef with potatoes",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /waɪl/ /hɚ/ /'mʌðɚ/ /wəz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
 	}
 ]
