@@ -1,4 +1,4 @@
-import { vi, it, expect, describe } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { useInput } from "../question";
 
 describe("question", () => {
@@ -53,9 +53,11 @@ describe("question", () => {
     setInputValue("i eat");
 
     const correctCallback = vi.fn();
-    submitAnswer(correctCallback);
+    const wrongCallback = vi.fn();
+    submitAnswer(correctCallback, wrongCallback);
 
     expect(correctCallback).toBeCalled();
+    expect(wrongCallback).not.toBeCalled();
   });
 
   it("should be incorrect when checked the answer", async () => {
@@ -71,9 +73,11 @@ describe("question", () => {
     setInputValue("i like");
 
     const correctCallback = vi.fn();
-    submitAnswer(correctCallback);
+    const wrongCallback = vi.fn();
+    submitAnswer(correctCallback, wrongCallback);
 
     expect(correctCallback).not.toBeCalled();
+    expect(wrongCallback).toBeCalled();
     expect(userInputWords[1].incorrect).toBe(true);
   });
 
@@ -146,7 +150,10 @@ describe("question", () => {
     });
 
     setInputValue("he eat");
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
     await fixFirstIncorrectWord();
 
     expect(userInputWords[0].userInput).toBe("");
@@ -165,7 +172,10 @@ describe("question", () => {
       });
 
     setInputValue("he eats a");
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
 
     await fixIncorrectWord();
 
@@ -195,7 +205,10 @@ describe("question", () => {
 
     setInputValue("i ea ap");
 
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
 
     const preventDefault = vi.fn();
     handleKeyboardInput({
@@ -251,7 +264,10 @@ describe("question", () => {
     });
 
     setInputValue("i ea ap");
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
     await fixIncorrectWord();
 
     const preventDefault = vi.fn();
@@ -279,7 +295,10 @@ describe("question", () => {
     });
 
     setInputValue("i ea apple");
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
     await fixIncorrectWord();
 
     const preventDefault = vi.fn();
@@ -331,7 +350,10 @@ describe("question", () => {
     });
 
     setInputValue("he eat banana");
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
 
     await fixIncorrectWord();
     setInputValue("a");
@@ -379,7 +401,13 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = vi.fn();
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useInput({
+    const {
+      setInputValue,
+      userInputWords,
+      submitAnswer,
+      fixIncorrectWord,
+      handleKeyboardInput,
+    } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -388,16 +416,19 @@ describe("question", () => {
     const inputValue = "i e apple";
     getInputCursorPosition.mockReturnValue(inputValue.length);
     setInputValue(inputValue);
-    submitAnswer(() => {});
+    submitAnswer(
+      () => {},
+      () => {}
+    );
 
     await fixIncorrectWord();
 
-    expect(userInputWords[1].userInput).toBe("")
+    expect(userInputWords[1].userInput).toBe("");
     expect(userInputWords[1].isActive).toBe(true);
 
     getInputCursorPosition.mockReturnValue(2);
     userInputWords[1].userInput = "eat";
-    
+
     const submitAnswerCallback = vi.fn();
     handleKeyboardInput(
       {

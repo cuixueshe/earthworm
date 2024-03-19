@@ -1,5 +1,16 @@
 import { nextTick, reactive, ref, watchEffect } from "vue";
+import errorSoundPath from "~/assets/sounds/error.mp3";
+import rightSoundPath from "~/assets/sounds/right.mp3";
 
+export const playRightSound = () => {
+  const audio = new Audio(rightSoundPath);
+  audio.play();
+};
+
+export const playErrorSound = () => {
+  const audio = new Audio(errorSoundPath);
+  audio.play();
+};
 interface Word {
   text: string;
   isActive: boolean;
@@ -184,17 +195,21 @@ export function useInput({
     updateActiveWord(word.start);
   }
 
-  function submitAnswer(correctCallback: () => void) {
+  function submitAnswer(
+    correctCallback: () => void,
+    wrongCallback: () => void
+  ) {
     if (mode === Mode.Fix) return;
     resetAllWordActive();
     markIncorrectWord();
 
     if (checkWordCorrect()) {
       mode = Mode.Input;
-      correctCallback();
+      correctCallback(); // 调用输入正确的回调
       inputValue.value = "";
     } else {
       mode = Mode.Fix;
+      wrongCallback(); // 调用输入错误的回调
     }
   }
 
@@ -258,7 +273,13 @@ export function useInput({
   ) {
     e.preventDefault();
     if (useSpaceSubmitAnswer?.enable) {
-      submitAnswer(useSpaceSubmitAnswer.callback);
+      submitAnswer(
+        () => {
+          useSpaceSubmitAnswer.callback();
+          playRightSound(); // 输入正确时播放正确声音
+        },
+        playErrorSound // 输入错误时播放错误声音
+      );
     }
   }
 
@@ -329,5 +350,7 @@ export function useInput({
     fixIncorrectWord,
     fixFirstIncorrectWord,
     resetUserInputWords,
+    playRightSound,
+    playErrorSound,
   };
 }

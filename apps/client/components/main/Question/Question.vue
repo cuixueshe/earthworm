@@ -1,7 +1,10 @@
 <template>
   <div class="text-center pt-2">
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
-      <template v-for="(w, i) in courseStore.words" :key="i">
+      <template
+        v-for="(w, i) in courseStore.words"
+        :key="i"
+      >
         <div
           class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
@@ -44,6 +47,11 @@ import { useInput } from "~/composables/main/question";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
+import { useTypingSound } from "./useTypingSound";
+
+// 引入并初始化打字声音相关的Hook
+import typingSoundPath from "~/assets/sounds/typing.mp3";
+const { playAudio } = useTypingSound(typingSoundPath);
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
@@ -59,6 +67,8 @@ const {
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
+  playRightSound,
+  playErrorSound,
 } = useInput({
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
@@ -75,9 +85,13 @@ watch(
 function handleKeyup(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
-    submitAnswer(() => {
-      showAnswer();
-    });
+    submitAnswer(
+      () => {
+        showAnswer();
+        playRightSound(); // 输入正确时播放正确声音
+      },
+      playErrorSound // 输入错误时播放错误声音
+    );
   }
 }
 
@@ -150,6 +164,9 @@ function inputWidth(word: string) {
 }
 
 function handleKeydown(e: KeyboardEvent) {
+  if (/^[a-zA-Z0-9]$/.test(e.key)) {
+    playAudio(); // 使用Hook提供的方法播放打字声音
+  }
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
