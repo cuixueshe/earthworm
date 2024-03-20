@@ -18,7 +18,7 @@ describe("keyboardShortcuts", () => {
     registerShortcut("ctrl+p", command);
 
     // 触发
-    fireEvent.keyUp({
+    fireEvent.keyDown({
       ctrlKey: true,
       key: "p",
     });
@@ -32,7 +32,7 @@ describe("keyboardShortcuts", () => {
     registerShortcut("enter", command);
 
     // 触发
-    fireEvent.keyUp({
+    fireEvent.keyDown({
       key: "enter",
     });
 
@@ -47,7 +47,7 @@ describe("keyboardShortcuts", () => {
     registerShortcut("enter", commandB);
 
     // 触发
-    fireEvent.keyUp({
+    fireEvent.keyDown({
       key: "enter",
     });
 
@@ -64,7 +64,7 @@ describe("keyboardShortcuts", () => {
       cancelShortcut(shortcut);
 
       // 触发
-      fireEvent.keyUp({
+      fireEvent.keyDown({
         key: "enter",
       });
 
@@ -79,7 +79,7 @@ describe("keyboardShortcuts", () => {
       cancelShortcut("enter", command);
 
       // 触发
-      fireEvent.keyUp({
+      fireEvent.keyDown({
         key: "enter",
       });
 

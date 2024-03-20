@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "schema:build": "pnpm -F @earthworm/shared build",
-    "db:init": "drizzle-kit push:mysql",
-    "db:init:test": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
-    "db:init:test:ci": "npx tsx scripts/db.ts",
-    "db:upload": "pnpm -F @earthworm/scripts-courses data:create && pnpm -F @earthworm/scripts-courses data:upload",
-    "db:update": "pnpm -F @earthworm/scripts-courses data:upload",
+    "schema:build": "pnpm -F @earthworm/schema build",
+    "db:init": "pnpm -F @earthworm/db run init",
+    "db:init:test": "pnpm -F @earthworm/db run init:test",
+    "db:init:test:ci": "pnpm -F @earthworm/db run init:ci",
+    "db:upload": "pnpm -F @earthworm/xingrong-courses upload",
     "dev:serve": "pnpm schema:build && pnpm -F api start:dev",
     "dev:client": "pnpm -F client dev",
     "docker:start": "docker-compose up -d",
@@ -36,7 +35,6 @@
     "@types/node": "^20.11.0",
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
-    "drizzle-kit": "^0.20.10",
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.9.0",
     "tsup": "^8.0.1",
@@ -45,8 +43,6 @@
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.7.1",
-    "drizzle-orm": "^0.29.3",
-    "mysql2": "^3.7.0",
     "zod": "^3.22.4"
   }
 }

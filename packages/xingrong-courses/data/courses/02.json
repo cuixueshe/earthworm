@@ -1,0 +1,827 @@
+[
+	{
+		"chinese": "好的；棒的",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"chinese": "它；这件事情",
+		"english": "It",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "它是",
+		"english": "It is",
+		"soundmark": "/ɪt/ /ɪz/"
+	},
+	{
+		"chinese": "它是好的",
+		"english": "It is good",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我是",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "我是重要的",
+		"english": "I am important",
+		"soundmark": "/aɪ/ /æm/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "知道",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "我想要知道",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "我想要知道是否我是重要的",
+		"english": "I want to know if I am important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "需要知道",
+		"english": "need to know",
+		"soundmark": "/nid/ /tə/ /no/"
+	},
+	{
+		"chinese": "我需要知道是否我是重要的",
+		"english": "I need to know if I am important",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "完美的",
+		"english": "perfect",
+		"soundmark": "/'pɝfɪkt/"
+	},
+	{
+		"chinese": "我是完美的",
+		"english": "I am perfect",
+		"soundmark": "/aɪ/ /æm/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "我需要知道是否我是完美的",
+		"english": "I need to know if I am perfect",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "必须知道",
+		"english": "have to know",
+		"soundmark": "/hæv/ /tə/ /no/"
+	},
+	{
+		"chinese": "我必须知道是否我是完美的",
+		"english": "I have to know if I am perfect",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
+	},
+	{
+		"chinese": "我是健康的",
+		"english": "I am healthy",
+		"soundmark": "/aɪ/ /æm/ /'hɛlθi/"
+	},
+	{
+		"chinese": "我必须知道是否我是健康的",
+		"english": "I have to know if I am healthy",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /'hɛlθi/"
+	},
+	{
+		"chinese": "我是",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "星荣",
+		"english": "Xingrong",
+		"soundmark": "/Xingrong/"
+	},
+	{
+		"chinese": "我是星荣",
+		"english": "I am Xingrong",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "我在这里",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
+	},
+	{
+		"chinese": "我18岁",
+		"english": "I am 18",
+		"soundmark": "/aɪ/ /æm/ /e'tin/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "你是重要的",
+		"english": "You are important",
+		"soundmark": "/ju/ /ɚ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "你是非常重要的",
+		"english": "You are very important",
+		"soundmark": "/ju/ /ɚ/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "完美的",
+		"english": "perfect",
+		"soundmark": "/'pɝfɪkt/"
+	},
+	{
+		"chinese": "你是完美的",
+		"english": "You are perfect",
+		"soundmark": "/ju/ /ɚ/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
+	},
+	{
+		"chinese": "你是健康的",
+		"english": "You are healthy",
+		"soundmark": "/ju/ /ɚ/ /'hɛlθi/"
+	},
+	{
+		"chinese": "周杰伦",
+		"english": "Jay Chou",
+		"soundmark": "/dʒe/ /tʃo/"
+	},
+	{
+		"chinese": "你是周杰伦",
+		"english": "You are Jay Chou",
+		"soundmark": "/ju/ /ɚ/ /dʒe/ /tʃo/"
+	},
+	{
+		"chinese": "想要知道",
+		"english": "want to know",
+		"soundmark": "/wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "我想要知道是否你是周杰伦",
+		"english": "I want to know if you are Jay Chou",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /ɚ/ /dʒe/ /tʃo/"
+	},
+	{
+		"chinese": "需要知道",
+		"english": "need to know",
+		"soundmark": "/nid/ /tə/ /no/"
+	},
+	{
+		"chinese": "你是健康的",
+		"english": "You are healthy",
+		"soundmark": "/ju/ /ɚ/ /'hɛlθi/"
+	},
+	{
+		"chinese": "我需要知道是否你是健康的",
+		"english": "I need to know if you are healthy",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /ɚ/ /'hɛlθi/"
+	},
+	{
+		"chinese": "必须知道",
+		"english": "have to know",
+		"soundmark": "/hæv/ /tə/ /no/"
+	},
+	{
+		"chinese": "你是完美的",
+		"english": "You are perfect",
+		"soundmark": "/ju/ /ɚ/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "我必须知道是否你是完美的",
+		"english": "I have to know if you are perfect",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ɪf/ /ju/ /ɚ/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "富有的",
+		"english": "rich",
+		"soundmark": "/rɪtʃ/"
+	},
+	{
+		"chinese": "他是",
+		"english": "he is",
+		"soundmark": "/hi/ /ɪz/"
+	},
+	{
+		"chinese": "他是富有的",
+		"english": "He is rich",
+		"soundmark": "/hi/ /ɪz/ /rɪtʃ/"
+	},
+	{
+		"chinese": "她是",
+		"english": "she is",
+		"soundmark": "/ʃi/ /ɪz/"
+	},
+	{
+		"chinese": "她是富有的",
+		"english": "She is rich",
+		"soundmark": "/ʃi/ /ɪz/ /rɪtʃ/"
+	},
+	{
+		"chinese": "完美的",
+		"english": "perfect",
+		"soundmark": "/'pɝfɪkt/"
+	},
+	{
+		"chinese": "她是完美的",
+		"english": "She is perfect",
+		"soundmark": "/ʃi/ /ɪz/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "它是",
+		"english": "it is",
+		"soundmark": "/ɪt/ /ɪz/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "富有的",
+		"english": "rich",
+		"soundmark": "/rɪtʃ/"
+	},
+	{
+		"chinese": "我是",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "我是富有的",
+		"english": "I am rich",
+		"soundmark": "/aɪ/ /æm/ /rɪtʃ/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "我是非常富有的",
+		"english": "I am very rich",
+		"soundmark": "/aɪ/ /æm/ /ˈvɛri/ /rɪtʃ/"
+	},
+	{
+		"chinese": "完美的",
+		"english": "perfect",
+		"soundmark": "/'pɝfɪkt/"
+	},
+	{
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"chinese": "你是完美的",
+		"english": "You are perfect",
+		"soundmark": "/ju/ /ɚ/ /'pɝfɪkt/"
+	},
+	{
+		"chinese": "漂亮的",
+		"english": "pretty",
+		"soundmark": "/'prɪti/"
+	},
+	{
+		"chinese": "你是漂亮的",
+		"english": "You are pretty",
+		"soundmark": "/ju/ /ɚ/ /'prɪti/"
+	},
+	{
+		"chinese": "他是漂亮的",
+		"english": "He is pretty",
+		"soundmark": "/hi/ /ɪz/ /'prɪti/"
+	},
+	{
+		"chinese": "她是漂亮的",
+		"english": "She is pretty",
+		"soundmark": "/ʃi/ /ɪz/ /'prɪti/"
+	},
+	{
+		"chinese": "它是漂亮的",
+		"english": "It is pretty",
+		"soundmark": "/ɪt/ /ɪz/ /'prɪti/"
+	},
+	{
+		"chinese": "我是漂亮的",
+		"english": "I am pretty",
+		"soundmark": "/aɪ/ /æm/ /'prɪti/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "你想要在这里",
+		"english": "You want to be here",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "你明天想要在这里",
+		"english": "You want to be here tomorrow",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"chinese": "见到",
+		"english": "to see",
+		"soundmark": "/tə/ /si/"
+	},
+	{
+		"chinese": "见到我",
+		"english": "to see me",
+		"soundmark": "/tə/ /si/ /mi/"
+	},
+	{
+		"chinese": "你想要见到我",
+		"english": "You want to see me",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /si/ /mi/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "你想要今天见到我",
+		"english": "You want to see me today",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /si/ /mi/ /tə'de/"
+	},
+	{
+		"chinese": "说话",
+		"english": "to talk",
+		"soundmark": "/tə/ /tɔk/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "和我",
+		"english": "with me",
+		"soundmark": "/wɪð/ /mi/"
+	},
+	{
+		"chinese": "和我说话",
+		"english": "to talk with me",
+		"soundmark": "/tə/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "你想要和我说话",
+		"english": "You want to talk with me",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "你想要现在和我说话",
+		"english": "You want to talk with me now",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /tɔk/ /wɪð/ /mi/ /naʊ/"
+	},
+	{
+		"chinese": "必须做",
+		"english": "have to do",
+		"soundmark": "/hæv/ /tə/ /du/"
+	},
+	{
+		"chinese": "你必须做这件事情",
+		"english": "You have to do it",
+		"soundmark": "/ju/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "你必须每天做这件事情",
+		"english": "You have to do it every day",
+		"soundmark": "/ju/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "帮助",
+		"english": "to help",
+		"soundmark": "/tə/ /hɛlp/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "帮助我",
+		"english": "to help me",
+		"soundmark": "/tə/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "你必须帮助我",
+		"english": "You have to help me",
+		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/"
+	},
+	{
+		"chinese": "你必须现在帮助我",
+		"english": "You have to help me now",
+		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /naʊ/"
+	},
+	{
+		"chinese": "相信",
+		"english": "to believe",
+		"soundmark": "/tə/ /bɪ'liv/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "相信我",
+		"english": "to believe me",
+		"soundmark": "/tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "你必须相信我",
+		"english": "You have to believe me",
+		"soundmark": "/ju/ /hæv/ /tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "食物",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "你需要吃这个食物",
+		"english": "You need to eat the food",
+		"soundmark": "/ju/ /nid/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "你需要现在吃这个食物",
+		"english": "You need to eat the food now",
+		"soundmark": "/ju/ /nid/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "to tell me",
+		"soundmark": "/tə/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉我事实",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你需要告诉我事实",
+		"english": "You need to tell me the truth",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "知道；认识",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "知道事实",
+		"english": "to know the truth",
+		"soundmark": "/tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你需要知道事实",
+		"english": "You need to know the truth",
+		"soundmark": "/ju/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "和我说话",
+		"english": "to talk with me",
+		"soundmark": "/tə/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "你喜欢和我说话",
+		"english": "You like to talk with me",
+		"soundmark": "/ju/ /laɪk/ /tə/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "你喜欢每天和我说话",
+		"english": "You like to talk with me every day",
+		"soundmark": "/ju/ /laɪk/ /tə/ /tɔk/ /wɪð/ /mi/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "你喜欢在这里",
+		"english": "You like to be here",
+		"soundmark": "/ju/ /laɪk/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "你喜欢每天在这里",
+		"english": "You like to be here every day",
+		"soundmark": "/ju/ /laɪk/ /tə/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to study",
+		"soundmark": "/tə/ /'stʌdi/"
+	},
+	{
+		"chinese": "你喜欢学习",
+		"english": "You like to study",
+		"soundmark": "/ju/ /laɪk/ /tə/ /'stʌdi/"
+	},
+	{
+		"chinese": "你喜欢每天学习",
+		"english": "You like to study every day",
+		"soundmark": "/ju/ /laɪk/ /tə/ /'stʌdi/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "告诉我",
+		"english": "to tell me",
+		"soundmark": "/tə/ /tɛl/ /mi/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉我事实",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你想要告诉我事实",
+		"english": "You want to tell me the truth",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "你必须告诉我事实",
+		"english": "You have to tell me the truth",
+		"soundmark": "/ju/ /hæv/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "你必须告诉我事实因为它是重要的",
+		"english": "You have to tell me the truth because it is important",
+		"soundmark": "/ju/ /hæv/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "知道；认识",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "你想要知道",
+		"english": "You want to know",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "你想要知道是否它是重要的",
+		"english": "You want to know if it is important",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是可能的",
+		"english": "it is possible",
+		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "你想要知道是否它是可能的",
+		"english": "You want to know if it is possible",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "好的",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "完美的",
+		"english": "perfect",
+		"soundmark": "/'pɝfɪkt/"
+	},
+	{
+		"chinese": "富有的",
+		"english": "rich",
+		"soundmark": "/rɪtʃ/"
+	},
+	{
+		"chinese": "我是",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "你是",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"chinese": "它是",
+		"english": "it is",
+		"soundmark": "/ɪt/ /ɪz/"
+	},
+	{
+		"chinese": "他是",
+		"english": "he is",
+		"soundmark": "/hi/ /ɪz/"
+	},
+	{
+		"chinese": "她是",
+		"english": "she is",
+		"soundmark": "/ʃi/ /ɪz/"
+	},
+	{
+		"chinese": "你喜欢做这件事",
+		"english": "you like to do it",
+		"soundmark": "/ju/ /laɪk/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你需要做这件事",
+		"english": "you need to do it",
+		"soundmark": "/ju/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你必须做这件事情",
+		"english": "you have to do it",
+		"soundmark": "/ju/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你想要做这件事",
+		"english": "you want to do it",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "帮助",
+		"english": "to help",
+		"soundmark": "/tə/ /hɛlp/"
+	},
+	{
+		"chinese": "相信",
+		"english": "to believe",
+		"soundmark": "/tə/ /bɪ'liv/"
+	},
+	{
+		"chinese": "说话",
+		"english": "to talk",
+		"soundmark": "/tə/ /tɔk/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to study",
+		"soundmark": "/tə/ /'stʌdi/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	}
+]

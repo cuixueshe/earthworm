@@ -18,7 +18,10 @@
     </NuxtLink>
     <div class="flex items-center">
       <div class="mx-2">{{ userStore.user?.username }}</div>
-      <div v-if="userStore.user" class="dropdown dropdown-end">
+      <div
+        v-if="userStore.user"
+        class="dropdown dropdown-end"
+      >
         <button
           tabindex="0"
           class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
@@ -106,7 +109,6 @@
 </template>
 
 <script setup lang="ts">
-import { useMessage } from "naive-ui";
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
@@ -114,10 +116,9 @@ import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
 import MessageBox from "./main/MessageBox/MessageBox.vue";
-
+import Message from "~/components/main/Message/Message";
 const route = useRoute();
 const userStore = useUserStore();
-const message = useMessage();
 const isShowModal = ref(false);
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
@@ -142,12 +143,16 @@ const handleLogout = () => {
 const handleLogoutConfirm = () => {
   userStore.logoutUser();
   cleanToken();
-  message.success("logout success", {
-    duration: 500,
-    onLeave() {
-      navigateTo("/");
-    },
-  });
+  try {
+    Message.success("You've been logged out successfully!", {
+      duration: 2000,
+      onLeave() {
+        navigateTo("/");
+      },
+    });
+  } catch (error) {
+    Message.error("logout error!");
+  }
 };
 </script>
 <style></style>

@@ -3,25 +3,23 @@
 </template>
 
 <script setup lang="ts">
-import { useMessage } from "naive-ui";
 import { useRouter } from "vue-router";
 import { injectHttpStatusErrorHandler } from "~/api/http";
 import { useUserStore } from "~/store/user";
-
+import Message from "~/components/main/Message/Message";
 useHttpStatusError();
 
 function useHttpStatusError() {
-  const message = useMessage();
   const router = useRouter();
 
   injectHttpStatusErrorHandler(async (errMessage, statusCode) => {
     switch (statusCode) {
       case 400:
-        message.error(errMessage);
+        Message.error(errMessage);
         break;
       case 401:
-        message.error(errMessage, {
-          duration: 500,
+        Message.error(errMessage, {
+          duration: 2000,
           onLeave() {
             const callback = window.location.pathname;
             // 鉴权失败，退出用户到登录页面

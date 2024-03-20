@@ -1,8 +1,8 @@
+import { schemas } from '@earthworm/schema';
 import { Logger } from '@nestjs/common';
-import * as mysql from 'mysql2/promise';
-import { drizzle } from 'drizzle-orm/mysql2';
-import { schemas } from '@earthworm/shared';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
+import { drizzle } from 'drizzle-orm/mysql2';
+import * as mysql from 'mysql2/promise';
 
 let connection: mysql.Connection;
 

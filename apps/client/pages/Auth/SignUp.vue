@@ -3,7 +3,11 @@
     class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-      <img class="mx-auto h-10 w-auto" src="/logo.png" alt="earthworm" />
+      <img
+        class="mx-auto h-10 w-auto"
+        src="/logo.png"
+        alt="earthworm"
+      />
       <h2
         class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-300"
       >
@@ -12,7 +16,11 @@
     </div>
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
-      <form @submit.prevent="handleRegister" class="space-y-6" novalidate>
+      <form
+        @submit.prevent="handleRegister"
+        class="space-y-6"
+        novalidate
+      >
         <FormInput
           label="Name"
           name="name"
@@ -67,6 +75,7 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+import Message from "~/components/main/Message/Message";
 import { useAuth } from "~/composables/auth";
 import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
 import FormInput from "~/pages/Auth/FormInput.vue";
@@ -96,7 +105,10 @@ const handleRegister = handleSubmit(async (values) => {
   };
   try {
     await signup(modifiedValues);
+    Message.success("register success!");
     router.replace("/");
-  } catch (error) {}
+  } catch (error) {
+    Message.error("register error!");
+  }
 });
 </script>
