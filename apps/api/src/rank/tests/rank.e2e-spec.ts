@@ -1,4 +1,4 @@
-import { user } from '@earthworm/shared';
+import { user } from '@earthworm/schema';
 import { getRedisConnectionToken } from '@nestjs-modules/ioredis';
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';

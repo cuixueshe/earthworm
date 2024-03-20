@@ -1,4 +1,4 @@
-import { user } from '@earthworm/shared';
+import { user } from '@earthworm/schema';
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import * as argon2 from 'argon2';

@@ -1,4 +1,4 @@
-import { course, user, userProgress } from '@earthworm/shared';
+import { course, user, userProgress } from '@earthworm/schema';
 import { Test } from '@nestjs/testing';
 import * as argon2 from 'argon2';
 import {
