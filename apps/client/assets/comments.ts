@@ -12,7 +12,7 @@ interface Comment {
 const comments: Comment[] = [
   {
     nickname: "cuixiaorui",
-    account: "cui_xiaorui",
+    account: "cuixiaorui",
     avatar: "/commentsImgs/cuixiaorui.jpg",
     link: "",
     comment:
@@ -25,7 +25,7 @@ const comments: Comment[] = [
   },
   {
     nickname: "fengstats",
-    account: "feng_stats",
+    account: "fengstats",
     avatar: "/commentsImgs/fengstats.png",
     link: "",
     comment:
@@ -63,7 +63,7 @@ const comments: Comment[] = [
   },
   {
     nickname: "Ims",
-    account: "Immerse_code",
+    account: "Immersecode",
     avatar: "/commentsImgs/yaolifeng0629.jpg",
     link: "",
     comment:
@@ -115,7 +115,7 @@ const comments: Comment[] = [
   },
   {
     nickname: "Hazel-Lin",
-    account: "Hazel_Lin",
+    account: "HazelLin",
     avatar: "/commentsImgs/Hazel-Lin.jpg",
     link: "",
     comment:
