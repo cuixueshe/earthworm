@@ -5,14 +5,14 @@ import * as argon2 from 'argon2';
 import * as request from 'supertest';
 import { createFirstCourse } from '../../../test/fixture/course';
 import { createUser } from '../../../test/fixture/user';
-import { cleanDB } from '../../../test/helper/utils';
+import { cleanDB, signup } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
 import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
-let userData = createUser();
-let password = '123456';
+const userData = createUser();
+const password = '123456';
 const firstCourse = createFirstCourse();
 describe('game e2e', () => {
   let app: INestApplication;
@@ -40,11 +40,8 @@ describe('game e2e', () => {
   });
 
   it('should start game', async () => {
-    const res = await request(app.getHttpServer()).post('/auth/login').send({
-      phone: userData.phone,
-      password,
-    });
-    const token = res.body.token;
+    const { token } = await signup(app);
+
     await request(app.getHttpServer())
       .post('/game/start')
       .set('Authorization', `Bearer ${token}`)

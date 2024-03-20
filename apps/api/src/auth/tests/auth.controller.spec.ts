@@ -1,10 +1,9 @@
 import { Test } from '@nestjs/testing';
+import { createUser } from '../../../test/fixture/user';
 import { testImportModules } from '../../../test/helper/utils';
-import { AuthService } from '../auth.service';
 import { UserService } from '../../user/user.service';
 import { AuthController } from '../auth.controller';
-import { createUser } from '../../../test/fixture/user';
-import * as argon2 from 'argon2';
+import { AuthService } from '../auth.service';
 
 const user = createUser();
 const mockUserService = {
@@ -26,22 +25,14 @@ describe('auth controller', () => {
   });
 
   it('should can login', async () => {
-    const password = 'test';
-    mockUserService.findWithPhone.mockResolvedValue({
-      id: user.userId,
-      name: user.username,
-      password: await argon2.hash(password),
+    const dto = {
       phone: user.phone,
-    });
-    const res = await authController.login({
-      phone: user.phone,
-      password,
-    });
+      password: 'test',
+    };
+    const res = await authController.login(dto);
 
-    expect(authService.login).toHaveBeenCalledWith({
-      phone: user.phone,
-      password,
-    });
+    expect(authService.login).toHaveBeenCalledWith(dto);
+
     expect(res).toEqual(
       expect.objectContaining({
         user,
@@ -50,17 +41,15 @@ describe('auth controller', () => {
   });
 
   it('should can signup', async () => {
-    const res = await authController.signup({
+    const dto = {
       phone: user.phone,
       password: 'test',
       name: user.username,
-    });
+    };
+    const res = await authController.signup(dto);
 
-    expect(authService.signup).toHaveBeenCalledWith({
-      phone: user.phone,
-      password: 'test',
-      name: user.username,
-    });
+    expect(authService.signup).toHaveBeenCalledWith(dto);
+
     expect(res).toEqual(
       expect.objectContaining({
         user,
@@ -71,8 +60,8 @@ describe('auth controller', () => {
 
 async function setupTesting() {
   const mockAuthService = {
-    login: jest.fn((dto) => ({ user })),
-    signup: jest.fn((dto) => ({ user })),
+    login: jest.fn().mockReturnValue({ user }),
+    signup: jest.fn().mockReturnValue({ user }),
   };
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,

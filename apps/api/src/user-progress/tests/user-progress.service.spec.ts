@@ -15,8 +15,8 @@ import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 import { UserProgressService } from '../user-progress.service';
 
-let userData = createUser();
-let password = '123456';
+const userData = createUser();
+const password = '123456';
 
 const firstCourse = createFirstCourse();
 const secondCourse = createSecondCourse();
@@ -87,15 +87,15 @@ async function setupDBData(db: DbType) {
     phone: userData.phone,
     password: await argon2.hash(password),
   });
+
   const userId = res.insertId;
   // create course data
-  const [res2] = await db.insert(course).values(firstCourse);
+  await db.insert(course).values(firstCourse);
   await db.insert(course).values(secondCourse);
-  const courseId = res2.insertId;
 
   // create user progress data
   await db.insert(userProgress).values({
-    courseId: courseId,
+    courseId: firstCourse.id,
     userId: userId,
   });
 }

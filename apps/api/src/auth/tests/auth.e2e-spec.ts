@@ -16,8 +16,8 @@ const createUserData = {
   password: '123456',
 };
 
-let userData = createUser();
-let password = '123456';
+const userData = createUser();
+const password = '123456';
 
 describe('auth e2e', () => {
   let app: INestApplication;

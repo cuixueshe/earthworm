@@ -1,14 +1,14 @@
 import { Test } from '@nestjs/testing';
+import * as argon2 from 'argon2';
 import {
   cleanDB,
   startDB,
   testImportModules,
 } from '../../../test/helper/utils';
-import { AuthService } from '../auth.service';
-import { UserService } from '../../user/user.service';
-import { DB, DbType } from '../../global/providers/db.provider';
 import { endDB } from '../../common/db';
-import * as argon2 from 'argon2';
+import { DB, DbType } from '../../global/providers/db.provider';
+import { UserService } from '../../user/user.service';
+import { AuthService } from '../auth.service';
 
 const mockUserService = {
   findWithPhone: jest.fn(),
@@ -41,27 +41,23 @@ describe('auth service', () => {
 
   it('should return signup user', async () => {
     const phone = '01012345678';
-    const user = await authService.signup({
+    const { token, user } = await authService.signup({
       phone,
       name: 'test',
       password: 'test',
     });
 
-    expect(user.token).toBeDefined();
+    expect(token).toBeDefined();
+    expect(user).toEqual({
+      userId: 1,
+      username: 'test',
+      phone,
+    });
     expect(userService.createUser).toHaveBeenCalledWith({
       phone,
       name: 'test',
       password: 'test',
     });
-    expect(user).toEqual(
-      expect.objectContaining({
-        user: {
-          userId: 1,
-          username: 'test',
-          phone,
-        },
-      }),
-    );
   });
 
   it('should can login', async () => {
@@ -72,21 +68,17 @@ describe('auth service', () => {
       password: await argon2.hash('test'),
       phone,
     });
-    const user = await authService.login({
+    const { token, user } = await authService.login({
       phone,
       password: 'test',
     });
 
-    expect(user.token).toBeDefined();
-    expect(user).toEqual(
-      expect.objectContaining({
-        user: {
-          userId: 1,
-          username: 'test',
-          phone,
-        },
-      }),
-    );
+    expect(token).toBeDefined();
+    expect(user).toEqual({
+      userId: 1,
+      username: 'test',
+      phone,
+    });
   });
 });
 

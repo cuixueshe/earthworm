@@ -11,8 +11,8 @@ import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 import { UserService } from '../user.service';
 
-let userData = createUser();
-let password = '123456';
+const userData = createUser();
+const password = '123456';
 describe('user service', () => {
   let db: DbType;
   let userService: UserService;
@@ -48,6 +48,7 @@ describe('user service', () => {
     const user = await userService.findWithPhone({
       phone: userData.phone,
     });
+
     expect(user).toEqual(
       expect.objectContaining({
         name: userData.username,

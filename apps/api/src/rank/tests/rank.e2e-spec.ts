@@ -6,14 +6,14 @@ import * as argon2 from 'argon2';
 import { Redis } from 'ioredis';
 import * as request from 'supertest';
 import { createUser } from '../../../test/fixture/user';
-import { cleanDB } from '../../../test/helper/utils';
+import { cleanDB, login } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
 import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
-let userData = createUser();
-let password = '123456';
+const userData = createUser();
+const password = '123456';
 describe('rank e2e', () => {
   let app: INestApplication;
   let db: DbType;
@@ -60,12 +60,8 @@ describe('rank e2e', () => {
   });
 
   it('should get rank with login', async () => {
-    const res = await request(app.getHttpServer()).post('/auth/login').send({
-      phone: userData.phone,
-      password,
-    });
+    const { token } = await login(app, { phone: userData.phone, password });
 
-    const token = res.body.token;
     await request(app.getHttpServer())
       .get('/rank/progress')
       .set('Authorization', `Bearer ${token}`)

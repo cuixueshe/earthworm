@@ -8,14 +8,14 @@ import {
   createSecondCourse,
 } from '../../../test/fixture/course';
 import { createUser } from '../../../test/fixture/user';
-import { cleanDB } from '../../../test/helper/utils';
+import { cleanDB, login } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
 import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
-let userData = createUser();
-let password = '123456';
+const userData = createUser();
+const password = '123456';
 
 const firstCourse = createFirstCourse();
 const secondCourse = createSecondCourse();
@@ -38,11 +38,9 @@ describe('user-progress e2e', () => {
 
     await cleanDB(db);
     await setupDBData(db);
-    const res = await request(app.getHttpServer()).post('/auth/login').send({
-      phone: userData.phone,
-      password,
-    });
-    token = res.body.token;
+
+    const body = await login(app, { phone: userData.phone, password });
+    token = body.token;
   });
 
   afterEach(async () => {
@@ -86,11 +84,10 @@ async function setupDBData(db: DbType) {
     phone: userData.phone,
     password: await argon2.hash(password),
   });
-  const [res] = await db.insert(course).values(firstCourse);
+  await db.insert(course).values(firstCourse);
   await db.insert(course).values(secondCourse);
-  const courseId = res.insertId;
   await db.insert(userProgress).values({
-    courseId: courseId,
+    courseId: firstCourse.id,
     userId: userData.userId,
   });
 }

@@ -1,23 +1,19 @@
 import { Test } from '@nestjs/testing';
+import { createUser } from '../../../test/fixture/user';
 import {
   cleanDB,
   startDB,
   testImportModules,
 } from '../../../test/helper/utils';
-import { GameService } from '../game.service';
-import { UserProgressService } from '../../user-progress/user-progress.service';
+import { endDB } from '../../common/db';
 import { CourseService } from '../../course/course.service';
 import { DB, DbType } from '../../global/providers/db.provider';
-import { endDB } from '../../common/db';
-import { createUser } from '../../../test/fixture/user';
+import { UserProgressService } from '../../user-progress/user-progress.service';
+import { GameService } from '../game.service';
 
 const user = createUser();
 const mockProgressService = {
-  findOne: jest.fn((userId) => {
-    return {
-      courseId: 1,
-    };
-  }),
+  findOne: jest.fn().mockReturnValue({ courseId: 1 }),
   create: jest.fn(),
 };
 
@@ -25,14 +21,12 @@ describe('game service', () => {
   let db: DbType;
   let gameService: GameService;
   let userProgress: UserProgressService;
-  let courseService: CourseService;
 
   beforeAll(async () => {
     const testHelper = await setupTesting();
     db = testHelper.db;
     gameService = testHelper.gameService;
     userProgress = testHelper.userProgressService;
-    courseService = testHelper.courseService;
   });
 
   afterAll(async () => {
@@ -50,13 +44,16 @@ describe('game service', () => {
 
   it('should start game', async () => {
     const { cId } = await gameService.startGame(user);
+
     expect(userProgress.findOne).toHaveBeenCalledWith(user.userId);
     expect(cId).toBe(1);
   });
 
   it('should start game in user progress is null', async () => {
-    mockProgressService.findOne = jest.fn((userId) => ({ courseId: null }));
+    mockProgressService.findOne.mockReturnValue({ courseId: null });
+
     const { cId } = await gameService.startGame(user);
+
     expect(userProgress.create).toHaveBeenCalled();
     expect(cId).toBe(1);
   });
@@ -85,7 +82,6 @@ async function setupTesting() {
     gameService: moduleRef.get<GameService>(GameService),
     userProgressService:
       moduleRef.get<UserProgressService>(UserProgressService),
-    courseService: moduleRef.get<CourseService>(CourseService),
     db: moduleRef.get<DbType>(DB),
   };
 }
