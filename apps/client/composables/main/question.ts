@@ -1,16 +1,6 @@
 import { nextTick, reactive, ref, watchEffect } from "vue";
-import errorSoundPath from "~/assets/sounds/error.mp3";
-import rightSoundPath from "~/assets/sounds/right.mp3";
+import { usePlayTipSound } from "~/components/main/Question/useTypingSound";
 
-export const playRightSound = () => {
-  const audio = new Audio(rightSoundPath);
-  audio.play();
-};
-
-export const playErrorSound = () => {
-  const audio = new Audio(errorSoundPath);
-  audio.play();
-};
 interface Word {
   text: string;
   isActive: boolean;
@@ -35,6 +25,7 @@ enum Mode {
 }
 
 const separator = " ";
+const { playRightSound, playErrorSound } = usePlayTipSound();
 
 export function useInput({
   source,
@@ -275,10 +266,10 @@ export function useInput({
     if (useSpaceSubmitAnswer?.enable) {
       submitAnswer(
         () => {
+          playRightSound(); // 正确提示
           useSpaceSubmitAnswer.callback();
-          playRightSound(); // 输入正确时播放正确声音
         },
-        playErrorSound // 输入错误时播放错误声音
+        playErrorSound // 错误提示
       );
     }
   }
@@ -350,7 +341,5 @@ export function useInput({
     fixIncorrectWord,
     fixFirstIncorrectWord,
     resetUserInputWords,
-    playRightSound,
-    playErrorSound,
   };
 }

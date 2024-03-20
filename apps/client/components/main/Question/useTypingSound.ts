@@ -1,17 +1,44 @@
 // useTypingSound.ts
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
+import errorSoundPath from "~/assets/sounds/error.mp3";
+import rightSoundPath from "~/assets/sounds/right.mp3";
+import typingSoundPath from "~/assets/sounds/typing.mp3";
 
-export function useTypingSound(typingSoundPath: string) {
+export function usePlayTipSound() {
+  // 正确提示音
+  const rightAudio = new Audio(rightSoundPath);
+  // 错误提示音
+  const errorAudio = new Audio(errorSoundPath);
+
+  function playRightSound() {
+    rightAudio.play();
+  }
+
+  function playErrorSound() {
+    errorAudio.play();
+  }
+
+  return {
+    playRightSound,
+    playErrorSound,
+  };
+}
+
+export function useTypingSound() {
+  const PLAY_INTERVAL_TIME = 60;
   const audioCtxRef = ref<AudioContext | null>(null);
+  const lastPlayTime = ref(0); // 与上一次播放时间间隔
   let audioBuffer: AudioBuffer | null = null;
-  let lastPlayTime = ref(0); // 使用ref存储上一次播放时间
 
-  const loadAudioContext = async () => {
+  // 不需要等页面渲染就可以加载了（提前）
+  loadAudioContext();
+
+  async function loadAudioContext() {
     audioCtxRef.value = new AudioContext();
     await loadAudioBuffer(typingSoundPath);
-  };
+  }
 
-  const loadAudioBuffer = async (url: string) => {
+  async function loadAudioBuffer(url: string) {
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
     // 使用 decodeAudioData 方法处理 arrayBuffer
@@ -24,15 +51,11 @@ export function useTypingSound(typingSoundPath: string) {
     } else {
       throw new Error("Audio decoding failed.");
     }
-  };
+  }
 
-  onMounted(() => {
-    loadAudioContext();
-  });
-
-  const playAudio = () => {
+  function playAudio() {
     const now = Date.now();
-    if (now - lastPlayTime.value < 100) return;
+    if (now - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
     if (!audioCtxRef.value || !audioBuffer) return;
 
     const source = audioCtxRef.value.createBufferSource();
@@ -44,7 +67,7 @@ export function useTypingSound(typingSoundPath: string) {
     source.onended = () => {
       source.disconnect();
     };
-  };
+  }
 
   return {
     playAudio,

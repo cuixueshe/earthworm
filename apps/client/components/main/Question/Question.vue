@@ -46,11 +46,7 @@ import { useInput } from "~/composables/main/question";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
-import { useTypingSound } from "./useTypingSound";
-
-// 引入并初始化打字声音相关的Hook
-import typingSoundPath from "~/assets/sounds/typing.mp3";
-const { playAudio } = useTypingSound(typingSoundPath);
+import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
@@ -59,6 +55,9 @@ const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+// 初始化提示音相关 hook
+const { playAudio } = useTypingSound();
+const { playRightSound, playErrorSound } = usePlayTipSound();
 
 const {
   inputValue,
@@ -66,8 +65,6 @@ const {
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
-  playRightSound,
-  playErrorSound,
 } = useInput({
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
@@ -150,17 +147,17 @@ function inputWidth(word: string) {
 }
 
 function handleKeydown(e: KeyboardEvent) {
-  if (/^[a-zA-Z0-9]$/.test(e.key)) {
+  if (/^[a-zA-Z0-9]$/.test(e.key) || ["Backspace", " ", "'"].includes(e.key)) {
     playAudio(); // 使用 Hook 提供的方法播放打字声音
   }
   if (e.code === "Enter") {
     e.stopPropagation();
     submitAnswer(
       () => {
-        playRightSound(); // 输入正确时播放正确声音
+        playRightSound(); // 正确提示
         showAnswer();
       },
-      playErrorSound // 输入错误时播放错误声音
+      playErrorSound // 错误提示
     );
     return;
   }
