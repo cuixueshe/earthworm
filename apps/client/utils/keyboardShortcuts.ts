@@ -1,7 +1,7 @@
 import { convertMacKey } from "~/composables/user/shortcutKey";
 
 // 添加全局快捷键
-interface Shortcut {
+export interface Shortcut {
   key: string;
   ctrlKey: boolean;
   metaKey: boolean;
@@ -18,23 +18,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   });
 });
 
-function createShortcut(key: string, command: Shortcut["command"]): Shortcut {
-  return {
-    ...parseKey(key),
-    command,
-  };
-}
-
-function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
-  return shortcuts.filter((shortcut) => {
-    return (
-      shortcut.ctrlKey === event.ctrlKey &&
-      shortcut.metaKey === event.metaKey &&
-      shortcut.key === convertMacKey(event.key).toLowerCase()
-    );
-  });
-}
-
 function parseKey(keyString: string) {
   const keys = keyString.toLowerCase().split("+");
 
@@ -47,32 +30,59 @@ function parseKey(keyString: string) {
   return result;
 }
 
+function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
+  return shortcuts.filter((shortcut) => {
+    return (
+      shortcut.ctrlKey === event.ctrlKey &&
+      shortcut.metaKey === event.metaKey &&
+      shortcut.key === convertMacKey(event.key).toLowerCase()
+    );
+  });
+}
+
+export function createShortcut(
+  key: string,
+  command: Shortcut["command"]
+): Shortcut {
+  return {
+    ...parseKey(key),
+    command,
+  };
+}
+
 export function registerShortcut(key: string, command: Shortcut["command"]) {
   const shortcut = createShortcut(key, command);
   shortcuts.push(shortcut);
   return shortcut;
 }
 
-export function cancelShortcut(key: string, command: Function): void;
+export function cancelShortcut(key: string, command: Shortcut["command"]): void;
 export function cancelShortcut(shortcut: Shortcut): void;
 export function cancelShortcut(
   keyOrShortcut: string | Shortcut,
-  command?: Function
+  command?: Shortcut["command"]
 ) {
-  if (typeof keyOrShortcut === "string") {
-    const matchingShortcut = shortcuts.find((shortcut) => {
-      return shortcut.key === keyOrShortcut && shortcut.command === command;
-    });
-
-    if (matchingShortcut) {
-      const index = shortcuts.indexOf(matchingShortcut);
-      shortcuts.splice(index, 1);
-    }
+  let cancelledShortcut: Shortcut;
+  if (typeof keyOrShortcut === "string" && command) {
+    // 字符串形式的快捷键需要手动创建 shortcut 对象
+    cancelledShortcut = createShortcut(keyOrShortcut, command);
   } else {
-    const index = shortcuts.indexOf(keyOrShortcut);
-    if (index !== -1) {
-      shortcuts.splice(index, 1);
-    }
+    cancelledShortcut = keyOrShortcut as Shortcut;
+  }
+
+  const index = shortcuts.findIndex(({ key, command, ctrlKey, metaKey }) => {
+    // 精准匹配对应快捷键对象
+    return (
+      key === cancelledShortcut.key &&
+      ctrlKey === cancelledShortcut.ctrlKey &&
+      metaKey === cancelledShortcut.metaKey &&
+      command === cancelledShortcut.command
+    );
+  });
+
+  if (index !== -1) {
+    // 删除
+    shortcuts.splice(index, 1);
   }
 }
 
