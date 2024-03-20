@@ -1,4 +1,4 @@
-import { course, statement } from '@earthworm/shared';
+import { course, statement } from '@earthworm/schema';
 import { HttpException } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import {
