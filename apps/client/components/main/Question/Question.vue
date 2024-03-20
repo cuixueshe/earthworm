@@ -25,7 +25,6 @@
         class="absolute h-full w-full opacity-0"
         type="text"
         v-model="inputValue"
-        @keyup="handleKeyup"
         @keydown="handleKeydown"
         @focus="handleInputFocus"
         @blur="handleBlur"
@@ -81,19 +80,6 @@ watch(
     setInputValue(val);
   }
 );
-
-function handleKeyup(e: KeyboardEvent) {
-  if (e.code === "Enter") {
-    e.stopPropagation();
-    submitAnswer(
-      () => {
-        showAnswer();
-        playRightSound(); // 输入正确时播放正确声音
-      },
-      playErrorSound // 输入错误时播放错误声音
-    );
-  }
-}
 
 // 输入宽度
 function inputWidth(word: string) {
@@ -165,8 +151,20 @@ function inputWidth(word: string) {
 
 function handleKeydown(e: KeyboardEvent) {
   if (/^[a-zA-Z0-9]$/.test(e.key)) {
-    playAudio(); // 使用Hook提供的方法播放打字声音
+    playAudio(); // 使用 Hook 提供的方法播放打字声音
   }
+  if (e.code === "Enter") {
+    e.stopPropagation();
+    submitAnswer(
+      () => {
+        playRightSound(); // 输入正确时播放正确声音
+        showAnswer();
+      },
+      playErrorSound // 输入错误时播放错误声音
+    );
+    return;
+  }
+
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
