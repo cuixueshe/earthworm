@@ -28,7 +28,9 @@ import { CourseHistoryModule } from '../course-history/course-history.module';
       useFactory: () => ({
         type: 'single',
         url: process.env.REDIS_URL,
-        password: process.env.REDIS_PASSWORD,
+        options: {
+          password: process.env.REDIS_PASSWORD,
+        },
       }),
     }),
     ScheduleModule.forRoot(),
