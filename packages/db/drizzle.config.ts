@@ -1,6 +1,6 @@
-import * as dotenv from 'dotenv';
+import * as dotenv from "dotenv";
 import type { Config } from "drizzle-kit";
-import path from 'path';
+import path from "path";
 
 dotenv.config({ path: path.resolve(__dirname, "../../apps/api/.env") });
 
