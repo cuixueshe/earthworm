@@ -2,14 +2,10 @@ import { userProgress } from '@earthworm/schema';
 import { Inject, Injectable } from '@nestjs/common';
 import { eq } from 'drizzle-orm';
 import { DB, DbType } from '../global/providers/db.provider';
-import { RankService } from '../rank/rank.service';
 
 @Injectable()
 export class UserProgressService {
-  constructor(
-    @Inject(DB) private db: DbType,
-    private readonly rankService: RankService,
-  ) {}
+  constructor(@Inject(DB) private db: DbType) {}
 
   async create(userId: number, courseId: number) {
     await this.db.insert(userProgress).values({
@@ -29,7 +25,7 @@ export class UserProgressService {
       .where(eq(userProgress.userId, userId));
 
     return {
-      courseId: res.length ? res[0].courseId : null,
+      courseId: res.length ? res[res.length - 1].courseId : null,
     };
   }
 
