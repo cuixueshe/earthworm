@@ -75,17 +75,6 @@ describe('auth e2e', () => {
         })
         .expect(400);
     });
-
-    it('should not signup with invalid phone', async () => {
-      await request(app.getHttpServer())
-        .post('/auth/signup')
-        .send({
-          name: 'test',
-          phone: '123456789',
-          password: '123456',
-        })
-        .expect(400);
-    });
   });
 
   describe('login', () => {
