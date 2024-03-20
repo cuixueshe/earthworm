@@ -62,21 +62,26 @@ export function cancelShortcut(
   keyOrShortcut: string | Shortcut,
   command?: Shortcut["command"]
 ) {
-  let cancelledShortcut: Shortcut;
-  if (typeof keyOrShortcut === "string" && command) {
-    // 字符串形式的快捷键需要手动创建 shortcut 对象
-    cancelledShortcut = createShortcut(keyOrShortcut, command);
-  } else {
-    cancelledShortcut = keyOrShortcut as Shortcut;
+  function normalizeShortcut() {
+    let normalShortcut: Shortcut;
+    if (typeof keyOrShortcut === "string" && command) {
+      normalShortcut = createShortcut(keyOrShortcut, command);
+    } else {
+      normalShortcut = keyOrShortcut as Shortcut;
+    }
+
+    return normalShortcut;
   }
+
+  let normalShortcut = normalizeShortcut();
 
   const index = shortcuts.findIndex(({ key, command, ctrlKey, metaKey }) => {
     // 精准匹配对应快捷键对象
     return (
-      key === cancelledShortcut.key &&
-      ctrlKey === cancelledShortcut.ctrlKey &&
-      metaKey === cancelledShortcut.metaKey &&
-      command === cancelledShortcut.command
+      key === normalShortcut.key &&
+      ctrlKey === normalShortcut.ctrlKey &&
+      metaKey === normalShortcut.metaKey &&
+      command === normalShortcut.command
     );
   });
 
