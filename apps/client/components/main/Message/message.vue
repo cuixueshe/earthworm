@@ -1,6 +1,6 @@
 <script lang="ts" setup name="Message">
 import { onMounted, ref } from "vue";
-import { Type } from './Message.ts';
+import { Type } from "./Message";
 
 const { type = Type.SUCCESS, duration = 2000 } = defineProps<{
   type?: Type;
