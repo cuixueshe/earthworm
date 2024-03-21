@@ -267,12 +267,6 @@ importers:
         specifier: ^4.2.5
         version: 4.2.5(vue@3.4.15)
 
-  libs/shared:
-    dependencies:
-      drizzle-orm:
-        specifier: ^0.30.3
-        version: 0.30.3(mysql2@3.9.2)
-
   packages/db:
     devDependencies:
       drizzle-kit:
@@ -290,22 +284,6 @@ importers:
       drizzle-orm:
         specifier: ^0.30.3
         version: 0.30.3(mysql2@3.9.2)
-
-  packages/xingrong-course:
-    dependencies:
-      '@earthworm/db':
-        specifier: link:../db
-        version: link:../db
-      inquirer:
-        specifier: ^9.2.13
-        version: 9.2.13
-      pdf-parse:
-        specifier: ^1.1.1
-        version: 1.1.1
-    devDependencies:
-      '@types/pdf-parse':
-        specifier: ^1.1.4
-        version: 1.1.4
 
   packages/xingrong-courses:
     dependencies:
@@ -325,19 +303,6 @@ importers:
       '@types/inquirer':
         specifier: ^9.0.7
         version: 9.0.7
-      '@types/pdf-parse':
-        specifier: ^1.1.4
-        version: 1.1.4
-
-  scripts/course:
-    dependencies:
-      inquirer:
-        specifier: ^9.2.13
-        version: 9.2.13
-      pdf-parse:
-        specifier: ^1.1.1
-        version: 1.1.1
-    devDependencies:
       '@types/pdf-parse':
         specifier: ^1.1.4
         version: 1.1.4

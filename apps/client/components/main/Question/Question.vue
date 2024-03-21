@@ -28,6 +28,8 @@
         @keydown="handleKeydown"
         @focus="handleInputFocus"
         @blur="handleBlur"
+        @dblclick.prevent
+        @mousedown="preventCursorMove"
         autoFocus
       />
     </div>
@@ -50,7 +52,13 @@ import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
-const { setInputCursorPosition, getInputCursorPosition } = useCursor();
+const {
+  setInputCursorPosition,
+  getInputCursorPosition,
+  recordCursor,
+  recoverCursor,
+  preventCursorMove,
+} = useCursor();
 const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
@@ -187,9 +195,33 @@ function useCursor() {
     return inputEl.value?.selectionStart || 0;
   }
 
+  let lastCursorIndex = 0;
+  function recordCursor() {
+    setTimeout(() => {
+      lastCursorIndex = getInputCursorPosition();
+    }, 0);
+  }
+
+  function recoverCursor() {
+    setTimeout(() => {
+      setInputCursorPosition(lastCursorIndex);
+    }, 0);
+  }
+
+  function preventCursorMove(event: MouseEvent) {
+    // 阻止 mousedown 事件的默认行为
+    // 它会改变 input 光标的位置
+    event.preventDefault();
+    // 只允许 input focus
+    inputEl.value?.focus();
+  }
+
   return {
+    recordCursor,
+    recoverCursor,
     setInputCursorPosition,
     getInputCursorPosition,
+    preventCursorMove
   };
 }
 
@@ -200,12 +232,14 @@ function useFocus() {
     inputEl.value?.focus();
   });
 
-  function handleInputFocus() {
+  async function handleInputFocus() {
     focusing.value = true;
+    recoverCursor();
   }
 
   function handleBlur() {
     focusing.value = false;
+    recordCursor();
   }
 
   return {
