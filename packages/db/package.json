@@ -1,0 +1,19 @@
+{
+  "name": "@earthworm/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "init:ci": "tsx src/migrate.ts",
+    "init:test": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
+    "init": "drizzle-kit push:mysql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14",
+    "drizzle-orm": "^0.30.3",
+    "mysql2": "^3.9.2"
+  }
+}

@@ -1,11 +1,11 @@
-import { DB, DbType } from '../global/providers/db.provider';
-import { eq, asc, gt } from 'drizzle-orm';
-import { statement, course } from '@earthworm/shared';
-import { Injectable, Inject, HttpException, HttpStatus } from '@nestjs/common';
+import { course, statement } from '@earthworm/schema';
+import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
+import { asc, eq, gt } from 'drizzle-orm';
 import { UserEntity } from 'src/user/user.decorators';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { RankService } from '../rank/rank.service';
 import { CourseHistoryService } from '../course-history/course-history.service';
+import { DB, DbType } from '../global/providers/db.provider';
+import { RankService } from '../rank/rank.service';
+import { UserProgressService } from '../user-progress/user-progress.service';
 
 @Injectable()
 export class CourseService {
