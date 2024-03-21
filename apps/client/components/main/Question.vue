@@ -1,7 +1,10 @@
 <template>
   <div class="text-center pt-2">
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
-      <template v-for="(w, i) in courseStore.words" :key="i">
+      <template
+        v-for="(w, i) in courseStore.words"
+        :key="i"
+      >
         <div
           class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
           :class="[
@@ -28,7 +31,36 @@
         autoFocus
       />
     </div>
-    <div class="mt-12 text-xl dark:text-gray-50">
+    <div
+      v-if="isListeningMode()"
+      class="mt-12 text-sm dark:text-gray-50"
+    >
+      <span class="mx-2">倍速</span>
+      <select
+        v-model="audioRate"
+        class="select select-ghost w-32"
+      >
+        <option value="2">2.0X</option>
+        <option value="1.5">1.5X</option>
+        <option value="1">1.0X</option>
+        <option value="0.5">0.5X</option>
+      </select>
+
+      <span class="mx-2">播放次数</span>
+      <select
+        v-model="audioTimes"
+        class="select select-ghost w-32"
+      >
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+    </div>
+    <div
+      v-else
+      class="mt-12 text-xl dark:text-gray-50"
+    >
       {{
         courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
       }}
@@ -38,8 +70,10 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
+import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useAnswerMode } from "~/composables/user/answerMode";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
@@ -51,6 +85,17 @@ const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+
+const { isListeningMode, audioRate, audioTimes } = useAnswerMode();
+
+usePlayEnglishSound();
+
+function usePlayEnglishSound() {
+  const { playSound } = useCurrentStatementEnglishSound();
+  onMounted(() => {
+    playSound(true);
+  });
+}
 
 const {
   inputValue,
@@ -193,3 +238,4 @@ function useFocus() {
   };
 }
 </script>
+~/composables/user/learningMode

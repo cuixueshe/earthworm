@@ -219,17 +219,16 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
-
 import Loading from "~/components/Loading.vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-
+import { useAnswerMode } from "~/composables/user/answerMode";
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
-
 const { showMobileTip } = useMonitorSystem();
+const { isListeningMode, hiddenListeningTransfer } = useAnswerMode();
 
 function useMonitorSystem() {
   const showMobileTip = ref(false);
@@ -254,6 +253,11 @@ function useShortcutToGame() {
   async function handleKeydown() {
     isLoading.value = true;
     const { courseId } = await gameStore.startGame();
+
+    if (isListeningMode()) {
+      hiddenListeningTransfer();
+    }
+
     isLoading.value = false;
     router.push(`/main/${courseId}`);
   }

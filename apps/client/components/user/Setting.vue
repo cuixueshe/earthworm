@@ -58,7 +58,7 @@
     </section>
 
     <section>
-      <h2>是否展示每个单词长度</h2>
+      <h2 class="text-lg">是否展示每个单词长度</h2>
       <div className="form-control w-52">
         <label className="cursor-pointer label">
           <span className="label-text">是</span>
@@ -83,6 +83,34 @@
             :checked="useSpace"
             @change="toggleUseSpaceSubmitAnswer"
           />
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-lg">答题模式</h2>
+      <div class="form-control w-52">
+        <label class="cursor-pointer label">
+          <span
+            :class="[
+              'label-text',
+              listeningMode ? 'text-gray-500' : 'text-fuchsia-500',
+            ]"
+            >普通模式</span
+          >
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="listeningMode"
+            @change="toggleMode"
+          />
+          <span
+            :class="[
+              'label-text',
+              listeningMode ? 'text-fuchsia-500' : 'text-gray-500',
+            ]"
+            >听力模式</span
+          >
         </label>
       </div>
     </section>
@@ -113,6 +141,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useAnswerMode } from "~/composables/user/answerMode";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
@@ -139,6 +168,7 @@ function pointDialogOutside(e: MouseEvent) {
 const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
 const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+const { listeningMode, toggleMode } = useAnswerMode();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
@@ -149,3 +179,4 @@ onUnmounted(() => {
   document.removeEventListener("keydown", handleKeydown);
 });
 </script>
+~/composables/user/answerMode

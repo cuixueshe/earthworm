@@ -1,6 +1,7 @@
-import { useCourseStore } from "~/store/course";
-import { updateSource, play } from "./audio";
 import { watchEffect } from "vue";
+import { useAnswerMode } from "~/composables/user/answerMode";
+import { useCourseStore } from "~/store/course";
+import { play, updateSource } from "./audio";
 
 let prevWord = "";
 export function useCurrentStatementEnglishSound() {
@@ -11,12 +12,17 @@ export function useCurrentStatementEnglishSound() {
     if (prevWord !== word) {
       updateSource(`https://dict.youdao.com/dictvoice?audio=${word}&type=1`);
     }
-    prevWord = courseStore.currentStatement?.english!
+    prevWord = courseStore.currentStatement?.english!;
   });
 
+  const { audioRate, audioTimes } = useAnswerMode();
   return {
-    playSound: () => {
-      play();
+    playSound: (isQuestion?: boolean) => {
+      if (isQuestion) {
+        play(Number(audioTimes.value), Number(audioRate.value));
+      } else {
+        play();
+      }
     },
   };
 }

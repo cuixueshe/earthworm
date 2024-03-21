@@ -3,6 +3,9 @@
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
+    <template v-else-if="isListeningMode() && listeningTransfer">
+      <ListeningTransfer />
+    </template>
     <template v-else>
       <Tool></Tool>
       <Game></Game>
@@ -18,7 +21,9 @@ import Loading from "~/components/Loading.vue";
 import Game from "~/components/main/Game.vue";
 import Tool from "~/components/main/Tool.vue";
 import { useGameMode } from "~/composables/main/game";
+import { useAnswerMode } from "~/composables/user/answerMode";
 import { useCourseStore } from "~/store/course";
+import ListeningTransfer from "./listeningTransfer.vue";
 
 definePageMeta({
   middleware: "auth",
@@ -35,4 +40,6 @@ onMounted(async () => {
   await coursesStore.setup(Number(route.params.id));
   isLoading.value = false;
 });
+
+const { isListeningMode, listeningTransfer } = useAnswerMode();
 </script>
