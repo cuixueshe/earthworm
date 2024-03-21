@@ -11,7 +11,7 @@
             userInputWords[i]['isActive'] && focusing
               ? 'text-fuchsia-500 border-b-fuchsia-500'
               : userInputWords[i]?.['incorrect'] && focusing
-                ? 'text-red-500 border-b-red-500'
+                ? `text-red-500 border-b-red-500 ${isFixMode() ? 'animate-shake' : ''}`
                 : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
             isShowWordsWidth() ? '' : 'min-w-28',
           ]"
@@ -71,6 +71,7 @@ const {
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
+  isFixMode
 } = useInput({
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,

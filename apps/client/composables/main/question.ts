@@ -355,6 +355,10 @@ export function useInput({
     userInputWords.splice(0, userInputWords.length);
   }
 
+  function isFixMode(){
+    return mode === Mode.Fix
+  }
+
   return {
     inputValue,
     userInputWords,
@@ -365,5 +369,6 @@ export function useInput({
     fixIncorrectWord,
     fixFirstIncorrectWord,
     resetUserInputWords,
+    isFixMode
   };
 }
