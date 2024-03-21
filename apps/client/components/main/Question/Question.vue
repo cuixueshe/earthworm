@@ -64,13 +64,12 @@ const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 // 初始化提示音相关 hook
-const { playAudio } = useTypingSound();
+const { playTypingSound, checkPlayTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 
 const {
   inputValue,
   userInputWords,
-  hasFocusWord,
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
@@ -78,6 +77,7 @@ const {
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
   getInputCursorPosition,
+  inputChangedCallback,
 });
 
 watch(
@@ -86,6 +86,12 @@ watch(
     setInputValue(val);
   }
 );
+
+function inputChangedCallback(e: KeyboardEvent) {
+  if (checkPlayTypingSound(e)) {
+    playTypingSound();
+  }
+}
 
 // 输入宽度
 function inputWidth(word: string) {
@@ -155,19 +161,7 @@ function inputWidth(word: string) {
   return width;
 }
 
-// 检查是否需要播放打字音效
-function checkPlayTypingSound(e: KeyboardEvent) {
-  if (!hasFocusWord()) return;
-  if (e.altKey || e.ctrlKey || e.metaKey) return;
-
-  if (/^[a-zA-Z0-9]$/.test(e.key) || ["Backspace", " ", "'"].includes(e.key)) {
-    playAudio();
-  }
-}
-
 function handleKeydown(e: KeyboardEvent) {
-  checkPlayTypingSound(e);
-
   if (e.code === "Enter") {
     e.stopPropagation();
     submitAnswer(
@@ -183,7 +177,13 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      callback: showAnswer,
+      rightCallback: () => {
+        playRightSound(); // 正确提示
+        showAnswer();
+      },
+      errorCallback: () => {
+        playErrorSound();
+      },
     },
   });
 }

@@ -150,10 +150,7 @@ describe("question", () => {
     });
 
     setInputValue("he eat");
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
     await fixFirstIncorrectWord();
 
     expect(userInputWords[0].userInput).toBe("");
@@ -172,10 +169,7 @@ describe("question", () => {
       });
 
     setInputValue("he eats a");
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
 
     await fixIncorrectWord();
 
@@ -205,10 +199,7 @@ describe("question", () => {
 
     setInputValue("i ea ap");
 
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
 
     const preventDefault = vi.fn();
     handleKeyboardInput({
@@ -223,7 +214,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, handleKeyboardInput } = useInput({
+    const { setInputValue, handleKeyboardInput } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -264,10 +255,7 @@ describe("question", () => {
     });
 
     setInputValue("i ea ap");
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
     await fixIncorrectWord();
 
     const preventDefault = vi.fn();
@@ -295,10 +283,7 @@ describe("question", () => {
     });
 
     setInputValue("i ea apple");
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
     await fixIncorrectWord();
 
     const preventDefault = vi.fn();
@@ -350,10 +335,7 @@ describe("question", () => {
     });
 
     setInputValue("he eat banana");
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
 
     await fixIncorrectWord();
     setInputValue("a");
@@ -389,7 +371,7 @@ describe("question", () => {
       {
         useSpaceSubmitAnswer: {
           enable: true,
-          callback: submitAnswerCallback,
+          rightCallback: submitAnswerCallback,
         },
       }
     );
@@ -416,10 +398,7 @@ describe("question", () => {
     const inputValue = "i e apple";
     getInputCursorPosition.mockReturnValue(inputValue.length);
     setInputValue(inputValue);
-    submitAnswer(
-      () => {},
-      () => {}
-    );
+    submitAnswer();
 
     await fixIncorrectWord();
 
@@ -438,11 +417,95 @@ describe("question", () => {
       {
         useSpaceSubmitAnswer: {
           enable: true,
-          callback: submitAnswerCallback,
+          rightCallback: submitAnswerCallback,
         },
       }
     );
 
     expect(submitAnswerCallback).toBeCalled();
+  });
+
+  describe("input change call back", () => {
+    it("should trigger when input regular character", () => {
+      const setInputCursorPosition = () => {};
+      const getInputCursorPosition = vi.fn();
+      const inputChangedCallback = vi.fn();
+
+      const { setInputValue, handleKeyboardInput } = useInput({
+        source: () => "i eat apple",
+        setInputCursorPosition,
+        getInputCursorPosition,
+        inputChangedCallback,
+      });
+
+      const inputValue = "i eat ap";
+      getInputCursorPosition.mockReturnValue(inputValue.length);
+      setInputValue(inputValue);
+
+      handleKeyboardInput({
+        code: "p",
+      } as any as KeyboardEvent);
+
+      expect(inputChangedCallback).toBeCalledWith({ code: "p" });
+    });
+
+    it("should trigger when press Backspace on fix mode ", () => {
+      const setInputCursorPosition = () => {};
+      const getInputCursorPosition = vi.fn();
+      const inputChangedCallback = vi.fn();
+
+      const { setInputValue, handleKeyboardInput, submitAnswer } = useInput({
+        source: () => "i eat apple",
+        setInputCursorPosition,
+        getInputCursorPosition,
+        inputChangedCallback,
+      });
+
+      const inputValue = "i eat ap";
+      getInputCursorPosition.mockReturnValue(inputValue.length);
+      setInputValue(inputValue);
+
+      submitAnswer();
+
+      handleKeyboardInput({
+        code: "Backspace",
+        preventDefault: () => {},
+      } as any as KeyboardEvent);
+
+      expect(inputChangedCallback).toBeCalledWith(
+        expect.objectContaining({ code: "Backspace" })
+      );
+    });
+
+    it("should trigger when press Backspace on fix input mode ", () => {
+      const setInputCursorPosition = () => {};
+      const getInputCursorPosition = vi.fn();
+      const inputChangedCallback = vi.fn();
+
+      const { setInputValue, handleKeyboardInput, submitAnswer } = useInput({
+        source: () => "i eat apple",
+        setInputCursorPosition,
+        getInputCursorPosition,
+        inputChangedCallback,
+      });
+
+      const inputValue = "i eat a";
+      getInputCursorPosition.mockReturnValue(inputValue.length);
+      setInputValue(inputValue);
+
+      submitAnswer();
+
+      handleKeyboardInput({
+        code: "Backspace",
+        preventDefault: () => {},
+      } as any as KeyboardEvent);
+
+      handleKeyboardInput({
+        code: "Backspace",
+        preventDefault: () => {},
+      } as any as KeyboardEvent);
+
+      expect(inputChangedCallback).toBeCalledTimes(2);
+    });
   });
 });

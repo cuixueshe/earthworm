@@ -1,5 +1,4 @@
 import { nextTick, reactive, ref, watchEffect } from "vue";
-import { usePlayTipSound } from "~/components/main/Question/useTypingSound";
 
 interface Word {
   text: string;
@@ -16,6 +15,7 @@ interface InputOptions {
   source: () => string;
   setInputCursorPosition: (position: number) => void;
   getInputCursorPosition: () => number;
+  inputChangedCallback?: (e: KeyboardEvent) => void;
 }
 
 enum Mode {
@@ -25,12 +25,12 @@ enum Mode {
 }
 
 const separator = " ";
-const { playRightSound, playErrorSound } = usePlayTipSound();
 
 export function useInput({
   source,
   setInputCursorPosition,
   getInputCursorPosition,
+  inputChangedCallback,
 }: InputOptions) {
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
@@ -159,10 +159,6 @@ export function useInput({
     }
   }
 
-  function hasFocusWord() {
-    return userInputWords.some((w) => w.isActive);
-  }
-
   // 当前编辑的单词是否为最后一个错误单词
   function isLastIncorrectWord() {
     return !findNextIncorrectWordNew();
@@ -191,8 +187,8 @@ export function useInput({
   }
 
   function submitAnswer(
-    correctCallback: () => void,
-    wrongCallback: () => void
+    correctCallback?: () => void,
+    wrongCallback?: () => void
   ) {
     if (mode === Mode.Fix) return;
     resetAllWordActive();
@@ -200,11 +196,11 @@ export function useInput({
 
     if (checkWordCorrect()) {
       mode = Mode.Input;
-      correctCallback(); // 调用输入正确的回调
+      correctCallback?.(); // 调用输入正确的回调
       inputValue.value = "";
     } else {
       mode = Mode.Fix;
-      wrongCallback(); // 调用输入错误的回调
+      wrongCallback?.(); // 调用输入错误的回调
     }
   }
 
@@ -262,27 +258,32 @@ export function useInput({
     }
   }
 
-  function checkSpaceSubmitAnswer(
-    e: KeyboardEvent,
-    useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined
+  function handleSpaceSubmitAnswer(
+    useSpaceSubmitAnswer: KeyboardInputOptions["useSpaceSubmitAnswer"]
   ) {
-    e.preventDefault();
     if (useSpaceSubmitAnswer?.enable) {
       submitAnswer(
         () => {
-          playRightSound(); // 正确提示
-          useSpaceSubmitAnswer.callback();
+          useSpaceSubmitAnswer?.rightCallback?.();
         },
-        playErrorSound // 错误提示
+        () => {
+          useSpaceSubmitAnswer?.errorCallback?.();
+        }
       );
     }
   }
 
+  interface KeyboardInputOptions {
+    useSpaceSubmitAnswer?: {
+      enable: boolean;
+      rightCallback?: () => void;
+      errorCallback?: () => void;
+    };
+  }
+
   function handleKeyboardInput(
     e: KeyboardEvent,
-    options: {
-      useSpaceSubmitAnswer?: { enable: boolean; callback: () => void };
-    } = {}
+    options?: KeyboardInputOptions
   ) {
     // 禁止方向键移动
     if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
@@ -298,7 +299,8 @@ export function useInput({
 
     // Input 下启用空格提交 且 在最后一个单词位置
     if (e.code === "Space" && lastWordIsActive()) {
-      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
+      e.preventDefault();
+      handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
 
@@ -306,6 +308,7 @@ export function useInput({
     if (mode === Mode.Fix && e.code === "Backspace") {
       e.preventDefault();
       fixFirstIncorrectWord();
+      inputChangedCallback?.(e);
       return;
     }
 
@@ -315,7 +318,8 @@ export function useInput({
       e.code === "Space" &&
       isLastIncorrectWord()
     ) {
-      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
+      e.preventDefault();
+      handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
 
@@ -327,6 +331,7 @@ export function useInput({
     ) {
       e.preventDefault();
       activePreviousIncorrectWord();
+      inputChangedCallback?.(e);
       return;
     }
 
@@ -336,8 +341,11 @@ export function useInput({
     if (mode !== Mode.Input && e.code === "Space") {
       e.preventDefault();
       fixIncorrectWord();
+      inputChangedCallback?.(e);
       return;
     }
+
+    inputChangedCallback?.(e);
   }
 
   function resetUserInputWords() {
@@ -350,7 +358,6 @@ export function useInput({
   return {
     inputValue,
     userInputWords,
-    hasFocusWord,
     submitAnswer,
     setInputValue,
     activePreviousIncorrectWord,

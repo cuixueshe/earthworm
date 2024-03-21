@@ -53,7 +53,7 @@ export function useTypingSound() {
     }
   }
 
-  function playAudio() {
+  function playTypingSound() {
     const now = Date.now();
     if (now - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
     if (!audioCtxRef || !audioBuffer) return;
@@ -69,7 +69,19 @@ export function useTypingSound() {
     };
   }
 
+  function checkPlayTypingSound(e: KeyboardEvent) {
+    if (e.altKey || e.ctrlKey || e.metaKey) return false;
+
+    if (
+      /^[a-zA-Z0-9]$/.test(e.key) ||
+      ["Backspace", " ", "'"].includes(e.key)
+    ) {
+      return true;
+    }
+  }
+
   return {
-    playAudio,
+    playTypingSound,
+    checkPlayTypingSound,
   };
 }
