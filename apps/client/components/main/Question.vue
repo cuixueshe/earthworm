@@ -25,7 +25,6 @@
         class="absolute h-full w-full opacity-0"
         type="text"
         v-model="inputValue"
-        @keyup="handleKeyup"
         @keydown="handleKeydown"
         @focus="handleInputFocus"
         @blur="handleBlur"
@@ -78,15 +77,6 @@ watch(
     setInputValue(val);
   }
 );
-
-function handleKeyup(e: KeyboardEvent) {
-  if (e.code === "Enter") {
-    e.stopPropagation();
-    submitAnswer(() => {
-      showAnswer();
-    });
-  }
-}
 
 // 输入宽度
 function inputWidth(word: string) {
@@ -157,6 +147,14 @@ function inputWidth(word: string) {
 }
 
 function handleKeydown(e: KeyboardEvent) {
+  if (e.code === "Enter") {
+    e.stopPropagation();
+    submitAnswer(() => {
+      showAnswer();
+    });
+    return;
+  }
+
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
