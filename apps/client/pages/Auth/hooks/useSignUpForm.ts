@@ -24,11 +24,11 @@ export function useSignupForm() {
       .required("Please enter your username")
       .min(2, "Username must be at least 2 characters")
       .max(20, "Username must be less than 20 characters"),
-    name: yup
+    nickname: yup
       .string()
-      .required("Please enter your name")
-      .min(2, "Name must be at least 2 characters")
-      .max(20, "Name must be less than 20 characters"),
+      .required("Please enter your nickname")
+      .min(2, "Nickname must be at least 2 characters")
+      .max(20, "Nickname must be less than 20 characters"),
     // phone: yup
     //   .string()
     //   .required("Please enter your phone number")
@@ -58,7 +58,7 @@ export function useSignupForm() {
 
   const { value: username, errorMessage: usernameError } =
     useField<string>("username");
-  const { value: name, errorMessage: nameError } = useField<string>("name");
+  const { value: nickname, errorMessage: nicknameError } = useField<string>("nickname");
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
   const { value: password, errorMessage: passwordError } =
     useField<string>("password");
@@ -69,8 +69,8 @@ export function useSignupForm() {
     handleSubmit,
     username,
     usernameError,
-    name,
-    nameError,
+    nickname,
+    nicknameError,
     phone,
     phoneError,
     password,

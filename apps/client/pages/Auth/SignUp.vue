@@ -29,11 +29,11 @@
           :errorMessage="usernameError"
         />
         <FormInput
-          label="Name"
-          name="name"
-          placeholder="Your name"
-          v-model="name"
-          :errorMessage="nameError"
+          label="Nickname"
+          name="nickname"
+          placeholder="Your nickname"
+          v-model="nickname"
+          :errorMessage="nicknameError"
         />
         <FormInput
           label="Password"
@@ -85,8 +85,8 @@ const {
   handleSubmit,
   username,
   usernameError,
-  name,
-  nameError,
+  nickname,
+  nicknameError,
   password,
   passwordError,
   confirmPassword,
