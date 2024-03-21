@@ -22,18 +22,18 @@
         novalidate
       >
         <FormInput
+          label="Username"
+          name="username"
+          placeholder="Your username"
+          v-model="username"
+          :errorMessage="usernameError"
+        />
+        <FormInput
           label="Name"
           name="name"
           placeholder="Your name"
           v-model="name"
           :errorMessage="nameError"
-        />
-        <CountryPhoneInput
-          label="Phone"
-          name="phone"
-          v-model="phone"
-          :errorMessage="phoneError"
-          @update:country="updateCountryCode"
         />
         <FormInput
           label="Password"
@@ -77,20 +77,18 @@
 import { useRouter } from "vue-router";
 import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
-import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useSignupForm } from "~/pages/Auth/hooks/useSignUpForm";
 const {
   handleSubmit,
+  username,
+  usernameError,
   name,
   nameError,
-  phone,
-  phoneError,
   password,
   passwordError,
   confirmPassword,
   confirmPasswordError,
-  updateCountryCode,
 } = useSignupForm();
 
 const router = useRouter();
@@ -98,10 +96,10 @@ const { signup } = useAuth();
 
 const handleRegister = handleSubmit(async (values) => {
   //  countryCode :maybe backend api want to use it
-  const [countryCode, purePhoneNumber] = values.phone.split("_");
+  // const [countryCode, purePhoneNumber] = values.phone.split("_");
   const modifiedValues = {
     ...values,
-    phone: purePhoneNumber,
+    // phone: purePhoneNumber,
   };
   await signup(modifiedValues);
   Message.success("register success!");

@@ -1,7 +1,7 @@
 import { http } from "./http";
 
 interface LoginDto {
-  phone: string;
+  username: string;
   password: string;
 }
 
