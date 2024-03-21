@@ -213,7 +213,7 @@ function useCursor() {
     // 它会改变 input 光标的位置
     event.preventDefault();
     // 只允许 input focus
-    inputEl.value?.focus();
+    handleInputFocus();
   }
 
   return {
@@ -221,7 +221,7 @@ function useCursor() {
     recoverCursor,
     setInputCursorPosition,
     getInputCursorPosition,
-    preventCursorMove
+    preventCursorMove,
   };
 }
 
@@ -229,17 +229,16 @@ function useFocus() {
   const focusing = ref(true);
 
   onMounted(() => {
-    inputEl.value?.focus();
+    handleInputFocus();
   });
 
-  async function handleInputFocus() {
+  function handleInputFocus() {
     focusing.value = true;
-    recoverCursor();
+    inputEl.value?.focus();
   }
 
   function handleBlur() {
     focusing.value = false;
-    recordCursor();
   }
 
   return {
