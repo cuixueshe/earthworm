@@ -5,15 +5,16 @@ const PRONUNCIATION = "isAmericanPronunciation";
 
 
 function getPronunciationType(){
-  let pronunciationTypeStringify = localStorage.getItem(PRONUNCIATION);
-  return pronunciationTypeStringify;
+  let pronunciationTypeStringify = localStorage.getItem(PRONUNCIATION) || '';
+  return JSON.parse(pronunciationTypeStringify);
 }
 
 let prevWord = "";
 export function useCurrentStatementEnglishSound() {
   const courseStore = useCourseStore();
   let soundIsAmerican = getPronunciationType();
-  let param = soundIsAmerican === 'true' ? `type=0` : `type=1`;
+  console.log(typeof(soundIsAmerican),soundIsAmerican)
+  let param = soundIsAmerican ? `type=0` : `type=1`;
   watchEffect(() => {
     const word = courseStore.currentStatement?.english;
     if (prevWord !== word) {
