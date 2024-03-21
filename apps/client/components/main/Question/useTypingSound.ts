@@ -24,17 +24,17 @@ export function usePlayTipSound() {
   };
 }
 
+const PLAY_INTERVAL_TIME = 60;
 export function useTypingSound() {
-  const PLAY_INTERVAL_TIME = 60;
-  const audioCtxRef = ref<AudioContext | null>(null);
-  const lastPlayTime = ref(0); // 与上一次播放时间间隔
+  let audioCtxRef: AudioContext | null = null;
   let audioBuffer: AudioBuffer | null = null;
+  const lastPlayTime = ref(0); // 与上一次播放时间间隔
 
   // 不需要等页面渲染就可以加载了（提前）
   loadAudioContext();
 
   async function loadAudioContext() {
-    audioCtxRef.value = new AudioContext();
+    audioCtxRef = new AudioContext();
     await loadAudioBuffer(typingSoundPath);
   }
 
@@ -42,7 +42,7 @@ export function useTypingSound() {
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
     // 使用 decodeAudioData 方法处理 arrayBuffer
-    const audioContext = audioCtxRef.value;
+    const audioContext = audioCtxRef;
     if (!audioContext) return;
 
     const decodedAudioData = await audioContext.decodeAudioData(arrayBuffer);
@@ -56,11 +56,11 @@ export function useTypingSound() {
   function playAudio() {
     const now = Date.now();
     if (now - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
-    if (!audioCtxRef.value || !audioBuffer) return;
+    if (!audioCtxRef || !audioBuffer) return;
 
-    const source = audioCtxRef.value.createBufferSource();
+    const source = audioCtxRef.createBufferSource();
     source.buffer = audioBuffer;
-    source.connect(audioCtxRef.value.destination);
+    source.connect(audioCtxRef.destination);
     source.start();
     lastPlayTime.value = now;
     // 当音频播放结束，手动释放资源

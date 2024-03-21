@@ -159,6 +159,10 @@ export function useInput({
     }
   }
 
+  function hasFocusWord() {
+    return userInputWords.some((w) => w.isActive);
+  }
+
   // 当前编辑的单词是否为最后一个错误单词
   function isLastIncorrectWord() {
     return !findNextIncorrectWordNew();
@@ -334,6 +338,7 @@ export function useInput({
   return {
     inputValue,
     userInputWords,
+    hasFocusWord,
     submitAnswer,
     setInputValue,
     activePreviousIncorrectWord,

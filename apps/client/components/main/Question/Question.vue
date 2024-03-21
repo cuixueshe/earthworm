@@ -62,6 +62,7 @@ const { playRightSound, playErrorSound } = usePlayTipSound();
 const {
   inputValue,
   userInputWords,
+  hasFocusWord,
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
@@ -146,10 +147,17 @@ function inputWidth(word: string) {
   return width;
 }
 
+// 检查是否需要播放打字音效
+function checkPlayTypingSound(e: KeyboardEvent) {
+  // TODO: 屏蔽掉不需要播放声音的按键 or 匹配需要播放声音的按键
+  if (!hasFocusWord()) return;
+
+  playAudio();
+}
+
 function handleKeydown(e: KeyboardEvent) {
-  if (/^[a-zA-Z0-9]$/.test(e.key) || ["Backspace", " ", "'"].includes(e.key)) {
-    playAudio(); // 使用 Hook 提供的方法播放打字声音
-  }
+  checkPlayTypingSound(e);
+
   if (e.code === "Enter") {
     e.stopPropagation();
     submitAnswer(
