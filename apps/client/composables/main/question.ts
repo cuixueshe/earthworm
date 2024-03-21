@@ -284,34 +284,45 @@ export function useInput({
       useSpaceSubmitAnswer?: { enable: boolean; callback: () => void };
     } = {}
   ) {
-    if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
+    // 禁止方向键移动
+    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
       e.preventDefault();
       return;
     }
 
-    if (e.code !== "Space" && e.code !== "Backspace" && mode === Mode.Fix) {
+    // Fix 下禁止输入除了空格/退格之外的其他字符
+    if (mode === Mode.Fix && e.code !== "Space" && e.code !== "Backspace") {
       e.preventDefault();
       return;
     }
 
-    // 校验正常输入时最后一个单词空格提交
+    // Input 下启用空格提交 且 在最后一个单词位置
     if (e.code === "Space" && lastWordIsActive()) {
       checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
       return;
     }
 
+    // Fix 下使用退格键定位到第一个错误单词并清除
+    if (mode === Mode.Fix && e.code === "Backspace") {
+      e.preventDefault();
+      fixFirstIncorrectWord();
+      return;
+    }
+
+    // Fix_Input 下启用空格提交 且 在最后一个错误单词位置
     if (
-      e.code === "Space" &&
       mode === Mode.Fix_Input &&
+      e.code === "Space" &&
       isLastIncorrectWord()
     ) {
       checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
       return;
     }
 
+    // Fix_Input 模式下当前编辑单词为空时，启用退格删除上一个错误单词
     if (
-      e.code === "Backspace" &&
       mode === Mode.Fix_Input &&
+      e.code === "Backspace" &&
       isEmptyOfCurrentEditWord()
     ) {
       e.preventDefault();
@@ -319,12 +330,13 @@ export function useInput({
       return;
     }
 
-    if (e.code === "Space" && mode !== Mode.Input) {
+    // 空格修复单词
+    // Fix → 定位到第一个错误单词并清除
+    // Fix_Input → 定位到下一个错误单词并清除
+    if (mode !== Mode.Input && e.code === "Space") {
       e.preventDefault();
       fixIncorrectWord();
-    } else if (e.code === "Backspace" && mode === Mode.Fix) {
-      e.preventDefault();
-      fixFirstIncorrectWord();
+      return;
     }
   }
 
