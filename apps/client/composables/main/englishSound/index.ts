@@ -13,7 +13,6 @@ let prevWord = "";
 export function useCurrentStatementEnglishSound() {
   const courseStore = useCourseStore();
   let soundIsAmerican = getPronunciationType();
-  console.log(typeof(soundIsAmerican),soundIsAmerican)
   let param = soundIsAmerican ? `type=0` : `type=1`;
   watchEffect(() => {
     const word = courseStore.currentStatement?.english;
