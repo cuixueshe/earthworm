@@ -75,7 +75,7 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import Message from "~/components/main/Message/Message";
+import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
 import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
 import FormInput from "~/pages/Auth/FormInput.vue";

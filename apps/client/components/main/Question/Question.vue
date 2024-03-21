@@ -48,6 +48,7 @@ import { useInput } from "~/composables/main/question";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
+import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
@@ -62,10 +63,14 @@ const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+// 初始化提示音相关 hook
+const { playAudio } = useTypingSound();
+const { playRightSound, playErrorSound } = usePlayTipSound();
 
 const {
   inputValue,
   userInputWords,
+  hasFocusWord,
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
@@ -150,12 +155,28 @@ function inputWidth(word: string) {
   return width;
 }
 
+// 检查是否需要播放打字音效
+function checkPlayTypingSound(e: KeyboardEvent) {
+  if (!hasFocusWord()) return;
+  if (e.altKey || e.ctrlKey || e.metaKey) return;
+
+  if (/^[a-zA-Z0-9]$/.test(e.key) || ["Backspace", " ", "'"].includes(e.key)) {
+    playAudio();
+  }
+}
+
 function handleKeydown(e: KeyboardEvent) {
+  checkPlayTypingSound(e);
+
   if (e.code === "Enter") {
     e.stopPropagation();
-    submitAnswer(() => {
-      showAnswer();
-    });
+    submitAnswer(
+      () => {
+        playRightSound(); // 正确提示
+        showAnswer();
+      },
+      playErrorSound // 错误提示
+    );
     return;
   }
 
@@ -194,7 +215,7 @@ function useCursor() {
     // 它会改变 input 光标的位置
     event.preventDefault();
     // 只允许 input focus
-    inputEl.value?.focus();
+    handleInputFocus();
   }
 
   return {
@@ -202,7 +223,7 @@ function useCursor() {
     recoverCursor,
     setInputCursorPosition,
     getInputCursorPosition,
-    preventCursorMove
+    preventCursorMove,
   };
 }
 
@@ -210,17 +231,16 @@ function useFocus() {
   const focusing = ref(true);
 
   onMounted(() => {
-    inputEl.value?.focus();
+    handleInputFocus();
   });
 
-  async function handleInputFocus() {
+  function handleInputFocus() {
     focusing.value = true;
-    recoverCursor();
+    inputEl.value?.focus();
   }
 
   function handleBlur() {
     focusing.value = false;
-    recordCursor();
   }
 
   return {
