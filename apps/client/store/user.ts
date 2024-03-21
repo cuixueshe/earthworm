@@ -7,8 +7,8 @@ export interface User {
 }
 
 export interface SignupFormValues {
-  phone: string;
   name: string;
+  username: string;
   password: string;
 }
 

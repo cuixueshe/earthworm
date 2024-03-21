@@ -22,13 +22,11 @@
         novalidate
       >
         <FormInput
-          label="Phone"
-          name="phone"
-          type="tel"
-          placeholder="Please enter your phone number"
-          v-model="phone"
-          :errorMessage="phoneError"
-          :onlyNumbers="true"
+          label="Username or Phone"
+          name="username"
+          placeholder="Please enter your username or phone number"
+          v-model="username"
+          :errorMessage="usernameError"
         />
         <FormInput
           label="Password"
@@ -71,7 +69,7 @@ import FormInput from "~/pages/Auth/FormInput.vue";
 const router = useRouter();
 const route = useRoute();
 const { login } = useAuth();
-const { handleSubmit, phone, phoneError, password, passwordError } =
+const { handleSubmit, username, usernameError, password, passwordError } =
   useLoginForm();
 
 const handleLogin = handleSubmit(async (values) => {

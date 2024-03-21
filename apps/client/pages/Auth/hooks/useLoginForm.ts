@@ -3,10 +3,11 @@ import * as yup from "yup";
 import { type SignupFormValues } from "~/store/user";
 export function useLoginForm() {
   const schema = yup.object({
-    phone: yup
+    username: yup
       .string()
-      .required("Please input your phone number")
-      .matches(/^\d{7,15}$/, "Please input a valid phone number"),
+      .required("Please input your username")
+      .min(2, "Username must be at least 2 characters")
+      .max(20, "Username must be less than 20 characters"),
     password: yup
       .string()
       .required("Please input your password")
@@ -20,6 +21,7 @@ export function useLoginForm() {
   });
 
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
+  const { value: username, errorMessage: usernameError } = useField<string>("username");
   const { value: password, errorMessage: passwordError } = useField<string>("password");
 
   return {
@@ -28,5 +30,7 @@ export function useLoginForm() {
     phoneError,
     password,
     passwordError,
+    username,
+    usernameError,
   };
 }
