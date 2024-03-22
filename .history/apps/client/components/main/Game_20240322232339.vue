@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full pt-20 lg:pt-5">
-    <div class="h-[40vh] flex flex-col justify-center">
+  <div class="h-full pt-20">
+    <div class="flex flex-col justify-center">
       <template v-if="isQuestion()">
         <Question></Question>
       </template>

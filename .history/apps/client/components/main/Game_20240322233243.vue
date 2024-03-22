@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full pt-20 lg:pt-5">
+  <div class="h-full rem-2">
     <div class="h-[40vh] flex flex-col justify-center">
       <template v-if="isQuestion()">
         <Question></Question>
