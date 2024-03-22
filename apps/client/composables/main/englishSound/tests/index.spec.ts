@@ -40,18 +40,21 @@ describe("useCurrentStatementEnglishSound", () => {
   it("should updates audio source", async () => {
     useCurrentStatementEnglishSound();
 
-    expect(updateSource).toBeCalledTimes(1);
-
     // update english value
     const courseStore = useCourseStore();
-    courseStore.currentStatement!.english = "like";
+    courseStore.currentStatement = {
+      id: 2,
+      english: "like",
+      soundmark: "/like/",
+      chinese: "喜欢",
+    };
     await vi.advanceTimersToNextTimerAsync();
 
-    expect(updateSource).toBeCalledTimes(2);
+    expect(updateSource).toBeCalledTimes(1);
   });
 
   it("does not update audio source if the word is the same", async () => {
-    const { playSound } = useCurrentStatementEnglishSound();
+    useCurrentStatementEnglishSound();
 
     const courseStore = useCourseStore();
     courseStore.currentStatement = {
