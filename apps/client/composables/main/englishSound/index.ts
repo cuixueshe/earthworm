@@ -1,32 +1,21 @@
 import { watchEffect } from "vue";
+import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
 import { play, updateSource } from "./audio";
-const PRONUNCIATION = "isAmericanPronunciation";
 
+const { getPronunciationUrl } = usePronunciation();
 
-function getPronunciationType(){
-  let pronunciationTypeStringify = localStorage.getItem(PRONUNCIATION) || '';
-  return JSON.parse(pronunciationTypeStringify);
-}
-
-let prevWord = "";
+let lastPronunciationUrl = "";
 export function useCurrentStatementEnglishSound() {
   const courseStore = useCourseStore();
-  let soundIsAmerican = getPronunciationType();
-  let param = soundIsAmerican ? `type=0` : `type=1`;
+
   watchEffect(() => {
     const word = courseStore.currentStatement?.english;
-    if (prevWord !== word) {
-      /**
-       * 美式发音： http://dict.youdao.com/dictvoice?type=0&audio=
-       * 英式发音：http://dict.youdao.com/dictvoice?type=1&audio=
-       */
-      
-      let requestUrl = `https://dict.youdao.com/dictvoice?audio=${word}&${param}`
-
-      updateSource(requestUrl);
+    const pronunciationUrl = getPronunciationUrl(word);
+    if (lastPronunciationUrl !== pronunciationUrl) {
+      updateSource(pronunciationUrl);
     }
-    prevWord = courseStore.currentStatement?.english!
+    lastPronunciationUrl = pronunciationUrl;
   });
 
   return {
@@ -38,14 +27,7 @@ export function useCurrentStatementEnglishSound() {
 
 // 朗读每日一句
 export function readOneSentencePerDayAloud(str: string) {
-  let soundIsAmerican = getPronunciationType();
-  let param =  soundIsAmerican === 'true' ? `type=0` : `type=1`;
-  let requestUrl = `https://dict.youdao.com/dictvoice?audio=${str}&${param}`
-  updateSource(requestUrl);
+  const pronunciationUrl = getPronunciationUrl(str);
+  updateSource(pronunciationUrl);
   play();
 }
-
-export function reset() {
-  prevWord = "";
-}
-

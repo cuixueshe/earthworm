@@ -5,7 +5,6 @@ import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
 import { useUserStore } from "~/store/user";
 
-
 interface Statement {
   id: number;
   chinese: string;
@@ -98,8 +97,6 @@ export const useCourseStore = defineStore("course", () => {
   function resetStatementIndex() {
     statementIndex.value = 0;
   }
-
-  
 
   return {
     statementIndex,
