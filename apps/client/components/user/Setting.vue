@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <section>
-      <h2 class="text-lg">快捷键设置</h2>
+      <h2 class="text-lg mb-2">快捷键设置</h2>
       <n-table
         :bordered="false"
         :single-line="false"
@@ -15,7 +15,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>play sound</td>
+            <td>播放发音</td>
             <td>{{ shortcutKeys.sound }}</td>
             <td>
               <n-button
@@ -27,7 +27,7 @@
             </td>
           </tr>
           <tr>
-            <td>show answer</td>
+            <td>切换答题/答案页面</td>
             <td>{{ shortcutKeys.answer }}</td>
             <td>
               <n-button
@@ -43,43 +43,50 @@
     </section>
 
     <section>
-      <h2 class="text-lg">声音设置</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">自动播放</span>
+      <h2 class="text-lg mb-2">声音设置</h2>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">自动播放声音（答案）</span>
           <input
             type="checkbox"
-            className="toggle toggle-primary"
+            class="toggle toggle-primary"
             :checked="autoPlaySound"
             @change="toggleAutoPlaySound"
           />
         </label>
       </div>
-    </section>
-
-    <section>
-      <h2>是否展示每个单词长度</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">是</span>
-          <input
-            type="checkbox"
-            className="toggle toggle-primary"
-            :checked="autoShowWordsWidth"
-            @change="toggleAutoWordsWidth"
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">切换口音</span>
+          <n-select
+            v-model:value="pronunciation"
+            :options="getPronunciationOptions()"
+            :on-update-value="togglePronunciation"
+            class="w-[90px]"
           />
         </label>
       </div>
     </section>
 
     <section>
-      <h2 class="text-lg">提交设置</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">使用空格</span>
+      <h2 class="text-lg mb-2">答题设置</h2>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">是否显示每个单词长度</span>
           <input
             type="checkbox"
-            className="toggle toggle-primary"
+            class="toggle toggle-primary"
+            :checked="autoShowWordsWidth"
+            @change="toggleAutoWordsWidth"
+          />
+        </label>
+      </div>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">允许空格提交答案</span>
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
             :checked="useSpace"
             @change="toggleUseSpaceSubmitAnswer"
           />
@@ -113,12 +120,18 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { usePronunciation } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useAutoSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
+const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+const { pronunciation, getPronunciationOptions, togglePronunciation } =
+  usePronunciation();
 const {
   showModal,
   shortcutKeys,
@@ -135,10 +148,6 @@ function pointDialogOutside(e: MouseEvent) {
     handleCloseDialog();
   }
 }
-
-const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
-const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
-const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
