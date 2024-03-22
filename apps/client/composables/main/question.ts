@@ -15,6 +15,7 @@ interface InputOptions {
   source: () => string;
   setInputCursorPosition: (position: number) => void;
   getInputCursorPosition: () => number;
+  inputChangedCallback?: (e: KeyboardEvent) => void;
 }
 
 enum Mode {
@@ -29,6 +30,7 @@ export function useInput({
   source,
   setInputCursorPosition,
   getInputCursorPosition,
+  inputChangedCallback,
 }: InputOptions) {
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
@@ -184,17 +186,21 @@ export function useInput({
     updateActiveWord(word.start);
   }
 
-  function submitAnswer(correctCallback: () => void) {
+  function submitAnswer(
+    correctCallback?: () => void,
+    wrongCallback?: () => void
+  ) {
     if (mode === Mode.Fix) return;
     resetAllWordActive();
     markIncorrectWord();
 
     if (checkWordCorrect()) {
       mode = Mode.Input;
-      correctCallback();
+      correctCallback?.(); // 调用输入正确的回调
       inputValue.value = "";
     } else {
       mode = Mode.Fix;
+      wrongCallback?.(); // 调用输入错误的回调
     }
   }
 
@@ -252,64 +258,94 @@ export function useInput({
     }
   }
 
-  function checkSpaceSubmitAnswer(
-    e: KeyboardEvent,
-    useSpaceSubmitAnswer: { enable: boolean; callback: () => void } | undefined
+  function handleSpaceSubmitAnswer(
+    useSpaceSubmitAnswer: KeyboardInputOptions["useSpaceSubmitAnswer"]
   ) {
-    e.preventDefault();
     if (useSpaceSubmitAnswer?.enable) {
-      submitAnswer(useSpaceSubmitAnswer.callback);
+      submitAnswer(
+        () => {
+          useSpaceSubmitAnswer?.rightCallback?.();
+        },
+        () => {
+          useSpaceSubmitAnswer?.errorCallback?.();
+        }
+      );
     }
+  }
+
+  interface KeyboardInputOptions {
+    useSpaceSubmitAnswer?: {
+      enable: boolean;
+      rightCallback?: () => void;
+      errorCallback?: () => void;
+    };
   }
 
   function handleKeyboardInput(
     e: KeyboardEvent,
-    options: {
-      useSpaceSubmitAnswer?: { enable: boolean; callback: () => void };
-    } = {}
+    options?: KeyboardInputOptions
   ) {
-    if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
+    // 禁止方向键移动
+    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
       e.preventDefault();
       return;
     }
 
-    if (e.code !== "Space" && e.code !== "Backspace" && mode === Mode.Fix) {
+    // Fix 下禁止输入除了空格/退格之外的其他字符
+    if (mode === Mode.Fix && e.code !== "Space" && e.code !== "Backspace") {
       e.preventDefault();
       return;
     }
 
-    // 校验正常输入时最后一个单词空格提交
+    // Input 下启用空格提交 且 在最后一个单词位置
     if (e.code === "Space" && lastWordIsActive()) {
-      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
+      e.preventDefault();
+      handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
 
+    // Fix 下使用退格键定位到第一个错误单词并清除
+    if (mode === Mode.Fix && e.code === "Backspace") {
+      e.preventDefault();
+      fixFirstIncorrectWord();
+      inputChangedCallback?.(e);
+      return;
+    }
+
+    // Fix_Input 下启用空格提交 且 在最后一个错误单词位置
     if (
-      e.code === "Space" &&
       mode === Mode.Fix_Input &&
+      e.code === "Space" &&
       isLastIncorrectWord()
     ) {
-      checkSpaceSubmitAnswer(e, options.useSpaceSubmitAnswer);
+      e.preventDefault();
+      handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
 
+    // Fix_Input 模式下当前编辑单词为空时，启用退格删除上一个错误单词
     if (
-      e.code === "Backspace" &&
       mode === Mode.Fix_Input &&
+      e.code === "Backspace" &&
       isEmptyOfCurrentEditWord()
     ) {
       e.preventDefault();
       activePreviousIncorrectWord();
+      inputChangedCallback?.(e);
       return;
     }
 
-    if (e.code === "Space" && mode !== Mode.Input) {
+    // 空格修复单词
+    // Fix → 定位到第一个错误单词并清除
+    // Fix_Input → 定位到下一个错误单词并清除
+    if (mode !== Mode.Input && e.code === "Space") {
       e.preventDefault();
       fixIncorrectWord();
-    } else if (e.code === "Backspace" && mode === Mode.Fix) {
-      e.preventDefault();
-      fixFirstIncorrectWord();
+      inputChangedCallback?.(e);
+      return;
     }
+
+    inputChangedCallback?.(e);
   }
 
   function resetUserInputWords() {

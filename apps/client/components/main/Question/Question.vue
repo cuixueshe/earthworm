@@ -28,6 +28,8 @@
         @keydown="handleKeydown"
         @focus="handleInputFocus"
         @blur="handleBlur"
+        @dblclick.prevent
+        @mousedown="preventCursorMove"
         autoFocus
       />
     </div>
@@ -77,14 +79,22 @@ import { useAnswerMode } from "~/composables/user/answerMode";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
+import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
-const { setInputCursorPosition, getInputCursorPosition } = useCursor();
+const {
+  setInputCursorPosition,
+  getInputCursorPosition,
+  preventCursorMove,
+} = useCursor();
 const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+// 初始化提示音相关 hook
+const { playTypingSound, checkPlayTypingSound } = useTypingSound();
+const { playRightSound, playErrorSound } = usePlayTipSound();
 
 const { isListeningMode, audioRate, audioTimes } = useAnswerMode();
 
@@ -107,6 +117,7 @@ const {
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
   getInputCursorPosition,
+  inputChangedCallback,
 });
 
 watch(
@@ -115,6 +126,12 @@ watch(
     setInputValue(val);
   }
 );
+
+function inputChangedCallback(e: KeyboardEvent) {
+  if (checkPlayTypingSound(e)) {
+    playTypingSound();
+  }
+}
 
 // 输入宽度
 function inputWidth(word: string) {
@@ -187,16 +204,26 @@ function inputWidth(word: string) {
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
-    submitAnswer(() => {
-      showAnswer();
-    });
+    submitAnswer(
+      () => {
+        playRightSound(); // 正确提示
+        showAnswer();
+      },
+      playErrorSound // 错误提示
+    );
     return;
   }
 
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      callback: showAnswer,
+      rightCallback: () => {
+        playRightSound(); // 正确提示
+        showAnswer();
+      },
+      errorCallback: () => {
+        playErrorSound();
+      },
     },
   });
 }
@@ -210,9 +237,18 @@ function useCursor() {
     return inputEl.value?.selectionStart || 0;
   }
 
+  function preventCursorMove(event: MouseEvent) {
+    // 阻止 mousedown 事件的默认行为
+    // 它会改变 input 光标的位置
+    event.preventDefault();
+    // 只允许 input focus
+    handleInputFocus();
+  }
+
   return {
     setInputCursorPosition,
     getInputCursorPosition,
+    preventCursorMove,
   };
 }
 
@@ -220,11 +256,12 @@ function useFocus() {
   const focusing = ref(true);
 
   onMounted(() => {
-    inputEl.value?.focus();
+    handleInputFocus();
   });
 
   function handleInputFocus() {
     focusing.value = true;
+    inputEl.value?.focus();
   }
 
   function handleBlur() {

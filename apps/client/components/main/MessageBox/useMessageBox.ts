@@ -1,6 +1,6 @@
 import { createVNode, render, type ComponentPublicInstance } from "vue";
-import MessageBoxConstructor from "./MessageBox.vue";
 import type { IMessageBoxProps } from "~/composables/messageBox/modal";
+import MessageBoxConstructor from "./MessageBox.vue";
 
 interface MessageBoxOptions {
   /** Text content of confirm button */
