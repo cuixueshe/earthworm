@@ -1,17 +1,21 @@
-import { useCourseStore } from "~/store/course";
-import { updateSource, play } from "./audio";
 import { watchEffect } from "vue";
+import { usePronunciation } from "~/composables/user/pronunciation";
+import { useCourseStore } from "~/store/course";
+import { play, updateSource } from "./audio";
 
-let prevWord = "";
+const { getPronunciationUrl } = usePronunciation();
+
+let lastPronunciationUrl = "";
 export function useCurrentStatementEnglishSound() {
   const courseStore = useCourseStore();
 
   watchEffect(() => {
     const word = courseStore.currentStatement?.english;
-    if (prevWord !== word) {
-      updateSource(`https://dict.youdao.com/dictvoice?audio=${word}&type=1`);
+    const pronunciationUrl = getPronunciationUrl(word);
+    if (lastPronunciationUrl !== pronunciationUrl) {
+      updateSource(pronunciationUrl);
     }
-    prevWord = courseStore.currentStatement?.english!
+    lastPronunciationUrl = pronunciationUrl;
   });
 
   return {
@@ -23,10 +27,7 @@ export function useCurrentStatementEnglishSound() {
 
 // 朗读每日一句
 export function readOneSentencePerDayAloud(str: string) {
-  updateSource(`https://dict.youdao.com/dictvoice?audio=${str}&type=1`);
+  const pronunciationUrl = getPronunciationUrl(str);
+  updateSource(pronunciationUrl);
   play();
-}
-
-export function reset() {
-  prevWord = "";
 }
