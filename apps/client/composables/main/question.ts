@@ -293,6 +293,7 @@ export function useInput({
 
     // Fix 下禁止输入除了空格/退格之外的其他字符
     if (mode === Mode.Fix && e.code !== "Space" && e.code !== "Backspace") {
+      // TODO: 这里会导致一些浏览器快捷键不能使用，后续思考一下怎么处理
       e.preventDefault();
       return;
     }
