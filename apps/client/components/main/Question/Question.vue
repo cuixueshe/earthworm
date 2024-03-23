@@ -45,6 +45,7 @@
 import { onMounted, ref, watch } from "vue";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
@@ -52,17 +53,14 @@ import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
-const {
-  setInputCursorPosition,
-  getInputCursorPosition,
-  preventCursorMove,
-} = useCursor();
+const { setInputCursorPosition, getInputCursorPosition, preventCursorMove } =
+  useCursor();
 const { focusing, handleInputFocus, handleBlur } = useFocus();
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-// 初始化提示音相关 hook
-const { playTypingSound, checkPlayTypingSound } = useTypingSound();
+const { isKeyboardSoundEnabled } = useKeyboardSound();
+const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 
 const {
@@ -86,7 +84,7 @@ watch(
 );
 
 function inputChangedCallback(e: KeyboardEvent) {
-  if (checkPlayTypingSound(e)) {
+  if (isKeyboardSoundEnabled() && checkPlayTypingSound(e)) {
     playTypingSound();
   }
 }

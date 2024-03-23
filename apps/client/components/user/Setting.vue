@@ -46,7 +46,18 @@
       <h2 class="text-lg mb-2">声音设置</h2>
       <div class="form-control w-80">
         <label class="cursor-pointer label">
-          <span class="label-text">自动播放声音（答案）</span>
+          <span class="label-text">开启键盘打字音效</span>
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="keyboardSound"
+            @change="toggleKeyboardSound"
+          />
+        </label>
+      </div>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">自动播放声音（答案页面）</span>
           <input
             type="checkbox"
             class="toggle toggle-primary"
@@ -72,7 +83,7 @@
       <h2 class="text-lg mb-2">答题设置</h2>
       <div class="form-control w-80">
         <label class="cursor-pointer label">
-          <span class="label-text">是否显示每个单词长度</span>
+          <span class="label-text">显示每个单词长度</span>
           <input
             type="checkbox"
             class="toggle toggle-primary"
@@ -83,7 +94,7 @@
       </div>
       <div class="form-control w-80">
         <label class="cursor-pointer label">
-          <span class="label-text">允许空格提交答案</span>
+          <span class="label-text">开启空格提交答案</span>
           <input
             type="checkbox"
             class="toggle toggle-primary"
@@ -122,12 +133,16 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { useAutoSound } from "~/composables/user/sound";
+import {
+  useAutoPronunciation,
+  useKeyboardSound,
+} from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
-const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
+const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
+const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {
   pronunciation,
   // 发音配置列表
