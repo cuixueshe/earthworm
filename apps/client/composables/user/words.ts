@@ -1,30 +1,19 @@
-import { ref } from "vue";
+import { useLocalStorageBoolean } from "~/utils/localStorage";
 
-const AUTO_WORDS_WIDTH = "autoShowWordsWidth";
+export const SHOW_WORDS_WIDTH = "showWordsWidth";
 
 export function useShowWordsWidth() {
-  const autoShowWordsWidth = ref(true);
-
-  init();
-
-  function init() {
-    const value = localStorage.getItem(AUTO_WORDS_WIDTH);
-
-    autoShowWordsWidth.value = value !== "false";
-  }
-
-  function toggleAutoWordsWidth() {
-    localStorage.setItem(AUTO_WORDS_WIDTH, `${!autoShowWordsWidth.value}`);
-    autoShowWordsWidth.value = !autoShowWordsWidth.value;
-  }
-
-  function isShowWordsWidth() {
-    return autoShowWordsWidth.value;
-  }
+  const {
+    value: showWordsWidth,
+    toggle: toggleAutoWordsWidth,
+    isTrue: isShowWordsWidth,
+    remove: removeAutoWordsWidth,
+  } = useLocalStorageBoolean(SHOW_WORDS_WIDTH, true);
 
   return {
-    autoShowWordsWidth,
+    showWordsWidth,
     toggleAutoWordsWidth,
     isShowWordsWidth,
+    removeAutoWordsWidth,
   };
 }

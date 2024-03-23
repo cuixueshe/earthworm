@@ -76,7 +76,7 @@
           <input
             type="checkbox"
             class="toggle toggle-primary"
-            :checked="autoShowWordsWidth"
+            :checked="showWordsWidth"
             @change="toggleAutoWordsWidth"
           />
         </label>
@@ -128,10 +128,14 @@ import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
-const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+const {
+  pronunciation,
+  // 发音配置列表
+  getPronunciationOptions,
+  togglePronunciation,
+} = usePronunciation();
+const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-const { pronunciation, getPronunciationOptions, togglePronunciation } =
-  usePronunciation();
 const {
   showModal,
   shortcutKeys,
