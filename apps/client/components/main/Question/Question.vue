@@ -7,15 +7,8 @@
       >
         <div
           class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
-          :class="[
-            userInputWords[i]['isActive'] && focusing
-              ? 'text-fuchsia-500 border-b-fuchsia-500'
-              : userInputWords[i]?.['incorrect'] && focusing
-                ? 'text-red-500 border-b-red-500'
-                : 'text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400',
-            isShowWordsWidth() ? '' : 'min-w-28',
-          ]"
-          :style="isShowWordsWidth() ? { minWidth: `${inputWidth(w)}ch` } : {}"
+          :class="getWordsClassNames(i)"
+          :style="{ minWidth: `${inputWidth(w)}ch` }"
         >
           {{ userInputWords[i]["userInput"] }}
         </div>
@@ -69,6 +62,7 @@ const {
   submitAnswer,
   setInputValue,
   handleKeyboardInput,
+  isFixMode,
 } = useInput({
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
@@ -83,6 +77,23 @@ watch(
   }
 );
 
+function getWordsClassNames(index: number) {
+  const word = userInputWords[index];
+  // 当前单词激活 且 聚焦
+  if (word.isActive && focusing) {
+    return "text-fuchsia-500 border-b-fuchsia-500";
+  }
+
+  // 当前单词错误 且 聚焦
+  if (word.incorrect && focusing) {
+    // Fix 修复模式添加动画
+    return `text-red-500 border-b-red-500 ${isFixMode() && "animate-shake"}`;
+  }
+
+  // 默认样式
+  return "text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400";
+}
+
 function inputChangedCallback(e: KeyboardEvent) {
   if (isKeyboardSoundEnabled() && checkPlayTypingSound(e)) {
     playTypingSound();
@@ -91,6 +102,11 @@ function inputChangedCallback(e: KeyboardEvent) {
 
 // 输入宽度
 function inputWidth(word: string) {
+  if (!isShowWordsWidth()) {
+    // 不显示对应单词宽度，默认 4 字符宽度
+    return 4;
+  }
+
   // 单词宽度
   let width = 0;
 
