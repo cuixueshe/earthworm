@@ -103,12 +103,8 @@ const handleRegister = handleSubmit(async (values) => {
     ...values,
     phone: purePhoneNumber,
   };
-  try {
-    await signup(modifiedValues);
-    Message.success("register success!");
-    router.replace("/");
-  } catch (error) {
-    Message.error("register error!");
-  }
+  await signup(modifiedValues);
+  Message.success("register success!");
+  router.replace("/");
 });
 </script>

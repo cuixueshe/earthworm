@@ -74,12 +74,8 @@ const route = useRoute();
 const { login } = useAuth();
 
 const handleLogin = handleSubmit(async (values) => {
-  try {
-    await login(values);
-    Message.success("login success!");
-    router.replace(route.query.callback?.toString() || "/");
-  } catch (error) {
-    Message.error("register error!");
-  }
+  await login(values);
+  Message.success("login success!");
+  router.replace(route.query.callback?.toString() || "/");
 });
 </script>
