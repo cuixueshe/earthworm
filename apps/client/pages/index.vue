@@ -179,7 +179,7 @@
               class="mb-8 sm:break-inside-avoid"
             >
               <blockquote
-                class="rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-2xl bg-white dark:bg-gray-700 cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
+                class="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white dark:bg-gray-700 cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
               >
                 <div class="flex flex-col justify-between h-full p-6">
                   <div class="flex items-center gap-4">
@@ -226,7 +226,7 @@
                         />
                       </svg>
                       <span class="text-gray-500 dark:text-gray-400"
-                        >{{ item.like_count }} likes</span
+                        >{{ item.likeCount }} likes</span
                       >
                     </div>
                     <a
