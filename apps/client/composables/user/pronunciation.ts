@@ -34,7 +34,6 @@ export function usePronunciation() {
   }
 
   function getPronunciationType(): number {
-    console.log("get pronunciation type", pronunciation.value);
     return pronunciation.value === PronunciationType.American ? 0 : 1;
   }
 
