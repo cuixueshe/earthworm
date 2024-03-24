@@ -1,120 +1,148 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import {
+  DEFAULT_SHORTCUT_KEYS,
   SHORTCUT_KEYS,
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
-import { DEFAULT_SHORTCUT_KEYS } from "~/store/user";
 
-const SHORTCUT_KEY_TYPE = "sound";
-const testKey = {
-  ENTER: "Enter",
-  LETTER_A: "a",
-};
+describe("user defined shortcut key", () => {
+  const soundKey = "sound";
+  const answerKey = "answer";
 
-describe("set shortcut key", () => {
   beforeEach(() => {
+    const { handleCloseDialog } = useShortcutKeyMode();
+    handleCloseDialog();
     localStorage.clear();
   });
 
-  describe("initial the shortcut key data", () => {
-    it("should initial shortcut key data when localStorage doesn't have 'shortcutKeys' field", () => {
-      const { setShortcutKeys } = useShortcutKeyMode();
-      const shortcutKeysStr = JSON.stringify(DEFAULT_SHORTCUT_KEYS);
+  describe("shortcut key data", () => {
+    it("should be the default shortcut key data if localStorage no cache", () => {
+      const { shortcutKeys } = useShortcutKeyMode();
 
-      setShortcutKeys();
-
-      expect(localStorage.getItem(SHORTCUT_KEYS)).toBe(shortcutKeysStr);
+      expect(shortcutKeys.value).toEqual(DEFAULT_SHORTCUT_KEYS);
     });
 
-    it("should initial shortcut key data when localStorage has 'shortcutKeys' field", () => {
-      const { setShortcutKeys, shortcutKeys } = useShortcutKeyMode();
+    it("should be equal to cache data if localStorage has cache", () => {
       const storeShortcutKeys = {
-        sound: "a",
-        answer: "Ctrl+;",
+        sound: "Ctrl+s",
+        answer: "Ctrl+.",
       };
 
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(storeShortcutKeys));
-
-      setShortcutKeys();
+      const { shortcutKeys } = useShortcutKeyMode();
 
       expect(shortcutKeys.value).toEqual(storeShortcutKeys);
     });
   });
 
-  describe("open or close dialog", () => {
-    it("should open the dialog when click 'edit' button", () => {
-      const { handleEdit, showModal } = useShortcutKeyMode();
+  describe("shortcut dialog", () => {
+    it("should be false by default", () => {
+      const { showModal } = useShortcutKeyMode();
 
-      handleEdit(SHORTCUT_KEY_TYPE);
+      expect(showModal.value).toBeFalsy();
+    });
+
+    it("should be true when edit shortcut key", () => {
+      const { showModal, handleEdit } = useShortcutKeyMode();
+
+      handleEdit(soundKey);
 
       expect(showModal.value).toBeTruthy();
     });
 
-    it("should close the dialog when press 'Enter' key", () => {
+    it("should be close the dialog when press Enter key", () => {
       const { showModal, handleEdit, handleKeydown } = useShortcutKeyMode();
 
-      handleEdit(SHORTCUT_KEY_TYPE);
-      handleKeydown(keydown({ key: testKey.ENTER }));
+      handleEdit(soundKey);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
 
       expect(showModal.value).toBeFalsy();
     });
   });
 
-  describe("save shortcut key", () => {
-    it("should return when showModal is false", () => {
-      const { handleKeydown, showModal } = useShortcutKeyMode();
-
-      handleKeydown(keydown({ key: testKey.LETTER_A }));
+  describe("shortcut key set", () => {
+    it("should be the shortcut key set invalid when the dialog is not open", () => {
+      const { showModal, shortcutKeyStr, handleKeydown } = useShortcutKeyMode();
 
       expect(showModal.value).toBeFalsy();
+
+      // Ctrl+s
+      handleKeydown({
+        key: "s",
+        ctrlKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+
+      expect(shortcutKeyStr.value).toBe("");
     });
 
-    it("should store a single key to the localStorage", () => {
-      const { shortcutKeys, handleEdit, handleKeydown } = useShortcutKeyMode();
+    it("should be the shortcut key is changed when the dialog is open", () => {
+      const {
+        showModal,
+        shortcutKeyStr,
+        shortcutKeyTip,
+        handleEdit,
+        handleKeydown,
+      } = useShortcutKeyMode();
 
-      handleEdit(SHORTCUT_KEY_TYPE);
+      handleEdit(soundKey); // open dialog
 
-      handleKeydown(keydown({ key: testKey.LETTER_A }));
-      handleKeydown(keydown({ key: testKey.ENTER }));
+      expect(showModal.value).toBeTruthy();
 
-      expect(shortcutKeys.value[SHORTCUT_KEY_TYPE]).toBe(testKey.LETTER_A);
-      expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
-        `"{"sound":"a","answer":"Ctrl+;"}"`
-      );
+      handleKeydown({
+        key: "s",
+        ctrlKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+
+      expect(shortcutKeyStr.value).toEqual("Ctrl+s");
+      expect(shortcutKeyTip.value).toEqual("Ctrl 加上 s");
     });
 
-    it("should store key combination to the localStorage", () => {
-      const { handleEdit, handleKeydown, shortcutKeys } = useShortcutKeyMode();
+    it("should be the shortcut key is set successfully when the dialog is open (single key)", () => {
+      const { showModal, shortcutKeys, handleEdit, handleKeydown } =
+        useShortcutKeyMode();
 
-      handleEdit(SHORTCUT_KEY_TYPE);
-      handleKeydown(keydown({ key: testKey.LETTER_A, ctrlKey: true }));
-      handleKeydown(keydown({ key: testKey.ENTER }));
+      handleEdit(soundKey);
 
-      expect(shortcutKeys.value[SHORTCUT_KEY_TYPE]).toBe("Ctrl+a");
-      expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
-        `"{"sound":"Ctrl+a","answer":"Ctrl+;"}"`
-      );
-    });
-  });
+      expect(showModal.value).toBeTruthy();
 
-  describe("tip", () => {
-    it("should return key combination tip", () => {
-      const { shortcutKeyStr, shortcutKeyTip } = useShortcutKeyMode();
+      handleKeydown({
+        key: "Tab",
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
 
-      shortcutKeyStr.value = `Ctrl+${testKey.LETTER_A}`;
-
-      expect(shortcutKeyTip.value).toBe(`Ctrl 加上 ${testKey.LETTER_A}`);
+      expect(showModal.value).toBeFalsy();
+      expect(shortcutKeys.value).toMatchObject({ [soundKey]: "Tab" });
     });
 
-    it("should return single key tip", () => {
-      const { shortcutKeyStr, shortcutKeyTip } = useShortcutKeyMode();
-      shortcutKeyStr.value = testKey.LETTER_A;
+    it("should be the shortcut key is set successfully when the dialog is open (combination key)", () => {
+      const { showModal, shortcutKeys, handleEdit, handleKeydown } =
+        useShortcutKeyMode();
 
-      expect(shortcutKeyTip.value).toBe(testKey.LETTER_A);
+      handleEdit(answerKey);
+
+      expect(showModal.value).toBeTruthy();
+
+      handleKeydown({
+        key: "s",
+        ctrlKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
+
+      expect(showModal.value).toBeFalsy();
+      expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Ctrl+s" });
     });
   });
 });
-
-function keydown(eventInitDict?: KeyboardEventInit | undefined) {
-  return new KeyboardEvent("keydown", eventInitDict);
-}
