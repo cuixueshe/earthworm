@@ -29,9 +29,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "engines": {
-    "node": ">=20.11.0"
-  },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "conventional-changelog-cli": "^4.1.0",
