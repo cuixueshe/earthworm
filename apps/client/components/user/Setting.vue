@@ -57,6 +57,17 @@
       </div>
       <div class="form-control w-80">
         <label class="cursor-pointer label">
+          <span class="label-text">切换键盘打字音效</span>
+          <n-select
+            v-model:value="activeKeyboardSound"
+            :options="getTypingSoundList()"
+            :on-update-value="toggleActiveKeyboardSound"
+            class="w-[90px]"
+          />
+        </label>
+      </div>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
           <span class="label-text">自动播放声音（答案页面）</span>
           <input
             type="checkbox"
@@ -131,17 +142,20 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { getTypingSoundList } from "~/assets/choceTyping";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
-  useAutoPronunciation,
-  useKeyboardSound,
+useActiveKeyboardSound,
+useAutoPronunciation,
+useKeyboardSound
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
+const {activeKeyboardSound,toggleActiveKeyboardSound} = useActiveKeyboardSound()
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {
   pronunciation,

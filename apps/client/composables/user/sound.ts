@@ -1,7 +1,8 @@
-import { useLocalStorageBoolean } from "~/utils/localStorage";
+import { LocalStorageSound, useLocalStorageBoolean } from "~/utils/localStorage";
 
 export const AUTO_PRONUNCIATION = "autoPronunciation";
 export const KEYBOARD_SOUND_KEY = "keyboardSoundEnabled";
+export const ACTIVE_KEYBOARD_SOUND = "activeKeyboardSound";
 
 export function useAutoPronunciation() {
   const {
@@ -32,5 +33,20 @@ export function useKeyboardSound() {
     isKeyboardSoundEnabled,
     toggleKeyboardSound,
     removeKeyboardSound,
+  };
+}
+export function useActiveKeyboardSound(value: string = "默认音效") {
+  const {
+    value: activeKeyboardSound,
+    isTrue: isActiveKeyboardSound,
+    toggle: toggleActiveKeyboardSound,
+    remove: removeActiveKeyboardSound,
+  } = LocalStorageSound(ACTIVE_KEYBOARD_SOUND, value); // 默认开启
+
+  return {
+    activeKeyboardSound,
+    isActiveKeyboardSound,
+    toggleActiveKeyboardSound,
+    removeActiveKeyboardSound,
   };
 }
