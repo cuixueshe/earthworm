@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1707114440911,
-      "tag": "0000_rich_proteus",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1711098938912,
-      "tag": "0001_colossal_lilandra",
+      "when": 1711263843044,
+      "tag": "0000_calm_thunderbolt_ross",
       "breakpoints": true
     }
   ]
