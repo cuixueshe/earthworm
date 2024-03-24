@@ -1,11 +1,14 @@
+import * as dotenv from "dotenv";
 import type { Config } from "drizzle-kit";
+import path from "path";
+
+dotenv.config({ path: path.resolve(__dirname, "../../apps/api/.env") });
 
 export default {
-  schema: "../../libs/shared/src/schema/*",
+  schema: "../schema/src/schema/*",
   out: "./drizzle",
   driver: "mysql2",
   dbCredentials: {
-    uri: "mysql://root:password@localhost:3307/earthworm_test",
+    uri: process.env.TEST_DATABASE_URL || "",
   },
-  strict: true,
 } satisfies Config;
