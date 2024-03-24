@@ -1,8 +1,8 @@
-import { Injectable, Inject } from '@nestjs/common';
-import { DB, DbType } from '../global/providers/db.provider';
-import { courseHistory } from '@earthworm/shared';
-import { eq, and } from 'drizzle-orm';
+import { courseHistory } from '@earthworm/schema';
+import { Inject, Injectable } from '@nestjs/common';
+import { and, eq } from 'drizzle-orm';
 import { UserEntity } from 'src/user/user.decorators';
+import { DB, DbType } from '../global/providers/db.provider';
 
 @Injectable()
 export class CourseHistoryService {

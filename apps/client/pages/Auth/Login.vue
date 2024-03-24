@@ -62,7 +62,7 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
-import Message from "~/components/main/Message/Message";
+import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
@@ -74,12 +74,8 @@ const route = useRoute();
 const { login } = useAuth();
 
 const handleLogin = handleSubmit(async (values) => {
-  try {
-    await login(values);
-    Message.success("login success!");
-    router.replace(route.query.callback?.toString() || "/");
-  } catch (error) {
-    Message.error("register error!");
-  }
+  await login(values);
+  Message.success("login success!");
+  router.replace(route.query.callback?.toString() || "/");
 });
 </script>

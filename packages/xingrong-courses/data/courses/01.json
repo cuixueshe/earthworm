@@ -1,0 +1,1092 @@
+[
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "喜欢",
+		"english": "like",
+		"soundmark": "/laɪk/"
+	},
+	{
+		"chinese": "我喜欢",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
+	},
+	{
+		"chinese": "这个食物",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"chinese": "我喜欢这个食物",
+		"english": "I like the food",
+		"soundmark": "/aɪ/ /laɪk/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "不",
+		"english": "don't",
+		"soundmark": "/dont/"
+	},
+	{
+		"chinese": "喜欢",
+		"english": "like",
+		"soundmark": "/laɪk/"
+	},
+	{
+		"chinese": "不喜欢",
+		"english": "don't like",
+		"soundmark": "/dont/ /laɪk/"
+	},
+	{
+		"chinese": "我不喜欢这个食物",
+		"english": "I don't like the food",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "它；这件事情",
+		"english": "it",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我喜欢",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
+	},
+	{
+		"chinese": "我喜欢做这件事情",
+		"english": "I like to do it",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "不喜欢",
+		"english": "don't like",
+		"soundmark": "/dont/ /laɪk/"
+	},
+	{
+		"chinese": "我不喜欢做这件事情",
+		"english": "I don't like to do it",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我喜欢现在做这件事情",
+		"english": "I like to do it now",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "我不喜欢现在做这件事情",
+		"english": "I don't like to do it now",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我喜欢",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
+	},
+	{
+		"chinese": "我喜欢在这里",
+		"english": "I like to be here",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "不喜欢",
+		"english": "don't like",
+		"soundmark": "/dont/ /laɪk/"
+	},
+	{
+		"chinese": "我不喜欢在这里",
+		"english": "I don't like to be here",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我不喜欢现在在这里",
+		"english": "I don't like to be here now",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /bi/ /hɪr/ /naʊ/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我想要做这件事情",
+		"english": "I want to do it",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "不想",
+		"english": "don't want",
+		"soundmark": "/dont/ /wɑnt/"
+	},
+	{
+		"chinese": "我不想做这件事情",
+		"english": "I don't want to do it",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "我今天想要做这件事情",
+		"english": "I want to do it today",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "我今天不想做这件事情",
+		"english": "I don't want to do it today",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我现在不想做这件事情",
+		"english": "I don't want to do it now",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "这个食物",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "我想要吃这个食物",
+		"english": "I want to eat the food",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我现在想要吃这个食物",
+		"english": "I want to eat the food now",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "不想",
+		"english": "don't want",
+		"soundmark": "/dont/ /wɑnt/"
+	},
+	{
+		"chinese": "我现在不想吃这个食物",
+		"english": "I don't want to eat the food now",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我想要在这里",
+		"english": "I want to be here",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我不想在这里",
+		"english": "I don't want to be here",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我想要每天在这里",
+		"english": "I want to be here every day",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我不想每天在这里",
+		"english": "I don't want to be here every day",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "一整天",
+		"english": "all the day",
+		"soundmark": "/ɔl/ /ðə/ /de/"
+	},
+	{
+		"chinese": "我不想一整天在这里",
+		"english": "I don't want to be here all the day",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /ɔl/ /ðə/ /de/"
+	},
+	{
+		"chinese": "需要",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我需要在这里",
+		"english": "I need to be here",
+		"soundmark": "/aɪ/ /nid/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我不需要在这里",
+		"english": "I don't need to be here",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我需要每天在这里",
+		"english": "I need to be here every day",
+		"soundmark": "/aɪ/ /nid/ /tə/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我不需要每天在这里",
+		"english": "I don't need to be here every day",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /bi/ /hɪr/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我需要吃这个食物",
+		"english": "I need to eat the food",
+		"soundmark": "/aɪ/ /nid/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我现在需要吃这个食物",
+		"english": "I need to eat the food now",
+		"soundmark": "/aɪ/ /nid/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "我现在不需要吃这个食物",
+		"english": "I don't need to eat the food now",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"chinese": "它；这件事情",
+		"english": "it",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我需要做这件事情",
+		"english": "I need to do it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "我今天需要做这件事情",
+		"english": "I need to do it today",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "我今天不需要做这件事情",
+		"english": "I don't need to do it today",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "必须做",
+		"english": "have to do",
+		"soundmark": "/hæv/ /tə/ /du/"
+	},
+	{
+		"chinese": "我必须做这件事情",
+		"english": "I have to do it",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我今天必须做这件事情",
+		"english": "I have to do it today",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "我现在必须做这件事情",
+		"english": "I have to do it now",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "不必做",
+		"english": "don't have to do",
+		"soundmark": "/dont/ /hæv/ /tə/ /du/"
+	},
+	{
+		"chinese": "我不必做这件事情",
+		"english": "I don't have to do it",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我现在不必做这件事情",
+		"english": "I don't have to do it now",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "我不必每天做这件事情",
+		"english": "I don't have to do it every day",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "一整天",
+		"english": "all the day",
+		"soundmark": "/ɔl/ /ðə/ /de/"
+	},
+	{
+		"chinese": "我不必一整天做这件事情",
+		"english": "I don't have to do it all the day",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /ɔl/ /ðə/ /de/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我必须吃这个食物",
+		"english": "I have to eat the food",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我不必吃这个食物",
+		"english": "I don't have to eat the food",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "我今天不必吃这个食物",
+		"english": "I don't have to eat the food today",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /it/ /ðə/ /fud/ /tə'de/"
+	},
+	{
+		"chinese": "明天",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"chinese": "我明天必须吃这个食物",
+		"english": "I have to eat the food tomorrow",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /it/ /ðə/ /fud/ /tə'mɔro/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我必须在这里",
+		"english": "I have to be here",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "我今天必须在这里",
+		"english": "I have to be here today",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /bi/ /hɪr/ /tə'de/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我喜欢",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
+	},
+	{
+		"chinese": "我喜欢做这件事情",
+		"english": "I like to do it",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"chinese": "我想要做这件事情",
+		"english": "I want to do it",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"chinese": "我需要做这件事情",
+		"english": "I need to do it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我必须做这件事情",
+		"english": "I have to do it",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "知道；认识",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "认识你",
+		"english": "to know you",
+		"soundmark": "/tə/ /no/ /ju/"
+	},
+	{
+		"chinese": "我想要认识你",
+		"english": "I want to know you",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ju/"
+	},
+	{
+		"chinese": "尽快",
+		"english": "soon",
+		"soundmark": "/sun/"
+	},
+	{
+		"chinese": "我想要尽快认识你",
+		"english": "I want to know you soon",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ju/ /sun/"
+	},
+	{
+		"chinese": "见到",
+		"english": "to see",
+		"soundmark": "/tə/ /si/"
+	},
+	{
+		"chinese": "见到你",
+		"english": "to see you",
+		"soundmark": "/tə/ /si/ /ju/"
+	},
+	{
+		"chinese": "我必须见到你",
+		"english": "I have to see you",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /si/ /ju/"
+	},
+	{
+		"chinese": "今晚",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"chinese": "我今晚必须见到你",
+		"english": "I have to see you tonight",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /si/ /ju/ /tə'naɪt/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "告诉你",
+		"english": "to tell you",
+		"soundmark": "/tə/ /tɛl/ /ju/"
+	},
+	{
+		"chinese": "我需要告诉你",
+		"english": "I need to tell you",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/"
+	},
+	{
+		"chinese": "某物；某些事情",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "重要的某些事情",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我需要告诉你某些事情",
+		"english": "I need to tell you something",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "我需要告诉你重要的某些事情",
+		"english": "I need to tell you something important",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它；这件事情",
+		"english": "it",
+		"soundmark": "/ɪt/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "它是非常重要的",
+		"english": "It is very important",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "对我来说",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"chinese": "对我来说它是重要的",
+		"english": "It is important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "对我来说它是非常重要的",
+		"english": "It is very important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "做这件事情（它）是重要的",
+		"english": "It is important to do it",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "在这里；来到这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "来到这里（它）是重要的",
+		"english": "It is important to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "吃这个食物",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "吃这个食物（它）是重要的",
+		"english": "It is important to eat the food",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "不可能的",
+		"english": "impossible",
+		"soundmark": "/ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "它是不可能的",
+		"english": "It is impossible",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "做这件事情",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "做这件事情（它）是不可能的",
+		"english": "It is impossible to do it",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "现在做这件事情（它）是不可能的",
+		"english": "It is impossible to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "对我来说",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"chinese": "对我来说它是不可能的",
+		"english": "It is impossible for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "好的",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"chinese": "它是好的",
+		"english": "It is good",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/"
+	},
+	{
+		"chinese": "在这里；来到这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "来到这里（它）是好的",
+		"english": "It is good to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "来到这里（它）是非常好的",
+		"english": "It is very good to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɡʊd/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "见到你",
+		"english": "to see you",
+		"soundmark": "/tə/ /si/ /ju/"
+	},
+	{
+		"chinese": "见到你（它）是非常好的",
+		"english": "It is very good to see you",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɡʊd/ /tə/ /si/ /ju/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "每天见到你（它）是非常好的",
+		"english": "It is very good to see you every day",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɡʊd/ /tə/ /si/ /ju/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "可能的",
+		"english": "possible",
+		"soundmark": "/'pɑsəbl/"
+	},
+	{
+		"chinese": "它是可能的",
+		"english": "It is possible",
+		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "见到你",
+		"english": "to see you",
+		"soundmark": "/tə/ /si/ /ju/"
+	},
+	{
+		"chinese": "见到你（它）是可能的",
+		"english": "It is possible to see you",
+		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /si/ /ju/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "每天见到你（它）是可能的",
+		"english": "It is possible to see you every day",
+		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /si/ /ju/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "不可能的",
+		"english": "impossible",
+		"soundmark": "/ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "每天见到你（它）是不可能的",
+		"english": "It is impossible to see you every day",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /si/ /ju/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "知道；认识",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "我想要知道",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"chinese": "是否",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "我想要知道是否它是可能的",
+		"english": "I want to know if it is possible",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /'pɑsəbl/"
+	},
+	{
+		"chinese": "它是重要的",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我想要知道是否它是重要的",
+		"english": "I want to know if it is important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "对我来说",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"chinese": "对我来说它是重要的",
+		"english": "It is important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "必须做",
+		"english": "have to do",
+		"soundmark": "/hæv/ /tə/ /du/"
+	},
+	{
+		"chinese": "我必须做这件事情",
+		"english": "I have to do it",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "我今天必须做这件事情",
+		"english": "I have to do it today",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "它是重要的对我来说所以我必须做这件事",
+		"english": "It is important for me so I have to do it",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "它是重要的对我来说所以我今天必须做这件事",
+		"english": "It is important for me so I have to do it today",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"chinese": "它是重要的对我来说所以我必须每天做这件事",
+		"english": "It is important for me so I have to do it every day",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "它是非常重要的对我来说所以我必须每天做这件事",
+		"english": "It is very important for me so I have to do it every day",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "它是非常重要的对我来说所以我必须现在做这件事",
+		"english": "It is very important for me so I have to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "不重要的",
+		"english": "not important",
+		"soundmark": "/nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是不重要的",
+		"english": "It is not important",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "它是不重要的对我来说",
+		"english": "It is not important for me",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "不必做",
+		"english": "don't have to do",
+		"soundmark": "/dont/ /hæv/ /tə/ /du/"
+	},
+	{
+		"chinese": "我不必做这件事情",
+		"english": "I don't have to do it",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "我现在不必做这件事情",
+		"english": "I don't have to do it now",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "所以",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"chinese": "它不是重要的对我来说所以我不必现在做这件事情",
+		"english": "It is not important for me so I don't have to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "我喜欢吃这个食物",
+		"english": "I like to eat the food",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"chinese": "我想要今天做这件事",
+		"english": "I want to do it today",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"chinese": "我需要告诉你重要的某些事情",
+		"english": "I need to tell you something important",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "我必须尽快认识你",
+		"english": "I have to know you soon",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ju/ /sun/"
+	},
+	{
+		"chinese": "来到这里（它）是好的",
+		"english": "It is good to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "它是重要的对我来说",
+		"english": "It is important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "现在做这件事情（它）是不可能的",
+		"english": "It is impossible to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"chinese": "喜欢做",
+		"english": "like to do",
+		"soundmark": "/laɪk/ /tə/ /du/"
+	},
+	{
+		"chinese": "需要做",
+		"english": "need to do",
+		"soundmark": "/nid/ /tə/ /du/"
+	},
+	{
+		"chinese": "想要做",
+		"english": "want to do",
+		"soundmark": "/wɑnt/ /tə/ /du/"
+	},
+	{
+		"chinese": "必须做",
+		"english": "have to do",
+		"soundmark": "/hæv/ /tə/ /du/"
+	},
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "知道；认识",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"chinese": "在这里",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"chinese": "见到",
+		"english": "to see",
+		"soundmark": "/tə/ /si/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "某物；某些事情",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"chinese": "好的",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"chinese": "可能的",
+		"english": "possible",
+		"soundmark": "/'pɑsəbl/"
+	},
+	{
+		"chinese": "不可能的",
+		"english": "impossible",
+		"soundmark": "/ɪm'pɑsəbl/"
+	},
+	{
+		"chinese": "重要的",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"chinese": "这个食物",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"chinese": "这里",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"chinese": "今天",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"chinese": "现在",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"chinese": "每天",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	}
+]

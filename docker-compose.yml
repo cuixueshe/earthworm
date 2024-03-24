@@ -19,6 +19,13 @@ services:
       - data:/var/lib/redis
     ports:
       - 6379:6379
+  testRedis:
+    image: redis:5-alpine
+    restart: always
+    volumes:
+      - data:/var/lib/redis
+    ports:
+      - 6380:6379
   testdb:
     image: mysql:8.3.0
     environment:

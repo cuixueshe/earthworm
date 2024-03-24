@@ -18,8 +18,18 @@
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.soundmark }}
     </div>
-    <button class="btn-item" @click="showQuestion">again</button>
-    <button class="ml-5 btn-item" @click="goToNextQuestion">next</button>
+    <button
+      class="btn-item"
+      @click="showQuestion"
+    >
+      again
+    </button>
+    <button
+      class="ml-5 btn-item"
+      @click="goToNextQuestion"
+    >
+      next
+    </button>
   </div>
 </template>
 
@@ -28,7 +38,7 @@ import { onMounted, onUnmounted } from "vue";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
-import { useAutoSound } from "~/composables/user/sound";
+import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
@@ -37,7 +47,7 @@ registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
-const { isAutoPlaySound } = useAutoSound();
+const { isAutoPlaySound } = useAutoPronunciation();
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();

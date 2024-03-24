@@ -1,16 +1,16 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { AppModule } from '../../app/app.module';
+import { course, statement } from '@earthworm/schema';
 import { INestApplication } from '@nestjs/common';
-import { cleanDB, signup } from '../../../test/helper/utils';
-import { DbType, DB } from '../../global/providers/db.provider';
+import { Test, TestingModule } from '@nestjs/testing';
+import * as request from 'supertest';
 import {
   createFirstCourse,
   createSecondCourse,
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
-import { course, statement } from '@earthworm/shared';
+import { cleanDB, signup } from '../../../test/helper/utils';
+import { AppModule } from '../../app/app.module';
 import { endDB } from '../../common/db';
-import * as request from 'supertest';
+import { DB, DbType } from '../../global/providers/db.provider';
 
 const firstCourse = createFirstCourse();
 

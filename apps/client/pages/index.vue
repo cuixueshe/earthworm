@@ -3,6 +3,7 @@
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
+
     <template v-else>
       <section class="w-full">
         <div
@@ -202,8 +203,88 @@
         <div class="w-1/2"></div>
         <div class="w-1/2"></div>
       </section>
-      <section class="flex flex-col py-8">
-        <h2 class="text-4xl text-center">Why Earthworm?</h2>
+      <section class="flex flex-col py-4">
+        <div class="mx-auto max-w-screen-xl py-8 sm:px-6 lg:px-8 lg:py-12">
+          <h2
+            class="text-center text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 dark:text-white mb-4"
+          >
+            User feedback
+          </h2>
+          <p class="text-center text-lg mb-6 text-gray-600 dark:text-gray-400">
+            If you're using Earthworm, feel free to give us your feedback on
+            Twitter.
+          </p>
+          <div class="mt-8 sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
+            <div
+              v-for="(item, index) in CommentsList"
+              :key="index"
+              class="mb-8 sm:break-inside-avoid"
+            >
+              <blockquote
+                class="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white dark:bg-gray-700 cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
+              >
+                <div class="flex flex-col justify-between h-full p-6">
+                  <div class="flex items-center gap-4">
+                    <img
+                      :src="item.avatar"
+                      alt=""
+                      class="h-14 w-14 rounded-full object-cover border-2 border-purple-400 p-1"
+                    />
+                    <div class="flex-grow">
+                      <p
+                        class="mt-0.5 text-lg font-bold text-gray-900 dark:text-white"
+                      >
+                        {{ item.nickname }}
+                      </p>
+                      <p class="text-xs text-gray-500">
+                        {{ "@" + item.account }}
+                      </p>
+                    </div>
+                    <img
+                      width="30"
+                      :src="item.icon"
+                      class="self-start"
+                    />
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-300">
+                    {{ item.comment }}
+                  </p>
+                  <div class="flex items-center justify-between my-2">
+                    <div class="text-gray-500 text-xs">
+                      {{ formatTimestamp({ timestamp: item.time }) }}
+                    </div>
+                  </div>
+                  <div
+                    class=" mx-auto my-4"
+                  ></div>
+                  <div class="flex items-center justify-between text-xs mt-4">
+                    <div class="flex items-center">
+                      <svg
+                        class="w-5 h-5 mr-2 fill-current text-pink-300 dark:text-blue-300"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                        />
+                      </svg>
+                      <span class="text-gray-500 dark:text-gray-400"
+                        >{{ item.likeCount }} likes</span
+                      >
+                    </div>
+                    <a
+                      :href="item.link"
+                      class="text-blue-500 dark:text-blue-400"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      style="pointer-events: none"
+                      >See {{ item.account }}'s</a
+                    >
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
       </section>
     </template>
 
@@ -222,6 +303,8 @@ import { useRouter } from "vue-router";
 
 import Loading from "~/components/Loading.vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+import CommentsList from "~/assets/comments";
+import { formatTimestamp, type Timestamp } from "~/utils/date";
 
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";

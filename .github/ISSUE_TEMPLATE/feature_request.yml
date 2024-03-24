@@ -44,10 +44,10 @@ body:
       placeholder: |
         You can drag your video or image files inside of this editor ↓
   - type: textarea
-  id: additional-context
-  attributes:
-    label: Additional context
-    description: Any additional information or context about the feature request. For example, any related issues, external references, or previous discussions.
-    placeholder: Provide any additional information that might be helpful.
-  validations:
-    required: false
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any additional information or context about the feature request. For example, any related issues, external references, or previous discussions.
+      placeholder: Provide any additional information that might be helpful.
+    validations:
+      required: false
