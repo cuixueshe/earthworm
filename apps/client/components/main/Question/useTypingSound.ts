@@ -40,8 +40,8 @@ export function useTypingSound() {
   }
 
   async function loadAudioBuffer(url: string) {
-    console.log(url,'这是音频路径');
-  
+    console.log(url, "这是音频路径");
+
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
     // 使用 decodeAudioData 方法处理 arrayBuffer

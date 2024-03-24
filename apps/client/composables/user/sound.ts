@@ -1,4 +1,7 @@
-import { LocalStorageSound, useLocalStorageBoolean } from "~/utils/localStorage";
+import {
+  LocalStorageSound,
+  useLocalStorageBoolean,
+} from "~/utils/localStorage";
 
 export const AUTO_PRONUNCIATION = "autoPronunciation";
 export const KEYBOARD_SOUND_KEY = "keyboardSoundEnabled";

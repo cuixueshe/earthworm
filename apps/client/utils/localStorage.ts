@@ -21,7 +21,7 @@ export function useLocalStorageBoolean(
     valueRef.value = value;
     localStorage.setItem(key, String(value));
   }
- 
+
   function remove() {
     localStorage.removeItem(key);
   }
@@ -44,17 +44,14 @@ export function useLocalStorageBoolean(
   };
 }
 
-export function LocalStorageSound(
-  key: string,
-  defaultValue: string = "默认"
-){
-   const valueRef = ref(defaultValue);
+export function LocalStorageSound(key: string, defaultValue: string = "默认") {
+  const valueRef = ref(defaultValue);
 
-   function loadCache() {
+  function loadCache() {
     const storedValue = localStorage.getItem(key);
     // 如果 localStorage 中有值才进行校验，则使用该值
     if (storedValue !== null) {
-      valueRef.value = storedValue ;
+      valueRef.value = storedValue;
     }
     update(valueRef.value);
   }
@@ -62,15 +59,11 @@ export function LocalStorageSound(
     valueRef.value = value;
     localStorage.setItem(key, String(value));
   }
-  function toggle(soundType:string){
-    update(soundType); 
+  function toggle(soundType: string) {
+    update(soundType);
   }
-  function remove(){
-
-  }
-  function isTrue(){
-
-  }
+  function remove() {}
+  function isTrue() {}
   loadCache();
 
   return {
