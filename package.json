@@ -5,6 +5,7 @@
   "packageManager": "pnpm@8.15.5",
   "main": "index.js",
   "scripts": {
+    "prepare": "simple-git-hooks",
     "schema:build": "pnpm -F @earthworm/schema build",
     "db:init": "pnpm schema:build && pnpm -F @earthworm/db run init",
     "db:init:test": "pnpm -F @earthworm/db run init:test",
@@ -20,12 +21,11 @@
     "build:serve": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
     "prod:serve": "pnpm -F api start:prod:pm",
+    "format": "prettier --write --cache .",
+    "format-check": "prettier --check --cache .",
     "test": "pnpm -F api test && pnpm -F client test",
     "test:ci": "pnpm -F api test && pnpm -F client test:ci",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
-  },
-  "simple-git-hooks": {
-    "commit-msg": "npx tsx ./scripts/verify-commit.ts"
   },
   "keywords": [],
   "author": "",
@@ -34,11 +34,14 @@
     "node": ">=20.11.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@types/node": "^20.11.0",
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
     "lint-staged": "^15.2.2",
-    "simple-git-hooks": "^2.9.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "0.5.13",
+    "simple-git-hooks": "2.11.1",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
