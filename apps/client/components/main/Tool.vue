@@ -82,10 +82,7 @@
       </svg>
     </div>
     <div @click="rankModal.show" class="link-item">排行榜</div>
-    <div
-      class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
-      :style="{ width: currentPercentage + '%' }"
-    ></div>
+    <Progress :currentPercentage="currentPercentage"></Progress>
   </div>
   <ProgressRank></ProgressRank>
   <MessageBox
@@ -99,6 +96,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+import Progress from '~/components/main/Progress.vue';
 import ProgressRank from "~/components/rank/ProgressRank.vue";
 import { useGameMode } from "~/composables/main/game";
 import { useRankModal } from "~/composables/rank/modal";
@@ -116,7 +114,7 @@ const currentPercentage = computed(() => {
   if (courseStore.isAllDone()) {
     return 100;
   }
-  return (
+  return +(
     (courseStore.statementIndex / courseStore.totalQuestionsCount) *
     100
   ).toFixed(2);

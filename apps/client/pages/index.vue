@@ -206,45 +206,28 @@
         <h2 class="text-4xl text-center">Why Earthworm?</h2>
       </section>
     </template>
-
-    <MessageBox
-      v-model:is-show-modal="showMobileTip"
-      content="The app isn't mobile-friendly, so stay tuned!"
-      cancel-btn-text="fine"
-      confirm-btn-text=""
-    ></MessageBox>
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
-
 import Loading from "~/components/Loading.vue";
-import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import { isMobileSystem } from "~/utils/system";
 
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
 
-const { showMobileTip } = useMonitorSystem();
+useMonitorSystem();
 
 function useMonitorSystem() {
-  const showMobileTip = ref(false);
+  const router = useRouter();
 
-  function mobileSystem() {
-    return "ontouchstart" in document.documentElement;
+  if(isMobileSystem()) {
+    router.push("/MIndex");
   }
-
-  onMounted(() => {
-    showMobileTip.value = mobileSystem();
-  });
-
-  return {
-    showMobileTip,
-  };
 }
 
 function useShortcutToGame() {

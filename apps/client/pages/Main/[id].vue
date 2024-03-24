@@ -4,8 +4,11 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <Tool></Tool>
-      <Game></Game>
+      <MGame v-if="isMobileSystem()"></MGame>
+      <template v-else>
+        <Tool></Tool>
+        <Game></Game>
+      </template>
     </template>
   </div>
 </template>
@@ -14,11 +17,13 @@
 import { definePageMeta } from "#imports";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
-import Loading from "~/components/Loading.vue";
-import Game from "~/components/main/Game.vue";
-import Tool from "~/components/main/Tool.vue";
+import Loading from '~/components/Loading.vue';
+import MGame from '~/components/mMain/MGame.vue';
+import Game from '~/components/main/Game.vue';
+import Tool from '~/components/main/Tool.vue';
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
+import { isMobileSystem } from "~/utils/system";
 
 definePageMeta({
   middleware: "auth",

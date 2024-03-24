@@ -47,10 +47,8 @@
         </div>
         <div className="modal-action">
           <button class="btn btn-primary" @click="toShare">生成打卡图</button>
-          <button class="btn" @click="handleDoAgain">再来一次</button>
-          <button class="btn" @click="handleGoToNextCourse">
-            开始下一课<kbd class="kbd"> ↵ </kbd>
-          </button>
+          <button class="btn" v-if="!isMobileSystem()" @click="handleDoAgain">再来一次</button>
+          <button class="btn" @click="handleGoToNextCourse">开始下一课<kbd class="kbd"> ↵ </kbd></button>
         </div>
       </div>
       <canvas
@@ -73,7 +71,8 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import { cancelShortcut, registerShortcut } from '~/utils/keyboardShortcuts';
+import { isMobileSystem } from "~/utils/system";
 
 let nextCourseId = 1;
 const courseStore = useCourseStore();

@@ -1,7 +1,7 @@
 <template>
   <n-message-provider>
     <n-config-provider :theme="theme">
-      <NuxtLayout>
+      <NuxtLayout :name="layout">
         <HttpErrorProvider>
           <NuxtPage />
         </HttpErrorProvider>
@@ -16,8 +16,11 @@ import { useUserStore } from "~/store/user";
 import { darkTheme, lightTheme } from "naive-ui";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { computed, onMounted } from "vue";
+import { isMobileSystem } from "./utils/system";
 
 useRestoreUser();
+
+const layout = isMobileSystem() ? "m-layout" : 'default';
 
 const { initDarkMode, darkMode } = useDarkMode();
 

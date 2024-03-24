@@ -110,7 +110,6 @@ export function useInput({
 
   function updateActiveWord(position: number) {
     resetAllWordActive();
-
     for (let i = 0; i < userInputWords.length; i++) {
       const word = userInputWords[i];
       if (position >= word.start && position <= word.end) {
