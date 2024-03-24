@@ -1,7 +1,7 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { CourseHistoryService } from './course-history.service';
 import { AuthGuard } from '../auth/auth.guard';
 import { User, UserEntity } from '../user/user.decorators';
+import { CourseHistoryService } from './course-history.service';
 
 @Controller('course-history')
 export class CourseHistoryController {

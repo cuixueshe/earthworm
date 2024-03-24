@@ -4,11 +4,11 @@ import {
   Injectable,
   UnauthorizedException,
 } from '@nestjs/common';
-import { UserService } from '../user/user.service';
 import { JwtService } from '@nestjs/jwt';
-import { SignDto } from './model/auth.dto';
 import * as argon2 from 'argon2';
 import { CreateUserDto } from '../user/model/user.dto';
+import { UserService } from '../user/user.service';
+import { SignDto } from './model/auth.dto';
 
 @Injectable()
 export class AuthService {

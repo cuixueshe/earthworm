@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
-import { CourseService } from './course.service';
 import { AuthGuard } from '../auth/auth.guard';
 import { User, UserEntity } from '../user/user.decorators';
+import { CourseService } from './course.service';
 
 @Controller('courses')
 export class CourseController {

@@ -1,7 +1,7 @@
-import { Controller, Get, Param, Query, UseGuards } from '@nestjs/common';
-import { RankService } from './rank.service';
-import { User, UserEntity } from '../user/user.decorators';
+import { Controller, Get, UseGuards } from '@nestjs/common';
 import { AuthGuard, UncheckAuth } from '../auth/auth.guard';
+import { User, UserEntity } from '../user/user.decorators';
+import { RankService } from './rank.service';
 
 @Controller('rank')
 export class RankController {

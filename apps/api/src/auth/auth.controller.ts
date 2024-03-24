@@ -1,17 +1,15 @@
 import {
-  Controller,
-  Post,
   Body,
+  Controller,
   Get,
-  UseGuards,
-  Request,
-  HttpException,
+  Post,
+  UseGuards
 } from '@nestjs/common';
-import { SignDto } from './model/auth.dto';
-import { AuthService } from './auth.service';
-import { AuthGuard } from './auth.guard';
 import { CreateUserDto } from '../user/model/user.dto';
-import { UserEntity, User } from '../user/user.decorators';
+import { User, UserEntity } from '../user/user.decorators';
+import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
+import { SignDto } from './model/auth.dto';
 
 @Controller('auth')
 export class AuthController {
