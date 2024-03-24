@@ -1,8 +1,8 @@
 import { Controller, Get, Query, UseGuards } from '@nestjs/common';
-import { UserLearnRecordService } from './user-learn-record.service';
-import { User, UserEntity } from '../user/user.decorators';
 import { AuthGuard } from '../auth/auth.guard';
+import { User, UserEntity } from '../user/user.decorators';
 import { GetUserLearnRecordDto } from './model/user-learn-record.dto';
+import { UserLearnRecordService } from './user-learn-record.service';
 
 @Controller('user-learn-record')
 export class UserLearnRecordController {

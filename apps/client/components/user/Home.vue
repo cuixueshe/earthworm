@@ -4,9 +4,9 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { fetchLearnRecord } from "~/api/userLearnRecord";
 import { type CalendarData } from "~/composables/user/calendarGraph";
 import CalendarGraph from "./CalendarGraph.vue";
-import { fetchLearnRecord } from "~/api/userLearnRecord";
 
 const data = ref<CalendarData[]>([]);
 const totalCount = ref<number>(0);

@@ -115,7 +115,6 @@ describe('course service', () => {
     );
     expect(userLearnRecordService.userLearnRecord).toHaveBeenCalledWith(
       user.userId,
-      firstCourse.id,
     );
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,

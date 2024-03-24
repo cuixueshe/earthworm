@@ -1,8 +1,8 @@
-import {  timestamp, int, mysqlTable } from "drizzle-orm/mysql-core";
+import { int, mysqlTable, timestamp } from "drizzle-orm/mysql-core";
 
-export const userLearnRecord = mysqlTable("user-finish-count", {
+export const userLearnRecord = mysqlTable("user-learn-record", {
   id: int("id").autoincrement().primaryKey(),
-  courseId: int("course_id").notNull(),
   userId: int("user_id").notNull(),
-  createdAt: timestamp("created_at").notNull().defaultNow(),
+  count: int("count").notNull().default(0),
+  date: timestamp("date").notNull().defaultNow(),
 });

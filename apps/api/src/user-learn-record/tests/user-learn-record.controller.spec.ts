@@ -1,13 +1,13 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { UserLearnRecordController } from '../user-learn-record.controller';
-import { UserLearnRecordService } from '../user-learn-record.service';
-import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { JwtModule } from '@nestjs/jwt';
+import { Test, TestingModule } from '@nestjs/testing';
 import { createUser } from '../../../test/fixture/user';
 import {
   createEmptyUserLearnRecordList,
   createUserLearnRecordList,
 } from '../../../test/fixture/userLearnRecord';
+import { MockRedisModule } from '../../../test/helper/mockRedis';
+import { UserLearnRecordController } from '../user-learn-record.controller';
+import { UserLearnRecordService } from '../user-learn-record.service';
 
 const user = createUser();
 

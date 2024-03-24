@@ -37,9 +37,9 @@ CREATE TABLE `user-progress` (
 --> statement-breakpoint
 CREATE TABLE `user-learn-record` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`course_id` int NOT NULL,
 	`user_id` int NOT NULL,
-	`created_at` timestamp NOT NULL DEFAULT (now()),
+	`count` int NOT NULL,
+	`date` timestamp NOT NULL DEFAULT (now()),
 	CONSTRAINT `user-learn-record_id` PRIMARY KEY(`id`)
 );
 --> statement-breakpoint

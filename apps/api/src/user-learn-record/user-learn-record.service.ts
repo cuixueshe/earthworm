@@ -1,25 +1,73 @@
+import { userLearnRecord } from '@earthworm/schema';
 import { Inject, Injectable } from '@nestjs/common';
-import { userLearnRecord } from '@earthworm/shared';
-import { type DbType, DB } from '../global/providers/db.provider';
-import { and, count, eq, gte, lte, sql } from 'drizzle-orm';
+import { and, eq, gte, lte, sql } from 'drizzle-orm';
+import { DB, type DbType } from '../global/providers/db.provider';
 import { GetUserLearnRecordDto } from './model/user-learn-record.dto';
 
 @Injectable()
 export class UserLearnRecordService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async userLearnRecord(userId: number, courseId: number, createdAt?: Date) {
+  async create(userId: number, date: Date) {
     await this.db.insert(userLearnRecord).values({
-      courseId,
       userId,
-      createdAt,
+      date,
+      count: 1,
     });
+  }
+
+  dateRange(date: Date) {
+    const start = new Date(new Date(date).setHours(0, 0, 0, 0));
+    const end = new Date(new Date(date).setHours(23, 59, 59, 999));
+    return { start, end };
+  }
+
+  async update(userId: number, date: Date, count: number) {
+    const { start, end } = this.dateRange(date);
+
+    await this.db
+      .update(userLearnRecord)
+      .set({
+        count: count + 1,
+      })
+      .where(
+        and(
+          eq(userLearnRecord.userId, userId),
+          lte(userLearnRecord.date, end),
+          gte(userLearnRecord.date, start),
+        ),
+      );
+  }
+
+  async findOne(userId: number, date: Date) {
+    const { start, end } = this.dateRange(date);
+
+    const result = await this.db
+      .select()
+      .from(userLearnRecord)
+      .where(
+        and(
+          eq(userLearnRecord.userId, userId),
+          lte(userLearnRecord.date, end),
+          gte(userLearnRecord.date, start),
+        ),
+      );
+    return result[0];
   }
 
   calcStartDate(date: Date = new Date()) {
     const offset = 52 * 7 + (date.getDay() % 7);
     const startDay = date.getDate() - offset;
     return new Date(date.setDate(startDay));
+  }
+
+  async userLearnRecord(userId: number, date: Date = new Date()) {
+    const record = await this.findOne(userId, date);
+    if (record) {
+      this.update(userId, date, record.count);
+    } else {
+      this.create(userId, date);
+    }
   }
 
   async findUserLearnRecord(userId: number, dto?: GetUserLearnRecordDto) {
@@ -32,19 +80,17 @@ export class UserLearnRecordService {
 
     const result = await this.db
       .select({
-        date: sql`DATE(${userLearnRecord.createdAt})`,
-        count: count(userLearnRecord.id),
+        date: sql`DATE(${userLearnRecord.date})`,
+        count: userLearnRecord.count,
       })
       .from(userLearnRecord)
       .where(
         and(
-          lte(userLearnRecord.createdAt, end),
-          gte(userLearnRecord.createdAt, start),
+          lte(userLearnRecord.date, end),
+          gte(userLearnRecord.date, start),
           eq(userLearnRecord.userId, userId),
         ),
-      )
-      .groupBy(sql`DATE(${userLearnRecord.createdAt})`)
-      .orderBy(sql`DATE(${userLearnRecord.createdAt})`);
+      );
 
     return {
       totalCount: result.reduce((prev, cur) => prev + cur.count, 0),
