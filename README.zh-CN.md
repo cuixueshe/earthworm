@@ -13,6 +13,11 @@
 ### ⚠️ 注意事项
 
 - **pnpm version >= 8**
+
+  ```bash
+  corepack enable
+  ```
+
 - **Node.js version >= v20**
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**
