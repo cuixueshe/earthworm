@@ -34,6 +34,12 @@ node --version # v20+
 pnpm -v # 8+
 ```
 
+### Editor
+
+#### VSCode
+
+- Install the recommended extensions [extensions.json](./.vscode/extensions.json)
+
 ### 1. Install Dependencies
 
 ```bash

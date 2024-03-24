@@ -1,43 +1,8 @@
 {
   "prettier.enable": true,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.printWidth": 80,
-  "prettier.trailingComma": "es5",
-  "prettier.singleAttributePerLine": true,
-  // remove `Unknown at rule @apply` warning
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  // fixed `Unknown at rule @apply` warning
   "css.lint.unknownAtRules": "ignore",
-  "scss.lint.unknownAtRules": "ignore",
-  // Use `eslint` for vue, ts and js
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[js]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[ts]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "vue"
-  ],
-  // Tailwind Support, see https://tailwindcss.nuxt.dev/tailwind/editor-support
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  // Auto-complete `.value` attribute when volar is installed
-  "volar.autoCompleteRefs": true,
-  "tailwindConfigViewer.workspacePath": "apps/client",
+  "scss.lint.unknownAtRules": "ignore"
 }
