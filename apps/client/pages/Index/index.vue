@@ -1,5 +1,7 @@
 <template>
   <div class="container w-full mb-14">
+    <!-- notice bar -->
+    <NoticeBar v-if="showNoticeBar" />
     <!-- nav -->
     <header
       class="sticky top-0 bg-transparent bg-opacity-50 backdrop-blur-xl z-50"
@@ -16,7 +18,7 @@
                 alt="earth-worm-logo"
               />
               <h1
-                class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-black font-extrabold text-transparent leading-normal text-wrap"
+                class="text-purple-500 text-3xl font-black font-extrabold leading-normal text-wrap"
               >
                 Earthworm
               </h1>
@@ -28,51 +30,20 @@
               aria-label="Global"
               class="hidden md:block"
             >
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    About
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    Careers
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    History
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    Services
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    Projects
-                  </a>
-                </li>
+              <ul class="flex items-center text-md gap-8">
+                <template
+                  v-for="(opt_item, opt_index) in HEADER_OPTIONS"
+                  :key="opt_index"
+                >
+                  <li>
+                    <a
+                      class="text-gray-500 transition hover:text-gray-500/75 dark:text-white"
+                      :href="`#${opt_item.anchor}`"
+                    >
+                      {{ opt_item.name }}
+                    </a>
+                  </li>
+                </template>
               </ul>
             </nav>
 
@@ -118,7 +89,7 @@
                     (route.name === 'Auth-SignUp' ||
                       route.name !== 'Auth-Login')
                   "
-                  class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                  class="rounded-md bg-purple-400 px-5 py-2.5 text-sm font-medium text-white shadow"
                   @click="handleLogin"
                 >
                   Login
@@ -127,7 +98,7 @@
                 <div class="hidden sm:flex">
                   <button
                     v-show="route.name === 'Auth-Login'"
-                    class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                    class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-purple-400"
                     @click="handleSignup"
                   >
                     Register
@@ -172,27 +143,8 @@
         </div>
       </div>
     </header>
-    <!-- notice bar -->
-    <!-- Tips: Display this module when there is a version update or notification, so you don't have to show it all the time. -->
-    <div
-      class="bg-purple-200 dark:bg-gray-800 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-lg"
-    >
-      <p
-        class="text-center font-medium sm:text-left text-black dark:text-white"
-      >
-        Earthworm is now available! 🎉
-        <br class="sm:hidden" />
-        Start your English learning journey now!
-      </p>
-      <a
-        class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-purple-600 transition hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
-        href="https://github.com/cuixueshe/earthworm"
-      >
-        Learn More
-      </a>
-    </div>
     <!-- header -->
-    <section class="text-gray-500">
+    <section class="text-gray-500" id="home">
       <div class="mx-auto w-full px-4 py-16 lg:flex">
         <div class="mx-auto text-center">
           <p
@@ -232,19 +184,12 @@
         class="w-3/4 object-cover sm:h-80 lg:h-96 border"
       />
     </div>
-    <!-- diver -->
-    <div class="w-full my-10">
-      <span class="relative flex justify-center">
-        <div
-          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-        ></div>
-        <span class="relative z-10 px-6 dark:bg-slate-900 bg-white"
-          >divider</span
-        >
-      </span>
-    </div>
+    <Divider />
     <!-- what is earthworm -->
-    <div class="w-full flex-col">
+    <div
+      class="w-full flex-col"
+      id="what"
+    >
       <div class="mx-auto max-w-screen-xl px-4 py-16 lg:flex">
         <div class="mx-auto max-w-3xl text-center">
           <p
@@ -388,17 +333,7 @@
         <div class="w-1/2"></div>
       </section>
     </div>
-    <!-- diver -->
-    <div class="w-full my-10">
-      <span class="relative flex justify-center">
-        <div
-          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-        ></div>
-        <span class="relative z-10 px-6 dark:bg-slate-900 bg-white"
-          >divider</span
-        >
-      </span>
-    </div>
+    <Divider />
     <!-- user feedback -->
     <section class="flex flex-col py-4">
       <div class="mx-auto max-w-screen-xl py-8 sm:px-6 lg:px-8 lg:py-12">
@@ -431,9 +366,7 @@
                     class="h-14 w-14 rounded-full object-cover border-2 border-purple-400 p-1"
                   />
                   <div class="flex-grow">
-                    <p
-                      class="mt-0.5 text-lg font-bold  dark:text-white"
-                    >
+                    <p class="mt-0.5 text-lg font-bold dark:text-white">
                       {{ item.nickname }}
                     </p>
                     <p class="text-xs text-gray-500">
@@ -484,19 +417,12 @@
         </div>
       </div>
     </section>
-    <!-- diver -->
-    <div class="w-full my-10">
-      <span class="relative flex justify-center">
-        <div
-          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-        ></div>
-        <span class="relative z-10 px-6 dark:bg-slate-900 bg-white"
-          >divider</span
-        >
-      </span>
-    </div>
+    <Divider />
     <!-- features -->
-    <div class="w-full flex-col">
+    <div
+      class="w-full flex-col"
+      id="features"
+    >
       <div class="mx-auto max-w-screen-xl px-4 py-16 lg:flex">
         <div class="mx-auto max-w-3xl text-center">
           <p
@@ -715,19 +641,12 @@
         </div>
       </section>
     </div>
-    <!-- diver -->
-    <div class="w-full my-10">
-      <span class="relative flex justify-center">
-        <div
-          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-        ></div>
-        <span class="relative z-10 px-6 dark:bg-slate-900 bg-white"
-          >divider</span
-        >
-      </span>
-    </div>
+    <Divider />
     <!-- pay -->
-    <div class="w-full">
+    <div
+      class="w-full"
+      id="pricing"
+    >
       <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-5 py-24 mx-auto">
           <div class="mx-auto max-w-3xl text-center">
@@ -931,7 +850,7 @@
                 </button>
               </div>
             </div>
-            <div class="p-4 xl:w-1/3 md:w-1/2 w-full ">
+            <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
               <div
                 class="h-full p-6 rounded-lg gradient-border flex flex-col relative overflow-hidden"
               >
@@ -1055,19 +974,12 @@
         </div>
       </section>
     </div>
-    <!-- diver -->
-    <div class="w-full my-10">
-      <span class="relative flex justify-center">
-        <div
-          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-        ></div>
-        <span class="relative z-10 px-6 dark:bg-slate-900 bg-white"
-          >divider</span
-        >
-      </span>
-    </div>
+    <Divider />
     <!-- question -->
-    <section class="text-gray-600 body-font overflow-hidden">
+    <section
+      class="text-gray-600 body-font overflow-hidden"
+      id="faq"
+    >
       <div class="container px-5 py-24 mx-auto">
         <div class="mx-auto max-w-3xl text-center">
           <p
@@ -1087,9 +999,7 @@
               class="group py-8 [&_summary::-webkit-details-marker]:hidden"
               open
             >
-              <summary
-                class="flex cursor-pointer items-center justify-between "
-              >
+              <summary class="flex cursor-pointer items-center justify-between">
                 <h2 class="text-lg font-medium"
                   >How to give priority to the latest version?</h2
                 >
@@ -1137,7 +1047,7 @@
               class="group py-8 [&_summary::-webkit-details-marker]:hidden"
             >
               <summary
-                class="flex cursor-pointer items-center justify-between gap-1.5 "
+                class="flex cursor-pointer items-center justify-between gap-1.5"
               >
                 <h2 class="text-lg font-medium"
                   >Will there be an one-to-one service if you buy the Pro
@@ -1187,19 +1097,9 @@
         </div>
       </div>
     </section>
-    <!-- diver -->
-    <div class="w-full my-10">
-      <span class="relative flex justify-center">
-        <div
-          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-        ></div>
-        <span class="relative z-10 px-6 dark:bg-slate-900 bg-white"
-          >divider</span
-        >
-      </span>
-    </div>
+    <Divider />
     <!-- footer -->
-    <footer class="">
+    <footer id="contact">
       <div
         class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
       >
@@ -1546,6 +1446,23 @@ const handleLogout = () => {
 // user feedback
 import CommentsList from "~/assets/comments";
 import { formatTimestamp } from "~/utils/date";
+
+// Notice Bar
+import NoticeBar from "./components/NoticeBar.vue";
+const showNoticeBar = ref(false);
+
+// Header
+const HEADER_OPTIONS = [
+  { name: "Home", anchor: "home" },
+  { name: "What", anchor: "what" },
+  { name: "Features", anchor: "features" },
+  { name: "Pricing", anchor: "pricing" },
+  { name: "FAQ", anchor: "faq" },
+  { name: "Contact", anchor: "contact" },
+];
+
+// dividers
+import Divider from "./components/Divider.vue";
 </script>
 
 <style scoped>
