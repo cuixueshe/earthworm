@@ -1,0 +1,627 @@
+[
+	{
+		"chinese": "支付；付钱",
+		"english": "to pay",
+		"soundmark": "/tə/ /pe/"
+	},
+	{
+		"chinese": "账单",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付账单",
+		"english": "to pay the bill",
+		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "他",
+		"english": "him",
+		"soundmark": "/hɪm/"
+	},
+	{
+		"chinese": "付钱给他",
+		"english": "to pay him",
+		"soundmark": "/tə/ /pe/ /hɪm/"
+	},
+	{
+		"chinese": "你",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"chinese": "你(过去)付钱给他",
+		"english": "you paid him",
+		"soundmark": "/ju/ /ped/ /hɪm/"
+	},
+	{
+		"chinese": "十",
+		"english": "ten",
+		"soundmark": "/tɛn/"
+	},
+	{
+		"chinese": "美元",
+		"english": "dollars",
+		"soundmark": "/'dɑlɚz/"
+	},
+	{
+		"chinese": "十美元",
+		"english": "ten dollars",
+		"soundmark": "/tɛn/ /'dɑlɚz/"
+	},
+	{
+		"chinese": "你(过去)付给他十美元",
+		"english": "you paid him ten dollars",
+		"soundmark": "/ju/ /ped/ /hɪm/ /tɛn/ /'dɑlɚz/"
+	},
+	{
+		"chinese": "你(过去)没有付给他十美元",
+		"english": "you didn't pay him ten dollars",
+		"soundmark": "/ju/ /'dɪdnt/ /pe/ /hɪm/ /tɛn/ /'dɑlɚz/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做这件事",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你(过去)付钱给他去做这件事",
+		"english": "you paid him to do it",
+		"soundmark": "/ju/ /ped/ /hɪm/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你(过去)没有付钱给他去做这件事",
+		"english": "you didn't pay him to do it",
+		"soundmark": "/ju/ /'dɪdnt/ /pe/ /hɪm/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你(过去)付给他十美元去做这件事",
+		"english": "you paid him ten dollars to do it",
+		"soundmark": "/ju/ /ped/ /hɪm/ /tɛn/ /'dɑlɚz/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "你(过去)没有付给他十美元去做这件事",
+		"english": "you didn't pay him ten dollars to do it",
+		"soundmark": "/ju/ /'dɪdnt/ /pe/ /hɪm/ /tɛn/ /'dɑlɚz/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"chinese": "决定",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "我们必须决定",
+		"english": "we have to decide",
+		"soundmark": "/wi/ /hæv/ /tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "今晚",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"chinese": "我们必须今晚决定",
+		"english": "we have to decide tonight",
+		"soundmark": "/wi/ /hæv/ /tə/ /dɪ'saɪd/ /tə'naɪt/"
+	},
+	{
+		"chinese": "我们不必今晚决定",
+		"english": "we don't have to decide tonight",
+		"soundmark": "/wi/ /dont/ /hæv/ /tə/ /dɪ'saɪd/ /tə'naɪt/"
+	},
+	{
+		"chinese": "我们决定",
+		"english": "we decide",
+		"soundmark": "/wi/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "去",
+		"english": "to go",
+		"soundmark": "/tə/ /ɡo/"
+	},
+	{
+		"chinese": "外面",
+		"english": "out",
+		"soundmark": "/aʊt/"
+	},
+	{
+		"chinese": "去外面",
+		"english": "to go out",
+		"soundmark": "/tə/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "我们决定去外面",
+		"english": "we decide to go out",
+		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /ɡo/ /aʊt/"
+	},
+	{
+		"chinese": "为了",
+		"english": "for",
+		"soundmark": "/fɝ/"
+	},
+	{
+		"chinese": "晚餐",
+		"english": "dinner",
+		"soundmark": "/'dɪnɚ/"
+	},
+	{
+		"chinese": "为了晚餐",
+		"english": "for dinner",
+		"soundmark": "/fɝ/ /'dɪnɚ/"
+	},
+	{
+		"chinese": "我们决定去外面为了晚餐",
+		"english": "we decide to go out for dinner",
+		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /ɡo/ /aʊt/ /fɝ/ /'dɪnɚ/"
+	},
+	{
+		"chinese": "决定(过去)",
+		"english": "decided",
+		"soundmark": "/dɪ'saɪdɪd/"
+	},
+	{
+		"chinese": "我们(过去)决定",
+		"english": "we decided",
+		"soundmark": "/wi/ /dɪ'saɪdɪd/"
+	},
+	{
+		"chinese": "我们(过去)决定去外面为了晚餐",
+		"english": "we decided to go out for dinner",
+		"soundmark": "/wi/ /dɪ'saɪdɪd/ /tə/ /ɡo/ /aʊt/ /fɝ/ /'dɪnɚ/"
+	},
+	{
+		"chinese": "驾驶",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
+	},
+	{
+		"chinese": "那辆汽车",
+		"english": "the car",
+		"soundmark": "/ðə/ /kɑr/"
+	},
+	{
+		"chinese": "开那辆车",
+		"english": "to drive the car",
+		"soundmark": "/tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)决定",
+		"english": "I decided",
+		"soundmark": "/aɪ/ /dɪ'saɪdɪd/"
+	},
+	{
+		"chinese": "我(过去)决定开那辆车",
+		"english": "I decided to drive the car",
+		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我开那辆车",
+		"english": "I drive the car",
+		"soundmark": "/aɪ/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)开那辆车",
+		"english": "I drove the car",
+		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "昨天",
+		"english": "yesterday",
+		"soundmark": "/'jɛstɚde/"
+	},
+	{
+		"chinese": "我昨天开了那辆车",
+		"english": "I drove the car yesterday",
+		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我昨天没有开那辆车",
+		"english": "I didn't drive the car yesterday",
+		"soundmark": "/aɪ/ /'dɪdnt/ /draɪv/ /ðə/ /kɑr/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "相信",
+		"english": "to believe",
+		"soundmark": "/tə/ /bɪ'liv/"
+	},
+	{
+		"chinese": "我",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"chinese": "相信我",
+		"english": "to believe me",
+		"soundmark": "/tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "你需要",
+		"english": "you need",
+		"soundmark": "/ju/ /nid/"
+	},
+	{
+		"chinese": "你需要相信我",
+		"english": "you need to believe me",
+		"soundmark": "/ju/ /nid/ /tə/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "你相信我",
+		"english": "you believe me",
+		"soundmark": "/ju/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "你不相信我",
+		"english": "you don't believe me",
+		"soundmark": "/ju/ /dont/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "你(过去)相信我",
+		"english": "you believed me",
+		"soundmark": "/ju/ /bɪ'livd/ /mi/"
+	},
+	{
+		"chinese": "你(过去)不相信我",
+		"english": "you didn't believe me",
+		"soundmark": "/ju/ /'dɪdnt/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bət/"
+	},
+	{
+		"chinese": "但是你(过去)不相信我",
+		"english": "but you didn't believe me",
+		"soundmark": "/bət/ /ju/ /'dɪdnt/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "我昨天开了那辆车但是你(过去)不相信我",
+		"english": "I drove the car yesterday but you didn't believe me",
+		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/ /'jɛstɚde/ /bət/ /ju/ /'dɪdnt/ /bɪ'liv/ /mi/"
+	},
+	{
+		"chinese": "改变",
+		"english": "to change",
+		"soundmark": "/tə/ /tʃendʒ/"
+	},
+	{
+		"chinese": "想法",
+		"english": "mind",
+		"soundmark": "/maɪnd/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的想法",
+		"english": "my mind",
+		"soundmark": "/maɪ/ /maɪnd/"
+	},
+	{
+		"chinese": "改变我的想法",
+		"english": "to change my mind",
+		"soundmark": "/tə/ /tʃendʒ/ /maɪ/ /maɪnd/"
+	},
+	{
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"chinese": "我想要改变我的想法",
+		"english": "I want to change my mind",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tʃendʒ/ /maɪ/ /maɪnd/"
+	},
+	{
+		"chinese": "我改变我的想法",
+		"english": "I change my mind",
+		"soundmark": "/aɪ/ /tʃendʒ/ /maɪ/ /maɪnd/"
+	},
+	{
+		"chinese": "改变了",
+		"english": "changed",
+		"soundmark": "/tʃendʒd/"
+	},
+	{
+		"chinese": "我改变了我的想法",
+		"english": "I changed my mind",
+		"soundmark": "/aɪ/ /tʃendʒd/ /maɪ/ /maɪnd/"
+	},
+	{
+		"chinese": "再次",
+		"english": "again",
+		"soundmark": "/ə'ɡɛn/"
+	},
+	{
+		"chinese": "我再次改变了我的想法",
+		"english": "I changed my mind again",
+		"soundmark": "/aɪ/ /tʃendʒd/ /maɪ/ /maɪnd/ /ə'ɡɛn/"
+	},
+	{
+		"chinese": "决定",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "开那辆车",
+		"english": "to drive the car",
+		"soundmark": "/tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)决定开那辆车",
+		"english": "I decided to drive the car",
+		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我再次改变了我的想法我(过去)决定开那辆车",
+		"english": "I changed my mind again I decided to drive the car",
+		"soundmark": "/aɪ/ /tʃendʒd/ /maɪ/ /maɪnd/ /ə'ɡɛn/ /aɪ/ /dɪ'saɪdɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "尝试",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
+	},
+	{
+		"chinese": "我(过去)决定尝试",
+		"english": "I decided to try",
+		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /traɪ/"
+	},
+	{
+		"chinese": "我(过去)决定尝试开那辆车",
+		"english": "I decided to try to drive the car",
+		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)没有决定尝试开那辆车",
+		"english": "I didn't decide to try to drive the car",
+		"soundmark": "/aɪ/ /'dɪdnt/ /dɪ'saɪd/ /tə/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我尝试开那辆车",
+		"english": "I try to drive the car",
+		"soundmark": "/aɪ/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我不尝试开那辆车",
+		"english": "I don't try to drive the car",
+		"soundmark": "/aɪ/ /dont/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)尝试开那辆车",
+		"english": "I tried to drive the car",
+		"soundmark": "/aɪ/ /traɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)没有尝试开那辆车",
+		"english": "I didn't try to drive the car",
+		"soundmark": "/aɪ/ /'dɪdnt/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我开那辆车",
+		"english": "I drive the car",
+		"soundmark": "/aɪ/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我不开那辆车",
+		"english": "I don't drive the car",
+		"soundmark": "/aɪ/ /dont/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)开那辆车",
+		"english": "I drove the car",
+		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "我(过去)没有开那辆车",
+		"english": "I didn't drive the car",
+		"soundmark": "/aɪ/ /'dɪdnt/ /draɪv/ /ðə/ /kɑr/"
+	},
+	{
+		"chinese": "停止；阻止",
+		"english": "to stop",
+		"soundmark": "/tə/ /stɑp/"
+	},
+	{
+		"chinese": "他",
+		"english": "him",
+		"soundmark": "/hɪm/"
+	},
+	{
+		"chinese": "阻止他",
+		"english": "to stop him",
+		"soundmark": "/tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)尝试阻止他",
+		"english": "I tried to stop him",
+		"soundmark": "/aɪ/ /traɪd/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)没有尝试阻止他",
+		"english": "I didn't try to stop him",
+		"soundmark": "/aɪ/ /'dɪdnt/ /traɪ/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "找到",
+		"english": "to find",
+		"soundmark": "/tə/ /faɪnd/"
+	},
+	{
+		"chinese": "一个方法",
+		"english": "a way",
+		"soundmark": "/ə/ /we/"
+	},
+	{
+		"chinese": "找到一个方法",
+		"english": "to find a way",
+		"soundmark": "/tə/ /faɪnd/ /ə/ /we/"
+	},
+	{
+		"chinese": "我必须找到一个方法",
+		"english": "I have to find a way",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /faɪnd/ /ə/ /we/"
+	},
+	{
+		"chinese": "阻止他",
+		"english": "to stop him",
+		"soundmark": "/tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我必须找到一个方法阻止他",
+		"english": "I have to find a way to stop him",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我不必找到一个方法阻止他",
+		"english": "I don't have to find a way to stop him",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)必须",
+		"english": "I had to",
+		"soundmark": "/aɪ/ /hæd/ /tə/"
+	},
+	{
+		"chinese": "我(过去)必须找到一个方法",
+		"english": "I had to find a way",
+		"soundmark": "/aɪ/ /hæd/ /tə/ /faɪnd/ /ə/ /we/"
+	},
+	{
+		"chinese": "我(过去)必须找到一个方法阻止他",
+		"english": "I had to find a way to stop him",
+		"soundmark": "/aɪ/ /hæd/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)不必找到一个方法阻止他",
+		"english": "I didn't have to find a way to stop him",
+		"soundmark": "/aɪ/ /'dɪdnt/ /hæv/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我找到一个方法阻止他",
+		"english": "I find a way to stop him",
+		"soundmark": "/aɪ/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)找到一个方法阻止他",
+		"english": "I found a way to stop him",
+		"soundmark": "/aɪ/ /faʊnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)没有找到一个方法阻止他",
+		"english": "I didn't find a way to stop him",
+		"soundmark": "/aɪ/ /'dɪdnt/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我阻止他",
+		"english": "I stop him",
+		"soundmark": "/aɪ/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "我阻止了他",
+		"english": "I stopped him",
+		"soundmark": "/aɪ/ /stɑpt/ /hɪm/"
+	},
+	{
+		"chinese": "我(过去)没有阻止他",
+		"english": "I didn't stop him",
+		"soundmark": "/aɪ/ /'dɪdnt/ /stɑp/ /hɪm/"
+	},
+	{
+		"chinese": "问",
+		"english": "to ask",
+		"soundmark": "/tə/ /æsk/"
+	},
+	{
+		"chinese": "问过",
+		"english": "asked",
+		"soundmark": "/æskt/"
+	},
+	{
+		"chinese": "他们",
+		"english": "them",
+		"soundmark": "/ðəm/"
+	},
+	{
+		"chinese": "问过他们",
+		"english": "asked them",
+		"soundmark": "/æskt/ /ðəm/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我问过他们",
+		"english": "I asked them",
+		"soundmark": "/aɪ/ /æskt/ /ðəm/"
+	},
+	{
+		"chinese": "那个问题",
+		"english": "the question",
+		"soundmark": "/ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "相同的",
+		"english": "same",
+		"soundmark": "/sem/"
+	},
+	{
+		"chinese": "那个相同的问题",
+		"english": "the same question",
+		"soundmark": "/ðə/ /sem/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "我问过他们那个相同的问题",
+		"english": "I asked them the same question",
+		"soundmark": "/aɪ/ /æskt/ /ðəm/ /ðə/ /sem/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "我没有问过他们那个相同的问题",
+		"english": "I didn't ask them the same question",
+		"soundmark": "/aɪ/ /'dɪdnt/ /æsk/ /ðəm/ /ðə/ /sem/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "回答",
+		"english": "to answer",
+		"soundmark": "/tə/ /'ænsɚ/"
+	},
+	{
+		"chinese": "回答过",
+		"english": "answered",
+		"soundmark": "/'ænsɚd/"
+	},
+	{
+		"chinese": "没有人",
+		"english": "nobody",
+		"soundmark": "/ˈnobɑdi/"
+	},
+	{
+		"chinese": "没有人回答过",
+		"english": "nobody answered",
+		"soundmark": "/ˈnobɑdi/ /'ænsɚd/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bət/"
+	},
+	{
+		"chinese": "但是没有人回答过",
+		"english": "but nobody answered",
+		"soundmark": "/bət/ /ˈnobɑdi/ /'ænsɚd/"
+	},
+	{
+		"chinese": "我问过他们那个相同的问题但是没有人回答过",
+		"english": "I asked them the same question but nobody answered",
+		"soundmark": "/aɪ/ /æskt/ /ðəm/ /ðə/ /sem/ /'kwɛstʃən/ /bət/ /ˈnobɑdi/ /'ænsɚd/"
+	}
+]

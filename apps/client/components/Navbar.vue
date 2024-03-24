@@ -112,11 +112,11 @@
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
+import Message from "~/components/main/Message/useMessage";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
 import MessageBox from "./main/MessageBox/MessageBox.vue";
-import Message from "~/components/main/Message/Message";
 const route = useRoute();
 const userStore = useUserStore();
 const isShowModal = ref(false);

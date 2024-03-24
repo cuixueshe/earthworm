@@ -1,0 +1,712 @@
+[
+	{
+		"chinese": "锁",
+		"english": "to lock",
+		"soundmark": "/tə/ /lɑk/"
+	},
+	{
+		"chinese": "门",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
+	},
+	{
+		"chinese": "锁门",
+		"english": "to lock the door",
+		"soundmark": "/lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"chinese": "忘记",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
+	},
+	{
+		"chinese": "忘记锁门",
+		"english": "to forget to lock the door",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"chinese": "忘记锁门(ing形式)",
+		"english": "forgetting to lock the door",
+		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"chinese": "承认",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
+	},
+	{
+		"chinese": "他们承认",
+		"english": "they admit",
+		"soundmark": "/ðe/ /ədˈmɪt/"
+	},
+	{
+		"chinese": "他们(过去)承认",
+		"english": "they admitted",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "他们(过去)承认忘记锁门",
+		"english": "they admitted forgetting to lock the door",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"chinese": "灯",
+		"english": "light",
+		"soundmark": "/laɪt/"
+	},
+	{
+		"chinese": "红色",
+		"english": "red",
+		"soundmark": "/rɛd/"
+	},
+	{
+		"chinese": "一个红灯",
+		"english": "a red light",
+		"soundmark": "/ə/ /rɛd/ /laɪt/"
+	},
+	{
+		"chinese": "跑",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
+	},
+	{
+		"chinese": "闯一个红灯",
+		"english": "to run a red light",
+		"soundmark": "/tə/ /rʌn/ /ə/ /rɛd/ /laɪt/"
+	},
+	{
+		"chinese": "闯一个红灯(ing形式)",
+		"english": "running a red light",
+		"soundmark": "/'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
+	},
+	{
+		"chinese": "驾驶",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
+	},
+	{
+		"chinese": "司机",
+		"english": "the driver",
+		"soundmark": "/ðə/ /'draɪvɚ/"
+	},
+	{
+		"chinese": "司机(过去)承认",
+		"english": "the driver admitted",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "司机(过去)承认闯一个红灯",
+		"english": "the driver admitted running a red light",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/ /'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
+	},
+	{
+		"chinese": "答案",
+		"english": "the answers",
+		"soundmark": "/ði/ /'ænsɚz/"
+	},
+	{
+		"chinese": "复制",
+		"english": "to copy",
+		"soundmark": "/tə/ /ˈkɑpɪ/"
+	},
+	{
+		"chinese": "抄答案",
+		"english": "to copy the answers",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/"
+	},
+	{
+		"chinese": "同学",
+		"english": "classmate",
+		"soundmark": "/'klæsmet/"
+	},
+	{
+		"chinese": "从......那里",
+		"english": "from",
+		"soundmark": "/frʌm/"
+	},
+	{
+		"chinese": "从一个同学那里",
+		"english": "from a classmate",
+		"soundmark": "/frʌm/ /ə/ /'klæsmet/"
+	},
+	{
+		"chinese": "从一个同学那里抄答案",
+		"english": "to copy the answers from a classmate",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
+	},
+	{
+		"chinese": "从一个同学那里抄答案(ing形式)",
+		"english": "copying the answers from a classmate",
+		"soundmark": "/ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
+	},
+	{
+		"chinese": "那个学生",
+		"english": "the student",
+		"soundmark": "/ðə/ /'studnt/"
+	},
+	{
+		"chinese": "那个学生(过去)承认",
+		"english": "the student admitted",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "那个学生(过去)承认从一个同学那里抄答案",
+		"english": "the student admitted copying the answers from a classmate",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/ /ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
+	},
+	{
+		"chinese": "迟到的",
+		"english": "late",
+		"soundmark": "/let/"
+	},
+	{
+		"chinese": "她是迟到的",
+		"english": "she is late",
+		"soundmark": "/ʃi/ /ɪz/ /let/"
+	},
+	{
+		"chinese": "碰面；见到",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
+	},
+	{
+		"chinese": "会议",
+		"english": "meeting",
+		"soundmark": "/'mitɪŋ/"
+	},
+	{
+		"chinese": "为了；对于",
+		"english": "for",
+		"soundmark": "/fɚ/"
+	},
+	{
+		"chinese": "对于这个会议",
+		"english": "for the meeting",
+		"soundmark": "/fɚ/ /ðə/ /'mitɪŋ/"
+	},
+	{
+		"chinese": "她是迟到的对于这个会议",
+		"english": "she is late for the meeting",
+		"soundmark": "/ʃi/ /ɪz/ /let/ /fɚ/ /ðə/ /'mitɪŋ/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
+	},
+	{
+		"chinese": "她(过去)承认是迟到的对于这个会议",
+		"english": "she admitted being late for the meeting",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /let/ /fɚ/ /ðə/ /'mitɪŋ/"
+	},
+	{
+		"chinese": "说话",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
+	},
+	{
+		"chinese": "演讲",
+		"english": "speaking",
+		"soundmark": "/'spikɪŋ/"
+	},
+	{
+		"chinese": "公开的",
+		"english": "public",
+		"soundmark": "/ˈpʌblɪk/"
+	},
+	{
+		"chinese": "公开演讲",
+		"english": "public speaking",
+		"soundmark": "/ˈpʌblɪk/ /'spikɪŋ/"
+	},
+	{
+		"chinese": "害怕的",
+		"english": "afraid",
+		"soundmark": "/ə'fred/"
+	},
+	{
+		"chinese": "她是害怕的",
+		"english": "she is afraid",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/"
+	},
+	{
+		"chinese": "她害怕公开演讲",
+		"english": "she is afraid of public speaking",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+	},
+	{
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
+	},
+	{
+		"chinese": "她(过去)承认",
+		"english": "she admitted",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "她(过去)承认害怕公开演讲",
+		"english": "she admitted being afraid of public speaking",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
+	},
+	{
+		"chinese": "食物",
+		"english": "food",
+		"soundmark": "/fud/"
+	},
+	{
+		"chinese": "垃圾",
+		"english": "junk",
+		"soundmark": "/dʒʌŋk/"
+	},
+	{
+		"chinese": "垃圾食物",
+		"english": "junk food",
+		"soundmark": "/dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "吃垃圾食物",
+		"english": "to eat junk food",
+		"soundmark": "/tə/ /it/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "吃垃圾食物(ing形式)",
+		"english": "eating junk food",
+		"soundmark": "/'itɪŋ/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "她避免",
+		"english": "she avoids",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/"
+	},
+	{
+		"chinese": "她避免吃垃圾食物",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "生活",
+		"english": "life",
+		"soundmark": "/laɪf/"
+	},
+	{
+		"chinese": "方式",
+		"english": "style",
+		"soundmark": "/staɪl/"
+	},
+	{
+		"chinese": "生活方式",
+		"english": "lifestyle",
+		"soundmark": "/'laɪfstaɪl/"
+	},
+	{
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
+	},
+	{
+		"chinese": "一个健康的生活方式",
+		"english": "a healthy lifestyle",
+		"soundmark": "/ə/ /'hɛlθi/ /'laɪfstaɪl/"
+	},
+	{
+		"chinese": "保持",
+		"english": "to maintain",
+		"soundmark": "/tə/ /menˈten/"
+	},
+	{
+		"chinese": "保持一个健康的生活方式",
+		"english": "to maintain a healthy lifestyle",
+		"soundmark": "/tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
+	},
+	{
+		"chinese": "她避免吃垃圾食物",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
+	},
+	{
+		"chinese": "她避免吃垃圾食物来保持一个健康的生活方式",
+		"english": "she avoids eating junk food to maintain a healthy lifestyle",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/ /tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "事实",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉事实",
+		"english": "to tell the truth",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "告诉事实(ing形式)",
+		"english": "telling the truth",
+		"soundmark": "/ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "她(过去)避免",
+		"english": "she avoided",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/"
+	},
+	{
+		"chinese": "她(过去)避免告诉事实",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "说谎",
+		"english": "to lie",
+		"soundmark": "/tə/ /laɪ/"
+	},
+	{
+		"chinese": "说谎(ing形式)",
+		"english": "lying",
+		"soundmark": "/'laɪɪŋ/"
+	},
+	{
+		"chinese": "父母",
+		"english": "parents",
+		"soundmark": "/'pɛrənts/"
+	},
+	{
+		"chinese": "她的父母",
+		"english": "her parents",
+		"soundmark": "/hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "向她的父母说谎(ing形式)",
+		"english": "lying to her parents",
+		"soundmark": "/'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过向她的父母说谎",
+		"english": "by lying to her parents",
+		"soundmark": "/baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "她(过去)避免告诉事实",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
+	},
+	{
+		"chinese": "她通过向她的父母说谎来(过去)避免告诉事实",
+		"english": "she avoided telling the truth by lying to her parents",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/ /baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
+	},
+	{
+		"chinese": "伤害",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "伤害她",
+		"english": "to hurt her",
+		"soundmark": "/tə/ /hɝt/ /hɚ/"
+	},
+	{
+		"chinese": "伤害她(ing形式)",
+		"english": "hurting her",
+		"soundmark": "/ˈhɝtɪŋ/ /hɚ/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "我(过去)避免",
+		"english": "I avoided",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/"
+	},
+	{
+		"chinese": "我(过去)避免伤害她",
+		"english": "I avoided hurting her",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/"
+	},
+	{
+		"chinese": "保持",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
+	},
+	{
+		"chinese": "沉默",
+		"english": "silent",
+		"soundmark": "/'saɪlənt/"
+	},
+	{
+		"chinese": "保持沉默",
+		"english": "to keep silent",
+		"soundmark": "/tə/ /kip/ /'saɪlənt/"
+	},
+	{
+		"chinese": "保持沉默(ing形式)",
+		"english": "keeping silent",
+		"soundmark": "/'kipɪŋ/ /'saɪlənt/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过保持沉默",
+		"english": "by keeping silent",
+		"soundmark": "/baɪ/ /'kipɪŋ/ /'saɪlənt/"
+	},
+	{
+		"chinese": "我通过保持沉默来(过去)避免伤害她",
+		"english": "I avoided hurting her by keeping silent",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/ /baɪ/ /'kipɪŋ/ /'saɪlənt/"
+	},
+	{
+		"chinese": "迟到的",
+		"english": "late",
+		"soundmark": "/let/"
+	},
+	{
+		"chinese": "我是迟到的",
+		"english": "I am late",
+		"soundmark": "/aɪ/ /æm/ /let/"
+	},
+	{
+		"chinese": "是(ing形式)",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
+	},
+	{
+		"chinese": "我(过去)避免迟到",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
+	},
+	{
+		"chinese": "出租车",
+		"english": "taxi",
+		"soundmark": "/'tæksi/"
+	},
+	{
+		"chinese": "乘坐",
+		"english": "to take",
+		"soundmark": "/tə/ /tek/"
+	},
+	{
+		"chinese": "乘坐一辆出租车",
+		"english": "to take a taxi",
+		"soundmark": "/tə/ /tek/ /ə/ /'tæksi/"
+	},
+	{
+		"chinese": "乘坐一辆出租车(ing形式)",
+		"english": "taking a taxi",
+		"soundmark": "/ˈtekɪŋ/ /ə/ /'tæksi/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过乘坐一辆出租车",
+		"english": "by taking a taxi",
+		"soundmark": "/baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
+	},
+	{
+		"chinese": "我(过去)避免迟到",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
+	},
+	{
+		"chinese": "我通过乘坐一辆出租车来(过去)避免迟到",
+		"english": "I avoided being late by taking a taxi",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/ /baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "他避免",
+		"english": "he avoids",
+		"soundmark": "/hi/ /əˈvɔɪdz/"
+	},
+	{
+		"chinese": "抽烟",
+		"english": "to smoke",
+		"soundmark": "/tə/ /smok/"
+	},
+	{
+		"chinese": "抽烟(ing形式)",
+		"english": "smoking",
+		"soundmark": "/'smokɪŋ/"
+	},
+	{
+		"chinese": "他避免抽烟",
+		"english": "he avoids smoking",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/"
+	},
+	{
+		"chinese": "健康的",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
+	},
+	{
+		"chinese": "健康",
+		"english": "health",
+		"soundmark": "/hɛlθ/"
+	},
+	{
+		"chinese": "他的健康",
+		"english": "his health",
+		"soundmark": "/hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "保护",
+		"english": "to protect",
+		"soundmark": "/tə/ /prə'tɛkt/"
+	},
+	{
+		"chinese": "保护他的健康",
+		"english": "to protect his health",
+		"soundmark": "/tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "他避免抽烟来保护他的健康",
+		"english": "he avoids smoking to protect his health",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/ /tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
+	},
+	{
+		"chinese": "谎言",
+		"english": "lie",
+		"soundmark": "/laɪ/"
+	},
+	{
+		"chinese": "一个谎言",
+		"english": "a lie",
+		"soundmark": "/ə/ /laɪ/"
+	},
+	{
+		"chinese": "白色的",
+		"english": "white",
+		"soundmark": "/waɪt/"
+	},
+	{
+		"chinese": "一个善意的谎言",
+		"english": "a white lie",
+		"soundmark": "/ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "告诉",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"chinese": "说一个善意的谎言",
+		"english": "to tell a white lie",
+		"soundmark": "/tə/ /tɛl/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "说一个善意的谎言(ing形式)",
+		"english": "telling a white lie",
+		"soundmark": "/ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "承认",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
+	},
+	{
+		"chinese": "他(过去)承认",
+		"english": "he admitted",
+		"soundmark": "/hi/ /ədˈmɪtɪd/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言(ing形式)",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "感觉",
+		"english": "to feel",
+		"soundmark": "/tə/ /fil/"
+	},
+	{
+		"chinese": "感情",
+		"english": "feelings",
+		"soundmark": "/'filɪŋz/"
+	},
+	{
+		"chinese": "某个人",
+		"english": "someone",
+		"soundmark": "/'sʌmwʌn/"
+	},
+	{
+		"chinese": "某个人的感情",
+		"english": "someone's feelings",
+		"soundmark": "/'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "伤害",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
+	},
+	{
+		"chinese": "伤害某个人的感情",
+		"english": "to hurt someone's feelings",
+		"soundmark": "/tə/ /hɝt/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "伤害某个人的感情(ing形式)",
+		"english": "hurting someone's feelings",
+		"soundmark": "/ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "避免",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
+	},
+	{
+		"chinese": "避免伤害某个人的感情",
+		"english": "to avoid hurting someone's feelings",
+		"soundmark": "/tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
+	},
+	{
+		"chinese": "他(过去)承认说一个善意的谎言来避免伤害某个人的感情",
+		"english": "he admitted telling a white lie to avoid hurting someone's feelings",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /tə/ /ədˈmɪt/ /tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
+	}
+]

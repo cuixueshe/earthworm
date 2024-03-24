@@ -75,7 +75,7 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import Message from "~/components/main/Message/Message";
+import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
 import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
 import FormInput from "~/pages/Auth/FormInput.vue";
@@ -103,12 +103,8 @@ const handleRegister = handleSubmit(async (values) => {
     ...values,
     phone: purePhoneNumber,
   };
-  try {
-    await signup(modifiedValues);
-    Message.success("register success!");
-    router.replace("/");
-  } catch (error) {
-    Message.error("register error!");
-  }
+  await signup(modifiedValues);
+  Message.success("register success!");
+  router.replace("/");
 });
 </script>

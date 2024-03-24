@@ -19,7 +19,7 @@
 import { useGameMode } from "~/composables/main/game";
 import Answer from "./Answer.vue";
 import AuthRequired from "./AuthRequired.vue";
-import Question from "./Question.vue";
+import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
