@@ -43,7 +43,7 @@ describe('rank e2e', () => {
 
   it('should get rank', async () => {
     await request(app.getHttpServer())
-      .get('/rank/progress')
+      .get('/rank/progress/weekly')
       .expect(200)
       .expect(({ body }) => {
         expect(body).toEqual(
@@ -63,7 +63,7 @@ describe('rank e2e', () => {
     const { token } = await login(app, { phone: userData.phone, password });
 
     await request(app.getHttpServer())
-      .get('/rank/progress')
+      .get('/rank/progress/weekly')
       .set('Authorization', `Bearer ${token}`)
       .expect(200)
       .expect(({ body }) => {
