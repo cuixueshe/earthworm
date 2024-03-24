@@ -1,0 +1,53 @@
+name: 🚀 New feature proposal
+title: "[Feature Request] - YOUR_FEATURE_TITLE_HERE_REPLACE_ME"
+description: Propose a new feature to be added to earthworm
+labels: [feature request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in the project and taking the time to fill out this feature report! This issue form is for requesting features only! For example, requesting a new component, behavior ... etc
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Clear and concise description of the problem
+      description: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested solution
+      description: A clear and concise description of what you want to happen.
+      placeholder: |
+        As a user, I expected ___ behavior but ___ ...
+
+        Ideal Steps I would like to see:
+        1. Go to '...'
+        2. Click on '....'
+        3. ....
+    validations:
+      required: true
+  - type: textarea
+    validations:
+      required: false
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    attributes:
+      label: Screenshots or Videos
+      description: |
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: |
+        You can drag your video or image files inside of this editor ↓
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any additional information or context about the feature request. For example, any related issues, external references, or previous discussions.
+      placeholder: Provide any additional information that might be helpful.
+    validations:
+      required: false

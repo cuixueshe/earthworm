@@ -1,3 +1,7 @@
+# [1.0.0](https://github.com/cuixueshe/earthworm/compare/v1.3.3...v1.0.0) (2024-03-13)
+
+
+
 # [1.0.0](https://github.com/cuixueshe/earthworm/compare/v1.2.1...v1.0.0) (2024-03-02)
 
 

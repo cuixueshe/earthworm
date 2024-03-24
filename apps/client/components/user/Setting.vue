@@ -1,8 +1,11 @@
 <template>
   <div class="space-y-4">
     <section>
-      <h2 class="text-lg">快捷键设置</h2>
-      <n-table :bordered="false" :single-line="false">
+      <h2 class="text-lg mb-2">快捷键设置</h2>
+      <n-table
+        :bordered="false"
+        :single-line="false"
+      >
         <thead>
           <tr>
             <th>命令</th>
@@ -12,17 +15,27 @@
         </thead>
         <tbody>
           <tr>
-            <td>play sound</td>
+            <td>播放发音</td>
             <td>{{ shortcutKeys.sound }}</td>
             <td>
-              <n-button text @click="handleEdit('sound')"> 编辑 </n-button>
+              <n-button
+                text
+                @click="handleEdit('sound')"
+              >
+                编辑
+              </n-button>
             </td>
           </tr>
           <tr>
-            <td>show answer</td>
+            <td>切换答题/答案页面</td>
             <td>{{ shortcutKeys.answer }}</td>
             <td>
-              <n-button text @click="handleEdit('answer')"> 编辑 </n-button>
+              <n-button
+                text
+                @click="handleEdit('answer')"
+              >
+                编辑
+              </n-button>
             </td>
           </tr>
         </tbody>
@@ -30,45 +43,83 @@
     </section>
 
     <section>
-      <h2 class="text-lg">声音设置</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">自动播放</span>
-          <input type="checkbox" className="toggle toggle-primary" :checked="autoPlaySound"
-            @change="toggleAutoPlaySound" />
+      <h2 class="text-lg mb-2">声音设置</h2>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">开启键盘打字音效</span>
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="keyboardSound"
+            @change="toggleKeyboardSound"
+          />
+        </label>
+      </div>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">自动播放声音（答案页面）</span>
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="autoPlaySound"
+            @change="toggleAutoPlaySound"
+          />
+        </label>
+      </div>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">切换口音</span>
+          <n-select
+            v-model:value="pronunciation"
+            :options="getPronunciationOptions()"
+            :on-update-value="togglePronunciation"
+            class="w-[90px]"
+          />
         </label>
       </div>
     </section>
 
     <section>
-      <h2>是否展示每个单词长度</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">是</span>
-          <input type="checkbox" className="toggle toggle-primary" :checked="autoShowWordsWidth"
-            @change="toggleAutoWordsWidth" />
+      <h2 class="text-lg mb-2">答题设置</h2>
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">显示每个单词长度</span>
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="showWordsWidth"
+            @change="toggleAutoWordsWidth"
+          />
         </label>
       </div>
-    </section>
-
-    <section>
-      <h2 class="text-lg">提交设置</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">使用空格</span>
-          <input type="checkbox" className="toggle toggle-primary" :checked="useSpace"
-            @change="toggleUseSpaceSubmitAnswer" />
+      <div class="form-control w-80">
+        <label class="cursor-pointer label">
+          <span class="label-text">开启空格提交答案</span>
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="useSpace"
+            @change="toggleUseSpaceSubmitAnswer"
+          />
         </label>
       </div>
     </section>
   </div>
 
-  <dialog class="modal mt-[-8vh]" :open="showModal">
-    <div ref="dialogBoxRef" class="modal-box max-w-[48rem]">
-      <h3 class="font-bold text-center mb-4">
-        先按所需的组合键，再按 Enter 键。
+  <dialog
+    class="modal mt-[-8vh]"
+    :open="showModal"
+  >
+    <div
+      ref="dialogBoxRef"
+      class="modal-box max-w-[48rem] min-h-[156px]"
+    >
+      <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
+        请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
-      <div class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center">
+      <div
+        class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center"
+      >
         {{ shortcutKeyStr }}
       </div>
       <div class="text-center mt-2 text-xs">
@@ -79,20 +130,37 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
+import { usePronunciation } from "~/composables/user/pronunciation";
+import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
-  useShortcutDialogMode,
-  useShortcutKeyMode,
-} from "~/composables/user/shortcutKey";
-import { useAutoSound } from "~/composables/user/sound";
+  useAutoPronunciation,
+  useKeyboardSound,
+} from "~/composables/user/sound";
+import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
-import { useSpaceSubmitAnswer } from '~/composables/user/submitKey'
 
-const { showModal, handleEdit, handleCloseDialog } = useShortcutDialogMode();
-const { shortcutKeyStr, shortcutKeyTip, handleKeyup, shortcutKeys } =
-  useShortcutKeyMode();
+const dialogBoxRef = ref<HTMLElement | null>(null);
+const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
+const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
+const {
+  pronunciation,
+  // 发音配置列表
+  getPronunciationOptions,
+  togglePronunciation,
+} = usePronunciation();
+const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+const {
+  showModal,
+  shortcutKeys,
+  shortcutKeyStr,
+  shortcutKeyTip,
+  handleEdit,
+  handleCloseDialog,
+  handleKeydown,
+} = useShortcutKeyMode();
 
-let dialogBoxRef = ref<HTMLElement | null>(null);
 function pointDialogOutside(e: MouseEvent) {
   if (!showModal.value) return;
   if (!dialogBoxRef.value?.contains(e.target as Node)) {
@@ -100,19 +168,12 @@ function pointDialogOutside(e: MouseEvent) {
   }
 }
 
-const { autoPlaySound, toggleAutoPlaySound } = useAutoSound();
-const { toggleUseSpaceSubmitAnswer, useSpace } = useSpaceSubmitAnswer()
-
-const { autoShowWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth()
-
 onMounted(() => {
   document.addEventListener("mouseup", pointDialogOutside);
-  document.addEventListener("keyup", handleKeyup);
+  document.addEventListener("keydown", handleKeydown);
 });
 onUnmounted(() => {
   document.removeEventListener("mouseup", pointDialogOutside);
-  document.removeEventListener("keyup", handleKeyup);
+  document.removeEventListener("keydown", handleKeydown);
 });
-
-
 </script>

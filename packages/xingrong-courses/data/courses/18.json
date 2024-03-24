@@ -1,0 +1,582 @@
+[
+	{
+		"chinese": "吃",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"chinese": "鸡蛋",
+		"english": "eggs",
+		"soundmark": "/ɛgz/"
+	},
+	{
+		"chinese": "吃鸡蛋",
+		"english": "to eat eggs",
+		"soundmark": "/tə/ /it/ /ɛgz/"
+	},
+	{
+		"chinese": "正在吃",
+		"english": "eating",
+		"soundmark": "/'itɪŋ/"
+	},
+	{
+		"chinese": "正在吃鸡蛋",
+		"english": "eating eggs",
+		"soundmark": "/'itɪŋ/ /ɛgz/"
+	},
+	{
+		"chinese": "我是",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "我是星荣",
+		"english": "I am Xingrong",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"chinese": "正在吃鸡蛋",
+		"english": "eating eggs",
+		"soundmark": "/'itɪŋ/ /ɛgz/"
+	},
+	{
+		"chinese": "我正在吃鸡蛋",
+		"english": "I am eating eggs",
+		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/"
+	},
+	{
+		"chinese": "厨房",
+		"english": "the kitchen",
+		"soundmark": "/ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "在厨房里",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "我在厨房里（现在）正在吃鸡蛋",
+		"english": "I am eating eggs in the kitchen",
+		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"english": "I was eating eggs in the kitchen",
+		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "你在厨房里（现在）正在吃鸡蛋",
+		"english": "you are eating eggs in the kitchen",
+		"soundmark": "/ju/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "你在厨房里（过去）正在吃鸡蛋",
+		"english": "you were eating eggs in the kitchen",
+		"soundmark": "/ju/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "他们",
+		"english": "they",
+		"soundmark": "/ðe/"
+	},
+	{
+		"chinese": "他们在厨房里（现在）正在吃鸡蛋",
+		"english": "they are eating eggs in the kitchen",
+		"soundmark": "/ðe/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "他们在厨房里（过去）正在吃鸡蛋",
+		"english": "they were eating eggs in the kitchen",
+		"soundmark": "/ðe/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "喝",
+		"english": "to drink",
+		"soundmark": "/tə/ /drɪŋk/"
+	},
+	{
+		"chinese": "茶",
+		"english": "tea",
+		"soundmark": "/ti/"
+	},
+	{
+		"chinese": "喝茶",
+		"english": "to drink tea",
+		"soundmark": "/tə/ /drɪŋk/ /ti/"
+	},
+	{
+		"chinese": "正在喝",
+		"english": "drinking",
+		"soundmark": "/'drɪŋkɪŋ/"
+	},
+	{
+		"chinese": "正在喝茶",
+		"english": "drinking tea",
+		"soundmark": "/'drɪŋkɪŋ/ /ti/"
+	},
+	{
+		"chinese": "他们",
+		"english": "they",
+		"soundmark": "/ðe/"
+	},
+	{
+		"chinese": "他们（现在）正在喝茶",
+		"english": "they are drinking tea",
+		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/"
+	},
+	{
+		"chinese": "花园",
+		"english": "the garden",
+		"soundmark": "/ðə/ /ˈɡɑrdn/"
+	},
+	{
+		"chinese": "在花园里",
+		"english": "in the garden",
+		"soundmark": "/ɪn/ /ðə/ /ˈɡɑrdn/"
+	},
+	{
+		"chinese": "他们在花园里（现在）正在喝茶",
+		"english": "they are drinking tea in the garden",
+		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
+	},
+	{
+		"chinese": "茶",
+		"english": "tea",
+		"soundmark": "/tiː/"
+	},
+	{
+		"chinese": "他们在花园里（过去）正在喝茶",
+		"english": "they were drinking tea in the garden",
+		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
+	},
+	{
+		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"english": "I was eating eggs in the kitchen",
+		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "他们在花园里（过去）正在喝茶与此同时我在厨房里（过去）正在吃鸡蛋",
+		"english": "they were drinking tea in the garden while I was eating eggs in the kitchen",
+		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/ /waɪl/ /aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"chinese": "教",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
+	},
+	{
+		"chinese": "我们",
+		"english": "us",
+		"soundmark": "/ʌs/"
+	},
+	{
+		"chinese": "教我们",
+		"english": "to teach us",
+		"soundmark": "/tə/ /titʃ/ /ʌs/"
+	},
+	{
+		"chinese": "正在教",
+		"english": "teaching",
+		"soundmark": "/'titʃɪŋ/"
+	},
+	{
+		"chinese": "正在教我们",
+		"english": "teaching us",
+		"soundmark": "/'titʃɪŋ/ /ʌs/"
+	},
+	{
+		"chinese": "说",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "说英语",
+		"english": "to speak English",
+		"soundmark": "/tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"chinese": "如何说英语",
+		"english": "how to speak English",
+		"soundmark": "/haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "正在教我们如何说英语",
+		"english": "teaching us how to speak English",
+		"soundmark": "/'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "星荣正在教我们如何说英语",
+		"english": "Xingrong is teaching us how to speak English",
+		"soundmark": "/ɪz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "星荣（过去）正在教我们如何说英语",
+		"english": "Xingrong was teaching us how to speak English",
+		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɝn/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "学习英语",
+		"english": "to learn English",
+		"soundmark": "/tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "正在学习",
+		"english": "learning",
+		"soundmark": "/'lɝnɪŋ/"
+	},
+	{
+		"chinese": "正在学习英语",
+		"english": "learning English",
+		"soundmark": "/'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "我正在学习英语",
+		"english": "I am learning English",
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "视频",
+		"english": "videos",
+		"soundmark": "/'vɪdɪoz/"
+	},
+	{
+		"chinese": "他的",
+		"english": "his",
+		"soundmark": "/hɪz/"
+	},
+	{
+		"chinese": "他的视频",
+		"english": "his videos",
+		"soundmark": "/hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "观看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɑtʃ/"
+	},
+	{
+		"chinese": "观看他的视频",
+		"english": "to watch his videos",
+		"soundmark": "/tə/ /wɑtʃ/ /hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "正在观看",
+		"english": "watching",
+		"soundmark": "/'wɑtʃɪŋ/"
+	},
+	{
+		"chinese": "正在观看他的视频",
+		"english": "watching his videos",
+		"soundmark": "/'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "通过......的方式",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过观看他的视频的方式",
+		"english": "by watching his videos",
+		"soundmark": "/baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "我正在学习英语",
+		"english": "I am learning English",
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "我正在通过观看他的视频的方式学习英语",
+		"english": "I am learning English by watching his videos",
+		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "我（过去）正在通过观看他的视频的方式学习英语",
+		"english": "I was learning English by watching his videos",
+		"soundmark": "/aɪ/ /wəz/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "星荣（过去）正在教我们如何说英语",
+		"english": "Xingrong was teaching us how to speak English",
+		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "星荣（过去）正在教我们如何说英语与此同时我（过去）正在通过观看他的视频的方式学习英语",
+		"english": "Xingrong was teaching us how to speak English while I was learning English by watching his videos",
+		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/ /waɪl/ /aɪ/ /wəz/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
+	},
+	{
+		"chinese": "走路",
+		"english": "to walk",
+		"soundmark": "/tə/ /wɔk/"
+	},
+	{
+		"chinese": "家",
+		"english": "home",
+		"soundmark": "/hom/"
+	},
+	{
+		"chinese": "走路回家",
+		"english": "to walk home",
+		"soundmark": "/tə/ /wɔk/ /hom/"
+	},
+	{
+		"chinese": "学校",
+		"english": "school",
+		"soundmark": "/skul/"
+	},
+	{
+		"chinese": "从",
+		"english": "from",
+		"soundmark": "/frʌm/"
+	},
+	{
+		"chinese": "从学校",
+		"english": "from school",
+		"soundmark": "/frʌm/ /skul/"
+	},
+	{
+		"chinese": "从学校走路回家",
+		"english": "to walk home from school",
+		"soundmark": "/tə/ /wɔk/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "正在从学校走路回家",
+		"english": "walking home from school",
+		"soundmark": "/'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "我正在从学校走路回家",
+		"english": "I am walking home from school",
+		"soundmark": "/aɪ/ /æm/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "我（过去）正在从学校走路回家",
+		"english": "I was walking home from school",
+		"soundmark": "/aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "朋友",
+		"english": "friend",
+		"soundmark": "/frɛnd/"
+	},
+	{
+		"chinese": "老的",
+		"english": "old",
+		"soundmark": "/old/"
+	},
+	{
+		"chinese": "一个老朋友",
+		"english": "an old friend",
+		"soundmark": "/ən/ /old/ /frɛnd/"
+	},
+	{
+		"chinese": "遇见",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
+	},
+	{
+		"chinese": "遇见一个老朋友",
+		"english": "to meet an old friend",
+		"soundmark": "/tə/ /mit/ /ən/ /old/ /frɛnd/"
+	},
+	{
+		"chinese": "我（过去）遇见一个老朋友",
+		"english": "I met an old friend",
+		"soundmark": "/aɪ/ /mɛt/ /ən/ /old/ /frɛnd/"
+	},
+	{
+		"chinese": "我（过去）正在从学校走路回家",
+		"english": "I was walking home from school",
+		"soundmark": "/aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当我（过去）正在从学校走路回家的时候",
+		"english": "when I was walking home from school",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "当我（过去）正在从学校走路回家的时候我（过去）遇见一个老朋友",
+		"english": "I met an old friend when I was walking home from school",
+		"soundmark": "/aɪ/ /mɛt/ /ən/ /old/ /frɛnd/ /wɛn/ /aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
+	},
+	{
+		"chinese": "睡觉",
+		"english": "to sleep",
+		"soundmark": "/tə/ /slip/"
+	},
+	{
+		"chinese": "卧室",
+		"english": "the bedroom",
+		"soundmark": "/ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "在卧室里",
+		"english": "in the bedroom",
+		"soundmark": "/ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "在卧室里睡觉",
+		"english": "to sleep in the bedroom",
+		"soundmark": "/tə/ /slip/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "正在睡觉",
+		"english": "sleeping",
+		"soundmark": "/ˈslipɪŋ/"
+	},
+	{
+		"chinese": "正在在卧室里睡觉",
+		"english": "sleeping in the bedroom",
+		"soundmark": "/ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "我正在在卧室里睡觉",
+		"english": "I am sleeping in the bedroom",
+		"soundmark": "/aɪ/ /æm/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "打电话",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"chinese": "打电话给我",
+		"english": "to call me",
+		"soundmark": "/tə/ /kɔl/ /mi/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（过去）打电话给我",
+		"english": "she called me",
+		"soundmark": "/ʃi/ /kɔld/ /mi/"
+	},
+	{
+		"chinese": "当......的时候",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"chinese": "当她（过去）打电话给我的时候",
+		"english": "when she called me",
+		"soundmark": "/wɛn/ /ʃi/ /kɔld/ /mi/"
+	},
+	{
+		"chinese": "我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "当她打电话给我的时候我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom when she called me",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/ /wɛn/ /ʃi/ /kɔld/ /mi/"
+	},
+	{
+		"chinese": "玩",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
+	},
+	{
+		"chinese": "钢琴",
+		"english": "the piano",
+		"soundmark": "/ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "弹钢琴",
+		"english": "to play the piano",
+		"soundmark": "/tə/ /ple/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "正在玩",
+		"english": "playing",
+		"soundmark": "/pleɪŋ/"
+	},
+	{
+		"chinese": "正在弹钢琴",
+		"english": "playing the piano",
+		"soundmark": "/pleɪŋ/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "她正在弹钢琴",
+		"english": "she is playing the piano",
+		"soundmark": "/ʃi/ /ɪz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "她（过去）正在弹钢琴",
+		"english": "she was playing the piano",
+		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
+	},
+	{
+		"chinese": "起居室；客厅",
+		"english": "the living room",
+		"soundmark": "/ðə/ /'lɪvɪŋ/ /rum/"
+	},
+	{
+		"chinese": "在客厅",
+		"english": "in the living room",
+		"soundmark": "/ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
+	},
+	{
+		"chinese": "她（过去）正在在客厅弹钢琴",
+		"english": "she was playing the piano in the living room",
+		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我（过去）正在在卧室里睡觉",
+		"english": "I was sleeping in the bedroom",
+		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	},
+	{
+		"chinese": "她（过去）正在在客厅弹钢琴与此同时我（过去）正在在卧室里睡觉",
+		"english": "she was playing the piano in the living room while I was sleeping in the bedroom",
+		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/ /waɪl/ /aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
+	}
+]

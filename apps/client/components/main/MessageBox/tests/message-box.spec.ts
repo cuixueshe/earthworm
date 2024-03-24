@@ -1,7 +1,6 @@
-import { afterEach, describe, expect, test } from "vitest";
-import MessageBox from "../MessageBox";
-import { nextTick } from "vue";
 import { flushPromises } from "@vue/test-utils";
+import { afterEach, describe, expect, test } from "vitest";
+import MessageBox from "../useMessageBox";
 
 const selector = ".modal";
 

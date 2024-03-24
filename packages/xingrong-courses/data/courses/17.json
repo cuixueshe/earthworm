@@ -1,0 +1,692 @@
+[
+	{
+		"chinese": "我们的",
+		"english": "our",
+		"soundmark": "/'aʊɚ/"
+	},
+	{
+		"chinese": "团队",
+		"english": "team",
+		"soundmark": "/tim/"
+	},
+	{
+		"chinese": "我们的团队",
+		"english": "our team",
+		"soundmark": "/'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "加入",
+		"english": "to join",
+		"soundmark": "/tə/ /dʒɔɪn/"
+	},
+	{
+		"chinese": "加入我们的团队",
+		"english": "to join our team",
+		"soundmark": "/tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "决定",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "决定加入我们的团队",
+		"english": "to decide to join our team",
+		"soundmark": "/tə/ /dɪ'saɪd/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "他决定加入我们的团队",
+		"english": "he decides to join our team",
+		"soundmark": "/hi/ /dɪ'saɪdz/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "他（过去）决定加入我们的团队",
+		"english": "he decided to join our team",
+		"soundmark": "/hi/ /dɪ'saɪdɪd/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "邀请",
+		"english": "to invite",
+		"soundmark": "/tə/ /ɪn'vaɪt/"
+	},
+	{
+		"chinese": "邀请（名词）",
+		"english": "invitation",
+		"soundmark": "/ɪnvɪ'teʃən/"
+	},
+	{
+		"chinese": "这个邀请",
+		"english": "the invitation",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
+	},
+	{
+		"chinese": "接受",
+		"english": "to accept",
+		"soundmark": "/tə/ /ək'sɛpt/"
+	},
+	{
+		"chinese": "接受这个邀请",
+		"english": "to accept the invitation",
+		"soundmark": "/tə/ /ək'sɛpt/ /ði/ /ɪnvɪ'teʃən/"
+	},
+	{
+		"chinese": "加入我们的团队",
+		"english": "to join our team",
+		"soundmark": "/tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "加入我们的团队的邀请",
+		"english": "the invitation to join our team",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "接受加入我们团队的邀请",
+		"english": "to accept the invitation to join our team",
+		"soundmark": "/tə/ /ək'sɛpt/ /ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "他接受加入我们团队的邀请",
+		"english": "he accepts the invitation to join our team",
+		"soundmark": "/hi/ /ək'sɛpts/ /ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "他不接受加入我们团队的邀请",
+		"english": "he doesn't accept the invitation to join our team",
+		"soundmark": "/hi/ /ˈdʌznt/ /ək'sɛpt/ /ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "他接受了加入我们团队的邀请",
+		"english": "he accepted the invitation to join our team",
+		"soundmark": "/hi/ /ək'sɛptɪd/ /ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "他（过去）没有接受加入我们团队的邀请",
+		"english": "he didn't accept the invitation to join our team",
+		"soundmark": "/hi/ /ˈdɪdnt/ /ək'sɛpt/ /ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
+	},
+	{
+		"chinese": "这个礼物",
+		"english": "the gift",
+		"soundmark": "/ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "接受",
+		"english": "to accept",
+		"soundmark": "/tə/ /ək'sɛpt/"
+	},
+	{
+		"chinese": "接受这个礼物",
+		"english": "to accept the gift",
+		"soundmark": "/tə/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他接受这个礼物",
+		"english": "he accepts the gift",
+		"soundmark": "/hi/ /ək'sɛpts/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他不接受这个礼物",
+		"english": "he doesn't accept the gift",
+		"soundmark": "/hi/ /ˈdʌznt/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他（过去）接受这个礼物",
+		"english": "he accepted the gift",
+		"soundmark": "/hi/ /ək'sɛptɪd/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他（过去）没有接受这个礼物",
+		"english": "he didn't accept the gift",
+		"soundmark": "/hi/ /ˈdɪdnt/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他想要",
+		"english": "he wants",
+		"soundmark": "/hi/ /wɑnts/"
+	},
+	{
+		"chinese": "他想要接受这个礼物",
+		"english": "he wants to accept the gift",
+		"soundmark": "/hi/ /wɑnts/ /tə/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他不想接受这个礼物",
+		"english": "he doesn't want to accept the gift",
+		"soundmark": "/hi/ /ˈdʌznt/ /wɑnt/ /tə/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他（过去）想要接受这个礼物",
+		"english": "he wanted to accept the gift",
+		"soundmark": "/hi/ /wɑntɪd/ /tə/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "他（过去）不想接受这个礼物",
+		"english": "he didn't want to accept the gift",
+		"soundmark": "/hi/ /ˈdɪdnt/ /wɑnt/ /tə/ /ək'sɛpt/ /ðə/ /ɡɪft/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "你的",
+		"english": "your",
+		"soundmark": "/jʊr/"
+	},
+	{
+		"chinese": "家庭作业",
+		"english": "homework",
+		"soundmark": "/'hom'wɝk/"
+	},
+	{
+		"chinese": "你的家庭作业",
+		"english": "your homework",
+		"soundmark": "/jʊr/ /'hom'wɝk/"
+	},
+	{
+		"chinese": "完成你的家庭作业",
+		"english": "to finish your homework",
+		"soundmark": "/tə/ /'fɪnɪʃ/ /jʊr/ /'hom'wɝk/"
+	},
+	{
+		"chinese": "我想要你",
+		"english": "I want you",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/"
+	},
+	{
+		"chinese": "我想要你完成你的家庭作业",
+		"english": "I want you to finish your homework",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'fɪnɪʃ/ /jʊr/ /'hom'wɝk/"
+	},
+	{
+		"chinese": "看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɔtʃ/"
+	},
+	{
+		"chinese": "电视",
+		"english": "TV",
+		"soundmark": "/ˈtiˈvi/"
+	},
+	{
+		"chinese": "看电视",
+		"english": "to watch TV",
+		"soundmark": "/tə/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "你看电视",
+		"english": "you watch TV",
+		"soundmark": "/ju/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "在......之前",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"chinese": "在你看电视之前",
+		"english": "before you watch TV",
+		"soundmark": "/bɪ'fɔr/ /ju/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "我想要你完成你的家庭作业",
+		"english": "I want you to finish your homework",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'fɪnɪʃ/ /jʊr/ /'hom'wɝk/"
+	},
+	{
+		"chinese": "我想要你完成你的家庭作业在你看电视之前",
+		"english": "I want you to finish your homework before you watch TV",
+		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'fɪnɪʃ/ /jʊr/ /'hom'wɝk/ /bɪ'fɔr/ /ju/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "可以",
+		"english": "can",
+		"soundmark": "/kæn/"
+	},
+	{
+		"chinese": "你可以",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
+	},
+	{
+		"chinese": "你可以看电视",
+		"english": "you can watch TV",
+		"soundmark": "/ju/ /kæn/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "你不可以看电视",
+		"english": "you can not watch TV",
+		"soundmark": "/ju/ /kæn/ /nɑt/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "想要",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"chinese": "你想要",
+		"english": "you want",
+		"soundmark": "/ju/ /wɑnt/"
+	},
+	{
+		"chinese": "是否；如果",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"chinese": "如果你想的话",
+		"english": "if you want",
+		"soundmark": "/ɪf/ /ju/ /wɑnt/"
+	},
+	{
+		"chinese": "你可以看电视",
+		"english": "you can watch TV",
+		"soundmark": "/ju/ /kæn/ /wɔtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "你可以看电视如果你想的话",
+		"english": "you can watch TV if you want",
+		"soundmark": "/ju/ /kæn/ /wɔtʃ/ /ˈtiˈvi/ /ɪf/ /ju/ /wɑnt/"
+	},
+	{
+		"chinese": "回答",
+		"english": "to answer",
+		"soundmark": "/tə/ /'ænsɚ/"
+	},
+	{
+		"chinese": "这个问题",
+		"english": "the question",
+		"soundmark": "/ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "回答这个问题",
+		"english": "to answer the question",
+		"soundmark": "/tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "拒绝",
+		"english": "to refuse",
+		"soundmark": "/tə/ /ri'fjuz/"
+	},
+	{
+		"chinese": "拒绝回答这个问题",
+		"english": "to refuse to answer the question",
+		"soundmark": "/tə/ /ri'fjuz/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "我想拒绝回答这个问题",
+		"english": "I want to refuse to answer the question",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ri'fjuz/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "我拒绝回答这个问题",
+		"english": "I refuse to answer the question",
+		"soundmark": "/aɪ/ /ri'fjuz/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "我（过去）拒绝回答这个问题",
+		"english": "I refused to answer the question",
+		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "这个问题",
+		"english": "the question",
+		"soundmark": "/ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "困难的",
+		"english": "difficult",
+		"soundmark": "/'dɪfɪkəlt/"
+	},
+	{
+		"chinese": "这个问题是困难的",
+		"english": "the question is difficult",
+		"soundmark": "/ðə/ /'kwɛstʃən/ /ɪz/ /'dɪfɪkəlt/"
+	},
+	{
+		"chinese": "这个问题（过去）是困难的",
+		"english": "the question was difficult",
+		"soundmark": "/ðə/ /'kwɛstʃən/ /wəz/ /'dɪfɪkəlt/"
+	},
+	{
+		"chinese": "非常",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"chinese": "这个问题（过去）是非常困难的",
+		"english": "the question was very difficult",
+		"soundmark": "/ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/"
+	},
+	{
+		"chinese": "对我来说",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"chinese": "这个问题（过去）是非常困难的对我来说",
+		"english": "the question was very difficult for me",
+		"soundmark": "/ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为这个问题（过去）是非常困难的对我来说",
+		"english": "because the question was very difficult for me",
+		"soundmark": "/bɪ'kɔz/ /ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "我（过去）拒绝回答这个问题",
+		"english": "I refused to answer the question",
+		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"chinese": "我（过去）拒绝回答这个问题因为这个问题（过去）是非常困难的对我来说",
+		"english": "I refused to answer the question because the question was very difficult for me",
+		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/ /bɪ'kɔz/ /ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "我（过去）拒绝回答这个问题因为它（过去）是非常困难的对我来说",
+		"english": "I refused to answer the question because it was very difficult for me",
+		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/ /bɪ'kɔz/ /ɪt/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "困难的",
+		"english": "difficult",
+		"soundmark": "/'dɪfɪkəlt/"
+	},
+	{
+		"chinese": "它是困难的",
+		"english": "it is difficult",
+		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "这个工作",
+		"english": "the work",
+		"soundmark": "/ðə/ /wɝk/"
+	},
+	{
+		"chinese": "完成这个工作",
+		"english": "to finish the work",
+		"soundmark": "/tə/ /'fɪnɪʃ/ /ðə/ /wɝk/"
+	},
+	{
+		"chinese": "完成这个工作（它）是困难的",
+		"english": "it is difficult to finish the work",
+		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /'fɪnɪʃ/ /ðə/ /wɝk/"
+	},
+	{
+		"chinese": "一天",
+		"english": "a day",
+		"soundmark": "/ə/ /de/"
+	},
+	{
+		"chinese": "在一天内",
+		"english": "in a day",
+		"soundmark": "/ɪn/ /ə/ /de/"
+	},
+	{
+		"chinese": "在一天内完成这个工作（它）是困难的",
+		"english": "it is difficult to finish the work in a day",
+		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /'fɪnɪʃ/ /ðə/ /wɝk/ /ɪn/ /ə/ /de/"
+	},
+	{
+		"chinese": "危险的",
+		"english": "dangerous",
+		"soundmark": "/'dendʒərəs/"
+	},
+	{
+		"chinese": "它是危险的",
+		"english": "it is dangerous",
+		"soundmark": "/ɪt/ /ɪz/ /'dendʒərəs/"
+	},
+	{
+		"chinese": "游泳",
+		"english": "to swim",
+		"soundmark": "/tə/ /swɪm/"
+	},
+	{
+		"chinese": "大海",
+		"english": "the sea",
+		"soundmark": "/ðə/ /si/"
+	},
+	{
+		"chinese": "在大海里",
+		"english": "in the sea",
+		"soundmark": "/ɪn/ /ðə/ /si/"
+	},
+	{
+		"chinese": "在大海里游泳",
+		"english": "to swim in the sea",
+		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/"
+	},
+	{
+		"chinese": "在大海里游泳（它）是危险的",
+		"english": "it is dangerous to swim in the sea",
+		"soundmark": "/ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
+	},
+	{
+		"chinese": "认为",
+		"english": "think",
+		"soundmark": "/θɪŋk/"
+	},
+	{
+		"chinese": "我认为",
+		"english": "I think",
+		"soundmark": "/aɪ/ /θɪŋk/"
+	},
+	{
+		"chinese": "我认为在大海里游泳（它）是危险的",
+		"english": "I think it is dangerous to swim in the sea",
+		"soundmark": "/aɪ/ /θɪŋk/ /ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
+	},
+	{
+		"chinese": "我不认为在大海里游泳（它）是危险的",
+		"english": "I don't think it is dangerous to swim in the sea",
+		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
+	},
+	{
+		"chinese": "我拒绝",
+		"english": "I refuse",
+		"soundmark": "/aɪ/ /ri'fjuz/"
+	},
+	{
+		"chinese": "我拒绝在大海里游泳",
+		"english": "I refuse to swim in the sea",
+		"soundmark": "/aɪ/ /ri'fjuz/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为它是危险的",
+		"english": "because it is dangerous",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /'dendʒərəs/"
+	},
+	{
+		"chinese": "我拒绝在大海里游泳因为它是危险的",
+		"english": "I refuse to swim in the sea because it is dangerous",
+		"soundmark": "/aɪ/ /ri'fjuz/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'kɔz/ /ɪt/ /ɪz/ /'dendʒərəs/"
+	},
+	{
+		"chinese": "接受",
+		"english": "to accept",
+		"soundmark": "/tə/ /ək'sɛpt/"
+	},
+	{
+		"chinese": "这个挑战",
+		"english": "the challenge",
+		"soundmark": "/ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "接受这个挑战",
+		"english": "to accept the challenge",
+		"soundmark": "/tə/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我必须接受这个挑战",
+		"english": "I have to accept the challenge",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我（过去）必须接受这个挑战",
+		"english": "I had to accept the challenge",
+		"soundmark": "/aɪ/ /hæd/ /tə/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我（过去）不必接受这个挑战",
+		"english": "I didn't have to accept the challenge",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /tə/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我接受这个挑战",
+		"english": "I accept the challenge",
+		"soundmark": "/aɪ/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我不接受这个挑战",
+		"english": "I don't accept the challenge",
+		"soundmark": "/aɪ/ /dont/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我（过去）接受这个挑战",
+		"english": "I accepted the challenge",
+		"soundmark": "/aɪ/ /ək'sɛptɪd/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "我（过去）不接受这个挑战",
+		"english": "I didn't accept the challenge",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /ək'sɛpt/ /ðə/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "大的",
+		"english": "big",
+		"soundmark": "/bɪɡ/"
+	},
+	{
+		"chinese": "一个大的挑战",
+		"english": "a big challenge",
+		"soundmark": "/ə/ /bɪɡ/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "英语是一个大的挑战",
+		"english": "English is a big challenge",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /ə/ /bɪɡ/ /'tʃælɪndʒ/"
+	},
+	{
+		"chinese": "对我来说",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"chinese": "英语是一个大的挑战对我来说",
+		"english": "English is a big challenge for me",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "英语不是一个大的挑战对我来说",
+		"english": "English is not a big challenge for me",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /nɑt/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "掌握",
+		"english": "to master",
+		"soundmark": "/tə/ /'mæstɚ/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "掌握英语",
+		"english": "to master English",
+		"soundmark": "/tə/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "我将会",
+		"english": "I will",
+		"soundmark": "/aɪ/ /wɪl/"
+	},
+	{
+		"chinese": "我将会掌握英语",
+		"english": "I will master English",
+		"soundmark": "/aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "将来",
+		"english": "the future",
+		"soundmark": "/ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "在将来",
+		"english": "in the future",
+		"soundmark": "/ɪn/ /ðə/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "不远的",
+		"english": "near",
+		"soundmark": "/nɪr/"
+	},
+	{
+		"chinese": "在不远的将来",
+		"english": "in the near future",
+		"soundmark": "/ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "我将会在不远的将来掌握英语",
+		"english": "I will master English in the near future",
+		"soundmark": "/aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "我知道",
+		"english": "I know",
+		"soundmark": "/aɪ/ /no/"
+	},
+	{
+		"chinese": "我知道我将会在不远的将来掌握英语",
+		"english": "I know I will master English in the near future",
+		"soundmark": "/aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "而且",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"chinese": "而且我知道我将会在不远的将来掌握英语",
+		"english": "and I know I will master english in the near future",
+		"soundmark": "/ənd/ /aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
+	},
+	{
+		"chinese": "英语不是一个大的挑战对我来说",
+		"english": "English is not a big challenge for me",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /nɑt/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/"
+	},
+	{
+		"chinese": "英语不是一个大的挑战对我来说而且我知道我将会在不远的将来掌握英语",
+		"english": "English is not a big challenge for me and I know I will master english in the near future",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /nɑt/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/ /ənd/ /aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
+	}
+]

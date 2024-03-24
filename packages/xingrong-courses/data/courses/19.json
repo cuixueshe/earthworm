@@ -1,0 +1,732 @@
+[
+	{
+		"chinese": "书",
+		"english": "book",
+		"soundmark": "/bʊk/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "一本英语书",
+		"english": "an English book",
+		"soundmark": "/æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "阅读",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"chinese": "阅读一本英语书",
+		"english": "to read an English book",
+		"soundmark": "/tə/ /rid/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "阅读（ing形式）",
+		"english": "reading",
+		"soundmark": "/ridɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在阅读",
+		"english": "be reading",
+		"soundmark": "/bi/ /ridɪŋ/"
+	},
+	{
+		"chinese": "正在阅读一本英语书",
+		"english": "be reading an English book",
+		"soundmark": "/bi/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "我（现在）正在阅读一本英语书",
+		"english": "I am reading an English book",
+		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "这一瞬间；这一刻",
+		"english": "the moment",
+		"soundmark": "/ðə/ /'momənt/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我此刻正在阅读一本英语书",
+		"english": "I am reading an English book at the moment",
+		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我（过去）正在阅读一本英语书",
+		"english": "I was reading an English book",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "昨晚",
+		"english": "last night",
+		"soundmark": "/læst/ /naɪt/"
+	},
+	{
+		"chinese": "我昨晚正在阅读一本英语书",
+		"english": "I was reading an English book last night",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /læst/ /naɪt/"
+	},
+	{
+		"chinese": "家",
+		"english": "home",
+		"soundmark": "/hom/"
+	},
+	{
+		"chinese": "工作",
+		"english": "work",
+		"soundmark": "/wɝk/"
+	},
+	{
+		"chinese": "家庭作业",
+		"english": "homework",
+		"soundmark": "/'homwɝk/"
+	},
+	{
+		"chinese": "她的",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "她的家庭作业",
+		"english": "her homework",
+		"soundmark": "/hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做她的家庭作业",
+		"english": "to do her homework",
+		"soundmark": "/tə/ /du/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "做（ing形式）",
+		"english": "doing",
+		"soundmark": "/ˈduɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在做",
+		"english": "be doing",
+		"soundmark": "/bi/ /ˈduɪŋ/"
+	},
+	{
+		"chinese": "正在做她的家庭作业",
+		"english": "be doing her homework",
+		"soundmark": "/bi/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在做她的家庭作业",
+		"english": "she is doing her homework",
+		"soundmark": "/ʃi/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "女儿",
+		"english": "daughter",
+		"soundmark": "/'dɔtɚ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "我的女儿（现在）正在做她的家庭作业",
+		"english": "my daughter is doing her homework",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我的女儿此刻正在做她的家庭作业",
+		"english": "my daughter is doing her homework at the moment",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我的女儿（过去）正在做她的家庭作业",
+		"english": "my daughter was doing her homework",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "我（过去）正在阅读一本英语书",
+		"english": "I was reading an English book",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我（过去）正在阅读一本英语书与此同时我的女儿（过去）正在做她的家庭作业",
+		"english": "I was reading an English book while my daughter was doing her homework",
+		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /waɪl/ /maɪ/ /'dɔtɚ/ /wəz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/"
+	},
+	{
+		"chinese": "跑步",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
+	},
+	{
+		"chinese": "街道",
+		"english": "the street",
+		"soundmark": "/ðə/ /strit/"
+	},
+	{
+		"chinese": "在街上",
+		"english": "in the street",
+		"soundmark": "/ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "在街上跑步",
+		"english": "to run in the street",
+		"soundmark": "/tə/ /rʌn/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "跑步（ing形式）",
+		"english": "running",
+		"soundmark": "/'rʌnɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在跑步",
+		"english": "be running",
+		"soundmark": "/bi/ /'rʌnɪŋ/"
+	},
+	{
+		"chinese": "正在在街上跑步",
+		"english": "be running in the street",
+		"soundmark": "/bi/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他（现在）正在在街上跑步",
+		"english": "he is running in the street",
+		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "他此刻正在在街上跑步",
+		"english": "he is running in the street at the moment",
+		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "他（过去）正在在街上跑步",
+		"english": "he was running in the street",
+		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "游泳",
+		"english": "to swim",
+		"soundmark": "/tə/ /swɪm/"
+	},
+	{
+		"chinese": "游泳池",
+		"english": "the pool",
+		"soundmark": "/ðə/ /pul/"
+	},
+	{
+		"chinese": "在游泳池里",
+		"english": "in the pool",
+		"soundmark": "/ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "在游泳池里游泳",
+		"english": "to swim in the pool",
+		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "游泳（ing形式）",
+		"english": "swimming",
+		"soundmark": "/'swɪmɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在游泳",
+		"english": "be swimming",
+		"soundmark": "/bi/ /'swɪmɪŋ/"
+	},
+	{
+		"chinese": "正在在游泳池里游泳",
+		"english": "be swimming in the pool",
+		"soundmark": "/bi/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在游泳池里游泳",
+		"english": "she is swimming in the pool",
+		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "她此刻正在游泳池里游泳",
+		"english": "she is swimming in the pool at the moment",
+		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/ /æt/ /ðə/ /moment/ /'momənt/"
+	},
+	{
+		"chinese": "她（过去）正在游泳池里游泳",
+		"english": "she was swimming in the pool",
+		"soundmark": "/ʃi/ /wəz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "他（过去）正在在街上跑步",
+		"english": "he was running in the street",
+		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "他（过去）正在在街上跑步与此同时她（过去）正在游泳池里游泳",
+		"english": "he was running in the street while she was swimming in the pool",
+		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /waɪl/ /ʃi/ /wəz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
+	},
+	{
+		"chinese": "房子",
+		"english": "house",
+		"soundmark": "/haʊs/"
+	},
+	{
+		"chinese": "工作",
+		"english": "work",
+		"soundmark": "/wɝk/"
+	},
+	{
+		"chinese": "家务",
+		"english": "the housework",
+		"soundmark": "/ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "做",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"chinese": "做家务",
+		"english": "to do the housework",
+		"soundmark": "/tə/ /du/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "做（ing形式）",
+		"english": "doing",
+		"soundmark": "/ˈduɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在做",
+		"english": "be doing",
+		"soundmark": "/bi/ /ˈduɪŋ/"
+	},
+	{
+		"chinese": "正在做家务",
+		"english": "be doing the housework",
+		"soundmark": "/bi/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在做家务",
+		"english": "she is doing the housework",
+		"soundmark": "/ʃi/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "母亲；妈妈",
+		"english": "mother",
+		"soundmark": "/'mʌðɚ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的妈妈",
+		"english": "my mother",
+		"soundmark": "/maɪ/ /'mʌðɚ/"
+	},
+	{
+		"chinese": "我的妈妈（现在）正在做家务",
+		"english": "my mother is doing the housework",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我妈此刻正在做家务",
+		"english": "my mother is doing the housework at the moment",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我妈（过去）正在做家务",
+		"english": "my mother was doing the housework",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /wəz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "说话",
+		"english": "to talk",
+		"soundmark": "/tə/ /tɔk/"
+	},
+	{
+		"chinese": "手机",
+		"english": "the phone",
+		"soundmark": "/ðə/ /fon/"
+	},
+	{
+		"chinese": "在手机上",
+		"english": "on the phone",
+		"soundmark": "/ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "在手机上说话",
+		"english": "to talk on the phone",
+		"soundmark": "/tə/ /tɔk/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "说话（ing形式）",
+		"english": "talking",
+		"soundmark": "/'tɔkɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在说话",
+		"english": "be talking",
+		"soundmark": "/bi/ /'tɔkɪŋ/"
+	},
+	{
+		"chinese": "正在在手机上说话",
+		"english": "be talking on the phone",
+		"soundmark": "/bi/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "他",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"chinese": "他（现在）正在手机上说话",
+		"english": "he is talking on the phone",
+		"soundmark": "/hi/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "父亲；爸爸",
+		"english": "father",
+		"soundmark": "/'fɑðɚ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "我的父亲",
+		"english": "my father",
+		"soundmark": "/maɪ/ /'fɑðɚ/"
+	},
+	{
+		"chinese": "我爸（现在）正在手机上说话",
+		"english": "my father is talking on the phone",
+		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我爸此刻正在手机上说话",
+		"english": "my father is talking on the phone at the moment",
+		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我爸（过去）正在手机上说话",
+		"english": "my father was talking on the phone",
+		"soundmark": "/maɪ/ /'fɑðɚ/ /wəz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我妈（过去）正在做家务",
+		"english": "my mother was doing the housework",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /wəz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"chinese": "我妈（过去）正在做家务与此同时我爸（过去）正在手机上说话",
+		"english": "my mother was doing the housework while my father was talking on the phone",
+		"soundmark": "/maɪ/ /'mʌðɚ/ /wəz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /waɪl/ /maɪ/ /'fɑðɚ/ /wəz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
+	},
+	{
+		"chinese": "看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɑtʃ/"
+	},
+	{
+		"chinese": "电视",
+		"english": "TV",
+		"soundmark": "/ˈtiˈvi/"
+	},
+	{
+		"chinese": "看电视",
+		"english": "to watch TV",
+		"soundmark": "/tə/ /'wɑtʃ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "看（ing形式）",
+		"english": "watching",
+		"soundmark": "/'wɑtʃɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在看",
+		"english": "be watching",
+		"soundmark": "/bi/ /'wɑtʃɪŋ/"
+	},
+	{
+		"chinese": "正在看电视",
+		"english": "be watching TV",
+		"soundmark": "/bi/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在看电视",
+		"english": "she is watching TV",
+		"soundmark": "/ʃi/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "女儿",
+		"english": "daughter",
+		"soundmark": "/'dɔtɚ/"
+	},
+	{
+		"chinese": "我的女儿",
+		"english": "my daughter",
+		"soundmark": "/maɪ/ /'dɔtɚ/"
+	},
+	{
+		"chinese": "我女儿（现在）正在看电视",
+		"english": "my daughter is watching TV",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我女儿此刻正在看电视",
+		"english": "my daughter is watching TV at the moment",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "我女儿（过去）正在看电视",
+		"english": "my daughter was watching TV",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "烹饪；做饭",
+		"english": "to cook",
+		"soundmark": "/tə/ /kʊk/"
+	},
+	{
+		"chinese": "牛肉",
+		"english": "beef",
+		"soundmark": "/bif/"
+	},
+	{
+		"chinese": "做牛肉",
+		"english": "to cook beef",
+		"soundmark": "/tə/ /kʊk/ /bif/"
+	},
+	{
+		"chinese": "和",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"chinese": "土豆",
+		"english": "potatoes",
+		"soundmark": "/pə'tetoz/"
+	},
+	{
+		"chinese": "和土豆",
+		"english": "with potatoes",
+		"soundmark": "/wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "牛肉和土豆",
+		"english": "beef with potatoes",
+		"soundmark": "/bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "烹饪牛肉和土豆",
+		"english": "to cook beef with potatoes",
+		"soundmark": "/tə/ /kʊk/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "烹饪；做饭（ing形式）",
+		"english": "cooking",
+		"soundmark": "/'kʊkɪŋ/"
+	},
+	{
+		"chinese": "是；赋值（原型）",
+		"english": "be",
+		"soundmark": "/bi/"
+	},
+	{
+		"chinese": "正在烹饪",
+		"english": "be cooking",
+		"soundmark": "/bi/ /'kʊkɪŋ/"
+	},
+	{
+		"chinese": "正在做牛肉烧土豆",
+		"english": "be cooking beef with potatoes",
+		"soundmark": "/bi/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她（现在）正在做牛肉烧土豆",
+		"english": "she is cooking beef with potatoes",
+		"soundmark": "/ʃi/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "母亲；妈妈",
+		"english": "mother",
+		"soundmark": "/'mʌðɚ/"
+	},
+	{
+		"chinese": "她的",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "她的妈妈",
+		"english": "her mother",
+		"soundmark": "/hɚ/ /'mʌðɚ/"
+	},
+	{
+		"chinese": "她妈妈（现在）正在做牛肉烧土豆",
+		"english": "her mother is cooking beef with potatoes",
+		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "在这一刻；此刻",
+		"english": "at the moment",
+		"soundmark": "/æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "她妈妈此刻正在做牛肉烧土豆",
+		"english": "her mother is cooking beef with potatoes at the moment",
+		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/ /æt/ /ðə/ /'momənt/"
+	},
+	{
+		"chinese": "她妈妈（过去）正在做牛肉烧土豆",
+		"english": "her mother was cooking beef with potatoes",
+		"soundmark": "/hɚ/ /'mʌðɚ/ /wəz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	},
+	{
+		"chinese": "我女儿（过去）正在看电视",
+		"english": "my daughter was watching TV",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/"
+	},
+	{
+		"chinese": "与此同时",
+		"english": "while",
+		"soundmark": "/waɪl/"
+	},
+	{
+		"chinese": "我女儿（过去）正在看电视与此同时她妈妈（过去）正在做牛肉烧土豆",
+		"english": "my daughter was watching TV while her mother was cooking beef with potatoes",
+		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /waɪl/ /hɚ/ /'mʌðɚ/ /wəz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
+	}
+]

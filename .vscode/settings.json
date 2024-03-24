@@ -4,9 +4,11 @@
   "prettier.singleQuote": false,
   "prettier.printWidth": 80,
   "prettier.trailingComma": "es5",
+  "prettier.singleAttributePerLine": true,
   // Use `eslint` for vue, ts and js
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"

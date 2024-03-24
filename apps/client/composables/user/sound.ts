@@ -1,30 +1,36 @@
-import { ref } from "vue"
+import { useLocalStorageBoolean } from "~/utils/localStorage";
 
-export const AUTO_PLAY_SOUND = 'autoPlaySound'
+export const AUTO_PRONUNCIATION = "autoPronunciation";
+export const KEYBOARD_SOUND_KEY = "keyboardSoundEnabled";
 
-const autoPlaySound = ref(true)
+export function useAutoPronunciation() {
+  const {
+    value: autoPlaySound,
+    isTrue: isAutoPlaySound,
+    toggle: toggleAutoPlaySound,
+    remove: removeAutoPlaySound,
+  } = useLocalStorageBoolean(AUTO_PRONUNCIATION, true); // 默认开启
 
-function loadCache() {
-  const value = localStorage.getItem(AUTO_PLAY_SOUND)
-  store(value !== 'false')  
-}
-
-const store = function(value: boolean) {
-  autoPlaySound.value = value
-  localStorage.setItem(AUTO_PLAY_SOUND, `${value}`)
-}
-
-const toggleAutoPlaySound = () => {
-  store(!autoPlaySound.value)
-}
-
-const isAutoPlaySound = () => autoPlaySound.value
-
-export function useAutoSound() {
-  loadCache()
   return {
     autoPlaySound,
     isAutoPlaySound,
-    toggleAutoPlaySound
-  }
+    toggleAutoPlaySound,
+    removeAutoPlaySound,
+  };
+}
+
+export function useKeyboardSound() {
+  const {
+    value: keyboardSound,
+    isTrue: isKeyboardSoundEnabled,
+    toggle: toggleKeyboardSound,
+    remove: removeKeyboardSound,
+  } = useLocalStorageBoolean(KEYBOARD_SOUND_KEY, true); // 默认开启
+
+  return {
+    keyboardSound,
+    isKeyboardSoundEnabled,
+    toggleKeyboardSound,
+    removeKeyboardSound,
+  };
 }

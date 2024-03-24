@@ -1,0 +1,677 @@
+[
+	{
+		"chinese": "聚会",
+		"english": "the party",
+		"soundmark": "/ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "参加；加入",
+		"english": "to join",
+		"soundmark": "/tə/ /dʒɔɪn/"
+	},
+	{
+		"chinese": "参加聚会",
+		"english": "to join the party",
+		"soundmark": "/tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "邀请",
+		"english": "to invite",
+		"soundmark": "/tə/ /'ɪnvaɪt/"
+	},
+	{
+		"chinese": "她",
+		"english": "her",
+		"soundmark": "/hɚ/"
+	},
+	{
+		"chinese": "邀请她",
+		"english": "to invite her",
+		"soundmark": "/tə/ /'ɪnvaɪt/ /hɚ/"
+	},
+	{
+		"chinese": "参加聚会",
+		"english": "to join the party",
+		"soundmark": "/tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "邀请她参加聚会",
+		"english": "to invite her to join the party",
+		"soundmark": "/tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "我们想要",
+		"english": "we want",
+		"soundmark": "/wi/ /wɑnt/"
+	},
+	{
+		"chinese": "我们想要邀请她参加聚会",
+		"english": "we want to invite her to join the party",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "我们不想邀请她参加聚会",
+		"english": "we don't want to invite her to join the party",
+		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "我们（过去）想要邀请她参加聚会",
+		"english": "we wanted to invite her to join the party",
+		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "昨天",
+		"english": "yesterday",
+		"soundmark": "/'jɛstɚde/"
+	},
+	{
+		"chinese": "我们昨天想要邀请她参加聚会",
+		"english": "we wanted to invite her to join the party yesterday",
+		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我们昨天不想邀请她参加聚会",
+		"english": "we didn't want to invite her to join the party yesterday",
+		"soundmark": "/wi/ /ˈdɪdnt/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "我们邀请她参加聚会",
+		"english": "we invite her to join the party",
+		"soundmark": "/wi/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "经常",
+		"english": "often",
+		"soundmark": "/'ɔfn/"
+	},
+	{
+		"chinese": "我们经常邀请她参加聚会",
+		"english": "we often invite her to join the party",
+		"soundmark": "/wi/ /'ɔfn/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "我们（过去）邀请她参加聚会",
+		"english": "we invited her to join the party",
+		"soundmark": "/wi/ /'ɪnvaɪtɪd/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "我们（过去）没有邀请她参加聚会",
+		"english": "we didn't invite her to join the party",
+		"soundmark": "/wi/ /ˈdɪdnt/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "参加；加入",
+		"english": "to join",
+		"soundmark": "/tə/ /dʒɔɪn/"
+	},
+	{
+		"chinese": "我们",
+		"english": "us",
+		"soundmark": "/ʌs/"
+	},
+	{
+		"chinese": "加入我们",
+		"english": "to join us",
+		"soundmark": "/tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "她",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"chinese": "她想要加入我们",
+		"english": "she wants to join us",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "她（过去）想要加入我们",
+		"english": "she wanted to join us",
+		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "真的",
+		"english": "really",
+		"soundmark": "/'rili/"
+	},
+	{
+		"chinese": "她真的（过去）想要加入我们",
+		"english": "she really wanted to join us",
+		"soundmark": "/ʃi/ /'rili/ /wɑntɪd/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "她（过去）不想加入我们",
+		"english": "she didn't want to join us",
+		"soundmark": "/ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bət/"
+	},
+	{
+		"chinese": "但是她（过去）不想加入我们",
+		"english": "but she didn't want to join us",
+		"soundmark": "/bət/ /ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "我们昨天想要邀请她参加聚会",
+		"english": "we wanted to invite her to join the party yesterday",
+		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
+	},
+	{
+		"chinese": "但是她（过去）不想加入我们",
+		"english": "but she didn't want to join us",
+		"soundmark": "/bət/ /ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "我们昨天不想邀请她参加聚会但是她真的（过去）想要加入我们",
+		"english": "we didn't want to invite her to join the party yesterday but she really wanted to join us",
+		"soundmark": "/wi/ /ˈdɪdnt/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/ /bət/ /ʃi/ /'rili/ /wɑntɪd/ /tə/ /dʒɔɪn/ /ʌs/"
+	},
+	{
+		"chinese": "拒绝",
+		"english": "to refuse",
+		"soundmark": "/tə/ /ri'fjuz/"
+	},
+	{
+		"chinese": "她（过去）拒绝",
+		"english": "she refused",
+		"soundmark": "/ʃi/ /ri'fjuzd/"
+	},
+	{
+		"chinese": "参加聚会",
+		"english": "to join the party",
+		"soundmark": "/tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "她（过去）拒绝参加聚会",
+		"english": "she refused to join the party",
+		"soundmark": "/ʃi/ /ri'fjuzd/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "她（过去）没有拒绝参加聚会",
+		"english": "she didn't refuse to join the party",
+		"soundmark": "/ʃi/ /ˈdɪdnt/ /ri'fjuz/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "拥有",
+		"english": "have",
+		"soundmark": "/hæv/"
+	},
+	{
+		"chinese": "她有时间",
+		"english": "she has time",
+		"soundmark": "/ʃi/ /hæz/ /taɪm/"
+	},
+	{
+		"chinese": "足够的",
+		"english": "enough",
+		"soundmark": "/ɪ'nʌf/"
+	},
+	{
+		"chinese": "她有足够的时间",
+		"english": "she has enough time",
+		"soundmark": "/ʃi/ /hæz/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "她（过去）有足够的时间",
+		"english": "she had enough time",
+		"soundmark": "/ʃi/ /hæd/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "她（过去）没有足够的时间",
+		"english": "she didn't have enough time",
+		"soundmark": "/ʃi/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "因为",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"chinese": "因为她（过去）没有足够的时间",
+		"english": "because she didn't have enough time",
+		"soundmark": "/bɪ'kɔz/ /ʃi/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "她（过去）拒绝参加聚会因为她（过去）没有足够的时间",
+		"english": "she refused to join the party because she didn't have enough time",
+		"soundmark": "/ʃi/ /ri'fjuzd/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /bɪ'kɔz/ /ʃi/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "她（过去）没有拒绝参加聚会因为她（过去）有足够的时间",
+		"english": "she didn't refuse to join the party because she had enough time",
+		"soundmark": "/ʃi/ /ˈdɪdnt/ /ri'fjuz/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /bɪ'kɔz/ /ʃi/ /hæd/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "接受；承担",
+		"english": "to accept",
+		"soundmark": "/tə/ /ək'sɛpt/"
+	},
+	{
+		"chinese": "责任",
+		"english": "the responsibility",
+		"soundmark": "/ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "承担责任",
+		"english": "to accept the responsibility",
+		"soundmark": "/tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "拒绝",
+		"english": "to refuse",
+		"soundmark": "/tə/ /ri'fjuz/"
+	},
+	{
+		"chinese": "他拒绝承担责任",
+		"english": "he refuses to accept the responsibility",
+		"soundmark": "/hi/ /ri'fjuzɪz/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "他（过去）拒绝承担责任",
+		"english": "he refused to accept the responsibility",
+		"soundmark": "/hi/ /ri'fjuzd/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "他（过去）没有拒绝承担责任",
+		"english": "he didn't refuse to accept the responsibility",
+		"soundmark": "/hi/ /ˈdɪdnt/ /ri'fjuz/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "他承担责任",
+		"english": "he accepts the responsibility",
+		"soundmark": "/hi/ /ək'sɛpts/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "承担了",
+		"english": "accepted",
+		"soundmark": "/ək'sɛptɪd/"
+	},
+	{
+		"chinese": "他承担了责任",
+		"english": "he accepted the responsibility",
+		"soundmark": "/hi/ /ək'sɛptɪd/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "他（过去）没有承担责任",
+		"english": "he didn't accept the responsibility",
+		"soundmark": "/hi/ /ˈdɪdnt/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
+	},
+	{
+		"chinese": "驾驶；开车",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
+	},
+	{
+		"chinese": "如何",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"chinese": "如何开车",
+		"english": "how to drive",
+		"soundmark": "/haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɝn/"
+	},
+	{
+		"chinese": "学习如何开车",
+		"english": "to learn how to drive",
+		"soundmark": "/tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "我想要学习如何开车",
+		"english": "I want to learn how to drive",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "真的",
+		"english": "really",
+		"soundmark": "/'rili/"
+	},
+	{
+		"chinese": "我真的想要学习如何开车",
+		"english": "I really want to learn how to drive",
+		"soundmark": "/aɪ/ /'rili/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "我真的不想学习如何开车",
+		"english": "I really don't want to learn how to drive",
+		"soundmark": "/aɪ/ /'rili/ /dont/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "我真的（过去）想要学习如何开车",
+		"english": "I really wanted to learn how to drive",
+		"soundmark": "/aɪ/ /'rili/ /wɑntɪd/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "我真的（过去）不想学习如何开车",
+		"english": "I really didn't want to learn how to drive",
+		"soundmark": "/aɪ/ /'rili/ /ˈdɪdnt/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "驾驶；开车",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
+	},
+	{
+		"chinese": "驾驶员",
+		"english": "driver",
+		"soundmark": "/'draɪvɚ/"
+	},
+	{
+		"chinese": "执照",
+		"english": "license",
+		"soundmark": "/'laɪsns/"
+	},
+	{
+		"chinese": "驾照",
+		"english": "driver's license",
+		"soundmark": "/'draɪvɚz/ /'laɪsns/"
+	},
+	{
+		"chinese": "一个驾照",
+		"english": "a driver's license",
+		"soundmark": "/ə/ /'draɪvɚz/ /'laɪsns/"
+	},
+	{
+		"chinese": "达到；获得",
+		"english": "to get",
+		"soundmark": "/tə/ /gɛt/"
+	},
+	{
+		"chinese": "获得一个驾照",
+		"english": "to get a driver's license",
+		"soundmark": "/tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
+	},
+	{
+		"chinese": "我需要",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"chinese": "我需要获得一个驾照",
+		"english": "I need to get a driver's license",
+		"soundmark": "/aɪ/ /nid/ /tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
+	},
+	{
+		"chinese": "而且",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"chinese": "而且我需要获得一个驾照",
+		"english": "and I need to get a driver's license",
+		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
+	},
+	{
+		"chinese": "我真的（过去）想要学习如何开车",
+		"english": "I really wanted to learn how to drive",
+		"soundmark": "/aɪ/ /'rili/ /wɑntɪd/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
+	},
+	{
+		"chinese": "我真的（过去）想要学习如何开车而且我需要获得一个驾照",
+		"english": "I really wanted to learn how to drive and I need to get a driver's license",
+		"soundmark": "/aɪ/ /'rili/ /wɑntɪd/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/ /ənd/ /aɪ/ /nid/ /tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "我的",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"chinese": "工作",
+		"english": "work",
+		"soundmark": "/wɝk/"
+	},
+	{
+		"chinese": "我的工作",
+		"english": "my work",
+		"soundmark": "/maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "完成我的工作",
+		"english": "to finish my work",
+		"soundmark": "/tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "我想要",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"chinese": "我想要完成我的工作",
+		"english": "I want to finish my work",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "我不想完成我的工作",
+		"english": "I don't want to finish my work",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "只是",
+		"english": "just",
+		"soundmark": "/dʒʌst/"
+	},
+	{
+		"chinese": "我只是想要完成我的工作",
+		"english": "I just want to finish my work",
+		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "我只是（过去）想要完成我的工作",
+		"english": "I just wanted to finish my work",
+		"soundmark": "/aɪ/ /dʒʌst/ /wɑntɪd/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "准时",
+		"english": "on time",
+		"soundmark": "/ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "我只是（过去）想要准时完成我的工作",
+		"english": "I just wanted to finish my work on time",
+		"soundmark": "/aɪ/ /dʒʌst/ /wɑntɪd/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "我（过去）不想准时完成我的工作",
+		"english": "I didn't want to finish my work on time",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "我准时完成我的工作",
+		"english": "I finish my work on time",
+		"soundmark": "/aɪ/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "我没有准时完成我的工作",
+		"english": "I don't finish my work on time",
+		"soundmark": "/aɪ/ /dont/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "完成了",
+		"english": "finished",
+		"soundmark": "/'fɪnɪʃt/"
+	},
+	{
+		"chinese": "我准时完成了我的工作",
+		"english": "I finished my work on time",
+		"soundmark": "/aɪ/ /'fɪnɪʃt/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "我没有准时（过去）完成我的工作",
+		"english": "I didn't finish my work on time",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɔtʃ/"
+	},
+	{
+		"chinese": "一个电影",
+		"english": "a movie",
+		"soundmark": "/ə/ /'muvi/"
+	},
+	{
+		"chinese": "看一个电影",
+		"english": "to watch a movie",
+		"soundmark": "/tə/ /wɔtʃ/ /ə/ /'muvi/"
+	},
+	{
+		"chinese": "我想看一个电影",
+		"english": "I want to watch a movie",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /wɔtʃ/ /ə/ /'muvi/"
+	},
+	{
+		"chinese": "我不想看那个电影",
+		"english": "I don't want to watch the movie",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /wɔtʃ/ /ðə/ /'muvi/"
+	},
+	{
+		"chinese": "我（过去）想要看一个电影",
+		"english": "I wanted to watch a movie",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/"
+	},
+	{
+		"chinese": "周；星期",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"chinese": "周末",
+		"english": "weekend",
+		"soundmark": "/'wikɛnd/"
+	},
+	{
+		"chinese": "上一个",
+		"english": "last",
+		"soundmark": "/læst/"
+	},
+	{
+		"chinese": "上周末",
+		"english": "last weekend",
+		"soundmark": "/læst/ /'wikɛnd/"
+	},
+	{
+		"chinese": "我上周末想看一个电影",
+		"english": "I wanted to watch a movie last weekend",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/"
+	},
+	{
+		"chinese": "我上周末不想看那个电影",
+		"english": "I didn't want to watch the movie last weekend",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /wɔtʃ/ /ðə/ /'muvi/ /læst/ /'wikɛnd/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "足够的",
+		"english": "enough",
+		"soundmark": "/ɪ'nʌf/"
+	},
+	{
+		"chinese": "足够的时间",
+		"english": "enough time",
+		"soundmark": "/ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "拥有",
+		"english": "have",
+		"soundmark": "/hæv/"
+	},
+	{
+		"chinese": "我有足够的时间",
+		"english": "I have enough time",
+		"soundmark": "/aɪ/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "我没有足够的时间",
+		"english": "I don't have enough time",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "我（过去）有足够的时间",
+		"english": "I had enough time",
+		"soundmark": "/aɪ/ /hæd/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "我（过去）没有足够的时间",
+		"english": "I didn't have enough time",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "但是",
+		"english": "but",
+		"soundmark": "/bət/"
+	},
+	{
+		"chinese": "但是我（过去）没有足够的时间",
+		"english": "but I didn't have enough time",
+		"soundmark": "/bət/ /aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "我上周末想看一个电影",
+		"english": "I wanted to watch a movie last weekend",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/"
+	},
+	{
+		"chinese": "我上周末想看一个电影但是我（过去）没有足够的时间",
+		"english": "I wanted to watch a movie last weekend but I didn't have enough time",
+		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/ /bət/ /aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "完成",
+		"english": "to finish",
+		"soundmark": "/tə/ /'fɪnɪʃ/"
+	},
+	{
+		"chinese": "我的工作",
+		"english": "my work",
+		"soundmark": "/maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "完成我的工作",
+		"english": "to finish my work",
+		"soundmark": "/tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	},
+	{
+		"chinese": "我没有足够的时间",
+		"english": "I don't have enough time",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "我（过去）没有足够的时间",
+		"english": "I didn't have enough time",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
+	},
+	{
+		"chinese": "我（过去）没有足够的时间完成我的工作",
+		"english": "I didn't have enough time to finish my work",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
+	}
+]

@@ -14,24 +14,21 @@
     </div>
 
     <div class="w-[210px]">
-      <button class="tip-btn" @click="toggleGameMode">
-        Space
-      </button>
+      <button class="tip-btn" @click="toggleGameMode">Space</button>
       <span class="ml-2">fix incorrect word</span>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useGameMode } from "~/composables/main/game";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
+import { computed, onMounted, onUnmounted } from "vue";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
+import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
-import { DEFAULT_SHORTCUT_KEYS } from '~/store/user';
-import { onMounted, computed, onUnmounted } from "vue";
-import { useShortcutKeyMode } from '~/composables/user/shortcutKey';
+import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-const { shortcutKeys } = useShortcutKeyMode()
+const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 
@@ -39,7 +36,6 @@ const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
   return isAnswer() ? "again" : "show answer";
 });
-
 
 function usePlaySound(key: string) {
   const { playSound } = useCurrentStatementEnglishSound();

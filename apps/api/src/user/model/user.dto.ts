@@ -9,7 +9,7 @@ export class CreateUserDto {
 
   @ApiProperty()
   @IsNotEmpty({ message: '手机号码不能为空' })
-  @Length(11, 11, { message: '手机号码长度为11位' })
+  @Length(6, 20, { message: '手机号码长度应在6到20位之间' })
   phone: string;
 
   @ApiProperty()
@@ -21,6 +21,6 @@ export class CreateUserDto {
 export class FindUserDto {
   @ApiProperty()
   @IsNotEmpty({ message: '手机号码不能为空' })
-  @Length(11, 11, { message: '手机号码长度为11位' })
+  @Length(6, 20, { message: '手机号码长度应在6到20位之间' })
   phone: string;
 }
