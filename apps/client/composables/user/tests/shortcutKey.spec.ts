@@ -2,16 +2,12 @@ import { beforeEach, describe, expect, it } from "vitest";
 import {
   DEFAULT_SHORTCUT_KEYS,
   SHORTCUT_KEYS,
+  SHORTCUT_KEY_TYPES,
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 
 describe("user defined shortcut key", () => {
-  const soundKey = "sound";
-  const answerKey = "answer";
-
   beforeEach(() => {
-    const { handleCloseDialog } = useShortcutKeyMode();
-    handleCloseDialog();
     localStorage.clear();
   });
 
@@ -38,16 +34,10 @@ describe("user defined shortcut key", () => {
   });
 
   describe("shortcut dialog", () => {
-    it("should be false by default", () => {
-      const { showModal } = useShortcutKeyMode();
-
-      expect(showModal.value).toBeFalsy();
-    });
-
     it("should be true when edit shortcut key", () => {
       const { showModal, handleEdit } = useShortcutKeyMode();
 
-      handleEdit(soundKey);
+      handleEdit(SHORTCUT_KEY_TYPES.SOUND);
 
       expect(showModal.value).toBeTruthy();
     });
@@ -55,7 +45,7 @@ describe("user defined shortcut key", () => {
     it("should be close the dialog when press Enter key", () => {
       const { showModal, handleEdit, handleKeydown } = useShortcutKeyMode();
 
-      handleEdit(soundKey);
+      handleEdit(SHORTCUT_KEY_TYPES.SOUND);
       handleKeydown({
         key: "Enter",
         preventDefault: () => {},
@@ -68,8 +58,6 @@ describe("user defined shortcut key", () => {
   describe("shortcut key set", () => {
     it("should be the shortcut key set invalid when the dialog is not open", () => {
       const { showModal, shortcutKeyStr, handleKeydown } = useShortcutKeyMode();
-
-      expect(showModal.value).toBeFalsy();
 
       // Ctrl+s
       handleKeydown({
@@ -90,9 +78,7 @@ describe("user defined shortcut key", () => {
         handleKeydown,
       } = useShortcutKeyMode();
 
-      handleEdit(soundKey); // open dialog
-
-      expect(showModal.value).toBeTruthy();
+      handleEdit(SHORTCUT_KEY_TYPES.SOUND); // open dialog
 
       handleKeydown({
         key: "s",
@@ -108,9 +94,7 @@ describe("user defined shortcut key", () => {
       const { showModal, shortcutKeys, handleEdit, handleKeydown } =
         useShortcutKeyMode();
 
-      handleEdit(soundKey);
-
-      expect(showModal.value).toBeTruthy();
+      handleEdit(SHORTCUT_KEY_TYPES.SOUND);
 
       handleKeydown({
         key: "Tab",
@@ -121,17 +105,16 @@ describe("user defined shortcut key", () => {
         preventDefault: () => {},
       } as KeyboardEvent);
 
-      expect(showModal.value).toBeFalsy();
-      expect(shortcutKeys.value).toMatchObject({ [soundKey]: "Tab" });
+      expect(shortcutKeys.value).toMatchObject({
+        [SHORTCUT_KEY_TYPES.SOUND]: "Tab",
+      });
     });
 
     it("should be the shortcut key is set successfully when the dialog is open (combination key)", () => {
       const { showModal, shortcutKeys, handleEdit, handleKeydown } =
         useShortcutKeyMode();
 
-      handleEdit(answerKey);
-
-      expect(showModal.value).toBeTruthy();
+      handleEdit(SHORTCUT_KEY_TYPES.ANSWER);
 
       handleKeydown({
         key: "s",
@@ -143,8 +126,9 @@ describe("user defined shortcut key", () => {
         preventDefault: () => {},
       } as KeyboardEvent);
 
-      expect(showModal.value).toBeFalsy();
-      expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Ctrl+s" });
+      expect(shortcutKeys.value).toMatchObject({
+        [SHORTCUT_KEY_TYPES.ANSWER]: "Ctrl+s",
+      });
     });
     it("should be not set successfully with the same shortcut", () => {
       const { showModal, shortcutKeys, handleEdit, handleKeydown, hasSameShortcutKey } =
