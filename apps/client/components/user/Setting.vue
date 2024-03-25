@@ -66,20 +66,6 @@
           />
         </label>
       </div>
-<<<<<<< HEAD
-    </section>
-
-    <section>
-      <h2 class="text-lg">是否展示每个单词长度</h2>
-      <div className="form-control w-52">
-        <label className="cursor-pointer label">
-          <span className="label-text">是</span>
-          <input
-            type="checkbox"
-            className="toggle toggle-primary"
-            :checked="autoShowWordsWidth"
-            @change="toggleAutoWordsWidth"
-=======
       <div class="form-control w-80">
         <label class="cursor-pointer label">
           <span class="label-text">切换口音</span>
@@ -88,7 +74,6 @@
             :options="getPronunciationOptions()"
             :on-update-value="togglePronunciation"
             class="w-[90px]"
->>>>>>> 012b59c44dec1ff5709a908841d0d70e8a1c9ccd
           />
         </label>
       </div>
@@ -177,12 +162,16 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { useAnswerMode } from "~/composables/user/answerMode";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { useKeyboardSound } from "~/composables/user/sound";
+import {
+  useAutoPronunciation,
+  useKeyboardSound,
+} from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
+const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {
   pronunciation,
   // 发音配置列表
