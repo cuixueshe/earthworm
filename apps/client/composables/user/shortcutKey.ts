@@ -1,7 +1,10 @@
-import { ref, computed } from "vue";
-import { DEFAULT_SHORTCUT_KEYS } from "~/store/user";
+import { computed, ref } from "vue";
 
 export const SHORTCUT_KEYS = "shortcutKeys";
+export const DEFAULT_SHORTCUT_KEYS = {
+  sound: "Ctrl+'",
+  answer: "Ctrl+;",
+};
 export const KEYBOARD = {
   ESC: "Esc",
   ALT: "Alt",
