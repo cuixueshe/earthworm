@@ -4,6 +4,7 @@
     :open="showModal"
   >
     <div
+      ref="modalRef"
       class="modal-box rounded-[8px] flex flex-col w-auto py-4 px-[10px] relative dark:bg-[#1E2329]"
     >
       <div class="absolute top-[10px] right-3 mt-0">
@@ -168,8 +169,12 @@ import { onMounted, ref, watch } from "vue";
 import { fetchProgressRank, type ProgressRankVo } from "~/api/rank";
 import { useRankModal } from "~/composables/rank/modal";
 import { usePeriod } from "~/composables/rank/period";
+import { useClickOutside } from "~/composables/rank/useClickOutside";
 const { showModal, hide } = useRankModal();
 const { currentPeriod, RankPeriodList, changePeriodValue } = usePeriod();
+
+const modalRef = ref();
+useClickOutside(modalRef, hide);
 
 const data = ref<ProgressRankVo>({
   list: [],
