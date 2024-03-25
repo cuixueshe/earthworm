@@ -106,6 +106,9 @@ describe("user defined shortcut key", () => {
       expect(shortcutKeys.value).toMatchObject({
         [SHORTCUT_KEY_TYPES.SOUND]: "Tab",
       });
+      expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
+        `"{"sound":"Tab","answer":"Ctrl+;"}"`
+      );
     });
 
     it("should be the shortcut key is set successfully when the dialog is open (combination key)", () => {
@@ -127,6 +130,9 @@ describe("user defined shortcut key", () => {
       expect(shortcutKeys.value).toMatchObject({
         [SHORTCUT_KEY_TYPES.ANSWER]: "Ctrl+s",
       });
+      expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
+        `"{"sound":"Ctrl+'","answer":"Ctrl+s"}"`
+      );
     });
   });
 });
