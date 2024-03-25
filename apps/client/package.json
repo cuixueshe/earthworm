@@ -27,7 +27,6 @@
     "cypress": "^13.6.4",
     "daisyui": "^4.6.0",
     "happy-dom": "^13.3.1",
-    "naive-ui": "^2.37.3",
     "nuxt": "^3.9.0",
     "start-server-and-test": "^2.0.3",
     "tailwindcss": "^3.4.1",

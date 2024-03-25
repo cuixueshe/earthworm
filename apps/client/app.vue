@@ -1,8 +1,5 @@
 <template>
-  <n-config-provider
-    :theme="theme"
-    preflight-style-disabled
-  >
+  <n-config-provider preflight-style-disabled>
     <NuxtLayout>
       <HttpErrorProvider>
         <NuxtPage />
@@ -12,28 +9,14 @@
 </template>
 
 <script setup lang="tsx">
-// import "vfonts/Lato.css";
-import { darkTheme, lightTheme } from "naive-ui";
-import { computed, onMounted } from "vue";
-import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 
 useRestoreUser();
-
-const { initDarkMode, darkMode } = useDarkMode();
 
 function useRestoreUser() {
   const userStore = useUserStore();
   userStore.restoreUser();
 }
-
-onMounted(() => {
-  initDarkMode();
-});
-
-const theme = computed(() => {
-  return darkMode.value === Theme.DARK ? darkTheme : lightTheme;
-});
 </script>
 
 <style>

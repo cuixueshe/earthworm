@@ -2,44 +2,43 @@
   <div class="space-y-4">
     <section>
       <h2 class="text-lg mb-2">快捷键设置</h2>
-      <n-table
-        :bordered="false"
-        :single-line="false"
-      >
-        <thead>
-          <tr>
-            <th>命令</th>
-            <th>键绑定</th>
-            <th>操作</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>播放发音</td>
-            <td>{{ shortcutKeys.sound }}</td>
-            <td>
-              <n-button
-                text
-                @click="handleEdit('sound')"
-              >
-                编辑
-              </n-button>
-            </td>
-          </tr>
-          <tr>
-            <td>切换答题/答案页面</td>
-            <td>{{ shortcutKeys.answer }}</td>
-            <td>
-              <n-button
-                text
-                @click="handleEdit('answer')"
-              >
-                编辑
-              </n-button>
-            </td>
-          </tr>
-        </tbody>
-      </n-table>
+      <div class="overflow-x-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>命令</th>
+              <th>键绑定</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>播放发音</td>
+              <td>{{ shortcutKeys.sound }}</td>
+              <td>
+                <button
+                  class="btn btn-ghost"
+                  @click="handleEdit('sound')"
+                >
+                  编辑
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>切换答题/答案页面</td>
+              <td>{{ shortcutKeys.answer }}</td>
+              <td>
+                <button
+                  class="btn btn-ghost"
+                  @click="handleEdit('answer')"
+                >
+                  编辑
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section>
@@ -69,12 +68,19 @@
       <div class="form-control w-80">
         <label class="cursor-pointer label">
           <span class="label-text">切换口音</span>
-          <n-select
-            v-model:value="pronunciation"
-            :options="getPronunciationOptions()"
-            :on-update-value="togglePronunciation"
-            class="w-[90px]"
-          />
+          <select
+            class="select"
+            v-model="pronunciation"
+            @change="togglePronunciation"
+          >
+            <option
+              v-for="item in getPronunciationOptions()"
+              :key="item.value"
+              :value="item.value"
+            >
+              {{ item.label }}
+            </option>
+          </select>
         </label>
       </div>
     </section>

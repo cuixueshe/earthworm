@@ -51,8 +51,9 @@ export function usePronunciation() {
   }
 
   // 切换发音
-  function togglePronunciation(type: PronunciationType) {
-    if (type !== pronunciation.value) setStore(type);
+  function togglePronunciation(e: Event) {
+    const selectedValue = (e.target as HTMLSelectElement).value;
+    setStore(<PronunciationType>selectedValue);
   }
 
   loadCache();
