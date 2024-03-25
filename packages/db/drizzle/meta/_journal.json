@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1711263843044,
+      "tag": "0000_calm_thunderbolt_ross",
+      "breakpoints": true
+    }
+  ]
+}

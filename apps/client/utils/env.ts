@@ -1,4 +1,5 @@
 export function isProd() {
+  return true;
   return process.env.NODE_ENV === "production";
 }
 
