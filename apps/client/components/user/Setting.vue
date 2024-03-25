@@ -17,18 +17,18 @@
             <td class="text-center">
               <button
                 class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('sound')"
+                @click="handleEdit(SHORTCUT_KEY_TYPES.SOUND)"
               >
                 编辑
               </button>
             </td>
           </tr>
-          <tr class="hover">
-            <td class="label-text">切换答题/答案页面</td>
-            <td class="text-center">{{ shortcutKeys.answer }}</td>
-            <td class="text-center">
+          <tr>
+            <td>切换答题/答案页面</td>
+            <td>{{ shortcutKeys.answer }}</td>
+            <td>
               <button
-                class="btn btn-sm btn-outline btn-secondary"
+                text
                 @click="handleEdit('answer')"
               >
                 编辑
@@ -92,7 +92,7 @@
           <tr class="hover">
             <td class="label-text">切换口音</td>
             <td class="w-[300px] text-center">
-              <div class="join mr-12">
+              <div class="mr-12 join">
                 <input
                   v-for="lang in getPronunciationOptions()"
                   class="join-item btn btn-sm"
@@ -149,18 +149,22 @@
       ref="dialogBoxRef"
       class="modal-box max-w-[48rem] min-h-[156px]"
     >
-      <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
+      <h3 class="mb-4 text-base font-bold text-center text-fuchsia-500">
         请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
       <div
-        class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center"
+        class="h-8 leading-8 text-center border border-solid rounded border-fuchsia-500"
       >
         {{ shortcutKeyStr }}
       </div>
-      <div class="text-center mt-2 text-xs">
+      <div class="mt-2 text-xs text-center">
         {{ shortcutKeyTip }}
       </div>
-      <div v-if="hasSameShortcutKey" class="text-center mt-4 text-xs" :class="'text-[rgba(136,136,136,1)]'" >
+      <div
+        v-if="hasSameShortcutKey"
+        class="mt-4 text-xs text-center"
+        :class="'text-[rgba(136,136,136,1)]'"
+      >
         已有相同的按键绑定，请重新设置
       </div>
     </div>
@@ -181,7 +185,10 @@ import {
   PronunciationType,
   usePronunciation,
 } from "~/composables/user/pronunciation";
-import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import {
+  SHORTCUT_KEY_TYPES,
+  useShortcutKeyMode,
+} from "~/composables/user/shortcutKey";
 import {
   useAutoPronunciation,
   useKeyboardSound,
