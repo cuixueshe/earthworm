@@ -1,6 +1,13 @@
 import { computed, ref } from "vue";
 
 export const SHORTCUT_KEYS = "shortcutKeys";
+export enum SHORTCUT_KEY_TYPES {
+  SOUND = "sound",
+  ANSWER = "answer",
+}
+
+type Current_Key_Type = SHORTCUT_KEY_TYPES | "";
+
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
   answer: "Ctrl+;",
@@ -42,7 +49,7 @@ export function convertMacKey(key: string) {
 // 自定义快捷键
 export function useShortcutKeyMode() {
   const showModal = ref<boolean>(false);
-  const currentKeyType = ref<string>("");
+  const currentKeyType = ref<Current_Key_Type>("");
   const shortcutKeyStr = ref<string>("");
   const shortcutKeys = ref<{ [key: string]: any }>({
     ...DEFAULT_SHORTCUT_KEYS,
@@ -64,7 +71,7 @@ export function useShortcutKeyMode() {
     }
   }
 
-  function handleEdit(type: string) {
+  function handleEdit(type: SHORTCUT_KEY_TYPES) {
     showModal.value = true;
     shortcutKeyStr.value = "";
     currentKeyType.value = type;
