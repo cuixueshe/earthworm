@@ -1,66 +1,85 @@
 <template>
-  <div class="flex justify-center items-center min-h-screen p-6 space-x-12">
-    <!-- Free Card -->
-    <div
-      class="card free w-96 max-w-sm p-8 shadow-xl border-transparent relative"
-    >
-      <div class="mb-6 text-left">
-        <h2 class="text-3xl font-bold text-gradient">Free</h2>
-        <p class="program-description">Access to basic spaces.</p>
-      </div>
-      <div class="mb-8 text-left">
-        <span class="text-4xl font-extrabold dark:text-white text-black mr-2"
-          >$0</span
-        >
-        <span class="gradient-text">Access Now</span>
-      </div>
-      <div class="text-left">
-        <button
-          class="w-full px-8 py-3 font-bold bg-gray-600 text-white transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-700"
-        >
-          Get Started
-        </button>
-      </div>
+  <div
+    class="flex justify-center items-center min-h-screen p-6 space-x-12 flex-col"
+    id="pricing"
+  >
+    <div class="mx-auto max-w-3xl text-center">
+      <p
+        class="w-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent s-5xl leading-30"
+      >
+        Upgrade to Earthworm Pro
+      </p>
+
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+        On the Earthworm Pro version, you can have unlimited access to all
+        content, new features, priority experience of new courses, such as
+        custom upload files, review error statements, unlock more courses, and
+        so on.
+      </p>
     </div>
-    <!-- Lifetime Card -->
-    <div
-      class="card lifetime w-96 max-w-sm p-8 shadow-xl border-transparent relative"
-    >
-      <div class="mb-6 text-left">
-        <h2 class="text-3xl font-bold text-gradient">Lifetime</h2>
-        <p class="program-description">
-          A variety of customized programs to support your English program in
-          all aspects!
-        </p>
-      </div>
-      <div class="mb-8 text-left">
-        <span class="text-4xl font-extrabold dark:text-white text-black mr-2"
-          >$19</span
-        >
-        <span class="gradient-text">Early Access</span>
-      </div>
-      <div class="text-left">
-        <button
-          class="w-full px-8 py-3 font-bold bg-purple-600 text-white transition duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-700"
-        >
-          Upgrade now
-        </button>
-        <div
-          class="mt-4 text-sm text-black dark:text-gray-300 flex items-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-green-500 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+    <div class="w-full flex justify-around items-center">
+      <!-- Free Card -->
+      <div
+        class="card free w-96 max-w-sm p-8 shadow-xl border-transparent relative"
+      >
+        <div class="mb-6 text-left">
+          <h2 class="text-3xl font-bold text-gradient">Free</h2>
+          <p class="program-description">Access to basic spaces.</p>
+        </div>
+        <div class="mb-8 text-left">
+          <span class="text-4xl font-extrabold dark:text-white text-black mr-2"
+            >$0</span
           >
-            <path
-              fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          Congratulations on making a great choice!
+          <span class="gradient-text">Access Now</span>
+        </div>
+        <div class="text-left">
+          <button
+            class="w-full px-8 py-3 font-bold bg-gray-600 text-white transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-700"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+      <!-- Lifetime Card -->
+      <div
+        class="card lifetime w-96 max-w-sm p-8 shadow-xl border-transparent relative"
+      >
+        <div class="mb-6 text-left">
+          <h2 class="text-3xl font-bold text-gradient">Lifetime</h2>
+          <p class="program-description">
+            A variety of customized programs to support your English program in
+            all aspects!
+          </p>
+        </div>
+        <div class="mb-8 text-left">
+          <span class="text-4xl font-extrabold dark:text-white text-black mr-2"
+            >$19</span
+          >
+          <span class="gradient-text">Early Access</span>
+        </div>
+        <div class="text-left">
+          <button
+            class="w-full px-8 py-3 font-bold bg-purple-600 text-white transition duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-700"
+          >
+            Upgrade now
+          </button>
+          <div
+            class="mt-4 text-sm text-black dark:text-gray-300 flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-green-500 mr-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Congratulations on making a great choice!
+          </div>
         </div>
       </div>
     </div>
