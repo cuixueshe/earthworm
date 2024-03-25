@@ -18,7 +18,7 @@ export function getTypingSoundList() {
     };
   });
 }
-export default function TypingSoundPath(): string {
+export function TypingSoundPath(): string {
   const activeSound = localStorage.getItem(ACTIVE_KEYBOARD_SOUND);
   if (activeSound === "默认") {
     return typing;

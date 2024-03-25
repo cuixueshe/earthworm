@@ -50,7 +50,7 @@
           <input
             type="checkbox"
             class="toggle toggle-primary"
-            :checked="keyboardSound"
+            :checked="Boolean(keyboardSound)"
             @change="toggleKeyboardSound"
           />
         </label>
@@ -59,7 +59,7 @@
         <label class="cursor-pointer label">
           <span class="label-text">切换键盘打字音效</span>
           <n-select
-            v-model:value="activeKeyboardSound"
+            v-model:value="activeKeyboardSound as string"
             :options="getTypingSoundList()"
             :on-update-value="toggleActiveKeyboardSound"
             class="w-[90px]"
@@ -72,7 +72,7 @@
           <input
             type="checkbox"
             class="toggle toggle-primary"
-            :checked="autoPlaySound"
+            :checked="Boolean(autoPlaySound)"
             @change="toggleAutoPlaySound"
           />
         </label>
@@ -98,7 +98,7 @@
           <input
             type="checkbox"
             class="toggle toggle-primary"
-            :checked="showWordsWidth"
+            :checked="Boolean(showWordsWidth)"
             @change="toggleAutoWordsWidth"
           />
         </label>
@@ -109,7 +109,7 @@
           <input
             type="checkbox"
             class="toggle toggle-primary"
-            :checked="useSpace"
+            :checked="Boolean(useSpace)"
             @change="toggleUseSpaceSubmitAnswer"
           />
         </label>
@@ -146,16 +146,17 @@ import { getTypingSoundList } from "~/assets/choceTyping";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
-useActiveKeyboardSound,
-useAutoPronunciation,
-useKeyboardSound
+  useActiveKeyboardSound,
+  useAutoPronunciation,
+  useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
-const {activeKeyboardSound,toggleActiveKeyboardSound} = useActiveKeyboardSound()
+const { activeKeyboardSound, toggleActiveKeyboardSound } =
+  useActiveKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {
   pronunciation,

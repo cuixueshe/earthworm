@@ -1,9 +1,8 @@
 // useTypingSound.ts
 import { ref } from "vue";
+import { TypingSoundPath } from "~/assets/choceTyping";
 import errorSoundPath from "~/assets/sounds/error.mp3";
 import rightSoundPath from "~/assets/sounds/right.mp3";
-// import typingSoundPath from "~/assets/sounds/typing.mp3";
-import TypingSoundPath from "~/assets/choceTyping";
 export function usePlayTipSound() {
   // 正确提示音
   const rightAudio = new Audio(rightSoundPath);
@@ -40,8 +39,6 @@ export function useTypingSound() {
   }
 
   async function loadAudioBuffer(url: string) {
-    console.log(url, "这是音频路径");
-
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
     // 使用 decodeAudioData 方法处理 arrayBuffer
