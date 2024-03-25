@@ -20,6 +20,8 @@
     "build:serve": "pnpm schema:build && pnpm -F api build",
     "build:client": "pnpm -F client generate",
     "prod:serve": "pnpm -F api start:prod:pm",
+    "format": "prettier --write --cache ./",
+    "format-check": "prettier --check --cache .",
     "test": "pnpm -F api test && pnpm -F client test",
     "test:ci": "pnpm -F api test && pnpm -F client test:ci",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
@@ -31,11 +33,13 @@
     "node": ">=20.11.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@types/node": "^20.11.0",
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
     "husky": "9.0.11",
     "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
