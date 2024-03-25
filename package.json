@@ -10,6 +10,7 @@
     "db:init:test": "pnpm -F @earthworm/db run init:test",
     "db:init:test:ci": "pnpm -F @earthworm/db run init:ci",
     "db:upload": "pnpm -F @earthworm/xingrong-courses upload",
+    "db:studio": "pnpm -F @earthworm/db db:studio",
     "db:update": "pnpm -F @earthworm/xingrong-courses upload:statements",
     "dev:serve": "pnpm schema:build && pnpm -F api start:dev",
     "dev:client": "pnpm -F client dev",
@@ -46,5 +47,6 @@
   "dependencies": {
     "@t3-oss/env-core": "^0.7.1",
     "zod": "^3.22.4"
-  }
+  },
+  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
 }
