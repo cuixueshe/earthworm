@@ -239,9 +239,6 @@ importers:
       happy-dom:
         specifier: ^13.3.1
         version: 13.3.8
-      naive-ui:
-        specifier: ^2.37.3
-        version: 2.37.3(vue@3.4.15)
       nuxt:
         specifier: ^3.9.0
         version: 3.10.0(@types/node@20.11.0)(typescript@5.3.3)(vite@5.1.0)
