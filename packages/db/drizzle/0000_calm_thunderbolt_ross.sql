@@ -1,7 +1,15 @@
 CREATE TABLE `courses` (
-	`id` int AUTO_INCREMENT NOT NULL,
+	`id` int NOT NULL,
 	`title` text NOT NULL,
 	CONSTRAINT `courses_id` PRIMARY KEY(`id`)
+);
+--> statement-breakpoint
+CREATE TABLE `course-history` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`user_id` int NOT NULL,
+	`course_id` int NOT NULL,
+	`completion_count` int NOT NULL DEFAULT 0,
+	CONSTRAINT `course-history_id` PRIMARY KEY(`id`)
 );
 --> statement-breakpoint
 CREATE TABLE `statements` (
@@ -17,7 +25,7 @@ CREATE TABLE `statements` (
 --> statement-breakpoint
 CREATE TABLE `users` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`phone` varchar(11) NOT NULL,
+	`phone` varchar(20) NOT NULL,
 	`name` text NOT NULL,
 	`password` text NOT NULL,
 	`created_at` timestamp NOT NULL DEFAULT (now()),

@@ -1,36 +1,18 @@
-import { ref } from "vue";
+import { useLocalStorageBoolean } from "~/utils/localStorage";
 
-export const USE_SPACE_SUBMIT_ANSWER = "useSpaceSubmitAnswer";
-
-const useSpace = ref(false);
-
-function loadCache() {
-  const value = localStorage.getItem(USE_SPACE_SUBMIT_ANSWER);
-  if (value === "false") {
-    store(false);
-  } else if (!value) {
-    store(useSpace.value);
-  } else {
-    store(true);
-  }
-}
-
-const store = function (value: boolean) {
-  useSpace.value = value;
-  localStorage.setItem(USE_SPACE_SUBMIT_ANSWER, `${value}`);
-};
-
-const toggleUseSpaceSubmitAnswer = () => {
-  store(!useSpace.value);
-};
-
-const isUseSpaceSubmitAnswer = () => useSpace.value;
-
+export const SPACE_SUBMIT_ANSWER = "spaceSubmitAnswer";
 export function useSpaceSubmitAnswer() {
-  loadCache();
+  const {
+    value: useSpace,
+    toggle: toggleUseSpaceSubmitAnswer,
+    isTrue: isUseSpaceSubmitAnswer,
+    remove: removeUseSpaceSubmitAnswer,
+  } = useLocalStorageBoolean(SPACE_SUBMIT_ANSWER, false);
+
   return {
     useSpace,
     isUseSpaceSubmitAnswer,
     toggleUseSpaceSubmitAnswer,
+    removeUseSpaceSubmitAnswer,
   };
 }

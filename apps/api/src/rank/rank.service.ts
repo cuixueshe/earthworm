@@ -3,23 +3,43 @@ import { Injectable, Logger } from '@nestjs/common';
 import Redis from 'ioredis';
 import { UserEntity } from '../user/user.decorators';
 
+// 定义周期枚举
+export enum RankPeriod {
+  WEEKLY = 'weekly',
+  MONTHLY = 'monthly',
+  YEARLY = 'yearly',
+}
+
+export type RankPeriodAlias = 'weekly' | 'monthly' | 'yearly';
+
 @Injectable()
 export class RankService {
   private readonly FINISH_COUNT_KEY = `user:finishCount`;
   private readonly logger = new Logger(RankService.name);
-
+  private readonly rankKeys = {
+    [RankPeriod.WEEKLY]: `${this.FINISH_COUNT_KEY}`,
+    [RankPeriod.MONTHLY]: `${this.FINISH_COUNT_KEY}:${RankPeriod.MONTHLY}Rank`,
+    [RankPeriod.YEARLY]: `${this.FINISH_COUNT_KEY}:${RankPeriod.YEARLY}Rank`,
+  };
   constructor(@InjectRedis() private readonly redis: Redis) {}
 
   async userFinishCourse(userId: number, username: string) {
     const member = `${userId}-${username}`;
-    let count = await this.redis.zscore(this.FINISH_COUNT_KEY, member);
-    if (!count) {
-      await this.redis.zadd(this.FINISH_COUNT_KEY, 1, member);
-    } else {
-      await this.redis.zincrby(this.FINISH_COUNT_KEY, 1, member);
+
+    const counts = {};
+    for (const period of Object.keys(this.rankKeys)) {
+      const rankKey = this.rankKeys[period];
+      let count = await this.redis.zscore(rankKey, member);
+      if (!count) {
+        await this.redis.zadd(rankKey, 1, member);
+      } else {
+        await this.redis.zincrby(rankKey, 1, member);
+      }
+      count = await this.redis.zscore(rankKey, member);
+      counts[period] = count;
     }
-    count = await this.redis.zscore(this.FINISH_COUNT_KEY, member);
-    return count;
+
+    return counts;
   }
 
   private getUserName(member: string) {
@@ -36,11 +56,19 @@ export class RankService {
     return res;
   }
 
-  // return top 10 and self rank
-  async getRankList(user: UserEntity) {
+  /**
+   * @description  return top 10 and self rank
+   * @param user  current user
+   * @param period  a certain period of time
+   * @returns top 10 and self rank
+   */
+  async getRankList(
+    user: UserEntity,
+    period: RankPeriodAlias = RankPeriod.WEEKLY,
+  ) {
     // return [member, count, member, count, ...]
     const rankList = await this.redis.zrevrange(
-      this.FINISH_COUNT_KEY,
+      this.rankKeys[period],
       0,
       9,
       'WITHSCORES',
@@ -48,12 +76,12 @@ export class RankService {
     let self = null;
     if (user) {
       const userRank = await this.redis.zrevrank(
-        this.FINISH_COUNT_KEY,
+        this.rankKeys[period],
         `${user.userId}-${user.username}`,
       );
       const userCount =
         (await this.redis.zscore(
-          this.FINISH_COUNT_KEY,
+          this.rankKeys[period],
           `${user.userId}-${user.username}`,
         )) ?? 0;
       self = { username: user.username, count: userCount, rank: userRank };
@@ -64,12 +92,13 @@ export class RankService {
     };
   }
 
-  async resetRankList() {
+  async resetRankList(period: RankPeriodAlias = RankPeriod.WEEKLY) {
+    const rankKey = this.rankKeys[period];
     try {
-      await this.redis.del(this.FINISH_COUNT_KEY);
-      this.logger.verbose(`每周重置排行榜成功: ${new Date()}`);
+      await this.redis.del(rankKey);
+      this.logger.verbose(`${period}重置排行榜成功: ${new Date()}`);
     } catch (error) {
-      this.logger.error(`重置排行榜时发生错误: ${error}`);
+      this.logger.error(`${period}重置排行榜时发生错误: ${error}`);
     }
   }
 }

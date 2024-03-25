@@ -45,7 +45,7 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useAnswerMode } from "~/composables/user/answerMode";
-import { useAutoSound } from "~/composables/user/sound";
+import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
@@ -54,7 +54,7 @@ registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
-const { isAutoPlaySound } = useAutoSound();
+const { isAutoPlaySound } = useAutoPronunciation();
 
 const { isListeningMode } = useAnswerMode();
 
