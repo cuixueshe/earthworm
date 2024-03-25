@@ -20,7 +20,7 @@
             <td>
               <n-button
                 text
-                @click="handleEdit('sound')"
+                @click="handleEdit(SHORTCUT_KEY_TYPES.SOUND)"
               >
                 编辑
               </n-button>
@@ -32,7 +32,7 @@
             <td>
               <n-button
                 text
-                @click="handleEdit('answer')"
+                @click="handleEdit(SHORTCUT_KEY_TYPES.ANSWER)"
               >
                 编辑
               </n-button>
@@ -132,7 +132,10 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { usePronunciation } from "~/composables/user/pronunciation";
-import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import {
+  SHORTCUT_KEY_TYPES,
+  useShortcutKeyMode,
+} from "~/composables/user/shortcutKey";
 import {
   useAutoPronunciation,
   useKeyboardSound,
