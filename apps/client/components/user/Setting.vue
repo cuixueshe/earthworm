@@ -125,6 +125,9 @@
       <div class="text-center mt-2 text-xs">
         {{ shortcutKeyTip }}
       </div>
+      <div v-if="hasSameShortcutKey" class="text-center mt-4 text-xs" :class="'text-[rgba(136,136,136,1)]'" >
+        已有相同的按键绑定，请重新设置
+      </div>
     </div>
   </dialog>
 </template>
@@ -156,6 +159,7 @@ const {
   shortcutKeys,
   shortcutKeyStr,
   shortcutKeyTip,
+  hasSameShortcutKey,
   handleEdit,
   handleCloseDialog,
   handleKeydown,
