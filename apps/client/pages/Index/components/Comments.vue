@@ -1,18 +1,12 @@
 <template>
-  <section class="flex flex-col py-4">
-    <div class="mx-auto max-w-screen-xl py-8 sm:px-6 lg:px-8 lg:py-12">
-      <div class="mx-auto max-w-3xl text-center">
-        <p
-          class="w-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent s-5xl leading-30"
-        >
-          User feedback
-        </p>
-
-        <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-          If you're using Earthworm, feel free to give us your feedback on
-          Twitter.
-        </p>
-      </div>
+  <section class="flex flex-col mt-16">
+    <div class="mx-auto max-w-screen-xl">
+      <CommonTitle
+        title="User feedback"
+        :description="[
+          'If you are using Earthworm, feel free to give us your feedback on Twitter.',
+        ]"
+      />
       <div class="mt-8 sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
         <div
           v-for="(item, index) in CommentsList"
@@ -81,6 +75,7 @@
       </div>
     </div>
   </section>
+  <CommonDivider />
 </template>
 
 <script setup lang="ts">

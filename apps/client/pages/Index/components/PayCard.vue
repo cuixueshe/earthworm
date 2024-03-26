@@ -1,22 +1,14 @@
 <template>
   <div
-    class="flex justify-center items-center min-h-screen p-6 space-x-12 flex-col"
+    class="flex justify-center items-center mt-16 flex-col"
     id="pricing"
   >
-    <div class="mx-auto max-w-3xl text-center">
-      <p
-        class="w-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent s-5xl leading-30"
-      >
-        Upgrade to Earthworm Pro
-      </p>
-
-      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-        On the Earthworm Pro version, you can have unlimited access to all
-        content, new features, priority experience of new courses, such as
-        custom upload files, review error statements, unlock more courses, and
-        so on.
-      </p>
-    </div>
+    <CommonTitle
+      title="Upgrade to Earthworm Pro"
+      :description="[
+        'On the Earthworm Pro version, you can have unlimited access to all content, new features, priority experience of new courses, such as custom upload files, review error statements, unlock more courses, and so on.',
+      ]"
+    />
     <div class="w-full flex justify-around items-center">
       <!-- Free Card -->
       <div
@@ -84,6 +76,7 @@
       </div>
     </div>
   </div>
+  <CommonDivider />
 </template>
 
 <script setup>

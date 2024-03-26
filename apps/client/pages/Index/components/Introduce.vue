@@ -1,21 +1,14 @@
 <template>
   <div
-    class="w-full flex-col"
+    class="w-full flex-col mt-16"
     id="what"
   >
-    <div class="mx-auto max-w-screen-xl px-4 py-16 lg:flex">
-      <div class="mx-auto max-w-3xl text-center">
-        <p
-          class="w-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent s-5xl leading-30"
-        >
-          What is Earthworm?
-        </p>
-
-        <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-          an open-source, collaborative, user-friendly English learning tool.
-        </p>
-      </div>
-    </div>
+    <CommonTitle
+      title="What is Earthworm?"
+      :description="[
+        'An open-source, collaborative, user-friendly English learning tool.',
+      ]"
+    />
     <section class="flex flex-col py-8">
       <div class="flex">
         <div
@@ -146,6 +139,7 @@
       <div class="w-1/2"></div>
     </section>
   </div>
+  <CommonDivider />
 </template>
 
 <script setup lang="ts"></script>

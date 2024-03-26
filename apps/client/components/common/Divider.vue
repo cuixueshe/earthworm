@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full my-10">
+  <div class="w-full my-24">
     <span class="relative flex justify-center relative">
       <div
         class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
