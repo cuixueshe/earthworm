@@ -2,9 +2,9 @@ import { h, render } from "vue";
 import MessageConstructor from "./message.vue";
 
 export enum Type {
-  SUCCESS = 'success',
-  ERROR = 'error',
-  WARNING = 'warning'
+  SUCCESS = "success",
+  ERROR = "error",
+  WARNING = "warning",
 }
 
 // 使用函数
@@ -38,6 +38,7 @@ Message.success = (text: string, props?: MessageProps) => {
   });
   props?.onLeave?.();
 };
+
 Message.error = (text: string, props?: MessageProps) => {
   Message({
     text,
@@ -46,6 +47,7 @@ Message.error = (text: string, props?: MessageProps) => {
   });
   props?.onLeave?.();
 };
+
 Message.warning = (text: string, props?: MessageProps) => {
   Message({
     text,
