@@ -1,5 +1,5 @@
 <template>
-  <div class="text-5xl dark:text-gray-50 text-center">
+  <div class="text-5xl dark:text-gray-50 text-center h-1/2 w-full">
     {{ courseStore.currentStatement?.english }}
   </div>
   <div class="mt-2 dark:text-gray-50 text-center">再次点击隐藏</div>
