@@ -15,7 +15,7 @@
                 alt="earth-worm-logo"
               />
               <h1
-                class="text-purple-500 text-2xl font-black font-extrabold leading-normal text-wrap"
+                class="text-purple-500 text-2xl font-black leading-normal text-wrap"
               >
                 Earthworm
               </h1>
