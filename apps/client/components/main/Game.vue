@@ -1,6 +1,9 @@
 <template>
   <div class="h-full pt-20">
-    <div class="h-[40vh] flex flex-col justify-center">
+    <div class="h-[40vh] flex flex-col aligh justify-center">
+      <div v-show="isQuestion() && display">
+        <AnswerTip></AnswerTip>
+      </div>
       <template v-if="isQuestion()">
         <Question></Question>
       </template>
@@ -16,13 +19,15 @@
 </template>
 
 <script setup lang="ts">
+import displayAnswer from "~/composables/main/displayAnswer";
 import { useGameMode } from "~/composables/main/game";
 import Answer from "./Answer.vue";
+import AnswerTip from "./AnswerTip.vue";
 import AuthRequired from "./AuthRequired.vue";
 import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
-
+const { display } = displayAnswer();
 const { isAnswer, isQuestion } = useGameMode();
 </script>
