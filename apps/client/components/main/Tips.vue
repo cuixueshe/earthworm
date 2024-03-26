@@ -1,20 +1,31 @@
 <template>
   <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
     <div class="w-[210px] mb-4">
-      <button class="tip-btn" @click="playSound">
-        ⌃ {{ shortcutKeys.sound }}
+      <button
+        class="tip-btn"
+        @click="playSound"
+      >
+        {{ shortcutKeys.sound }}
       </button>
       <span class="ml-2">play sound</span>
     </div>
     <div class="w-[210px] mb-4">
-      <button class="tip-btn" @click="toggleGameMode">
-        ⌃ {{ shortcutKeys.answer }}
+      <button
+        class="tip-btn"
+        @click="toggleGameMode"
+      >
+        {{ shortcutKeys.answer }}
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
 
     <div class="w-[210px]">
-      <button class="tip-btn" @click="toggleGameMode">Space</button>
+      <button
+        class="tip-btn"
+        @click="toggleGameMode"
+      >
+        ␣Space
+      </button>
       <span class="ml-2">fix incorrect word</span>
     </div>
   </div>

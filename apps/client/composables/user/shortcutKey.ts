@@ -2,8 +2,8 @@ import { computed, ref } from "vue";
 
 export const SHORTCUT_KEYS = "shortcutKeys";
 export const DEFAULT_SHORTCUT_KEYS = {
-  sound: "Ctrl+'",
-  answer: "Ctrl+;",
+  sound: "⌃Ctrl+'",
+  answer: "⌃Ctrl+;",
 };
 export const KEYBOARD = {
   ESC: "Esc",
@@ -14,6 +14,17 @@ export const KEYBOARD = {
   ENTER: "Enter",
   COMMAND: "Command",
   CONTROL: "Control",
+  SPACE: "Space",
+  TAB: "Tab",
+  ARROW_LEFT: "ArrowLeft",
+  ARROW_RIGHT: "ArrowRight",
+  ARROW_UP: "ArrowUp",
+  ARROW_DOWN: "ArrowDown",
+  BACKSPACE: "Backspace",
+  DELETE: "Delete",
+  CAPS_LOCK: "CapsLock",
+  PAGE_UP: "PageUp",
+  PAGE_DOWN: "PageDown",
 };
 export const SPECIAL_KEYS = new Map([
   [KEYBOARD.ALT, true],
@@ -23,6 +34,27 @@ export const SPECIAL_KEYS = new Map([
   [KEYBOARD.META, true],
   [KEYBOARD.COMMAND, true],
 ]);
+
+export const KEY_SYMBOL = {
+  [KEYBOARD.ALT]: "⌥",
+  [KEYBOARD.CTRL]: "⌃",
+  [KEYBOARD.META]: "⌘",
+  [KEYBOARD.SHIFT]: "⇧",
+  [KEYBOARD.ENTER]: "⏎",
+  [KEYBOARD.COMMAND]: "⌘",
+  [KEYBOARD.CONTROL]: "⌃",
+  [KEYBOARD.TAB]: "⇥",
+  [KEYBOARD.SPACE]: "␣",
+  [KEYBOARD.ARROW_LEFT]: "←",
+  [KEYBOARD.ARROW_RIGHT]: "→",
+  [KEYBOARD.ARROW_UP]: "↑",
+  [KEYBOARD.ARROW_DOWN]: "↓",
+  [KEYBOARD.BACKSPACE]: "⌫",
+  [KEYBOARD.DELETE]: "⌦",
+  [KEYBOARD.CAPS_LOCK]: "⇪",
+  [KEYBOARD.PAGE_UP]: "⇞",
+  [KEYBOARD.PAGE_DOWN]: "⇟",
+};
 
 // 对于 Mac 特殊修饰键 Control 和 Meta 键转换处理
 // Control → Ctrl
@@ -90,7 +122,12 @@ export function useShortcutKeyMode() {
   function isEnterKey(key: string) {
     return key === KEYBOARD.ENTER;
   }
-
+  function getSymbol(key: string) {
+    if (/^\s+$/.test(key)) {
+      return KEY_SYMBOL[KEYBOARD.SPACE] + KEYBOARD.SPACE;
+    }
+    return KEY_SYMBOL[key] ? `${KEY_SYMBOL[key]}${key}` : key;
+  }
   /**
    * 参考于 VSCode 快捷键
    * 有待讨论，产品角度出发，快捷键应该只支持组合键形式
@@ -102,6 +139,7 @@ export function useShortcutKeyMode() {
 
     e.preventDefault();
     const mainKey = getKeyModifier(e);
+
     if (!mainKey && isEnterKey(e.key)) {
       saveShortcutKeys();
       handleCloseDialog();
@@ -109,13 +147,16 @@ export function useShortcutKeyMode() {
     }
 
     const key = convertMacKey(e.key);
+
     // TODO: 需要校验当前快捷键是否与其他快捷键重复，重复则不允许设置
     if (SPECIAL_KEYS.has(e.key) || !mainKey) {
       // 单键
-      shortcutKeyStr.value = key;
+      shortcutKeyStr.value = getSymbol(key);
     } else {
       // 组合键
-      shortcutKeyStr.value = `${mainKey}+${key}`;
+      const mainKeySymbol = getSymbol(mainKey);
+      const keySymbol = getSymbol(key);
+      shortcutKeyStr.value = `${mainKeySymbol}+${keySymbol}`;
     }
   }
 
