@@ -15,7 +15,7 @@
                 alt="earth-worm-logo"
               />
               <h1
-                class="text-purple-500 text-2xl font-black leading-normal text-wrap"
+                class="text-purple-500 text-2xl font-black font-extrabold leading-normal text-wrap"
               >
                 Earthworm
               </h1>
@@ -79,26 +79,23 @@
           </button>
 
           <div class="flex items-center ml-5">
+            <!-- Conditional Button: Login or Register -->
             <button
               v-show="
-                !userStore.user &&
-                (route.name === 'Auth-SignUp' || route.name !== 'Auth-Login')
+                (!userStore.user && route.name !== 'Auth-Login') ||
+                route.name === 'Auth-Login'
               "
-              class="rounded-md bg-purple-400 px-5 py-2.5 text-sm font-medium text-white shadow"
-              @click="handleLogin"
+              @click="
+                route.name === 'Auth-Login' ? handleSignup() : handleLogin()
+              "
+              aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
+              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
             >
-              Login
+              <!-- Text based on route -->
+              {{ route.name === "Auth-Login" ? "Register" : "Login" }}
             </button>
-            <div class="hidden sm:flex ml-5">
-              <button
-                v-show="route.name === 'Auth-Login'"
-                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-purple-400"
-                @click="handleSignup"
-              >
-                Register
-              </button>
-            </div>
           </div>
+
           <div class="logged-in flex items-center">
             <div class="mx-2 font-500">{{ userStore.user?.username }}</div>
             <div
