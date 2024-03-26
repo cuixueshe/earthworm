@@ -15,7 +15,7 @@
                 alt="earth-worm-logo"
               />
               <h1
-                class="text-purple-500 text-2xl font-black font-extrabold leading-normal text-wrap"
+                class="text-purple-500 text-2xl font-extrabold leading-normal text-wrap"
               >
                 Earthworm
               </h1>
@@ -79,7 +79,6 @@
           </button>
 
           <div class="flex items-center ml-5">
-            <!-- Conditional Button: Login or Register -->
             <button
               v-show="
                 (!userStore.user && route.name !== 'Auth-Login') ||
@@ -91,7 +90,6 @@
               aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
               class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
             >
-              <!-- Text based on route -->
               {{ route.name === "Auth-Login" ? "Register" : "Login" }}
             </button>
           </div>
