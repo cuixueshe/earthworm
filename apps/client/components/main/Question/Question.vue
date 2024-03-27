@@ -188,7 +188,7 @@ function handleKeydown(e: KeyboardEvent) {
 
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
-      enable: isUseSpaceSubmitAnswer(),
+      enable: isUseSpaceSubmitAnswer() as boolean,
       rightCallback: () => {
         playRightSound(); // 正确提示
         showAnswer();

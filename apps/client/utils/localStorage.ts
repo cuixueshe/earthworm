@@ -4,33 +4,40 @@ import { ref } from "vue";
 export function useLocalStorageBoolean(
   key: string,
   // 默认开启
-  defaultValue: boolean = true
+  defaultValue?: boolean | string
 ) {
   const valueRef = ref(defaultValue);
-
   function loadCache() {
     const storedValue = localStorage.getItem(key);
     // 如果 localStorage 中有值才进行校验，则使用该值
     if (storedValue !== null) {
-      valueRef.value = storedValue === "true";
+      if (typeof defaultValue == "boolean") {
+        valueRef.value = storedValue === "true";
+      } else {
+        valueRef.value = storedValue;
+      }
     }
-    update(valueRef.value);
+    update(valueRef.value!);
   }
 
-  function update(value: boolean) {
+  function update(value: boolean | string) {
     valueRef.value = value;
+
     localStorage.setItem(key, String(value));
   }
 
   function remove() {
     localStorage.removeItem(key);
   }
-
+  function changeKeyBoardSound(e: Event) {
+    const value = (e.target as HTMLInputElement).value;
+    update(value);
+  }
   function toggle() {
     update(!valueRef.value);
   }
 
-  function isTrue(): boolean {
+  function isTrue() {
     return valueRef.value;
   }
 
@@ -41,5 +48,7 @@ export function useLocalStorageBoolean(
     remove,
     toggle,
     isTrue,
+    update,
+    changeKeyBoardSound,
   };
 }

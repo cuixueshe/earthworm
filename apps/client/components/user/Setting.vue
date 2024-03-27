@@ -49,7 +49,7 @@
               <input
                 type="checkbox"
                 class="toggle toggle-secondary"
-                :checked="keyboardSound"
+                :checked="Boolean(keyboardSound)"
                 @change="toggleKeyboardSound"
               />
             </td>
@@ -60,7 +60,7 @@
               <input
                 type="checkbox"
                 class="toggle toggle-secondary"
-                :checked="autoPlaySound"
+                :checked="Boolean(autoPlaySound)"
                 @change="toggleAutoPlaySound"
               />
             </td>
@@ -82,6 +82,34 @@
               </div>
             </td>
           </tr>
+          <tr class="hover">
+            <td class="label-text">切换打字音效</td>
+            <td class="w-[300px] text-center">
+              <div class="join">
+                <select
+                  @change="toggleActiveKeyboardSound"
+                  v-model="activeKeyboardSound"
+                  class="join-item w-20 h-8"
+                >
+                  <option
+                    :key="getTypingSoundList()[0].label"
+                    :value="getTypingSoundList()[0].value"
+                    selected
+                    class="text-center"
+                  >
+                    {{ getTypingSoundList()[0].value }}
+                  </option>
+                  <option
+                    :key="getTypingSoundList()[1].label"
+                    :value="getTypingSoundList()[1].value"
+                    class="text-center"
+                  >
+                    {{ getTypingSoundList()[1].value }}
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -96,7 +124,7 @@
               <input
                 type="checkbox"
                 class="toggle toggle-secondary"
-                :checked="showWordsWidth"
+                :checked="Boolean(showWordsWidth)"
                 @change="toggleAutoWordsWidth"
               />
             </td>
@@ -107,7 +135,7 @@
               <input
                 type="checkbox"
                 class="toggle toggle-secondary"
-                :checked="useSpace"
+                :checked="Boolean(useSpace)"
                 @change="toggleUseSpaceSubmitAnswer"
               />
             </td>
@@ -150,12 +178,14 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { getTypingSoundList } from "~/assets/choiceTyping";
 import {
   PronunciationType,
   usePronunciation,
 } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
+  useActiveKeyboardSound,
   useAutoPronunciation,
   useKeyboardSound,
 } from "~/composables/user/sound";
@@ -163,6 +193,8 @@ import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const { activeKeyboardSound, toggleActiveKeyboardSound } =
+  useActiveKeyboardSound();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {
