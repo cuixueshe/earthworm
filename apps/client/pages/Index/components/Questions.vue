@@ -9,69 +9,84 @@
         'If you can not find what you are looking for, email our support team and if you are lucky someone will get back to you.',
       ]"
     />
-    <div class="flex flex-wrap -m-4 mt-10 py-10 px-5">
-      <div class="-my-8 divide-y divide-gray-800 w-full">
-        <template
-          v-for="(qs_item, qs_index) in QUESTIONS"
-          :key="qs_index"
+    <div class="divide-y divide-gray-500 space-y-4 py-16">
+      <template
+        v-for="(qs_item, qs_index) in QUESTIONS"
+        :key="qs_index"
+      >
+        <details
+          class="group"
+          :open="qs_index === 0"
         >
-          <details
-            class="group py-8 [&_summary::-webkit-details-marker]:hidden"
-            :open="qs_index === 0"
+          <summary
+            class="flex justify-between items-center cursor-pointer py-5"
           >
-            <summary class="flex cursor-pointer items-center justify-between">
-              <h2 class="text-lg font-medium">{{ qs_item.title }}</h2>
+            <h2 class="text-lg font-medium">{{ qs_item.title }}</h2>
+            <span class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
 
-              <span class="relative size-5 shrink-0">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                   stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </span>
-            </summary>
-
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </span>
+          </summary>
+          <div
+            class="transition-max-height duration-500 ease-in-out overflow-hidden"
+          >
             <template
               v-for="(as_item, as_index) in qs_item.content"
-              :key="as_index"
+              :key="`content-${as_index}`"
             >
-              <div>
-                <span v-if="qs_item.content && qs_item.content.length > 1"
+              <p class="py-2">
+                <span v-if="qs_item.content.length > 1"
                   >{{ as_index + 1 }}.
                 </span>
-                <span>{{ as_item }}</span>
-              </div>
+                {{ as_item }}
+              </p>
             </template>
-          </details>
-        </template>
-      </div>
+          </div>
+        </details>
+      </template>
     </div>
   </section>
-  <CommonDivider />
 </template>
 
 <script setup lang="ts">
@@ -104,4 +119,21 @@ const QUESTIONS = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+.icon svg {
+  transition: transform 0.5s ease;
+}
+
+details[open] .icon svg {
+  transform: rotate(90deg);
+}
+
+.transition-max-height {
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+details[open] .transition-max-height {
+  max-height: 500px;
+}
+</style>
