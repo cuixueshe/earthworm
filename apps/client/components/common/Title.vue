@@ -1,18 +1,14 @@
 <template>
   <div class="mx-auto max-w-3xl text-center my-5">
-    <p
-      class="w-full text-black font-extrabold leading-30 dark:text-white text-4xl"
-    >
+    <h2 class="text-4xl text-center">
       {{ title }}
-    </p>
+    </h2>
 
     <template
       v-for="(desc_item, desc_index) in description"
       :key="desc_index"
     >
-      <p
-        class="text-gray-500 mx-auto mt-4 max-w-xl sm:text-xl/relaxed dark:text-gray-300"
-      >
+      <p class="pt-2 text-center">
         {{ desc_item }}
       </p>
     </template>

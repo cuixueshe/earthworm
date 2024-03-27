@@ -4,12 +4,10 @@
     id="features"
   >
     <CommonTitle
-      title="Dive into powerful features"
-      :description="[
-        'Take your tab management to the next level with these powerful features',
-      ]"
+      title="深入了解Earthworm"
+      :description="['通过这些强大的功能将我们的Earthworm提升到一个新的水平！']"
     />
-    <section class="text-gray-500">
+    <section class="text-gray-500 py-16">
       <div
         class="grid grid-cols-1 gap-8 md:mt-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
       >
@@ -40,9 +38,9 @@
             </span>
 
             <div>
-              <h2 class="text-lg font-bold dark:text-white">{{
-                fe_item.title
-              }}</h2>
+              <h2 class="text-lg font-bold dark:text-white">
+                {{ fe_item.title }}
+              </h2>
 
               <p class="mt-1 text-sm text-gray-500 dark:text-white opacity-90">
                 {{ fe_item.desc }}
