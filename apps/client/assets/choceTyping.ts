@@ -20,7 +20,7 @@ export function getTypingSoundList() {
 }
 export function TypingSoundPath(): string {
   const activeSound = localStorage.getItem(ACTIVE_KEYBOARD_SOUND);
-  if (activeSound === "默认") {
+  if (activeSound === "默认" || activeSound === null) {
     return typing;
   } else {
     return typing1;

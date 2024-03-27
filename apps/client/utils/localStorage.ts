@@ -1,5 +1,4 @@
 import { ref } from "vue";
-type value = string | boolean;
 
 // 封装个通用 hook 来处理 localStorage boolean
 export function useLocalStorageBoolean(
@@ -12,17 +11,14 @@ export function useLocalStorageBoolean(
   function loadCache() {
     const storedValue = localStorage.getItem(key);
     // 如果 localStorage 中有值才进行校验，则使用该值
-    if (
-      storedValue !== null &&
-      storedValue !== "默认" &&
-      storedValue !== "樱桃"
-    ) {
-      valueRef.value = storedValue === "true";
-    } else if (storedValue === "默认" || storedValue === "樱桃") {
-      valueRef.value = storedValue === "默认" ? "默认" : "樱桃";
-    } else {
-      update(valueRef.value);
+    if (storedValue !== null) {
+      if (typeof defaultValue == "boolean") {
+        valueRef.value = storedValue === "true";
+      } else {
+        valueRef.value = storedValue;
+      }
     }
+    update(valueRef.value);
   }
 
   function update(value: boolean | string) {
