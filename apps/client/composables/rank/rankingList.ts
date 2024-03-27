@@ -1,30 +1,48 @@
+import { defineStore } from "pinia";
 import { ref, watch } from "vue";
 import {
   fetchProgressRank,
+  type ProgressRankVo,
   type RankingItemType,
   type RankingSelfType,
 } from "~/api/rank";
 import Message from "~/components/main/Message/useMessage";
 
-// 排行榜弹框
-const showModal = ref(false); // 需要作用于不同页面
-export function useRankModal() {
-  function show() {
-    showModal.value = true;
+function cacheRanking() {
+  let rankingCache: Record<string, ProgressRankVo> = {};
+
+  function cleanRankingCache() {
+    rankingCache = {};
   }
 
-  function hide() {
-    showModal.value = false;
+  function saveRankingCache(key: string, value: ProgressRankVo) {
+    rankingCache[key] = value;
+  }
+
+  function getRankingCache(key: string) {
+    return rankingCache[key];
+  }
+
+  function hasRankingCache(key: string) {
+    return !!rankingCache[key];
   }
 
   return {
-    showModal,
-    show,
-    hide,
+    saveRankingCache,
+    getRankingCache,
+    hasRankingCache,
+    cleanRankingCache,
   };
 }
 
-export function useRankingList() {
+export const useRanking = defineStore("ranking", () => {
+  const {
+    saveRankingCache,
+    getRankingCache,
+    hasRankingCache,
+    cleanRankingCache,
+  } = cacheRanking();
+
   const isLoading = ref(false);
   const currentPeriod = ref<string>("weekly");
   const rankingList = ref<RankingItemType[]>([]);
@@ -44,16 +62,21 @@ export function useRankingList() {
     },
   ];
 
-  resetData();
-  getRankingList();
-
-  // 切换排行榜
   watch(currentPeriod, async () => {
-    showLoading();
-    resetData();
-    await getRankingList();
-    hideLoading();
+    if (hasRankingCache(currentPeriod.value)) {
+      updateRankingList(getRankingCache(currentPeriod.value));
+      return;
+    }
+
+    const res = await fetchRankingList();
+    updateRankingList(res);
+    saveRankingCache(currentPeriod.value, res);
   });
+
+  function updateRankingList(res: ProgressRankVo) {
+    rankingList.value = res.list;
+    rankingSelf.value = res.self;
+  }
 
   function showLoading() {
     isLoading.value = true;
@@ -61,11 +84,6 @@ export function useRankingList() {
 
   function hideLoading() {
     isLoading.value = false;
-  }
-
-  function resetData() {
-    rankingList.value = [];
-    rankingSelf.value = null;
   }
 
   function togglePeriod(period: string) {
@@ -82,18 +100,38 @@ export function useRankingList() {
     currentPeriod.value = period;
   }
 
-  async function getRankingList() {
+  async function fetchRankingList() {
+    showLoading();
     const res = await fetchProgressRank(currentPeriod.value);
-    rankingList.value = res.list;
-    rankingSelf.value = res.self;
+    hideLoading();
+
+    return res;
+  }
+
+  const rankModal = ref(false); // 需要作用于不同页面
+
+  async function showRankModal() {
+    rankModal.value = true;
+    cleanRankingCache();
+
+    const res = await fetchRankingList();
+    updateRankingList(res);
+    saveRankingCache(currentPeriod.value, res);
+  }
+
+  function hideRankModal() {
+    rankModal.value = false;
   }
 
   return {
+    rankModal,
     isLoading,
     currentPeriod,
     rankingList,
     rankingSelf,
     rankingPeriodList,
     togglePeriod,
+    showRankModal,
+    hideRankModal,
   };
-}
+});

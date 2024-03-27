@@ -97,7 +97,7 @@
       </svg>
     </div>
     <div
-      @click="show"
+      @click="rankingStore.showRankModal"
       class="link-item"
     >
       排行榜
@@ -121,11 +121,11 @@ import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import RankList from "~/components/rank/RankingList.vue";
 import { useGameMode } from "~/composables/main/game";
-import { useRankModal } from "~/composables/rank/rankingList";
+import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
 import StudyVideoLink from "./StudyVideoLink.vue";
 
-const { show } = useRankModal();
+const rankingStore = useRanking();
 const courseStore = useCourseStore();
 
 const currentSchedule = computed(() => {

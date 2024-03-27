@@ -2,7 +2,7 @@
   <dialog
     id="rank-list"
     class="modal"
-    :open="showModal"
+    :open="rankingStore.rankModal"
   >
     <div
       class="modal-box w-[420px] h-[568px] px-4 pb-12 flex flex-col overflow-hidden"
@@ -11,7 +11,7 @@
       <form method="dialog">
         <button
           class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-          @click="hide"
+          @click="rankingStore.hideRankModal"
         >
           ✕
         </button>
@@ -26,13 +26,13 @@
         class="tabs tabs-lifted tabs-md"
       >
         <a
-          v-for="period in rankingPeriodList"
+          v-for="period in rankingStore.rankingPeriodList"
           role="tab"
           class="tab"
-          @click="togglePeriod(period.value)"
+          @click="rankingStore.togglePeriod(period.value)"
           :key="period.value"
           :class="{
-            'tab-active text-orange-500': period.value === currentPeriod,
+            'tab-active text-orange-500': period.value === rankingStore.currentPeriod,
           }"
           >{{ period.label }}</a
         >
@@ -40,11 +40,11 @@
 
       <!-- list -->
       <div
-        v-if="rankingList.length > 0"
+        v-if="rankingStore.rankingList.length > 0"
         class="flex-1 my-1 py-2 px-4 overflow-y-auto"
       >
         <RankingItem
-          v-for="({ username, count }, index) in rankingList"
+          v-for="({ username, count }, index) in rankingStore.rankingList"
           :username="username"
           :rank="index + 1"
           :count="count"
@@ -55,14 +55,14 @@
         v-else
         class="flex-1 flex items-center justify-center text-gray-500"
       >
-        <Loading v-if="isLoading" />
+        <Loading v-if="rankingStore.isLoading" />
         <template v-else> 还没有小伙伴上榜哦，快来霸榜吧！🏆 </template>
       </div>
 
       <!-- tip -->
       <RankingTip
-        :isLoading="isLoading"
-        :rankingSelf="rankingSelf"
+        :isLoading="rankingStore.isLoading"
+        :rankingSelf="rankingStore.rankingSelf"
       />
     </div>
 
@@ -71,7 +71,7 @@
       method="dialog"
       class="modal-backdrop"
     >
-      <button @click="hide"></button>
+      <button @click="rankingStore.hideRankModal"></button>
     </form>
   </dialog>
 </template>
@@ -79,27 +79,19 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 import Loading from "~/components/Loading.vue";
-import { useRankModal, useRankingList } from "~/composables/rank/rankingList";
+import { useRanking } from "~/composables/rank/rankingList";
 import { registerShortcut } from "~/utils/keyboardShortcuts";
 import { cancelShortcut } from "../../utils/keyboardShortcuts";
 import RankingItem from "./RankingItem.vue";
 import RankingTip from "./RankingTip.vue";
 
-const { showModal, hide } = useRankModal();
-const {
-  isLoading,
-  currentPeriod,
-  rankingPeriodList,
-  rankingList,
-  rankingSelf,
-  togglePeriod,
-} = useRankingList();
+const rankingStore = useRanking();
 
 onMounted(() => {
-  registerShortcut("Escape", hide);
+  registerShortcut("Escape", rankingStore.hideRankModal);
 });
 
 onUnmounted(() => {
-  cancelShortcut("Escape", hide);
+  cancelShortcut("Escape", rankingStore.hideRankModal);
 });
 </script>
