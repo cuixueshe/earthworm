@@ -1,15 +1,18 @@
 <template>
-  <n-config-provider preflight-style-disabled>
-    <NuxtLayout>
-      <HttpErrorProvider>
-        <NuxtPage />
-      </HttpErrorProvider>
-    </NuxtLayout>
-  </n-config-provider>
+  <NuxtLayout>
+    <HttpErrorProvider>
+      <NuxtPage />
+    </HttpErrorProvider>
+  </NuxtLayout>
 </template>
 
 <script setup lang="tsx">
+import { onMounted } from "vue";
+import { useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
+
+const { initDarkMode } = useDarkMode();
+onMounted(() => initDarkMode());
 
 useRestoreUser();
 
