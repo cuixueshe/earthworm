@@ -11,7 +11,7 @@
       <h2
         class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-300"
       >
-        Log in to your account
+        Login to your account
       </h2>
     </div>
 
@@ -43,7 +43,7 @@
             type="submit"
             class="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            Log in
+            Login
           </button>
         </div>
       </form>

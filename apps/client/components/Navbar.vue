@@ -57,7 +57,7 @@
         class="btn btn-sm btn-ghost mx-1 h-8 px-2"
         @click="handleLogin"
       >
-        Log in
+        Login
       </button>
       <button
         v-show="route.name === 'Auth-Login'"

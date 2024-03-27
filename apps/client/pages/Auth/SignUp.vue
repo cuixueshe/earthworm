@@ -66,7 +66,7 @@
           to="/auth/login"
           class="font-semibold text-[1.2em] leading-6 text-indigo-400 hover:text-indigo-500"
         >
-          Log in
+          Login
         </NuxtLink>
       </p>
     </div>
