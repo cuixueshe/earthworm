@@ -1,19 +1,19 @@
 <template>
-  <div class="space-y-4 min-w-max">
-    <section class="space-y-2">
-      <h2 class="text-lg">快捷键设置</h2>
-      <table class="table">
+  <div class="space-y-8 min-w-max">
+    <section class="space-y-4">
+      <h2 class="text-lg font-medium">快捷键设置</h2>
+      <table class="table text-base">
         <thead>
-          <tr>
-            <th class="text-base">命令</th>
-            <th class="text-base">键绑定</th>
-            <th class="w-[300px] text-base text-center">操作</th>
+          <tr class="text-base">
+            <th class="w-[240px]">功能</th>
+            <th class="text-center">快捷键</th>
+            <th class="w-[300px] text-center">操作</th>
           </tr>
         </thead>
         <tbody>
           <tr class="hover">
             <td class="label-text">播放发音</td>
-            <td>{{ shortcutKeys.sound }}</td>
+            <td class="text-center">{{ shortcutKeys.sound }}</td>
             <td class="text-center">
               <button
                 class="btn btn-sm btn-outline btn-secondary"
@@ -25,7 +25,7 @@
           </tr>
           <tr class="hover">
             <td class="label-text">切换答题/答案页面</td>
-            <td>{{ shortcutKeys.answer }}</td>
+            <td class="text-center">{{ shortcutKeys.answer }}</td>
             <td class="text-center">
               <button
                 class="btn btn-sm btn-outline btn-secondary"
@@ -39,8 +39,8 @@
       </table>
     </section>
 
-    <section class="space-y-2">
-      <h2 class="text-lg">声音设置</h2>
+    <section class="space-y-4">
+      <h2 class="text-lg font-medium">声音设置</h2>
       <table class="table">
         <tbody>
           <tr class="hover">
@@ -68,7 +68,7 @@
           <tr class="hover">
             <td class="label-text">切换口音</td>
             <td class="w-[300px] text-center">
-              <div class="join">
+              <div class="join mr-12">
                 <input
                   v-for="lang in getPronunciationOptions()"
                   class="join-item btn btn-sm"
@@ -86,8 +86,8 @@
       </table>
     </section>
 
-    <section class="space-y-2">
-      <h2 class="text-lg">答题设置</h2>
+    <section class="space-y-4">
+      <h2 class="text-lg font-medium">答题设置</h2>
       <table class="table">
         <tbody>
           <tr class="hover">
@@ -128,19 +128,32 @@
       <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
         请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
-      <div class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center">
+      <div
+        class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center"
+      >
         {{ shortcutKeyStr }}
       </div>
       <div class="text-center mt-2 text-xs">
         {{ shortcutKeyTip }}
       </div>
     </div>
+
+    <!-- click outside to close -->
+    <form
+      method="dialog"
+      class="modal-backdrop"
+    >
+      <button @click="handleCloseDialog"></button>
+    </form>
   </dialog>
 </template>
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
-import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
+import {
+  PronunciationType,
+  usePronunciation,
+} from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
   useAutoPronunciation,
@@ -170,19 +183,10 @@ const {
   handleKeydown,
 } = useShortcutKeyMode();
 
-function pointDialogOutside(e: MouseEvent) {
-  if (!showModal.value) return;
-  if (!dialogBoxRef.value?.contains(e.target as Node)) {
-    handleCloseDialog();
-  }
-}
-
 onMounted(() => {
-  document.addEventListener("mouseup", pointDialogOutside);
   document.addEventListener("keydown", handleKeydown);
 });
 onUnmounted(() => {
-  document.removeEventListener("mouseup", pointDialogOutside);
   document.removeEventListener("keydown", handleKeydown);
 });
 </script>
