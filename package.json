@@ -1,8 +1,15 @@
 {
   "name": "earthworm",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
+  "engines": {
+    "node": ">=20.11.0"
+  },
   "scripts": {
     "schema:build": "pnpm -F @earthworm/schema build",
     "db:init": "pnpm schema:build && pnpm -F @earthworm/db run init",
@@ -23,27 +30,30 @@
     "test:ci": "pnpm -F api test && pnpm -F client test:ci",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
-  "simple-git-hooks": {
-    "commit-msg": "npx tsx ./scripts/verify-commit.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "engines": {
-    "node": ">=20.11.0"
+  "dependencies": {
+    "@t3-oss/env-core": "^0.7.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.9.0",
     "@types/node": "^20.11.0",
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
+    "eslint": "npm:eslint-ts-patch@^8.57.0-0",
+    "eslint-ts-patch": "^8.57.0-0",
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.9.0",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
-  "dependencies": {
-    "@t3-oss/env-core": "^0.7.1",
-    "zod": "^3.22.4"
+
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "npx tsx ./scripts/verify-commit.ts"
+  },
+
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
