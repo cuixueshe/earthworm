@@ -35,6 +35,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+import displayAnswer from "~/composables/main/displayAnswer";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
@@ -42,6 +43,7 @@ import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
+const { display, showAnswer, hideAnswer } = displayAnswer();
 const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
@@ -85,7 +87,7 @@ function goToNextQuestion() {
     showSummary();
     return;
   }
-
+  hideAnswer();
   courseStore.toNextStatement();
   showQuestion();
 }

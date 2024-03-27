@@ -1,10 +1,5 @@
 <template>
   <div class="text-center pt-2">
-    <div class="h-1/2 w-full flex flex-wrap justify-center">
-      <template v-if="isQuestion() && display">
-        <AnswerTip></AnswerTip>
-      </template>
-    </div>
     <div class="flex relative flex-wrap justify-center gap-2 transition-all">
       <template
         v-for="(w, i) in courseStore.words"
@@ -41,17 +36,14 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
-import displayAnswer from "~/composables/main/displayAnswer";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
-import AnswerTip from "../AnswerTip.vue";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
-const { display } = displayAnswer();
 const courseStore = useCourseStore();
 const inputEl = ref<HTMLInputElement>();
 const { setInputCursorPosition, getInputCursorPosition, preventCursorMove } =
