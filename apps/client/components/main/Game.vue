@@ -1,7 +1,10 @@
 <template>
   <div class="h-full pt-10">
     <div class="h-[40vh] flex flex-col aligh justify-center">
-      <div class="h-1/2 w-full flex flex-wrap justify-center">
+      <div
+        class="h-1/2 w-full flex flex-wrap justify-center"
+        @click="hideAnswer"
+      >
         <template v-if="isQuestion() && display">
           <AnswerTip></AnswerTip>
         </template>
@@ -31,6 +34,6 @@ import Share from "./Share.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
 
-const { display } = displayAnswer();
+const { display, hideAnswer } = displayAnswer();
 const { isAnswer, isQuestion } = useGameMode();
 </script>
