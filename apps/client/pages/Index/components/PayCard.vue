@@ -31,6 +31,7 @@
         v-for="(feature, index) in features"
         :key="index"
         class="card w-96 max-w-sm p-8 shadow-xl border-transparent relative"
+        :class="{ 'lifetime-animation': feature.type === 'Lifetime' }"
       >
         <div class="mb-6 text-left">
           <h2 class="text-3xl font-bold text-gradient">{{ feature.type }}</h2>
@@ -87,7 +88,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-opacity-75 text-white text-center py-4 mt-6">
+  <div class="bg-opacity-75 text-white text-center py-10 mt-6">
     <p class="text-xs md:text-sm text-gray-800 dark:text-gray-400">
       Each new purchase is granted <br class="md:hidden" />
       <span
@@ -202,7 +203,11 @@ button:hover::after {
     background-color: rgba(77, 6, 192, 0.1);
   }
 }
-
+.lifetime-animation {
+  animation:
+    dynamic-shadow 2s infinite alternate,
+    pulse 2s infinite alternate;
+}
 .text-smaller,
 .program-description {
   font-size: 0.875rem;
