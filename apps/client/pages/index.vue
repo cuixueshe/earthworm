@@ -7,17 +7,17 @@
     <template v-else>
       <section class="w-full">
         <div
-          class="bg-purple-200 dark:bg-gray-800 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-lg"
+          class="px-4 py-3 text-white bg-purple-200 rounded-lg dark:bg-gray-800 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
         >
           <p
-            class="text-center font-medium sm:text-left text-black dark:text-white"
+            class="font-medium text-center text-black sm:text-left dark:text-white"
           >
             Earthworm is now available! 🎉
             <br class="sm:hidden" />
             Start your English learning journey now!
           </p>
           <a
-            class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-purple-600 transition hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
+            class="block px-5 py-3 mt-4 text-sm font-medium text-center text-purple-600 transition bg-white rounded-lg hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
             href="https://github.com/cuixueshe/earthworm"
           >
             Learn More
@@ -71,13 +71,17 @@
         </div>
       </section>
       <section class="flex flex-col py-8">
-        <h2 class="text-4xl text-center">What is Earthworm?</h2>
-        <p class="pt-2 text-center">
-          an open-source, collaborative, user-friendly English learning tool.
+        <h2
+          class="mb-4 text-4xl font-bold tracking-tight text-center text-gray-800 sm:text-5xl dark:text-white"
+        >
+          What is Earthworm?
+        </h2>
+        <p class="mb-6 text-lg text-center text-gray-600 dark:text-gray-400">
+          An open-source, collaborative, user-friendly English learning tool.
         </p>
         <div class="flex">
           <div
-            class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-2xl"
+            class="w-1/2 mx-2 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-2xl"
           >
             <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
               <div class="pr-2 overflow-x-hidden overflow-y-auto">
@@ -170,7 +174,7 @@
             </div>
           </div>
           <div
-            class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-xl"
+            class="w-1/2 mx-2 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-xl"
           >
             <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
               <div class="pr-2 overflow-x-hidden overflow-y-auto">
@@ -191,7 +195,7 @@
                 <p class="py-1 leading-7">
                   循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念
                 </p>
-                <h3 class="pb-2 text-base font-semibold">正向反馈来的快</h3>
+                <h3 class="py-2 text-base font-semibold">正向反馈来的快</h3>
                 <p class="py-1 leading-7">
                   当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案
                   ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
@@ -204,13 +208,13 @@
         <div class="w-1/2"></div>
       </section>
       <section class="flex flex-col py-4">
-        <div class="mx-auto max-w-screen-xl py-8 sm:px-6 lg:px-8 lg:py-12">
+        <div class="max-w-screen-xl py-8 mx-auto sm:px-6 lg:px-8 lg:py-12">
           <h2
-            class="text-center text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 dark:text-white mb-4"
+            class="mb-4 text-4xl font-bold tracking-tight text-center text-gray-800 sm:text-5xl dark:text-white"
           >
             User feedback
           </h2>
-          <p class="text-center text-lg mb-6 text-gray-600 dark:text-gray-400">
+          <p class="mb-6 text-lg text-center text-gray-600 dark:text-gray-400">
             If you're using Earthworm, feel free to give us your feedback on
             Twitter.
           </p>
@@ -221,14 +225,14 @@
               class="mb-8 sm:break-inside-avoid"
             >
               <blockquote
-                class="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white dark:bg-gray-700 cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
+                class="overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl dark:bg-gray-700 hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
               >
                 <div class="flex flex-col justify-between h-full p-6">
                   <div class="flex items-center gap-4">
                     <img
                       :src="item.avatar"
                       alt=""
-                      class="h-14 w-14 rounded-full object-cover border-2 border-purple-400 p-1"
+                      class="object-cover p-1 border-2 border-purple-400 rounded-full h-14 w-14"
                     />
                     <div class="flex-grow">
                       <p
@@ -250,17 +254,15 @@
                     {{ item.comment }}
                   </p>
                   <div class="flex items-center justify-between my-2">
-                    <div class="text-gray-500 text-xs">
+                    <div class="text-xs text-gray-500">
                       {{ formatTimestamp({ timestamp: item.time }) }}
                     </div>
                   </div>
-                  <div
-                    class=" mx-auto my-4"
-                  ></div>
-                  <div class="flex items-center justify-between text-xs mt-4">
+                  <div class="mx-auto my-4"></div>
+                  <div class="flex items-center justify-between mt-4 text-xs">
                     <div class="flex items-center">
                       <svg
-                        class="w-5 h-5 mr-2 fill-current text-pink-300 dark:text-blue-300"
+                        class="w-5 h-5 mr-2 text-pink-300 fill-current dark:text-blue-300"
                         viewBox="0 0 24 24"
                       >
                         <path
@@ -301,10 +303,10 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
+import CommentsList from "~/assets/comments";
 import Loading from "~/components/Loading.vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-import CommentsList from "~/assets/comments";
-import { formatTimestamp, type Timestamp } from "~/utils/date";
+import { formatTimestamp } from "~/utils/date";
 
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
