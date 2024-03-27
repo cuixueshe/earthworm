@@ -3,8 +3,8 @@ export function createEmptyRankList() {
     list: [],
     self: {
       username: 'testUser',
-      count: 0,
-      rank: null,
+      count: -1,
+      rank: -1,
     },
   };
 }
@@ -14,13 +14,13 @@ export function createRankListWithFirstUserFinishedCourse() {
     list: [
       {
         username: 'testUser',
-        count: '1',
+        count: 1,
       },
     ],
     self: {
       username: 'testUser',
-      count: '1',
-      rank: 0,
+      count: 1,
+      rank: 1,
     },
   };
 }
@@ -30,13 +30,13 @@ export function createRankListWithUserFinishedCourse2Times() {
     list: [
       {
         username: 'testUser',
-        count: '2',
+        count: 2,
       },
     ],
     self: {
       username: 'testUser',
-      count: '2',
-      rank: 0,
+      count: 2,
+      rank: 1,
     },
   };
 }
