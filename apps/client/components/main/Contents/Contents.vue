@@ -1,23 +1,34 @@
 <template>
   <div
     id="contents"
-    class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 overflow-y-scroll pl-2 select-none"
+    class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none"
     :class="[isShow() && 'show']"
   >
-    <div
-      class="mb-2"
-      v-for="(item, index) in contentsList"
-      :key="item.id"
-      :class="getItemClassNames(index)"
-      @click="jumpTo(index)"
+    <n-virtual-list
+      ref="virtualListRef"
+      id="container"
+      :item-size="24"
+      :items="contentsList"
+      item-resizable
+      key-field="id"
     >
-      {{ `${index + 1} - ${item.chinese}` }}
-    </div>
+      <template #default="{ item, index }">
+        <div
+          class="mb-2"
+          :key="item.id"
+          :class="getItemClassNames(index)"
+          @click="jumpTo(index)"
+        >
+          {{ `${index + 1} - ${item.chinese}` }}
+        </div>
+      </template>
+    </n-virtual-list>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import type { VirtualListInst } from "naive-ui";
+import { computed, onMounted, ref } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
@@ -67,6 +78,14 @@ function jumpTo(index: number) {
     coursesStore.toSpecificStatement(index);
   }
 }
+
+const virtualListRef = ref<VirtualListInst>();
+
+onMounted(() => {
+  virtualListRef.value?.scrollTo({
+    index: coursesStore.statementIndex - 1,
+  });
+});
 </script>
 
 <style scoped>
@@ -77,6 +96,10 @@ function jumpTo(index: number) {
 }
 
 #contents::-webkit-scrollbar {
+  display: none;
+}
+
+#container::-webkit-scrollbar {
   display: none;
 }
 
