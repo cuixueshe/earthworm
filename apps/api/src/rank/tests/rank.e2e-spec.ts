@@ -51,7 +51,7 @@ describe('rank e2e', () => {
             list: expect.arrayContaining([
               expect.objectContaining({
                 username: userData.username,
-                count: '1',
+                count: 1,
               }),
             ]),
           }),
@@ -71,8 +71,8 @@ describe('rank e2e', () => {
           expect.objectContaining({
             self: expect.objectContaining({
               username: userData.username,
-              count: '1',
-              rank: 0,
+              count: 1,
+              rank: 1,
             }),
           }),
         );

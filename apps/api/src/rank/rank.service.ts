@@ -50,7 +50,7 @@ export class RankService {
     const res = [];
     for (let i = 0; i < rankList.length; i += 2) {
       const username = this.getUserName(rankList[i]);
-      const count = rankList[i + 1];
+      const count = parseInt(rankList[i + 1] ?? '-1');
       res.push({ username, count });
     }
     return res;
@@ -67,28 +67,28 @@ export class RankService {
     period: RankPeriodAlias = RankPeriod.WEEKLY,
   ) {
     // return [member, count, member, count, ...]
+    let self = null;
+    const rankPeriod = this.rankKeys[period];
     const rankList = await this.redis.zrevrange(
-      this.rankKeys[period],
+      rankPeriod,
       0,
-      9,
+      24,
       'WITHSCORES',
     );
-    let self = null;
     if (user) {
-      const userRank = await this.redis.zrevrank(
-        this.rankKeys[period],
-        `${user.userId}-${user.username}`,
-      );
-      const userCount =
-        (await this.redis.zscore(
-          this.rankKeys[period],
-          `${user.userId}-${user.username}`,
-        )) ?? 0;
-      self = { username: user.username, count: userCount, rank: userRank };
+      const member = `${user.userId}-${user.username}`;
+      const userRank = await this.redis.zrevrank(rankPeriod, member);
+      const userCount = await this.redis.zscore(rankPeriod, member);
+      self = {
+        username: user.username,
+        count: userCount === null ? -1 : parseInt(userCount),
+        rank: userRank === null ? -1 : userRank + 1,
+      };
     }
+
     return {
-      list: this.translateList(rankList),
       self,
+      list: this.translateList(rankList),
     };
   }
 
