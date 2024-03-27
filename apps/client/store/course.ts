@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
 import { useUserStore } from "~/store/user";
@@ -54,6 +55,10 @@ export const useCourseStore = defineStore("course", () => {
     return statementIndex.value;
   }
 
+  function toSpecificStatement(index:number){
+    statementIndex.value = index;
+  }
+
   function isAllDone() {
     // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
     return statementIndex.value + 1 >= totalQuestionsCount.value;
@@ -88,7 +93,16 @@ export const useCourseStore = defineStore("course", () => {
       currentCourse.value = course;
     } else {
       let course = await fetchCourse(courseId);
-      currentCourse.value = course;
+      const res = await fetchCourseHistory();
+      const courseHistory = res.find((item) => item.courseId === courseId);
+      if (courseHistory && courseHistory.completionCount) {
+        currentCourse.value = {
+          ...course,
+          count:courseHistory.completionCount
+        };
+      } else {
+        currentCourse.value = course;
+      }
     }
 
     statementIndex.value = loadProgress(courseId);
@@ -112,5 +126,6 @@ export const useCourseStore = defineStore("course", () => {
     toNextStatement,
     cleanProgress,
     resetStatementIndex,
+    toSpecificStatement
   };
 });

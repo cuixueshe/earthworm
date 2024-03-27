@@ -73,7 +73,10 @@
     <div class="ml-4 mr-1 text-gray-400">
       {{ coursesStore.currentCourse?.title }}
     </div>
-    <div>
+    <div
+      class="link-item"
+      @click="toggleContents"
+    >
       （{{ currentSchedule }}<span class="mx-[2px]">/</span
       >{{ courseStore.totalQuestionsCount }}）
     </div>
@@ -106,6 +109,7 @@
       class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
       :style="{ width: currentPercentage + '%' }"
     ></div>
+    <Contents></Contents>
   </div>
   <RankList></RankList>
   <MessageBox
@@ -123,6 +127,8 @@ import RankList from "~/components/rank/RankingList.vue";
 import { useGameMode } from "~/composables/main/game";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
+import Contents from "./Contents/Contents.vue";
+import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankingStore = useRanking();
@@ -164,6 +170,8 @@ function useDoAgain() {
     handleTipConfirm,
   };
 }
+
+const { toggleContents } = useContent();
 </script>
 
 <style scoped>
