@@ -1,7 +1,7 @@
 <template>
   <div class="h-full pt-10">
     <div class="h-[40vh] flex flex-col aligh justify-center">
-      <div class="h-1/4 w-full flex flex-wrap justify-center">
+      <div class="h-1/2 w-full flex flex-wrap justify-center">
         <template v-if="isQuestion() && display">
           <AnswerTip></AnswerTip>
         </template>

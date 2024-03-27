@@ -1,8 +1,12 @@
 <template>
   <div class="text-5xl dark:text-gray-50 text-center h-1/2 w-full">
-    {{ courseStore.currentStatement?.english }}
+    <div class="dark:bg-zinc-900 inline-block bg-slate-300 p-3 rounded-lg">
+      {{ courseStore.currentStatement?.english }}
+      <div class="mt-1 text-2xl dark:text-gray-50 text-center">
+        再次点击隐藏
+      </div>
+    </div>
   </div>
-  <div class="mt-2 dark:text-gray-50 text-center">再次点击隐藏</div>
 </template>
 
 <script setup lang="ts">
