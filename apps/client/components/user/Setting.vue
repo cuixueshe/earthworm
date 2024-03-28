@@ -35,6 +35,18 @@
               </button>
             </td>
           </tr>
+          <tr class="hover">
+            <td class="label-text">跳过</td>
+            <td class="text-center">{{ shortcutKeys.skip }}</td>
+            <td class="text-center">
+              <button
+                class="btn btn-sm btn-outline btn-secondary"
+                @click="handleEdit('skip')"
+              >
+                编辑
+              </button>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -151,13 +163,13 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import {
-  PronunciationType,
-  usePronunciation,
+PronunciationType,
+usePronunciation,
 } from "~/composables/user/pronunciation";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
-  useAutoPronunciation,
-  useKeyboardSound,
+useAutoPronunciation,
+useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";

@@ -4,6 +4,7 @@ export const SHORTCUT_KEYS = "shortcutKeys";
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
   answer: "Ctrl+;",
+  skip:"Ctrl+."
 };
 export const KEYBOARD = {
   ESC: "Esc",
