@@ -19,6 +19,16 @@
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
 
+    <div class="w-[210px] mb-4">
+      <button
+        class="tip-btn"
+        @click="goToNextQuestion"
+      >
+      ⌃ {{ shortcutKeys.skip }}
+      </button>
+      <span class="ml-2">skip</span>
+    </div>
+
     <div class="w-[210px]">
       <button
         class="tip-btn"
@@ -36,6 +46,7 @@ import { computed, onMounted, onUnmounted } from "vue";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
+import { useGoToNextQuestion } from "~/composables/main/goToNextQuestion";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
@@ -43,6 +54,7 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
+const { goToNextQuestion } = useSkip(shortcutKeys.value.skip)
 
 const toggleTipText = computed(() => {
   let text = "";
@@ -122,6 +134,26 @@ function useShowAnswer(key: string) {
   return {
     toggleGameMode,
   };
+}
+
+function useSkip(key: string){
+  const {goToNextQuestion}=useGoToNextQuestion()
+  onMounted(() => {
+    registerShortcut(key, skipCommand);
+  });
+
+  onUnmounted(() => {
+    cancelShortcut(key, skipCommand);
+  });
+
+  function skipCommand(e: KeyboardEvent) {
+    e.preventDefault();
+    goToNextQuestion();
+  }
+
+  return {
+    goToNextQuestion
+  }
 }
 </script>
 
