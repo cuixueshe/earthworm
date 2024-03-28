@@ -254,9 +254,7 @@
                       {{ formatTimestamp({ timestamp: item.time }) }}
                     </div>
                   </div>
-                  <div
-                    class=" mx-auto my-4"
-                  ></div>
+                  <div class="mx-auto my-4"></div>
                   <div class="flex items-center justify-between text-xs mt-4">
                     <div class="flex items-center">
                       <svg
@@ -301,10 +299,10 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
+import CommentsList from "~/assets/comments.json";
 import Loading from "~/components/Loading.vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-import CommentsList from "~/assets/comments";
-import { formatTimestamp, type Timestamp } from "~/utils/date";
+import { formatTimestamp } from "~/utils/date";
 
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
