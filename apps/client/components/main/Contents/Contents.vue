@@ -70,7 +70,8 @@ function isActive(index: number) {
  */
 function haveEverLearned(index: number) {
   return (
-    coursesStore.currentCourse?.count || index <= coursesStore.statementIndex
+    coursesStore.currentCourse?.count ||
+    index <= coursesStore.latestLearnedIndex
   );
 }
 
