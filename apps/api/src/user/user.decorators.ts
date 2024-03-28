@@ -3,7 +3,8 @@ import { ExecutionContext, createParamDecorator } from '@nestjs/common';
 type User = {
   userId: number;
   username: string;
-  phone: string;
+  nickname: string;
+  phone?: string;
 };
 export type UserEntity = User | null;
 

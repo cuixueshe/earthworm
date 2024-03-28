@@ -12,6 +12,7 @@ import { AuthService } from '../auth.service';
 
 const mockUserService = {
   findWithPhone: jest.fn(),
+  findWithUsername: jest.fn(),
   createUser: jest.fn().mockResolvedValue({ id: 1, name: 'test' }),
 };
 describe('auth service', () => {
@@ -40,44 +41,46 @@ describe('auth service', () => {
   });
 
   it('should return signup user', async () => {
-    const phone = '01012345678';
+    const username = '01012345678';
+    const nickname = 'test';
     const { token, user } = await authService.signup({
-      phone,
-      name: 'test',
+      username,
+      nickname: 'test',
       password: 'test',
     });
 
     expect(token).toBeDefined();
     expect(user).toEqual({
       userId: 1,
-      username: 'test',
-      phone,
+      nickname,
+      username,
     });
+
     expect(userService.createUser).toHaveBeenCalledWith({
-      phone,
-      name: 'test',
+      username,
+      nickname,
       password: 'test',
     });
   });
 
   it('should can login', async () => {
-    const phone = '01012345678';
-    mockUserService.findWithPhone.mockResolvedValue({
+    const username = '01012345678';
+    mockUserService.findWithUsername.mockResolvedValue({
       id: 1,
-      name: 'test',
+      nickname: 'test',
       password: await argon2.hash('test'),
-      phone,
+      username,
     });
     const { token, user } = await authService.login({
-      phone,
+      username,
       password: 'test',
     });
 
     expect(token).toBeDefined();
     expect(user).toEqual({
       userId: 1,
-      username: 'test',
-      phone,
+      nickname: 'test',
+      username,
     });
   });
 });

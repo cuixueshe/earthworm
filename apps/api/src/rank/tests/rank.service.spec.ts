@@ -46,7 +46,7 @@ describe('rank service', () => {
     });
 
     it('should return rank list with first user finished course', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId, user.nickname);
       const resWeek = await rankService.getRankList(user);
       const resMonth = await rankService.getRankList(user, RankPeriod.MONTHLY);
       const resYear = await rankService.getRankList(user, RankPeriod.YEARLY);
@@ -59,8 +59,8 @@ describe('rank service', () => {
     });
 
     it('should return rank list with user finished course 2 times', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId, user.nickname);
+      await rankService.userFinishCourse(user.userId, user.nickname);
       const res = await rankService.getRankList(user);
 
       const resWeek = await rankService.getRankList(user);
@@ -76,7 +76,7 @@ describe('rank service', () => {
     });
 
     it('should return empty rank list after week reset', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId, user.nickname);
       await rankService.resetRankList();
       const res = await rankService.getRankList(user);
 
@@ -84,7 +84,7 @@ describe('rank service', () => {
     });
 
     it('should return empty rank list after month reset', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId, user.nickname);
       await rankService.resetRankList(RankPeriod.MONTHLY);
       const res = await rankService.getRankList(user, RankPeriod.MONTHLY);
 
@@ -92,7 +92,7 @@ describe('rank service', () => {
     });
 
     it('should return empty rank list after year reset', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId, user.nickname);
       await rankService.resetRankList(RankPeriod.YEARLY);
       const res = await rankService.getRankList(user, RankPeriod.YEARLY);
 

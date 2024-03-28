@@ -11,9 +11,9 @@ import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
 const createUserData = {
-  name: 'test',
-  phone: '12345678900',
+  username: '12345678900',
   password: '123456',
+  nickname: 'test',
 };
 
 const userData = createUser();
@@ -57,8 +57,8 @@ describe('auth e2e', () => {
             expect.objectContaining({
               token: expect.any(String),
               user: expect.objectContaining({
-                username: createUserData.name,
-                phone: createUserData.phone,
+                nickname: createUserData.nickname,
+                username: createUserData.username,
               }),
             }),
           );
@@ -69,8 +69,8 @@ describe('auth e2e', () => {
       await request(app.getHttpServer())
         .post('/auth/signup')
         .send({
-          name: userData.username,
-          phone: userData.phone,
+          nickname: userData.nickname,
+          username: userData.username,
           password,
         })
         .expect(400);
@@ -82,7 +82,7 @@ describe('auth e2e', () => {
       await request(app.getHttpServer())
         .post('/auth/login')
         .send({
-          phone: userData.phone,
+          username: userData.username,
           password,
         })
         .expect(201)
@@ -91,8 +91,8 @@ describe('auth e2e', () => {
             expect.objectContaining({
               token: expect.any(String),
               user: expect.objectContaining({
+                nickname: userData.nickname,
                 username: userData.username,
-                phone: userData.phone,
               }),
             }),
           );
@@ -103,7 +103,7 @@ describe('auth e2e', () => {
   it('get user info', async () => {
     // get token
     const res = await request(app.getHttpServer()).post('/auth/login').send({
-      phone: userData.phone,
+      username: userData.username,
       password,
     });
 
@@ -115,8 +115,8 @@ describe('auth e2e', () => {
       .expect(({ body }) => {
         expect(body).toEqual(
           expect.objectContaining({
+            nickname: userData.nickname,
             username: userData.username,
-            phone: userData.phone,
           }),
         );
       });
@@ -125,8 +125,7 @@ describe('auth e2e', () => {
 
 async function setupDBData(db: DbType) {
   await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
+    ...userData,
     password: await argon2.hash(password),
   });
 }

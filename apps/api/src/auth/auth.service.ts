@@ -18,15 +18,27 @@ export class AuthService {
   ) {}
 
   async login(dto: SignDto) {
-    const user = await this.userService.findWithPhone(dto);
+    let user = await this.userService.findWithUsername(dto.username);
+
+    if (!user) {
+      user = await this.userService.findWithPhone({ phone: dto.phone });
+    }
+
     if (!user) {
       throw new HttpException('User not exists', HttpStatus.BAD_REQUEST);
     }
+
     if (!(await argon2.verify(user.password, dto.password))) {
       throw new UnauthorizedException();
     }
 
-    const payload = { userId: user.id, username: user.name, phone: user.phone };
+    const payload = {
+      userId: user.id,
+      username: user.username,
+      nickname: user.nickname,
+      phone: user.phone,
+    };
+
     return {
       token: await this.jwtService.signAsync(payload),
       user: payload,
@@ -34,13 +46,25 @@ export class AuthService {
   }
 
   async signup(dto: CreateUserDto) {
-    const user = await this.userService.findWithPhone(dto);
+    let user = null;
+
+    user = await this.userService.findWithUsername(dto.username);
+
+    if (!user) {
+      user = await this.userService.findWithPhone({ phone: dto.phone });
+    }
+
     if (user) {
       throw new HttpException('User already exists', HttpStatus.BAD_REQUEST);
     }
 
     const res = await this.userService.createUser(dto);
-    const payload = { userId: res.id, username: dto.name };
+
+    const payload = {
+      userId: res.id,
+      username: dto.username,
+      nickname: dto.nickname,
+    };
     return {
       token: await this.jwtService.signAsync(payload),
       user: {

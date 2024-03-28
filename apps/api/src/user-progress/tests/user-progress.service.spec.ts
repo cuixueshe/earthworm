@@ -83,8 +83,7 @@ async function setupTesting() {
 async function setupDBData(db: DbType) {
   // create user data
   const [res] = await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
+    ...userData,
     password: await argon2.hash(password),
   });
 

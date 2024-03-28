@@ -58,8 +58,8 @@ describe('game e2e', () => {
 
 async function setupDBData(db: DbType) {
   const [res] = await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
+    nickname: userData.nickname,
+    username: userData.username,
     password: await argon2.hash(password),
   });
 

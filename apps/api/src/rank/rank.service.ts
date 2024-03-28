@@ -23,8 +23,8 @@ export class RankService {
   };
   constructor(@InjectRedis() private readonly redis: Redis) {}
 
-  async userFinishCourse(userId: number, username: string) {
-    const member = `${userId}-${username}`;
+  async userFinishCourse(userId: number, nickname: string) {
+    const member = `${userId}-${nickname}`;
 
     const counts = {};
     for (const period of Object.keys(this.rankKeys)) {
@@ -42,16 +42,16 @@ export class RankService {
     return counts;
   }
 
-  private getUserName(member: string) {
+  private getNickName(member: string) {
     return member.split('-')[1];
   }
 
   private translateList(rankList: string[]) {
     const res = [];
     for (let i = 0; i < rankList.length; i += 2) {
-      const username = this.getUserName(rankList[i]);
+      const nickname = this.getNickName(rankList[i]);
       const count = parseInt(rankList[i + 1] ?? '-1');
-      res.push({ username, count });
+      res.push({ nickname, count });
     }
     return res;
   }
@@ -76,11 +76,11 @@ export class RankService {
       'WITHSCORES',
     );
     if (user) {
-      const member = `${user.userId}-${user.username}`;
+      const member = `${user.userId}-${user.nickname}`;
       const userRank = await this.redis.zrevrank(rankPeriod, member);
       const userCount = await this.redis.zscore(rankPeriod, member);
       self = {
-        username: user.username,
+        nickname: user.nickname,
         count: userCount === null ? -1 : parseInt(userCount),
         rank: userRank === null ? -1 : userRank + 1,
       };

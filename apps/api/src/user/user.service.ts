@@ -24,4 +24,10 @@ export class UserService {
       where: eq(user.phone, dto.phone),
     });
   }
+
+  async findWithUsername(username: string) {
+    return this.db.query.user.findFirst({
+      where: eq(user.username, username),
+    });
+  }
 }
