@@ -17,6 +17,9 @@ function addClarity() {
 }
 
 export default defineNuxtConfig({
+  devServer: {
+    host: "0.0.0.0",
+  },
   css: ["~/assets/css/globals.css"],
   ssr: false,
   devtools: { enabled: true },
