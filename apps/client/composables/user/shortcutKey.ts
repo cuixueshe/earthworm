@@ -4,6 +4,7 @@ export const SHORTCUT_KEYS = "shortcutKeys";
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
   answer: "Ctrl+;",
+  skip: "Ctrl+,",
 };
 export const KEYBOARD = {
   ESC: "Esc",
@@ -99,6 +100,7 @@ export function useShortcutKeyMode() {
 
   function handleKeydown(e: KeyboardEvent) {
     if (!showModal.value) return;
+    console.log("e", e);
 
     e.preventDefault();
     const mainKey = getKeyModifier(e);
