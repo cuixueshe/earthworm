@@ -16,7 +16,6 @@
     "cypress:open": "cypress open"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-naiveui": "^1.9.0",
     "@nuxt/test-utils": "^3.10.0",
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@pinia/testing": "^0.1.3",
