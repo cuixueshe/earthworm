@@ -144,5 +144,64 @@ describe("user defined shortcut key", () => {
       expect(showModal.value).toBeFalsy();
       expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Ctrl+s" });
     });
+    it("should be not set successfully with the same shortcut", () => {
+      const { showModal, shortcutKeys, handleEdit, handleKeydown, hasSameShortcutKey } =
+        useShortcutKeyMode();
+
+      handleEdit(answerKey);
+
+      expect(showModal.value).toBeTruthy();
+
+      handleKeydown({
+        key: "s",
+        metaKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      expect(hasSameShortcutKey.value).toBeFalsy()
+      expect(showModal.value).toBeFalsy();
+      expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Command+s" });
+
+      handleEdit(soundKey);
+
+      expect(showModal.value).toBeTruthy();
+
+      handleKeydown({
+        key: "s",
+        metaKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      
+      expect(hasSameShortcutKey.value).toBeTruthy()
+      expect(showModal.value).toBeTruthy();
+      expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Command+s", [soundKey]: "Ctrl+'" });
+    })
+    it("should be the shortcut key is set successfully with the same key", () => {
+      const { showModal, shortcutKeys, handleEdit, handleKeydown, hasSameShortcutKey } =
+      useShortcutKeyMode();
+
+      handleEdit(answerKey);
+
+      expect(showModal.value).toBeTruthy();
+      handleKeydown({
+        key: ";",
+        ctrlKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      expect(hasSameShortcutKey.value).toBeFalsy()
+      expect(showModal.value).toBeFalsy();
+      expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Ctrl+;" });
+    })
   });
 });
