@@ -36,6 +36,7 @@ export function useContent() {
       const isSelf = contentsEl!.contains(e.target);
       if (!isSelf) {
         contentsVisible.value = false;
+        // 隐藏时防止和 toggleContents 冲突
         setTimeout(() => {
           listeningIsSelf = false;
         });

@@ -1,39 +1,31 @@
 <template>
   <div
-    ref="contentsRef"
     id="contents"
     class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none"
     :class="[isShowContents() && 'show']"
+    v-bind="containerProps"
   >
-    <n-virtual-list
-      ref="virtualListRef"
-      id="container"
-      :item-size="24"
-      :items="contentsList"
-      item-resizable
-      key-field="id"
-    >
-      <template #default="{ item, index }">
-        <div
-          class="mb-2"
-          :key="item.id"
-          :class="getItemClassNames(index)"
-          @click="jumpTo(index)"
-        >
-          <div class="flex">
-            <span>{{ index + 1 }}</span>
-            <span>&nbsp-&nbsp</span>
-            <span class="flex-1">{{ item.chinese }}</span>
-          </div>
+    <div v-bind="wrapperProps">
+      <div
+        v-for="item in list"
+        class="mb-2"
+        :key="item.data.id"
+        :class="getItemClassNames(item.index)"
+        @click="jumpTo(item.index)"
+      >
+        <div class="flex">
+          <span>{{ item.index + 1 }}</span>
+          <span>&nbsp-&nbsp</span>
+          <span class="flex-1">{{ item.data.chinese }}</span>
         </div>
-      </template>
-    </n-virtual-list>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { VirtualListInst } from "naive-ui";
-import { computed, onMounted, ref } from "vue";
+import { useVirtualList } from "@vueuse/core";
+import { computed, onMounted } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
@@ -44,6 +36,11 @@ const coursesStore = useCourseStore();
 const contentsList = computed(() => {
   return coursesStore.currentCourse?.statements || [];
 });
+
+const { list, containerProps, wrapperProps,scrollTo } = useVirtualList(
+  contentsList.value,
+  { itemHeight: 30 }
+);
 
 function getItemClassNames(index: number) {
   const classNames: string[] = [];
@@ -85,15 +82,9 @@ function jumpTo(index: number) {
   }
 }
 
-const virtualListRef = ref<VirtualListInst>();
-
-const contentsRef = ref<HTMLElement>();
-
 onMounted(() => {
-  virtualListRef.value?.scrollTo({
-    index: coursesStore.statementIndex - 1,
-  });
-  watchIsContentsItself(contentsRef.value!);
+  scrollTo(coursesStore.statementIndex)
+  watchIsContentsItself(containerProps.ref.value!);
 });
 </script>
 
