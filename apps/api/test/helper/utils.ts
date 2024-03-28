@@ -30,9 +30,9 @@ export async function signup(
   user?: UserEntity,
 ): Promise<{ token: string }> {
   const userInfo = user || {
-    name: 'testuser',
+    nickname: 'testuser',
     password: 'testpass',
-    phone: '13813832182',
+    username: '13813832182',
   };
 
   const res = await request(app.getHttpServer())
@@ -46,10 +46,10 @@ export async function signup(
 
 export async function login(
   app: INestApplication,
-  { phone, password }: { phone: string; password: string },
+  { username, password }: { username: string; password: string },
 ): Promise<{ token: string }> {
   const res = await request(app.getHttpServer()).post('/auth/login').send({
-    phone,
+    username,
     password,
   });
 

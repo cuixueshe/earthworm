@@ -19,19 +19,24 @@ const phoneValidator = (phoneWithCode: string) => {
 
 export function useSignupForm() {
   const schema = yup.object({
-    name: yup
+    username: yup
       .string()
-      .required("Please enter your name")
-      .min(2, "Name must be at least 2 characters")
-      .max(20, "Name must be less than 20 characters"),
-    phone: yup
+      .required("Please enter your username")
+      .min(2, "Username must be at least 2 characters")
+      .max(20, "Username must be less than 20 characters"),
+    nickname: yup
       .string()
-      .required("Please enter your phone number")
-      .test(
-        "is-valid-phone",
-        "Please enter a valid phone number",
-        phoneValidator
-      ),
+      .required("Please enter your nickname")
+      .min(2, "Nickname must be at least 2 characters")
+      .max(20, "Nickname must be less than 20 characters"),
+    // phone: yup
+    //   .string()
+    //   .required("Please enter your phone number")
+    //   .test(
+    //     "is-valid-phone",
+    //     "Please enter a valid phone number",
+    //     phoneValidator
+    //   ),
     password: yup
       .string()
       .required("Please enter your password")
@@ -51,7 +56,9 @@ export function useSignupForm() {
     countryRef.value = code;
   };
 
-  const { value: name, errorMessage: nameError } = useField<string>("name");
+  const { value: username, errorMessage: usernameError } =
+    useField<string>("username");
+  const { value: nickname, errorMessage: nicknameError } = useField<string>("nickname");
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
   const { value: password, errorMessage: passwordError } =
     useField<string>("password");
@@ -60,8 +67,10 @@ export function useSignupForm() {
 
   return {
     handleSubmit,
-    name,
-    nameError,
+    username,
+    usernameError,
+    nickname,
+    nicknameError,
     phone,
     phoneError,
     password,

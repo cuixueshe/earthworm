@@ -1,7 +1,7 @@
 import { http } from "./http";
 
 interface LoginDto {
-  phone: string;
+  username: string;
   password: string;
 }
 
@@ -12,7 +12,7 @@ export interface UserInfo {
 }
 
 interface SignUpDto extends LoginDto {
-  name: string;
+  nickname: string;
 }
 
 interface LoginVo {

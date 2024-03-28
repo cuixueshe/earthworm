@@ -108,7 +108,7 @@ describe('course service', () => {
     );
     expect(rankService.userFinishCourse).toHaveBeenCalledWith(
       user.userId,
-      user.username,
+      user.nickname,
     );
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,

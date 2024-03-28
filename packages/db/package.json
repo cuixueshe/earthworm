@@ -7,6 +7,7 @@
     "init:ci": "tsx src/migrate.ts",
     "init:test": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
     "init": "drizzle-kit push:mysql",
+    "db:studio":"drizzle-kit studio",
     "generate":"drizzle-kit generate:mysql"
   },
   "keywords": [],

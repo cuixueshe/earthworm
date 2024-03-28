@@ -50,7 +50,7 @@ describe('rank e2e', () => {
           expect.objectContaining({
             list: expect.arrayContaining([
               expect.objectContaining({
-                username: userData.username,
+                nickname: userData.nickname,
                 count: 1,
               }),
             ]),
@@ -60,7 +60,10 @@ describe('rank e2e', () => {
   });
 
   it('should get rank with login', async () => {
-    const { token } = await login(app, { phone: userData.phone, password });
+    const { token } = await login(app, {
+      username: userData.username,
+      password,
+    });
 
     await request(app.getHttpServer())
       .get('/rank/progress/weekly')
@@ -70,7 +73,7 @@ describe('rank e2e', () => {
         expect(body).toEqual(
           expect.objectContaining({
             self: expect.objectContaining({
-              username: userData.username,
+              nickname: userData.nickname,
               count: 1,
               rank: 1,
             }),
@@ -82,12 +85,12 @@ describe('rank e2e', () => {
 
 async function setupDBData(db: DbType, redis: Redis) {
   const [res] = await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
+    nickname: userData.nickname,
+    username: userData.username,
     password: await argon2.hash(password),
   });
   const userId = res.insertId;
-  const member = `${userId}-${userData.username}`;
+  const member = `${userId}-${userData.nickname}`;
   const FINISH_COUNT_KEY = `user:finishCount`;
   await redis.zadd(FINISH_COUNT_KEY, 1, member);
 }

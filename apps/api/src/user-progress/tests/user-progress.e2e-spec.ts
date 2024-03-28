@@ -39,7 +39,7 @@ describe('user-progress e2e', () => {
     await cleanDB(db);
     await setupDBData(db);
 
-    const body = await login(app, { phone: userData.phone, password });
+    const body = await login(app, { username: userData.username, password });
     token = body.token;
   });
 
@@ -56,6 +56,7 @@ describe('user-progress e2e', () => {
       .send({
         courseId: firstCourse.id,
       });
+
     expect(res.body.courseId).toBe(firstCourse.id);
   });
 
@@ -80,8 +81,7 @@ describe('user-progress e2e', () => {
 
 async function setupDBData(db: DbType) {
   await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
+    ...userData,
     password: await argon2.hash(password),
   });
   await db.insert(course).values(firstCourse);

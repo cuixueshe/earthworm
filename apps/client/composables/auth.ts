@@ -2,11 +2,17 @@ import { setToken } from "~/utils/token";
 import { fetchLogin, fetchSignUp } from "~/api/auth";
 import { useUserStore } from "~/store/user";
 
-async function login({ phone, password }: { phone: string; password: string }) {
+async function login({
+  username,
+  password,
+}: {
+  username: string;
+  password: string;
+}) {
   const userStore = useUserStore();
 
   const data = await fetchLogin({
-    phone,
+    username,
     password,
   });
 
@@ -15,19 +21,19 @@ async function login({ phone, password }: { phone: string; password: string }) {
 }
 
 async function signup({
-  phone,
-  name,
+  username,
+  nickname,
   password,
 }: {
-  phone: string;
-  name: string;
+  username: string;
+  nickname: string;
   password: string;
 }) {
   const userStore = useUserStore();
 
   const data = await fetchSignUp({
-    phone,
-    name,
+    username,
+    nickname,
     password,
   });
 
@@ -38,6 +44,6 @@ async function signup({
 export function useAuth() {
   return {
     login,
-    signup
+    signup,
   };
 }
