@@ -1,47 +1,61 @@
 <template>
   <div>
-    <dialog className="modal mt-[-8vh]" :open="shareModalVisible">
+    <dialog
+      class="modal mt-[-8vh]"
+      :open="shareModalVisible"
+    >
       <div
         ref="dialogBoxRef"
-        className="modal-box w-[27rem] flex flex-col items-center overflow-hidden"
+        class="modal-box w-[27rem] flex flex-col items-center overflow-hidden"
       >
-        <div
-          :class="{ skeleton: !shareImageSrc }"
-          class="flex flex-col w-[24rem] h-[32rem]"
-          ref="imageContainer"
-        >
-          <img
-            v-show="shareImageSrc"
-            :src="shareImageSrc"
-            alt=""
-            width="400"
-            height="600"
-            class="rounded-md"
-          />
-        </div>
-        <div class="gallery flex w-full py-2">
+        <div class="flex">
+          <div class="gallery py-2 mr-2">
+            <div
+              v-for="(imgItem, index) in galleryImgs"
+              :key="imgItem.src"
+              :class="[
+                'border-2 border-transparent gallery-item w-14 mb-2 h-18 cursor-pointer rounded-sm overflow-hidden mr-2',
+                {
+                  '!border-primary': currImageIndex === index,
+                  skeleton: !imgItem.src,
+                },
+              ]"
+              @click="handleSelectImage(index)"
+            >
+              <img
+                v-show="imgItem.src"
+                :src="imgItem.src"
+                :alt="`Card ${index}`"
+              />
+            </div>
+          </div>
           <div
-            :class="{
-              '!border-primary': currImageIndex === index,
-              skeleton: !imgItem.src,
-            }"
-            class="border-2 border-transparent gallery-item w-12 h-18 cursor-pointer rounded-sm overflow-hidden mr-2"
-            @click="handleSelectImage(index)"
-            v-for="(imgItem, index) in galleryImgs"
-            :key="imgItem.src"
+            :class="['w-[19rem] h-[27rem]', { skeleton: !shareImageSrc }]"
+            ref="imageContainer"
           >
             <img
-              v-show="!!imgItem.src"
-              :src="imgItem.src"
-              :alt="`Card ${index}`"
+              v-show="shareImageSrc"
+              :src="shareImageSrc"
+              alt="Selected Share Image"
+              width="400"
+              height="600"
+              class="rounded-md"
             />
           </div>
         </div>
-        <div className="modal-action">
-          <button class="btn btn-primary" @click="copyAndClose">
+        <div class="modal-action">
+          <button
+            class="btn btn-primary"
+            @click="copyAndClose"
+          >
             复制并关闭
           </button>
-          <button class="btn" @click="hideShareModal">关闭</button>
+          <button
+            class="btn"
+            @click="hideShareModal"
+          >
+            关闭
+          </button>
         </div>
       </div>
     </dialog>
@@ -72,6 +86,7 @@ const {
   handleSelectImage,
   currImageIndex,
 } = useGenerateShareImage();
+
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
     console.log(userStore.user);
