@@ -1,0 +1,1 @@
+pnpm exec tsx ./scripts/verify-commit.ts

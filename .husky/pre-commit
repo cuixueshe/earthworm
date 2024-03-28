@@ -1,0 +1,2 @@
+# Enable after formatting all codes
+# pnpm exec lint-staged

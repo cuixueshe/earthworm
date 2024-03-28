@@ -24,6 +24,12 @@
 - 项目依赖 **Docker**，所以请确保你本地已安装并成功运行
 - 下面所提到的相关操作基于当前项目的根目录位置，请注意检查不要出错
 
+### 编辑器
+
+#### VSCode
+
+- 安装推荐的插件 [extensions.json](./.vscode/extensions.json)
+
 ```bash
 docker --version # Docker version 24.0.7, build afdd53b
 
