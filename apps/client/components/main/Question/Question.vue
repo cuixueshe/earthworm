@@ -122,12 +122,12 @@ watch(
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
   // 当前单词激活 且 聚焦
-  if (word.isActive && focusing) {
+  if (word.isActive && focusing.value) {
     return "text-fuchsia-500 border-b-fuchsia-500";
   }
 
   // 当前单词错误 且 聚焦
-  if (word.incorrect && focusing) {
+  if (word.incorrect && focusing.value) {
     // Fix 修复模式添加动画
     return `text-red-500 border-b-red-500 ${isFixMode() && "animate-shake"}`;
   }

@@ -11,9 +11,9 @@ export interface Shortcut {
 const shortcuts: Shortcut[] = [];
 
 window.addEventListener("keydown", (e: KeyboardEvent) => {
-  const shortcuts = findMatchingShortcut(e);
+  const matchingShortcuts = findMatchingShortcut(e);
 
-  shortcuts.forEach((shortcut) => {
+  matchingShortcuts.forEach((shortcut) => {
     shortcut.command(e);
   });
 });

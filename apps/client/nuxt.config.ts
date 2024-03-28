@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const appScripts = [];
+const appScripts: any = [];
 if (process.env.NODE_ENV === "production") {
-  addClarity()
+  addClarity();
 }
 
 // for https://clarity.microsoft.com/
@@ -24,7 +24,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "@nuxt/image",
-    "@bg-dev/nuxt-naiveui",
     "@nuxt/test-utils/module",
   ],
   app: {
