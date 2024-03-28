@@ -120,6 +120,7 @@
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import RankList from "~/components/rank/RankingList.vue";
+import { useCourseTime } from "~/composables/courses/time";
 import { useGameMode } from "~/composables/main/game";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
@@ -127,6 +128,7 @@ import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
+const { restCourseTime } = useCourseTime();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
@@ -156,6 +158,7 @@ function useDoAgain() {
   function handleTipConfirm() {
     coursesStore.doAgain();
     showQuestion();
+    restCourseTime();
   }
 
   return {

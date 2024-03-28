@@ -6,6 +6,7 @@ export const tpl_2 = ({
   courseNum,
   userName,
   dateStr,
+  time,
 }: ShareImageTemplateData) => ({
   type: "div",
   props: {
@@ -89,6 +90,21 @@ export const tpl_2 = ({
                     type: "p",
                     props: {
                       children: zhSentence,
+                    },
+                  },
+                ],
+              },
+            },
+            {
+              type: "div",
+              props: {
+                tw: "p-12 flex flex-col justify-start w-full text-white text-lg",
+                children: [
+                  {
+                    type: "span",
+                    props: {
+                      tw: "font-bold text-xl pb-2",
+                      children: `${time}`,
                     },
                   },
                 ],

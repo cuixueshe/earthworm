@@ -1,14 +1,14 @@
-import { ref } from "vue";
 import satori, { type SatoriNode } from "satori";
+import { ref } from "vue";
+import { useCourseTime } from "~/composables/courses/time";
+import { useDailySentence } from "../summary";
 import {
-  clearCanvas,
   convertSVGtoImg,
   copyImage,
-  initCanvas,
   fontEn,
   fontZh,
+  initCanvas,
 } from "./helper";
-import { useDailySentence } from "../summary";
 import { tpl_1 } from "./imageTemplates/tpl_1";
 import { tpl_2 } from "./imageTemplates/tpl_2";
 
@@ -23,6 +23,7 @@ export interface ShareImageTemplateData {
   enSentence: string;
   userName: string;
   dateStr: string;
+  time: string;
 }
 
 export const imageTemplates: Record<
@@ -77,6 +78,7 @@ export interface GalleryItem {
 
 export function useGenerateShareImage() {
   const { zhSentence, enSentence } = useDailySentence();
+  const { courseTimeSummary } = useCourseTime();
 
   const currImageSrc = ref("");
   const currImageIndex = ref(0);
@@ -96,6 +98,7 @@ export function useGenerateShareImage() {
       enSentence: enSentence.value,
       userName,
       dateStr,
+      time: courseTimeSummary.value,
     });
   };
 

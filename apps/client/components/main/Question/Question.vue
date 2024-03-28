@@ -36,6 +36,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
+import { useCourseTime } from "~/composables/courses/time";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useKeyboardSound } from "~/composables/user/sound";
@@ -70,9 +71,12 @@ const {
   inputChangedCallback,
 });
 
+const { updateCourseTime } = useCourseTime();
+
 watch(
   () => inputValue.value,
-  (val) => {
+  (val, oldVal) => {
+    if (val && !oldVal) updateCourseTime();
     setInputValue(val);
   }
 );
