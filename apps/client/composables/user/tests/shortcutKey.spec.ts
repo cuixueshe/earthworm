@@ -98,8 +98,8 @@ describe("user defined shortcut key", () => {
         preventDefault: () => {},
       } as KeyboardEvent);
 
-      expect(shortcutKeyStr.value).toEqual("Ctrl+s");
-      expect(shortcutKeyTip.value).toEqual("Ctrl 加上 s");
+      expect(shortcutKeyStr.value).toEqual("⌃Ctrl+s");
+      expect(shortcutKeyTip.value).toEqual("⌃Ctrl 加上 s");
     });
 
     it("should be the shortcut key is set successfully when the dialog is open (single key)", () => {
@@ -120,7 +120,7 @@ describe("user defined shortcut key", () => {
       } as KeyboardEvent);
 
       expect(showModal.value).toBeFalsy();
-      expect(shortcutKeys.value).toMatchObject({ [soundKey]: "Tab" });
+      expect(shortcutKeys.value).toMatchObject({ [soundKey]: "⇥Tab" });
     });
 
     it("should be the shortcut key is set successfully when the dialog is open (combination key)", () => {
@@ -142,7 +142,34 @@ describe("user defined shortcut key", () => {
       } as KeyboardEvent);
 
       expect(showModal.value).toBeFalsy();
-      expect(shortcutKeys.value).toMatchObject({ [answerKey]: "Ctrl+s" });
+      expect(shortcutKeys.value).toMatchObject({
+        [answerKey]: "⌃Ctrl+s",
+        [soundKey]: "⌃Ctrl+'",
+      });
+    });
+    it("should be the shortcut key is set successfully when the dialog is open with special key (combination key)", () => {
+      const { showModal, shortcutKeys, handleEdit, handleKeydown } =
+        useShortcutKeyMode();
+
+      handleEdit(answerKey);
+
+      expect(showModal.value).toBeTruthy();
+
+      handleKeydown({
+        key: "Backspace",
+        ctrlKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+      handleKeydown({
+        key: "Enter",
+        preventDefault: () => {},
+      } as KeyboardEvent);
+
+      expect(showModal.value).toBeFalsy();
+      expect(shortcutKeys.value).toMatchObject({
+        [answerKey]: "⌃Ctrl+⌫Backspace",
+        [soundKey]: "⌃Ctrl+'",
+      });
     });
   });
 });
