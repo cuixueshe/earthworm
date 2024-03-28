@@ -1,8 +1,9 @@
 <template>
   <div
+    ref="contentsRef"
     id="contents"
     class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none"
-    :class="[isShow() && 'show']"
+    :class="[isShowContents() && 'show']"
   >
     <n-virtual-list
       ref="virtualListRef"
@@ -32,7 +33,7 @@ import { computed, onMounted, ref } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
-const { isShow } = useContent();
+const { isShowContents, watchIsContentsItself } = useContent();
 
 const coursesStore = useCourseStore();
 
@@ -81,10 +82,13 @@ function jumpTo(index: number) {
 
 const virtualListRef = ref<VirtualListInst>();
 
+const contentsRef = ref<HTMLElement>();
+
 onMounted(() => {
   virtualListRef.value?.scrollTo({
     index: coursesStore.statementIndex - 1,
   });
+  watchIsContentsItself(contentsRef.value!);
 });
 </script>
 
