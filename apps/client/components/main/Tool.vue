@@ -97,7 +97,7 @@
       </svg>
     </div>
     <div
-      @click="rankModal.show"
+      @click="rankingStore.showRankModal"
       class="link-item"
     >
       排行榜
@@ -107,7 +107,7 @@
       :style="{ width: currentPercentage + '%' }"
     ></div>
   </div>
-  <ProgressRank></ProgressRank>
+  <RankList></RankList>
   <MessageBox
     class="mt-[-4vh]"
     v-model:isShowModal="showTipModal"
@@ -119,14 +119,14 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-import ProgressRank from "~/components/rank/ProgressRank.vue";
+import RankList from "~/components/rank/RankingList.vue";
 import { useCourseTime } from "~/composables/courses/time";
 import { useGameMode } from "~/composables/main/game";
-import { useRankModal } from "~/composables/rank/modal";
+import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
 import StudyVideoLink from "./StudyVideoLink.vue";
 
-const rankModal = useRankModal();
+const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { restCourseTime } = useCourseTime();
 
@@ -175,6 +175,6 @@ function useDoAgain() {
 }
 
 .link-item {
-  @apply cursor-pointer hover:text-fuchsia-500;
+  @apply cursor-pointer hover:text-fuchsia-500 select-none;
 }
 </style>

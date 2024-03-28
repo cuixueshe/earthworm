@@ -1,36 +1,28 @@
 <template>
-  <n-config-provider :theme="theme">
-    <NuxtLayout>
-      <HttpErrorProvider>
-        <NuxtPage />
-      </HttpErrorProvider>
-    </NuxtLayout>
-  </n-config-provider>
+  <NuxtLayout>
+    <HttpErrorProvider>
+      <NuxtPage />
+    </HttpErrorProvider>
+  </NuxtLayout>
 </template>
 
 <script setup lang="tsx">
-import "vfonts/Lato.css";
+import { onMounted } from "vue";
+import { useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
-import { darkTheme, lightTheme } from "naive-ui";
-import { Theme, useDarkMode } from "~/composables/darkMode";
-import { computed, onMounted } from "vue";
+
+const { initDarkMode } = useDarkMode();
 
 useRestoreUser();
-
-const { initDarkMode, darkMode } = useDarkMode();
-
-function useRestoreUser() {
-  const userStore = useUserStore();
-  userStore.restoreUser();
-}
 
 onMounted(() => {
   initDarkMode();
 });
 
-const theme = computed(() => {
-  return darkMode.value === Theme.DARK ? darkTheme : lightTheme;
-});
+function useRestoreUser() {
+  const userStore = useUserStore();
+  userStore.restoreUser();
+}
 </script>
 
 <style>
