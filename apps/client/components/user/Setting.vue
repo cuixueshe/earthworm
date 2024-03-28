@@ -115,6 +115,34 @@
         </tbody>
       </table>
     </section>
+
+    <section>
+      <h2 class="text-lg">答题模式</h2>
+      <div class="form-control w-52">
+        <label class="cursor-pointer label">
+          <span
+            :class="[
+              'label-text',
+              listeningMode ? 'text-gray-500' : 'text-fuchsia-500',
+            ]"
+            >普通模式</span
+          >
+          <input
+            type="checkbox"
+            class="toggle toggle-primary"
+            :checked="listeningMode"
+            @change="toggleMode"
+          />
+          <span
+            :class="[
+              'label-text',
+              listeningMode ? 'text-fuchsia-500' : 'text-gray-500',
+            ]"
+            >听力模式</span
+          >
+        </label>
+      </div>
+    </section>
   </div>
 
   <dialog
@@ -150,6 +178,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useAnswerMode } from "~/composables/user/answerMode";
 import {
   PronunciationType,
   usePronunciation,
@@ -182,6 +211,7 @@ const {
   handleCloseDialog,
   handleKeydown,
 } = useShortcutKeyMode();
+const { listeningMode, toggleMode } = useAnswerMode();
 
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);

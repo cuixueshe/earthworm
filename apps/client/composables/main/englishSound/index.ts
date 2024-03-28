@@ -1,4 +1,5 @@
 import { watchEffect } from "vue";
+import { useAnswerMode } from "~/composables/user/answerMode";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
 import { play, updateSource } from "./audio";
@@ -18,9 +19,14 @@ export function useCurrentStatementEnglishSound() {
     lastPronunciationUrl = pronunciationUrl;
   });
 
+  const { audioRate, audioTimes } = useAnswerMode();
   return {
-    playSound: () => {
-      play();
+    playSound: (isQuestion?: boolean) => {
+      if (isQuestion) {
+        play(Number(audioTimes.value), Number(audioRate.value));
+      } else {
+        play();
+      }
     },
   };
 }

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { markRaw, ref } from "vue";
+import { markRaw, ref, shallowRef } from "vue";
 import UserHome from "~/components/user/Home.vue";
 import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
@@ -28,7 +28,7 @@ const userMenus = ref<Menu[]>([
   { name: "主页", component: markRaw(UserHome) },
   { name: "设置", component: markRaw(UserSetting) },
 ]);
-let currentComponent = ref<any>();
+let currentComponent = shallowRef<any>();
 const handleChangeMenu = (menu: Menu) => {
   currentComponent.value = menu.component;
 };
