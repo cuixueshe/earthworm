@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
-import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
 import { useUserStore } from "~/store/user";
@@ -24,10 +23,11 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
-  const latestLearnedIndex = ref(0)
+  const latestLearnedIndex = ref(0);
 
   const { updateActiveCourseId } = useActiveCourseId();
-  const { saveProgress, loadProgress, cleanProgress,loadLatestProgress } = useCourseProgress();
+  const { saveProgress, loadProgress, cleanProgress, loadLatestProgress } =
+    useCourseProgress();
 
   watchEffect(() => {
     currentStatement.value =
@@ -38,7 +38,7 @@ export const useCourseStore = defineStore("course", () => {
     () => statementIndex.value,
     () => {
       saveProgress(currentCourse.value?.id!, statementIndex.value);
-      latestLearnedIndex.value = loadLatestProgress(currentCourse.value?.id!)
+      latestLearnedIndex.value = loadLatestProgress(currentCourse.value?.id!);
     }
   );
 
@@ -57,7 +57,7 @@ export const useCourseStore = defineStore("course", () => {
     return statementIndex.value;
   }
 
-  function toSpecificStatement(index:number){
+  function toSpecificStatement(index: number) {
     statementIndex.value = index;
   }
 
@@ -95,16 +95,7 @@ export const useCourseStore = defineStore("course", () => {
       currentCourse.value = course;
     } else {
       let course = await fetchCourse(courseId);
-      const res = await fetchCourseHistory();
-      const courseHistory = res.find((item) => item.courseId === courseId);
-      if (courseHistory && courseHistory.completionCount) {
-        currentCourse.value = {
-          ...course,
-          count:courseHistory.completionCount
-        };
-      } else {
-        currentCourse.value = course;
-      }
+      currentCourse.value = course;
     }
 
     statementIndex.value = loadProgress(courseId);
@@ -129,6 +120,6 @@ export const useCourseStore = defineStore("course", () => {
     cleanProgress,
     resetStatementIndex,
     toSpecificStatement,
-    latestLearnedIndex
+    latestLearnedIndex,
   };
 });

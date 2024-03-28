@@ -26,6 +26,7 @@
 <script setup lang="ts">
 import { useVirtualList } from "@vueuse/core";
 import { computed, onMounted } from "vue";
+import { fetchCourseHistory } from "~/api/courseHistory";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
@@ -37,7 +38,7 @@ const contentsList = computed(() => {
   return coursesStore.currentCourse?.statements || [];
 });
 
-const { list, containerProps, wrapperProps,scrollTo } = useVirtualList(
+const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(
   contentsList.value,
   { itemHeight: 30 }
 );
@@ -70,10 +71,7 @@ function isActive(index: number) {
  * @param index
  */
 function haveEverLearned(index: number) {
-  return (
-    coursesStore.currentCourse?.count ||
-    index <= coursesStore.latestLearnedIndex
-  );
+  return completionCount || index <= coursesStore.latestLearnedIndex;
 }
 
 function jumpTo(index: number) {
@@ -82,9 +80,26 @@ function jumpTo(index: number) {
   }
 }
 
-onMounted(() => {
-  scrollTo(coursesStore.statementIndex)
+/**
+ * 课程完成次数
+ */
+let completionCount = 0;
+
+/**
+ * 获取课程完成次数
+ */
+async function getCompletionCont() {
+  const res = await fetchCourseHistory();
+  const courseHistory = res.find(
+    (item) => item.courseId === coursesStore.currentCourse?.id
+  );
+  return (courseHistory && courseHistory.completionCount) || 0;
+}
+
+onMounted(async () => {
+  scrollTo(coursesStore.statementIndex);
   watchIsContentsItself(containerProps.ref.value!);
+  completionCount = await getCompletionCont();
 });
 </script>
 
