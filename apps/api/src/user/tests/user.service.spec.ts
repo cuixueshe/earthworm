@@ -36,9 +36,10 @@ describe('user service', () => {
 
   it('should create user', async () => {
     const { id } = await userService.createUser({
-      name: 'testuser',
+      nickname: 'testuser',
       password: 'testpass',
       phone: '13813832181',
+      username: '13813832181',
     });
 
     expect(id).toBeGreaterThan(0);
@@ -46,13 +47,13 @@ describe('user service', () => {
 
   it('should find user with phone', async () => {
     const user = await userService.findWithPhone({
-      phone: userData.phone,
+      phone: userData.username,
     });
 
     expect(user).toEqual(
       expect.objectContaining({
-        name: userData.username,
-        phone: userData.phone,
+        nickname: userData.nickname,
+        phone: userData.username,
       }),
     );
   });
@@ -76,8 +77,7 @@ async function setupTesting() {
 
 async function setupDBData(db: DbType) {
   await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
+    ...userData,
     password: await argon2.hash(password),
   });
 }

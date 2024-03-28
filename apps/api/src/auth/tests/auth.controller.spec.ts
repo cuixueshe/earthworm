@@ -26,8 +26,9 @@ describe('auth controller', () => {
 
   it('should can login', async () => {
     const dto = {
-      phone: user.phone,
+      username: user.username,
       password: 'test',
+      phone: '111',
     };
     const res = await authController.login(dto);
 
@@ -42,9 +43,9 @@ describe('auth controller', () => {
 
   it('should can signup', async () => {
     const dto = {
-      phone: user.phone,
+      username: user.username,
       password: 'test',
-      name: user.username,
+      nickname: user.nickname,
     };
     const res = await authController.signup(dto);
 
