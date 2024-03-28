@@ -20,7 +20,11 @@
           :class="getItemClassNames(index)"
           @click="jumpTo(index)"
         >
-          {{ `${index + 1} - ${item.chinese}` }}
+          <div class="flex">
+            <span>{{ index + 1 }}</span>
+            <span>&nbsp-&nbsp</span>
+            <span class="flex-1">{{ item.chinese }}</span>
+          </div>
         </div>
       </template>
     </n-virtual-list>
