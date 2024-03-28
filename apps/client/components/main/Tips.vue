@@ -1,20 +1,39 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
+  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
     <div class="w-[210px] mb-4">
-      <button class="tip-btn" @click="playSound">
+      <button
+        class="tip-btn"
+        @click="playSound"
+      >
         ⌃ {{ shortcutKeys.sound }}
       </button>
       <span class="ml-2">play sound</span>
     </div>
     <div class="w-[210px] mb-4">
-      <button class="tip-btn" @click="toggleGameMode">
+      <button
+        class="tip-btn"
+        @click="toggleGameMode"
+      >
         ⌃ {{ shortcutKeys.answer }}
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
-
+    <div class="w-[210px] mb-4">
+      <button
+        class="tip-btn mr-1"
+        @click="goToNextQuestion"
+      >
+        ⌃ {{ "Crtl+," }}
+      </button>
+      <span class="ml-2">{{ "skip" }}</span>
+    </div>
     <div class="w-[210px]">
-      <button class="tip-btn" @click="toggleGameMode">Space</button>
+      <button
+        class="tip-btn"
+        @click="toggleGameMode"
+      >
+        Space
+      </button>
       <span class="ml-2">fix incorrect word</span>
     </div>
   </div>
@@ -26,11 +45,16 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
+const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
+const { showQuestion } = useGameMode();
+const { showSummary } = useSummary();
+const courseStore = useCourseStore();
 
 const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
@@ -91,6 +115,30 @@ function useShowAnswer(key: string) {
 
   return {
     toggleGameMode,
+  };
+}
+function useSkipThisQuestion(key: string) {
+  function skipQuestion() {
+    goToNextQuestion();
+  }
+  onMounted(() => {
+    registerShortcut(key, skipQuestion);
+  });
+
+  onUnmounted(() => {
+    cancelShortcut(key, skipQuestion);
+  });
+  function goToNextQuestion() {
+    if (courseStore.isAllDone()) {
+      showSummary();
+      return;
+    }
+
+    courseStore.toNextStatement();
+    showQuestion();
+  }
+  return {
+    goToNextQuestion,
   };
 }
 </script>
