@@ -36,6 +36,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
+import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useKeyboardSound } from "~/composables/user/sound";
@@ -69,6 +70,7 @@ const {
   getInputCursorPosition,
   inputChangedCallback,
 });
+const { hiddenAnswerTip } = useAnswerTip();
 
 watch(
   () => inputValue.value,
@@ -183,6 +185,8 @@ function handleKeydown(e: KeyboardEvent) {
       },
       playErrorSound // 错误提示
     );
+
+    hiddenAnswerTip();
     return;
   }
 
