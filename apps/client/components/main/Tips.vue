@@ -27,6 +27,15 @@
       </button>
       <span class="ml-2">下一题</span>
     </div>
+    <div class="w-[210px] mb-4">
+      <button
+        class="tip-btn mr-1"
+        @click="backPreviousQuestion"
+      >
+        ⌃ {{ shortcutKeys.previous }}
+      </button>
+      <span class="ml-2">上一题</span>
+    </div>
     <div class="w-[210px]">
       <button class="tip-btn">Space</button>
       <span class="ml-2">{{ spaceTipText }} </span>
@@ -48,6 +57,9 @@ const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
+const { backPreviousQuestion } = usePreviosQuestion(
+  shortcutKeys.value.previous
+);
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
@@ -165,6 +177,27 @@ function useSkipThisQuestion(key: string) {
 
   return {
     goToNextQuestion,
+  };
+}
+function usePreviosQuestion(key: string) {
+  function backPreviousQuestion() {
+    courseStore.toPreviousStatement();
+    showQuestion();
+  }
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(key, backPreviousQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(key, backPreviousQuestion);
+    });
+  }
+
+  handleShortcut();
+
+  return {
+    backPreviousQuestion,
   };
 }
 </script>

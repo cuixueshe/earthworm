@@ -57,6 +57,12 @@ export const useCourseStore = defineStore("course", () => {
   function toSpecificStatement(index: number) {
     statementIndex.value = index;
   }
+  function toPreviousStatement() {
+    const prevIndex = statementIndex.value - 1;
+    statementIndex.value = prevIndex >= 0 ? prevIndex : 0;
+
+    return statementIndex.value;
+  }
 
   function isAllDone() {
     // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
@@ -117,5 +123,6 @@ export const useCourseStore = defineStore("course", () => {
     cleanProgress,
     resetStatementIndex,
     toSpecificStatement,
+    toPreviousStatement,
   };
 });
