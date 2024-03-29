@@ -53,6 +53,11 @@ export const useCourseStore = defineStore("course", () => {
 
     return statementIndex.value;
   }
+  function toPreStatement() {
+    const preIndex = statementIndex.value - 1;
+    statementIndex.value = preIndex < 0 ? 0 : preIndex;
+    return statementIndex.value;
+  }
 
   function toSpecificStatement(index: number) {
     statementIndex.value = index;
@@ -114,6 +119,7 @@ export const useCourseStore = defineStore("course", () => {
     checkCorrect,
     completeCourse,
     toNextStatement,
+    toPreStatement,
     cleanProgress,
     resetStatementIndex,
     toSpecificStatement,

@@ -27,6 +27,15 @@
       </button>
       <span class="ml-2">{{ "skip" }}</span>
     </div>
+    <div class="w-[210px] mb-4">
+      <button
+        class="tip-btn mr-1"
+        @click="goToPreQuestion"
+      >
+        ⌃ {{ shortcutKeys.back }}
+      </button>
+      <span class="ml-2">{{ "back" }}</span>
+    </div>
     <div class="w-[210px]">
       <button
         class="tip-btn"
@@ -52,7 +61,10 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
-const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
+const { goToNextQuestion, goToPreQuestion } = useSkipThisQuestion(
+  shortcutKeys.value.skip,
+  shortcutKeys.value.back
+);
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
@@ -136,7 +148,7 @@ function useShowAnswer(key: string) {
     toggleGameMode,
   };
 }
-function useSkipThisQuestion(key: string) {
+function useSkipThisQuestion(skipKey: string, backKey: string) {
   function goToNextQuestion() {
     if (courseStore.isAllDone()) {
       showSummary();
@@ -147,20 +159,28 @@ function useSkipThisQuestion(key: string) {
     showQuestion();
   }
 
+  function goToPreQuestion() {
+    courseStore.toPreStatement();
+    showQuestion();
+  }
+
   function handleShortcut() {
     onMounted(() => {
-      registerShortcut(key, goToNextQuestion);
+      registerShortcut(skipKey, goToNextQuestion); // 为“跳到下一题”注册快捷键
+      registerShortcut(backKey, goToPreQuestion); // 为“返回上一题”注册快捷键
     });
 
     onUnmounted(() => {
-      cancelShortcut(key, goToNextQuestion);
+      cancelShortcut(skipKey, goToNextQuestion); // 注销“跳到下一题”的快捷键
+      cancelShortcut(backKey, goToPreQuestion); // 注销“返回上一题”的快捷键
     });
   }
 
-  handleShortcut()
+  handleShortcut();
 
   return {
     goToNextQuestion,
+    goToPreQuestion,
   };
 }
 </script>
