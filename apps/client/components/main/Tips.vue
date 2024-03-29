@@ -18,7 +18,7 @@
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
-    <div class="mb-4">
+    <div class="mb-4" v-if="currentSchedule !== 1">
       <button
         class="mr-1 tip-btn"
         @click="goToPreviousQuestion"
@@ -64,6 +64,10 @@ const { goToNextQuestion, goToPreviousQuestion } = usePrevAndNextQuestion(
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
+
+const currentSchedule = computed(() => {
+  return courseStore.statementIndex + 1;
+});
 
 const toggleTipText = computed(() => {
   let text = "";
