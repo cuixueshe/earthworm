@@ -100,4 +100,16 @@ export class CourseService {
     await this.courseHistoryService.setCompletionCount(user.userId, courseId);
     return nextCourse;
   }
+
+  async updateCourseProgress(
+    user: UserEntity,
+    courseId: number,
+    progress: number,
+  ) {
+    await this.courseHistoryService.updateProgress(
+      user.userId,
+      courseId,
+      progress,
+    );
+  }
 }

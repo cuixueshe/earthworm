@@ -20,12 +20,52 @@ export class CourseHistoryService {
       );
   }
 
-  async create(userId: number, courseId: number) {
-    await this.db.insert(courseHistory).values({
+  async create(
+    userId: number,
+    courseId: number,
+    type: 'completionCount' | 'progress' = 'completionCount',
+  ) {
+    const courseHistoryItem = {
       courseId,
       userId,
-      completionCount: 1,
-    });
+      completionCount: type === 'completionCount' ? 1 : 0,
+      progress: 0, // 初始化的时候设置当前课程进度为0
+    };
+    await this.db.insert(courseHistory).values(courseHistoryItem);
+
+    return courseHistoryItem;
+  }
+
+  async getCourseProgress(userId: number, courseId: number) {
+    const result = await this.findOne(userId, courseId);
+    if (result && result.length) {
+      return result.length ? result[result.length - 1] : null;
+    } else {
+      return await this.create(userId, courseId, 'progress');
+    }
+  }
+
+  async updateProgress(userId: number, courseId: number, progress: number) {
+    await this.db
+      .update(courseHistory)
+      .set({
+        progress: progress,
+      })
+      .where(
+        and(
+          eq(courseHistory.userId, userId),
+          eq(courseHistory.courseId, courseId),
+        ),
+      );
+  }
+
+  async setProgress(userId: number, courseId: number, progress: number) {
+    const result = await this.findOne(userId, courseId);
+    if (result && result.length) {
+      this.updateProgress(userId, courseId, progress);
+    } else {
+      this.create(userId, courseId, 'progress');
+    }
   }
 
   async updateCompletionCount(userId: number, courseId: number, count: number) {
@@ -33,6 +73,7 @@ export class CourseHistoryService {
       .update(courseHistory)
       .set({
         completionCount: count + 1,
+        progress: 0, // 课程完成次数加一，表示进度已经全部未完成，重置课程进度为0
       })
       .where(
         and(

@@ -91,7 +91,7 @@ export const useCourseStore = defineStore("course", () => {
       currentCourse.value = course;
     }
 
-    statementIndex.value = loadProgress(courseId);
+    statementIndex.value = await loadProgress(courseId);
   }
 
   function resetStatementIndex() {
