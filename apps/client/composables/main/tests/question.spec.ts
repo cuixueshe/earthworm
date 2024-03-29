@@ -59,7 +59,6 @@ describe("question", () => {
     expect(correctCallback).toBeCalled();
     expect(wrongCallback).not.toBeCalled();
   });
-  
 
   it("should be incorrect when checked the answer", async () => {
     const setInputCursorPosition = () => {};
@@ -331,12 +330,15 @@ describe("question", () => {
     setInputValue(inputValue);
 
     const preventDefault = vi.fn();
+    const stopPropagation = vi.fn();
     handleKeyboardInput({
       code: "Space",
       preventDefault,
+      stopPropagation,
     } as any as KeyboardEvent);
 
     expect(preventDefault).toBeCalled();
+    expect(stopPropagation).toBeCalled();
   });
 
   it("should back to previous incorrect word", async () => {
@@ -388,6 +390,7 @@ describe("question", () => {
       {
         code: "Space",
         preventDefault: () => {},
+        stopPropagation: () => {},
       } as any as KeyboardEvent,
       {
         useSpaceSubmitAnswer: {

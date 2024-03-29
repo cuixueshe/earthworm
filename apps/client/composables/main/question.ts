@@ -129,9 +129,7 @@ export function useInput({
   function markIncorrectWord() {
     userInputWords.forEach((word) => {
       const formattedWord = formatInputText(word.userInput);
-      if (
-        formattedWord !== word.text.toLocaleLowerCase()
-      ) {
+      if (formattedWord !== word.text.toLocaleLowerCase()) {
         word.incorrect = true;
       } else {
         word.incorrect = false;
@@ -307,6 +305,7 @@ export function useInput({
     // Input 下启用空格提交 且 在最后一个单词位置
     if (e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
+      e.stopPropagation(); // 阻止事件冒泡
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }

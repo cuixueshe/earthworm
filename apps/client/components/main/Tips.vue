@@ -7,7 +7,7 @@
       >
         ⌃ {{ shortcutKeys.sound }}
       </button>
-      <span class="ml-2">play sound</span>
+      <span class="ml-2">播放发音</span>
     </div>
     <div class="w-[210px] mb-4">
       <button
@@ -20,21 +20,16 @@
     </div>
     <div class="w-[210px] mb-4">
       <button
-        class="tip-btn mr-1"
+        class="mr-1 tip-btn"
         @click="goToNextQuestion"
       >
         ⌃ {{ shortcutKeys.skip }}
       </button>
-      <span class="ml-2">{{ "skip" }}</span>
+      <span class="ml-2">下一题</span>
     </div>
     <div class="w-[210px]">
-      <button
-        class="tip-btn"
-        @click="toggleGameMode"
-      >
-        Space
-      </button>
-      <span class="ml-2">fix incorrect word</span>
+      <button class="tip-btn">Space</button>
+      <span class="ml-2">{{ spaceTipText }} </span>
     </div>
   </div>
 </template>
@@ -62,15 +57,24 @@ const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
   const { isAnswerTip } = useAnswerTip();
   if (isAnswer()) {
-    text = "again";
+    text = "再来一次";
   } else {
     if (isAnswerTip()) {
-      text = "close answer";
+      text = "关闭答案预览面板";
     } else {
-      text = "show answer";
+      text = "显示答案预览面板";
     }
   }
   return text;
+});
+
+const spaceTipText = computed(() => {
+  const { isAnswer } = useGameMode();
+  if (isAnswer()) {
+    return "下一题";
+  } else {
+    return "修复错误单词";
+  }
 });
 
 function usePlaySound(key: string) {
@@ -157,7 +161,7 @@ function useSkipThisQuestion(key: string) {
     });
   }
 
-  handleShortcut()
+  handleShortcut();
 
   return {
     goToNextQuestion,
