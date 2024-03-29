@@ -26,7 +26,6 @@
 <script setup lang="ts">
 import { useVirtualList } from "@vueuse/core";
 import { computed, onMounted } from "vue";
-import { fetchCourseHistory } from "~/api/courseHistory";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
@@ -43,72 +42,28 @@ const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(
   { itemHeight: 30 }
 );
 
-const props = defineProps<{
-  /**
-   * 不允许跳过未学题目
-   */
-  notAllowedSkip?: Boolean;
-}>();
-
 function getItemClassNames(index: number) {
   const classNames: string[] = [];
   if (isActive(index)) {
     classNames.push("text-fuchsia-500");
   }
-
-  if (!props.notAllowedSkip || haveEverLearned(index)) {
-    classNames.push("hover:text-fuchsia-500 cursor-pointer");
-  } else {
-    classNames.push("text-slate-600 cursor-not-allowed");
-  }
-
+  classNames.push("hover:text-fuchsia-500 cursor-pointer");
   return classNames;
 }
 
-/**
- * 判断是否为当前小节
- * @param index
- */
 function isActive(index: number) {
   return coursesStore.statementIndex === index;
 }
 
-/**
- * 判断该小节是否未练习过
- * @param index
- */
-function haveEverLearned(index: number) {
-  return completionCount || index <= coursesStore.latestLearnedIndex;
-}
-
 function jumpTo(index: number) {
-  if (!props.notAllowedSkip || haveEverLearned(index)) {
-    coursesStore.toSpecificStatement(index);
-  }
-}
-
-/**
- * 课程完成次数
- */
-let completionCount = 0;
-
-/**
- * 获取课程完成次数
- */
-async function getCompletionCont() {
-  if (props.notAllowedSkip) return 0;
-  const res = await fetchCourseHistory();
-  const courseHistory = res.find(
-    (item) => item.courseId === coursesStore.currentCourse?.id
-  );
-  return (courseHistory && courseHistory.completionCount) || 0;
+  coursesStore.toSpecificStatement(index);
 }
 
 onMounted(async () => {
   scrollTo(coursesStore.statementIndex);
   watchClickOutside(containerProps.ref.value!);
-  completionCount = await getCompletionCont();
 });
+
 </script>
 
 <style scoped>

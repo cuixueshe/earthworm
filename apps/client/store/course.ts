@@ -23,11 +23,9 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
-  const latestLearnedIndex = ref(0);
 
   const { updateActiveCourseId } = useActiveCourseId();
-  const { saveProgress, loadProgress, cleanProgress, loadLatestProgress } =
-    useCourseProgress();
+  const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
     currentStatement.value =
@@ -38,7 +36,6 @@ export const useCourseStore = defineStore("course", () => {
     () => statementIndex.value,
     () => {
       saveProgress(currentCourse.value?.id!, statementIndex.value);
-      latestLearnedIndex.value = loadLatestProgress(currentCourse.value?.id!);
     }
   );
 
@@ -120,6 +117,5 @@ export const useCourseStore = defineStore("course", () => {
     cleanProgress,
     resetStatementIndex,
     toSpecificStatement,
-    latestLearnedIndex,
   };
 });
