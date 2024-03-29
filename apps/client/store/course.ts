@@ -58,8 +58,8 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex.value = index;
   }
   function toPreviousStatement() {
-    const nextIndex = statementIndex.value - 1;
-    statementIndex.value = nextIndex;
+    const prevIndex = statementIndex.value - 1;
+    statementIndex.value = prevIndex >= 0 ? prevIndex : 0;
 
     return statementIndex.value;
   }
