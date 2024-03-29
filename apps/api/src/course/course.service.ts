@@ -98,6 +98,7 @@ export class CourseService {
     await this.userProgressService.update(user.userId, nextCourse.id);
     await this.rankService.userFinishCourse(user.userId, user.username);
     await this.courseHistoryService.setCompletionCount(user.userId, courseId);
+    await this.courseHistoryService.setProgress(user.userId, courseId, 0);
     return nextCourse;
   }
 

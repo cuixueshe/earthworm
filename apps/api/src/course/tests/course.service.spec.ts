@@ -131,6 +131,7 @@ async function setupTesting() {
   };
   const mockCourseHistoryService = {
     setCompletionCount: jest.fn(),
+    setProgress: jest.fn(),
   };
 
   const moduleRef = await Test.createTestingModule({

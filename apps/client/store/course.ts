@@ -25,7 +25,8 @@ export const useCourseStore = defineStore("course", () => {
   const currentStatement = ref<Statement>();
 
   const { updateActiveCourseId } = useActiveCourseId();
-  const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
+  const { saveProgress, loadProgress, cleanProgress, resetProgress } =
+    useCourseProgress();
 
   watchEffect(() => {
     currentStatement.value =
@@ -121,6 +122,7 @@ export const useCourseStore = defineStore("course", () => {
     completeCourse,
     toNextStatement,
     cleanProgress,
+    resetProgress,
     resetStatementIndex,
     toSpecificStatement,
     toPreviousStatement,

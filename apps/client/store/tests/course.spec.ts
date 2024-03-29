@@ -1,11 +1,12 @@
-import { setActivePinia, createPinia } from "pinia";
-import { describe, it, expect, beforeEach, vi } from "vitest";
-import { useCourseStore } from "../course";
-import { fetchCourse, fetchCompleteCourse, fetchTryCourse } from "~/api/course";
-import { type Course } from "../course";
+import { createPinia, setActivePinia } from "pinia";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { fetchCurrentCourseHistory } from "~/api/courseHistory";
+import { useCourseStore, type Course } from "../course";
 import { useUserStore } from "../user";
 
 vi.mock("~/api/course");
+vi.mock("~/api/courseHistory");
 
 const firstCourse: Course = {
   id: 1,
@@ -34,7 +35,13 @@ vi.mocked(fetchCourse).mockImplementation(async (courseId) => {
   return firstCourse;
 });
 vi.mocked(fetchCompleteCourse).mockImplementation(async () => firstCourse);
-
+vi.mocked(fetchCurrentCourseHistory).mockImplementation(() =>
+  Promise.resolve({
+    courseId: 1,
+    completionCount: 0,
+    progress: 0,
+  })
+);
 describe("course", () => {
   beforeEach(() => {
     setActivePinia(createPinia());
@@ -151,14 +158,34 @@ describe("course", () => {
       const store = useCourseStore();
       await store.setup(firstCourse.id); // 初始化第一个课程
       store.toNextStatement(); // 更新进度
-
+      vi.mocked(fetchCurrentCourseHistory).mockImplementation(() =>
+        Promise.resolve({
+          courseId: 2,
+          completionCount: 0,
+          progress: 0,
+        })
+      );
       await store.setup(secondCourse.id); // 切换到第二个课程
       expect(store.statementIndex).toBe(0); // 验证新课程的初始进度
-
       store.toNextStatement(); // 更新第二个课程的进度
+
+      vi.mocked(fetchCurrentCourseHistory).mockImplementation(() =>
+        Promise.resolve({
+          courseId: 1,
+          completionCount: 0,
+          progress: 1,
+        })
+      );
       await store.setup(firstCourse.id); // 再次切换回第一个课程
       expect(store.statementIndex).toBe(1); // 验证第一个课程的进度被正确恢复
 
+      vi.mocked(fetchCurrentCourseHistory).mockImplementation(() =>
+        Promise.resolve({
+          courseId: 2,
+          completionCount: 0,
+          progress: 1,
+        })
+      );
       await store.setup(secondCourse.id); // 切换到第二个课程
       expect(store.statementIndex).toBe(1); // 验证第二个课程的进度也被正确恢复
     });
