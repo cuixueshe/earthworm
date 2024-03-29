@@ -1,6 +1,6 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[10vh] flex flex-col items-center">
-    <div class="w-[210px] mb-4">
+  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
+    <div class="mb-4">
       <button
         class="tip-btn"
         @click="playSound"
@@ -9,7 +9,7 @@
       </button>
       <span class="ml-2">播放发音</span>
     </div>
-    <div class="w-[210px] mb-4">
+    <div class="mb-4">
       <button
         class="tip-btn"
         @click="toggleGameMode"
@@ -18,10 +18,8 @@
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
-    <!-- / -->
 
-    <!-- / -->
-    <div class="w-[210px]">
+    <div>
       <button class="tip-btn">Space</button>
       <span class="ml-2">{{ spaceTipText }} </span>
     </div>
@@ -50,9 +48,9 @@ const toggleTipText = computed(() => {
     text = "再来一次";
   } else {
     if (isAnswerTip()) {
-      text = "关闭答案预览面板";
+      text = "隐藏答案";
     } else {
-      text = "显示答案预览面板";
+      text = "显示答案";
     }
   }
   return text;

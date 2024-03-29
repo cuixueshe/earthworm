@@ -2,9 +2,9 @@
   <div class="absolute justify-around left-0 right-0 top-2/3 flex flex-row">
     <div
       :class="[
-        'w-[180px]',
+        'w-[150px]',
         '-translate-y-2/3',
-        '-translate-x-full',
+        '-translate-x-3/4',
         courseStore.statementIndex
           ? 'cursor-pointer'
           : 'dark:text-gray-600 cursor-not-allowed text-gray-300',
@@ -49,16 +49,11 @@
           ></path>
         </svg>
       </div>
-      <span
-        class="mr-1"
-        @click="goToPreviousQuestion"
-      >
-        ⌃ {{ shortcutKeys.previous }}
-      </span>
+      <span class="mr-1"> ⌃ {{ shortcutKeys.previous }} </span>
       <span class="ml-2">上一题</span>
     </div>
     <div
-      class="w-[180px] -translate-y-2/3 translate-x-full cursor-pointer"
+      class="w-[150px] -translate-y-2/3 translate-x-full cursor-pointer"
       @click="goToNextQuestion"
     >
       <div class="ml-10 mb-2">
