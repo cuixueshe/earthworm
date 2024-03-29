@@ -43,13 +43,20 @@ const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(
   { itemHeight: 30 }
 );
 
+const props = defineProps<{
+  /**
+   * 不允许跳过未学题目
+   */
+  notAllowedSkip?: Boolean;
+}>();
+
 function getItemClassNames(index: number) {
   const classNames: string[] = [];
   if (isActive(index)) {
     classNames.push("text-fuchsia-500");
   }
 
-  if (haveEverLearned(index)) {
+  if (!props.notAllowedSkip || haveEverLearned(index)) {
     classNames.push("hover:text-fuchsia-500 cursor-pointer");
   } else {
     classNames.push("text-slate-600 cursor-not-allowed");
@@ -75,7 +82,7 @@ function haveEverLearned(index: number) {
 }
 
 function jumpTo(index: number) {
-  if (haveEverLearned(index)) {
+  if (!props.notAllowedSkip || haveEverLearned(index)) {
     coursesStore.toSpecificStatement(index);
   }
 }
@@ -89,6 +96,7 @@ let completionCount = 0;
  * 获取课程完成次数
  */
 async function getCompletionCont() {
+  if (props.notAllowedSkip) return 0;
   const res = await fetchCourseHistory();
   const courseHistory = res.find(
     (item) => item.courseId === coursesStore.currentCourse?.id
