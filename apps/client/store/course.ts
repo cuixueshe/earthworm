@@ -48,6 +48,10 @@ export const useCourseStore = defineStore("course", () => {
     return currentCourse.value?.statements.length || 0;
   });
 
+  function toSpecificStatement(index: number) {
+    statementIndex.value = index;
+  }
+
   function toNextStatement() {
     const nextIndex = statementIndex.value + 1;
     statementIndex.value = nextIndex;
@@ -55,9 +59,6 @@ export const useCourseStore = defineStore("course", () => {
     return statementIndex.value;
   }
 
-  function toSpecificStatement(index: number) {
-    statementIndex.value = index;
-  }
   function toPreviousStatement() {
     const prevIndex = statementIndex.value - 1;
     statementIndex.value = prevIndex >= 0 ? prevIndex : 0;
