@@ -3,6 +3,7 @@ import { computed, ref, watch, watchEffect } from "vue";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
+import type { Word } from "~/composables/main/question";
 import { useUserStore } from "~/store/user";
 
 interface Statement {
@@ -10,6 +11,7 @@ interface Statement {
   chinese: string;
   english: string;
   soundmark: string;
+  userInput?: Word[];
 }
 
 export interface Course {
@@ -98,6 +100,10 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex.value = 0;
   }
 
+  function updateUserInputWords(userInput: Word[]) {
+    currentStatement.value!.userInput = userInput;
+  }
+
   return {
     statementIndex,
     currentCourse,
@@ -112,5 +118,6 @@ export const useCourseStore = defineStore("course", () => {
     toNextStatement,
     cleanProgress,
     resetStatementIndex,
+    updateUserInputWords
   };
 });

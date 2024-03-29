@@ -38,7 +38,7 @@
 import { onMounted, ref, watch } from "vue";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
-import { useInput } from "~/composables/main/question";
+import { useInput, type Word } from "~/composables/main/question";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -179,7 +179,8 @@ function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
     submitAnswer(
-      () => {
+      (userInputWords: Word[]) => {
+        courseStore.updateUserInputWords(userInputWords); // 暂存用户输入结果,用于结果显示
         playRightSound(); // 正确提示
         showAnswer();
       },

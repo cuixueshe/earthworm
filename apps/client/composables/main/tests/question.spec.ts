@@ -189,7 +189,7 @@ describe("question", () => {
         getInputCursorPosition,
       });
 
-    setInputValue("he eats a");
+    setInputValue("he eatss a");
     submitAnswer();
 
     await fixIncorrectWord();
@@ -303,7 +303,7 @@ describe("question", () => {
       getInputCursorPosition,
     });
 
-    setInputValue("i ea apple");
+    setInputValue("i e apple");
     submitAnswer();
     await fixIncorrectWord();
 

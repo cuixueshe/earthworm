@@ -1,7 +1,13 @@
 <template>
   <div class="text-center">
-    <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
-      {{ courseStore.currentStatement?.english }}
+    <div class="ml-8 text-5xl dark:text-gray-50">
+      <div class="text-fuchsia-500" v-if="!hasErrorNum()">{{ courseStore.currentStatement?.english }}</div>
+      <div v-else>
+        <span class="text-3xl">正确拼写: </span>
+        <span v-for="word in courseStore.currentStatement?.userInput">
+          <span class="mr-2" :class="word.errorNum > 0 ? 'text-fuchsia-500' : 'text-gray-500'">{{ word.text }}</span>
+        </span>
+      </div>
       <svg
         class="inline-block ml-1 cursor-pointer w-7 h-7"
         viewBox="0 0 1024 1024"
@@ -89,6 +95,11 @@ function goToNextQuestion() {
   courseStore.toNextStatement();
   showQuestion();
 }
+
+function hasErrorNum(){
+  return courseStore.currentStatement?.userInput?.some((word) => word.errorNum > 0);
+}
+
 </script>
 
 <style scoped>

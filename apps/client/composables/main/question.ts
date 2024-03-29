@@ -1,6 +1,7 @@
+import leven from 'js-levenshtein';
 import { nextTick, reactive, ref, watchEffect } from "vue";
 
-interface Word {
+export interface Word {
   text: string;
   isActive: boolean;
   userInput: string;
@@ -9,6 +10,7 @@ interface Word {
   start: number;
   position: number;
   id: number;
+  errorNum: number; // 单词错误字符数
 }
 
 interface InputOptions {
@@ -128,14 +130,9 @@ export function useInput({
 
   function markIncorrectWord() {
     userInputWords.forEach((word) => {
-      const formattedWord = formatInputText(word.userInput);
-      if (
-        formattedWord !== word.text.toLocaleLowerCase()
-      ) {
-        word.incorrect = true;
-      } else {
-        word.incorrect = false;
-      }
+      const distance = leven(word.text.toLocaleLowerCase(), word.userInput.toLocaleLowerCase());
+      word.incorrect = distance > 1;
+      word.errorNum = distance;
     });
   }
 
@@ -158,11 +155,6 @@ export function useInput({
         return word;
       }
     }
-  }
-
-  // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
-  function formatInputText(word: string) {
-    return word.toLocaleLowerCase().replace(/‘/g, "'");
   }
 
   // 当前编辑的单词是否为最后一个错误单词
@@ -193,7 +185,7 @@ export function useInput({
   }
 
   function submitAnswer(
-    correctCallback?: () => void,
+    correctCallback?: (userInputWords: Word[]) => void,
     wrongCallback?: () => void
   ) {
     if (mode === Mode.Fix) return;
@@ -202,7 +194,7 @@ export function useInput({
 
     if (checkWordCorrect()) {
       mode = Mode.Input;
-      correctCallback?.(); // 调用输入正确的回调
+      correctCallback?.(userInputWords); // 调用输入正确的回调
       inputValue.value = "";
     } else {
       mode = Mode.Fix;
@@ -376,6 +368,6 @@ export function useInput({
     fixIncorrectWord,
     fixFirstIncorrectWord,
     resetUserInputWords,
-    isFixMode,
+    isFixMode
   };
 }
