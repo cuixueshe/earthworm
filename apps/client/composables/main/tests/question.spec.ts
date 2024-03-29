@@ -82,7 +82,7 @@ describe("question", () => {
     expect(userInputWords[1].incorrect).toBe(true);
   });
 
-  it("should be correct when checked 'don't' and 'don‘t'", async () => {
+  it("should be correct when compared 'don't' and 'don‘t'", async () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
