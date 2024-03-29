@@ -27,6 +27,15 @@
       </button>
       <span class="ml-2">{{ "skip" }}</span>
     </div>
+    <div class="w-[210px] mb-4">
+      <button
+        class="tip-btn mr-1"
+        @click="BackPreviousQuestion"
+      >
+        ⌃ {{ shortcutKeys.previous }}
+      </button>
+      <span class="ml-2">{{ "previous" }}</span>
+    </div>
     <div class="w-[210px]">
       <button
         class="tip-btn"
@@ -48,11 +57,15 @@ import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import Message from "./Message/useMessage";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
+const { BackPreviousQuestion } = usePreviosQuestion(
+  shortcutKeys.value.previous
+);
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
@@ -157,10 +170,35 @@ function useSkipThisQuestion(key: string) {
     });
   }
 
-  handleShortcut()
+  handleShortcut();
 
   return {
     goToNextQuestion,
+  };
+}
+function usePreviosQuestion(key: string) {
+  function BackPreviousQuestion() {
+    if (courseStore.statementIndex === 0) {
+      Message.error("已经是第一题了!");
+      return;
+    }
+    courseStore.toPreviousStatement();
+    showQuestion();
+  }
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(key, BackPreviousQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(key, BackPreviousQuestion);
+    });
+  }
+
+  handleShortcut();
+
+  return {
+    BackPreviousQuestion,
   };
 }
 </script>
