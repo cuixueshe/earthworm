@@ -1,0 +1,1 @@
+ALTER TABLE `course-history` ADD `progress` int DEFAULT 0 NOT NULL;
