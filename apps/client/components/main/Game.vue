@@ -1,5 +1,6 @@
 <template>
-  <div class="h-full pt-20">
+  <div class="h-full pt-20 relative">
+    <PreNextBtn />
     <div class="h-[40vh] flex flex-col justify-center relative">
       <template v-if="isQuestion()">
         <Question></Question>
@@ -24,6 +25,7 @@ import { useGameMode } from "~/composables/main/game";
 import Answer from "./Answer.vue";
 import AnswerTip from "./AnswerTip.vue";
 import AuthRequired from "./AuthRequired.vue";
+import PreNextBtn from "./PreNextBtn.vue";
 import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";
