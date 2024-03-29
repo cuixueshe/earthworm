@@ -23,7 +23,7 @@
         class="tip-btn mr-1"
         @click="goToNextQuestion"
       >
-        ⌃ {{ "Crtl+," }}
+        ⌃ {{ shortcutKeys.skip }}
       </button>
       <span class="ml-2">{{ "skip" }}</span>
     </div>
@@ -118,16 +118,6 @@ function useShowAnswer(key: string) {
   };
 }
 function useSkipThisQuestion(key: string) {
-  function skipQuestion() {
-    goToNextQuestion();
-  }
-  onMounted(() => {
-    registerShortcut(key, skipQuestion);
-  });
-
-  onUnmounted(() => {
-    cancelShortcut(key, skipQuestion);
-  });
   function goToNextQuestion() {
     if (courseStore.isAllDone()) {
       showSummary();
@@ -137,6 +127,19 @@ function useSkipThisQuestion(key: string) {
     courseStore.toNextStatement();
     showQuestion();
   }
+
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(key, goToNextQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(key, goToNextQuestion);
+    });
+  }
+
+  handleShortcut()
+
   return {
     goToNextQuestion,
   };
