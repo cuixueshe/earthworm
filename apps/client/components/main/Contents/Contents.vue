@@ -30,7 +30,7 @@ import { fetchCourseHistory } from "~/api/courseHistory";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
-const { isShowContents, watchIsContentsItself } = useContent();
+const { isShowContents, watchClickOutside } = useContent();
 
 const coursesStore = useCourseStore();
 
@@ -106,7 +106,7 @@ async function getCompletionCont() {
 
 onMounted(async () => {
   scrollTo(coursesStore.statementIndex);
-  watchIsContentsItself(containerProps.ref.value!);
+  watchClickOutside(containerProps.ref.value!);
   completionCount = await getCompletionCont();
 });
 </script>

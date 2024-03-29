@@ -1,4 +1,5 @@
-import { ref, watch } from "vue";
+import { onClickOutside } from "@vueuse/core";
+import { ref } from "vue";
 
 /**
  * 目录是否可见
@@ -8,14 +9,14 @@ const contentsVisible = ref(false);
 /**
  * 是否正在监听是否点击了目录以外的区域
  */
-let listeningIsSelf = false;
+let isOnClickOutside = false;
 
 export function useContent() {
   /**
    * 切换目录可见
    */
   function toggleContents() {
-    if (listeningIsSelf) return;
+    if (isOnClickOutside) return;
     contentsVisible.value = !contentsVisible.value;
   }
 
@@ -30,24 +31,15 @@ export function useContent() {
    * 监听是否点击了目录以外的区域，是则隐藏目录
    * @param contentsEl 目录元素
    */
-  function watchIsContentsItself(contentsEl: HTMLElement) {
-    const onIsSelf = (e: any) => {
-      listeningIsSelf = true;
-      const isSelf = contentsEl!.contains(e.target);
-      if (!isSelf) {
+  function watchClickOutside(contentsEl: HTMLElement) {
+    onClickOutside(contentsEl, () => {
+      if (contentsVisible.value) {
+        isOnClickOutside = true;
         contentsVisible.value = false;
         // 隐藏时防止和 toggleContents 冲突
         setTimeout(() => {
-          listeningIsSelf = false;
+          isOnClickOutside = false;
         });
-      }
-    };
-
-    watch(contentsVisible, (newVal: boolean) => {
-      if (newVal) {
-        document.addEventListener("click", onIsSelf, true);
-      } else {
-        document.removeEventListener("click", onIsSelf, true);
       }
     });
   }
@@ -55,6 +47,6 @@ export function useContent() {
   return {
     isShowContents,
     toggleContents,
-    watchIsContentsItself,
+    watchClickOutside,
   };
 }
