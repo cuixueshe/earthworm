@@ -1,10 +1,11 @@
-import { computed, ref } from "vue";
+import {computed,ref} from "vue";
 
 export const SHORTCUT_KEYS = "shortcutKeys";
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
   answer: "Ctrl+;",
   skip: "Ctrl+.",
+  previous: "Ctrl+/",
 };
 export const KEYBOARD = {
   ESC: "Esc",

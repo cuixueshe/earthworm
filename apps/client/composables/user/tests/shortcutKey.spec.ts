@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import {beforeEach,describe,expect,it} from "vitest";
 import {
   DEFAULT_SHORTCUT_KEYS,
   SHORTCUT_KEYS,
@@ -27,6 +27,7 @@ describe("user defined shortcut key", () => {
         sound: "Ctrl+s",
         answer: "Ctrl+8",
         skip: "Ctrl+.",
+        previous: "Ctrl+/",
       };
 
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(storeShortcutKeys));

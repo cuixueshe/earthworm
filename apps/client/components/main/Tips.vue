@@ -27,6 +27,15 @@
       </button>
       <span class="ml-2">{{ "skip" }}</span>
     </div>
+    <div class="w-[210px] mb-4" v-show="showPreviousBtn">
+      <button
+        class="tip-btn mr-1"
+        @click="goToPreviousQuestion"
+      >
+        ⌃ {{ shortcutKeys.previous }}
+      </button>
+      <span class="ml-2">{{ "previous" }}</span>
+    </div>
     <div class="w-[210px]">
       <button
         class="tip-btn"
@@ -40,19 +49,20 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted } from "vue";
-import { useAnswerTip } from "~/composables/main/answerTip";
-import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
-import { useGameMode } from "~/composables/main/game";
-import { useSummary } from "~/composables/main/summary";
-import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { useCourseStore } from "~/store/course";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import {computed,onMounted,onUnmounted} from "vue";
+import {useAnswerTip} from "~/composables/main/answerTip";
+import {useCurrentStatementEnglishSound} from "~/composables/main/englishSound";
+import {useGameMode} from "~/composables/main/game";
+import {useSummary} from "~/composables/main/summary";
+import {useShortcutKeyMode} from "~/composables/user/shortcutKey";
+import {useCourseStore} from "~/store/course";
+import {cancelShortcut,registerShortcut} from "~/utils/keyboardShortcuts";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
+const { goToPreviousQuestion, showPreviousBtn } = useGoToPreviousQuestion(shortcutKeys.value.previous);
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
@@ -161,6 +171,32 @@ function useSkipThisQuestion(key: string) {
 
   return {
     goToNextQuestion,
+  };
+}
+function useGoToPreviousQuestion(key: string) {
+  function goToPreviousQuestion() {
+    if(!showPreviousBtn.value) return
+    courseStore.toPreviousStatement();
+    showQuestion();
+  }
+
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(key, goToPreviousQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(key, goToPreviousQuestion);
+    });
+  }
+
+  handleShortcut()
+
+  const showPreviousBtn = computed(() => courseStore.statementIndex > 0);
+
+  return {
+    goToPreviousQuestion,
+    showPreviousBtn
   };
 }
 </script>

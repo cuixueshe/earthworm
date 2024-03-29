@@ -1,9 +1,9 @@
-import { defineStore } from "pinia";
-import { computed, ref, watch, watchEffect } from "vue";
-import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
-import { useActiveCourseId } from "~/composables/courses/activeCourse";
-import { useCourseProgress } from "~/composables/courses/progress";
-import { useUserStore } from "~/store/user";
+import {defineStore} from "pinia";
+import {computed,ref,watch,watchEffect} from "vue";
+import {fetchCompleteCourse,fetchCourse,fetchTryCourse} from "~/api/course";
+import {useActiveCourseId} from "~/composables/courses/activeCourse";
+import {useCourseProgress} from "~/composables/courses/progress";
+import {useUserStore} from "~/store/user";
 
 interface Statement {
   id: number;
@@ -46,6 +46,13 @@ export const useCourseStore = defineStore("course", () => {
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
   });
+
+  function toPreviousStatement() {
+    const nextIndex = statementIndex.value - 1;
+    statementIndex.value = nextIndex;
+
+    return statementIndex.value;
+  }
 
   function toNextStatement() {
     const nextIndex = statementIndex.value + 1;
@@ -109,6 +116,7 @@ export const useCourseStore = defineStore("course", () => {
     isAllDone,
     checkCorrect,
     completeCourse,
+    toPreviousStatement,
     toNextStatement,
     cleanProgress,
     resetStatementIndex,
