@@ -47,6 +47,18 @@
               </button>
             </td>
           </tr>
+          <tr class="hover">
+            <td class="label-text">返回上个问题</td>
+            <td class="text-center">{{ shortcutKeys.previous }}</td>
+            <td class="text-center">
+              <button
+                class="btn btn-sm btn-outline btn-secondary"
+                @click="handleEdit('previous')"
+              >
+                编辑
+              </button>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
