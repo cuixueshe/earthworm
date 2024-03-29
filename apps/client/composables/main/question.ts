@@ -128,8 +128,9 @@ export function useInput({
 
   function markIncorrectWord() {
     userInputWords.forEach((word) => {
+      const formattedWord = formatInputText(word.userInput);
       if (
-        word.userInput.toLocaleLowerCase() !== word.text.toLocaleLowerCase()
+        formattedWord !== word.text.toLocaleLowerCase()
       ) {
         word.incorrect = true;
       } else {
@@ -157,6 +158,11 @@ export function useInput({
         return word;
       }
     }
+  }
+
+  // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
+  function formatInputText(word: string) {
+    return word.toLocaleLowerCase().replace(/‘/g, "'");
   }
 
   // 当前编辑的单词是否为最后一个错误单词
