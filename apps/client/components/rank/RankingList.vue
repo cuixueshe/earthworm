@@ -10,7 +10,7 @@
       <!-- close button -->
       <form method="dialog">
         <button
-          class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          class="absolute btn btn-sm btn-circle btn-ghost right-2 top-2"
           @click="rankingStore.hideRankModal"
         >
           ✕
@@ -18,7 +18,7 @@
       </form>
 
       <!-- title -->
-      <h2 class="text-center font-bold text-xl mb-4">排行榜</h2>
+      <h2 class="mb-4 text-xl font-bold text-center">排行榜</h2>
 
       <!-- tab -->
       <div
@@ -32,32 +32,35 @@
           @click="rankingStore.togglePeriod(period.value)"
           :key="period.value"
           :class="{
-            'tab-active text-orange-500': period.value === rankingStore.currentPeriod,
+            'tab-active text-orange-500':
+              period.value === rankingStore.currentPeriod,
           }"
           >{{ period.label }}</a
         >
       </div>
 
-      <!-- list -->
-      <div
-        v-if="rankingStore.rankingList.length > 0"
-        class="flex-1 my-1 py-2 px-4 overflow-y-auto"
-      >
-        <RankingItem
-          v-for="({ username, count }, index) in rankingStore.rankingList"
-          :username="username"
-          :rank="index + 1"
-          :count="count"
-        />
-      </div>
-      <!-- empty -->
-      <div
-        v-else
-        class="flex-1 flex items-center justify-center text-gray-500"
-      >
-        <Loading v-if="rankingStore.isLoading" />
-        <template v-else> 还没有小伙伴上榜哦，快来霸榜吧！🏆 </template>
-      </div>
+      <Loading v-if="rankingStore.isLoading" />
+      <template v-else>
+        <!-- list -->
+        <div
+          v-if="rankingStore.rankingList.length > 0"
+          class="flex-1 px-4 py-2 my-1 overflow-y-auto"
+        >
+          <RankingItem
+            v-for="({ username, count }, index) in rankingStore.rankingList"
+            :username="username"
+            :rank="index + 1"
+            :count="count"
+          />
+        </div>
+        <!-- empty -->
+        <div
+          v-else
+          class="flex items-center justify-center flex-1 text-gray-500"
+        >
+          还没有小伙伴上榜哦，快来霸榜吧！🏆
+        </div>
+      </template>
 
       <!-- tip -->
       <RankingTip

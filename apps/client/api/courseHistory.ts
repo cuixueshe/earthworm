@@ -2,7 +2,7 @@ import { http } from "./http";
 
 export interface CourseHistory {
   courseId: number;
-  completionCount: string;
+  completionCount: number;
   progress: number;
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
+  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
     <div class="w-[210px] mb-4">
       <button
         class="tip-btn"
@@ -7,7 +7,7 @@
       >
         ⌃ {{ shortcutKeys.sound }}
       </button>
-      <span class="ml-2">play sound</span>
+      <span class="ml-2">播放发音</span>
     </div>
     <div class="w-[210px] mb-4">
       <button
@@ -18,15 +18,27 @@
       </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
-
-    <div class="w-[210px]">
+    <div class="w-[210px] mb-4">
       <button
-        class="tip-btn"
-        @click="toggleGameMode"
+        class="mr-1 tip-btn"
+        @click="goToNextQuestion"
       >
-        Space
+        ⌃ {{ shortcutKeys.skip }}
       </button>
-      <span class="ml-2">fix incorrect word</span>
+      <span class="ml-2">下一题</span>
+    </div>
+    <div class="w-[210px] mb-4">
+      <button
+        class="tip-btn mr-1"
+        @click="backPreviousQuestion"
+      >
+        ⌃ {{ shortcutKeys.previous }}
+      </button>
+      <span class="ml-2">上一题</span>
+    </div>
+    <div class="w-[210px]">
+      <button class="tip-btn">Space</button>
+      <span class="ml-2">{{ spaceTipText }} </span>
     </div>
   </div>
 </template>
@@ -38,26 +50,43 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
+const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
+const { backPreviousQuestion } = usePreviosQuestion(
+  shortcutKeys.value.previous
+);
+const { showQuestion } = useGameMode();
+const { showSummary } = useSummary();
+const courseStore = useCourseStore();
 
 const toggleTipText = computed(() => {
   let text = "";
   const { isAnswer } = useGameMode();
   const { isAnswerTip } = useAnswerTip();
   if (isAnswer()) {
-    text = "again";
+    text = "再来一次";
   } else {
     if (isAnswerTip()) {
-      text = "close answer";
+      text = "关闭答案预览面板";
     } else {
-      text = "show answer";
+      text = "显示答案预览面板";
     }
   }
   return text;
+});
+
+const spaceTipText = computed(() => {
+  const { isAnswer } = useGameMode();
+  if (isAnswer()) {
+    return "下一题";
+  } else {
+    return "修复错误单词";
+  }
 });
 
 function usePlaySound(key: string) {
@@ -121,6 +150,54 @@ function useShowAnswer(key: string) {
 
   return {
     toggleGameMode,
+  };
+}
+function useSkipThisQuestion(key: string) {
+  function goToNextQuestion() {
+    if (courseStore.isAllDone()) {
+      showSummary();
+      return;
+    }
+
+    courseStore.toNextStatement();
+    showQuestion();
+  }
+
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(key, goToNextQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(key, goToNextQuestion);
+    });
+  }
+
+  handleShortcut();
+
+  return {
+    goToNextQuestion,
+  };
+}
+function usePreviosQuestion(key: string) {
+  function backPreviousQuestion() {
+    courseStore.toPreviousStatement();
+    showQuestion();
+  }
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(key, backPreviousQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(key, backPreviousQuestion);
+    });
+  }
+
+  handleShortcut();
+
+  return {
+    backPreviousQuestion,
   };
 }
 </script>
