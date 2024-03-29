@@ -437,6 +437,7 @@ describe("question", () => {
       {
         code: "Space",
         preventDefault: () => {},
+        stopPropagation: () => {},
       } as any as KeyboardEvent,
       {
         useSpaceSubmitAnswer: {

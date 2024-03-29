@@ -302,7 +302,7 @@ export function useInput({
       return;
     }
 
-    // Input 下启用空格提交 且 在最后一个单词位置
+    // Fix_Input/Input 下启用空格提交 且 在最后一个单词位置
     if (e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
       e.stopPropagation(); // 阻止事件冒泡
@@ -325,6 +325,7 @@ export function useInput({
       isLastIncorrectWord()
     ) {
       e.preventDefault();
+      e.stopPropagation();
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
