@@ -36,6 +36,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
+import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useKeyboardSound } from "~/composables/user/sound";
@@ -69,6 +70,7 @@ const {
   getInputCursorPosition,
   inputChangedCallback,
 });
+const { hiddenAnswerTip } = useAnswerTip();
 
 watch(
   () => inputValue.value,
@@ -80,12 +82,12 @@ watch(
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
   // 当前单词激活 且 聚焦
-  if (word.isActive && focusing) {
+  if (word.isActive && focusing.value) {
     return "text-fuchsia-500 border-b-fuchsia-500";
   }
 
   // 当前单词错误 且 聚焦
-  if (word.incorrect && focusing) {
+  if (word.incorrect && focusing.value) {
     // Fix 修复模式添加动画
     return `text-red-500 border-b-red-500 ${isFixMode() && "animate-shake"}`;
   }
@@ -183,6 +185,8 @@ function handleKeydown(e: KeyboardEvent) {
       },
       playErrorSound // 错误提示
     );
+
+    hiddenAnswerTip();
     return;
   }
 

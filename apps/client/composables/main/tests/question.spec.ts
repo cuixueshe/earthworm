@@ -59,6 +59,7 @@ describe("question", () => {
     expect(correctCallback).toBeCalled();
     expect(wrongCallback).not.toBeCalled();
   });
+  
 
   it("should be incorrect when checked the answer", async () => {
     const setInputCursorPosition = () => {};
@@ -79,6 +80,26 @@ describe("question", () => {
     expect(correctCallback).not.toBeCalled();
     expect(wrongCallback).toBeCalled();
     expect(userInputWords[1].incorrect).toBe(true);
+  });
+
+  it("should be correct when compared 'don't' and 'don‘t'", async () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = () => 0;
+
+    const { setInputValue, submitAnswer } = useInput({
+      source: () => "i don't",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    setInputValue("i don‘t");
+
+    const correctCallback = vi.fn();
+    const wrongCallback = vi.fn();
+    submitAnswer(correctCallback, wrongCallback);
+
+    expect(correctCallback).toBeCalled();
+    expect(wrongCallback).not.toBeCalled();
   });
 
   it("should be the first word should be active", () => {
