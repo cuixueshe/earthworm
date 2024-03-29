@@ -21,20 +21,20 @@
     <div class="w-[210px] mb-4">
       <button
         class="mr-1 tip-btn"
+        @click="goToPreviousQuestion"
+      >
+        ⌃ {{ shortcutKeys.previous }}
+      </button>
+      <span class="ml-2">上一题</span>
+    </div>
+    <div class="w-[210px] mb-4">
+      <button
+        class="mr-1 tip-btn"
         @click="goToNextQuestion"
       >
         ⌃ {{ shortcutKeys.skip }}
       </button>
       <span class="ml-2">下一题</span>
-    </div>
-    <div class="w-[210px] mb-4">
-      <button
-        class="tip-btn mr-1"
-        @click="backPreviousQuestion"
-      >
-        ⌃ {{ shortcutKeys.previous }}
-      </button>
-      <span class="ml-2">上一题</span>
     </div>
     <div class="w-[210px]">
       <button class="tip-btn">Space</button>
@@ -56,10 +56,11 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
-const { goToNextQuestion } = useSkipThisQuestion(shortcutKeys.value.skip);
-const { backPreviousQuestion } = usePreviosQuestion(
-  shortcutKeys.value.previous
+const { goToNextQuestion, goToPreviousQuestion } = usePrevAndNextQuestion(
+  shortcutKeys.value.previous,
+  shortcutKeys.value.skip
 );
+
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
@@ -152,52 +153,40 @@ function useShowAnswer(key: string) {
     toggleGameMode,
   };
 }
-function useSkipThisQuestion(key: string) {
+
+// 上一题/下一题
+function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
+  handleShortcut();
+
   function goToNextQuestion() {
     if (courseStore.isAllDone()) {
       showSummary();
       return;
     }
-
     courseStore.toNextStatement();
     showQuestion();
   }
 
-  function handleShortcut() {
-    onMounted(() => {
-      registerShortcut(key, goToNextQuestion);
-    });
-
-    onUnmounted(() => {
-      cancelShortcut(key, goToNextQuestion);
-    });
-  }
-
-  handleShortcut();
-
-  return {
-    goToNextQuestion,
-  };
-}
-function usePreviosQuestion(key: string) {
-  function backPreviousQuestion() {
+  function goToPreviousQuestion() {
     courseStore.toPreviousStatement();
     showQuestion();
   }
+
   function handleShortcut() {
     onMounted(() => {
-      registerShortcut(key, backPreviousQuestion);
+      registerShortcut(nextKey, goToNextQuestion);
+      registerShortcut(prevKey, goToPreviousQuestion);
     });
 
     onUnmounted(() => {
-      cancelShortcut(key, backPreviousQuestion);
+      cancelShortcut(prevKey, goToNextQuestion);
+      cancelShortcut(nextKey, goToPreviousQuestion);
     });
   }
 
-  handleShortcut();
-
   return {
-    backPreviousQuestion,
+    goToNextQuestion,
+    goToPreviousQuestion,
   };
 }
 </script>
