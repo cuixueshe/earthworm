@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
+  <div class="button-group absolute left-0 right-0 flex flex-col items-center">
     <div class="w-[210px] mb-4">
       <button
         class="tip-btn"
@@ -36,8 +36,8 @@
       </button>
       <span class="ml-2">上一题</span>
     </div>
-    <div class="w-[210px]">
-      <button class="tip-btn">Space</button>
+    <div class="w-[210px] mb-4">
+      <button class="tip-btn mr-1">Space</button>
       <span class="ml-2">{{ spaceTipText }} </span>
     </div>
   </div>
@@ -205,5 +205,14 @@ function usePreviosQuestion(key: string) {
 <style scoped>
 .tip-btn {
   @apply btn btn-xs text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500;
+}
+.button-group {
+  position: relative;
+}
+/* iPad 竖屏模式样式 */  
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {  
+  .button-group{
+    margin-bottom: 500px;
+  } 
 }
 </style>

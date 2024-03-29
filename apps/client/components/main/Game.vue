@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full pt-20">
-    <div class="h-[40vh] flex flex-col justify-center relative">
+  <div class="pt-20">
+    <div class="flex flex-col justify-center relative bottom-[35px]">
       <template v-if="isQuestion()">
         <Question></Question>
         <template v-if="isAnswerTip()">
