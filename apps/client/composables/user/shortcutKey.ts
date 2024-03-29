@@ -4,7 +4,7 @@ export const SHORTCUT_KEYS = "shortcutKeys";
 export const DEFAULT_SHORTCUT_KEYS = {
   sound: "Ctrl+'",
   answer: "Ctrl+;",
-  next: "Ctrl+.",
+  skip: "Ctrl+.",
 };
 export const KEYBOARD = {
   ESC: "Esc",
@@ -56,7 +56,7 @@ export function useShortcutKeyMode() {
   function setShortcutKeys() {
     const localKeys = localStorage.getItem(SHORTCUT_KEYS);
     if (localKeys) {
-      shortcutKeys.value = JSON.parse(localKeys);
+      shortcutKeys.value = {...shortcutKeys.value ,...JSON.parse(localKeys)};
     } else {
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(shortcutKeys.value));
     }
