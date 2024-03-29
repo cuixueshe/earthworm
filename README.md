@@ -13,6 +13,11 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 ### ⚠️ Requirements
 
 - **pnpm version >= 8**
+
+  ```bash
+  corepack enable
+  ```
+
 - **Node.js version >= v20**
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**

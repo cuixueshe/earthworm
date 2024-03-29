@@ -2,6 +2,7 @@
   "name": "earthworm",
   "version": "1.0.0",
   "description": "",
+  "packageManager": "pnpm@8.15.5",
   "main": "index.js",
   "scripts": {
     "schema:build": "pnpm -F @earthworm/schema build",
