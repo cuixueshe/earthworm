@@ -120,7 +120,7 @@
 		"soundmark": "/ʃi/ /nidz/"
 	},
 	{
-		"chinese": "她需要现在吃这个食物",
+		"chinese": "她现在需要吃这个食物",
 		"english": "she needs to eat the food now",
 		"soundmark": "/ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -135,7 +135,7 @@
 		"soundmark": "/ɪt/ /nidz/"
 	},
 	{
-		"chinese": "它需要现在吃这个食物",
+		"chinese": "它现在需要吃这个食物",
 		"english": "it needs to eat the food now",
 		"soundmark": "/ɪt/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -175,7 +175,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某件事",
+		"chinese": "一些重要的事情",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -190,7 +190,7 @@
 		"soundmark": "/tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "告诉你重要的某件事",
+		"chinese": "告诉你一些重要的事情",
 		"english": "to tell you something important",
 		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -200,7 +200,7 @@
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要告诉你重要的某件事",
+		"chinese": "我想要告诉你一些重要的事情",
 		"english": "I want to tell you something important",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -210,7 +210,7 @@
 		"soundmark": "/ju/ /wɑnt/"
 	},
 	{
-		"chinese": "你想要告诉我重要的某件事",
+		"chinese": "你想告诉我一些重要的事情",
 		"english": "you want to tell me something important",
 		"soundmark": "/ju/ /wɑnt/ /tə/ /tɛl/ /mi/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -220,7 +220,7 @@
 		"soundmark": "/hi/ /wɑnts/"
 	},
 	{
-		"chinese": "他想要告诉我重要的某件事",
+		"chinese": "他想告诉我一些重要的事情",
 		"english": "he wants to tell me something important",
 		"soundmark": "/hi/ /wɑnts/ /tə/ /tɛl/ /mi/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -275,7 +275,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她想要解释原因为什么她现在需要吃这个食物",
+		"chinese": "她想要解释为什么她现在需要吃这个食物的原因",
 		"english": "she wants to explain the reason why she needs to eat the food now",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -385,12 +385,12 @@
 		"soundmark": "/ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "它是不可能的",
+		"chinese": "这是不可能的",
 		"english": "it is impossible",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "星荣想要在天空中飞翔但是它是不可能的",
+		"chinese": "星荣想要在天空中飞翔，但这是不可能的",
 		"english": "Xingrong wants to fly in the sky but it is impossible",
 		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/ /bət/ /ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
@@ -615,7 +615,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读",
+		"chinese": "她必须解释为什么她喜欢在家里阅读的原因",
 		"english": "she has to explain the reason why she likes to read at home",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
 	},
@@ -685,7 +685,7 @@
 		"soundmark": "/bɪ'kɔz/ /hi/ /ɪz/ /ˈvɛri/ /taɪrd/"
 	},
 	{
-		"chinese": "星荣现在必须睡觉因为他是非常劳累的",
+		"chinese": "星荣现在必须睡觉因为他非常疲倦",
 		"english": "Xingrong has to sleep now because he is very tired",
 		"soundmark": "/hæz/ /tə/ /slip/ /naʊ/ /bɪ'kɔz/ /hi/ /ɪz/ /ˈvɛri/ /taɪrd/"
 	},
@@ -765,7 +765,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读",
+		"chinese": "她必须解释为什么她喜欢在家里阅读的原因",
 		"english": "she has to explain the reason why she likes to read at home",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
 	},
@@ -780,7 +780,7 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"chinese": "这是非常重要的",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -790,7 +790,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读因为它是非常重要的",
+		"chinese": "她必须解释为什么她喜欢在家阅读，因为这非常重要",
 		"english": "she has to explain the reason why she likes to read at home because it is very important",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},

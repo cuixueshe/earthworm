@@ -40,7 +40,7 @@
 		"soundmark": "/baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "这辆车通过他被清洗了",
+		"chinese": "这辆车被他清洗了",
 		"english": "the car is washed by him",
 		"soundmark": "/ðə/ /kɑr/ /ɪz/ /wɔʃt/ /baɪ/ /hɪm/"
 	},
@@ -350,7 +350,7 @@
 		"soundmark": "/baɪ/ /mi/"
 	},
 	{
-		"chinese": "这些花将会被我浇水",
+		"chinese": "这些花将会由我来浇水",
 		"english": "the flowers will be watered by me",
 		"soundmark": "/ðə/ /'flaʊɚz/ /wɪl/ /bi/ /'wɔtɚd/ /baɪ/ /mi/"
 	},
@@ -650,12 +650,12 @@
 		"soundmark": "/ðə/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "这顿晚饭是被我妈做的",
+		"chinese": "这顿晚饭是我妈做的",
 		"english": "the dinner is cooked by my mother",
 		"soundmark": "/ðə/ /'dɪnɚ/ /ɪz/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
 	},
 	{
-		"chinese": "这顿晚饭（过去）是被我妈做的",
+		"chinese": "这顿晚饭（过去）是我妈做的",
 		"english": "the dinner was cooked by my mother",
 		"soundmark": "/ðə/ /'dɪnɚ/ /wəz/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
 	},
@@ -795,7 +795,7 @@
 		"soundmark": "/ðə/ /'sikrət/"
 	},
 	{
-		"chinese": "这个秘密将会被保持",
+		"chinese": "这个秘密将会被守住",
 		"english": "the secret will be kept",
 		"soundmark": "/ðə/ /'sikrət/ /wɪl/ /bi/ /kɛpt/"
 	},
@@ -805,7 +805,7 @@
 		"soundmark": "/baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "这个秘密将会被他保持",
+		"chinese": "这个秘密将会被他守住",
 		"english": "the secret will be kept by him",
 		"soundmark": "/ðə/ /'sikrət/ /wɪl/ /bi/ /kɛpt/ /baɪ/ /hɪm/"
 	},
@@ -910,7 +910,7 @@
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "那场足球比赛明天将会被举行",
+		"chinese": "那场足球比赛将会在明天被举行",
 		"english": "the football match will be held tomorrow",
 		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/ /wɪl/ /bi/ /hɛld/ /tə'mɔro/"
 	}

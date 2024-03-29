@@ -60,12 +60,12 @@
 		"soundmark": "/ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他需要在他的家庭作业上工作",
+		"chinese": "他需要在他的家庭作业上下功夫",
 		"english": "he needs to work on his homework",
 		"soundmark": "/hi/ /nidz/ /tə/ /wɝk/ /ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他在他的家庭作业上工作",
+		"chinese": "他在他的家庭作业上下功夫",
 		"english": "he works on his homework",
 		"soundmark": "/hi/ /wɝks/ /ɑn/ /hɪz/ /'homwɝk/"
 	},
@@ -95,7 +95,7 @@
 		"soundmark": "/ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他(现在)正在在他的家庭作业上工作",
+		"chinese": "他(现在)正在他的家庭作业上下功夫",
 		"english": "he is working on his homework",
 		"soundmark": "/hi/ /ɪz/ /'wɝkɪŋ/ /ɑn/ /hɪz/ /'homwɝk/"
 	},
@@ -125,7 +125,7 @@
 		"soundmark": "/ɑn/"
 	},
 	{
-		"chinese": "我(现在)正在在我的家庭作业上工作",
+		"chinese": "我(现在)正在我的家庭作业上下功夫",
 		"english": "I am working on my homework",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/ /ɑn/ /maɪ/ /'homwɝk/"
 	},
@@ -135,7 +135,7 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "我(现在)正在在那件事上工作",
+		"chinese": "我(现在)正在那件事上工作",
 		"english": "I am working on it",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
@@ -145,7 +145,7 @@
 		"soundmark": "/stɪl/"
 	},
 	{
-		"chinese": "我(现在)仍然正在在那件事上工作",
+		"chinese": "我(现在)仍然在那件事上工作",
 		"english": "I am still working on it",
 		"soundmark": "/aɪ/ /æm/ /stɪl/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
@@ -155,7 +155,7 @@
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们(现在)正在在那件事上工作",
+		"chinese": "我们(现在)正在那件事上工作",
 		"english": "we are working on it",
 		"soundmark": "/wi/ /ɚ/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
@@ -175,7 +175,7 @@
 		"soundmark": "/ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们(现在)正在在一个新的项目上工作",
+		"chinese": "我们(现在)正在一个新的项目上工作",
 		"english": "we are working on a new project",
 		"soundmark": "/wi/ /ɚ/ /'wɝkɪŋ/ /ɑn/ /ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
@@ -190,7 +190,7 @@
 		"soundmark": "/bi/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "将会正在工作",
+		"chinese": "将会工作",
 		"english": "will be working",
 		"soundmark": "/wɪl/ /bi/ /'wɝkɪŋ/"
 	},
@@ -200,7 +200,7 @@
 		"soundmark": "/ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们将会正在在一个新的项目上工作",
+		"chinese": "我们将会在一个新的项目上工作",
 		"english": "we will be working on a new project",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'wɝkɪŋ/ /ɑn/ /ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
@@ -220,7 +220,7 @@
 		"soundmark": "/nɛkst/ /wik/"
 	},
 	{
-		"chinese": "我们下周将会正在在一个新的项目上工作",
+		"chinese": "下周我们将会在一个新的项目上工作",
 		"english": "we will be working on a new project next week",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'wɝkɪŋ/ /ɑn/ /ə/ /nu/ /ˈprɑdʒɛkt/ /nɛkst/ /wik/"
 	},
@@ -230,12 +230,12 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "我们下周将会正在在那件事上工作",
+		"chinese": "我们将在下周开始工作",
 		"english": "we will be working on it next week",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'wɝkɪŋ/ /ɑn/ /ɪt/ /nɛkst/ /wik/"
 	},
 	{
-		"chinese": "我(现在)正在在那件事上工作",
+		"chinese": "我(现在)正在那件事上工作",
 		"english": "I am working on it",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
@@ -350,7 +350,7 @@
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "我的女儿不能找到她的玩具",
+		"chinese": "我的女儿找不到她的玩具",
 		"english": "my daughter can't find her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /kænt/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
@@ -360,7 +360,7 @@
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是我的女儿不能找到她的玩具",
+		"chinese": "但是我的女儿找不到她的玩具",
 		"english": "but my daughter can't find her toy",
 		"soundmark": "/bʌt/ /maɪ/ /'dɔtɚ/ /kænt/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
@@ -370,7 +370,7 @@
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "我的女儿(现在)正在寻找她的玩具但是我的女儿不能找到她的玩具",
+		"chinese": "我的女儿(现在)正在寻找她的玩具但是我的女儿找不到她的玩具",
 		"english": "my daughter is looking for her toy but my daughter can't find her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /maɪ/ /'dɔtɚ/ /kænt/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
@@ -385,12 +385,12 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "但是她不能找到它",
+		"chinese": "但是她找不到它",
 		"english": "but she can't find it",
 		"soundmark": "/bʌt/ /ʃi/ /kænt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "我的女儿(现在)正在寻找她的玩具但是她不能找到它",
+		"chinese": "我的女儿(现在)正在寻找她的玩具但是她找不到它",
 		"english": "my daughter is looking for her toy but she can't find it",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /ʃi/ /kænt/ /faɪnd/ /ɪt/"
 	},
@@ -400,12 +400,12 @@
 		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "但是她(过去)不能找到它",
+		"chinese": "但是她(过去)找不到它",
 		"english": "but she couldn't find it",
 		"soundmark": "/bʌt/ /ʃi/ /kʊdnt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "我的女儿(过去)正在寻找她的玩具但是她(过去)不能找到它",
+		"chinese": "我的女儿(过去)正在寻找她的玩具但是她(过去)找不到它",
 		"english": "my daughter was looking for her toy but she couldn't find it",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /ʃi/ /kʊdnt/ /faɪnd/ /ɪt/"
 	},
@@ -450,7 +450,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "是否你可以听见我",
+		"chinese": "你是否可以听见我",
 		"english": "if you can hear me",
 		"soundmark": "/ɪf/ /ju/ /kæn/ /hɪr/ /mi/"
 	},
@@ -470,7 +470,7 @@
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "我想要知道是否你可以听见我",
+		"chinese": "我想要知道你是否可以听见我",
 		"english": "I want to know if you can hear me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /hɪr/ /mi/"
 	},
@@ -660,7 +660,7 @@
 		"soundmark": "/ju/ /kæn/ /hɪr/"
 	},
 	{
-		"chinese": "你可以听见一把吉他",
+		"chinese": "你可以听见吉他声",
 		"english": "you can hear a guitar",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /ə/ /ɡɪ'tɑr/"
 	},
@@ -685,12 +685,12 @@
 		"soundmark": "/ɪn/ /ðə/ /'bækɡraʊnd/"
 	},
 	{
-		"chinese": "你可以听见一把吉他在背景里",
+		"chinese": "你可以听到背景中的吉他声",
 		"english": "you can hear a guitar in the background",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /ə/ /ɡɪ'tɑr/ /ɪn/ /ðə/ /background/ /'bækɡraʊnd/"
 	},
 	{
-		"chinese": "如果你认真地听这段音乐你可以听见一把吉他在背景里",
+		"chinese": "如果你仔细听音乐就能听到背景中的吉他声",
 		"english": "if you listen to the music carefully you can hear a guitar in the background",
 		"soundmark": "/ɪf/ /ju/ /'lɪsn/ /tə/ /ðə/ /'mjuzɪk/ /'kɛrfəli/ /ju/ /kæn/ /hɪr/ /ə/ /ɡɪ'tɑr/ /ɪn/ /ðə/ /'bækɡraʊnd/"
 	},
@@ -745,7 +745,7 @@
 		"soundmark": "/'nʌθɪŋ/"
 	},
 	{
-		"chinese": "你将会听见没有东西",
+		"chinese": "你将会什么也听不见",
 		"english": "you will hear nothing",
 		"soundmark": "/ju/ /wɪl/ /hɪr/ /'nʌθɪŋ/"
 	},
@@ -755,7 +755,7 @@
 		"soundmark": "/ɪf/ /ju/ /dont/ /'lɪsn/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "如果你不认真地听你将会什么都听不到",
+		"chinese": "如果你不认真听就什么也听不到",
 		"english": "if you don't listen carefully you will hear nothing",
 		"soundmark": "/ɪf/ /ju/ /dont/ /'lɪsn/ /'kɛrfəli/ /ju/ /wɪl/ /hɪr/ /'nʌθɪŋ/"
 	}

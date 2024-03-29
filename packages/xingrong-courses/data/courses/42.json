@@ -35,7 +35,7 @@
 		"soundmark": "/hi/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他(过去)完成阅读这本书",
+		"chinese": "他(过去)读完了这本书",
 		"english": "he finished reading the book",
 		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/"
 	},
@@ -55,7 +55,7 @@
 		"soundmark": "/ɪn/ /wʌn/ /de/"
 	},
 	{
-		"chinese": "他在一天内完成了阅读这本书",
+		"chinese": "他在一天内读完了这本书",
 		"english": "he finished reading the book in one day",
 		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/ /ɪn/ /wʌn/ /de/"
 	},
@@ -70,7 +70,7 @@
 		"soundmark": "/ɪn/ /wʌn/ /naɪt/"
 	},
 	{
-		"chinese": "他在一个晚上内完成了阅读这本书",
+		"chinese": "他在一个晚上内读完了这本书",
 		"english": "he finished reading the book in one night",
 		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/ /ɪn/ /wʌn/ /naɪt/"
 	},
@@ -125,7 +125,7 @@
 		"soundmark": "/hi/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他在晚饭之后完成了洗碗",
+		"chinese": "他在晚饭之后洗了那些碗碟",
 		"english": "he finished washing the dishes after dinner",
 		"soundmark": "/hi/ /'fɪnɪʃt/ /'wɑʃɪŋ/ /ðə/ /dɪʃɪz/ /'æftɚ/ /'dɪnɚ/"
 	},
@@ -165,7 +165,7 @@
 		"soundmark": "/ðe/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他们完成了刷墙",
+		"chinese": "他们刷完了墙",
 		"english": "they finished painting the wall",
 		"soundmark": "/ðe/ /'fɪnɪʃt/ /'pentɪŋ/ /ðə/ /wɔl/"
 	},
@@ -190,7 +190,7 @@
 		"soundmark": "/bɪ'fɔr/ /'sʌnsɛt/"
 	},
 	{
-		"chinese": "他们在落日之前完成了刷墙",
+		"chinese": "他们在落日之前刷完了墙",
 		"english": "they finished painting the wall before sunset",
 		"soundmark": "/ðe/ /'fɪnɪʃt/ /'pentɪŋ/ /ðə/ /wɔl/ /bɪ'fɔr/ /'sʌnsɛt/"
 	},
@@ -225,7 +225,7 @@
 		"soundmark": "/ju/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "你完成了清理这个房子",
+		"chinese": "你清理了这个房子",
 		"english": "you finished cleaning the house",
 		"soundmark": "/ju/ /'fɪnɪʃt/ /'klinɪŋ/ /ðə/ /haʊs/"
 	},
@@ -240,7 +240,7 @@
 		"soundmark": "/baɪ/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "你自己一个人完成了清理这个房子",
+		"chinese": "你自己一个人清理了这个房子",
 		"english": "you finished cleaning the house by yourself",
 		"soundmark": "/ju/ /'fɪnɪʃt/ /'klinɪŋ/ /ðə/ /haʊs/ /baɪ/ /jɔr'sɛlf/"
 	},
@@ -450,7 +450,7 @@
 		"soundmark": "/hi/ /dɪ'naɪd/"
 	},
 	{
-		"chinese": "他(过去)否认假装是有病的",
+		"chinese": "他(过去)否认装病",
 		"english": "he denied pretending to be sick",
 		"soundmark": "/hi/ /dɪ'naɪd/ /prɪ'tɛndɪŋ/ /tə/ /bi/ /sɪk/"
 	},

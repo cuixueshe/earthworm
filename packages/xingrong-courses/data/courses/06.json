@@ -35,7 +35,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -45,7 +45,7 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"chinese": "这是非常重要的",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -55,12 +55,12 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为它是非常重要的",
+		"chinese": "因为这是非常重要的",
 		"english": "because it is very important",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我需要现在做这件事因为它是非常重要的",
+		"chinese": "我需要现在就做，因为这非常重要",
 		"english": "I need to do it now because it is very important",
 		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -75,7 +75,7 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"chinese": "这对我来说非常重要",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -105,7 +105,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说所以我必须每天做这件事",
+		"chinese": "这对我来说非常重要，所以我必须每天做",
 		"english": "It is very important for me so I have to do it every day",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
 	},
@@ -115,7 +115,7 @@
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"chinese": "这并不重要",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
@@ -125,7 +125,7 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是不重要的对我来说",
+		"chinese": "这对我来说并不重要",
 		"english": "it is not important for me",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -160,7 +160,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不重要的对我来说所以我不必现在做这件事",
+		"chinese": "这对我来说并不重要，所以我现在不必做了",
 		"english": "It is not important for me so I don't have to do it now",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
@@ -185,7 +185,7 @@
 		"soundmark": "/'pɑsəbl/"
 	},
 	{
-		"chinese": "它是可能的",
+		"chinese": "这是有可能的",
 		"english": "it is possible",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/"
 	},
@@ -195,7 +195,7 @@
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "做这件事（它）是可能的",
+		"chinese": "做这件事是有可能的",
 		"english": "it is possible to do it",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /du/ /ɪt/"
 	},
@@ -205,7 +205,7 @@
 		"soundmark": "/tə'de/"
 	},
 	{
-		"chinese": "今天做这件事（它）是可能的",
+		"chinese": "今天做这件事是有可能的",
 		"english": "it is possible to do it today",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /du/ /ɪt/ /tə'de/"
 	},
@@ -260,7 +260,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否你可以和我说话",
+		"chinese": "我想要知道你是否可以和我说话",
 		"english": "I want to know if you can talk with me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɔk/ /wɪð/ /mi/"
 	},
@@ -270,12 +270,12 @@
 		"soundmark": "/tə'naɪt/"
 	},
 	{
-		"chinese": "我想要知道是否你今晚可以和我说话",
+		"chinese": "我想要知道你今晚是否可以和我说话",
 		"english": "I want to know if you can talk with me tonight",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -290,7 +290,7 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"chinese": "这对我来说非常重要",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -300,7 +300,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "我想要知道是否你今晚可以和我说话因为它是非常重要的对我来说",
+		"chinese": "我想知道你今晚能否和我谈谈，因为这对我非常重要",
 		"english": "I want to know if you can talk with me tonight because it is very important for me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -330,12 +330,12 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某件事情",
+		"chinese": "一些重要的事情",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我必须告诉你重要的某件事情",
+		"chinese": "我必须告诉你一些重要的事情",
 		"english": "I have to tell you something important",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -345,7 +345,7 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我必须现在告诉你重要的某件事情",
+		"chinese": "我现在必须告诉你一些重要的事情",
 		"english": "I have to tell you something important now",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /naʊ/"
 	},
@@ -355,12 +355,12 @@
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是紧急的",
+		"chinese": "这是紧急的",
 		"english": "it is urgent",
 		"soundmark": "/ɪt/ /ɪz/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是非常紧急的",
+		"chinese": "这是非常紧急的",
 		"english": "it is very urgent",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'ɝdʒənt/"
 	},
@@ -370,7 +370,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "我必须现在告诉你重要的某件事情因为它是非常紧急的",
+		"chinese": "我现在必须告诉你一些重要的事情，因为这非常紧急",
 		"english": "I have to tell you something important now because it is very urgent",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'ɝdʒənt/"
 	},
@@ -455,7 +455,7 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "你必须现在帮助我",
+		"chinese": "你现在必须帮助我",
 		"english": "you have to help me now",
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
@@ -465,7 +465,7 @@
 		"soundmark": "/ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"chinese": "这是非常重要的",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -475,7 +475,7 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"chinese": "这对我来说非常重要",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -485,7 +485,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说所以你必须现在帮助我",
+		"chinese": "这对我来说非常重要，所以你现在必须帮助我",
 		"english": "It is very important for me so you have to help me now",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /ju/ /hæv/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
@@ -515,7 +515,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说所以我必须现在做这件事",
+		"chinese": "这对我来说非常重要，所以我必须现在就去做",
 		"english": "It is very important for me so I have to do it now",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
@@ -545,7 +545,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "你需要告诉我事实因为它是非常重要的对我来说",
+		"chinese": "你需要告诉我事实，因为这对我来说非常重要",
 		"english": "You need to tell me the truth because it is very important for me",
 		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -595,7 +595,7 @@
 		"soundmark": "/ʃi/ /nidz/"
 	},
 	{
-		"chinese": "她需要现在吃这个食物",
+		"chinese": "她现在需要吃这个食物",
 		"english": "she needs to eat the food now",
 		"soundmark": "/ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -605,7 +605,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她想要解释原因为什么她需要现在吃这个食物",
+		"chinese": "她想要解释为什么她现在需要吃这个食物的原因",
 		"english": "She wants to explain the reason why she needs to eat the food now",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -665,12 +665,12 @@
 		"soundmark": "/ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "它是不可能的",
+		"chinese": "这是不可能的",
 		"english": "it is impossible",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "星荣想要在天空中飞翔但是这件事是不可能的",
+		"chinese": "星荣想要在天空中飞翔，但这是不可能的",
 		"english": "Xingrong wants to fly in the sky but it is impossible",
 		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/ /bət/ /ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
@@ -695,7 +695,7 @@
 		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"chinese": "这对我来说非常重要",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -705,7 +705,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "他必须告诉我事实因为它是非常重要的对我来说",
+		"chinese": "他必须告诉我事实，因为这对我来说非常重要",
 		"english": "he has to tell me the truth because it is very important for me",
 		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -730,7 +730,7 @@
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "他必须告诉我事实因为它是非常重要的对我来说而且我需要知道这件事",
+		"chinese": "他必须告诉我事实，因为这对我来说非常重要，而且我需要知道事实",
 		"english": "He has to tell me the truth because it is very important for me and I need to know it",
 		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /ənd/ /aɪ/ /nid/ /tə/ /no/ /ɪt/"
 	},
@@ -815,7 +815,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读",
+		"chinese": "她必须解释为什么她喜欢在家里阅读的原因",
 		"english": "she has to explain the reason why she likes to read at home",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
 	},
@@ -830,7 +830,7 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"chinese": "这是非常重要的",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -840,7 +840,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读因为这件事是非常重要的",
+		"chinese": "她必须解释为什么她喜欢在家阅读，因为这非常重要",
 		"english": "She has to explain the reason why she likes to read at home because it is very important",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -865,12 +865,12 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "他想要现在做这件事",
+		"chinese": "他现在想要做这件事",
 		"english": "he wants to do it now",
 		"soundmark": "/hi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "他不想现在做这件事",
+		"chinese": "他现在不想做这件事",
 		"english": "he doesn't want to do it now",
 		"soundmark": "/ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
@@ -880,12 +880,12 @@
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是紧急的",
+		"chinese": "这是紧急的",
 		"english": "it is urgent",
 		"soundmark": "/ɪt/ /ɪz/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是不紧急的",
+		"chinese": "这不是紧急的",
 		"english": "it is not urgent",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/"
 	},
@@ -895,7 +895,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "他不想现在做这件事因为它是不紧急的",
+		"chinese": "他现在不想做这件事，因为这并不紧急",
 		"english": "He doesn't want to do it now because it is not urgent",
 		"soundmark": "/ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/"
 	},
@@ -985,12 +985,12 @@
 		"soundmark": "/ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将会在未来告诉你事实",
+		"chinese": "我会在将来告诉你事实",
 		"english": "I will tell you the truth in the future",
 		"soundmark": "/aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将不会在未来告诉你事实",
+		"chinese": "将来我不会告诉你事实",
 		"english": "I will not tell you the truth in the future",
 		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
@@ -1000,7 +1000,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"chinese": "这并不重要",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
@@ -1010,7 +1010,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不重要的所以我将会在未来告诉你事实",
+		"chinese": "这不重要，所以我会在将来告诉你事实",
 		"english": "it is not important so I will tell you the truth in the future",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /so/ /aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
@@ -1055,7 +1055,7 @@
 		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
 	{
-		"chinese": "她可以解释原因为什么他今晚不可以和我说话",
+		"chinese": "她可以解释为什么他今晚不可以和我说话的原因",
 		"english": "She can explain the reason why he can not talk with me tonight",
 		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	}

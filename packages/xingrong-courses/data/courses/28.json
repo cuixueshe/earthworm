@@ -110,7 +110,7 @@
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把刀",
+		"chinese": "我（现在）正握着一把刀",
 		"english": "I am holding a knife",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/"
 	},
@@ -130,7 +130,7 @@
 		"soundmark": "/ɪn/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在在我的手里握着一把刀",
+		"chinese": "我（现在）手中正握着一把刀",
 		"english": "I am holding a knife in my hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/ /ɪn/ /maɪ/ /hænd/"
 	},
@@ -150,12 +150,12 @@
 		"soundmark": "/ɪn/ /maɪ/ /raɪt/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把刀",
+		"chinese": "我（现在）正握着一把刀",
 		"english": "I am holding a knife",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/"
 	},
 	{
-		"chinese": "我（现在）正在在我的右手里握着一把刀",
+		"chinese": "我（现在）的右手正握着一把刀",
 		"english": "I am holding a knife in my right hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/ /ɪn/ /maɪ/ /raɪt/ /hænd/"
 	},
@@ -170,7 +170,7 @@
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把叉子",
+		"chinese": "我（现在）正握着一把叉子",
 		"english": "I am holding a fork",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /fɔrk/"
 	},
@@ -190,12 +190,12 @@
 		"soundmark": "/ɪn/ /maɪ/ /lɛft/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把叉子",
+		"chinese": "我（现在）正握着一把叉子",
 		"english": "I am holding a fork",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /fɔrk/"
 	},
 	{
-		"chinese": "我（现在）正在在我的左手里握着一把叉子",
+		"chinese": "我（现在）的左手里正握着一把叉子",
 		"english": "I am holding a fork in my left hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /fɔrk/ /ɪn/ /maɪ/ /lɛft/ /hænd/"
 	},
@@ -250,7 +250,7 @@
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "这辆汽车不可以容纳四个人",
+		"chinese": "这辆汽车容纳不下四个人",
 		"english": "this car can't hold four people",
 		"soundmark": "/ðɪs/ /kɑr/ /kænt/ /hold/ /fɔr/ /'pipl/"
 	},
@@ -305,7 +305,7 @@
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "这个房间不可以容纳十个人",
+		"chinese": "这个房间容纳不下十个人",
 		"english": "this room can't hold ten people",
 		"soundmark": "/ðɪs/ /rum/ /kænt/ /hold/ /tɛn/ /'pipl/"
 	},
@@ -375,7 +375,7 @@
 		"soundmark": "/fɝ/ /ʌs/"
 	},
 	{
-		"chinese": "这个房间是足够大的对我们来说",
+		"chinese": "这个房间对我们来说足够大了",
 		"english": "this room is big enough for us",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/ /ɪ'nʌf/ /fɝ/ /ʌs/"
 	},
@@ -595,7 +595,7 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "它是不可能的",
+		"chinese": "这是不可能的",
 		"english": "it is impossible",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},

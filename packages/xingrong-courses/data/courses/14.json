@@ -20,7 +20,7 @@
 		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
 	},
 	{
-		"chinese": "我是不年轻的",
+		"chinese": "我不年轻了",
 		"english": "I am not young",
 		"soundmark": "/aɪ/ /æm/ /nɑt/ /jʌŋ/"
 	},
@@ -30,7 +30,7 @@
 		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "我（过去）是不年轻的",
+		"chinese": "我（过去）不年轻了",
 		"english": "I was not young",
 		"soundmark": "/aɪ/ /wəz/ /nɑt/ /jʌŋ/"
 	},
@@ -45,7 +45,7 @@
 		"soundmark": "/hi/ /ɪz/ /jʌŋ/"
 	},
 	{
-		"chinese": "他是不年轻的",
+		"chinese": "他不年轻了",
 		"english": "he is not young",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /jʌŋ/"
 	},
@@ -55,7 +55,7 @@
 		"soundmark": "/hi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "他（过去）是不年轻的",
+		"chinese": "他（过去）不年轻了",
 		"english": "he was not young",
 		"soundmark": "/hi/ /wəz/ /nɑt/ /jʌŋ/"
 	},
@@ -70,7 +70,7 @@
 		"soundmark": "/wi/ /ɚ/ /jʌŋ/"
 	},
 	{
-		"chinese": "我们是不年轻的",
+		"chinese": "我们不年轻了",
 		"english": "we are not young",
 		"soundmark": "/wi/ /ɚ/ /nɑt/ /jʌŋ/"
 	},
@@ -80,7 +80,7 @@
 		"soundmark": "/wi/ /wɚ/ /jʌŋ/"
 	},
 	{
-		"chinese": "我们（过去）是不年轻的",
+		"chinese": "我们（过去）不年轻了",
 		"english": "we were not young",
 		"soundmark": "/wi/ /wɚ/ /nɑt/ /jʌŋ/"
 	},
@@ -95,7 +95,7 @@
 		"soundmark": "/ju/ /ɚ/ /jʌŋ/"
 	},
 	{
-		"chinese": "你是不年轻的",
+		"chinese": "你不年轻了",
 		"english": "you are not young",
 		"soundmark": "/ju/ /ɚ/ /nɑt/ /jʌŋ/"
 	},
@@ -105,7 +105,7 @@
 		"soundmark": "/ju/ /wɚ/ /jʌŋ/"
 	},
 	{
-		"chinese": "你（过去）是不年轻的",
+		"chinese": "你（过去）不年轻了",
 		"english": "you were not young",
 		"soundmark": "/ju/ /wɚ/ /nɑt/ /jʌŋ/"
 	},
@@ -230,7 +230,7 @@
 		"soundmark": "/ʃi/ /et/ /ən/ /'æpl/ /ən/ /'aʊɚ/ /ə'ɡo/"
 	},
 	{
-		"chinese": "她在一小时之前没吃一个苹果",
+		"chinese": "她一个小时前还没吃苹果呢",
 		"english": "she didn't eat an apple an hour ago",
 		"soundmark": "/ʃi/ /dɪdnt/ /it/ /ən/ /'æpl/ /ən/ /'aʊɚ/ /ə'ɡo/"
 	},
@@ -420,7 +420,7 @@
 		"soundmark": "/aɪ/ /lɔst/ /maɪ/ /dʒɑb/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "我在两年前没有失去我的工作",
+		"chinese": "两年前我还没有失去我的工作",
 		"english": "I didn't lose my job two years ago",
 		"soundmark": "/aɪ/ /dɪdnt/ /luz/ /maɪ/ /dʒɑb/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
@@ -475,7 +475,7 @@
 		"soundmark": "/aɪ/ /lɛft/ /hɚ/ /'ɑfɪs/ /ən/ /'aʊɚ/ /ə'ɡo/"
 	},
 	{
-		"chinese": "我在一小时之前没有离开她的办公室",
+		"chinese": "一小时前我还没离开她的办公室",
 		"english": "I didn't leave her office an hour ago",
 		"soundmark": "/aɪ/ /dɪdnt/ /liv/ /hɚ/ /'ɑfɪs/ /ən/ /'aʊɚ/ /ə'ɡo/"
 	},
@@ -605,17 +605,17 @@
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "一个房子",
+		"chinese": "一栋房子",
 		"english": "a house",
 		"soundmark": "/ə/ /haʊs/"
 	},
 	{
-		"chinese": "买一个房子",
+		"chinese": "买一栋房子",
 		"english": "to buy a house",
 		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "我想要买一个房子",
+		"chinese": "我想要买一栋房子",
 		"english": "I want to buy a house",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
@@ -625,7 +625,7 @@
 		"soundmark": "/bɔt/"
 	},
 	{
-		"chinese": "我买了一个房子",
+		"chinese": "我买了一栋房子",
 		"english": "I bought a house",
 		"soundmark": "/aɪ/ /bɔt/ /ə/ /haʊs/"
 	},
@@ -645,22 +645,22 @@
 		"soundmark": "/tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "我在两年之前买了一个房子",
+		"chinese": "我在两年前买了一栋房子",
 		"english": "I bought a house two years ago",
 		"soundmark": "/aɪ/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "我在两年之前没有买一个房子",
+		"chinese": "两年前我还没有买房子",
 		"english": "I didn't buy a house two years ago",
 		"soundmark": "/aɪ/ /dɪdnt/ /baɪ/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "他在两年之前买了一个房子",
+		"chinese": "他两年前买了一栋房子",
 		"english": "he bought a house two years ago",
 		"soundmark": "/hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "他在两年之前没有买一个房子",
+		"chinese": "两年前他还没有买房子",
 		"english": "he didn't buy a house two years ago",
 		"soundmark": "/hi/ /dɪdnt/ /baɪ/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
@@ -675,7 +675,7 @@
 		"soundmark": "/ju/ /hæv/ /tə/ /ʌndɚ'stænd/"
 	},
 	{
-		"chinese": "你必须明白我在两年之前买了一个房子",
+		"chinese": "你必须明白我在两年前买了一栋房子",
 		"english": "you have to understand I bought a house two years ago",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʌndɚ'stænd/ /aɪ/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
@@ -800,17 +800,17 @@
 		"soundmark": "/hi/ /told/ /mi/"
 	},
 	{
-		"chinese": "他两年前买了一个房子",
+		"chinese": "他两年前买了一栋房子",
 		"english": "he bought a house two years ago",
 		"soundmark": "/hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "他告诉我他两年前买了一个房子",
+		"chinese": "他告诉我他两年前买了一栋房子",
 		"english": "he told me he bought a house two years ago",
 		"soundmark": "/hi/ /told/ /mi/ /hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	},
 	{
-		"chinese": "我昨晚打了电话给他而且他告诉我他在两年之前买了一个房子",
+		"chinese": "我昨晚打了电话给他而且他告诉我他两年前买了一栋房子",
 		"english": "I called him last night and he told me he bought a house two years ago",
 		"soundmark": "/aɪ/ /kɔld/ /hɪm/ /læst/ /naɪt/ /ənd/ /hi/ /told/ /mi/ /hi/ /bɔt/ /ə/ /haʊs/ /tu/ /jɪrz/ /ə'ɡo/"
 	}

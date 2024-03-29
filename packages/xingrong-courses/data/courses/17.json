@@ -240,7 +240,7 @@
 		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'fɪnɪʃ/ /jʊr/ /'hom'wɝk/"
 	},
 	{
-		"chinese": "我想要你完成你的家庭作业在你看电视之前",
+		"chinese": "我想要你在看电视之前先完成你的家庭作业",
 		"english": "I want you to finish your homework before you watch TV",
 		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'fɪnɪʃ/ /jʊr/ /'hom'wɝk/ /bɪ'fɔr/ /ju/ /wɔtʃ/ /ˈtiˈvi/"
 	},
@@ -290,7 +290,7 @@
 		"soundmark": "/ju/ /kæn/ /wɔtʃ/ /ˈtiˈvi/"
 	},
 	{
-		"chinese": "你可以看电视如果你想的话",
+		"chinese": "如果你想的话可以看电视",
 		"english": "you can watch TV if you want",
 		"soundmark": "/ju/ /kæn/ /wɔtʃ/ /ˈtiˈvi/ /ɪf/ /ju/ /wɑnt/"
 	},
@@ -370,7 +370,7 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "这个问题（过去）是非常困难的对我来说",
+		"chinese": "这个问题对我来说（过去）是非常困难的",
 		"english": "the question was very difficult for me",
 		"soundmark": "/ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
 	},
@@ -380,7 +380,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为这个问题（过去）是非常困难的对我来说",
+		"chinese": "因为这个问题对我来说（过去）是非常困难的",
 		"english": "because the question was very difficult for me",
 		"soundmark": "/bɪ'kɔz/ /ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
 	},
@@ -390,12 +390,12 @@
 		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "我（过去）拒绝回答这个问题因为这个问题（过去）是非常困难的对我来说",
+		"chinese": "我（过去）拒绝回答这个问题因为这个问题（过去）对我来说是非常困难的",
 		"english": "I refused to answer the question because the question was very difficult for me",
 		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/ /bɪ'kɔz/ /ðə/ /'kwɛstʃən/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我（过去）拒绝回答这个问题因为它（过去）是非常困难的对我来说",
+		"chinese": "我（过去）拒绝回答这个问题因为它对我来说（过去）是非常困难的",
 		"english": "I refused to answer the question because it was very difficult for me",
 		"soundmark": "/aɪ/ /ri'fjuzd/ /tə/ /'ænsɚ/ /ðə/ /'kwɛstʃən/ /bɪ'kɔz/ /ɪt/ /wəz/ /ˈvɛri/ /'dɪfɪkəlt/ /fɝ/ /mi/"
 	},
@@ -405,7 +405,7 @@
 		"soundmark": "/'dɪfɪkəlt/"
 	},
 	{
-		"chinese": "它是困难的",
+		"chinese": "这是困难的",
 		"english": "it is difficult",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/"
 	},
@@ -425,7 +425,7 @@
 		"soundmark": "/tə/ /'fɪnɪʃ/ /ðə/ /wɝk/"
 	},
 	{
-		"chinese": "完成这个工作（它）是困难的",
+		"chinese": "完成这个工作是困难的",
 		"english": "it is difficult to finish the work",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /'fɪnɪʃ/ /ðə/ /wɝk/"
 	},
@@ -440,7 +440,7 @@
 		"soundmark": "/ɪn/ /ə/ /de/"
 	},
 	{
-		"chinese": "在一天内完成这个工作（它）是困难的",
+		"chinese": "在一天内完成这个工作是困难的",
 		"english": "it is difficult to finish the work in a day",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /'fɪnɪʃ/ /ðə/ /wɝk/ /ɪn/ /ə/ /de/"
 	},
@@ -450,7 +450,7 @@
 		"soundmark": "/'dendʒərəs/"
 	},
 	{
-		"chinese": "它是危险的",
+		"chinese": "这是危险的",
 		"english": "it is dangerous",
 		"soundmark": "/ɪt/ /ɪz/ /'dendʒərəs/"
 	},
@@ -475,7 +475,7 @@
 		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/"
 	},
 	{
-		"chinese": "在大海里游泳（它）是危险的",
+		"chinese": "在大海里游泳是危险的",
 		"english": "it is dangerous to swim in the sea",
 		"soundmark": "/ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
 	},
@@ -490,12 +490,12 @@
 		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "我认为在大海里游泳（它）是危险的",
+		"chinese": "我认为在大海里游泳是危险的",
 		"english": "I think it is dangerous to swim in the sea",
 		"soundmark": "/aɪ/ /θɪŋk/ /ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
 	},
 	{
-		"chinese": "我不认为在大海里游泳（它）是危险的",
+		"chinese": "我不认为在大海里游泳是危险的",
 		"english": "I don't think it is dangerous to swim in the sea",
 		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /ɪt/ /ɪz/ /'dendʒərəs/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/"
 	},
@@ -515,12 +515,12 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为它是危险的",
+		"chinese": "因为这是危险的",
 		"english": "because it is dangerous",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /'dendʒərəs/"
 	},
 	{
-		"chinese": "我拒绝在大海里游泳因为它是危险的",
+		"chinese": "我拒绝在大海里游泳因为这是危险的",
 		"english": "I refuse to swim in the sea because it is dangerous",
 		"soundmark": "/aɪ/ /ri'fjuz/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'kɔz/ /ɪt/ /ɪz/ /'dendʒərəs/"
 	},
@@ -600,12 +600,12 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "英语是一个大的挑战对我来说",
+		"chinese": "英语对我来说是一个大的挑战",
 		"english": "English is a big challenge for me",
 		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "英语不是一个大的挑战对我来说",
+		"chinese": "英语对我来说不是一个大的挑战",
 		"english": "English is not a big challenge for me",
 		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /nɑt/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/"
 	},
@@ -650,12 +650,12 @@
 		"soundmark": "/nɪr/"
 	},
 	{
-		"chinese": "在不远的将来",
+		"chinese": "在不久的将来",
 		"english": "in the near future",
 		"soundmark": "/ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将会在不远的将来掌握英语",
+		"chinese": "我将在不久的将来掌握英语",
 		"english": "I will master English in the near future",
 		"soundmark": "/aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
 	},
@@ -665,7 +665,7 @@
 		"soundmark": "/aɪ/ /no/"
 	},
 	{
-		"chinese": "我知道我将会在不远的将来掌握英语",
+		"chinese": "我知道我将会在不久的将来掌握英语",
 		"english": "I know I will master English in the near future",
 		"soundmark": "/aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
 	},
@@ -675,17 +675,17 @@
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "而且我知道我将会在不远的将来掌握英语",
+		"chinese": "而且我知道我将会在不久的将来掌握英语",
 		"english": "and I know I will master english in the near future",
 		"soundmark": "/ənd/ /aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "英语不是一个大的挑战对我来说",
+		"chinese": "英语对我来说不是一个大的挑战",
 		"english": "English is not a big challenge for me",
 		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /nɑt/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "英语不是一个大的挑战对我来说而且我知道我将会在不远的将来掌握英语",
+		"chinese": "英语对我来说不是一个大的挑战而且我知道在不久的将来我会掌握英语",
 		"english": "English is not a big challenge for me and I know I will master english in the near future",
 		"soundmark": "/ˈɪŋɡlɪʃ/ /ɪz/ /nɑt/ /ə/ /bɪɡ/ /'tʃælɪndʒ/ /fɝ/ /mi/ /ənd/ /aɪ/ /no/ /aɪ/ /wɪl/ /'mæstɚ/ /ˈɪŋɡlɪʃ/ /ɪn/ /ðə/ /nɪr/ /'fjʊtʃɚ/"
 	}

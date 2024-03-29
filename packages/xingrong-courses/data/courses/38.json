@@ -110,7 +110,7 @@
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
 	},
 	{
-		"chinese": "我过去常常打篮球当我在高中的时候",
+		"chinese": "当我在高中的时候我常常打篮球",
 		"english": "I used to play basketball when I was in high school",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/ /ɪn/ /haɪ/ /skul/ /wɛn/ /aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
 	},
@@ -160,12 +160,12 @@
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我(过去)是年轻的时候",
+		"chinese": "当我(过去)年轻的时候",
 		"english": "when I was young",
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "我过去常常下象棋当我(过去)是年轻的时候",
+		"chinese": "当我(过去)年轻的时候我常常下象棋",
 		"english": "I used to play chess when I was young",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /tʃɛs/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
@@ -210,7 +210,7 @@
 		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我过去每天早上都会看卡通片",
+		"chinese": "我过去常常每天早上都会看卡通片",
 		"english": "I used to watch cartoons every morning",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
@@ -235,7 +235,7 @@
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ə/ /kɪd/"
 	},
 	{
-		"chinese": "我过去每天早上都会看卡通片当我(过去)是一个孩子的时候",
+		"chinese": "当我(过去)是一个孩子的时候我常常每天早上都会看卡通片",
 		"english": "I used to watch cartoons every morning when I was a kid",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/ /'ɛvri/ /'mɔrnɪŋ/ /wɛn/ /aɪ/ /wəz/ /ə/ /kɪd/"
 	},
@@ -280,7 +280,7 @@
 		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我过去每天早上喝咖啡",
+		"chinese": "我过去常常每天早上喝咖啡",
 		"english": "I used to drink coffee every morning",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
@@ -330,12 +330,12 @@
 		"soundmark": "/bʌt/ /naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
 	},
 	{
-		"chinese": "我过去每天早上喝咖啡",
+		"chinese": "我过去常常每天早上喝咖啡",
 		"english": "I used to drink coffee every morning",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我过去每天早上喝咖啡但是现在我更喜欢茶",
+		"chinese": "我过去常常每天早上喝咖啡但是现在我更喜欢茶",
 		"english": "I used to drink coffee every morning but now I prefer tea",
 		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/ /bʌt/ /naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
 	},
@@ -635,7 +635,7 @@
 		"soundmark": "/nɑt/ /ɛniˈmɔr/"
 	},
 	{
-		"chinese": "她过去爱他但是再也不会了",
+		"chinese": "她曾经爱过他但是再也不会了",
 		"english": "she used to love him but not anymore",
 		"soundmark": "/ʃi/ /juzd/ /tə/ /lʌv/ /hɪm/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
 	},
@@ -890,12 +890,12 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它不是重要的",
+		"chinese": "这并不重要",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
@@ -905,7 +905,7 @@
 		"soundmark": "/nɑt/ /ɛniˈmɔr/"
 	},
 	{
-		"chinese": "它再也不是重要的",
+		"chinese": "这已经不重要了",
 		"english": "it is not important anymore",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /ɛniˈmɔr/"
 	},

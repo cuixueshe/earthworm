@@ -55,22 +55,22 @@
 		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "我在厨房里（现在）正在吃鸡蛋",
+		"chinese": "我（现在）正在厨房里吃鸡蛋",
 		"english": "I am eating eggs in the kitchen",
 		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"chinese": "我（过去）正在厨房里吃鸡蛋",
 		"english": "I was eating eggs in the kitchen",
 		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你在厨房里（现在）正在吃鸡蛋",
+		"chinese": "你（现在）正在厨房里吃鸡蛋",
 		"english": "you are eating eggs in the kitchen",
 		"soundmark": "/ju/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你在厨房里（过去）正在吃鸡蛋",
+		"chinese": "你（过去）正在厨房里吃鸡蛋",
 		"english": "you were eating eggs in the kitchen",
 		"soundmark": "/ju/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
@@ -80,12 +80,12 @@
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们在厨房里（现在）正在吃鸡蛋",
+		"chinese": "他们（现在）正在厨房里吃鸡蛋",
 		"english": "they are eating eggs in the kitchen",
 		"soundmark": "/ðe/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "他们在厨房里（过去）正在吃鸡蛋",
+		"chinese": "他们（过去）正在厨房里吃鸡蛋",
 		"english": "they were eating eggs in the kitchen",
 		"soundmark": "/ðe/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
@@ -135,7 +135,7 @@
 		"soundmark": "/ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "他们在花园里（现在）正在喝茶",
+		"chinese": "他们（现在）正在花园里喝茶",
 		"english": "they are drinking tea in the garden",
 		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
@@ -145,12 +145,12 @@
 		"soundmark": "/tiː/"
 	},
 	{
-		"chinese": "他们在花园里（过去）正在喝茶",
+		"chinese": "他们（过去）正在花园里喝茶",
 		"english": "they were drinking tea in the garden",
 		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"chinese": "我（过去）正在厨房里吃鸡蛋",
 		"english": "I was eating eggs in the kitchen",
 		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
@@ -160,7 +160,7 @@
 		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "他们在花园里（过去）正在喝茶与此同时我在厨房里（过去）正在吃鸡蛋",
+		"chinese": "他们（过去）正在花园里喝茶与此同时我（过去）正在厨房里吃鸡蛋",
 		"english": "they were drinking tea in the garden while I was eating eggs in the kitchen",
 		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/ /waɪl/ /aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
@@ -460,17 +460,17 @@
 		"soundmark": "/ˈslipɪŋ/"
 	},
 	{
-		"chinese": "正在在卧室里睡觉",
+		"chinese": "正在卧室里睡觉",
 		"english": "sleeping in the bedroom",
 		"soundmark": "/ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "我正在在卧室里睡觉",
+		"chinese": "我正在卧室里睡觉",
 		"english": "I am sleeping in the bedroom",
 		"soundmark": "/aɪ/ /æm/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "我（过去）正在在卧室里睡觉",
+		"chinese": "我（过去）正在卧室里睡觉",
 		"english": "I was sleeping in the bedroom",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
@@ -505,12 +505,12 @@
 		"soundmark": "/wɛn/ /ʃi/ /kɔld/ /mi/"
 	},
 	{
-		"chinese": "我（过去）正在在卧室里睡觉",
+		"chinese": "我（过去）正在卧室里睡觉",
 		"english": "I was sleeping in the bedroom",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "当她打电话给我的时候我（过去）正在在卧室里睡觉",
+		"chinese": "当她打电话给我的时候我（过去）正在卧室里睡觉",
 		"english": "I was sleeping in the bedroom when she called me",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/ /wɛn/ /ʃi/ /kɔld/ /mi/"
 	},
@@ -560,7 +560,7 @@
 		"soundmark": "/ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
 	},
 	{
-		"chinese": "她（过去）正在在客厅弹钢琴",
+		"chinese": "她（过去）正在客厅弹钢琴",
 		"english": "she was playing the piano in the living room",
 		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
 	},
@@ -570,12 +570,12 @@
 		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "我（过去）正在在卧室里睡觉",
+		"chinese": "我（过去）正在卧室里睡觉",
 		"english": "I was sleeping in the bedroom",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "她（过去）正在在客厅弹钢琴与此同时我（过去）正在在卧室里睡觉",
+		"chinese": "她（过去）正在客厅弹钢琴与此同时我（过去）正在卧室里睡觉",
 		"english": "she was playing the piano in the living room while I was sleeping in the bedroom",
 		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/ /waɪl/ /aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	}

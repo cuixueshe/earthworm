@@ -85,7 +85,7 @@
 		"soundmark": "/tə/ /wɝk/"
 	},
 	{
-		"chinese": "从家里工作",
+		"chinese": "在家里工作",
 		"english": "to work from home",
 		"soundmark": "/tə/ /wɝk/ /frʌm/ /hom/"
 	},
@@ -100,12 +100,12 @@
 		"soundmark": "/ɑn/ /ˈfraɪde/"
 	},
 	{
-		"chinese": "在周五居家办公",
+		"chinese": "周五居家办公",
 		"english": "to work from home on Fridays",
 		"soundmark": "/tə/ /wɝk/ /frʌm/ /hom/ /ɑn/ /ˈfraɪdez/"
 	},
 	{
-		"chinese": "在周五居家办公(ing形式)",
+		"chinese": "周五居家办公(ing形式)",
 		"english": "working from home on Fridays",
 		"soundmark": "/ˈwɝkɪŋ/ /frʌm/ /hom/ /ɑn/ /ˈfraɪdez/"
 	},
@@ -125,7 +125,7 @@
 		"soundmark": "/ðə/ /ˈkʌmpəni/ /pɚˈmɪts/"
 	},
 	{
-		"chinese": "公司允许在周五居家办公",
+		"chinese": "公司允许周五居家办公",
 		"english": "the company permits working from home on Fridays",
 		"soundmark": "/ðə/ /ˈkʌmpəni/ /pɚˈmɪts/ /ˈwɝkɪŋ/ /frʌm/ /hom/ /ɑn/ /ˈfraɪdez/"
 	},
@@ -445,7 +445,7 @@
 		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/ /'draɪvɪŋ/"
 	},
 	{
-		"chinese": "政策允许开车如果你拥有一个有效的执照",
+		"chinese": "如果你拥有一个有效的执照政策允许开车",
 		"english": "the policy permits driving if you have a valid license",
 		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/ /'draɪvɪŋ/ /ɪf/ /ju/ /hæv/ /ə/ /ˈvælɪd/ /ˈlaɪsns/"
 	},
@@ -525,7 +525,7 @@
 		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/ /'trævlɪŋ/ /ə'brɔd/"
 	},
 	{
-		"chinese": "政策允许出国旅行如果你拥有一个有效的护照",
+		"chinese": "如果你拥有一个有效的护照政策允许出国旅行",
 		"english": "the policy permits traveling abroad if you have a valid passport",
 		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/ /'trævlɪŋ/ /ə'brɔd/ /ɪf/ /ju/ /hæv/ /ə/ /ˈvælɪd/ /'pæspɔrt/"
 	},
@@ -650,7 +650,7 @@
 		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "和一个有效的执照一起驾驶",
+		"chinese": "持有效驾照驾车",
 		"english": "to drive with a valid license",
 		"soundmark": "/tə/ /draɪv/ /wɪð/ /ə/ /ˈvælɪd/ /ˈlaɪsns/"
 	},

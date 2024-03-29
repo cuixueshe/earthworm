@@ -25,7 +25,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "It is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -65,7 +65,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否我是重要的",
+		"chinese": "我想要知道我是否重要",
 		"english": "I want to know if I am important",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /ɪm'pɔrtnt/"
 	},
@@ -75,7 +75,7 @@
 		"soundmark": "/nid/ /tə/ /no/"
 	},
 	{
-		"chinese": "我需要知道是否我是重要的",
+		"chinese": "我需要知道我是否重要",
 		"english": "I need to know if I am important",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /ɪm'pɔrtnt/"
 	},
@@ -90,7 +90,7 @@
 		"soundmark": "/aɪ/ /æm/ /'pɝfɪkt/"
 	},
 	{
-		"chinese": "我需要知道是否我是完美的",
+		"chinese": "我需要知道我是否完美",
 		"english": "I need to know if I am perfect",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /'pɝfɪkt/"
 	},
@@ -100,7 +100,7 @@
 		"soundmark": "/hæv/ /tə/ /no/"
 	},
 	{
-		"chinese": "我必须知道是否我是完美的",
+		"chinese": "我必须知道我是否完美",
 		"english": "I have to know if I am perfect",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /'pɝfɪkt/"
 	},
@@ -115,7 +115,7 @@
 		"soundmark": "/aɪ/ /æm/ /'hɛlθi/"
 	},
 	{
-		"chinese": "我必须知道是否我是健康的",
+		"chinese": "我必须知道我是否健康",
 		"english": "I have to know if I am healthy",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /'hɛlθi/"
 	},
@@ -220,7 +220,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否你是周杰伦",
+		"chinese": "我想要知道你是否是周杰伦",
 		"english": "I want to know if you are Jay Chou",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /ɚ/ /dʒe/ /tʃo/"
 	},
@@ -235,7 +235,7 @@
 		"soundmark": "/ju/ /ɚ/ /'hɛlθi/"
 	},
 	{
-		"chinese": "我需要知道是否你是健康的",
+		"chinese": "我需要知道你是否健康",
 		"english": "I need to know if you are healthy",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /ɚ/ /'hɛlθi/"
 	},
@@ -250,7 +250,7 @@
 		"soundmark": "/ju/ /ɚ/ /'pɝfɪkt/"
 	},
 	{
-		"chinese": "我必须知道是否你是完美的",
+		"chinese": "我必须知道是你是否完美",
 		"english": "I have to know if you are perfect",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ɪf/ /ju/ /ɚ/ /'pɝfɪkt/"
 	},
@@ -300,7 +300,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "It is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -440,12 +440,12 @@
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "和我说话",
+		"chinese": "和我聊聊",
 		"english": "to talk with me",
 		"soundmark": "/tə/ /tɔk/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "你想要和我说话",
+		"chinese": "你想要和我聊聊",
 		"english": "You want to talk with me",
 		"soundmark": "/ju/ /wɑnt/ /tə/ /tɔk/ /wɪð/ /mi/"
 	},
@@ -455,7 +455,7 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "你想要现在和我说话",
+		"chinese": "你现在想要和我聊聊",
 		"english": "You want to talk with me now",
 		"soundmark": "/ju/ /wɑnt/ /tə/ /tɔk/ /wɪð/ /mi/ /naʊ/"
 	},
@@ -500,7 +500,7 @@
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/"
 	},
 	{
-		"chinese": "你必须现在帮助我",
+		"chinese": "你现在必须帮助我",
 		"english": "You have to help me now",
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
@@ -545,7 +545,7 @@
 		"soundmark": "/ju/ /nid/ /tə/ /it/ /ðə/ /fud/"
 	},
 	{
-		"chinese": "你需要现在吃这个食物",
+		"chinese": "你现在需要吃这个食物",
 		"english": "You need to eat the food now",
 		"soundmark": "/ju/ /nid/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -595,12 +595,12 @@
 		"soundmark": "/ju/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "和我说话",
+		"chinese": "与我聊聊",
 		"english": "to talk with me",
 		"soundmark": "/tə/ /tɔk/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "你喜欢和我说话",
+		"chinese": "你喜欢和我聊天",
 		"english": "You like to talk with me",
 		"soundmark": "/ju/ /laɪk/ /tə/ /tɔk/ /wɪð/ /mi/"
 	},
@@ -610,7 +610,7 @@
 		"soundmark": "/'ɛvri/ /de/"
 	},
 	{
-		"chinese": "你喜欢每天和我说话",
+		"chinese": "你喜欢每天和我聊天",
 		"english": "You like to talk with me every day",
 		"soundmark": "/ju/ /laɪk/ /tə/ /tɔk/ /wɪð/ /mi/ /'ɛvri/ /de/"
 	},
@@ -685,7 +685,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "It is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -695,7 +695,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "你必须告诉我事实因为它是重要的",
+		"chinese": "你必须告诉我事实，因为这是重要的",
 		"english": "You have to tell me the truth because it is important",
 		"soundmark": "/ju/ /hæv/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -715,22 +715,22 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "It is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "你想要知道是否它是重要的",
+		"chinese": "你想要知道这是否重要",
 		"english": "You want to know if it is important",
 		"soundmark": "/ju/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是可能的",
+		"chinese": "这是有可能的",
 		"english": "it is possible",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "你想要知道是否它是可能的",
+		"chinese": "你想要知道这是否有可能",
 		"english": "You want to know if it is possible",
 		"soundmark": "/ju/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /'pɑsəbl/"
 	},

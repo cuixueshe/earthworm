@@ -160,7 +160,7 @@
 		"soundmark": "/let/"
 	},
 	{
-		"chinese": "她是迟到的",
+		"chinese": "她迟到了",
 		"english": "she is late",
 		"soundmark": "/ʃi/ /ɪz/ /let/"
 	},
@@ -180,12 +180,12 @@
 		"soundmark": "/fɚ/"
 	},
 	{
-		"chinese": "对于这个会议",
+		"chinese": "对于这个会议（参加会议）",
 		"english": "for the meeting",
 		"soundmark": "/fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "她是迟到的对于这个会议",
+		"chinese": "她开会迟到了",
 		"english": "she is late for the meeting",
 		"soundmark": "/ʃi/ /ɪz/ /let/ /fɚ/ /ðə/ /'mitɪŋ/ /ədˈmɪtɪd/"
 	},
@@ -195,7 +195,7 @@
 		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "她(过去)承认是迟到的对于这个会议",
+		"chinese": "她(过去)承认她开会迟到了",
 		"english": "she admitted being late for the meeting",
 		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /let/ /fɚ/ /ðə/ /'mitɪŋ/"
 	},
@@ -260,7 +260,7 @@
 		"soundmark": "/dʒʌŋk/"
 	},
 	{
-		"chinese": "垃圾食物",
+		"chinese": "垃圾食品",
 		"english": "junk food",
 		"soundmark": "/dʒʌŋk/ /fud/"
 	},
@@ -270,12 +270,12 @@
 		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "吃垃圾食物",
+		"chinese": "吃垃圾食品",
 		"english": "to eat junk food",
 		"soundmark": "/tə/ /it/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "吃垃圾食物(ing形式)",
+		"chinese": "吃垃圾食品(ing形式)",
 		"english": "eating junk food",
 		"soundmark": "/'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
@@ -290,7 +290,7 @@
 		"soundmark": "/ʃi/ /əˈvɔɪdz/"
 	},
 	{
-		"chinese": "她避免吃垃圾食物",
+		"chinese": "她避免吃垃圾食品",
 		"english": "she avoids eating junk food",
 		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
@@ -330,12 +330,12 @@
 		"soundmark": "/tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "她避免吃垃圾食物",
+		"chinese": "她避免吃垃圾食品",
 		"english": "she avoids eating junk food",
 		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "她避免吃垃圾食物来保持一个健康的生活方式",
+		"chinese": "她通过避免吃垃圾食品来保持一个健康的生活方式",
 		"english": "she avoids eating junk food to maintain a healthy lifestyle",
 		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/ /tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
@@ -370,7 +370,7 @@
 		"soundmark": "/ʃi/ /əˈvɔɪdɪd/"
 	},
 	{
-		"chinese": "她(过去)避免告诉事实",
+		"chinese": "她(过去)避而不谈事实",
 		"english": "she avoided telling the truth",
 		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
@@ -410,12 +410,12 @@
 		"soundmark": "/baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "她(过去)避免告诉事实",
+		"chinese": "她(过去)避而不谈事实",
 		"english": "she avoided telling the truth",
 		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "她通过向她的父母说谎来(过去)避免告诉事实",
+		"chinese": "她通过向父母撒谎（过去）来避免说出事实",
 		"english": "she avoided telling the truth by lying to her parents",
 		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/ /baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
@@ -650,7 +650,7 @@
 		"soundmark": "/hi/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "他(过去)承认说一个善意的谎言(ing形式)",
+		"chinese": "他(过去)承认说了一个善意的谎言(ing形式)",
 		"english": "he admitted telling a white lie",
 		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
 	},
@@ -700,12 +700,12 @@
 		"soundmark": "/tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	},
 	{
-		"chinese": "他(过去)承认说一个善意的谎言",
+		"chinese": "他(过去)承认说了一个善意的谎言",
 		"english": "he admitted telling a white lie",
 		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
 	},
 	{
-		"chinese": "他(过去)承认说一个善意的谎言来避免伤害某个人的感情",
+		"chinese": "他(过去)承认说了一个善意的谎言来避免伤害某个人的感情",
 		"english": "he admitted telling a white lie to avoid hurting someone's feelings",
 		"soundmark": "/hi/ /ədˈmɪtɪd/ /tə/ /ədˈmɪt/ /tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	}

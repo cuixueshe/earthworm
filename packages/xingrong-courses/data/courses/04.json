@@ -40,7 +40,7 @@
 		"soundmark": "/nɑt/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"chinese": "这并不重要",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
@@ -50,7 +50,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不重要的所以我今天不需要做这件事",
+		"chinese": "这并不重要，所以我今天不需要做这件事",
 		"english": "it is not important so I don't need to do it today",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /so/ /aɪ/ /dont/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
 	},
@@ -85,7 +85,7 @@
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是紧急的",
+		"chinese": "这是紧急的",
 		"english": "it is urgent",
 		"soundmark": "/ɪt/ /ɪz/ /'ɝdʒənt/"
 	},
@@ -95,7 +95,7 @@
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "它是紧急的而且你需要现在做这件事",
+		"chinese": "这是紧急的，你需要现在就去做",
 		"english": "it is urgent and you need to do it now",
 		"soundmark": "/ɪt/ /ɪz/ /'ɝdʒənt/ /ənd/ /ju/ /nid/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
@@ -200,7 +200,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我需要知道是否他想要做这件事",
+		"chinese": "我需要知道他是否想要做这件事",
 		"english": "I need to know if he wants to do it",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /hi/ /wɑnts/ /tə/ /du/ /ɪt/"
 	},
@@ -220,12 +220,12 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"chinese": "这并不重要",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "他不想做这件事因为它是不重要的",
+		"chinese": "他不想做这件事因为这并不重要",
 		"english": "he doesn't want to do it because it is not important",
 		"soundmark": "/hi/ /ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
@@ -375,7 +375,7 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "它需要现在吃这个食物",
+		"chinese": "它现在需要吃这个食物",
 		"english": "it needs to eat the food now",
 		"soundmark": "/ɪt/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -425,17 +425,17 @@
 		"soundmark": "/tə/ /tɛl/ /mi/"
 	},
 	{
-		"chinese": "重要的某事",
+		"chinese": "一些重要的事情",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "他想要告诉我重要的某事",
+		"chinese": "他想告诉我一些重要的事情",
 		"english": "he wants to tell me something important",
 		"soundmark": "/hi/ /wɑnts/ /tə/ /tɛl/ /mi/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "他不想告诉我重要的某件事",
+		"chinese": "他不想告诉我一些重要的事情",
 		"english": "he doesn't want to tell me something important",
 		"soundmark": "/hi/ /ˈdʌznt/ /wɑnt/ /tə/ /tɛl/ /mi/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},

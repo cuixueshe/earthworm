@@ -65,12 +65,12 @@
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "我可以明天在这里",
+		"chinese": "我明天可以在这里",
 		"english": "I can be here tomorrow",
 		"soundmark": "/aɪ/ /kæn/ /bi/ /hɪr/ /tə'mɔro/"
 	},
 	{
-		"chinese": "我不可以明天在这里",
+		"chinese": "我明天不可以在这里",
 		"english": "I can not be here tomorrow",
 		"soundmark": "/aɪ/ /kæn/ /nɑt/ /bi/ /hɪr/ /tə'mɔro/"
 	},
@@ -85,7 +85,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "他需要知道是否我可以明天在这里",
+		"chinese": "他需要知道明天我是否可以在这里",
 		"english": "he needs to know if I can be here tomorrow",
 		"soundmark": "/hi/ /nidz/ /tə/ /no/ /ɪf/ /aɪ/ /kæn/ /bi/ /hɪr/ /tə'mɔro/"
 	},
@@ -105,12 +105,12 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我可以现在吃这个食物",
+		"chinese": "我现在可以吃这个食物",
 		"english": "I can eat the food now",
 		"soundmark": "/aɪ/ /kæn/ /it/ /ðə/ /fud/ /naʊ/"
 	},
 	{
-		"chinese": "我不可以现在吃这个食物",
+		"chinese": "我现在不可以吃这个食物",
 		"english": "I can not eat the food now",
 		"soundmark": "/aɪ/ /kæn/ /nɑt/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -125,7 +125,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否我可以现在吃这个食物",
+		"chinese": "我想要知道现在我是否可以吃这个食物",
 		"english": "I want to know if I can eat the food now",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /kæn/ /it/ /ðə/ /fud/ /naʊ/"
 	},
@@ -170,7 +170,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我需要知道是否你可以告诉我事实",
+		"chinese": "我需要知道你是否可以告诉我事实",
 		"english": "I need to know if you can tell me the truth",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
@@ -190,7 +190,7 @@
 		"soundmark": "/ju/ /kæn/ /nɑt/ /hɛlp/ /mi/"
 	},
 	{
-		"chinese": "我需要知道是否你可以帮助我",
+		"chinese": "我需要知道你是否可以帮助我",
 		"english": "I need to know if you can help me",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /hɛlp/ /mi/"
 	},
@@ -235,7 +235,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "你需要告诉我原因为什么你不可以在家里阅读",
+		"chinese": "你需要告诉我为什么你不可以在家里阅读的原因",
 		"english": "you need to tell me the reason why you can not read at home",
 		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /ˈrizən/ /waɪ/ /ju/ /kæn/ /nɑt/ /rid/ /ət/ /hom/"
 	},
@@ -255,12 +255,12 @@
 		"soundmark": "/'letɚ/"
 	},
 	{
-		"chinese": "他可以以后做这件事",
+		"chinese": "他可以稍后再做",
 		"english": "he can do it later",
 		"soundmark": "/hi/ /kæn/ /du/ /ɪt/ /'letɚ/"
 	},
 	{
-		"chinese": "他不可以以后做这件事",
+		"chinese": "他以后不能这样做",
 		"english": "he can not do it later",
 		"soundmark": "/hi/ /kæn/ /nɑt/ /du/ /ɪt/ /'letɚ/"
 	},
@@ -300,7 +300,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否他今晚可以和我说话",
+		"chinese": "我想知道他今晚能否和我说话",
 		"english": "I want to know if he can talk with me tonight",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /hi/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
@@ -345,7 +345,7 @@
 		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
 	{
-		"chinese": "她可以解释原因为什么他今晚不可以和我说话",
+		"chinese": "她可以解释为什么他今晚不可以和我说话的原因",
 		"english": "she can explain the reason why he can not talk with me tonight",
 		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
@@ -530,12 +530,12 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "你应该现在帮助我",
+		"chinese": "你现在应该帮助我",
 		"english": "you should help me now",
 		"soundmark": "/ju/ /ʃʊd/ /hɛlp/ /mi/ /naʊ/"
 	},
 	{
-		"chinese": "你不应该现在帮助我",
+		"chinese": "你现在不应该帮助我",
 		"english": "you should not help me now",
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /hɛlp/ /mi/ /naʊ/"
 	},
@@ -770,12 +770,12 @@
 		"soundmark": "/ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将会在未来告诉你事实",
+		"chinese": "我会在将来告诉你事实",
 		"english": "I will tell you the truth in the future",
 		"soundmark": "/aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将不会在未来告诉你事实",
+		"chinese": "将来我不会告诉你事实",
 		"english": "I will not tell you the truth in the future",
 		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
@@ -785,7 +785,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"chinese": "这并不重要",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
@@ -795,7 +795,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不重要的所以我将会在未来告诉你事实",
+		"chinese": "这不重要，所以我会在将来告诉你事实",
 		"english": "it is not important so I will tell you the truth in the future",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /so/ /aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
@@ -845,7 +845,7 @@
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是不紧急的",
+		"chinese": "这不是紧急的",
 		"english": "it is not urgent",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/"
 	},
@@ -855,7 +855,7 @@
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不紧急的所以我将会在下周解释原因",
+		"chinese": "这不是紧急的，所以我将会在下周解释原因",
 		"english": "it is not urgent so I will explain the reason next week",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/ /so/ /aɪ/ /wɪl/ /ɪk'splen/ /ðə/ /ˈrizən/ /nekst/ /wik/"
 	},

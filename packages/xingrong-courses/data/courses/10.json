@@ -160,7 +160,7 @@
 		"soundmark": "/wi/ /kæn/ /ɡɛt/ /ðɛr/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "我们不可以准时到达那里",
+		"chinese": "我们无法准时到达那里",
 		"english": "we can not get there on time",
 		"soundmark": "/wi/ /kæn/ /nɑt/ /ɡɛt/ /ðɛr/ /ɑn/ /taɪm/"
 	},
@@ -255,7 +255,7 @@
 		"soundmark": "/wɛn/ /ju/ /liv/ /ðə/ /haʊs/"
 	},
 	{
-		"chinese": "不要忘记锁门当你离开家的时候",
+		"chinese": "当你离开家的时候不要忘记锁门",
 		"english": "don't forget to lock the door when you leave the house",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/ /wɛn/ /ju/ /liv/ /ðə/ /haʊs/"
 	},
@@ -280,7 +280,7 @@
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "记得锁门当你离开家的时候",
+		"chinese": "当你离开家的时候记得锁门",
 		"english": "remember to lock the door when you leave the house",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /lɑk/ /ðə/ /dɔr/ /wɛn/ /ju/ /liv/ /ðə/ /haʊs/"
 	},
@@ -340,12 +340,12 @@
 		"soundmark": "/wɛn/ /ʃi/ /ɡɛts/ /hɪr/"
 	},
 	{
-		"chinese": "记得告诉她事实当她到达这里的时候",
+		"chinese": "当她到达这里的时候记得告诉她事实",
 		"english": "remember to tell her the truth when she gets here",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /tɛl/ /hɚ/ /ðə/ /trʊθ/ /wɛn/ /ʃi/ /ɡɛts/ /hɪr/"
 	},
 	{
-		"chinese": "不要忘记告诉她事实当她到达这里的时候",
+		"chinese": "当她到达这里的时候不要忘记告诉她事实",
 		"english": "don't forget to tell her the truth when she gets here",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /tɛl/ /hɚ/ /ðə/ /trʊθ/ /wɛn/ /ʃi/ /ɡɛts/ /hɪr/"
 	},
@@ -385,12 +385,12 @@
 		"soundmark": "/wɛn/ /ju/ /liv/"
 	},
 	{
-		"chinese": "不要忘记支付账单当你离开的时候",
+		"chinese": "当你离开的时候不要忘记支付账单",
 		"english": "don't forget to pay the bill when you leave",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /pe/ /ðə/ /bɪl/ /wɛn/ /ju/ /liv/"
 	},
 	{
-		"chinese": "记得支付账单当你离开的时候",
+		"chinese": "当你离开的时候记得支付账单",
 		"english": "remember to pay the bill when you leave",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /pe/ /ðə/ /bɪl/ /wɛn/ /ju/ /liv/"
 	},
@@ -450,12 +450,12 @@
 		"soundmark": "/wɛn/ /ju/ /ɚ/ /ət/ /hom/"
 	},
 	{
-		"chinese": "记得做家务当你在家里的时候",
+		"chinese": "当你在家里的时候记得做家务",
 		"english": "remember to do the housework when you are at home",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /du/ /ðə/ /'haʊswɝk/ /wɛn/ /ju/ /ɚ/ /ət/ /hom/"
 	},
 	{
-		"chinese": "不要忘记做家务当你在家里的时候",
+		"chinese": "当你在家里的时候不要忘记做家务",
 		"english": "don't forget to do the housework when you are at home",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /du/ /ðə/ /'haʊswɝk/ /wɛn/ /ju/ /ɚ/ /ət/ /hom/"
 	},
@@ -530,12 +530,12 @@
 		"soundmark": "/bɪ'fɔr/ /ju/ /it/ /ðə/ /fud/"
 	},
 	{
-		"chinese": "不要忘记洗你的手在你吃食物之前",
+		"chinese": "在你吃食物之前不要忘记洗你的手",
 		"english": "don't forget to wash your hands before you eat the food",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /wɑʃ/ /jʊr/ /hænds/ /bɪ'fɔr/ /ju/ /it/ /ðə/ /fud/"
 	},
 	{
-		"chinese": "记得洗你的手在你吃食物之前",
+		"chinese": "在你吃食物之前记得洗你的手",
 		"english": "remember to wash your hands before you eat the food",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /wɑʃ/ /jʊr/ /hænds/ /bɪ'fɔr/ /ju/ /it/ /ðə/ /fud/"
 	},
@@ -605,7 +605,7 @@
 		"soundmark": "/wɛn/ /ju/ /ɡɛt/ /hom/"
 	},
 	{
-		"chinese": "记得给我打电话当你回到家的时候",
+		"chinese": "当你回到家的时候记得给我打电话",
 		"english": "remember to call me when you get home",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /kɔl/ /mi/ /wɛn/ /ju/ /ɡɛt/ /hom/"
 	},
@@ -615,7 +615,7 @@
 		"soundmark": "/dont/ /fɚ'ɡɛt/"
 	},
 	{
-		"chinese": "不要忘记给我打电话当你回到家的时候",
+		"chinese": "当你回到家的时候不要忘记给我打电话",
 		"english": "don't forget to call me when you get home",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/ /wɛn/ /ju/ /ɡɛt/ /hom/"
 	},
@@ -645,12 +645,12 @@
 		"soundmark": "/wɛn/ /ju/ /ɡɛt/ /hom/"
 	},
 	{
-		"chinese": "不要忘记打扫房间当你回到家的时候",
+		"chinese": "当你回到家的时候不要忘记打扫房间",
 		"english": "don't forget to clean the room when you get home",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /klin/ /ðə/ /rum/ /wɛn/ /ju/ /ɡɛt/ /hom/"
 	},
 	{
-		"chinese": "记得打扫房间当你回到家的时候",
+		"chinese": "当你回到家的时候记得打扫房间",
 		"english": "remember to clean the room when you get home",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /klin/ /ðə/ /rum/ /wɛn/ /ju/ /ɡɛt/ /hom/"
 	},
@@ -720,12 +720,12 @@
 		"soundmark": "/aɪ/ /kæn/ /faɪnd/ /ðə/ /ki/ /tə/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我不能找到门的钥匙",
+		"chinese": "我找不到门的钥匙",
 		"english": "I can not find the key to the door",
 		"soundmark": "/aɪ/ /kæn/ /nɑt/ /faɪnd/ /ðə/ /ki/ /tə/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我不能找到房子的钥匙",
+		"chinese": "我找不到房子的钥匙",
 		"english": "I can not find the key to the house",
 		"soundmark": "/aɪ/ /kæn/ /nɑt/ /faɪnd/ /ðə/ /ki/ /tə/ /ðə/ /haʊs/"
 	},
@@ -755,7 +755,7 @@
 		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "我觉得我丢掉了门的钥匙",
+		"chinese": "我觉得我弄丢了门的钥匙",
 		"english": "I think I lost the key to the door",
 		"soundmark": "/aɪ/ /θɪŋk/ /aɪ/ /lɔst/ /ðə/ /ki/ /tə/ /ðə/ /dɔr/"
 	},
@@ -765,12 +765,12 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "我不能找到它",
+		"chinese": "我找不到它",
 		"english": "I can not find it",
 		"soundmark": "/aɪ/ /kæn/ /nɑt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "我觉得我丢掉了门的钥匙因为我不能找到它",
+		"chinese": "我觉得我弄丢了门的钥匙因为我找不到它了",
 		"english": "I think I lost the key to the door because I can not find it",
 		"soundmark": "/aɪ/ /θɪŋk/ /aɪ/ /lɔst/ /ðə/ /ki/ /tə/ /ðə/ /dɔr/ /bɪ'kɔz/ /aɪ/ /kæn/ /nɑt/ /faɪnd/ /ɪt/"
 	},
@@ -840,12 +840,12 @@
 		"soundmark": "/wɛn/ /ju/ /liv/ /ðə/ /rum/"
 	},
 	{
-		"chinese": "不要忘记关闭窗户当你离开房间的时候",
+		"chinese": "当你离开房间的时候不要忘记关闭窗户",
 		"english": "don't forget to close the window when you leave the room",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /kloz/ /ðə/ /'wɪndo/ /wɛn/ /ju/ /liv/ /ðə/ /rum/"
 	},
 	{
-		"chinese": "记得关闭窗户当你离开房间的时候",
+		"chinese": "当你离开房间的时候记得关闭窗户",
 		"english": "remember to close the window when you leave the room",
 		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /kloz/ /ðə/ /'wɪndo/ /wɛn/ /ju/ /liv/ /ðə/ /rum/"
 	}

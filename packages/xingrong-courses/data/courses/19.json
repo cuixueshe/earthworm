@@ -80,7 +80,7 @@
 		"soundmark": "/læst/ /naɪt/"
 	},
 	{
-		"chinese": "我昨晚正在阅读一本英语书",
+		"chinese": "昨晚我正在阅读一本英语书",
 		"english": "I was reading an English book last night",
 		"soundmark": "/aɪ/ /wəz/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /læst/ /naɪt/"
 	},
@@ -235,7 +235,7 @@
 		"soundmark": "/bi/ /'rʌnɪŋ/"
 	},
 	{
-		"chinese": "正在在街上跑步",
+		"chinese": "正在街上跑步",
 		"english": "be running in the street",
 		"soundmark": "/bi/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
@@ -245,7 +245,7 @@
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他（现在）正在在街上跑步",
+		"chinese": "他（现在）正在街上跑步",
 		"english": "he is running in the street",
 		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
@@ -255,12 +255,12 @@
 		"soundmark": "/æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "他此刻正在在街上跑步",
+		"chinese": "他此刻正在街上跑步",
 		"english": "he is running in the street at the moment",
 		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/"
 	},
 	{
-		"chinese": "他（过去）正在在街上跑步",
+		"chinese": "他（过去）正在街上跑步",
 		"english": "he was running in the street",
 		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
@@ -300,7 +300,7 @@
 		"soundmark": "/bi/ /'swɪmɪŋ/"
 	},
 	{
-		"chinese": "正在在游泳池里游泳",
+		"chinese": "正在游泳池里游泳",
 		"english": "be swimming in the pool",
 		"soundmark": "/bi/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
 	},
@@ -330,7 +330,7 @@
 		"soundmark": "/ʃi/ /wəz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
 	},
 	{
-		"chinese": "他（过去）正在在街上跑步",
+		"chinese": "他（过去）正在街上跑步",
 		"english": "he was running in the street",
 		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/"
 	},
@@ -340,7 +340,7 @@
 		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "他（过去）正在在街上跑步与此同时她（过去）正在游泳池里游泳",
+		"chinese": "他（过去）正在街上跑步与此同时她（过去）正在游泳池里游泳",
 		"english": "he was running in the street while she was swimming in the pool",
 		"soundmark": "/hi/ /wəz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /waɪl/ /ʃi/ /wəz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/"
 	},
@@ -470,7 +470,7 @@
 		"soundmark": "/bi/ /'tɔkɪŋ/"
 	},
 	{
-		"chinese": "正在在手机上说话",
+		"chinese": "正在手机上说话",
 		"english": "be talking on the phone",
 		"soundmark": "/bi/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/"
 	},

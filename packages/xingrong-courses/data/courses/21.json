@@ -100,12 +100,12 @@
 		"soundmark": "/ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你需要注意这个信息",
+		"chinese": "你需要关注这个信息",
 		"english": "you need to pay attention to this information",
 		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你注意这个信息",
+		"chinese": "你关注这个信息",
 		"english": "you pay attention to this information",
 		"soundmark": "/ju/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -115,7 +115,7 @@
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你没有注意这个信息",
+		"chinese": "你没有关注这个信息",
 		"english": "you don't pay attention to this information",
 		"soundmark": "/ju/ /dont/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -125,12 +125,12 @@
 		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
-		"chinese": "你(过去)注意这个信息",
+		"chinese": "你(过去)关注这个信息",
 		"english": "you paid attention to this information",
 		"soundmark": "/ju/ /ped/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你(过去)没有注意这个信息",
+		"chinese": "你(过去)没有关注这个信息",
 		"english": "you didn't pay attention to this information",
 		"soundmark": "/ju/ /ˈdɪdnt/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -145,7 +145,7 @@
 		"soundmark": "/ju/ /ʃʊd/"
 	},
 	{
-		"chinese": "你应该注意这个信息",
+		"chinese": "你应该关注这个信息",
 		"english": "you should pay attention to this information",
 		"soundmark": "/ju/ /ʃʊd/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -155,7 +155,7 @@
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/"
 	},
 	{
-		"chinese": "你不应该注意这个信息",
+		"chinese": "你不应该关注这个信息",
 		"english": "you should not pay attention to this information",
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -195,7 +195,7 @@
 		"soundmark": "/ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "正在注意这个信息",
+		"chinese": "正在关注这个信息",
 		"english": "be paying attention to this information",
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -205,7 +205,7 @@
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你(现在)正在注意这个信息",
+		"chinese": "你(现在)正在关注这个信息",
 		"english": "you are paying attention to this information",
 		"soundmark": "/ju/ /ɚ/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -215,7 +215,7 @@
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我(现在)正在注意这个信息",
+		"chinese": "我(现在)正在关注这个信息",
 		"english": "I am paying attention to this information",
 		"soundmark": "/aɪ/ /æm/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -225,7 +225,7 @@
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他(现在)正在注意这个信息",
+		"chinese": "他(现在)正在关注这个信息",
 		"english": "he is paying attention to this information",
 		"soundmark": "/hi/ /ɪz/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -235,12 +235,12 @@
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "他(现在)没有正在注意这个信息",
+		"chinese": "他(现在)没有关注这个信息",
 		"english": "he is not paying attention to this information",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "他(过去)正在注意这个信息",
+		"chinese": "他(过去)正在关注这个信息",
 		"english": "he was paying attention to this information",
 		"soundmark": "/hi/ /wəz/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -250,7 +250,7 @@
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "他(过去)没有正在注意这个信息",
+		"chinese": "他(过去)没有关注这个信息",
 		"english": "he was not paying attention to this information",
 		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -270,7 +270,7 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "他在昨天这个时候没有注意到这个信息",
+		"chinese": "他昨天这个时候没有关注到这个信息",
 		"english": "he was not paying attention to this information at this time yesterday",
 		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
@@ -285,7 +285,7 @@
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "正在注意这个信息",
+		"chinese": "正在关注这个信息",
 		"english": "be paying attention to this information",
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -300,7 +300,7 @@
 		"soundmark": "/hi/ /wɪl/"
 	},
 	{
-		"chinese": "他将会正在注意这个信息",
+		"chinese": "他将会关注这个信息",
 		"english": "he will be paying attention to this information",
 		"soundmark": "/hi/ /wɪl/ /bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
@@ -320,7 +320,7 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "他在明天这个时候将会正在注意这个信息",
+		"chinese": "他将在明天这个时候关注这个信息",
 		"english": "he will be paying attention to this information at this time tomorrow",
 		"soundmark": "/hi/ /wɪl/ /bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
@@ -375,7 +375,7 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -385,12 +385,12 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"chinese": "这是非常重要的",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "注意所有的细节(它)是非常重要的",
+		"chinese": "注意所有的细节是非常重要的",
 		"english": "it is very important to pay attention to all the details",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ɔl/ /ðə/ /ˈditelz/"
 	},
@@ -435,12 +435,12 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某件事情",
+		"chinese": "一些重要的事情",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我想要讨论重要的某件事情",
+		"chinese": "我想要讨论一些重要的事情",
 		"english": "I would like to discuss something important",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -455,7 +455,7 @@
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我想要和你一起讨论重要的某件事情",
+		"chinese": "我想要和你一起讨论一些重要的事情",
 		"english": "I would like to discuss something important with you",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /wɪð/ /ju/"
 	},
@@ -465,7 +465,7 @@
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们想要讨论重要的某件事情",
+		"chinese": "我们想要讨论一些重要的事情",
 		"english": "we would like to discuss something important",
 		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -515,12 +515,12 @@
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
+		"chinese": "这个计划的所有细节",
 		"english": "all the details of the plan",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "我们可以讨论这个计划的所有的细节",
+		"chinese": "我们可以讨论这个计划的所有细节",
 		"english": "we can discuss all the details of the plan",
 		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
@@ -530,7 +530,7 @@
 		"soundmark": "/tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们可以一起讨论这个计划的所有的细节",
+		"chinese": "我们可以一起讨论这个计划的所有细节",
 		"english": "we can discuss all the details of the plan together",
 		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
@@ -540,7 +540,7 @@
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我们将会一起讨论这个计划的所有的细节",
+		"chinese": "我们将会一起讨论这个计划的所有细节",
 		"english": "we will discuss all the details of the plan together",
 		"soundmark": "/wi/ /wɪl/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
@@ -560,7 +560,7 @@
 		"soundmark": "/tə'mɔro/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我们明天早上将会一起讨论这个计划的所有的细节",
+		"chinese": "明天早上我们将会一起讨论这个计划的所有细节",
 		"english": "we will discuss all the details of the plan together tomorrow morning",
 		"soundmark": "/wi/ /wɪl/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /tə'mɔro/ /'mɔrnɪŋ/"
 	},
@@ -580,7 +580,7 @@
 		"soundmark": "/bi/ /dɪ'skʌsɪŋ/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
+		"chinese": "这个计划的所有细节",
 		"english": "all the details of the plan",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
@@ -605,12 +605,12 @@
 		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
+		"chinese": "这个计划的所有细节",
 		"english": "all the details of the plan",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "我们(现在)正在讨论这个计划的所有的细节",
+		"chinese": "我们(现在)正在讨论这个计划的所有细节",
 		"english": "we are discussing all the details of the plan",
 		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
@@ -620,12 +620,12 @@
 		"soundmark": "/tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们(现在)正在一起讨论这个计划的所有的细节",
+		"chinese": "我们(现在)正在一起讨论这个计划的所有细节",
 		"english": "we are discussing all the details of the plan together",
 		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们(过去)正在一起讨论这个计划的所有的细节",
+		"chinese": "我们(过去)正在一起讨论这个计划的所有细节",
 		"english": "we were discussing all the details of the plan together",
 		"soundmark": "/wi/ /wɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
@@ -650,7 +650,7 @@
 		"soundmark": "/wi/ /wɪl/"
 	},
 	{
-		"chinese": "我们将会正在一起讨论这个计划的所有的细节",
+		"chinese": "我们将会一起讨论这个计划的所有细节",
 		"english": "we will be discussing all the details of the plan together",
 		"soundmark": "/wi/ /wɪl/ /bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
@@ -670,7 +670,7 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "我们在明天这个时候将会正在一起讨论这个计划的所有的细节",
+		"chinese": "明天这个时候我们将会一起讨论这个计划的所有细节",
 		"english": "we will be discussing all the details of the plan together at this time tomorrow",
 		"soundmark": "/wi/ /wɪl/ /bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	}
