@@ -13,7 +13,7 @@
         :class="getItemClassNames(item.index)"
         @click="jumpTo(item.index)"
       >
-        <div class="flex">
+        <div class="flex tooltip" :data-tip="item.data.chinese">
           <span>{{ item.index + 1 }}</span>
           <span>&nbsp-&nbsp</span>
           <span class="flex-1 truncate">{{ item.data.chinese }}</span>
