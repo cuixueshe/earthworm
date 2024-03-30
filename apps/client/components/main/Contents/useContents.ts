@@ -5,17 +5,18 @@ const contentsVisible = ref(false);
 let isOnClickOutside = false;
 
 export function useContent() {
-  function toggleContents() {
-    if (isOnClickOutside) return;
-    contentsVisible.value = !contentsVisible.value;
-  }
-
-  function closeContents() {
-    contentsVisible.value = false;
-  }
-
   function isShowContents() {
     return contentsVisible.value === true;
+  }
+
+  function toggleContents(e: MouseEvent) {
+    if (!isOnClickOutside) {
+      contentsVisible.value = !contentsVisible.value;
+    }
+  }
+
+  function hideContents() {
+    contentsVisible.value = false;
   }
 
   function watchClickOutside(contentsEl: HTMLElement) {
@@ -34,7 +35,7 @@ export function useContent() {
   return {
     isShowContents,
     toggleContents,
-    closeContents,
+    hideContents,
     watchClickOutside,
   };
 }
