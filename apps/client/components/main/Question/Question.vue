@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center pt-2">
-    <div class="flex relative flex-wrap justify-center gap-2 transition-all">
+  <div class="pt-2 text-center">
+    <div class="relative flex flex-wrap justify-center gap-2 transition-all">
       <template
         v-for="(w, i) in courseStore.words"
         :key="i"
@@ -15,7 +15,7 @@
       </template>
       <input
         ref="inputEl"
-        class="absolute h-full w-full opacity-0"
+        class="absolute w-full h-full opacity-0"
         type="text"
         v-model="inputValue"
         @keydown="handleKeydown"
@@ -60,10 +60,11 @@ const { playRightSound, playErrorSound } = usePlayTipSound();
 const {
   inputValue,
   userInputWords,
+  isFixMode,
   submitAnswer,
   setInputValue,
+  setupUserInputWords,
   handleKeyboardInput,
-  isFixMode,
 } = useInput({
   source: () => courseStore.currentStatement?.english!,
   setInputCursorPosition,
@@ -79,23 +80,24 @@ watch(
   }
 );
 
-// 监听当前isDoAgain变化，更新输入框焦点 清除输入框内容
+// 监听当前 isDoAgain 变化，更新输入框焦点 清除输入框内容
 watch(
   () => courseStore.isDoAgain,
   (val) => {
-    if(val){
-      setInputValue(''),
-      handleInputFocus()
-      courseStore.isDoAgain = false
+    if (val) {
+      courseStore.isDoAgain = false;
+      setupUserInputWords();
+      handleInputFocus();
     }
   }
 );
 
-// 监听statementIndex变化，更新输入框焦点 用于解决点击上一题/下一题按钮后，输入框失去聚焦的问题
+// 监听 statementIndex 变化，更新输入框焦点，用于解决点击上一题/下一题/目录跳转按钮后，输入框失去聚焦的问题
 watch(
   () => courseStore.statementIndex,
   () => {
-      handleInputFocus()
+    setupUserInputWords();
+    handleInputFocus();
   }
 );
 
