@@ -23,6 +23,7 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
+  const isDoAgain = ref(false);
 
   const { updateActiveCourseId } = useActiveCourseId();
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
@@ -71,6 +72,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function doAgain() {
+    isDoAgain.value = true;
     resetStatementIndex();
     updateActiveCourseId(currentCourse.value?.id!);
   }
@@ -115,6 +117,7 @@ export const useCourseStore = defineStore("course", () => {
     currentStatement,
     words,
     totalQuestionsCount,
+    isDoAgain,
     setup,
     doAgain,
     isAllDone,

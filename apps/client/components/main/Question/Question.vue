@@ -79,6 +79,26 @@ watch(
   }
 );
 
+// 监听当前isDoAgain变化，更新输入框焦点 清除输入框内容
+watch(
+  () => courseStore.isDoAgain,
+  (val) => {
+    if(val){
+      setInputValue(''),
+      handleInputFocus()
+      courseStore.isDoAgain = false
+    }
+  }
+);
+
+// 监听statementIndex变化，更新输入框焦点 用于解决点击上一题/下一题按钮后，输入框失去聚焦的问题
+watch(
+  () => courseStore.statementIndex,
+  () => {
+      handleInputFocus()
+  }
+);
+
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
   // 当前单词激活 且 聚焦
