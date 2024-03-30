@@ -46,7 +46,7 @@ function handleNext() {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .btn-wrapper {
   @apply w-12 h-12 flex justify-center items-center text-gray-400 dark:text-white;
 }
