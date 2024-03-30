@@ -1,17 +1,14 @@
 <template>
-  <div class="absolute justify-around left-0 right-0 top-2/3 flex flex-row">
+  <div class="absolute justify-between left-0 right-0 top-3/4 flex flex-row">
     <div
       :class="[
-        'w-[150px]',
-        '-translate-y-2/3',
-        '-translate-x-3/4',
         courseStore.statementIndex
           ? 'cursor-pointer'
           : 'dark:text-gray-600 cursor-not-allowed text-gray-300',
       ]"
       @click="goToPreviousQuestion"
     >
-      <div class="ml-10 mb-2">
+      <div class="translate-y-full ml-20">
         <svg
           v-if="courseStore.statementIndex"
           t="1711738980240"
@@ -26,7 +23,7 @@
         >
           <path
             d="M512 1024a512 512 0 1 1 512-512 512.576 512.576 0 0 1-512 512z m0-960a448 448 0 1 0 448 448A448.512 448.512 0 0 0 512 64z m256 480H333.248l137.376 137.376a32 32 0 1 1-45.248 45.248l-192-192a32 32 0 0 1 0-45.248l192-192a32 32 0 0 1 45.248 45.248L333.248 480H768a32 32 0 0 1 0 64z"
-            fill="#774477"
+            fill="#d8301b"
             p-id="2835"
           ></path>
         </svg>
@@ -44,19 +41,19 @@
         >
           <path
             d="M512 1024a512 512 0 1 1 512-512 512.576 512.576 0 0 1-512 512z m0-960a448 448 0 1 0 448 448A448.512 448.512 0 0 0 512 64z m256 480H333.248l137.376 137.376a32 32 0 1 1-45.248 45.248l-192-192a32 32 0 0 1 0-45.248l192-192a32 32 0 0 1 45.248 45.248L333.248 480H768a32 32 0 0 1 0 64z"
-            fill="#cea7e6"
+            fill="#e28f84"
             p-id="4380"
           ></path>
         </svg>
       </div>
-      <span class="mr-1"> ⌃ {{ shortcutKeys.previous }} </span>
-      <span class="ml-2">上一题</span>
+      <!-- <span class="mr-1"> ⌃ {{ shortcutKeys.previous }} </span>
+      <span class="ml-2">上一题</span> -->
     </div>
     <div
-      class="w-[150px] -translate-y-2/3 translate-x-full cursor-pointer"
+      class="translate-y-full cursor-pointer mr-20"
       @click="goToNextQuestion"
     >
-      <div class="ml-10 mb-2">
+      <div>
         <svg
           t="1711739973637"
           class="icon"
@@ -69,13 +66,11 @@
         >
           <path
             d="M512 1024a512 512 0 1 1 512-512 512.576 512.576 0 0 1-512 512z m0-960a448 448 0 1 0 448 448A448.512 448.512 0 0 0 512 64z m86.624 662.624a32 32 0 0 1-45.248-45.248L690.752 544H256a32 32 0 0 1 0-64h434.752l-137.376-137.376a32 32 0 0 1 45.248-45.248l192 192a32 32 0 0 1 0 45.248z"
-            fill="#774477"
+            fill="#d8301b"
             p-id="3452"
           ></path>
         </svg>
       </div>
-      <span class="mr-1"> ⌃ {{ shortcutKeys.skip }} </span>
-      <span class="ml-2">下一题</span>
     </div>
   </div>
 </template>
