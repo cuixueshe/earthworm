@@ -3,10 +3,10 @@
     class="absolute top-[-50px] left-0 w-full flex items-center justify-center text-xl dark:text-gray-50"
   >
     <div class="card bg-base-100 shadow-xl">
-      <div class="card-body relative group">
-        <div class="absolute top-1 right-2 mt-0 hidden group-hover:block">
+      <div class="card-body relative">
+        <div class="absolute top-1 right-2 mt-0">
           <button
-            class="w-6 h-6 outline-none dark:text-white"
+            class="w-6 h-6 outline-none dark:text-gray-300 text-gray-400"
             @click="hiddenAnswerTip"
           >
             <svg
