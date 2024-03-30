@@ -17,7 +17,7 @@ describe("course progress", () => {
       })
     );
     const { loadProgress } = useCourseProgress();
-    expect(await loadProgress(1)).toBe(0);
+    expect(await loadProgress(1, true)).toBe(0);
   });
 
   it("should be equal to cache value if it exists", async () => {
@@ -29,6 +29,6 @@ describe("course progress", () => {
       })
     );
     const { loadProgress } = useCourseProgress();
-    expect(await loadProgress(1)).toEqual(10);
+    expect(await loadProgress(1, true)).toEqual(10);
   });
 });

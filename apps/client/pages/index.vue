@@ -7,17 +7,17 @@
     <template v-else>
       <section class="w-full">
         <div
-          class="bg-purple-200 dark:bg-gray-800 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-lg"
+          class="px-4 py-3 text-white bg-purple-200 rounded-lg dark:bg-gray-800 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
         >
           <p
-            class="text-center font-medium sm:text-left text-black dark:text-white"
+            class="font-medium text-center text-black sm:text-left dark:text-white"
           >
             Earthworm is now available! 🎉
             <br class="sm:hidden" />
             Start your English learning journey now!
           </p>
           <a
-            class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-purple-600 transition hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
+            class="block px-5 py-3 mt-4 text-sm font-medium text-center text-purple-600 transition bg-white rounded-lg hover:bg-white/90 hover:text-pink-500 focus:outline-none focus:ring active:text-pink-500 sm:mt-0"
             href="https://github.com/cuixueshe/earthworm"
           >
             Learn More
@@ -204,13 +204,13 @@
         <div class="w-1/2"></div>
       </section>
       <section class="flex flex-col py-4">
-        <div class="mx-auto max-w-screen-xl py-8 sm:px-6 lg:px-8 lg:py-12">
+        <div class="max-w-screen-xl py-8 mx-auto sm:px-6 lg:px-8 lg:py-12">
           <h2
-            class="text-center text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 dark:text-white mb-4"
+            class="mb-4 text-4xl font-bold tracking-tight text-center text-gray-800 sm:text-5xl dark:text-white"
           >
             User feedback
           </h2>
-          <p class="text-center text-lg mb-6 text-gray-600 dark:text-gray-400">
+          <p class="mb-6 text-lg text-center text-gray-600 dark:text-gray-400">
             If you're using Earthworm, feel free to give us your feedback on
             Twitter.
           </p>
@@ -221,14 +221,14 @@
               class="mb-8 sm:break-inside-avoid"
             >
               <blockquote
-                class="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white dark:bg-gray-700 cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
+                class="overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl dark:bg-gray-700 hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
               >
                 <div class="flex flex-col justify-between h-full p-6">
                   <div class="flex items-center gap-4">
                     <img
                       :src="item.avatar"
                       alt=""
-                      class="h-14 w-14 rounded-full object-cover border-2 border-purple-400 p-1"
+                      class="object-cover p-1 border-2 border-purple-400 rounded-full h-14 w-14"
                     />
                     <div class="flex-grow">
                       <p
@@ -250,17 +250,15 @@
                     {{ item.comment }}
                   </p>
                   <div class="flex items-center justify-between my-2">
-                    <div class="text-gray-500 text-xs">
+                    <div class="text-xs text-gray-500">
                       {{ formatTimestamp({ timestamp: item.time }) }}
                     </div>
                   </div>
-                  <div
-                    class=" mx-auto my-4"
-                  ></div>
-                  <div class="flex items-center justify-between text-xs mt-4">
+                  <div class="mx-auto my-4"></div>
+                  <div class="flex items-center justify-between mt-4 text-xs">
                     <div class="flex items-center">
                       <svg
-                        class="w-5 h-5 mr-2 fill-current text-pink-300 dark:text-blue-300"
+                        class="w-5 h-5 mr-2 text-pink-300 fill-current dark:text-blue-300"
                         viewBox="0 0 24 24"
                       >
                         <path
@@ -298,98 +296,98 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from "vue";
-import { useRouter } from "vue-router";
+  import { onMounted, onUnmounted, ref } from "vue";
+  import { useRouter } from "vue-router";
 
-import Loading from "~/components/Loading.vue";
-import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-import CommentsList from "~/assets/comments";
-import { formatTimestamp, type Timestamp } from "~/utils/date";
+  import CommentsList from "~/assets/comments";
+  import Loading from "~/components/Loading.vue";
+  import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+  import { formatTimestamp } from "~/utils/date";
 
-import { useGameStore } from "~/store/game";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+  import { useGameStore } from "~/store/game";
+  import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-const { handleKeydown, isLoading } = useShortcutToGame();
-const gameStore = useGameStore();
+  const { handleKeydown, isLoading } = useShortcutToGame();
+  const gameStore = useGameStore();
 
-const { showMobileTip } = useMonitorSystem();
+  const { showMobileTip } = useMonitorSystem();
 
-function useMonitorSystem() {
-  const showMobileTip = ref(false);
+  function useMonitorSystem() {
+    const showMobileTip = ref(false);
 
-  function mobileSystem() {
-    return "ontouchstart" in document.documentElement;
+    function mobileSystem() {
+      return "ontouchstart" in document.documentElement;
+    }
+
+    onMounted(() => {
+      showMobileTip.value = mobileSystem();
+    });
+
+    return {
+      showMobileTip,
+    };
   }
 
-  onMounted(() => {
-    showMobileTip.value = mobileSystem();
-  });
+  function useShortcutToGame() {
+    const router = useRouter();
+    const isLoading = ref(false);
 
-  return {
-    showMobileTip,
-  };
-}
+    async function handleKeydown() {
+      isLoading.value = true;
+      const { courseId } = await gameStore.startGame();
+      isLoading.value = false;
+      router.push(`/main/${courseId}`);
+    }
 
-function useShortcutToGame() {
-  const router = useRouter();
-  const isLoading = ref(false);
+    onMounted(() => {
+      registerShortcut("enter", handleKeydown);
+    });
 
-  async function handleKeydown() {
-    isLoading.value = true;
-    const { courseId } = await gameStore.startGame();
-    isLoading.value = false;
-    router.push(`/main/${courseId}`);
+    onUnmounted(() => {
+      cancelShortcut("enter", handleKeydown);
+    });
+
+    return {
+      handleKeydown,
+      isLoading,
+    };
   }
-
-  onMounted(() => {
-    registerShortcut("enter", handleKeydown);
-  });
-
-  onUnmounted(() => {
-    cancelShortcut("enter", handleKeydown);
-  });
-
-  return {
-    handleKeydown,
-    isLoading,
-  };
-}
 </script>
 
 <style>
-.bg-dot {
-  aspect-ratio: 1;
-  position: relative;
-  background: #fff;
-  filter: contrast(50) invert(0);
-  mix-blend-mode: multiply;
-  isolation: isolate;
-  opacity: 0.4;
-  overflow: hidden;
-}
+  .bg-dot {
+    aspect-ratio: 1;
+    position: relative;
+    background: #fff;
+    filter: contrast(50) invert(0);
+    mix-blend-mode: multiply;
+    isolation: isolate;
+    opacity: 0.4;
+    overflow: hidden;
+  }
 
-.dark .bg-dot {
-  opacity: 1;
-}
+  .dark .bg-dot {
+    opacity: 1;
+  }
 
-.bg-dot::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(
-    circle at center,
-    #a800b2 0.06rem,
-    transparent 0.65rem
-  );
-  background-size: var(--bgSize, 1rem) var(--bgSize, 1rem);
-  background-repeat: round;
-  background-position:
-    0 0,
-    var(--bgPosition) var(--bgPosition);
-  mask-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 0.5));
-}
+  .bg-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      circle at center,
+      #a800b2 0.06rem,
+      transparent 0.65rem
+    );
+    background-size: var(--bgSize, 1rem) var(--bgSize, 1rem);
+    background-repeat: round;
+    background-position:
+      0 0,
+      var(--bgPosition) var(--bgPosition);
+    mask-image: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 0.5));
+  }
 
-.instruction-btn {
-  @apply btn btn-xs text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500;
-}
+  .instruction-btn {
+    @apply btn btn-xs text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500;
+  }
 </style>

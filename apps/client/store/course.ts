@@ -28,6 +28,8 @@ export const useCourseStore = defineStore("course", () => {
   const { saveProgress, loadProgress, cleanProgress, resetProgress } =
     useCourseProgress();
 
+  const userStore = useUserStore();
+
   watchEffect(() => {
     currentStatement.value =
       currentCourse.value?.statements[statementIndex.value];
@@ -36,7 +38,11 @@ export const useCourseStore = defineStore("course", () => {
   watch(
     () => statementIndex.value,
     () => {
-      saveProgress(currentCourse.value?.id!, statementIndex.value);
+      saveProgress(
+        currentCourse.value?.id!,
+        statementIndex.value,
+        !!userStore.user
+      );
     }
   );
 
@@ -84,17 +90,18 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function completeCourse(cId: number) {
+    // const userStore = useUserStore();
     const nextCourse = await fetchCompleteCourse(cId);
     // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
     // 当完成课程的时候并不希望 UI 立刻被重置
-    saveProgress(currentCourse.value?.id!, 0);
+    saveProgress(currentCourse.value?.id!, 0, !!userStore.user);
     return nextCourse;
   }
 
   async function setup(courseId: number) {
     if (courseId === currentCourse.value?.id) return;
 
-    const userStore = useUserStore();
+    // const userStore = useUserStore();
     if (!userStore.user) {
       let course = await fetchTryCourse();
       currentCourse.value = course;
@@ -102,8 +109,7 @@ export const useCourseStore = defineStore("course", () => {
       let course = await fetchCourse(courseId);
       currentCourse.value = course;
     }
-
-    statementIndex.value = await loadProgress(courseId);
+    statementIndex.value = await loadProgress(courseId, !!userStore.user);
   }
 
   function resetStatementIndex() {
