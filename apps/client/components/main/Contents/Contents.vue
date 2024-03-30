@@ -1,7 +1,7 @@
 <template>
   <div
     id="contents"
-    class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none bg-white dark:bg-slate-800 shadow p-2"
+    class="absolute top-24 left-0 w-80 z-10 border-l-4 border-fuchsia-500 pl-2 select-none bg-white dark:bg-slate-800 shadow p-2"
     :class="[isShowContents() && 'show']"
     v-bind="containerProps"
   >
@@ -16,7 +16,7 @@
         <div class="flex">
           <span>{{ item.index + 1 }}</span>
           <span>&nbsp-&nbsp</span>
-          <span class="flex-1">{{ item.data.chinese }}</span>
+          <span class="flex-1 truncate">{{ item.data.chinese }}</span>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@ import { computed, onMounted } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
-const { isShowContents, watchClickOutside } = useContent();
+const { toggleContents,isShowContents, watchClickOutside } = useContent();
 
 const coursesStore = useCourseStore();
 
@@ -56,6 +56,7 @@ function isActive(index: number) {
 }
 
 function jumpTo(index: number) {
+  toggleContents()
   coursesStore.toSpecificStatement(index);
 }
 
