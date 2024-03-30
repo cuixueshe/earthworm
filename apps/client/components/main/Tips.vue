@@ -1,5 +1,6 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
+<PrevAndNextBtn>
+  <div class="flex flex-col items-center">
     <div class="mb-4">
       <button
         class="tip-btn"
@@ -23,6 +24,7 @@
       <span class="ml-2">{{ spaceTipText }} </span>
     </div>
   </div>
+  </PrevAndNextBtn>
 </template>
 
 <script setup lang="ts">
@@ -33,6 +35,7 @@ import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import PrevAndNextBtn from "./PrevAndNextBtn.vue";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
