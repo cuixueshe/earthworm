@@ -157,8 +157,18 @@
       >
         {{ shortcutKeyStr }}
       </div>
-      <div class="mt-2 text-xs text-center">
-        {{ shortcutKeyTip }}
+      <div
+        class="flex justify-center gap-2 mt-2 text-xs text-center"
+        v-if="shortcutKeyTip"
+      >
+        <template
+          v-for="(s, i) in shortcutKeyTip.split(' ')"
+          :key="i"
+        >
+          <div class="px-2 py-1 rounded text-size-12 tip-btn">
+            {{ s }}
+          </div>
+        </template>
       </div>
       <div
         v-if="hasSameShortcutKey"
@@ -235,5 +245,8 @@ onUnmounted(() => {
 
 .btn-outline.btn-secondary {
   @apply text-fuchsia-500 outline-fuchsia-500;
+}
+.tip-btn {
+  @apply text-gray-500 bg-gray-100 dark:text-white dark:bg-gray-500;
 }
 </style>
