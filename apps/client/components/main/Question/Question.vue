@@ -175,14 +175,23 @@ function inputWidth(word: string) {
   return width;
 }
 
-const wrongTimes = ref(0);
-const wrongCallback = () => {
-  playErrorSound();
-  wrongTimes.value++;
-  if (wrongTimes.value >= 3) {
-    showAnswerTip();
+function answerError() {
+  let wrongTimes = 0;
+
+  function handleAnswerError() {
+    playErrorSound();
+    wrongTimes++;
+    if (wrongTimes >= 3) {
+      showAnswerTip();
+    }
   }
-};
+
+  return {
+    handleAnswerError,
+  };
+}
+
+const { handleAnswerError } = answerError();
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
@@ -193,7 +202,7 @@ function handleKeydown(e: KeyboardEvent) {
         showAnswer();
         hiddenAnswerTip();
       },
-      wrongCallback // 错误提示
+      handleAnswerError // 错误提示
     );
 
     return;
@@ -206,7 +215,7 @@ function handleKeydown(e: KeyboardEvent) {
         playRightSound(); // 正确提示
         showAnswer();
       },
-      errorCallback: wrongCallback, // 错误提示
+      errorCallback: handleAnswerError, // 错误提示
     },
   });
 }
