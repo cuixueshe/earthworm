@@ -158,7 +158,15 @@ function useShowAnswer(key: string) {
 function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
   handleShortcut();
 
+  function shouldHideAnswerTip() {
+    const { isAnswerTip, hiddenAnswerTip } = useAnswerTip();
+    if (isAnswerTip()) {
+      hiddenAnswerTip();
+    }
+  }
+
   function goToNextQuestion() {
+    shouldHideAnswerTip();
     if (courseStore.isAllDone()) {
       showSummary();
       return;
@@ -168,6 +176,7 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
   }
 
   function goToPreviousQuestion() {
+    shouldHideAnswerTip();
     courseStore.toPreviousStatement();
     showQuestion();
   }
