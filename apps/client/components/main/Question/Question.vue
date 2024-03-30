@@ -70,7 +70,7 @@ const {
   getInputCursorPosition,
   inputChangedCallback,
 });
-const { hiddenAnswerTip } = useAnswerTip();
+const { showAnswerTip } = useAnswerTip();
 
 watch(
   () => inputValue.value,
@@ -175,6 +175,15 @@ function inputWidth(word: string) {
   return width;
 }
 
+const wrongTimes = ref(0);
+const wrongCallback = () => {
+  playErrorSound();
+  wrongTimes.value++;
+  if (wrongTimes.value >= 3) {
+    showAnswerTip();
+  }
+};
+
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
@@ -183,10 +192,9 @@ function handleKeydown(e: KeyboardEvent) {
         playRightSound(); // 正确提示
         showAnswer();
       },
-      playErrorSound // 错误提示
+      wrongCallback // 错误提示
     );
 
-    hiddenAnswerTip();
     return;
   }
 
@@ -197,9 +205,7 @@ function handleKeydown(e: KeyboardEvent) {
         playRightSound(); // 正确提示
         showAnswer();
       },
-      errorCallback: () => {
-        playErrorSound();
-      },
+      errorCallback: wrongCallback, // 错误提示
     },
   });
 }
