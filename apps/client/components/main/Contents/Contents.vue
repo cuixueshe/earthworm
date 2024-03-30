@@ -1,7 +1,7 @@
 <template>
   <div
     id="contents"
-    class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none"
+    class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none bg-white dark:bg-slate-800 shadow p-2"
     :class="[isShowContents() && 'show']"
     v-bind="containerProps"
   >
@@ -63,7 +63,6 @@ onMounted(async () => {
   scrollTo(coursesStore.statementIndex);
   watchClickOutside(containerProps.ref.value!);
 });
-
 </script>
 
 <style scoped>
