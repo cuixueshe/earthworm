@@ -186,12 +186,28 @@ function answerError() {
     }
   }
 
+  function resetCloseTip() {
+    wrongTimes = 0;
+    hiddenAnswerTip();
+  }
+
   return {
     handleAnswerError,
+    resetCloseTip,
   };
 }
 
-const { handleAnswerError } = answerError();
+const { handleAnswerError, resetCloseTip } = answerError();
+
+watch(
+  () => courseStore.currentStatement?.id,
+  () => {
+    resetCloseTip();
+  },
+  {
+    immediate: true,
+  }
+);
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
