@@ -23,25 +23,13 @@
               </button>
             </td>
           </tr>
-          <tr>
-            <td>切换答题/答案页面</td>
-            <td>{{ shortcutKeys.answer }}</td>
-            <td>
-              <button
-                text
-                @click="handleEdit('answer')"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
           <tr class="hover">
-            <td class="label-text">跳过当前问题</td>
-            <td class="text-center">{{ shortcutKeys.skip }}</td>
+            <td class="label-text">显示隐藏/答案预览</td>
+            <td class="text-center">{{ shortcutKeys.answer }}</td>
             <td class="text-center">
               <button
                 class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('skip')"
+                @click="handleEdit(SHORTCUT_KEY_TYPES.ANSWER)"
               >
                 编辑
               </button>
@@ -53,7 +41,19 @@
             <td class="text-center">
               <button
                 class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('previous')"
+                @click="handleEdit(SHORTCUT_KEY_TYPES.PREVIOUS)"
+              >
+                编辑
+              </button>
+            </td>
+          </tr>
+          <tr class="hover">
+            <td class="label-text">跳过当前问题</td>
+            <td class="text-center">{{ shortcutKeys.skip }}</td>
+            <td class="text-center">
+              <button
+                class="btn btn-sm btn-outline btn-secondary"
+                @click="handleEdit(SHORTCUT_KEY_TYPES.SKIP)"
               >
                 编辑
               </button>
