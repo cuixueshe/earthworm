@@ -59,6 +59,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
@@ -74,6 +75,7 @@ const { goToNextQuestion, goToPreviousQuestion } = usePrevAndNextQuestion(
 const PREV_BTN_TIP = `点击跳转至上一题 ( 快捷键: ${shortcutKeys.value.previous} )`;
 const NEXT_BTN_TIP = `点击跳转至下一题 ( 快捷键: ${shortcutKeys.value.skip} )`;
 
+const { isAnswerTip, hiddenAnswerTip } = useAnswerTip();
 const { showQuestion } = useGameMode();
 const { showSummary } = useSummary();
 const courseStore = useCourseStore();
@@ -83,6 +85,9 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
   handleShortcut();
 
   function goToNextQuestion() {
+    if (isAnswerTip()) {
+      hiddenAnswerTip();
+    }
     if (courseStore.isAllDone()) {
       showSummary();
       return;
@@ -92,6 +97,9 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
   }
 
   function goToPreviousQuestion() {
+    if (isAnswerTip()) {
+      hiddenAnswerTip();
+    }
     courseStore.toPreviousStatement();
     showQuestion();
   }
