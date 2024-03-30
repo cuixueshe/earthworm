@@ -1,9 +1,11 @@
 <template>
-  <div class="flex items-center justify-between">
+  <div
+    class="flex items-center justify-between absolute left-0 right-0 bottom-[14vh] xl:w-[1200px] m-auto xl:px-2 px-24"
+  >
     <!-- left arrow button: go to previous question -->
     <div class="w-12 h-12">
       <button
-        class="arrow-btn tooltip"
+        class="arrow-btn tooltip z-10"
         :data-tip="PREV_BTN_TIP"
         @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
@@ -25,15 +27,16 @@
         </svg>
       </button>
     </div>
-    <slot></slot>
     <!-- right arrow button: go to next question -->
     <div class="w-12 h-12">
       <button
-        class="arrow-btn tooltip"
+        class="arrow-btn tooltip z-10"
         @click="goToNextQuestion"
-        :data-tip="NEXT_BTN_TIP"totalQuestionsCount
-        v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
-
+        :data-tip="NEXT_BTN_TIP"
+        totalQuestionsCount
+        v-show="
+          courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount
+        "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
