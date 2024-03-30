@@ -48,8 +48,7 @@ export function useShortcutKeyMode() {
   const shortcutKeyTip = computed(() => {
     return shortcutKeyStr.value.replace(/\+/g, " 加上 ");
   });
-  const hasSameShortcutKey  = ref(false)
-
+  const hasSameShortcutKey = ref(false);
 
   // 初始化快捷键
   setShortcutKeys();
@@ -71,7 +70,7 @@ export function useShortcutKeyMode() {
 
   function handleCloseDialog() {
     showModal.value = false;
-    hasSameShortcutKey.value = false
+    hasSameShortcutKey.value = false;
   }
 
   function getKeyModifier(e: KeyboardEvent) {
@@ -93,11 +92,11 @@ export function useShortcutKeyMode() {
   function isEnterKey(key: string) {
     return key === KEYBOARD.ENTER;
   }
-  function checkShortcutKey(key: string) {
+
+  function checkSameShortcutKey(key: string) {
     const keys = Object.values(shortcutKeys.value);
-    const hasSameKey = keys.some(x => x === key && x !== shortcutKeys.value[currentKeyType.value]);
-    hasSameShortcutKey.value = hasSameKey;
-    return hasSameKey;
+    const currentShortcutKey = shortcutKeys.value[currentKeyType.value];
+    return keys.some((x) => x === key && x !== currentShortcutKey);
   }
   /**
    * 参考于 VSCode 快捷键
@@ -111,7 +110,9 @@ export function useShortcutKeyMode() {
     e.preventDefault();
     const mainKey = getKeyModifier(e);
     if (!mainKey && isEnterKey(e.key)) {
-      if(!checkShortcutKey(shortcutKeyStr.value)){
+      if (checkSameShortcutKey(shortcutKeyStr.value)) {
+        hasSameShortcutKey.value = true;
+      } else {
         saveShortcutKeys();
         handleCloseDialog();
       }
