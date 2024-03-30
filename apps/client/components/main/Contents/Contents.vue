@@ -8,12 +8,15 @@
     <div v-bind="wrapperProps">
       <div
         v-for="item in list"
-        class="mb-2"
+        class="mb-2 group"
         :key="item.data.id"
         :class="getItemClassNames(item.index)"
         @click="jumpTo(item.index)"
       >
-        <div class="flex">
+        <div
+          class="tooltip flex-start"
+          :data-tip="item.data.chinese"
+        >
           <span>{{ item.index + 1 }}</span>
           <span>&nbsp-&nbsp</span>
           <span
