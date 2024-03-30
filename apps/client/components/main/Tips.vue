@@ -1,67 +1,44 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[16vh] flex flex-col items-center">
-    <div class="w-[300px] mb-4 flex items-center">
-      <div class="flex">
-        <button
-          class="tip-btn-ghost"
-          @click="playSound"
-        >
-          <template
-            v-for="(s, i) in getShortcutKeyItems('sound')"
-            :key="s"
-          >
-            <div>
-              <span class="px-2 py-1 rounded text-size-12 tip-btn">
-                {{ s }}
-              </span>
-              <span
-                v-if="i !== getShortcutKeyItems('sound').length - 1"
-                class="px-1"
-                >+</span
-              >
-            </div>
-          </template>
-        </button>
-      </div>
-      <span class="ml-2">play sound</span>
+  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
+    <div class="mb-4">
+      <button
+        class="tip-btn"
+        @click="playSound"
+      >
+        ⌃ {{ shortcutKeys.sound }}
+      </button>
+      <span class="ml-2">播放发音</span>
     </div>
-    <div class="w-[300px] flex items-center mb-4">
-      <div class="flex">
-        <button
-          class="tip-btn-ghost"
-          @click="toggleGameMode"
-        >
-          <template
-            v-for="(s, i) in getShortcutKeyItems('answer')"
-            :key="s"
-          >
-            <div>
-              <span class="px-2 py-1 rounded text-size-12 tip-btn">
-                {{ s }}
-              </span>
-              <span
-                v-if="i !== getShortcutKeyItems('answer').length - 1"
-                class="px-1"
-                >+</span
-              >
-            </div>
-          </template>
-        </button>
-      </div>
+    <div class="mb-4">
+      <button
+        class="tip-btn"
+        @click="toggleGameMode"
+      >
+        ⌃ {{ shortcutKeys.answer }}
+      </button>
       <span class="ml-2">{{ toggleTipText }}</span>
     </div>
-    <div class="w-[300px] flex items-center mb-4">
-      <div class="flex">
-        <button
-          class="tip-btn-ghost"
-          @click="toggleGameMode"
-        >
-          <div>
-            <span class="px-2 py-1 rounded text-size-12 tip-btn"> Space </span>
-          </div>
-        </button>
-      </div>
-      <span class="ml-2">fix incorrect word</span>
+    <div class="mb-4">
+      <button
+        class="mr-1 tip-btn"
+        @click="goToPreviousQuestion"
+      >
+        ⌃ {{ shortcutKeys.previous }}
+      </button>
+      <span class="ml-2">上一题</span>
+    </div>
+    <div class="mb-4">
+      <button
+        class="mr-1 tip-btn"
+        @click="goToNextQuestion"
+      >
+        ⌃ {{ shortcutKeys.skip }}
+      </button>
+      <span class="ml-2">下一题</span>
+    </div>
+    <div>
+      <button class="tip-btn">Space</button>
+      <span class="ml-2">{{ spaceTipText }} </span>
     </div>
   </div>
 </template>
@@ -73,11 +50,20 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
+const { goToNextQuestion, goToPreviousQuestion } = usePrevAndNextQuestion(
+  shortcutKeys.value.previous,
+  shortcutKeys.value.skip
+);
+
+const { showQuestion } = useGameMode();
+const { showSummary } = useSummary();
+const courseStore = useCourseStore();
 
 function getShortcutKeyItems(type: string) {
   return shortcutKeys.value[type].split("+");
@@ -88,15 +74,24 @@ const toggleTipText = computed(() => {
   const { isAnswer } = useGameMode();
   const { isAnswerTip } = useAnswerTip();
   if (isAnswer()) {
-    text = "again";
+    text = "再来一次";
   } else {
     if (isAnswerTip()) {
-      text = "close answer";
+      text = "隐藏答案";
     } else {
-      text = "show answer";
+      text = "显示答案";
     }
   }
   return text;
+});
+
+const spaceTipText = computed(() => {
+  const { isAnswer } = useGameMode();
+  if (isAnswer()) {
+    return "下一题";
+  } else {
+    return "修复错误单词";
+  }
 });
 
 function usePlaySound(key: string) {
@@ -160,6 +155,42 @@ function useShowAnswer(key: string) {
 
   return {
     toggleGameMode,
+  };
+}
+
+// 上一题/下一题
+function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
+  handleShortcut();
+
+  function goToNextQuestion() {
+    if (courseStore.isAllDone()) {
+      showSummary();
+      return;
+    }
+    courseStore.toNextStatement();
+    showQuestion();
+  }
+
+  function goToPreviousQuestion() {
+    courseStore.toPreviousStatement();
+    showQuestion();
+  }
+
+  function handleShortcut() {
+    onMounted(() => {
+      registerShortcut(nextKey, goToNextQuestion);
+      registerShortcut(prevKey, goToPreviousQuestion);
+    });
+
+    onUnmounted(() => {
+      cancelShortcut(prevKey, goToNextQuestion);
+      cancelShortcut(nextKey, goToPreviousQuestion);
+    });
+  }
+
+  return {
+    goToNextQuestion,
+    goToPreviousQuestion,
   };
 }
 </script>

@@ -12,12 +12,12 @@ const { rankingSelf, isLoading } = defineProps<{
 
 <template>
   <div
-    class="w-full h-12 absolute flex flex-col items-center justify-center left-0 bottom-0 border-t border-gray-200 dark:border-gray-600"
+    class="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full h-12 border-t border-gray-200 dark:border-gray-600"
   >
     <div class="flex items-center text-sm">
       <span class="font-bold">我的排名：</span>
       <template v-if="isLoading">
-        <span>排行榜正在向你飞奔而来……</span>
+        <span>数据正在向你飞奔而来……</span>
       </template>
       <template v-else-if="!user">
         <span>登录后和小伙伴们一决高下！😊 </span>

@@ -25,7 +25,9 @@ describe("user defined shortcut key", () => {
     it("should be equal to cache data if localStorage has cache", () => {
       const storeShortcutKeys = {
         sound: "Ctrl+s",
-        answer: "Ctrl+.",
+        previous: "Ctrl+,",
+        answer: "Ctrl+8",
+        skip: "Ctrl+.",
       };
 
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(storeShortcutKeys));
