@@ -5,10 +5,13 @@ const contentsVisible = ref(false);
 let isOnClickOutside = false;
 
 export function useContent() {
-
   function toggleContents() {
     if (isOnClickOutside) return;
     contentsVisible.value = !contentsVisible.value;
+  }
+
+  function closeContents() {
+    contentsVisible.value = false;
   }
 
   function isShowContents() {
@@ -31,6 +34,7 @@ export function useContent() {
   return {
     isShowContents,
     toggleContents,
+    closeContents,
     watchClickOutside,
   };
 }
