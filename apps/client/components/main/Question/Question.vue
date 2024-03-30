@@ -70,7 +70,7 @@ const {
   getInputCursorPosition,
   inputChangedCallback,
 });
-const { showAnswerTip } = useAnswerTip();
+const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
 watch(
   () => inputValue.value,
@@ -191,6 +191,7 @@ function handleKeydown(e: KeyboardEvent) {
       () => {
         playRightSound(); // 正确提示
         showAnswer();
+        hiddenAnswerTip();
       },
       wrongCallback // 错误提示
     );
