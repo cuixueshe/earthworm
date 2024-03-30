@@ -1,10 +1,10 @@
 <template>
   <header
-    class="sticky top-0 bg-transparent bg-opacity-50 backdrop-blur-xl z-50"
+    class="sticky top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
-        <div class="left flex w-full items-center">
+        <div class="left flex w-full items-center justify-between">
           <NuxtLink to="/">
             <div class="logo flex items-center">
               <img
@@ -15,7 +15,7 @@
                 alt="earth-worm-logo"
               />
               <h1
-                class="text-purple-500 text-2xl font-extrabold leading-normal text-wrap"
+                class="text-2xl font-extrabold leading-normal text-wrap dark:text-white"
               >
                 Earthworm
               </h1>
@@ -24,7 +24,7 @@
 
           <nav
             aria-label="Global"
-            class="hidden md:block mx-auto"
+            class="hidden md:block mr-8"
           >
             <ul class="flex items-center text-md">
               <template
@@ -33,7 +33,7 @@
               >
                 <li class="px-4">
                   <a
-                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white"
+                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                     :href="`#${opt_item.anchor}`"
                   >
                     {{ opt_item.name }}
@@ -45,7 +45,7 @@
         </div>
 
         <div class="login-out flex justify-end items-center flex-1">
-          <button
+          <!-- <button
             class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
             @click="toggleDarkMode"
           >
@@ -76,9 +76,9 @@
                 d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
               />
             </svg>
-          </button>
+          </button> -->
 
-          <div class="flex items-center ml-5">
+          <!-- <div class="flex items-center ml-5">
             <button
               v-show="
                 (!userStore.user && route.name !== 'Auth-Login') ||
@@ -92,7 +92,7 @@
             >
               {{ route.name === "Auth-Login" ? "Register" : "Login" }}
             </button>
-          </div>
+          </div> -->
 
           <div class="logged-in flex items-center">
             <div class="mx-2 font-500">{{ userStore.user?.username }}</div>

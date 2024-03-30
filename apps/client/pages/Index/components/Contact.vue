@@ -1,9 +1,9 @@
 <template>
   <footer id="contact">
     <div
-      class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
+      class="mx-auto max-w-screen-xl space-y-6 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-6"
     >
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div>
           <div class="flex items-center">
             <img
@@ -14,13 +14,13 @@
               alt="earth-worm-logo"
             />
             <span
-              class="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-gray-300 mt-4"
+              class="text-3xl mt-4"
               >Earthworm</span
             >
           </div>
 
           <p class="mt-4 max-w-xs text-base leading-relaxed typing">
-            一起来加入我们Earthworm吧 ！...
+            Join us in Earthworm!...
           </p>
 
           <ul class="mt-8 flex gap-6">
@@ -81,7 +81,7 @@
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
                   1on1 Coaching
@@ -90,7 +90,7 @@
 
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
                   Accounts Review
@@ -120,7 +120,7 @@
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="#Contact"
+                  href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
                   Contact
@@ -129,7 +129,7 @@
 
               <li>
                 <a
-                  href="#FAQ"
+                  href="#faq"
                   class="transition hover:opacity-75"
                 >
                   FAQs

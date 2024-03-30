@@ -6,7 +6,8 @@
     <CommonTitle
       title="Frequently Asked Questions"
       :description="[
-        'If you can not find what you are looking for, email our support team and if you are lucky someone will get back to you.',
+        `If you can't find what you're looking for, please send an email to our team`,
+        `we'll get back to you as soon as possible!`,
       ]"
     />
     <div class="divide-y divide-gray-500 space-y-4 py-16">
@@ -21,7 +22,7 @@
           <summary
             class="flex justify-between items-center cursor-pointer py-5"
           >
-            <h2 class="text-lg font-medium">{{ qs_item.title }}</h2>
+            <h2 class="text-lg font-medium dark:text-white opacity-75">{{ qs_item.title }}</h2>
             <span class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

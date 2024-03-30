@@ -9,14 +9,12 @@
         'An open-source, collaborative, user-friendly English learning tool.',
       ]"
     />
-    <section class="flex flex-col py-8">
-      <div class="flex">
+    <section class="flex py-8 w-full justify-around">
         <div
-          class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-2xl"
+          class="border border-gray-700 w-[45%] h-[360px] rounded-2xl bg-[#111128] flex justify-center items-center flex-shrink-0 "
         >
-          <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
-            <div class="pr-2 overflow-x-hidden overflow-y-auto">
-              <h2 class="py-4 text-xl font-bold">快速上手</h2>
+          <div class="w-[97%] h-[96%] rounded-xl bg-[#17172e] border border-gray-700 overflow-x-hidden overflow-y-auto hide-scrollbar px-5 py-4">
+              <h2 class="py-4 text-xl font-bold bg-[#232339] rounded-lg text-center mb-3">快速上手</h2>
               <h3 class="pb-2 text-base font-semibold">当前页面</h3>
               <p class="py-1">
                 点击按钮
@@ -56,7 +54,7 @@
               <p class="py-1 leading-7">
                 底部提示面板的按钮
                 <a
-                  class="ml-1 text-[#3498db] hover:text-fuchsia-500"
+                  class="ml-1 text-[#3498db] hover:text-theme-dark"
                   href="https://www.bilibili.com/video/BV1py421q7Mp/"
                 >
                   👉 一分钟点我快速了解</a
@@ -101,15 +99,13 @@
                   class="animate-wink inline w-1 h-8 dark:bg-white bg-slate-900 mx-2 text-sm p-[2px]"
                 ></i>
               </p>
-            </div>
           </div>
         </div>
         <div
-          class="w-1/2 mx-2 my-8 transition duration-300 border rounded-3xl dark:border-slate-600 bg-gradient-to-b from-neutral-50/90 to-neutral-100/90 dark:from-neutral-600/90 dark:to-neutral-450/90 hover:shadow-xl"
+          class="border border-gray-700 w-[45%] h-[360px] rounded-2xl bg-[#111128] flex justify-center items-center flex-shrink-0"
         >
-          <div class="h-[360px] flex flex-col pt-4 pl-4 pb-4 text-sm">
-            <div class="pr-2 overflow-x-hidden overflow-y-auto">
-              <h2 class="py-4 text-xl font-bold">
+          <div class="w-[97%] h-[96%] rounded-xl bg-[#17172e] border border-gray-700 overflow-x-hidden overflow-y-auto hide-scrollbar px-5 py-4">
+              <h2 class="py-4 text-xl font-bold bg-[#232339] rounded-lg text-center mb-3">
                 学习原理：通过连词造句的方法来练习英语 😄
               </h2>
               <h3 class="pb-2 text-base font-semibold">以句子为核心</h3>
@@ -132,11 +128,7 @@
                 ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
               </p>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="w-1/2"></div>
-      <div class="w-1/2"></div>
     </section>
   </div>
   <CommonDivider />
@@ -144,4 +136,17 @@
 
 <script setup lang="ts"></script>
 
-<style scoped></style>
+<style scoped>
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+</style>
