@@ -55,7 +55,7 @@ export function useShortcutKeyMode() {
     ...DEFAULT_SHORTCUT_KEYS,
   });
   const shortcutKeyTip = computed(() => {
-    return shortcutKeyStr.value.replace(/\+/g, " ");
+    return shortcutKeyStr.value.replace(/\+/g, "+");
   });
   const hasSameShortcutKey = ref(false);
 

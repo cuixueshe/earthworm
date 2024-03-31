@@ -2,18 +2,15 @@
   <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
     <div class="mb-4">
       <button
-        class="btn btn-sm btn-ghost tip-ghost-btn"
+        class="btn btn-ghost"
         @click="playSound"
       >
-        <div
-          class="flex justify-center gap-2 text-xs text-center items-center"
-        >
+        <div class="flex items-center justify-center gap-2 text-center">
           <div
-            class="px-2 py-1 text-size-12 rounded tip-btn"
-            v-for="(s, i) in shortcutKeys.sound.split('+')"
-            :key="i"
+            v-for="key in parseShortcutKeys(shortcutKeys.sound)"
+            class="kbd"
           >
-            {{ s }}
+            {{ key }}
           </div>
         </div>
         <span>播放发音</span>
@@ -21,26 +18,23 @@
     </div>
     <div class="mb-4">
       <button
-        class="btn btn-sm btn-ghost tip-ghost-btn"
+        class="btn btn-ghost"
         @click="toggleGameMode"
       >
-        <div
-          class="flex justify-center gap-2 text-xs text-center items-center"
-        >
+        <div class="flex items-center justify-center gap-2 text-center">
           <div
-            class="px-2 py-1 rounded text-size-12 tip-btn"
-            v-for="(s, i) in shortcutKeys.answer.split('+')"
-            :key="i"
+            v-for="key in parseShortcutKeys(shortcutKeys.answer)"
+            class="kbd"
           >
-            {{ s }}
+            {{ key }}
           </div>
         </div>
         <span>{{ toggleTipText }}</span>
       </button>
     </div>
     <div>
-      <button class="btn btn-sm btn-ghost tip-ghost-btn">
-        <span class="px-2 py-1 text-size-12 rounded tip-btn">Space</span>
+      <button class="btn btn-ghost">
+        <span class="kbd">Space</span>
         <span>{{ spaceTipText }} </span>
       </button>
     </div>
@@ -54,7 +48,11 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import {
+  cancelShortcut,
+  parseShortcutKeys,
+  registerShortcut,
+} from "~/utils/keyboardShortcuts";
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
@@ -148,12 +146,3 @@ function useShowAnswer(key: string) {
   };
 }
 </script>
-
-<style scoped>
-.tip-btn {
-  @apply  text-gray-500 bg-gray-100 dark:text-white dark:bg-gray-500
-}
-.tip-ghost-btn {
-  @apply rounded hover:text-gray-100 hover:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500;
-}
-</style>

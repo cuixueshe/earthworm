@@ -82,7 +82,7 @@ describe("user defined shortcut key", () => {
       } as KeyboardEvent);
 
       expect(shortcutKeyStr.value).toEqual("Ctrl+s");
-      expect(shortcutKeyTip.value).toEqual("Ctrl s");
+      expect(shortcutKeyTip.value).toEqual("Ctrl+s");
     });
 
     it("should be the shortcut key is set successfully when the dialog is open (single key)", () => {

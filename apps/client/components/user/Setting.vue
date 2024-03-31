@@ -15,13 +15,14 @@
             <tr class="hover">
               <td class="label-text">{{ item.label }}</td>
               <td class="text-center">
-                <div class="flex justify-center gap-2 text-xs text-center items-center">
+                <div
+                  class="flex items-center justify-center gap-2 text-xs text-center"
+                >
                   <div
-                    class="px-2 py-1 text-size-12 rounded tip-btn"
-                    v-for="(s, i) in shortcutKeys[item.type].split('+')"
-                    :key="i"
+                    class="kbd"
+                    v-for="key in parseShortcutKeys(shortcutKeys[item.type])"
                   >
-                    {{ s }}
+                    {{ key }}
                   </div>
                 </div>
               </td>
@@ -133,8 +134,16 @@
       >
         {{ shortcutKeyStr }}
       </div>
-      <div class="mt-2 text-xs text-center">
-        {{ shortcutKeyTip }}
+      <div
+        v-if="shortcutKeyTip"
+        class="flex justify-center gap-2 mt-2 text-xs text-center"
+      >
+        <div
+          v-for="key in parseShortcutKeys(shortcutKeyTip)"
+          class="kbd"
+        >
+          {{ key }}
+        </div>
       </div>
       <div
         v-if="hasSameShortcutKey"
@@ -158,19 +167,20 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import {
-PronunciationType,
-usePronunciation,
+  PronunciationType,
+  usePronunciation,
 } from "~/composables/user/pronunciation";
 import {
-SHORTCUT_KEY_TYPES,
-useShortcutKeyMode,
+  SHORTCUT_KEY_TYPES,
+  useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 import {
-useAutoPronunciation,
-useKeyboardSound,
+  useAutoPronunciation,
+  useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
@@ -194,24 +204,25 @@ const {
   handleKeydown,
 } = useShortcutKeyMode();
 
-const shortcutKeyBindList =[
+const shortcutKeyBindList = [
   {
-    label:"播放发音",
-    type:SHORTCUT_KEY_TYPES.SOUND,
+    label: "播放发音",
+    type: SHORTCUT_KEY_TYPES.SOUND,
   },
   {
-    label:"显示隐藏/答案预览",
-    type:SHORTCUT_KEY_TYPES.ANSWER,
+    label: "显示隐藏/答案预览",
+    type: SHORTCUT_KEY_TYPES.ANSWER,
   },
   {
-    label:"返回上个问题",
-    type:SHORTCUT_KEY_TYPES.PREVIOUS,
+    label: "返回上个问题",
+    type: SHORTCUT_KEY_TYPES.PREVIOUS,
   },
   {
-    label:"跳过当前问题",
-    type:SHORTCUT_KEY_TYPES.SKIP,
-  }
-]
+    label: "跳过当前问题",
+    type: SHORTCUT_KEY_TYPES.SKIP,
+  },
+];
+
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);
 });
@@ -229,8 +240,5 @@ onUnmounted(() => {
 
 .btn-outline.btn-secondary {
   @apply text-fuchsia-500 outline-fuchsia-500;
-}
-.tip-btn {
-  @apply  text-gray-500 bg-gray-100 dark:text-white dark:bg-gray-500
 }
 </style>
