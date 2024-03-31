@@ -50,8 +50,8 @@ describe('user learn record service', () => {
       const date = new Date('2024-01-01');
       const { start, end } = userLearnRecordService.dateRange(date);
 
-      expect(start.toISOString()).toBe('2023-12-31T16:00:00.000Z');
-      expect(end.toISOString()).toBe('2024-01-01T15:59:59.999Z');
+      expect(start.toLocaleString()).toBe('2024/1/1 00:00:00');
+      expect(end.toLocaleString()).toBe('2024/1/1 23:59:59');
     });
   });
 
