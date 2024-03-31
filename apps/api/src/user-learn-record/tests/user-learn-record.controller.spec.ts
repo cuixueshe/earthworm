@@ -5,7 +5,6 @@ import {
   createEmptyUserLearnRecordList,
   createUserLearnRecordList,
 } from '../../../test/fixture/userLearnRecord';
-import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { UserLearnRecordController } from '../user-learn-record.controller';
 import { UserLearnRecordService } from '../user-learn-record.service';
 
@@ -57,7 +56,6 @@ async function setupTesting() {
 
   const moduleRef: TestingModule = await Test.createTestingModule({
     imports: [
-      MockRedisModule,
       JwtModule.register({
         secret: process.env.SECRET,
         signOptions: { expiresIn: '7d' },

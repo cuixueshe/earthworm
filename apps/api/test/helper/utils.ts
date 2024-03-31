@@ -13,6 +13,7 @@ export async function cleanDB(db: DbType) {
   await db.execute(sql`TRUNCATE TABLE courses;`);
   await db.execute(sql`TRUNCATE TABLE statements;`);
   await db.execute(sql`TRUNCATE TABLE users;`);
+  await db.execute(sql`TRUNCATE TABLE \`user-learn-record\`;`);
 
   await db.execute(sql`SET FOREIGN_KEY_CHECKS = 1;`);
 }
