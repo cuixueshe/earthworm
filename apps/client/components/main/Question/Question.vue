@@ -19,8 +19,8 @@
         type="text"
         v-model="inputValue"
         @keydown="handleKeydown"
-        @focus="handleInputFocus"
-        @blur="handleBlur"
+        @focus="focusInput"
+        @blur="blurInput"
         @dblclick.prevent
         @mousedown="preventCursorMove"
         autoFocus
@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from "vue";
+import { onMounted, watch } from "vue";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
@@ -43,19 +43,26 @@ import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
+import { useQuestionInput } from "./questionInput";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
-const inputEl = ref<HTMLInputElement>();
-const { setInputCursorPosition, getInputCursorPosition, preventCursorMove } =
-  useCursor();
-const { focusing, handleInputFocus, handleBlur } = useFocus();
+const {
+  inputEl,
+  focusing,
+  focusInput,
+  blurInput,
+  setInputCursorPosition,
+  getInputCursorPosition,
+} = useQuestionInput();
+
 const { showAnswer } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
+const { handleAnswerError, resetCloseTip } = answerError();
 
 const {
   inputValue,
@@ -72,10 +79,23 @@ const {
 });
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
+onMounted(() => {
+  focusInput();
+  resetCloseTip();
+});
+
 watch(
   () => inputValue.value,
   (val) => {
     setInputValue(val);
+  }
+);
+
+watch(
+  () => courseStore.statementIndex,
+  () => {
+    focusInput();
+    resetCloseTip();
   }
 );
 
@@ -186,12 +206,16 @@ function answerError() {
     }
   }
 
+  function resetCloseTip() {
+    wrongTimes = 0;
+    hiddenAnswerTip();
+  }
+
   return {
     handleAnswerError,
+    resetCloseTip,
   };
 }
-
-const { handleAnswerError } = answerError();
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
@@ -220,50 +244,11 @@ function handleKeydown(e: KeyboardEvent) {
   });
 }
 
-function useCursor() {
-  function setInputCursorPosition(position: number) {
-    inputEl.value?.setSelectionRange(position, position);
-  }
-
-  function getInputCursorPosition() {
-    return inputEl.value?.selectionStart || 0;
-  }
-
-  function preventCursorMove(event: MouseEvent) {
-    // 阻止 mousedown 事件的默认行为
-    // 它会改变 input 光标的位置
-    event.preventDefault();
-    // 只允许 input focus
-    handleInputFocus();
-  }
-
-  return {
-    setInputCursorPosition,
-    getInputCursorPosition,
-    preventCursorMove,
-  };
-}
-
-function useFocus() {
-  const focusing = ref(true);
-
-  onMounted(() => {
-    handleInputFocus();
-  });
-
-  function handleInputFocus() {
-    focusing.value = true;
-    inputEl.value?.focus();
-  }
-
-  function handleBlur() {
-    focusing.value = false;
-  }
-
-  return {
-    focusing,
-    handleInputFocus,
-    handleBlur,
-  };
+function preventCursorMove(event: MouseEvent) {
+  // 阻止 mousedown 事件的默认行为
+  // 它会改变 input 光标的位置
+  event.preventDefault();
+  // 只允许 input focus
+  focusInput();
 }
 </script>
