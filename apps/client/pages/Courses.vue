@@ -36,11 +36,9 @@ import Loading from "~/components/Loading.vue";
 import CourseCard from "~/components/courses/CourseCard.vue";
 
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
-import { useCourseTime } from "~/composables/courses/time";
 import { type Course } from "~/store/course";
 
-const { activeCourseId, updateActiveCourseId } = useActiveCourseId();
-const { restCourseTime } = useCourseTime();
+const { updateActiveCourseId } = useActiveCourseId();
 const courses = ref<Course[]>([]);
 
 async function getCourseHistory() {
@@ -74,8 +72,6 @@ onMounted(async () => {
 });
 
 function handleChangeCourse(course: Course) {
-  if (activeCourseId.value === course.id) return;
   updateActiveCourseId(course.id);
-  restCourseTime();
 }
 </script>

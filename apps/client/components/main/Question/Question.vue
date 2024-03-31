@@ -86,7 +86,7 @@ onMounted(() => {
 
 watch(
   () => inputValue.value,
-  (val, oldVal) => {
+  (val) => {
     setInputValue(val);
   }
 );

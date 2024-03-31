@@ -84,7 +84,6 @@
 import { watch } from "vue";
 import { useRouter } from "vue-router";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
-import { useCourseTime } from "~/composables/courses/time";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
@@ -103,7 +102,6 @@ const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
-const { getCourseTime, restCourseTime, courseTimeSummary } = useCourseTime();
 
 watch(showModal, (val) => {
   if (val) {
@@ -135,7 +133,6 @@ async function completeCourse() {
     );
     nextCourseId = nextCourse.id;
     updateActiveCourseId(nextCourseId);
-    getCourseTime();
   }
 }
 
@@ -146,7 +143,6 @@ function useDoAgain() {
     courseStore.doAgain();
     hideSummary();
     showQuestion();
-    restCourseTime();
   }
 
   return {
@@ -172,7 +168,6 @@ function useGoToNextCourse() {
       showAuthRequireModal();
       return;
     }
-    restCourseTime();
 
     router.push(`/main/${nextCourseId}`);
   }
