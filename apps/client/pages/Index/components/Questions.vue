@@ -1,6 +1,6 @@
 <template>
   <section
-    class="text-gray-600 body-font overflow-hidden"
+    class="text-gray-600 body-font overflow-hidden pt-24"
     id="faq"
   >
     <CommonTitle
@@ -10,7 +10,7 @@
         `we'll get back to you as soon as possible!`,
       ]"
     />
-    <div class="divide-y divide-gray-500 space-y-4 py-16">
+    <div class="divide-y divide-gray-800 space-y-4 py-16">
       <template
         v-for="(qs_item, qs_index) in QUESTIONS"
         :key="qs_index"
@@ -59,33 +59,33 @@
       </template>
     </div>
   </section>
+  <CommonDivider />
 </template>
 
 <script setup lang="ts">
 const QUESTIONS = [
   {
-    title: "How to give priority to the latest version?",
+    title: "How can I recover or reset my account password if I forget it?",
     content: [
-      "If you are our Pro user, use xxx-> xxx to update the API. Thank you.",
+      `If you forget your account password, you can click on the "Forgot password" link on the login page and follow the instructions for the password reset process.`,
     ],
   },
   {
-    title: "Will there be an one-to-one service if you buy the Pro version?",
+    title: "How can I update my personal profile or account information?",
     content: [
-      "At present, for our Pro users, we have special customer service personnel to dock with you to help you solve all your problems. Thank you.",
-      "At present, for our Pro users, we have special customer service personnel to dock",
+      "To update your personal profile or account information, you can log in to your account and navigate to the personal settings page where you can update your information and save the changes.",
     ],
   },
   {
-    title: "How to give priority to the latest version?",
+    title: "What should I do if I encounter issues while using the application and need technical support?",
     content: [
-      "If you are our Pro user, use xxx-> xxx to update the API. Thank you.",
+      "If you encounter issues while using the application and need technical support, you can contact our technical support team. You can find the relevant contact information in the application's help center or contact page.",
     ],
   },
   {
-    title: "Will there be an one-to-one service if you buy the Pro version?",
+    title: "How should I report an error or bug I encountered in the app to the development team?",
     content: [
-      "At present, for our Pro users, we have special customer service personnel to dock with you to help you solve all your problems. Thank you.",
+      "If you come across an error or bug in the app, you can report the issue to the development team through our official website or the app's feedback channel, providing detailed descriptions and steps to reproduce the problem. ",
     ],
   },
 ];

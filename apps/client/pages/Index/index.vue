@@ -1,78 +1,127 @@
 <template>
   <div class="container w-full font-customFont">
-    <NoticeBar v-if="showNoticeBar" />
-    <section
-      class="text-gray-500 mt-28"
-      id="home"
-    >
-      <CommonTitle
-        title="An Friendly English learning tool."
-        :description="[
-          `Use conjunctions, task splitting, repetition, i +1 to help you learn English`,
-          `Most importantly, you will have good positive feedback`,
-        ]"
+    <template v-if="isLoading">
+      <Loading></Loading>
+    </template>
+    <template v-else>
+      <NoticeBar v-if="showNoticeBar" />
+      <section
+        class="text-gray-500 pt-28"
+        id="home"
       >
-        <div class="my-10 flex flex-wrap justify-center gap-4 font-customFont items-center">
-          <button
-            class="btn"
-            type="button"
+        <CommonTitle
+          title="An Friendly English learning tool."
+          :description="[
+            `Use conjunctions, task splitting, repetition, i +1 to help you learn English.`,
+            `Most importantly, you will have good positive feedback`,
+          ]"
+        >
+          <div
+            class="my-10 flex flex-wrap justify-center gap-4 font-customFont items-center"
           >
-            <strong>Get Started</strong>
-            <div id="container-stars">
-              <div id="stars"></div>
-            </div>
+            <button
+              @click="handleKeydown"
+              class="btn"
+              type="button"
+            >
+              <strong>Get Started</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
 
-            <div id="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-          </button>
-          <div class='dark:text-white ml-8'>Start your English study.</div>
-          <!-- <a
-            class="block w-full rounded border border-purple-600 bg-purple-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-purple-600 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-            href="#"
-          >
-            Get Started
-          </a>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+            <div class="dark:text-white ml-8">Start your English study.</div>
+          </div>
 
-          <a
-            class="block w-full rounded border border-purple-600 px-12 py-3 text-sm font-medium text-black hover:bg-purple-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto dark:text-white"
-            href="#"
-          >
-            Learn More
-          </a> -->
-        </div>
-
-        <div class="w-full flex justify-center mt-20">
-          <img
-            alt=""
-            src="https://s1.locimg.com/2024/03/30/adb39233f2b18.jpg"
-            class="w-3/4 object-cover sm:h-80 lg:h-96"
-          />
-        </div>
-      </CommonTitle>
-      <CommonDivider />
-    </section>
-    <Introduce />
-    <Comments />
-    <PayCard />
-    <!-- <Features /> -->
-    <Question />
-    <Contact />
+          <div class="w-full flex justify-center mt-20">
+            <img
+              alt=""
+              src="https://s1.locimg.com/2024/03/30/adb39233f2b18.jpg"
+              class="w-3/4 object-cover sm:h-80 lg:h-96"
+            />
+          </div>
+        </CommonTitle>
+        <CommonDivider />
+      </section>
+      <Features />
+      <!-- <Introduce /> -->
+      <Comments />
+      <PayCard />
+      <Question />
+      <Contact />
+    </template>
+    <MessageBox
+      v-model:is-show-modal="showMobileTip"
+      content="The app isn't mobile-friendly, so stay tuned!"
+      cancel-btn-text="fine"
+      confirm-btn-text=""
+    ></MessageBox>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
 import Comments from "./components/Comments.vue";
 import Contact from "./components/Contact.vue";
-// import Features from "./components/Features.vue";
-import Introduce from "./components/Introduce.vue";
+import Features from "./components/Features.vue";
 import NoticeBar from "./components/NoticeBar.vue";
 import PayCard from "./components/PayCard.vue";
 import Question from "./components/Questions.vue";
-
 const showNoticeBar = ref(false);
+
+import { onMounted, onUnmounted, ref } from "vue";
+import { useRouter } from "vue-router";
+import { useGameStore } from "~/store/game";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+
+const { handleKeydown, isLoading } = useShortcutToGame();
+const gameStore = useGameStore();
+
+const { showMobileTip } = useMonitorSystem();
+
+function useMonitorSystem() {
+  const showMobileTip = ref(false);
+
+  function mobileSystem() {
+    return "ontouchstart" in document.documentElement;
+  }
+
+  onMounted(() => {
+    showMobileTip.value = mobileSystem();
+  });
+
+  return {
+    showMobileTip,
+  };
+}
+
+function useShortcutToGame() {
+  const router = useRouter();
+  const isLoading = ref(false);
+
+  async function handleKeydown() {
+    isLoading.value = true;
+    const { courseId } = await gameStore.startGame();
+    isLoading.value = false;
+    router.push(`/main/${courseId}`);
+  }
+
+  onMounted(() => {
+    registerShortcut("enter", handleKeydown);
+  });
+
+  onUnmounted(() => {
+    cancelShortcut("enter", handleKeydown);
+  });
+
+  return {
+    handleKeydown,
+    isLoading,
+  };
+}
 </script>
 
 <style scoped>
@@ -89,7 +138,14 @@ const showNoticeBar = ref(false);
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
-  background-image: linear-gradient(#05051d, #05051d),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-image: linear-gradient(#05051d, #05051d),
+    linear-gradient(
+      137.48deg,
+      #ffdb3b 10%,
+      #fe53bb 45%,
+      #8f51ea 67%,
+      #0044ff 87%
+    );
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -108,10 +164,10 @@ const showNoticeBar = ref(false);
 
 strong {
   z-index: 2;
-  font-family: 'Avalors Personal Use';
+  font-family: "Avalors Personal Use";
   font-size: 15px;
   letter-spacing: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
   /* text-shadow: 0 0 4px white; */
 }
 
@@ -143,18 +199,18 @@ strong {
 }
 
 .btn:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .btn:active {
-  border: double 4px #FE53BB;
+  border: double 4px #fe53bb;
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: none;
 }
 
 .btn:active .circle {
-  background: #FE53BB;
+  background: #fe53bb;
 }
 
 #stars {

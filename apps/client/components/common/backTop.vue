@@ -1,7 +1,8 @@
 <template>
   <button
     class="button"
-    @click="toTop"
+    @click="scrollToTop"
+    :data-content="route.path === '/Index' ? 'Back to Top' : 'Go to Home'"
   >
     <svg
       class="svgIcon"
@@ -15,11 +16,20 @@
 </template>
 
 <script setup lang="ts">
-const toTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+const scrollToTop = () => {
+  if (route.path === "/Index") {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    return;
+  } else {
+    window.location.href = "/Index";
+  }
 };
 </script>
 
@@ -67,7 +77,8 @@ const toTop = () => {
 .button::before {
   position: absolute;
   bottom: -20px;
-  content: "Back to Top";
+  content: attr(data-content);
+  /* content: "Back to Top"; */
   color: white;
   /* transition-duration: .3s; */
   font-size: 0px;

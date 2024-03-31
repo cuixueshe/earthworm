@@ -6,7 +6,7 @@
     <div class="bg-opacity-75 text-white text-center py-16">
       <div class="mb-6">
         <p
-          class="text-lg font-bold uppercase tracking-wider text-gray-400 dark:text-gray-500 relative before:absolute before:inset-x-0 before:bottom-0 before:h-0.5 before:mb-0 before:bg-gradient-to-r before:from-purple-500"
+          class="font-bold tracking-wider text-gray-500 relative before:absolute before:inset-x-0 before:bottom-0 before:h-0.5 before:mb-0 before:bg-gradient-to-r before:from-purple-500 text-sm pb-4"
         >
           Pricing
         </p>
@@ -57,7 +57,7 @@
           </p>
         </div>
         <div class="mb-8 text-left">
-          <span class="text-4xl font-extrabold dark:text-white text-black mr-2">
+          <span class="text-5xl font-extrabold dark:text-white text-black mr-2">
             {{ feature.type === "Free" ? "$0" : "$19" }}
           </span>
           <span class="gradient-text">{{
@@ -66,12 +66,13 @@
         </div>
         <div class="text-left">
           <button
+            @click="handleUpgrade(feature.type)"
             :class="
               feature.type === 'Free'
                 ? 'bg-gray-600 hover:bg-gray-700'
                 : 'bg-purple-600 hover:bg-purple-700'
             "
-            class="w-full px-8 py-3 font-bold text-white transition duration-300 ease-in-out transform hover:scale-105"
+            class="w-full px-8 py-3 font-bold text-white transition duration-300 ease-in-out transform hover:scale-105 rounded-lg"
           >
             {{ feature.type === "Free" ? "Get Started" : "Upgrade now" }}
           </button>
@@ -122,9 +123,16 @@
       to unlock all features.
     </p>
   </div>
+  <CommonDivider />
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
+import Message from "~/components/main/Message/useMessage";
+import { useGameStore } from "~/store/game";
+const gameStore = useGameStore();
+const router = useRouter();
+
 const features = [
   {
     type: "Free",
@@ -147,6 +155,17 @@ const features = [
     ],
   },
 ];
+
+async function handleUpgrade(type) {
+
+  if (type === "Free") {
+    const { courseId } = await gameStore.startGame();
+    router.push(`/main/${courseId}`);
+  } else {
+    // Upgrade now
+    Message.warning("Function is not open！");
+  }
+}
 </script>
 
 <style scoped>
@@ -277,7 +296,7 @@ button:hover::after {
   transition: background 0.3s ease;
   color: #fff;
   position: absolute;
-  right: 10px;
+  right: 8px;
   top: 8px;
 }
 

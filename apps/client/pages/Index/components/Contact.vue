@@ -20,13 +20,13 @@
           </div>
 
           <p class="mt-4 max-w-xs text-base leading-relaxed typing">
-            Join us in Earthworm!...
+            Join us in <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500">Earthworm</span>!...
           </p>
 
           <ul class="mt-8 flex gap-6">
             <li>
               <a
-                href="https://github.com/cuixueshe/earthworm"
+                href="https://twitter.com/cui_xiaorui"
                 rel="noreferrer"
                 target="_blank"
                 class="transition hover:opacity-75"
@@ -34,7 +34,7 @@
                 <span class="sr-only">Twitter</span>
 
                 <svg
-                  class="h-6 w-6"
+                  class="h-6 w-6 hover:text-[#03a9f4]"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -56,7 +56,7 @@
                 <span class="sr-only">GitHub</span>
 
                 <svg
-                  class="h-6 w-6"
+                  class="h-6 w-6 hover:text-gray-600"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -100,27 +100,12 @@
           </div>
 
           <div>
-            <p class="font-medium text-lg">Teach</p>
-
-            <ul class="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href="#About"
-                  class="transition hover:opacity-75"
-                >
-                  About
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
             <p class="font-medium text-lg">Helpful Links</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="https://github.com/cuixueshe/earthworm"
+                  href="https://t.me/+dohhXSz-5n1kZDQ1"
                   class="transition hover:opacity-75"
                 >
                   Contact
@@ -133,6 +118,21 @@
                   class="transition hover:opacity-75"
                 >
                   FAQs
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-lg">Teach</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a
+                  href="https://github.com/cuixueshe/earthworm"
+                  class="transition hover:opacity-75"
+                >
+                  About
                 </a>
               </li>
             </ul>
