@@ -1,0 +1,47 @@
+[
+    {
+        "chinese": "人类",
+        "english": "Human beings",
+        "soundmark": "/ˈhjuːmən/ /ˈbiːɪŋz/"
+    },
+    {
+        "chinese": "竞争",
+        "english": "compete with",
+        "soundmark": "/kəmˈpiːt/ /wɪð/"
+    },
+    {
+        "chinese": "其他事物",
+        "english": "other things",
+        "soundmark": "/ˈʌðər/ /θɪŋz/"
+    },
+    {
+        "chinese": "资源和空间",
+        "english": "resources and space.",
+        "soundmark": "/rɪˈzɔːrsɪz/ /ænd/ /speɪs/"
+    },
+    {
+        "chinese": "人类竞争其他事物的资源和空间。",
+        "english": "Human beings compete with other things for resources and space.",
+        "soundmark": "/ˈhjuːmən/ /ˈbiːɪŋz/ /kəmˈpiːt/ /wɪð/ /ˈʌðər/ /θɪŋz/ /fɔːr/ /rɪˈzɔːrsɪz/ /ænd/ /speɪs/"
+    },
+    {
+        "chinese": "在这方面",
+        "english": "And in that regard",
+        "soundmark": "/ænd/ /ɪn/ /ðæt/ /rɪˈɡɑːrd/"
+    },
+    {
+        "chinese": "以及其他方面",
+        "english": "as well as in other regards",
+        "soundmark": "/æz/ /wɛl/ /æz/ /ɪn/ /ˈʌðər/ /rɪˈɡɑːrdz/"
+    },
+    {
+        "chinese": "这也是一个重要的贡献",
+        "english": "it stands as an important contribution",
+        "soundmark": "/ɪt/ /stændz/ /æz/ /ən/ /ɪmˈpɔːrtənt/ /kɒntrɪˈbjuːʃən/"
+    },
+    {
+        "chinese": "在这方面，以及其他方面，这也是一个重要的贡献。",
+        "english": "And in that regard, as well as in other regards, it stands as an important contribution.",
+        "soundmark": "/ænd/ /ɪn/ /ðæt/ /rɪˈɡɑːrd/ /æz/ /wɛl/ /æz/ /ɪn/ /ˈʌðər/ /rɪˈɡɑːrdz/ /ɪt/ /stændz/ /æz/ /ən/ /ɪmˈpɔːrtənt/ /kɒntrɪˈbjuːʃən/"
+    }
+]

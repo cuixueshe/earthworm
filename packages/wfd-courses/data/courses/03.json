@@ -1,0 +1,242 @@
+[
+	{
+		"chinese": "每个班级",
+		"english": "from each class",
+		"soundmark": "/frʌm/ /iːʧ/ /klɑːs/"
+	},
+	{
+		"chinese": "将选出",
+		"english": "will be selected",
+		"soundmark": "/wɪl/ /biː/ /sɪˈlɛktɪd/"
+	},
+	{
+		"chinese": "一名学生代表",
+		"english": "one student representative",
+		"soundmark": "/wʌn/ /ˈstjuːdənt/ /ˌrɛprɪˈzɛntətɪv/"
+	},
+	{
+		"chinese": "每个班级将选出一名学生代表。",
+		"english": "One student representative will be selected from each class.",
+		"soundmark": "/wʌn/ /ˈstjuːdənt/ /ˌrɛprɪˈzɛntətɪv/ /wɪl/ /biː/ /sɪˈlɛktɪd/ /frʌm/ /iːʧ/ /klɑːs/"
+	},
+	{
+		"chinese": "学术论文",
+		"english": "academic paper",
+		"soundmark": "/ˌækəˈdɛmɪk/ /ˈpeɪpər/"
+	},
+	{
+		"chinese": "提出",
+		"english": "present",
+		"soundmark": "/prɪˈzɛnt/"
+	},
+	{
+		"chinese": "一个清晰的",
+		"english": "a clear",
+		"soundmark": "/ə/ /klɪər/"
+	},
+	{
+		"chinese": "论点",
+		"english": "argument",
+		"soundmark": "/ˈɑːɡjʊmənt/"
+	},
+	{
+		"chinese": "一篇优秀的学术论文应该提出一个清晰的论点。",
+		"english": "A good academic paper should present a clear argument.",
+		"soundmark": "/ə/ /ɡʊd/ /ˌækəˈdɛmɪk/ /ˈpeɪpər/ /ʃʊd/ /prɪˈzɛnt/ /ə/ /klɪər/ /ˈɑːɡjʊmənt/"
+	},
+	{
+		"chinese": "分析",
+		"english": "analysis",
+		"soundmark": "/əˈnælɪsɪs/"
+	},
+	{
+		"chinese": "似乎是",
+		"english": "appeared to be",
+		"soundmark": "/əˈpɪrd/ /tə/ /biː/"
+	},
+	{
+		"chinese": "基于",
+		"english": "based on",
+		"soundmark": "/beɪst/ /ɒn/"
+	},
+	{
+		"chinese": "第四个前提",
+		"english": "the fourth premise",
+		"soundmark": "/ðə/ /fɔːrθ/ /ˈprɛmɪs/"
+	},
+	{
+		"chinese": "他的分析似乎是基于第四个前提。",
+		"english": "His analysis appeared to be based on the fourth premise.",
+		"soundmark": "/hɪz/ /əˈnælɪsɪs/ /əˈpɪrd/ /tə/ /biː/ /beɪst/ /ɒn/ /ðə/ /fɔːrθ/ /ˈprɛmɪs/"
+	},
+	{
+		"chinese": "在数据中",
+		"english": "in data",
+		"soundmark": "/ɪn/ /ˈdeɪtə/"
+	},
+	{
+		"chinese": "并不总是",
+		"english": "not always",
+		"soundmark": "/nɒt/ /ˈɔːlˌweɪz/"
+	},
+	{
+		"chinese": "可能",
+		"english": "possible",
+		"soundmark": "/ˈpɒsəbl/"
+	},
+	{
+		"chinese": "找到",
+		"english": "to find",
+		"soundmark": "/tuː/ /faɪnd/"
+	},
+	{
+		"chinese": "模式",
+		"english": "patterns",
+		"soundmark": "/ˈpætərnz/"
+	},
+	{
+		"chinese": "在数据中并不总是可能找到模式。",
+		"english": "It is not always possible to find patterns in data.",
+		"soundmark": "/ɪt/ /ɪz/ /nɒt/ /ˈɔːlˌweɪz/ /ˈpɒsəbl/ /tuː/ /faɪnd/ /ˈpætərnz/ /ɪn/ /ˈdeɪtə/"
+	},
+	{
+		"chinese": "这个问题",
+		"english": "The problem",
+		"soundmark": "/ðə/ /ˈprɒbləm/"
+	},
+	{
+		"chinese": "复杂",
+		"english": "was complex",
+		"soundmark": "/wɒz/ /ˈkɒmplɛks/"
+	},
+	{
+		"chinese": "难以解释",
+		"english": "difficult to explain",
+		"soundmark": "/ˈdɪfɪkəlt/ /tuː/ /ɪksˈpleɪn/"
+	},
+	{
+		"chinese": "这个问题复杂而且难以解释。",
+		"english": "The problem was complex and difficult to explain.",
+		"soundmark": "/ðə/ /ˈprɒbləm/ /wɒz/ /ˈkɒmplɛks/ /ænd/ /ˈdɪfɪkəlt/ /tuː/ /ɪksˈpleɪn/"
+	},
+	{
+		"chinese": "另一本书",
+		"english": "The other book",
+		"soundmark": "/ðə/ /ˈʌðər/ /bʊk/"
+	},
+	{
+		"chinese": "不够详尽",
+		"english": "is not thorough",
+		"soundmark": "/ɪz/ /nɒt/ /ˈθʌrəʊ/"
+	},
+	{
+		"chinese": "更具洞察力",
+		"english": "it's more insightful",
+		"soundmark": "/ɪts/ /mɔːr/ /ɪnˈsaɪtfʊl/"
+	},
+	{
+		"chinese": "另一本书不够详尽，但更具洞察力。",
+		"english": "The other book is not thorough but it's more insightful.",
+		"soundmark": "/ðə/ /ˈʌðər/ /bʊk/ /ɪz/ /nɒt/ /ˈθʌrəʊ/ /bʌt/ /ɪts/ /mɔːr/ /ɪnˈsaɪtfʊl/"
+	},
+	{
+		"chinese": "所有行业",
+		"english": "All industries",
+		"soundmark": "/ɔːl/ /ˈɪndəstriz/"
+	},
+	{
+		"chinese": "都由",
+		"english": "consist of",
+		"soundmark": "/kənˈsɪst/ /ʌv/"
+	},
+	{
+		"chinese": "输入、过程、输出和反馈",
+		"english": "systems of inputs, processes, outputs and feedback",
+		"soundmark": "/ˈsɪstəmz/ /ʌv/ /ˈɪnpʊts/ /ˈprɒsɛsɪz/ /ˈaʊtpʊts/ /ənd/ /ˈfiːdbæk/"
+	},
+	{
+		"chinese": "所有行业都由输入、过程、输出和反馈系统组成。",
+		"english": "All industries consist of systems of inputs, processes, outputs and feedback.",
+		"soundmark": "/ɔːl/ /ˈɪndəstriz/ /kənˈsɪst/ /ʌv/ /ˈsɪstəmz/ /ʌv/ /ˈɪnpʊts/ /ˈprɒsɛsɪz/ /ˈaʊtpʊts/ /ənd/ /ˈfiːdbæk/"
+	},
+	{
+		"chinese": "奇怪的是",
+		"english": "Strangely",
+		"soundmark": "/ˈstreɪnʤli/"
+	},
+	{
+		"chinese": "既印象深刻",
+		"english": "are simultaneously impressed by",
+		"soundmark": "/ɑːr/ /ˌsɪmlˈteɪniəsli/ /ɪmˈprɛst/ /baɪ/"
+	},
+	{
+		"chinese": "又持怀疑态度",
+		"english": "and are skeptical of",
+		"soundmark": "/ænd/ /ɑːr/ /ˈskɛptɪkəl/ /ʌv/"
+	},
+	{
+		"chinese": "使用统计数据",
+		"english": "using statistics",
+		"soundmark": "/ˈjuːzɪŋ/ /stəˈtɪstɪks/"
+	},
+	{
+		"chinese": "奇怪的是，人们对使用统计数据既印象深刻又持怀疑态度。",
+		"english": "Strangely, people are simultaneously impressed by and are skeptical of using statistics.",
+		"soundmark": "/ˈstreɪnʤli/ /ˈpiːpl/ /ɑːr/ /ˌsɪmlˈteɪniəsli/ /ɪmˈprɛst/ /baɪ/ /ænd/ /ɑːr/ /ˈskɛptɪkəl/ /ʌv/ /ˈjuːzɪŋ/ /stəˈtɪstɪks/"
+	},
+	{
+		"chinese": "需要延长的",
+		"english": "require an extension",
+		"soundmark": "/rɪˈkwaɪər/ /ən/ /ɪkˈstɛnʃən/"
+	},
+	{
+		"chinese": "尽早申请",
+		"english": "apply sooner",
+		"soundmark": "/əˈplaɪ/ /ˈsuːnə/"
+	},
+	{
+		"chinese": "而不是",
+		"english": "rather than",
+		"soundmark": "/ˈræðər/ /ˈðæn/"
+	},
+	{
+		"chinese": "拖延",
+		"english": "later",
+		"soundmark": "/ˈleɪtər/"
+	},
+	{
+		"chinese": "需要延长的学生应该尽早申请，而不是拖延。",
+		"english": "Students who require an extension should apply sooner rather than later.",
+		"soundmark": "/ˈstjuːdənts/ /huː/ /rɪˈkwaɪər/ /ən/ /ɪkˈstɛnʃən/ /ʃʊd/ /əˈplaɪ/ /ˈsuːnə/ /ˈræðər/ /ˈðæn/ /ˈleɪtər/"
+	},
+	{
+		"chinese": "古典力学",
+		"english": "Classical mechanics",
+		"soundmark": "/ˈklæsɪkl/ /mɪˈkænɪks/"
+	},
+	{
+		"chinese": "有时",
+		"english": "is sometimes",
+		"soundmark": "/ɪz/ /ˈsʌmtaɪmz/"
+	},
+	{
+		"chinese": "被认为是",
+		"english": "considered as",
+		"soundmark": "/kənˈsɪdəd/ /æz/"
+	},
+	{
+		"chinese": "应用数学的",
+		"english": "applied mathematics",
+		"soundmark": "/əˈplaɪd/ /ˌmæθəˈmætɪks/"
+	},
+	{
+		"chinese": "一个分支",
+		"english": "a branch",
+		"soundmark": "/ə/ /brænʧ/"
+	}
+	{
+		"chinese": "古典力学有时被认为是应用数学的一个分支。",
+		"english": "Classical mechanics is sometimes considered as a branch of applied mathematics.",
+		"soundmark": "/ˈklæsɪkl/ /mɪˈkænɪks/ /ɪz/ /ˈsʌmtaɪmz/ /kənˈsɪdəd/ /æz/ /ə/ /brænʧ/ /ʌv/ /əˈplaɪd/ /ˌmæθəˈmætɪks/"
+	}
+]
