@@ -1,18 +1,15 @@
 <template>
-  <div class="h-full pt-20">
-    <div class="h-[40vh] flex flex-col justify-center relative">
-      <template v-if="isQuestion()">
-        <Question></Question>
-        <template v-if="isAnswerTip()">
-          <AnswerTip></AnswerTip>
-        </template>
+  <div class="flex items-center justify-center h-full">
+    <template v-if="isQuestion()">
+      <Question></Question>
+      <template v-if="isAnswerTip()">
+        <AnswerTip></AnswerTip>
       </template>
-      <template v-else-if="isAnswer()">
-        <Answer></Answer>
-      </template>
-    </div>
+    </template>
+    <template v-else-if="isAnswer()">
+      <Answer></Answer>
+    </template>
   </div>
-  <PrevAndNextBtn />
   <Tips></Tips>
   <Summary></Summary>
   <Share></Share>
@@ -25,7 +22,6 @@ import { useGameMode } from "~/composables/main/game";
 import Answer from "./Answer.vue";
 import AnswerTip from "./AnswerTip.vue";
 import AuthRequired from "./AuthRequired.vue";
-import PrevAndNextBtn from "./PrevAndNextBtn.vue";
 import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";
