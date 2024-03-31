@@ -11,54 +11,30 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="hover">
-            <td class="label-text">播放发音</td>
-            <td class="text-center">{{ shortcutKeys.sound }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.SOUND)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">显示隐藏/答案预览</td>
-            <td class="text-center">{{ shortcutKeys.answer }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.ANSWER)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">返回上个问题</td>
-            <td class="text-center">{{ shortcutKeys.previous }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.PREVIOUS)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">跳过当前问题</td>
-            <td class="text-center">{{ shortcutKeys.skip }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.SKIP)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
+          <template v-for="item in shortcutKeyBindList">
+            <tr class="hover">
+              <td class="label-text">{{ item.label }}</td>
+              <td class="text-center">
+                <div class="flex justify-center gap-2 text-xs text-center items-center">
+                  <div
+                    class="px-2 py-1 text-size-12 rounded tip-btn"
+                    v-for="(s, i) in shortcutKeys[item.type].split('+')"
+                    :key="i"
+                  >
+                    {{ s }}
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <button
+                  class="btn btn-sm btn-outline btn-secondary"
+                  @click="handleEdit(item.type)"
+                >
+                  编辑
+                </button>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </section>
@@ -157,18 +133,8 @@
       >
         {{ shortcutKeyStr }}
       </div>
-      <div
-        class="flex justify-center gap-2 mt-2 text-xs text-center"
-        v-if="shortcutKeyTip"
-      >
-        <template
-          v-for="(s, i) in shortcutKeyTip.split(' ')"
-          :key="i"
-        >
-          <div class="px-2 py-1 rounded text-size-12 tip-btn">
-            {{ s }}
-          </div>
-        </template>
+      <div class="mt-2 text-xs text-center">
+        {{ shortcutKeyTip }}
       </div>
       <div
         v-if="hasSameShortcutKey"
@@ -192,16 +158,16 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import {
-  PronunciationType,
-  usePronunciation,
+PronunciationType,
+usePronunciation,
 } from "~/composables/user/pronunciation";
 import {
-  SHORTCUT_KEY_TYPES,
-  useShortcutKeyMode,
+SHORTCUT_KEY_TYPES,
+useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 import {
-  useAutoPronunciation,
-  useKeyboardSound,
+useAutoPronunciation,
+useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -228,6 +194,24 @@ const {
   handleKeydown,
 } = useShortcutKeyMode();
 
+const shortcutKeyBindList =[
+  {
+    label:"播放发音",
+    type:SHORTCUT_KEY_TYPES.SOUND,
+  },
+  {
+    label:"显示隐藏/答案预览",
+    type:SHORTCUT_KEY_TYPES.ANSWER,
+  },
+  {
+    label:"返回上个问题",
+    type:SHORTCUT_KEY_TYPES.PREVIOUS,
+  },
+  {
+    label:"跳过当前问题",
+    type:SHORTCUT_KEY_TYPES.SKIP,
+  }
+]
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);
 });
@@ -247,6 +231,6 @@ onUnmounted(() => {
   @apply text-fuchsia-500 outline-fuchsia-500;
 }
 .tip-btn {
-  @apply text-gray-500 bg-gray-100 dark:text-white dark:bg-gray-500;
+  @apply  text-gray-500 bg-gray-100 dark:text-white dark:bg-gray-500
 }
 </style>
