@@ -11,54 +11,31 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="hover">
-            <td class="label-text">播放发音</td>
-            <td class="text-center">{{ shortcutKeys.sound }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.SOUND)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">显示隐藏/答案预览</td>
-            <td class="text-center">{{ shortcutKeys.answer }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.ANSWER)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">返回上个问题</td>
-            <td class="text-center">{{ shortcutKeys.previous }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.PREVIOUS)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">跳过当前问题</td>
-            <td class="text-center">{{ shortcutKeys.skip }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.SKIP)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
+          <template v-for="item in shortcutKeyBindList">
+            <tr class="hover">
+              <td class="label-text">{{ item.label }}</td>
+              <td class="text-center">
+                <div
+                  class="flex items-center justify-center gap-2 text-xs text-center"
+                >
+                  <div
+                    class="kbd"
+                    v-for="key in parseShortcutKeys(shortcutKeys[item.type])"
+                  >
+                    {{ key }}
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <button
+                  class="btn btn-sm btn-outline btn-secondary"
+                  @click="handleEdit(item.type)"
+                >
+                  编辑
+                </button>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </section>
@@ -157,8 +134,16 @@
       >
         {{ shortcutKeyStr }}
       </div>
-      <div class="mt-2 text-xs text-center">
-        {{ shortcutKeyTip }}
+      <div
+        v-if="shortcutKeyTip"
+        class="flex justify-center gap-2 mt-2 text-xs text-center"
+      >
+        <div
+          v-for="key in parseShortcutKeys(shortcutKeyTip)"
+          class="kbd"
+        >
+          {{ key }}
+        </div>
       </div>
       <div
         v-if="hasSameShortcutKey"
@@ -195,6 +180,7 @@ import {
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
@@ -217,6 +203,25 @@ const {
   handleCloseDialog,
   handleKeydown,
 } = useShortcutKeyMode();
+
+const shortcutKeyBindList = [
+  {
+    label: "播放发音",
+    type: SHORTCUT_KEY_TYPES.SOUND,
+  },
+  {
+    label: "显示隐藏/答案预览",
+    type: SHORTCUT_KEY_TYPES.ANSWER,
+  },
+  {
+    label: "返回上个问题",
+    type: SHORTCUT_KEY_TYPES.PREVIOUS,
+  },
+  {
+    label: "跳过当前问题",
+    type: SHORTCUT_KEY_TYPES.SKIP,
+  },
+];
 
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);

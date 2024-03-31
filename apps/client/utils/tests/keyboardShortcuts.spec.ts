@@ -5,6 +5,7 @@ import {
   cancelShortcut,
   cleanAllShortcut,
   createShortcut,
+  parseShortcutKeys,
   registerShortcut,
 } from "../keyboardShortcuts";
 
@@ -123,6 +124,18 @@ describe("keyboardShortcuts", () => {
       });
 
       expect(command).not.toBeCalled();
+    });
+  });
+
+  describe("utils function", () => {
+    it("should return shortcut key list when use parseShortcutKeys", () => {
+      const keysA = parseShortcutKeys("Ctrl+p");
+      const keysB = parseShortcutKeys("Ctrl a", " ");
+      const keysC = parseShortcutKeys("Ctrl a b c", " ");
+
+      expect(keysA).toEqual(["Ctrl", "P"]);
+      expect(keysB).toEqual(["Ctrl", "A"]);
+      expect(keysC).toEqual(["Ctrl", "A", "B", "C"]);
     });
   });
 });

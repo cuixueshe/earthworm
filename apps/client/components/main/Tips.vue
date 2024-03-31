@@ -1,26 +1,42 @@
 <template>
-  <div class="button-group absolute left-0 right-0 flex flex-col items-center">
-    <div class="mb-4">
+  <div class="absolute left-0 right-0 flex justify-center flex-row items-center bottom-[12vh] xl:w-[1200px] m-auto xl:px-2 px-24">
+    <div class="mb-4 mr-10 ">
       <button
-        class="tip-btn"
+        class="btn btn-ghost"
         @click="playSound"
       >
-        ⌃ {{ shortcutKeys.sound }}
+        <div class="flex items-center justify-center gap-2 text-center">
+          <div
+            v-for="key in parseShortcutKeys(shortcutKeys.sound)"
+            class="kbd"
+          >
+            {{ key }}
+          </div>
+        </div>
+        <span>播放发音</span>
       </button>
-      <span class="ml-2">播放发音</span>
     </div>
-    <div class="mb-4">
+    <div class="mb-4  mr-10">
       <button
-        class="tip-btn"
+        class="btn btn-ghost"
         @click="toggleGameMode"
       >
-        ⌃ {{ shortcutKeys.answer }}
+        <div class="flex items-center justify-center gap-2 text-center">
+          <div
+            v-for="key in parseShortcutKeys(shortcutKeys.answer)"
+            class="kbd"
+          >
+            {{ key }}
+          </div>
+        </div>
+        <span>{{ toggleTipText }}</span>
       </button>
-      <span class="ml-2">{{ toggleTipText }}</span>
     </div>
-    <div>
-      <button class="tip-btn">Space</button>
-      <span class="ml-2">{{ spaceTipText }} </span>
+    <div class="mb-4  mr-10">
+      <button class="btn btn-ghost">
+        <span class="kbd">Space</span>
+        <span>{{ spaceTipText }} </span>
+      </button>
     </div>
   </div>
 </template>
@@ -32,8 +48,11 @@ import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
-
+import {
+cancelShortcut,
+parseShortcutKeys,
+registerShortcut,
+} from "~/utils/keyboardShortcuts";
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
@@ -127,18 +146,3 @@ function useShowAnswer(key: string) {
   };
 }
 </script>
-
-<style scoped>
-.tip-btn {
-  @apply btn btn-xs text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500;
-}
-.button-group {
-  position: relative;
-}
-/* iPad 竖屏模式样式 */  
-@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {  
-  .button-group{
-    margin-bottom: 500px;
-  } 
-}
-</style>
