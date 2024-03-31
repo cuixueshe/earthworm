@@ -29,10 +29,12 @@ function timeEnd(label: string) {
 }
 
 function calculateTotalTime() {
-  return Object.keys(timestamps).reduce((totalTime, key) => {
+  const totalTime = Object.keys(timestamps).reduce((totalTime, key) => {
     const { time } = timestamps[key];
     return (totalTime += time);
   }, 0);
+
+  return Math.ceil(totalTime);
 }
 
 function totalRecordNumber() {

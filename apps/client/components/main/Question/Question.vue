@@ -36,6 +36,7 @@
 
 <script setup lang="ts">
 import { onMounted, watch } from "vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
@@ -88,6 +89,7 @@ watch(
   () => inputValue.value,
   (val) => {
     setInputValue(val);
+    courseTimer.time(String(courseStore.statementIndex));
   }
 );
 
@@ -217,15 +219,18 @@ function answerError() {
   };
 }
 
+function handleAnswerRight() {
+  playRightSound(); // 正确提示
+  showAnswer();
+  hiddenAnswerTip();
+  courseTimer.timeEnd(String(courseStore.statementIndex));
+}
+
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
     submitAnswer(
-      () => {
-        playRightSound(); // 正确提示
-        showAnswer();
-        hiddenAnswerTip();
-      },
+      handleAnswerRight,
       handleAnswerError // 错误提示
     );
 
@@ -235,10 +240,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback: () => {
-        playRightSound(); // 正确提示
-        showAnswer();
-      },
+      rightCallback:  handleAnswerRight, 
       errorCallback: handleAnswerError, // 错误提示
     },
   });

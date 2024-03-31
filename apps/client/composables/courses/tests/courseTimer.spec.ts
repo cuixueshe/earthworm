@@ -17,6 +17,15 @@ describe("course timers", () => {
     expect(courseTimer.calculateTotalTime()).toBe(1);
   });
 
+  it("should be rounded up", async () => {
+    courseTimer.time("1");
+
+    vi.advanceTimersByTime(1600);
+
+    courseTimer.timeEnd("1");
+    expect(courseTimer.calculateTotalTime()).toBe(2);
+  });
+
   it("CourseTimer calculates total time correctly with multiple timestamps", async () => {
     courseTimer.time("1");
     vi.advanceTimersByTime(1000);

@@ -48,7 +48,7 @@
           </div>
           <p class="text-right text-gray-200 text-3">—— 金山词霸「每日一句」</p>
           <p class="text-gray-600 text-base leading-loose pl-14">
-            {{ courseTimeSummary }}
+            {{ `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(courseTimer.calculateTotalTime())} `}}
           </p>
         </div>
         <div className="modal-action">
@@ -84,6 +84,7 @@
 import { watch } from "vue";
 import { useRouter } from "vue-router";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
@@ -92,6 +93,7 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
+import { formatSecondsToTime } from '~/utils/date';
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 let nextCourseId = 1;
@@ -143,6 +145,7 @@ function useDoAgain() {
     courseStore.doAgain();
     hideSummary();
     showQuestion();
+    courseTimer.reset();
   }
 
   return {
