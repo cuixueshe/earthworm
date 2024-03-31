@@ -62,6 +62,7 @@ const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
+const { handleAnswerError, resetCloseTip } = answerError();
 
 const {
   inputValue,
@@ -78,6 +79,11 @@ const {
 });
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
+onMounted(() => {
+  focusInput();
+  resetCloseTip();
+});
+
 watch(
   () => inputValue.value,
   (val) => {
@@ -89,12 +95,9 @@ watch(
   () => courseStore.statementIndex,
   () => {
     focusInput();
+    resetCloseTip();
   }
 );
-
-onMounted(() => {
-  focusInput();
-});
 
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
@@ -213,19 +216,6 @@ function answerError() {
     resetCloseTip,
   };
 }
-
-const { handleAnswerError, resetCloseTip } = answerError();
-
-onMounted(() => {
-  resetCloseTip();
-});
-
-watch(
-  () => courseStore.statementIndex,
-  () => {
-    resetCloseTip();
-  }
-);
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
