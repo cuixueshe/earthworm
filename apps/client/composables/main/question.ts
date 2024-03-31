@@ -26,6 +26,12 @@ enum Mode {
 
 const separator = " ";
 
+const inputValue = ref("");
+
+export function clearQuestionInput() {
+  inputValue.value = "";
+}
+
 export function useInput({
   source,
   setInputCursorPosition,
@@ -35,7 +41,6 @@ export function useInput({
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
 
-  const inputValue = ref("");
   const userInputWords = reactive<Word[]>([]);
 
   setupUserInputWords();
