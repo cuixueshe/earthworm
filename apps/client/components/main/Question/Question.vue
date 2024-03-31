@@ -199,13 +199,14 @@ function answerError() {
 
 const { handleAnswerError, resetCloseTip } = answerError();
 
+onMounted(() => {
+  resetCloseTip();
+});
+
 watch(
-  () => courseStore.currentStatement?.id,
+  () => courseStore.statementIndex,
   () => {
     resetCloseTip();
-  },
-  {
-    immediate: true,
   }
 );
 
