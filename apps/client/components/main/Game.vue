@@ -12,6 +12,7 @@
       </template>
     </div>
   </div>
+  <PrevAndNextBtn />
   <Tips></Tips>
   <Summary></Summary>
   <Share></Share>
@@ -24,6 +25,7 @@ import { useGameMode } from "~/composables/main/game";
 import Answer from "./Answer.vue";
 import AnswerTip from "./AnswerTip.vue";
 import AuthRequired from "./AuthRequired.vue";
+import PrevAndNextBtn from "./PrevAndNextBtn.vue";
 import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";

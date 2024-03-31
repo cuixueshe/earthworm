@@ -1,22 +1,29 @@
 <template>
   <div
     id="contents"
-    class="absolute top-24 left-0 w-56 z-10 border-l-4 border-fuchsia-500 pl-2 select-none"
+    class="absolute left-0 z-10 overflow-x-hidden bg-white border-l-4 shadow select-none top-20 w-80 border-fuchsia-500 dark:bg-slate-800"
     :class="[isShowContents() && 'show']"
     v-bind="containerProps"
   >
-    <div v-bind="wrapperProps">
+    <div
+      class="px-2"
+      v-bind="wrapperProps"
+    >
       <div
         v-for="item in list"
-        class="mb-2"
         :key="item.data.id"
         :class="getItemClassNames(item.index)"
         @click="jumpTo(item.index)"
       >
-        <div class="flex">
-          <span>{{ item.index + 1 }}</span>
-          <span>&nbsp-&nbsp</span>
-          <span class="flex-1">{{ item.data.chinese }}</span>
+        <div
+          class="flex py-1 whitespace-pre-wrap border-b tooltip dark:border-slate-600"
+          :class="{ 'tooltip-bottom': item.index <= 1 }"
+          :data-tip="item.data.english + '\n' + item.data.chinese"
+        >
+          <div class="w-12 text-center">{{ item.index + 1 }}</div>
+          <div class="flex-1 text-left truncate">
+            {{ item.data.chinese }}
+          </div>
         </div>
       </div>
     </div>
@@ -29,9 +36,8 @@ import { computed, onMounted } from "vue";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
-const { isShowContents, watchClickOutside } = useContent();
-
 const coursesStore = useCourseStore();
+const { hideContents, isShowContents, watchClickOutside } = useContent();
 
 const contentsList = computed(() => {
   return coursesStore.currentCourse?.statements || [];
@@ -39,8 +45,17 @@ const contentsList = computed(() => {
 
 const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(
   contentsList.value,
-  { itemHeight: 30 }
+  { itemHeight: 35 }
 );
+
+onMounted(async () => {
+  scrollTo(coursesStore.statementIndex);
+  watchClickOutside(containerProps.ref.value as HTMLElement);
+});
+
+function isActive(index: number) {
+  return coursesStore.statementIndex === index;
+}
 
 function getItemClassNames(index: number) {
   const classNames: string[] = [];
@@ -51,19 +66,10 @@ function getItemClassNames(index: number) {
   return classNames;
 }
 
-function isActive(index: number) {
-  return coursesStore.statementIndex === index;
-}
-
 function jumpTo(index: number) {
+  hideContents();
   coursesStore.toSpecificStatement(index);
 }
-
-onMounted(async () => {
-  scrollTo(coursesStore.statementIndex);
-  watchClickOutside(containerProps.ref.value!);
-});
-
 </script>
 
 <style scoped>
@@ -83,6 +89,7 @@ onMounted(async () => {
 
 #contents.show {
   opacity: 1;
-  height: 24rem;
+  /* 刚好显示 12 个题目 */
+  height: 24.6rem;
 }
 </style>
