@@ -20,6 +20,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from "vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import Answer from "./Answer.vue";
@@ -33,4 +35,10 @@ import Tips from "./Tips.vue";
 
 const { isAnswer, isQuestion } = useGameMode();
 const { isAnswerTip } = useAnswerTip();
+
+
+onMounted(() => {
+  courseTimer.reset()
+})
+
 </script>
