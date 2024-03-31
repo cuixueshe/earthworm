@@ -1,7 +1,19 @@
-import { ref, computed } from "vue";
-import { DEFAULT_SHORTCUT_KEYS } from "~/store/user";
+import { computed, ref } from "vue";
 
+export enum SHORTCUT_KEY_TYPES {
+  SOUND = "sound",
+  ANSWER = "answer",
+  SKIP = "skip",
+  PREVIOUS = "previous",
+}
 export const SHORTCUT_KEYS = "shortcutKeys";
+export const DEFAULT_SHORTCUT_KEYS = {
+  sound: "Ctrl+'",
+  answer: "Ctrl+;",
+  skip: "Ctrl+.",
+  previous: "Ctrl+,",
+};
+
 export const KEYBOARD = {
   ESC: "Esc",
   ALT: "Alt",
@@ -37,7 +49,7 @@ export function convertMacKey(key: string) {
 // 自定义快捷键
 export function useShortcutKeyMode() {
   const showModal = ref<boolean>(false);
-  const currentKeyType = ref<string>("");
+  const currentKeyType = ref<SHORTCUT_KEY_TYPES | "">("");
   const shortcutKeyStr = ref<string>("");
   const shortcutKeys = ref<{ [key: string]: any }>({
     ...DEFAULT_SHORTCUT_KEYS,
@@ -45,6 +57,7 @@ export function useShortcutKeyMode() {
   const shortcutKeyTip = computed(() => {
     return shortcutKeyStr.value.replace(/\+/g, " 加上 ");
   });
+  const hasSameShortcutKey = ref(false);
 
   // 初始化快捷键
   setShortcutKeys();
@@ -52,13 +65,13 @@ export function useShortcutKeyMode() {
   function setShortcutKeys() {
     const localKeys = localStorage.getItem(SHORTCUT_KEYS);
     if (localKeys) {
-      shortcutKeys.value = JSON.parse(localKeys);
+      shortcutKeys.value = { ...shortcutKeys.value, ...JSON.parse(localKeys) };
     } else {
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(shortcutKeys.value));
     }
   }
 
-  function handleEdit(type: string) {
+  function handleEdit(type: SHORTCUT_KEY_TYPES) {
     showModal.value = true;
     shortcutKeyStr.value = "";
     currentKeyType.value = type;
@@ -66,6 +79,7 @@ export function useShortcutKeyMode() {
 
   function handleCloseDialog() {
     showModal.value = false;
+    hasSameShortcutKey.value = false;
   }
 
   function getKeyModifier(e: KeyboardEvent) {
@@ -88,6 +102,11 @@ export function useShortcutKeyMode() {
     return key === KEYBOARD.ENTER;
   }
 
+  function checkSameShortcutKey(key: string) {
+    const keys = Object.values(shortcutKeys.value);
+    const currentShortcutKey = shortcutKeys.value[currentKeyType.value];
+    return keys.some((x) => x === key && x !== currentShortcutKey);
+  }
   /**
    * 参考于 VSCode 快捷键
    * 有待讨论，产品角度出发，快捷键应该只支持组合键形式
@@ -100,13 +119,16 @@ export function useShortcutKeyMode() {
     e.preventDefault();
     const mainKey = getKeyModifier(e);
     if (!mainKey && isEnterKey(e.key)) {
-      saveShortcutKeys();
-      handleCloseDialog();
+      if (checkSameShortcutKey(shortcutKeyStr.value)) {
+        hasSameShortcutKey.value = true;
+      } else {
+        saveShortcutKeys();
+        handleCloseDialog();
+      }
       return;
     }
 
     const key = convertMacKey(e.key);
-    // TODO: 需要校验当前快捷键是否与其他快捷键重复，重复则不允许设置
     if (SPECIAL_KEYS.has(e.key) || !mainKey) {
       // 单键
       shortcutKeyStr.value = key;
@@ -121,6 +143,7 @@ export function useShortcutKeyMode() {
     shortcutKeys, // 快捷键对象
     shortcutKeyStr, // 单个修改的快捷键
     shortcutKeyTip, // 快捷键输入框底部注释
+    hasSameShortcutKey, // 是否有相同的快捷键
     setShortcutKeys,
     handleKeydown,
     handleEdit,

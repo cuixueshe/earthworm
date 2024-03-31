@@ -7,6 +7,9 @@ export enum Theme {
 
 const DARK_MODE = "DARK_MODE";
 
+const DARK_THEME_CLASS = "dark";
+const LIGHT_THEME_CLASS = "light";
+
 const darkMode = ref(Theme.LIGHT);
 export function useDarkMode() {
   const isAppearanceTransition =
@@ -76,17 +79,13 @@ export function useDarkMode() {
   };
 
   const setDarkMode = (state = false) => {
-    if (state) {
-      document.documentElement.classList.add("dark");
-      document.documentElement.setAttribute("data-theme", "dark");
-      darkMode.value = Theme.DARK;
-      sessionStorage.setItem(DARK_MODE, Theme.DARK);
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.documentElement.setAttribute("data-theme", "light");
-      darkMode.value = Theme.LIGHT;
-      sessionStorage.setItem(DARK_MODE, Theme.LIGHT);
-    }
+    const themeClass = state ? DARK_THEME_CLASS : LIGHT_THEME_CLASS;
+    const themeValue = state ? Theme.DARK : Theme.LIGHT;
+    
+    document.documentElement.classList.toggle(DARK_THEME_CLASS, state);
+    document.documentElement.setAttribute("data-theme", themeClass);
+    darkMode.value = themeValue;
+    sessionStorage.setItem(DARK_MODE, themeValue);
   };
 
   return {

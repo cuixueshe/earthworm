@@ -15,6 +15,7 @@
         {{ selectedCountry.flag }} (+{{ selectedCountry.dialCode }})
       </div>
       <div
+        ref="dropdownContainer"
         v-if="showDropdown"
         class="absolute z-10 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 mt-10 rounded-md w-full max-h-80 overflow-auto"
       >
@@ -58,8 +59,9 @@
 </template>
 
 <script setup>
+import { onClickOutside } from '@vueuse/core';
 import { allCountries as countriesData } from "country-telephone-data";
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { ref } from "vue";
 const emit = defineEmits(["update:modelValue"]);
 const props = defineProps({
   modelValue: String,
@@ -97,6 +99,7 @@ const selectedCountry = ref(defaultCountry || {});
 
 const phoneNumber = ref("");
 const showDropdown = ref(false);
+const dropdownContainer = ref(null);
 
 function toggleDropdown() {
   showDropdown.value = !showDropdown.value;
@@ -127,17 +130,7 @@ function countryCodesToFlagEmoji(iso2) {
     .replace(/./g, (char) => String.fromCodePoint(char.charCodeAt(0) + 127397));
 }
 
-onMounted(() => {
-  document.addEventListener("click", handleClickOutside, true);
-});
-
-onBeforeUnmount(() => {
-  document.removeEventListener("click", handleClickOutside, true);
-});
-
-function handleClickOutside(event) {
-  if (!event.target.closest(".dropdown-container")) {
-    showDropdown.value = false;
-  }
-}
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false
+})
 </script>

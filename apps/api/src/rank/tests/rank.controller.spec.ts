@@ -8,7 +8,7 @@ import {
 import { createUser } from '../../../test/fixture/user';
 import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { RankController } from '../rank.controller';
-import { RankService } from '../rank.service';
+import { RankPeriod, RankService } from '../rank.service';
 
 const user = createUser();
 const emptyRankList = createEmptyRankList();
@@ -34,6 +34,10 @@ describe('rank controller', () => {
 
     const res = await rankController.getRankList(user);
     expect(res).toBe(result);
+    const resMonth = await rankController.getRankList(user, RankPeriod.MONTHLY);
+    expect(resMonth).toBe(result);
+    const resYear = await rankController.getRankList(user, RankPeriod.YEARLY);
+    expect(resYear).toBe(result);
     expect(rankService.getRankList).toHaveBeenCalled();
   });
 
@@ -45,6 +49,10 @@ describe('rank controller', () => {
 
     const res = await rankController.getRankList(user);
     expect(res).toBe(result);
+    const resMonth = await rankController.getRankList(user, RankPeriod.MONTHLY);
+    expect(resMonth).toBe(result);
+    const resYear = await rankController.getRankList(user, RankPeriod.YEARLY);
+    expect(resYear).toBe(result);
     expect(rankService.getRankList).toHaveBeenCalled();
   });
 
@@ -56,6 +64,11 @@ describe('rank controller', () => {
 
     const res = await rankController.getRankList(user);
     expect(res).toBe(result);
+    const resMonth = await rankController.getRankList(user, RankPeriod.MONTHLY);
+    expect(resMonth).toBe(result);
+    const resYear = await rankController.getRankList(user, RankPeriod.YEARLY);
+    expect(resYear).toBe(result);
+
     expect(rankService.getRankList).toHaveBeenCalled();
   });
 });

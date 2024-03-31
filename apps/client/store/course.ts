@@ -47,9 +47,20 @@ export const useCourseStore = defineStore("course", () => {
     return currentCourse.value?.statements.length || 0;
   });
 
+  function toSpecificStatement(index: number) {
+    statementIndex.value = index;
+  }
+
   function toNextStatement() {
     const nextIndex = statementIndex.value + 1;
     statementIndex.value = nextIndex;
+
+    return statementIndex.value;
+  }
+
+  function toPreviousStatement() {
+    const prevIndex = statementIndex.value - 1;
+    statementIndex.value = prevIndex >= 0 ? prevIndex : 0;
 
     return statementIndex.value;
   }
@@ -112,5 +123,7 @@ export const useCourseStore = defineStore("course", () => {
     toNextStatement,
     cleanProgress,
     resetStatementIndex,
+    toSpecificStatement,
+    toPreviousStatement,
   };
 });

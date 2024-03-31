@@ -26,6 +26,12 @@ enum Mode {
 
 const separator = " ";
 
+const inputValue = ref("");
+
+export function clearQuestionInput() {
+  inputValue.value = "";
+}
+
 export function useInput({
   source,
   setInputCursorPosition,
@@ -35,7 +41,6 @@ export function useInput({
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
 
-  const inputValue = ref("");
   const userInputWords = reactive<Word[]>([]);
 
   setupUserInputWords();
@@ -128,9 +133,8 @@ export function useInput({
 
   function markIncorrectWord() {
     userInputWords.forEach((word) => {
-      if (
-        word.userInput.toLocaleLowerCase() !== word.text.toLocaleLowerCase()
-      ) {
+      const formattedWord = formatInputText(word.userInput);
+      if (formattedWord !== word.text.toLocaleLowerCase()) {
         word.incorrect = true;
       } else {
         word.incorrect = false;
@@ -157,6 +161,11 @@ export function useInput({
         return word;
       }
     }
+  }
+
+  // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
+  function formatInputText(word: string) {
+    return word.toLocaleLowerCase().replace(/‘/g, "'");
   }
 
   // 当前编辑的单词是否为最后一个错误单词
@@ -298,9 +307,10 @@ export function useInput({
       return;
     }
 
-    // Input 下启用空格提交 且 在最后一个单词位置
+    // Fix_Input/Input 下启用空格提交 且 在最后一个单词位置
     if (e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
+      e.stopPropagation(); // 阻止事件冒泡
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
@@ -320,6 +330,7 @@ export function useInput({
       isLastIncorrectWord()
     ) {
       e.preventDefault();
+      e.stopPropagation();
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }

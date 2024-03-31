@@ -7,7 +7,7 @@ import {
 } from '../../../test/fixture/rank';
 import { createUser } from '../../../test/fixture/user';
 import { MockRedisModule } from '../../../test/helper/mockRedis';
-import { RankService } from '../rank.service';
+import { RankPeriod, RankService } from '../rank.service';
 
 const user = createUser();
 const emptyRankList = createEmptyRankList();
@@ -22,25 +22,38 @@ describe('rank service', () => {
 
     rankService = testHelper.rankService;
     await rankService.resetRankList();
+    await rankService.resetRankList(RankPeriod.WEEKLY);
+    await rankService.resetRankList(RankPeriod.MONTHLY);
+    await rankService.resetRankList(RankPeriod.YEARLY);
   });
 
   afterAll(async () => {
-    await rankService.resetRankList();
+    await rankService.resetRankList(RankPeriod.WEEKLY);
+    await rankService.resetRankList(RankPeriod.MONTHLY);
+    await rankService.resetRankList(RankPeriod.YEARLY);
   });
 
   describe('RankList', () => {
     it('should return empty rank list', async () => {
       await rankService.resetRankList();
-      const res = await rankService.getRankList(user);
+      const resWeek = await rankService.getRankList(user);
+      const resMonth = await rankService.getRankList(user, RankPeriod.MONTHLY);
+      const resYear = await rankService.getRankList(user, RankPeriod.YEARLY);
 
-      expect(res).toEqual(emptyRankList);
+      expect(resWeek).toEqual(emptyRankList);
+      expect(resMonth).toEqual(emptyRankList);
+      expect(resYear).toEqual(emptyRankList);
     });
 
     it('should return rank list with first user finished course', async () => {
       await rankService.userFinishCourse(user.userId, user.username);
-      const res = await rankService.getRankList(user);
+      const resWeek = await rankService.getRankList(user);
+      const resMonth = await rankService.getRankList(user, RankPeriod.MONTHLY);
+      const resYear = await rankService.getRankList(user, RankPeriod.YEARLY);
 
-      expect(res).toEqual(firstUserFinished);
+      expect(resWeek).toEqual(firstUserFinished);
+      expect(resMonth).toEqual(firstUserFinished);
+      expect(resYear).toEqual(firstUserFinished);
 
       await rankService.resetRankList();
     });
@@ -50,15 +63,38 @@ describe('rank service', () => {
       await rankService.userFinishCourse(user.userId, user.username);
       const res = await rankService.getRankList(user);
 
+      const resWeek = await rankService.getRankList(user);
+      const resMonth = await rankService.getRankList(user, RankPeriod.MONTHLY);
+      const resYear = await rankService.getRankList(user, RankPeriod.YEARLY);
+
+      expect(resWeek).toEqual(userFinishedTwice);
+      expect(resMonth).toEqual(userFinishedTwice);
+      expect(resYear).toEqual(userFinishedTwice);
       expect(res).toEqual(userFinishedTwice);
 
       await rankService.resetRankList();
     });
 
-    it('should return empty rank list after reset', async () => {
+    it('should return empty rank list after week reset', async () => {
       await rankService.userFinishCourse(user.userId, user.username);
       await rankService.resetRankList();
       const res = await rankService.getRankList(user);
+
+      expect(res).toEqual(emptyRankList);
+    });
+
+    it('should return empty rank list after month reset', async () => {
+      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.resetRankList(RankPeriod.MONTHLY);
+      const res = await rankService.getRankList(user, RankPeriod.MONTHLY);
+
+      expect(res).toEqual(emptyRankList);
+    });
+
+    it('should return empty rank list after year reset', async () => {
+      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.resetRankList(RankPeriod.YEARLY);
+      const res = await rankService.getRankList(user, RankPeriod.YEARLY);
 
       expect(res).toEqual(emptyRankList);
     });

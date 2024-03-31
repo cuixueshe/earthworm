@@ -13,7 +13,13 @@
 ### ⚠️ 注意事项
 
 - **pnpm version >= 8**
+
+  ```bash
+  corepack enable
+  ```
+
 - **Node.js version >= v20**
+  > 使用来自 .node-version 的版本 [支持的工具](https://github.com/shadowspawn/node-version-usage#compatibility-testing)
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**
 - 项目依赖 **Docker**，所以请确保你本地已安装并成功运行

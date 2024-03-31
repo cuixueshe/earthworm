@@ -30,7 +30,9 @@ import { UserModule } from '../user/user.module';
       useFactory: () => ({
         type: 'single',
         url: process.env.REDIS_URL,
-        password: process.env.REDIS_PASSWORD,
+        options: {
+          password: process.env.REDIS_PASSWORD,
+        },
       }),
     }),
     ScheduleModule.forRoot(),
