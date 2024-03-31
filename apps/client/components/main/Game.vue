@@ -32,3 +32,8 @@ import Tips from "./Tips.vue";
 const { isAnswer, isQuestion } = useGameMode();
 const { isAnswerTip } = useAnswerTip();
 </script>
+<style scoped>
+.pt-20{
+  margin: auto;
+}
+</style>
