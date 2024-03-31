@@ -13,7 +13,13 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 ### ⚠️ Requirements
 
 - **pnpm version >= 8**
+
+  ```bash
+  corepack enable
+  ```
+
 - **Node.js version >= v20**
+  > Use the version from .node-version. [Supported tools](https://github.com/shadowspawn/node-version-usage#compatibility-testing)
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**
 - **Docker**. please make sure it is installed and running successfully on your local machine.

@@ -68,14 +68,17 @@ function usePlayEnglishSound() {
 }
 
 function registerShortcutKeyForNextQuestion() {
-  function handleKeydown() {
+  function handleKeydown(e: KeyboardEvent) {
+    e.preventDefault(); // 阻止到下一个页面的默认按键动作
     goToNextQuestion();
   }
   onMounted(() => {
+    registerShortcut(" ", handleKeydown);
     registerShortcut("enter", handleKeydown);
   });
 
   onUnmounted(() => {
+    cancelShortcut(" ", handleKeydown);
     cancelShortcut("enter", handleKeydown);
   });
 }

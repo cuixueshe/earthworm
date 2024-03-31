@@ -81,6 +81,26 @@ describe("question", () => {
     expect(userInputWords[1].incorrect).toBe(true);
   });
 
+  it("should be correct when compared 'don't' and 'don‘t'", async () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = () => 0;
+
+    const { setInputValue, submitAnswer } = useInput({
+      source: () => "i don't",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    setInputValue("i don‘t");
+
+    const correctCallback = vi.fn();
+    const wrongCallback = vi.fn();
+    submitAnswer(correctCallback, wrongCallback);
+
+    expect(correctCallback).toBeCalled();
+    expect(wrongCallback).not.toBeCalled();
+  });
+
   it("should be the first word should be active", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
@@ -310,12 +330,15 @@ describe("question", () => {
     setInputValue(inputValue);
 
     const preventDefault = vi.fn();
+    const stopPropagation = vi.fn();
     handleKeyboardInput({
       code: "Space",
       preventDefault,
+      stopPropagation,
     } as any as KeyboardEvent);
 
     expect(preventDefault).toBeCalled();
+    expect(stopPropagation).toBeCalled();
   });
 
   it("should back to previous incorrect word", async () => {
@@ -367,6 +390,7 @@ describe("question", () => {
       {
         code: "Space",
         preventDefault: () => {},
+        stopPropagation: () => {},
       } as any as KeyboardEvent,
       {
         useSpaceSubmitAnswer: {
@@ -413,6 +437,7 @@ describe("question", () => {
       {
         code: "Space",
         preventDefault: () => {},
+        stopPropagation: () => {},
       } as any as KeyboardEvent,
       {
         useSpaceSubmitAnswer: {

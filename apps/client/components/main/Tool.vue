@@ -73,7 +73,10 @@
     <div class="ml-4 mr-1 text-gray-400">
       {{ coursesStore.currentCourse?.title }}
     </div>
-    <div>
+    <div
+      class="link-item"
+      @click="toggleContents"
+    >
       （{{ currentSchedule }}<span class="mx-[2px]">/</span
       >{{ courseStore.totalQuestionsCount }}）
     </div>
@@ -106,6 +109,7 @@
       class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
       :style="{ width: currentPercentage + '%' }"
     ></div>
+    <Contents></Contents>
   </div>
   <RankList></RankList>
   <MessageBox
@@ -120,15 +124,18 @@
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import RankList from "~/components/rank/RankingList.vue";
-import { useCourseTime } from "~/composables/courses/time";
 import { useGameMode } from "~/composables/main/game";
+import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
+import { useQuestionInput } from "../main/Question/questionInput";
+import Contents from "./Contents/Contents.vue";
+import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
-const { restCourseTime } = useCourseTime();
+const { focusInput } = useQuestionInput();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
@@ -157,8 +164,9 @@ function useDoAgain() {
 
   function handleTipConfirm() {
     coursesStore.doAgain();
+    clearQuestionInput();
+    focusInput();
     showQuestion();
-    restCourseTime();
   }
 
   return {
@@ -167,6 +175,8 @@ function useDoAgain() {
     handleTipConfirm,
   };
 }
+
+const { toggleContents } = useContent();
 </script>
 
 <style scoped>
