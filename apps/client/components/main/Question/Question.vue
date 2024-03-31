@@ -1,12 +1,17 @@
 <template>
-  <div class="text-center pt-2">
-    <div class="flex relative flex-wrap justify-center gap-2 transition-all">
+  <div class="text-center">
+    <div class="mt-10 mb-4 text-2xl dark:text-gray-50">
+      {{
+        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
+      }}
+    </div>
+    <div class="relative flex flex-wrap justify-center gap-2 transition-all">
       <template
         v-for="(w, i) in courseStore.words"
         :key="i"
       >
         <div
-          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
+          class="h-[4rem] leading-none border-solid rounded-[2px] border-b-2 text-[3em] transition-all"
           :class="getWordsClassNames(i)"
           :style="{ minWidth: `${inputWidth(w)}ch` }"
         >
@@ -15,7 +20,7 @@
       </template>
       <input
         ref="inputEl"
-        class="absolute h-full w-full opacity-0"
+        class="absolute w-full h-full opacity-0"
         type="text"
         v-model="inputValue"
         @keydown="handleKeydown"
@@ -25,11 +30,6 @@
         @mousedown="preventCursorMove"
         autoFocus
       />
-    </div>
-    <div class="mt-12 text-xl dark:text-gray-50">
-      {{
-        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
-      }}
     </div>
   </div>
 </template>

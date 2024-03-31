@@ -1,43 +1,46 @@
 <template>
-  <div class="absolute left-0 right-0 bottom-[12vh] flex flex-col items-center">
-    <div class="mb-4">
-      <button
-        class="btn btn-ghost"
-        @click="playSound"
-      >
-        <div class="flex items-center justify-center gap-2 text-center">
-          <div
-            v-for="key in parseShortcutKeys(shortcutKeys.sound)"
-            class="kbd"
-          >
-            {{ key }}
+  <div class="relative flex items-center justify-center my-8">
+    <div class="z-10 flex items-center justify-center">
+      <div>
+        <button
+          class="btn btn-ghost"
+          @click="playSound"
+        >
+          <div class="flex items-center justify-center gap-2 text-center">
+            <div
+              v-for="key in parseShortcutKeys(shortcutKeys.sound)"
+              class="kbd"
+            >
+              {{ key }}
+            </div>
           </div>
-        </div>
-        <span>播放发音</span>
-      </button>
-    </div>
-    <div class="mb-4">
-      <button
-        class="btn btn-ghost"
-        @click="toggleGameMode"
-      >
-        <div class="flex items-center justify-center gap-2 text-center">
-          <div
-            v-for="key in parseShortcutKeys(shortcutKeys.answer)"
-            class="kbd"
-          >
-            {{ key }}
+          <span>播放发音</span>
+        </button>
+      </div>
+      <div>
+        <button
+          class="btn btn-ghost"
+          @click="toggleGameMode"
+        >
+          <div class="flex items-center justify-center gap-2 text-center">
+            <div
+              v-for="key in parseShortcutKeys(shortcutKeys.answer)"
+              class="kbd"
+            >
+              {{ key }}
+            </div>
           </div>
-        </div>
-        <span>{{ toggleTipText }}</span>
-      </button>
+          <span>{{ toggleTipText }}</span>
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-ghost">
+          <span class="kbd">Space</span>
+          <span>{{ spaceTipText }} </span>
+        </button>
+      </div>
     </div>
-    <div>
-      <button class="btn btn-ghost">
-        <span class="kbd">Space</span>
-        <span>{{ spaceTipText }} </span>
-      </button>
-    </div>
+    <PrevAndNextBtn />
   </div>
 </template>
 
@@ -53,6 +56,8 @@ import {
   parseShortcutKeys,
   registerShortcut,
 } from "~/utils/keyboardShortcuts";
+import PrevAndNextBtn from "./PrevAndNextBtn.vue";
+
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
