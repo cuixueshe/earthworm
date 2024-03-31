@@ -203,12 +203,29 @@ function answerError() {
     }
   }
 
+  function resetCloseTip() {
+    wrongTimes = 0;
+    hiddenAnswerTip();
+  }
+
   return {
     handleAnswerError,
+    resetCloseTip,
   };
 }
 
-const { handleAnswerError } = answerError();
+const { handleAnswerError, resetCloseTip } = answerError();
+
+onMounted(() => {
+  resetCloseTip();
+});
+
+watch(
+  () => courseStore.statementIndex,
+  () => {
+    resetCloseTip();
+  }
+);
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
