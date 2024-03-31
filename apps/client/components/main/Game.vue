@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div class="mt-[10vh]">
     <div class="flex flex-col justify-center relative bottom-[35px]">
       <template v-if="isQuestion()">
         <Question></Question>
@@ -34,8 +34,3 @@ import Tips from "./Tips.vue";
 const { isAnswer, isQuestion } = useGameMode();
 const { isAnswerTip } = useAnswerTip();
 </script>
-<style scoped>
-.pt-20{
-  margin: auto;
-}
-</style>

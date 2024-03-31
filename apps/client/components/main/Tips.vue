@@ -1,6 +1,6 @@
 <template>
   <div class="absolute left-0 right-0 flex justify-center flex-row items-center bottom-[12vh] xl:w-[1200px] m-auto xl:px-2 px-24">
-    <div class="mb-4 mr-10 ">
+    <div class="mb-4 lg:mr-10 ">
       <button
         class="btn btn-ghost"
         @click="playSound"
@@ -16,7 +16,7 @@
         <span>播放发音</span>
       </button>
     </div>
-    <div class="mb-4  mr-10">
+    <div class="mb-4  lg:mr-10">
       <button
         class="btn btn-ghost"
         @click="toggleGameMode"
@@ -32,7 +32,7 @@
         <span>{{ toggleTipText }}</span>
       </button>
     </div>
-    <div class="mb-4  mr-10">
+    <div class="mb-4  lg:mr-10">
       <button class="btn btn-ghost">
         <span class="kbd">Space</span>
         <span>{{ spaceTipText }} </span>
