@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center pt-1">
     <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg
