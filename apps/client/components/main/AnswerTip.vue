@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute left-0 flex items-center justify-center w-full text-xl top-36 dark:text-gray-50"
+    class="absolute flex items-center justify-center w-3/4 text-xl top-36 dark:text-gray-50"
   >
     <div class="shadow-xl card bg-base-100">
       <div class="relative card-body">
