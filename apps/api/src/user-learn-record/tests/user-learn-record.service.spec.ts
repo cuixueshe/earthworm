@@ -48,10 +48,18 @@ describe('user learn record service', () => {
 
     it('should return the start and end of the date range', async () => {
       const date = new Date('2024-01-01');
-      const { start, end } = userLearnRecordService.dateRange(date);
+      let { start, end } = userLearnRecordService.dateRange(date);
+      function convertToUTC(date: Date) {
+        const offset = date.getTimezoneOffset();
+        const utcDate = new Date(date.getTime() - offset * 60 * 1000);
+        return utcDate;
+      }
 
-      expect(start.toLocaleString()).toBe('2024/1/1 00:00:00');
-      expect(end.toLocaleString()).toBe('2024/1/1 23:59:59');
+      start = convertToUTC(start);
+      end = convertToUTC(end);
+
+      expect(start.toISOString()).toBe('2024-01-01T00:00:00.000Z');
+      expect(end.toISOString()).toBe('2024-01-01T23:59:59.999Z');
     });
   });
 
