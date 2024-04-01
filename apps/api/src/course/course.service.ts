@@ -95,7 +95,7 @@ export class CourseService {
 
   async completeCourse(user: UserEntity, courseId: number) {
     const nextCourse = await this.findNext(courseId);
-    if (nextCourse !== -1) {
+    if (nextCourse.id !== -1) {
       await this.userProgressService.update(user.userId, nextCourse.id);
       await this.rankService.userFinishCourse(user.userId, user.username);
       await this.courseHistoryService.setCompletionCount(user.userId, courseId);
