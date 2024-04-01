@@ -115,5 +115,9 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
 <style scoped>
 .arrow-btn {
   @apply text-[#475569] hover:text-[#d946ef] dark:text-[#cbd5e1] dark:hover:text-[#d946ef];
+  @apply transition-transform duration-150 ease-in-out;
+}
+.arrow-btn:active {
+  @apply scale-95;
 }
 </style>
