@@ -138,8 +138,6 @@ async function completeCourse() {
     const nextCourse = await courseStore.completeCourse(
       courseStore.currentCourse.id
     );
-    console.log("nextCourse", nextCourse);
-
     if (nextCourse.id == -1) {
       Message.error(nextCourse.message!);
     } else {
