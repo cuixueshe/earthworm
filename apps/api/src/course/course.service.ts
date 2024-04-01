@@ -35,7 +35,10 @@ export class CourseService {
       .orderBy(asc(course.id));
 
     if (result.length <= 0) {
-      return -1;
+      return {
+        id: -1,
+        title: 'There is no next course',
+      };
     }
 
     return result[0];
@@ -97,11 +100,6 @@ export class CourseService {
       await this.rankService.userFinishCourse(user.userId, user.username);
       await this.courseHistoryService.setCompletionCount(user.userId, courseId);
     }
-    return nextCourse === -1
-      ? {
-          id: -1,
-          message: 'There is no next course',
-        }
-      : nextCourse;
+    return nextCourse;
   }
 }
