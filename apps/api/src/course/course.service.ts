@@ -36,8 +36,8 @@ export class CourseService {
 
     if (result.length <= 0) {
       throw new HttpException(
-        'There is no next course',
-        HttpStatus.BAD_REQUEST,
+        { id: -1, message: '所有课程以完成' },
+        HttpStatus.OK,
       );
     }
 
