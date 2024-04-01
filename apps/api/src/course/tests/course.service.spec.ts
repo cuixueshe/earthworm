@@ -1,5 +1,4 @@
 import { course, statement } from '@earthworm/schema';
-import { HttpException } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import {
   createFirstCourse,
@@ -89,12 +88,10 @@ describe('course service', () => {
       expect(nextCourse.id).toBe(secondCourse.id);
     });
 
-    it('should throw an exception if there is no next course', async () => {
+    it('should return -1 if there is no next course', async () => {
       const courseId = 9999; // 使用一个不存在的课程 ID
-
       const nextCourse = courseService.findNext(courseId);
-
-      await expect(nextCourse).rejects.toThrow(HttpException);
+      expect(nextCourse).toBe(-1);
     });
   });
 

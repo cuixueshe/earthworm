@@ -48,7 +48,11 @@
           </div>
           <p class="text-right text-gray-200 text-3">—— 金山词霸「每日一句」</p>
           <p class="text-gray-600 text-base leading-loose pl-14">
-            {{ `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(courseTimer.calculateTotalTime())} `}}
+            {{
+              `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
+                courseTimer.calculateTotalTime()
+              )} `
+            }}
           </p>
         </div>
         <div className="modal-action">
@@ -93,7 +97,7 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
-import { formatSecondsToTime } from '~/utils/date';
+import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 let nextCourseId = 1;
@@ -133,6 +137,7 @@ async function completeCourse() {
     const nextCourse = await courseStore.completeCourse(
       courseStore.currentCourse.id
     );
+    if (nextCourse.id === -1) return;
     nextCourseId = nextCourse.id;
     updateActiveCourseId(nextCourseId);
   }
