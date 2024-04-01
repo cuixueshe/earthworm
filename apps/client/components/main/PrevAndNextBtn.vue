@@ -1,11 +1,9 @@
 <template>
-  <div
-    class="flex items-center justify-between absolute left-0 right-0 bottom-[14vh] xl:w-[1200px] m-auto xl:px-2 px-24"
-  >
+  <div class="absolute flex items-center justify-between w-full">
     <!-- left arrow button: go to previous question -->
     <div class="w-12 h-12">
       <button
-        class="arrow-btn tooltip z-10"
+        class="arrow-btn tooltip"
         :data-tip="PREV_BTN_TIP"
         @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
@@ -30,7 +28,7 @@
     <!-- right arrow button: go to next question -->
     <div class="w-12 h-12">
       <button
-        class="arrow-btn tooltip z-10"
+        class="arrow-btn tooltip"
         @click="goToNextQuestion"
         :data-tip="NEXT_BTN_TIP"
         totalQuestionsCount

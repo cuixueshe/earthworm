@@ -1,5 +1,10 @@
-import { it, expect, describe, vi, beforeEach, afterEach } from "vitest";
-import { getToday, isTheDay, formatTimestamp } from "../date";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import {
+  formatSecondsToTime,
+  formatTimestamp,
+  getToday,
+  isTheDay,
+} from "../date";
 
 const dummyDay = {
   year: 2024,
@@ -56,5 +61,27 @@ describe("date util", () => {
       timestamp: afternoonTimestamp,
     });
     expect(formattedAfternoon).toBe("4:45 PM · Jan 1, 2024");
+  });
+});
+
+describe("formatSecondsToTime", () => {
+  it("formats seconds correctly", () => {
+    expect(formatSecondsToTime(45)).toBe("45秒");
+  });
+
+  it("formats minutes correctly", () => {
+    expect(formatSecondsToTime(600)).toBe("10分");
+  });
+
+  it("formats minutes and seconds correctly", () => {
+    expect(formatSecondsToTime(605)).toBe("10分5秒");
+  });
+
+  it("formats hours correctly", () => {
+    expect(formatSecondsToTime(3600)).toBe("1时");
+  });
+
+  it("formats hours, minutes, and seconds correctly", () => {
+    expect(formatSecondsToTime(3661)).toBe("1时1分1秒");
   });
 });
