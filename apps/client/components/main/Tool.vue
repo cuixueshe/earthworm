@@ -124,6 +124,7 @@
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import RankList from "~/components/rank/RankingList.vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
@@ -167,6 +168,7 @@ function useDoAgain() {
     clearQuestionInput();
     focusInput();
     showQuestion();
+    courseTimer.reset()
   }
 
   return {

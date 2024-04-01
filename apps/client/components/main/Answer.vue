@@ -18,6 +18,9 @@
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.soundmark }}
     </div>
+    <div class="my-6 text-xl text-gray-500">
+      {{ courseStore.currentStatement?.chinese }}
+    </div>
     <button
       class="btn-item"
       @click="showQuestion"
