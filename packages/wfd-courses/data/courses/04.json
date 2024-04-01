@@ -1,8 +1,43 @@
 [
 	{
+		"chinese": "行业专家",
+		"english": "Industry experts",
+		"soundmark": "/ˈɪndəstri/ /ˈɛkspɜrts/"
+	},
+	{
+		"chinese": "讨论",
+		"english": "discuss",
+		"soundmark": "/dɪˈskʌs/"
+	},
+	{
+		"chinese": "自动化劳动力的",
+		"english": "the automated workforce",
+		"soundmark": "/ðə/ /ˈɔːtəˌmeɪtɪd/ /ˈwɜːkfɔːrs/"
+	},
+	{
+		"chinese": "就业机会",
+		"english": "job opportunities",
+		"soundmark": "/ʤɒb/ /ˌɒpərˈtjunɪtiz/"
+	},
+	{
 		"chinese": "行业专家将讨论自动化劳动力的就业机会。",
 		"english": "Industry experts will discuss the job opportunities in the automated workforce.",
 		"soundmark": "/ˈɪndəstri/ /ˈɛkspɜrts/ /wɪl/ /dɪˈskʌs/ /ðə/ /ʤɒb/ /ˌɒpərˈtjunɪtiz/ /ɪn/ /ðə/ /ˈɔːtəˌmeɪtɪd/ /ˈwɜːkfɔːrs/"
+	},
+	{
+		"chinese": "数字革命",
+		"english": "The digital revolution",
+		"soundmark": "/ðə/ /ˈdɪdʒɪtl/ /ˌrɛvəˈluːʃən/"
+	},
+	{
+		"chinese": "改变了",
+		"english": "changed",
+		"soundmark": "/ʧeɪnʤd/"
+	},
+	{
+		"chinese": "我们的阅读方式",
+		"english": "the way we read",
+		"soundmark": "/ðə/ /weɪ/ /wiː/ /riːd/"
 	},
 	{
 		"chinese": "数字革命已经改变了我们的阅读方式。",
@@ -10,9 +45,49 @@
 		"soundmark": "/ðə/ /ˈdɪdʒɪtl/ /ˌrɛvəˈluːʃən/ /hæz/ /ʧeɪnʤd/ /ðə/ /weɪ/ /wiː/ /riːd/"
 	},
 	{
+		"chinese": "事件的",
+		"english": "to the event",
+		"soundmark": "/tuː/ /ðə/ /ɪˈvɛnt/"
+	},
+	{
+		"chinese": "主要见证人",
+		"english": "The key witnesses",
+		"soundmark": "/ðə/ /kiː/ /ˈwɪtnɪsɪz/"
+	},
+	{
+		"chinese": "互相矛盾的",
+		"english": "conflicting",
+		"soundmark": "/kənˈflɪktɪŋ/"
+	},
+	{
+		"chinese": "回忆",
+		"english": "recollections",
+		"soundmark": "/ˌrɛkəˈlɛkʃənz/"
+	},
+	{
 		"chinese": "事件的主要见证人有互相矛盾的回忆。",
 		"english": "The key witnesses to the event have conflicting recollections.",
 		"soundmark": "/ðə/ /kiː/ /ˈwɪtnɪsɪz/ /tuː/ /ðə/ /ɪˈvɛnt/ /hæv/ /kənˈflɪktɪŋ/ /ˌrɛkəˈlɛkʃənz/"
+	},
+	{
+		"chinese": "经济",
+		"english": "The economic",
+		"soundmark": "/ðə/ /ˌiːkəˈnɒmɪk/"
+	},
+	{
+		"chinese": "预测结果",
+		"english": "predictions",
+		"soundmark": "/prɪˈdɪkʃənz/"
+	},
+	{
+		"chinese": "证明是",
+		"english": "turned out to be",
+		"soundmark": "/tɜːnd/ /aʊt/ /tuː/ /biː/"
+	},
+	{
+		"chinese": "不正确的",
+		"english": "incorrect",
+		"soundmark": "/ɪnkəˈrɛkt/"
 	},
 	{
 		"chinese": "经济预测结果证明是不正确的。",
@@ -20,9 +95,44 @@
 		"soundmark": "/ðə/ /ˌiːkəˈnɒmɪk/ /prɪˈdɪkʃənz/ /tɜːnd/ /aʊt/ /tuː/ /biː/ /ɪnkəˈrɛkt/"
 	},
 	{
+		"chinese": "实验室",
+		"english": "in the laboratory",
+		"soundmark": "/ɪn/ /ðə/ /ˈlæbərəˌtɔːri/"
+	},
+	{
+		"chinese": "穿戴",
+		"english": "be worn",
+		"soundmark": "/biː/ /wɔːn/"
+	},
+	{
+		"chinese": "防护服",
+		"english": "Protective clothing",
+		"soundmark": "/prəˈtɛktɪv/ /ˈkləʊðɪŋ/"
+	},
+	{
 		"chinese": "实验室必须始终穿戴防护服。",
 		"english": "Protective clothing must always be worn in the laboratory.",
 		"soundmark": "/prəˈtɛktɪv/ /ˈkləʊðɪŋ/ /mʌst/ /ˈɔːlweɪz/ /biː/ /wɔːn/ /ɪn/ /ðə/ /ˈlæbərəˌtɔːri/"
+	},
+	{
+		"chinese": "海洋温度",
+		"english": "sea temperatures",
+		"soundmark": "/siː/ /ˈtɛmpərəʧərz/"
+	},
+	{
+		"chinese": "上升",
+		"english": "Rising",
+		"soundmark": "/ˈraɪzɪŋ/"
+	},
+	{
+		"chinese": "气候变化的",
+		"english": "of climate change",
+		"soundmark": "/ʌv/ /ˈklaɪmɪt/ /ʧeɪndʒ/"
+	},
+	{
+		"chinese": "一个迹象",
+		"english": "a sign",
+		"soundmark": "/ə/ /saɪn/"
 	},
 	{
 		"chinese": "海洋温度上升是气候变化的一个迹象。",
@@ -30,9 +140,49 @@
 		"soundmark": "/ˈraɪzɪŋ/ /siː/ /ˈtɛmpərəʧərz/ /ɑːr/ /ə/ /saɪn/ /ʌv/ /ˈklaɪmɪt/ /ʧeɪndʒ/"
 	},
 	{
+		"chinese": "植物的根系",
+		"english": "the root system of a plant",
+		"soundmark": "/ðə/ /ruːt/ /ˈsɪstəm/ /ʌv/ /ə/ /plɑːnt/"
+	},
+	{
+		"chinese": "出问题时",
+		"english": "fails",
+		"soundmark": "/feɪlz/"
+	},
+	{
+		"chinese": "叶片",
+		"english": "foliage",
+		"soundmark": "/ˈfəʊlɪɪdʒ/"
+	},
+	{
+		"chinese": "就会受到影响",
+		"english": "suffers",
+		"soundmark": "/ˈsʌfəz/"
+	},
+	{
 		"chinese": "当植物的根系出问题时，叶片就会受到影响。",
 		"english": "When the root system of a plant fails, foliage suffers.",
 		"soundmark": "/wɛn/ /ðə/ /ruːt/ /ˈsɪstəm/ /ʌv/ /ə/ /plɑːnt/ /feɪlz/ /ˈfəʊlɪɪdʒ/ /ˈsʌfəz/"
+	},
+	{
+		"chinese": "体力",
+		"english": "Physical strength",
+		"soundmark": "/ˈfɪzɪkəl/ /strɛŋθ/"
+	},
+	{
+		"chinese": "通过",
+		"english": "through",
+		"soundmark": "/θruː/"
+	},
+	{
+		"chinese": "定期训练",
+		"english": "regular training",
+		"soundmark": "/ˈrɛɡjʊlər/ /ˈtreɪnɪŋ/"
+	},
+	{
+		"chinese": "来提高",
+		"english": "be improved",
+		"soundmark": "/biː/ /ɪmˈpruːvd/"
 	},
 	{
 		"chinese": "体力可以通过定期训练来提高。",
@@ -40,9 +190,49 @@
 		"soundmark": "/ˈfɪzɪkəl/ /strɛŋθ/ /kæn/ /biː/ /ɪmˈpruːvd/ /θruː/ /ˈrɛɡjʊlər/ /ˈtreɪnɪŋ/"
 	},
 	{
+		"chinese": "高效的",
+		"english": "effective",
+		"soundmark": "/ɪˈfɛktɪv/"
+	},
+	{
+		"chinese": "经理",
+		"english": "manager",
+		"soundmark": "/ˈmænɪʤər/"
+	},
+	{
+		"chinese": "总是",
+		"english": "is always",
+		"soundmark": "/ɪz/ /ˈɔːlweɪz/"
+	},
+	{
+		"chinese": "对新观念",
+		"english": "open to new ideas",
+		"soundmark": "/ˈəʊpən/ /tuː/ /njuː/ /aɪˈdɪəz/"
+	},
+	{
+		"chinese": "持开放态度",
+		"english": "open to",
+		"soundmark": "/ˈəʊpən/ /tuː/"
+	},
+	{
 		"chinese": "一个高效的经理总是对新观念持开放态度。",
 		"english": "An effective manager is always open to new ideas.",
 		"soundmark": "/æn/ /ɪˈfɛktɪv/ /ˈmænɪʤər/ /ɪz/ /ˈɔːlweɪz/ /ˈəʊpən/ /tuː/ /njuː/ /aɪˈdɪəz/"
+	},
+	{
+		"chinese": "合格记者",
+		"english": "qualified journalists",
+		"soundmark": "/ˈkwɒlɪfaɪd/ /ˈʤɜːnəlɪsts/"
+	},
+	{
+		"chinese": "固定的",
+		"english": "fixed",
+		"soundmark": "/ˈfɪkst/"
+	},
+	{
+		"chinese": "职业道路",
+		"english": "career path",
+		"soundmark": "/kəˈrɪə/ /pɑːθ/"
 	},
 	{
 		"chinese": "合格记者没有固定的职业道路。",
