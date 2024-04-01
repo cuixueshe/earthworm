@@ -90,8 +90,8 @@ describe('course service', () => {
 
     it('should return -1 if there is no next course', async () => {
       const courseId = 9999; // 使用一个不存在的课程 ID
-      const nextCourse = courseService.findNext(courseId);
-      expect(nextCourse).toBe(-1);
+      const nextCourse = await courseService.findNext(courseId);
+      expect(nextCourse.id).toBe(-1);
     });
   });
 
