@@ -20,24 +20,34 @@
 		"soundmark": "/ˈɒpʃənl/ /tjuːˈtɔːriəlz/ /ɑːr/ /ˈɒfəd/ /ɪn/ /ðə/ /ˈfaɪnl/ /wiːk/ /ʌv/ /ə/ /tɜːrm/"
 	},
 	{
-		"chinese": "可选的",
-		"english": "Optional",
-		"soundmark": "/ˈɒpʃənl/"
+		"chinese": "在特定领域",
+		"english": "in a special field",
+		"soundmark": "/ɪn/ /ə/ /ˈspɛʃəl/ /fiːld/"
 	},
 	{
-		"chinese": "辅导课程",
-		"english": "tutorials",
-		"soundmark": "/tjuːˈtɔːriəlz/"
+		"chinese": "具有",
+		"english": "that has",
+		"soundmark": "/ðæt/ /hæz/"
 	},
 	{
-		"chinese": "在学期的最后一周",
-		"english": "in the final week of a term",
-		"soundmark": "/ɪn/ /ðə/ /ˈfaɪnl/ /wiːk/ /ʌv/ /ə/ /tɜːrm/"
+		"chinese": "特殊含义的",
+		"english": "peculiar meanings",
+		"soundmark": "/pɪˈkjuːliər/ /ˈmiːnɪŋz/"
 	},
 	{
-		"chinese": "提供",
-		"english": "are offered",
-		"soundmark": "/ɑːr/ /ˈɒfəd/"
+		"chinese": "词汇",
+		"english": "vocabulary",
+		"soundmark": "/ˈvəʊkəbjʊləri/"
+	},
+	{
+		"chinese": "被称为",
+		"english": "is called",
+		"soundmark": "/ɪz/ /kɔːld/"
+	},
+	{
+		"chinese": "行话",
+		"english": "jargon",
+		"soundmark": "/ˈʤɑːɡən/"
 	},
 	{
 		"chinese": "在特定领域具有特殊含义的词汇被称为行话。",
@@ -70,7 +80,7 @@
 		"soundmark": "/ˈstjuːdənts/ /huː/ /ˈstʌdi/ /ˌoʊvərˈsiz/ /kæn/ /ˌsɪɡˈnɪfɪkəntli/ /ɪmˈpruːv/ /ðer/ /wɜːrk/ /ˈʧænsɪz/"
 	},
 	{
-		"chinese": "关于",
+		"chinese": "关于...的辩论",
 		"english": "a debate about",
 		"soundmark": "/ə/ /dɪˈbeɪt/ /əˈbaʊt/"
 	},
@@ -78,11 +88,6 @@
 		"chinese": "知识价值",
 		"english": "the value of knowledge",
 		"soundmark": "/ðə/ /ˈvæljuː/ /ʌv/ /ˈnɒlɪdʒ/"
-	},
-	{
-		"chinese": "的辩论",
-		"english": "the debate",
-		"soundmark": "/ðə/ /dɪˈbeɪt/"
 	},
 	{
 		"chinese": "这是关于知识价值的辩论。",

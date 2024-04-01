@@ -65,6 +65,11 @@
 		"soundmark": "/ɪmˈplɔɪərz/"
 	},
 	{
+		"chinese": "健康保险",
+		"english": "health insurance",
+		"soundmark": "/hɛlθ/ /ɪnˈʃʊərəns/"
+	},
+	{
 		"chinese": "为员工提供健康保险",
 		"english": "afford health insurance to their workers",
 		"soundmark": "/əˈfɔːrd/ /hɛlθ/ /ɪnˈʃʊərəns/ /tuː/ /ðɛr/ /ˈwɜːrkərz/"
@@ -150,14 +155,14 @@
 		"soundmark": "/səbˈmɪt/"
 	},
 	{
-		"chinese": "你的论文的",
-		"english": "the electronic copy of your essay",
-		"soundmark": "/ðə/ /ɪlɛkˈtrɒnɪk/ /ˈkɒpi/ /ʌv/ /jɔːr/ /ˈɛseɪ/"
-	},
-	{
 		"chinese": "电子副本",
 		"english": "electronic copy",
 		"soundmark": "/ɪlɛkˈtrɒnɪk/ /ˈkɒpi/"
+	},
+	{
+		"chinese": "你的论文的",
+		"english": "your essay",
+		"soundmark": "/jɔːr/ /ˈɛseɪ/"
 	},
 	{
 		"chinese": "你必须提交你的论文的电子副本。",
