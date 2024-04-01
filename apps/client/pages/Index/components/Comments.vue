@@ -14,7 +14,7 @@
           class="mb-8 sm:break-inside-avoid"
         >
           <blockquote
-            class="bg-[#111128] rounded-lg overflow-hidden shadow-lg border border-gray-900 transition-all duration-300 hover:shadow-2xl cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
+            class="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white dark:bg-[#111128] cursor-pointer hover:shadow-purple-500/50 dark:hover:shadow-blue-400/50"
           >
             <div class="flex flex-col justify-between h-full p-6">
               <div class="flex items-center gap-4">

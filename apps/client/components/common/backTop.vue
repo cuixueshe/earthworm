@@ -1,11 +1,11 @@
 <template>
   <button
-    class="button"
+    class="button dark:bg-[#05051d] bg-white transition-all duration-300 cursor-pointer"
     @click="scrollToTop"
     :data-content="route.path === '/Index' ? 'Back to Top' : 'Go to Home'"
   >
     <svg
-      class="svgIcon"
+      class="svgIcon w-3 dark:fill-white fill-black transition-all duration-300"
       viewBox="0 0 384 512"
     >
       <path
@@ -38,7 +38,6 @@ const scrollToTop = () => {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #05051d;
   border: none;
   font-weight: 600;
   display: flex;
@@ -49,15 +48,6 @@ const scrollToTop = () => {
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
-}
-
-.svgIcon {
-  width: 12px;
-  transition-duration: 0.3s;
-}
-
-.svgIcon path {
-  fill: white;
 }
 
 .button:hover {
