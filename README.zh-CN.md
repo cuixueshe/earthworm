@@ -10,7 +10,7 @@
 
 ## 🚀 如何开始？
 
-### ⚠️ 注意事项
+### 0. 注意事项
 
 - **pnpm version >= 8**
 
@@ -23,7 +23,8 @@
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**
 - 项目依赖 **Docker**，所以请确保你本地已安装并成功运行
-- 下面所提到的相关操作基于当前项目的根目录位置，请注意检查不要出错
+
+**以下所有相关操作都基于项目根目录位置，请注意检查不要出错！⚠️**
 
 ```bash
 docker --version # Docker version 24.0.7, build afdd53b
@@ -39,27 +40,31 @@ pnpm -v # 8+
 pnpm install
 ```
 
-### 2. 复制 `.env.example` 内容到 `./apps/api/.env` 文件
+### 2. 配置 `.env` 文件
 
-若文件不存在则需要手动创建，Linux 用户可以通过下面的命令进行操作
+可以选择将 `./apps/api/.env.example` 文件内容复制到 `./apps/api/.env`，请注意 `example` 文件中的是示例配置，主要是一些系统的环境变量信息，比如：数据库连接地址、用户名、密码、端口、密钥等等，后端服务会从此文件中读取配置信息，**当然你也可以更改成你自己的配置信息**
 
-> 主要存储系统的环境变量信息，如数据库连接地址、用户名、密码、端口、密钥等等，后端服务会从此文件中读取配置，当然你也可以更改为你的配置信息
+Windows 用户推荐快捷键复制粘贴，Linux 用户可以通过下面的命令进行操作
 
 ```bash
-cp .env.example ./apps/api/.env
+cp ./apps/api/.env.example ./apps/api/.env
 ```
 
-### 3. 启动/停止/删除 Docker Compose 服务
+### 3. 启动 Docker Compose 服务
 
 后端用到了 MySQL 和 Redis 服务，通过下面在 `package.json` 中配置的命令启动和停止
 
 ```bash
 # 启动
 pnpm docker:start
+
+# 下面这些命令等你用的时候在执行，不要傻乎乎的刚启动就停止哈 😊
 # 停止
 pnpm docker:stop
 # 删除
 pnpm docker:delete
+# 完全删除（包括 Volume 数据）
+pnpm docker:down
 ```
 
 当然如果你更喜欢手动挡
@@ -73,9 +78,9 @@ docker compose down
 docker-compose up -d
 ```
 
-### 4. 初始化数据库
+### 4. 初始化数据库表结构
 
-执行当前命令时，尽量跟上个命令间隔一点点时间，因为我们使用了 `-d` 参数会让其服务挂后台执行，可能还在 running 中，如果发现报错那就再执行一遍~
+执行这个命令时，尽量与上个命令间隔一点时间，因为刚刚使用的 `-d` 参数会让其服务挂起在后台执行，此时 docker 服务可能还在 running 中，若是发现报错了那就再执行一遍 😊
 
 ```bash
 pnpm db:init
@@ -99,7 +104,13 @@ pnpm dev:serve
 pnpm dev:client
 ```
 
-## 常见问题解答
+## ❓ 常见问题解答
+
+### 数据库连接不上
+
+我的 Docker 和里面的数据库都正常跑起来了，但是跑 `db:init` 命令时还是报错，提示数据库连接失败
+
+可以检查下 `.env` 文件中的数据库配置是否正确，甚至是这个文件有没有！😠
 
 ### 如何正确的更新课程数据？
 
@@ -152,7 +163,7 @@ newgrp docker
 docker images
 ```
 
-## 前端开发规范
+## 🤝 前端开发规范
 
 1. 不要解构 pinia 的 store
    - 解构会导致响应式丢失问题（ref 类型也会变成普通类型）
@@ -162,7 +173,7 @@ docker images
    1. useMessage 之类的
    2. router 相关的也不要放进去（不便于测试 我们把 router 划分为 UI 逻辑）
 
-## 贡献者
+## 🌟 贡献者
 
 在此感谢所有为 Earthworm 做出过贡献的人！🎉
 
