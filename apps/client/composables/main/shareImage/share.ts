@@ -22,6 +22,8 @@ export interface ShareImageTemplateData {
   enSentence: string;
   userName: string;
   dateStr: string;
+  totalRecordNumber: number;
+  totalTime: string;
 }
 
 export const imageTemplates: Record<
@@ -87,7 +89,9 @@ export function useGenerateShareImage() {
     templateKey: ShareImageTemplate,
     courseNum: string,
     userName: string,
-    dateStr: string
+    dateStr: string,
+    totalRecordNumber: number,
+    totalTime: string
   ) => {
     return imageTemplates[templateKey]({
       courseNum,
@@ -95,16 +99,28 @@ export function useGenerateShareImage() {
       enSentence: enSentence.value,
       userName,
       dateStr,
+      totalRecordNumber,
+      totalTime,
     });
   };
 
   const generateGalleryImage = async (
     courseNum: string,
     userName: string,
-    dateStr: string
+    dateStr: string,
+    totalRecordNumber: number,
+    totalTime: string
   ) => {
     Object.values(ShareImageTemplate).forEach(async (template, index) => {
-      generateImage(courseNum, template, index, userName, dateStr);
+      generateImage(
+        courseNum,
+        template,
+        index,
+        userName,
+        dateStr,
+        totalRecordNumber,
+        totalTime
+      );
     });
   };
 
@@ -113,7 +129,9 @@ export function useGenerateShareImage() {
     template: ShareImageTemplate,
     index: number,
     userName: string,
-    dateStr: string
+    dateStr: string,
+    totalRecordNumber: number,
+    totalTime: string
   ) => {
     const canvasEl = initCanvas();
     galleryImgs.value[index] = {
@@ -121,7 +139,14 @@ export function useGenerateShareImage() {
       canvasEl,
     };
     const svg = await satori(
-      chosenTemplate(template, courseNum, userName, dateStr),
+      chosenTemplate(
+        template,
+        courseNum,
+        userName,
+        dateStr,
+        totalRecordNumber,
+        totalTime
+      ),
       await generateConfig()
     ).catch((e) => {
       console.error("Error generating SVG");

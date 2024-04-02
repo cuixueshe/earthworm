@@ -6,6 +6,8 @@ export const tpl_2 = ({
   courseNum,
   userName,
   dateStr,
+  totalRecordNumber,
+  totalTime,
 }: ShareImageTemplateData) => ({
   type: "div",
   props: {
@@ -68,7 +70,14 @@ export const tpl_2 = ({
                       tw: "text-lg m-0",
                       children: `${userName}${
                         userName ? "  •  " : ""
-                      }${dateStr}`,
+                      }${dateStr} `,
+                    },
+                  },
+                  {
+                    type: "p",
+                    props: {
+                      tw: "text-lg m-0",
+                      children: `共完成${totalRecordNumber}道题，用时${totalTime}`,
                     },
                   },
                 ],
