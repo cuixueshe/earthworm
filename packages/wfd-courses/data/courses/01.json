@@ -6,8 +6,8 @@
 	},
 	{
 		"chinese": "受到尊重",
-		"english": "is respected",
-		"soundmark": "/ɪz/ /rɪˈspɛktɪd/"
+		"english": "be respected",
+		"soundmark": "/biː/ /rɪˈspɛktɪd/"
 	},
 	{
 		"chinese": "其研究活动",
@@ -40,9 +40,9 @@
 		"soundmark": "/eɪ/ /njuː/ /ˈɑːrtɪkl/ /wəz/ /ˈpʌblɪʃt/ /rɪˈɡɑːrdɪŋ/ /ðə/ /ˌjuːnɪˈvɜːrsɪti/ /ˈlæst/ /wiːk/"
 	},
 	{
-		"chinese": "你需要",
-		"english": "You are required to",
-		"soundmark": "/juː/ /ɑːr/ /rɪˈkwaɪrd/ /tuː/"
+		"chinese": "需要",
+		"english": "be required to",
+		"soundmark": "/biː/ /rɪˈkwaɪrd/ /tuː/"
 	},
 	{
 		"chinese": "上课",
@@ -96,7 +96,7 @@
 	},
 	{
 		"chinese": "正式的",
-		"english": "Formal",
+		"english": "formal",
 		"soundmark": "/ˈfɔːrməl/"
 	},
 	{
@@ -126,7 +126,7 @@
 	},
 	{
 		"chinese": "政府部门",
-		"english": "The government department",
+		"english": "the government department",
 		"soundmark": "/ðə/ /ˈɡʌvərmənt/ /dɪˈpɑːrtmənt/"
 	},
 	{
@@ -146,7 +146,7 @@
 	},
 	{
 		"chinese": "你必须",
-		"english": "You have to",
+		"english": "you have to",
 		"soundmark": "/juː/ /hæv/ /tuː/"
 	},
 	{
@@ -171,7 +171,7 @@
 	},
 	{
 		"chinese": "学生会",
-		"english": "The student union",
+		"english": "the student union",
 		"soundmark": "/ðə/ /ˈstjuːdənt/ /ˈjuːnjən/"
 	},
 	{

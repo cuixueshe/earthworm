@@ -101,13 +101,13 @@
 	},
 	{
 		"chinese": "这个问题",
-		"english": "The problem",
+		"english": "the problem",
 		"soundmark": "/ðə/ /ˈprɒbləm/"
 	},
 	{
 		"chinese": "复杂",
-		"english": "was complex",
-		"soundmark": "/wɒz/ /ˈkɒmplɛks/"
+		"english": "be complex",
+		"soundmark": "/biː/ /ˈkɒmplɛks/"
 	},
 	{
 		"chinese": "难以解释",
@@ -121,13 +121,13 @@
 	},
 	{
 		"chinese": "另一本书",
-		"english": "The other book",
+		"english": "the other book",
 		"soundmark": "/ðə/ /ˈʌðər/ /bʊk/"
 	},
 	{
 		"chinese": "不够详尽",
-		"english": "is not thorough",
-		"soundmark": "/ɪz/ /nɒt/ /ˈθʌrəʊ/"
+		"english": "be not thorough",
+		"soundmark": "/biː/ /nɒt/ /ˈθʌrəʊ/"
 	},
 	{
 		"chinese": "更具洞察力",
@@ -141,7 +141,7 @@
 	},
 	{
 		"chinese": "所有行业",
-		"english": "All industries",
+		"english": "all industries",
 		"soundmark": "/ɔːl/ /ˈɪndəstriz/"
 	},
 	{
@@ -161,18 +161,18 @@
 	},
 	{
 		"chinese": "奇怪的是",
-		"english": "Strangely",
+		"english": "strangely",
 		"soundmark": "/ˈstreɪnʤli/"
 	},
 	{
 		"chinese": "既印象深刻",
-		"english": "are simultaneously impressed by",
-		"soundmark": "/ɑːr/ /ˌsɪmlˈteɪniəsli/ /ɪmˈprɛst/ /baɪ/"
+		"english": "be simultaneously impressed by",
+		"soundmark": "/biː/ /ˌsɪmlˈteɪniəsli/ /ɪmˈprɛst/ /baɪ/"
 	},
 	{
 		"chinese": "又持怀疑态度",
-		"english": "and are skeptical of",
-		"soundmark": "/ænd/ /ɑːr/ /ˈskɛptɪkəl/ /ʌv/"
+		"english": "and be skeptical of",
+		"soundmark": "/ænd/ /biː/ /ˈskɛptɪkəl/ /ʌv/"
 	},
 	{
 		"chinese": "使用统计数据",
@@ -211,13 +211,13 @@
 	},
 	{
 		"chinese": "古典力学",
-		"english": "Classical mechanics",
+		"english": "classical mechanics",
 		"soundmark": "/ˈklæsɪkl/ /mɪˈkænɪks/"
 	},
 	{
 		"chinese": "有时",
-		"english": "is sometimes",
-		"soundmark": "/ɪz/ /ˈsʌmtaɪmz/"
+		"english": "be sometimes",
+		"soundmark": "/biː/ /ˈsʌmtaɪmz/"
 	},
 	{
 		"chinese": "被认为是",
