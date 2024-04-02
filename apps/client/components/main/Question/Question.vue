@@ -228,13 +228,15 @@ function handleAnswerRight() {
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
-    e.stopPropagation();
-    submitAnswer(
-      handleAnswerRight,
-      handleAnswerError // 错误提示
-    );
+    setTimeout(() => {
+      e.stopPropagation();
+      submitAnswer(
+        handleAnswerRight,
+        handleAnswerError // 错误提示
+      );
 
-    return;
+      return;
+    }, 0);
   }
 
   handleKeyboardInput(e, {
