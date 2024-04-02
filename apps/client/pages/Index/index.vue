@@ -10,10 +10,10 @@
         id="home"
       >
         <CommonTitle
-          title="An Friendly English learning tool."
+          title="友好的英语学习工具"
           :description="[
-            `Use conjunctions, task splitting, repetition, i +1 to help you learn English.`,
-            `Most importantly, you will have good positive feedback`,
+            `使用连词、任务拆分、重复、i +1 来帮助您学习英语`,
+            `最重要的是，您将获得良好的积极反馈`,
           ]"
         >
           <div
@@ -24,7 +24,7 @@
               class="btn"
               type="button"
             >
-              <strong>Get Started</strong>
+              <strong>开启Earthworm</strong>
               <div id="container-stars">
                 <div id="stars"></div>
               </div>
@@ -34,14 +34,14 @@
                 <div class="circle"></div>
               </div>
             </button>
-            <div class="dark:text-white ml-8">Start your English study.</div>
+            <div class="dark:text-white ml-8">开始你的英语学习</div>
           </div>
 
           <div class="w-full flex justify-center mt-20">
             <img
               alt=""
-              src="https://s1.locimg.com/2024/03/30/adb39233f2b18.jpg"
-              class="w-3/4 object-cover sm:h-80 lg:h-96"
+              src="~/assets/test.png"
+              class="w-3/4"
             />
           </div>
         </CommonTitle>

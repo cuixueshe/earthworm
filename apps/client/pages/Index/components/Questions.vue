@@ -4,10 +4,10 @@
     id="faq"
   >
     <CommonTitle
-      title="Frequently Asked Questions"
+      title="常见问题解答"
       :description="[
-        `If you can't find what you're looking for, please send an email to our team`,
-        `we'll get back to you as soon as possible!`,
+        `如果您找不到所需的内容，请发送电子邮件给我们的团队`,
+        `我们会尽快回复您！`,
       ]"
     />
     <div class="divide-y divide-gray-800 space-y-4 py-16">
@@ -22,7 +22,9 @@
           <summary
             class="flex justify-between items-center cursor-pointer py-5"
           >
-            <h2 class="text-lg font-medium dark:text-white opacity-75">{{ qs_item.title }}</h2>
+            <h2 class="text-lg font-medium dark:text-white opacity-75">
+              {{ qs_item.title }}
+            </h2>
             <span class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,27 +67,27 @@
 <script setup lang="ts">
 const QUESTIONS = [
   {
-    title: "How can I recover or reset my account password if I forget it?",
+    title: "如果我忘记了账户密码，该如何恢复或重置密码？",
     content: [
-      `If you forget your account password, you can click on the "Forgot password" link on the login page and follow the instructions for the password reset process.`,
+      `如果您忘记了账户密码，可以在登录页面点击“忘记密码”链接，并按照密码重置流程的指示操作。`,
     ],
   },
   {
-    title: "How can I update my personal profile or account information?",
+    title: "如何更新我的个人资料或账户信息？",
     content: [
-      "To update your personal profile or account information, you can log in to your account and navigate to the personal settings page where you can update your information and save the changes.",
+      "要更新您的个人资料或账户信息，您可以登录到您的账户，并导航至个人设置页面，在那里您可以更新您的信息并保存更改。",
     ],
   },
   {
-    title: "What should I do if I encounter issues while using the application and need technical support?",
+    title: "如果我在使用应用时遇到问题，需要技术支持，该怎么办？",
     content: [
-      "If you encounter issues while using the application and need technical support, you can contact our technical support team. You can find the relevant contact information in the application's help center or contact page.",
+      "如果您在使用应用时遇到问题，需要技术支持，可以联系我们的技术支持团队。您可以在应用的帮助中心或联系页面找到相关的联系信息。",
     ],
   },
   {
-    title: "How should I report an error or bug I encountered in the app to the development team?",
+    title: "我应该如何向开发团队报告我在应用中遇到的错误或漏洞？",
     content: [
-      "If you come across an error or bug in the app, you can report the issue to the development team through our official website or the app's feedback channel, providing detailed descriptions and steps to reproduce the problem. ",
+      "如果您在应用中发现了错误或漏洞，可以通过我们的官方网站或应用的反馈渠道向开发团队报告问题，提供详细的描述和重现问题的步骤。",
     ],
   },
 ];

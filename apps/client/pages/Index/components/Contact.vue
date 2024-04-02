@@ -13,14 +13,15 @@
               src="/logo.png"
               alt="earth-worm-logo"
             />
-            <span
-              class="text-3xl mt-4"
-              >Earthworm</span
-            >
+            <span class="text-3xl mt-4">Earthworm</span>
           </div>
 
-          <p class="mt-4 max-w-xs text-base leading-relaxed typing">
-            Join us in <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500">Earthworm</span>!...
+          <p class="mt-4 max-w-[16rem] text-base leading-relaxed typing">
+            一起来加入我们
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
+              >Earthworm</span
+            >!
           </p>
 
           <ul class="mt-8 flex gap-6">
@@ -76,7 +77,7 @@
           class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
         >
           <div>
-            <p class="font-medium text-lg">Services</p>
+            <p class="font-medium text-lg">服务</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -84,7 +85,7 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                  1on1 Coaching
+                  1对1辅导
                 </a>
               </li>
 
@@ -93,14 +94,14 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                  Accounts Review
+                  账户审查
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <p class="font-medium text-lg">Helpful Links</p>
+            <p class="font-medium text-lg">有用的链接</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -108,7 +109,7 @@
                   href="https://t.me/+dohhXSz-5n1kZDQ1"
                   class="transition hover:opacity-75"
                 >
-                  Contact
+                  联系我们
                 </a>
               </li>
 
@@ -117,14 +118,14 @@
                   href="#faq"
                   class="transition hover:opacity-75"
                 >
-                  FAQs
+                  常见问题
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <p class="font-medium text-lg">Teach</p>
+            <p class="font-medium text-lg">教学</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -132,7 +133,7 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                  About
+                  关于我们
                 </a>
               </li>
             </ul>

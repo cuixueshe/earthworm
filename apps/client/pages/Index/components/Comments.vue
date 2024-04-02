@@ -2,9 +2,9 @@
   <section class="flex flex-col pt-24">
     <div class="mx-auto max-w-screen-xl">
       <CommonTitle
-        title="User feedback"
+        title="用户反馈"
         :description="[
-          'If you are using Earthworm, feel free to give us your feedback on Twitter.',
+          '如果您正在使用我们的Earthworm，请随时在 Twitter 上向我们提供您的反馈!',
         ]"
       />
       <div class="mt-8 sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
