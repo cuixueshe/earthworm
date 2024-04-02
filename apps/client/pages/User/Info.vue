@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-full flex-1 justify-center px-6 py-12 lg:px-8">
+  <div class="flex justify-center flex-1 min-h-full px-6 py-12 lg:px-8">
     <UserMenus
       :menus="userMenus"
       @changeMenu="handleChangeMenu"
@@ -12,6 +12,7 @@
 
 <script setup lang="ts">
 import { markRaw, ref } from "vue";
+import UserAchievement from "~/components/user/Achievement.vue";
 import UserHome from "~/components/user/Home.vue";
 import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
@@ -27,6 +28,7 @@ type Menu = {
 const userMenus = ref<Menu[]>([
   { name: "主页", component: markRaw(UserHome) },
   { name: "设置", component: markRaw(UserSetting) },
+  { name: "成就", component: markRaw(UserAchievement) },
 ]);
 let currentComponent = ref<any>();
 const handleChangeMenu = (menu: Menu) => {
