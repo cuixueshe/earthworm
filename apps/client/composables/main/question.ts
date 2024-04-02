@@ -1,4 +1,5 @@
 import { nextTick, reactive, ref, watchEffect } from "vue";
+import { useCourseStore } from "~/store/course";
 
 interface Word {
   text: string;
@@ -32,6 +33,41 @@ export function clearQuestionInput() {
   inputValue.value = "";
 }
 
+const userInputWords = reactive<Word[]>([]);
+
+interface TipWord {
+  noInput: boolean;
+  characters: { incorrect: boolean; character: string }[];
+}
+
+const tipWords = reactive<TipWord[]>([]);
+
+export function validateInput() {
+  function validateCharacter(word: string, index: number) {
+    const inputCharacters = userInputWords[index].userInput
+      .toLowerCase()
+      .split("");
+
+    const overLength = userInputWords[index].userInput.length > word.length;
+
+    return word
+      .toLowerCase()
+      .split("")
+      .map((character, index) => ({
+        character,
+        incorrect: character !== inputCharacters[index] || overLength,
+      }));
+  }
+
+  const courseStore = useCourseStore();
+  courseStore.words.forEach((word, index) => {
+    tipWords[index] = {
+      noInput: !Boolean(userInputWords[index].userInput),
+      characters: validateCharacter(word, index),
+    };
+  });
+}
+
 export function useInput({
   source,
   setInputCursorPosition,
@@ -40,8 +76,6 @@ export function useInput({
 }: InputOptions) {
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
-
-  const userInputWords = reactive<Word[]>([]);
 
   setupUserInputWords();
   updateActiveWord(getInputCursorPosition());
@@ -354,5 +388,6 @@ export function useInput({
     fixFirstIncorrectWord,
     resetUserInputWords,
     isFixMode,
+    tipWords,
   };
 }

@@ -10,7 +10,22 @@
           :class="getWordsClassNames(i)"
           :style="{ minWidth: `${inputWidth(w)}ch` }"
         >
-          {{ userInputWords[i]["userInput"] }}
+          <span v-if="isAnswerTip()">
+            <template v-if="tipWords[i].noInput">
+              <span class="text-gray-500">{{ w }}</span>
+            </template>
+            <template v-else>
+              <span
+                v-for="char in tipWords[i].characters"
+                :class="[char.incorrect ? 'text-red-500' : 'text-green-500']"
+              >
+                {{ char.character }}
+              </span>
+            </template>
+          </span>
+          <span v-else>
+            {{ userInputWords[i]["userInput"] }}
+          </span>
         </div>
       </template>
       <input
@@ -63,14 +78,21 @@ const { handleAnswerError, resetCloseTip } = answerError();
 const { isAutoNextQuestion } = useAutoNextQuestion();
 const { isShowErrorTip } = useErrorTip();
 
-const { inputValue, userInputWords, submitAnswer, setInputValue, handleKeyboardInput, isFixMode } =
-  useInput({
-    source: () => courseStore.currentStatement?.english!,
-    setInputCursorPosition,
-    getInputCursorPosition,
-    inputChangedCallback,
-  });
-const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
+const {
+  inputValue,
+  userInputWords,
+  submitAnswer,
+  setInputValue,
+  handleKeyboardInput,
+  isFixMode,
+  tipWords,
+} = useInput({
+  source: () => courseStore.currentStatement?.english!,
+  setInputCursorPosition,
+  getInputCursorPosition,
+  inputChangedCallback,
+});
+const { showAnswerTip, hiddenAnswerTip, isAnswerTip } = useAnswerTip();
 
 onMounted(() => {
   focusInput();
@@ -82,6 +104,7 @@ focusInputWhenWIndowFocus();
 watch(
   () => inputValue.value,
   (val) => {
+    hiddenAnswerTip();
     setInputValue(val);
     courseTimer.time(String(courseStore.statementIndex));
   },
@@ -210,7 +233,7 @@ function handleKeydown(e: KeyboardEvent) {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
       rightCallback: handleAnswerRight,
-      errorCallback: handleAnswerError,
+      errorCallback: handleAnswerError, // 错误提示
     },
   });
 }
