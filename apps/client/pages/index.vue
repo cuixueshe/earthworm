@@ -289,7 +289,7 @@
     <MessageBox
       v-model:is-show-modal="showMobileTip"
       title="友情提示"
-      content="目前暂不支持移动设备哦，请关注后续更新~"
+      :content="mobileTip"
       cancel-btn-text="好哒"
       confirm-btn-text=""
     ></MessageBox>
@@ -311,13 +311,26 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const { handleKeydown, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
 
-const { showMobileTip } = useMonitorSystem();
+const { showMobileTip, mobileTip } = useMonitorSystem();
 
 function useMonitorSystem() {
   const showMobileTip = ref(false);
+  const mobileTip = ref("");
+
+  // ipad && 竖屏
+  function isIPadAndPortrait() {
+    const isIPad = navigator.userAgent.match(/iPad/i) !== null;
+    const isMacintosh = navigator.userAgent.match(/Macintosh/i) !== null;
+    const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+    return (isIPad || isMacintosh) && isPortrait;
+  }
 
   function mobileSystem() {
-    return "ontouchstart" in document.documentElement;
+    const isMobile = "ontouchstart" in document.documentElement;
+    mobileTip.value = isIPadAndPortrait()
+      ? "横屏使用效果更佳哦~"
+      : "目前暂不支持移动设备哦，请关注后续更新";
+    return isIPadAndPortrait() || isMobile;
   }
 
   onMounted(() => {
@@ -326,6 +339,7 @@ function useMonitorSystem() {
 
   return {
     showMobileTip,
+    mobileTip,
   };
 }
 
