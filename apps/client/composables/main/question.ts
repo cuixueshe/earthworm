@@ -163,9 +163,12 @@ export function useInput({
     }
   }
 
-  // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
+  // 将‘ 转化为', 做模糊匹配, 并将单词中不必要的特殊符号去除，使程序更人性化
   function formatInputText(word: string) {
-    return word.toLocaleLowerCase().replace(/‘/g, "'");
+    return word
+      .toLocaleLowerCase()
+      .replace(/‘/g, "'")
+      .replace(/[^a-zA-Z'-]/g, "");
   }
 
   // 当前编辑的单词是否为最后一个错误单词
