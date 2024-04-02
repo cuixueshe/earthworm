@@ -228,21 +228,19 @@ function handleAnswerRight() {
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
-    setTimeout(() => {
-      e.stopPropagation();
-      submitAnswer(
-        handleAnswerRight,
-        handleAnswerError // 错误提示
-      );
-
-      return;
-    }, 0);
+    setInputValue(inputEl.value?.value || "");
+    e.stopPropagation();
+    submitAnswer(
+      handleAnswerRight,
+      handleAnswerError // 错误提示
+    );
+    return;
   }
 
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback:  handleAnswerRight, 
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });
