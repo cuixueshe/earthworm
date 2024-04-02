@@ -33,8 +33,6 @@ export function clearQuestionInput() {
   inputValue.value = "";
 }
 
-const userInputWords = reactive<Word[]>([]);
-
 interface TipWord {
   noInput: boolean;
   characters: { incorrect: boolean; character: string }[];
@@ -43,12 +41,15 @@ interface TipWord {
 const tipWords = reactive<TipWord[]>([]);
 
 export function validateInput() {
-  function validateCharacter(word: string, index: number) {
-    const inputCharacters = userInputWords[index].userInput
-      .toLowerCase()
-      .split("");
+  function getUserInput(index: number) {
+    return inputValue.value.toLowerCase().split(separator)[index] || "";
+  }
 
-    const overLength = userInputWords[index].userInput.length > word.length;
+  function validateCharacter(word: string, index: number) {
+    const userInput = getUserInput(index);
+    const inputCharacters = userInput.split("");
+
+    const overLength = userInput.length > word.length;
 
     return word
       .toLowerCase()
@@ -62,7 +63,7 @@ export function validateInput() {
   const courseStore = useCourseStore();
   courseStore.words.forEach((word, index) => {
     tipWords[index] = {
-      noInput: !Boolean(userInputWords[index].userInput),
+      noInput: !Boolean(getUserInput(index)),
       characters: validateCharacter(word, index),
     };
   });
@@ -76,6 +77,8 @@ export function useInput({
 }: InputOptions) {
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
+
+  const userInputWords = reactive<Word[]>([]);
 
   setupUserInputWords();
   updateActiveWord(getInputCursorPosition());
