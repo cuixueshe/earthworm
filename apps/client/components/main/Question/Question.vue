@@ -228,6 +228,7 @@ function handleAnswerRight() {
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
+    // 每次回车会手动的调用一次setInputValue已确保拿到最新的input value，用于解决中文输入法输入回车后值为旧值的情况
     setInputValue(inputEl.value?.value || "");
     e.stopPropagation();
     submitAnswer(
