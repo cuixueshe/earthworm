@@ -20,7 +20,7 @@
 		"soundmark": "/aɪ/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "支付(ed形式)",
+		"chinese": "支付(过去分词)",
 		"english": "paid",
 		"soundmark": "/ped/"
 	},
@@ -595,7 +595,7 @@
 		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "吃(ed形式)",
+		"chinese": "吃(过去分词)",
 		"english": "eaten",
 		"soundmark": "/ˈitn/"
 	},
@@ -620,7 +620,7 @@
 		"soundmark": "/tə/ /əˈtɛnd/"
 	},
 	{
-		"chinese": "参加(ed形式)",
+		"chinese": "参加(过去分词)",
 		"english": "attended",
 		"soundmark": "/əˈtɛndɪd/"
 	},
@@ -660,7 +660,7 @@
 		"soundmark": "/tə/ /luz/"
 	},
 	{
-		"chinese": "丢掉(ed形式)",
+		"chinese": "丢掉(过去分词)",
 		"english": "lost",
 		"soundmark": "/lɔst/"
 	},
@@ -690,7 +690,7 @@
 		"soundmark": "/tə/ /si/"
 	},
 	{
-		"chinese": "看(ed形式)",
+		"chinese": "看(过去分词)",
 		"english": "seen",
 		"soundmark": "/sin/"
 	},
@@ -715,7 +715,7 @@
 		"soundmark": "/tə/ /'stʌdi/"
 	},
 	{
-		"chinese": "学习(ed形式)",
+		"chinese": "学习(过去分词)",
 		"english": "studied",
 		"soundmark": "/ˈstʌdid/"
 	},
@@ -745,7 +745,7 @@
 		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "做(ed形式)",
+		"chinese": "做(过去分词)",
 		"english": "made",
 		"soundmark": "/med/"
 	},
