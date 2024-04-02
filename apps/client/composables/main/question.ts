@@ -41,8 +41,10 @@ interface TipWord {
 const tipWords = reactive<TipWord[]>([]);
 
 export function validateInput() {
+  const userInputs = inputValue.value.toLowerCase().split(separator)
+
   function getUserInput(index: number) {
-    return inputValue.value.toLowerCase().split(separator)[index] || "";
+    return userInputs[index] || "";
   }
 
   function validateCharacter(word: string, index: number) {
