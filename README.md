@@ -10,7 +10,9 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 
 ## 🚀 How To Start ?
 
-### Requirements
+**The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors!**
+
+### 0. Requirements
 
 - **pnpm version >= 8**
 
@@ -23,8 +25,6 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**
 - **Docker**. please make sure it is installed and running successfully on your local machine.
-
-**The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors!**
 
 ```bash
 docker --version # Docker version 24.0.7, build afdd53b
@@ -86,7 +86,9 @@ When executing this command, try to keep a little time from the previous command
 pnpm db:init
 ```
 
-### 5. Create and Upload Course Data (Only Execute This During the Initial Database Initialization)
+### 5. Create and Upload Course Data
+
+**Only Execute This During the Initial Database Initialization**
 
 ```bash
 pnpm db:upload
@@ -102,6 +104,51 @@ pnpm dev:serve
 
 ```bash
 pnpm dev:client
+```
+
+## ⚒ About testing
+
+**Run the test before submitting the commit, and submit the code after the test passes, so as to avoid multiple commits to solve the test problem**
+
+### Front-end Testing
+
+The main is the single test of Vitest and the automated test of cypress, execute the following command:
+
+```bash
+# Enter the front-end project directory
+cd apps/client
+
+# vitest
+pnpm test:unit:run
+# cypress
+pnpm test:e2e:run
+
+# monitor vitest, convenient hot update to see test results
+pnpm test:unit:watch
+```
+
+### Backend Testing
+
+Mainly Jest single test and end-to-end test, but need to access the test database, so you need to ensure that
+
+1. testdb and testRedis services in Docker Compose started normally
+2. The configuration information in the `.env.test` file is correct. If there is no such file, you can copy the contents of the `apps/api/.env.example` file to the `apps/api/.env.test` file. The following command is provided to directly use
+
+Execute the following command:
+
+```bash
+# Enter Backend Project Directory
+cd apps/api
+
+# If you have an.env.test file, you don't need to run this step
+cp .env.test.example .env.test
+
+# Single test
+pnpm test:unit:run
+# End-to-end testing
+pnpm test:e2e:run
+# Single test and end-to-end test run together
+pnpm test
 ```
 
 ## ❓ FAQ
