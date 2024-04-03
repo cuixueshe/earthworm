@@ -11,54 +11,31 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="hover">
-            <td class="label-text">播放发音</td>
-            <td class="text-center">{{ shortcutKeys.sound }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('sound')"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">切换答题/答案页面</td>
-            <td class="text-center">{{ shortcutKeys.answer }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('answer')"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">跳过当前问题</td>
-            <td class="text-center">{{ shortcutKeys.skip }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('skip')"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">返回上个问题</td>
-            <td class="text-center">{{ shortcutKeys.previous }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit('previous')"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
+          <template v-for="item in shortcutKeyBindList">
+            <tr class="hover">
+              <td class="label-text">{{ item.label }}</td>
+              <td class="text-center">
+                <div
+                  class="flex items-center justify-center gap-2 text-xs text-center"
+                >
+                  <div
+                    class="kbd"
+                    v-for="key in parseShortcutKeys(shortcutKeys[item.type])"
+                  >
+                    {{ key }}
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <button
+                  class="btn btn-sm btn-outline btn-secondary"
+                  @click="handleEdit(item.type)"
+                >
+                  编辑
+                </button>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </section>
@@ -92,7 +69,7 @@
           <tr class="hover">
             <td class="label-text">切换口音</td>
             <td class="w-[300px] text-center">
-              <div class="join mr-12">
+              <div class="mr-12 join">
                 <input
                   v-for="lang in getPronunciationOptions()"
                   class="join-item btn btn-sm"
@@ -149,18 +126,30 @@
       ref="dialogBoxRef"
       class="modal-box max-w-[48rem] min-h-[156px]"
     >
-      <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
+      <h3 class="mb-4 text-base font-bold text-center text-fuchsia-500">
         请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
       <div
-        class="h-8 leading-8 border border-solid border-fuchsia-500 rounded text-center"
+        class="h-8 leading-8 text-center border border-solid rounded border-fuchsia-500"
       >
         {{ shortcutKeyStr }}
       </div>
-      <div class="text-center mt-2 text-xs">
-        {{ shortcutKeyTip }}
+      <div
+        v-if="shortcutKeyTip"
+        class="flex justify-center gap-2 mt-2 text-xs text-center"
+      >
+        <div
+          v-for="key in parseShortcutKeys(shortcutKeyTip)"
+          class="kbd"
+        >
+          {{ key }}
+        </div>
       </div>
-      <div v-if="hasSameShortcutKey" class="text-center mt-4 text-xs" :class="'text-[rgba(136,136,136,1)]'" >
+      <div
+        v-if="hasSameShortcutKey"
+        class="mt-4 text-xs text-center"
+        :class="'text-[rgba(136,136,136,1)]'"
+      >
         已有相同的按键绑定，请重新设置
       </div>
     </div>
@@ -181,13 +170,17 @@ import {
   PronunciationType,
   usePronunciation,
 } from "~/composables/user/pronunciation";
-import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import {
+  SHORTCUT_KEY_TYPES,
+  useShortcutKeyMode,
+} from "~/composables/user/shortcutKey";
 import {
   useAutoPronunciation,
   useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
@@ -210,6 +203,25 @@ const {
   handleCloseDialog,
   handleKeydown,
 } = useShortcutKeyMode();
+
+const shortcutKeyBindList = [
+  {
+    label: "播放发音",
+    type: SHORTCUT_KEY_TYPES.SOUND,
+  },
+  {
+    label: "显示隐藏/答案预览",
+    type: SHORTCUT_KEY_TYPES.ANSWER,
+  },
+  {
+    label: "返回上个问题",
+    type: SHORTCUT_KEY_TYPES.PREVIOUS,
+  },
+  {
+    label: "跳过当前问题",
+    type: SHORTCUT_KEY_TYPES.SKIP,
+  },
+];
 
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);

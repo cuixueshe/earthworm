@@ -288,8 +288,9 @@
 
     <MessageBox
       v-model:is-show-modal="showMobileTip"
-      content="The app isn't mobile-friendly, so stay tuned!"
-      cancel-btn-text="fine"
+      title="友情提示"
+      content="目前暂不支持移动设备哦，请关注后续更新~"
+      cancel-btn-text="好哒"
       confirm-btn-text=""
     ></MessageBox>
   </div>
@@ -299,10 +300,12 @@
   import { onMounted, onUnmounted, ref } from "vue";
   import { useRouter } from "vue-router";
 
-  import CommentsList from "~/assets/comments";
-  import Loading from "~/components/Loading.vue";
-  import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-  import { formatTimestamp } from "~/utils/date";
+
+import CommentsList from "~/assets/comments";
+import Loading from "~/components/Loading.vue";
+import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+import { formatTimestamp } from "~/utils/date";
+
 
   import { useGameStore } from "~/store/game";
   import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";

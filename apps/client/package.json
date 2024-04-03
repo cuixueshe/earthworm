@@ -42,6 +42,7 @@
     "axios": "^1.6.6",
     "canvas-confetti": "^1.9.2",
     "country-telephone-data": "^0.6.3",
+    "dayjs": "^1.11.10",
     "google-libphonenumber": "^3.2.34",
     "pinia": "^2.1.7",
     "satori": "^0.10.13",

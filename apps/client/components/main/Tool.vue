@@ -124,15 +124,19 @@
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import RankList from "~/components/rank/RankingList.vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
+import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
+import { useQuestionInput } from "../main/Question/questionInput";
 import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
+const { focusInput } = useQuestionInput();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
@@ -161,7 +165,10 @@ function useDoAgain() {
 
   function handleTipConfirm() {
     coursesStore.doAgain();
+    clearQuestionInput();
+    focusInput();
     showQuestion();
+    courseTimer.reset()
   }
 
   return {

@@ -1,12 +1,12 @@
 <template>
   <div
-    class="absolute top-[-50px] left-0 w-full flex items-center justify-center text-xl dark:text-gray-50"
+    class="absolute flex items-center justify-center w-3/4 text-xl top-36 dark:text-gray-50"
   >
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body relative group">
-        <div class="absolute top-1 right-2 mt-0 hidden group-hover:block">
+    <div class="shadow-xl card bg-base-100">
+      <div class="relative card-body">
+        <div class="absolute mt-0 top-1 right-2">
           <button
-            class="w-6 h-6 outline-none dark:text-white"
+            class="w-6 h-6 text-gray-400 outline-none dark:text-gray-300"
             @click="hiddenAnswerTip"
           >
             <svg

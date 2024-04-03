@@ -63,7 +63,7 @@ export const tpl_1 = ({
                   tw: "text-6xl font-bold flex justify-end",
                   children: '"',
                 },
-              },
+              }
             ],
           },
         },

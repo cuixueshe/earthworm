@@ -21,7 +21,7 @@ export function useDarkMode() {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  const cacheDarkMode = sessionStorage.getItem(DARK_MODE) as Theme | null;
+  const cacheDarkMode = localStorage.getItem(DARK_MODE) as Theme | null;
 
   const initDarkMode = () => {
     if (isDarkMode && !cacheDarkMode) {
@@ -85,7 +85,7 @@ export function useDarkMode() {
     document.documentElement.classList.toggle(DARK_THEME_CLASS, state);
     document.documentElement.setAttribute("data-theme", themeClass);
     darkMode.value = themeValue;
-    sessionStorage.setItem(DARK_MODE, themeValue);
+    localStorage.setItem(DARK_MODE, themeValue);
   };
 
   return {

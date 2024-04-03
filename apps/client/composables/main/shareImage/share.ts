@@ -1,14 +1,13 @@
-import { ref } from "vue";
 import satori, { type SatoriNode } from "satori";
+import { ref } from "vue";
+import { useDailySentence } from "../summary";
 import {
-  clearCanvas,
   convertSVGtoImg,
   copyImage,
-  initCanvas,
   fontEn,
   fontZh,
+  initCanvas,
 } from "./helper";
-import { useDailySentence } from "../summary";
 import { tpl_1 } from "./imageTemplates/tpl_1";
 import { tpl_2 } from "./imageTemplates/tpl_2";
 
