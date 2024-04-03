@@ -81,6 +81,7 @@ const {
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
 onMounted(() => {
+  focusInput();
   resetCloseTip();
   window.addEventListener("focus", () => focusInput());
 });
