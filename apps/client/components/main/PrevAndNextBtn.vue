@@ -96,13 +96,13 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
 
   function handleShortcut() {
     onMounted(() => {
-      registerShortcut(nextKey, goToNextQuestion);
       registerShortcut(prevKey, goToPreviousQuestion);
+      registerShortcut(nextKey, goToNextQuestion);
     });
 
     onUnmounted(() => {
-      cancelShortcut(prevKey, goToNextQuestion);
-      cancelShortcut(nextKey, goToPreviousQuestion);
+      cancelShortcut(prevKey, goToPreviousQuestion);
+      cancelShortcut(nextKey, goToNextQuestion);
     });
   }
 
