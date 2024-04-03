@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -81,8 +81,11 @@ const {
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
 onMounted(() => {
-  focusInput();
   resetCloseTip();
+  window.addEventListener("focus", () => focusInput());
+});
+onUnmounted(() => {
+  window.removeEventListener("focus", () => focusInput());
 });
 
 watch(
@@ -240,7 +243,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback:  handleAnswerRight, 
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });
