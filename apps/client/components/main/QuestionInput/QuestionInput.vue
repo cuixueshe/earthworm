@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -78,7 +78,12 @@ const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 onMounted(() => {
   focusInput();
   resetCloseTip();
+  document.addEventListener("visibilitychange", visibilitychangeHandler);
 });
+
+onUnmounted(() => {
+  document.removeEventListener("visibilitychange", visibilitychangeHandler);
+})
 
 watch(
   () => inputValue.value,
@@ -95,6 +100,16 @@ watch(
     resetCloseTip();
   }
 );
+
+// when tab change
+function visibilitychangeHandler() {
+  if(document.hidden) {
+    // something to do when tab change
+  }
+  else {
+    focusInput();
+  }
+}
 
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
