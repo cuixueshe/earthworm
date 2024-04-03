@@ -10,7 +10,9 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 
 ## 🚀 How To Start ?
 
-### ⚠️ Requirements
+**The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors!**
+
+### 0. Requirements
 
 - **pnpm version >= 8**
 
@@ -23,7 +25,6 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 - **MySQL version >= 8.0.0**
 - **Redis version >= 5.0.0**
 - **Docker**. please make sure it is installed and running successfully on your local machine.
-- The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors.
 
 ```bash
 docker --version # Docker version 24.0.7, build afdd53b
@@ -39,27 +40,31 @@ pnpm -v # 8+
 pnpm install
 ```
 
-### 2. Copy the Contents of `.env.example` to the `./apps/api/.env` File
+### 2. Configure the `.env` File
 
-If the file doesn't exist, you need to create it manually. Linux users can perform the operation with the following command.
+You can choose to copy the contents of `./apps/api/.env.example` to`./apps/api/.env`. note that the' example' file contains sample configuration. the main storage system's environment variable information, such as database connection address, user name, password, port, key, etc. the back-end service will read the configuration from this file, **of course you can also change it to your own configuration information**
 
-> It primarily stores environmental variable information for the main storage system, such as database connection addresses, usernames, passwords, ports, keys, and so on. The backend service will read configuration from this file. Of course, you can also customize it with your own configuration information.
+Windows users recommend shortcut keys to copy and paste, Linux users can operate through the following command
 
 ```bash
-cp .env.example ./apps/api/.env
+cp ./apps/api/.env.example ./apps/api/.env
 ```
 
-### 3. Start/Stop/Delete Docker Compose Service
+### 3. Start Docker Compose Service
 
 The backend relies on MySQL and Redis services. Start and stop these services using the commands configured in `package.json` below.
 
 ```bash
 # start
 pnpm docker:start
+
+# When needed, execute the following command
 # stop
 pnpm docker:stop
 # delete
 pnpm docker:delete
+# Complete deletion (including Volume data)
+pnpm docker:down
 ```
 
 If you prefer manual, you can use the commands below.
@@ -73,15 +78,17 @@ docker compose down
 docker-compose up -d
 ```
 
-### 4. Initialize Database
+### 4. Initialize Database Schema
 
-When executing the current command, try to wait for a short interval after the previous command, as we are using the `-d` parameter, which runs the services in the background. They might still be in a 'running' state. If you encounter an error, try running the command again.
+When executing this command, try to keep a little time from the previous command, because the `-d` parameter just used will suspend its service execution in the background. At this time, the docker service may still be running. If an error is found, execute it again.
 
 ```bash
 pnpm db:init
 ```
 
-### 5. Create and Upload Course Data (Only Execute This During the Initial Database Initialization)
+### 5. Create and Upload Course Data
+
+**Only Execute This During the Initial Database Initialization**
 
 ```bash
 pnpm db:upload
@@ -99,7 +106,58 @@ pnpm dev:serve
 pnpm dev:client
 ```
 
-## FAQ
+## ⚒ About testing
+
+**Run the test before submitting the commit, and submit the code after the test passes, so as to avoid multiple commits to solve the test problem**
+
+### Front-end Testing
+
+The main is the single test of Vitest and the automated test of cypress, execute the following command:
+
+```bash
+# Enter the front-end project directory
+cd apps/client
+
+# vitest
+pnpm test:unit:run
+# cypress
+pnpm test:e2e:run
+
+# monitor vitest, convenient hot update to see test results
+pnpm test:unit:watch
+```
+
+### Backend Testing
+
+Mainly Jest single test and end-to-end test, but need to access the test database, so you need to ensure that
+
+1. testdb and testRedis services in Docker Compose started normally
+2. The configuration information in the `.env.test` file is correct. If there is no such file, you can copy the contents of the `apps/api/.env.example` file to the `apps/api/.env.test` file. The following command is provided to directly use
+
+Execute the following command:
+
+```bash
+# Enter Backend Project Directory
+cd apps/api
+
+# If you have an.env.test file, you don't need to run this step
+cp .env.test.example .env.test
+
+# Single test
+pnpm test:unit:run
+# End-to-end testing
+pnpm test:e2e:run
+# Single test and end-to-end test run together
+pnpm test
+```
+
+## ❓ FAQ
+
+### Database connection failed
+
+My Docker and the database inside are running normally, but when I run the `db:init` command, I still report an error, indicating that the database connection failed.
+
+You can check whether the database configuration in the `.env` file is correct, or even whether this file has it! 😠
 
 ### How To Correctly Update Course Data ?
 
@@ -153,7 +211,7 @@ newgrp docker
 docker images
 ```
 
-## Frontend Development Guideline
+## 🤝 Frontend Development Guideline
 
 1. Do not Destructure Pinia store.
    - The readability will be better when using `store`
@@ -162,7 +220,7 @@ docker images
    1. Such as `useMessage`
    2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
 
-## Contributing
+## 🌟 Contributing
 
 Thanks to everyone who has already contributed to Earthworm! 🎉
 
