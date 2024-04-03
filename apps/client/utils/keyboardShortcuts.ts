@@ -32,11 +32,14 @@ function parseKey(keyString: string) {
 
 function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
   return shortcuts.filter((shortcut) => {
-    return (
+    const preciseMatching =
       shortcut.ctrlKey === event.ctrlKey &&
       shortcut.metaKey === event.metaKey &&
-      shortcut.key === convertMacKey(event.key).toLowerCase()
-    );
+      shortcut.key === convertMacKey(event.key).toLowerCase();
+
+    const anyMatching = shortcut.key === "*";
+
+    return preciseMatching || anyMatching;
   });
 }
 

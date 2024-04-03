@@ -129,7 +129,7 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "../main/Question/questionInput";
+import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
 import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";

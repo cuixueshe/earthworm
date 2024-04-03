@@ -1,15 +1,10 @@
 <template>
-  <div class="flex items-center justify-center h-full">
-    <template v-if="isQuestion()">
-      <Question></Question>
-      <template v-if="isAnswerTip()">
-        <AnswerTip></AnswerTip>
-      </template>
-    </template>
-    <template v-else-if="isAnswer()">
-      <Answer></Answer>
-    </template>
-  </div>
+  <template v-if="currentGameMode === GameMode.Dictation">
+    <DictationMode></DictationMode>
+  </template>
+  <template v-else-if="currentGameMode === GameMode.ChineseToEnglish">
+    <ChineseToEnglishMode></ChineseToEnglishMode>
+  </template>
   <Tips></Tips>
   <Summary></Summary>
   <Share></Share>
@@ -18,23 +13,18 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue";
+import ChineseToEnglishMode from "~/components/mode/chineseToEnglish/ChineseToEnglishMode.vue";
+import DictationMode from "~/components/mode/dictation/DictationMode.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { useAnswerTip } from "~/composables/main/answerTip";
-import { useGameMode } from "~/composables/main/game";
-import Answer from "./Answer.vue";
-import AnswerTip from "./AnswerTip.vue";
 import AuthRequired from "./AuthRequired.vue";
-import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
+import { useGameMode, GameMode } from "~/composables/user/gameMode";
 
-const { isAnswer, isQuestion } = useGameMode();
-const { isAnswerTip } = useAnswerTip();
-
+const { currentGameMode } = useGameMode();
 
 onMounted(() => {
-  courseTimer.reset()
-})
-
+  courseTimer.reset();
+});
 </script>

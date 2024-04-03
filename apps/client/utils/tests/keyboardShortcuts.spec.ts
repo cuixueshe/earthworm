@@ -82,6 +82,17 @@ describe("keyboardShortcuts", () => {
     expect(commandB).toBeCalled();
   });
 
+  it("should trigger command when press any shortcut key", () => {
+    let command = vi.fn();
+    registerShortcut("*", command);
+
+    fireEvent.keyDown({ key: "1" });
+    fireEvent.keyDown({ key: "a" });
+    fireEvent.keyDown({ key: "[" });
+
+    expect(command).toBeCalledTimes(3);
+  });
+
   describe("cancel shortcut key", () => {
     it("single key", () => {
       let command = vi.fn();
@@ -124,6 +135,16 @@ describe("keyboardShortcuts", () => {
       });
 
       expect(command).not.toBeCalled();
+    });
+
+    it("wildcard character", () => {
+      let command = vi.fn();
+      registerShortcut("*", command);
+
+      cancelShortcut("*", command);
+      fireEvent.keyDown({ key: "1" });
+
+      expect(command).not.toBeCalled()
     });
   });
 
