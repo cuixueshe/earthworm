@@ -300,7 +300,7 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
-import CommentsList from "~/assets/comments";
+import CommentsList from "~/assets/comments.json";
 import Loading from "~/components/Loading.vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import { formatTimestamp } from "~/utils/date";

@@ -36,4 +36,8 @@ export default defineNuxtConfig({
   imports: {
     autoImport: false,
   },
+  components: true,
+  plugins: [
+    '~/plugins/globalComponents.ts'
+  ]
 });
