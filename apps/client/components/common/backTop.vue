@@ -2,7 +2,7 @@
   <button
     class="button dark:bg-[#05051d] bg-white transition-all duration-300 cursor-pointer"
     @click="scrollToTop"
-    :data-content="route.path === '/Index' ? 'Back to Top' : 'Go to Home'"
+    :data-content="route.path === '/' ? 'Back to Top' : 'Go to Home'"
   >
     <svg
       class="svgIcon w-3 dark:fill-white fill-black transition-all duration-300"
@@ -21,14 +21,14 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const scrollToTop = () => {
-  if (route.path === "/Index") {
+  if (route.path === "/") {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
     return;
   } else {
-    window.location.href = "/Index";
+    window.location.href = "/";
   }
 };
 </script>
