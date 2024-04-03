@@ -20,7 +20,7 @@ describe("start game", () => {
       },
     }).as("getTryCourse");
 
-    cy.contains("Get Started").click();
+    cy.contains("开启Earthworm").click();
     // 目前对于游客来讲 是写死的 course id 为 1 ，所以这里暂时只验证是否有调用 try course 接口即可
     // 后面如果 try course 的 id 是基于后端接口返回的话 那么在修改此处的测试写法
     cy.wait("@getTryCourse").its("request.method").should("equal", "GET");
@@ -56,7 +56,7 @@ describe("start game", () => {
       },
     }).as("getCourse");
 
-    cy.contains("Get Started").click(); // 点击 Get Started 按钮
+    cy.contains("开启Earthworm").click(); // 点击 Get Started 按钮
     cy.wait("@fetchGameStart"); // 等待拦截的请求
     cy.wait("@getCourse"); // 等待拦截的请求
 
