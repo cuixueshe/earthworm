@@ -18,22 +18,19 @@ export interface AchievementItem {
 
 export const useAchievementList = () => {
   const achievementList = ref<AchievementItem[]>([]);
+  const currentAchievement = ref<AchievementItem>();
   const getAchievementList = async () => {
     // const res = await UserAchievement.getAchievementList();
     // achievementList.value = res.data;
   };
   const setAchievementActive = async (id: number) => {
-    // const res = await UserAchievement.setAchievementActive(id);
-    // if (res.code === 200) {
-    //   achievementList.value = achievementList.value.map((item) => {
-    //     if (item.id === id) {
-    //       item.isActive = true;
-    //     }
-    //     return item;
-    //   });
-    // }
+    currentAchievement.value = achievementList.value.find(
+      (item) => item.id === id
+    );
+    currentAchievement.value!.isActive = true;
   };
   return {
+    currentAchievement,
     achievementList,
     getAchievementList,
     setAchievementActive,
