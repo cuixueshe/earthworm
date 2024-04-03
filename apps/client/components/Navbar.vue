@@ -23,7 +23,7 @@
           </NuxtLink>
 
           <nav
-            v-if="route.path === '/Index'"
+            v-if="route.path === '/'"
             aria-label="Global"
             class="hidden md:block mr-8"
           >

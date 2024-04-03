@@ -54,6 +54,7 @@
       <!-- <Question /> -->
       <Contact />
     </template>
+    <CommonBackTop class="sticky flex justify-end ml-auto sm:block bottom-28" />
     <MessageBox
       v-model:is-show-modal="showMobileTip"
       title="友情提示"

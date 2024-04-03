@@ -10,15 +10,8 @@
         <slot></slot>
       </div>
       <Footer></Footer>
-      <CommonBackTop
-        class="sticky flex justify-end ml-auto sm:block"
-        :class="route.path === '/Index' ? 'bottom-96' : 'bottom-40'"
-      />
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { useRoute } from "vue-router";
-const route = useRoute();
-</script>
+<script setup lang="ts"></script>
