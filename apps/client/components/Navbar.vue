@@ -1,6 +1,9 @@
 <template>
   <header
-    class="sticky top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3"
+    :class="[
+      headerClasses,
+      'top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3',
+    ]"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -236,7 +239,11 @@ const isShowModal = ref(false);
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-
+//计算属性来动态决定是否添加sticky类
+const isHomePage = computed(() => route.path === "/");
+const headerClasses = computed(() => ({
+  sticky: isHomePage.value,
+}));
 const handleViewUserInfo = () => {
   navigateTo("/user/info");
 };
