@@ -80,6 +80,13 @@ const QUESTIONS = [
     ],
   },
   {
+    title: "如何为 Earthworm 贡献代码",
+    content: [
+      "我们提供了完整的贡献代码指南，可以先读一读(页脚处有链接)",
+      "去 github/issues 逛一逛， 也可以基于你在使用中遇到的问题提一个 issue 并且自己尝试修复",
+    ],
+  },
+  {
     title: "如果我忘记了账户密码，该如何恢复或重置密码？",
     content: [
       `加入 Telegram 群组，联系阿崔，告诉阿崔你的帐号`,
