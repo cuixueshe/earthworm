@@ -2,6 +2,7 @@
   <div class="flex min-h-full flex-1 justify-center px-6 py-12 lg:px-8">
     <UserMenus
       :menus="userMenus"
+      :defaultMenuName="defaultMenuName"
       @changeMenu="handleChangeMenu"
     />
     <div class="flex-1 pl-4">
@@ -11,25 +12,38 @@
 </template>
 
 <script setup lang="ts">
-import { markRaw, ref } from "vue";
-import UserHome from "~/components/user/Home.vue";
+import { computed, ref, watchEffect } from "vue";
+import { useRoute } from "vue-router";
 import UserMenus from "~/components/user/Menu.vue";
+import UserHome from "~/components/user/Home.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
-type Menu = {
-  name: string;
-  component: any;
+const route = useRoute();
+
+const componentMap = {
+  Home: UserHome,
+  Setting: UserSetting,
 };
 
-// [Vue warn]: Vue received a Component that was made a reactive object.
-// This can lead to unnecessary performance overhead and should be avoided
-// by marking the component with `markRaw` or using `shallowRef` instead of `ref`.
-const userMenus = ref<Menu[]>([
-  { name: "主页", component: markRaw(UserHome) },
-  { name: "设置", component: markRaw(UserSetting) },
+const userMenus = ref([
+  { name: "主页", component: "Home" },
+  { name: "设置", component: "Setting" },
 ]);
-let currentComponent = ref<any>();
-const handleChangeMenu = (menu: Menu) => {
-  currentComponent.value = menu.component;
-};
+
+const currentComponent = ref<UserHome | UserSetting>(componentMap.Home);
+
+watchEffect(() => {
+  const routeComponent = route.query.displayComponent;
+  currentComponent.value =
+    componentMap[routeComponent as keyof typeof componentMap] ||
+    componentMap.Home;
+});
+
+function handleChangeMenu(menu) {
+  currentComponent.value = componentMap[menu.component];
+}
+
+const defaultMenuName = computed(() =>
+  route.query.displayComponent === "Setting" ? "设置" : "主页"
+);
 </script>

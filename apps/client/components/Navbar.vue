@@ -254,7 +254,10 @@ const handleLogout = () => {
 };
 
 const handleSetting = () => {
-  navigateTo("/user/info");
+  navigateTo({
+    path: "/user/info",
+    query: { displayComponent: "Setting" },
+  });
 };
 
 const handleLogoutConfirm = () => {
