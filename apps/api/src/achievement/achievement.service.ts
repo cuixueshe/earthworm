@@ -4,10 +4,10 @@ import { eq } from 'drizzle-orm';
 import { UserService } from 'src/user/user.service';
 import { DB, DbType } from '../global/providers/db.provider';
 import {
-    FindUserDto,
-    UserAchievementDto,
-    publishAchievementDto,
-    setAchievementDto,
+  FindUserDto,
+  UserAchievementDto,
+  publishAchievementDto,
+  setAchievementDto,
 } from './model/pub.dto';
 @Injectable()
 export class AchieveService {
@@ -92,7 +92,7 @@ export class AchieveService {
           throw new HttpException('添加成就完成', HttpStatus.OK);
         }
       } else {
-        throw new HttpException('所有成就已经拥有', HttpStatus.BAD_REQUEST);
+        throw new HttpException('该用户已经拥有当前成就', HttpStatus.BAD_REQUEST);
       }
     } else {
       const insertData = dto.choiceAchievement.map((achievementID) => ({

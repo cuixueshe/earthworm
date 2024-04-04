@@ -11,7 +11,7 @@ export class publishAchievementDto {
   userID: number;
 
   @ApiProperty()
-  @IsNotEmpty({ message: 'chioceAchievement不能为空' })
+  @IsNotEmpty({ message: 'choiceAchievement不能为空' })
   // choiceAchievement: number;
   choiceAchievement: number[];
 }

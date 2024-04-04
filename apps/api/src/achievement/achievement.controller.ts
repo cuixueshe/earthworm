@@ -21,7 +21,7 @@ export class AchievementController {
     return this.AchieveService.AllAchievement();
   }
 
-  @Get('/authUser')
+  @Post('/authUser')
   async authUser(@Body() dto: FindUserDto) {
     return this.AchieveService.authUser(dto);
   }
