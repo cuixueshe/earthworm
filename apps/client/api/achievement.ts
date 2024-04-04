@@ -6,11 +6,17 @@ interface PublishDto {
   userID: number;
   choiceAchievement: number[];
 }
-interface UserDto {
+interface AuthUserDto{
   phone: string;
 }
-interface ss {
-  name: string;
+
+export interface SetDto {
+  // name: string;
+  userID: number;
+  achievementID: number;
+}
+interface UserDto {
+  userID: number;
 }
 interface UserInfo {
   id: number;
@@ -27,14 +33,14 @@ export async function fetchAllAchievements() {
   return await http.get<AchievementItem[], AchievementItem[]>("/achievement/list");
 }
 // 验证用户 check userID
-export async function fetchAuthUser(dto: UserDto) {
+export async function fetchAuthUser(dto: AuthUserDto) {
     return await http.post<UserInfo, UserInfo>("/achievement/authUser", dto);
   // return await http.get("/achievement/authUser");
 }
 // 设置成就为使用中状态
-export async function fetchSetUsing(dto: ss) {
+export async function fetchSetUsing(dto: SetDto) {
   return await http.post("/achievement/set", dto);
 }
-export async function fetchUserAchievement(dto: ss) {
+export async function fetchUserAchievement(dto: UserDto) {
   return await http.post("/achievement/use", dto);
 }
