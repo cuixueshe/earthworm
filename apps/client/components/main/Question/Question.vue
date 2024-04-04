@@ -22,12 +22,13 @@
         ref="inputEl"
         class="absolute w-full h-full opacity-0"
         type="text"
-        v-model="inputValue"
+        :value="inputValue"
         @keydown="handleKeydown"
         @focus="focusInput"
         @blur="blurInput"
         @dblclick.prevent
         @mousedown="preventCursorMove"
+        @input="handleInput"
         autoFocus
       />
     </div>
@@ -78,6 +79,17 @@ const {
   getInputCursorPosition,
   inputChangedCallback,
 });
+
+function handleInput(e: Event) {
+  const inputEvent = e as InputEvent;
+  const target = inputEvent.target as HTMLInputElement | null;
+
+  if (target && typeof target.value === "string") {
+    const isFirstLetter = /^[a-zA-Z]/.test(target.value);
+    inputValue.value = isFirstLetter ? target.value : "";
+  }
+}
+
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
 onMounted(() => {
@@ -240,7 +252,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback:  handleAnswerRight, 
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });
