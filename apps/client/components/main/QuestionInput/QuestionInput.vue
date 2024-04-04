@@ -39,7 +39,7 @@ import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "./questionInput";
+import { useQuestionInput } from "./useQuestionInput";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
@@ -235,7 +235,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback:  handleAnswerRight, 
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });

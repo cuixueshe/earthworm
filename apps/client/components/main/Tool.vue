@@ -129,7 +129,7 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
+import { useQuestionInput } from "~/components/main/QuestionInput/useQuestionInput";
 import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";
@@ -168,7 +168,7 @@ function useDoAgain() {
     clearQuestionInput();
     focusInput();
     showQuestion();
-    courseTimer.reset()
+    courseTimer.reset();
   }
 
   return {

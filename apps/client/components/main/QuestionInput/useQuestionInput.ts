@@ -11,7 +11,7 @@ export function useQuestionInput() {
 
   function blurInput() {
     focusing.value = false;
-    inputEl.value?.blur()
+    inputEl.value?.blur();
   }
 
   function setInputCursorPosition(position: number) {
