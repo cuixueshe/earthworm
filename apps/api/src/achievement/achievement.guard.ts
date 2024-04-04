@@ -8,11 +8,8 @@ export class PubAchievementGuard implements CanActivate {
     const compareKey = process.env.PubsecretKey; // 获取环境变量中的密钥值
     // 在这里进行密钥验证逻辑
     if (secretKey === compareKey) {
-      console.log('密钥验证通过');
-
       return true; // 密钥验证通过，允许使用功能
     } else {
-      console.log('密钥验证失败');
       return false; // 密钥验证失败，禁止使用功能
     }
   }
