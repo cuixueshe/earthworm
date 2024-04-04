@@ -12,8 +12,9 @@
         <CommonTitle
           title="让你上瘾的英语学习工具"
           :description="[
-            `使用连词成句、重复、i+1 等学习理论来帮助你习得英语 练成肌肉记忆`,
-            `最重要的是 让你学习英语从此不在痛苦`,
+            `使用连词成句、i + 1、以终为始等学习理论来帮助你习得英语`,
+            `通过不断的重复形成肌肉记忆`,
+            `最重要的是游戏化的形式让学习英语从此不在痛苦`,
           ]"
         >
           <div
@@ -34,7 +35,7 @@
                 <div class="circle"></div>
               </div>
             </button>
-            <div class="dark:text-white ml-8">把英语练起来!!!</div>
+            <div class="dark:text-white ml-8">把英语练起来！！！</div>
           </div>
 
           <div class="w-full flex justify-center mt-20">
