@@ -24,6 +24,8 @@
         type="text"
         v-model="inputValue"
         @keydown="handleKeydown"
+        @compositionstart="handleCompositionStart"
+        @compositionend="handleCompositionEnd"
         @focus="focusInput"
         @blur="blurInput"
         @dblclick.prevent
@@ -35,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -46,8 +48,17 @@ import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
 import { useQuestionInput } from "./questionInput";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
-
+const isComposing = ref(false); // 跟踪输入法的组合输入状态
 const courseStore = useCourseStore();
+function handleCompositionStart() {
+  isComposing.value = true;
+}
+
+// 处理组合输入的结束
+function handleCompositionEnd() {
+  isComposing.value = false;
+}
+
 const {
   inputEl,
   focusing,
@@ -227,7 +238,7 @@ function handleAnswerRight() {
 }
 
 function handleKeydown(e: KeyboardEvent) {
-  if (e.code === "Enter") {
+  if (e.code === "Enter" && !isComposing.value) {
     // 每次回车会手动的调用一次setInputValue已确保拿到最新的input value，用于解决中文输入法输入回车后值为旧值的情况
     setInputValue(inputEl.value?.value || "");
     e.stopPropagation();
