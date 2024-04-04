@@ -35,7 +35,7 @@
 		"soundmark": "/bi/ /'wɑʃɪŋ/"
 	},
 	{
-		"chinese": "清洗(ed形式)",
+		"chinese": "清洗(过去分词)",
 		"english": "washed",
 		"soundmark": "/wɑʃt/"
 	},
@@ -75,7 +75,7 @@
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "完成(ed形式)",
+		"chinese": "完成(过去分词)",
 		"english": "finished",
 		"soundmark": "/'fɪnɪʃt/"
 	},
@@ -140,7 +140,7 @@
 		"soundmark": "/tə/ /ɡo/ /tə/ /ðə/ /pɑrk/"
 	},
 	{
-		"chinese": "去(ed形式)",
+		"chinese": "去(过去分词)",
 		"english": "gone",
 		"soundmark": "/ɡɔn/"
 	},
@@ -160,7 +160,7 @@
 		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "读(ed形式)",
+		"chinese": "读(过去分词)",
 		"english": "read",
 		"soundmark": "/rid/"
 	},
@@ -205,7 +205,7 @@
 		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "学到(ed形式)",
+		"chinese": "学到(过去分词)",
 		"english": "learned",
 		"soundmark": "/lɝnd/"
 	},
@@ -260,7 +260,7 @@
 		"soundmark": "/tə/ /ɪmˈpruv/"
 	},
 	{
-		"chinese": "提高(ed形式)",
+		"chinese": "提高(过去分词)",
 		"english": "improved",
 		"soundmark": "/ɪmˈpruvd/"
 	},
@@ -305,7 +305,7 @@
 		"soundmark": "/tə/ /'vɪzɪt/"
 	},
 	{
-		"chinese": "参观(ed形式)",
+		"chinese": "参观(过去分词)",
 		"english": "visited",
 		"soundmark": "/'vɪzɪtɪd/"
 	},
@@ -350,7 +350,7 @@
 		"soundmark": "/raɪt/"
 	},
 	{
-		"chinese": "写(ed形式)",
+		"chinese": "写(过去分词)",
 		"english": "written",
 		"soundmark": "/'rɪtn/"
 	},
@@ -400,7 +400,7 @@
 		"soundmark": "/tə/ /titʃ/"
 	},
 	{
-		"chinese": "教(ed形式)",
+		"chinese": "教(过去分词)",
 		"english": "taught",
 		"soundmark": "/tɔt/"
 	},
@@ -500,7 +500,7 @@
 		"soundmark": "/tə/ /lɪv/"
 	},
 	{
-		"chinese": "居住(ed形式)",
+		"chinese": "居住(过去分词)",
 		"english": "lived",
 		"soundmark": "/lɪvd/"
 	},
@@ -550,7 +550,7 @@
 		"soundmark": "/tə/ /wɝk/"
 	},
 	{
-		"chinese": "工作(ed形式)",
+		"chinese": "工作(过去分词)",
 		"english": "worked",
 		"soundmark": "/wɝkt/"
 	},
@@ -615,7 +615,7 @@
 		"soundmark": "/tə/ /'stʌdi/"
 	},
 	{
-		"chinese": "学习(ed形式)",
+		"chinese": "学习(过去分词)",
 		"english": "studied",
 		"soundmark": "/ˈstʌdid/"
 	},
