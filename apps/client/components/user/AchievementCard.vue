@@ -6,7 +6,6 @@
     >
       <input
         type="checkbox"
-        :checked="isChecked"
         class="rounded checkbox checkbox-xs [--chkbg:fuchsia]"
         @change="toggleChooseAchievement"
         v-model="isChecked"
@@ -20,7 +19,7 @@
     </div>
     <div
       class="tooltip"
-      :data-tip="desc"
+      :data-tip="description"
     >
       <figure>
         <img
@@ -54,16 +53,15 @@ const props = withDefaults(
   }>(),
   { isShowCheckBox: false }
 );
-const emit = defineEmits(["toggleChooseAchievement"]);
 function toggleChooseAchievement() {
-  emit("toggleChooseAchievement", props.achievement);
+  props.achievement.isChecked = !props.achievement.isChecked
 }
 const isShowCheckBox = computed(() => props.isShowCheckBox);
 const isActive = computed(() => props.achievement?.isActive);
 const name = computed(() => props.achievement.name);
 const createdAt = computed(() => props.achievement.createdAt);
 const avatar = computed(() => props.achievement.avatar);
-const desc = computed(() => props.achievement.desc);
+const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
 </script>
 <style scoped>

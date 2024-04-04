@@ -8,17 +8,17 @@
         class="btn btn-primary"
         @click="handleOpenDialog"
       >
-        颁发成就
+        颁发成就  
       </button>
     </div>
 
     <div class="flex flex-wrap gap-5">
       <AchievementCard
-        v-for="a in achievementList"
-        :key="a.id"
+        v-for="achievement in achievementList"
+        :key="achievement.id"
         class="cursor-pointer"
         isShowCheckBox
-        :achievement="a"
+        :achievement="achievement"
       />
     </div>
   </div>
@@ -51,10 +51,10 @@
 
         <FormInput
           label="授权口令"
-          name="authentication"
+          name="secretKey"
           placeholder="请输入授权口令"
-          v-model="authentication"
-          :errorMessage="authenticationError"
+          v-model="secretKey"
+          :errorMessage="secretKeyError"
         />
         <FormInput
           label="用户手机号"
@@ -88,14 +88,15 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+import { fetchAuthUser } from "~/api/achievement";
 import Message from "~/components/main/Message/useMessage";
 import AchievementCard from "~/components/user/AchievementCard.vue";
 import { useAchievementList } from "~/composables/user/achievement";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useAwardForm } from "./hooks/useAwardForm";
-const { handleSubmit, phone, phoneError, authentication, authenticationError } =
+const { handleSubmit, phone, phoneError, secretKey, secretKeyError } =
   useAwardForm();
-const {achievementList, getAchievementList,checkedAchievement,getAchievementChecked} = useAchievementList()
+const { achievementList, getAchievementList, awardAchievement, checkedAchievement, getAchievementChecked } = useAchievementList()
 
 function handleOpenDialog(){
   getAchievementChecked()
@@ -118,8 +119,23 @@ function useShowModal() {
 }
 const { isShow, handleShowModal, handleHideModal } = useShowModal();
 
-
-const handleAward = handleSubmit(async (values) => {});
+const handleAward = handleSubmit(async (values) => {
+  async function getUserID(){
+  return await fetchAuthUser({
+    phone: phone.value
+  })
+}
+  const userInfo = await getUserID()
+  const choiceAchievement = checkedAchievement.value.map(x => x.id)
+  const p = {
+    secretKey:values.secretKey,
+    userID:userInfo.id,
+    choiceAchievement
+  }
+  await awardAchievement({...p})
+  Message.success("颁发成功");
+  handleHideModal()
+});
 onMounted(()=>{
   getAchievementList()
 })

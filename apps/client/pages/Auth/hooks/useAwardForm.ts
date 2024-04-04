@@ -2,7 +2,11 @@ import { PhoneNumberUtil } from "google-libphonenumber";
 import { useField, useForm } from "vee-validate";
 import { ref, type Ref } from "vue";
 import * as yup from "yup";
-import { type SignupFormValues } from "~/store/user";
+
+interface AchievementFormValues{
+  phone:string
+  secretKey:string
+}
 
 const phoneUtil = PhoneNumberUtil.getInstance();
 const countryRef: Ref<string> = ref("");
@@ -27,10 +31,10 @@ export function useAwardForm() {
         "Please enter a valid phone number",
         phoneValidator
       ),
-    authentication: yup.string().required("请输入授权指令"),
+    secretKey: yup.string().required("请输入授权指令"),
   });
 
-  const { handleSubmit } = useForm<SignupFormValues>({
+  const { handleSubmit } = useForm<AchievementFormValues>({
     validationSchema: schema,
   });
 
@@ -39,13 +43,13 @@ export function useAwardForm() {
   };
 
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
-  const { value: authentication, errorMessage: authenticationError } =
-    useField<string>("authentication");
+  const { value: secretKey, errorMessage: secretKeyError } =
+    useField<string>("secretKey");
 
   return {
     handleSubmit,
-    authentication,
-    authenticationError,
+    secretKey,
+    secretKeyError,
     phone,
     phoneError,
     updateCountryCode,
