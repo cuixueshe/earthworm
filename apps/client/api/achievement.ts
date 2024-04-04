@@ -3,7 +3,7 @@ import { http } from "./http";
 interface PublishDto {
   secretKey: string;
   userID: number;
-  chioceAchievement: number[];
+  choiceAchievement: number[];
 }
 interface UserDto {
   phone: string;
@@ -11,9 +11,11 @@ interface UserDto {
 interface ss {
   name: string;
 }
+// 颁布成就
 export async function fetchPubAchievement(dto: PublishDto) {
   return await http.post("/achievement/publish", dto);
 }
+// 获取成就列表
 export async function fetchAllAchievements() {
   return await http.get("/achievement/list");
 }

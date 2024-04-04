@@ -4,10 +4,10 @@ import { eq } from 'drizzle-orm';
 import { UserService } from 'src/user/user.service';
 import { DB, DbType } from '../global/providers/db.provider';
 import {
-  FindUserDto,
-  UserAchievementDto,
-  publishAchievementDto,
-  setAchievementDto,
+    FindUserDto,
+    UserAchievementDto,
+    publishAchievementDto,
+    setAchievementDto,
 } from './model/pub.dto';
 @Injectable()
 export class AchieveService {
@@ -77,7 +77,7 @@ export class AchieveService {
       const existingAchievements = existing.map(
         (record) => record.achievementID,
       );
-      const newAchievements = dto.chioceAchievement.filter(
+      const newAchievements = dto.choiceAchievement.filter(
         (achievementID) =>
           !existingAchievements.includes(Number(achievementID)),
       );
@@ -95,7 +95,7 @@ export class AchieveService {
         throw new HttpException('所有成就已经拥有', HttpStatus.BAD_REQUEST);
       }
     } else {
-      const insertData = dto.chioceAchievement.map((achievementID) => ({
+      const insertData = dto.choiceAchievement.map((achievementID) => ({
         userID: dto.userID,
         achievementID: Number(achievementID), // Convert achievementID to a number
       }));

@@ -12,8 +12,8 @@ export class publishAchievementDto {
 
   @ApiProperty()
   @IsNotEmpty({ message: 'chioceAchievement不能为空' })
-  // chioceAchievement: number;
-  chioceAchievement: number[];
+  // choiceAchievement: number;
+  choiceAchievement: number[];
 }
 export class FindUserDto {
   @ApiProperty()
