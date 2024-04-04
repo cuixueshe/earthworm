@@ -20,7 +20,17 @@ import UserSetting from "~/components/user/Setting.vue";
 
 const route = useRoute();
 
-const componentMap = {
+interface ComponentMap {
+  Home: typeof UserHome;
+  Setting: typeof UserSetting;
+}
+
+interface Menu {
+  name: string;
+  component: keyof ComponentMap;
+}
+
+const componentMap: ComponentMap = {
   Home: UserHome,
   Setting: UserSetting,
 };
@@ -30,7 +40,7 @@ const userMenus = ref([
   { name: "设置", component: "Setting" },
 ]);
 
-const currentComponent = ref<UserHome | UserSetting>(componentMap.Home);
+const currentComponent = ref(componentMap.Home);
 
 watchEffect(() => {
   const routeComponent = route.query.displayComponent;
@@ -39,7 +49,7 @@ watchEffect(() => {
     componentMap.Home;
 });
 
-function handleChangeMenu(menu) {
+function handleChangeMenu(menu: Menu) {
   currentComponent.value = componentMap[menu.component];
 }
 

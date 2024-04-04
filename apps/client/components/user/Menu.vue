@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, defineProps, defineEmits } from "vue";
+import { ref, watch } from "vue";
 
 type Menu = {
   name: string;
@@ -40,7 +40,7 @@ function handleChangeMenu(menu: Menu) {
 
 watch(
   () => props.defaultMenuName,
-  newVal => {
+  (newVal) => {
     currentMenu.value = newVal;
   },
   { immediate: true }
