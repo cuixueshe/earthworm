@@ -76,8 +76,8 @@
         <div
           class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
         >
-          <!-- <div>
-            <p class="font-medium text-lg">服务</p>
+          <div>
+            <p class="font-medium text-lg">Earthworm</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -85,23 +85,32 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                  1对1辅导
+                 Open source
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://github.com/cuixueshe/earthworm"
+                  href="https://github.com/cuixueshe/earthworm/issues"
                   class="transition hover:opacity-75"
                 >
-                  账户审查
+                 Issues
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/cuixueshe/earthworm/issues/91"
+                  class="transition hover:opacity-75"
+                >
+                 贡献代码
                 </a>
               </li>
             </ul>
-          </div> -->
+          </div>
 
           <div>
-            <p class="font-medium text-lg">有用的链接</p>
+            <p class="font-medium text-lg">团队</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>

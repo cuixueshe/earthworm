@@ -14,7 +14,7 @@
           :description="[
             `使用连词成句、i + 1、以终为始等学习理论来帮助你习得英语`,
             `通过不断的重复形成肌肉记忆`,
-            `最重要的是游戏化的形式让学习英语从此不在痛苦`,
+            `最重要的是游戏化的形式让学习英语从此不再痛苦`,
           ]"
         >
           <div
@@ -52,7 +52,7 @@
       <!-- <Introduce /> -->
       <Comments />
       <!-- <PayCard /> -->
-      <!-- <Question /> -->
+      <Question />
       <Contact />
     </template>
     <CommonBackTop class="sticky flex justify-end ml-auto sm:block bottom-28" />

@@ -4,8 +4,8 @@
     id="features"
   >
     <CommonTitle
-      title="了解有关Earthworm更多信息"
-      :description="['通过这些强大的功能将Earthworm提升到一个新的水平！']"
+      title="了解有关 Earthworm 更多信息"
+      :description="['通过这些强大的功能将 Earthworm 提升到一个新的水平！']"
     />
     <section class="text-gray-500 py-16">
       <div
