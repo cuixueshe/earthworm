@@ -276,7 +276,7 @@ const HEADER_OPTIONS = [
   // { name: "What", anchor: "what" },
   { name: "Features", anchor: "features" },
   // { name: "Pricing", anchor: "pricing" },
-  // { name: "FAQ", anchor: "faq" },
+  { name: "FAQ", anchor: "faq" },
   { name: "Contact", anchor: "contact" },
 ];
 </script>
