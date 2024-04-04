@@ -24,7 +24,7 @@
   </div>
   <dialog
     class="modal"
-    :open="isShow"
+    :open="isShowModal"
   >
     <div class="modal-box">
       <h3 class="mb-2 text-lg font-bold">颁发成就</h3>
@@ -87,7 +87,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 import { fetchAuthUser } from "~/api/achievement";
 import Message from "~/components/main/Message/useMessage";
 import AchievementCard from "~/components/user/AchievementCard.vue";
@@ -96,7 +96,15 @@ import FormInput from "~/pages/Auth/FormInput.vue";
 import { useAwardForm } from "./hooks/useAwardForm";
 const { handleSubmit, phone, phoneError, secretKey, secretKeyError } =
   useAwardForm();
-const { achievementList, getAchievementList, awardAchievement, checkedAchievement, getAchievementChecked } = useAchievementList()
+const { 
+  achievementList, 
+  getAchievementList, 
+  awardAchievement, 
+  checkedAchievement, 
+  getAchievementChecked, 
+  isShowModal, 
+  handleShowModal, 
+  handleHideModal } = useAchievementList()
 
 function handleOpenDialog(){
   getAchievementChecked()
@@ -106,18 +114,6 @@ function handleOpenDialog(){
     Message.warning("请先选择成就", { duration: 1200 });
   }
 }
-function useShowModal() {
-  const isShow = ref(false);
-
-  const handleShowModal = () => {
-    isShow.value = true;
-  };
-  const handleHideModal = () => {
-    isShow.value = false;
-  };
-  return { isShow, handleShowModal, handleHideModal };
-}
-const { isShow, handleShowModal, handleHideModal } = useShowModal();
 
 const handleAward = handleSubmit(async (values) => {
   async function getUserID(){

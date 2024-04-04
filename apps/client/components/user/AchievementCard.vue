@@ -1,7 +1,7 @@
 <template>
-  <div class="cursor-pointer card achievement">
+  <div class="card achievement-container" :class="hasAchievement ? 'userAchievement' : 'achievement'">
     <div
-      class="check-box"
+      class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
     >
       <input
@@ -12,7 +12,7 @@
       />
     </div>
     <div
-      class="active"
+      class="flex items-center justify-center rounded-sm active"
       v-if="isActive"
     >
       <span class="active-label">使用中</span>
@@ -29,14 +29,14 @@
         />
       </figure>
       <div class="items-center justify-center text-center">
-        <p class="mb-3 text-gray-500 active-name">{{ name }}</p>
+        <p class="mb-3">{{ name }}</p>
         <p
-          class="text-xs text-gray-500 active-name"
-          v-if="createdAt"
+          class="text-xs"
+          v-if="hasAchievement"
         >
           获得时间: {{ createdAt }}
         </p>
-        <!-- <p class="text-xs text-gray-500 active-name">暂未获得</p> -->
+        <p v-else class="text-xs text-gray-500">暂未获得</p>
       </div>
     </div>
   </div>
@@ -63,9 +63,11 @@ const createdAt = computed(() => props.achievement.createdAt);
 const avatar = computed(() => props.achievement.avatar);
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
+const hasAchievement = computed(() => props.achievement.hasAchievement);
+
 </script>
 <style scoped>
-.achievement {
+.achievement-container {
   position: relative;
   width: 170px;
   height: 220px;
@@ -73,8 +75,17 @@ const isChecked = computed(() => props.achievement.isChecked);
   justify-content: center;
   border: 1px solid rgba(166, 166, 166, 1);
   box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
-  border: 1px solid rgba(232, 121, 249, 1);
-  @apply rounded-md hover:shadow-lg;
+}
+.achievement {
+  @apply rounded-md hover:shadow-lg text-gray-500;
+}
+.userAchievement{
+  border: 1px solid rgba(232, 121, 249, 1); 
+  cursor: pointer;
+  @apply rounded-md text-fuchsia-500;
+}
+.userAchievement:hover {
+  box-shadow: 0px 8px 24px rgba(232, 121, 249, 0.2);
 }
 .active {
   position: absolute;
@@ -82,22 +93,13 @@ const isChecked = computed(() => props.achievement.isChecked);
   top: 0;
   width: 36px;
   height: 14px;
-  opacity: 1;
-  border-radius: 2px;
   background: rgba(232, 121, 249, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2px 6px 2px 6px;
 }
 .check-box {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .active-label {
   font-size: 8px;
@@ -110,10 +112,6 @@ const isChecked = computed(() => props.achievement.isChecked);
   top: 2px;
   width: 24px;
   height: 10px;
-  opacity: 1;
   display: flex;
-}
-.active-name {
-  color: rgba(172, 51, 193, 1);
 }
 </style>
