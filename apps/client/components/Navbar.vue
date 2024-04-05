@@ -1,6 +1,7 @@
 <template>
   <header
     class="sticky top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
+    :style="marginStyle"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -10,7 +11,7 @@
               <img
                 width="48"
                 height="48"
-                class="rounded-md overflow-hidden mr-6"
+                class="align-middle mr-6"
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
@@ -236,7 +237,9 @@ const isShowModal = ref(false);
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-
+const marginStyle = computed(() => ({
+  "margin-right": route.path === "/" ? "0" : "7px",
+}));
 const handleViewUserInfo = () => {
   navigateTo("/user/info");
 };
