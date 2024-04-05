@@ -8,7 +8,7 @@
         class="btn btn-primary"
         @click="handleOpenDialog"
       >
-        颁发成就  
+        颁发成就
       </button>
     </div>
 
@@ -68,7 +68,7 @@
           <form method="dialog">
             <button
               class="btn"
-              @click="handleHideModal"
+              @click="cancel"
             >
               取消
             </button>
@@ -94,47 +94,55 @@ import AchievementCard from "~/components/user/AchievementCard.vue";
 import { useAchievementList } from "~/composables/user/achievement";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useAwardForm } from "./hooks/useAwardForm";
-const { handleSubmit, phone, phoneError, secretKey, secretKeyError } =
+const { handleSubmit, phone, phoneError, secretKey, secretKeyError, clear } =
   useAwardForm();
-const { 
-  achievementList, 
-  getAchievementList, 
-  awardAchievement, 
-  checkedAchievement, 
-  getAchievementChecked, 
-  isShowModal, 
-  handleShowModal, 
-  handleHideModal } = useAchievementList()
-
-function handleOpenDialog(){
-  getAchievementChecked()
-  if(checkedAchievement.value.length > 0){
-    handleShowModal()
-  }else{
+const {
+  achievementList,
+  getAchievementList,
+  awardAchievement,
+  checkedAchievement,
+  getAchievementChecked,
+  isShowModal,
+  handleShowModal,
+  handleHideModal,
+} = useAchievementList();
+function cancel() {
+  handleHideModal();
+  clear();
+}
+function handleOpenDialog() {
+  getAchievementChecked();
+  if (checkedAchievement.value.length > 0) {
+    handleShowModal();
+  } else {
     Message.warning("请先选择成就", { duration: 1200 });
   }
 }
 
 const handleAward = handleSubmit(async (values) => {
-  async function getUserID(){
-  return await fetchAuthUser({
-    phone: phone.value
-  })
-}
-  const userInfo = await getUserID()
-  const choiceAchievement = checkedAchievement.value.map(x => x.id)
-  const p = {
-    secretKey:values.secretKey,
-    userID:userInfo.id,
-    choiceAchievement
+  async function getUserID() {
+    return await fetchAuthUser({
+      phone: phone.value,
+    });
   }
-  await awardAchievement({...p})
+  const userInfo = await getUserID();
+
+  const choiceAchievement = checkedAchievement.value.map((x) => x.id);
+  const p = {
+    secretKey: values.secretKey,
+    userID: userInfo.id,
+    choiceAchievement,
+  };
+  console.log(p, "=");
+
+  await awardAchievement({ ...p });
   Message.success("颁发成功");
-  handleHideModal()
+  clear();
+  handleHideModal();
 });
-onMounted(()=>{
-  getAchievementList()
-})
+onMounted(() => {
+  getAchievementList();
+});
 </script>
 <style scoped>
 .title {

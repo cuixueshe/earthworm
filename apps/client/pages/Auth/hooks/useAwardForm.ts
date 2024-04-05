@@ -3,9 +3,9 @@ import { useField, useForm } from "vee-validate";
 import { ref, type Ref } from "vue";
 import * as yup from "yup";
 
-interface AchievementFormValues{
-  phone:string
-  secretKey:string
+interface AchievementFormValues {
+  phone: string;
+  secretKey: string;
 }
 
 const phoneUtil = PhoneNumberUtil.getInstance();
@@ -23,14 +23,12 @@ const phoneValidator = (phoneWithCode: string) => {
 
 export function useAwardForm() {
   const schema = yup.object({
-    phone: yup
-      .string()
-      .required("请输入用户手机号")
-      .test(
-        "is-valid-phone",
-        "Please enter a valid phone number",
-        phoneValidator
-      ),
+    phone: yup.string().required("请输入用户手机号"),
+    // .test(
+    //   "is-valid-phone",
+    //   "Please enter a valid phone number",
+    //   phoneValidator
+    // ),
     secretKey: yup.string().required("请输入授权指令"),
   });
 
@@ -45,13 +43,17 @@ export function useAwardForm() {
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
   const { value: secretKey, errorMessage: secretKeyError } =
     useField<string>("secretKey");
-
+  function clear() {
+    secretKey.value = "";
+    phone.value = "";
+  }
   return {
     handleSubmit,
     secretKey,
     secretKeyError,
     phone,
     phoneError,
+    clear,
     updateCountryCode,
   };
 }

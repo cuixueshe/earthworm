@@ -1,4 +1,5 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { AuthGuard } from 'src/auth/auth.guard';
 import { AchieveService } from './achievement.service';
 import {
   FindUserDto,
@@ -25,14 +26,19 @@ export class AchievementController {
   async authUser(@Body() dto: FindUserDto) {
     return this.AchieveService.authUser(dto);
   }
-  // @UseGuards(AuthGuard)
+  @UseGuards(AuthGuard)
   @Post('/set')
   async setAchievement(@Body() dto: setAchievementDto) {
     return this.AchieveService.setAchievement(dto);
   }
-  // @UseGuards(AuthGuard)
+  @UseGuards(AuthGuard)
   @Post('/use')
   async useAchievement(@Body() dto: UserAchievementDto) {
     return this.AchieveService.useAchievement(dto);
+  }
+  @UseGuards(AuthGuard)
+  @Post('/allhave')
+  async haveAchievement(@Body() dto: UserAchievementDto) {
+    return this.AchieveService.haveAchievement(dto);
   }
 }

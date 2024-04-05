@@ -59,7 +59,6 @@ export class AchieveService {
         }
       }
     } else {
-      console.log('error');
       const res = await this.db
         .insert(userProfile)
         .values({ userID: dto.userID, achievementID: dto.achievementID });
@@ -92,7 +91,7 @@ export class AchieveService {
           throw new HttpException('添加成就完成', HttpStatus.OK);
         }
       } else {
-        throw new HttpException('该用户已经拥有当前成就', HttpStatus.BAD_REQUEST);
+        throw new HttpException('选中成就已经拥有', HttpStatus.BAD_REQUEST);
       }
     } else {
       const insertData = dto.choiceAchievement.map((achievementID) => ({
@@ -117,5 +116,30 @@ export class AchieveService {
       .from(achievements);
 
     return achievementAll;
+  }
+  async haveAchievement(dto: UserAchievementDto) {
+    const userAchieve = await this.db.query.userAchievements.findMany({
+      where: eq(userAchievements.userID, dto.userID),
+    });
+    if (!userAchieve.length) {
+      throw new HttpException('还没有获得成就', HttpStatus.BAD_REQUEST);
+    }
+    // 查询achievements表，获取详细信息
+    const promises = userAchieve.map(async (achievement) => {
+      const achievementDetails = await this.db.query.achievements.findFirst({
+        where: eq(achievements.id, achievement.achievementID),
+      });
+      if (!achievementDetails) {
+        throw new HttpException('找不到相应的成就信息', HttpStatus.BAD_REQUEST);
+      }
+      return achievementDetails;
+    });
+    const achievementDetails = await Promise.all(promises);
+    const result = userAchieve.map((achievement, index) => ({
+      ...achievementDetails[index],
+      createdAt: achievement.createdAt,
+    }));
+
+    return result;
   }
 }

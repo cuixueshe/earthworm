@@ -1,5 +1,8 @@
 <template>
-  <div class="card achievement-container" :class="hasAchievement ? 'userAchievement' : 'achievement'">
+  <div
+    class="card achievement-container"
+    :class="hasAchievement ? 'userAchievement' : 'achievement'"
+  >
     <div
       class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
@@ -32,11 +35,11 @@
         <p class="mb-3">{{ name }}</p>
         <p
           class="text-xs"
-          v-if="hasAchievement"
+          v-if="createdAt"
         >
-          获得时间: {{ createdAt }}
+          获得时间: {{ createTime() }}
         </p>
-        <p v-else class="text-xs text-gray-500">暂未获得</p>
+        <!-- <p v-else class="text-xs text-gray-500">暂未获得</p> -->
       </div>
     </div>
   </div>
@@ -54,7 +57,7 @@ const props = withDefaults(
   { isShowCheckBox: false }
 );
 function toggleChooseAchievement() {
-  props.achievement.isChecked = !props.achievement.isChecked
+  props.achievement.isChecked = !props.achievement.isChecked;
 }
 const isShowCheckBox = computed(() => props.isShowCheckBox);
 const isActive = computed(() => props.achievement?.isActive);
@@ -64,7 +67,10 @@ const avatar = computed(() => props.achievement.avatar);
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
 const hasAchievement = computed(() => props.achievement.hasAchievement);
-
+function createTime() {
+  const time = createdAt.value?.split("T")[0];
+  return time;
+}
 </script>
 <style scoped>
 .achievement-container {
@@ -79,8 +85,8 @@ const hasAchievement = computed(() => props.achievement.hasAchievement);
 .achievement {
   @apply rounded-md hover:shadow-lg text-gray-500;
 }
-.userAchievement{
-  border: 1px solid rgba(232, 121, 249, 1); 
+.userAchievement {
+  border: 1px solid rgba(232, 121, 249, 1);
   cursor: pointer;
   @apply rounded-md text-fuchsia-500;
 }

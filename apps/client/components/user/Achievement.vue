@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap gap-5">
     <AchievementCard
-      v-for="achievement in achievementList"
+      v-for="achievement in userHaveAchievement"
       :key="achievement.id"
       :achievement="achievement"
       @click="handleSetAchievementActive(achievement)"
@@ -37,33 +37,38 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { fetchUserAchievement } from "~/api/achievement";
 import AchievementCard from "~/components/user/AchievementCard.vue";
-import { useAchievementList, type AchievementItem } from "~/composables/user/achievement";
+import {
+  useAchievementList,
+  type AchievementItem,
+} from "~/composables/user/achievement";
 
-const { achievementList, setAchievementActive, getAchievementList, isShowModal, handleShowModal, handleHideModal } = useAchievementList();
+const {
+  userHaveAchievement,
+  setAchievementActive,
+  getUserHaveAchievement,
+  isShowModal,
+  UserID,
+  handleShowModal,
+  handleHideModal,
+} = useAchievementList();
 const name = ref("");
 function handleSetAchievementActive(achievement: AchievementItem) {
-  achievement.hasAchievement && handleShowModal()
+  // achievement.hasAchievement && handleShowModal();
+  achievement.hasAchievement;
+  handleShowModal();
   name.value = achievement.name;
+  achievementID.value = achievement.id;
 }
+const achievementID = ref(0);
 function handleConfirm() {
   setAchievementActive({
-    userID: 1,
-    achievementID: 1
+    userID: UserID(),
+    achievementID: achievementID.value,
   });
-}
-
-async function getUserAchievement(){
-  // let res = await fetchUserAchievement({
-  //   userID: 1
-  // })
-  // achievementList.value.forEach((item: AchievementItem) => {
-  //   item.hasAchievement = res.achievementID === item.id
-  // })
+  handleHideModal();
 }
 onMounted(() => {
-  getAchievementList()
-  getUserAchievement()
+  getUserHaveAchievement({ userID: UserID() });
 });
 </script>
