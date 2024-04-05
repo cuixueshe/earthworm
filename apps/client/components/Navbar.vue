@@ -2,7 +2,7 @@
   <header
     class="sticky top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
   >
-    <div class="mx-auto max-w-screen-xl mt-2">
+    <div class="mx-auto max-w-screen-xl">
       <div class="flex h-16 items-center justify-between">
         <div class="left flex w-full items-center justify-between">
           <NuxtLink to="/">
