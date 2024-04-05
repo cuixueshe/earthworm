@@ -52,7 +52,7 @@
       <!-- <Introduce /> -->
       <Comments />
       <!-- <PayCard /> -->
-      <Question />
+      <Questions />
       <Contact />
     </template>
     <CommonBackTop class="sticky flex justify-end ml-auto sm:block bottom-28" />
@@ -68,6 +68,7 @@
 
 <script setup>
 import Comments from "~/components/home/Comments.vue";
+import Questions from "~/components/home/Questions.vue";
 import Contact from "~/components/home/Contact.vue";
 import Features from "~/components/home/Features.vue";
 import NoticeBar from "~/components/home/NoticeBar.vue";
