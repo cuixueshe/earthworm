@@ -41,6 +41,14 @@
                   </a>
                 </li>
               </template>
+              <li class="px-4">
+                <span
+                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 cursor-pointer"
+                  @click="handleContent"
+                >
+                  About
+                </span>
+              </li>
             </ul>
           </nav>
         </div>
@@ -255,6 +263,10 @@ const handleLogout = () => {
 
 const handleSetting = () => {
   navigateTo("/user/info");
+};
+
+const handleContent = () => {
+  navigateTo("/content/readme/en");
 };
 
 const handleLogoutConfirm = () => {

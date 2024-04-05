@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
     "@nuxt/test-utils/module",
+    "@nuxt/content",
   ],
   app: {
     head: {
@@ -37,7 +38,7 @@ export default defineNuxtConfig({
     autoImport: false,
   },
   components: true,
-  plugins: [
-    '~/plugins/globalComponents.ts'
-  ]
+  // ↓ @nuxt/content options
+  content: {},
+  plugins: ["~/plugins/globalComponents.ts"],
 });

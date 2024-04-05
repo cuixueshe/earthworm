@@ -71,7 +71,6 @@ import Comments from "~/components/home/Comments.vue";
 import Contact from "~/components/home/Contact.vue";
 import Features from "~/components/home/Features.vue";
 import NoticeBar from "~/components/home/NoticeBar.vue";
-import PayCard from "~/components/home/PayCard.vue";
 import Question from "~/components/home/Questions.vue";
 const showNoticeBar = ref(false);
 
