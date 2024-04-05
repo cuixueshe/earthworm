@@ -1,8 +1,38 @@
 [
 	{
+		"chinese": "新材料和技术",
+		"english": "New materials and techniques",
+		"soundmark": "/njuː/ /ˈmætəriəlz/ /ænd/ /tɛkˈniːks/"
+	},
+	{
+		"chinese": "正在改变",
+		"english": "are changing",
+		"soundmark": "/ɑːr/ /ˈʧeɪnʤɪŋ/"
+	},
+	{
+		"chinese": "建筑的风格",
+		"english": "the style of architecture",
+		"soundmark": "/ðə/ /staɪl/ /ʌv/ /ˈɑːrkɪtɛktʃər/"
+	},
+	{
 		"chinese": "新材料和技术正在改变建筑的风格。",
 		"english": "New materials and techniques are changing the style of architecture.",
 		"soundmark": "/ʃɪn/ /ˈma.tʃɛr.i.əlz/ /ænd/ /ˈtɛk.nɪks/ /ɑːr/ /ˈʧeɪn.dʒɪŋ/ /ðiː/ /staɪl/ /ʌv/ /ˈɑːr.kɪ.tɛk.tʃər/"
+	},
+	{
+		"chinese": "永远不应该",
+		"english": "should never",
+		"soundmark": "/ʃʊd/ /ˈnɛvər/"
+	},
+	{
+		"chinese": "低估",
+		"english": "underestimate",
+		"soundmark": "/ˌʌndərˈɛstɪmeɪt/"
+	},
+	{
+		"chinese": "创意设计的力量",
+		"english": "the power of creative design",
+		"soundmark": "/ðə/ /ˈpaʊər/ /əv/ /krɪˈeɪtɪv/ /dɪˈzaɪn/"
 	},
 	{
 		"chinese": "我们永远不应该低估创意设计的力量。",
@@ -10,9 +40,44 @@
 		"soundmark": "/wiː/ /ʃʊd/ /ˈnɛ.vər/ /ʌn.dərˈɛs.tɪ.meɪt/ ðə /ˈpaʊ.ər/ /ʌv/ /kriˈeɪ.tɪv/ /dɪˈzaɪn/"
 	},
 	{
+		"chinese": "海洋环境",
+		"english": "Marine environment",
+		"soundmark": "/məˈriːn/ /ɪnˈvaɪrənmənt/"
+	},
+	{
+		"chinese": "已经被破坏",
+		"english": "has been destroyed",
+		"soundmark": "/hæz/ /bɪn/ /dɪˈstrɔɪd/"
+	},
+	{
+		"chinese": "污染和不可持续的发展",
+		"english": "pollution and unsustainable development",
+		"soundmark": "/pəˈluːʃən/ /ænd/ /ˌʌnsəˈsteɪnəbl/ /dɪˈvɛləpmənt/"
+	},
+	{
 		"chinese": "海洋环境已经被污染和不可持续的发展破坏。",
 		"english": "Marine environment has been destroyed by pollution and unsustainable development.",
 		"soundmark": "/məˈriːn/ /ɪnˈvaɪrənmənt/ hæz /bɪn/ /dɪˈstrɔɪd/ /baɪ/ /pəˈluː.ʃən/ /ænd/ /ˌʌnsəˈsteɪ.nəbl/ /dɪˈvɛl.əp.mənt/"
+	},
+	{
+		"chinese": "学术图书馆",
+		"english": "Academic libraries",
+		"soundmark": "/ˌækəˈdɛmɪk/ /ˈlaɪbrəriz/"
+	},
+	{
+		"chinese": "全球",
+		"english": "across the world",
+		"soundmark": "/əˈkrɒs/ /ðə/ /wɜːld/"
+	},
+	{
+		"chinese": "社交媒体",
+		"english": "social media",
+		"soundmark": "/ˈsəʊʃəl/ /ˈmiːdiə/"
+	},
+	{
+		"chinese": "正在逐步融合",
+		"english": "are steadily incorporating",
+		"soundmark": "/ɑːr/ /ˈstɛdɪli/ /ɪnˈkɔːpəreɪtɪŋ/"
 	},
 	{
 		"chinese": "全球学术图书馆正在逐步融合社交媒体。",
@@ -20,14 +85,64 @@
 		"soundmark": "/ˌæk.əˈdɛmɪk/ /ˈlaɪ.brə.riz/ /əˈkrɒs/ /ðiː/ /wɜːrld/ /ɑːr/ /ˈstɛd.ɪ.li/ /ɪnˈkɔː.pɔːr.eɪ.tɪŋ/ /ˈsəʊ.ʃəl/ /ˈmiː.di.ə/"
 	},
 	{
+		"chinese": "大学",
+		"english": "The college",
+		"soundmark": "/ðə/ /ˈkɒlɪdʒ/"
+	},
+	{
+		"chinese": "运营",
+		"english": "operates",
+		"soundmark": "/ˈɒpəreɪts/"
+	},
+	{
+		"chinese": "一套",
+		"english": "a system of",
+		"soundmark": "/ə/ /ˈsɪstəm/ /əv/"
+	},
+	{
+		"chinese": "连续评估制度",
+		"english": "continuous assessment",
+		"soundmark": "/kənˈtɪnjuəs/ /əˈsɛsmənt/"
+	},
+	{
 		"chinese": "大学运营一套连续评估制度。",
 		"english": "The college operates a system of continuous assessment.",
 		"soundmark": "/ðiː/ /ˈkɒ.lɪdʒ/ /ˈɒp.ər.eɪts/ /ə/ /ˈsɪs.tɪm/ /əv/ /kənˈtɪn.ju.əs/ /əˈsɛs.mənt/"
 	},
 	{
-		"chinese": "今年被认为是最重要的经济学家。",
+		"chinese": "一个世界知名的",
+		"english": "A world-renowned",
+		"soundmark": "/ə/ /wɜːrld/ /rɪˈnaʊnd/"
+	},
+	{
+		"chinese": "金融管理专家",
+		"english": "expert of financial management",
+		"soundmark": "/ˈɛkspɜːrt/ /əv/ /faɪˈnænʃəl/ /ˈmænɪdʒmənt/"
+	},
+	{
+		"chinese": "一次客座讲座",
+		"english": "a guest lecture",
+		"soundmark": "/ə/ /ɡɛst/ /ˈlɛkʧər/"
+	},
+	{
+		"chinese": "世界著名财务管理专家将做客座讲座。",
 		"english": "A world-renowned expert of financial management will give a guest lecture.",
 		"soundmark": "/ə/ /wɜːrld/ /rɪˈnaʊnd/ /ˈɛk.spɜːrt/ /əv/ /faɪˈnæn.ʃəl/ /ˈmæn.ɪdʒ.mənt/ /wɪl/ /ɡɪv/ /ə/ /ɡɛst/ /ˈlɛk.tʃər/"
+	},
+	{
+		"chinese": "依靠天赋",
+		"english": "Relying on natural ability",
+		"soundmark": "/rɪˈlaɪɪŋ/ /ɒn/ /ˈnætʃrəl/ /əˈbɪlɪti/"
+	},
+	{
+		"chinese": "在科学方面",
+		"english": "in science",
+		"soundmark": "/ɪn/ /ˈsaɪəns/"
+	},
+	{
+		"chinese": "不会让你走得太远",
+		"english": "not get you far",
+		"soundmark": "/nɒt/ /ɡɛt/ /juː/ /fɑːr/"
 	},
 	{
 		"chinese": "依靠天赋才能在科学方面不会让你走得太远。",
@@ -35,17 +150,62 @@
 		"soundmark": "/rɪˈlaɪ.ɪŋ/ /ɒn/ /ˈnætʃərəl/ /əˈbɪl.ɪ.ti/ /wɪl/ /nɒt/ /ɡɛt/ /juː/ /fɑːr/ /ɪn/ /ˈsaɪəns/"
 	},
 	{
+		"chinese": "制造业的新发展",
+		"english": "New developments in manufacturing",
+		"soundmark": "/njuː/ /dɪˈvɛləpmənts/ /ɪn/ /ˌmænjʊˈfæktʃərɪŋ/"
+	},
+	{
+		"chinese": "不断改变着",
+		"english": "are constantly changing",
+		"soundmark": "/ɑːr/ /ˈkɒnstəntli/ /ˈʧeɪnʤɪŋ/"
+	},
+	{
+		"chinese": "我们的生活方式",
+		"english": "the way we live",
+		"soundmark": "/ðə/ /weɪ/ /wiː/ /lɪv/"
+	},
+	{
 		"chinese": "制造业的新发展不断改变着我们的生活方式。",
 		"english": "New developments in manufacturing are constantly changing the way we live.",
 		"soundmark": "/njuː/ /dɪˈvɛl.əp.mənts/ /ɪn/ /ˌmæn.jʊˈfæktʃ.ər.ɪŋ/ /ɑːr/ /ˈkɒn.stənt.li/ /ˈʧeɪn.dʒɪŋ/ /ðiː/ /weɪ/ /wiː/ /lɪv/"
 	},
 	{
-		"chinese": "依靠天赋才能在科学方面不会让你走得太远。",
+		"chinese": "国际交流",
+		"english": "International exchanges",
+		"soundmark": "/ˌɪntəˈnæʃənl ɪkˈstʃeɪndʒɪz/"
+	},
+	{
+		"chinese": "我们学习计划",
+		"english": "our study program",
+		"soundmark": "aʊər ˈstʌdi ˈproʊɡræm/"
+	},
+	{
+		"chinese": "重要组成部分",
+		"english": "the important part",
+		"soundmark": "/ðə ˈɪmpɔːtənt pɑːt/"
+	},
+	{
+		"chinese": "国际交流是我们学习计划的重要组成部分。",
 		"english": "International exchanges formed the important part of our study program.",
 		"soundmark": "/rɪˈlaɪ.ɪŋ/ /ɒn/ /ˈnætʃərəl/ /əˈbɪl.ɪ.ti/ /wɪl/ /nɒt/ /ɡɛt/ /juː/ /fɑːr/ /ɪn/ /ˈsaɪəns/"
 	},
 	{
-		"chinese": "制造业的新发展不断改变着我们的生活方式。",
+		"chinese": "在任何情况下",
+		"english": "under any circumstances",
+		"soundmark": "/ˈʌndər/ /ˈɛniː/ /ˈsɜːrkəmstænsɪz/"
+	},
+	{
+		"chinese": "均不接受",
+		"english": "will not be accepted",
+		"soundmark": "/wɪl/ /nɒt/ /biː/ /əkˈsɛptɪd/"
+	},
+	{
+		"chinese": "逾期申请的请求",
+		"english": "Request for late applications",
+		"soundmark": "/rɪˈkwɛst/ /fɔːr/ /leɪt/ /ˌæplɪˈkeɪʃənz/"
+	},
+	{
+		"chinese": "在任何情况下均不接受逾期申请的请求。",
 		"english": "Request for late applications will not be accepted under any circumstances.",
 		"soundmark": "/rɪˈkwɛst/ /fɔːr/ /leɪt/ /ˌæplɪˈkeɪʃənz/ /wɪl/ /nɒt/ /biː/ /əkˈsɛptɪd/ /ˈʌndər/ /ˈɛniː/ /ˈsɜːrkəmstænsɪz/"
 	}

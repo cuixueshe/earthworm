@@ -1,8 +1,38 @@
 [
 	{
+		"chinese": "农民",
+		"english": "The farmers",
+		"soundmark": "/ðə/ /ˈfɑːmərz/"
+	},
+	{
+		"chinese": "适应",
+		"english": "adapt to",
+		"soundmark": "/əˈdæpt/ /tuː/"
+	},
+	{
+		"chinese": "气候的变化",
+		"english": "the changes of the climate",
+		"soundmark": "/ðə/ /ˈʧeɪndʒɪz/ /əv/ /ðə/ /ˈklaɪmət/"
+	},
+	{
 		"chinese": "农民需要适应气候的变化。",
 		"english": "The farmers need to adapt to the changes of the climate.",
 		"soundmark": "/ðə/ /ˈfɑːmərz/ /niːd/ /tuː/ /əˈdæpt/ /tuː/ /ðə/ /ˈʧeɪndʒɪz/ /əv/ /ðə/ /ˈklaɪmət/"
+	},
+	{
+		"chinese": "大学合唱团",
+		"english": "the university choir",
+		"soundmark": "/ðə/ /ˌjuːnɪˈvɜːsɪti/ /kwaɪər/"
+	},
+	{
+		"chinese": "的试音",
+		"english": "Auditions for",
+		"soundmark": "/ɔːˈdɪʃənz/ /fɔːr/"
+	},
+	{
+		"chinese": "将举行",
+		"english": "will be held",
+		"soundmark": "/wɪl/ /biː/ /hɛld/"
 	},
 	{
 		"chinese": "大学合唱团的试音将在下周举行。",
@@ -10,9 +40,39 @@
 		"soundmark": "/ɔːˈdɪʃənz/ /fɔːr/ /ðə/ /ˌjuːnɪˈvɜːsɪti/ /kwaɪər/ /wɪl/ /biː/ /hɛld/ /nɛkst/ /wiːk/"
 	},
 	{
+		"chinese": "蜂蜜",
+		"english": "Honey",
+		"soundmark": "/ˈhʌni/"
+	},
+	{
+		"chinese": "可以用作",
+		"english": "can be used as",
+		"soundmark": "/kæn/ /biː/ /juːzd/ /æz/"
+	},
+	{
+		"chinese": "食品和保健品",
+		"english": "the food and health product",
+		"soundmark": "/ðə/ /fuːd/ /ænd/ /hɛlθ/ /ˈprɒdʌkt/"
+	},
+	{
 		"chinese": "蜂蜜可以用作食品和保健品。",
 		"english": "Honey can be used as the food and health product.",
 		"soundmark": "/ˈhʌni/ /kæn/ /biː/ /juːzd/ /æz/ /ðə/ /fuːd/ /ænd/ /hɛlθ/ /ˈprɒdʌkt/"
+	},
+	{
+		"chinese": "目前",
+		"english": "Currently",
+		"soundmark": "/ˈkʌrəntli/"
+	},
+	{
+		"chinese": "经济增长",
+		"english": "the growth of the economy",
+		"soundmark": "/ðə/ /ɡrəʊθ/ /əv/ /ðə/ /ɪˈkɒnəmi/"
+	},
+	{
+		"chinese": "是不可预测的",
+		"english": "is unpredictable",
+		"soundmark": "/ɪz/ /ʌnprɪˈdɪktəbl/"
 	},
 	{
 		"chinese": "目前，经济增长是不可预测的。",
@@ -20,9 +80,34 @@
 		"soundmark": "/ˈkʌrəntli/ /ðə/ /ɡrəʊθ/ /əv/ /ðə/ /ɪˈkɒnəmi/ /ɪz/ /ʌnprɪˈdɪktəbl/"
 	},
 	{
+		"chinese": "心理学家",
+		"english": "Psychologists",
+		"soundmark": "/saɪˈkɒlədʒɪsts/"
+	},
+	{
+		"chinese": "我们所经历的",
+		"english": "what we have experienced",
+		"soundmark": "/wɒt/ /wiː/ /hæv/ /ɪksˈpɪəriənst/"
+	},
+	{
+		"chinese": "影响了我们的行为",
+		"english": "influences our behaviors",
+		"soundmark": "/ˈɪnflʊənsɪz/ /aʊər/ /bɪˈheɪvjəz/"
+	},
+	{
 		"chinese": "心理学家说我们所经历的影响了我们的行为。",
 		"english": "Psychologists say what we have experienced influences our behaviors.",
 		"soundmark": "/saɪˈkɒlədʒɪsts/ /seɪ/ /wɒt/ /wiː/ /hæv/ /ɪksˈpɪəriənst/ /ˈɪnflʊənsɪz/ /aʊər/ /bɪˈheɪvjəz/"
+	},
+	{
+		"chinese": "参考书",
+		"english": "the reference book",
+		"soundmark": "/ðə/ /ˈrɛfərəns/ /bʊk/"
+	},
+	{
+		"chinese": "放书架上",
+		"english": "to the correct position on the shelf",
+		"soundmark": "/tuː/ ðə /kəˈrɛkt/ /pəˈzɪʃən/ ɒn ðə /ʃɛlf/"
 	},
 	{
 		"chinese": "请把参考书放回书架上正确的位置。",
@@ -30,9 +115,39 @@
 		"soundmark": "/pliːz/ /rɪˈtɜːn/ /ðə/ /ˈrɛfərəns/ /bʊk/ /tuː/ ðə /kəˈrɛkt/ /pəˈzɪʃən/ ɒn ðə /ʃɛlf/"
 	},
 	{
+		"chinese": "财务学的学生",
+		"english": "finance students",
+		"soundmark": "/ˈfaɪnæns/ /ˈstjuːdənts/"
+	},
+	{
+		"chinese": "会计作业",
+		"english": "accounting assignment",
+		"soundmark": "/əˈkaʊntɪŋ/ /əˈsaɪnmənt/"
+	},
+	{
 		"chinese": "财务学的学生有一项会计作业。",
 		"english": "There is an accounting assignment for finance students.",
 		"soundmark": "/ðɛər/ /ɪz/ /ən/ /əˈkaʊntɪŋ/ /əˈsaɪnmənt/ /fɔːr/ /ˈfaɪnæns/ /ˈstjuːdənts/"
+	},
+	{
+		"chinese": "计算器",
+		"english": "Calculators",
+		"soundmark": "/ˈkælkjʊleɪtəz/"
+	},
+	{
+		"chinese": "让我们",
+		"english": "allow us to",
+		"soundmark": "/əˈlaʊ/ /ʌs/ /tuː/"
+	},
+	{
+		"chinese": "在不犯错的情况下",
+		"english": "without making mistakes",
+		"soundmark": "/wɪˈðaʊt/ /ˈmeɪkɪŋ/ /mɪsˈteɪks/"
+	},
+	{
+		"chinese": "添加数字",
+		"english": "add numbers",
+		"soundmark": "/æd/ /ˈnʌmbəz/"
 	},
 	{
 		"chinese": "计算器让我们在不犯错的情况下添加数字。",
@@ -40,9 +155,39 @@
 		"soundmark": "/ˈkælkjʊleɪtəz/ /əˈlaʊ/ /ʌs/ /tuː/ /æd/ /ˈnʌmbəz/ /wɪˈðaʊt/ /ˈmeɪkɪŋ/ /mɪsˈteɪks/"
 	},
 	{
+		"chinese": "数码相机",
+		"english": "The digital camera",
+		"soundmark": "/ðə/ /ˈdɪdʒɪtl/ /ˈkæmərə/"
+	},
+	{
+		"chinese": "一些优势",
+		"english": "some advantages",
+		"soundmark": "/sʌm/ /ədˈvɑːntɪʤɪz/"
+	},
+	{
+		"chinese": "传统胶片",
+		"english": "traditional film",
+		"soundmark": "/trəˈdɪʃənl/ /fɪlm/"
+	},
+	{
 		"chinese": "数码相机比传统胶片有一些优势。",
 		"english": "The digital camera has some advantages over traditional film.",
 		"soundmark": "/ðə/ /ˈdɪdʒɪtl/ /ˈkæmərə/ /hæz/ /sʌm/ /ədˈvɑːntɪʤɪz/ /ˈoʊvər/ /trəˈdɪʃənl/ /fɪlm/"
+	},
+	{
+		"chinese": "曾经严重的",
+		"english": "once serious",
+		"soundmark": "/wʌn/ /ˈsɪərɪəs/"
+	},
+	{
+		"chinese": "许多疾病",
+		"english": "many diseases",
+		"soundmark": "/ˈmɛni/ /dɪˈziːzɪz/"
+	},
+	{
+		"chinese": "已经被根除",
+		"english": "have been eradicated",
+		"soundmark": "/hæv/ /bɪn/ /ɪˈrædɪkeɪtɪd/"
 	},
 	{
 		"chinese": "曾经严重的许多疾病已经被根除。",
