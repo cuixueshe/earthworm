@@ -23,8 +23,8 @@ export class AchieveService {
     return user;
   }
   async useAchievement(dto: UserAchievementDto) {
-    const userAchieve = await this.db.query.userAchievements.findFirst({
-      where: eq(userAchievements.userID, dto.userID),
+    const userAchieve = await this.db.query.userProfile.findFirst({
+      where: eq(userProfile.userID, dto.userID),
     });
     if (!userAchieve) {
       throw new HttpException('当前未设置使用中成就', HttpStatus.BAD_REQUEST);

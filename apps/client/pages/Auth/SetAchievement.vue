@@ -133,7 +133,6 @@ const handleAward = handleSubmit(async (values) => {
     userID: userInfo.id,
     choiceAchievement,
   };
-  console.log(p, "=");
 
   await awardAchievement({ ...p });
   Message.success("颁发成功");
