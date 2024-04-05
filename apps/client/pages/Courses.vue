@@ -18,7 +18,9 @@
               :title="course.title"
               :id="course.id"
               :count="course.count"
-            />
+            >
+              {{ courseInformation[course.id - 1].description }}
+            </CourseCard>
           </NuxtLink>
         </template>
       </div>
@@ -37,6 +39,9 @@ import CourseCard from "~/components/courses/CourseCard.vue";
 
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { type Course } from "~/store/course";
+
+// Directly import the JSON file, need to refactor it.
+import courseInformation from "~/assets/courseLinks.json";
 
 const { updateActiveCourseId } = useActiveCourseId();
 const courses = ref<Course[]>([]);
