@@ -9,7 +9,6 @@
     >
       <NuxtPage />
     </div>
-    <PageToc />
   </main>
 </template>
 
