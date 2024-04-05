@@ -52,7 +52,7 @@
       <!-- <Introduce /> -->
       <Comments />
       <!-- <PayCard /> -->
-      <Question />
+      <Questions />
       <Contact />
     </template>
     <CommonBackTop class="sticky flex justify-end ml-auto sm:block bottom-28" />
@@ -68,10 +68,10 @@
 
 <script setup>
 import Comments from "~/components/home/Comments.vue";
+import Questions from "~/components/home/Questions.vue";
 import Contact from "~/components/home/Contact.vue";
 import Features from "~/components/home/Features.vue";
 import NoticeBar from "~/components/home/NoticeBar.vue";
-import Question from "~/components/home/Questions.vue";
 const showNoticeBar = ref(false);
 
 import { onMounted, onUnmounted, ref } from "vue";
@@ -131,7 +131,7 @@ function useShortcutToGame() {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13rem;
+  width: fit-content;
   overflow: hidden;
   height: 3rem;
   background-size: 300% 300%;
