@@ -41,7 +41,7 @@
           </label>
           <div class="flex gap-2 mt-2">
             <div
-              class="badge badge-ghost"
+              class="badge dark:bg-gray-700 badge-outline"
               v-for="i in checkedAchievement"
             >
               {{ i.name }}
@@ -50,9 +50,9 @@
         </div>
 
         <FormInput
-          label="授权口令"
+          label="授权指令"
           name="secretKey"
-          placeholder="请输入授权口令"
+          placeholder="请输入授权指令"
           v-model="secretKey"
           :errorMessage="secretKeyError"
         />
@@ -68,7 +68,7 @@
           <form method="dialog">
             <button
               class="btn"
-              @click="cancel"
+              @click="handleCancel"
             >
               取消
             </button>
@@ -94,7 +94,7 @@ import AchievementCard from "~/components/user/AchievementCard.vue";
 import { useAchievementList } from "~/composables/user/achievement";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useAwardForm } from "./hooks/useAwardForm";
-const { handleSubmit, phone, phoneError, secretKey, secretKeyError, clear } =
+const { handleSubmit, phone, phoneError, secretKey, secretKeyError, resetForm } =
   useAwardForm();
 const {
   achievementList,
@@ -106,9 +106,10 @@ const {
   handleShowModal,
   handleHideModal,
 } = useAchievementList();
-function cancel() {
+
+function handleCancel() {
   handleHideModal();
-  clear();
+  resetForm();
 }
 function handleOpenDialog() {
   getAchievementChecked();
@@ -133,12 +134,10 @@ const handleAward = handleSubmit(async (values) => {
     userID: userInfo.id,
     choiceAchievement,
   };
-  console.log(p, "=");
 
   await awardAchievement({ ...p });
   Message.success("颁发成功");
-  clear();
-  handleHideModal();
+  handleCancel();
 });
 onMounted(() => {
   getAchievementList();

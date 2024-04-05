@@ -23,16 +23,15 @@ const phoneValidator = (phoneWithCode: string) => {
 
 export function useAwardForm() {
   const schema = yup.object({
-    phone: yup.string().required("请输入用户手机号"),
-    // .test(
-    //   "is-valid-phone",
-    //   "Please enter a valid phone number",
-    //   phoneValidator
-    // ),
+    phone: yup.string().required("请输入用户手机号").test(
+      "is-valid-phone",
+      "请输入正确的手机号",
+      phoneValidator
+    ),
     secretKey: yup.string().required("请输入授权指令"),
   });
 
-  const { handleSubmit } = useForm<AchievementFormValues>({
+  const { handleSubmit, resetForm } = useForm<AchievementFormValues>({
     validationSchema: schema,
   });
 
@@ -43,17 +42,14 @@ export function useAwardForm() {
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
   const { value: secretKey, errorMessage: secretKeyError } =
     useField<string>("secretKey");
-  function clear() {
-    secretKey.value = "";
-    phone.value = "";
-  }
+
   return {
     handleSubmit,
     secretKey,
     secretKeyError,
     phone,
     phoneError,
-    clear,
+    resetForm,
     updateCountryCode,
   };
 }
