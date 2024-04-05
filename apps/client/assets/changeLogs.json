@@ -1,0 +1,244 @@
+[
+  {
+    "version": "V1.3.3",
+    "time": "2024.4.1",
+    "fns": [
+      {
+        "title": "🎁 Bug Fixes",
+        "lists": [
+          {
+            "title": "fix course 18 the ninety-first field is incorrect ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/4dc39ac5a269d4b4a99646010f1499fb7d615326",
+            "author": "4dc39ac"
+          },
+          {
+            "title": "fix course 18 the ninety-first field is incorrect ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/4436706adce89739bec8ddcea1a6e64a9b1f8a30",
+            "author": "4436706"
+          },
+          {
+            "title": "fix course issue, closes  ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/7408c2c0364f7a597519c97d81d258bbcac81f89",
+            "author": "7408c2c"
+          },
+          {
+            "title": "fix course-18 ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/008e43c6e9af16c8b07168ea8a11eab76a835d3a",
+            "author": "008e43c"
+          },
+          {
+            "title": "fix course-34 statement is incorrect ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/7cfa8a1f67d90901ab697cdfdbfb4825e694e833",
+            "author": "7cfa8a1"
+          },
+          {
+            "title": "fix-course-18 ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/cd49ed7a12a816e316cf207df1c929a0a55278ad",
+            "author": "cd49ed7"
+          },
+          {
+            "title": "Keep word width consistent () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/24ac0d6d6180808f112de464ab5153dba49e3afa",
+            "author": "24ac0d6"
+          },
+          {
+            "title": "Prevents adding Spaces after the last word ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/d3a78479479487e3e867506297a857e8dec896a5",
+            "author": "d3a7847"
+          },
+          {
+            "title": "remove the horrible emoji lol ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/0adf30b567791eccd6123fc32d8e10de6cf85366",
+            "author": "0adf30b"
+          },
+          {
+            "title": "setting update cmd key display in the shortcut settings ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/7a9f04906298437b2741bd2b172f1c75ab938b5a",
+            "author": "7a9f049"
+          },
+          {
+            "title": "tests problems ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/28d78b69680c975fea25572ce64816ec2862e530",
+            "author": "28d78b6"
+          },
+          {
+            "title": "the env variable cannot be read, causing the db:init command to fail. ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/82b092bce3d744597764126b3a79489a76839a4a",
+            "author": "82b092b"
+          },
+          {
+            "title": "update course 12-74 ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/604e00d04915efc642d28aa2899c5b01d8d52f27",
+            "author": "604e00d"
+          },
+          {
+            "title": "update course 15.5-28 ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/6ad0552178490fe0f50a6a881d5fa608652e5faf",
+            "author": "6ad0552"
+          }
+        ]
+      },
+      {
+        "title": "♻️Features",
+        "lists": [
+          {
+            "title": "add e2e test by cypress ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/c32ba6bbdbded166ab194aeda8d1e5979d091ba8",
+            "author": "c32ba6b"
+          },
+          {
+            "title": "add mobile tips () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/097e26e63011e4fb459424a8be04258fefcd85b6",
+            "author": "097e26e"
+          },
+          {
+            "title": "add scheduled task module and weekly reset ranking function () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/8164f64fda7b115f1b5a128b22867e5f7f56fcc6",
+            "author": "8164f64"
+          },
+          {
+            "title": "added interaction to resolve wrong words ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/6dcf68e2dc12b8c1969fd7a9e9ce568fb9a2d261",
+            "author": "6dcf68e"
+          },
+          {
+            "title": "long sentence modification error ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/ad29d5e01b99deeac2448b017af7f201e16caa3b",
+            "author": "ad29d5e"
+          },
+          {
+            "title": "perfect use introduction () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/de735f67ea3d925922cfc76100ba8a4d2a667cb9",
+            "author": "de735f6"
+          },
+          {
+            "title": "read one sentence per day aloud () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/baa59181c0bb16f1a755d47695d57485dec1d40b",
+            "author": "baa5918"
+          },
+          {
+            "title": "shortcut key settings for submit operations ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/fbbb96c13dd3ac949718f8295c47a5fe530e0e4b",
+            "author": "fbbb96c"
+          },
+          {
+            "title": "submit with space ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/72b9c9b60c3bce379d4b80416c45cafbc7beff2a",
+            "author": "72b9c9b"
+          },
+          {
+            "title": "support to delete back to the previous incorrect word ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/f989354e200347d6887e0c08ff3d7945c3fcc4b2",
+            "author": "f989354"
+          },
+          {
+            "title": "the word is suggested by the width of the input box () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/faa35f7410dabaec1ac696d02257d0383482d9f9",
+            "author": "faa35f7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "V1.3.0",
+    "time": "2024.3.1",
+    "fns": [
+      {
+        "title": "🎁 Bug Fixes",
+        "lists": [
+          {
+            "title": "fix course 18 the ninety-first field is incorrect ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/4dc39ac5a269d4b4a99646010f1499fb7d615326",
+            "author": "4dc39ac"
+          },
+          {
+            "title": "fix course 18 the ninety-first field is incorrect ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/4436706adce89739bec8ddcea1a6e64a9b1f8a30",
+            "author": "4436706"
+          }
+        ]
+      },
+      {
+        "title": "♻️Features",
+        "lists": [
+          {
+            "title": "add e2e test by cypress ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/c32ba6bbdbded166ab194aeda8d1e5979d091ba8",
+            "author": "c32ba6b"
+          },
+          {
+            "title": "add mobile tips () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/097e26e63011e4fb459424a8be04258fefcd85b6",
+            "author": "097e26e"
+          },
+          {
+            "title": "add scheduled task module and weekly reset ranking function () ()",
+            "desc": [],
+            "url": "",
+            "link": "https://github.com/cuixueshe/earthworm/commit/8164f64fda7b115f1b5a128b22867e5f7f56fcc6",
+            "author": "8164f64"
+          }
+        ]
+      }
+    ]
+  }
+]
