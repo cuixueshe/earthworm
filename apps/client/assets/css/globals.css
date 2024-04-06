@@ -13,7 +13,9 @@ body {
 }
 
 :root {
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
+  /* https://www.zhangxinxu.com/wordpress/2022/01/css-scrollbar-gutter/ */
+  scrollbar-gutter: stable both-edges;
 }
 
 @layer base {
