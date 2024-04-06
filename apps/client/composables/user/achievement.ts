@@ -22,6 +22,12 @@ export interface AchievementItem {
 export async function showContributorLogo() {
   const { initUserAchievementList, userAchievementList } = useAchievement()
   await initUserAchievementList()
+  if(userAchievementList.value.length === 0){
+    return {
+      isShow:false,
+      img:'/contributor.png'
+    }
+  }
   const curItem = userAchievementList.value.find(i => i.isActive)
   return {
     isShow:curItem?.isActive,
