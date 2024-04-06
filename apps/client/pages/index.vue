@@ -9,43 +9,66 @@
         class="text-gray-500 pt-28"
         id="home"
       >
-        <CommonTitle
-          title="让你上瘾的英语学习工具"
-          :description="[
-            `使用连词成句、i + 1、以终为始等学习理论来帮助你习得英语`,
-            `通过不断的重复形成肌肉记忆`,
-            `最重要的是游戏化的形式让学习英语从此不再痛苦`,
-          ]"
-        >
-          <div
-            class="my-10 flex flex-wrap justify-center gap-4 font-customFont items-center"
+        <div class="mx-auto text-center my-5">
+          <h2
+            class="text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100"
           >
-            <button
-              @click="handleKeydown"
-              class="btn"
-              type="button"
+            让你上瘾的英语学习工具
+          </h2>
+
+          <div class="mt-5">
+            <p
+              class="pt-2 text-center dark:text-gray-500 text-gray-500 lg:text-xl"
             >
-              <strong>开启Earthworm</strong>
-              <div id="container-stars">
-                <div id="stars"></div>
-              </div>
-
-              <div id="glow">
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-            </button>
-            <div class="dark:text-white ml-8">把英语练起来！！！</div>
+              使用<span class="dark:text-white text-black">连词成句</span
+              >、<span class="dark:text-white text-black">i + 1</span>、<span
+                class="dark:text-white text-black"
+                >以终为始</span
+              >等学习理论来帮助你习得英语
+            </p>
+            <p
+              class="pt-2 text-center dark:text-gray-500 text-gray-500 lg:text-xl"
+            >
+              通过不断的<span class="dark:text-white text-black">重复</span
+              >形成肌肉记忆
+            </p>
+            <p
+              class="pt-2 text-center dark:text-gray-500 text-gray-500 lg:text-xl"
+            >
+              最重要的是<span class="dark:text-white text-black">游戏化</span
+              >的形式让学习英语从此不再痛苦
+            </p>
           </div>
+        </div>
+        <div
+          class="my-10 flex flex-wrap justify-center gap-4 font-customFont items-center"
+        >
+          <button
+            @click="handleKeydown"
+            class="btn"
+            type="button"
+          >
+            <strong>开启Earthworm</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
 
-          <div class="w-full flex justify-center mt-20">
-            <img
-              alt=""
-              src="~/assets/home-page-preview.png"
-              class="w-3/4"
-            />
-          </div>
-        </CommonTitle>
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <div class="dark:text-white ml-8">把英语练起来！！！</div>
+        </div>
+
+        <div class="w-full flex justify-center mt-20">
+          <img
+            alt=""
+            src="~/assets/home-page-preview.png"
+            class="w-3/4"
+          />
+        </div>
+
         <CommonDivider />
       </section>
       <Features />
@@ -68,10 +91,10 @@
 
 <script setup>
 import Comments from "~/components/home/Comments.vue";
-import Questions from "~/components/home/Questions.vue";
 import Contact from "~/components/home/Contact.vue";
 import Features from "~/components/home/Features.vue";
 import NoticeBar from "~/components/home/NoticeBar.vue";
+import Questions from "~/components/home/Questions.vue";
 const showNoticeBar = ref(false);
 
 import { onMounted, onUnmounted, ref } from "vue";

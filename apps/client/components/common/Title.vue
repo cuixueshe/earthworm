@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto text-center my-5">
     <h2
-      class="text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-gray-300 dark:from-purple-600 dark:to-gray-500"
+      class="text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100"
     >
       {{ title }}
     </h2>
