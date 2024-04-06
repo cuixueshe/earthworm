@@ -14,8 +14,9 @@
 <script setup lang="ts">
 import { computed, ref, watchEffect } from "vue";
 import { useRoute } from "vue-router";
-import UserMenus from "~/components/user/Menu.vue";
+import UserAchievement from "~/components/user/Achievement.vue";
 import UserHome from "~/components/user/Home.vue";
+import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
 const route = useRoute();
@@ -33,11 +34,13 @@ interface Menu {
 const componentMap: ComponentMap = {
   Home: UserHome,
   Setting: UserSetting,
+  Achievement: UserAchievement
 };
 
 const userMenus = ref([
   { name: "主页", component: "Home" },
   { name: "设置", component: "Setting" },
+  { name: "我的成就", component: 'Achievement' },
 ]);
 
 const currentComponent = ref(componentMap.Home);
