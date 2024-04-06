@@ -6,17 +6,15 @@
       成就中心
       <button
         class="btn btn-primary"
-        @click="handleOpenDialog"
+        @click="handleOpenAwardDialog"
       >
         颁发成就
       </button>
     </div>
-
     <div class="flex flex-wrap gap-5">
       <AchievementCard
         v-for="achievement in achievementList"
         :key="achievement.id"
-        class="cursor-pointer"
         isShowCheckBox
         :achievement="achievement"
       />
@@ -67,7 +65,7 @@
           <form method="dialog">
             <button
               class="btn"
-              @click="handleCancel"
+              @click="handleCancel(resetForm)"
             >
               取消
             </button>
@@ -87,10 +85,8 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue";
-import { fetchAuthUser } from "~/api/achievement";
-import Message from "~/components/main/Message/useMessage";
 import AchievementCard from "~/components/user/AchievementCard.vue";
-import { useAchievementList } from "~/composables/user/achievement";
+import { useAchievement } from "~/composables/user/achievement";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useAwardForm } from "./hooks/useAwardForm";
 const {
@@ -104,45 +100,16 @@ const {
 const {
   achievementList,
   getAchievementList,
-  awardAchievement,
   checkedAchievement,
-  getAchievementChecked,
   isShowModal,
-  handleShowModal,
-  handleHideModal,
-} = useAchievementList();
-
-function handleCancel() {
-  handleHideModal();
-  resetForm();
-}
-function handleOpenDialog() {
-  getAchievementChecked();
-  if (checkedAchievement.value.length > 0) {
-    handleShowModal();
-  } else {
-    Message.warning("请先选择成就", { duration: 1200 });
-  }
-}
+  handleCancel,
+  handleOpenAwardDialog,
+  handleAwardAchievement
+} = useAchievement();
 
 const handleAward = handleSubmit(async (values) => {
-  async function getUserID() {
-    return await fetchAuthUser({
-      phone: phone.value,
-    });
-  }
-  const userInfo = await getUserID();
-
-  const choiceAchievement = checkedAchievement.value.map((x) => x.id);
-  const p = {
-    secretKey: values.secretKey,
-    userID: userInfo.id,
-    choiceAchievement,
-  };
-
-  await awardAchievement({ ...p });
-  Message.success("颁发成功");
-  handleCancel();
+  await handleAwardAchievement(values);
+  handleCancel(resetForm)
 });
 onMounted(() => {
   getAchievementList();

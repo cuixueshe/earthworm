@@ -39,7 +39,7 @@
 import { onMounted } from "vue";
 import AchievementCard from "~/components/user/AchievementCard.vue";
 import {
-useAchievementList
+useAchievement
 } from "~/composables/user/achievement";
 
 const {
@@ -51,7 +51,7 @@ const {
   handleChangeAchievementActive,
   handleSetAchievementActive,
   initUsingAchievement,
-} = useAchievementList();
+} = useAchievement();
 
 onMounted(async () => {
   await getUserAchievementList();

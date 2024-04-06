@@ -1,11 +1,10 @@
 import { ref } from "vue";
 import {
   fetchAllAchievements,
+  fetchAuthUser,
   fetchHaveAchievement,
   fetchPubAchievement,
-  fetchSetUsing,
-  type SetDto,
-  type UserDto,
+  fetchSetUsing
 } from "~/api/achievement";
 import Message from "~/components/main/Message/useMessage";
 
@@ -13,98 +12,141 @@ export interface AchievementItem {
   id: number;
   name: string;
   description: string;
-  avatar?: string;
+  achievementImg?: string;
   achieved?: boolean;
   createdAt?: string;
   isActive?: boolean;
   isChecked?: boolean;
 }
-
+function setUsingAchievementStore(achievementID: number) {
+  localStorage.setItem("usingAchievementID", String(achievementID));
+}
+function getUsingAchievementStore() {
+  return Number(localStorage.getItem("usingAchievementID"));
+}
+function getUserID() {
+  return JSON.parse(localStorage.getItem("userInfo")!).userId
+}
 /** 成就模块处理逻辑
  *  achievementList: 当前用户成就列表
  *  checkedAchievement: 选中的成就
  *  getAchievementList: 获取当前用户的所有的成就列表
  *  setAchievementActive: 设置成就为使用中状态
+ *  userAchievementList: 当前用户的成就列表
+ *  getUserAchievementList: 获取当前用户的成就列表
+ *  handleAwardAchievement: 颁发成就
  */
 
-export const useAchievementList = () => {
+export const useAchievement = () => {
   const isShowModal = ref(false);
   const achievementList = ref<AchievementItem[]>([]);
-  const currentAchievement = ref<AchievementItem>();
   const checkedAchievement = ref<AchievementItem[]>([]);
-  const userHaveAchievement = ref<AchievementItem[]>([]);
-  const userInfo = JSON.parse(localStorage.getItem("userInfo")!);
-
+  const userAchievementList = ref<AchievementItem[]>([]);
+  const userAchievement = ref({
+    name:'',
+    id:0
+  })
   function handleShowModal() {
     isShowModal.value = true;
   }
   function handleHideModal() {
     isShowModal.value = false;
   }
-  const UserID = () => {
-    return userInfo.userId;
+  function getCheckedAchievement(){
+    checkedAchievement.value = achievementList.value.filter((x) => x.isChecked);
   };
-  const UserName = () => {
-    return userInfo.username;
-  };
-  const getAchievementList = async () => {
+  function handleOpenAwardDialog() {
+    getCheckedAchievement();
+    if (checkedAchievement.value.length > 0) {
+      handleShowModal();
+    } else {
+      Message.warning("请先选择成就", { duration: 1200 });
+    }
+  }
+  function handleCancel(cb: () => void) {
+    handleHideModal();
+    cb()
+  }
+
+  async function getAchievementList() {
     achievementList.value = await fetchAllAchievements();
   };
-  function setInUsingFirst() {
-    const firstItem = userHaveAchievement.value[0];
+  function setUsingFirst() {
+    const firstItem = userAchievementList.value[0];
     if (firstItem) {
       firstItem.isActive = true;
     }
   }
-  function setUsingAchievement(achievementID: number) {
-    localStorage.setItem("usingAchievementID", String(achievementID));
-  }
-  function getUsingAchievement() {
-    return Number(localStorage.getItem("usingAchievementID"));
-  }
-  const getUserHaveAchievement = async (data: UserDto) => {
-    const res = await fetchHaveAchievement(data);
-    userHaveAchievement.value = res;
-    const achievementID = getUsingAchievement();
+  // 初始化成就
+  function initUsingAchievement(){
+    const achievementID = getUsingAchievementStore();
     if (!achievementID) {
-      setInUsingFirst();
+      setUsingFirst();
+    } else {
+      setAchievementBeActive(achievementID);
     }
-    getAchievementActive(achievementID);
+  }
+  async function setAchievementBeActive(achievementID: number) {
+    const currentAchievement = userAchievementList.value.find((x) => x.id === achievementID);
+    currentAchievement!.isActive = true;
   };
-  const getAchievementActive = async (achievementID: number) => {
-    currentAchievement.value = userHaveAchievement.value.find(
-      (item) => item.id === achievementID
-    );
-    currentAchievement.value!.isActive = true;
+  const getUserAchievementList = async () => {
+    const userID = getUserID()
+    userAchievementList.value = await fetchHaveAchievement({ userID });;
   };
   // 设置成就为使用中状态
-  const setAchievementActive = async (data: SetDto) => {
+  async function setAchievementActive() {
+    const data = {
+      userID: getUserID(),
+      achievementID: userAchievement.value.id,
+    }
     await fetchSetUsing(data);
     Message.success("设置成功");
-    setUsingAchievement(data.achievementID);
-    userHaveAchievement.value.forEach((item) => (item.isActive = false));
-    getAchievementActive(data.achievementID);
+    setUsingAchievementStore(userAchievement.value.id);
+    userAchievementList.value.forEach((item) => (item.isActive = false));
+    setAchievementBeActive(userAchievement.value.id);
   };
-  const getAchievementChecked = () => {
-    checkedAchievement.value = achievementList.value.filter((x) => x.isChecked);
-  };
-  async function awardAchievement(data: any) {
-    await fetchPubAchievement(data);
+
+  function handleSetAchievementActive(achievement: AchievementItem) {
+    userAchievement.value = {...achievement}
+    handleShowModal();
+  }
+  function handleChangeAchievementActive() {
+    setAchievementActive();
+    handleHideModal();
+  }
+  /** 重置颁布成就勾选状态 */
+  function resetAchievementCheckedStatus() {
+    achievementList.value.forEach((item) => (item.isChecked = false));
+  }
+  async function handleAwardAchievement(params: any) {
+    const { phone, secretKey } = params;
+    const userInfo = await fetchAuthUser({ phone });
+    const checkedAchievementIds = checkedAchievement.value.map((x) => x.id);
+    const p = {
+      secretKey,
+      userID: userInfo?.id,
+      choiceAchievement:checkedAchievementIds
+    };
+    await fetchPubAchievement(p);
+    Message.success("颁发成功");
+    resetAchievementCheckedStatus();
   }
   return {
     isShowModal,
-    currentAchievement,
     achievementList,
     checkedAchievement,
-    userHaveAchievement,
-    UserName,
-    UserID,
-    getAchievementList,
-    setAchievementActive,
-    getAchievementChecked,
-    awardAchievement,
+    userAchievement,
+    userAchievementList,
     handleShowModal,
     handleHideModal,
-    getUserHaveAchievement,
+    getAchievementList,
+    getUserAchievementList,
+    initUsingAchievement,
+    handleOpenAwardDialog,
+    handleCancel,
+    handleAwardAchievement,
+    handleChangeAchievementActive,
+    handleSetAchievementActive,
   };
 };
