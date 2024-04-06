@@ -100,7 +100,7 @@
             <div
               v-if="userStore.user"
               class="dropdown dropdown-end"
-              @click="showDropdown = !showDropdown"
+              @click="toggleDropdown"
             >
               <button
                 tabindex="0"
@@ -125,6 +125,7 @@
               </button>
               <ul
                 v-if="showDropdown"
+                ref="dropdownContainer"
                 tabindex="0"
                 class="dropdown-content z-[1] menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md"
               >
@@ -224,8 +225,9 @@
 </template>
 
 <script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import Message from "~/components/main/Message/useMessage";
 import { Theme, useDarkMode } from "~/composables/darkMode";
@@ -235,7 +237,6 @@ import MessageBox from "./main/MessageBox/MessageBox.vue";
 const route = useRoute();
 const userStore = useUserStore();
 const isShowModal = ref(false);
-const showDropdown = ref(false);
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
@@ -262,21 +263,15 @@ const handleSetting = () => {
     query: { displayComponent: "Setting" },
   });
 };
+const showDropdown = ref(false);
+const dropdownContainer = ref(null);
 
-const handleGlobalClick = (event: any) => {
-  if (!event.target.closest(".dropdown")) {
-    showDropdown.value = false;
-  }
-};
-
-onMounted(() => {
-  window.addEventListener("click", handleGlobalClick);
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false;
 });
-
-onUnmounted(() => {
-  window.removeEventListener("click", handleGlobalClick);
-});
-
+function toggleDropdown() {
+  showDropdown.value = !showDropdown.value;
+}
 const handleLogoutConfirm = () => {
   userStore.logoutUser();
   cleanToken();
