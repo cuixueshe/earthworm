@@ -7,25 +7,27 @@ interface AchievementFormValues {
 }
 
 // TODO optimize phoneValidator
-const phoneValidator = (phoneWithCode: string) => {
-  if (!phoneWithCode || phoneWithCode.length > 11) return false;
-  else return true;
-};
-
+function checkModbile(mobile: string) {
+  var re = /^1[3,4,5,6,7,8,9][0-9]{9}$/;
+  var result = re.test(mobile);
+  if (!result) {
+    return false;
+  }
+  return true;
+}
 export function useAwardForm() {
   const schema = yup.object({
-    phone: yup.string().required("请输入用户手机号").test(
-      "is-valid-phone",
-      "请输入正确的手机号",
-      phoneValidator
-    ),
+    phone: yup
+      .string()
+      .required("请输入用户手机号")
+      .test("is-valid-phone", "请输入正确的手机号", checkModbile),
     secretKey: yup.string().required("请输入授权指令"),
   });
 
   const { handleSubmit, resetForm } = useForm<AchievementFormValues>({
     validationSchema: schema,
   });
-  
+
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
   const { value: secretKey, errorMessage: secretKeyError } =
     useField<string>("secretKey");

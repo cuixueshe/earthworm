@@ -1,5 +1,13 @@
 <template>
-  <div class="card" :class="[cardClass]" @click="handleToggleCheckStatus">
+  <div
+    class="card achievement-container rounded-md bg-gray-100 dark:bg-gray-900 hover:shadow-slate-700"
+    :class="
+      isActive
+        ? 'border-pink-500 border'
+        : 'dark:border-yellow-50 border-gray-500 border'
+    "
+    @click="handleToggleCheckStatus"
+  >
     <div
       class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
@@ -11,7 +19,7 @@
       />
     </div>
     <div
-      class="flex items-center justify-center rounded-sm active"
+      class="flex items-center justify-center rounded-md active"
       v-if="isActive"
     >
       <span class="active-label">使用中</span>
@@ -21,14 +29,20 @@
       :data-tip="description"
     >
       <figure>
+        <!-- 图片先写死，只提供一个贡献成就的图片 -->
         <img
-          :src="achievementImg"
+          :src="`/contributor.png`"
           alt="achievement"
           class="rounded-xl w-[110px] h-[110px] mb-5"
         />
       </figure>
-      <div class="items-center justify-center text-center">
-        <p class="mb-3">{{ name }}</p>
+      <div
+        class="items-center justify-center text-center"
+        :class="isActive ? 'text-pink-500 ' : 'dark:text-yellow-50 text-black '"
+      >
+        <p class="mb-3">
+          {{ name }}
+        </p>
         <p
           class="text-xs"
           v-if="props.achievement.createdAt"
@@ -52,7 +66,7 @@ const props = withDefaults(
   { isShowCheckBox: false }
 );
 function handleToggleCheckStatus() {
-  if(!isShowCheckBox.value) return;
+  if (!isShowCheckBox.value) return;
   props.achievement.isChecked = !props.achievement.isChecked;
 }
 const isShowCheckBox = computed(() => props.isShowCheckBox);
@@ -61,24 +75,18 @@ const name = computed(() => props.achievement.name);
 const createdAt = computed(
   () => "获得时间:" + props.achievement.createdAt?.split("T")[0]
 );
-const achievementImg = computed(() => props.achievement.achievementImg)
+const achievementImg = computed(() => props.achievement.achievementImg);
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
-
-const cardClass = computed(() => {
-  return isActive.value || isChecked.value ? 'activeAchievement' : 'deactivate' 
-});
 </script>
 
 <style scoped>
-.card {
-  @apply w-[170px] h-[220px] rounded-md relative justify-center cursor-pointer border hover:shadow-md hover:shadow-fuchsia-500;
-}
-.activeAchievement {
-  @apply text-fuchsia-500 border-fuchsia-500;
-}
-.deactivate {
-  @apply text-gray-500 border-gray-700;
+.achievement-container {
+  position: relative;
+  width: 170px;
+  height: 220px;
+  padding: 20px 30px 20px 30pxl;
+  justify-content: center;
 }
 .active {
   @apply absolute right-0 top-0 w-[42px] h-4 bg-[#E879F9];
