@@ -38,9 +38,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import AchievementCard from "~/components/user/AchievementCard.vue";
-import {
-useAchievement
-} from "~/composables/user/achievement";
+import { useAchievement } from "~/composables/user/achievement";
 
 const {
   isShowModal,
@@ -56,6 +54,5 @@ const {
 onMounted(async () => {
   await getUserAchievementList();
   initUsingAchievement()
-
 });
 </script>
