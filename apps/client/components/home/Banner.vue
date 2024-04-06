@@ -62,7 +62,13 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const emit = defineEmits(["startEarthworm"]);
+
+function handleKeydown() {
+  emit("startEarthworm");
+}
+</script>
 
 <style scoped>
 .btn {

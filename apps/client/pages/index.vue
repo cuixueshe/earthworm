@@ -5,7 +5,7 @@
     </template>
     <template v-else>
       <NoticeBar v-if="showNoticeBar" />
-      <Banner/>
+      <Banner @startEarthworm="startEarthworm"/>
       <Features />
       <!-- <Introduce /> -->
       <Comments />
@@ -38,7 +38,7 @@ import { useRouter } from "vue-router";
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-const { handleKeydown, isLoading } = useShortcutToGame();
+const { startEarthworm, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
 
 const { showMobileTip } = useMonitorSystem();
@@ -63,7 +63,7 @@ function useShortcutToGame() {
   const router = useRouter();
   const isLoading = ref(false);
 
-  async function handleKeydown() {
+  async function startEarthworm() {
     isLoading.value = true;
     const { courseId } = await gameStore.startGame();
     isLoading.value = false;
@@ -71,15 +71,15 @@ function useShortcutToGame() {
   }
 
   onMounted(() => {
-    registerShortcut("enter", handleKeydown);
+    registerShortcut("enter", startEarthworm);
   });
 
   onUnmounted(() => {
-    cancelShortcut("enter", handleKeydown);
+    cancelShortcut("enter", startEarthworm);
   });
 
   return {
-    handleKeydown,
+    startEarthworm,
     isLoading,
   };
 }
