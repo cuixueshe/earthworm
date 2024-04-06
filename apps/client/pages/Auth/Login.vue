@@ -37,6 +37,7 @@
           placeholder="Please enter your password"
           v-model="password"
           :errorMessage="passwordError"
+          show-password
         />
         <div class="pt-2">
           <button

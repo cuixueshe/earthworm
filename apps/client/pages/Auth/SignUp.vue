@@ -42,6 +42,7 @@
           placeholder="Your password"
           v-model="password"
           :errorMessage="passwordError"
+          show-password
         />
         <FormInput
           label="Confirm Password"
@@ -50,6 +51,7 @@
           placeholder="Confirm your password"
           v-model="confirmPassword"
           :errorMessage="confirmPasswordError"
+          show-password
         />
         <div class="pt-2">
           <button
