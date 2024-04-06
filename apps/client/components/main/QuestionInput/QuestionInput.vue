@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted,onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -216,12 +216,7 @@ function answerError() {
   function handleAnswerError() {
     playErrorSound();
     console.log("isShowErrorTip", isShowErrorTip);
-
     wrongTimes++;
-    console.log(
-      ' localStorage.getItem("showErrorTip")',
-      localStorage.getItem("showErrorTip")
-    );
     if (isShowErrorTip().toString() === "true" && wrongTimes >= 3) {
       showAnswerTip();
     }
