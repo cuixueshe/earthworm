@@ -100,6 +100,7 @@
             <div
               v-if="userStore.user"
               class="dropdown dropdown-end"
+              @click="toggleDropdown"
             >
               <button
                 tabindex="0"
@@ -123,6 +124,8 @@
                 </svg>
               </button>
               <ul
+                v-if="showDropdown"
+                ref="dropdownContainer"
                 tabindex="0"
                 class="dropdown-content z-[1] menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md"
               >
@@ -222,6 +225,7 @@
 </template>
 
 <script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
@@ -259,7 +263,15 @@ const handleSetting = () => {
     query: { displayComponent: "Setting" },
   });
 };
+const showDropdown = ref(false);
+const dropdownContainer = ref(null);
 
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false;
+});
+function toggleDropdown() {
+  showDropdown.value = !showDropdown.value;
+}
 const handleLogoutConfirm = () => {
   userStore.logoutUser();
   cleanToken();
