@@ -24,6 +24,7 @@ const route = useRoute();
 interface ComponentMap {
   Home: typeof UserHome;
   Setting: typeof UserSetting;
+  Achievement : typeof UserAchievement;
 }
 
 interface Menu {
