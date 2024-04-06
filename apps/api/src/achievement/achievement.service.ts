@@ -91,7 +91,7 @@ export class AchieveService {
           throw new HttpException('添加成就完成', HttpStatus.OK);
         }
       } else {
-        throw new HttpException('选中成就已经拥有', HttpStatus.BAD_REQUEST);
+        throw new HttpException('当前用户已经拥有选中成就', HttpStatus.BAD_REQUEST);
       }
     } else {
       const insertData = dto.choiceAchievement.map((achievementID) => ({
