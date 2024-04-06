@@ -1,6 +1,7 @@
 <template>
   <header
-    class="sticky top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
+    :class="[headerClasses]"
+    class="top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -294,5 +295,13 @@ const HEADER_OPTIONS = [
   { name: "FAQ", anchor: "faq" },
   { name: "Contact", anchor: "contact" },
 ];
+
+const headerClasses = computed(() => {
+  const isHomePage = route.path === "/";
+
+  return {
+    sticky: isHomePage,
+  };
+});
 </script>
 <style></style>
