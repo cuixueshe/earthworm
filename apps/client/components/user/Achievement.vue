@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap gap-5">
     <AchievementCard
-      v-for="achievement in userHaveAchievement"
+      v-for="achievement in userAchievementList"
       :key="achievement.id"
       :achievement="achievement"
       @click="handleSetAchievementActive(achievement)"
@@ -14,7 +14,7 @@
   >
     <div class="modal-box">
       <h3 class="text-lg font-bold">提示</h3>
-      <p class="py-4">要将"{{ name }}"设为当前使用吗？</p>
+      <p class="py-4">要将"{{ userAchievement.name }}"设为当前使用吗？</p>
       <div class="modal-action">
         <form method="dialog">
           <button
@@ -26,7 +26,7 @@
         </form>
         <button
           class="btn btn-primary"
-          @click="handleConfirm"
+          @click="handleChangeAchievementActive"
         >
           确定
         </button>
@@ -36,37 +36,26 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 import AchievementCard from "~/components/user/AchievementCard.vue";
 import {
-  useAchievementList,
-  type AchievementItem,
+useAchievementList
 } from "~/composables/user/achievement";
 
 const {
-  userHaveAchievement,
-  setAchievementActive,
-  getUserHaveAchievement,
   isShowModal,
-  UserID,
-  handleShowModal,
+  userAchievementList,
+  userAchievement,
+  getUserAchievementList,
   handleHideModal,
+  handleChangeAchievementActive,
+  handleSetAchievementActive,
+  initUsingAchievement,
 } = useAchievementList();
-const name = ref("");
-function handleSetAchievementActive(achievement: AchievementItem) {
-  handleShowModal();
-  name.value = achievement.name;
-  achievementID.value = achievement.id;
-}
-const achievementID = ref(0);
-function handleConfirm() {
-  setAchievementActive({
-    userID: UserID(),
-    achievementID: achievementID.value,
-  });
-  handleHideModal();
-}
-onMounted(() => {
-  getUserHaveAchievement({ userID: UserID() });
+
+onMounted(async () => {
+  await getUserAchievementList();
+  initUsingAchievement()
+
 });
 </script>

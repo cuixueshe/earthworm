@@ -6,7 +6,7 @@ interface PublishDto {
   userID: number;
   choiceAchievement: number[];
 }
-interface AuthUserDto {
+export interface AuthUserDto {
   phone: string;
 }
 

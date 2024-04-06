@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :class="isActive || isChecked ? 'userAchievement' : 'deactivate'">
+  <div class="card" :class="[cardClass]" @click="handleToggleCheckStatus">
     <div
       class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
@@ -7,7 +7,6 @@
       <input
         type="checkbox"
         class="rounded checkbox checkbox-xs [--chkbg:fuchsia]"
-        @change="toggleChooseAchievement"
         v-model="isChecked"
       />
     </div>
@@ -23,7 +22,7 @@
     >
       <figure>
         <img
-          :src="avatar"
+          :src="achievementImg"
           alt="achievement"
           class="rounded-xl w-[110px] h-[110px] mb-5"
         />
@@ -52,7 +51,8 @@ const props = withDefaults(
   }>(),
   { isShowCheckBox: false }
 );
-function toggleChooseAchievement() {
+function handleToggleCheckStatus() {
+  if(!isShowCheckBox.value) return;
   props.achievement.isChecked = !props.achievement.isChecked;
 }
 const isShowCheckBox = computed(() => props.isShowCheckBox);
@@ -61,17 +61,24 @@ const name = computed(() => props.achievement.name);
 const createdAt = computed(
   () => "获得时间:" + props.achievement.createdAt?.split("T")[0]
 );
-const avatar = computed(() => props.achievement.avatar)
+const achievementImg = computed(() => props.achievement.achievementImg)
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
+
+const cardClass = computed(() => {
+  return isActive.value || isChecked.value ? 'activeAchievement' : 'deactivate' 
+});
 </script>
 
 <style scoped>
-.deactivate {
-  @apply w-[170px] h-[220px] rounded-md relative justify-center text-gray-500 cursor-pointer border border-gray-700 hover:shadow-md hover:shadow-fuchsia-500
+.card {
+  @apply w-[170px] h-[220px] rounded-md relative justify-center cursor-pointer border hover:shadow-md hover:shadow-fuchsia-500;
 }
-.userAchievement {
-  @apply w-[170px] h-[220px] rounded-md relative justify-center text-fuchsia-500 cursor-pointer border border-fuchsia-500 hover:shadow-md hover:shadow-fuchsia-500
+.activeAchievement {
+  @apply text-fuchsia-500 border-fuchsia-500;
+}
+.deactivate {
+  @apply text-gray-500 border-gray-700;
 }
 .active {
   @apply absolute right-0 top-0 w-[42px] h-4 bg-[#E879F9];
@@ -80,6 +87,6 @@ const isChecked = computed(() => props.achievement.isChecked);
   @apply absolute left-0 top-0;
 }
 .active-label {
-  @apply  flex top-0.5 left-1.5 text-left text-white text-[8px] font-medium tracking-normal leading-tight;
+  @apply flex top-0.5 left-1.5 text-left text-white text-[8px] font-medium tracking-normal leading-tight;
 }
 </style>
