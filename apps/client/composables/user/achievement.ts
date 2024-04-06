@@ -22,7 +22,12 @@ function setUsingAchievementStore(achievementID: number) {
   localStorage.setItem("usingAchievementID", String(achievementID));
 }
 function getUsingAchievementStore() {
-  return Number(localStorage.getItem("usingAchievementID"));
+  const id = localStorage.getItem("usingAchievementID")
+  if(id){
+    return Number(id)
+  }else{
+    return null
+  }
 }
 function getUserID() {
   return JSON.parse(localStorage.getItem("userInfo")!).userId
@@ -42,6 +47,7 @@ export const useAchievement = () => {
   const achievementList = ref<AchievementItem[]>([]);
   const checkedAchievement = ref<AchievementItem[]>([]);
   const userAchievementList = ref<AchievementItem[]>([]);
+  const currentUseAchievement = ref<AchievementItem>()
   const userAchievement = ref({
     name:'',
     id:0
@@ -87,8 +93,8 @@ export const useAchievement = () => {
     }
   }
   async function setAchievementBeActive(achievementID: number) {
-    const currentAchievement = userAchievementList.value.find((x) => x.id === achievementID);
-    currentAchievement!.isActive = true;
+    currentUseAchievement.value = userAchievementList.value.find((x) => x.id === achievementID);
+    currentUseAchievement.value!.isActive = true;
   };
   const getUserAchievementList = async () => {
     const userID = getUserID()
