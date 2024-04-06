@@ -37,7 +37,7 @@ export class AchievementController {
     return this.AchieveService.useAchievement(dto);
   }
   @UseGuards(AuthGuard)
-  @Post('/allhave')
+  @Post('/allHave')
   async haveAchievement(@Body() dto: UserAchievementDto) {
     return this.AchieveService.haveAchievement(dto);
   }
