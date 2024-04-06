@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="card achievement-container userAchievement"
-  >
+  <div class="card achievement-container userAchievement">
     <div
       class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
@@ -26,7 +24,7 @@
       <figure>
         <img
           :src="avatar"
-          alt="contributor"
+          alt="achievement"
           class="rounded-xl w-[110px] h-[110px] mb-5"
         />
       </figure>
@@ -60,7 +58,9 @@ function toggleChooseAchievement() {
 const isShowCheckBox = computed(() => props.isShowCheckBox);
 const isActive = computed(() => props.achievement?.isActive);
 const name = computed(() => props.achievement.name);
-const createdAt = computed(() => '获得时间:' + props.achievement.createdAt?.split("T")[0]);
+const createdAt = computed(
+  () => "获得时间:" + props.achievement.createdAt?.split("T")[0]
+);
 const avatar = computed(() => props.achievement.avatar);
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
@@ -91,10 +91,10 @@ const isChecked = computed(() => props.achievement.isChecked);
   position: absolute;
   right: 0;
   top: 0;
-  width: 36px;
-  height: 14px;
+  width: 42px;
+  height: 16px;
   background: rgba(232, 121, 249, 1);
-  padding: 2px 6px 2px 6px;
+  /* padding: 4px; */
 }
 .check-box {
   position: absolute;
@@ -110,8 +110,6 @@ const isChecked = computed(() => props.achievement.isChecked);
   text-align: left;
   left: 6px;
   top: 2px;
-  width: 24px;
-  height: 10px;
   display: flex;
 }
 </style>

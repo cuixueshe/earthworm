@@ -39,8 +39,8 @@
 import { onMounted, ref } from "vue";
 import AchievementCard from "~/components/user/AchievementCard.vue";
 import {
-useAchievementList,
-type AchievementItem,
+  useAchievementList,
+  type AchievementItem,
 } from "~/composables/user/achievement";
 
 const {

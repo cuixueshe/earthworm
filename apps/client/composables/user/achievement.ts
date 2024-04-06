@@ -5,7 +5,7 @@ import {
   fetchPubAchievement,
   fetchSetUsing,
   type SetDto,
-  type UserDto
+  type UserDto,
 } from "~/api/achievement";
 import Message from "~/components/main/Message/useMessage";
 
@@ -44,29 +44,32 @@ export const useAchievementList = () => {
   const UserID = () => {
     return userInfo.userId;
   };
+  const UserName = () => {
+    return userInfo.username;
+  };
   const getAchievementList = async () => {
     achievementList.value = await fetchAllAchievements();
   };
   function setInUsingFirst() {
-    const firstItem = userHaveAchievement.value[0]
+    const firstItem = userHaveAchievement.value[0];
     if (firstItem) {
       firstItem.isActive = true;
     }
   }
-  function setUsingAchievement(achievementID: number){
+  function setUsingAchievement(achievementID: number) {
     localStorage.setItem("usingAchievementID", String(achievementID));
   }
-  function  getUsingAchievement(){
+  function getUsingAchievement() {
     return Number(localStorage.getItem("usingAchievementID"));
   }
   const getUserHaveAchievement = async (data: UserDto) => {
     const res = await fetchHaveAchievement(data);
-    userHaveAchievement.value = res
-    const achievementID = getUsingAchievement()
-    if(!achievementID){
-      setInUsingFirst()
+    userHaveAchievement.value = res;
+    const achievementID = getUsingAchievement();
+    if (!achievementID) {
+      setInUsingFirst();
     }
-    getAchievementActive(achievementID)
+    getAchievementActive(achievementID);
   };
   const getAchievementActive = async (achievementID: number) => {
     currentAchievement.value = userHaveAchievement.value.find(
@@ -78,8 +81,8 @@ export const useAchievementList = () => {
   const setAchievementActive = async (data: SetDto) => {
     await fetchSetUsing(data);
     Message.success("设置成功");
-    setUsingAchievement(data.achievementID)
-    userHaveAchievement.value.forEach(item => item.isActive = false);
+    setUsingAchievement(data.achievementID);
+    userHaveAchievement.value.forEach((item) => (item.isActive = false));
     getAchievementActive(data.achievementID);
   };
   const getAchievementChecked = () => {
@@ -94,6 +97,7 @@ export const useAchievementList = () => {
     achievementList,
     checkedAchievement,
     userHaveAchievement,
+    UserName,
     UserID,
     getAchievementList,
     setAchievementActive,

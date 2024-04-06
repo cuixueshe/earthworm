@@ -5,7 +5,7 @@
     >
       成就中心
       <button
-        class="btn btn-primary"
+        class="btn btn-primary mt-5"
         @click="handleOpenDialog"
       >
         颁发成就
@@ -94,8 +94,14 @@ import AchievementCard from "~/components/user/AchievementCard.vue";
 import { useAchievementList } from "~/composables/user/achievement";
 import FormInput from "~/pages/Auth/FormInput.vue";
 import { useAwardForm } from "./hooks/useAwardForm";
-const { handleSubmit, phone, phoneError, secretKey, secretKeyError, resetForm } =
-  useAwardForm();
+const {
+  handleSubmit,
+  phone,
+  phoneError,
+  secretKey,
+  secretKeyError,
+  resetForm,
+} = useAwardForm();
 const {
   achievementList,
   getAchievementList,
