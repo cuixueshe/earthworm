@@ -35,6 +35,7 @@ import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useErrorTip } from "~/composables/user/errorTip";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -59,6 +60,7 @@ const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError, resetCloseTip } = answerError();
+const { isShowErrorTip } = useErrorTip();
 
 const {
   inputValue,
@@ -82,7 +84,7 @@ onMounted(() => {
 
 watch(
   () => inputValue.value,
-  (val) => {
+  val => {
     setInputValue(val);
     courseTimer.time(String(courseStore.statementIndex));
   }
@@ -197,8 +199,14 @@ function answerError() {
 
   function handleAnswerError() {
     playErrorSound();
+    console.log("isShowErrorTip", isShowErrorTip);
+
     wrongTimes++;
-    if (wrongTimes >= 3) {
+    console.log(
+      ' localStorage.getItem("showErrorTip")',
+      localStorage.getItem("showErrorTip")
+    );
+    if (isShowErrorTip().toString() === "true" && wrongTimes >= 3) {
       showAnswerTip();
     }
   }
@@ -235,7 +243,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback:  handleAnswerRight, 
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });

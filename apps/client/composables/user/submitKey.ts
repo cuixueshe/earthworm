@@ -1,4 +1,4 @@
-import { useLocalStorageBoolean } from "~/utils/localStorage";
+import { useLocalStorageBoolean } from "~/utils/localStorage"
 
 export const SPACE_SUBMIT_ANSWER = "spaceSubmitAnswer";
 export function useSpaceSubmitAnswer() {

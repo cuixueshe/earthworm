@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref } from "vue"
 
 // 封装个通用 hook 来处理 localStorage boolean
 export function useLocalStorageBoolean(
