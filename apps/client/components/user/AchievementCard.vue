@@ -1,5 +1,5 @@
 <template>
-  <div class="card achievement-container userAchievement">
+  <div class="card userAchievement">
     <div
       class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
@@ -67,49 +67,18 @@ const isChecked = computed(() => props.achievement.isChecked);
 </script>
 
 <style scoped>
-.achievement-container {
-  position: relative;
-  width: 170px;
-  height: 220px;
-  padding: 20px 30px 20px 30pxl;
-  justify-content: center;
-  border: 1px solid rgba(166, 166, 166, 1);
-  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
-}
-.achievement {
-  @apply rounded-md hover:shadow-lg text-gray-500;
-}
 .userAchievement {
-  border: 1px solid rgba(232, 121, 249, 1);
-  cursor: pointer;
-  @apply rounded-md text-fuchsia-500;
+  @apply w-[170px] h-[220px] rounded-md relative justify-center  text-fuchsia-500 cursor-pointer border border-fuchsia-500 hover:shadow-md hover:shadow-fuchsia-500
 }
-.userAchievement:hover {
-  box-shadow: 0px 8px 24px rgba(232, 121, 249, 0.2);
-}
+
 .active {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 42px;
-  height: 16px;
-  background: rgba(232, 121, 249, 1);
-  /* padding: 4px; */
+  @apply absolute right-0 top-0 w-[42px] h-4 bg-[#E879F9];
 }
 .check-box {
-  position: absolute;
-  left: 0;
-  top: 0;
+  @apply absolute left-0 top-0
 }
 .active-label {
-  font-size: 8px;
-  font-weight: 500;
-  letter-spacing: 0px;
-  line-height: 9.68px;
-  color: #fff;
-  text-align: left;
-  left: 6px;
-  top: 2px;
-  display: flex;
+  @apply  flex top-0.5 left-1.5 text-left text-white text-[8px] font-medium tracking-normal leading-tight
+
 }
 </style>

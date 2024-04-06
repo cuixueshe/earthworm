@@ -1,11 +1,11 @@
 <template>
   <div class="w-full">
     <div
-      class="flex items-center justify-between text-gray-900 a title dark:text-gray-300"
+      class="flex items-center justify-between mb-10 text-2xl font-medium text-gray-900 dark:text-gray-300"
     >
       成就中心
       <button
-        class="mt-5 btn btn-primary"
+        class="btn btn-primary"
         @click="handleOpenDialog"
       >
         颁发成就
@@ -148,10 +148,3 @@ onMounted(() => {
   getAchievementList();
 });
 </script>
-<style scoped>
-.title {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-</style>
