@@ -18,6 +18,17 @@ export interface AchievementItem {
   isActive?: boolean;
   isChecked?: boolean;
 }
+// TODO optimize
+export async function showContributorLogo() {
+  const { initUserAchievementList, userAchievementList } = useAchievement()
+  await initUserAchievementList()
+  const curItem = userAchievementList.value.find(i => i.isActive)
+  return {
+    isShow:curItem?.isActive,
+    img: curItem?.achievementImg || '/contributor.png'
+  }
+}
+
 function setUsingAchievementStore(achievementID: number) {
   localStorage.setItem("usingAchievementID", String(achievementID));
 }
@@ -100,6 +111,10 @@ export const useAchievement = () => {
     const userID = getUserID()
     userAchievementList.value = await fetchHaveAchievement({ userID });;
   };
+  async function initUserAchievementList(){
+    await getUserAchievementList()
+    initUsingAchievement()
+  }
   // 设置成就为使用中状态
   async function setAchievementActive() {
     const data = {
@@ -147,12 +162,11 @@ export const useAchievement = () => {
     handleShowModal,
     handleHideModal,
     getAchievementList,
-    getUserAchievementList,
-    initUsingAchievement,
     handleOpenAwardDialog,
     handleCancel,
     handleAwardAchievement,
     handleChangeAchievementActive,
     handleSetAchievementActive,
+    initUserAchievementList
   };
 };

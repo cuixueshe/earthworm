@@ -6,6 +6,12 @@
       :achievement="achievement"
       @click="handleSetAchievementActive(achievement)"
     />
+    <div
+      v-if="userAchievementList.length === 0"
+      class="w-full text-center"
+    >
+      暂无成就，快去获取吧！
+    </div>
   </div>
   <dialog
     id="achievement-modal"
@@ -44,15 +50,13 @@ const {
   isShowModal,
   userAchievementList,
   userAchievement,
-  getUserAchievementList,
   handleHideModal,
   handleChangeAchievementActive,
   handleSetAchievementActive,
-  initUsingAchievement,
+  initUserAchievementList,
 } = useAchievement();
 
-onMounted(async () => {
-  await getUserAchievementList();
-  initUsingAchievement()
+onMounted(() => {
+  initUserAchievementList()
 });
 </script>
