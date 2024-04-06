@@ -14,6 +14,12 @@
 Cypress.Commands.add(
   "login",
   function ({ phone, password }: { phone: string; password: string }) {
+    const user = {
+      phone: "13812345678",
+      userId: 1,
+      username: "acui",
+    };
+
     cy.intercept("POST", "/auth/login", (req) => {
       // 断言请求体中包含特定的 phone 和 password
       expect(req.body.phone).to.eq(phone);
@@ -25,11 +31,7 @@ Cypress.Commands.add(
         body: {
           // 模拟的登录成功响应数据
           token: "faketoken",
-          user: {
-            phone: "13812345678",
-            userId: 1,
-            username: "acui",
-          },
+          user,
         },
       });
     }).as("login");
@@ -51,8 +53,7 @@ Cypress.Commands.add(
     cy.wait(1000); // 等待 1 秒，确保页面加载完成
     cy.url().should("eq", Cypress.config("baseUrl"));
 
-    cy.get(".dropdown").click(); // 触发下拉菜单展开
-    cy.contains("User Info").should("be.visible"); // 然后检查 "User Info" 是否可见
+    cy.contains(user.username).should("be.visible"); // 然后检查 "User Info" 是否可见
   }
 );
 //
