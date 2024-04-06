@@ -1,6 +1,4 @@
-import { PhoneNumberUtil } from "google-libphonenumber";
 import { useField, useForm } from "vee-validate";
-import { ref, type Ref } from "vue";
 import * as yup from "yup";
 
 interface AchievementFormValues {
@@ -8,17 +6,10 @@ interface AchievementFormValues {
   secretKey: string;
 }
 
-const phoneUtil = PhoneNumberUtil.getInstance();
-const countryRef: Ref<string> = ref("");
+// TODO optimize phoneValidator
 const phoneValidator = (phoneWithCode: string) => {
-  if (!phoneWithCode) return false;
-  const phoneNumberForValidation = phoneWithCode.replace("_", "");
-  try {
-    const number = phoneUtil.parse(phoneNumberForValidation, countryRef.value);
-    return phoneUtil.isValidNumber(number);
-  } catch (error) {
-    return false;
-  }
+  if (!phoneWithCode || phoneWithCode.length > 11) return false;
+  else return true;
 };
 
 export function useAwardForm() {
@@ -34,11 +25,7 @@ export function useAwardForm() {
   const { handleSubmit, resetForm } = useForm<AchievementFormValues>({
     validationSchema: schema,
   });
-
-  const updateCountryCode = (code: string) => {
-    countryRef.value = code;
-  };
-
+  
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
   const { value: secretKey, errorMessage: secretKeyError } =
     useField<string>("secretKey");
@@ -50,6 +37,5 @@ export function useAwardForm() {
     phone,
     phoneError,
     resetForm,
-    updateCountryCode,
   };
 }
