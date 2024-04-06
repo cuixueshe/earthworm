@@ -57,9 +57,12 @@ export function formatTimestamp({ timestamp }: Timestamp) {
 }
 
 export function formatSecondsToTime(time: number) {
+  if (time === 0) return "0秒";
+
   const hours = Math.floor(time / 3600);
   const minutes = Math.floor((time % 3600) / 60);
   const seconds = time % 60;
+
   return (
     (hours ? `${hours}时` : "") +
     (minutes ? `${minutes}分` : "") +

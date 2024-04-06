@@ -1,5 +1,4 @@
 import { course, statement } from '@earthworm/schema';
-import { HttpException } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import {
   createFirstCourse,
@@ -89,17 +88,20 @@ describe('course service', () => {
       expect(nextCourse.id).toBe(secondCourse.id);
     });
 
-    it('should throw an exception if there is no next course', async () => {
+    it('should return undefined if there is no next course', async () => {
       const courseId = 9999; // 使用一个不存在的课程 ID
 
-      const nextCourse = courseService.findNext(courseId);
+      const nextCourse = await courseService.findNext(courseId);
 
-      await expect(nextCourse).rejects.toThrow(HttpException);
+      expect(nextCourse).toBeUndefined();
     });
   });
 
   it('should update user progress and rank after completing a course', async () => {
-    const nextCourse = await courseService.completeCourse(user, firstCourse.id);
+    const { nextCourse } = await courseService.completeCourse(
+      user,
+      firstCourse.id,
+    );
 
     expect(nextCourse.id).toBe(secondCourse.id);
     expect(userProgressService.update).toHaveBeenCalledWith(

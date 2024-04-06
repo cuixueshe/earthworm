@@ -1,6 +1,7 @@
 <template>
   <header
-    class="sticky top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
+    :class="[headerClasses]"
+    class="top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -100,6 +101,7 @@
             <div
               v-if="userStore.user"
               class="dropdown dropdown-end"
+              @click="toggleDropdown"
             >
               <button
                 tabindex="0"
@@ -123,6 +125,8 @@
                 </svg>
               </button>
               <ul
+                v-if="showDropdown"
+                ref="dropdownContainer"
                 tabindex="0"
                 class="dropdown-content z-[1] menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md"
               >
@@ -222,6 +226,7 @@
 </template>
 
 <script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
@@ -254,9 +259,20 @@ const handleLogout = () => {
 };
 
 const handleSetting = () => {
-  navigateTo("/user/info");
+  navigateTo({
+    path: "/user/info",
+    query: { displayComponent: "Setting" },
+  });
 };
+const showDropdown = ref(false);
+const dropdownContainer = ref(null);
 
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false;
+});
+function toggleDropdown() {
+  showDropdown.value = !showDropdown.value;
+}
 const handleLogoutConfirm = () => {
   userStore.logoutUser();
   cleanToken();
@@ -279,5 +295,13 @@ const HEADER_OPTIONS = [
   { name: "FAQ", anchor: "faq" },
   { name: "Contact", anchor: "contact" },
 ];
+
+const headerClasses = computed(() => {
+  const isHomePage = route.path === "/";
+
+  return {
+    sticky: isHomePage,
+  };
+});
 </script>
 <style></style>

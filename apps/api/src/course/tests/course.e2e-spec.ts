@@ -13,6 +13,7 @@ import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
 const firstCourse = createFirstCourse();
+const secondCourse = createSecondCourse();
 
 describe('course e2e', () => {
   let app: INestApplication;
@@ -72,11 +73,26 @@ describe('course e2e', () => {
         expect(body.statements.length).toBeGreaterThan(0);
       });
   });
+
+  it('should get next course', async () => {
+    await request(app.getHttpServer())
+      .get('/courses/1/next')
+      .set('Authorization', `Bearer ${token}`)
+      .expect(200)
+      .expect(({ body }) => {
+        expect(body).toEqual(
+          expect.objectContaining({
+            id: secondCourse.id,
+            title: secondCourse.title,
+          }),
+        );
+      });
+  });
 });
 
 async function setupDBData(db: DbType) {
   await db.insert(course).values(firstCourse);
-  await db.insert(course).values(createSecondCourse());
+  await db.insert(course).values(secondCourse);
 
   await db.insert(statement).values({
     ...createStatement(firstCourse.id),

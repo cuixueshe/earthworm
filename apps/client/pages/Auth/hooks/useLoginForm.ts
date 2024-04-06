@@ -1,4 +1,4 @@
-import { useForm, useField } from "vee-validate";
+import { useField, useForm } from "vee-validate";
 import * as yup from "yup";
 import { type SignupFormValues } from "~/store/user";
 export function useLoginForm() {
@@ -11,7 +11,8 @@ export function useLoginForm() {
       .string()
       .required("Please input your password")
       .min(6, "Password length must be greater than 6")
-      .max(20, "Password must be no more than 20 characters"),
+      .max(20, "Password must be no more than 20 characters")
+      .matches(/^[^\u4e00-\u9fa5]*$/, "Password cannot contain Chinese characters"),
   });
 
   const { handleSubmit } = useForm<SignupFormValues>({

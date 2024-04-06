@@ -8,6 +8,8 @@ export const tpl_1 = ({
   zhSentence,
   enSentence,
   courseNum,
+  totalRecordNumber,
+  totalTime,
 }: ShareImageTemplateData) => {
   return {
     type: "div",
@@ -36,6 +38,13 @@ export const tpl_1 = ({
               {
                 type: "div",
                 props: {
+                  tw: "text-slate-400 text-lg mb-6",
+                  children: `恭喜您一共完成 ${totalRecordNumber} 道题，用时${totalTime}`,
+                },
+              },
+              {
+                type: "div",
+                props: {
                   tw: "flex-1 flex flex-col font-bold text-slate-600 text-lg leading-snug italic font-serif text-2xl",
                   style: {
                     fontFamily: '"EBGaramond", "nzgrKangxi", serif',
@@ -57,13 +66,14 @@ export const tpl_1 = ({
                   ],
                 },
               },
+
               {
                 type: "div",
                 props: {
                   tw: "text-6xl font-bold flex justify-end",
                   children: '"',
                 },
-              }
+              },
             ],
           },
         },

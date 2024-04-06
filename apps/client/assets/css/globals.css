@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: 'CustomFont';
-  src: url('../font/Nunito-Bold.ttf') format('truetype');
+  font-family: "CustomFont";
+  src: url("../font/Nunito-Bold.ttf") format("truetype");
   /* 添加其他字体格式（可选） */
 }
-
 
 html,
 body {
   height: 100%;
+}
+
+:root {
+  scrollbar-width: none;
 }
 
 @layer base {
