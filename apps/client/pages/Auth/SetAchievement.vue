@@ -1,11 +1,11 @@
 <template>
   <div class="w-full">
     <div
-      class="flex items-center justify-between text-gray-900 title dark:text-gray-300"
+      class="flex items-center justify-between text-gray-900 a title dark:text-gray-300"
     >
       成就中心
       <button
-        class="btn btn-primary mt-5"
+        class="mt-5 btn btn-primary"
         @click="handleOpenDialog"
       >
         颁发成就
@@ -63,7 +63,6 @@
           v-model="phone"
           :errorMessage="phoneError"
         />
-        <!-- <p class="text-xs text-opacity-80">抱歉，没有找到该用户~</p> -->
         <div class="modal-action">
           <form method="dialog">
             <button
@@ -151,7 +150,6 @@ onMounted(() => {
 </script>
 <style scoped>
 .title {
-  height: 32px;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 40px;
