@@ -100,6 +100,7 @@
             <div
               v-if="userStore.user"
               class="dropdown dropdown-end"
+              @click="showDropdown = !showDropdown"
             >
               <button
                 tabindex="0"
@@ -123,6 +124,7 @@
                 </svg>
               </button>
               <ul
+                v-if="showDropdown"
                 tabindex="0"
                 class="dropdown-content z-[1] menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md"
               >
@@ -223,7 +225,7 @@
 
 <script setup lang="ts">
 import { navigateTo } from "nuxt/app";
-import { computed, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import Message from "~/components/main/Message/useMessage";
 import { Theme, useDarkMode } from "~/composables/darkMode";
@@ -233,6 +235,7 @@ import MessageBox from "./main/MessageBox/MessageBox.vue";
 const route = useRoute();
 const userStore = useUserStore();
 const isShowModal = ref(false);
+const showDropdown = ref(false);
 const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
@@ -259,6 +262,20 @@ const handleSetting = () => {
     query: { displayComponent: "Setting" },
   });
 };
+
+const handleGlobalClick = (event: any) => {
+  if (!event.target.closest(".dropdown")) {
+    showDropdown.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("click", handleGlobalClick);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("click", handleGlobalClick);
+});
 
 const handleLogoutConfirm = () => {
   userStore.logoutUser();
