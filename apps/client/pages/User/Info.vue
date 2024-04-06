@@ -28,7 +28,7 @@ type Menu = {
 const userMenus = ref<Menu[]>([
   { name: "主页", component: markRaw(UserHome) },
   { name: "设置", component: markRaw(UserSetting) },
-  { name: "成就", component: markRaw(UserAchievement) },
+  { name: "我的成就", component: markRaw(UserAchievement) },
 ]);
 let currentComponent = ref<any>();
 const handleChangeMenu = (menu: Menu) => {

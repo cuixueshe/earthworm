@@ -1,7 +1,6 @@
 <template>
   <div
-    class="card achievement-container"
-    :class="hasAchievement ? 'userAchievement' : 'achievement'"
+    class="card achievement-container userAchievement"
   >
     <div
       class="flex items-center justify-center check-box"
@@ -35,11 +34,10 @@
         <p class="mb-3">{{ name }}</p>
         <p
           class="text-xs"
-          v-if="createdAt"
+          v-if="props.achievement.createdAt"
         >
-          获得时间: {{ createTime() }}
+          {{ createdAt }}
         </p>
-        <!-- <p v-else class="text-xs text-gray-500">暂未获得</p> -->
       </div>
     </div>
   </div>
@@ -62,16 +60,12 @@ function toggleChooseAchievement() {
 const isShowCheckBox = computed(() => props.isShowCheckBox);
 const isActive = computed(() => props.achievement?.isActive);
 const name = computed(() => props.achievement.name);
-const createdAt = computed(() => props.achievement.createdAt);
+const createdAt = computed(() => '获得时间:' + props.achievement.createdAt?.split("T")[0]);
 const avatar = computed(() => props.achievement.avatar);
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
-const hasAchievement = computed(() => props.achievement.hasAchievement);
-function createTime() {
-  const time = createdAt.value?.split("T")[0];
-  return time;
-}
 </script>
+
 <style scoped>
 .achievement-container {
   position: relative;
