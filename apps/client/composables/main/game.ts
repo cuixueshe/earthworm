@@ -43,12 +43,12 @@ export function useMessageTip() {
 
   watchEffect(() => {
     if (isIpad.value && !isLandscape.value) {
-      messageContent.value = "请横向屏幕以获得最佳体验";
+      messageContent.value = "横屏使用效果更佳哦~";
       isMessageShow.value = true;
       return;
     }
     if (isMobile.value) {
-      messageContent.value = "请使用电脑或平板以获得最佳体验";
+      messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";
       isMessageShow.value = true;
     }
   });
