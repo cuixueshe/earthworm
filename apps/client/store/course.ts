@@ -4,6 +4,7 @@ import { computed, ref, watchEffect } from "vue";
 import type { CoursePack } from "./coursePack";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
+import { phoneticsMap } from "~/composables/main/englishSound/phoneticsMap";
 import { useStatement } from "./statement";
 
 export interface Statement {
@@ -45,8 +46,22 @@ export const useCourseStore = defineStore("course", () => {
   });
 
   const soundMarks = computed(() => {
-    return currentStatement.value?.soundmark.split("") || [];
+    const regExp = new RegExp(getRegExpString(), "g");
+    return currentStatement.value?.soundmark.match(regExp) || [];
   });
+
+  function getRegExpString() {
+    let result: string[] = [];
+    result = [
+      ...Object.keys(phoneticsMap.double),
+      ...Object.keys(phoneticsMap.single),
+      "\\/",
+      "\\s",
+      "'",
+      "ˌ",
+    ];
+    return result.join("|");
+  }
 
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;

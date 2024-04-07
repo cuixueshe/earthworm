@@ -1,4 +1,49 @@
-export const PhoneticsMap: Record<string, string> = {
-  θ: "think",
-  j: 'yes'
+export const phoneticsMap: {
+  double: Record<string, string>;
+  single: Record<string, string>;
+} = {
+  double: {
+    aɪ: "",
+    ɔɪ: "",
+    aʊ: "",
+    ɪr: "",
+    ɛr: "",
+    ʊr: "",
+    tʃ: "",
+    dʒ: "",
+    dr: "",
+    ts: "",
+    dz: "",
+    tr: "",
+  },
+  single: {
+    ʌ: "cup",
+    ɑ: "father",
+    ɛ: "head",
+    æ: "bird",
+    ɪ: "sheep",
+    i: "",
+    ɔ: "",
+    ʊ: "",
+    u: "",
+    e: "",
+    p: "",
+    b: "",
+    t: "",
+    d: "",
+    k: "",
+    ɡ: "",
+    f: "",
+    v: "",
+    s: "",
+    z: "",
+    θ: "think",
+    ð: "",
+    ʃ: "",
+    ʒ: "",
+    h: "",
+    m: "",
+    j: "yes",
+    ɚ: "",
+  },
 };

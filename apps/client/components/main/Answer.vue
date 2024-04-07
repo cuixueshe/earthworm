@@ -45,7 +45,7 @@ import { computed, onMounted, onUnmounted } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { usePlayWordSound } from "~/composables/main/englishSound/audio";
-import { PhoneticsMap } from "~/composables/main/englishSound/phoneticsMap";
+import { phoneticsMap } from "~/composables/main/englishSound/phoneticsMap";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoPronunciation } from "~/composables/user/sound";
@@ -108,12 +108,14 @@ function goToNextQuestion() {
 }
 
 function isPhonetic(text: string) {
-  return !["/", "'", "ˌ"].includes(text);
+  const phonetics = [...Object.keys(phoneticsMap.double), ...Object.keys(phoneticsMap.single)];
+  return phonetics.includes(text);
 }
 
 async function playPhonetics(text: string) {
-  if (PhoneticsMap[text]) {
-    const res = await import(`../../assets/sounds/phonetics/${PhoneticsMap[text]}.mp3`);
+  const phonetics = { ...phoneticsMap.double, ...phoneticsMap.single };
+  if (phonetics[text]) {
+    const res = await import(`../../assets/sounds/phonetics/${phonetics[text]}.mp3`);
     new Audio(res.default).play();
   }
 }
