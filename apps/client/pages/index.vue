@@ -1,11 +1,11 @@
 <template>
-  <div class="container w-full font-customFont">
+  <div class="container w-full m-auto font-customFont">
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
     <template v-else>
       <NoticeBar v-if="showNoticeBar" />
-      <Banner @startEarthworm="startEarthworm"/>
+      <Banner @startEarthworm="startEarthworm" />
       <Features />
       <!-- <Introduce /> -->
       <Comments />
@@ -25,12 +25,12 @@
 </template>
 
 <script setup>
+import Banner from "~/components/home/Banner";
 import Comments from "~/components/home/Comments.vue";
 import Contact from "~/components/home/Contact.vue";
 import Features from "~/components/home/Features.vue";
 import NoticeBar from "~/components/home/NoticeBar.vue";
 import Questions from "~/components/home/Questions.vue";
-import Banner from '~/components/home/Banner';
 const showNoticeBar = ref(false);
 
 import { onMounted, onUnmounted, ref } from "vue";

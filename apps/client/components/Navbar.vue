@@ -1,7 +1,7 @@
 <template>
   <header
     :class="[headerClasses]"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont px-3 w-full"
+    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont w-full"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -11,7 +11,7 @@
               <img
                 width="48"
                 height="48"
-                class="rounded-md overflow-hidden mr-6"
+                class="rounded-md overflow-hidden mr-6 hidden min-[800px]:block"
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
@@ -35,7 +35,7 @@
               >
                 <li class="px-4">
                   <a
-                    class="text-nowrap transition dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
+                    class="text-nowrap dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
                     :href="`#${optItem.anchor}`"
                   >
                     {{ optItem.name }}
@@ -86,8 +86,10 @@
             v-if="userStore.user"
             class="logged-in flex items-center"
           >
-            <div class="mx-2 font-500 truncate max-w-[10em]">
-              {{ userStore.user?.username }}
+            <div
+              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
+            >
+              {{ userStore.user.username }}
             </div>
             <div
               class="dropdown dropdown-end"
@@ -95,7 +97,7 @@
             >
               <button
                 tabindex="0"
-                class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
+                class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1 pr-0"
               >
                 <svg
                   t="1711437189034"
@@ -204,6 +206,7 @@
             </div>
           </div>
 
+          <!-- 登录/注册 -->
           <div
             v-else
             class="flex items-center ml-5"
