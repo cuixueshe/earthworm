@@ -18,36 +18,53 @@ export interface AchievementItem {
   isActive?: boolean;
   isChecked?: boolean;
 }
+const USING_ACHIEVEMENT = "usingAchievement";
 // TODO optimize
-export async function showContributorLogo() {
+export async function showAchievementLogo() {
+  const imgSrc = "/contributor.png";
+
   const { initUserAchievementList, userAchievementList } = useAchievement();
-  await initUserAchievementList();
-  if (userAchievementList.value.length === 0) {
+  // check if there is a using achievement
+  const usingAchievement = getUsingAchievementStore();
+  // if there is a using achievement, return it and show it
+  if (Object.keys(usingAchievement).length) {
     return {
-      isShow: false,
-      img: "/contributor.png",
+      isActive: true,
+      achievementImg: usingAchievement.achievementImg || imgSrc,
+    };
+  } else {
+    // if there is no using achievement, check if there is any achievement
+    await initUserAchievementList();
+    // if there is no achievement, don't show the logo
+    if (userAchievementList.value.length === 0) {
+      return {
+        isActive: false,
+        achievementImg: imgSrc,
+      };
+    }
+    // if there is achievement, show the active one
+    const curItem = userAchievementList.value.find((i) => i.isActive);
+    return {
+      isActive: curItem?.isActive,
+      achievementImg: curItem?.achievementImg || imgSrc,
     };
   }
-  const curItem = userAchievementList.value.find((i) => i.isActive);
-  return {
-    isShow: curItem?.isActive,
-    img: curItem?.achievementImg || "/contributor.png",
-  };
 }
 
-function setUsingAchievementStore(achievementID: number) {
-  localStorage.setItem("usingAchievementID", String(achievementID));
+function setUsingAchievementStore(achievement: AchievementItem) {
+  localStorage.setItem(USING_ACHIEVEMENT, JSON.stringify(achievement));
 }
 function getUsingAchievementStore() {
-  const id = localStorage.getItem("usingAchievementID");
-  if (id) {
-    return Number(id);
+  // if there is no using achievement, return an empty object
+  if (localStorage.getItem(USING_ACHIEVEMENT) === "undefined") {
+    return {};
   } else {
-    return null;
+    return JSON.parse(localStorage.getItem(USING_ACHIEVEMENT)!);
   }
 }
 function getUserID() {
-  return JSON.parse(localStorage.getItem("userInfo")!).userId;
+  // test
+  return JSON.parse(localStorage.getItem("userInfo")!)?.userId || 1;
 }
 /** 成就模块处理逻辑
  *  achievementList: 当前用户成就列表
@@ -64,10 +81,10 @@ export const useAchievement = () => {
   const achievementList = ref<AchievementItem[]>([]);
   const checkedAchievement = ref<AchievementItem[]>([]);
   const userAchievementList = ref<AchievementItem[]>([]);
-  const currentUseAchievement = ref<AchievementItem>();
-  const userAchievement = ref({
+  const userAchievement = ref<AchievementItem>({
     name: "",
     id: 0,
+    description: "",
   });
   function handleShowModal() {
     isShowModal.value = true;
@@ -99,21 +116,20 @@ export const useAchievement = () => {
     if (firstItem) {
       firstItem.isActive = true;
     }
+    return firstItem;
   }
   // 初始化成就
   function initUsingAchievement() {
-    const achievementID = getUsingAchievementStore();
+    const achievementID = getUsingAchievementStore()?.id;
     if (!achievementID) {
-      setUsingFirst();
+      const curItem = setUsingFirst();
+      setUsingAchievementStore(curItem);
     } else {
-      setAchievementBeActive(achievementID);
+      setAchievementBeActive(getUsingAchievementStore());
     }
   }
-  async function setAchievementBeActive(achievementID: number) {
-    currentUseAchievement.value = userAchievementList.value.find(
-      (x) => x.id === achievementID
-    );
-    currentUseAchievement.value!.isActive = true;
+  async function setAchievementBeActive(achievement: AchievementItem) {
+    achievement.isActive = true;
   }
   const getUserAchievementList = async () => {
     const userID = getUserID();
@@ -121,7 +137,7 @@ export const useAchievement = () => {
   };
   async function initUserAchievementList() {
     await getUserAchievementList();
-    initUsingAchievement();
+    userAchievementList.value.length && initUsingAchievement();
   }
   // 设置成就为使用中状态
   async function setAchievementActive() {
@@ -131,9 +147,9 @@ export const useAchievement = () => {
     };
     await fetchSetUsing(data);
     Message.success("设置成功");
-    setUsingAchievementStore(userAchievement.value.id);
+    setUsingAchievementStore(userAchievement.value);
     userAchievementList.value.forEach((item) => (item.isActive = false));
-    setAchievementBeActive(userAchievement.value.id);
+    setAchievementBeActive(userAchievement.value);
   }
 
   function handleSetAchievementActive(achievement: AchievementItem) {

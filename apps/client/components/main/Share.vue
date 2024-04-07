@@ -9,7 +9,7 @@
         class="modal-box w-[27rem] flex flex-col items-center overflow-hidden"
       >
         <div class="flex">
-          <div class="gallery py-2 mr-2">
+          <div class="py-2 mr-2 gallery">
             <div
               v-for="(imgItem, index) in galleryImgs"
               :key="imgItem.src"
@@ -70,6 +70,10 @@ import {
   useGenerateShareImage,
   useShareModal,
 } from "~/composables/main/shareImage/share";
+import {
+  showAchievementLogo,
+  type AchievementItem,
+} from "~/composables/user/achievement";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
 import { formatSecondsToTime, getToday } from "~/utils/date";
@@ -88,7 +92,7 @@ const {
   currImageIndex,
 } = useGenerateShareImage();
 
-watch(shareModalVisible, (newVal) => {
+watch(shareModalVisible, async (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
     console.log(userStore.user);
     const username = userStore.user?.username || "";
@@ -98,12 +102,14 @@ watch(shareModalVisible, (newVal) => {
     const { year, month, day } = getToday();
     const totalRecordNumber = courseTimer.totalRecordNumber();
     const totalTime = formatSecondsToTime(courseTimer.calculateTotalTime());
+    const usingAchievement = (await showAchievementLogo()) as AchievementItem;
     generateGalleryImage(
       convertedTitle,
       username,
       `${year}/${month}/${day}`,
       totalRecordNumber,
-      totalTime
+      totalTime,
+      usingAchievement
     );
   } else {
     clearShareImageSrc();

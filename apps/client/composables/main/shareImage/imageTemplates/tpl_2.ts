@@ -6,6 +6,7 @@ export const tpl_2 = ({
   courseNum,
   userName,
   dateStr,
+  usingAchievement,
 }: ShareImageTemplateData) => ({
   type: "div",
   props: {
@@ -107,6 +108,18 @@ export const tpl_2 = ({
                     },
                   },
                 ],
+              },
+            },
+            {
+              type: "img",
+              props: {
+                src: `${usingAchievement.achievementImg}`,
+                width: "55",
+                height: "55",
+                alt: "Contributor logo",
+                tw: `${usingAchievement.isActive}`
+                  ? "absolute right-0 top-0 mt-12 mr-12"
+                  : "hidden",
               },
             },
           ],

@@ -1,5 +1,6 @@
 import satori, { type SatoriNode } from "satori";
 import { ref } from "vue";
+import type { AchievementItem } from "~/composables/user/achievement";
 import { useDailySentence } from "../summary";
 import {
   convertSVGtoImg,
@@ -24,6 +25,7 @@ export interface ShareImageTemplateData {
   dateStr: string;
   totalRecordNumber: number;
   totalTime: string;
+  usingAchievement: AchievementItem;
 }
 
 export const imageTemplates: Record<
@@ -91,7 +93,8 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
-    totalTime: string
+    totalTime: string,
+    usingAchievement: AchievementItem
   ) => {
     return imageTemplates[templateKey]({
       courseNum,
@@ -101,6 +104,7 @@ export function useGenerateShareImage() {
       dateStr,
       totalRecordNumber,
       totalTime,
+      usingAchievement,
     });
   };
 
@@ -109,7 +113,8 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
-    totalTime: string
+    totalTime: string,
+    usingAchievement: AchievementItem
   ) => {
     Object.values(ShareImageTemplate).forEach(async (template, index) => {
       generateImage(
@@ -119,7 +124,8 @@ export function useGenerateShareImage() {
         userName,
         dateStr,
         totalRecordNumber,
-        totalTime
+        totalTime,
+        usingAchievement
       );
     });
   };
@@ -131,7 +137,8 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
-    totalTime: string
+    totalTime: string,
+    usingAchievement: AchievementItem
   ) => {
     const canvasEl = initCanvas();
     galleryImgs.value[index] = {
@@ -145,7 +152,8 @@ export function useGenerateShareImage() {
         userName,
         dateStr,
         totalRecordNumber,
-        totalTime
+        totalTime,
+        usingAchievement
       ),
       await generateConfig()
     ).catch((e) => {
