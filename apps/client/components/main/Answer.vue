@@ -45,7 +45,7 @@ import { computed, onMounted, onUnmounted } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { usePlayWordSound } from "~/composables/main/englishSound/audio";
-import { phoneticsMap } from "~/composables/main/englishSound/phoneticsMap";
+import { isPhonetic, playPhonetics } from "~/composables/main/englishSound/phonetics";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoPronunciation } from "~/composables/user/sound";
@@ -105,18 +105,5 @@ function goToNextQuestion() {
 
   courseStore.toNextStatement();
   showQuestion();
-}
-
-function isPhonetic(text: string) {
-  const phonetics = [...Object.keys(phoneticsMap.double), ...Object.keys(phoneticsMap.single)];
-  return phonetics.includes(text);
-}
-
-async function playPhonetics(text: string) {
-  const phonetics = { ...phoneticsMap.double, ...phoneticsMap.single };
-  if (phonetics[text]) {
-    const res = await import(`../../assets/sounds/phonetics/${phonetics[text]}.mp3`);
-    new Audio(res.default).play();
-  }
 }
 </script>
