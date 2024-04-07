@@ -39,7 +39,8 @@ describe("course", () => {
     const userStore = useUserStore();
     userStore.initUser({
       userId: "1",
-      username: "cxr",
+      nickname: "cxr",
+      username: "18518518521",
       phone: "18518518521",
     });
   });

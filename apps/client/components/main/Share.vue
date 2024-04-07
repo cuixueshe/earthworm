@@ -91,7 +91,7 @@ const {
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
     console.log(userStore.user);
-    const username = userStore.user?.username || "";
+    const nickname = userStore.user?.nickname || "";
     const convertedTitle = convertTitleToNumber(
       courseStore.currentCourse.title
     );
@@ -100,7 +100,7 @@ watch(shareModalVisible, (newVal) => {
     const totalTime = formatSecondsToTime(courseTimer.calculateTotalTime());
     generateGalleryImage(
       convertedTitle,
-      username,
+      nickname,
       `${year}/${month}/${day}`,
       totalRecordNumber,
       totalTime

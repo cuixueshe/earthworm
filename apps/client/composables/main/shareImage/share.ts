@@ -20,7 +20,7 @@ export interface ShareImageTemplateData {
   courseNum: string;
   zhSentence: string;
   enSentence: string;
-  userName: string;
+  nickname: string;
   dateStr: string;
   totalRecordNumber: number;
   totalTime: string;
@@ -88,7 +88,7 @@ export function useGenerateShareImage() {
   const chosenTemplate = (
     templateKey: ShareImageTemplate,
     courseNum: string,
-    userName: string,
+    nickname: string,
     dateStr: string,
     totalRecordNumber: number,
     totalTime: string
@@ -97,7 +97,7 @@ export function useGenerateShareImage() {
       courseNum,
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
-      userName,
+      nickname,
       dateStr,
       totalRecordNumber,
       totalTime,
@@ -106,7 +106,7 @@ export function useGenerateShareImage() {
 
   const generateGalleryImage = async (
     courseNum: string,
-    userName: string,
+    nickname: string,
     dateStr: string,
     totalRecordNumber: number,
     totalTime: string
@@ -116,7 +116,7 @@ export function useGenerateShareImage() {
         courseNum,
         template,
         index,
-        userName,
+        nickname,
         dateStr,
         totalRecordNumber,
         totalTime
@@ -128,7 +128,7 @@ export function useGenerateShareImage() {
     courseNum: string,
     template: ShareImageTemplate,
     index: number,
-    userName: string,
+    nickname: string,
     dateStr: string,
     totalRecordNumber: number,
     totalTime: string
@@ -142,7 +142,7 @@ export function useGenerateShareImage() {
       chosenTemplate(
         template,
         courseNum,
-        userName,
+        nickname,
         dateStr,
         totalRecordNumber,
         totalTime

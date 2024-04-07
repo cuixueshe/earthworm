@@ -89,7 +89,7 @@
             <div
               class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
             >
-              {{ userStore.user.username }}
+              {{ userStore.user.nickname }}
             </div>
             <DropMenu @update-show-modal="handleLogout" />
           </div>

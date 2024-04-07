@@ -9,6 +9,7 @@ export interface UserInfo {
   userId: string;
   username: string;
   phone: string;
+  nickname: string;
 }
 
 interface SignUpDto extends LoginDto {

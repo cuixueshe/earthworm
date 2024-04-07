@@ -4,7 +4,7 @@ export const tpl_2 = ({
   zhSentence,
   enSentence,
   courseNum,
-  userName,
+  nickname,
   dateStr,
 }: ShareImageTemplateData) => ({
   type: "div",
@@ -66,9 +66,9 @@ export const tpl_2 = ({
                     type: "p",
                     props: {
                       tw: "text-lg m-0",
-                      children: `${userName}${
-                        userName ? "  •  " : ""
-                      }${dateStr} `,
+                      children: `${nickname}${
+                        nickname ? "  •  " : ""
+                      }${dateStr}`,
                     },
                   },
                 ],

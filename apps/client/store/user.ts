@@ -3,7 +3,8 @@ import { ref } from "vue";
 export interface User {
   userId: string;
   username: string;
-  phone: string;
+  phone?: string;
+  nickname: string;
 }
 
 export interface SignupFormValues {

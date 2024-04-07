@@ -5,15 +5,16 @@ import { useUserStore, type User, type SignupFormValues } from "../user";
 function generateUserInfo() {
   return {
     userId: "123",
-    username: "JohnDoe",
+    nickname: "JohnDoe",
     phone: "1234567890",
+    username: "1234567890",
   };
 }
 
 function generateSignupInfo() {
   return {
-    name: "JohnDoe",
-    phone: "12345678901",
+    nickname: "JohnDoe",
+    username: "12345678901",
     password: "Password123",
   };
 }
@@ -31,7 +32,7 @@ describe("user", () => {
 
     expect(userStore.user).toEqual(mockUser);
     expect(userStore.getUserInfo()).toMatchInlineSnapshot(
-      `"{"userId":"123","username":"JohnDoe","phone":"1234567890"}"`
+      `"{"userId":"123","nickname":"JohnDoe","phone":"1234567890","username":"1234567890"}"`
     );
   });
 
@@ -64,8 +65,8 @@ describe("user", () => {
     await mockSignup(signupInfo);
 
     expect(userStore.user).toBeDefined();
-    expect(userStore.user?.username).toBe(signupInfo.name);
-    expect(userStore.user?.phone).toBe(signupInfo.phone);
+    expect(userStore.user?.username).toBe(signupInfo.username);
+    expect(userStore.user?.nickname).toBe(signupInfo.nickname);
   });
 });
 
@@ -73,7 +74,7 @@ async function mockSignup(signupInfo: SignupFormValues) {
   const userStore = useUserStore();
   userStore.initUser({
     userId: "newUserId",
-    username: signupInfo.name,
-    phone: signupInfo.phone,
+    nickname: signupInfo.nickname,
+    username: signupInfo.username,
   });
 }

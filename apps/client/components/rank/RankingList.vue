@@ -47,8 +47,8 @@
           class="flex-1 px-4 py-2 my-1 overflow-y-auto"
         >
           <RankRankingItem
-            v-for="({ username, count }, index) in rankingStore.rankingList"
-            :username="username"
+            v-for="({ nickname, count }, index) in rankingStore.rankingList"
+            :nickname="nickname"
             :rank="index + 1"
             :count="count"
           />

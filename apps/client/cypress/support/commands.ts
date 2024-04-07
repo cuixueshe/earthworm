@@ -13,16 +13,15 @@
 // -- This is a parent command --
 Cypress.Commands.add(
   "login",
-  function ({ phone, password }: { phone: string; password: string }) {
+  function ({ username, password }: { username: string; password: string }) {
     const user = {
-      phone: "13812345678",
+      phone: "",
+      username: "13812345678",
+      nickname: "acui",
       userId: 1,
-      username: "acui",
     };
-
     cy.intercept("POST", "/auth/login", (req) => {
-      // 断言请求体中包含特定的 phone 和 password
-      expect(req.body.phone).to.eq(phone);
+      expect(req.body.username).to.eq(username);
       expect(req.body.password).to.eq(password);
 
       // 继续允许请求到达服务器或返回模拟的响应
@@ -38,7 +37,7 @@ Cypress.Commands.add(
 
     cy.visit("/auth/login");
 
-    cy.get('input[type="tel"]').as("phoneInput").type("13812345678");
+    cy.get('input[type="text"]').as("phoneInput").type("13812345678");
     cy.get('input[type="password"]')
       .as("passwordInput")
       .type("yourPassword{enter}");
@@ -53,7 +52,7 @@ Cypress.Commands.add(
     cy.wait(1000); // 等待 1 秒，确保页面加载完成
     cy.url().should("eq", Cypress.config("baseUrl"));
 
-    cy.contains(user.username).should("be.visible"); // 然后检查 "User Info" 是否可见
+    cy.contains(user.nickname).should("be.visible"); // 然后检查 "User Info" 是否可见
   }
 );
 //
@@ -72,7 +71,7 @@ Cypress.Commands.add(
 declare global {
   namespace Cypress {
     interface Chainable {
-      login(params: { phone: string; password: string }): Chainable<void>;
+      login(params: { username: string; password: string }): Chainable<void>;
       //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       //       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
@@ -80,4 +79,5 @@ declare global {
   }
 }
 
-export {};
+export { };
+

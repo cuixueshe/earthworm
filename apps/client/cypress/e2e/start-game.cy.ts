@@ -29,7 +29,7 @@ describe("start game", () => {
 
   it("navigates to the game scene and shows course for logged-in users", () => {
     cy.login({
-      phone: "13812345678",
+      username: "13812345678",
       password: "yourPassword",
     });
 

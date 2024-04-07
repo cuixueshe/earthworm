@@ -1,13 +1,13 @@
 import { http } from "./http";
 
 export type RankingSelfType = {
-  username: string;
+  nickname: string;
   count: number;
   rank: number;
 };
 
 export type RankingItemType = {
-  username: string;
+  nickname: string;
   count: number;
 };
 

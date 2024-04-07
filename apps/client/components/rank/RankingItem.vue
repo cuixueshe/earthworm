@@ -6,7 +6,7 @@
       class="w-16"
       :rank="rank"
     />
-    <div class="flex-1 text-center truncate">{{ username }}</div>
+    <div class="flex-1 text-center truncate">{{ nickname }}</div>
     <div class="w-16 text-right">{{ count }} 课</div>
   </div>
 </template>
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 defineProps({
   rank: Number,
-  username: String,
+  nickname: String,
   count: Number,
 });
 </script>
