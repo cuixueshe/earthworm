@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-full">
+  <div class="flex items-center justify-center h-full relative">
     <template v-if="isQuestion()">
       <Question></Question>
       <template v-if="isAnswerTip()">
