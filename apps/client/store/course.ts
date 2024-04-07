@@ -44,6 +44,10 @@ export const useCourseStore = defineStore("course", () => {
     return currentStatement.value?.english.split(" ") || [];
   });
 
+  const soundMarks = computed(() => {
+    return currentStatement.value?.soundmark.split("") || [];
+  });
+
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
   });
@@ -104,5 +108,6 @@ export const useCourseStore = defineStore("course", () => {
     toPreviousStatement,
     toNextStatement,
     resetStatementIndex,
+    soundMarks,
   };
 });

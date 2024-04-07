@@ -14,7 +14,13 @@
       ></span>
     </div>
     <div class="my-6 text-xl text-gray-500">
-      {{ courseStore.currentStatement?.soundmark }}
+      <span
+        v-for="(item, index) in courseStore.soundMarks"
+        :key="item + index"
+        :class="[isPhonetic(item) && 'cursor-pointer hover:text-fuchsia-500']"
+        @click="() => playPhonetics(item)"
+        >{{ item }}</span
+      >
     </div>
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.chinese }}
@@ -39,6 +45,7 @@ import { computed, onMounted, onUnmounted } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { usePlayWordSound } from "~/composables/main/englishSound/audio";
+import { PhoneticsMap } from "~/composables/main/englishSound/phoneticsMap";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoPronunciation } from "~/composables/user/sound";
@@ -98,5 +105,16 @@ function goToNextQuestion() {
 
   courseStore.toNextStatement();
   showQuestion();
+}
+
+function isPhonetic(text: string) {
+  return !["/", "'", "ˌ"].includes(text);
+}
+
+async function playPhonetics(text: string) {
+  if (PhoneticsMap[text]) {
+    const res = await import(`../../assets/sounds/phonetics/${PhoneticsMap[text]}.mp3`);
+    new Audio(res.default).play();
+  }
 }
 </script>
