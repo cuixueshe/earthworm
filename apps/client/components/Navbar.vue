@@ -46,7 +46,7 @@
           </nav>
         </div>
 
-        <div class="login-out flex justify-end items-center flex-1">
+        <div class="login-out flex justify-end items-center">
           <button
             class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
             @click="toggleDarkMode"
@@ -97,7 +97,7 @@
           </div>
 
           <div class="logged-in flex items-center">
-            <div class="mx-2 font-500">{{ userStore.user?.username }}</div>
+            <div class="mx-2 font-500 truncate max-w-[10em]">{{ userStore.user?.username }}</div>
             <div
               v-if="userStore.user"
               class="dropdown dropdown-end"
