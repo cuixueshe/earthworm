@@ -38,9 +38,8 @@ import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
 const coursesStore = useCourseStore();
-const { hideContents, isShowContents, watchClickOutside } = useContent();
-
 const { showQuestion } = useGameMode();
+const { hideContents, isShowContents, watchClickOutside } = useContent();
 
 const contentsList = computed(() => {
   return coursesStore.currentCourse?.statements || [];
@@ -71,8 +70,8 @@ function getItemClassNames(index: number) {
 
 function jumpTo(index: number) {
   hideContents();
+  showQuestion();
   coursesStore.toSpecificStatement(index);
-  showQuestion()  
 }
 </script>
 
