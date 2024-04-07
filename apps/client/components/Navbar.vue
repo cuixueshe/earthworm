@@ -1,7 +1,7 @@
 <template>
   <header
     :class="[headerClasses]"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont px-3 w-full"
+    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont w-full"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -11,7 +11,7 @@
               <img
                 width="48"
                 height="48"
-                class="rounded-md overflow-hidden mr-6 hidden min-[500px]:block"
+                class="rounded-md overflow-hidden mr-6 hidden min-[800px]:block"
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
@@ -35,7 +35,7 @@
               >
                 <li class="px-4">
                   <a
-                    class="text-nowrap transition dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
+                    class="text-nowrap dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
                     :href="`#${optItem.anchor}`"
                   >
                     {{ optItem.name }}
@@ -87,7 +87,7 @@
             class="logged-in flex items-center"
           >
             <div
-              class="mx-2 font-500 truncate min-[500px]:max-w-[10em] max-w-[4.5rem]"
+              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
             >
               {{ userStore.user.username }}
             </div>
