@@ -34,7 +34,6 @@ function useIsLandscape() {
 
   const orientationListener = () => {
     const orientation = window.screen.orientation.angle;
-    console.log(orientation, 1111);
 
     if (orientation === 90 || orientation === -90) {
       isLandscape.value = true;
