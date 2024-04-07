@@ -11,7 +11,7 @@
               <img
                 width="48"
                 height="48"
-                class="rounded-md overflow-hidden mr-6"
+                class="rounded-md overflow-hidden mr-6 hidden min-[500px]:block"
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
@@ -86,8 +86,10 @@
             v-if="userStore.user"
             class="logged-in flex items-center"
           >
-            <div class="mx-2 font-500 truncate max-w-[10em]">
-              {{ userStore.user?.username }}
+            <div
+              class="mx-2 font-500 truncate min-[500px]:max-w-[10em] max-w-[4.5rem]"
+            >
+              {{ userStore.user.username }}
             </div>
             <div
               class="dropdown dropdown-end"
@@ -95,7 +97,7 @@
             >
               <button
                 tabindex="0"
-                class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
+                class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1 pr-0"
               >
                 <svg
                   t="1711437189034"
@@ -204,6 +206,7 @@
             </div>
           </div>
 
+          <!-- 登录/注册 -->
           <div
             v-else
             class="flex items-center ml-5"
