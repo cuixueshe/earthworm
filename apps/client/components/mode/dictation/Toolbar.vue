@@ -50,8 +50,8 @@
 
 <script setup lang="ts">
 import { onMounted, watch } from "vue";
-import { useToolbar, play } from "./dictation";
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
+import { useQuestionInput } from "~/components/main/QuestionInput/useQuestionInput";
+import { play, useToolbar } from "./dictation";
 
 const { focusInput } = useQuestionInput();
 
@@ -72,7 +72,7 @@ function handleReset() {
 
 function handlePlay() {
   play();
-  focusInput()
+  focusInput();
 }
 </script>
 

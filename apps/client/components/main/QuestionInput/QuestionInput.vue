@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted,onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -39,7 +39,7 @@ import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "./questionInput";
+import { useQuestionInput } from "./useQuestionInput";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
@@ -80,7 +80,7 @@ onMounted(() => {
   resetCloseTip();
 });
 
-focusInputWhenWIndowFocus()
+focusInputWhenWIndowFocus();
 
 watch(
   () => inputValue.value,
