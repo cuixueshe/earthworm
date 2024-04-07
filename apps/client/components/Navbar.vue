@@ -1,7 +1,7 @@
 <template>
   <header
     :class="[headerClasses]"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
+    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont px-3 w-full"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
