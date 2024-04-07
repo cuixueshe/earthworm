@@ -51,6 +51,7 @@ export function useDeviceTip() {
       messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";
       isMessageShow.value = true;
     }
+    isMessageShow.value = false;
   });
 
   return {

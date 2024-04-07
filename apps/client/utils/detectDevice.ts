@@ -2,13 +2,20 @@ import { onMounted, onUnmounted, ref } from "vue";
 
 const getDevice = (userAgent: string) => {
   const isAndroid = ref(Boolean(userAgent.match(/Android/i)));
-  const isIos = ref(Boolean(userAgent.match(/iPhone|iPad|iPod/i)));
-  const isIpad = ref(Boolean(userAgent.match(/iPad/i)));
+  const isIphone = ref(Boolean(userAgent.match(/iPhone|iPod/i)));
+  const isIpad = ref(
+    (/macintosh|mac os x/i.test(navigator.userAgent) &&
+      window.screen.height > window.screen.width &&
+      !navigator.userAgent.match(/(iPhone\sOS)\s([\d_]+)/)) ||
+      navigator.userAgent.match(/(iPad).*OS\s([\d_]+)/)
+  );
   const isOpera = ref(Boolean(userAgent.match(/Opera Mini/i)));
   const isWindows = ref(Boolean(userAgent.match(/IEMobile/i)));
   const isSSR = ref(Boolean(userAgent.match(/SSR/i)));
   const isMobile = ref(
-    Boolean(isAndroid.value || isIos.value || isOpera.value || isWindows.value)
+    Boolean(
+      isAndroid.value || isIphone.value || isOpera.value || isWindows.value
+    )
   );
   const isDesktop = !isMobile.value && !isSSR.value;
 
@@ -16,7 +23,7 @@ const getDevice = (userAgent: string) => {
     isMobile,
     isDesktop,
     isAndroid,
-    isIos,
+    isIphone,
     isIpad,
     isSSR,
   };
@@ -33,10 +40,15 @@ function useIsLandscape() {
   const isLandscape = ref(false);
 
   const orientationListener = () => {
-    const orientation = window.screen.orientation.angle;
+    const orientationType = window.screen.orientation.type;
 
-    if (orientation === 90 || orientation === -90) {
+    if (
+      orientationType === "landscape-primary" ||
+      orientationType === "landscape-secondary"
+    ) {
       isLandscape.value = true;
+      // alert(isLandscape.value);
+      // alert(11);
     }
   };
 
