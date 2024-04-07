@@ -138,6 +138,17 @@
               />
             </td>
           </tr>
+          <tr class="hover">
+            <td class="label-text">答题正确自动下一题</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="autoNextQuestion"
+                @change="toggleAutoQuestion"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -191,7 +202,8 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
-import { useGameMode, GameMode } from "~/composables/user/gameMode";
+import { useAutoNextQuestion } from "~/composables/user/autoNext";
+import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import {
   PronunciationType,
   usePronunciation,
@@ -209,6 +221,7 @@ import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {

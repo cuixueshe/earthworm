@@ -30,11 +30,12 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted,onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -52,14 +53,14 @@ const {
   getInputCursorPosition,
 } = useQuestionInput();
 
-const { showAnswer } = useGameMode();
+const { showAnswer, showQuestion } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError, resetCloseTip } = answerError();
-
+const { isAutoQuestion } = useAutoNextQuestion();
 const {
   inputValue,
   userInputWords,
@@ -80,7 +81,7 @@ onMounted(() => {
   resetCloseTip();
 });
 
-focusInputWhenWIndowFocus()
+focusInputWhenWIndowFocus();
 
 watch(
   () => inputValue.value,
@@ -231,10 +232,17 @@ function answerError() {
 }
 
 function handleAnswerRight() {
-  playRightSound(); // 正确提示
-  showAnswer();
-  hiddenAnswerTip();
-  courseTimer.timeEnd(String(courseStore.statementIndex));
+  if (isAutoQuestion()) {
+    playRightSound(); // 正确提示
+    courseStore.toNextStatement();
+    showQuestion();
+    hiddenAnswerTip();
+  } else {
+    playRightSound(); // 正确提示
+    showAnswer();
+    hiddenAnswerTip();
+    courseTimer.timeEnd(String(courseStore.statementIndex));
+  }
 }
 
 function handleKeydown(e: KeyboardEvent) {
