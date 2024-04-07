@@ -57,6 +57,6 @@ const {
 } = useAchievement();
 
 onMounted(() => {
-  initUserAchievementList()
+  initUserAchievementList();
 });
 </script>

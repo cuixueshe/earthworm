@@ -104,12 +104,12 @@ const {
   isShowModal,
   handleCancel,
   handleOpenAwardDialog,
-  handleAwardAchievement
+  handleAwardAchievement,
 } = useAchievement();
 
 const handleAward = handleSubmit(async (values) => {
   await handleAwardAchievement(values);
-  handleCancel(resetForm)
+  handleCancel(resetForm);
 });
 onMounted(() => {
   getAchievementList();

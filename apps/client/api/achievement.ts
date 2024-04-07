@@ -47,5 +47,8 @@ export async function fetchUserAchievement(dto: UserDto) {
   return await http.post("/achievement/use", dto);
 }
 export async function fetchHaveAchievement(dto: UserDto) {
-  return await http.post<AchievementItem[], AchievementItem[]>("/achievement/allHave", dto);
+  return await http.post<AchievementItem[], AchievementItem[]>(
+    "/achievement/allHave",
+    dto
+  );
 }

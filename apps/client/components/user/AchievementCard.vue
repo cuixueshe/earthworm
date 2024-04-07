@@ -1,5 +1,9 @@
 <template>
-  <div class="card" :class="[cardClass]" @click="handleToggleCheckStatus">
+  <div
+    class="card"
+    :class="[cardClass]"
+    @click="handleToggleCheckStatus"
+  >
     <div
       class="flex items-center justify-center check-box"
       v-if="isShowCheckBox"
@@ -52,7 +56,7 @@ const props = withDefaults(
   { isShowCheckBox: false }
 );
 function handleToggleCheckStatus() {
-  if(!isShowCheckBox.value) return;
+  if (!isShowCheckBox.value) return;
   props.achievement.isChecked = !props.achievement.isChecked;
 }
 const isShowCheckBox = computed(() => props.isShowCheckBox);
@@ -61,12 +65,14 @@ const name = computed(() => props.achievement.name);
 const createdAt = computed(
   () => "获得时间：" + props.achievement.createdAt?.split("T")[0]
 );
-const achievementImg = computed(() => props.achievement.achievementImg || '/contributor.png')
+const achievementImg = computed(
+  () => props.achievement.achievementImg || "/contributor.png"
+);
 const description = computed(() => props.achievement.description);
 const isChecked = computed(() => props.achievement.isChecked);
 
 const cardClass = computed(() => {
-  return isActive.value || isChecked.value ? 'activeAchievement' : 'deactivate' 
+  return isActive.value || isChecked.value ? "activeAchievement" : "deactivate";
 });
 </script>
 

@@ -24,7 +24,7 @@ const route = useRoute();
 interface ComponentMap {
   Home: typeof UserHome;
   Setting: typeof UserSetting;
-  Achievement : typeof UserAchievement;
+  Achievement: typeof UserAchievement;
 }
 
 interface Menu {
@@ -35,13 +35,13 @@ interface Menu {
 const componentMap: ComponentMap = {
   Home: UserHome,
   Setting: UserSetting,
-  Achievement: UserAchievement
+  Achievement: UserAchievement,
 };
 
 const userMenus = ref([
   { name: "主页", component: "Home" },
   { name: "设置", component: "Setting" },
-  { name: "我的成就", component: 'Achievement' },
+  { name: "我的成就", component: "Achievement" },
 ]);
 
 const currentComponent = ref(componentMap.Home);
