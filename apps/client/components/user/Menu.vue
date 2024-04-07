@@ -17,27 +17,32 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { ref, watch } from "vue";
 
 type Menu = {
   name: string;
-  component: any;
+  component: string;
 };
 
 const props = defineProps<{
   menus: Menu[];
+  defaultMenuName: string;
 }>();
 
 const emits = defineEmits(["changeMenu"]);
 
-let currentMenu = ref<string>("");
-const handleChangeMenu = (menu: Menu) => {
+const currentMenu = ref(props.defaultMenuName);
+
+function handleChangeMenu(menu: Menu) {
   currentMenu.value = menu.name;
   emits("changeMenu", menu);
-};
+}
 
-const setDefaultMenu = () => {
-  handleChangeMenu(props.menus[0]);
-};
-onMounted(() => setDefaultMenu());
+watch(
+  () => props.defaultMenuName,
+  (newVal) => {
+    currentMenu.value = newVal;
+  },
+  { immediate: true }
+);
 </script>

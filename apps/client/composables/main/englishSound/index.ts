@@ -1,7 +1,7 @@
 import { watchEffect } from "vue";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
-import { play, updateSource } from "./audio";
+import { play, updateSource, type PlayOptions } from "./audio";
 
 const { getPronunciationUrl } = usePronunciation();
 
@@ -19,8 +19,8 @@ export function useCurrentStatementEnglishSound() {
   });
 
   return {
-    playSound: () => {
-      play();
+    playSound: (options?: PlayOptions) => {
+      return play(options);
     },
   };
 }

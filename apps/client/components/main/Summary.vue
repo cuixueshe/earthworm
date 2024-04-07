@@ -1,6 +1,9 @@
 <template>
   <div>
-    <dialog className="modal mt-[-8vh]" :open="showModal">
+    <dialog
+      className="modal mt-[-8vh]"
+      :open="showModal"
+    >
       <div className="modal-box max-w-[48rem]">
         <div class="relative">
           <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
@@ -44,11 +47,31 @@
             <span class="text-6xl font-bold">"</span>
           </div>
           <p class="text-right text-gray-200 text-3">—— 金山词霸「每日一句」</p>
+          <p class="text-gray-600 text-base leading-loose pl-14">
+            {{
+              `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
+                courseTimer.calculateTotalTime()
+              )} `
+            }}
+          </p>
         </div>
         <div className="modal-action">
-          <button class="btn btn-primary" @click="toShare">生成打卡图</button>
-          <button class="btn" @click="handleDoAgain">再来一次</button>
-          <button class="btn" @click="handleGoToNextCourse">
+          <button
+            class="btn btn-primary"
+            @click="toShare"
+          >
+            生成打卡图
+          </button>
+          <button
+            class="btn"
+            @click="handleDoAgain"
+          >
+            再来一次
+          </button>
+          <button
+            class="btn"
+            @click="handleGoToNextCourse"
+          >
             开始下一课<kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
@@ -65,6 +88,7 @@
 import { watch } from "vue";
 import { useRouter } from "vue-router";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
@@ -73,6 +97,7 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
+import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 let nextCourseId = 1;
@@ -109,11 +134,14 @@ async function completeCourse() {
   const { updateActiveCourseId } = useActiveCourseId();
 
   if (userStore.user && courseStore.currentCourse) {
-    const nextCourse = await courseStore.completeCourse(
+    const { nextCourse } = await courseStore.completeCourse(
       courseStore.currentCourse.id
     );
-    nextCourseId = nextCourse.id;
-    updateActiveCourseId(nextCourseId);
+
+    if (nextCourse) {
+      nextCourseId = nextCourse.id;
+      updateActiveCourseId(nextCourseId);
+    }
   }
 }
 
@@ -124,6 +152,7 @@ function useDoAgain() {
     courseStore.doAgain();
     hideSummary();
     showQuestion();
+    courseTimer.reset();
   }
 
   return {

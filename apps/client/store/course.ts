@@ -83,11 +83,11 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function completeCourse(cId: number) {
-    const nextCourse = await fetchCompleteCourse(cId);
+    const res = await fetchCompleteCourse(cId);
     // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
     // 当完成课程的时候并不希望 UI 立刻被重置
     saveProgress(currentCourse.value?.id!, 0);
-    return nextCourse;
+    return res;
   }
 
   async function setup(courseId: number) {

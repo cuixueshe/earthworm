@@ -1,6 +1,31 @@
 <template>
   <div class="space-y-8 min-w-max">
     <section class="space-y-4">
+      <h2 class="text-lg font-medium">游戏模式</h2>
+      <table class="table">
+        <tbody>
+          <tr class="hover">
+            <td class="label-text">模式</td>
+            <td class="w-[300px] text-center">
+              <div class="mr-12 join">
+                <input
+                  v-for="mode in getGameModeOptions()"
+                  class="join-item btn btn-sm"
+                  type="radio"
+                  name="gameMode"
+                  :value="mode.value"
+                  :aria-label="mode.label"
+                  :checked="currentGameMode === mode.value"
+                  @change="toggleGameMode(mode.value as GameMode)"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="space-y-4">
       <h2 class="text-lg font-medium">快捷键设置</h2>
       <table class="table text-base">
         <thead>
@@ -11,54 +36,31 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="hover">
-            <td class="label-text">播放发音</td>
-            <td class="text-center">{{ shortcutKeys.sound }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.SOUND)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">显示隐藏/答案预览</td>
-            <td class="text-center">{{ shortcutKeys.answer }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.ANSWER)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">返回上个问题</td>
-            <td class="text-center">{{ shortcutKeys.previous }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.PREVIOUS)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
-          <tr class="hover">
-            <td class="label-text">跳过当前问题</td>
-            <td class="text-center">{{ shortcutKeys.skip }}</td>
-            <td class="text-center">
-              <button
-                class="btn btn-sm btn-outline btn-secondary"
-                @click="handleEdit(SHORTCUT_KEY_TYPES.SKIP)"
-              >
-                编辑
-              </button>
-            </td>
-          </tr>
+          <template v-for="item in shortcutKeyBindList">
+            <tr class="hover">
+              <td class="label-text">{{ item.label }}</td>
+              <td class="text-center">
+                <div
+                  class="flex items-center justify-center gap-2 text-xs text-center"
+                >
+                  <div
+                    class="kbd"
+                    v-for="key in parseShortcutKeys(shortcutKeys[item.type])"
+                  >
+                    {{ key }}
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <button
+                  class="btn btn-sm btn-outline btn-secondary"
+                  @click="handleEdit(item.type)"
+                >
+                  编辑
+                </button>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </section>
@@ -157,8 +159,16 @@
       >
         {{ shortcutKeyStr }}
       </div>
-      <div class="mt-2 text-xs text-center">
-        {{ shortcutKeyTip }}
+      <div
+        v-if="shortcutKeyTip"
+        class="flex justify-center gap-2 mt-2 text-xs text-center"
+      >
+        <div
+          v-for="key in parseShortcutKeys(shortcutKeyTip)"
+          class="kbd"
+        >
+          {{ key }}
+        </div>
       </div>
       <div
         v-if="hasSameShortcutKey"
@@ -181,6 +191,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useGameMode, GameMode } from "~/composables/user/gameMode";
 import {
   PronunciationType,
   usePronunciation,
@@ -195,6 +206,7 @@ import {
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
@@ -217,6 +229,27 @@ const {
   handleCloseDialog,
   handleKeydown,
 } = useShortcutKeyMode();
+
+const { getGameModeOptions, currentGameMode, toggleGameMode } = useGameMode();
+
+const shortcutKeyBindList = [
+  {
+    label: "播放发音",
+    type: SHORTCUT_KEY_TYPES.SOUND,
+  },
+  {
+    label: "显示隐藏/答案预览",
+    type: SHORTCUT_KEY_TYPES.ANSWER,
+  },
+  {
+    label: "返回上个问题",
+    type: SHORTCUT_KEY_TYPES.PREVIOUS,
+  },
+  {
+    label: "跳过当前问题",
+    type: SHORTCUT_KEY_TYPES.SKIP,
+  },
+];
 
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);

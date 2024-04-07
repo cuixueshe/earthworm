@@ -1,18 +1,10 @@
 <template>
-  <div class="h-full pt-20">
-    <div class="h-[40vh] flex flex-col justify-center relative">
-      <template v-if="isQuestion()">
-        <Question></Question>
-        <template v-if="isAnswerTip()">
-          <AnswerTip></AnswerTip>
-        </template>
-      </template>
-      <template v-else-if="isAnswer()">
-        <Answer></Answer>
-      </template>
-    </div>
-  </div>
-  <PrevAndNextBtn />
+  <template v-if="currentGameMode === GameMode.Dictation">
+    <DictationMode></DictationMode>
+  </template>
+  <template v-else-if="currentGameMode === GameMode.ChineseToEnglish">
+    <ChineseToEnglishMode></ChineseToEnglishMode>
+  </template>
   <Tips></Tips>
   <Summary></Summary>
   <Share></Share>
@@ -20,17 +12,19 @@
 </template>
 
 <script setup lang="ts">
-import { useAnswerTip } from "~/composables/main/answerTip";
-import { useGameMode } from "~/composables/main/game";
-import Answer from "./Answer.vue";
-import AnswerTip from "./AnswerTip.vue";
+import { onMounted } from "vue";
+import ChineseToEnglishMode from "~/components/mode/chineseToEnglish/ChineseToEnglishMode.vue";
+import DictationMode from "~/components/mode/dictation/DictationMode.vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import AuthRequired from "./AuthRequired.vue";
-import PrevAndNextBtn from "./PrevAndNextBtn.vue";
-import Question from "./Question/Question.vue";
 import Share from "./Share.vue";
 import Summary from "./Summary.vue";
 import Tips from "./Tips.vue";
+import { useGameMode, GameMode } from "~/composables/user/gameMode";
 
-const { isAnswer, isQuestion } = useGameMode();
-const { isAnswerTip } = useAnswerTip();
+const { currentGameMode } = useGameMode();
+
+onMounted(() => {
+  courseTimer.reset();
+});
 </script>

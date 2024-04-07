@@ -68,7 +68,7 @@ export const tpl_2 = ({
                       tw: "text-lg m-0",
                       children: `${userName}${
                         userName ? "  •  " : ""
-                      }${dateStr}`,
+                      }${dateStr} `,
                     },
                   },
                 ],

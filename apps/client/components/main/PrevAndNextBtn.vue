@@ -1,11 +1,9 @@
 <template>
-  <div
-    class="flex items-center justify-between absolute left-0 right-0 bottom-[14vh] xl:w-[1200px] m-auto xl:px-2 px-24"
-  >
+  <div class="absolute flex items-center justify-between w-full">
     <!-- left arrow button: go to previous question -->
     <div class="w-12 h-12">
       <button
-        class="arrow-btn tooltip z-10"
+        class="arrow-btn tooltip"
         :data-tip="PREV_BTN_TIP"
         @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
@@ -30,7 +28,7 @@
     <!-- right arrow button: go to next question -->
     <div class="w-12 h-12">
       <button
-        class="arrow-btn tooltip z-10"
+        class="arrow-btn tooltip"
         @click="goToNextQuestion"
         :data-tip="NEXT_BTN_TIP"
         totalQuestionsCount
@@ -98,13 +96,13 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
 
   function handleShortcut() {
     onMounted(() => {
-      registerShortcut(nextKey, goToNextQuestion);
       registerShortcut(prevKey, goToPreviousQuestion);
+      registerShortcut(nextKey, goToNextQuestion);
     });
 
     onUnmounted(() => {
-      cancelShortcut(prevKey, goToNextQuestion);
-      cancelShortcut(nextKey, goToPreviousQuestion);
+      cancelShortcut(prevKey, goToPreviousQuestion);
+      cancelShortcut(nextKey, goToNextQuestion);
     });
   }
 
@@ -117,5 +115,9 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
 <style scoped>
 .arrow-btn {
   @apply text-[#475569] hover:text-[#d946ef] dark:text-[#cbd5e1] dark:hover:text-[#d946ef];
+  @apply transition-transform duration-150 ease-in-out;
+}
+.arrow-btn:active {
+  @apply scale-95;
 }
 </style>

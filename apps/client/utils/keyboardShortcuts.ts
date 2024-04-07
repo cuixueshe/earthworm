@@ -32,12 +32,25 @@ function parseKey(keyString: string) {
 
 function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
   return shortcuts.filter((shortcut) => {
-    return (
+    const preciseMatching =
       shortcut.ctrlKey === event.ctrlKey &&
       shortcut.metaKey === event.metaKey &&
-      shortcut.key === convertMacKey(event.key).toLowerCase()
-    );
+      shortcut.key === convertMacKey(event.key).toLowerCase();
+
+    const anyMatching = shortcut.key === "*";
+
+    return preciseMatching || anyMatching;
   });
+}
+
+export function parseShortcutKeys(
+  shortcutKeys: string,
+  separator: string = "+"
+) {
+  // 如果只有一个字符的 key，将其转换为大写显示
+  return shortcutKeys
+    .split(separator)
+    .map((key) => (key.length === 1 ? key.toUpperCase() : key));
 }
 
 export function createShortcut(

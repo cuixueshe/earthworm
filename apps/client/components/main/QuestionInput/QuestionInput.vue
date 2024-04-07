@@ -1,12 +1,12 @@
 <template>
-  <div class="text-center pt-2">
-    <div class="flex relative flex-wrap justify-center gap-2 transition-all">
+  <div class="text-center">
+    <div class="relative flex flex-wrap justify-center gap-2 transition-all">
       <template
         v-for="(w, i) in courseStore.words"
         :key="i"
       >
         <div
-          class="h-[4.8rem] border-solid rounded-[2px] border-b-2 text-[3.2em] transition-all"
+          class="h-[4rem] leading-none border-solid rounded-[2px] border-b-2 text-[3em] transition-all"
           :class="getWordsClassNames(i)"
           :style="{ minWidth: `${inputWidth(w)}ch` }"
         >
@@ -15,7 +15,7 @@
       </template>
       <input
         ref="inputEl"
-        class="absolute h-full w-full opacity-0"
+        class="absolute w-full h-full opacity-0"
         type="text"
         v-model="inputValue"
         @keydown="handleKeydown"
@@ -26,16 +26,12 @@
         autoFocus
       />
     </div>
-    <div class="mt-12 text-xl dark:text-gray-50">
-      {{
-        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
-      }}
-    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from "vue";
+import { onUnmounted,onMounted, watch } from "vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
@@ -84,10 +80,13 @@ onMounted(() => {
   resetCloseTip();
 });
 
+focusInputWhenWIndowFocus()
+
 watch(
   () => inputValue.value,
   (val) => {
     setInputValue(val);
+    courseTimer.time(String(courseStore.statementIndex));
   }
 );
 
@@ -98,6 +97,20 @@ watch(
     resetCloseTip();
   }
 );
+
+function focusInputWhenWIndowFocus() {
+  const handleFocus = () => {
+    focusInput();
+  };
+
+  onMounted(() => {
+    window.addEventListener("focus", handleFocus);
+  });
+
+  onUnmounted(() => {
+    window.removeEventListener("focus", handleFocus);
+  });
+}
 
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
@@ -217,15 +230,18 @@ function answerError() {
   };
 }
 
+function handleAnswerRight() {
+  playRightSound(); // 正确提示
+  showAnswer();
+  hiddenAnswerTip();
+  courseTimer.timeEnd(String(courseStore.statementIndex));
+}
+
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
     submitAnswer(
-      () => {
-        playRightSound(); // 正确提示
-        showAnswer();
-        hiddenAnswerTip();
-      },
+      handleAnswerRight,
       handleAnswerError // 错误提示
     );
 
@@ -235,10 +251,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback: () => {
-        playRightSound(); // 正确提示
-        showAnswer();
-      },
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });

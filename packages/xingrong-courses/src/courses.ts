@@ -1,10 +1,11 @@
 import { db } from "@earthworm/db";
-import { course as courseSchema } from "@earthworm/schema";
+import { course as courseSchema, statement as statementSchema } from "@earthworm/schema";
 import fs from "fs";
 import path from "path";
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 
 (async function () {
+  await db.delete(statementSchema)
   await db.delete(courseSchema);
 
   for (const [index, course] of courses.entries()) {

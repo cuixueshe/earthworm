@@ -1,5 +1,5 @@
 import { course, statement } from '@earthworm/schema';
-import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { asc, eq, gt } from 'drizzle-orm';
 import { UserEntity } from 'src/user/user.decorators';
 import { CourseHistoryService } from '../course-history/course-history.service';
@@ -37,10 +37,7 @@ export class CourseService {
       .orderBy(asc(course.id));
 
     if (result.length <= 0) {
-      throw new HttpException(
-        'There is no next course',
-        HttpStatus.BAD_REQUEST,
-      );
+      return undefined;
     }
 
     return result[0];
@@ -96,11 +93,17 @@ export class CourseService {
   }
 
   async completeCourse(user: UserEntity, courseId: number) {
-    const nextCourse = await this.findNext(courseId);
-    await this.userProgressService.update(user.userId, nextCourse.id);
     await this.rankService.userFinishCourse(user.userId, user.username);
     await this.courseHistoryService.setCompletionCount(user.userId, courseId);
     await this.userLearnRecordService.userLearnRecord(user.userId);
-    return nextCourse;
+
+    const nextCourse = await this.findNext(courseId);
+    if (nextCourse) {
+      await this.userProgressService.update(user.userId, nextCourse.id);
+    }
+
+    return {
+      nextCourse,
+    };
   }
 }
