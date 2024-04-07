@@ -4,13 +4,13 @@
     id="home"
   >
     <div class="mx-auto text-center my-5">
-      <h2
-        class="text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100"
+      <div
+        class="font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100 text-2xl xl:text-5xl lg:text-5xl md:text-4xl"
       >
         让你上瘾的英语学习工具
-      </h2>
+      </div>
 
-      <div class="mt-5">
+      <div class="mt-5 text-sm lg:text-2xl px-10 lg:px-0">
         <p class="pt-2 text-center dark:text-gray-300 text-gray-500 lg:text-xl">
           使用<span class="dark:text-purple-200 text-black"> 连词成句 </span
           >、<span class="dark:text-purple-200 text-black"> i + 1 </span>、<span

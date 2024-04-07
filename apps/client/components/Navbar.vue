@@ -1,7 +1,7 @@
 <template>
   <header
     :class="[headerClasses]"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont px-3 w-full"
+    class="top-0 bg-opacity-50 backdrop-blur-xl z-50 font-customFont w-full lg:px-24 px-3"
   >
     <div class="mx-auto max-w-screen-xl mt-2">
       <div class="flex h-16 items-center justify-between">
@@ -16,7 +16,7 @@
                 alt="earth-worm-logo"
               />
               <h1
-                class="text-2xl font-extrabold leading-normal text-wrap dark:text-white"
+                class="text-2xl font-extrabold leading-normal text-wrap dark:text-white hidden md:block"
               >
                 Earthworm
               </h1>
@@ -304,4 +304,10 @@ const headerClasses = computed(() => {
   };
 });
 </script>
-<style></style>
+<style>
+@media (width: 1280px){
+  .nav-width{
+    width: 100%;
+  }
+}
+</style>

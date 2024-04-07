@@ -1,6 +1,6 @@
 <template>
   <section
-    class="text-gray-600 body-font overflow-hidden pt-24"
+    class="text-gray-600 body-font overflow-hidden pt-24 px-10 xl:px-0"
     id="faq"
   >
     <CommonTitle
@@ -10,7 +10,7 @@
         `我们会尽快回复您！`,
       ]"
     />
-    <div class="divide-y divide-gray-800 space-y-4 py-16">
+    <div class="divide-y divide-gray-200 dark:divide-gray-800 space-y-4 py-16">
       <template
         v-for="(qs_item, qs_index) in QUESTIONS"
         :key="qs_index"
@@ -22,9 +22,9 @@
           <summary
             class="flex justify-between items-center cursor-pointer py-5"
           >
-            <h2 class="text-lg font-medium dark:text-white opacity-75">
+            <div class="text-md font-medium dark:text-white  md:text-lg">
               {{ qs_item.title }}
-            </h2>
+            </div>
             <span class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@
               v-for="(as_item, as_index) in qs_item.content"
               :key="`content-${as_index}`"
             >
-              <p class="py-2">
+              <p class="py-2 text-xs md:text-sm">
                 <span v-if="qs_item.content.length > 1"
                   >{{ as_index + 1 }}.
                 </span>

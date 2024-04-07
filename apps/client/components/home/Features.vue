@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex-col pt-24"
+    class="w-full flex-col pt-24 px-7 xl:px-0"
     id="features"
   >
     <CommonTitle
@@ -23,11 +23,11 @@
             </span>
 
             <div>
-              <h2 class="text-lg font-bold dark:text-white">
+              <div class="font-bold dark:text-white text-md md:text-lg">
                 {{ fe_item.title }}
-              </h2>
+              </div>
 
-              <p class="mt-1 text-sm text-gray-500 dark:text-white opacity-90">
+              <p class="mt-1 text-gray-500 dark:text-white opacity-90 text-xs md:text-sm">
                 {{ fe_item.desc }}
               </p>
             </div>
@@ -40,11 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import { Theme, useDarkMode } from "~/composables/darkMode";
-const { darkMode } = useDarkMode();
-const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-
 const FEATURES = [
   {
     icon: `<svg t="1711849789837" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6594" width="25" height="25"><path d="M896 448c0-212-172-384-384-384S128 236 128 448c0 192.8 142.4 352.8 328 380l-4 68H256v64h512v-64H573.6l-4-68C754.4 800 896 640.8 896 448zM512 768c-176.8 0-320-143.2-320-320s143.2-320 320-320 320 143.2 320 320-143.2 320-320 320z m0-560c-132.8 0-240 107.2-240 240s107.2 240 240 240 240-107.2 240-240-107.2-240-240-240zM416 512c-52.8 0-96-43.2-96-96s43.2-96 96-96 96 43.2 96 96-43.2 96-96 96z" p-id="6595" fill="currentColor" stroke="currentColor"></path></svg>`,
