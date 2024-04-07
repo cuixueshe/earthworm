@@ -26,19 +26,19 @@
           <nav
             v-if="route.path === '/'"
             aria-label="Global"
-            class="hidden md:block mr-8"
+            class="hidden md:block"
           >
             <ul class="flex items-center text-md">
               <template
-                v-for="(opt_item, opt_index) in HEADER_OPTIONS"
-                :key="opt_index"
+                v-for="(optItem, optIndex) in HEADER_OPTIONS"
+                :key="optIndex"
               >
                 <li class="px-4">
                   <a
-                    class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    :href="`#${opt_item.anchor}`"
+                    class="text-nowrap transition dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
+                    :href="`#${optItem.anchor}`"
                   >
-                    {{ opt_item.name }}
+                    {{ optItem.name }}
                   </a>
                 </li>
               </template>
@@ -46,7 +46,8 @@
           </nav>
         </div>
 
-        <div class="login-out flex justify-end items-center">
+        <div class="login-out flex items-center">
+          <!-- 切换主题 -->
           <button
             class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
             @click="toggleDarkMode"
@@ -80,26 +81,15 @@
             </svg>
           </button>
 
-          <div class="flex items-center ml-5">
-            <button
-              v-show="
-                (!userStore.user && route.name !== 'Auth-Login') ||
-                route.name === 'Auth-Login'
-              "
-              @click="
-                route.name === 'Auth-Login' ? handleSignup() : handleLogin()
-              "
-              aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
-              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
-            >
-              {{ route.name === "Auth-Login" ? "Register" : "Login" }}
-            </button>
-          </div>
-
-          <div class="logged-in flex items-center">
-            <div class="mx-2 font-500 truncate max-w-[10em]">{{ userStore.user?.username }}</div>
+          <!-- 显示用户信息 -->
+          <div
+            v-if="userStore.user"
+            class="logged-in flex items-center"
+          >
+            <div class="mx-2 font-500 truncate max-w-[10em]">
+              {{ userStore.user?.username }}
+            </div>
             <div
-              v-if="userStore.user"
               class="dropdown dropdown-end"
               @click="toggleDropdown"
             >
@@ -213,6 +203,25 @@
               </ul>
             </div>
           </div>
+
+          <div
+            v-else
+            class="flex items-center ml-5"
+          >
+            <button
+              v-show="
+                (!userStore.user && route.name !== 'Auth-Login') ||
+                route.name === 'Auth-Login'
+              "
+              @click="
+                route.name === 'Auth-Login' ? handleSignup() : handleLogin()
+              "
+              aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
+              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
+            >
+              {{ route.name === "Auth-Login" ? "Register" : "Login" }}
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -235,12 +244,34 @@ import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
 import MessageBox from "./main/MessageBox/MessageBox.vue";
+
 const route = useRoute();
 const userStore = useUserStore();
-const isShowModal = ref(false);
-const { setDarkMode, toggleDarkMode, darkMode } = useDarkMode();
+const { toggleDarkMode, darkMode } = useDarkMode();
 
+const HEADER_OPTIONS = [
+  { name: "主页", anchor: "home" },
+  // { name: "What", anchor: "what" },
+  { name: "功能", anchor: "features" },
+  // { name: "Pricing", anchor: "pricing" },
+  { name: "问题", anchor: "faq" },
+  { name: "联系我们", anchor: "contact" },
+];
+const isShowModal = ref(false);
+const showDropdown = ref(false);
+const dropdownContainer = ref(null);
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
+const headerClasses = computed(() => {
+  const isHomePage = route.path === "/";
+
+  return {
+    sticky: isHomePage,
+  };
+});
+
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false;
+});
 
 const handleViewUserInfo = () => {
   navigateTo("/user/info");
@@ -264,15 +295,11 @@ const handleSetting = () => {
     query: { displayComponent: "Setting" },
   });
 };
-const showDropdown = ref(false);
-const dropdownContainer = ref(null);
 
-onClickOutside(dropdownContainer, () => {
-  showDropdown.value = false;
-});
 function toggleDropdown() {
   showDropdown.value = !showDropdown.value;
 }
+
 const handleLogoutConfirm = () => {
   userStore.logoutUser();
   cleanToken();
@@ -287,21 +314,4 @@ const handleLogoutConfirm = () => {
     Message.error("logout error!");
   }
 };
-const HEADER_OPTIONS = [
-  { name: "Home", anchor: "home" },
-  // { name: "What", anchor: "what" },
-  { name: "Features", anchor: "features" },
-  // { name: "Pricing", anchor: "pricing" },
-  { name: "FAQ", anchor: "faq" },
-  { name: "Contact", anchor: "contact" },
-];
-
-const headerClasses = computed(() => {
-  const isHomePage = route.path === "/";
-
-  return {
-    sticky: isHomePage,
-  };
-});
 </script>
-<style></style>

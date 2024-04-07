@@ -12,19 +12,20 @@
 
       <div class="mt-5">
         <p class="pt-2 text-center dark:text-gray-300 text-gray-500 lg:text-xl">
-          使用<span class="dark:text-purple-200 text-black"> 连词成句 </span
-          >、<span class="dark:text-purple-200 text-black"> i + 1 </span>、<span
-            class="dark:text-purple-200 text-black"
-          >
-            以终为始 </span
+          使用<span class="dark:text-purple-200 text-purple-400">
+            连词成句 </span
+          >、<span class="dark:text-purple-200 text-purple-400"> i + 1 </span
+          >、<span class="dark:text-purple-200 text-purple-400"> 以终为始 </span
           >等学习理论来帮助你习得英语
         </p>
         <p class="pt-2 text-center dark:text-gray-300 text-gray-500 lg:text-xl">
-          通过不断的<span class="dark:text-purple-200 text-black"> 重复 </span
+          通过不断的<span class="dark:text-purple-200 text-purple-400">
+            重复 </span
           >形成肌肉记忆
         </p>
         <p class="pt-2 text-center dark:text-gray-300 text-gray-500 lg:text-xl">
-          最重要的是<span class="dark:text-purple-200 text-black"> 游戏化 </span
+          最重要的是<span class="dark:text-purple-200 text-purple-400">
+            游戏化 </span
           >的形式让学习英语从此不再痛苦
         </p>
       </div>

@@ -11,7 +11,7 @@
         v-for="(desc_item, desc_index) in description"
         :key="desc_index"
       >
-        <p class="pt-2 text-center dark:text-gray-500 text-gray-800 lg:text-xl">
+        <p class="pt-2 text-center dark:text-gray-300 text-gray-800 lg:text-xl">
           {{ desc_item }}
         </p>
       </template>
