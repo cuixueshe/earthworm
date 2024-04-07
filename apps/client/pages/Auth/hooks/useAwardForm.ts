@@ -6,21 +6,17 @@ interface AchievementFormValues {
   secretKey: string;
 }
 
-// TODO optimize phoneValidator
-function checkModbile(mobile: string) {
-  var re = /^1[3,4,5,6,7,8,9][0-9]{9}$/;
-  var result = re.test(mobile);
-  if (!result) {
-    return false;
-  }
-  return true;
+// TODO optimize phoneValidator for different countries
+function phoneValidate(phoneNum: string) {
+  const validate = /^1[3,4,5,6,7,8,9][0-9]{9}$/;
+  return validate.test(phoneNum);
 }
 export function useAwardForm() {
   const schema = yup.object({
     phone: yup
       .string()
       .required("请输入用户手机号")
-      .test("is-valid-phone", "请输入正确的手机号", checkModbile),
+      .test("is-valid-phone", "请输入正确的手机号", phoneValidate),
     secretKey: yup.string().required("请输入授权指令"),
   });
 
