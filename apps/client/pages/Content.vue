@@ -8,6 +8,7 @@
       style="overflow-y: auto"
     >
       <NuxtPage />
+      test
     </div>
   </main>
 </template>
