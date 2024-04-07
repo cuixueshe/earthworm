@@ -22,12 +22,11 @@
 import { onMounted } from "vue";
 
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { useMessageTip } from "~/composables/main/game";
+import { useDeviceTip } from "~/composables/main/game";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import MessageBox from "./MessageBox/MessageBox.vue";
 
-const { isMessageShow, messageContent } = useMessageTip();
-
+const { isMessageShow, messageContent } = useDeviceTip();
 const { currentGameMode } = useGameMode();
 console.log(2222);
 

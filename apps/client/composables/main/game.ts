@@ -34,7 +34,7 @@ export function useGameMode() {
   };
 }
 
-export function useMessageTip() {
+export function useDeviceTip() {
   const messageContent = ref("");
   const isMessageShow = ref(false);
 
