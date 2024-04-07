@@ -13,18 +13,20 @@
           {{ userInputWords[i]["userInput"] }}
         </div>
       </template>
-      <input
-        ref="inputEl"
-        class="absolute w-full h-full opacity-0"
-        type="text"
-        v-model="inputValue"
-        @keydown="handleKeydown"
-        @focus="focusInput"
-        @blur="blurInput"
-        @dblclick.prevent
-        @mousedown="preventCursorMove"
-        autoFocus
-      />
+      <form @submit.prevent="submit" class="absolute w-full h-full opacity-0">
+        <input
+            ref="inputEl"
+            class="h-full w-full"
+            type="text"
+            v-model="inputValue"
+            @keydown="handleKeydown"
+            @focus="focusInput"
+            @blur="blurInput"
+            @dblclick.prevent
+            @mousedown="preventCursorMove"
+            autoFocus
+        />
+      </form>
     </div>
   </div>
 </template>
@@ -236,18 +238,14 @@ function handleAnswerRight() {
   hiddenAnswerTip();
   courseTimer.timeEnd(String(courseStore.statementIndex));
 }
-
-function handleKeydown(e: KeyboardEvent) {
-  if (e.code === "Enter") {
-    e.stopPropagation();
-    submitAnswer(
+function submit(){
+  submitAnswer(
       handleAnswerRight,
       handleAnswerError // 错误提示
-    );
+  );
+}
 
-    return;
-  }
-
+function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
