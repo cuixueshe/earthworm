@@ -1,8 +1,38 @@
 [
 	{
+		"chinese": "涉及",
+		"english": "involve",
+		"soundmark": "/ɪnˈvɒlv/"
+	},
+	{
+		"chinese": "纯数学和应用数学的结合",
+		"english": "a combination of pure and applied mathematics",
+		"soundmark": "/ə/ /ˌkɒmbɪˈneɪʃən/ /ʌv/ /pjʊər/ /ænd/ /əˈplaɪd/ /mæθəˈmætɪks/"
+	},
+	{
 		"chinese": "这门课程涉及纯数学和应用数学的结合。",
 		"english": "This course involves a combination of pure and applied mathematics.",
 		"soundmark": "/ðɪs/ /kɔːs/ /ɪnˈvɒlvz/ /ə/ /ˌkɒmbɪˈneɪʃən/ /ʌv/ /pjʊər/ /ænd/ /əˈplaɪd/ /mæθəˈmætɪks/"
+	},
+	{
+		"chinese": "整栋建筑",
+		"english": "the whole building",
+		"soundmark": "/ðə/ /həʊl/ /ˈbɪldɪŋ/"
+	},
+	{
+		"chinese": "目前",
+		"english": "is currently",
+		"soundmark": "/ɪz/ /ˈkʌrəntli/"
+	},
+	{
+		"chinese": "正在进行",
+		"english": "being undertaken",
+		"soundmark": "/ˈbiːɪŋ/ /ˌʌndərˈteɪkən/"
+	},
+	{
+		"chinese": "翻新工程",
+		"english": "Renovation work",
+		"soundmark": "/ˌrɛnəʊˈveɪʃən/ /wɜːk/"
 	},
 	{
 		"chinese": "整栋建筑目前正在进行翻新工程。",
@@ -10,29 +40,124 @@
 		"soundmark": "/ˌrɛnəʊˈveɪʃən/ /wɜːk/ /ɪz/ /ˈkʌrəntli/ /ˈbiːɪŋ/ /ˌʌndərˈteɪkən/ /θruːˈaʊt/ /ðə/ /həʊl/ /ˈbɪldɪŋ/"
 	},
 	{
+		"chinese": "这门高级课程",
+		"english": "This advanced course",
+		"soundmark": "/ðɪs/ /ədˈvɑːnst/ /kɔːs/"
+	},
+	{
+		"chinese": "要求",
+		"english": "requires",
+		"soundmark": "/rɪˈkwaɪəz/"
+	},
+	{
+		"chinese": "基本的经济理论知识",
+		"english": "a basic knowledge of economic theory",
+		"soundmark": "/ə/ /ˈbeɪsɪk/ /ˈnɒlɪdʒ/ /ʌv/ /ˌiːkəˈnɒmɪk/ /ˈθɪəri/"
+	},
+	{
 		"chinese": "这门高级课程要求基本的经济理论知识。",
 		"english": "This advanced course requires a basic knowledge of economic theory.",
 		"soundmark": "/ðɪs/ /ədˈvɑːnst/ /kɔːs/ /rɪˈkwaɪəz/ /ə/ /ˈbeɪsɪk/ /ˈnɒlɪdʒ/ /ʌv/ /ˌiːkəˈnɒmɪk/ /ˈθɪəri/"
 	},
 	{
-		"chinese": "全球各地的学术图书馆正在逐步整合社交媒体。",
+		"chinese": "吸收道路上的雨水",
+		"english": "soaking up rainwater that runs off its road",
+		"soundmark": "/ˈsəʊkɪŋ/ /ʌp/ /ˈreɪnwɔːtə/ /ðæt/ /rʌnz/ /ɒf/ /ɪts/ /rəʊd/"
+	},
+	{
+		"chinese": "使城市受益",
+		"english": "benefit the city by",
+		"soundmark": "/ˈbɛnɪfɪt/ /ðə/ /ˈsɪti/ /baɪ/"
+	},
+	{
+		"chinese": "树木吸收道路上的雨水，使城市受益。",
 		"english": "Trees benefit the city by soaking up rainwater that runs off its road.",
 		"soundmark": "/triːz/ /ˈbɛnɪfɪt/ /ðə/ /ˈsɪti/ /baɪ/ /ˈsəʊkɪŋ/ /ʌp/ /ˈreɪnwɔːtə/ /ðæt/ /rʌnz/ /ɒf/ /ɪts/ /rəʊd/"
 	},
 	{
-		"chinese": "学院设有连续评估制度。",
+		"chinese": "混合物",
+		"english": "Mixtures",
+		"soundmark": "/ˈmɪkstʃərz/"
+	},
+	{
+		"chinese": "被定义为",
+		"english": "are defined as",
+		"soundmark": "/ɑːr/ /dɪˈfaɪnd/ /æz/"
+	},
+	{
+		"chinese": "化学上独立的部分的化合物",
+		"english": "a compound of chemically separate parts",
+		"soundmark": "/ə/ /ˈkɒmpaʊnd/ /ʌv/ /kɪˈmɪkəli/ /ˈsɛpərɪt/ /pɑːrts/"
+	},
+	{
+		"chinese": "混合物被定义为化学上独立的部分的化合物。",
 		"english": "Mixtures are defined as a compound of chemically separate parts.",
 		"soundmark": "/ˈmɪksʧərz/ /ɑːr/ /dɪˈfaɪnd/ /æz/ /ə/ /ˈkɒmpaʊnd/ /ʌv/ /kɪˈmɪkəli/ /ˈsɛpərət/ /pɑːts/"
 	},
 	{
-		"chinese": "今年被认为是最重要的经济学家。",
+		"chinese": "我们的设施",
+		"english": "Our facilities",
+		"soundmark": "/ˈaʊər/ /fəˈsɪlɪtiz/"
+	},
+	{
+		"chinese": "包括",
+		"english": "include",
+		"soundmark": "/ɪnˈkluːd/"
+	},
+	{
+		"chinese": "大学内的五个图书馆",
+		"english": "five libraries across the university",
+		"soundmark": "/faɪv/ /ˈlaɪbrəriz/ /əˈkrɒs/ /ðə/ /ˌjuːnɪˈvɜːsɪti/"
+	},
+	{
+		"chinese": "我们的设施包括大学内的五个图书馆。",
 		"english": "Our facilities include five libraries across the university.",
 		"soundmark": "/ˈaʊər/ /fəˈsɪlɪtiz/ /ɪnˈkluːd/ /faɪv/ /ˈlaɪbrəriz/ /əˈkrɒs/ /ðə/ /ˌjuːnɪˈvɜːsɪti/"
+	},
+	{
+		"chinese": "艺术家",
+		"english": "Artists",
+		"soundmark": "/ˈɑːtɪsts/"
+	},
+	{
+		"chinese": "他们的作品",
+		"english": "their works",
+		"soundmark": "/ðer/ /wɜːks/"
+	},
+	{
+		"chinese": "原创",
+		"english": "original",
+		"soundmark": "/əˈrɪdʒənl/"
+	},
+	{
+		"chinese": "易于理解",
+		"english": "accessible",
+		"soundmark": "/əkˈsɛsəbl/"
 	},
 	{
 		"chinese": "艺术家需要使他们的作品既原创又易于理解。",
 		"english": "Artists need to make their works both original and accessible.",
 		"soundmark": "/ˈɑːtɪsts/ /niːd/ /tuː/ /meɪk/ /ðer/ /wɜːks/ /bəʊθ/ /əˈrɪdʒənl/ /ænd/ /əkˈsɛsəbl/"
+	},
+	{
+		"chinese": "盐",
+		"english": "Salt",
+		"soundmark": "/sɔːlt/"
+	},
+	{
+		"chinese": "海水",
+		"english": "the sea water",
+		"soundmark": "/ðə/ /siː/ /ˈwɔːtə/"
+	},
+	{
+		"chinese": "提取",
+		"english": "extracted",
+		"soundmark": "/ɪkˈstræktɪd/"
+	},
+	{
+		"chinese": "地下",
+		"english": "the ground",
+		"soundmark": "/ðə/ /ɡraʊnd/"
 	},
 	{
 		"chinese": "盐是从海水中提取或从地下提取的。",
