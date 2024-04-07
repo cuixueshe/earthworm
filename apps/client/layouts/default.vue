@@ -3,7 +3,7 @@
     class="w-full h-full bg-white dark:bg-theme-dark transition-colors dark:text-slate-300 text-slate-600"
   >
     <div
-      class="flex flex-col h-fit min-h-screen m-auto xl:px-2 px-24 items-center"
+      class="flex flex-col h-fit min-h-screen m-auto md:px-24 xl:px-2 px-7 items-center"
     >
       <Navbar></Navbar>
       <div class="flex-1 flex xl:w-[1200px] sm:w-full">
