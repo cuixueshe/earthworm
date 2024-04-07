@@ -1,5 +1,5 @@
-import { beforeEach, describe, expect, it } from "vitest"
-import { SHOW_ERROR_TIP, useErrorTip } from "../errorTip"
+import { beforeEach, describe, expect, it } from "vitest";
+import { SHOW_ERROR_TIP, useErrorTip } from "../errorTip";
 
 describe("use errorTip", () => {
   beforeEach(() => {

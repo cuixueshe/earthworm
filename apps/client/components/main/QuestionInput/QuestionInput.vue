@@ -82,11 +82,11 @@ onMounted(() => {
   resetCloseTip();
 });
 
-focusInputWhenWIndowFocus()
+focusInputWhenWIndowFocus();
 
 watch(
   () => inputValue.value,
-  val => {
+  (val) => {
     setInputValue(val);
     courseTimer.time(String(courseStore.statementIndex));
   }
@@ -215,9 +215,8 @@ function answerError() {
 
   function handleAnswerError() {
     playErrorSound();
-    console.log("isShowErrorTip", isShowErrorTip);
     wrongTimes++;
-    if (isShowErrorTip().toString() === "true" && wrongTimes >= 3) {
+    if (isShowErrorTip() && wrongTimes >= 3) {
       showAnswerTip();
     }
   }

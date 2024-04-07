@@ -139,7 +139,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">输错三次自动显示答案</td>
+            <td class="label-text">自动显示答案（输错三次）</td>
             <td class="w-[300px] text-center">
               <input
                 type="checkbox"

@@ -1,4 +1,4 @@
-import { useLocalStorageBoolean } from "~/utils/localStorage"
+import { useLocalStorageBoolean } from "~/utils/localStorage";
 
 export const SHOW_WORDS_WIDTH = "showWordsWidth";
 

@@ -1,5 +1,5 @@
-import { beforeEach, describe, expect, it } from "vitest"
-import { SHOW_WORDS_WIDTH, useShowWordsWidth } from "../words"
+import { beforeEach, describe, expect, it } from "vitest";
+import { SHOW_WORDS_WIDTH, useShowWordsWidth } from "../words";
 
 describe("use words", () => {
   beforeEach(() => {
