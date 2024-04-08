@@ -24,6 +24,9 @@ enum Mode {
   Fix_Input = "fix-input",
 }
 
+// 标记是否从Fix模式切换到Fix_Input模式
+let modeChangedToFixInput = false;
+
 const separator = " ";
 
 const inputValue = ref("");
@@ -179,7 +182,10 @@ export function useInput({
 
   async function clearNextIncorrectWord() {
     let word = findNextIncorrectWordNew();
-    if (!word) {
+    const preWord = findPreviousIncorrectWord();
+    // 当第一次从Fix模式切换到Fix_Input模式时 判断一下前面还有没有错误单词 有的话定位到第一个
+    if (!word || (preWord && modeChangedToFixInput)) {
+      modeChangedToFixInput = false;
       word = getFirstIncorrectWord()!;
     }
 
@@ -216,7 +222,7 @@ export function useInput({
   async function fixFirstIncorrectWord() {
     if (mode === Mode.Fix) {
       mode = Mode.Fix_Input;
-
+      modeChangedToFixInput = true;
       await clearNextIncorrectWord();
     }
   }
