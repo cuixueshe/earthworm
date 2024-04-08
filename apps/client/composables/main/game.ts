@@ -34,24 +34,28 @@ export function useGameMode() {
   };
 }
 
-export function useDeviceTip() {
-  const messageContent = ref("");
-  const isMessageShow = ref(false);
+const messageContent = ref("");
+const isMessageShow = ref(false);
 
+export function useDeviceTip() {
   const { isMobile, isIpad } = useDevice();
   const { isLandscape } = useIsLandscape();
 
   watchEffect(() => {
-    if (isIpad.value && !isLandscape.value) {
-      messageContent.value = "横屏使用效果更佳哦~";
-      isMessageShow.value = true;
-      return;
-    }
+    isMessageShow.value =
+      (isIpad.value && !isLandscape.value) || isMobile.value;
+
+    console.log(isIpad.value, isLandscape.value, isMobile.value, 222);
+
     if (isMobile.value) {
       messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";
-      isMessageShow.value = true;
+      return;
     }
-    isMessageShow.value = false;
+
+    if (isIpad.value && !isLandscape.value) {
+      messageContent.value = "横屏使用效果更佳哦~";
+      return;
+    }
   });
 
   return {

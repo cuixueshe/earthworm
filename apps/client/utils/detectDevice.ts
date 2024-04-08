@@ -4,10 +4,12 @@ const getDevice = (userAgent: string) => {
   const isAndroid = ref(Boolean(userAgent.match(/Android/i)));
   const isIphone = ref(Boolean(userAgent.match(/iPhone|iPod/i)));
   const isIpad = ref(
-    (/macintosh|mac os x/i.test(navigator.userAgent) &&
-      window.screen.height > window.screen.width &&
-      !navigator.userAgent.match(/(iPhone\sOS)\s([\d_]+)/)) ||
-      navigator.userAgent.match(/(iPad).*OS\s([\d_]+)/)
+    Boolean(
+      (/macintosh|mac os x/i.test(navigator.userAgent) &&
+        window.screen.height > window.screen.width &&
+        !navigator.userAgent.match(/(iPhone\sOS)\s([\d_]+)/)) ||
+        navigator.userAgent.match(/(iPad).*OS\s([\d_]+)/)
+    )
   );
   const isOpera = ref(Boolean(userAgent.match(/Opera Mini/i)));
   const isWindows = ref(Boolean(userAgent.match(/IEMobile/i)));
@@ -36,20 +38,15 @@ function useDevice() {
   return getDevice(userAgent);
 }
 
-function useIsLandscape() {
-  const isLandscape = ref(false);
+const isLandscape = ref(false);
 
+function useIsLandscape() {
   const orientationListener = () => {
     const orientationType = window.screen.orientation.type;
 
-    if (
+    isLandscape.value =
       orientationType === "landscape-primary" ||
-      orientationType === "landscape-secondary"
-    ) {
-      isLandscape.value = true;
-      // alert(isLandscape.value);
-      // alert(11);
-    }
+      orientationType === "landscape-secondary";
   };
 
   onMounted(() => {
