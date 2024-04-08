@@ -108,6 +108,7 @@ const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
+const { updateActiveCourseId } = useActiveCourseId();
 
 watch(showModal, (val) => {
   if (val) {
@@ -131,7 +132,6 @@ watch(showModal, (val) => {
 
 async function completeCourse() {
   const userStore = useUserStore();
-  const { updateActiveCourseId } = useActiveCourseId();
 
   if (userStore.user && courseStore.currentCourse) {
     const { nextCourse } = await courseStore.completeCourse(
@@ -179,6 +179,7 @@ function useGoToNextCourse() {
       return;
     }
 
+    updateActiveCourseId(nextCourseId);
     router.push(`/main/${nextCourseId}`);
   }
 
