@@ -10,7 +10,7 @@ export class CourseController {
   constructor(private courseService: CourseService) {}
 
   @ApiOperation({
-    summary: '游客体验的接口',
+    summary: '返回第一课课程信息，用于游客体验',
   })
   @Get('try')
   tryCourse() {

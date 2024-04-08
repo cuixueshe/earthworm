@@ -11,7 +11,7 @@ export class GameController {
   constructor(private readonly gameService: GameService) {}
 
   @ApiOperation({
-    summary: '开始游戏接口',
+    summary: '开始游戏',
     description:
       '检查用户的学习进度，如果用户尚未开始学习课程，则将其与第一个课程关联，并返回课程ID；如果用户已经开始学习课程，则返回用户上次学习的课程ID。',
   })

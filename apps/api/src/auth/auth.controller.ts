@@ -18,7 +18,7 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @ApiOperation({
-    summary: '登陆接口',
+    summary: '登陆',
   })
   @ApiBody({ type: SignDto, description: '登陆信息' })
   @Post('login')
@@ -27,7 +27,7 @@ export class AuthController {
   }
 
   @ApiOperation({
-    summary: '注册接口',
+    summary: '注册',
   })
   @ApiBody({ type: CreateUserDto, description: '注册信息' })
   @Post('signup')
@@ -36,7 +36,7 @@ export class AuthController {
   }
 
   @ApiOperation({
-    summary: '获取用户信息接口',
+    summary: '获取用户信息',
   })
   @ApiBearerAuth()
   @ApiResponse({
