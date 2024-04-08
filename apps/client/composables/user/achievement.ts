@@ -63,8 +63,7 @@ function getUsingAchievementStore() {
   }
 }
 function getUserID() {
-  // test
-  return JSON.parse(localStorage.getItem("userInfo")!)?.userId || 1;
+  return JSON.parse(localStorage.getItem("userInfo")!)?.userId;
 }
 /** 成就模块处理逻辑
  *  achievementList: 当前用户成就列表
