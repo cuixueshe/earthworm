@@ -5,6 +5,21 @@
 		"soundmark": "/ɪnˈvɒlv/"
 	},
 	{
+		"chinese": "结合",
+		"english": "combination",
+		"soundmark": "/ˌkɒmbɪˈneɪʃən/"
+	},
+	{
+		"chinese": "纯数学",
+		"english": "pure mathematics",
+		"soundmark": "/ˌpjuːr/ /ˈmæθəˈmætɪks/"
+	},
+	{
+		"chinese": "应用数学",
+		"english": "applied mathematics",
+		"soundmark": "/əˈplaɪd/ /mæθəˈmætɪks/"
+	},
+	{
 		"chinese": "纯数学和应用数学的结合",
 		"english": "a combination of pure and applied mathematics",
 		"soundmark": "/ə/ /ˌkɒmbɪˈneɪʃən/ /ʌv/ /pjʊər/ /ænd/ /əˈplaɪd/ /mæθəˈmætɪks/"
@@ -60,6 +75,16 @@
 		"soundmark": "/ðɪs/ /ədˈvɑːnst/ /kɔːs/ /rɪˈkwaɪəz/ /ə/ /ˈbeɪsɪk/ /ˈnɒlɪdʒ/ /ʌv/ /ˌiːkəˈnɒmɪk/ /ˈθɪəri/"
 	},
 	{
+		"chinese": "吸收",
+		"english": "soak up",
+		"soundmark": "/ˈsəʊk/ /ʌp/"
+	},
+	{
+		"chinese": "道路上",
+		"english": "off its road",
+		"soundmark": "/ɒf/ /ɪts/ /rəʊd/"
+	},
+	{
 		"chinese": "吸收道路上的雨水",
 		"english": "soaking up rainwater that runs off its road",
 		"soundmark": "/ˈsəʊkɪŋ/ /ʌp/ /ˈreɪnwɔːtə/ /ðæt/ /rʌnz/ /ɒf/ /ɪts/ /rəʊd/"
@@ -83,6 +108,16 @@
 		"chinese": "被定义为",
 		"english": "are defined as",
 		"soundmark": "/ɑːr/ /dɪˈfaɪnd/ /æz/"
+	},
+	{
+		"chinese": "独立的部分",
+		"english": "separate parts",
+		"soundmark": "/ˈsɛpərət/ /pɑːrts/"
+	},
+	{
+		"chinese": "化合物",
+		"english": "compound",
+		"soundmark": "/ˈkɒmpaʊnd/"
 	},
 	{
 		"chinese": "化学上独立的部分的化合物",

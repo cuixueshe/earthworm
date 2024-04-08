@@ -1,8 +1,38 @@
 [
 	{
+		"chinese": "植物",
+		"english": "plants",
+		"soundmark": "/plænts/"
+	},
+	{
+		"chinese": "持续",
+		"english": "continue",
+		"soundmark": "/kənˈtɪnjuː/"
+	},
+	{
+		"chinese": "生长",
+		"english": "growing",
+		"soundmark": "/ˈɡroʊɪŋ/"
+	},
+	{
+		"chinese": "在...中",
+		"english": "throughout",
+		"soundmark": "/θruːˈaʊt/"
+	},
+	{
 		"chinese": "植物能够在它们的一生中持续生长。",
 		"english": "Plants are able to continue growing throughout their lives.",
 		"soundmark": "/ˈplænts/ /ɑːr/ /ˈeɪbl/ /tuː/ /kənˈtɪnjuː/ /ˈɡroʊɪŋ/ /θruːˈaʊt/ /ðer/ /laɪvz/"
+	},
+	{
+		"chinese": "交上你的论文",
+		"english": "hand in your essays",
+		"soundmark": "/hænd/ /ɪn/ /jɔːr/ /ˈɛseɪz/"
+	},
+	{
+		"chinese": "在星期五中午之前",
+		"english": "by midday on Friday",
+		"soundmark": "/baɪ/ /ˈmɪddeɪ/ /ɒn/ /ˈfraɪdeɪ/"
 	},
 	{
 		"chinese": "你必须在星期五中午之前交上你的论文。",
@@ -10,9 +40,44 @@
 		"soundmark": "/juː/ /mʌst/ /hænd/ /ɪn/ /jɔːr/ /ˈɛseɪz/ /baɪ/ /ˈmɪddeɪ/ /ɒn/ /ˈfraɪdeɪ/"
 	},
 	{
+		"chinese": "重力",
+		"english": "Gravity",
+		"soundmark": "/ˈɡrævɪti/"
+	},
+	{
+		"chinese": "力量",
+		"english": "force",
+		"soundmark": "/fɔːrs/"
+	},
+	{
+		"chinese": "吸引",
+		"english": "attracts",
+		"soundmark": "/əˈtrækts/"
+	},
+	{
 		"chinese": "重力是吸引两个物体相互靠近的力量。",
 		"english": "Gravity is the force that attracts two bodies toward one another.",
 		"soundmark": "/ˈɡrævɪti/ /ɪz/ /ðə/ /fɔːrs/ /ðæt/ /əˈtrækts/ /tuː/ /ˈbɒdiz/ /təˈwɔːrd/ /wʌn/ /əˈnʌðər/"
+	},
+	{
+		"chinese": "城堡",
+		"english": "The castle",
+		"soundmark": "/ˈkæsəl/"
+	},
+	{
+		"chinese": "被设计用来",
+		"english": "was designed",
+		"soundmark": "/wəz/ /dɪˈzaɪnd/"
+	},
+	{
+		"chinese": "旨在吓阻",
+		"english": "to intimidate",
+		"soundmark": "/tuː/ /ɪnˈtɪmɪˌdeɪt/"
+	},
+	{
+		"chinese": "当地人和敌人",
+		"english": "both local people and the enemies",
+		"soundmark": "/boʊθ/ /ˈloʊkəl/ /ˈpiːpəl/ /ænd/ /ðə/ /ˈɛnəmiz/"
 	},
 	{
 		"chinese": "城堡的设计旨在吓阻当地人和敌人。",
@@ -20,9 +85,44 @@
 		"soundmark": "/ˈkæsl/ /wəz/ /dɪˈzaɪnd/ /tuː/ /ɪnˈtɪmɪˌdeɪt/ /boʊθ/ /ˈloʊkəl/ /ˈpipəl/ /ænd/ /ðiː/ /ˈɛnəmiz/"
 	},
 	{
+		"chinese": "股市崩溃",
+		"english": "The stock market cracked",
+		"soundmark": "/ðə/ /stɒk/ /ˈmɑːrkɪt/ /krækt/"
+	},
+	{
+		"chinese": "产生影响",
+		"english": "had repercussions",
+		"soundmark": "/hæd/ /ˌriːpərˈkʌʃənz/"
+	},
+	{
+		"chinese": "在全球范围内",
+		"english": "throughout the world",
+		"soundmark": "/θruːˈaʊt/ /ðə/ /wɜːrld/"
+	},
+	{
 		"chinese": "股市崩溃并在全球范围内产生影响。",
 		"english": "The stock market cracked and had repercussions throughout the world.",
 		"soundmark": "/ðə/ /stɒk/ /ˈmɑːrkɪt/ /krækt/ /ænd/ /hæd/ /ˌriːpərˈkʌʃənz/ /θruːˈaʊt/ /ðə/ /wɜːrld/"
+	},
+	{
+		"chinese": "新闻",
+		"english": "The news",
+		"soundmark": "/ðə/ /nuz/"
+	},
+	{
+		"chinese": "收到",
+		"english": "received",
+		"soundmark": "/rɪˈsiːvd/"
+	},
+	{
+		"chinese": "直到",
+		"english": "until",
+		"soundmark": "/ʌntɪl/"
+	},
+	{
+		"chinese": "下周",
+		"english": "the following week",
+		"soundmark": "/ðə/ /ˈfɒləʊɪŋ/ /wiːk/"
 	},
 	{
 		"chinese": "新闻要到下周才能收到。",
@@ -30,9 +130,44 @@
 		"soundmark": "/ðə/ /nuz/ /ɪz/ /nɒt/ /rɪˈsiːvd/ /ʌntɪl/ /ðə/ /ˈfɒləʊɪŋ/ /wiːk/"
 	},
 	{
+		"chinese": "专员",
+		"english": "The commissioner",
+		"soundmark": "/ðə/ /kəˈmɪʃənər/"
+	},
+	{
+		"chinese": "将资金分配给",
+		"english": "will apportion the funds among",
+		"soundmark": "/wɪl/ /əˈpɔːrʃən/ /ðə/ /fʌndz/ /əˈmʌŋ/"
+	},
+	{
+		"chinese": "所有当局",
+		"english": "all the authorities",
+		"soundmark": "/ɔːl/ /ðə/ /ɔːˈθɒrɪtiz/"
+	},
+	{
 		"chinese": "专员将资金分配给所有当局。",
 		"english": "The commissioner will apportion the funds among all the authorities.",
 		"soundmark": "/ðə/ /kəˈmɪʃənər/ /wɪl/ /əˈpɔːrʃən/ /ðə/ /fʌndz/ /əˈmʌŋ/ /ɔːl/ /ðə/ /ɔːˈθɒrɪtiz/"
+	},
+	{
+		"chinese": "一系列",
+		"english": "A series of",
+		"soundmark": "/ə/ /ˈsɪəriːz/ /əv/"
+	},
+	{
+		"chinese": "观察",
+		"english": "observations",
+		"soundmark": "/ˌɒbzərˈveɪʃənz/"
+	},
+	{
+		"chinese": "在...中进行",
+		"english": "were carried out in",
+		"soundmark": "/wər/ /ˈkærid/ /aʊt/ /ɪn/"
+	},
+	{
+		"chinese": "教室",
+		"english": "the classroom",
+		"soundmark": "/ðə/ /ˈklæsˌruːm/"
 	},
 	{
 		"chinese": "一系列观察在教室里进行。",
