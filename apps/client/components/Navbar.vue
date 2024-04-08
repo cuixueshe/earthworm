@@ -91,9 +91,7 @@
             >
               {{ userStore.user.username }}
             </div>
-            <DropMenu
-              @updateShowModal="handleLogout"
-            />
+            <DropMenu @updateShowModal="handleLogout" />
           </div>
 
           <!-- 登录/注册 -->

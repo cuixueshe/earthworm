@@ -58,6 +58,14 @@ const showDropdown = ref(false);
 const dropdownContainer = ref(null);
 const emit = defineEmits(["updateShowModal"]);
 
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false;
+});
+
+const toggleDropdown = () => {
+  showDropdown.value = !showDropdown.value;
+};
+
 const handleViewUserInfo = () => {
   navigateTo("/user/info");
 };
@@ -72,14 +80,6 @@ const handleSetting = () => {
 const handleLogout = () => {
   emit("updateShowModal", true);
 };
-
-const toggleDropdown = () => {
-  showDropdown.value = !showDropdown.value;
-};
-
-onClickOutside(dropdownContainer, () => {
-  showDropdown.value = false;
-});
 
 const MENU_OPTIONS = [
   {
@@ -151,5 +151,3 @@ const MENU_OPTIONS = [
   },
 ];
 </script>
-
-<style scoped></style>
