@@ -92,7 +92,6 @@
               {{ userStore.user.username }}
             </div>
             <DropMenu
-              v-if="userStore.user"
               @updateShowModal="handleLogout"
             />
           </div>

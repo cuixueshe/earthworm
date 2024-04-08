@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="userStore.user"
     class="dropdown dropdown-end"
     @click="toggleDropdown"
   >
