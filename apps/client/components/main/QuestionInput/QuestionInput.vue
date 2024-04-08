@@ -1,10 +1,5 @@
 <template>
   <div class="text-center">
-    <div class="mt-10 mb-4 text-2xl dark:text-gray-50">
-      {{
-        courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
-      }}
-    </div>
     <div class="relative flex flex-wrap justify-center gap-2 transition-all">
       <template
         v-for="(w, i) in courseStore.words"
@@ -37,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from "vue";
+import { onUnmounted,onMounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -96,6 +91,8 @@ onMounted(() => {
   resetCloseTip();
 });
 
+focusInputWhenWIndowFocus()
+
 watch(
   () => inputValue.value,
   (val) => {
@@ -111,6 +108,20 @@ watch(
     resetCloseTip();
   }
 );
+
+function focusInputWhenWIndowFocus() {
+  const handleFocus = () => {
+    focusInput();
+  };
+
+  onMounted(() => {
+    window.addEventListener("focus", handleFocus);
+  });
+
+  onUnmounted(() => {
+    window.removeEventListener("focus", handleFocus);
+  });
+}
 
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];

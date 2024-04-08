@@ -1,6 +1,31 @@
 <template>
   <div class="space-y-8 min-w-max">
     <section class="space-y-4">
+      <h2 class="text-lg font-medium">游戏模式</h2>
+      <table class="table">
+        <tbody>
+          <tr class="hover">
+            <td class="label-text">模式</td>
+            <td class="w-[300px] text-center">
+              <div class="mr-12 join">
+                <input
+                  v-for="mode in getGameModeOptions()"
+                  class="join-item btn btn-sm"
+                  type="radio"
+                  name="gameMode"
+                  :value="mode.value"
+                  :aria-label="mode.label"
+                  :checked="currentGameMode === mode.value"
+                  @change="toggleGameMode(mode.value as GameMode)"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="space-y-4">
       <h2 class="text-lg font-medium">快捷键设置</h2>
       <table class="table text-base">
         <thead>
@@ -166,6 +191,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useGameMode, GameMode } from "~/composables/user/gameMode";
 import {
   PronunciationType,
   usePronunciation,
@@ -203,6 +229,8 @@ const {
   handleCloseDialog,
   handleKeydown,
 } = useShortcutKeyMode();
+
+const { getGameModeOptions, currentGameMode, toggleGameMode } = useGameMode();
 
 const shortcutKeyBindList = [
   {

@@ -28,6 +28,18 @@ export default {
           },
         },
       },
+      backgroundColor: {
+        "theme-dark": "#05051d",
+      },
+      colors: {
+        "theme-dark": "#05051d",
+      },
+      fontFamily: {
+        customFont: ["CustomFont", "sans-serif"], // 自定义字体
+      },
+      borderColor: {
+        "theme-dark": "#05051d",
+      },
     },
   },
   plugins: [require("daisyui")],
