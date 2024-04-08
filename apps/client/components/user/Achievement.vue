@@ -4,7 +4,7 @@
       v-for="achievement in userAchievementList"
       :key="achievement.id"
       :achievement="achievement"
-      @click="handleSetAchievementActive(achievement)"
+      @click="handleSetAchievementBeActive(achievement)"
     />
     <div
       v-if="userAchievementList.length === 0"
@@ -52,7 +52,7 @@ const {
   userAchievement,
   handleHideModal,
   handleChangeAchievementActive,
-  handleSetAchievementActive,
+  handleSetAchievementBeActive,
   initUserAchievementList,
 } = useAchievement();
 

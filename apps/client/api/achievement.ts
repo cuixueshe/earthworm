@@ -18,7 +18,7 @@ export interface SetDto {
 export interface UserDto {
   userID: number;
 }
-interface UserInfo {
+export interface UserInfo {
   id: number;
   phone: string;
   name: string;

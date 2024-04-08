@@ -71,7 +71,6 @@ function getUserID() {
  *  getAchievementList: 获取当前用户的所有的成就列表
  *  setAchievementActive: 设置成就为使用中状态
  *  userAchievementList: 当前用户的成就列表
- *  getUserAchievementList: 获取当前用户的成就列表
  *  handleAwardAchievement: 颁发成就
  */
 
@@ -85,31 +84,32 @@ export const useAchievement = () => {
     id: 0,
     description: "",
   });
+
   function handleShowModal() {
     isShowModal.value = true;
   }
   function handleHideModal() {
     isShowModal.value = false;
   }
-  function getCheckedAchievement() {
-    checkedAchievement.value = achievementList.value.filter((x) => x.isChecked);
-  }
-  function handleOpenAwardDialog() {
-    getCheckedAchievement();
-    if (checkedAchievement.value.length > 0) {
-      handleShowModal();
-    } else {
-      Message.warning("请先选择成就", { duration: 1200 });
-    }
-  }
-  function handleCancel(cb: () => void) {
-    handleHideModal();
-    cb();
+
+  /** 设置用户成就使用状态 */
+  async function initUserAchievementList() {
+    const userID = getUserID();
+    userAchievementList.value = await fetchHaveAchievement({ userID });
+    userAchievementList.value.length && initUsingAchievement();
   }
 
-  async function getAchievementList() {
-    achievementList.value = await fetchAllAchievements();
+  function initUsingAchievement() {
+    const usingAchievementStore = getUsingAchievementStore();
+    const achievementID = usingAchievementStore?.id;
+    if (!achievementID) {
+      const curItem = setUsingFirst();
+      setUsingAchievementStore(curItem);
+    } else {
+      usingAchievementStore.isActive = true;
+    }
   }
+
   function setUsingFirst() {
     const firstItem = userAchievementList.value[0];
     if (firstItem) {
@@ -117,27 +117,7 @@ export const useAchievement = () => {
     }
     return firstItem;
   }
-  // 初始化成就
-  function initUsingAchievement() {
-    const achievementID = getUsingAchievementStore()?.id;
-    if (!achievementID) {
-      const curItem = setUsingFirst();
-      setUsingAchievementStore(curItem);
-    } else {
-      setAchievementBeActive(getUsingAchievementStore());
-    }
-  }
-  async function setAchievementBeActive(achievement: AchievementItem) {
-    achievement.isActive = true;
-  }
-  const getUserAchievementList = async () => {
-    const userID = getUserID();
-    userAchievementList.value = await fetchHaveAchievement({ userID });
-  };
-  async function initUserAchievementList() {
-    await getUserAchievementList();
-    userAchievementList.value.length && initUsingAchievement();
-  }
+
   // 设置成就为使用中状态
   async function setAchievementActive() {
     const data = {
@@ -146,23 +126,44 @@ export const useAchievement = () => {
     };
     await fetchSetUsing(data);
     Message.success("设置成功");
-    setUsingAchievementStore(userAchievement.value);
     userAchievementList.value.forEach((item) => (item.isActive = false));
-    setAchievementBeActive(userAchievement.value);
+    userAchievement.value.isActive = true;
+    setUsingAchievementStore(userAchievement.value);
   }
 
-  function handleSetAchievementActive(achievement: AchievementItem) {
+  function handleSetAchievementBeActive(achievement: AchievementItem) {
     userAchievement.value = { ...achievement };
     handleShowModal();
   }
+
   function handleChangeAchievementActive() {
     setAchievementActive();
     handleHideModal();
   }
-  /** 重置颁布成就勾选状态 */
-  function resetAchievementCheckedStatus() {
-    achievementList.value.forEach((item) => (item.isChecked = false));
+
+  /** 颁布成就 */
+  async function getAchievementList() {
+    achievementList.value = await fetchAllAchievements();
   }
+
+  function handleOpenAwardDialog() {
+    getCheckedAchievement();
+    if (checkedAchievement.value.length > 0) {
+      handleShowModal();
+    } else {
+      Message.warning("请先选择成就", { duration: 1200 });
+    }
+  }
+
+  function getCheckedAchievement() {
+    checkedAchievement.value = achievementList.value.filter((x) => x.isChecked);
+  }
+
+  function handleCancel(cb: () => void) {
+    handleHideModal();
+    cb();
+  }
+
   async function handleAwardAchievement(params: any) {
     const { phone, secretKey } = params;
     const userInfo = await fetchAuthUser({ phone });
@@ -175,6 +176,10 @@ export const useAchievement = () => {
     await fetchPubAchievement(p);
     Message.success("颁发成功");
     resetAchievementCheckedStatus();
+  }
+  
+  function resetAchievementCheckedStatus() {
+    achievementList.value.forEach((item) => (item.isChecked = false));
   }
   return {
     isShowModal,
@@ -189,7 +194,7 @@ export const useAchievement = () => {
     handleCancel,
     handleAwardAchievement,
     handleChangeAchievementActive,
-    handleSetAchievementActive,
+    handleSetAchievementBeActive,
     initUserAchievementList,
   };
 };
