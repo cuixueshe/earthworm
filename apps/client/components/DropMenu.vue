@@ -53,10 +53,8 @@
 import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
 import { ref } from "vue";
-import { useUserStore } from "~/store/user";
 
 const showDropdown = ref(false);
-const userStore = useUserStore();
 const dropdownContainer = ref(null);
 const emit = defineEmits(["updateShowModal"]);
 
