@@ -1,0 +1,117 @@
+<template>
+  <div class="w-full">
+    <div
+      class="flex items-center justify-between mb-10 text-2xl font-medium text-gray-900 dark:text-gray-300"
+    >
+      成就中心
+      <button
+        class="btn btn-primary"
+        @click="handleOpenAwardDialog"
+      >
+        颁发成就
+      </button>
+    </div>
+    <div class="flex flex-wrap gap-5">
+      <AchievementCard
+        v-for="achievement in achievementList"
+        :key="achievement.id"
+        isShowCheckBox
+        :achievement="achievement"
+      />
+    </div>
+  </div>
+  <dialog
+    class="modal"
+    :open="isShowModal"
+  >
+    <div class="modal-box">
+      <h3 class="mb-2 text-lg font-bold">颁发成就</h3>
+      <form
+        @submit.prevent="handleAward"
+        class="space-y-6"
+        novalidate
+      >
+        <div>
+          <label
+            class="block mt-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            成就名称
+          </label>
+          <div class="flex gap-2 mt-2">
+            <div
+              class="badge dark:bg-gray-700 badge-outline"
+              v-for="i in checkedAchievement"
+            >
+              {{ i.name }}
+            </div>
+          </div>
+        </div>
+
+        <FormInput
+          label="授权指令"
+          name="secretKey"
+          placeholder="请输入授权指令"
+          v-model="secretKey"
+          :errorMessage="secretKeyError"
+        />
+        <FormInput
+          label="用户手机号"
+          name="phone"
+          placeholder="请输入用户手机号"
+          v-model="phone"
+          :errorMessage="phoneError"
+        />
+        <div class="modal-action">
+          <form method="dialog">
+            <button
+              class="btn"
+              @click="handleCancel(resetForm)"
+            >
+              取消
+            </button>
+          </form>
+
+          <button
+            class="btn btn-primary"
+            type="submit"
+          >
+            确定
+          </button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+</template>
+
+<script setup lang="ts">
+import { onMounted } from "vue";
+import AchievementCard from "~/components/user/AchievementCard.vue";
+import { useAchievement } from "~/composables/user/achievement";
+import FormInput from "~/pages/Auth/FormInput.vue";
+import { useAwardForm } from "./hooks/useAwardForm";
+const {
+  handleSubmit,
+  phone,
+  phoneError,
+  secretKey,
+  secretKeyError,
+  resetForm,
+} = useAwardForm();
+const {
+  achievementList,
+  getAchievementList,
+  checkedAchievement,
+  isShowModal,
+  handleCancel,
+  handleOpenAwardDialog,
+  handleAwardAchievement,
+} = useAchievement();
+
+const handleAward = handleSubmit(async (values) => {
+  await handleAwardAchievement(values);
+  handleCancel(resetForm);
+});
+onMounted(() => {
+  getAchievementList();
+});
+</script>

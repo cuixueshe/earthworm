@@ -1,11 +1,11 @@
-import { Controller, Post, Body, UseGuards, Get, Put } from '@nestjs/common';
-import { UserProgressService } from './user-progress.service';
+import { Body, Controller, Get, Post, Put, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '../auth/auth.guard';
+import { User, UserEntity } from '../user/user.decorators';
 import {
   CreateUserProgressDto,
   UpdateUserProgressDto,
 } from './model/user-progress.dto';
-import { User, UserEntity } from '../user/user.decorators';
+import { UserProgressService } from './user-progress.service';
 
 @Controller('user-progress')
 export class UserProgressController {

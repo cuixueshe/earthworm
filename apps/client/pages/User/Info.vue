@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-full flex-1 justify-center px-6 py-12 lg:px-8">
+  <div class="flex justify-center flex-1 min-h-full px-6 py-12 lg:px-8">
     <UserMenus
       :menus="userMenus"
       :defaultMenuName="defaultMenuName"
@@ -14,8 +14,9 @@
 <script setup lang="ts">
 import { computed, ref, watchEffect } from "vue";
 import { useRoute } from "vue-router";
-import UserMenus from "~/components/user/Menu.vue";
+import UserAchievement from "~/components/user/Achievement.vue";
 import UserHome from "~/components/user/Home.vue";
+import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
 const route = useRoute();
@@ -23,6 +24,7 @@ const route = useRoute();
 interface ComponentMap {
   Home: typeof UserHome;
   Setting: typeof UserSetting;
+  Achievement: typeof UserAchievement;
 }
 
 interface Menu {
@@ -33,11 +35,13 @@ interface Menu {
 const componentMap: ComponentMap = {
   Home: UserHome,
   Setting: UserSetting,
+  Achievement: UserAchievement,
 };
 
 const userMenus = ref([
   { name: "主页", component: "Home" },
   { name: "设置", component: "Setting" },
+  { name: "我的成就", component: "Achievement" },
 ]);
 
 const currentComponent = ref(componentMap.Home);

@@ -10,6 +10,7 @@ export const tpl_1 = ({
   courseNum,
   totalRecordNumber,
   totalTime,
+  usingAchievement,
 }: ShareImageTemplateData) => {
   return {
     type: "div",
@@ -40,6 +41,18 @@ export const tpl_1 = ({
                 props: {
                   tw: "text-slate-400 text-lg mb-6",
                   children: `恭喜您一共完成 ${totalRecordNumber} 道题，用时${totalTime}`,
+                },
+              },
+              {
+                type: "img",
+                props: {
+                  src: `${usingAchievement!.achievementImg}`,
+                  width: "55",
+                  height: "55",
+                  alt: "Contributor logo",
+                  tw: `${usingAchievement.isActive}`
+                    ? "absolute right-0 top-0 mt-4 mr-4"
+                    : "hidden",
                 },
               },
               {
