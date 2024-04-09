@@ -132,7 +132,7 @@ pnpm test:unit:watch
 Mainly Jest single test and end-to-end test, but need to access the test database, so you need to ensure that
 
 1. testdb and testRedis services in Docker Compose started normally
-2. The configuration information in the `.env.test` file is correct. If there is no such file, you can copy the contents of the `apps/api/.env.example` file to the `apps/api/.env.test` file. The following command is provided to directly use
+2. The configuration information in the `.env.test` file is correct. If there is no such file, you can copy the contents of the `apps/api/.env.test.example` file to the `apps/api/.env.test` file. The following command is provided to directly use
 
 Execute the following command:
 

@@ -132,7 +132,7 @@ pnpm test:unit:watch
 主要就是 Jest 的单测和端对端测试，但需要接入测试的数据库，所以需要先确保
 
 1. Docker Compose 中的 testdb 和 testRedis 服务正常启动
-2. `.env.test` 文件中的配置信息是正确的，如果没有这个文件，可以复制 `apps/api/.env.example` 文件内容到 `apps/api/.env.test` 文件，下面有提供命令直接用
+2. `.env.test` 文件中的配置信息是正确的，如果没有这个文件，可以复制 `apps/api/.env.test.example` 文件内容到 `apps/api/.env.test` 文件，下面有提供命令直接用
 
 执行以下命令：
 
