@@ -65,8 +65,6 @@ const emit = defineEmits(["updateShowModal"]);
 watch(
   () => route.path,
   () => {
-    console.log(route.path, "==");
-
     displayBack(route.path, router.options.history.state.back);
   }
 );
