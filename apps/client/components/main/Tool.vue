@@ -105,10 +105,12 @@
     >
       排行榜
     </div>
-    <div
-      class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
-      :style="{ width: currentPercentage + '%' }"
-    ></div>
+    <div class="progress-container">
+      <div
+        class="progress-bar"
+        :style="{ width: currentPercentage + '%' }"
+      ></div>
+    </div>
     <Contents></Contents>
   </div>
   <RankList></RankList>
@@ -123,13 +125,13 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
 import RankList from "~/components/rank/RankingList.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
 import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";
@@ -168,7 +170,7 @@ function useDoAgain() {
     clearQuestionInput();
     focusInput();
     showQuestion();
-    courseTimer.reset()
+    courseTimer.reset();
   }
 
   return {
@@ -182,6 +184,27 @@ const { toggleContents } = useContent();
 </script>
 
 <style scoped>
+.progress-container {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 100%;
+  height: 17px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid rgba(147, 112, 219, 0.4);
+  padding: 3px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-image: linear-gradient(to right, #957dad, #730cb8);
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
 .icon-item {
   @apply w-6 h-6;
 }
