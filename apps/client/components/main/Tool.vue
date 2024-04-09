@@ -71,7 +71,7 @@
       </NuxtLink>
     </div>
     <div class="ml-4 mr-1 text-gray-400">
-      {{ coursesStore.currentCourse?.title }}
+      {{ courseStore.currentCourse?.title }}
     </div>
     <div
       class="link-item"
@@ -105,10 +105,12 @@
     >
       排行榜
     </div>
-    <div class="progress-container">
+    <div
+      class="absolute left-0 right-0 bottom-[-24px] h-[18px] p-[2px] border border-purple-300 rounded-lg"
+    >
       <div
-        class="progress-bar"
-        :style="{ width: currentPercentage + '%' }"
+        class="h-full bg-gradient-to-r from-purple-200 to-purple-400 dark:from-purple-300 dark:to-purple-600 rounded-lg"
+        :style="{ width: `${currentPercentage}%` }"
       ></div>
     </div>
     <Contents></Contents>
@@ -139,6 +141,8 @@ import StudyVideoLink from "./StudyVideoLink.vue";
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
+const { toggleContents } = useContent();
+const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
@@ -154,9 +158,6 @@ const currentPercentage = computed(() => {
   ).toFixed(2);
 });
 
-const coursesStore = useCourseStore();
-const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
-
 function useDoAgain() {
   const showTipModal = ref<boolean>(false);
   const { showQuestion } = useGameMode();
@@ -166,7 +167,7 @@ function useDoAgain() {
   }
 
   function handleTipConfirm() {
-    coursesStore.doAgain();
+    courseStore.doAgain();
     clearQuestionInput();
     focusInput();
     showQuestion();
@@ -179,32 +180,9 @@ function useDoAgain() {
     handleTipConfirm,
   };
 }
-
-const { toggleContents } = useContent();
 </script>
 
 <style scoped>
-.progress-container {
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  width: 100%;
-  height: 17px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: transparent;
-  border: 2px solid rgba(147, 112, 219, 0.4);
-  padding: 3px;
-}
-
-.progress-bar {
-  height: 100%;
-  background-image: linear-gradient(to right, #957dad, #730cb8);
-  transition: width 0.5s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-}
-
 .icon-item {
   @apply w-6 h-6;
 }
