@@ -12,7 +12,7 @@ By constructing sentences with conjunctions, it helps you learn English better~ 
 
 **The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors!**
 
-### 0. Requirements
+### Requirements
 
 - **pnpm version >= 8**
 
@@ -214,11 +214,14 @@ docker images
 ## 🤝 Frontend Development Guideline
 
 1. Do not Destructure Pinia store.
-  - The readability will be better when using `store`
-  - Destructuring can lead to reactivity loss and using `storeToRefs` is also quite cumbersome
+
+   - The readability will be better when using `store`
+   - Destructuring can lead to reactivity loss and using `storeToRefs` is also quite cumbersome
+
 2. Avoid including UI logic in composables.
-  - Such as `useMessage`
-  - We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
+
+   - Such as `useMessage`
+   - We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
 
 ## 🌟 Contributing
 
