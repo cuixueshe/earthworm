@@ -109,7 +109,7 @@
       class="absolute left-0 right-0 bottom-[-24px] h-[18px] p-[2px] border border-purple-300 rounded-lg"
     >
       <div
-        class="h-full bg-gradient-to-r from-purple-200 to-purple-400 dark:from-purple-300 dark:to-purple-600 rounded-lg"
+        class="h-full bg-gradient-to-r from-purple-200 to-purple-400 dark:from-purple-300 dark:to-purple-600 rounded-lg transition-all"
         :style="{ width: `${currentPercentage}%` }"
       ></div>
     </div>

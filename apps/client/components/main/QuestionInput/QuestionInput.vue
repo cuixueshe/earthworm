@@ -239,8 +239,8 @@ function handleAnswerRight() {
 
   if (isAutoNextQuestion()) {
     // 自动下一题
-    courseStore.toNextStatement();
     courseStore.isAllDone() && showSummary();
+    courseStore.toNextStatement();
   } else {
     showAnswer();
   }
