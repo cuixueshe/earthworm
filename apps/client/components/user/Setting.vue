@@ -139,7 +139,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">答题正确自动下一题</td>
+            <td class="label-text">答题正确后自动下一题</td>
             <td class="w-[300px] text-center">
               <input
                 type="checkbox"

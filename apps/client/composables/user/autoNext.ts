@@ -1,18 +1,18 @@
 import { useLocalStorageBoolean } from "~/utils/localStorage";
 
-export const AUTO_TONEXTQUESTION = "autotonextquestion";
+export const AUTO_NEXT_QUESTION = "autoNextQuestion";
 
 export function useAutoNextQuestion() {
   const {
     value: autoNextQuestion,
-    isTrue: isAutoQuestion,
+    isTrue: isAutoNextQuestion,
     toggle: toggleAutoQuestion,
     remove: removeAutoQuestion,
-  } = useLocalStorageBoolean(AUTO_TONEXTQUESTION, false); // 默认开启
+  } = useLocalStorageBoolean(AUTO_NEXT_QUESTION, false);
 
   return {
     autoNextQuestion,
-    isAutoQuestion,
+    isAutoNextQuestion,
     toggleAutoQuestion,
     removeAutoQuestion,
   };

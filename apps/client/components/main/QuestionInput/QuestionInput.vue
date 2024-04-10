@@ -35,6 +35,7 @@ import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useSummary } from "~/composables/main/summary";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
@@ -53,14 +54,15 @@ const {
   getInputCursorPosition,
 } = useQuestionInput();
 
-const { showAnswer, showQuestion } = useGameMode();
+const { showAnswer } = useGameMode();
+const { showSummary } = useSummary();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError, resetCloseTip } = answerError();
-const { isAutoQuestion } = useAutoNextQuestion();
+const { isAutoNextQuestion } = useAutoNextQuestion();
 const {
   inputValue,
   userInputWords,
@@ -232,16 +234,15 @@ function answerError() {
 }
 
 function handleAnswerRight() {
-  if (isAutoQuestion()) {
-    playRightSound(); // 正确提示
+  courseTimer.timeEnd(String(courseStore.statementIndex)); // 停止当前题目的计时
+  playRightSound();
+
+  if (isAutoNextQuestion()) {
+    // 自动下一题
     courseStore.toNextStatement();
-    showQuestion();
-    hiddenAnswerTip();
+    courseStore.isAllDone() && showSummary();
   } else {
-    playRightSound(); // 正确提示
     showAnswer();
-    hiddenAnswerTip();
-    courseTimer.timeEnd(String(courseStore.statementIndex));
   }
 }
 
