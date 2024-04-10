@@ -71,7 +71,7 @@
       </NuxtLink>
     </div>
     <div class="ml-4 mr-1 text-gray-400">
-      {{ coursesStore.currentCourse?.title }}
+      {{ courseStore.currentCourse?.title }}
     </div>
     <div
       class="link-item"
@@ -106,9 +106,13 @@
       排行榜
     </div>
     <div
-      class="absolute left-0 bottom-[-12px] h-[12px] bg-green-500 rounded rounded-tl-none rounded-bl-none transition-all"
-      :style="{ width: currentPercentage + '%' }"
-    ></div>
+      class="absolute left-0 right-0 bottom-[-24px] h-[18px] p-[2px] border border-purple-300 rounded-lg"
+    >
+      <div
+        class="h-full bg-gradient-to-r from-purple-200 to-purple-400 dark:from-purple-300 dark:to-purple-600 rounded-lg"
+        :style="{ width: `${currentPercentage}%` }"
+      ></div>
+    </div>
     <Contents></Contents>
   </div>
   <RankList></RankList>
@@ -123,13 +127,13 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
+import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
 import RankList from "~/components/rank/RankingList.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
 import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
 import StudyVideoLink from "./StudyVideoLink.vue";
@@ -137,6 +141,8 @@ import StudyVideoLink from "./StudyVideoLink.vue";
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
+const { toggleContents } = useContent();
+const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
@@ -152,9 +158,6 @@ const currentPercentage = computed(() => {
   ).toFixed(2);
 });
 
-const coursesStore = useCourseStore();
-const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
-
 function useDoAgain() {
   const showTipModal = ref<boolean>(false);
   const { showQuestion } = useGameMode();
@@ -164,11 +167,11 @@ function useDoAgain() {
   }
 
   function handleTipConfirm() {
-    coursesStore.doAgain();
+    courseStore.doAgain();
     clearQuestionInput();
     focusInput();
     showQuestion();
-    courseTimer.reset()
+    courseTimer.reset();
   }
 
   return {
@@ -177,8 +180,6 @@ function useDoAgain() {
     handleTipConfirm,
   };
 }
-
-const { toggleContents } = useContent();
 </script>
 
 <style scoped>

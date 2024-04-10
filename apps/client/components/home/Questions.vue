@@ -12,18 +12,18 @@
     />
     <div class="divide-y divide-gray-800 space-y-4 py-16">
       <template
-        v-for="(qs_item, qs_index) in QUESTIONS"
-        :key="qs_index"
+        v-for="(qsItem, qsIndex) in QUESTIONS"
+        :key="qsIndex"
       >
         <details
           class="group"
-          :open="qs_index === 0"
+          :open="qsIndex === 0"
         >
           <summary
             class="flex justify-between items-center cursor-pointer py-5"
           >
-            <h2 class="text-lg font-medium dark:text-white opacity-75">
-              {{ qs_item.title }}
+            <h2 class="text-lg font-medium text-black dark:text-gray-300">
+              {{ qsItem.title }}
             </h2>
             <span class="icon">
               <svg
@@ -43,17 +43,17 @@
             </span>
           </summary>
           <div
-            class="transition-max-height duration-500 ease-in-out overflow-hidden"
+            class="transition-max-height dark:text-gray-500 duration-500 ease-in-out overflow-hidden"
           >
             <template
-              v-for="(as_item, as_index) in qs_item.content"
-              :key="`content-${as_index}`"
+              v-for="(asItem, asIndex) in qsItem.content"
+              :key="`content-${asIndex}`"
             >
               <p class="py-2">
-                <span v-if="qs_item.content.length > 1"
-                  >{{ as_index + 1 }}.
+                <span v-if="qsItem.content.length > 1"
+                  >{{ asIndex + 1 }}.
                 </span>
-                {{ as_item }}
+                {{ asItem }}
               </p>
             </template>
           </div>

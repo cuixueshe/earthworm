@@ -84,4 +84,8 @@ describe("formatSecondsToTime", () => {
   it("formats hours, minutes, and seconds correctly", () => {
     expect(formatSecondsToTime(3661)).toBe("1时1分1秒");
   });
+
+  it("formats 0 seconds correctly", () => {
+    expect(formatSecondsToTime(0)).toBe("0秒");
+  });
 });

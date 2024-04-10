@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from "vue";
+import { onUnmounted,onMounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -80,6 +80,8 @@ onMounted(() => {
   resetCloseTip();
 });
 
+focusInputWhenWIndowFocus()
+
 watch(
   () => inputValue.value,
   (val) => {
@@ -95,6 +97,20 @@ watch(
     resetCloseTip();
   }
 );
+
+function focusInputWhenWIndowFocus() {
+  const handleFocus = () => {
+    focusInput();
+  };
+
+  onMounted(() => {
+    window.addEventListener("focus", handleFocus);
+  });
+
+  onUnmounted(() => {
+    window.removeEventListener("focus", handleFocus);
+  });
+}
 
 function getWordsClassNames(index: number) {
   const word = userInputWords[index];
@@ -235,7 +251,7 @@ function handleKeydown(e: KeyboardEvent) {
   handleKeyboardInput(e, {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
-      rightCallback:  handleAnswerRight, 
+      rightCallback: handleAnswerRight,
       errorCallback: handleAnswerError, // 错误提示
     },
   });
