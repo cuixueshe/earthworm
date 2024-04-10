@@ -61,21 +61,20 @@ const showDropdown = ref(false);
 const dropdownContainer = ref(null);
 const isDisplay = ref(false);
 const emit = defineEmits(["updateShowModal"]);
-const displayBack = (cur: string, prev: any) => {
-  if (cur.includes("/user/info") && prev.includes("/main")) {
-    isDisplay.value = true;
-  } else {
-    isDisplay.value = false;
-  }
-};
+
 watch(
   () => route.path,
   () => {
     displayBack(route.path, router.options.history.state.back);
   }
 );
-const BackGames = () => {
-  router.back();
+
+const displayBack = (cur: string, prev: any) => {
+  if (cur.includes("/user/info") && prev.includes("/main")) {
+    isDisplay.value = true;
+  } else {
+    isDisplay.value = false;
+  }
 };
 
 onClickOutside(dropdownContainer, () => {
@@ -84,6 +83,10 @@ onClickOutside(dropdownContainer, () => {
 
 const toggleDropdown = () => {
   showDropdown.value = !showDropdown.value;
+};
+
+const handleBackGames = () => {
+  router.back();
 };
 
 const handleViewUserInfo = () => {
@@ -122,7 +125,7 @@ const MENU_OPTIONS = [
   },
   {
     title: "Back GamePage",
-    eventName: BackGames,
+    eventName: handleBackGames,
     icon: ` <svg
                       t="1711877211104"
                       class="icon"
