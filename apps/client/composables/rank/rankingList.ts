@@ -8,9 +8,8 @@ import {
 } from "~/api/rank";
 import Message from "~/components/main/Message/useMessage";
 
-function cacheRanking() {
-  let rankingCache: Record<string, ProgressRankVo> = {};
-
+let rankingCache: Record<string, ProgressRankVo> = {};
+export function cacheRanking() {
   function cleanRankingCache() {
     rankingCache = {};
   }
@@ -28,6 +27,7 @@ function cacheRanking() {
   }
 
   return {
+    rankingCache,
     saveRankingCache,
     getRankingCache,
     hasRankingCache,
@@ -43,6 +43,7 @@ export const useRanking = defineStore("ranking", () => {
     cleanRankingCache,
   } = cacheRanking();
 
+  const rankModal = ref(false); // 需要作用于不同页面
   const isLoading = ref(false);
   const currentPeriod = ref<string>("weekly");
   const rankingList = ref<RankingItemType[]>([]);
@@ -107,8 +108,6 @@ export const useRanking = defineStore("ranking", () => {
 
     return res;
   }
-
-  const rankModal = ref(false); // 需要作用于不同页面
 
   async function showRankModal() {
     rankModal.value = true;

@@ -33,10 +33,12 @@
 <script setup lang="ts">
 import { useVirtualList } from "@vueuse/core";
 import { computed, onMounted } from "vue";
+import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
 
 const coursesStore = useCourseStore();
+const { showQuestion } = useGameMode();
 const { hideContents, isShowContents, watchClickOutside } = useContent();
 
 const contentsList = computed(() => {
@@ -68,6 +70,7 @@ function getItemClassNames(index: number) {
 
 function jumpTo(index: number) {
   hideContents();
+  showQuestion();
   coursesStore.toSpecificStatement(index);
 }
 </script>

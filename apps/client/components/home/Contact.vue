@@ -19,7 +19,7 @@
           <p class="mt-4 max-w-[16rem] text-base leading-relaxed typing">
             一起来加入我们
             <span
-              class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
+              class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:to-gray-100"
               >Earthworm</span
             >!
           </p>
@@ -85,7 +85,7 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                 Open source
+                  Open Source
                 </a>
               </li>
 
@@ -94,7 +94,7 @@
                   href="https://github.com/cuixueshe/earthworm/issues"
                   class="transition hover:opacity-75"
                 >
-                 Issues
+                  Issues
                 </a>
               </li>
 
@@ -103,7 +103,7 @@
                   href="https://github.com/cuixueshe/earthworm/issues/91"
                   class="transition hover:opacity-75"
                 >
-                 贡献代码
+                  贡献代码
                 </a>
               </li>
             </ul>

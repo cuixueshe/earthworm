@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     v-if="noteLink"
-    class="tooltip text-xl cursor-pointer fill-current hover:text-[#d946ef]"
+    class="tooltip text-xl cursor-pointer fill-current hover:text-[#d946ef] z-50"
     :data-tip="NOTE_TIP"
     :href="noteLink"
     target="_blank"
