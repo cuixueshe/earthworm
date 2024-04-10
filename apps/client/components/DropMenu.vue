@@ -55,13 +55,19 @@ import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
 import { ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { BackGame } from "~/composables/main/BackGame";
-const { displayBack, isDisplay } = BackGame();
 const route = useRoute();
 const router = useRouter();
 const showDropdown = ref(false);
 const dropdownContainer = ref(null);
+const isDisplay = ref(false);
 const emit = defineEmits(["updateShowModal"]);
+const displayBack = (cur: string, prev: any) => {
+  if (cur.includes("/user/info") && prev.includes("/main")) {
+    isDisplay.value = true;
+  } else {
+    isDisplay.value = false;
+  }
+};
 watch(
   () => route.path,
   () => {
