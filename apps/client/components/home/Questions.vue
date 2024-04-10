@@ -10,7 +10,7 @@
         `我们会尽快回复您！`,
       ]"
     />
-    <div class="divide-y divide-gray-800 space-y-4 py-16">
+    <div class="divide-y divide-gray-100 dark:divide-gray-800 py-16">
       <template
         v-for="(qsItem, qsIndex) in QUESTIONS"
         :key="qsIndex"
@@ -43,7 +43,7 @@
             </span>
           </summary>
           <div
-            class="transition-max-height dark:text-gray-500 duration-500 ease-in-out overflow-hidden"
+            class="mb-4 transition-max-height dark:text-gray-500 duration-500 ease-in-out overflow-hidden"
           >
             <template
               v-for="(asItem, asIndex) in qsItem.content"

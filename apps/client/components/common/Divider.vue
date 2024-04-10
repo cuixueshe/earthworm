@@ -2,12 +2,12 @@
   <div class="w-full pt-24">
     <span class="relative flex justify-center">
       <div
-        class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+          class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
       ></div>
       <div
-        class="w-8 h-3.5 bg-black rounded-lg absolute -top-2 flex justify-center items-center"
+          class="w-8 h-3.5 bg-gray-600 dark:bg-gray-400 rounded-lg absolute -top-2 flex justify-center items-center"
       >
-        <div class="w-6 bg-white rounded-lg h-2"></div>
+        <div class="w-6 bg-white dark:bg-theme-dark rounded-lg h-2"></div>
       </div>
     </span>
   </div>
