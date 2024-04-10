@@ -1,15 +1,16 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
-import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { fetchCompleteCourse } from "~/api/course";
+import lyric from "~/assets/music/demo.json";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
-import { useUserStore } from "~/store/user";
 
 interface Statement {
   id: number;
   chinese: string;
   english: string;
-  soundmark: string;
+  soundmark?: string;
+  [k: string]: any;
 }
 
 export interface Course {
@@ -93,14 +94,20 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(courseId: number) {
     if (courseId === currentCourse.value?.id) return;
 
-    const userStore = useUserStore();
-    if (!userStore.user) {
-      let course = await fetchTryCourse();
-      currentCourse.value = course;
-    } else {
-      let course = await fetchCourse(courseId);
-      currentCourse.value = course;
-    }
+    // const userStore = useUserStore();
+    // if (!userStore.user) {
+    //   let course = await fetchTryCourse();
+    //   currentCourse.value = course;
+    // } else {
+    //   let course = await fetchCourse(courseId);
+    //   currentCourse.value = course;
+    // }
+
+    currentCourse.value = {
+      id: 1,
+      title: "音乐模式测试课程",
+      statements: lyric,
+    };
 
     statementIndex.value = loadProgress(courseId);
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col pt-2">
+  <div class="w-full flex flex-col pt-2 relative">
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
