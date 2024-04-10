@@ -52,7 +52,15 @@
     </div>
 
     <div class="w-full flex justify-center mt-20">
-      <Player videoUrl="http://vjs.zencdn.net/v/oceans.mp4" />
+      <img
+        alt=""
+        src="~/assets/home-page-preview.png"
+        class="w-3/4"
+      />
+
+      <!-- demo video -->
+<!-- <Player videoUrl="https://media.w3.org/2010/05/sintel/trailer.mp4"/> -->
+      
     </div>
 
     <CommonDivider />
@@ -60,7 +68,6 @@
 </template>
 
 <script setup lang="ts">
-  import Player from "@/components/Player/Player.vue";
 
   const emit = defineEmits(["startEarthworm"]);
 
