@@ -107,10 +107,10 @@
               @click="
                 route.name === 'Auth-Login' ? handleSignup() : handleLogin()
               "
-              aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
-              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
+              aria-label="route.name === 'Auth-Login' ? '注册' : '登录'"
+              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500 whitespace-nowrap"
             >
-              {{ route.name === "Auth-Login" ? "Register" : "Login" }}
+              {{ route.name === "Auth-Login" ? "注册" : "登录" }}
             </button>
           </div>
         </div>
@@ -126,62 +126,62 @@
 </template>
 
 <script setup lang="ts">
-import { navigateTo } from "nuxt/app";
-import { computed, ref } from "vue";
-import { useRoute } from "vue-router";
-import Message from "~/components/main/Message/useMessage";
-import { Theme, useDarkMode } from "~/composables/darkMode";
-import { useUserStore } from "~/store/user";
-import { cleanToken } from "~/utils/token";
-import DropMenu from "./DropMenu.vue";
-import MessageBox from "./main/MessageBox/MessageBox.vue";
+  import { navigateTo } from "nuxt/app";
+  import { computed, ref } from "vue";
+  import { useRoute } from "vue-router";
+  import Message from "~/components/main/Message/useMessage";
+  import { Theme, useDarkMode } from "~/composables/darkMode";
+  import { useUserStore } from "~/store/user";
+  import { cleanToken } from "~/utils/token";
+  import DropMenu from "./DropMenu.vue";
+  import MessageBox from "./main/MessageBox/MessageBox.vue";
 
-const route = useRoute();
-const userStore = useUserStore();
-const { toggleDarkMode, darkMode } = useDarkMode();
+  const route = useRoute();
+  const userStore = useUserStore();
+  const { toggleDarkMode, darkMode } = useDarkMode();
 
-const HEADER_OPTIONS = [
-  { name: "主页", anchor: "home" },
-  // { name: "What", anchor: "what" },
-  { name: "功能", anchor: "features" },
-  // { name: "Pricing", anchor: "pricing" },
-  { name: "问题", anchor: "faq" },
-  { name: "联系我们", anchor: "contact" },
-];
-const isShowModal = ref(false);
-const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-const headerClasses = computed(() => {
-  const isHomePage = route.path === "/";
+  const HEADER_OPTIONS = [
+    { name: "主页", anchor: "home" },
+    // { name: "What", anchor: "what" },
+    { name: "功能", anchor: "features" },
+    // { name: "Pricing", anchor: "pricing" },
+    { name: "问题", anchor: "faq" },
+    { name: "联系我们", anchor: "contact" },
+  ];
+  const isShowModal = ref(false);
+  const isDarkMode = computed(() => darkMode.value === Theme.DARK);
+  const headerClasses = computed(() => {
+    const isHomePage = route.path === "/";
 
-  return {
-    sticky: isHomePage,
+    return {
+      sticky: isHomePage,
+    };
+  });
+
+  const handleLogin = () => {
+    navigateTo("/auth/login");
   };
-});
 
-const handleLogin = () => {
-  navigateTo("/auth/login");
-};
+  const handleSignup = () => {
+    navigateTo("/auth/signup");
+  };
 
-const handleSignup = () => {
-  navigateTo("/auth/signup");
-};
+  const handleLogout = () => {
+    isShowModal.value = true;
+  };
 
-const handleLogout = () => {
-  isShowModal.value = true;
-};
-
-const handleLogoutConfirm = () => {
-  userStore.logoutUser();
-  cleanToken();
-  try {
-    Message.success("You've been logged out successfully!", {
-      duration: 2000,
-      onLeave() {
-        navigateTo("/");
-      },
-    });
-  } catch (error) {
-    Message.error("logout error!");
-  }
-};
+  const handleLogoutConfirm = () => {
+    userStore.logoutUser();
+    cleanToken();
+    try {
+      Message.success("You've been logged out successfully!", {
+        duration: 2000,
+        onLeave() {
+          navigateTo("/");
+        },
+      });
+    } catch (error) {
+      Message.error("logout error!");
+    }
+  };
 </script>

@@ -5,14 +5,14 @@ export function useLoginForm() {
   const schema = yup.object({
     phone: yup
       .string()
-      .required("Please input your phone number")
-      .matches(/^\d{7,15}$/, "Please input a valid phone number"),
+      .required("请输入您的电话号码")
+      .matches(/^\d{7,15}$/, "请输入有效的电话号码"),
     password: yup
       .string()
-      .required("Please input your password")
-      .min(6, "Password length must be greater than 6")
-      .max(20, "Password must be no more than 20 characters")
-      .matches(/^[^\u4e00-\u9fa5]*$/, "Password cannot contain Chinese characters"),
+      .required("请输入您的密码")
+      .min(6, "密码长度必须大于 6 个字符")
+      .max(20, "密码不得超过 20 个字符")
+      .matches(/^[^\u4e00-\u9fa5]*$/, "密码不能包含中文字符"),
   });
 
   const { handleSubmit } = useForm<SignupFormValues>({
@@ -20,7 +20,8 @@ export function useLoginForm() {
   });
 
   const { value: phone, errorMessage: phoneError } = useField<string>("phone");
-  const { value: password, errorMessage: passwordError } = useField<string>("password");
+  const { value: password, errorMessage: passwordError } =
+    useField<string>("password");
 
   return {
     handleSubmit,

@@ -59,78 +59,80 @@
 </template>
 
 <script setup>
-import { onClickOutside } from '@vueuse/core';
-import { allCountries as countriesData } from "country-telephone-data";
-import { ref } from "vue";
-const emit = defineEmits(["update:modelValue"]);
-const props = defineProps({
-  modelValue: String,
-  errorMessage: String,
-});
-const specialCountries = new Map([
-  ["tw", "中国台湾"],
-  ["hk", "中国香港"],
-  ["mo", "中国澳门"],
-]);
-const countries = ref(
-  countriesData
-    .sort((a, b) => (a.dialCode > b.dialCode ? 1 : -1))
-    .map((country) => {
-      const specialName = specialCountries.get(country.iso2);
-      if (specialName) {
-        return {
-          ...country,
-          name: specialName,
-          flag: countryCodesToFlagEmoji(country.iso2),
-        };
-      } else {
-        return {
-          ...country,
-          flag: countryCodesToFlagEmoji(country.iso2),
-        };
-      }
-    })
-);
-const defaultCountryIso2 = "cn";
-const defaultCountry = countries.value.find(
-  (country) => country.iso2 === defaultCountryIso2
-);
-const selectedCountry = ref(defaultCountry || {});
+  import { onClickOutside } from "@vueuse/core";
+  import { allCountries as countriesData } from "country-telephone-data";
+  import { ref } from "vue";
+  const emit = defineEmits(["update:modelValue"]);
+  const props = defineProps({
+    modelValue: String,
+    errorMessage: String,
+  });
+  const specialCountries = new Map([
+    ["tw", "中国台湾"],
+    ["hk", "中国香港"],
+    ["mo", "中国澳门"],
+  ]);
+  const countries = ref(
+    countriesData
+      .sort((a, b) => (a.dialCode > b.dialCode ? 1 : -1))
+      .map((country) => {
+        const specialName = specialCountries.get(country.iso2);
+        if (specialName) {
+          return {
+            ...country,
+            name: specialName,
+            flag: countryCodesToFlagEmoji(country.iso2),
+          };
+        } else {
+          return {
+            ...country,
+            flag: countryCodesToFlagEmoji(country.iso2),
+          };
+        }
+      })
+  );
+  const defaultCountryIso2 = "cn";
+  const defaultCountry = countries.value.find(
+    (country) => country.iso2 === defaultCountryIso2
+  );
+  const selectedCountry = ref(defaultCountry || {});
 
-const phoneNumber = ref("");
-const showDropdown = ref(false);
-const dropdownContainer = ref(null);
+  const phoneNumber = ref("");
+  const showDropdown = ref(false);
+  const dropdownContainer = ref(null);
 
-function toggleDropdown() {
-  showDropdown.value = !showDropdown.value;
-}
-
-function selectCountry(country) {
-  selectedCountry.value = country;
-  showDropdown.value = false;
-  emitUpdate();
-}
-
-function handleInput(event) {
-  phoneNumber.value = event.target.value.replace(/\D/g, "");
-  emitUpdate();
-}
-
-function emitUpdate() {
-  const fullPhoneNumber = `+${selectedCountry.value.dialCode}_${phoneNumber.value}`;
-  emit("update:modelValue", fullPhoneNumber);
-}
-
-function countryCodesToFlagEmoji(iso2) {
-  if (["tw"].includes(iso2.toLowerCase())) {
-    iso2 = "cn";
+  function toggleDropdown() {
+    showDropdown.value = !showDropdown.value;
   }
-  return iso2
-    .toUpperCase()
-    .replace(/./g, (char) => String.fromCodePoint(char.charCodeAt(0) + 127397));
-}
 
-onClickOutside(dropdownContainer, () => {
-  showDropdown.value = false
-})
+  function selectCountry(country) {
+    selectedCountry.value = country;
+    showDropdown.value = false;
+    emitUpdate();
+  }
+
+  function handleInput(event) {
+    phoneNumber.value = event.target.value.replace(/\D/g, "");
+    emitUpdate();
+  }
+
+  function emitUpdate() {
+    const fullPhoneNumber = `+${selectedCountry.value.dialCode}_${phoneNumber.value}`;
+    emit("update:modelValue", fullPhoneNumber);
+  }
+
+  function countryCodesToFlagEmoji(iso2) {
+    if (["tw"].includes(iso2.toLowerCase())) {
+      iso2 = "cn";
+    }
+    return iso2
+      .toUpperCase()
+      .replace(/./g, (char) =>
+        String.fromCodePoint(char.charCodeAt(0) + 127397)
+      );
+  }
+
+  onClickOutside(dropdownContainer, () => {
+    showDropdown.value = false;
+  });
 </script>
