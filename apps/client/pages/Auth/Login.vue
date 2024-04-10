@@ -34,7 +34,7 @@
           label="密码"
           name="password"
           type="password"
-          placeholder="请输入你的密码"
+          placeholder="请输入您的密码"
           v-model="password"
           :errorMessage="passwordError"
         />

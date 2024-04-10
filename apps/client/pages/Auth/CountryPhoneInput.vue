@@ -4,7 +4,7 @@
       for="phone"
       class="block text-sm font-medium text-gray-700 dark:text-gray-300"
     >
-      Phone <span class="text-red-500">*</span>
+      手机号码 <span class="text-red-500">*</span>
     </label>
     <div class="mt-2 flex rounded-md shadow-sm relative">
       <div
@@ -47,7 +47,7 @@
           type="tel"
           v-model="phoneNumber"
           @input="handleInput"
-          placeholder="Your phone number"
+          placeholder="请输入您的手机号码"
           class="rounded-r-md border border-gray-300 shadow-sm text-gray-700 dark:text-gray-300 dark:border-gray-600 focus:outline-none dark:bg-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none block w-full px-3 py-1.5 text-sm placeholder-gray-400 dark:placeholder-gray-500 focus:bg-blue-50 dark:focus:bg-gray-600 -ml-px"
         />
       </div>

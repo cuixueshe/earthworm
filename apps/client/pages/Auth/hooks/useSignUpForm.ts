@@ -1,7 +1,7 @@
-import { useForm, useField } from "vee-validate";
-import * as yup from "yup";
-import { ref, type Ref } from "vue";
 import { PhoneNumberUtil } from "google-libphonenumber";
+import { useField, useForm } from "vee-validate";
+import { ref, type Ref } from "vue";
+import * as yup from "yup";
 import { type SignupFormValues } from "~/store/user";
 
 const phoneUtil = PhoneNumberUtil.getInstance();
@@ -21,26 +21,22 @@ export function useSignupForm() {
   const schema = yup.object({
     name: yup
       .string()
-      .required("Please enter your name")
-      .min(2, "Name must be at least 2 characters")
-      .max(20, "Name must be less than 20 characters"),
+      .required("请输入您的名字")
+      .min(2, "名字最少包含 2 个字符")
+      .max(20, "名字最多包含 20 个字符"),
     phone: yup
       .string()
-      .required("Please enter your phone number")
-      .test(
-        "is-valid-phone",
-        "Please enter a valid phone number",
-        phoneValidator
-      ),
+      .required("请输入您的手机号码")
+      .test("is-valid-phone", "请输入有效的手机号码", phoneValidator),
     password: yup
       .string()
-      .required("Please enter your password")
-      .min(6, "Password must be at least 6 characters")
-      .max(20, "Password must be no more than 20 characters"),
+      .required("请输入您的密码")
+      .min(6, "密码最少包含 6 个字符")
+      .max(20, "密码最多包含 20 个字符"),
     confirmPassword: yup
       .string()
-      .required("Please confirm your password")
-      .oneOf([yup.ref("password")], "Passwords must match"),
+      .required("请确认您的密码")
+      .oneOf([yup.ref("password")], "两次密码不一致，请重新输入"),
   });
 
   const { handleSubmit } = useForm<SignupFormValues>({
