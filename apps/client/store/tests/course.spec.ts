@@ -1,8 +1,7 @@
-import { setActivePinia, createPinia } from "pinia";
-import { describe, it, expect, beforeEach, vi } from "vitest";
-import { useCourseStore } from "../course";
-import { fetchCourse, fetchCompleteCourse, fetchTryCourse } from "~/api/course";
-import { type Course } from "../course";
+import { createPinia, setActivePinia } from "pinia";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { useCourseStore, type Course } from "../course";
 import { useUserStore } from "../user";
 
 vi.mock("~/api/course");
@@ -12,12 +11,7 @@ const firstCourse: Course = {
   title: "第一课",
   statements: [
     { id: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
-    {
-      id: 2,
-      chinese: "喜欢",
-      english: "like",
-      soundmark: "/laɪk/",
-    },
+    { id: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
   ],
 };
 
@@ -26,6 +20,7 @@ const secondCourse: Course = {
   title: "第二课",
   statements: [
     { id: 1, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
+    { id: 2, english: "the food", chinese: "这个食物", soundmark: "/ðiˈfɔːd/" },
   ],
 };
 

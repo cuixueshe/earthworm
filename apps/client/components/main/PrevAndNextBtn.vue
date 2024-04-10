@@ -58,7 +58,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 import { useGameMode } from "~/composables/main/game";
-import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
@@ -73,7 +72,6 @@ const PREV_BTN_TIP = `点击跳转至上一题 ( 快捷键: ${shortcutKeys.value
 const NEXT_BTN_TIP = `点击跳转至下一题 ( 快捷键: ${shortcutKeys.value.skip} )`;
 
 const { showQuestion } = useGameMode();
-const { showSummary } = useSummary();
 const courseStore = useCourseStore();
 
 // 上一题/下一题
@@ -81,10 +79,6 @@ function usePrevAndNextQuestion(prevKey: string, nextKey: string) {
   handleShortcut();
 
   function goToNextQuestion() {
-    if (courseStore.isAllDone()) {
-      showSummary();
-      return;
-    }
     courseStore.toNextStatement();
     showQuestion();
   }
