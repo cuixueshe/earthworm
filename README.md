@@ -8,7 +8,7 @@
 
 By constructing sentences with conjunctions, it helps you learn English better~ 😊
 
-## 🚀 How To Start ?
+## 🚀 How To Start?
 
 **The mentioned operations below are based on the root directory of the current project, please be attentive to ensure there are no errors!**
 
@@ -42,9 +42,9 @@ pnpm install
 
 ### 2. Configure the `.env` File
 
-You can choose to copy the contents of `./apps/api/.env.example` to`./apps/api/.env`. note that the' example' file contains sample configuration. the main storage system's environment variable information, such as database connection address, user name, password, port, key, etc. the back-end service will read the configuration from this file, **of course you can also change it to your own configuration information**
+You can choose to copy the contents of `./apps/api/.env.example` to`./apps/api/.env`. note that the' example' file contains sample configuration. the main storage system's environment variable information, such as database connection address, user name, password, port, key, etc. the back-end service will read the configuration from this file, **of course you can also change it to your own configuration information**.
 
-Windows users recommend shortcut keys to copy and paste, Linux users can operate through the following command
+Windows users recommend shortcut keys to copy and paste, Linux users can operate through the following command.
 
 ```bash
 cp ./apps/api/.env.example ./apps/api/.env
@@ -88,7 +88,7 @@ pnpm db:init
 
 ### 5. Create and Upload Course Data
 
-**Only Execute This During the Initial Database Initialization**
+**Only Execute This During the Initial Database Initialization**.
 
 ```bash
 pnpm db:upload
@@ -106,9 +106,9 @@ pnpm dev:serve
 pnpm dev:client
 ```
 
-## ⚒ About testing
+## 🛠️ About testing
 
-**Run the test before submitting the commit, and submit the code after the test passes, so as to avoid multiple commits to solve the test problem**
+**Run the test before submitting the commit, and submit the code after the test passes, so as to avoid multiple commits to solve the test problem**.
 
 ### Front-end Testing
 
@@ -129,10 +129,10 @@ pnpm test:unit:watch
 
 ### Backend Testing
 
-Mainly Jest single test and end-to-end test, but need to access the test database, so you need to ensure that
+Mainly Jest single test and end-to-end test, but need to access the test database, so you need to ensure that:
 
-1. testdb and testRedis services in Docker Compose started normally
-2. The configuration information in the `.env.test` file is correct. If there is no such file, you can copy the contents of the `apps/api/.env.test.example` file to the `apps/api/.env.test` file. The following command is provided to directly use
+1. testdb and testRedis services in Docker Compose started normally.
+2. The configuration information in the `.env.test` file is correct. If there is no such file, you can copy the contents of the `apps/api/.env.test.example` file to the `apps/api/.env.test` file. The following command is provided to directly use.
 
 Execute the following command:
 
@@ -159,7 +159,7 @@ My Docker and the database inside are running normally, but when I run the `db:i
 
 You can check whether the database configuration in the `.env` file is correct, or even whether this file has it! 😠
 
-### How To Correctly Update Course Data ?
+### How To Correctly Update Course Data?
 
 when you identify incorrect course data and make modifications, you should use the following command to update the course data in the database.
 
@@ -173,7 +173,7 @@ Some dependencies require compilation during installation, necessitating the pre
 If these environments are not available, the compilation process may fail. Additionally, different modules may require different build environments, so specific issues need to be analyzed individually.
 Below are specific problems encountered along with their solutions.
 
-First try the following command to update `pnpm`
+First try the following command to update `pnpm`.
 
 ```shell
 pnpm i -g
@@ -214,11 +214,11 @@ docker images
 ## 🤝 Frontend Development Guideline
 
 1. Do not Destructure Pinia store.
-   - The readability will be better when using `store`
-   - Destructuring can lead to reactivity loss and using `storeToRefs` is also quite cumbersome
+  - The readability will be better when using `store`
+  - Destructuring can lead to reactivity loss and using `storeToRefs` is also quite cumbersome
 2. Avoid including UI logic in composables.
-   1. Such as `useMessage`
-   2. We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
+  - Such as `useMessage`
+  - We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
 
 ## 🌟 Contributing
 
