@@ -4,8 +4,8 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <Tool></Tool>
-      <Game></Game>
+      <MainTool />
+      <MainGame />
     </template>
   </div>
 </template>
@@ -14,9 +14,6 @@
 import { definePageMeta } from "#imports";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
-import Loading from "~/components/Loading.vue";
-import Game from "~/components/main/Game.vue";
-import Tool from "~/components/main/Tool.vue";
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
 

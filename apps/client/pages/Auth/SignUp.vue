@@ -75,11 +75,13 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
+import { useSignupForm } from "~/pages/Auth/hooks/useSignUpForm";
+
+import Message from "~/components/main/Message/useMessage";
 import CountryPhoneInput from "~/pages/Auth/CountryPhoneInput.vue";
 import FormInput from "~/pages/Auth/FormInput.vue";
-import { useSignupForm } from "~/pages/Auth/hooks/useSignUpForm";
+
 const {
   handleSubmit,
   name,
@@ -104,7 +106,7 @@ const handleRegister = handleSubmit(async (values) => {
     phone: purePhoneNumber,
   };
   await signup(modifiedValues);
-  Message.success("register success!");
+  Message.success("注册成功！");
   router.replace("/");
 });
 </script>

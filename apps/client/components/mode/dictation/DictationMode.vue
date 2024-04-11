@@ -4,15 +4,13 @@
       <p>准备好了吗？(按任意键开启游戏)</p>
     </div>
     <div v-else>
-      <Toolbar></Toolbar>
+      <ModeDictationToolbar />
       <template v-if="isQuestion()">
-        <Question></Question>
-        <template v-if="isAnswerTip()">
-          <AnswerTip></AnswerTip>
-        </template>
+        <ModeDictationQuestion />
+        <MainAnswerTip v-show="isAnswerTip()" />
       </template>
       <template v-else-if="isAnswer()">
-        <Answer></Answer>
+        <MainAnswer />
       </template>
     </div>
   </div>
@@ -20,13 +18,9 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import Answer from "~/components/main/Answer.vue";
-import AnswerTip from "~/components/main/AnswerTip.vue";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
-import Question from "./Question.vue";
-import Toolbar from "./Toolbar.vue";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { isAnswer, isQuestion } = useGameMode();
 const { isAnswerTip } = useAnswerTip();

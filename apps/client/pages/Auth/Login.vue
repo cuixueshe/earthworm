@@ -62,20 +62,21 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
-import Message from "~/components/main/Message/useMessage";
 import { useAuth } from "~/composables/auth";
-import FormInput from "~/pages/Auth/FormInput.vue";
 import { useLoginForm } from "~/pages/Auth/hooks/useLoginForm";
-const { handleSubmit, phone, phoneError, password, passwordError } =
-  useLoginForm();
+
+import Message from "~/components/main/Message/useMessage";
+import FormInput from "~/pages/Auth/FormInput.vue";
 
 const router = useRouter();
 const route = useRoute();
 const { login } = useAuth();
+const { handleSubmit, phone, phoneError, password, passwordError } =
+  useLoginForm();
 
 const handleLogin = handleSubmit(async (values) => {
   await login(values);
-  Message.success("login success!");
+  Message.success("登录成功！");
   router.replace(route.query.callback?.toString() || "/");
 });
 </script>

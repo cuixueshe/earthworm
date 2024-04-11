@@ -64,10 +64,10 @@
 </template>
 
 <script setup lang="ts">
-const emit = defineEmits(["startEarthworm"]);
+const emit = defineEmits(["start-earthworm"]);
 
 function handleKeydown() {
-  emit("startEarthworm");
+  emit("start-earthworm");
 }
 </script>
 

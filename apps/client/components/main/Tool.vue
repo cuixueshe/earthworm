@@ -80,8 +80,12 @@
       （{{ currentSchedule }}<span class="mx-[2px]">/</span
       >{{ courseStore.totalQuestionsCount }}）
     </div>
-    <StudyVideoLink :course-id="courseStore.currentCourse?.id" />
-    <div class="flex-1"></div>
+
+    <MainStudyVideoLink
+      class="mr-auto"
+      :course-id="courseStore.currentCourse?.id"
+    />
+
     <div
       @click="handleDoAgain"
       class="link-item mr-4"
@@ -113,30 +117,26 @@
         :style="{ width: `${currentPercentage}%` }"
       ></div>
     </div>
-    <Contents></Contents>
+    <MainContents />
   </div>
-  <RankList></RankList>
-  <MessageBox
+  <RankRankingList />
+  <MainMessageBox
     class="mt-[-4vh]"
     v-model:isShowModal="showTipModal"
-    content="Do you confirm the reset progress?"
+    content="是否确认重置当前课程进度？"
     @confirm="handleTipConfirm"
-  ></MessageBox>
+  />
 </template>
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
-import RankList from "~/components/rank/RankingList.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
-import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();

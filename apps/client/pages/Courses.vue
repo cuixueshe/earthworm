@@ -14,7 +14,7 @@
             :href="`/main/${course.id}`"
             @click="handleChangeCourse(course)"
           >
-            <CourseCard
+            <CoursesCourseCard
               :title="course.title"
               :id="course.id"
               :count="course.count"
@@ -31,15 +31,15 @@
 import { onMounted, ref } from "vue";
 import { fetchCourses } from "~/api/course";
 import { fetchCourseHistory } from "~/api/courseHistory";
-
-import Loading from "~/components/Loading.vue";
-import CourseCard from "~/components/courses/CourseCard.vue";
-
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { type Course } from "~/store/course";
 
-const { updateActiveCourseId } = useActiveCourseId();
 const courses = ref<Course[]>([]);
+const { updateActiveCourseId } = useActiveCourseId();
+
+onMounted(async () => {
+  courses.value = await getCourses();
+});
 
 async function getCourseHistory() {
   const res = await fetchCourseHistory();
@@ -66,10 +66,6 @@ async function getCourses() {
     }
   });
 }
-
-onMounted(async () => {
-  courses.value = await getCourses();
-});
 
 function handleChangeCourse(course: Course) {
   updateActiveCourseId(course.id);

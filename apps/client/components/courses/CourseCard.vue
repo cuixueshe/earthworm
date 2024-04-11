@@ -61,7 +61,7 @@ onMounted(() => {
 
 <style scoped>
 .course-card {
-  @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[280px] xl:w-[260px] p-4 pb-6 border border-[rgba(164,175,191,1)] hover:shadow-lg hover:shadow-[rgba(164,175,191,0.5)] hover:border-[rgba(164,175,191,1)] rounded-xl transition-all duration-500 relative;
+  @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[300px] xl:w-[280px] p-4 pb-6 border border-[rgba(164,175,191,1)] hover:shadow-lg hover:shadow-[rgba(164,175,191,0.5)] hover:border-[rgba(164,175,191,1)] rounded-xl transition-all duration-500 relative;
 }
 
 .count {

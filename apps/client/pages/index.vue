@@ -1,47 +1,35 @@
 <template>
   <div class="container w-full m-auto font-customFont">
-    <template v-if="isLoading">
-      <Loading></Loading>
-    </template>
-    <template v-else>
-      <NoticeBar v-if="showNoticeBar" />
-      <Banner @startEarthworm="startEarthworm" />
-      <Features />
-      <!-- <Introduce /> -->
-      <Comments />
-      <!-- <PayCard /> -->
-      <Questions />
-      <Contact />
-    </template>
-    <CommonBackTop class="sticky flex justify-end ml-auto sm:block bottom-28" />
-    <MessageBox
+    <Loading v-show="isLoading" />
+    <div v-show="!isLoading">
+      <HomeBanner @start-earthworm="startEarthworm" />
+      <HomeFeatures />
+      <HomeComments />
+      <HomeQuestions />
+      <HomeContact />
+      <CommonBackTop
+        class="sticky flex justify-end ml-auto sm:block bottom-28"
+      />
+    </div>
+    <MainMessageBox
       v-model:is-show-modal="showMobileTip"
       title="友情提示"
-      content="目前暂不支持移动设备哦，请关注后续更新~"
+      content="正在努力适配移动端中！使用电脑访问体验更佳哦~ 😊"
       cancel-btn-text="好哒"
       confirm-btn-text=""
-    ></MessageBox>
+    />
   </div>
 </template>
 
-<script setup>
-import Banner from "~/components/home/Banner";
-import Comments from "~/components/home/Comments.vue";
-import Contact from "~/components/home/Contact.vue";
-import Features from "~/components/home/Features.vue";
-import NoticeBar from "~/components/home/NoticeBar.vue";
-import Questions from "~/components/home/Questions.vue";
-const showNoticeBar = ref(false);
-
+<script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-const { startEarthworm, isLoading } = useShortcutToGame();
 const gameStore = useGameStore();
-
 const { showMobileTip } = useMonitorSystem();
+const { startEarthworm, isLoading } = useShortcutToGame();
 
 function useMonitorSystem() {
   const showMobileTip = ref(false);
