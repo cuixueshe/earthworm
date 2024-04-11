@@ -3,7 +3,7 @@
     <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg
-        class="inline-block ml-1 cursor-pointer w-7 h-7"
+        class="svg-container inline-block ml-1 cursor-pointer w-7 h-7"
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +25,13 @@
       class="btn-item"
       @click="showQuestion"
     >
-      again
+    再来一次
     </button>
     <button
       class="ml-5 btn-item"
       @click="goToNextQuestion"
     >
-      next
+    下一题
     </button>
   </div>
 </template>
@@ -100,6 +100,10 @@ function goToNextQuestion() {
 
 <style scoped>
 .btn-item {
-  @apply btn btn-sm text-xl text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500 shadow-md;
+  @apply btn btn-sm text-base text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500 shadow-md;
 }
+
+ .svg-container:hover path {
+    fill: #c951e7;
+  }
 </style>
