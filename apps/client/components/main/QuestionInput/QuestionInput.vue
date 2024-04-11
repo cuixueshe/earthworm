@@ -239,7 +239,10 @@ function handleAnswerRight() {
 
   if (isAutoNextQuestion()) {
     // 自动下一题
-    courseStore.isAllDone() && showSummary();
+    if (courseStore.isAllDone()) {
+      blurInput(); // 失去输入焦点，防止结束时光标仍然在输入框，造成后续结算面板回车事件无法触发
+      showSummary();
+    }
     courseStore.toNextStatement();
   } else {
     showAnswer();
@@ -249,11 +252,7 @@ function handleAnswerRight() {
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
-    submitAnswer(
-      handleAnswerRight,
-      handleAnswerError // 错误提示
-    );
-
+    submitAnswer(handleAnswerRight, handleAnswerError);
     return;
   }
 
@@ -261,7 +260,7 @@ function handleKeydown(e: KeyboardEvent) {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
       rightCallback: handleAnswerRight,
-      errorCallback: handleAnswerError, // 错误提示
+      errorCallback: handleAnswerError,
     },
   });
 }
