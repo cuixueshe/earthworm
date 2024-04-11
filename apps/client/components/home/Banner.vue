@@ -57,6 +57,10 @@
         src="~/assets/home-page-preview.png"
         class="w-3/4"
       />
+
+<!-- demo video show -->
+<!-- <Player video-url="https://media.w3.org/2010/05/sintel/trailer.mp4"/> -->
+
     </div>
 
     <CommonDivider />
@@ -64,6 +68,7 @@
 </template>
 
 <script setup lang="ts">
+
 const emit = defineEmits(["startEarthworm"]);
 
 function handleKeydown() {
