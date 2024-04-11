@@ -6,7 +6,7 @@
       class="flex flex-col h-fit min-h-screen m-auto lg:px-24 xl:px-2 px-7 items-center"
     >
       <Navbar></Navbar>
-      <div class="flex-1 flex xl:w-[1200px] sm:w-full">
+      <div class="flex-1 flex w-full max-w-screen-xl">
         <slot></slot>
       </div>
       <Footer></Footer>

@@ -2,7 +2,7 @@
   <div
     class="h-[40px] flex items-center justify-between text-sm border-b border-gray-200 dark:border-gray-600"
   >
-    <RankingBadge
+    <RankRankingBadge
       class="w-16"
       :rank="rank"
     />
@@ -12,8 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import RankingBadge from "./RankingBadge.vue";
-
 defineProps({
   rank: Number,
   username: String,

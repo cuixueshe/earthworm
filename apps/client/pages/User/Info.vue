@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-full flex-1 justify-center px-6 py-12 lg:px-8">
-    <UserMenus
+    <UserMenu
       :menus="userMenus"
       :defaultMenuName="defaultMenuName"
       @changeMenu="handleChangeMenu"
@@ -14,8 +14,8 @@
 <script setup lang="ts">
 import { computed, ref, shallowRef, watchEffect } from "vue";
 import { useRoute } from "vue-router";
+
 import UserHome from "~/components/user/Home.vue";
-import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
 interface ComponentMap {
