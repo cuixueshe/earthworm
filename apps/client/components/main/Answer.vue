@@ -3,7 +3,7 @@
     <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg
-        class="inline-block ml-1 cursor-pointer w-7 h-7"
+        class="inline-block ml-1 cursor-pointer w-7 h-7 fill-gray-500 hover:fill-fuchsia-500"
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,6 @@
       >
         <path
           d="M342.4 384H128v256h214.4L576 826.8V197.2L342.4 384zM64 320h256L640 64v896L320 704H64V320z m640 256h256v-64H704v64z m16.8 159.5l181 181 45.3-45.3-181-181-45.3 45.3z m33.9-343.9l181-181-45.3-45.3-181 181 45.3 45.3z"
-          fill="#666666"
         ></path>
       </svg>
     </div>
@@ -22,16 +21,16 @@
       {{ courseStore.currentStatement?.chinese }}
     </div>
     <button
-      class="btn-item"
+      class="btn btn-sm btn-outline"
       @click="showQuestion"
     >
-      again
+      再来一次
     </button>
     <button
-      class="ml-5 btn-item"
+      class="ml-6 btn btn-sm btn-outline"
       @click="goToNextQuestion"
     >
-      next
+      下一题
     </button>
   </div>
 </template>
@@ -97,9 +96,3 @@ function goToNextQuestion() {
   showQuestion();
 }
 </script>
-
-<style scoped>
-.btn-item {
-  @apply btn btn-sm text-xl text-gray-500 bg-gray-100 hover:text-gray-100 hover:bg-gray-500 dark:text-white dark:bg-gray-500 dark:hover:text-white dark:hover:bg-fuchsia-500 shadow-md;
-}
-</style>
