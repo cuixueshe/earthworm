@@ -39,6 +39,8 @@ export default defineNuxtConfig({
   },
   components: true,
   // ↓ @nuxt/content options
-  content: {},
+  content: {
+    documentDriven: true
+  },
   plugins: ["~/plugins/globalComponents.ts"],
 });

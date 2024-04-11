@@ -2,9 +2,8 @@
   <div>
     <ul
       v-if="toc && toc.links"
-      class="menu w-56 rounded-box"
+      class="menu w-56 rounded-sm text-xs"
     >
-      <p class="text-lg">Table of Contents</p>
       <li
         v-for="link in toc.links"
         :key="link.text"
