@@ -5,6 +5,9 @@
   "prettier.printWidth": 80,
   "prettier.trailingComma": "es5",
   "prettier.singleAttributePerLine": true,
+  // remove `Unknown at rule @apply` warning
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
   // Use `eslint` for vue, ts and js
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",

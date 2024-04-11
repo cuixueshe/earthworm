@@ -46,11 +46,12 @@ import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const courseStore = useCourseStore();
-registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
+
+registerShortcutKeyForNextQuestion();
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
