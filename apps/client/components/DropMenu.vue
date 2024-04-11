@@ -28,7 +28,7 @@
       v-if="showDropdown"
       ref="dropdownContainer"
       tabindex="0"
-      class="dropdown-content z-[1] menu p-2 w-52 bg-white dark:bg-theme-dark border-gray-200 dark:border-gray-600 border-2 mt-2 rounded-md"
+      class="dropdown-content menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md z-[1] dark:bg-theme-dark dark:border-gray-600"
     >
       <li
         v-for="(item, index) in showMenuOptions"
@@ -36,7 +36,7 @@
       >
         <span
           @click="item.eventName"
-          class="flex items-center gap-2 rounded-lg  hover:bg-gray-100 dark:hover:bg-secondary hover:text-gray-700  dark:hover:text-white"
+          class="flex items-center gap-2 rounded-lg hover:text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:hover:bg-fuchsia-500"
         >
           <span v-html="item.icon"></span>
 
