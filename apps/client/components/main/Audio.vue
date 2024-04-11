@@ -2,13 +2,13 @@
   <div>
     <button
       class="btn"
-      @click="testPlay"
+      @click="audioPlay"
     >
       开始
     </button>
     <button
       class="btn"
-      @click="testPause"
+      @click="audioPause"
     >
       暂停
     </button>
@@ -36,7 +36,7 @@ import { useMusicAudio } from "~/composables/audio";
 
 const showAudio = ref(false);
 const playerElement = ref<HTMLAudioElement>();
-const { setupAudio, testPlay, testPause, testRestart } = useMusicAudio();
+const { setupAudio, audioPlay, audioPause, testRestart } = useMusicAudio();
 
 onMounted(() => {
   setupAudio(playerElement.value!, musicSrc);

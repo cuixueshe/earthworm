@@ -30,11 +30,17 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted,onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
+import { useMusicAudio } from "~/composables/audio";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useSummary } from "~/composables/main/summary";
+import {
+  GameMode,
+  useGameMode as useGameModeInUser,
+} from "~/composables/user/gameMode";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -52,7 +58,7 @@ const {
   getInputCursorPosition,
 } = useQuestionInput();
 
-const { showAnswer } = useGameMode();
+const { showAnswer, showQuestion } = useGameMode();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
@@ -74,13 +80,17 @@ const {
   inputChangedCallback,
 });
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
+const { currentGameMode } = useGameModeInUser();
+
+const { showSummary } = useSummary();
+const { audioPlay } = useMusicAudio();
 
 onMounted(() => {
   focusInput();
   resetCloseTip();
 });
 
-focusInputWhenWIndowFocus()
+focusInputWhenWIndowFocus();
 
 watch(
   () => inputValue.value,
@@ -240,6 +250,12 @@ function handleAnswerRight() {
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
+
+    if (currentGameMode.value === GameMode.Music) {
+      goToNextQuestion();
+      return;
+    }
+
     submitAnswer(
       handleAnswerRight,
       handleAnswerError // 错误提示
@@ -263,5 +279,16 @@ function preventCursorMove(event: MouseEvent) {
   event.preventDefault();
   // 只允许 input focus
   focusInput();
+}
+
+function goToNextQuestion() {
+  if (courseStore.isAllDone()) {
+    showSummary();
+    return;
+  }
+
+  courseStore.toNextStatement();
+  showQuestion();
+  audioPlay();
 }
 </script>

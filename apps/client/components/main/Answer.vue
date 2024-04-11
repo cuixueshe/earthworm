@@ -54,7 +54,7 @@ const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
 
-const { testPlay } = useMusicAudio();
+const { audioPlay } = useMusicAudio();
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
@@ -64,7 +64,7 @@ function usePlayEnglishSound() {
       playSound();
     }
 
-    testPlay();
+    audioPlay();
   });
 
   function handlePlaySound() {

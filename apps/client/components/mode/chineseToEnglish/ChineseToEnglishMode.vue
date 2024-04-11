@@ -10,11 +10,13 @@
       <Answer></Answer>
     </template>
   </div>
+  <Tips></Tips>
 </template>
 
 <script setup lang="ts">
 import Answer from "~/components/main/Answer.vue";
 import AnswerTip from "~/components/main/AnswerTip.vue";
+import Tips from "~/components/main/Tips.vue";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import Question from "./Question.vue";

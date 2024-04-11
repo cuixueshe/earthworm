@@ -3,11 +3,13 @@ import { ref } from "vue";
 export enum GameMode {
   Dictation = "DICTATION",
   ChineseToEnglish = "CHINESE_TO_ENGLISH",
+  Music = "MUSIC",
 }
 
 export const gameModeLabels: { [key in GameMode]: string } = {
   [GameMode.ChineseToEnglish]: "中译英",
   [GameMode.Dictation]: "听写",
+  [GameMode.Music]: "音乐",
 };
 
 const GameModeKey = "gameMode";

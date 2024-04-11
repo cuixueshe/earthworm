@@ -16,17 +16,19 @@
       </template>
     </div>
   </div>
+  <Tips></Tips>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import Answer from "~/components/main/Answer.vue";
 import AnswerTip from "~/components/main/AnswerTip.vue";
+import Tips from "~/components/main/Tips.vue";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 import Question from "./Question.vue";
 import Toolbar from "./Toolbar.vue";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
 
 const { isAnswer, isQuestion } = useGameMode();
 const { isAnswerTip } = useAnswerTip();

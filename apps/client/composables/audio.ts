@@ -6,15 +6,15 @@ let player: Plyr;
 
 /**
  *
- * 开始  -> 播放音乐
- * 输入页面   暂停(开始时间)  ->  等待答题
- * 答案页面   播放   ->   暂停(结束时间)
- * next  ->
+ * 开始  ->  播放音乐   ->
+ * 暂停(endTime)  ->  用户输入  ->
+ * 回车提交  ->  播放音乐
+ *
  */
 
 export function useMusicAudio() {
   const courseStore = useCourseStore();
-  const { isAnswer, isQuestion } = useGameMode();
+  const { isQuestion } = useGameMode();
 
   function setupAudio(playerElement: HTMLAudioElement, src: string) {
     player = new Plyr(playerElement, {
@@ -32,7 +32,6 @@ export function useMusicAudio() {
   }
 
   function runTimeUpdate() {
-    const startAt = srtTimeToSeconds(courseStore.currentStatement?.startTime);
     const endAt = srtTimeToSeconds(courseStore.currentStatement?.endTime);
     // 提高时间更新精度
     let count = 10;
@@ -42,27 +41,20 @@ export function useMusicAudio() {
       } else {
         count--;
       }
-      playStatement(startAt, endAt);
+      playStatement(endAt);
     }, 25);
   }
 
-  function playStatement(startAt: number, endAt: number) {
-    const time = player.currentTime;
-    if (isQuestion()) {
-      console.log(player.currentTime, startAt);
-      if (time >= startAt) testPause();
-    }
-
-    if (isAnswer()) {
-      console.log(player.currentTime, endAt);
-      if (time >= endAt) testPause();
+  function playStatement(pauseTime: number) {
+    if (isQuestion() && player.currentTime >= pauseTime) {
+      audioPause();
     }
   }
 
-  function testPlay() {
+  function audioPlay() {
     player.play();
   }
-  function testPause() {
+  function audioPause() {
     player.pause();
   }
 
@@ -72,8 +64,8 @@ export function useMusicAudio() {
 
   return {
     setupAudio,
-    testPlay,
-    testPause,
+    audioPlay,
+    audioPause,
     testRestart,
   };
 }
@@ -84,6 +76,5 @@ function srtTimeToSeconds(srtTime: string) {
   const secondsAndMilliseconds = timeParts[1].split(".");
   const seconds = parseInt(secondsAndMilliseconds[0], 10);
   const milliseconds = parseInt(secondsAndMilliseconds[1], 10);
-
   return minutes * 60 + seconds + milliseconds / 1000;
 }

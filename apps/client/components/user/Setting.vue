@@ -191,7 +191,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
-import { useGameMode, GameMode } from "~/composables/user/gameMode";
+import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import {
   PronunciationType,
   usePronunciation,
