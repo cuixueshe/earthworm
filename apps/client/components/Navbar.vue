@@ -1,9 +1,9 @@
 <template>
   <header
     :class="isStickyNavBar"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont w-[100vw] lg:px-24 xl:px-2 px-7"
+    class="w-full top-0 bg-opacity-50 backdrop-blur-xl font-customFont z-40"
   >
-    <div class="mx-auto max-w-screen-xl mt-2">
+    <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
         <div class="left flex w-full items-center justify-between">
           <NuxtLink to="/">
