@@ -18,6 +18,7 @@ export interface Course {
   title: string;
   statements: Statement[];
   count?: number;
+  [k: string]: any;
 }
 
 export const useCourseStore = defineStore("course", () => {

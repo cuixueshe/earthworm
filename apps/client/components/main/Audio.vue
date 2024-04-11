@@ -2,9 +2,21 @@
   <div>
     <button
       class="btn"
-      @click="play"
+      @click="testPlay"
     >
       开始
+    </button>
+    <button
+      class="btn"
+      @click="testPause"
+    >
+      暂停
+    </button>
+    <button
+      class="btn"
+      @click="testRestart"
+    >
+      重播
     </button>
     <div v-show="showAudio">
       <audio
@@ -24,7 +36,7 @@ import { useMusicAudio } from "~/composables/audio";
 
 const showAudio = ref(false);
 const playerElement = ref<HTMLAudioElement>();
-const { setupAudio, play } = useMusicAudio();
+const { setupAudio, testPlay, testPause, testRestart } = useMusicAudio();
 
 onMounted(() => {
   setupAudio(playerElement.value!, musicSrc);

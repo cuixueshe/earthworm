@@ -45,12 +45,16 @@ import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
+import { useMusicAudio } from "~/composables/audio";
+
 const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
+
+const { testPlay } = useMusicAudio();
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
@@ -59,6 +63,8 @@ function usePlayEnglishSound() {
     if (isAutoPlaySound()) {
       playSound();
     }
+
+    testPlay();
   });
 
   function handlePlaySound() {
