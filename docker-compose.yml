@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   mysql:
@@ -21,7 +21,6 @@ services:
       - 6379:6379
   testRedis:
     image: redis:5-alpine
-    restart: always
     volumes:
       - data:/var/lib/redis
     ports:
@@ -35,6 +34,7 @@ services:
     ports:
       - "3307:3306" # 将宿主机的 3307 端口映射到容器的 3306 端口
   logto:
+    restart: always
     depends_on:
       logtoPostgres:
         condition: service_healthy
@@ -53,6 +53,7 @@ services:
       - ENDPOINT
       - ADMIN_ENDPOINT
   logtoPostgres:
+    restart: always
     image: postgres:14-alpine
     user: postgres
     environment:
@@ -63,9 +64,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
-
-
 
 volumes:
   data:
