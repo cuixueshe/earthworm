@@ -3,7 +3,7 @@ import { computed, ref, watch, watchEffect } from "vue";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
-import { useUserStore } from "~/store/user";
+import { isAuthenticated } from "~/services/auth";
 
 interface Statement {
   id: number;
@@ -93,8 +93,7 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(courseId: number) {
     if (courseId === currentCourse.value?.id) return;
 
-    const userStore = useUserStore();
-    if (!userStore.user) {
+    if (!isAuthenticated()) {
       let course = await fetchTryCourse();
       currentCourse.value = course;
     } else {

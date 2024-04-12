@@ -96,8 +96,8 @@ import { useGameMode } from "~/composables/main/game";
 import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useCourseStore } from "~/store/course";
-import { useUserStore } from "~/store/user";
 import { formatSecondsToTime } from "~/utils/date";
+import { isAuthenticated } from "~/services/auth";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 let nextCourseId = 1;
@@ -131,9 +131,9 @@ watch(showModal, (val) => {
 });
 
 async function completeCourse() {
-  const userStore = useUserStore();
+  const { updateActiveCourseId } = useActiveCourseId();
 
-  if (userStore.user && courseStore.currentCourse) {
+  if (isAuthenticated() && courseStore.currentCourse) {
     const { nextCourse } = await courseStore.completeCourse(
       courseStore.currentCourse.id
     );
@@ -167,13 +167,12 @@ function soundSentence() {
 
 function useGoToNextCourse() {
   const router = useRouter();
-  const userStore = useUserStore();
   const { showAuthRequireModal } = useAuthRequire();
 
   async function handleGoToNextCourse() {
     // 无论后续如何处理，都需要先隐藏 Summary 页面
     hideSummary();
-    if (!userStore.user) {
+    if (!isAuthenticated()) {
       // 去注册
       showAuthRequireModal();
       return;

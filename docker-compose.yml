@@ -34,6 +34,38 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3307:3306" # 将宿主机的 3307 端口映射到容器的 3306 端口
+  logto:
+    depends_on:
+      logtoPostgres:
+        condition: service_healthy
+    image: svhd/logto:${TAG-latest}
+    entrypoint: ["sh", "-c", "npm run cli db seed -- --swe && npm start"]
+    ports:
+      - 3010:3010
+      - 3011:3011
+    environment:
+      - TRUST_PROXY_HEADER=1
+      - DB_URL=postgres://postgres:p0stgr3s@logtoPostgres:5432/logto
+      # Mandatory for GitPod to map host env to the container, thus GitPod can dynamically configure the public URL of Logto;
+      # Or, you can leverage it for local testing.
+      - PORT=3010
+      - ADMIN_PORT=3011
+      - ENDPOINT
+      - ADMIN_ENDPOINT
+  logtoPostgres:
+    image: postgres:14-alpine
+    user: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: p0stgr3s
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+
 
 volumes:
   data:

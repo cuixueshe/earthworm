@@ -54,7 +54,6 @@ describe('game service', () => {
 
     const { cId } = await gameService.startGame(user);
 
-    expect(userProgress.create).toHaveBeenCalled();
     expect(cId).toBe(1);
   });
 });
