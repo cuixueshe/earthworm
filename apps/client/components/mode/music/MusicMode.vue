@@ -39,7 +39,7 @@
     </div>
 
     <div class="absolute z-[-10px] opacity-50">
-      <Phonograph :is-play="isStart"></Phonograph>
+      <Phonograph></Phonograph>
     </div>
   </div>
   <Tips></Tips>

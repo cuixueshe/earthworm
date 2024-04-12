@@ -1,4 +1,5 @@
 import Plyr from "plyr";
+import { ref } from "vue";
 import { useCourseStore } from "~/store/course";
 
 let player: Plyr;
@@ -10,6 +11,8 @@ let player: Plyr;
  * 回车提交  ->  播放音乐
  *
  */
+
+const played = ref(false);
 
 export function useMusicAudio() {
   const courseStore = useCourseStore();
@@ -50,9 +53,11 @@ export function useMusicAudio() {
 
   function audioPlay() {
     player.play();
+    played.value = true;
   }
   function audioPause() {
     player.pause();
+    played.value = false;
   }
 
   function playStatement(time: string) {
@@ -60,12 +65,14 @@ export function useMusicAudio() {
     player.play();
   }
 
+  const isPlayed = () => played.value;
+
   return {
     setupAudio,
     audioPlay,
     audioPause,
-
     playStatement,
+    isPlayed,
   };
 }
 

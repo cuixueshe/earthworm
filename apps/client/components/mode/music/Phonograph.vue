@@ -2,14 +2,14 @@
   <div class="relative w-[500px] h-[500px]">
     <img
       class="absolute top-[-30px] left-1/2 z-10 needle"
-      :class="isPlay ? 'needle-play' : 'needle-notPlay'"
+      :class="isPlayed() ? 'needle-play' : 'needle-notPlay'"
       src="~/assets/music/needle.png"
       alt="music-needle"
     />
     <div class="record-box">
       <div
         class="relative"
-        :class="isPlay ? 'record' : ''"
+        :class="isPlayed() ? 'record' : ''"
       >
         <img
           class=""
@@ -22,14 +22,9 @@
 </template>
 
 <script setup lang="ts">
-// const isPlay = ref(false);
-// function handlePlay() {
-//   isPlay.value = !isPlay.value;
-// }
+import { useMusicAudio } from "~/composables/audio";
 
-defineProps({
-  isPlay: Boolean,
-});
+const { isPlayed } = useMusicAudio();
 </script>
 
 <style scoped>
