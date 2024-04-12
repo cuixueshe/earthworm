@@ -5,7 +5,7 @@
   >
     <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
-        <div class="left flex w-full items-center justify-between">
+        <div class="flex flex-1 items-center justify-between">
           <NuxtLink to="/">
             <div class="logo flex items-center">
               <img
@@ -46,7 +46,7 @@
           </nav>
         </div>
 
-        <div class="login-out flex items-center">
+        <div class="flex items-center">
           <!-- 切换主题 -->
           <button
             class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
@@ -84,7 +84,7 @@
           <!-- 显示用户信息 -->
           <div
             v-if="isAuthenticated()"
-            class="logged-in flex items-center"
+            class="flex items-center"
           >
             <div
               class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
@@ -123,8 +123,8 @@
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import { Theme, useDarkMode } from "~/composables/darkMode";
-import { useUserStore } from "~/store/user";
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
+import { useUserStore } from "~/store/user";
 
 const route = useRoute();
 const userStore = useUserStore();
