@@ -1,5 +1,4 @@
 import Plyr from "plyr";
-import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
 
 let player: Plyr;
@@ -14,7 +13,6 @@ let player: Plyr;
 
 export function useMusicAudio() {
   const courseStore = useCourseStore();
-  const { isQuestion } = useGameMode();
 
   function setupAudio(playerElement: HTMLAudioElement, src: string) {
     player = new Plyr(playerElement, {
@@ -25,7 +23,6 @@ export function useMusicAudio() {
       title: "",
       sources: [{ src, type: "audio/mp3" }],
     };
-
     player.on("timeupdate", () => {
       runTimeUpdate();
     });
@@ -41,12 +38,12 @@ export function useMusicAudio() {
       } else {
         count--;
       }
-      playStatement(endAt);
+      pauseStatement(endAt);
     }, 25);
   }
 
-  function playStatement(pauseTime: number) {
-    if (isQuestion() && player.currentTime >= pauseTime) {
+  function pauseStatement(pauseTime: number) {
+    if (player.currentTime >= pauseTime) {
       audioPause();
     }
   }
@@ -62,15 +59,22 @@ export function useMusicAudio() {
     player.restart();
   }
 
+  function playStatement(time: string) {
+    player.currentTime = srtTimeToSeconds(time);
+    player.play();
+  }
+
   return {
     setupAudio,
     audioPlay,
     audioPause,
     testRestart,
+
+    playStatement,
   };
 }
 
-function srtTimeToSeconds(srtTime: string) {
+export function srtTimeToSeconds(srtTime: string) {
   const timeParts = srtTime.split(":");
   const minutes = parseInt(timeParts[0], 10);
   const secondsAndMilliseconds = timeParts[1].split(".");

@@ -10,7 +10,7 @@ export enum TipItem {
 export const tipItemLabels: { [key in TipItem]: string } = {
   [TipItem.Chinese]: "中文",
   [TipItem.English]: "英文",
-  [TipItem.AllShow]: "全显示",
+  [TipItem.AllShow]: "中英文",
   [TipItem.AllHidden]: "全隐藏",
 };
 

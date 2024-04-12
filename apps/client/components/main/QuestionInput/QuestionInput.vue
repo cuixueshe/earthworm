@@ -64,7 +64,8 @@ const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
-const { handleAnswerError, resetCloseTip } = answerError();
+const { handleAnswerError, resetCloseTip, handleAnswerErrorInMusic } =
+  answerError();
 
 const {
   inputValue,
@@ -228,6 +229,9 @@ function answerError() {
       showAnswerTip();
     }
   }
+  function handleAnswerErrorInMusic() {
+    playErrorSound();
+  }
 
   function resetCloseTip() {
     wrongTimes = 0;
@@ -237,6 +241,7 @@ function answerError() {
   return {
     handleAnswerError,
     resetCloseTip,
+    handleAnswerErrorInMusic,
   };
 }
 
@@ -246,20 +251,32 @@ function handleAnswerRight() {
   hiddenAnswerTip();
   courseTimer.timeEnd(String(courseStore.statementIndex));
 }
+function handleAnswerRightInMusic() {
+  playRightSound(); // 正确提示
+  courseTimer.timeEnd(String(courseStore.statementIndex));
+  goToNextQuestion();
+}
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
 
-    if (currentGameMode.value === GameMode.Music) {
-      goToNextQuestion();
-      return;
-    }
-
     submitAnswer(
       handleAnswerRight,
       handleAnswerError // 错误提示
     );
+
+    if (currentGameMode.value === GameMode.Music) {
+      submitAnswer(
+        handleAnswerRightInMusic,
+        handleAnswerErrorInMusic // 错误提示
+      );
+    } else {
+      submitAnswer(
+        handleAnswerRight,
+        handleAnswerError // 错误提示
+      );
+    }
 
     return;
   }
