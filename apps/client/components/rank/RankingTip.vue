@@ -7,7 +7,7 @@
       <template v-if="isLoading">
         <span>数据正在向你飞奔而来……</span>
       </template>
-      <template v-else-if="!user">
+      <template v-else-if="!isAuthenticated()">
         <span>登录后和小伙伴们一决高下！😊 </span>
       </template>
       <template v-else-if="rankingSelf && rankingSelf.rank !== -1">
@@ -27,9 +27,8 @@
 
 <script setup lang="ts">
 import { type RankingSelfType } from "~/api/rank";
-import { useUserStore } from "~/store/user";
+import { isAuthenticated } from "~/services/auth";
 
-const { user } = useUserStore();
 const { rankingSelf, isLoading } = defineProps<{
   rankingSelf: RankingSelfType | null;
   isLoading: boolean;

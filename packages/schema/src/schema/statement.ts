@@ -1,4 +1,4 @@
-import { int, mysqlTable, text } from "drizzle-orm/mysql-core";
+import { int, mysqlTable, text} from "drizzle-orm/mysql-core";
 import { course } from "./course";
 
 export const statement = mysqlTable("statements", {

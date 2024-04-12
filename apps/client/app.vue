@@ -9,20 +9,27 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { useDarkMode } from "~/composables/darkMode";
-import { useUserStore } from "~/store/user";
+import { isAuthenticated } from "~/services/auth";
+import { useUserStore } from "./store/user";
+import { useLogto } from "@logto/vue";
 
 const { initDarkMode } = useDarkMode();
 
-useRestoreUser();
+async function setup() {
+  const userStore = useUserStore();
+  const logto = useLogto();
+
+  if (isAuthenticated()) {
+    const res = await logto.fetchUserInfo();
+    userStore.initUser(res!);
+  }
+}
+
+setup();
 
 onMounted(() => {
   initDarkMode();
 });
-
-function useRestoreUser() {
-  const userStore = useUserStore();
-  userStore.restoreUser();
-}
 </script>
 
 <style>

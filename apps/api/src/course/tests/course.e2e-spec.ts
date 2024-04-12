@@ -7,7 +7,7 @@ import {
   createSecondCourse,
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
-import { cleanDB, signup } from '../../../test/helper/utils';
+import { cleanDB, signin } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
@@ -33,8 +33,7 @@ describe('course e2e', () => {
     await cleanDB(db);
     await setupDBData(db);
 
-    const signupBody = await signup(app);
-    token = signupBody.token;
+    token = await signin();
   });
 
   afterEach(async () => {

@@ -3,8 +3,10 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useCourseStore, type Course } from "../course";
 import { useUserStore } from "../user";
+import { isAuthenticated } from "~/services/auth";
 
 vi.mock("~/api/course");
+vi.mock("~/services/auth");
 
 const firstCourse: Course = {
   id: 1,
@@ -28,7 +30,12 @@ vi.mocked(fetchCourse).mockImplementation(async (courseId) => {
   if (courseId === 2) return secondCourse;
   return firstCourse;
 });
-vi.mocked(fetchCompleteCourse).mockImplementation(async () => firstCourse);
+
+vi.mocked(fetchCompleteCourse).mockImplementation(async () => {
+  return {
+    nextCourse: firstCourse,
+  };
+});
 
 describe("course", () => {
   beforeEach(() => {
@@ -39,14 +46,13 @@ describe("course", () => {
     const userStore = useUserStore();
     userStore.initUser({
       userId: "1",
-      username: "cxr",
-      phone: "18518518521",
-    });
+    } as any);
+
+    vi.mocked(isAuthenticated).mockReturnValue(true);
   });
 
   it("should be fetch try course when user is a tourist", async () => {
-    const userStore = useUserStore();
-    userStore.logoutUser();
+    vi.mocked(isAuthenticated).mockReturnValue(false);
 
     const store = useCourseStore();
     await store.setup(1);

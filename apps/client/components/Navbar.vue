@@ -91,13 +91,13 @@
 
           <!-- 显示用户信息 -->
           <div
-            v-if="userStore.user"
+            v-if="isAuthenticated()"
             class="logged-in flex items-center"
           >
             <div
               class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
             >
-              {{ userStore.user.username }}
+              {{ userStore.userInfo?.username }}
             </div>
             <DropMenu @update-show-modal="handleLogout" />
           </div>
@@ -108,17 +108,11 @@
             class="flex items-center ml-5"
           >
             <button
-              v-show="
-                (!userStore.user && route.name !== 'Auth-Login') ||
-                route.name === 'Auth-Login'
-              "
-              @click="
-                route.name === 'Auth-Login' ? handleSignup() : handleLogin()
-              "
-              aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
+              @click="signIn()"
+              aria-label="Login"
               class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
             >
-              {{ route.name === "Auth-Login" ? "Register" : "Login" }}
+              登录
             </button>
           </div>
         </div>
@@ -129,19 +123,16 @@
     v-model:isShowModal="isShowModal"
     title="提示"
     content="是否确认退出登录？"
-    @confirm="handleLogoutConfirm"
+    @confirm="signOut()"
   />
 </template>
 
 <script setup lang="ts">
-import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
-import { cleanToken } from "~/utils/token";
-
-import Message from "~/components/main/Message/useMessage";
+import { isAuthenticated, signIn, signOut } from "~/services/auth";
 
 const route = useRoute();
 const userStore = useUserStore();
@@ -164,13 +155,6 @@ const isStickyNavBar = computed(() => {
   return "";
 });
 
-const handleLogin = () => {
-  navigateTo("/auth/login");
-};
-
-const handleSignup = () => {
-  navigateTo("/auth/signup");
-};
 
 const handleLogout = () => {
   isShowModal.value = true;
@@ -180,18 +164,4 @@ const handleContent = () => {
   navigateTo("/content/readme/en");
 };
 
-const handleLogoutConfirm = () => {
-  userStore.logoutUser();
-  cleanToken();
-  try {
-    Message.success("您已成功退出登录！", {
-      duration: 2000,
-      onLeave() {
-        navigateTo("/");
-      },
-    });
-  } catch (error) {
-    Message.error("退出登录失败！");
-  }
-};
 </script>

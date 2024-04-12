@@ -5,9 +5,10 @@ import { GlobalModule } from '../global/global.module';
 import { UserProgressService } from '../user-progress/user-progress.service';
 import { RankService } from '../rank/rank.service';
 import { CourseHistoryService } from '../course-history/course-history.service';
+import { UserModule } from '../user/user.module';
 
 @Module({
-  imports: [GlobalModule],
+  imports: [GlobalModule, UserModule],
   providers: [
     CourseService,
     UserProgressService,

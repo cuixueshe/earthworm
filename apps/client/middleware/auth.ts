@@ -1,9 +1,8 @@
 import { defineNuxtRouteMiddleware, navigateTo } from "nuxt/app";
-import { useUserStore } from "~/store/user"
+import { isAuthenticated, signIn } from "~/services/auth";
 
 export default defineNuxtRouteMiddleware((to, from) => {
-  const userStore = useUserStore()
-  if (!userStore.getUserInfo() && +to.params.id !== 1) {
-    return navigateTo("/auth/login");
+  if (!isAuthenticated() && +to.params.id !== 1) {
+    signIn()
   }
-})
+});
