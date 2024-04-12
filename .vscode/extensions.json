@@ -1,8 +1,10 @@
 {
   "recommendations": [
-    "editorconfig.editorconfig",
+    "antfu.goto-alias",
+    "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
     "Vue.volar",
-    "bradlc.vscode-tailwindcss"
   ]
 }

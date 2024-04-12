@@ -1,12 +1,11 @@
 <template>
   <div>
-    <QuestionInput></QuestionInput>
+    <MainQuestionInput />
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch } from "vue";
-import QuestionInput from "~/components/main/QuestionInput/QuestionInput.vue";
 import { useCourseStore } from "~/store/course";
 import { play } from "./dictation";
 
@@ -31,5 +30,3 @@ function usePlayEnglishSound() {
   });
 }
 </script>
-
-<style lang="scss" scoped></style>

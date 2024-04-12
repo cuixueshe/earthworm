@@ -30,11 +30,13 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted,onMounted, watch } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
+import { useSummary } from "~/composables/main/summary";
+import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -53,13 +55,14 @@ const {
 } = useQuestionInput();
 
 const { showAnswer } = useGameMode();
+const { showSummary } = useSummary();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError, resetCloseTip } = answerError();
-
+const { isAutoNextQuestion } = useAutoNextQuestion();
 const {
   inputValue,
   userInputWords,
@@ -80,7 +83,7 @@ onMounted(() => {
   resetCloseTip();
 });
 
-focusInputWhenWIndowFocus()
+focusInputWhenWIndowFocus();
 
 watch(
   () => inputValue.value,
@@ -231,20 +234,25 @@ function answerError() {
 }
 
 function handleAnswerRight() {
-  playRightSound(); // 正确提示
-  showAnswer();
-  hiddenAnswerTip();
-  courseTimer.timeEnd(String(courseStore.statementIndex));
+  courseTimer.timeEnd(String(courseStore.statementIndex)); // 停止当前题目的计时
+  playRightSound();
+
+  if (isAutoNextQuestion()) {
+    // 自动下一题
+    if (courseStore.isAllDone()) {
+      blurInput(); // 失去输入焦点，防止结束时光标仍然在输入框，造成后续结算面板回车事件无法触发
+      showSummary();
+    }
+    courseStore.toNextStatement();
+  } else {
+    showAnswer();
+  }
 }
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.code === "Enter") {
     e.stopPropagation();
-    submitAnswer(
-      handleAnswerRight,
-      handleAnswerError // 错误提示
-    );
-
+    submitAnswer(handleAnswerRight, handleAnswerError);
     return;
   }
 
@@ -252,7 +260,7 @@ function handleKeydown(e: KeyboardEvent) {
     useSpaceSubmitAnswer: {
       enable: isUseSpaceSubmitAnswer(),
       rightCallback: handleAnswerRight,
-      errorCallback: handleAnswerError, // 错误提示
+      errorCallback: handleAnswerError,
     },
   });
 }

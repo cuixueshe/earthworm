@@ -2,11 +2,9 @@
   <div
     class="w-full h-full bg-white dark:bg-theme-dark transition-colors dark:text-slate-300 text-slate-600"
   >
-    <div
-      class="flex flex-col h-fit min-h-screen m-auto lg:px-24 xl:px-2 px-7 items-center"
-    >
-      <Navbar></Navbar>
-      <div class="flex-1 flex xl:w-[1200px] sm:w-full">
+    <div class="flex flex-col h-fit min-h-screen m-auto items-center">
+      <Navbar />
+      <div class="flex-1 flex w-full max-w-screen-xl px-6">
         <slot></slot>
       </div>
       <Footer></Footer>

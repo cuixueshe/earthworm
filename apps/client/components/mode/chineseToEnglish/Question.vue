@@ -5,12 +5,11 @@
         courseStore.currentStatement?.chinese || "生存还是毁灭，这是一个问题"
       }}
     </div>
-    <QuestionInput></QuestionInput>
+    <MainQuestionInput />
   </div>
 </template>
 
 <script setup lang="ts">
-import QuestionInput from "~/components/main/QuestionInput/QuestionInput.vue";
 import { useCourseStore } from "~/store/course";
 const courseStore = useCourseStore();
 </script>

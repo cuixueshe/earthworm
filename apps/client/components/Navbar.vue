@@ -1,9 +1,9 @@
 <template>
   <header
-    :class="[headerClasses]"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont w-[100vw] lg:px-24 xl:px-2 px-7"
+    :class="isStickyNavBar"
+    class="w-full top-0 bg-opacity-50 backdrop-blur-xl font-customFont z-40"
   >
-    <div class="mx-auto max-w-screen-xl mt-2">
+    <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
         <div class="left flex w-full items-center justify-between">
           <NuxtLink to="/">
@@ -99,7 +99,7 @@
             >
               {{ userStore.user.username }}
             </div>
-            <DropMenu @updateShowModal="handleLogout" />
+            <DropMenu @update-show-modal="handleLogout" />
           </div>
 
           <!-- 登录/注册 -->
@@ -125,10 +125,10 @@
       </div>
     </div>
   </header>
-  <MessageBox
+  <MainMessageBox
     v-model:isShowModal="isShowModal"
-    title="Notice"
-    content="Are you sure to exit?"
+    title="提示"
+    content="是否确认退出登录？"
     @confirm="handleLogoutConfirm"
   />
 </template>
@@ -137,33 +137,31 @@
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
-import Message from "~/components/main/Message/useMessage";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 import { cleanToken } from "~/utils/token";
-import DropMenu from "./DropMenu.vue";
-import MessageBox from "./main/MessageBox/MessageBox.vue";
+
+import Message from "~/components/main/Message/useMessage";
 
 const route = useRoute();
 const userStore = useUserStore();
-const { toggleDarkMode, darkMode } = useDarkMode();
+const { darkMode, toggleDarkMode } = useDarkMode();
 
+const isShowModal = ref(false);
 const HEADER_OPTIONS = [
   { name: "主页", anchor: "home" },
-  // { name: "What", anchor: "what" },
   { name: "功能", anchor: "features" },
-  // { name: "Pricing", anchor: "pricing" },
   { name: "问题", anchor: "faq" },
   { name: "联系我们", anchor: "contact" },
 ];
-const isShowModal = ref(false);
-const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-const headerClasses = computed(() => {
-  const isHomePage = route.path === "/";
 
-  return {
-    sticky: isHomePage,
-  };
+const isDarkMode = computed(() => darkMode.value === Theme.DARK);
+const isStickyNavBar = computed(() => {
+  // 首页/用户信息页
+  if (["index", "User-Info"].includes(route.name as string)) {
+    return "sticky";
+  }
+  return "";
 });
 
 const handleLogin = () => {
@@ -186,14 +184,14 @@ const handleLogoutConfirm = () => {
   userStore.logoutUser();
   cleanToken();
   try {
-    Message.success("You've been logged out successfully!", {
+    Message.success("您已成功退出登录！", {
       duration: 2000,
       onLeave() {
         navigateTo("/");
       },
     });
   } catch (error) {
-    Message.error("logout error!");
+    Message.error("退出登录失败！");
   }
 };
 </script>

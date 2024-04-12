@@ -6,7 +6,7 @@
   </NuxtLayout>
 </template>
 
-<script setup lang="tsx">
+<script setup lang="ts">
 import { onMounted } from "vue";
 import { useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";

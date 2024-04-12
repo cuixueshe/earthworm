@@ -1,11 +1,20 @@
 <template>
-  <dialog class="modal invisible" :open="isShow">
-    <div ref="dialogBoxRef" class="modal-box">
+  <dialog
+    :open="isShow"
+    class="modal invisible"
+  >
+    <div
+      ref="dialogBoxRef"
+      class="modal-box"
+    >
       <h3 class="font-bold text-lg">{{ title }}</h3>
       <p class="py-4">{{ content }}</p>
       <div class="modal-action">
         <form method="dialog">
-          <button class="btn cancel" @click="handleCancel">
+          <button
+            @click="handleCancel"
+            class="btn cancel"
+          >
             {{ cancelBtnText }}
           </button>
         </form>

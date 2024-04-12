@@ -28,20 +28,20 @@
       v-if="showDropdown"
       ref="dropdownContainer"
       tabindex="0"
-      class="dropdown-content z-[1] menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md"
+      class="dropdown-content menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md z-[1] dark:bg-theme-dark dark:border-gray-600"
     >
       <li
-        v-for="(menu_item, menu_index) in MENU_OPTIONS"
-        :index="menu_index"
+        v-for="(item, index) in showMenuOptions"
+        :index="index"
       >
         <span
-          @click="menu_item.eventName"
-          class="flex items-center gap-2 rounded-lg text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+          @click="item.eventName"
+          class="flex items-center gap-2 rounded-lg hover:text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:hover:bg-fuchsia-500"
         >
-          <span v-html="menu_item.icon"></span>
+          <span v-html="item.icon"></span>
 
           <span class="text-sm font-medium">
-            {{ menu_item.title }}
+            {{ item.title }}
           </span>
         </span>
       </li>
@@ -52,38 +52,21 @@
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import { useGameStore } from "~/store/game";
 
+const emit = defineEmits(["update-show-modal"]);
+const route = useRoute();
+const router = useRouter();
+const gameStore = useGameStore();
 const showDropdown = ref(false);
 const dropdownContainer = ref(null);
-const emit = defineEmits(["updateShowModal"]);
-
-onClickOutside(dropdownContainer, () => {
-  showDropdown.value = false;
-});
-
-const toggleDropdown = () => {
-  showDropdown.value = !showDropdown.value;
-};
-
-const handleViewUserInfo = () => {
-  navigateTo("/user/info");
-};
-
-const handleSetting = () => {
-  navigateTo({
-    path: "/user/info",
-    query: { displayComponent: "Setting" },
-  });
-};
-
-const handleLogout = () => {
-  emit("updateShowModal", true);
-};
-
+const GO_BACK_GAME_NAME = "goBackGamePage";
 const MENU_OPTIONS = [
   {
-    title: "Account Info",
+    title: "用户信息",
+    name: "accountInfo",
     eventName: handleViewUserInfo,
     icon: `<svg
         xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +84,14 @@ const MENU_OPTIONS = [
       </svg>`,
   },
   {
-    title: "Setting",
+    title: "返回游戏",
+    name: GO_BACK_GAME_NAME,
+    eventName: handleGoBackGamePage,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 11h4M8 9v4m7-1h.01M18 10h.01m-.69-5H6.68a4 4 0 0 0-3.978 3.59l-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258q-.01-.075-.017-.151A4 4 0 0 0 17.32 5"/></svg>`,
+  },
+  {
+    title: "设置",
+    name: "setting",
     eventName: handleSetting,
     icon: `<svg
       xmlns="http://www.w3.org/2000/svg"
@@ -124,30 +114,43 @@ const MENU_OPTIONS = [
     </svg>`,
   },
   {
-    title: "Log out",
+    title: "登出",
+    name: "logout",
     eventName: handleLogout,
-    icon: `<svg
-        t="1711805258296"
-        class="icon"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2307"
-        width="20"
-        height="20"
-        stroke="currentColor"
-      >
-        <path
-          d="M128 514.112c0 21.248 17.216 38.464 38.464 38.464l404.736 0.32-88.064 88.512c-15.04 14.976-15.04 39.36 0 54.4s39.36 14.976 54.4 0l147.712-148.352c2.688-1.536 5.184-3.52 7.488-5.824 7.744-7.744 11.456-17.92 11.264-28.032 0.192-10.112-3.52-20.288-11.264-28.032-2.304-2.24-4.8-4.16-7.488-5.824L537.536 331.264c-15.04-14.976-39.36-14.976-54.4 0-15.04 15.04-15.04 39.424 0 54.464l89.92 90.24L166.464 475.648C145.216 475.648 128 492.864 128 514.112z"
-          fill="#8a8a8a"
-          p-id="2308"
-        ></path>
-        <path
-          d="M213.312 896l597.312 0C857.6 896 896 857.6 896 810.688L896 213.312C896 166.4 857.6 128 810.688 128L213.312 128C165.952 128 128 166.4 128 213.312l0 107.072C128 348.096 146.112 349.632 170.816 358.4c24.64-8.704 42.56-10.176 42.56-37.952L213.376 213.312l597.312 0 0 597.312L213.312 810.624l0-107.136c0-27.712-18.176-29.184-42.816-37.952C145.856 674.368 128 675.776 128 703.552l0 107.136C128 857.6 165.952 896 213.312 896z"
-          fill="#8a8a8a"
-          p-id="2309"
-        ></path>
-      </svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4m7 14l5-5l-5-5m5 5H9"/></svg>`,
   },
 ];
+const showMenuOptions = computed(() => {
+  return MENU_OPTIONS.filter(
+    (menu) => menu.name !== GO_BACK_GAME_NAME || route.name !== "Main-id"
+  );
+});
+
+onClickOutside(dropdownContainer, () => {
+  showDropdown.value = false;
+});
+
+function toggleDropdown() {
+  showDropdown.value = !showDropdown.value;
+}
+
+function handleViewUserInfo() {
+  navigateTo("/user/info");
+}
+
+async function handleGoBackGamePage() {
+  const { courseId } = await gameStore.startGame();
+  router.push(`/main/${courseId}`);
+}
+
+function handleSetting() {
+  navigateTo({
+    path: "/user/info",
+    query: { displayComponent: "Setting" },
+  });
+}
+
+function handleLogout() {
+  emit("update-show-modal", true);
+}
 </script>

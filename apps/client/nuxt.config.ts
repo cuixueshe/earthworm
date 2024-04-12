@@ -17,16 +17,15 @@ function addClarity() {
 }
 
 export default defineNuxtConfig({
-  css: ["~/assets/css/globals.css"],
   ssr: false,
-  devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@vueuse/nuxt",
-    "@nuxt/image",
-    "@nuxt/test-utils/module",
-    "@nuxt/content",
-  ],
+  // default is true, reference to https://nuxt.com/docs/guide/directory-structure/components
+  // components: true,
+  imports: {
+    autoImport: false,
+  },
+  devtools: {
+    enabled: true,
+  },
   app: {
     head: {
       title: "earthworm",
@@ -34,11 +33,14 @@ export default defineNuxtConfig({
       script: appScripts,
     },
   },
-  imports: {
-    autoImport: false,
-  },
-  components: true,
   // ↓ @nuxt/content options
   content: {},
-  plugins: ["~/plugins/globalComponents.ts"],
+  css: ["~/assets/css/globals.css"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    "@nuxt/image",
+    "@nuxt/test-utils/module",
+    "@nuxt/content",
+  ],
 });
