@@ -54,8 +54,8 @@ function useShortcutToGame() {
   async function startEarthworm() {
     isLoading.value = true;
     const { courseId } = await gameStore.startGame();
+    await router.push(`/main/${courseId}`);
     isLoading.value = false;
-    router.push(`/main/${courseId}`);
   }
 
   onMounted(() => {
