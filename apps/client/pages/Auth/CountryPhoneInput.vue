@@ -10,7 +10,7 @@
       <div
         @click="toggleDropdown"
         tabindex="0"
-        class="rounded-l-md border border-gray-300 shadow-sm text-gray-700 dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none block px-3 py-1.5 text-sm focus:outline-none cursor-pointer"
+        class="rounded-l-md border border-gray-300 shadow-sm text-gray-700 dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none block px-3 py-2 text-sm focus:outline-none cursor-pointer"
       >
         {{ selectedCountry.flag }} (+{{ selectedCountry.dialCode }})
       </div>
@@ -48,7 +48,7 @@
           v-model="phoneNumber"
           @input="handleInput"
           placeholder="Your phone number"
-          class="rounded-r-md border border-gray-300 shadow-sm text-gray-700 dark:text-gray-300 dark:border-gray-600 focus:outline-none dark:bg-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none block w-full px-3 py-1.5 text-sm placeholder-gray-400 dark:placeholder-gray-500 focus:bg-blue-50 dark:focus:bg-gray-600 -ml-px"
+          class="rounded-r-md border border-gray-300 shadow-sm text-gray-700 dark:text-gray-300 dark:border-gray-600 focus:outline-none dark:bg-gray-700 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none block w-full px-3 py-2 text-sm placeholder-gray-400 dark:placeholder-gray-500 focus:bg-blue-50 dark:focus:bg-gray-600 -ml-px"
         />
       </div>
     </div>
@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import { onClickOutside } from '@vueuse/core';
+import { onClickOutside } from "@vueuse/core";
 import { allCountries as countriesData } from "country-telephone-data";
 import { ref } from "vue";
 const emit = defineEmits(["update:modelValue"]);
@@ -131,6 +131,6 @@ function countryCodesToFlagEmoji(iso2) {
 }
 
 onClickOutside(dropdownContainer, () => {
-  showDropdown.value = false
-})
+  showDropdown.value = false;
+});
 </script>

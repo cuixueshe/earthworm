@@ -16,17 +16,18 @@
         :placeholder="placeholder"
         :autocomplete="autocomplete"
         required
-        class="mt-2 appearance-none block w-full px-3 py-2.5 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-sm text-gray-700 dark:text-gray-300 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 focus:bg-blue-50 dark:focus:bg-gray-600"
+        class="mt-2 appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 text-sm text-gray-700 dark:text-gray-300 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 focus:bg-blue-50 dark:focus:bg-gray-600"
       />
 
       <span
         class="absolute inset-y-0 end-0 grid bottom-1.5 place-content-center px-4 cursor-pointer"
-        v-if="type === 'password'"
+        v-if="props.type === 'password'"
         @click="togglePassword"
       >
         <svg
+          v-if="isPasswordVisible"
           xmlns="http://www.w3.org/2000/svg"
-          class="size-4 text-gray-400"
+          class="h-4 w-4 text-gray-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -42,6 +43,36 @@
             stroke-linejoin="round"
             stroke-width="2"
             d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+          />
+        </svg>
+
+        <svg
+          v-else
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 text-gray-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+          />
+          <line
+            x1="4"
+            y1="7"
+            x2="20"
+            y2="17"
+            stroke-linecap="round"
+            stroke-width="2"
           />
         </svg>
       </span>
@@ -75,6 +106,8 @@ const props = defineProps({
 });
 
 const emit = defineEmits(["update:modelValue"]);
+const isPasswordVisible = ref(false);
+const inputType = ref(props.type);
 
 function updateValue(event: Event) {
   const input = event.target as HTMLInputElement;
@@ -84,8 +117,8 @@ function updateValue(event: Event) {
   emit("update:modelValue", input.value);
 }
 
-const inputType = ref(props.type);
 function togglePassword() {
-  inputType.value = inputType.value === "password" ? "text" : "password";
+  isPasswordVisible.value = !isPasswordVisible.value;
+  inputType.value = isPasswordVisible.value ? "text" : "password";
 }
 </script>
