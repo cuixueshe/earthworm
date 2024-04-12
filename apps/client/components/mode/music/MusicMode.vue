@@ -1,42 +1,26 @@
 <template>
   <div class="flex items-center justify-center h-full relative">
-    <!-- <div class="absolute top-10 left-1/2 translate-x-[-50%]">
-      <button
-        class="btn"
-        @click="audioPlay"
+    <div
+      v-show="!isStart"
+      class="flex flex-col justify-center items-center relative z-10"
+    >
+      <blockquote
+        class="text-2xl font-semibold italic text-center text-slate-900 dark:text-white pb-10"
       >
-        开始
-      </button>
-      <button
-        class="btn"
-        @click="audioPause"
-      >
-        暂停
-      </button>
-      <button
-        class="btn"
-        @click="testRestart"
-      >
-        重播
-      </button>
-      <div v-show="showAudio">
-        <audio
-          controls
-          class="js-player"
-          ref="playerElement"
-        ></audio>
-      </div>
-    </div> -->
+        全新体验，
+        <span
+          class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block"
+        >
+          <span class="relative text-white">音乐模式</span>
+        </span>
+        ，快来挑战
+      </blockquote>
 
-    <div v-show="!isStart">
-      <p>
-        音乐模式
+      <PlayerSvg
+        isAround
+        @click="handleStartPlay"
+      ></PlayerSvg>
 
-        <PlayerSvg
-          isAround
-          @click="handleStartPlay"
-        ></PlayerSvg>
-      </p>
       <div v-show="showAudio">
         <audio
           controls
@@ -45,10 +29,17 @@
         ></audio>
       </div>
     </div>
-    <div v-show="isStart">
+    <div
+      v-show="isStart"
+      class="relative z-10"
+    >
       <template v-if="isQuestion()">
         <Question></Question>
       </template>
+    </div>
+
+    <div class="absolute z-[-10px] opacity-50">
+      <Phonograph :is-play="isStart"></Phonograph>
     </div>
   </div>
   <Tips></Tips>
@@ -60,6 +51,7 @@ import { onMounted, ref } from "vue";
 import musicSrc from "~/assets/music/demo.mp3";
 import { useMusicAudio } from "~/composables/audio";
 import { useGameMode } from "~/composables/main/game";
+import Phonograph from "./Phonograph.vue";
 import PlayerSvg from "./PlayerSvg.vue";
 import Question from "./Question.vue";
 import Tips from "./Tips.vue";
@@ -68,7 +60,7 @@ const { isQuestion } = useGameMode();
 
 const showAudio = ref(false);
 const playerElement = ref<HTMLAudioElement>();
-const { setupAudio, audioPlay, audioPause, testRestart } = useMusicAudio();
+const { setupAudio, audioPlay } = useMusicAudio();
 const { isStart, handleStartPlay } = useStartGame();
 
 onMounted(() => {

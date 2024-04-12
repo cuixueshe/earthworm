@@ -55,10 +55,6 @@ export function useMusicAudio() {
     player.pause();
   }
 
-  function testRestart() {
-    player.restart();
-  }
-
   function playStatement(time: string) {
     player.currentTime = srtTimeToSeconds(time);
     player.play();
@@ -68,7 +64,6 @@ export function useMusicAudio() {
     setupAudio,
     audioPlay,
     audioPause,
-    testRestart,
 
     playStatement,
   };
