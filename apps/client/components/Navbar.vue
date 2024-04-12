@@ -28,7 +28,7 @@
             aria-label="Global"
             class="hidden md:block"
           >
-            <ul class="flex items-center text-md">
+            <ul class="flex items-center text-base">
               <template
                 v-for="(optItem, optIndex) in HEADER_OPTIONS"
                 :key="optIndex"
@@ -47,6 +47,29 @@
         </div>
 
         <div class="flex items-center">
+          <!-- 显示用户信息 -->
+          <div
+            v-if="isAuthenticated()"
+            class="logged-in flex items-center"
+          >
+            <div
+              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
+            >
+              {{ userStore.userInfo?.username }}
+            </div>
+            <DropMenu @update-show-modal="handleLogout" />
+          </div>
+
+          <!-- 登录/注册 -->
+          <button 
+            v-else
+            @click="signIn()"
+            aria-label="Login"
+            class="btn btn-sm btn-ghost text-base font-normal dark:text-white rounded-md mx-1 h-8 px-4"
+          >
+            <span class="relative">登录</span>
+          </button>
+
           <!-- 切换主题 -->
           <button
             class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
@@ -80,33 +103,6 @@
               />
             </svg>
           </button>
-
-          <!-- 显示用户信息 -->
-          <div
-            v-if="isAuthenticated()"
-            class="flex items-center"
-          >
-            <div
-              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
-            >
-              {{ userStore.userInfo?.username }}
-            </div>
-            <DropMenu @update-show-modal="handleLogout" />
-          </div>
-
-          <!-- 登录/注册 -->
-          <div
-            v-else
-            class="flex items-center ml-5"
-          >
-            <button
-              @click="signIn()"
-              aria-label="Login"
-              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
-            >
-              登录
-            </button>
-          </div>
         </div>
       </div>
     </div>
