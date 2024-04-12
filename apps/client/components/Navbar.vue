@@ -61,7 +61,7 @@
           </div>
 
           <!-- 登录/注册 -->
-          <button 
+          <button
             v-else
             @click="signIn()"
             aria-label="Login"
@@ -142,7 +142,6 @@ const isStickyNavBar = computed(() => {
   }
   return "";
 });
-
 
 const handleLogout = () => {
   isShowModal.value = true;
