@@ -9,7 +9,7 @@
   >
     <h3 class="text-base font-bold dark:text-gray-100">{{ title }}</h3>
     <p
-      class="text-sm mt-4 truncate"
+      class="mt-4 text-sm truncate"
       :class="
         isActiveCourse
           ? 'text-[rgba(255,255,255,0.8)]'
@@ -61,7 +61,7 @@ onMounted(() => {
 
 <style scoped>
 .course-card {
-  @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[300px] xl:w-[280px] p-4 pb-6 border border-[rgba(164,175,191,1)] hover:shadow-lg hover:shadow-[rgba(164,175,191,0.5)] hover:border-[rgba(164,175,191,1)] rounded-xl transition-all duration-500 relative;
+  @apply w-full h-[160px] p-4 pb-6 border border-[rgba(164,175,191,1)] hover:shadow-lg hover:shadow-[rgba(164,175,191,0.5)] hover:border-[rgba(164,175,191,1)] rounded-xl transition-all duration-500 relative;
 }
 
 .count {
