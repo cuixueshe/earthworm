@@ -2,8 +2,8 @@ import { JwtModule } from '@nestjs/jwt';
 import { sql } from 'drizzle-orm';
 import { DbType } from 'src/global/providers/db.provider';
 import { GlobalModule } from '../../src/global/global.module';
-import { MockRedisModule } from './mockRedis';
 import { fetchToken } from '../../src/services/logtoService';
+import { MockRedisModule } from './mockRedis';
 
 export async function cleanDB(db: DbType) {
   await db.execute(sql`SET FOREIGN_KEY_CHECKS = 0;`);
@@ -12,7 +12,6 @@ export async function cleanDB(db: DbType) {
   await db.execute(sql`TRUNCATE TABLE statements;`);
   await db.execute(sql`TRUNCATE TABLE \`user-progress\`;`);
   await db.execute(sql`TRUNCATE TABLE \`course-history\`;`);
-  await db.execute(sql`TRUNCATE TABLE users;`);
 
   await db.execute(sql`SET FOREIGN_KEY_CHECKS = 1;`);
 }
