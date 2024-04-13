@@ -5,12 +5,12 @@
   >
     <div class="mx-auto text-center my-5">
       <h2
-        class="text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100"
+        class="text-[28px] lg:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100"
       >
         让你上瘾的英语学习工具
       </h2>
 
-      <div class="mt-5">
+      <div class="mt-5 text-sm lg:text-lg">
         <p class="pt-2 text-center dark:text-gray-300 text-gray-500 lg:text-xl">
           使用<span class="dark:text-purple-200 text-purple-400">
             连词成句 </span
@@ -55,7 +55,7 @@
       <img
         alt=""
         src="~/assets/home-page-preview.png"
-        class="w-3/4"
+        class="w-4/5 lg:w-3/4"
       />
     </div>
 

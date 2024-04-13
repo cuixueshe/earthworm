@@ -85,7 +85,7 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                  Open Source
+                  开源
                 </a>
               </li>
 
@@ -94,7 +94,7 @@
                   href="https://github.com/cuixueshe/earthworm/issues"
                   class="transition hover:opacity-75"
                 >
-                  Issues
+                  问题
                 </a>
               </li>
 
