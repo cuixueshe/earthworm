@@ -6,7 +6,7 @@ CREATE TABLE `courses` (
 --> statement-breakpoint
 CREATE TABLE `course-history` (
 	`id` int AUTO_INCREMENT NOT NULL,
-	`user_id` int NOT NULL,
+	`user_id` text NOT NULL,
 	`course_id` int NOT NULL,
 	`completion_count` int NOT NULL DEFAULT 0,
 	CONSTRAINT `course-history_id` PRIMARY KEY(`id`)
@@ -37,7 +37,7 @@ CREATE TABLE `users` (
 CREATE TABLE `user-progress` (
 	`id` int AUTO_INCREMENT NOT NULL,
 	`course_id` int NOT NULL,
-	`user_id` int NOT NULL,
+	`user_id` text NOT NULL,
 	`created_at` timestamp NOT NULL DEFAULT (now()),
 	`updated_at` timestamp ON UPDATE CURRENT_TIMESTAMP,
 	CONSTRAINT `user-progress_id` PRIMARY KEY(`id`)
