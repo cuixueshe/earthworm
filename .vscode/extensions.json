@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "antfu.iconify",
     "antfu.goto-alias",
     "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
