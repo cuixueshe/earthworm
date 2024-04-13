@@ -32,6 +32,7 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }],
       script: appScripts,
     },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: ["~/assets/css/globals.css"],
   modules: [

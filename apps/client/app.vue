@@ -7,11 +7,11 @@
 </template>
 
 <script setup lang="ts">
+import { useLogto } from "@logto/vue";
 import { onMounted } from "vue";
 import { useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
 import { useUserStore } from "./store/user";
-import { useLogto } from "@logto/vue";
 
 const { initDarkMode } = useDarkMode();
 
@@ -36,5 +36,15 @@ onMounted(() => {
 #jfToolbar,
 .mod-json {
   display: none !important;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
 }
 </style>
