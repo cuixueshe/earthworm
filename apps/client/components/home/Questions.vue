@@ -22,7 +22,7 @@
           <summary
             class="flex justify-between items-center cursor-pointer py-5"
           >
-            <h2 class="text-lg font-medium text-black dark:text-gray-300">
+            <h2 class="text-base lg:text-lg font-medium text-black dark:text-gray-300">
               {{ qsItem.title }}
             </h2>
             <span class="icon">
@@ -49,7 +49,7 @@
               v-for="(asItem, asIndex) in qsItem.content"
               :key="`content-${asIndex}`"
             >
-              <p class="py-2">
+              <p class="py-2 text-sm lg:text-base">
                 <span v-if="qsItem.content.length > 1"
                   >{{ asIndex + 1 }}.
                 </span>

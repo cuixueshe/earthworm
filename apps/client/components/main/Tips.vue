@@ -1,6 +1,6 @@
 <template>
-  <div class="h-32 relative flex items-center justify-center">
-    <div class="min-[780px]:flex hidden items-center justify-center">
+  <div class="relative h-32 flex items-center justify-center">
+    <div class="min-[780px]:flex hidden items-center justify-center z-10">
       <button
         v-for="keybinding in keybindings"
         @click="keybinding.eventFn"
