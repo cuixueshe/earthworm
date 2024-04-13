@@ -16,6 +16,7 @@ jobs:
       LOGTO_ENDPOINT: https://g7aj5i.logto.app/
       LOGTO_CLIENT_ID: uwl60tk769wtbs19i5zkx
       LOGTO_CLIENT_SECRET: AIC9U5TYba73JxMETuj9JeFaLyXFVdWa
+      LOGTO_M2M_API: https://g7aj5i.logto.app/api 
 
     services:
       # 定义测试专用的 MySQL 服务
