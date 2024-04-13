@@ -21,13 +21,13 @@
       {{ courseStore.currentStatement?.chinese }}
     </div>
     <button
-      class="btn btn-sm btn-outline"
+      class="btn btn-sm btn-outline hover:bg-fuchsia-500 hover:text-white"
       @click="showQuestion"
     >
       再来一次
     </button>
     <button
-      class="ml-6 btn btn-sm btn-outline"
+      class="ml-6 btn btn-sm btn-outline hover:bg-fuchsia-500 hover:text-white"
       @click="goToNextQuestion"
     >
       下一题
