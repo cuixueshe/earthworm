@@ -7,7 +7,7 @@ export function createUser(): UserEntity {
   };
 }
 
-export const tokenOwner = process.env.LOGTO_CLIENT_ID;
+export const getTokenOwner = () => process.env.LOGTO_CLIENT_ID;
 
 export async function createLogtoUser(username: string) {
   const params = new URLSearchParams([['search.username', username]]);

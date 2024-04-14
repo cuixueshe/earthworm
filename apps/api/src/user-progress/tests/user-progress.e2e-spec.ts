@@ -6,8 +6,8 @@ import {
   createFirstCourse,
   createSecondCourse,
 } from '../../../test/fixture/course';
+import { getTokenOwner } from '../../../test/fixture/user';
 import { cleanDB, signin } from '../../../test/helper/utils';
-import { tokenOwner } from '../../../test/fixture/user';
 import { AppModule } from '../../app/app.module';
 import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
@@ -71,6 +71,6 @@ async function setupDBData(db: DbType) {
   await db.insert(course).values(secondCourse);
   await db.insert(userProgress).values({
     courseId: firstCourse.id,
-    userId: tokenOwner,
+    userId: getTokenOwner(),
   });
 }
