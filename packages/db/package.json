@@ -13,8 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "drizzle-kit": "^0.20.14",
-    "drizzle-orm": "^0.30.3"
+    "drizzle-kit": "^0.20.14"
   },
   "dependencies": {
     "postgres": "^3.4.4"

@@ -11,6 +11,9 @@ importers:
       '@t3-oss/env-core':
         specifier: ^0.7.1
         version: 0.7.1(typescript@5.3.3)(zod@3.22.4)
+      drizzle-orm:
+        specifier: ^0.30.8
+        version: 0.30.8
       zod:
         specifier: ^3.22.4
         version: 3.22.4
@@ -81,15 +84,15 @@ importers:
       class-validator:
         specifier: ^0.14.1
         version: 0.14.1
-      drizzle-orm:
-        specifier: ^0.30.3
-        version: 0.30.3(postgres@3.4.4)
       ioredis:
         specifier: ^5.3.2
         version: 5.3.2
       jose:
         specifier: ^5.2.4
         version: 5.2.4
+      postgres:
+        specifier: ^3.4.4
+        version: 3.4.4
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.14
@@ -103,6 +106,9 @@ importers:
         specifier: ^8.1.2
         version: 8.1.2
     devDependencies:
+      '@electric-sql/pglite':
+        specifier: ^0.1.2
+        version: 0.1.2
       '@nestjs/cli':
         specifier: ^10.0.0
         version: 10.3.0(esbuild@0.19.11)
@@ -279,15 +285,8 @@ importers:
       drizzle-kit:
         specifier: ^0.20.14
         version: 0.20.14
-      drizzle-orm:
-        specifier: ^0.30.3
-        version: 0.30.3(postgres@3.4.4)
 
-  packages/schema:
-    dependencies:
-      drizzle-orm:
-        specifier: ^0.30.3
-        version: 0.30.3(postgres@3.4.4)
+  packages/schema: {}
 
   packages/xingrong-courses:
     dependencies:
@@ -886,6 +885,10 @@ packages:
     resolution: {integrity: sha512-c5Hkm7MmQC2n5qAsKShjQrHoqlfGslB8+qWzsGGZ+2dHMRTNG60UuzalF0h0rvBax5uzPXuGkYLGaQ+TUX3yMw==}
     dependencies:
       superjson: 2.2.1
+    dev: true
+
+  /@electric-sql/pglite@0.1.2:
+    resolution: {integrity: sha512-JuoSsnFt8+wxVGwEjM6fOmhEdFNPzPranssG7FIOqSHaSyNiCbdau21dyxZkuDD+z96l0oPcrieJKkiwDT6QLA==}
     dev: true
 
   /@emnapi/runtime@0.45.0:
@@ -6652,11 +6655,12 @@ packages:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.30.3(postgres@3.4.4):
-    resolution: {integrity: sha512-tmIUPy71Ca7BUD5M7Tn9bvXESDWoj66d6lTdKCdf30V26xDFFjbx7DMamhOiWU+H1fflBk5rCdtGyt2SiFPgRg==}
+  /drizzle-orm@0.30.8:
+    resolution: {integrity: sha512-9pBJA0IjnpPpzZ6s9jlS1CQAbKoBmbn2GJesPhXaVblAA/joOJ4AWWevYcqvLGj9SvThBAl7WscN8Zwgg5mnTw==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
+      '@electric-sql/pglite': '>=0.1.1'
       '@libsql/client': '*'
       '@neondatabase/serverless': '>=0.1'
       '@op-engineering/op-sqlite': '>=2'
@@ -6666,7 +6670,8 @@ packages:
       '@types/pg': '*'
       '@types/react': '>=18'
       '@types/sql.js': '*'
-      '@vercel/postgres': '*'
+      '@vercel/postgres': '>=0.8.0'
+      '@xata.io/client': '*'
       better-sqlite3: '>=7'
       bun-types: '*'
       expo-sqlite: '>=13.2.0'
@@ -6682,6 +6687,8 @@ packages:
       '@aws-sdk/client-rds-data':
         optional: true
       '@cloudflare/workers-types':
+        optional: true
+      '@electric-sql/pglite':
         optional: true
       '@libsql/client':
         optional: true
@@ -6702,6 +6709,8 @@ packages:
       '@types/sql.js':
         optional: true
       '@vercel/postgres':
+        optional: true
+      '@xata.io/client':
         optional: true
       better-sqlite3:
         optional: true
@@ -6725,8 +6734,7 @@ packages:
         optional: true
       sqlite3:
         optional: true
-    dependencies:
-      postgres: 3.4.4
+    dev: false
 
   /duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
@@ -11367,6 +11375,7 @@ packages:
   /postgres@3.4.4:
     resolution: {integrity: sha512-IbyN+9KslkqcXa8AO9fxpk97PA4pzewvpi2B3Dwy9u4zpV32QicaEdgmF3eSQUzdRk7ttDHQejNgAEr4XoeH4A==}
     engines: {node: '>=12'}
+    dev: false
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
