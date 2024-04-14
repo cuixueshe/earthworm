@@ -1,10 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { createUser } from '../../../test/fixture/user';
-import {
-  cleanDB,
-  startDB,
-  testImportModules,
-} from '../../../test/helper/utils';
+import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 import { CourseService } from '../../course/course.service';
 import { DB, DbType } from '../../global/providers/db.provider';
@@ -32,10 +28,6 @@ describe('game service', () => {
   afterAll(async () => {
     await cleanDB(db);
     await endDB();
-  });
-
-  beforeEach(async () => {
-    await startDB(db);
   });
 
   afterEach(async () => {

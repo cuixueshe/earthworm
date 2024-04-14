@@ -9,6 +9,7 @@ import {
 import { createStatement } from '../../../test/fixture/statement';
 import { cleanDB, signin } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
+import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
@@ -26,6 +27,7 @@ describe('course e2e', () => {
     }).compile();
 
     app = moduleFixture.createNestApplication();
+    appGlobalMiddleware(app);
     db = moduleFixture.get<DbType>(DB);
 
     await app.init();

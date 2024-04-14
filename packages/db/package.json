@@ -5,16 +5,17 @@
   "main": "src/index.ts",
   "scripts": {
     "init:ci": "tsx src/migrate.ts",
-    "init:test": "drizzle-kit push:mysql --config=drizzle.config.test.ts",
-    "init": "drizzle-kit push:mysql",
-    "generate":"drizzle-kit generate:mysql"
+    "init:test": "drizzle-kit push:pg --config=drizzle.config.test.ts",
+    "init": "drizzle-kit push:pg",
+    "generate": "drizzle-kit generate:pg"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "drizzle-kit": "^0.20.14",
-    "drizzle-orm": "^0.30.3",
-    "mysql2": "^3.9.2"
+    "drizzle-kit": "^0.20.14"
+  },
+  "dependencies": {
+    "postgres": "^3.4.4"
   }
 }
