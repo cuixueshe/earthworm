@@ -23,7 +23,7 @@
 import { computed, withDefaults } from "vue";
 import { getCourseLink } from "~/utils/courseLinks";
 
-const NOTE_TIP = "边学边练：点击跳转至星荣英语笔记";
+const NOTE_TIP = "边学边练：看星荣零基础学英语视频";
 const props = withDefaults(
   defineProps<{
     courseId?: number;

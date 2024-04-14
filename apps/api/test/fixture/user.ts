@@ -7,6 +7,7 @@ export function createUser(): UserEntity {
   };
 }
 
+// NOTE: 修复在 AppModule 前导入时获取不到正确的环境变量
 export const getTokenOwner = () => process.env.LOGTO_CLIENT_ID;
 
 export async function createLogtoUser(username: string) {
