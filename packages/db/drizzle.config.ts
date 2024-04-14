@@ -9,8 +9,8 @@ console.log("process.env.DATABASE_URL: ", process.env.DATABASE_URL);
 export default {
   schema: "../schema/src/schema/*",
   out: "./drizzle",
-  driver: "mysql2",
+  driver: "pg",
   dbCredentials: {
-    uri: process.env.DATABASE_URL || "",
+    connectionString: process.env.DATABASE_URL || "",
   },
 } satisfies Config;
