@@ -162,7 +162,7 @@ describe("question", () => {
       setInputValue,
       userInputWords,
       submitAnswer,
-      fixFirstIncorrectWord,
+      fixIncorrectWord,
     } = useInput({
       source: () => "i eat",
       setInputCursorPosition,
@@ -171,11 +171,41 @@ describe("question", () => {
 
     setInputValue("he eat");
     submitAnswer();
-    await fixFirstIncorrectWord();
+    await fixIncorrectWord();
 
     expect(userInputWords[0].userInput).toBe("");
     expect(userInputWords[0].isActive).toBe(true);
   });
+
+  it("should be cleared the first incorrect word when press submit again", async () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = () => 0;
+
+    const {
+      setInputValue,
+      userInputWords,
+      submitAnswer,
+      fixIncorrectWord
+    } = useInput({
+      source: () => "i eat",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    setInputValue("he eat");
+    submitAnswer();
+    await fixIncorrectWord();
+
+    // to next world by input Space 
+    setInputValue(" ")
+    // again submit
+    submitAnswer();
+    await fixIncorrectWord();
+
+    expect(userInputWords[0].isActive).toBe(true);
+  });
+
+
 
   it("should be possible to clear out the wrong words in turn", async () => {
     const setInputCursorPosition = () => {};

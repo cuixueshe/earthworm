@@ -154,6 +154,7 @@ export function useInput({
       (w) => w.id === currentEditWord.id
     );
 
+
     let len = userInputWords.length;
     for (let i = wordIndex + 1; i < len; i++) {
       const word = userInputWords[i];
@@ -177,14 +178,8 @@ export function useInput({
     return userInputWords.find((w) => w.incorrect);
   }
 
-  async function clearNextIncorrectWord() {
-    let word = findNextIncorrectWordNew();
-    if (!word) {
-      word = getFirstIncorrectWord()!;
-    }
-
+  async function clearNextIncorrectWord(word: Word) {
     word.userInput = "";
-
     currentEditWord = word;
 
     userInputWordsSyncInput();
@@ -217,13 +212,13 @@ export function useInput({
     if (mode === Mode.Fix) {
       mode = Mode.Fix_Input;
 
-      await clearNextIncorrectWord();
+      await clearNextIncorrectWord(getFirstIncorrectWord()!);
     }
   }
 
   async function fixNextIncorrectWord() {
     if (mode === Mode.Fix_Input) {
-      await clearNextIncorrectWord();
+      await clearNextIncorrectWord(findNextIncorrectWordNew()!);
     }
   }
 
