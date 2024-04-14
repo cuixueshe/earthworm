@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test
+      DATABASE_URL: postgres://test:password@localhost:5480/earthworm_test
       SECRET: sjldk92#sd903mnc./xklsjdf9sdfj
       REDIS_URL: redis://127.0.0.1:6379
       LOGTO_ENDPOINT: https://g7aj5i.logto.app/
@@ -19,19 +19,16 @@ jobs:
       LOGTO_M2M_API: https://g7aj5i.logto.app/api 
 
     services:
-      # 定义测试专用的 MySQL 服务
-      mysql:
-        image: mysql:8.3.0
+      pg:
+        image: postgres:14-alpine
+        volumes:
+          - data:/var/lib/postgres/test-data
         env:
-          MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: earthworm_test
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: earthworm_test
         ports:
-          - 3307:3306
-        options: >-
-          --health-cmd="mysqladmin ping --silent"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
+          - 5480:5432
       redis:
         image: redis:6.2.5
         ports:
