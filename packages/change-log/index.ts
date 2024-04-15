@@ -1,18 +1,10 @@
 import fs from "fs";
 import { Content, List, ListItem, Root } from "mdast";
 import { fromMarkdown } from "mdast-util-from-markdown";
-import path from 'path';
+import path from "path";
+
 const jsonPath = path.resolve();
-
 const markdown = fs.readFileSync("./CHANGELOG.md", "utf-8");
-
-type ExtractedNode = {
-  title: string;
-  desc: string[];
-  url: string;
-  link: string;
-  author: string;
-};
 
 type VersionInfo = {
   version: string;
@@ -23,8 +15,20 @@ type VersionInfo = {
   }[];
 };
 
+type ExtractedNode = {
+  title: string;
+  desc: string[];
+  url: string;
+  link: string;
+  author: string;
+};
+
 const extractText = (node: Content): string =>
-  "children" in node ? node.children.map((child: Content) => "value" in child ? child.value : '').join("") : "";
+  "children" in node
+    ? node.children
+        .map((child: Content) => ("value" in child ? child.value : ""))
+        .join("")
+    : "";
 
 const parseListItem = (listItem: ListItem): ExtractedNode =>
   listItem.children.reduce<ExtractedNode>(
@@ -41,14 +45,17 @@ const parseListItem = (listItem: ListItem): ExtractedNode =>
           }
         });
       } else if (part.type === "list") {
-        itemDetails.desc = part.children.map((descItem: Content) => extractText(descItem));
+        itemDetails.desc = part.children.map((descItem: Content) =>
+          extractText(descItem)
+        );
       }
       return itemDetails;
     },
     { title: "", desc: [], url: "", link: "", author: "" }
   );
 
-const parseList = (listNode: List): ExtractedNode[] => listNode.children.map((child: ListItem) => parseListItem(child));
+const parseList = (listNode: List): ExtractedNode[] =>
+  listNode.children.map((child: ListItem) => parseListItem(child));
 
 const parseMarkdown = (markdown: string): VersionInfo[] => {
   const ast: Root = fromMarkdown(markdown);
@@ -56,7 +63,9 @@ const parseMarkdown = (markdown: string): VersionInfo[] => {
 
   ast.children.forEach((node, index) => {
     if (node.type === "heading" && node.depth === 2) {
-      const versionInfo = node.children[0].value.match(/V\d+\.\d+\.\d+ \(\d{4}\.\d+\.\d+\)/);
+      const versionInfo = node.children[0].value.match(
+        /V\d+\.\d+\.\d+ \(\d{4}\.\d+\.\d+\)/
+      );
       if (versionInfo) {
         const [version, time] = versionInfo[0].split(" (");
         versions.push({
@@ -82,10 +91,10 @@ const parseMarkdown = (markdown: string): VersionInfo[] => {
 };
 
 const main = (): void => {
-  const versions = parseMarkdown(markdown);
+  const versionsData = parseMarkdown(markdown);
   fs.writeFileSync(
     `${jsonPath}/apps/client/assets/changeLogs.json`,
-    JSON.stringify(versions, null, 2)
+    JSON.stringify(versionsData, null, 2)
   );
 };
 
