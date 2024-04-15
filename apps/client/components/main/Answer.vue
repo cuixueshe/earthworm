@@ -104,7 +104,7 @@ function registerShortcutKeyForNextQuestion() {
 }
 
 function goToNextQuestion() {
-  if (courseStore.isAllDone() || true) {
+  if (courseStore.isAllDone()) {
     // 奉新当前日历
     const calendarStore = useCalendarStore();
     const date = new Date();
