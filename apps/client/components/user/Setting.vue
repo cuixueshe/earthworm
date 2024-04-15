@@ -149,6 +149,18 @@
               />
             </td>
           </tr>
+
+          <tr class="hover">
+            <td class="label-text">自动显示答案（输错三次）</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="showErrorTip"
+                @change="toggleShowErrorTip"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -203,18 +215,19 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
+import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import {
-  PronunciationType,
-  usePronunciation,
+PronunciationType,
+usePronunciation,
 } from "~/composables/user/pronunciation";
 import {
-  SHORTCUT_KEY_TYPES,
-  useShortcutKeyMode,
+SHORTCUT_KEY_TYPES,
+useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 import {
-  useAutoPronunciation,
-  useKeyboardSound,
+useAutoPronunciation,
+useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -232,6 +245,7 @@ const {
 } = usePronunciation();
 const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+const { showErrorTip, toggleShowErrorTip } = useErrorTip();
 const {
   showModal,
   shortcutKeys,
