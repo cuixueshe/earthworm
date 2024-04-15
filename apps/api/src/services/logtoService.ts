@@ -11,7 +11,7 @@ const encodedCredentials = Buffer.from(`${clientId}:${clientSecret}`).toString(
 // 创建 Axios 实例
 const basicAxios = axios.create({
   baseURL: LOGTO_ENDPOINT,
-  timeout: 1000,
+  timeout: 5000,
   headers: {
     Authorization: `Basic ${encodedCredentials}`,
     'Content-Type': 'application/x-www-form-urlencoded',
@@ -30,7 +30,7 @@ export async function fetchToken() {
 
 export const logtoApi = axios.create({
   baseURL: LOGTO_ENDPOINT,
-  timeout: 1000,
+  timeout: 5000,
 });
 
 logtoApi.interceptors.request.use(async (config) => {

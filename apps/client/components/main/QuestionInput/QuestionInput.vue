@@ -23,6 +23,8 @@
         @blur="blurInput"
         @dblclick.prevent
         @mousedown="preventCursorMove"
+        @compositionstart="handleCompositionStart"
+        @compositionend="handleCompositionEnd"
         autoFocus
       />
     </div>
@@ -30,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, watch } from "vue";
+import { onMounted, onUnmounted, ref, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -42,7 +44,7 @@ import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
-import { useQuestionInput } from "./questionInput";
+import { getWordWidth, useQuestionInput } from "./questionInput";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
@@ -148,70 +150,7 @@ function inputWidth(word: string) {
     return 4;
   }
 
-  // 单词宽度
-  let width = 0;
-
-  // 单词转小写字符数组
-  word = word.toLocaleLowerCase();
-  const wordArr = word.split("");
-
-  // 字符宽度1.1的字符数组
-  const onePointOneLetters = ["u", "o", "p", "q", "n", "h", "g", "d", "b"];
-
-  // 字符宽度0.9的字符数组
-  const zeroPointNineLetters = ["z", "y", "x", "v", "c"];
-
-  for (let letter of wordArr) {
-    if (letter === "w" || letter === "m") {
-      width += 1.5;
-      continue;
-    }
-    if (letter === "s") {
-      width += 0.8;
-      continue;
-    }
-    if (letter === "t" || letter === "r" || letter === "f") {
-      width += 0.7;
-      continue;
-    }
-    if (letter === "j") {
-      width += 0.6;
-      continue;
-    }
-    if (letter === "i" || letter === "l" || letter === "'") {
-      width += 0.5;
-      continue;
-    }
-
-    // 记录是否已经增加宽度
-    let increasedWidth = false;
-
-    for (let key of onePointOneLetters) {
-      if (key === letter) {
-        width += 1.1;
-        increasedWidth = true;
-        break;
-      }
-    }
-
-    for (let key of zeroPointNineLetters) {
-      if (key === letter) {
-        width += 0.9;
-        increasedWidth = true;
-        break;
-      }
-    }
-
-    // 未增加宽度
-    if (!increasedWidth) {
-      width += 1;
-    }
-  }
-
-  // 左右留白
-  width += 1;
-
-  return width;
+  return getWordWidth(word);
 }
 
 function answerError() {
@@ -252,8 +191,27 @@ function handleAnswerRight() {
   }
 }
 
+// 中文输入会导致先触发 handleKeydown
+// 但是这时候字符还没有上屏
+// 就会造成触发 submit answer  导致明明答案正确但是不通过的问题
+// 通过检测是否为输入法 来避免按下 enter 后直接触发 submit answer
+let isComposing = ref(false);
+function handleCompositionStart() {
+  isComposing.value = true;
+}
+
+function handleCompositionEnd() {
+  isComposing.value = false;
+}
+
 function handleKeydown(e: KeyboardEvent) {
-  if (e.code === "Enter") {
+  // 避免在某些中文输入法中，按下 Ctrl 键时，输入法会将当前的预输入字符上屏
+  if (e.ctrlKey) {
+    e.preventDefault();
+    return;
+  }
+
+  if (e.code === "Enter" && !isComposing.value) {
     e.stopPropagation();
     submitAnswer(handleAnswerRight, handleAnswerError);
     return;

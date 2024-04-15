@@ -166,7 +166,7 @@ export function useInput({
 
   // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
   function formatInputText(word: string) {
-    return word.toLocaleLowerCase().replace(/‘/g, "'");
+    return word.toLocaleLowerCase().replace(/‘|’|“|"|”/g, "'")
   }
 
   // 当前编辑的单词是否为最后一个错误单词
