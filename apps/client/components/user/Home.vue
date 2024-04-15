@@ -69,6 +69,13 @@ function initChartOpts() {
       orient: "horizontal",
       left: "center",
       top: 65,
+      pieces: [
+        { min: 10 },
+        { min: 5, max: 10 },
+        { min: 3, max: 5 },
+        { min: 1, max: 3 },
+        { min: 0, max: 0 },
+      ],
       color: [
         "rgb(33, 110, 57)",
         "rgb(48, 161, 78)",
