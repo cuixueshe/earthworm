@@ -20,6 +20,13 @@ CREATE TABLE IF NOT EXISTS "statements" (
 	CONSTRAINT "statements_order_unique" UNIQUE("order")
 );
 --> statement-breakpoint
+CREATE TABLE IF NOT EXISTS "user-learn-record" (
+	"id" serial PRIMARY KEY NOT NULL,
+	"user_id" text NOT NULL,
+	"count" integer DEFAULT 0 NOT NULL,
+	"date" timestamp DEFAULT now() NOT NULL
+);
+--> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "user-progress" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"course_id" integer NOT NULL,
