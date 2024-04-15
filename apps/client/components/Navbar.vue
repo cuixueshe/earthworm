@@ -55,7 +55,7 @@
             <div
               class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
             >
-              {{ userStore.userInfo?.username }}
+              {{ userStore.userNameGetter }}
             </div>
             <DropMenu @update-show-modal="handleLogout" />
           </div>

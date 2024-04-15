@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { type UserInfoResponse } from "@logto/vue";
-import { ref } from "vue";
+import { computed, ref, toValue } from "vue";
 
 export const useUserStore = defineStore("user", () => {
   const userInfo = ref<UserInfoResponse>();
@@ -9,8 +9,20 @@ export const useUserStore = defineStore("user", () => {
     userInfo.value = userInfoResponse;
   }
 
+  const userNameGetter = computed(() => {
+    const user = toValue(userInfo);
+
+    if (!user) {
+      return "";
+    }
+
+    const { username, name, email } = user;
+    return name || username || email?.split("@").at(0);
+  });
+
   return {
     initUser,
     userInfo,
+    userNameGetter,
   };
 });
