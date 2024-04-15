@@ -23,6 +23,8 @@
         @blur="blurInput"
         @dblclick.prevent
         @mousedown="preventCursorMove"
+        @compositionstart="handleCompositionStart"
+        @compositionend="handleCompositionEnd"
         autoFocus
       />
     </div>
@@ -30,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, watch } from "vue";
+import { onMounted, onUnmounted, ref, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -104,6 +106,7 @@ watch(
   }
 );
 
+
 function focusInputWhenWIndowFocus() {
   const handleFocus = () => {
     focusInput();
@@ -148,7 +151,7 @@ function inputWidth(word: string) {
     return 4;
   }
 
-  return getWordWidth(word)
+  return getWordWidth(word);
 }
 
 function answerError() {
@@ -189,8 +192,21 @@ function handleAnswerRight() {
   }
 }
 
+// 中文输入会导致先触发 handleKeydown
+// 但是这时候字符还没有上屏
+// 就会造成触发 submit answer  导致明明答案正确但是不通过的问题
+// 通过检测是否为输入法 来避免按下 enter 后直接触发 submit answer
+let isComposing = ref(false);
+function handleCompositionStart() {
+  isComposing.value = true;
+}
+
+function handleCompositionEnd() {
+  isComposing.value = false;
+}
+
 function handleKeydown(e: KeyboardEvent) {
-  if (e.code === "Enter") {
+  if (e.code === "Enter"&& !isComposing.value) {
     e.stopPropagation();
     submitAnswer(handleAnswerRight, handleAnswerError);
     return;
