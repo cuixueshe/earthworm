@@ -1,8 +1,8 @@
-import { int, mysqlTable, timestamp } from "drizzle-orm/mysql-core";
+import { integer, pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
 
-export const userLearnRecord = mysqlTable("user-learn-record", {
-  id: int("id").autoincrement().primaryKey(),
-  userId: int("user_id").notNull(),
-  count: int("count").notNull().default(0),
+export const userLearnRecord = pgTable("user-learn-record", {
+  id: serial("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  count: integer("count").notNull().default(0),
   date: timestamp("date").notNull().defaultNow(),
 });

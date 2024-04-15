@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import { type RankingSelfType } from "~/api/rank";
-import { useUserStore } from "~/store/user";
-import RankingBadge from "./RankingBadge.vue";
-
-const { user } = useUserStore();
-const { rankingSelf, isLoading } = defineProps<{
-  rankingSelf: RankingSelfType | null;
-  isLoading: boolean;
-}>();
-</script>
-
 <template>
   <div
     class="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full h-12 border-t border-gray-200 dark:border-gray-600"
@@ -19,11 +7,11 @@ const { rankingSelf, isLoading } = defineProps<{
       <template v-if="isLoading">
         <span>数据正在向你飞奔而来……</span>
       </template>
-      <template v-else-if="!user">
+      <template v-else-if="!isAuthenticated()">
         <span>登录后和小伙伴们一决高下！😊 </span>
       </template>
       <template v-else-if="rankingSelf && rankingSelf.rank !== -1">
-        <RankingBadge
+        <RankRankingBadge
           :rank="rankingSelf.rank"
           class="min-w-6"
         />
@@ -36,3 +24,13 @@ const { rankingSelf, isLoading } = defineProps<{
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { type RankingSelfType } from "~/api/rank";
+import { isAuthenticated } from "~/services/auth";
+
+const { rankingSelf, isLoading } = defineProps<{
+  rankingSelf: RankingSelfType | null;
+  isLoading: boolean;
+}>();
+</script>

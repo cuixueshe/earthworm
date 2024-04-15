@@ -1,16 +1,15 @@
 import { defineStore } from "pinia";
 import { fetchStartGame } from "~/api/game";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
-import { useUserStore } from "./user";
+import { isAuthenticated } from "~/services/auth";
 
 export const useGameStore = defineStore("game", () => {
   const { updateActiveCourseId, restActiveCourseId } = useActiveCourseId();
   async function startGame() {
-    const userStore = useUserStore();
     // 保证每次获取的 activeCourseId 都是最新的
     const { activeCourseId } = useActiveCourseId();
 
-    if (!userStore.user) {
+    if (!isAuthenticated()) {
       const firstCourseId = 1;
 
       return {

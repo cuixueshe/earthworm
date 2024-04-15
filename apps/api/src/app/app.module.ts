@@ -1,7 +1,6 @@
 import { RedisModule } from '@nestjs-modules/ioredis';
 import { Module } from '@nestjs/common';
 import { ScheduleModule } from '@nestjs/schedule';
-import { AuthModule } from '../auth/auth.module';
 import { CourseHistoryModule } from '../course-history/course-history.module';
 import { CourseModule } from '../course/course.module';
 import { CronJobModule } from '../cron-job/cron-job.module';
@@ -17,7 +16,6 @@ import { UserModule } from '../user/user.module';
   imports: [
     GlobalModule,
     UserModule,
-    AuthModule,
     CourseModule,
     UserProgressModule,
     UserLearnRecordModule,

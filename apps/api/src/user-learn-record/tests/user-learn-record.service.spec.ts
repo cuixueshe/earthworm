@@ -7,8 +7,6 @@ import {
 } from '../../../test/fixture/userLearnRecord';
 import {
   cleanDB,
-  endDB,
-  startDB,
   testImportModules,
 } from '../../../test/helper/utils';
 import { DB, DbType } from '../../global/providers/db.provider';
@@ -31,12 +29,10 @@ describe('user learn record service', () => {
 
   afterAll(async () => {
     await cleanDB(db);
-    await endDB(db);
   });
 
   beforeEach(async () => {
-    await db.execute(sql`TRUNCATE TABLE \`user-learn-record\`;`);
-    await startDB(db);
+    await db.execute(sql`TRUNCATE TABLE "user-learn-record";`);
   });
 
   describe('utils', () => {

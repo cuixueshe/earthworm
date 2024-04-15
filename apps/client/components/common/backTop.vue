@@ -61,7 +61,7 @@ const scrollToTop = () => {
 .button:hover .svgIcon {
   /* width: 20px; */
   transition-duration: 0.3s;
-  transform: translateY(-200%);
+  opacity: 0;
 }
 
 .button::before {

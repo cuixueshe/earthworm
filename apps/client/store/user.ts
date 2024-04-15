@@ -1,54 +1,28 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
-export interface User {
-  userId: string;
-  username: string;
-  phone: string;
-}
+import { type UserInfoResponse } from "@logto/vue";
+import { computed, ref, toValue } from "vue";
 
-export interface SignupFormValues {
-  phone: string;
-  name: string;
-  password: string;
-}
-
-const LOCAL_STORAGE_KEY = "userInfo";
 export const useUserStore = defineStore("user", () => {
-  const user = ref<User>();
+  const userInfo = ref<UserInfoResponse>();
 
-  function initUser(userInfo: User) {
-    user.value = userInfo;
-    saveUserInfo();
+  function initUser(userInfoResponse: UserInfoResponse) {
+    userInfo.value = userInfoResponse;
   }
 
-  function logoutUser() {
-    user.value = undefined;
-    removeUserInfo();
-  }
+  const userNameGetter = computed(() => {
+    const user = toValue(userInfo);
 
-  function saveUserInfo() {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(user.value));
-  }
+    if (!user) {
+      return "";
+    }
 
-  function removeUserInfo() {
-    localStorage.removeItem(LOCAL_STORAGE_KEY);
-  }
-
-  function getUserInfo() {
-    return localStorage.getItem(LOCAL_STORAGE_KEY);
-  }
-
-  function restoreUser() {
-    const userInfoStringify = localStorage.getItem(LOCAL_STORAGE_KEY);
-
-    if (userInfoStringify) user.value = JSON.parse(userInfoStringify);
-  }
+    const { username, name, email } = user;
+    return name || username || email?.split("@").at(0);
+  });
 
   return {
-    user,
     initUser,
-    logoutUser,
-    restoreUser,
-    getUserInfo,
+    userInfo,
+    userNameGetter,
   };
 });

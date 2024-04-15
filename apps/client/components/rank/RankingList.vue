@@ -46,7 +46,7 @@
           v-if="rankingStore.rankingList.length > 0"
           class="flex-1 px-4 py-2 my-1 overflow-y-auto"
         >
-          <RankingItem
+          <RankRankingItem
             v-for="({ username, count }, index) in rankingStore.rankingList"
             :username="username"
             :rank="index + 1"
@@ -63,7 +63,7 @@
       </template>
 
       <!-- tip -->
-      <RankingTip
+      <RankRankingTip
         :isLoading="rankingStore.isLoading"
         :rankingSelf="rankingStore.rankingSelf"
       />
@@ -81,12 +81,9 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
-import Loading from "~/components/Loading.vue";
 import { useRanking } from "~/composables/rank/rankingList";
 import { registerShortcut } from "~/utils/keyboardShortcuts";
 import { cancelShortcut } from "../../utils/keyboardShortcuts";
-import RankingItem from "./RankingItem.vue";
-import RankingTip from "./RankingTip.vue";
 
 const rankingStore = useRanking();
 

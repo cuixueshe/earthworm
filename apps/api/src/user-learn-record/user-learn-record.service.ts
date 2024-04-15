@@ -8,7 +8,7 @@ import { GetUserLearnRecordDto } from './model/user-learn-record.dto';
 export class UserLearnRecordService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async create(userId: number, date: Date) {
+  async create(userId: string, date: Date) {
     await this.db.insert(userLearnRecord).values({
       userId,
       date,
@@ -22,7 +22,7 @@ export class UserLearnRecordService {
     return { start, end };
   }
 
-  async update(userId: number, date: Date, count: number) {
+  async update(userId: string, date: Date, count: number) {
     const { start, end } = this.dateRange(date);
 
     await this.db
@@ -39,7 +39,7 @@ export class UserLearnRecordService {
       );
   }
 
-  async findOne(userId: number, date: Date) {
+  async findOne(userId: string, date: Date) {
     const { start, end } = this.dateRange(date);
 
     const result = await this.db
@@ -61,16 +61,16 @@ export class UserLearnRecordService {
     return new Date(date.setDate(startDay));
   }
 
-  async userLearnRecord(userId: number, date: Date = new Date()) {
+  async userLearnRecord(userId: string, date: Date = new Date()) {
     const record = await this.findOne(userId, date);
     if (record) {
-      this.update(userId, date, record.count);
+      await this.update(userId, date, record.count);
     } else {
-      this.create(userId, date);
+      await this.create(userId, date);
     }
   }
 
-  async findUserLearnRecord(userId: number, dto?: GetUserLearnRecordDto) {
+  async findUserLearnRecord(userId: string, dto?: GetUserLearnRecordDto) {
     const { startDate, endDate } = dto;
     let start = startDate ? new Date(startDate) : this.calcStartDate();
     let end = endDate ? new Date(endDate) : new Date();

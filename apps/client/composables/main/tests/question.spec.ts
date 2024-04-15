@@ -81,25 +81,29 @@ describe("question", () => {
     expect(userInputWords[1].incorrect).toBe(true);
   });
 
-  it("should be correct when compared 'don't' and 'don‘t'", async () => {
-    const setInputCursorPosition = () => {};
-    const getInputCursorPosition = () => 0;
+  it.each(["i don‘t", "i don’t", "i don“t", `i don"t`, `i don”t`])(
+    "should be correct when input '%s'",
+    async (input) => {
+      const setInputCursorPosition = () => {};
+      const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer } = useInput({
-      source: () => "i don't",
-      setInputCursorPosition,
-      getInputCursorPosition,
-    });
+      const { setInputValue, submitAnswer } = useInput({
+        source: () => "i don't",
+        setInputCursorPosition,
+        getInputCursorPosition,
+      });
 
-    setInputValue("i don‘t");
+      setInputValue(input);
 
-    const correctCallback = vi.fn();
-    const wrongCallback = vi.fn();
-    submitAnswer(correctCallback, wrongCallback);
+      const correctCallback = vi.fn();
+      const wrongCallback = vi.fn();
+      submitAnswer(correctCallback, wrongCallback);
 
-    expect(correctCallback).toBeCalled();
-    expect(wrongCallback).not.toBeCalled();
-  });
+      expect(correctCallback).toBeCalled();
+      expect(wrongCallback).not.toBeCalled();
+    }
+  );
+
 
   it("should be the first word should be active", () => {
     const setInputCursorPosition = () => {};
@@ -158,22 +162,42 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const {
-      setInputValue,
-      userInputWords,
-      submitAnswer,
-      fixFirstIncorrectWord,
-    } = useInput({
-      source: () => "i eat",
-      setInputCursorPosition,
-      getInputCursorPosition,
-    });
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } =
+      useInput({
+        source: () => "i eat",
+        setInputCursorPosition,
+        getInputCursorPosition,
+      });
 
     setInputValue("he eat");
     submitAnswer();
-    await fixFirstIncorrectWord();
+    await fixIncorrectWord();
 
     expect(userInputWords[0].userInput).toBe("");
+    expect(userInputWords[0].isActive).toBe(true);
+  });
+
+  it("should be cleared the first incorrect word when press submit again", async () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = () => 0;
+
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } =
+      useInput({
+        source: () => "i eat",
+        setInputCursorPosition,
+        getInputCursorPosition,
+      });
+
+    setInputValue("he eat");
+    submitAnswer();
+    await fixIncorrectWord();
+
+    // to next world by input Space
+    setInputValue(" ");
+    // again submit
+    submitAnswer();
+    await fixIncorrectWord();
+
     expect(userInputWords[0].isActive).toBe(true);
   });
 

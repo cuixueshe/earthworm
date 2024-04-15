@@ -1,17 +1,34 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  mysql:
-    image: mysql:8.3.0
+  db:
     restart: always
+    image: postgres:14-alpine
+    user: postgres
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: earthworm_nest
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: earthworm
     volumes:
-      - data:/var/lib/mysql
-    command: --default-authentication-plugin=mysql_native_password
+      - data:/var/lib/postgres/main-data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
-      - "3306:3306"
+      - 5433:5432
+  testdb:
+    image: postgres:14-alpine
+    user: postgres
+    volumes:
+      - data:/var/lib/postgres/test-data
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: earthworm_test
+    ports:
+      - 5480:5432
   redis:
     image: redis:5-alpine
     restart: always
@@ -21,19 +38,41 @@ services:
       - 6379:6379
   testRedis:
     image: redis:5-alpine
-    restart: always
     volumes:
-      - data:/var/lib/redis
+      - data:/var/lib/test-redis
     ports:
       - 6380:6379
-  testdb:
-    image: mysql:8.3.0
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: earthworm_test
-    command: --default-authentication-plugin=mysql_native_password
+  logto:
+    restart: always
+    depends_on:
+      logtoPostgres:
+        condition: service_healthy
+    image: svhd/logto:${TAG-latest}
+    entrypoint: ["sh", "-c", "npm run cli db seed -- --swe && npm start"]
     ports:
-      - "3307:3306" # 将宿主机的 3307 端口映射到容器的 3306 端口
+      - 3010:3010
+      - 3011:3011
+    environment:
+      - TRUST_PROXY_HEADER=1
+      - DB_URL=postgres://postgres:p0stgr3s@logtoPostgres:5432/logto
+      # Mandatory for GitPod to map host env to the container, thus GitPod can dynamically configure the public URL of Logto;
+      # Or, you can leverage it for local testing.
+      - PORT=3010
+      - ADMIN_PORT=3011
+      - ENDPOINT
+      - ADMIN_ENDPOINT
+  logtoPostgres:
+    restart: always
+    image: postgres:14-alpine
+    user: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: p0stgr3s
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   data:
