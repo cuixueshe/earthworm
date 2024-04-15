@@ -44,7 +44,7 @@ import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
-import { getWordWidth, useQuestionInput } from "./questionInput";
+import { getWordWidth, useQuestionInput } from "./questionInputHelper";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();

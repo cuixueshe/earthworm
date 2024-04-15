@@ -134,7 +134,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
+import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
