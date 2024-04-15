@@ -199,7 +199,6 @@ importers:
       canvas-confetti:
         specifier: ^1.9.2
         version: 1.9.2
-<<<<<<< Updated upstream
       country-telephone-data:
         specifier: ^0.6.3
         version: 0.6.3
@@ -209,11 +208,9 @@ importers:
       google-libphonenumber:
         specifier: ^3.2.34
         version: 3.2.34
-=======
       echarts:
         specifier: ^5.5.0
         version: 5.5.0
->>>>>>> Stashed changes
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.3.3)(vue@3.4.15)
