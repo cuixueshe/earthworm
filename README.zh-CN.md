@@ -22,7 +22,7 @@
 
 - **Node.js version >= v20**
   > 使用来自 .node-version 的版本 [支持的工具](https://github.com/shadowspawn/node-version-usage#compatibility-testing)
-- **MySQL version >= 8.0.0**
+- **Postgres version >= 8.0.0**
 - **Redis version >= 5.0.0**
 - 项目依赖 **Docker**，所以请确保你本地已安装并成功运行
 
@@ -52,7 +52,7 @@ cp ./apps/api/.env.example ./apps/api/.env
 
 ### 3. 启动 Docker Compose 服务
 
-后端用到了 MySQL 和 Redis 服务，通过下面在 `package.json` 中配置的命令启动和停止。
+后端用到了 Postgres 和 Redis 服务，通过下面在 `package.json` 中配置的命令启动和停止。
 
 ```bash
 # 启动

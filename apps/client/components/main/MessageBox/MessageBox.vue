@@ -1,13 +1,13 @@
 <template>
   <dialog
     :open="isShow"
-    class="modal invisible"
+    class="invisible modal"
   >
     <div
       ref="dialogBoxRef"
       class="modal-box"
     >
-      <h3 class="font-bold text-lg">{{ title }}</h3>
+      <h3 class="text-lg font-bold">{{ title }}</h3>
       <p class="py-4">{{ content }}</p>
       <div class="modal-action">
         <form method="dialog">
@@ -39,10 +39,10 @@ import {
 
 const props = withDefaults(defineProps<IMessageBoxProps>(), {
   isShowModal: false,
-  title: "Tips",
-  content: "Are you sure?",
-  confirmBtnText: "Confirm",
-  cancelBtnText: "Cancel",
+  title: "提示",
+  content: "你确定吗?",
+  confirmBtnText: "确定",
+  cancelBtnText: "取消",
 });
 
 const emits = defineEmits<EmitsType>();

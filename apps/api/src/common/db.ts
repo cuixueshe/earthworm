@@ -1,23 +1,13 @@
 import { schemas } from '@earthworm/schema';
 import { Logger } from '@nestjs/common';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
-import { drizzle } from 'drizzle-orm/mysql2';
-import * as mysql from 'mysql2/promise';
+import { drizzle } from 'drizzle-orm/postgres-js';
+import * as postgres from 'postgres';
 
-let connection: mysql.Connection;
+let connection: postgres.Sql;
 
 async function createConnection() {
-  return await mysql.createConnection({
-    uri: process.env.DATABASE_URL,
-    multipleStatements: true,
-    waitForConnections: true,
-    connectionLimit: 10,
-    maxIdle: 10,
-    idleTimeout: 60000,
-    queueLimit: 0,
-    enableKeepAlive: true,
-    keepAliveInitialDelay: 0,
-  });
+  return postgres(process.env.DATABASE_URL ?? '');
 }
 
 export async function endDB() {
@@ -46,6 +36,5 @@ export async function setupDB() {
   return drizzle(connection, {
     schema: schemas,
     logger: new DefaultLogger({ writer: new CustomDbLogWriter() }),
-    mode: 'planetscale',
   });
 }

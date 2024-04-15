@@ -8,7 +8,7 @@ import { AppModule } from '../../app/app.module';
 import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
-import { tokenOwner } from '../../../test/fixture/user';
+import { getTokenOwner } from '../../../test/fixture/user';
 
 const firstCourse = createFirstCourse();
 describe('game e2e', () => {
@@ -56,7 +56,7 @@ describe('game e2e', () => {
 async function setupDBData(db: DbType) {
   await db.insert(userProgress).values({
     courseId: 2,
-    userId: tokenOwner,
+    userId: getTokenOwner(),
   });
 
   await db.insert(course).values(firstCourse);

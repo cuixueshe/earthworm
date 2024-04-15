@@ -1,11 +1,7 @@
 import { Test } from '@nestjs/testing';
 import { createFirstCourse } from '../../../test/fixture/course';
 import { createUser } from '../../../test/fixture/user';
-import {
-  cleanDB,
-  startDB,
-  testImportModules,
-} from '../../../test/helper/utils';
+import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 import { UserProgressService } from '../user-progress.service';
@@ -28,10 +24,6 @@ describe('user-progress service', () => {
   afterAll(async () => {
     await cleanDB(db);
     await endDB();
-  });
-
-  beforeEach(async () => {
-    await startDB(db);
   });
 
   it('should update user progress', async () => {

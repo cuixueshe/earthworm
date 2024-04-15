@@ -1,10 +1,12 @@
 <template>
-  <div class="relative w-full flex flex-col">
-    <h2 class="my-4 text-3xl text-blue-500">English Course</h2>
+  <div class="relative flex flex-col w-full">
+    <h2 class="py-2 mb-4 text-3xl text-center border-b dark:border-gray-600">
+      星荣零基础学英语课程
+    </h2>
     <div class="h-full scrollbar-hide">
       <div
         v-if="courses.length"
-        class="h-[79vh] flex flex-wrap p-1 pb-96 overflow-x-hidden overflow-y-auto gap-8 justify-start"
+        class="h-[79vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pl-0 pr-4 pb-96 overflow-x-hidden overflow-y-auto gap-8 justify-start"
       >
         <template
           v-for="course in courses"

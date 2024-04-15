@@ -68,8 +68,8 @@ const { goToNextQuestion, goToPreviousQuestion } = usePrevAndNextQuestion(
   shortcutKeys.value.skip
 );
 
-const PREV_BTN_TIP = `点击跳转至上一题 ( 快捷键: ${shortcutKeys.value.previous} )`;
-const NEXT_BTN_TIP = `点击跳转至下一题 ( 快捷键: ${shortcutKeys.value.skip} )`;
+const PREV_BTN_TIP = `上一题（快捷键：${shortcutKeys.value.previous} ）`;
+const NEXT_BTN_TIP = `下一题（快捷键：${shortcutKeys.value.skip} ）`;
 
 const { showQuestion } = useGameMode();
 const courseStore = useCourseStore();

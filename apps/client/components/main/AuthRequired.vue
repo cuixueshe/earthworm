@@ -4,8 +4,8 @@
     :open="authRequireModalState"
   >
     <div className="modal-box">
-      <h3 className="font-bold text-lg mb-4">✨</h3>
-      <p class="py-4 text-xl text-center">注册以进行下一课学习~ 😊</p>
+      <h3 className="font-bold text-lg mb-4">✨ 友情提示</h3>
+      <p class="py-4 text-xl text-center">注册以进行下一课的学习哦~ 😊</p>
       <div className="modal-action">
         <button
           class="btn"
@@ -27,8 +27,8 @@
 <script setup lang="ts">
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useGameMode } from "~/composables/main/game";
-import { useCourseStore } from "~/store/course";
 import { signIn } from "~/services/auth";
+import { useCourseStore } from "~/store/course";
 
 const { authRequireModalState, hideAuthRequireModal } = useAuthRequire();
 const { showQuestion } = useGameMode();

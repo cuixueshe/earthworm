@@ -21,7 +21,7 @@ const basicAxios = axios.create({
 export async function fetchToken() {
   const res = await basicAxios.post('/oidc/token', {
     grant_type: 'client_credentials',
-    resource: 'https://default.logto.app/api',
+    resource: process.env.LOGTO_M2M_API,
     scope: 'all',
   });
 
