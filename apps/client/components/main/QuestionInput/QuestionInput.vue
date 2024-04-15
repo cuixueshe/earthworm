@@ -37,6 +37,7 @@ import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
+import { useErrorTip } from "~/composables/user/errorTip";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
@@ -63,6 +64,8 @@ const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError, resetCloseTip } = answerError();
 const { isAutoNextQuestion } = useAutoNextQuestion();
+const { isShowErrorTip } = useErrorTip();
+
 const {
   inputValue,
   userInputWords,
@@ -217,7 +220,7 @@ function answerError() {
   function handleAnswerError() {
     playErrorSound();
     wrongTimes++;
-    if (wrongTimes >= 3) {
+    if (isShowErrorTip() && wrongTimes >= 3) {
       showAnswerTip();
     }
   }
