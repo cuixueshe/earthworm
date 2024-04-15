@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getWordWidth } from "../questionInput";
+import { getWordWidth } from "../questionInputHelper";
 
 describe('getWordWidth', () => {
   it('should return the correct width for a single letter', () => {
