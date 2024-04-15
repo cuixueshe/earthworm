@@ -98,6 +98,7 @@ async function getCourseDomInfo() {
     courseDomInfo.width = courseDom.clientWidth;
   }
 }
+
 async function getFirstCourseTopPotision() {
   await nextTick()
   const wrapper = document.querySelector('.course-wrapper') as HTMLElement;
