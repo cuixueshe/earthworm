@@ -42,9 +42,13 @@
     "@types/country-telephone-data": "^0.6.3",
     "axios": "^1.6.6",
     "canvas-confetti": "^1.9.2",
+<<<<<<< Updated upstream
     "country-telephone-data": "^0.6.3",
     "dayjs": "^1.11.10",
     "google-libphonenumber": "^3.2.34",
+=======
+    "echarts": "^5.5.0",
+>>>>>>> Stashed changes
     "pinia": "^2.1.7",
     "satori": "^0.10.13",
     "vee-validate": "^4.12.5",
