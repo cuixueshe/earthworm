@@ -106,7 +106,6 @@ watch(
   }
 );
 
-
 function focusInputWhenWIndowFocus() {
   const handleFocus = () => {
     focusInput();
@@ -206,7 +205,13 @@ function handleCompositionEnd() {
 }
 
 function handleKeydown(e: KeyboardEvent) {
-  if (e.code === "Enter"&& !isComposing.value) {
+  // 避免在某些中文输入法中，按下 Ctrl 键时，输入法会将当前的预输入字符上屏
+  if (e.ctrlKey) {
+    e.preventDefault();
+    return;
+  }
+
+  if (e.code === "Enter" && !isComposing.value) {
     e.stopPropagation();
     submitAnswer(handleAnswerRight, handleAnswerError);
     return;
