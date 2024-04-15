@@ -8,14 +8,16 @@
     >
   </div> -->
   <div>打卡模块</div>
-  <div class="w-full main h-96" id="main"></div>
+  <div
+    class="w-full main h-96"
+    id="main"
+  ></div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
 import * as Echarts from "echarts";
-import { useCalendarStore, LOCAL_STORAGE_KEY } from "~/store/calendar";
-import { string } from "yup";
+import { onMounted } from "vue";
+import { LOCAL_STORAGE_KEY, useCalendarStore } from "~/store/calendar";
 
 interface calendarOptions {
   title: {
@@ -36,7 +38,6 @@ let calendarOpts: calendarOptions = {} as calendarOptions;
 function initChartOpts() {
   const calendarStore = useCalendarStore();
   const { getCalendarInfo, initCalendar } = calendarStore;
-  console.log("getCalendarInfo", getCalendarInfo());
   if (!getCalendarInfo()) initCalendar();
   calendarOpts = {
     title: {
@@ -61,8 +62,18 @@ function initChartOpts() {
     },
     tooltip: {
       show: true,
-      valueFormatter: (value: string) => {
-        return value;
+      position: "top",
+      backgroundColor: "#000",
+      borderColor: "transparent",
+      textStyle: {
+        color: "#fff",
+      },
+      formatter: function (params: {
+        value: [string, number];
+        [key: string]: any;
+      }) {
+        const { value } = params;
+        return `${value[1]} completed on ${value[0]}`;
       },
     },
     calendar: {
@@ -102,8 +113,9 @@ function initChartOpts() {
           return obj[param.MM];
         },
       },
-      dayLabel: { show: true, nameMap: ["Mon", "", "Wed", "", "Fri", "", ""] },
-      yearLabel: { show: false, margin: "40" },
+      // dayLabel: { show: true, nameMap: ["Mon", "", "Wed", "", "Fri", "", ""] },
+      dayLabel: { show: true, nameMap: ["M", "", "W", "", "F", "", ""] },
+      yearLabel: { show: true, margin: "38" },
     },
     series: {
       type: "heatmap",

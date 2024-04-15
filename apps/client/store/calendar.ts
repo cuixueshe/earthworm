@@ -1,6 +1,6 @@
+import * as Echarts from "echarts";
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import * as Echarts from "echarts";
 
 export const LOCAL_STORAGE_KEY = "calendarInfo";
 export const LOCAL_CALENDAR_KEY_INDEX = "dayForIndexMap";
