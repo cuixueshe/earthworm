@@ -17,15 +17,15 @@ function addClarity() {
 }
 
 export default defineNuxtConfig({
-  css: ["~/assets/css/globals.css"],
   ssr: false,
-  devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@vueuse/nuxt",
-    "@nuxt/image",
-    "@nuxt/test-utils/module",
-  ],
+  // default is true, reference to https://nuxt.com/docs/guide/directory-structure/components
+  // components: true,
+  imports: {
+    autoImport: false,
+  },
+  devtools: {
+    enabled: true,
+  },
   app: {
     head: {
       title: "earthworm",
@@ -33,11 +33,21 @@ export default defineNuxtConfig({
       script: appScripts,
     },
   },
-  imports: {
-    autoImport: false,
+  css: ["~/assets/css/globals.css"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    "@nuxt/image",
+    "@nuxt/test-utils/module",
+  ],
+  plugins: ["~/plugins/logto.ts"],
+  runtimeConfig: {
+    public: {
+      endpoint: process.env.LOGTO_ENDPOINT || "",
+      appId: process.env.LOGTO_APP_ID || "",
+      backendEndpoint: process.env.BACKEND_ENDPOINT || "",
+      signInRedirectURI: process.env.LOGTO_SIGN_IN_REDIRECT_URI || "",
+      signOutRedirectURI: process.env.LOGTO_SIGN_OUT_REDIRECT_URI || "",
+    },
   },
-  components: true,
-  plugins: [
-    '~/plugins/globalComponents.ts'
-  ]
 });

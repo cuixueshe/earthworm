@@ -1,7 +1,8 @@
 <template>
   <div class="flex min-h-full flex-1 justify-center px-6 py-12 lg:px-8">
-    <UserMenus
+    <UserMenu
       :menus="userMenus"
+      :defaultMenuName="defaultMenuName"
       @changeMenu="handleChangeMenu"
     />
     <div class="flex-1 pl-4">
@@ -11,25 +12,45 @@
 </template>
 
 <script setup lang="ts">
-import { markRaw, ref } from "vue";
+import { computed, ref, shallowRef, watchEffect } from "vue";
+import { useRoute } from "vue-router";
+
 import UserHome from "~/components/user/Home.vue";
-import UserMenus from "~/components/user/Menu.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
-type Menu = {
-  name: string;
-  component: any;
-};
+interface ComponentMap {
+  Home: typeof UserHome;
+  Setting: typeof UserSetting;
+}
 
-// [Vue warn]: Vue received a Component that was made a reactive object.
-// This can lead to unnecessary performance overhead and should be avoided
-// by marking the component with `markRaw` or using `shallowRef` instead of `ref`.
-const userMenus = ref<Menu[]>([
-  { name: "主页", component: markRaw(UserHome) },
-  { name: "设置", component: markRaw(UserSetting) },
+interface Menu {
+  name: string;
+  component: keyof ComponentMap;
+}
+
+const route = useRoute();
+const userMenus = ref([
+  { name: "主页", component: "Home" },
+  { name: "设置", component: "Setting" },
 ]);
-let currentComponent = ref<any>();
-const handleChangeMenu = (menu: Menu) => {
-  currentComponent.value = menu.component;
+const componentMap: ComponentMap = {
+  Home: UserHome,
+  Setting: UserSetting,
 };
+const currentComponent = shallowRef(componentMap.Home); // shallowRef is used to fixed Vue warn
+
+const defaultMenuName = computed(() =>
+  route.query.displayComponent === "Setting" ? "设置" : "主页"
+);
+
+watchEffect(() => {
+  const routeComponent = route.query.displayComponent;
+  currentComponent.value =
+    componentMap[routeComponent as keyof typeof componentMap] ||
+    componentMap.Home;
+});
+
+function handleChangeMenu(menu: Menu) {
+  currentComponent.value = componentMap[menu.component];
+}
 </script>

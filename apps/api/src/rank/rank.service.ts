@@ -2,6 +2,7 @@ import { InjectRedis } from '@nestjs-modules/ioredis';
 import { Injectable, Logger } from '@nestjs/common';
 import Redis from 'ioredis';
 import { UserEntity } from '../user/user.decorators';
+import { UserService } from '../user/user.service';
 
 // 定义周期枚举
 export enum RankPeriod {
@@ -21,37 +22,33 @@ export class RankService {
     [RankPeriod.MONTHLY]: `${this.FINISH_COUNT_KEY}:${RankPeriod.MONTHLY}Rank`,
     [RankPeriod.YEARLY]: `${this.FINISH_COUNT_KEY}:${RankPeriod.YEARLY}Rank`,
   };
-  constructor(@InjectRedis() private readonly redis: Redis) {}
+  constructor(
+    @InjectRedis() private readonly redis: Redis,
+    private readonly userService: UserService,
+  ) {}
 
-  async userFinishCourse(userId: number, username: string) {
-    const member = `${userId}-${username}`;
-
+  async userFinishCourse(userId: string) {
     const counts = {};
     for (const period of Object.keys(this.rankKeys)) {
       const rankKey = this.rankKeys[period];
-      let count = await this.redis.zscore(rankKey, member);
+      let count = await this.redis.zscore(rankKey, userId);
       if (!count) {
-        await this.redis.zadd(rankKey, 1, member);
+        await this.redis.zadd(rankKey, 1, userId);
       } else {
-        await this.redis.zincrby(rankKey, 1, member);
+        await this.redis.zincrby(rankKey, 1, userId);
       }
-      count = await this.redis.zscore(rankKey, member);
+      count = await this.redis.zscore(rankKey, userId);
       counts[period] = count;
     }
 
     return counts;
   }
 
-  private getUserName(member: string) {
-    return member.split('-')[1];
-  }
-
-  private translateList(rankList: string[]) {
+  private convertRankListToObjectArray(rankList: string[]) {
     const res = [];
     for (let i = 0; i < rankList.length; i += 2) {
-      const username = this.getUserName(rankList[i]);
       const count = parseInt(rankList[i + 1] ?? '-1');
-      res.push({ username, count });
+      res.push({ count, userId: rankList[i] });
     }
     return res;
   }
@@ -69,27 +66,65 @@ export class RankService {
     // return [member, count, member, count, ...]
     let self = null;
     const rankPeriod = this.rankKeys[period];
-    const rankList = await this.redis.zrevrange(
-      rankPeriod,
-      0,
-      24,
-      'WITHSCORES',
+    const rankList = this.convertRankListToObjectArray(
+      await this.redis.zrevrange(rankPeriod, 0, 24, 'WITHSCORES'),
     );
+
     if (user) {
-      const member = `${user.userId}-${user.username}`;
-      const userRank = await this.redis.zrevrank(rankPeriod, member);
-      const userCount = await this.redis.zscore(rankPeriod, member);
+      const userRank = await this.redis.zrevrank(rankPeriod, user.userId);
+      const userCount = await this.redis.zscore(rankPeriod, user.userId);
       self = {
-        username: user.username,
+        userId: user.userId,
         count: userCount === null ? -1 : parseInt(userCount),
         rank: userRank === null ? -1 : userRank + 1,
       };
     }
 
+    await this.appendUserNameProperty(self, rankList);
+
     return {
       self,
-      list: this.translateList(rankList),
+      list: rankList,
     };
+  }
+
+  private async appendUserNameProperty(self, rankList) {
+    const usersMap = await this.fetchUsersMap(
+      Array.from(
+        new Set([self.userId, ...rankList.map(({ userId }) => userId)]),
+      ),
+    );
+
+    const rankListUsernameGenByUserId = (id: string) => {
+      const user = usersMap[id];
+
+      if (!user) {
+        return '';
+      }
+
+      const { username, name, email } = user;
+      return username || name || email?.split('@').at(0);
+    };
+
+    self.username = rankListUsernameGenByUserId(self.userId);
+    rankList.forEach((info) => {
+      info.username = rankListUsernameGenByUserId(info.userId);
+    });
+  }
+
+  private async fetchUsersMap(uIds: string[]) {
+    const promises = uIds.map((uId) => {
+      return this.userService.getUser(uId);
+    });
+
+    const users = await Promise.all(promises);
+
+    return users.reduce((obj, cur) => {
+      if (cur) {
+        obj[cur.id] = cur;
+      }
+      return obj;
+    }, {});
   }
 
   async resetRankList(period: RankPeriodAlias = RankPeriod.WEEKLY) {

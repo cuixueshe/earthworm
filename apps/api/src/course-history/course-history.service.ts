@@ -8,7 +8,7 @@ import { DB, DbType } from '../global/providers/db.provider';
 export class CourseHistoryService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async findOne(userId: number, courseId: number) {
+  async findOne(userId: string, courseId: number) {
     return await this.db
       .select()
       .from(courseHistory)
@@ -20,7 +20,7 @@ export class CourseHistoryService {
       );
   }
 
-  async create(userId: number, courseId: number) {
+  async create(userId: string, courseId: number) {
     await this.db.insert(courseHistory).values({
       courseId,
       userId,
@@ -28,7 +28,7 @@ export class CourseHistoryService {
     });
   }
 
-  async updateCompletionCount(userId: number, courseId: number, count: number) {
+  async updateCompletionCount(userId: string, courseId: number, count: number) {
     await this.db
       .update(courseHistory)
       .set({
@@ -42,7 +42,7 @@ export class CourseHistoryService {
       );
   }
 
-  async setCompletionCount(userId: number, courseId: number) {
+  async setCompletionCount(userId: string, courseId: number) {
     const result = await this.findOne(userId, courseId);
     if (result && result.length) {
       this.updateCompletionCount(userId, courseId, result[0].completionCount);

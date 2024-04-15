@@ -3,7 +3,7 @@ import { ref } from "vue";
 /**
  * 有道 Web 翻译 API 接口
  *
- * 美式发音：https://dict.youdao.com/dictvoice?type=0&audio=word
+ * 美式发音：https://dict.youdao.com/dictvoice?type=2&audio=word
  * 英式发音：https://dict.youdao.com/dictvoice?type=1&audio=word
  */
 
@@ -34,7 +34,7 @@ export function usePronunciation() {
   }
 
   function getPronunciationType(): number {
-    return pronunciation.value === PronunciationType.American ? 0 : 1;
+    return pronunciation.value === PronunciationType.American ? 2 : 1;
   }
 
   function getPronunciationOptions() {

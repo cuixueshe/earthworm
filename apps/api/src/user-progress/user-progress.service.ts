@@ -7,7 +7,7 @@ import { DB, DbType } from '../global/providers/db.provider';
 export class UserProgressService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async create(userId: number, courseId: number) {
+  private async create(userId: string, courseId: number) {
     await this.db.insert(userProgress).values({
       courseId,
       userId,
@@ -18,7 +18,7 @@ export class UserProgressService {
     };
   }
 
-  async findOne(userId: number) {
+  async findOne(userId: string) {
     const res = await this.db
       .select()
       .from(userProgress)
@@ -29,11 +29,17 @@ export class UserProgressService {
     };
   }
 
-  async update(userId: number, courseId: number) {
-    await this.db
-      .update(userProgress)
-      .set({ courseId })
-      .where(eq(userProgress.userId, userId));
+  async update(userId: string, courseId: number) {
+    const { courseId: isExist } = await this.findOne(userId);
+
+    if (!isExist) {
+      await this.create(userId, courseId);
+    } else {
+      await this.db
+        .update(userProgress)
+        .set({ courseId })
+        .where(eq(userProgress.userId, userId));
+    }
 
     return {
       courseId,

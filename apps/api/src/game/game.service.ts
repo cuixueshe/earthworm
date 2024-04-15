@@ -17,7 +17,6 @@ export class GameService {
     const { id } = await this.courseService.getFirstCourse();
 
     if (!courseId) {
-      await this.userProgressService.create(user.userId, id);
       return {
         cId: id,
       };

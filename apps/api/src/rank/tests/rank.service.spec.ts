@@ -8,6 +8,7 @@ import {
 import { createUser } from '../../../test/fixture/user';
 import { MockRedisModule } from '../../../test/helper/mockRedis';
 import { RankPeriod, RankService } from '../rank.service';
+import { UserService } from '../../user/user.service';
 
 const user = createUser();
 const emptyRankList = createEmptyRankList();
@@ -21,7 +22,7 @@ describe('rank service', () => {
     const testHelper = await setupTesting();
 
     rankService = testHelper.rankService;
-    await rankService.resetRankList();
+
     await rankService.resetRankList(RankPeriod.WEEKLY);
     await rankService.resetRankList(RankPeriod.MONTHLY);
     await rankService.resetRankList(RankPeriod.YEARLY);
@@ -35,7 +36,6 @@ describe('rank service', () => {
 
   describe('RankList', () => {
     it('should return empty rank list', async () => {
-      await rankService.resetRankList();
       const resWeek = await rankService.getRankList(user);
       const resMonth = await rankService.getRankList(user, RankPeriod.MONTHLY);
       const resYear = await rankService.getRankList(user, RankPeriod.YEARLY);
@@ -46,7 +46,7 @@ describe('rank service', () => {
     });
 
     it('should return rank list with first user finished course', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId);
       const resWeek = await rankService.getRankList(user);
       const resMonth = await rankService.getRankList(user, RankPeriod.MONTHLY);
       const resYear = await rankService.getRankList(user, RankPeriod.YEARLY);
@@ -59,8 +59,8 @@ describe('rank service', () => {
     });
 
     it('should return rank list with user finished course 2 times', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId);
+      await rankService.userFinishCourse(user.userId);
       const res = await rankService.getRankList(user);
 
       const resWeek = await rankService.getRankList(user);
@@ -76,7 +76,7 @@ describe('rank service', () => {
     });
 
     it('should return empty rank list after week reset', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId);
       await rankService.resetRankList();
       const res = await rankService.getRankList(user);
 
@@ -84,7 +84,7 @@ describe('rank service', () => {
     });
 
     it('should return empty rank list after month reset', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId);
       await rankService.resetRankList(RankPeriod.MONTHLY);
       const res = await rankService.getRankList(user, RankPeriod.MONTHLY);
 
@@ -92,7 +92,7 @@ describe('rank service', () => {
     });
 
     it('should return empty rank list after year reset', async () => {
-      await rankService.userFinishCourse(user.userId, user.username);
+      await rankService.userFinishCourse(user.userId);
       await rankService.resetRankList(RankPeriod.YEARLY);
       const res = await rankService.getRankList(user, RankPeriod.YEARLY);
 
@@ -102,6 +102,13 @@ describe('rank service', () => {
 });
 
 async function setupTesting() {
+  const mockUserService = {
+    getUser: jest.fn().mockResolvedValue({
+      username: 'testUser',
+      id: user.userId,
+    }),
+  };
+
   const moduleRef: TestingModule = await Test.createTestingModule({
     imports: [
       MockRedisModule,
@@ -110,7 +117,10 @@ async function setupTesting() {
         signOptions: { expiresIn: '7d' },
       }),
     ],
-    providers: [RankService],
+    providers: [
+      RankService,
+      { provide: UserService, useValue: mockUserService },
+    ],
   }).compile();
   return {
     rankService: moduleRef.get<RankService>(RankService),

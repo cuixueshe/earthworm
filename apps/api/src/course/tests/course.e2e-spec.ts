@@ -7,12 +7,14 @@ import {
   createSecondCourse,
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
-import { cleanDB, signup } from '../../../test/helper/utils';
+import { cleanDB, signin } from '../../../test/helper/utils';
 import { AppModule } from '../../app/app.module';
+import { appGlobalMiddleware } from '../../app/useGlobal';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 
 const firstCourse = createFirstCourse();
+const secondCourse = createSecondCourse();
 
 describe('course e2e', () => {
   let app: INestApplication;
@@ -25,6 +27,7 @@ describe('course e2e', () => {
     }).compile();
 
     app = moduleFixture.createNestApplication();
+    appGlobalMiddleware(app);
     db = moduleFixture.get<DbType>(DB);
 
     await app.init();
@@ -32,8 +35,7 @@ describe('course e2e', () => {
     await cleanDB(db);
     await setupDBData(db);
 
-    const signupBody = await signup(app);
-    token = signupBody.token;
+    token = await signin();
   });
 
   afterEach(async () => {
@@ -72,11 +74,26 @@ describe('course e2e', () => {
         expect(body.statements.length).toBeGreaterThan(0);
       });
   });
+
+  it('should get next course', async () => {
+    await request(app.getHttpServer())
+      .get('/courses/1/next')
+      .set('Authorization', `Bearer ${token}`)
+      .expect(200)
+      .expect(({ body }) => {
+        expect(body).toEqual(
+          expect.objectContaining({
+            id: secondCourse.id,
+            title: secondCourse.title,
+          }),
+        );
+      });
+  });
 });
 
 async function setupDBData(db: DbType) {
   await db.insert(course).values(firstCourse);
-  await db.insert(course).values(createSecondCourse());
+  await db.insert(course).values(secondCourse);
 
   await db.insert(statement).values({
     ...createStatement(firstCourse.id),

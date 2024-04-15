@@ -1,5 +1,4 @@
 import { course, statement } from '@earthworm/schema';
-import { HttpException } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import {
   createFirstCourse,
@@ -7,12 +6,7 @@ import {
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
 import { createUser } from '../../../test/fixture/user';
-import {
-  cleanDB,
-  startDB,
-  testImportModules,
-} from '../../../test/helper/utils';
-import { endDB } from '../../common/db';
+import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { CourseHistoryService } from '../../course-history/course-history.service';
 import { DB, type DbType } from '../../global/providers/db.provider';
 import { RankService } from '../../rank/rank.service';
@@ -43,11 +37,6 @@ describe('course service', () => {
 
   afterAll(async () => {
     await cleanDB(db);
-    await endDB();
-  });
-
-  beforeEach(async () => {
-    await startDB(db);
   });
 
   afterEach(async () => {
@@ -89,27 +78,27 @@ describe('course service', () => {
       expect(nextCourse.id).toBe(secondCourse.id);
     });
 
-    it('should throw an exception if there is no next course', async () => {
+    it('should return undefined if there is no next course', async () => {
       const courseId = 9999; // 使用一个不存在的课程 ID
 
-      const nextCourse = courseService.findNext(courseId);
+      const nextCourse = await courseService.findNext(courseId);
 
-      await expect(nextCourse).rejects.toThrow(HttpException);
+      expect(nextCourse).toBeUndefined();
     });
   });
 
   it('should update user progress and rank after completing a course', async () => {
-    const nextCourse = await courseService.completeCourse(user, firstCourse.id);
+    const { nextCourse } = await courseService.completeCourse(
+      user,
+      firstCourse.id,
+    );
 
     expect(nextCourse.id).toBe(secondCourse.id);
     expect(userProgressService.update).toHaveBeenCalledWith(
       user.userId,
       secondCourse.id,
     );
-    expect(rankService.userFinishCourse).toHaveBeenCalledWith(
-      user.userId,
-      user.username,
-    );
+    expect(rankService.userFinishCourse).toHaveBeenCalledWith(user.userId);
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,
       firstCourse.id,

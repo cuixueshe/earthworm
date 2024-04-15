@@ -64,6 +64,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from "vue";
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { convertTitleToNumber } from "~/composables/main/shareImage/convert";
 import {
   useGenerateShareImage,
@@ -71,7 +72,7 @@ import {
 } from "~/composables/main/shareImage/share";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
-import { getToday } from "~/utils/date";
+import { formatSecondsToTime, getToday } from "~/utils/date";
 const courseStore = useCourseStore();
 const userStore = useUserStore();
 const imageContainer = ref<HTMLDivElement>();
@@ -89,13 +90,20 @@ const {
 
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
-    console.log(userStore.user);
-    const username = userStore.user?.username || "";
+    const username = userStore.userNameGetter!;
     const convertedTitle = convertTitleToNumber(
       courseStore.currentCourse.title
     );
     const { year, month, day } = getToday();
-    generateGalleryImage(convertedTitle, username, `${year}/${month}/${day}`);
+    const totalRecordNumber = courseTimer.totalRecordNumber();
+    const totalTime = formatSecondsToTime(courseTimer.calculateTotalTime());
+    generateGalleryImage(
+      convertedTitle,
+      username,
+      `${year}/${month}/${day}`,
+      totalRecordNumber,
+      totalTime
+    );
   } else {
     clearShareImageSrc();
   }

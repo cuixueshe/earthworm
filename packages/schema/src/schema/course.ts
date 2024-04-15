@@ -1,6 +1,6 @@
-import { int, mysqlTable, text } from "drizzle-orm/mysql-core";
+import { integer, pgTable, text } from "drizzle-orm/pg-core";
 
-export const course = mysqlTable("courses", {
-  id: int("id").primaryKey(),
+export const course = pgTable("courses", {
+  id: integer("id").primaryKey(),
   title: text("title").notNull(),
 });
