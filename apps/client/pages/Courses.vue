@@ -1,12 +1,10 @@
 <template>
-  <div class="relative flex flex-col w-full">
-    <h2 class="py-2 mb-4 text-3xl text-center border-b dark:border-gray-600">
-      星荣零基础学英语课程
-    </h2>
+  <div class="relative w-full flex flex-col">
+    <h2 class="my-4 text-3xl text-blue-500">English Course</h2>
     <div class="h-full scrollbar-hide">
       <div
         v-if="courses.length"
-        class="course-wrapper h-[79vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pl-0 pr-4 pb-96 overflow-x-hidden overflow-y-auto gap-8 justify-start"
+        class="course-wrapper h-[79vh] flex flex-wrap p-1 pb-96 overflow-x-hidden overflow-y-auto gap-8 justify-start"
       >
         <template
           v-for="(course, index) in courses"
@@ -38,8 +36,7 @@ import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { type Course } from "~/store/course";
 
-const router = useRouter();
-
+const router = useRouter()
 const courses = ref<Course[]>([]);
 const { updateActiveCourseId, activeCourseId } = useActiveCourseId();
 const activeCourseIndex = ref(0); 
@@ -53,9 +50,11 @@ const courseDomInfo = {
 onMounted(async () => {
   courses.value = await getCourses();
   activeCourseIndex.value = activeCourseId.value? courses.value.findIndex((item) => item.id === activeCourseId.value) : 0;
+  
   await getCourseDomInfo()
   await getFirstCourseTopPotision()
   await clacCountInLine()
+
   window.addEventListener("resize", clacCountInLine)
   window.addEventListener("keydown", handleKeyDown)
 });
@@ -98,19 +97,23 @@ async function getCourseDomInfo() {
     courseDomInfo.width = courseDom.clientWidth;
   }
 }
+
 async function getFirstCourseTopPotision() {
   await nextTick()
   const wrapper = document.querySelector('.course-wrapper') as HTMLElement;
   const { top } = wrapper.getBoundingClientRect();
   topPosition = top;
 }
+
 async function clacCountInLine() {
   await nextTick()
   await getCourseDomInfo()
   const wrapper = document.querySelector('.course-wrapper') as HTMLElement;
   const clientWidth = wrapper.clientWidth;
+  console.log(clientWidth, courseDomInfo.width)
   countInLine = Math.floor(clientWidth / (courseDomInfo.width)) // fixme: 如何才能准确计算
 }
+
 async function isCourseDomInView() {
   await nextTick()
   // 获取当前聚焦的课程DOM
@@ -132,6 +135,7 @@ async function isCourseDomInView() {
     })
   }
 }
+
 function handleKeyDown(event: KeyboardEvent) {
   const key = event.key;
   const preventArr = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "s", "a", "d", " ", "Enter", "Escape"]
@@ -161,8 +165,10 @@ function handleKeyDown(event: KeyboardEvent) {
     const index = courses.value.findIndex((item) => item.id === activeCourseId.value)
     activeCourseIndex.value = index;
   }
+
   isCourseDomInView()
 }
+
 onUnmounted(() => {
   window.removeEventListener("resize", clacCountInLine)
   window.removeEventListener("keydown", handleKeyDown)
@@ -171,6 +177,6 @@ onUnmounted(() => {
 
 <style scoped>
 .pointer-move {
-  box-shadow: 4px 8px 8px rgba(153, 102, 255, 0.2); 
+  @apply border-[rgba(242,100,25,1)] bg-[rgba(242,100,25,0.7)]
 }
 </style>
