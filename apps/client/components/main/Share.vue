@@ -90,7 +90,7 @@ const {
 
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
-    const username = userStore.userInfo?.username || "";
+    const username = userStore.userNameGetter!;
     const convertedTitle = convertTitleToNumber(
       courseStore.currentCourse.title
     );

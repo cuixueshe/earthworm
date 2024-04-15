@@ -95,9 +95,20 @@ export class RankService {
       ),
     );
 
-    self.username = usersMap[self.userId]?.username || '';
+    const rankListUsernameGenByUserId = (id: string) => {
+      const user = usersMap[id];
+
+      if (!user) {
+        return '';
+      }
+
+      const { username, name, email } = user;
+      return username || name || email?.split('@').at(0);
+    };
+
+    self.username = rankListUsernameGenByUserId(self.userId);
     rankList.forEach((info) => {
-      info.username = usersMap[info.userId]?.username;
+      info.username = rankListUsernameGenByUserId(info.userId);
     });
   }
 
