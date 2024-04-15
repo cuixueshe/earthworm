@@ -15,9 +15,26 @@
 </template>
 
 <script setup lang="ts">
-import * as Echarts from "echarts";
+import { HeatmapChart } from "echarts/charts";
+import {
+  CalendarComponent,
+  TitleComponent,
+  TooltipComponent,
+  VisualMapComponent,
+} from "echarts/components";
+import * as echarts from "echarts/core";
+import { CanvasRenderer } from "echarts/renderers";
 import { onMounted } from "vue";
 import { LOCAL_STORAGE_KEY, useCalendarStore } from "~/store/calendar";
+
+echarts.use([
+  TitleComponent,
+  CalendarComponent,
+  TooltipComponent,
+  VisualMapComponent,
+  HeatmapChart,
+  CanvasRenderer,
+]);
 
 interface calendarOptions {
   title: {
@@ -47,7 +64,7 @@ function initChartOpts() {
     },
     visualMap: {
       min: 0,
-      max: 20,
+      max: 15,
       type: "piecewise",
       orient: "horizontal",
       left: "center",
@@ -127,7 +144,7 @@ function initChartOpts() {
 function initCalendar() {
   initChartOpts();
   const calendarDom = document.getElementById("main");
-  calendarChart = Echarts.init(calendarDom);
+  calendarChart = echarts.init(calendarDom);
   calendarChart.setOption(calendarOpts);
 }
 
