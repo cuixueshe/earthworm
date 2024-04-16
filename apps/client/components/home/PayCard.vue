@@ -34,12 +34,7 @@
           class="button-unlock"
           v-if="feature.type === '终身付费'"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 36 24"
-          >
-            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-          </svg>
+          <i class="crown i-ph-crown-simple-fill h-6 w-6 text-[#f09f33]"></i>
           解锁 Pro
         </button>
 
@@ -77,19 +72,10 @@
               :key="`feature-${index}-item-${itemIndex}`"
               class="mb-6 mt-6 flex items-center"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="mr-2 h-5 w-5"
+              <i
+                class="i-ph-check-bold mr-2 h-5 w-5"
                 :class="item.unique ? 'text-green-500' : 'text-gray-500'"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              ></i>
               {{ item.text }}
             </li>
           </ul>
@@ -296,13 +282,11 @@ button:hover::after {
   background-position: right center;
 }
 
-.button-unlock:hover svg {
-  fill: #fff;
+.button-unlock:hover .crown {
+  color: #fff;
 }
 
-.button-unlock svg {
-  width: 23px;
-  fill: #f09f33;
+.button-unlock .crown {
   transition: 0.3s ease;
 }
 </style>
