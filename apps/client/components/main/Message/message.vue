@@ -1,5 +1,6 @@
 <script lang="ts" setup name="Message">
 import { onMounted, ref } from "vue";
+
 import { Type } from "./useMessage";
 
 const { type = Type.SUCCESS, duration = 2000 } = defineProps<{
@@ -39,7 +40,7 @@ onMounted(() => {
 <template>
   <Transition name="down">
     <div
-      class="fixed top-20 left-1/2 -translate-x-1/2 flex items-center h-[40px] rounded-md shadow-md px-6 py-0 leading-[40px] text-center bg-opacity-90"
+      class="fixed left-1/2 top-20 flex h-[40px] -translate-x-1/2 items-center rounded-md bg-opacity-90 px-6 py-0 text-center leading-[40px] shadow-md"
       :class="type"
       :style="style[type]"
       v-if="isShow"
@@ -47,7 +48,7 @@ onMounted(() => {
       <svg
         v-if="type === Type.SUCCESS"
         xmlns="http://www.w3.org/2000/svg"
-        class="stroke-current shrink-0 h-4 w-4 mr-4"
+        class="mr-4 h-4 w-4 shrink-0 stroke-current"
         fill="none"
         viewBox="0 0 24 24"
       >
@@ -61,7 +62,7 @@ onMounted(() => {
       <svg
         v-else-if="type === Type.ERROR"
         xmlns="http://www.w3.org/2000/svg"
-        class="stroke-current shrink-0 h-4 w-4 mr-4"
+        class="mr-4 h-4 w-4 shrink-0 stroke-current"
         fill="none"
         viewBox="0 0 24 24"
       >
@@ -75,7 +76,7 @@ onMounted(() => {
       <svg
         v-else
         xmlns="http://www.w3.org/2000/svg"
-        class="stroke-current shrink-0 h-4 w-4 ml-2 mr-2"
+        class="ml-2 mr-2 h-4 w-4 shrink-0 stroke-current"
         fill="none"
         viewBox="0 0 24 24"
       >

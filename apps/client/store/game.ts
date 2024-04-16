@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+
 import { fetchStartGame } from "~/api/game";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { isAuthenticated } from "~/services/auth";

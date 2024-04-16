@@ -1,13 +1,10 @@
-import satori, { type SatoriNode } from "satori";
+import type { SatoriNode } from "satori";
+
+import satori from "satori";
 import { ref } from "vue";
+
 import { useDailySentence } from "../summary";
-import {
-  convertSVGtoImg,
-  copyImage,
-  fontEn,
-  fontZh,
-  initCanvas,
-} from "./helper";
+import { convertSVGtoImg, copyImage, fontEn, fontZh, initCanvas } from "./helper";
 import { tpl_1 } from "./imageTemplates/tpl_1";
 import { tpl_2 } from "./imageTemplates/tpl_2";
 
@@ -91,7 +88,7 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
-    totalTime: string
+    totalTime: string,
   ) => {
     return imageTemplates[templateKey]({
       courseNum,
@@ -109,18 +106,10 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
-    totalTime: string
+    totalTime: string,
   ) => {
     Object.values(ShareImageTemplate).forEach(async (template, index) => {
-      generateImage(
-        courseNum,
-        template,
-        index,
-        userName,
-        dateStr,
-        totalRecordNumber,
-        totalTime
-      );
+      generateImage(courseNum, template, index, userName, dateStr, totalRecordNumber, totalTime);
     });
   };
 
@@ -131,7 +120,7 @@ export function useGenerateShareImage() {
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
-    totalTime: string
+    totalTime: string,
   ) => {
     const canvasEl = initCanvas();
     galleryImgs.value[index] = {
@@ -139,15 +128,8 @@ export function useGenerateShareImage() {
       canvasEl,
     };
     const svg = await satori(
-      chosenTemplate(
-        template,
-        courseNum,
-        userName,
-        dateStr,
-        totalRecordNumber,
-        totalTime
-      ),
-      await generateConfig()
+      chosenTemplate(template, courseNum, userName, dateStr, totalRecordNumber, totalTime),
+      await generateConfig(),
     ).catch((e) => {
       console.error("Error generating SVG");
       console.error(e);
@@ -155,11 +137,7 @@ export function useGenerateShareImage() {
     });
 
     // currImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
-    galleryImgs.value[index].src = await convertSVGtoImg(
-      svg,
-      canvasEl,
-      fullFormat
-    );
+    galleryImgs.value[index].src = await convertSVGtoImg(svg, canvasEl, fullFormat);
 
     if (index === 0) {
       currImageSrc.value = galleryImgs.value[index].src;

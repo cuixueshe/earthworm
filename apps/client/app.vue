@@ -7,11 +7,12 @@
 </template>
 
 <script setup lang="ts">
+import { useLogto } from "@logto/vue";
 import { onMounted } from "vue";
+
 import { useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
 import { useUserStore } from "./store/user";
-import { useLogto } from "@logto/vue";
 
 const { initDarkMode } = useDarkMode();
 

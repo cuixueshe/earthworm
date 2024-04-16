@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col pt-2">
+  <div class="flex w-full flex-col pt-2">
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
@@ -14,6 +14,7 @@
 import { definePageMeta } from "#imports";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
+
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
 

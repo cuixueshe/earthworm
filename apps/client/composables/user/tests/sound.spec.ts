@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
+
 import {
   AUTO_PRONUNCIATION,
   KEYBOARD_SOUND_KEY,

@@ -1,4 +1,5 @@
 import type { AxiosRequestConfig } from "axios";
+
 import { http } from "./http";
 
 interface UserLearnRecordDto {
@@ -12,8 +13,7 @@ interface UserLearnRecordVo {
 }
 
 export async function fetchLearnRecord(params: UserLearnRecordDto) {
-  return await http.get<UserLearnRecordVo, UserLearnRecordVo>(
-    `/user-learn-record/finishCount`,
-    { params }
-  );
+  return await http.get<UserLearnRecordVo, UserLearnRecordVo>(`/user-learn-record/finishCount`, {
+    params,
+  });
 }

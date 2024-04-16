@@ -1,26 +1,35 @@
 <template>
   <div class="max-w-[42rem]">
-    <table class="text-xs border-separate border-spacing-1/2">
+    <table class="border-spacing-1/2 border-separate text-xs">
       <thead>
         <th></th>
         <th
           :colspan="colSpan"
           v-for="{ colSpan, month } in thead"
           :key="month"
-          class="font-normal text-left"
+          class="text-left font-normal"
         >
           {{ month }}
         </th>
       </thead>
       <tbody>
-        <tr v-for="(row, i) in tbody" :key="weeks[i]">
+        <tr
+          v-for="(row, i) in tbody"
+          :key="weeks[i]"
+        >
           <td class="relative w-8">
-            <span class="absolute bottom-[-3px]">{{
-              i % 2 !== 0 ? weeks[i] : ""
-            }}</span>
+            <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : "" }}</span>
           </td>
-          <td class="p-0" v-for="(cell, j) in row" :key="j">
-            <div v-if="cell" class="block tooltip" :data-tip="cell.tips">
+          <td
+            class="p-0"
+            v-for="(cell, j) in row"
+            :key="j"
+          >
+            <div
+              v-if="cell"
+              class="tooltip block"
+              :data-tip="cell.tips"
+            >
               <div :class="`cell ${cell.bg}`"></div>
             </div>
           </td>
@@ -29,13 +38,17 @@
     </table>
 
     <div class="flex items-center justify-between px-8 py-2">
-      <div class="flex items-center dropdown dropdown-bottom">
-        <div tabindex="0" role="button" class="btn btn-xs">
+      <div class="dropdown dropdown-bottom flex items-center">
+        <div
+          tabindex="0"
+          role="button"
+          class="btn btn-xs"
+        >
           {{ year || yearOptions[0].label }}
         </div>
         <ul
           tabindex="0"
-          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
         >
           <li
             v-for="item in yearOptions"
@@ -65,14 +78,14 @@
 
 <script setup lang="ts">
 import { onMounted, watchEffect } from "vue";
-import { useCalendarGraph } from "~/composables/user/calendarGraph";
+
 import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
+import { useCalendarGraph } from "~/composables/user/calendarGraph";
 
 const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
 const emits = defineEmits<EmitsType>();
 
-const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } =
-  useCalendarGraph(emits);
+const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } = useCalendarGraph(emits);
 
 onMounted(() => {
   initTable();
@@ -85,7 +98,7 @@ watchEffect(() => {
 
 <style scoped>
 .cell {
-  @apply w-2.5 h-2.5 rounded-sm bg-[#ebedf0] dark:bg-[#2d333b];
+  @apply h-2.5 w-2.5 rounded-sm bg-[#ebedf0] dark:bg-[#2d333b];
 }
 
 .low {

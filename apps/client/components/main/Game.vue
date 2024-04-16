@@ -14,6 +14,7 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue";
+
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 

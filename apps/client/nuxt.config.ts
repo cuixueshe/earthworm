@@ -34,12 +34,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/globals.css"],
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@vueuse/nuxt",
-    "@nuxt/image",
-    "@nuxt/test-utils/module",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/image", "@nuxt/test-utils/module"],
   plugins: ["~/plugins/logto.ts"],
   runtimeConfig: {
     public: {

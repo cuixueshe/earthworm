@@ -1,6 +1,6 @@
 <template>
-  <div class="relative h-32 flex items-center justify-center">
-    <div class="min-[780px]:flex hidden items-center justify-center z-10">
+  <div class="relative flex h-32 items-center justify-center">
+    <div class="z-10 hidden items-center justify-center min-[780px]:flex">
       <button
         v-for="keybinding in keybindings"
         @click="keybinding.eventFn"
@@ -24,16 +24,13 @@
 
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted } from "vue";
+
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import {
-  cancelShortcut,
-  parseShortcutKeys,
-  registerShortcut,
-} from "~/utils/keyboardShortcuts";
+import { cancelShortcut, parseShortcutKeys, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);

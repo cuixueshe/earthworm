@@ -1,8 +1,9 @@
-import { it, expect, describe, vi, beforeEach } from "vitest";
-import { resetSentenceLoading, useDailySentence, useSummary } from "../summary";
+import { flushPromises } from "@vue/test-utils";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+
 import * as toolApi from "~/api/tool";
 import { useSetup } from "~/tests/helper/component";
-import { flushPromises } from "@vue/test-utils";
+import { resetSentenceLoading, useDailySentence, useSummary } from "../summary";
 
 vi.mock("~/api/tool");
 

@@ -1,6 +1,6 @@
-import { getRedisConnectionToken } from '@nestjs-modules/ioredis';
-import { Module, Provider } from '@nestjs/common';
-import Redis from 'ioredis-mock';
+import { getRedisConnectionToken } from "@nestjs-modules/ioredis";
+import { Module, Provider } from "@nestjs/common";
+import Redis from "ioredis-mock";
 
 export const mockRedis = new Redis();
 const MockRedisProvider: Provider = {

@@ -1,10 +1,10 @@
 <!-- 用于 logto 的登录回调 -->
 <script setup lang="ts">
-import { useHandleSignInCallback } from "@logto/vue";
+import { useHandleSignInCallback, useLogto } from "@logto/vue";
 import { navigateTo } from "nuxt/app";
-import { useUserStore } from "~/store/user";
+
 import { getSignInCallback } from "~/services/auth";
-import { useLogto } from "@logto/vue";
+import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
 const logto = useLogto();

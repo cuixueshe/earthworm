@@ -1,5 +1,6 @@
 // useTypingSound.ts
 import { ref } from "vue";
+
 import errorSoundPath from "~/assets/sounds/error.mp3";
 import rightSoundPath from "~/assets/sounds/right.mp3";
 import typingSoundPath from "~/assets/sounds/typing.mp3";
@@ -72,10 +73,7 @@ export function useTypingSound() {
   function checkPlayTypingSound(e: KeyboardEvent) {
     if (e.altKey || e.ctrlKey || e.metaKey) return false;
 
-    if (
-      /^[a-zA-Z0-9]$/.test(e.key) ||
-      ["Backspace", " ", "'"].includes(e.key)
-    ) {
+    if (/^[a-zA-Z0-9]$/.test(e.key) || ["Backspace", " ", "'"].includes(e.key)) {
       return true;
     }
   }

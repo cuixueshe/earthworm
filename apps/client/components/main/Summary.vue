@@ -9,7 +9,7 @@
           <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
           <button
             tabindex="0"
-            class="absolute top-0 right-0 w-8 h-8 p-0 mx-1 rounded-md btn btn-sm btn-ghost"
+            class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-8 w-8 rounded-md p-0"
             @click="soundSentence"
           >
             <svg
@@ -33,7 +33,7 @@
         <div class="flex flex-col">
           <div class="flex">
             <span class="text-6xl font-bold">"</span>
-            <div class="flex-1 text-xl leading-loose text-center">
+            <div class="flex-1 text-center text-xl leading-loose">
               {{ enSentence }}
             </div>
             <span class="invisible text-6xl font-bold">"</span>
@@ -41,16 +41,16 @@
 
           <div class="flex">
             <span class="invisible text-6xl font-bold">"</span>
-            <div class="flex-1 text-xl leading-loose text-center">
+            <div class="flex-1 text-center text-xl leading-loose">
               {{ zhSentence }}
             </div>
             <span class="text-6xl font-bold">"</span>
           </div>
-          <p class="text-right text-gray-200 text-3">—— 金山词霸「每日一句」</p>
-          <p class="text-gray-600 text-base leading-loose pl-14">
+          <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
+          <p class="pl-14 text-base leading-loose text-gray-600">
             {{
               `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
-                courseTimer.calculateTotalTime()
+                courseTimer.calculateTotalTime(),
               )} `
             }}
           </p>
@@ -78,7 +78,7 @@
       </div>
       <canvas
         ref="confettiCanvasRef"
-        class="absolute top-0 left-0 w-full h-full pointer-events-none"
+        class="pointer-events-none absolute left-0 top-0 h-full w-full"
       ></canvas>
     </dialog>
   </div>
@@ -87,6 +87,7 @@
 <script setup lang="ts">
 import { watch } from "vue";
 import { useRouter } from "vue-router";
+
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAuthRequire } from "~/composables/main/authRequire";
@@ -95,9 +96,9 @@ import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
+import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { formatSecondsToTime } from "~/utils/date";
-import { isAuthenticated } from "~/services/auth";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 let nextCourseId = 1;
@@ -134,9 +135,7 @@ async function completeCourse() {
   const { updateActiveCourseId } = useActiveCourseId();
 
   if (isAuthenticated() && courseStore.currentCourse) {
-    const { nextCourse } = await courseStore.completeCourse(
-      courseStore.currentCourse.id
-    );
+    const { nextCourse } = await courseStore.completeCourse(courseStore.currentCourse.id);
 
     if (nextCourse) {
       nextCourseId = nextCourse.id;

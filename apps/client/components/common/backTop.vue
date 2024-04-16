@@ -1,11 +1,11 @@
 <template>
   <button
-    class="button dark:bg-[#05051d] bg-white transition-all duration-300 cursor-pointer"
+    class="button cursor-pointer bg-white transition-all duration-300 dark:bg-[#05051d]"
     @click="scrollToTop"
     :data-content="route.path === '/' ? 'Back to Top' : 'Go to Home'"
   >
     <svg
-      class="svgIcon w-3 dark:fill-white fill-black transition-all duration-300"
+      class="svgIcon w-3 fill-black transition-all duration-300 dark:fill-white"
       viewBox="0 0 384 512"
     >
       <path

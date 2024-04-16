@@ -1,7 +1,7 @@
 <template>
   <div
     id="contents"
-    class="absolute left-0 z-20 overflow-x-hidden bg-white border-l-4 shadow select-none top-20 w-80 border-fuchsia-500 dark:bg-slate-800"
+    class="absolute left-0 top-20 z-20 w-80 select-none overflow-x-hidden border-l-4 border-fuchsia-500 bg-white shadow dark:bg-slate-800"
     :class="[isShowContents() && 'show']"
     v-bind="containerProps"
   >
@@ -16,12 +16,12 @@
         @click="jumpTo(item.index)"
       >
         <div
-          class="flex py-1 whitespace-pre-wrap border-b tooltip dark:border-slate-600"
+          class="tooltip flex whitespace-pre-wrap border-b py-1 dark:border-slate-600"
           :class="{ 'tooltip-bottom': item.index <= 1 }"
           :data-tip="item.data.english + '\n' + item.data.chinese"
         >
           <div class="w-12 text-center">{{ item.index + 1 }}</div>
-          <div class="flex-1 text-left truncate">
+          <div class="flex-1 truncate text-left">
             {{ item.data.chinese }}
           </div>
         </div>
@@ -33,6 +33,7 @@
 <script setup lang="ts">
 import { useVirtualList } from "@vueuse/core";
 import { computed, onMounted } from "vue";
+
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./useContents";
@@ -45,10 +46,9 @@ const contentsList = computed(() => {
   return coursesStore.currentCourse?.statements || [];
 });
 
-const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(
-  contentsList.value,
-  { itemHeight: 35 }
-);
+const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(contentsList.value, {
+  itemHeight: 35,
+});
 
 onMounted(async () => {
   scrollTo(coursesStore.statementIndex);

@@ -1,7 +1,7 @@
 <template>
   <dialog
     :open="isShow"
-    class="invisible modal"
+    class="modal invisible"
   >
     <div
       ref="dialogBoxRef"
@@ -13,14 +13,14 @@
         <form method="dialog">
           <button
             @click="handleCancel"
-            class="btn cancel"
+            class="cancel btn"
           >
             {{ cancelBtnText }}
           </button>
         </form>
         <button
           v-if="confirmBtnText"
-          class="btn confirm"
+          class="confirm btn"
           @click="handleConfirm"
         >
           {{ confirmBtnText }}
@@ -31,11 +31,8 @@
 </template>
 
 <script setup lang="ts">
-import {
-  useMessageBoxModal,
-  type EmitsType,
-  type IMessageBoxProps,
-} from "~/composables/messageBox/modal";
+import type { EmitsType, IMessageBoxProps } from "~/composables/messageBox/modal";
+import { useMessageBoxModal } from "~/composables/messageBox/modal";
 
 const props = withDefaults(defineProps<IMessageBoxProps>(), {
   isShowModal: false,
@@ -47,6 +44,5 @@ const props = withDefaults(defineProps<IMessageBoxProps>(), {
 
 const emits = defineEmits<EmitsType>();
 
-const { dialogBoxRef, isShow, handleConfirm, handleCancel } =
-  useMessageBoxModal(props, emits);
+const { dialogBoxRef, isShow, handleConfirm, handleCancel } = useMessageBoxModal(props, emits);
 </script>

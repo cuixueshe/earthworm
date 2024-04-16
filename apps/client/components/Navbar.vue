@@ -1,7 +1,7 @@
 <template>
   <header
     :class="isStickyNavBar"
-    class="w-full top-0 bg-opacity-50 backdrop-blur-xl font-customFont z-40"
+    class="top-0 z-40 w-full bg-opacity-50 font-customFont backdrop-blur-xl"
   >
     <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
@@ -11,13 +11,11 @@
               <img
                 width="48"
                 height="48"
-                class="rounded-md overflow-hidden mr-6 hidden min-[800px]:block"
+                class="mr-6 hidden overflow-hidden rounded-md min-[800px]:block"
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
-              <h1
-                class="text-2xl font-extrabold leading-normal text-wrap dark:text-white"
-              >
+              <h1 class="text-wrap text-2xl font-extrabold leading-normal dark:text-white">
                 Earthworm
               </h1>
             </div>
@@ -35,7 +33,7 @@
               >
                 <li class="px-4">
                   <a
-                    class="text-nowrap dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
+                    class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
                     :href="`#${optItem.anchor}`"
                   >
                     {{ optItem.name }}
@@ -52,9 +50,7 @@
             v-if="isAuthenticated()"
             class="logged-in flex items-center"
           >
-            <div
-              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
-            >
+            <div class="font-500 mx-2 max-w-[4em] truncate min-[500px]:max-w-[6em]">
               {{ userStore.userNameGetter }}
             </div>
             <DropMenu @update-show-modal="handleLogout" />
@@ -65,14 +61,14 @@
             v-else
             @click="signIn()"
             aria-label="Login"
-            class="btn btn-sm btn-ghost text-base font-normal dark:text-white rounded-md mx-1 h-8 px-4"
+            class="btn btn-ghost btn-sm mx-1 h-8 rounded-md px-4 text-base font-normal dark:text-white"
           >
             <span class="relative">登录</span>
           </button>
 
           <!-- 切换主题 -->
           <button
-            class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
+            class="btn btn-ghost btn-sm mx-1 h-8 w-8 rounded-md p-0"
             @click="toggleDarkMode"
           >
             <svg
@@ -94,7 +90,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              class="h-6 w-6"
             >
               <path
                 stroke-linecap="round"
@@ -118,6 +114,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
+
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";

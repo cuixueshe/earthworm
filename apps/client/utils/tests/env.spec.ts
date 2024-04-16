@@ -1,6 +1,6 @@
-import { vi, it, expect, describe } from "vitest";
-import { isProd, isDev } from "../env";
+import { describe, expect, it, vi } from "vitest";
 
+import { isDev, isProd } from "../env";
 
 describe("env", () => {
   it("should be production env", () => {

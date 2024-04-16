@@ -6,7 +6,7 @@
         :key="i"
       >
         <div
-          class="h-[4rem] leading-none border-solid rounded-[2px] border-b-2 text-[3em] transition-all"
+          class="h-[4rem] rounded-[2px] border-b-2 border-solid text-[3em] leading-none transition-all"
           :class="getWordsClassNames(i)"
           :style="{ minWidth: `${inputWidth(w)}ch` }"
         >
@@ -15,7 +15,7 @@
       </template>
       <input
         ref="inputEl"
-        class="absolute w-full h-full opacity-0"
+        class="absolute h-full w-full opacity-0"
         type="text"
         v-model="inputValue"
         @keydown="handleKeydown"
@@ -33,6 +33,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, watch } from "vue";
+
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
@@ -48,14 +49,8 @@ import { getWordWidth, useQuestionInput } from "./questionInputHelper";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
 const courseStore = useCourseStore();
-const {
-  inputEl,
-  focusing,
-  focusInput,
-  blurInput,
-  setInputCursorPosition,
-  getInputCursorPosition,
-} = useQuestionInput();
+const { inputEl, focusing, focusInput, blurInput, setInputCursorPosition, getInputCursorPosition } =
+  useQuestionInput();
 
 const { showAnswer } = useGameMode();
 const { showSummary } = useSummary();
@@ -68,19 +63,13 @@ const { handleAnswerError, resetCloseTip } = answerError();
 const { isAutoNextQuestion } = useAutoNextQuestion();
 const { isShowErrorTip } = useErrorTip();
 
-const {
-  inputValue,
-  userInputWords,
-  submitAnswer,
-  setInputValue,
-  handleKeyboardInput,
-  isFixMode,
-} = useInput({
-  source: () => courseStore.currentStatement?.english!,
-  setInputCursorPosition,
-  getInputCursorPosition,
-  inputChangedCallback,
-});
+const { inputValue, userInputWords, submitAnswer, setInputValue, handleKeyboardInput, isFixMode } =
+  useInput({
+    source: () => courseStore.currentStatement?.english!,
+    setInputCursorPosition,
+    getInputCursorPosition,
+    inputChangedCallback,
+  });
 const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 
 onMounted(() => {
@@ -95,7 +84,7 @@ watch(
   (val) => {
     setInputValue(val);
     courseTimer.time(String(courseStore.statementIndex));
-  }
+  },
 );
 
 watch(
@@ -103,7 +92,7 @@ watch(
   () => {
     focusInput();
     resetCloseTip();
-  }
+  },
 );
 
 function focusInputWhenWIndowFocus() {

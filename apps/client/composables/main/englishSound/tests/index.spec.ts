@@ -1,5 +1,6 @@
 import { createTestingPinia } from "@pinia/testing";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+
 import { useCourseStore } from "~/store/course";
 import { play, updateSource } from "../audio";
 import { useCurrentStatementEnglishSound } from "../index";

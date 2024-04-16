@@ -1,9 +1,10 @@
-import { UserEntity } from 'src/user/user.decorators';
-import { logtoApi } from '../../src/services/logtoService';
+import { UserEntity } from "src/user/user.decorators";
+
+import { logtoApi } from "../../src/services/logtoService";
 
 export function createUser(): UserEntity {
   return {
-    userId: '123456',
+    userId: "123456",
   };
 }
 
@@ -11,8 +12,8 @@ export function createUser(): UserEntity {
 export const getTokenOwner = () => process.env.LOGTO_CLIENT_ID;
 
 export async function createLogtoUser(username: string) {
-  const params = new URLSearchParams([['search.username', username]]);
-  const { data: users } = await logtoApi.get('/api/users', {
+  const params = new URLSearchParams([["search.username", username]]);
+  const { data: users } = await logtoApi.get("/api/users", {
     params,
   });
 
@@ -21,7 +22,7 @@ export async function createLogtoUser(username: string) {
   }
 
   // // 2. 创建一个 user
-  const { data } = await logtoApi.post('/api/users', {
+  const { data } = await logtoApi.post("/api/users", {
     username,
   });
 

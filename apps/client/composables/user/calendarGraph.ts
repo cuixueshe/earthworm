@@ -74,8 +74,7 @@ export function useCalendarGraph(emits: EmitsType) {
     const lastTwoDigits = day % 100;
     if ([11, 12, 13].includes(lastTwoDigits)) return "th";
     const lastDigit = day % 10;
-    if ([1, 2, 3].includes(lastDigit))
-      return { 1: "st", 2: "nd", 3: "rd" }[lastDigit] as string;
+    if ([1, 2, 3].includes(lastDigit)) return { 1: "st", 2: "nd", 3: "rd" }[lastDigit] as string;
     return "th";
   }
   function getActivityLevel(count?: number) {
@@ -126,9 +125,7 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   function calcDateRange(year?: number) {
-    const startDate = year
-      ? new Date(`${year}-01-01`)
-      : calcStartDate(new Date());
+    const startDate = year ? new Date(`${year}-01-01`) : calcStartDate(new Date());
     const endDate = year ? new Date(`${year}-12-31`) : new Date();
     return { startDate, endDate };
   }
@@ -159,8 +156,7 @@ export function useCalendarGraph(emits: EmitsType) {
         const rowIndex = week;
         const preRowIndex = rowIndex - 1;
         const colIndex = tbody[rowIndex].length;
-        const nonCurrentMonthDate =
-          tbody[preRowIndex] && tbody[preRowIndex][colIndex] !== null;
+        const nonCurrentMonthDate = tbody[preRowIndex] && tbody[preRowIndex][colIndex] !== null;
         const offset = nonCurrentMonthDate ? colIndex + 1 : colIndex;
 
         const isFirstTh = thead.length === 0;

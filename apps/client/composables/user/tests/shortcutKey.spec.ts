@@ -1,8 +1,9 @@
 import { beforeEach, describe, expect, it } from "vitest";
+
 import {
   DEFAULT_SHORTCUT_KEYS,
-  SHORTCUT_KEYS,
   SHORTCUT_KEY_TYPES,
+  SHORTCUT_KEYS,
   useShortcutKeyMode,
 } from "~/composables/user/shortcutKey";
 
@@ -70,8 +71,7 @@ describe("user defined shortcut key", () => {
     });
 
     it("should be the shortcut key is changed when the dialog is open", () => {
-      const { shortcutKeyStr, shortcutKeyTip, handleEdit, handleKeydown } =
-        useShortcutKeyMode();
+      const { shortcutKeyStr, shortcutKeyTip, handleEdit, handleKeydown } = useShortcutKeyMode();
 
       handleEdit(SHORTCUT_KEY_TYPES.SOUND); // open dialog
 
@@ -103,7 +103,7 @@ describe("user defined shortcut key", () => {
         [SHORTCUT_KEY_TYPES.SOUND]: "Tab",
       });
       expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
-        `"{"sound":"Tab","answer":"Ctrl+;","skip":"Ctrl+.","previous":"Ctrl+,"}"`
+        `"{"sound":"Tab","answer":"Ctrl+;","skip":"Ctrl+.","previous":"Ctrl+,"}"`,
       );
     });
 
@@ -126,17 +126,12 @@ describe("user defined shortcut key", () => {
         [SHORTCUT_KEY_TYPES.ANSWER]: "Ctrl+s",
       });
       expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
-        `"{"sound":"Ctrl+'","answer":"Ctrl+s","skip":"Ctrl+.","previous":"Ctrl+,"}"`
+        `"{"sound":"Ctrl+'","answer":"Ctrl+s","skip":"Ctrl+.","previous":"Ctrl+,"}"`,
       );
     });
     it("should be not set successfully with the same shortcut", () => {
-      const {
-        showModal,
-        shortcutKeys,
-        handleEdit,
-        handleKeydown,
-        hasSameShortcutKey,
-      } = useShortcutKeyMode();
+      const { showModal, shortcutKeys, handleEdit, handleKeydown, hasSameShortcutKey } =
+        useShortcutKeyMode();
 
       handleEdit(SHORTCUT_KEY_TYPES.ANSWER);
 
@@ -179,13 +174,8 @@ describe("user defined shortcut key", () => {
       });
     });
     it("should be the shortcut key is set successfully with the same key", () => {
-      const {
-        showModal,
-        shortcutKeys,
-        handleEdit,
-        handleKeydown,
-        hasSameShortcutKey,
-      } = useShortcutKeyMode();
+      const { showModal, shortcutKeys, handleEdit, handleKeydown, hasSameShortcutKey } =
+        useShortcutKeyMode();
 
       handleEdit(SHORTCUT_KEY_TYPES.ANSWER);
 

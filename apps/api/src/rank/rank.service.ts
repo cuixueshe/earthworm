@@ -1,17 +1,18 @@
-import { InjectRedis } from '@nestjs-modules/ioredis';
-import { Injectable, Logger } from '@nestjs/common';
-import Redis from 'ioredis';
-import { UserEntity } from '../user/user.decorators';
-import { UserService } from '../user/user.service';
+import { InjectRedis } from "@nestjs-modules/ioredis";
+import { Injectable, Logger } from "@nestjs/common";
+import Redis from "ioredis";
+
+import { UserEntity } from "../user/user.decorators";
+import { UserService } from "../user/user.service";
 
 // 定义周期枚举
 export enum RankPeriod {
-  WEEKLY = 'weekly',
-  MONTHLY = 'monthly',
-  YEARLY = 'yearly',
+  WEEKLY = "weekly",
+  MONTHLY = "monthly",
+  YEARLY = "yearly",
 }
 
-export type RankPeriodAlias = 'weekly' | 'monthly' | 'yearly';
+export type RankPeriodAlias = "weekly" | "monthly" | "yearly";
 
 @Injectable()
 export class RankService {
@@ -47,7 +48,7 @@ export class RankService {
   private convertRankListToObjectArray(rankList: string[]) {
     const res = [];
     for (let i = 0; i < rankList.length; i += 2) {
-      const count = parseInt(rankList[i + 1] ?? '-1');
+      const count = parseInt(rankList[i + 1] ?? "-1");
       res.push({ count, userId: rankList[i] });
     }
     return res;
@@ -59,15 +60,12 @@ export class RankService {
    * @param period  a certain period of time
    * @returns top 10 and self rank
    */
-  async getRankList(
-    user: UserEntity,
-    period: RankPeriodAlias = RankPeriod.WEEKLY,
-  ) {
+  async getRankList(user: UserEntity, period: RankPeriodAlias = RankPeriod.WEEKLY) {
     // return [member, count, member, count, ...]
     let self = null;
     const rankPeriod = this.rankKeys[period];
     const rankList = this.convertRankListToObjectArray(
-      await this.redis.zrevrange(rankPeriod, 0, 24, 'WITHSCORES'),
+      await this.redis.zrevrange(rankPeriod, 0, 24, "WITHSCORES"),
     );
 
     if (user) {
@@ -90,20 +88,18 @@ export class RankService {
 
   private async appendUserNameProperty(self, rankList) {
     const usersMap = await this.fetchUsersMap(
-      Array.from(
-        new Set([self.userId, ...rankList.map(({ userId }) => userId)]),
-      ),
+      Array.from(new Set([self.userId, ...rankList.map(({ userId }) => userId)])),
     );
 
     const rankListUsernameGenByUserId = (id: string) => {
       const user = usersMap[id];
 
       if (!user) {
-        return '';
+        return "";
       }
 
       const { username, name, email } = user;
-      return username || name || email?.split('@').at(0);
+      return username || name || email?.split("@").at(0);
     };
 
     self.username = rankListUsernameGenByUserId(self.userId);

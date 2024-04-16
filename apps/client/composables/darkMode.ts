@@ -14,12 +14,9 @@ const darkMode = ref(Theme.LIGHT);
 export function useDarkMode() {
   const isAppearanceTransition =
     // @ts-expect-error: Transition API
-    document.startViewTransition &&
-    !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+    document.startViewTransition && !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
 
-  const isDarkMode =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const isDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   const cacheDarkMode = localStorage.getItem(DARK_MODE) as Theme | null;
 
@@ -48,10 +45,7 @@ export function useDarkMode() {
     }
     const x = event.clientX;
     const y = event.clientY;
-    const endRadius = Math.hypot(
-      Math.max(x, innerWidth - x),
-      Math.max(y, innerHeight - y)
-    );
+    const endRadius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
 
     // @ts-expect-error: Transition API
     const transition = document.startViewTransition(() => {
@@ -59,10 +53,7 @@ export function useDarkMode() {
     });
 
     transition.ready.then(() => {
-      const clipPath = [
-        `circle(0px at ${x}px ${y}px)`,
-        `circle(${endRadius}px at ${x}px ${y}px)`,
-      ];
+      const clipPath = [`circle(0px at ${x}px ${y}px)`, `circle(${endRadius}px at ${x}px ${y}px)`];
       document.documentElement.animate(
         {
           clipPath: isDark ? clipPath : [...clipPath].reverse(),
@@ -70,10 +61,8 @@ export function useDarkMode() {
         {
           duration: 300,
           easing: "ease-in",
-          pseudoElement: isDark
-            ? "::view-transition-new(root)"
-            : "::view-transition-old(root)",
-        }
+          pseudoElement: isDark ? "::view-transition-new(root)" : "::view-transition-old(root)",
+        },
       );
     });
   };
@@ -81,7 +70,7 @@ export function useDarkMode() {
   const setDarkMode = (state = false) => {
     const themeClass = state ? DARK_THEME_CLASS : LIGHT_THEME_CLASS;
     const themeValue = state ? Theme.DARK : Theme.LIGHT;
-    
+
     document.documentElement.classList.toggle(DARK_THEME_CLASS, state);
     document.documentElement.setAttribute("data-theme", themeClass);
     darkMode.value = themeValue;

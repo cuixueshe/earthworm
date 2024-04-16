@@ -1,12 +1,13 @@
-import { course, statement } from '@earthworm/schema';
-import { Inject, Injectable } from '@nestjs/common';
-import { asc, eq, gt } from 'drizzle-orm';
-import { UserEntity } from 'src/user/user.decorators';
-import { CourseHistoryService } from '../course-history/course-history.service';
-import { DB, DbType } from '../global/providers/db.provider';
-import { RankService } from '../rank/rank.service';
-import { UserLearnRecordService } from '../user-learn-record/user-learn-record.service';
-import { UserProgressService } from '../user-progress/user-progress.service';
+import { Inject, Injectable } from "@nestjs/common";
+import { asc, eq, gt } from "drizzle-orm";
+import { UserEntity } from "src/user/user.decorators";
+
+import { course, statement } from "@earthworm/schema";
+import { CourseHistoryService } from "../course-history/course-history.service";
+import { DB, DbType } from "../global/providers/db.provider";
+import { RankService } from "../rank/rank.service";
+import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
+import { UserProgressService } from "../user-progress/user-progress.service";
 
 @Injectable()
 export class CourseService {

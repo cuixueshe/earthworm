@@ -1,6 +1,7 @@
-import { Module } from '@nestjs/common';
-import { CourseHistoryController } from './course-history.controller';
-import { CourseHistoryService } from './course-history.service';
+import { Module } from "@nestjs/common";
+
+import { CourseHistoryController } from "./course-history.controller";
+import { CourseHistoryService } from "./course-history.service";
 
 @Module({
   controllers: [CourseHistoryController],

@@ -1,5 +1,7 @@
-import { it, expect, describe, vi } from "vitest";
-import { useCalendarGraph, type EmitsType } from "../calendarGraph";
+import { describe, expect, it, vi } from "vitest";
+
+import type { EmitsType } from "../calendarGraph";
+import { useCalendarGraph } from "../calendarGraph";
 
 describe("use calendar graph", () => {
   const emits: EmitsType = vi.fn();

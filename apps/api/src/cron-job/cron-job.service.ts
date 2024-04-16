@@ -1,13 +1,14 @@
-import { Injectable } from '@nestjs/common';
-import { Cron } from '@nestjs/schedule';
-import { RankPeriod, RankService } from '../rank/rank.service';
+import { Injectable } from "@nestjs/common";
+import { Cron } from "@nestjs/schedule";
 
-export const TIME_ZONE = 'Asia/Shanghai';
+import { RankPeriod, RankService } from "../rank/rank.service";
+
+export const TIME_ZONE = "Asia/Shanghai";
 @Injectable()
 export class CronJobService {
-  private static readonly EVERY_MONDAY_AT_2AM = '0 2 * * 1';
-  private static readonly EVERY_FIRST_DAY_OF_MONTH_AT_2AM = '0 2 1 * *';
-  private static readonly EVERY_FIRST_DAY_OF_YEAR_AT_2AM = '0 2 1 1 *';
+  private static readonly EVERY_MONDAY_AT_2AM = "0 2 * * 1";
+  private static readonly EVERY_FIRST_DAY_OF_MONTH_AT_2AM = "0 2 1 * *";
+  private static readonly EVERY_FIRST_DAY_OF_YEAR_AT_2AM = "0 2 1 1 *";
 
   constructor(private readonly rankService: RankService) {}
 

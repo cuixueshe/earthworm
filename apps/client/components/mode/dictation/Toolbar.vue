@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12 text-sm dark:text-gray-50 absolute top-0 right-0">
+  <div class="absolute right-0 top-0 mt-12 text-sm dark:text-gray-50">
     <span class="mx-2">倍速</span>
     <select
       class="select select-ghost w-32"
@@ -50,13 +50,13 @@
 
 <script setup lang="ts">
 import { onMounted, watch } from "vue";
+
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { play, useToolbar } from "./dictation";
 
 const { focusInput } = useQuestionInput();
 
-const { toolBarData, recoverToolBarData, saveToolBarData, resetToolBarData } =
-  useToolbar();
+const { toolBarData, recoverToolBarData, saveToolBarData, resetToolBarData } = useToolbar();
 
 onMounted(() => {
   recoverToolBarData();
@@ -72,7 +72,7 @@ function handleReset() {
 
 function handlePlay() {
   play();
-  focusInput()
+  focusInput();
 }
 </script>
 

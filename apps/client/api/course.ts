@@ -8,7 +8,7 @@ export async function fetchCourse(courseId: number) {
 type CompleteCourseResponse = { nextCourse: Course | undefined };
 export async function fetchCompleteCourse(courseId: number) {
   return await http.post<CompleteCourseResponse, CompleteCourseResponse>(
-    `/courses/${courseId}/complete`
+    `/courses/${courseId}/complete`,
   );
 }
 

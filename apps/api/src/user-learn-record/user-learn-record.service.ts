@@ -1,8 +1,10 @@
-import { userLearnRecord } from '@earthworm/schema';
-import { Inject, Injectable } from '@nestjs/common';
-import { and, eq, gte, lte, sql } from 'drizzle-orm';
-import { DB, type DbType } from '../global/providers/db.provider';
-import { GetUserLearnRecordDto } from './model/user-learn-record.dto';
+import { Inject, Injectable } from "@nestjs/common";
+import { and, eq, gte, lte, sql } from "drizzle-orm";
+
+import { userLearnRecord } from "@earthworm/schema";
+import type { DbType } from "../global/providers/db.provider";
+import { DB } from "../global/providers/db.provider";
+import { GetUserLearnRecordDto } from "./model/user-learn-record.dto";
 
 @Injectable()
 export class UserLearnRecordService {

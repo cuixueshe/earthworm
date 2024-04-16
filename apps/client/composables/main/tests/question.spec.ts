@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
+
 import { useInput } from "../question";
 
 describe("question", () => {
@@ -101,9 +102,8 @@ describe("question", () => {
 
       expect(correctCallback).toBeCalled();
       expect(wrongCallback).not.toBeCalled();
-    }
+    },
   );
-
 
   it("should be the first word should be active", () => {
     const setInputCursorPosition = () => {};
@@ -162,12 +162,11 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } =
-      useInput({
-        source: () => "i eat",
-        setInputCursorPosition,
-        getInputCursorPosition,
-      });
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useInput({
+      source: () => "i eat",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
 
     setInputValue("he eat");
     submitAnswer();
@@ -181,12 +180,11 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } =
-      useInput({
-        source: () => "i eat",
-        setInputCursorPosition,
-        getInputCursorPosition,
-      });
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useInput({
+      source: () => "i eat",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
 
     setInputValue("he eat");
     submitAnswer();
@@ -205,12 +203,11 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } =
-      useInput({
-        source: () => "i eat apple",
-        setInputCursorPosition,
-        getInputCursorPosition,
-      });
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useInput({
+      source: () => "i eat apple",
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
 
     setInputValue("he eats a");
     submitAnswer();
@@ -287,12 +284,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const {
-      setInputValue,
-      submitAnswer,
-      fixIncorrectWord,
-      handleKeyboardInput,
-    } = useInput({
+    const { setInputValue, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -315,12 +307,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const {
-      setInputValue,
-      submitAnswer,
-      fixIncorrectWord,
-      handleKeyboardInput,
-    } = useInput({
+    const { setInputValue, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -421,7 +408,7 @@ describe("question", () => {
           enable: true,
           rightCallback: submitAnswerCallback,
         },
-      }
+      },
     );
 
     expect(submitAnswerCallback).toBeCalled();
@@ -431,17 +418,12 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = vi.fn();
 
-    const {
-      setInputValue,
-      userInputWords,
-      submitAnswer,
-      fixIncorrectWord,
-      handleKeyboardInput,
-    } = useInput({
-      source: () => "i eat apple",
-      setInputCursorPosition,
-      getInputCursorPosition,
-    });
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord, handleKeyboardInput } =
+      useInput({
+        source: () => "i eat apple",
+        setInputCursorPosition,
+        getInputCursorPosition,
+      });
 
     const inputValue = "i e apple";
     getInputCursorPosition.mockReturnValue(inputValue.length);
@@ -468,7 +450,7 @@ describe("question", () => {
           enable: true,
           rightCallback: submitAnswerCallback,
         },
-      }
+      },
     );
 
     expect(submitAnswerCallback).toBeCalled();
@@ -521,9 +503,7 @@ describe("question", () => {
         preventDefault: () => {},
       } as any as KeyboardEvent);
 
-      expect(inputChangedCallback).toBeCalledWith(
-        expect.objectContaining({ code: "Backspace" })
-      );
+      expect(inputChangedCallback).toBeCalledWith(expect.objectContaining({ code: "Backspace" }));
     });
 
     it("should trigger when press Backspace on fix input mode ", () => {

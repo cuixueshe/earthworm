@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { defaultOptions, useToolbar } from "../dictation";
 
 describe("dictation", () => {
