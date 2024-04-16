@@ -284,24 +284,20 @@ export function useInput({
       return;
     }
 
-    // Fix 下禁止输入除了空格/退格之外的其他字符
-    if (mode === Mode.Fix && e.code !== "Space" && e.code !== "Backspace") {
-      // TODO: 这里会导致一些浏览器快捷键不能使用，后续思考一下怎么处理
-      e.preventDefault();
-      return;
-    }
-
     // Fix_Input/Input 下启用空格提交 且 在最后一个单词位置
-    if (e.code === "Space" && lastWordIsActive()) {
+    if (mode !== Mode.Fix && e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
       e.stopPropagation(); // 阻止事件冒泡
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
 
-    // Fix 下使用退格键定位到第一个错误单词并清除
-    if (mode === Mode.Fix && e.code === "Backspace") {
-      e.preventDefault();
+    // Fix 模式下 允许用户按下任意键去修改第一个错误的单词
+    // 并且按下的这个键直接上屏
+    if (mode === Mode.Fix) {
+      if (e.code === "Space" || e.code === "Backspace") {
+        e.preventDefault();
+      }
       fixFirstIncorrectWord();
       inputChangedCallback?.(e);
       return;
