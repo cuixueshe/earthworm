@@ -10,7 +10,7 @@
       <MainAnswer />
     </template>
   </div>
-  <Tips></Tips>
+  <MainTips></MainTips>
 </template>
 
 <script setup lang="ts">

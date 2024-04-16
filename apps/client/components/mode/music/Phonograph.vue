@@ -2,14 +2,14 @@
   <div class="relative w-[500px] h-[500px]">
     <img
       class="absolute top-[-30px] left-1/2 z-10 needle"
-      :class="isPlayed() ? 'needle-play' : 'needle-notPlay'"
+      :class="hasPlayedMusic() ? 'needle-play' : 'needle-notPlay'"
       src="~/assets/music/needle.png"
       alt="music-needle"
     />
     <div class="record-box">
       <div
         class="relative"
-        :class="isPlayed() ? 'record' : ''"
+        :class="hasPlayedMusic() ? 'record' : ''"
       >
         <img
           class=""
@@ -22,9 +22,9 @@
 </template>
 
 <script setup lang="ts">
-import { useMusicAudio } from "~/composables/audio";
+import { useMusicMode } from "~/composables/main/music";
 
-const { isPlayed } = useMusicAudio();
+const { hasPlayedMusic } = useMusicMode();
 </script>
 
 <style scoped>

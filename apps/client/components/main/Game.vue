@@ -6,13 +6,9 @@
     <ModeChineseToEnglishMode />
   </template>
   <template v-else-if="currentGameMode === GameMode.Music">
-    <MusicMode></MusicMode>
+    <ModeMusicMode></ModeMusicMode>
   </template>
-  <Summary></Summary>
-  <Share></Share>
-  <AuthRequired></AuthRequired>
 
-  <MainTips />
   <MainSummary />
   <MainShare />
   <MainAuthRequired />

@@ -33,10 +33,10 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, watch } from "vue";
-import { useMusicAudio } from "~/composables/audio";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
+import { useMusicMode } from "~/composables/main/music";
 import { useInput } from "~/composables/main/question";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
@@ -90,7 +90,7 @@ const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
 const { currentGameMode } = useGameModeInUser();
 
 const { showSummary } = useSummary();
-const { audioPlay } = useMusicAudio();
+const { playMusic } = useMusicMode();
 
 onMounted(() => {
   focusInput();
@@ -273,6 +273,6 @@ function goToNextQuestion() {
 
   courseStore.toNextStatement();
   showQuestion();
-  audioPlay();
+  playMusic();
 }
 </script>

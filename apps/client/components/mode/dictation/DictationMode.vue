@@ -14,7 +14,7 @@
       </template>
     </div>
   </div>
-  <Tips></Tips>
+  <MainTips></MainTips>
 </template>
 
 <script setup lang="ts">

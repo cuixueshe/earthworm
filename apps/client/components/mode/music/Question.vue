@@ -14,6 +14,7 @@
         </div>
       </template>
       <div
+        v-if="courseStore.currentStatement?.startTime"
         class="absolute top-0 right-[-50px] h-full hidden group-hover:flex justify-center items-center flex-shrink-0"
       >
         <div
@@ -28,21 +29,20 @@
         </div>
       </div>
     </div>
-    <QuestionInput></QuestionInput>
+    <MainQuestionInput></MainQuestionInput>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
-import QuestionInput from "~/components/main/QuestionInput/QuestionInput.vue";
-import { useMusicAudio } from "~/composables/audio";
+import { useMusicMode } from "~/composables/main/music";
 import { useCourseStore } from "~/store/course";
 import PlayerSvg from "./PlayerSvg.vue";
 import { TipItem, useTips } from "./tips";
 
 const courseStore = useCourseStore();
 const { currentTip } = useTips();
-const { playStatement } = useMusicAudio();
+const { playStatement } = useMusicMode();
 
 const chineseStatement = computed(
   () =>

@@ -1,8 +1,7 @@
 import Plyr from "plyr";
 import { ref } from "vue";
 import { useCourseStore } from "~/store/course";
-
-let player: Plyr;
+import { srtTimeToSeconds } from "~/utils/musicTime";
 
 /**
  *
@@ -12,12 +11,13 @@ let player: Plyr;
  *
  */
 
-const played = ref(false);
+let player: Plyr;
+const isPlayed = ref(false);
 
-export function useMusicAudio() {
+export function useMusicMode() {
   const courseStore = useCourseStore();
 
-  function setupAudio(playerElement: HTMLAudioElement, src: string) {
+  function setupMusicAudio(playerElement: HTMLAudioElement, src: string) {
     player = new Plyr(playerElement, {
       seekTime: 0.1,
     });
@@ -47,40 +47,31 @@ export function useMusicAudio() {
 
   function pauseStatement(pauseTime: number) {
     if (player.currentTime >= pauseTime) {
-      audioPause();
+      pauseMusic();
     }
   }
 
-  function audioPlay() {
+  function playMusic() {
     player.play();
-    played.value = true;
+    isPlayed.value = true;
   }
-  function audioPause() {
+  function pauseMusic() {
     player.pause();
-    played.value = false;
+    isPlayed.value = false;
   }
 
   function playStatement(time: string) {
     player.currentTime = srtTimeToSeconds(time);
-    player.play();
+    playMusic();
   }
 
-  const isPlayed = () => played.value;
+  const hasPlayedMusic = () => isPlayed.value;
 
   return {
-    setupAudio,
-    audioPlay,
-    audioPause,
+    setupMusicAudio,
+    playMusic,
+    pauseMusic,
     playStatement,
-    isPlayed,
+    hasPlayedMusic,
   };
-}
-
-export function srtTimeToSeconds(srtTime: string) {
-  const timeParts = srtTime.split(":");
-  const minutes = parseInt(timeParts[0], 10);
-  const secondsAndMilliseconds = timeParts[1].split(".");
-  const seconds = parseInt(secondsAndMilliseconds[0], 10);
-  const milliseconds = parseInt(secondsAndMilliseconds[1], 10);
-  return minutes * 60 + seconds + milliseconds / 1000;
 }

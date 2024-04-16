@@ -23,9 +23,8 @@
 
       <div v-show="showAudio">
         <audio
-          controls
-          class="js-player"
           ref="playerElement"
+          controls
         ></audio>
       </div>
     </div>
@@ -34,37 +33,34 @@
       class="relative z-10"
     >
       <template v-if="isQuestion()">
-        <Question></Question>
+        <ModeMusicQuestion></ModeMusicQuestion>
       </template>
     </div>
 
     <div class="absolute z-[-10px] opacity-50">
-      <Phonograph></Phonograph>
+      <ModeMusicPhonograph></ModeMusicPhonograph>
     </div>
   </div>
-  <Tips></Tips>
+  <MainTips></MainTips>
 </template>
 
 <script setup lang="ts">
 // import "plyr/dist/plyr.css";
 import { onMounted, ref } from "vue";
 import musicSrc from "~/assets/music/demo.mp3";
-import { useMusicAudio } from "~/composables/audio";
 import { useGameMode } from "~/composables/main/game";
-import Phonograph from "./Phonograph.vue";
+import { useMusicMode } from "~/composables/main/music";
 import PlayerSvg from "./PlayerSvg.vue";
-import Question from "./Question.vue";
-import Tips from "./Tips.vue";
 
 const { isQuestion } = useGameMode();
 
 const showAudio = ref(false);
 const playerElement = ref<HTMLAudioElement>();
-const { setupAudio, audioPlay } = useMusicAudio();
+const { setupMusicAudio, playMusic } = useMusicMode();
 const { isStart, handleStartPlay } = useStartGame();
 
 onMounted(() => {
-  setupAudio(playerElement.value!, musicSrc);
+  setupMusicAudio(playerElement.value!, musicSrc);
 });
 
 function useStartGame() {
@@ -72,7 +68,7 @@ function useStartGame() {
 
   function handleStartPlay() {
     isStart.value = true;
-    audioPlay();
+    playMusic();
   }
 
   return {
@@ -81,5 +77,3 @@ function useStartGame() {
   };
 }
 </script>
-
-<style scoped></style>
