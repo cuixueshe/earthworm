@@ -1,11 +1,9 @@
 <template>
   <div class="w-full">
     <div
-      class="bg-purple-200 dark:bg-gray-800 px-4 py-1.5 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 rounded-md"
+      class="rounded-md bg-purple-200 px-4 py-1.5 text-white dark:bg-gray-800 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
     >
-      <p
-        class="text-center font-medium sm:text-left text-black dark:text-white"
-      >
+      <p class="text-center font-medium text-black dark:text-white sm:text-left">
         {{ main_title }}
         <br class="sm:hidden" />
         {{ sub_title }}

@@ -1,5 +1,6 @@
 import { flushPromises } from "@vue/test-utils";
 import { afterEach, describe, expect, test } from "vitest";
+
 import MessageBox from "../useMessageBox";
 
 const selector = ".modal";
@@ -35,9 +36,7 @@ describe("MessageBox", () => {
         msgAction = action;
       });
       await flushPromises();
-      const btn = document
-        .querySelector(selector)!
-        .querySelector(".confirm") as HTMLButtonElement;
+      const btn = document.querySelector(selector)!.querySelector(".confirm") as HTMLButtonElement;
       btn.click();
       await flushPromises();
 
@@ -46,15 +45,11 @@ describe("MessageBox", () => {
 
     test("cancel", async () => {
       let msgAction = "";
-      MessageBox("此操作将永久删除该文件, 是否继续?", "提示").catch(
-        (action) => {
-          msgAction = action;
-        }
-      );
+      MessageBox("此操作将永久删除该文件, 是否继续?", "提示").catch((action) => {
+        msgAction = action;
+      });
       await flushPromises();
-      const btn = document
-        .querySelector(selector)!
-        .querySelector(".cancel") as HTMLButtonElement;
+      const btn = document.querySelector(selector)!.querySelector(".cancel") as HTMLButtonElement;
       btn.click();
       await flushPromises();
 

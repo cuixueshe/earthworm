@@ -3,7 +3,7 @@
     <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg
-        class="inline-block ml-1 cursor-pointer w-7 h-7 fill-gray-500 hover:fill-fuchsia-500"
+        class="ml-1 inline-block h-7 w-7 cursor-pointer fill-gray-500 hover:fill-fuchsia-500"
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -21,13 +21,13 @@
       {{ courseStore.currentStatement?.chinese }}
     </div>
     <button
-      class="btn btn-sm btn-outline"
+      class="btn btn-outline btn-sm"
       @click="showQuestion"
     >
       再来一次
     </button>
     <button
-      class="ml-6 btn btn-sm btn-outline"
+      class="btn btn-outline btn-sm ml-6"
       @click="goToNextQuestion"
     >
       下一题
@@ -37,6 +37,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";

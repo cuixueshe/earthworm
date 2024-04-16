@@ -1,18 +1,18 @@
 <template>
   <div
-    class="flex justify-center items-center mt-16 flex-col"
+    class="mt-16 flex flex-col items-center justify-center"
     id="pricing"
   >
-    <div class="bg-opacity-75 text-white text-center py-16">
+    <div class="bg-opacity-75 py-16 text-center text-white">
       <div class="mb-6">
         <p
-          class="font-bold tracking-wider text-gray-500 relative before:absolute before:inset-x-0 before:bottom-0 before:h-0.5 before:mb-0 before:bg-gradient-to-r before:from-purple-500 text-sm pb-4"
+          class="relative pb-4 text-sm font-bold tracking-wider text-gray-500 before:absolute before:inset-x-0 before:bottom-0 before:mb-0 before:h-0.5 before:bg-gradient-to-r before:from-purple-500"
         >
           价格
         </p>
       </div>
       <h2
-        class="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-gray-300 dark:from-purple-600 dark:to-gray-500"
+        class="bg-gradient-to-r from-purple-400 to-gray-300 bg-clip-text text-4xl font-extrabold tracking-tight text-transparent dark:from-purple-600 dark:to-gray-500 md:text-5xl"
       >
         进行简单、透明的定价 <br />
         为每个人
@@ -23,11 +23,11 @@
       </p>
     </div>
 
-    <div class="flex justify-around items-center space-x-20">
+    <div class="flex items-center justify-around space-x-20">
       <div
         v-for="(feature, index) in features"
         :key="index"
-        class="card w-96 max-w-sm p-8 shadow-xl border-transparent relative"
+        class="card relative w-96 max-w-sm border-transparent p-8 shadow-xl"
         :class="{ 'lifetime-animation': feature.type === '终身付费' }"
       >
         <button
@@ -44,7 +44,7 @@
         </button>
 
         <div class="mb-6 text-left">
-          <h2 class="text-3xl font-bold text-gradient">{{ feature.type }}</h2>
+          <h2 class="text-gradient text-3xl font-bold">{{ feature.type }}</h2>
           <p class="program-description">
             {{
               feature.type === "免费"
@@ -54,12 +54,10 @@
           </p>
         </div>
         <div class="mb-8 text-left">
-          <span class="text-5xl font-extrabold dark:text-white text-black mr-2">
+          <span class="mr-2 text-5xl font-extrabold text-black dark:text-white">
             {{ feature.type === "免费" ? "$0" : "$19" }}
           </span>
-          <span class="gradient-text">{{
-            feature.type === "免费" ? "现在使用" : "抢先体验"
-          }}</span>
+          <span class="gradient-text">{{ feature.type === "免费" ? "现在使用" : "抢先体验" }}</span>
         </div>
         <div class="text-left">
           <button
@@ -69,7 +67,7 @@
                 ? 'bg-gray-600 hover:bg-gray-700'
                 : 'bg-purple-600 hover:bg-purple-700'
             "
-            class="w-full px-8 py-3 font-bold text-white transition duration-300 ease-in-out transform hover:scale-105 rounded-lg"
+            class="w-full transform rounded-lg px-8 py-3 font-bold text-white transition duration-300 ease-in-out hover:scale-105"
           >
             {{ feature.type === "免费" ? "Get Started" : "Upgrade now" }}
           </button>
@@ -77,11 +75,11 @@
             <li
               v-for="(item, itemIndex) in feature.list"
               :key="`feature-${index}-item-${itemIndex}`"
-              class="flex items-center mt-6 mb-6"
+              class="mb-6 mt-6 flex items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 mr-2"
+                class="mr-2 h-5 w-5"
                 :class="item.unique ? 'text-green-500' : 'text-gray-500'"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -99,22 +97,22 @@
       </div>
     </div>
   </div>
-  <div class="bg-opacity-75 text-white text-center py-10 mt-6">
-    <p class="text-xs md:text-sm text-gray-800 dark:text-gray-400">
+  <div class="mt-6 bg-opacity-75 py-10 text-center text-white">
+    <p class="text-xs text-gray-800 dark:text-gray-400 md:text-sm">
       每次新购买的用户如若退款， <br class="md:hidden" />
       <span
-        class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
+        class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
         >7 天内获得 100% 退款</span
       >
       在购买之日起<br />
       购买Earthworm许可证后，
       <span
-        class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
+        class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
         >登录</span
       >
       并且
       <span
-        class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
+        class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
         >注册你的许可证</span
       >
       去解锁我们的所有功能
@@ -125,8 +123,10 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+
 import Message from "~/components/main/Message/useMessage";
 import { useGameStore } from "~/store/game";
+
 const gameStore = useGameStore();
 const router = useRouter();
 
@@ -196,12 +196,7 @@ button::after {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   transition: all 0.3s ease-in-out;
 }
 

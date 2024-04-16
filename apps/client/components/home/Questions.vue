@@ -1,16 +1,13 @@
 <template>
   <section
-    class="text-gray-600 body-font overflow-hidden pt-24"
+    class="body-font overflow-hidden pt-24 text-gray-600"
     id="faq"
   >
     <CommonTitle
       title="常见问题解答"
-      :description="[
-        `如果您找不到所需的内容，请加入 Telegram 群组`,
-        `我们会尽快回复您！`,
-      ]"
+      :description="[`如果您找不到所需的内容，请加入 Telegram 群组`, `我们会尽快回复您！`]"
     />
-    <div class="divide-y divide-gray-100 dark:divide-gray-800 py-16">
+    <div class="divide-y divide-gray-100 py-16 dark:divide-gray-800">
       <template
         v-for="(qsItem, qsIndex) in QUESTIONS"
         :key="qsIndex"
@@ -19,10 +16,8 @@
           class="group"
           :open="qsIndex === 0"
         >
-          <summary
-            class="flex justify-between items-center cursor-pointer py-5"
-          >
-            <h2 class="text-base lg:text-lg font-medium text-black dark:text-gray-300">
+          <summary class="flex cursor-pointer items-center justify-between py-5">
+            <h2 class="text-base font-medium text-black dark:text-gray-300 lg:text-lg">
               {{ qsItem.title }}
             </h2>
             <span class="icon">
@@ -43,16 +38,14 @@
             </span>
           </summary>
           <div
-            class="mb-4 transition-max-height dark:text-gray-500 duration-500 ease-in-out overflow-hidden"
+            class="transition-max-height mb-4 overflow-hidden duration-500 ease-in-out dark:text-gray-500"
           >
             <template
               v-for="(asItem, asIndex) in qsItem.content"
               :key="`content-${asIndex}`"
             >
               <p class="py-2 text-sm lg:text-base">
-                <span v-if="qsItem.content.length > 1"
-                  >{{ asIndex + 1 }}.
-                </span>
+                <span v-if="qsItem.content.length > 1">{{ asIndex + 1 }}. </span>
                 {{ asItem }}
               </p>
             </template>

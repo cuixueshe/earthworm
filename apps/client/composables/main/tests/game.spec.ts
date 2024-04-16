@@ -1,4 +1,5 @@
-import { it, expect, describe } from "vitest";
+import { describe, expect, it } from "vitest";
+
 import { useGameMode } from "../game";
 
 describe("Game Mode Composable", () => {
@@ -12,7 +13,7 @@ describe("Game Mode Composable", () => {
 
   it("changes game mode back to Question", () => {
     const { showAnswer, showQuestion, isQuestion } = useGameMode();
-    showAnswer(); 
+    showAnswer();
 
     showQuestion();
 
@@ -21,7 +22,7 @@ describe("Game Mode Composable", () => {
 
   it("confirms isAnswer returns true only when game mode is Answer", () => {
     const { showAnswer, isAnswer, isQuestion } = useGameMode();
-    showAnswer(); 
+    showAnswer();
 
     expect(isAnswer()).toBe(true);
     expect(isQuestion()).toBe(false);
@@ -29,7 +30,7 @@ describe("Game Mode Composable", () => {
 
   it("confirms isQuestion returns true only when game mode is Question", () => {
     const { showQuestion, isQuestion, isAnswer } = useGameMode();
-    showQuestion(); 
+    showQuestion();
 
     expect(isQuestion()).toBe(true);
     expect(isAnswer()).toBe(false);

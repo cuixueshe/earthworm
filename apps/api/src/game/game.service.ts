@@ -1,8 +1,9 @@
-import { Inject, Injectable } from '@nestjs/common';
-import { CourseService } from '../course/course.service';
-import { DB, DbType } from '../global/providers/db.provider';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { UserEntity } from '../user/user.decorators';
+import { Inject, Injectable } from "@nestjs/common";
+
+import { CourseService } from "../course/course.service";
+import { DB, DbType } from "../global/providers/db.provider";
+import { UserProgressService } from "../user-progress/user-progress.service";
+import { UserEntity } from "../user/user.decorators";
 
 @Injectable()
 export class GameService {

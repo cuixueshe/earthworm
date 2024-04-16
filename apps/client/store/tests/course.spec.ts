@@ -1,9 +1,11 @@
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+
+import type { Course } from "../course";
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
-import { useCourseStore, type Course } from "../course";
-import { useUserStore } from "../user";
 import { isAuthenticated } from "~/services/auth";
+import { useCourseStore } from "../course";
+import { useUserStore } from "../user";
 
 vi.mock("~/api/course");
 vi.mock("~/services/auth");

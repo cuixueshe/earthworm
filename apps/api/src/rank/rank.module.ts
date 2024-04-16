@@ -1,7 +1,8 @@
-import { Module } from '@nestjs/common';
-import { RankController } from './rank.controller';
-import { RankService } from './rank.service';
-import { UserModule } from '../user/user.module';
+import { Module } from "@nestjs/common";
+
+import { UserModule } from "../user/user.module";
+import { RankController } from "./rank.controller";
+import { RankService } from "./rank.service";
 
 @Module({
   imports: [UserModule],

@@ -1,4 +1,5 @@
-import { ref, watch, computed } from "vue";
+import { computed, ref, watch } from "vue";
+
 export interface IMessageBoxProps {
   isShowModal: boolean;
   content?: string;
@@ -18,7 +19,7 @@ export function useMessageBoxModal(props: IMessageBoxProps, emits: EmitsType) {
 
   function handleConfirm() {
     emits("confirm");
-    handleCancel()
+    handleCancel();
   }
 
   function handleCancel() {

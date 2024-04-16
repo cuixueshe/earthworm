@@ -1,7 +1,9 @@
 import { watchEffect } from "vue";
+
+import type { PlayOptions } from "./audio";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
-import { play, updateSource, type PlayOptions } from "./audio";
+import { play, updateSource } from "./audio";
 
 const { getPronunciationUrl } = usePronunciation();
 

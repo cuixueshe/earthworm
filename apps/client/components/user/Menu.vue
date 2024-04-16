@@ -3,7 +3,7 @@
     <div
       v-for="(menu, index) in menus"
       :key="index"
-      class="box-content h-8 leading-8 py-2 cursor-pointer"
+      class="box-content h-8 cursor-pointer py-2 leading-8"
       :class="
         currentMenu === menu.name
           ? 'border-r-2 border-solid border-r-fuchsia-500 text-fuchsia-500'
@@ -43,6 +43,6 @@ watch(
   (newVal) => {
     currentMenu.value = newVal;
   },
-  { immediate: true }
+  { immediate: true },
 );
 </script>

@@ -3,9 +3,7 @@ import { ref } from "vue";
 export const ACTIVE_COURSE_ID = "activeCourseId";
 
 export function useActiveCourseId() {
-  const activeCourseId = ref<number>(
-    Number(localStorage.getItem(ACTIVE_COURSE_ID))
-  );
+  const activeCourseId = ref<number>(Number(localStorage.getItem(ACTIVE_COURSE_ID)));
 
   function updateActiveCourseId(id: number) {
     activeCourseId.value = id;

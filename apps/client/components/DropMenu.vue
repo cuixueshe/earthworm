@@ -5,7 +5,7 @@
   >
     <button
       tabindex="0"
-      class="h-8 btn btn-sm btn-ghost rounded-md mx-0 px-1"
+      class="btn btn-ghost btn-sm mx-0 h-8 rounded-md px-1"
     >
       <svg
         t="1711437189034"
@@ -28,7 +28,7 @@
       v-if="showDropdown"
       ref="dropdownContainer"
       tabindex="0"
-      class="dropdown-content menu p-2 w-52 bg-white border-gray-200 border-2 mt-2 rounded-md z-[1] dark:bg-theme-dark dark:border-gray-600"
+      class="menu dropdown-content z-[1] mt-2 w-52 rounded-md border-2 border-gray-200 bg-white p-2 dark:border-gray-600 dark:bg-theme-dark"
     >
       <li
         v-for="(item, index) in showMenuOptions"
@@ -36,7 +36,7 @@
       >
         <span
           @click="item.eventName"
-          class="flex items-center gap-2 rounded-lg hover:text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:hover:bg-fuchsia-500"
+          class="flex items-center gap-2 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-fuchsia-500 dark:hover:text-white"
         >
           <span v-html="item.icon"></span>
 
@@ -54,6 +54,7 @@ import { onClickOutside } from "@vueuse/core";
 import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
+
 import { useGameStore } from "~/store/game";
 
 const emit = defineEmits(["update-show-modal"]);
@@ -121,9 +122,7 @@ const MENU_OPTIONS = [
   },
 ];
 const showMenuOptions = computed(() => {
-  return MENU_OPTIONS.filter(
-    (menu) => menu.name !== GO_BACK_GAME_NAME || route.name !== "Main-id"
-  );
+  return MENU_OPTIONS.filter((menu) => menu.name !== GO_BACK_GAME_NAME || route.name !== "Main-id");
 });
 
 onClickOutside(dropdownContainer, () => {

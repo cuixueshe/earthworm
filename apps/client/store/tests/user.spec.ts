@@ -1,5 +1,6 @@
-import { setActivePinia, createPinia } from "pinia";
-import { it, expect, describe, beforeEach } from "vitest";
+import { createPinia, setActivePinia } from "pinia";
+import { beforeEach, describe, expect, it } from "vitest";
+
 import { useUserStore } from "../user";
 
 function generateUserInfo() {
@@ -27,7 +28,7 @@ describe("user", () => {
         "userId": "123",
         "username": "JohnDoe",
       }
-    `
+    `,
     );
   });
 });
