@@ -7,7 +7,7 @@ import { MockRedisModule } from './mockRedis';
 
 export async function cleanDB(db: DbType) {
   await db.execute(
-    sql`TRUNCATE TABLE courses, statements, "user-progress", "course-history" RESTART IDENTITY CASCADE;`,
+    sql`TRUNCATE TABLE courses, statements, "user-progress", "course-history", "user-learn-record" RESTART IDENTITY CASCADE;`,
   );
 }
 

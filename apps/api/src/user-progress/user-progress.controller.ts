@@ -1,9 +1,9 @@
+import { Body, Controller, Get, Put, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { Controller, Body, UseGuards, Get, Put } from '@nestjs/common';
-import { UserProgressService } from './user-progress.service';
 import { AuthGuard } from '../auth/auth.guard';
-import { UpdateUserProgressDto } from './model/user-progress.dto';
 import { User, UserEntity } from '../user/user.decorators';
+import { UpdateUserProgressDto } from './model/user-progress.dto';
+import { UserProgressService } from './user-progress.service';
 
 @ApiBearerAuth()
 @ApiTags('UserProgress')

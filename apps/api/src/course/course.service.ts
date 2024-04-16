@@ -5,6 +5,7 @@ import { UserEntity } from 'src/user/user.decorators';
 import { CourseHistoryService } from '../course-history/course-history.service';
 import { DB, DbType } from '../global/providers/db.provider';
 import { RankService } from '../rank/rank.service';
+import { UserLearnRecordService } from '../user-learn-record/user-learn-record.service';
 import { UserProgressService } from '../user-progress/user-progress.service';
 
 @Injectable()
@@ -14,6 +15,7 @@ export class CourseService {
     private readonly userProgressService: UserProgressService,
     private readonly rankService: RankService,
     private readonly courseHistoryService: CourseHistoryService,
+    private readonly userLearnRecordService: UserLearnRecordService,
   ) {}
 
   async tryCourse() {
@@ -93,6 +95,7 @@ export class CourseService {
   async completeCourse(user: UserEntity, courseId: number) {
     await this.rankService.userFinishCourse(user.userId);
     await this.courseHistoryService.setCompletionCount(user.userId, courseId);
+    await this.userLearnRecordService.userLearnRecord(user.userId);
 
     const nextCourse = await this.findNext(courseId);
     if (nextCourse) {

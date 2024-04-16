@@ -10,6 +10,7 @@ import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { CourseHistoryService } from '../../course-history/course-history.service';
 import { DB, type DbType } from '../../global/providers/db.provider';
 import { RankService } from '../../rank/rank.service';
+import { UserLearnRecordService } from '../../user-learn-record/user-learn-record.service';
 import { UserProgressService } from '../../user-progress/user-progress.service';
 import { CourseService } from '../course.service';
 
@@ -23,6 +24,7 @@ describe('course service', () => {
   let userProgressService: UserProgressService;
   let rankService: RankService;
   let courseHistoryService: CourseHistoryService;
+  let userLearnRecordService: UserLearnRecordService;
 
   beforeAll(async () => {
     const testHelper = await setupTesting();
@@ -33,6 +35,7 @@ describe('course service', () => {
     userProgressService = testHelper.UserProgressService;
     rankService = testHelper.rankService;
     courseHistoryService = testHelper.courseHistoryService;
+    userLearnRecordService = testHelper.userLearnRecordService;
   });
 
   afterAll(async () => {
@@ -99,6 +102,9 @@ describe('course service', () => {
       secondCourse.id,
     );
     expect(rankService.userFinishCourse).toHaveBeenCalledWith(user.userId);
+    expect(userLearnRecordService.userLearnRecord).toHaveBeenCalledWith(
+      user.userId,
+    );
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,
       firstCourse.id,
@@ -121,6 +127,9 @@ async function setupTesting() {
   const mockCourseHistoryService = {
     setCompletionCount: jest.fn(),
   };
+  const mockUserLearnRecordService = {
+    userLearnRecord: jest.fn(),
+  };
 
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
@@ -129,6 +138,7 @@ async function setupTesting() {
       { provide: UserProgressService, useValue: mockUserProgressService },
       { provide: RankService, useValue: mockRankService },
       { provide: CourseHistoryService, useValue: mockCourseHistoryService },
+      { provide: UserLearnRecordService, useValue: mockUserLearnRecordService },
     ],
   }).compile();
 
@@ -139,6 +149,9 @@ async function setupTesting() {
     rankService: moduleRef.get<RankService>(RankService),
     courseHistoryService:
       moduleRef.get<CourseHistoryService>(CourseHistoryService),
+    userLearnRecordService: moduleRef.get<UserLearnRecordService>(
+      UserLearnRecordService,
+    ),
     db: moduleRef.get<DbType>(DB),
     moduleRef,
   };
