@@ -10,7 +10,7 @@
         `我们会尽快回复您！`,
       ]"
     />
-    <div class="divide-y divide-gray-800 space-y-4 py-16">
+    <div class="divide-y divide-gray-100 dark:divide-gray-800 py-16">
       <template
         v-for="(qsItem, qsIndex) in QUESTIONS"
         :key="qsIndex"
@@ -22,7 +22,7 @@
           <summary
             class="flex justify-between items-center cursor-pointer py-5"
           >
-            <h2 class="text-lg font-medium text-black dark:text-gray-300">
+            <h2 class="text-base lg:text-lg font-medium text-black dark:text-gray-300">
               {{ qsItem.title }}
             </h2>
             <span class="icon">
@@ -43,13 +43,13 @@
             </span>
           </summary>
           <div
-            class="transition-max-height dark:text-gray-500 duration-500 ease-in-out overflow-hidden"
+            class="mb-4 transition-max-height dark:text-gray-500 duration-500 ease-in-out overflow-hidden"
           >
             <template
               v-for="(asItem, asIndex) in qsItem.content"
               :key="`content-${asIndex}`"
             >
-              <p class="py-2">
+              <p class="py-2 text-sm lg:text-base">
                 <span v-if="qsItem.content.length > 1"
                   >{{ asIndex + 1 }}.
                 </span>

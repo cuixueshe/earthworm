@@ -2,7 +2,10 @@
   <div
     class="relative flex items-center py-3 border-t border-b border-solid border-slate-200 text-base"
   >
-    <div class="link-item">
+    <div
+      class="link-item tooltip z-50"
+      data-tip="课程列表"
+    >
       <NuxtLink href="/courses">
         <svg
           class="h-7 w-7"
@@ -70,18 +73,23 @@
         </svg>
       </NuxtLink>
     </div>
-    <div class="ml-4 mr-1 text-gray-400">
+    <div class="ml-4 mr-1 z-50">
       {{ courseStore.currentCourse?.title }}
     </div>
     <div
-      class="link-item"
+      class="link-item tooltip z-50"
+      data-tip="题目列表"
       @click="toggleContents"
     >
       （{{ currentSchedule }}<span class="mx-[2px]">/</span
       >{{ courseStore.totalQuestionsCount }}）
     </div>
-    <StudyVideoLink :course-id="courseStore.currentCourse?.id" />
-    <div class="flex-1"></div>
+
+    <MainStudyVideoLink
+      class="mr-auto"
+      :course-id="courseStore.currentCourse?.id"
+    />
+
     <div
       @click="handleDoAgain"
       class="link-item mr-4"
@@ -106,37 +114,33 @@
       排行榜
     </div>
     <div
-      class="absolute left-0 right-0 bottom-[-24px] h-[18px] p-[2px] border border-purple-300 rounded-lg"
+      class="absolute left-0 right-0 bottom-[-24px] h-[18px] p-[2px] border rounded-lg dark:border-slate-400"
     >
       <div
-        class="h-full bg-gradient-to-r from-purple-200 to-purple-400 dark:from-purple-300 dark:to-purple-600 rounded-lg"
+        class="h-full bg-gradient-to-r from-emerald-200 to-emerald-400 dark:from-emerald-300 dark:to-emerald-500 rounded-lg transition-all"
         :style="{ width: `${currentPercentage}%` }"
       ></div>
     </div>
-    <Contents></Contents>
+    <MainContents />
   </div>
-  <RankList></RankList>
-  <MessageBox
+  <RankRankingList />
+  <MainMessageBox
     class="mt-[-4vh]"
     v-model:isShowModal="showTipModal"
-    content="Do you confirm the reset progress?"
+    content="是否确认重置当前课程进度？"
     @confirm="handleTipConfirm"
-  ></MessageBox>
+  />
 </template>
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import MessageBox from "~/components/main/MessageBox/MessageBox.vue";
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInput";
-import RankList from "~/components/rank/RankingList.vue";
+import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import Contents from "./Contents/Contents.vue";
 import { useContent } from "./Contents/useContents";
-import StudyVideoLink from "./StudyVideoLink.vue";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();

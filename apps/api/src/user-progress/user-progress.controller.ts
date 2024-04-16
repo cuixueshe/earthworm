@@ -1,12 +1,9 @@
-import { Body, Controller, Get, Post, Put, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { AuthGuard } from '../auth/auth.guard';
-import { User, UserEntity } from '../user/user.decorators';
-import {
-  CreateUserProgressDto,
-  UpdateUserProgressDto,
-} from './model/user-progress.dto';
+import { Controller, Body, UseGuards, Get, Put } from '@nestjs/common';
 import { UserProgressService } from './user-progress.service';
+import { AuthGuard } from '../auth/auth.guard';
+import { UpdateUserProgressDto } from './model/user-progress.dto';
+import { User, UserEntity } from '../user/user.decorators';
 
 @ApiBearerAuth()
 @ApiTags('UserProgress')
@@ -18,18 +15,9 @@ export class UserProgressController {
     summary: '生成当前登陆用户的课程完成进度',
   })
   @UseGuards(AuthGuard)
-  @Post()
-  create(@User() user: UserEntity, @Body() body: CreateUserProgressDto) {
-    return this.userProgressService.create(+user.userId, body.courseId);
-  }
-
-  @ApiOperation({
-    summary: '查找当前登陆用户的课程完成进度',
-  })
-  @UseGuards(AuthGuard)
   @Get()
   findOne(@User() user: UserEntity) {
-    return this.userProgressService.findOne(+user.userId);
+    return this.userProgressService.findOne(user.userId);
   }
 
   @ApiOperation({
@@ -37,7 +25,15 @@ export class UserProgressController {
   })
   @UseGuards(AuthGuard)
   @Put()
-  updateOne(@User() user: UserEntity, @Body() dto: UpdateUserProgressDto) {
-    return this.userProgressService.update(+user.userId, +dto.courseId);
+  async updateOne(
+    @User() user: UserEntity,
+    @Body() dto: UpdateUserProgressDto,
+  ) {
+    const result = await this.userProgressService.update(
+      user.userId,
+      +dto.courseId,
+    );
+
+    return result;
   }
 }

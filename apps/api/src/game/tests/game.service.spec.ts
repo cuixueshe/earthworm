@@ -1,10 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { createUser } from '../../../test/fixture/user';
-import {
-  cleanDB,
-  startDB,
-  testImportModules,
-} from '../../../test/helper/utils';
+import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 import { CourseService } from '../../course/course.service';
 import { DB, DbType } from '../../global/providers/db.provider';
@@ -34,10 +30,6 @@ describe('game service', () => {
     await endDB();
   });
 
-  beforeEach(async () => {
-    await startDB(db);
-  });
-
   afterEach(async () => {
     jest.clearAllMocks();
   });
@@ -54,7 +46,6 @@ describe('game service', () => {
 
     const { cId } = await gameService.startGame(user);
 
-    expect(userProgress.create).toHaveBeenCalled();
     expect(cId).toBe(1);
   });
 });

@@ -138,6 +138,29 @@
               />
             </td>
           </tr>
+          <tr class="hover">
+            <td class="label-text">答题正确后自动下一题</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="autoNextQuestion"
+                @change="toggleAutoQuestion"
+              />
+            </td>
+          </tr>
+
+          <tr class="hover">
+            <td class="label-text">自动显示答案（输错三次）</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="showErrorTip"
+                @change="toggleShowErrorTip"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -191,6 +214,8 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useAutoNextQuestion } from "~/composables/user/autoNext";
+import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import {
   PronunciationType,
@@ -209,6 +234,7 @@ import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
 const {
@@ -219,6 +245,7 @@ const {
 } = usePronunciation();
 const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
+const { showErrorTip, toggleShowErrorTip } = useErrorTip();
 const {
   showModal,
   shortcutKeys,

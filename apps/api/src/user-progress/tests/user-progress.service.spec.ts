@@ -1,25 +1,14 @@
-import { course, user, userProgress } from '@earthworm/schema';
 import { Test } from '@nestjs/testing';
-import * as argon2 from 'argon2';
-import {
-  createFirstCourse,
-  createSecondCourse,
-} from '../../../test/fixture/course';
+import { createFirstCourse } from '../../../test/fixture/course';
 import { createUser } from '../../../test/fixture/user';
-import {
-  cleanDB,
-  startDB,
-  testImportModules,
-} from '../../../test/helper/utils';
+import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { endDB } from '../../common/db';
 import { DB, DbType } from '../../global/providers/db.provider';
 import { UserProgressService } from '../user-progress.service';
 
 const userData = createUser();
-const password = '123456';
+const course = createFirstCourse();
 
-const firstCourse = createFirstCourse();
-const secondCourse = createSecondCourse();
 describe('user-progress service', () => {
   let userProgressService: UserProgressService;
   let db: DbType;
@@ -37,35 +26,17 @@ describe('user-progress service', () => {
     await endDB();
   });
 
-  beforeEach(async () => {
-    await startDB(db);
-  });
-
-  it('should create user progress', async () => {
-    const data = await userProgressService.create(
-      userData.userId,
-      firstCourse.id,
-    );
-    expect(data.courseId).toBe(firstCourse.id);
-  });
-
-  it('should find user progress', async () => {
-    const data = await userProgressService.findOne(userData.userId);
-    expect(data.courseId).toBe(firstCourse.id);
-  });
-
   it('should update user progress', async () => {
-    const data = await userProgressService.update(
-      userData.userId,
-      secondCourse.id,
-    );
-    expect(data.courseId).toBe(secondCourse.id);
+    await userProgressService.update(userData.userId, course.id);
+
+    const data = await userProgressService.findOne(userData.userId);
+
+    expect(data.courseId).toBe(course.id);
   });
 });
 
 async function setupDatabaseData(db: DbType) {
   await cleanDB(db);
-  await setupDBData(db);
 }
 async function setupTesting() {
   const moduleRef = await Test.createTestingModule({
@@ -78,24 +49,4 @@ async function setupTesting() {
     userProgressService:
       moduleRef.get<UserProgressService>(UserProgressService),
   };
-}
-
-async function setupDBData(db: DbType) {
-  // create user data
-  const [res] = await db.insert(user).values({
-    name: userData.username,
-    phone: userData.phone,
-    password: await argon2.hash(password),
-  });
-
-  const userId = res.insertId;
-  // create course data
-  await db.insert(course).values(firstCourse);
-  await db.insert(course).values(secondCourse);
-
-  // create user progress data
-  await db.insert(userProgress).values({
-    courseId: firstCourse.id,
-    userId: userId,
-  });
 }

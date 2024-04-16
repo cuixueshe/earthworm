@@ -53,23 +53,23 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex.value = index;
   }
 
-  function toNextStatement() {
-    const nextIndex = statementIndex.value + 1;
-    statementIndex.value = nextIndex;
-
-    return statementIndex.value;
+  function toPreviousStatement() {
+    statementIndex.value = Math.max(0, statementIndex.value - 1);
   }
 
-  function toPreviousStatement() {
-    const prevIndex = statementIndex.value - 1;
-    statementIndex.value = prevIndex >= 0 ? prevIndex : 0;
+  function toNextStatement() {
+    statementIndex.value = Math.min(
+      statementIndex.value + 1,
+      totalQuestionsCount.value - 1
+    );
+  }
 
-    return statementIndex.value;
+  function resetStatementIndex() {
+    statementIndex.value = 0;
   }
 
   function isAllDone() {
-    // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
-    return statementIndex.value + 1 >= totalQuestionsCount.value;
+    return statementIndex.value >= totalQuestionsCount.value - 1;
   }
 
   function doAgain() {
@@ -95,8 +95,7 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(courseId: number) {
     if (courseId === currentCourse.value?.id) return;
 
-    // const userStore = useUserStore();
-    // if (!userStore.user) {
+    // if (!isAuthenticated()) {
     //   let course = await fetchTryCourse();
     //   currentCourse.value = course;
     // } else {
@@ -113,10 +112,6 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex.value = loadProgress(courseId);
   }
 
-  function resetStatementIndex() {
-    statementIndex.value = 0;
-  }
-
   return {
     statementIndex,
     currentCourse,
@@ -128,10 +123,10 @@ export const useCourseStore = defineStore("course", () => {
     isAllDone,
     checkCorrect,
     completeCourse,
-    toNextStatement,
     cleanProgress,
-    resetStatementIndex,
     toSpecificStatement,
     toPreviousStatement,
+    toNextStatement,
+    resetStatementIndex,
   };
 });

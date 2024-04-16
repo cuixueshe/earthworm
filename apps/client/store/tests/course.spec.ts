@@ -1,23 +1,19 @@
-import { setActivePinia, createPinia } from "pinia";
-import { describe, it, expect, beforeEach, vi } from "vitest";
-import { useCourseStore } from "../course";
-import { fetchCourse, fetchCompleteCourse, fetchTryCourse } from "~/api/course";
-import { type Course } from "../course";
+import { createPinia, setActivePinia } from "pinia";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { useCourseStore, type Course } from "../course";
 import { useUserStore } from "../user";
+import { isAuthenticated } from "~/services/auth";
 
 vi.mock("~/api/course");
+vi.mock("~/services/auth");
 
 const firstCourse: Course = {
   id: 1,
   title: "第一课",
   statements: [
     { id: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
-    {
-      id: 2,
-      chinese: "喜欢",
-      english: "like",
-      soundmark: "/laɪk/",
-    },
+    { id: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
   ],
 };
 
@@ -26,6 +22,7 @@ const secondCourse: Course = {
   title: "第二课",
   statements: [
     { id: 1, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
+    { id: 2, english: "the food", chinese: "这个食物", soundmark: "/ðiˈfɔːd/" },
   ],
 };
 
@@ -33,7 +30,12 @@ vi.mocked(fetchCourse).mockImplementation(async (courseId) => {
   if (courseId === 2) return secondCourse;
   return firstCourse;
 });
-vi.mocked(fetchCompleteCourse).mockImplementation(async () => firstCourse);
+
+vi.mocked(fetchCompleteCourse).mockImplementation(async () => {
+  return {
+    nextCourse: firstCourse,
+  };
+});
 
 describe("course", () => {
   beforeEach(() => {
@@ -44,14 +46,13 @@ describe("course", () => {
     const userStore = useUserStore();
     userStore.initUser({
       userId: "1",
-      username: "cxr",
-      phone: "18518518521",
-    });
+    } as any);
+
+    vi.mocked(isAuthenticated).mockReturnValue(true);
   });
 
   it("should be fetch try course when user is a tourist", async () => {
-    const userStore = useUserStore();
-    userStore.logoutUser();
+    vi.mocked(isAuthenticated).mockReturnValue(false);
 
     const store = useCourseStore();
     await store.setup(1);

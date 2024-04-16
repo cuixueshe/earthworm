@@ -1,46 +1,24 @@
 <template>
-  <div class="relative flex items-center justify-center my-8">
-    <div class="z-10 flex items-center justify-center">
-      <div>
-        <button
-          class="btn btn-ghost"
-          @click="playSound"
-        >
-          <div class="flex items-center justify-center gap-2 text-center">
-            <div
-              v-for="key in parseShortcutKeys(shortcutKeys.sound)"
-              class="kbd"
-            >
-              {{ key }}
-            </div>
+  <div class="relative h-32 flex items-center justify-center">
+    <div class="min-[780px]:flex hidden items-center justify-center z-10">
+      <button
+        v-for="keybinding in keybindings"
+        @click="keybinding.eventFn"
+        class="btn btn-ghost"
+      >
+        <div class="flex items-center justify-center gap-2 text-center">
+          <div
+            v-for="keyStr in parseShortcutKeys(keybinding.keys)"
+            class="kbd"
+          >
+            {{ keyStr }}
           </div>
-          <span>播放发音</span>
-        </button>
-      </div>
-      <div>
-        <button
-          class="btn btn-ghost"
-          @click="toggleGameMode"
-        >
-          <div class="flex items-center justify-center gap-2 text-center">
-            <div
-              v-for="key in parseShortcutKeys(shortcutKeys.answer)"
-              class="kbd"
-            >
-              {{ key }}
-            </div>
-          </div>
-          <span>{{ toggleTipText }}</span>
-        </button>
-      </div>
-      <div>
-        <button class="btn btn-ghost">
-          <span class="kbd">Space</span>
-          <span>{{ spaceTipText }} </span>
-        </button>
-      </div>
+        </div>
+        <span>{{ keybinding.text }}</span>
+      </button>
     </div>
-    <PrevAndNextBtn />
+
+    <MainPrevAndNextBtn />
   </div>
 </template>
 
@@ -56,13 +34,12 @@ import {
   parseShortcutKeys,
   registerShortcut,
 } from "~/utils/keyboardShortcuts";
-import PrevAndNextBtn from "./PrevAndNextBtn.vue";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
 const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 
-const toggleTipText = computed(() => {
+const answerTipText = computed(() => {
   let text = "";
   const { isAnswer } = useGameMode();
   const { isAnswerTip } = useAnswerTip();
@@ -85,6 +62,26 @@ const spaceTipText = computed(() => {
   } else {
     return "修复错误单词";
   }
+});
+
+const keybindings = computed(() => {
+  return [
+    {
+      keys: shortcutKeys.value.sound,
+      text: "播放发音",
+      eventFn: playSound,
+    },
+    {
+      keys: shortcutKeys.value.answer,
+      text: answerTipText.value,
+      eventFn: toggleGameMode,
+    },
+    {
+      keys: "Space",
+      text: spaceTipText.value,
+      eventFn: null,
+    },
+  ];
 });
 
 function usePlaySound(key: string) {

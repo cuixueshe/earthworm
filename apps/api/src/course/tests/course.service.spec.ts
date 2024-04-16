@@ -6,12 +6,7 @@ import {
 } from '../../../test/fixture/course';
 import { createStatement } from '../../../test/fixture/statement';
 import { createUser } from '../../../test/fixture/user';
-import {
-  cleanDB,
-  startDB,
-  testImportModules,
-} from '../../../test/helper/utils';
-import { endDB } from '../../common/db';
+import { cleanDB, testImportModules } from '../../../test/helper/utils';
 import { CourseHistoryService } from '../../course-history/course-history.service';
 import { DB, type DbType } from '../../global/providers/db.provider';
 import { RankService } from '../../rank/rank.service';
@@ -42,11 +37,6 @@ describe('course service', () => {
 
   afterAll(async () => {
     await cleanDB(db);
-    await endDB();
-  });
-
-  beforeEach(async () => {
-    await startDB(db);
   });
 
   afterEach(async () => {
@@ -108,10 +98,7 @@ describe('course service', () => {
       user.userId,
       secondCourse.id,
     );
-    expect(rankService.userFinishCourse).toHaveBeenCalledWith(
-      user.userId,
-      user.username,
-    );
+    expect(rankService.userFinishCourse).toHaveBeenCalledWith(user.userId);
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,
       firstCourse.id,

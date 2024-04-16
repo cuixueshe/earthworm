@@ -1,20 +1,26 @@
 import { db } from "@earthworm/db";
-import { course as courseSchema, statement as statementSchema } from "@earthworm/schema";
+import {
+  course as courseSchema,
+  statement as statementSchema,
+} from "@earthworm/schema";
 import fs from "fs";
 import path from "path";
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 
 (async function () {
-  await db.delete(statementSchema)
+  await db.delete(statementSchema);
   await db.delete(courseSchema);
 
   for (const [index, course] of courses.entries()) {
-    const [response] = await db.insert(courseSchema).values({
-      id: index + 1,
-      title: convertToChineseNumber(path.parse(course).name),
-    });
+    const [response] = await db
+      .insert(courseSchema)
+      .values({
+        id: index + 1,
+        title: convertToChineseNumber(path.parse(course).name),
+      })
+      .returning({ id: courseSchema.id, title: courseSchema.title });
 
-    console.log("创建:", course);
+    console.log(`创建: id-${response.id} title-${response.title}`);
   }
 
   console.log("全部创建完成");

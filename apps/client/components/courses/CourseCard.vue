@@ -7,26 +7,20 @@
       'current-card': isActiveCourse,
     }"
   >
-    <h3 class="text-base font-bold dark:text-gray-100">{{ title }}</h3>
-    <p
-      class="text-sm mt-4 truncate"
-      :class="
-        isActiveCourse
-          ? 'text-[rgba(255,255,255,0.8)]'
-          : 'text-[rgba(136,136,136,1)]'
-      "
-    >
-      this is the course's description
+    <h3 class="text-base font-bold">
+      {{ title }}
+    </h3>
+    <p class="mt-4 text-sm truncate text-gray-500 dark:text-gray-400">
+      {{ title }}的描述……（等你来写）
     </p>
-
     <div
       v-if="hasFinished"
       class="tooltip count"
+      :data-tip="dataTip"
       :class="{
         'state-finished-count': hasFinished,
         'current-count': isActiveCourse,
       }"
-      :data-tip="dataTip"
     >
       {{ count }}
     </div>
@@ -47,9 +41,7 @@ const { activeCourseId } = useActiveCourseId();
 const activeCourseRef = ref<HTMLDivElement>();
 const hasFinished = computed(() => !!props.count);
 const isActiveCourse = computed(() => activeCourseId.value == props.id);
-const dataTip = computed(
-  () => `Congratulations! you've completed the course ${props.count} times.`
-);
+const dataTip = computed(() => `恭喜您，当前课程已完成 ${props.count} 次 🎉`);
 
 onMounted(() => {
   activeCourseRef.value?.scrollIntoView({
@@ -61,34 +53,27 @@ onMounted(() => {
 
 <style scoped>
 .course-card {
-  @apply flex flex-col w-[360px] h-[160px] sm:w-[500px] md:w-[340px] lg:w-[280px] xl:w-[260px] p-4 pb-6 border border-[rgba(164,175,191,1)] hover:shadow-lg hover:shadow-[rgba(164,175,191,0.5)] hover:border-[rgba(164,175,191,1)] rounded-xl transition-all duration-500 relative;
+  @apply w-full h-[160px] p-4 pb-6 border border-gray-400 rounded-xl transition-all duration-300 relative dark:text-gray-100;
+  @apply hover:shadow-lg hover:text-purple-500 hover:dark:text-purple-400 hover:shadow-gray-300 dark:hover:shadow-gray-500;
 }
 
 .count {
-  @apply absolute bottom-1.5 right-2 text-xs w-7 h-5 leading-5 text-center text-white bg-[rgba(164,175,191,1)] rounded-md;
-}
-
-.state-underway {
-  @apply border-[rgba(242,100,25,1)] hover:shadow-[rgba(242,100,25,0.5)] hover:border-[rgba(242,100,25,1)];
-}
-
-.state-underway-count {
-  @apply bg-[rgba(242,100,25,1)];
+  @apply absolute bottom-1.5 right-2 text-xs w-7 h-5 leading-5 text-center text-white rounded-md;
 }
 
 .state-finished {
-  @apply border-[rgba(151,71,255,1)] hover:shadow-[rgba(151,71,255,0.5)] hover:border-[rgba(151,71,255,1)];
+  @apply border-2 border-emerald-500 hover:text-emerald-500 hover:dark:text-emerald-300 hover:shadow-emerald-200 dark:hover:shadow-emerald-700;
 }
 
 .state-finished-count {
-  @apply bg-[rgba(151,71,255,1)];
+  @apply bg-emerald-600;
 }
 
 .current-card {
-  @apply bg-[rgba(242,100,25,1)] border-[rgba(242,100,25,1)] text-white hover:shadow-[rgba(242,100,25,0.5)] hover:border-[rgba(242,100,25,1)];
+  @apply border-2 border-purple-500 hover:text-purple-500 hover:dark:text-purple-300 hover:shadow-purple-200 dark:hover:shadow-purple-700;
 }
 
 .current-count {
-  @apply bg-white text-[rgba(242,100,25,1)];
+  @apply bg-purple-600;
 }
 </style>

@@ -21,7 +21,7 @@
                 <img
                   :src="item.avatar"
                   alt=""
-                  class="h-14 w-14 rounded-full object-cover border-2 border-purple-400 p-1"
+                  class="w-12 h-12 lg:w-14 lg:h-14 rounded-full object-cover border-2 border-purple-400 p-1"
                 />
                 <div class="flex-grow">
                   <p class="mt-0.5 text-lg font-bold dark:text-white">
@@ -37,7 +37,7 @@
                   class="self-start"
                 />
               </div>
-              <p class="mt-4 text-gray-700 dark:text-gray-300">
+              <p class="mt-4 text-gray-700 dark:text-gray-300 text-sm lg:text-base">
                 {{ item.chinese }}
               </p>
               <div class="flex items-center justify-between my-2">

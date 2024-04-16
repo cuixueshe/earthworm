@@ -102,7 +102,7 @@ export const tpl_2 = ({
                   {
                     type: "img",
                     props: {
-                      tw: "w-12 h-12 p-0 m-0",
+                      tw: "w-12 h-13 p-0 m-0 flex-shirk-0",
                       src: "/qrcode.png",
                     },
                   },

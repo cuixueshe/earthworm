@@ -5,36 +5,55 @@ import {
   SetMetadata,
   UnauthorizedException,
 } from '@nestjs/common';
-import { JwtService } from '@nestjs/jwt';
 import { Request } from 'express';
+import { createRemoteJWKSet, jwtVerify } from 'jose';
 
 export const UncheckAuth = () => SetMetadata('uncheck', true);
 
 @Injectable()
 export class AuthGuard implements CanActivate {
-  constructor(private jwtService: JwtService) {}
+  private jwks: any;
+  constructor() {
+    this.jwks = createRemoteJWKSet(
+      new URL('/oidc/jwks', process.env.LOGTO_ENDPOINT),
+    );
+  }
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
     const token = this.extractTokenFromHeader(request);
     const uncheck = Reflect.getMetadata('uncheck', context.getHandler());
+
     if (!token && uncheck) {
       request['user'] = null;
     } else if (!token) {
       throw new UnauthorizedException();
     }
-    // get metadata
     try {
-      const payload = await this.jwtService.verifyAsync(token, {
-        secret: process.env.SECRET,
-      });
-      request['user'] = payload;
-    } catch {
+      const payload = await this.jwtVerify(token);
+      request['userId'] = payload.sub;
+    } catch (e) {
       if (!uncheck) {
         throw new UnauthorizedException();
       }
     }
     return true;
+  }
+
+  private async jwtVerify(token) {
+    const { payload } = await jwtVerify(
+      // The raw Bearer Token extracted from the request header
+      token,
+      this.jwks,
+      {
+        // Expected issuer of the token, issued by the Logto server
+        issuer: new URL('oidc', process.env.LOGTO_ENDPOINT).href,
+        // Expected audience token, the resource indicator of the current API
+        audience: process.env.BACKEND_ENDPOINT,
+      },
+    );
+
+    return payload;
   }
 
   private extractTokenFromHeader(request: Request): string | undefined {

@@ -1,11 +1,11 @@
 <template>
   <header
-    :class="[headerClasses]"
-    class="top-0 bg-opacity-50 backdrop-blur-xl z-40 font-customFont w-[100vw] lg:px-24 xl:px-2 px-7"
+    :class="isStickyNavBar"
+    class="w-full top-0 bg-opacity-50 backdrop-blur-xl font-customFont z-40"
   >
-    <div class="mx-auto max-w-screen-xl mt-2">
+    <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
-        <div class="left flex w-full items-center justify-between">
+        <div class="flex flex-1 items-center justify-between">
           <NuxtLink to="/">
             <div class="logo flex items-center">
               <img
@@ -28,7 +28,7 @@
             aria-label="Global"
             class="hidden md:block"
           >
-            <ul class="flex items-center text-md">
+            <ul class="flex items-center text-base">
               <template
                 v-for="(optItem, optIndex) in HEADER_OPTIONS"
                 :key="optIndex"
@@ -46,7 +46,30 @@
           </nav>
         </div>
 
-        <div class="login-out flex items-center">
+        <div class="flex items-center">
+          <!-- 显示用户信息 -->
+          <div
+            v-if="isAuthenticated()"
+            class="logged-in flex items-center"
+          >
+            <div
+              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
+            >
+              {{ userStore.userNameGetter }}
+            </div>
+            <DropMenu @update-show-modal="handleLogout" />
+          </div>
+
+          <!-- 登录/注册 -->
+          <button
+            v-else
+            @click="signIn()"
+            aria-label="Login"
+            class="btn btn-sm btn-ghost text-base font-normal dark:text-white rounded-md mx-1 h-8 px-4"
+          >
+            <span class="relative">登录</span>
+          </button>
+
           <!-- 切换主题 -->
           <button
             class="btn btn-sm btn-ghost rounded-md mx-1 w-8 h-8 p-0"
@@ -80,108 +103,47 @@
               />
             </svg>
           </button>
-
-          <!-- 显示用户信息 -->
-          <div
-            v-if="userStore.user"
-            class="logged-in flex items-center"
-          >
-            <div
-              class="mx-2 font-500 truncate min-[500px]:max-w-[6em] max-w-[4em]"
-            >
-              {{ userStore.user.username }}
-            </div>
-            <DropMenu @updateShowModal="handleLogout" />
-          </div>
-
-          <!-- 登录/注册 -->
-          <div
-            v-else
-            class="flex items-center ml-5"
-          >
-            <button
-              v-show="
-                (!userStore.user && route.name !== 'Auth-Login') ||
-                route.name === 'Auth-Login'
-              "
-              @click="
-                route.name === 'Auth-Login' ? handleSignup() : handleLogin()
-              "
-              aria-label="route.name === 'Auth-Login' ? 'Register' : 'Login'"
-              class="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 hover:bg-purple-600 focus:ring-purple-700 bg-purple-500"
-            >
-              {{ route.name === "Auth-Login" ? "Register" : "Login" }}
-            </button>
-          </div>
         </div>
       </div>
     </div>
   </header>
-  <MessageBox
+  <MainMessageBox
     v-model:isShowModal="isShowModal"
-    title="Notice"
-    content="Are you sure to exit?"
-    @confirm="handleLogoutConfirm"
+    title="提示"
+    content="是否确认退出登录？"
+    @confirm="signOut()"
   />
 </template>
 
 <script setup lang="ts">
-import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
-import Message from "~/components/main/Message/useMessage";
 import { Theme, useDarkMode } from "~/composables/darkMode";
+import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
-import { cleanToken } from "~/utils/token";
-import DropMenu from "./DropMenu.vue";
-import MessageBox from "./main/MessageBox/MessageBox.vue";
 
 const route = useRoute();
 const userStore = useUserStore();
-const { toggleDarkMode, darkMode } = useDarkMode();
+const { darkMode, toggleDarkMode } = useDarkMode();
 
+const isShowModal = ref(false);
 const HEADER_OPTIONS = [
   { name: "主页", anchor: "home" },
-  // { name: "What", anchor: "what" },
   { name: "功能", anchor: "features" },
-  // { name: "Pricing", anchor: "pricing" },
   { name: "问题", anchor: "faq" },
   { name: "联系我们", anchor: "contact" },
 ];
-const isShowModal = ref(false);
+
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-const headerClasses = computed(() => {
-  const isHomePage = route.path === "/";
-
-  return {
-    sticky: isHomePage,
-  };
+const isStickyNavBar = computed(() => {
+  // 首页/用户信息页
+  if (["index", "User-Info"].includes(route.name as string)) {
+    return "sticky";
+  }
+  return "";
 });
-
-const handleLogin = () => {
-  navigateTo("/auth/login");
-};
-
-const handleSignup = () => {
-  navigateTo("/auth/signup");
-};
 
 const handleLogout = () => {
   isShowModal.value = true;
-};
-
-const handleLogoutConfirm = () => {
-  userStore.logoutUser();
-  cleanToken();
-  try {
-    Message.success("You've been logged out successfully!", {
-      duration: 2000,
-      onLeave() {
-        navigateTo("/");
-      },
-    });
-  } catch (error) {
-    Message.error("logout error!");
-  }
 };
 </script>
