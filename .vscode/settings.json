@@ -1,7 +1,7 @@
 {
   "prettier.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   // fixed `Unknown at rule @apply` warning
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.unknownAtRules": "ignore"
