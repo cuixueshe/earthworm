@@ -14,7 +14,12 @@
 import { definePageMeta } from "#imports";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
+import { useMusicChapter } from "~/composables/courses/music";
 import { useGameMode } from "~/composables/main/game";
+import {
+  GameMode,
+  useGameMode as useGameModeInUser,
+} from "~/composables/user/gameMode";
 import { useCourseStore } from "~/store/course";
 
 definePageMeta({
@@ -25,11 +30,22 @@ const isLoading = ref(true);
 const route = useRoute();
 const coursesStore = useCourseStore();
 const { showQuestion } = useGameMode();
+const { currentGameMode } = useGameModeInUser();
+const { currentMusic, currentMusicCourse } = useMusicChapter();
 
 showQuestion();
 
-onMounted(async () => {
-  await coursesStore.setup(Number(route.params.id));
+async function getCourse() {
+  if (currentGameMode.value === GameMode.Music && currentMusicCourse.value) {
+    coursesStore.setupMusic(currentMusicCourse.value);
+  } else {
+    await coursesStore.setup(Number(route.params.id));
+  }
+
   isLoading.value = false;
+}
+
+onMounted(async () => {
+  await getCourse();
 });
 </script>

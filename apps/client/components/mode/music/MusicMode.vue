@@ -5,7 +5,7 @@
       class="flex flex-col justify-center items-center relative z-10"
     >
       <blockquote
-        class="text-2xl font-semibold italic text-center text-slate-900 dark:text-white pb-10"
+        class="text-xl font-semibold italic text-center text-slate-900 dark:text-white pb-10"
       >
         全新体验，
         <span
@@ -14,6 +14,11 @@
           <span class="relative text-white">音乐模式</span>
         </span>
         ，快来挑战
+      </blockquote>
+      <blockquote
+        class="text-2xl font-semibold italic text-center text-slate-900 dark:text-white pb-10"
+      >
+        《{{ currentMusicCourse?.title }}》
       </blockquote>
 
       <PlayerSvg
@@ -41,26 +46,26 @@
       <ModeMusicPhonograph></ModeMusicPhonograph>
     </div>
   </div>
-  <MainTips></MainTips>
+  <ModeMusicTips></ModeMusicTips>
 </template>
 
 <script setup lang="ts">
 // import "plyr/dist/plyr.css";
 import { onMounted, ref } from "vue";
-import musicSrc from "~/assets/music/demo.mp3";
+import { useMusicChapter } from "~/composables/courses/music";
 import { useGameMode } from "~/composables/main/game";
 import { useMusicMode } from "~/composables/main/music";
 import PlayerSvg from "./PlayerSvg.vue";
 
 const { isQuestion } = useGameMode();
-
 const showAudio = ref(false);
 const playerElement = ref<HTMLAudioElement>();
 const { setupMusicAudio, playMusic } = useMusicMode();
 const { isStart, handleStartPlay } = useStartGame();
+const { currentMusic, currentMusicCourse } = useMusicChapter();
 
 onMounted(() => {
-  setupMusicAudio(playerElement.value!, musicSrc);
+  setupMusicAudio(playerElement.value!, currentMusic.value);
 });
 
 function useStartGame() {

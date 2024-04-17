@@ -22,6 +22,20 @@
             </td>
           </tr>
         </tbody>
+        <tbody v-if="currentGameMode === GameMode.Music">
+          <tr class="hover">
+            <td class="label-text">{{ currentMusicCourse?.title }}</td>
+            <td class="w-[300px] text-center">
+              <div class="mr-12 join">
+                <NuxtLink to="/music">
+                  <button class="btn btn-sm btn-outline btn-secondary">
+                    选择音乐曲目
+                  </button>
+                </NuxtLink>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </section>
 
@@ -214,6 +228,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import { useMusicChapter } from "~/composables/courses/music";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
@@ -258,6 +273,7 @@ const {
 } = useShortcutKeyMode();
 
 const { getGameModeOptions, currentGameMode, toggleGameMode } = useGameMode();
+const { currentMusicCourse } = useMusicChapter();
 
 const shortcutKeyBindList = [
   {

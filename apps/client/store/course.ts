@@ -1,16 +1,18 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
-import { fetchCompleteCourse } from "~/api/course";
-import lyric from "~/assets/music/demo.json";
+import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+// import lyric from "~/assets/music/demo.json";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
+import { isAuthenticated } from "~/services/auth";
 
 interface Statement {
   id: number;
   chinese: string;
   english: string;
   soundmark?: string;
-  [k: string]: any;
+  startTime?: string;
+  endTime?: string;
 }
 
 export interface Course {
@@ -18,7 +20,6 @@ export interface Course {
   title: string;
   statements: Statement[];
   count?: number;
-  [k: string]: any;
 }
 
 export const useCourseStore = defineStore("course", () => {
@@ -95,21 +96,20 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(courseId: number) {
     if (courseId === currentCourse.value?.id) return;
 
-    // if (!isAuthenticated()) {
-    //   let course = await fetchTryCourse();
-    //   currentCourse.value = course;
-    // } else {
-    //   let course = await fetchCourse(courseId);
-    //   currentCourse.value = course;
-    // }
-
-    currentCourse.value = {
-      id: 1,
-      title: "音乐模式测试课程",
-      statements: lyric,
-    };
+    if (!isAuthenticated()) {
+      let course = await fetchTryCourse();
+      currentCourse.value = course;
+    } else {
+      let course = await fetchCourse(courseId);
+      currentCourse.value = course;
+    }
 
     statementIndex.value = loadProgress(courseId);
+  }
+
+  function setupMusic(course: Course) {
+    currentCourse.value = course;
+    resetStatementIndex();
   }
 
   return {
@@ -128,5 +128,7 @@ export const useCourseStore = defineStore("course", () => {
     toPreviousStatement,
     toNextStatement,
     resetStatementIndex,
+
+    setupMusic,
   };
 });

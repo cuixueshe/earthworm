@@ -1,0 +1,387 @@
+[
+  {
+    "id": 1,
+    "startTime": "00:07.439",
+    "chinese": "空寂的街道",
+    "english": "An empty street",
+    "endTime": "00:09.929"
+  },
+  {
+    "id": 2,
+    "startTime": "00:09.929",
+    "chinese": "空寂的房间",
+    "english": "An empty house",
+    "endTime": "00:11.699"
+  },
+  {
+    "id": 3,
+    "startTime": "00:11.699",
+    "chinese": "空寂的思念深藏在我的心中",
+    "english": "A hole inside my heart",
+    "endTime": "00:14.610"
+  },
+  {
+    "id": 4,
+    "startTime": "00:14.610",
+    "chinese": "我孤身一人",
+    "english": "I'm all alone",
+    "endTime": "00:16.299"
+  },
+  {
+    "id": 5,
+    "startTime": "00:16.299",
+    "chinese": "无尽的孤寂压迫着我",
+    "english": "The rooms are getting smaller",
+    "endTime": "00:20.220"
+  },
+  {
+    "id": 6,
+    "startTime": "00:20.220",
+    "chinese": "我想知道怎样",
+    "english": "I wonder how",
+    "endTime": "00:22.990"
+  },
+  {
+    "id": 7,
+    "startTime": "00:22.990",
+    "chinese": "我想知道为何",
+    "english": "I wonder why",
+    "endTime": "00:24.990"
+  },
+  {
+    "id": 8,
+    "startTime": "00:24.990",
+    "chinese": "我想知道他们的归宿",
+    "english": "I wonder where they are",
+    "endTime": "00:28.300"
+  },
+  {
+    "id": 9,
+    "startTime": "00:28.300",
+    "chinese": "我们在一起的时光",
+    "english": "The days we had",
+    "endTime": "00:29.779"
+  },
+  {
+    "id": 10,
+    "startTime": "00:29.779",
+    "chinese": "那些我们共同吟唱的歌曲",
+    "english": "The songs we sang together",
+    "endTime": "00:32.810"
+  },
+  {
+    "id": 11,
+    "startTime": "00:32.810",
+    "chinese": "oh,是的",
+    "english": "Oh yeah",
+    "endTime": "00:34.770"
+  },
+  {
+    "id": 12,
+    "startTime": "00:34.770",
+    "chinese": "还有你,我的爱人",
+    "english": "And oh my love",
+    "endTime": "00:38.200"
+  },
+  {
+    "id": 13,
+    "startTime": "00:38.200",
+    "chinese": "我会始终坚持着",
+    "english": "I'm holding on forever",
+    "endTime": "00:41.650"
+  },
+  {
+    "id": 14,
+    "startTime": "00:41.650",
+    "chinese": "去得到那一份遥不可及的爱",
+    "english": "Reaching for a love that seems so far",
+    "endTime": "00:47.000"
+  },
+  {
+    "id": 15,
+    "startTime": "00:47.000",
+    "chinese": "因此我低声祈祷",
+    "english": "So I say a little prayer",
+    "endTime": "00:50.580"
+  },
+  {
+    "id": 16,
+    "startTime": "00:50.580",
+    "chinese": "并希望我的梦能带我到那儿",
+    "english": "And hope my dreams will take me there",
+    "endTime": "00:54.150"
+  },
+  {
+    "id": 17,
+    "startTime": "00:54.150",
+    "chinese": "那有湛蓝的天空还能再一次与你相见,我的爱人",
+    "english": "Where the skies are blue to see you once again, my love",
+    "endTime": "01:00.860"
+  },
+  {
+    "id": 18,
+    "startTime": "01:00.860",
+    "chinese": "飘过大海,翻山越岭",
+    "english": "Overseas from coast to coast",
+    "endTime": "01:03.900"
+  },
+  {
+    "id": 19,
+    "startTime": "01:03.900",
+    "chinese": "去找寻一个我最爱的地方",
+    "english": "To find a place I love the most",
+    "endTime": "01:07.410"
+  },
+  {
+    "id": 20,
+    "startTime": "01:07.410",
+    "chinese": "那有翠绿的草原,还能再一次与你相见,我的爱人",
+    "english": "Where the fields are green to see you once again, my love",
+    "endTime": "01:17.759"
+  },
+  {
+    "id": 21,
+    "startTime": "01:17.759",
+    "chinese": "我尝试阅读",
+    "english": "I try to read",
+    "endTime": "01:19.830"
+  },
+  {
+    "id": 22,
+    "startTime": "01:19.830",
+    "chinese": "我尽力工作",
+    "english": "I go to work",
+    "endTime": "01:21.470"
+  },
+  {
+    "id": 23,
+    "startTime": "01:21.470",
+    "chinese": "我和我的朋友嬉戏打闹",
+    "english": "I'm laughing with my friends",
+    "endTime": "01:24.720"
+  },
+  {
+    "id": 24,
+    "startTime": "01:24.720",
+    "chinese": "但这一切不能阻止我的遐想",
+    "english": "But I can't stop to keep myself from thinking",
+    "endTime": "01:29.550"
+  },
+  {
+    "id": 25,
+    "startTime": "01:29.550",
+    "chinese": "哦,不,我想知道怎样",
+    "english": "Oh no I wonder how",
+    "endTime": "01:33.320"
+  },
+  {
+    "id": 26,
+    "startTime": "01:33.320",
+    "chinese": "我想知道为何.",
+    "english": "I wonder why",
+    "endTime": "01:34.920"
+  },
+  {
+    "id": 27,
+    "startTime": "01:34.920",
+    "chinese": "我想知道他们的归属",
+    "english": "I wonder where they are",
+    "endTime": "01:37.890"
+  },
+  {
+    "id": 28,
+    "startTime": "01:37.890",
+    "chinese": "我们在一起的时光",
+    "english": "The days we had",
+    "endTime": "01:39.900"
+  },
+  {
+    "id": 29,
+    "startTime": "01:39.900",
+    "chinese": "那些我们共同吟唱的歌曲",
+    "english": "The songs we sang together",
+    "endTime": "01:42.700"
+  },
+  {
+    "id": 30,
+    "startTime": "01:42.700",
+    "chinese": "哦, 还有你,我的爱人",
+    "english": "Oh yeah And oh my love",
+    "endTime": "01:47.979"
+  },
+  {
+    "id": 31,
+    "startTime": "01:47.979",
+    "chinese": "我会始终坚持着",
+    "english": "I'm holding on forever",
+    "endTime": "01:51.180"
+  },
+  {
+    "id": 32,
+    "startTime": "01:51.180",
+    "chinese": "去得到那一份遥不可及的爱",
+    "english": "Reaching for a love that seems so far",
+    "endTime": "01:57.300"
+  },
+  {
+    "id": 33,
+    "startTime": "01:57.300",
+    "chinese": "因此我低声祈祷",
+    "english": "So I say a little prayer",
+    "endTime": "02:00.450"
+  },
+  {
+    "id": 34,
+    "startTime": "02:00.450",
+    "chinese": "并希望我的梦能带我到那儿",
+    "english": "And hope my dreams will take me there",
+    "endTime": "02:04.000"
+  },
+  {
+    "id": 35,
+    "startTime": "02:04.000",
+    "chinese": "那有湛蓝的天空 在那里能再一次与你相见,我的爱人",
+    "english": "Where the skies are blue to see you once again my love",
+    "endTime": "02:10.550"
+  },
+  {
+    "id": 36,
+    "startTime": "02:10.550",
+    "chinese": "飘过大海,翻山越岭",
+    "english": "Over seas from coast to coast",
+    "endTime": "02:13.999"
+  },
+  {
+    "id": 37,
+    "startTime": "02:13.999",
+    "chinese": "去找寻一个我最爱的地方",
+    "english": "To find a place I love the most",
+    "endTime": "02:17.340"
+  },
+  {
+    "id": 38,
+    "startTime": "02:17.340",
+    "chinese": "那有翠绿的草原还能再一次与你相见",
+    "english": "Where the fields are green to see you once again",
+    "endTime": "02:23.199"
+  },
+  {
+    "id": 39,
+    "startTime": "02:23.199",
+    "chinese": "将你拥入怀中",
+    "english": "To hold you in my arms",
+    "endTime": "02:26.380"
+  },
+  {
+    "id": 40,
+    "startTime": "02:26.380",
+    "chinese": "向你许下诺言",
+    "english": "To promise you my love",
+    "endTime": "02:29.420"
+  },
+  {
+    "id": 41,
+    "startTime": "02:29.420",
+    "chinese": "发自内心的告诉你",
+    "english": "To tell you from my heart",
+    "endTime": "02:32.820"
+  },
+  {
+    "id": 42,
+    "startTime": "02:32.820",
+    "chinese": "你是我所有的想念",
+    "english": "You're all I'm thinking of",
+    "endTime": "02:44.559"
+  },
+  {
+    "id": 43,
+    "startTime": "02:44.559",
+    "chinese": "我仍然在找回那遥不可及的爱",
+    "english": "I'm reaching for a love that seems so far",
+    "endTime": "02:50.100"
+  },
+  {
+    "id": 44,
+    "startTime": "02:50.100",
+    "chinese": "因此我低声祈祷",
+    "english": "So I say a little prayer",
+    "endTime": "02:53.990"
+  },
+  {
+    "id": 45,
+    "startTime": "02:53.990",
+    "chinese": "希望梦能把我带到彼岸",
+    "english": "And hope my dreams will take me there",
+    "endTime": "02:57.190"
+  },
+  {
+    "id": 46,
+    "startTime": "02:57.190",
+    "chinese": "那有湛蓝的天空还能再次与你相见,我的爱人",
+    "english": "Where the skies are blue to see you once again",
+    "endTime": "03:04.300"
+  },
+  {
+    "id": 47,
+    "startTime": "03:04.300",
+    "chinese": "飘过大海,翻山越岭",
+    "english": "Over seas from coast to coast",
+    "endTime": "03:07.320"
+  },
+  {
+    "id": 48,
+    "startTime": "03:07.320",
+    "chinese": "去寻找我最喜爱的一个地方",
+    "english": "To find a place I love the most",
+    "endTime": "03:10.880"
+  },
+  {
+    "id": 49,
+    "startTime": "03:10.880",
+    "chinese": "那有翠绿的草原还能再次与你相见",
+    "english": "Where the fields are green to see you once again",
+    "endTime": "03:18.299"
+  },
+  {
+    "id": 50,
+    "startTime": "03:18.299",
+    "chinese": "因此我低声祈祷",
+    "english": "say a little prayer",
+    "endTime": "03:21.700"
+  },
+  {
+    "id": 51,
+    "startTime": "03:21.700",
+    "chinese": "希望梦想能把我带到彼岸",
+    "english": "dreams will take me there",
+    "endTime": "03:24.170"
+  },
+  {
+    "id": 52,
+    "startTime": "03:24.170",
+    "chinese": "那有湛蓝的天空还能再次与你相见",
+    "english": "Where the skies are blue to see you once again",
+    "endTime": "03:30.280"
+  },
+  {
+    "id": 53,
+    "startTime": "03:30.280",
+    "chinese": "飘过大海,翻山越岭",
+    "english": "Over seas from coast to coast",
+    "endTime": "03:33.760"
+  },
+  {
+    "id": 54,
+    "startTime": "03:33.760",
+    "chinese": "去寻找我最喜爱的一个地方",
+    "english": "To find a place I love the most",
+    "endTime": "03:37.230"
+  },
+  {
+    "id": 55,
+    "startTime": "03:37.230",
+    "chinese": "那有翠绿的草原还能再次与你相见",
+    "english": "Where the fields are green to see you once again",
+    "endTime": "0"
+  }
+]

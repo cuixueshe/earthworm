@@ -55,7 +55,9 @@ const englishStatement = computed(
     "To be, or not to be, that is the question"
 );
 const statementStartTime = computed(() =>
-  formatTime(courseStore.currentStatement?.startTime)
+  courseStore.currentStatement?.startTime
+    ? formatTime(courseStore.currentStatement?.startTime)
+    : ""
 );
 
 function formatTime(time: string) {

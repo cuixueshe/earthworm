@@ -32,6 +32,7 @@ export function useMusicMode() {
   }
 
   function runTimeUpdate() {
+    if (!courseStore.currentStatement?.endTime) return;
     const endAt = srtTimeToSeconds(courseStore.currentStatement?.endTime);
     // 提高时间更新精度
     let count = 10;
@@ -60,7 +61,8 @@ export function useMusicMode() {
     isPlayed.value = false;
   }
 
-  function playStatement(time: string) {
+  function playStatement(time: string | undefined) {
+    if (!time) return;
     player.currentTime = srtTimeToSeconds(time);
     playMusic();
   }

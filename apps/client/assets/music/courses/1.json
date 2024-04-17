@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "startTime": "00:11.310",
+    "chinese": "一闪一闪小星星",
+    "english": "Twinkle twinkle little star",
+    "endTime": "00:15.400"
+  },
+  {
+    "id": 2,
+    "startTime": "00:15.400",
+    "chinese": "我想知道你是什么",
+    "english": "How I wonder what you are",
+    "endTime": "00:19.730"
+  },
+  {
+    "id": 3,
+    "startTime": "00:19.730",
+    "chinese": "远远高挂在天外",
+    "english": "Up above the world so high",
+    "endTime": "00:24.180"
+  },
+  {
+    "id": 4,
+    "startTime": "00:24.180",
+    "chinese": "犹如钻石缀夜空",
+    "english": "Like a diamond in the sky",
+    "endTime": "00:28.680"
+  },
+  {
+    "id": 5,
+    "startTime": "00:28.680",
+    "chinese": "一闪一闪小星星",
+    "english": "Twinkle twinkle little star",
+    "endTime": "00:33.010"
+  },
+  {
+    "id": 6,
+    "startTime": "00:33.010",
+    "chinese": "我想知道你是什么",
+    "english": "How I wonder what you are",
+    "endTime": "00:42.550"
+  },
+  {
+    "id": 7,
+    "startTime": "00:42.550",
+    "chinese": "一闪一闪小星星",
+    "english": "Twinkle twinkle little star",
+    "endTime": "00:46.650"
+  },
+  {
+    "id": 8,
+    "startTime": "00:46.650",
+    "chinese": "我想知道你是什么",
+    "english": "How I wonder what you are",
+    "endTime": "00:50.830"
+  },
+  {
+    "id": 9,
+    "startTime": "00:50.830",
+    "chinese": "远远高挂在天外",
+    "english": "Up above the world so high",
+    "endTime": "00:55.430"
+  },
+  {
+    "id": 10,
+    "startTime": "00:55.430",
+    "chinese": "犹如钻石缀夜空",
+    "english": "Like a diamond in the sky",
+    "endTime": "01:00.010"
+  },
+  {
+    "id": 11,
+    "startTime": "01:00.010",
+    "chinese": "一闪一闪小星星",
+    "english": "Twinkle twinkle little star",
+    "endTime": "01:04.440"
+  },
+  {
+    "id": 12,
+    "startTime": "01:04.440",
+    "chinese": "我想知道你是什么",
+    "english": "How I wonder what you are",
+    "endTime": "01:22.000"
+  }
+]

@@ -1,289 +1,289 @@
 [
   {
-    "id": 0,
-    "startTime": "00:02.182",
+    "id": 1,
+    "startTime": "00:02.879",
     "chinese": "我还年轻的时候，喜欢听收音机",
     "english": "When I was young I'd listen to the radio",
-    "endTime": "00:08.121"
-  },
-  {
-    "id": 1,
-    "startTime": "00:08.121",
-    "chinese": "等待我最喜欢的歌曲",
-    "english": "Waiting for my favorite songs",
-    "endTime": "00:14.028"
+    "endTime": "00:08.918"
   },
   {
     "id": 2,
-    "startTime": "00:14.028",
-    "chinese": "当他们演奏时，我会随之吟唱",
-    "english": "When they played I'd sing along",
-    "endTime": "00:18.904"
+    "startTime": "00:08.918",
+    "chinese": "等待我最喜欢的歌曲",
+    "english": "Waiting for my favorite songs",
+    "endTime": "00:14.559"
   },
   {
     "id": 3,
-    "startTime": "00:18.904",
+    "startTime": "00:14.559",
+    "chinese": "当他们演奏时，我会随之吟唱",
+    "english": "When they played I'd sing along",
+    "endTime": "00:19.259"
+  },
+  {
+    "id": 4,
+    "startTime": "00:19.259",
     "chinese": "这使我心情欢畅",
     "english": "It made me smile",
     "endTime": "00:23.909"
   },
   {
-    "id": 4,
+    "id": 5,
     "startTime": "00:23.909",
     "chinese": "那些是多么幸福的时光！就在不久以前",
     "english": "Those were such happy times and not so long ago",
     "endTime": "00:32.298"
   },
   {
-    "id": 5,
+    "id": 6,
     "startTime": "00:32.298",
     "chinese": "我想知道它们曾去何处",
     "english": "how I wondered where they'd gone",
     "endTime": "00:37.890"
   },
   {
-    "id": 6,
+    "id": 7,
     "startTime": "00:37.890",
     "chinese": "而今它们再次出现，就像失散的旧友重逢",
     "english": "But they're back again just like a long lost friend",
     "endTime": "00:43.979"
   },
   {
-    "id": 7,
+    "id": 8,
     "startTime": "00:43.979",
     "chinese": "所有的歌曲我都如此的喜爱",
     "english": "all the songs I loved so well",
     "endTime": "00:49.239"
   },
   {
-    "id": 8,
+    "id": 9,
     "startTime": "00:49.239",
-    "chinese": "每一句sha-la-la-la，每一句wo-wo",
+    "chinese": "每一句sha-la-la-la每一句wo-wo",
     "english": "Every shalalala every wo'wo",
     "endTime": "00:55.829"
   },
   {
-    "id": 9,
+    "id": 10,
     "startTime": "00:55.829",
     "chinese": "依旧闪烁",
     "english": "Still shines",
     "endTime": "01:01.679"
   },
   {
-    "id": 10,
+    "id": 11,
     "startTime": "01:01.679",
     "chinese": "每一句shing-a-ling-a-ling",
     "english": "Every shing-a-ling-a-ling",
     "endTime": "01:04.249"
   },
   {
-    "id": 11,
+    "id": 12,
     "startTime": "01:04.249",
     "chinese": "就在他们放声歌唱时",
     "english": "That they're starting to sing",
     "endTime": "01:06.990"
   },
   {
-    "id": 12,
+    "id": 13,
     "startTime": "01:06.990",
     "chinese": "如此美妙",
     "english": "So fine",
     "endTime": "01:13.119"
   },
   {
-    "id": 13,
+    "id": 14,
     "startTime": "01:13.119",
     "chinese": "当他们唱到一个地方",
     "english": "When they get to the part",
     "endTime": "01:15.669"
   },
   {
-    "id": 14,
+    "id": 15,
     "startTime": "01:15.669",
     "chinese": "他令她伤心断肠",
     "english": "Where he's breaking her heart",
     "endTime": "01:19.900"
   },
   {
-    "id": 15,
+    "id": 16,
     "startTime": "01:19.900",
     "chinese": "这真能叫我哭出来",
     "english": "It can really make me cry",
     "endTime": "01:24.200"
   },
   {
-    "id": 16,
+    "id": 17,
     "startTime": "01:24.200",
     "chinese": "正如从前一样",
     "english": "Just like before",
     "endTime": "01:29.289"
   },
   {
-    "id": 17,
+    "id": 18,
     "startTime": "01:29.289",
     "chinese": "仿佛昔日又重来",
     "english": "It's yesterday once more",
     "endTime": "01:38.890"
   },
   {
-    "id": 18,
+    "id": 19,
     "startTime": "01:38.890",
     "chinese": "无比惆怅",
     "english": "shoobie do lang lang",
     "endTime": "01:42.178"
   },
   {
-    "id": 19,
+    "id": 20,
     "startTime": "01:42.178",
     "chinese": "回头看岁月如何消逝",
     "english": "Looking back on how it was in years gone by",
     "endTime": "01:47.828"
   },
   {
-    "id": 20,
+    "id": 21,
     "startTime": "01:47.828",
     "chinese": "这些过去的好时光",
     "english": "And the good times that I had",
     "endTime": "01:54.190"
   },
   {
-    "id": 21,
+    "id": 22,
     "startTime": "01:54.190",
     "chinese": "使今天显得令人哀伤",
     "english": "Makes today seem rather sad",
     "endTime": "01:58.349"
   },
   {
-    "id": 22,
+    "id": 23,
     "startTime": "01:58.349",
     "chinese": "一切都已不再",
     "english": "So much has changed",
     "endTime": "02:07.390"
   },
   {
-    "id": 23,
+    "id": 24,
     "startTime": "02:07.390",
     "chinese": "那时我跟唱着这些爱之歌",
     "english": "It was songs of love that I would sing to then",
     "endTime": "02:11.228"
   },
   {
-    "id": 24,
+    "id": 25,
     "startTime": "02:11.228",
     "chinese": "我会记住每一句歌词",
     "english": "and I'd memorize each word",
     "endTime": "02:16.168"
   },
   {
-    "id": 25,
+    "id": 26,
     "startTime": "02:16.168",
     "chinese": "那些熟悉的旋律，在我听来还是那么好",
     "english": "Those old melodies still sound so good to me",
     "endTime": "02:23.198"
   },
   {
-    "id": 26,
+    "id": 27,
     "startTime": "02:23.198",
     "chinese": "好像他们把岁月融消",
     "english": "As they melt the years away",
     "endTime": "02:29.390"
   },
   {
-    "id": 27,
+    "id": 28,
     "startTime": "02:29.390",
     "chinese": "每一句sha-la-la-la每一句wo-wo仍闪烁",
     "english": "Every shalalala every wo'wo still shines",
     "endTime": "02:39.998"
   },
   {
-    "id": 28,
+    "id": 29,
     "startTime": "02:39.998",
-    "chinese": "每一句shing-a-ling-a-ling",
+    "chinese": "每一句shing-a-ling-a-ling.",
     "english": "Every shing-a-ling-a-ling",
     "endTime": "02:42.327"
   },
   {
-    "id": 29,
+    "id": 30,
     "startTime": "02:42.327",
     "chinese": "就在他们放声歌唱时",
     "english": "That they're starting to sing",
     "endTime": "02:45.648"
   },
   {
-    "id": 30,
+    "id": 31,
     "startTime": "02:45.648",
     "chinese": "如此美妙",
     "english": "So fine",
     "endTime": "02:51.577"
   },
   {
-    "id": 31,
+    "id": 32,
     "startTime": "02:51.577",
     "chinese": "我所有美好的记忆清晰的重现",
     "english": "All my best memories come back clearly to me",
     "endTime": "02:56.868"
   },
   {
-    "id": 32,
+    "id": 33,
     "startTime": "02:56.868",
     "chinese": "有一些仍能使我哭出来",
     "english": "Some can even make me cry",
     "endTime": "03:01.879"
   },
   {
-    "id": 33,
+    "id": 34,
     "startTime": "03:01.879",
     "chinese": "正如从前一样",
     "english": "Just like before",
     "endTime": "03:07.698"
   },
   {
-    "id": 34,
+    "id": 35,
     "startTime": "03:07.698",
     "chinese": "这是昨日再现",
     "english": "It's yesterday once more",
     "endTime": "03:10.659"
   },
   {
-    "id": 35,
+    "id": 36,
     "startTime": "03:10.659",
     "chinese": "无比惆怅",
     "english": "shoobie do lang lang",
     "endTime": "03:14.898"
   },
   {
-    "id": 36,
+    "id": 37,
     "startTime": "03:14.898",
     "chinese": "每一句sha-la-la-la每一句wo-wo仍闪烁",
     "english": "Every shalalala every wo'wo still shines",
     "endTime": "03:26.238"
   },
   {
-    "id": 37,
+    "id": 38,
     "startTime": "03:26.238",
     "chinese": "每一句shing-a-ling-a-ling",
     "english": "Every shing-a-ling-a-ling",
     "endTime": "03:29.398"
   },
   {
-    "id": 38,
+    "id": 39,
     "startTime": "03:29.398",
     "chinese": "就在他们放声歌唱时",
     "english": "That they're starting to sing",
     "endTime": "03:31.668"
   },
   {
-    "id": 39,
+    "id": 40,
     "startTime": "03:31.668",
     "chinese": "如此美妙",
     "english": "So fine",
     "endTime": "03:36.898"
   },
   {
-    "id": 40,
+    "id": 41,
     "startTime": "03:36.898",
     "chinese": "每一句sha-la-la-la每一句wo-wo仍闪烁",
-    "english": "Every shalalala every wo'wo still shines.",
-    "endTime": "03:48.898"
+    "english": "Every shalalala every wo'wo still shines",
+    "endTime": "03:58.000"
   }
 ]
