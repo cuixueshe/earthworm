@@ -26,7 +26,7 @@
         @click="handleStartPlay"
       ></PlayerSvg>
 
-      <div v-show="showAudio">
+      <div class="hidden">
         <audio
           ref="playerElement"
           controls
@@ -42,7 +42,7 @@
       </template>
     </div>
 
-    <div class="absolute z-[-10px] opacity-50">
+    <div class="absolute z-[-10px] opacity-55">
       <ModeMusicPhonograph></ModeMusicPhonograph>
     </div>
   </div>
@@ -58,7 +58,6 @@ import { useMusicMode } from "~/composables/main/music";
 import PlayerSvg from "./PlayerSvg.vue";
 
 const { isQuestion } = useGameMode();
-const showAudio = ref(false);
 const playerElement = ref<HTMLAudioElement>();
 const { setupMusicAudio, playMusic } = useMusicMode();
 const { isStart, handleStartPlay } = useStartGame();

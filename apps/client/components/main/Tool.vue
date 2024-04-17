@@ -3,6 +3,7 @@
     class="relative flex items-center py-3 border-t border-b border-solid border-slate-200 text-base"
   >
     <div
+      v-if="currentGameMode !== GameMode.Music"
       class="link-item tooltip z-50"
       data-tip="课程列表"
     >
@@ -139,6 +140,10 @@ import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
+import {
+  GameMode,
+  useGameMode as useGameModeInUser,
+} from "~/composables/user/gameMode";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./Contents/useContents";
 
@@ -147,6 +152,7 @@ const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
+const { currentGameMode } = useGameModeInUser();
 
 const currentSchedule = computed(() => {
   return courseStore.statementIndex + 1;
