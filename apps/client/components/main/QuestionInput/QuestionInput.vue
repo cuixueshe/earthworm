@@ -56,8 +56,8 @@ const { showAnswer } = useGameMode();
 const { showSummary } = useSummary();
 const { isShowWordsWidth } = useShowWordsWidth();
 const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-const { isKeyboardSoundEnabled } = useKeyboardSound();
-const { checkPlayTypingSound, playTypingSound } = useTypingSound();
+const { keyboardSound } = useKeyboardSound();
+const { checkPlayTypingSound, playTypingSound } = useTypingSound(keyboardSound.value);
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError, resetCloseTip } = answerError();
 const { isAutoNextQuestion } = useAutoNextQuestion();
@@ -127,8 +127,8 @@ function getWordsClassNames(index: number) {
 }
 
 function inputChangedCallback(e: KeyboardEvent) {
-  if (isKeyboardSoundEnabled() && checkPlayTypingSound(e)) {
-    playTypingSound();
+  if (keyboardSound.value !== "off" && checkPlayTypingSound(e)) {
+    playTypingSound(e);
   }
 }
 

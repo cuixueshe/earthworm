@@ -4,22 +4,32 @@ import { ref } from "vue";
 export function useLocalStorageBoolean(
   key: string,
   // 默认开启
-  defaultValue: boolean = true,
+  defaultValue: any,
 ) {
   const valueRef = ref(defaultValue);
 
   function loadCache() {
     const storedValue = localStorage.getItem(key);
-    // 如果 localStorage 中有值才进行校验，则使用该值
+    // 如果 localStorage 中有值，则使用该值
     if (storedValue !== null) {
-      valueRef.value = storedValue === "true";
+      // 检测值是否为 'true' 或 'false'
+      // 若是，则转为 boolean 类型，否则按字符串处理
+      if (storedValue === "true" || storedValue === "false") {
+        valueRef.value = storedValue === "true";
+      } else {
+        valueRef.value = storedValue;
+      }
     }
     update(valueRef.value);
   }
 
-  function update(value: boolean) {
+  function update(value: string | boolean) {
     valueRef.value = value;
-    localStorage.setItem(key, String(value));
+    if (typeof value === "boolean") {
+      localStorage.setItem(key, String(value));
+    } else {
+      localStorage.setItem(key, value);
+    }
   }
 
   function remove() {
@@ -27,11 +37,15 @@ export function useLocalStorageBoolean(
   }
 
   function toggle() {
-    update(!valueRef.value);
+    if (typeof valueRef.value === "boolean") {
+      update(!valueRef.value);
+    } else {
+      update(valueRef.value);
+    }
   }
 
   function isTrue(): boolean {
-    return valueRef.value;
+    return valueRef.value === true || valueRef.value === "true";
   }
 
   loadCache();

@@ -1,9 +1,20 @@
 // useTypingSound.ts
 import { ref } from "vue";
 
+import { CherrySounds, DurmSounds, VintageKeyboardSounds } from "~/assets/sounds";
 import errorSoundPath from "~/assets/sounds/error.mp3";
 import rightSoundPath from "~/assets/sounds/right.mp3";
 import typingSoundPath from "~/assets/sounds/typing.mp3";
+
+const drumSounds = Object.entries(DurmSounds)
+  .filter(([key, value]) => key !== "durmSpace" && key !== "durmBackspace") // 过滤掉不需要的键
+  .map(([key, value]) => value);
+const cherrySounds = Object.values(CherrySounds);
+const vintageKeyboardSounds = Object.values(VintageKeyboardSounds);
+
+function randomItem(arr: string | string[]) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
 
 export function usePlayTipSound() {
   // 正确提示音
@@ -26,48 +37,60 @@ export function usePlayTipSound() {
 }
 
 const PLAY_INTERVAL_TIME = 60;
-export function useTypingSound() {
-  let audioCtxRef: AudioContext | null = null;
-  let audioBuffer: AudioBuffer | null = null;
-  const lastPlayTime = ref(0); // 与上一次播放时间间隔
+export function useTypingSound(soundsType: string) {
+  const audioCtxRef = ref<AudioContext | null>(null); // 将 AudioContext 初始化为空
+  const lastPlayTime = ref(0);
 
-  // 不需要等页面渲染就可以加载了（提前）
-  loadAudioContext();
+  async function loadAndPlayAudio(url: string) {
+    if (!audioCtxRef.value) {
+      audioCtxRef.value = new AudioContext(); // 在首次使用时创建 AudioContext
+      if (audioCtxRef.value.state === "suspended") {
+        await audioCtxRef.value.resume(); // 确保 AudioContext 是激活状态
+      }
+    }
 
-  async function loadAudioContext() {
-    audioCtxRef = new AudioContext();
-    await loadAudioBuffer(typingSoundPath);
-  }
-
-  async function loadAudioBuffer(url: string) {
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
-    // 使用 decodeAudioData 方法处理 arrayBuffer
-    const audioContext = audioCtxRef;
-    if (!audioContext) return;
+    const decodedAudioData = await audioCtxRef.value.decodeAudioData(arrayBuffer);
 
-    const decodedAudioData = await audioContext.decodeAudioData(arrayBuffer);
-    if (decodedAudioData) {
-      audioBuffer = decodedAudioData;
-    } else {
-      throw new Error("Audio decoding failed.");
-    }
-  }
-
-  function playTypingSound() {
-    const now = Date.now();
-    if (now - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
-    if (!audioCtxRef || !audioBuffer) return;
-
-    const source = audioCtxRef.createBufferSource();
-    source.buffer = audioBuffer;
-    source.connect(audioCtxRef.destination);
+    const source = audioCtxRef.value.createBufferSource();
+    source.buffer = decodedAudioData;
+    source.connect(audioCtxRef.value.destination);
     source.start();
-    lastPlayTime.value = now;
-    // 当音频播放结束，手动释放资源
+
+    // 音频播放结束后，手动释放资源
     source.onended = () => {
       source.disconnect();
     };
+  }
+
+  function playTypingSound(e: KeyboardEvent) {
+    if (soundsType === "off") {
+      return;
+    }
+
+    const now = Date.now();
+    if (now - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
+
+    let soundPath;
+    if (soundsType === "drumSound") {
+      if (e.code === "Space") {
+        soundPath = DurmSounds.durmSpace;
+      } else if (e.code === "Backspace") {
+        soundPath = DurmSounds.durmBackspace;
+      } else {
+        soundPath = randomItem(drumSounds);
+      }
+    } else if (soundsType === "cherrySound") {
+      soundPath = randomItem(cherrySounds);
+    } else if (soundsType === "vintageKeyboardSound") {
+      soundPath = randomItem(vintageKeyboardSounds);
+    } else {
+      soundPath = typingSoundPath;
+    }
+
+    loadAndPlayAudio(soundPath);
+    lastPlayTime.value = now;
   }
 
   function checkPlayTypingSound(e: KeyboardEvent) {

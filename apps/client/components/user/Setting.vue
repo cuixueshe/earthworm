@@ -68,14 +68,23 @@
       <table class="table">
         <tbody>
           <tr class="hover">
-            <td class="label-text">开启键盘打字音效</td>
+            <td class="label-text">选择键盘打字音效</td>
             <td class="w-[300px] text-center">
-              <input
-                type="checkbox"
-                class="toggle toggle-secondary"
-                :checked="keyboardSound"
-                @change="toggleKeyboardSound"
-              />
+              <div class="join mr-12">
+                <select
+                  v-model="keyboardSound"
+                  @change="toggleKeyboardSound"
+                  class="btn btn-outline btn-secondary select-sm"
+                >
+                  <option
+                    v-for="(sound, index) in soundsType"
+                    :key="index"
+                    :value="sound.value"
+                  >
+                    {{ sound.label }}
+                  </option>
+                </select>
+              </div>
             </td>
           </tr>
           <tr class="hover">
@@ -247,6 +256,29 @@ const {
 
 const { getGameModeOptions, currentGameMode, toggleGameMode } = useGameMode();
 
+const soundsType = [
+  {
+    label: "关闭",
+    value: "off",
+  },
+  {
+    label: "默认音效",
+    value: "defaultSound",
+  },
+  {
+    label: "架子鼓",
+    value: "drumSound",
+  },
+  {
+    label: "樱桃轴",
+    value: "cherrySound",
+  },
+  {
+    label: "老式键盘",
+    value: "vintageKeyboardSound",
+  },
+];
+
 const shortcutKeyBindList = [
   {
     label: "播放发音",
@@ -283,5 +315,8 @@ onUnmounted(() => {
 
 .btn-outline.btn-secondary {
   @apply text-fuchsia-500 outline-fuchsia-500;
+}
+.select-sm:focus {
+  outline: none;
 }
 </style>
