@@ -1,4 +1,5 @@
-import { it, expect, describe, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
+
 import { COURSE_PROGRESS, useCourseProgress } from "../progress";
 
 describe("course progress", () => {

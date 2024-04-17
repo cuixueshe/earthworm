@@ -31,7 +31,7 @@ const route = useRoute();
 const coursesStore = useCourseStore();
 const { showQuestion } = useGameMode();
 const { currentGameMode } = useGameModeInUser();
-const { currentMusic, currentMusicCourse } = useMusicChapter();
+const { currentMusicCourse } = useMusicChapter();
 
 showQuestion();
 

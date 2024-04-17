@@ -1,4 +1,5 @@
-import { it, expect, describe, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
+
 import { ACTIVE_COURSE_ID, useActiveCourseId } from "../activeCourse";
 
 describe("change active course", () => {

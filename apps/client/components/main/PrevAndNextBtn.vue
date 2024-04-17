@@ -1,7 +1,7 @@
 <template>
-  <div class="absolute flex items-center justify-between w-full">
+  <div class="absolute flex w-full items-center justify-between">
     <!-- left arrow button: go to previous question -->
-    <div class="w-12 h-12">
+    <div class="h-12 w-12">
       <button
         class="arrow-btn tooltip"
         :data-tip="PREV_BTN_TIP"
@@ -26,15 +26,13 @@
       </button>
     </div>
     <!-- right arrow button: go to next question -->
-    <div class="w-12 h-12">
+    <div class="h-12 w-12">
       <button
         class="arrow-btn tooltip"
         @click="goToNextQuestion"
         :data-tip="NEXT_BTN_TIP"
         totalQuestionsCount
-        v-show="
-          courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount
-        "
+        v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +55,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+
 import { useGameMode } from "~/composables/main/game";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useCourseStore } from "~/store/course";
@@ -65,7 +64,7 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const { shortcutKeys } = useShortcutKeyMode();
 const { goToNextQuestion, goToPreviousQuestion } = usePrevAndNextQuestion(
   shortcutKeys.value.previous,
-  shortcutKeys.value.skip
+  shortcutKeys.value.skip,
 );
 
 const PREV_BTN_TIP = `上一题（快捷键：${shortcutKeys.value.previous} ）`;

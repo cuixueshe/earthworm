@@ -12,7 +12,6 @@ export interface PlayOptions {
   interval?: number;
 }
 
-
 const DefaultPlayOptions = {
   times: 1,
   rate: 1,
@@ -20,11 +19,7 @@ const DefaultPlayOptions = {
 };
 
 export function play(playOptions?: PlayOptions) {
-  const { times, rate, interval } = Object.assign(
-    {},
-    DefaultPlayOptions,
-    playOptions
-  );
+  const { times, rate, interval } = Object.assign({}, DefaultPlayOptions, playOptions);
 
   audio.playbackRate = rate;
   audio.play();
@@ -47,8 +42,8 @@ export function play(playOptions?: PlayOptions) {
   }
 
   return () => {
-    audio.pause()
-    audio.currentTime = 0
+    audio.pause();
+    audio.currentTime = 0;
     audio.removeEventListener("ended", handleEnded);
     timeoutId && clearTimeout(timeoutId);
   };

@@ -1,5 +1,5 @@
 <template>
-  <div class="container w-full m-auto font-customFont">
+  <div class="container m-auto w-full font-customFont">
     <Loading v-show="isLoading" />
     <div v-show="!isLoading">
       <HomeBanner @start-earthworm="startEarthworm" />
@@ -7,9 +7,7 @@
       <HomeComments />
       <HomeQuestions />
       <HomeContact />
-      <CommonBackTop
-        class="sticky flex justify-end ml-auto sm:block bottom-28"
-      />
+      <CommonBackTop class="sticky bottom-28 ml-auto flex justify-end sm:block" />
     </div>
     <MainMessageBox
       v-model:is-show-modal="showMobileTip"
@@ -24,6 +22,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
+
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 

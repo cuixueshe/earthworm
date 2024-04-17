@@ -43,20 +43,12 @@ function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
   });
 }
 
-export function parseShortcutKeys(
-  shortcutKeys: string,
-  separator: string = "+"
-) {
+export function parseShortcutKeys(shortcutKeys: string, separator: string = "+") {
   // 如果只有一个字符的 key，将其转换为大写显示
-  return shortcutKeys
-    .split(separator)
-    .map((key) => (key.length === 1 ? key.toUpperCase() : key));
+  return shortcutKeys.split(separator).map((key) => (key.length === 1 ? key.toUpperCase() : key));
 }
 
-export function createShortcut(
-  key: string,
-  command: Shortcut["command"]
-): Shortcut {
+export function createShortcut(key: string, command: Shortcut["command"]): Shortcut {
   return {
     ...parseKey(key),
     command,
@@ -71,10 +63,7 @@ export function registerShortcut(key: string, command: Shortcut["command"]) {
 
 export function cancelShortcut(key: string, command: Shortcut["command"]): void;
 export function cancelShortcut(shortcut: Shortcut): void;
-export function cancelShortcut(
-  keyOrShortcut: string | Shortcut,
-  command?: Shortcut["command"]
-) {
+export function cancelShortcut(keyOrShortcut: string | Shortcut, command?: Shortcut["command"]) {
   function normalizeShortcut() {
     let normalShortcut: Shortcut;
     if (typeof keyOrShortcut === "string" && command) {

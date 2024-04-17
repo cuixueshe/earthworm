@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center py-3 border-t border-b border-solid border-slate-200 text-base"
+    class="relative flex items-center border-b border-t border-solid border-slate-200 py-3 text-base"
   >
     <div
       v-if="currentGameMode !== GameMode.Music"
@@ -74,7 +74,7 @@
         </svg>
       </NuxtLink>
     </div>
-    <div class="ml-4 mr-1 z-50">
+    <div class="z-50 ml-4 mr-1">
       {{ courseStore.currentCourse?.title }}
     </div>
     <div
@@ -82,8 +82,7 @@
       data-tip="题目列表"
       @click="toggleContents"
     >
-      （{{ currentSchedule }}<span class="mx-[2px]">/</span
-      >{{ courseStore.totalQuestionsCount }}）
+      （{{ currentSchedule }}<span class="mx-[2px]">/</span>{{ courseStore.totalQuestionsCount }}）
     </div>
 
     <MainStudyVideoLink
@@ -115,10 +114,10 @@
       排行榜
     </div>
     <div
-      class="absolute left-0 right-0 bottom-[-24px] h-[18px] p-[2px] border rounded-lg dark:border-slate-400"
+      class="absolute bottom-[-24px] left-0 right-0 h-[18px] rounded-lg border p-[2px] dark:border-slate-400"
     >
       <div
-        class="h-full bg-gradient-to-r from-emerald-200 to-emerald-400 dark:from-emerald-300 dark:to-emerald-500 rounded-lg transition-all"
+        class="h-full rounded-lg bg-gradient-to-r from-emerald-200 to-emerald-400 transition-all dark:from-emerald-300 dark:to-emerald-500"
         :style="{ width: `${currentPercentage}%` }"
       ></div>
     </div>
@@ -135,6 +134,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
+
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
@@ -162,10 +162,7 @@ const currentPercentage = computed(() => {
   if (courseStore.isAllDone()) {
     return 100;
   }
-  return (
-    (courseStore.statementIndex / courseStore.totalQuestionsCount) *
-    100
-  ).toFixed(2);
+  return ((courseStore.statementIndex / courseStore.totalQuestionsCount) * 100).toFixed(2);
 });
 
 function useDoAgain() {
@@ -194,10 +191,10 @@ function useDoAgain() {
 
 <style scoped>
 .icon-item {
-  @apply w-6 h-6;
+  @apply h-6 w-6;
 }
 
 .link-item {
-  @apply cursor-pointer hover:text-fuchsia-500 select-none;
+  @apply cursor-pointer select-none hover:text-fuchsia-500;
 }
 </style>

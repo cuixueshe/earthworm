@@ -1,12 +1,12 @@
 <template>
-  <div class="relative flex flex-col w-full">
-    <h2 class="py-2 mb-4 text-3xl text-center border-b dark:border-gray-600">
+  <div class="relative flex w-full flex-col">
+    <h2 class="mb-4 border-b py-2 text-center text-3xl dark:border-gray-600">
       星荣零基础学英语课程
     </h2>
-    <div class="h-full scrollbar-hide">
+    <div class="scrollbar-hide h-full">
       <div
         v-if="courses.length"
-        class="h-[79vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pl-0 pr-4 pb-96 overflow-x-hidden overflow-y-auto gap-8 justify-start"
+        class="grid h-[79vh] grid-cols-1 justify-start gap-8 overflow-y-auto overflow-x-hidden pb-96 pl-0 pr-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
         <template
           v-for="course in courses"
@@ -31,6 +31,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+
 import { fetchCourses } from "~/api/course";
 import { fetchCourseHistory } from "~/api/courseHistory";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";

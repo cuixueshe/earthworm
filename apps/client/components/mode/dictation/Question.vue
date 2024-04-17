@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch } from "vue";
+
 import { useCourseStore } from "~/store/course";
 import { play } from "./dictation";
 
@@ -21,7 +22,7 @@ function usePlayEnglishSound() {
       () => {
         pauseSound();
         play();
-      }
+      },
     );
 
     onUnmounted(() => {

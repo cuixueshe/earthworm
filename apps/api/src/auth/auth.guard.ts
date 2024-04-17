@@ -4,34 +4,32 @@ import {
   Injectable,
   SetMetadata,
   UnauthorizedException,
-} from '@nestjs/common';
-import { Request } from 'express';
-import { createRemoteJWKSet, jwtVerify } from 'jose';
+} from "@nestjs/common";
+import { Request } from "express";
+import { createRemoteJWKSet, jwtVerify } from "jose";
 
-export const UncheckAuth = () => SetMetadata('uncheck', true);
+export const UncheckAuth = () => SetMetadata("uncheck", true);
 
 @Injectable()
 export class AuthGuard implements CanActivate {
   private jwks: any;
   constructor() {
-    this.jwks = createRemoteJWKSet(
-      new URL('/oidc/jwks', process.env.LOGTO_ENDPOINT),
-    );
+    this.jwks = createRemoteJWKSet(new URL("/oidc/jwks", process.env.LOGTO_ENDPOINT));
   }
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
     const token = this.extractTokenFromHeader(request);
-    const uncheck = Reflect.getMetadata('uncheck', context.getHandler());
+    const uncheck = Reflect.getMetadata("uncheck", context.getHandler());
 
     if (!token && uncheck) {
-      request['user'] = null;
+      request["user"] = null;
     } else if (!token) {
       throw new UnauthorizedException();
     }
     try {
       const payload = await this.jwtVerify(token);
-      request['userId'] = payload.sub;
+      request["userId"] = payload.sub;
     } catch (e) {
       if (!uncheck) {
         throw new UnauthorizedException();
@@ -47,7 +45,7 @@ export class AuthGuard implements CanActivate {
       this.jwks,
       {
         // Expected issuer of the token, issued by the Logto server
-        issuer: new URL('oidc', process.env.LOGTO_ENDPOINT).href,
+        issuer: new URL("oidc", process.env.LOGTO_ENDPOINT).href,
         // Expected audience token, the resource indicator of the current API
         audience: process.env.BACKEND_ENDPOINT,
       },
@@ -57,7 +55,7 @@ export class AuthGuard implements CanActivate {
   }
 
   private extractTokenFromHeader(request: Request): string | undefined {
-    const [type, token] = request.headers.authorization?.split(' ') ?? [];
-    return type === 'Bearer' ? token : undefined;
+    const [type, token] = request.headers.authorization?.split(" ") ?? [];
+    return type === "Bearer" ? token : undefined;
   }
 }

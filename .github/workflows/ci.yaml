@@ -16,7 +16,7 @@ jobs:
       LOGTO_ENDPOINT: https://g7aj5i.logto.app/
       LOGTO_CLIENT_ID: uwl60tk769wtbs19i5zkx
       LOGTO_CLIENT_SECRET: AIC9U5TYba73JxMETuj9JeFaLyXFVdWa
-      LOGTO_M2M_API: https://g7aj5i.logto.app/api 
+      LOGTO_M2M_API: https://g7aj5i.logto.app/api
 
     services:
       pg:
@@ -42,8 +42,8 @@ jobs:
         with:
           node-version: "20.11.0"
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        run: corepack enable
 
       - name: Install dependencies
         run: pnpm install

@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-8 min-w-max">
+  <div class="min-w-max space-y-8">
     <section class="space-y-4">
       <h2 class="text-lg font-medium">游戏模式</h2>
       <table class="table">
@@ -7,10 +7,10 @@
           <tr class="hover">
             <td class="label-text">模式</td>
             <td class="w-[300px] text-center">
-              <div class="mr-12 join">
+              <div class="join mr-12">
                 <input
                   v-for="mode in getGameModeOptions()"
-                  class="join-item btn btn-sm"
+                  class="btn join-item btn-sm"
                   type="radio"
                   name="gameMode"
                   :value="mode.value"
@@ -54,9 +54,7 @@
             <tr class="hover">
               <td class="label-text">{{ item.label }}</td>
               <td class="text-center">
-                <div
-                  class="flex items-center justify-center gap-2 text-xs text-center"
-                >
+                <div class="flex items-center justify-center gap-2 text-center text-xs">
                   <div
                     class="kbd"
                     v-for="key in parseShortcutKeys(shortcutKeys[item.type])"
@@ -67,7 +65,7 @@
               </td>
               <td class="text-center">
                 <button
-                  class="btn btn-sm btn-outline btn-secondary"
+                  class="btn btn-outline btn-secondary btn-sm"
                   @click="handleEdit(item.type)"
                 >
                   编辑
@@ -108,10 +106,10 @@
           <tr class="hover">
             <td class="label-text">切换口音</td>
             <td class="w-[300px] text-center">
-              <div class="mr-12 join">
+              <div class="join mr-12">
                 <input
                   v-for="lang in getPronunciationOptions()"
-                  class="join-item btn btn-sm"
+                  class="btn join-item btn-sm"
                   type="radio"
                   name="options"
                   :value="lang.value"
@@ -186,19 +184,17 @@
   >
     <div
       ref="dialogBoxRef"
-      class="modal-box max-w-[48rem] min-h-[156px]"
+      class="modal-box min-h-[156px] max-w-[48rem]"
     >
-      <h3 class="mb-4 text-base font-bold text-center text-fuchsia-500">
+      <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
         请先按下单键/组合键，通过回车键（Enter ⏎）来设置
       </h3>
-      <div
-        class="h-8 leading-8 text-center border border-solid rounded border-fuchsia-500"
-      >
+      <div class="h-8 rounded border border-solid border-fuchsia-500 text-center leading-8">
         {{ shortcutKeyStr }}
       </div>
       <div
         v-if="shortcutKeyTip"
-        class="flex justify-center gap-2 mt-2 text-xs text-center"
+        class="mt-2 flex justify-center gap-2 text-center text-xs"
       >
         <div
           v-for="key in parseShortcutKeys(shortcutKeyTip)"
@@ -209,7 +205,7 @@
       </div>
       <div
         v-if="hasSameShortcutKey"
-        class="mt-4 text-xs text-center"
+        class="mt-4 text-center text-xs"
         :class="'text-[rgba(136,136,136,1)]'"
       >
         已有相同的按键绑定，请重新设置
@@ -228,22 +224,13 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
-import { useMusicChapter } from "~/composables/courses/music";
-import { useAutoNextQuestion } from "~/composables/user/autoNext";
+import { useMusicChapter } from "~/composables/courses/music";   
+ import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
-import {
-  PronunciationType,
-  usePronunciation,
-} from "~/composables/user/pronunciation";
-import {
-  SHORTCUT_KEY_TYPES,
-  useShortcutKeyMode,
-} from "~/composables/user/shortcutKey";
-import {
-  useAutoPronunciation,
-  useKeyboardSound,
-} from "~/composables/user/sound";
+import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
+import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
@@ -306,7 +293,7 @@ onUnmounted(() => {
 .btn-outline.btn-secondary:hover,
 .toggle-secondary:checked,
 .btn:is(input[type="radio"]:checked) {
-  @apply text-[#ffffff] border-fuchsia-500 bg-fuchsia-500;
+  @apply border-fuchsia-500 bg-fuchsia-500 text-[#ffffff];
 }
 
 .btn-outline.btn-secondary {

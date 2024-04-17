@@ -1,10 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import {
-  formatSecondsToTime,
-  formatTimestamp,
-  getToday,
-  isTheDay,
-} from "../date";
+
+import { formatSecondsToTime, formatTimestamp, getToday, isTheDay } from "../date";
 
 const dummyDay = {
   year: 2024,

@@ -1,13 +1,14 @@
-import { Global, Module } from '@nestjs/common';
-import { DB, DbProvider } from './providers/db.provider';
-import { ConfigModule } from '@nestjs/config';
+import { Global, Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
+
+import { DB, DbProvider } from "./providers/db.provider";
 
 const envConfig = {
-  prod: '.env.prod',
-  test: '.env.test',
+  prod: ".env.prod",
+  test: ".env.test",
 };
 
-const envFilePath = envConfig[process.env.NODE_ENV] || '.env';
+const envFilePath = envConfig[process.env.NODE_ENV] || ".env";
 @Global()
 @Module({
   imports: [

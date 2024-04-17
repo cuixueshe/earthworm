@@ -6,15 +6,15 @@
     >
       <div
         ref="dialogBoxRef"
-        class="modal-box w-[27rem] flex flex-col items-center overflow-hidden"
+        class="modal-box flex w-[27rem] flex-col items-center overflow-hidden"
       >
         <div class="flex">
-          <div class="gallery py-2 mr-2">
+          <div class="gallery mr-2 py-2">
             <div
               v-for="(imgItem, index) in galleryImgs"
               :key="imgItem.src"
               :class="[
-                'border-2 border-transparent gallery-item w-14 mb-2 h-18 cursor-pointer rounded-sm overflow-hidden mr-2',
+                'gallery-item h-18 mb-2 mr-2 w-14 cursor-pointer overflow-hidden rounded-sm border-2 border-transparent',
                 {
                   '!border-primary': currImageIndex === index,
                   skeleton: !imgItem.src,
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div
-            :class="['w-[19rem] h-[27rem]', { skeleton: !shareImageSrc }]"
+            :class="['h-[27rem] w-[19rem]', { skeleton: !shareImageSrc }]"
             ref="imageContainer"
           >
             <img
@@ -64,15 +64,14 @@
 
 <script setup lang="ts">
 import { ref, watch } from "vue";
+
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { convertTitleToNumber } from "~/composables/main/shareImage/convert";
-import {
-  useGenerateShareImage,
-  useShareModal,
-} from "~/composables/main/shareImage/share";
+import { useGenerateShareImage, useShareModal } from "~/composables/main/shareImage/share";
 import { useCourseStore } from "~/store/course";
 import { useUserStore } from "~/store/user";
 import { formatSecondsToTime, getToday } from "~/utils/date";
+
 const courseStore = useCourseStore();
 const userStore = useUserStore();
 const imageContainer = ref<HTMLDivElement>();
@@ -91,9 +90,7 @@ const {
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
     const username = userStore.userNameGetter!;
-    const convertedTitle = convertTitleToNumber(
-      courseStore.currentCourse.title
-    );
+    const convertedTitle = convertTitleToNumber(courseStore.currentCourse.title);
     const { year, month, day } = getToday();
     const totalRecordNumber = courseTimer.totalRecordNumber();
     const totalTime = formatSecondsToTime(courseTimer.calculateTotalTime());
@@ -102,7 +99,7 @@ watch(shareModalVisible, (newVal) => {
       username,
       `${year}/${month}/${day}`,
       totalRecordNumber,
-      totalTime
+      totalTime,
     );
   } else {
     clearShareImageSrc();

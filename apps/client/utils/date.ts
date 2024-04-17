@@ -9,11 +9,7 @@ export interface Timestamp {
 
 export function isTheDay(theDay: Day) {
   const today = getToday();
-  return (
-    today.year === theDay.year &&
-    today.month === theDay.month &&
-    today.day == theDay.day
-  );
+  return today.year === theDay.year && today.month === theDay.month && today.day == theDay.day;
 }
 
 export function getToday() {
@@ -27,20 +23,7 @@ export function getToday() {
 export function formatTimestamp({ timestamp }: Timestamp) {
   let date = new Date(timestamp);
 
-  let months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+  let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   let hours = date.getHours();
   let minutes = date.getMinutes().toString().padStart(2, "0");
@@ -64,8 +47,6 @@ export function formatSecondsToTime(time: number) {
   const seconds = time % 60;
 
   return (
-    (hours ? `${hours}时` : "") +
-    (minutes ? `${minutes}分` : "") +
-    (seconds ? `${seconds}秒` : "")
+    (hours ? `${hours}时` : "") + (minutes ? `${minutes}分` : "") + (seconds ? `${seconds}秒` : "")
   );
 }

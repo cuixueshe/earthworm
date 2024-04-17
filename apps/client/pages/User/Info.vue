@@ -40,14 +40,13 @@ const componentMap: ComponentMap = {
 const currentComponent = shallowRef(componentMap.Home); // shallowRef is used to fixed Vue warn
 
 const defaultMenuName = computed(() =>
-  route.query.displayComponent === "Setting" ? "设置" : "主页"
+  route.query.displayComponent === "Setting" ? "设置" : "主页",
 );
 
 watchEffect(() => {
   const routeComponent = route.query.displayComponent;
   currentComponent.value =
-    componentMap[routeComponent as keyof typeof componentMap] ||
-    componentMap.Home;
+    componentMap[routeComponent as keyof typeof componentMap] || componentMap.Home;
 });
 
 function handleChangeMenu(menu: Menu) {

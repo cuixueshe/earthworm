@@ -1,16 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
-import { ApiOperation, ApiTags } from '@nestjs/swagger';
-import { ToolService } from './tool.service';
+import { Controller, Get } from "@nestjs/common";
+import { ApiOperation, ApiTags } from "@nestjs/swagger";
 
-@ApiTags('Tool')
-@Controller('tool')
+import { ToolService } from "./tool.service";
+
+@ApiTags("Tool")
+@Controller("tool")
 export class ToolController {
   constructor(private readonly toolService: ToolService) {}
 
   @ApiOperation({
-    summary: '生成课程打卡图',
+    summary: "生成课程打卡图",
   })
-  @Get('dailySentence')
+  @Get("dailySentence")
   dailySentence() {
     return this.toolService.dailySentence();
   }

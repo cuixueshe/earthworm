@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { useAnswerTip } from "../answerTip";
 
 describe("answer tip", () => {

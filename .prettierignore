@@ -1,0 +1,9 @@
+.output
+.nuxt
+.temp
+dist
+pnpm-lock.yaml
+pnpm-workspace.yaml
+CHANGELOG.md
+xingrong-courses
+packages/db/drizzle

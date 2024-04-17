@@ -1,22 +1,20 @@
-import { course, statement } from '@earthworm/schema';
-import { INestApplication } from '@nestjs/common';
-import { Test, TestingModule } from '@nestjs/testing';
-import * as request from 'supertest';
-import {
-  createFirstCourse,
-  createSecondCourse,
-} from '../../../test/fixture/course';
-import { createStatement } from '../../../test/fixture/statement';
-import { cleanDB, signin } from '../../../test/helper/utils';
-import { AppModule } from '../../app/app.module';
-import { appGlobalMiddleware } from '../../app/useGlobal';
-import { endDB } from '../../common/db';
-import { DB, DbType } from '../../global/providers/db.provider';
+import { INestApplication } from "@nestjs/common";
+import { Test, TestingModule } from "@nestjs/testing";
+import * as request from "supertest";
+
+import { course, statement } from "@earthworm/schema";
+import { createFirstCourse, createSecondCourse } from "../../../test/fixture/course";
+import { createStatement } from "../../../test/fixture/statement";
+import { cleanDB, signin } from "../../../test/helper/utils";
+import { AppModule } from "../../app/app.module";
+import { appGlobalMiddleware } from "../../app/useGlobal";
+import { endDB } from "../../common/db";
+import { DB, DbType } from "../../global/providers/db.provider";
 
 const firstCourse = createFirstCourse();
 const secondCourse = createSecondCourse();
 
-describe('course e2e', () => {
+describe("course e2e", () => {
   let app: INestApplication;
   let db: DbType;
   let token: string;
@@ -44,10 +42,10 @@ describe('course e2e', () => {
     await app.close();
   });
 
-  it('should fetch superhero details', async () => {
+  it("should fetch superhero details", async () => {
     return request(app.getHttpServer())
-      .get('/courses/1')
-      .set('Authorization', `Bearer ${token}`)
+      .get("/courses/1")
+      .set("Authorization", `Bearer ${token}`)
       .expect(200)
       .expect(({ body }) => {
         expect(body).toEqual(
@@ -60,9 +58,9 @@ describe('course e2e', () => {
       });
   });
 
-  it('should allow trying a course without authentication', async () => {
+  it("should allow trying a course without authentication", async () => {
     await request(app.getHttpServer())
-      .get('/courses/try')
+      .get("/courses/try")
       .expect(200)
       .expect(({ body }) => {
         expect(body).toEqual(
@@ -75,10 +73,10 @@ describe('course e2e', () => {
       });
   });
 
-  it('should get next course', async () => {
+  it("should get next course", async () => {
     await request(app.getHttpServer())
-      .get('/courses/1/next')
-      .set('Authorization', `Bearer ${token}`)
+      .get("/courses/1/next")
+      .set("Authorization", `Bearer ${token}`)
       .expect(200)
       .expect(({ body }) => {
         expect(body).toEqual(

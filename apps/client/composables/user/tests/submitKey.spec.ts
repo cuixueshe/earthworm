@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
+
 import { SPACE_SUBMIT_ANSWER, useSpaceSubmitAnswer } from "../submitKey";
 
 describe("submit shortcut", () => {
@@ -22,8 +23,7 @@ describe("submit shortcut", () => {
   });
 
   it("should be toggle value", () => {
-    const { isUseSpaceSubmitAnswer, toggleUseSpaceSubmitAnswer } =
-      useSpaceSubmitAnswer();
+    const { isUseSpaceSubmitAnswer, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 
     expect(isUseSpaceSubmitAnswer()).toBe(false);
 

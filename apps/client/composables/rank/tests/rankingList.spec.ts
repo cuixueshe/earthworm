@@ -1,6 +1,8 @@
 import { createPinia, setActivePinia } from "pinia";
 import { afterAll, beforeEach, describe, expect, it, vi } from "vitest";
-import { fetchProgressRank, type ProgressRankVo } from "~/api/rank";
+
+import type { ProgressRankVo } from "~/api/rank";
+import { fetchProgressRank } from "~/api/rank";
 import { cacheRanking, useRanking } from "../rankingList";
 
 const weeklyList: ProgressRankVo = {
@@ -22,17 +24,11 @@ const yearlyList: ProgressRankVo = {
 };
 
 function rankList(period: string): ProgressRankVo {
-  return period === "weekly"
-    ? weeklyList
-    : period === "monthly"
-      ? monthlyList
-      : yearlyList;
+  return period === "weekly" ? weeklyList : period === "monthly" ? monthlyList : yearlyList;
 }
 
 vi.mock("~/api/rank");
-vi.mocked(fetchProgressRank).mockImplementation(async (period = "weekly") =>
-  rankList(period)
-);
+vi.mocked(fetchProgressRank).mockImplementation(async (period = "weekly") => rankList(period));
 
 describe("rank list", () => {
   beforeEach(() => {
