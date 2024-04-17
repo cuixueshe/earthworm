@@ -8,7 +8,21 @@
 </template>
 
 <script setup lang="ts">
-import { useCourseStore } from "~/store/course";
+import { watch, ref,  } from "vue"
 
-const courseStore = useCourseStore();
+import { useCourseStore } from "~/store/course"
+import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound"
+
+const courseStore = useCourseStore()
+const { playSound } = useCurrentStatementEnglishSound()
+const text = ref(courseStore.currentStatement?.chinese)
+watch(text, () => {
+  playSound()
+}, {
+  immediate: true,
+});
+
+
+
+
 </script>
