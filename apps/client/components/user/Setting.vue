@@ -248,7 +248,6 @@ import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const userStore = useUserStore();
 const userName = userStore.userNameGetter;
-console.log("%c Line:249 🍺 userStore", "color:#2eafb0", userStore);
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
