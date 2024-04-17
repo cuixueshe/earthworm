@@ -90,6 +90,17 @@
             </td>
           </tr>
           <tr class="hover">
+            <td class="label-text">答题自动播放</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="autoPlayEnglish"
+                @change="toggleAutoPlayEnglish"
+              />
+            </td>
+          </tr>
+          <tr class="hover">
             <td class="label-text">切换口音</td>
             <td class="w-[300px] text-center">
               <div class="join mr-12">
@@ -216,7 +227,11 @@ import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
+import {
+  useAutoPlayEnglish,
+  useAutoPronunciation,
+  useKeyboardSound,
+} from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
@@ -225,6 +240,7 @@ const dialogBoxRef = ref<HTMLElement | null>(null);
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
+const { autoPlayEnglish, toggleAutoPlayEnglish } = useAutoPlayEnglish();
 const {
   pronunciation,
   // 发音配置列表

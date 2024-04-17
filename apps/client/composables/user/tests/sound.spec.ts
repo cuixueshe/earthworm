@@ -1,8 +1,10 @@
 import { beforeEach, describe, expect, it } from "vitest";
 
 import {
+  AUTO_PLAYENGLISH,
   AUTO_PRONUNCIATION,
   KEYBOARD_SOUND_KEY,
+  useAutoPlayEnglish,
   useAutoPronunciation,
   useKeyboardSound,
 } from "../sound";
@@ -66,5 +68,36 @@ describe("keyboard sound", () => {
     toggleKeyboardSound();
 
     expect(isKeyboardSoundEnabled()).toBe(false);
+  });
+});
+
+// 答题自动播放
+describe("auto play english", () => {
+  beforeEach(() => {
+    const { removeAutoPlayEnglish } = useAutoPlayEnglish();
+    removeAutoPlayEnglish();
+  });
+
+  it("should be true if no cache", () => {
+    const { isAutoPlayEnglish } = useAutoPlayEnglish();
+
+    expect(isAutoPlayEnglish()).toBe(true);
+  });
+
+  it("should be equal to cache value if it exists", () => {
+    localStorage.setItem(AUTO_PLAYENGLISH, "false");
+    const { isAutoPlayEnglish } = useAutoPlayEnglish();
+
+    expect(isAutoPlayEnglish()).toBe(false);
+  });
+
+  it("should be toggle value", () => {
+    const { isAutoPlayEnglish, toggleAutoPlayEnglish } = useAutoPlayEnglish();
+
+    expect(isAutoPlayEnglish()).toBe(true);
+
+    toggleAutoPlayEnglish();
+
+    expect(isAutoPlayEnglish()).toBe(false);
   });
 });
