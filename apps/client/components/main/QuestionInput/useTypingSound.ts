@@ -65,41 +65,20 @@ export function useTypingSound(soundsType: string) {
   }
 
   function playTypingSound(e: KeyboardEvent) {
-    if (soundsType === "off") {
-      return;
-    }
+    if (soundsType === "off" || Date.now() - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
 
-    const now = Date.now();
-    if (now - lastPlayTime.value < PLAY_INTERVAL_TIME) return;
+    let soundPath;
+    const isSpecialKey = e.code === "Space" || e.code === "Backspace";
+    const soundTypeToSounds = {
+      drumSound: isSpecialKey ? DurmSounds[`durm${e.code}`] : randomItem(drumSounds),
+      cherrySound: randomItem(cherrySounds),
+      vintageKeyboardSound: randomItem(vintageKeyboardSounds),
+    };
 
-    // 使用函数确保只有在需要时才计算路径
-    const soundPath = getSoundPathByType(e, soundsType);
-
+    soundPath = soundTypeToSounds[soundsType as keyof typeof soundTypeToSounds] || typingSoundPath;
     loadAndPlayAudio(soundPath);
-    lastPlayTime.value = now;
+    lastPlayTime.value = Date.now();
   }
-
-  function getSoundPathByType(e: KeyboardEvent, type: string): string {
-    switch (type) {
-      case "drumSound":
-        if (e.code === "Space") {
-          // @ts-ignore
-          return DrumSounds.drumSpace;
-        } else if (e.code === "Backspace") {
-          // @ts-ignore
-          return DrumSounds.drumBackspace;
-        } else {
-          return randomItem(drumSounds);
-        }
-      case "cherrySound":
-        return randomItem(cherrySounds);
-      case "vintageKeyboardSound":
-        return randomItem(vintageKeyboardSounds);
-      default:
-        return typingSoundPath;
-    }
-  }
-
   function checkPlayTypingSound(e: KeyboardEvent) {
     if (e.altKey || e.ctrlKey || e.metaKey) return false;
 
