@@ -29,11 +29,7 @@
                     {{ "@" + item.account }}
                   </p>
                 </div>
-                <img
-                  width="30"
-                  :src="item.icon"
-                  class="self-start"
-                />
+                <i class="i-simple-icons-twitter h-6 w-6 self-start text-[#03a9f4]"></i>
               </div>
               <p class="mt-4 text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                 {{ item.chinese }}
@@ -46,14 +42,9 @@
               <div class="mx-auto my-4"></div>
               <div class="mt-4 flex items-center justify-between text-xs">
                 <div class="flex items-center">
-                  <svg
-                    class="mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                    />
-                  </svg>
+                  <i
+                    class="i-ph-heart-straight-fill mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
+                  ></i>
                   <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} likes</span>
                 </div>
                 <a

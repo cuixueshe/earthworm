@@ -49,7 +49,7 @@ export default {
     iconsPlugin({
       // 配置需要的 icon 包就行（需要安装）
       // 来这里找 https://icones.js.org/
-      collections: getIconCollections(["ph"]),
+      collections: getIconCollections(["ph", "simple-icons"]),
     }),
   ],
 };
