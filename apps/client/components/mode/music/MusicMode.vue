@@ -4,33 +4,9 @@
       v-show="!isStart"
       class="flex flex-col justify-center items-center relative z-10"
     >
-      <blockquote
-        class="text-xl font-semibold italic text-center text-slate-900 dark:text-white pb-10"
-      >
-        全新体验，
-        <span
-          class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block"
-        >
-          <span class="relative text-white">音乐模式</span>
-        </span>
-        ，快来挑战
-      </blockquote>
-      <blockquote
-        class="text-2xl font-semibold italic text-center text-slate-900 dark:text-white pb-10"
-      >
-        《{{ currentMusicCourse?.title }}》
-      </blockquote>
-
-      <PlayerSvg
-        isAround
-        @click="handleStartPlay"
-      ></PlayerSvg>
-
+      <p>准备好了吗？(按任意键开启游戏)</p>
       <div class="hidden">
-        <audio
-          ref="playerElement"
-          controls
-        ></audio>
+        <audio ref="playerElement"></audio>
       </div>
     </div>
     <div
@@ -54,30 +30,36 @@
 import { onMounted, ref } from "vue";
 import { useMusicChapter } from "~/composables/courses/music";
 import { useGameMode } from "~/composables/main/game";
-import { useMusicMode } from "~/composables/main/music";
-import PlayerSvg from "./PlayerSvg.vue";
+import { useMusicMode } from "~/composables/main/music"; 
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { isQuestion } = useGameMode();
 const playerElement = ref<HTMLAudioElement>();
-const { setupMusicAudio, playMusic } = useMusicMode();
-const { isStart, handleStartPlay } = useStartGame();
-const { currentMusic, currentMusicCourse } = useMusicChapter();
+const { setupMusicAudio, playMusic } = useMusicMode(); 
+const { currentMusic } = useMusicChapter();
 
 onMounted(() => {
   setupMusicAudio(playerElement.value!, currentMusic.value);
 });
 
+const { isStart } = useStartGame();
+
 function useStartGame() {
   const isStart = ref(false);
 
-  function handleStartPlay() {
+  function handleKeyup(e: KeyboardEvent) {
+    e.preventDefault();
     isStart.value = true;
-    playMusic();
+    playMusic()
+    cancelShortcut("*", handleKeyup);
   }
+
+  onMounted(() => {
+    registerShortcut("*", handleKeyup);
+  });
 
   return {
     isStart,
-    handleStartPlay,
   };
 }
 </script>
