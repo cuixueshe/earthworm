@@ -17,3 +17,5 @@ export const schemas = {
   courseHistory,
   userLearnRecord,
 };
+
+export type SchemaType = typeof schemas;
