@@ -1,4 +1,4 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, PickType } from "@nestjs/swagger";
 import { IsNotEmpty, Length } from "class-validator";
 
 export class CreateUserDto {
@@ -33,3 +33,5 @@ export class FindUserDto {
   @Length(6, 20, { message: "手机号码长度应在6到20位之间" })
   phone: string;
 }
+
+export class UpdateUserDto extends PickType(CreateUserDto, ["name"]) {}

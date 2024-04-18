@@ -1,6 +1,28 @@
 <template>
   <div class="min-w-max space-y-8">
     <section class="space-y-4">
+      <h2 class="text-lg font-medium">个人信息设置</h2>
+      <table class="table">
+        <tbody>
+          <tr class="hover">
+            <td class="label-text">昵称</td>
+            <td class="w-[300px] text-center">
+              <div class="join mr-12">
+                <input
+                  class="btn join-item btn-sm"
+                  type="text"
+                  name="username"
+                  pattern="请输入用户名称"
+                  v-model="userName"
+                  @keyup.enter="updateUserInfo"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="space-y-4">
       <h2 class="text-lg font-medium">游戏模式</h2>
       <table class="table">
         <tbody>
@@ -219,9 +241,13 @@ import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/short
 import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { useUserStore } from "~/store/user";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const userStore = useUserStore();
+const updateUserInfo = userStore.updateUserInfo;
+const userName = userStore.userNameGetter;
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
