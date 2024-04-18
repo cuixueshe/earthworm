@@ -1,10 +1,9 @@
+import { type UserInfoResponse } from "@logto/vue";
+
 import { http } from "./http";
 
-interface UserInfoDto {
-  name: string;
-}
-export async function updateUsername(name: UserInfoDto) {
-  return await http.get("/user/info/updatename", {
-    params: name,
+export async function updateUsername(name: string) {
+  return await http.patch<UserInfoResponse, UserInfoResponse>("/user/info/updatename", {
+    name: name,
   });
 }

@@ -3,7 +3,6 @@ import { Inject, Injectable } from "@nestjs/common";
 import { DB, DbType } from "../global/providers/db.provider";
 import { logtoApi } from "../services/logtoService";
 import { UserEntity } from "../user/user.decorators";
-import { UserInfo } from "./user.controller";
 
 @Injectable()
 export class UserService {
@@ -17,9 +16,9 @@ export class UserService {
       return undefined;
     }
   }
-  async updateUser(user: UserEntity, userInfo: UserInfo) {
+  async updateUser(user: UserEntity, username: string) {
     try {
-      const { data } = await logtoApi.patch(`/api/users/${user.userId}`, userInfo);
+      const { data } = await logtoApi.patch(`/api/users/${user.userId}`, { name: username });
       return { data };
     } catch (error) {
       return undefined;
