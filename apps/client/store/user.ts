@@ -20,9 +20,15 @@ export const useUserStore = defineStore("user", () => {
     return name || username || email?.split("@").at(0);
   });
 
+  function updateUserInfo(userInfoResponse: Partial<UserInfoResponse>) {
+    // 更新本地用户信息
+    userInfo.value = { ...userInfo.value, ...userInfoResponse } as UserInfoResponse;
+  }
+
   return {
     initUser,
     userInfo,
     userNameGetter,
+    updateUserInfo,
   };
 });

@@ -1,6 +1,34 @@
 <template>
   <div class="min-w-max space-y-8">
     <section class="space-y-4">
+      <h2 class="text-lg font-medium">个人信息</h2>
+      <table class="table">
+        <tbody>
+          <tr class="hover">
+            <td class="label-text">昵称</td>
+            <td class="w-[300px] text-center">
+              <div class="join mr-12">
+                <input
+                  class="join-item btn-sm"
+                  type="text"
+                  name="userName"
+                  placeholder="请输入昵称"
+                  v-model="userName"
+                  @keyup.enter="updatePersonalUserInfo"
+                />
+                <button
+                  class="btn btn-outline btn-secondary btn-sm ml-1"
+                  @click="updatePersonalUserInfo"
+                >
+                  更新
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="space-y-4">
       <h2 class="text-lg font-medium">游戏模式</h2>
       <table class="table">
         <tbody>
@@ -214,12 +242,26 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
+import { usePersonalInfo } from "~/composables/user/personalInfo";
 import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { useUserStore } from "~/store/user";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
+
+const userStore = useUserStore();
+const { updatePersonalInfo } = usePersonalInfo();
+const userName = ref("");
+userName.value = userStore.userNameGetter!;
+// update user personal info
+const updatePersonalUserInfo = async () => {
+  if (!userName.value || userName.value === userStore.userNameGetter) {
+    return;
+  }
+  updatePersonalInfo({ username: userName.value });
+};
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();

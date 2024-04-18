@@ -1,5 +1,6 @@
 import { Inject, Injectable } from "@nestjs/common";
 
+import type { IUserInfo } from "./user.controller";
 import { DB, DbType } from "../global/providers/db.provider";
 import { logtoApi } from "../services/logtoService";
 
@@ -13,6 +14,15 @@ export class UserService {
       return data;
     } catch (error) {
       return undefined;
+    }
+  }
+
+  async updateUser(uId: string, user: IUserInfo) {
+    try {
+      await logtoApi.patch(`/api/users/${uId}`, user);
+      return true;
+    } catch (error) {
+      return false;
     }
   }
 }
