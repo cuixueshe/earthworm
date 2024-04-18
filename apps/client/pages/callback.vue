@@ -20,15 +20,14 @@ const { isLoading } = useHandleSignInCallback(async () => {
 });
 const { isShowModal, username, handleConfirm, initUsername, checkUsername } = useUsername();
 onMounted(() => {
-  const email = userStore.userInfo?.email!;
-  initUsername(email);
+  initUsername();
 });
-const gameStore = useGameStore();
 
-const { courseId } = await gameStore.startGame();
-const handleChangeUsername = () => {
+const handleChangeUsername = async () => {
+  const gameStore = useGameStore();
+  const { courseId } = await gameStore.startGame();
+
   handleConfirm(() => {
-    // 跳转到game页面
     navigateTo(`/main/${courseId}`);
   });
 };
@@ -42,17 +41,17 @@ const handleChangeUsername = () => {
     :open="isShowModal"
   >
     <div class="modal-box">
-      <h3 class="mb-2 text-lg font-bold">设置用户名</h3>
+      <h3 class="mb-4 text-lg font-bold">设置用户名</h3>
       <input
         v-model="username"
         type="text"
         placeholder="请输入用户名"
-        class="input input-bordered w-full"
+        class="input input-bordered input-sm w-full"
         @change="checkUsername"
         maxlength="20"
         @keydown.enter="handleChangeUsername"
       />
-      <span class="text-xs text-gray-400">用户名默认采用邮箱@符号前的部分，也可以自定义</span>
+      <span class="text-xs text-gray-400">默认采用邮箱@符号前的部分作为用户名，也可以自定义</span>
       <div class="modal-action">
         <!-- <form method="dialog">
           <button
