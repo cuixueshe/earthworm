@@ -10,9 +10,10 @@ export const useUserStore = defineStore("user", () => {
   function initUser(userInfoResponse: UserInfoResponse) {
     userInfo.value = userInfoResponse;
   }
-  async function updateUserInfo(e: Event) {
-    const res = await updateUserinfo({ name: (e.target as HTMLInputElement).value });
+  async function updateUserInfo(userInfo: UserInfoResponse) {
+    const res = await updateUserinfo(userInfo);
     initUser(res!.data as UserInfoResponse);
+    return res;
   }
   const userNameGetter = computed(() => {
     const user = toValue(userInfo);
