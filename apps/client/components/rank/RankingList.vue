@@ -26,7 +26,7 @@
         <a
           v-for="period in rankingStore.rankingPeriodList"
           role="tab"
-          class="tab dark:[--tab-border-color:#a6adbb]"
+          class="tab dark:[--tab-border-color:gray]"
           @click="rankingStore.togglePeriod(period.value)"
           :key="period.value"
           :class="{
