@@ -1,6 +1,6 @@
 import { h, render } from "vue";
 
-import MessageConstructor from "./message.vue";
+import MessageConstructor from "./Message.vue";
 
 export enum Type {
   SUCCESS = "success",
