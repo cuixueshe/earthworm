@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mdast": "^3.0.0",
+    "mdast": "3.0.0",
+    "@types/mdast": "^4.0.3",
+    "bing-translate-api": "^4.0.1",
     "mdast-util-from-markdown": "^2.0.0"
   }
 }
