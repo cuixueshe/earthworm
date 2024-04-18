@@ -45,7 +45,7 @@
 <script setup lang="ts">
 const QUESTIONS = [
   {
-    title: "如何向开发团队提出更多的功能需求",
+    title: "如何向开发团队提出更多的功能需求？",
     content: [
       "可以加入我们官方 Telegram 群组, 详细的描述您想要的功能以及告知这个功能想要解决的问题是什么",
       "也可以去 github/issues 来提交您想要的功能需求",
@@ -58,7 +58,7 @@ const QUESTIONS = [
     ],
   },
   {
-    title: "如何为 Earthworm 贡献代码",
+    title: "如何为 Earthworm 贡献代码？",
     content: [
       "我们提供了完整的贡献代码指南，可以先读一读(页脚处有链接)",
       "去 github/issues 逛一逛， 也可以基于你在使用中遇到的问题提一个 issue 并且自己尝试修复",
