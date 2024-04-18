@@ -14,7 +14,7 @@
                   name="username"
                   pattern="请输入用户名称"
                   v-model="userName"
-                  @keyup.enter="updateUserName"
+                  @keyup.enter="updateUserInfo"
                 />
               </div>
             </td>
@@ -251,7 +251,7 @@ const userName = userStore.userNameGetter;
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
-const { updateUserName } = useUserInfo();
+const { updateUserInfo } = useUserInfo();
 const {
   pronunciation,
   // 发音配置列表

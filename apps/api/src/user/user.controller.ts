@@ -9,8 +9,8 @@ import { UserService } from "./user.service";
 export class UserController {
   constructor(private readonly userService: UserService) {}
   @UseGuards(AuthGuard)
-  @Patch("info/updatename")
-  updateName(@User() user: UserEntity, @Body() dto: UpdateUserDto) {
-    return this.userService.updateUser(user, dto.name);
+  @Patch("info/updateinfo")
+  updateInfo(@User() user: UserEntity, @Body() dto: UpdateUserDto) {
+    return this.userService.updateUser(user, dto);
   }
 }

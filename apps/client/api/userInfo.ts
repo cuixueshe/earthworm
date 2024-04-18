@@ -2,8 +2,6 @@ import { type UserInfoResponse } from "@logto/vue";
 
 import { http } from "./http";
 
-export async function updateUsername(name: string) {
-  return await http.patch<UserInfoResponse, UserInfoResponse>("/user/info/updatename", {
-    name: name,
-  });
+export async function updateUserinfo(datas: Omit<Partial<UserInfoResponse>, "username">) {
+  return await http.patch<UserInfoResponse, UserInfoResponse>("/user/info/updateinfo", datas);
 }

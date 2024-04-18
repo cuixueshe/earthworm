@@ -3,6 +3,7 @@ import { Inject, Injectable } from "@nestjs/common";
 import { DB, DbType } from "../global/providers/db.provider";
 import { logtoApi } from "../services/logtoService";
 import { UserEntity } from "../user/user.decorators";
+import { UpdateUserDto } from "./model/user.dto";
 
 @Injectable()
 export class UserService {
@@ -16,9 +17,10 @@ export class UserService {
       return undefined;
     }
   }
-  async updateUser(user: UserEntity, username: string) {
+  async updateUser(user: UserEntity, dto: UpdateUserDto) {
+    console.log("%c Line:20 🌽 dto", "color:#4fff4B", dto);
     try {
-      const { data } = await logtoApi.patch(`/api/users/${user.userId}`, { name: username });
+      const { data } = await logtoApi.patch(`/api/users/${user.userId}`, dto);
       return { data };
     } catch (error) {
       return undefined;
