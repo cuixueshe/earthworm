@@ -20,22 +20,7 @@
             <h2 class="text-base font-medium text-black dark:text-gray-300 lg:text-lg">
               {{ qsItem.title }}
             </h2>
-            <span class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
+            <i class="icon i-ph-caret-right-bold h-6 w-6"></i>
           </summary>
           <div
             class="transition-max-height mb-4 overflow-hidden duration-500 ease-in-out dark:text-gray-500"
@@ -96,11 +81,11 @@ const QUESTIONS = [
 </script>
 
 <style scoped>
-.icon svg {
+.icon {
   transition: transform 0.5s ease;
 }
 
-details[open] .icon svg {
+details[open] .icon {
   transform: rotate(90deg);
 }
 
