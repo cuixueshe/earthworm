@@ -9,7 +9,7 @@
             class="h-5 w-5 text-gray-400 outline-none dark:text-gray-300"
             @click="hiddenAnswerTip"
           >
-            <i class="i-ph-x-bold h-full w-full"></i>
+            <span class="i-ph-x-bold h-full w-full"></span>
           </button>
         </div>
 

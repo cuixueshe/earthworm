@@ -29,7 +29,7 @@
                     {{ "@" + item.account }}
                   </p>
                 </div>
-                <i class="i-simple-icons-x h-6 w-6 self-start"></i>
+                <span class="i-simple-icons-twitter h-6 w-6 self-start text-[#03a9f4]"></span>
               </div>
               <p class="mt-4 text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                 {{ item.chinese }}
@@ -42,9 +42,9 @@
               <div class="mx-auto my-4"></div>
               <div class="mt-4 flex items-center justify-between text-xs">
                 <div class="flex items-center">
-                  <i
+                  <span
                     class="i-ph-heart-straight-fill mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
-                  ></i>
+                  ></span>
                   <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} likes</span>
                 </div>
                 <a

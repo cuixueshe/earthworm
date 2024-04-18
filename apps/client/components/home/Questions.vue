@@ -20,7 +20,7 @@
             <h2 class="text-base font-medium text-black dark:text-gray-300 lg:text-lg">
               {{ qsItem.title }}
             </h2>
-            <i class="icon i-ph-caret-right-bold h-6 w-6"></i>
+            <span class="icon i-ph-caret-right-bold h-6 w-6"></span>
           </summary>
           <div
             class="transition-max-height mb-4 overflow-hidden duration-500 ease-in-out dark:text-gray-500"

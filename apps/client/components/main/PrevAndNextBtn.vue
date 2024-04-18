@@ -8,7 +8,7 @@
         @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
       >
-        <i class="i-ph-caret-left h-12 w-12"></i>
+        <span class="i-ph-caret-left h-12 w-12"></span>
       </button>
     </div>
     <!-- right arrow button: go to next question -->
@@ -20,7 +20,7 @@
         totalQuestionsCount
         v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
       >
-        <i class="i-ph-caret-right h-12 w-12"></i>
+        <span class="i-ph-caret-right h-12 w-12"></span>
       </button>
     </div>
   </div>

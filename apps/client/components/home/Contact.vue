@@ -22,16 +22,15 @@
             >!
           </p>
 
-          <ul class="mt-6 flex gap-5">
+          <ul class="mt-6 flex gap-6 transition">
             <li>
               <a
                 href="https://x.com/cui_xiaorui"
                 rel="noreferrer"
                 target="_blank"
-                class="transition hover:opacity-75"
               >
                 <span class="sr-only">Twitter</span>
-                <i class="i-simple-icons-x h-6 w-6 self-start"></i>
+                <span class="icon-link icon-link-gray i-simple-icons-x"></span>
               </a>
             </li>
             <li>
@@ -39,10 +38,9 @@
                 href="https://t.me/+dohhXSz-5n1kZDQ1"
                 rel="noreferrer"
                 target="_blank"
-                class="transition hover:opacity-75"
               >
                 <span class="sr-only">Telegram</span>
-                <i class="i-simple-icons-telegram h-6 w-6 self-start"></i>
+                <span class="icon-link icon-link-gray i-simple-icons-telegram"></span>
               </a>
             </li>
             <li>
@@ -50,16 +48,15 @@
                 href="https://github.com/cuixueshe/earthworm"
                 rel="noreferrer"
                 target="_blank"
-                class="transition hover:opacity-75"
               >
                 <span class="sr-only">GitHub</span>
-                <i class="i-simple-icons-github h-6 w-6"></i>
+                <span class="icon-link icon-link-gray i-simple-icons-github"></span>
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-6 transition sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
             <p class="text-lg font-medium">Earthworm</p>
 
@@ -67,7 +64,7 @@
               <li>
                 <a
                   href="https://github.com/cuixueshe/earthworm"
-                  class="transition hover:opacity-75"
+                  class="hover:opacity-80"
                 >
                   开源
                 </a>
@@ -76,7 +73,7 @@
               <li>
                 <a
                   href="https://github.com/cuixueshe/earthworm/issues"
-                  class="transition hover:opacity-75"
+                  class="hover:opacity-80"
                 >
                   问题
                 </a>
@@ -85,7 +82,7 @@
               <li>
                 <a
                   href="https://github.com/cuixueshe/earthworm/issues/91"
-                  class="transition hover:opacity-75"
+                  class="hover:opacity-80"
                 >
                   贡献代码
                 </a>
@@ -100,7 +97,7 @@
               <li>
                 <a
                   href="https://t.me/+dohhXSz-5n1kZDQ1"
-                  class="transition hover:opacity-75"
+                  class="hover:opacity-80"
                 >
                   联系我们
                 </a>
@@ -140,6 +137,14 @@
 <script setup lang="ts"></script>
 
 <style scoped>
+.icon-link {
+  @apply h-6 w-6 self-start;
+}
+
+.icon-link-gray {
+  @apply text-gray-500 hover:text-black dark:hover:text-gray-300;
+}
+
 @keyframes typing {
   from {
     width: 0;
