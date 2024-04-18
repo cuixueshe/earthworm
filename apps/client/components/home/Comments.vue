@@ -29,7 +29,7 @@
                     {{ "@" + item.account }}
                   </p>
                 </div>
-                <i class="i-simple-icons-twitter h-6 w-6 self-start text-[#03a9f4]"></i>
+                <i class="i-simple-icons-x h-6 w-6 self-start"></i>
               </div>
               <p class="mt-4 text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                 {{ item.chinese }}
