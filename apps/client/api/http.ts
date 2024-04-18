@@ -25,8 +25,13 @@ http.interceptors.response.use(
   },
   (error) => {
     const { message } = error.response.data;
-    // REFACTOR: message may not be of type string but array
-    httpStatusErrorHandler?.(message, error.response.status);
+    if (Array.isArray(message)) {
+      message.forEach((item) => {
+        httpStatusErrorHandler?.(item, error.response.status);
+      });
+    } else {
+      httpStatusErrorHandler?.(message, error.response.status);
+    }
     return Promise.reject(error);
   },
 );
