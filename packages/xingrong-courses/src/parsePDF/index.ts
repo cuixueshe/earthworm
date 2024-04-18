@@ -1,6 +1,8 @@
 import fs from "fs";
 import path from "path";
+
 import pdf from "pdf-parse";
+
 import { inquire } from "./inquire";
 import { parse } from "./parser";
 
