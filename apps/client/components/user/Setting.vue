@@ -236,7 +236,6 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
-import { useUserInfo } from "~/composables/user/info";
 import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
@@ -247,11 +246,11 @@ import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const userStore = useUserStore();
+const updateUserInfo = userStore.updateUserInfo;
 const userName = userStore.userNameGetter;
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
-const { updateUserInfo } = useUserInfo();
 const {
   pronunciation,
   // 发音配置列表
