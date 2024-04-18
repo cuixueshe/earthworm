@@ -150,10 +150,7 @@ export function useInput({
   function findNextIncorrectWordNew() {
     if (!currentEditWord) return;
 
-    const wordIndex = userInputWords.findIndex(
-      (w) => w.id === currentEditWord.id
-    );
-
+    const wordIndex = userInputWords.findIndex((w) => w.id === currentEditWord.id);
 
     let len = userInputWords.length;
     for (let i = wordIndex + 1; i < len; i++) {
@@ -166,7 +163,7 @@ export function useInput({
 
   // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
   function formatInputText(word: string) {
-    return word.toLocaleLowerCase().replace(/‘|’|“|"|”/g, "'")
+    return word.toLocaleLowerCase().replace(/‘|’|“|"|”/g, "'");
   }
 
   // 当前编辑的单词是否为最后一个错误单词
@@ -190,10 +187,7 @@ export function useInput({
     updateActiveWord(word.start);
   }
 
-  function submitAnswer(
-    correctCallback?: () => void,
-    wrongCallback?: () => void
-  ) {
+  function submitAnswer(correctCallback?: () => void, wrongCallback?: () => void) {
     if (mode === Mode.Fix) return;
     resetAllWordActive();
     markIncorrectWord();
@@ -237,9 +231,7 @@ export function useInput({
   function findPreviousIncorrectWord() {
     if (!currentEditWord) return;
 
-    const wordIndex = userInputWords.findIndex(
-      (w) => w.id === currentEditWord.id
-    );
+    const wordIndex = userInputWords.findIndex((w) => w.id === currentEditWord.id);
 
     for (let i = wordIndex - 1; i >= 0; i--) {
       const word = userInputWords[i];
@@ -263,7 +255,7 @@ export function useInput({
   }
 
   function handleSpaceSubmitAnswer(
-    useSpaceSubmitAnswer: KeyboardInputOptions["useSpaceSubmitAnswer"]
+    useSpaceSubmitAnswer: KeyboardInputOptions["useSpaceSubmitAnswer"],
   ) {
     if (useSpaceSubmitAnswer?.enable) {
       submitAnswer(
@@ -272,7 +264,7 @@ export function useInput({
         },
         () => {
           useSpaceSubmitAnswer?.errorCallback?.();
-        }
+        },
       );
     }
   }
@@ -285,45 +277,34 @@ export function useInput({
     };
   }
 
-  function handleKeyboardInput(
-    e: KeyboardEvent,
-    options?: KeyboardInputOptions
-  ) {
+  function handleKeyboardInput(e: KeyboardEvent, options?: KeyboardInputOptions) {
     // 禁止方向键移动
     if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
       e.preventDefault();
       return;
     }
 
-    // Fix 下禁止输入除了空格/退格之外的其他字符
-    if (mode === Mode.Fix && e.code !== "Space" && e.code !== "Backspace") {
-      // TODO: 这里会导致一些浏览器快捷键不能使用，后续思考一下怎么处理
-      e.preventDefault();
-      return;
-    }
-
     // Fix_Input/Input 下启用空格提交 且 在最后一个单词位置
-    if (e.code === "Space" && lastWordIsActive()) {
+    if (mode !== Mode.Fix && e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
       e.stopPropagation(); // 阻止事件冒泡
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
       return;
     }
 
-    // Fix 下使用退格键定位到第一个错误单词并清除
-    if (mode === Mode.Fix && e.code === "Backspace") {
-      e.preventDefault();
+    // Fix 模式下 允许用户按下任意键去修改第一个错误的单词
+    // 并且按下的这个键直接上屏
+    if (mode === Mode.Fix) {
+      if (e.code === "Space" || e.code === "Backspace") {
+        e.preventDefault();
+      }
       fixFirstIncorrectWord();
       inputChangedCallback?.(e);
       return;
     }
 
     // Fix_Input 下启用空格提交 且 在最后一个错误单词位置
-    if (
-      mode === Mode.Fix_Input &&
-      e.code === "Space" &&
-      isLastIncorrectWord()
-    ) {
+    if (mode === Mode.Fix_Input && e.code === "Space" && isLastIncorrectWord()) {
       e.preventDefault();
       e.stopPropagation();
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
@@ -331,11 +312,7 @@ export function useInput({
     }
 
     // Fix_Input 模式下当前编辑单词为空时，启用退格删除上一个错误单词
-    if (
-      mode === Mode.Fix_Input &&
-      e.code === "Backspace" &&
-      isEmptyOfCurrentEditWord()
-    ) {
+    if (mode === Mode.Fix_Input && e.code === "Backspace" && isEmptyOfCurrentEditWord()) {
       e.preventDefault();
       activePreviousIncorrectWord();
       inputChangedCallback?.(e);

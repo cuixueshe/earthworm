@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-full relative">
+  <div class="relative flex h-full items-center justify-center">
     <div v-if="!isStart">
       <p>准备好了吗？(按任意键开启游戏)</p>
     </div>
@@ -18,6 +18,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";

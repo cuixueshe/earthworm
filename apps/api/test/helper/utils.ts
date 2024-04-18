@@ -1,13 +1,14 @@
-import { JwtModule } from '@nestjs/jwt';
-import { sql } from 'drizzle-orm';
-import { DbType } from 'src/global/providers/db.provider';
-import { GlobalModule } from '../../src/global/global.module';
-import { fetchToken } from '../../src/services/logtoService';
-import { MockRedisModule } from './mockRedis';
+import { JwtModule } from "@nestjs/jwt";
+import { sql } from "drizzle-orm";
+import { DbType } from "src/global/providers/db.provider";
+
+import { GlobalModule } from "../../src/global/global.module";
+import { fetchToken } from "../../src/services/logtoService";
+import { MockRedisModule } from "./mockRedis";
 
 export async function cleanDB(db: DbType) {
   await db.execute(
-    sql`TRUNCATE TABLE courses, statements, "user-progress", "course-history" RESTART IDENTITY CASCADE;`,
+    sql`TRUNCATE TABLE courses, statements, "user-progress", "course-history", "user-learn-record" RESTART IDENTITY CASCADE;`,
   );
 }
 
@@ -21,6 +22,6 @@ export const testImportModules = [
   GlobalModule,
   JwtModule.register({
     secret: process.env.SECRET,
-    signOptions: { expiresIn: '7d' },
+    signOptions: { expiresIn: "7d" },
   }),
 ];

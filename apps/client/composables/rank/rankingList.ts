@@ -1,11 +1,8 @@
 import { defineStore } from "pinia";
 import { ref, watch } from "vue";
-import {
-  fetchProgressRank,
-  type ProgressRankVo,
-  type RankingItemType,
-  type RankingSelfType,
-} from "~/api/rank";
+
+import type { ProgressRankVo, RankingItemType, RankingSelfType } from "~/api/rank";
+import { fetchProgressRank } from "~/api/rank";
 import Message from "~/components/main/Message/useMessage";
 
 let rankingCache: Record<string, ProgressRankVo> = {};
@@ -36,12 +33,7 @@ export function cacheRanking() {
 }
 
 export const useRanking = defineStore("ranking", () => {
-  const {
-    saveRankingCache,
-    getRankingCache,
-    hasRankingCache,
-    cleanRankingCache,
-  } = cacheRanking();
+  const { saveRankingCache, getRankingCache, hasRankingCache, cleanRankingCache } = cacheRanking();
 
   const rankModal = ref(false); // 需要作用于不同页面
   const isLoading = ref(false);

@@ -1,2 +1,1 @@
 export { db } from "./db";
-

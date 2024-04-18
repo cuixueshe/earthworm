@@ -1,5 +1,5 @@
-import { defineStore } from "pinia";
 import { type UserInfoResponse } from "@logto/vue";
+import { defineStore } from "pinia";
 import { computed, ref, toValue } from "vue";
 
 export const useUserStore = defineStore("user", () => {

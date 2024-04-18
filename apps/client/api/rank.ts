@@ -18,7 +18,5 @@ export interface ProgressRankVo {
 }
 
 export async function fetchProgressRank(period: string = "weekly") {
-  return await http.get<ProgressRankVo, ProgressRankVo>(
-    `/rank/progress/${period}`
-  );
+  return await http.get<ProgressRankVo, ProgressRankVo>(`/rank/progress/${period}`);
 }

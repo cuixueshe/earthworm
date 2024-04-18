@@ -1,15 +1,16 @@
-import { Test } from '@nestjs/testing';
-import { createFirstCourse } from '../../../test/fixture/course';
-import { createUser } from '../../../test/fixture/user';
-import { cleanDB, testImportModules } from '../../../test/helper/utils';
-import { endDB } from '../../common/db';
-import { DB, DbType } from '../../global/providers/db.provider';
-import { UserProgressService } from '../user-progress.service';
+import { Test } from "@nestjs/testing";
+
+import { createFirstCourse } from "../../../test/fixture/course";
+import { createUser } from "../../../test/fixture/user";
+import { cleanDB, testImportModules } from "../../../test/helper/utils";
+import { endDB } from "../../common/db";
+import { DB, DbType } from "../../global/providers/db.provider";
+import { UserProgressService } from "../user-progress.service";
 
 const userData = createUser();
 const course = createFirstCourse();
 
-describe('user-progress service', () => {
+describe("user-progress service", () => {
   let userProgressService: UserProgressService;
   let db: DbType;
 
@@ -26,7 +27,7 @@ describe('user-progress service', () => {
     await endDB();
   });
 
-  it('should update user progress', async () => {
+  it("should update user progress", async () => {
     await userProgressService.update(userData.userId, course.id);
 
     const data = await userProgressService.findOne(userData.userId);
@@ -46,7 +47,6 @@ async function setupTesting() {
 
   return {
     db: moduleRef.get<DbType>(DB),
-    userProgressService:
-      moduleRef.get<UserProgressService>(UserProgressService),
+    userProgressService: moduleRef.get<UserProgressService>(UserProgressService),
   };
 }

@@ -1,21 +1,22 @@
-import { isTheDay, type Day } from './date';
-const theLastDayOfTheLunarYear:Day = {
+import type { Day } from "./date";
+import { isTheDay } from "./date";
+
+const theLastDayOfTheLunarYear: Day = {
   year: 2024,
   month: 2,
-  day: 9
-}
+  day: 9,
+};
 
-const theFirstDayOfTheLunarYear:Day = {
+const theFirstDayOfTheLunarYear: Day = {
   year: 2024,
   month: 2,
-  day: 10
-}
-
+  day: 10,
+};
 
 export function isTheFirstDayOfLunarYear() {
-  return isTheDay(theFirstDayOfTheLunarYear)
+  return isTheDay(theFirstDayOfTheLunarYear);
 }
 
 export function isTheLastDayOfLunarYear() {
-  return isTheDay(theLastDayOfTheLunarYear)
+  return isTheDay(theLastDayOfTheLunarYear);
 }

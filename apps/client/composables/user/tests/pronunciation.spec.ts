@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
+
 import { PronunciationType, usePronunciation } from "../pronunciation";
 
 const PRONUNCIATION_TYPE = "pronunciationType";

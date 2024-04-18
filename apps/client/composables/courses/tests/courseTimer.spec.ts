@@ -1,5 +1,6 @@
 // CourseTimer.spec.js
 import { beforeEach, describe, expect, it, vi } from "vitest";
+
 import { courseTimer } from "../courseTimer";
 
 describe("course timers", () => {

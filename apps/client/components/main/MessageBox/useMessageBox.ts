@@ -1,4 +1,7 @@
-import { createVNode, render, type ComponentPublicInstance } from "vue";
+import type { ComponentPublicInstance } from "vue";
+
+import { createVNode, render } from "vue";
+
 import type { IMessageBoxProps } from "~/composables/messageBox/modal";
 import MessageBoxConstructor from "./MessageBox.vue";
 
@@ -46,10 +49,7 @@ const getAppendToElement = (props: any): HTMLElement => {
   return appendTo;
 };
 
-const teardown = (
-  vm: ComponentPublicInstance<MessageBoxProps>,
-  container: HTMLElement
-) => {
+const teardown = (vm: ComponentPublicInstance<MessageBoxProps>, container: HTMLElement) => {
   render(null, container);
   messageInstance.delete(vm);
 };
@@ -96,7 +96,7 @@ const showMessage = (options: any) => {
 function MessageBox(
   content: string = "Are you sure?",
   title: string = "Tips",
-  options?: MessageBoxOptions
+  options?: MessageBoxOptions,
 ): Promise<Action> {
   return new Promise((resolve, reject) => {
     const vm = showMessage(
@@ -108,8 +108,8 @@ function MessageBox(
           confirmBtnText: "Confirm",
           cancelBtnText: "Cancel",
         },
-        options
-      )
+        options,
+      ),
     );
     messageInstance.set(vm, {
       options,

@@ -1,5 +1,7 @@
 import { beforeEach } from "node:test";
+
 import { describe, expect, it, vi } from "vitest";
+
 import { fireEvent } from "~/tests/helper/fireEvent";
 import {
   cancelShortcut,
@@ -144,7 +146,7 @@ describe("keyboardShortcuts", () => {
       cancelShortcut("*", command);
       fireEvent.keyDown({ key: "1" });
 
-      expect(command).not.toBeCalled()
+      expect(command).not.toBeCalled();
     });
   });
 

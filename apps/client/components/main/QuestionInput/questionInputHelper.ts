@@ -11,7 +11,7 @@ export function useQuestionInput() {
 
   function blurInput() {
     focusing.value = false;
-    inputEl.value?.blur()
+    inputEl.value?.blur();
   }
 
   function setInputCursorPosition(position: number) {
@@ -72,11 +72,8 @@ export function getWordWidth(word: string) {
   // 字符串宽度
   const width = word
     .toLocaleLowerCase()
-    .split('')
-    .reduce(
-      (totalWidth, letter) => totalWidth + (letterWidths[letter] || OTHER_LETTER_WIDTH),
-      0
-    );
+    .split("")
+    .reduce((totalWidth, letter) => totalWidth + (letterWidths[letter] || OTHER_LETTER_WIDTH), 0);
 
   // 左右留白
   return width + 1;

@@ -16,6 +16,8 @@
     "cypress:open": "cypress open"
   },
   "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.7.4",
+    "@iconify-json/ph": "^1.1.12",
     "@nuxt/test-utils": "^3.10.0",
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@pinia/testing": "^0.1.3",

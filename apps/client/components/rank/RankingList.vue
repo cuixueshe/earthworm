@@ -4,13 +4,11 @@
     class="modal"
     :open="rankingStore.rankModal"
   >
-    <div
-      class="modal-box w-[420px] h-[568px] px-4 pb-12 flex flex-col overflow-hidden"
-    >
+    <div class="modal-box flex h-[568px] w-[420px] flex-col overflow-hidden px-4 pb-12">
       <!-- close button -->
       <form method="dialog">
         <button
-          class="absolute btn btn-sm btn-circle btn-ghost right-2 top-2"
+          class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2"
           @click="rankingStore.hideRankModal"
         >
           ✕
@@ -18,7 +16,7 @@
       </form>
 
       <!-- title -->
-      <h2 class="mb-4 text-xl font-bold text-center">排行榜</h2>
+      <h2 class="mb-4 text-center text-xl font-bold">排行榜</h2>
 
       <!-- tab -->
       <div
@@ -32,8 +30,7 @@
           @click="rankingStore.togglePeriod(period.value)"
           :key="period.value"
           :class="{
-            'tab-active text-orange-500':
-              period.value === rankingStore.currentPeriod,
+            'tab-active text-orange-500': period.value === rankingStore.currentPeriod,
           }"
           >{{ period.label }}</a
         >
@@ -44,7 +41,7 @@
         <!-- list -->
         <div
           v-if="rankingStore.rankingList.length > 0"
-          class="flex-1 px-4 py-2 my-1 overflow-y-auto"
+          class="my-1 flex-1 overflow-y-auto px-4 py-2"
         >
           <RankRankingItem
             v-for="({ username, count }, index) in rankingStore.rankingList"
@@ -56,7 +53,7 @@
         <!-- empty -->
         <div
           v-else
-          class="flex items-center justify-center flex-1 text-gray-500"
+          class="flex flex-1 items-center justify-center text-gray-500"
         >
           还没有小伙伴上榜哦，快来霸榜吧！🏆
         </div>
@@ -81,6 +78,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+
 import { useRanking } from "~/composables/rank/rankingList";
 import { registerShortcut } from "~/utils/keyboardShortcuts";
 import { cancelShortcut } from "../../utils/keyboardShortcuts";

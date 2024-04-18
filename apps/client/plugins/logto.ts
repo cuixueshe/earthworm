@@ -1,5 +1,8 @@
+import type { LogtoConfig } from "@logto/vue";
+
+import { createLogto, useLogto, UserScope } from "@logto/vue";
 import { defineNuxtPlugin, useRuntimeConfig } from "nuxt/app";
-import { createLogto, type LogtoConfig, UserScope, useLogto } from "@logto/vue";
+
 import { setupAuth } from "~/services/auth";
 
 export default defineNuxtPlugin((nuxtApp) => {

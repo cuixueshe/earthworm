@@ -1,4 +1,5 @@
 import { h, render } from "vue";
+
 import MessageConstructor from "./message.vue";
 
 export enum Type {

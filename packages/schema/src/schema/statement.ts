@@ -1,4 +1,5 @@
 import { integer, pgTable, serial, text } from "drizzle-orm/pg-core";
+
 import { course } from "./course";
 
 export const statement = pgTable("statements", {

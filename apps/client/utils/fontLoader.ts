@@ -1,1 +1,1 @@
-export const fontFetch = (url: URL) => fetch(url, { cache: "force-cache" })
+export const fontFetch = (url: URL) => fetch(url, { cache: "force-cache" });

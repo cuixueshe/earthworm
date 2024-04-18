@@ -1,11 +1,13 @@
-import { Module } from '@nestjs/common';
-import { CourseService } from './course.service';
-import { CourseController } from './course.controller';
-import { GlobalModule } from '../global/global.module';
-import { UserProgressService } from '../user-progress/user-progress.service';
-import { RankService } from '../rank/rank.service';
-import { CourseHistoryService } from '../course-history/course-history.service';
-import { UserModule } from '../user/user.module';
+import { Module } from "@nestjs/common";
+
+import { CourseHistoryService } from "../course-history/course-history.service";
+import { GlobalModule } from "../global/global.module";
+import { RankService } from "../rank/rank.service";
+import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
+import { UserProgressService } from "../user-progress/user-progress.service";
+import { UserModule } from "../user/user.module";
+import { CourseController } from "./course.controller";
+import { CourseService } from "./course.service";
 
 @Module({
   imports: [GlobalModule, UserModule],
@@ -14,6 +16,7 @@ import { UserModule } from '../user/user.module';
     UserProgressService,
     RankService,
     CourseHistoryService,
+    UserLearnRecordService,
   ],
   controllers: [CourseController],
   exports: [CourseService],

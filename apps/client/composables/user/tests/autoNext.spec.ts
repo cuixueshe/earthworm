@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
+
 import { AUTO_NEXT_QUESTION, useAutoNextQuestion } from "../autoNext";
 
 describe("use auto next question", () => {

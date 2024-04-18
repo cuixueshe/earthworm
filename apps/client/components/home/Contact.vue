@@ -1,25 +1,23 @@
 <template>
   <footer id="contact">
-    <div
-      class="mx-auto max-w-screen-xl space-y-6 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-6"
-    >
+    <div class="mx-auto max-w-screen-xl space-y-6 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-6">
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div>
           <div class="flex items-center">
             <img
               width="48"
               height="48"
-              class="rounded-md overflow-hidden mr-6"
+              class="mr-6 overflow-hidden rounded-md"
               src="/logo.png"
               alt="earth-worm-logo"
             />
-            <span class="text-3xl mt-4">Earthworm</span>
+            <span class="mt-4 text-3xl">Earthworm</span>
           </div>
 
-          <p class="mt-4 max-w-[16rem] text-base leading-relaxed typing">
+          <p class="typing mt-4 max-w-[16rem] text-base leading-relaxed">
             一起来加入我们
             <span
-              class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 dark:from-purple-600 dark:to-gray-100"
+              class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:to-gray-100"
               >Earthworm</span
             >!
           </p>
@@ -97,11 +95,9 @@
           </ul>
         </div>
 
-        <div
-          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
-        >
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
-            <p class="font-medium text-lg">Earthworm</p>
+            <p class="text-lg font-medium">Earthworm</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -134,7 +130,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-lg">团队</p>
+            <p class="text-lg font-medium">团队</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>

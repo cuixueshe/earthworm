@@ -4,7 +4,7 @@ import { ref } from "vue";
 export function useLocalStorageBoolean(
   key: string,
   // 默认开启
-  defaultValue: boolean = true
+  defaultValue: boolean = true,
 ) {
   const valueRef = ref(defaultValue);
 

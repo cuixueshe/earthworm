@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto text-center my-5">
+  <div class="mx-auto my-5 text-center">
     <h2
-      class="text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-gray-200 dark:from-purple-600 dark:to-gray-100"
+      class="bg-gradient-to-r from-purple-600 to-gray-200 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent dark:from-purple-600 dark:to-gray-100 lg:text-4xl xl:text-5xl"
     >
       {{ title }}
     </h2>
@@ -11,9 +11,7 @@
         v-for="(descItem, descIndex) in description"
         :key="descIndex"
       >
-        <p
-          class="pt-2 text-center dark:text-gray-300 text-gray-800 text-sm lg:text-xl"
-        >
+        <p class="pt-2 text-center text-sm text-gray-800 dark:text-gray-300 lg:text-xl">
           {{ descItem }}
         </p>
       </template>

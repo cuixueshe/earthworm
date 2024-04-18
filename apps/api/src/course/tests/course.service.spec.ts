@@ -1,28 +1,29 @@
-import { course, statement } from '@earthworm/schema';
-import { Test } from '@nestjs/testing';
-import {
-  createFirstCourse,
-  createSecondCourse,
-} from '../../../test/fixture/course';
-import { createStatement } from '../../../test/fixture/statement';
-import { createUser } from '../../../test/fixture/user';
-import { cleanDB, testImportModules } from '../../../test/helper/utils';
-import { CourseHistoryService } from '../../course-history/course-history.service';
-import { DB, type DbType } from '../../global/providers/db.provider';
-import { RankService } from '../../rank/rank.service';
-import { UserProgressService } from '../../user-progress/user-progress.service';
-import { CourseService } from '../course.service';
+import { Test } from "@nestjs/testing";
+
+import { course, statement } from "@earthworm/schema";
+import type { DbType } from "../../global/providers/db.provider";
+import { createFirstCourse, createSecondCourse } from "../../../test/fixture/course";
+import { createStatement } from "../../../test/fixture/statement";
+import { createUser } from "../../../test/fixture/user";
+import { cleanDB, testImportModules } from "../../../test/helper/utils";
+import { CourseHistoryService } from "../../course-history/course-history.service";
+import { DB } from "../../global/providers/db.provider";
+import { RankService } from "../../rank/rank.service";
+import { UserLearnRecordService } from "../../user-learn-record/user-learn-record.service";
+import { UserProgressService } from "../../user-progress/user-progress.service";
+import { CourseService } from "../course.service";
 
 const user = createUser();
 const firstCourse = createFirstCourse();
 const secondCourse = createSecondCourse();
 
-describe('course service', () => {
+describe("course service", () => {
   let db: DbType;
   let courseService: CourseService;
   let userProgressService: UserProgressService;
   let rankService: RankService;
   let courseHistoryService: CourseHistoryService;
+  let userLearnRecordService: UserLearnRecordService;
 
   beforeAll(async () => {
     const testHelper = await setupTesting();
@@ -33,6 +34,7 @@ describe('course service', () => {
     userProgressService = testHelper.UserProgressService;
     rankService = testHelper.rankService;
     courseHistoryService = testHelper.courseHistoryService;
+    userLearnRecordService = testHelper.userLearnRecordService;
   });
 
   afterAll(async () => {
@@ -43,7 +45,7 @@ describe('course service', () => {
     jest.clearAllMocks();
   });
 
-  it('should return try course data', async () => {
+  it("should return try course data", async () => {
     const course = await courseService.tryCourse();
 
     expect(course).toEqual(
@@ -54,7 +56,7 @@ describe('course service', () => {
     expect(course.statements.length).toBeGreaterThan(0);
   });
 
-  it('should return course details with statements given a course ID', async () => {
+  it("should return course details with statements given a course ID", async () => {
     const course = await courseService.find(firstCourse.id);
 
     expect(course).toEqual(
@@ -65,20 +67,20 @@ describe('course service', () => {
     expect(course.statements.length).toBeGreaterThan(0);
   });
 
-  it('should return an array of all courses', async () => {
+  it("should return an array of all courses", async () => {
     const courses = await courseService.findAll();
 
     expect(courses.length).toBeGreaterThan(0);
   });
 
-  describe('findNext', () => {
-    it('should return the next course given a course ID', async () => {
+  describe("findNext", () => {
+    it("should return the next course given a course ID", async () => {
       const nextCourse = await courseService.findNext(firstCourse.id);
 
       expect(nextCourse.id).toBe(secondCourse.id);
     });
 
-    it('should return undefined if there is no next course', async () => {
+    it("should return undefined if there is no next course", async () => {
       const courseId = 9999; // 使用一个不存在的课程 ID
 
       const nextCourse = await courseService.findNext(courseId);
@@ -87,18 +89,13 @@ describe('course service', () => {
     });
   });
 
-  it('should update user progress and rank after completing a course', async () => {
-    const { nextCourse } = await courseService.completeCourse(
-      user,
-      firstCourse.id,
-    );
+  it("should update user progress and rank after completing a course", async () => {
+    const { nextCourse } = await courseService.completeCourse(user, firstCourse.id);
 
     expect(nextCourse.id).toBe(secondCourse.id);
-    expect(userProgressService.update).toHaveBeenCalledWith(
-      user.userId,
-      secondCourse.id,
-    );
+    expect(userProgressService.update).toHaveBeenCalledWith(user.userId, secondCourse.id);
     expect(rankService.userFinishCourse).toHaveBeenCalledWith(user.userId);
+    expect(userLearnRecordService.userLearnRecord).toHaveBeenCalledWith(user.userId);
     expect(courseHistoryService.setCompletionCount).toHaveBeenCalledWith(
       user.userId,
       firstCourse.id,
@@ -121,6 +118,9 @@ async function setupTesting() {
   const mockCourseHistoryService = {
     setCompletionCount: jest.fn(),
   };
+  const mockUserLearnRecordService = {
+    userLearnRecord: jest.fn(),
+  };
 
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
@@ -129,16 +129,16 @@ async function setupTesting() {
       { provide: UserProgressService, useValue: mockUserProgressService },
       { provide: RankService, useValue: mockRankService },
       { provide: CourseHistoryService, useValue: mockCourseHistoryService },
+      { provide: UserLearnRecordService, useValue: mockUserLearnRecordService },
     ],
   }).compile();
 
   return {
     courseService: moduleRef.get<CourseService>(CourseService),
-    UserProgressService:
-      moduleRef.get<UserProgressService>(UserProgressService),
+    UserProgressService: moduleRef.get<UserProgressService>(UserProgressService),
     rankService: moduleRef.get<RankService>(RankService),
-    courseHistoryService:
-      moduleRef.get<CourseHistoryService>(CourseHistoryService),
+    courseHistoryService: moduleRef.get<CourseHistoryService>(CourseHistoryService),
+    userLearnRecordService: moduleRef.get<UserLearnRecordService>(UserLearnRecordService),
     db: moduleRef.get<DbType>(DB),
     moduleRef,
   };

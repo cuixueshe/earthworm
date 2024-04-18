@@ -1,8 +1,9 @@
-import { courseHistory } from '@earthworm/schema';
-import { Inject, Injectable } from '@nestjs/common';
-import { and, eq } from 'drizzle-orm';
-import { UserEntity } from 'src/user/user.decorators';
-import { DB, DbType } from '../global/providers/db.provider';
+import { Inject, Injectable } from "@nestjs/common";
+import { and, eq } from "drizzle-orm";
+import { UserEntity } from "src/user/user.decorators";
+
+import { courseHistory } from "@earthworm/schema";
+import { DB, DbType } from "../global/providers/db.provider";
 
 @Injectable()
 export class CourseHistoryService {
@@ -12,12 +13,7 @@ export class CourseHistoryService {
     return await this.db
       .select()
       .from(courseHistory)
-      .where(
-        and(
-          eq(courseHistory.userId, userId),
-          eq(courseHistory.courseId, courseId),
-        ),
-      );
+      .where(and(eq(courseHistory.userId, userId), eq(courseHistory.courseId, courseId)));
   }
 
   async create(userId: string, courseId: number) {
@@ -34,12 +30,7 @@ export class CourseHistoryService {
       .set({
         completionCount: count + 1,
       })
-      .where(
-        and(
-          eq(courseHistory.userId, userId),
-          eq(courseHistory.courseId, courseId),
-        ),
-      );
+      .where(and(eq(courseHistory.userId, userId), eq(courseHistory.courseId, courseId)));
   }
 
   async setCompletionCount(userId: string, courseId: number) {
@@ -52,9 +43,6 @@ export class CourseHistoryService {
   }
 
   async findAll(user: UserEntity) {
-    return await this.db
-      .select()
-      .from(courseHistory)
-      .where(eq(courseHistory.userId, user.userId));
+    return await this.db.select().from(courseHistory).where(eq(courseHistory.userId, user.userId));
   }
 }

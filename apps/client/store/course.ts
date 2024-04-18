@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
+
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
 import { useActiveCourseId } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
@@ -28,15 +29,14 @@ export const useCourseStore = defineStore("course", () => {
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
-    currentStatement.value =
-      currentCourse.value?.statements[statementIndex.value];
+    currentStatement.value = currentCourse.value?.statements[statementIndex.value];
   });
 
   watch(
     () => statementIndex.value,
     () => {
       saveProgress(currentCourse.value?.id!, statementIndex.value);
-    }
+    },
   );
 
   const words = computed(() => {
@@ -56,10 +56,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function toNextStatement() {
-    statementIndex.value = Math.min(
-      statementIndex.value + 1,
-      totalQuestionsCount.value - 1
-    );
+    statementIndex.value = Math.min(statementIndex.value + 1, totalQuestionsCount.value - 1);
   }
 
   function resetStatementIndex() {
@@ -76,10 +73,7 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function checkCorrect(input: string) {
-    return (
-      input.toLocaleLowerCase() ===
-      currentStatement.value?.english.toLocaleLowerCase()
-    );
+    return input.toLocaleLowerCase() === currentStatement.value?.english.toLocaleLowerCase();
   }
 
   async function completeCourse(cId: number) {

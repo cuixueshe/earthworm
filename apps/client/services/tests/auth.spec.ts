@@ -1,7 +1,9 @@
-import { vi, it, expect, describe, beforeAll } from "vitest";
-import { getSignInCallback, signIn, setupAuth } from "../auth";
 import { useLogto } from "@logto/vue";
-import {} from "../auth";
+import { beforeAll, describe, expect, it, vi } from "vitest";
+
+import { getSignInCallback, setupAuth, signIn } from "../auth";
+
+import "../auth";
 
 vi.mock("@logto/vue");
 

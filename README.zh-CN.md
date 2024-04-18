@@ -26,6 +26,12 @@
 - **Redis version >= 5.0.0**
 - 项目依赖 **Docker**，所以请确保你本地已安装并成功运行
 
+### 编辑器
+
+#### VSCode
+
+- 安装推荐的插件 [extensions.json](./.vscode/extensions.json)
+
 ```bash
 docker --version # Docker version 24.0.7, build afdd53b
 
