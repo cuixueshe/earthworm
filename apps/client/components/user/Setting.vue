@@ -12,9 +12,10 @@
                   class="btn join-item btn-sm"
                   type="text"
                   name="username"
-                  pattern="请输入用户名称"
-                  v-model="userName"
-                  @keyup.enter="updateUserInfo"
+                  pattern="请输入昵称"
+                  v-model="nickname"
+                  :maxlength="20"
+                  @keyup.enter="handleUpdateNickname"
                 />
               </div>
             </td>
@@ -246,8 +247,13 @@ import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const userStore = useUserStore();
-const updateUserInfo = userStore.updateUserInfo;
-const userName = userStore.userNameGetter;
+const nickname = ref(userStore.userNameGetter);
+const handleUpdateNickname = async () => {
+  await userStore.updateUserInfo({
+    ...userStore.userInfo!,
+    name: nickname.value,
+  });
+};
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
