@@ -8,21 +8,7 @@
         @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="3em"
-          height="3em"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1"
-            d="m15 5l-6 7l6 7"
-          />
-        </svg>
+        <i class="i-ph-caret-left h-12 w-12"></i>
       </button>
     </div>
     <!-- right arrow button: go to next question -->
@@ -34,21 +20,7 @@
         totalQuestionsCount
         v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="3em"
-          height="3em"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1"
-            d="m9 5l6 7l-6 7"
-          />
-        </svg>
+        <i class="i-ph-caret-right h-12 w-12"></i>
       </button>
     </div>
   </div>
