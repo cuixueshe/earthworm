@@ -234,6 +234,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 
+import Message from "~/components/main/Message/useMessage";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
@@ -248,11 +249,15 @@ import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 const dialogBoxRef = ref<HTMLElement | null>(null);
 const userStore = useUserStore();
 const nickname = ref(userStore.userNameGetter);
-const handleUpdateNickname = async () => {
-  await userStore.updateUserInfo({
+const handleUpdateNickname = async (event: KeyboardEvent) => {
+  const result = await userStore.updateUserInfo({
     ...userStore.userInfo!,
     name: nickname.value,
   });
+  if (result) {
+    (event.target as HTMLInputElement).blur();
+    Message.success("修改成功");
+  }
 };
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
