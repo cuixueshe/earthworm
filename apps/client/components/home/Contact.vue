@@ -22,16 +22,16 @@
             >!
           </p>
 
-          <ul class="mt-8 flex gap-6">
+          <ul class="mt-6 flex gap-5">
             <li>
               <a
-                href="https://twitter.com/cui_xiaorui"
+                href="https://x.com/cui_xiaorui"
                 rel="noreferrer"
                 target="_blank"
                 class="transition hover:opacity-75"
               >
                 <span class="sr-only">Twitter</span>
-                <i class="i-simple-icons-twitter h-6 w-6 self-start hover:text-[#03a9f4]"></i>
+                <i class="i-simple-icons-x h-6 w-6 self-start"></i>
               </a>
             </li>
             <li>
@@ -42,7 +42,7 @@
                 class="transition hover:opacity-75"
               >
                 <span class="sr-only">Telegram</span>
-                <i class="i-simple-icons-telegram h-6 w-6 self-start hover:text-[#0e8ed4]"></i>
+                <i class="i-simple-icons-telegram h-6 w-6 self-start"></i>
               </a>
             </li>
             <li>
@@ -53,7 +53,7 @@
                 class="transition hover:opacity-75"
               >
                 <span class="sr-only">GitHub</span>
-                <i class="i-simple-icons-github h-6 w-6 hover:text-gray-600"></i>
+                <i class="i-simple-icons-github h-6 w-6"></i>
               </a>
             </li>
           </ul>
