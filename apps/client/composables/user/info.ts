@@ -7,7 +7,7 @@ export function useUserInfo() {
   const userStore = useUserStore();
   async function updateUserInfo(e: Event) {
     const res = await updateUserinfo({ name: (e.target as HTMLInputElement).value });
-    userStore.initUser(res.data as UserInfoResponse);
+    userStore.initUser(res!.data as UserInfoResponse);
   }
   return {
     updateUserInfo,
