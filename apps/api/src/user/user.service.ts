@@ -18,7 +18,6 @@ export class UserService {
     }
   }
   async updateUser(user: UserEntity, dto: UpdateUserDto) {
-    console.log("%c Line:20 🌽 dto", "color:#4fff4B", dto);
     try {
       const { data } = await logtoApi.patch(`/api/users/${user.userId}`, dto);
       return { data };
