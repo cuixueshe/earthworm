@@ -150,9 +150,9 @@ cd apps/api
 cp .env.test.example .env.test
 
 # Single test
-pnpm test:unit:run
+pnpm test:unit
 # End-to-end testing
-pnpm test:e2e:run
+pnpm test:e2e
 # Single test and end-to-end test run together
 pnpm test
 ```
