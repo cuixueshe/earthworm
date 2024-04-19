@@ -5,6 +5,7 @@ import { ScheduleModule } from "@nestjs/schedule";
 import { CourseHistoryModule } from "../course-history/course-history.module";
 import { CourseModule } from "../course/course.module";
 import { CronJobModule } from "../cron-job/cron-job.module";
+import { EventsModule } from "../events/events.module";
 import { GameModule } from "../game/game.module";
 import { GlobalModule } from "../global/global.module";
 import { RankModule } from "../rank/rank.module";
@@ -25,6 +26,7 @@ import { UserModule } from "../user/user.module";
     GameModule,
     CronJobModule,
     CourseHistoryModule,
+    EventsModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: "single",
