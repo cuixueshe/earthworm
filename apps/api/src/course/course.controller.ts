@@ -1,7 +1,8 @@
 import { Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
+import { CourseMembershipGuard } from "src/guards/membership.guard";
 
-import { AuthGuard } from "../auth/auth.guard";
+import { AuthGuard } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { CourseService } from "./course.service";
 

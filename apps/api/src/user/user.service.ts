@@ -1,17 +1,20 @@
 import { Inject, Injectable } from "@nestjs/common";
 
 import { DB, DbType } from "../global/providers/db.provider";
-import { logtoApi } from "../services/logtoService";
+import { LogtoService } from "../logto/logto.service";
 import { UserEntity } from "../user/user.decorators";
 import { UpdateUserDto } from "./model/user.dto";
 
 @Injectable()
 export class UserService {
-  constructor(@Inject(DB) private db: DbType) {}
+  constructor(
+    @Inject(DB) private db: DbType,
+    private readonly logtoService: LogtoService,
+  ) {}
 
-  async getUser(uId: string) {
+  async findUser(uId: string) {
     try {
-      const { data } = await logtoApi.get(`/api/users/${uId}`);
+      const { data } = await this.logtoService.logtoApi.get(`/api/users/${uId}`);
       return data;
     } catch (error) {
       return undefined;
@@ -19,7 +22,7 @@ export class UserService {
   }
   async updateUser(user: UserEntity, dto: UpdateUserDto) {
     try {
-      const { data } = await logtoApi.patch(`/api/users/${user.userId}`, dto);
+      const { data } = await this.logtoService.logtoApi.patch(`/api/users/${user.userId}`, dto);
       return { data };
     } catch (error) {
       return undefined;

@@ -1,0 +1,22 @@
+import { Body, Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
+
+import { AuthGuard, Permissions } from "../guards/auth.guard";
+import { BuyMembershipDto } from "./dto/buy-membership.dto";
+import { MembershipService } from "./membership.service";
+
+@Controller("membership")
+export class MembershipController {
+  constructor(private readonly membershipService: MembershipService) {}
+
+  @Permissions("write:membership", "create:membership")
+  @UseGuards(AuthGuard)
+  @Post("buy")
+  async buyMembership(@Body() buyMembershipDto: BuyMembershipDto) {
+    return await this.membershipService.createOrUpdateMembership(new Date(), buyMembershipDto);
+  }
+
+  @Get(":userId/status")
+  async checkMembership(@Param("userId") userId: string) {
+    return this.membershipService.checkMembership(userId);
+  }
+}

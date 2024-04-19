@@ -15,6 +15,7 @@ const firstCourse = createFirstCourse();
 describe("game e2e", () => {
   let app: INestApplication;
   let db: DbType;
+  let token: string;
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
@@ -26,6 +27,7 @@ describe("game e2e", () => {
     db = moduleFixture.get<DbType>(DB);
 
     await app.init();
+    token = await signin(moduleFixture);
 
     await cleanDB(db);
     await setupDBData(db);
@@ -38,8 +40,6 @@ describe("game e2e", () => {
   });
 
   it("should start game", async () => {
-    const token = await signin();
-
     await request(app.getHttpServer())
       .post("/game/start")
       .set("Authorization", `Bearer ${token}`)

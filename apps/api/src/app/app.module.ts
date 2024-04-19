@@ -7,6 +7,8 @@ import { CourseModule } from "../course/course.module";
 import { CronJobModule } from "../cron-job/cron-job.module";
 import { GameModule } from "../game/game.module";
 import { GlobalModule } from "../global/global.module";
+import { LogtoModule } from "../logto/logto.module";
+import { MembershipModule } from "../membership/membership.module";
 import { RankModule } from "../rank/rank.module";
 import { ToolModule } from "../tool/tool.module";
 import { UserLearnRecordModule } from "../user-learn-record/user-learn-record.module";
@@ -16,6 +18,7 @@ import { UserModule } from "../user/user.module";
 @Module({
   imports: [
     GlobalModule,
+    LogtoModule,
     UserModule,
     CourseModule,
     UserProgressModule,
@@ -25,6 +28,7 @@ import { UserModule } from "../user/user.module";
     GameModule,
     CronJobModule,
     CourseHistoryModule,
+    MembershipModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: "single",
