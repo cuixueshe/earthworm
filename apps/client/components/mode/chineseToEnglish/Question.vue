@@ -8,7 +8,17 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from "vue";
+
+import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
+import { useAutoPlayEnglish } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 
 const courseStore = useCourseStore();
+const { playSound } = useCurrentStatementEnglishSound();
+const { isAutoPlayEnglish } = useAutoPlayEnglish();
+
+onMounted(() => {
+  isAutoPlayEnglish() && playSound();
+});
 </script>
