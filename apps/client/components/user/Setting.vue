@@ -79,7 +79,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">自动播放声音（答案页面）</td>
+            <td class="label-text">答案页面自动播放声音</td>
             <td class="w-[300px] text-center">
               <input
                 type="checkbox"
@@ -90,7 +90,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">答题自动播放</td>
+            <td class="label-text">答题时自动播放声音</td>
             <td class="w-[300px] text-center">
               <input
                 type="checkbox"

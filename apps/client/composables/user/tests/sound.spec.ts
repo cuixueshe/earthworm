@@ -71,7 +71,7 @@ describe("keyboard sound", () => {
   });
 });
 
-// 答题自动播放
+// 答题自动播放声音
 describe("auto play english", () => {
   beforeEach(() => {
     const { removeAutoPlayEnglish } = useAutoPlayEnglish();

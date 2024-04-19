@@ -8,23 +8,17 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { onMounted } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useAutoPlayEnglish } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 
-const { isAutoPlayEnglish } = useAutoPlayEnglish();
 const courseStore = useCourseStore();
 const { playSound } = useCurrentStatementEnglishSound();
-const text = ref(courseStore.currentStatement?.chinese);
-watch(
-  text,
-  () => {
-    isAutoPlayEnglish() && playSound();
-  },
-  {
-    immediate: true,
-  },
-);
+const { isAutoPlayEnglish } = useAutoPlayEnglish();
+
+onMounted(() => {
+  isAutoPlayEnglish() && playSound();
+});
 </script>
