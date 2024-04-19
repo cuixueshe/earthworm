@@ -34,7 +34,7 @@
           class="button-unlock"
           v-if="feature.type === '终身付费'"
         >
-          <i class="crown i-ph-crown-simple-fill h-6 w-6 text-[#f09f33]"></i>
+          <span class="crown i-ph-crown-simple-fill h-6 w-6 text-[#f09f33]"></span>
           解锁 Pro
         </button>
 
@@ -72,10 +72,10 @@
               :key="`feature-${index}-item-${itemIndex}`"
               class="mb-6 mt-6 flex items-center"
             >
-              <i
+              <span
                 class="i-ph-check-bold mr-2 h-5 w-5"
                 :class="item.unique ? 'text-green-500' : 'text-gray-500'"
-              ></i>
+              ></span>
               {{ item.text }}
             </li>
           </ul>

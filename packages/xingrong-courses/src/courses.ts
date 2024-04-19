@@ -1,10 +1,9 @@
-import { db } from "@earthworm/db";
-import {
-  course as courseSchema,
-  statement as statementSchema,
-} from "@earthworm/schema";
 import fs from "fs";
 import path from "path";
+
+import { db } from "@earthworm/db";
+import { course as courseSchema, statement as statementSchema } from "@earthworm/schema";
+
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 
 (async function () {
@@ -28,19 +27,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 })();
 
 function convertToChineseNumber(numStr: string): string {
-  const chineseNumbers = [
-    "零",
-    "一",
-    "二",
-    "三",
-    "四",
-    "五",
-    "六",
-    "七",
-    "八",
-    "九",
-    "十",
-  ];
+  const chineseNumbers = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
   let chineseStr = "第";
   if (parseInt(numStr) >= 10) {
     const [tens, ones] = numStr.split("");

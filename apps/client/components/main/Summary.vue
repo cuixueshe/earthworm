@@ -12,7 +12,7 @@
             class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-7 w-7 rounded-md p-0"
             @click="soundSentence"
           >
-            <i class="i-ph-speaker-simple-high h-full w-full"></i>
+            <span class="i-ph-speaker-simple-high h-full w-full"></span>
           </button>
         </div>
 

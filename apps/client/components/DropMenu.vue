@@ -1,13 +1,13 @@
 <template>
   <div
-    class="dropdown dropdown-end"
+    class="dropdown dropdown-end h-8 w-8"
     @click="toggleDropdown"
   >
     <button
       tabindex="0"
-      class="btn btn-ghost btn-sm mx-0 h-8 rounded-md px-1"
+      class="btn btn-ghost btn-sm rounded-md px-1"
     >
-      <i class="i-ph-user-gear h-6 w-6"></i>
+      <span class="i-ph-user h-6 w-6"></span>
     </button>
     <ul
       v-if="showDropdown"
@@ -23,12 +23,10 @@
           @click="item.eventName"
           class="flex items-center gap-2 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-fuchsia-500 dark:hover:text-white"
         >
-          <!-- <span v-html="item.icon"></span> -->
-          <i
+          <span
             class="h-6 w-6"
             :class="item.icon"
-          ></i>
-
+          ></span>
           <span class="text-sm font-medium">
             {{ item.title }}
           </span>

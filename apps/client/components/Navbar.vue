@@ -1,7 +1,7 @@
 <template>
   <header
     :class="isStickyNavBar"
-    class="top-0 z-40 w-full bg-opacity-50 font-customFont backdrop-blur-xl"
+    class="top-0 z-20 w-full bg-opacity-50 font-customFont backdrop-blur-xl"
   >
     <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
@@ -68,17 +68,13 @@
 
           <!-- 切换主题 -->
           <button
-            class="btn btn-ghost btn-sm mx-1 h-8 w-8 rounded-md p-0"
+            class="btn btn-ghost btn-sm ml-1 h-8 w-8 rounded-md p-0"
             @click="toggleDarkMode"
           >
-            <i
-              v-if="isDarkMode"
-              class="i-ph-moon h-6 w-6"
-            ></i>
-            <i
-              v-else
-              class="i-ph-sun h-6 w-6"
-            ></i>
+            <span
+              class="h-6 w-6"
+              :class="isDarkMode ? 'i-ph-moon' : 'i-ph-sun'"
+            ></span>
           </button>
         </div>
       </div>

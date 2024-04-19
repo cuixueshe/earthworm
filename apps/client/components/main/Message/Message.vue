@@ -45,18 +45,18 @@ onMounted(() => {
       :style="style[type]"
       v-if="isShow"
     >
-      <i
+      <span
         v-if="type === Type.SUCCESS"
         class="i-ph-check-circle-bold mr-4 h-4 w-4 shrink-0 stroke-current"
-      ></i>
-      <i
+      ></span>
+      <span
         v-else-if="type === Type.ERROR"
         class="i-ph-x-circle-bold mr-4 h-4 w-4 shrink-0 stroke-current"
-      ></i>
-      <i
+      ></span>
+      <span
         v-else
         class="i-ph-warning-circle-bold mr-4 h-4 w-4 shrink-0 stroke-current"
-      ></i>
+      ></span>
       <span class="text-sm font-medium">{{ text }}</span>
     </div>
   </Transition>

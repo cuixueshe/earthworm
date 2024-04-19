@@ -1,14 +1,12 @@
-import { db } from "@earthworm/db";
-import { statement } from "@earthworm/schema";
 import fs from "node:fs";
 import path from "node:path";
 
+import { db } from "@earthworm/db";
+import { statement } from "@earthworm/schema";
 
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 
-
 (async function () {
-
   await db.delete(statement);
 
   function createStatement(
@@ -16,7 +14,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
     chinese: string,
     english: string,
     soundmark: string,
-    courseId: number
+    courseId: number,
   ) {
     return db.insert(statement).values({
       order,
@@ -33,7 +31,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
     const cId = parseInt(path.parse(course).name);
     const courseDataText = fs.readFileSync(
       path.resolve(__dirname, `../data/courses/${course}`),
-      "utf-8"
+      "utf-8",
     );
 
     const courseData = JSON.parse(courseDataText);
@@ -41,13 +39,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
     const promiseAll = courseData.map((statement: any, index: number) => {
       const { chinese, english, soundmark } = statement;
 
-      const result = createStatement(
-        orderIndex,
-        chinese,
-        english,
-        soundmark,
-        cId
-      );
+      const result = createStatement(orderIndex, chinese, english, soundmark, cId);
       orderIndex++;
       return result;
     });
