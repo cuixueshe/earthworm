@@ -25,8 +25,6 @@ export class EventGateway implements OnGatewayInit, OnGatewayConnection, OnGatew
   server: Server;
   constructor(private readonly onlineService: OnlineService) {}
 
-  currentOnlineUsers = 0;
-
   async getOnlineUsers() {
     const userCount = await this.onlineService.getOnlineUserCount();
     this.server.emit("onlineUsers", userCount);
