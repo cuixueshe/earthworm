@@ -27,8 +27,10 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/jwt": "^10.2.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/platform-socket.io": "^10.3.7",
     "@nestjs/schedule": "^4.0.1",
     "@nestjs/swagger": "^7.1.17",
+    "@nestjs/websockets": "^10.3.7",
     "argon2": "^0.31.2",
     "axios": "^1.6.6",
     "class-transformer": "^0.5.1",
@@ -38,6 +40,7 @@
     "postgres": "^3.4.4",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "socket.io": "^4.7.5",
     "start": "^5.1.0",
     "superagent": "^8.1.2"
   },
