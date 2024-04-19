@@ -1,6 +1,8 @@
 import { useLogto } from "@logto/vue";
 import { useRuntimeConfig } from "nuxt/app";
 
+import { useOnline } from "~/composables/main/onlineUsers";
+
 let logto: ReturnType<typeof useLogto>;
 let runtimeConfig: ReturnType<typeof useRuntimeConfig>;
 export async function setupAuth() {
@@ -14,6 +16,8 @@ export async function signIn(callback?: string) {
 }
 
 export function signOut() {
+  const { leaveGame } = useOnline();
+  leaveGame();
   return logto.signOut(runtimeConfig.public.signOutRedirectURI);
 }
 
