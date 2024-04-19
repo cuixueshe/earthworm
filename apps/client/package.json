@@ -13,7 +13,8 @@
     "test:unit:run": "vitest run",
     "test:e2e:run": "cypress run",
     "test:ci": "start-server-and-test dev http://localhost:3000 test",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "type-check": "nuxi typecheck"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.7.4",
