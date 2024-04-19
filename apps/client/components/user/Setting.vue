@@ -9,13 +9,19 @@
             <td class="w-[300px] text-center">
               <div class="join mr-12">
                 <input
-                  class="btn join-item btn-sm"
+                  class="join-item btn-sm"
                   type="text"
                   name="username"
                   pattern="请输入用户名称"
                   v-model="userName"
-                  @keyup.enter="updateUserInfo"
+                  @keyup.enter="() => updateUserInfo(userName!)"
                 />
+                <button
+                  class="btn btn-outline btn-secondary btn-sm ml-1"
+                  @click="() => updateUserInfo(userName!)"
+                >
+                  更新
+                </button>
               </div>
             </td>
           </tr>
