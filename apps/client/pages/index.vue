@@ -23,6 +23,7 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
+import { isAuthenticated } from "~/services/auth";
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
@@ -51,11 +52,19 @@ function useShortcutToGame() {
   const isLoading = ref(false);
 
   async function startEarthworm() {
-    isLoading.value = true;
-    const { courseId } = await gameStore.startGame();
-    await router.push(`/main/${courseId}`);
-    isLoading.value = false;
+    if (!isAuthenticated()) {
+      router.push(`/course-pack`);
+    } else {
+      // TODO: 登录用户
+    }
   }
+
+  // async function startEarthworm() {
+  //   isLoading.value = true;
+  //   const { courseId } = await gameStore.startGame();
+  //   await router.push(`/main/${courseId}`);
+  //   isLoading.value = false;
+  // }
 
   onMounted(() => {
     registerShortcut("enter", startEarthworm);
