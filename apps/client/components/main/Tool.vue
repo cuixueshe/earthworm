@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center justify-between border-y border-solid border-slate-200 py-3 text-base dark:border-slate-500"
+    class="relative flex items-center justify-between border-t border-solid border-slate-200 py-3 text-base dark:border-slate-500"
   >
     <!-- 左侧 -->
     <div class="flex items-center">
