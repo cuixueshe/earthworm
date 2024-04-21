@@ -64,6 +64,7 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   function getOptions() {
+    yearOptions.value.length = 0;
     for (let i = 2018; i <= new Date().getFullYear(); i++) {
       yearOptions.value.unshift({ label: i.toString(), value: i });
     }
@@ -84,6 +85,9 @@ export function useCalendarGraph(emits: EmitsType) {
     if (count < 10) return "high";
     return "higher";
   }
+  function getContributionText(count?: number) {
+    return count === 1 ? "contribution" : "contributions";
+  }
   function renderBody(list: CalendarData[]) {
     return tbody.value.map((row) => {
       return row.map((item) => {
@@ -93,9 +97,7 @@ export function useCalendarGraph(emits: EmitsType) {
         const day = item.date.getDate();
         const date = format(item.date);
         const current = list.find((f) => f.date === date);
-        const tips = `${current?.count || "No"} contributions on ${
-          months[month]
-        } ${day}${getOrdinalSuffix(day)}, ${year}`;
+        const tips = `${current?.count || "No"} ${getContributionText(current?.count)} on ${months[month]} ${day}${getOrdinalSuffix(day)}, ${year}`;
         return { date: item.date, tips, bg: getActivityLevel(current?.count) };
       });
     });
@@ -131,8 +133,8 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   function initTbody(startDate: Date) {
-    const tbody: (null | TableBody)[][] = [[], [], [], [], [], [], []];
     const week = startDate.getDay();
+    const tbody: (null | TableBody)[][] = Array.from({ length: 7 }, () => []);
     for (let i = 0; i < week; i++) {
       tbody[i].push(null);
     }
@@ -191,6 +193,7 @@ export function useCalendarGraph(emits: EmitsType) {
     initData,
     renderHead,
     renderBody,
+    getContributionText,
     weeks,
     thead,
     tbody,

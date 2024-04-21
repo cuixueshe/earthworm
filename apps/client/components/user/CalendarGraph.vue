@@ -58,9 +58,7 @@
             <a>{{ item.label }}</a>
           </li>
         </ul>
-        <span class="pl-2 text-sm"
-          >{{ totalCount }} contributions in {{ year ?? "the last year" }}</span
-        >
+        <span class="pl-2 text-sm">{{ totalContributionsText }}</span>
       </div>
 
       <div class="flex items-center gap-1 text-xs">
@@ -77,7 +75,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watchEffect } from "vue";
+import { computed, onMounted, watchEffect } from "vue";
 
 import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
@@ -85,8 +83,13 @@ import { useCalendarGraph } from "~/composables/user/calendarGraph";
 const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
 const emits = defineEmits<EmitsType>();
 
-const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } = useCalendarGraph(emits);
-
+const { initTable, renderBody, weeks, thead, tbody, year, yearOptions, getContributionText } =
+  useCalendarGraph(emits);
+const totalContributionsText = computed(() => {
+  const totalCount = props.totalCount;
+  const yearText = year.value ?? "the last year";
+  return `${totalCount} ${getContributionText(totalCount)} in ${yearText}`;
+});
 onMounted(() => {
   initTable();
 });
