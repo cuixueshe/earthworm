@@ -16,6 +16,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
       .values({
         id: index + 1,
         title: convertToChineseNumber(path.parse(course).name),
+        coursePackId: 1,
       })
       .returning({ id: courseSchema.id, title: courseSchema.title });
 

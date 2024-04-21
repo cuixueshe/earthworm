@@ -27,7 +27,7 @@ export class UserProgressController {
   @UseGuards(AuthGuard)
   @Put()
   async updateOne(@User() user: UserEntity, @Body() dto: UpdateUserProgressDto) {
-    const result = await this.userProgressService.update(user.userId, +dto.courseId);
+    const result = await this.userProgressService.upsert(user.userId, +dto.courseId);
 
     return result;
   }

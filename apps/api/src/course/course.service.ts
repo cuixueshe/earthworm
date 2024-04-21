@@ -1,5 +1,5 @@
-import { Inject, Injectable } from "@nestjs/common";
-import { asc, eq, gt } from "drizzle-orm";
+import { Inject, Injectable, NotFoundException } from "@nestjs/common";
+import { and, asc, eq, gt } from "drizzle-orm";
 import { UserEntity } from "src/user/user.decorators";
 
 import { course, statement } from "@earthworm/schema";
@@ -7,101 +7,63 @@ import { CourseHistoryService } from "../course-history/course-history.service";
 import { DB, DbType } from "../global/providers/db.provider";
 import { RankService } from "../rank/rank.service";
 import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
-import { UserProgressService } from "../user-progress/user-progress.service";
 
 @Injectable()
 export class CourseService {
   constructor(
     @Inject(DB) private db: DbType,
-    private readonly userProgressService: UserProgressService,
     private readonly rankService: RankService,
     private readonly courseHistoryService: CourseHistoryService,
     private readonly userLearnRecordService: UserLearnRecordService,
   ) {}
 
-  async tryCourse() {
-    const firstCourse = await this.getFirstCourse();
+  async find(coursePackId: number, courseId: number) {
+    const result = await this.db.query.course.findFirst({
+      where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
+      with: {
+        statements: {
+          columns: {
+            id: false,
+          },
+          orderBy: [asc(statement.order)],
+        },
+      },
+    });
 
-    const statementsResult = await this.findStatements(firstCourse.id);
-
-    return {
-      ...firstCourse,
-      statements: statementsResult,
-    };
-  }
-
-  async findNext(courseId: number) {
-    const result = await this.db
-      .select({ id: course.id, title: course.title })
-      .from(course)
-      .where(gt(course.id, courseId))
-      .orderBy(asc(course.id));
-
-    if (result.length <= 0) {
-      return undefined;
+    if (!result) {
+      throw new NotFoundException(
+        `CoursePack with ID ${coursePackId} and CourseId with ID ${courseId} not found`,
+      );
     }
 
-    return result[0];
+    return result;
   }
 
-  async findAll() {
-    const courseResult = await this.db
-      .select({
-        id: course.id,
-        title: course.title,
-      })
-      .from(course);
+  async findNext(coursePackId: number, courseId: number) {
+    const result = this.db.query.course.findFirst({
+      where: and(gt(course.id, courseId), eq(course.coursePackId, coursePackId)),
+    });
 
-    return courseResult;
+    if (!result) {
+      throw new NotFoundException(
+        `Can't find the next course -> coursePackId: ${coursePackId} courseId: ${courseId}`,
+      );
+    }
+
+    return result;
   }
 
-  async getFirstCourse() {
-    const courses = await this.findAll();
-    return courses[0];
-  }
-
-  async find(courseId: number) {
-    const courseResult = await this.db
-      .select({
-        id: course.id,
-        title: course.title,
-      })
-      .from(course)
-      .where(eq(course.id, courseId));
-
-    const statementsResult = await this.findStatements(courseId);
-
-    const finalResult = {
-      id: courseResult[0].id,
-      title: courseResult[0].title,
-      statements: statementsResult,
-    };
-
-    return finalResult;
-  }
-
-  private async findStatements(courseId) {
-    return await this.db
-      .select({
-        id: statement.id,
-        chinese: statement.chinese,
-        english: statement.english,
-        soundmark: statement.soundmark,
-      })
-      .from(statement)
-      .where(eq(statement.courseId, courseId))
-      .orderBy(asc(statement.order));
-  }
-
-  async completeCourse(user: UserEntity, courseId: number) {
+  async completeCourse(user: UserEntity, coursePackId: number, courseId: number) {
     await this.rankService.userFinishCourse(user.userId);
-    await this.courseHistoryService.setCompletionCount(user.userId, courseId);
-    await this.userLearnRecordService.userLearnRecord(user.userId);
+    await this.courseHistoryService.upsert(user.userId, coursePackId, courseId);
+    await this.userLearnRecordService.upsert(user.userId);
 
-    const nextCourse = await this.findNext(courseId);
-    if (nextCourse) {
-      await this.userProgressService.update(user.userId, nextCourse.id);
-    }
+    const nextCourse = await this.findNext(coursePackId, courseId);
+    // TODO 需要重新课程进度逻辑
+    // if (nextCourse) {
+    //   console.log("应该更新课程进度");
+    //   await this.userProgressService.upsert(user.userId, nextCourse.id);
+    // }
 
     return {
       nextCourse,

@@ -3,9 +3,9 @@ import { Module } from "@nestjs/common";
 import { ScheduleModule } from "@nestjs/schedule";
 
 import { CourseHistoryModule } from "../course-history/course-history.module";
+import { CoursePackModule } from "../course-pack/course-pack.module";
 import { CourseModule } from "../course/course.module";
 import { CronJobModule } from "../cron-job/cron-job.module";
-import { GameModule } from "../game/game.module";
 import { GlobalModule } from "../global/global.module";
 import { LogtoModule } from "../logto/logto.module";
 import { MembershipModule } from "../membership/membership.module";
@@ -20,12 +20,12 @@ import { UserModule } from "../user/user.module";
     GlobalModule,
     LogtoModule,
     UserModule,
+    CoursePackModule,
     CourseModule,
     UserProgressModule,
     UserLearnRecordModule,
     ToolModule,
     RankModule,
-    GameModule,
     CronJobModule,
     CourseHistoryModule,
     MembershipModule,

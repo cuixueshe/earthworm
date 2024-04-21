@@ -27,7 +27,7 @@ export class UserProgressService {
     };
   }
 
-  async update(userId: string, courseId: number) {
+  async upsert(userId: string, courseId: number) {
     const { courseId: isExist } = await this.findOne(userId);
 
     if (!isExist) {

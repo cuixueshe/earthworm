@@ -7,7 +7,6 @@ import { RankService } from "../rank/rank.service";
 import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
 import { UserProgressService } from "../user-progress/user-progress.service";
 import { UserModule } from "../user/user.module";
-import { CourseController } from "./course.controller";
 import { CourseService } from "./course.service";
 
 @Module({
@@ -19,7 +18,7 @@ import { CourseService } from "./course.service";
     CourseHistoryService,
     UserLearnRecordService,
   ],
-  controllers: [CourseController],
+  controllers: [],
   exports: [CourseService],
 })
 export class CourseModule {}

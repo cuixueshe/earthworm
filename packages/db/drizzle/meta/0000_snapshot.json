@@ -1,5 +1,5 @@
 {
-  "id": "336b33c5-ae27-4a1a-b9ab-440ab84b57e8",
+  "id": "8003fd11-5f9a-4225-b11a-8ee8d92247d9",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "5",
   "dialect": "pg",
@@ -10,24 +10,44 @@
       "columns": {
         "id": {
           "name": "id",
-          "type": "integer",
+          "type": "serial",
           "primaryKey": true,
           "notNull": true
         },
         "title": {
           "name": "title",
-          "type": "text",
+          "type": "varchar(256)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "course_pack_id": {
+          "name": "course_pack_id",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true
         }
       },
       "indexes": {},
-      "foreignKeys": {},
+      "foreignKeys": {
+        "courses_course_pack_id_course_packs_id_fk": {
+          "name": "courses_course_pack_id_course_packs_id_fk",
+          "tableFrom": "courses",
+          "tableTo": "course_packs",
+          "columnsFrom": [
+            "course_pack_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
-    "course-history": {
-      "name": "course-history",
+    "course_history": {
+      "name": "course_history",
       "schema": "",
       "columns": {
         "id": {
@@ -48,12 +68,108 @@
           "primaryKey": false,
           "notNull": true
         },
+        "course_pack_id": {
+          "name": "course_pack_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
         "completion_count": {
           "name": "completion_count",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "default": 0
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "course_history_user_id_course_id_course_pack_id_unique": {
+          "name": "course_history_user_id_course_id_course_pack_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "user_id",
+            "course_id",
+            "course_pack_id"
+          ]
+        }
+      }
+    },
+    "course_packs": {
+      "name": "course_packs",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "progress": {
+          "name": "progress",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_free": {
+          "name": "is_free",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "memberships": {
+      "name": "memberships",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "start_date": {
+          "name": "start_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "end_date": {
+          "name": "end_date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "isActive": {
+          "name": "isActive",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},
@@ -99,7 +215,7 @@
           "name": "course_id",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         }
       },
       "indexes": {},
@@ -129,8 +245,8 @@
         }
       }
     },
-    "user-learn-record": {
-      "name": "user-learn-record",
+    "user_learn_record": {
+      "name": "user_learn_record",
       "schema": "",
       "columns": {
         "id": {
@@ -152,21 +268,29 @@
           "notNull": true,
           "default": 0
         },
-        "date": {
-          "name": "date",
-          "type": "timestamp",
+        "day": {
+          "name": "day",
+          "type": "date",
           "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
+          "notNull": true
         }
       },
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "user_learn_record_user_id_day_unique": {
+          "name": "user_learn_record_user_id_day_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "user_id",
+            "day"
+          ]
+        }
+      }
     },
-    "user-progress": {
-      "name": "user-progress",
+    "user_course_progress": {
+      "name": "user_course_progress",
       "schema": "",
       "columns": {
         "id": {
