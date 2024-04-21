@@ -102,7 +102,6 @@ describe("use calendar graph", () => {
   });
 
   it("should initial table", () => {
-    //
     initTable(2024);
 
     expect(emits).toHaveBeenCalledWith("toggleYear", 2024);
@@ -136,11 +135,12 @@ describe("use calendar graph", () => {
       { date: "2024-01-02", count: 3 },
       { date: "2024-01-03", count: 5 },
       { date: "2024-01-04", count: 10 },
+      { date: "2024-01-05", count: 0 },
     ];
 
     const tbody = renderBody(apiData);
 
-    expect(tbody[1][0]?.tips).toBe("1 contributions on January 1st, 2024");
+    expect(tbody[1][0]?.tips).toBe("1 contribution on January 1st, 2024");
     expect(tbody[1][0]?.bg).toBe("low");
     expect(tbody[2][0]?.tips).toBe("3 contributions on January 2nd, 2024");
     expect(tbody[2][0]?.bg).toBe("moderate");
@@ -148,5 +148,7 @@ describe("use calendar graph", () => {
     expect(tbody[3][0]?.bg).toBe("high");
     expect(tbody[4][0]?.tips).toBe("10 contributions on January 4th, 2024");
     expect(tbody[4][0]?.bg).toBe("higher");
+    expect(tbody[5][0]?.tips).toBe("No contributions on January 5th, 2024");
+    expect(tbody[5][0]?.bg).toBe("");
   });
 });
