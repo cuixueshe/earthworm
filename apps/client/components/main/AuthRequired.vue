@@ -39,6 +39,6 @@ function handleSignup() {
   courseStore.resetStatementIndex();
   showQuestion();
   // TODO 这里应该是基于后端接口来获取 下一课的 id
-  signIn("/main/2");
+  signIn("/profile");
 }
 </script>
