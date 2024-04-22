@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
 
 import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
-import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { useCourseProgress } from "~/composables/courses/progress";
 import { isAuthenticated } from "~/services/auth";
 
@@ -14,11 +14,11 @@ interface Statement {
 }
 
 export interface Course {
-  id: number;
+  id: string;
   title: string;
   statements: Statement[];
   coursePackId: string;
-  count?: number;
+  completionCount: number;
 }
 
 export const useCourseStore = defineStore("course", () => {
@@ -26,7 +26,7 @@ export const useCourseStore = defineStore("course", () => {
   const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
 
-  const { updateActiveCourseId } = useActiveCourseId();
+  const { updateActiveCourseMap } = useActiveCourseMap();
   const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
@@ -70,18 +70,21 @@ export const useCourseStore = defineStore("course", () => {
 
   function doAgain() {
     resetStatementIndex();
-    updateActiveCourseId(currentCourse.value?.id!);
+    updateActiveCourseMap(currentCourse.value?.coursePackId!, currentCourse.value?.id!);
   }
 
   function checkCorrect(input: string) {
     return input.toLocaleLowerCase() === currentStatement.value?.english.toLocaleLowerCase();
   }
 
-  async function completeCourse(cId: number) {
-    const res = await fetchCompleteCourse(cId);
+  async function completeCourse() {
+    const res = await fetchCompleteCourse(
+      currentCourse.value?.coursePackId!,
+      currentCourse.value?.id!,
+    );
     // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
     // 当完成课程的时候并不希望 UI 立刻被重置
-    saveProgress(currentCourse.value?.id!, 0);
+    // saveProgress(currentCourse.value?.id!, 0);
     return res;
   }
 

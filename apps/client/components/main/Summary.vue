@@ -74,7 +74,7 @@
 import { watch } from "vue";
 import { useRouter } from "vue-router";
 
-import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
@@ -87,7 +87,7 @@ import { useCourseStore } from "~/store/course";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-let nextCourseId = 1;
+let nextCourseId = "";
 const courseStore = useCourseStore();
 const { handleDoAgain } = useDoAgain();
 const { handleGoToNextCourse } = useGoToNextCourse();
@@ -95,7 +95,7 @@ const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
-const { updateActiveCourseId } = useActiveCourseId();
+const { updateActiveCourseMap } = useActiveCourseMap();
 
 watch(showModal, (val) => {
   if (val) {
@@ -118,14 +118,18 @@ watch(showModal, (val) => {
 });
 
 async function completeCourse() {
-  const { updateActiveCourseId } = useActiveCourseId();
-
   if (isAuthenticated() && courseStore.currentCourse) {
-    const { nextCourse } = await courseStore.completeCourse(courseStore.currentCourse.id);
+    // id 为 courseId
+    const { coursePackId, id } = courseStore.currentCourse;
+    const { nextCourse } = await courseStore.completeCourse(coursePackId, id);
 
     if (nextCourse) {
       nextCourseId = nextCourse.id;
-      updateActiveCourseId(nextCourseId);
+      updateActiveCourseMap(coursePackId, nextCourseId);
+    } else {
+      // TODO 应该记录 course pack courses 里面的第一课
+      // TODO 应该把 course id 赋值成 第一课的 course id
+      // updateActiveCourseMap(coursePackId, nextCourseId);
     }
   }
 }
@@ -163,8 +167,7 @@ function useGoToNextCourse() {
       return;
     }
 
-    updateActiveCourseId(nextCourseId);
-    router.push(`/main/${nextCourseId}`);
+    router.push(`/game/${courseStore.currentCourse?.coursePackId}/${nextCourseId}`);
   }
 
   return {

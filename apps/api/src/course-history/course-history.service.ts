@@ -2,7 +2,7 @@
  * 记录用户当前课程包的课程学习了多少次
  */
 import { Inject, Injectable } from "@nestjs/common";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 
 import { courseHistory } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -14,6 +14,12 @@ export class CourseHistoryService {
   async findAll(userId: string) {
     return await this.db.query.courseHistory.findMany({
       where: eq(courseHistory.userId, userId),
+    });
+  }
+
+  async findByCoursePackId(userId: string, coursePackId: number) {
+    return await this.db.query.courseHistory.findMany({
+      where: and(eq(courseHistory.userId, userId), eq(courseHistory.coursePackId, coursePackId)),
     });
   }
 

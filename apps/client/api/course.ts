@@ -6,9 +6,9 @@ export async function fetchCourse(coursePackId: string, courseId: string) {
 }
 
 type CompleteCourseResponse = { nextCourse: Course | undefined };
-export async function fetchCompleteCourse(courseId: number) {
+export async function fetchCompleteCourse(coursePackId: string, courseId: string) {
   return await http.post<CompleteCourseResponse, CompleteCourseResponse>(
-    `/courses/${courseId}/complete`,
+    `/course-pack/${coursePackId}/courses/${courseId}/complete`,
   );
 }
 

@@ -1,5 +1,3 @@
-import type { AxiosRequestConfig } from "axios";
-
 import { http } from "./http";
 
 interface UserLearnRecordDto {

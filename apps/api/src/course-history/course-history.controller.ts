@@ -2,6 +2,7 @@ import { Controller, Get, Param, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
 
 import { AuthGuard } from "../guards/auth.guard";
+import { User, UserEntity } from "../user/user.decorators";
 import { CourseHistoryService } from "./course-history.service";
 
 @ApiBearerAuth()
@@ -15,7 +16,13 @@ export class CourseHistoryController {
   })
   @UseGuards(AuthGuard)
   @Get("")
-  courseCompletionCount(@Param("userId") userId: string) {
-    return this.courseHistoryService.findAll(userId);
+  courseCompletionCount(@User() user: UserEntity) {
+    return this.courseHistoryService.findAll(user.userId);
+  }
+
+  @UseGuards(AuthGuard)
+  @Get(":coursePackId")
+  getCoursePackHistory(@User() user: UserEntity, @Param("coursePackId") coursePackId: number) {
+    return this.courseHistoryService.findByCoursePackId(user.userId, coursePackId);
   }
 }

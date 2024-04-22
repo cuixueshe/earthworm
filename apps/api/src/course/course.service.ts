@@ -56,13 +56,17 @@ export class CourseService {
   }
 
   async completeCourse(user: UserEntity, coursePackId: number, courseId: number) {
-    await this.rankService.userFinishCourse(user.userId);
-    await this.courseHistoryService.upsert(user.userId, coursePackId, courseId);
-    await this.userLearnRecordService.upsert(user.userId);
+    if (user.userId) {
+      await this.rankService.userFinishCourse(user.userId);
+      await this.courseHistoryService.upsert(user.userId, coursePackId, courseId);
+      await this.userLearnRecordService.upsert(user.userId);
+    }
 
     const nextCourse = await this.findNext(coursePackId, courseId);
     if (nextCourse) {
-      await this.userCourseProgressService.upsert(user.userId, coursePackId, nextCourse.id, 1);
+      if (user.userId) {
+        await this.userCourseProgressService.upsert(user.userId, coursePackId, nextCourse.id, 1);
+      }
     }
 
     return {

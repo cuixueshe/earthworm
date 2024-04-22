@@ -1,8 +1,8 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { CourseService } from "src/course/course.service";
 
-import { coursePack } from "@earthworm/schema";
+import { courseHistory, coursePack } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { UserEntity } from "../user/user.decorators";
 import { CreateCoursePackDto } from "./dto/create-course-pack.dto";
@@ -22,17 +22,44 @@ export class CoursePackService {
     });
   }
 
-  async findOne(id: number) {
+  private async findCompletionCount(userId: string, coursePackId: number, courseId: number) {
+    const record = await this.db.query.courseHistory.findFirst({
+      where: and(
+        eq(courseHistory.userId, userId),
+        eq(courseHistory.coursePackId, coursePackId),
+        eq(courseHistory.courseId, courseId),
+      ),
+    });
+
+    return record ? record.completionCount : 0;
+  }
+
+  async findOne(coursePackId: number, userId?: string) {
     const result = await this.db.query.coursePack.findFirst({
-      where: eq(coursePack.id, id),
+      where: eq(coursePack.id, coursePackId),
       with: {
         courses: true,
       },
     });
 
     if (!result) {
-      throw new NotFoundException(`CoursePack with ID ${id} not found`);
+      throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
     }
+
+    const newCourses = await Promise.all(
+      result.courses.map(async (course) => {
+        const completionCount = userId
+          ? await this.findCompletionCount(userId, coursePackId, course.id)
+          : 0;
+
+        return {
+          ...course,
+          completionCount,
+        };
+      }),
+    );
+
+    result.courses = newCourses;
 
     return result;
   }

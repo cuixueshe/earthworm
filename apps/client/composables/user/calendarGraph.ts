@@ -30,7 +30,7 @@ export interface EmitsType {
 
 export interface CalendarData {
   /** YYYY-MM-DD */
-  date: string;
+  day: string;
   count: number;
 }
 
@@ -92,7 +92,9 @@ export function useCalendarGraph(emits: EmitsType) {
         const month = item.date.getMonth();
         const day = item.date.getDate();
         const date = format(item.date);
-        const current = list.find((f) => f.date === date);
+        const current = list.find((f) => {
+          return f.day === date;
+        });
         const tips = `${current?.count || "No"} contributions on ${
           months[month]
         } ${day}${getOrdinalSuffix(day)}, ${year}`;

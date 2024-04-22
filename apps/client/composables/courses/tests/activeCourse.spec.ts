@@ -1,31 +1,42 @@
 import { beforeEach, describe, expect, it } from "vitest";
 
-import { ACTIVE_COURSE_ID, useActiveCourseId } from "../activeCourse";
+import { useActiveCourseMap } from "../activeCourse";
 
 describe("change active course", () => {
   beforeEach(() => {
-    localStorage.removeItem(ACTIVE_COURSE_ID);
-  });
-  it("should be zero if no cache", () => {
-    const { activeCourseId } = useActiveCourseId();
-    expect(activeCourseId.value).toBe(0);
+    const { resetActiveCourseMap } = useActiveCourseMap();
+
+    resetActiveCourseMap();
   });
 
-  it("should be equal to cache value if it exists", () => {
-    localStorage.setItem(ACTIVE_COURSE_ID, "10");
-    const { activeCourseId } = useActiveCourseId();
-    expect(activeCourseId.value).toBe(10);
+  it("should get active course map from localStorage", () => {
+    const coursePackId = "1";
+    const courseId = "28";
+    const { updateActiveCourseMap, activeCourseMap } = useActiveCourseMap();
+
+    updateActiveCourseMap(coursePackId, courseId);
+
+    expect(activeCourseMap.value).toMatchInlineSnapshot(`
+      {
+        "1": "28",
+      }
+    `);
   });
 
-  it("should be update value", () => {
-    const { activeCourseId, updateActiveCourseId } = useActiveCourseId();
-    updateActiveCourseId(10);
-    expect(activeCourseId.value).toBe(10);
-  });
+  it("should update active course map in localStorage", () => {
+    const coursePackId = "1";
+    const courseId = "28";
 
-  it("should be reset", () => {
-    const { activeCourseId, restActiveCourseId } = useActiveCourseId();
-    restActiveCourseId();
-    expect(activeCourseId.value).toBe(0);
+    const { updateActiveCourseMap, activeCourseMap } = useActiveCourseMap();
+
+    updateActiveCourseMap(coursePackId, courseId);
+    const updatedCourseId = "29";
+    updateActiveCourseMap(coursePackId, updatedCourseId);
+
+    expect(activeCourseMap.value).toMatchInlineSnapshot(`
+      {
+        "1": "29",
+      }
+    `);
   });
 });

@@ -1,21 +1,11 @@
+import { type Course } from "~/store/course";
 import { http } from "./http";
-
-export interface Course {
-  id: string;
-  title: string;
-}
 
 export interface CoursePack {
   id: string;
   title: string;
   isFree: boolean;
 }
-
-// export interface CoursePack2 {
-//   id: string;
-//   title: string;
-//   courses: Course[];
-// }
 
 export interface CoursePack2 {
   id: string;

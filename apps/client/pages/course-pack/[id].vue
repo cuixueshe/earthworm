@@ -11,13 +11,13 @@
           v-for="course in coursePackStore.currentCoursePack?.courses"
           :key="course.id"
         >
-          <NuxtLink :href="`/game/${coursePackId}/${course.id}`">
-            <CoursesCourseCard
-              :title="course.title"
-              :id="course.id"
-              :count="0"
-            />
-          </NuxtLink>
+          <CoursesCourseCard
+            :title="course.title"
+            :id="course.id"
+            :count="course.completionCount"
+            :coursePackId="course.coursePackId"
+            @click="handleChangeCourse(course.id)"
+          />
         </template>
       </div>
     </div>
@@ -25,15 +25,23 @@
 </template>
 
 <script setup lang="ts">
+import { navigateTo } from "#app";
 import { useRoute } from "vue-router";
 
+import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { useCoursePackStore } from "~/store/coursePack";
 
 const route = useRoute();
 const coursePackStore = useCoursePackStore();
 const coursePackId = route.params.id as string;
+const { updateActiveCourseMap } = useActiveCourseMap();
 
 coursePackStore.setup(coursePackId);
+
+function handleChangeCourse(courseId: string) {
+  updateActiveCourseMap(coursePackId, courseId);
+  navigateTo(`/game/${coursePackId}/${courseId}`);
+}
 </script>
 
 <style></style>

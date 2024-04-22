@@ -19,7 +19,7 @@
             <CoursesCourseCard
               :title="course.title"
               :id="course.id"
-              :count="course.count"
+              :count="course.completionCount"
             />
           </NuxtLink>
         </template>
