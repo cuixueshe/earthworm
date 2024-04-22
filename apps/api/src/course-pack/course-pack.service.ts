@@ -26,11 +26,7 @@ export class CoursePackService {
     const result = await this.db.query.coursePack.findFirst({
       where: eq(coursePack.id, id),
       with: {
-        courses: {
-          columns: {
-            id: false,
-          },
-        },
+        courses: true,
       },
     });
 

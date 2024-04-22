@@ -9,7 +9,7 @@
       >
         <div class="cursor-pointer rounded-lg border bg-white p-6 shadow-lg dark:bg-gray-800">
           <h2>
-            <a :href="'/course-pack/' + coursePack.id"> {{ coursePack.title }}</a>
+            <NuxtLink :href="`/course-pack/${coursePack.id}`"> {{ coursePack.title }} ></NuxtLink>
           </h2>
           <!-- <p class="mt-2 text-gray-600">{{ course.description }}</p> -->
         </div>

@@ -42,9 +42,8 @@ export class CoursePackController {
     return this.coursePackService.findNextCourse(coursePackId, courseId);
   }
 
-  // @UncheckAuth()
-  // @UseGuards(AuthGuard, CoursePacksAccessGuard)
-  @UseGuards(AuthGuard)
+  @UncheckAuth()
+  @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Post(":coursePackId/courses/:courseId/complete")
   CompleteCourse(
     @User() user: UserEntity,

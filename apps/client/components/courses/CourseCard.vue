@@ -34,7 +34,7 @@ import { useActiveCourseId } from "~/composables/courses/activeCourse";
 
 const props = defineProps<{
   title: string;
-  id: number;
+  id: string;
   count: number | undefined;
 }>();
 const { activeCourseId } = useActiveCourseId();

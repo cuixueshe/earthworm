@@ -1,8 +1,8 @@
 import { type Course } from "~/store/course";
 import { http } from "./http";
 
-export async function fetchCourse(courseId: number) {
-  return await http.get<Course, Course>(`/courses/${courseId}`);
+export async function fetchCourse(coursePackId: string, courseId: string) {
+  return await http.get<Course, Course>(`course-pack/${coursePackId}/courses/${courseId}`);
 }
 
 type CompleteCourseResponse = { nextCourse: Course | undefined };

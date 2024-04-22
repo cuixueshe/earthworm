@@ -17,6 +17,7 @@ export interface Course {
   id: number;
   title: string;
   statements: Statement[];
+  coursePackId: string;
   count?: number;
 }
 
@@ -84,18 +85,13 @@ export const useCourseStore = defineStore("course", () => {
     return res;
   }
 
-  async function setup(courseId: number) {
-    if (courseId === currentCourse.value?.id) return;
+  async function setup(coursePackId: string, courseId: string) {
+    // if (courseId === currentCourse.value?.id) return;
 
-    if (!isAuthenticated()) {
-      let course = await fetchTryCourse();
-      currentCourse.value = course;
-    } else {
-      let course = await fetchCourse(courseId);
-      currentCourse.value = course;
-    }
+    let course = await fetchCourse(coursePackId, courseId);
+    currentCourse.value = course;
 
-    statementIndex.value = loadProgress(courseId);
+    // statementIndex.value = loadProgress(courseId);
   }
 
   return {

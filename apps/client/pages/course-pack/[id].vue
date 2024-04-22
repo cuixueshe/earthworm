@@ -1,46 +1,39 @@
 <template>
-  <div
-    class="px-4 md:px-0"
-    v-if="coursePack"
-  >
-    <h2 class="my-10 text-2xl font-bold">{{ coursePack.title }}</h2>
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <div class="relative flex w-full flex-col">
+    <h2 class="mb-4 border-b py-2 text-center text-3xl dark:border-gray-600">
+      {{ coursePackStore.currentCoursePack?.title }}
+    </h2>
+    <div class="scrollbar-hide h-full">
       <div
-        v-for="course in coursePack.courses"
-        :key="course.id"
-        class="relative transform overflow-hidden transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
+        class="grid h-[79vh] grid-cols-1 justify-start gap-8 overflow-y-auto overflow-x-hidden pb-96 pl-0 pr-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
-        <div class="cursor-pointer rounded-lg border bg-white p-6 shadow-lg dark:bg-gray-800">
-          <h2>
-            <a :href="'/course-pack/' + course.id"> {{ course.title }}</a>
-          </h2>
-          <!-- <p class="mt-2 text-gray-600">{{ course.description }}</p> -->
-        </div>
+        <template
+          v-for="course in coursePackStore.currentCoursePack?.courses"
+          :key="course.id"
+        >
+          <NuxtLink :href="`/game/${coursePackId}/${course.id}`">
+            <CoursesCourseCard
+              :title="course.title"
+              :id="course.id"
+              :count="0"
+            />
+          </NuxtLink>
+        </template>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 
-import type { CoursePack2 } from "~/api/coursePack";
-import { fetchCoursePack } from "~/api/coursePack";
+import { useCoursePackStore } from "~/store/coursePack";
 
-const router = useRouter();
-const coursePack = ref<CoursePack2 | null>(null);
+const route = useRoute();
+const coursePackStore = useCoursePackStore();
+const coursePackId = route.params.id as string;
 
-getCoursePack();
-
-async function getCoursePack() {
-  const res = await fetchCoursePack(1);
-  coursePack.value = res;
-}
-
-function handleClickCourse(id: number) {
-  router.push(`/game/${id}`);
-}
+coursePackStore.setup(coursePackId);
 </script>
 
 <style></style>
