@@ -36,7 +36,7 @@ export async function fetchCoursePack(id: number) {
 
   return {
     id: 1,
-    title: "Introduction to Earthworms",
+    title: "游客课程",
     courses: [
       {
         id: 1,

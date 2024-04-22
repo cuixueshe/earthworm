@@ -1,16 +1,24 @@
 <template>
-  <template v-if="coursePack">
-    <h2>{{ coursePack.title }}</h2>
-
-    <div>
+  <div
+    class="px-4 md:px-0"
+    v-if="coursePack"
+  >
+    <h2 class="my-10 text-2xl font-bold">{{ coursePack.title }}</h2>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <div
-        class="flex"
         v-for="course in coursePack.courses"
+        :key="course.id"
+        class="relative transform overflow-hidden transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
       >
-        <a @click="handleClickCourse(course.id)">{{ course.title }}</a>
+        <div class="cursor-pointer rounded-lg border bg-white p-6 shadow-lg dark:bg-gray-800">
+          <h2>
+            <a :href="'/course-pack/' + course.id"> {{ course.title }}</a>
+          </h2>
+          <!-- <p class="mt-2 text-gray-600">{{ course.description }}</p> -->
+        </div>
       </div>
     </div>
-  </template>
+  </div>
 </template>
 
 <script setup lang="ts">
