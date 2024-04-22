@@ -5,13 +5,13 @@ import { createUser } from "../../../test/fixture/user";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
-import { UserProgressService } from "../user-progress.service";
+import { UserCourseProgressService } from "../user-course-progress.service";
 
 const userData = createUser();
 const course = createFirstCourse();
 
 describe("user-progress service", () => {
-  let userProgressService: UserProgressService;
+  let userProgressService: UserCourseProgressService;
   let db: DbType;
 
   beforeAll(async () => {
@@ -42,11 +42,11 @@ async function setupDatabaseData(db: DbType) {
 async function setupTesting() {
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
-    providers: [UserProgressService],
+    providers: [UserCourseProgressService],
   }).compile();
 
   return {
     db: moduleRef.get<DbType>(DB),
-    userProgressService: moduleRef.get<UserProgressService>(UserProgressService),
+    userProgressService: moduleRef.get<UserCourseProgressService>(UserCourseProgressService),
   };
 }

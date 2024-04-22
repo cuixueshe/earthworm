@@ -11,8 +11,8 @@ import { LogtoModule } from "../logto/logto.module";
 import { MembershipModule } from "../membership/membership.module";
 import { RankModule } from "../rank/rank.module";
 import { ToolModule } from "../tool/tool.module";
+import { UserCourseProgressModule } from "../user-course-progress/user-course-progress.module";
 import { UserLearnRecordModule } from "../user-learn-record/user-learn-record.module";
-import { UserProgressModule } from "../user-progress/user-progress.module";
 import { UserModule } from "../user/user.module";
 
 @Module({
@@ -22,7 +22,7 @@ import { UserModule } from "../user/user.module";
     UserModule,
     CoursePackModule,
     CourseModule,
-    UserProgressModule,
+    UserCourseProgressModule,
     UserLearnRecordModule,
     ToolModule,
     RankModule,

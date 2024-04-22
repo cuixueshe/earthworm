@@ -4,8 +4,8 @@ import { CourseHistoryService } from "../course-history/course-history.service";
 import { GlobalModule } from "../global/global.module";
 import { MembershipModule } from "../membership/membership.module";
 import { RankService } from "../rank/rank.service";
+import { UserCourseProgressService } from "../user-course-progress/user-course-progress.service";
 import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
-import { UserProgressService } from "../user-progress/user-progress.service";
 import { UserModule } from "../user/user.module";
 import { CourseService } from "./course.service";
 
@@ -13,7 +13,7 @@ import { CourseService } from "./course.service";
   imports: [GlobalModule, UserModule, MembershipModule],
   providers: [
     CourseService,
-    UserProgressService,
+    UserCourseProgressService,
     RankService,
     CourseHistoryService,
     UserLearnRecordService,

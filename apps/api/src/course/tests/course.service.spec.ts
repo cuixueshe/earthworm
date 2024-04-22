@@ -9,8 +9,8 @@ import { cleanDB, testImportModules } from "../../../test/helper/utils";
 import { CourseHistoryService } from "../../course-history/course-history.service";
 import { DB } from "../../global/providers/db.provider";
 import { RankService } from "../../rank/rank.service";
+import { UserCourseProgressService } from "../../user-course-progress/user-course-progress.service";
 import { UserLearnRecordService } from "../../user-learn-record/user-learn-record.service";
-import { UserProgressService } from "../../user-progress/user-progress.service";
 import { CourseService } from "../course.service";
 
 const user = createUser();
@@ -20,7 +20,7 @@ const secondCourse = createSecondCourse();
 describe("course service", () => {
   let db: DbType;
   let courseService: CourseService;
-  let userProgressService: UserProgressService;
+  let userProgressService: UserCourseProgressService;
   let rankService: RankService;
   let courseHistoryService: CourseHistoryService;
   let userLearnRecordService: UserLearnRecordService;
@@ -126,7 +126,7 @@ async function setupTesting() {
     imports: testImportModules,
     providers: [
       CourseService,
-      { provide: UserProgressService, useValue: mockUserProgressService },
+      { provide: UserCourseProgressService, useValue: mockUserProgressService },
       { provide: RankService, useValue: mockRankService },
       { provide: CourseHistoryService, useValue: mockCourseHistoryService },
       { provide: UserLearnRecordService, useValue: mockUserLearnRecordService },
@@ -135,7 +135,7 @@ async function setupTesting() {
 
   return {
     courseService: moduleRef.get<CourseService>(CourseService),
-    UserProgressService: moduleRef.get<UserProgressService>(UserProgressService),
+    UserProgressService: moduleRef.get<UserCourseProgressService>(UserCourseProgressService),
     rankService: moduleRef.get<RankService>(RankService),
     courseHistoryService: moduleRef.get<CourseHistoryService>(CourseHistoryService),
     userLearnRecordService: moduleRef.get<UserLearnRecordService>(UserLearnRecordService),

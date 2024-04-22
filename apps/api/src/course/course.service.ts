@@ -6,6 +6,7 @@ import { course, statement } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { DB, DbType } from "../global/providers/db.provider";
 import { RankService } from "../rank/rank.service";
+import { UserCourseProgressService } from "../user-course-progress/user-course-progress.service";
 import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
 
 @Injectable()
@@ -15,6 +16,7 @@ export class CourseService {
     private readonly rankService: RankService,
     private readonly courseHistoryService: CourseHistoryService,
     private readonly userLearnRecordService: UserLearnRecordService,
+    private readonly userCourseProgressService: UserCourseProgressService,
   ) {}
 
   async find(coursePackId: number, courseId: number) {
@@ -59,11 +61,9 @@ export class CourseService {
     await this.userLearnRecordService.upsert(user.userId);
 
     const nextCourse = await this.findNext(coursePackId, courseId);
-    // TODO 需要重新课程进度逻辑
-    // if (nextCourse) {
-    //   console.log("应该更新课程进度");
-    //   await this.userProgressService.upsert(user.userId, nextCourse.id);
-    // }
+    if (nextCourse) {
+      await this.userCourseProgressService.upsert(user.userId, coursePackId, nextCourse.id, 1);
+    }
 
     return {
       nextCourse,
