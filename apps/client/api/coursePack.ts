@@ -8,6 +8,7 @@ export interface Course {
 export interface CoursePack {
   id: string;
   title: string;
+  isFree: boolean;
 }
 
 // export interface CoursePack2 {

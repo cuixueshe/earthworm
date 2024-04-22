@@ -20,6 +20,10 @@ export class CoursePacksAccessGuard implements CanActivate {
       return true;
     }
 
+    if (!userId) {
+      throw new ForbiddenException("这是会员专属内容");
+    }
+
     const membershipStatus = await this.membershipService.checkMembership(userId);
 
     if (!membershipStatus.isActive) {

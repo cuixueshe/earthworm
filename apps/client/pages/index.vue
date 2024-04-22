@@ -20,6 +20,7 @@
 </template>
 
 <script setup lang="ts">
+import { definePageMeta } from "#imports";
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
@@ -30,6 +31,10 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const gameStore = useGameStore();
 const { showMobileTip } = useMonitorSystem();
 const { startEarthworm, isLoading } = useShortcutToGame();
+
+definePageMeta({
+  middleware: "redirect",
+});
 
 function useMonitorSystem() {
   const showMobileTip = ref(false);
