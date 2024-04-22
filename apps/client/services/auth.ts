@@ -33,7 +33,7 @@ export function getSignInCallback() {
     sessionStorage.removeItem("callback");
     return callback;
   } else {
-    return "/profile";
+    return "/";
   }
 }
 

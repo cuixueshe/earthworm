@@ -102,7 +102,6 @@ const { darkMode, toggleDarkMode } = useDarkMode();
 
 const isShowModal = ref(false);
 const HEADER_OPTIONS = [
-  { name: "主页", anchor: "home" },
   { name: "功能", anchor: "features" },
   { name: "问题", anchor: "faq" },
   { name: "联系我们", anchor: "contact" },
