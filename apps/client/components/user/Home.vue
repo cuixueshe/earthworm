@@ -4,10 +4,17 @@
     :totalCount="totalCount"
     @toggleYear="toggleYear"
   />
+  <button
+    class="btn"
+    @click="handleToMusicMode"
+  >
+    音乐模式
+  </button>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 import { fetchLearnRecord } from "~/api/userLearnRecord";
 import { type CalendarData } from "~/composables/user/calendarGraph";
@@ -25,6 +32,17 @@ async function toggleYear(year?: number) {
   totalCount.value = res.totalCount;
   data.value = res.list;
 }
-</script>
 
-<style lang="scss" scoped></style>
+const { handleToMusicMode } = useMusicMode();
+
+function useMusicMode() {
+  const router = useRouter();
+  function handleToMusicMode() {
+    router.push(`/music/courses`);
+  }
+
+  return {
+    handleToMusicMode,
+  };
+}
+</script>
