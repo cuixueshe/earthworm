@@ -1,6 +1,34 @@
 <template>
   <div class="min-w-max space-y-8">
     <section class="space-y-4">
+      <h2 class="text-lg font-medium">个人信息设置</h2>
+      <table class="table">
+        <tbody>
+          <tr class="hover">
+            <td class="label-text">昵称</td>
+            <td class="w-[300px] text-center">
+              <div class="join mr-12">
+                <input
+                  class="join-item btn-sm"
+                  type="text"
+                  name="username"
+                  pattern="请输入用户名称"
+                  v-model="userName"
+                  @keyup.enter="() => updateUserInfo(userName!)"
+                />
+                <button
+                  class="btn btn-outline btn-secondary btn-sm ml-1"
+                  @click="() => updateUserInfo(userName!)"
+                >
+                  更新
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="space-y-4">
       <h2 class="text-lg font-medium">游戏模式</h2>
       <table class="table">
         <tbody>
@@ -93,13 +121,24 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">自动播放声音（答案页面）</td>
+            <td class="label-text">答案页面自动播放声音</td>
             <td class="w-[300px] text-center">
               <input
                 type="checkbox"
                 class="toggle toggle-secondary"
                 :checked="autoPlaySound"
                 @change="toggleAutoPlaySound"
+              />
+            </td>
+          </tr>
+          <tr class="hover">
+            <td class="label-text">答题时自动播放声音</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="autoPlayEnglish"
+                @change="toggleAutoPlayEnglish"
               />
             </td>
           </tr>
@@ -230,15 +269,24 @@ import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
+import {
+  useAutoPlayEnglish,
+  useAutoPronunciation,
+  useKeyboardSound,
+} from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { useUserStore } from "~/store/user";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const userStore = useUserStore();
+const updateUserInfo = userStore.updateUserInfo;
+const userName = userStore.userNameGetter;
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
+const { autoPlayEnglish, toggleAutoPlayEnglish } = useAutoPlayEnglish();
 const {
   pronunciation,
   // 发音配置列表

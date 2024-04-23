@@ -110,7 +110,7 @@ export class RankService {
 
   private async fetchUsersMap(uIds: string[]) {
     const promises = uIds.map((uId) => {
-      return this.userService.getUser(uId);
+      return this.userService.findUser(uId);
     });
 
     const users = await Promise.all(promises);

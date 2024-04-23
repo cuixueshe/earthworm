@@ -2,7 +2,14 @@ import { reactive } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 
-export const defaultOptions = {
+interface ToolBar {
+  times: number;
+  rate: number;
+  interval: number;
+  [key: string]: number;
+}
+
+export const defaultOptions: ToolBar = {
   times: 1,
   rate: 1,
   interval: 1000,

@@ -150,9 +150,9 @@ cd apps/api
 cp .env.test.example .env.test
 
 # 单测
-pnpm test:unit:run
+pnpm test:unit
 # 端对端测试
-pnpm test:e2e:run
+pnpm test:e2e
 # 单测和端对端测试一起跑
 pnpm test
 ```

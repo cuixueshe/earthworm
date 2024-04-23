@@ -2,13 +2,19 @@ import { type UserInfoResponse } from "@logto/vue";
 import { defineStore } from "pinia";
 import { computed, ref, toValue } from "vue";
 
+import { updateUserinfo } from "~/api/userInfo";
+
 export const useUserStore = defineStore("user", () => {
   const userInfo = ref<UserInfoResponse>();
 
   function initUser(userInfoResponse: UserInfoResponse) {
     userInfo.value = userInfoResponse;
   }
-
+  async function updateUserInfo(nickName: string) {
+    if (!nickName) return;
+    const res = await updateUserinfo({ name: nickName });
+    initUser(res!.data as UserInfoResponse);
+  }
   const userNameGetter = computed(() => {
     const user = toValue(userInfo);
 
@@ -24,5 +30,6 @@ export const useUserStore = defineStore("user", () => {
     initUser,
     userInfo,
     userNameGetter,
+    updateUserInfo,
   };
 });

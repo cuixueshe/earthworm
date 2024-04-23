@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Put, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
 
-import { AuthGuard } from "../auth/auth.guard";
+import { AuthGuard } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { UpdateUserProgressDto } from "./model/user-progress.dto";
 import { UserProgressService } from "./user-progress.service";

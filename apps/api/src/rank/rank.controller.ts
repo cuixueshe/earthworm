@@ -2,7 +2,7 @@ import { Controller, Get, Param, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
 
 import type { RankPeriodAlias } from "./rank.service";
-import { AuthGuard, UncheckAuth } from "../auth/auth.guard";
+import { AuthGuard, UncheckAuth } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { RankPeriod, RankService } from "./rank.service";
 

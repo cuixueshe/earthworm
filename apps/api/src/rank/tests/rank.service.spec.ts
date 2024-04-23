@@ -104,7 +104,7 @@ describe("rank service", () => {
 
 async function setupTesting() {
   const mockUserService = {
-    getUser: jest.fn().mockResolvedValue({
+    findUser: jest.fn().mockResolvedValue({
       username: "testUser",
       id: user.userId,
     }),

@@ -33,7 +33,7 @@ describe("course e2e", () => {
     await cleanDB(db);
     await setupDBData(db);
 
-    token = await signin();
+    token = await signin(moduleFixture);
   });
 
   afterEach(async () => {
