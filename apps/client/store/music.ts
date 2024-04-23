@@ -3,6 +3,8 @@ import { computed, ref, watchEffect } from "vue";
 
 import lyrics1 from "~/assets/musics/1.json";
 import music1 from "~/assets/musics/1.mp3";
+import lyrics2 from "~/assets/musics/2.json";
+import music2 from "~/assets/musics/2.mp3";
 
 interface Lyric {
   id: number;
@@ -27,6 +29,12 @@ export const music_courses: MUSIC_COURSES = {
     title: "Twinkle Twinkle Little Star",
     lyrics: lyrics1,
     song: music1,
+  },
+  2: {
+    id: 2,
+    title: "Yesterday Once More",
+    lyrics: lyrics2,
+    song: music2,
   },
 };
 
