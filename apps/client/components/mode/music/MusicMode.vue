@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center justify-center h-full relative">
+  <div class="relative flex h-full items-center justify-center">
     <div
       v-show="!isStart"
-      class="flex flex-col justify-center items-center relative z-10"
+      class="relative z-10 flex flex-col items-center justify-center"
     >
       <p>准备好了吗？(按任意键开启游戏)</p>
       <div class="hidden">
@@ -18,7 +18,7 @@
       </template>
     </div>
 
-    <div class="absolute z-[-10px] opacity-55">
+    <div class="absolute z-[-10px] opacity-20 dark:opacity-55">
       <ModeMusicPhonograph></ModeMusicPhonograph>
     </div>
   </div>
@@ -28,14 +28,15 @@
 <script setup lang="ts">
 // import "plyr/dist/plyr.css";
 import { onMounted, ref } from "vue";
+
 import { useMusicChapter } from "~/composables/courses/music";
 import { useGameMode } from "~/composables/main/game";
-import { useMusicMode } from "~/composables/main/music"; 
+import { useMusicMode } from "~/composables/main/music";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { isQuestion } = useGameMode();
 const playerElement = ref<HTMLAudioElement>();
-const { setupMusicAudio, playMusic } = useMusicMode(); 
+const { setupMusicAudio, playMusic } = useMusicMode();
 const { currentMusic } = useMusicChapter();
 
 onMounted(() => {
@@ -50,7 +51,7 @@ function useStartGame() {
   function handleKeyup(e: KeyboardEvent) {
     e.preventDefault();
     isStart.value = true;
-    playMusic()
+    playMusic();
     cancelShortcut("*", handleKeyup);
   }
 
