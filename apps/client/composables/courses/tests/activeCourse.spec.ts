@@ -39,4 +39,17 @@ describe("change active course", () => {
       }
     `);
   });
+
+  it("should delete active course map ", () => {
+    const coursePackId = "1";
+    const courseId = "28";
+
+    const { updateActiveCourseMap, removeActiveCourseMap, activeCourseMap } = useActiveCourseMap();
+
+    updateActiveCourseMap(coursePackId, courseId);
+
+    removeActiveCourseMap(coursePackId);
+
+    expect(activeCourseMap.value).toMatchInlineSnapshot(`{}`);
+  });
 });

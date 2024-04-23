@@ -54,11 +54,13 @@
           >
             再来一次
           </button>
+
           <button
             class="btn"
-            @click="handleGoToNextCourse"
+            @click="goToNextCourse"
           >
-            开始下一课<kbd class="kbd"> ↵ </kbd>
+            {{ haveNextCourse ? "开始下一课" : "返回课程列表" }}
+            <kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
       </div>
@@ -71,8 +73,8 @@
 </template>
 
 <script setup lang="ts">
-import { watch } from "vue";
-import { useRouter } from "vue-router";
+import { navigateTo } from "#app";
+import { computed, ref, watch } from "vue";
 
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
@@ -87,10 +89,9 @@ import { useCourseStore } from "~/store/course";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-let nextCourseId = "";
 const courseStore = useCourseStore();
+const { goToNextCourse, completeCourse, haveNextCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
-const { handleGoToNextCourse } = useGoToNextCourse();
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
@@ -100,7 +101,7 @@ const { updateActiveCourseMap } = useActiveCourseMap();
 watch(showModal, (val) => {
   if (val) {
     // 注册回车键进入下一课
-    registerShortcut("enter", handleGoToNextCourse);
+    registerShortcut("enter", goToNextCourse);
     // 显示结算面板代表当前课程已经完成
     completeCourse();
     // 朗读每日一句
@@ -111,28 +112,11 @@ watch(showModal, (val) => {
     }, 300);
   } else {
     // 取消回车键进入下一课
-    cancelShortcut("enter", handleGoToNextCourse);
+    cancelShortcut("enter", goToNextCourse);
     // 从显示状态关闭结算面板
     courseStore.resetStatementIndex();
   }
 });
-
-async function completeCourse() {
-  if (isAuthenticated() && courseStore.currentCourse) {
-    // id 为 courseId
-    const { coursePackId, id } = courseStore.currentCourse;
-    const { nextCourse } = await courseStore.completeCourse(coursePackId, id);
-
-    if (nextCourse) {
-      nextCourseId = nextCourse.id;
-      updateActiveCourseMap(coursePackId, nextCourseId);
-    } else {
-      // TODO 应该记录 course pack courses 里面的第一课
-      // TODO 应该把 course id 赋值成 第一课的 course id
-      // updateActiveCourseMap(coursePackId, nextCourseId);
-    }
-  }
-}
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
@@ -154,11 +138,16 @@ function soundSentence() {
   readOneSentencePerDayAloud(enSentence.value);
 }
 
-function useGoToNextCourse() {
-  const router = useRouter();
-  const { showAuthRequireModal } = useAuthRequire();
+function useCourse() {
+  let nextCourseId = ref("");
 
-  async function handleGoToNextCourse() {
+  const haveNextCourse = computed(() => {
+    return nextCourseId.value;
+  });
+
+  async function goToNextCourse() {
+    const { showAuthRequireModal } = useAuthRequire();
+
     // 无论后续如何处理，都需要先隐藏 Summary 页面
     hideSummary();
     if (!isAuthenticated()) {
@@ -167,11 +156,31 @@ function useGoToNextCourse() {
       return;
     }
 
-    router.push(`/game/${courseStore.currentCourse?.coursePackId}/${nextCourseId}`);
+    if (nextCourseId.value) {
+      navigateTo(`/game/${courseStore.currentCourse?.coursePackId}/${nextCourseId.value}`);
+    } else {
+      navigateTo(`/course-pack/${courseStore.currentCourse?.coursePackId}`);
+    }
+  }
+
+  async function completeCourse() {
+    if (isAuthenticated() && courseStore.currentCourse) {
+      const { coursePackId } = courseStore.currentCourse;
+      const { nextCourse } = await courseStore.completeCourse();
+
+      if (nextCourse) {
+        nextCourseId.value = nextCourse.id;
+        updateActiveCourseMap(coursePackId, nextCourseId.value);
+      } else {
+        updateActiveCourseMap(coursePackId, "-1");
+      }
+    }
   }
 
   return {
-    handleGoToNextCourse,
+    completeCourse,
+    goToNextCourse,
+    haveNextCourse,
   };
 }
 

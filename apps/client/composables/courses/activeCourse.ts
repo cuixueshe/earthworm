@@ -15,6 +15,12 @@ export function useActiveCourseMap() {
     localStorage.setItem(ACTIVE_COURSE_MAP, JSON.stringify(activeCourseMap.value));
   }
 
+  function removeActiveCourseMap(coursePackId: string) {
+    activeCourseMap.value = getActiveCourseMap();
+    delete activeCourseMap.value[coursePackId];
+    localStorage.setItem(ACTIVE_COURSE_MAP, JSON.stringify(activeCourseMap.value));
+  }
+
   function resetActiveCourseMap() {
     localStorage.removeItem(ACTIVE_COURSE_MAP);
   }
@@ -23,5 +29,6 @@ export function useActiveCourseMap() {
     activeCourseMap,
     resetActiveCourseMap,
     updateActiveCourseMap,
+    removeActiveCourseMap,
   };
 }
