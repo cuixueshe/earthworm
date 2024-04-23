@@ -53,12 +53,6 @@ const dropdownContainer = ref(null);
 const GO_BACK_GAME_NAME = "goBackGamePage";
 const MENU_OPTIONS = [
   {
-    title: "用户信息",
-    name: "accountInfo",
-    eventName: handleViewUserInfo,
-    icon: "i-ph-user",
-  },
-  {
     title: "返回游戏",
     name: GO_BACK_GAME_NAME,
     eventName: handleGoBackGamePage,
@@ -87,10 +81,6 @@ onClickOutside(dropdownContainer, () => {
 
 function toggleDropdown() {
   showDropdown.value = !showDropdown.value;
-}
-
-function handleViewUserInfo() {
-  navigateTo("/user/info");
 }
 
 async function handleGoBackGamePage() {

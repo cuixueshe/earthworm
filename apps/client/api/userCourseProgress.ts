@@ -10,6 +10,20 @@ interface UserProgressDto {
   statementIndex: number;
 }
 
+export interface UserRecentCoursePackVo {
+  id: number;
+  coursePackId: string;
+  courseId: string;
+  title: string;
+  description: string;
+}
+
 export async function fetchUpdateCourseProgress(dto: UserProgressDto) {
   return await http.put<UserProgressVo, UserProgressVo>(`user-progress`, dto);
+}
+
+export async function fetchUserRecentCoursePacks() {
+  return await http.get<UserRecentCoursePackVo[], UserRecentCoursePackVo[]>(
+    `/user-progress/recent-course-packs`,
+  );
 }

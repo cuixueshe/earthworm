@@ -4,10 +4,13 @@ import { ref, watch } from "vue";
 import type { Course } from "./course";
 import { fetchUpdateCourseProgress } from "~/api/userCourseProgress";
 
-export function useStatement() {
-  let lastSavedIndex = 0;
-  const statementIndex = ref(0);
+const DEBOUNCE_TIME = 5000;
+const INTERVAL_TIME = 60 * 1000 * 5;
 
+let lastSavedIndex = 0;
+const statementIndex = ref(0);
+
+export function useStatement() {
   function setupStatement(course: Course) {
     statementIndex.value = course.statementIndex;
 
@@ -15,7 +18,7 @@ export function useStatement() {
       saveProgress();
 
       lastSavedIndex = statementIndex.value;
-    }, 5000);
+    }, DEBOUNCE_TIME);
 
     watch(
       () => statementIndex.value,
@@ -39,7 +42,7 @@ export function useStatement() {
     // 设置间隔性自动保存
     setInterval(() => {
       saveProgress();
-    }, 300000); // 每5分钟自动保存一次
+    }, INTERVAL_TIME); // 每5分钟自动保存一次
 
     function saveProgress() {
       if (statementIndex.value !== lastSavedIndex) {

@@ -1,7 +1,7 @@
 import { Inject, Injectable } from "@nestjs/common";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, desc, eq } from "drizzle-orm";
 
-import { userCourseProgress } from "@earthworm/schema";
+import { coursePack, userCourseProgress } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 
 @Injectable()
@@ -26,7 +26,25 @@ export class UserCourseProgressService {
       ),
     });
 
-    return result.statementIndex;
+    return result ? result.statementIndex : 0;
+  }
+
+  async getUserRecentCoursePacks(userId: string, limit: number) {
+    const userCourseProgressResult = await this.db
+      .selectDistinctOn([userCourseProgress.coursePackId], {
+        id: userCourseProgress.id,
+        coursePackId: userCourseProgress.coursePackId,
+        courseId: userCourseProgress.courseId,
+        title: coursePack.title,
+        description: coursePack.description,
+      })
+      .from(userCourseProgress)
+      .where(eq(userCourseProgress.userId, userId))
+      .orderBy(asc(userCourseProgress.coursePackId), desc(userCourseProgress.updatedAt))
+      .limit(limit)
+      .leftJoin(coursePack, eq(userCourseProgress.coursePackId, coursePack.id));
+
+    return userCourseProgressResult;
   }
 
   async upsert(userId: string, coursePackId: number, courseId: number, statementIndex: number) {

@@ -12,7 +12,7 @@
       <div>
         <NuxtLink href="/course-pack">更多课程包</NuxtLink>
       </div>
-      <div>这里展示我最近玩的课程包</div>
+      <HomeRecentCoursePack />
     </div>
   </div>
 </template>

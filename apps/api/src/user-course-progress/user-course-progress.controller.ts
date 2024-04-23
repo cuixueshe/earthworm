@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Put, UseGuards } from "@nestjs/common";
+import { Body, Controller, Get, Param, Put, Query, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
 
 import { AuthGuard } from "../guards/auth.guard";
@@ -25,6 +25,16 @@ export class UserProgressController {
     // 2. 可以只有 course pack id  来返回 当前 course pack 的所有信息
     // const coursePackInfo = await this.userProgressService.findCoursePackInfo(coursePackId);
     // return coursePackInfo;
+  }
+
+  @UseGuards(AuthGuard)
+  @Get("/recent-course-packs")
+  async getUserRecentCoursePacks(@User() user: UserEntity, @Query("limit") limit: number) {
+    const recentCoursePacks = await this.userCourseProgressService.getUserRecentCoursePacks(
+      user.userId,
+      limit || 10,
+    );
+    return recentCoursePacks;
   }
 
   @UseGuards(AuthGuard)

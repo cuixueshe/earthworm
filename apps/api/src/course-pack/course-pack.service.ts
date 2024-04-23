@@ -15,11 +15,7 @@ export class CoursePackService {
   ) {}
 
   async findAll() {
-    return await this.db.query.coursePack.findMany({
-      columns: {
-        progress: false,
-      },
-    });
+    return await this.db.query.coursePack.findMany();
   }
 
   private async findCompletionCount(userId: string, coursePackId: number, courseId: number) {
@@ -68,7 +64,6 @@ export class CoursePackService {
     await this.db.insert(coursePack).values({
       title: createCoursePackDto.title,
       description: createCoursePackDto.description,
-      progress: 0,
       isFree: createCoursePackDto.isFree || true,
     });
   }
