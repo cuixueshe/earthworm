@@ -73,8 +73,8 @@ export class CoursePackService {
     });
   }
 
-  async findCourse(coursePackId: number, courseId: number) {
-    return await this.courseService.find(coursePackId, courseId);
+  async findCourse(coursePackId: number, courseId: number, userId?: string) {
+    return await this.courseService.find(coursePackId, courseId, userId);
   }
 
   async findNextCourse(coursePackId: number, courseId: number) {

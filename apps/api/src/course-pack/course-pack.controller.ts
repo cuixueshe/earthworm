@@ -26,10 +26,11 @@ export class CoursePackController {
   @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Get(":coursePackId/courses/:courseId")
   findCourse(
+    @User() user: UserEntity,
     @Param("coursePackId", ParseIntPipe) coursePackId: number,
     @Param("courseId", ParseIntPipe) courseId: number,
   ) {
-    return this.coursePackService.findCourse(coursePackId, courseId);
+    return this.coursePackService.findCourse(coursePackId, courseId, user.userId);
   }
 
   @UncheckAuth()

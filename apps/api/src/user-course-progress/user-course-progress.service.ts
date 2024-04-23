@@ -1,5 +1,5 @@
 import { Inject, Injectable } from "@nestjs/common";
-import { asc, eq } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 
 import { userCourseProgress } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -15,6 +15,18 @@ export class UserCourseProgressService {
         orderBy: [asc(userCourseProgress.updatedAt)],
       },
     });
+  }
+
+  async findStatement(userId: string, coursePackId: number, courseId: number) {
+    const result = await this.db.query.userCourseProgress.findFirst({
+      where: and(
+        eq(userCourseProgress.userId, userId),
+        eq(userCourseProgress.coursePackId, coursePackId),
+        eq(userCourseProgress.courseId, courseId),
+      ),
+    });
+
+    return result.statementIndex;
   }
 
   async upsert(userId: string, coursePackId: number, courseId: number, statementIndex: number) {

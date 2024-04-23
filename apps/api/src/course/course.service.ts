@@ -19,8 +19,8 @@ export class CourseService {
     private readonly userCourseProgressService: UserCourseProgressService,
   ) {}
 
-  async find(coursePackId: number, courseId: number) {
-    const result = await this.db.query.course.findFirst({
+  async find(coursePackId: number, courseId: number, userId?: string) {
+    const courseEntity = await this.db.query.course.findFirst({
       where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
       with: {
         statements: {
@@ -32,10 +32,23 @@ export class CourseService {
       },
     });
 
-    if (!result) {
+    if (!courseEntity) {
       throw new NotFoundException(
         `CoursePack with ID ${coursePackId} and CourseId with ID ${courseId} not found`,
       );
+    }
+
+    const result: any = { ...courseEntity, statementIndex: 0 };
+
+    if (userId) {
+      // 如果有 userId 的话 需要把该用户的进度返回
+      const statementIndex = await this.userCourseProgressService.findStatement(
+        userId,
+        coursePackId,
+        courseId,
+      );
+
+      result.statementIndex = statementIndex;
     }
 
     return result;
@@ -63,11 +76,6 @@ export class CourseService {
     }
 
     const nextCourse = await this.findNext(coursePackId, courseId);
-    if (nextCourse) {
-      if (user.userId) {
-        await this.userCourseProgressService.upsert(user.userId, coursePackId, nextCourse.id, 1);
-      }
-    }
 
     return {
       nextCourse,

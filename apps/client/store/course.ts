@@ -1,10 +1,9 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch, watchEffect } from "vue";
 
-import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
-import { useCourseProgress } from "~/composables/courses/progress";
-import { isAuthenticated } from "~/services/auth";
+import { useStatement } from "./statement";
 
 interface Statement {
   id: number;
@@ -19,26 +18,19 @@ export interface Course {
   statements: Statement[];
   coursePackId: string;
   completionCount: number;
+  statementIndex: number;
 }
 
 export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
-  const statementIndex = ref(0);
   const currentStatement = ref<Statement>();
+  const { statementIndex, setupStatement } = useStatement();
 
   const { updateActiveCourseMap } = useActiveCourseMap();
-  const { saveProgress, loadProgress, cleanProgress } = useCourseProgress();
 
   watchEffect(() => {
     currentStatement.value = currentCourse.value?.statements[statementIndex.value];
   });
-
-  watch(
-    () => statementIndex.value,
-    () => {
-      saveProgress(currentCourse.value?.id!, statementIndex.value);
-    },
-  );
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
@@ -82,19 +74,14 @@ export const useCourseStore = defineStore("course", () => {
       currentCourse.value?.coursePackId!,
       currentCourse.value?.id!,
     );
-    // 这里只改变缓存的原因是 statementIndex 和 UI 是绑定的
-    // 当完成课程的时候并不希望 UI 立刻被重置
-    // saveProgress(currentCourse.value?.id!, 0);
+
     return res;
   }
 
   async function setup(coursePackId: string, courseId: string) {
-    // if (courseId === currentCourse.value?.id) return;
-
     let course = await fetchCourse(coursePackId, courseId);
     currentCourse.value = course;
-
-    // statementIndex.value = loadProgress(courseId);
+    setupStatement(course);
   }
 
   return {
@@ -108,7 +95,6 @@ export const useCourseStore = defineStore("course", () => {
     isAllDone,
     checkCorrect,
     completeCourse,
-    cleanProgress,
     toSpecificStatement,
     toPreviousStatement,
     toNextStatement,

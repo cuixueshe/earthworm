@@ -2,7 +2,7 @@ import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import type { Course } from "../course";
-import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "../course";
 import { useUserStore } from "../user";
@@ -43,7 +43,6 @@ describe("course", () => {
   beforeEach(() => {
     setActivePinia(createPinia());
     const store = useCourseStore();
-    store.cleanProgress();
 
     const userStore = useUserStore();
     userStore.initUser({
@@ -51,15 +50,6 @@ describe("course", () => {
     } as any);
 
     vi.mocked(isAuthenticated).mockReturnValue(true);
-  });
-
-  it("should be fetch try course when user is a tourist", async () => {
-    vi.mocked(isAuthenticated).mockReturnValue(false);
-
-    const store = useCourseStore();
-    await store.setup(1);
-
-    expect(fetchTryCourse).toBeCalled();
   });
 
   it("initializes with a course", async () => {
