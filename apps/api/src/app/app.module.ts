@@ -9,6 +9,7 @@ import { GameModule } from "../game/game.module";
 import { GlobalModule } from "../global/global.module";
 import { LogtoModule } from "../logto/logto.module";
 import { MembershipModule } from "../membership/membership.module";
+import { MusicModule } from "../music/music.module";
 import { RankModule } from "../rank/rank.module";
 import { ToolModule } from "../tool/tool.module";
 import { UserLearnRecordModule } from "../user-learn-record/user-learn-record.module";
@@ -29,6 +30,7 @@ import { UserModule } from "../user/user.module";
     CronJobModule,
     CourseHistoryModule,
     MembershipModule,
+    MusicModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: "single",
