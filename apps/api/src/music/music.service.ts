@@ -22,10 +22,11 @@ export class MusicService {
     const srtFileContent = srt.buffer.toString("utf8");
     let parsedSrt = srtparsejs.parse(srtFileContent);
     return parsedSrt.map((item) => {
+      const textArr = item.text.split("\n");
       return {
         id: Number(item.id),
-        english: item.text.split("\n")[0],
-        chinese: item.text.split("\n")[1],
+        english: textArr[0],
+        chinese: textArr[1],
         startTime: this.srtTimeToSeconds(item.startTime),
         endTime: this.srtTimeToSeconds(item.endTime),
       };
