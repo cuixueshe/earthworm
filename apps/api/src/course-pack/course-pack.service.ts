@@ -1,8 +1,9 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { and, eq } from "drizzle-orm";
+import { eq } from "drizzle-orm";
+import { CourseHistoryService } from "src/course-history/course-history.service";
 import { CourseService } from "src/course/course.service";
 
-import { courseHistory, coursePack } from "@earthworm/schema";
+import { coursePack } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { UserEntity } from "../user/user.decorators";
 import { CreateCoursePackDto } from "./dto/create-course-pack.dto";
@@ -12,52 +13,68 @@ export class CoursePackService {
   constructor(
     @Inject(DB) private db: DbType,
     private readonly courseService: CourseService,
+    private readonly courseHistoryService: CourseHistoryService,
   ) {}
 
   async findAll() {
     return await this.db.query.coursePack.findMany();
   }
 
-  private async findCompletionCount(userId: string, coursePackId: number, courseId: number) {
-    const record = await this.db.query.courseHistory.findFirst({
-      where: and(
-        eq(courseHistory.userId, userId),
-        eq(courseHistory.coursePackId, coursePackId),
-        eq(courseHistory.courseId, courseId),
-      ),
-    });
-
-    return record ? record.completionCount : 0;
-  }
-
-  async findOne(coursePackId: number, userId?: string) {
+  async findOne(coursePackId: number) {
     const result = await this.db.query.coursePack.findFirst({
       where: eq(coursePack.id, coursePackId),
-      with: {
-        courses: true,
-      },
     });
 
     if (!result) {
       throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
     }
 
-    const newCourses = await Promise.all(
-      result.courses.map(async (course) => {
-        const completionCount = userId
-          ? await this.findCompletionCount(userId, coursePackId, course.id)
-          : 0;
+    return result;
+  }
 
+  async findOneWithCourses(user: UserEntity, coursePackId: number) {
+    const coursePackWithCourses = await this.findCoursePackWithCourses(coursePackId);
+
+    if (user.userId) {
+      coursePackWithCourses.courses = await this.addCompletionCountsToCourses(
+        user.userId,
+        coursePackWithCourses.courses,
+        coursePackId,
+      );
+    }
+
+    return coursePackWithCourses;
+  }
+
+  private async findCoursePackWithCourses(coursePackId: number) {
+    const coursePackWithCourses = await this.db.query.coursePack.findFirst({
+      where: eq(coursePack.id, coursePackId),
+      with: {
+        courses: true,
+      },
+    });
+
+    if (!coursePackWithCourses) {
+      throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
+    }
+
+    return coursePackWithCourses;
+  }
+
+  private async addCompletionCountsToCourses(userId: string, courses: any[], coursePackId: number) {
+    return await Promise.all(
+      courses.map(async (course) => {
+        const completionCount = await this.courseHistoryService.findCompletionCount(
+          userId,
+          coursePackId,
+          course.id,
+        );
         return {
           ...course,
           completionCount,
         };
       }),
     );
-
-    result.courses = newCourses;
-
-    return result;
   }
 
   async create(createCoursePackDto: CreateCoursePackDto) {
@@ -68,8 +85,12 @@ export class CoursePackService {
     });
   }
 
-  async findCourse(coursePackId: number, courseId: number, userId?: string) {
-    return await this.courseService.find(coursePackId, courseId, userId);
+  async findCourse(user: UserEntity, coursePackId: number, courseId: number) {
+    if (user.userId) {
+      return await this.courseService.findWithUserProgress(coursePackId, courseId, user.userId);
+    } else {
+      return await this.courseService.find(coursePackId, courseId);
+    }
   }
 
   async findNextCourse(coursePackId: number, courseId: number) {

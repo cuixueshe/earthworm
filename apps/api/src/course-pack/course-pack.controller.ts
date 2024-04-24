@@ -19,7 +19,7 @@ export class CoursePackController {
   @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Get(":coursePackId")
   async findOne(@User() user: UserEntity, @Param("coursePackId") coursePackId: number) {
-    return await this.coursePackService.findOne(coursePackId, user.userId);
+    return await this.coursePackService.findOneWithCourses(user, coursePackId);
   }
 
   @UncheckAuth()
@@ -30,7 +30,7 @@ export class CoursePackController {
     @Param("coursePackId", ParseIntPipe) coursePackId: number,
     @Param("courseId", ParseIntPipe) courseId: number,
   ) {
-    return this.coursePackService.findCourse(coursePackId, courseId, user.userId);
+    return this.coursePackService.findCourse(user, coursePackId, courseId);
   }
 
   @UncheckAuth()

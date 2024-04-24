@@ -1,5 +1,5 @@
-import { Body, Controller, Get, Param, Put, Query, UseGuards } from "@nestjs/common";
-import { ApiBearerAuth, ApiOperation, ApiTags } from "@nestjs/swagger";
+import { Body, Controller, Get, Put, Query, UseGuards } from "@nestjs/common";
+import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 
 import { AuthGuard } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
@@ -20,14 +20,6 @@ export class UserProgressController {
   }
 
   @UseGuards(AuthGuard)
-  @Get("course-pack/:coursePackId")
-  async findCoursePackInfo(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
-    // 2. 可以只有 course pack id  来返回 当前 course pack 的所有信息
-    // const coursePackInfo = await this.userProgressService.findCoursePackInfo(coursePackId);
-    // return coursePackInfo;
-  }
-
-  @UseGuards(AuthGuard)
   @Get("/recent-course-packs")
   async getUserRecentCoursePacks(@User() user: UserEntity, @Query("limit") limit: number) {
     const recentCoursePacks = await this.userCourseProgressService.getUserRecentCoursePacks(
@@ -35,23 +27,6 @@ export class UserProgressController {
       limit || 10,
     );
     return recentCoursePacks;
-  }
-
-  @UseGuards(AuthGuard)
-  @Get(":userId/course-pack/:coursePackId/course/:courseId")
-  async findCourseProgress(
-    @User() user: UserEntity,
-    @Param("userId") userId: string,
-    @Param("coursePackId") coursePackId: string,
-    @Param("courseId") courseId: string,
-  ) {
-    // 3. 如果 user id course pack id 和 course id 都有的话 那么就返回这个 course id 的具体进度
-    // const courseProgress = await this.userProgressService.findCourseProgress(
-    //   userId,
-    //   coursePackId,
-    //   courseId,
-    // );
-    // return courseProgress;
   }
 
   @UseGuards(AuthGuard)

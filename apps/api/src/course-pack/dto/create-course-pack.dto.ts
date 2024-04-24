@@ -10,13 +10,9 @@ export class CreateCoursePackDto {
   @IsString()
   description?: string;
 
-  //   @IsInt()
-  //   @Min(0)
-  progress: number;
-
-  //   @IsInt()
+  @IsInt()
   difficulty: number;
 
-  //   @IsBoolean()
+  @IsBoolean()
   isFree: boolean;
 }

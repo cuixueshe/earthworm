@@ -19,7 +19,7 @@ export class CourseService {
     private readonly userCourseProgressService: UserCourseProgressService,
   ) {}
 
-  async find(coursePackId: number, courseId: number, userId?: string) {
+  async find(coursePackId: number, courseId: number) {
     const courseEntity = await this.db.query.course.findFirst({
       where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
       with: {
@@ -38,20 +38,19 @@ export class CourseService {
       );
     }
 
-    const result: any = { ...courseEntity, statementIndex: 0 };
+    return courseEntity;
+  }
 
-    if (userId) {
-      // 如果有 userId 的话 需要把该用户的进度返回
-      const statementIndex = await this.userCourseProgressService.findStatement(
-        userId,
-        coursePackId,
-        courseId,
-      );
+  async findWithUserProgress(coursePackId: number, courseId: number, userId: string) {
+    const courseEntity = await this.find(coursePackId, courseId);
 
-      result.statementIndex = statementIndex;
-    }
+    const statementIndex = await this.userCourseProgressService.findStatement(
+      userId,
+      coursePackId,
+      courseId,
+    );
 
-    return result;
+    return { ...courseEntity, statementIndex };
   }
 
   async findNext(coursePackId: number, courseId: number) {

@@ -23,6 +23,18 @@ export class CourseHistoryService {
     });
   }
 
+  async findCompletionCount(userId: string, coursePackId: number, courseId: number) {
+    const record = await this.db.query.courseHistory.findFirst({
+      where: and(
+        eq(courseHistory.userId, userId),
+        eq(courseHistory.coursePackId, coursePackId),
+        eq(courseHistory.courseId, courseId),
+      ),
+    });
+
+    return record ? record.completionCount : 0;
+  }
+
   async upsert(userId: string, coursePackId: number, courseId: number) {
     await this.db
       .insert(courseHistory)
