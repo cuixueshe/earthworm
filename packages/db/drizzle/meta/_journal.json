@@ -15,16 +15,9 @@
       "when": 1713518270110,
       "tag": "0001_hesitant_madame_hydra",
       "breakpoints": true
-    },
+    }, 
     {
       "idx": 2,
-      "version": "5",
-      "when": 1713937398747,
-      "tag": "0002_flawless_living_mummy",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
       "version": "5",
       "when": 1713948849425,
       "tag": "0003_dashing_kabuki",
