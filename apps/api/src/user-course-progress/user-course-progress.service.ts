@@ -8,15 +8,6 @@ import { DB, DbType } from "../global/providers/db.provider";
 export class UserCourseProgressService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async findAllByUserId(userId: string) {
-    return await this.db.query.userCourseProgress.findMany({
-      where: eq(userCourseProgress.userId, userId),
-      with: {
-        orderBy: [asc(userCourseProgress.updatedAt)],
-      },
-    });
-  }
-
   async findStatement(userId: string, coursePackId: number, courseId: number) {
     const result = await this.db.query.userCourseProgress.findFirst({
       where: and(

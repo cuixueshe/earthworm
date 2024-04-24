@@ -13,13 +13,6 @@ export class UserProgressController {
   constructor(private readonly userCourseProgressService: UserCourseProgressService) {}
 
   @UseGuards(AuthGuard)
-  @Get()
-  async findAllCourses(@User() user: UserEntity) {
-    const allCourseProgress = await this.userCourseProgressService.findAllByUserId(user.userId);
-    return allCourseProgress;
-  }
-
-  @UseGuards(AuthGuard)
   @Get("/recent-course-packs")
   async getUserRecentCoursePacks(@User() user: UserEntity, @Query("limit") limit: number) {
     const recentCoursePacks = await this.userCourseProgressService.getUserRecentCoursePacks(

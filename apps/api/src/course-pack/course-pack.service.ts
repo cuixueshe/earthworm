@@ -1,11 +1,10 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { eq } from "drizzle-orm";
-import { CourseHistoryService } from "src/course-history/course-history.service";
-import { CourseService } from "src/course/course.service";
 
 import { coursePack } from "@earthworm/schema";
+import { CourseHistoryService } from "../course-history/course-history.service";
+import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
-import { UserEntity } from "../user/user.decorators";
 import { CreateCoursePackDto } from "./dto/create-course-pack.dto";
 
 @Injectable()
@@ -32,12 +31,12 @@ export class CoursePackService {
     return result;
   }
 
-  async findOneWithCourses(user: UserEntity, coursePackId: number) {
+  async findOneWithCourses(userId: string, coursePackId: number) {
     const coursePackWithCourses = await this.findCoursePackWithCourses(coursePackId);
 
-    if (user.userId) {
+    if (userId) {
       coursePackWithCourses.courses = await this.addCompletionCountsToCourses(
-        user.userId,
+        userId,
         coursePackWithCourses.courses,
         coursePackId,
       );
@@ -78,16 +77,19 @@ export class CoursePackService {
   }
 
   async create(createCoursePackDto: CreateCoursePackDto) {
-    await this.db.insert(coursePack).values({
-      title: createCoursePackDto.title,
-      description: createCoursePackDto.description,
-      isFree: createCoursePackDto.isFree || true,
-    });
+    return await this.db
+      .insert(coursePack)
+      .values({
+        title: createCoursePackDto.title,
+        description: createCoursePackDto.description,
+        isFree: createCoursePackDto.isFree || true,
+      })
+      .returning();
   }
 
-  async findCourse(user: UserEntity, coursePackId: number, courseId: number) {
-    if (user.userId) {
-      return await this.courseService.findWithUserProgress(coursePackId, courseId, user.userId);
+  async findCourse(userId: string, coursePackId: number, courseId: number) {
+    if (userId) {
+      return await this.courseService.findWithUserProgress(coursePackId, courseId, userId);
     } else {
       return await this.courseService.find(coursePackId, courseId);
     }
@@ -97,7 +99,7 @@ export class CoursePackService {
     return await this.courseService.findNext(coursePackId, courseId);
   }
 
-  async completeCourse(user: UserEntity, coursePackId: number, courseId: number) {
-    return await this.courseService.completeCourse(user, coursePackId, courseId);
+  async completeCourse(userId: string, coursePackId: number, courseId: number) {
+    return await this.courseService.completeCourse(userId, coursePackId, courseId);
   }
 }

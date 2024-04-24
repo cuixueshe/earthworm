@@ -3,6 +3,7 @@ import { DbType } from "src/global/providers/db.provider";
 
 import { membership } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
+import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
 import { MembershipPeriod } from "../dto/buy-membership.dto";
 import { MembershipService } from "../membership.service";
@@ -28,6 +29,7 @@ describe("MembershipService", () => {
 
   afterAll(async () => {
     await cleanDB(db);
+    await endDB();
   });
 
   it("should create a new membership record for a new user", async () => {
