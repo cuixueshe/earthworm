@@ -1,5 +1,5 @@
 {
-  "id": "b32592b2-d04f-42d1-a236-bde27e185860",
+  "id": "43a5af80-e00b-406a-bcc2-0b4656e4bbd8",
   "prevId": "585a843d-e2cb-4db7-9b39-5551209062c5",
   "version": "5",
   "dialect": "pg",
@@ -107,7 +107,7 @@
       "columns": {
         "id": {
           "name": "id",
-          "type": "integer",
+          "type": "serial",
           "primaryKey": true,
           "notNull": true
         },
@@ -117,29 +117,17 @@
           "primaryKey": false,
           "notNull": true
         },
-        "song": {
-          "name": "song",
+        "song_url": {
+          "name": "song_url",
           "type": "text",
           "primaryKey": false,
           "notNull": true
-        },
-        "singer": {
-          "name": "singer",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "poster": {
-          "name": "poster",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
         },
         "lyrics": {
           "name": "lyrics",
           "type": "jsonb",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         }
       },
       "indexes": {},
