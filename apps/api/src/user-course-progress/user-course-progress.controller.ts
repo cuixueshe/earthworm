@@ -8,7 +8,7 @@ import { UserCourseProgressService } from "./user-course-progress.service";
 
 @ApiBearerAuth()
 @ApiTags("UserProgress")
-@Controller("user-progress")
+@Controller("user-course-progress")
 export class UserProgressController {
   constructor(private readonly userCourseProgressService: UserCourseProgressService) {}
 

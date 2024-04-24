@@ -40,7 +40,7 @@ describe("rank e2e", () => {
     await app.close();
   });
 
-  it("should get rank", async () => {
+  it("get: /rank/progress/weekly", async () => {
     await request(app.getHttpServer())
       .get("/rank/progress/weekly")
       .set("Authorization", `Bearer ${token}`)
@@ -59,7 +59,7 @@ describe("rank e2e", () => {
       });
   });
 
-  it("should get self rank info", async () => {
+  it("get: /rank/progress/weekly", async () => {
     await request(app.getHttpServer())
       .get("/rank/progress/weekly")
       .set("Authorization", `Bearer ${token}`)

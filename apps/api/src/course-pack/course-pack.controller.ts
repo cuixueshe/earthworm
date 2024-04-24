@@ -19,7 +19,7 @@ export class CoursePackController {
   @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Get(":coursePackId")
   async findOne(@User() user: UserEntity, @Param("coursePackId") coursePackId: number) {
-    return await this.coursePackService.findOneWithCourses(user, coursePackId);
+    return await this.coursePackService.findOneWithCourses(user.userId, coursePackId);
   }
 
   @UncheckAuth()
@@ -30,7 +30,7 @@ export class CoursePackController {
     @Param("coursePackId", ParseIntPipe) coursePackId: number,
     @Param("courseId", ParseIntPipe) courseId: number,
   ) {
-    return this.coursePackService.findCourse(user, coursePackId, courseId);
+    return this.coursePackService.findCourse(user.userId, coursePackId, courseId);
   }
 
   @UncheckAuth()
@@ -51,7 +51,7 @@ export class CoursePackController {
     @Param("coursePackId") coursePackId: number,
     @Param("courseId") courseId: number,
   ) {
-    return this.coursePackService.completeCourse(user, coursePackId, courseId);
+    return this.coursePackService.completeCourse(user.userId, coursePackId, courseId);
   }
 
   // TODO 暂时不支持用户自行上传课程包

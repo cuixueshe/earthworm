@@ -53,9 +53,7 @@ export class CourseService {
   }
 
   async findNext(coursePackId: number, courseId: number) {
-    const result = await this.db.query.course.findFirst({
-      where: and(gt(course.id, courseId), eq(course.coursePackId, coursePackId)),
-    });
+    const result = await this._findNext(coursePackId, courseId);
 
     if (!result) {
       throw new NotFoundException(
@@ -66,6 +64,14 @@ export class CourseService {
     return result;
   }
 
+  private async _findNext(coursePackId: number, courseId: number) {
+    const nextCourse = await this.db.query.course.findFirst({
+      where: and(gt(course.id, courseId), eq(course.coursePackId, coursePackId)),
+    });
+
+    return nextCourse;
+  }
+
   async completeCourse(userId: string, coursePackId: number, courseId: number) {
     if (userId) {
       await this.rankService.userFinishCourse(userId);
@@ -73,10 +79,8 @@ export class CourseService {
       await this.userLearnRecordService.upsert(userId);
     }
 
-    const nextCourse = await this.findNext(coursePackId, courseId);
-
     return {
-      nextCourse,
+      nextCourse: await this._findNext(coursePackId, courseId),
     };
   }
 }

@@ -110,6 +110,14 @@ describe("course service", () => {
       expect(courseHistoryService.upsert).not.toHaveBeenCalled();
       expect(userLearnRecordService.upsert).not.toHaveBeenCalled();
     });
+
+    it("should not have nextCourse when not exist next course", async () => {
+      const { courseEntitySecond, coursePackId } = await setupDBData(db);
+
+      const result = await courseService.completeCourse("", coursePackId, courseEntitySecond.id);
+
+      expect(result.nextCourse).toBeUndefined();
+    });
   });
 });
 

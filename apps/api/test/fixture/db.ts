@@ -1,5 +1,6 @@
-import { course, coursePack, statement } from "@earthworm/schema";
+import { course, coursePack, statement, userCourseProgress } from "@earthworm/schema";
 import { CreateCoursePackDto } from "../../src/course-pack/dto/create-course-pack.dto";
+import { getTokenOwner } from "../../test/fixture/user";
 
 export async function insertCoursePack(db, dto?: CreateCoursePackDto) {
   const options = Object.assign(
@@ -45,6 +46,25 @@ export async function insertStatement(db, courseId, order = 1) {
       english: "hello",
       soundmark: "nihao",
       courseId,
+    })
+    .returning();
+
+  return entity;
+}
+
+export async function insertUserCourseProgress(
+  db,
+  coursePackId: number,
+  courseId: number,
+  statementIndex: number,
+) {
+  const [entity] = await db
+    .insert(userCourseProgress)
+    .values({
+      userId: getTokenOwner(),
+      coursePackId,
+      courseId,
+      statementIndex,
     })
     .returning();
 

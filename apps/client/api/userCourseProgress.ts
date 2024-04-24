@@ -24,6 +24,6 @@ export async function fetchUpdateCourseProgress(dto: UserProgressDto) {
 
 export async function fetchUserRecentCoursePacks() {
   return await http.get<UserRecentCoursePackVo[], UserRecentCoursePackVo[]>(
-    `/user-progress/recent-course-packs`,
+    `/user-course-progress/recent-course-packs`,
   );
 }
