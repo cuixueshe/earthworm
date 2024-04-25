@@ -1,11 +1,20 @@
-import { Body, Controller, Post, UploadedFile, UseGuards, UseInterceptors } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  Post,
+  UploadedFile,
+  UseGuards,
+  UseInterceptors,
+} from "@nestjs/common";
 import { FileInterceptor } from "@nestjs/platform-express";
 
 import { AuthGuard } from "../guards/auth.guard";
 import { CreateMusicDto } from "./dto/create-music.dto";
 import { MusicService } from "./music.service";
 
-@Controller("music")
+@Controller("musics")
 export class MusicController {
   constructor(private readonly musicService: MusicService) {}
 
@@ -13,11 +22,18 @@ export class MusicController {
   @Post("/create")
   @UseInterceptors(FileInterceptor("srt"))
   async createMusic(@UploadedFile() srtFile: Express.Multer.File, @Body() dto: CreateMusicDto) {
-    const res = this.musicService.create(srtFile, dto);
+    await this.musicService.create(srtFile, dto);
+  }
 
-    return {
-      data: "ok",
-      message: "ok",
-    };
+  @UseGuards(AuthGuard)
+  @Get("")
+  findAll() {
+    return this.musicService.findAll();
+  }
+
+  @UseGuards(AuthGuard)
+  @Get(":musicId")
+  findOne(@Param("musicId") musicId: number) {
+    return this.musicService.find(musicId);
   }
 }

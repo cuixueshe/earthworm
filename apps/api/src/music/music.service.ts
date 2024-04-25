@@ -1,4 +1,5 @@
 import { Inject, Injectable } from "@nestjs/common";
+import { eq } from "drizzle-orm";
 import * as srtparsejs from "srtparsejs";
 
 import { music } from "@earthworm/schema";
@@ -9,13 +10,27 @@ import { CreateMusicDto } from "./dto/create-music.dto";
 export class MusicService {
   constructor(@Inject(DB) private db: DbType) {}
 
+  async checkHadSong(title: string) {
+    const songs = await this.db.select().from(music).where(eq(music.title, title));
+    return !!songs.length;
+  }
+
   async create(srt: Express.Multer.File, dto: CreateMusicDto) {
     if (!srt) return;
     const { songUrl, title } = dto;
+    const hasSong = await this.checkHadSong(title);
+    if (hasSong) return;
     const lyrics = this.covertSrtToJson(srt);
     await this.db.insert(music).values({ title, songUrl, lyrics });
+  }
 
-    return lyrics;
+  async findAll() {
+    return await this.db.select().from(music);
+  }
+
+  async find(musicId: number) {
+    const musicCourse = await this.db.select().from(music).where(eq(music.id, musicId));
+    return musicCourse[0];
   }
 
   private covertSrtToJson(srt: Express.Multer.File) {
