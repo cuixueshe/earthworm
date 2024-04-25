@@ -46,7 +46,8 @@
         >
           {{ year || yearOptions[0].label }}
         </div>
-        <ul
+        <!-- TODO: 暂时只有 2024 年一年的数据 所以先不需要展开了 -->
+        <!-- <ul
           tabindex="0"
           class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
         >
@@ -57,10 +58,8 @@
           >
             <a>{{ item.label }}</a>
           </li>
-        </ul>
-        <span class="pl-2 text-sm"
-          >{{ totalCount }} contributions in {{ year ?? "the last year" }}</span
-        >
+        </ul> -->
+        <span class="pl-2 text-sm"> 学习了 {{ totalCount }} 天</span>
       </div>
 
       <div class="flex items-center gap-1 text-xs">

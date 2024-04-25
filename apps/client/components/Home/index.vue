@@ -1,14 +1,14 @@
 <template>
   <div class="container m-auto flex w-full font-customFont">
-    <div class="flex w-80 shrink-0 flex-col p-12 text-4xl">
+    <div class="flex w-80 shrink-0 flex-col p-12 pt-0 text-4xl">
       <div class="avatar flex w-full justify-center p-0">
         <div class="w-full rounded-full">
           <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
       </div>
-      <div class="w-56">@{{ userStore.userInfo?.username }}</div>
+      <div class="w-56">{{ userStore.userInfo?.username }}</div>
       <!-- <div>{{ userStore.userInfo?.name }}</div> -->
-      <div class="flex gap-2 py-4">
+      <!-- <div class="flex gap-2 py-4">
         <div
           class="overflow-hidden rounded-full"
           v-for="i of [1, 2, 3]"
@@ -19,7 +19,7 @@
             alt=""
           />
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="flex flex-1 flex-col">
       <div class="flex">
@@ -28,11 +28,11 @@
           class="btn btn-primary btn-sm mr-2"
           >更多课程包</NuxtLink
         >
-        <NuxtLink
+        <!-- <NuxtLink
           class="btn btn-primary btn-sm"
           href="/course-pack"
           >更多音乐</NuxtLink
-        >
+        > -->
       </div>
       <div class="mb-8 flex">
         <HomeRecentCoursePack />

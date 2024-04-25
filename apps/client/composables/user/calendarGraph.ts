@@ -64,7 +64,7 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   function getOptions() {
-    for (let i = 2018; i <= new Date().getFullYear(); i++) {
+    for (let i = 2024; i <= new Date().getFullYear(); i++) {
       yearOptions.value.unshift({ label: i.toString(), value: i });
     }
   }
