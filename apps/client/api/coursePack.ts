@@ -5,6 +5,7 @@ export interface CoursePack {
   id: string;
   title: string;
   isFree: boolean;
+  description: string;
 }
 
 export interface CoursePack2 {

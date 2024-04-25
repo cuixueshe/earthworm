@@ -10,7 +10,6 @@ export const useCoursePackStore = defineStore("course-pack", () => {
   async function setup(coursePackId: string) {
     const res = await fetchCoursePack(coursePackId);
     currentCoursePack.value = res;
-    console.log(res);
   }
 
   return {

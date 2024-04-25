@@ -3,7 +3,7 @@
     <div class="flex w-80 shrink-0 flex-col p-12 pt-0 text-4xl">
       <div class="avatar flex w-full justify-center p-0">
         <div class="w-full rounded-full">
-          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          <img src="/logo.png" />
         </div>
       </div>
       <div class="w-56">{{ userStore.userInfo?.username }}</div>
@@ -34,6 +34,7 @@
           >更多音乐</NuxtLink
         > -->
       </div>
+
       <div class="mb-8 flex">
         <HomeRecentCoursePack />
         <!-- <div class="card"></div>
