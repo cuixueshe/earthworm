@@ -11,7 +11,3 @@ export async function fetchCompleteCourse(coursePackId: string, courseId: string
     `/course-pack/${coursePackId}/courses/${courseId}/complete`,
   );
 }
-
-export async function fetchCourses() {
-  return await http.get<Course[], Course[]>("/courses");
-}

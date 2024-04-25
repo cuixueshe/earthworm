@@ -111,10 +111,6 @@
 import { useRouter } from "vue-router";
 
 import Message from "~/components/main/Message/useMessage";
-import { useGameStore } from "~/store/game";
-
-const gameStore = useGameStore();
-const router = useRouter();
 
 const features = [
   {
@@ -141,8 +137,6 @@ const features = [
 
 async function handleUpgrade(type) {
   if (type === "免费") {
-    const { courseId } = await gameStore.startGame();
-    router.push(`/main/${courseId}`);
   } else {
     // Upgrade now
     Message.warning("Function is not open！");

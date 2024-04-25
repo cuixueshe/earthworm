@@ -42,12 +42,9 @@ import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
-import { useGameStore } from "~/store/game";
-
 const emit = defineEmits(["update-show-modal"]);
 const route = useRoute();
 const router = useRouter();
-const gameStore = useGameStore();
 const showDropdown = ref(false);
 const dropdownContainer = ref(null);
 const GO_BACK_GAME_NAME = "goBackGamePage";
@@ -84,8 +81,7 @@ function toggleDropdown() {
 }
 
 async function handleGoBackGamePage() {
-  const { courseId } = await gameStore.startGame();
-  router.push(`/main/${courseId}`);
+  // TODO 处理回到游戏
 }
 
 function handleSetting() {
