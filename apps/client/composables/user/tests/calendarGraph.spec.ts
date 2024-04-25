@@ -140,13 +140,13 @@ describe("use calendar graph", () => {
 
     const tbody = renderBody(apiData);
 
-    expect(tbody[1][0]?.tips).toBe("1 contributions on January 1st, 2024");
+    expect(tbody[1][0]?.tips).toBe("学习了 1 次  January 1st, 2024");
     expect(tbody[1][0]?.bg).toBe("low");
-    expect(tbody[2][0]?.tips).toBe("3 contributions on January 2nd, 2024");
+    expect(tbody[2][0]?.tips).toBe("学习了 3 次  January 2nd, 2024");
     expect(tbody[2][0]?.bg).toBe("moderate");
-    expect(tbody[3][0]?.tips).toBe("5 contributions on January 3rd, 2024");
+    expect(tbody[3][0]?.tips).toBe("学习了 5 次  January 3rd, 2024");
     expect(tbody[3][0]?.bg).toBe("high");
-    expect(tbody[4][0]?.tips).toBe("10 contributions on January 4th, 2024");
+    expect(tbody[4][0]?.tips).toBe("学习了 10 次  January 4th, 2024");
     expect(tbody[4][0]?.bg).toBe("higher");
   });
 });
