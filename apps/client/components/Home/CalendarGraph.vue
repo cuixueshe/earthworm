@@ -59,7 +59,7 @@
             <a>{{ item.label }}</a>
           </li>
         </ul> -->
-        <span class="pl-2 text-sm"> 学习了 {{ totalCount }} 课</span>
+        <span class="pl-2 text-sm"> 一共学习了 {{ totalCount }} 次</span>
       </div>
 
       <div class="flex items-center gap-1 text-xs">

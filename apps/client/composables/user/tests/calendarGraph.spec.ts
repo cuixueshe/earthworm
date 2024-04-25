@@ -132,10 +132,10 @@ describe("use calendar graph", () => {
   it("should return render table body data", () => {
     initTable(2024);
     const apiData = [
-      { date: "2024-01-01", count: 1 },
-      { date: "2024-01-02", count: 3 },
-      { date: "2024-01-03", count: 5 },
-      { date: "2024-01-04", count: 10 },
+      { day: "2024-01-01", count: 1 },
+      { day: "2024-01-02", count: 3 },
+      { day: "2024-01-03", count: 5 },
+      { day: "2024-01-04", count: 10 },
     ];
 
     const tbody = renderBody(apiData);

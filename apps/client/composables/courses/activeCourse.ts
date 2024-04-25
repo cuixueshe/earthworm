@@ -9,13 +9,13 @@ export function useActiveCourseMap() {
     return JSON.parse(localStorage.getItem(ACTIVE_COURSE_MAP) || "{}");
   }
 
-  function updateActiveCourseMap(coursePackId: string, courseId: string) {
+  function updateActiveCourseMap(coursePackId: number, courseId: number) {
     activeCourseMap.value = getActiveCourseMap();
     activeCourseMap.value[coursePackId] = courseId;
     localStorage.setItem(ACTIVE_COURSE_MAP, JSON.stringify(activeCourseMap.value));
   }
 
-  function removeActiveCourseMap(coursePackId: string) {
+  function removeActiveCourseMap(coursePackId: number) {
     activeCourseMap.value = getActiveCourseMap();
     delete activeCourseMap.value[coursePackId];
     localStorage.setItem(ACTIVE_COURSE_MAP, JSON.stringify(activeCourseMap.value));

@@ -5,15 +5,15 @@ interface UserProgressVo {
 }
 
 interface UserProgressDto {
-  coursePackId: string;
-  courseId: string;
+  coursePackId: number;
+  courseId: number;
   statementIndex: number;
 }
 
 export interface UserRecentCoursePackVo {
   id: number;
-  coursePackId: string;
-  courseId: string;
+  coursePackId: number;
+  courseId: number;
   title: string;
   description: string;
 }

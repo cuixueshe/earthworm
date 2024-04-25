@@ -36,7 +36,7 @@ const props = defineProps<{
   title: string;
   id: string;
   count: number | undefined;
-  coursePackId: string;
+  coursePackId: number;
 }>();
 const { activeCourseMap } = useActiveCourseMap();
 

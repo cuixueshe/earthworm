@@ -5,6 +5,6 @@ export interface CourseHistory {
   completionCount: number;
 }
 
-export async function fetchCourseHistory(coursePackId: string) {
+export async function fetchCourseHistory(coursePackId: number) {
   return await http.get<CourseHistory[], CourseHistory[]>(`/course-history/${coursePackId}`);
 }

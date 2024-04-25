@@ -51,11 +51,11 @@ async function getUserRecentCoursePacks() {
   coursePacks.value = await fetchUserRecentCoursePacks();
 }
 
-function handleGotoCourseList(coursePackId: string) {
+function handleGotoCourseList(coursePackId: number) {
   navigateTo(`/course-pack/${coursePackId}`);
 }
 
-function handleContinueGame(coursePackId: string, courseId: string) {
+function handleContinueGame(coursePackId: number, courseId: number) {
   navigateTo(`/game/${coursePackId}/${courseId}`);
 }
 </script>

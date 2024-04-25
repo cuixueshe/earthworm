@@ -95,9 +95,10 @@ export function useCalendarGraph(emits: EmitsType) {
         const current = list.find((f) => {
           return f.day === date;
         });
-        const tips = `${current?.count || "No"} contributions on ${
-          months[month]
-        } ${day}${getOrdinalSuffix(day)}, ${year}`;
+
+        const tipText = current?.count ? `学习了 ${current?.count} 次 ` : `没有学习`;
+
+        const tips = `${tipText} ${months[month]} ${day}${getOrdinalSuffix(day)}, ${year}`;
         return { date: item.date, tips, bg: getActivityLevel(current?.count) };
       });
     });
