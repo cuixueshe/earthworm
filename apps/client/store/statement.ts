@@ -12,7 +12,7 @@ const statementIndex = ref(0);
 
 export function useStatement() {
   function setupStatement(course: Course) {
-    statementIndex.value = course.statementIndex;
+    statementIndex.value = course.statementIndex || 0;
 
     const debouncedSaveProgress = debounce(() => {
       saveProgress();
