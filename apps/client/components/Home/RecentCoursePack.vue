@@ -9,13 +9,13 @@
       >
         <figure>
           <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            src="~/assets/xingrong.avif"
             alt="Shoes"
           />
         </figure>
         <div class="card-body">
           <h2 class="card-title">{{ coursePack.title }}</h2>
-          <p>这是一个课程描述</p>
+          <p>{{ coursePack.description }}</p>
           <div class="card-actions justify-end">
             <button
               class="btn btn-primary btn-sm"

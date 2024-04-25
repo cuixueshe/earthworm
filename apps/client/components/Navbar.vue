@@ -22,7 +22,7 @@
           </NuxtLink>
 
           <nav
-            v-if="route.path === '/'"
+            v-if="route.path === '/' && !isAuthenticated()"
             aria-label="Global"
             class="hidden md:block"
           >
