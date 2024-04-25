@@ -132,21 +132,21 @@ describe("use calendar graph", () => {
   it("should return render table body data", () => {
     initTable(2024);
     const apiData = [
-      { date: "2024-01-01", count: 1 },
-      { date: "2024-01-02", count: 3 },
-      { date: "2024-01-03", count: 5 },
-      { date: "2024-01-04", count: 10 },
+      { day: "2024-01-01", count: 1 },
+      { day: "2024-01-02", count: 3 },
+      { day: "2024-01-03", count: 5 },
+      { day: "2024-01-04", count: 10 },
     ];
 
     const tbody = renderBody(apiData);
 
-    expect(tbody[1][0]?.tips).toBe("1 contributions on January 1st, 2024");
+    expect(tbody[1][0]?.tips).toBe("学习了 1 次  January 1st, 2024");
     expect(tbody[1][0]?.bg).toBe("low");
-    expect(tbody[2][0]?.tips).toBe("3 contributions on January 2nd, 2024");
+    expect(tbody[2][0]?.tips).toBe("学习了 3 次  January 2nd, 2024");
     expect(tbody[2][0]?.bg).toBe("moderate");
-    expect(tbody[3][0]?.tips).toBe("5 contributions on January 3rd, 2024");
+    expect(tbody[3][0]?.tips).toBe("学习了 5 次  January 3rd, 2024");
     expect(tbody[3][0]?.bg).toBe("high");
-    expect(tbody[4][0]?.tips).toBe("10 contributions on January 4th, 2024");
+    expect(tbody[4][0]?.tips).toBe("学习了 10 次  January 4th, 2024");
     expect(tbody[4][0]?.bg).toBe("higher");
   });
 });

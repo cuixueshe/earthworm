@@ -3,6 +3,7 @@ import { DbType } from "src/global/providers/db.provider";
 
 import { membership } from "@earthworm/schema";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
+import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
 import { MembershipPeriod } from "../dto/buy-membership.dto";
 import { MembershipService } from "../membership.service";
@@ -28,13 +29,14 @@ describe("MembershipService", () => {
 
   afterAll(async () => {
     await cleanDB(db);
+    await endDB();
   });
 
   it("should create a new membership record for a new user", async () => {
     const buyMembershipDto = { userId: "new-cxr", period: MembershipPeriod.MONTH, duration: 1 };
 
     const startDate = new Date("2024-01-01");
-    const { endDate } = await service.createOrUpdateMembership(startDate, buyMembershipDto);
+    const { endDate } = await service.upsert(startDate, buyMembershipDto);
 
     expect(endDate.getMonth()).toBe(1);
   });
@@ -44,7 +46,7 @@ describe("MembershipService", () => {
 
     const buyMembershipDto = { userId, period: MembershipPeriod.MONTH, duration: 1 };
 
-    const result = await service.createOrUpdateMembership(startDate, buyMembershipDto);
+    const result = await service.upsert(startDate, buyMembershipDto);
 
     expect(result.endDate.getMonth()).toBe(endDate.getMonth() + 1);
   });
@@ -56,7 +58,7 @@ describe("MembershipService", () => {
 
     // Act
     const startDate = new Date("2024-04-01");
-    const result = await service.createOrUpdateMembership(startDate, buyMembershipDto);
+    const result = await service.upsert(startDate, buyMembershipDto);
 
     expect(result.endDate.getMonth()).toBe(startDate.getMonth() + 1);
   });
