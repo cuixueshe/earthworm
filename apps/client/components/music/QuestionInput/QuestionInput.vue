@@ -55,6 +55,9 @@ const { isKeyboardSoundEnabled } = useKeyboardSound();
 const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError } = answerError();
+
+console.log(111111, musicStore.currentLyric?.english!);
+
 const { inputValue, userInputWords, submitAnswer, setInputValue, handleKeyboardInput, isFixMode } =
   useInput({
     source: () => musicStore.currentLyric?.english!,

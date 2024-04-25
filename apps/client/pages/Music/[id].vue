@@ -25,8 +25,8 @@ const isLoading = ref(true);
 const route = useRoute();
 const musicStore = useMusicStore();
 
-onMounted(() => {
-  musicStore.setup(Number(route.params.id));
+onMounted(async () => {
+  await musicStore.setup(Number(route.params.id));
   isLoading.value = false;
 });
 </script>

@@ -1,8 +1,6 @@
 import Plyr from "plyr";
-import { computed, ref } from "vue";
 
 import { useMusicStore } from "~/store/music";
-import { srtTimeToSeconds } from "~/utils/musicTime";
 
 /**
  *
@@ -18,14 +16,14 @@ export function useMusicAudio() {
   const musicStore = useMusicStore();
 
   function setupMusicAudio(playerElement: HTMLAudioElement) {
-    if (!musicStore.currentMusic?.song) return;
+    if (!musicStore.currentMusic?.songUrl) return;
     player = new Plyr(playerElement, { seekTime: 0.1 });
     player.source = {
       type: "audio",
       title: musicStore.currentMusic.title,
       sources: [
         {
-          src: musicStore.currentMusic.song,
+          src: musicStore.currentMusic.songUrl,
           type: "audio/mp3",
         },
       ],
@@ -36,8 +34,6 @@ export function useMusicAudio() {
   }
 
   function runTimeUpdate() {
-    if (!musicStore.currentLyric?.endTime) return;
-    const endAt = srtTimeToSeconds(musicStore.currentLyric.endTime);
     // 提高时间更新精度
     let count = 10;
     let timer = setInterval(() => {
@@ -46,12 +42,15 @@ export function useMusicAudio() {
       } else {
         count--;
       }
-      pauseLyric(endAt);
+      pauseLyric();
     }, 25);
   }
 
-  function pauseLyric(pauseTime: number) {
-    if (player.currentTime >= pauseTime) {
+  function pauseLyric() {
+    if (
+      musicStore.currentLyric?.endTime &&
+      player.currentTime >= musicStore.currentLyric?.endTime
+    ) {
       pauseMusic();
     }
   }
@@ -63,14 +62,11 @@ export function useMusicAudio() {
     player.pause();
   }
 
-  const lyricStartTime = computed(() =>
-    musicStore.currentLyric?.startTime ? srtTimeToSeconds(musicStore.currentLyric?.startTime) : "",
-  );
-
   function playLyric() {
-    if (!lyricStartTime.value) return;
-    player.currentTime = lyricStartTime.value;
-    playMusic();
+    if (musicStore.currentLyric?.startTime) {
+      player.currentTime = musicStore.currentLyric?.startTime;
+      playMusic();
+    }
   }
 
   return {
@@ -78,6 +74,5 @@ export function useMusicAudio() {
     playMusic,
     pauseMusic,
     playLyric,
-    lyricStartTime,
   };
 }
