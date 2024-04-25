@@ -1,18 +1,51 @@
 <template>
-  <div class="container m-auto w-full font-customFont">
-    个人主页
-    <h2>{{ userStore.userInfo?.name }}</h2>
-
-    <CalendarGraph
-      :data="data"
-      :totalCount="totalCount"
-      @toggleYear="toggleYear"
-    />
-    <div>
-      <div>
-        <NuxtLink href="/course-pack">更多课程包</NuxtLink>
+  <div class="container m-auto flex w-full font-customFont">
+    <div class="flex w-80 shrink-0 flex-col p-12 text-4xl">
+      <div class="avatar flex w-full justify-center p-0">
+        <div class="w-full rounded-full">
+          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        </div>
       </div>
-      <HomeRecentCoursePack />
+      <div class="w-56">@{{ userStore.userInfo?.username }}</div>
+      <!-- <div>{{ userStore.userInfo?.name }}</div> -->
+      <div class="flex gap-2 py-4">
+        <div
+          class="overflow-hidden rounded-full"
+          v-for="i of [1, 2, 3]"
+          :key="i"
+        >
+          <img
+            src="https://sdfsdf.dev/72x72.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col">
+      <div class="flex">
+        <NuxtLink
+          href="/course-pack"
+          class="btn btn-primary btn-sm mr-2"
+          >更多课程包</NuxtLink
+        >
+        <NuxtLink
+          class="btn btn-primary btn-sm"
+          href="/course-pack"
+          >更多音乐</NuxtLink
+        >
+      </div>
+      <div class="mb-8 flex">
+        <HomeRecentCoursePack />
+        <!-- <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div> -->
+      </div>
+      <HomeCalendarGraph
+        :data="data"
+        :totalCount="totalCount"
+        @toggleYear="toggleYear"
+      />
     </div>
   </div>
 </template>
@@ -23,7 +56,6 @@ import { ref } from "vue";
 import { fetchLearnRecord } from "~/api/userLearnRecord";
 import { type CalendarData } from "~/composables/user/calendarGraph";
 import { useUserStore } from "~/store/user";
-import CalendarGraph from "./CalendarGraph.vue";
 
 const userStore = useUserStore();
 const { data, totalCount, toggleYear } = useCalendarGraph();

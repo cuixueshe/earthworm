@@ -19,7 +19,7 @@ export interface UserRecentCoursePackVo {
 }
 
 export async function fetchUpdateCourseProgress(dto: UserProgressDto) {
-  return await http.put<UserProgressVo, UserProgressVo>(`user-progress`, dto);
+  return await http.put<UserProgressVo, UserProgressVo>(`user-course-progress`, dto);
 }
 
 export async function fetchUserRecentCoursePacks() {
