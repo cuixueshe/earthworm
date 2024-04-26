@@ -1,7 +1,7 @@
 <div align="center">
   <img alt="Earthworm" width="120" height="120" src="./assets/logo/logo-1000.png">
   <h1>Earthworm</h1>
-  <span>中文 | <a href="./README.md">英文</a></span>
+  <span>中文 | <a href="./README.md">English</a></span>
 </div>
 
 ## ⚡ 介绍
