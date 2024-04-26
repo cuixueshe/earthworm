@@ -8,7 +8,19 @@
       class="modal-box"
     >
       <h3 class="text-lg font-bold">{{ title }}</h3>
-      <p class="py-4">{{ content }}</p>
+      <p
+        v-if="content"
+        class="py-4"
+      >
+        {{ content }}
+      </p>
+      <div
+        v-else
+        class="pt-4"
+      >
+        <slot />
+      </div>
+
       <div class="modal-action">
         <form method="dialog">
           <button

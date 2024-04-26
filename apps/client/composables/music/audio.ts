@@ -1,6 +1,8 @@
 import Plyr from "plyr";
+import { computed } from "vue";
 
 import { useMusicStore } from "~/store/music";
+import { srtTimeToSeconds } from "~/utils/musicTime";
 
 /**
  *
@@ -34,6 +36,8 @@ export function useMusicAudio() {
   }
 
   function runTimeUpdate() {
+    if (!musicStore.currentLyric?.endTime) return;
+    const endAt = srtTimeToSeconds(musicStore.currentLyric.endTime);
     // 提高时间更新精度
     let count = 10;
     let timer = setInterval(() => {
@@ -42,15 +46,12 @@ export function useMusicAudio() {
       } else {
         count--;
       }
-      pauseLyric();
+      pauseLyric(endAt);
     }, 25);
   }
 
-  function pauseLyric() {
-    if (
-      musicStore.currentLyric?.endTime &&
-      player.currentTime >= musicStore.currentLyric?.endTime
-    ) {
+  function pauseLyric(pauseTime: number) {
+    if (player.currentTime >= pauseTime) {
       pauseMusic();
     }
   }
@@ -62,11 +63,14 @@ export function useMusicAudio() {
     player.pause();
   }
 
+  const lyricStartTime = computed(() =>
+    musicStore.currentLyric?.startTime ? srtTimeToSeconds(musicStore.currentLyric?.startTime) : "",
+  );
+
   function playLyric() {
-    if (musicStore.currentLyric?.startTime) {
-      player.currentTime = musicStore.currentLyric?.startTime;
-      playMusic();
-    }
+    if (!lyricStartTime.value) return;
+    player.currentTime = lyricStartTime.value;
+    playMusic();
   }
 
   return {
@@ -74,5 +78,6 @@ export function useMusicAudio() {
     playMusic,
     pauseMusic,
     playLyric,
+    lyricStartTime,
   };
 }
