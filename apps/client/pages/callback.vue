@@ -11,7 +11,8 @@ import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
 const logto = useLogto();
-const { username, isShowSettingUsernameModal, handleChangeUsername } = useUsername();
+const { username, isLoadingFetchUserSetup, isShowSettingUsernameModal, handleChangeUsername } =
+  useUsername();
 
 const { isLoading } = useHandleSignInCallback(async () => {
   const res = await logto.fetchUserInfo();
@@ -28,13 +29,22 @@ const { isLoading } = useHandleSignInCallback(async () => {
 function useUsername() {
   const username = ref("");
   const isShowSettingUsernameModal = ref(false);
+  const isLoadingFetchUserSetup = ref(false);
 
   async function handleChangeUsername() {
     if (!checkUsername()) return;
 
-    await fetchUserSetup(username.value);
-    Message.success("用户名更新成功");
-    await navigateTo(getSignInCallback());
+    isLoadingFetchUserSetup.value = true;
+    await fetchUserSetup({
+      username: username.value,
+      avatar: userStore.userInfo?.picture!,
+    });
+
+    const res = await logto.fetchUserInfo();
+    isLoadingFetchUserSetup.value = false;
+
+    userStore.initUser(res!);
+    navigateTo(getSignInCallback());
     isShowSettingUsernameModal.value = false;
   }
 
@@ -69,6 +79,7 @@ function useUsername() {
     checkUsername,
     username,
     isShowSettingUsernameModal,
+    isLoadingFetchUserSetup,
     handleChangeUsername,
   };
 }
@@ -101,6 +112,10 @@ function useUsername() {
               @click="handleChangeUsername"
             >
               确定
+              <span
+                v-if="isLoadingFetchUserSetup"
+                class="loading loading-spinner loading-lg"
+              ></span>
             </button>
           </div>
         </div>

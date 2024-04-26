@@ -21,7 +21,7 @@ export class UserController {
   // 2. 默认添加星荣的课程包到最近的课程包
   @UseGuards(AuthGuard)
   @Post("setup")
-  async initializeUser(@User() user: UserEntity, @Body("username") username: string) {
-    return this.userService.setup(user, username);
+  async initializeUser(@User() user: UserEntity, @Body() dto: UpdateUserDto) {
+    return this.userService.setup(user, dto);
   }
 }

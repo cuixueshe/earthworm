@@ -31,10 +31,21 @@ export class UserService {
     }
   }
 
-  async setup(user: UserEntity, username: string) {
-    await this.updateUser(user, { username });
-    // TODO coursePackId 和 courseId 先写死
+  async setup(user: UserEntity, dto: { username: string; avatar: string }) {
+    if (!dto.avatar) {
+      dto.avatar = this.getAvatarUrl();
+    }
+    const result = await this.updateUser(user, { username: dto.username, avatar: dto.avatar });
     await this.userCourseProgressService.upsert(user.userId, 1, 1, 0);
-    return true;
+    return result;
+  }
+
+  private getAvatarUrl() {
+    const order = this.getRandomNumber();
+    return `https://earthworm-1312884695.cos.ap-beijing.myqcloud.com/avatar/avatar${order}.png`;
+  }
+
+  private getRandomNumber() {
+    return Math.floor(Math.random() * 9) + 1;
   }
 }

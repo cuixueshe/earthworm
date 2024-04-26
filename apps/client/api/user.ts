@@ -9,6 +9,6 @@ export async function updateUserinfo(datas: Partial<UserInfoResponse>) {
   );
 }
 
-export async function fetchUserSetup(username: string) {
-  return await http.post("/user/setup", { username });
+export async function fetchUserSetup(data: { username: string; avatar: string }) {
+  return await http.post("/user/setup", data);
 }

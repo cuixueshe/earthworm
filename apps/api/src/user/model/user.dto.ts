@@ -25,6 +25,8 @@ export class CreateUserDto {
   @IsNotEmpty({ message: "密码不能为空" })
   @Length(6, 20, { message: "密码长度为6-20位" })
   password: string;
+
+  avatar: string;
 }
 
 export class FindUserDto {
@@ -34,4 +36,4 @@ export class FindUserDto {
   phone: string;
 }
 
-export class UpdateUserDto extends PickType(CreateUserDto, ["username"]) {}
+export class UpdateUserDto extends PickType(CreateUserDto, ["username", "avatar"]) {}

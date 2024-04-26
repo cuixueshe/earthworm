@@ -98,8 +98,7 @@ export class RankService {
         return "";
       }
 
-      const { username, name, email } = user;
-      return username || name || email?.split("@").at(0);
+      return user.username;
     };
 
     self.username = rankListUsernameGenByUserId(self.userId);
