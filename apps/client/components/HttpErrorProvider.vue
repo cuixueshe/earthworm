@@ -12,9 +12,6 @@ useHttpStatusError();
 function useHttpStatusError() {
   injectHttpStatusErrorHandler(async (errMessage, statusCode) => {
     switch (statusCode) {
-      case 400:
-        Message.error(errMessage);
-        break;
       case 401:
         Message.error(errMessage, {
           duration: 2000,
@@ -22,6 +19,8 @@ function useHttpStatusError() {
             signIn(window.location.pathname);
           },
         });
+      default:
+        Message.error(errMessage);
         break;
     }
   });

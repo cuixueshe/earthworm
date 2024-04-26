@@ -49,12 +49,12 @@ const showDropdown = ref(false);
 const dropdownContainer = ref(null);
 const GO_BACK_GAME_NAME = "goBackGamePage";
 const MENU_OPTIONS = [
-  {
-    title: "返回游戏",
-    name: GO_BACK_GAME_NAME,
-    eventName: handleGoBackGamePage,
-    icon: "i-ph-game-controller",
-  },
+  // {
+  //   title: "返回游戏",
+  //   name: GO_BACK_GAME_NAME,
+  //   eventName: handleGoBackGamePage,
+  //   icon: "i-ph-game-controller",
+  // },
   {
     title: "设置",
     name: "setting",

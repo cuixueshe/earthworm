@@ -51,7 +51,7 @@
             class="logged-in flex items-center"
           >
             <div class="font-500 mx-2 max-w-[4em] truncate min-[500px]:max-w-[6em]">
-              {{ userStore.userNameGetter }}
+              {{ userStore.userInfo?.username }}
             </div>
             <DropMenu @update-show-modal="handleLogout" />
           </div>
@@ -61,7 +61,7 @@
             v-else
             @click="signIn()"
             aria-label="Login"
-            class="btn btn-ghost btn-sm mx-1 h-8 rounded-md px-4 text-base font-normal dark:text-white"
+            class="btn btn-ghost btn-sm mx-1 h-8 rounded-md bg-purple-500 px-4 text-base font-normal text-black hover:bg-purple-800 dark:text-white"
           >
             <span class="relative">登录</span>
           </button>
