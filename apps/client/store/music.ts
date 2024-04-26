@@ -2,17 +2,13 @@ import { defineStore } from "pinia";
 import { computed, ref, watchEffect } from "vue";
 
 import { fetchMusic } from "~/api/music";
-import lyrics1 from "~/assets/musics/1.json";
-import music1 from "~/assets/musics/1.mp3";
-import lyrics2 from "~/assets/musics/2.json";
-import music2 from "~/assets/musics/2.mp3";
 
 interface Lyric {
   id: number;
   chinese: string;
   english: string;
-  startTime: number;
-  endTime: number;
+  startTime: string;
+  endTime: string;
 }
 
 export interface Music {
@@ -21,23 +17,6 @@ export interface Music {
   lyrics: Lyric[];
   songUrl: string;
 }
-
-// mock
-// type MUSIC_COURSES = Record<number, Music>;
-// export const music_courses: MUSIC_COURSES = {
-//   1: {
-//     id: 1,
-//     title: "Twinkle Twinkle Little Star",
-//     lyrics: lyrics1,
-//     song: music1,
-//   },
-//   2: {
-//     id: 2,
-//     title: "Yesterday Once More",
-//     lyrics: lyrics2,
-//     song: music2,
-//   },
-// };
 
 export const useMusicStore = defineStore("music", () => {
   const currentMusic = ref<Music>();
@@ -73,7 +52,6 @@ export const useMusicStore = defineStore("music", () => {
     // mock
     // currentMusic.value = music_courses[musicId];
     currentMusic.value = await fetchMusic(musicId);
-    console.log(111, currentMusic.value);
   }
 
   return {

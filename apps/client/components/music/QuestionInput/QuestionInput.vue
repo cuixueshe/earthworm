@@ -34,6 +34,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, watch } from "vue";
 
+import { courseTimer } from "~/composables/courses/courseTimer";
 import { useInput } from "~/composables/main/question";
 import { useSummary } from "~/composables/main/summary";
 import { useMusicAudio } from "~/composables/music/audio";
@@ -56,8 +57,6 @@ const { checkPlayTypingSound, playTypingSound } = useTypingSound();
 const { playRightSound, playErrorSound } = usePlayTipSound();
 const { handleAnswerError } = answerError();
 
-console.log(111111, musicStore.currentLyric?.english!);
-
 const { inputValue, userInputWords, submitAnswer, setInputValue, handleKeyboardInput, isFixMode } =
   useInput({
     source: () => musicStore.currentLyric?.english!,
@@ -77,6 +76,7 @@ watch(
   () => inputValue.value,
   (val) => {
     setInputValue(val);
+    courseTimer.time(String(musicStore.lyricIndex));
   },
 );
 
@@ -145,6 +145,7 @@ function answerError() {
 }
 
 function handleAnswerRight() {
+  courseTimer.timeEnd(String(musicStore.lyricIndex));
   playRightSound();
 
   if (musicStore.isAllDone()) {
