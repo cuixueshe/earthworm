@@ -61,7 +61,7 @@
             v-else
             @click="signIn()"
             aria-label="Login"
-            class="btn btn-ghost btn-sm mx-1 h-8 rounded-md bg-purple-500 px-4 text-base font-normal text-black hover:bg-purple-800 dark:text-white"
+            class="rounded-md bg-purple-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-700"
           >
             <span class="relative">登录</span>
           </button>
