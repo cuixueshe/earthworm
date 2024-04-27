@@ -4,9 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "upload:courses": "tsx src/courses.ts",
-    "upload:statements": "tsx src/statements.ts",
-    "upload": "pnpm run upload:courses && pnpm run upload:statements",
+    "upload": "tsx src/seed.ts",
     "pdf:parse": "tsx src/parsePDF/index.ts"
   },
   "dependencies": {

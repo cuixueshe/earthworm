@@ -1,9 +1,12 @@
-import { date, integer, pgTable, serial, text, unique } from "drizzle-orm/pg-core";
+import { createId } from "@paralleldrive/cuid2";
+import { date, integer, pgTable, text, unique } from "drizzle-orm/pg-core";
 
 export const userLearnRecord = pgTable(
   "user_learn_record",
   {
-    id: serial("id").primaryKey(),
+    id: text("id")
+      .primaryKey()
+      .$defaultFn(() => createId()),
     userId: text("user_id").notNull(),
     count: integer("count").notNull().default(0),
     day: date("day").notNull(),
