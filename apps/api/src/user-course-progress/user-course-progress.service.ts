@@ -8,7 +8,7 @@ import { DB, DbType } from "../global/providers/db.provider";
 export class UserCourseProgressService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async findStatement(userId: string, coursePackId: number, courseId: number) {
+  async findStatement(userId: string, coursePackId: string, courseId: string) {
     const result = await this.db.query.userCourseProgress.findFirst({
       where: and(
         eq(userCourseProgress.userId, userId),
@@ -31,14 +31,16 @@ export class UserCourseProgressService {
       })
       .from(userCourseProgress)
       .where(eq(userCourseProgress.userId, userId))
-      .orderBy(asc(userCourseProgress.coursePackId), desc(userCourseProgress.updatedAt))
+
+      // TODO: asc(userCourseProgress.coursePackId) 导致顺序不可预测
+      .orderBy(asc(coursePack.order), desc(userCourseProgress.updatedAt))
       .limit(limit)
       .leftJoin(coursePack, eq(userCourseProgress.coursePackId, coursePack.id));
 
     return userCourseProgressResult;
   }
 
-  async upsert(userId: string, coursePackId: number, courseId: number, statementIndex: number) {
+  async upsert(userId: string, coursePackId: string, courseId: string, statementIndex: number) {
     await this.db
       .insert(userCourseProgress)
       .values({

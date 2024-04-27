@@ -1,4 +1,5 @@
 import { Test } from "@nestjs/testing";
+import { createId } from "@paralleldrive/cuid2";
 
 import { insertCoursePack } from "../../../test/fixture/db";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
@@ -29,8 +30,8 @@ describe("user-progress service", () => {
 
   it("should update an existing progress entry", async () => {
     const userId = "cxr";
-    const coursePackId = 1;
-    const courseId = 1;
+    const coursePackId = createId();
+    const courseId = createId();
     const statementIndex = 1;
     const newStatementIndex = 2;
     await userCourseProgressService.upsert(userId, coursePackId, courseId, statementIndex);
@@ -44,8 +45,8 @@ describe("user-progress service", () => {
 
   it("should return the statementIndex when there is progress for the specific course pack and course", async () => {
     const userId = "cxr";
-    const coursePackId = 1;
-    const courseId = 1;
+    const coursePackId = createId();
+    const courseId = createId();
     const statementIndex = 1;
     await userCourseProgressService.upsert(userId, coursePackId, courseId, statementIndex);
 
@@ -56,7 +57,11 @@ describe("user-progress service", () => {
 
   it("should return 0 when there is no progress for the specific course pack and course", async () => {
     // not add any user course progress
-    const statementIndex = await userCourseProgressService.findStatement("cxr", 1, 1);
+    const statementIndex = await userCourseProgressService.findStatement(
+      "cxr",
+      createId(),
+      createId(),
+    );
 
     expect(statementIndex).toBe(0);
   });
@@ -68,26 +73,29 @@ describe("user-progress service", () => {
 
     beforeEach(async () => {
       coursePackEntityFirst = await insertCoursePack(db, {
+        order: 1,
         title: "零基础",
         description: "这是零基础学英语",
         isFree: true,
-        difficulty: 1,
       });
 
       coursePackEntitySecond = await insertCoursePack(db, {
+        order: 2,
         title: "300个基础句子",
         description: "快乐学英语",
         isFree: true,
-        difficulty: 1,
       });
     });
 
     it("should return the actual number of course packs when there are not enough course packs", async () => {
       const limit = 5;
 
-      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, 1, 1);
-      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, 2, 1);
-      await userCourseProgressService.upsert(userId, coursePackEntitySecond.id, 1, 1);
+      const courseId1 = createId();
+      const courseId2 = createId();
+      const courseId3 = createId();
+      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, courseId1, 1);
+      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, courseId2, 1);
+      await userCourseProgressService.upsert(userId, coursePackEntitySecond.id, courseId3, 1);
 
       const recentCoursePacks = await userCourseProgressService.getUserRecentCoursePacks(
         userId,
@@ -95,10 +103,12 @@ describe("user-progress service", () => {
       );
 
       expect(recentCoursePacks.length).toBe(2);
+
+      // TODO: asc(userCourseProgress.coursePackId) 导致顺序会变，使用 coursePack 的 order？
       expect(recentCoursePacks[0]).toEqual(
         expect.objectContaining({
           coursePackId: coursePackEntityFirst.id,
-          courseId: 2,
+          courseId: courseId2,
           title: coursePackEntityFirst.title,
           description: coursePackEntityFirst.description,
         }),
@@ -107,7 +117,7 @@ describe("user-progress service", () => {
       expect(recentCoursePacks[1]).toEqual(
         expect.objectContaining({
           coursePackId: coursePackEntitySecond.id,
-          courseId: 1,
+          courseId: courseId3,
           title: coursePackEntitySecond.title,
           description: coursePackEntitySecond.description,
         }),
@@ -117,9 +127,9 @@ describe("user-progress service", () => {
     it("should return the recent course packs for a given user up to the specified limit", async () => {
       const limit = 1;
 
-      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, 1, 1);
-      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, 2, 1);
-      await userCourseProgressService.upsert(userId, coursePackEntitySecond.id, 1, 1);
+      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, createId(), 1);
+      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, createId(), 1);
+      await userCourseProgressService.upsert(userId, coursePackEntitySecond.id, createId(), 1);
 
       const recentCoursePacks = await userCourseProgressService.getUserRecentCoursePacks(
         userId,

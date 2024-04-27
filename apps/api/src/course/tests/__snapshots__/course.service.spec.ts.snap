@@ -2,19 +2,20 @@
 
 exports[`course service find should return a course with the given coursePackId and courseId 1`] = `
 {
-  "coursePackId": 1,
-  "id": 1,
+  "coursePackId": "e6q525jb4oyh47twawifb2c3",
+  "id": "avwx9bx6bhz4ir1ehet50wqm",
+  "order": 1,
   "statements": [
     {
       "chinese": "你好",
-      "courseId": 1,
+      "courseId": "avwx9bx6bhz4ir1ehet50wqm",
       "english": "hello",
       "order": 1,
       "soundmark": "nihao",
     },
     {
       "chinese": "你好",
-      "courseId": 1,
+      "courseId": "avwx9bx6bhz4ir1ehet50wqm",
       "english": "hello",
       "order": 2,
       "soundmark": "nihao",

@@ -1,19 +1,19 @@
 import { http } from "./http";
 
 interface UserProgressVo {
-  courseId: number;
+  courseId: string;
 }
 
 interface UserProgressDto {
-  coursePackId: number;
-  courseId: number;
+  coursePackId: string;
+  courseId: string;
   statementIndex: number;
 }
 
 export interface UserRecentCoursePackVo {
   id: number;
-  coursePackId: number;
-  courseId: number;
+  coursePackId: string;
+  courseId: string;
   title: string;
   description: string;
 }

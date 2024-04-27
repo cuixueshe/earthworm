@@ -22,7 +22,7 @@ export class CourseHistoryController {
 
   @UseGuards(AuthGuard)
   @Get(":coursePackId")
-  getCoursePackHistory(@User() user: UserEntity, @Param("coursePackId") coursePackId: number) {
+  getCoursePackHistory(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
     return this.courseHistoryService.findByCoursePackId(user.userId, coursePackId);
   }
 }

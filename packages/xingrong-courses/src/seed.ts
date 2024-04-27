@@ -34,6 +34,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
         .insert(courseSchema)
         .values({
           coursePackId: coursePackEntity.id,
+          // Index starts from 0
           order: index + 1,
           title: convertToChineseNumber(courseName),
         })

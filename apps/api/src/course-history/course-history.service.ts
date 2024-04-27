@@ -17,13 +17,13 @@ export class CourseHistoryService {
     });
   }
 
-  async findByCoursePackId(userId: string, coursePackId: number) {
+  async findByCoursePackId(userId: string, coursePackId: string) {
     return await this.db.query.courseHistory.findMany({
       where: and(eq(courseHistory.userId, userId), eq(courseHistory.coursePackId, coursePackId)),
     });
   }
 
-  async findCompletionCount(userId: string, coursePackId: number, courseId: number) {
+  async findCompletionCount(userId: string, coursePackId: string, courseId: string) {
     const record = await this.db.query.courseHistory.findFirst({
       where: and(
         eq(courseHistory.userId, userId),
@@ -35,7 +35,7 @@ export class CourseHistoryService {
     return record ? record.completionCount : 0;
   }
 
-  async upsert(userId: string, coursePackId: number, courseId: number) {
+  async upsert(userId: string, coursePackId: string, courseId: string) {
     await this.db
       .insert(courseHistory)
       .values({

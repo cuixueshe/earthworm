@@ -18,7 +18,7 @@ export class CourseService {
     private readonly userCourseProgressService: UserCourseProgressService,
   ) {}
 
-  async find(coursePackId: number, courseId: number) {
+  async find(coursePackId: string, courseId: string) {
     const courseEntity = await this.db.query.course.findFirst({
       where: and(eq(course.id, courseId), eq(course.coursePackId, coursePackId)),
       with: {
@@ -40,7 +40,7 @@ export class CourseService {
     return courseEntity;
   }
 
-  async findWithUserProgress(coursePackId: number, courseId: number, userId: string) {
+  async findWithUserProgress(coursePackId: string, courseId: string, userId: string) {
     const courseEntity = await this.find(coursePackId, courseId);
 
     const statementIndex = await this.userCourseProgressService.findStatement(
@@ -52,7 +52,7 @@ export class CourseService {
     return { ...courseEntity, statementIndex };
   }
 
-  async findNext(coursePackId: number, courseId: number) {
+  async findNext(coursePackId: string, courseId: string) {
     const result = await this._findNext(coursePackId, courseId);
 
     if (!result) {
@@ -64,15 +64,21 @@ export class CourseService {
     return result;
   }
 
-  private async _findNext(coursePackId: number, courseId: number) {
+  private async _findNext(coursePackId: string, courseId: string) {
+    const courses = await this.db.query.course.findMany({});
+
+    const { order } = await this.db.query.course.findFirst({
+      where: eq(course.id, courseId),
+    });
+
     const nextCourse = await this.db.query.course.findFirst({
-      where: and(gt(course.id, courseId), eq(course.coursePackId, coursePackId)),
+      where: and(eq(course.coursePackId, coursePackId), eq(course.order, order + 1)),
     });
 
     return nextCourse;
   }
 
-  async completeCourse(userId: string, coursePackId: number, courseId: number) {
+  async completeCourse(userId: string, coursePackId: string, courseId: string) {
     const nextCourse = await this._findNext(coursePackId, courseId);
 
     if (userId) {

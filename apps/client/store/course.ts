@@ -16,7 +16,7 @@ export interface Course {
   id: number;
   title: string;
   statements: Statement[];
-  coursePackId: number;
+  coursePackId: string;
   completionCount: number;
   statementIndex: number;
 }
@@ -78,7 +78,7 @@ export const useCourseStore = defineStore("course", () => {
     return res;
   }
 
-  async function setup(coursePackId: number, courseId: number) {
+  async function setup(coursePackId: string, courseId: string) {
     let course = await fetchCourse(coursePackId, courseId);
     currentCourse.value = course;
     setupStatement(currentCourse);

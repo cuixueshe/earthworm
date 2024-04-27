@@ -7,7 +7,7 @@ import { fetchCoursePack } from "~/api/coursePack";
 export const useCoursePackStore = defineStore("course-pack", () => {
   const currentCoursePack = ref<CoursePack2>();
 
-  async function setup(coursePackId: number) {
+  async function setup(coursePackId: string) {
     const res = await fetchCoursePack(coursePackId);
     currentCoursePack.value = res;
   }

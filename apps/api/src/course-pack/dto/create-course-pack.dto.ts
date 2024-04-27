@@ -11,6 +11,9 @@ export class CreateCoursePackDto {
   description?: string;
 
   @IsInt()
+  order: number;
+
+  @IsInt()
   difficulty: number;
 
   @IsBoolean()
