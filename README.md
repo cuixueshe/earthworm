@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Earthworm" width="120" height="120" src="./apps/client/public/logo.png">
+  <img alt="Earthworm" width="120" height="120" src="./assets/logo/logo-1000.png">
   <h1>Earthworm</h1>
   <span>English | <a href="./README.zh-CN.md">中文</a></span>
 </div>
@@ -52,9 +52,31 @@ You can choose to copy the contents of `./apps/api/.env.example` to`./apps/api/.
 
 Windows users recommend shortcut keys to copy and paste, Linux users can operate through the following command.
 
+#### Server
+
 ```bash
 cp ./apps/api/.env.example ./apps/api/.env
 ```
+
+#### Client
+
+```bash
+cp ./apps/client/.env.example ./apps/client/.env
+```
+
+### Restore Data Of Logto
+
+Uncompress `logto_db_init_data.zip` to `.volumes/`
+
+```bash
+unzip logto_db_init_data.zip -d .volumes/
+```
+
+- Admin URL: http://localhost:3011
+- Username: admin
+- Password: wYJha:-eYMrAe9i
+
+> if you want to [Manual Configuration Logto](https://github.com/cuixueshe/earthworm/wiki/%E8%BF%81%E7%A7%BB-Logto-%E7%94%A8%E6%88%B7%E7%B3%BB%E7%BB%9F%E5%90%8E%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88%EF%BC%88%E8%B4%A1%E7%8C%AE%E8%80%85%EF%BC%89)
 
 ### 3. Start Docker Compose Service
 
@@ -150,9 +172,9 @@ cd apps/api
 cp .env.test.example .env.test
 
 # Single test
-pnpm test:unit:run
+pnpm test:unit
 # End-to-end testing
-pnpm test:e2e:run
+pnpm test:e2e
 # Single test and end-to-end test run together
 pnpm test
 ```

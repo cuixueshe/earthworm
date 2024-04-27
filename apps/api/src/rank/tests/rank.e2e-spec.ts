@@ -28,11 +28,9 @@ describe("rank e2e", () => {
     redis = moduleFixture.get<Redis>(getRedisConnectionToken());
 
     await app.init();
-
     await cleanDB(db);
-    await setupDBData(db, redis);
-
-    token = await signin();
+    await setupDBData(moduleFixture, redis);
+    token = await signin(moduleFixture);
   });
 
   afterEach(async () => {
@@ -42,7 +40,7 @@ describe("rank e2e", () => {
     await app.close();
   });
 
-  it("should get rank", async () => {
+  it("get: /rank/progress/weekly", async () => {
     await request(app.getHttpServer())
       .get("/rank/progress/weekly")
       .set("Authorization", `Bearer ${token}`)
@@ -61,7 +59,7 @@ describe("rank e2e", () => {
       });
   });
 
-  it("should get self rank info", async () => {
+  it("get: /rank/progress/weekly", async () => {
     await request(app.getHttpServer())
       .get("/rank/progress/weekly")
       .set("Authorization", `Bearer ${token}`)
@@ -75,8 +73,8 @@ describe("rank e2e", () => {
   });
 });
 
-async function setupDBData(db: DbType, redis: Redis) {
-  const { userId } = await createLogtoUser("xiaoming");
+async function setupDBData(builder: TestingModule, redis: Redis) {
+  const { userId } = await createLogtoUser(builder, "xiaoming");
   const FINISH_COUNT_KEY = `user:finishCount`;
   await redis.zadd(FINISH_COUNT_KEY, 1, userId);
 }

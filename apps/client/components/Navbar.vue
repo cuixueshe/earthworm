@@ -1,7 +1,7 @@
 <template>
   <header
     :class="isStickyNavBar"
-    class="top-0 z-40 w-full bg-opacity-50 font-customFont backdrop-blur-xl"
+    class="top-0 z-20 w-full bg-opacity-50 font-customFont backdrop-blur-xl"
   >
     <div class="mx-auto max-w-screen-xl px-6">
       <div class="flex h-16 items-center justify-between">
@@ -22,7 +22,7 @@
           </NuxtLink>
 
           <nav
-            v-if="route.path === '/'"
+            v-if="route.path === '/' && !isAuthenticated()"
             aria-label="Global"
             class="hidden md:block"
           >
@@ -51,7 +51,7 @@
             class="logged-in flex items-center"
           >
             <div class="font-500 mx-2 max-w-[4em] truncate min-[500px]:max-w-[6em]">
-              {{ userStore.userNameGetter }}
+              {{ userStore.userInfo?.username }}
             </div>
             <DropMenu @update-show-modal="handleLogout" />
           </div>
@@ -61,43 +61,20 @@
             v-else
             @click="signIn()"
             aria-label="Login"
-            class="btn btn-ghost btn-sm mx-1 h-8 rounded-md px-4 text-base font-normal dark:text-white"
+            class="rounded-md bg-purple-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-700"
           >
             <span class="relative">登录</span>
           </button>
 
           <!-- 切换主题 -->
           <button
-            class="btn btn-ghost btn-sm mx-1 h-8 w-8 rounded-md p-0"
+            class="btn btn-ghost btn-sm ml-1 h-8 w-8 rounded-md p-0"
             @click="toggleDarkMode"
           >
-            <svg
-              v-if="isDarkMode"
-              xmlns="http://www.w3.org/2000/svg"
-              width="1.5em"
-              height="1.5em"
-              viewBox="0 0 256 256"
-            >
-              <path
-                fill="currentColor"
-                d="M233.54 142.23a8 8 0 0 0-8-2a88.08 88.08 0 0 1-109.8-109.8a8 8 0 0 0-10-10a104.84 104.84 0 0 0-52.91 37A104 104 0 0 0 136 224a103.09 103.09 0 0 0 62.52-20.88a104.84 104.84 0 0 0 37-52.91a8 8 0 0 0-1.98-7.98m-44.64 48.11A88 88 0 0 1 65.66 67.11a89 89 0 0 1 31.4-26A106 106 0 0 0 96 56a104.11 104.11 0 0 0 104 104a106 106 0 0 0 14.92-1.06a89 89 0 0 1-26.02 31.4"
-              />
-            </svg>
-            <svg
-              v-else
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
+            <span
               class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-              />
-            </svg>
+              :class="isDarkMode ? 'i-ph-moon' : 'i-ph-sun'"
+            ></span>
           </button>
         </div>
       </div>
@@ -125,7 +102,6 @@ const { darkMode, toggleDarkMode } = useDarkMode();
 
 const isShowModal = ref(false);
 const HEADER_OPTIONS = [
-  { name: "主页", anchor: "home" },
   { name: "功能", anchor: "features" },
   { name: "问题", anchor: "faq" },
   { name: "联系我们", anchor: "contact" },

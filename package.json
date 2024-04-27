@@ -10,6 +10,7 @@
     "db:init": "pnpm schema:build && pnpm -F @earthworm/db run init",
     "db:init:test": "pnpm -F @earthworm/db run init:test",
     "db:init:test:ci": "pnpm -F @earthworm/db run init:ci",
+    "db:studio": "pnpm -F @earthworm/db db:studio",
     "db:upload": "pnpm -F @earthworm/xingrong-courses upload",
     "db:update": "pnpm -F @earthworm/xingrong-courses upload:statements",
     "dev:serve": "pnpm schema:build && pnpm -F api start:dev",
@@ -32,11 +33,11 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": ">=20.11.0"
+    "node": ">=20.12.2"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
-    "@types/node": "^20.11.0",
+    "@types/node": "^20.12.7",
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
     "lint-staged": "^15.2.2",

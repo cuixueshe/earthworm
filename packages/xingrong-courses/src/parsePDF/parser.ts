@@ -1,4 +1,3 @@
-
 const STARTSIGN = "中文 英文 K.K.音标";
 const ENDSIGN = "中文 原形 第三人称单数 过去式 ing形式";
 export function parse(text: string) {
@@ -53,8 +52,7 @@ export function parse(text: string) {
           i++;
         }
 
-        const { english, soundmark } =
-          parseEnglishAndSoundmark(englishAndSoundmark);
+        const { english, soundmark } = parseEnglishAndSoundmark(englishAndSoundmark);
 
         data.english = english;
         data.soundmark = soundmark;

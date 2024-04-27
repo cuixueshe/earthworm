@@ -13,7 +13,6 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "cross-env NODE_ENV=prod node dist/src/main",
     "start:prod:pm": "cross-env NODE_ENV=prod pm2 start ecosystem.config.js",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "pnpm test:unit && pnpm test:e2e",
     "test:unit": "cross-env NODE_ENV=test jest --config jest.config.ts",
     "test:e2e": "cross-env NODE_ENV=test jest --config jest.config.e2e.ts",

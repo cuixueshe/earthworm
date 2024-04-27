@@ -98,8 +98,7 @@ export class RankService {
         return "";
       }
 
-      const { username, name, email } = user;
-      return username || name || email?.split("@").at(0);
+      return user.username;
     };
 
     self.username = rankListUsernameGenByUserId(self.userId);
@@ -110,7 +109,7 @@ export class RankService {
 
   private async fetchUsersMap(uIds: string[]) {
     const promises = uIds.map((uId) => {
-      return this.userService.getUser(uId);
+      return this.userService.findUser(uId);
     });
 
     const users = await Promise.all(promises);

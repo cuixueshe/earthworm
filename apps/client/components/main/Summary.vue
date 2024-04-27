@@ -9,24 +9,10 @@
           <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
           <button
             tabindex="0"
-            class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-8 w-8 rounded-md p-0"
+            class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-7 w-7 rounded-md p-0"
             @click="soundSentence"
           >
-            <svg
-              t="1708743313057"
-              class="icon"
-              viewBox="0 0 1024 1024"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              p-id="1534"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <path
-                d="M513.3 105.4L309.9 309H165.7c-37.5 0-67.9 30.4-67.9 67.9v271.4c0 37.5 30.4 67.9 67.9 67.9h144.2l203.5 203.6c37.5 0 67.8-30.4 67.8-67.9V173.3c0-37.5-30.4-67.9-67.9-67.9z m0 744.1l-178-196.4H165.7V381.7h169.6l178-196.5v664.3z m402.2-307.2c6.7 0 12.1-13.3 12.1-29.8 0-16.4-5.4-29.8-12.1-29.8h-84.8c-6.7 0-12.1 13.3-12.1 29.8 0 16.4 5.4 29.8 12.1 29.8h84.8z m9.2-384.6c5.8-3.3 3.8-17.6-4.4-31.8s-19.6-23.1-25.4-19.7l-73.5 42.4c-5.8 3.3-3.8 17.6 4.4 31.8s19.6 23.1 25.4 19.7l73.5-42.4z m0 709.7c5.8 3.4 3.8 17.6-4.4 31.8s-19.6 23.1-25.4 19.7l-73.5-42.4c-5.8-3.4-3.8-17.6 4.4-31.8s19.6-23.1 25.4-19.7l73.5 42.4zM628.9 665c-6.1-16.3-4.4-31.7 11.9-37.8 41.1-19 60.8-55.9 65.8-102.3 5.9-54.1-20-103.8-64.7-124.2-14.6-9.4-20.7-25.7-11.3-40.3 9.4-14.6 25.7-20.7 40.3-11.3 66.2 38.4 105.8 105.2 97.4 182.5-6.7 61.8-44.3 120.2-101.7 145.3-13.3 7.6-31.3 2.6-37.7-11.9z m0 0"
-                p-id="1535"
-                fill="currentColor"
-              />
-            </svg>
+            <span class="i-ph-speaker-simple-high h-full w-full"></span>
           </button>
         </div>
 
@@ -68,11 +54,13 @@
           >
             再来一次
           </button>
+
           <button
             class="btn"
-            @click="handleGoToNextCourse"
+            @click="goToNextCourse"
           >
-            开始下一课<kbd class="kbd"> ↵ </kbd>
+            {{ haveNextCourse || !isAuthenticated() ? "开始下一课" : "返回课程列表" }}
+            <kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
       </div>
@@ -85,10 +73,10 @@
 </template>
 
 <script setup lang="ts">
-import { watch } from "vue";
-import { useRouter } from "vue-router";
+import { navigateTo } from "#app";
+import { computed, ref, watch } from "vue";
 
-import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
@@ -98,23 +86,27 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
+import { permitSaveStatement, preventSaveStatement } from "~/store/statement";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-let nextCourseId = 1;
 const courseStore = useCourseStore();
+const { goToNextCourse, completeCourse, haveNextCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
-const { handleGoToNextCourse } = useGoToNextCourse();
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
-const { updateActiveCourseId } = useActiveCourseId();
+const { updateActiveCourseMap } = useActiveCourseMap();
 
 watch(showModal, (val) => {
   if (val) {
+    // 阻止包含 statement 完成课程后会自动把用户的进度设置成下一课
+    // 这里是为了防止先设置成下一课 后更新了 statement 的进度
+    // 这就会造成获取用户最近的课程包进度出现错误  因为是基于时间来获取的
+    preventSaveStatement();
     // 注册回车键进入下一课
-    registerShortcut("enter", handleGoToNextCourse);
+    registerShortcut("enter", goToNextCourse);
     // 显示结算面板代表当前课程已经完成
     completeCourse();
     // 朗读每日一句
@@ -125,24 +117,12 @@ watch(showModal, (val) => {
     }, 300);
   } else {
     // 取消回车键进入下一课
-    cancelShortcut("enter", handleGoToNextCourse);
+    cancelShortcut("enter", goToNextCourse);
     // 从显示状态关闭结算面板
     courseStore.resetStatementIndex();
+    permitSaveStatement();
   }
 });
-
-async function completeCourse() {
-  const { updateActiveCourseId } = useActiveCourseId();
-
-  if (isAuthenticated() && courseStore.currentCourse) {
-    const { nextCourse } = await courseStore.completeCourse(courseStore.currentCourse.id);
-
-    if (nextCourse) {
-      nextCourseId = nextCourse.id;
-      updateActiveCourseId(nextCourseId);
-    }
-  }
-}
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();
@@ -164,11 +144,16 @@ function soundSentence() {
   readOneSentencePerDayAloud(enSentence.value);
 }
 
-function useGoToNextCourse() {
-  const router = useRouter();
-  const { showAuthRequireModal } = useAuthRequire();
+function useCourse() {
+  let nextCourseId = ref(0);
 
-  async function handleGoToNextCourse() {
+  const haveNextCourse = computed(() => {
+    return nextCourseId.value;
+  });
+
+  async function goToNextCourse() {
+    const { showAuthRequireModal } = useAuthRequire();
+
     // 无论后续如何处理，都需要先隐藏 Summary 页面
     hideSummary();
     if (!isAuthenticated()) {
@@ -177,12 +162,31 @@ function useGoToNextCourse() {
       return;
     }
 
-    updateActiveCourseId(nextCourseId);
-    router.push(`/main/${nextCourseId}`);
+    if (nextCourseId.value) {
+      navigateTo(`/game/${courseStore.currentCourse?.coursePackId}/${nextCourseId.value}`);
+    } else {
+      navigateTo(`/course-pack/${courseStore.currentCourse?.coursePackId}`);
+    }
+  }
+
+  async function completeCourse() {
+    if (isAuthenticated() && courseStore.currentCourse) {
+      const { coursePackId } = courseStore.currentCourse;
+      const { nextCourse } = await courseStore.completeCourse();
+
+      if (nextCourse) {
+        nextCourseId.value = nextCourse.id;
+        updateActiveCourseMap(coursePackId, nextCourseId.value);
+      } else {
+        updateActiveCourseMap(coursePackId, -1);
+      }
+    }
   }
 
   return {
-    handleGoToNextCourse,
+    completeCourse,
+    goToNextCourse,
+    haveNextCourse,
   };
 }
 

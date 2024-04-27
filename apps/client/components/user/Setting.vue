@@ -79,13 +79,24 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">自动播放声音（答案页面）</td>
+            <td class="label-text">答案页面自动播放声音</td>
             <td class="w-[300px] text-center">
               <input
                 type="checkbox"
                 class="toggle toggle-secondary"
                 :checked="autoPlaySound"
                 @change="toggleAutoPlaySound"
+              />
+            </td>
+          </tr>
+          <tr class="hover">
+            <td class="label-text">答题时自动播放声音</td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="autoPlayEnglish"
+                @change="toggleAutoPlayEnglish"
               />
             </td>
           </tr>
@@ -211,20 +222,39 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 
+import Message from "~/components/main/Message/useMessage";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
 import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { useAutoPronunciation, useKeyboardSound } from "~/composables/user/sound";
+import {
+  useAutoPlayEnglish,
+  useAutoPronunciation,
+  useKeyboardSound,
+} from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
+import { useUserStore } from "~/store/user";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
+const userStore = useUserStore();
+const nickname = ref(userStore.userNameGetter);
+const handleUpdateNickname = async (event: KeyboardEvent) => {
+  const result = await userStore.updateUserInfo({
+    ...userStore.userInfo!,
+    name: nickname.value,
+  });
+  if (result) {
+    (event.target as HTMLInputElement).blur();
+    Message.success("修改成功");
+  }
+};
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
+const { autoPlayEnglish, toggleAutoPlayEnglish } = useAutoPlayEnglish();
 const {
   pronunciation,
   // 发音配置列表
