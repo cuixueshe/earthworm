@@ -69,7 +69,7 @@ cp ./apps/client/.env.example ./apps/client/.env
 解压缩 `logto_db_init_data.zip` 到 `.volumes/`
 
 ```bash
-unzip logto_db_init_data.zip -d ./.volumes/
+unzip logto_db_init_data.zip -d .volumes/
 ```
 
 - 后台地址: http://localhost:3011

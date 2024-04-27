@@ -64,7 +64,7 @@ services:
   logtoPostgres:
     restart: always
     image: postgres:14-alpine
-    user: postgres
+    user: root
     volumes:
       - "./.volumes/logto_db:/var/lib/postgresql/data"
     environment:

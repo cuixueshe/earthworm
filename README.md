@@ -69,7 +69,7 @@ cp ./apps/client/.env.example ./apps/client/.env
 Uncompress `logto_db_init_data.zip` to `.volumes/`
 
 ```bash
-unzip logto_db_init_data.zip -d ./.volumes/
+unzip logto_db_init_data.zip -d .volumes/
 ```
 
 - Admin URL: http://localhost:3011
