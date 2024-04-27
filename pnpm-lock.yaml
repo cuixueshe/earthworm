@@ -289,8 +289,8 @@ importers:
         version: 3.4.4
     devDependencies:
       drizzle-kit:
-        specifier: ^0.20.14
-        version: 0.20.14
+        specifier: ^0.20.17
+        version: 0.20.17
       pg:
         specifier: ^8.11.5
         version: 8.11.5
@@ -1009,12 +1009,6 @@ packages:
       lodash.once: 4.1.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@drizzle-team/studio@0.0.39:
-    resolution: {integrity: sha512-c5Hkm7MmQC2n5qAsKShjQrHoqlfGslB8+qWzsGGZ+2dHMRTNG60UuzalF0h0rvBax5uzPXuGkYLGaQ+TUX3yMw==}
-    dependencies:
-      superjson: 2.2.1
     dev: true
 
   /@egoist/tailwindcss-icons@1.7.4(tailwindcss@3.4.1):
@@ -1893,6 +1887,21 @@ packages:
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
     dependencies:
       '@hapi/hoek': 9.3.0
+    dev: true
+
+  /@hono/node-server@1.11.1:
+    resolution: {integrity: sha512-GW1Iomhmm1o4Z+X57xGby8A35Cu9UZLL7pSMdqDBkD99U5cywff8F+8hLk5aBTzNubnsFAvWQ/fZjNwPsEn9lA==}
+    engines: {node: '>=18.14.1'}
+    dev: true
+
+  /@hono/zod-validator@0.2.1(hono@4.2.8)(zod@3.22.4):
+    resolution: {integrity: sha512-HFoxln7Q6JsE64qz2WBS28SD33UB2alp3aRKmcWnNLDzEL1BLsWfbdX6e1HIiUprHYTIXf5y7ax8eYidKUwyaA==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.19.1
+    dependencies:
+      hono: 4.2.8
+      zod: 3.22.4
     dev: true
 
   /@hutson/parse-repository-url@5.0.0:
@@ -6640,12 +6649,13 @@ packages:
       wordwrap: 1.0.0
     dev: true
 
-  /drizzle-kit@0.20.14:
-    resolution: {integrity: sha512-0fHv3YIEaUcSVPSGyaaBfOi9bmpajjhbJNdPsRMIUvYdLVxBu9eGjH8mRc3Qk7HVmEidFc/lhG1YyJhoXrn5yA==}
+  /drizzle-kit@0.20.17:
+    resolution: {integrity: sha512-mLVDS4nXmO09wFVlzGrdshWnAL+U9eQGC5zRs6hTN6Q9arwQGWU2XnZ17I8BM8Quau8CQRx3Ms6VPgRWJFVp7Q==}
     hasBin: true
     dependencies:
-      '@drizzle-team/studio': 0.0.39
       '@esbuild-kit/esm-loader': 2.6.5
+      '@hono/node-server': 1.11.1
+      '@hono/zod-validator': 0.2.1(hono@4.2.8)(zod@3.22.4)
       camelcase: 7.0.1
       chalk: 5.3.0
       commander: 9.5.0
@@ -6654,9 +6664,11 @@ packages:
       esbuild-register: 3.5.0(esbuild@0.19.12)
       glob: 8.1.0
       hanji: 0.0.5
+      hono: 4.2.8
       json-diff: 0.9.0
       minimatch: 7.4.6
       semver: 7.5.4
+      superjson: 2.2.1
       zod: 3.22.4
     transitivePeerDependencies:
       - supports-color
@@ -7951,6 +7963,11 @@ packages:
   /hexoid@1.0.0:
     resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
     engines: {node: '>=8'}
+
+  /hono@4.2.8:
+    resolution: {integrity: sha512-re/zNrOWb7Sp9KhojlMEgcgvqsE8Rgk9IcmumqsbKa9ruPT5XuOcx1U+xuNaI4SUnwrPsiTQ72MiodtpJEVfjg==}
+    engines: {node: '>=16.0.0'}
+    dev: true
 
   /hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
