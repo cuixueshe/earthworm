@@ -1,11 +1,11 @@
 <template>
   <div
-    class="relative flex items-center justify-between border-y border-solid border-slate-200 py-3 text-base dark:border-slate-500"
+    class="relative flex items-center justify-between border-t border-solid border-slate-200 py-3 text-base dark:border-slate-500"
   >
     <!-- 左侧 -->
     <div class="flex items-center">
       <NuxtLink
-        href="/courses"
+        :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
         class="clickable-item tooltip-item"
         data-tip="课程列表"
       >
@@ -66,10 +66,12 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
+import { useCoursePackStore } from "~/store/coursePack";
 import { useContent } from "./Contents/useContents";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
+const coursePackStore = useCoursePackStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();

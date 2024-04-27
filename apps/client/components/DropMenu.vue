@@ -42,28 +42,19 @@ import { navigateTo } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
-import { useGameStore } from "~/store/game";
-
 const emit = defineEmits(["update-show-modal"]);
 const route = useRoute();
 const router = useRouter();
-const gameStore = useGameStore();
 const showDropdown = ref(false);
 const dropdownContainer = ref(null);
 const GO_BACK_GAME_NAME = "goBackGamePage";
 const MENU_OPTIONS = [
-  {
-    title: "用户信息",
-    name: "accountInfo",
-    eventName: handleViewUserInfo,
-    icon: "i-ph-user",
-  },
-  {
-    title: "返回游戏",
-    name: GO_BACK_GAME_NAME,
-    eventName: handleGoBackGamePage,
-    icon: "i-ph-game-controller",
-  },
+  // {
+  //   title: "返回游戏",
+  //   name: GO_BACK_GAME_NAME,
+  //   eventName: handleGoBackGamePage,
+  //   icon: "i-ph-game-controller",
+  // },
   {
     title: "设置",
     name: "setting",
@@ -89,13 +80,8 @@ function toggleDropdown() {
   showDropdown.value = !showDropdown.value;
 }
 
-function handleViewUserInfo() {
-  navigateTo("/user/info");
-}
-
 async function handleGoBackGamePage() {
-  const { courseId } = await gameStore.startGame();
-  router.push(`/main/${courseId}`);
+  // TODO 处理回到游戏
 }
 
 function handleSetting() {

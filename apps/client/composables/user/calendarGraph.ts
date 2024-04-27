@@ -30,7 +30,7 @@ export interface EmitsType {
 
 export interface CalendarData {
   /** YYYY-MM-DD */
-  date: string;
+  day: string;
   count: number;
 }
 
@@ -64,7 +64,7 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   function getOptions() {
-    for (let i = 2018; i <= new Date().getFullYear(); i++) {
+    for (let i = 2024; i <= new Date().getFullYear(); i++) {
       yearOptions.value.unshift({ label: i.toString(), value: i });
     }
   }
@@ -92,10 +92,13 @@ export function useCalendarGraph(emits: EmitsType) {
         const month = item.date.getMonth();
         const day = item.date.getDate();
         const date = format(item.date);
-        const current = list.find((f) => f.date === date);
-        const tips = `${current?.count || "No"} contributions on ${
-          months[month]
-        } ${day}${getOrdinalSuffix(day)}, ${year}`;
+        const current = list.find((f) => {
+          return f.day === date;
+        });
+
+        const tipText = current?.count ? `学习了 ${current?.count} 次 ` : `没有学习`;
+
+        const tips = `${tipText} ${months[month]} ${day}${getOrdinalSuffix(day)}, ${year}`;
         return { date: item.date, tips, bg: getActivityLevel(current?.count) };
       });
     });

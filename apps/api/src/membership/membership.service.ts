@@ -11,7 +11,7 @@ export class MembershipService {
   private readonly logger = new Logger(MembershipService.name);
   constructor(@Inject(DB) private db: DbType) {}
 
-  async createOrUpdateMembership(startDate: Date, buyMembershipDto: BuyMembershipDto) {
+  async upsert(startDate: Date, buyMembershipDto: BuyMembershipDto) {
     const { userId } = buyMembershipDto;
 
     const membershipEntity = await this.findMembership(userId);

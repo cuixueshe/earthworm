@@ -2,13 +2,28 @@ import fs from "fs";
 import path from "path";
 
 import { db } from "@earthworm/db";
-import { course as courseSchema, statement as statementSchema } from "@earthworm/schema";
+import {
+  coursePack,
+  course as courseSchema,
+  statement as statementSchema,
+} from "@earthworm/schema";
 
 const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
 
 (async function () {
+  await db.delete(coursePack);
   await db.delete(statementSchema);
   await db.delete(courseSchema);
+
+  // 先创建一个 coursePack 数据
+  const [coursePackEntity] = await db
+    .insert(coursePack)
+    .values({
+      title: "星荣零基础学英语",
+      description: "最适合零基础入门的课程",
+      isFree: true,
+    })
+    .returning();
 
   for (const [index, course] of courses.entries()) {
     const [response] = await db
@@ -16,6 +31,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
       .values({
         id: index + 1,
         title: convertToChineseNumber(path.parse(course).name),
+        coursePackId: coursePackEntity.id,
       })
       .returning({ id: courseSchema.id, title: courseSchema.title });
 

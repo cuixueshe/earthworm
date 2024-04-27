@@ -25,7 +25,7 @@ export class AuthGuard implements CanActivate {
     const permissions = Reflect.getMetadata("permissions", context.getHandler());
 
     if (!token && uncheck) {
-      request["user"] = null;
+      request["userId"] = null;
     } else if (!token) {
       throw new UnauthorizedException();
     }

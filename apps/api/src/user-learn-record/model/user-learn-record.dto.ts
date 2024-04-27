@@ -1,14 +1,14 @@
 import { ApiPropertyOptional } from "@nestjs/swagger";
-import { IsOptional, IsString } from "class-validator";
+import { IsDateString, IsOptional, IsString } from "class-validator";
 
 export class GetUserLearnRecordDto {
   @ApiPropertyOptional({ description: "起始日期" })
-  @IsString()
+  @IsDateString()
   @IsOptional()
   startDate?: string;
 
   @ApiPropertyOptional({ description: "截止日期" })
-  @IsString()
+  @IsDateString()
   @IsOptional()
   endDate?: string;
 }

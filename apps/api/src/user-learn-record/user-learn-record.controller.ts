@@ -12,6 +12,6 @@ export class UserLearnRecordController {
   @UseGuards(AuthGuard)
   @Get("finishCount")
   finishCount(@User() user: UserEntity, @Query() dto?: GetUserLearnRecordDto) {
-    return this.userLearnRecordService.findUserLearnRecord(user.userId, dto);
+    return this.userLearnRecordService.find(user.userId, dto);
   }
 }
