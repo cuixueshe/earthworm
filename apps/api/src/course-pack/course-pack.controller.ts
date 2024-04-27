@@ -1,10 +1,9 @@
-import { Body, Controller, Get, Param, ParseIntPipe, Post, UseGuards } from "@nestjs/common";
+import { Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
 
 import { AuthGuard, UncheckAuth } from "../guards/auth.guard";
 import { CoursePacksAccessGuard } from "../guards/course-packs-access.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { CoursePackService } from "./course-pack.service";
-import { CreateCoursePackDto } from "./dto/create-course-pack.dto";
 
 @Controller("course-pack")
 export class CoursePackController {
@@ -27,8 +26,8 @@ export class CoursePackController {
   @Get(":coursePackId/courses/:courseId")
   findCourse(
     @User() user: UserEntity,
-    @Param("coursePackId", ParseIntPipe) coursePackId: string,
-    @Param("courseId", ParseIntPipe) courseId: string,
+    @Param("coursePackId") coursePackId: string,
+    @Param("courseId") courseId: string,
   ) {
     return this.coursePackService.findCourse(user.userId, coursePackId, courseId);
   }
@@ -36,10 +35,7 @@ export class CoursePackController {
   @UncheckAuth()
   @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Get(":coursePackId/courses/:courseId/next")
-  findNextCourse(
-    @Param("coursePackId", ParseIntPipe) coursePackId: string,
-    @Param("courseId", ParseIntPipe) courseId: string,
-  ) {
+  findNextCourse(@Param("coursePackId") coursePackId: string, @Param("courseId") courseId: string) {
     return this.coursePackService.findNextCourse(coursePackId, courseId);
   }
 

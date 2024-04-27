@@ -65,8 +65,6 @@ export class CourseService {
   }
 
   private async _findNext(coursePackId: string, courseId: string) {
-    const courses = await this.db.query.course.findMany({});
-
     const { order } = await this.db.query.course.findFirst({
       where: eq(course.id, courseId),
     });
