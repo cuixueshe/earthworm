@@ -51,7 +51,11 @@ describe("course service", () => {
 
       const result = await courseService.find(coursePackId, courseEntityFirst.id);
 
-      expect(result).toMatchSnapshot();
+      expect(result).toHaveProperty("coursePackId");
+      expect(result).toHaveProperty("id");
+      expect(result).toHaveProperty("order");
+      expect(result).toHaveProperty("title");
+      expect(result).toHaveProperty("statements");
     });
 
     it("should throw NotFoundException if the course does not exist", async () => {

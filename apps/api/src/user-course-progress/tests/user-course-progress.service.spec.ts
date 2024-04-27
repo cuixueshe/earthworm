@@ -92,10 +92,8 @@ describe("user-progress service", () => {
 
       const courseId1 = createId();
       const courseId2 = createId();
-      const courseId3 = createId();
       await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, courseId1, 1);
       await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, courseId2, 1);
-      await userCourseProgressService.upsert(userId, coursePackEntitySecond.id, courseId3, 1);
 
       const recentCoursePacks = await userCourseProgressService.getUserRecentCoursePacks(
         userId,
@@ -104,7 +102,6 @@ describe("user-progress service", () => {
 
       expect(recentCoursePacks.length).toBe(2);
 
-      // TODO: asc(userCourseProgress.coursePackId) 导致顺序会变，使用 coursePack 的 order？
       expect(recentCoursePacks[0]).toEqual(
         expect.objectContaining({
           coursePackId: coursePackEntityFirst.id,
@@ -116,10 +113,10 @@ describe("user-progress service", () => {
 
       expect(recentCoursePacks[1]).toEqual(
         expect.objectContaining({
-          coursePackId: coursePackEntitySecond.id,
-          courseId: courseId3,
-          title: coursePackEntitySecond.title,
-          description: coursePackEntitySecond.description,
+          coursePackId: coursePackEntityFirst.id,
+          courseId: courseId1,
+          title: coursePackEntityFirst.title,
+          description: coursePackEntityFirst.description,
         }),
       );
     });

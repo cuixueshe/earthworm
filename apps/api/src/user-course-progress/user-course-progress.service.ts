@@ -21,8 +21,11 @@ export class UserCourseProgressService {
   }
 
   async getUserRecentCoursePacks(userId: string, limit: number) {
+    // TODO 先按照 1 个课程来搞
+    // 后面需要处理多个课程 需要去重
+    // 后续把进度拆开 分成 coursePack 的进度 和 course 的进度
     const userCourseProgressResult = await this.db
-      .selectDistinctOn([userCourseProgress.coursePackId], {
+      .select({
         id: userCourseProgress.id,
         coursePackId: userCourseProgress.coursePackId,
         courseId: userCourseProgress.courseId,
@@ -31,9 +34,7 @@ export class UserCourseProgressService {
       })
       .from(userCourseProgress)
       .where(eq(userCourseProgress.userId, userId))
-
-      // TODO: asc(userCourseProgress.coursePackId) 导致顺序不可预测
-      .orderBy(asc(coursePack.order), desc(userCourseProgress.updatedAt))
+      .orderBy(desc(userCourseProgress.updatedAt))
       .limit(limit)
       .leftJoin(coursePack, eq(userCourseProgress.coursePackId, coursePack.id));
 
