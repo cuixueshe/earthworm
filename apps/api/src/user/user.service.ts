@@ -42,7 +42,8 @@ export class UserService {
 
   private getAvatarUrl() {
     const order = this.getRandomNumber();
-    return `https://earthworm-1312884695.cos.ap-beijing.myqcloud.com/avatar/avatar${order}.png`;
+
+    return `https://earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com/avatars/avatar${order}.png`;
   }
 
   private getRandomNumber() {
