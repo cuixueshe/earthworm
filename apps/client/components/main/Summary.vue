@@ -59,7 +59,7 @@
             class="btn"
             @click="goToNextCourse"
           >
-            {{ haveNextCourse ? "开始下一课" : "返回课程列表" }}
+            {{ haveNextCourse || !isAuthenticated() ? "开始下一课" : "返回课程列表" }}
             <kbd class="kbd"> ↵ </kbd>
           </button>
         </div>
@@ -86,6 +86,7 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
+import { permitSaveStatement, preventSaveStatement } from "~/store/statement";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
@@ -100,6 +101,10 @@ const { updateActiveCourseMap } = useActiveCourseMap();
 
 watch(showModal, (val) => {
   if (val) {
+    // 阻止包含 statement 完成课程后会自动把用户的进度设置成下一课
+    // 这里是为了防止先设置成下一课 后更新了 statement 的进度
+    // 这就会造成获取用户最近的课程包进度出现错误  因为是基于时间来获取的
+    preventSaveStatement();
     // 注册回车键进入下一课
     registerShortcut("enter", goToNextCourse);
     // 显示结算面板代表当前课程已经完成
@@ -115,6 +120,7 @@ watch(showModal, (val) => {
     cancelShortcut("enter", goToNextCourse);
     // 从显示状态关闭结算面板
     courseStore.resetStatementIndex();
+    permitSaveStatement();
   }
 });
 
@@ -139,7 +145,7 @@ function soundSentence() {
 }
 
 function useCourse() {
-  let nextCourseId = ref("");
+  let nextCourseId = ref(0);
 
   const haveNextCourse = computed(() => {
     return nextCourseId.value;
@@ -172,7 +178,7 @@ function useCourse() {
         nextCourseId.value = nextCourse.id;
         updateActiveCourseMap(coursePackId, nextCourseId.value);
       } else {
-        updateActiveCourseMap(coursePackId, "-1");
+        updateActiveCourseMap(coursePackId, -1);
       }
     }
   }

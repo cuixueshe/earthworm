@@ -73,10 +73,14 @@ export class CourseService {
   }
 
   async completeCourse(userId: string, coursePackId: number, courseId: number) {
+    const nextCourse = await this._findNext(coursePackId, courseId);
+
     if (userId) {
       await this.rankService.userFinishCourse(userId);
       await this.courseHistoryService.upsert(userId, coursePackId, courseId);
       await this.userLearnRecordService.upsert(userId);
+      nextCourse &&
+        (await this.userCourseProgressService.upsert(userId, coursePackId, nextCourse.id, 0));
     }
 
     return {

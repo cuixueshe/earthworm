@@ -81,7 +81,7 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(coursePackId: number, courseId: number) {
     let course = await fetchCourse(coursePackId, courseId);
     currentCourse.value = course;
-    setupStatement(course);
+    setupStatement(currentCourse);
   }
 
   return {

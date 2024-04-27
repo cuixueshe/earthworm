@@ -18,6 +18,7 @@ describe("course service", () => {
   let rankService: RankService;
   let courseHistoryService: CourseHistoryService;
   let userLearnRecordService: UserLearnRecordService;
+  let userCourseProgressService: UserCourseProgressService;
 
   beforeAll(async () => {
     const testHelper = await setupTesting();
@@ -28,6 +29,7 @@ describe("course service", () => {
     rankService = testHelper.rankService;
     courseHistoryService = testHelper.courseHistoryService;
     userLearnRecordService = testHelper.userLearnRecordService;
+    userCourseProgressService = testHelper.UserCourseProgressService;
   });
   beforeEach(async () => {
     await cleanDB(db);
@@ -98,6 +100,7 @@ describe("course service", () => {
       expect(rankService.userFinishCourse).toHaveBeenCalled();
       expect(courseHistoryService.upsert).toHaveBeenCalled();
       expect(userLearnRecordService.upsert).toHaveBeenCalled();
+      expect(userCourseProgressService.upsert).toHaveBeenCalled();
     });
 
     it("should perform actions to complete a course and return the next course when have not userId", async () => {
@@ -109,6 +112,7 @@ describe("course service", () => {
       expect(rankService.userFinishCourse).not.toHaveBeenCalled();
       expect(courseHistoryService.upsert).not.toHaveBeenCalled();
       expect(userLearnRecordService.upsert).not.toHaveBeenCalled();
+      expect(userCourseProgressService.upsert).not.toHaveBeenCalled();
     });
 
     it("should not have nextCourse when not exist next course", async () => {
@@ -126,9 +130,6 @@ async function setupDatabaseData(db: DbType) {
 }
 
 async function setupTesting() {
-  const mockUserProgressService = {
-    findStatement: () => 1,
-  };
   const mockRankService = {
     userFinishCourse: jest.fn(),
   };
@@ -139,14 +140,19 @@ async function setupTesting() {
     upsert: jest.fn(),
   };
 
+  const mockUserCourseProgressService = {
+    upsert: jest.fn(),
+    findStatement: () => 1,
+  };
+
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
     providers: [
       CourseService,
-      { provide: UserCourseProgressService, useValue: mockUserProgressService },
       { provide: RankService, useValue: mockRankService },
       { provide: CourseHistoryService, useValue: mockCourseHistoryService },
       { provide: UserLearnRecordService, useValue: mockUserLearnRecordService },
+      { provide: UserCourseProgressService, useValue: mockUserCourseProgressService },
     ],
   }).compile();
 

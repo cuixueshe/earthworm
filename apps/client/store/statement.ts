@@ -1,18 +1,22 @@
+import type { Ref } from "vue";
+
 import { debounce } from "lodash-es";
 import { ref, watch } from "vue";
 
 import type { Course } from "./course";
 import { fetchUpdateCourseProgress } from "~/api/userCourseProgress";
+import { isAuthenticated } from "~/services/auth";
 
 const DEBOUNCE_TIME = 5000;
 const INTERVAL_TIME = 60 * 1000 * 5;
 
 let lastSavedIndex = 0;
+let isSaveStatement = true;
 const statementIndex = ref(0);
 
 export function useStatement() {
-  function setupStatement(course: Course) {
-    statementIndex.value = course.statementIndex || 0;
+  function setupStatement(course: Ref<Course | undefined>) {
+    statementIndex.value = course.value!.statementIndex || 0;
 
     const debouncedSaveProgress = debounce(() => {
       saveProgress();
@@ -23,7 +27,9 @@ export function useStatement() {
     watch(
       () => statementIndex.value,
       () => {
-        debouncedSaveProgress();
+        if (isAuthenticated()) {
+          debouncedSaveProgress();
+        }
       },
     );
 
@@ -45,10 +51,12 @@ export function useStatement() {
     }, INTERVAL_TIME); // 每5分钟自动保存一次
 
     function saveProgress() {
+      if (!isSaveStatement) return;
+
       if (statementIndex.value !== lastSavedIndex) {
         fetchUpdateCourseProgress({
-          coursePackId: course.coursePackId,
-          courseId: course.id,
+          coursePackId: course.value!.coursePackId,
+          courseId: course.value!.id,
           statementIndex: statementIndex.value,
         });
       }
@@ -59,4 +67,12 @@ export function useStatement() {
     setupStatement,
     statementIndex,
   };
+}
+
+export function permitSaveStatement() {
+  isSaveStatement = true;
+}
+
+export function preventSaveStatement() {
+  isSaveStatement = false;
 }
