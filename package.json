@@ -2,7 +2,7 @@
   "name": "earthworm",
   "version": "1.0.0",
   "description": "",
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@9.0.6",
   "main": "index.js",
   "scripts": {
     "prepare": "simple-git-hooks",
