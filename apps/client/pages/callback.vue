@@ -90,7 +90,7 @@ function useUsername() {
     <template v-if="isLoading && !isShowSettingUsernameModal">
       <Loading></Loading>
     </template>
-    <template v-else>
+    <template v-else-if="isShowSettingUsernameModal">
       <dialog
         class="modal"
         :open="true"
