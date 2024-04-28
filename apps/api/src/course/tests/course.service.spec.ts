@@ -175,23 +175,17 @@ async function setupTesting() {
 async function setupDBData(db: DbType) {
   const userId = "cxr";
   const coursePackEntity = await insertCoursePack(db);
-  const courseEntityFirst = await insertCourse(db, coursePackEntity.id, {
-    title: "第一课",
-    order: 1,
-  });
-  const courseEntitySecond = await insertCourse(db, coursePackEntity.id, {
-    title: "第二课",
-    order: 2,
-  });
-  const statementEntifyFirst = await insertStatement(db, courseEntityFirst.id, 1);
-  const statementEntifySecond = await insertStatement(db, courseEntityFirst.id, 2);
+  const courseEntityFirst = await insertCourse(db, coursePackEntity.id, "第一课");
+  const courseEntitySecond = await insertCourse(db, coursePackEntity.id, "第二课");
+  const statementEntityFirst = await insertStatement(db, courseEntityFirst.id, 1);
+  const statementEntitySecond = await insertStatement(db, courseEntityFirst.id, 2);
 
   return {
     userId,
     coursePackId: coursePackEntity.id,
     courseEntityFirst,
     courseEntitySecond,
-    statementEntifyFirst,
-    statementEntifySecond,
+    statementEntityFirst,
+    statementEntitySecond,
   };
 }
