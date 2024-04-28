@@ -14,6 +14,7 @@
     "db:upload": "pnpm -F @earthworm/xingrong-courses upload",
     "db:update": "pnpm -F @earthworm/xingrong-courses upload:statements",
     "dev:serve": "pnpm schema:build && pnpm -F api start:dev",
+    "db:upload-music": "pnpm -F @earthworm/music-courses upload",
     "dev:client": "pnpm -F client dev",
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose stop",

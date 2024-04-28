@@ -304,6 +304,18 @@ importers:
         specifier: ^8.11.5
         version: 8.11.5
 
+  packages/music-courses:
+    dependencies:
+      '@earthworm/db':
+        specifier: workspace:^
+        version: link:../db
+      '@earthworm/schema':
+        specifier: workspace:^
+        version: link:../schema
+      srtparsejs:
+        specifier: ^1.0.8
+        version: 1.0.8
+
   packages/schema: {}
 
   packages/xingrong-courses:
@@ -12329,7 +12341,6 @@ packages:
 
   /srtparsejs@1.0.8:
     resolution: {integrity: sha512-xXyMHb8XWIFEYaLYa/RqXOXYdpxnk5VdonBEuv0CRfOxS8FVVeo4ZfPeUuhL3IRUQPClUxTI2oKPC0comyIPOA==}
-    dev: true
 
   /sshpk@1.18.0:
     resolution: {integrity: sha512-2p2KJZTSqQ/I3+HX42EpYOa2l3f8Erv8MWKsy2I9uf4wA7yFIkXRffYdsx86y6z4vHtV8u7g+pPlr8/4ouAxsQ==}
