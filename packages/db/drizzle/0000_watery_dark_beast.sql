@@ -2,7 +2,9 @@ CREATE TABLE IF NOT EXISTS "courses" (
 	"id" text PRIMARY KEY NOT NULL,
 	"title" varchar(256) NOT NULL,
 	"order" integer NOT NULL,
-	"course_pack_id" text NOT NULL
+	"course_pack_id" text NOT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "course_history" (
@@ -11,6 +13,8 @@ CREATE TABLE IF NOT EXISTS "course_history" (
 	"course_id" text NOT NULL,
 	"course_pack_id" text NOT NULL,
 	"completion_count" integer NOT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp,
 	CONSTRAINT "course_history_user_id_course_id_course_pack_id_unique" UNIQUE("user_id","course_id","course_pack_id")
 );
 --> statement-breakpoint
@@ -19,7 +23,9 @@ CREATE TABLE IF NOT EXISTS "course_packs" (
 	"order" integer NOT NULL,
 	"title" text NOT NULL,
 	"description" text,
-	"is_free" boolean
+	"is_free" boolean,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "memberships" (
@@ -27,7 +33,9 @@ CREATE TABLE IF NOT EXISTS "memberships" (
 	"user_id" text NOT NULL,
 	"start_date" timestamp NOT NULL,
 	"end_date" timestamp NOT NULL,
-	"isActive" boolean
+	"isActive" boolean,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "statements" (
@@ -36,7 +44,9 @@ CREATE TABLE IF NOT EXISTS "statements" (
 	"chinese" text NOT NULL,
 	"english" text NOT NULL,
 	"soundmark" text NOT NULL,
-	"course_id" text NOT NULL
+	"course_id" text NOT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "user_course_progress" (
@@ -55,6 +65,8 @@ CREATE TABLE IF NOT EXISTS "user_learn_record" (
 	"user_id" text NOT NULL,
 	"count" integer DEFAULT 0 NOT NULL,
 	"day" date NOT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp,
 	CONSTRAINT "user_learn_record_user_id_day_unique" UNIQUE("user_id","day")
 );
 --> statement-breakpoint

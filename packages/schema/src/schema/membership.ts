@@ -9,4 +9,6 @@ export const membership = pgTable("memberships", {
   start_date: timestamp("start_date").notNull(),
   end_date: timestamp("end_date").notNull(),
   isActive: boolean("isActive"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
 });

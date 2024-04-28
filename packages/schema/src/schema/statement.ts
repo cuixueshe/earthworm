@@ -1,6 +1,6 @@
 import { createId } from "@paralleldrive/cuid2";
 import { relations } from "drizzle-orm";
-import { integer, pgTable, text } from "drizzle-orm/pg-core";
+import { integer, pgTable, text, timestamp } from "drizzle-orm/pg-core";
 
 import { course } from "./course";
 
@@ -15,6 +15,8 @@ export const statement = pgTable("statements", {
   courseId: text("course_id")
     .notNull()
     .references(() => course.id),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
 });
 
 export const statementRelations = relations(statement, ({ one }) => ({
