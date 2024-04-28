@@ -1,14 +1,14 @@
 import { type Course } from "~/store/course";
 import { http } from "./http";
 
-export interface CoursePack {
+export type CoursePacksResponse = Array<{
   id: string;
   title: string;
   isFree: boolean;
   description: string;
-}
+}>;
 
-export interface CoursePack2 {
+export interface CoursePackResponse {
   id: string;
   title: string;
   description: string;
@@ -18,9 +18,9 @@ export interface CoursePack2 {
 }
 
 export async function fetchCoursePacks() {
-  return await http.get<CoursePack[], CoursePack[]>("/course-pack");
+  return await http.get<CoursePacksResponse, CoursePacksResponse>("/course-pack");
 }
 
 export async function fetchCoursePack(coursePackId: string) {
-  return await http.get<CoursePack2, CoursePack2>(`/course-pack/${coursePackId}`);
+  return await http.get<CoursePackResponse, CoursePackResponse>(`/course-pack/${coursePackId}`);
 }

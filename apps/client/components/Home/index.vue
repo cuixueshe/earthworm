@@ -7,7 +7,9 @@
         </div>
       </div>
       <div class="w-56">{{ userStore.userInfo?.username }}</div>
+      <!-- 昵称 -->
       <!-- <div>{{ userStore.userInfo?.name }}</div> -->
+      <!-- 勋章的展示 -->
       <!-- <div class="flex gap-2 py-4">
         <div
           class="overflow-hidden rounded-full"

@@ -19,8 +19,9 @@
 <script setup lang="ts">
 import { navigateTo } from "#imports";
 
-import type { CoursePack } from "~/api/coursePack";
+import type { CoursePacksResponse } from "~/api/coursePack";
 
+type CoursePack = CoursePacksResponse[number];
 interface Props {
   coursePack: CoursePack;
 }
@@ -37,5 +38,3 @@ function handleGoToCoursePack(coursePack: CoursePack) {
   }
 }
 </script>
-
-<style scoped></style>

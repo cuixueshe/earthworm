@@ -26,11 +26,11 @@
 </template>
 
 <script setup lang="ts">
-import { type RankingSelfType } from "~/api/rank";
+import { type RankingSelfResponse } from "~/api/rank";
 import { isAuthenticated } from "~/services/auth";
 
 const { rankingSelf, isLoading } = defineProps<{
-  rankingSelf: RankingSelfType | null;
+  rankingSelf: RankingSelfResponse | null;
   isLoading: boolean;
 }>();
 </script>

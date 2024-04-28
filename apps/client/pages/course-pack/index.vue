@@ -17,11 +17,11 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import type { CoursePack } from "~/api/coursePack";
+import type { CoursePacksResponse } from "~/api/coursePack";
 import { fetchCoursePacks } from "~/api/coursePack";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 
-const coursePacks = ref<CoursePack[]>([]);
+const coursePacks = ref<CoursePacksResponse>([]);
 
 const isLoading = ref(true);
 getCoursePacks();

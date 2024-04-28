@@ -5,6 +5,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ref } from "vue";
 
 import type { Course } from "../course";
+import type { CoursePack } from "../coursePack";
 import { fetchCourse } from "~/api/course";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "../course";
@@ -28,15 +29,24 @@ vi.mock("../statement.ts", () => {
 });
 
 const firstCourse: Course = {
-  id: 1,
+  id: "1",
   title: "第一课",
-  coursePackId: 1,
+  order: 1,
+  coursePackId: "1",
   completionCount: 0,
   statementIndex: 0,
   statements: [
-    { id: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
-    { id: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
+    { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
+    { id: "2", order: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
   ],
+};
+
+const coursePack: CoursePack = {
+  id: "1",
+  order: 1,
+  title: "课程包1",
+  description: "",
+  isFree: true,
 };
 
 vi.mocked(fetchCourse).mockImplementation(async (coursePackId, courseId) => {
@@ -46,7 +56,6 @@ vi.mocked(fetchCourse).mockImplementation(async (coursePackId, courseId) => {
 describe("course", () => {
   beforeEach(() => {
     setActivePinia(createPinia());
-    // const store = useCourseStore();
 
     const userStore = useUserStore();
     userStore.initUser({
@@ -59,7 +68,7 @@ describe("course", () => {
   it("initializes with a course", async () => {
     const store = useCourseStore();
 
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
 
     expect(store.currentCourse).toEqual(firstCourse);
     expect(store.statementIndex).toBe(0);
@@ -67,7 +76,7 @@ describe("course", () => {
 
   it("navigates to the next statement", async () => {
     const store = useCourseStore();
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
 
     store.toNextStatement();
 
@@ -76,7 +85,7 @@ describe("course", () => {
 
   it("resets statementIndex on doAgain", async () => {
     const store = useCourseStore();
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
     store.toNextStatement();
 
     store.doAgain();
@@ -86,7 +95,7 @@ describe("course", () => {
 
   it("checks if all statements are done", async () => {
     const store = useCourseStore();
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
 
     expect(store.isAllDone()).toBe(false);
     //在 firstCourse 中只有 2 个 statement
@@ -97,7 +106,7 @@ describe("course", () => {
 
   it("checks if the answer is correct", async () => {
     const store = useCourseStore();
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
 
     expect(store.checkCorrect("I")).toBe(true);
     expect(store.checkCorrect("i")).toBe(true);
@@ -106,14 +115,14 @@ describe("course", () => {
 
   it("the length of the word should be one", async () => {
     const store = useCourseStore();
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
 
     expect(store.words.length).toBe(1);
   });
 
   it("the count of first course question should be two", async () => {
     const store = useCourseStore();
-    await store.setup(1, firstCourse.id);
+    await store.setup(coursePack.id, firstCourse.id);
 
     expect(store.totalQuestionsCount).toBe(2);
   });

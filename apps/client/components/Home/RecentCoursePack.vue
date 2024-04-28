@@ -40,10 +40,10 @@
 import { navigateTo } from "#app";
 import { ref } from "vue";
 
-import type { UserRecentCoursePackVo } from "~/api/userCourseProgress";
+import type { UserRecentCoursePackResponse } from "~/api/userCourseProgress";
 import { fetchUserRecentCoursePacks } from "~/api/userCourseProgress";
 
-const coursePacks = ref<UserRecentCoursePackVo[]>([]);
+const coursePacks = ref<UserRecentCoursePackResponse[]>([]);
 
 getUserRecentCoursePacks();
 

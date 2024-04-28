@@ -2,10 +2,10 @@ import { type UserInfoResponse } from "@logto/vue";
 
 import { http } from "./http";
 
-export async function updateUserinfo(datas: Partial<UserInfoResponse>) {
+export async function updateUserinfo(data: Partial<UserInfoResponse>) {
   return await http.patch<UserInfoResponse | undefined, UserInfoResponse | undefined>(
     "/user",
-    datas,
+    data,
   );
 }
 

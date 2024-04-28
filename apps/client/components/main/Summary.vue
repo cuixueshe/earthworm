@@ -145,7 +145,7 @@ function soundSentence() {
 }
 
 function useCourse() {
-  let nextCourseId = ref(0);
+  let nextCourseId = ref("");
 
   const haveNextCourse = computed(() => {
     return nextCourseId.value;
@@ -178,7 +178,7 @@ function useCourse() {
         nextCourseId.value = nextCourse.id;
         updateActiveCourseMap(coursePackId, nextCourseId.value);
       } else {
-        updateActiveCourseMap(coursePackId, -1);
+        updateActiveCourseMap(coursePackId, "");
       }
     }
   }
