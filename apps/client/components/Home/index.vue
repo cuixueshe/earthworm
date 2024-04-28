@@ -3,7 +3,7 @@
     <div class="flex w-80 shrink-0 flex-col p-12 pt-0 text-4xl">
       <div class="avatar flex w-full justify-center p-0">
         <div class="w-full rounded-full">
-          <img src="/logo.png" />
+          <img :src="userStore.userInfo?.picture!" />
         </div>
       </div>
       <div class="w-56">{{ userStore.userInfo?.username }}</div>

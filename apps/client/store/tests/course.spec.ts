@@ -1,3 +1,5 @@
+import type { Ref } from "vue";
+
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ref } from "vue";
@@ -14,8 +16,8 @@ vi.mock("../statement.ts", () => {
   return {
     useStatement: () => {
       const returnObj = {
-        setupStatement({ statementIndex }: any) {
-          returnObj.statementIndex.value = statementIndex;
+        setupStatement(course: Ref<Course | undefined>) {
+          returnObj.statementIndex.value = course.value?.statementIndex!;
         },
         statementIndex: ref(0),
       };
