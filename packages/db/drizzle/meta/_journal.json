@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1713688776528,
-      "tag": "0000_big_shen",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1714057214478,
-      "tag": "0001_true_ben_urich",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1714291106089,
-      "tag": "0002_hard_nightshade",
+      "when": 1714292327599,
+      "tag": "0000_closed_susan_delgado",
       "breakpoints": true
     }
   ]
