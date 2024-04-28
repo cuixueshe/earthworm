@@ -55,9 +55,6 @@ jobs:
       - name: Run build schema
         run: pnpm schema:build
 
-      - name: Run db seed
-        run: pnpm db:upload
-
       - name: Run tests
         run: pnpm test:ci
 
