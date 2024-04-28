@@ -15,6 +15,13 @@
       "when": 1714057214478,
       "tag": "0001_true_ben_urich",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1714291106089,
+      "tag": "0002_hard_nightshade",
+      "breakpoints": true
     }
   ]
 }
