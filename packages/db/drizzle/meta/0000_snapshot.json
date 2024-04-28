@@ -1,5 +1,5 @@
 {
-  "id": "0567db35-c55b-494d-9588-aa5d11c5ad75",
+  "id": "9a2313f4-8fb8-4343-baa9-490277f21ee0",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "5",
   "dialect": "pg",
@@ -359,12 +359,11 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "user_course_progress_user_id_course_id_course_pack_id_unique": {
-          "name": "user_course_progress_user_id_course_id_course_pack_id_unique",
+        "user_course_progress_user_id_course_pack_id_unique": {
+          "name": "user_course_progress_user_id_course_pack_id_unique",
           "nullsNotDistinct": false,
           "columns": [
             "user_id",
-            "course_id",
             "course_pack_id"
           ]
         }

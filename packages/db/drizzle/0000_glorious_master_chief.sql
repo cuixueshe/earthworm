@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS "user_course_progress" (
 	"statement_index" integer NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp,
-	CONSTRAINT "user_course_progress_user_id_course_id_course_pack_id_unique" UNIQUE("user_id","course_id","course_pack_id")
+	CONSTRAINT "user_course_progress_user_id_course_pack_id_unique" UNIQUE("user_id","course_pack_id")
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "user_learn_record" (
