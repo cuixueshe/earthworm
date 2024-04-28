@@ -1,18 +1,9 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { sql } from "drizzle-orm";
 
-import { createUser } from "../../../test/fixture/user";
-import {
-  createEmptyUserLearnRecordList,
-  createUserLearnRecordList,
-} from "../../../test/fixture/userLearnRecord";
 import { cleanDB, testImportModules } from "../../../test/helper/utils";
+import { endDB } from "../../common/db";
 import { DB, DbType } from "../../global/providers/db.provider";
 import { UserLearnRecordService } from "../user-learn-record.service";
-
-const user = createUser();
-const emptyUserLearnRecordList = createEmptyUserLearnRecordList();
-const UserLearnRecordList = createUserLearnRecordList();
 
 describe("user learn record service", () => {
   let db: DbType;
@@ -27,99 +18,84 @@ describe("user learn record service", () => {
 
   afterAll(async () => {
     await cleanDB(db);
+    await endDB();
   });
 
   beforeEach(async () => {
-    await db.execute(sql`TRUNCATE TABLE "user-learn-record";`);
+    await cleanDB(db);
   });
 
-  describe("utils", () => {
-    it("should return the date of 52 weeks forward", async () => {
-      const res = userLearnRecordService.calcStartDate(new Date("2024-03-11"));
-
-      expect(res.toISOString().slice(0, 10)).toBe("2023-03-12");
+  describe("find", () => {
+    const userId = "cxr";
+    beforeEach(async () => {
+      await userLearnRecordService.upsert(userId, new Date("2024-04-10"));
+      await userLearnRecordService.upsert(userId, new Date("2024-04-15"));
+      await userLearnRecordService.upsert(userId, new Date("2024-04-20"));
     });
 
-    it("should return the start and end of the date range", async () => {
-      const date = new Date("2024-01-01");
-      let { start, end } = userLearnRecordService.dateRange(date);
-      function convertToUTC(date: Date) {
-        const offset = date.getTimezoneOffset();
-        const utcDate = new Date(date.getTime() - offset * 60 * 1000);
-        return utcDate;
-      }
+    it("should return learn records for a user within the specified date range", async () => {
+      const dto = {
+        startDate: "2024-04-01",
+        endDate: "2024-04-30",
+      };
 
-      start = convertToUTC(start);
-      end = convertToUTC(end);
+      const result = await userLearnRecordService.find(userId, dto);
 
-      expect(start.toISOString()).toBe("2024-01-01T00:00:00.000Z");
-      expect(end.toISOString()).toBe("2024-01-01T23:59:59.999Z");
-    });
-  });
-
-  describe("user learn record", () => {
-    it("should create a record", async () => {
-      const date = new Date("2023-03-29");
-
-      await userLearnRecordService.create(user.userId, date);
-
-      const res = await userLearnRecordService.findOne(user.userId, date);
-
-      expect(res.userId).toBe(user.userId);
-      expect(res.date.toISOString().slice(0, 10)).toBe("2023-03-29");
-      expect(res.count).toBe(1);
+      expect(result.totalCount).toBe(3);
+      expect(result.list).toEqual([
+        { day: "2024-04-10", count: 1 },
+        { day: "2024-04-15", count: 1 },
+        { day: "2024-04-20", count: 1 },
+      ]);
     });
 
-    it("should update count of record", async () => {
-      const date = new Date("2023-05-14");
-      const count = 7;
-      await userLearnRecordService.create(user.userId, date);
+    it("should handle cases with no startDate or endDate defined", async () => {
+      const dto = {};
 
-      await userLearnRecordService.update(user.userId, date, count);
+      const result = await userLearnRecordService.find(userId, dto);
 
-      const res = await userLearnRecordService.findOne(user.userId, date);
-      expect(res.count).toBe(count + 1);
+      // 由于没有指定日期范围，应返回该用户的所有学习记录
+      expect(result.totalCount).toBe(3);
     });
 
-    it("should create a record when the user completes a course.", async () => {
-      const date = new Date("2023-05-16");
-      const fn = jest.spyOn(userLearnRecordService, "create");
+    it("should return an empty list if no records match the criteria", async () => {
+      const dto = {
+        startDate: "2025-01-01",
+        endDate: "2025-12-31",
+      };
 
-      await userLearnRecordService.userLearnRecord(user.userId, date);
+      const result = await userLearnRecordService.find(userId, dto);
 
-      expect(fn).toHaveBeenCalledWith(user.userId, date);
+      expect(result.totalCount).toEqual(0);
+      expect(result.list.length).toEqual(0);
     });
 
-    it("should update count of record when the user completes multiple course on the same day.", async () => {
-      const date = new Date("2023-05-18");
-      const count = 2;
-      const fn = jest.spyOn(userLearnRecordService, "update");
+    it("should return all records after the startDate if only startDate is provided", async () => {
+      const dto = {
+        startDate: "2024-04-15",
+      };
 
-      await userLearnRecordService.userLearnRecord(user.userId, date);
-      await userLearnRecordService.userLearnRecord(user.userId, date);
-      await userLearnRecordService.userLearnRecord(user.userId, date);
+      const result = await userLearnRecordService.find(userId, dto);
 
-      expect(fn).toHaveBeenCalledWith(user.userId, date, count);
+      expect(result.totalCount).toBe(2);
+      expect(result.list).toEqual([
+        { day: "2024-04-15", count: 1 },
+        { day: "2024-04-20", count: 1 },
+      ]);
     });
 
-    it("should return an empty list when the user has completed a course but it does not fall within the query range.", async () => {
-      const date = new Date("2024-01-01");
-      await userLearnRecordService.userLearnRecord(user.userId, date);
+    it("should return all records before the endDate if only endDate is provided", async () => {
+      const dto = {
+        endDate: "2024-04-15",
+      };
 
-      const query = { startDate: "2023-01-01", endDate: "2023-12-31" };
-      const res = await userLearnRecordService.findUserLearnRecord(user.userId, query);
+      const result = await userLearnRecordService.find(userId, dto);
 
-      expect(res).toEqual(emptyUserLearnRecordList);
-    });
-
-    it("should return a list of records when the user has completed a course and it falls within the query range.", async () => {
-      const date = new Date("2024-01-01");
-      await userLearnRecordService.userLearnRecord(user.userId, date);
-
-      const query = { startDate: "2024-01-01", endDate: "2024-12-31" };
-      const res = await userLearnRecordService.findUserLearnRecord(user.userId, query);
-
-      expect(res).toEqual(UserLearnRecordList);
+      expect(result.totalCount).toBe(2);
+      expect(result.list).toEqual([
+        { day: "2024-04-10", count: 1 },
+        { day: "2024-04-15", count: 1 },
+      ]);
     });
   });
 });

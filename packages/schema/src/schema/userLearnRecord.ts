@@ -1,8 +1,14 @@
-import { integer, pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
+import { date, integer, pgTable, serial, text, unique } from "drizzle-orm/pg-core";
 
-export const userLearnRecord = pgTable("user-learn-record", {
-  id: serial("id").primaryKey(),
-  userId: text("user_id").notNull(),
-  count: integer("count").notNull().default(0),
-  date: timestamp("date").notNull().defaultNow(),
-});
+export const userLearnRecord = pgTable(
+  "user_learn_record",
+  {
+    id: serial("id").primaryKey(),
+    userId: text("user_id").notNull(),
+    count: integer("count").notNull().default(0),
+    day: date("day").notNull(),
+  },
+  (t) => ({
+    unq: unique().on(t.userId, t.day),
+  }),
+);

@@ -1,22 +1,34 @@
 import { ref } from "vue";
 
-export const ACTIVE_COURSE_ID = "activeCourseId";
+export const ACTIVE_COURSE_MAP = "activeCourseMap";
 
-export function useActiveCourseId() {
-  const activeCourseId = ref<number>(Number(localStorage.getItem(ACTIVE_COURSE_ID)));
+export function useActiveCourseMap() {
+  const activeCourseMap = ref(getActiveCourseMap());
 
-  function updateActiveCourseId(id: number) {
-    activeCourseId.value = id;
-    localStorage.setItem(ACTIVE_COURSE_ID, String(id));
+  function getActiveCourseMap() {
+    return JSON.parse(localStorage.getItem(ACTIVE_COURSE_MAP) || "{}");
   }
 
-  function restActiveCourseId() {
-    localStorage.removeItem(ACTIVE_COURSE_ID);
+  function updateActiveCourseMap(coursePackId: number, courseId: number) {
+    activeCourseMap.value = getActiveCourseMap();
+    activeCourseMap.value[coursePackId] = courseId;
+    localStorage.setItem(ACTIVE_COURSE_MAP, JSON.stringify(activeCourseMap.value));
+  }
+
+  function removeActiveCourseMap(coursePackId: number) {
+    activeCourseMap.value = getActiveCourseMap();
+    delete activeCourseMap.value[coursePackId];
+    localStorage.setItem(ACTIVE_COURSE_MAP, JSON.stringify(activeCourseMap.value));
+  }
+
+  function resetActiveCourseMap() {
+    localStorage.removeItem(ACTIVE_COURSE_MAP);
   }
 
   return {
-    activeCourseId,
-    restActiveCourseId,
-    updateActiveCourseId,
+    activeCourseMap,
+    resetActiveCourseMap,
+    updateActiveCourseMap,
+    removeActiveCourseMap,
   };
 }

@@ -15,11 +15,9 @@
 import { computed, ref, shallowRef, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 
-import UserHome from "~/components/user/Home.vue";
 import UserSetting from "~/components/user/Setting.vue";
 
 interface ComponentMap {
-  Home: typeof UserHome;
   Setting: typeof UserSetting;
 }
 
@@ -29,15 +27,11 @@ interface Menu {
 }
 
 const route = useRoute();
-const userMenus = ref([
-  { name: "主页", component: "Home" },
-  { name: "设置", component: "Setting" },
-]);
+const userMenus = ref([{ name: "设置", component: "Setting" }]);
 const componentMap: ComponentMap = {
-  Home: UserHome,
   Setting: UserSetting,
 };
-const currentComponent = shallowRef(componentMap.Home); // shallowRef is used to fixed Vue warn
+const currentComponent = shallowRef(componentMap.Setting); // shallowRef is used to fixed Vue warn
 
 const defaultMenuName = computed(() =>
   route.query.displayComponent === "Setting" ? "设置" : "主页",
@@ -45,8 +39,7 @@ const defaultMenuName = computed(() =>
 
 watchEffect(() => {
   const routeComponent = route.query.displayComponent;
-  currentComponent.value =
-    componentMap[routeComponent as keyof typeof componentMap] || componentMap.Home;
+  currentComponent.value = componentMap[routeComponent as keyof typeof componentMap];
 });
 
 function handleChangeMenu(menu: Menu) {
