@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { eq } from "drizzle-orm";
+import { asc, eq } from "drizzle-orm";
 
-import { coursePack } from "@earthworm/schema";
+import { course, coursePack } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -16,7 +16,9 @@ export class CoursePackService {
   ) {}
 
   async findAll() {
-    return await this.db.query.coursePack.findMany();
+    return await this.db.query.coursePack.findMany({
+      orderBy: asc(coursePack.order),
+    });
   }
 
   async findOne(coursePackId: string) {
@@ -49,7 +51,9 @@ export class CoursePackService {
     const coursePackWithCourses = await this.db.query.coursePack.findFirst({
       where: eq(coursePack.id, coursePackId),
       with: {
-        courses: true,
+        courses: {
+          orderBy: asc(course.order),
+        },
       },
     });
 
