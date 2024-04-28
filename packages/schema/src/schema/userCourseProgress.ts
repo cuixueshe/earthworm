@@ -19,6 +19,6 @@ export const userCourseProgress = pgTable(
     updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
   },
   (t) => ({
-    unq: unique().on(t.userId, t.courseId, t.coursePackId),
+    unq: unique().on(t.userId, t.coursePackId),
   }),
 );

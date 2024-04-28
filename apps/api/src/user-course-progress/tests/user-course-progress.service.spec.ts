@@ -100,7 +100,7 @@ describe("user-progress service", () => {
         limit,
       );
 
-      expect(recentCoursePacks.length).toBe(2);
+      expect(recentCoursePacks.length).toBe(1);
 
       expect(recentCoursePacks[0]).toEqual(
         expect.objectContaining({
@@ -110,21 +110,11 @@ describe("user-progress service", () => {
           description: coursePackEntityFirst.description,
         }),
       );
-
-      expect(recentCoursePacks[1]).toEqual(
-        expect.objectContaining({
-          coursePackId: coursePackEntityFirst.id,
-          courseId: courseId1,
-          title: coursePackEntityFirst.title,
-          description: coursePackEntityFirst.description,
-        }),
-      );
     });
 
     it("should return the recent course packs for a given user up to the specified limit", async () => {
       const limit = 1;
 
-      await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, createId(), 1);
       await userCourseProgressService.upsert(userId, coursePackEntityFirst.id, createId(), 1);
       await userCourseProgressService.upsert(userId, coursePackEntitySecond.id, createId(), 1);
 

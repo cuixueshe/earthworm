@@ -21,9 +21,6 @@ export class UserCourseProgressService {
   }
 
   async getUserRecentCoursePacks(userId: string, limit: number) {
-    // TODO 先按照 1 个课程来搞
-    // 后面需要处理多个课程 需要去重
-    // 后续把进度拆开 分成 coursePack 的进度 和 course 的进度
     const userCourseProgressResult = await this.db
       .select({
         id: userCourseProgress.id,
@@ -51,12 +48,8 @@ export class UserCourseProgressService {
         statementIndex,
       })
       .onConflictDoUpdate({
-        target: [
-          userCourseProgress.userId,
-          userCourseProgress.coursePackId,
-          userCourseProgress.courseId,
-        ],
-        set: { statementIndex },
+        target: [userCourseProgress.userId, userCourseProgress.coursePackId],
+        set: { courseId, statementIndex },
       });
   }
 }
