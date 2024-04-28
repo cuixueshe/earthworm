@@ -1,5 +1,7 @@
 import { HttpException, Inject, Injectable } from "@nestjs/common";
+import { eq } from "drizzle-orm";
 
+import { course, coursePack } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { LogtoService } from "../logto/logto.service";
 import { UserCourseProgressService } from "../user-course-progress/user-course-progress.service";
@@ -36,7 +38,17 @@ export class UserService {
       dto.avatar = this.getAvatarUrl();
     }
     const result = await this.updateUser(user, { username: dto.username, avatar: dto.avatar });
-    await this.userCourseProgressService.upsert(user.userId, 1, 1, 0);
+
+    const { id, courses } = await this.db.query.coursePack.findFirst({
+      where: eq(coursePack.order, 1),
+      with: {
+        courses: {
+          where: eq(course.order, 1),
+        },
+      },
+    });
+
+    await this.userCourseProgressService.upsert(user.userId, id, courses.at(0).id, 0);
     return result;
   }
 

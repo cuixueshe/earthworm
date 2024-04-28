@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { eq } from "drizzle-orm";
+import { asc, eq } from "drizzle-orm";
 
-import { coursePack } from "@earthworm/schema";
+import { course, coursePack } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -16,10 +16,12 @@ export class CoursePackService {
   ) {}
 
   async findAll() {
-    return await this.db.query.coursePack.findMany();
+    return await this.db.query.coursePack.findMany({
+      orderBy: asc(coursePack.order),
+    });
   }
 
-  async findOne(coursePackId: number) {
+  async findOne(coursePackId: string) {
     const result = await this.db.query.coursePack.findFirst({
       where: eq(coursePack.id, coursePackId),
     });
@@ -31,7 +33,7 @@ export class CoursePackService {
     return result;
   }
 
-  async findOneWithCourses(userId: string, coursePackId: number) {
+  async findOneWithCourses(userId: string, coursePackId: string) {
     const coursePackWithCourses = await this.findCoursePackWithCourses(coursePackId);
 
     if (userId) {
@@ -45,11 +47,13 @@ export class CoursePackService {
     return coursePackWithCourses;
   }
 
-  private async findCoursePackWithCourses(coursePackId: number) {
+  private async findCoursePackWithCourses(coursePackId: string) {
     const coursePackWithCourses = await this.db.query.coursePack.findFirst({
       where: eq(coursePack.id, coursePackId),
       with: {
-        courses: true,
+        courses: {
+          orderBy: asc(course.order),
+        },
       },
     });
 
@@ -60,7 +64,7 @@ export class CoursePackService {
     return coursePackWithCourses;
   }
 
-  private async addCompletionCountsToCourses(userId: string, courses: any[], coursePackId: number) {
+  private async addCompletionCountsToCourses(userId: string, courses: any[], coursePackId: string) {
     return await Promise.all(
       courses.map(async (course) => {
         const completionCount = await this.courseHistoryService.findCompletionCount(
@@ -76,18 +80,19 @@ export class CoursePackService {
     );
   }
 
-  async create(createCoursePackDto: CreateCoursePackDto) {
+  async create(dto: CreateCoursePackDto) {
     return await this.db
       .insert(coursePack)
       .values({
-        title: createCoursePackDto.title,
-        description: createCoursePackDto.description,
-        isFree: createCoursePackDto.isFree || true,
+        order: dto.order,
+        title: dto.title,
+        description: dto.description,
+        isFree: dto.isFree || true,
       })
       .returning();
   }
 
-  async findCourse(userId: string, coursePackId: number, courseId: number) {
+  async findCourse(userId: string, coursePackId: string, courseId: string) {
     if (userId) {
       return await this.courseService.findWithUserProgress(coursePackId, courseId, userId);
     } else {
@@ -95,11 +100,11 @@ export class CoursePackService {
     }
   }
 
-  async findNextCourse(coursePackId: number, courseId: number) {
+  async findNextCourse(coursePackId: string, courseId: string) {
     return await this.courseService.findNext(coursePackId, courseId);
   }
 
-  async completeCourse(userId: string, coursePackId: number, courseId: number) {
+  async completeCourse(userId: string, coursePackId: string, courseId: string) {
     return await this.courseService.completeCourse(userId, coursePackId, courseId);
   }
 }

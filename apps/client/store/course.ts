@@ -1,22 +1,30 @@
 import { defineStore } from "pinia";
-import { computed, ref, watch, watchEffect } from "vue";
+import { computed, ref, watchEffect } from "vue";
 
+import type { CoursePack } from "./coursePack";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { useStatement } from "./statement";
 
-interface Statement {
-  id: number;
+export interface Statement {
+  id: string;
+  order: number;
   chinese: string;
   english: string;
   soundmark: string;
 }
 
+export interface CourseIdentifier {
+  coursePackId: CoursePack["id"];
+  courseId: Course["id"];
+}
+
 export interface Course {
-  id: number;
+  id: string;
   title: string;
+  order: number;
   statements: Statement[];
-  coursePackId: number;
+  coursePackId: CoursePack["id"];
   completionCount: number;
   statementIndex: number;
 }
@@ -78,7 +86,7 @@ export const useCourseStore = defineStore("course", () => {
     return res;
   }
 
-  async function setup(coursePackId: number, courseId: number) {
+  async function setup(coursePackId: string, courseId: string) {
     let course = await fetchCourse(coursePackId, courseId);
     currentCourse.value = course;
     setupStatement(currentCourse);

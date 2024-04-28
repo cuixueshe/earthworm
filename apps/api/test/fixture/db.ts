@@ -1,51 +1,72 @@
+import { DbType } from "src/global/providers/db.provider";
+
 import { course, coursePack, statement, userCourseProgress } from "@earthworm/schema";
-import { CreateCoursePackDto } from "../../src/course-pack/dto/create-course-pack.dto";
 import { getTokenOwner } from "../../test/fixture/user";
 
-export async function insertCoursePack(db, dto?: CreateCoursePackDto) {
-  const options = Object.assign(
-    {
-      title: "课程包",
-      description: "这是一个课程包",
-      isFree: true,
-      difficulty: 1,
-    },
-    dto,
-  );
+type CoursePackInsert = typeof coursePack.$inferInsert;
+
+export async function insertCoursePack(db: DbType, values?: Partial<CoursePackInsert>) {
+  const defaultCoursePack = {
+    order: 1,
+    title: "课程包",
+    description: "这是一个课程包",
+    isFree: true,
+  } satisfies CoursePackInsert;
 
   const [entity] = await db
     .insert(coursePack)
     .values({
-      title: options.title,
-      description: options.description,
-      isFree: options.isFree || true,
+      ...defaultCoursePack,
+      ...values,
     })
     .returning();
 
   return entity;
 }
 
-export async function insertCourse(db, coursePackId: number, title: string = "") {
+type CourseInsert = typeof course.$inferInsert;
+export async function insertCourse(
+  db: DbType,
+  coursePackId: string,
+  values?: Partial<CourseInsert>,
+) {
+  const defaultCourse = {
+    order: 1,
+    title: "第一课",
+    coursePackId,
+  } satisfies CourseInsert;
+
   const [entity] = await db
     .insert(course)
     .values({
-      title: title || "第一课",
-      coursePackId,
+      ...defaultCourse,
+      ...values,
     })
     .returning();
 
   return entity;
 }
 
-export async function insertStatement(db, courseId, order = 1) {
+type StatementInsert = typeof statement.$inferInsert;
+export async function insertStatement(
+  db: DbType,
+  courseId: string,
+  order: number,
+  values?: Partial<StatementInsert>,
+) {
+  const defaultStatement = {
+    order,
+    courseId,
+    chinese: "你好",
+    english: "hello",
+    soundmark: "nihao",
+  } satisfies StatementInsert;
+
   const [entity] = await db
     .insert(statement)
     .values({
-      order,
-      chinese: "你好",
-      english: "hello",
-      soundmark: "nihao",
-      courseId,
+      ...defaultStatement,
+      ...values,
     })
     .returning();
 
@@ -54,8 +75,8 @@ export async function insertStatement(db, courseId, order = 1) {
 
 export async function insertUserCourseProgress(
   db,
-  coursePackId: number,
-  courseId: number,
+  coursePackId: string,
+  courseId: string,
   statementIndex: number,
 ) {
   const [entity] = await db

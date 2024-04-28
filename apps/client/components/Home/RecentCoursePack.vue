@@ -40,10 +40,10 @@
 import { navigateTo } from "#app";
 import { ref } from "vue";
 
-import type { UserRecentCoursePackVo } from "~/api/userCourseProgress";
+import type { UserRecentCoursePackResponse } from "~/api/userCourseProgress";
 import { fetchUserRecentCoursePacks } from "~/api/userCourseProgress";
 
-const coursePacks = ref<UserRecentCoursePackVo[]>([]);
+const coursePacks = ref<UserRecentCoursePackResponse[]>([]);
 
 getUserRecentCoursePacks();
 
@@ -51,11 +51,11 @@ async function getUserRecentCoursePacks() {
   coursePacks.value = await fetchUserRecentCoursePacks();
 }
 
-function handleGotoCourseList(coursePackId: number) {
+function handleGotoCourseList(coursePackId: string) {
   navigateTo(`/course-pack/${coursePackId}`);
 }
 
-function handleContinueGame(coursePackId: number, courseId: number) {
+function handleContinueGame(coursePackId: string, courseId: string) {
   navigateTo(`/game/${coursePackId}/${courseId}`);
 }
 </script>

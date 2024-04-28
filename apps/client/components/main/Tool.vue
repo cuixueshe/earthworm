@@ -20,7 +20,7 @@
       </div>
       <MainStudyVideoLink
         class="icon-item ml-1"
-        :course-id="courseStore.currentCourse?.id"
+        :course-order="courseStore.currentCourse?.order"
       />
     </div>
 

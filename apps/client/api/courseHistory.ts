@@ -1,10 +1,13 @@
+import type { CoursePack } from "~/store/coursePack";
 import { http } from "./http";
 
-export interface CourseHistory {
+export interface CourseHistoryResponse {
   courseId: string;
   completionCount: number;
 }
 
-export async function fetchCourseHistory(coursePackId: number) {
-  return await http.get<CourseHistory[], CourseHistory[]>(`/course-history/${coursePackId}`);
+export async function fetchCourseHistory(coursePackId: CoursePack["id"]) {
+  return await http.get<CourseHistoryResponse[], CourseHistoryResponse[]>(
+    `/course-history/${coursePackId}`,
+  );
 }

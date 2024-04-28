@@ -1,29 +1,32 @@
 import { http } from "./http";
 
-interface UserProgressVo {
-  courseId: number;
+interface UserProgressResponse {
+  courseId: string;
 }
 
-interface UserProgressDto {
-  coursePackId: number;
-  courseId: number;
+interface UserProgressUpdate {
+  coursePackId: string;
+  courseId: string;
   statementIndex: number;
 }
 
-export interface UserRecentCoursePackVo {
+export interface UserRecentCoursePackResponse {
   id: number;
-  coursePackId: number;
-  courseId: number;
+  coursePackId: string;
+  courseId: string;
   title: string;
   description: string;
 }
 
-export async function fetchUpdateCourseProgress(dto: UserProgressDto) {
-  return await http.put<UserProgressVo, UserProgressVo>(`user-course-progress`, dto);
+export async function fetchUpdateCourseProgress(userProgressUpdate: UserProgressUpdate) {
+  return await http.put<UserProgressResponse, UserProgressResponse>(
+    `user-course-progress`,
+    userProgressUpdate,
+  );
 }
 
 export async function fetchUserRecentCoursePacks() {
-  return await http.get<UserRecentCoursePackVo[], UserRecentCoursePackVo[]>(
+  return await http.get<UserRecentCoursePackResponse[], UserRecentCoursePackResponse[]>(
     `/user-course-progress/recent-course-packs`,
   );
 }

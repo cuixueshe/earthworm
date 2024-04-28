@@ -8,7 +8,7 @@ import { DB, DbType } from "../global/providers/db.provider";
 export class UserCourseProgressService {
   constructor(@Inject(DB) private db: DbType) {}
 
-  async findStatement(userId: string, coursePackId: number, courseId: number) {
+  async findStatement(userId: string, coursePackId: string, courseId: string) {
     const result = await this.db.query.userCourseProgress.findFirst({
       where: and(
         eq(userCourseProgress.userId, userId),
@@ -21,8 +21,11 @@ export class UserCourseProgressService {
   }
 
   async getUserRecentCoursePacks(userId: string, limit: number) {
+    // TODO 先按照 1 个课程来搞
+    // 后面需要处理多个课程 需要去重
+    // 后续把进度拆开 分成 coursePack 的进度 和 course 的进度
     const userCourseProgressResult = await this.db
-      .selectDistinctOn([userCourseProgress.coursePackId], {
+      .select({
         id: userCourseProgress.id,
         coursePackId: userCourseProgress.coursePackId,
         courseId: userCourseProgress.courseId,
@@ -31,14 +34,14 @@ export class UserCourseProgressService {
       })
       .from(userCourseProgress)
       .where(eq(userCourseProgress.userId, userId))
-      .orderBy(asc(userCourseProgress.coursePackId), desc(userCourseProgress.updatedAt))
+      .orderBy(desc(userCourseProgress.updatedAt))
       .limit(limit)
       .leftJoin(coursePack, eq(userCourseProgress.coursePackId, coursePack.id));
 
     return userCourseProgressResult;
   }
 
-  async upsert(userId: string, coursePackId: number, courseId: number, statementIndex: number) {
+  async upsert(userId: string, coursePackId: string, courseId: string, statementIndex: number) {
     await this.db
       .insert(userCourseProgress)
       .values({

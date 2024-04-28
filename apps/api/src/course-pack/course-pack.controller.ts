@@ -1,10 +1,9 @@
-import { Body, Controller, Get, Param, ParseIntPipe, Post, UseGuards } from "@nestjs/common";
+import { Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
 
 import { AuthGuard, UncheckAuth } from "../guards/auth.guard";
 import { CoursePacksAccessGuard } from "../guards/course-packs-access.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { CoursePackService } from "./course-pack.service";
-import { CreateCoursePackDto } from "./dto/create-course-pack.dto";
 
 @Controller("course-pack")
 export class CoursePackController {
@@ -18,7 +17,7 @@ export class CoursePackController {
   @UncheckAuth()
   @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Get(":coursePackId")
-  async findOne(@User() user: UserEntity, @Param("coursePackId") coursePackId: number) {
+  async findOne(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
     return await this.coursePackService.findOneWithCourses(user.userId, coursePackId);
   }
 
@@ -27,8 +26,8 @@ export class CoursePackController {
   @Get(":coursePackId/courses/:courseId")
   findCourse(
     @User() user: UserEntity,
-    @Param("coursePackId", ParseIntPipe) coursePackId: number,
-    @Param("courseId", ParseIntPipe) courseId: number,
+    @Param("coursePackId") coursePackId: string,
+    @Param("courseId") courseId: string,
   ) {
     return this.coursePackService.findCourse(user.userId, coursePackId, courseId);
   }
@@ -36,10 +35,7 @@ export class CoursePackController {
   @UncheckAuth()
   @UseGuards(AuthGuard, CoursePacksAccessGuard)
   @Get(":coursePackId/courses/:courseId/next")
-  findNextCourse(
-    @Param("coursePackId", ParseIntPipe) coursePackId: number,
-    @Param("courseId", ParseIntPipe) courseId: number,
-  ) {
+  findNextCourse(@Param("coursePackId") coursePackId: string, @Param("courseId") courseId: string) {
     return this.coursePackService.findNextCourse(coursePackId, courseId);
   }
 
@@ -48,8 +44,8 @@ export class CoursePackController {
   @Post(":coursePackId/courses/:courseId/complete")
   CompleteCourse(
     @User() user: UserEntity,
-    @Param("coursePackId") coursePackId: number,
-    @Param("courseId") courseId: number,
+    @Param("coursePackId") coursePackId: string,
+    @Param("courseId") courseId: string,
   ) {
     return this.coursePackService.completeCourse(user.userId, coursePackId, courseId);
   }

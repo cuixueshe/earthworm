@@ -27,8 +27,8 @@ export class UserProgressController {
   async upsert(@User() user: UserEntity, @Body() dto: UpsertUserProgressDto) {
     const result = await this.userCourseProgressService.upsert(
       user.userId,
-      Number(dto.coursePackId),
-      Number(dto.courseId),
+      dto.coursePackId,
+      dto.courseId,
       dto.statementIndex,
     );
 

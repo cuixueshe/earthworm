@@ -1,5 +1,6 @@
 import { NotFoundException } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
+import { createId } from "@paralleldrive/cuid2";
 
 import type { DbType } from "../../global/providers/db.provider";
 import { insertCourse, insertCoursePack, insertStatement } from "../../../test/fixture/db";
@@ -50,11 +51,15 @@ describe("course service", () => {
 
       const result = await courseService.find(coursePackId, courseEntityFirst.id);
 
-      expect(result).toMatchSnapshot();
+      expect(result).toHaveProperty("coursePackId");
+      expect(result).toHaveProperty("id");
+      expect(result).toHaveProperty("order");
+      expect(result).toHaveProperty("title");
+      expect(result).toHaveProperty("statements");
     });
 
     it("should throw NotFoundException if the course does not exist", async () => {
-      await expect(courseService.find(2, 1)).rejects.toThrow(NotFoundException);
+      await expect(courseService.find(createId(), createId())).rejects.toThrow(NotFoundException);
     });
   });
 
@@ -170,8 +175,14 @@ async function setupTesting() {
 async function setupDBData(db: DbType) {
   const userId = "cxr";
   const coursePackEntity = await insertCoursePack(db);
-  const courseEntityFirst = await insertCourse(db, coursePackEntity.id, "第一课");
-  const courseEntitySecond = await insertCourse(db, coursePackEntity.id, "第二课");
+  const courseEntityFirst = await insertCourse(db, coursePackEntity.id, {
+    title: "第一课",
+    order: 1,
+  });
+  const courseEntitySecond = await insertCourse(db, coursePackEntity.id, {
+    title: "第二课",
+    order: 2,
+  });
   const statementEntityFirst = await insertStatement(db, courseEntityFirst.id, 1);
   const statementEntitySecond = await insertStatement(db, courseEntityFirst.id, 2);
 

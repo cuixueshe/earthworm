@@ -1,5 +1,6 @@
 import { NotFoundException } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
+import { createId } from "@paralleldrive/cuid2";
 
 import type { DbType } from "../../global/providers/db.provider";
 import { insertCourse, insertCoursePack } from "../../../test/fixture/db";
@@ -15,6 +16,8 @@ describe("CoursePackService", () => {
   let coursePackService: CoursePackService;
   let courseService: CourseService;
 
+  const fakeCoursePackId = createId();
+  const fakeCourseId = createId();
   beforeAll(async () => {
     const testHelper = await setupTesting();
     db = testHelper.db;
@@ -47,13 +50,13 @@ describe("CoursePackService", () => {
     it("should return a course pack for a valid ID", async () => {
       const coursePackEntity = await insertCoursePack(db);
 
-      const result = await coursePackService.findOne(1);
+      const result = await coursePackService.findOne(coursePackEntity.id);
 
       expect(result).toEqual(coursePackEntity);
     });
 
     it("should throw NotFoundException for an invalid ID", async () => {
-      await expect(coursePackService.findOne(999)).rejects.toThrow(NotFoundException);
+      await expect(coursePackService.findOne(createId())).rejects.toThrow(NotFoundException);
     });
   });
 
@@ -74,7 +77,7 @@ describe("CoursePackService", () => {
       const coursePackEntity = await insertCoursePack(db);
       await insertCourse(db, coursePackEntity.id);
 
-      const result = await coursePackService.findOneWithCourses(notUserId, 1);
+      const result = await coursePackService.findOneWithCourses(notUserId, coursePackEntity.id);
 
       expect(result.courses.length).toBe(1);
       expect(result.courses[0]).not.toHaveProperty("completionCount");
@@ -83,7 +86,7 @@ describe("CoursePackService", () => {
 
   describe("findCourse", () => {
     it("should call courseService.findWithUserProgress when userId is provided", async () => {
-      await coursePackService.findCourse("cxr", 1, 1);
+      await coursePackService.findCourse("cxr", fakeCoursePackId, fakeCourseId);
 
       expect(courseService);
 
@@ -92,7 +95,7 @@ describe("CoursePackService", () => {
 
     it("should call courseService.find when userId is not provided", async () => {
       const notUserId = "";
-      await coursePackService.findCourse(notUserId, 1, 1);
+      await coursePackService.findCourse(notUserId, fakeCoursePackId, fakeCourseId);
 
       expect(courseService);
 
@@ -102,7 +105,7 @@ describe("CoursePackService", () => {
 
   describe("findNextCourse", () => {
     it("should call courseService.findNext", async () => {
-      await coursePackService.findNextCourse(1, 1);
+      await coursePackService.findNextCourse(fakeCoursePackId, fakeCourseId);
 
       expect(courseService.findNext).toHaveBeenCalled();
     });
@@ -110,7 +113,7 @@ describe("CoursePackService", () => {
 
   describe("completeCourse", () => {
     it("should call courseService.completeCourse", async () => {
-      await coursePackService.completeCourse("cxr", 1, 1);
+      await coursePackService.completeCourse("cxr", fakeCoursePackId, fakeCourseId);
 
       expect(courseService.completeCourse).toHaveBeenCalled();
     });

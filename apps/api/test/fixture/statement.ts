@@ -1,4 +1,4 @@
-export function createStatement(courseId: number) {
+export function createStatement(courseId: string) {
   return {
     order: 1,
     chinese: "你好",
@@ -8,7 +8,7 @@ export function createStatement(courseId: number) {
   };
 }
 
-export function createMultipleStatement(courseId: number) {
+export function createMultipleStatement(courseId: string) {
   return [
     {
       order: 1,
