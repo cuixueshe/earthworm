@@ -1,6 +1,6 @@
 <template>
-  <div class="container m-auto w-full font-customFont">
-    <template v-if="isAuthenticated()">
+  <div class="container w-full font-customFont">
+    <template v-if="!isAuthenticated()">
       <Home></Home>
     </template>
     <template v-else>
