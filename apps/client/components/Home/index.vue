@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full w-full py-6 md:px-12">
     <div class="hidden md:block">
-      <div class="mr-6 flex flex-col">
+      <div class="md-4 flex flex-col md:mr-10">
         <div class="m-auto overflow-hidden rounded-full border border-solid border-gray-200 p-1">
           <img
             :src="userStore.userInfo?.picture!"
@@ -42,8 +42,9 @@
           >更多音乐</NuxtLink
         > -->
       </div>
-      <HomeRecentCoursePack class="my-7 min-h-20 flex-1" />
-      <div class="w-full">
+      <HomeRecentCoursePack class="mt-3 md:mt-5" />
+      <hr class="border-black-200 my-3 border border-solid md:my-5" />
+      <div class="border-black-200 w-full rounded-xl border border-solid p-4 shadow">
         <HomeCalendarGraph
           :data="learnRecord.list"
           :totalCount="learnRecord.totalCount"

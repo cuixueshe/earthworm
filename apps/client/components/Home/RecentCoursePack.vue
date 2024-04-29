@@ -1,6 +1,5 @@
 <template>
   <div class="border-1 w-full rounded-xl px-4 md:px-0">
-    <h2 class="my-10 text-2xl font-bold">最近玩过课程包</h2>
     <div
       class="flex min-h-[350px] w-full flex-wrap items-center justify-center gap-4"
       v-if="isLoading"
@@ -14,7 +13,7 @@
       <div
         v-for="coursePack in coursePacks"
         :key="coursePack.id"
-        class="card w-72 shrink-0 bg-base-100 shadow-xl"
+        class="card flex w-72 shrink-0 flex-col gap-2 bg-base-100 p-4 shadow transition-shadow hover:shadow-lg"
       >
         <figure>
           <NuxtImg
@@ -25,23 +24,26 @@
             class="rounded"
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">{{ coursePack.title }}</h2>
-          <p>{{ coursePack.description }}</p>
-          <div class="card-actions justify-end">
-            <button
-              class="btn btn-primary btn-sm"
-              @click="handleGotoCourseList(coursePack.coursePackId)"
-            >
-              课程列表
-            </button>
-            <button
-              class="btn btn-primary btn-secondary btn-sm"
-              @click="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
-            >
-              继续游戏
-            </button>
-          </div>
+        <h2 class="card-title">{{ coursePack.title }}</h2>
+        <div class="max-h-30 flex min-h-20 flex-grow flex-col truncate text-gray-400">
+          <span> 课程简介 </span>
+          <span>
+            {{ coursePack.description }}
+          </span>
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            class="btn btn-primary btn-sm"
+            @click="handleGotoCourseList(coursePack.coursePackId)"
+          >
+            课程列表
+          </button>
+          <button
+            class="btn btn-primary btn-secondary btn-sm"
+            @click="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
+          >
+            继续游戏
+          </button>
         </div>
       </div>
     </div>
