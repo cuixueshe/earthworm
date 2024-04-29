@@ -26,7 +26,7 @@ export function useKeyboardSound() {
     isTrue: isKeyboardSoundEnabled,
     toggle: toggleKeyboardSound,
     remove: removeKeyboardSound,
-  } = useLocalStorageBoolean(KEYBOARD_SOUND_KEY, true); // 默认开启
+  } = useLocalStorageBoolean(KEYBOARD_SOUND_KEY, "defaultSound"); // 默认开启
 
   return {
     keyboardSound,
