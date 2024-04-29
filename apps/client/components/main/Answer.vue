@@ -1,18 +1,16 @@
 <template>
   <div class="text-center">
-    <div
-      class="ml-8 inline-flex flex-wrap items-center gap-1 text-5xl text-fuchsia-500 dark:text-gray-50"
-    >
+    <div class="ml-8 inline-flex flex-wrap items-center gap-1 text-5xl">
       <span
         v-for="word in words"
         :key="word"
-        class="cursor-pointer p-1"
-        @click="usePlayEnglishWordSound(word)"
+        class="cursor-pointer p-1 hover:text-fuchsia-500"
+        @click="handlePlayWordSound(word)"
         >{{ word }}</span
       >
       <span
         class="i-ph-speaker-simple-high ml-1 inline-block h-7 w-7 cursor-pointer text-gray-500 hover:text-fuchsia-500"
-        @click="handlePlaySound"
+        @click="handlePlayEnglishSound"
       ></span>
     </div>
     <div class="my-6 text-xl text-gray-500">
@@ -37,7 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted } from "vue";
+import { last } from "lodash-es";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
@@ -48,7 +47,8 @@ import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const courseStore = useCourseStore();
-const { handlePlaySound } = usePlayEnglishSound();
+const { handlePlayWordSound } = usePlayWordSound();
+const { handlePlayEnglishSound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
@@ -67,18 +67,41 @@ function usePlayEnglishSound() {
     }
   });
 
-  function handlePlaySound() {
+  function handlePlayEnglishSound() {
     playSound();
   }
 
   return {
-    handlePlaySound,
+    handlePlayEnglishSound,
   };
 }
 
-function usePlayEnglishWordSound(word: string) {
-  const url = getPronunciationUrl(word);
-  new Audio(url).play();
+function usePlayWordSound() {
+  const audio = new Audio();
+  let lastWord = "";
+  let isPlaying = false;
+
+  audio.onplay = () => {
+    isPlaying = true;
+  };
+
+  audio.onended = () => {
+    isPlaying = false;
+  };
+
+  function handlePlayWordSound(word: string) {
+    if (isPlaying && lastWord === word) {
+      // skip
+      return;
+    }
+    lastWord = word;
+    audio.src = getPronunciationUrl(word);
+    audio.play();
+  }
+
+  return {
+    handlePlayWordSound,
+  };
 }
 
 function registerShortcutKeyForNextQuestion() {
