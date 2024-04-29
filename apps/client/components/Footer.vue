@@ -5,6 +5,5 @@
       // TODO 当服务器迁移到国内时在做处理
       <a href="https://beian.miit.gov.cn/">京ICP备2020042122号-2</a>
     </p> -->
-    t
   </footer>
 </template>
