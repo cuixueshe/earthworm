@@ -5,7 +5,7 @@
   >
     <figure>
       <img
-        src="~/assets/xingrong.avif"
+        src="/images/xingrong.jpg"
         alt="Shoes"
       />
     </figure>
