@@ -52,7 +52,7 @@
 import { navigateTo } from "#app";
 import { ref } from "vue";
 
-import { useRecentCoursePack } from "./recentCoursePack";
+import { useRecentCoursePack } from "./helper";
 
 const { coursePacks, fetchCoursePacks } = useRecentCoursePack();
 
@@ -78,3 +78,4 @@ function handleContinueGame(coursePackId: string, courseId: string) {
   navigateTo(`/game/${coursePackId}/${courseId}`);
 }
 </script>
+./helper
