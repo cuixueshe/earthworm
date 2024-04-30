@@ -5,7 +5,7 @@ interface UserLearnRecord {
   endDate?: string;
 }
 
-interface UserLearnRecordResponse {
+export interface UserLearnRecordResponse {
   totalCount: number;
   list: Array<{ day: string; count: number }>;
 }

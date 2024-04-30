@@ -78,6 +78,7 @@ import { computed, ref, watch } from "vue";
 
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
+import { useLearnRecord } from "~/composables/learnRecord";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
@@ -86,11 +87,13 @@ import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
+import { useCoursePackStore } from "~/store/coursePack";
 import { permitSaveStatement, preventSaveStatement } from "~/store/statement";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const courseStore = useCourseStore();
+const coursePackStore = useCoursePackStore();
 const { goToNextCourse, completeCourse, haveNextCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
 const { showModal, hideSummary } = useSummary();
@@ -98,6 +101,7 @@ const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
+const { updateLearnRecord } = useLearnRecord();
 
 watch(showModal, (val) => {
   if (val) {
@@ -173,6 +177,8 @@ function useCourse() {
     if (isAuthenticated() && courseStore.currentCourse) {
       const { coursePackId } = courseStore.currentCourse;
       const { nextCourse } = await courseStore.completeCourse();
+      coursePackStore.updateCoursesCompleteCount(coursePackId);
+      updateLearnRecord();
 
       if (nextCourse) {
         nextCourseId.value = nextCourse.id;

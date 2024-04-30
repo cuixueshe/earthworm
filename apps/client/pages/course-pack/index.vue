@@ -6,7 +6,7 @@
     </template>
     <template v-else>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <template v-for="coursePack in coursePacks">
+        <template v-for="coursePack in coursePackStore.coursePacks">
           <CoursePackCard :coursePack="coursePack"></CoursePackCard>
         </template>
       </div>
@@ -17,19 +17,21 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import type { CoursePacksResponse } from "~/api/coursePack";
-import { fetchCoursePacks } from "~/api/coursePack";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
+import { useCoursePackStore } from "~/store/coursePack";
 
-const coursePacks = ref<CoursePacksResponse>([]);
+const coursePackStore = useCoursePackStore();
+const isLoading = ref(false);
 
-const isLoading = ref(true);
-getCoursePacks();
+setup();
 
-async function getCoursePacks() {
-  const res = await fetchCoursePacks();
-  coursePacks.value = res;
-  isLoading.value = false;
+async function setup() {
+  // 课程包不会更新 所以初始化的时候只拉取一次数据就好了
+  if (coursePackStore.coursePacks.length === 0) {
+    isLoading.value = true;
+    await coursePackStore.setupCoursePacks();
+    isLoading.value = false;
+  }
 }
 </script>
 

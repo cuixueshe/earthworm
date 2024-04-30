@@ -17,7 +17,7 @@ export const useUserStore = defineStore("user", () => {
   }
 
   function isNewUser() {
-    return !userInfo.value?.username;
+    return !userInfo.value?.username || !userInfo.value?.picture;
   }
 
   return {

@@ -78,11 +78,8 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function completeCourse() {
-    const res = await fetchCompleteCourse(
-      currentCourse.value?.coursePackId!,
-      currentCourse.value?.id!,
-    );
-
+    const coursePackId = currentCourse.value?.coursePackId!;
+    const res = await fetchCompleteCourse(coursePackId, currentCourse.value?.id!);
     return res;
   }
 

@@ -1,16 +1,28 @@
 <template>
-  <div class="border-1 rounded-xl px-4 md:px-0">
+  <div class="border-1 w-full rounded-xl px-4 md:px-0">
     <h2 class="my-10 text-2xl font-bold">最近玩过课程包</h2>
-    <div class="flex flex-wrap gap-4">
+    <div
+      class="flex min-h-[360px] w-full flex-wrap items-center justify-center gap-4"
+      v-if="isLoading"
+    >
+      <span class="loading loading-dots loading-md"></span>
+    </div>
+    <div
+      v-else
+      class="flex flex-wrap gap-4"
+    >
       <div
         v-for="coursePack in coursePacks"
         :key="coursePack.id"
         class="card w-72 shrink-0 bg-base-100 shadow-xl"
       >
         <figure>
-          <img
-            src="~/assets/xingrong.avif"
-            alt="Shoes"
+          <NuxtImg
+            src="/images/xingrong.jpg"
+            :placeholder="[288, 180]"
+            width="288"
+            height="180"
+            class="rounded"
           />
         </figure>
         <div class="card-body">
@@ -40,15 +52,22 @@
 import { navigateTo } from "#app";
 import { ref } from "vue";
 
-import type { UserRecentCoursePackResponse } from "~/api/userCourseProgress";
-import { fetchUserRecentCoursePacks } from "~/api/userCourseProgress";
+import { useRecentCoursePack } from "./recentCoursePack";
 
-const coursePacks = ref<UserRecentCoursePackResponse[]>([]);
+const { coursePacks, fetchCoursePacks } = useRecentCoursePack();
 
-getUserRecentCoursePacks();
+const isLoading = ref(false);
 
-async function getUserRecentCoursePacks() {
-  coursePacks.value = await fetchUserRecentCoursePacks();
+setup();
+
+async function setup() {
+  if (coursePacks.value.length === 0) {
+    isLoading.value = true;
+    await fetchCoursePacks();
+    isLoading.value = false;
+  } else {
+    await fetchCoursePacks();
+  }
 }
 
 function handleGotoCourseList(coursePackId: string) {

@@ -38,7 +38,7 @@ import { useRoute } from "vue-router";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { useCoursePackStore } from "~/store/coursePack";
 
-const isLoading = ref(true);
+const isLoading = ref(false);
 const route = useRoute();
 const coursePackStore = useCoursePackStore();
 const coursePackId = route.params.id as string;
@@ -47,8 +47,13 @@ const { updateActiveCourseMap } = useActiveCourseMap();
 setup();
 
 async function setup() {
-  await coursePackStore.setup(coursePackId);
-  isLoading.value = false;
+  // 只在初始化的时候拉取一次数据
+  // 后续只更新课程的完成次数数据
+  if (!coursePackStore.currentCoursePack) {
+    isLoading.value = true;
+    await coursePackStore.setupCoursePack(coursePackId);
+    isLoading.value = false;
+  }
 }
 
 function handleChangeCourse(courseId: string) {
