@@ -12,7 +12,6 @@ export interface CoursePackResponse {
   id: string;
   title: string;
   description: string;
-  progress: number;
   isFree: boolean;
   courses: Array<Course>;
 }

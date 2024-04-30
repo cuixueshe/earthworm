@@ -19,6 +19,12 @@ export class CourseHistoryService {
 
   async findByCoursePackId(userId: string, coursePackId: string) {
     return await this.db.query.courseHistory.findMany({
+      columns: {
+        id: true,
+        coursePackId: true,
+        courseId: true,
+        completionCount: true,
+      },
       where: and(eq(courseHistory.userId, userId), eq(courseHistory.coursePackId, coursePackId)),
     });
   }
