@@ -1,0 +1,17 @@
+{
+  "name": "@earthworm/music-courses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "upload": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@earthworm/db": "workspace:^",
+    "@earthworm/schema": "workspace:^",
+    "srtparsejs": "^1.0.8"
+  }
+}

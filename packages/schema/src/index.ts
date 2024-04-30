@@ -2,6 +2,7 @@ import { course, courseRelations } from "./schema/course";
 import { courseHistory } from "./schema/courseHistory";
 import { coursePack, coursePackRelations } from "./schema/coursePack";
 import { membership } from "./schema/membership";
+import { music } from "./schema/music";
 import { statement, statementRelations } from "./schema/statement";
 import { userCourseProgress } from "./schema/userCourseProgress";
 import { userLearnRecord } from "./schema/userLearnRecord";
@@ -13,6 +14,7 @@ export * from "./schema/userLearnRecord";
 export * from "./schema/userCourseProgress";
 export * from "./schema/membership";
 export * from "./schema/coursePack";
+export * from "./schema/music";
 
 export const schemas = {
   course,
@@ -25,6 +27,7 @@ export const schemas = {
   coursePack,
   courseRelations,
   coursePackRelations,
+  music,
 };
 
 export type SchemaType = typeof schemas;
