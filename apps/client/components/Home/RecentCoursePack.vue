@@ -2,7 +2,7 @@
   <div class="border-1 w-full rounded-xl px-4 md:px-0">
     <h2 class="my-10 text-2xl font-bold">最近玩过课程包</h2>
     <div
-      class="flex min-h-[360px] w-full flex-wrap items-center justify-center gap-4"
+      class="flex min-h-[350px] w-full flex-wrap items-center justify-center gap-4"
       v-if="isLoading"
     >
       <span class="loading loading-dots loading-md"></span>
@@ -18,7 +18,7 @@
       >
         <figure>
           <NuxtImg
-            src="/images/xingrong.jpg"
+            src="https://earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com/course-packs/xingrong.jpg"
             :placeholder="[288, 180]"
             width="288"
             height="180"
@@ -78,4 +78,3 @@ function handleContinueGame(coursePackId: string, courseId: string) {
   navigateTo(`/game/${coursePackId}/${courseId}`);
 }
 </script>
-./helper

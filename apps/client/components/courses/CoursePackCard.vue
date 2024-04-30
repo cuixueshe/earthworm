@@ -4,9 +4,12 @@
     @click="handleGoToCoursePack(coursePack)"
   >
     <figure>
-      <img
-        src="/images/xingrong.jpg"
-        alt="Shoes"
+      <NuxtImg
+        src="https://earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com/course-packs/xingrong.jpg"
+        :placeholder="[288, 180]"
+        width="288"
+        height="180"
+        class="rounded"
       />
     </figure>
     <div class="card-body">
