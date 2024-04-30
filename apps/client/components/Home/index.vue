@@ -30,11 +30,11 @@
           class="btn btn-primary btn-sm mr-2"
           >更多课程包</NuxtLink
         >
-        <!-- <NuxtLink
+        <NuxtLink
           class="btn btn-primary btn-sm"
-          href="/course-pack"
+          href="/music/courses"
           >更多音乐</NuxtLink
-        > -->
+        >
       </div>
 
       <div class="mb-8 flex">
