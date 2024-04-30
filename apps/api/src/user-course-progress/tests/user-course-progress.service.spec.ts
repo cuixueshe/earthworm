@@ -77,6 +77,7 @@ describe("user-progress service", () => {
         title: "零基础",
         description: "这是零基础学英语",
         isFree: true,
+        cover: "",
       });
 
       coursePackEntitySecond = await insertCoursePack(db, {
@@ -84,6 +85,7 @@ describe("user-progress service", () => {
         title: "300个基础句子",
         description: "快乐学英语",
         isFree: true,
+        cover: "",
       });
     });
 
@@ -108,6 +110,7 @@ describe("user-progress service", () => {
           courseId: courseId2,
           title: coursePackEntityFirst.title,
           description: coursePackEntityFirst.description,
+          cover: expect.anything(),
         }),
       );
     });

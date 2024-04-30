@@ -24,6 +24,8 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
       title: "星荣零基础学英语",
       description: "最适合零基础入门的课程",
       isFree: true,
+      cover:
+        "https://earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com/course-packs/xingrong.jpg",
     })
     .returning();
 

@@ -18,7 +18,7 @@
       >
         <figure>
           <NuxtImg
-            src="https://earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com/course-packs/xingrong.jpg"
+            :src="coursePack.cover"
             :placeholder="[288, 180]"
             width="288"
             height="180"

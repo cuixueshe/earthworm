@@ -28,6 +28,7 @@ export class UserCourseProgressService {
         courseId: userCourseProgress.courseId,
         title: coursePack.title,
         description: coursePack.description,
+        cover: coursePack.cover,
       })
       .from(userCourseProgress)
       .where(eq(userCourseProgress.userId, userId))

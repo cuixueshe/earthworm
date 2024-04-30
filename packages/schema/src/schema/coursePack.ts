@@ -12,6 +12,7 @@ export const coursePack = pgTable("course_packs", {
   title: text("title").notNull(),
   description: text("description"),
   isFree: boolean("is_free"),
+  cover: text("cover"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
 });

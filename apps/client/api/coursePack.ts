@@ -6,6 +6,7 @@ export type CoursePacksResponse = Array<{
   title: string;
   isFree: boolean;
   description: string;
+  cover: string;
 }>;
 
 export interface CoursePackResponse {
@@ -13,6 +14,7 @@ export interface CoursePackResponse {
   title: string;
   description: string;
   isFree: boolean;
+  cover: string;
   courses: Array<Course>;
 }
 

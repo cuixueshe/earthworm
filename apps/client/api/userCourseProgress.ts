@@ -16,6 +16,7 @@ export interface UserRecentCoursePackResponse {
   courseId: string;
   title: string;
   description: string;
+  cover: string;
 }
 
 export async function fetchUpdateCourseProgress(userProgressUpdate: UserProgressUpdate) {
