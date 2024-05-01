@@ -35,13 +35,12 @@
 </template>
 
 <script setup lang="ts">
-import { last } from "lodash-es";
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { computed, onMounted, onUnmounted } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
+import { usePlayWordSound } from "~/composables/main/englishSound/audio";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
-import { usePronunciation } from "~/composables/user/pronunciation";
 import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
@@ -52,7 +51,6 @@ const { handlePlayEnglishSound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
-const { getPronunciationUrl } = usePronunciation();
 
 const words = computed(() => courseStore.currentStatement?.english.split(" "));
 
@@ -73,34 +71,6 @@ function usePlayEnglishSound() {
 
   return {
     handlePlayEnglishSound,
-  };
-}
-
-function usePlayWordSound() {
-  const audio = new Audio();
-  let lastWord = "";
-  let isPlaying = false;
-
-  audio.onplay = () => {
-    isPlaying = true;
-  };
-
-  audio.onended = () => {
-    isPlaying = false;
-  };
-
-  function handlePlayWordSound(word: string) {
-    if (isPlaying && lastWord === word) {
-      // skip
-      return;
-    }
-    lastWord = word;
-    audio.src = getPronunciationUrl(word);
-    audio.play();
-  }
-
-  return {
-    handlePlayWordSound,
   };
 }
 
