@@ -1,7 +1,11 @@
 <template>
   <header
-    :class="isStickyNavBar"
-    class="glass top-0 z-20 w-full px-5 font-customFont shadow-sm"
+    :class="{
+      'sticky top-0 z-20': isStickyNavBar,
+      'glass bg-gradient-to-r from-transparent via-white/20 to-transparent shadow-md drop-shadow-sm':
+        isScrolled,
+    }"
+    class="w-full px-5 font-customFont transition-all"
   >
     <div class="mx-auto max-w-screen-xl">
       <div class="flex h-16 items-center justify-between">
@@ -89,7 +93,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute } from "vue-router";
 
 import { Theme, useDarkMode } from "~/composables/darkMode";
@@ -101,6 +105,7 @@ const userStore = useUserStore();
 const { darkMode, toggleDarkMode } = useDarkMode();
 
 const isShowModal = ref(false);
+const isScrolled = ref(false);
 const HEADER_OPTIONS = [
   { name: "功能", anchor: "features" },
   { name: "问题", anchor: "faq" },
@@ -108,15 +113,20 @@ const HEADER_OPTIONS = [
 ];
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-const isStickyNavBar = computed(() => {
-  // 首页/用户信息页
-  if (["index", "User-Info"].includes(route.name as string)) {
-    return "sticky";
-  }
-  return "";
-});
+const isStickyNavBar = computed(() => ["index", "User-Info"].includes(route.name as string));
 
 const handleLogout = () => {
   isShowModal.value = true;
 };
+
+const onScroll = () => {
+  isScrolled.value = document.documentElement.scrollTop > 8;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", onScroll);
+});
+onUnmounted(() => {
+  window.removeEventListener("scroll", onScroll);
+});
 </script>
