@@ -4,7 +4,8 @@
   >
     <div class="m-auto flex h-fit min-h-screen flex-col items-center">
       <Navbar />
-      <div class="flex w-full max-w-screen-xl flex-1 px-6">
+      <!-- 内容的横向内边距是为了和 Navbar 对齐 -->
+      <div class="w-full px-5">
         <slot></slot>
       </div>
       <Footer></Footer>

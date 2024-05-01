@@ -1,9 +1,9 @@
 <template>
   <header
     :class="isStickyNavBar"
-    class="top-0 z-20 w-full bg-opacity-50 font-customFont backdrop-blur-xl"
+    class="glass top-0 z-20 w-full px-5 font-customFont shadow-sm"
   >
-    <div class="mx-auto max-w-screen-xl px-6">
+    <div class="mx-auto max-w-screen-xl">
       <div class="flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-between">
           <NuxtLink to="/">
@@ -59,11 +59,11 @@
           <!-- 登录/注册 -->
           <button
             v-else
-            @click="signIn()"
             aria-label="Login"
-            class="rounded-md bg-purple-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 ease-in-out hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-700"
+            class="btn btn-sm mr-1 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-700"
+            @click="signIn()"
           >
-            <span class="relative">登录</span>
+            登录
           </button>
 
           <!-- 切换主题 -->

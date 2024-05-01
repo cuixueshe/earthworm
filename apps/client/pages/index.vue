@@ -1,11 +1,7 @@
 <template>
-  <div class="container w-full font-customFont">
-    <template v-if="isAuthenticated()">
-      <Home></Home>
-    </template>
-    <template v-else>
-      <Landing></Landing>
-    </template>
+  <div class="mx-auto w-full max-w-screen-xl">
+    <Home v-if="isAuthenticated()"></Home>
+    <Landing v-else></Landing>
   </div>
 </template>
 
