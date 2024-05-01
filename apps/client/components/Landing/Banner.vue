@@ -31,7 +31,7 @@
     <div class="my-10 flex flex-wrap items-center justify-center gap-4 font-customFont">
       <button
         @click="handleKeydown"
-        class="btn"
+        class="btn relative"
         type="button"
       >
         <strong>开启Earthworm</strong>
