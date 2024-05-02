@@ -1,8 +1,6 @@
 <template>
-  <div class="mx-auto w-full max-w-screen-xl">
-    <Home v-if="isAuthenticated()"></Home>
-    <Landing v-else></Landing>
-  </div>
+  <Home v-if="isAuthenticated()"></Home>
+  <Landing v-else></Landing>
 </template>
 
 <script setup lang="ts">

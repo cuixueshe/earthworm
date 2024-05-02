@@ -1,11 +1,10 @@
 <template>
   <header
+    class="w-full px-5 font-customFont transition-all duration-300 ease-linear"
     :class="{
       'sticky top-0 z-20': isStickyNavBar,
-      'glass bg-gradient-to-r from-transparent via-white/20 to-transparent shadow-md drop-shadow-sm':
-        isScrolled,
+      'glass bg-gradient-to-r from-transparent via-white/10 to-transparent shadow-md': isScrolled,
     }"
-    class="w-full px-5 font-customFont transition-all"
   >
     <div class="mx-auto max-w-screen-xl">
       <div class="flex h-16 items-center justify-between">
@@ -31,19 +30,18 @@
             class="hidden md:block"
           >
             <ul class="flex items-center text-base">
-              <template
+              <li
+                class="px-4"
                 v-for="(optItem, optIndex) in HEADER_OPTIONS"
                 :key="optIndex"
               >
-                <li class="px-4">
-                  <a
-                    class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
-                    :href="`#${optItem.anchor}`"
-                  >
-                    {{ optItem.name }}
-                  </a>
-                </li>
-              </template>
+                <a
+                  class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
+                  :href="`#${optItem.anchor}`"
+                >
+                  {{ optItem.name }}
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -101,12 +99,12 @@ import { Theme, useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
-const { y } = useWindowScroll();
-
 const route = useRoute();
 const userStore = useUserStore();
+const { y } = useWindowScroll();
 const { darkMode, toggleDarkMode } = useDarkMode();
 
+const SCROLL_THRESHOLD = 8;
 const isShowModal = ref(false);
 const HEADER_OPTIONS = [
   { name: "功能", anchor: "features" },
@@ -116,9 +114,9 @@ const HEADER_OPTIONS = [
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 const isStickyNavBar = computed(() => ["index", "User-Info"].includes(route.name as string));
-const isScrolled = computed(() => y.value > 8);
+const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
-const handleLogout = () => {
+function handleLogout() {
   isShowModal.value = true;
-};
+}
 </script>
