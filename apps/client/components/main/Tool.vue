@@ -27,8 +27,9 @@
     <!-- 右侧 -->
     <div class="flex items-center">
       <div
-        class="mr-4"
+        class="tooltip-item mr-4"
         @click="handleDoAgain"
+        data-tip="重置当前课程进度"
       >
         <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
       </div>
