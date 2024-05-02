@@ -1,7 +1,7 @@
 <template>
   <div>
     <dialog
-      className="modal mt-[-8vh]"
+      className="modal mt-[-6vh]"
       :open="showModal"
     >
       <div className="modal-box max-w-[48rem]">
