@@ -113,7 +113,7 @@ const HEADER_OPTIONS = [
 ];
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
-const isStickyNavBar = computed(() => ["index", "User-Info"].includes(route.name as string));
+const isStickyNavBar = computed(() => ["index", "User-Setting"].includes(route.name as string));
 const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
 function handleLogout() {
