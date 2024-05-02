@@ -25,7 +25,8 @@
     "format-check": "prettier --check --cache .",
     "test": "pnpm -F api test && pnpm -F client test",
     "test:ci": "pnpm -F api test && pnpm -F client test:ci",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "build:changelog": "npx tsx ./packages/change-log/index.ts"
   },
   "keywords": [],
   "author": "",
