@@ -93,19 +93,21 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { useWindowScroll } from "@vueuse/core";
+import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
+const { y } = useWindowScroll();
+
 const route = useRoute();
 const userStore = useUserStore();
 const { darkMode, toggleDarkMode } = useDarkMode();
 
 const isShowModal = ref(false);
-const isScrolled = ref(false);
 const HEADER_OPTIONS = [
   { name: "功能", anchor: "features" },
   { name: "问题", anchor: "faq" },
@@ -114,19 +116,9 @@ const HEADER_OPTIONS = [
 
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 const isStickyNavBar = computed(() => ["index", "User-Info"].includes(route.name as string));
+const isScrolled = computed(() => y.value > 8);
 
 const handleLogout = () => {
   isShowModal.value = true;
 };
-
-const onScroll = () => {
-  isScrolled.value = document.documentElement.scrollTop > 8;
-};
-
-onMounted(() => {
-  window.addEventListener("scroll", onScroll);
-});
-onUnmounted(() => {
-  window.removeEventListener("scroll", onScroll);
-});
 </script>
