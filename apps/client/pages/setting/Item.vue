@@ -15,7 +15,9 @@ const emits = defineEmits(["change", "open"]);
 </script>
 
 <template>
-  <div class="grid grid-cols-2 border-b border-b-slate-100 p-3 text-base hover:bg-slate-50">
+  <div
+    class="box-border grid grid-cols-2 border-b border-b-slate-100 py-2 text-base hover:bg-slate-50 dark:hover:bg-slate-800 md:p-3"
+  >
     <div class="label-text flex items-center">{{ title }}</div>
 
     <template v-if="mode === 'radio'">
