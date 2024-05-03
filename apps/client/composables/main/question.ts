@@ -1,3 +1,5 @@
+import type { Ref } from "vue";
+
 import { nextTick, reactive, ref, watchEffect } from "vue";
 
 interface Word {
@@ -11,7 +13,7 @@ interface Word {
   id: number;
 }
 
-interface InputOptions {
+interface WordsInputOptions {
   source: () => string;
   setInputCursorPosition: (position: number) => void;
   getInputCursorPosition: () => number;
@@ -32,12 +34,12 @@ export function clearQuestionInput() {
   inputValue.value = "";
 }
 
-export function useInput({
+export function useWordsInput({
   source,
   setInputCursorPosition,
   getInputCursorPosition,
   inputChangedCallback,
-}: InputOptions) {
+}: WordsInputOptions) {
   let mode: Mode = Mode.Input;
   let currentEditWord: Word;
 
@@ -278,6 +280,7 @@ export function useInput({
   }
 
   function handleKeyboardInput(e: KeyboardEvent, options?: KeyboardInputOptions) {
+    console.log(e, inputValue);
     // 禁止方向键移动
     if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
       e.preventDefault();
@@ -354,5 +357,43 @@ export function useInput({
     fixFirstIncorrectWord,
     resetUserInputWords,
     isFixMode,
+  };
+}
+
+export function useSentenceInput(source: () => string) {
+  let inputStatus: Ref<"correct" | "wrong" | "pending"> = ref("pending");
+
+  function setInputValue(val: string) {
+    inputValue.value = val;
+    inputStatus.value = "pending";
+  }
+
+  function formatInputText(word: string) {
+    return word
+      .toLocaleLowerCase()
+      .replace(/‘|’|“|"|”/g, "'")
+      .replace(/[\s]+/g, " ")
+      .trim();
+  }
+
+  function submitAnswer(correctCallback?: () => void, wrongCallback?: () => void) {
+    const english = source();
+    const formattedInput = formatInputText(inputValue.value);
+
+    if (formattedInput === english.toLocaleLowerCase()) {
+      inputStatus.value = "correct";
+      clearQuestionInput();
+      correctCallback?.();
+    } else {
+      inputStatus.value = "wrong";
+      wrongCallback?.();
+    }
+  }
+
+  return {
+    inputValue,
+    setInputValue,
+    submitAnswer,
+    inputStatus,
   };
 }
