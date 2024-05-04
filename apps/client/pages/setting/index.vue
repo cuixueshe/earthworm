@@ -14,8 +14,6 @@ import {
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
-import SettingItem from "./Item.vue";
-import KeyBinding from "./KeyBinding.vue";
 
 const {
   showModal,
@@ -151,7 +149,7 @@ onUnmounted(() => {
       />
     </section>
   </div>
-  <KeyBinding
+  <SettingKeyBinding
     :showModal="showModal"
     :shortcutKeyStr="shortcutKeyStr"
     :shortcutKeyTip="shortcutKeyTip"
@@ -161,8 +159,14 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-section > *:last-child {
-  @apply border-none;
+section {
+  & > * {
+    @apply border-b border-b-slate-200;
+  }
+
+  & > *:last-child {
+    @apply border-none;
+  }
 }
 .section-title {
   @apply border-b pb-3 text-xl font-medium;

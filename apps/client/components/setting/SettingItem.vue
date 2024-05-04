@@ -16,7 +16,8 @@ const emits = defineEmits(["change", "open"]);
 
 <template>
   <div
-    class="box-border grid grid-cols-2 border-b border-b-slate-100 py-2 text-base hover:bg-slate-50 dark:hover:bg-slate-800 md:p-3"
+    class="box-border grid py-2 text-base hover:bg-slate-50 dark:hover:bg-slate-800 md:p-3"
+    :class="mode === 'kbd' ? 'grid-cols-3' : 'grid-cols-2'"
   >
     <div class="label-text flex items-center">{{ title }}</div>
 
@@ -44,24 +45,22 @@ const emits = defineEmits(["change", "open"]);
     </template>
 
     <template v-else>
-      <div class="flex justify-between">
-        <div class="flex items-center gap-2">
-          <div
-            class="kbd text-xs"
-            v-for="key in value as string[]"
-            :key="key"
-          >
-            {{ key }}
-          </div>
-        </div>
-
-        <button
-          class="btn btn-outline btn-secondary btn-sm"
-          @click="$emit('open')"
+      <div class="m-auto flex items-center gap-2">
+        <div
+          class="kbd text-xs"
+          v-for="key in value as string[]"
+          :key="key"
         >
-          编辑
-        </button>
+          {{ key }}
+        </div>
       </div>
+
+      <button
+        class="btn btn-outline btn-secondary btn-sm ml-auto"
+        @click="$emit('open')"
+      >
+        编辑
+      </button>
     </template>
   </div>
 </template>
