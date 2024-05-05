@@ -1,4 +1,4 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Query } from "@nestjs/common";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
 
 import { ToolService } from "./tool.service";
@@ -14,5 +14,13 @@ export class ToolController {
   @Get("dailySentence")
   dailySentence() {
     return this.toolService.dailySentence();
+  }
+
+  @ApiOperation({
+    summary: "获取单词音标",
+  })
+  @Get("phonetics")
+  fetchPhonetics(@Query("word") word: string) {
+    return this.toolService.fetchPhonetics(word);
   }
 }

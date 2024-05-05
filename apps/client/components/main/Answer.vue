@@ -14,13 +14,14 @@
       ></span>
     </div>
     <div class="my-6 text-xl text-gray-500">
-      <span
+      <span>{{ courseStore.currentStatement?.soundmark }}</span>
+      <!-- <span
         v-for="(item, index) in courseStore.soundMarks"
         :key="item + index"
         :class="[isPhonetic(item) && 'cursor-pointer hover:text-fuchsia-500']"
         @click="() => playPhonetics(item)"
         >{{ item }}</span
-      >
+      > -->
     </div>
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.chinese }}

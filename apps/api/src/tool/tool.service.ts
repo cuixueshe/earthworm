@@ -13,4 +13,15 @@ export class ToolService {
     };
     return res;
   }
+
+  async fetchPhonetics(word: string) {
+    // refer to https://github.com/creatcode/api/blob/master/YoudaoDic.md#%E9%87%8A%E4%B9%89
+    const { text } = await superagent.get(`https://dict.youdao.com/jsonapi?q=${word}`);
+    const data = JSON.parse(text);
+    const res = {
+      uk: data.simple.word[0].ukphone,
+      us: data.simple.word[0].usphone,
+    };
+    return res;
+  }
 }

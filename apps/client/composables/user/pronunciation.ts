@@ -1,5 +1,8 @@
 import { ref } from "vue";
 
+import { http } from "~/api/http";
+import { fetchPhonetics } from "~/api/tool";
+
 /**
  * 有道 Web 发音 API 接口
  *
@@ -19,6 +22,7 @@ export const pronunciationLabels: { [key in PronunciationType]: string } = {
 
 const PRONUNCIATION_TYPE = "pronunciationType";
 const pronunciation = ref<PronunciationType>(PronunciationType.American); // 默认美音
+
 export function usePronunciation() {
   loadCache();
 
@@ -53,6 +57,15 @@ export function usePronunciation() {
     return `https://dict.youdao.com/dictvoice?type=${getPronunciationType()}&audio=${english}`;
   }
 
+  async function getPhonetics(word: string) {
+    const res = await fetchPhonetics(word);
+    if (pronunciation.value === PronunciationType.American) {
+      return `/${res.us.split("; ")[0]}/`;
+    } else if (pronunciation.value === PronunciationType.British) {
+      return `/${res.uk.split("; ")[0]}/`;
+    }
+  }
+
   // 切换发音
   function togglePronunciation(type: PronunciationType) {
     if (type !== pronunciation.value) setStore(type);
@@ -63,5 +76,6 @@ export function usePronunciation() {
     getPronunciationOptions,
     getPronunciationUrl,
     togglePronunciation,
+    getPhonetics,
   };
 }

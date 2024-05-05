@@ -5,6 +5,7 @@ import type { CoursePack } from "./coursePack";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { getPhoneticsRegExp } from "~/composables/main/englishSound/phonetics";
+import { usePronunciation } from "~/composables/user/pronunciation";
 import { useStatement } from "./statement";
 
 export interface Statement {
@@ -34,11 +35,13 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const currentStatement = ref<Statement>();
   const { statementIndex, setupStatement } = useStatement();
+  const { getPhonetics } = usePronunciation();
 
   const { updateActiveCourseMap } = useActiveCourseMap();
 
   watchEffect(() => {
     currentStatement.value = currentCourse.value?.statements[statementIndex.value];
+    updateSoundmark();
   });
 
   const words = computed(() => {
@@ -94,6 +97,20 @@ export const useCourseStore = defineStore("course", () => {
     setupStatement(currentCourse);
   }
 
+  async function updateSoundmark() {
+    const phonetics: string[] = [];
+    for (const word of words.value) {
+      const phonetic = await getPhonetics(word);
+      if (phonetic) {
+        phonetics.push(phonetic);
+      }
+    }
+
+    if (currentStatement.value) {
+      currentStatement.value.soundmark = phonetics.join(" ");
+    }
+  }
+
   return {
     statementIndex,
     currentCourse,
@@ -110,5 +127,6 @@ export const useCourseStore = defineStore("course", () => {
     toNextStatement,
     resetStatementIndex,
     soundMarks,
+    updateSoundmark,
   };
 });
