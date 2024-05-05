@@ -91,10 +91,7 @@ function useUsername() {
       <Loading></Loading>
     </template>
     <template v-else-if="isShowSettingUsernameModal">
-      <dialog
-        class="modal"
-        :open="true"
-      >
+      <CommonModal :show-modal="true">
         <div class="modal-box">
           <h3 class="mb-4 text-lg font-bold">设置用户名</h3>
           <input
@@ -119,7 +116,7 @@ function useUsername() {
             </button>
           </div>
         </div>
-      </dialog>
+      </CommonModal>
     </template>
   </div>
 </template>

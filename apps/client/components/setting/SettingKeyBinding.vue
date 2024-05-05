@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref, watchEffect } from "vue";
+import { computed } from "vue";
 
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
@@ -12,23 +12,14 @@ const props = defineProps<{
 
 defineEmits(["close"]);
 
-const modalRef = ref<HTMLDialogElement | null>(null);
-
 const keys = computed(() => parseShortcutKeys(props.shortcutKeyStr));
-
-watchEffect(() => {
-  if (props.showModal) {
-    modalRef.value?.showModal();
-  } else {
-    modalRef.value?.close();
-  }
-});
 </script>
 
 <template>
-  <dialog
-    ref="modalRef"
-    class="modal"
+  <CommonModal
+    :show-modal="showModal"
+    :close-on-click-modal="true"
+    @close="$emit('close')"
   >
     <div class="modal-box mt-[-8vh] min-h-[156px] max-w-[48rem]">
       <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
@@ -56,13 +47,5 @@ watchEffect(() => {
         已有相同的按键绑定，请重新设置
       </div>
     </div>
-
-    <!-- click outside to close -->
-    <form
-      method="dialog"
-      class="modal-backdrop"
-    >
-      <button @click="$emit('close')"></button>
-    </form>
-  </dialog>
+  </CommonModal>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <dialog
-    :open="isShow"
-    class="modal invisible"
+  <CommonModal
+    :show-modal="isShow"
+    modal
   >
     <div
       ref="dialogBoxRef"
@@ -10,14 +10,12 @@
       <h3 class="text-lg font-bold">{{ title }}</h3>
       <p class="py-4">{{ content }}</p>
       <div class="modal-action">
-        <form method="dialog">
-          <button
-            @click="handleCancel"
-            class="cancel btn"
-          >
-            {{ cancelBtnText }}
-          </button>
-        </form>
+        <button
+          @click="handleCancel"
+          class="cancel btn"
+        >
+          {{ cancelBtnText }}
+        </button>
         <button
           v-if="confirmBtnText"
           class="confirm btn"
@@ -27,7 +25,7 @@
         </button>
       </div>
     </div>
-  </dialog>
+  </CommonModal>
 </template>
 
 <script setup lang="ts">

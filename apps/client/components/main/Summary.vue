@@ -1,75 +1,70 @@
 <template>
-  <div>
-    <dialog
-      className="modal mt-[-8vh]"
-      :open="showModal"
-    >
-      <div className="modal-box max-w-[48rem]">
-        <div class="relative">
-          <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
-          <button
-            tabindex="0"
-            class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-7 w-7 rounded-md p-0"
-            @click="soundSentence"
-          >
-            <span class="i-ph-speaker-simple-high h-full w-full"></span>
-          </button>
-        </div>
-
-        <div class="flex flex-col">
-          <div class="flex">
-            <span class="text-6xl font-bold">"</span>
-            <div class="flex-1 text-center text-xl leading-loose">
-              {{ enSentence }}
-            </div>
-            <span class="invisible text-6xl font-bold">"</span>
-          </div>
-
-          <div class="flex">
-            <span class="invisible text-6xl font-bold">"</span>
-            <div class="flex-1 text-center text-xl leading-loose">
-              {{ zhSentence }}
-            </div>
-            <span class="text-6xl font-bold">"</span>
-          </div>
-          <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
-          <p class="pl-14 text-base leading-loose text-gray-600">
-            {{
-              `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
-                courseTimer.calculateTotalTime(),
-              )} `
-            }}
-          </p>
-        </div>
-        <div className="modal-action">
-          <button
-            class="btn btn-primary"
-            @click="toShare"
-          >
-            生成打卡图
-          </button>
-          <button
-            class="btn"
-            @click="handleDoAgain"
-          >
-            再来一次
-          </button>
-
-          <button
-            class="btn"
-            @click="goToNextCourse"
-          >
-            {{ haveNextCourse || !isAuthenticated() ? "开始下一课" : "返回课程列表" }}
-            <kbd class="kbd"> ↵ </kbd>
-          </button>
-        </div>
+  <CommonModal :show-modal="showModal">
+    <div className="modal-box max-w-[48rem]">
+      <div class="relative">
+        <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
+        <button
+          tabindex="0"
+          class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-7 w-7 rounded-md p-0"
+          @click="soundSentence"
+        >
+          <span class="i-ph-speaker-simple-high h-full w-full"></span>
+        </button>
       </div>
-      <canvas
-        ref="confettiCanvasRef"
-        class="pointer-events-none absolute left-0 top-0 h-full w-full"
-      ></canvas>
-    </dialog>
-  </div>
+
+      <div class="flex flex-col">
+        <div class="flex">
+          <span class="text-6xl font-bold">"</span>
+          <div class="flex-1 text-center text-xl leading-loose">
+            {{ enSentence }}
+          </div>
+          <span class="invisible text-6xl font-bold">"</span>
+        </div>
+
+        <div class="flex">
+          <span class="invisible text-6xl font-bold">"</span>
+          <div class="flex-1 text-center text-xl leading-loose">
+            {{ zhSentence }}
+          </div>
+          <span class="text-6xl font-bold">"</span>
+        </div>
+        <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
+        <p class="pl-14 text-base leading-loose text-gray-600">
+          {{
+            `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
+              courseTimer.calculateTotalTime(),
+            )} `
+          }}
+        </p>
+      </div>
+      <div className="modal-action">
+        <button
+          class="btn btn-primary"
+          @click="toShare"
+        >
+          生成打卡图
+        </button>
+        <button
+          class="btn"
+          @click="handleDoAgain"
+        >
+          再来一次
+        </button>
+
+        <button
+          class="btn"
+          @click="goToNextCourse"
+        >
+          {{ haveNextCourse || !isAuthenticated() ? "开始下一课" : "返回课程列表" }}
+          <kbd class="kbd"> ↵ </kbd>
+        </button>
+      </div>
+    </div>
+    <canvas
+      ref="confettiCanvasRef"
+      class="pointer-events-none absolute left-0 top-0 h-full w-full"
+    ></canvas>
+  </CommonModal>
 </template>
 
 <script setup lang="ts">

@@ -15,14 +15,14 @@ const props = withDefaults(
     modal?: boolean;
     closeOnClickModal?: boolean;
     modalColor?: string;
-    offset?: number;
+    offset?: string;
   }>(),
   {
     showModal: false,
     modal: false,
     closeOnClickModal: false,
     modalColor: "rgba(0, 0, 0, 0.3)",
-    offset: 0,
+    offset: "-8vh",
   },
 );
 
@@ -69,9 +69,9 @@ defineExpose({
 <template>
   <dialog
     ref="modalRef"
-    class="modal mt-[-8vh]"
+    class="modal"
     :style="{
-      marginTop: `${offset}px`,
+      marginTop: offset,
     }"
     @click="onClick"
   >

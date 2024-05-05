@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { ref, watchEffect } from "vue";
-
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { usePronunciation } from "~/composables/user/pronunciation";
@@ -21,33 +19,22 @@ const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { showErrorTip, toggleShowErrorTip } = useErrorTip();
 
-const props = defineProps<{
+defineProps<{
   showModal: boolean;
 }>();
 
 defineEmits(["close"]);
-
-const modalRef = ref<HTMLDialogElement | null>(null);
-
-watchEffect(() => {
-  if (props.showModal) {
-    // modalRef.value?.showModal();
-  } else {
-    modalRef.value?.close();
-  }
-});
 </script>
 
 <template>
-  <dialog
-    ref="modalRef"
-    class="modal"
-    :open="showModal"
+  <CommonModal
+    :show-modal="showModal"
+    :close-on-click-modal="true"
+    @close="$emit('close')"
   >
     <div
-      class="modal-box relative mt-[-8vh] max-w-[48rem] bg-gray-300/20 p-8 placeholder-sky-200 shadow-even-xl shadow-purple-500/30"
+      class="modal-box relative max-w-[48rem] rounded-xl bg-gray-200/30 p-8 shadow-even-xl shadow-purple-500/30"
     >
-      <!-- Mask -->
       <div
         class="pointer-events-none absolute inset-0 z-[-1] backdrop-blur-md"
         style="mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))"
@@ -123,14 +110,7 @@ watchEffect(() => {
         />
       </section>
     </div>
-
-    <form
-      method="dialog"
-      class="modal-backdrop"
-    >
-      <button @click="$emit('close')"></button>
-    </form>
-  </dialog>
+  </CommonModal>
 </template>
 
 <style scoped>

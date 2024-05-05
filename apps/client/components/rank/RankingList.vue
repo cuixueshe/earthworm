@@ -1,19 +1,17 @@
 <template>
-  <dialog
+  <CommonModal
     id="rank-list"
-    class="modal"
-    :open="rankingStore.rankModal"
+    :show-modal="rankingStore.rankModal"
+    :close-on-click-modal="true"
+    @close="rankingStore.hideRankModal"
   >
     <div class="modal-box flex h-[568px] w-[420px] flex-col overflow-hidden px-4 pb-12">
-      <!-- close button -->
-      <form method="dialog">
-        <button
-          class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2"
-          @click="rankingStore.hideRankModal"
-        >
-          ✕
-        </button>
-      </form>
+      <button
+        class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2"
+        @click="rankingStore.hideRankModal"
+      >
+        ✕
+      </button>
 
       <!-- title -->
       <h2 class="mb-4 text-center text-xl font-bold">排行榜</h2>
@@ -65,15 +63,7 @@
         :rankingSelf="rankingStore.rankingSelf"
       />
     </div>
-
-    <!-- click outside to close -->
-    <form
-      method="dialog"
-      class="modal-backdrop"
-    >
-      <button @click="rankingStore.hideRankModal"></button>
-    </form>
-  </dialog>
+  </CommonModal>
 </template>
 
 <script setup lang="ts">
