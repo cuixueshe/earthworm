@@ -28,7 +28,6 @@ import MessageBox from "./MessageBox/MessageBox.vue";
 
 const { isMessageShow, messageContent } = useDeviceTip();
 const { currentGameMode } = useGameMode();
-console.log(2222);
 
 onMounted(() => {
   courseTimer.reset();

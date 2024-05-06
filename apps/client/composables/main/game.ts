@@ -42,10 +42,7 @@ export function useDeviceTip() {
   const { isLandscape } = useIsLandscape();
 
   watchEffect(() => {
-    isMessageShow.value =
-      (isIpad.value && !isLandscape.value) || isMobile.value;
-
-    console.log(isIpad.value, isLandscape.value, isMobile.value, 222);
+    isMessageShow.value = (isIpad.value && !isLandscape.value) || isMobile.value;
 
     if (isMobile.value) {
       messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";
