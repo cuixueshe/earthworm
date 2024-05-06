@@ -190,7 +190,7 @@
 		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /'kwaɪət/"
 	},
 	{
-		"chinese": "你必须保持安静当你（现在）正在钓鱼的时候",
+		"chinese": "当你（现在）正在钓鱼的时候你必须保持安静",
 		"english": "you have to keep quiet when you are fishing",
 		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /'kwaɪət/ /wɛn/ /ju/ /ɚ/ /'fɪʃɪŋ/"
 	},
@@ -270,7 +270,7 @@
 		"soundmark": "/faɪv/ /'mɪnɪts/"
 	},
 	{
-		"chinese": "她不可以保守一个秘密五分钟",
+		"chinese": "她连五分钟的秘密都守不住",
 		"english": "she can't keep a secret for five minutes",
 		"soundmark": "/ʃi/ /kænt/ /kip/ /ə/ /'sikrət/ /fɝ/ /faɪv/ /'mɪnɪts/"
 	},
@@ -285,7 +285,7 @@
 		"soundmark": "/ʃi/ /sɛd/"
 	},
 	{
-		"chinese": "她（过去）说她不可以保守一个秘密五分钟",
+		"chinese": "她（过去）说她连五分钟的秘密都守不住",
 		"english": "she said she can't keep a secret for five minutes",
 		"soundmark": "/ʃi/ /sɛd/ /ʃi/ /kænt/ /kip/ /ə/ /'sikrət/ /fɝ/ /faɪv/ /'mɪnɪts/"
 	},
@@ -375,7 +375,7 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "它是困难的",
+		"chinese": "这是困难的",
 		"english": "it is difficult",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/"
 	},
@@ -415,12 +415,12 @@
 		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "它是困难的",
+		"chinese": "这是困难的",
 		"english": "it is difficult",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/"
 	},
 	{
-		"chinese": "在工作和生活之间保持一个好的平衡（它）是困难的",
+		"chinese": "在工作和生活之间保持一个好的平衡是困难的",
 		"english": "it is difficult to keep a good balance between work and life",
 		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
@@ -430,7 +430,7 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "在工作和生活之间保持一个好的平衡（它）是非常困难的",
+		"chinese": "在工作和生活之间保持一个好的平衡是非常困难的",
 		"english": "it is very difficult to keep a good balance between work and life",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'dɪfɪkəlt/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
@@ -465,7 +465,7 @@
 		"soundmark": "/ə'baʊt/ /ɪt/"
 	},
 	{
-		"chinese": "对于那件事保持沉默",
+		"chinese": "对那件事保持沉默",
 		"english": "to keep quiet about it",
 		"soundmark": "/tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /ɪt/"
 	},
@@ -480,7 +480,7 @@
 		"soundmark": "/aɪ/ /told/ /ju/"
 	},
 	{
-		"chinese": "我（过去）告诉你对于那件事保持沉默",
+		"chinese": "我（过去）告诉你要对那件事保持沉默",
 		"english": "I told you to keep quiet about it",
 		"soundmark": "/aɪ/ /told/ /ju/ /tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /ɪt/"
 	},
@@ -510,7 +510,7 @@
 		"soundmark": "/tə/ /kip/ /'kwaɪət/"
 	},
 	{
-		"chinese": "对于我的计划保持沉默",
+		"chinese": "对我的计划保持沉默",
 		"english": "to keep quiet about my plan",
 		"soundmark": "/tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /maɪ/ /plæn/"
 	},
@@ -520,7 +520,7 @@
 		"soundmark": "/aɪ/ /told/ /ju/"
 	},
 	{
-		"chinese": "我（过去）告诉你对于我的计划保持沉默",
+		"chinese": "我（过去）告诉你对我的计划保持沉默",
 		"english": "I told you to keep quiet about my plan",
 		"soundmark": "/aɪ/ /told/ /ju/ /tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /maɪ/ /plæn/"
 	},
@@ -540,7 +540,7 @@
 		"soundmark": "/ju/ /'prɑmɪst/"
 	},
 	{
-		"chinese": "你（过去）承诺对于我的计划保持沉默",
+		"chinese": "你（过去）承诺对我的计划保持沉默",
 		"english": "you promised to keep quiet about my plan",
 		"soundmark": "/ju/ /'prɑmɪst/ /tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /maɪ/ /plæn/"
 	},
@@ -685,7 +685,7 @@
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我（过去）是年轻的时候",
+		"chinese": "当我（过去）年轻的时候",
 		"english": "when I was young",
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
@@ -695,7 +695,7 @@
 		"soundmark": "/ˈjʌŋɡər/"
 	},
 	{
-		"chinese": "当我是更年轻的时候",
+		"chinese": "当我更年轻的时候",
 		"english": "when I was younger",
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/"
 	},
@@ -760,7 +760,7 @@
 		"soundmark": "/ðæt/"
 	},
 	{
-		"chinese": "那个我将会每天学英语",
+		"chinese": "（那个）我将会每天学英语",
 		"english": "that I will learn English every day",
 		"soundmark": "/ðæt/ /aɪ/ /wɪl/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
 	},
@@ -770,7 +770,7 @@
 		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/"
 	},
 	{
-		"chinese": "当我年轻一点的时候我对自己做了一个承诺（那个）我将会每天学英语",
+		"chinese": "当我年轻一点的时候我对自己做了一个承诺我将会每天学英语",
 		"english": "I made a promise to myself when I was younger that I will learn English every day",
 		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/ /ðæt/ /aɪ/ /wɪl/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
 	},
@@ -780,7 +780,7 @@
 		"soundmark": "/aɪ/ /wʊd/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
 	},
 	{
-		"chinese": "当我年轻一点的时候我对自己做了一个承诺（那个）我过去将会每天学英语",
+		"chinese": "当我年轻一点的时候我对自己做了一个承诺我将会每天学英语",
 		"english": "I made a promise to myself when I was younger that I would learn English every day",
 		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/ /aɪ/ /wʊd/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
 	}

@@ -10,7 +10,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某件事",
+		"chinese": "一些重要的事情",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -25,7 +25,7 @@
 		"soundmark": "/tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "告诉你重要的某件事",
+		"chinese": "告诉你一些重要的事",
 		"english": "to tell you something important",
 		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -35,7 +35,7 @@
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我需要告诉你重要的某件事",
+		"chinese": "我需要告诉你一些重要的事情",
 		"english": "I need to tell you something important",
 		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -50,12 +50,12 @@
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "重要的某个东西",
+		"chinese": "一些重要的东西",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我需要给你重要的某个东西",
+		"chinese": "我需要给你一些重要的东西",
 		"english": "I need to give you something important",
 		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɪv/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -275,7 +275,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我可以给你我的电话号码如果你想要知道它",
+		"chinese": "如果你想知道，我可以给你我的电话号码",
 		"english": "I can give you my phone number if you want to know it",
 		"soundmark": "/aɪ/ /kæn/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/ /ɪf/ /ju/ /wɑnt/ /tə/ /no/ /ɪt/"
 	},
@@ -310,7 +310,7 @@
 		"soundmark": "/ju/ /dont/ /wɑnt/ /tə/ /no/ /ɪt/"
 	},
 	{
-		"chinese": "我将不会给你我的电话号码如果你不想知道它",
+		"chinese": "如果你不想知道，我将不会告诉你我的电话号码",
 		"english": "I will not give you my phone number if you don't want to know it",
 		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /ɡɪv/ /ju/ /maɪ/ /fon/ /'nʌmbɚ/ /ɪf/ /ju/ /dont/ /wɑnt/ /tə/ /no/ /ɪt/"
 	},
@@ -440,7 +440,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -450,7 +450,7 @@
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是重要的对我来说",
+		"chinese": "这对我来说是重要的",
 		"english": "it is important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -460,7 +460,7 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"chinese": "这对我来说非常重要",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -470,12 +470,12 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为它是非常重要的对我来说",
+		"chinese": "因为这对我来说非常重要",
 		"english": "because it is very important for me",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我希望你可以给我她的电话号码因为这件事是非常重要的对我来说",
+		"chinese": "我希望你可以给我她的电话号码，因为这对我来说非常重要",
 		"english": "I hope you can give me her phone number because it is very important for me",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /hɚ/ /fon/ /'nʌmbɚ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -515,17 +515,17 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"chinese": "这对我来说非常重要",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "因为它是非常重要的对我来说",
+		"chinese": "因为这对我来说非常重要",
 		"english": "because it is very important for me",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我希望你可以给我搭把手因为它是非常重要的对我来说",
+		"chinese": "我希望你能帮我一把，因为这对我来说非常重要",
 		"english": "I hope you can give me a hand because it is very important for me",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
@@ -560,7 +560,7 @@
 		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
 	{
-		"chinese": "我希望你可以给我搭把手因为它是非常重要的对我来说而且我需要你现在帮助我",
+		"chinese": "我希望你能帮我一把，因为这对我来说非常重要，我需要你现在帮助我",
 		"english": "I hope you can give me a hand because it is very important for me and I need you to help me now",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /ənd/ /aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
@@ -620,7 +620,7 @@
 		"soundmark": "/ə'baʊt/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "我希望你可以给我关于我的工作的一些建议",
+		"chinese": "我希望你可以就我的工作给我一些建议",
 		"english": "I hope you can give me some advice about my work",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /maɪ/ /wɝk/"
 	},
@@ -650,7 +650,7 @@
 		"soundmark": "/ə'baʊt/ /jʊr/ /wɝk/"
 	},
 	{
-		"chinese": "我想要给你关于你的工作的一些建议",
+		"chinese": "我想就你的工作给你一些建议",
 		"english": "I want to give you some advice about your work",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡɪv/ /ju/ /səm/ /əd'vaɪs/ /ə'baʊt/ /jʊr/ /wɝk/"
 	},
@@ -665,7 +665,7 @@
 		"soundmark": "/ə'baʊt/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "我想要你给我关于我的工作的一些建议",
+		"chinese": "我想你就我的工作给我一些建议",
 		"english": "I want you to give me some advice about my work",
 		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /maɪ/ /wɝk/"
 	},
@@ -685,12 +685,12 @@
 		"soundmark": "/tə/ /ɡɪv/ /hɪm/"
 	},
 	{
-		"chinese": "你可以给他关于他的工作的一些建议",
+		"chinese": "你可以就他的工作给他一些建议",
 		"english": "you can give him some advice about his work",
 		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /hɪz/ /wɝk/"
 	},
 	{
-		"chinese": "我希望你可以给他关于他的工作的一些建议",
+		"chinese": "我希望你可以就他的工作给他一些建议",
 		"english": "I hope you can give him some advice about his work",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /hɪz/ /wɝk/"
 	},
@@ -710,12 +710,12 @@
 		"soundmark": "/tə/ /ɡɪv/ /hɚ/"
 	},
 	{
-		"chinese": "我希望你可以给她关于她的工作的一些建议",
+		"chinese": "我希望你可以就她的工作给她一些建议",
 		"english": "I hope you can give her some advice about her work",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /hɚ/ /səm/ /əd'vaɪs/ /ə'baʊt/ /hɚ/ /wɝk/"
 	},
 	{
-		"chinese": "我希望她可以给我关于我的工作的一些建议",
+		"chinese": "我希望她可以就我的工作给我一些建议",
 		"english": "I hope she can give me some advice about my work",
 		"soundmark": "/aɪ/ /hop/ /ʃi/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/ /ə'baʊt/ /maɪ/ /wɝk/"
 	},

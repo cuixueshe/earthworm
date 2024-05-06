@@ -40,7 +40,7 @@
 		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "我(已经)是一名老师了",
+		"chinese": "我(已经)成为一名老师了",
 		"english": "I have been a teacher",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə/ /'titʃɚ/"
 	},
@@ -55,7 +55,7 @@
 		"soundmark": "/faɪv/ /jɪrz/"
 	},
 	{
-		"chinese": "我(已经)是一名老师五年了",
+		"chinese": "我(已经)成为一名老师五年了",
 		"english": "I have been a teacher for five years",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə/ /'titʃɚ/ /fɚ/ /faɪv/ /jɪrz/"
 	},
@@ -65,7 +65,7 @@
 		"soundmark": "/sɪns/"
 	},
 	{
-		"chinese": "我自从2019年(已经)是一名老师了",
+		"chinese": "我自从2019年以来(已经)成为了一名老师",
 		"english": "I have been a teacher since 2019",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə/ /'titʃɚ/ /sɪns/ /'twɛnti/ /ˌnaɪn'tin/"
 	},
@@ -80,12 +80,12 @@
 		"soundmark": "/hi/ /ɪz/ /ə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "他(已经)是一名医生了",
+		"chinese": "他(已经)成为一名医生了",
 		"english": "he has been a doctor",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "他(已经)是一名医生15年了",
+		"chinese": "他(已经)成为一名医生15年了",
 		"english": "he has been a doctor for 15 years",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/ /fɚ/ /ˌfɪfˈtin/ /jɪrz/"
 	},
@@ -175,7 +175,7 @@
 		"soundmark": "/sɪns/ /ˈkɪndɚɡɑrtn/"
 	},
 	{
-		"chinese": "他们自从幼儿园(已经)是朋友了",
+		"chinese": "他们自从幼儿园以来(已经)就是朋友了",
 		"english": "they have been friends since kindergarten",
 		"soundmark": "/ðe/ /hæv/ /bɪn/ /frɛndz/ /sɪns/ /ˈkɪndɚɡɑrtn/"
 	},
@@ -210,7 +210,7 @@
 		"soundmark": "/sɪns/ /ˈtʃaɪldhʊd/"
 	},
 	{
-		"chinese": "我们自从童年(已经)是朋友了",
+		"chinese": "我们自从童年以来(已经)就是朋友了",
 		"english": "we have been friends since childhood",
 		"soundmark": "/wi/ /hæv/ /bɪn/ /frɛndz/ /sɪns/ /ˈtʃaɪldhʊd/"
 	},

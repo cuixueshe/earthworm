@@ -120,12 +120,12 @@
 		"soundmark": "/ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "我(过去)正在在镜子里看着我自己",
+		"chinese": "我(过去)正在镜子里看着我自己",
 		"english": "I was looking at myself in the mirror",
 		"soundmark": "/aɪ/ /wəz/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "我(现在)正在在镜子里看着我自己",
+		"chinese": "我(现在)正在镜子里看着我自己",
 		"english": "I am looking at myself in the mirror",
 		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
@@ -155,12 +155,12 @@
 		"soundmark": "/ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "你(现在)正在在镜子里看着你自己",
+		"chinese": "你(现在)正在镜子里看着你自己",
 		"english": "you are looking at yourself in the mirror",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "你(过去)正在在镜子里看着你自己",
+		"chinese": "你(过去)正在镜子里看着你自己",
 		"english": "you were looking at yourself in the mirror",
 		"soundmark": "/ju/ /wɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
@@ -195,7 +195,7 @@
 		"soundmark": "/stɪl/"
 	},
 	{
-		"chinese": "他们(现在)仍然正在看着我们",
+		"chinese": "他们(现在)仍然在看着我们",
 		"english": "they are still looking at us",
 		"soundmark": "/ðe/ /ɚ/ /stɪl/ /ˈlʊkɪŋ/ /ət/ /ʌs/"
 	},
@@ -220,7 +220,7 @@
 		"soundmark": "/fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "为了一个新的工作(有意识地)看",
+		"chinese": "去寻找一份新的工作",
 		"english": "to look for a new job",
 		"soundmark": "/tə/ /lʊk/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
@@ -230,7 +230,7 @@
 		"soundmark": "/tə/ /lʊk/ /fɝ/"
 	},
 	{
-		"chinese": "寻找一个新的工作",
+		"chinese": "去寻找一份新的工作",
 		"english": "to look for a new job",
 		"soundmark": "/tə/ /lʊk/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
@@ -285,7 +285,7 @@
 		"soundmark": "/stɪl/"
 	},
 	{
-		"chinese": "我(现在)仍然正在寻找一个新的工作",
+		"chinese": "我(现在)仍然在寻找一个新的工作",
 		"english": "I am still looking for a new job",
 		"soundmark": "/aɪ/ /æm/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
@@ -340,7 +340,7 @@
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "我不能找到我的钥匙",
+		"chinese": "我找不到我的钥匙",
 		"english": "I can't find my keys",
 		"soundmark": "/aɪ/ /kænt/ /faɪnd/ /maɪ/ /kiz/"
 	},
@@ -350,17 +350,17 @@
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是我不能找到我的钥匙",
+		"chinese": "但是我找不到我的钥匙",
 		"english": "but I can't find my keys",
 		"soundmark": "/bʌt/ /aɪ/ /kænt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "但是我(过去)不能找到我的钥匙",
+		"chinese": "但是我(过去)找不到我的钥匙",
 		"english": "but I couldn't find my keys",
 		"soundmark": "/bʌt/ /aɪ/ /kʊdnt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "我(过去)正在寻找我的钥匙但是我(过去)不能找到我的钥匙",
+		"chinese": "我(过去)正在寻找我的钥匙但是我(过去)找不到我的钥匙",
 		"english": "I was looking for my keys but I couldn't find my keys",
 		"soundmark": "/aɪ/ /wəz/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /maɪ/ /kiz/ /bʌt/ /aɪ/ /kʊdnt/ /faɪnd/ /maɪ/ /kiz/"
 	},
@@ -370,7 +370,7 @@
 		"soundmark": "/ðəm/"
 	},
 	{
-		"chinese": "我(过去)正在寻找我的钥匙但是我(过去)不能找到它们",
+		"chinese": "我(过去)正在寻找我的钥匙但是我(过去)找不到它们",
 		"english": "I was looking for my keys but I couldn't find them",
 		"soundmark": "/aɪ/ /wəz/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /maɪ/ /kiz/ /bʌt/ /aɪ/ /kʊdnt/ /faɪnd/ /ðəm/"
 	},

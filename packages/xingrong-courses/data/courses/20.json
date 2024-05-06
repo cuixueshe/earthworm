@@ -110,7 +110,7 @@
 		"soundmark": "/ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "我们(现在)正在在超市购物",
+		"chinese": "我们(现在)正在超市购物",
 		"english": "we are shopping at the supermarket",
 		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
@@ -120,12 +120,12 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我们现在正在在超市购物",
+		"chinese": "我们现在正在超市购物",
 		"english": "we are shopping at the supermarket now",
 		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /naʊ/"
 	},
 	{
-		"chinese": "我们(过去)正在在超市购物",
+		"chinese": "我们(过去)正在超市购物",
 		"english": "we were shopping at the supermarket",
 		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
@@ -175,12 +175,12 @@
 		"soundmark": "/wɛn/ /ju/ /kɔld/ /mi/ /læst/ /ˈsʌnde/"
 	},
 	{
-		"chinese": "我们(过去)正在在超市购物当你上周日打电话给我的时候",
+		"chinese": "当你上周日打电话给我的时候我们(过去)正在超市购物",
 		"english": "we were shopping at the supermarket when you called me last Sunday",
 		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /wɛn/ /ju/ /kɔld/ /mi/ /læst/ /ˈsʌnde/"
 	},
 	{
-		"chinese": "我们上周日正在在超市购物",
+		"chinese": "我们上周日正在超市购物",
 		"english": "we were shopping at the supermarket last Sunday",
 		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /læst/ /ˈsʌnde/"
 	},
@@ -200,7 +200,7 @@
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我们将会正在购物",
+		"chinese": "我们将会去购物",
 		"english": "we will be shopping",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'ʃɑpɪŋ/"
 	},
@@ -210,7 +210,7 @@
 		"soundmark": "/ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
 	{
-		"chinese": "我们将会正在在超市购物",
+		"chinese": "我们将会去超市购物",
 		"english": "we will be shopping at the supermarket",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/"
 	},
@@ -230,7 +230,7 @@
 		"soundmark": "/nɛkst/ /ˈmʌnde/"
 	},
 	{
-		"chinese": "我们将会在下周一正在在超市购物",
+		"chinese": "我们将会在下周一去超市购物",
 		"english": "we will be shopping at the supermarket next Monday",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /nɛkst/ /ˈmʌnde/"
 	},
@@ -275,12 +275,12 @@
 		"soundmark": "/fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
-		"chinese": "我需要为了我的朋友等待",
+		"chinese": "我需要等待我的朋友",
 		"english": "I need to wait for my friend",
 		"soundmark": "/aɪ/ /nid/ /tə/ /wet/ /fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
-		"chinese": "我为了我的朋友等待",
+		"chinese": "我等待我的朋友",
 		"english": "I wait for my friend",
 		"soundmark": "/aɪ/ /wet/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -315,7 +315,7 @@
 		"soundmark": "/fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
-		"chinese": "我(现在)正在为了我的朋友等待",
+		"chinese": "我(现在)正在等待我的朋友",
 		"english": "I am waiting for my friend",
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -345,7 +345,7 @@
 		"soundmark": "/ət/ /ðə/ /bʌs/ /stɑp/"
 	},
 	{
-		"chinese": "我在公交车站(现在)正在为了我的朋友等待",
+		"chinese": "我正在公交车站(现在)等待我的朋友",
 		"english": "I am waiting for my friend at the bus stop",
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/"
 	},
@@ -355,12 +355,12 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我现在在公交车站正在为了我的朋友等待",
+		"chinese": "我现在正在公交车站等待我的朋友",
 		"english": "I am waiting for my friend at the bus stop now",
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /naʊ/"
 	},
 	{
-		"chinese": "我在公交车站(过去)正在为了我的朋友等待",
+		"chinese": "我在公交车站(过去)等待我的朋友",
 		"english": "I was waiting for my friend at the bus stop",
 		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/"
 	},
@@ -370,7 +370,7 @@
 		"soundmark": "/'jɛstɚde/"
 	},
 	{
-		"chinese": "我昨天在公交车站正在为了我的朋友等待",
+		"chinese": "我昨天在公交车站等待我的朋友",
 		"english": "I was waiting for my friend at the bus stop yesterday",
 		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /'jɛstɚde/"
 	},
@@ -410,7 +410,7 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "我在昨天这个时候在公交车站正在为了我的朋友等待",
+		"chinese": "昨天这个时候我正在公交车站等待我的朋友",
 		"english": "I was waiting for my friend at the bus stop at this time yesterday",
 		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
@@ -445,17 +445,17 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "我在前天这个时候在公交车站正在为了我的朋友等待",
+		"chinese": "前天这个时候我正在公交车站等待我的朋友",
 		"english": "I was waiting for my friend at the bus stop at this time the day before yesterday",
 		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "我(过去)正在为了我的朋友等待",
+		"chinese": "我(过去)正在等待我的朋友",
 		"english": "I was waiting for my friend",
 		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
-		"chinese": "我(现在)正在为了我的朋友等待",
+		"chinese": "我(现在)正在等待我的朋友",
 		"english": "I am waiting for my friend",
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -465,7 +465,7 @@
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我将会正在为了我的朋友等待",
+		"chinese": "我将等待我的朋友",
 		"english": "I will be waiting for my friend",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -490,7 +490,7 @@
 		"soundmark": "/ət/ /ðə/ /bʌs/ /stɑp/"
 	},
 	{
-		"chinese": "我将会在公交车站正在为了我的朋友等待",
+		"chinese": "我将会在公交车站等待我的朋友",
 		"english": "I will be waiting for my friend at the bus stop",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/"
 	},
@@ -510,7 +510,7 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "我将会在明天这个时候在公交车站正在为了我的朋友等待",
+		"chinese": "明天这个时候我将会在公交车站等待我的朋友",
 		"english": "I will be waiting for my friend at the bus stop at this time tomorrow",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
@@ -545,12 +545,12 @@
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /'æftɚ/ /tə'mɔro/"
 	},
 	{
-		"chinese": "我将会在后天这个时候在公交车站正在为了我的朋友等待",
+		"chinese": "后天这个时候我将会在公交车站等待我的朋友",
 		"english": "I will be waiting for my friend at the bus stop at this time the day after tomorrow",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /ət/ /ðɪs/ /taɪm/ /ðə/ /de/ /'æftɚ/ /tə'mɔro/"
 	},
 	{
-		"chinese": "我将会为了我的朋友正在等待",
+		"chinese": "我将会等待我的朋友",
 		"english": "I will be waiting for my friend",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -560,7 +560,7 @@
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他将会为了我的朋友正在等待",
+		"chinese": "他将会等待我的朋友",
 		"english": "he will be waiting for my friend",
 		"soundmark": "/hi/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -570,12 +570,12 @@
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们将会为了我的朋友正在等待",
+		"chinese": "他们将会等待我的朋友",
 		"english": "they will be waiting for my friend",
 		"soundmark": "/ðe/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
-		"chinese": "我(现在)正在为了我的朋友等待",
+		"chinese": "我(现在)正在等待我的朋友",
 		"english": "I am waiting for my friend",
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
@@ -600,7 +600,7 @@
 		"soundmark": "/fɝ/ /ju/"
 	},
 	{
-		"chinese": "我(现在)正在为了你等待",
+		"chinese": "我(现在)正在等你",
 		"english": "I am waiting for you",
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /ju/"
 	},
@@ -660,7 +660,7 @@
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我将会正在等你问我那个问题",
+		"chinese": "我将会等你问我那个问题",
 		"english": "I will be waiting for you to ask me that question",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /ju/ /tə/ /æsk/ /mi/ /ðæt/ /'kwɛstʃən/"
 	}

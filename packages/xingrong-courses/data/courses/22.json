@@ -395,7 +395,7 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我(现在)正在尝试解决我们现在正在面对的这个麻烦",
+		"chinese": "我(现在)正在尝试解决我们现在面对的这个麻烦",
 		"english": "I am trying to solve the problem we are facing now",
 		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sɑlv/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/ /naʊ/"
 	},
@@ -450,7 +450,7 @@
 		"soundmark": "/ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "我(现在)正在解决我们(现在)正在面对的这个麻烦",
+		"chinese": "我(现在)正在解决我们(现在)面对的这个麻烦",
 		"english": "I am solving the problem we are facing",
 		"soundmark": "/aɪ/ /æm/ /sɑlvɪŋ/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/"
 	},
@@ -460,7 +460,7 @@
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我(现在)正在解决我们现在正在面对的这个麻烦",
+		"chinese": "我(现在)正在解决我们现在面对的这个麻烦",
 		"english": "I am solving the problem we are facing now",
 		"soundmark": "/aɪ/ /æm/ /sɑlvɪŋ/ /ðə/ /'prɑbləm/ /wi/ /ɚ/ /'fesɪŋ/ /naʊ/"
 	},
@@ -495,7 +495,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "是否我们可以一起解决这个麻烦",
+		"chinese": "我们是否可以一起解决这个麻烦",
 		"english": "if we can solve the problem together",
 		"soundmark": "/ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
 	},
@@ -505,7 +505,7 @@
 		"soundmark": "/aɪ/ /'wʌndɚ/"
 	},
 	{
-		"chinese": "我疑惑是否我们可以一起解决这个麻烦",
+		"chinese": "我疑惑我们是否可以一起解决这个麻烦",
 		"english": "I wonder if we can solve the problem together",
 		"soundmark": "/aɪ/ /'wʌndɚ/ /ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
 	},
@@ -620,12 +620,12 @@
 		"soundmark": "/aɪ/ /wəz/ /'wʌndərɪŋ/"
 	},
 	{
-		"chinese": "是否我们可以一起解决这个麻烦",
+		"chinese": "我们是否可以一起解决这个麻烦",
 		"english": "if we can solve the problem together",
 		"soundmark": "/ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我(过去)正在疑惑是否我们可以一起解决这个麻烦",
+		"chinese": "我(过去)正在疑惑我们是否可以一起解决这个麻烦",
 		"english": "I was wondering if we can solve the problem together",
 		"soundmark": "/aɪ/ /wəz/ /'wʌndərɪŋ/ /ɪf/ /wi/ /kən/ /sɑlv/ /ðə/ /'prɑbləm/ /tə'ɡɛðɚ/"
 	},

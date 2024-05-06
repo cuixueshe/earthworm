@@ -200,7 +200,7 @@
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "我(过去)没有注意那个当我以前在这里的时候",
+		"chinese": "当我以前在这里的时候我(过去)没有注意那个",
 		"english": "I didn't notice that when I was here before",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/ /wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
 	},
@@ -220,7 +220,7 @@
 		"soundmark": "/rɔŋ/"
 	},
 	{
-		"chinese": "错误的某个东西",
+		"chinese": "某些错误的东西",
 		"english": "something wrong",
 		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/"
 	},
@@ -230,7 +230,7 @@
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "错误的某个东西在那里",
+		"chinese": "某些错误的东西在那里",
 		"english": "something wrong is there",
 		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/ /ɪz/ /ðɛr/"
 	},
@@ -240,7 +240,7 @@
 		"soundmark": "/ðɛr/ /ɪz/"
 	},
 	{
-		"chinese": "存在错误的某个东西",
+		"chinese": "存在某些错误的东西",
 		"english": "there is something wrong",
 		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/"
 	},
@@ -250,12 +250,12 @@
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "这里有错误的某个东西",
+		"chinese": "这有某些错误的东西",
 		"english": "there is something wrong here",
 		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
 	},
 	{
-		"chinese": "这里(过去)有错误的某个东西",
+		"chinese": "这里(过去)有某些错误的东西",
 		"english": "there was something wrong here",
 		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
 	},
@@ -265,7 +265,7 @@
 		"soundmark": "/aɪ/ /ˈnotɪst/"
 	},
 	{
-		"chinese": "我(过去)注意到这里(过去)有错误的某个东西",
+		"chinese": "我(过去)注意到这里(过去)有某些错误的东西",
 		"english": "I noticed there was something wrong here",
 		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
 	},
@@ -275,7 +275,7 @@
 		"soundmark": "/ðæt/"
 	},
 	{
-		"chinese": "我(过去)注意到(那个)这里(过去)有错误的某个东西",
+		"chinese": "我(过去)注意到(那个)这里(过去)有某些错误的东西",
 		"english": "I noticed that there was something wrong here",
 		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
 	},
@@ -290,12 +290,12 @@
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "不同的某个东西",
+		"chinese": "一些不同",
 		"english": "something different",
 		"soundmark": "/'sʌmθɪŋ/ /'dɪfrənt/"
 	},
 	{
-		"chinese": "存在不同的某个东西",
+		"chinese": "存在一些不同",
 		"english": "there is something different",
 		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/"
 	},
@@ -305,12 +305,12 @@
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "这里有不同的某个东西",
+		"chinese": "这里有一些不同",
 		"english": "there is something different here",
 		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
 	},
 	{
-		"chinese": "这里(过去)有不同的某个东西",
+		"chinese": "这里(过去)有一些不同",
 		"english": "there was something different here",
 		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
 	},
@@ -320,7 +320,7 @@
 		"soundmark": "/aɪ/ /ˈnotɪst/"
 	},
 	{
-		"chinese": "我(过去)注意到这里(过去)存在不同的某个东西",
+		"chinese": "我(过去)注意到这里(过去)存在一些不同",
 		"english": "I noticed there was something different here",
 		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
 	},
@@ -330,7 +330,7 @@
 		"soundmark": "/ðæt/"
 	},
 	{
-		"chinese": "我(过去)注意到(那个)这里(过去)存在不同的某个东西",
+		"chinese": "我(过去)注意到(那个)这里(过去)存在一些不同",
 		"english": "I noticed that there was something different here",
 		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
 	},
@@ -365,7 +365,7 @@
 		"soundmark": "/bɪ'twin/ /ju/ /ənd/ /mi/"
 	},
 	{
-		"chinese": "在你和我之间的不同",
+		"chinese": "你和我之间的不同",
 		"english": "difference between you and me",
 		"soundmark": "/'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
 	},
@@ -380,7 +380,7 @@
 		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/"
 	},
 	{
-		"chinese": "在你和我之间的一个大的不同",
+		"chinese": "你和我之间的一个大的不同",
 		"english": "a big difference between you and me",
 		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
 	},
@@ -390,7 +390,7 @@
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "在你和我之间的一个大的不同在那里",
+		"chinese": "你和我之间的一个大的不同在那里",
 		"english": "a big difference between you and me is there",
 		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/ /ɪz/ /ðɛr/"
 	},
@@ -400,7 +400,7 @@
 		"soundmark": "/ðɛr/ /ɪz/"
 	},
 	{
-		"chinese": "存在在你和我之间的一个大的不同",
+		"chinese": "你和我之间存在一个大的不同",
 		"english": "there is a big difference between you and me",
 		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
 	},
@@ -435,7 +435,7 @@
 		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/"
 	},
 	{
-		"chinese": "存在在一个武器和一个工具之间的一个大的不同",
+		"chinese": "在一个武器和一个工具之间存在一个大的不同",
 		"english": "there is a big difference between a weapon and a tool",
 		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
 	},
@@ -575,7 +575,7 @@
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "足够年龄大",
+		"chinese": "年龄足够大",
 		"english": "old enough",
 		"soundmark": "/old/ /ɪ'nʌf/"
 	},
@@ -585,12 +585,12 @@
 		"soundmark": "/ju/ /ɚ/"
 	},
 	{
-		"chinese": "你是足够年龄大的",
+		"chinese": "你是年龄足够大的",
 		"english": "you are old enough",
 		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "你是年龄大的足够分辨是非",
+		"chinese": "你年龄足够大了，能分辨是非了",
 		"english": "you are old enough to tell the difference between right and wrong",
 		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	},

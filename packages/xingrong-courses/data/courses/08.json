@@ -100,7 +100,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "他们只是想要知道是否我打算和你一起待在这里",
+		"chinese": "他们只想知道我是否打算和你一起待在这里",
 		"english": "they just want to know if I plan to stay here with you",
 		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
@@ -120,7 +120,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "他们只是想要知道原因为什么我不打算和你一起待在这里",
+		"chinese": "他们只是想要知道为什么我不打算和你一起待在这里的原因",
 		"english": "they just want to know the reason why I don't plan to stay here with you",
 		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/ /waɪ/ /aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
@@ -570,7 +570,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否你打算为我支付账单",
+		"chinese": "我想要知道你是否打算为我支付账单",
 		"english": "I want to know if you plan to pay the bill for me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
@@ -610,7 +610,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "这件事是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -620,7 +620,7 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "这件事是非常重要的",
+		"chinese": "这是非常重要的",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -630,12 +630,12 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为这件事是非常重要的",
+		"chinese": "因为这是非常重要的",
 		"english": "because it is very important",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我打算为他支付账单因为这件事是非常重要的",
+		"chinese": "我打算为他支付账单因为这是非常重要的",
 		"english": "I plan to pay the bill for him because it is very important",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -665,7 +665,7 @@
 		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我打算为他支付账单因为这件事是非常重要的而且我需要做这件事",
+		"chinese": "我打算为他支付账单因为这是非常重要的而且我需要做这件事",
 		"english": "I plan to pay the bill for him because it is very important and I need to do it",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},

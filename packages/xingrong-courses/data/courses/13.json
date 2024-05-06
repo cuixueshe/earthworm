@@ -440,12 +440,12 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它（过去）是重要的",
+		"chinese": "这（过去）是重要的",
 		"english": "it was important",
 		"soundmark": "/ɪt/ /wəz/ /ɪm'pɔrtnt/"
 	},
@@ -455,7 +455,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为它（过去）是重要的",
+		"chinese": "因为这（过去）是重要的",
 		"english": "because it was important",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
 	},
@@ -465,7 +465,7 @@
 		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相因为它（过去）是重要的",
+		"chinese": "他（过去）告诉我他（过去）需要知道真相因为这（过去）是重要的",
 		"english": "he told me he needed to know the truth because it was important",
 		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
 	},
@@ -525,7 +525,7 @@
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我（过去）是年轻的时候",
+		"chinese": "当我（过去）年轻的时候",
 		"english": "when I was young",
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
@@ -535,7 +535,7 @@
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师当我（过去）是年轻的时候",
+		"chinese": "我（过去）想要成为一个老师当我（过去）年轻的时候",
 		"english": "I wanted to be a teacher when I was young",
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
 	},
@@ -660,12 +660,12 @@
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当她（过去）是年轻的时候",
+		"chinese": "当她（过去）年轻的时候",
 		"english": "when she was young",
 		"soundmark": "/wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "她（过去）想要改变世界当她（过去）是年轻的时候",
+		"chinese": "她（过去）想要改变世界当她（过去）年轻的时候",
 		"english": "she wanted to change the world when she was young",
 		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
@@ -675,12 +675,12 @@
 		"soundmark": "/ʃi/ /told/ /mi/"
 	},
 	{
-		"chinese": "她（过去）告诉我她（过去）想要改变世界当她（过去）是年轻的时候",
+		"chinese": "她（过去）告诉我她（过去）想要改变世界当她（过去）年轻的时候",
 		"english": "she told me she wanted to change the world when she was young",
 		"soundmark": "/ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	},
 	{
-		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她（过去）是年轻的时候",
+		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她（过去）年轻的时候",
 		"english": "I talked with her last weekend and she told me she wanted to change the world when she was young",
 		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/ /ənd/ /ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
 	}

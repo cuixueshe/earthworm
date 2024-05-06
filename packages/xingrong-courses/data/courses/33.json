@@ -150,17 +150,17 @@
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "一个房子",
+		"chinese": "一栋房子",
 		"english": "a house",
 		"soundmark": "/ə/ /haʊs/"
 	},
 	{
-		"chinese": "买一个房子",
+		"chinese": "买一栋房子",
 		"english": "to buy a house",
 		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "存足够的钱买一个房子",
+		"chinese": "存足够的钱买一栋房子",
 		"english": "to save enough money to buy a house",
 		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
@@ -190,12 +190,12 @@
 		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "买一个房子",
+		"chinese": "买一栋房子",
 		"english": "to buy a house",
 		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "为了他的家庭买一个房子",
+		"chinese": "为他的家庭买一栋房子",
 		"english": "to buy a house for his family",
 		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
@@ -205,7 +205,7 @@
 		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "为了他的家庭存足够的钱买一个房子",
+		"chinese": "存足够的钱为他的家庭买一栋房子",
 		"english": "to save enough money to buy a house for his family",
 		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
@@ -235,7 +235,7 @@
 		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/"
 	},
 	{
-		"chinese": "他（现在）正在尝试为了他的家庭存足够的钱买一个房子",
+		"chinese": "他（现在）正在尝试存足够的钱为他的家庭买一栋房子",
 		"english": "he is trying to save enough money to buy a house for his family",
 		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
@@ -265,7 +265,7 @@
 		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "存钱的一个好的方法",
+		"chinese": "一个存钱的好方法",
 		"english": "a good way to save money",
 		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
 	},
@@ -285,12 +285,12 @@
 		"soundmark": "/ðɪs/ /ɪz/"
 	},
 	{
-		"chinese": "这是存钱的一个好的方法",
+		"chinese": "这是一个存钱的好方法",
 		"english": "this is a good way to save money",
 		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "存钱的一个好的方法是这个",
+		"chinese": "存钱的一个好方法是这个",
 		"english": "a good way to save money is this",
 		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/ /ɪz/ /ðɪs/"
 	},
@@ -420,7 +420,7 @@
 		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
 	},
 	{
-		"chinese": "在你做任何事情之前做一个计划",
+		"chinese": "在你做任何事情之前先做一个计划",
 		"english": "to make a plan before you do anything",
 		"soundmark": "/tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
 	},
@@ -430,7 +430,7 @@
 		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
 	},
 	{
-		"chinese": "节省时间和金钱最好的方法是你做任何事情之前做一个计划",
+		"chinese": "节省时间和金钱最好的方法是你做任何事情之前先做一个计划",
 		"english": "the best way to save time and money is to make a plan before you do anything",
 		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/ /ɪz/ /tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
 	},
@@ -470,7 +470,7 @@
 		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "节约水的一个好的方法",
+		"chinese": "一个节约水的好方法",
 		"english": "a good way to save water",
 		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
 	},
@@ -480,7 +480,7 @@
 		"soundmark": "/ðɪs/ /ɪz/"
 	},
 	{
-		"chinese": "这是节约水的一个好的方法",
+		"chinese": "这是一个节约水的好方法",
 		"english": "this is a good way to save water",
 		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
 	},
@@ -510,7 +510,7 @@
 		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɛr/"
 	},
 	{
-		"chinese": "在那里有节约水的一个好方法",
+		"chinese": "这有一个节约水的好方法",
 		"english": "there is a good way to save water",
 		"soundmark": "/ðɛr/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
 	},
@@ -530,7 +530,7 @@
 		"soundmark": "/ə/ /bʊk/ /ɪz/ /ðɛr/"
 	},
 	{
-		"chinese": "在那里有一本书",
+		"chinese": "这有一本书",
 		"english": "there is a book",
 		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/"
 	},
@@ -630,7 +630,7 @@
 		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "有五个鸡蛋仔厨房里",
+		"chinese": "有五个鸡蛋在厨房里",
 		"english": "there are five eggs in the kitchen",
 		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
@@ -665,7 +665,7 @@
 		"soundmark": "/'mɛni/ /wez/"
 	},
 	{
-		"chinese": "节约水的许多方法",
+		"chinese": "许多节约水的方法",
 		"english": "many ways to save water",
 		"soundmark": "/'mɛni/ /wez/ /tə/ /sev/ /'wɔtɚ/"
 	},
@@ -675,7 +675,7 @@
 		"soundmark": "/'dɪfrənt/"
 	},
 	{
-		"chinese": "节约水的许多不同的方法",
+		"chinese": "许多不同节约水的方法",
 		"english": "many different ways to save water",
 		"soundmark": "/'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
 	},
@@ -685,7 +685,7 @@
 		"soundmark": "/ðɛr/ /ɚ/"
 	},
 	{
-		"chinese": "存在节约水的许多不同的方法",
+		"chinese": "存在许多不同节约水的方法",
 		"english": "there are many different ways to save water",
 		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
 	}

@@ -30,7 +30,7 @@
 		"soundmark": "/ðæn/ /mi/"
 	},
 	{
-		"chinese": "他是比我更有名的",
+		"chinese": "他比我更有名",
 		"english": "he is more famous than me",
 		"soundmark": "/hi/ /ɪz/ /mɔr/ /'feməs/ /ðæn/ /mi/"
 	},
@@ -45,7 +45,7 @@
 		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/"
 	},
 	{
-		"chinese": "没有人比迈克尔杰克逊是更有名的",
+		"chinese": "没有人比迈克尔杰克逊更有名",
 		"english": "nobody is more famous than Michael Jackson",
 		"soundmark": "/ˈnobɑdi/ /ɪz/ /mɔr/ /'feməs/ /ðæn/ /ˈmaɪkəl/ /ˈdʒæksən/"
 	},
@@ -90,12 +90,12 @@
 		"soundmark": "/ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "迈克尔杰克逊是在世界上最有名的歌手",
+		"chinese": "迈克尔杰克逊是世界上最有名的歌手",
 		"english": "Michael Jackson is the most famous singer in the world",
 		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /ɪz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手",
+		"chinese": "迈克尔杰克逊（过去）是世界上最有名的歌手",
 		"english": "Michael Jackson was the most famous singer in the world",
 		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /wəz/ /ðə/ /most/ /'feməs/ /'sɪŋɚ/ /ɪn/ /ðə/ /wɝld/"
 	},
@@ -130,7 +130,7 @@
 		"soundmark": "/wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'sɪŋɚz/"
 	},
 	{
-		"chinese": "迈克尔杰克逊（过去）是在世界上最有名的歌手之一",
+		"chinese": "迈克尔杰克逊（过去）是世界上最有名的歌手之一",
 		"english": "Michael Jackson was one of the most famous singers in the world",
 		"soundmark": "/ˈmaɪkəl/ /ˈdʒæksən/ /wəz/ /wʌn/ /əv/ /ðə/ /most/ /'feməs/ /'sɪŋɚz/ /ɪn/ /ðə/ /wɝld/"
 	},
@@ -380,7 +380,7 @@
 		"soundmark": "/maɪ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "你的中文比我的英文是更好的",
+		"chinese": "你的中文比我的英文更好",
 		"english": "Your Chinese is better than my English",
 		"soundmark": "/jʊr/ /tʃaɪˈniz/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /maɪ/ /ˈɪŋɡlɪʃ/"
 	},
@@ -410,7 +410,7 @@
 		"soundmark": "/ðæn/"
 	},
 	{
-		"chinese": "完成比完美是更好的",
+		"chinese": "完成比完美更好",
 		"english": "done is better than perfect",
 		"soundmark": "/dʌn/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'pɝfɪkt/"
 	},
@@ -425,7 +425,7 @@
 		"soundmark": "/'wɪntɚ/"
 	},
 	{
-		"chinese": "夏天比冬天是更好的",
+		"chinese": "夏天比冬天更好",
 		"english": "summer is better than winter",
 		"soundmark": "/'sʌmɚ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'wɪntɚ/"
 	},
@@ -435,7 +435,7 @@
 		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "我认为夏天比冬天是更好的",
+		"chinese": "我认为夏天比冬天更好",
 		"english": "I think summer is better than winter",
 		"soundmark": "/aɪ/ /θɪŋk/ /'sʌmɚ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'wɪntɚ/"
 	},
@@ -450,7 +450,7 @@
 		"soundmark": "/'nʌθɪŋ/"
 	},
 	{
-		"chinese": "某个东西比没有东西是更好的",
+		"chinese": "有某些东西比没有东西更好",
 		"english": "something is better than nothing",
 		"soundmark": "/'sʌmθɪŋ/ /ɪz/ /ˈbɛtɚ/ /ðæn/ /'nʌθɪŋ/"
 	},
@@ -530,7 +530,7 @@
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我的最好的朋友",
+		"chinese": "我最好的朋友",
 		"english": "my best friend",
 		"soundmark": "/maɪ/ /bɛst/ /frend/"
 	},

@@ -95,12 +95,12 @@
 		"soundmark": "/ət/ /naɪt/"
 	},
 	{
-		"chinese": "我们喜欢在晚上在街头跳舞",
+		"chinese": "我们喜欢晚上在街上跳舞",
 		"english": "we like to dance in the street at night",
 		"soundmark": "/wi/ /laɪk/ /tə/ /dæns/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
 	},
 	{
-		"chinese": "我们不喜欢在晚上在街头跳舞",
+		"chinese": "我们不喜欢晚上在街上跳舞",
 		"english": "we don't like to dance in the street at night",
 		"soundmark": "/wi/ /dont/ /laɪk/ /tə/ /dæns/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
 	},
@@ -175,7 +175,7 @@
 		"soundmark": "/ɪn/ /ðə/ /strit/"
 	},
 	{
-		"chinese": "你们不喜欢在街头和我一起跳舞",
+		"chinese": "你们不喜欢和我在街上跳舞",
 		"english": "you don't like to dance with me in the street",
 		"soundmark": "/ju/ /dont/ /laɪk/ /tə/ /dæns/ /wɪð/ /mi/ /ɪn/ /ðə/ /strit/"
 	},
@@ -185,7 +185,7 @@
 		"soundmark": "/ət/ /naɪt/"
 	},
 	{
-		"chinese": "你们不喜欢在晚上在街头和我一起跳舞",
+		"chinese": "你们不喜欢晚上和我在街上跳舞",
 		"english": "you don't like to dance with me in the street at night",
 		"soundmark": "/ju/ /dont/ /laɪk/ /tə/ /dæns/ /wɪð/ /mi/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
 	},
@@ -200,7 +200,7 @@
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "和我说话",
+		"chinese": "和我聊聊",
 		"english": "to talk with me",
 		"soundmark": "/tə/ /tɔk/ /wɪð/ /mi/"
 	},
@@ -210,12 +210,12 @@
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们喜欢和我说话",
+		"chinese": "他们喜欢和我聊天",
 		"english": "they like to talk with me",
 		"soundmark": "/ðe/ /laɪk/ /tə/ /tɔk/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "他们不喜欢和我说话",
+		"chinese": "他们不喜欢和我聊天",
 		"english": "they don't like to talk with me",
 		"soundmark": "/ðe/ /dont/ /laɪk/ /tə/ /tɔk/ /wɪð/ /mi/"
 	},
@@ -255,12 +255,12 @@
 		"soundmark": "/ət/ /naɪt/"
 	},
 	{
-		"chinese": "他们喜欢在晚上和你一起在街头跳舞",
+		"chinese": "他们喜欢晚上和你在街上跳舞",
 		"english": "they like to dance with you in the street at night",
 		"soundmark": "/ðe/ /laɪk/ /tə/ /dæns/ /wɪð/ /ju/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
 	},
 	{
-		"chinese": "他们不喜欢在晚上和你一起在街头跳舞",
+		"chinese": "他们不喜欢晚上和你在街上跳舞",
 		"english": "they don't like to dance with you in the street at night",
 		"soundmark": "/ðe/ /dont/ /laɪk/ /tə/ /dæns/ /wɪð/ /ju/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
 	},
@@ -295,7 +295,7 @@
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我们只是想要知道是否他们喜欢在晚上和你一起在街头跳舞",
+		"chinese": "我们只想知道他们是否喜欢晚上和你在街上跳舞",
 		"english": "we just want to know if they like to dance with you in the street at night",
 		"soundmark": "/wi/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ɪf/ /ðe/ /laɪk/ /tə/ /dæns/ /wɪð/ /ju/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
 	},
@@ -600,7 +600,7 @@
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "你们需要尽快回答关于工作的问题因为它们是非常重要的",
+		"chinese": "你们需要尽快回答有关工作的问题，因为这些问题非常重要",
 		"english": "you need to answer the questions about the work as soon as possible because they are very important",
 		"soundmark": "/ju/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/ /ə'baʊt/ /ðə/ /wɝk/ /əz/ /sun/ /əz/ /'pɑsəbl/ /bɪ'kɔz/ /ðe/ /ɚ/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
@@ -895,7 +895,7 @@
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "你应该知道原因为什么我们不想吃来自这个餐厅的食物",
+		"chinese": "你应该知道我们为什么不想吃来自这个餐厅的食物的原因",
 		"english": "you should know the reason why we don't want to eat the food from the restaurant",
 		"soundmark": "/ju/ /ʃʊd/ /no/ /ðə/ /ˈrizən/ /waɪ/ /wi/ /dont/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
 	},
@@ -905,7 +905,7 @@
 		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "我认为你应该知道原因为什么我们不想吃来自这个餐厅的食物",
+		"chinese": "我认为你应该知道为什么我们不想吃来自这个餐厅的食物的原因",
 		"english": "I think you should know the reason why we don't want to eat the food from the restaurant",
 		"soundmark": "/aɪ/ /θɪŋk/ /ju/ /ʃʊd/ /no/ /ðə/ /ˈrizən/ /waɪ/ /wi/ /dont/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
 	}

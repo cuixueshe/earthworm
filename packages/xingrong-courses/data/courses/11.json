@@ -25,12 +25,12 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某些事情",
+		"chinese": "一些重要的事情",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "告诉你重要的某些事情",
+		"chinese": "告诉你一些重要的事情",
 		"english": "to tell you something important",
 		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -40,7 +40,7 @@
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "我想要告诉你重要的某些事情",
+		"chinese": "我想要告诉你一些重要的事情",
 		"english": "I want to tell you something important",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -55,12 +55,12 @@
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "重要的某些东西",
+		"chinese": "一些重要的东西",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我想要教你重要的某些东西",
+		"chinese": "我想要教你一些重要的东西",
 		"english": "I want to teach you something important",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -85,7 +85,7 @@
 		"soundmark": "/ə/ /'lɛsn/"
 	},
 	{
-		"chinese": "我想要教你一堂课",
+		"chinese": "我想要给你上一课",
 		"english": "I want to teach you a lesson",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /ə/ /'lɛsn/"
 	},
@@ -105,7 +105,7 @@
 		"soundmark": "/tə/ /titʃ/ /hɪm/"
 	},
 	{
-		"chinese": "你必须教他一堂课",
+		"chinese": "你必须给他上一课",
 		"english": "you have to teach him a lesson",
 		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /hɪm/ /ə/ /'lɛsn/"
 	},
@@ -255,7 +255,7 @@
 		"soundmark": "/tə/ /ʃo/"
 	},
 	{
-		"chinese": "展示给你",
+		"chinese": "向你展示",
 		"english": "to show you",
 		"soundmark": "/tə/ /ʃo/ /ju/"
 	},
@@ -265,12 +265,12 @@
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "展示给你某些东西",
+		"chinese": "向你展示一些东西",
 		"english": "to show you something",
 		"soundmark": "/tə/ /ʃo/ /ju/ /'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "我想要展示给你某些东西",
+		"chinese": "我想要向你展示一些东西",
 		"english": "I want to show you something",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ʃo/ /ju/ /'sʌmθɪŋ/"
 	},
@@ -280,7 +280,7 @@
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我想要展示给你重要的某些东西",
+		"chinese": "我想要向你展示一些重要的东西",
 		"english": "I want to show you something important",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ʃo/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
@@ -290,7 +290,7 @@
 		"soundmark": "/'ɛnɪθɪŋ/"
 	},
 	{
-		"chinese": "我不想展示给你任何东西",
+		"chinese": "我不想向你展示任何东西",
 		"english": "I don't want to show you anything",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /ʃo/ /ju/ /'ɛnɪθɪŋ/"
 	},
@@ -300,12 +300,12 @@
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "展示给我",
+		"chinese": "向我展示",
 		"english": "to show me",
 		"soundmark": "/tə/ /ʃo/ /mi/"
 	},
 	{
-		"chinese": "你必须展示给我",
+		"chinese": "你必须向我展示",
 		"english": "you have to show me",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/"
 	},
@@ -325,7 +325,7 @@
 		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
 	},
 	{
-		"chinese": "你必须展示给我如何使用字典",
+		"chinese": "你必须向我展示如何使用字典",
 		"english": "you have to show me how to use the dictionary",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
 	},
@@ -340,7 +340,7 @@
 		"soundmark": "/haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
 	},
 	{
-		"chinese": "你必须展示给我如何使用网络",
+		"chinese": "你必须向我展示如何使用网络",
 		"english": "you have to show me how to use the internet",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /haʊ/ /tə/ /juz/ /ði/ /ˈɪntərnɛt/"
 	},
@@ -355,17 +355,17 @@
 		"soundmark": "/haʊ/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "展示给我们",
+		"chinese": "向我们展示",
 		"english": "to show us",
 		"soundmark": "/tə/ /ʃo/ /ʌs/"
 	},
 	{
-		"chinese": "你需要展示给我们如何做这件事",
+		"chinese": "你需要向我们展示如何做这件事",
 		"english": "you need to show us how to do it",
 		"soundmark": "/ju/ /nid/ /tə/ /ʃo/ /ʌs/ /haʊ/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你不需要展示给我们如何做这件事",
+		"chinese": "你不需要向我们展示如何做这件事",
 		"english": "you don't need to show us how to do it",
 		"soundmark": "/ju/ /dont/ /nid/ /tə/ /ʃo/ /ʌs/ /haʊ/ /tə/ /du/ /ɪt/"
 	},
@@ -395,17 +395,17 @@
 		"soundmark": "/jʊr/ /nu/ /haʊs/"
 	},
 	{
-		"chinese": "你必须展示给我",
+		"chinese": "你必须向我展示",
 		"english": "you have to show me",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/"
 	},
 	{
-		"chinese": "你必须展示给我你的新房子",
+		"chinese": "你必须向我展示你的新房子",
 		"english": "you have to show me your new house",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /jʊr/ /nu/ /haʊs/"
 	},
 	{
-		"chinese": "你不必展示给我你的新房子",
+		"chinese": "你不必向我展示你的新房子",
 		"english": "you don't have to show me your new house",
 		"soundmark": "/ju/ /dont/ /hæv/ /tə/ /ʃo/ /mi/ /jʊr/ /nu/ /haʊs/"
 	},
@@ -420,12 +420,12 @@
 		"soundmark": "/jʊr/ /hændz/"
 	},
 	{
-		"chinese": "展示给我你的手",
+		"chinese": "向我展示你的手",
 		"english": "to show me your hands",
 		"soundmark": "/tə/ /ʃo/ /mi/ /jʊr/ /hændz/"
 	},
 	{
-		"chinese": "你必须展示给我你的手",
+		"chinese": "你必须向我展示你的手",
 		"english": "you have to show me your hands",
 		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /jʊr/ /hændz/"
 	},
@@ -570,7 +570,7 @@
 		"soundmark": "/ət/ /naɪt/"
 	},
 	{
-		"chinese": "我不想让你在晚上去外面",
+		"chinese": "我不想让你晚上外出",
 		"english": "I don't want to let you go out at night",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/"
 	},
@@ -590,17 +590,17 @@
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "这件事是非常危险的",
+		"chinese": "这是非常危险的",
 		"english": "it is very dangerous",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
 	},
 	{
-		"chinese": "因为这件事是非常危险的",
+		"chinese": "因为这是非常危险的",
 		"english": "because it is very dangerous",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
 	},
 	{
-		"chinese": "我不想让你在晚上去外面因为这件事是非常危险的",
+		"chinese": "我不想让你晚上外出因为这是非常危险的",
 		"english": "I don't want to let you go out at night because it is very dangerous",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
 	},
@@ -640,7 +640,7 @@
 		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "我不想让你在晚上去外面因为这件事是非常危险的而且我需要你待在这里",
+		"chinese": "我不想让你晚上外出因为这是非常危险的而且我需要你待在这里",
 		"english": "I don't want to let you go out at night because it is very dangerous and I need you to stay here",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/ /ənd/ /aɪ/ /nid/ /tə/ /ste/ /hɪr/"
 	},
@@ -725,7 +725,7 @@
 		"soundmark": "/wɛn/ /wi/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "你必须记得当我们到达那里的时候让我打电话给我的父亲",
+		"chinese": "当我们到达那里的时候你一定要记得让我打电话给我的父亲",
 		"english": "you have to remember to let me call my father when we get there",
 		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/ /tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/ /wɛn/ /wi/ /ɡɛt/ /ðɛr/"
 	},
@@ -835,7 +835,7 @@
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "让我告诉你某些事情",
+		"chinese": "让我告诉你一些事情",
 		"english": "let me tell you something",
 		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/ /'sʌmθɪŋ/"
 	},
@@ -855,7 +855,7 @@
 		"soundmark": "/ə'baʊt/ /jʊr/ /wɝk/"
 	},
 	{
-		"chinese": "让我告诉你关于你的工作的某些事情",
+		"chinese": "让我告诉你关于你的工作的一些事情",
 		"english": "let me tell you something about your work",
 		"soundmark": "/lɛt/ /mi/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ə'baʊt/ /jʊr/ /wɝk/"
 	},

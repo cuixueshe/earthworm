@@ -70,7 +70,7 @@
 		"soundmark": "/ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "你将会注意到那个如果你密切关注",
+		"chinese": "如果你密切关注你将会注意到那个",
 		"english": "you will notice that if you pay close attention",
 		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/ /ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
 	},
@@ -175,7 +175,7 @@
 		"soundmark": "/ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "你将会注意到（那个）在美式英语和英式英语之间存在很多不同之处如果你密切关注",
+		"chinese": "如果你密切关注你将会注意到（那个）在美式英语和英式英语之间存在很多不同之处",
 		"english": "you will notice that there are many differences between American English and British English if you pay close attention",
 		"soundmark": "/ju/ /wɪl/ /ˈnotɪs/ /ðæt/ /ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənsɪz/ /bɪ'twin/ /ə'mɛrikən/ /ˈɪŋɡlɪʃ/ /ənd/ /'brɪtɪʃ/ /ˈɪŋɡlɪʃ/ /ɪf/ /ju/ /pe/ /kloz/ /ə'tɛnʃən/"
 	},
@@ -195,7 +195,7 @@
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你是不同的",
+		"chinese": "你是与众不同的",
 		"english": "you are different",
 		"soundmark": "/ju/ /ɚ/ /'dɪfrənt/"
 	},
@@ -205,7 +205,7 @@
 		"soundmark": "/tə/ /prɪˈtɛnd/"
 	},
 	{
-		"chinese": "你假装是不同的",
+		"chinese": "你假装是与众不同的",
 		"english": "you pretend to be different",
 		"soundmark": "/ju/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
 	},
@@ -215,7 +215,7 @@
 		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "你需要假装是不同的",
+		"chinese": "你需要假装是与众不同的",
 		"english": "you need to pretend to be different",
 		"soundmark": "/ju/ /nid/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
 	},
@@ -225,7 +225,7 @@
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你不需要假装是不同的",
+		"chinese": "你不需要假装是与众不同的",
 		"english": "you don't need to pretend to be different",
 		"soundmark": "/ju/ /dont/ /nid/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
 	},
@@ -245,7 +245,7 @@
 		"soundmark": "/aɪ/ /dont/ /wɑnt/"
 	},
 	{
-		"chinese": "我不想假装是不同的",
+		"chinese": "我不想假装是与众不同的",
 		"english": "I don't want to pretend to be different",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /'dɪfrənt/"
 	},
@@ -315,7 +315,7 @@
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "我不想假装是她想要我成为的那个人",
+		"chinese": "我不想假装成她想要我成为的那个人",
 		"english": "I don't want to pretend to be the person she wants me to be",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /prɪˈtɛnd/ /tə/ /bi/ /ðə/ /'pɝsn/ /ʃi/ /wɑnts/ /mi/ /tə/ /bi/"
 	},
@@ -385,7 +385,7 @@
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"chinese": "这是重要的",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
@@ -395,7 +395,7 @@
 		"soundmark": "/mɔr/"
 	},
 	{
-		"chinese": "它是更重要的",
+		"chinese": "这是更重要的",
 		"english": "it is more important",
 		"soundmark": "/ɪt/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/"
 	},
@@ -415,7 +415,7 @@
 		"soundmark": "/ðæn/ /’ɛnɪθɪŋ/"
 	},
 	{
-		"chinese": "它是比任何事情更重要的",
+		"chinese": "这比任何事情都重要",
 		"english": "it is more important than anything",
 		"soundmark": "/ɪt/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/"
 	},
@@ -430,7 +430,7 @@
 		"soundmark": "/’ɛnɪθɪŋ/ /ɛls/"
 	},
 	{
-		"chinese": "它是比其他的任何事情更重要的",
+		"chinese": "这比其他任何事情都重要",
 		"english": "it is more important than anything else",
 		"soundmark": "/ɪt/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/ /ɛls/"
 	},
@@ -455,7 +455,7 @@
 		"soundmark": "/'nʌθɪŋ/"
 	},
 	{
-		"chinese": "没有东西比家庭是更重要的",
+		"chinese": "没有什么东西比家庭更重要",
 		"english": "nothing is more important than family",
 		"soundmark": "/'nʌθɪŋ/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /ˈfæməli/"
 	},
@@ -485,7 +485,7 @@
 		"soundmark": "/'aʊɚ/ /ˈfrɛndʃɪp/"
 	},
 	{
-		"chinese": "没有东西比我们的友谊是更重要的",
+		"chinese": "没有什么东西比我们的友谊更重要",
 		"english": "nothing is more important than our friendship",
 		"soundmark": "/'nʌθɪŋ/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /'aʊɚ/ /ˈfrɛndʃɪp/"
 	},
@@ -510,7 +510,7 @@
 		"soundmark": "/’ɛnɪθɪŋ/"
 	},
 	{
-		"chinese": "我的家庭比任何事情是更重要的",
+		"chinese": "我的家庭比任何事情都重要",
 		"english": "my family is more important than anything",
 		"soundmark": "/maɪ/ /ˈfæməli/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/"
 	},
@@ -520,7 +520,7 @@
 		"soundmark": "/ɛls/"
 	},
 	{
-		"chinese": "我的家庭比其他的任何事情是更重要的",
+		"chinese": "我的家庭比其他任何事情都重要",
 		"english": "my family is more important than anything else",
 		"soundmark": "/maɪ/ /ˈfæməli/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /’ɛnɪθɪŋ/ /ɛls/"
 	},
@@ -550,7 +550,7 @@
 		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "一个人的生命比金钱是更重要的",
+		"chinese": "一个人的生命比金钱更重要",
 		"english": "a man's life is more important than money",
 		"soundmark": "/ə/ /mænz/ /laɪf/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /ˈmʌni/"
 	},
@@ -600,7 +600,7 @@
 		"soundmark": "/wɑt/ /ju/ /seɪ/"
 	},
 	{
-		"chinese": "你做的内容比你说的内容是更重要的",
+		"chinese": "你做的比你说的更重要（行胜于言）",
 		"english": "what you do is more important than what you say",
 		"soundmark": "/wɑt/ /ju/ /du/ /ɪz/ /mɔr/ /ɪm'pɔrtnt/ /ðæn/ /wɑt/ /ju/ /seɪ/"
 	}

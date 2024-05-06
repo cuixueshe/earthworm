@@ -50,7 +50,7 @@
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "和我一起在晚上去外面",
+		"chinese": "晚上和我一起外出",
 		"english": "to go out at night with me",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /mi/"
 	},
@@ -80,7 +80,7 @@
 		"soundmark": "/wɪ'θaʊt/ /mi/"
 	},
 	{
-		"chinese": "不和我一起在晚上去外面",
+		"chinese": "晚上不和我一起外出",
 		"english": "to go out at night without me",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪ'θaʊt/ /mi/"
 	},
@@ -115,7 +115,7 @@
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/"
 	},
 	{
-		"chinese": "和你的父母一起在晚上去外面",
+		"chinese": "晚上和你的父母一起外出",
 		"english": "to go out at night with your parents",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
@@ -130,7 +130,7 @@
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以和你父母一起在晚上去外面",
+		"chinese": "晚上你可以和你的父母一起外出",
 		"english": "you can go out at night with your parents",
 		"soundmark": "/ju/ /kæn/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
@@ -155,7 +155,7 @@
 		"soundmark": "/wɪ'θaʊt/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "不和你的父母一起在晚上去外面",
+		"chinese": "晚上在没有父母的陪同下外出",
 		"english": "to go out at night without your parents",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪ'θaʊt/ /jʊr/ /'pɛrənts/"
 	},
@@ -170,7 +170,7 @@
 		"soundmark": "/ju/ /kænt/"
 	},
 	{
-		"chinese": "你不可以不和你的父母一起在晚上去外面",
+		"chinese": "没有你父母的陪同晚上你不可以外出",
 		"english": "you can't go out at night without your parents",
 		"soundmark": "/ju/ /kænt/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
@@ -220,17 +220,17 @@
 		"soundmark": "/ɪf/ /ju/ /ɚ/ /nɑt/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你不可以不和你的父母一起在晚上去外面",
+		"chinese": "没有你父母的陪同晚上你不可以外出",
 		"english": "you can't go out at night without your parents",
 		"soundmark": "/ju/ /kænt/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "你不可以不和你的父母一起在晚上去外面如果你不是一个成年人",
+		"chinese": "如果你不是成年人没有你父母的陪同晚上你不可以外出",
 		"english": "you can't go out at night without your parents if you are not an adult",
 		"soundmark": "/ju/ /kænt/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/ /ɪf/ /ju/ /ɚ/ /nɑt/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你可以不和你的父母一起在晚上去外面",
+		"chinese": "晚上你可以在没有父母陪同的情况下外出",
 		"english": "you can go out at night without your parents",
 		"soundmark": "/ju/ /kæn/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
@@ -245,7 +245,7 @@
 		"soundmark": "/ɪf/ /ju/ /ɚ/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你可以不和你的父母一起在晚上去外面如果你是一个成年人",
+		"chinese": "如果你是一个成年人晚上你可以在没有父母陪同的情况下外出",
 		"english": "you can go out at night without your parents if you are an adult",
 		"soundmark": "/ju/ /kæn/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/ /ɪf/ /ju/ /ɚ/ /ən/ /əˈdʌlt/"
 	},
@@ -300,12 +300,12 @@
 		"soundmark": "/wɪ'θaʊt/"
 	},
 	{
-		"chinese": "没有一个驾照",
+		"chinese": "没有驾照",
 		"english": "without a driver's license",
 		"soundmark": "/wɪ'θaʊt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "没有一个驾照你不可以开车",
+		"chinese": "没有驾照你不可以开车",
 		"english": "you can't drive without a driver's license",
 		"soundmark": "/ju/ /kænt/ /draɪv/ /wɪ'θaʊt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
@@ -320,7 +320,7 @@
 		"soundmark": "/ʃʊd/ /nɑt/"
 	},
 	{
-		"chinese": "没有一个驾照你不应该开车",
+		"chinese": "没有驾照你不应该开车",
 		"english": "you should not drive without a driver's license",
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /draɪv/ /wɪ'θaʊt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
@@ -365,7 +365,7 @@
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "她是足够年龄大的",
+		"chinese": "她是年龄足够大的",
 		"english": "she is old enough",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
@@ -375,7 +375,7 @@
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "她是年龄大的足够开车",
+		"chinese": "她已经到了开车的年龄",
 		"english": "she is old enough to drive",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
@@ -385,7 +385,7 @@
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "她不是年龄大的足够开车",
+		"chinese": "她还没到开车的年龄",
 		"english": "she is not old enough to drive",
 		"soundmark": "/ʃi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
@@ -400,12 +400,12 @@
 		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "我认为她年龄不够开车",
+		"chinese": "我认为她还没到开车的年龄",
 		"english": "I think she is not old enough to drive",
 		"soundmark": "/aɪ/ /θɪŋk/ /ʃi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我不认为她足够年龄开车",
+		"chinese": "我不认为她已经到了开车的年龄",
 		"english": "I don't think she is old enough to drive",
 		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
@@ -440,7 +440,7 @@
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "为了她自己决定",
+		"chinese": "由她自己决定",
 		"english": "to decide for herself",
 		"soundmark": "/tə/ /dɪ'saɪd/ /fɝ/ /hɝ'sɛlf/"
 	},
@@ -455,22 +455,22 @@
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "她是足够年龄大的",
+		"chinese": "她是年龄足够大的",
 		"english": "she is old enough",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "她是年龄大的足够决定",
+		"chinese": "她已经到了做决定的年龄",
 		"english": "she is old enough to decide",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "为了她自己决定",
+		"chinese": "由她自己决定",
 		"english": "to decide for herself",
 		"soundmark": "/tə/ /dɪ'saɪd/ /fɝ/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "她是年龄大的足够为了她自己决定",
+		"chinese": "她已经到了足够由自己做决定的年龄",
 		"english": "she is old enough to decide for herself",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /dɪ'saɪd/ /fɝ/ /hɝ'sɛlf/"
 	},
@@ -505,12 +505,12 @@
 		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "去家",
+		"chinese": "回家",
 		"english": "to go home",
 		"soundmark": "/tə/ /ɡo/ /hom/"
 	},
 	{
-		"chinese": "我想要去家",
+		"chinese": "我想要回家",
 		"english": "I want to go home",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡo/ /hom/"
 	},
@@ -560,7 +560,7 @@
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "他是足够年龄大的",
+		"chinese": "他是年龄足够大的",
 		"english": "he is old enough",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
@@ -570,7 +570,7 @@
 		"soundmark": "/tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学",
+		"chinese": "他已经到了上学的年龄",
 		"english": "he is old enough to go to school",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/"
 	},
@@ -590,7 +590,7 @@
 		"soundmark": "/tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "他是足够年龄大的",
+		"chinese": "他是年龄足够大的",
 		"english": "he is old enough",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
@@ -600,12 +600,12 @@
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "他不是足够年龄大的",
+		"chinese": "他的年龄不够大",
 		"english": "he is not old enough",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "他不是年龄大的足够去买酒",
+		"chinese": "他还不到买酒的年龄",
 		"english": "he is not old enough to buy alcohol",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	},
@@ -615,22 +615,22 @@
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是他不是年龄大的足够去买酒",
+		"chinese": "但他还没到买酒的年龄",
 		"english": "but he is not old enough to buy alcohol",
 		"soundmark": "/bʌt/ /hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学",
+		"chinese": "他已经到了上学的年龄",
 		"english": "he is old enough to go to school",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学但是他不是年龄大的足够去买酒",
+		"chinese": "他已经到了上学的年龄但是他还没到可以买酒的年龄",
 		"english": "he is old enough to go to school but he is not old enough to buy alcohol",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/ /bʌt/ /hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学但是不是年龄大的足够去买酒",
+		"chinese": "他已经到了上学的年龄但是还没到可以买酒的年龄",
 		"english": "he is old enough to go to school but not old enough to buy alcohol",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/ /bʌt/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	}

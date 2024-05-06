@@ -360,7 +360,7 @@
 		"soundmark": "/ðe/ /hæv/ /mɛt/"
 	},
 	{
-		"chinese": "他们(已经)见过他们的新邻居",
+		"chinese": "他们(已经)见过了他们的新邻居",
 		"english": "they have met their new neighbors",
 		"soundmark": "/ðe/ /hæv/ /mɛt/ /ðɛr/ /nu/ /ˈnebɚ/"
 	},
@@ -525,7 +525,7 @@
 		"soundmark": "/ði/ /ˈimel/"
 	},
 	{
-		"chinese": "他(已经)收到那个电子邮件",
+		"chinese": "他(已经)收到了那个电子邮件",
 		"english": "he has received the email",
 		"soundmark": "/hi/ /hæz/ /rɪ'sivd/ /ði/ /ˈimel/"
 	},
@@ -705,7 +705,7 @@
 		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树",
 		"english": "he has bought a Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
@@ -730,7 +730,7 @@
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "那棵圣诞树被装饰了的",
+		"chinese": "那棵圣诞树是被装饰了的",
 		"english": "the Christmas tree is decorated",
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/ /ɪz/ /ˈdɛkəretɪd/"
 	},
@@ -740,7 +740,7 @@
 		"soundmark": "/ə/ /ˈdɛkəretɪd/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵装饰好了的圣诞树",
+		"chinese": "他为他的家庭(已经)买了一棵装饰好了的圣诞树",
 		"english": "he has bought a decorated Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈdɛkəretɪd/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
@@ -790,17 +790,17 @@
 		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树",
 		"english": "he has bought a Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰那棵圣诞树",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰那棵圣诞树",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated the Christmas tree",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰它",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰它",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated it",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/"
 	},
@@ -810,7 +810,7 @@
 		"soundmark": "/jɛt/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated it yet",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/"
 	},
@@ -855,12 +855,12 @@
 		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树",
 		"english": "he has bought a Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它因为他太忙了",
+		"chinese": "他为他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它因为他太忙了",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated it yet because he is too busy",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
 	}
