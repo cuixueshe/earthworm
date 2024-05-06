@@ -18,8 +18,8 @@ const { isLoading } = useHandleSignInCallback(async () => {
   const res = await logto.fetchUserInfo();
   userStore.initUser(res!);
 
-  if (userStore.isNewUser()) {
-    // 让用户修改 username
+  // 新用户并且没有用户名需要设置
+  if (userStore.isNewUser() && !res?.username) {
     isShowSettingUsernameModal.value = true;
   } else {
     await navigateTo(getSignInCallback());
