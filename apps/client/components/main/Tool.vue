@@ -27,9 +27,9 @@
     <!-- 右侧 -->
     <div class="flex items-center">
       <div
-        class="tooltip mr-4"
-        @click="handleDoAgain"
+        class="tooltip-item mr-4"
         data-tip="重置当前课程进度"
+        @click="handleDoAgain"
       >
         <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
       </div>
@@ -127,9 +127,5 @@ function useDoAgain() {
 
 .icon-item {
   @apply h-6 w-6;
-}
-
-.tooltip::before {
-  z-index: 20;
 }
 </style>
