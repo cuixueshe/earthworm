@@ -98,17 +98,12 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function updateSoundmark() {
-    const phonetics: string[] = [];
-    for (const word of words.value) {
-      const phonetic = await getPhonetics(word);
-      if (phonetic) {
-        phonetics.push(phonetic);
-      }
-    }
+    const promises = words.value.map((word) => {
+      return getPhonetics(word);
+    });
+    const phonetics = await Promise.all(promises);
 
-    if (currentStatement.value) {
-      currentStatement.value.soundmark = phonetics.join(" ");
-    }
+    currentStatement.value!.soundmark = phonetics.join(" ");
   }
 
   return {
