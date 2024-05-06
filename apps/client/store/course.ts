@@ -98,7 +98,8 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function updateSoundmark() {
-    const promises = words.value.map((word) => {
+    const words = currentStatement.value?.english.split(" ") || [];
+    const promises = words.map((word) => {
       return getPhonetics(word);
     });
     const phonetics = await Promise.all(promises);
@@ -122,6 +123,5 @@ export const useCourseStore = defineStore("course", () => {
     toNextStatement,
     resetStatementIndex,
     soundMarks,
-    updateSoundmark,
   };
 });

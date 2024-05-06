@@ -6,8 +6,8 @@ interface DailySentenceResponse {
 }
 
 interface Word {
-  us: string;
-  uk: string;
+  American: string;
+  British: string;
 }
 
 export async function fetchDailySentence() {

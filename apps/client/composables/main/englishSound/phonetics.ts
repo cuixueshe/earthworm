@@ -1,61 +1,73 @@
+import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
+
 const phoneticsMap: {
   double: Record<string, string>;
   single: Record<string, string>;
+  triple: Record<string, string>;
 } = {
-  // 双字符
-  double: {
-    // 单元音
-    ɪr: "ear",
-    // 双元音
-    aɪ: "eye",
-    aʊ: "mouth",
-    ɔɪ: "boy",
-    // 清音
-    tʃ: "cheese",
-    // 浊音
-    dʒ: "jump",
-  },
-  // 单字符
   single: {
-    // 单元音
-    i: "happy",
-    ɪ: "sheep",
-    e: "day_002",
-    ɛ: "head",
-    æ: "bird",
-    ɑ: "father",
-    o: "nose",
-    ɔ: "horse",
-    u: "blue",
-    ᴜ: "foot",
+    ɪ: "ship",
+    æ: "hat",
     ʌ: "cup",
+    ɒ: "sock",
+    ʊ: "foot",
+    e: "head",
     ə: "above",
     ɚ: "mother",
-    ɝ: "mother",
-    // 清音
     p: "pen",
-    t: "town",
-    k: "cat",
-    f: "fish",
-    s: "say",
-    θ: "think",
-    ʃ: "she",
-    h: "hand",
-    // 浊音
     b: "book",
+    t: "town",
     d: "day_001",
-    ɡ: "give",
+    k: "cat",
+    g: "give",
+    f: "fish",
     v: "very",
-    z: "zoo",
+    θ: "think",
     ð: "this",
+    s: "say",
+    z: "zoo",
+    ʃ: "she",
     ʒ: "vision",
     m: "moon",
     n: "name",
     ŋ: "sing",
     l: "look",
     r: "run",
-    j: "yes",
     w: "we",
+    j: "yes",
+    h: "hand",
+    i: "happy",
+    u: "situation",
+    x: "loch",
+  },
+  double: {
+    iː: "sheep",
+    ɑː: "father",
+    ɔː: "horse",
+    uː: "blue",
+    ɜː: "bird",
+    ɝː: "bird",
+    eɪ: "day_002",
+    aɪ: "eye",
+    ɔɪ: "boy",
+    əʊ: "nose",
+    oʊ: "nose",
+    aʊ: "mouth",
+    ɪə: "ear",
+    eə: "hair",
+    ʊə: "pure",
+    t̬: "cutting",
+    tʃ: "cheese",
+    dʒ: "jump",
+    ɒ̃: "croissant",
+    əl: "label",
+    əm: "criticism",
+    ən: "sudden",
+    ər: "dictionary",
+  },
+  triple: {
+    aɪə: "fire",
+    aʊə: "hour",
   },
 };
 
@@ -63,6 +75,7 @@ export function getPhoneticsRegExp() {
   const result = [
     ...Object.keys(phoneticsMap.double),
     ...Object.keys(phoneticsMap.single),
+    ...Object.keys(phoneticsMap.triple),
     "\\/",
     "\\s",
     "'",
@@ -73,6 +86,7 @@ export function getPhoneticsRegExp() {
 
 export function isPhonetic(text: string) {
   const phonetics = [
+    ...Object.keys(phoneticsMap.triple),
     ...Object.keys(phoneticsMap.double),
     ...Object.keys(phoneticsMap.single),
   ];
@@ -80,11 +94,18 @@ export function isPhonetic(text: string) {
 }
 
 export async function playPhonetics(text: string) {
-  const phonetics = { ...phoneticsMap.double, ...phoneticsMap.single };
+  const { pronunciation } = usePronunciation();
+  const phonetics = { ...phoneticsMap.triple, ...phoneticsMap.double, ...phoneticsMap.single };
   if (phonetics[text]) {
-    const res = await import(
-      `../../../assets/sounds/phonetics/${phonetics[text]}.mp3`
-    );
-    new Audio(res.default).play();
+    let res;
+    console.log(pronunciation.value);
+    if (pronunciation.value === PronunciationType.American) {
+      res = await import(`../../../assets/sounds/phonetics/${phonetics[text]}_us.ogg`);
+    } else if (pronunciation.value === PronunciationType.British) {
+      res = await import(`../../../assets/sounds/phonetics/${phonetics[text]}_uk.ogg`);
+    }
+    if (res) {
+      new Audio(res.default).play();
+    }
   }
 }

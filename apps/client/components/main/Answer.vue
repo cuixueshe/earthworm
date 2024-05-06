@@ -2,7 +2,7 @@
   <div class="text-center">
     <div class="ml-8 inline-flex flex-wrap items-center gap-1 text-5xl">
       <span
-        v-for="word in words"
+        v-for="word in courseStore.words"
         :key="word"
         class="cursor-pointer p-1 hover:text-fuchsia-500"
         @click="handlePlayWordSound(word)"
@@ -14,14 +14,13 @@
       ></span>
     </div>
     <div class="my-6 text-xl text-gray-500">
-      <span>{{ courseStore.currentStatement?.soundmark }}</span>
-      <!-- <span
+      <span
         v-for="(item, index) in courseStore.soundMarks"
         :key="item + index"
         :class="[isPhonetic(item) && 'cursor-pointer hover:text-fuchsia-500']"
         @click="() => playPhonetics(item)"
         >{{ item }}</span
-      > -->
+      >
     </div>
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.chinese }}
@@ -42,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted } from "vue";
 
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { usePlayWordSound } from "~/composables/main/englishSound/audio";
@@ -59,8 +58,6 @@ const { handlePlayEnglishSound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
-
-const words = computed(() => courseStore.currentStatement?.english.split(" "));
 
 registerShortcutKeyForNextQuestion();
 

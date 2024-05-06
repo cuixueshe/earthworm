@@ -19,8 +19,8 @@ export class ToolService {
     const { text } = await superagent.get(`https://dict.youdao.com/jsonapi?q=${word}`);
     const data = JSON.parse(text);
     const res = {
-      uk: data.simple.word[0].ukphone,
-      us: data.simple.word[0].usphone,
+      British: data.simple.word[0].ukphone,
+      American: data.simple.word[0].usphone,
     };
     return res;
   }

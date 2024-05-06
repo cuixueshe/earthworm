@@ -1,6 +1,5 @@
 import { ref } from "vue";
 
-import { http } from "~/api/http";
 import { fetchPhonetics } from "~/api/tool";
 
 /**
@@ -58,12 +57,12 @@ export function usePronunciation() {
   }
 
   async function getPhonetics(word: string) {
-    const res = await fetchPhonetics(word);
-    if (pronunciation.value === PronunciationType.American) {
-      return `/${res.us.split("; ")[0]}/`;
-    } else if (pronunciation.value === PronunciationType.British) {
-      return `/${res.uk.split("; ")[0]}/`;
-    }
+    const response = await fetchPhonetics(word);
+    let result = response[pronunciation.value];
+    result = result.split("; ")[0];
+    result = result.replace(/[\(\)]/g, "");
+    result = `/${result}/`;
+    return result;
   }
 
   // 切换发音
