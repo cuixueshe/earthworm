@@ -41,7 +41,6 @@ export const useCourseStore = defineStore("course", () => {
 
   watchEffect(() => {
     currentStatement.value = currentCourse.value?.statements[statementIndex.value];
-    updateSoundmark();
   });
 
   const words = computed(() => {
@@ -98,13 +97,14 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function updateSoundmark() {
-    const words = currentStatement.value?.english.split(" ") || [];
-    const promises = words.map((word) => {
-      return getPhonetics(word);
-    });
-    const phonetics = await Promise.all(promises);
-
-    currentStatement.value!.soundmark = phonetics.join(" ");
+    if (currentStatement.value) {
+      const words = currentStatement.value.english.split(" ") || [];
+      const promises = words.map((word) => {
+        return getPhonetics(word);
+      });
+      const phonetics = await Promise.all(promises);
+      currentStatement.value.soundmark = phonetics.join(" ");
+    }
   }
 
   return {
@@ -123,5 +123,6 @@ export const useCourseStore = defineStore("course", () => {
     toNextStatement,
     resetStatementIndex,
     soundMarks,
+    updateSoundmark,
   };
 });
