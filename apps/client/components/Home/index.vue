@@ -10,11 +10,8 @@
         </div>
         <div class="mt-6 text-2xl">{{ userStore.userInfo?.username }}</div>
         <div class="text-sm text-gray-300">{{ userStore.userInfo?.name }}</div>
-        <div
-          v-if="false"
-          class="border-t-solid border-t-black-200 mt-5 flex flex-col border-t pt-5"
-        >
-          <div class="text-2xl">勋章</div>
+        <div class="border-t-solid border-t-black-200 mt-5 flex flex-col border-t pt-5">
+          <!-- <div class="text-2xl">勋章</div>
           <div class="mt-3 grid grid-cols-3 gap-2">
             <div
               class="m-auto overflow-hidden rounded-full"
@@ -27,7 +24,7 @@
                 class="h-10 w-10"
               />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
