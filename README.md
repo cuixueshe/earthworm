@@ -179,6 +179,21 @@ pnpm test:e2e
 pnpm test
 ```
 
+## Docs Project
+
+Project based on Vitepress documentation，execute the following command:
+
+```bash
+# Enter Docx Project Directory
+cd packages/docs
+
+# Local Development
+pnpm docs:dev
+
+# Preview
+pnpm docs:preview
+```
+
 ## ❓ FAQ
 
 ### Database connection failed
