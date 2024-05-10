@@ -117,6 +117,7 @@ const HEADER_OPTIONS = [
   { name: "联系我们", href: "#contact" },
 ];
 
+// TODO: 设置需要固定导航栏的页面
 const isStickyNavBar = computed(() => ["index", "User-Setting"].includes(route.name as string));
 const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
