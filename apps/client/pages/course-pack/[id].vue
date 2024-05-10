@@ -47,9 +47,7 @@ const { updateActiveCourseMap } = useActiveCourseMap();
 setup();
 
 async function setup() {
-  // 只在初始化的时候拉取一次数据
-  // 后续只更新课程的完成次数数据
-  if (!coursePackStore.currentCoursePack) {
+  if (!coursePackStore.currentCoursePack || coursePackId !== coursePackStore.currentCoursePack.id) {
     isLoading.value = true;
     await coursePackStore.setupCoursePack(coursePackId);
     isLoading.value = false;
