@@ -30,18 +30,19 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 
-import { useActiveCourseId } from "~/composables/courses/activeCourse";
+import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 
 const props = defineProps<{
   title: string;
-  id: number;
+  id: string;
   count: number | undefined;
+  coursePackId: string;
 }>();
-const { activeCourseId } = useActiveCourseId();
+const { activeCourseMap } = useActiveCourseMap();
 
 const activeCourseRef = ref<HTMLDivElement>();
 const hasFinished = computed(() => !!props.count);
-const isActiveCourse = computed(() => activeCourseId.value == props.id);
+const isActiveCourse = computed(() => activeCourseMap.value[props.coursePackId] == props.id);
 const dataTip = computed(() => `恭喜您，当前课程已完成 ${props.count} 次 🎉`);
 
 onMounted(() => {

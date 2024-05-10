@@ -26,13 +26,15 @@ export function usePlayTipSound() {
 }
 
 const PLAY_INTERVAL_TIME = 60;
+let audioCtxRef: AudioContext | null = null;
+let audioBuffer: AudioBuffer | null = null;
 export function useTypingSound() {
-  let audioCtxRef: AudioContext | null = null;
-  let audioBuffer: AudioBuffer | null = null;
   const lastPlayTime = ref(0); // 与上一次播放时间间隔
 
   // 不需要等页面渲染就可以加载了（提前）
-  loadAudioContext();
+  if (!audioCtxRef) {
+    loadAudioContext();
+  }
 
   async function loadAudioContext() {
     audioCtxRef = new AudioContext();

@@ -1,4 +1,5 @@
-import { ref } from "vue";
+import { useDevice, useIsLandscape } from "#imports";
+import { ref, watchEffect } from "vue";
 
 export enum GameMode {
   Question = "question",
@@ -30,5 +31,32 @@ export function useGameMode() {
     isQuestion,
     showAnswer,
     showQuestion,
+  };
+}
+
+const messageContent = ref("");
+const isMessageShow = ref(false);
+
+export function useDeviceTip() {
+  const { isMobile, isIpad } = useDevice();
+  const { isLandscape } = useIsLandscape();
+
+  watchEffect(() => {
+    isMessageShow.value = (isIpad.value && !isLandscape.value) || isMobile.value;
+
+    if (isMobile.value) {
+      messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";
+      return;
+    }
+
+    if (isIpad.value && !isLandscape.value) {
+      messageContent.value = "横屏使用效果更佳哦~";
+      return;
+    }
+  });
+
+  return {
+    messageContent,
+    isMessageShow,
   };
 }

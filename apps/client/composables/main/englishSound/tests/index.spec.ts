@@ -21,7 +21,8 @@ describe("useCurrentStatementEnglishSound", () => {
 
     const courseStore = useCourseStore();
     courseStore.currentStatement = {
-      id: 1,
+      id: "1",
+      order: 1,
       english: "I",
       soundmark: "/I/",
       chinese: "我",
@@ -44,7 +45,8 @@ describe("useCurrentStatementEnglishSound", () => {
     // update english value
     const courseStore = useCourseStore();
     courseStore.currentStatement = {
-      id: 2,
+      id: "2",
+      order: 2,
       english: "like",
       soundmark: "/like/",
       chinese: "喜欢",
@@ -59,7 +61,8 @@ describe("useCurrentStatementEnglishSound", () => {
 
     const courseStore = useCourseStore();
     courseStore.currentStatement = {
-      id: 1,
+      id: "1",
+      order: 1,
       english: "I",
       soundmark: "/I/",
       chinese: "我",

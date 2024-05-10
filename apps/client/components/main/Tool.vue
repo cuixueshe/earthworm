@@ -5,7 +5,7 @@
     <!-- 左侧 -->
     <div class="flex items-center">
       <NuxtLink
-        href="/courses"
+        :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
         class="clickable-item tooltip-item"
         data-tip="课程列表"
       >
@@ -20,14 +20,15 @@
       </div>
       <MainStudyVideoLink
         class="icon-item ml-1"
-        :course-id="courseStore.currentCourse?.id"
+        :course-order="courseStore.currentCourse?.order"
       />
     </div>
 
     <!-- 右侧 -->
     <div class="flex items-center">
       <div
-        class="mr-4"
+        class="tooltip-item mr-4"
+        data-tip="重置当前课程进度"
         @click="handleDoAgain"
       >
         <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
@@ -66,10 +67,12 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
+import { useCoursePackStore } from "~/store/coursePack";
 import { useContent } from "./Contents/useContents";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
+const coursePackStore = useCoursePackStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();

@@ -62,7 +62,7 @@
 	{
 		"chinese": "自从......以来",
 		"english": "since",
-		"soundmark": "/sɪns/ /twenty nineteen/ /'twɛnti/ /ˌnaɪn'tin/"
+		"soundmark": "/sɪns/"
 	},
 	{
 		"chinese": "我自从2019年(已经)是一名老师了",
@@ -86,7 +86,7 @@
 	},
 	{
 		"chinese": "他(已经)是一名医生15年了",
-		"english": "he has been a doctor for 15 years",
+		"english": "he has been a doctor for fifteen years",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/ /fɚ/ /ˌfɪfˈtin/ /jɪrz/"
 	},
 	{
@@ -136,12 +136,12 @@
 	},
 	{
 		"chinese": "十年",
-		"english": "10 years",
+		"english": "ten years",
 		"soundmark": "/tɛn/ /jɪrz/"
 	},
 	{
 		"chinese": "他们(已经)结婚十年了",
-		"english": "they have been married for 10 years",
+		"english": "they have been married for ten years",
 		"soundmark": "/ðe/ /hæv/ /bɪn/ /ˈmærid/ /fɚ/ /tɛn/ /jɪrz/"
 	},
 	{

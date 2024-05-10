@@ -12,7 +12,7 @@ export class MembershipController {
   @UseGuards(AuthGuard)
   @Post("buy")
   async buyMembership(@Body() buyMembershipDto: BuyMembershipDto) {
-    return await this.membershipService.createOrUpdateMembership(new Date(), buyMembershipDto);
+    return await this.membershipService.upsert(new Date(), buyMembershipDto);
   }
 
   @Get(":userId/status")

@@ -1,7 +1,7 @@
 <div align="center">
-  <img alt="Earthworm" width="120" height="120" src="./apps/client/public/logo.png">
+  <img alt="Earthworm" width="120" height="120" src="./assets/logo/logo-1000.png">
   <h1>Earthworm</h1>
-  <span>中文 | <a href="./README.md">英文</a></span>
+  <span>中文 | <a href="./README.md">English</a></span>
 </div>
 
 ## ⚡ 介绍
@@ -52,11 +52,33 @@ pnpm install
 
 Windows 用户推荐快捷键复制粘贴，Linux 用户可以通过下面的命令进行操作。
 
+#### Server
+
 ```bash
 cp ./apps/api/.env.example ./apps/api/.env
 ```
 
-### 3. 启动 Docker Compose 服务
+#### Client
+
+```bash
+cp ./apps/client/.env.example ./apps/client/.env
+```
+
+### 3. 恢复 Logto 的数据
+
+解压缩 `logto_db_init_data.zip` 到 `.volumes/`
+
+```bash
+unzip logto_db_init_data.zip -d .volumes/
+```
+
+- 后台地址: http://localhost:3011
+- 用户名: admin
+- 密码: wYJha:-eYMrAe9i
+
+> 如果你想 [手动配置 Logto](https://github.com/cuixueshe/earthworm/wiki/%E8%BF%81%E7%A7%BB-Logto-%E7%94%A8%E6%88%B7%E7%B3%BB%E7%BB%9F%E5%90%8E%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88%EF%BC%88%E8%B4%A1%E7%8C%AE%E8%80%85%EF%BC%89)
+
+### 4. 启动 Docker Compose 服务
 
 后端用到了 Postgres 和 Redis 服务，通过下面在 `package.json` 中配置的命令启动和停止。
 
@@ -84,7 +106,7 @@ docker compose down
 docker-compose up -d
 ```
 
-### 4. 初始化数据库表结构
+### 5. 初始化数据库表结构
 
 执行这个命令时，尽量与上个命令间隔一点时间，因为刚刚使用的 `-d` 参数会让其服务挂起在后台执行，此时 docker 服务可能还在 running 中，若是发现报错了那就再执行一遍。😊
 
@@ -92,7 +114,7 @@ docker-compose up -d
 pnpm db:init
 ```
 
-### 5. 创建并上传课程数据
+### 6. 创建并上传课程数据
 
 **只有第一次初始化数据库后需要执行**。
 
@@ -100,13 +122,13 @@ pnpm db:init
 pnpm db:upload
 ```
 
-### 6. 启动后端服务
+### 7. 启动后端服务
 
 ```bash
 pnpm dev:serve
 ```
 
-### 7. 启动前端服务
+### 8. 启动前端服务
 
 ```bash
 pnpm dev:client

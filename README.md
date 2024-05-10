@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Earthworm" width="120" height="120" src="./apps/client/public/logo.png">
+  <img alt="Earthworm" width="120" height="120" src="./assets/logo/logo-1000.png">
   <h1>Earthworm</h1>
   <span>English | <a href="./README.zh-CN.md">中文</a></span>
 </div>
@@ -52,11 +52,33 @@ You can choose to copy the contents of `./apps/api/.env.example` to`./apps/api/.
 
 Windows users recommend shortcut keys to copy and paste, Linux users can operate through the following command.
 
+#### Server
+
 ```bash
 cp ./apps/api/.env.example ./apps/api/.env
 ```
 
-### 3. Start Docker Compose Service
+#### Client
+
+```bash
+cp ./apps/client/.env.example ./apps/client/.env
+```
+
+### 3. Restore Data Of Logto
+
+Uncompress `logto_db_init_data.zip` to `.volumes/`
+
+```bash
+unzip logto_db_init_data.zip -d .volumes/
+```
+
+- Admin URL: http://localhost:3011
+- Username: admin
+- Password: wYJha:-eYMrAe9i
+
+> if you want to [Manual Configuration Logto](https://github.com/cuixueshe/earthworm/wiki/%E8%BF%81%E7%A7%BB-Logto-%E7%94%A8%E6%88%B7%E7%B3%BB%E7%BB%9F%E5%90%8E%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88%EF%BC%88%E8%B4%A1%E7%8C%AE%E8%80%85%EF%BC%89)
+
+### 4. Start Docker Compose Service
 
 The backend relies on Postgres and Redis services. Start and stop these services using the commands configured in `package.json` below.
 
@@ -84,7 +106,7 @@ docker compose down
 docker-compose up -d
 ```
 
-### 4. Initialize Database Schema
+### 5. Initialize Database Schema
 
 When executing this command, try to keep a little time from the previous command, because the `-d` parameter just used will suspend its service execution in the background. At this time, the docker service may still be running. If an error is found, execute it again.
 
@@ -92,7 +114,7 @@ When executing this command, try to keep a little time from the previous command
 pnpm db:init
 ```
 
-### 5. Create and Upload Course Data
+### 6. Create and Upload Course Data
 
 **Only Execute This During the Initial Database Initialization**.
 
@@ -100,13 +122,13 @@ pnpm db:init
 pnpm db:upload
 ```
 
-### 6. Start the Backend Service
+### 7. Start the Backend Service
 
 ```bash
 pnpm dev:serve
 ```
 
-### 7. Start the Frontend Service
+### 8. Start the Frontend Service
 
 ```bash
 pnpm dev:client

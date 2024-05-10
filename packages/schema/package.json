@@ -6,5 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "2.2.2"
   }
 }

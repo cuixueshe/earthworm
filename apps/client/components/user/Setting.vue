@@ -1,34 +1,6 @@
 <template>
   <div class="min-w-max space-y-8">
     <section class="space-y-4">
-      <h2 class="text-lg font-medium">个人信息设置</h2>
-      <table class="table">
-        <tbody>
-          <tr class="hover">
-            <td class="label-text">昵称</td>
-            <td class="w-[300px] text-center">
-              <div class="join mr-12">
-                <input
-                  class="join-item btn-sm"
-                  type="text"
-                  name="username"
-                  pattern="请输入用户名称"
-                  v-model="userName"
-                  @keyup.enter="() => updateUserInfo(userName!)"
-                />
-                <button
-                  class="btn btn-outline btn-secondary btn-sm ml-1"
-                  @click="() => updateUserInfo(userName!)"
-                >
-                  更新
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="space-y-4">
       <h2 class="text-lg font-medium">游戏模式</h2>
       <table class="table">
         <tbody>
@@ -250,6 +222,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 
+import Message from "~/components/main/Message/useMessage";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
@@ -262,13 +235,23 @@ import {
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
-import { useUserStore } from "~/store/user";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
-const userStore = useUserStore();
-const updateUserInfo = userStore.updateUserInfo;
-const userName = userStore.userNameGetter;
+// TODO 暂时不支持 nickname 的修改
+// import { useUserStore } from "~/store/user";
+// const userStore = useUserStore();
+// const nickname = ref(userStore.userNameGetter);
+// const handleUpdateNickname = async (event: KeyboardEvent) => {
+//   const result = await userStore.updateUserInfo({
+//     ...userStore.userInfo!,
+//     name: nickname.value,
+//   });
+//   if (result) {
+//     (event.target as HTMLInputElement).blur();
+//     Message.success("修改成功");
+//   }
+// };
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();

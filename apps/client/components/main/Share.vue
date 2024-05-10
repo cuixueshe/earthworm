@@ -89,7 +89,7 @@ const {
 
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
-    const username = userStore.userNameGetter!;
+    const username = userStore.userInfo?.username || "";
     const convertedTitle = convertTitleToNumber(courseStore.currentCourse.title);
     const { year, month, day } = getToday();
     const totalRecordNumber = courseTimer.totalRecordNumber();

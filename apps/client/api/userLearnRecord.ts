@@ -1,19 +1,20 @@
-import type { AxiosRequestConfig } from "axios";
-
 import { http } from "./http";
 
-interface UserLearnRecordDto {
+interface UserLearnRecord {
   startDate?: string;
   endDate?: string;
 }
 
-interface UserLearnRecordVo {
+export interface UserLearnRecordResponse {
   totalCount: number;
-  list: Array<{ date: string; count: number }>;
+  list: Array<{ day: string; count: number }>;
 }
 
-export async function fetchLearnRecord(params: UserLearnRecordDto) {
-  return await http.get<UserLearnRecordVo, UserLearnRecordVo>(`/user-learn-record/finishCount`, {
-    params,
-  });
+export async function fetchLearnRecord(params: UserLearnRecord) {
+  return await http.get<UserLearnRecordResponse, UserLearnRecordResponse>(
+    `/user-learn-record/finishCount`,
+    {
+      params,
+    },
+  );
 }
