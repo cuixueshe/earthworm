@@ -1,10 +1,12 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: Earthworm
+titleTemplate: 一个让你上瘾的英语学习工具，让学习英语从此不再痛苦
 
 hero:
-  name: "Earthworm"
-  text: "一个让你上瘾的英语学习工具，让学习英语从此不再痛苦"
+  name: Earthworm
+  text: 一个让你上瘾的英语学习工具，让学习英语从此不再痛苦
   tagline: 你的英语学习必选工具
   image:
     src: /logo.png

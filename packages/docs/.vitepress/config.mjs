@@ -33,5 +33,10 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    // TODO：等合并文档项目，路径需要替换
+    editLink: {
+      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
+    },
   },
 });

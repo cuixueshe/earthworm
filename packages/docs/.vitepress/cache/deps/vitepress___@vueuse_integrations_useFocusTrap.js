@@ -1,5 +1,5 @@
-import { tryOnScopeDispose, unrefElement } from "./chunk-IGIJKSLB.js";
-import { ref, watch } from "./chunk-LY46ZMVQ.js";
+import { tryOnScopeDispose, unrefElement } from "./chunk-3UORKXGA.js";
+import { ref, watch } from "./chunk-Y3DRBOC2.js";
 
 // ../../node_modules/.pnpm/tabbable@6.2.0/node_modules/tabbable/dist/index.esm.js
 var candidateSelectors = [
@@ -1209,7 +1209,7 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
   return trap;
 };
 
-// ../../node_modules/.pnpm/@vueuse+integrations@10.9.0_focus-trap@7.5.4_vue@3.4.23/node_modules/@vueuse/integrations/useFocusTrap.mjs
+// ../../node_modules/.pnpm/@vueuse+integrations@10.9.0_axios@1.6.7_focus-trap@7.5.4_vue@3.4.27_typescript@5.3.3_/node_modules/@vueuse/integrations/useFocusTrap.mjs
 function useFocusTrap(target, options = {}) {
   let trap;
   const { immediate, ...focusTrapOptions } = options;
