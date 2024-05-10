@@ -19,7 +19,7 @@ const { isLoading } = useHandleSignInCallback(async () => {
   userStore.initUser(res!);
 
   // 新用户并且没有用户名需要设置
-  if (userStore.isNewUser() && !res?.username) {
+  if (userStore.isNewUser()) {
     isShowSettingUsernameModal.value = true;
   } else {
     await navigateTo(getSignInCallback());
