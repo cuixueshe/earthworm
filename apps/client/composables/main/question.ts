@@ -1,4 +1,5 @@
 import { nextTick, reactive, ref, watchEffect } from "vue";
+import { useCourseStore } from "~/store/course";
 
 interface Word {
   text: string;
@@ -30,6 +31,44 @@ const inputValue = ref("");
 
 export function clearQuestionInput() {
   inputValue.value = "";
+}
+
+interface TipWord {
+  noInput: boolean;
+  characters: { incorrect: boolean; character: string }[];
+}
+
+const tipWords = reactive<TipWord[]>([]);
+
+export function validateInput() {
+  const userInputs = inputValue.value.toLowerCase().split(separator)
+
+  function getUserInput(index: number) {
+    return userInputs[index] || "";
+  }
+
+  function validateCharacter(word: string, index: number) {
+    const userInput = getUserInput(index);
+    const inputCharacters = userInput.split("");
+
+    const overLength = userInput.length > word.length;
+
+    return word
+      .toLowerCase()
+      .split("")
+      .map((character, index) => ({
+        character,
+        incorrect: character !== inputCharacters[index] || overLength,
+      }));
+  }
+
+  const courseStore = useCourseStore();
+  courseStore.words.forEach((word, index) => {
+    tipWords[index] = {
+      noInput: !Boolean(getUserInput(index)),
+      characters: validateCharacter(word, index),
+    };
+  });
 }
 
 export function useInput({
@@ -354,5 +393,6 @@ export function useInput({
     fixFirstIncorrectWord,
     resetUserInputWords,
     isFixMode,
+    tipWords,
   };
 }
