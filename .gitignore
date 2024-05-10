@@ -136,3 +136,5 @@ dist
 
 # docker volumes for dev
 .volumes
+
+packages/course-convertor
