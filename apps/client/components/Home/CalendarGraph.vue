@@ -17,7 +17,7 @@
           v-for="(row, i) in tbody"
           :key="weeks[i]"
         >
-          <td class="relative w-8">
+          <td class="relative hidden w-8 md:block">
             <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : "" }}</span>
           </td>
           <td

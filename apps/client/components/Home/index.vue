@@ -1,30 +1,36 @@
 <template>
-  <div class="container m-auto flex w-full font-customFont">
-    <div class="flex w-80 shrink-0 flex-col p-12 pt-0 text-4xl">
-      <div class="avatar flex w-full justify-center p-0">
-        <div class="w-full rounded-full">
-          <img :src="userStore.userInfo?.picture!" />
-        </div>
-      </div>
-      <div class="w-56">{{ userStore.userInfo?.username }}</div>
-      <!-- 昵称 -->
-      <!-- <div>{{ userStore.userInfo?.name }}</div> -->
-      <!-- 勋章的展示 -->
-      <!-- <div class="flex gap-2 py-4">
-        <div
-          class="overflow-hidden rounded-full"
-          v-for="i of [1, 2, 3]"
-          :key="i"
-        >
+  <div class="flex h-full w-full py-6 md:px-12">
+    <div class="hidden md:block">
+      <div class="md-4 flex flex-col md:mr-10">
+        <div class="m-auto overflow-hidden rounded-full border border-solid border-gray-200 p-1">
           <img
-            src="https://sdfsdf.dev/72x72.png"
-            alt=""
+            :src="userStore.userInfo?.picture!"
+            class="h-40 w-40"
           />
         </div>
-      </div> -->
+        <div class="mt-6 text-2xl">{{ userStore.userInfo?.username }}</div>
+        <div class="text-sm text-gray-300">{{ userStore.userInfo?.name }}</div>
+        <div class="border-t-solid border-t-black-200 mt-5 flex flex-col border-t pt-5">
+          <div class="text-2xl">勋章</div>
+          <div class="mt-3 grid grid-cols-3 gap-2">
+            <div
+              class="m-auto overflow-hidden rounded-full"
+              v-for="i in 13"
+              :key="i"
+            >
+              <img
+                src="https://sdfsdf.dev/72x72.png"
+                alt=""
+                class="h-10 w-10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="flex flex-1 flex-col">
-      <div class="flex">
+      <div class="flex items-center">
+        <div class="mr-auto text-2xl font-bold">最近使用的课程包</div>
         <NuxtLink
           href="/course-pack"
           class="btn btn-primary btn-sm mr-2"
@@ -36,19 +42,15 @@
           >更多音乐</NuxtLink
         > -->
       </div>
-
-      <div class="mb-8 flex">
-        <HomeRecentCoursePack />
-        <!-- <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div> -->
+      <HomeRecentCoursePack class="mt-3 md:mt-5" />
+      <hr class="border-black-200 my-3 border border-solid md:my-5" />
+      <div class="border-black-200 w-full rounded-xl border border-solid p-4 shadow">
+        <HomeCalendarGraph
+          :data="learnRecord.list"
+          :totalCount="learnRecord.totalCount"
+          @toggleYear="toggleYear"
+        />
       </div>
-      <HomeCalendarGraph
-        :data="learnRecord.list"
-        :totalCount="learnRecord.totalCount"
-        @toggleYear="toggleYear"
-      />
     </div>
   </div>
 </template>

@@ -1,12 +1,6 @@
 <template>
-  <div class="container m-auto w-full font-customFont">
-    <template v-if="isAuthenticated()">
-      <Home></Home>
-    </template>
-    <template v-else>
-      <Landing></Landing>
-    </template>
-  </div>
+  <Home v-if="isAuthenticated()"></Home>
+  <Landing v-else></Landing>
 </template>
 
 <script setup lang="ts">

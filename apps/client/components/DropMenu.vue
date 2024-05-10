@@ -69,7 +69,9 @@ const MENU_OPTIONS = [
   },
 ];
 const showMenuOptions = computed(() => {
-  return MENU_OPTIONS.filter((menu) => menu.name !== GO_BACK_GAME_NAME || route.name !== "Main-id");
+  return MENU_OPTIONS;
+  // TODO
+  // return MENU_OPTIONS.filter((menu) => menu.name !== GO_BACK_GAME_NAME || route.name !== "Main-id");
 });
 
 onClickOutside(dropdownContainer, () => {
@@ -85,10 +87,7 @@ async function handleGoBackGamePage() {
 }
 
 function handleSetting() {
-  navigateTo({
-    path: "/user/info",
-    query: { displayComponent: "Setting" },
-  });
+  navigateTo("/user/setting");
 }
 
 function handleLogout() {
