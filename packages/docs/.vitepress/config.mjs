@@ -8,7 +8,7 @@ export default defineConfig({
     logo: "/logo.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Guide", link: "/guide/get-started/" },
+      { text: "指南", link: "/guide/get-started/" },
       // { text: "Features", link: "/markdown-examples" },
     ],
 
@@ -34,9 +34,9 @@ export default defineConfig({
       provider: "local",
     },
     // TODO：等合并文档项目，路径需要替换
-    editLink: {
-      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
-      text: "Edit this page on GitHub",
-    },
+    // editLink: {
+    //   pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+    //   text: "Edit this page on GitHub",
+    // },
   },
 });
