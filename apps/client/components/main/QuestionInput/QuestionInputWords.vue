@@ -1,18 +1,15 @@
 <template>
   <div class="text-center">
     <div class="relative flex flex-wrap justify-center gap-2 transition-all">
-      <template
+      <div
         v-for="(w, i) in courseStore.words"
         :key="i"
+        class="h-[4rem] rounded-[2px] border-b-2 border-solid text-[3em] leading-none transition-all"
+        :class="getWordsClassNames(i)"
+        :style="{ minWidth: `${inputWidth(w)}ch` }"
       >
-        <div
-          class="h-[4rem] rounded-[2px] border-b-2 border-solid text-[3em] leading-none transition-all"
-          :class="getWordsClassNames(i)"
-          :style="{ minWidth: `${inputWidth(w)}ch` }"
-        >
-          {{ userInputWords[i]["userInput"] }}
-        </div>
-      </template>
+        {{ userInputWords[i]["userInput"] }}
+      </div>
       <input
         ref="inputEl"
         class="absolute h-full w-full opacity-0"
@@ -37,7 +34,7 @@ import { onMounted, onUnmounted, ref, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
-import { useInput } from "~/composables/main/question";
+import { useWordsInput } from "~/composables/main/question";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
@@ -64,7 +61,7 @@ const { isAutoNextQuestion } = useAutoNextQuestion();
 const { isShowErrorTip } = useErrorTip();
 
 const { inputValue, userInputWords, submitAnswer, setInputValue, handleKeyboardInput, isFixMode } =
-  useInput({
+  useWordsInput({
     source: () => courseStore.currentStatement?.english!,
     setInputCursorPosition,
     getInputCursorPosition,

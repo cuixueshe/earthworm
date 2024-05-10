@@ -170,6 +170,21 @@
               />
             </td>
           </tr>
+
+          <tr class="hover">
+            <td class="label-text">
+              显示单词数量
+              <p class="label-warn">关闭此功能将禁用空格提交</p>
+            </td>
+            <td class="w-[300px] text-center">
+              <input
+                type="checkbox"
+                class="toggle toggle-secondary"
+                :checked="showWordNumber"
+                @change="toggleShowWordNumber"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -234,6 +249,7 @@ import {
   useKeyboardSound,
 } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
+import { useShowWordNumber } from "~/composables/user/wordNumber";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
@@ -263,6 +279,7 @@ const {
   togglePronunciation,
 } = usePronunciation();
 const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
+const { showWordNumber, toggleShowWordNumber } = useShowWordNumber();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { showErrorTip, toggleShowErrorTip } = useErrorTip();
 const {
@@ -314,5 +331,10 @@ onUnmounted(() => {
 
 .btn-outline.btn-secondary {
   @apply text-fuchsia-500 outline-fuchsia-500;
+}
+
+.label-warn {
+  color: rgb(192, 179, 37);
+  font-size: 13px;
 }
 </style>

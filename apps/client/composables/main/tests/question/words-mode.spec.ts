@@ -1,13 +1,13 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { useInput } from "../question";
+import { useWordsInput } from "../../question";
 
 describe("question", () => {
   it("should parse user input correctly", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { userInputWords, setInputValue } = useInput({
+    const { userInputWords, setInputValue } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -45,7 +45,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer } = useInput({
+    const { setInputValue, submitAnswer } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -65,7 +65,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { userInputWords, setInputValue, submitAnswer } = useInput({
+    const { userInputWords, setInputValue, submitAnswer } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -88,7 +88,7 @@ describe("question", () => {
       const setInputCursorPosition = () => {};
       const getInputCursorPosition = () => 0;
 
-      const { setInputValue, submitAnswer } = useInput({
+      const { setInputValue, submitAnswer } = useWordsInput({
         source: () => "i don't",
         setInputCursorPosition,
         getInputCursorPosition,
@@ -109,7 +109,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { userInputWords } = useInput({
+    const { userInputWords } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -122,7 +122,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { userInputWords } = useInput({
+    const { userInputWords } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -135,7 +135,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = vi.fn();
 
-    const { userInputWords, setInputValue } = useInput({
+    const { userInputWords, setInputValue } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -162,7 +162,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useInput({
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -180,7 +180,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useInput({
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useWordsInput({
       source: () => "i eat",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -203,7 +203,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useInput({
+    const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -232,7 +232,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, handleKeyboardInput } = useInput({
+    const { setInputValue, handleKeyboardInput } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -261,7 +261,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useInput({
+    const { setInputValue, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -284,7 +284,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = () => 0;
 
-    const { setInputValue, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useInput({
+    const { setInputValue, submitAnswer, fixIncorrectWord, handleKeyboardInput } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -307,7 +307,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = vi.fn();
 
-    const { setInputValue, handleKeyboardInput } = useInput({
+    const { setInputValue, handleKeyboardInput } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -339,7 +339,7 @@ describe("question", () => {
       submitAnswer,
       activePreviousIncorrectWord,
       fixIncorrectWord,
-    } = useInput({
+    } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -362,7 +362,7 @@ describe("question", () => {
     const setInputCursorPosition = () => {};
     const getInputCursorPosition = vi.fn();
 
-    const { setInputValue, handleKeyboardInput } = useInput({
+    const { setInputValue, handleKeyboardInput } = useWordsInput({
       source: () => "i eat apple",
       setInputCursorPosition,
       getInputCursorPosition,
@@ -396,7 +396,7 @@ describe("question", () => {
     const getInputCursorPosition = vi.fn();
 
     const { setInputValue, userInputWords, submitAnswer, fixIncorrectWord, handleKeyboardInput } =
-      useInput({
+      useWordsInput({
         source: () => "i eat apple",
         setInputCursorPosition,
         getInputCursorPosition,
@@ -439,7 +439,7 @@ describe("question", () => {
       const getInputCursorPosition = vi.fn();
       const inputChangedCallback = vi.fn();
 
-      const { setInputValue, handleKeyboardInput } = useInput({
+      const { setInputValue, handleKeyboardInput } = useWordsInput({
         source: () => "i eat apple",
         setInputCursorPosition,
         getInputCursorPosition,
@@ -462,7 +462,7 @@ describe("question", () => {
       const getInputCursorPosition = vi.fn();
       const inputChangedCallback = vi.fn();
 
-      const { setInputValue, handleKeyboardInput, submitAnswer } = useInput({
+      const { setInputValue, handleKeyboardInput, submitAnswer } = useWordsInput({
         source: () => "i eat apple",
         setInputCursorPosition,
         getInputCursorPosition,
@@ -506,7 +506,7 @@ describe("question", () => {
         const getInputCursorPosition = vi.fn();
         const inputChangedCallback = vi.fn();
 
-        const { setInputValue, handleKeyboardInput, submitAnswer, userInputWords } = useInput({
+        const { setInputValue, handleKeyboardInput, submitAnswer, userInputWords } = useWordsInput({
           source: () => "like code",
           setInputCursorPosition,
           getInputCursorPosition,
@@ -539,7 +539,7 @@ describe("question", () => {
       const getInputCursorPosition = vi.fn();
       const inputChangedCallback = vi.fn();
 
-      const { setInputValue, handleKeyboardInput, submitAnswer } = useInput({
+      const { setInputValue, handleKeyboardInput, submitAnswer } = useWordsInput({
         source: () => "i eat apple",
         setInputCursorPosition,
         getInputCursorPosition,
