@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { useInput } from "../question";
+import { isWord, useInput } from "../question";
 
 describe("question", () => {
   it("should parse user input correctly", () => {
@@ -39,6 +39,33 @@ describe("question", () => {
         },
       ]
     `);
+  });
+
+  it("should filter all symbol", () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = () => 0;
+    const { userInputWords } = useInput({
+      source: () => `i " like " the food ?`,
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    expect(userInputWords.length).toBe(4);
+  });
+
+  it("should find word by id", () => {
+    const setInputCursorPosition = () => {};
+    const getInputCursorPosition = () => 0;
+    const { userInputWords, findWordById } = useInput({
+      source: () => `i " like " the food ?`,
+      setInputCursorPosition,
+      getInputCursorPosition,
+    });
+
+    expect(findWordById(0)?.text).toBe("i");
+    expect(findWordById(2)?.text).toBe("like");
+    expect(findWordById(4)?.text).toBe("the");
+    expect(findWordById(5)?.text).toBe("food");
   });
 
   it("should be correct when checked the answer", async () => {
@@ -564,5 +591,33 @@ describe("question", () => {
 
       expect(inputChangedCallback).toBeCalledTimes(2);
     });
+  });
+});
+
+describe("isWord", () => {
+  it("should return true for a string containing an English letter", () => {
+    expect(isWord("hello")).toBe(true);
+    expect(isWord("Hello")).toBe(true);
+    expect(isWord("123word")).toBe(true);
+  });
+
+  it("should return false for a string without any English letters", () => {
+    expect(isWord("12345")).toBe(false);
+    expect(isWord("！@#$%^&*()")).toBe(false);
+    expect(isWord("こんにちは")).toBe(false); // Japanese characters
+  });
+
+  it("should return false for an empty string", () => {
+    expect(isWord("")).toBe(false);
+  });
+
+  it("should correctly identify single English letter", () => {
+    expect(isWord("a")).toBe(true);
+    expect(isWord("A")).toBe(true);
+  });
+
+  it("should return false for strings with only non-alphabetic characters", () => {
+    expect(isWord("123-456")).toBe(false);
+    expect(isWord(". ,;:!")).toBe(false);
   });
 });
