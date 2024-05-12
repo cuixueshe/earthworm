@@ -43,7 +43,7 @@
           <div class="mr-auto text-2xl font-bold">最近使用的课程包</div>
           <NuxtLink
             href="/course-pack"
-            class="btn btn-primary btn-sm mr-2 border-none bg-[#1f6feb] text-white"
+            class="btn btn-primary btn-sm mr-2 border-none bg-[#1f6feb] text-white hover:bg-[#1f6feb]"
             >更多课程包</NuxtLink
           >
           <!-- <NuxtLink
