@@ -33,13 +33,13 @@
           </div>
           <div class="flex items-center justify-between">
             <button
-              class="btn btn-primary btn-sm"
+              class="btn btn-primary btn-sm border-none bg-[#1f6feb] text-white hover:bg-[#1f6feb]"
               @click="handleGotoCourseList(coursePack.coursePackId)"
             >
               课程列表
             </button>
             <button
-              class="btn btn-primary btn-secondary btn-sm"
+              class="btn btn-primary btn-secondary btn-sm text-white"
               @click="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
             >
               继续游戏
