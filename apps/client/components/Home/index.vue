@@ -1,50 +1,61 @@
 <template>
-  <div class="flex h-full w-full py-6 md:px-12">
-    <div class="hidden min-w-56 md:block">
+  <div class="flex h-full w-full py-6">
+    <div class="mr-10 hidden max-w-[230px] md:block">
       <div class="md-4 flex flex-col md:mr-10">
-        <div class="m-auto overflow-hidden rounded-full border border-solid border-gray-200 p-1">
+        <div
+          class="h-[230px] w-[230px] overflow-hidden rounded-full border border-gray-200 p-[2px] dark:border-gray-600"
+        >
           <img
             :src="userStore.userInfo?.picture!"
-            class="h-40 w-40"
+            class="h-full w-full cursor-pointer"
           />
         </div>
-        <div class="mt-6 text-2xl">{{ userStore.userInfo?.username }}</div>
-        <div class="text-sm text-gray-300">{{ userStore.userInfo?.name }}</div>
-        <div class="border-t-solid border-t-black-200 mt-5 flex flex-col border-t pt-5">
-          <!-- <div class="text-2xl">勋章</div>
+        <div class="mt-6 text-2xl font-bold">{{ userStore.userInfo?.username }}</div>
+        <div class="text-xl font-light text-gray-400">
+          {{ userStore.userInfo?.name }}
+        </div>
+        <!-- TODO: 等勋章功能上线后，再显示此区域-->
+        <!-- <div
+          class="border-t-solid border-t-black-200 mt-5 flex flex-col border-t border-gray-300 pt-5 dark:border-gray-700"
+        >
+          <div class="text-md">勋章</div>
           <div class="mt-3 grid grid-cols-3 gap-2">
             <div
-              class="m-auto overflow-hidden rounded-full"
-              v-for="i in 13"
+              class="m-auto flex-shrink-0 overflow-hidden rounded-full"
+              v-for="i in 12"
               :key="i"
             >
               <img
                 src="https://sdfsdf.dev/72x72.png"
                 alt=""
-                class="h-10 w-10"
+                class="flex-shrink-0"
               />
             </div>
-          </div> -->
-        </div>
+          </div>
+        </div> -->
       </div>
     </div>
-    <div class="flex flex-1 flex-col">
-      <div class="flex items-center">
-        <div class="mr-auto text-2xl font-bold">最近使用的课程包</div>
-        <NuxtLink
-          href="/course-pack"
-          class="btn btn-primary btn-sm mr-2"
-          >更多课程包</NuxtLink
-        >
-        <!-- <NuxtLink
+    <div
+      class="flex flex-1 flex-col justify-between rounded-md border border-gray-300 p-5 dark:border-gray-700"
+    >
+      <div class="top">
+        <div class="flex items-center">
+          <div class="mr-auto text-2xl font-bold">最近使用的课程包</div>
+          <NuxtLink
+            href="/course-pack"
+            class="btn btn-primary btn-sm mr-2 border-none bg-[#1f6feb] text-white"
+            >更多课程包</NuxtLink
+          >
+          <!-- <NuxtLink
           class="btn btn-primary btn-sm"
           href="/course-pack"
           >更多音乐</NuxtLink
         > -->
+        </div>
+        <HomeRecentCoursePack class="mt-3 md:mt-5" />
       </div>
-      <HomeRecentCoursePack class="mt-3 md:mt-5" />
-      <hr class="border-black-200 my-3 border border-solid md:my-5" />
-      <div class="border-black-200 w-full rounded-xl border border-solid p-4 shadow">
+      <hr class="my-3 border-gray-300 dark:border-gray-700 md:my-5" />
+      <div class="w-full rounded-xl">
         <HomeCalendarGraph
           :data="learnRecord.list"
           :totalCount="learnRecord.totalCount"
