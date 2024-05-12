@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full flex-col pt-2">
+  <div class="flex w-full flex-col">
     <h2 class="my-10 text-2xl font-bold">多课程包</h2>
     <template v-if="isLoading">
       <Loading></Loading>
