@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-full w-full py-6">
+  <div class="flex h-full w-full">
     <div class="mr-10 hidden max-w-[230px] md:block">
       <div class="md-4 flex flex-col md:mr-10">
         <div
