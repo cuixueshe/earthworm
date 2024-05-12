@@ -1,53 +1,67 @@
 <template>
-  <div class="max-w-[42rem]">
-    <table class="border-spacing-1/2 border-separate text-xs">
-      <thead>
-        <th></th>
-        <th
-          :colspan="colSpan"
-          v-for="{ colSpan, month } in thead"
-          :key="month"
-          class="text-left font-normal"
-        >
-          {{ month }}
-        </th>
-      </thead>
-      <tbody>
-        <tr
-          v-for="(row, i) in tbody"
-          :key="weeks[i]"
-        >
-          <td class="relative hidden w-8 md:block">
-            <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : "" }}</span>
-          </td>
-          <td
-            class="p-0"
-            v-for="(cell, j) in row"
-            :key="j"
+  <div class="flex justify-between">
+    <div class="main-info">
+      <table class="border-spacing-1/2 border-separate text-xs">
+        <thead>
+          <th></th>
+          <th
+            :colspan="colSpan"
+            v-for="{ colSpan, month } in thead"
+            :key="month"
+            class="text-left font-normal"
           >
-            <div
-              v-if="cell"
-              class="tooltip block"
-              :data-tip="cell.tips"
+            {{ month }}
+          </th>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(row, i) in tbody"
+            :key="weeks[i]"
+          >
+            <td class="relative hidden w-8 md:block">
+              <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : "" }}</span>
+            </td>
+            <td
+              class="m-0"
+              v-for="(cell, j) in row"
+              :key="j"
             >
-              <div :class="`cell ${cell.bg}`"></div>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              <div
+                v-if="cell"
+                class="tooltip block"
+                :data-tip="cell.tips"
+              >
+                <div :class="`cell ${cell.bg}`"></div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <div class="flex items-center justify-between px-8 py-2">
-      <div class="dropdown dropdown-bottom flex items-center">
-        <div
-          tabindex="0"
-          role="button"
-          class="btn btn-xs"
+      <div class="flex justify-between px-4 py-2">
+        <span class="justify-self-end pl-2 text-sm dark:text-gray-400">
+          一共学习了 {{ totalCount }} 次</span
         >
-          {{ year || yearOptions[0].label }}
+        <div class="flex items-center gap-1 text-xs">
+          <div class="text-gray-500">Less</div>
+          <div class="cell"></div>
+          <div class="cell low"></div>
+          <div class="cell moderate"></div>
+          <div class="cell high"></div>
+          <div class="cell higher"></div>
+          <div class="text-gray-500">More</div>
         </div>
-        <!-- TODO: 暂时只有 2024 年一年的数据 所以先不需要展开了 -->
-        <!-- <ul
+      </div>
+    </div>
+    <div class="dropdown dropdown-bottom ml-3 flex w-[120px]">
+      <div
+        tabindex="0"
+        class="h-fit w-full cursor-pointer rounded-md bg-[#1f6feb] p-2 text-sm text-white"
+      >
+        {{ year || yearOptions[0].label }}
+      </div>
+      <!-- TODO: 暂时只有 2024 年一年的数据 所以先不需要展开了 -->
+      <!-- <ul
           tabindex="0"
           class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
         >
@@ -59,18 +73,6 @@
             <a>{{ item.label }}</a>
           </li>
         </ul> -->
-        <span class="pl-2 text-sm"> 一共学习了 {{ totalCount }} 次</span>
-      </div>
-
-      <div class="flex items-center gap-1 text-xs">
-        <div class="text-gray-500">Less</div>
-        <div class="cell"></div>
-        <div class="cell low"></div>
-        <div class="cell moderate"></div>
-        <div class="cell high"></div>
-        <div class="cell higher"></div>
-        <div class="text-gray-500">More</div>
-      </div>
     </div>
   </div>
 </template>
@@ -97,7 +99,7 @@ watchEffect(() => {
 
 <style scoped>
 .cell {
-  @apply h-2.5 w-2.5 rounded-sm bg-[#ebedf0] dark:bg-[#2d333b];
+  @apply h-[11px] w-[11px] rounded-sm bg-[#ebedf0] dark:bg-[#2d333b];
 }
 
 .low {
