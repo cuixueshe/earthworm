@@ -54,8 +54,8 @@
         </div>
         <HomeRecentCoursePack class="mt-3 md:mt-5" />
       </div>
-      <hr class="my-3 border-gray-300 dark:border-gray-700 md:my-5" />
       <div class="w-full rounded-xl">
+        <hr class="my-3 border-gray-300 dark:border-gray-700 md:my-5" />
         <HomeCalendarGraph
           :data="learnRecord.list"
           :totalCount="learnRecord.totalCount"
