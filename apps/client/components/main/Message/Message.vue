@@ -40,7 +40,7 @@ onMounted(() => {
 <template>
   <Transition name="down">
     <div
-      class="fixed left-1/2 top-20 flex h-[40px] -translate-x-1/2 items-center justify-center rounded-md bg-opacity-90 px-6 py-0 text-center leading-[40px] shadow-md"
+      class="fixed left-1/2 top-20 z-[99999] flex h-[40px] -translate-x-1/2 items-center justify-center rounded-md bg-opacity-90 px-6 py-0 text-center leading-[40px] shadow-md"
       :class="type"
       :style="style[type]"
       v-if="isShow"
