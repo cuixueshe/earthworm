@@ -69,6 +69,25 @@ export class UserService {
       throw new HttpException(e.response.data.message, e.response.status);
     }
   }
+  async getUserByUsername(username: string) {
+    const params = new URLSearchParams([
+      ["page", "1"],
+      ["page_size", "1"],
+      ["search.username", username],
+    ]).toString();
+
+    try {
+      const res = await this.logtoService.logtoApi.get(`/api/users/?${params}`);
+      if (res.status === 200) {
+        const user = res.data.at(0);
+        return user;
+      } else {
+        return res.data;
+      }
+    } catch (e) {
+      throw new HttpException(e.response.data.message, e.response.status);
+    }
+  }
 
   async setupNewUser(user: UserEntity, dto: { username: string; avatar: string }) {
     if (!dto.avatar) {
