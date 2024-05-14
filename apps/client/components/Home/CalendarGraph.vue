@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-between">
-    <div class="main-info">
+  <div class="flex justify-between transition-all">
+    <div v-if="!loadingAnimation">
       <table class="border-spacing-1/2 border-separate text-xs">
         <thead>
           <th></th>
@@ -13,6 +13,7 @@
             {{ month }}
           </th>
         </thead>
+
         <tbody>
           <tr
             v-for="(row, i) in tbody"
@@ -21,18 +22,17 @@
             <td class="relative hidden w-8 md:block">
               <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : "" }}</span>
             </td>
+
             <td
               class="m-0"
               v-for="(cell, j) in row"
               :key="j"
             >
               <div
-                v-if="cell"
-                class="tooltip block"
-                :data-tip="cell.tips"
-              >
-                <div :class="`cell ${cell.bg}`"></div>
-              </div>
+                class="cell tooltip block"
+                :data-tip="cell?.tips"
+                :class="cell?.bg"
+              />
             </td>
           </tr>
         </tbody>
@@ -53,6 +53,12 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="h-40 w-[800px] rounded-lg bg-black/20 blur-sm"
+      v-else
+    />
+
     <div class="dropdown dropdown-bottom ml-3 flex w-[120px]">
       <div
         tabindex="0"
@@ -81,10 +87,13 @@
 import { onMounted, watchEffect } from "vue";
 
 import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
+import { useDarkMode } from "~/composables/darkMode";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
 
 const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
 const emits = defineEmits<EmitsType>();
+
+const { loadingAnimation } = useDarkMode();
 
 const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } = useCalendarGraph(emits);
 

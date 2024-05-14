@@ -11,6 +11,8 @@ const DARK_THEME_CLASS = "dark";
 const LIGHT_THEME_CLASS = "light";
 
 const darkMode = ref(Theme.LIGHT);
+const loadingAnimation = ref(false);
+
 export function useDarkMode() {
   const isAppearanceTransition =
     // @ts-expect-error: Transition API
@@ -53,6 +55,7 @@ export function useDarkMode() {
     });
 
     transition.ready.then(() => {
+      loadingAnimation.value = true;
       const clipPath = [`circle(0px at ${x}px ${y}px)`, `circle(${endRadius}px at ${x}px ${y}px)`];
       document.documentElement.animate(
         {
@@ -64,6 +67,10 @@ export function useDarkMode() {
           pseudoElement: isDark ? "::view-transition-new(root)" : "::view-transition-old(root)",
         },
       );
+    });
+
+    transition.finished.then(() => {
+      loadingAnimation.value = false;
     });
   };
 
@@ -82,5 +89,6 @@ export function useDarkMode() {
     toggleDarkMode,
     initDarkMode,
     darkMode,
+    loadingAnimation,
   };
 }
