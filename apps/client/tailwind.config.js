@@ -56,5 +56,19 @@ export default {
       // 来这里找 https://icones.js.org/
       collections: getIconCollections(["ph", "simple-icons"]),
     }),
+    function ({ addComponents }) {
+      const buttons = {
+        ".tw-btn-blue": {
+          backgroundColor: "#4e80ee",
+          color: "#fff",
+          border: "none",
+          "&:hover": {
+            backgroundColor: "#3662e3",
+          },
+        },
+      };
+
+      addComponents(buttons);
+    },
   ],
 };

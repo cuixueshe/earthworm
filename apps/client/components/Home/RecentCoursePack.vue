@@ -1,45 +1,41 @@
 <template>
-  <div class="border-1 w-full rounded-sm px-4 md:px-0">
+  <div class="flex min-h-80">
+    <!-- Loading -->
     <div
-      class="flex min-h-[350px] w-full flex-wrap items-center justify-center gap-4"
       v-if="isLoading"
+      class="flex flex-1 items-center justify-center"
     >
       <span class="loading loading-dots loading-md"></span>
     </div>
+
     <div
       v-else
-      class="flex flex-wrap gap-4"
+      class="grid w-full grid-cols-1 gap-4 min-[500px]:grid-cols-2 md:grid-cols-1 min-[850px]:grid-cols-2 xl:grid-cols-3"
     >
       <div
+        class="course-pack-card"
         v-for="coursePack in coursePacks"
-        :key="coursePack.id"
-        class="card flex w-72 shrink-0 flex-col gap-2 bg-base-100 shadow transition-shadow hover:shadow-lg"
       >
-        <figure>
-          <NuxtImg
+        <div class="h-40">
+          <img
+            class="h-full w-full bg-gray-200"
             :src="coursePack.cover"
-            :placeholder="[288, 180]"
-            width="288"
-            height="180"
           />
-        </figure>
-        <div class="mt-2 p-4">
-          <h2 class="card-title dark:text-white">{{ coursePack.title }}</h2>
-          <div class="max-h-30 mt-2 flex min-h-20 flex-grow flex-col truncate text-gray-400">
-            <span> 课程简介 </span>
-            <span class="text-[14px]">
-              {{ coursePack.description }}
-            </span>
-          </div>
-          <div class="flex items-center justify-between">
+        </div>
+        <div class="flex flex-1 flex-col p-4">
+          <h2 class="truncate text-lg font-semibold">{{ coursePack.title }}</h2>
+          <p class="mt-2 line-clamp-2 min-h-[3em] text-sm text-gray-500">
+            {{ coursePack.description }}
+          </p>
+          <div class="mt-auto flex justify-between">
             <button
-              class="btn btn-primary btn-sm border-none bg-[#1f6feb] text-white hover:bg-[#1f6feb]"
+              class="btn btn-sm tw-btn-blue"
               @click="handleGotoCourseList(coursePack.coursePackId)"
             >
               课程列表
             </button>
             <button
-              class="btn btn-primary btn-secondary btn-sm text-white"
+              class="btn btn-success btn-sm text-white"
               @click="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
             >
               继续游戏
@@ -81,3 +77,10 @@ function handleContinueGame(coursePackId: string, courseId: string) {
   navigateTo(`/game/${coursePackId}/${courseId}`);
 }
 </script>
+
+<style scoped>
+.course-pack-card {
+  @apply flex h-[350px] cursor-pointer flex-col overflow-hidden rounded-md rounded-t-xl border bg-white transition-all duration-300 dark:border-gray-700 dark:bg-gray-900;
+  @apply hover:text-purple-500 hover:shadow-even-lg hover:shadow-gray-300 hover:dark:text-purple-400 dark:hover:shadow-gray-500;
+}
+</style>

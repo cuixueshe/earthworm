@@ -14,7 +14,7 @@
               <img
                 width="48"
                 height="48"
-                class="mr-6 hidden overflow-hidden rounded-md min-[800px]:block"
+                class="mr-6 hidden overflow-hidden rounded-md md:block"
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
@@ -62,15 +62,16 @@
           <button
             v-else
             aria-label="Login"
-            class="btn btn-sm mr-1 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-700"
+            class="btn btn-sm mr-1 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 focus:outline-none"
             @click="signIn()"
           >
             登录
           </button>
 
           <!-- 切换主题 -->
+          <!-- -mr-1 是为了和主体内容按钮/其他元素做右对齐 -->
           <button
-            class="btn btn-ghost btn-sm ml-1 h-8 w-8 rounded-md p-0"
+            class="btn btn-ghost btn-sm -mr-1 ml-1 h-8 w-8 rounded-md p-0"
             @click="toggleDarkMode"
           >
             <span
