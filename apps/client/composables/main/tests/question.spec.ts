@@ -603,6 +603,7 @@ describe("isWord", () => {
 
   it("should return false for a string without any English letters", () => {
     expect(isWord("12345")).toBe(false);
+    expect(isWord("—")).toBe(false);
     expect(isWord("！@#$%^&*()")).toBe(false);
     expect(isWord("こんにちは")).toBe(false); // Japanese characters
   });
