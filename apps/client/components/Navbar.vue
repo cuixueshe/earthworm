@@ -2,8 +2,9 @@
   <header
     class="w-full px-5 font-customFont transition-all duration-300 ease-linear"
     :class="{
-      'sticky top-0 z-20': isStickyNavBar,
-      'glass bg-gradient-to-r from-transparent via-white/10 to-transparent shadow-md': isScrolled,
+      'sticky top-0 z-10': isStickyNavBar,
+      'glass bg-gradient-to-r from-transparent via-white/10 to-transparent shadow-md':
+        isStickyNavBar && isScrolled,
     }"
   >
     <div class="mx-auto max-w-screen-xl">

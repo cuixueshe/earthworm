@@ -6,13 +6,13 @@
     <div class="flex items-center">
       <NuxtLink
         :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
-        class="clickable-item tooltip-item"
+        class="clickable-item tooltip"
         data-tip="课程列表"
       >
         <IconsExpand class="h-7 w-7" />
       </NuxtLink>
       <div
-        class="clickable-item tooltip-item ml-4"
+        class="clickable-item tooltip ml-4"
         data-tip="课程题目列表"
         @click="toggleContents"
       >
@@ -27,14 +27,14 @@
     <!-- 右侧 -->
     <div class="flex items-center">
       <div
-        class="tooltip-item mr-4"
+        class="tooltip mr-4"
         data-tip="重置当前课程进度"
         @click="handleDoAgain"
       >
         <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
       </div>
       <div
-        class="tooltip-item mr-1"
+        class="tooltip mr-1"
         data-tip="排行榜"
         @click="rankingStore.showRankModal"
       >
@@ -117,10 +117,6 @@ function useDoAgain() {
 </script>
 
 <style scoped>
-.tooltip-item {
-  @apply tooltip z-20;
-}
-
 .clickable-item {
   @apply cursor-pointer select-none hover:text-fuchsia-500;
 }
