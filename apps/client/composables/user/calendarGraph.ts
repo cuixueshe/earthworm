@@ -1,3 +1,4 @@
+import { useDevice } from "#imports";
 import { ref } from "vue";
 
 const weeks: Record<number, string> = {
@@ -54,6 +55,9 @@ const thead = ref<TableHead[]>([]);
 const tbody = ref<(null | TableBody)[][]>([]);
 
 export function useCalendarGraph(emits: EmitsType) {
+  const { isMobile } = useDevice();
+  const MONTHS_TO_SHOW_MOBILE = 5;
+
   /**
    * format date
    * @param date date
@@ -128,9 +132,24 @@ export function useCalendarGraph(emits: EmitsType) {
   }
 
   function calcDateRange(year?: number) {
-    const startDate = year ? new Date(`${year}-01-01`) : calcStartDate(new Date());
-    const endDate = year ? new Date(`${year}-12-31`) : new Date();
-    return { startDate, endDate };
+    if (isMobile.value) {
+      const currentDate = new Date();
+      const startMonth = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth() - Math.floor(MONTHS_TO_SHOW_MOBILE / 2),
+        1,
+      );
+      const endMonth = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth() + Math.ceil(MONTHS_TO_SHOW_MOBILE / 2),
+        0,
+      );
+      return { startDate: startMonth, endDate: endMonth };
+    } else {
+      const startDate = year ? new Date(`${year}-01-01`) : calcStartDate(new Date());
+      const endDate = year ? new Date(`${year}-12-31`) : new Date();
+      return { startDate, endDate };
+    }
   }
 
   function initTbody(startDate: Date) {
@@ -148,7 +167,7 @@ export function useCalendarGraph(emits: EmitsType) {
     const tbody: (null | TableBody)[][] = initTbody(startDate);
     const thead: { offset: number; month: number }[] = [];
 
-    let theadLen = 12;
+    let theadLen = isMobile.value ? MONTHS_TO_SHOW_MOBILE : 12;
     let nextDate = new Date(+startDate);
     while (nextDate <= endDate) {
       const month = nextDate.getMonth();
@@ -178,6 +197,10 @@ export function useCalendarGraph(emits: EmitsType) {
       tbody[week].push({ date: new Date(+nextDate) });
 
       nextDate.setDate(day + 1);
+    }
+
+    while (isMobile && thead.length < MONTHS_TO_SHOW_MOBILE) {
+      thead.push({ offset: thead.length * 4, month: (thead.length + startDate.getMonth()) % 12 });
     }
 
     return { thead, tbody };

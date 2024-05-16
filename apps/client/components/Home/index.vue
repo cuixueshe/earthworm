@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-8 flex w-full justify-between">
+  <div class="mt-8 flex w-full justify-between overflow-hidden">
     <!-- 左侧头像区域 -->
     <div class="mr-16 hidden w-72 md:block">
       <div class="mx-auto h-56 w-56 overflow-hidden">
@@ -26,23 +26,28 @@
     </div>
 
     <!-- 右侧课程包区域 -->
-    <div class="flex-1">
-      <div class="mb-4 flex justify-between border-b pb-2 dark:border-gray-700">
-        <div class="text-xl font-medium">最近使用的课程包</div>
-        <NuxtLink
-          href="/course-pack"
-          class="link text-blue-500 no-underline hover:opacity-75"
-          >更多课程包
-        </NuxtLink>
-      </div>
-      <HomeRecentCoursePack />
+    <div class="flex flex-1 flex-col justify-between">
+      <div class="mb-4 flex flex-col justify-between">
+        <div class="header mb-4 flex items-center justify-between">
+          <div class="text-xl font-medium">最近使用的课程包</div>
+          <NuxtLink
+            href="/course-pack"
+            class="link text-blue-500 no-underline hover:opacity-75"
+            >更多课程包
+          </NuxtLink>
+        </div>
 
-      <hr class="my-5 dark:border-gray-700" />
-      <HomeCalendarGraph
-        :data="learnRecord.list"
-        :totalCount="learnRecord.totalCount"
-        @toggleYear="toggleYear"
-      />
+        <HomeRecentCoursePack />
+      </div>
+
+      <div class="mb-6">
+        <hr class="my-5 dark:border-gray-700" />
+        <HomeCalendarGraph
+          :data="learnRecord.list"
+          :totalCount="learnRecord.totalCount"
+          @toggleYear="toggleYear"
+        />
+      </div>
     </div>
   </div>
 </template>

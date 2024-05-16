@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-    <div class="dropdown dropdown-bottom ml-3 flex w-[120px]">
+    <div class="dropdown dropdown-bottom ml-3 hidden w-[120px] md:block">
       <div
         tabindex="0"
         class="h-fit w-full cursor-pointer rounded-md bg-[#1f6feb] p-2 text-sm text-white"

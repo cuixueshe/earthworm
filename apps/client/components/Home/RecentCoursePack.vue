@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-80">
+  <div class="flex">
     <!-- Loading -->
     <div
       v-if="isLoading"
@@ -10,15 +10,15 @@
 
     <div
       v-else
-      class="grid w-full grid-cols-1 gap-4 min-[500px]:grid-cols-2 md:grid-cols-1 min-[850px]:grid-cols-2 xl:grid-cols-3"
+      class="gap-4md:grid-cols-1 grid w-full grid-cols-1 min-[850px]:grid-cols-2 xl:grid-cols-3"
     >
       <div
         class="course-pack-card"
         v-for="coursePack in coursePacks"
       >
-        <div class="h-40">
+        <div class="h-50">
           <img
-            class="h-full w-full bg-gray-200"
+            class="h-full w-full bg-gray-200 object-cover"
             :src="coursePack.cover"
           />
         </div>
@@ -80,7 +80,7 @@ function handleContinueGame(coursePackId: string, courseId: string) {
 
 <style scoped>
 .course-pack-card {
-  @apply flex h-[350px] cursor-pointer flex-col overflow-hidden rounded-md rounded-t-xl border bg-white transition-all duration-300 dark:border-gray-700 dark:bg-gray-900;
+  @apply flex cursor-pointer flex-col overflow-hidden rounded-md rounded-t-xl border bg-white transition-all duration-300 dark:border-gray-700 dark:bg-gray-900;
   @apply hover:text-purple-500 hover:shadow-even-lg hover:shadow-gray-300 hover:dark:text-purple-400 dark:hover:shadow-gray-500;
 }
 </style>
