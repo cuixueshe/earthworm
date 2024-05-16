@@ -1,6 +1,6 @@
 <template>
   <div
-    class="dropdown dropdown-end h-8 w-8"
+    class="dropdown dropdown-end z-[35] h-8 w-8"
     @click="toggleDropdown"
   >
     <button
@@ -13,7 +13,7 @@
       v-if="showDropdown"
       ref="dropdownContainer"
       tabindex="0"
-      class="menu dropdown-content z-[1] mt-2 w-52 rounded-md border-2 border-gray-200 bg-white p-2 dark:border-gray-600 dark:bg-theme-dark"
+      class="menu dropdown-content z-[40] mt-2 w-52 rounded-md border-2 border-gray-200 bg-white p-2 dark:border-gray-600 dark:bg-theme-dark"
     >
       <li
         v-for="(item, index) in showMenuOptions"
