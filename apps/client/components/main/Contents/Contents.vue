@@ -1,7 +1,7 @@
 <template>
   <div
     id="contents"
-    class="absolute left-0 top-20 z-20 w-80 select-none overflow-x-hidden border-l-4 border-fuchsia-500 bg-white shadow dark:bg-slate-800"
+    class="absolute left-0 top-20 z-10 w-80 select-none overflow-x-hidden border-l-4 border-fuchsia-500 bg-white shadow dark:bg-slate-800"
     :class="[isShowContents() && 'show']"
     v-bind="containerProps"
   >
