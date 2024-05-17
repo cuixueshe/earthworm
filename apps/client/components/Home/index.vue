@@ -4,7 +4,7 @@
     <div class="mr-16 hidden w-72 md:block">
       <div class="mx-auto h-56 w-56 overflow-hidden">
         <img
-          class="h-full w-full rounded-full border-2 border-gray-300 bg-gray-200 dark:border-gray-700"
+          class="h-full w-full rounded-full border-2 border-gray-300 bg-gray-300 object-cover dark:border-gray-700 dark:bg-gray-700"
           :src="userStore.userInfo?.picture!"
         />
       </div>
@@ -26,7 +26,7 @@
     </div>
 
     <!-- 右侧课程包区域 -->
-    <div class="flex-1">
+    <div class="min-w-0 flex-1">
       <div class="mb-4 flex justify-between border-b pb-2 dark:border-gray-700">
         <div class="text-xl font-medium">最近使用的课程包</div>
         <NuxtLink
@@ -36,9 +36,8 @@
         </NuxtLink>
       </div>
       <HomeRecentCoursePack />
-
-      <hr class="my-5 dark:border-gray-700" />
       <HomeCalendarGraph
+        class="mt-10"
         :data="learnRecord.list"
         :totalCount="learnRecord.totalCount"
         @toggleYear="toggleYear"

@@ -16,18 +16,16 @@
         class="course-pack-card"
         v-for="coursePack in coursePacks"
       >
-        <div class="h-40">
-          <img
-            class="h-full w-full bg-gray-200"
-            :src="coursePack.cover"
-          />
-        </div>
+        <img
+          class="min-h-44 w-full bg-gray-300 object-cover dark:bg-gray-700"
+          :src="coursePack.cover"
+        />
         <div class="flex flex-1 flex-col p-4">
           <h2 class="truncate text-lg font-semibold">{{ coursePack.title }}</h2>
-          <p class="mt-2 line-clamp-2 min-h-[3em] text-sm text-gray-500">
+          <p class="my-2 line-clamp-2 min-h-[3em] text-sm text-gray-500">
             {{ coursePack.description }}
           </p>
-          <div class="mt-auto flex justify-between">
+          <div class="flex justify-between">
             <button
               class="btn btn-sm tw-btn-blue"
               @click="handleGotoCourseList(coursePack.coursePackId)"
@@ -80,7 +78,7 @@ function handleContinueGame(coursePackId: string, courseId: string) {
 
 <style scoped>
 .course-pack-card {
-  @apply flex h-[350px] cursor-pointer flex-col overflow-hidden rounded-md rounded-t-xl border bg-white transition-all duration-300 dark:border-gray-700 dark:bg-gray-900;
+  @apply flex cursor-pointer flex-col overflow-hidden rounded-md rounded-t-xl border bg-white transition-all duration-300 dark:border-gray-700 dark:bg-gray-900;
   @apply hover:text-purple-500 hover:shadow-even-lg hover:shadow-gray-300 hover:dark:text-purple-400 dark:hover:shadow-gray-500;
 }
 </style>

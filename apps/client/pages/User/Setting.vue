@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto my-8 w-full min-w-max max-w-screen-lg space-y-8 rounded-xl bg-base-100 px-6 py-8 shadow-even-xl dark:shadow-purple-500/30 md:px-12"
+    class="mx-auto my-8 w-full min-w-max max-w-screen-lg space-y-8 rounded-xl bg-base-100 px-6 py-8 shadow-even-xl dark:bg-gray-900 dark:shadow-purple-500/30 md:px-12"
   >
     <section>
       <h2 class="text-xl font-medium">游戏模式</h2>
