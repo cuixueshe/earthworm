@@ -5,7 +5,7 @@
       class="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-4 text-xs dark:border-gray-700"
     >
       <div class="w-full overflow-x-auto">
-        <table class="mx-auto overflow-hidden">
+        <table class="mx-auto mb-2 overflow-hidden">
           <thead>
             <th></th>
             <th
@@ -31,12 +31,11 @@
                 :key="j"
               >
                 <div
-                  v-if="cell"
-                  class="tooltip block"
-                  :data-tip="cell.tips"
-                >
-                  <div :class="`cell ${cell.bg}`"></div>
-                </div>
+                  class="cell block"
+                  :class="cell?.bg"
+                  :data-tippy-content="cell?.tips"
+                  @mouseenter="lazyTippy"
+                />
               </td>
             </tr>
           </tbody>
@@ -80,7 +79,8 @@ import { useCalendarGraph } from "~/composables/user/calendarGraph";
 const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
 const emits = defineEmits<EmitsType>();
 
-const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits);
+const { initTable, renderBody, thead, tbody, weeksZh, yearOptions, lazyTippy } =
+  useCalendarGraph(emits);
 
 onMounted(() => {
   initTable();

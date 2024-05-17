@@ -1,4 +1,10 @@
+import type { Instance } from "tippy.js";
+
+import tippy from "tippy.js";
 import { ref } from "vue";
+
+import "tippy.js/dist/tippy.css";
+import "tippy.js/dist/svg-arrow.css";
 
 const weeks: Record<number, string> = {
   0: "Sun",
@@ -211,6 +217,24 @@ export function useCalendarGraph(emits: EmitsType) {
     return { thead, tbody };
   }
 
+  const tippyInstances = new Map<HTMLElement, Instance>();
+
+  function lazyTippy(e: MouseEvent) {
+    const target = e.target as HTMLElement;
+    if (!target) return;
+
+    let instance = tippyInstances.get(target);
+    if (!instance) {
+      instance = tippy(target, {
+        moveTransition: "transform 0.1s ease-out",
+        arrow: true,
+      });
+      tippyInstances.set(target, instance);
+    }
+
+    instance.show();
+  }
+
   return {
     format,
     calcStartDate,
@@ -228,5 +252,6 @@ export function useCalendarGraph(emits: EmitsType) {
     tbody,
     year,
     yearOptions,
+    lazyTippy,
   };
 }
