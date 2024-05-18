@@ -3,10 +3,11 @@
     <!-- left arrow button: go to previous question -->
     <div class="h-12 w-12">
       <button
-        class="arrow-btn tooltip"
-        :data-tip="PREV_BTN_TIP"
+        class="arrow-btn"
         @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
+        :data-tippy-content="PREV_BTN_TIP"
+        @mouseenter="$lazyTippy"
       >
         <span class="i-ph-caret-left h-12 w-12"></span>
       </button>
@@ -14,11 +15,12 @@
     <!-- right arrow button: go to next question -->
     <div class="h-12 w-12">
       <button
-        class="arrow-btn tooltip"
+        class="arrow-btn"
         @click="goToNextQuestion"
-        :data-tip="NEXT_BTN_TIP"
         totalQuestionsCount
         v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
+        :data-tippy-content="NEXT_BTN_TIP"
+        @mouseenter="$lazyTippy"
       >
         <span class="i-ph-caret-right h-12 w-12"></span>
       </button>
