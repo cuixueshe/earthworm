@@ -1,7 +1,7 @@
 <template>
   <div
-    :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     class="course-card"
+    :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     :class="{
       'state-finished': hasFinished,
       'current-card': isActiveCourse,

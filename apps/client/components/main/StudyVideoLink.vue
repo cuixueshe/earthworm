@@ -1,9 +1,9 @@
 <template>
   <NuxtLink
     v-if="noteLink"
+    target="_blank"
     class="flex cursor-pointer items-center fill-current text-xl hover:text-fuchsia-500"
     :href="noteLink"
-    target="_blank"
     :data-tippy-content="NOTE_TIP"
     @mouseenter="$lazyTippy"
   >

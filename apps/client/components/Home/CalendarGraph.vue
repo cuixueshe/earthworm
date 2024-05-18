@@ -5,14 +5,17 @@
       class="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-4 text-xs dark:border-gray-700"
     >
       <div class="w-full overflow-x-auto">
-        <table class="mx-auto mb-2">
+        <table
+          class="mx-auto mb-2"
+          ref="calendarTable"
+        >
           <thead>
             <th></th>
             <th
-              :colspan="colSpan"
               v-for="{ colSpan, month } in thead"
-              :key="month"
               class="text-left font-normal"
+              :colspan="colSpan"
+              :key="month"
             >
               {{ month }}
             </th>
@@ -26,15 +29,15 @@
                 <span class="absolute">{{ i % 2 !== 0 ? weeksZh[i] : "" }}</span>
               </td>
               <td
-                class="m-0"
                 v-for="(cell, j) in row"
+                class="m-0"
                 :key="j"
               >
                 <div
                   class="cell block"
                   :class="cell?.bg"
                   :data-tippy-content="cell?.tips"
-                  @mouseenter="$calendarTippy"
+                  @mouseenter="(e) => $calendarTippy(e, calendarTable)"
                 />
               </td>
             </tr>
@@ -61,8 +64,8 @@
     <!-- 右侧年份选项 -->
     <!-- TODO: 多年份选择还没做，目前只有 2024，先写死了 -->
     <div
-      class="btn btn-sm tw-btn-blue ml-6 hidden pr-7 xl:flex"
       v-for="year in yearOptions"
+      class="btn btn-sm tw-btn-blue ml-6 hidden pr-7 xl:flex"
       :key="year.value"
     >
       {{ year.label }}
@@ -71,13 +74,14 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watchEffect } from "vue";
+import { onMounted, ref, watchEffect } from "vue";
 
 import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
 
 const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
 const emits = defineEmits<EmitsType>();
+const calendarTable = ref<HTMLTableElement>();
 
 const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits);
 
@@ -92,7 +96,7 @@ watchEffect(() => {
 
 <style scoped>
 .cell {
-  @apply mt-[2px] h-[12px] w-[12px] rounded-sm bg-[#ebedf0] dark:bg-[#2d333b];
+  @apply mt-[2px] h-[12px] w-[12px] rounded-sm border-gray-200 bg-gray-200 hover:scale-125 hover:border hover:border-blue-400 dark:bg-gray-700 dark:hover:border-gray-50;
 }
 
 .low {

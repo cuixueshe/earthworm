@@ -5,17 +5,17 @@
     <!-- 左侧 -->
     <div class="flex items-center">
       <NuxtLink
-        :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
         class="clickable-item"
         data-tippy-content="课程列表"
+        :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
         @mouseenter="$lazyTippy"
       >
         <IconsExpand class="h-7 w-7" />
       </NuxtLink>
       <div
         class="clickable-item ml-4"
-        @click="toggleContents"
         data-tippy-content="课程题目列表"
+        @click="toggleContents"
         @mouseenter="$lazyTippy"
       >
         {{ currentCourseInfo }}
@@ -30,16 +30,16 @@
     <div class="flex items-center">
       <div
         class="mr-4"
-        @click="handleDoAgain"
         data-tippy-content="重置当前课程进度"
+        @click="handleDoAgain"
         @mouseenter="$lazyTippy"
       >
         <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
       </div>
       <div
         class="tooltip mr-1"
-        @click="rankingStore.showRankModal"
         data-tippy-content="排行榜"
+        @click="rankingStore.showRankModal"
         @mouseenter="$lazyTippy"
       >
         <span class="clickable-item icon-item i-ph-ranking"></span>

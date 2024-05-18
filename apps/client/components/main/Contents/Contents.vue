@@ -13,9 +13,9 @@
         v-for="item in list"
         :key="item.data.id"
         :class="getItemClassNames(item.index)"
-        @click="jumpTo(item.index)"
         :data-tippy-content="`${item.data.english}<br>${item.data.chinese}`"
-        @mouseenter="(e: MouseEvent) => $lazyTippy(e, item.index <= 1 ? 'bottom' : 'top', false)"
+        @click="jumpTo(item.index)"
+        @mouseenter="$lazyTippy"
       >
         <div class="flex whitespace-pre-wrap border-b py-1 dark:border-slate-600">
           <div class="w-12 text-center">{{ item.index + 1 }}</div>
