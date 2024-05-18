@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/globals.css"],
   modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/image", "@nuxt/test-utils/module"],
-  plugins: ["~/plugins/logto.ts"],
+  plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts"],
   runtimeConfig: {
     public: {
       endpoint: process.env.LOGTO_ENDPOINT || "",

@@ -1,24 +1,25 @@
 <template>
   <div class="absolute flex w-full items-center justify-between">
-    <!-- left arrow button: go to previous question -->
     <div class="h-12 w-12">
       <button
-        class="arrow-btn tooltip"
-        :data-tip="PREV_BTN_TIP"
-        @click="goToPreviousQuestion"
         v-show="courseStore.statementIndex !== 0"
+        class="arrow-btn"
+        :data-tippy-content="PREV_BTN_TIP"
+        @click="goToPreviousQuestion"
+        @mouseenter="$lazyTippy"
       >
         <span class="i-ph-caret-left h-12 w-12"></span>
       </button>
     </div>
-    <!-- right arrow button: go to next question -->
+
     <div class="h-12 w-12">
       <button
-        class="arrow-btn tooltip"
-        @click="goToNextQuestion"
-        :data-tip="NEXT_BTN_TIP"
-        totalQuestionsCount
         v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
+        class="arrow-btn"
+        :data-tippy-content="NEXT_BTN_TIP"
+        totalQuestionsCount
+        @click="goToNextQuestion"
+        @mouseenter="$lazyTippy"
       >
         <span class="i-ph-caret-right h-12 w-12"></span>
       </button>

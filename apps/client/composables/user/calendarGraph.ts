@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { ref } from "vue";
 
 const weeks: Record<number, string> = {
@@ -116,13 +117,13 @@ export function useCalendarGraph(emits: EmitsType) {
     return tbody.value.map((row) => {
       return row.map((item) => {
         if (!item) return null;
+
         const year = item.date.getFullYear();
         const month = String(item.date.getMonth() + 1).padStart(2, "0");
         const day = String(item.date.getDate()).padStart(2, "0");
-        const date = format(item.date);
-        const current = list.find((f) => {
-          return f.day === date;
-        });
+        const date = dayjs(item.date).format("YYYY-MM-DD");
+
+        const current = list.find((f) => f.day === date);
 
         const tipText = current?.count ? `${current?.count}次学习` : `没有学习`;
         const tips = `${tipText}, ${year}-${month}-${day}`;

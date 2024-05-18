@@ -13,13 +13,11 @@
         v-for="item in list"
         :key="item.data.id"
         :class="getItemClassNames(item.index)"
+        :data-tippy-content="`${item.data.english}<br>${item.data.chinese}`"
         @click="jumpTo(item.index)"
+        @mouseenter="$lazyTippy"
       >
-        <div
-          class="tooltip flex whitespace-pre-wrap border-b py-1 dark:border-slate-600"
-          :class="{ 'tooltip-bottom': item.index <= 1 }"
-          :data-tip="item.data.english + '\n' + item.data.chinese"
-        >
+        <div class="flex whitespace-pre-wrap border-b py-1 dark:border-slate-600">
           <div class="w-12 text-center">{{ item.index + 1 }}</div>
           <div class="flex-1 truncate text-left">
             {{ item.data.chinese }}
