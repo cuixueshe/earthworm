@@ -34,7 +34,7 @@
                   class="cell block"
                   :class="cell?.bg"
                   :data-tippy-content="cell?.tips"
-                  @mouseenter="$lazyTippy"
+                  @mouseenter="$calendarTippy"
                 />
               </td>
             </tr>
