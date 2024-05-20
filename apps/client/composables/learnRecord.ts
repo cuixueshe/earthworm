@@ -8,6 +8,9 @@ const learnRecord = ref<UserLearnRecordResponse>({
   list: [],
   totalCount: 0,
 });
+
+const yearOptions = ref([2024, 2023, 2022]);
+
 let isSetup = false;
 
 export function useLearnRecord() {
@@ -39,6 +42,7 @@ export function useLearnRecord() {
 
   return {
     learnRecord,
+    yearOptions,
     updateLearnRecord,
     setQueryYear,
     setupLearnRecord,

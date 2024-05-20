@@ -40,6 +40,7 @@
         class="mt-10"
         :data="learnRecord.list"
         :totalCount="learnRecord.totalCount"
+        :yearOptions="yearOptions"
         @toggleYear="toggleYear"
       />
     </div>
@@ -53,7 +54,7 @@ import { type CalendarData } from "~/composables/user/calendarGraph";
 import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
-const { learnRecord, setupLearnRecord, setQueryYear } = useLearnRecord();
+const { learnRecord, setupLearnRecord, setQueryYear, yearOptions } = useLearnRecord();
 const { toggleYear } = useCalendarGraph();
 
 function useCalendarGraph() {
