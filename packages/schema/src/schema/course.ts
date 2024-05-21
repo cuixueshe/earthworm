@@ -10,6 +10,7 @@ export const course = pgTable("courses", {
     .primaryKey()
     .$defaultFn(() => createId()),
   title: varchar("title", { length: 256 }).notNull(),
+  description: text("description"),
   order: integer("order").notNull(),
   coursePackId: text("course_pack_id")
     .notNull()
