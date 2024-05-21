@@ -1,10 +1,8 @@
 {
-  "id": "9a2313f4-8fb8-4343-baa9-490277f21ee0",
-  "prevId": "00000000-0000-0000-0000-000000000000",
-  "version": "5",
-  "dialect": "pg",
+  "version": "6",
+  "dialect": "postgresql",
   "tables": {
-    "courses": {
+    "public.courses": {
       "name": "courses",
       "schema": "",
       "columns": {
@@ -51,21 +49,21 @@
         "courses_course_pack_id_course_packs_id_fk": {
           "name": "courses_course_pack_id_course_packs_id_fk",
           "tableFrom": "courses",
-          "tableTo": "course_packs",
           "columnsFrom": [
             "course_pack_id"
           ],
+          "tableTo": "course_packs",
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
+          "onUpdate": "no action",
+          "onDelete": "no action"
         }
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
-    "course_history": {
+    "public.course_history": {
       "name": "course_history",
       "schema": "",
       "columns": {
@@ -119,16 +117,16 @@
       "uniqueConstraints": {
         "course_history_user_id_course_id_course_pack_id_unique": {
           "name": "course_history_user_id_course_id_course_pack_id_unique",
-          "nullsNotDistinct": false,
           "columns": [
             "user_id",
             "course_id",
             "course_pack_id"
-          ]
+          ],
+          "nullsNotDistinct": false
         }
       }
     },
-    "course_packs": {
+    "public.course_packs": {
       "name": "course_packs",
       "schema": "",
       "columns": {
@@ -181,7 +179,7 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
-    "memberships": {
+    "public.memberships": {
       "name": "memberships",
       "schema": "",
       "columns": {
@@ -234,7 +232,7 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
-    "statements": {
+    "public.statements": {
       "name": "statements",
       "schema": "",
       "columns": {
@@ -293,21 +291,21 @@
         "statements_course_id_courses_id_fk": {
           "name": "statements_course_id_courses_id_fk",
           "tableFrom": "statements",
-          "tableTo": "courses",
           "columnsFrom": [
             "course_id"
           ],
+          "tableTo": "courses",
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
+          "onUpdate": "no action",
+          "onDelete": "no action"
         }
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
-    "user_course_progress": {
+    "public.user_course_progress": {
       "name": "user_course_progress",
       "schema": "",
       "columns": {
@@ -361,15 +359,15 @@
       "uniqueConstraints": {
         "user_course_progress_user_id_course_pack_id_unique": {
           "name": "user_course_progress_user_id_course_pack_id_unique",
-          "nullsNotDistinct": false,
           "columns": [
             "user_id",
             "course_pack_id"
-          ]
+          ],
+          "nullsNotDistinct": false
         }
       }
     },
-    "user_learn_record": {
+    "public.user_learn_record": {
       "name": "user_learn_record",
       "schema": "",
       "columns": {
@@ -418,11 +416,11 @@
       "uniqueConstraints": {
         "user_learn_record_user_id_day_unique": {
           "name": "user_learn_record_user_id_day_unique",
-          "nullsNotDistinct": false,
           "columns": [
             "user_id",
             "day"
-          ]
+          ],
+          "nullsNotDistinct": false
         }
       }
     }
@@ -430,8 +428,10 @@
   "enums": {},
   "schemas": {},
   "_meta": {
-    "columns": {},
     "schemas": {},
-    "tables": {}
-  }
+    "tables": {},
+    "columns": {}
+  },
+  "id": "9a2313f4-8fb8-4343-baa9-490277f21ee0",
+  "prevId": "00000000-0000-0000-0000-000000000000"
 }

@@ -15,6 +15,13 @@
       "when": 1714468289372,
       "tag": "0001_silly_silk_fever",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716295800305,
+      "tag": "0002_lonely_morg",
+      "breakpoints": true
     }
   ]
 }
