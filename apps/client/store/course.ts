@@ -22,6 +22,7 @@ export interface CourseIdentifier {
 export interface Course {
   id: string;
   title: string;
+  description: string;
   order: number;
   statements: Statement[];
   coursePackId: CoursePack["id"];

@@ -11,7 +11,7 @@
       {{ title }}
     </h3>
     <p class="mt-4 truncate text-sm text-gray-500 dark:text-gray-400">
-      {{ title }}的描述……（等你来写）
+      {{ description }}
     </p>
     <div
       v-if="hasFinished"
@@ -37,6 +37,7 @@ const props = defineProps<{
   id: string;
   count: number | undefined;
   coursePackId: string;
+  description: string;
 }>();
 const { activeCourseMap } = useActiveCourseMap();
 

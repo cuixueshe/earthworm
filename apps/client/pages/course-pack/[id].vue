@@ -18,6 +18,7 @@
           >
             <CoursesCourseCard
               :title="course.title"
+              :description="course.description"
               :id="course.id"
               :count="course.completionCount"
               :coursePackId="course.coursePackId"
