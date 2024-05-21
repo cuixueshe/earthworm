@@ -111,10 +111,11 @@ body {
 
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #e9e2e243;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -124,4 +125,9 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #cecacac7;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3b3c46;
+  border-radius: 7px;
 }

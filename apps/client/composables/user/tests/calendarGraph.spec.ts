@@ -114,18 +114,18 @@ describe("use calendar graph", () => {
     const data = renderHead(thead);
 
     expect(data).toEqual([
-      { colSpan: 5, month: "Jan" },
-      { colSpan: 4, month: "Feb" },
-      { colSpan: 5, month: "Mar" },
-      { colSpan: 4, month: "Apr" },
-      { colSpan: 4, month: "May" },
-      { colSpan: 5, month: "Jun" },
-      { colSpan: 4, month: "Jul" },
-      { colSpan: 4, month: "Aug" },
-      { colSpan: 5, month: "Sep" },
-      { colSpan: 4, month: "Oct" },
-      { colSpan: 4, month: "Nov" },
-      { colSpan: 5, month: "Dec" },
+      { colSpan: 5, month: "一月" },
+      { colSpan: 4, month: "二月" },
+      { colSpan: 5, month: "三月" },
+      { colSpan: 4, month: "四月" },
+      { colSpan: 4, month: "五月" },
+      { colSpan: 5, month: "六月" },
+      { colSpan: 4, month: "七月" },
+      { colSpan: 4, month: "八月" },
+      { colSpan: 5, month: "九月" },
+      { colSpan: 4, month: "十月" },
+      { colSpan: 4, month: "十一月" },
+      { colSpan: 5, month: "十二月" },
     ]);
   });
 
@@ -140,13 +140,13 @@ describe("use calendar graph", () => {
 
     const tbody = renderBody(apiData);
 
-    expect(tbody[1][0]?.tips).toBe("学习了 1 次  January 1st, 2024");
+    expect(tbody[1][0]?.tips).toBe("1次学习, 2024-01-01");
     expect(tbody[1][0]?.bg).toBe("low");
-    expect(tbody[2][0]?.tips).toBe("学习了 3 次  January 2nd, 2024");
+    expect(tbody[2][0]?.tips).toBe("3次学习, 2024-01-02");
     expect(tbody[2][0]?.bg).toBe("moderate");
-    expect(tbody[3][0]?.tips).toBe("学习了 5 次  January 3rd, 2024");
+    expect(tbody[3][0]?.tips).toBe("5次学习, 2024-01-03");
     expect(tbody[3][0]?.bg).toBe("high");
-    expect(tbody[4][0]?.tips).toBe("学习了 10 次  January 4th, 2024");
+    expect(tbody[4][0]?.tips).toBe("10次学习, 2024-01-04");
     expect(tbody[4][0]?.bg).toBe("higher");
   });
 });

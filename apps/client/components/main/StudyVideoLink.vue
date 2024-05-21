@@ -1,10 +1,11 @@
 <template>
   <NuxtLink
     v-if="noteLink"
-    class="tooltip flex cursor-pointer items-center fill-current text-xl hover:text-fuchsia-500"
-    :data-tip="NOTE_TIP"
-    :href="noteLink"
     target="_blank"
+    class="flex cursor-pointer items-center fill-current text-xl hover:text-fuchsia-500"
+    :href="noteLink"
+    :data-tippy-content="NOTE_TIP"
+    @mouseenter="$lazyTippy"
   >
     <span class="i-simple-icons-bilibili h-6 w-6 opacity-85"></span>
   </NuxtLink>

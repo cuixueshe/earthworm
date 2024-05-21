@@ -1,7 +1,7 @@
 <template>
   <div
-    :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     class="course-card"
+    :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     :class="{
       'state-finished': hasFinished,
       'current-card': isActiveCourse,
@@ -15,12 +15,13 @@
     </p>
     <div
       v-if="hasFinished"
-      class="count tooltip"
-      :data-tip="dataTip"
+      class="count"
       :class="{
         'state-finished-count': hasFinished,
         'current-count': isActiveCourse,
       }"
+      :data-tippy-content="dataTip"
+      @mouseenter="$lazyTippy"
     >
       {{ count }}
     </div>

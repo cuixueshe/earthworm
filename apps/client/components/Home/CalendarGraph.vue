@@ -1,92 +1,89 @@
 <template>
   <div class="flex justify-between">
-    <div class="main-info">
-      <table class="border-spacing-1/2 border-separate text-xs">
-        <thead>
-          <th></th>
-          <th
-            :colspan="colSpan"
-            v-for="{ colSpan, month } in thead"
-            :key="month"
-            class="text-left font-normal"
-          >
-            {{ month }}
-          </th>
-        </thead>
-        <tbody>
-          <tr
-            v-for="(row, i) in tbody"
-            :key="weeks[i]"
-          >
-            <td class="relative hidden w-8 md:block">
-              <span class="absolute bottom-[-3px]">{{ i % 2 !== 0 ? weeks[i] : "" }}</span>
-            </td>
-            <td
-              class="m-0"
-              v-for="(cell, j) in row"
-              :key="j"
+    <!-- 左侧打卡图 -->
+    <div
+      class="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-4 text-xs dark:border-gray-700"
+    >
+      <div class="w-full overflow-x-auto">
+        <table
+          class="mx-auto mb-2"
+          ref="calendarTable"
+        >
+          <thead>
+            <th></th>
+            <th
+              v-for="{ colSpan, month } in thead"
+              class="text-left font-normal"
+              :colspan="colSpan"
+              :key="month"
             >
-              <div
-                v-if="cell"
-                class="tooltip block"
-                :data-tip="cell.tips"
+              {{ month }}
+            </th>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(row, i) in tbody"
+              :key="weeksZh[i]"
+            >
+              <td class="relative hidden w-8 md:block">
+                <span class="absolute">{{ i % 2 !== 0 ? weeksZh[i] : "" }}</span>
+              </td>
+              <td
+                v-for="(cell, j) in row"
+                class="m-0"
+                :key="j"
               >
-                <div :class="`cell ${cell.bg}`"></div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                <div
+                  class="cell block"
+                  :class="cell?.bg"
+                  :data-tippy-content="cell?.tips"
+                  @mouseenter="(e) => $calendarTippy(e, calendarTable)"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <div class="flex justify-between px-4 py-2">
-        <span class="justify-self-end pl-2 text-sm dark:text-gray-400">
-          一共学习了 {{ totalCount }} 次</span
+      <div class="mt-2 flex justify-between px-1">
+        <span class="justify-self-end text-sm dark:text-gray-400">
+          一共学习了 <span class="font-semibold">{{ totalCount }}</span> 次</span
         >
         <div class="flex items-center gap-1 text-xs">
-          <div class="text-gray-500">Less</div>
+          <div class="text-gray-500">更少</div>
           <div class="cell"></div>
           <div class="cell low"></div>
           <div class="cell moderate"></div>
           <div class="cell high"></div>
           <div class="cell higher"></div>
-          <div class="text-gray-500">More</div>
+          <div class="text-gray-500">更多</div>
         </div>
       </div>
     </div>
-    <div class="dropdown dropdown-bottom ml-3 flex w-[120px]">
-      <div
-        tabindex="0"
-        class="h-fit w-full cursor-pointer rounded-md bg-[#1f6feb] p-2 text-sm text-white"
-      >
-        {{ year || yearOptions[0].label }}
-      </div>
-      <!-- TODO: 暂时只有 2024 年一年的数据 所以先不需要展开了 -->
-      <!-- <ul
-          tabindex="0"
-          class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
-        >
-          <li
-            v-for="item in yearOptions"
-            :key="item.value"
-            @click="initTable(item.value)"
-          >
-            <a>{{ item.label }}</a>
-          </li>
-        </ul> -->
+
+    <!-- 右侧年份选项 -->
+    <!-- TODO: 多年份选择还没做，目前只有 2024，先写死了 -->
+    <div
+      v-for="year in yearOptions"
+      class="btn btn-sm tw-btn-blue ml-6 hidden pr-7 xl:flex"
+      :key="year.value"
+    >
+      {{ year.label }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, watchEffect } from "vue";
+import { onMounted, ref, watchEffect } from "vue";
 
 import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
 
 const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
 const emits = defineEmits<EmitsType>();
+const calendarTable = ref<HTMLTableElement>();
 
-const { initTable, renderBody, weeks, thead, tbody, year, yearOptions } = useCalendarGraph(emits);
+const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits);
 
 onMounted(() => {
   initTable();
@@ -99,7 +96,7 @@ watchEffect(() => {
 
 <style scoped>
 .cell {
-  @apply h-[11px] w-[11px] rounded-sm bg-[#ebedf0] dark:bg-[#2d333b];
+  @apply mt-[2px] h-[12px] w-[12px] rounded-sm border-gray-200 bg-gray-200 hover:scale-125 hover:border hover:border-blue-400 dark:bg-gray-700 dark:hover:border-gray-50;
 }
 
 .low {
