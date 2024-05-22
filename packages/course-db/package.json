@@ -1,7 +1,7 @@
 {
   "name": "course-convertor",
   "version": "1.0.0",
-  "description": "处理所有和课程数据相关的脚本逻辑",
+  "description": "处理所有和课程数据相关的脚本逻辑。（不需要重构 目前都是临时逻辑 以后都需要用接口的方式来实现）",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
