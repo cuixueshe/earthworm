@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <div class="ml-8 inline-flex flex-wrap items-center gap-1 text-5xl">
+    <div class="ml-8 inline-flex flex-wrap items-center justify-center gap-1 text-5xl">
       <span
         v-for="word in words"
         :key="word"
