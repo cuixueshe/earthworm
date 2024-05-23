@@ -52,6 +52,7 @@ import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
+import { isWindows } from "~/utils/platform";
 import { getWordWidth, useQuestionInput } from "./questionInputHelper";
 import { usePlayTipSound, useTypingSound } from "./useTypingSound";
 
@@ -201,6 +202,14 @@ function handleCompositionEnd() {
 }
 
 function handleKeydown(e: KeyboardEvent) {
+  // 给 windows 用户添加 ctrl + backspace 删除上一个单词的快捷键
+  // 有些浏览器 input 不支持通过 ctrl + backspace 删除 所以自行扩展下
+  if (e.code === "Backspace" && e.ctrlKey && isWindows()) {
+    e.preventDefault();
+    deletePreviousWordOnWin();
+    return;
+  }
+
   // 避免在某些中文输入法中，按下 Ctrl 键时，输入法会将当前的预输入字符上屏
   if (e.ctrlKey) {
     e.preventDefault();
@@ -220,6 +229,21 @@ function handleKeydown(e: KeyboardEvent) {
       errorCallback: handleAnswerError,
     },
   });
+}
+
+function deletePreviousWordOnWin() {
+  var start = inputEl.value!.selectionStart!;
+  var end = inputEl.value!.selectionEnd!;
+  if (end === 0) return;
+
+  // 删除光标前的所有连续空格
+  while (start > 0 && inputValue.value[start - 1] === " ") {
+    start--;
+  }
+  var valueToCursor = inputValue.value.substring(0, start);
+  var newEnd = valueToCursor.lastIndexOf(" ") + 1 || 0;
+  inputValue.value = inputValue.value.substring(0, newEnd);
+  inputEl.value!.setSelectionRange(newEnd, newEnd);
 }
 
 function preventCursorMove(event: MouseEvent) {
