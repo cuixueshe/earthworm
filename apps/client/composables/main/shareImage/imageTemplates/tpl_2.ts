@@ -3,7 +3,8 @@ import type { ShareImageTemplateData } from "../share";
 export const tpl_2 = ({
   zhSentence,
   enSentence,
-  courseNum,
+  coursePackTitle,
+  courseTitle,
   userName,
   dateStr,
 }: ShareImageTemplateData) => ({
@@ -12,7 +13,7 @@ export const tpl_2 = ({
     tw: "w-full h-full flex flex-col overflow-hidden",
     style: {
       backgroundImage: `url('https://picsum.photos/400/600?blur&random=${Date.now()}')`,
-      fontFamily: '"EBGaramond", "nzgrKangxi", serif',
+      fontFamily: '"EBGaramond", "SourceHanSerifSCBold" , sans-serif',
     },
     children: [
       {
@@ -53,7 +54,14 @@ export const tpl_2 = ({
                     type: "span",
                     props: {
                       tw: "font-bold text-3xl pt-2",
-                      children: `Course ${courseNum}`,
+                      children: `${coursePackTitle}`,
+                    },
+                  },
+                  {
+                    type: "span",
+                    props: {
+                      tw: "font-bold text-3xl pt-2",
+                      children: `${courseTitle}`,
                     },
                   },
                   {

@@ -66,12 +66,13 @@
 import { ref, watch } from "vue";
 
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { convertTitleToNumber } from "~/composables/main/shareImage/convert";
 import { useGenerateShareImage, useShareModal } from "~/composables/main/shareImage/share";
 import { useCourseStore } from "~/store/course";
+import { useCoursePackStore } from "~/store/coursePack";
 import { useUserStore } from "~/store/user";
 import { formatSecondsToTime, getToday } from "~/utils/date";
 
+const coursePackStore = useCoursePackStore();
 const courseStore = useCourseStore();
 const userStore = useUserStore();
 const imageContainer = ref<HTMLDivElement>();
@@ -90,12 +91,13 @@ const {
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
     const username = userStore.userInfo?.username || "";
-    const convertedTitle = convertTitleToNumber(courseStore.currentCourse.title);
     const { year, month, day } = getToday();
+    const coursePackTitle = coursePackStore.currentCoursePack?.title || "";
     const totalRecordNumber = courseTimer.totalRecordNumber();
     const totalTime = formatSecondsToTime(courseTimer.calculateTotalTime());
     generateGalleryImage(
-      convertedTitle,
+      coursePackTitle,
+      courseStore.currentCourse.title,
       username,
       `${year}/${month}/${day}`,
       totalRecordNumber,

@@ -1,3 +1,4 @@
+import SourceHanSerifSCBold from "~/assets/font/SourceHanSerif/SourceHanSerifSC-Bold.otf";
 import { fontFetch } from "~/utils/fontLoader";
 
 const loadImage = async (url: string): Promise<HTMLImageElement> => {
@@ -67,7 +68,7 @@ export const fontZh = () => {
   if (preLoadZhFontData) {
     return preLoadZhFontData;
   }
-  return fontFetch(new URL("/public/fonts/nzgrKangxi.ttf", import.meta.url)).then((res) => {
+  return fontFetch(new URL(SourceHanSerifSCBold, import.meta.url)).then((res) => {
     preLoadZhFontData = res.arrayBuffer();
     return preLoadZhFontData;
   });

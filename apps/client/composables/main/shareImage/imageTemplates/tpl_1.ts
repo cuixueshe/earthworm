@@ -7,7 +7,8 @@ import type { ShareImageTemplateData } from "../share";
 export const tpl_1 = ({
   zhSentence,
   enSentence,
-  courseNum,
+  coursePackTitle,
+  courseTitle,
   totalRecordNumber,
   totalTime,
 }: ShareImageTemplateData) => {
@@ -32,7 +33,14 @@ export const tpl_1 = ({
                 type: "span",
                 props: {
                   tw: "text-slate-400 font-bold text-2xl",
-                  children: `Course ${courseNum}`,
+                  children: `${coursePackTitle}`,
+                },
+              },
+              {
+                type: "span",
+                props: {
+                  tw: "text-slate-400 font-bold text-2xl",
+                  children: `${courseTitle}`,
                 },
               },
               {
@@ -47,7 +55,7 @@ export const tpl_1 = ({
                 props: {
                   tw: "flex-1 flex flex-col font-bold text-slate-600 text-lg leading-snug italic font-serif text-2xl",
                   style: {
-                    fontFamily: '"EBGaramond", "nzgrKangxi", serif',
+                    fontFamily: '"EBGaramond", "SourceHanSerifSCBold" , sans-serif',
                   },
                   children: [
                     {

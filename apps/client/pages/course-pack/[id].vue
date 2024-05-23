@@ -48,11 +48,9 @@ const { updateActiveCourseMap } = useActiveCourseMap();
 setup();
 
 async function setup() {
-  if (!coursePackStore.currentCoursePack || coursePackId !== coursePackStore.currentCoursePack.id) {
-    isLoading.value = true;
-    await coursePackStore.setupCoursePack(coursePackId);
-    isLoading.value = false;
-  }
+  isLoading.value = true;
+  await coursePackStore.setupCoursePack(coursePackId);
+  isLoading.value = false;
 }
 
 function handleChangeCourse(courseId: string) {

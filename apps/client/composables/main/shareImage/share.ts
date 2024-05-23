@@ -14,7 +14,8 @@ export enum ShareImageTemplate {
 }
 
 export interface ShareImageTemplateData {
-  courseNum: string;
+  coursePackTitle: string;
+  courseTitle: string;
   zhSentence: string;
   enSentence: string;
   userName: string;
@@ -61,7 +62,7 @@ const generateConfig = async () => {
         data: fontEnData,
       },
       {
-        name: "nzgrKangxi",
+        name: "SourceHanSerifSCBold",
         data: fontZhData,
       },
     ],
@@ -84,14 +85,16 @@ export function useGenerateShareImage() {
 
   const chosenTemplate = (
     templateKey: ShareImageTemplate,
-    courseNum: string,
+    coursePackTitle: string,
+    courseTitle: string,
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
     totalTime: string,
   ) => {
     return imageTemplates[templateKey]({
-      courseNum,
+      coursePackTitle,
+      courseTitle,
       zhSentence: zhSentence.value,
       enSentence: enSentence.value,
       userName,
@@ -102,19 +105,30 @@ export function useGenerateShareImage() {
   };
 
   const generateGalleryImage = async (
-    courseNum: string,
+    coursePackTitle: string,
+    courseTitle: string,
     userName: string,
     dateStr: string,
     totalRecordNumber: number,
     totalTime: string,
   ) => {
     Object.values(ShareImageTemplate).forEach(async (template, index) => {
-      generateImage(courseNum, template, index, userName, dateStr, totalRecordNumber, totalTime);
+      generateImage(
+        coursePackTitle,
+        courseTitle,
+        template,
+        index,
+        userName,
+        dateStr,
+        totalRecordNumber,
+        totalTime,
+      );
     });
   };
 
   const generateImage = async (
-    courseNum: string,
+    coursePackTitle: string,
+    courseTitle: string,
     template: ShareImageTemplate,
     index: number,
     userName: string,
@@ -128,7 +142,15 @@ export function useGenerateShareImage() {
       canvasEl,
     };
     const svg = await satori(
-      chosenTemplate(template, courseNum, userName, dateStr, totalRecordNumber, totalTime),
+      chosenTemplate(
+        template,
+        coursePackTitle,
+        courseTitle,
+        userName,
+        dateStr,
+        totalRecordNumber,
+        totalTime,
+      ),
       await generateConfig(),
     ).catch((e) => {
       console.error("Error generating SVG");

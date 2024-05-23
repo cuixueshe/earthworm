@@ -16,18 +16,20 @@ import { useRoute } from "vue-router";
 
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
+import { useCoursePackStore } from "~/store/coursePack";
 
 const isLoading = ref(true);
 const route = useRoute();
-const coursesStore = useCourseStore();
+const coursePackStore = useCoursePackStore();
+const courseStore = useCourseStore();
 const { showQuestion } = useGameMode();
 
 showQuestion();
 
 onMounted(async () => {
   const { coursePackId, id } = route.params;
-  await coursesStore.setup(coursePackId as string, id as string);
-
+  await courseStore.setup(coursePackId as string, id as string);
+  await coursePackStore.setupCoursePack(coursePackId as string);
   isLoading.value = false;
 });
 </script>
