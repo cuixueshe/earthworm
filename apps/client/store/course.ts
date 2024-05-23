@@ -28,6 +28,7 @@ export interface Course {
   coursePackId: CoursePack["id"];
   completionCount: number;
   statementIndex: number;
+  video: string;
 }
 
 export const useCourseStore = defineStore("course", () => {

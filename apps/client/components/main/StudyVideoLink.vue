@@ -1,9 +1,9 @@
 <template>
   <NuxtLink
-    v-if="noteLink"
+    v-if="video"
     target="_blank"
     class="flex cursor-pointer items-center fill-current text-xl hover:text-fuchsia-500"
-    :href="noteLink"
+    :href="video"
     :data-tippy-content="NOTE_TIP"
     @mouseenter="$lazyTippy"
   >
@@ -12,19 +12,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, withDefaults } from "vue";
-
-import { getCourseLink } from "~/utils/courseLinks";
-
-const NOTE_TIP = "边学边练：星荣零基础学英语视频";
-const props = withDefaults(
-  defineProps<{
-    courseOrder?: number;
-  }>(),
-  {
-    courseOrder: 1,
-  },
-);
-
-const noteLink = computed(() => getCourseLink(props.courseOrder - 1));
+const NOTE_TIP = "边看边练";
+defineProps<{
+  video?: string;
+}>();
 </script>

@@ -22,7 +22,7 @@
       </div>
       <MainStudyVideoLink
         class="icon-item ml-1"
-        :course-order="courseStore.currentCourse?.order"
+        :video="courseStore.currentCourse?.video"
       />
     </div>
 
@@ -76,7 +76,6 @@ import { useContent } from "./Contents/useContents";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
-const coursePackStore = useCoursePackStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
