@@ -35,6 +35,8 @@ const firstCourse: Course = {
   coursePackId: "1",
   completionCount: 0,
   statementIndex: 0,
+  video: "",
+  description: "",
   statements: [
     { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
     { id: "2", order: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
@@ -102,15 +104,6 @@ describe("course", () => {
     //所以执行后 就应该是完成的状态
     store.toNextStatement();
     expect(store.isAllDone()).toBe(true);
-  });
-
-  it("checks if the answer is correct", async () => {
-    const store = useCourseStore();
-    await store.setup(coursePack.id, firstCourse.id);
-
-    expect(store.checkCorrect("I")).toBe(true);
-    expect(store.checkCorrect("i")).toBe(true);
-    expect(store.checkCorrect("like")).toBe(false);
   });
 
   it("the length of the word should be one", async () => {

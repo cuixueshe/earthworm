@@ -75,10 +75,6 @@ export const useCourseStore = defineStore("course", () => {
     updateActiveCourseMap(currentCourse.value?.coursePackId!, currentCourse.value?.id!);
   }
 
-  function checkCorrect(input: string) {
-    return input.toLocaleLowerCase() === currentStatement.value?.english.toLocaleLowerCase();
-  }
-
   async function completeCourse() {
     const coursePackId = currentCourse.value?.coursePackId!;
     const res = await fetchCompleteCourse(coursePackId, currentCourse.value?.id!);
@@ -100,7 +96,6 @@ export const useCourseStore = defineStore("course", () => {
     setup,
     doAgain,
     isAllDone,
-    checkCorrect,
     completeCourse,
     toSpecificStatement,
     toPreviousStatement,

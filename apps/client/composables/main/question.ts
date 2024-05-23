@@ -137,9 +137,20 @@ export function useInput({
     return userInputWords.every((w) => !w.incorrect);
   }
 
+  function formatLastWordUserInput(word: Word, index: number) {
+    const isLastWord = userInputWords.length - 1 === index;
+    if (isLastWord) {
+      if (word.userInput.endsWith(".")) {
+        word.userInput = word.userInput.slice(0, -1);
+      }
+    }
+  }
+
   function markIncorrectWord() {
-    userInputWords.forEach((word) => {
+    userInputWords.forEach((word, index) => {
+      formatLastWordUserInput(word, index);
       const formattedWord = formatInputText(word.userInput);
+
       if (formattedWord !== word.text.toLocaleLowerCase()) {
         word.incorrect = true;
       } else {
