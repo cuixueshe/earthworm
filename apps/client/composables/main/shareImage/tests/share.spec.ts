@@ -43,7 +43,16 @@ describe("Share Image", () => {
   });
   it("should generate an image", async () => {
     const { generateImage, shareImageSrc } = useGenerateShareImage();
-    await generateImage("1", ShareImageTemplate.TPL_1, 0, dummyUserName, dummyDateStr, 0, "");
+    await generateImage(
+      "零基础",
+      "1",
+      ShareImageTemplate.TPL_1,
+      0,
+      dummyUserName,
+      dummyDateStr,
+      0,
+      "",
+    );
     expect(satori).toBeCalled();
     expect(shareImageSrc.value).toBe("first image url");
   });
@@ -52,6 +61,7 @@ describe("Share Image", () => {
     const { generateImage, copyShareImage } = useGenerateShareImage();
     const dummyIndex = 0;
     await generateImage(
+      "零基础",
       "1",
       ShareImageTemplate.TPL_1,
       dummyIndex,
@@ -68,7 +78,7 @@ describe("Share Image", () => {
 
   it("should generate some images", async () => {
     const { generateGalleryImage, galleryImgs } = useGenerateShareImage();
-    await generateGalleryImage("1", dummyUserName, dummyDateStr, 0, "");
+    await generateGalleryImage("零基础", "1", dummyUserName, dummyDateStr, 0, "");
     await flushPromises();
     expect(satori).toBeCalledTimes(Object.values(ShareImageTemplate).length);
     expect(galleryImgs.value.length).toEqual(Object.values(ShareImageTemplate).length);
@@ -81,7 +91,7 @@ describe("Share Image", () => {
         .mockResolvedValueOnce("first image url")
         .mockResolvedValue("default image url");
     }
-    await generateGalleryImage("1", dummyUserName, dummyDateStr, 0, "");
+    await generateGalleryImage("零基础", "1", dummyUserName, dummyDateStr, 0, "");
     await flushPromises();
     expect(shareImageSrc.value).toEqual("first image url");
   });
