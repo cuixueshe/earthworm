@@ -10,7 +10,7 @@ export const coursePack = pgTable("course_packs", {
     .$defaultFn(() => createId()),
   order: integer("order").notNull(),
   title: text("title").notNull(),
-  description: text("description"),
+  description: text("description").default(""),
   isFree: boolean("is_free"),
   cover: text("cover"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
