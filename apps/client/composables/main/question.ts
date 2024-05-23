@@ -33,7 +33,7 @@ export function clearQuestionInput() {
 }
 
 export function isWord(content: string) {
-  return /[a-zA-Z]/.test(content);
+  return /[a-zA-Z0-9]/.test(content);
 }
 
 export function useInput({

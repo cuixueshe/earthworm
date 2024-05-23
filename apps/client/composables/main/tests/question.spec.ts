@@ -619,10 +619,10 @@ describe("isWord", () => {
     expect(isWord("hello")).toBe(true);
     expect(isWord("Hello")).toBe(true);
     expect(isWord("123word")).toBe(true);
+    expect(isWord("18")).toBe(true);
   });
 
   it("should return false for a string without any English letters", () => {
-    expect(isWord("12345")).toBe(false);
     expect(isWord("—")).toBe(false);
     expect(isWord("！@#$%^&*()")).toBe(false);
     expect(isWord("こんにちは")).toBe(false); // Japanese characters
@@ -638,7 +638,6 @@ describe("isWord", () => {
   });
 
   it("should return false for strings with only non-alphabetic characters", () => {
-    expect(isWord("123-456")).toBe(false);
     expect(isWord(". ,;:!")).toBe(false);
   });
 });
