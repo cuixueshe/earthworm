@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Earthworm",
-      link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
       script: appScripts,
     },
   },
@@ -43,6 +43,7 @@ export default defineNuxtConfig({
       backendEndpoint: process.env.BACKEND_ENDPOINT || "",
       signInRedirectURI: process.env.LOGTO_SIGN_IN_REDIRECT_URI || "",
       signOutRedirectURI: process.env.LOGTO_SIGN_OUT_REDIRECT_URI || "",
+      helpDocsURL: "https://earthworm-docs.cuixueshe.com/get-started/",
     },
   },
 });

@@ -69,12 +69,15 @@
 
 <script setup lang="ts">
 import { navigateTo } from "#imports";
+import { useRuntimeConfig } from "nuxt/app";
 import { computed } from "vue";
 
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserStore } from "~/store/user";
 
 const { darkMode, toggleDarkMode } = useDarkMode();
+
+const runtimeConfig = useRuntimeConfig();
 
 const emit = defineEmits(["logout"]);
 const open = defineModel("open");
@@ -89,6 +92,12 @@ const showMenuOptions = computed(() => {
       name: "setting",
       eventName: handleSetting,
       icon: "i-ph-gear",
+    },
+    {
+      title: "帮助文档",
+      name: "helpDocs",
+      eventName: handleHelpDocs,
+      icon: "i-ph-book-open-text-duotone",
     },
     {
       title: "建议反馈",
@@ -110,6 +119,11 @@ const showMenuOptions = computed(() => {
     },
   ];
 });
+
+function handleHelpDocs() {
+  open.value = false;
+  window.open(runtimeConfig.public.helpDocsURL, "_blank");
+}
 
 function handleFeedback() {
   open.value = false;

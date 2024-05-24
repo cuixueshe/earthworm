@@ -38,7 +38,8 @@
               >
                 <a
                   class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
-                  :href="`#${optItem.anchor}`"
+                  :href="optItem.href"
+                  :target="optItem.target ?? optItem.target"
                 >
                   {{ optItem.name }}
                 </a>
@@ -92,11 +93,14 @@
 
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
+import { useRuntimeConfig } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
+
+const runtimeConfig = useRuntimeConfig();
 
 const route = useRoute();
 const userStore = useUserStore();
@@ -107,9 +111,10 @@ const isOpenUserMenu = ref(false);
 
 const SCROLL_THRESHOLD = 8;
 const HEADER_OPTIONS = [
-  { name: "功能", anchor: "features" },
-  { name: "问题", anchor: "faq" },
-  { name: "联系我们", anchor: "contact" },
+  { name: "文档", href: runtimeConfig.public.helpDocsURL, target: "_blank" },
+  { name: "功能", href: "#features" },
+  { name: "问题", href: "#faq" },
+  { name: "联系我们", href: "#contact" },
 ];
 
 const isStickyNavBar = computed(() => ["index", "User-Setting"].includes(route.name as string));
