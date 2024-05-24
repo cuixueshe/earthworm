@@ -22,6 +22,18 @@ export class UserProgressController {
     return recentCoursePacks;
   }
 
+  @Get("/recent-course-packs-by-user-id")
+  async getUserRecentCoursePacksByUserId(
+    @Query("userId") userId?: string,
+    @Query("limit") limit?: number,
+  ) {
+    const recentCoursePacks = await this.userCourseProgressService.getUserRecentCoursePacks(
+      userId,
+      limit || 4,
+    );
+    return recentCoursePacks;
+  }
+
   @UseGuards(AuthGuard)
   @Put()
   async upsert(@User() user: UserEntity, @Body() dto: UpsertUserProgressDto) {
