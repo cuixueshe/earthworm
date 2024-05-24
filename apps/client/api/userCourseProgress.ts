@@ -31,3 +31,15 @@ export async function fetchUserRecentCoursePacks() {
     `/user-course-progress/recent-course-packs`,
   );
 }
+
+export async function fetchUserRecentCoursePacksByUserId(userId: string, limit = 4) {
+  return await http.get<unknown, UserRecentCoursePackResponse[]>(
+    `/user-course-progress/recent-course-packs-by-user-id`,
+    {
+      params: {
+        userId,
+        limit,
+      },
+    },
+  );
+}

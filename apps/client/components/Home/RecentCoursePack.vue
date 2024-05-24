@@ -29,7 +29,10 @@
             <p class="my-2 line-clamp-2 min-h-[3em] text-sm text-gray-500">
               {{ coursePack.description }}
             </p>
-            <div class="flex justify-between">
+            <div
+              v-if="isSelf"
+              class="flex justify-between"
+            >
               <button
                 class="btn btn-sm tw-btn-blue"
                 @click="handleGotoCourseList(coursePack.coursePackId)"
@@ -61,11 +64,20 @@
 
 <script setup lang="ts">
 import { navigateTo } from "#app";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
+import { useUserStore } from "~/store/user";
 import { useRecentCoursePack } from "./helper";
 
-const { coursePacks, fetchCoursePacks } = useRecentCoursePack();
+const props = defineProps<{
+  userId: string;
+}>();
+
+const { coursePacks, fetchCoursePacks } = useRecentCoursePack({ userId: props.userId });
+
+const userStore = useUserStore();
+
+const isSelf = computed(() => userStore.userInfo?.sub === props.userId);
 
 const isLoading = ref(false);
 

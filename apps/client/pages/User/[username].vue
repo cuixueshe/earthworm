@@ -35,7 +35,7 @@
           >更多课程包
         </NuxtLink>
       </div>
-      <HomeRecentCoursePack />
+      <HomeRecentCoursePack :userId="user?.id" />
       <HomeCalendarGraph
         class="mt-10"
         :data="learnRecord.list"
