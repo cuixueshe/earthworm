@@ -18,3 +18,7 @@ export async function fetchCurrentUser() {
     avatar: logtoUserInfo!.picture || "", // 添加 avatar 字段，默认值为 picture （ picture 这个属性不够清晰 不喜欢）
   } as User;
 }
+export async function getUserByUsername(username: string) {
+  // `/user/username/${username}` is better ?
+  return await http.get<unknown, any>(`/user/${username}`);
+}
