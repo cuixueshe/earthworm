@@ -53,12 +53,17 @@
             v-if="isAuthenticated()"
             class="logged-in flex items-center"
           >
-            <div class="font-500 mx-2 max-w-[4em] truncate min-[500px]:max-w-[6em]">
-              {{ userStore.userInfo?.username }}
+            <div
+              class="btn btn-square btn-ghost drawer-button"
+              @click="handleShowUserMenu"
+            >
+              <div class="avatar">
+                <div class="w-8 rounded-full">
+                  <img :src="userStore.userInfo?.picture!" />
+                </div>
+              </div>
             </div>
-            <DropMenu @update-show-modal="handleLogout" />
           </div>
-
           <!-- 登录/注册 -->
           <button
             v-else
@@ -67,18 +72,6 @@
             @click="signIn()"
           >
             登录
-          </button>
-
-          <!-- 切换主题 -->
-          <!-- -mr-1 是为了和主体内容按钮/其他元素做右对齐 -->
-          <button
-            class="btn btn-ghost btn-sm -mr-1 ml-1 h-8 w-8 rounded-md p-0"
-            @click="toggleDarkMode"
-          >
-            <span
-              class="h-6 w-6"
-              :class="isDarkMode ? 'i-ph-moon' : 'i-ph-sun'"
-            ></span>
           </button>
         </div>
       </div>
@@ -90,6 +83,11 @@
     content="是否确认退出登录？"
     @confirm="signOut()"
   />
+  <UserMenu
+    v-model:open="isOpenUserMenu"
+    @logout="handleLogout"
+  >
+  </UserMenu>
 </template>
 
 <script setup lang="ts">
@@ -97,28 +95,31 @@ import { useWindowScroll } from "@vueuse/core";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
-import { Theme, useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
 const route = useRoute();
 const userStore = useUserStore();
 const { y } = useWindowScroll();
-const { darkMode, toggleDarkMode } = useDarkMode();
+
+const isShowModal = ref(false);
+const isOpenUserMenu = ref(false);
 
 const SCROLL_THRESHOLD = 8;
-const isShowModal = ref(false);
 const HEADER_OPTIONS = [
   { name: "功能", anchor: "features" },
   { name: "问题", anchor: "faq" },
   { name: "联系我们", anchor: "contact" },
 ];
 
-const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 const isStickyNavBar = computed(() => ["index", "User-Setting"].includes(route.name as string));
 const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
 function handleLogout() {
   isShowModal.value = true;
+}
+
+function handleShowUserMenu() {
+  isOpenUserMenu.value = true;
 }
 </script>
