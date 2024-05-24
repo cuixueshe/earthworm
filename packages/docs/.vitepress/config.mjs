@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Earthworm",
   description: "Earthworm",
+  ignoreDeadLinks: true,
   themeConfig: {
     logo: "/logo.png",
     logoLink: "/get-started/",
