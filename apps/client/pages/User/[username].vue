@@ -40,7 +40,7 @@
         class="mt-10"
         :data="learnRecord.list"
         :totalCount="learnRecord.totalCount"
-        @toggleYear="toggleYear"
+        @toggleYear="onToggleYear"
       />
     </div>
   </div>
@@ -48,32 +48,17 @@
 
 <script setup lang="ts">
 import { useRoute } from "#app";
-import { ref } from "vue";
 
 import { getUserByUsername } from "~/api/user";
 import { useLearnRecord } from "~/composables/learnRecord";
-import { type CalendarData } from "~/composables/user/calendarGraph";
 
 const route = useRoute();
 const user = await getUserByUsername(route.params.username as string);
-const { learnRecord, setupLearnRecord, setQueryYear } = useLearnRecord();
-const { toggleYear } = useCalendarGraph();
+const { learnRecord, year } = useLearnRecord({ userId: user?.id });
 
-function useCalendarGraph() {
-  const data = ref<CalendarData[]>([]);
-  const totalCount = ref<number>(0);
-
-  async function toggleYear(year?: number) {
-    setQueryYear(year);
-    setupLearnRecord();
-  }
-
-  return {
-    data,
-    totalCount,
-    toggleYear,
-  };
-}
+const onToggleYear = (value?: number) => {
+  year.value = value!;
+};
 </script>
 
 <style scoped></style>

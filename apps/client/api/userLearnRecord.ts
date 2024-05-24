@@ -18,3 +18,12 @@ export async function fetchLearnRecord(params: UserLearnRecord) {
     },
   );
 }
+
+export async function fetchLearnRecordByUserId(params: UserLearnRecord & { userId: string }) {
+  return await http.get<unknown, UserLearnRecordResponse>(
+    `/user-learn-record/finishCountByUserId`,
+    {
+      params,
+    },
+  );
+}
