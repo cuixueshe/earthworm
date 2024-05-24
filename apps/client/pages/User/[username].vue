@@ -11,7 +11,7 @@
       <div class="mt-4 truncate">
         <div class="text-3xl font-medium">{{ user?.username }}</div>
         <div class="text-md text-gray-400">
-          {{ user?.name || "未设置" }}
+          {{ user?.name }}
         </div>
       </div>
       <hr class="my-5 dark:border-gray-700" />
