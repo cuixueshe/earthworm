@@ -179,6 +179,15 @@ pnpm test:e2e
 pnpm test
 ```
 
+## 文档项目
+
+基于Vitepress文档的项目，执行以下命令：
+
+```bash
+# 本地开发
+pnpm docs:dev
+```
+
 ## ❓ 常见问题解答
 
 ### 数据库连接不上

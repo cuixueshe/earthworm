@@ -1,0 +1,17 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "earthworm 文档",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev --port 5173",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.1.3"
+  }
+}

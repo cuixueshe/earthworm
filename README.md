@@ -179,6 +179,15 @@ pnpm test:e2e
 pnpm test
 ```
 
+## Docs Project
+
+Project based on Vitepress documentation，execute the following command:
+
+```bash
+# Local Development
+pnpm docs:dev
+```
+
 ## ❓ FAQ
 
 ### Database connection failed

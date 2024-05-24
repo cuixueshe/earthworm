@@ -4,5 +4,8 @@
   "editor.formatOnSave": true,
   // fixed `Unknown at rule @apply` warning
   "css.lint.unknownAtRules": "ignore",
-  "scss.lint.unknownAtRules": "ignore"
+  "scss.lint.unknownAtRules": "ignore",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
