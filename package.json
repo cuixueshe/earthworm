@@ -26,7 +26,8 @@
     "test": "pnpm -F api test && pnpm -F client test",
     "test:ci": "pnpm -F api test && pnpm -F client test:ci",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "docs:dev": "pnpm -F docs docs:dev"
+    "docs:dev": "pnpm -F docs docs:dev",
+    "build:docs": "pnpm -F docs docs:build"
   },
   "keywords": [],
   "author": "",
