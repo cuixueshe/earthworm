@@ -1,6 +1,8 @@
 import { useLogto } from "@logto/vue";
 import { useRuntimeConfig } from "nuxt/app";
 
+import { useUserStore } from "~/store/user";
+
 let logto: ReturnType<typeof useLogto>;
 let runtimeConfig: ReturnType<typeof useRuntimeConfig>;
 export async function setupAuth() {
@@ -19,6 +21,11 @@ export function signOut() {
 
 export function isAuthenticated() {
   return logto.isAuthenticated.value;
+}
+
+export function isUserLoaded() {
+  const userStore = useUserStore();
+  return Boolean(userStore.userInfo);
 }
 
 export async function getToken() {
