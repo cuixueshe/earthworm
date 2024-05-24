@@ -14,4 +14,9 @@ export class UserLearnRecordController {
   finishCount(@User() user: UserEntity, @Query() dto?: GetUserLearnRecordDto) {
     return this.userLearnRecordService.find(user.userId, dto);
   }
+
+  @Get("finishCountByUserId")
+  finishCountByUserId(@Query("userId") userId: string, @Query() dto?: GetUserLearnRecordDto) {
+    return this.userLearnRecordService.find(userId, dto);
+  }
 }
