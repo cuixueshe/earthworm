@@ -70,11 +70,7 @@ export class UserService {
     }
   }
   async getUserByUsername(username: string) {
-    const params = new URLSearchParams([
-      ["page", "1"],
-      ["page_size", "1"],
-      ["search.username", username],
-    ]).toString();
+    const params = new URLSearchParams([["search.username", username]]).toString();
 
     try {
       const res = await this.logtoService.logtoApi.get(`/api/users/?${params}`);
