@@ -77,7 +77,7 @@ const { coursePacks, fetchCoursePacks } = useRecentCoursePack({ userId: props.us
 
 const userStore = useUserStore();
 
-const isSelf = computed(() => userStore.userInfo?.sub === props.userId);
+const isSelf = userStore.isSelf(props.userId);
 
 const isLoading = ref(false);
 
