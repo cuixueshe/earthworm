@@ -30,9 +30,11 @@
       <div class="mb-4 flex justify-between border-b pb-2 dark:border-gray-700">
         <div class="text-xl font-medium">最近使用的课程包</div>
         <NuxtLink
+          v-if="isSelf"
           href="/course-pack"
           class="link text-blue-500 no-underline hover:opacity-75"
-          >更多课程包
+        >
+          更多课程包
         </NuxtLink>
       </div>
       <HomeRecentCoursePack :userId="user?.id" />
@@ -51,9 +53,11 @@ import { useRoute } from "#app";
 
 import { getUserByUsername } from "~/api/user";
 import { useLearnRecord } from "~/composables/learnRecord";
+import { useUserStore } from "~/store/user";
 
 const route = useRoute();
 const user = await getUserByUsername(route.params.username as string);
+const isSelf = useUserStore().isSelf(() => user?.id);
 const { learnRecord, year } = useLearnRecord({ userId: user?.id });
 
 const onToggleYear = (value?: number) => {
