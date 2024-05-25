@@ -43,12 +43,14 @@ describe("user-progress e2e", () => {
     const courseIdFirst = createId();
     const coursePackIdSecond = createId();
     const courseIdSecond = createId();
-    await insertUserCourseProgress(db, coursePackIdFirst, courseIdFirst, 0);
-    await insertUserCourseProgress(db, coursePackIdSecond, courseIdSecond, 10);
+    const userId = createId();
+    await insertUserCourseProgress(db, coursePackIdFirst, courseIdFirst, 0, userId);
+    await insertUserCourseProgress(db, coursePackIdSecond, courseIdSecond, 10, userId);
 
     await request(app.getHttpServer())
       .get("/user-course-progress/recent-course-packs")
       .set("Authorization", `Bearer ${token}`)
+      .query({ userId })
       .expect(200)
       .expect(({ body }) => {
         expect(body.length).toBe(2);
