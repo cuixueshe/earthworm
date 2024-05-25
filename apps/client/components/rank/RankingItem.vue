@@ -7,8 +7,10 @@
       :rank="rank"
     />
     <div
-      class="flex-1 cursor-pointer truncate text-center"
+      class="tooltip flex-1 cursor-pointer truncate text-center"
+      data-tippy-content="看看这小子最近学了啥"
       @click="toUserHomePage"
+      @mouseenter="$lazyTippy"
     >
       {{ username || "匿名" }}
     </div>
