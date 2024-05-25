@@ -65,6 +65,9 @@ const isSelf = useUserStore().isSelf(() => user?.id);
 const { learnRecord, year } = useLearnRecord({ userId: user?.id });
 
 const onToggleYear = (value?: number) => {
+  if (!value) {
+    return;
+  }
   year.value = value!;
 };
 </script>
