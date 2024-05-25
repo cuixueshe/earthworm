@@ -60,7 +60,6 @@ const props = defineProps<{
 }>();
 
 const user = await getUserByUsername(props.username);
-console.log(user);
 
 const isSelf = useUserStore().isSelf(() => user?.id);
 const { learnRecord, year } = useLearnRecord({ userId: user?.id });
