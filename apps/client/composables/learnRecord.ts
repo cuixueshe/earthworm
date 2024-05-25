@@ -17,7 +17,7 @@ export function useLearnRecord(options: UseLearnRecordOptions) {
     totalCount: 0,
   });
 
-  const year = ref(options.year || new Date().getFullYear());
+  const year = ref(options?.year || new Date().getFullYear());
 
   function getQuery() {
     const yearStr = toValue(year);
