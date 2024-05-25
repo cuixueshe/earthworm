@@ -3,7 +3,7 @@ import type { MaybeRef } from "vue";
 import { ref, toValue, watchEffect } from "vue";
 
 import type { UserLearnRecordResponse } from "~/api/userLearnRecord";
-import { fetchLearnRecordByUserId } from "~/api/userLearnRecord";
+import { fetchLearnRecord } from "~/api/userLearnRecord";
 
 interface UseLearnRecordOptions {
   year?: MaybeRef<number>;
@@ -29,7 +29,7 @@ export function useLearnRecord(options: UseLearnRecordOptions) {
   }
 
   async function updateLearnRecord() {
-    const res = await fetchLearnRecordByUserId(getQuery());
+    const res = await fetchLearnRecord(getQuery());
     learnRecord.value = res;
   }
   watchEffect(() => {
