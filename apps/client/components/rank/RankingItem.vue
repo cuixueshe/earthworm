@@ -26,10 +26,10 @@ const props = defineProps({
 });
 const router = useRouter();
 const toUserHomePage = () => {
-  const { href } = router.resolve(`/user/${props.username}`);
+  const { href } = router.resolve(`/${props.username}`);
   window.location.href = href;
 
   //TODO: use route
-  // router.push(`/user/${props.username}`);
+  // router.push(`/${props.username}`);
 };
 </script>

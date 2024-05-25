@@ -8,7 +8,7 @@ const userStore = useUserStore();
 
 const username = userStore.userInfo?.username;
 const router = useRouter();
-router.replace(`/user/${username}`);
+router.replace(`/${username}`);
 </script>
 
 <style scoped></style>
