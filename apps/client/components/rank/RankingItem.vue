@@ -27,9 +27,6 @@ const props = defineProps({
 const router = useRouter();
 const toUserHomePage = () => {
   const { href } = router.resolve(`/${props.username}`);
-  window.location.href = href;
-
-  //TODO: use route
-  // router.push(`/${props.username}`);
+  window.open(href, "_blank");
 };
 </script>
