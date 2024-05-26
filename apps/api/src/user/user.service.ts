@@ -61,4 +61,25 @@ export class UserService {
   private getRandomNumber() {
     return Math.floor(Math.random() * 9) + 1;
   }
+
+  async getUserCustomData(userId: string) {
+    try {
+      const { data } = await this.logtoService.logtoApi.get(`/api/users/${userId}/custom-data`);
+      return { data };
+    } catch (e) {
+      throw new HttpException(e.response.data.message, e.response.status);
+    }
+  }
+
+  async updateUserCustomData(userId: string, data: Record<PropertyKey, any>) {
+    try {
+      const { data: res } = await this.logtoService.logtoApi.patch(
+        `/api/users/${userId}/custom-data`,
+        data,
+      );
+      return { data: res };
+    } catch (e) {
+      throw new HttpException(e.response.data.message, e.response.status);
+    }
+  }
 }

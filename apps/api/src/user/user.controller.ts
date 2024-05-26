@@ -24,4 +24,19 @@ export class UserController {
   async initializeUser(@User() user: UserEntity, @Body() dto: UpdateUserDto) {
     return this.userService.setup(user, dto);
   }
+
+  @Get("custom-data")
+  @UseGuards(AuthGuard)
+  async getUserCustomData(@User() user: UserEntity) {
+    return this.userService.getUserCustomData(user.userId);
+  }
+
+  @Patch("custom-data")
+  @UseGuards(AuthGuard)
+  async updateUserCustomData(
+    @User() user: UserEntity,
+    @Body() customData: Record<PropertyKey, any>,
+  ) {
+    return this.userService.updateUserCustomData(user.userId, customData);
+  }
 }

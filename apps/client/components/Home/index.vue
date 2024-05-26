@@ -42,12 +42,19 @@
         :totalCount="learnRecord.totalCount"
         @toggleYear="toggleYear"
       />
+      <button
+        class="btn btn-primary"
+        @click="test"
+      >
+        test
+      </button>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
 
+import { getUserCustomData, updateUserCustomData } from "~/api/user";
 import { useLearnRecord } from "~/composables/learnRecord";
 import { type CalendarData } from "~/composables/user/calendarGraph";
 import { useUserStore } from "~/store/user";
@@ -55,6 +62,16 @@ import { useUserStore } from "~/store/user";
 const userStore = useUserStore();
 const { learnRecord, setupLearnRecord, setQueryYear } = useLearnRecord();
 const { toggleYear } = useCalendarGraph();
+
+const res = await getUserCustomData();
+console.log("customData", res);
+
+async function test() {
+  const res = await updateUserCustomData({
+    abc: 112,
+  });
+  console.log("updateUserCustomData", res);
+}
 
 function useCalendarGraph() {
   const data = ref<CalendarData[]>([]);
