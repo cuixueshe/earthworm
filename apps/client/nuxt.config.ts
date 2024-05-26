@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       backendEndpoint: process.env.BACKEND_ENDPOINT || "",
       signInRedirectURI: process.env.LOGTO_SIGN_IN_REDIRECT_URI || "",
       signOutRedirectURI: process.env.LOGTO_SIGN_OUT_REDIRECT_URI || "",
-      helpDocsURL: process.env.HELP_DOCS_URL || "",
+      helpDocsURL: "https://earthworm-docs.cuixueshe.com/get-started/",
     },
   },
 });
