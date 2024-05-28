@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center justify-between border-t border-solid border-slate-200 py-3 text-base dark:border-slate-500"
+    class="relative flex items-center justify-between border-t border-solid border-gray-300 pb-3 pt-4 text-base dark:border-gray-600"
   >
     <!-- 左侧 -->
     <div class="flex items-center">
@@ -27,9 +27,8 @@
     </div>
 
     <!-- 右侧 -->
-    <div class="flex items-center">
+    <div class="flex items-center gap-4">
       <div
-        class="mr-4"
         data-tippy-content="重置当前课程进度"
         @click="handleDoAgain"
         @mouseenter="$lazyTippy"
@@ -37,7 +36,6 @@
         <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
       </div>
       <div
-        class="tooltip mr-1"
         data-tippy-content="排行榜"
         @click="rankingStore.showRankModal"
         @mouseenter="$lazyTippy"
@@ -55,9 +53,9 @@
   />
   <RankRankingList />
   <MainMessageBox
-    class="mt-[-4vh]"
-    v-model:isShowModal="showTipModal"
+    v-model:show-modal="showTipModal"
     content="是否确认重置当前课程进度？"
+    confirm-btn-text="确认"
     @confirm="handleTipConfirm"
   />
 </template>
@@ -71,7 +69,6 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
-import { useCoursePackStore } from "~/store/coursePack";
 import { useContent } from "./Contents/useContents";
 
 const rankingStore = useRanking();

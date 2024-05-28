@@ -91,35 +91,30 @@ function useUsername() {
       <Loading></Loading>
     </template>
     <template v-else-if="isShowSettingUsernameModal">
-      <dialog
-        class="modal"
-        :open="true"
-      >
-        <div class="modal-box">
-          <h3 class="mb-4 text-lg font-bold">设置用户名</h3>
-          <input
-            v-model="username"
-            type="text"
-            placeholder="请输入用户名"
-            class="input input-bordered input-sm w-full"
-            maxlength="20"
-            @keydown.enter="handleChangeUsername"
-          />
-          <div class="modal-action">
-            <button
-              class="btn btn-primary"
-              type="submit"
-              @click="handleChangeUsername"
-            >
-              确定
-              <span
-                v-if="isLoadingFetchUserSetup"
-                class="loading loading-spinner loading-lg"
-              ></span>
-            </button>
-          </div>
+      <CommonModal :show-modal="true">
+        <h3 class="mb-4 text-lg font-bold">设置用户名</h3>
+        <input
+          v-model="username"
+          type="text"
+          placeholder="请输入用户名"
+          class="input input-bordered input-sm w-full"
+          maxlength="20"
+          @keydown.enter="handleChangeUsername"
+        />
+        <div class="modal-action">
+          <button
+            class="btn btn-primary"
+            type="submit"
+            @click="handleChangeUsername"
+          >
+            确定
+            <span
+              v-if="isLoadingFetchUserSetup"
+              class="loading loading-spinner loading-lg"
+            ></span>
+          </button>
         </div>
-      </dialog>
+      </CommonModal>
     </template>
   </div>
 </template>

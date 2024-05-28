@@ -78,17 +78,17 @@
       </div>
     </div>
   </header>
-  <MainMessageBox
-    v-model:isShowModal="isShowModal"
-    title="提示"
-    content="是否确认退出登录？"
-    @confirm="signOut()"
-  />
+
   <UserMenu
     v-model:open="isOpenUserMenu"
     @logout="handleLogout"
-  >
-  </UserMenu>
+  />
+  <MainMessageBox
+    v-model:show-modal="isShowModal"
+    content="是否确认退出登录？"
+    confirm-btn-text="确认"
+    @confirm="signOut"
+  />
 </template>
 
 <script setup lang="ts">
@@ -117,6 +117,7 @@ const HEADER_OPTIONS = [
   { name: "联系我们", href: "#contact" },
 ];
 
+// TODO: 设置需要固定导航栏的页面
 const isStickyNavBar = computed(() => ["index", "User-Setting"].includes(route.name as string));
 const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
