@@ -42,9 +42,7 @@ export function useDeviceTip() {
   const { isLandscape } = useIsLandscape();
 
   watchEffect(() => {
-    // TODO 暂时先不提示（有些用户正在移动端的场景下使用
-    // isMessageShow.value = (isIpad.value && !isLandscape.value) || isMobile.value;
-    isMessageShow.value = false;
+    isMessageShow.value = (isIpad.value && !isLandscape.value) || isMobile.value;
 
     if (isMobile.value) {
       messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";

@@ -78,17 +78,17 @@
       </div>
     </div>
   </header>
-  <MainMessageBox
-    v-model:isShowModal="isShowModal"
-    title="提示"
-    content="是否确认退出登录？"
-    @confirm="signOut()"
-  />
+
   <UserMenu
     v-model:open="isOpenUserMenu"
     @logout="handleLogout"
-  >
-  </UserMenu>
+  />
+  <MainMessageBox
+    v-model:show-modal="isShowModal"
+    content="是否确认退出登录？"
+    confirm-btn-text="确认"
+    @confirm="signOut"
+  />
 </template>
 
 <script setup lang="ts">

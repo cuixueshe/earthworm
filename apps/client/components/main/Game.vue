@@ -10,23 +10,22 @@
   <MainSummary />
   <MainShare />
   <MainAuthRequired />
-  <MessageBox
-    :content="messageContent"
-    v-model:isShowModal="isMessageShow"
+  <!-- TODO: 暂时先不提示（有些用户正在移动端的场景下使用）-->
+  <!-- <MainMessageBox
+    v-model:show-modal="isMessageShow"
     cancel-btn-text="确定"
-    confirmBtnText=""
-  ></MessageBox>
+    :content="messageContent"
+  /> -->
 </template>
 
 <script setup lang="ts">
 import { onMounted } from "vue";
 
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { useDeviceTip } from "~/composables/main/game";
+// import { useDeviceTip } from "~/composables/main/game";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
-import MessageBox from "./MessageBox/MessageBox.vue";
 
-const { isMessageShow, messageContent } = useDeviceTip();
+// const { isMessageShow, messageContent } = useDeviceTip();
 const { currentGameMode } = useGameMode();
 
 onMounted(() => {

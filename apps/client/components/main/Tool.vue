@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center justify-between border-t border-solid border-slate-200 py-3 text-base dark:border-slate-500"
+    class="relative flex items-center justify-between border-t border-solid border-gray-300 pb-3 pt-4 text-base dark:border-gray-600"
   >
     <!-- 左侧 -->
     <div class="flex items-center">
@@ -42,13 +42,6 @@
       >
         <span class="clickable-item icon-item i-ph-ranking"></span>
       </div>
-      <div
-        data-tippy-content="设置"
-        @click="toggleSettingModal"
-        @mouseenter="$lazyTippy"
-      >
-        <span class="clickable-item icon-item i-ph-gear"></span>
-      </div>
     </div>
 
     <MainContents />
@@ -59,14 +52,10 @@
     :percentage="currentPercentage"
   />
   <RankRankingList />
-  <SettingModal
-    :showModal="showSettingModal"
-    @close="toggleSettingModal"
-  />
   <MainMessageBox
-    class="mt-[-4vh]"
-    v-model:isShowModal="showTipModal"
+    v-model:show-modal="showTipModal"
     content="是否确认重置当前课程进度？"
+    confirm-btn-text="确认"
     @confirm="handleTipConfirm"
   />
 </template>
@@ -87,7 +76,6 @@ const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
-const { showSettingModal, toggleSettingModal } = useSettingModal();
 
 const currentCourseInfo = computed(() => {
   return `${courseStore.currentCourse?.title}（${currentSchedule.value}/${courseStore.totalQuestionsCount}）`;
@@ -124,19 +112,6 @@ function useDoAgain() {
     showTipModal,
     handleDoAgain,
     handleTipConfirm,
-  };
-}
-
-function useSettingModal() {
-  const showSettingModal = ref<boolean>(false);
-
-  function toggleSettingModal() {
-    showSettingModal.value = !showSettingModal.value;
-  }
-
-  return {
-    showSettingModal,
-    toggleSettingModal,
   };
 }
 </script>
