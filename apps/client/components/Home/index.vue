@@ -5,7 +5,8 @@
       <div class="mx-auto h-56 w-56 overflow-hidden">
         <img
           class="h-full w-full rounded-full border-2 border-gray-300 bg-gray-300 object-cover dark:border-gray-700 dark:bg-gray-700"
-          :src="userStore.userInfo?.picture!"
+          :src="userStore.userInfo?.picture || DEFAULT_AVATAR"
+          @error="onImageError"
         />
       </div>
       <div class="mt-4 truncate">
@@ -55,6 +56,17 @@ import { useUserStore } from "~/store/user";
 const userStore = useUserStore();
 const { learnRecord, setupLearnRecord, setQueryYear } = useLearnRecord();
 const { toggleYear } = useCalendarGraph();
+
+// 默认 1x1 像素的透明 GIF 图片，用于消除头像图片加载失败时的白色边框
+const DEFAULT_AVATAR =
+  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+
+function onImageError(e: Event) {
+  const target = e.target as HTMLImageElement;
+  if (target) {
+    target.src = DEFAULT_AVATAR;
+  }
+}
 
 function useCalendarGraph() {
   const data = ref<CalendarData[]>([]);
