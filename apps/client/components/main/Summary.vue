@@ -61,12 +61,12 @@
         <kbd class="kbd"> ↵ </kbd>
       </button>
     </div>
-
-    <canvas
-      ref="confettiCanvasRef"
-      class="pointer-events-none absolute left-0 top-0 h-full w-full"
-    ></canvas>
   </CommonModal>
+
+  <canvas
+    ref="confettiCanvasRef"
+    class="pointer-events-none absolute left-0 top-0 z-[1000] h-full w-full"
+  ></canvas>
 </template>
 
 <script setup lang="ts">
