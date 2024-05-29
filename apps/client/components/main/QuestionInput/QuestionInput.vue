@@ -21,6 +21,7 @@
         </div>
       </template>
       <input
+        lang="en"
         ref="inputEl"
         class="absolute h-full w-full opacity-0"
         type="text"
@@ -34,6 +35,14 @@
         @compositionend="handleCompositionEnd"
         autoFocus
       />
+    </div>
+    <div class="mt-12 flex items-center justify-center md:hidden">
+      <button
+        class="btn btn-outline btn-sm"
+        @click="handleSubmitAnswer"
+      >
+        提交
+      </button>
     </div>
   </div>
 </template>
@@ -115,6 +124,10 @@ function focusInputWhenWIndowFocus() {
   onUnmounted(() => {
     window.removeEventListener("focus", handleFocus);
   });
+}
+
+function handleSubmitAnswer() {
+  submitAnswer(handleAnswerRight, handleAnswerError);
 }
 
 function getWordsClassNames(index: number) {
