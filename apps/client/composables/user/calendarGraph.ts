@@ -39,9 +39,9 @@ interface CalendarOptions {
   year?: number;
   locale?: Locale;
   theme?: Theme;
-  formatFn?: (date: string, count: number) => string;
   beginDay?: "sunday" | "monday";
-  seperate?: boolean | "odd" | "even";
+  separate?: boolean | "odd" | "even";
+  formatFn?: (date: string, count: number) => string;
 }
 
 class CalendarGraph {
@@ -85,7 +85,7 @@ class CalendarGraph {
     "en-US": (date: string, count: number) => {
       const pre = count > 0 ? `${count} times` : "No learning";
       const month = this.MONTHS["en-US"][dayjs(date).month()];
-      return `${pre}, ${month}.${this._getOrdinalSuffix(date)}`;
+      return `${pre}, ${month} ${this._getOrdinalSuffix(date)}.`;
     },
   };
 
@@ -109,7 +109,7 @@ class CalendarGraph {
   private _theme: Theme;
   private tooltipFn: Function;
   private _beginDay: string;
-  private _seperate: boolean | "odd" | "even";
+  private _separate: boolean | "odd" | "even";
 
   constructor(options: CalendarOptions) {
     this._data = options.data;
@@ -118,7 +118,7 @@ class CalendarGraph {
     this._year = options.year || dayjs().year();
     this.tooltipFn = options.formatFn || CalendarGraph.TOOLTIPS[Locale.ZH_CN];
     this._beginDay = options.beginDay || "sunday";
-    this._seperate = options.seperate || false;
+    this._separate = options.separate || false;
   }
 
   /**
@@ -185,7 +185,7 @@ class CalendarGraph {
 
   /**
    * 获取星期的标签
-   * @param seperate 是否分隔
+   * @param separate 是否分隔
    * @param odd 只显示奇数星期
    * @returns 星期标签
    */
@@ -193,7 +193,7 @@ class CalendarGraph {
     let week = [...CalendarGraph.WEEKS[this._locale], ...CalendarGraph.WEEKS[this._locale]];
 
     let result = week;
-    switch (this._seperate) {
+    switch (this._separate) {
       case "odd":
       case true:
         result = week.map((v, i) => (i % 2 === 1 ? v : ""));
@@ -250,7 +250,7 @@ class CalendarGraph {
     this._year = options.year || this._year;
     this.tooltipFn = options.formatFn || CalendarGraph.TOOLTIPS[options.locale || Locale.ZH_CN];
     this._beginDay = options.beginDay || this._beginDay;
-    this._seperate = options.seperate || this._seperate;
+    this._separate = options.separate || this._separate;
   }
 
   /**
