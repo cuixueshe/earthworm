@@ -55,14 +55,13 @@
             class="logged-in flex items-center"
           >
             <div
-              class="btn btn-square btn-ghost drawer-button"
+              class="h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-gray-300 transition-all hover:scale-125 hover:opacity-90 dark:bg-gray-700"
               @click="handleShowUserMenu"
             >
-              <div class="avatar">
-                <div class="w-8 rounded-full">
-                  <img :src="userStore.userInfo?.picture!" />
-                </div>
-              </div>
+              <img
+                class="h-full object-cover"
+                :src="userStore.userInfo?.picture!"
+              />
             </div>
           </div>
           <!-- 登录/注册 -->
