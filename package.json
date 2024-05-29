@@ -41,6 +41,7 @@
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
     "lint-staged": "^15.2.2",
+    "picocolors": "^1.0.1",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "0.5.13",
     "simple-git-hooks": "2.11.1",

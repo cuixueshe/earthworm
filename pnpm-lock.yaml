@@ -33,6 +33,9 @@ importers:
       lint-staged:
         specifier: ^15.2.2
         version: 15.2.2
+      picocolors:
+        specifier: ^1.0.1
+        version: 1.0.1
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -8482,7 +8485,7 @@ snapshots:
   '@babel/code-frame@7.24.2':
     dependencies:
       '@babel/highlight': 7.24.2
-      picocolors: 1.0.0
+      picocolors: 1.0.1
 
   '@babel/compat-data@7.23.5': {}
 
@@ -8664,7 +8667,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.20
       chalk: 2.4.2
       js-tokens: 4.0.0
-      picocolors: 1.0.0
+      picocolors: 1.0.1
 
   '@babel/parser@7.23.6':
     dependencies:
@@ -16825,7 +16828,7 @@ snapshots:
     dependencies:
       browserslist: 4.22.3
       escalade: 3.1.1
-      picocolors: 1.0.0
+      picocolors: 1.0.1
 
   uqr@0.1.2: {}
 
