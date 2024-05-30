@@ -2,9 +2,12 @@
   <div class="mt-8 flex w-full justify-between">
     <!-- 左侧头像区域 -->
     <div class="mr-16 hidden w-72 md:block">
-      <div class="mx-auto h-56 w-56 overflow-hidden">
+      <div
+        class="mx-auto h-56 w-56 overflow-hidden rounded-full border-2 border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-gray-700"
+      >
+        <!-- 通过给定高度来自适应拉伸图片，如果图片不存在或者加载失败则显示外层的背景色（没有宽度） -->
         <img
-          class="h-full w-full rounded-full border-2 border-gray-300 bg-gray-300 object-cover dark:border-gray-700 dark:bg-gray-700"
+          class="h-full object-cover"
           :src="user?.avatar"
         />
       </div>
