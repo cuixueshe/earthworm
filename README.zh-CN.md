@@ -260,6 +260,10 @@ docker images
    - useMessage 之类的
    - router 相关的也不要放进去（不便于测试 我们把 router 划分为 UI 逻辑）
 
+## 🚀 星路历程
+
+[![Stargazers over time](https://starchart.cc/cuixueshe/earthworm.svg?variant=adaptive)](https://starchart.cc/cuixueshe/earthworm)
+
 ## 🌟 贡献者
 
 在此感谢所有为 Earthworm 做出过贡献的人！🎉

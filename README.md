@@ -260,6 +260,10 @@ docker images
    - Such as `useMessage`
    - We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
 
+## 🚀 Star History
+
+[![Stargazers over time](https://starchart.cc/cuixueshe/earthworm.svg?variant=adaptive)](https://starchart.cc/cuixueshe/earthworm)
+
 ## 🌟 Contributing
 
 Thanks to everyone who has already contributed to Earthworm! 🎉
