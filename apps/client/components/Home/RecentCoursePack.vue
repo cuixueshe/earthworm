@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-80">
+  <div class="flex min-h-[350px]">
     <!-- Loading -->
     <div
       v-if="isLoading"
