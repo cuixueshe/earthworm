@@ -18,10 +18,14 @@ export default defineConfig({
       {
         text: "开始",
         items: [
-          { text: "指南", link: "/get-started/" },
-          { text: "如何使用？", link: "/get-started/how-to-use" },
+          { text: "简介", link: "/get-started/" },
+          { text: "如何注册？", link: "/get-started/how-to-register" },
           { text: "快速开始", link: "/get-started/quick-start" },
         ],
+      },
+      {
+        text: "问题",
+        items: [{ text: "常见问题", link: "/question/" }],
       },
       {
         text: "贡献代码",
