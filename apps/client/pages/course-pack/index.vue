@@ -5,7 +5,9 @@
       <Loading></Loading>
     </template>
     <template v-else>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div
+        class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
         <template v-for="coursePack in coursePackStore.coursePacks">
           <CoursePackCard :coursePack="coursePack"></CoursePackCard>
         </template>
