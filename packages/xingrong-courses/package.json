@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "upload": "tsx src/seed.ts",
+    "course:add": "tsx src/addCourse.ts",
     "pdf:parse": "tsx src/parsePDF/index.ts"
   },
   "dependencies": {
