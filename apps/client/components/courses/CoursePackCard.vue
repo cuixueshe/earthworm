@@ -1,6 +1,6 @@
 <template>
   <div
-    class="card w-72 shrink-0 cursor-pointer bg-base-100 shadow-xl"
+    class="card max-w-72 shrink-0 cursor-pointer bg-base-100 shadow-xl"
     @click="handleGoToCoursePack(coursePack)"
   >
     <figure>

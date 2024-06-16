@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Earthworm",
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }],
       script: appScripts,
     },
   },
