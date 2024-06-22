@@ -20,7 +20,7 @@ export default defineConfig({
         items: [
           { text: "简介", link: "/get-started/" },
           { text: "如何注册？", link: "/get-started/how-to-register" },
-          { text: "快速开始", link: "/get-started/quick-start" },
+          // { text: "快速开始", link: "/get-started/quick-start" },
         ],
       },
       {
@@ -46,7 +46,14 @@ export default defineConfig({
     },
     editLink: {
       pattern: "https://github.com/cuixueshe/earthworm/packages/docs/:path",
-      text: "Edit this page on GitHub",
+      text: "在 GitHub 上编辑此页面",
+    },
+    lastUpdated: {
+      text: "最后更新于",
+    },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
     },
   },
 });
