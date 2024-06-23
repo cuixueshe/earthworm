@@ -1,18 +1,18 @@
-import { asc } from "drizzle-orm";
-import { FastifyPluginAsync } from "fastify";
+import { FastifyInstance } from "fastify";
 
-import { coursePack as coursePackSchema } from "@earthworm/schema";
-import { db } from "~/db";
+import {
+  createCoursePackHandler,
+  deleteCoursePackHandler,
+  updateCoursePackHandler,
+} from "./handler";
+import { coursePackSchema, deleteCoursePackSchema, updateCoursePackParamsSchema } from "./schema";
 
-const coursePack: FastifyPluginAsync = async (fastify) => {
-  fastify.get("/", async function () {
-    console.log(db);
-    const coursePacks = await db.query.coursePack.findMany({
-      orderBy: asc(coursePackSchema.order),
-    });
-
-    return coursePacks;
-  });
+export default async (fastify: FastifyInstance) => {
+  fastify.post("/", { schema: { body: coursePackSchema } }, createCoursePackHandler);
+  fastify.delete("/:id", { schema: { params: deleteCoursePackSchema } }, deleteCoursePackHandler);
+  fastify.put(
+    "/:id",
+    { schema: { body: coursePackSchema, params: updateCoursePackParamsSchema } },
+    updateCoursePackHandler,
+  );
 };
-
-export default coursePack;
