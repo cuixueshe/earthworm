@@ -4,7 +4,7 @@ import autoLoad from "@fastify/autoload";
 import dotenv from "dotenv";
 import Fastify from "fastify";
 
-import { initDb } from "./db/index.js";
+import { setupDb } from "./db/index.js";
 
 const envName = process.env.NODE_ENV === "prop" ? ".env.prod" : ".env";
 dotenv.config({
@@ -35,7 +35,7 @@ fastify.register(autoLoad, {
 
 const start = async () => {
   try {
-    await initDb();
+    await setupDb();
     await fastify.listen({ port: 3008 });
   } catch (err) {
     fastify.log.error(err);

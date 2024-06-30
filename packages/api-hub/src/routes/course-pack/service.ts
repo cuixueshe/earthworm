@@ -2,7 +2,7 @@ import { and, asc, eq } from "drizzle-orm";
 
 import {
   courseHistory as courseHistorySchema,
-  coursePack as CoursePackSchema,
+  coursePack as coursePackSchema,
   course as courseSchema,
   statement as statementSchema,
   userCourseProgress as userCourseProgressSchema,
@@ -10,18 +10,17 @@ import {
 import type { CreateCoursePack, Statement, UpdateCoursePackBody } from "./schema";
 import { db } from "~/db";
 import { logger } from "~/utils/logger";
-import { coursePackSchema } from "./schema";
 
 export async function createCoursePack(coursePackInfo: CreateCoursePack) {
-  // 1. TODO 需要一个 order
-  // TODO 这里后面需要获取某个用户的所有 course pack
-  const coursePackOrder = 8;
+  const result = await db.transaction(async (tx) => {
+    const coursePackOrder = await calculateCoursePackOrder(coursePackInfo.uId);
 
-  const result = await db.transaction(async () => {
-    const [coursePackEntity] = await db
-      .insert(CoursePackSchema)
+    const [coursePackEntity] = await tx
+      .insert(coursePackSchema)
       .values({
         order: coursePackOrder,
+        creatorId: coursePackInfo.uId,
+        shareLevel: coursePackInfo.shareLevel,
         title: coursePackInfo.title,
         description: coursePackInfo.description,
         cover: coursePackInfo.cover,
@@ -29,8 +28,9 @@ export async function createCoursePack(coursePackInfo: CreateCoursePack) {
       })
       .returning();
 
+    const courseIds: string[] = [];
     for (const [cIndex, course] of coursePackInfo.courses.entries()) {
-      const [courseEntity] = await db
+      const [courseEntity] = await tx
         .insert(courseSchema)
         .values({
           coursePackId: coursePackEntity.id,
@@ -40,13 +40,16 @@ export async function createCoursePack(coursePackInfo: CreateCoursePack) {
         })
         .returning({ id: courseSchema.id, order: courseSchema.order, title: courseSchema.title });
 
+      // coursePackIds.courses.push(courseEntity.id.toString());
+      courseIds.push(courseEntity.id.toString());
+
       logger.debug(
         `创建: id-${courseEntity.id} order-${courseEntity.order} title-${courseEntity.title}`,
       );
 
       const createStatementTasks = course.statements.map(
-        async ({ chinese, english, phonetic }, sIndex) => {
-          return db.insert(statementSchema).values({
+        ({ chinese, english, phonetic }, sIndex) => {
+          return tx.insert(statementSchema).values({
             chinese,
             english,
             soundmark: phonetic,
@@ -63,216 +66,233 @@ export async function createCoursePack(coursePackInfo: CreateCoursePack) {
 
     return {
       coursePackId: coursePackEntity.id,
-      title: coursePackEntity.title,
+      courseIds,
     };
+
+    async function calculateCoursePackOrder(userId: string) {
+      const entity = await tx.query.coursePack.findFirst({
+        orderBy: (table, { desc }) => [desc(table.order)],
+        where: (table, { eq }) => eq(table.creatorId, userId),
+      });
+
+      if (entity) {
+        return entity.order + 1;
+      }
+
+      return 1;
+    }
   });
 
   return result;
 }
 
 export async function deleteCoursePack(coursePackId: string) {
-  try {
-    const result = await db.transaction(async () => {
-      // TODO 后续需要看看要删除的 coursePackId 是否存在 & 是否是自己帐号所拥有的
-      const coursePack = await db.query.coursePack.findFirst({
-        where: eq(CoursePackSchema.id, coursePackId),
-      });
-
-      if (!coursePack) {
-        return false;
-      }
-
-      const courses = await db.query.course.findMany({
-        where: eq(courseSchema.coursePackId, coursePackId),
-      });
-
-      const deleteStatementTasks = courses.map((course) => {
-        return db.delete(statementSchema).where(eq(statementSchema.courseId, course.id));
-      });
-
-      await Promise.all(deleteStatementTasks);
-      await db.delete(courseSchema).where(eq(courseSchema.coursePackId, coursePackId));
-      await db.delete(CoursePackSchema).where(eq(CoursePackSchema.id, coursePackId));
-
-      // 还需要删除 course_history
-      // 和 user_course_progress 里面的记录
-      // TODO 这里需要加一个 user id 的限制
-      // await db
-      //   .delete(courseHistorySchema)
-      //   .where(eq(courseHistorySchema.coursePackId, coursePackId));
-
-      // await db
-      //   .delete(userCourseProgressSchema)
-      //   .where(eq(userCourseProgressSchema.coursePackId, coursePackId));
-
-      return true;
+  const result = await db.transaction(async (tx) => {
+    const coursePack = await tx.query.coursePack.findFirst({
+      where: eq(coursePackSchema.id, coursePackId),
     });
 
-    return result;
-  } catch (error) {
-    logger.error(error);
-    return false;
-  }
+    if (!coursePack) {
+      throw new Error("not found course pack");
+    }
+
+    const courses = await tx.query.course.findMany({
+      where: eq(courseSchema.coursePackId, coursePackId),
+    });
+
+    const deleteStatementTasks = courses.map((course) => {
+      return tx.delete(statementSchema).where(eq(statementSchema.courseId, course.id));
+    });
+
+    await Promise.all(deleteStatementTasks);
+    await tx.delete(courseSchema).where(eq(courseSchema.coursePackId, coursePackId));
+    await tx.delete(coursePackSchema).where(eq(coursePackSchema.id, coursePackId));
+
+    // 还需要删除 course_history
+    // 和 user_course_progress 里面的记录
+    await tx.delete(courseHistorySchema).where(eq(courseHistorySchema.coursePackId, coursePackId));
+
+    await tx
+      .delete(userCourseProgressSchema)
+      .where(eq(userCourseProgressSchema.coursePackId, coursePackId));
+
+    return true;
+  });
+
+  return result;
 }
 
 export async function updateCoursePack(coursePackId: string, coursePackInfo: UpdateCoursePackBody) {
-  try {
-    const result = await db.transaction(async () => {
-      const coursePack = await db.query.coursePack.findFirst({
-        where: eq(CoursePackSchema.id, coursePackId),
+  const result = await db.transaction(async (tx) => {
+    async function _updateCoursePack() {
+      await tx
+        .update(coursePackSchema)
+        .set({
+          title: coursePackInfo.title,
+          description: coursePackInfo.description,
+          cover: coursePackInfo.cover,
+        })
+        .where(eq(coursePackSchema.id, coursePackId));
+    }
+
+    async function _updateCourses() {
+      const courseIds: string[] = [];
+      const oldCourses = await tx.query.course.findMany({
+        where: eq(courseSchema.coursePackId, coursePackId),
+        orderBy: [asc(courseSchema.order)],
       });
 
-      if (!coursePack) {
-        return false;
-      }
-
-      _updateCoursePack();
-      _updateCourses();
-
-      return true;
-    });
-
-    return result;
-  } catch (error) {
-    logger.error(error);
-    return false;
-  }
-
-  async function _updateCoursePack() {
-    await db
-      .update(CoursePackSchema)
-      .set({
-        title: coursePackInfo.title,
-        description: coursePackInfo.description,
-        cover: coursePackInfo.cover,
-      })
-      .where(eq(CoursePackSchema.id, coursePackId));
-  }
-
-  async function _updateCourses() {
-    let oldIndex = 0;
-    let newIndex = 0;
-
-    const courses = await db.query.course.findMany({
-      where: eq(courseSchema.coursePackId, coursePackId),
-      orderBy: [asc(courseSchema.order)],
-    });
-
-    while (oldIndex < courses.length && newIndex < coursePackInfo.courses.length) {
-      const oldCourse = courses[oldIndex];
-      const newCourseInfo = coursePackInfo.courses[newIndex];
-
-      await db
-        .update(courseSchema)
-        .set({
-          title: newCourseInfo.title,
-          description: newCourseInfo.description,
-        })
-        .where(eq(courseSchema.id, oldCourse.id));
-
-      await _updateStatements(oldCourse.id, newCourseInfo.statements);
-
-      oldIndex++;
-      newIndex++;
-    }
-
-    // 如果新的课程信息更多，创建剩余的新课程
-    while (newIndex < coursePackInfo.courses.length) {
-      const newCourseInfo = coursePackInfo.courses[newIndex];
-      const [courseEntity] = await db
-        .insert(courseSchema)
-        .values({
-          title: newCourseInfo.title,
-          description: newCourseInfo.description,
-          order: newIndex + 1,
-          coursePackId: coursePackId,
-        })
-        .returning({ id: courseSchema.id, order: courseSchema.order, title: courseSchema.title });
-
-      const createStatementTasks = newCourseInfo.statements.map(
-        async ({ chinese, english, phonetic }, sIndex) => {
-          return db.insert(statementSchema).values({
-            chinese,
-            english,
-            soundmark: phonetic,
-            order: sIndex + 1,
-            courseId: courseEntity.id,
-          });
-        },
+      const oldCourseMap = new Map(oldCourses.map((course) => [course.id, course]));
+      const newCourseMap = new Map(
+        coursePackInfo.courses.map((course) => [course.publishCourseId, course]),
       );
 
-      logger.debug("开始创建 statements");
-      await Promise.all(createStatementTasks);
-      logger.debug("创建 statements 完成");
+      // 新的在老的里面存在  那么更新
+      for (const [newCourseIndex, newCourseInfo] of coursePackInfo.courses.entries()) {
+        if (oldCourseMap.has(newCourseInfo.publishCourseId)) {
+          // Update existing course
+          await tx
+            .update(courseSchema)
+            .set({
+              title: newCourseInfo.title,
+              description: newCourseInfo.description,
+            })
+            .where(eq(courseSchema.id, newCourseInfo.publishCourseId));
 
-      newIndex++;
+          courseIds.push(newCourseInfo.publishCourseId);
+
+          await _updateStatements(newCourseInfo.publishCourseId, newCourseInfo.statements);
+        } else {
+          // Create new course
+          // 新的在老的里面不存在 那么创建
+          const [courseEntity] = await tx
+            .insert(courseSchema)
+            .values({
+              title: newCourseInfo.title,
+              description: newCourseInfo.description,
+              order: newCourseIndex + 1,
+              coursePackId: coursePackId,
+            })
+            .returning({
+              id: courseSchema.id,
+              order: courseSchema.order,
+              title: courseSchema.title,
+            });
+
+          courseIds.push(courseEntity.id.toString());
+
+          const createStatementTasks = newCourseInfo.statements.map(
+            async ({ chinese, english, phonetic }, sIndex) => {
+              return tx.insert(statementSchema).values({
+                chinese,
+                english,
+                soundmark: phonetic,
+                order: sIndex + 1,
+                courseId: courseEntity.id,
+              });
+            },
+          );
+
+          logger.debug("开始创建 statements");
+          await Promise.all(createStatementTasks);
+          logger.debug("创建 statements 完成");
+        }
+      }
+
+      // 老的在新的里面不存在 那么删除
+      for (const oldCourse of oldCourses) {
+        if (!newCourseMap.has(oldCourse.id)) {
+          // Delete course if it is not in the new course pack info
+          await tx.delete(statementSchema).where(eq(statementSchema.courseId, oldCourse.id));
+          await tx.delete(courseSchema).where(eq(courseSchema.id, oldCourse.id));
+
+          // Delete related records in course_history and user_course_progress
+          await tx
+            .delete(courseHistorySchema)
+            .where(
+              and(
+                eq(courseHistorySchema.coursePackId, coursePackId),
+                eq(courseHistorySchema.courseId, oldCourse.id),
+              ),
+            );
+
+          await tx
+            .delete(userCourseProgressSchema)
+            .where(
+              and(
+                eq(userCourseProgressSchema.coursePackId, coursePackId),
+                eq(userCourseProgressSchema.courseId, oldCourse.id),
+              ),
+            );
+        }
+      }
+
+      return courseIds;
     }
 
-    // 如果旧的课程信息更多，删除剩余的旧课程
-    while (oldIndex < courses.length) {
-      const oldCourse = courses[oldIndex];
-      await db.delete(statementSchema).where(eq(statementSchema.courseId, oldCourse.id));
-      await db.delete(courseSchema).where(eq(courseSchema.id, oldCourse.id));
+    async function _updateStatements(courseId: string, newStatements: Statement[]) {
+      const oldStatements = await tx.query.statement.findMany({
+        where: eq(statementSchema.courseId, courseId),
+        orderBy: [asc(statementSchema.order)],
+      });
 
-      // TODO 这里需要加一个 user id 的限制
-      // 还需要删除 course_history
-      // 和 user_course_progress 里面的记录
-      // await db
-      //   .delete(courseHistorySchema)
-      //   .where(eq(courseHistorySchema.coursePackId, coursePackId));
+      let oldIndex = 0;
+      let newIndex = 0;
 
-      // await db
-      //   .delete(userCourseProgressSchema)
-      //   .where(eq(userCourseProgressSchema.coursePackId, coursePackId));
+      while (oldIndex < oldStatements.length && newIndex < newStatements.length) {
+        const newStatementInfo = newStatements[newIndex];
+        const oldStatement = oldStatements[oldIndex];
 
-      oldIndex++;
-    }
-  }
+        await tx
+          .update(statementSchema)
+          .set({
+            english: newStatementInfo.english,
+            chinese: newStatementInfo.chinese,
+            soundmark: newStatementInfo.phonetic,
+          })
+          .where(eq(statementSchema.id, oldStatement.id));
 
-  async function _updateStatements(courseId: string, newStatements: Statement[]) {
-    const oldStatements = await db.query.statement.findMany({
-      where: eq(statementSchema.courseId, courseId),
-      orderBy: [asc(statementSchema.order)],
-    });
+        oldIndex++;
+        newIndex++;
+      }
 
-    let oldIndex = 0;
-    let newIndex = 0;
-
-    while (oldIndex < oldStatements.length && newIndex < newStatements.length) {
-      const newStatementInfo = newStatements[newIndex];
-      const oldStatement = oldStatements[oldIndex];
-
-      await db
-        .update(statementSchema)
-        .set({
+      // 如果新的课程statements更多，创建剩余的新课程
+      while (newIndex < newStatements.length) {
+        const newStatementInfo = newStatements[newIndex];
+        await tx.insert(statementSchema).values({
           english: newStatementInfo.english,
           chinese: newStatementInfo.chinese,
           soundmark: newStatementInfo.phonetic,
-        })
-        .where(eq(statementSchema.id, oldStatement.id));
+          order: newIndex + 1,
+          courseId,
+        });
+        newIndex++;
+      }
 
-      oldIndex++;
-      newIndex++;
+      // 如果旧的课程信息更多，删除剩余的旧课程
+      while (oldIndex < oldStatements.length) {
+        const oldStatement = oldStatements[oldIndex];
+        await tx.delete(statementSchema).where(and(eq(statementSchema.id, oldStatement.id)));
+        oldIndex++;
+      }
     }
 
-    // 如果新的课程statements更多，创建剩余的新课程
-    while (newIndex < newStatements.length) {
-      const newStatementInfo = newStatements[newIndex];
-      await db.insert(statementSchema).values({
-        english: newStatementInfo.english,
-        chinese: newStatementInfo.chinese,
-        soundmark: newStatementInfo.phonetic,
-        order: newIndex + 1,
-        courseId,
-      });
-      newIndex++;
+    const coursePack = await tx.query.coursePack.findFirst({
+      where: and(
+        eq(coursePackSchema.id, coursePackId),
+        eq(coursePackSchema.creatorId, coursePackInfo.uId),
+      ),
+    });
+
+    if (!coursePack) {
+      throw new Error("not found course pack");
     }
 
-    // 如果旧的课程信息更多，删除剩余的旧课程
-    while (oldIndex < oldStatements.length) {
-      const oldStatement = oldStatements[oldIndex];
-      await db.delete(statementSchema).where(and(eq(statementSchema.id, oldStatement.id)));
-      oldIndex++;
-    }
-  }
+    await _updateCoursePack();
+    const courseIds = await _updateCourses();
+
+    return { courseIds };
+  });
+
+  return result;
 }

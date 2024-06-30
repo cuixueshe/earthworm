@@ -32,6 +32,6 @@
     "pino-pretty": "^11.2.1",
     "tiny-glob": "^0.2.9",
     "typescript": "^5.4.5",
-    "vitest": "^1.2.2"
+    "vitest": "^1.6.0"
   }
 }

@@ -6,28 +6,47 @@ import type {
   UpdateCoursePackBody,
   UpdateCoursePackParams,
 } from "./schema";
+import { logger } from "~/utils/logger";
 import { createCoursePack, deleteCoursePack, updateCoursePack } from "./service";
 
 export const createCoursePackHandler: RouteHandler<{
   Body: CreateCoursePack;
 }> = async function (req, reply) {
-  const result = await createCoursePack(req.body);
-  reply.code(201).send({
-    state: 1, // 1 代表的是成功发布
-    data: {
-      ...result,
-    },
-  });
+  try {
+    const result = await createCoursePack(req.body);
+    reply.code(201).send({
+      state: 1,
+      data: {
+        result,
+      },
+    });
+  } catch (error) {
+    logger.error(error);
+    reply.code(500).send({
+      state: 0,
+      message: "Internal Server Error",
+    });
+  }
 };
 
 export const deleteCoursePackHandler: RouteHandler<{
   Params: DeleteCoursePack;
 }> = async function (req, reply) {
   const coursePackId = req.params.id;
-  const result = await deleteCoursePack(coursePackId);
-  reply.code(200).send({
-    state: result,
-  });
+
+  try {
+    const result = await deleteCoursePack(coursePackId);
+    reply.code(200).send({
+      state: 1,
+      data: result,
+    });
+  } catch (error) {
+    logger.error(error);
+    reply.code(500).send({
+      state: 0,
+      message: "Internal Server Error",
+    });
+  }
 };
 
 export const updateCoursePackHandler: RouteHandler<{
@@ -35,6 +54,17 @@ export const updateCoursePackHandler: RouteHandler<{
   Params: UpdateCoursePackParams;
 }> = async function (req, reply) {
   const coursePackId = req.params.id;
-  const result = await updateCoursePack(coursePackId, req.body);
-  reply.code(200).send(result);
+  try {
+    const result = await updateCoursePack(coursePackId, req.body);
+    reply.code(200).send({
+      state: 1,
+      data: result,
+    });
+  } catch (error) {
+    logger.error(error);
+    reply.code(500).send({
+      state: 0,
+      message: "Internal Server Error",
+    });
+  }
 };

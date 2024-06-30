@@ -5,14 +5,19 @@ import {
   deleteCoursePackHandler,
   updateCoursePackHandler,
 } from "./handler";
-import { coursePackSchema, deleteCoursePackSchema, updateCoursePackParamsSchema } from "./schema";
+import {
+  coursePackSchema,
+  deleteCoursePackSchema,
+  updateCoursePackParamsSchema,
+  updateCoursePackSchema,
+} from "./schema";
 
 export default async (fastify: FastifyInstance) => {
   fastify.post("/", { schema: { body: coursePackSchema } }, createCoursePackHandler);
   fastify.delete("/:id", { schema: { params: deleteCoursePackSchema } }, deleteCoursePackHandler);
   fastify.put(
     "/:id",
-    { schema: { body: coursePackSchema, params: updateCoursePackParamsSchema } },
+    { schema: { body: updateCoursePackSchema, params: updateCoursePackParamsSchema } },
     updateCoursePackHandler,
   );
 };

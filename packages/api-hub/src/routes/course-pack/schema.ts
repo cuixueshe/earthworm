@@ -12,11 +12,13 @@ const statementSchema = {
 
 export const coursePackSchema = {
   type: "object",
-  required: ["title", "description", "cover", "courses"],
+  required: ["title", "description", "cover", "courses", "uId", "shareLevel"],
   properties: {
     title: { type: "string" },
     description: { type: "string" },
     cover: { type: "string" },
+    uId: { type: "string" },
+    shareLevel: { type: "string" },
     courses: {
       type: "array",
       items: {
@@ -25,6 +27,36 @@ export const coursePackSchema = {
         properties: {
           title: { type: "string" },
           description: { type: "string" },
+          statements: {
+            type: "array",
+            items: {
+              ...statementSchema,
+            },
+          },
+        },
+      },
+    },
+  },
+} as const;
+
+export const updateCoursePackSchema = {
+  type: "object",
+  required: ["title", "description", "cover", "courses", "uId"],
+  properties: {
+    title: { type: "string" },
+    description: { type: "string" },
+    cover: { type: "string" },
+    uId: { type: "string" },
+    shareLevel: { type: "string" },
+    courses: {
+      type: "array",
+      items: {
+        type: "object",
+        required: ["title", "description", "statements", "publishCourseId"],
+        properties: {
+          title: { type: "string" },
+          description: { type: "string" },
+          publishCourseId: { type: "string" },
           statements: {
             type: "array",
             items: {
@@ -47,7 +79,7 @@ export const updateCoursePackParamsSchema = {
 
 export type CreateCoursePack = FromSchema<typeof coursePackSchema>;
 
-export type UpdateCoursePackBody = FromSchema<typeof coursePackSchema>;
+export type UpdateCoursePackBody = FromSchema<typeof updateCoursePackSchema>;
 
 export type UpdateCoursePackParams = FromSchema<typeof updateCoursePackParamsSchema>;
 export type Statement = FromSchema<typeof statementSchema>;
