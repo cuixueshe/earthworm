@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/routes/root.ts"],
-  "sourcesContent": ["import { FastifyPluginAsync } from \"fastify\";\n\nconst root: FastifyPluginAsync = async (fastify) => {\n  fastify.get(\"/\", async function () {\n    return { root: true };\n  });\n};\n\nexport default root;\n"],
-  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAEA,IAAMI,EAA2B,MAAOC,GAAY,CAClDA,EAAQ,IAAI,IAAK,gBAAkB,CACjC,MAAO,CAAE,KAAM,EAAK,CACtB,CAAC,CACH,EAEOH,EAAQE",
-  "names": ["root_exports", "__export", "root_default", "__toCommonJS", "root", "fastify"]
-}

@@ -6,7 +6,7 @@ import type {
   UpdateCoursePackBody,
   UpdateCoursePackParams,
 } from "./schema";
-import { logger } from "~/utils/logger";
+import { logger } from "../../utils/logger";
 import { createCoursePack, deleteCoursePack, updateCoursePack } from "./service";
 
 export const createCoursePackHandler: RouteHandler<{
@@ -17,7 +17,7 @@ export const createCoursePackHandler: RouteHandler<{
     reply.code(201).send({
       state: 1,
       data: {
-        result,
+        ...result,
       },
     });
   } catch (error) {
@@ -58,7 +58,7 @@ export const updateCoursePackHandler: RouteHandler<{
     const result = await updateCoursePack(coursePackId, req.body);
     reply.code(200).send({
       state: 1,
-      data: result,
+      data: { ...result },
     });
   } catch (error) {
     logger.error(error);

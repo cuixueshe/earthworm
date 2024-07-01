@@ -8,8 +8,8 @@ import {
   userCourseProgress as userCourseProgressSchema,
 } from "@earthworm/schema";
 import type { CreateCoursePack, Statement, UpdateCoursePackBody } from "./schema";
-import { db } from "~/db";
-import { logger } from "~/utils/logger";
+import { db } from "../../db";
+import { logger } from "../../utils/logger";
 
 export async function createCoursePack(coursePackInfo: CreateCoursePack) {
   const result = await db.transaction(async (tx) => {

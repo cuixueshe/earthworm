@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "tsx watch src",
     "test": "vitest",
-    "build": "rm -rf build && node esbuild.mjs",
-    "start": "pnpm build && node build"
+    "build": "rm -rf dist && tsc",
+    "start": "pnpm build && NODE_ENV=prod node ./dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.15.0"
   },
   "keywords": [],
   "author": "",
@@ -25,12 +28,10 @@
   "devDependencies": {
     "@fastify/swagger": "^8.14.0",
     "@types/node": "^20.14.2",
-    "esbuild": "0.21.5",
-    "esbuild-plugin-pino": "^2.2.0",
+    "fast-glob": "^3.3.2",
     "json-schema-to-ts": "^3.1.0",
-    "nodemon": "^3.1.3",
     "pino-pretty": "^11.2.1",
-    "tiny-glob": "^0.2.9",
+    "tsx": "^4.7.0",
     "typescript": "^5.4.5",
     "vitest": "^1.6.0"
   }

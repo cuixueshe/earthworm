@@ -1,15 +1,11 @@
+import "./utils/env";
+
 import { join } from "path";
 
 import autoLoad from "@fastify/autoload";
-import dotenv from "dotenv";
 import Fastify from "fastify";
 
-import { setupDb } from "./db/index.js";
-
-const envName = process.env.NODE_ENV === "prop" ? ".env.prod" : ".env";
-dotenv.config({
-  path: join(__dirname, `../../../apps/api/${envName}`),
-});
+import { setupDb } from "./db";
 
 const fastify = Fastify({
   logger: {
