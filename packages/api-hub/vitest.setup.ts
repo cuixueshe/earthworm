@@ -1,4 +1,4 @@
-import "./src/utils/env";
+import "./src/services/env";
 
 import { afterAll, beforeAll } from "vitest";
 

@@ -5,7 +5,7 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
 import { schemas, SchemaType } from "@earthworm/schema";
-import { logger } from "../utils/logger";
+import { logger } from "../services/logger";
 
 export type DbType = PostgresJsDatabase<SchemaType>;
 

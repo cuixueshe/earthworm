@@ -6,7 +6,7 @@ import type {
   UpdateCoursePackBody,
   UpdateCoursePackParams,
 } from "./schema";
-import { logger } from "../../utils/logger";
+import { logger } from "../../services/logger";
 import { createCoursePack, deleteCoursePack, updateCoursePack } from "./service";
 
 export const createCoursePackHandler: RouteHandler<{

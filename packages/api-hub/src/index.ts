@@ -1,4 +1,4 @@
-import "./utils/env";
+import "./services/env";
 
 import { join } from "path";
 
