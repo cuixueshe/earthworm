@@ -201,8 +201,8 @@
 	},
 	{
 		"chinese": "出生",
-		"english": "to bear",
-		"soundmark": "/tə/ /bɛr/"
+		"english": "to birth",
+		"soundmark": "/tə/ /bɜːθ/"
 	},
 	{
 		"chinese": "出生(ed形式)",
@@ -240,8 +240,8 @@
 		"soundmark": "/ðe/ /hæd/ /muvd/ /tə/ /ə/ /nu/ /'sɪti/"
 	},
 	{
-		"chinese": "在那个婴儿(过去)出生之前他们",
-		"english": "(过去已经)搬到了一个新的城市 they had moved to a new city before the baby was born",
+		"chinese": "在那个婴儿(过去)出生之前他们,(过去已经)搬到了一个新的城市",
+		"english": "they had moved to a new city before the baby was born",
 		"soundmark": "/ðe/ /hæd/ /muvd/ /tə/ /ə/ /nu/ /'sɪti/ /bɪ'fɔr/ /ðə/ /'bebi/ /wəz/ /bɔrn/"
 	},
 	{
@@ -770,8 +770,8 @@
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/ /ə/ /kɑr/"
 	},
 	{
-		"chinese": "在她(过去)拿到她的驾照之前她",
-		"english": "(过去)从来没有驾驶过一辆车 she had never driven a car before she got her driver's license",
+		"chinese": "在她(过去)拿到她的驾照之前她,(过去)从来没有驾驶过一辆车",
+		"english": "she had never driven a car before she got her driver's license",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/ /ə/ /kɑr/ /bɪ'fɔr/ /ʃi/ /ɡɑt/ /hɚ/ /'draɪvɚz/ /'laɪsns/"
 	}
 ]

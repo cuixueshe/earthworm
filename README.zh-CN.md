@@ -4,6 +4,11 @@
   <span>中文 | <a href="./README.md">English</a></span>
 </div>
 
+<div align="center">
+  <br/>
+  <a href="https://hellogithub.com/repository/9433615761f548cf9648434c670cd85b" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=9433615761f548cf9648434c670cd85b&claim_uid=249cPWvjfNmU7dp" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</div>
+
 ## ⚡ 介绍
 
 通过连词构句的方式让你更好的学习英语~ 😊
@@ -269,3 +274,5 @@ docker images
 在此感谢所有为 Earthworm 做出过贡献的人！🎉
 
 <a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=cuixueshe/earthworm" /></a>
+
+<a href="https://hellogithub.com/repository/9433615761f548cf9648434c670cd85b" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=9433615761f548cf9648434c670cd85b&claim_uid=249cPWvjfNmU7dp" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
