@@ -1,11 +1,10 @@
 import { Inject, Injectable, NotFoundException } from "@nestjs/common";
-import { asc, eq } from "drizzle-orm";
+import { and, asc, eq, or } from "drizzle-orm";
 
 import { course, coursePack } from "@earthworm/schema";
 import { CourseHistoryService } from "../course-history/course-history.service";
 import { CourseService } from "../course/course.service";
 import { DB, DbType } from "../global/providers/db.provider";
-import { CreateCoursePackDto } from "./dto/create-course-pack.dto";
 
 @Injectable()
 export class CoursePackService {
@@ -15,9 +14,21 @@ export class CoursePackService {
     private readonly courseHistoryService: CourseHistoryService,
   ) {}
 
-  async findAll() {
+  async findAll(userId: string) {
+    const userIdOwnedCoursePacks = await this.db.query.coursePack.findMany({
+      orderBy: asc(coursePack.order),
+      where: and(eq(coursePack.creatorId, userId), eq(coursePack.shareLevel, "private")),
+    });
+
+    const publicCoursePacks = await this.findAllPublicCoursePacks();
+
+    return [...userIdOwnedCoursePacks, ...publicCoursePacks];
+  }
+
+  async findAllPublicCoursePacks() {
     return await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
+      where: eq(coursePack.shareLevel, "public"),
     });
   }
 
@@ -34,7 +45,7 @@ export class CoursePackService {
   }
 
   async findOneWithCourses(userId: string, coursePackId: string) {
-    const coursePackWithCourses = await this.findCoursePackWithCourses(coursePackId);
+    const coursePackWithCourses = await this.findCoursePackWithCourses(coursePackId, userId);
 
     if (userId) {
       coursePackWithCourses.courses = await this.addCompletionCountsToCourses(
@@ -47,9 +58,12 @@ export class CoursePackService {
     return coursePackWithCourses;
   }
 
-  private async findCoursePackWithCourses(coursePackId: string) {
+  private async findCoursePackWithCourses(coursePackId: string, userId: string) {
     const coursePackWithCourses = await this.db.query.coursePack.findFirst({
-      where: eq(coursePack.id, coursePackId),
+      where: and(
+        eq(coursePack.id, coursePackId),
+        or(eq(coursePack.shareLevel, "public"), eq(coursePack.creatorId, userId)),
+      ),
       with: {
         courses: {
           orderBy: asc(course.order),
@@ -78,18 +92,6 @@ export class CoursePackService {
         };
       }),
     );
-  }
-
-  async create(dto: CreateCoursePackDto) {
-    return await this.db
-      .insert(coursePack)
-      .values({
-        order: dto.order,
-        title: dto.title,
-        description: dto.description,
-        isFree: dto.isFree || true,
-      })
-      .returning();
   }
 
   async findCourse(userId: string, coursePackId: string, courseId: string) {

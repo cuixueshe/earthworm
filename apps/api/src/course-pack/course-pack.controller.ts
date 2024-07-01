@@ -1,7 +1,6 @@
 import { Controller, Get, Param, Post, UseGuards } from "@nestjs/common";
 
 import { AuthGuard, UncheckAuth } from "../guards/auth.guard";
-import { CoursePacksAccessGuard } from "../guards/course-packs-access.guard";
 import { User, UserEntity } from "../user/user.decorators";
 import { CoursePackService } from "./course-pack.service";
 
@@ -9,20 +8,26 @@ import { CoursePackService } from "./course-pack.service";
 export class CoursePackController {
   constructor(private readonly coursePackService: CoursePackService) {}
 
+  @UncheckAuth()
+  @UseGuards(AuthGuard)
   @Get()
-  async findAll() {
-    return await this.coursePackService.findAll();
+  async findAll(@User() user: UserEntity) {
+    if (user.userId) {
+      return await this.coursePackService.findAll(user.userId);
+    } else {
+      return await this.coursePackService.findAllPublicCoursePacks();
+    }
   }
 
   @UncheckAuth()
-  @UseGuards(AuthGuard, CoursePacksAccessGuard)
+  @UseGuards(AuthGuard)
   @Get(":coursePackId")
   async findOne(@User() user: UserEntity, @Param("coursePackId") coursePackId: string) {
     return await this.coursePackService.findOneWithCourses(user.userId, coursePackId);
   }
 
   @UncheckAuth()
-  @UseGuards(AuthGuard, CoursePacksAccessGuard)
+  @UseGuards(AuthGuard)
   @Get(":coursePackId/courses/:courseId")
   findCourse(
     @User() user: UserEntity,
@@ -33,13 +38,13 @@ export class CoursePackController {
   }
 
   @UncheckAuth()
-  @UseGuards(AuthGuard, CoursePacksAccessGuard)
+  @UseGuards(AuthGuard)
   @Get(":coursePackId/courses/:courseId/next")
   findNextCourse(@Param("coursePackId") coursePackId: string, @Param("courseId") courseId: string) {
     return this.coursePackService.findNextCourse(coursePackId, courseId);
   }
 
-  @UseGuards(AuthGuard, CoursePacksAccessGuard)
+  @UseGuards(AuthGuard)
   @Post(":coursePackId/courses/:courseId/complete")
   CompleteCourse(
     @User() user: UserEntity,
@@ -48,11 +53,4 @@ export class CoursePackController {
   ) {
     return this.coursePackService.completeCourse(user.userId, coursePackId, courseId);
   }
-
-  // TODO 暂时不支持用户自行上传课程包
-  // @UseGuards(AuthGuard)
-  // @Post()
-  // create(@Body() createCoursePackDto: CreateCoursePackDto) {
-  //   return this.coursePackService.create(createCoursePackDto);
-  // }
 }
