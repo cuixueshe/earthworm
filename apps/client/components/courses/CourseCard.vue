@@ -57,7 +57,7 @@ onMounted(() => {
 
 <style scoped>
 .course-card {
-  @apply relative h-[160px] w-full rounded-xl border border-gray-400 p-4 pb-6 transition-all duration-300 dark:text-gray-100;
+  @apply relative h-[160px] w-full cursor-pointer rounded-xl border border-gray-400 p-4 pb-6 transition-all duration-300 dark:text-gray-100;
   @apply hover:text-purple-500 hover:shadow-lg hover:shadow-gray-300 hover:dark:text-purple-400 dark:hover:shadow-gray-500;
 }
 
