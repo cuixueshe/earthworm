@@ -65,9 +65,9 @@ export class MembershipService {
     const { period, duration } = buyMembershipDto;
     const endDate = new Date(startDate);
     if (period === MembershipPeriod.MONTH) {
-      endDate.setMonth(endDate.getMonth() + duration);
+      endDate.setMonth(endDate.getMonth() + Number(duration));
     } else if (period === MembershipPeriod.YEAR) {
-      endDate.setFullYear(endDate.getFullYear() + duration);
+      endDate.setFullYear(endDate.getFullYear() + Number(duration));
     }
     return endDate;
   }

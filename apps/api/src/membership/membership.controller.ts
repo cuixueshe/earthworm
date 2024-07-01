@@ -8,7 +8,7 @@ import { MembershipService } from "./membership.service";
 export class MembershipController {
   constructor(private readonly membershipService: MembershipService) {}
 
-  @Permissions("write:membership", "create:membership")
+  @Permissions("write:membership")
   @UseGuards(AuthGuard)
   @Post("buy")
   async buyMembership(@Body() buyMembershipDto: BuyMembershipDto) {
