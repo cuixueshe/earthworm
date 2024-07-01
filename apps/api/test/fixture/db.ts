@@ -11,6 +11,8 @@ export async function insertCoursePack(db: DbType, values?: Partial<CoursePackIn
     title: "课程包",
     description: "这是一个课程包",
     isFree: true,
+    creatorId: "test",
+    shareLevel: "public",
   } satisfies CoursePackInsert;
 
   const [entity] = await db

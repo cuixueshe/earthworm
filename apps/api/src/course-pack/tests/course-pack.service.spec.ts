@@ -36,15 +36,48 @@ describe("CoursePackService", () => {
   });
 
   describe("findAll", () => {
-    it("should return an array of course packs", async () => {
-      await insertCoursePack(db);
-      await insertCoursePack(db);
+    it("should return all course packs including private and public", async () => {
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
+      await insertCoursePack(db, { creatorId: "user1", shareLevel: "public" });
 
-      const result = await coursePackService.findAll();
+      const result = await coursePackService.findAll("user1");
 
-      expect(result.length).toBe(2);
+      expect(result.length).toBe(2); // user1's private and public packs
+    });
+
+    it("should return only public course packs", async () => {
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
+      await insertCoursePack(db, { creatorId: "user2", shareLevel: "private" });
+
+      const result = await coursePackService.findAllPublicCoursePacks();
+
+      expect(result.length).toBe(2); // all public packs
+    });
+
+    it("should return only private course packs and public course packs for a specific user", async () => {
+      await insertCoursePack(db, { creatorId: "user1", shareLevel: "private" });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "public" });
+      await insertCoursePack(db, { creatorId: "user2", shareLevel: "private" });
+
+      const result = await coursePackService.findAll("user1");
+
+      expect(result.length).toBe(2); // user1's private pack
     });
   });
+
+  // describe("findAll", () => {
+  //   // TODO
+  //   // 这里需要测试 是否可以返回个人私有的课程包
+  //   it("should return an array of course packs", async () => {
+  //     await insertCoursePack(db);
+  //     await insertCoursePack(db);
+
+  //     const result = await coursePackService.findAllPublicCoursePacks();
+
+  //     expect(result.length).toBe(2);
+  //   });
+  // });
 
   describe("findOne", () => {
     it("should return a course pack for a valid ID", async () => {

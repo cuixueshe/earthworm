@@ -14,15 +14,20 @@ export class CoursePackService {
     private readonly courseHistoryService: CourseHistoryService,
   ) {}
 
-  async findAll(userId: string) {
+  async findAll(userId?: string) {
+    const userIdOwnedCoursePacks = userId ? await this.findAllForUser(userId) : [];
+    const publicCoursePacks = await this.findAllPublicCoursePacks();
+
+    return [...userIdOwnedCoursePacks, ...publicCoursePacks];
+  }
+
+  async findAllForUser(userId: string) {
     const userIdOwnedCoursePacks = await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
       where: and(eq(coursePack.creatorId, userId), eq(coursePack.shareLevel, "private")),
     });
 
-    const publicCoursePacks = await this.findAllPublicCoursePacks();
-
-    return [...userIdOwnedCoursePacks, ...publicCoursePacks];
+    return userIdOwnedCoursePacks;
   }
 
   async findAllPublicCoursePacks() {

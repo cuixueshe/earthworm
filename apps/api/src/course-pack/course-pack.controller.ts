@@ -12,11 +12,7 @@ export class CoursePackController {
   @UseGuards(AuthGuard)
   @Get()
   async findAll(@User() user: UserEntity) {
-    if (user.userId) {
-      return await this.coursePackService.findAll(user.userId);
-    } else {
-      return await this.coursePackService.findAllPublicCoursePacks();
-    }
+    return await this.coursePackService.findAll(user.userId);
   }
 
   @UncheckAuth()
