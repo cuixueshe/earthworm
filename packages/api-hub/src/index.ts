@@ -32,7 +32,8 @@ fastify.register(autoLoad, {
 const start = async () => {
   try {
     await setupDb();
-    await fastify.listen({ port: 3008 });
+    const port = process.env.PORT || 3008;
+    await fastify.listen({ port: Number(port) });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);

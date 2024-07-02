@@ -7,7 +7,9 @@
     "dev": "tsx watch src",
     "test": "vitest",
     "build": "rm -rf dist && tsc",
-    "start": "pnpm build && NODE_ENV=prod node ./dist/index.js"
+    "start": "pnpm build && NODE_ENV=prod node ./dist/index.js",
+    "start:pm2": "pm2 start ecosystem.config.js",
+    "restart:pm2": "pm2 restart api-hub"
   },
   "engines": {
     "node": ">=20.15.0"
