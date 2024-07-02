@@ -343,21 +343,6 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.14.2)(happy-dom@13.10.1)(terser@5.31.1)
 
-  packages/api-hub/learn-watch:
-    dependencies:
-      chokidar:
-        specifier: ^3.6.0
-        version: 3.6.0
-
-  packages/course-db:
-    dependencies:
-      '@earthworm/db':
-        specifier: workspace:^
-        version: link:../db
-      '@earthworm/schema':
-        specifier: workspace:^
-        version: link:../schema
-
   packages/db:
     dependencies:
       postgres:
