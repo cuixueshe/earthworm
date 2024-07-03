@@ -66,19 +66,6 @@ describe("CoursePackService", () => {
     });
   });
 
-  // describe("findAll", () => {
-  //   // TODO
-  //   // 这里需要测试 是否可以返回个人私有的课程包
-  //   it("should return an array of course packs", async () => {
-  //     await insertCoursePack(db);
-  //     await insertCoursePack(db);
-
-  //     const result = await coursePackService.findAllPublicCoursePacks();
-
-  //     expect(result.length).toBe(2);
-  //   });
-  // });
-
   describe("findOne", () => {
     it("should return a course pack for a valid ID", async () => {
       const coursePackEntity = await insertCoursePack(db);
