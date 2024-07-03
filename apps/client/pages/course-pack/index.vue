@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full flex-col">
-    <h2 class="mb-4 text-2xl font-bold">多课程包</h2>
+    <h2 class="mb-4 text-center text-3xl dark:border-gray-600">课程包列表</h2>
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
