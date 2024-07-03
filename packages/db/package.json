@@ -8,7 +8,8 @@
     "init:test": "drizzle-kit push --config=drizzle.config.test.ts",
     "init": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "generate": "drizzle-kit generate"
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
