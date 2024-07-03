@@ -12,36 +12,47 @@
       v-else
       class="grid w-full grid-cols-1 gap-4 min-[500px]:grid-cols-2 md:grid-cols-1 min-[850px]:grid-cols-2 xl:grid-cols-3"
     >
-      <div
-        class="course-pack-card"
-        v-for="coursePack in coursePacks"
-      >
-        <img
-          class="min-h-44 w-full bg-gray-300 object-cover dark:bg-gray-700"
-          :src="coursePack.cover"
-        />
-        <div class="flex flex-1 flex-col p-4">
-          <h2 class="truncate text-lg font-semibold">{{ coursePack.title }}</h2>
-          <p class="my-2 line-clamp-2 min-h-[3em] text-sm text-gray-500">
-            {{ coursePack.description }}
-          </p>
-          <div class="flex justify-between">
-            <button
-              class="btn btn-sm tw-btn-blue"
-              @click="handleGotoCourseList(coursePack.coursePackId)"
-            >
-              课程列表
-            </button>
-            <button
-              class="btn btn-success btn-sm text-white"
-              @click="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
-            >
-              继续游戏
-            </button>
+      <template v-if="coursePacks.length">
+        <div
+          class="course-pack-card"
+          v-for="coursePack in coursePacks"
+        >
+          <img
+            class="min-h-44 w-full bg-gray-300 object-cover dark:bg-gray-700"
+            :src="coursePack.cover"
+          />
+          <div class="flex flex-1 flex-col p-4">
+            <h2 class="truncate text-lg font-semibold">{{ coursePack.title }}</h2>
+            <p class="my-2 line-clamp-2 min-h-[3em] text-sm text-gray-500">
+              {{ coursePack.description }}
+            </p>
+            <div class="flex justify-between">
+              <button
+                class="btn btn-sm tw-btn-blue"
+                @click="handleGotoCourseList(coursePack.coursePackId)"
+              >
+                课程列表
+              </button>
+              <button
+                class="btn btn-success btn-sm text-white"
+                @click="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
+              >
+                继续游戏
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </template>
     </div>
+    <template v-else>
+      <div class="flex flex-1 items-center justify-center text-slate-500">
+        暂无记录，<NuxtLink
+          href="/course-pack"
+          class="link text-blue-500 no-underline hover:opacity-75"
+          >先学习一课， </NuxtLink
+        >再来看看吧~
+      </div>
+    </template>
   </div>
 </template>
 
