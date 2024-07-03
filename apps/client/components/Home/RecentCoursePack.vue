@@ -10,9 +10,12 @@
 
     <div
       v-else
-      class="grid w-full grid-cols-1 gap-4 min-[500px]:grid-cols-2 md:grid-cols-1 min-[850px]:grid-cols-2 xl:grid-cols-3"
+      class="w-full"
     >
-      <template v-if="coursePacks.length">
+      <div
+        v-if="coursePacks.length"
+        class="grid w-full grid-cols-1 gap-4 min-[500px]:grid-cols-2 md:grid-cols-1 min-[850px]:grid-cols-2 xl:grid-cols-3"
+      >
         <div
           class="course-pack-card"
           v-for="coursePack in coursePacks"
@@ -42,17 +45,17 @@
             </div>
           </div>
         </div>
+      </div>
+      <template v-else>
+        <div class="flex h-full w-full flex-1 items-center justify-center text-slate-500">
+          暂无记录，<NuxtLink
+            href="/course-pack"
+            class="link text-blue-500 no-underline hover:opacity-75"
+            >先学习一课， </NuxtLink
+          >再来看看吧~
+        </div>
       </template>
     </div>
-    <template v-else>
-      <div class="flex flex-1 items-center justify-center text-slate-500">
-        暂无记录，<NuxtLink
-          href="/course-pack"
-          class="link text-blue-500 no-underline hover:opacity-75"
-          >先学习一课， </NuxtLink
-        >再来看看吧~
-      </div>
-    </template>
   </div>
 </template>
 
