@@ -65,10 +65,7 @@ export class CoursePackService {
 
   private async findCoursePackWithCourses(coursePackId: string, userId: string) {
     const coursePackWithCourses = await this.db.query.coursePack.findFirst({
-      where: and(
-        eq(coursePack.id, coursePackId),
-        or(eq(coursePack.shareLevel, "public"), eq(coursePack.creatorId, userId)),
-      ),
+      where: and(eq(coursePack.id, coursePackId)),
       with: {
         courses: {
           orderBy: asc(course.order),
@@ -80,7 +77,15 @@ export class CoursePackService {
       throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
     }
 
-    return coursePackWithCourses;
+    if (coursePackWithCourses.shareLevel === "private") {
+      if (coursePackWithCourses.creatorId === userId) {
+        return coursePackWithCourses;
+      } else {
+        throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
+      }
+    } else {
+      return coursePackWithCourses;
+    }
   }
 
   private async addCompletionCountsToCourses(userId: string, courses: any[], coursePackId: string) {
