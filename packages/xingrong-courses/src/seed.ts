@@ -23,7 +23,7 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
       order: 1,
       title: "星荣零基础学英语",
       description: "最适合零基础入门的课程",
-      creatorId: "110",
+      creatorId: "1",
       shareLevel: "public",
       isFree: true,
       cover:
