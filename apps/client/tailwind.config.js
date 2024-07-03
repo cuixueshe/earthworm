@@ -56,7 +56,7 @@ export default {
       // 来这里找 https://icones.js.org/
       collections: getIconCollections(["ph", "simple-icons"]),
     }),
-    function ({ addComponents }) {
+    function ({ addComponents, addUtilities }) {
       const buttons = {
         ".tw-btn-blue": {
           backgroundColor: "#4e80ee",
@@ -69,6 +69,18 @@ export default {
       };
 
       addComponents(buttons);
+
+      const scrollbar = {
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none" /* 适用于 IE 和 Edge */,
+          "scrollbar-width": "none" /* 适用于 Firefox */,
+        },
+        ".scrollbar-hide::-webkit-scrollbar": {
+          display: "none",
+        },
+      };
+
+      addUtilities(scrollbar, ["responsive"]);
     },
   ],
 };

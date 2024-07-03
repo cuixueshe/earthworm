@@ -1,16 +1,18 @@
 <template>
   <div class="flex w-full flex-col">
-    <h2 class="my-10 text-2xl font-bold">多课程包</h2>
+    <h2 class="mb-4 text-2xl font-bold">多课程包</h2>
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
     <template v-else>
-      <div
-        class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
-        <template v-for="coursePack in coursePackStore.coursePacks">
-          <CoursePackCard :coursePack="coursePack"></CoursePackCard>
-        </template>
+      <div class="h-[79vh] overflow-y-auto overflow-x-hidden scrollbar-hide">
+        <div
+          class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <template v-for="coursePack in coursePackStore.coursePacks">
+            <CoursePackCard :coursePack="coursePack"></CoursePackCard>
+          </template>
+        </div>
       </div>
     </template>
   </div>
