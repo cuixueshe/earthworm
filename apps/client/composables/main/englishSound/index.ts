@@ -18,6 +18,8 @@ export function useCurrentStatementEnglishSound() {
       updateSource(pronunciationUrl);
     }
     lastPronunciationUrl = pronunciationUrl;
+
+    courseStore.updateSoundmark();
   });
 
   return {

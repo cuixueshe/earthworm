@@ -4,6 +4,8 @@ import { computed, ref, watchEffect } from "vue";
 import type { CoursePack } from "./coursePack";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
+import { getPhoneticsRegExp } from "~/composables/main/englishSound/phonetics";
+import { usePronunciation } from "~/composables/user/pronunciation";
 import { useStatement } from "./statement";
 
 export interface Statement {
@@ -35,6 +37,7 @@ export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const currentStatement = ref<Statement>();
   const { statementIndex, setupStatement } = useStatement();
+  const { getPhonetics } = usePronunciation();
 
   const { updateActiveCourseMap } = useActiveCourseMap();
 
@@ -44,6 +47,10 @@ export const useCourseStore = defineStore("course", () => {
 
   const words = computed(() => {
     return currentStatement.value?.english.split(" ") || [];
+  });
+
+  const soundMarks = computed(() => {
+    return currentStatement.value?.soundmark.match(getPhoneticsRegExp()) || [];
   });
 
   const totalQuestionsCount = computed(() => {
@@ -87,6 +94,17 @@ export const useCourseStore = defineStore("course", () => {
     setupStatement(currentCourse);
   }
 
+  async function updateSoundmark() {
+    if (currentStatement.value) {
+      const words = currentStatement.value.english.split(" ") || [];
+      const promises = words.map((word) => {
+        return getPhonetics(word);
+      });
+      const phonetics = await Promise.all(promises);
+      currentStatement.value.soundmark = phonetics.join(" ");
+    }
+  }
+
   return {
     statementIndex,
     currentCourse,
@@ -101,5 +119,7 @@ export const useCourseStore = defineStore("course", () => {
     toPreviousStatement,
     toNextStatement,
     resetStatementIndex,
+    soundMarks,
+    updateSoundmark,
   };
 });
