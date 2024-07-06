@@ -71,6 +71,10 @@ cp ./apps/client/.env.example ./apps/client/.env
 
 ### 3. Restore Data Of Logto
 
+> The data in "logto_db_init_data. zip" is outdated and will be updated soon
+> He does not support versions after Logto@1.14.
+> Please manually configure Logto
+
 Uncompress `logto_db_init_data.zip` to `.volumes/`
 
 ```bash
