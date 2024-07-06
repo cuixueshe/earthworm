@@ -137,3 +137,4 @@ dist
 # docker volumes for dev
 .volumes
 cache
+course-db
