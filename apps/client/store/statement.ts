@@ -15,7 +15,7 @@ let isSaveStatement = true;
 const statementIndex = ref(0);
 
 export function useStatement() {
-  function setupStatement(course: Ref<Course | undefined>) {
+  function setupAutoSaveProgress(course: Ref<Course | undefined>) {
     // 课程的 statement 会被删除，
     // 如果记录的 statementIndex 所对应的 statement 被删除了
     // 那么默认返回第一个 statement
@@ -71,7 +71,7 @@ export function useStatement() {
   }
 
   return {
-    setupStatement,
+    setupAutoSaveProgress,
     statementIndex,
   };
 }

@@ -4,6 +4,7 @@ import { computed, ref, watchEffect } from "vue";
 import type { CoursePack } from "./coursePack";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
+import { isAuthenticated } from "~/services/auth";
 import { useStatement } from "./statement";
 
 export interface Statement {
@@ -34,7 +35,7 @@ export interface Course {
 export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();
   const currentStatement = ref<Statement>();
-  const { statementIndex, setupStatement } = useStatement();
+  const { statementIndex, setupAutoSaveProgress } = useStatement();
 
   const { updateActiveCourseMap } = useActiveCourseMap();
 
@@ -84,7 +85,7 @@ export const useCourseStore = defineStore("course", () => {
   async function setup(coursePackId: string, courseId: string) {
     let course = await fetchCourse(coursePackId, courseId);
     currentCourse.value = course;
-    setupStatement(currentCourse);
+    isAuthenticated() && setupAutoSaveProgress(currentCourse);
   }
 
   return {
