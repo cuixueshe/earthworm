@@ -1,0 +1,1 @@
+CREATE TYPE membership_type AS ENUM ('regular', 'premium');

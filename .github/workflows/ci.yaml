@@ -49,6 +49,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Execute SQL script
+        run: |
+          psql -U test -d earthworm_test -h localhost -p 5480 -f /packages/db/init.sql
+
       - name: Run database initialization command
         run: pnpm db:init:test:ci
 
