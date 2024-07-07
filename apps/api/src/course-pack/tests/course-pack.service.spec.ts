@@ -81,9 +81,9 @@ describe("CoursePackService", () => {
   });
 
   describe("findOneWithCourses", () => {
-    it("should return a course pack with courses and completion counts when userId is provided", async () => {
+    it("should return a course pack with courses and completion counts when userId is provided and course pack is public", async () => {
       const userId = "cxr";
-      const coursePackEntity = await insertCoursePack(db);
+      const coursePackEntity = await insertCoursePack(db, { shareLevel: "public" });
       await insertCourse(db, coursePackEntity.id);
 
       const result = await coursePackService.findOneWithCourses(userId, coursePackEntity.id);
@@ -92,9 +92,45 @@ describe("CoursePackService", () => {
       expect(result.courses[0]).toHaveProperty("completionCount");
     });
 
+    it("should return a course pack with courses and completion counts when userId is provided and course pack is private but user is the creator", async () => {
+      const userId = "cxr";
+      const coursePackEntity = await insertCoursePack(db, {
+        shareLevel: "private",
+        creatorId: userId,
+      });
+      await insertCourse(db, coursePackEntity.id);
+
+      const result = await coursePackService.findOneWithCourses(userId, coursePackEntity.id);
+
+      expect(result.courses.length).toBe(1);
+      expect(result.courses[0]).toHaveProperty("completionCount");
+    });
+
+    it("should throw NotFoundException when course pack ID does not exist", async () => {
+      const userId = "cxr";
+      const nonExistentCoursePackId = "non-existent-id";
+
+      await expect(
+        coursePackService.findOneWithCourses(userId, nonExistentCoursePackId),
+      ).rejects.toThrow(NotFoundException);
+    });
+
+    it("should throw NotFoundException when course pack is private and user is not the creator", async () => {
+      const userId = "cxr";
+      const coursePackEntity = await insertCoursePack(db, {
+        shareLevel: "private",
+        creatorId: "another-user-id",
+      });
+      await insertCourse(db, coursePackEntity.id);
+
+      await expect(
+        coursePackService.findOneWithCourses(userId, coursePackEntity.id),
+      ).rejects.toThrow(NotFoundException);
+    });
+
     it("should return a course pack with courses without completion counts when userId is not provided", async () => {
       const notUserId = "";
-      const coursePackEntity = await insertCoursePack(db);
+      const coursePackEntity = await insertCoursePack(db, { shareLevel: "public" });
       await insertCourse(db, coursePackEntity.id);
 
       const result = await coursePackService.findOneWithCourses(notUserId, coursePackEntity.id);
