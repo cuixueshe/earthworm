@@ -19,6 +19,7 @@
     "pg": "^8.11.5"
   },
   "dependencies": {
-    "postgres": "^3.4.4"
+    "postgres": "^3.4.4",
+    "@earthworm/schema": "workspace:^"
   }
 }
