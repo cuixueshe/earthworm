@@ -1,0 +1,1 @@
+ALTER TABLE "memberships" ADD COLUMN "type" text DEFAULT 'regular' NOT NULL;

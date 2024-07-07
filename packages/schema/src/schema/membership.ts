@@ -1,8 +1,5 @@
 import { createId } from "@paralleldrive/cuid2";
-import { boolean, pgEnum, pgTable, text, timestamp } from "drizzle-orm/pg-core";
-
-// 定义会员类型的枚举
-const membershipTypeEnum = pgEnum("membership_type", ["regular", "founder"]);
+import { boolean, pgTable, text, timestamp } from "drizzle-orm/pg-core";
 
 export const membership = pgTable("memberships", {
   id: text("id")
@@ -14,5 +11,5 @@ export const membership = pgTable("memberships", {
   isActive: boolean("isActive").default(true),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
-  type: membershipTypeEnum("type").notNull().default("regular"),
+  type: text("type").notNull().default("regular"),
 });
