@@ -17,7 +17,7 @@ vi.mock("../statement.ts", () => {
   return {
     useStatement: () => {
       const returnObj = {
-        setupStatement(course: Ref<Course | undefined>) {
+        setupAutoSaveProgress(course: Ref<Course | undefined>) {
           returnObj.statementIndex.value = course.value?.statementIndex!;
         },
         statementIndex: ref(0),
