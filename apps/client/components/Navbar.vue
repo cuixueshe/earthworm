@@ -39,7 +39,7 @@
                 <a
                   class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
                   :href="optItem.href"
-                  :target="optItem.target ?? optItem.target"
+                  :target="optItem.target ?? '_self'"
                 >
                   {{ optItem.name }}
                 </a>
@@ -109,8 +109,14 @@ const isShowModal = ref(false);
 const isOpenUserMenu = ref(false);
 
 const SCROLL_THRESHOLD = 8;
-const HEADER_OPTIONS = [
-  { name: "文档", href: runtimeConfig.public.helpDocsURL, target: "_blank" },
+// https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#%E5%B1%9E%E6%80%A7
+interface AnchorAttributes extends Record<string, any> {
+  href: string;
+  target?: string;
+  download?: string;
+}
+const HEADER_OPTIONS: AnchorAttributes[] = [
+  { name: "文档", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
   { name: "功能", href: "#features" },
   { name: "问题", href: "#faq" },
   { name: "联系我们", href: "#contact" },
