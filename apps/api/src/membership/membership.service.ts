@@ -83,6 +83,16 @@ export class MembershipService {
     };
   }
 
+  public async checkFounderMembership(userId: string) {
+    let result = await this.db
+      .select()
+      .from(membership)
+      .where(and(eq(membership.userId, userId), eq(membership.type, "founder")));
+    // 如果有会员记录并且type为"founder"，则用户是创始会员
+    // 创始会员永久有效 所以不需要检查 active
+    return Boolean(result[0]);
+  }
+
   @Cron("0 0 * * *")
   async deactivateExpiredMemberships(currentDate: Date) {
     this.logger.log("Running scheduled task to deactivate expired memberships");

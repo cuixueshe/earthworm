@@ -41,7 +41,7 @@ export const coursePackSchema = {
 
 export const updateCoursePackSchema = {
   type: "object",
-  required: ["title", "description", "cover", "courses", "uId"],
+  required: ["title", "description", "cover", "courses", "uId", "shareLevel"],
   properties: {
     title: { type: "string" },
     description: { type: "string" },

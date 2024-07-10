@@ -131,6 +131,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
           title: coursePackInfo.title,
           description: coursePackInfo.description,
           cover: coursePackInfo.cover,
+          shareLevel: coursePackInfo.shareLevel,
         })
         .where(eq(coursePackSchema.id, coursePackId));
     }

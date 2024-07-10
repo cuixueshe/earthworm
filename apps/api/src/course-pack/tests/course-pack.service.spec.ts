@@ -9,6 +9,7 @@ import { endDB } from "../../common/db";
 import { CourseHistoryService } from "../../course-history/course-history.service";
 import { CourseService } from "../../course/course.service";
 import { DB } from "../../global/providers/db.provider";
+import { MembershipService } from "../../membership/membership.service";
 import { CoursePackService } from "../course-pack.service";
 
 describe("CoursePackService", () => {
@@ -63,6 +64,24 @@ describe("CoursePackService", () => {
       const result = await coursePackService.findAll("user1");
 
       expect(result.length).toBe(2); // user1's private pack
+    });
+
+    it("should return all course packs including founder_only for a founder member", async () => {
+      await insertCoursePack(db, { creatorId: "founderUser", shareLevel: "private" });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "founder_only" });
+
+      const result = await coursePackService.findAll("founderUser");
+
+      expect(result.length).toBe(2); // founderUser's private pack and founder_only pack
+    });
+
+    it("should return only private course packs for a non-founder member", async () => {
+      await insertCoursePack(db, { creatorId: "nonFounderUser", shareLevel: "private" });
+      await insertCoursePack(db, { creatorId: "admin", shareLevel: "founder_only" });
+
+      const result = await coursePackService.findAll("nonFounderUser");
+
+      expect(result.length).toBe(1); // nonFounderUser's private pack
     });
   });
 
@@ -138,6 +157,33 @@ describe("CoursePackService", () => {
       expect(result.courses.length).toBe(1);
       expect(result.courses[0]).not.toHaveProperty("completionCount");
     });
+
+    it("should return a course pack with courses and completion counts when userId is provided and user is a founder member", async () => {
+      const userId = "founderUser";
+      const coursePackEntity = await insertCoursePack(db, {
+        shareLevel: "founder_only",
+        creatorId: "another-user-id", // The creator can be different from the founder member
+      });
+      await insertCourse(db, coursePackEntity.id);
+
+      const result = await coursePackService.findOneWithCourses(userId, coursePackEntity.id);
+
+      expect(result.courses.length).toBe(1);
+      expect(result.courses[0]).toHaveProperty("completionCount");
+    });
+
+    it("should throw NotFoundException when course pack is founder_only and user is not a founder member", async () => {
+      const userId = "nonFounderUser";
+      const coursePackEntity = await insertCoursePack(db, {
+        shareLevel: "founder_only",
+        creatorId: "another-user-id", // The creator can be different from the non-founder member
+      });
+      await insertCourse(db, coursePackEntity.id);
+
+      await expect(
+        coursePackService.findOneWithCourses(userId, coursePackEntity.id),
+      ).rejects.toThrow(NotFoundException);
+    });
   });
 
   describe("findCourse", () => {
@@ -188,6 +234,10 @@ async function setupTesting() {
     findCompletionCount: jest.fn(() => 1),
   };
 
+  const MockMembershipService = {
+    checkFounderMembership: jest.fn((userId) => userId === "founderUser"),
+  };
+
   const moduleRef = await Test.createTestingModule({
     imports: testImportModules,
     providers: [
@@ -196,6 +246,10 @@ async function setupTesting() {
       {
         provide: CourseHistoryService,
         useValue: MockCourseHistoryService,
+      },
+      {
+        provide: MembershipService,
+        useValue: MockMembershipService,
       },
     ],
   }).compile();

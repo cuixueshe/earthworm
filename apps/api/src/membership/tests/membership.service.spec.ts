@@ -106,6 +106,44 @@ describe("MembershipService", () => {
 
     expect(result.isActive).toBe(false);
   });
+
+  it("should return true if the user is a founder member", async () => {
+    const userId = "founderUser";
+    await db.insert(membership).values({
+      userId,
+      type: "founder",
+      start_date: new Date(),
+      end_date: new Date(),
+      isActive: true,
+    });
+
+    const result = await service.checkFounderMembership(userId);
+
+    expect(result).toBe(true);
+  });
+
+  it("should return false if the user is not a founder member", async () => {
+    const userId = "nonFounderUser";
+    await db.insert(membership).values({
+      userId,
+      type: "regular",
+      start_date: new Date(),
+      end_date: new Date(),
+      isActive: true,
+    });
+
+    const result = await service.checkFounderMembership(userId);
+
+    expect(result).toBe(false);
+  });
+
+  it("should return false if the user has no membership record", async () => {
+    const userId = "noMembershipUser";
+
+    const result = await service.checkFounderMembership(userId);
+
+    expect(result).toBe(false);
+  });
 });
 
 async function insertMembership(db: DbType, isActive: boolean) {
