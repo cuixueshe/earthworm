@@ -14,7 +14,7 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ coursePack.title }}</h2>
-      <p>{{ coursePack.description }}</p>
+      <p class="break-words">{{ coursePack.description }}</p>
     </div>
   </div>
 </template>
