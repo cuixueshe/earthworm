@@ -1,0 +1,38 @@
+[
+  {
+    "source": "~/assets/sounds/typing.mp3",
+    "name": "默认"
+  },
+  {
+    "source": "~/assets/sounds/typing_Mac键盘.mp3",
+    "name": "Mac键盘"
+  },
+  {
+    "source": "~/assets/sounds/typing_Mac键盘2.mp3",
+    "name": "Mac键盘2"
+  },
+  {
+    "source": "~/assets/sounds/typing_打鼓.mp3",
+    "name": "打鼓"
+  },
+  {
+    "source": "~/assets/sounds/typing_木讷.mp3",
+    "name": "木讷"
+  },
+  {
+    "source": "~/assets/sounds/typing_木讷2.mp3",
+    "name": "木讷2"
+  },
+  {
+    "source": "~/assets/sounds/typing_木讷3.mp3",
+    "name": "木讷3"
+  },
+  {
+    "source": "~/assets/sounds/typing_清脆.mp3",
+    "name": "清脆"
+  },
+  {
+    "source": "~/assets/sounds/typing_电脑键盘.mp3",
+    "name": "电脑键盘"
+  }
+]

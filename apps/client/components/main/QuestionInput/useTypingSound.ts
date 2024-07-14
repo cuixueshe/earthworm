@@ -4,6 +4,15 @@ import { ref } from "vue";
 import errorSoundPath from "~/assets/sounds/error.mp3";
 import rightSoundPath from "~/assets/sounds/right.mp3";
 import typingSoundPath from "~/assets/sounds/typing.mp3";
+import typingSoundConfig from "~/assets/sounds/typingSounds.json"; // 导入配置文件
+
+const LOCAL_STORAGE_KEY = "currentTypingSound";
+
+// 从 localStorage 获取当前音效信息
+const storedSound = localStorage.getItem(LOCAL_STORAGE_KEY);
+let currentSound = storedSound
+  ? JSON.parse(storedSound)
+  : { name: "default", source: typingSoundPath || typingSoundConfig[0].source };
 
 export function usePlayTipSound() {
   // 正确提示音
@@ -28,21 +37,26 @@ export function usePlayTipSound() {
 const PLAY_INTERVAL_TIME = 60;
 let audioCtxRef: AudioContext | null = null;
 let audioBuffer: AudioBuffer | null = null;
+let currentSoundPath = currentSound.source; // 默认音效路径
 export function useTypingSound() {
   const lastPlayTime = ref(0); // 与上一次播放时间间隔
 
   // 不需要等页面渲染就可以加载了（提前）
   if (!audioCtxRef) {
-    loadAudioContext();
+    loadAudioContext(currentSoundPath);
   }
 
-  async function loadAudioContext() {
+  async function loadAudioContext(path: string) {
     audioCtxRef = new AudioContext();
-    await loadAudioBuffer(typingSoundPath);
+    await loadAudioBuffer(path);
   }
 
   async function loadAudioBuffer(url: string) {
     const response = await fetch(url);
+    console.log("response ---->", response);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch audio file: ${response.statusText}`);
+    }
     const arrayBuffer = await response.arrayBuffer();
     // 使用 decodeAudioData 方法处理 arrayBuffer
     const audioContext = audioCtxRef;
@@ -80,8 +94,22 @@ export function useTypingSound() {
     }
   }
 
+  function setTypingSound(name: string) {
+    const soundConfig = typingSoundConfig.find((config) => config.name === name);
+    if (soundConfig) {
+      currentSound = { name: soundConfig.name, source: soundConfig.source };
+      currentSoundPath = soundConfig.source;
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(currentSound)); // 存储新的音效信息到缓存中
+      playTypingSound();
+      loadAudioContext(currentSoundPath);
+    } else {
+      console.error("Sound not found");
+    }
+  }
+
   return {
     playTypingSound,
     checkPlayTypingSound,
+    setTypingSound,
   };
 }

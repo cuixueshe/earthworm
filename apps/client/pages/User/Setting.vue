@@ -80,6 +80,27 @@
               />
             </td>
           </tr>
+          <tr
+            class="hover"
+            v-if="keyboardSound"
+          >
+            <td class="label-text">选择键盘音效</td>
+            <td class="text-right">
+              <select
+                @change="handleTypingSoundChange($event)"
+                class="max-h-xs select select-secondary h-8 min-h-8"
+              >
+                <option
+                  v-for="sound in typingSounds"
+                  :key="sound.name"
+                  :value="sound.name"
+                  class="select-option"
+                >
+                  {{ sound.name }}
+                </option>
+              </select>
+            </td>
+          </tr>
           <tr class="hover">
             <td class="label-text">答案页面自动播放声音</td>
             <td class="text-right">
@@ -224,7 +245,9 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 
+import TypingSoundList from "~/assets/sounds/typingSounds.json";
 import Message from "~/components/main/Message/useMessage";
+import { useTypingSound } from "~/components/main/QuestionInput/useTypingSound";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
@@ -300,6 +323,15 @@ const shortcutKeyBindList = [
     type: SHORTCUT_KEY_TYPES.SKIP,
   },
 ];
+
+const { setTypingSound } = useTypingSound();
+
+const typingSounds = TypingSoundList;
+
+const handleTypingSoundChange = (event: Event) => {
+  const selectedSound = (event.target as HTMLSelectElement).value;
+  setTypingSound(selectedSound);
+};
 
 onMounted(() => {
   document.addEventListener("keydown", handleKeydown);
