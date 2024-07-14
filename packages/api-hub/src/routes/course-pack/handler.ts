@@ -41,7 +41,7 @@ export const deleteCoursePackHandler: RouteHandler<{
       data: result,
     });
   } catch (error) {
-    logger.error(error);
+    logger.error(`Failed to delete course pack ${coursePackId}: ${error}`);
     reply.code(500).send({
       state: 0,
       message: "Internal Server Error",
