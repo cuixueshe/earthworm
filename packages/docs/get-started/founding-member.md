@@ -4,7 +4,7 @@
 
 亲爱的 Earthworm 用户，感谢您一直以来对 Earthworm 的支持和信任。😊
 
-我是 Earthworm 的创始人 **阿崔cxr**，也是一名[程序员](https://github.com/cuixiaorui)&[编程区 Up 主](https://space.bilibili.com/175301983])。
+我是 Earthworm 的创始人 **阿崔cxr**，也是一名[程序员](https://github.com/cuixiaorui)&[Up主](https://space.bilibili.com/175301983])&编程讲师。
 
 我写这封信，是想邀请您加入我们的创始会员计划，与我们一起见证和创造 Earthworm 的未来。
 
@@ -72,9 +72,12 @@ Earthworm 的使命是打造一款让你**上瘾**的英语学习工具/游戏 �
 ## 购买方式
 
 ![image.png](https://images-1252602850.cos.ap-beijing.myqcloud.com/20240716090622.png)
-[购买链接 | 点我点我点我](https://lqaga.xet.tech/s/3lvsA)
 
 > 扫码 or 长按图片识别二维码
+
+[购买链接 | 点我点我点我](https://lqaga.xet.tech/s/3lvsA)
+
+购买成功后 请联系阿崔 wx: cuixr1314
 
 ### 七天无理由退款
 
