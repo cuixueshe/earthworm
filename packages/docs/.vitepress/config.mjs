@@ -19,7 +19,8 @@ export default defineConfig({
         text: "开始",
         items: [
           { text: "简介", link: "/get-started/" },
-          { text: "如何注册？", link: "/get-started/how-to-register" },
+          { text: "如何注册", link: "/get-started/how-to-register" },
+          { text: "创始会员", link: "/get-started/founding-member" },
           // { text: "快速开始", link: "/get-started/quick-start" },
         ],
       },
