@@ -4,6 +4,7 @@
   >
     <div class="m-auto flex h-fit min-h-screen flex-col items-center">
       <Navbar />
+      <Alert></Alert>
       <!-- 多一层内容的横向内边距是为了和 Navbar 对齐 -->
       <div class="flex w-full flex-1 px-5">
         <div class="mx-auto flex w-full max-w-screen-xl flex-1">
@@ -15,4 +16,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Alert from "../components/Alert.vue";
+</script>
