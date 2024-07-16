@@ -8,6 +8,12 @@
     >
     <div class="flex space-x-4">
       <button
+        class="text-black"
+        @click="handleCancel"
+      >
+        不感兴趣
+      </button>
+      <button
         class="rounded-lg bg-white px-4 font-bold text-purple-600"
         @click="handleShowDetails"
       >
@@ -21,6 +27,10 @@
 import { ref } from "vue";
 
 const showAlert = ref(true);
+
+function handleCancel() {
+  showAlert.value = false;
+}
 
 function handleShowDetails() {
   window.open("https://earthworm-docs.cuixueshe.com/get-started/founding-member.html", "_blank");
