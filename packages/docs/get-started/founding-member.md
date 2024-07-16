@@ -38,14 +38,14 @@ Earthworm 的使命是打造一款让你**上瘾**的英语学习工具/游戏 �
 
 ## 未来️
 
-1. **引入更多<span style="color: yellow;">游戏化</span>内容** 🎮
+1. **引入更多<span style="color: #20e3b2;">游戏化</span>内容** 🎮
    - 任务系统、道具系统、装备系统 ⚔️
    - 金币、经验值等，进一步提高学习的趣味性 💎
    - 例如 <健身环大冒险> 的游戏促进运动的机制 🏃‍♂️
-2. **运用 <span style="color: yellow">AI</span> 技术** 🤖
+2. **运用 <span style="color: #20e3b2">AI</span> 技术** 🤖
    1. 通过分析您的学习数据，给出个性化的学习提示和计划 📊
    2. 融入 AI 让学习英语更加 easy！
-3. **融合"<span style="color: yellow">学习</span>"和"<span style="color: #20e3b2">练习</span>"，达到最佳平衡** ⚖️
+3. **融合"<span style="color: #20e3b2">学习</span>"和"<span style="color: #20e3b2">练习</span>"，达到最佳平衡** ⚖️
    - 让您在 Earthworm 中达到"三分学七分练"的完美比例，最大化学习效果 📈
 
 这些规划都是为了更好地实现我们的使命，为用户提供最佳的英语学习体验。有您的支持，我相信这一切都将成为可能。🚀
@@ -64,8 +64,8 @@ Earthworm 的使命是打造一款让你**上瘾**的英语学习工具/游戏 �
 
 创始会员名额仅限 **<span style="color: red">1000</span> 位**，先到先得。
 
-- 前 <span style="color: yellow">500</span> 名价格为 **<span style="color: #20e3b2">499 元</span>**
-- 后 <span style="color: yellow">500</span> 名价格为 **<span style="color: #20e3b2">999 元</span>**。
+- 前 <span style="color: #20e3b2">500</span> 名价格为 **<span style="color: #20e3b2">499 元</span>**
+- 后 <span style="color: #20e3b2">500</span> 名价格为 **<span style="color: #20e3b2">999 元</span>**。
 
 相信对于真正欣赏 Earthworm 的您来说，这份支持不仅仅是金钱，更是一种情怀和信念。
 
