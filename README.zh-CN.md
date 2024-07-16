@@ -71,10 +71,6 @@ cp ./apps/client/.env.example ./apps/client/.env
 
 ### 3. 恢复 Logto 的数据
 
-> "logto_db_init_data.zip" 中的数据已过时，将很快更新
-> 不支持 Logto@1.14 之后的版本
-> 请手动配置 Logto
-
 解压缩 `logto_db_init_data.zip` 到 `.volumes/`
 
 ```bash
@@ -83,7 +79,7 @@ unzip logto_db_init_data.zip -d .volumes/
 
 - 后台地址: http://localhost:3011
 - 用户名: admin
-- 密码: wYJha:-eYMrAe9i
+- 密码: WkN7g5-i8ZrJckX
 
 > 如果你想 [手动配置 Logto](https://github.com/cuixueshe/earthworm/wiki/%E8%BF%81%E7%A7%BB-Logto-%E7%94%A8%E6%88%B7%E7%B3%BB%E7%BB%9F%E5%90%8E%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88%EF%BC%88%E8%B4%A1%E7%8C%AE%E8%80%85%EF%BC%89)
 
