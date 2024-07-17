@@ -9,6 +9,7 @@
     "build": "tsup"
   },
   "dependencies": {
-    "@paralleldrive/cuid2": "2.2.2"
+    "@paralleldrive/cuid2": "2.2.2",
+    "drizzle-orm": "^0.32.0"
   }
 }

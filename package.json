@@ -51,7 +51,6 @@
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.7.1",
-    "drizzle-orm": "^0.30.8",
     "zod": "^3.22.4"
   }
 }

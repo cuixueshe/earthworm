@@ -19,6 +19,7 @@
     "test:cov": "jest --coverage"
   },
   "dependencies": {
+    "drizzle-orm": "^0.32.0",
     "@earthworm/schema": "workspace:^",
     "@nestjs-modules/ioredis": "^2.0.1",
     "@nestjs/common": "^10.0.0",
