@@ -6,10 +6,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "env-cmd -f .env.test vitest",
-    "build": "tsup"
+    "build": "tsup",
+    "publish": "npm publish --registry http://124.223.41.130:4873/"
   },
   "keywords": [],
-  "author": "",
+  "author": "cuixiaorui",
   "license": "ISC",
   "devDependencies": {
     "env-cmd": "^10.1.0",
@@ -17,7 +18,7 @@
     "vitest": "^2.0.3"
   },
   "dependencies": {
-    "@earthworm/schema": "^1.0.1",
+    "@earthworm/schema": "workspace:^",
     "drizzle-orm": "^0.32.0",
     "postgres": "^3.4.4"
   }
