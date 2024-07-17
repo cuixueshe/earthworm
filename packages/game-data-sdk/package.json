@@ -1,0 +1,24 @@
+{
+  "name": "@earthworm/game-data-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "env-cmd -f .env.test vitest",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "tsup": "^8.0.1",
+    "vitest": "^2.0.3"
+  },
+  "dependencies": {
+    "@earthworm/schema": "^1.0.1",
+    "drizzle-orm": "^0.32.0",
+    "postgres": "^3.4.4"
+  }
+}
