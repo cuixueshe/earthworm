@@ -21,5 +21,8 @@
     "@earthworm/schema": "workspace:^",
     "drizzle-orm": "^0.32.0",
     "postgres": "^3.4.4"
+  },
+  "overrides": {
+    "@earthworm/schema": "npm:@earthworm/schema@^1.0.1"
   }
 }
