@@ -1,13 +1,13 @@
 {
   "name": "@earthworm/game-data-sdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "env-cmd -f .env.test vitest",
     "build": "tsup",
-    "publish": "npm publish --registry http://124.223.41.130:4873/"
+    "release": "pnpm publish --registry http://124.223.41.130:4873/"
   },
   "keywords": [],
   "author": "cuixiaorui",
@@ -21,8 +21,5 @@
     "@earthworm/schema": "workspace:^",
     "drizzle-orm": "^0.32.0",
     "postgres": "^3.4.4"
-  },
-  "overrides": {
-    "@earthworm/schema": "npm:@earthworm/schema@^1.0.1"
   }
 }
