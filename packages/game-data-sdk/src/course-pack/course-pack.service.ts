@@ -153,6 +153,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
             .set({
               title: newCourseInfo.title,
               description: newCourseInfo.description,
+              order: newCourseIndex + 1,
             })
             .where(eq(courseSchema.id, newCourseInfo.publishCourseId));
 
