@@ -26,7 +26,10 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
-const showNotice = ref(true);
+import { useUserStore } from "~/store/user";
+
+const showNotice = ref(false);
+const userStore = useUserStore();
 
 onMounted(() => {
   showNotice.value = shouldShowNotice();
@@ -48,6 +51,8 @@ function setNoticeDismissed(): void {
 }
 
 function shouldShowNotice(): boolean {
+  if (userStore.isFounderMembership()) return false;
+
   const dismissedTime = localStorage.getItem("noticeDismissed");
   if (!dismissedTime) return true;
 
