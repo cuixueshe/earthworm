@@ -1,12 +1,28 @@
 <template>
-  <div
-    class="flex w-full items-center justify-between rounded-lg bg-purple-600 px-4 py-1 text-white"
-    v-if="showNotice"
-  >
-    <span class="font-bold"
-      >【邀请函】加入 Earthworm 创始会员 与我们一起成就更好的英语学习平台</span
+  <div class="w-full rounded-lg bg-purple-600 px-4 py-1 text-white">
+    <div
+      class="flex items-center justify-between"
+      v-if="showNotice"
     >
-    <div class="flex space-x-4">
+      <div class="font-bold">
+        【邀请函】加入 Earthworm 创始会员 与我们一起成就更好的英语学习平台
+      </div>
+      <div class="hidden sm:flex sm:space-x-4">
+        <button
+          class="text-black"
+          @click="dismissNotice"
+        >
+          不感兴趣
+        </button>
+        <button
+          class="rounded-lg bg-white px-4 font-bold text-purple-600"
+          @click="handleShowDetails"
+        >
+          查看详情
+        </button>
+      </div>
+    </div>
+    <div class="flex items-center justify-center gap-8 sm:hidden">
       <button
         class="text-black"
         @click="dismissNotice"
