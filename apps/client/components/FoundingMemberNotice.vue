@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watchEffect } from "vue";
 
 import { useUserStore } from "~/store/user";
 
@@ -33,6 +33,10 @@ const userStore = useUserStore();
 
 onMounted(() => {
   showNotice.value = shouldShowNotice();
+});
+
+watchEffect(() => {
+  showNotice.value = !userStore.isFounderMembership();
 });
 
 function dismissNotice() {
