@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full rounded-lg bg-purple-600 px-4 py-1 text-white">
-    <div
-      class="flex items-center justify-between"
-      v-if="showNotice"
-    >
+  <div
+    class="w-full rounded-lg bg-purple-600 px-4 py-1 text-white"
+    v-if="showNotice"
+  >
+    <div class="flex items-center justify-between">
       <div class="font-bold">
         【邀请函】加入 Earthworm 创始会员 与我们一起成就更好的英语学习平台
       </div>
