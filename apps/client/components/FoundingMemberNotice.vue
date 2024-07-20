@@ -42,7 +42,6 @@ function dismissNotice() {
 
 function handleShowDetails() {
   window.open("https://earthworm-docs.cuixueshe.com/get-started/founding-member.html", "_blank");
-  showNotice.value = false;
 }
 
 function setNoticeDismissed(): void {
