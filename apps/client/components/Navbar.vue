@@ -60,7 +60,7 @@
             >
               <img
                 class="h-full object-cover"
-                :src="userStore.userInfo?.picture!"
+                :src="userStore.user?.avatar"
               />
             </div>
           </div>

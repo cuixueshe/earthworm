@@ -84,7 +84,7 @@ const {
 
 watch(shareModalVisible, (newVal) => {
   if (newVal && courseStore.currentCourse?.title) {
-    const username = userStore.userInfo?.username || "";
+    const username = userStore.user?.username || "";
     const { year, month, day } = getToday();
     const coursePackTitle = coursePackStore.currentCoursePack?.title || "";
     const totalRecordNumber = courseTimer.totalRecordNumber();

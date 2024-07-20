@@ -1,29 +1,42 @@
-import { type UserInfoResponse } from "@logto/vue";
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
-import { updateUserinfo } from "~/api/user";
+import type { User } from "~/types";
+import { fetchSetupNewUser } from "~/api/user";
+import { MembershipType } from "~/types";
 
 export const useUserStore = defineStore("user", () => {
-  const userInfo = ref<UserInfoResponse>();
+  const user = ref<User>();
 
-  function initUser(userInfoResponse: UserInfoResponse) {
-    userInfo.value = userInfoResponse;
-  }
-  async function updateUserInfo(userInfo: Partial<UserInfoResponse>) {
-    const res = await updateUserinfo(userInfo);
-    initUser(res!.data as UserInfoResponse);
-    return res;
+  function initUser(val: User) {
+    user.value = val;
   }
 
   function isNewUser() {
-    return !userInfo.value?.username || !userInfo.value?.picture;
+    return !user.value?.username || !user.value?.avatar;
+  }
+
+  async function setupNewUser(info: { username: string; avatar: string }) {
+    if (!user.value) return;
+
+    const res = await fetchSetupNewUser({
+      username: info.username,
+      avatar: info.avatar,
+    });
+
+    user.value.username = res.username;
+    user.value.avatar = res.avatar;
+  }
+
+  function isFounderMembership() {
+    return user.value?.membership.details?.type === MembershipType.FOUNDER;
   }
 
   return {
+    user,
     isNewUser,
     initUser,
-    userInfo,
-    updateUserInfo,
+    setupNewUser,
+    isFounderMembership,
   };
 });

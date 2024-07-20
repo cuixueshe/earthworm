@@ -21,7 +21,7 @@ describe("user", () => {
 
     userStore.initUser(generateUserInfo() as any);
 
-    expect(userStore.userInfo).toMatchInlineSnapshot(
+    expect(userStore.user).toMatchInlineSnapshot(
       `
       {
         "phone": "1234567890",

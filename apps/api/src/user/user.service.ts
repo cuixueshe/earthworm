@@ -4,9 +4,12 @@ import { eq } from "drizzle-orm";
 import { course, coursePack } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { LogtoService } from "../logto/logto.service";
+import { MembershipService } from "../membership/membership.service";
+import { type MembershipDetails } from "../membership/types/membership.types";
 import { UserCourseProgressService } from "../user-course-progress/user-course-progress.service";
 import { UserEntity } from "../user/user.decorators";
 import { UpdateUserDto } from "./model/user.dto";
+import { type LogtoUserInfo } from "./types/user.types";
 
 @Injectable()
 export class UserService {
@@ -14,13 +17,31 @@ export class UserService {
     @Inject(DB) private db: DbType,
     private readonly logtoService: LogtoService,
     private readonly userCourseProgressService: UserCourseProgressService,
+    private readonly membershipService: MembershipService,
   ) {}
 
   async findUser(uId: string) {
     try {
-      const { data } = await this.logtoService.logtoApi.get(`/api/users/${uId}`);
-      return data;
+      const { data: logtoUserInfo } = await this.logtoService.logtoApi.get<LogtoUserInfo>(
+        `/api/users/${uId}`,
+      );
+      const isMember = await this.membershipService.isMember(uId);
+
+      let membershipInfo: MembershipDetails = null;
+      if (isMember) {
+        membershipInfo = await this.membershipService.getMembershipDetails(uId);
+      }
+
+      return {
+        ...logtoUserInfo,
+        membership: {
+          isMember,
+          details: membershipInfo,
+        },
+      };
     } catch (error) {
+      // 考虑是否需要更详细的错误处理
+      console.error("Error fetching user info:", error);
       return undefined;
     }
   }
@@ -33,11 +54,13 @@ export class UserService {
     }
   }
 
-  async setup(user: UserEntity, dto: { username: string; avatar: string }) {
+  async setupNewUser(user: UserEntity, dto: { username: string; avatar: string }) {
+    const avatar = this.getAvatarUrl();
     if (!dto.avatar) {
-      dto.avatar = this.getAvatarUrl();
+      dto.avatar = avatar;
     }
-    const result = await this.updateUser(user, { username: dto.username, avatar: dto.avatar });
+
+    await this.updateUser(user, { username: dto.username, avatar: dto.avatar });
 
     const { id, courses } = await this.db.query.coursePack.findFirst({
       where: eq(coursePack.order, 1),
@@ -49,7 +72,10 @@ export class UserService {
     });
 
     await this.userCourseProgressService.upsert(user.userId, id, courses.at(0).id, 0);
-    return result;
+    return {
+      avatar,
+      username: dto.username,
+    };
   }
 
   private getAvatarUrl() {

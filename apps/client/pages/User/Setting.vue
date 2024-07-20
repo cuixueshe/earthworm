@@ -241,21 +241,6 @@ import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
 const dialogBoxRef = ref<HTMLElement | null>(null);
 
-// TODO 暂时不支持 nickname 的修改
-// import { useUserStore } from "~/store/user";
-// const userStore = useUserStore();
-// const nickname = ref(userStore.userNameGetter);
-// const handleUpdateNickname = async (event: KeyboardEvent) => {
-//   const result = await userStore.updateUserInfo({
-//     ...userStore.userInfo!,
-//     name: nickname.value,
-//   });
-//   if (result) {
-//     (event.target as HTMLInputElement).blur();
-//     Message.success("修改成功");
-//   }
-// };
-
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();

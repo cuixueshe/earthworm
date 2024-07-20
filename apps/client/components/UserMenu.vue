@@ -20,14 +20,14 @@
               <div class="avatar">
                 <div class="mask mask-squircle h-12 w-12">
                   <img
-                    :src="userStore.userInfo?.picture!"
+                    :src="userStore.user?.avatar"
                     alt="Avatar Tailwind CSS Component"
                   />
                 </div>
               </div>
               <div>
-                <div class="text-xl font-bold">{{ userStore.userInfo?.username }}</div>
-                <div class="text-sm opacity-50">{{ userStore.userInfo?.name }}</div>
+                <div class="text-xl font-bold">{{ userStore.user?.username }}</div>
+                <div class="text-sm opacity-50">{{ userStore.user?.name }}</div>
               </div>
             </div>
 

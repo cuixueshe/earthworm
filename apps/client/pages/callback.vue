@@ -1,22 +1,21 @@
 <!-- 用于 logto 的登录回调 -->
 <script setup lang="ts">
-import { useHandleSignInCallback, useLogto } from "@logto/vue";
+import { useHandleSignInCallback } from "@logto/vue";
 import { navigateTo } from "nuxt/app";
 import { ref } from "vue";
 
-import { fetchUserSetup } from "~/api/user";
+import { fetchCurrentUser } from "~/api/user";
 import Message from "~/components/main/Message/useMessage";
 import { getSignInCallback } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
-const logto = useLogto();
 const { username, isLoadingFetchUserSetup, isShowSettingUsernameModal, handleChangeUsername } =
   useUsername();
 
 const { isLoading } = useHandleSignInCallback(async () => {
-  const res = await logto.fetchUserInfo();
-  userStore.initUser(res!);
+  const res = await fetchCurrentUser();
+  userStore.initUser(res);
 
   // 新用户并且没有用户名需要设置
   if (userStore.isNewUser()) {
@@ -35,15 +34,12 @@ function useUsername() {
     if (!checkUsername()) return;
 
     isLoadingFetchUserSetup.value = true;
-    await fetchUserSetup({
+    await userStore.setupNewUser({
       username: username.value,
-      avatar: userStore.userInfo?.picture!,
+      avatar: userStore.user?.avatar!,
     });
-
-    const res = await logto.fetchUserInfo();
     isLoadingFetchUserSetup.value = false;
 
-    userStore.initUser(res!);
     navigateTo(getSignInCallback());
     isShowSettingUsernameModal.value = false;
   }
@@ -97,7 +93,7 @@ function useUsername() {
           v-model="username"
           type="text"
           placeholder="请输入用户名"
-          class="input input-bordered input-sm w-full"
+          class="input input-sm input-bordered w-full"
           maxlength="20"
           @keydown.enter="handleChangeUsername"
         />
