@@ -17,7 +17,7 @@ export class UserProgressController {
   async getUserRecentCoursePacks(@User() user: UserEntity, @Query("limit") limit: number) {
     const recentCoursePacks = await this.userCourseProgressService.getUserRecentCoursePacks(
       user.userId,
-      limit || 4,
+      limit || 3,
     );
     return recentCoursePacks;
   }
