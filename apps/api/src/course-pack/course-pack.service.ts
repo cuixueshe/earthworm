@@ -28,7 +28,7 @@ export class CoursePackService {
 
       // 看看是不是创始会员
       // 是的话 需要去查所有课程包的 shareLevel 为 founder_only 的
-      if (await this.membershipService.checkFounderMembership(userId)) {
+      if (await this.membershipService.isFounderMembership(userId)) {
         const founderOnlyCoursePacks = await this.findFounderOnly();
         result.push(...founderOnlyCoursePacks);
       }
@@ -109,7 +109,7 @@ export class CoursePackService {
         throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);
       }
     } else if (coursePackWithCourses.shareLevel === "founder_only") {
-      if (await this.membershipService.checkFounderMembership(userId)) {
+      if (await this.membershipService.isFounderMembership(userId)) {
         return coursePackWithCourses;
       } else {
         throw new NotFoundException(`CoursePack with ID ${coursePackId} not found`);

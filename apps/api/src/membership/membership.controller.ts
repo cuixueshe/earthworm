@@ -14,9 +14,4 @@ export class MembershipController {
   async buyMembership(@Body() buyMembershipDto: BuyMembershipDto) {
     return await this.membershipService.upsert(new Date(), buyMembershipDto);
   }
-
-  @Get(":userId/status")
-  async checkMembership(@Param("userId") userId: string) {
-    return this.membershipService.checkMembership(userId);
-  }
 }

@@ -24,9 +24,9 @@ export class CoursePacksAccessGuard implements CanActivate {
       throw new ForbiddenException("这是会员专属内容");
     }
 
-    const membershipStatus = await this.membershipService.checkMembership(userId);
+    const isMember = await this.membershipService.isMember(userId);
 
-    if (!membershipStatus.isActive) {
+    if (!isMember) {
       throw new ForbiddenException("这是会员专属内容");
     }
 

@@ -235,7 +235,7 @@ async function setupTesting() {
   };
 
   const MockMembershipService = {
-    checkFounderMembership: jest.fn((userId) => userId === "founderUser"),
+    isFounderMembership: jest.fn((userId) => userId === "founderUser"),
   };
 
   const moduleRef = await Test.createTestingModule({

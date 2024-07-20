@@ -5,6 +5,7 @@ import { and, eq, lt } from "drizzle-orm";
 import { membership } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
 import { BuyMembershipDto, MembershipPeriod } from "./dto/buy-membership.dto";
+import { MembershipType } from "./types/membership.types";
 
 @Injectable()
 export class MembershipService {
@@ -72,25 +73,40 @@ export class MembershipService {
     return endDate;
   }
 
-  async checkMembership(userId: string): Promise<{ isActive: boolean; endDate: Date | null }> {
-    let result = await this.db.select().from(membership).where(eq(membership.userId, userId));
-    const membershipEntity = result[0];
-    // 如果有会员记录并且isActive为true，则会员有效
-    const isActive = membershipEntity ? membershipEntity.isActive : false;
+  async isMember(userId: string) {
+    const result = await this.db.query.membership.findFirst({
+      where: eq(membership.userId, userId),
+    });
+
+    return result?.isActive || false;
+  }
+
+  async getMembershipDetails(userId: string) {
+    const result = await this.db.query.membership.findFirst({
+      columns: {
+        end_date: true,
+        type: true,
+        start_date: true,
+      },
+      where: and(eq(membership.userId, userId), eq(membership.isActive, true)),
+    });
+
+    if (!result) return;
+
     return {
-      isActive: isActive,
-      endDate: membershipEntity ? membershipEntity.end_date : null,
+      startDate: result.start_date,
+      endDate: result.end_date,
+      type: result.type,
     };
   }
 
-  public async checkFounderMembership(userId: string) {
-    let result = await this.db
-      .select()
-      .from(membership)
-      .where(and(eq(membership.userId, userId), eq(membership.type, "founder")));
-    // 如果有会员记录并且type为"founder"，则用户是创始会员
+  public async isFounderMembership(userId: string) {
     // 创始会员永久有效 所以不需要检查 active
-    return Boolean(result[0]);
+    const result = await this.db.query.membership.findFirst({
+      where: and(eq(membership.userId, userId), eq(membership.type, MembershipType.FOUNDER)),
+    });
+
+    return Boolean(result);
   }
 
   @Cron("0 0 * * *")

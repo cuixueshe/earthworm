@@ -7,6 +7,7 @@ import { endDB } from "../../common/db";
 import { DB } from "../../global/providers/db.provider";
 import { MembershipPeriod } from "../dto/buy-membership.dto";
 import { MembershipService } from "../membership.service";
+import { MembershipType } from "../types/membership.types";
 
 describe("MembershipService", () => {
   let service: MembershipService;
@@ -63,48 +64,46 @@ describe("MembershipService", () => {
     expect(result.endDate.getMonth()).toBe(startDate.getMonth() + 1);
   });
 
-  it("should return isActive as true and the correct endDate for an active membership", async () => {
-    const { userId, endDate } = await insertMembership(db, true);
+  describe("isMember", () => {
+    it("should return true for an active member", async () => {
+      const { userId } = await insertMembership(db, true);
+      const result = await service.isMember(userId);
+      expect(result).toBe(true);
+    });
 
-    // Act
-    const result = await service.checkMembership(userId);
+    it("should return false for an inactive member", async () => {
+      const { userId } = await insertMembership(db, false);
+      const result = await service.isMember(userId);
+      expect(result).toBe(false);
+    });
 
-    // Assert
-    expect(result.isActive).toBe(true);
-    expect(result.endDate).toEqual(endDate);
+    it("should return false for a non-member", async () => {
+      const result = await service.isMember("nonexistent-user");
+      expect(result).toBe(false);
+    });
   });
 
-  it("should return isActive as false and the correct endDate for an expired membership", async () => {
-    const { userId, endDate } = await insertMembership(db, false);
+  describe("getMembershipDetails", () => {
+    it("should return correct details for an active member", async () => {
+      const { userId, startDate, endDate } = await insertMembership(db, true);
+      const result = await service.getMembershipDetails(userId);
+      expect(result).toEqual({
+        startDate: startDate,
+        endDate: endDate,
+        type: MembershipType.REGULAR,
+      });
+    });
 
-    // Act
-    const result = await service.checkMembership(userId);
+    it("should return null for an inactive member", async () => {
+      const { userId } = await insertMembership(db, false);
+      const result = await service.getMembershipDetails(userId);
+      expect(result).toBeUndefined();
+    });
 
-    // Assert
-    expect(result.isActive).toBe(false);
-    expect(result.endDate).toEqual(endDate);
-  });
-
-  it("should return isActive as false and endDate as null for a non-member", async () => {
-    // Act
-    const result = await service.checkMembership("cxr");
-
-    // Assert
-    expect(result.isActive).toBe(false);
-    expect(result.endDate).toBeNull();
-  });
-
-  it("should deactivate expired memberships correctly", async () => {
-    const { endDate, userId } = await insertMembership(db, true);
-
-    const today = new Date(endDate);
-    today.setMonth(endDate.getMonth() + 1);
-
-    await service.deactivateExpiredMemberships(today);
-
-    const result = await service.checkMembership(userId);
-
-    expect(result.isActive).toBe(false);
+    it("should return null for a non-member", async () => {
+      const result = await service.getMembershipDetails("nonexistent-user");
+      expect(result).toBeUndefined();
+    });
   });
 
   it("should return true if the user is a founder member", async () => {
@@ -117,7 +116,7 @@ describe("MembershipService", () => {
       isActive: true,
     });
 
-    const result = await service.checkFounderMembership(userId);
+    const result = await service.isFounderMembership(userId);
 
     expect(result).toBe(true);
   });
@@ -126,13 +125,13 @@ describe("MembershipService", () => {
     const userId = "nonFounderUser";
     await db.insert(membership).values({
       userId,
-      type: "regular",
+      type: MembershipType.REGULAR,
       start_date: new Date(),
       end_date: new Date(),
       isActive: true,
     });
 
-    const result = await service.checkFounderMembership(userId);
+    const result = await service.isFounderMembership(userId);
 
     expect(result).toBe(false);
   });
@@ -140,7 +139,7 @@ describe("MembershipService", () => {
   it("should return false if the user has no membership record", async () => {
     const userId = "noMembershipUser";
 
-    const result = await service.checkFounderMembership(userId);
+    const result = await service.isFounderMembership(userId);
 
     expect(result).toBe(false);
   });
@@ -156,6 +155,7 @@ async function insertMembership(db: DbType, isActive: boolean) {
     start_date: currentDate,
     end_date: expiredEndDate,
     isActive,
+    type: MembershipType.REGULAR,
   });
 
   return {

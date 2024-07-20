@@ -11,5 +11,5 @@ export const membership = pgTable("memberships", {
   isActive: boolean("isActive").default(true),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
-  type: text("type").notNull().default("regular"),
+  type: text("type").notNull().default("regular"), // 先用 string 的形式， 后面需要改成枚举
 });
