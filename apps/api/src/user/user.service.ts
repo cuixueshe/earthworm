@@ -55,9 +55,8 @@ export class UserService {
   }
 
   async setupNewUser(user: UserEntity, dto: { username: string; avatar: string }) {
-    const avatar = this.getAvatarUrl();
     if (!dto.avatar) {
-      dto.avatar = avatar;
+      dto.avatar = this.getAvatarUrl();
     }
 
     await this.updateUser(user, { username: dto.username, avatar: dto.avatar });
@@ -73,7 +72,7 @@ export class UserService {
 
     await this.userCourseProgressService.upsert(user.userId, id, courses.at(0).id, 0);
     return {
-      avatar,
+      avatar: dto.avatar,
       username: dto.username,
     };
   }
