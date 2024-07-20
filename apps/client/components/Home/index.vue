@@ -13,12 +13,12 @@
       </div>
       <div class="mt-4 truncate">
         <div class="flex gap-2">
+          <div class="text-3xl font-medium">{{ userStore.user?.username }}</div>
           <span
             v-if="userStore.isFounderMembership()"
             class="i-ph-crown-simple-fill bg-yellow-400"
             title="尊贵的创始会员,感谢您对 Earthworm 的大力支持！"
           ></span>
-          <div class="text-3xl font-medium">{{ userStore.user?.username }}</div>
         </div>
         <div class="text-md text-gray-400">
           {{ userStore.user?.name }}
