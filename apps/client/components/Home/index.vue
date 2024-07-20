@@ -8,13 +8,20 @@
         <!-- 通过给定高度来自适应拉伸图片，如果图片不存在或者加载失败则显示外层的背景色（没有宽度） -->
         <img
           class="h-full object-cover"
-          :src="userStore.userInfo?.picture!"
+          :src="userStore.user?.avatar"
         />
       </div>
       <div class="mt-4 truncate">
-        <div class="text-3xl font-medium">{{ userStore.userInfo?.username }}</div>
+        <div class="flex gap-2">
+          <span
+            v-if="userStore.isFounderMembership()"
+            class="i-ph-crown-simple-fill bg-yellow-400"
+            title="尊贵的创始会员,感谢您对 Earthworm 的大力支持！"
+          ></span>
+          <div class="text-3xl font-medium">{{ userStore.user?.username }}</div>
+        </div>
         <div class="text-md text-gray-400">
-          {{ userStore.userInfo?.name }}
+          {{ userStore.user?.name }}
         </div>
       </div>
       <hr class="my-5 dark:border-gray-700" />
