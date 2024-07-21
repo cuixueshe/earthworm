@@ -1,0 +1,787 @@
+[
+	{
+		"chinese": "支付",
+		"english": "to pay",
+		"soundmark": "/tə/ /pe/"
+	},
+	{
+		"chinese": "这个账单",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付这个账单",
+		"english": "to pay the bill",
+		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "支付(过去)",
+		"english": "paid",
+		"soundmark": "/ped/"
+	},
+	{
+		"chinese": "我支付(过去)",
+		"english": "I paid",
+		"soundmark": "/aɪ/ /ped/"
+	},
+	{
+		"chinese": "我支付(过去)这个账单",
+		"english": "I paid the bill",
+		"soundmark": "/aɪ/ /ped/ /ðə/ /bɪl/"
+	},
+	{
+		"chinese": "时间",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"chinese": "准时",
+		"english": "on time",
+		"soundmark": "/ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "我准时支付(过去)这个账单",
+		"english": "I paid the bill on time",
+		"soundmark": "/aɪ/ /ped/ /ðə/ /bɪl/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "支付(过去)",
+		"english": "paid",
+		"soundmark": "/ped/"
+	},
+	{
+		"chinese": "支付(ed形式)",
+		"english": "paid",
+		"soundmark": "/ped/"
+	},
+	{
+		"chinese": "被支付",
+		"english": "be paid",
+		"soundmark": "/bi/ /ped/"
+	},
+	{
+		"chinese": "这个账单",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"chinese": "这个账单(过去)被支付",
+		"english": "the bill was paid",
+		"soundmark": "/ðə/ /bɪl/ /wəz/ /ped/"
+	},
+	{
+		"chinese": "这个账单准时(过去)被支付",
+		"english": "the bill was paid on time",
+		"soundmark": "/ðə/ /bɪl/ /wəz/ /ped/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "将会被支付",
+		"english": "will be paid",
+		"soundmark": "/wɪl/ /bi/ /ped/"
+	},
+	{
+		"chinese": "这个账单将会被准时支付",
+		"english": "the bill will be paid on time",
+		"soundmark": "/ðə/ /bɪl/ /wɪl/ /bi/ /ped/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "be(ed形式)",
+		"english": "been",
+		"soundmark": "/bɪn/"
+	},
+	{
+		"chinese": "(已经)被支付",
+		"english": "has been paid",
+		"soundmark": "/hæz/ /bɪn/ /ped/"
+	},
+	{
+		"chinese": "这个账单(已经)被准时支付",
+		"english": "the bill has been paid on time",
+		"soundmark": "/ðə/ /bɪl/ /hæz/ /bɪn/ /ped/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "(过去已经)被支付",
+		"english": "had been paid",
+		"soundmark": "/hæd/ /bɪn/ /ped/"
+	},
+	{
+		"chinese": "这个账单(过去已经)被准时支付",
+		"english": "the bill had been paid on time",
+		"soundmark": "/ðə/ /bɪl/ /hæd/ /bɪn/ /ped/ /ɑn/ /taɪm/"
+	},
+	{
+		"chinese": "邀请",
+		"english": "to invite",
+		"soundmark": "/tə/ /ɪn'vaɪt/"
+	},
+	{
+		"chinese": "那个邀请",
+		"english": "the invitation",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
+	},
+	{
+		"chinese": "接收",
+		"english": "to accept",
+		"soundmark": "/tə/ /ək'sɛpt/"
+	},
+	{
+		"chinese": "接收(ed形式)",
+		"english": "accepted",
+		"soundmark": "/ək'sɛptɪd/"
+	},
+	{
+		"chinese": "被接受",
+		"english": "be accepted",
+		"soundmark": "/bi/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "那个邀请被接受了",
+		"english": "the invitation is accepted",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /ɪz/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "客人",
+		"english": "guest",
+		"soundmark": "/ɡɛst/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过那个客人",
+		"english": "by the guest",
+		"soundmark": "/baɪ/ /ðə/ /ɡɛst/"
+	},
+	{
+		"chinese": "那个邀请被那个客人接受了",
+		"english": "the invitation is accepted by the guest",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /ɪz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ɡɛst/"
+	},
+	{
+		"chinese": "(过去)被接受",
+		"english": "was accepted",
+		"soundmark": "/wəz/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "那个邀请(过去)被那个客人接受了",
+		"english": "the invitation was accepted by the guest",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ɡɛst/"
+	},
+	{
+		"chinese": "将会被接受",
+		"english": "will be accepted",
+		"soundmark": "/wɪl/ /bi/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "那个邀请将会被那个客人接受",
+		"english": "the invitation will be accepted by the guest",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wɪl/ /bi/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ɡɛst/"
+	},
+	{
+		"chinese": "(已经)被接受",
+		"english": "has been accepted",
+		"soundmark": "/hæz/ /bɪn/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "那个邀请(已经)被那个客人接受",
+		"english": "the invitation has been",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /hæz/ /bɪn/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "了",
+		"english": "accepted by the guest",
+		"soundmark": "/baɪ/ /ðə/ /ɡɛst/"
+	},
+	{
+		"chinese": "(过去已经)被接受",
+		"english": "had been accepted",
+		"soundmark": "/hæd/ /bɪn/ /ək'sɛptɪd/"
+	},
+	{
+		"chinese": "那个邀请(过去已经)被那个客人接受了",
+		"english": "the invitation had been accepted by the guest",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /hæd/ /bɪn/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ɡɛst/"
+	},
+	{
+		"chinese": "发出",
+		"english": "to send",
+		"soundmark": "/tə/ /sɛnd/"
+	},
+	{
+		"chinese": "发出(ed形式)",
+		"english": "sent",
+		"soundmark": "/sɛnt/"
+	},
+	{
+		"chinese": "被发出",
+		"english": "be sent",
+		"soundmark": "/bi/ /sɛnt/"
+	},
+	{
+		"chinese": "那个邀请",
+		"english": "the invitation",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
+	},
+	{
+		"chinese": "那个邀请被发出",
+		"english": "the invitatioin is sent",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /ɪz/ /sɛnt/"
+	},
+	{
+		"chinese": "主办人",
+		"english": "host",
+		"soundmark": "/host/"
+	},
+	{
+		"chinese": "通过主办人",
+		"english": "by the host",
+		"soundmark": "/baɪ/ /ðə/ /host/"
+	},
+	{
+		"chinese": "那个邀请被主办人发出",
+		"english": "the invitation is sent by the host",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /ɪz/ /sɛnt/ /baɪ/ /ðə/ /host/"
+	},
+	{
+		"chinese": "(过去)被发出",
+		"english": "was sent",
+		"soundmark": "/wəz/ /sɛnt/"
+	},
+	{
+		"chinese": "那个邀请(过去)被主办人发出",
+		"english": "the invitation was sent by the host",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wəz/ /sɛnt/ /baɪ/ /ðə/ /host/"
+	},
+	{
+		"chinese": "将会被发出",
+		"english": "will be sent",
+		"soundmark": "/wɪl/ /bi/ /sɛnt/"
+	},
+	{
+		"chinese": "那个邀请将会被主办人发出",
+		"english": "the invitation will be sent by the host",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wɪl/ /bi/ /sɛnt/ /baɪ/ /ðə/ /host/"
+	},
+	{
+		"chinese": "下周",
+		"english": "next week",
+		"soundmark": "/nɛkst/ /wik/"
+	},
+	{
+		"chinese": "那个邀请将会被主办人下周发出",
+		"english": "the invitation will be sent by the host next week",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wɪl/ /bi/ /sɛnt/ /baɪ/ /ðə/ /host/ /nɛkst/ /wik/"
+	},
+	{
+		"chinese": "(已经)被发出",
+		"english": "has been sent",
+		"soundmark": "/hæz/ /bɪn/ /sɛnt/"
+	},
+	{
+		"chinese": "那个邀请(已经)被主办人发出",
+		"english": "the invitation has been sent by the host",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /hæz/ /bɪn/ /sɛnt/ /baɪ/ /ðə/ /host/"
+	},
+	{
+		"chinese": "(过去已经)被发出",
+		"english": "had been sent",
+		"soundmark": "/hæd/ /bɪn/ /sɛnt/"
+	},
+	{
+		"chinese": "那个邀请(过去已经)被主办人发出",
+		"english": "the invitation had been sent by the host",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /hæd/ /bɪn/ /sɛnt/ /baɪ/ /ðə/ /host/"
+	},
+	{
+		"chinese": "出版",
+		"english": "to publish",
+		"soundmark": "/tə/ /ˈpʌblɪʃ/"
+	},
+	{
+		"chinese": "出版(ed形式)",
+		"english": "published",
+		"soundmark": "/ˈpʌblɪʃt/"
+	},
+	{
+		"chinese": "被出版",
+		"english": "be published",
+		"soundmark": "/bi/ /ˈpʌblɪʃt/"
+	},
+	{
+		"chinese": "书",
+		"english": "book",
+		"soundmark": "/bʊk/"
+	},
+	{
+		"chinese": "那本书被出版",
+		"english": "the book is published",
+		"soundmark": "/ðə/ /bʊk/ /ɪz/ /ˈpʌblɪʃt/"
+	},
+	{
+		"chinese": "公司",
+		"english": "company",
+		"soundmark": "/ˈkʌmpəni/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过那个公司",
+		"english": "by the company",
+		"soundmark": "/baɪ/ /ðə/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "那本书通过那个公司被出版",
+		"english": "the book is published by the company",
+		"soundmark": "/ðə/ /bʊk/ /ɪz/ /ˈpʌblɪʃt/ /baɪ/ /ðə/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "将会被出版",
+		"english": "will be published",
+		"soundmark": "/wɪl/ /bi/ /ˈpʌblɪʃt/"
+	},
+	{
+		"chinese": "那本书将会被那个公司出版",
+		"english": "the book will be published by the company",
+		"soundmark": "/ðə/ /bʊk/ /wɪl/ /bi/ /ˈpʌblɪʃt/ /baɪ/ /ðə/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "(已经)被出版",
+		"english": "has been published",
+		"soundmark": "/hæz/ /bɪn/ /ˈpʌblɪʃt/"
+	},
+	{
+		"chinese": "那本书(已经)被那个公司出版",
+		"english": "the book has been published",
+		"soundmark": "/ðə/ /bʊk/ /hæz/ /bɪn/ /ˈpʌblɪʃt/ /baɪ/ /by the company/ /ðə/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "(过去已经)被出版",
+		"english": "had been published",
+		"soundmark": "/hæd/ /bɪn/ /ˈpʌblɪʃt/"
+	},
+	{
+		"chinese": "那本书(过去已经)被那个公司出版",
+		"english": "the book had been published by the company",
+		"soundmark": "/ðə/ /bʊk/ /hæd/ /bɪn/ /ˈpʌblɪʃt/ /baɪ/ /ðə/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "建造",
+		"english": "to construct",
+		"soundmark": "/tə/ /kənˈstrʌkt/"
+	},
+	{
+		"chinese": "建造(ed形式)",
+		"english": "constructed",
+		"soundmark": "/kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "被建造",
+		"english": "be constructed",
+		"soundmark": "/bi/ /kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "建筑",
+		"english": "to build",
+		"soundmark": "/tə/ /bɪld/"
+	},
+	{
+		"chinese": "建筑",
+		"english": "building",
+		"soundmark": "/'bɪldɪŋ/"
+	},
+	{
+		"chinese": "那个建筑",
+		"english": "the building",
+		"soundmark": "/ðə/ /'bɪldɪŋ/"
+	},
+	{
+		"chinese": "那个建筑被建造",
+		"english": "the building is constructed",
+		"soundmark": "/ðə/ /'bɪldɪŋ/ /ɪz/ /kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "公司",
+		"english": "company",
+		"soundmark": "/ˈkʌmpəni/"
+	},
+	{
+		"chinese": "通过那个公司",
+		"english": "by the company",
+		"soundmark": "/baɪ/ /ðə/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "建造",
+		"english": "to construct",
+		"soundmark": "/tə/ /kənˈstrʌkt/"
+	},
+	{
+		"chinese": "建造",
+		"english": "construction",
+		"soundmark": "/kənˈstrʌkʃn/"
+	},
+	{
+		"chinese": "建筑公司",
+		"english": "construction company",
+		"soundmark": "/kənˈstrʌkʃn/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "通过那个建筑公司",
+		"english": "by the construction company",
+		"soundmark": "/baɪ/ /ðə/ /kənˈstrʌkʃn/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "那个建筑被建造",
+		"english": "the building is constructed",
+		"soundmark": "/ðə/ /'bɪldɪŋ/ /ɪz/ /kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "那个建筑被那个建筑公司建造",
+		"english": "the building is constructed by the construction company",
+		"soundmark": "/ðə/ /'bɪldɪŋ/ /ɪz/ /kənˈstrʌktɪd/ /baɪ/ /ðə/ /kənˈstrʌkʃn/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "将会被建造",
+		"english": "will be constructed",
+		"soundmark": "/wɪl/ /bi/ /kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "那个建筑将会被那个建筑公司建造",
+		"english": "the building will be constructed by the construction company",
+		"soundmark": "/ðə/ /'bɪldɪŋ/ /wɪl/ /bi/ /kənˈstrʌktɪd/ /baɪ/ /ðə/ /kənˈstrʌkʃn/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "(已经)被建造",
+		"english": "has been constructed",
+		"soundmark": "/hæz/ /bɪn/ /kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "那个建筑(已经)被那个建筑公司建造",
+		"english": "the building has been constructed by the construction company",
+		"soundmark": "/ðə/ /'bɪldɪŋ/ /hæz/ /bɪn/ /kənˈstrʌktɪd/ /baɪ/ /ðə/ /kənˈstrʌkʃn/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "(过去已经)被建造",
+		"english": "had been constructed",
+		"soundmark": "/hæd/ /bɪn/ /kənˈstrʌktɪd/"
+	},
+	{
+		"chinese": "那个建筑(过去已经)被那个建筑公司建造",
+		"english": "the building had been constructed by the construction company",
+		"soundmark": "/ðə/ /'bɪldɪŋ/ /hæd/ /bɪn/ /kənˈstrʌktɪd/ /baɪ/ /ðə/ /kənˈstrʌkʃn/ /ˈkʌmpəni/"
+	},
+	{
+		"chinese": "看",
+		"english": "to watch",
+		"soundmark": "/tə/ /wɑtʃ/"
+	},
+	{
+		"chinese": "看(ed形式)",
+		"english": "watched",
+		"soundmark": "/wɑtʃt/"
+	},
+	{
+		"chinese": "被看",
+		"english": "be watched",
+		"soundmark": "/bi/ /wɑtʃt/"
+	},
+	{
+		"chinese": "那个电影",
+		"english": "the movie",
+		"soundmark": "/ðə/ /'muvi/"
+	},
+	{
+		"chinese": "那个电影被看",
+		"english": "the movie was watched",
+		"soundmark": "/ðə/ /'muvi/ /wəz/ /wɑtʃt/"
+	},
+	{
+		"chinese": "百万",
+		"english": "million",
+		"soundmark": "/ˈmɪljən/"
+	},
+	{
+		"chinese": "人",
+		"english": "people",
+		"soundmark": "/'pipl/"
+	},
+	{
+		"chinese": "数百万人",
+		"english": "millions of people",
+		"soundmark": "/ˈmɪljənz/ /əv/ /'pipl/"
+	},
+	{
+		"chinese": "通过",
+		"english": "by",
+		"soundmark": "/baɪ/"
+	},
+	{
+		"chinese": "通过数百万人",
+		"english": "by millions of people",
+		"soundmark": "/baɪ/ /ˈmɪljənz/ /əv/ /'pipl/"
+	},
+	{
+		"chinese": "那个电影通过数百万人被看",
+		"english": "the movie was watched by millions of people",
+		"soundmark": "/ðə/ /'muvi/ /wəz/ /wɑtʃt/ /baɪ/ /ˈmɪljənz/ /əv/ /'pipl/"
+	},
+	{
+		"chinese": "将会被看",
+		"english": "will be watched",
+		"soundmark": "/wɪl/ /bi/ /wɑtʃt/"
+	},
+	{
+		"chinese": "那个电影将会被数百万人看",
+		"english": "the movie will be watched by millions of people",
+		"soundmark": "/ðə/ /'muvi/ /wɪl/ /bi/ /wɑtʃt/ /baɪ/ /ˈmɪljənz/ /əv/ /'pipl/"
+	},
+	{
+		"chinese": "(已经)被看",
+		"english": "has been watched",
+		"soundmark": "/hæz/ /bɪn/ /wɑtʃt/"
+	},
+	{
+		"chinese": "那个电影(已经)被数百万人看",
+		"english": "the movie has been watched by millions of people",
+		"soundmark": "/ðə/ /'muvi/ /hæz/ /bɪn/ /wɑtʃt/ /baɪ/ /ˈmɪljənz/ /əv/ /'pipl/"
+	},
+	{
+		"chinese": "(过去已经)被看",
+		"english": "had been watched",
+		"soundmark": "/hæd/ /bɪn/ /wɑtʃt/"
+	},
+	{
+		"chinese": "那个电影(过去已经)被数百万人看",
+		"english": "the movie had been watched by millions of people",
+		"soundmark": "/ðə/ /'muvi/ /hæd/ /bɪn/ /wɑtʃt/ /baɪ/ /ˈmɪljənz/ /əv/ /'pipl/"
+	},
+	{
+		"chinese": "修复",
+		"english": "to repair",
+		"soundmark": "/tə/ /rɪ'pɛr/"
+	},
+	{
+		"chinese": "修复(ed形式)",
+		"english": "repaired",
+		"soundmark": "/rɪ'pɛrd/"
+	},
+	{
+		"chinese": "被修复",
+		"english": "be repaired",
+		"soundmark": "/bi/ /rɪ'pɛrd/"
+	},
+	{
+		"chinese": "那辆车",
+		"english": "the car",
+		"soundmark": "/ðə/ /kɑr/"
+	},
+	{
+		"chinese": "那辆车(过去)被修复",
+		"english": "the car was repaired",
+		"soundmark": "/ðə/ /kɑr/ /wəz/ /rɪ'pɛrd/"
+	},
+	{
+		"chinese": "机修工",
+		"english": "mechanic",
+		"soundmark": "/məˈkænɪk/"
+	},
+	{
+		"chinese": "通过那个机修工",
+		"english": "by the mechanic",
+		"soundmark": "/baɪ/ /ðə/ /məˈkænɪk/"
+	},
+	{
+		"chinese": "那辆车(过去)被那个机修工修复",
+		"english": "the car was repaired by the mechanic",
+		"soundmark": "/ðə/ /kɑr/ /wəz/ /rɪ'pɛrd/ /baɪ/ /ðə/ /məˈkænɪk/"
+	},
+	{
+		"chinese": "将会被修复",
+		"english": "will be repaired",
+		"soundmark": "/wɪl/ /bi/ /rɪ'pɛrd/"
+	},
+	{
+		"chinese": "那辆车将会被那个机修工修复",
+		"english": "the car will be repaired by the mechanic",
+		"soundmark": "/ðə/ /kɑr/ /wɪl/ /bi/ /rɪ'pɛrd/ /baɪ/ /ðə/ /məˈkænɪk/"
+	},
+	{
+		"chinese": "(已经)被修复",
+		"english": "has been repaired",
+		"soundmark": "/hæz/ /bɪn/ /rɪ'pɛrd/"
+	},
+	{
+		"chinese": "那辆车(已经)被那个机修工修复",
+		"english": "the car has been repaired by the mechanic",
+		"soundmark": "/ðə/ /kɑr/ /hæz/ /bɪn/ /rɪ'pɛrd/ /baɪ/ /ðə/ /məˈkænɪk/"
+	},
+	{
+		"chinese": "(过去已经)被修复",
+		"english": "had been repaired",
+		"soundmark": "/hæd/ /bɪn/ /rɪ'pɛrd/"
+	},
+	{
+		"chinese": "那辆车(过去已经)被那个机修工修复",
+		"english": "the car had been repaired by the mechanic",
+		"soundmark": "/ðə/ /kɑr/ /hæd/ /bɪn/ /rɪ'pɛrd/ /baɪ/ /ðə/ /məˈkænɪk/"
+	},
+	{
+		"chinese": "决定",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"chinese": "决定",
+		"english": "decision",
+		"soundmark": "/dɪ'sɪʒn/"
+	},
+	{
+		"chinese": "那个决定",
+		"english": "the decision",
+		"soundmark": "/ðə/ /dɪ'sɪʒn/"
+	},
+	{
+		"chinese": "宣布",
+		"english": "to announce",
+		"soundmark": "/tə/ /əˈnaʊns/"
+	},
+	{
+		"chinese": "宣布(ed形式)",
+		"english": "announced",
+		"soundmark": "/əˈnaʊnst/"
+	},
+	{
+		"chinese": "被宣布",
+		"english": "be announced",
+		"soundmark": "/bi/ /əˈnaʊnst/"
+	},
+	{
+		"chinese": "那个决定被宣布",
+		"english": "the decision was announced",
+		"soundmark": "/ðə/ /dɪ'sɪʒn/ /wəz/ /əˈnaʊnst/"
+	},
+	{
+		"chinese": "公众",
+		"english": "public",
+		"soundmark": "/ˈpʌblɪk/"
+	},
+	{
+		"chinese": "向公众",
+		"english": "to the public",
+		"soundmark": "/tə/ /ðə/ /ˈpʌblɪk/"
+	},
+	{
+		"chinese": "那个决定被宣布给公众",
+		"english": "the decision was announced to the public",
+		"soundmark": "/ðə/ /dɪ'sɪʒn/ /wəz/ /əˈnaʊnst/ /tə/ /ðə/ /ˈpʌblɪk/"
+	},
+	{
+		"chinese": "将会被宣布",
+		"english": "will be announced",
+		"soundmark": "/wɪl/ /bi/ /əˈnaʊnst/"
+	},
+	{
+		"chinese": "那个决定将会被宣布给公众",
+		"english": "the decision will be announced to the public",
+		"soundmark": "/ðə/ /dɪ'sɪʒn/ /wɪl/ /bi/ /əˈnaʊnst/ /tə/ /ðə/ /ˈpʌblɪk/"
+	},
+	{
+		"chinese": "(已经)被宣布",
+		"english": "has been announced",
+		"soundmark": "/hæz/ /bɪn/ /əˈnaʊnst/"
+	},
+	{
+		"chinese": "那个决定(已经)被宣布给公众",
+		"english": "the decision has been announced to the public",
+		"soundmark": "/ðə/ /dɪ'sɪʒn/ /hæz/ /bɪn/ /əˈnaʊnst/ /tə/ /ðə/ /ˈpʌblɪk/"
+	},
+	{
+		"chinese": "(过去已经)被宣布",
+		"english": "had been announced",
+		"soundmark": "/hæd/ /bɪn/ /əˈnaʊnst/"
+	},
+	{
+		"chinese": "那个决定(过去已经)被宣布给公众",
+		"english": "the decision had been announced to the public",
+		"soundmark": "/ðə/ /dɪ'sɪʒn/ /hæd/ /bɪn/ /əˈnaʊnst/ /tə/ /ðə/ /ˈpʌblɪk/"
+	},
+	{
+		"chinese": "翻译",
+		"english": "to translate",
+		"soundmark": "/tə/ /træns'let/"
+	},
+	{
+		"chinese": "翻译(ed形式)",
+		"english": "translated",
+		"soundmark": "/træns'letɪd/"
+	},
+	{
+		"chinese": "被翻译",
+		"english": "be translated",
+		"soundmark": "/bi/ /træns'letɪd/"
+	},
+	{
+		"chinese": "那本书被翻译",
+		"english": "the book was translated",
+		"soundmark": "/ðə/ /bʊk/ /wəz/ /træns'letɪd/"
+	},
+	{
+		"chinese": "语言",
+		"english": "language",
+		"soundmark": "/'læŋɡwɪdʒ/"
+	},
+	{
+		"chinese": "多种",
+		"english": "several",
+		"soundmark": "/'sɛvrəl/"
+	},
+	{
+		"chinese": "多种语言",
+		"english": "several languages",
+		"soundmark": "/'sɛvrəl/ /'læŋɡwɪdʒɪz/"
+	},
+	{
+		"chinese": "那本书被翻译为多种语言",
+		"english": "the book was translated into several languages",
+		"soundmark": "/ðə/ /bʊk/ /wəz/ /træns'letɪd/ /'ɪntə/ /'sɛvrəl/ /'læŋɡwɪdʒɪz/"
+	},
+	{
+		"chinese": "将会被翻译",
+		"english": "will be translated",
+		"soundmark": "/wɪl/ /bi/ /træns'letɪd/"
+	},
+	{
+		"chinese": "那本书将会被翻译为多种语言",
+		"english": "the book will be translated into several languages",
+		"soundmark": "/ðə/ /bʊk/ /wɪl/ /bi/ /træns'letɪd/ /'ɪntə/ /'sɛvrəl/ /'læŋɡwɪdʒɪz/"
+	},
+	{
+		"chinese": "(已经)被翻译",
+		"english": "has been translated",
+		"soundmark": "/hæz/ /bɪn/ /træns'letɪd/"
+	},
+	{
+		"chinese": "那本书(已经)被翻译为多种语言",
+		"english": "the book has been translated into several languages",
+		"soundmark": "/ðə/ /bʊk/ /hæz/ /bɪn/ /træns'letɪd/ /'ɪntə/ /'sɛvrəl/ /'læŋɡwɪdʒɪz/"
+	},
+	{
+		"chinese": "(过去已经)被翻译",
+		"english": "had been translated",
+		"soundmark": "/hæd/ /bɪn/ /træns'letɪd/"
+	},
+	{
+		"chinese": "那本书(过去已经)被翻译为多种语言",
+		"english": "the book had been translated into several languages",
+		"soundmark": "/ðə/ /bʊk/ /hæd/ /bɪn/ /træns'letɪd/ /'ɪntə/ /'sɛvrəl/ /'læŋɡwɪdʒɪz/"
+	}
+]
