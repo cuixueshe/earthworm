@@ -37,7 +37,7 @@ describe("UserService", () => {
   });
 
   describe("findUser", () => {
-    it("should return user info with membership details when user is a member", async () => {
+    it("should return user info with membership details", async () => {
       const userId = "testUserId";
       const logtoUserInfo = { id: userId, name: "Test User" };
       const membershipDetails = {
@@ -46,6 +46,7 @@ describe("UserService", () => {
         endDate: new Date(),
         isActive: true,
       };
+
       (logtoServiceMock.logtoApi.get as jest.Mock).mockResolvedValue({ data: logtoUserInfo });
       membershipServiceMock.isMember.mockResolvedValue(true);
       membershipServiceMock.getMembershipDetails.mockResolvedValue(membershipDetails);
@@ -61,30 +62,44 @@ describe("UserService", () => {
       });
     });
 
-    it("should return user info without membership details when user is not a member", async () => {
+    it("should return undefined on error", async () => {
       const userId = "testUserId";
-      const logtoUserInfo = { id: userId, name: "Test User" };
-
-      (logtoServiceMock.logtoApi.get as jest.Mock).mockResolvedValue({ data: logtoUserInfo });
-      membershipServiceMock.isMember.mockResolvedValue(false);
+      (logtoServiceMock.logtoApi.get as jest.Mock).mockRejectedValue(new Error("API Error"));
 
       const result = await userService.findUser(userId);
 
+      expect(result).toBeUndefined();
+    });
+  });
+
+  describe("findCurrentUser", () => {
+    it("should return membership info for current user", async () => {
+      const userId = "testUserId";
+      const membershipDetails = {
+        type: "founder",
+        startDate: new Date(),
+        endDate: new Date(),
+        isActive: true,
+      };
+
+      membershipServiceMock.isMember.mockResolvedValue(true);
+      membershipServiceMock.getMembershipDetails.mockResolvedValue(membershipDetails);
+
+      const result = await userService.findCurrentUser(userId);
+
       expect(result).toEqual({
-        ...logtoUserInfo,
         membership: {
-          isMember: false,
-          details: null,
+          isMember: true,
+          details: membershipDetails,
         },
       });
     });
 
-    it("should return undefined when there's an error fetching user info", async () => {
+    it("should return undefined on error", async () => {
       const userId = "testUserId";
+      membershipServiceMock.isMember.mockRejectedValue(new Error("Service Error"));
 
-      (logtoServiceMock.logtoApi.get as jest.Mock).mockRejectedValue(new Error("API Error"));
-
-      const result = await userService.findUser(userId);
+      const result = await userService.findCurrentUser(userId);
 
       expect(result).toBeUndefined();
     });

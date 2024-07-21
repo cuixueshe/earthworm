@@ -27,6 +27,10 @@ export async function getToken() {
   return accessToken;
 }
 
+export function fetchUserInfo() {
+  return logto.fetchUserInfo();
+}
+
 export function getSignInCallback() {
   let callback = sessionStorage.getItem("callback");
   if (callback) {

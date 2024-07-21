@@ -6,14 +6,6 @@ export interface SetupUserApiResponse {
 }
 
 export interface UserApiResponse {
-  applicationId: string;
-  avatar: string;
-  createdAt: number;
-  customData: Record<string, any>;
-  id: string;
-  identities: Record<string, any>;
-  isSuspended: boolean;
-  lastSignInAt: number;
   membership: {
     details: {
       endDate: string;
@@ -22,8 +14,4 @@ export interface UserApiResponse {
     } | null;
     isMember: boolean;
   };
-  name: string | null;
-  primaryEmail: string;
-  primaryPhone: string | null;
-  username: string;
 }

@@ -17,7 +17,7 @@ export class UserController {
   @UseGuards(AuthGuard)
   @Get()
   async getCurrentUser(@User() user: UserEntity) {
-    const userInfo = await this.userService.findUser(user.userId);
+    const userInfo = await this.userService.findCurrentUser(user.userId);
     return userInfo;
   }
 

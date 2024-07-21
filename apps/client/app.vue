@@ -1,17 +1,17 @@
 <template>
-  <div
-    class="h-screen w-screen"
-    v-if="isSetupLoading"
-  >
-    <Loading />
-  </div>
-  <template v-else>
-    <NuxtLayout>
-      <HttpErrorProvider>
+  <HttpErrorProvider>
+    <div
+      class="h-screen w-screen"
+      v-if="isSetupLoading"
+    >
+      <Loading />
+    </div>
+    <template v-else>
+      <NuxtLayout>
         <NuxtPage />
-      </HttpErrorProvider>
-    </NuxtLayout>
-  </template>
+      </NuxtLayout>
+    </template>
+  </HttpErrorProvider>
 </template>
 
 <script setup lang="ts">

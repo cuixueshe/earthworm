@@ -22,29 +22,45 @@ export class UserService {
 
   async findUser(uId: string) {
     try {
-      const { data: logtoUserInfo } = await this.logtoService.logtoApi.get<LogtoUserInfo>(
-        `/api/users/${uId}`,
-      );
-      const isMember = await this.membershipService.isMember(uId);
-
-      let membershipInfo: MembershipDetails = null;
-      if (isMember) {
-        membershipInfo = await this.membershipService.getMembershipDetails(uId);
-      }
-
+      const { data: logtoUserInfo } = await this.logtoService.logtoApi.get(`/api/users/${uId}`);
+      const membershipInfo = await this.getMembershipInfo(uId);
       return {
         ...logtoUserInfo,
-        membership: {
-          isMember,
-          details: membershipInfo,
-        },
+        membership: membershipInfo,
       };
     } catch (error) {
-      // 考虑是否需要更详细的错误处理
       console.error("Error fetching user info:", error);
       return undefined;
     }
   }
+
+  /**
+   * 返回当前登录用户的信息
+   * logto 相关的信息是在 client 获取得
+   * 所以这里只需要返回 earthworm 服务相关的信息就可以了(比如是否为会员)
+   * @param uId
+   * @returns
+   */
+  async findCurrentUser(uId: string) {
+    try {
+      return {
+        membership: await this.getMembershipInfo(uId),
+      };
+    } catch (error) {
+      console.error("Error fetching current user info:", error);
+      return undefined;
+    }
+  }
+
+  private async getMembershipInfo(uId: string) {
+    const isMember = await this.membershipService.isMember(uId);
+    let details: MembershipDetails = null;
+    if (isMember) {
+      details = await this.membershipService.getMembershipDetails(uId);
+    }
+    return { isMember, details };
+  }
+
   async updateUser(user: UserEntity, dto: UpdateUserDto) {
     try {
       const { data } = await this.logtoService.logtoApi.patch(`/api/users/${user.userId}`, dto);
