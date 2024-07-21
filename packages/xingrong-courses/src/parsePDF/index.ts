@@ -29,7 +29,9 @@ function save(content: string, fileName: string) {
 
 function createFileNameMap(): Record<string, string> {
   const fileNameMap: Record<string, string> = {};
-  const files = fs.readdirSync(targetPath);
+  let files = fs.readdirSync(targetPath);
+  // 筛选出以 .pdf 结尾的文件
+  files = files.filter((file) => file.endsWith(".pdf"));
   files.sort((a, b) => parseFloat(a) - parseFloat(b));
 
   files.forEach((file, index) => {

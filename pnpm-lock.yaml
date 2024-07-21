@@ -364,6 +364,9 @@ importers:
 
   packages/xingrong-courses:
     dependencies:
+      '@earthworm/db':
+        specifier: workspace:^
+        version: link:../db
       '@earthworm/schema':
         specifier: workspace:^
         version: link:../schema
@@ -383,6 +386,9 @@ importers:
       '@types/pdf-parse':
         specifier: ^1.1.4
         version: 1.1.4
+      vitest:
+        specifier: ^2.0.3
+        version: 2.0.3(@types/node@20.14.9)(happy-dom@13.10.1)(terser@5.31.1)
 
 packages:
 

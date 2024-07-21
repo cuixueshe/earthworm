@@ -92,4 +92,42 @@ describe("pdf parser ", () => {
       ]
     `);
   });
+
+  it("中文部分是括号开始的", () => {
+    const pdfText = "我 \n" + "I /aɪ/ \n" + "(过去)它；这件事情 \n" + "it /it/ \n";
+
+    expect(parse(pdfText)).toMatchInlineSnapshot(`
+      [
+        {
+          "chinese": "我",
+          "english": "I",
+          "soundmark": "/aɪ/",
+        },
+        {
+          "chinese": "(过去)它；这件事情",
+          "english": "it",
+          "soundmark": "/it/",
+        },
+      ]
+    `);
+  });
+
+  it("中文部分是英文开始的", () => {
+    const pdfText = "我 \n" + "I /aɪ/ \n" + "be(ed形式) \n" + "been /bɪn/ \n";
+
+    expect(parse(pdfText)).toMatchInlineSnapshot(`
+      [
+        {
+          "chinese": "我",
+          "english": "I",
+          "soundmark": "/aɪ/",
+        },
+        {
+          "chinese": "be(ed形式)",
+          "english": "been",
+          "soundmark": "/bɪn/",
+        },
+      ]
+    `);
+  });
 });

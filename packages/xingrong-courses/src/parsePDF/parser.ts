@@ -70,7 +70,8 @@ export function parse(text: string) {
 }
 
 function isChinese(str: string) {
-  const reg = /^[\u4e00-\u9fa5]/;
+  // 只要里面有中文的话  那么就作为 chinese 部分
+  const reg = /[\u4e00-\u9fa5]/;
   return reg.test(str);
 }
 

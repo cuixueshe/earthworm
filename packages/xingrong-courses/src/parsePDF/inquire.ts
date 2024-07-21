@@ -39,7 +39,10 @@ export async function inquire(folderPath: string): Promise<string[]> {
 }
 
 function listAllFiles(folderPath) {
-  const files = fs.readdirSync(folderPath);
+  let files = fs.readdirSync(folderPath);
+  // 筛选出以 .pdf 结尾的文件
+  files = files.filter((file) => file.endsWith(".pdf"));
+
   files.sort((a, b) => {
     return parseFloat(a) - parseFloat(b);
   });
