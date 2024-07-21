@@ -26,7 +26,10 @@
                 </div>
               </div>
               <div>
-                <div class="text-xl font-bold">{{ userStore.user?.username }}</div>
+                <div class="flex gap-2">
+                  <div class="text-xl font-bold">{{ userStore.user?.username }}</div>
+                  <MembershipBadge></MembershipBadge>
+                </div>
                 <div class="text-sm opacity-50">{{ userStore.user?.name }}</div>
               </div>
             </div>
