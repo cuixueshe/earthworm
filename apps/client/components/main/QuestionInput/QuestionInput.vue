@@ -36,13 +36,27 @@
         autoFocus
       />
     </div>
-    <div class="mt-12 flex items-center justify-center md:hidden">
+    <div class="mt-12 flex flex-col items-center justify-center gap-4 md:hidden">
       <button
         class="btn btn-outline btn-sm"
         @click="handleSubmitAnswer"
       >
         提交
       </button>
+      <div class="flex gap-4">
+        <button
+          class="btn btn-outline btn-sm"
+          @click="handleShowAnswerTip"
+        >
+          {{ isAnswerTip() ? "隐藏" : "显示" }}答案
+        </button>
+        <button
+          class="btn btn-outline btn-sm"
+          @click="handlePlaySound"
+        >
+          播放声音
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -52,6 +66,7 @@ import { onMounted, onUnmounted, ref, watch } from "vue";
 
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
+import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { isWord, useInput } from "~/composables/main/question";
 import { useSummary } from "~/composables/main/summary";
@@ -87,7 +102,7 @@ const { findWordById, inputValue, submitAnswer, setInputValue, handleKeyboardInp
     getInputCursorPosition,
     inputChangedCallback,
   });
-const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
+const { showAnswerTip, hiddenAnswerTip, isAnswerTip } = useAnswerTip();
 
 onMounted(() => {
   focusInput();
@@ -124,6 +139,21 @@ function focusInputWhenWIndowFocus() {
   onUnmounted(() => {
     window.removeEventListener("focus", handleFocus);
   });
+}
+
+const { playSound } = useCurrentStatementEnglishSound();
+function handlePlaySound(e: MouseEvent) {
+  e.preventDefault();
+  playSound();
+}
+
+function handleShowAnswerTip(e: MouseEvent) {
+  e.preventDefault();
+  if (isAnswerTip()) {
+    hiddenAnswerTip();
+  } else {
+    showAnswerTip();
+  }
 }
 
 function handleSubmitAnswer() {
