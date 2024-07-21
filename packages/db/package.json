@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "drizzle-kit": "^0.21.2",
+    "drizzle-kit": "^0.23.0",
     "pg": "^8.11.5"
   },
   "dependencies": {
