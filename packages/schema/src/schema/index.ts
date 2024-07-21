@@ -6,3 +6,8 @@ export * from "./userCourseProgress";
 export * from "./membership";
 export * from "./coursePack";
 export * from "./userLearningActivities";
+export * from "./achievement";
+export * from "./achievementCategory";
+export * from "./userAchievement";
+export * from "./badge";
+export * from "./userBadge";
