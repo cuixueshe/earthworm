@@ -1,3 +1,4 @@
+import { type UserRecentCoursePackApiResponse } from "~/types";
 import { http } from "./http";
 
 interface UserProgressResponse {
@@ -10,15 +11,6 @@ interface UserProgressUpdate {
   statementIndex: number;
 }
 
-export interface UserRecentCoursePackResponse {
-  id: number;
-  coursePackId: string;
-  courseId: string;
-  title: string;
-  description: string;
-  cover: string;
-}
-
 export async function fetchUpdateCourseProgress(userProgressUpdate: UserProgressUpdate) {
   return await http.put<UserProgressResponse, UserProgressResponse>(
     `user-course-progress`,
@@ -27,7 +19,7 @@ export async function fetchUpdateCourseProgress(userProgressUpdate: UserProgress
 }
 
 export async function fetchUserRecentCoursePacks() {
-  return await http.get<UserRecentCoursePackResponse[], UserRecentCoursePackResponse[]>(
+  return await http.get<UserRecentCoursePackApiResponse[], UserRecentCoursePackApiResponse[]>(
     `/user-course-progress/recent-course-packs`,
   );
 }

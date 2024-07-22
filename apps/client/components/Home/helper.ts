@@ -1,9 +1,9 @@
 import { ref } from "vue";
 
-import type { UserRecentCoursePackResponse } from "~/api/userCourseProgress";
 import { fetchUserRecentCoursePacks } from "~/api/userCourseProgress";
+import { type UserRecentCoursePackApiResponse } from "~/types";
 
-const coursePacks = ref<UserRecentCoursePackResponse[]>([]);
+const coursePacks = ref<UserRecentCoursePackApiResponse[]>([]);
 
 export function useRecentCoursePack() {
   async function fetchCoursePacks() {

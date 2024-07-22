@@ -7,10 +7,19 @@
     <template v-else>
       <div class="h-[79vh] overflow-y-auto overflow-x-hidden scrollbar-hide">
         <div
-          class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          class="grid auto-rows-fr grid-cols-1 gap-4 px-4 sm:grid-cols-2 sm:px-0 md:grid-cols-3 lg:grid-cols-4"
         >
           <template v-for="coursePack in coursePackStore.coursePacks">
-            <CoursePackCard :coursePack="coursePack"></CoursePackCard>
+            <CoursePackCard
+              :coursePack="{
+                id: coursePack.id,
+                title: coursePack.title,
+                description: coursePack.description,
+                cover: coursePack.cover,
+                isFree: coursePack.isFree,
+              }"
+              @cardClick="handleGoToCoursePack"
+            ></CoursePackCard>
           </template>
         </div>
       </div>
@@ -19,8 +28,10 @@
 </template>
 
 <script setup lang="ts">
+import { navigateTo } from "#imports";
 import { ref } from "vue";
 
+import type { CoursePack } from "~/store/coursePack";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 import { useCoursePackStore } from "~/store/coursePack";
 
@@ -35,6 +46,16 @@ async function setup() {
     isLoading.value = true;
     await coursePackStore.setupCoursePacks();
     isLoading.value = false;
+  }
+}
+
+function handleGoToCoursePack(coursePack: CoursePack) {
+  if (coursePack.isFree) {
+    navigateTo(`/course-pack/${coursePack.id}`);
+  } else {
+    // 看看是不是会员 不是的话 直接弹出消息告知 需要是会员
+    // TODO 还没有检测是不是会员的功能函数
+    console.log("需要是会员");
   }
 }
 </script>
