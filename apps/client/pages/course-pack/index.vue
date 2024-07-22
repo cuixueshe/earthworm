@@ -33,9 +33,11 @@ import { ref } from "vue";
 
 import type { CoursePack } from "~/store/coursePack";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
+import { useNavigation } from "~/composables/useNavigation";
 import { useCoursePackStore } from "~/store/coursePack";
 
 const coursePackStore = useCoursePackStore();
+const { gotoCourseList } = useNavigation();
 const isLoading = ref(false);
 
 setup();
@@ -51,7 +53,7 @@ async function setup() {
 
 function handleGoToCoursePack(coursePack: CoursePack) {
   if (coursePack.isFree) {
-    navigateTo(`/course-pack/${coursePack.id}`);
+    gotoCourseList(coursePack.id);
   } else {
     // 看看是不是会员 不是的话 直接弹出消息告知 需要是会员
     // TODO 还没有检测是不是会员的功能函数

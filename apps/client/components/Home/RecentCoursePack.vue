@@ -29,13 +29,13 @@
               <div class="mt-2 flex justify-between">
                 <button
                   class="btn btn-sm tw-btn-blue"
-                  @click.stop="handleGotoCourseList(coursePack.coursePackId)"
+                  @click.stop="gotoCourseList(coursePack.coursePackId)"
                 >
                   课程列表
                 </button>
                 <button
                   class="btn btn-success btn-sm text-white"
-                  @click.stop="handleContinueGame(coursePack.coursePackId, coursePack.courseId)"
+                  @click.stop="gotoGame(coursePack.coursePackId, coursePack.courseId)"
                 >
                   继续游戏
                 </button>
@@ -62,8 +62,10 @@ import { navigateTo } from "#app";
 import { ref } from "vue";
 
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
+import { useNavigation } from "~/composables/useNavigation";
 import { useRecentCoursePack } from "./helper";
 
+const { gotoCourseList, gotoGame } = useNavigation();
 const { coursePacks, fetchCoursePacks } = useRecentCoursePack();
 const isLoading = ref(false);
 
@@ -77,14 +79,6 @@ async function setup() {
   } else {
     await fetchCoursePacks();
   }
-}
-
-function handleGotoCourseList(coursePackId: string) {
-  navigateTo(`/course-pack/${coursePackId}`);
-}
-
-function handleContinueGame(coursePackId: string, courseId: string) {
-  navigateTo(`/game/${coursePackId}/${courseId}`);
 }
 </script>
 
