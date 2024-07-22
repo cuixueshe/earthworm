@@ -55,9 +55,17 @@
 
       <button
         class="btn"
-        @click="goToNextCourse"
+        @click="handleGoToCourseList"
       >
-        {{ haveNextCourse || !isAuthenticated() ? "开始下一课" : "返回课程列表" }}
+        课程列表
+      </button>
+
+      <button
+        class="btn"
+        @click="goToNextCourse"
+        v-if="haveNextCourse"
+      >
+        下一课
         <kbd class="kbd"> ↵ </kbd>
       </button>
     </div>
@@ -82,6 +90,7 @@ import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
+import { useNavigation } from "~/composables/useNavigation";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useCoursePackStore } from "~/store/coursePack";
@@ -91,7 +100,8 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const courseStore = useCourseStore();
 const coursePackStore = useCoursePackStore();
-const { goToNextCourse, completeCourse, haveNextCourse } = useCourse();
+const { gotoCourseList, gotoGame } = useNavigation();
+const { handleGoToCourseList, goToNextCourse, completeCourse, haveNextCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
@@ -163,10 +173,15 @@ function useCourse() {
       return;
     }
 
-    if (nextCourseId.value) {
-      navigateTo(`/game/${courseStore.currentCourse?.coursePackId}/${nextCourseId.value}`);
-    } else {
-      navigateTo(`/course-pack/${courseStore.currentCourse?.coursePackId}`);
+    if (courseStore.currentCourse) {
+      gotoGame(courseStore.currentCourse.coursePackId, nextCourseId.value);
+    }
+  }
+
+  function handleGoToCourseList() {
+    hideSummary();
+    if (courseStore.currentCourse) {
+      gotoCourseList(courseStore.currentCourse.coursePackId);
     }
   }
 
@@ -190,6 +205,7 @@ function useCourse() {
     completeCourse,
     goToNextCourse,
     haveNextCourse,
+    handleGoToCourseList,
   };
 }
 
