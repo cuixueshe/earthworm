@@ -185,14 +185,9 @@
 		"soundmark": "/hæz/ /bɪn/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "那个邀请(已经)被那个客人接受",
-		"english": "the invitation has been",
-		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /hæz/ /bɪn/ /ək'sɛptɪd/"
-	},
-	{
-		"chinese": "了",
-		"english": "accepted by the guest",
-		"soundmark": "/baɪ/ /ðə/ /ɡɛst/"
+		"chinese": "那个邀请(已经)被那个客人接受了",
+		"english": "the invitation has been accepted by the guest",
+		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /hæz/ /bɪn/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ɡɛst/"
 	},
 	{
 		"chinese": "(过去已经)被接受",
@@ -356,8 +351,8 @@
 	},
 	{
 		"chinese": "那本书(已经)被那个公司出版",
-		"english": "the book has been published",
-		"soundmark": "/ðə/ /bʊk/ /hæz/ /bɪn/ /ˈpʌblɪʃt/ /baɪ/ /by the company/ /ðə/ /ˈkʌmpəni/"
+		"english": "the book has been published by the company",
+		"soundmark": "/ðə/ /bʊk/ /hæz/ /bɪn/ /ˈpʌblɪʃt/ /baɪ/ /ðə/ /ˈkʌmpəni/"
 	},
 	{
 		"chinese": "(过去已经)被出版",
