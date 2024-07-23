@@ -1,7 +1,14 @@
 <template>
   <div class="relative flex h-full items-center justify-center">
     <div v-if="!isStart">
-      <p>准备好了吗？(按任意键开启游戏)</p>
+      <button
+        class="btn"
+        v-if="isMobile"
+        @click="startGame"
+      >
+        准备好了吗？ 点我开始
+      </button>
+      <p v-else>准备好了吗？(按任意键开启游戏)</p>
     </div>
     <div v-else>
       <ModeDictationToolbar />
@@ -21,18 +28,20 @@ import { onMounted, ref } from "vue";
 
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useGameMode } from "~/composables/main/game";
+import { useDevice } from "~/utils/detectDevice";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
+const { isMobile } = useDevice();
 const { isAnswer, isQuestion } = useGameMode();
 const { isAnswerTip } = useAnswerTip();
-const { isStart } = useStartGame();
+const { isStart, startGame } = useStartGame();
 
 function useStartGame() {
   const isStart = ref(false);
 
   function handleKeyup(e: KeyboardEvent) {
     e.preventDefault();
-    isStart.value = true;
+    startGame();
     cancelShortcut("*", handleKeyup);
   }
 
@@ -40,8 +49,13 @@ function useStartGame() {
     registerShortcut("*", handleKeyup);
   });
 
+  function startGame() {
+    isStart.value = true;
+  }
+
   return {
     isStart,
+    startGame,
   };
 }
 </script>
