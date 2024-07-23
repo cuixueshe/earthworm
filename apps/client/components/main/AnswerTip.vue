@@ -13,7 +13,7 @@
           </button>
         </div>
 
-        <div>{{ courseStore.currentStatement?.english }}</div>
+        <div class="text-3xl">{{ courseStore.currentStatement?.english }}</div>
       </div>
     </div>
   </div>
