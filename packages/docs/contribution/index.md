@@ -48,4 +48,4 @@ git push origin feat/add-feature
 
 ![alt text](/contribution/image-6.png)
 
-## 贡献你，你已成功提交一个 PR ，太棒啦 🎉
+## 恭喜你，你已成功提交一个 PR ，太棒啦 🎉
