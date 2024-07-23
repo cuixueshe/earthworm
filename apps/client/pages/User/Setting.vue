@@ -273,7 +273,7 @@ const shortcutKeyBindList = [
     type: SHORTCUT_KEY_TYPES.SOUND,
   },
   {
-    label: "显示隐藏/答案预览",
+    label: "显示隐藏/答案预览/再来一次",
     type: SHORTCUT_KEY_TYPES.ANSWER,
   },
   {
