@@ -6,15 +6,29 @@
       class="w-16"
       :rank="rank"
     />
-    <div class="flex-1 truncate text-center">{{ username || "匿名" }}</div>
+    <div
+      class="tooltip flex-1 cursor-pointer truncate text-center"
+      data-tippy-content="看看这小子最近学了啥"
+      @click="toUserHomePage"
+      @mouseenter="$lazyTippy"
+    >
+      {{ username || "匿名" }}
+    </div>
     <div class="w-16 text-right">{{ count }} 课</div>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+import { useRouter } from "nuxt/app";
+
+const props = defineProps({
   rank: Number,
   username: String,
   count: Number,
 });
+const router = useRouter();
+const toUserHomePage = () => {
+  const { href } = router.resolve(`/${props.username}`);
+  window.open(href, "_blank");
+};
 </script>

@@ -9,9 +9,8 @@ import { UserLearnRecordService } from "./user-learn-record.service";
 export class UserLearnRecordController {
   constructor(private userLearnRecordService: UserLearnRecordService) {}
 
-  @UseGuards(AuthGuard)
   @Get("finishCount")
-  finishCount(@User() user: UserEntity, @Query() dto?: GetUserLearnRecordDto) {
-    return this.userLearnRecordService.find(user.userId, dto);
+  finishCount(@Query("userId") userId: string, @Query() dto?: GetUserLearnRecordDto) {
+    return this.userLearnRecordService.find(userId, dto);
   }
 }

@@ -1,8 +1,14 @@
 <template>
-  <Home v-if="isAuthenticated()"></Home>
+  <UserHome
+    v-if="isUserLoaded()"
+    :username="userStore.userInfo?.username!"
+  />
   <Landing v-else></Landing>
 </template>
 
 <script setup lang="ts">
-import { isAuthenticated } from "~/services/auth";
+import { isUserLoaded } from "~/services/auth";
+import { useUserStore } from "~/store/user";
+
+const userStore = useUserStore();
 </script>

@@ -1,5 +1,7 @@
+import type { MaybeRefOrGetter } from "vue";
+
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { computed, ref, toValue } from "vue";
 
 import type { User } from "~/types";
 import { fetchSetupNewUser } from "~/api/user";
@@ -10,6 +12,12 @@ export const useUserStore = defineStore("user", () => {
 
   function initUser(val: User) {
     user.value = val;
+  }
+
+  function isSelf(userId: MaybeRefOrGetter<string>) {
+    return computed(() => {
+      return user.value?.sub === toValue(userId);
+    });
   }
 
   function isNewUser() {
@@ -38,5 +46,6 @@ export const useUserStore = defineStore("user", () => {
     initUser,
     setupNewUser,
     isFounderMembership,
+    isSelf,
   };
 });

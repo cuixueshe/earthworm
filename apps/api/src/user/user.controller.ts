@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Patch, Post, UseGuards } from "@nestjs/common";
+import { Body, Controller, Get, Param, Patch, Post, UseGuards } from "@nestjs/common";
 
 import { AuthGuard } from "../guards/auth.guard";
 import { User, UserEntity } from "../user/user.decorators";
@@ -19,6 +19,11 @@ export class UserController {
   async getCurrentUser(@User() user: UserEntity) {
     const userInfo = await this.userService.findCurrentUser(user.userId);
     return userInfo;
+  }
+
+  @Get(":username")
+  getUserByUsername(@Param("username") username: string) {
+    return this.userService.getUserByUsername(username);
   }
 
   // 给新用户第一次登录使用

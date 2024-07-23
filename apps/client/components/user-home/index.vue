@@ -8,16 +8,13 @@
         <!-- 通过给定高度来自适应拉伸图片，如果图片不存在或者加载失败则显示外层的背景色（没有宽度） -->
         <img
           class="h-full object-cover"
-          :src="userStore.user?.avatar"
+          :src="user?.avatar"
         />
       </div>
       <div class="mt-4 truncate">
-        <div class="flex gap-2">
-          <div class="text-3xl font-medium">{{ userStore.user?.username }}</div>
-          <MembershipBadge></MembershipBadge>
-        </div>
+        <div class="text-3xl font-medium">{{ user?.username }}</div>
         <div class="text-md text-gray-400">
-          {{ userStore.user?.name }}
+          {{ user?.name }}
         </div>
       </div>
       <hr class="my-5 dark:border-gray-700" />
@@ -36,47 +33,46 @@
       <div class="mb-4 flex justify-between border-b pb-2 dark:border-gray-700">
         <div class="text-xl font-medium">最近使用的课程包</div>
         <NuxtLink
+          v-if="isSelf"
           href="/course-pack"
           class="link text-blue-500 no-underline hover:opacity-75"
-          >更多课程包
+        >
+          更多课程包
         </NuxtLink>
       </div>
-      <HomeRecentCoursePack />
-      <HomeCalendarGraph
+      <RecentCoursePack :userId="user?.id" />
+      <CalendarGraph
         class="mt-10"
         :data="learnRecord.list"
         :totalCount="learnRecord.totalCount"
-        @toggleYear="toggleYear"
+        @toggleYear="onToggleYear"
       />
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
-import { ref } from "vue";
-
+import { getUserByUsername } from "~/api/user";
 import { useLearnRecord } from "~/composables/learnRecord";
-import { type CalendarData } from "~/composables/user/calendarGraph";
 import { useUserStore } from "~/store/user";
+import CalendarGraph from "./CalendarGraph.vue";
+import RecentCoursePack from "./RecentCoursePack.vue";
 
-const userStore = useUserStore();
-const { learnRecord, setupLearnRecord, setQueryYear } = useLearnRecord();
-const { toggleYear } = useCalendarGraph();
+const props = defineProps<{
+  username: string;
+}>();
 
-function useCalendarGraph() {
-  const data = ref<CalendarData[]>([]);
-  const totalCount = ref<number>(0);
+const user = await getUserByUsername(props.username);
 
-  async function toggleYear(year?: number) {
-    setQueryYear(year);
-    setupLearnRecord();
+const isSelf = useUserStore().isSelf(() => user?.id);
+const { learnRecord, year } = useLearnRecord({ userId: user?.id });
+
+const onToggleYear = (value?: number) => {
+  if (!value) {
+    return;
   }
-
-  return {
-    data,
-    totalCount,
-    toggleYear,
-  };
-}
+  year.value = value!;
+};
 </script>
 
 <style scoped></style>

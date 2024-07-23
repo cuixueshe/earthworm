@@ -26,8 +26,14 @@ export async function fetchUpdateCourseProgress(userProgressUpdate: UserProgress
   );
 }
 
-export async function fetchUserRecentCoursePacks() {
-  return await http.get<UserRecentCoursePackResponse[], UserRecentCoursePackResponse[]>(
+export async function fetchUserRecentCoursePacks(userId: string, limit = 4) {
+  return await http.get<unknown, UserRecentCoursePackResponse[]>(
     `/user-course-progress/recent-course-packs`,
+    {
+      params: {
+        userId,
+        limit,
+      },
+    },
   );
 }

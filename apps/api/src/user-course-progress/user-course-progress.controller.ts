@@ -12,11 +12,10 @@ import { UserCourseProgressService } from "./user-course-progress.service";
 export class UserProgressController {
   constructor(private readonly userCourseProgressService: UserCourseProgressService) {}
 
-  @UseGuards(AuthGuard)
   @Get("/recent-course-packs")
-  async getUserRecentCoursePacks(@User() user: UserEntity, @Query("limit") limit: number) {
+  async getUserRecentCoursePacks(@Query("userId") userId?: string, @Query("limit") limit?: number) {
     const recentCoursePacks = await this.userCourseProgressService.getUserRecentCoursePacks(
-      user.userId,
+      userId,
       limit || 3,
     );
     return recentCoursePacks;
