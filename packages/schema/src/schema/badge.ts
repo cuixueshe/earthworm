@@ -24,6 +24,7 @@ export const badge = pgTable("badges", {
    * 是否为可穿戴, 穿戴后可以被其他用户可见
    */
   wearable: boolean("wearable").notNull().default(false),
+  enable: boolean("enable").notNull().default(false),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").$onUpdateFn(() => new Date()),
 });
