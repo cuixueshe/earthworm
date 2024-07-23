@@ -367,9 +367,6 @@ importers:
       '@earthworm/db':
         specifier: workspace:^
         version: link:../db
-      '@earthworm/game-data-sdk':
-        specifier: workspace:^
-        version: link:../game-data-sdk
       '@earthworm/schema':
         specifier: workspace:^
         version: link:../schema
