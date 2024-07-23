@@ -9,8 +9,8 @@ import { statement as statementSchema } from "@earthworm/schema";
 type Statement = typeof statementSchema.$inferInsert;
 
 (async function () {
-  const courseId = "x4fy10x7k1wz1bpyadhufs36";
-  const courseFileName = "54.json";
+  const courseId = "";
+  const courseFileName = "";
   // 先删除
   // 然后在添加
   // 重置所有的课程 statement
