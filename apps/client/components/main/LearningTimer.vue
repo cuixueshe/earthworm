@@ -62,6 +62,19 @@ watch(totalSeconds, (newValue) => {
   }
 });
 
+// 因为这个组件是放在 game.vue 中的
+// 所以生命周期是跟着 game 一起的
+// 所以我们在这里启动 tracking 等于同游戏开始的时候启动  游戏结束的时候停止
+// 放在这里的原因是在 game.vue 里面控制了 learningTimer 的渲染
+// 所以对于 startTracking 就不需要在做额外的判断了
+onMounted(() => {
+  startTracking();
+});
+
+onUnmounted(() => {
+  stopTracking();
+});
+
 function handleVisibilityChange() {
   if (document.hidden) {
     stopTracking();
