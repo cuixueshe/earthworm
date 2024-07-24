@@ -34,7 +34,13 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/globals.css"],
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/image", "@nuxt/test-utils/module"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    "@nuxt/image",
+    "@nuxt/test-utils/module",
+    "@hypernym/nuxt-anime",
+  ],
   plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts"],
   runtimeConfig: {
     public: {

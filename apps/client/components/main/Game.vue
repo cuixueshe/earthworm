@@ -6,29 +6,30 @@
     <ModeChineseToEnglishMode />
   </template>
 
+  <MainLearningTimer v-if="isAuthenticated()"></MainLearningTimer>
   <MainTips />
   <MainSummary />
   <MainShare />
   <MainAuthRequired />
-  <!-- TODO: 暂时先不提示（有些用户正在移动端的场景下使用）-->
-  <!-- <MainMessageBox
-    v-model:show-modal="isMessageShow"
-    cancel-btn-text="确定"
-    :content="messageContent"
-  /> -->
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, onUnmounted } from "vue";
 
 import { courseTimer } from "~/composables/courses/courseTimer";
-// import { useDeviceTip } from "~/composables/main/game";
+import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
+import { isAuthenticated } from "~/services/auth";
 
-// const { isMessageShow, messageContent } = useDeviceTip();
 const { currentGameMode } = useGameMode();
+const { startTracking, stopTracking } = useLearningTimeTracker();
 
 onMounted(() => {
   courseTimer.reset();
+  startTracking();
+});
+
+onUnmounted(() => {
+  stopTracking();
 });
 </script>

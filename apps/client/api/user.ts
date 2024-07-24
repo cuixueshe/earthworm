@@ -16,5 +16,6 @@ export async function fetchCurrentUser() {
     ...logtoUserInfo,
     ...extraInfo,
     avatar: logtoUserInfo!.picture || "", // 添加 avatar 字段，默认值为 picture （ picture 这个属性不够清晰 不喜欢）
+    id: logtoUserInfo!.sub || "", // logto 把 user 唯一 id  叫做 sub ， 不喜欢
   } as User;
 }

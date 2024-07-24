@@ -38,6 +38,10 @@
           )} `
         }}
       </p>
+      <p class="pl-14 text-base leading-loose text-gray-400">
+        今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
+        <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
+      </p>
     </div>
     <div className="modal-action">
       <button
@@ -88,6 +92,7 @@ import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
+import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
 import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useNavigation } from "~/composables/useNavigation";
@@ -109,6 +114,8 @@ const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
 const { updateLearnRecord } = useLearnRecord();
+const { stopTracking, startTracking } = useLearningTimeTracker();
+const { totalMinutes, formattedMinutes } = useTotalLearningTime();
 
 watch(showModal, (val) => {
   if (val) {
@@ -123,6 +130,8 @@ watch(showModal, (val) => {
     // 朗读每日一句
     soundSentence();
     // 延迟一小会放彩蛋
+    // 停止计时
+    stopTracking();
     setTimeout(async () => {
       playConfetti();
     }, 300);
@@ -135,6 +144,20 @@ watch(showModal, (val) => {
   }
 });
 
+function useTotalLearningTime() {
+  const { totalSeconds } = useLearningTimeTracker();
+  const totalMinutes = computed(() => Math.ceil(totalSeconds.value / 60));
+
+  const formattedMinutes = computed(() => {
+    return Math.max(totalMinutes.value, 1).toString();
+  });
+
+  return {
+    totalMinutes,
+    formattedMinutes,
+  };
+}
+
 function useDoAgain() {
   const { showQuestion } = useGameMode();
 
@@ -143,6 +166,7 @@ function useDoAgain() {
     hideSummary();
     showQuestion();
     courseTimer.reset();
+    startTracking();
   }
 
   return {
