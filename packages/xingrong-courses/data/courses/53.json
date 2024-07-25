@@ -607,7 +607,7 @@
 	{
 		"chinese": "在去年她的去西班牙的旅行之前她(过去)从来没有去过外国",
 		"english": "she had never been to a foreign country before her trip to Spain last year",
-		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ə/ /ˈfɔrən/ /ˈkʌntri/ /ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ə/ /ˈfɔrən/ /ˈkʌntri/"
+		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ə/ /ˈfɔrən/ /ˈkʌntri/ /bɪ'fɔr/ /hɚ/ /trɪp/ /tə/ /spen/ /læst/ /jɪr/"
 	},
 	{
 		"chinese": "她(过去)从来没有去过",
@@ -671,8 +671,8 @@
 	},
 	{
 		"chinese": "她(过去)从来没有上班迟到过",
-		"english": "she had never been late to",
-		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /let/ /tə/ /wɝk/ /work/"
+		"english": "she had never been late to work",
+		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /let/ /tə/ /wɝk/"
 	},
 	{
 		"chinese": "天",
