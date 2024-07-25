@@ -1,233 +1,341 @@
 import dayjs from "dayjs";
 import { ref } from "vue";
 
-const weeks: Record<number, string> = {
-  0: "Sun",
-  1: "Mon",
-  2: "Tue",
-  3: "Wed",
-  4: "Thu",
-  5: "Fri",
-  6: "Sat",
-};
-const weeksZh: Record<number, string> = {
-  0: "周日",
-  1: "周一",
-  2: "周二",
-  3: "周三",
-  4: "周四",
-  5: "周五",
-  6: "周六",
-};
-const months: Record<number, string> = {
-  0: "January",
-  1: "February",
-  2: "March",
-  3: "April",
-  4: "May",
-  5: "June",
-  6: "July",
-  7: "August",
-  8: "September",
-  9: "October",
-  10: "November",
-  11: "December",
-};
-const monthsZh: Record<number, string> = {
-  0: "一月",
-  1: "二月",
-  2: "三月",
-  3: "四月",
-  4: "五月",
-  5: "六月",
-  6: "七月",
-  7: "八月",
-  8: "九月",
-  9: "十月",
-  10: "十一月",
-  11: "十二月",
-};
+import { Theme } from "~/composables/darkMode";
 
-export interface EmitsType {
-  (event: "toggleYear", year?: number): void;
+enum CalendarLevel {
+  NONE = 0,
+  LOW = 1,
+  MEDIUM = 2,
+  HIGH = 3,
+  DIE = 4, // 😂
+}
+
+export enum Locale {
+  ZH_CN = "zh-CN",
+  EN_US = "en-US",
+}
+
+export interface CalendarBlock {
+  date: string;
+  count: number;
+  tip?: string;
+  bgColor?: string;
 }
 
 export interface CalendarData {
-  /** YYYY-MM-DD */
   day: string;
   count: number;
 }
 
-interface Options {
-  label: string;
-  value: number;
-}
-interface TableHead {
-  colSpan: number;
-  month: string;
-}
-interface TableBody {
-  date: Date;
-  tips?: string;
-  bg?: string;
+interface Other {
+  less: string;
+  more: string;
+  summaryFn: (count: number) => string;
 }
 
-const year = ref();
-const yearOptions = ref<Options[]>([]);
-const thead = ref<TableHead[]>([]);
-const tbody = ref<(null | TableBody)[][]>([]);
+interface CalendarOptions {
+  data: CalendarData[];
+  year?: number;
+  locale?: Locale;
+  theme?: Theme;
+  beginDay?: "sunday" | "monday";
+  separate?: boolean | "odd" | "even";
+  formatFn?: (date: string, count: number) => string;
+}
 
-export function useCalendarGraph(emits: EmitsType) {
-  getOptions();
+class CalendarGraph {
+  // 可用的图例颜色
+  static readonly LEGENDS: Record<Theme, string[]> = {
+    light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+    dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+  };
+
+  // 星期的语言配置
+  static readonly WEEKS: Record<Locale, string[]> = {
+    "zh-CN": ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+    "en-US": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+  };
+
+  // 月份的语言配置
+  static readonly MONTHS: Record<Locale, string[]> = {
+    "zh-CN": [
+      "一月",
+      "二月",
+      "三月",
+      "四月",
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月",
+      "十一月",
+      "十二月",
+    ],
+    "en-US": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  };
+
+  // 提示的语言配置
+  static readonly TOOLTIPS = {
+    "zh-CN": (date: string, count: number) => {
+      const pre = count > 0 ? `${count} 次学习` : "没有学习";
+      return `${pre}, ${date}`;
+    },
+    "en-US": (date: string, count: number) => {
+      const pre = count > 0 ? `${count} times` : "No learning";
+      const month = this.MONTHS["en-US"][dayjs(date).month()];
+      return `${pre}, ${month} ${this._getOrdinalSuffix(date)}.`;
+    },
+  };
+
+  // 其他标注的语言配置
+  static readonly OTHERS = {
+    "zh-CN": {
+      less: "更少",
+      more: "更多",
+      summaryFn: (count: number) => `一共学习了 ${count} 次`,
+    },
+    "en-US": {
+      less: "Less",
+      more: "More",
+      summaryFn: (count: number) => `Total ${count} times`,
+    },
+  };
+
+  private _data: CalendarData[] = [];
+  private _year: number;
+  private _locale: Locale;
+  private _theme: Theme;
+  private tooltipFn: Function;
+  private _beginDay: string;
+  private _separate: boolean | "odd" | "even";
+
+  constructor(options: CalendarOptions) {
+    this._data = options.data;
+    this._locale = options.locale || Locale.ZH_CN;
+    this._theme = options.theme || Theme.LIGHT;
+    this._year = options.year || dayjs().year();
+    this.tooltipFn = options.formatFn || CalendarGraph.TOOLTIPS[Locale.ZH_CN];
+    this._beginDay = options.beginDay || "sunday";
+    this._separate = options.separate || false;
+  }
 
   /**
-   * format date
-   * @param date date
-   * @returns YYYY-MM-DD
+   * @description 辅助函数
+   * 获取英文日期的序数后缀，用于提示
+   * @param date 日期
+   * @returns 序数后缀 1st, 2nd, 3rd, 4th
    */
-  function format(date: Date) {
-    return date.toISOString().slice(0, 10);
+  static _getOrdinalSuffix(date: number | Date | string) {
+    const day = dayjs(date).date();
+    const suffix = ["th", "st", "nd", "rd"];
+    const v = day % 100;
+    return day + (suffix[(v - 20) % 10] || suffix[v] || suffix[0]);
   }
 
-  function getOptions() {
-    // 重置列表，避免点击其他页面回来的时候录入重复的年份数据
-    yearOptions.value = [];
-    for (let i = 2024; i <= new Date().getFullYear(); i++) {
-      yearOptions.value.unshift({ label: i.toString(), value: i });
+  /**
+   * @description 辅助函数
+   * 根据学习数量获取level
+   * @param count 数量
+   * @returns level
+   */
+  private _getLevel(count: number) {
+    if (count === 0) {
+      return CalendarLevel.NONE;
+    } else if (count <= 3) {
+      return CalendarLevel.LOW;
+    } else if (count <= 5) {
+      return CalendarLevel.MEDIUM;
+    } else if (count <= 10) {
+      return CalendarLevel.HIGH;
+    } else {
+      return CalendarLevel.DIE;
     }
   }
 
-  function getOrdinalSuffix(day: number) {
-    const lastTwoDigits = day % 100;
-    if ([11, 12, 13].includes(lastTwoDigits)) return "th";
-    const lastDigit = day % 10;
-    if ([1, 2, 3].includes(lastDigit)) return { 1: "st", 2: "nd", 3: "rd" }[lastDigit] as string;
-    return "th";
+  /**
+   * @description 辅助函数
+   * 获取level对应的颜色
+   * @param count 数量
+   * @returns 颜色
+   */
+  private _getLevelColor(count: number) {
+    const level = this._getLevel(count);
+    return CalendarGraph.LEGENDS[this._theme][level];
   }
 
-  function getActivityLevel(count?: number) {
-    if (!count) return "";
-    if (count < 3) return "low";
-    if (count < 5) return "moderate";
-    if (count < 10) return "high";
-    return "higher";
-  }
-
-  function renderBody(list: CalendarData[]) {
-    return tbody.value.map((row) => {
-      return row.map((item) => {
-        if (!item) return null;
-
-        const year = item.date.getFullYear();
-        const month = String(item.date.getMonth() + 1).padStart(2, "0");
-        const day = String(item.date.getDate()).padStart(2, "0");
-        const date = dayjs(item.date).format("YYYY-MM-DD");
-
-        const current = list.find((f) => f.day === date);
-
-        const tipText = current?.count ? `${current?.count}次学习` : `没有学习`;
-        const tips = `${tipText}, ${year}-${month}-${day}`;
-
-        return { date: item.date, tips, bg: getActivityLevel(current?.count) };
-      });
-    });
-  }
-
-  function renderHead(thead: { offset: number; month: number }[]) {
-    return thead.map((item, i) => {
-      const nextItem = thead[i + 1] || { offset: 53 };
-      const colSpan = nextItem.offset - item.offset;
-      const month = monthsZh[item.month]?.slice(0, 3);
-      return { colSpan, month };
-    });
-  }
-
-  function initTable(value?: number) {
-    emits("toggleYear", value);
-    year.value = value;
-    const data = initData(value);
-    thead.value = renderHead(data.thead);
-    tbody.value = data.tbody;
-  }
-
-  function calcStartDate(date: Date = new Date()) {
-    const offset = 52 * 7 + (date.getDay() % 7);
-    const startDay = date.getDate() - offset;
-    return new Date(date.setDate(startDay));
-  }
-
-  function calcDateRange(year?: number) {
-    const startDate = year ? new Date(`${year}-01-01`) : calcStartDate(new Date());
-    const endDate = year ? new Date(`${year}-12-31`) : new Date();
-    return { startDate, endDate };
-  }
-
-  function initTbody(startDate: Date) {
-    const tbody: (null | TableBody)[][] = [[], [], [], [], [], [], []];
-    const week = startDate.getDay();
-    for (let i = 0; i < week; i++) {
-      tbody[i].push(null);
+  /**
+   * @description 辅助函数
+   * 获取日历的日期范围
+   * @returns 日期范围 [startDate, endDate]
+   */
+  private _getDateRange() {
+    // 如果有年份，返回当年的第一天和最后一天
+    if (this._year !== dayjs().year()) {
+      return [dayjs(`${this._year}-01-01`), dayjs(`${this._year}-12-31`)];
     }
-    return tbody;
+
+    // 最后一天是今天，往前推一年
+    const endDate = dayjs();
+    const startDate = endDate.subtract(1, "year");
+
+    return [startDate, endDate];
   }
 
-  function initData(year?: number) {
-    const { startDate, endDate } = calcDateRange(year);
+  /**
+   * 获取星期的标签
+   * @param separate 是否分隔
+   * @param odd 只显示奇数星期
+   * @returns 星期标签
+   */
+  getWeeksLabels() {
+    let week = [...CalendarGraph.WEEKS[this._locale], ...CalendarGraph.WEEKS[this._locale]];
 
-    const tbody: (null | TableBody)[][] = initTbody(startDate);
-    const thead: { offset: number; month: number }[] = [];
+    let result = week;
+    switch (this._separate) {
+      case "odd":
+      case true:
+        result = week.map((v, i) => (i % 2 === 1 ? v : ""));
+        break;
 
-    let theadLen = 12;
-    let nextDate = new Date(+startDate);
-    while (nextDate <= endDate) {
-      const month = nextDate.getMonth();
-      const week = nextDate.getDay();
-      const day = nextDate.getDate();
+      case "even":
+        result = week.map((v, i) => (i % 2 === 0 ? v : ""));
+        break;
+    }
 
-      if (day === 1 && thead.length < theadLen) {
-        const rowIndex = week;
-        const preRowIndex = rowIndex - 1;
-        const colIndex = tbody[rowIndex].length;
-        const nonCurrentMonthDate = tbody[preRowIndex] && tbody[preRowIndex][colIndex] !== null;
-        const offset = nonCurrentMonthDate ? colIndex + 1 : colIndex;
+    if (this._beginDay === "monday") {
+      return result.slice(1, 8);
+    }
 
-        const isFirstTh = thead.length === 0;
-        if (isFirstTh && offset !== 0) {
-          const preTH = { offset: 0, month: (month || 12) - 1 };
-          if (offset < 3) {
-            preTH.month = -1;
-            theadLen = 13;
-          }
-          thead.push(preTH);
-        }
+    return result.slice(0, 7);
+  }
 
-        thead.push({ offset, month });
+  /**
+   * 获取月份的标签, 默认返回12个月的标签
+   * @returns 月份标签
+   */
+  getMonthsLabels() {
+    const month = [...CalendarGraph.MONTHS[this._locale], ...CalendarGraph.MONTHS[this._locale]];
+    const [startDate] = this._getDateRange();
+    const startMonth = startDate.month();
+    const count = this._year === dayjs().year() ? 13 : 12;
+    return month.slice(startMonth, startMonth + count);
+  }
+
+  /**
+   * 获取图例
+   * @returns 图例颜色数组
+   */
+  getLegends() {
+    return CalendarGraph.LEGENDS[this._theme];
+  }
+
+  /**
+   * 获取提示
+   * @returns 提示数据对象
+   */
+  getOthers() {
+    return CalendarGraph.OTHERS[this._locale];
+  }
+
+  /**
+   * 重新设置属性
+   * @param options 选项
+   */
+  setOptions(options: CalendarOptions) {
+    this._data = options.data || this._data;
+    this._locale = options.locale || this._locale;
+    this._theme = options.theme || this._theme;
+    this._year = options.year || this._year;
+    this.tooltipFn = options.formatFn || CalendarGraph.TOOLTIPS[options.locale || Locale.ZH_CN];
+    this._beginDay = options.beginDay || this._beginDay;
+    this._separate = options.separate || this._separate;
+  }
+
+  /**
+   * 生成日历数据
+   * @returns 日历数据
+   */
+  generateCalendarData() {
+    const result: CalendarBlock[] = [];
+    const [startDate, endDate] = this._getDateRange();
+
+    // 如果开始日期不是我规定的一周的第一天，那么需要补充前面的日期
+    const day = startDate.day();
+    let diff = day;
+    if (this._beginDay === "monday" && day !== 1) {
+      diff = day === 0 ? 6 : day - 1;
+    }
+
+    const newStartDate = startDate.subtract(diff, "day");
+    const total = endDate.diff(startDate, "day") + 1 + diff;
+
+    for (let i = 0; i < total; i++) {
+      const date = newStartDate.add(i, "day").format("YYYY-MM-DD");
+      const count = this._data.find((v) => v.day === date)?.count || 0;
+      const tip = this.tooltipFn(date, count);
+      const bgColor = this._getLevelColor(count);
+
+      result.push({ date, count, tip, bgColor });
+    }
+
+    return result;
+  }
+}
+
+export function useCalendarGraph() {
+  const calendarGraph = new CalendarGraph({ data: [] });
+
+  const renderData = ref<CalendarBlock[]>([]);
+  const renderWeekLabels = ref<string[]>([]);
+  const renderMonthLabels = ref<{ label: string; offset: number }[]>([]);
+  const renderLegends = ref<string[]>([]);
+  const renderTips = ref<Other>();
+
+  const _calcHeaderOffset = (labels: string[]) => {
+    // 需要计算每个月1号所在的列
+    const offsets: number[] = [];
+    renderData.value.map((item, index) => {
+      if (item.date.endsWith("-01")) {
+        const offset = Math.floor(index / 7);
+        offsets.push(offset);
       }
+    });
 
-      tbody[week].push({ date: new Date(+nextDate) });
+    // 总列数
+    const total = Math.ceil(renderData.value.length / 7);
 
-      nextDate.setDate(day + 1);
+    const result = [];
+    // 月份标签从后往前添加 offset
+    for (let i = total - 1; i >= 0; i--) {
+      const index = offsets.indexOf(i);
+      result.push({
+        label: index !== -1 ? labels.pop() || "" : "",
+        offset: i,
+      });
     }
 
-    return { thead, tbody };
-  }
+    return result.reverse();
+  };
+
+  const reRender = (options: CalendarOptions) => {
+    calendarGraph.setOptions(options);
+
+    const monthsLabels = calendarGraph.getMonthsLabels();
+    renderData.value = calendarGraph.generateCalendarData();
+    renderWeekLabels.value = calendarGraph.getWeeksLabels();
+    renderMonthLabels.value = _calcHeaderOffset(monthsLabels);
+    renderLegends.value = calendarGraph.getLegends();
+    renderTips.value = calendarGraph.getOthers();
+  };
 
   return {
-    format,
-    calcStartDate,
-    calcDateRange,
-    getActivityLevel,
-    getOrdinalSuffix,
-    initTable,
-    initTbody,
-    initData,
-    renderHead,
-    renderBody,
-    weeks,
-    weeksZh,
-    thead,
-    tbody,
-    year,
-    yearOptions,
+    reRender,
+    renderData,
+    renderWeekLabels,
+    renderMonthLabels,
+    renderLegends,
+    renderTips,
   };
 }
