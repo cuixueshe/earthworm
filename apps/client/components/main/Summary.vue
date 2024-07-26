@@ -67,7 +67,6 @@
       <button
         class="btn"
         @click="goToNextCourse"
-        v-if="haveNextCourse"
       >
         下一课
         <kbd class="kbd"> ↵ </kbd>
@@ -82,9 +81,10 @@
 </template>
 
 <script setup lang="ts">
-import { navigateTo } from "#app";
+import delay from "lodash-es/delay";
 import { computed, ref, watch } from "vue";
 
+import Message from "~/components/main/Message/useMessage";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useLearnRecord } from "~/composables/learnRecord";
@@ -188,6 +188,12 @@ function useCourse() {
 
   async function goToNextCourse() {
     const { showAuthRequireModal } = useAuthRequire();
+
+    if (!haveNextCourse.value) {
+      Message.warning("已经是最后一课 自动帮你跳转到课程列表啦");
+      await delay(handleGoToCourseList, 1500);
+      return;
+    }
 
     // 无论后续如何处理，都需要先隐藏 Summary 页面
     hideSummary();
