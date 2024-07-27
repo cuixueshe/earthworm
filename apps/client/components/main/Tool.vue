@@ -72,6 +72,7 @@
     cancelBtnText=""
     confirm-btn-text="继续游戏"
     @confirm="handleGameResume"
+    @close="handleGameResume"
   />
 </template>
 
