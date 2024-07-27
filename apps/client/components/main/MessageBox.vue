@@ -19,18 +19,19 @@ const props = withDefaults(
     confirmBtnText: "",
   },
 );
-const emits = defineEmits(["confirm", "update:showModal"]);
+const emits = defineEmits(["confirm", "update:showModal", "close"]);
 
 // 可以在这个地方直接更新外层 showModal
 const isShowModal = useVModel(props, "showModal", emits);
 
 function handleCancel() {
+  emits("close");
   isShowModal.value = false;
 }
 
 function handleConfirm() {
   emits("confirm");
-  handleCancel();
+  isShowModal.value = false;
 }
 </script>
 
