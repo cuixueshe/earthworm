@@ -40,6 +40,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/test-utils/module",
     "@hypernym/nuxt-anime",
+    "radix-vue/nuxt",
   ],
   plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts"],
   runtimeConfig: {
