@@ -10,7 +10,6 @@ import { CourseHistoryService } from "../../course-history/course-history.servic
 import { DB } from "../../global/providers/db.provider";
 import { RankService } from "../../rank/rank.service";
 import { UserCourseProgressService } from "../../user-course-progress/user-course-progress.service";
-import { UserLearnRecordService } from "../../user-learn-record/user-learn-record.service";
 import { CourseService } from "../course.service";
 
 describe("course service", () => {
@@ -18,7 +17,6 @@ describe("course service", () => {
   let courseService: CourseService;
   let rankService: RankService;
   let courseHistoryService: CourseHistoryService;
-  let userLearnRecordService: UserLearnRecordService;
   let userCourseProgressService: UserCourseProgressService;
 
   beforeAll(async () => {
@@ -29,7 +27,6 @@ describe("course service", () => {
     courseService = testHelper.courseService;
     rankService = testHelper.rankService;
     courseHistoryService = testHelper.courseHistoryService;
-    userLearnRecordService = testHelper.userLearnRecordService;
     userCourseProgressService = testHelper.UserCourseProgressService;
   });
   beforeEach(async () => {
@@ -104,7 +101,6 @@ describe("course service", () => {
       expect(result).toHaveProperty("nextCourse");
       expect(rankService.userFinishCourse).toHaveBeenCalled();
       expect(courseHistoryService.upsert).toHaveBeenCalled();
-      expect(userLearnRecordService.upsert).toHaveBeenCalled();
       expect(userCourseProgressService.upsert).toHaveBeenCalled();
     });
 
@@ -116,7 +112,6 @@ describe("course service", () => {
       expect(result).toHaveProperty("nextCourse");
       expect(rankService.userFinishCourse).not.toHaveBeenCalled();
       expect(courseHistoryService.upsert).not.toHaveBeenCalled();
-      expect(userLearnRecordService.upsert).not.toHaveBeenCalled();
       expect(userCourseProgressService.upsert).not.toHaveBeenCalled();
     });
 
@@ -156,7 +151,6 @@ async function setupTesting() {
       CourseService,
       { provide: RankService, useValue: mockRankService },
       { provide: CourseHistoryService, useValue: mockCourseHistoryService },
-      { provide: UserLearnRecordService, useValue: mockUserLearnRecordService },
       { provide: UserCourseProgressService, useValue: mockUserCourseProgressService },
     ],
   }).compile();
@@ -166,7 +160,6 @@ async function setupTesting() {
     UserCourseProgressService: moduleRef.get<UserCourseProgressService>(UserCourseProgressService),
     rankService: moduleRef.get<RankService>(RankService),
     courseHistoryService: moduleRef.get<CourseHistoryService>(CourseHistoryService),
-    userLearnRecordService: moduleRef.get<UserLearnRecordService>(UserLearnRecordService),
     db: moduleRef.get<DbType>(DB),
     moduleRef,
   };

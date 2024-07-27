@@ -12,7 +12,7 @@ import { MembershipModule } from "../membership/membership.module";
 import { RankModule } from "../rank/rank.module";
 import { ToolModule } from "../tool/tool.module";
 import { UserCourseProgressModule } from "../user-course-progress/user-course-progress.module";
-import { UserLearnRecordModule } from "../user-learn-record/user-learn-record.module";
+import { UserLearningActivityModule } from "../user-learning-activity/user-learning-activity.module";
 import { UserModule } from "../user/user.module";
 
 @Module({
@@ -23,7 +23,7 @@ import { UserModule } from "../user/user.module";
     CoursePackModule,
     CourseModule,
     UserCourseProgressModule,
-    UserLearnRecordModule,
+    UserLearningActivityModule,
     ToolModule,
     RankModule,
     CronJobModule,

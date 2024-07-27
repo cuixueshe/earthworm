@@ -6,7 +6,6 @@ import { CourseHistoryService } from "../course-history/course-history.service";
 import { DB, DbType } from "../global/providers/db.provider";
 import { RankService } from "../rank/rank.service";
 import { UserCourseProgressService } from "../user-course-progress/user-course-progress.service";
-import { UserLearnRecordService } from "../user-learn-record/user-learn-record.service";
 
 @Injectable()
 export class CourseService {
@@ -14,7 +13,6 @@ export class CourseService {
     @Inject(DB) private db: DbType,
     private readonly rankService: RankService,
     private readonly courseHistoryService: CourseHistoryService,
-    private readonly userLearnRecordService: UserLearnRecordService,
     private readonly userCourseProgressService: UserCourseProgressService,
   ) {}
 
@@ -82,7 +80,6 @@ export class CourseService {
     if (userId) {
       await this.rankService.userFinishCourse(userId);
       await this.courseHistoryService.upsert(userId, coursePackId, courseId);
-      await this.userLearnRecordService.upsert(userId);
       nextCourse &&
         (await this.userCourseProgressService.upsert(userId, coursePackId, nextCourse.id, 0));
     }

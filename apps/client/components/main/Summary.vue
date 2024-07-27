@@ -87,7 +87,6 @@ import { computed, ref, watch } from "vue";
 import Message from "~/components/main/Message/useMessage";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { useLearnRecord } from "~/composables/learnRecord";
 import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
@@ -113,7 +112,6 @@ const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
-const { updateLearnRecord } = useLearnRecord();
 const { stopTracking, startTracking } = useLearningTimeTracker();
 const { totalMinutes, formattedMinutes } = useTotalLearningTime();
 
@@ -220,7 +218,6 @@ function useCourse() {
       const { coursePackId } = courseStore.currentCourse;
       const { nextCourse } = await courseStore.completeCourse();
       coursePackStore.updateCoursesCompleteCount(coursePackId);
-      updateLearnRecord();
 
       if (nextCourse) {
         nextCourseId.value = nextCourse.id;
