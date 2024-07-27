@@ -52,10 +52,14 @@ export interface EmitsType {
   (event: "toggleYear", year?: number): void;
 }
 
-export interface CalendarData {
-  /** YYYY-MM-DD */
-  day: string;
-  count: number;
+export interface CalendarDataItem {
+  date: string;
+  duration: number;
+}
+
+export interface CalendarConfig {
+  getActivityLevel: (item: CalendarDataItem | undefined) => string;
+  tipFormatter: (item: CalendarDataItem) => string;
 }
 
 interface Options {
@@ -77,7 +81,7 @@ const yearOptions = ref<Options[]>([]);
 const thead = ref<TableHead[]>([]);
 const tbody = ref<(null | TableBody)[][]>([]);
 
-export function useCalendarGraph(emits: EmitsType) {
+export function useCalendarGraph(emits: EmitsType, config: CalendarConfig) {
   getOptions();
 
   /**
@@ -113,22 +117,17 @@ export function useCalendarGraph(emits: EmitsType) {
     return "higher";
   }
 
-  function renderBody(list: CalendarData[]) {
+  function renderBody(list: CalendarDataItem[]) {
     return tbody.value.map((row) => {
       return row.map((item) => {
         if (!item) return null;
 
-        const year = item.date.getFullYear();
-        const month = String(item.date.getMonth() + 1).padStart(2, "0");
-        const day = String(item.date.getDate()).padStart(2, "0");
         const date = dayjs(item.date).format("YYYY-MM-DD");
+        const current = list.find((f) => f.date === date);
+        const bg = config.getActivityLevel(current);
+        const tips = config.tipFormatter(current || { date, duration: 0 });
 
-        const current = list.find((f) => f.day === date);
-
-        const tipText = current?.count ? `${current?.count}次学习` : `没有学习`;
-        const tips = `${tipText}, ${year}-${month}-${day}`;
-
-        return { date: item.date, tips, bg: getActivityLevel(current?.count) };
+        return { date: item.date, tips, bg };
       });
     });
   }

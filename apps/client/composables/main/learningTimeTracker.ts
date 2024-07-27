@@ -1,18 +1,24 @@
 import { ref } from "vue";
 
+import { updateDailyLearningDailyTotalTime } from "~/api/userLearningActivity";
 import { useUserStore } from "~/store/user";
 
 const totalSeconds = ref(0);
+const lastTotalSeconds = ref(0);
 const isTracking = ref(false);
 let timer: NodeJS.Timeout | null = null;
 
 export function useLearningTimeTracker() {
   const userStore = useUserStore();
-  const userId = userStore.user?.id;
+  const userId = userStore.user?.id || "";
 
   function getStorageKey() {
     const today = new Date().toISOString().split("T")[0];
     return `learningTime_${userId}_${today}`;
+  }
+
+  function setupLearningTime(duration: number) {
+    localStorage.setItem(getStorageKey(), duration.toString());
   }
 
   function loadTime() {
@@ -26,12 +32,10 @@ export function useLearningTimeTracker() {
   }
 
   function uploadTime() {
-    console.log("Uploading learning time:", {
-      userId,
+    updateDailyLearningDailyTotalTime({
       date: new Date().toISOString().split("T")[0],
-      seconds: totalSeconds.value,
+      duration: totalSeconds.value - lastTotalSeconds.value, // 传给后端的应该是时间差 后端会累加这个时间
     });
-    // Here we'll implement the actual API call later
   }
 
   function startTracking() {
@@ -41,10 +45,12 @@ export function useLearningTimeTracker() {
       saveTime(); // 如果是新的一天，立即创建新的存储项
     }
     isTracking.value = true;
+    lastTotalSeconds.value = totalSeconds.value;
     timer = setInterval(() => {
       totalSeconds.value++;
       if (totalSeconds.value % 30 === 0) {
         saveTime();
+        lastTotalSeconds.value = totalSeconds.value;
       }
     }, 1000);
   }
@@ -64,5 +70,6 @@ export function useLearningTimeTracker() {
     isTracking,
     startTracking,
     stopTracking,
+    setupLearningTime,
   };
 }

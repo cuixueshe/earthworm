@@ -29,6 +29,13 @@
     <!-- 右侧 -->
     <div class="flex items-center gap-4">
       <div
+        data-tippy-content="暂停游戏"
+        @click="handleGamePause"
+        @mouseenter="$lazyTippy"
+      >
+        <span class="clickable-item icon-item i-ph-pause-bold"></span>
+      </div>
+      <div
         data-tippy-content="重置当前课程进度"
         @click="handleDoAgain"
         @mouseenter="$lazyTippy"
@@ -58,6 +65,14 @@
     confirm-btn-text="确认"
     @confirm="handleTipConfirm"
   />
+
+  <MainMessageBox
+    v-model:show-modal="showGamePauseModal"
+    content="游戏暂停 快点回来！"
+    cancelBtnText=""
+    confirm-btn-text="继续游戏"
+    @confirm="handleGameResume"
+  />
 </template>
 
 <script setup lang="ts">
@@ -69,13 +84,16 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useCourseStore } from "~/store/course";
+import { useGameStore } from "~/store/game";
 import { useContent } from "./Contents/useContents";
 
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
+const gameStore = useGameStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
+const { showGamePauseModal, handleGameResume, handleGamePause } = useGamePause();
 
 const currentCourseInfo = computed(() => {
   return `${courseStore.currentCourse?.title}（${currentSchedule.value}/${courseStore.totalQuestionsCount}）`;
@@ -92,8 +110,28 @@ const currentPercentage = computed(() => {
   return ((courseStore.statementIndex / courseStore.totalQuestionsCount) * 100).toFixed(2);
 });
 
+function useGamePause() {
+  const showGamePauseModal = ref(false);
+
+  function handleGameResume() {
+    showGamePauseModal.value = false;
+    gameStore.resumeGame();
+  }
+
+  function handleGamePause() {
+    showGamePauseModal.value = true;
+    gameStore.pauseGame();
+  }
+
+  return {
+    showGamePauseModal,
+    handleGameResume,
+    handleGamePause,
+  };
+}
+
 function useDoAgain() {
-  const showTipModal = ref<boolean>(false);
+  const showTipModal = ref(false);
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {

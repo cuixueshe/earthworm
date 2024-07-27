@@ -45,6 +45,7 @@ function handleConfirm() {
     <p class="py-4">{{ content }}</p>
     <div class="modal-action">
       <button
+        v-if="cancelBtnText"
         class="btn mr-2"
         @click="handleCancel"
       >

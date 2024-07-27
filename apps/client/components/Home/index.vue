@@ -44,8 +44,8 @@
       <HomeRecentCoursePack />
       <HomeCalendarGraph
         class="mt-10"
-        :data="learnRecord.list"
-        :totalCount="learnRecord.totalCount"
+        :data="learningDailyTimeList"
+        :totalLearningTime="learningDailyTotalTime"
         @toggleYear="toggleYear"
       />
     </div>
@@ -54,26 +54,27 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { useLearnRecord } from "~/composables/learnRecord";
-import { type CalendarData } from "~/composables/user/calendarGraph";
+import { useLearningDailyTime } from "~/composables/learningDailyTime";
+import { type CalendarDataItem } from "~/composables/user/calendarGraph";
 import { useUserStore } from "~/store/user";
 
 const userStore = useUserStore();
-const { learnRecord, setupLearnRecord, setQueryYear } = useLearnRecord();
+const { learningDailyTimeList, learningDailyTotalTime, setupLearningDailyTime } =
+  useLearningDailyTime();
 const { toggleYear } = useCalendarGraph();
 
 function useCalendarGraph() {
-  const data = ref<CalendarData[]>([]);
-  const totalCount = ref<number>(0);
+  const data = ref<CalendarDataItem[]>([]);
+  const totalLearningTime = ref<number>(0);
 
   async function toggleYear(year?: number) {
-    setQueryYear(year);
-    setupLearnRecord();
+    // TODO 需要支持多年份的切换
+    setupLearningDailyTime();
   }
 
   return {
     data,
-    totalCount,
+    totalLearningTime,
     toggleYear,
   };
 }

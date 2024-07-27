@@ -35,7 +35,7 @@
               >
                 <div
                   class="cell block"
-                  :class="cell?.bg"
+                  :class="[cell?.bg]"
                   :data-tippy-content="cell?.tips"
                   @mouseenter="(e) => $calendarTippy(e, calendarTable)"
                 />
@@ -47,8 +47,13 @@
 
       <div class="mt-2 flex justify-between px-1">
         <span class="justify-self-end text-sm dark:text-gray-400">
-          一共学习了 <span class="font-semibold">{{ totalCount }}</span> 次</span
-        >
+          {{ totalLearningTime > 0 ? "一共学习" : "还没有开始学习" }}
+          <span
+            v-if="totalLearningTime > 0"
+            class="font-semibold text-purple-500"
+            >{{ formatLearningTime(totalLearningTime) }}</span
+          >
+        </span>
         <div class="flex items-center gap-1 text-xs">
           <div class="text-gray-500">更少</div>
           <div class="cell"></div>
@@ -76,14 +81,66 @@
 <script setup lang="ts">
 import { onMounted, ref, watchEffect } from "vue";
 
-import type { CalendarData, EmitsType } from "~/composables/user/calendarGraph";
+import type { CalendarDataItem, EmitsType } from "~/composables/user/calendarGraph";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
 
-const props = defineProps<{ data: CalendarData[]; totalCount: number }>();
+enum ActivityLevel {
+  Low = "low",
+  Moderate = "moderate",
+  High = "high",
+  Higher = "higher",
+}
+
+const props = defineProps<{
+  data: CalendarDataItem[];
+  totalLearningTime: number;
+}>();
+
 const emits = defineEmits<EmitsType>();
 const calendarTable = ref<HTMLTableElement>();
 
-const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits);
+const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits, {
+  getActivityLevel(item) {
+    if (!item) return "";
+
+    const duration = secondToMinutes(item.duration);
+    if (duration < 10) return ActivityLevel.Low;
+    if (duration < 30) return ActivityLevel.Moderate;
+    if (duration < 60) return ActivityLevel.High;
+    return ActivityLevel.Higher;
+  },
+  tipFormatter(current) {
+    if (current.duration === 0) return `${current?.date} 没有学习`;
+
+    let tip = "";
+    const minutes = secondToMinutes(current.duration);
+    if (minutes < 1) {
+      tip = "不足 1 分钟";
+    } else {
+      tip = ` ${secondToMinutes(current.duration)} 分钟`;
+    }
+    return `${current.date} 学习${tip}`;
+  },
+});
+
+function secondToMinutes(second: number) {
+  return Math.floor(second / 60);
+}
+
+function formatLearningTime(totalSeconds: number) {
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+
+  if (hours > 0) {
+    return `${hours}小时${minutes}分钟`;
+  } else {
+    if (minutes === 0) {
+      return `不足 1 分钟`;
+    } else {
+      return `${minutes}分钟`;
+    }
+  }
+}
 
 onMounted(() => {
   initTable();

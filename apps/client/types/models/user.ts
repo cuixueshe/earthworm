@@ -5,4 +5,5 @@ import { type UserApiResponse } from "../api/user";
 export type User = UserInfoResponse &
   UserApiResponse & {
     avatar: string;
+    id: string;
   };

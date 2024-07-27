@@ -18,8 +18,10 @@
 import { onMounted, ref } from "vue";
 
 import { fetchCurrentUser } from "~/api/user";
+import { fetchTodayLearningTime } from "~/api/userLearningActivity";
 import { useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
+import { useLearningTimeTracker } from "./composables/main/learningTimeTracker";
 import { useUserStore } from "./store/user";
 
 const { initDarkMode } = useDarkMode();
@@ -32,6 +34,9 @@ async function setup() {
   if (isAuthenticated()) {
     const user = await fetchCurrentUser();
     userStore.initUser(user);
+    // 同步今日的学习总时长
+    const { setupLearningTime } = useLearningTimeTracker();
+    setupLearningTime(await fetchTodayLearningTime());
   }
   isSetupLoading.value = false;
 }
