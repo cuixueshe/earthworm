@@ -50,6 +50,20 @@
       "when": 1720328764232,
       "tag": "0006_stale_jetstream",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1721896618637,
+      "tag": "0007_many_puff_adder",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1722050811548,
+      "tag": "0008_famous_red_shift",
+      "breakpoints": true
     }
   ]
 }

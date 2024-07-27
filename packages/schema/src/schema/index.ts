@@ -5,3 +5,4 @@ export * from "./userLearnRecord";
 export * from "./userCourseProgress";
 export * from "./membership";
 export * from "./coursePack";
+export * from "./userLearningActivities";

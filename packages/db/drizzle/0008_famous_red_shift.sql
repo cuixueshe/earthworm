@@ -1,0 +1,1 @@
+ALTER TABLE "user_learning_activities" ADD CONSTRAINT "user_learning_activities_user_id_date_activity_type_unique" UNIQUE("user_id","date","activity_type");
