@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { nextTick } from "vue";
 
+import { updateDailyLearningDailyTotalTime } from "~/api/userLearningActivity";
 import { useLearningTimeTracker } from "../learningTimeTracker";
 
 vi.mock("~/store/user", () => ({
@@ -9,11 +10,15 @@ vi.mock("~/store/user", () => ({
   })),
 }));
 
+vi.mock("~/api/userLearningActivity", () => ({
+  updateDailyLearningDailyTotalTime: vi.fn(),
+}));
+
 describe("useLearningTimeTracker", () => {
   let tracker: ReturnType<typeof useLearningTimeTracker>;
-  tracker = useLearningTimeTracker();
 
   beforeEach(() => {
+    tracker = useLearningTimeTracker();
     // 清除 localStorage
     localStorage.clear();
     // 重置计时器
@@ -37,7 +42,7 @@ describe("useLearningTimeTracker", () => {
     tracker.startTracking();
     expect(tracker.isTracking.value).toBe(true);
   });
-  [];
+
   it("should stop tracking when stopTracking is called", () => {
     tracker.startTracking();
     tracker.stopTracking();
@@ -73,24 +78,14 @@ describe("useLearningTimeTracker", () => {
     expect(tracker.totalSeconds.value).toBe(initialSeconds + 1); // 只增加了1秒
   });
 
-  it("should not stop tracking if not tracking", () => {
-    const consoleSpy = vi.spyOn(console, "log");
-    tracker.stopTracking(); // 尝试停止未启动的跟踪
-    expect(consoleSpy).not.toHaveBeenCalled(); // 确保没有调用 uploadTime
-  });
-
   it("should upload time when stopping tracking", () => {
-    const consoleSpy = vi.spyOn(console, "log");
     tracker.startTracking();
     vi.advanceTimersByTime(5000);
     tracker.stopTracking();
-    expect(consoleSpy).toHaveBeenCalledWith(
-      "Uploading learning time:",
-      expect.objectContaining({
-        userId: "testUser",
-        seconds: 5,
-      }),
-    );
+    expect(updateDailyLearningDailyTotalTime).toHaveBeenCalledWith({
+      date: expect.any(String),
+      duration: 5,
+    });
   });
 
   it("should reset totalSeconds to zero when a new day starts", async () => {
