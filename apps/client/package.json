@@ -53,6 +53,7 @@
     "google-libphonenumber": "^3.2.34",
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
+    "radix-vue": "^1.9.2",
     "satori": "^0.10.13",
     "tippy.js": "^6.3.7",
     "vee-validate": "^4.12.5",
