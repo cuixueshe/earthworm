@@ -19,7 +19,7 @@ export const badge = pgTable("badges", {
   /**
    * data-url or http-url of image svg
    */
-  content: text("image").notNull(),
+  content: text("content").notNull(),
   /**
    * 是否为可穿戴, 穿戴后可以被其他用户可见
    */
