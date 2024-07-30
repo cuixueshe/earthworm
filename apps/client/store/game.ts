@@ -2,6 +2,7 @@ import { defineStore } from "pinia";
 import { ref } from "vue";
 
 import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
+import { isAuthenticated } from "~/services/auth";
 
 enum GameStatus {
   NOT_PLAYED = "not_played",
@@ -15,18 +16,24 @@ export const useGameStore = defineStore("game", () => {
 
   function startGame() {
     gameStatus.value = GameStatus.STARTED;
-    startTracking();
+    if (isAuthenticated()) {
+      startTracking();
+    }
   }
 
   function exitGame() {
     gameStatus.value = GameStatus.NOT_PLAYED;
-    stopTracking();
+    if (isAuthenticated()) {
+      stopTracking();
+    }
   }
 
   function pauseGame() {
     if (gameStatus.value === GameStatus.STARTED) {
       gameStatus.value = GameStatus.PAUSED;
-      stopTracking();
+      if (isAuthenticated()) {
+        stopTracking();
+      }
     } else {
       console.log("Game is not started or already paused");
     }
@@ -35,7 +42,9 @@ export const useGameStore = defineStore("game", () => {
   function resumeGame() {
     if (gameStatus.value === GameStatus.PAUSED) {
       gameStatus.value = GameStatus.STARTED;
-      startTracking();
+      if (isAuthenticated()) {
+        startTracking();
+      }
     } else {
       console.log("Game is not paused");
     }

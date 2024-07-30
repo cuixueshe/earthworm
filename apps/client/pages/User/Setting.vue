@@ -284,6 +284,10 @@ const shortcutKeyBindList = [
     label: "跳过当前问题",
     type: SHORTCUT_KEY_TYPES.SKIP,
   },
+  {
+    label: "标记内容已经掌握",
+    type: SHORTCUT_KEY_TYPES.MASTERED,
+  },
 ];
 
 onMounted(() => {

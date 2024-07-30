@@ -136,8 +136,6 @@ watch(showModal, (val) => {
   } else {
     // 取消回车键进入下一课
     cancelShortcut("enter", goToNextCourse);
-    // 从显示状态关闭结算面板
-    courseStore.resetStatementIndex();
     permitSaveStatement();
   }
 });
@@ -159,7 +157,14 @@ function useTotalLearningTime() {
 function useDoAgain() {
   const { showQuestion } = useGameMode();
 
-  function handleDoAgain() {
+  async function handleDoAgain() {
+    // 看看是不是没有全部掌握了
+    // 如果是全部掌握了 那么给个提示 然后挑战到课程列表
+    if (courseStore.isAllMastered()) {
+      Message.warning("你已经全部都掌握 自动帮你跳转到课程列表啦");
+      await delay(handleGoToCourseList, 1500);
+      return;
+    }
     courseStore.doAgain();
     hideSummary();
     showQuestion();

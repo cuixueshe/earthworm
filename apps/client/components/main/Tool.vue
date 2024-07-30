@@ -97,18 +97,20 @@ const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
 const { showGamePauseModal, handleGameResume, handleGamePause } = useGamePause();
 
 const currentCourseInfo = computed(() => {
-  return `${courseStore.currentCourse?.title}（${currentSchedule.value}/${courseStore.totalQuestionsCount}）`;
+  return `${courseStore.currentCourse?.title}（${currentSchedule.value}/${courseStore.visibleStatementsCount}）`;
 });
 
 const currentSchedule = computed(() => {
-  return courseStore.statementIndex + 1;
+  return courseStore.visibleStatementIndex + 1;
 });
 
 const currentPercentage = computed(() => {
   if (courseStore.isAllDone()) {
     return 100;
   }
-  return ((courseStore.statementIndex / courseStore.totalQuestionsCount) * 100).toFixed(2);
+  return ((courseStore.visibleStatementIndex / courseStore.visibleStatementsCount) * 100).toFixed(
+    2,
+  );
 });
 
 function useGamePause() {

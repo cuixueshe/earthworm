@@ -50,6 +50,7 @@
     "canvas-confetti": "^1.9.2",
     "country-telephone-data": "^0.6.3",
     "dayjs": "^1.11.10",
+    "fuse.js": "^7.0.0",
     "google-libphonenumber": "^3.2.34",
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",

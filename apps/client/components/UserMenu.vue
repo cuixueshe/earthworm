@@ -97,6 +97,12 @@ const showMenuOptions = computed(() => {
       icon: "i-ph-gear",
     },
     {
+      title: "掌握列表",
+      name: "setting",
+      eventName: handleMasteredElements,
+      icon: "i-ph-book",
+    },
+    {
       title: "编辑器",
       name: "setting",
       eventName: handleGoToEditor,
@@ -137,6 +143,11 @@ function handleHelpDocs() {
 function handleFeedback() {
   open.value = false;
   window.open("https://txc.qq.com/products/652508", "_blank");
+}
+
+function handleMasteredElements() {
+  open.value = false;
+  navigateTo("/mastered-elements");
 }
 
 function handleSetting() {

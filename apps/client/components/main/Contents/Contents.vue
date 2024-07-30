@@ -1,26 +1,24 @@
 <template>
   <div
     id="contents"
-    class="absolute left-0 top-20 z-10 w-80 select-none overflow-x-hidden border-l-4 border-fuchsia-500 bg-white shadow dark:bg-slate-800"
+    class="absolute left-0 top-20 z-10 w-80 select-none overflow-y-auto border-l-4 border-fuchsia-500 bg-white shadow dark:bg-slate-800"
     :class="[isShowContents() && 'show']"
-    v-bind="containerProps"
+    ref="contentsRef"
   >
-    <div
-      class="px-2"
-      v-bind="wrapperProps"
-    >
+    <div class="px-2">
       <div
-        v-for="item in list"
-        :key="item.data.id"
-        :class="getItemClassNames(item.index)"
-        :data-tippy-content="`${item.data.english}<br>${item.data.chinese}`"
-        @click="jumpTo(item.index)"
+        v-for="(item, index) in contentsList"
+        :key="item.id"
+        :class="getItemClassNames(index)"
+        :data-tippy-content="`${item.english}<br>${item.chinese}`"
+        @click="jumpTo(index, item)"
         @mouseenter="$lazyTippy"
       >
         <div class="flex whitespace-pre-wrap border-b py-1 dark:border-slate-600">
-          <div class="w-12 text-center">{{ item.index + 1 }}</div>
+          <div class="w-12 text-center">{{ index + 1 }}</div>
           <div class="flex-1 truncate text-left">
-            {{ item.data.chinese }}
+            {{ item.chinese }}
+            {{ item.isMastered ? "✅" : "" }}
           </div>
         </div>
       </div>
@@ -29,8 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { useVirtualList } from "@vueuse/core";
-import { computed, onMounted } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 
 import { useGameMode } from "~/composables/main/game";
 import { useCourseStore } from "~/store/course";
@@ -44,14 +41,29 @@ const contentsList = computed(() => {
   return coursesStore.currentCourse?.statements || [];
 });
 
-const { list, containerProps, wrapperProps, scrollTo } = useVirtualList(contentsList.value, {
-  itemHeight: 35,
+const contentsRef = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  if (contentsRef.value) {
+    watchClickOutside(contentsRef.value);
+  }
 });
 
-onMounted(async () => {
-  scrollTo(coursesStore.statementIndex);
-  watchClickOutside(containerProps.ref.value as HTMLElement);
-});
+watch(
+  () => coursesStore.statementIndex,
+  (newIndex) => {
+    scrollToIndex(newIndex);
+  },
+);
+
+function scrollToIndex(index: number) {
+  if (contentsRef.value) {
+    const element = contentsRef.value.children[0].children[index] as HTMLElement;
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }
+}
 
 function isActive(index: number) {
   return coursesStore.statementIndex === index;
@@ -66,7 +78,10 @@ function getItemClassNames(index: number) {
   return classNames;
 }
 
-function jumpTo(index: number) {
+function jumpTo(index: number, item: any) {
+  if (item.isMastered) {
+    return;
+  }
   hideContents();
   showQuestion();
   coursesStore.toSpecificStatement(index);
@@ -84,13 +99,8 @@ function jumpTo(index: number) {
   display: none;
 }
 
-#container::-webkit-scrollbar {
-  display: none;
-}
-
 #contents.show {
   opacity: 1;
-  /* 刚好显示 12 个题目 */
   height: 24.6rem;
 }
 </style>

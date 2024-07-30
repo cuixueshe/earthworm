@@ -8,6 +8,7 @@ import { CourseModule } from "../course/course.module";
 import { CronJobModule } from "../cron-job/cron-job.module";
 import { GlobalModule } from "../global/global.module";
 import { LogtoModule } from "../logto/logto.module";
+import { MasteredElementModule } from "../mastered-element/mastered-element.module";
 import { MembershipModule } from "../membership/membership.module";
 import { RankModule } from "../rank/rank.module";
 import { ToolModule } from "../tool/tool.module";
@@ -29,6 +30,7 @@ import { UserModule } from "../user/user.module";
     CronJobModule,
     CourseHistoryModule,
     MembershipModule,
+    MasteredElementModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: "single",

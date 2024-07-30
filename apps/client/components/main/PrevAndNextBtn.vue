@@ -2,7 +2,7 @@
   <div class="absolute flex w-full items-center justify-between">
     <div class="h-12 w-12">
       <button
-        v-show="courseStore.statementIndex !== 0"
+        v-show="courseStore.visibleStatementIndex !== 0"
         class="arrow-btn"
         :data-tippy-content="PREV_BTN_TIP"
         @click="goToPreviousQuestion"
@@ -14,10 +14,9 @@
 
     <div class="h-12 w-12">
       <button
-        v-show="courseStore.statementIndex + 1 !== courseStore.totalQuestionsCount"
+        v-show="courseStore.visibleStatementIndex + 1 !== courseStore.visibleStatementsCount"
         class="arrow-btn"
         :data-tippy-content="NEXT_BTN_TIP"
-        totalQuestionsCount
         @click="goToNextQuestion"
         @mouseenter="$lazyTippy"
       >

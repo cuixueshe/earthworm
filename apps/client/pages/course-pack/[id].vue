@@ -8,7 +8,7 @@
       <h2 class="mb-4 text-center text-3xl dark:border-gray-600">
         {{ coursePackStore.currentCoursePack?.title }}
       </h2>
-      <div class="scrollbar-hide h-full">
+      <div class="h-full scrollbar-hide">
         <div
           class="grid h-[79vh] grid-cols-1 justify-start gap-8 overflow-y-auto overflow-x-hidden pb-96 pl-0 pr-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
