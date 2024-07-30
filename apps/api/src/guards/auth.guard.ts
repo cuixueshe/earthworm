@@ -5,16 +5,18 @@ import {
   SetMetadata,
   UnauthorizedException,
 } from "@nestjs/common";
+import { ConfigService } from "@nestjs/config";
 import { Request } from "express";
 import { createRemoteJWKSet, jwtVerify } from "jose";
 
 export const UncheckAuth = () => SetMetadata("uncheck", true);
+export const CheckAdminWithUserId = () => SetMetadata("checkAdminWithUserId", true);
 export const Permissions = (...permissions: string[]) => SetMetadata("permissions", permissions);
 
 @Injectable()
 export class AuthGuard implements CanActivate {
   private jwks: any;
-  constructor() {
+  constructor(private configService: ConfigService) {
     this.jwks = createRemoteJWKSet(new URL("/oidc/jwks", process.env.LOGTO_ENDPOINT));
   }
 
@@ -23,6 +25,7 @@ export class AuthGuard implements CanActivate {
     const token = this.extractTokenFromHeader(request);
     const uncheck = Reflect.getMetadata("uncheck", context.getHandler());
     const permissions = Reflect.getMetadata("permissions", context.getHandler());
+    const checkAdminWithUserId = Reflect.getMetadata("checkAdminWithUserId", context.getHandler());
 
     if (!token && uncheck) {
       request["userId"] = null;
@@ -36,6 +39,11 @@ export class AuthGuard implements CanActivate {
 
       if (permissions) {
         if (!permissions.every((scope) => scopes.includes(scope))) {
+          throw new UnauthorizedException();
+        }
+      }
+      if (checkAdminWithUserId) {
+        if (payload.sub !== this.configService.get<string>("ADMIN_USER_ID")) {
           throw new UnauthorizedException();
         }
       }
