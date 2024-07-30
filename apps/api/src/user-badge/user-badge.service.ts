@@ -66,15 +66,6 @@ export class UserBadgeService {
       .returning();
   }
 
-  async grant(userId: string, badgeId: string) {
-    return await this.db.insert(userBadge).values({
-      userId,
-      badgeId,
-      grantType: "manual",
-      read: false,
-    });
-  }
-
   async read(userId: string, badgeId: string) {
     return await this.db
       .update(userBadge)
