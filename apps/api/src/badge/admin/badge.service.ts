@@ -3,6 +3,8 @@ import { and, eq, inArray, like } from "drizzle-orm";
 import { DB, DbType } from "src/global/providers/db.provider";
 
 import { badge, userBadge } from "@earthworm/schema";
+import { CreateBadgeDto, UpdateBadgeDto } from "./dto/create-badge.dto";
+import { SearchBadgeDto } from "./dto/find-badge-condition.dto";
 
 @Injectable()
 export class BadgeService {
@@ -15,7 +17,7 @@ export class BadgeService {
     return this.db.query.badge.findMany();
   }
 
-  findAllByCondition(condition: any) {
+  findAllByCondition(condition: SearchBadgeDto) {
     return this.db.query.badge.findMany({
       where: and(
         eq(badge.enable, condition.enable),
@@ -50,7 +52,7 @@ export class BadgeService {
       .returning();
   }
 
-  add(dto: any) {
+  add(dto: CreateBadgeDto) {
     return this.db.insert(badge).values(dto).returning();
   }
 
@@ -58,7 +60,16 @@ export class BadgeService {
     return this.db.delete(badge).where(inArray(badge.id, badgeIds));
   }
 
-  update(dto: any) {
+  update(dto: UpdateBadgeDto) {
     return this.db.update(badge).set(dto).where(eq(badge.id, dto.id)).returning();
+  }
+
+  async grant(userId: string, badgeId: string) {
+    return await this.db.insert(userBadge).values({
+      userId,
+      badgeId,
+      grantType: "manual",
+      read: false,
+    });
   }
 }
