@@ -1,33 +1,22 @@
 import { defineStore } from "pinia";
 import { computed, ref } from "vue";
 
+import type { MasteredElement, MasteredElementContent } from "~/types/models/mastered-elements";
 import {
   fetchAddMasteredElement,
   fetchGetMasteredElements,
   fetchRemoveMasteredElements,
 } from "~/api/masteredElements";
 
-interface Element {
-  english: string;
-}
-
-interface ElementItem {
-  element: {
-    english: string;
-  };
-  masteredAt: string;
-  id: string;
-}
-
 export const useMasteredElementsStore = defineStore("masteredElements", () => {
-  const masteredElements = ref<ElementItem[]>([]);
+  const masteredElements = ref<MasteredElement[]>([]);
 
   const totalMasteredElementsCount = computed(() => {
     return masteredElements.value.length;
   });
 
-  async function addElement(element: Element) {
-    const result = await fetchAddMasteredElement(element);
+  async function addElement(content: MasteredElementContent) {
+    const result = await fetchAddMasteredElement(content);
     masteredElements.value.unshift(result);
   }
 
@@ -41,7 +30,7 @@ export const useMasteredElementsStore = defineStore("masteredElements", () => {
 
   function checkMastered(english: string) {
     return !!masteredElements.value.find((element) => {
-      return element.element.english.toLowerCase() === english.toLowerCase();
+      return element.content.english.toLowerCase() === english.toLowerCase();
     });
   }
 

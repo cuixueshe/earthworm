@@ -20,7 +20,7 @@
     >
       <div>
         <div class="text-lg font-bold text-purple-800 dark:text-white">
-          {{ item.element.english }}
+          {{ item.content.english }}
         </div>
         <div class="text-purple-600 dark:text-purple-300">
           Added on {{ formatDate(item.masteredAt) }}
@@ -51,7 +51,7 @@ const searchQuery = ref("");
 const fuse = computed(
   () =>
     new Fuse(masteredElementsStore.masteredElements, {
-      keys: ["element.english"],
+      keys: ["content.english"],
       threshold: 0.4,
     }),
 );
@@ -75,6 +75,4 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped>
-/* 可以在这里添加额外的样式 */
-</style>
+<style scoped></style>

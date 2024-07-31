@@ -1,21 +1,32 @@
+import type { MasteredElement, MasteredElementContent } from "~/types/models/mastered-elements";
 import { http } from "./http";
 
-interface ElementItem {
-  element: {
+interface ElementItemApiResponse {
+  content: {
     english: string;
   };
   masteredAt: string;
   id: string;
 }
 
-export async function fetchAddMasteredElement(element: { english: string }) {
-  return await http.post<ElementItem, ElementItem>(`/mastered-elements`, { element });
+export async function fetchAddMasteredElement(content: MasteredElementContent) {
+  const result: MasteredElement = await http.post<ElementItemApiResponse, ElementItemApiResponse>(
+    `/mastered-elements`,
+    {
+      content,
+    },
+  );
+
+  return result;
 }
 
 export async function fetchGetMasteredElements() {
-  return await http.get<{ element: { english: string }[] }, { element: { english: string }[] }>(
-    `/mastered-elements`,
-  );
+  const result: MasteredElement[] = await http.get<
+    ElementItemApiResponse[],
+    ElementItemApiResponse[]
+  >(`/mastered-elements`);
+
+  return result;
 }
 
 export async function fetchRemoveMasteredElements(elementId: string) {
