@@ -95,6 +95,7 @@ function useMastered() {
   const { shortcutKeys } = useShortcutKeyMode();
   const courseStore = useCourseStore();
   const masteredElements = useMasteredElementsStore();
+  const { showQuestion } = useGameMode();
   const { showSummary } = useSummary();
 
   const addLoading = ref(false);
@@ -127,6 +128,7 @@ function useMastered() {
         return;
       }
       courseStore.toNextStatement();
+      showQuestion();
     }
   }
 
