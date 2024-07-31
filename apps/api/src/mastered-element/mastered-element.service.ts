@@ -43,7 +43,7 @@ export class MasteredElementService {
 
     return result.map((item) => ({
       ...item,
-      element: JSON.parse(item.content as string),
+      content: JSON.parse(item.content as string),
     }));
   }
 
