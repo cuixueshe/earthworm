@@ -6,6 +6,6 @@ export const masteredElements = pgTable("mastered_elements", {
     .primaryKey()
     .$defaultFn(() => createId()),
   userId: text("user_id").notNull(),
-  element: jsonb("element").notNull(),
+  content: jsonb("content").notNull(),
   masteredAt: timestamp("mastered_at").defaultNow(),
 });

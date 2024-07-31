@@ -18,7 +18,7 @@ export class MasteredElementController {
   ) {
     return await this.masteredElementService.addMasteredElement(
       user.userId,
-      addMasteredElementDto.element,
+      addMasteredElementDto.content,
     );
   }
 

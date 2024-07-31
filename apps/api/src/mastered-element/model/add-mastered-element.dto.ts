@@ -1,7 +1,7 @@
 import { Type } from "class-transformer";
 import { IsNotEmpty, IsObject, ValidateNested } from "class-validator";
 
-class ElementDto {
+class ContentDto {
   @IsNotEmpty()
   english: string;
 }
@@ -9,6 +9,6 @@ class ElementDto {
 export class AddMasteredElementDto {
   @IsObject()
   @ValidateNested()
-  @Type(() => ElementDto)
-  element: ElementDto;
+  @Type(() => ContentDto)
+  content: ContentDto;
 }
