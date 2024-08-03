@@ -4,7 +4,10 @@
     <div
       class="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-4 text-xs dark:border-gray-700"
     >
-      <div class="w-full overflow-x-auto">
+      <div
+        class="w-full overflow-x-auto"
+        ref="tableContainer"
+      >
         <table
           class="mx-auto mb-2"
           ref="calendarTable"
@@ -79,7 +82,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watchEffect } from "vue";
+import { nextTick, onMounted, ref, watchEffect } from "vue";
 
 import type { CalendarDataItem, EmitsType } from "~/composables/user/calendarGraph";
 import { useCalendarGraph } from "~/composables/user/calendarGraph";
@@ -98,6 +101,7 @@ const props = defineProps<{
 
 const emits = defineEmits<EmitsType>();
 const calendarTable = ref<HTMLTableElement>();
+const tableContainer = ref<HTMLDivElement | null>(null);
 
 const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits, {
   getActivityLevel(item) {
@@ -144,7 +148,16 @@ function formatLearningTime(totalSeconds: number) {
 
 onMounted(() => {
   initTable();
+  scrollAutoToRight();
 });
+
+function scrollAutoToRight() {
+  nextTick(() => {
+    if (tableContainer.value) {
+      tableContainer.value.scrollLeft = tableContainer.value.scrollWidth;
+    }
+  });
+}
 
 watchEffect(() => {
   tbody.value = renderBody(props.data);
