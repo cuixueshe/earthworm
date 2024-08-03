@@ -4,6 +4,7 @@
 
 @font-face {
   font-family: "CustomFont";
+  font-display: swap;
   src: url("../font/Nunito/Nunito-Bold.ttf") format("truetype");
   /* 添加其他字体格式（可选） */
 }
