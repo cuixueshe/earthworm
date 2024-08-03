@@ -3,7 +3,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ref } from "vue";
 
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
-import { fetchAddMasteredElement, fetchGetMasteredElements } from "~/api/masteredElements";
+import { fetchAddMasteredElement, fetchGetMasteredElements } from "~/api/mastered-elements";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { isAuthenticated } from "~/services/auth";
 import { useMasteredElementsStore } from "~/store/masteredElements";
@@ -11,7 +11,7 @@ import { useCourseStore } from "../course";
 import { useStatement } from "../statement";
 
 vi.mock("~/api/course");
-vi.mock("~/api/masteredElements");
+vi.mock("~/api/mastered-elements");
 vi.mock("~/services/auth");
 vi.mock("~/composables/courses/activeCourse");
 

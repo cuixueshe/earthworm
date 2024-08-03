@@ -1,17 +1,17 @@
 import { defineStore } from "pinia";
 import { ref, watch } from "vue";
 
-import type { ProgressRankResponse, RankingItemResponse, RankingSelfResponse } from "~/api/rank";
+import type { ProgressRank, RankingItem, RankingSelf } from "~/types";
 import { fetchProgressRank } from "~/api/rank";
 import Message from "~/components/main/Message/useMessage";
 
-let rankingCache: Record<string, ProgressRankResponse> = {};
+let rankingCache: Record<string, ProgressRank> = {};
 export function cacheRanking() {
   function cleanRankingCache() {
     rankingCache = {};
   }
 
-  function saveRankingCache(key: string, value: ProgressRankResponse) {
+  function saveRankingCache(key: string, value: ProgressRank) {
     rankingCache[key] = value;
   }
 
@@ -38,8 +38,8 @@ export const useRanking = defineStore("ranking", () => {
   const rankModal = ref(false); // 需要作用于不同页面
   const isLoading = ref(false);
   const currentPeriod = ref<string>("weekly");
-  const rankingList = ref<RankingItemResponse[]>([]);
-  const rankingSelf = ref<RankingSelfResponse | null>(null);
+  const rankingList = ref<RankingItem[]>([]);
+  const rankingSelf = ref<RankingSelf | null>(null);
   const rankingPeriodList = [
     {
       label: "周排行",
@@ -66,7 +66,7 @@ export const useRanking = defineStore("ranking", () => {
     saveRankingCache(currentPeriod.value, res);
   });
 
-  function updateRankingList(res: ProgressRankResponse) {
+  function updateRankingList(res: ProgressRank) {
     rankingList.value = res.list;
     rankingSelf.value = res.self;
   }

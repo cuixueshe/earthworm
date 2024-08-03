@@ -1,16 +1,38 @@
-import type { SetupUserApiResponse, User, UserApiResponse } from "~/types";
+import type { MembershipType, SetupUser, User } from "~/types";
 import { fetchUserInfo } from "~/services/auth";
 import { http } from "./http";
+import { getHttp } from "./newHttp";
+
+export interface SetupUserApiResponse {
+  avatar: string;
+  username: string;
+}
+
+export interface UserApiResponse {
+  membership: {
+    details: {
+      endDate: string;
+      type: MembershipType;
+      startDate: string;
+    } | null;
+    isMember: boolean;
+  };
+}
 
 export async function fetchSetupNewUser(data: { username: string; avatar: string }) {
-  return await http.post<SetupUserApiResponse, SetupUserApiResponse>("/user/setup", data);
+  const http = getHttp();
+  return (await http<SetupUserApiResponse>("/user/setup", {
+    method: "post",
+    body: data,
+  })) as SetupUser;
 }
 
 export async function fetchCurrentUser() {
+  const http = getHttp();
   // 这里必须在 client 获取 user info
   // 他会触发 token 的刷新
   const logtoUserInfo = await fetchUserInfo();
-  const extraInfo = await http.get<UserApiResponse, UserApiResponse>("/user");
+  const extraInfo = await http<UserApiResponse>("/user", { method: "get" });
 
   return {
     ...logtoUserInfo,

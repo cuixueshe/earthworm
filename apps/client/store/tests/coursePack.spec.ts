@@ -1,14 +1,13 @@
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { Course } from "../course";
-import type { CoursePackResponse } from "~/api/coursePack";
-import { fetchCourseHistory } from "~/api/courseHistory";
-import { fetchCoursePack } from "~/api/coursePack";
+import type { Course, CoursePack } from "~/types";
+import { fetchCourseHistory } from "~/api/course-history";
+import { fetchCoursePack } from "~/api/course-pack";
 import { useCoursePackStore } from "../coursePack";
 
-vi.mock("~/api/coursePack");
-vi.mock("~/api/courseHistory");
+vi.mock("~/api/course-pack");
+vi.mock("~/api/course-history");
 
 describe("course pack store", () => {
   beforeEach(() => {
@@ -16,24 +15,34 @@ describe("course pack store", () => {
   });
 
   it("should ", async () => {
-    const coursePack: CoursePackResponse = {
+    const coursePack: CoursePack = {
       id: "coursePackId",
       title: "课程包1",
       description: "这是一个课程包",
       isFree: true,
       courses: [],
+      cover: "",
     };
 
     const firstCourse: Course = {
       id: "1",
       title: "第一课",
+      description: "",
+      video: "",
       order: 1,
       coursePackId: coursePack.id,
       completionCount: 0,
       statementIndex: 0,
       statements: [
-        { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
-        { id: "2", order: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
+        { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/", isMastered: false },
+        {
+          id: "2",
+          order: 2,
+          english: "like",
+          chinese: "喜欢",
+          soundmark: "/laɪk/",
+          isMastered: false,
+        },
       ],
     };
 
@@ -41,12 +50,21 @@ describe("course pack store", () => {
       id: "2",
       title: "第二课",
       order: 2,
+      description: "",
+      video: "",
       coursePackId: coursePack.id,
       completionCount: 0,
       statementIndex: 0,
       statements: [
-        { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/" },
-        { id: "2", order: 2, english: "like", chinese: "喜欢", soundmark: "/laɪk/" },
+        { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/", isMastered: false },
+        {
+          id: "2",
+          order: 2,
+          english: "like",
+          chinese: "喜欢",
+          soundmark: "/laɪk/",
+          isMastered: false,
+        },
       ],
     };
 

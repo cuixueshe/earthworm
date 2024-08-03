@@ -18,7 +18,7 @@
 import { onMounted, ref } from "vue";
 
 import { fetchCurrentUser } from "~/api/user";
-import { fetchTodayLearningTime } from "~/api/userLearningActivity";
+import { fetchTodayLearningTime } from "~/api/user-learning-activity";
 import { useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
 import { useLearningTimeTracker } from "./composables/main/learningTimeTracker";

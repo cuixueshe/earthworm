@@ -6,7 +6,7 @@ import {
   fetchAddMasteredElement,
   fetchGetMasteredElements,
   fetchRemoveMasteredElements,
-} from "~/api/masteredElements";
+} from "~/api/mastered-elements";
 
 export const useMasteredElementsStore = defineStore("masteredElements", () => {
   const masteredElements = ref<MasteredElement[]>([]);

@@ -1,6 +1,6 @@
 import { ref } from "vue";
 
-import { fetchAllLearningTime, fetchTotalLearningTime } from "~/api/userLearningActivity";
+import { fetchAllLearningTime, fetchTotalLearningTime } from "~/api/user-learning-activity";
 import { type UserLearningDailyTime } from "~/types/models/user-learning-activity";
 
 const learningDailyTimeList = ref<UserLearningDailyTime[]>([]);

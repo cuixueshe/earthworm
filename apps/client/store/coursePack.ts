@@ -1,21 +1,13 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
-import type { CoursePackResponse, CoursePacksResponse } from "~/api/coursePack";
-import { fetchCourseHistory } from "~/api/courseHistory";
-import { fetchCoursePack, fetchCoursePacks } from "~/api/coursePack";
-
-export interface CoursePack {
-  id: string;
-  order: number;
-  title: string;
-  description: string;
-  isFree: boolean;
-}
+import type { CoursePack, CoursePacksItem } from "~/types";
+import { fetchCourseHistory } from "~/api/course-history";
+import { fetchCoursePack, fetchCoursePacks } from "~/api/course-pack";
 
 export const useCoursePackStore = defineStore("course-pack", () => {
-  const coursePacks = ref<CoursePacksResponse>([]);
-  const currentCoursePack = ref<CoursePackResponse>();
+  const coursePacks = ref<CoursePacksItem[]>([]);
+  const currentCoursePack = ref<CoursePack>();
 
   async function setupCoursePacks() {
     const res = await fetchCoursePacks();

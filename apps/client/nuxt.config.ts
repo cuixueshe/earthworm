@@ -42,9 +42,10 @@ export default defineNuxtConfig({
     "@hypernym/nuxt-anime",
     "radix-vue/nuxt",
   ],
-  plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts"],
+  plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts", "~/plugins/http.ts"],
   runtimeConfig: {
     public: {
+      apiBase: process.env.API_BASE || "",
       endpoint: process.env.LOGTO_ENDPOINT || "",
       appId: process.env.LOGTO_APP_ID || "",
       backendEndpoint: process.env.BACKEND_ENDPOINT || "",

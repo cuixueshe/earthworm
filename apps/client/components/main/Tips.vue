@@ -3,7 +3,7 @@
     <div class="z-10 hidden items-center justify-center min-[780px]:flex">
       <button
         v-for="keybinding in keybindings"
-        @click="keybinding.eventFn"
+        @click="keybinding.eventFn && keybinding.eventFn"
         class="btn btn-ghost"
       >
         <div class="flex items-center justify-center gap-2 text-center">

@@ -1,29 +1,29 @@
 import { createPinia, setActivePinia } from "pinia";
 import { afterAll, beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { ProgressRankResponse } from "~/api/rank";
+import type { ProgressRank } from "~/types";
 import { fetchProgressRank } from "~/api/rank";
 import { cacheRanking, useRanking } from "../rankingList";
 
-const weeklyList: ProgressRankResponse = {
+const weeklyList: ProgressRank = {
   list: [{ username: "user1", count: 1 }],
   self: { username: "user1", count: 1, rank: 1 },
   period: "weekly",
 };
 
-const monthlyList: ProgressRankResponse = {
+const monthlyList: ProgressRank = {
   list: [{ username: "user2", count: 2 }],
   self: { username: "user2", count: 2, rank: 1 },
   period: "monthly",
 };
 
-const yearlyList: ProgressRankResponse = {
+const yearlyList: ProgressRank = {
   list: [{ username: "user3", count: 3 }],
   self: { username: "user3", count: 3, rank: 1 },
   period: "yearly",
 };
 
-function rankList(period: string): ProgressRankResponse {
+function rankList(period: string): ProgressRank {
   return period === "weekly" ? weeklyList : period === "monthly" ? monthlyList : yearlyList;
 }
 
@@ -119,7 +119,7 @@ describe("rank list", () => {
   });
 });
 
-function expectRankPeriod(period: string, periodList: ProgressRankResponse) {
+function expectRankPeriod(period: string, periodList: ProgressRank) {
   const rankingStore = useRanking();
 
   expect(rankingStore.currentPeriod).toBe(period);

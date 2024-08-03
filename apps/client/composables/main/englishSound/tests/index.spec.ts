@@ -26,6 +26,7 @@ describe("useCurrentStatementEnglishSound", () => {
       english: "I",
       soundmark: "/I/",
       chinese: "我",
+      isMastered: false,
     };
 
     vi.clearAllMocks();
@@ -50,6 +51,7 @@ describe("useCurrentStatementEnglishSound", () => {
       english: "like",
       soundmark: "/like/",
       chinese: "喜欢",
+      isMastered: false,
     };
     await vi.advanceTimersToNextTimerAsync();
 
@@ -66,6 +68,7 @@ describe("useCurrentStatementEnglishSound", () => {
       english: "I",
       soundmark: "/I/",
       chinese: "我",
+      isMastered: false,
     };
 
     expect(updateSource).toHaveBeenCalledTimes(1);

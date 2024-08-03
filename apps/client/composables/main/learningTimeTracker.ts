@@ -1,6 +1,6 @@
 import { ref } from "vue";
 
-import { updateDailyLearningDailyTotalTime } from "~/api/userLearningActivity";
+import { updateDailyLearningDailyTotalTime } from "~/api/user-learning-activity";
 import { useUserStore } from "~/store/user";
 
 const totalSeconds = ref(0);

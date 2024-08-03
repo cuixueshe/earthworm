@@ -1,38 +1,12 @@
 import { defineStore } from "pinia";
 import { computed, ref, watchEffect } from "vue";
 
-import type { CoursePack } from "./coursePack";
+import type { Course, Statement } from "~/types";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { isAuthenticated } from "~/services/auth";
 import { useMasteredElementsStore } from "~/store/masteredElements";
 import { useStatement } from "./statement";
-
-export interface Statement {
-  id: string;
-  order: number;
-  chinese: string;
-  english: string;
-  soundmark: string;
-  isMastered: boolean;
-}
-
-export interface CourseIdentifier {
-  coursePackId: CoursePack["id"];
-  courseId: Course["id"];
-}
-
-export interface Course {
-  id: string;
-  title: string;
-  description: string;
-  order: number;
-  statements: Statement[];
-  coursePackId: CoursePack["id"];
-  completionCount: number;
-  statementIndex: number;
-  video: string;
-}
 
 export const useCourseStore = defineStore("course", () => {
   const currentCourse = ref<Course>();

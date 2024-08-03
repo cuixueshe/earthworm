@@ -3,8 +3,8 @@ import type { Ref } from "vue";
 import { debounce } from "lodash-es";
 import { ref, watch } from "vue";
 
-import type { Course } from "./course";
-import { fetchUpdateCourseProgress } from "~/api/userCourseProgress";
+import type { Course } from "~/types";
+import { fetchUpdateCourseProgress } from "~/api/user-course-progress";
 import { isAuthenticated } from "~/services/auth";
 
 const DEBOUNCE_TIME = 5000;

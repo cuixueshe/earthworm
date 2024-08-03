@@ -1,14 +1,49 @@
-import type { CoursePack } from "~/store/coursePack";
-import { type Course } from "~/store/course";
-import { http } from "./http";
+import { type Course } from "~/types";
+import { getHttp } from "./newHttp";
 
-export async function fetchCourse(coursePackId: CoursePack["id"], courseId: Course["id"]) {
-  return await http.get<Course, Course>(`course-pack/${coursePackId}/courses/${courseId}`);
+export interface StatementApiResponse {
+  id: string;
+  order: number;
+  chinese: string;
+  english: string;
+  soundmark: string;
+  isMastered: boolean;
 }
 
-type CompleteCourseResponse = { nextCourse: Course | undefined };
-export async function fetchCompleteCourse(coursePackId: CoursePack["id"], courseId: Course["id"]) {
-  return await http.post<CompleteCourseResponse, CompleteCourseResponse>(
-    `/course-pack/${coursePackId}/courses/${courseId}/complete`,
+export interface CourseApiResponse {
+  id: string;
+  title: string;
+  description: string;
+  order: number;
+  statements: StatementApiResponse[];
+  coursePackId: string;
+  completionCount: number;
+  statementIndex: number;
+  video: string;
+}
+
+export async function fetchCourse(coursePackId: string, courseId: string) {
+  const http = getHttp();
+  return (await http<CourseApiResponse>(`course-pack/${coursePackId}/courses/${courseId}`, {
+    method: "get",
+  })) as Course;
+}
+
+type CompleteCourseResponse = { nextCourse: CourseApiResponse | undefined };
+export async function fetchCompleteCourse(coursePackId: string, courseId: string) {
+  const http = getHttp();
+  return transformerFetchCompleteCourse(
+    await http<CompleteCourseResponse>(
+      `/course-pack/${coursePackId}/courses/${courseId}/complete`,
+      { method: "post" },
+    ),
   );
+}
+
+function transformerFetchCompleteCourse(apiResponse: CompleteCourseResponse): {
+  nextCourse: Course | undefined;
+} {
+  return {
+    nextCourse: apiResponse.nextCourse as Course,
+  };
 }

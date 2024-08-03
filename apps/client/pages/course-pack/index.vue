@@ -28,10 +28,9 @@
 </template>
 
 <script setup lang="ts">
-import { navigateTo } from "#imports";
 import { ref } from "vue";
 
-import type { CoursePack } from "~/store/coursePack";
+import type { CoursePack } from "~/types";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 import { useNavigation } from "~/composables/useNavigation";
 import { useCoursePackStore } from "~/store/coursePack";

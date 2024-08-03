@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { nextTick } from "vue";
 
-import { updateDailyLearningDailyTotalTime } from "~/api/userLearningActivity";
+import { updateDailyLearningDailyTotalTime } from "~/api/user-learning-activity";
 import { useLearningTimeTracker } from "../learningTimeTracker";
 
 vi.mock("~/store/user", () => ({
@@ -10,7 +10,7 @@ vi.mock("~/store/user", () => ({
   })),
 }));
 
-vi.mock("~/api/userLearningActivity", () => ({
+vi.mock("~/api/user-learning-activity", () => ({
   updateDailyLearningDailyTotalTime: vi.fn(),
 }));
 
