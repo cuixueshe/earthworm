@@ -53,10 +53,12 @@ export async function fetchAllLearningTime() {
 /**获取总的学习时长 */
 export async function fetchTotalLearningTime() {
   const http = getHttp();
-  return await http<number>("/user-learning-activities/total", {
+  const result = await http<number>("/user-learning-activities/total", {
     method: "get",
     params: {
       activityType: "daily_total",
     },
   });
+
+  return Number(result);
 }
