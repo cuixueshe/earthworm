@@ -2,7 +2,7 @@
   <HttpErrorProvider>
     <div
       class="h-screen w-screen"
-      v-if="isSetupLoading"
+      v-if="status === 'pending'"
     >
       <Loading />
     </div>
@@ -15,36 +15,22 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { useAsyncData } from "#imports";
 
 import { fetchCurrentUser } from "~/api/user";
-import { fetchTodayLearningTime } from "~/api/user-learning-activity";
 import { useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
-import { useLearningTimeTracker } from "./composables/main/learningTimeTracker";
 import { useUserStore } from "./store/user";
 
 const { initDarkMode } = useDarkMode();
+initDarkMode();
 
-const isSetupLoading = ref(false);
-async function setup() {
-  isSetupLoading.value = true;
-  const userStore = useUserStore();
-
+const userStore = useUserStore();
+const { status } = useAsyncData("initApplication", async () => {
   if (isAuthenticated()) {
     const user = await fetchCurrentUser();
     userStore.initUser(user);
-    // 同步今日的学习总时长
-    const { setupLearningTime } = useLearningTimeTracker();
-    setupLearningTime(await fetchTodayLearningTime());
   }
-  isSetupLoading.value = false;
-}
-
-setup();
-
-onMounted(() => {
-  initDarkMode();
 });
 </script>
 

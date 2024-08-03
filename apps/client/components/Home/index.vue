@@ -52,16 +52,25 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useAsyncData } from "#imports";
 import { ref } from "vue";
 
+import { fetchTodayLearningTime } from "~/api/user-learning-activity";
 import { useLearningDailyTime } from "~/composables/learningDailyTime";
 import { type CalendarDataItem } from "~/composables/user/calendarGraph";
 import { useUserStore } from "~/store/user";
+import { useLearningTimeTracker } from "../../composables/main/learningTimeTracker";
 
 const userStore = useUserStore();
 const { learningDailyTimeList, learningDailyTotalTime, setupLearningDailyTime } =
   useLearningDailyTime();
 const { toggleYear } = useCalendarGraph();
+
+useAsyncData(async () => {
+  // 同步今日的学习总时长
+  const { setupLearningTime } = useLearningTimeTracker();
+  setupLearningTime(await fetchTodayLearningTime());
+});
 
 function useCalendarGraph() {
   const data = ref<CalendarDataItem[]>([]);
