@@ -27,14 +27,14 @@ export class UserLearningActivityController {
   @UseGuards(AuthGuard)
   @Post()
   async upsertActivity(@User() user: UserEntity, @Body() activityData: UpsertActivityDto) {
-    await this.userLearningActivityService.upsertActivity(
+    const result = await this.userLearningActivityService.upsertActivity(
       user.userId,
       new Date(activityData.date),
       activityData.activityType,
       activityData.duration,
     );
 
-    return true;
+    return result;
   }
 
   @UseGuards(AuthGuard)

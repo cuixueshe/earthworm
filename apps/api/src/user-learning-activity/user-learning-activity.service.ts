@@ -45,6 +45,8 @@ export class UserLearningActivityService {
           updatedAt: new Date(),
         },
       });
+
+    return true;
   }
 
   async getDailyTotalTime(userId: string, activityType: string, startDate?: Date, endDate?: Date) {
