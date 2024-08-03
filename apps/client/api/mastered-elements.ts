@@ -1,5 +1,5 @@
 import type { MasteredElement, MasteredElementContent } from "~/types";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 interface ElementItemApiResponse {
   content: {

@@ -1,5 +1,5 @@
 import type { ProgressRank } from "~/types/models/rank";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export type RankingSelfApiResponse = {
   username: string;

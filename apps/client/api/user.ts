@@ -1,7 +1,6 @@
 import type { MembershipType, SetupUser, User } from "~/types";
 import { fetchUserInfo } from "~/services/auth";
-import { http } from "./http";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export interface SetupUserApiResponse {
   avatar: string;

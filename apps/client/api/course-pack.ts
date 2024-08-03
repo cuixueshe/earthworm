@@ -1,7 +1,6 @@
 import type { CourseApiResponse } from "./course";
 import type { CoursePack, CoursePacksItem } from "~/types";
-import { http } from "./http";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export type CoursePacksItemApiResponse = {
   id: string;
@@ -28,7 +27,8 @@ export async function fetchCoursePacks() {
 }
 
 export async function fetchCoursePack(coursePackId: string) {
-  return (await http.get<CoursePackApiResponse, CoursePackApiResponse>(
-    `/course-pack/${coursePackId}`,
-  )) as CoursePack;
+  const http = getHttp();
+  return (await http<CoursePackApiResponse>(`/course-pack/${coursePackId}`, {
+    method: "get",
+  })) as CoursePack;
 }

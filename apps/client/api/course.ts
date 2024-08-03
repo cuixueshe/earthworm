@@ -1,5 +1,5 @@
 import { type Course } from "~/types";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export interface StatementApiResponse {
   id: string;

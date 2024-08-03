@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { injectHttpStatusErrorHandler } from "~/api/http";
+import { injectHttpStatusErrorHandler } from "~/api/http.js";
 import Message from "~/components/main/Message/useMessage";
 import { signIn } from "~/services/auth";
 

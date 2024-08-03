@@ -1,5 +1,5 @@
 import type { CourseHistory } from "~/types";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export interface CourseHistoryApiResponse {
   courseId: string;

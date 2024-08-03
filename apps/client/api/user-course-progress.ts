@@ -1,5 +1,5 @@
 import type { UserProgress, UserRecentCoursePack } from "~/types";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export interface UserProgressApiResponse {
   courseId: string;

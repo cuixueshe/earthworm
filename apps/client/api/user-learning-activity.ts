@@ -1,5 +1,5 @@
 import type { UserLearningDailyTime } from "~/types/models/user-learning-activity";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export interface LearningTimeApiResponse {
   date: string;

@@ -1,5 +1,5 @@
 import type { DailySentence } from "~/types";
-import { getHttp } from "./newHttp";
+import { getHttp } from "./http";
 
 export interface DailySentenceApiResponse {
   zh: string;
