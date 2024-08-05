@@ -36,19 +36,23 @@ export function isWord(content: string) {
   return /[a-zA-Z0-9]/.test(content);
 }
 
+// let mode: Mode = Mode.Input;
+let mode = ref<Mode>(Mode.Input);
+let currentEditWord: Word;
+const userInputWords = reactive<Word[]>([]);
+
 export function useInput({
   source,
   setInputCursorPosition,
   getInputCursorPosition,
   inputChangedCallback,
 }: InputOptions) {
-  let mode: Mode = Mode.Input;
-  let currentEditWord: Word;
-
-  const userInputWords = reactive<Word[]>([]);
-
-  setupUserInputWords();
-  updateActiveWord(getInputCursorPosition());
+  function initialize() {
+    mode.value = Mode.Input;
+    userInputWords.length = 0;
+    setupUserInputWords();
+    updateActiveWord(getInputCursorPosition());
+  }
 
   function setInputValue(val: string) {
     inputValue.value = val;
@@ -205,38 +209,38 @@ export function useInput({
   }
 
   function submitAnswer(correctCallback?: () => void, wrongCallback?: () => void) {
-    if (mode === Mode.Fix) return;
+    if (mode.value === Mode.Fix) return;
     resetAllWordActive();
     markIncorrectWord();
 
     if (checkWordCorrect()) {
-      mode = Mode.Input;
+      mode.value = Mode.Input;
       correctCallback?.(); // 调用输入正确的回调
       inputValue.value = "";
     } else {
-      mode = Mode.Fix;
+      mode.value = Mode.Fix;
       wrongCallback?.(); // 调用输入错误的回调
     }
   }
 
   async function fixFirstIncorrectWord() {
-    if (mode === Mode.Fix) {
-      mode = Mode.Fix_Input;
+    if (mode.value === Mode.Fix) {
+      mode.value = Mode.Fix_Input;
 
       await clearNextIncorrectWord(getFirstIncorrectWord()!);
     }
   }
 
   async function fixNextIncorrectWord() {
-    if (mode === Mode.Fix_Input) {
+    if (mode.value === Mode.Fix_Input) {
       await clearNextIncorrectWord(findNextIncorrectWordNew()!);
     }
   }
 
   async function fixIncorrectWord() {
-    if (mode === Mode.Fix) {
+    if (mode.value === Mode.Fix) {
       await fixFirstIncorrectWord();
-    } else if (mode === Mode.Fix_Input) {
+    } else if (mode.value === Mode.Fix_Input) {
       await fixNextIncorrectWord();
     }
   }
@@ -302,7 +306,7 @@ export function useInput({
     }
 
     // Fix_Input/Input 下启用空格提交 且 在最后一个单词位置
-    if (mode !== Mode.Fix && e.code === "Space" && lastWordIsActive()) {
+    if (mode.value !== Mode.Fix && e.code === "Space" && lastWordIsActive()) {
       e.preventDefault();
       e.stopPropagation(); // 阻止事件冒泡
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
@@ -311,7 +315,7 @@ export function useInput({
 
     // Fix 模式下 允许用户按下任意键去修改第一个错误的单词
     // 并且按下的这个键直接上屏
-    if (mode === Mode.Fix) {
+    if (mode.value === Mode.Fix) {
       if (e.code === "Space" || e.code === "Backspace") {
         e.preventDefault();
       }
@@ -321,7 +325,7 @@ export function useInput({
     }
 
     // Fix_Input 下启用空格提交 且 在最后一个错误单词位置
-    if (mode === Mode.Fix_Input && e.code === "Space" && isLastIncorrectWord()) {
+    if (mode.value === Mode.Fix_Input && e.code === "Space" && isLastIncorrectWord()) {
       e.preventDefault();
       e.stopPropagation();
       handleSpaceSubmitAnswer(options?.useSpaceSubmitAnswer);
@@ -329,7 +333,7 @@ export function useInput({
     }
 
     // Fix_Input 模式下当前编辑单词为空时，启用退格删除上一个错误单词
-    if (mode === Mode.Fix_Input && e.code === "Backspace" && isEmptyOfCurrentEditWord()) {
+    if (mode.value === Mode.Fix_Input && e.code === "Backspace" && isEmptyOfCurrentEditWord()) {
       e.preventDefault();
       activePreviousIncorrectWord();
       inputChangedCallback?.(e);
@@ -339,7 +343,7 @@ export function useInput({
     // 空格修复单词
     // Fix → 定位到第一个错误单词并清除
     // Fix_Input → 定位到下一个错误单词并清除
-    if (mode !== Mode.Input && e.code === "Space") {
+    if (mode.value !== Mode.Input && e.code === "Space") {
       e.preventDefault();
       fixIncorrectWord();
       inputChangedCallback?.(e);
@@ -351,13 +355,17 @@ export function useInput({
 
   function resetUserInputWords() {
     // 避免在 Fix 模式下重置导致用户不能输入
-    mode = Mode.Input;
+    mode.value = Mode.Input;
     inputValue.value = "";
     userInputWords.splice(0, userInputWords.length);
   }
 
+  function isFixInputMode() {
+    return mode.value === Mode.Fix_Input;
+  }
+
   function isFixMode() {
-    return mode === Mode.Fix;
+    return mode.value === Mode.Fix;
   }
 
   function findWordById(id: number) {
@@ -374,7 +382,9 @@ export function useInput({
     fixIncorrectWord,
     fixFirstIncorrectWord,
     resetUserInputWords,
+    isFixInputMode,
     isFixMode,
     findWordById,
+    initialize,
   };
 }

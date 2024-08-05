@@ -3,7 +3,7 @@
     <div class="z-10 hidden items-center justify-center min-[780px]:flex">
       <button
         v-for="keybinding in keybindings"
-        @click="keybinding.eventFn && keybinding.eventFn"
+        @click="keybinding.eventFn"
         class="btn btn-ghost"
       >
         <div class="flex items-center justify-center gap-2 text-center">
@@ -35,53 +35,58 @@ import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useMasteredElementsStore } from "~/store/masteredElements";
 import { cancelShortcut, parseShortcutKeys, registerShortcut } from "~/utils/keyboardShortcuts";
+import { useAnswer } from "./QuestionInput/useAnswer";
+import { useWrapperQuestionInput } from "./QuestionInput/useWrapperQuestionInput";
 
+const { toggleAnswerTip, isAnswerTip } = useAnswerTip();
 const { shortcutKeys } = useShortcutKeyMode();
 const { playSound } = usePlaySound(shortcutKeys.value.sound);
-const { toggleGameMode } = useShowAnswer(shortcutKeys.value.answer);
 const { handleMastered } = useMastered();
-
-const answerTipText = computed(() => {
-  let text = "";
-  const { isAnswer } = useGameMode();
-  const { isAnswerTip } = useAnswerTip();
-  if (isAnswer()) {
-    text = "再来一次";
-  } else {
-    if (isAnswerTip()) {
-      text = "隐藏答案";
-    } else {
-      text = "显示答案";
-    }
-  }
-  return text;
-});
-
-const spaceTipText = computed(() => {
-  const { isAnswer } = useGameMode();
-  if (isAnswer()) {
-    return "下一题";
-  } else {
-    return "修复错误单词";
-  }
-});
+const { goToNextQuestion } = useAnswer();
+const { showQuestion, isQuestion } = useGameMode();
+const { submitAnswer } = useWrapperQuestionInput();
+useShowAnswer(shortcutKeys.value.answer);
 
 const keybindings = computed(() => {
-  return [
+  const questionItems = [
+    {
+      keys: "Enter",
+      text: "提交",
+      eventFn: () => {
+        submitAnswer();
+      },
+    },
+    {
+      keys: shortcutKeys.value.answer,
+      text: isAnswerTip() ? "隐藏答案" : "显示答案",
+      eventFn: () => {
+        toggleAnswerTip();
+      },
+    },
+  ];
+
+  const answerItems = [
+    {
+      keys: "Enter",
+      text: "下一题",
+      eventFn: () => {
+        goToNextQuestion();
+      },
+    },
+    {
+      keys: shortcutKeys.value.answer,
+      text: "再来一次",
+      eventFn: () => {
+        showQuestion();
+      },
+    },
+  ];
+
+  const normalItems = [
     {
       keys: shortcutKeys.value.sound,
       text: "播放发音",
       eventFn: playSound,
-    },
-    {
-      keys: shortcutKeys.value.answer,
-      text: answerTipText.value,
-      eventFn: toggleGameMode,
-    },
-    {
-      keys: "Space",
-      text: spaceTipText.value,
-      eventFn: null,
     },
     {
       keys: shortcutKeys.value.mastered,
@@ -89,6 +94,16 @@ const keybindings = computed(() => {
       eventFn: handleMastered,
     },
   ];
+
+  const resultItems: any = [...normalItems];
+
+  if (isQuestion()) {
+    resultItems.push(...questionItems);
+  } else {
+    resultItems.push(...answerItems);
+  }
+
+  return resultItems;
 });
 
 function useMastered() {
@@ -167,9 +182,6 @@ function usePlaySound(key: string) {
 }
 
 function useShowAnswer(key: string) {
-  const { showQuestion } = useGameMode();
-  const { showAnswerTip, hiddenAnswerTip } = useAnswerTip();
-
   onMounted(() => {
     registerShortcut(key, handleShowAnswer);
   });
@@ -180,32 +192,16 @@ function useShowAnswer(key: string) {
 
   function handleShowAnswer(e: KeyboardEvent) {
     e.preventDefault();
-    toggleGameMode();
-  }
-
-  function toggleGameMode() {
     // NOTE: registerShortcut 事件会记住注册时的面板状态，所以这里要重新获取下面板信息
     const { showModal } = useSummary();
-    if (showModal.value) {
-      // 结算面板不做切换处理
-      return;
-    }
+    if (showModal.value) return;
 
     const { isAnswer } = useGameMode();
-    const { isAnswerTip } = useAnswerTip();
     if (isAnswer()) {
       showQuestion();
     } else {
-      if (isAnswerTip()) {
-        hiddenAnswerTip();
-      } else {
-        showAnswerTip();
-      }
+      toggleAnswerTip();
     }
   }
-
-  return {
-    toggleGameMode,
-  };
 }
 </script>

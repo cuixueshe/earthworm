@@ -40,17 +40,17 @@ import { computed, onMounted, onUnmounted } from "vue";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { usePlayWordSound } from "~/composables/main/englishSound/audio";
 import { useGameMode } from "~/composables/main/game";
-import { useSummary } from "~/composables/main/summary";
 import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+import { useAnswer } from "./QuestionInput/useAnswer";
 
 const courseStore = useCourseStore();
 const { handlePlayWordSound } = usePlayWordSound();
 const { handlePlayEnglishSound } = usePlayEnglishSound();
-const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
+const { goToNextQuestion } = useAnswer();
 
 const words = computed(() => courseStore.currentStatement?.english.split(" "));
 
@@ -88,15 +88,5 @@ function registerShortcutKeyForNextQuestion() {
     cancelShortcut(" ", handleKeydown);
     cancelShortcut("enter", handleKeydown);
   });
-}
-
-function goToNextQuestion() {
-  if (courseStore.isAllDone()) {
-    showSummary();
-    return;
-  }
-
-  courseStore.toNextStatement();
-  showQuestion();
 }
 </script>

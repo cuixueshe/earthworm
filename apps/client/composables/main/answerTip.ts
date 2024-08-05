@@ -10,6 +10,10 @@ export function useAnswerTip() {
     answerTip.value = false;
   }
 
+  function toggleAnswerTip() {
+    answerTip.value = !answerTip.value;
+  }
+
   const isAnswerTip = () => answerTip.value;
 
   return {
@@ -17,5 +21,6 @@ export function useAnswerTip() {
     showAnswerTip,
     hiddenAnswerTip,
     isAnswerTip,
+    toggleAnswerTip,
   };
 }

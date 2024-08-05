@@ -5,12 +5,12 @@ import errorSoundPath from "~/assets/sounds/error.mp3";
 import rightSoundPath from "~/assets/sounds/right.mp3";
 import typingSoundPath from "~/assets/sounds/typing.mp3";
 
-export function usePlayTipSound() {
-  // 正确提示音
-  const rightAudio = new Audio(rightSoundPath);
-  // 错误提示音
-  const errorAudio = new Audio(errorSoundPath);
+// 正确提示音
+const rightAudio = new Audio(rightSoundPath);
+// 错误提示音
+const errorAudio = new Audio(errorSoundPath);
 
+export function usePlayTipSound() {
   function playRightSound() {
     rightAudio.play();
   }

@@ -67,49 +67,35 @@ import { onMounted, onUnmounted, ref, watch } from "vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
-import { useGameMode } from "~/composables/main/game";
-import { isWord, useInput } from "~/composables/main/question";
-import { useSummary } from "~/composables/main/summary";
-import { useAutoNextQuestion } from "~/composables/user/autoNext";
-import { useErrorTip } from "~/composables/user/errorTip";
-import { useKeyboardSound } from "~/composables/user/sound";
-import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
+import { isWord } from "~/composables/main/question";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { useCourseStore } from "~/store/course";
 import { isWindows } from "~/utils/platform";
 import { getWordWidth, useQuestionInput } from "./questionInputHelper";
-import { usePlayTipSound, useTypingSound } from "./useTypingSound";
+import { useAnswerError } from "./useAnswerError";
+import { useWrapperQuestionInput } from "./useWrapperQuestionInput";
 
 const courseStore = useCourseStore();
-const { inputEl, focusing, focusInput, blurInput, setInputCursorPosition, getInputCursorPosition } =
-  useQuestionInput();
-
-const { showAnswer } = useGameMode();
-const { showSummary } = useSummary();
+const { inputEl, focusing, focusInput, blurInput } = useQuestionInput();
+const {
+  initializeQuestionInput,
+  findWordById,
+  isFixMode,
+  inputValue,
+  submitAnswer,
+  handleKeyboardInput,
+  setInputValue,
+} = useWrapperQuestionInput();
 const { isShowWordsWidth } = useShowWordsWidth();
-const { isUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
-const { isKeyboardSoundEnabled } = useKeyboardSound();
-const { checkPlayTypingSound, playTypingSound } = useTypingSound();
-const { playRightSound, playErrorSound } = usePlayTipSound();
-const { handleAnswerError, resetCloseTip } = answerError();
-const { isAutoNextQuestion } = useAutoNextQuestion();
-const { isShowErrorTip } = useErrorTip();
-
-const { findWordById, inputValue, submitAnswer, setInputValue, handleKeyboardInput, isFixMode } =
-  useInput({
-    source: () => courseStore.currentStatement?.english!,
-    setInputCursorPosition,
-    getInputCursorPosition,
-    inputChangedCallback,
-  });
-const { showAnswerTip, hiddenAnswerTip, isAnswerTip } = useAnswerTip();
+const { toggleAnswerTip, isAnswerTip } = useAnswerTip();
+const { resetCloseTip } = useAnswerError();
+initializeQuestionInput();
+focusInputWhenWIndowFocus();
 
 onMounted(() => {
   focusInput();
   resetCloseTip();
 });
-
-focusInputWhenWIndowFocus();
 
 watch(
   () => inputValue.value,
@@ -149,15 +135,11 @@ function handlePlaySound(e: MouseEvent) {
 
 function handleShowAnswerTip(e: MouseEvent) {
   e.preventDefault();
-  if (isAnswerTip()) {
-    hiddenAnswerTip();
-  } else {
-    showAnswerTip();
-  }
+  toggleAnswerTip();
 }
 
 function handleSubmitAnswer() {
-  submitAnswer(handleAnswerRight, handleAnswerError);
+  submitAnswer();
 }
 
 function getWordsClassNames(index: number) {
@@ -177,12 +159,6 @@ function getWordsClassNames(index: number) {
   return "text-[#20202099] border-b-gray-300 dark:text-gray-300 dark:border-b-gray-400";
 }
 
-function inputChangedCallback(e: KeyboardEvent) {
-  if (isKeyboardSoundEnabled() && checkPlayTypingSound(e)) {
-    playTypingSound();
-  }
-}
-
 // 输入宽度
 function inputWidth(word: string) {
   if (!isShowWordsWidth()) {
@@ -193,48 +169,10 @@ function inputWidth(word: string) {
   return getWordWidth(word);
 }
 
-function answerError() {
-  let wrongTimes = 0;
-
-  function handleAnswerError() {
-    playErrorSound();
-    wrongTimes++;
-    if (isShowErrorTip() && wrongTimes >= 3) {
-      showAnswerTip();
-    }
-  }
-
-  function resetCloseTip() {
-    wrongTimes = 0;
-    hiddenAnswerTip();
-  }
-
-  return {
-    handleAnswerError,
-    resetCloseTip,
-  };
-}
-
-function handleAnswerRight() {
-  courseTimer.timeEnd(String(courseStore.statementIndex)); // 停止当前题目的计时
-  playRightSound();
-
-  if (isAutoNextQuestion()) {
-    // 自动下一题
-    if (courseStore.isAllDone()) {
-      blurInput(); // 失去输入焦点，防止结束时光标仍然在输入框，造成后续结算面板回车事件无法触发
-      showSummary();
-    }
-    courseStore.toNextStatement();
-  } else {
-    showAnswer();
-  }
-}
-
-// 中文输入会导致先触发 handleKeydown
-// 但是这时候字符还没有上屏
-// 就会造成触发 submit answer  导致明明答案正确但是不通过的问题
-// 通过检测是否为输入法 来避免按下 enter 后直接触发 submit answer
+// // 中文输入会导致先触发 handleKeydown
+// // 但是这时候字符还没有上屏
+// // 就会造成触发 submit answer  导致明明答案正确但是不通过的问题
+// // 通过检测是否为输入法 来避免按下 enter 后直接触发 submit answer
 let isComposing = ref(false);
 function handleCompositionStart() {
   isComposing.value = true;
@@ -261,17 +199,11 @@ function handleKeydown(e: KeyboardEvent) {
 
   if (e.code === "Enter" && !isComposing.value) {
     e.stopPropagation();
-    submitAnswer(handleAnswerRight, handleAnswerError);
+    submitAnswer();
     return;
   }
 
-  handleKeyboardInput(e, {
-    useSpaceSubmitAnswer: {
-      enable: isUseSpaceSubmitAnswer(),
-      rightCallback: handleAnswerRight,
-      errorCallback: handleAnswerError,
-    },
-  });
+  handleKeyboardInput(e);
 }
 
 function deletePreviousWordOnWin() {
