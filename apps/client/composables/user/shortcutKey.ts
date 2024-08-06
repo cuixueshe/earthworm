@@ -6,6 +6,7 @@ export enum SHORTCUT_KEY_TYPES {
   SKIP = "skip",
   PREVIOUS = "previous",
   MASTERED = "mastered",
+  PAUSE = "pause",
 }
 export const SHORTCUT_KEYS = "shortcutKeys";
 export const DEFAULT_SHORTCUT_KEYS = {
@@ -14,6 +15,7 @@ export const DEFAULT_SHORTCUT_KEYS = {
   skip: "Ctrl+.",
   previous: "Ctrl+,",
   mastered: "Ctrl+m",
+  pause: "Ctrl+p",
 };
 
 export const KEYBOARD = {

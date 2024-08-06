@@ -17,12 +17,15 @@
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 
 import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
+import { useGamePause } from "~/composables/main/useGamePause";
 import { useGameStore } from "~/store/game";
 
 const { $anime } = useNuxtApp();
 const gameStore = useGameStore();
 
-const { totalSeconds, startTracking, stopTracking } = useLearningTimeTracker();
+const { pauseGame, enableAutoPauseCheck, disableAutoPauseCheck } = useGamePause();
+
+const { totalSeconds, stopTracking } = useLearningTimeTracker();
 const clockIcon = ref(null);
 
 const formattedTime = computed(() => {
@@ -71,8 +74,7 @@ function handleVisibilityChange() {
 
   if (document.hidden) {
     stopTracking();
-  } else {
-    startTracking();
+    pauseGame();
   }
 }
 
@@ -87,10 +89,12 @@ function handleBeforeunload() {
 onMounted(() => {
   document.addEventListener("visibilitychange", handleVisibilityChange);
   window.addEventListener("beforeunload", handleBeforeunload);
+  enableAutoPauseCheck();
 });
 
 onUnmounted(() => {
   document.removeEventListener("visibilitychange", handleVisibilityChange);
   window.removeEventListener("beforeunload", handleBeforeunload);
+  disableAutoPauseCheck();
 });
 </script>

@@ -29,8 +29,8 @@
     <!-- 右侧 -->
     <div class="flex items-center gap-4">
       <div
-        data-tippy-content="暂停游戏"
-        @click="handleGamePause"
+        :data-tippy-content="`暂停游戏 (${shortcutKeys.pause})`"
+        @click="pauseGame"
         @mouseenter="$lazyTippy"
       >
         <span class="clickable-item icon-item i-ph-pause-bold"></span>
@@ -65,36 +65,40 @@
     confirm-btn-text="确认"
     @confirm="handleTipConfirm"
   />
+  {{ showGamePauseModal }}
 
   <MainMessageBox
     v-model:show-modal="showGamePauseModal"
     content="游戏暂停 快点回来！"
     cancelBtnText=""
     confirm-btn-text="继续游戏"
-    @confirm="handleGameResume"
-    @close="handleGameResume"
+    @confirm="resumeGame"
+    @close="resumeGame"
   />
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
+import { useGamePause } from "~/composables/main/useGamePause";
 import { useRanking } from "~/composables/rank/rankingList";
+import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useCourseStore } from "~/store/course";
-import { useGameStore } from "~/store/game";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 import { useContent } from "./Contents/useContents";
 
+const { shortcutKeys } = useShortcutKeyMode();
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
-const gameStore = useGameStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
 const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
-const { showGamePauseModal, handleGameResume, handleGamePause } = useGamePause();
+const { showGamePauseModal, pauseGame, resumeGame } = useGamePause();
+useGamePauseWrapper();
 
 const currentCourseInfo = computed(() => {
   return `${courseStore.currentCourse?.title}（${currentSchedule.value}/${courseStore.visibleStatementsCount}）`;
@@ -113,24 +117,14 @@ const currentPercentage = computed(() => {
   );
 });
 
-function useGamePause() {
-  const showGamePauseModal = ref(false);
+function useGamePauseWrapper() {
+  onMounted(() => {
+    registerShortcut(shortcutKeys.value.pause, pauseGame);
+  });
 
-  function handleGameResume() {
-    showGamePauseModal.value = false;
-    gameStore.resumeGame();
-  }
-
-  function handleGamePause() {
-    showGamePauseModal.value = true;
-    gameStore.pauseGame();
-  }
-
-  return {
-    showGamePauseModal,
-    handleGameResume,
-    handleGamePause,
-  };
+  onUnmounted(() => {
+    cancelShortcut(shortcutKeys.value.pause, pauseGame);
+  });
 }
 
 function useDoAgain() {

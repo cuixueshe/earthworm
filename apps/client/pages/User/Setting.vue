@@ -288,6 +288,10 @@ const shortcutKeyBindList = [
     label: "标记内容已经掌握",
     type: SHORTCUT_KEY_TYPES.MASTERED,
   },
+  {
+    label: "暂停游戏",
+    type: SHORTCUT_KEY_TYPES.PAUSE,
+  },
 ];
 
 onMounted(() => {
