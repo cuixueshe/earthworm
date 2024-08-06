@@ -87,6 +87,7 @@ import { useGamePause } from "~/composables/main/useGamePause";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useCourseStore } from "~/store/course";
+import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 import { useContent } from "./Contents/useContents";
 
@@ -117,12 +118,22 @@ const currentPercentage = computed(() => {
 });
 
 function useGamePauseWrapper() {
+  const gameStore = useGameStore();
+
+  function handleGamePause() {
+    if (gameStore.isGamePaused()) {
+      resumeGame();
+    } else {
+      pauseGame();
+    }
+  }
+
   onMounted(() => {
-    registerShortcut(shortcutKeys.value.pause, pauseGame);
+    registerShortcut(shortcutKeys.value.pause, handleGamePause);
   });
 
   onUnmounted(() => {
-    cancelShortcut(shortcutKeys.value.pause, pauseGame);
+    cancelShortcut(shortcutKeys.value.pause, handleGamePause);
   });
 }
 

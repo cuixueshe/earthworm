@@ -289,7 +289,7 @@ const shortcutKeyBindList = [
     type: SHORTCUT_KEY_TYPES.MASTERED,
   },
   {
-    label: "暂停游戏",
+    label: "暂停游戏/继续游戏",
     type: SHORTCUT_KEY_TYPES.PAUSE,
   },
 ];
