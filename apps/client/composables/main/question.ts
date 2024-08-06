@@ -1,3 +1,5 @@
+import type { WatchStopHandle } from "vue";
+
 import { nextTick, reactive, ref, watchEffect } from "vue";
 
 interface Word {
@@ -36,10 +38,10 @@ export function isWord(content: string) {
   return /[a-zA-Z0-9]/.test(content);
 }
 
-// let mode: Mode = Mode.Input;
-let mode = ref<Mode>(Mode.Input);
+const mode = ref<Mode>(Mode.Input);
 let currentEditWord: Word;
 const userInputWords = reactive<Word[]>([]);
+let stopWatchEffect: WatchStopHandle;
 
 export function useInput({
   source,
@@ -48,6 +50,10 @@ export function useInput({
   inputChangedCallback,
 }: InputOptions) {
   function initialize() {
+    // for test unit
+    // 每次都需要清空 watchEffect 不然调用多次后就报错了
+    // 对于生产环境是不存在这个问题的  因为只会存在调用一次
+    stopWatchEffect && stopWatchEffect();
     mode.value = Mode.Input;
     userInputWords.length = 0;
     setupUserInputWords();
@@ -75,7 +81,7 @@ export function useInput({
   }
 
   function setupUserInputWords() {
-    watchEffect(() => {
+    stopWatchEffect = watchEffect(() => {
       resetUserInputWords();
 
       const english = source();

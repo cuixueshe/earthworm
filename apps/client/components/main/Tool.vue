@@ -65,7 +65,6 @@
     confirm-btn-text="确认"
     @confirm="handleTipConfirm"
   />
-  {{ showGamePauseModal }}
 
   <MainMessageBox
     v-model:show-modal="showGamePauseModal"

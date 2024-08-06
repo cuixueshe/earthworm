@@ -26,6 +26,7 @@ describe("user defined shortcut key", () => {
         answer: "Ctrl+8",
         skip: "Ctrl+.",
         mastered: "Ctrl+m",
+        pause: "Ctrl+p",
       };
 
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(storeShortcutKeys));
@@ -104,7 +105,7 @@ describe("user defined shortcut key", () => {
         [SHORTCUT_KEY_TYPES.SOUND]: "Tab",
       });
       expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
-        `"{"sound":"Tab","answer":"Ctrl+;","skip":"Ctrl+.","previous":"Ctrl+,","mastered":"Ctrl+m"}"`,
+        `"{"sound":"Tab","answer":"Ctrl+;","skip":"Ctrl+.","previous":"Ctrl+,","mastered":"Ctrl+m","pause":"Ctrl+p"}"`,
       );
     });
 
@@ -127,7 +128,7 @@ describe("user defined shortcut key", () => {
         [SHORTCUT_KEY_TYPES.ANSWER]: "Ctrl+s",
       });
       expect(localStorage.getItem(SHORTCUT_KEYS)).toMatchInlineSnapshot(
-        `"{"sound":"Ctrl+'","answer":"Ctrl+s","skip":"Ctrl+.","previous":"Ctrl+,","mastered":"Ctrl+m"}"`,
+        `"{"sound":"Ctrl+'","answer":"Ctrl+s","skip":"Ctrl+.","previous":"Ctrl+,","mastered":"Ctrl+m","pause":"Ctrl+p"}"`,
       );
     });
     it("should be not set successfully with the same shortcut", () => {
