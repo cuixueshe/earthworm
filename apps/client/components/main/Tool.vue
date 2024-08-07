@@ -29,6 +29,7 @@
     <!-- 右侧 -->
     <div class="flex items-center gap-4">
       <div
+        v-if="isAuthenticated()"
         :data-tippy-content="`暂停游戏 (${shortcutKeys.pause})`"
         @click="pauseGame"
         @mouseenter="$lazyTippy"
@@ -86,6 +87,7 @@ import { clearQuestionInput } from "~/composables/main/question";
 import { useGamePause } from "~/composables/main/useGamePause";
 import { useRanking } from "~/composables/rank/rankingList";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useGameStore } from "~/store/game";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
@@ -118,6 +120,9 @@ const currentPercentage = computed(() => {
 });
 
 function useGamePauseWrapper() {
+  // 游客不会显示倒计时  所以暂停功能是不需要的
+  if (!isAuthenticated()) return;
+
   const gameStore = useGameStore();
 
   function handleGamePause() {
