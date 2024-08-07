@@ -38,7 +38,10 @@
           )} `
         }}
       </p>
-      <p class="pl-14 text-base leading-loose text-gray-400">
+      <p
+        v-if="isAuthenticated()"
+        class="pl-14 text-base leading-loose text-gray-400"
+      >
         今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
         <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
       </p>
@@ -129,7 +132,9 @@ watch(showModal, (val) => {
     soundSentence();
     // 延迟一小会放彩蛋
     // 停止计时
-    stopTracking();
+    if (isAuthenticated()) {
+      stopTracking();
+    }
     setTimeout(async () => {
       playConfetti();
     }, 300);
@@ -169,7 +174,9 @@ function useDoAgain() {
     hideSummary();
     showQuestion();
     courseTimer.reset();
-    startTracking();
+    if (isAuthenticated()) {
+      startTracking();
+    }
   }
 
   return {
@@ -192,17 +199,17 @@ function useCourse() {
   async function goToNextCourse() {
     const { showAuthRequireModal } = useAuthRequire();
 
-    if (!haveNextCourse.value) {
-      Message.warning("已经是最后一课 自动帮你跳转到课程列表啦");
-      await delay(handleGoToCourseList, 1500);
-      return;
-    }
-
-    // 无论后续如何处理，都需要先隐藏 Summary 页面
-    hideSummary();
     if (!isAuthenticated()) {
       // 去注册
       showAuthRequireModal();
+      return;
+    }
+
+    hideSummary();
+
+    if (!haveNextCourse.value) {
+      Message.warning("已经是最后一课 自动帮你跳转到课程列表啦");
+      await delay(handleGoToCourseList, 1500);
       return;
     }
 
