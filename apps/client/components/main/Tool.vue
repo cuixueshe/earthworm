@@ -125,7 +125,8 @@ function useGamePauseWrapper() {
 
   const gameStore = useGameStore();
 
-  function handleGamePause() {
+  function handleGamePause(e: KeyboardEvent) {
+    e.preventDefault();
     if (gameStore.isGamePaused()) {
       resumeGame();
     } else {
