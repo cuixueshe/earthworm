@@ -79,6 +79,26 @@ async function buildAndPackage(
   }
 }
 
+async function askForGitHubCommit(version: string, packageName: string): Promise<void> {
+  const { shouldCommit } = await inquirer.prompt<{ shouldCommit: boolean }>([
+    { type: "confirm", name: "shouldCommit", message: "是否要提交到 GitHub？" },
+  ]);
+
+  if (shouldCommit) {
+    try {
+      const commitMessage = `release(${packageName}): v${version}`;
+      await executeCommand(`git add .`);
+      await executeCommand(`git commit -m "${commitMessage}"`);
+      console.log(`已创建 commit: ${commitMessage}`);
+
+      await executeCommand(`git push origin main`);
+      console.log("已成功推送到 GitHub");
+    } catch (error) {
+      console.error("GitHub 操作过程中出错:", error);
+    }
+  }
+}
+
 async function buildClient(): Promise<void> {
   console.log("正在构建 Client...");
   await executeCommand("npm run build:client");
@@ -145,25 +165,7 @@ async function buildClient(): Promise<void> {
     }
   }
 
-  const { shouldCommit } = await inquirer.prompt<{ shouldCommit: boolean }>([
-    { type: "confirm", name: "shouldCommit", message: "是否要提交到 GitHub？" },
-  ]);
-
-  if (shouldCommit) {
-    try {
-      // 1. 创建 commit
-      const commitMessage = `release(client): v${version}`;
-      await executeCommand(`git add .`);
-      await executeCommand(`git commit -m "${commitMessage}"`);
-      console.log(`已创建 commit: ${commitMessage}`);
-
-      // 2. 推送到 GitHub
-      await executeCommand(`git push origin main`);
-      console.log("已成功推送到 GitHub");
-    } catch (error) {
-      console.error("GitHub 操作过程中出错:", error);
-    }
-  }
+  await askForGitHubCommit(version, "client");
 }
 
 async function buildServer(): Promise<void> {
@@ -235,25 +237,7 @@ async function buildServer(): Promise<void> {
     }
   }
 
-  const { shouldCommit } = await inquirer.prompt<{ shouldCommit: boolean }>([
-    { type: "confirm", name: "shouldCommit", message: "是否要提交到 GitHub？" },
-  ]);
-
-  if (shouldCommit) {
-    try {
-      // 1. 创建 commit
-      const commitMessage = `release(server): v${version}`;
-      await executeCommand(`git add .`);
-      await executeCommand(`git commit -m "${commitMessage}"`);
-      console.log(`已创建 commit: ${commitMessage}`);
-
-      // 2. 推送到 GitHub
-      await executeCommand(`git push origin main`);
-      console.log("已成功推送到 GitHub");
-    } catch (error) {
-      console.error("GitHub 操作过程中出错:", error);
-    }
-  }
+  await askForGitHubCommit(version, "server");
 }
 
 interface ZipOptions {
@@ -338,15 +322,19 @@ async function buildGameDataSDK() {
     await executeCommand("pnpm run build");
 
     console.log("正在更新 game-data-sdk 版本...");
-    await executeCommand("npm version patch");
-    console.log("game-data-sdk 版本已更新");
+    const versionOutput = await executeCommand("npm version patch");
+    const version = versionOutput.trim().replace("v", "");
+    console.log(`game-data-sdk 版本已更新到 ${version}`);
 
     try {
       await executeCommand("pnpm run release");
+
       console.log("game-data-sdk 发布成功");
     } catch (error) {
       console.error("game-data-sdk 发布过程中出现错误:", error);
     }
+
+    await askForGitHubCommit(version, "game-data-sdk");
   } finally {
     // 切回原目录
     process.chdir("../..");
@@ -363,8 +351,9 @@ async function buildSchema() {
     await executeCommand("pnpm run build");
 
     console.log("正在更新 schema 版本...");
-    await executeCommand("npm version patch");
-    console.log("schema 版本已更新");
+    const versionOutput = await executeCommand("npm version patch");
+    const version = versionOutput.trim().replace("v", "");
+    console.log(`schema 版本已更新到 ${version}`);
 
     try {
       await executeCommand("pnpm run release");
@@ -372,6 +361,8 @@ async function buildSchema() {
     } catch (error) {
       console.error("schema 发布过程中出现错误:", error);
     }
+
+    await askForGitHubCommit(version, "schema");
   } finally {
     // 切回原目录
     process.chdir("../..");

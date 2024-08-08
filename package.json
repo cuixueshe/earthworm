@@ -38,7 +38,11 @@
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "@types/archiver": "^6.0.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
     "@types/node": "^20.12.7",
+    "@types/semver": "^7.5.8",
     "archiver": "^7.0.1",
     "conventional-changelog-cli": "^4.1.0",
     "dotenv": "^16.3.1",
