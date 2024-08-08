@@ -18,7 +18,7 @@ function executeCommand(command: string): Promise<string> {
         return reject(error);
       }
       if (stderr) {
-        console.error(`标准错误: ${stderr}`);
+        console.log(`${stderr}`);
       }
       console.log(`标准输出: ${stdout}`);
       resolve(stdout);
@@ -60,7 +60,9 @@ function unzipOnServer(filePath: string, serverPath: string): Promise<void> {
   });
 }
 
-async function buildAndPackage(type: "client" | "server" | "game-data-sdk" | "all"): Promise<void> {
+async function buildAndPackage(
+  type: "client" | "server" | "game-data-sdk" | "schema" | "all",
+): Promise<void> {
   if (type === "client" || type === "all") {
     await buildClient();
   }
@@ -70,6 +72,10 @@ async function buildAndPackage(type: "client" | "server" | "game-data-sdk" | "al
 
   if (type === "game-data-sdk" || type === "all") {
     await buildGameDataSDK();
+  }
+
+  if (type === "schema" || type === "all") {
+    await buildSchema();
   }
 }
 
@@ -304,13 +310,13 @@ async function createZip(options: ZipOptions): Promise<void> {
 async function main(): Promise<void> {
   changeToProjectRoot();
   const { buildType } = await inquirer.prompt<{
-    buildType: "client" | "server" | "game-data-sdk" | "all";
+    buildType: "client" | "server" | "game-data-sdk" | "schema" | "all";
   }>([
     {
       type: "list",
       name: "buildType",
       message: "您想要构建什么？",
-      choices: ["client", "server", "game-data-sdk", "all"],
+      choices: ["client", "server", "game-data-sdk", "schema", "all"],
     },
   ]);
 
@@ -331,27 +337,45 @@ async function buildGameDataSDK() {
   try {
     await executeCommand("pnpm run build");
 
-    // 更新 game-data-sdk 版本
     console.log("正在更新 game-data-sdk 版本...");
     await executeCommand("npm version patch");
     console.log("game-data-sdk 版本已更新");
 
-    await executeCommand("pnpm run release");
+    try {
+      await executeCommand("pnpm run release");
+      console.log("game-data-sdk 发布成功");
+    } catch (error) {
+      console.error("game-data-sdk 发布过程中出现错误:", error);
+    }
   } finally {
     // 切回原目录
     process.chdir("../..");
   }
 }
 
-async function loginToRegistry(): Promise<void> {
-  console.log("正在登录私有源...");
-  const { username, password } = await inquirer.prompt([
-    { type: "input", name: "username", message: "请输入私有源用户名:" },
-    { type: "password", name: "password", message: "请输入私有源密码:" },
-  ]);
-  await executeCommand(
-    `npm login --registry=${PRIVATE_REGISTRY} --username=${username} --password=${password}`,
-  );
+async function buildSchema() {
+  const sdkPath = path.resolve(__dirname, "..", "packages", "schema");
+
+  // 切换到 schema 目录
+  process.chdir(sdkPath);
+
+  try {
+    await executeCommand("pnpm run build");
+
+    console.log("正在更新 schema 版本...");
+    await executeCommand("npm version patch");
+    console.log("schema 版本已更新");
+
+    try {
+      await executeCommand("pnpm run release");
+      console.log("schema 发布成功");
+    } catch (error) {
+      console.error("schema 发布过程中出现错误:", error);
+    }
+  } finally {
+    // 切回原目录
+    process.chdir("../..");
+  }
 }
 
 main().catch(console.error);
