@@ -1,13 +1,13 @@
 {
   "name": "@earthworm/game-data-sdk",
-  "version": "1.0.4",
+  "version": "1.0.10",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "env-cmd -f .env.test vitest",
     "build": "tsup",
-    "release": "pnpm publish --registry http://124.223.41.130:4873/"
+    "release": "pnpm publish --registry http://124.223.41.130:4873/ --no-git-checks"
   },
   "keywords": [],
   "author": "cuixiaorui",
