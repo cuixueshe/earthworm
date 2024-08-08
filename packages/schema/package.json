@@ -1,12 +1,13 @@
 {
   "name": "@earthworm/schema",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "cuixiaorui",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "release": "pnpm publish --registry http://124.223.41.130:4873/ --no-git-checks"
   },
   "dependencies": {
     "@paralleldrive/cuid2": "2.2.2",
