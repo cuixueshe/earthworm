@@ -101,6 +101,7 @@ import { useNavigation } from "~/composables/useNavigation";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useCoursePackStore } from "~/store/coursePack";
+import { useGameStore } from "~/store/game";
 import { permitSaveStatement, preventSaveStatement } from "~/store/statement";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
@@ -108,15 +109,15 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const courseStore = useCourseStore();
 const coursePackStore = useCoursePackStore();
 const { gotoCourseList, gotoGame } = useNavigation();
-const { handleGoToCourseList, goToNextCourse, completeCourse, haveNextCourse } = useCourse();
+const { handleGoToCourseList, goToNextCourse, completeCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
 const { showModal, hideSummary } = useSummary();
 const { zhSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
-const { stopTracking, startTracking } = useLearningTimeTracker();
 const { totalMinutes, formattedMinutes } = useTotalLearningTime();
+const gameStore = useGameStore();
 
 watch(showModal, (val) => {
   if (val) {
@@ -132,9 +133,7 @@ watch(showModal, (val) => {
     soundSentence();
     // 延迟一小会放彩蛋
     // 停止计时
-    if (isAuthenticated()) {
-      stopTracking();
-    }
+    gameStore.completeLevel();
     setTimeout(async () => {
       playConfetti();
     }, 300);
@@ -174,9 +173,7 @@ function useDoAgain() {
     hideSummary();
     showQuestion();
     courseTimer.reset();
-    if (isAuthenticated()) {
-      startTracking();
-    }
+    gameStore.startGame();
   }
 
   return {
@@ -243,7 +240,6 @@ function useCourse() {
   return {
     completeCourse,
     goToNextCourse,
-    haveNextCourse,
     handleGoToCourseList,
   };
 }

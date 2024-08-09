@@ -26,9 +26,14 @@ export function useGamePause() {
   }
 
   function pauseGame() {
-    showGamePauseModal.value = true;
-    gameStore.pauseGame();
-    disableAutoPauseCheck();
+    const pauseResult = gameStore.pauseGame();
+    if (pauseResult) {
+      showGamePauseModal.value = true;
+      disableAutoPauseCheck();
+    } else {
+      // 游戏还有其他的状态 比如关卡完成
+      console.log("游戏没开始 暂停不了");
+    }
   }
 
   function resetInactivityTimer() {

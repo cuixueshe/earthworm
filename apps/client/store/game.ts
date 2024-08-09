@@ -8,11 +8,12 @@ enum GameStatus {
   NOT_PLAYED = "not_played",
   STARTED = "started",
   PAUSED = "paused",
+  LEVEL_COMPLETED = "level_completed",
 }
 
 export const useGameStore = defineStore("game", () => {
-  const gameStatus = ref(GameStatus.NOT_PLAYED);
   const { startTracking, stopTracking } = useLearningTimeTracker();
+  const gameStatus = ref<GameStatus>(GameStatus.NOT_PLAYED);
 
   function startGame() {
     gameStatus.value = GameStatus.STARTED;
@@ -34,8 +35,10 @@ export const useGameStore = defineStore("game", () => {
       if (isAuthenticated()) {
         stopTracking();
       }
+      return true;
     } else {
       console.log("Game is not started or already paused");
+      return false;
     }
   }
 
@@ -49,6 +52,18 @@ export const useGameStore = defineStore("game", () => {
       console.log("Game is not paused");
     }
   }
+
+  function completeLevel() {
+    if (gameStatus.value === GameStatus.STARTED) {
+      gameStatus.value = GameStatus.LEVEL_COMPLETED;
+      if (isAuthenticated()) {
+        stopTracking();
+      }
+    } else {
+      console.log("Game is not started so cannot complete level");
+    }
+  }
+
   function isGameNotPlayed() {
     return gameStatus.value === GameStatus.NOT_PLAYED;
   }
@@ -61,14 +76,20 @@ export const useGameStore = defineStore("game", () => {
     return gameStatus.value === GameStatus.PAUSED;
   }
 
+  function isLevelCompleted() {
+    return gameStatus.value === GameStatus.LEVEL_COMPLETED;
+  }
+
   return {
     gameStatus,
     startGame,
     pauseGame,
     resumeGame,
     exitGame,
+    completeLevel,
     isGameNotPlayed,
     isGameStarted,
     isGamePaused,
+    isLevelCompleted,
   };
 });
