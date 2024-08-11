@@ -42,15 +42,7 @@ async function onConfirm() {
 </script>
 
 <template>
-  <UModal
-    :ui="{
-      container: 'items-center',
-      overlay: {
-        background: 'bg-black/75 dark:bg-black/75',
-      },
-      background: 'dark:bg-gray-800',
-    }"
-  >
+  <UModal>
     <div class="flex h-52 flex-col justify-between p-6 text-gray-900 dark:text-white">
       <h2 class="mb-8 text-2xl font-bold">{{ title }}</h2>
       <p class="mb-8 max-w-sm text-base text-gray-700 dark:text-gray-300">

@@ -2,13 +2,6 @@
   <UModal
     v-model="showGamePauseModal"
     @close="handleClose"
-    :ui="{
-      container: 'items-center',
-      overlay: {
-        background: 'bg-black/75 dark:bg-black/75',
-      },
-      background: 'dark:bg-gray-800',
-    }"
   >
     <div class="flex h-52 flex-col justify-between p-6 text-gray-900 dark:text-white">
       <h2 class="mb-8 text-2xl font-bold">游戏暂停</h2>
