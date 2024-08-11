@@ -11,6 +11,7 @@
         <NuxtPage />
       </NuxtLayout>
     </template>
+    <UModals />
   </HttpErrorProvider>
 </template>
 

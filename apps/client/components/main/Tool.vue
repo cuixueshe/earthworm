@@ -60,26 +60,13 @@
     :percentage="currentPercentage"
   />
   <RankRankingList />
-  <MainMessageBox
-    v-model:show-modal="showTipModal"
-    content="是否确认重置当前课程进度？"
-    confirm-btn-text="确认"
-    @confirm="handleTipConfirm"
-  />
-
-  <MainMessageBox
-    v-model:show-modal="showGamePauseModal"
-    content="游戏暂停 快点回来！"
-    cancelBtnText=""
-    confirm-btn-text="继续游戏"
-    @confirm="resumeGame"
-    @close="resumeGame"
-  />
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { useModal } from "#imports";
+import { computed } from "vue";
 
+import Dialog from "~/components/common/Dialog.vue";
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
@@ -89,8 +76,6 @@ import { useRanking } from "~/composables/rank/rankingList";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
-import { useGameStore } from "~/store/game";
-import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 import { useContent } from "./Contents/useContents";
 
 const { shortcutKeys } = useShortcutKeyMode();
@@ -98,9 +83,9 @@ const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
 const { toggleContents } = useContent();
-const { showTipModal, handleDoAgain, handleTipConfirm } = useDoAgain();
-const { showGamePauseModal, pauseGame, resumeGame } = useGamePause();
-useGamePauseWrapper();
+const { handleDoAgain } = useDoAgain();
+const { pauseGame } = useGamePause();
+const modal = useModal();
 
 const currentCourseInfo = computed(() => {
   return `${courseStore.currentCourse?.title}（${currentSchedule.value}/${courseStore.visibleStatementsCount}）`;
@@ -119,48 +104,38 @@ const currentPercentage = computed(() => {
   );
 });
 
-function useGamePauseWrapper() {
-  // 游客不会显示倒计时  所以暂停功能是不需要的
-  if (!isAuthenticated()) return;
-
-  const gameStore = useGameStore();
-
-  function handleGamePause(e: KeyboardEvent) {
-    e.preventDefault();
-    if (gameStore.isGamePaused()) {
-      resumeGame();
-    } else {
-      pauseGame();
-    }
-  }
-
-  onMounted(() => {
-    registerShortcut(shortcutKeys.value.pause, handleGamePause);
-  });
-
-  onUnmounted(() => {
-    cancelShortcut(shortcutKeys.value.pause, handleGamePause);
-  });
-}
-
 function useDoAgain() {
-  const showTipModal = ref(false);
   const { showQuestion } = useGameMode();
 
   function handleDoAgain() {
-    showTipModal.value = true;
+    modal.open(Dialog, {
+      title: "重置进度",
+      content: "是否确认重置当前课程进度？",
+      showCancel: true,
+      showConfirm: true,
+      async onCancel() {
+        setTimeout(() => {
+          focusInput();
+        }, 300);
+      },
+      async onConfirm() {
+        handleTipConfirm();
+      },
+    });
   }
 
   function handleTipConfirm() {
     courseStore.doAgain();
     clearQuestionInput();
-    focusInput();
     showQuestion();
     courseTimer.reset();
+    // dialog 关闭后 自动聚焦 因为关闭有个 200 毫秒的动画 所以需要延迟聚焦 input
+    setTimeout(() => {
+      focusInput();
+    }, 300);
   }
 
   return {
-    showTipModal,
     handleDoAgain,
     handleTipConfirm,
   };

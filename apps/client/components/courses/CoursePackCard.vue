@@ -9,7 +9,7 @@
         :placeholder="[288, 180]"
         width="288"
         height="180"
-        class="absolute inset-0 h-full w-full object-cover"
+        class="inset-0 h-full w-full object-cover"
       />
     </figure>
     <div class="card-body">

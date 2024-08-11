@@ -35,12 +35,11 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/globals.css"],
   modules: [
-    "@nuxtjs/tailwindcss",
+    "@nuxt/ui",
     "@vueuse/nuxt",
-    "@nuxt/image",
     "@nuxt/test-utils/module",
     "@hypernym/nuxt-anime",
-    "radix-vue/nuxt",
+    "@nuxt/image",
   ],
   plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts", "~/plugins/http.ts"],
   runtimeConfig: {

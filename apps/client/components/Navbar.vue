@@ -82,20 +82,16 @@
     v-model:open="isOpenUserMenu"
     @logout="handleLogout"
   />
-  <MainMessageBox
-    v-model:show-modal="isShowModal"
-    content="是否确认退出登录？"
-    confirm-btn-text="确认"
-    @confirm="signOut"
-  />
 </template>
 
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
+import { useModal } from "#imports";
 import { useRuntimeConfig } from "nuxt/app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
+import Dialog from "~/components/common/Dialog.vue";
 import { isAuthenticated, signIn, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
@@ -104,8 +100,8 @@ const runtimeConfig = useRuntimeConfig();
 const route = useRoute();
 const userStore = useUserStore();
 const { y } = useWindowScroll();
+const modal = useModal();
 
-const isShowModal = ref(false);
 const isOpenUserMenu = ref(false);
 
 const SCROLL_THRESHOLD = 8;
@@ -129,7 +125,15 @@ const isStickyNavBar = computed(() =>
 const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
 function handleLogout() {
-  isShowModal.value = true;
+  modal.open(Dialog, {
+    title: "退出登录",
+    content: "是否确认退出登录？",
+    showCancel: true,
+    showConfirm: true,
+    async onConfirm() {
+      signOut();
+    },
+  });
 }
 
 function handleShowUserMenu() {

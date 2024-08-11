@@ -16,12 +16,10 @@ const showGamePauseModal = ref(false);
 export function useGamePause() {
   const courseStore = useCourseStore();
   const gameStore = useGameStore();
-  const { focusInput } = useQuestionInput();
 
   function resumeGame() {
     showGamePauseModal.value = false;
     gameStore.resumeGame();
-    focusInput();
     resetInactivityTimer();
   }
 
