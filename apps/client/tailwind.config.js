@@ -1,5 +1,3 @@
-const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons");
-
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
@@ -51,11 +49,6 @@ export default {
   },
   plugins: [
     require("daisyui"),
-    iconsPlugin({
-      // 配置需要的 icon 包就行（需要安装）
-      // 来这里找 https://icones.js.org/
-      collections: getIconCollections(["ph", "simple-icons"]),
-    }),
     function ({ addComponents, addUtilities }) {
       const buttons = {
         ".tw-btn-blue": {

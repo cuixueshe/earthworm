@@ -18,7 +18,6 @@
     "type-check": "nuxi typecheck"
   },
   "devDependencies": {
-    "@egoist/tailwindcss-icons": "^1.7.4",
     "@hypernym/nuxt-anime": "^2.1.1",
     "@iconify-json/ph": "^1.1.12",
     "@iconify-json/simple-icons": "^1.1.99",
