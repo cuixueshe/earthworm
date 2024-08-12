@@ -41,7 +41,7 @@
           v-for="(item, index) in showMenuOptions"
           :key="item.name"
           @click="item.eventName"
-          class="mb-2 flex w-full items-center rounded-lg p-3 transition-all duration-200 ease-in-out hover:bg-base-200 hover:shadow-md dark:hover:bg-gray-600"
+          class="mb-2 flex w-full items-center rounded-lg p-1 transition-all duration-200 ease-in-out hover:bg-base-200 hover:shadow-md dark:hover:bg-gray-600"
           tabindex="-1"
         >
           <UIcon
