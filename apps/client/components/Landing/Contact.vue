@@ -30,7 +30,10 @@
                 target="_blank"
               >
                 <span class="sr-only">Twitter</span>
-                <span class="icon-link icon-link-gray i-simple-icons-x"></span>
+                <UIcon
+                  name="i-simple-icons-x"
+                  class="icon-link icon-link-gray"
+                ></UIcon>
               </a>
             </li>
             <li>
@@ -39,8 +42,10 @@
                 rel="noreferrer"
                 target="_blank"
               >
-                <span class="sr-only">Telegram</span>
-                <span class="icon-link icon-link-gray i-simple-icons-telegram"></span>
+                <UIcon
+                  name="i-simple-icons-telegram"
+                  class="icon-link icon-link-gray"
+                ></UIcon>
               </a>
             </li>
             <li>
@@ -49,8 +54,10 @@
                 rel="noreferrer"
                 target="_blank"
               >
-                <span class="sr-only">GitHub</span>
-                <span class="icon-link icon-link-gray i-simple-icons-github"></span>
+                <UIcon
+                  name="i-simple-icons-github"
+                  class="icon-link icon-link-gray"
+                ></UIcon>
               </a>
             </li>
           </ul>

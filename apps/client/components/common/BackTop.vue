@@ -4,9 +4,10 @@
     :data-content="route.path === '/' ? 'Back to Top' : 'Go to Home'"
     @click="scrollToTop"
   >
-    <span
-      class="svgIcon i-ph-arrow-up-bold h-5 w-5 fill-black transition-all duration-300 dark:fill-white"
-    ></span>
+    <UIcon
+      name="i-ph-arrow-up-bold"
+      class="svgIcon h-5 w-5 fill-black transition-all duration-300 dark:fill-white"
+    ></UIcon>
   </button>
 </template>
 

@@ -8,10 +8,11 @@
         @click="handlePlayWordSound(word)"
         >{{ word }}</span
       >
-      <span
-        class="i-ph-speaker-simple-high ml-1 inline-block h-7 w-7 cursor-pointer text-gray-500 hover:text-fuchsia-500"
+      <UIcon
+        name="i-ph-speaker-simple-high"
+        class="ml-1 inline-block h-7 w-7 cursor-pointer text-gray-500 hover:text-fuchsia-500"
         @click="handlePlayEnglishSound"
-      ></span>
+      ></UIcon>
     </div>
     <div class="my-6 text-xl text-gray-500">
       {{ courseStore.currentStatement?.soundmark }}

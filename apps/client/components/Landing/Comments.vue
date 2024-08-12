@@ -29,7 +29,10 @@
                     {{ "@" + item.account }}
                   </p>
                 </div>
-                <span class="i-simple-icons-twitter h-6 w-6 self-start text-[#03a9f4]"></span>
+                <UIcon
+                  name="i-simple-icons-twitter"
+                  class="h-6 w-6 self-start text-[#03a9f4]"
+                ></UIcon>
               </div>
               <p class="mt-4 text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                 {{ item.chinese }}
@@ -42,9 +45,10 @@
               <div class="mx-auto my-4"></div>
               <div class="mt-4 flex items-center justify-between text-xs">
                 <div class="flex items-center">
-                  <span
-                    class="i-ph-heart-straight-fill mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
-                  ></span>
+                  <UIcon
+                    name="i-ph-heart-straight-fill"
+                    class="mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
+                  ></UIcon>
                   <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} likes</span>
                 </div>
                 <a

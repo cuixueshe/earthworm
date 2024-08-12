@@ -8,7 +8,10 @@
         @click="goToPreviousQuestion"
         @mouseenter="$lazyTippy"
       >
-        <span class="i-ph-caret-left h-12 w-12"></span>
+        <UIcon
+          name="i-ph-caret-left"
+          class="h-12 w-12"
+        ></UIcon>
       </button>
     </div>
 
@@ -20,7 +23,10 @@
         @click="goToNextQuestion"
         @mouseenter="$lazyTippy"
       >
-        <span class="i-ph-caret-right h-12 w-12"></span>
+        <UIcon
+          name="i-ph-caret-right"
+          class="h-12 w-12"
+        ></UIcon>
       </button>
     </div>
   </div>

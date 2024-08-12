@@ -5,12 +5,14 @@
     <div class="card bg-base-100 shadow-xl">
       <div class="card-body relative">
         <div class="absolute right-2 top-1 mt-0">
-          <button
-            class="h-5 w-5 text-gray-400 outline-none dark:text-gray-300"
+          <UButton
+            color="gray"
+            variant="ghost"
+            icon="i-heroicons-x-mark-20-solid"
             @click="hiddenAnswerTip"
-          >
-            <span class="i-ph-x-bold h-full w-full"></span>
-          </button>
+            tabindex="-1"
+            :ui="{ color: { gray: { ghost: 'dark:hover:bg-gray-600' } } }"
+          />
         </div>
 
         <div class="text-3xl">{{ courseStore.currentStatement?.english }}</div>

@@ -4,10 +4,10 @@
       ref="clockIcon"
       class="mr-1 flex items-center justify-center"
     >
-      <span
-        class="i-ph-alarm-bold"
-        style="width: 30px; height: 30px"
-      ></span>
+      <UIcon
+        name="i-ph-alarm-bold"
+        class="h-8 w-8"
+      ></UIcon>
     </div>
     <p class="text-lg font-bold">{{ formattedTime }}</p>
   </div>

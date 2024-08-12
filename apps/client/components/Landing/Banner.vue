@@ -56,7 +56,10 @@
           <div
             class="absolute flex translate-x-0 items-center justify-center text-purple-600 opacity-100 transition group-hover:-translate-x-6 group-hover:opacity-0"
           >
-            <span class="i-ph-star-fill h-5 w-5"></span>
+            <UIcon
+              name="i-ph-star-fill"
+              class="h-5 w-5"
+            ></UIcon>
           </div>
           <span
             class="bg-gradient-to-r from-purple-600 to-gray-300 bg-clip-text pl-6 font-medium text-transparent"
@@ -65,7 +68,10 @@
           <div
             class="absolute right-0 flex translate-x-12 items-center justify-center text-purple-400 opacity-0 transition group-hover:translate-x-6 group-hover:opacity-100"
           >
-            <span class="i-ph-arrow-right h-5 w-5"></span>
+            <UIcon
+              name="i-ph-arrow-right"
+              class="h-5 w-5"
+            ></UIcon>
           </div>
         </div>
       </a>
