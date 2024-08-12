@@ -262,7 +262,7 @@ docker images
 
 2. Avoid including UI logic in composables.
 
-   - Such as `useMessage`
+   - Such as `toast.info()`
    - We categorize the router as UI logic, and for ease of testing, avoid including routerrelated logic in there
 
 ## 🚀 Star History

@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 import { ref, watch } from "vue";
+import { toast } from "vue-sonner";
 
 import type { ProgressRank, RankingItem, RankingSelf } from "~/types";
 import { fetchProgressRank } from "~/api/rank";
-import Message from "~/components/main/Message/useMessage";
 
 let rankingCache: Record<string, ProgressRank> = {};
 export function cacheRanking() {
@@ -86,7 +86,7 @@ export const useRanking = defineStore("ranking", () => {
 
     // 加载中不允许切换
     if (isLoading.value) {
-      Message.warning("请等待当前排行榜加载完成", { duration: 1200 });
+      toast.warning("请等待当前排行榜加载完成", { duration: 1200 });
       return;
     }
 

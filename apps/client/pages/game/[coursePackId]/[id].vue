@@ -11,11 +11,10 @@
 </template>
 
 <script setup lang="ts">
-import delay from "lodash-es/delay";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
+import { toast } from "vue-sonner";
 
-import Message from "~/components/main/Message/useMessage";
 import { useGameMode } from "~/composables/main/game";
 import { useNavigation } from "~/composables/useNavigation";
 import { isAuthenticated } from "~/services/auth";
@@ -42,8 +41,12 @@ onMounted(async () => {
   await coursePackStore.setupCoursePack(coursePackId as string);
 
   if (courseStore.isAllMastered()) {
-    Message.warning("你已经全部都掌握 自动帮你跳转到课程列表啦");
-    await delay(() => gotoCourseList(coursePackId as string), 1500);
+    toast.info("你已经全部都掌握 自动帮你跳转到课程列表啦", {
+      duration: 1500,
+      onAutoClose: () => {
+        gotoCourseList(coursePackId as string);
+      },
+    });
     return;
   }
   isLoading.value = false;

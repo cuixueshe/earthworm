@@ -69,8 +69,8 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, watch } from "vue";
+import { toast } from "vue-sonner";
 
-import Message from "~/components/main/Message/useMessage";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
@@ -142,7 +142,7 @@ function useMasteredShortcut() {
 
   function handleMastered() {
     if (!isAuthenticated()) {
-      Message.warning("需要登录哦");
+      toast.warning("需要登录哦");
       return;
     }
 

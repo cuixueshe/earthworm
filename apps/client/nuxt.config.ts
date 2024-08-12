@@ -53,4 +53,7 @@ export default defineNuxtConfig({
       helpDocsURL: process.env.HELP_DOCS_URL || "",
     },
   },
+  build: {
+    transpile: ["vue-sonner"],
+  },
 });

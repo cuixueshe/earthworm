@@ -108,10 +108,6 @@
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
-
-import Message from "~/components/main/Message/useMessage";
-
 const features = [
   {
     type: "免费",
@@ -138,8 +134,6 @@ const features = [
 async function handleUpgrade(type) {
   if (type === "免费") {
   } else {
-    // Upgrade now
-    Message.warning("Function is not open！");
   }
 }
 </script>

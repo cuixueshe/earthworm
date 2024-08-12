@@ -12,18 +12,29 @@
       </NuxtLayout>
     </template>
     <UModals />
+    <Toaster
+      :theme="darkMode === Theme.DARK ? 'dark' : 'light'"
+      position="top-center"
+      :toastOptions="{
+        style: {
+          background: darkMode === Theme.DARK ? '#c084fc' : '#f3e8ff',
+          color: darkMode === Theme.DARK ? '#000' : '#6b21a8',
+        },
+      }"
+    />
   </HttpErrorProvider>
 </template>
 
 <script setup lang="ts">
 import { useAsyncData } from "#imports";
+import { Toaster } from "vue-sonner";
 
 import { fetchCurrentUser } from "~/api/user";
-import { useDarkMode } from "~/composables/darkMode";
+import { Theme, useDarkMode } from "~/composables/darkMode";
 import { isAuthenticated } from "~/services/auth";
 import { useUserStore } from "./store/user";
 
-const { initDarkMode } = useDarkMode();
+const { initDarkMode, darkMode } = useDarkMode();
 initDarkMode();
 
 const userStore = useUserStore();

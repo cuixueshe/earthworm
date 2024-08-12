@@ -84,10 +84,9 @@
 </template>
 
 <script setup lang="ts">
-import delay from "lodash-es/delay";
 import { computed, ref, watch } from "vue";
+import { toast } from "vue-sonner";
 
-import Message from "~/components/main/Message/useMessage";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAuthRequire } from "~/composables/main/authRequire";
@@ -165,8 +164,12 @@ function useDoAgain() {
     // 看看是不是没有全部掌握了
     // 如果是全部掌握了 那么给个提示 然后挑战到课程列表
     if (courseStore.isAllMastered()) {
-      Message.warning("你已经全部都掌握 自动帮你跳转到课程列表啦");
-      await delay(handleGoToCourseList, 1500);
+      toast.info("你已经全部都掌握 自动帮你跳转到课程列表啦", {
+        duration: 1500,
+        onAutoClose: () => {
+          handleGoToCourseList();
+        },
+      });
       return;
     }
     courseStore.doAgain();
@@ -205,8 +208,12 @@ function useCourse() {
     hideSummary();
 
     if (!haveNextCourse.value) {
-      Message.warning("已经是最后一课 自动帮你跳转到课程列表啦");
-      await delay(handleGoToCourseList, 1500);
+      toast.info("已经是最后一课 自动帮你跳转到课程列表啦", {
+        duration: 1500,
+        onAutoClose: () => {
+          handleGoToCourseList();
+        },
+      });
       return;
     }
 

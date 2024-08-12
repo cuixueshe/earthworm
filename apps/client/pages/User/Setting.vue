@@ -224,7 +224,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 
-import Message from "~/components/main/Message/useMessage";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";

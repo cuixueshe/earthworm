@@ -262,7 +262,7 @@ docker images
 
 2. composables 里面不要包含 UI 逻辑
 
-   - useMessage 之类的
+   - Such as `toast.info()`
    - router 相关的也不要放进去（不便于测试 我们把 router 划分为 UI 逻辑）
 
 ## 🚀 星路历程

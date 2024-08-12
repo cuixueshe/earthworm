@@ -3,8 +3,9 @@
 </template>
 
 <script setup lang="ts">
+import { toast } from "vue-sonner";
+
 import { injectHttpStatusErrorHandler } from "~/api/http.js";
-import Message from "~/components/main/Message/useMessage";
 import { signIn } from "~/services/auth";
 
 useHttpStatusError();
@@ -13,14 +14,15 @@ function useHttpStatusError() {
   injectHttpStatusErrorHandler(async (errMessage, statusCode) => {
     switch (statusCode) {
       case 401:
-        Message.error(errMessage, {
+        toast.error(errMessage, {
           duration: 2000,
-          onLeave() {
+          onAutoClose() {
             signIn(window.location.pathname);
           },
         });
+        break;
       default:
-        Message.error(errMessage);
+        toast.error(errMessage);
         break;
     }
   });

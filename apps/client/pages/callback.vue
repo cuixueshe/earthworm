@@ -3,9 +3,9 @@
 import { useHandleSignInCallback } from "@logto/vue";
 import { navigateTo } from "nuxt/app";
 import { ref } from "vue";
+import { toast } from "vue-sonner";
 
 import { fetchCurrentUser } from "~/api/user";
-import Message from "~/components/main/Message/useMessage";
 import { getSignInCallback } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
@@ -53,18 +53,18 @@ function useUsername() {
     };
 
     if (!username.value) {
-      Message.error(errorMessage.empty);
+      toast.error(errorMessage.empty);
       return false;
     }
 
     if (username.value.length < minLength) {
-      Message.error(errorMessage.minLength);
+      toast.error(errorMessage.minLength);
       return false;
     }
 
     const regex = /^[A-Za-z_]\w*$/;
     if (!regex.test(username.value)) {
-      Message.error(errorMessage.invalid);
+      toast.error(errorMessage.invalid);
       return false;
     }
 
