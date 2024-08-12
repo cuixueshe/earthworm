@@ -20,10 +20,7 @@
       >
         {{ currentCourseInfo }}
       </div>
-      <MainStudyVideoLink
-        class="icon-item ml-1"
-        :video="courseStore.currentCourse?.video"
-      />
+      <MainStudyVideoLink :video="courseStore.currentCourse?.video" />
     </div>
 
     <!-- 右侧 -->
@@ -34,21 +31,30 @@
         @click="pauseGame"
         @mouseenter="$lazyTippy"
       >
-        <span class="clickable-item icon-item i-ph-pause-bold"></span>
+        <UIcon
+          name="i-ph-pause"
+          class="clickable-item h-6 w-6"
+        />
       </div>
       <div
         data-tippy-content="重置当前课程进度"
         @click="handleDoAgain"
         @mouseenter="$lazyTippy"
       >
-        <span class="clickable-item icon-item i-ph-arrow-counter-clockwise"></span>
+        <UIcon
+          name="i-ph-arrow-counter-clockwise"
+          class="clickable-item h-6 w-6"
+        />
       </div>
       <div
         data-tippy-content="排行榜"
         @click="rankingStore.showRankModal"
         @mouseenter="$lazyTippy"
       >
-        <span class="clickable-item icon-item i-ph-ranking"></span>
+        <UIcon
+          name="i-ph-ranking"
+          class="clickable-item h-6 w-6"
+        />
       </div>
     </div>
 
@@ -145,9 +151,5 @@ function useDoAgain() {
 <style scoped>
 .clickable-item {
   @apply cursor-pointer select-none hover:text-fuchsia-500;
-}
-
-.icon-item {
-  @apply h-6 w-6;
 }
 </style>

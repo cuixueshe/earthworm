@@ -7,7 +7,10 @@
     :data-tippy-content="NOTE_TIP"
     @mouseenter="$lazyTippy"
   >
-    <span class="i-simple-icons-bilibili h-6 w-6 opacity-85"></span>
+    <UIcon
+      name="i-simple-icons-bilibili"
+      class="h-5 w-5"
+    />
   </NuxtLink>
 </template>
 

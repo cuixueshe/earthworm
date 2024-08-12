@@ -31,9 +31,10 @@
         @click="removeItem(item)"
         class="cursor-pointer transition-transform duration-300 hover:scale-110"
       >
-        <span
-          class="clickable-item icon-item i-ph-trash-bold h-5 w-5 text-purple-600 dark:text-purple-300"
-        ></span>
+        <UIcon
+          name="i-ph-trash-bold"
+          class="h-5 w-5"
+        />
       </div>
     </div>
   </div>
