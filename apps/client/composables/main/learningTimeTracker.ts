@@ -32,9 +32,12 @@ export function useLearningTimeTracker() {
   }
 
   function uploadTime() {
+    const duration = totalSeconds.value - lastTotalSeconds.value;
+    if (duration < 0) return;
+
     updateDailyLearningDailyTotalTime({
       date: new Date().toISOString().split("T")[0],
-      duration: totalSeconds.value - lastTotalSeconds.value, // 传给后端的应该是时间差 后端会累加这个时间
+      duration, // 传给后端的应该是时间差 后端会累加这个时间
     });
   }
 
