@@ -10,7 +10,10 @@
         class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-7 w-7 rounded-md p-0"
         @click="soundSentence"
       >
-        <span class="i-ph-speaker-simple-high h-full w-full"></span>
+        <UIcon
+          name="i-ph-speaker-simple-high"
+          class="h-full w-full"
+        ></UIcon>
       </button>
     </div>
 
@@ -72,7 +75,7 @@
         @click="goToNextCourse"
       >
         下一课
-        <kbd class="kbd"> ↵ </kbd>
+        <UKbd> ↵ </UKbd>
       </button>
     </div>
   </CommonModal>

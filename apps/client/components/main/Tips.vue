@@ -6,13 +6,10 @@
         @click="keybinding.eventFn"
         class="btn btn-ghost"
       >
-        <div class="flex items-center justify-center gap-2 text-center">
-          <div
-            v-for="keyStr in parseShortcutKeys(keybinding.keys)"
-            class="kbd"
-          >
+        <div class="flex items-center gap-0.5">
+          <UKbd v-for="keyStr in parseShortcutKeys(keybinding.keys)">
             {{ keyStr }}
-          </div>
+          </UKbd>
         </div>
         <span>{{ keybinding.text }}</span>
       </button>

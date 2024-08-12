@@ -93,6 +93,7 @@ html.dark:root {
   :root {
     --vp-home-hero-image-filter: blur(56px);
   }
+
   .VPHero .VPImage.image-src {
     max-height: 256px;
   }
@@ -102,6 +103,7 @@ html.dark:root {
   :root {
     --vp-home-hero-image-filter: blur(72px);
   }
+
   .VPHero .VPImage.image-src {
     max-height: 320px;
   }
@@ -109,15 +111,19 @@ html.dark:root {
 
 .vp-doc a {
   text-decoration: none;
-  color: var(--highlight-color); /* 应用链接颜色 */
+  color: var(--highlight-color);
+  /* 应用链接颜色 */
 }
+
 .vp-doc a:hover {
   text-decoration: underline;
-  color: var(--highlight-color); /* 应用链接颜色 */
+  color: var(--highlight-color);
+  /* 应用链接颜色 */
 }
 
 .vp-doc code {
-  color: var(--highlight-color); /* 应用高亮语法的颜色 */
+  color: var(--highlight-color);
+  /* 应用高亮语法的颜色 */
 }
 
 .sponsors-top .become-sponsor {
@@ -125,19 +131,6 @@ html.dark:root {
   padding: 0.2em;
   width: auto;
   max-width: 150px;
-}
-
-kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 0.65em;
-  color: var(--vp-c-text-1);
-  vertical-align: middle;
-  background-color: var(--vp-c-bg-soft);
-  border: solid 1px var(--vp-c-bg-alt);
-  border-radius: 6px;
-  box-shadow: inset 0 -1px 0 var(--vp-c-bg-alt);
-  line-height: 0.95em;
 }
 
 #local-search {

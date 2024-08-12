@@ -42,13 +42,10 @@
             <tr class="hover">
               <td class="label-text">{{ item.label }}</td>
               <td class="text-center">
-                <div class="flex items-center justify-center gap-2 text-center text-xs">
-                  <div
-                    class="kbd"
-                    v-for="key in parseShortcutKeys(shortcutKeys[item.type])"
-                  >
+                <div class="flex justify-center gap-0.5 text-center">
+                  <UKbd v-for="key in parseShortcutKeys(shortcutKeys[item.type])">
                     {{ key }}
-                  </div>
+                  </UKbd>
                 </div>
               </td>
               <td class="text-right">
@@ -193,14 +190,11 @@
       </div>
       <div
         v-if="shortcutKeyTip"
-        class="mt-2 flex justify-center gap-2 text-center text-xs"
+        class="mt-2 flex justify-center gap-0.5 text-center"
       >
-        <div
-          v-for="key in parseShortcutKeys(shortcutKeyTip)"
-          class="kbd"
-        >
+        <UKbd v-for="key in parseShortcutKeys(shortcutKeyTip)">
           {{ key }}
-        </div>
+        </UKbd>
       </div>
       <div
         v-if="hasSameShortcutKey"
