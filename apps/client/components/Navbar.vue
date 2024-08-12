@@ -56,11 +56,11 @@
           >
             <div
               class="h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-gray-300 transition-all hover:scale-125 hover:opacity-90 dark:bg-gray-700"
-              @click="handleShowUserMenu"
+              @click="openUserMenu"
             >
-              <img
-                class="h-full object-cover"
+              <UAvatar
                 :src="userStore.user?.avatar"
+                alt="Avatar"
               />
             </div>
           </div>
@@ -77,32 +77,24 @@
       </div>
     </div>
   </header>
-
-  <UserMenu
-    v-model:open="isOpenUserMenu"
-    @logout="handleLogout"
-  />
 </template>
 
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
-import { useModal } from "#imports";
 import { useRuntimeConfig } from "nuxt/app";
-import { computed, ref } from "vue";
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 
-import Dialog from "~/components/common/Dialog.vue";
-import { isAuthenticated, signIn, signOut } from "~/services/auth";
+import { useUserMenu } from "~/composables/user/useUserMenu";
+import { isAuthenticated, signIn } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
 const runtimeConfig = useRuntimeConfig();
+const { openUserMenu } = useUserMenu();
 
 const route = useRoute();
 const userStore = useUserStore();
 const { y } = useWindowScroll();
-const modal = useModal();
-
-const isOpenUserMenu = ref(false);
 
 const SCROLL_THRESHOLD = 8;
 // https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#%E5%B1%9E%E6%80%A7
@@ -123,20 +115,4 @@ const isStickyNavBar = computed(() =>
   ["index", "User-Setting", "mastered-elements"].includes(route.name as string),
 );
 const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
-
-function handleLogout() {
-  modal.open(Dialog, {
-    title: "退出登录",
-    content: "是否确认退出登录？",
-    showCancel: true,
-    showConfirm: true,
-    async onConfirm() {
-      signOut();
-    },
-  });
-}
-
-function handleShowUserMenu() {
-  isOpenUserMenu.value = true;
-}
 </script>

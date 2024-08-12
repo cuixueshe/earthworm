@@ -1,83 +1,75 @@
 <template>
-  <Teleport to="body">
-    <div class="drawer drawer-end z-10">
-      <input
-        id="my-drawer"
-        type="checkbox"
-        class="drawer-toggle"
-        v-model="open"
-      />
-      <div class="drawer-content"></div>
-      <div class="drawer-side">
-        <label
-          for="my-drawer"
-          aria-label="close sidebar"
-          class="drawer-overlay"
-        ></label>
-        <aside class="menu min-h-full w-80 bg-base-200 p-4 text-base-content">
-          <div class="flex items-center justify-between pb-5">
-            <div class="flex items-center gap-3">
-              <div class="avatar">
-                <div class="mask mask-squircle h-12 w-12">
-                  <img
-                    :src="userStore.user?.avatar"
-                    alt="Avatar Tailwind CSS Component"
-                  />
-                </div>
-              </div>
-              <div>
-                <div class="flex gap-2">
-                  <div class="text-xl font-bold">{{ userStore.user?.username }}</div>
-                  <MembershipBadge></MembershipBadge>
-                </div>
-                <div class="text-sm opacity-50">{{ userStore.user?.name }}</div>
-              </div>
-            </div>
-
-            <div>
-              <label
-                for="my-drawer"
-                class="btn btn-square btn-ghost drawer-button btn-sm"
-              >
-                <span class="i-ph-x-bold h-6 w-6"></span>
-              </label>
+  <USlideover
+    v-model="isUserMenuOpen"
+    :ui="{ width: 'w-screen max-w-80', strategy: 'override' }"
+  >
+    <div class="flex h-full flex-col">
+      <!-- 用户信息头部 -->
+      <div class="flex items-center justify-between p-4">
+        <div class="flex items-center gap-3">
+          <div class="avatar">
+            <div class="mask mask-squircle h-14 w-14">
+              <UAvatar
+                size="xl"
+                :src="userStore.user?.avatar"
+                alt="Avatar"
+              />
             </div>
           </div>
+          <div>
+            <div class="flex gap-2">
+              <div class="text-xl font-bold">{{ userStore.user?.username }}</div>
+              <MembershipBadge></MembershipBadge>
+            </div>
+            <div class="text-sm opacity-75">{{ userStore.user?.name }}</div>
+          </div>
+        </div>
 
-          <ul>
-            <li
-              v-for="(item, index) in showMenuOptions"
-              :index="index"
-              :key="item.name"
-            >
-              <span
-                @click="item.eventName"
-                class=""
-              >
-                <span
-                  class="h-6 w-6"
-                  :class="item.icon"
-                ></span>
-                <span class="text-sm font-medium">
-                  {{ item.title }}
-                </span>
-              </span>
-            </li>
-          </ul>
-        </aside>
+        <UButton
+          color="gray"
+          variant="ghost"
+          icon="i-heroicons-x-mark-20-solid"
+          @click="closeUserMenu"
+          tabindex="-1"
+          :ui="{ color: { gray: { ghost: 'dark:hover:bg-gray-600' } } }"
+        />
       </div>
+
+      <!-- 菜单选项 -->
+      <div class="flex-grow p-4">
+        <button
+          v-for="(item, index) in showMenuOptions"
+          :key="item.name"
+          @click="item.eventName"
+          class="mb-2 flex w-full items-center rounded-lg p-3 transition-all duration-200 ease-in-out hover:bg-base-200 hover:shadow-md dark:hover:bg-gray-600"
+          tabindex="-1"
+        >
+          <UIcon
+            :name="item.icon"
+            class="mr-3 h-7 w-7"
+          ></UIcon>
+          <span class="text-lg font-medium">{{ item.title }}</span>
+        </button>
+      </div>
+
+      <!-- 底部信息 -->
+      <div class="p-4 text-center text-xs opacity-50">版本 v1.0.0</div>
     </div>
-  </Teleport>
+  </USlideover>
 </template>
 
 <script setup lang="ts">
-import { navigateTo } from "#imports";
+import { navigateTo, useModal } from "#imports";
 import { useRuntimeConfig } from "nuxt/app";
 import { computed } from "vue";
 
+import Dialog from "~/components/common/Dialog.vue";
 import { Theme, useDarkMode } from "~/composables/darkMode";
+import { useUserMenu } from "~/composables/user/useUserMenu";
+import { signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
+const { isUserMenuOpen, closeUserMenu } = useUserMenu();
 const { darkMode, toggleDarkMode } = useDarkMode();
 
 const runtimeConfig = useRuntimeConfig();
@@ -87,6 +79,7 @@ const open = defineModel("open");
 
 const userStore = useUserStore();
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
+const modal = useModal();
 
 const showMenuOptions = computed(() => {
   return [
@@ -136,32 +129,41 @@ const showMenuOptions = computed(() => {
 });
 
 function handleHelpDocs() {
-  open.value = false;
+  closeUserMenu();
   window.open(runtimeConfig.public.helpDocsURL, "_blank");
 }
 
 function handleFeedback() {
-  open.value = false;
+  closeUserMenu();
   window.open("https://txc.qq.com/products/652508", "_blank");
 }
 
 function handleMasteredElements() {
-  open.value = false;
+  closeUserMenu();
   navigateTo("/mastered-elements");
 }
 
 function handleSetting() {
-  open.value = false;
+  closeUserMenu();
   navigateTo("/user/setting");
 }
 
 function handleLogout() {
-  open.value = false;
-  emit("logout", true);
+  closeUserMenu();
+
+  modal.open(Dialog, {
+    title: "退出登录",
+    content: "是否确认退出登录？",
+    showCancel: true,
+    showConfirm: true,
+    async onConfirm() {
+      signOut();
+    },
+  });
 }
 
 function handleGoToEditor() {
-  open.value = false;
+  closeUserMenu();
   window.open("https://earthworm-editor.cuixueshe.com", "_blank");
 }
 </script>

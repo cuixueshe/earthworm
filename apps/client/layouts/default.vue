@@ -14,6 +14,7 @@
       <Footer></Footer>
     </div>
   </div>
+  <UserMenu />
 </template>
 
 <script setup lang="ts">
