@@ -1,7 +1,7 @@
 <template>
   <USlideover
     v-model="isUserMenuOpen"
-    :ui="{ width: 'w-screen max-w-80', strategy: 'override' }"
+    :ui="{ width: 'w-screen max-w-80' }"
   >
     <div class="flex h-full flex-col">
       <!-- 用户信息头部 -->
