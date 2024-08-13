@@ -1,84 +1,86 @@
 <template>
-  <CommonModal
-    :show-modal="showModal"
-    tw-class="max-w-[48rem]"
+  <UModal
+    v-model="showModal"
+    prevent-close
   >
-    <div class="relative">
-      <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
-      <button
-        tabindex="0"
-        class="btn btn-ghost btn-sm absolute right-0 top-0 mx-1 h-7 w-7 rounded-md p-0"
-        @click="soundSentence"
-      >
-        <UIcon
-          name="i-ph-speaker-simple-high"
-          class="h-full w-full"
-        ></UIcon>
-      </button>
-    </div>
-
-    <div class="flex flex-col">
-      <div class="flex">
-        <span class="text-6xl font-bold">"</span>
-        <div class="flex-1 text-center text-xl leading-loose">
-          {{ enSentence }}
-        </div>
-        <span class="invisible text-6xl font-bold">"</span>
+    <UCard :ui="{ base: 'w-full sm:w-[640px] md:w-[768px]' }">
+      <div class="flex justify-between">
+        <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
+        <button
+          tabindex="0"
+          class="btn btn-ghost btn-sm mx-1 h-7 w-7 rounded-md p-0"
+          @click="soundSentence"
+        >
+          <UIcon
+            name="i-ph-speaker-simple-high"
+            class="h-full w-full"
+          ></UIcon>
+        </button>
       </div>
 
-      <div class="flex">
-        <span class="invisible text-6xl font-bold">"</span>
-        <div class="flex-1 text-center text-xl leading-loose">
-          {{ zhSentence }}
+      <div class="flex flex-col">
+        <div class="flex">
+          <span class="text-6xl font-bold">"</span>
+          <div class="flex-1 text-center text-xl leading-loose">
+            {{ enSentence }}
+          </div>
+          <span class="invisible text-6xl font-bold">"</span>
         </div>
-        <span class="text-6xl font-bold">"</span>
+
+        <div class="flex">
+          <span class="invisible text-6xl font-bold">"</span>
+          <div class="flex-1 text-center text-xl leading-loose">
+            {{ zhSentence }}
+          </div>
+          <span class="text-6xl font-bold">"</span>
+        </div>
+        <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
+        <p class="pl-14 text-base leading-loose text-gray-600">
+          {{
+            `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
+              courseTimer.calculateTotalTime(),
+            )} `
+          }}
+        </p>
+        <p
+          v-if="isAuthenticated()"
+          class="pl-14 text-base leading-loose text-gray-400"
+        >
+          今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
+          <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
+        </p>
       </div>
-      <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
-      <p class="pl-14 text-base leading-loose text-gray-600">
-        {{
-          `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
-            courseTimer.calculateTotalTime(),
-          )} `
-        }}
-      </p>
-      <p
-        v-if="isAuthenticated()"
-        class="pl-14 text-base leading-loose text-gray-400"
+      <div
+        className="modal-action flex flex-wrap justify-center gap-2 sm:flex-nowrap sm:justify-end"
       >
-        今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
-        <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
-      </p>
-    </div>
-    <div className="modal-action">
-      <button
-        class="btn btn-primary"
-        @click="toShare"
-      >
-        生成打卡图
-      </button>
-      <button
-        class="btn"
-        @click="handleDoAgain"
-      >
-        再来一次
-      </button>
-
-      <button
-        class="btn"
-        @click="handleGoToCourseList"
-      >
-        课程列表
-      </button>
-
-      <button
-        class="btn"
-        @click="goToNextCourse"
-      >
-        下一课
-        <UKbd> ↵ </UKbd>
-      </button>
-    </div>
-  </CommonModal>
+        <button
+          class="btn btn-primary w-full sm:w-auto"
+          @click="toShare"
+        >
+          生成打卡图
+        </button>
+        <button
+          class="btn w-full sm:w-auto"
+          @click="handleDoAgain"
+        >
+          再来一次
+        </button>
+        <button
+          class="btn w-full sm:w-auto"
+          @click="handleGoToCourseList"
+        >
+          课程列表
+        </button>
+        <button
+          class="btn w-full sm:w-auto"
+          @click="goToNextCourse"
+        >
+          下一课
+          <UKbd> ↵ </UKbd>
+        </button>
+      </div>
+    </UCard>
+  </UModal>
 
   <canvas
     ref="confettiCanvasRef"
