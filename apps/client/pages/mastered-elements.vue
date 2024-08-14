@@ -27,14 +27,15 @@
         </div>
       </div>
       <div
-        data-tippy-content="删除"
         @click="removeItem(item)"
         class="cursor-pointer transition-transform duration-300 hover:scale-110"
       >
-        <UIcon
-          name="i-ph-trash-bold"
-          class="h-5 w-5"
-        />
+        <UTooltip text="删除">
+          <UIcon
+            name="i-ph-trash-bold"
+            class="h-5 w-5"
+          />
+        </UTooltip>
       </div>
     </div>
   </div>

@@ -16,7 +16,7 @@
             <th></th>
             <th
               v-for="{ colSpan, month } in thead"
-              class="text-left font-normal"
+              class="pb-1 text-left font-normal"
               :colspan="colSpan"
               :key="month"
             >
@@ -33,15 +33,17 @@
               </td>
               <td
                 v-for="(cell, j) in row"
-                class="m-0"
                 :key="j"
               >
-                <div
-                  class="cell block"
-                  :class="[cell?.bg]"
-                  :data-tippy-content="cell?.tips"
-                  @mouseenter="(e) => $calendarTippy(e, calendarTable)"
-                />
+                <UTooltip
+                  :text="cell?.tips"
+                  :ui="{ wrapper: '', strategy: 'override' }"
+                >
+                  <div
+                    class="cell block"
+                    :class="[cell?.bg]"
+                  ></div>
+                </UTooltip>
               </td>
             </tr>
           </tbody>
@@ -166,7 +168,7 @@ watchEffect(() => {
 
 <style scoped>
 .cell {
-  @apply mt-[2px] h-[12px] w-[12px] rounded-sm border-gray-200 bg-gray-200 hover:scale-125 hover:border hover:border-blue-400 dark:bg-gray-700 dark:hover:border-gray-50;
+  @apply h-[12px] w-[12px] rounded-sm border-gray-200 bg-gray-200 hover:scale-125 hover:border hover:border-blue-400 dark:bg-gray-700 dark:hover:border-gray-50;
 }
 
 .low {

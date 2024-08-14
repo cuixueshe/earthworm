@@ -10,17 +10,17 @@
         v-for="(item, index) in contentsList"
         :key="item.id"
         :class="getItemClassNames(index)"
-        :data-tippy-content="`${item.english}<br>${item.chinese}`"
         @click="jumpTo(index, item)"
-        @mouseenter="$lazyTippy"
       >
-        <div class="flex whitespace-pre-wrap border-b py-1 dark:border-slate-600">
-          <div class="w-12 text-center">{{ index + 1 }}</div>
-          <div class="flex-1 truncate text-left">
-            {{ item.chinese }}
-            {{ item.isMastered ? "✅" : "" }}
+        <UTooltip :text="`${item.english} ${item.chinese}`">
+          <div class="flex whitespace-pre-wrap border-b py-1 dark:border-slate-600">
+            <div class="w-12 text-center">{{ index + 1 }}</div>
+            <div class="flex-1 truncate text-left">
+              {{ item.chinese }}
+              {{ item.isMastered ? "✅" : "" }}
+            </div>
           </div>
-        </div>
+        </UTooltip>
       </div>
     </div>
   </div>

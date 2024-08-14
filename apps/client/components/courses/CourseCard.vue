@@ -30,10 +30,10 @@
           'bg-purple-600': isActiveCourse,
         },
       ]"
-      :data-tippy-content="dataTip"
-      @mouseenter="$lazyTippy"
     >
-      {{ count }}
+      <UTooltip :text="dataTip">
+        {{ count }}
+      </UTooltip>
     </div>
   </div>
 </template>

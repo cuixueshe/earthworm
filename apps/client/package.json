@@ -55,7 +55,6 @@
     "ofetch": "^1.3.4",
     "pinia": "^2.1.7",
     "satori": "^0.10.13",
-    "tippy.js": "^6.3.7",
     "vee-validate": "^4.12.5",
     "vue-sonner": "^1.1.4",
     "yup": "^1.3.3"

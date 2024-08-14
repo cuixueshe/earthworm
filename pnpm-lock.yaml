@@ -238,9 +238,6 @@ importers:
       satori:
         specifier: ^0.10.13
         version: 0.10.13
-      tippy.js:
-        specifier: ^6.3.7
-        version: 6.3.7
       vee-validate:
         specifier: ^4.12.5
         version: 4.13.1(vue@3.4.29(typescript@5.4.5))
@@ -7486,9 +7483,6 @@ packages:
   tinyspy@3.0.0:
     resolution: {integrity: sha512-q5nmENpTHgiPVd1cJDDc9cVoYN5x4vCvwT3FMilvKPKneCBZAxn2YWQjDF0UMcE9k0Cay1gBiDfTMU0g+mPMQA==}
     engines: {node: '>=14.0.0'}
-
-  tippy.js@6.3.7:
-    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
 
   tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
@@ -16725,10 +16719,6 @@ snapshots:
   tinyspy@2.2.1: {}
 
   tinyspy@3.0.0: {}
-
-  tippy.js@6.3.7:
-    dependencies:
-      '@popperjs/core': 2.11.8
 
   tmp@0.0.33:
     dependencies:

@@ -5,20 +5,20 @@
     <!-- 左侧 -->
     <div class="flex items-center">
       <NuxtLink
-        class="clickable-item"
-        data-tippy-content="课程列表"
+        class="clickable-item flex items-center justify-center"
         :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
-        @mouseenter="$lazyTippy"
       >
-        <IconsExpand class="h-7 w-7" />
+        <UTooltip text="课程列表">
+          <IconsExpand class="h-7 w-7" />
+        </UTooltip>
       </NuxtLink>
       <div
         class="clickable-item ml-4"
-        data-tippy-content="课程题目列表"
         @click="toggleContents"
-        @mouseenter="$lazyTippy"
       >
-        {{ currentCourseInfo }}
+        <UTooltip text="课程题目列表">
+          {{ currentCourseInfo }}
+        </UTooltip>
       </div>
       <MainStudyVideoLink :video="courseStore.currentCourse?.video" />
     </div>
@@ -27,34 +27,34 @@
     <div class="flex items-center gap-4">
       <div
         v-if="isAuthenticated()"
-        :data-tippy-content="`暂停游戏 (${shortcutKeys.pause})`"
         @click="pauseGame"
-        @mouseenter="$lazyTippy"
       >
-        <UIcon
-          name="i-ph-pause"
-          class="clickable-item h-6 w-6"
-        />
+        <UTooltip
+          text="暂停游戏"
+          :shortcuts="parseShortcut(shortcutKeys.pause)"
+        >
+          <UIcon
+            name="i-ph-pause"
+            class="clickable-item h-6 w-6"
+          />
+        </UTooltip>
       </div>
-      <div
-        data-tippy-content="重置当前课程进度"
-        @click="handleDoAgain"
-        @mouseenter="$lazyTippy"
-      >
-        <UIcon
-          name="i-ph-arrow-counter-clockwise"
-          class="clickable-item h-6 w-6"
-        />
+
+      <div @click="handleDoAgain">
+        <UTooltip text="重置当前课程进度">
+          <UIcon
+            name="i-ph-arrow-counter-clockwise"
+            class="clickable-item h-6 w-6"
+          />
+        </UTooltip>
       </div>
-      <div
-        data-tippy-content="排行榜"
-        @click="rankingStore.showRankModal"
-        @mouseenter="$lazyTippy"
-      >
-        <UIcon
-          name="i-ph-ranking"
-          class="clickable-item h-6 w-6"
-        />
+      <div @click="rankingStore.showRankModal">
+        <UTooltip text="排行榜">
+          <UIcon
+            name="i-ph-ranking"
+            class="clickable-item h-6 w-6"
+          />
+        </UTooltip>
       </div>
     </div>
 
@@ -79,7 +79,7 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useGamePause } from "~/composables/main/useGamePause";
 import { useRanking } from "~/composables/rank/rankingList";
-import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { parseShortcut, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useContent } from "./Contents/useContents";

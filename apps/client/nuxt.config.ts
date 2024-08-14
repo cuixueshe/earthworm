@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     "@hypernym/nuxt-anime",
     "@nuxt/image",
   ],
-  plugins: ["~/plugins/logto.ts", "~/plugins/lazyTippy.ts", "~/plugins/http.ts"],
+  plugins: ["~/plugins/logto.ts", "~/plugins/http.ts"],
   runtimeConfig: {
     public: {
       apiBase: process.env.API_BASE || "",

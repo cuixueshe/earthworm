@@ -4,14 +4,17 @@
       <button
         v-show="courseStore.visibleStatementIndex !== 0"
         class="arrow-btn"
-        :data-tippy-content="PREV_BTN_TIP"
         @click="goToPreviousQuestion"
-        @mouseenter="$lazyTippy"
       >
-        <UIcon
-          name="i-ph-caret-left"
-          class="h-12 w-12"
-        ></UIcon>
+        <UTooltip
+          text="上一题"
+          :shortcuts="parseShortcut(shortcutKeys.previous)"
+        >
+          <UIcon
+            name="i-ph-caret-left"
+            class="h-12 w-12"
+          ></UIcon>
+        </UTooltip>
       </button>
     </div>
 
@@ -19,14 +22,17 @@
       <button
         v-show="courseStore.visibleStatementIndex + 1 !== courseStore.visibleStatementsCount"
         class="arrow-btn"
-        :data-tippy-content="NEXT_BTN_TIP"
         @click="goToNextQuestion"
-        @mouseenter="$lazyTippy"
       >
-        <UIcon
-          name="i-ph-caret-right"
-          class="h-12 w-12"
-        ></UIcon>
+        <UTooltip
+          text="下一题"
+          :shortcuts="parseShortcut(shortcutKeys.skip)"
+        >
+          <UIcon
+            name="i-ph-caret-right"
+            class="h-12 w-12"
+          ></UIcon>
+        </UTooltip>
       </button>
     </div>
   </div>
@@ -35,7 +41,7 @@
 import { onMounted, onUnmounted } from "vue";
 
 import { useGameMode } from "~/composables/main/game";
-import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
+import { parseShortcut, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { useCourseStore } from "~/store/course";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 

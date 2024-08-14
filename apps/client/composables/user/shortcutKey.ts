@@ -50,6 +50,12 @@ export function convertMacKey(key: string) {
   );
 }
 
+export function parseShortcut(shortcut: string): string[] {
+  return shortcut
+    .split("+")
+    .map((key) => key.trim().charAt(0).toUpperCase() + key.slice(1).toLowerCase());
+}
+
 // 自定义快捷键
 const showModal = ref<boolean>(false);
 const currentKeyType = ref<SHORTCUT_KEY_TYPES | "">("");
