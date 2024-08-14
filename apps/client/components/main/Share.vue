@@ -1,59 +1,63 @@
 <template>
-  <CommonModal
-    :show-modal="shareModalVisible"
-    :modal="true"
-    tw-class="flex w-[27rem] flex-col items-center overflow-hidden"
+  <UModal
+    v-model="shareModalVisible"
+    prevent-close
   >
-    <div class="flex">
-      <div class="gallery mr-2 py-2">
+    <UCard
+      :ui="{ base: 'w-full sm:w-[400px] md:w-[448px] lg:w-[496px] flex flex-col items-center' }"
+    >
+      <div class="flex flex-col sm:flex-row">
+        <div class="gallery mr-2 flex py-2 sm:flex-col">
+          <div
+            v-for="(imgItem, index) in galleryImgs"
+            :key="imgItem.src"
+            :class="[
+              'gallery-item sm:h-18 sm:w-18 mb-2 mr-2 h-14 w-14 cursor-pointer overflow-hidden rounded-sm border-2 border-transparent',
+              {
+                '!border-primary': currImageIndex === index,
+                skeleton: !imgItem.src,
+              },
+            ]"
+            @click="handleSelectImage(index)"
+          >
+            <img
+              v-show="imgItem.src"
+              :src="imgItem.src"
+              :alt="`Card ${index}`"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </div>
         <div
-          v-for="(imgItem, index) in galleryImgs"
-          :key="imgItem.src"
-          :class="[
-            'gallery-item h-18 mb-2 mr-2 w-14 cursor-pointer overflow-hidden rounded-sm border-2 border-transparent',
-            {
-              '!border-primary': currImageIndex === index,
-              skeleton: !imgItem.src,
-            },
-          ]"
-          @click="handleSelectImage(index)"
+          :class="['mt-4 flex-1 sm:mt-0', { skeleton: !shareImageSrc }]"
+          ref="imageContainer"
         >
           <img
-            v-show="imgItem.src"
-            :src="imgItem.src"
-            :alt="`Card ${index}`"
+            v-show="shareImageSrc"
+            :src="shareImageSrc"
+            alt="Selected Share Image"
+            class="h-auto max-h-[600px] w-full rounded-md"
           />
         </div>
       </div>
-      <div
-        :class="['h-[27rem] w-[19rem]', { skeleton: !shareImageSrc }]"
-        ref="imageContainer"
-      >
-        <img
-          v-show="shareImageSrc"
-          :src="shareImageSrc"
-          alt="Selected Share Image"
-          width="400"
-          height="600"
-          class="rounded-md"
-        />
-      </div>
-    </div>
-    <div class="modal-action">
-      <button
-        class="btn btn-primary"
-        @click="copyAndClose"
-      >
-        复制并关闭
-      </button>
-      <button
-        class="btn"
-        @click="hideShareModal"
-      >
-        关闭
-      </button>
-    </div>
-  </CommonModal>
+      <template #footer>
+        <div class="mt-4 space-x-4">
+          <button
+            class="btn btn-primary"
+            @click="copyAndClose"
+          >
+            复制并关闭
+          </button>
+          <button
+            class="btn"
+            @click="hideShareModal"
+          >
+            关闭
+          </button>
+        </div>
+      </template>
+    </UCard>
+  </UModal>
 </template>
 
 <script setup lang="ts">

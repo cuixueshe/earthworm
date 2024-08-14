@@ -65,7 +65,7 @@
     class="h-6 p-[2px]"
     :percentage="currentPercentage"
   />
-  <RankRankingList />
+  <RankRankingBoard />
 </template>
 
 <script setup lang="ts">

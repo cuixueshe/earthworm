@@ -10,7 +10,6 @@
   <MainTips />
   <MainSummary />
   <MainShare />
-  <MainAuthRequired />
   <GamePauseModal v-if="isAuthenticated()"></GamePauseModal>
 </template>
 

@@ -159,7 +159,9 @@ export function useGenerateShareImage() {
     });
 
     // currImageSrc.value = await convertSVGtoImg(svg, canvasEl, fullFormat);
-    galleryImgs.value[index].src = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    if (galleryImgs.value[index]) {
+      galleryImgs.value[index].src = await convertSVGtoImg(svg, canvasEl, fullFormat);
+    }
 
     if (index === 0) {
       currImageSrc.value = galleryImgs.value[index].src;

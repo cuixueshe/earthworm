@@ -3,9 +3,9 @@
     v-model="showModal"
     prevent-close
   >
-    <UCard :ui="{ base: 'w-full sm:w-[640px] md:w-[768px]' }">
+    <UCard :ui="{ base: 'sm:w-[640px] md:w-[680px] max-w-full' }">
       <div class="flex justify-between">
-        <h3 className="font-bold text-lg mb-4">🎉 Congratulations!</h3>
+        <h3 className="font-bold text-lg mb-4">🎉 恭喜!</h3>
         <button
           tabindex="0"
           class="btn btn-ghost btn-sm mx-1 h-7 w-7 rounded-md p-0"
@@ -20,22 +20,22 @@
 
       <div class="flex flex-col">
         <div class="flex">
-          <span class="text-6xl font-bold">"</span>
-          <div class="flex-1 text-center text-xl leading-loose">
+          <span class="text-4xl font-bold sm:text-6xl">"</span>
+          <div class="flex-1 text-center text-base leading-loose sm:text-xl">
             {{ enSentence }}
           </div>
-          <span class="invisible text-6xl font-bold">"</span>
+          <span class="invisible text-4xl font-bold sm:text-6xl">"</span>
         </div>
 
         <div class="flex">
-          <span class="invisible text-6xl font-bold">"</span>
-          <div class="flex-1 text-center text-xl leading-loose">
+          <span class="invisible text-4xl font-bold sm:text-6xl">"</span>
+          <div class="flex-1 text-center text-base leading-loose sm:text-xl">
             {{ zhSentence }}
           </div>
-          <span class="text-6xl font-bold">"</span>
+          <span class="text-4xl font-bold sm:text-6xl">"</span>
         </div>
-        <p class="text-3 text-right text-gray-200">—— 金山词霸「每日一句」</p>
-        <p class="pl-14 text-base leading-loose text-gray-600">
+        <p class="text-right text-xs text-gray-200 sm:text-sm">—— 金山词霸「每日一句」</p>
+        <p class="pl-4 text-sm leading-loose text-gray-600 sm:pl-14 sm:text-base">
           {{
             `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
               courseTimer.calculateTotalTime(),
@@ -44,7 +44,7 @@
         </p>
         <p
           v-if="isAuthenticated()"
-          class="pl-14 text-base leading-loose text-gray-400"
+          class="pl-4 text-sm leading-loose text-gray-400 sm:pl-14 sm:text-base"
         >
           今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
           <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
@@ -89,12 +89,13 @@
 </template>
 
 <script setup lang="ts">
+import { useModal } from "#imports";
 import { computed, ref, watch } from "vue";
 import { toast } from "vue-sonner";
 
+import Dialog from "~/components/common/Dialog.vue";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { useAuthRequire } from "~/composables/main/authRequire";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
@@ -102,7 +103,7 @@ import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
 import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useNavigation } from "~/composables/useNavigation";
-import { isAuthenticated } from "~/services/auth";
+import { isAuthenticated, signIn } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useCoursePackStore } from "~/store/coursePack";
 import { useGameStore } from "~/store/game";
@@ -113,6 +114,7 @@ import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 const courseStore = useCourseStore();
 const coursePackStore = useCoursePackStore();
 const { gotoCourseList, gotoGame } = useNavigation();
+const { showQuestion } = useGameMode();
 const { handleGoToCourseList, goToNextCourse, completeCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
 const { showModal, hideSummary } = useSummary();
@@ -121,7 +123,9 @@ const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
 const { totalMinutes, formattedMinutes } = useTotalLearningTime();
+
 const gameStore = useGameStore();
+const modal = useModal();
 
 watch(showModal, (val) => {
   if (val) {
@@ -163,8 +167,6 @@ function useTotalLearningTime() {
 }
 
 function useDoAgain() {
-  const { showQuestion } = useGameMode();
-
   async function handleDoAgain() {
     // 看看是不是没有全部掌握了
     // 如果是全部掌握了 那么给个提示 然后挑战到课程列表
@@ -202,11 +204,22 @@ function useCourse() {
   });
 
   async function goToNextCourse() {
-    const { showAuthRequireModal } = useAuthRequire();
-
     if (!isAuthenticated()) {
       // 去注册
-      showAuthRequireModal();
+      modal.open(Dialog, {
+        title: "✨ 解锁更多学习体验",
+        content: "注册后可以进行下一课学习 记录每日学习数据 开启更多功能哦",
+        showCancel: true,
+        showConfirm: true,
+        cancelText: "稍后再说",
+        confirmText: "立即注册",
+        async onConfirm() {
+          courseStore.resetStatementIndex();
+          showQuestion();
+          signIn();
+        },
+      });
+
       return;
     }
 

@@ -45,7 +45,7 @@ async function onConfirm() {
   <UModal :ui="{ width: 'w-full sm:max-w-lg' }">
     <div class="flex h-52 flex-col justify-between p-6 text-gray-900 dark:text-white">
       <h2 class="mb-8 text-2xl font-bold">{{ title }}</h2>
-      <p class="mb-8 max-w-sm text-base text-gray-700 dark:text-gray-300">
+      <p class="mb-8 text-base text-gray-700 dark:text-gray-300">
         {{ content }}
       </p>
       <div class="flex w-full justify-end space-x-4">

@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { useHandleSignInCallback } from "@logto/vue";
 import { navigateTo } from "nuxt/app";
-import { ref } from "vue";
+import { onMounted, onUnmounted, ref, watch } from "vue";
 import { toast } from "vue-sonner";
 
 import { fetchCurrentUser } from "~/api/user";
@@ -13,7 +13,28 @@ const userStore = useUserStore();
 const { username, isLoadingFetchUserSetup, isShowSettingUsernameModal, handleChangeUsername } =
   useUsername();
 
-const { isLoading } = useHandleSignInCallback(async () => {
+const useAutoRedirect = (delay: number) => {
+  const redirectTimer = ref<NodeJS.Timeout | null>(null);
+  const startAutoRedirect = () => {
+    redirectTimer.value = setTimeout(() => {
+      navigateTo("/");
+    }, delay);
+  };
+
+  const stopAutoRedirect = () => {
+    if (redirectTimer.value) {
+      clearTimeout(redirectTimer.value);
+      redirectTimer.value = null;
+    }
+  };
+
+  return { startAutoRedirect, stopAutoRedirect };
+};
+
+const { startAutoRedirect, stopAutoRedirect } = useAutoRedirect(3000);
+
+const { isLoading, error } = useHandleSignInCallback(async () => {
+  stopAutoRedirect();
   const res = await fetchCurrentUser();
   userStore.initUser(res);
 
@@ -22,6 +43,27 @@ const { isLoading } = useHandleSignInCallback(async () => {
     isShowSettingUsernameModal.value = true;
   } else {
     await navigateTo(getSignInCallback());
+  }
+});
+
+onMounted(() => {
+  startAutoRedirect();
+});
+
+onUnmounted(() => {
+  stopAutoRedirect();
+});
+
+// 如果登录失败，则跳转到首页
+watch(error, (newError) => {
+  if (newError) {
+    toast.error(`登录失败`, {
+      description: `请清空缓存后重新尝试 报错信息: ${newError}`,
+      duration: 4000,
+      onAutoClose: () => {
+        navigateTo("/");
+      },
+    });
   }
 });
 
@@ -86,8 +128,12 @@ function useUsername() {
     <template v-if="isLoading && !isShowSettingUsernameModal">
       <Loading></Loading>
     </template>
-    <template v-else-if="isShowSettingUsernameModal">
-      <CommonModal :show-modal="true">
+    <UModal
+      v-model="isShowSettingUsernameModal"
+      :ui="{ width: 'w-full sm:max-w-lg' }"
+      prevent-close
+    >
+      <UCard>
         <h3 class="mb-4 text-lg font-bold">设置用户名</h3>
         <input
           v-model="username"
@@ -98,8 +144,7 @@ function useUsername() {
           @keydown.enter="handleChangeUsername"
         />
         <div class="modal-action">
-          <button
-            class="btn btn-primary"
+          <UButton
             type="submit"
             @click="handleChangeUsername"
           >
@@ -108,9 +153,9 @@ function useUsername() {
               v-if="isLoadingFetchUserSetup"
               class="loading loading-spinner loading-lg"
             ></span>
-          </button>
+          </UButton>
         </div>
-      </CommonModal>
-    </template>
+      </UCard>
+    </UModal>
   </div>
 </template>

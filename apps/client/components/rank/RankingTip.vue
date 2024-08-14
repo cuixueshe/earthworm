@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute bottom-0 left-0 flex h-12 w-full flex-col items-center justify-center border-t border-gray-200 dark:border-gray-600"
+    class="flex h-12 w-full flex-col items-center justify-center border-t border-gray-200 dark:border-gray-600"
   >
     <div class="flex items-center text-sm">
       <span class="font-bold">我的排名：</span>
