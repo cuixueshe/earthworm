@@ -21,6 +21,9 @@ export default defineAppConfig({
     card: {
       background: "dark:bg-gray-800",
     },
+    container: {
+      base: "py-5",
+    },
     kbd: {
       default: {
         size: "md",

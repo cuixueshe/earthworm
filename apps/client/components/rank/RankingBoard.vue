@@ -1,11 +1,9 @@
 <template>
   <UModal v-model="rankingStore.rankModal">
-    <UCard
+    <UContainer
       :ui="{
-        base: 'h-[90vh] w-[90vw] max-w-[450px] max-h-[570px]',
-        body: {
-          base: 'h-full flex flex-col',
-        },
+        base: 'flex flex-col py-5 w-[90vw] h-[80vh] max-h-[600px]',
+        constrained: 'max-w-[500px]',
       }"
     >
       <div class="absolute right-2 top-2">
@@ -69,7 +67,7 @@
         :isLoading="rankingStore.isLoading"
         :rankingSelf="rankingStore.rankingSelf"
       />
-    </UCard>
+    </UContainer>
   </UModal>
 </template>
 
