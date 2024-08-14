@@ -173,51 +173,10 @@
       </table>
     </section>
   </div>
-
-  <dialog
-    class="modal mt-[-8vh]"
-    :open="showModal"
-  >
-    <div
-      ref="dialogBoxRef"
-      class="modal-box min-h-[156px] max-w-[48rem]"
-    >
-      <h3 class="mb-4 text-center text-base font-bold text-fuchsia-500">
-        请先按下单键/组合键，通过回车键（Enter ⏎）来设置
-      </h3>
-      <div class="h-8 rounded border border-solid border-fuchsia-500 text-center leading-8">
-        {{ shortcutKeyStr }}
-      </div>
-      <div
-        v-if="shortcutKeyTip"
-        class="mt-2 flex justify-center gap-0.5 text-center"
-      >
-        <UKbd v-for="key in parseShortcutKeys(shortcutKeyTip)">
-          {{ key }}
-        </UKbd>
-      </div>
-      <div
-        v-if="hasSameShortcutKey"
-        class="mt-4 text-center text-xs"
-        :class="'text-[rgba(136,136,136,1)]'"
-      >
-        已有相同的按键绑定，请重新设置
-      </div>
-    </div>
-
-    <!-- click outside to close -->
-    <form
-      method="dialog"
-      class="modal-backdrop"
-    >
-      <button @click="handleCloseDialog"></button>
-    </form>
-  </dialog>
+  <CustomShortcutDialog />
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from "vue";
-
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
 import { GameMode, useGameMode } from "~/composables/user/gameMode";
@@ -232,8 +191,6 @@ import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
 import { useShowWordsWidth } from "~/composables/user/words";
 import { parseShortcutKeys } from "~/utils/keyboardShortcuts";
 
-const dialogBoxRef = ref<HTMLElement | null>(null);
-
 const { autoNextQuestion, toggleAutoQuestion } = useAutoNextQuestion();
 const { keyboardSound, toggleKeyboardSound } = useKeyboardSound();
 const { autoPlaySound, toggleAutoPlaySound } = useAutoPronunciation();
@@ -247,16 +204,7 @@ const {
 const { showWordsWidth, toggleAutoWordsWidth } = useShowWordsWidth();
 const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { showErrorTip, toggleShowErrorTip } = useErrorTip();
-const {
-  showModal,
-  shortcutKeys,
-  shortcutKeyStr,
-  shortcutKeyTip,
-  hasSameShortcutKey,
-  handleEdit,
-  handleCloseDialog,
-  handleKeydown,
-} = useShortcutKeyMode();
+const { shortcutKeys, handleEdit } = useShortcutKeyMode();
 
 const { getGameModeOptions, currentGameMode, toggleGameMode } = useGameMode();
 
@@ -286,13 +234,6 @@ const shortcutKeyBindList = [
     type: SHORTCUT_KEY_TYPES.PAUSE,
   },
 ];
-
-onMounted(() => {
-  document.addEventListener("keydown", handleKeydown);
-});
-onUnmounted(() => {
-  document.removeEventListener("keydown", handleKeydown);
-});
 </script>
 
 <style scoped>

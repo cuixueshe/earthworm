@@ -48,7 +48,7 @@
             :name="item.icon"
             class="mr-3 h-7 w-7"
           ></UIcon>
-          <span class="text-lg font-medium">{{ item.title }}</span>
+          <span class="font-medium">{{ item.title }}</span>
         </button>
       </div>
 
