@@ -9,7 +9,8 @@ import {
 
 describe("user defined shortcut key", () => {
   beforeEach(() => {
-    localStorage.clear();
+    const { reset } = useShortcutKeyMode();
+    reset();
   });
 
   describe("shortcut key data", () => {
@@ -30,7 +31,8 @@ describe("user defined shortcut key", () => {
       };
 
       localStorage.setItem(SHORTCUT_KEYS, JSON.stringify(storeShortcutKeys));
-      const { shortcutKeys } = useShortcutKeyMode();
+      const { shortcutKeys, setShortcutKeys } = useShortcutKeyMode();
+      setShortcutKeys();
 
       expect(shortcutKeys.value).toEqual(storeShortcutKeys);
     });

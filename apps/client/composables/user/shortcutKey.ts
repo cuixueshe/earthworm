@@ -148,6 +148,15 @@ export function useShortcutKeyMode() {
     }
   }
 
+  function reset() {
+    showModal.value = false;
+    currentKeyType.value = "";
+    shortcutKeyStr.value = "";
+    shortcutKeys.value = { ...DEFAULT_SHORTCUT_KEYS };
+    hasSameShortcutKey.value = false;
+    localStorage.removeItem(SHORTCUT_KEYS);
+  }
+
   return {
     showModal, // 弹框对象
     shortcutKeys, // 快捷键对象
@@ -158,5 +167,6 @@ export function useShortcutKeyMode() {
     handleKeydown,
     handleEdit,
     handleCloseDialog,
+    reset,
   };
 }
