@@ -24,6 +24,10 @@ export default defineAppConfig({
     container: {
       base: "py-5",
     },
+    tooltip: {
+      wrapper: "flex justify-center items-center",
+      strategy: "override",
+    },
     kbd: {
       default: {
         size: "md",

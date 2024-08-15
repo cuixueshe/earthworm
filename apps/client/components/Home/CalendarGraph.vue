@@ -35,10 +35,7 @@
                 v-for="(cell, j) in row"
                 :key="j"
               >
-                <UTooltip
-                  :text="cell?.tips"
-                  :ui="{ wrapper: '', strategy: 'override' }"
-                >
+                <UTooltip :text="cell?.tips">
                   <div
                     class="cell block"
                     :class="[cell?.bg]"
