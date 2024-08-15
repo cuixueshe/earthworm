@@ -11,14 +11,14 @@
             <td class="text-right">
               <div class="join">
                 <input
-                  v-for="mode in getGameModeOptions()"
+                  v-for="mode in getGamePlayModeOptions()"
                   class="btn join-item btn-sm"
                   type="radio"
                   name="gameMode"
                   :value="mode.value"
                   :aria-label="mode.label"
-                  :checked="currentGameMode === mode.value"
-                  @change="toggleGameMode(mode.value as GameMode)"
+                  :checked="currentGamePlayMode === mode.value"
+                  @change="toggleGamePlayMode(mode.value as GamePlayMode)"
                 />
               </div>
             </td>
@@ -179,7 +179,7 @@
 <script setup lang="ts">
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useErrorTip } from "~/composables/user/errorTip";
-import { GameMode, useGameMode } from "~/composables/user/gameMode";
+import { GamePlayMode, useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { SHORTCUT_KEY_TYPES, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import {
@@ -206,7 +206,7 @@ const { useSpace, toggleUseSpaceSubmitAnswer } = useSpaceSubmitAnswer();
 const { showErrorTip, toggleShowErrorTip } = useErrorTip();
 const { shortcutKeys, handleEdit } = useShortcutKeyMode();
 
-const { getGameModeOptions, currentGameMode, toggleGameMode } = useGameMode();
+const { getGamePlayModeOptions, currentGamePlayMode, toggleGamePlayMode } = useGamePlayMode();
 
 const shortcutKeyBindList = [
   {

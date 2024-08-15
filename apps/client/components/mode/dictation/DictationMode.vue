@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex h-full items-center justify-center">
+  <div class="flex h-full items-center justify-center">
     <div v-if="!isStart">
       <button
         class="btn"
@@ -11,7 +11,6 @@
       <p v-else>准备好了吗？(按任意键开启游戏)</p>
     </div>
     <div v-else>
-      <ModeDictationToolbar />
       <template v-if="isQuestion()">
         <ModeDictationQuestion />
         <MainAnswerTip v-show="isAnswerTip()" />

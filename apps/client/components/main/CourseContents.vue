@@ -6,19 +6,10 @@
         constrained: 'max-w-[880px] max-h-[880px]',
       }"
     >
-      <div class="mb-4">
-        <h1 class="text-center text-2xl font-bold text-purple-800 dark:text-white">课程目录</h1>
-        <div class="absolute right-2 top-2">
-          <UButton
-            color="gray"
-            variant="ghost"
-            icon="i-heroicons-x-mark-20-solid"
-            @click="hideCourseContents"
-            tabindex="-1"
-            :ui="{ color: { gray: { ghost: 'dark:hover:bg-gray-600' } } }"
-          />
-        </div>
-      </div>
+      <CommonModalHeader
+        title="课程目录"
+        @close="hideCourseContents"
+      />
       <!-- 添加选项菜单 -->
       <div class="mb-4 flex justify-end">
         <USelect

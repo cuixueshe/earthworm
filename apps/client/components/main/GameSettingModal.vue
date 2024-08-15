@@ -1,45 +1,54 @@
 <template>
-  <div class="absolute right-0 top-0 mt-12 text-sm dark:text-gray-50">
-    <template
-      v-for="option in TOOLBAR_LIST"
-      :key="option.key"
+  <UModal v-model="showGameSettingModal">
+    <UContainer
+      :ui="{
+        base: 'w-[70vw] h-[50vh] flex flex-col',
+        constrained: 'max-w-[680px] max-h-[580px]',
+      }"
     >
-      <span class="mx-2">{{ option.label }}：</span>
-      <select
-        class="select select-ghost h-4 w-24 md:h-8 md:w-24"
-        v-model="toolBarData[option.key]"
-      >
-        <option
-          v-for="item in option.options"
-          :key="item.value"
-          :value="item.value"
-          class="h-2"
-        >
-          {{ item.label }}
-        </option>
-      </select>
-    </template>
-
-    <button
-      @click="handleReset"
-      class="btn btn-primary mx-3"
-    >
-      重置
-    </button>
-    <button
-      @click="handlePlay"
-      class="btn btn-secondary"
-    >
-      重新播放
-    </button>
-  </div>
+      <CommonModalHeader
+        title="游戏设置"
+        @close="closeGameSettingModal"
+      />
+      <div class="mt-6 px-4">
+        <div class="flex flex-col space-y-4">
+          <template
+            v-for="option in TOOLBAR_LIST"
+            :key="option.key"
+          >
+            <div class="flex items-center justify-between">
+              <span class="mr-2 text-sm font-medium dark:text-gray-200">{{ option.label }}：</span>
+              <USelect
+                v-model="toolBarData[option.key]"
+                :options="option.options"
+                size="sm"
+                class="w-32"
+              />
+            </div>
+          </template>
+        </div>
+        <div class="mt-6 flex justify-end">
+          <UButton
+            @click="handleReset"
+            color="primary"
+            variant="solid"
+          >
+            重置
+          </UButton>
+        </div>
+      </div>
+    </UContainer>
+  </UModal>
 </template>
 
 <script setup lang="ts">
 import { onMounted, watch } from "vue";
 
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
-import { play, useToolbar } from "./dictation";
+import { play, useToolbar } from "~/composables/main/dictation";
+import { useGameSetting } from "~/composables/main/useGameSetting";
+
+const { showGameSettingModal, closeGameSettingModal } = useGameSetting();
 
 const { focusInput } = useQuestionInput();
 

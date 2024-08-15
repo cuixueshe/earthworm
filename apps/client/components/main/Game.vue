@@ -1,8 +1,8 @@
 <template>
-  <template v-if="currentGameMode === GameMode.Dictation">
+  <template v-if="isDictationMode()">
     <ModeDictationMode />
   </template>
-  <template v-else-if="currentGameMode === GameMode.ChineseToEnglish">
+  <template v-else-if="isChineseToEnglishMode()">
     <ModeChineseToEnglishMode />
   </template>
 
@@ -11,6 +11,7 @@
   <MainSummary />
   <MainShare />
   <GamePauseModal v-if="isAuthenticated()"></GamePauseModal>
+  <MainGameSettingModal />
 </template>
 
 <script setup lang="ts">
@@ -18,11 +19,11 @@ import { onMounted, onUnmounted } from "vue";
 
 import GamePauseModal from "~/components/main/GamePauseModal.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { GameMode, useGameMode } from "~/composables/user/gameMode";
+import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { isAuthenticated } from "~/services/auth";
 import { useGameStore } from "~/store/game";
 
-const { currentGameMode } = useGameMode();
+const { isChineseToEnglishMode, isDictationMode } = useGamePlayMode();
 const gameStore = useGameStore();
 
 onMounted(() => {

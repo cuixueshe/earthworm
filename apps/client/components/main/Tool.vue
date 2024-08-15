@@ -26,6 +26,18 @@
     <!-- 右侧 -->
     <div class="flex items-center gap-4">
       <div
+        @click="openGameSettingModal"
+        v-if="isDictationMode()"
+      >
+        <UTooltip text="游戏设置">
+          <UIcon
+            name="i-ph-gear"
+            class="clickable-item h-6 w-6"
+          />
+        </UTooltip>
+      </div>
+
+      <div
         v-if="isAuthenticated()"
         @click="pauseGame"
       >
@@ -79,18 +91,22 @@ import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
 import { useCourseContents } from "~/composables/main/useCourseContents";
 import { useGamePause } from "~/composables/main/useGamePause";
+import { useGameSetting } from "~/composables/main/useGameSetting";
 import { useRanking } from "~/composables/rank/rankingList";
+import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { parseShortcut, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 
 const { shortcutKeys } = useShortcutKeyMode();
+const { isDictationMode } = useGamePlayMode();
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
 const { openCourseContents } = useCourseContents();
 const { handleDoAgain } = useDoAgain();
 const { pauseGame } = useGamePause();
+const { openGameSettingModal } = useGameSetting();
 const modal = useModal();
 
 const currentCourseInfo = computed(() => {

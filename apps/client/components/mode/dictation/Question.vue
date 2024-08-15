@@ -7,8 +7,8 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch } from "vue";
 
+import { play } from "~/composables/main/dictation";
 import { useCourseStore } from "~/store/course";
-import { play } from "./dictation";
 
 usePlayEnglishSound();
 

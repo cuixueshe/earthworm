@@ -1,7 +1,5 @@
 import { reactive } from "vue";
 
-import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
-
 interface ToolBar {
   times: number;
   rate: number;
@@ -41,10 +39,4 @@ export function useToolbar() {
     recoverToolBarData,
     resetToolBarData,
   };
-}
-
-export function play() {
-  const { times, rate, interval } = toolBarData;
-  const { playSound } = useCurrentStatementEnglishSound();
-  return playSound({ times, rate, interval });
 }

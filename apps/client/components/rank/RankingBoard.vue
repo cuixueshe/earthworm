@@ -6,19 +6,10 @@
         constrained: 'max-w-[500px]',
       }"
     >
-      <div class="absolute right-2 top-2">
-        <UButton
-          color="gray"
-          variant="ghost"
-          icon="i-heroicons-x-mark-20-solid"
-          @click="rankingStore.hideRankModal"
-          tabindex="-1"
-          :ui="{ color: { gray: { ghost: 'dark:hover:bg-gray-600' } } }"
-        />
-      </div>
-
-      <!-- title -->
-      <h2 class="mb-4 text-center text-xl font-bold">排行榜</h2>
+      <CommonModalHeader
+        title="排行榜"
+        @close="rankingStore.hideRankModal"
+      />
 
       <div class="flex-grow">
         <!-- tab -->
