@@ -196,6 +196,8 @@ export function useCalendarGraph(emits: EmitsType, config: CalendarConfig) {
           if (offset < 3) {
             preTH.month = -1;
             theadLen = 13;
+          } else if (offset === 3) {
+            theadLen = 13;
           }
           thead.push(preTH);
         }
