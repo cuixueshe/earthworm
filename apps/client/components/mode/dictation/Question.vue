@@ -7,21 +7,22 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch } from "vue";
 
-import { play } from "~/composables/main/dictation";
+import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { useCourseStore } from "~/store/course";
 
 usePlayEnglishSound();
+const { playSound } = useCurrentStatementEnglishSound();
 
 function usePlayEnglishSound() {
   onMounted(() => {
-    const pauseSound = play();
+    const pauseSound = playSound();
     const courseStore = useCourseStore();
 
     watch(
       () => courseStore.statementIndex,
       () => {
         pauseSound();
-        play();
+        playSound();
       },
     );
 

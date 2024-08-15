@@ -44,13 +44,10 @@
 <script setup lang="ts">
 import { onMounted, watch } from "vue";
 
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
-import { play, useToolbar } from "~/composables/main/dictation";
+import { useToolbar } from "~/composables/main/dictation";
 import { useGameSetting } from "~/composables/main/useGameSetting";
 
 const { showGameSettingModal, closeGameSettingModal } = useGameSetting();
-
-const { focusInput } = useQuestionInput();
 
 const { toolBarData, recoverToolBarData, saveToolBarData, resetToolBarData } = useToolbar();
 
@@ -64,11 +61,6 @@ watch(toolBarData, () => {
 
 function handleReset() {
   resetToolBarData();
-}
-
-function handlePlay() {
-  play();
-  focusInput();
 }
 
 const TOOLBAR_LIST = [
