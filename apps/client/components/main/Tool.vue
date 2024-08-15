@@ -14,7 +14,7 @@
       </NuxtLink>
       <div
         class="clickable-item ml-4"
-        @click="toggleContents"
+        @click="openCourseContents"
       >
         <UTooltip text="课程题目列表">
           {{ currentCourseInfo }}
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <MainContents />
+    <MainCourseContents v-model:isOpen="isOpenCourseContents"></MainCourseContents>
   </div>
 
   <CommonProgressBar
@@ -70,25 +70,25 @@
 
 <script setup lang="ts">
 import { useModal } from "#imports";
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 import Dialog from "~/components/common/Dialog.vue";
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGameMode } from "~/composables/main/game";
 import { clearQuestionInput } from "~/composables/main/question";
+import { useCourseContents } from "~/composables/main/useCourseContents";
 import { useGamePause } from "~/composables/main/useGamePause";
 import { useRanking } from "~/composables/rank/rankingList";
 import { parseShortcut, useShortcutKeyMode } from "~/composables/user/shortcutKey";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
-import { useContent } from "./Contents/useContents";
 
 const { shortcutKeys } = useShortcutKeyMode();
 const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
-const { toggleContents } = useContent();
+const { openCourseContents } = useCourseContents();
 const { handleDoAgain } = useDoAgain();
 const { pauseGame } = useGamePause();
 const modal = useModal();
@@ -109,6 +109,8 @@ const currentPercentage = computed(() => {
     2,
   );
 });
+
+const isOpenCourseContents = ref(false);
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();

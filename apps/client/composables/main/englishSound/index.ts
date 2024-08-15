@@ -33,3 +33,9 @@ export function readOneSentencePerDayAloud(str: string) {
   updateSource(pronunciationUrl);
   play();
 }
+
+export function playEnglish(english: string) {
+  const pronunciationUrl = getPronunciationUrl(english);
+  updateSource(pronunciationUrl);
+  play();
+}
