@@ -57,12 +57,7 @@
           播放声音
         </button>
       </div>
-      <button
-        class="btn btn-outline btn-sm"
-        @click="handleMastered"
-      >
-        掌握
-      </button>
+      <MainMasteredBtn></MainMasteredBtn>
     </div>
   </div>
 </template>
@@ -75,9 +70,7 @@ import { courseTimer } from "~/composables/courses/courseTimer";
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { isWord } from "~/composables/main/question";
-import { useMastered } from "~/composables/main/useMastered";
 import { useShowWordsWidth } from "~/composables/user/words";
-import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { isWindows } from "~/utils/platform";
 import { getWordWidth, useQuestionInput } from "./questionInputHelper";
@@ -98,7 +91,6 @@ const {
 const { isShowWordsWidth } = useShowWordsWidth();
 const { toggleAnswerTip, isAnswerTip } = useAnswerTip();
 const { resetCloseTip } = useAnswerError();
-const { handleMastered } = useMasteredShortcut();
 initializeQuestionInput();
 focusInputWhenWIndowFocus();
 
@@ -135,23 +127,6 @@ function focusInputWhenWIndowFocus() {
   onUnmounted(() => {
     window.removeEventListener("focus", handleFocus);
   });
-}
-
-function useMasteredShortcut() {
-  const { markStatementAsMastered } = useMastered();
-
-  function handleMastered() {
-    if (!isAuthenticated()) {
-      toast.warning("需要登录哦");
-      return;
-    }
-
-    markStatementAsMastered();
-  }
-
-  return {
-    handleMastered,
-  };
 }
 
 const { playSound } = useCurrentStatementEnglishSound();
