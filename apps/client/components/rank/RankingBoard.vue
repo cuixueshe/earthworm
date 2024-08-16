@@ -11,7 +11,7 @@
         @close="rankingStore.hideRankModal"
       />
 
-      <div class="flex flex-grow flex-col overflow-y-auto">
+      <div class="flex flex-grow flex-col overflow-y-auto overflow-x-hidden">
         <!-- tab -->
         <div
           role="tablist"
