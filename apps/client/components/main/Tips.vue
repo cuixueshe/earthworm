@@ -21,7 +21,6 @@
 
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted } from "vue";
-import { toast } from "vue-sonner";
 
 import { useAnswerTip } from "~/composables/main/answerTip";
 import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
@@ -29,7 +28,6 @@ import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useMastered } from "~/composables/main/useMastered";
 import { useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { isAuthenticated } from "~/services/auth";
 import { cancelShortcut, parseShortcutKeys, registerShortcut } from "~/utils/keyboardShortcuts";
 import { useAnswer } from "./QuestionInput/useAnswer";
 import { useWrapperQuestionInput } from "./QuestionInput/useWrapperQuestionInput";
@@ -106,11 +104,6 @@ function useMasteredShortcut() {
   const { markStatementAsMastered } = useMastered();
 
   function handleMastered() {
-    if (!isAuthenticated()) {
-      toast.warning("需要登录哦");
-      return;
-    }
-
     markStatementAsMastered();
   }
 

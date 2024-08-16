@@ -17,7 +17,13 @@ export const useMasteredElementsStore = defineStore("masteredElements", () => {
 
   async function addElement(content: MasteredElementContent) {
     const result = await fetchAddMasteredElement(content);
+    const previousElements = [...masteredElements.value];
     masteredElements.value.unshift(result);
+
+    return () => {
+      masteredElements.value = previousElements;
+      fetchRemoveMasteredElements(result.id).catch(console.error);
+    };
   }
 
   async function removeElement(elementId: string) {
