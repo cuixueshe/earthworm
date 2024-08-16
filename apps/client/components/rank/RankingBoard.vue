@@ -11,7 +11,7 @@
         @close="rankingStore.hideRankModal"
       />
 
-      <div class="flex-grow">
+      <div class="flex flex-grow flex-col overflow-y-auto">
         <!-- tab -->
         <div
           role="tablist"
@@ -34,7 +34,7 @@
           <!-- list -->
           <div
             v-if="rankingStore.rankingList.length > 0"
-            class="my-1 flex-1 overflow-y-auto px-4 py-2"
+            class="my-1 h-full flex-1 overflow-y-auto px-4 py-2"
           >
             <RankRankingItem
               v-for="({ username, count }, index) in rankingStore.rankingList"
