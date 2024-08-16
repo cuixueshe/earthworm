@@ -1,6 +1,7 @@
+import { debounce } from "lodash-es";
 import { ref, watch } from "vue";
 
-import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
+import { useWrapperQuestionInput } from "~/components/main/QuestionInput/useWrapperQuestionInput";
 import { useCourseStore } from "~/store/course";
 import { useGameStore } from "~/store/game";
 
@@ -16,6 +17,7 @@ const showGamePauseModal = ref(false);
 export function useGamePause() {
   const courseStore = useCourseStore();
   const gameStore = useGameStore();
+  const { inputValue } = useWrapperQuestionInput();
 
   function resumeGame() {
     showGamePauseModal.value = false;
@@ -42,13 +44,24 @@ export function useGamePause() {
   }
 
   function enableAutoPauseCheck() {
+    const debouncedResetInactivityTimer = debounce(resetInactivityTimer, 500);
+
+    // 用户切换题目的时候重置计时器
     watch(
       () => courseStore.statementIndex,
       () => {
-        resetInactivityTimer();
+        debouncedResetInactivityTimer();
       },
       {
         immediate: true,
+      },
+    );
+
+    // 用户输入内容的时候重置计时器
+    watch(
+      () => inputValue.value,
+      () => {
+        debouncedResetInactivityTimer();
       },
     );
   }
