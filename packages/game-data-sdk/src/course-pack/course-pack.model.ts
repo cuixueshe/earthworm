@@ -8,6 +8,7 @@ interface Course {
   title: string;
   description: string;
   statements: Statement[];
+  learningContent: string;
 }
 
 export interface CreateCoursePack {

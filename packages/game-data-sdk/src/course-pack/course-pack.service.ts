@@ -36,6 +36,7 @@ export async function createCoursePack(coursePackInfo: CreateCoursePack) {
           order: cIndex + 1,
           title: course.title,
           description: course.description,
+          learningContent: course.learningContent,
         })
         .returning({
           id: courseSchema.id,
@@ -154,6 +155,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
               title: newCourseInfo.title,
               description: newCourseInfo.description,
               order: newCourseIndex + 1,
+              learningContent: newCourseInfo.learningContent,
             })
             .where(eq(courseSchema.id, newCourseInfo.publishCourseId));
 
@@ -170,6 +172,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
               description: newCourseInfo.description,
               order: newCourseIndex + 1,
               coursePackId: coursePackId,
+              learningContent: newCourseInfo.learningContent,
             })
             .returning({
               id: courseSchema.id,
