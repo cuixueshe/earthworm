@@ -1,0 +1,113 @@
+table courses {
+  id text [pk, not null]
+  title varchar(256) [not null]
+  description text [default: '']
+  video text [default: '']
+  order integer [not null]
+  course_pack_id text [not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+}
+
+table course_history {
+  id text [pk, not null]
+  user_id text [not null]
+  course_id text [not null]
+  course_pack_id text [not null]
+  completion_count integer [not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+
+  indexes {
+    (user_id, course_id, course_pack_id) [name: 'course_history_user_id_course_id_course_pack_id_unique', unique]
+  }
+}
+
+table statements {
+  id text [pk, not null]
+  order integer [not null]
+  chinese text [not null]
+  english text [not null]
+  soundmark text [not null]
+  course_id text [not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+}
+
+table user_learn_record {
+  id text [pk, not null]
+  user_id text [not null]
+  count integer [not null, default: 0]
+  day date [not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+
+  indexes {
+    (user_id, day) [name: 'user_learn_record_user_id_day_unique', unique]
+  }
+}
+
+table user_course_progress {
+  id text [pk, not null]
+  user_id text [not null]
+  course_pack_id text [not null]
+  course_id text [not null]
+  statement_index integer [not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+
+  indexes {
+    (user_id, course_pack_id) [name: 'user_course_progress_user_id_course_pack_id_unique', unique]
+  }
+}
+
+table memberships {
+  id text [pk, not null]
+  user_id text [not null]
+  start_date timestamp [not null]
+  end_date timestamp [not null]
+  isActive boolean [default: true]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+  type text [not null, default: 'regular']
+}
+
+table course_packs {
+  id text [pk, not null]
+  order integer [not null]
+  title text [not null]
+  description text [default: '']
+  is_free boolean
+  cover text
+  creator_id text [not null]
+  share_level text [default: 'private']
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+}
+
+table user_learning_activities {
+  id text [pk, not null]
+  user_id text [not null]
+  date date [not null]
+  activity_type text [not null]
+  course_id text
+  duration integer [not null]
+  metadata jsonb
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp
+
+  indexes {
+    (user_id, date, activity_type) [name: 'user_learning_activities_user_id_date_activity_type_unique', unique]
+  }
+}
+
+table mastered_elements {
+  id text [pk, not null]
+  user_id text [not null]
+  content jsonb [not null]
+  mastered_at timestamp [default: `now()`]
+}
+
+ref: courses.course_pack_id > course_packs.id
+
+ref: statements.course_id > courses.id
