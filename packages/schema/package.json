@@ -7,10 +7,14 @@
   "author": "cuixiaorui",
   "scripts": {
     "build": "tsup",
-    "release": "pnpm publish --registry http://124.223.41.130:4873/ --no-git-checks"
+    "release": "pnpm publish --registry http://124.223.41.130:4873/ --no-git-checks",
+    "view": "tsx src/dbml.ts && dbml-renderer -i schema.dbml -o output.svg"
   },
   "dependencies": {
     "@paralleldrive/cuid2": "2.2.2",
-    "drizzle-orm": "^0.32.0"
+    "@softwaretechnik/dbml-renderer": "^1.0.30",
+    "drizzle-dbml-generator": "^0.9.0",
+    "drizzle-orm": "^0.32.0",
+    "sharp": "^0.33.5"
   }
 }
