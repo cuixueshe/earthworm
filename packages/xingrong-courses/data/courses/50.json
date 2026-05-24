@@ -1,781 +1,781 @@
 [
 	{
-		"chinese": "支付",
+		"nativeText": "trả",
 		"english": "to pay",
 		"soundmark": "/tə/ /pe/"
 	},
 	{
-		"chinese": "账单",
+		"nativeText": "hoá đơn",
 		"english": "the bill",
 		"soundmark": "/ðə/ /bɪl/"
 	},
 	{
-		"chinese": "支付账单",
+		"nativeText": "trả hoá đơn",
 		"english": "to pay the bill",
 		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "我支付账单",
+		"nativeText": "tôi trả hoá đơn",
 		"english": "I pay the bill",
 		"soundmark": "/aɪ/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "支付(过去分词)",
+		"nativeText": "trả (quá khứ phân từ)",
 		"english": "paid",
 		"soundmark": "/ped/"
 	},
 	{
-		"chinese": "我(已经)支付了账单",
+		"nativeText": "tôi đã trả hoá đơn",
 		"english": "I have paid the bill",
 		"soundmark": "/aɪ/ /hæv/ /ped/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "老师",
+		"nativeText": "giáo viên",
 		"english": "teacher",
 		"soundmark": "/'titʃɚ/"
 	},
 	{
-		"chinese": "我是一名老师",
+		"nativeText": "tôi là một giáo viên",
 		"english": "I am a teacher",
 		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "我(已经)是一名老师了",
+		"nativeText": "tôi đã là một giáo viên",
 		"english": "I have been a teacher",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "五年",
+		"nativeText": "năm năm",
 		"english": "five years",
 		"soundmark": "/faɪv/ /jɪrz/"
 	},
 	{
-		"chinese": "我(已经)是一名老师五年了",
+		"nativeText": "tôi đã là một giáo viên năm năm rồi",
 		"english": "I have been a teacher for five years",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə/ /'titʃɚ/ /fɚ/ /faɪv/ /jɪrz/"
 	},
 	{
-		"chinese": "自从......以来",
+		"nativeText": "từ khi",
 		"english": "since",
 		"soundmark": "/sɪns/"
 	},
 	{
-		"chinese": "我自从2019年(已经)是一名老师了",
+		"nativeText": "tôi đã là một giáo viên từ năm 2019",
 		"english": "I have been a teacher since 2019",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə/ /'titʃɚ/ /sɪns/ /'twɛnti/ /ˌnaɪn'tin/"
 	},
 	{
-		"chinese": "医生",
+		"nativeText": "bác sĩ",
 		"english": "doctor",
 		"soundmark": "/'dɑktɚ/"
 	},
 	{
-		"chinese": "他是一名医生",
+		"nativeText": "anh ấy là một bác sĩ",
 		"english": "he is a doctor",
 		"soundmark": "/hi/ /ɪz/ /ə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "他(已经)是一名医生了",
+		"nativeText": "anh ấy đã là một bác sĩ",
 		"english": "he has been a doctor",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "他(已经)是一名医生15年了",
+		"nativeText": "anh ấy đã là một bác sĩ 15 năm rồi",
 		"english": "he has been a doctor for fifteen years",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /ə/ /'dɑktɚ/ /fɚ/ /ˌfɪfˈtin/ /jɪrz/"
 	},
 	{
-		"chinese": "生病的",
+		"nativeText": "ốm",
 		"english": "sick",
 		"soundmark": "/sɪk/"
 	},
 	{
-		"chinese": "他是生病的",
+		"nativeText": "anh ấy bị ốm",
 		"english": "he is sick",
 		"soundmark": "/hi/ /ɪz/ /sɪk/"
 	},
 	{
-		"chinese": "他(已经)生病了",
+		"nativeText": "anh ấy đã bị ốm",
 		"english": "he has been sick",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /sɪk/"
 	},
 	{
-		"chinese": "一星期",
+		"nativeText": "một tuần",
 		"english": "a week",
 		"soundmark": "/ə/ /wik/"
 	},
 	{
-		"chinese": "他(已经)生病一星期了",
+		"nativeText": "anh ấy đã bị ốm một tuần rồi",
 		"english": "he has been sick for a week",
 		"soundmark": "/hi/ /hæz/ /bɪn/ /sɪk/ /fɚ/ /ə/ /wik/"
 	},
 	{
-		"chinese": "结婚",
+		"nativeText": "cưới",
 		"english": "to marry",
 		"soundmark": "/tə/ /'mæri/"
 	},
 	{
-		"chinese": "结婚的",
+		"nativeText": "đã kết hôn",
 		"english": "married",
 		"soundmark": "/ˈmærid/"
 	},
 	{
-		"chinese": "他们是结婚的",
+		"nativeText": "họ đã kết hôn",
 		"english": "they are married",
 		"soundmark": "/ðe/ /ɚ/ /ˈmærid/"
 	},
 	{
-		"chinese": "他们(已经)结婚了",
+		"nativeText": "họ đã kết hôn rồi",
 		"english": "they have been married",
 		"soundmark": "/ðe/ /hæv/ /bɪn/ /ˈmærid/"
 	},
 	{
-		"chinese": "十年",
+		"nativeText": "mười năm",
 		"english": "ten years",
 		"soundmark": "/tɛn/ /jɪrz/"
 	},
 	{
-		"chinese": "他们(已经)结婚十年了",
+		"nativeText": "họ đã kết hôn mười năm rồi",
 		"english": "they have been married for ten years",
 		"soundmark": "/ðe/ /hæv/ /bɪn/ /ˈmærid/ /fɚ/ /tɛn/ /jɪrz/"
 	},
 	{
-		"chinese": "朋友",
+		"nativeText": "bạn bè",
 		"english": "friend",
 		"soundmark": "/frɛnd/"
 	},
 	{
-		"chinese": "他们是朋友",
+		"nativeText": "họ là bạn bè",
 		"english": "they are friends",
 		"soundmark": "/ðe/ /ɚ/ /frɛndz/"
 	},
 	{
-		"chinese": "他们(已经)是朋友了",
+		"nativeText": "họ đã là bạn bè rồi",
 		"english": "they have been friends",
 		"soundmark": "/ðe/ /hæv/ /bɪn/ /frɛndz/"
 	},
 	{
-		"chinese": "自从......以来",
+		"nativeText": "từ khi",
 		"english": "since",
 		"soundmark": "/sɪns/"
 	},
 	{
-		"chinese": "幼儿园",
+		"nativeText": "trường mầm non",
 		"english": "kindergarten",
 		"soundmark": "/ˈkɪndɚɡɑrtn/"
 	},
 	{
-		"chinese": "自从幼儿园",
+		"nativeText": "từ thời mầm non",
 		"english": "since kindergarten",
 		"soundmark": "/sɪns/ /ˈkɪndɚɡɑrtn/"
 	},
 	{
-		"chinese": "他们自从幼儿园(已经)是朋友了",
+		"nativeText": "họ đã là bạn bè từ thời mầm non",
 		"english": "they have been friends since kindergarten",
 		"soundmark": "/ðe/ /hæv/ /bɪn/ /frɛndz/ /sɪns/ /ˈkɪndɚɡɑrtn/"
 	},
 	{
-		"chinese": "我们是朋友",
+		"nativeText": "chúng ta là bạn bè",
 		"english": "we are friends",
 		"soundmark": "/wi/ /ɚ/ /frɛndz/"
 	},
 	{
-		"chinese": "我们(已经)是朋友了",
+		"nativeText": "chúng ta đã là bạn bè rồi",
 		"english": "we have been friends",
 		"soundmark": "/wi/ /hæv/ /bɪn/ /frɛndz/"
 	},
 	{
-		"chinese": "孩子",
+		"nativeText": "đứa trẻ",
 		"english": "child",
 		"soundmark": "/tʃaɪld/"
 	},
 	{
-		"chinese": "童年",
+		"nativeText": "thời thơ ấu",
 		"english": "childhood",
 		"soundmark": "/ˈtʃaɪldhʊd/"
 	},
 	{
-		"chinese": "自从......以来",
+		"nativeText": "từ khi",
 		"english": "since",
 		"soundmark": "/sɪns/"
 	},
 	{
-		"chinese": "自从童年",
+		"nativeText": "từ thời thơ ấu",
 		"english": "since childhood",
 		"soundmark": "/sɪns/ /ˈtʃaɪldhʊd/"
 	},
 	{
-		"chinese": "我们自从童年(已经)是朋友了",
+		"nativeText": "chúng ta đã là bạn bè từ thời thơ ấu",
 		"english": "we have been friends since childhood",
 		"soundmark": "/wi/ /hæv/ /bɪn/ /frɛndz/ /sɪns/ /ˈtʃaɪldhʊd/"
 	},
 	{
-		"chinese": "邻居",
+		"nativeText": "hàng xóm",
 		"english": "neighbor",
 		"soundmark": "/ˈnebɚ/"
 	},
 	{
-		"chinese": "我们是邻居",
+		"nativeText": "chúng ta là hàng xóm",
 		"english": "we are neighbors",
 		"soundmark": "/wi/ /ɚ/ /ˈnebɚz/"
 	},
 	{
-		"chinese": "我们(已经)是邻居了",
+		"nativeText": "chúng ta đã là hàng xóm rồi",
 		"english": "we have been neighbors",
 		"soundmark": "/wi/ /hæv/ /bɪn/ /ˈnebɚz/"
 	},
 	{
-		"chinese": "邻居",
+		"nativeText": "hàng xóm",
 		"english": "neighbor",
 		"soundmark": "/ˈnebɚ/"
 	},
 	{
-		"chinese": "街区",
+		"nativeText": "khu vực",
 		"english": "neighborhood",
 		"soundmark": "/ˈnebɚˌhʊd/"
 	},
 	{
-		"chinese": "这个街区",
+		"nativeText": "khu vực này",
 		"english": "this neighborhood",
 		"soundmark": "/ðɪs/ /ˈnebɚˌhʊd/"
 	},
 	{
-		"chinese": "搬家",
+		"nativeText": "dọn nhà",
 		"english": "to move",
 		"soundmark": "/tə/ /muv/"
 	},
 	{
-		"chinese": "搬家(过去式)",
+		"nativeText": "dọn nhà (quá khứ)",
 		"english": "moved",
 		"soundmark": "/muvd/"
 	},
 	{
-		"chinese": "我们搬家(过去式)",
+		"nativeText": "chúng ta đã dọn nhà",
 		"english": "we moved",
 		"soundmark": "/wi/ /muvd/"
 	},
 	{
-		"chinese": "我们搬家到这个街区",
+		"nativeText": "chúng ta dọn đến khu vực này",
 		"english": "we moved to this neighborhood",
 		"soundmark": "/wi/ /muvd/ /tə/ /ðɪs/ /ˈnebɚˌhʊd/"
 	},
 	{
-		"chinese": "自从......以来",
+		"nativeText": "từ khi",
 		"english": "since",
 		"soundmark": "/sɪns/"
 	},
 	{
-		"chinese": "自从我们搬家到这个街区",
+		"nativeText": "từ khi chúng ta dọn đến khu vực này",
 		"english": "since we moved to this neighborhood",
 		"soundmark": "/sɪns/ /wi/ /muvd/ /tə/ /ðɪs/ /ˈnebɚˌhʊd/"
 	},
 	{
-		"chinese": "两个都",
+		"nativeText": "cả hai",
 		"english": "both",
 		"soundmark": "/boθ/"
 	},
 	{
-		"chinese": "自从我们两个都搬家到这个街区",
+		"nativeText": "từ khi cả hai chúng ta dọn đến khu vực này",
 		"english": "since we both moved to this neighborhood",
 		"soundmark": "/sɪns/ /wi/ /boθ/ /muvd/ /tə/ /ðɪs/ /ˈnebɚˌhʊd/"
 	},
 	{
-		"chinese": "我们(已经)是邻居了",
+		"nativeText": "chúng ta đã là hàng xóm rồi",
 		"english": "we have been neighbors",
 		"soundmark": "/wi/ /hæv/ /bɪn/ /ˈnebɚz/"
 	},
 	{
-		"chinese": "我们(已经)是邻居了自从我们两个都搬家到这个街区",
+		"nativeText": "chúng ta đã là hàng xóm từ khi cả hai dọn đến khu vực này",
 		"english": "we have been neighbors since we both moved to this neighborhood",
 		"soundmark": "/wi/ /hæv/ /bɪn/ /ˈnebɚz/ /sɪns/ /wi/ /boθ/ /muvd/ /tə/ /ðɪs/ /ˈnebɚˌhʊd/"
 	},
 	{
-		"chinese": "在这里",
+		"nativeText": "ở đây",
 		"english": "here",
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "我在这里",
+		"nativeText": "tôi ở đây",
 		"english": "I am here",
 		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "我(已经)在这里过了",
+		"nativeText": "tôi đã ở đây rồi",
 		"english": "I have been here",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /hɪr/"
 	},
 	{
-		"chinese": "在那里",
+		"nativeText": "ở đó",
 		"english": "there",
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "我在那里",
+		"nativeText": "tôi ở đó",
 		"english": "I am there",
 		"soundmark": "/aɪ/ /æm/ /ðɛr/"
 	},
 	{
-		"chinese": "我(已经)去过那里了",
+		"nativeText": "tôi đã từng ở đó",
 		"english": "I have been there",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ðɛr/"
 	},
 	{
-		"chinese": "在国外",
+		"nativeText": "ở nước ngoài",
 		"english": "abroad",
 		"soundmark": "/ə'brɔd/"
 	},
 	{
-		"chinese": "我在国外",
+		"nativeText": "tôi đang ở nước ngoài",
 		"english": "I am abroad",
 		"soundmark": "/aɪ/ /æm/ /ə'brɔd/"
 	},
 	{
-		"chinese": "我(已经)去过国外",
+		"nativeText": "tôi đã từng ở nước ngoài",
 		"english": "I have been abroad",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "地方",
+		"nativeText": "nơi chốn",
 		"english": "place",
 		"soundmark": "/ples/"
 	},
 	{
-		"chinese": "那个地方",
+		"nativeText": "nơi chốn đó",
 		"english": "that place",
 		"soundmark": "/ðæt/ /ples/"
 	},
 	{
-		"chinese": "我(已经)去过那个地方",
+		"nativeText": "tôi đã từng đến nơi chốn đó",
 		"english": "I have been to that place",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /ðæt/ /ples/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "我(还没有)去过那个地方",
+		"nativeText": "tôi chưa đến nơi chốn đó",
 		"english": "I haven't been to that place",
 		"soundmark": "/aɪ/ /ˈhævnt/ /bɪn/ /tə/ /ðæt/ /ples/"
 	},
 	{
-		"chinese": "从来没有",
+		"nativeText": "chưa từng",
 		"english": "never",
 		"soundmark": "/'nɛvɚ/"
 	},
 	{
-		"chinese": "我从来没有去过那个地方",
+		"nativeText": "tôi chưa từng đến nơi chốn đó",
 		"english": "I have never been to that place",
 		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /ðæt/ /ples/"
 	},
 	{
-		"chinese": "墙",
+		"nativeText": "bức tường",
 		"english": "wall",
 		"soundmark": "/wɔl/"
 	},
 	{
-		"chinese": "伟大的",
+		"nativeText": "vĩ đại",
 		"english": "great",
 		"soundmark": "/ɡret/"
 	},
 	{
-		"chinese": "长城",
+		"nativeText": "Vạn Lý Trường Thành",
 		"english": "The Great Wall",
 		"soundmark": "/ðə/ /ɡret/ /wɔl/"
 	},
 	{
-		"chinese": "中国",
+		"nativeText": "Trung Quốc",
 		"english": "China",
 		"soundmark": "/ˈtʃaɪnə/"
 	},
 	{
-		"chinese": "中国的长城",
+		"nativeText": "Vạn Lý Trường Thành của Trung Quốc",
 		"english": "The Great Wall of China",
 		"soundmark": "/ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/"
 	},
 	{
-		"chinese": "我(已经)去过那个地方",
+		"nativeText": "tôi đã từng đến nơi chốn đó",
 		"english": "I have been to that place",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /ðæt/ /ples/"
 	},
 	{
-		"chinese": "我(已经)去过中国的长城",
+		"nativeText": "tôi đã từng đến Vạn Lý Trường Thành của Trung Quốc",
 		"english": "I have been to the Great Wall of China",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/"
 	},
 	{
-		"chinese": "从来没有",
+		"nativeText": "chưa từng",
 		"english": "never",
 		"soundmark": "/'nɛvɚ/"
 	},
 	{
-		"chinese": "我从来没有去过中国的长城",
+		"nativeText": "tôi chưa từng đến Vạn Lý Trường Thành của Trung Quốc",
 		"english": "I have never been to the Great Wall of China",
 		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /ðə/ /ɡret/ /wɔl/ /əv/ /ˈtʃaɪnə/"
 	},
 	{
-		"chinese": "迪士尼乐园",
+		"nativeText": "Disneyland",
 		"english": "Disneyland",
 		"soundmark": "/'diznilænd/"
 	},
 	{
-		"chinese": "我(已经)去过迪士尼乐园",
+		"nativeText": "tôi đã từng đến Disneyland",
 		"english": "I have been to Disneyland",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /'diznilænd/"
 	},
 	{
-		"chinese": "加州",
+		"nativeText": "California",
 		"english": "California",
 		"soundmark": "/ˌkælɪˈfɔrnjə/"
 	},
 	{
-		"chinese": "在加州的迪士尼乐园",
+		"nativeText": "Disneyland ở California",
 		"english": "Disneyland in California",
 		"soundmark": "/'diznilænd/ /ɪn/ /ˌkælɪˈfɔrnjə/"
 	},
 	{
-		"chinese": "我(已经)去过在加州的迪士尼乐园",
+		"nativeText": "tôi đã từng đến Disneyland ở California",
 		"english": "I have been to Disneyland in California",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /'diznilænd/ /ɪn/ /ˌkælɪˈfɔrnjə/"
 	},
 	{
-		"chinese": "从来没有",
+		"nativeText": "chưa từng",
 		"english": "never",
 		"soundmark": "/'nɛvɚ/"
 	},
 	{
-		"chinese": "我从来没有去过在加州的迪士尼乐园",
+		"nativeText": "tôi chưa từng đến Disneyland ở California",
 		"english": "I have never been to Disneyland in California",
-		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /'diznilænd/ /ɪn/ /ˌkælɪˈfɔrnjə/"
+		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /'diznilænd' /ɪn/ /ˌkælɪˈfɔrnjə/"
 	},
 	{
-		"chinese": "日本",
+		"nativeText": "Nhật Bản",
 		"english": "Japan",
 		"soundmark": "/dʒəˈpæn/"
 	},
 	{
-		"chinese": "我(已经)去过日本",
+		"nativeText": "tôi đã từng đến Nhật Bản",
 		"english": "I have been to Japan",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /dʒəˈpæn/"
 	},
 	{
-		"chinese": "两次",
+		"nativeText": "hai lần",
 		"english": "twice",
 		"soundmark": "/twaɪs/"
 	},
 	{
-		"chinese": "我(已经)去过日本两次",
+		"nativeText": "tôi đã từng đến Nhật Bản hai lần",
 		"english": "I have been to Japan twice",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /dʒəˈpæn/ /twaɪs/"
 	},
 	{
-		"chinese": "从来没有",
+		"nativeText": "chưa từng",
 		"english": "never",
 		"soundmark": "/'nɛvɚ/"
 	},
 	{
-		"chinese": "我从来没有去过日本",
+		"nativeText": "tôi chưa từng đến Nhật Bản",
 		"english": "I have never been to Japan",
 		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /dʒəˈpæn/"
 	},
 	{
-		"chinese": "加拿大",
+		"nativeText": "Canada",
 		"english": "Canada",
 		"soundmark": "/ˈkænədə/"
 	},
 	{
-		"chinese": "我从来没有去过加拿大",
+		"nativeText": "tôi chưa từng đến Canada",
 		"english": "I have never been to Canada",
 		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /ˈkænədə/"
 	},
 	{
-		"chinese": "你从来没有去过加拿大",
+		"nativeText": "bạn chưa từng đến Canada",
 		"english": "you have never been to Canada",
 		"soundmark": "/ju/ /hæv/ /'nɛvɚ/ /bɪn/ /tə/ /ˈkænədə/"
 	},
 	{
-		"chinese": "你从来没有去过加拿大吗？",
+		"nativeText": "bạn chưa từng đến Canada à?",
 		"english": "have you never been to Canada",
 		"soundmark": "/hæv/ /ju/ /'nɛvɚ/ /bɪn/ /tə/ /ˈkænədə/"
 	},
 	{
-		"chinese": "以前",
+		"nativeText": "trước đây",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "你以前从来没有去过加拿大吗",
+		"nativeText": "bạn chưa từng đến Canada trước đây à?",
 		"english": "have you never been to Canada before",
 		"soundmark": "/hæv/ /ju/ /'nɛvɚ/ /bɪn/ /tə/ /ˈkænədə/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "曾经",
+		"nativeText": "từng",
 		"english": "ever",
 		"soundmark": "/'ɛvɚ/"
 	},
 	{
-		"chinese": "你以前曾经去过加拿大吗",
+		"nativeText": "bạn đã từng đến Canada trước đây chưa?",
 		"english": "have you ever been to Canada before",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /tə/ /ˈkænədə/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "你曾经去过加拿大吗",
+		"nativeText": "bạn đã từng đến Canada chưa?",
 		"english": "have you ever been to Canada",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /tə/ /ˈkænədə/"
 	},
 	{
-		"chinese": "你曾经......吗",
+		"nativeText": "bạn đã từng... chưa",
 		"english": "have you ever been",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/"
 	},
 	{
-		"chinese": "这里",
+		"nativeText": "ở đây",
 		"english": "here",
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "你曾经来过这里吗？",
+		"nativeText": "bạn đã từng đến đây chưa?",
 		"english": "have you ever been here",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /hɪr/"
 	},
 	{
-		"chinese": "商店",
+		"nativeText": "cửa hàng",
 		"english": "store",
 		"soundmark": "/stɔr/"
 	},
 	{
-		"chinese": "那个商店",
+		"nativeText": "cửa hàng đó",
 		"english": "that store",
 		"soundmark": "/ðæt/ /stɔr/"
 	},
 	{
-		"chinese": "你曾去过那个商店吗？",
+		"nativeText": "bạn đã từng đến cửa hàng đó chưa?",
 		"english": "have you ever been to that store",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /tə/ /ðæt/ /stɔr/"
 	},
 	{
-		"chinese": "餐厅",
+		"nativeText": "nhà hàng",
 		"english": "restaurant",
 		"soundmark": "/'rɛstrɑnt/"
 	},
 	{
-		"chinese": "那个餐厅",
+		"nativeText": "nhà hàng đó",
 		"english": "that restaurant",
 		"soundmark": "/ðæt/ /'rɛstrɑnt/"
 	},
 	{
-		"chinese": "你曾经去过那家餐厅吗？",
+		"nativeText": "bạn đã từng đến nhà hàng đó chưa?",
 		"english": "have you ever been to that restaurant",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /tə/ /ðæt/ /'rɛstrɑnt/"
 	},
 	{
-		"chinese": "结婚",
+		"nativeText": "cưới",
 		"english": "to marry",
 		"soundmark": "/tə/ /'mæri/"
 	},
 	{
-		"chinese": "结婚的",
+		"nativeText": "đã kết hôn",
 		"english": "married",
 		"soundmark": "/ˈmærid/"
 	},
 	{
-		"chinese": "你曾经结过婚吗？",
+		"nativeText": "bạn đã từng kết hôn chưa?",
 		"english": "have you ever been married",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /ˈmærid/"
 	},
 	{
-		"chinese": "吃",
+		"nativeText": "ăn",
 		"english": "to eat",
 		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "吃(过去分词)",
+		"nativeText": "ăn (quá khứ phân từ)",
 		"english": "eaten",
 		"soundmark": "/ˈitn/"
 	},
 	{
-		"chinese": "你曾经吃过",
+		"nativeText": "bạn đã từng ăn",
 		"english": "have you ever eaten",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /ˈitn/"
 	},
 	{
-		"chinese": "榴莲",
+		"nativeText": "sầu riêng",
 		"english": "durian",
 		"soundmark": "/ˈdʊriən/"
 	},
 	{
-		"chinese": "你曾经吃过榴莲吗？",
+		"nativeText": "bạn đã từng ăn sầu riêng chưa?",
 		"english": "have you ever eaten durian",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /ˈitn/ /ˈdʊriən/"
 	},
 	{
-		"chinese": "参加",
+		"nativeText": "tham gia",
 		"english": "to attend",
 		"soundmark": "/tə/ /əˈtɛnd/"
 	},
 	{
-		"chinese": "参加(过去分词)",
+		"nativeText": "tham gia (quá khứ phân từ)",
 		"english": "attended",
 		"soundmark": "/əˈtɛndɪd/"
 	},
 	{
-		"chinese": "你曾经参加过",
+		"nativeText": "bạn đã từng tham gia",
 		"english": "have you ever attended",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /əˈtɛndɪd/"
 	},
 	{
-		"chinese": "音乐会",
+		"nativeText": "buổi hòa nhạc",
 		"english": "concert",
 		"soundmark": "/'kɑnsɚt/"
 	},
 	{
-		"chinese": "现场的",
+		"nativeText": "trực tiếp",
 		"english": "live",
 		"soundmark": "/laɪv/"
 	},
 	{
-		"chinese": "一个现场的音乐会",
+		"nativeText": "một buổi hòa nhạc trực tiếp",
 		"english": "a live concert",
 		"soundmark": "/ə/ /laɪv/ /'kɑnsɚt/"
 	},
 	{
-		"chinese": "你曾经参加过",
+		"nativeText": "bạn đã từng tham gia",
 		"english": "have you ever attended",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /əˈtɛndɪd/"
 	},
 	{
-		"chinese": "你曾经参加过一个现场的音乐会吗？",
+		"nativeText": "bạn đã từng tham gia một buổi hòa nhạc trực tiếp chưa?",
 		"english": "have you ever attended a live concert",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /əˈtɛndɪd/ /ə/ /laɪv/ /'kɑnsɚt/"
 	},
 	{
-		"chinese": "丢掉",
+		"nativeText": "làm mất",
 		"english": "to lose",
 		"soundmark": "/tə/ /luz/"
 	},
 	{
-		"chinese": "丢掉(过去分词)",
+		"nativeText": "làm mất (quá khứ phân từ)",
 		"english": "lost",
 		"soundmark": "/lɔst/"
 	},
 	{
-		"chinese": "你曾经丢过",
+		"nativeText": "bạn đã từng làm mất",
 		"english": "have you ever lost",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /lɔst/"
 	},
 	{
-		"chinese": "钱包",
+		"nativeText": "ví tiền",
 		"english": "wallet",
 		"soundmark": "/'wɑlɪt/"
 	},
 	{
-		"chinese": "你的钱包",
+		"nativeText": "ví tiền của bạn",
 		"english": "your wallet",
 		"soundmark": "/jʊr/ /'wɑlɪt/"
 	},
 	{
-		"chinese": "你曾经丢过你的钱包吗？",
+		"nativeText": "bạn đã từng làm mất ví tiền của bạn chưa?",
 		"english": "have you ever lost your wallet",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /lɔst/ /jʊr/ /'wɑlɪt/"
 	},
 	{
-		"chinese": "看",
+		"nativeText": "nhìn thấy",
 		"english": "to see",
 		"soundmark": "/tə/ /si/"
 	},
 	{
-		"chinese": "看(过去分词)",
+		"nativeText": "nhìn thấy (quá khứ phân từ)",
 		"english": "seen",
 		"soundmark": "/sin/"
 	},
 	{
-		"chinese": "你曾经看过",
+		"nativeText": "bạn đã từng nhìn thấy",
 		"english": "have you ever seen",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /sin/"
 	},
 	{
-		"chinese": "彩虹",
+		"nativeText": "cầu vồng",
 		"english": "rainbow",
 		"soundmark": "/ˈrenbo/"
 	},
 	{
-		"chinese": "你曾经见过一个彩虹吗？",
+		"nativeText": "bạn đã từng nhìn thấy cầu vồng chưa?",
 		"english": "have you ever seen a rainbow",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /sin/ /ə/ /ˈrenbo/"
 	},
 	{
-		"chinese": "学习",
+		"nativeText": "học",
 		"english": "to study",
 		"soundmark": "/tə/ /'stʌdi/"
 	},
 	{
-		"chinese": "学习(过去分词)",
+		"nativeText": "học (quá khứ phân từ)",
 		"english": "studied",
 		"soundmark": "/ˈstʌdid/"
 	},
 	{
-		"chinese": "在国外",
+		"nativeText": "ở nước ngoài",
 		"english": "abroad",
 		"soundmark": "/ə'brɔd/"
 	},
 	{
-		"chinese": "留学",
+		"nativeText": "du học",
 		"english": "studied abroad",
 		"soundmark": "/ˈstʌdid/ /ə'brɔd/"
 	},
 	{
-		"chinese": "你曾经",
+		"nativeText": "bạn đã từng",
 		"english": "have you ever",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "你曾经留过学吗？",
+		"nativeText": "bạn đã từng du học chưa?",
 		"english": "have you ever studied abroad",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /ˈstʌdid/ /ə'brɔd/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to make",
 		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "做(过去分词)",
+		"nativeText": "làm (quá khứ phân từ)",
 		"english": "made",
 		"soundmark": "/med/"
 	},
 	{
-		"chinese": "你曾经做过",
+		"nativeText": "bạn đã từng làm",
 		"english": "have you ever made",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /med/"
 	},
 	{
-		"chinese": "雪",
+		"nativeText": "tuyết",
 		"english": "snow",
 		"soundmark": "/sno/"
 	},
 	{
-		"chinese": "雪人",
+		"nativeText": "người tuyết",
 		"english": "snowman",
 		"soundmark": "/'snomæn/"
 	},
 	{
-		"chinese": "你曾经堆过雪人吗？",
+		"nativeText": "bạn đã từng xếp người tuyết chưa?",
 		"english": "have you ever made a snowman",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /med/ /ə/ /'snomæn/"
 	},
 	{
-		"chinese": "你曾经去过加拿大吗？",
+		"nativeText": "bạn đã từng đến Canada chưa?",
 		"english": "have you ever been to Canada",
 		"soundmark": "/hæv/ /ju/ /'ɛvɚ/ /bɪn/ /tə/ /ˈkænədə/"
 	},
 	{
-		"chinese": "我(已经)去过加拿大",
+		"nativeText": "tôi đã từng đến Canada",
 		"english": "I have been to Canada",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /tə/ /ˈkænədə/"
 	}

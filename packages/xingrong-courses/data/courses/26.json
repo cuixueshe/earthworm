@@ -1,766 +1,766 @@
 [
 	{
-		"chinese": "听见；听说",
+		"nativeText": "nghe",
 		"english": "to hear",
 		"soundmark": "/tə/ /hɪr/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "听见我",
+		"nativeText": "nghe tôi",
 		"english": "to hear me",
 		"soundmark": "/tə/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你听见我",
+		"nativeText": "bạn nghe tôi",
 		"english": "you hear me",
 		"soundmark": "/ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "你可以听见我",
+		"nativeText": "bạn có thể nghe tôi",
 		"english": "you can hear me",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你可以听见我吗？",
+		"nativeText": "bạn có thể nghe tôi không?",
 		"english": "can you hear me",
 		"soundmark": "/kæn/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你可以听见我",
+		"nativeText": "bạn có thể nghe tôi",
 		"english": "you can hear me",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "不可以",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "你不可以听见我",
+		"nativeText": "bạn không thể nghe tôi",
 		"english": "you can't hear me",
 		"soundmark": "/ju/ /kænt/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你不可以听见我吗？",
+		"nativeText": "bạn không thể nghe tôi chứ?",
 		"english": "can't you hear me",
 		"soundmark": "/kænt/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你不可以听见我",
+		"nativeText": "bạn không thể nghe tôi",
 		"english": "you can't hear me",
 		"soundmark": "/ju/ /kænt/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你听见我",
+		"nativeText": "bạn nghe tôi",
 		"english": "you hear me",
 		"soundmark": "/ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "不；没有",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你没有听见我",
+		"nativeText": "bạn không nghe tôi",
 		"english": "you don't hear me",
 		"soundmark": "/ju/ /dont/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你没有听见我吗？",
+		"nativeText": "bạn không nghe tôi chứ?",
 		"english": "don't you hear me",
 		"soundmark": "/dont/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你没有听见我",
+		"nativeText": "bạn không nghe tôi",
 		"english": "you don't hear me",
 		"soundmark": "/ju/ /dont/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你有听见我",
+		"nativeText": "bạn có nghe tôi",
 		"english": "you do hear me",
 		"soundmark": "/ju/ /du/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你有听见我吗？",
+		"nativeText": "bạn có nghe tôi không?",
 		"english": "do you hear me",
 		"soundmark": "/du/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "你可以听见我",
+		"nativeText": "bạn có thể nghe tôi",
 		"english": "you can hear me",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你可以听见我吗？",
+		"nativeText": "bạn có thể nghe tôi không?",
 		"english": "can you hear me",
 		"soundmark": "/kæn/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你没有听见我",
+		"nativeText": "bạn không nghe tôi",
 		"english": "you don't hear me",
 		"soundmark": "/ju/ /dont/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你有听见我吗？",
+		"nativeText": "bạn có nghe tôi không?",
 		"english": "do you hear me",
 		"soundmark": "/du/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你(过去)有听见我吗？",
+		"nativeText": "bạn đã nghe tôi không?",
 		"english": "did you hear me",
 		"soundmark": "/dɪd/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你(过去)有听见我",
+		"nativeText": "bạn đã nghe tôi",
 		"english": "you did hear me",
 		"soundmark": "/ju/ /dɪd/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to do",
 		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "这件事",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm nó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你做这件事",
+		"nativeText": "bạn làm nó",
 		"english": "you do it",
 		"soundmark": "/ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "没有",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你没有做这件事",
+		"nativeText": "bạn không làm nó",
 		"english": "you don't do it",
 		"soundmark": "/ju/ /dont/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你有做这件事",
+		"nativeText": "bạn có làm nó",
 		"english": "you do do it",
 		"soundmark": "/ju/ /du/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你没有做这件事",
+		"nativeText": "bạn không làm nó",
 		"english": "you don't do it",
 		"soundmark": "/ju/ /dont/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)没有做这件事",
+		"nativeText": "bạn đã không làm nó",
 		"english": "you didn't do it",
 		"soundmark": "/ju/ /ˈdɪdnt/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)有做这件事",
+		"nativeText": "bạn đã làm nó",
 		"english": "you did do it",
 		"soundmark": "/ju/ /dɪd/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)有做这件事吗？",
+		"nativeText": "bạn đã làm nó chưa?",
 		"english": "did you do it",
 		"soundmark": "/dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "为什么",
+		"nativeText": "tại sao",
 		"english": "why",
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "什么时候",
+		"nativeText": "khi nào",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "在哪里",
+		"nativeText": "ở đâu",
 		"english": "where",
 		"soundmark": "/wɛr/"
 	},
 	{
-		"chinese": "什么",
+		"nativeText": "cái gì",
 		"english": "what",
 		"soundmark": "/wɑt/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "你(过去)如何做这件事？",
+		"nativeText": "bạn đã làm nó như thế nào?",
 		"english": "how did you do it",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "为什么",
+		"nativeText": "tại sao",
 		"english": "why",
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "你(过去)为什么做这件事？",
+		"nativeText": "tại sao bạn đã làm nó?",
 		"english": "why did you do it",
 		"soundmark": "/waɪ/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "什么时候",
+		"nativeText": "khi nào",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "你(过去)什么时候做这件事？",
+		"nativeText": "bạn đã làm nó khi nào?",
 		"english": "when did you do it",
 		"soundmark": "/wɛn/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "在哪里",
+		"nativeText": "ở đâu",
 		"english": "where",
 		"soundmark": "/wɛr/"
 	},
 	{
-		"chinese": "你(过去)在哪里做这件事？",
+		"nativeText": "bạn đã làm nó ở đâu?",
 		"english": "where did you do it",
 		"soundmark": "/wɛr/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "什么",
+		"nativeText": "cái gì",
 		"english": "what",
 		"soundmark": "/wɑt/"
 	},
 	{
-		"chinese": "你(过去)有做这件事吗？",
+		"nativeText": "bạn đã làm nó chưa?",
 		"english": "did you do it",
 		"soundmark": "/dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)做了什么？",
+		"nativeText": "bạn đã làm gì?",
 		"english": "what did you do",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /du/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "找到我",
+		"nativeText": "tìm tôi",
 		"english": "to find me",
 		"soundmark": "/tə/ /faɪnd/ /mi/"
 	},
 	{
-		"chinese": "你(过去)是如何",
+		"nativeText": "bạn đã ... như thế nào",
 		"english": "how did you",
 		"soundmark": "/haʊ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)是如何找到我的？",
+		"nativeText": "bạn đã tìm thấy tôi như thế nào?",
 		"english": "how did you find me",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /faɪnd/ /mi/"
 	},
 	{
-		"chinese": "她的",
+		"nativeText": "của cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "名字",
+		"nativeText": "tên",
 		"english": "name",
 		"soundmark": "/nem/"
 	},
 	{
-		"chinese": "她的名字",
+		"nativeText": "tên của cô ấy",
 		"english": "her name",
 		"soundmark": "/hɚ/ /nem/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "知道她的名字",
+		"nativeText": "biết tên của cô ấy",
 		"english": "to know her name",
 		"soundmark": "/tə/ /no/ /hɚ/ /nem/"
 	},
 	{
-		"chinese": "你(过去)是如何",
+		"nativeText": "bạn đã ... như thế nào",
 		"english": "how did you",
 		"soundmark": "/haʊ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)是如何知道她的名字的？",
+		"nativeText": "bạn đã biết tên của cô ấy như thế nào?",
 		"english": "how did you know her name",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /no/ /hɚ/ /nem/"
 	},
 	{
-		"chinese": "电话",
+		"nativeText": "điện thoại",
 		"english": "phone",
 		"soundmark": "/fon/"
 	},
 	{
-		"chinese": "号码",
+		"nativeText": "số",
 		"english": "number",
 		"soundmark": "/'nʌmbɚ/"
 	},
 	{
-		"chinese": "电话号码",
+		"nativeText": "số điện thoại",
 		"english": "phone number",
 		"soundmark": "/fon/ /'nʌmbɚ/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我的电话号码",
+		"nativeText": "số điện thoại của tôi",
 		"english": "my phone number",
 		"soundmark": "/maɪ/ /fon/ /'nʌmbɚ/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "知道我的电话号码",
+		"nativeText": "biết số điện thoại của tôi",
 		"english": "to know my phone number",
 		"soundmark": "/tə/ /no/ /maɪ/ /fon/ /'nʌmbɚ/"
 	},
 	{
-		"chinese": "你(过去)是如何",
+		"nativeText": "bạn đã ... như thế nào",
 		"english": "how did you",
 		"soundmark": "/haʊ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)是如何知道我的电话号码的？",
+		"nativeText": "bạn đã biết số điện thoại của tôi như thế nào?",
 		"english": "how did you know my phone number",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /no/ /maɪ/ /fon/ /'nʌmbɚ/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to do",
 		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "这件事",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm nó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "决定做这件事",
+		"nativeText": "quyết định làm nó",
 		"english": "to decide to do it",
 		"soundmark": "/tə/ /dɪ'saɪd/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)为什么",
+		"nativeText": "tại sao bạn đã",
 		"english": "why did you",
 		"soundmark": "/waɪ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)为什么决定做这件事？",
+		"nativeText": "tại sao bạn đã quyết định làm nó?",
 		"english": "why did you decide to do it",
 		"soundmark": "/waɪ/ /dɪd/ /ju/ /dɪ'saɪd/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "离开",
+		"nativeText": "rời đi",
 		"english": "to leave",
 		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "离开我",
+		"nativeText": "rời bỏ tôi",
 		"english": "to leave me",
 		"soundmark": "/tə/ /liv/ /mi/"
 	},
 	{
-		"chinese": "你(过去)为什么",
+		"nativeText": "tại sao bạn đã",
 		"english": "why did you",
 		"soundmark": "/waɪ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)为什么离开我？",
+		"nativeText": "tại sao bạn đã rời bỏ tôi?",
 		"english": "why did you leave me",
 		"soundmark": "/waɪ/ /dɪd/ /ju/ /liv/ /mi/"
 	},
 	{
-		"chinese": "说",
+		"nativeText": "nói",
 		"english": "to say",
 		"soundmark": "/tə/ /seɪ/"
 	},
 	{
-		"chinese": "它；那句话",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "说那句话",
+		"nativeText": "nói nó",
 		"english": "to say it",
 		"soundmark": "/tə/ /seɪ/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)为什么",
+		"nativeText": "tại sao bạn đã",
 		"english": "why did you",
 		"soundmark": "/waɪ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)为什么说那句话？",
+		"nativeText": "tại sao bạn đã nói vậy?",
 		"english": "why did you say it",
 		"soundmark": "/waɪ/ /dɪd/ /ju/ /seɪ/ /ɪt/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to get",
 		"soundmark": "/tə/ /ɡɛt/"
 	},
 	{
-		"chinese": "这里",
+		"nativeText": "đây",
 		"english": "here",
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "到达这里",
+		"nativeText": "đến đây",
 		"english": "to get here",
 		"soundmark": "/tə/ /ɡɛt/ /hɪr/"
 	},
 	{
-		"chinese": "你(过去)什么时候",
+		"nativeText": "bạn đã ... khi nào",
 		"english": "when did you",
 		"soundmark": "/wɛn/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)什么时候到达这里的？",
+		"nativeText": "bạn đã đến đây khi nào?",
 		"english": "when did you get here",
 		"soundmark": "/wɛn/ /dɪd/ /ju/ /ɡɛt/ /hɪr/"
 	},
 	{
-		"chinese": "见到",
+		"nativeText": "gặp",
 		"english": "to meet",
 		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "him",
 		"soundmark": "/hɪm/"
 	},
 	{
-		"chinese": "见到他",
+		"nativeText": "gặp anh ấy",
 		"english": "to meet him",
 		"soundmark": "/tə/ /mit/ /hɪm/"
 	},
 	{
-		"chinese": "你(过去)什么时候",
+		"nativeText": "bạn đã ... khi nào",
 		"english": "when did you",
 		"soundmark": "/wɛn/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)什么时候见到他的？",
+		"nativeText": "bạn đã gặp anh ấy khi nào?",
 		"english": "when did you meet him",
 		"soundmark": "/wɛn/ /dɪd/ /ju/ /mit/ /hɪm/"
 	},
 	{
-		"chinese": "家",
+		"nativeText": "nhà",
 		"english": "home",
 		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "工作",
+		"nativeText": "công việc",
 		"english": "work",
 		"soundmark": "/wɝk/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "homework",
 		"soundmark": "/'homwɝk/"
 	},
 	{
-		"chinese": "你的",
+		"nativeText": "của bạn",
 		"english": "your",
 		"soundmark": "/jʊr/"
 	},
 	{
-		"chinese": "你的家庭作业",
+		"nativeText": "bài tập về nhà của bạn",
 		"english": "your homework",
 		"soundmark": "/jʊr/ /'homwɝk/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "完成你的家庭做作业",
+		"nativeText": "hoàn thành bài tập về nhà của bạn",
 		"english": "to finish your homework",
 		"soundmark": "/tə/ /'fɪnɪʃ/ /jʊr/ /'homwɝk/"
 	},
 	{
-		"chinese": "你(过去)什么时候",
+		"nativeText": "bạn đã ... khi nào",
 		"english": "when did you",
 		"soundmark": "/wɛn/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)什么时候完成你的家庭作业的？",
+		"nativeText": "bạn đã hoàn thành bài tập về nhà của bạn khi nào?",
 		"english": "when did you finish your homework",
 		"soundmark": "/wɛn/ /dɪd/ /ju/ /'fɪnɪʃ/ /jʊr/ /'homwɝk/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "他们/她们/它们",
+		"nativeText": "họ",
 		"english": "them",
 		"soundmark": "/ðəm/"
 	},
 	{
-		"chinese": "找到他们",
+		"nativeText": "tìm họ",
 		"english": "to find them",
 		"soundmark": "/tə/ /faɪnd/ /ðəm/"
 	},
 	{
-		"chinese": "你(过去)在哪里",
+		"nativeText": "bạn đã ... ở đâu",
 		"english": "where did you",
 		"soundmark": "/wɛr/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)在哪里找到他们的？",
+		"nativeText": "bạn đã tìm thấy họ ở đâu?",
 		"english": "where did you find them",
 		"soundmark": "/wɛr/ /dɪd/ /ju/ /faɪnd/ /ðəm/"
 	},
 	{
-		"chinese": "购买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "这个",
+		"nativeText": "cái này",
 		"english": "this",
 		"soundmark": "/ðɪs/"
 	},
 	{
-		"chinese": "购买这个",
+		"nativeText": "mua cái này",
 		"english": "to buy this",
 		"soundmark": "/tə/ /baɪ/ /ðɪs/"
 	},
 	{
-		"chinese": "你(过去)在哪里",
+		"nativeText": "bạn đã ... ở đâu",
 		"english": "where did you",
 		"soundmark": "/wɛr/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)在哪里购买这个的？",
+		"nativeText": "bạn đã mua cái này ở đâu?",
 		"english": "where did you buy this",
 		"soundmark": "/wɛr/ /dɪd/ /ju/ /baɪ/ /ðɪs/"
 	},
 	{
-		"chinese": "睡觉",
+		"nativeText": "ngủ",
 		"english": "to sleep",
 		"soundmark": "/tə/ /slip/"
 	},
 	{
-		"chinese": "你(过去)在哪里",
+		"nativeText": "bạn đã ... ở đâu",
 		"english": "where did you",
 		"soundmark": "/wɛr/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)在哪里睡觉的？",
+		"nativeText": "bạn đã ngủ ở đâu?",
 		"english": "where did you sleep",
 		"soundmark": "/wɛr/ /dɪd/ /ju/ /slip/"
 	},
 	{
-		"chinese": "上一个",
+		"nativeText": "kỳ trước; hôm trước",
 		"english": "last",
 		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "晚上",
+		"nativeText": "tối",
 		"english": "night",
 		"soundmark": "/naɪt/"
 	},
 	{
-		"chinese": "昨晚",
+		"nativeText": "tối qua",
 		"english": "last night",
 		"soundmark": "/læst/ /naɪt/"
 	},
 	{
-		"chinese": "你(过去)昨晚在哪里睡觉的？",
+		"nativeText": "bạn đã ngủ ở đâu tối qua?",
 		"english": "where did you sleep last night",
 		"soundmark": "/wɛr/ /dɪd/ /ju/ /slip/ /læst/ /naɪt/"
 	},
 	{
-		"chinese": "说",
+		"nativeText": "nói",
 		"english": "to say",
 		"soundmark": "/tə/ /seɪ/"
 	},
 	{
-		"chinese": "你(过去)......了什么",
+		"nativeText": "bạn đã ... gì",
 		"english": "what did you",
 		"soundmark": "/wɑt/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)说了什么？",
+		"nativeText": "bạn đã nói gì?",
 		"english": "what did you say",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /seɪ/"
 	},
 	{
-		"chinese": "学",
+		"nativeText": "học",
 		"english": "to learn",
 		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "你(过去)......了什么",
+		"nativeText": "bạn đã ... gì",
 		"english": "what did you",
 		"soundmark": "/wɑt/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)学到了什么？",
+		"nativeText": "bạn đã học được gì?",
 		"english": "what did you learn",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /lɝn/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "你(过去)......了什么",
+		"nativeText": "bạn đã ... gì",
 		"english": "what did you",
 		"soundmark": "/wɑt/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)找到了什么？",
+		"nativeText": "bạn đã tìm thấy gì?",
 		"english": "what did you find",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /faɪnd/"
 	},
 	{
-		"chinese": "听到",
+		"nativeText": "nghe",
 		"english": "to hear",
 		"soundmark": "/tə/ /hɪr/"
 	},
 	{
-		"chinese": "你(过去)......了什么",
+		"nativeText": "bạn đã ... gì",
 		"english": "what did you",
 		"soundmark": "/wɑt/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)听到了什么？",
+		"nativeText": "bạn đã nghe thấy gì?",
 		"english": "what did you hear",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /hɪr/"
 	},
 	{
-		"chinese": "看到",
+		"nativeText": "thấy",
 		"english": "to see",
 		"soundmark": "/tə/ /si/"
 	},
 	{
-		"chinese": "你(过去)......了什么",
+		"nativeText": "bạn đã ... gì",
 		"english": "what did you",
 		"soundmark": "/wɑt/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)看到了什么？",
+		"nativeText": "bạn đã thấy gì?",
 		"english": "what did you see",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /si/"
 	},
 	{
-		"chinese": "你(过去)如何做这件事？",
+		"nativeText": "bạn đã làm nó như thế nào?",
 		"english": "how did you do it",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)为什么做这件事？",
+		"nativeText": "tại sao bạn đã làm nó?",
 		"english": "why did you do it",
 		"soundmark": "/waɪ/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)什么时候做这件事？",
+		"nativeText": "bạn đã làm nó khi nào?",
 		"english": "when did you do it",
 		"soundmark": "/wɛn/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)在哪里做这件事？",
+		"nativeText": "bạn đã làm nó ở đâu?",
 		"english": "where did you do it",
 		"soundmark": "/wɛr/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)做了什么？",
+		"nativeText": "bạn đã làm gì?",
 		"english": "what did you do",
 		"soundmark": "/wɑt/ /dɪd/ /ju/ /du/"
 	},
 	{
-		"chinese": "你(过去)如何......？",
+		"nativeText": "bạn đã ... như thế nào?",
 		"english": "how did you",
 		"soundmark": "/haʊ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)为什么......？",
+		"nativeText": "tại sao bạn đã ...?",
 		"english": "why did you",
 		"soundmark": "/waɪ/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)什么时候......？",
+		"nativeText": "bạn đã ... khi nào?",
 		"english": "when did you",
 		"soundmark": "/wɛn/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)在哪里......？",
+		"nativeText": "bạn đã ... ở đâu?",
 		"english": "where did you",
 		"soundmark": "/wɛr/ /dɪd/ /ju/"
 	},
 	{
-		"chinese": "你(过去)......了什么？",
+		"nativeText": "bạn đã ... gì?",
 		"english": "what did you",
 		"soundmark": "/wɑt/ /dɪd/ /ju/"
 	}

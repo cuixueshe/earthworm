@@ -5,20 +5,21 @@
   >
     <div class="flex items-center justify-between">
       <div class="font-bold">
-        【邀请函】加入 Earthworm 创始会员 与我们一起成就更好的英语学习平台
+        【Thư mời】Tham gia Thành viên sáng lập Earthworm để cùng xây dựng nền tảng học tiếng Anh
+        tốt hơn
       </div>
       <div class="hidden sm:flex sm:space-x-4">
         <button
           class="text-black"
           @click="dismissNotice"
         >
-          不感兴趣
+          Không quan tâm
         </button>
         <button
           class="rounded-lg bg-white px-4 font-bold text-purple-600"
           @click="handleShowDetails"
         >
-          查看详情
+          Xem chi tiết
         </button>
       </div>
     </div>
@@ -27,13 +28,13 @@
         class="text-black"
         @click="dismissNotice"
       >
-        不感兴趣
+        Không quan tâm
       </button>
       <button
         class="rounded-lg bg-white px-4 font-bold text-purple-600"
         @click="handleShowDetails"
       >
-        查看详情
+        Xem chi tiết
       </button>
     </div>
   </div>

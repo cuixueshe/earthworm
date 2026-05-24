@@ -57,7 +57,7 @@ describe("MasteredElementService", () => {
 
     it("should correctly handle additional properties in content", async () => {
       const userId = "testUser";
-      const content = { english: "test", chinese: "测试" };
+      const content = { english: "test", nativeText: "kiểm tra" };
       const result = await masteredElementService.addMasteredElement(userId, content);
       expect(result.content).toEqual(content);
     });

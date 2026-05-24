@@ -1,5 +1,5 @@
 /**
- * 记录用户当前课程包的课程学习了多少次
+ * Records how many times the user has studied courses in the current course pack
  */
 import { Inject, Injectable } from "@nestjs/common";
 import { and, eq, sql } from "drizzle-orm";

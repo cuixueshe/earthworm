@@ -1,687 +1,2832 @@
 [
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to do",
 		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "这件事情",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "做这件事情",
+		"nativeText": "làm việc này",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "想要",
-		"english": "want",
-		"soundmark": "/wɑnt/"
+		"nativeText": "tôi thích",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
 	},
 	{
-		"chinese": "我想要做这件事情",
-		"english": "I want to do it",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/"
+		"nativeText": "tôi thích làm việc này",
+		"english": "I like to do it",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "không thích",
+		"english": "don't like",
+		"soundmark": "/dont/ /laɪk/"
+	},
+	{
+		"nativeText": "tôi không thích làm việc này",
+		"english": "I don't like to do it",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我现在想要做这件事情",
-		"english": "I want to do it now",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
+		"nativeText": "tôi thích làm việc này bây giờ",
+		"english": "I like to do it now",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"nativeText": "tôi không thích làm việc này bây giờ",
+		"english": "I don't like to do it now",
+		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "我现在不想做这件事情",
-		"english": "I don't want to do it now",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "她现在想要做这件事",
-		"english": "she wants to do it now",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "她现在不想做这件事",
-		"english": "she doesn't want to do it now",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "我（过去）想要做这件事情",
-		"english": "I wanted to do it",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "昨天",
-		"english": "yesterday",
-		"soundmark": "/'jɛstɚde/"
-	},
-	{
-		"chinese": "我昨天想要做这件事情",
-		"english": "I wanted to do it yesterday",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /du/ /ɪt/ /'jɛstɚde/"
-	},
-	{
-		"chinese": "我昨天不想做这件事情",
-		"english": "I didn't want to do it yesterday",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "留；待在",
-		"english": "to stay",
-		"soundmark": "/tə/ /ste/"
-	},
-	{
-		"chinese": "那里",
-		"english": "there",
-		"soundmark": "/ðɛr/"
-	},
-	{
-		"chinese": "待在那里",
-		"english": "to stay there",
-		"soundmark": "/tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "喜欢",
-		"english": "like",
-		"soundmark": "/laɪk/"
-	},
-	{
-		"chinese": "我喜欢待在那里",
-		"english": "I like to stay there",
-		"soundmark": "/aɪ/ /laɪk/ /tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "每天",
-		"english": "every day",
-		"soundmark": "/'ɛvri/ /de/"
-	},
-	{
-		"chinese": "我喜欢每天待在那里",
-		"english": "I like to stay there every day",
-		"soundmark": "/aɪ/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我不喜欢每天待在那里",
-		"english": "I don't like to stay there every day",
-		"soundmark": "/aɪ/ /dont/ /laɪk/ /tə/ /ste/ /ðɛr/ /'ɛvri/ /de/"
-	},
-	{
-		"chinese": "我（过去）喜欢待在那里",
-		"english": "I liked to stay there",
-		"soundmark": "/aɪ/ /laikt/ /tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "我（过去）不喜欢待在那里",
-		"english": "I didn't like to stay there",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /laɪk/ /tə/ /ste/ /ðɛr/"
-	},
-	{
-		"chinese": "离开",
-		"english": "to leave",
-		"soundmark": "/tə/ /liv/"
-	},
-	{
-		"chinese": "这座城市",
-		"english": "the city",
-		"soundmark": "/ðə/ /'sɪti/"
-	},
-	{
-		"chinese": "我必须离开这座城市",
-		"english": "I have to leave the city",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/"
-	},
-	{
-		"chinese": "今天",
-		"english": "today",
-		"soundmark": "/tə'de/"
-	},
-	{
-		"chinese": "我今天必须离开这座城市",
-		"english": "I have to leave the city today",
-		"soundmark": "/aɪ/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /tə'de/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我今天不必离开这座城市",
-		"english": "I don't have to leave the city today",
-		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /tə'de/"
-	},
-	{
-		"chinese": "我（过去）必须",
-		"english": "I had to",
-		"soundmark": "/aɪ/ /hæd/ /tə/"
-	},
-	{
-		"chinese": "我（过去）必须离开这座城市",
-		"english": "I had to leave the city",
-		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/"
-	},
-	{
-		"chinese": "时间",
-		"english": "time",
-		"soundmark": "/taɪm/"
-	},
-	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
-	},
-	{
-		"chinese": "在那时",
-		"english": "at that time",
-		"soundmark": "/ət/ /ðæt/ /taɪm/"
-	},
-	{
-		"chinese": "我必须在那时离开这座城市",
-		"english": "I had to leave the city at that time",
-		"soundmark": "/aɪ/ /hæd/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
-	},
-	{
-		"chinese": "我不必在那时离开这座城市",
-		"english": "I didn't have to leave the city at that time",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /tə/ /liv/ /ðə/ /'sɪti/ /ət/ /ðæt/ /taɪm/"
-	},
-	{
-		"chinese": "计划；打算",
-		"english": "plan",
-		"soundmark": "/plæn/"
-	},
-	{
-		"chinese": "去；达到",
-		"english": "to get",
-		"soundmark": "/tə/ /ɡɛt/"
-	},
-	{
-		"chinese": "去那里",
-		"english": "to get there",
-		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
-	},
-	{
-		"chinese": "我打算去那里",
-		"english": "I plan to get there",
-		"soundmark": "/aɪ/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我不打算去那里",
-		"english": "I don't plan to get there",
-		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
-	},
-	{
-		"chinese": "我（过去）打算去那里",
-		"english": "I planned to get there",
-		"soundmark": "/aɪ/ /plænd/ /tə/ /ɡɛt/ /ðɛr/"
-	},
-	{
-		"chinese": "我（过去）不打算去那里",
-		"english": "I didn't plan to get there",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /plæn/ /tə/ /ɡɛt/ /ðɛr/"
-	},
-	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
-	},
-	{
-		"chinese": "事实；真相",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "我需要知道真相",
-		"english": "I need to know the truth",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "尽快；尽可能地快",
-		"english": "as soon as possible",
-		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
-	},
-	{
-		"chinese": "我需要尽快知道真相",
-		"english": "I need to know the truth as soon as possible",
-		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ðə/ /trʊθ/ /əz/ /sun/ /əz/ /'pɑsəbl/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我不需要知道真相",
-		"english": "I don't need to know the truth",
-		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "我（过去）需要知道真相",
-		"english": "I needed to know the truth",
-		"soundmark": "/aɪ/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "我（过去）不需要知道真相",
-		"english": "I didn't need to know the truth",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "她（过去）需要知道真相",
-		"english": "she needed to know the truth",
-		"soundmark": "/ʃi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "她（过去）不需要知道真相",
-		"english": "she didn't need to know the truth",
-		"soundmark": "/ʃi/ /ˈdɪdnt/ /nid/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "做这件事情",
-		"english": "to do it",
-		"soundmark": "/tə/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "你做这件事情",
-		"english": "you do it",
-		"soundmark": "/ju/ /du/ /ɪt/"
-	},
-	{
-		"chinese": "你现在做这件事情",
-		"english": "you do it now",
-		"soundmark": "/ju/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "你现在不做这件事情",
-		"english": "you don't do it now",
-		"soundmark": "/ju/ /dont/ /du/ /ɪt/ /naʊ/"
-	},
-	{
-		"chinese": "你（过去）做这件事情",
-		"english": "you did it",
-		"soundmark": "/ju/ /dɪd/ /ɪt/"
-	},
-	{
-		"chinese": "年",
-		"english": "year",
-		"soundmark": "/jɪr/"
-	},
-	{
-		"chinese": "上一个",
-		"english": "last",
-		"soundmark": "/læst/"
-	},
-	{
-		"chinese": "去年",
-		"english": "last year",
-		"soundmark": "/læst/ /jɪr/"
-	},
-	{
-		"chinese": "你去年做这件事情",
-		"english": "you did it last year",
-		"soundmark": "/ju/ /dɪd/ /ɪt/ /læst/ /jɪr/"
-	},
-	{
-		"chinese": "你去年没做这件事情",
-		"english": "you didn't do it last year",
-		"soundmark": "/ju/ /ˈdɪdnt/ /du/ /ɪt/ /læst/ /jɪr/"
-	},
-	{
-		"chinese": "告诉",
+		"nativeText": "nói",
 		"english": "to tell",
 		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "告诉我",
-		"english": "to tell me",
-		"soundmark": "/tə/ /tɛl/ /mi/"
+		"nativeText": "bạn",
+		"english": "you",
+		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你告诉我",
-		"english": "you tell me",
-		"soundmark": "/ju/ /tɛl/ /mi/"
+		"nativeText": "nói với bạn",
+		"english": "to tell you",
+		"soundmark": "/tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"nativeText": "tôi cần nói với bạn",
+		"english": "I need to tell you",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "你不告诉我",
-		"english": "you don't tell me",
-		"soundmark": "/ju/ /dont/ /tɛl/ /mi/"
+		"nativeText": "một việc gì đó",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "她告诉我",
-		"english": "she tells me",
-		"soundmark": "/ʃi/ /tɛlz/ /mi/"
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "她不告诉我",
-		"english": "she doesn't tell me",
-		"soundmark": "/ʃi/ /ˈdʌznt/ /tɛl/ /mi/"
+		"nativeText": "một việc gì đó quan trọng",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "他（过去）告诉我",
-		"english": "he told me",
-		"soundmark": "/hi/ /told/ /mi/"
+		"nativeText": "tôi cần nói với bạn một việc gì đó",
+		"english": "I need to tell you something",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "他（过去）没告诉我",
-		"english": "he didn't tell me",
-		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/"
+		"nativeText": "tôi cần nói với bạn một việc gì đó quan trọng",
+		"english": "I need to tell you something important",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "事实；真相",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
+		"nativeText": "nó",
+		"english": "it",
+		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "他（过去）没告诉我真相",
-		"english": "he didn't tell me the truth",
-		"soundmark": "/hi/ /ˈdɪdnt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+		"nativeText": "nó quan trọng",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "rất",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"nativeText": "nó rất quan trọng",
+		"english": "It is very important",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi",
+		"english": "me",
+		"soundmark": "/mi/"
+	},
+	{
+		"nativeText": "với tôi",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"nativeText": "nó quan trọng với tôi",
+		"english": "It is important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "nó rất quan trọng với tôi",
+		"english": "It is very important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "tốt",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"nativeText": "nó tốt",
+		"english": "It is good",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "to be here",
+		"soundmark": "/tə/ /bi/ /hɪr/"
+	},
+	{
+		"nativeText": "ở đây là tốt",
+		"english": "It is good to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"nativeText": "ở đây là rất tốt",
+		"english": "It is very good to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɡʊd/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"nativeText": "gặp bạn",
+		"english": "to see you",
+		"soundmark": "/tə/ /si/ /ju/"
+	},
+	{
+		"nativeText": "gặp bạn là rất tốt",
+		"english": "It is very good to see you",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɡʊd/ /tə/ /si/ /ju/"
+	},
+	{
+		"nativeText": "mỗi ngày",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"nativeText": "gặp bạn mỗi ngày là rất tốt",
+		"english": "It is very good to see you every day",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɡʊd/ /tə/ /si/ /ju/ /'ɛvri/ /de/"
+	},
+	{
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "知道真相",
-		"english": "to know the truth",
-		"soundmark": "/tə/ /no/ /ðə/ /trʊθ/"
+		"nativeText": "tôi muốn biết",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "他（过去）需要知道真相",
-		"english": "he needed to know the truth",
-		"soundmark": "/hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "他（过去）告诉我",
-		"english": "he told me",
-		"soundmark": "/hi/ /told/ /mi/"
+		"nativeText": "tôi muốn biết liệu nó có thể hay không",
+		"english": "I want to know if it is possible",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相",
-		"english": "he told me he needed to know the truth",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "它是重要的",
-		"english": "it is important",
+		"nativeText": "nó quan trọng",
+		"english": "It is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它（过去）是重要的",
-		"english": "it was important",
-		"soundmark": "/ɪt/ /wəz/ /ɪm'pɔrtnt/"
+		"nativeText": "tôi muốn biết liệu nó có quan trọng hay không",
+		"english": "I want to know if it is important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "因为",
-		"english": "because",
-		"soundmark": "/bɪ'kɔz/"
+		"nativeText": "với tôi",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "因为它（过去）是重要的",
-		"english": "because it was important",
-		"soundmark": "/bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
+		"nativeText": "nó quan trọng với tôi",
+		"english": "It is important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相",
-		"english": "he told me he needed to know the truth",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/"
+		"nativeText": "phải làm",
+		"english": "have to do",
+		"soundmark": "/hæv/ /tə/ /du/"
 	},
 	{
-		"chinese": "他（过去）告诉我他（过去）需要知道真相因为它（过去）是重要的",
-		"english": "he told me he needed to know the truth because it was important",
-		"soundmark": "/hi/ /told/ /mi/ /hi/ /nidɪd/ /tə/ /no/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /wəz/ /ɪm'pɔrtnt/"
+		"nativeText": "tôi phải làm việc này",
+		"english": "I have to do it",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "存在；成为",
-		"english": "to be",
-		"soundmark": "/tə/ /bi/"
+		"nativeText": "tôi hôm nay phải làm việc này",
+		"english": "I have to do it today",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/ /tə'de/"
 	},
 	{
-		"chinese": "一个老师",
-		"english": "a teacher",
-		"soundmark": "/ə/ /'titʃɚ/"
+		"nativeText": "vì vậy",
+		"english": "so",
+		"soundmark": "/so/"
 	},
 	{
-		"chinese": "成为一个老师",
-		"english": "to be a teacher",
-		"soundmark": "/tə/ /bi/ /ə/ /'titʃɚ/"
+		"nativeText": "nó quan trọng với tôi nên tôi phải làm việc này",
+		"english": "It is important for me so I have to do it",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师",
-		"english": "I wanted to be a teacher",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
+		"nativeText": "nó quan trọng với tôi nên tôi hôm nay phải làm việc này",
+		"english": "It is important for me so I have to do it today",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /tə'de/"
 	},
 	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
+		"nativeText": "mỗi ngày",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
 	},
 	{
-		"chinese": "我是重要的",
+		"nativeText": "nó quan trọng với tôi nên tôi phải làm việc này mỗi ngày",
+		"english": "It is important for me so I have to do it every day",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
+	},
+	{
+		"nativeText": "rất",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"nativeText": "nó rất quan trọng với tôi nên tôi phải làm việc này mỗi ngày",
+		"english": "It is very important for me so I have to do it every day",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
+	},
+	{
+		"nativeText": "bây giờ",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"nativeText": "nó rất quan trọng với tôi nên tôi phải làm việc này bây giờ",
+		"english": "It is very important for me so I have to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"nativeText": "không quan trọng",
+		"english": "not important",
+		"soundmark": "/nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "nó không quan trọng",
+		"english": "It is not important",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "nó không quan trọng với tôi",
+		"english": "It is not important for me",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "không phải làm",
+		"english": "don't have to do",
+		"soundmark": "/dont/ /hæv/ /tə/ /du/"
+	},
+	{
+		"nativeText": "tôi không phải làm việc này",
+		"english": "I don't have to do it",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "bây giờ",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"nativeText": "tôi bây giờ không phải làm việc này",
+		"english": "I don't have to do it now",
+		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"nativeText": "vì vậy",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"nativeText": "nó không quan trọng với tôi nên tôi không phải làm việc này bây giờ",
+		"english": "It is not important for me so I don't have to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"nativeText": "tôi thích ăn món ăn này",
+		"english": "I like to eat the food",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"nativeText": "tôi muốn làm việc này hôm nay",
+		"english": "I want to do it today",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"nativeText": "tôi cần nói với bạn một việc gì đó quan trọng",
+		"english": "I need to tell you something important",
+		"soundmark": "/aɪ/ /nid/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi phải biết bạn sớm",
+		"english": "I have to know you soon",
+		"soundmark": "/aɪ/ /hæv/ /tə/ /no/ /ju/ /sun/"
+	},
+	{
+		"nativeText": "ở đây là tốt",
+		"english": "It is good to be here",
+		"soundmark": "/ɪt/ /ɪz/ /ɡʊd/ /tə/ /bi/ /hɪr/"
+	},
+	{
+		"nativeText": "nó quan trọng với tôi",
+		"english": "It is important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "làm việc này bây giờ là không thể",
+		"english": "It is impossible to do it now",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /du/ /ɪt/ /naʊ/"
+	},
+	{
+		"nativeText": "tôi",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"nativeText": "tôi là",
+		"english": "I am",
+		"soundmark": "/aɪ/ /æm/"
+	},
+	{
+		"nativeText": "tôi quan trọng",
 		"english": "I am important",
 		"soundmark": "/aɪ/ /æm/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我（过去）是重要的",
-		"english": "I was important",
-		"soundmark": "/aɪ/ /wəz/ /ɪm'pɔrtnt/"
+		"nativeText": "muốn",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "年轻的",
-		"english": "young",
-		"soundmark": "/jʌŋ/"
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我是年轻的",
-		"english": "I am young",
-		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
+		"nativeText": "tôi muốn biết",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "我（过去）是年轻的",
-		"english": "I was young",
-		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "当......的时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"nativeText": "tôi muốn biết liệu tôi có quan trọng hay không",
+		"english": "I want to know if I am important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "当我（过去）是年轻的时候",
-		"english": "when I was young",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "cần biết",
+		"english": "need to know",
+		"soundmark": "/nid/ /tə/ /no/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师",
-		"english": "I wanted to be a teacher",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/"
+		"nativeText": "tôi cần biết liệu tôi có quan trọng hay không",
+		"english": "I need to know if I am important",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /aɪ/ /æm/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我（过去）想要成为一个老师当我（过去）是年轻的时候",
-		"english": "I wanted to be a teacher when I was young",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /bi/ /ə/ /'titʃɚ/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "nói",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "交谈；聊天",
-		"english": "to talk",
-		"soundmark": "/tə/ /tɔk/"
+		"nativeText": "nói cho tôi",
+		"english": "to tell me",
+		"soundmark": "/tə/ /tɛl/ /mi/"
 	},
 	{
-		"chinese": "我们（过去）聊天",
-		"english": "we talked",
-		"soundmark": "/wi/ /tɔkt/"
+		"nativeText": "sự thật",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "在......之前；以前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"nativeText": "nói cho tôi sự thật",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "我们以前聊过天",
-		"english": "we talked before",
-		"soundmark": "/wi/ /tɔkt/ /bɪ'fɔr/"
+		"nativeText": "bạn muốn nói cho tôi sự thật",
+		"english": "You want to tell me the truth",
+		"soundmark": "/ju/ /wɑnt/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "和她（过去）聊天",
-		"english": "talked with her",
-		"soundmark": "/tɔkt/ /wɪð/ /hɚ/"
+		"nativeText": "bạn phải nói cho tôi sự thật",
+		"english": "You have to tell me the truth",
+		"soundmark": "/ju/ /hæv/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "我和她聊过天",
-		"english": "I talked with her",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/"
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我以前和她聊过天",
-		"english": "I talked with her before",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /bɪ'fɔr/"
+		"nativeText": "nó quan trọng",
+		"english": "It is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "昨天",
-		"english": "yesterday",
-		"soundmark": "/'jɛstɚde/"
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "那一天",
-		"english": "the day",
-		"soundmark": "/ðə/ /de/"
+		"nativeText": "bạn phải nói cho tôi sự thật vì nó quan trọng",
+		"english": "You have to tell me the truth because it is important",
+		"soundmark": "/ju/ /hæv/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "在......之前；以前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"nativeText": "một việc gì",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "我前天和她聊过天",
-		"english": "I talked with her the day before yesterday",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /ðə/ /de/ /bɪ'fɔr/ /'jɛstɚde/"
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "上一个",
-		"english": "last",
-		"soundmark": "/læst/"
+		"nativeText": "một việc gì quan trọng",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "星期；周",
-		"english": "week",
-		"soundmark": "/wik/"
+		"nativeText": "nói",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "周末",
-		"english": "weekend",
-		"soundmark": "/'wikɛnd/"
+		"nativeText": "nói với bạn",
+		"english": "to tell you",
+		"soundmark": "/tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "上周末",
-		"english": "last weekend",
-		"soundmark": "/læst/ /'wikɛnd/"
+		"nativeText": "nói với bạn một việc gì quan trọng",
+		"english": "to tell you something important",
+		"soundmark": "/tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我上周末和她聊过天",
-		"english": "I talked with her last weekend",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/"
+		"nativeText": "tôi muốn",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "改变",
-		"english": "to change",
-		"soundmark": "/tə/ /tʃendʒ/"
+		"nativeText": "tôi muốn nói với bạn một việc gì quan trọng",
+		"english": "I want to tell you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "世界",
+		"nativeText": "ăn",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"nativeText": "món ăn này",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"nativeText": "ăn món ăn này",
+		"english": "to eat the food",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/"
+	},
+	{
+		"nativeText": "bây giờ",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"nativeText": "ăn món ăn này bây giờ",
+		"english": "to eat the food now",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"nativeText": "cô ấy cần",
+		"english": "she needs",
+		"soundmark": "/ʃi/ /nidz/"
+	},
+	{
+		"nativeText": "cô ấy cần ăn món ăn này bây giờ",
+		"english": "she needs to eat the food now",
+		"soundmark": "/ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"nativeText": "giải thích",
+		"english": "to explain",
+		"soundmark": "/tə/ /ɪk'splen/"
+	},
+	{
+		"nativeText": "lý do",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "giải thích lý do",
+		"english": "to explain the reason",
+		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "cô ấy muốn",
+		"english": "she wants",
+		"soundmark": "/ʃi/ /wɑnts/"
+	},
+	{
+		"nativeText": "cô ấy muốn giải thích lý do",
+		"english": "she wants to explain the reason",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "tại sao",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"nativeText": "cô ấy muốn giải thích lý do tại sao cô ấy cần ăn món ăn này bây giờ",
+		"english": "she wants to explain the reason why she needs to eat the food now",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
+	},
+	{
+		"nativeText": "đọc",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"nativeText": "ở nhà",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"nativeText": "đọc ở nhà",
+		"english": "to read at home",
+		"soundmark": "/tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "cô ấy thích đọc ở nhà",
+		"english": "she likes to read at home",
+		"soundmark": "/ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "cô ấy phải giải thích lý do tại sao cô ấy thích đọc ở nhà",
+		"english": "she has to explain the reason why she likes to read at home",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "rất",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"nativeText": "nó rất quan trọng",
+		"english": "it is very important",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "cô ấy phải giải thích lý do tại sao cô ấy thích đọc ở nhà vì nó rất quan trọng",
+		"english": "she has to explain the reason why she likes to read at home because it is very important",
+		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "hỏi",
+		"english": "to ask",
+		"soundmark": "/tə/ /æsk/"
+	},
+	{
+		"nativeText": "hỏi tôi",
+		"english": "to ask me",
+		"soundmark": "/tə/ /æsk/ /mi/"
+	},
+	{
+		"nativeText": "một câu hỏi",
+		"english": "a question",
+		"soundmark": "/ə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "hỏi tôi một câu hỏi",
+		"english": "to ask me a question",
+		"soundmark": "/tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "cô ấy muốn",
+		"english": "she wants",
+		"soundmark": "/ʃi/ /wɑnts/"
+	},
+	{
+		"nativeText": "cô ấy muốn hỏi tôi một câu hỏi",
+		"english": "she wants to ask me a question",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "về",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"nativeText": "món ăn này",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"nativeText": "một câu hỏi về món ăn này",
+		"english": "a question about the food",
+		"soundmark": "/ə/ /'kwɛstʃən/ /ə'baʊt/ /ðə/ /fud/"
+	},
+	{
+		"nativeText": "cô ấy muốn hỏi tôi một câu hỏi về món ăn này",
+		"english": "she wants to ask me a question about the food",
+		"soundmark": "/ʃi/ /wɑnts/ /tə/ /æsk/ /mi/ /ə/ /'kwɛstʃən/ /ə'baʊt/ /ðə/ /fud/"
+	},
+	{
+		"nativeText": "bay",
+		"english": "to fly",
+		"soundmark": "/tə/ /flaɪ/"
+	},
+	{
+		"nativeText": "bầu trời",
+		"english": "sky",
+		"soundmark": "/skaɪ/"
+	},
+	{
+		"nativeText": "trên bầu trời",
+		"english": "in the sky",
+		"soundmark": "/ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"nativeText": "bay trên bầu trời",
+		"english": "to fly in the sky",
+		"soundmark": "/tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"nativeText": "con chim",
+		"english": "the bird",
+		"soundmark": "/ðə/ /bɝd/"
+	},
+	{
+		"nativeText": "con chim muốn",
+		"english": "the bird wants",
+		"soundmark": "/ðə/ /bɝd/ /wɑnts/"
+	},
+	{
+		"nativeText": "con chim muốn bay trên bầu trời",
+		"english": "the bird wants to fly in the sky",
+		"soundmark": "/ðə/ /bɝd/ /wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"nativeText": "Xingrong muốn",
+		"english": "Xingrong wants",
+		"soundmark": "/wɑnts/"
+	},
+	{
+		"nativeText": "Xingrong muốn bay trên bầu trời",
+		"english": "Xingrong wants to fly in the sky",
+		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
+	},
+	{
+		"nativeText": "nhưng",
+		"english": "but",
+		"soundmark": "/bət/"
+	},
+	{
+		"nativeText": "không thể",
+		"english": "impossible",
+		"soundmark": "/ɪm'pɑsəbl/"
+	},
+	{
+		"nativeText": "nó không thể",
+		"english": "it is impossible",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
+	},
+	{
+		"nativeText": "Xingrong muốn bay trên bầu trời nhưng nó không thể",
+		"english": "Xingrong wants to fly in the sky but it is impossible",
+		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/ /bət/ /ɪt/ /ɪz/ /ɪm'pɑsəbl/"
+	},
+	{
+		"nativeText": "sự thật",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "nói cho tôi sự thật",
+		"english": "to tell me the truth",
+		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "anh ấy phải nói cho tôi sự thật",
+		"english": "He has to tell me the truth",
+		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "biết việc này",
+		"english": "to know it",
+		"soundmark": "/tə/ /no/ /ɪt/"
+	},
+	{
+		"nativeText": "tôi cần",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"nativeText": "tôi cần biết việc này",
+		"english": "I need to know it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪt/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "anh ấy phải nói cho tôi sự thật vì tôi cần biết nó",
+		"english": "He has to tell me the truth because I need to know it",
+		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /aɪ/ /nid/ /tə/ /no/ /ɪt/"
+	},
+	{
+		"nativeText": "tôi cần",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"nativeText": "tôi không cần",
+		"english": "I don't need",
+		"soundmark": "/aɪ/ /dont/ /nid/"
+	},
+	{
+		"nativeText": "làm việc này",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "tôi không cần làm việc này",
+		"english": "I don't need to do it",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "hôm nay",
+		"english": "today",
+		"soundmark": "/tə'de/"
+	},
+	{
+		"nativeText": "tôi hôm nay không cần làm việc này",
+		"english": "I don't need to do it today",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "không quan trọng",
+		"english": "not important",
+		"soundmark": "/nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "nó không quan trọng",
+		"english": "it is not important",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "vì vậy",
+		"english": "so",
+		"soundmark": "/so/"
+	},
+	{
+		"nativeText": "nó không quan trọng nên tôi hôm nay không cần làm việc này",
+		"english": "it is not important so I don't need to do it today",
+		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /so/ /aɪ/ /dont/ /nid/ /tə/ /du/ /ɪt/ /tə'de/"
+	},
+	{
+		"nativeText": "có thể",
+		"english": "can",
+		"soundmark": "/kæn/"
+	},
+	{
+		"nativeText": "tôi có thể",
+		"english": "I can",
+		"soundmark": "/aɪ/ /kæn/"
+	},
+	{
+		"nativeText": "làm việc này",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "tôi có thể làm việc này",
+		"english": "I can do it",
+		"soundmark": "/aɪ/ /kæn/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "một mình",
+		"english": "alone",
+		"soundmark": "/ə'lon/"
+	},
+	{
+		"nativeText": "tôi có thể làm việc này một mình",
+		"english": "I can do it alone",
+		"soundmark": "/aɪ/ /kæn/ /du/ /ɪt/ /ə'lon/"
+	},
+	{
+		"nativeText": "tôi không thể làm việc này một mình",
+		"english": "I can not do it alone",
+		"soundmark": "/aɪ/ /kæn/ /nɑt/ /du/ /ɪt/ /ə'lon/"
+	},
+	{
+		"nativeText": "bạn phải giúp tôi",
+		"english": "you have to help me",
+		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "bạn phải giúp tôi vì tôi không thể làm việc này một mình",
+		"english": "you have to help me because I can not do it alone",
+		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /bɪ'kɔz/ /aɪ/ /kæn/ /nɑt/ /du/ /ɪt/ /ə'lon/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "be here",
+		"soundmark": "/bi/ /hɪr/"
+	},
+	{
+		"nativeText": "tôi có thể ở đây",
+		"english": "I can be here",
+		"soundmark": "/aɪ/ /kæn/ /bi/ /hɪr/"
+	},
+	{
+		"nativeText": "ngày mai",
+		"english": "tomorrow",
+		"soundmark": "/tə'mɔro/"
+	},
+	{
+		"nativeText": "tôi có thể ở đây vào ngày mai",
+		"english": "I can be here tomorrow",
+		"soundmark": "/aɪ/ /kæn/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"nativeText": "tôi không thể ở đây vào ngày mai",
+		"english": "I can not be here tomorrow",
+		"soundmark": "/aɪ/ /kæn/ /nɑt/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"nativeText": "anh ấy cần biết",
+		"english": "he needs to know",
+		"soundmark": "/hi/ /nidz/ /tə/ /no/"
+	},
+	{
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"nativeText": "anh ấy cần biết liệu tôi có thể ở đây vào ngày mai hay không",
+		"english": "he needs to know if I can be here tomorrow",
+		"soundmark": "/hi/ /nidz/ /tə/ /no/ /ɪf/ /aɪ/ /kæn/ /bi/ /hɪr/ /tə'mɔro/"
+	},
+	{
+		"nativeText": "bạn có thể",
+		"english": "you can",
+		"soundmark": "/ju/ /kæn/"
+	},
+	{
+		"nativeText": "nói cho tôi",
+		"english": "tell me",
+		"soundmark": "/tɛl/ /mi/"
+	},
+	{
+		"nativeText": "sự thật",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "nói cho tôi sự thật",
+		"english": "tell me the truth",
+		"soundmark": "/tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "bạn có thể nói cho tôi sự thật",
+		"english": "you can tell me the truth",
+		"soundmark": "/ju/ /kæn/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "bạn không thể nói cho tôi sự thật",
+		"english": "you can not tell me the truth",
+		"soundmark": "/ju/ /kæn/ /nɑt/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "tôi cần biết",
+		"english": "I need to know",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/"
+	},
+	{
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"nativeText": "tôi cần biết liệu bạn có thể nói cho tôi sự thật hay không",
+		"english": "I need to know if you can tell me the truth",
+		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɛl/ /mi/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "ở nhà",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"nativeText": "đọc ở nhà",
+		"english": "read at home",
+		"soundmark": "/rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "bạn có thể đọc ở nhà",
+		"english": "you can read at home",
+		"soundmark": "/ju/ /kæn/ /rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "bạn không thể đọc ở nhà",
+		"english": "you can not read at home",
+		"soundmark": "/ju/ /kæn/ /nɑt/ /rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "bạn cần nói cho tôi",
+		"english": "you need to tell me",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/"
+	},
+	{
+		"nativeText": "lý do",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "bạn cần nói cho tôi lý do",
+		"english": "you need to tell me the reason",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "tại sao",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"nativeText": "bạn cần nói cho tôi lý do tại sao bạn không thể đọc ở nhà",
+		"english": "you need to tell me the reason why you can not read at home",
+		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /ˈrizən/ /waɪ/ /ju/ /kæn/ /nɑt/ /rid/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "nói chuyện với tôi",
+		"english": "talk with me",
+		"soundmark": "/tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"nativeText": "anh ấy có thể nói chuyện với tôi",
+		"english": "he can talk with me",
+		"soundmark": "/hi/ /kæn/ /tɔk/ /wɪð/ /mi/"
+	},
+	{
+		"nativeText": "tối nay",
+		"english": "tonight",
+		"soundmark": "/tə'naɪt/"
+	},
+	{
+		"nativeText": "anh ấy có thể nói chuyện với tôi tối nay",
+		"english": "he can talk with me tonight",
+		"soundmark": "/hi/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"nativeText": "anh ấy không thể nói chuyện với tôi tối nay",
+		"english": "he can not talk with me tonight",
+		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"nativeText": "tôi muốn biết",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"nativeText": "tôi muốn biết liệu anh ấy có thể nói chuyện với tôi tối nay hay không",
+		"english": "I want to know if he can talk with me tonight",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /hi/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"nativeText": "cô ấy có thể",
+		"english": "she can",
+		"soundmark": "/ʃi/ /kæn/"
+	},
+	{
+		"nativeText": "giải thích",
+		"english": "explain",
+		"soundmark": "/ɪk'splen/"
+	},
+	{
+		"nativeText": "lý do",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "giải thích lý do",
+		"english": "explain the reason",
+		"soundmark": "/ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "cô ấy có thể giải thích lý do",
+		"english": "she can explain the reason",
+		"soundmark": "/ʃi/ /kæn/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "cô ấy không thể giải thích lý do",
+		"english": "she can not explain the reason",
+		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "tại sao",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"nativeText": "anh ấy không thể nói chuyện với tôi tối nay",
+		"english": "he can not talk with me tonight",
+		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"nativeText": "cô ấy có thể giải thích lý do tại sao anh ấy không thể nói chuyện với tôi tối nay",
+		"english": "she can explain the reason why he can not talk with me tonight",
+		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
+	},
+	{
+		"nativeText": "nhảy",
+		"english": "to dance",
+		"soundmark": "/tə/ /dæns/"
+	},
+	{
+		"nativeText": "chúng ta thích nhảy",
+		"english": "we like to dance",
+		"soundmark": "/wi/ /laɪk/ /tə/ /dæns/"
+	},
+	{
+		"nativeText": "chúng ta thích nhảy bây giờ",
+		"english": "we like to dance now",
+		"soundmark": "/wi/ /laɪk/ /tə/ /dæns/ /naʊ/"
+	},
+	{
+		"nativeText": "con phố",
+		"english": "the street",
+		"soundmark": "/ðə/ /strit/"
+	},
+	{
+		"nativeText": "trên phố",
+		"english": "in the street",
+		"soundmark": "/ɪn/ /ðə/ /strit/"
+	},
+	{
+		"nativeText": "chúng ta thích nhảy trên phố",
+		"english": "we like to dance in the street",
+		"soundmark": "/wi/ /laɪk/ /tə/ /dæns/ /ɪn/ /ðə/ /strit/"
+	},
+	{
+		"nativeText": "ban đêm",
+		"english": "night",
+		"soundmark": "/naɪt/"
+	},
+	{
+		"nativeText": "vào ban đêm",
+		"english": "at night",
+		"soundmark": "/ət/ /naɪt/"
+	},
+	{
+		"nativeText": "chúng ta thích nhảy trên phố vào ban đêm",
+		"english": "we like to dance in the street at night",
+		"soundmark": "/wi/ /laɪk/ /tə/ /dæns/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
+	},
+	{
+		"nativeText": "chúng ta không thích nhảy trên phố vào ban đêm",
+		"english": "we don't like to dance in the street at night",
+		"soundmark": "/wi/ /dont/ /laɪk/ /tə/ /dæns/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
+	},
+	{
+		"nativeText": "họ",
+		"english": "they",
+		"soundmark": "/ðe/"
+	},
+	{
+		"nativeText": "họ không thích nhảy cùng bạn trên phố vào ban đêm",
+		"english": "they don't like to dance with you in the street at night",
+		"soundmark": "/ðe/ /dont/ /laɪk/ /tə/ /dæns/ /wɪð/ /ju/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "muốn biết",
+		"english": "want to know",
+		"soundmark": "/wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "chúng ta muốn biết",
+		"english": "we want to know",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "chỉ",
+		"english": "just",
+		"soundmark": "/dʒʌst/"
+	},
+	{
+		"nativeText": "chúng ta chỉ muốn biết",
+		"english": "we just want to know",
+		"soundmark": "/wi/ /dʒʌst/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"nativeText": "chúng ta chỉ muốn biết liệu họ có thích nhảy cùng bạn trên phố vào ban đêm hay không",
+		"english": "we just want to know if they like to dance with you in the street at night",
+		"soundmark": "/wi/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ɪf/ /ðe/ /laɪk/ /tə/ /dæns/ /wɪð/ /ju/ /ɪn/ /ðə/ /strit/ /ət/ /naɪt/"
+	},
+	{
+		"nativeText": "câu trả lời",
+		"english": "the answer",
+		"soundmark": "/ði/ /'ænsɚ/"
+	},
+	{
+		"nativeText": "chúng ta muốn biết câu trả lời",
+		"english": "we want to know the answer",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /no/ /ði/ /'ænsɚ/"
+	},
+	{
+		"nativeText": "câu hỏi",
+		"english": "the question",
+		"soundmark": "/ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "câu trả lời cho câu hỏi",
+		"english": "the answer to the question",
+		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "chúng ta muốn biết câu trả lời cho câu hỏi",
+		"english": "we want to know the answer to the question",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "chúng ta không muốn biết câu trả lời cho câu hỏi",
+		"english": "we don't want to know the answer to the question",
+		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "sớm",
+		"english": "soon",
+		"soundmark": "/sun/"
+	},
+	{
+		"nativeText": "có thể",
+		"english": "possible",
+		"soundmark": "/'pɑsəbl/"
+	},
+	{
+		"nativeText": "càng sớm càng tốt",
+		"english": "as soon as possible",
+		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"nativeText": "chúng ta muốn biết câu trả lời cho câu hỏi càng sớm càng tốt",
+		"english": "we want to know the answer to the question as soon as possible",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/ /əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"nativeText": "làm việc",
+		"english": "to work",
+		"soundmark": "/tə/ /wɝk/"
+	},
+	{
+		"nativeText": "nhà hàng",
+		"english": "the restaurant",
+		"soundmark": "/ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "ở nhà hàng",
+		"english": "at the restaurant",
+		"soundmark": "/ət/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "làm việc ở nhà hàng",
+		"english": "to work at the restaurant",
+		"soundmark": "/tə/ /wɝk/ /ət/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "chúng ta muốn làm việc ở nhà hàng",
+		"english": "we want to work at the restaurant",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /wɝk/ /ət/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "chúng ta không muốn làm việc ở nhà hàng",
+		"english": "we don't want to work at the restaurant",
+		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /wɝk/ /ət/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "trả lời",
+		"english": "to answer",
+		"soundmark": "/tə/ /'ænsɚ/"
+	},
+	{
+		"nativeText": "trả lời các câu hỏi",
+		"english": "to answer the questions",
+		"soundmark": "/tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/"
+	},
+	{
+		"nativeText": "chúng ta cần trả lời các câu hỏi",
+		"english": "we need to answer the questions",
+		"soundmark": "/wi/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/"
+	},
+	{
+		"nativeText": "về",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"nativeText": "về công việc",
+		"english": "about the work",
+		"soundmark": "/ə'baʊt/ /ðə/ /wɝk/"
+	},
+	{
+		"nativeText": "chúng ta cần trả lời các câu hỏi về công việc",
+		"english": "we need to answer the questions about the work",
+		"soundmark": "/wi/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/ /ə'baʊt/ /ðə/ /wɝk/"
+	},
+	{
+		"nativeText": "chúng ta không cần trả lời các câu hỏi về công việc",
+		"english": "we don't need to answer the questions about the work",
+		"soundmark": "/wi/ /dont/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/ /ə'baʊt/ /ðə/ /wɝk/"
+	},
+	{
+		"nativeText": "các bạn cần trả lời các câu hỏi về công việc",
+		"english": "you need to answer the questions about the work",
+		"soundmark": "/ju/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/ /ə'baʊt/ /ðə/ /wɝk/"
+	},
+	{
+		"nativeText": "sớm",
+		"english": "soon",
+		"soundmark": "/sun/"
+	},
+	{
+		"nativeText": "có thể",
+		"english": "possible",
+		"soundmark": "/'pɑsəbl/"
+	},
+	{
+		"nativeText": "càng sớm càng tốt",
+		"english": "as soon as possible",
+		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"nativeText": "các bạn cần trả lời các câu hỏi về công việc càng sớm càng tốt",
+		"english": "you need to answer the questions about the work as soon as possible",
+		"soundmark": "/ju/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/ /ə'baʊt/ /ðə/ /wɝk/ /əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "chúng quan trọng",
+		"english": "they are important",
+		"soundmark": "/ðe/ /ɚ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "rất",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"nativeText": "chúng rất quan trọng",
+		"english": "they are very important",
+		"soundmark": "/ðe/ /ɚ/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "các bạn cần trả lời các câu hỏi về công việc càng sớm càng tốt vì chúng rất quan trọng",
+		"english": "you need to answer the questions about the work as soon as possible because they are very important",
+		"soundmark": "/ju/ /nid/ /tə/ /'ænsɚ/ /ðə/ /'kwestʃənz/ /ə'baʊt/ /ðə/ /wɝk/ /əz/ /sun/ /əz/ /'pɑsəbl/ /bɪ'kɔz/ /ðe/ /ɚ/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "nên",
+		"english": "should",
+		"soundmark": "/ʃʊd/"
+	},
+	{
+		"nativeText": "chúng ta nên",
+		"english": "we should",
+		"soundmark": "/wi/ /ʃʊd/"
+	},
+	{
+		"nativeText": "chúng ta nên biết",
+		"english": "we should know",
+		"soundmark": "/wi/ /ʃʊd/ /no/"
+	},
+	{
+		"nativeText": "câu trả lời",
+		"english": "the answer",
+		"soundmark": "/ði/ /'ænsɚ/"
+	},
+	{
+		"nativeText": "chúng ta nên biết câu trả lời",
+		"english": "we should know the answer",
+		"soundmark": "/wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/"
+	},
+	{
+		"nativeText": "câu hỏi này",
+		"english": "the question",
+		"soundmark": "/ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "câu trả lời cho câu hỏi này",
+		"english": "the answer to the question",
+		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "chúng ta nên biết câu trả lời cho câu hỏi này",
+		"english": "we should know the answer to the question",
+		"soundmark": "/wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "chúng ta không nên biết câu trả lời cho câu hỏi này",
+		"english": "we should not know the answer to the question",
+		"soundmark": "/wi/ /ʃʊd/ /nɑt/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "tôi nghĩ",
+		"english": "I think",
+		"soundmark": "/aɪ/ /θɪŋk/"
+	},
+	{
+		"nativeText": "tôi nghĩ chúng ta nên biết câu trả lời cho câu hỏi này",
+		"english": "I think we should know the answer to the question",
+		"soundmark": "/aɪ/ /θɪŋk/ /wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "tôi không nghĩ chúng ta nên biết câu trả lời cho câu hỏi này",
+		"english": "I don't think we should know the answer to the question",
+		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "nên biết",
+		"english": "should know",
+		"soundmark": "/ʃʊd/ /no/"
+	},
+	{
+		"nativeText": "các bạn nên biết",
+		"english": "you should know",
+		"soundmark": "/ju/ /ʃʊd/ /no/"
+	},
+	{
+		"nativeText": "lý do",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "các bạn nên biết lý do",
+		"english": "you should know the reason",
+		"soundmark": "/ju/ /ʃʊd/ /no/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "món ăn",
+		"english": "the food",
+		"soundmark": "/ðə/ /fud/"
+	},
+	{
+		"nativeText": "nhà hàng",
+		"english": "the restaurant",
+		"soundmark": "/ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "món ăn từ nhà hàng",
+		"english": "the food from the restaurant",
+		"soundmark": "/ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "ăn món ăn từ nhà hàng",
+		"english": "to eat the food from the restaurant",
+		"soundmark": "/tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "chúng ta muốn",
+		"english": "we want",
+		"soundmark": "/wi/ /wɑnt/"
+	},
+	{
+		"nativeText": "ăn",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
+	},
+	{
+		"nativeText": "chúng ta muốn ăn món ăn từ nhà hàng",
+		"english": "we want to eat the food from the restaurant",
+		"soundmark": "/wi/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "chúng ta không muốn ăn món ăn từ nhà hàng",
+		"english": "we don't want to eat the food from the restaurant",
+		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "tại sao",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"nativeText": "bạn nên biết lý do tại sao chúng ta không muốn ăn món ăn từ nhà hàng",
+		"english": "you should know the reason why we don't want to eat the food from the restaurant",
+		"soundmark": "/ju/ /ʃʊd/ /no/ /ðə/ /ˈrizən/ /waɪ/ /wi/ /dont/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "tôi nghĩ",
+		"english": "I think",
+		"soundmark": "/aɪ/ /θɪŋk/"
+	},
+	{
+		"nativeText": "tôi nghĩ bạn nên biết lý do tại sao chúng ta không muốn ăn món ăn từ nhà hàng",
+		"english": "I think you should know the reason why we don't want to eat the food from the restaurant",
+		"soundmark": "/aɪ/ /θɪŋk/ /ju/ /ʃʊd/ /no/ /ðə/ /ˈrizən/ /waɪ/ /wi/ /dont/ /wɑnt/ /tə/ /it/ /ðə/ /fud/ /frʌm/ /ðə/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "dự định",
+		"english": "plan",
+		"soundmark": "/plæn/"
+	},
+	{
+		"nativeText": "tôi dự định",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
+	},
+	{
+		"nativeText": "ở lại",
+		"english": "to stay",
+		"soundmark": "/tə/ /ste/"
+	},
+	{
+		"nativeText": "tôi dự định ở lại",
+		"english": "I plan to stay",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"nativeText": "tôi dự định ở lại đây",
+		"english": "I plan to stay here",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"nativeText": "cùng bạn",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
+	},
+	{
+		"nativeText": "tôi dự định ở lại đây cùng bạn",
+		"english": "I plan to stay here with you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "tôi không dự định ở lại đây cùng bạn",
+		"english": "I don't plan to stay here with you",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "muốn biết",
+		"english": "want to know",
+		"soundmark": "/wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "họ muốn biết",
+		"english": "they want to know",
+		"soundmark": "/ðe/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "chỉ",
+		"english": "just",
+		"soundmark": "/dʒʌst/"
+	},
+	{
+		"nativeText": "họ chỉ muốn biết",
+		"english": "they just want to know",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"nativeText": "họ chỉ muốn biết liệu tôi có dự định ở lại đây cùng bạn hay không",
+		"english": "they just want to know if I plan to stay here with you",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "lý do",
+		"english": "the reason",
+		"soundmark": "/ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "họ chỉ muốn biết lý do",
+		"english": "they just want to know the reason",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "tại sao",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"nativeText": "họ chỉ muốn biết lý do tại sao tôi không dự định ở lại đây cùng bạn",
+		"english": "they just want to know the reason why I don't plan to stay here with you",
+		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/ /waɪ/ /aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "cô ấy dự định",
+		"english": "she plans",
+		"soundmark": "/ʃi/ /plænz/"
+	},
+	{
+		"nativeText": "rời khỏi",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"nativeText": "đất nước",
+		"english": "the country",
+		"soundmark": "/ðə/ /'kʌntri/"
+	},
+	{
+		"nativeText": "rời khỏi đất nước",
+		"english": "to leave the country",
+		"soundmark": "/tə/ /liv/ /ðə/ /'kʌntri/"
+	},
+	{
+		"nativeText": "cô ấy dự định rời khỏi đất nước",
+		"english": "she plans to leave the country",
+		"soundmark": "/ʃi/ /plænz/ /tə/ /liv/ /ðə/ /'kʌntri/"
+	},
+	{
+		"nativeText": "tiếp theo",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"nativeText": "tháng",
+		"english": "month",
+		"soundmark": "/mʌnθ/"
+	},
+	{
+		"nativeText": "tháng tới",
+		"english": "next month",
+		"soundmark": "/nɛkst/ /mʌnθ/"
+	},
+	{
+		"nativeText": "cô ấy dự định rời khỏi đất nước vào tháng tới",
+		"english": "she plans to leave the country next month",
+		"soundmark": "/ʃi/ /plænz/ /tə/ /liv/ /ðə/ /'kʌntri/ /nɛkst/ /mʌnθ/"
+	},
+	{
+		"nativeText": "cô ấy không dự định rời khỏi đất nước vào tháng tới",
+		"english": "she doesn't plan to leave the country next month",
+		"soundmark": "/ʃi/ /ˈdʌznt/ /plæn/ /tə/ /liv/ /ðə/ /'kʌntri/ /nɛkst/ /mʌnθ/"
+	},
+	{
+		"nativeText": "trả tiền",
+		"english": "to pay",
+		"soundmark": "/tə/ /pe/"
+	},
+	{
+		"nativeText": "hóa đơn",
+		"english": "the bill",
+		"soundmark": "/ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "trả hóa đơn",
+		"english": "to pay the bill",
+		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "tôi cần",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"nativeText": "tôi cần trả hóa đơn",
+		"english": "I need to pay the bill",
+		"soundmark": "/aɪ/ /nid/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "tôi không cần trả hóa đơn",
+		"english": "I don't need to pay the bill",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "tôi dự định",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
+	},
+	{
+		"nativeText": "tôi dự định trả hóa đơn",
+		"english": "I plan to pay the bill",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "cho bạn",
+		"english": "for you",
+		"soundmark": "/fɝ/ /ju/"
+	},
+	{
+		"nativeText": "tôi dự định trả hóa đơn cho bạn",
+		"english": "I plan to pay the bill for you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ju/"
+	},
+	{
+		"nativeText": "tôi không dự định trả hóa đơn cho bạn",
+		"english": "I don't plan to pay the bill for you",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ju/"
+	},
+	{
+		"nativeText": "bạn dự định trả hóa đơn",
+		"english": "you plan to pay the bill",
+		"soundmark": "/ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "cho tôi",
+		"english": "for me",
+		"soundmark": "/fɝ/ /mi/"
+	},
+	{
+		"nativeText": "bạn dự định trả hóa đơn cho tôi",
+		"english": "you plan to pay the bill for me",
+		"soundmark": "/ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "bạn không dự định trả hóa đơn cho tôi",
+		"english": "you don't plan to pay the bill for me",
+		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "tôi muốn",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "tôi muốn biết",
+		"english": "I want to know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
+	},
+	{
+		"nativeText": "có hay không",
+		"english": "if",
+		"soundmark": "/ɪf/"
+	},
+	{
+		"nativeText": "tôi muốn biết liệu bạn có dự định trả hóa đơn cho tôi hay không",
+		"english": "I want to know if you plan to pay the bill for me",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "tôi dự định trả hóa đơn",
+		"english": "I plan to pay the bill",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
+	},
+	{
+		"nativeText": "cho anh ấy",
+		"english": "for him",
+		"soundmark": "/fɝ/ /hɪm/"
+	},
+	{
+		"nativeText": "tôi dự định trả hóa đơn cho anh ấy",
+		"english": "I plan to pay the bill for him",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/"
+	},
+	{
+		"nativeText": "tôi không dự định trả hóa đơn cho anh ấy",
+		"english": "I don't plan to pay the bill for him",
+		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/"
+	},
+	{
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "nó quan trọng",
+		"english": "it is important",
+		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "rất",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"nativeText": "nó rất quan trọng",
+		"english": "it is very important",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "bởi vì nó rất quan trọng",
+		"english": "because it is very important",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi dự định trả hóa đơn cho anh ấy vì nó rất quan trọng",
+		"english": "I plan to pay the bill for him because it is very important",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi cần",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"nativeText": "làm việc này",
+		"english": "to do it",
+		"soundmark": "/tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "tôi cần làm việc này",
+		"english": "I need to do it",
+		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "và",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"nativeText": "và tôi cần làm việc này",
+		"english": "and I need to do it",
+		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "tôi dự định trả hóa đơn cho anh ấy vì nó rất quan trọng và tôi cần làm việc này",
+		"english": "I plan to pay the bill for him because it is very important and I need to do it",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
+	},
+	{
+		"nativeText": "du lịch",
+		"english": "to travel",
+		"soundmark": "/tə/ /'trævl/"
+	},
+	{
+		"nativeText": "thế giới",
 		"english": "the world",
 		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "改变世界",
-		"english": "to change the world",
-		"soundmark": "/tə/ /tʃendʒ/ /ðə/ /wɝld/"
+		"nativeText": "du lịch quanh thế giới",
+		"english": "to travel the world",
+		"soundmark": "/tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "她想要改变世界",
-		"english": "she wants to change the world",
-		"soundmark": "/ʃi/ /wɑnts/ /tə/ /tʃendʒ/ /ðə/ /wɝld/"
+		"nativeText": "muốn",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "她（过去）想要改变世界",
-		"english": "she wanted to change the world",
-		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/"
+		"nativeText": "muốn một cách lịch sự",
+		"english": "would like",
+		"soundmark": "/wʊd/ /laɪk/"
 	},
 	{
-		"chinese": "年轻的",
-		"english": "young",
-		"soundmark": "/jʌŋ/"
+		"nativeText": "tôi muốn du lịch quanh thế giới",
+		"english": "I would like to travel the world",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "她（过去）是年轻的",
-		"english": "she was young",
-		"soundmark": "/ʃi/ /wəz/ /jʌŋ/"
+		"nativeText": "cùng cô ấy",
+		"english": "with her",
+		"soundmark": "/wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "当......的时候",
+		"nativeText": "tôi muốn cùng cô ấy du lịch quanh thế giới",
+		"english": "I would like to travel the world with her",
+		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/"
+	},
+	{
+		"nativeText": "tôi không muốn cùng cô ấy du lịch quanh thế giới",
+		"english": "I would not like to travel the world with her",
+		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/"
+	},
+	{
+		"nativeText": "tôi dự định",
+		"english": "I plan",
+		"soundmark": "/aɪ/ /plæn/"
+	},
+	{
+		"nativeText": "tôi dự định ở lại đây",
+		"english": "I plan to stay here",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"nativeText": "cùng bạn",
+		"english": "with you",
+		"soundmark": "/wɪð/ /ju/"
+	},
+	{
+		"nativeText": "tôi dự định ở lại đây cùng bạn",
+		"english": "I plan to stay here with you",
+		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "vì tôi dự định ở lại đây cùng bạn",
+		"english": "because I plan to stay here with you",
+		"soundmark": "/bɪ'kɔz/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "tôi không muốn cùng cô ấy du lịch quanh thế giới vì tôi dự định ở lại đây cùng bạn",
+		"english": "I would not like to travel the world with her because I plan to stay here with you",
+		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /bɪ'kɔz/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
+	},
+	{
+		"nativeText": "cô ấy",
+		"english": "she",
+		"soundmark": "/ʃi/"
+	},
+	{
+		"nativeText": "cho",
+		"english": "to give",
+		"soundmark": "/tə/ /ɡɪv/"
+	},
+	{
+		"nativeText": "cho chúng ta",
+		"english": "to give us",
+		"soundmark": "/tə/ /ɡɪv/ /ʌs/"
+	},
+	{
+		"nativeText": "cô ấy cần cho chúng ta",
+		"english": "she needs to give us",
+		"soundmark": "/ʃi/ /nidz/ /tə/ /ɡɪv/ /ʌs/"
+	},
+	{
+		"nativeText": "câu trả lời cho câu hỏi",
+		"english": "the answer to the question",
+		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "cô ấy cần cho chúng ta câu trả lời cho câu hỏi",
+		"english": "she needs to give us the answer to the question",
+		"soundmark": "/ʃi/ /nidz/ /tə/ /ɡɪv/ /ʌs/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "cô ấy không cần cho chúng ta câu trả lời cho câu hỏi",
+		"english": "she doesn't need to give us the answer to the question",
+		"soundmark": "/ʃi/ /ˈdʌznt/ /nid/ /tə/ /ɡɪv/ /ʌs/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "một lý do",
+		"english": "a reason",
+		"soundmark": "/ə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "cho tôi một lý do",
+		"english": "to give me a reason",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "tôi cần bạn cho tôi một lý do",
+		"english": "I need you to give me a reason",
+		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "tôi không cần bạn cho tôi một lý do",
+		"english": "I don't need you to give me a reason",
+		"soundmark": "/aɪ/ /dont/ /nid/ /ju/ /tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "chúng ta nên biết",
+		"english": "we should know",
+		"soundmark": "/wi/ /ʃʊd/ /no/"
+	},
+	{
+		"nativeText": "câu trả lời cho câu hỏi",
+		"english": "the answer to the question",
+		"soundmark": "/ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "chúng ta nên biết câu trả lời cho câu hỏi",
+		"english": "we should know the answer to the question",
+		"soundmark": "/wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "chúng ta không nên biết câu trả lời cho câu hỏi",
+		"english": "we should not know the answer to the question",
+		"soundmark": "/wi/ /ʃʊd/ /nɑt/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "tại sao",
+		"english": "why",
+		"soundmark": "/waɪ/"
+	},
+	{
+		"nativeText": "tôi cần bạn cho tôi một lý do tại sao chúng ta nên biết câu trả lời cho câu hỏi",
+		"english": "I need you to give me a reason why we should know the answer to the question",
+		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /ɡɪv/ /mi/ /ə/ /ˈrizən/ /waɪ/ /wi/ /ʃʊd/ /no/ /ði/ /'ænsɚ/ /tə/ /ðə/ /'kwɛstʃən/"
+	},
+	{
+		"nativeText": "bàn tay",
+		"english": "hand",
+		"soundmark": "/hænd/"
+	},
+	{
+		"nativeText": "một bàn tay",
+		"english": "a hand",
+		"soundmark": "/ə/ /hænd/"
+	},
+	{
+		"nativeText": "cho tôi một bàn tay (giúp tôi một tay)",
+		"english": "to give me a hand",
+		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"nativeText": "bạn có thể giúp tôi một tay",
+		"english": "you can give me a hand",
+		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"nativeText": "tôi hy vọng",
+		"english": "I hope",
+		"soundmark": "/aɪ/ /hop/"
+	},
+	{
+		"nativeText": "tôi hy vọng bạn có thể giúp tôi một tay",
+		"english": "I hope you can give me a hand",
+		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "nó rất quan trọng với tôi",
+		"english": "it is very important for me",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "vì nó rất quan trọng với tôi",
+		"english": "because it is very important for me",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "tôi hy vọng bạn có thể giúp tôi một tay vì nó rất quan trọng với tôi",
+		"english": "I hope you can give me a hand because it is very important for me",
+		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
+	},
+	{
+		"nativeText": "và",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"nativeText": "tôi cần",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
+	},
+	{
+		"nativeText": "giúp",
+		"english": "to help",
+		"soundmark": "/tə/ /hɛlp/"
+	},
+	{
+		"nativeText": "tôi cần bạn giúp tôi",
+		"english": "I need you to help me",
+		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/"
+	},
+	{
+		"nativeText": "bây giờ",
+		"english": "now",
+		"soundmark": "/naʊ/"
+	},
+	{
+		"nativeText": "tôi cần bạn giúp tôi bây giờ",
+		"english": "I need you to help me now",
+		"soundmark": "/aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/ /naʊ/"
+	},
+	{
+		"nativeText": "tôi hy vọng bạn có thể giúp tôi một tay vì nó rất quan trọng với tôi và tôi cần bạn giúp tôi bây giờ",
+		"english": "I hope you can give me a hand because it is very important for me and I need you to help me now",
+		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /ənd/ /aɪ/ /nid/ /ju/ /tə/ /hɛlp/ /mi/ /naʊ/"
+	},
+	{
+		"nativeText": "sử dụng",
+		"english": "to use",
+		"soundmark": "/tə/ /juz/"
+	},
+	{
+		"nativeText": "cuốn từ điển",
+		"english": "the dictionary",
+		"soundmark": "/ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "của tôi",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"nativeText": "cuốn từ điển của tôi",
+		"english": "my dictionary",
+		"soundmark": "/maɪ/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "tôi muốn",
+		"english": "I want",
+		"soundmark": "/aɪ/ /wɑnt/"
+	},
+	{
+		"nativeText": "tôi muốn sử dụng cuốn từ điển của tôi",
+		"english": "I want to use my dictionary",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /juz/ /maɪ/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "đến",
+		"english": "to get",
+		"soundmark": "/tə/ /ɡɛt/"
+	},
+	{
+		"nativeText": "đó",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "đến đó",
+		"english": "to get there",
+		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "cần",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"nativeText": "tôi cần đến đó",
+		"english": "I need to get there",
+		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "tôi không cần đến đó",
+		"english": "I don't need to get there",
+		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "sớm",
+		"english": "soon",
+		"soundmark": "/sun/"
+	},
+	{
+		"nativeText": "tôi cần đến đó sớm",
+		"english": "I need to get there soon",
+		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɛt/ /ðɛr/ /sun/"
+	},
+	{
+		"nativeText": "có thể",
+		"english": "possible",
+		"soundmark": "/'pɑsəbl/"
+	},
+	{
+		"nativeText": "càng sớm càng tốt",
+		"english": "as soon as possible",
+		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"nativeText": "tôi cần đến đó càng sớm càng tốt",
+		"english": "I need to get there as soon as possible",
+		"soundmark": "/aɪ/ /nid/ /tə/ /ɡɛt/ /ðɛr/ /əz/ /sun/ /əz/ /'pɑsəbl/"
+	},
+	{
+		"nativeText": "như thế nào",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"nativeText": "cách đến đó",
+		"english": "how to get there",
+		"soundmark": "/haʊ/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "biết cách đến đó",
+		"english": "to know how to get there",
+		"soundmark": "/tə/ /no/ /haʊ/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "muốn",
+		"english": "want",
+		"soundmark": "/wɑnt/"
+	},
+	{
+		"nativeText": "tôi muốn biết cách đến đó",
+		"english": "I want to know how to get there",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /haʊ/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "chỉ",
+		"english": "just",
+		"soundmark": "/dʒʌst/"
+	},
+	{
+		"nativeText": "tôi chỉ muốn biết cách đến đó",
+		"english": "I just want to know how to get there",
+		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /no/ /haʊ/ /tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "thời gian",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"nativeText": "đúng giờ",
+		"english": "on time",
+		"soundmark": "/ɑn/ /taɪm/"
+	},
+	{
+		"nativeText": "tôi chỉ muốn biết cách đến đó đúng giờ",
+		"english": "I just want to know how to get there on time",
+		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /no/ /haʊ/ /tə/ /ɡɛt/ /ðɛr/ /ɑn/ /taɪm/"
+	},
+	{
+		"nativeText": "quên",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
+	},
+	{
+		"nativeText": "bạn quên",
+		"english": "you forget",
+		"soundmark": "/ju/ /fɚ'ɡɛt/"
+	},
+	{
+		"nativeText": "khóa",
+		"english": "to lock",
+		"soundmark": "/tə/ /lɑk/"
+	},
+	{
+		"nativeText": "cánh cửa",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "khóa cửa",
+		"english": "to lock the door",
+		"soundmark": "/tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "bạn quên khóa cửa",
+		"english": "you forget to lock the door",
+		"soundmark": "/ju/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "bạn đừng quên khóa cửa",
+		"english": "you don't forget to lock the door",
+		"soundmark": "/ju/ /dont/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "đừng quên khóa cửa",
+		"english": "don't forget to lock the door",
+		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "rời khỏi",
+		"english": "to leave",
+		"soundmark": "/tə/ /liv/"
+	},
+	{
+		"nativeText": "ngôi nhà",
+		"english": "the house",
+		"soundmark": "/ðə/ /haʊs/"
+	},
+	{
+		"nativeText": "rời khỏi nhà",
+		"english": "to leave the house",
+		"soundmark": "/tə/ /liv/ /ðə/ /haʊs/"
+	},
+	{
+		"nativeText": "bạn rời khỏi nhà",
+		"english": "you leave the house",
+		"soundmark": "/ju/ /liv/ /ðə/ /haʊs/"
+	},
+	{
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当她（过去）是年轻的时候",
-		"english": "when she was young",
-		"soundmark": "/wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"nativeText": "khi bạn rời khỏi nhà",
+		"english": "when you leave the house",
+		"soundmark": "/wɛn/ /ju/ /liv/ /ðə/ /haʊs/"
 	},
 	{
-		"chinese": "她（过去）想要改变世界当她（过去）是年轻的时候",
-		"english": "she wanted to change the world when she was young",
-		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"nativeText": "đừng quên khóa cửa khi bạn rời khỏi nhà",
+		"english": "don't forget to lock the door when you leave the house",
+		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/ /wɛn/ /ju/ /liv/ /ðə/ /haʊs/"
 	},
 	{
-		"chinese": "她（过去）告诉我",
-		"english": "she told me",
-		"soundmark": "/ʃi/ /told/ /mi/"
+		"nativeText": "nhớ",
+		"english": "to remember",
+		"soundmark": "/tə/ /rɪ'mɛmbɚ/"
 	},
 	{
-		"chinese": "她（过去）告诉我她（过去）想要改变世界当她（过去）是年轻的时候",
-		"english": "she told me she wanted to change the world when she was young",
-		"soundmark": "/ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"nativeText": "khóa cửa",
+		"english": "to lock the door",
+		"soundmark": "/tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "我上周末和她聊过天而且她告诉我她（想要）改变世界当她（过去）是年轻的时候",
-		"english": "I talked with her last weekend and she told me she wanted to change the world when she was young",
-		"soundmark": "/aɪ/ /tɔkt/ /wɪð/ /hɚ/ /læst/ /'wikɛnd/ /ənd/ /ʃi/ /told/ /mi/ /ʃi/ /wɑntɪd/ /tə/ /tʃendʒ/ /ðə/ /wɝld/ /wɛn/ /ʃi/ /wəz/ /jʌŋ/"
+		"nativeText": "bạn nhớ khóa cửa",
+		"english": "you remember to lock the door",
+		"soundmark": "/ju/ /rɪ'mɛmbɚ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "nhớ khóa cửa",
+		"english": "remember to lock the door",
+		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /lɑk/ /ðə/ /dɔr/"
+	},
+	{
+		"nativeText": "nhớ khóa cửa khi bạn rời khỏi nhà",
+		"english": "remember to lock the door when you leave the house",
+		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /lɑk/ /ðə/ /dɔr/ /wɛn/ /ju/ /liv/ /ðə/ /haʊs/"
+	},
+	{
+		"nativeText": "làm",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"nativeText": "việc nhà",
+		"english": "the housework",
+		"soundmark": "/ðə/ /'haʊswɝk/"
+	},
+	{
+		"nativeText": "làm việc nhà",
+		"english": "to do the housework",
+		"soundmark": "/tə/ /du/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"nativeText": "đừng quên làm việc nhà",
+		"english": "don't forget to do the housework",
+		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /du/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"nativeText": "nhớ làm việc nhà",
+		"english": "remember to do the housework",
+		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /du/ /ðə/ /'haʊswɝk/"
+	},
+	{
+		"nativeText": "nhà",
+		"english": "home",
+		"soundmark": "/hom/"
+	},
+	{
+		"nativeText": "ở nhà",
+		"english": "at home",
+		"soundmark": "/ət/ /hom/"
+	},
+	{
+		"nativeText": "bạn",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"nativeText": "bạn ở nhà",
+		"english": "you are at home",
+		"soundmark": "/ju/ /ɚ/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "khi",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"nativeText": "khi bạn ở nhà",
+		"english": "when you are at home",
+		"soundmark": "/wɛn/ /ju/ /ɚ/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "nhớ làm việc nhà khi bạn ở nhà",
+		"english": "remember to do the housework when you are at home",
+		"soundmark": "/rɪ'mɛmbɚ/ /tə/ /du/ /ðə/ /'haʊswɝk/ /wɛn/ /ju/ /ɚ/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "đừng quên làm việc nhà khi bạn ở nhà",
+		"english": "don't forget to do the housework when you are at home",
+		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /du/ /ðə/ /'haʊswɝk/ /wɛn/ /ju/ /ɚ/ /ət/ /hom/"
+	},
+	{
+		"nativeText": "dạy",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
+	},
+	{
+		"nativeText": "một việc gì đó",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"nativeText": "một điều gì đó quan trọng",
+		"english": "something important",
+		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi muốn dạy bạn một điều gì đó quan trọng",
+		"english": "I want to teach you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "bất cứ thứ gì",
+		"english": "anything",
+		"soundmark": "/'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "bất cứ điều gì quan trọng",
+		"english": "anything important",
+		"soundmark": "/'ɛnɪθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi không muốn dạy bạn bất cứ điều gì quan trọng",
+		"english": "I don't want to teach you anything important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /titʃ/ /ju/ /'ɛnɪθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "sử dụng",
+		"english": "to use",
+		"soundmark": "/tə/ /juz/"
+	},
+	{
+		"nativeText": "cuốn từ điển",
+		"english": "the dictionary",
+		"soundmark": "/ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "sử dụng từ điển",
+		"english": "to use the dictionary",
+		"soundmark": "/tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "như thế nào",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"nativeText": "cách sử dụng từ điển",
+		"english": "how to use the dictionary",
+		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "bạn phải dạy tôi",
+		"english": "you have to teach me",
+		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /mi/"
+	},
+	{
+		"nativeText": "bạn phải dạy tôi cách sử dụng từ điển",
+		"english": "you have to teach me how to use the dictionary",
+		"soundmark": "/ju/ /hæv/ /tə/ /titʃ/ /mi/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "cho xem",
+		"english": "to show",
+		"soundmark": "/tə/ /ʃo/"
+	},
+	{
+		"nativeText": "cho bạn xem",
+		"english": "to show you",
+		"soundmark": "/tə/ /ʃo/ /ju/"
+	},
+	{
+		"nativeText": "một thứ gì đó",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"nativeText": "cho bạn xem một thứ gì đó",
+		"english": "to show you something",
+		"soundmark": "/tə/ /ʃo/ /ju/ /'sʌmθɪŋ/"
+	},
+	{
+		"nativeText": "tôi muốn cho bạn xem một thứ gì đó",
+		"english": "I want to show you something",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ʃo/ /ju/ /'sʌmθɪŋ/"
+	},
+	{
+		"nativeText": "quan trọng",
+		"english": "important",
+		"soundmark": "/ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "tôi muốn cho bạn xem một thứ gì đó quan trọng",
+		"english": "I want to show you something important",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ʃo/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
+	},
+	{
+		"nativeText": "như thế nào",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"nativeText": "sử dụng từ điển",
+		"english": "to use the dictionary",
+		"soundmark": "/tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "cách sử dụng từ điển",
+		"english": "how to use the dictionary",
+		"soundmark": "/haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "bạn phải cho tôi xem cách sử dụng từ điển",
+		"english": "you have to show me how to use the dictionary",
+		"soundmark": "/ju/ /hæv/ /tə/ /ʃo/ /mi/ /haʊ/ /tə/ /juz/ /ðə/ /'dɪkʃənɛri/"
+	},
+	{
+		"nativeText": "cho phép",
+		"english": "to let",
+		"soundmark": "/tə/ /lɛt/"
+	},
+	{
+		"nativeText": "bạn",
+		"english": "you",
+		"soundmark": "/ju/"
+	},
+	{
+		"nativeText": "cho phép bạn",
+		"english": "to let you",
+		"soundmark": "/tə/ /lɛt/ /ju/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "cho phép bạn biết",
+		"english": "to let you know",
+		"soundmark": "/tə/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"nativeText": "tôi muốn cho phép bạn biết",
+		"english": "I want to let you know",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"nativeText": "sự thật",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "tôi muốn cho phép bạn biết sự thật",
+		"english": "I want to let you know the truth",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/"
+	},
+	{
+		"nativeText": "về",
+		"english": "about",
+		"soundmark": "/ə'baʊt/"
+	},
+	{
+		"nativeText": "về tôi",
+		"english": "about me",
+		"soundmark": "/ə'baʊt/ /mi/"
+	},
+	{
+		"nativeText": "tôi muốn cho phép bạn biết sự thật về tôi",
+		"english": "I want to let you know the truth about me",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/ /ə'baʊt/ /mi/"
+	},
+	{
+		"nativeText": "tôi sẽ",
+		"english": "I will",
+		"soundmark": "/aɪ/ /wɪl/"
+	},
+	{
+		"nativeText": "cho phép bạn biết",
+		"english": "to let you know",
+		"soundmark": "/tə/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"nativeText": "tôi sẽ cho phép bạn biết",
+		"english": "I will let you know",
+		"soundmark": "/aɪ/ /wɪl/ /lɛt/ /ju/ /no/"
+	},
+	{
+		"nativeText": "tôi sẽ cho phép bạn biết sự thật về tôi",
+		"english": "I will let you know the truth about me",
+		"soundmark": "/aɪ/ /wɪl/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/ /ə'baʊt/ /mi/"
+	},
+	{
+		"nativeText": "tiếp theo",
+		"english": "next",
+		"soundmark": "/nɛkst/"
+	},
+	{
+		"nativeText": "tuần",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"nativeText": "tuần tới",
+		"english": "next week",
+		"soundmark": "/nɛkst/ /wik/"
+	},
+	{
+		"nativeText": "tôi sẽ cho phép bạn biết sự thật về tôi vào tuần tới",
+		"english": "I will let you know the truth about me next week",
+		"soundmark": "/aɪ/ /wɪl/ /lɛt/ /ju/ /no/ /ðə/ /trʊθ/ /ə'baʊt/ /mi/ /nɛkst/ /wik/"
+	},
+	{
+		"nativeText": "đi",
+		"english": "to go",
+		"soundmark": "/tə/ /ɡo/"
+	},
+	{
+		"nativeText": "ra ngoài",
+		"english": "out",
+		"soundmark": "/aʊt/"
+	},
+	{
+		"nativeText": "đi ra ngoài",
+		"english": "to go out",
+		"soundmark": "/tə/ /ɡo/ /aʊt/"
+	},
+	{
+		"nativeText": "tôi muốn đi ra ngoài",
+		"english": "I want to go out",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡo/ /aʊt/"
+	},
+	{
+		"nativeText": "cho phép bạn",
+		"english": "to let you",
+		"soundmark": "/tə/ /lɛt/ /ju/"
+	},
+	{
+		"nativeText": "cho phép bạn đi ra ngoài",
+		"english": "to let you go out",
+		"soundmark": "/tə/ /lɛt/ /ju/ /ɡo/ /aʊt/"
+	},
+	{
+		"nativeText": "tôi muốn cho phép bạn đi ra ngoài",
+		"english": "I want to let you go out",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/"
+	},
+	{
+		"nativeText": "tôi không muốn cho phép bạn đi ra ngoài",
+		"english": "I don't want to let you go out",
+		"soundmark": "/aī/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/"
+	},
+	{
+		"nativeText": "vào ban đêm",
+		"english": "at night",
+		"soundmark": "/ət/ /naɪt/"
+	},
+	{
+		"nativeText": "tôi không muốn cho phép bạn đi ra ngoài vào ban đêm",
+		"english": "I don't want to let you go out at night",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/"
+	},
+	{
+		"nativeText": "bởi vì",
+		"english": "because",
+		"soundmark": "/bɪ'kɔz/"
+	},
+	{
+		"nativeText": "nguy hiểm",
+		"english": "dangerous",
+		"soundmark": "/'dendʒərəs/"
+	},
+	{
+		"nativeText": "rất",
+		"english": "very",
+		"soundmark": "/ˈvɛri/"
+	},
+	{
+		"nativeText": "nó rất nguy hiểm",
+		"english": "it is very dangerous",
+		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
+	},
+	{
+		"nativeText": "bởi vì nó rất nguy hiểm",
+		"english": "because it is very dangerous",
+		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
+	},
+	{
+		"nativeText": "tôi không muốn cho phép bạn đi ra ngoài vào ban đêm vì nó rất nguy hiểm",
+		"english": "I don't want to let you go out at night because it is very dangerous",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/"
+	},
+	{
+		"nativeText": "ở lại",
+		"english": "to stay",
+		"soundmark": "/tə/ /ste/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"nativeText": "ở lại đây",
+		"english": "to stay here",
+		"soundmark": "/tə/ /ste/ /hɪr/"
+	},
+	{
+		"nativeText": "cần",
+		"english": "need",
+		"soundmark": "/nid/"
+	},
+	{
+		"nativeText": "tôi cần bạn ở lại đây",
+		"english": "I need you to stay here",
+		"soundmark": "/aɪ/ /nid/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"nativeText": "và",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"nativeText": "và tôi cần bạn ở lại đây",
+		"english": "and I need you to stay here",
+		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"nativeText": "tôi không muốn cho phép bạn đi ra ngoài vào ban đêm vì nó rất nguy hiểm và tôi cần bạn ở lại đây",
+		"english": "I don't want to let you go out at night because it is very dangerous and I need you to stay here",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /lɛt/ /ju/ /ɡo/ /aʊt/ /ət/ /naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'dendʒərəs/ /ənd/ /aɪ/ /nid/ /tə/ /ste/ /hɪr/"
+	},
+	{
+		"nativeText": "cha",
+		"english": "father",
+		"soundmark": "/'fɑðɚ/"
+	},
+	{
+		"nativeText": "của tôi",
+		"english": "my",
+		"soundmark": "/maɪ/"
+	},
+	{
+		"nativeText": "cha của tôi",
+		"english": "my father",
+		"soundmark": "/maɪ/ /'fɑðɚ/"
+	},
+	{
+		"nativeText": "gọi điện cho",
+		"english": "to call",
+		"soundmark": "/tə/ /kɔl/"
+	},
+	{
+		"nativeText": "gọi điện cho cha của tôi",
+		"english": "to call my father",
+		"soundmark": "/tə/ /kɔl/ /maɪ/ /'fɑðɚ/"
+	},
+	{
+		"nativeText": "cho phép tôi",
+		"english": "to let me",
+		"soundmark": "/tə/ /lɛt/ /mi/"
+	},
+	{
+		"nativeText": "cho phép tôi gọi điện cho cha của tôi",
+		"english": "to let me call my father",
+		"soundmark": "/tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/"
+	},
+	{
+		"nativeText": "nhớ",
+		"english": "to remember",
+		"soundmark": "/tə/ /rɪ'mɛmbɚ/"
+	},
+	{
+		"nativeText": "bạn phải nhớ",
+		"english": "you have to remember",
+		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/"
+	},
+	{
+		"nativeText": "bạn phải nhớ cho phép tôi gọi điện cho cha của tôi",
+		"english": "you have to remember to let me call my father",
+		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/ /tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/"
+	},
+	{
+		"nativeText": "đến",
+		"english": "to get",
+		"soundmark": "/tə/ /ɡɛt/"
+	},
+	{
+		"nativeText": "đó",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "đến đó",
+		"english": "to get there",
+		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "chúng ta đến đó",
+		"english": "we get there",
+		"soundmark": "/wi/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "khi",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"nativeText": "khi chúng ta đến đó",
+		"english": "when we get there",
+		"soundmark": "/wɛn/ /wi/ /ɡɛt/ /ðɛr/"
+	},
+	{
+		"nativeText": "bạn phải nhớ cho phép tôi gọi điện cho cha của tôi khi chúng ta đến đó",
+		"english": "you have to remember to let me call my father when we get there",
+		"soundmark": "/ju/ /hæv/ /tə/ /rɪ'mɛmbɚ/ /tə/ /lɛt/ /mi/ /kɔl/ /maɪ/ /'fɑðɚ/ /wɛn/ /wi/ /ɡɛt/ /ðɛr/"
 	}
 ]

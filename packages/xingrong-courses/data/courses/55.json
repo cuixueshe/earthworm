@@ -1,637 +1,637 @@
 [
 	{
-		"chinese": "解决",
+		"nativeText": "giải quyết",
 		"english": "to solve",
 		"soundmark": "/tə/ /sɔlv/"
 	},
 	{
-		"chinese": "解决(ed形式)",
+		"nativeText": "đã giải quyết (ed dạng)",
 		"english": "solved",
 		"soundmark": "/sɔlvd/"
 	},
 	{
-		"chinese": "被解决",
+		"nativeText": "được giải quyết",
 		"english": "be solved",
 		"soundmark": "/bi/ /sɔlvd/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "那个问题被解决",
+		"nativeText": "vấn đề đó được giải quyết",
 		"english": "the problem is solved",
 		"soundmark": "/ðə/ /'prɑbləm/ /ɪz/ /sɔlvd/"
 	},
 	{
-		"chinese": "(已经)被解决",
+		"nativeText": "đã được giải quyết (hiện tại hoàn thành)",
 		"english": "has been solved",
 		"soundmark": "/hæz/ /bɪn/ /sɔlvd/"
 	},
 	{
-		"chinese": "那个问题(已经)被解决",
+		"nativeText": "vấn đề đó đã được giải quyết",
 		"english": "the problem has been solved",
 		"soundmark": "/ðə/ /'prɑbləm/ /hæz/ /bɪn/ /sɔlvd/"
 	},
 	{
-		"chinese": "(过去已经)被解决",
+		"nativeText": "đã được giải quyết (quá khứ hoàn thành)",
 		"english": "had been solved",
 		"soundmark": "/hæd/ /bɪn/ /sɔlvd/"
 	},
 	{
-		"chinese": "那个问题(过去已经)被解决",
+		"nativeText": "vấn đề đó đã được giải quyết (quá khứ hoàn thành)",
 		"english": "the problem had been solved",
 		"soundmark": "/ðə/ /'prɑbləm/ /hæd/ /bɪn/ /sɔlvd/"
 	},
 	{
-		"chinese": "通过他",
+		"nativeText": "bởi anh ấy",
 		"english": "by him",
 		"soundmark": "/baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "那个问题(过去已经)通过他被解决",
+		"nativeText": "vấn đề đó đã được anh ấy giải quyết",
 		"english": "the problem had been solved by him",
 		"soundmark": "/ðə/ /'prɑbləm/ /hæd/ /bɪn/ /sɔlvd/ /baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "其他",
+		"nativeText": "khác",
 		"english": "else",
 		"soundmark": "/ɛls/"
 	},
 	{
-		"chinese": "任何人",
+		"nativeText": "ai đó",
 		"english": "anyone",
 		"soundmark": "/'ɛnɪwʌn/"
 	},
 	{
-		"chinese": "其他任何人",
+		"nativeText": "bất kỳ ai khác",
 		"english": "anyone else",
 		"soundmark": "/'ɛnɪwʌn/ /ɛls/"
 	},
 	{
-		"chinese": "注意到",
+		"nativeText": "nhận ra",
 		"english": "to notice",
 		"soundmark": "/tə/ /ˈnotɪs/"
 	},
 	{
-		"chinese": "注意到(过去)",
+		"nativeText": "đã nhận ra (quá khứ)",
 		"english": "noticed",
 		"soundmark": "/ˈnotɪst/"
 	},
 	{
-		"chinese": "它",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "注意到(过去)它",
+		"nativeText": "đã nhận ra nó",
 		"english": "noticed it",
 		"soundmark": "/ˈnotɪst/ /ɪt/"
 	},
 	{
-		"chinese": "其他任何人注意到(过去)它",
+		"nativeText": "bất kỳ ai khác đã nhận ra nó",
 		"english": "anyone else noticed it",
 		"soundmark": "/'ɛnɪwʌn/ /ɛls/ /ˈnotɪst/ /ɪt/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在其他任何人注意到(过去)它之前",
+		"nativeText": "trước khi bất kỳ ai khác nhận ra nó",
 		"english": "before anyone else noticed it",
 		"soundmark": "/bɪ'fɔr/ /'ɛnɪwʌn/ /ɛls/ /ˈnotɪst/ /ɪt/"
 	},
 	{
-		"chinese": "那个问题(过去已经)被他解决",
+		"nativeText": "vấn đề đó đã được anh ấy giải quyết",
 		"english": "the problem had been solved by him",
 		"soundmark": "/ðə/ /'prɑbləm/ /hæd/ /bɪn/ /sɔlvd/ /baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "在其他任何人注意到(过去)它之前那个问题(过去已经)被他解决",
+		"nativeText": "vấn đề đó đã được anh ấy giải quyết trước khi bất kỳ ai khác nhận ra nó",
 		"english": "the problem had been solved by him before anyone else noticed it",
 		"soundmark": "/ðə/ /'prɑbləm/ /hæd/ /bɪn/ /sɔlvd/ /baɪ/ /hɪm/ /bɪ'fɔr/ /'ɛnɪwʌn/ /ɛls/ /ˈnotɪst/ /ɪt/"
 	},
 	{
-		"chinese": "粉刷",
+		"nativeText": "sơn",
 		"english": "to paint",
 		"soundmark": "/tə/ /pent/"
 	},
 	{
-		"chinese": "粉刷(ed形式)",
+		"nativeText": "đã sơn (ed dạng)",
 		"english": "painted",
 		"soundmark": "/ˈpentɪd/"
 	},
 	{
-		"chinese": "被粉刷",
+		"nativeText": "được sơn",
 		"english": "be painted",
 		"soundmark": "/bi/ /ˈpentɪd/"
 	},
 	{
-		"chinese": "(已经)被粉刷",
+		"nativeText": "đã được sơn (hiện tại hoàn thành)",
 		"english": "has been painted",
 		"soundmark": "/hæz/ /bɪn/ /ˈpentɪd/"
 	},
 	{
-		"chinese": "(过去已经)被粉刷",
+		"nativeText": "đã được sơn (quá khứ hoàn thành)",
 		"english": "had been painted",
 		"soundmark": "/hæd/ /bɪn/ /ˈpentɪd/"
 	},
 	{
-		"chinese": "那个房子",
+		"nativeText": "ngôi nhà đó",
 		"english": "the house",
 		"soundmark": "/ðə/ /haʊs/"
 	},
 	{
-		"chinese": "那个房子(过去已经)被粉刷",
+		"nativeText": "ngôi nhà đó đã được sơn",
 		"english": "the house had been painted",
 		"soundmark": "/ðə/ /haʊs/ /hæd/ /bɪn/ /ˈpentɪd/"
 	},
 	{
-		"chinese": "搬",
+		"nativeText": "dọn đến",
 		"english": "to move",
 		"soundmark": "/tə/ /muv/"
 	},
 	{
-		"chinese": "搬(过去)",
+		"nativeText": "đã dọn đến (quá khứ)",
 		"english": "moved",
 		"soundmark": "/muvd/"
 	},
 	{
-		"chinese": "他们搬(过去)",
+		"nativeText": "họ đã dọn đến",
 		"english": "they moved",
 		"soundmark": "/ðe/ /muvd/"
 	},
 	{
-		"chinese": "往里面",
+		"nativeText": "vào trong",
 		"english": "in",
 		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "他们搬(过去)进去",
+		"nativeText": "họ đã dọn vào trong",
 		"english": "they moved in",
 		"soundmark": "/ðe/ /muvd/ /ɪn/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在他们搬(过去)进去之前",
+		"nativeText": "trước khi họ dọn vào trong",
 		"english": "before they moved in",
 		"soundmark": "/bɪ'fɔr/ /ðe/ /muvd/ /ɪn/"
 	},
 	{
-		"chinese": "那个房子(过去已经)被粉刷",
+		"nativeText": "ngôi nhà đó đã được sơn",
 		"english": "the house had been painted",
 		"soundmark": "/ðə/ /haʊs/ /hæd/ /bɪn/ /ˈpentɪd/"
 	},
 	{
-		"chinese": "在他们搬(过去)进去之前那个房子(过去已经)被粉刷",
+		"nativeText": "trước khi họ dọn vào trong, ngôi nhà đó đã được sơn",
 		"english": "the house had been painted before they moved in",
-		"soundmark": "/ðə/ /haʊs/ /hæd/ /bɪn/ /ˈpentɪd/ /bɪ'fɔr/ /ðe/ /muvd/ /ɪn/"
+		"soundmark": "/ðə/ /haʊs/ /hæd/ /bɪn/ /ˈpentɪd/ /bɪ'fɔr/ /ðe/ /muvd' /ɪn/"
 	},
 	{
-		"chinese": "建造",
+		"nativeText": "xây",
 		"english": "to build",
 		"soundmark": "/tə/ /bɪld/"
 	},
 	{
-		"chinese": "建筑物",
+		"nativeText": "tòa nhà",
 		"english": "building",
 		"soundmark": "/'bɪldɪŋ/"
 	},
 	{
-		"chinese": "那个建筑物",
+		"nativeText": "tòa nhà đó",
 		"english": "the building",
 		"soundmark": "/ðə/ /'bɪldɪŋ/"
 	},
 	{
-		"chinese": "疏散",
+		"nativeText": "sơ tán",
 		"english": "to evacuate",
 		"soundmark": "/tə/ /ɪˈvækjuet/"
 	},
 	{
-		"chinese": "疏散(ed形式)",
+		"nativeText": "đã sơ tán (ed dạng)",
 		"english": "evacuated",
 		"soundmark": "/ɪˈvækjuetɪd/"
 	},
 	{
-		"chinese": "被疏散",
+		"nativeText": "được sơ tán",
 		"english": "be evacuated",
 		"soundmark": "/bi/ /ɪˈvækjuetɪd/"
 	},
 	{
-		"chinese": "(过去已经)被疏散",
+		"nativeText": "đã được sơ tán (quá khứ hoàn thành)",
 		"english": "had been evacuated",
 		"soundmark": "/hæd/ /bɪn/ /ɪˈvækjuetɪd/"
 	},
 	{
-		"chinese": "那个建筑物(过去已经)被疏散",
+		"nativeText": "tòa nhà đó đã được sơ tán",
 		"english": "the building had been evacuated",
 		"soundmark": "/ðə/ /'bɪldɪŋ/ /hæd/ /bɪn/ /ɪˈvækjuetɪd/"
 	},
 	{
-		"chinese": "火",
+		"nativeText": "lửa",
 		"english": "fire",
 		"soundmark": "/ˈfaɪər/"
 	},
 	{
-		"chinese": "蔓延",
+		"nativeText": "lan rộng",
 		"english": "to spread",
 		"soundmark": "/tə/ /sprɛd/"
 	},
 	{
-		"chinese": "蔓延(过去)",
+		"nativeText": "đã lan rộng (quá khứ)",
 		"english": "spread",
 		"soundmark": "/sprɛd/"
 	},
 	{
-		"chinese": "火势蔓延(过去)",
+		"nativeText": "đám cháy đã lan rộng",
 		"english": "the fire spread",
 		"soundmark": "/ðə/ /ˈfaɪər/ /sprɛd/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在火势蔓延(过去)之前",
+		"nativeText": "trước khi đám cháy lan rộng",
 		"english": "before the fire spread",
 		"soundmark": "/bɪ'fɔr/ /ðə/ /ˈfaɪər/ /sprɛd/"
 	},
 	{
-		"chinese": "那个建筑物(过去已经)被疏散",
+		"nativeText": "tòa nhà đó đã được sơ tán",
 		"english": "the building had been evacuated",
 		"soundmark": "/ðə/ /'bɪldɪŋ/ /hæd/ /bɪn/ /ɪˈvækjuetɪd/"
 	},
 	{
-		"chinese": "在火势蔓延(过去)之前那个建筑物(过去已经)被疏散",
+		"nativeText": "trước khi đám cháy lan rộng, tòa nhà đó đã được sơ tán",
 		"english": "the building had been evacuated before the fire spread",
 		"soundmark": "/ðə/ /'bɪldɪŋ/ /hæd/ /bɪn/ /ɪˈvækjuetɪd/ /bɪ'fɔr/ /ðə/ /ˈfaɪər/ /sprɛd/"
 	},
 	{
-		"chinese": "停车",
+		"nativeText": "đỗ xe",
 		"english": "to park",
 		"soundmark": "/tə/ /pɑrk/"
 	},
 	{
-		"chinese": "停车(ed形式)",
+		"nativeText": "đã đỗ xe (ed dạng)",
 		"english": "parked",
 		"soundmark": "/pɑrkt/"
 	},
 	{
-		"chinese": "(过去已经)被停",
+		"nativeText": "đã được đỗ (quá khứ hoàn thành)",
 		"english": "had been parked",
 		"soundmark": "/hæd/ /bɪn/ /pɑrkt/"
 	},
 	{
-		"chinese": "那辆车",
+		"nativeText": "chiếc xe đó",
 		"english": "the car",
 		"soundmark": "/ðə/ /kɑr/"
 	},
 	{
-		"chinese": "那辆车(过去已经)被停",
+		"nativeText": "chiếc xe đó đã được đỗ",
 		"english": "the car had been parked",
 		"soundmark": "/ðə/ /kɑr/ /hæd/ /bɪn/ /pɑrkt/"
 	},
 	{
-		"chinese": "车库",
+		"nativeText": "nhà để xe",
 		"english": "garage",
 		"soundmark": "/ɡəˈrɑʒ/"
 	},
 	{
-		"chinese": "在车库里",
+		"nativeText": "trong nhà để xe",
 		"english": "in the garage",
 		"soundmark": "/ɪn/ /ðə/ /ɡəˈrɑʒ/"
 	},
 	{
-		"chinese": "那辆车(过去已经)被停在车库里",
+		"nativeText": "chiếc xe đó đã được đỗ trong nhà để xe",
 		"english": "the car had been parked in the garage",
 		"soundmark": "/ðə/ /kɑr/ /hæd/ /bɪn/ /pɑrkt/ /ɪn/ /ðə/ /ɡəˈrɑʒ/"
 	},
 	{
-		"chinese": "暴风雨",
+		"nativeText": "bão",
 		"english": "storm",
 		"soundmark": "/stɔrm/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在暴风雨之前",
+		"nativeText": "trước cơn bão",
 		"english": "before the storm",
 		"soundmark": "/bɪ'fɔr/ /ðə/ /stɔrm/"
 	},
 	{
-		"chinese": "在暴风雨之前那辆车(过去已经)被停在车库里",
+		"nativeText": "trước cơn bão, chiếc xe đó đã được đỗ trong nhà để xe",
 		"english": "the car had been parked in the garage before the storm",
 		"soundmark": "/ðə/ /kɑr/ /hæd/ /bɪn/ /pɑrkt/ /ɪn/ /ðə/ /ɡəˈrɑʒ/ /bɪ'fɔr/ /ðə/ /stɔrm/"
 	},
 	{
-		"chinese": "建造",
+		"nativeText": "xây dựng",
 		"english": "to constructe",
 		"soundmark": "/tə/ /kənˈstrʌkt/"
 	},
 	{
-		"chinese": "建造(ed形式)",
+		"nativeText": "đã xây dựng (ed dạng)",
 		"english": "constructed",
 		"soundmark": "/kənˈstrʌktɪd/"
 	},
 	{
-		"chinese": "被建造",
+		"nativeText": "được xây dựng",
 		"english": "be constructed",
 		"soundmark": "/bi/ /kənˈstrʌktɪd/"
 	},
 	{
-		"chinese": "(过去已经)被建造",
+		"nativeText": "đã được xây dựng (quá khứ hoàn thành)",
 		"english": "had been constructed",
 		"soundmark": "/hæd/ /bɪn/ /kənˈstrʌktɪd/"
 	},
 	{
-		"chinese": "那座桥",
+		"nativeText": "cây cầu đó",
 		"english": "the bridge",
 		"soundmark": "/ðə/ /brɪdʒ/"
 	},
 	{
-		"chinese": "那座桥(过去已经)被建造",
+		"nativeText": "cây cầu đó đã được xây dựng",
 		"english": "the bridge had been constructed",
 		"soundmark": "/ðə/ /brɪdʒ/ /hæd/ /bɪn/ /kənˈstrʌktɪd/"
 	},
 	{
-		"chinese": "雨",
+		"nativeText": "mưa",
 		"english": "rain",
 		"soundmark": "/ren/"
 	},
 	{
-		"chinese": "多雨的",
+		"nativeText": "nhiều mưa",
 		"english": "rainy",
 		"soundmark": "/'reni/"
 	},
 	{
-		"chinese": "季节",
+		"nativeText": "mùa",
 		"english": "season",
 		"soundmark": "/'sizn/"
 	},
 	{
-		"chinese": "雨季",
+		"nativeText": "mùa mưa",
 		"english": "rainy season",
 		"soundmark": "/'reni/ /'sizn/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在雨季之前",
+		"nativeText": "trước mùa mưa",
 		"english": "before the rainy season",
 		"soundmark": "/bɪ'fɔr/ /ðə/ /'reni/ /'sizn/"
 	},
 	{
-		"chinese": "那座桥(过去已经)被建造",
+		"nativeText": "cây cầu đó đã được xây dựng",
 		"english": "the bridge had been constructed",
 		"soundmark": "/ðə/ /brɪdʒ/ /hæd/ /bɪn/ /kənˈstrʌktɪd/"
 	},
 	{
-		"chinese": "在雨季之前那座桥(过去已经)被建造",
+		"nativeText": "cây cầu đó đã được xây dựng trước mùa mưa",
 		"english": "the bridge had been constructed before the rainy season",
 		"soundmark": "/ðə/ /brɪdʒ/ /hæd/ /bɪn/ /kənˈstrʌktɪd/ /bɪ'fɔr/ /ðə/ /'reni/ /'sizn/"
 	},
 	{
-		"chinese": "纠正",
+		"nativeText": "sửa",
 		"english": "to correct",
 		"soundmark": "/tə/ /kə'rɛkt/"
 	},
 	{
-		"chinese": "纠正(ed形式)",
+		"nativeText": "đã sửa (ed dạng)",
 		"english": "corrected",
 		"soundmark": "/kə'rɛktɪd/"
 	},
 	{
-		"chinese": "被纠正",
+		"nativeText": "được sửa",
 		"english": "be corrected",
 		"soundmark": "/bi/ /kə'rɛktɪd/"
 	},
 	{
-		"chinese": "(过去已经)被纠正",
+		"nativeText": "đã được sửa (quá khứ hoàn thành)",
 		"english": "had been corrected",
 		"soundmark": "/hæd/ /bɪn/ /kə'rɛktɪd/"
 	},
 	{
-		"chinese": "错误",
+		"nativeText": "lỗi",
 		"english": "error",
 		"soundmark": "/ˈɛrər/"
 	},
 	{
-		"chinese": "那个错误(过去已经)被纠正",
+		"nativeText": "lỗi đó đã được sửa",
 		"english": "the error had been corrected",
 		"soundmark": "/ði/ /ˈɛrər/ /hæd/ /bɪn/ /kə'rɛktɪd/"
 	},
 	{
-		"chinese": "提交",
+		"nativeText": "nộp",
 		"english": "to submit",
 		"soundmark": "/tə/ /səbˈmɪt/"
 	},
 	{
-		"chinese": "提交(ed形式)",
+		"nativeText": "đã nộp (ed dạng)",
 		"english": "submitted",
 		"soundmark": "/səbˈmɪtɪd/"
 	},
 	{
-		"chinese": "被提交",
+		"nativeText": "được nộp",
 		"english": "be submitted",
 		"soundmark": "/bi/ /səbˈmɪtɪd/"
 	},
 	{
-		"chinese": "报告",
+		"nativeText": "báo cáo",
 		"english": "report",
 		"soundmark": "/rɪ'pɔrt/"
 	},
 	{
-		"chinese": "那个报告(过去)被提交",
+		"nativeText": "báo cáo đó đã được nộp",
 		"english": "the report was submitted",
 		"soundmark": "/ðə/ /rɪ'pɔrt/ /wəz/ /səbˈmɪtɪd/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在那个报告(过去)被提交之前",
+		"nativeText": "trước khi báo cáo đó được nộp",
 		"english": "before the report was submitted",
 		"soundmark": "/bɪ'fɔr/ /ðə/ /rɪ'pɔrt/ /wəz/ /səbˈmɪtɪd/"
 	},
 	{
-		"chinese": "那个错误(过去已经)被纠正",
+		"nativeText": "lỗi đó đã được sửa",
 		"english": "the error had been corrected",
 		"soundmark": "/ði/ /ˈɛrər/ /hæd/ /bɪn/ /kə'rɛktɪd/"
 	},
 	{
-		"chinese": "在那个报告(过去)被提交之前那个错误(过去已经)被纠正",
+		"nativeText": "lỗi đó đã được sửa trước khi báo cáo được nộp",
 		"english": "the error had been corrected before the report was submitted",
 		"soundmark": "/ði/ /ˈɛrər/ /hæd/ /bɪn/ /kə'rɛktɪd/ /bɪ'fɔr/ /ðə/ /rɪ'pɔrt/ /wəz/ /səbˈmɪtɪd/"
 	},
 	{
-		"chinese": "卖",
+		"nativeText": "bán",
 		"english": "to sell",
 		"soundmark": "/tə/ /sɛl/"
 	},
 	{
-		"chinese": "卖光",
+		"nativeText": "bán hết",
 		"english": "to sell out",
 		"soundmark": "/tə/ /sɛl/ /aʊt/"
 	},
 	{
-		"chinese": "卖光(ed形式)",
+		"nativeText": "đã bán hết (ed dạng)",
 		"english": "sold out",
 		"soundmark": "/sold/ /aʊt/"
 	},
 	{
-		"chinese": "被卖光",
+		"nativeText": "được bán hết",
 		"english": "be sold out",
 		"soundmark": "/bi/ /sold/ /aʊt/"
 	},
 	{
-		"chinese": "(过去已经)被卖光了",
+		"nativeText": "đã được bán hết (quá khứ hoàn thành)",
 		"english": "had been sold out",
 		"soundmark": "/hæd/ /bɪn/ /sold/ /aʊt/"
 	},
 	{
-		"chinese": "票",
+		"nativeText": "vé",
 		"english": "ticket",
 		"soundmark": "/'tɪkɪt/"
 	},
 	{
-		"chinese": "那些票",
+		"nativeText": "những chiếc vé đó",
 		"english": "the tickets",
 		"soundmark": "/ðə/ /'tɪkɪts/"
 	},
 	{
-		"chinese": "那些票(过去已经)被卖光了",
+		"nativeText": "những chiếc vé đó đã được bán hết",
 		"english": "the tickets had been sold out",
 		"soundmark": "/ðə/ /'tɪkɪts/ /hæd/ /bɪn/ /sold/ /aʊt/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to arrive",
 		"soundmark": "/tə/ /ə'raɪv/"
 	},
 	{
-		"chinese": "达到(过去)",
+		"nativeText": "đã đến (quá khứ)",
 		"english": "arrived",
 		"soundmark": "/ə'raɪvd/"
 	},
 	{
-		"chinese": "我们到达(过去)",
+		"nativeText": "chúng ta đã đến",
 		"english": "we arrived",
 		"soundmark": "/wi/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "时间",
+		"nativeText": "thời điểm",
 		"english": "the time",
 		"soundmark": "/ðə/ /taɪm/"
 	},
 	{
-		"chinese": "我们到达(过去)的时间",
+		"nativeText": "thời điểm chúng ta đã đến",
 		"english": "the time we arrived",
 		"soundmark": "/ðə/ /taɪm/ /wi/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "在我们到达(过去)的时间",
+		"nativeText": "vào thời điểm chúng ta đã đến",
 		"english": "by the time we arrived",
 		"soundmark": "/baɪ/ /ðə/ /taɪm/ /wi/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "那些票(过去已经)被卖光了",
+		"nativeText": "những chiếc vé đó đã được bán hết",
 		"english": "the tickets had been sold out",
 		"soundmark": "/ðə/ /'tɪkɪts/ /hæd/ /bɪn/ /sold/ /aʊt/"
 	},
 	{
-		"chinese": "在我们到达(过去)的时间那些票(过去已经)被卖光了",
+		"nativeText": "vào thời điểm chúng ta đến, những chiếc vé đó đã được bán hết",
 		"english": "the tickets had been sold out by the time we arrived",
 		"soundmark": "/ðə/ /'tɪkɪts/ /hæd/ /bɪn/ /sold/ /aʊt/ /baɪ/ /ðə/ /taɪm/ /wi/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "改变",
+		"nativeText": "thay đổi",
 		"english": "to change",
 		"soundmark": "/tə/ /tʃendʒ/"
 	},
 	{
-		"chinese": "改变(ed形式)",
+		"nativeText": "đã thay đổi (ed dạng)",
 		"english": "changed",
 		"soundmark": "/tʃendʒd/"
 	},
 	{
-		"chinese": "被改变",
+		"nativeText": "được thay đổi",
 		"english": "be changed",
 		"soundmark": "/bi/ /tʃendʒd/"
 	},
 	{
-		"chinese": "(过去已经)被改变",
+		"nativeText": "đã được thay đổi (quá khứ hoàn thành)",
 		"english": "had been changed",
 		"soundmark": "/hæd/ /bɪn/ /tʃendʒd/"
 	},
 	{
-		"chinese": "密码",
+		"nativeText": "mật khẩu",
 		"english": "password",
 		"soundmark": "/ˈpæswɝd/"
 	},
 	{
-		"chinese": "那个密码(过去已经)被改变",
+		"nativeText": "mật khẩu đó đã được thay đổi",
 		"english": "the password had been changed",
 		"soundmark": "/ðə/ /ˈpæswɝd/ /hæd/ /bɪn/ /tʃendʒd/"
 	},
 	{
-		"chinese": "非法入侵",
+		"nativeText": "xâm nhập trái phép",
 		"english": "to hack",
 		"soundmark": "/tə/ /hæk/"
 	},
 	{
-		"chinese": "非法入侵(ed形式)",
+		"nativeText": "đã xâm nhập trái phép (ed dạng)",
 		"english": "hacked",
 		"soundmark": "/hækt/"
 	},
 	{
-		"chinese": "被非法入侵",
+		"nativeText": "bị xâm nhập trái phép",
 		"english": "be hacked",
 		"soundmark": "/bi/ /hækt/"
 	},
 	{
-		"chinese": "系统",
+		"nativeText": "hệ thống",
 		"english": "system",
 		"soundmark": "/ˈsɪstəm/"
 	},
 	{
-		"chinese": "系统被(过去)非法入侵",
+		"nativeText": "hệ thống đã bị xâm nhập trái phép",
 		"english": "the system was hacked",
 		"soundmark": "/ðə/ /ˈsɪstəm/ /wəz/ /hækt/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在系统被(过去)非法入侵之前",
+		"nativeText": "trước khi hệ thống bị xâm nhập trái phép",
 		"english": "before the system was hacked",
 		"soundmark": "/bɪ'fɔr/ /ðə/ /ˈsɪstəm/ /wəz/ /hækt/"
 	},
 	{
-		"chinese": "那个密码(过去已经)被改变",
+		"nativeText": "mật khẩu đó đã được thay đổi",
 		"english": "the password had been changed",
 		"soundmark": "/ðə/ /ˈpæswɝd/ /hæd/ /bɪn/ /tʃendʒd/"
 	},
 	{
-		"chinese": "在系统被(过去)非法入侵之前那个密码(过去已经)被改变",
+		"nativeText": "mật khẩu đó đã được thay đổi trước khi hệ thống bị xâm nhập trái phép",
 		"english": "the password had been changed before the system was hacked",
-		"soundmark": "/ðə/ /ˈpæswɝd/ /hæd/ /bɪn/ /tʃendʒd/ /bɪ'fɔr/ /ðə/ /ˈsɪstəm/ /wəz/ /hækt/"
+		"soundmark": "/ðə/ /ˈpæswɝd/ /hæd/ /bɪn/ /tʃendʒd/ /bɪ'fɔr/ /ðə/ /ˈsɪstəm/ /wæz/ /hækt/"
 	}
 ]

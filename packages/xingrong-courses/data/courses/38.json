@@ -1,1012 +1,732 @@
 [
 	{
-		"chinese": "球",
-		"english": "ball",
-		"soundmark": "/bɔl/"
+		"nativeText": "tôi thích",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
 	},
 	{
-		"chinese": "篮子",
-		"english": "basket",
-		"soundmark": "/'bæskɪt/"
+		"nativeText": "đọc",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "篮球",
+		"nativeText": "tôi thích đọc",
+		"english": "I like to read",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /rid/"
+	},
+	{
+		"nativeText": "đọc (dạng ing)",
+		"english": "reading",
+		"soundmark": "/'ridɪŋ/"
+	},
+	{
+		"nativeText": "tôi thích đọc",
+		"english": "I like reading",
+		"soundmark": "/aɪ/ /laɪk/ /ridɪŋ/"
+	},
+	{
+		"nativeText": "nấu ăn",
+		"english": "to cook",
+		"soundmark": "/tə/ /kʊk/"
+	},
+	{
+		"nativeText": "nấu ăn (dạng ing)",
+		"english": "cooking",
+		"soundmark": "/'kʊkɪŋ/"
+	},
+	{
+		"nativeText": "tôi thích nấu ăn",
+		"english": "I like cooking",
+		"soundmark": "/aɪ/ /laɪk/ /'kʊkɪŋ/"
+	},
+	{
+		"nativeText": "đi mua sắm",
+		"english": "to shop",
+		"soundmark": "/tə/ /ʃɑp/"
+	},
+	{
+		"nativeText": "mua sắm (dạng ing)",
+		"english": "shopping",
+		"soundmark": "/'ʃɑpɪŋ/"
+	},
+	{
+		"nativeText": "tôi thích đi mua sắm",
+		"english": "I like shopping",
+		"soundmark": "/aɪ/ /laɪk/ /'ʃɑpɪŋ/"
+	},
+	{
+		"nativeText": "bóng rổ",
 		"english": "basketball",
 		"soundmark": "/'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "玩",
+		"nativeText": "chơi",
 		"english": "to play",
 		"soundmark": "/tə/ /ple/"
 	},
 	{
-		"chinese": "打篮球",
+		"nativeText": "chơi bóng rổ",
 		"english": "to play basketball",
 		"soundmark": "/tə/ /ple/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "我想要",
-		"english": "I want",
-		"soundmark": "/aɪ/ /wɑnt/"
+		"nativeText": "chơi (dạng ing)",
+		"english": "playing",
+		"soundmark": "/'pleɪŋ/"
 	},
 	{
-		"chinese": "我想要打篮球",
-		"english": "I want to play basketball",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ple/ /'bæskɪtbɔl/"
+		"nativeText": "chơi bóng rổ (dạng ing)",
+		"english": "playing basketball",
+		"soundmark": "/'pleɪŋ/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "我(过去)想要打篮球",
-		"english": "I wanted to play basketball",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /ple/ /'bæskɪtbɔl/"
+		"nativeText": "tôi thích chơi bóng rổ",
+		"english": "I like playing basketball",
+		"soundmark": "/aɪ/ /laɪk/ /'pleɪŋ/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "使用",
-		"english": "to use",
-		"soundmark": "/tə/ /juz/"
+		"nativeText": "thưởng thức",
+		"english": "to enjoy",
+		"soundmark": "/tə/ /ɪn'dʒɔɪ/"
 	},
 	{
-		"chinese": "我(过去)想要打篮球",
-		"english": "I wanted to play basketball",
-		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /ple/ /'bæskɪtbɔl/"
+		"nativeText": "tôi thích",
+		"english": "I enjoy",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/"
 	},
 	{
-		"chinese": "我过去常常打篮球",
-		"english": "I used to play basketball",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/"
+		"nativeText": "chơi bóng rổ (dạng ing)",
+		"english": "playing basketball",
+		"soundmark": "/'pleɪŋ/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
+		"nativeText": "tôi thích chơi bóng rổ",
+		"english": "I enjoy playing basketball",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /'pleɪŋ/ /'bæskɪtbɔl/"
 	},
 	{
-		"chinese": "学校",
-		"english": "school",
-		"soundmark": "/skul/"
+		"nativeText": "sách",
+		"english": "books",
+		"soundmark": "/bʊks/"
 	},
 	{
-		"chinese": "高",
-		"english": "high",
-		"soundmark": "/haɪ/"
+		"nativeText": "đọc (dạng ing)",
+		"english": "reading",
+		"soundmark": "/'ridɪŋ/"
 	},
 	{
-		"chinese": "高中",
-		"english": "high school",
-		"soundmark": "/haɪ/ /skul/"
+		"nativeText": "đọc sách (dạng ing)",
+		"english": "reading books",
+		"soundmark": "/'ridɪŋ/ /bʊks/"
 	},
 	{
-		"chinese": "在高中",
-		"english": "in high school",
-		"soundmark": "/ɪn/ /haɪ/ /skul/"
+		"nativeText": "tôi thích",
+		"english": "I enjoy",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/"
 	},
 	{
-		"chinese": "我在高中常常打篮球",
-		"english": "I used to play basketball in high school",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/ /ɪn/ /haɪ/ /skul/"
+		"nativeText": "tôi thích đọc sách",
+		"english": "I enjoy reading books",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /'ridɪŋ/ /bʊks/"
 	},
 	{
-		"chinese": "在高中",
-		"english": "in high school",
-		"soundmark": "/ɪn/ /haɪ/ /skul/"
+		"nativeText": "rảnh rỗi",
+		"english": "free",
+		"soundmark": "/fri/"
 	},
 	{
-		"chinese": "我在高中",
-		"english": "I am in high school",
-		"soundmark": "/aɪ/ /æm/ /ɪn/ /haɪ/ /skul/"
+		"nativeText": "thời gian",
+		"english": "time",
+		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "我(过去)在高中",
-		"english": "I was in high school",
-		"soundmark": "/aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
+		"nativeText": "thời gian rảnh",
+		"english": "free time",
+		"soundmark": "/fri/ /taɪm/"
 	},
 	{
-		"chinese": "当......的时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"nativeText": "thời gian rảnh của tôi",
+		"english": "my free time",
+		"soundmark": "/maɪ/ /fri/ /taɪm/"
 	},
 	{
-		"chinese": "当我(过去)在高中的时候",
-		"english": "when I was in high school",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
+		"nativeText": "trong thời gian rảnh của tôi",
+		"english": "in my free time",
+		"soundmark": "/ɪn/ /maɪ/ /fri/ /taɪm/"
 	},
 	{
-		"chinese": "我过去常常打篮球当我在高中的时候",
-		"english": "I used to play basketball when I was in high school",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /'bæskɪtbɔl/ /ɪn/ /haɪ/ /skul/ /wɛn/ /aɪ/ /wəz/ /ɪn/ /haɪ/ /skul/"
+		"nativeText": "tôi thích đọc sách trong thời gian rảnh",
+		"english": "I enjoy reading books in my free time",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /'ridɪŋ/ /bʊks/ /ɪn/ /maɪ/ /fri/ /taɪm/"
 	},
 	{
-		"chinese": "象棋",
-		"english": "chess",
-		"soundmark": "/tʃɛs/"
+		"nativeText": "anh ấy thích",
+		"english": "he enjoys",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
 	},
 	{
-		"chinese": "玩",
-		"english": "to play",
-		"soundmark": "/tə/ /ple/"
+		"nativeText": "làm",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "下象棋",
-		"english": "to play chess",
-		"soundmark": "/tə/ /ple/ /tʃɛs/"
+		"nativeText": "bạn bè",
+		"english": "friends",
+		"soundmark": "/frɛndz/"
 	},
 	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
+		"nativeText": "kết bạn",
+		"english": "to make friends",
+		"soundmark": "/tə/ /mek/ /frɛndz/"
 	},
 	{
-		"chinese": "我过去常常下象棋",
-		"english": "I used to play chess",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /tʃɛs/"
+		"nativeText": "kết bạn (dạng ing)",
+		"english": "making friends",
+		"soundmark": "/'mekɪŋ/ /frɛndz/"
 	},
 	{
-		"chinese": "年轻的",
-		"english": "young",
-		"soundmark": "/jʌŋ/"
+		"nativeText": "anh ấy thích kết bạn",
+		"english": "he enjoys making friends",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'mekɪŋ/ /frɛndz/"
 	},
 	{
-		"chinese": "我是年轻的",
-		"english": "I am young",
-		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
+		"nativeText": "người",
+		"english": "people",
+		"soundmark": "/'pipl/"
 	},
 	{
-		"chinese": "我(过去)是年轻的",
-		"english": "I was young",
-		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "khác nhau",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
 	},
 	{
-		"chinese": "当......的时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"nativeText": "những người khác nhau",
+		"english": "different people",
+		"soundmark": "/'dɪfrənt/ /'pipl/"
 	},
 	{
-		"chinese": "当我(过去)是年轻的时候",
-		"english": "when I was young",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "với những người khác nhau",
+		"english": "with different people",
+		"soundmark": "/wɪð/ /'dɪfrənt/ /'pipl/"
 	},
 	{
-		"chinese": "我过去常常下象棋当我(过去)是年轻的时候",
-		"english": "I used to play chess when I was young",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /ple/ /tʃɛs/ /wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "anh ấy thích kết bạn",
+		"english": "he enjoys making friends",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'mekɪŋ/ /frɛndz/"
 	},
 	{
-		"chinese": "看",
+		"nativeText": "anh ấy thích kết bạn với những người khác nhau",
+		"english": "he enjoys making friends with different people",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'mekɪŋ/ /frɛndz/ /wɪð/ /'dɪfrənt/ /'pipl/"
+	},
+	{
+		"nativeText": "xem",
 		"english": "to watch",
 		"soundmark": "/tə/ /wɑtʃ/"
 	},
 	{
-		"chinese": "卡通片",
-		"english": "cartoons",
-		"soundmark": "/kɑrˈtunz/"
+		"nativeText": "phim",
+		"english": "movies",
+		"soundmark": "/'muviz/"
 	},
 	{
-		"chinese": "看卡通片",
-		"english": "to watch cartoons",
-		"soundmark": "/tə/ /wɑtʃ/ /kɑrˈtunz/"
+		"nativeText": "xem phim",
+		"english": "to watch movies",
+		"soundmark": "/tə/ /wɑtʃ/ /'muviz/"
 	},
 	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
+		"nativeText": "xem phim (dạng ing)",
+		"english": "watching movies",
+		"soundmark": "/'wɑtʃɪŋ/ /'muviz/"
 	},
 	{
-		"chinese": "我过去常常看卡通片",
-		"english": "I used to watch cartoons",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/"
+		"nativeText": "anh ấy thích",
+		"english": "he enjoys",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
 	},
 	{
-		"chinese": "早上",
-		"english": "morning",
-		"soundmark": "/'mɔrnɪŋ/"
+		"nativeText": "anh ấy thích xem phim",
+		"english": "he enjoys watching movies",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'wɑtʃɪŋ/ /'muviz/"
 	},
 	{
-		"chinese": "每一个",
-		"english": "every",
-		"soundmark": "/'ɛvri/"
-	},
-	{
-		"chinese": "每天早上",
-		"english": "every morning",
-		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我过去每天早上都会看卡通片",
-		"english": "I used to watch cartoons every morning",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/ /'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "孩子",
-		"english": "kid",
-		"soundmark": "/kɪd/"
-	},
-	{
-		"chinese": "我是一个孩子",
-		"english": "I am a kid",
-		"soundmark": "/aɪ/ /æm/ /ə/ /kɪd/"
-	},
-	{
-		"chinese": "我(过去)是一个孩子",
-		"english": "I was a kid",
-		"soundmark": "/aɪ/ /wəz/ /ə/ /kɪd/"
-	},
-	{
-		"chinese": "当我(过去)是一个孩子的时候",
-		"english": "when I was a kid",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ə/ /kɪd/"
-	},
-	{
-		"chinese": "我过去每天早上都会看卡通片当我(过去)是一个孩子的时候",
-		"english": "I used to watch cartoons every morning when I was a kid",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /wɑtʃ/ /kɑrˈtunz/ /'ɛvri/ /'mɔrnɪŋ/ /wɛn/ /aɪ/ /wəz/ /ə/ /kɪd/"
-	},
-	{
-		"chinese": "喝",
-		"english": "to drink",
-		"soundmark": "/tə/ /drɪŋk/"
-	},
-	{
-		"chinese": "咖啡",
-		"english": "coffee",
-		"soundmark": "/'kɔfi/"
-	},
-	{
-		"chinese": "喝咖啡",
-		"english": "to drink coffee",
-		"soundmark": "/tə/ /drɪŋk/ /'kɔfi/"
-	},
-	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
-	},
-	{
-		"chinese": "过去常常喝咖啡",
-		"english": "used to drink coffee",
-		"soundmark": "/juzd/ /tə/ /drɪŋk/ /'kɔfi/"
-	},
-	{
-		"chinese": "我过去常常喝咖啡",
-		"english": "I used to drink coffee",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/"
-	},
-	{
-		"chinese": "早上",
-		"english": "morning",
-		"soundmark": "/'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "每天早上",
-		"english": "every morning",
-		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我过去每天早上喝咖啡",
-		"english": "I used to drink coffee every morning",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "喜欢",
-		"english": "like",
-		"soundmark": "/laɪk/"
-	},
-	{
-		"chinese": "更喜欢",
-		"english": "to prefer",
-		"soundmark": "/tə/ /prɪˈfɝ/"
-	},
-	{
-		"chinese": "茶",
-		"english": "tea",
-		"soundmark": "/ti/"
-	},
-	{
-		"chinese": "更喜欢茶",
-		"english": "to prefer tea",
-		"soundmark": "/tə/ /prɪˈfɝ/ /ti/"
-	},
-	{
-		"chinese": "我更喜欢茶",
-		"english": "I prefer tea",
-		"soundmark": "/aɪ/ /prɪˈfɝ/ /ti/"
-	},
-	{
-		"chinese": "现在",
-		"english": "now",
-		"soundmark": "/naʊ/"
-	},
-	{
-		"chinese": "现在我更喜欢茶",
-		"english": "now I prefer tea",
-		"soundmark": "/naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
-	},
-	{
-		"chinese": "但是",
-		"english": "but",
-		"soundmark": "/bʌt/"
-	},
-	{
-		"chinese": "但是现在我更喜欢茶",
-		"english": "but now I prefer tea",
-		"soundmark": "/bʌt/ /naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
-	},
-	{
-		"chinese": "我过去每天早上喝咖啡",
-		"english": "I used to drink coffee every morning",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
-	},
-	{
-		"chinese": "我过去每天早上喝咖啡但是现在我更喜欢茶",
-		"english": "I used to drink coffee every morning but now I prefer tea",
-		"soundmark": "/aɪ/ /juzd/ /tə/ /drɪŋk/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/ /bʌt/ /naʊ/ /aɪ/ /prɪˈfɝ/ /ti/"
-	},
-	{
-		"chinese": "老师",
-		"english": "teacher",
-		"soundmark": "/'titʃɚ/"
-	},
-	{
-		"chinese": "她是一名老师",
-		"english": "she is a teacher",
-		"soundmark": "/ʃi/ /ɪz/ /ə/ /'titʃɚ/"
-	},
-	{
-		"chinese": "她(过去)是一名老师",
-		"english": "she was a teacher",
-		"soundmark": "/ʃi/ /wəz/ /ə/ /'titʃɚ/"
-	},
-	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
-	},
-	{
-		"chinese": "曾经是......",
-		"english": "used to be",
-		"soundmark": "/juzd/ /tə/ /bi/"
-	},
-	{
-		"chinese": "她曾经是一名老师",
-		"english": "she used to be a teacher",
-		"soundmark": "/ʃi/ /juzd/ /tə/ /bi/ /ə/ /'titʃɚ/"
-	},
-	{
-		"chinese": "退出",
-		"english": "to quit",
-		"soundmark": "/tə/ /kwɪt/"
-	},
-	{
-		"chinese": "工作",
-		"english": "job",
-		"soundmark": "/dʒɑb/"
-	},
-	{
-		"chinese": "她的工作",
-		"english": "her job",
-		"soundmark": "/hɚ/ /dʒɑb/"
-	},
-	{
-		"chinese": "辞去她的工作",
-		"english": "to quit her job",
-		"soundmark": "/tə/ /kwɪt/ /hɚ/ /dʒɑb/"
-	},
-	{
-		"chinese": "她辞去她的工作",
-		"english": "she quit her job",
-		"soundmark": "/ʃi/ /kwɪt/ /hɚ/ /dʒɑb/"
-	},
-	{
-		"chinese": "她辞去了她的工作",
-		"english": "she quit her job",
-		"soundmark": "/ʃi/ /kwɪt/ /hɚ/ /dʒɑb/"
-	},
-	{
-		"chinese": "但是她辞去了她的工作",
-		"english": "but she quit her job",
-		"soundmark": "/bʌt/ /ʃi/ /kwɪt/ /hɚ/ /dʒɑb/"
-	},
-	{
-		"chinese": "上一个",
-		"english": "last",
-		"soundmark": "/læst/"
-	},
-	{
-		"chinese": "年",
-		"english": "year",
-		"soundmark": "/jɪr/"
-	},
-	{
-		"chinese": "去年",
-		"english": "last year",
-		"soundmark": "/læst/ /jɪr/"
-	},
-	{
-		"chinese": "但是去年她辞去了她的工作",
-		"english": "but she quit her job last year",
-		"soundmark": "/bʌt/ /ʃi/ /kwɪt/ /hɚ/ /dʒɑb/ /læst/ /jɪr/"
-	},
-	{
-		"chinese": "她曾经是一名老师",
-		"english": "she used to be a teacher",
-		"soundmark": "/ʃi/ /juzd/ /tə/ /bi/ /ə/ /'titʃɚ/"
-	},
-	{
-		"chinese": "她曾经是一名老师但是她去年辞去了她的工作",
-		"english": "she used to be a teacher but she quit her job last year",
-		"soundmark": "/ʃi/ /juzd/ /tə/ /bi/ /ə/ /'titʃɚ/ /bʌt/ /ʃi/ /kwɪt/ /hɚ/ /dʒɑb/ /læst/ /jɪr/"
-	},
-	{
-		"chinese": "曾经是......",
-		"english": "used to be",
-		"soundmark": "/juzd/ /tə/ /bi/"
-	},
-	{
-		"chinese": "抽烟",
-		"english": "to smoke",
-		"soundmark": "/tə/ /smok/"
-	},
-	{
-		"chinese": "烟民",
-		"english": "smoker",
-		"soundmark": "/'smokɚ/"
-	},
-	{
-		"chinese": "曾经是一个烟民",
-		"english": "used to be a smoker",
-		"soundmark": "/juzd/ /tə/ /bi/ /ə/ /'smokɚ/"
-	},
-	{
-		"chinese": "你曾经是一个烟民",
-		"english": "you used to be a smoker",
-		"soundmark": "/ju/ /juzd/ /tə/ /bi/ /ə/ /'smokɚ/"
-	},
-	{
-		"chinese": "退出",
-		"english": "to quit",
-		"soundmark": "/tə/ /kwɪt/"
-	},
-	{
-		"chinese": "你退出",
-		"english": "you quit",
-		"soundmark": "/ju/ /kwɪt/"
-	},
-	{
-		"chinese": "你戒了",
-		"english": "you quit",
-		"soundmark": "/ju/ /kwɪt/"
-	},
-	{
-		"chinese": "但是现在",
-		"english": "but now",
-		"soundmark": "/bʌt/ /naʊ/"
-	},
-	{
-		"chinese": "但是现在你戒了",
-		"english": "but now you quit",
-		"soundmark": "/bʌt/ /naʊ/ /ju/ /kwɪt/"
-	},
-	{
-		"chinese": "你曾经是一个烟民",
-		"english": "you used to be a smoker",
-		"soundmark": "/ju/ /juzd/ /tə/ /bi/ /ə/ /'smokɚ/"
-	},
-	{
-		"chinese": "你曾经是一个烟民但是现在你戒了",
-		"english": "you used to be a smoker but now you quit",
-		"soundmark": "/ju/ /juzd/ /tə/ /bi/ /ə/ /'smokɚ/ /bʌt/ /naʊ/ /ju/ /kwɪt/"
-	},
-	{
-		"chinese": "陌生的",
-		"english": "strange",
-		"soundmark": "/strendʒ/"
-	},
-	{
-		"chinese": "陌生人",
-		"english": "stranger",
-		"soundmark": "/'strendʒɚ/"
-	},
-	{
-		"chinese": "我们是陌生人",
-		"english": "we are strangers",
-		"soundmark": "/wi/ /ɚ/ /'strendʒɚz/"
-	},
-	{
-		"chinese": "曾经是......",
-		"english": "used to be",
-		"soundmark": "/juzd/ /tə/ /bi/"
-	},
-	{
-		"chinese": "我们曾经是陌生人",
-		"english": "we used to be strangers",
-		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /'strendʒɚz/"
-	},
-	{
-		"chinese": "朋友",
+		"nativeText": "bạn",
 		"english": "friend",
 		"soundmark": "/frɛnd/"
 	},
 	{
-		"chinese": "我们是朋友",
-		"english": "we are friends",
-		"soundmark": "/wi/ /ɚ/ /frɛndz/"
+		"nativeText": "con gái",
+		"english": "girl",
+		"soundmark": "/ɡɝl/"
 	},
 	{
-		"chinese": "但是现在",
-		"english": "but now",
-		"soundmark": "/bʌt/ /naʊ/"
+		"nativeText": "bạn gái",
+		"english": "girlfriend",
+		"soundmark": "/'ɡɝlfrɛnd/"
 	},
 	{
-		"chinese": "但是现在我们是朋友",
-		"english": "but now we are friends",
-		"soundmark": "/bʌt/ /naʊ/ /wi/ /ɚ/ /frɛndz/"
+		"nativeText": "bạn gái của anh ấy",
+		"english": "his girlfriend",
+		"soundmark": "/hɪz/ /'ɡɝlfrɛnd/"
 	},
 	{
-		"chinese": "我们曾经是陌生人",
-		"english": "we used to be strangers",
-		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /'strendʒɚz/"
+		"nativeText": "cùng với",
+		"english": "with",
+		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "我们曾经是陌生人但是现在我们是朋友",
-		"english": "we used to be strangers but now we are friends",
-		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /'strendʒɚz/ /bʌt/ /naʊ/ /wi/ /ɚ/ /frɛndz/"
+		"nativeText": "cùng với bạn gái của anh ấy",
+		"english": "with his girlfriend",
+		"soundmark": "/wɪð/ /hɪz/ /'ɡɝlfrɛnd/"
 	},
 	{
-		"chinese": "我们是朋友",
-		"english": "we are friends",
-		"soundmark": "/wi/ /ɚ/ /frɛndz/"
+		"nativeText": "anh ấy thích xem phim",
+		"english": "he enjoys watching movies",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'wɑtʃɪŋ/ /'muviz/"
 	},
 	{
-		"chinese": "曾经是......",
-		"english": "used to be",
-		"soundmark": "/juzd/ /tə/ /bi/"
+		"nativeText": "anh ấy thích xem phim cùng với bạn gái",
+		"english": "he enjoys watching movies with his girlfriend",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'wɑtʃɪŋ/ /'muviz/ /wɪð/ /hɪz/ /'ɡɝlfrɛnd/"
 	},
 	{
-		"chinese": "我们曾经是朋友",
-		"english": "we used to be friends",
-		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /frɛndz/"
+		"nativeText": "thế giới",
+		"english": "the world",
+		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "亲密的",
-		"english": "close",
-		"soundmark": "/klos/"
+		"nativeText": "xung quanh",
+		"english": "around",
+		"soundmark": "/ə'raʊnd/"
 	},
 	{
-		"chinese": "我们曾经是亲密的朋友",
-		"english": "we used to be close friends",
-		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /klos/ /frɛndz/"
+		"nativeText": "khắp thế giới",
+		"english": "around the world",
+		"soundmark": "/ə'raʊnd/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "更多",
-		"english": "more",
-		"soundmark": "/mɔr/"
+		"nativeText": "du lịch",
+		"english": "to travel",
+		"soundmark": "/tə/ /'trævl/"
 	},
 	{
-		"chinese": "任何",
-		"english": "any",
-		"soundmark": "/'ɛni/"
+		"nativeText": "du lịch khắp thế giới",
+		"english": "to travel around the world",
+		"soundmark": "/tə/ /'trævl/ /ə'raʊnd/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "任何更多",
-		"english": "anymore",
-		"soundmark": "/ɛniˈmɔr/"
+		"nativeText": "du lịch khắp thế giới (dạng ing)",
+		"english": "traveling around the world",
+		"soundmark": "/'trævlɪŋ/ /ə'raʊnd/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+		"nativeText": "họ thích",
+		"english": "they enjoy",
+		"soundmark": "/ðe/ /ɪn'dʒɔɪ/"
 	},
 	{
-		"chinese": "我们曾经是亲密的朋友但是再也不是了",
-		"english": "we used to be close friends but not anymore",
-		"soundmark": "/wi/ /juzd/ /tə/ /bi/ /klos/ /frɛndz/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
+		"nativeText": "họ thích du lịch khắp thế giới",
+		"english": "they enjoy traveling around the world",
+		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /'trævlɪŋ/ /ə'raʊnd/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "爱",
-		"english": "to love",
-		"soundmark": "/tə/ /lʌv/"
-	},
-	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
-	},
-	{
-		"chinese": "爱他",
-		"english": "to love him",
-		"soundmark": "/tə/ /lʌv/ /hɪm/"
-	},
-	{
-		"chinese": "她爱他",
-		"english": "she loves him",
-		"soundmark": "/ʃi/ /lʌvz/ /hɪm/"
-	},
-	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
-	},
-	{
-		"chinese": "她过去爱他",
-		"english": "she used to love him",
-		"soundmark": "/ʃi/ /juzd/ /tə/ /lʌv/ /hɪm/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "她过去爱他但是再也不会了",
-		"english": "she used to love him but not anymore",
-		"soundmark": "/ʃi/ /juzd/ /tə/ /lʌv/ /hɪm/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "驾驶",
-		"english": "to drive",
-		"soundmark": "/tə/ /draɪv/"
-	},
-	{
-		"chinese": "汽车",
-		"english": "car",
-		"soundmark": "/kɑr/"
-	},
-	{
-		"chinese": "开车",
-		"english": "to drive a car",
-		"soundmark": "/tə/ /draɪv/ /ə/ /kɑr/"
-	},
-	{
-		"chinese": "去工作",
-		"english": "to work",
-		"soundmark": "/tə/ /wɝk/"
-	},
-	{
-		"chinese": "开车去工作",
-		"english": "to drive a car to work",
-		"soundmark": "/tə/ /draɪv/ /ə/ /kɑr/ /tə/ /wɝk/"
-	},
-	{
-		"chinese": "他开车去工作",
-		"english": "he drives a car to work",
-		"soundmark": "/hi/ /draɪvz/ /ə/ /kɑr/ /tə/ /wɝk/"
-	},
-	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
-	},
-	{
-		"chinese": "他过去常常开车去工作",
-		"english": "he used to drive a car to work",
-		"soundmark": "/hi/ /juzd/ /tə/ /draɪv/ /ə/ /kɑr/ /tə/ /wɝk/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "他过去常常开车去工作但是再也不会了",
-		"english": "he used to drive a car to work but not anymore",
-		"soundmark": "/hi/ /juzd/ /tə/ /draɪv/ /ə/ /kɑr/ /tə/ /wɝk/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "工作",
-		"english": "to work",
-		"soundmark": "/tə/ /wɝk/"
-	},
-	{
-		"chinese": "公司",
-		"english": "company",
-		"soundmark": "/ˈkʌmpəni/"
-	},
-	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
-	},
-	{
-		"chinese": "那个公司",
-		"english": "that company",
-		"soundmark": "/ðæt/ /ˈkʌmpəni/"
-	},
-	{
-		"chinese": "在那个公司",
-		"english": "at that company",
-		"soundmark": "/ət/ /ðæt/ /ˈkʌmpəni/"
-	},
-	{
-		"chinese": "在那个公司工作",
-		"english": "to work at that company",
-		"soundmark": "/tə/ /wɝk/ /ət/ /ðæt/ /ˈkʌmpəni/"
-	},
-	{
-		"chinese": "他在那个公司工作",
-		"english": "he works at that company",
-		"soundmark": "/hi/ /wɝks/ /ət/ /ðæt/ /ˈkʌmpəni/"
-	},
-	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
-	},
-	{
-		"chinese": "他曾经在那个公司工作",
-		"english": "he used to work at that company",
-		"soundmark": "/hi/ /juzd/ /tə/ /wɝk/ /ət/ /ðæt/ /ˈkʌmpəni/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "他曾经在那个公司工作但是再也不会了",
-		"english": "he used to work at that company but not anymore",
-		"soundmark": "/hi/ /juzd/ /tə/ /wɝk/ /ət/ /ðæt/ /ˈkʌmpəni/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "餐厅",
-		"english": "restaurant",
-		"soundmark": "/'rɛstrɑnt/"
-	},
-	{
-		"chinese": "那个餐厅",
-		"english": "that restaurant",
-		"soundmark": "/ðæt/ /'rɛstrɑnt/"
-	},
-	{
-		"chinese": "去",
-		"english": "to go",
-		"soundmark": "/tə/ /ɡo/"
-	},
-	{
-		"chinese": "去那个餐厅",
-		"english": "to go to that restaurant",
-		"soundmark": "/tə/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/"
-	},
-	{
-		"chinese": "我们去那个餐厅",
-		"english": "we go to that restaurant",
-		"soundmark": "/wi/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/"
-	},
-	{
-		"chinese": "过去常常做......",
-		"english": "used to do",
-		"soundmark": "/juzd/ /tə/ /du/"
-	},
-	{
-		"chinese": "我们过去常常去那个餐厅",
-		"english": "we used to go to that restaurant",
-		"soundmark": "/wi/ /juzd/ /tə/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "我们过去常常去那个餐厅但是再也不会了",
-		"english": "we used to go to that restaurant but not anymore",
-		"soundmark": "/wi/ /juzd/ /tə/ /ɡo/ /tə/ /ðæt/ /'rɛstrɑnt/ /bʌt/ /nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "朋友",
-		"english": "friend",
-		"soundmark": "/frɛnd/"
-	},
-	{
-		"chinese": "我们是朋友",
-		"english": "we are friends",
-		"soundmark": "/wi/ /ɚ/ /frɛndz/"
-	},
-	{
-		"chinese": "我们不是朋友",
-		"english": "we are not friends",
-		"soundmark": "/wi/ /ɚ/ /nɑt/ /frɛndz/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "我们再也不是朋友",
-		"english": "we are not friends anymore",
-		"soundmark": "/wi/ /ɚ/ /nɑt/ /frɛndz/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "有名的",
-		"english": "famous",
-		"soundmark": "/'feməs/"
-	},
-	{
-		"chinese": "她是有名的",
-		"english": "she is famous",
-		"soundmark": "/ʃi/ /ɪz/ /'feməs/"
-	},
-	{
-		"chinese": "她不是有名的",
-		"english": "she is not famous",
-		"soundmark": "/ʃi/ /ɪz/ /nɑt/ /'feməs/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "她再也不是有名的",
-		"english": "she is not famous anymore",
-		"soundmark": "/ʃi/ /ɪz/ /nɑt/ /'feməs/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "老板",
-		"english": "boss",
-		"soundmark": "/bɔs/"
-	},
-	{
-		"chinese": "我的老板",
-		"english": "my boss",
-		"soundmark": "/maɪ/ /bɔs/"
-	},
-	{
-		"chinese": "你是我的老板",
-		"english": "you are my boss",
-		"soundmark": "/ju/ /ɚ/ /maɪ/ /bɔs/"
-	},
-	{
-		"chinese": "你不是我的老板",
-		"english": "you are not my boss",
-		"soundmark": "/ju/ /ɚ/ /nɑt/ /maɪ/ /bɔs/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "你再也不是我的老板",
-		"english": "you are not my boss anymore",
-		"soundmark": "/ju/ /ɚ/ /nɑt/ /maɪ/ /bɔs/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "退出",
-		"english": "to quit",
-		"soundmark": "/tə/ /kwɪt/"
-	},
-	{
-		"chinese": "我辞职",
-		"english": "I quit",
-		"soundmark": "/aɪ/ /kwɪt/"
-	},
-	{
-		"chinese": "你再也不是我的老板。我辞职。",
-		"english": "you are not my boss anymore I quit",
-		"soundmark": "/ju/ /ɚ/ /nɑt/ /maɪ/ /bɔs/ /ɛniˈmɔr/ /aɪ/ /kwɪt/"
-	},
-	{
-		"chinese": "重要的",
-		"english": "important",
-		"soundmark": "/ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "它是重要的",
-		"english": "it is important",
-		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "它不是重要的",
-		"english": "it is not important",
-		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "它再也不是重要的",
-		"english": "it is not important anymore",
-		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "喝",
-		"english": "to drink",
-		"soundmark": "/tə/ /drɪŋk/"
-	},
-	{
-		"chinese": "咖啡",
-		"english": "coffee",
-		"soundmark": "/'kɔfi/"
-	},
-	{
-		"chinese": "喝咖啡",
-		"english": "to drink coffee",
-		"soundmark": "/tə/ /drɪŋk/ /'kɔfi/"
-	},
-	{
-		"chinese": "我喝咖啡",
-		"english": "I drink coffee",
-		"soundmark": "/aɪ/ /drɪŋk/ /'kɔfi/"
-	},
-	{
-		"chinese": "我不喝咖啡",
-		"english": "I don't drink coffee",
-		"soundmark": "/aɪ/ /dont/ /drɪŋk/ /'kɔfi/"
-	},
-	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "我再也不喝咖啡了",
-		"english": "I don't drink coffee anymore",
-		"soundmark": "/aɪ/ /dont/ /drɪŋk/ /'kɔfi/ /ɛniˈmɔr/"
-	},
-	{
-		"chinese": "玩",
-		"english": "to play",
-		"soundmark": "/tə/ /ple/"
-	},
-	{
-		"chinese": "游戏",
+		"nativeText": "trò chơi",
 		"english": "games",
 		"soundmark": "/ɡemz/"
 	},
 	{
-		"chinese": "玩游戏",
-		"english": "to play games",
-		"soundmark": "/tə/ /ple/ /ɡemz/"
-	},
-	{
-		"chinese": "视频",
+		"nativeText": "video",
 		"english": "video",
 		"soundmark": "/'vɪdɪo/"
 	},
 	{
-		"chinese": "电子游戏",
+		"nativeText": "trò chơi điện tử",
 		"english": "video games",
 		"soundmark": "/'vɪdɪo/ /ɡemz/"
 	},
 	{
-		"chinese": "玩电子游戏",
+		"nativeText": "chơi",
+		"english": "to play",
+		"soundmark": "/tə/ /ple/"
+	},
+	{
+		"nativeText": "chơi trò chơi điện tử",
 		"english": "to play video games",
 		"soundmark": "/tə/ /ple/ /'vɪdɪo/ /ɡemz/"
 	},
 	{
-		"chinese": "他玩电子游戏",
-		"english": "he plays video games",
-		"soundmark": "/hi/ /plez/ /'vɪdɪo/ /ɡemz/"
+		"nativeText": "chơi trò chơi điện tử (dạng ing)",
+		"english": "playing video games",
+		"soundmark": "/'pleɪŋ/ /'vɪdɪo/ /ɡemz/"
 	},
 	{
-		"chinese": "他不玩电子游戏",
-		"english": "he doesn't play video games",
-		"soundmark": "/hi/ /ˈdʌznt/ /ple/ /'vɪdɪo/ /ɡemz/"
+		"nativeText": "anh ấy thích",
+		"english": "he enjoys",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
 	},
 	{
-		"chinese": "再也不",
-		"english": "not anymore",
-		"soundmark": "/nɑt/ /ɛniˈmɔr/"
+		"nativeText": "anh ấy thích chơi trò chơi điện tử",
+		"english": "he enjoys playing video games",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'pleɪŋ/ /'vɪdɪo/ /ɡemz/"
 	},
 	{
-		"chinese": "他再也不玩电子游戏",
-		"english": "he doesn't play video games anymore",
-		"soundmark": "/hi/ /ˈdʌznt/ /ple/ /'vɪdɪo/ /ɡemz/ /ɛniˈmɔr/"
+		"nativeText": "những người bạn",
+		"english": "friends",
+		"soundmark": "/frɛndz/"
 	},
 	{
-		"chinese": "我们玩电子游戏",
-		"english": "we play video games",
-		"soundmark": "/wi/ /ple/ /'vɪdɪo/ /ɡemz/"
+		"nativeText": "những người bạn của anh ấy",
+		"english": "his friends",
+		"soundmark": "/hɪz/ /frɛndz/"
 	},
 	{
-		"chinese": "我们不玩电子游戏",
-		"english": "we don't play video games",
-		"soundmark": "/wi/ /dont/ /ple/ /'vɪdɪo/ /ɡemz/"
+		"nativeText": "cùng với",
+		"english": "with",
+		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "我们再也不玩电子游戏",
-		"english": "we don't play video games anymore",
-		"soundmark": "/wi/ /dont/ /ple/ /'vɪdɪo/ /ɡemz/ /ɛniˈmɔr/"
+		"nativeText": "cùng với những người bạn của anh ấy",
+		"english": "with his friends",
+		"soundmark": "/wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"nativeText": "anh ấy thích chơi trò chơi điện tử cùng với những người bạn",
+		"english": "he enjoys playing video games with his friends",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /'pleɪŋ/ /'vɪdɪo/ /ɡemz/ /wɪð/ /hɪz/ /frɛndz/"
+	},
+	{
+		"nativeText": "luyện tập",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "yoga",
+		"english": "yoga",
+		"soundmark": "/ˈjoɡə/"
+	},
+	{
+		"nativeText": "luyện tập yoga",
+		"english": "to practice yoga",
+		"soundmark": "/tə/ /ˈpræktɪs/ /ˈjoɡə/"
+	},
+	{
+		"nativeText": "luyện tập yoga (dạng ing)",
+		"english": "practicing yoga",
+		"soundmark": "/ˈpræktɪsɪŋ/ /ˈjoɡə/"
+	},
+	{
+		"nativeText": "tôi thích",
+		"english": "I enjoy",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/"
+	},
+	{
+		"nativeText": "tôi thích luyện tập yoga",
+		"english": "I enjoy practicing yoga",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ˈjoɡə/"
+	},
+	{
+		"nativeText": "mỗi sáng",
+		"english": "every morning",
+		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
+	},
+	{
+		"nativeText": "tôi thích luyện tập yoga mỗi sáng",
+		"english": "I enjoy practicing yoga every morning",
+		"soundmark": "/aɪ/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ˈjoɡə/ /'ɛvri/ /'mɔrnɪŋ/"
+	},
+	{
+		"nativeText": "họ thích",
+		"english": "they enjoy",
+		"soundmark": "/ðe/ /ɪn'dʒɔɪ/"
+	},
+	{
+		"nativeText": "luyện tập (dạng ing)",
+		"english": "practicing",
+		"soundmark": "/ˈpræktɪsɪŋ/"
+	},
+	{
+		"nativeText": "họ thích luyện tập",
+		"english": "they enjoy practicing",
+		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/"
+	},
+	{
+		"nativeText": "tiếng Anh",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "của họ",
+		"english": "their",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "tiếng Anh của họ",
+		"english": "their English",
+		"soundmark": "/ðɛr/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "họ thích luyện tập tiếng Anh của mình",
+		"english": "they enjoy practicing their English",
+		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ðɛr/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "nói",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
+	},
+	{
+		"nativeText": "người nói",
+		"english": "speaker",
+		"soundmark": "/'spikɚ/"
+	},
+	{
+		"nativeText": "bản địa",
+		"english": "native",
+		"soundmark": "/ˈnetɪv/"
+	},
+	{
+		"nativeText": "người bản ngữ",
+		"english": "native speakers",
+		"soundmark": "/ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "với người bản ngữ",
+		"english": "with native speakers",
+		"soundmark": "/wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "họ thích luyện tập tiếng Anh của mình với người bản ngữ",
+		"english": "they enjoy practicing their English with native speakers",
+		"soundmark": "/ðe/ /ɪn'dʒɔɪ/ /ˈpræktɪsɪŋ/ /ðɛr/ /ˈɪŋɡlɪʃ/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "đàn guitar",
+		"english": "guitar",
+		"soundmark": "/ɡɪ'tɑr/"
+	},
+	{
+		"nativeText": "kỹ năng",
+		"english": "skills",
+		"soundmark": "/'skɪlz/"
+	},
+	{
+		"nativeText": "kỹ năng chơi guitar",
+		"english": "guitar skills",
+		"soundmark": "/ɡɪ'tɑr/ /'skɪlz/"
+	},
+	{
+		"nativeText": "kỹ năng chơi guitar của anh ấy",
+		"english": "his guitar skills",
+		"soundmark": "/hɪz/ /ɡɪ'tɑr/ /'skɪlz/"
+	},
+	{
+		"nativeText": "luyện tập (dạng ing)",
+		"english": "practicing",
+		"soundmark": "/ˈpræktɪsɪŋ/"
+	},
+	{
+		"nativeText": "luyện tập kỹ năng chơi guitar của anh ấy",
+		"english": "practicing his guitar skills",
+		"soundmark": "/ˈpræktɪsɪŋ/ /hɪz/ /ɡɪ'tɑr/ /'skɪlz/"
+	},
+	{
+		"nativeText": "anh ấy thích",
+		"english": "he enjoys",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/"
+	},
+	{
+		"nativeText": "anh ấy thích luyện tập kỹ năng chơi guitar của mình",
+		"english": "he enjoys practicing his guitar skills",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /ˈpræktɪsɪŋ/ /hɪz/ /ɡɪ'tɑr/ /'skɪlz/"
+	},
+	{
+		"nativeText": "mỗi ngày",
+		"english": "every day",
+		"soundmark": "/'ɛvri/ /de/"
+	},
+	{
+		"nativeText": "anh ấy thích luyện tập kỹ năng chơi guitar của mình mỗi ngày",
+		"english": "he enjoys practicing his guitar skills every day",
+		"soundmark": "/hi/ /ɪn'dʒɔɪz/ /ˈpræktɪsɪŋ/ /hɪz/ /ɡɪ'tɑr/ /'skɪlz/ /'ɛvri/ /de/"
+	},
+	{
+		"nativeText": "bạn nên",
+		"english": "you should",
+		"soundmark": "/ju/ /ʃʊd/"
+	},
+	{
+		"nativeText": "luyện tập",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập",
+		"english": "you should practice",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "nhảy",
+		"english": "to dance",
+		"soundmark": "/tə/ /dæns/"
+	},
+	{
+		"nativeText": "nhảy (dạng ing)",
+		"english": "dancing",
+		"soundmark": "/'dænsɪŋ/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập nhảy",
+		"english": "you should practice dancing",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'dænsɪŋ/"
+	},
+	{
+		"nativeText": "nhiều hơn",
+		"english": "more",
+		"soundmark": "/mɔr/"
+	},
+	{
+		"nativeText": "thường xuyên",
+		"english": "often",
+		"soundmark": "/'ɔfn/"
+	},
+	{
+		"nativeText": "thường xuyên hơn",
+		"english": "more often",
+		"soundmark": "/mɔr/ /'ɔfn/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập nhảy thường xuyên hơn",
+		"english": "you should practice dancing more often",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'dænsɪŋ/ /mɔr/ /'ɔfn/"
+	},
+	{
+		"nativeText": "luyện tập",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "anh ấy cần",
+		"english": "he needs",
+		"soundmark": "/hi/ /nidz/"
+	},
+	{
+		"nativeText": "anh ấy cần luyện tập",
+		"english": "he needs to practice",
+		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "nói",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
+	},
+	{
+		"nativeText": "tiếng Anh",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "nói tiếng Anh",
+		"english": "to speak English",
+		"soundmark": "/tə/ /spik/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "nói tiếng Anh (dạng ing)",
+		"english": "speaking English",
+		"soundmark": "/'spikɪŋ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "anh ấy cần luyện tập",
+		"english": "he needs to practice",
+		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "anh ấy cần luyện tập nói tiếng Anh",
+		"english": "he needs to practice speaking English",
+		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/ /'spikɪŋ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "thường xuyên hơn",
+		"english": "more often",
+		"soundmark": "/mɔr/ /'ɔfn/"
+	},
+	{
+		"nativeText": "anh ấy cần luyện tập nói tiếng Anh thường xuyên hơn",
+		"english": "he needs to practice speaking English more often",
+		"soundmark": "/hi/ /nidz/ /tə/ /ˈpræktɪs/ /'spikɪŋ/ /ˈɪŋɡlɪʃ/ /mɔr/ /'ɔfn/"
+	},
+	{
+		"nativeText": "bạn nên",
+		"english": "you should",
+		"soundmark": "/ju/ /ʃʊd/"
+	},
+	{
+		"nativeText": "luyện tập",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập",
+		"english": "you should practice",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "đọc",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"nativeText": "to lớn",
+		"english": "aloud",
+		"soundmark": "/ə'laʊd/"
+	},
+	{
+		"nativeText": "đọc to",
+		"english": "to read aloud",
+		"soundmark": "/tə/ /rid/ /ə'laʊd/"
+	},
+	{
+		"nativeText": "đọc to (dạng ing)",
+		"english": "reading aloud",
+		"soundmark": "/'ridɪŋ/ /ə'laʊd/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập",
+		"english": "you should practice",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập đọc to",
+		"english": "you should practice reading aloud",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'ridɪŋ/ /ə'laʊd/"
+	},
+	{
+		"nativeText": "phát âm",
+		"english": "pronunciation",
+		"soundmark": "/prənʌnsɪ'eʃən/"
+	},
+	{
+		"nativeText": "phát âm của bạn",
+		"english": "your pronunciation",
+		"soundmark": "/jʊr/ /prənʌnsɪ'eʃən/"
+	},
+	{
+		"nativeText": "cải thiện",
+		"english": "to improve",
+		"soundmark": "/tə/ /ɪmˈpruv/"
+	},
+	{
+		"nativeText": "cải thiện phát âm của bạn",
+		"english": "to improve your pronunciation",
+		"soundmark": "/tə/ /ɪmˈpruv/ /jʊr/ /prənʌnsɪ'eʃən/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập đọc to",
+		"english": "you should practice reading aloud",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'ridɪŋ/ /ə'laʊd/"
+	},
+	{
+		"nativeText": "bạn nên luyện tập đọc to để cải thiện phát âm của mình",
+		"english": "you should practice reading aloud to improve your pronunciation",
+		"soundmark": "/ju/ /ʃʊd/ /ˈpræktɪs/ /'ridɪŋ/ /ə'laʊd/ /tə/ /ɪmˈpruv/ /jʊr/ /prənʌnsɪ'eʃən/"
 	}
 ]

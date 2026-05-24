@@ -4,7 +4,7 @@
       v-if="userStore.isFounderMembership()"
       name="i-ph-crown-simple-fill"
       class="glimmer relative overflow-hidden bg-yellow-400"
-      title="尊贵的创始会员,感谢您对 Earthworm 的大力支持！"
+      title="Thành viên sáng lập danh dự, cảm ơn bạn đã hỗ trợ Earthworm！"
       style="width: 20px; height: 20px"
     >
     </UIcon>

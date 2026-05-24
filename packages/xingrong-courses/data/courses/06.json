@@ -1,1061 +1,1061 @@
 [
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "需要",
+		"nativeText": "cần",
 		"english": "need",
 		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我需要做这件事",
+		"nativeText": "tôi cần làm việc đó",
 		"english": "I need to do it",
 		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我需要现在做这件事",
+		"nativeText": "tôi cần làm việc đó bây giờ",
 		"english": "I need to do it now",
 		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"nativeText": "nó quan trọng",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "rất",
 		"english": "very",
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"nativeText": "nó rất quan trọng",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为它是非常重要的",
+		"nativeText": "bởi vì nó rất quan trọng",
 		"english": "because it is very important",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我需要现在做这件事因为它是非常重要的",
+		"nativeText": "tôi cần làm việc đó bây giờ bởi vì nó rất quan trọng",
 		"english": "I need to do it now because it is very important",
 		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "对我来说",
+		"nativeText": "đối với tôi",
 		"english": "for me",
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"nativeText": "nó rất quan trọng đối với tôi",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我必须做这件事",
+		"nativeText": "tôi phải làm việc đó",
 		"english": "I have to do it",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "每天",
+		"nativeText": "mỗi ngày",
 		"english": "every day",
 		"soundmark": "/'ɛvri/ /de/"
 	},
 	{
-		"chinese": "我必须每天做这件事",
+		"nativeText": "tôi phải làm việc đó mỗi ngày",
 		"english": "I have to do it every day",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说所以我必须每天做这件事",
+		"nativeText": "nó rất quan trọng đối với tôi vì vậy tôi phải làm việc đó mỗi ngày",
 		"english": "It is very important for me so I have to do it every day",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /'ɛvri/ /de/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "not",
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"nativeText": "nó không quan trọng",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "对我来说",
+		"nativeText": "đối với tôi",
 		"english": "for me",
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是不重要的对我来说",
+		"nativeText": "nó không quan trọng đối với tôi",
 		"english": "it is not important for me",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我必须做这件事",
+		"nativeText": "tôi phải làm việc đó",
 		"english": "I have to do it",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我不必做这件事",
+		"nativeText": "tôi không phải làm việc đó",
 		"english": "I don't have to do it",
 		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我不必现在做这件事",
+		"nativeText": "tôi không phải làm việc đó bây giờ",
 		"english": "I don't have to do it now",
 		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不重要的对我来说所以我不必现在做这件事",
+		"nativeText": "nó không quan trọng đối với tôi vì vậy tôi không phải làm việc đó bây giờ",
 		"english": "It is not important for me so I don't have to do it now",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /dont/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "想要",
+		"nativeText": "muốn",
 		"english": "want",
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我想要知道",
+		"nativeText": "tôi muốn biết",
 		"english": "I want to know",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "可能的",
+		"nativeText": "có thể",
 		"english": "possible",
 		"soundmark": "/'pɑsəbl/"
 	},
 	{
-		"chinese": "它是可能的",
+		"nativeText": "nó có thể",
 		"english": "it is possible",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "做这件事（它）是可能的",
+		"nativeText": "có thể làm việc đó",
 		"english": "it is possible to do it",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "今天",
+		"nativeText": "hôm nay",
 		"english": "today",
 		"soundmark": "/tə'de/"
 	},
 	{
-		"chinese": "今天做这件事（它）是可能的",
+		"nativeText": "có thể làm việc đó hôm nay",
 		"english": "it is possible to do it today",
 		"soundmark": "/ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /du/ /ɪt/ /tə'de/"
 	},
 	{
-		"chinese": "是否",
+		"nativeText": "có hay không",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想知道今天是否有可能做这件事",
+		"nativeText": "tôi muốn biết có hay không có thể làm việc đó hôm nay",
 		"english": "I want to know if it is possible to do it today",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ɪt/ /ɪz/ /'pɑsəbl/ /tə/ /du/ /ɪt/ /tə'de/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "说话",
+		"nativeText": "nói chuyện",
 		"english": "to talk",
 		"soundmark": "/tə/ /tɔk/"
 	},
 	{
-		"chinese": "和我",
+		"nativeText": "với tôi",
 		"english": "with me",
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "和我说话",
+		"nativeText": "nói chuyện với tôi",
 		"english": "to talk with me",
 		"soundmark": "/tə/ /tɔk/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以和我说话",
+		"nativeText": "bạn có thể nói chuyện với tôi",
 		"english": "you can talk with me",
 		"soundmark": "/ju/ /kæn/ /tɔk/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "我想要知道",
+		"nativeText": "tôi muốn biết",
 		"english": "I want to know",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "是否",
+		"nativeText": "có hay không",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否你可以和我说话",
+		"nativeText": "tôi muốn biết có hay không bạn có thể nói chuyện với tôi",
 		"english": "I want to know if you can talk with me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɔk/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "今晚",
+		"nativeText": "tối nay",
 		"english": "tonight",
 		"soundmark": "/tə'naɪt/"
 	},
 	{
-		"chinese": "我想要知道是否你今晚可以和我说话",
+		"nativeText": "tôi muốn biết có hay không bạn tối nay có thể nói chuyện với tôi",
 		"english": "I want to know if you can talk with me tonight",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"nativeText": "nó quan trọng",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "rất",
 		"english": "very",
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "对我来说",
+		"nativeText": "đối với tôi",
 		"english": "for me",
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"nativeText": "nó rất quan trọng đối với tôi",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "我想要知道是否你今晚可以和我说话因为它是非常重要的对我来说",
+		"nativeText": "tôi muốn biết có hay không bạn tối nay có thể nói chuyện với tôi bởi vì nó rất quan trọng đối với tôi",
 		"english": "I want to know if you can talk with me tonight because it is very important for me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "告诉你",
+		"nativeText": "nói cho bạn",
 		"english": "to tell you",
 		"soundmark": "/tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "我必须告诉你",
+		"nativeText": "tôi phải nói cho bạn",
 		"english": "I have to tell you",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/"
 	},
 	{
-		"chinese": "某件事情",
+		"nativeText": "điều gì đó",
 		"english": "something",
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某件事情",
+		"nativeText": "điều gì đó quan trọng",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我必须告诉你重要的某件事情",
+		"nativeText": "tôi phải nói cho bạn điều gì đó quan trọng",
 		"english": "I have to tell you something important",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我必须现在告诉你重要的某件事情",
+		"nativeText": "tôi phải nói cho bạn điều gì đó quan trọng bây giờ",
 		"english": "I have to tell you something important now",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /naʊ/"
 	},
 	{
-		"chinese": "紧急的",
+		"nativeText": "khẩn cấp",
 		"english": "urgent",
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是紧急的",
+		"nativeText": "nó khẩn cấp",
 		"english": "it is urgent",
 		"soundmark": "/ɪt/ /ɪz/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是非常紧急的",
+		"nativeText": "nó rất khẩn cấp",
 		"english": "it is very urgent",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "我必须现在告诉你重要的某件事情因为它是非常紧急的",
+		"nativeText": "tôi phải nói cho bạn điều gì đó quan trọng bây giờ bởi vì nó rất khẩn cấp",
 		"english": "I have to tell you something important now because it is very urgent",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /tɛl/ /ju/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "这个食物",
+		"nativeText": "đồ ăn",
 		"english": "the food",
 		"soundmark": "/ðə/ /fud/"
 	},
 	{
-		"chinese": "我喜欢",
+		"nativeText": "tôi thích",
 		"english": "I like",
 		"soundmark": "/aɪ/ /laɪk/"
 	},
 	{
-		"chinese": "我喜欢这个食物",
+		"nativeText": "tôi thích đồ ăn",
 		"english": "I like the food",
 		"soundmark": "/aɪ/ /laɪk/ /ðə/ /fud/"
 	},
 	{
-		"chinese": "我不喜欢这个食物",
+		"nativeText": "tôi không thích đồ ăn",
 		"english": "I don't like the food",
 		"soundmark": "/aɪ/ /dont/ /laɪk/ /ðə/ /fud/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "在这里",
+		"nativeText": "ở đây",
 		"english": "to be here",
 		"soundmark": "/tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "我想要在这里",
+		"nativeText": "tôi muốn ở đây",
 		"english": "I want to be here",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "我不想在这里",
+		"nativeText": "tôi không muốn ở đây",
 		"english": "I don't want to be here",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "一整天",
+		"nativeText": "cả ngày",
 		"english": "all the day",
 		"soundmark": "/ɔl/ /ðə/ /de/"
 	},
 	{
-		"chinese": "我不想一整天在这里",
+		"nativeText": "tôi không muốn ở đây cả ngày",
 		"english": "I don't want to be here all the day",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /ɔl/ /ðə/ /de/"
 	},
 	{
-		"chinese": "而且",
+		"nativeText": "và",
 		"english": "and",
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "我不喜欢这个食物而且我不想一整天在这里",
+		"nativeText": "tôi không thích đồ ăn và tôi không muốn ở đây cả ngày",
 		"english": "I don't like the food and I don't want to be here all the day",
 		"soundmark": "/aɪ/ /dont/ /laɪk/ /ðə/ /fud/ /ənd/ /aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /ɔl/ /ðə/ /de/"
 	},
 	{
-		"chinese": "帮助",
+		"nativeText": "giúp đỡ",
 		"english": "to help",
 		"soundmark": "/tə/ /hɛlp/"
 	},
 	{
-		"chinese": "帮助我",
+		"nativeText": "giúp tôi",
 		"english": "to help me",
 		"soundmark": "/tə/ /hɛlp/ /mi/"
 	},
 	{
-		"chinese": "你必须帮助我",
+		"nativeText": "bạn phải giúp tôi",
 		"english": "you have to help me",
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "你必须现在帮助我",
+		"nativeText": "bạn phải giúp tôi bây giờ",
 		"english": "you have to help me now",
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
 	{
-		"chinese": "非常重要",
+		"nativeText": "rất quan trọng",
 		"english": "very important",
 		"soundmark": "/ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"nativeText": "nó rất quan trọng",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "对我来说",
+		"nativeText": "đối với tôi",
 		"english": "for me",
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"nativeText": "nó rất quan trọng đối với tôi",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说所以你必须现在帮助我",
+		"nativeText": "nó rất quan trọng đối với tôi vì vậy bạn phải giúp tôi bây giờ",
 		"english": "It is very important for me so you have to help me now",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /ju/ /hæv/ /tə/ /hɛlp/ /mi/ /naʊ/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/du/ /ɪt/"
 	},
 	{
-		"chinese": "我必须做这件事",
+		"nativeText": "tôi phải làm việc đó",
 		"english": "I have to do it",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "我必须现在做这件事",
+		"nativeText": "tôi phải làm việc đó bây giờ",
 		"english": "I have to do it now",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说所以我必须现在做这件事",
+		"nativeText": "nó rất quan trọng đối với tôi vì vậy tôi phải làm việc đó bây giờ",
 		"english": "It is very important for me so I have to do it now",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "告诉我",
+		"nativeText": "nói cho tôi",
 		"english": "to tell me",
 		"soundmark": "/tə/ /tɛl/ /mi/"
 	},
 	{
-		"chinese": "你需要告诉我",
+		"nativeText": "bạn cần nói cho tôi",
 		"english": "you need to tell me",
 		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/"
 	},
 	{
-		"chinese": "事实",
+		"nativeText": "sự thật",
 		"english": "the truth",
 		"soundmark": "/ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "你需要告诉我事实",
+		"nativeText": "bạn cần nói cho tôi sự thật",
 		"english": "you need to tell me the truth",
 		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "你需要告诉我事实因为它是非常重要的对我来说",
+		"nativeText": "bạn cần nói cho tôi sự thật bởi vì nó rất quan trọng đối với tôi",
 		"english": "You need to tell me the truth because it is very important for me",
 		"soundmark": "/ju/ /nid/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "解释",
+		"nativeText": "giải thích",
 		"english": "to explain",
 		"soundmark": "/tə/ /ɪk'splen/"
 	},
 	{
-		"chinese": "原因",
+		"nativeText": "lý do",
 		"english": "the reason",
 		"soundmark": "/ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "解释原因",
+		"nativeText": "giải thích lý do",
 		"english": "to explain the reason",
 		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "她想要",
+		"nativeText": "cô ấy muốn",
 		"english": "she wants",
 		"soundmark": "/ʃi/ /wɑnts/"
 	},
 	{
-		"chinese": "她想要解释原因",
+		"nativeText": "cô ấy muốn giải thích lý do",
 		"english": "she wants to explain the reason",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "吃这个食物",
+		"nativeText": "ăn đồ ăn",
 		"english": "to eat the food",
 		"soundmark": "/tə/ /it/ /ðə/ /fud/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "现在吃这个食物",
+		"nativeText": "ăn đồ ăn bây giờ",
 		"english": "to eat the food now",
 		"soundmark": "/tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
 	{
-		"chinese": "她需要",
+		"nativeText": "cô ấy cần",
 		"english": "she needs",
 		"soundmark": "/ʃi/ /nidz/"
 	},
 	{
-		"chinese": "她需要现在吃这个食物",
+		"nativeText": "cô ấy cần ăn đồ ăn bây giờ",
 		"english": "she needs to eat the food now",
 		"soundmark": "/ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
 	{
-		"chinese": "为什么",
+		"nativeText": "tại sao",
 		"english": "why",
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她想要解释原因为什么她需要现在吃这个食物",
+		"nativeText": "cô ấy muốn giải thích lý do tại sao cô ấy cần ăn đồ ăn bây giờ",
 		"english": "She wants to explain the reason why she needs to eat the food now",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /nidz/ /tə/ /it/ /ðə/ /fud/ /naʊ/"
 	},
 	{
-		"chinese": "飞翔",
+		"nativeText": "bay",
 		"english": "to fly",
 		"soundmark": "/tə/ /flaɪ/"
 	},
 	{
-		"chinese": "天空",
+		"nativeText": "bầu trời",
 		"english": "sky",
 		"soundmark": "/skaɪ/"
 	},
 	{
-		"chinese": "在天空中",
+		"nativeText": "trên bầu trời",
 		"english": "in the sky",
 		"soundmark": "/ɪn/ /ðə/ /skaɪ/"
 	},
 	{
-		"chinese": "在天空中飞翔",
+		"nativeText": "bay trên bầu trời",
 		"english": "to fly in the sky",
 		"soundmark": "/tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
 	},
 	{
-		"chinese": "这个小鸟",
+		"nativeText": "con chim",
 		"english": "the bird",
 		"soundmark": "/ðə/ /bɝd/"
 	},
 	{
-		"chinese": "这个小鸟想要",
+		"nativeText": "con chim muốn",
 		"english": "the bird wants",
 		"soundmark": "/ðə/ /bɝd/ /wɑnts/"
 	},
 	{
-		"chinese": "这个小鸟想要在天空中飞翔",
+		"nativeText": "con chim muốn bay trên bầu trời",
 		"english": "the bird wants to fly in the sky",
 		"soundmark": "/ðə/ /bɝd/ /wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
 	},
 	{
-		"chinese": "星荣想要",
+		"nativeText": "Xingrong muốn",
 		"english": "Xingrong wants",
 		"soundmark": "/wɑnts/"
 	},
 	{
-		"chinese": "星荣想要在天空中飞翔",
+		"nativeText": "Xingrong muốn bay trên bầu trời",
 		"english": "Xingrong wants to fly in the sky",
 		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bət/"
 	},
 	{
-		"chinese": "不可能的",
+		"nativeText": "không thể",
 		"english": "impossible",
 		"soundmark": "/ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "它是不可能的",
+		"nativeText": "nó không thể",
 		"english": "it is impossible",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "星荣想要在天空中飞翔但是这件事是不可能的",
+		"nativeText": "Xingrong muốn bay trên bầu trời nhưng việc đó không thể",
 		"english": "Xingrong wants to fly in the sky but it is impossible",
 		"soundmark": "/wɑnts/ /tə/ /flaɪ/ /ɪn/ /ðə/ /skaɪ/ /bət/ /ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "告诉",
+		"nativeText": "nói",
 		"english": "to tell",
 		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "事实",
+		"nativeText": "sự thật",
 		"english": "the truth",
 		"soundmark": "/ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "告诉我事实",
+		"nativeText": "nói cho tôi sự thật",
 		"english": "to tell me the truth",
 		"soundmark": "/tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "他必须告诉我事实",
+		"nativeText": "anh ấy phải nói cho tôi sự thật",
 		"english": "he has to tell me the truth",
 		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "它是非常重要的对我来说",
+		"nativeText": "nó rất quan trọng đối với tôi",
 		"english": "it is very important for me",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "他必须告诉我事实因为它是非常重要的对我来说",
+		"nativeText": "anh ấy phải nói cho tôi sự thật bởi vì nó rất quan trọng đối với tôi",
 		"english": "he has to tell me the truth because it is very important for me",
 		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我需要",
+		"nativeText": "tôi cần",
 		"english": "I need",
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "知道这件事",
+		"nativeText": "biết việc đó",
 		"english": "to know it",
 		"soundmark": "/tə/ /no/ /ɪt/"
 	},
 	{
-		"chinese": "我需要知道这件事",
+		"nativeText": "tôi cần biết việc đó",
 		"english": "I need to know it",
 		"soundmark": "/aɪ/ /nid/ /tə/ /no/ /ɪt/"
 	},
 	{
-		"chinese": "而且",
+		"nativeText": "và",
 		"english": "and",
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "他必须告诉我事实因为它是非常重要的对我来说而且我需要知道这件事",
+		"nativeText": "anh ấy phải nói cho tôi sự thật bởi vì nó rất quan trọng đối với tôi và tôi cần biết việc đó",
 		"english": "He has to tell me the truth because it is very important for me and I need to know it",
 		"soundmark": "/hi/ /hæz/ /tə/ /tɛl/ /mi/ /ðə/ /trʊθ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /fɝ/ /mi/ /ənd/ /aɪ/ /nid/ /tə/ /no/ /ɪt/"
 	},
 	{
-		"chinese": "她想要",
+		"nativeText": "cô ấy muốn",
 		"english": "she wants",
 		"soundmark": "/ʃi/ /wɑnts/"
 	},
 	{
-		"chinese": "见到",
+		"nativeText": "gặp",
 		"english": "to see",
 		"soundmark": "/tə/ /si/"
 	},
 	{
-		"chinese": "她想要见到我",
+		"nativeText": "cô ấy muốn gặp tôi",
 		"english": "she wants to see me",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /si/ /mi/"
 	},
 	{
-		"chinese": "在这里",
+		"nativeText": "ở đây",
 		"english": "to be here",
 		"soundmark": "/tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "我必须在这里",
+		"nativeText": "tôi phải ở đây",
 		"english": "I have to be here",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "我今天必须在这里",
+		"nativeText": "tôi hôm nay phải ở đây",
 		"english": "I have to be here today",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /bi/ /hɪr/ /tə'de/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "她想要见到我所以我今天必须在这里",
+		"nativeText": "cô ấy muốn gặp tôi vì vậy tôi hôm nay phải ở đây",
 		"english": "She wants to see me so I have to be here today",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /si/ /mi/ /so/ /aɪ/ /hæv/ /tə/ /bi/ /hɪr/ /tə'de/"
 	},
 	{
-		"chinese": "解释",
+		"nativeText": "giải thích",
 		"english": "to explain",
 		"soundmark": "/tə/ /ɪk'splen/"
 	},
 	{
-		"chinese": "原因",
+		"nativeText": "lý do",
 		"english": "the reason",
 		"soundmark": "/ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "解释原因",
+		"nativeText": "giải thích lý do",
 		"english": "to explain the reason",
 		"soundmark": "/tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "她必须解释原因",
+		"nativeText": "cô ấy phải giải thích lý do",
 		"english": "she has to explain the reason",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "在家里阅读",
+		"nativeText": "đọc ở nhà",
 		"english": "to read at home",
 		"soundmark": "/tə/ /rid/ /ət/ /hom/"
 	},
 	{
-		"chinese": "她喜欢",
+		"nativeText": "cô ấy thích",
 		"english": "she likes",
 		"soundmark": "/ʃi/ /laɪks/"
 	},
 	{
-		"chinese": "她喜欢在家里阅读",
+		"nativeText": "cô ấy thích đọc ở nhà",
 		"english": "she likes to read at home",
 		"soundmark": "/ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
 	},
 	{
-		"chinese": "为什么",
+		"nativeText": "tại sao",
 		"english": "why",
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读",
+		"nativeText": "cô ấy phải giải thích lý do tại sao cô ấy thích đọc ở nhà",
 		"english": "she has to explain the reason why she likes to read at home",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "rất",
 		"english": "very",
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"nativeText": "nó rất quan trọng",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "她必须解释原因为什么她喜欢在家里阅读因为这件事是非常重要的",
+		"nativeText": "cô ấy phải giải thích lý do tại sao cô ấy thích đọc ở nhà bởi vì việc đó rất quan trọng",
 		"english": "She has to explain the reason why she likes to read at home because it is very important",
 		"soundmark": "/ʃi/ /hæz/ /tə/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /ʃi/ /laɪks/ /tə/ /rid/ /ət/ /hom/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "他想要",
+		"nativeText": "anh ấy muốn",
 		"english": "he wants",
 		"soundmark": "/hi/ /wɑnts/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "他想要做这件事",
+		"nativeText": "anh ấy muốn làm việc đó",
 		"english": "he wants to do it",
 		"soundmark": "/hi/ /wɑnts/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "现在",
+		"nativeText": "bây giờ",
 		"english": "now",
 		"soundmark": "/naʊ/"
 	},
 	{
-		"chinese": "他想要现在做这件事",
+		"nativeText": "anh ấy muốn làm việc đó bây giờ",
 		"english": "he wants to do it now",
 		"soundmark": "/hi/ /wɑnts/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "他不想现在做这件事",
+		"nativeText": "anh ấy không muốn làm việc đó bây giờ",
 		"english": "he doesn't want to do it now",
 		"soundmark": "/ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/"
 	},
 	{
-		"chinese": "紧急的",
+		"nativeText": "khẩn cấp",
 		"english": "urgent",
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是紧急的",
+		"nativeText": "nó khẩn cấp",
 		"english": "it is urgent",
 		"soundmark": "/ɪt/ /ɪz/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "它是不紧急的",
+		"nativeText": "nó không khẩn cấp",
 		"english": "it is not urgent",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "他不想现在做这件事因为它是不紧急的",
+		"nativeText": "anh ấy không muốn làm việc đó bây giờ bởi vì nó không khẩn cấp",
 		"english": "He doesn't want to do it now because it is not urgent",
 		"soundmark": "/ˈdʌznt/ /wɑnt/ /tə/ /du/ /ɪt/ /naʊ/ /bɪ'kɔz/ /ɪt/ /ɪz/ /nɑt/ /'ɝdʒənt/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "我可以",
+		"nativeText": "tôi có thể",
 		"english": "I can",
 		"soundmark": "/aɪ/ /kæn/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我可以做这件事",
+		"nativeText": "tôi có thể làm việc đó",
 		"english": "I can do it",
 		"soundmark": "/aɪ/ /kæn/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "单独地",
+		"nativeText": "một mình",
 		"english": "alone",
 		"soundmark": "/ə'lon/"
 	},
 	{
-		"chinese": "我可以单独做这件事",
+		"nativeText": "tôi có thể làm việc đó một mình",
 		"english": "I can do it alone",
 		"soundmark": "/aɪ/ /kæn/ /du/ /ɪt/ /ə'lon/"
 	},
 	{
-		"chinese": "我不可以单独做这件事",
+		"nativeText": "tôi không thể làm việc đó một mình",
 		"english": "I can not do it alone",
 		"soundmark": "/aɪ/ /kæn/ /nɑt/ /du/ /ɪt/ /ə'lon/"
 	},
 	{
-		"chinese": "你必须帮助我",
+		"nativeText": "bạn phải giúp tôi",
 		"english": "you have to help me",
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "你必须帮助我因为我不可以单独做这件事",
+		"nativeText": "bạn phải giúp tôi bởi vì tôi không thể làm việc đó một mình",
 		"english": "You have to help me because I can not do it alone",
 		"soundmark": "/ju/ /hæv/ /tə/ /hɛlp/ /mi/ /bɪ'kɔz/ /aɪ/ /kæn/ /nɑt/ /du/ /ɪt/ /ə'lon/"
 	},
 	{
-		"chinese": "告诉你",
+		"nativeText": "nói cho bạn",
 		"english": "tell you",
 		"soundmark": "/tɛl/ /ju/"
 	},
 	{
-		"chinese": "事实",
+		"nativeText": "sự thật",
 		"english": "the truth",
 		"soundmark": "/ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "告诉你事实",
+		"nativeText": "nói cho bạn sự thật",
 		"english": "tell you the truth",
 		"soundmark": "/tɛl/ /ju/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "我将会告诉你事实",
+		"nativeText": "tôi sẽ nói cho bạn sự thật",
 		"english": "I will tell you the truth",
 		"soundmark": "/aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "我将不会告诉你事实",
+		"nativeText": "tôi sẽ không nói cho bạn sự thật",
 		"english": "I will not tell you the truth",
 		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /tɛl/ /ju/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "未来",
+		"nativeText": "tương lai",
 		"english": "the future",
 		"soundmark": "/ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "在未来",
+		"nativeText": "trong tương lai",
 		"english": "in the future",
 		"soundmark": "/ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将会在未来告诉你事实",
+		"nativeText": "tôi sẽ nói cho bạn sự thật trong tương lai",
 		"english": "I will tell you the truth in the future",
 		"soundmark": "/aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我将不会在未来告诉你事实",
+		"nativeText": "tôi sẽ không nói cho bạn sự thật trong tương lai",
 		"english": "I will not tell you the truth in the future",
 		"soundmark": "/aɪ/ /wɪl/ /nɑt/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它是不重要的",
+		"nativeText": "nó không quan trọng",
 		"english": "it is not important",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "它是不重要的所以我将会在未来告诉你事实",
+		"nativeText": "nó không quan trọng vì vậy tôi sẽ nói cho bạn sự thật trong tương lai",
 		"english": "it is not important so I will tell you the truth in the future",
 		"soundmark": "/ɪt/ /ɪz/ /nɑt/ /ɪm'pɔrtnt/ /so/ /aɪ/ /wɪl/ /tɛl/ /ju/ /ðə/ /trʊθ/ /ɪn/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "她可以",
+		"nativeText": "cô ấy có thể",
 		"english": "she can",
 		"soundmark": "/ʃi/ /kæn/"
 	},
 	{
-		"chinese": "解释",
+		"nativeText": "giải thích",
 		"english": "explain",
 		"soundmark": "/ɪk'splen/"
 	},
 	{
-		"chinese": "原因",
+		"nativeText": "lý do",
 		"english": "the reason",
 		"soundmark": "/ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "解释原因",
+		"nativeText": "giải thích lý do",
 		"english": "explain the reason",
 		"soundmark": "/ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "她可以解释原因",
+		"nativeText": "cô ấy có thể giải thích lý do",
 		"english": "she can explain the reason",
 		"soundmark": "/ʃi/ /kæn/ /ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "她不可以解释原因",
+		"nativeText": "cô ấy không thể giải thích lý do",
 		"english": "she can not explain the reason",
 		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "为什么",
+		"nativeText": "tại sao",
 		"english": "why",
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "他今晚不可以和我说话",
+		"nativeText": "anh ấy không thể nói chuyện với tôi tối nay",
 		"english": "he can not talk with me tonight",
 		"soundmark": "/hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	},
 	{
-		"chinese": "她可以解释原因为什么他今晚不可以和我说话",
+		"nativeText": "cô ấy có thể giải thích lý do tại sao anh ấy không thể nói chuyện với tôi tối nay",
 		"english": "She can explain the reason why he can not talk with me tonight",
 		"soundmark": "/ʃi/ /kæn/ /nɑt/ /ɪk'splen/ /ðə/ /ˈrizən/ /waɪ/ /hi/ /kæn/ /nɑt/ /tɔk/ /wɪð/ /mi/ /tə'naɪt/"
 	}

@@ -1,546 +1,546 @@
 [
 	{
-		"chinese": "见到",
+		"nativeText": "thấy; gặp",
 		"english": "to see",
 		"soundmark": "/tə/ /si/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "见到你",
+		"nativeText": "gặp bạn",
 		"english": "to see you",
 		"soundmark": "/tə/ /si/ /ju/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要见到你",
+		"nativeText": "tôi muốn gặp bạn",
 		"english": "I want to see you",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /si/ /ju/"
 	},
 	{
-		"chinese": "我想要(有意识地)看你",
+		"nativeText": "tôi muốn nhìn bạn",
 		"english": "I want to look at you",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lʊk/ /ət/ /ju/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "看我",
+		"nativeText": "nhìn tôi",
 		"english": "to look at me",
 		"soundmark": "/tə/ /lʊk/ /ət/ /mi/"
 	},
 	{
-		"chinese": "我想要你",
+		"nativeText": "tôi muốn bạn",
 		"english": "I want you",
 		"soundmark": "/aɪ/ /wɑnt/ /ju/"
 	},
 	{
-		"chinese": "我想要你看我",
+		"nativeText": "tôi muốn bạn nhìn tôi",
 		"english": "I want you to look at me",
 		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /lʊk/ /ət/ /mi/"
 	},
 	{
-		"chinese": "看我",
+		"nativeText": "nhìn tôi",
 		"english": "to look at me",
 		"soundmark": "/tə/ /lʊk/ /ət/ /mi/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "看你",
+		"nativeText": "nhìn bạn",
 		"english": "to look at you",
 		"soundmark": "/tə/ /lʊk/ /ət/ /ju/"
 	},
 	{
-		"chinese": "我看你",
+		"nativeText": "tôi nhìn bạn",
 		"english": "I look at you",
 		"soundmark": "/aɪ/ /lʊk/ /ət/ /ju/"
 	},
 	{
-		"chinese": "看(ing形式)",
+		"nativeText": "đang nhìn (dạng ing)",
 		"english": "looking",
 		"soundmark": "/ˈlʊkɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在看着",
+		"nativeText": "đang nhìn",
 		"english": "be looking",
 		"soundmark": "/bi/ /ˈlʊkɪŋ/"
 	},
 	{
-		"chinese": "正在看着你",
+		"nativeText": "đang nhìn bạn",
 		"english": "be looking at you",
 		"soundmark": "/bi/ /ˈlʊkɪŋ/ /ət/ /ju/"
 	},
 	{
-		"chinese": "我(现在)正在看着你",
+		"nativeText": "tôi đang nhìn bạn",
 		"english": "I am looking at you",
 		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /ju/"
 	},
 	{
-		"chinese": "我(过去)正在看着你",
+		"nativeText": "tôi đã đang nhìn bạn",
 		"english": "I was looking at you",
 		"soundmark": "/aɪ/ /wəz/ /ˈlʊkɪŋ/ /ət/ /ju/"
 	},
 	{
-		"chinese": "我自己",
+		"nativeText": "bản thân tôi",
 		"english": "myself",
 		"soundmark": "/maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我(过去)正在看着我自己",
+		"nativeText": "tôi đã đang nhìn bản thân tôi",
 		"english": "I was looking at myself",
 		"soundmark": "/aɪ/ /wəz/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "镜子",
+		"nativeText": "cái gương",
 		"english": "mirror",
 		"soundmark": "/'mɪrɚ/"
 	},
 	{
-		"chinese": "在镜子里",
+		"nativeText": "trong gương",
 		"english": "in the mirror",
 		"soundmark": "/ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "我(过去)正在在镜子里看着我自己",
+		"nativeText": "tôi đã đang nhìn bản thân tôi trong gương",
 		"english": "I was looking at myself in the mirror",
 		"soundmark": "/aɪ/ /wəz/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "我(现在)正在在镜子里看着我自己",
+		"nativeText": "tôi đang nhìn bản thân tôi trong gương",
 		"english": "I am looking at myself in the mirror",
 		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /ət/ /maɪ'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "你(现在)正在看着",
+		"nativeText": "bạn đang nhìn",
 		"english": "you are looking",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/"
 	},
 	{
-		"chinese": "你自己",
+		"nativeText": "bản thân bạn",
 		"english": "yourself",
 		"soundmark": "/jɔr'sɛlf/"
 	},
 	{
-		"chinese": "你(现在)正在看着你自己",
+		"nativeText": "bạn đang nhìn bản thân bạn",
 		"english": "you are looking at yourself",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "镜子",
+		"nativeText": "cái gương",
 		"english": "mirror",
 		"soundmark": "/'mɪrɚ/"
 	},
 	{
-		"chinese": "在镜子里",
+		"nativeText": "trong gương",
 		"english": "in the mirror",
 		"soundmark": "/ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "你(现在)正在在镜子里看着你自己",
+		"nativeText": "bạn đang nhìn bản thân bạn trong gương",
 		"english": "you are looking at yourself in the mirror",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "你(过去)正在在镜子里看着你自己",
+		"nativeText": "bạn đã đang nhìn bản thân bạn trong gương",
 		"english": "you were looking at yourself in the mirror",
 		"soundmark": "/ju/ /wɚ/ /ˈlʊkɪŋ/ /ət/ /jɔr'sɛlf/ /ɪn/ /ðə/ /'mɪrɚ/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "看(ing形式)",
+		"nativeText": "đang nhìn (dạng ing)",
 		"english": "looking",
 		"soundmark": "/ˈlʊkɪŋ/"
 	},
 	{
-		"chinese": "他们(现在)正在看着",
+		"nativeText": "họ đang nhìn",
 		"english": "they are looking",
 		"soundmark": "/ðe/ /ɚ/ /ˈlʊkɪŋ/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "us",
 		"soundmark": "/ʌs/"
 	},
 	{
-		"chinese": "他们(现在)正在看着我们",
+		"nativeText": "họ đang nhìn chúng ta",
 		"english": "they are looking at us",
 		"soundmark": "/ðe/ /ɚ/ /ˈlʊkɪŋ/ /ət/ /ʌs/"
 	},
 	{
-		"chinese": "仍然",
+		"nativeText": "vẫn",
 		"english": "still",
 		"soundmark": "/stɪl/"
 	},
 	{
-		"chinese": "他们(现在)仍然正在看着我们",
+		"nativeText": "họ vẫn đang nhìn chúng ta",
 		"english": "they are still looking at us",
 		"soundmark": "/ðe/ /ɚ/ /stɪl/ /ˈlʊkɪŋ/ /ət/ /ʌs/"
 	},
 	{
-		"chinese": "为了",
+		"nativeText": "cho; vì",
 		"english": "for",
 		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "新的",
+		"nativeText": "mới",
 		"english": "new",
 		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "工作",
+		"nativeText": "công việc",
 		"english": "job",
 		"soundmark": "/dʒɑb/"
 	},
 	{
-		"chinese": "为了一个新的工作",
+		"nativeText": "cho một công việc mới",
 		"english": "for a new job",
 		"soundmark": "/fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "为了一个新的工作(有意识地)看",
+		"nativeText": "tìm một công việc mới",
 		"english": "to look for a new job",
 		"soundmark": "/tə/ /lʊk/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "寻找",
+		"nativeText": "tìm kiếm",
 		"english": "to look for",
 		"soundmark": "/tə/ /lʊk/ /fɝ/"
 	},
 	{
-		"chinese": "寻找一个新的工作",
+		"nativeText": "tìm kiếm một công việc mới",
 		"english": "to look for a new job",
 		"soundmark": "/tə/ /lʊk/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "我需要",
+		"nativeText": "tôi cần",
 		"english": "I need",
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我需要找一个新的工作",
+		"nativeText": "tôi cần tìm một công việc mới",
 		"english": "I need to look for a new job",
 		"soundmark": "/aɪ/ /nid/ /tə/ /lʊk/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "我找一个新的工作",
+		"nativeText": "tôi tìm một công việc mới",
 		"english": "I look for a new job",
 		"soundmark": "/aɪ/ /lʊk/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "寻找(ing形式)",
+		"nativeText": "đang tìm kiếm (dạng ing)",
 		"english": "looking for",
 		"soundmark": "/ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在寻找",
+		"nativeText": "đang tìm kiếm",
 		"english": "be looking for",
 		"soundmark": "/bi/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "一个新的工作",
+		"nativeText": "một công việc mới",
 		"english": "a new job",
 		"soundmark": "/ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "正在寻找一个新的工作",
+		"nativeText": "đang tìm kiếm một công việc mới",
 		"english": "be looking for a new job",
 		"soundmark": "/bi/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "我(现在)正在寻找一个新的工作",
+		"nativeText": "tôi đang tìm kiếm một công việc mới",
 		"english": "I am looking for a new job",
 		"soundmark": "/aɪ/ /æm/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "仍然",
+		"nativeText": "vẫn",
 		"english": "still",
 		"soundmark": "/stɪl/"
 	},
 	{
-		"chinese": "我(现在)仍然正在寻找一个新的工作",
+		"nativeText": "tôi vẫn đang tìm kiếm một công việc mới",
 		"english": "I am still looking for a new job",
 		"soundmark": "/aɪ/ /æm/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "我(过去)正在寻找一个新的工作",
+		"nativeText": "tôi đã đang tìm kiếm một công việc mới",
 		"english": "I was looking for a new job",
 		"soundmark": "/aɪ/ /wəz/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /ə/ /nu/ /dʒɑb/"
 	},
 	{
-		"chinese": "钥匙(复数)",
+		"nativeText": "những chiếc chìa khóa",
 		"english": "keys",
 		"soundmark": "/kiz/"
 	},
 	{
-		"chinese": "我的钥匙",
+		"nativeText": "chìa khóa của tôi",
 		"english": "my keys",
 		"soundmark": "/maɪ/ /kiz/"
 	},
 	{
-		"chinese": "我(过去)正在寻找我的钥匙",
+		"nativeText": "tôi đã đang tìm chìa khóa của tôi",
 		"english": "I was looking for my keys",
 		"soundmark": "/aɪ/ /wəz/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm thấy",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "我的钥匙",
+		"nativeText": "chìa khóa của tôi",
 		"english": "my keys",
 		"soundmark": "/maɪ/ /kiz/"
 	},
 	{
-		"chinese": "找到我的钥匙",
+		"nativeText": "tìm thấy chìa khóa của tôi",
 		"english": "to find my keys",
 		"soundmark": "/tə/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "能",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "我能找到我的钥匙",
+		"nativeText": "tôi có thể tìm thấy chìa khóa của tôi",
 		"english": "I can find my keys",
 		"soundmark": "/aɪ/ /kæn/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "不能",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "我不能找到我的钥匙",
+		"nativeText": "tôi không thể tìm thấy chìa khóa của tôi",
 		"english": "I can't find my keys",
 		"soundmark": "/aɪ/ /kænt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是我不能找到我的钥匙",
+		"nativeText": "nhưng tôi không thể tìm thấy chìa khóa của tôi",
 		"english": "but I can't find my keys",
 		"soundmark": "/bʌt/ /aɪ/ /kænt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "但是我(过去)不能找到我的钥匙",
+		"nativeText": "nhưng tôi đã không thể tìm thấy chìa khóa của tôi",
 		"english": "but I couldn't find my keys",
 		"soundmark": "/bʌt/ /aɪ/ /kʊdnt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "我(过去)正在寻找我的钥匙但是我(过去)不能找到我的钥匙",
+		"nativeText": "tôi đã đang tìm chìa khóa của tôi nhưng tôi đã không thể tìm thấy chìa khóa của tôi",
 		"english": "I was looking for my keys but I couldn't find my keys",
 		"soundmark": "/aɪ/ /wəz/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /maɪ/ /kiz/ /bʌt/ /aɪ/ /kʊdnt/ /faɪnd/ /maɪ/ /kiz/"
 	},
 	{
-		"chinese": "它们",
+		"nativeText": "chúng",
 		"english": "them",
 		"soundmark": "/ðəm/"
 	},
 	{
-		"chinese": "我(过去)正在寻找我的钥匙但是我(过去)不能找到它们",
+		"nativeText": "tôi đã đang tìm chìa khóa của tôi nhưng tôi đã không thể tìm thấy chúng",
 		"english": "I was looking for my keys but I couldn't find them",
 		"soundmark": "/aɪ/ /wəz/ /stɪl/ /ˈlʊkɪŋ/ /fɝ/ /maɪ/ /kiz/ /bʌt/ /aɪ/ /kʊdnt/ /faɪnd/ /ðəm/"
 	},
 	{
-		"chinese": "寻找",
+		"nativeText": "tìm kiếm",
 		"english": "look for",
 		"soundmark": "/lʊk/ /fɝ/"
 	},
 	{
-		"chinese": "寻找(ing形式)",
+		"nativeText": "đang tìm kiếm (dạng ing)",
 		"english": "looking for",
 		"soundmark": "/ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在寻找",
+		"nativeText": "đang tìm kiếm",
 		"english": "be looking for",
 		"soundmark": "/bi/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你(现在)正在寻找",
+		"nativeText": "bạn đang tìm kiếm",
 		"english": "you are looking for",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "你(现在)正在寻找我",
+		"nativeText": "bạn đang tìm tôi",
 		"english": "you are looking for me",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "听见；听说",
+		"nativeText": "nghe; nghe nói",
 		"english": "to hear",
 		"soundmark": "/tə/ /hɪr/"
 	},
 	{
-		"chinese": "我听说",
+		"nativeText": "tôi nghe nói",
 		"english": "I hear",
 		"soundmark": "/aɪ/ /hɪr/"
 	},
 	{
-		"chinese": "我听说你(现在)正在寻找我",
+		"nativeText": "tôi nghe nói bạn đang tìm tôi",
 		"english": "I hear you are looking for me",
 		"soundmark": "/aɪ/ /hɪr/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "人",
+		"nativeText": "người",
 		"english": "person",
 		"soundmark": "/'pɝsn/"
 	},
 	{
-		"chinese": "那个人",
+		"nativeText": "người đó",
 		"english": "the person",
 		"soundmark": "/ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "你(现在)正在寻找那个人",
+		"nativeText": "bạn đang tìm người đó",
 		"english": "you are looking for the person",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "我是",
+		"nativeText": "tôi là",
 		"english": "I am",
 		"soundmark": "/aɪ/ /æm/"
 	},
 	{
-		"chinese": "我是那个人",
+		"nativeText": "tôi là người đó",
 		"english": "I am the person",
 		"soundmark": "/aɪ/ /æm/ /ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "我不是那个人",
+		"nativeText": "tôi không phải là người đó",
 		"english": "I am not the person",
 		"soundmark": "/aɪ/ /æm/ /nɑt/ /ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "你(现在)正在寻找",
+		"nativeText": "bạn đang tìm kiếm",
 		"english": "you are looking for",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "那个人",
+		"nativeText": "người đó",
 		"english": "the person",
 		"soundmark": "/ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "你(现在)正在寻找那个人",
+		"nativeText": "bạn đang tìm người đó",
 		"english": "you are looking for the person",
 		"soundmark": "/ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "你(现在)正在寻找的那个人",
+		"nativeText": "người mà bạn đang tìm",
 		"english": "the person you are looking for",
 		"soundmark": "/ðə/ /'pɝsn/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "我是那个人",
+		"nativeText": "tôi là người đó",
 		"english": "I am the person",
 		"soundmark": "/aɪ/ /æm/ /ðə/ /'pɝsn/"
 	},
 	{
-		"chinese": "我是你(现在)正在寻找的那个人",
+		"nativeText": "tôi là người mà bạn đang tìm",
 		"english": "I am the person you are looking for",
 		"soundmark": "/aɪ/ /æm/ /ðə/ /'pɝsn/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "我不是你(现在)正在寻找的那个人",
+		"nativeText": "tôi không phải là người mà bạn đang tìm",
 		"english": "I am not the person you are looking for",
 		"soundmark": "/aɪ/ /æm/ /nɑt/ /ðə/ /'pɝsn/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是我不是你(现在)正在寻找的那个人",
+		"nativeText": "nhưng tôi không phải là người mà bạn đang tìm",
 		"english": "but I am not the person you are looking for",
 		"soundmark": "/bʌt/ /aɪ/ /æm/ /nɑt/ /ðə/ /'pɝsn/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "我听说你(现在)正在寻找我",
+		"nativeText": "tôi nghe nói bạn đang tìm tôi",
 		"english": "I hear you are looking for me",
 		"soundmark": "/aɪ/ /hɪr/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我听说你(现在)正在寻找我但是我不是你(现在)正在寻找的那个人",
+		"nativeText": "tôi nghe nói bạn đang tìm tôi nhưng tôi không phải là người mà bạn đang tìm",
 		"english": "I hear you are looking for me but I am not the person you are looking for",
 		"soundmark": "/aɪ/ /hɪr/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/ /bʌt/ /aɪ/ /æm/ /nɑt/ /ðə/ /'pɝsn/ /ju/ /ɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "听见；听说",
+		"nativeText": "nghe; nghe nói",
 		"english": "to hear",
 		"soundmark": "/tə/ /hɪr/"
 	},
 	{
-		"chinese": "我(过去)听说",
+		"nativeText": "tôi đã nghe nói",
 		"english": "I heard",
 		"soundmark": "/aɪ/ /hɚd/"
 	},
 	{
-		"chinese": "你(过去)正在寻找我",
+		"nativeText": "bạn đã đang tìm tôi",
 		"english": "you were looking for me",
 		"soundmark": "/ju/ /wɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我(过去)听说你(过去)正在寻找我",
+		"nativeText": "tôi đã nghe nói bạn đã đang tìm tôi",
 		"english": "I heard you were looking for me",
 		"soundmark": "/aɪ/ /hɚd/ /ju/ /wɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "但是我(过去)不是你(过去)正在寻找的那个人",
+		"nativeText": "nhưng tôi đã không phải là người mà bạn đã đang tìm",
 		"english": "but I was not the person you were looking for",
 		"soundmark": "/bʌt/ /aɪ/ /wəz/ /nɑt/ /ðə/ /'pɝsn/ /ju/ /wɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "我(过去)听说你(过去)正在寻找我但是我(过去)不是你(过去)正在寻找的那个人",
+		"nativeText": "tôi đã nghe nói bạn đã đang tìm tôi nhưng tôi đã không phải là người mà bạn đã đang tìm",
 		"english": "I heard you were looking for me but I was not the person you were looking for",
 		"soundmark": "/aɪ/ /hɚd/ /ju/ /wɚ/ /ˈlʊkɪŋ/ /fɝ/ /mi/ /bʌt/ /aɪ/ /wəz/ /nɑt/ /ðə/ /'pɝsn/ /ju/ /wɚ/ /ˈlʊkɪŋ/ /fɝ/"
 	}

@@ -1,1101 +1,1101 @@
 [
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "待着；留下",
+		"nativeText": "ở lại",
 		"english": "to stay",
 		"soundmark": "/tə/ /ste/"
 	},
 	{
-		"chinese": "我想要待着",
+		"nativeText": "tôi muốn ở lại",
 		"english": "I want to stay",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ste/"
 	},
 	{
-		"chinese": "这里",
+		"nativeText": "đây",
 		"english": "here",
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "我想要待在这里",
+		"nativeText": "tôi muốn ở lại đây",
 		"english": "I want to stay here",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "和你一起",
+		"nativeText": "với bạn",
 		"english": "with you",
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我想要和你一起待在这里",
+		"nativeText": "tôi muốn ở lại đây với bạn",
 		"english": "I want to stay here with you",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我不想和你一起待在这里",
+		"nativeText": "tôi không muốn ở lại đây với bạn",
 		"english": "I don't want to stay here with you",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "计划；打算",
+		"nativeText": "dự định",
 		"english": "plan",
 		"soundmark": "/plæn/"
 	},
 	{
-		"chinese": "我打算",
+		"nativeText": "tôi dự định",
 		"english": "I plan",
 		"soundmark": "/aɪ/ /plæn/"
 	},
 	{
-		"chinese": "我打算待在这里",
+		"nativeText": "tôi dự định ở lại đây",
 		"english": "I plan to stay here",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "和你一起",
+		"nativeText": "với bạn",
 		"english": "with you",
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我打算和你一起待在这里",
+		"nativeText": "tôi dự định ở lại đây với bạn",
 		"english": "I plan to stay here with you",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我不打算和你一起待在这里",
+		"nativeText": "tôi không dự định ở lại đây với bạn",
 		"english": "I don't plan to stay here with you",
 		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "想要知道",
+		"nativeText": "muốn biết",
 		"english": "want to know",
 		"soundmark": "/wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "他们想要知道",
+		"nativeText": "họ muốn biết",
 		"english": "they want to know",
 		"soundmark": "/ðe/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "只是；仅仅",
+		"nativeText": "chỉ",
 		"english": "just",
 		"soundmark": "/dʒʌst/"
 	},
 	{
-		"chinese": "他们只是想要知道",
+		"nativeText": "họ chỉ muốn biết",
 		"english": "they just want to know",
 		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "是否",
+		"nativeText": "có hay không",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "他们只是想要知道是否我打算和你一起待在这里",
+		"nativeText": "họ chỉ muốn biết có hay không tôi dự định ở lại đây với bạn",
 		"english": "they just want to know if I plan to stay here with you",
 		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ɪf/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "原因",
+		"nativeText": "lý do",
 		"english": "the reason",
 		"soundmark": "/ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "他们只是想要知道原因",
+		"nativeText": "họ chỉ muốn biết lý do",
 		"english": "they just want to know the reason",
 		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/"
 	},
 	{
-		"chinese": "为什么",
+		"nativeText": "tại sao",
 		"english": "why",
 		"soundmark": "/waɪ/"
 	},
 	{
-		"chinese": "他们只是想要知道原因为什么我不打算和你一起待在这里",
+		"nativeText": "họ chỉ muốn biết lý do tại sao tôi không dự định ở lại đây với bạn",
 		"english": "they just want to know the reason why I don't plan to stay here with you",
 		"soundmark": "/ðe/ /dʒʌst/ /wɑnt/ /tə/ /no/ /ðə/ /ˈrizən/ /waɪ/ /aɪ/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "你打算",
+		"nativeText": "bạn dự định",
 		"english": "you plan",
 		"soundmark": "/ju/ /plæn/"
 	},
 	{
-		"chinese": "你打算待在这里",
+		"nativeText": "bạn dự định ở lại đây",
 		"english": "you plan to stay here",
 		"soundmark": "/ju/ /plæn/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "和我一起",
+		"nativeText": "với tôi",
 		"english": "with me",
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "你打算和我一起待在这里",
+		"nativeText": "bạn dự định ở lại đây với tôi",
 		"english": "you plan to stay here with me",
 		"soundmark": "/ju/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "你不打算和我一起待在这里",
+		"nativeText": "bạn không dự định ở lại đây với tôi",
 		"english": "you don't plan to stay here with me",
 		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "和他一起",
+		"nativeText": "với anh ấy",
 		"english": "with him",
 		"soundmark": "/wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "你打算和他一起待在这里",
+		"nativeText": "bạn dự định ở lại đây với anh ấy",
 		"english": "you plan to stay here with him",
 		"soundmark": "/ju/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "你不打算和他一起待在这里",
+		"nativeText": "bạn không dự định ở lại đây với anh ấy",
 		"english": "you don't plan to stay here with him",
 		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "we",
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们打算和他一起待在这里",
+		"nativeText": "chúng ta dự định ở lại đây với anh ấy",
 		"english": "we plan to stay here with him",
 		"soundmark": "/wi/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我们不打算和他一起待在这里",
+		"nativeText": "chúng ta không dự định ở lại đây với anh ấy",
 		"english": "we don't plan to stay here with him",
 		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们打算和他一起待在这里",
+		"nativeText": "họ dự định ở lại đây với anh ấy",
 		"english": "they plan to stay here with him",
 		"soundmark": "/ðe/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "他们不打算和他一起待在这里",
+		"nativeText": "họ không dự định ở lại đây với anh ấy",
 		"english": "they don't plan to stay here with him",
 		"soundmark": "/ðe/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/ /him/"
 	},
 	{
-		"chinese": "和我们一起",
+		"nativeText": "với chúng tôi",
 		"english": "with us",
 		"soundmark": "/wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "他们打算和我们一起待在这里",
+		"nativeText": "họ dự định ở lại đây với chúng tôi",
 		"english": "they plan to stay here with us",
 		"soundmark": "/ðe/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "他们不打算和我们一起待在这里",
+		"nativeText": "họ không dự định ở lại đây với chúng tôi",
 		"english": "they don't plan to stay here with us",
 		"soundmark": "/ðe/ /dont/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "他打算",
+		"nativeText": "anh ấy dự định",
 		"english": "he plans",
 		"soundmark": "/hi/ /plænz/"
 	},
 	{
-		"chinese": "他打算和我们一起待在这里",
+		"nativeText": "anh ấy dự định ở lại đây với chúng tôi",
 		"english": "he plans to stay here with us",
 		"soundmark": "/hi/ /plænz/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "他不打算和我们一起待在这里",
+		"nativeText": "anh ấy không dự định ở lại đây với chúng tôi",
 		"english": "he doesn't plan to stay here with us",
 		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "和他们一起",
+		"nativeText": "với họ",
 		"english": "with them",
 		"soundmark": "/wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "他打算和他们一起待在这里",
+		"nativeText": "anh ấy dự định ở lại đây với họ",
 		"english": "he plans to stay here with them",
 		"soundmark": "/hi/ /plænz/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "他不打算和他们一起待在这里",
+		"nativeText": "anh ấy không dự định ở lại đây với họ",
 		"english": "he doesn't plan to stay here with them",
 		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "她打算",
+		"nativeText": "cô ấy dự định",
 		"english": "she plans",
 		"soundmark": "/ʃi/ /plænz/"
 	},
 	{
-		"chinese": "她打算和他们一起待在这里",
+		"nativeText": "cô ấy dự định ở lại đây với họ",
 		"english": "she plans to stay here with them",
 		"soundmark": "/ʃi/ /plænz/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "她不打算和他们一起待在这里",
+		"nativeText": "cô ấy không dự định ở lại đây với họ",
 		"english": "she doesn't plan to stay here with them",
 		"soundmark": "/ʃi/ /ˈdʌznt/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "星荣打算",
+		"nativeText": "Xingrong dự định",
 		"english": "Xingrong plans",
 		"soundmark": "/plænz/"
 	},
 	{
-		"chinese": "星荣打算和小月亮待在这里",
+		"nativeText": "Xingrong dự định ở lại đây với Xiaoyueliang",
 		"english": "Xingrong plans to stay here with Xiaoyueliang",
 		"soundmark": "/plænz/ /tə/ /ste/ /hɪr/ /wɪð/"
 	},
 	{
-		"chinese": "离开",
+		"nativeText": "rời đi",
 		"english": "to leave",
 		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "想要",
+		"nativeText": "muốn",
 		"english": "want",
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "我想要离开",
+		"nativeText": "tôi muốn rời đi",
 		"english": "I want to leave",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /liv/"
 	},
 	{
-		"chinese": "我不想离开",
+		"nativeText": "tôi không muốn rời đi",
 		"english": "I don't want to leave",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /liv/"
 	},
 	{
-		"chinese": "打算；计划",
+		"nativeText": "dự định",
 		"english": "plan",
 		"soundmark": "/plæn/"
 	},
 	{
-		"chinese": "我打算离开",
+		"nativeText": "tôi dự định rời đi",
 		"english": "I plan to leave",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/"
 	},
 	{
-		"chinese": "这里",
+		"nativeText": "đây",
 		"english": "here",
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "我打算离开这里",
+		"nativeText": "tôi dự định rời khỏi đây",
 		"english": "I plan to leave here",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/ /hɪr/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "我打算明天离开这里",
+		"nativeText": "tôi dự định rời khỏi đây ngày mai",
 		"english": "I plan to leave here tomorrow",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/ /hɪr/ /tə'mɔro/"
 	},
 	{
-		"chinese": "晚上",
+		"nativeText": "ban đêm",
 		"english": "night",
 		"soundmark": "/naɪt/"
 	},
 	{
-		"chinese": "我打算明天晚上离开这里",
+		"nativeText": "tôi dự định rời khỏi đây tối mai",
 		"english": "I plan to leave here tomorrow night",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /liv/ /hɪr/ /tə'mɔro/ /naɪt/"
 	},
 	{
-		"chinese": "我不打算明天晚上离开这里",
+		"nativeText": "tôi không dự định rời khỏi đây tối mai",
 		"english": "I don't plan to leave here tomorrow night",
 		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /liv/ /hɪr/ /tə'mɔro/ /naɪt/"
 	},
 	{
-		"chinese": "离开",
+		"nativeText": "rời đi",
 		"english": "to leave",
 		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "这座城市",
+		"nativeText": "thành phố",
 		"english": "the city",
 		"soundmark": "/ðə/ /'sɪti/"
 	},
 	{
-		"chinese": "离开这座城市",
+		"nativeText": "rời khỏi thành phố",
 		"english": "to leave the city",
 		"soundmark": "/tə/ /liv/ /ðə/ /'sɪti/"
 	},
 	{
-		"chinese": "你打算",
+		"nativeText": "bạn dự định",
 		"english": "you plan",
 		"soundmark": "/ju/ /plæn/"
 	},
 	{
-		"chinese": "你打算离开这座城市",
+		"nativeText": "bạn dự định rời khỏi thành phố",
 		"english": "you plan to leave the city",
 		"soundmark": "/ju/ /plæn/ /tə/ /liv/ /ðə/ /'sɪti/"
 	},
 	{
-		"chinese": "下一个",
+		"nativeText": "kế tiếp",
 		"english": "next",
 		"soundmark": "/nɛkst/"
 	},
 	{
-		"chinese": "周；星期",
+		"nativeText": "tuần",
 		"english": "week",
 		"soundmark": "/wik/"
 	},
 	{
-		"chinese": "下周",
+		"nativeText": "tuần tới",
 		"english": "next week",
 		"soundmark": "/nɛkst/ /wik/"
 	},
 	{
-		"chinese": "你打算下周离开这座城市",
+		"nativeText": "bạn dự định rời khỏi thành phố tuần tới",
 		"english": "you plan to leave the city next week",
 		"soundmark": "/ju/ /plæn/ /tə/ /liv/ /ðə/ /'sɪti/ /nɛkst/ /wik/"
 	},
 	{
-		"chinese": "你不打算下周离开这座城市",
+		"nativeText": "bạn không dự định rời khỏi thành phố tuần tới",
 		"english": "you don't plan to leave the city next week",
 		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /liv/ /ðə/ /'sɪti/ /nɛkst/ /wik/"
 	},
 	{
-		"chinese": "她打算",
+		"nativeText": "cô ấy dự định",
 		"english": "she plans",
 		"soundmark": "/ʃi/ /plænz/"
 	},
 	{
-		"chinese": "离开",
+		"nativeText": "rời đi",
 		"english": "to leave",
 		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "这个国家",
+		"nativeText": "đất nước",
 		"english": "the country",
 		"soundmark": "/ðə/ /'kʌntri/"
 	},
 	{
-		"chinese": "离开这个国家",
+		"nativeText": "rời khỏi đất nước",
 		"english": "to leave the country",
 		"soundmark": "/tə/ /liv/ /ðə/ /'kʌntri/"
 	},
 	{
-		"chinese": "她打算离开这个国家",
+		"nativeText": "cô ấy dự định rời khỏi đất nước",
 		"english": "she plans to leave the country",
 		"soundmark": "/ʃi/ /plænz/ /tə/ /liv/ /ðə/ /'kʌntri/"
 	},
 	{
-		"chinese": "下一个",
+		"nativeText": "kế tiếp",
 		"english": "next",
 		"soundmark": "/nɛkst/"
 	},
 	{
-		"chinese": "月",
+		"nativeText": "tháng",
 		"english": "month",
 		"soundmark": "/mʌnθ/"
 	},
 	{
-		"chinese": "下个月",
+		"nativeText": "tháng tới",
 		"english": "next month",
 		"soundmark": "/nɛkst/ /mʌnθ/"
 	},
 	{
-		"chinese": "她打算下个月离开这个国家",
+		"nativeText": "cô ấy dự định rời khỏi đất nước tháng tới",
 		"english": "she plans to leave the country next month",
 		"soundmark": "/ʃi/ /plænz/ /tə/ /liv/ /ðə/ /'kʌntri/ /nɛkst/ /mʌnθ/"
 	},
 	{
-		"chinese": "她不打算下个月离开这个国家",
+		"nativeText": "cô ấy không dự định rời khỏi đất nước tháng tới",
 		"english": "she doesn't plan to leave the country next month",
 		"soundmark": "/ʃi/ /ˈdʌznt/ /plæn/ /tə/ /liv/ /ðə/ /'kʌntri/ /nɛkst/ /mʌnθ/"
 	},
 	{
-		"chinese": "我们打算",
+		"nativeText": "chúng ta dự định",
 		"english": "we plan",
 		"soundmark": "/wi/ /plæn/"
 	},
 	{
-		"chinese": "离开这里",
+		"nativeText": "rời khỏi đây",
 		"english": "to leave here",
 		"soundmark": "/tə/ /liv/ /hɪr/"
 	},
 	{
-		"chinese": "我们打算离开这里",
+		"nativeText": "chúng ta dự định rời khỏi đây",
 		"english": "we plan to leave here",
 		"soundmark": "/wi/ /plæn/ /tə/ /liv/ /hɪr/"
 	},
 	{
-		"chinese": "我们不打算离开这里",
+		"nativeText": "chúng ta không dự định rời khỏi đây",
 		"english": "we don't plan to leave here",
 		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /liv/ /hɪr/"
 	},
 	{
-		"chinese": "早点",
+		"nativeText": "sớm",
 		"english": "early",
 		"soundmark": "/ˈɚli/"
 	},
 	{
-		"chinese": "我们打算早点离开这里",
+		"nativeText": "chúng ta dự định rời khỏi đây sớm",
 		"english": "we plan to leave here early",
 		"soundmark": "/wi/ /plæn/ /tə/ /liv/ /hɪr/ /ˈɚli/"
 	},
 	{
-		"chinese": "可能",
+		"nativeText": "có thể",
 		"english": "possible",
 		"soundmark": "/'pɑsəbl/"
 	},
 	{
-		"chinese": "尽早；尽可能地早",
+		"nativeText": "càng sớm càng tốt",
 		"english": "as early as possible",
 		"soundmark": "/əz/ /ˈɚli/ /əz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "我们打算尽早离开这里",
+		"nativeText": "chúng ta dự định rời khỏi đây càng sớm càng tốt",
 		"english": "we plan to leave here as early as possible",
 		"soundmark": "/wi/ /plæn/ /tə/ /liv/ /hɪr/ /əz/ /ˈɚli/ /əz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "支付",
+		"nativeText": "trả tiền",
 		"english": "to pay",
 		"soundmark": "/tə/ /pe/"
 	},
 	{
-		"chinese": "账单",
+		"nativeText": "hóa đơn",
 		"english": "the bill",
 		"soundmark": "/ðə/ /bɪl/"
 	},
 	{
-		"chinese": "支付账单",
+		"nativeText": "trả hóa đơn",
 		"english": "to pay the bill",
 		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "我需要",
+		"nativeText": "tôi cần",
 		"english": "I need",
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我需要支付账单",
+		"nativeText": "tôi cần trả hóa đơn",
 		"english": "I need to pay the bill",
 		"soundmark": "/aɪ/ /nid/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "我不需要支付账单",
+		"nativeText": "tôi không cần trả hóa đơn",
 		"english": "I don't need to pay the bill",
 		"soundmark": "/aɪ/ /dont/ /nid/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "我打算",
+		"nativeText": "tôi dự định",
 		"english": "I plan",
 		"soundmark": "/aɪ/ /plæn/"
 	},
 	{
-		"chinese": "我打算支付账单",
+		"nativeText": "tôi dự định trả hóa đơn",
 		"english": "I plan to pay the bill",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "为你",
+		"nativeText": "cho bạn",
 		"english": "for you",
 		"soundmark": "/fɝ/ /ju/"
 	},
 	{
-		"chinese": "我打算为你支付账单",
+		"nativeText": "tôi dự định trả hóa đơn cho bạn",
 		"english": "I plan to pay the bill for you",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ju/"
 	},
 	{
-		"chinese": "我不打算为你支付账单",
+		"nativeText": "tôi không dự định trả hóa đơn cho bạn",
 		"english": "I don't plan to pay the bill for you",
 		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ju/"
 	},
 	{
-		"chinese": "你打算支付账单",
+		"nativeText": "bạn dự định trả hóa đơn",
 		"english": "you plan to pay the bill",
 		"soundmark": "/ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "为我",
+		"nativeText": "cho tôi",
 		"english": "for me",
 		"soundmark": "/fɝ/ /mi/"
 	},
 	{
-		"chinese": "你打算为我支付账单",
+		"nativeText": "bạn dự định trả hóa đơn cho tôi",
 		"english": "you plan to pay the bill for me",
 		"soundmark": "/ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "你不打算为我支付账单",
+		"nativeText": "bạn không dự định trả hóa đơn cho tôi",
 		"english": "you don't plan to pay the bill for me",
 		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我想要知道",
+		"nativeText": "tôi muốn biết",
 		"english": "I want to know",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "是否",
+		"nativeText": "có hay không",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "我想要知道是否你打算为我支付账单",
+		"nativeText": "tôi muốn biết có hay không bạn dự định trả hóa đơn cho tôi",
 		"english": "I want to know if you plan to pay the bill for me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "他打算",
+		"nativeText": "anh ấy dự định",
 		"english": "he plans",
 		"soundmark": "/hi/ /plænz/"
 	},
 	{
-		"chinese": "他打算为我支付账单",
+		"nativeText": "anh ấy dự định trả hóa đơn cho tôi",
 		"english": "he plans to pay the bill for me",
 		"soundmark": "/hi/ /plænz/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "他不打算为我支付账单",
+		"nativeText": "anh ấy không dự định trả hóa đơn cho tôi",
 		"english": "he doesn't plan to pay the bill for me",
 		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /mi/"
 	},
 	{
-		"chinese": "为他",
+		"nativeText": "cho anh ấy",
 		"english": "for him",
 		"soundmark": "/fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "我打算为他支付账单",
+		"nativeText": "tôi dự định trả hóa đơn cho anh ấy",
 		"english": "I plan to pay the bill for him",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "我不打算为他支付账单",
+		"nativeText": "tôi không dự định trả hóa đơn cho anh ấy",
 		"english": "I don't plan to pay the bill for him",
 		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "这件事是重要的",
+		"nativeText": "nó quan trọng",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "rất",
 		"english": "very",
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "这件事是非常重要的",
+		"nativeText": "nó rất quan trọng",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为这件事是非常重要的",
+		"nativeText": "bởi vì nó rất quan trọng",
 		"english": "because it is very important",
 		"soundmark": "/bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我打算为他支付账单因为这件事是非常重要的",
+		"nativeText": "tôi dự định trả hóa đơn cho anh ấy bởi vì nó rất quan trọng",
 		"english": "I plan to pay the bill for him because it is very important",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我需要",
+		"nativeText": "tôi cần",
 		"english": "I need",
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我需要做这件事",
+		"nativeText": "tôi cần làm việc đó",
 		"english": "I need to do it",
 		"soundmark": "/aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "而且",
+		"nativeText": "và",
 		"english": "and",
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "而且我需要做这件事",
+		"nativeText": "và tôi cần làm việc đó",
 		"english": "and I need to do it",
 		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "我打算为他支付账单因为这件事是非常重要的而且我需要做这件事",
+		"nativeText": "tôi dự định trả hóa đơn cho anh ấy bởi vì nó rất quan trọng và tôi cần làm việc đó",
 		"english": "I plan to pay the bill for him because it is very important and I need to do it",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɪm/ /bɪ'kɔz/ /ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /ənd/ /aɪ/ /nid/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "为她",
+		"nativeText": "cho cô ấy",
 		"english": "for her",
 		"soundmark": "/fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "他打算为她支付账单",
+		"nativeText": "anh ấy dự định trả hóa đơn cho cô ấy",
 		"english": "he plans to pay the bill for her",
 		"soundmark": "/hi/ /plænz/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "他不打算为她支付账单",
+		"nativeText": "anh ấy không dự định trả hóa đơn cho cô ấy",
 		"english": "he doesn't plan to pay the bill for her",
 		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "我们打算",
+		"nativeText": "chúng ta dự định",
 		"english": "we plan",
 		"soundmark": "/wi/ /plæn/"
 	},
 	{
-		"chinese": "我们打算为她支付账单",
+		"nativeText": "chúng ta dự định trả hóa đơn cho cô ấy",
 		"english": "we plan to pay the bill for her",
 		"soundmark": "/wi/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "我们不打算为她支付账单",
+		"nativeText": "chúng ta không dự định trả hóa đơn cho cô ấy",
 		"english": "we don't plan to pay the bill for her",
 		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /hɚ/"
 	},
 	{
-		"chinese": "为他们",
+		"nativeText": "cho họ",
 		"english": "for them",
 		"soundmark": "/fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我们打算为他们支付账单",
+		"nativeText": "chúng ta dự định trả hóa đơn cho họ",
 		"english": "we plan to pay the bill for them",
 		"soundmark": "/wi/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我们不打算为他们支付账单",
+		"nativeText": "chúng ta không dự định trả hóa đơn cho họ",
 		"english": "we don't plan to pay the bill for them",
 		"soundmark": "/wi/ /dont/ /plæn/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "旅行",
+		"nativeText": "du lịch",
 		"english": "to travel",
 		"soundmark": "/tə/ /'trævl/"
 	},
 	{
-		"chinese": "世界",
+		"nativeText": "thế giới",
 		"english": "the world",
 		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "周游世界",
+		"nativeText": "du lịch vòng quanh thế giới",
 		"english": "to travel the world",
 		"soundmark": "/tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "我打算",
+		"nativeText": "tôi dự định",
 		"english": "I plan",
 		"soundmark": "/aɪ/ /plæn/"
 	},
 	{
-		"chinese": "我打算周游世界",
+		"nativeText": "tôi dự định du lịch vòng quanh thế giới",
 		"english": "I plan to travel the world",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "和你一起",
+		"nativeText": "với bạn",
 		"english": "with you",
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我打算和你一起周游世界",
+		"nativeText": "tôi dự định du lịch vòng quanh thế giới với bạn",
 		"english": "I plan to travel the world with you",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "下一个",
+		"nativeText": "kế tiếp",
 		"english": "next",
 		"soundmark": "/nɛkst/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "明年",
+		"nativeText": "năm tới",
 		"english": "next year",
 		"soundmark": "/nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "我打算明年和你一起周游世界",
+		"nativeText": "tôi dự định năm tới du lịch vòng quanh thế giới với bạn",
 		"english": "I plan to travel the world with you next year",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /ju/ /nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "我不打算明年和你一起周游世界",
+		"nativeText": "tôi không dự định năm tới du lịch vòng quanh thế giới với bạn",
 		"english": "I don't plan to travel the world with you next year",
 		"soundmark": "/aɪ/ /dont/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /ju/ /nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "和我一起",
+		"nativeText": "với tôi",
 		"english": "with me",
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "你打算明年和我一起周游世界",
+		"nativeText": "bạn dự định năm tới du lịch vòng quanh thế giới với tôi",
 		"english": "you plan to travel the world with me next year",
 		"soundmark": "/ju/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /mi/ /nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "你不打算明年和我一起周游世界",
+		"nativeText": "bạn không dự định năm tới du lịch vòng quanh thế giới với tôi",
 		"english": "you don't plan to travel the world with me next year",
 		"soundmark": "/ju/ /dont/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /mi/ /nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "他打算",
+		"nativeText": "anh ấy dự định",
 		"english": "he plans",
 		"soundmark": "/hi/ /plænz/"
 	},
 	{
-		"chinese": "和她一起",
+		"nativeText": "với cô ấy",
 		"english": "with her",
 		"soundmark": "/wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "他打算明年和她一起周游世界",
+		"nativeText": "anh ấy dự định năm tới du lịch vòng quanh thế giới với cô ấy",
 		"english": "he plans to travel the world with her next year",
 		"soundmark": "/hi/ /plænz/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "他不打算明年和她一起周游世界",
+		"nativeText": "anh ấy không dự định năm tới du lịch vòng quanh thế giới với cô ấy",
 		"english": "he doesn't plan to travel the world with her next year",
 		"soundmark": "/hi/ /ˈdʌznt/ /plæn/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /nɛkst/ /jɪr/"
 	},
 	{
-		"chinese": "想要",
+		"nativeText": "muốn",
 		"english": "want",
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "愿意；委婉地想要",
+		"nativeText": "muốn (lịch sự)",
 		"english": "would like",
 		"soundmark": "/wʊd/ /laɪk/"
 	},
 	{
-		"chinese": "待着；留下",
+		"nativeText": "ở lại",
 		"english": "to stay",
 		"soundmark": "/tə/ /ste/"
 	},
 	{
-		"chinese": "待在这里",
+		"nativeText": "ở lại đây",
 		"english": "to stay here",
 		"soundmark": "/tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "我愿意待在这里",
+		"nativeText": "tôi muốn ở lại đây",
 		"english": "I would like to stay here",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "和你一起",
+		"nativeText": "với bạn",
 		"english": "with you",
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我愿意和你一起待在这里",
+		"nativeText": "tôi muốn ở lại đây với bạn",
 		"english": "I would like to stay here with you",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我不愿意和你一起待在这里",
+		"nativeText": "tôi không muốn ở lại đây với bạn",
 		"english": "I would not like to stay here with you",
 		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "和我一起",
+		"nativeText": "với tôi",
 		"english": "with me",
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "你愿意和我一起待在这里",
+		"nativeText": "bạn muốn ở lại đây với tôi",
 		"english": "you would like to stay here with me",
 		"soundmark": "/ju/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "你不愿意和我一起待在这里",
+		"nativeText": "bạn không muốn ở lại đây với tôi",
 		"english": "you would not like to stay here with me",
 		"soundmark": "/ju/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "和他一起",
+		"nativeText": "với anh ấy",
 		"english": "with him",
 		"soundmark": "/wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "你愿意和他一起待在这里",
+		"nativeText": "bạn muốn ở lại đây với anh ấy",
 		"english": "you would like to stay here with him",
 		"soundmark": "/ju/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "你不愿意和他一起待在这里",
+		"nativeText": "bạn không muốn ở lại đây với anh ấy",
 		"english": "you would not like to stay here with him",
 		"soundmark": "/ju/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我们愿意和他一起待在这里",
+		"nativeText": "chúng ta muốn ở lại đây với anh ấy",
 		"english": "we would like to stay here with him",
 		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "我们不愿意和他一起待在这里",
+		"nativeText": "chúng ta không muốn ở lại đây với anh ấy",
 		"english": "we would not like to stay here with him",
 		"soundmark": "/wi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "和她一起",
+		"nativeText": "với cô ấy",
 		"english": "with her",
 		"soundmark": "/wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "我们愿意和她一起待在这里",
+		"nativeText": "chúng ta muốn ở lại đây với cô ấy",
 		"english": "we would like to stay here with her",
 		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "我们不愿意和她一起待在这里",
+		"nativeText": "chúng ta không muốn ở lại đây với cô ấy",
 		"english": "we would not like to stay here with her",
 		"soundmark": "/wi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "和他们一起",
+		"nativeText": "với họ",
 		"english": "with them",
 		"soundmark": "/wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "我们愿意和他们一起待在这里",
+		"nativeText": "chúng ta muốn ở lại đây với họ",
 		"english": "we would like to stay here with them",
 		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "我们不愿意和他们一起待在这里",
+		"nativeText": "chúng ta không muốn ở lại đây với họ",
 		"english": "we would not like to stay here with them",
 		"soundmark": "/wi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ðəm/"
 	},
 	{
-		"chinese": "他们愿意和她一起待在这里",
+		"nativeText": "họ muốn ở lại đây với cô ấy",
 		"english": "they would like to stay here with her",
 		"soundmark": "/ðe/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "他们不愿意和她一起待在这里",
+		"nativeText": "họ không muốn ở lại đây với cô ấy",
 		"english": "they would not like to stay here with her",
 		"soundmark": "/ðe/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "和我们一起",
+		"nativeText": "với chúng tôi",
 		"english": "with us",
 		"soundmark": "/wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "他们愿意和我们一起待在这里",
+		"nativeText": "họ muốn ở lại đây với chúng tôi",
 		"english": "they would like to stay here with us",
 		"soundmark": "/ðe/ /wʊd/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "他们不愿意和我们一起待在这里",
+		"nativeText": "họ không muốn ở lại đây với chúng tôi",
 		"english": "they would not like to stay here with us",
 		"soundmark": "/ðe/ /wʊd/ /nɑt/ /laɪk/ /tə/ /ste/ /hɪr/ /wɪð/ /ʌs/"
 	},
 	{
-		"chinese": "旅行",
+		"nativeText": "du lịch",
 		"english": "to travel",
 		"soundmark": "/tə/ /'trævl/"
 	},
 	{
-		"chinese": "世界",
+		"nativeText": "thế giới",
 		"english": "the world",
 		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "环游世界",
+		"nativeText": "du lịch vòng quanh thế giới",
 		"english": "to travel the world",
 		"soundmark": "/tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "我愿意环游世界",
+		"nativeText": "tôi muốn du lịch vòng quanh thế giới",
 		"english": "I would like to travel the world",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "和她一起",
+		"nativeText": "với cô ấy",
 		"english": "with her",
 		"soundmark": "/wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "我愿意和她一起环游世界",
+		"nativeText": "tôi muốn du lịch vòng quanh thế giới với cô ấy",
 		"english": "I would like to travel the world with her",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "我不愿意和她一起环游世界",
+		"nativeText": "tôi không muốn du lịch vòng quanh thế giới với cô ấy",
 		"english": "I would not like to travel the world with her",
 		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/"
 	},
 	{
-		"chinese": "我打算",
+		"nativeText": "tôi dự định",
 		"english": "I plan",
 		"soundmark": "/aɪ/ /plæn/"
 	},
 	{
-		"chinese": "我打算待在这里",
+		"nativeText": "tôi dự định ở lại đây",
 		"english": "I plan to stay here",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/"
 	},
 	{
-		"chinese": "和你一起",
+		"nativeText": "với bạn",
 		"english": "with you",
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我打算和你一起待在这里",
+		"nativeText": "tôi dự định ở lại đây với bạn",
 		"english": "I plan to stay here with you",
 		"soundmark": "/aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为我打算和你一起待在这里",
+		"nativeText": "bởi vì tôi dự định ở lại đây với bạn",
 		"english": "because I plan to stay here with you",
 		"soundmark": "/bɪ'kɔz/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我不愿意和她一起环游世界因为我打算和你一起待在这里",
+		"nativeText": "tôi không muốn du lịch vòng quanh thế giới với cô ấy bởi vì tôi dự định ở lại đây với bạn",
 		"english": "I would not like to travel the world with her because I plan to stay here with you",
 		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɚ/ /bɪ'kɔz/ /aɪ/ /plæn/ /tə/ /ste/ /hɪr/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她愿意环游世界",
+		"nativeText": "cô ấy muốn du lịch vòng quanh thế giới",
 		"english": "she would like to travel the world",
 		"soundmark": "/ʃi/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/"
 	},
 	{
-		"chinese": "和他一起",
+		"nativeText": "với anh ấy",
 		"english": "with him",
 		"soundmark": "/wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "她愿意和他一起环游世界",
+		"nativeText": "cô ấy muốn du lịch vòng quanh thế giới với anh ấy",
 		"english": "she would like to travel the world with him",
 		"soundmark": "/ʃi/ /wʊd/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "她不愿意和他一起环游世界",
+		"nativeText": "cô ấy không muốn du lịch vòng quanh thế giới với anh ấy",
 		"english": "she would not like to travel the world with him",
 		"soundmark": "/ʃi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /'trævl/ /ðə/ /wɝld/ /wɪð/ /hɪm/"
 	},
 	{
-		"chinese": "支付",
+		"nativeText": "trả tiền",
 		"english": "to pay",
 		"soundmark": "/tə/ /pe/"
 	},
 	{
-		"chinese": "账单",
+		"nativeText": "hóa đơn",
 		"english": "the bill",
 		"soundmark": "/ðə/ /bɪl/"
 	},
 	{
-		"chinese": "支付账单",
+		"nativeText": "trả hóa đơn",
 		"english": "to pay the bill",
 		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "我愿意支付账单",
+		"nativeText": "tôi muốn trả hóa đơn",
 		"english": "I would like to pay the bill",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "为他们",
+		"nativeText": "cho họ",
 		"english": "for them",
 		"soundmark": "/fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我愿意为他们支付账单",
+		"nativeText": "tôi muốn trả hóa đơn cho họ",
 		"english": "I would like to pay the bill for them",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "我不愿意为他们支付账单",
+		"nativeText": "tôi không muốn trả hóa đơn cho họ",
 		"english": "I would not like to pay the bill for them",
 		"soundmark": "/aɪ/ /wʊd/ /nɑt/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ðəm/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "he",
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他愿意支付账单",
+		"nativeText": "anh ấy muốn trả hóa đơn",
 		"english": "he would like to pay the bill",
 		"soundmark": "/hi/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "为我们",
+		"nativeText": "cho chúng tôi",
 		"english": "for us",
 		"soundmark": "/fɝ/ /ʌs/"
 	},
 	{
-		"chinese": "他愿意为我们支付账单",
+		"nativeText": "anh ấy muốn trả hóa đơn cho chúng tôi",
 		"english": "he would like to pay the bill for us",
 		"soundmark": "/hi/ /wʊd/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ʌs/"
 	},
 	{
-		"chinese": "他不愿意为我们支付账单",
+		"nativeText": "anh ấy không muốn trả hóa đơn cho chúng tôi",
 		"english": "he would not like to pay the bill for us",
 		"soundmark": "/hi/ /wʊd/ /nɑt/ /laɪk/ /tə/ /pe/ /ðə/ /bɪl/ /fɝ/ /ʌs/"
 	}

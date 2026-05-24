@@ -23,7 +23,7 @@ type Statement = typeof statementSchema.$inferInsert;
     })
     .returning({ id: courseSchema.id, order: courseSchema.order, title: courseSchema.title });
 
-  console.log(`创建: id-${course.id} order-${course.order} title-${course.title}`);
+  console.log(`Created: id-${course.id} order-${course.order} title-${course.title}`);
 
   const courseDataJsonText = fs.readFileSync(
     path.resolve(__dirname, `../data/courses/${courseFileName}`),
@@ -43,6 +43,6 @@ type Statement = typeof statementSchema.$inferInsert;
 
   await Promise.all(statementInsertTask);
 
-  console.log("全部创建完成");
+  console.log("All courses created successfully");
   process.exit(0);
 })();

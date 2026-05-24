@@ -30,7 +30,7 @@
         @click="removeItem(item)"
         class="cursor-pointer transition-transform duration-300 hover:scale-110"
       >
-        <UTooltip text="删除">
+        <UTooltip text="Xóa">
           <UIcon
             name="i-ph-trash-bold"
             class="h-5 w-5"

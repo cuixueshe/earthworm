@@ -3,7 +3,7 @@
     class="btn btn-outline btn-sm"
     @click="markStatementAsMastered"
   >
-    掌握
+    Đã thuộc
   </button>
 </template>
 

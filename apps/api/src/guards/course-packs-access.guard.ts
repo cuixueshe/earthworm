@@ -12,7 +12,7 @@ export class CoursePacksAccessGuard implements CanActivate {
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
-    const userId = request.userId; // 从 AuthGuard 中得到的用户信息
+    const userId = request.userId; // User info from AuthGuard
 
     const coursePack = await this.coursePackService.findOne(request.params.coursePackId);
 
@@ -21,13 +21,13 @@ export class CoursePacksAccessGuard implements CanActivate {
     }
 
     if (!userId) {
-      throw new ForbiddenException("这是会员专属内容");
+      throw new ForbiddenException("Đây là nội dung dành riêng cho thành viên");
     }
 
     const isMember = await this.membershipService.isMember(userId);
 
     if (!isMember) {
-      throw new ForbiddenException("这是会员专属内容");
+      throw new ForbiddenException("Đây là nội dung dành riêng cho thành viên");
     }
 
     return true;

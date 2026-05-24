@@ -1,742 +1,712 @@
 [
 	{
-		"chinese": "阅读",
-		"english": "to read",
-		"soundmark": "/tə/ /rid/"
+		"nativeText": "khóa",
+		"english": "to lock",
+		"soundmark": "/tə/ /lɑk/"
 	},
 	{
-		"chinese": "这本书",
-		"english": "the book",
-		"soundmark": "/ðə/ /bʊk/"
+		"nativeText": "cửa",
+		"english": "the door",
+		"soundmark": "/ðə/ /dɔr/"
 	},
 	{
-		"chinese": "阅读这本书",
-		"english": "to read the book",
-		"soundmark": "/tə/ /rid/ /ðə/ /bʊk/"
+		"nativeText": "khóa cửa",
+		"english": "to lock the door",
+		"soundmark": "/lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "阅读这本书(ing形式)",
-		"english": "reading the book",
-		"soundmark": "/'ridɪŋ/ /ðə/ /bʊk/"
+		"nativeText": "quên",
+		"english": "to forget",
+		"soundmark": "/tə/ /fɚ'ɡɛt/"
 	},
 	{
-		"chinese": "完成",
-		"english": "to finish",
-		"soundmark": "/tə/ /'fɪnɪʃ/"
+		"nativeText": "quên khóa cửa",
+		"english": "to forget to lock the door",
+		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "他完成",
-		"english": "he finishes",
-		"soundmark": "/hi/ /'fɪnɪʃɪz/"
+		"nativeText": "đang quên khóa cửa",
+		"english": "forgetting to lock the door",
+		"soundmark": "/fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "他(过去)完成",
-		"english": "he finished",
-		"soundmark": "/hi/ /'fɪnɪʃt/"
+		"nativeText": "thừa nhận",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "他(过去)完成阅读这本书",
-		"english": "he finished reading the book",
-		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/"
+		"nativeText": "họ thừa nhận",
+		"english": "they admit",
+		"soundmark": "/ðe/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "天",
-		"english": "day",
-		"soundmark": "/de/"
+		"nativeText": "họ đã thừa nhận",
+		"english": "they admitted",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "一天",
-		"english": "one day",
-		"soundmark": "/wʌn/ /de/"
+		"nativeText": "họ đã thừa nhận quên khóa cửa",
+		"english": "they admitted forgetting to lock the door",
+		"soundmark": "/ðe/ /ədˈmɪtɪd/ /fɚ'ɡɛtɪŋ/ /tə/ /lɑk/ /ðə/ /dɔr/"
 	},
 	{
-		"chinese": "在一天内",
-		"english": "in one day",
-		"soundmark": "/ɪn/ /wʌn/ /de/"
+		"nativeText": "đèn",
+		"english": "light",
+		"soundmark": "/laɪt/"
 	},
 	{
-		"chinese": "他在一天内完成了阅读这本书",
-		"english": "he finished reading the book in one day",
-		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/ /ɪn/ /wʌn/ /de/"
+		"nativeText": "đỏ",
+		"english": "red",
+		"soundmark": "/rɛd/"
 	},
 	{
-		"chinese": "晚上",
-		"english": "night",
-		"soundmark": "/naɪt/"
+		"nativeText": "đèn đỏ",
+		"english": "a red light",
+		"soundmark": "/ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "在一个晚上内",
-		"english": "in one night",
-		"soundmark": "/ɪn/ /wʌn/ /naɪt/"
+		"nativeText": "chạy",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
 	},
 	{
-		"chinese": "他在一个晚上内完成了阅读这本书",
-		"english": "he finished reading the book in one night",
-		"soundmark": "/hi/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /bʊk/ /ɪn/ /wʌn/ /naɪt/"
+		"nativeText": "chạy đèn đỏ",
+		"english": "to run a red light",
+		"soundmark": "/tə/ /rʌn/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "洗",
-		"english": "to wash",
-		"soundmark": "/tə/ /wɔʃ/"
+		"nativeText": "đang chạy đèn đỏ",
+		"english": "running a red light",
+		"soundmark": "/'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "碟",
-		"english": "dish",
-		"soundmark": "/dɪʃ/"
+		"nativeText": "lái xe",
+		"english": "to drive",
+		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "那些碗碟",
-		"english": "the dishes",
-		"soundmark": "/ðə/ /dɪʃɪz/"
+		"nativeText": "tài xế",
+		"english": "the driver",
+		"soundmark": "/ðə/ /'draɪvɚ/"
 	},
 	{
-		"chinese": "洗那些碗碟",
-		"english": "to wash the dishes",
-		"soundmark": "/tə/ /wɔʃ/ /ðə/ /dɪʃɪz/"
+		"nativeText": "tài xế đã thừa nhận",
+		"english": "the driver admitted",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "洗那些碗碟(ing形式)",
-		"english": "washing the dishes",
-		"soundmark": "/'wɑʃɪŋ/ /ðə/ /dɪʃɪz/"
+		"nativeText": "tài xế đã thừa nhận chạy đèn đỏ",
+		"english": "the driver admitted running a red light",
+		"soundmark": "/ðə/ /'draɪvɚ/ /ədˈmɪtɪd/ /'rʌnɪŋ/ /ə/ /rɛd/ /laɪt/"
 	},
 	{
-		"chinese": "晚饭",
-		"english": "dinner",
-		"soundmark": "/'dɪnɚ/"
+		"nativeText": "câu trả lời",
+		"english": "the answers",
+		"soundmark": "/ði/ /'ænsɚz/"
 	},
 	{
-		"chinese": "在......之后",
-		"english": "after",
-		"soundmark": "/'æftɚ/"
+		"nativeText": "chép",
+		"english": "to copy",
+		"soundmark": "/tə/ /ˈkɑpɪ/"
 	},
 	{
-		"chinese": "在晚饭之后",
-		"english": "after dinner",
-		"soundmark": "/'æftɚ/ /'dɪnɚ/"
+		"nativeText": "chép câu trả lời",
+		"english": "to copy the answers",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/"
 	},
 	{
-		"chinese": "在晚饭之后洗那些碗碟(ing形式)",
-		"english": "washing the dishes after dinner",
-		"soundmark": "/'wɑʃɪŋ/ /ðə/ /dɪʃɪz/ /'æftɚ/ /'dɪnɚ/"
+		"nativeText": "bạn cùng lớp",
+		"english": "classmate",
+		"soundmark": "/'klæsmet/"
 	},
 	{
-		"chinese": "他(过去)完成",
-		"english": "he finished",
-		"soundmark": "/hi/ /'fɪnɪʃt/"
+		"nativeText": "từ",
+		"english": "from",
+		"soundmark": "/frʌm/"
 	},
 	{
-		"chinese": "他在晚饭之后完成了洗碗",
-		"english": "he finished washing the dishes after dinner",
-		"soundmark": "/hi/ /'fɪnɪʃt/ /'wɑʃɪŋ/ /ðə/ /dɪʃɪz/ /'æftɚ/ /'dɪnɚ/"
+		"nativeText": "từ một bạn cùng lớp",
+		"english": "from a classmate",
+		"soundmark": "/frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "作画",
-		"english": "to paint",
-		"soundmark": "/tə/ /pent/"
+		"nativeText": "chép câu trả lời từ một bạn cùng lớp",
+		"english": "to copy the answers from a classmate",
+		"soundmark": "/tə/ /ˈkɑpɪ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "墙",
-		"english": "the wall",
-		"soundmark": "/ðə/ /wɔl/"
+		"nativeText": "đang chép câu trả lời từ một bạn cùng lớp",
+		"english": "copying the answers from a classmate",
+		"soundmark": "/ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "刷墙",
-		"english": "to paint the wall",
-		"soundmark": "/tə/ /pent/ /ðə/ /wɔl/"
+		"nativeText": "học sinh đó",
+		"english": "the student",
+		"soundmark": "/ðə/ /'studnt/"
 	},
 	{
-		"chinese": "刷墙(ing形式)",
-		"english": "painting the wall",
-		"soundmark": "/'pentɪŋ/ /ðə/ /wɔl/"
+		"nativeText": "học sinh đó đã thừa nhận",
+		"english": "the student admitted",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "完成",
-		"english": "to finish",
-		"soundmark": "/tə/ /'fɪnɪʃ/"
+		"nativeText": "học sinh đó đã thừa nhận chép câu trả lời từ một bạn cùng lớp",
+		"english": "the student admitted copying the answers from a classmate",
+		"soundmark": "/ðə/ /'studnt/ /ədˈmɪtɪd/ /ˈkɑpɪɪŋ/ /ði/ /'ænsɚz/ /frʌm/ /ə/ /'klæsmet/"
 	},
 	{
-		"chinese": "他们完成",
-		"english": "they finish",
-		"soundmark": "/ðe/ /'fɪnɪʃ/"
+		"nativeText": "trễ",
+		"english": "late",
+		"soundmark": "/let/"
 	},
 	{
-		"chinese": "他们(过去)完成",
-		"english": "they finished",
-		"soundmark": "/ðe/ /'fɪnɪʃt/"
+		"nativeText": "cô ấy trễ",
+		"english": "she is late",
+		"soundmark": "/ʃi/ /ɪz/ /let/"
 	},
 	{
-		"chinese": "他们完成了刷墙",
-		"english": "they finished painting the wall",
-		"soundmark": "/ðe/ /'fɪnɪʃt/ /'pentɪŋ/ /ðə/ /wɔl/"
+		"nativeText": "gặp mặt",
+		"english": "to meet",
+		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "太阳",
-		"english": "sun",
-		"soundmark": "/sʌn/"
+		"nativeText": "cuộc họp",
+		"english": "meeting",
+		"soundmark": "/'mitɪŋ/"
 	},
 	{
-		"chinese": "日落",
-		"english": "sunset",
-		"soundmark": "/'sʌnsɛt/"
+		"nativeText": "cho",
+		"english": "for",
+		"soundmark": "/fɚ/"
 	},
 	{
-		"chinese": "在......之前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
+		"nativeText": "cho cuộc họp",
+		"english": "for the meeting",
+		"soundmark": "/fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "在日落之前",
-		"english": "before sunset",
-		"soundmark": "/bɪ'fɔr/ /'sʌnsɛt/"
+		"nativeText": "cô ấy trễ cho cuộc họp",
+		"english": "she is late for the meeting",
+		"soundmark": "/ʃi/ /ɪz/ /let/ /fɚ/ /ðə/ /'mitɪŋ/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "他们在落日之前完成了刷墙",
-		"english": "they finished painting the wall before sunset",
-		"soundmark": "/ðe/ /'fɪnɪʃt/ /'pentɪŋ/ /ðə/ /wɔl/ /bɪ'fɔr/ /'sʌnsɛt/"
+		"nativeText": "đang là",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "清理",
-		"english": "to clean",
-		"soundmark": "/tə/ /klin/"
+		"nativeText": "cô ấy đã thừa nhận đã trễ cho cuộc họp",
+		"english": "she admitted being late for the meeting",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /let/ /fɚ/ /ðə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "这个房子",
-		"english": "the house",
-		"soundmark": "/ðə/ /haʊs/"
+		"nativeText": "nói",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
 	},
 	{
-		"chinese": "清理这个房子",
-		"english": "to clean the house",
-		"soundmark": "/tə/ /klin/ /ðə/ /haʊs/"
+		"nativeText": "phát biểu",
+		"english": "speaking",
+		"soundmark": "/'spikɪŋ/"
 	},
 	{
-		"chinese": "清理这个房子(ing形式)",
-		"english": "cleaning the house",
-		"soundmark": "/'klinɪŋ/ /ðə/ /haʊs/"
+		"nativeText": "công khai",
+		"english": "public",
+		"soundmark": "/ˈpʌblɪk/"
 	},
 	{
-		"chinese": "完成",
-		"english": "to finish",
-		"soundmark": "/tə/ /'fɪnɪʃ/"
+		"nativeText": "phát biểu trước công chúng",
+		"english": "public speaking",
+		"soundmark": "/ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "你(过去)完成",
-		"english": "you finished",
-		"soundmark": "/ju/ /'fɪnɪʃt/"
+		"nativeText": "sợ",
+		"english": "afraid",
+		"soundmark": "/ə'fred/"
 	},
 	{
-		"chinese": "你完成了清理这个房子",
-		"english": "you finished cleaning the house",
-		"soundmark": "/ju/ /'fɪnɪʃt/ /'klinɪŋ/ /ðə/ /haʊs/"
+		"nativeText": "cô ấy sợ",
+		"english": "she is afraid",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/"
 	},
 	{
-		"chinese": "你自己",
-		"english": "yourself",
-		"soundmark": "/jɔr'sɛlf/"
+		"nativeText": "cô ấy sợ phát biểu trước công chúng",
+		"english": "she is afraid of public speaking",
+		"soundmark": "/ʃi/ /ɪz/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "通过你自己",
-		"english": "by yourself",
-		"soundmark": "/baɪ/ /jɔr'sɛlf/"
+		"nativeText": "đang là",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "你自己一个人完成了清理这个房子",
-		"english": "you finished cleaning the house by yourself",
-		"soundmark": "/ju/ /'fɪnɪʃt/ /'klinɪŋ/ /ðə/ /haʊs/ /baɪ/ /jɔr'sɛlf/"
+		"nativeText": "cô ấy đã thừa nhận",
+		"english": "she admitted",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "打破",
-		"english": "to break",
-		"soundmark": "/tə/ /brek/"
+		"nativeText": "cô ấy đã thừa nhận sợ phát biểu trước công chúng",
+		"english": "she admitted being afraid of public speaking",
+		"soundmark": "/ʃi/ /ədˈmɪtɪd/ /ˈbiɪŋ/ /ə'fred/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "那个窗户",
-		"english": "the window",
-		"soundmark": "/ðə/ /'wɪndo/"
+		"nativeText": "thức ăn",
+		"english": "food",
+		"soundmark": "/fud/"
 	},
 	{
-		"chinese": "打破那个窗户",
-		"english": "to break the window",
-		"soundmark": "/tə/ /brek/ /ðə/ /'wɪndo/"
+		"nativeText": "rác",
+		"english": "junk",
+		"soundmark": "/dʒʌŋk/"
 	},
 	{
-		"chinese": "一个石头",
-		"english": "a stone",
-		"soundmark": "/ə/ /ston/"
+		"nativeText": "thức ăn rác",
+		"english": "junk food",
+		"soundmark": "/dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "和......一起",
-		"english": "with",
-		"soundmark": "/wɪð/"
+		"nativeText": "ăn",
+		"english": "to eat",
+		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "和一个石头一起",
-		"english": "with a stone",
-		"soundmark": "/wɪð/ /ə/ /ston/"
+		"nativeText": "ăn thức ăn rác",
+		"english": "to eat junk food",
+		"soundmark": "/tə/ /it/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "用一个石头打破那个窗户",
-		"english": "to break the window with a stone",
-		"soundmark": "/tə/ /brek/ /ðə/ /'wɪndo/ /wɪð/ /ə/ /ston/"
+		"nativeText": "đang ăn thức ăn rác",
+		"english": "eating junk food",
+		"soundmark": "/'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "用一个石头打破那个窗户(ing形式)",
-		"english": "breaking the window with a stone",
-		"soundmark": "/'brekɪŋ/ /ðə/ /'wɪndo/ /wɪð/ /ə/ /ston/"
+		"nativeText": "tránh",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "否认",
-		"english": "to deny",
-		"soundmark": "/tə/ /dɪ'naɪ/"
+		"nativeText": "cô ấy tránh",
+		"english": "she avoids",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/"
 	},
 	{
-		"chinese": "他们否认",
-		"english": "they deny",
-		"soundmark": "/ðe/ /dɪ'naɪ/"
+		"nativeText": "cô ấy tránh ăn thức ăn rác",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "他们(过去)否认",
-		"english": "they denied",
-		"soundmark": "/ðe/ /dɪ'naɪd/"
+		"nativeText": "cuộc sống",
+		"english": "life",
+		"soundmark": "/laɪf/"
 	},
 	{
-		"chinese": "他们(过去)否认用一个石头打破那个窗户",
-		"english": "they denied breaking the window with a stone",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /'brekɪŋ/ /ðə/ /'wɪndo/ /wɪð/ /ə/ /ston/"
+		"nativeText": "phong cách",
+		"english": "style",
+		"soundmark": "/staɪl/"
 	},
 	{
-		"chinese": "他(过去)否认",
-		"english": "he denied",
-		"soundmark": "/hi/ /dɪ'naɪd/"
+		"nativeText": "lối sống",
+		"english": "lifestyle",
+		"soundmark": "/'laɪfstaɪl/"
 	},
 	{
-		"chinese": "改变",
-		"english": "to change",
-		"soundmark": "/tə/ /tʃendʒ/"
+		"nativeText": "lành mạnh",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
 	},
 	{
-		"chinese": "想法",
-		"english": "mind",
-		"soundmark": "/maɪnd/"
+		"nativeText": "một lối sống lành mạnh",
+		"english": "a healthy lifestyle",
+		"soundmark": "/ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "他的想法",
-		"english": "his mind",
-		"soundmark": "/hɪz/ /maɪnd/"
+		"nativeText": "duy trì",
+		"english": "to maintain",
+		"soundmark": "/tə/ /menˈten/"
 	},
 	{
-		"chinese": "改变他的想法",
-		"english": "to change his mind",
-		"soundmark": "/tə/ /tʃendʒ/ /hɪz/ /maɪnd/"
+		"nativeText": "duy trì một lối sống lành mạnh",
+		"english": "to maintain a healthy lifestyle",
+		"soundmark": "/tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "分钟",
-		"english": "minute",
-		"soundmark": "/'mɪnɪt/"
+		"nativeText": "cô ấy tránh ăn thức ăn rác",
+		"english": "she avoids eating junk food",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/"
 	},
 	{
-		"chinese": "最后",
-		"english": "last",
-		"soundmark": "/læst/"
+		"nativeText": "cô ấy tránh ăn thức ăn rác để duy trì một lối sống lành mạnh",
+		"english": "she avoids eating junk food to maintain a healthy lifestyle",
+		"soundmark": "/ʃi/ /əˈvɔɪdz/ /'itɪŋ/ /dʒʌŋk/ /fud/ /tə/ /menˈten/ /ə/ /'hɛlθi/ /'laɪfstaɪl/"
 	},
 	{
-		"chinese": "最后一分钟",
-		"english": "the last minute",
-		"soundmark": "/ðə/ /læst/ /'mɪnɪt/"
+		"nativeText": "nói",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "在最后一个刻",
-		"english": "at the last minute",
-		"soundmark": "/ət/ /ðə/ /læst/ /'mɪnɪt/"
+		"nativeText": "sự thật",
+		"english": "the truth",
+		"soundmark": "/ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "在最后一刻改变他的想法",
-		"english": "to change his mind at the last minute",
-		"soundmark": "/tə/ /tʃendʒ/ /hɪz/ /maɪnd/ /ət/ /ðə/ /læst/ /'mɪnɪt/"
+		"nativeText": "nói sự thật",
+		"english": "to tell the truth",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "在最后一刻改变他的想法(ing形式)",
-		"english": "changing his mind at the last minute",
-		"soundmark": "/'tʃendʒɪŋ/ /hɪz/ /maɪnd/ /ət/ /ðə/ /læst/ /'mɪnɪt/"
+		"nativeText": "đang nói sự thật",
+		"english": "telling the truth",
+		"soundmark": "/ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "他(过去)否认",
-		"english": "he denied",
-		"soundmark": "/hi/ /dɪ'naɪd/"
+		"nativeText": "tránh",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "他(过去)否认在最后一刻改变他的想法",
-		"english": "he denied changing his mind at the last minute",
-		"soundmark": "/hi/ /dɪ'naɪd/ /'tʃendʒɪŋ/ /hɪz/ /maɪnd/ /ət/ /ðə/ /læst/ /'mɪnɪt/"
+		"nativeText": "cô ấy đã tránh",
+		"english": "she avoided",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/"
 	},
 	{
-		"chinese": "父母",
-		"english": "parents",
-		"soundmark": "/'pɛrənts/"
+		"nativeText": "cô ấy đã tránh nói sự thật",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "他的父母",
-		"english": "his parents",
-		"soundmark": "/hɪz/ /'pɛrənts/"
-	},
-	{
-		"chinese": "撒谎",
+		"nativeText": "nói dối",
 		"english": "to lie",
 		"soundmark": "/tə/ /laɪ/"
 	},
 	{
-		"chinese": "向他的父母撒谎",
-		"english": "to lie to his parents",
-		"soundmark": "/tə/ /laɪ/ /tə/ /hɪz/ /'pɛrənts/"
-	},
-	{
-		"chinese": "撒谎(ing形式)",
+		"nativeText": "đang nói dối",
 		"english": "lying",
 		"soundmark": "/'laɪɪŋ/"
 	},
 	{
-		"chinese": "向他的父母撒谎(ing形式)",
-		"english": "lying to his parents",
-		"soundmark": "/'laɪɪŋ/ /tə/ /hɪz/ /'pɛrənts/"
+		"nativeText": "cha mẹ",
+		"english": "parents",
+		"soundmark": "/'pɛrənts/"
 	},
 	{
-		"chinese": "否认",
-		"english": "to deny",
-		"soundmark": "/tə/ /dɪ'naɪ/"
+		"nativeText": "cha mẹ của cô ấy",
+		"english": "her parents",
+		"soundmark": "/hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "他(过去)否认",
-		"english": "he denied",
-		"soundmark": "/hi/ /dɪ'naɪd/"
+		"nativeText": "đang nói dối cha mẹ của cô ấy",
+		"english": "lying to her parents",
+		"soundmark": "/'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "他(过去)否认向他的父母撒谎",
-		"english": "he denied lying to his parents",
-		"soundmark": "/hi/ /dɪ'naɪd/ /'laɪɪŋ/ /tə/ /hɪz/ /'pɛrənts/"
+		"nativeText": "bằng cách",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "有病的",
-		"english": "sick",
-		"soundmark": "/sɪk/"
+		"nativeText": "bằng cách nói dối cha mẹ của cô ấy",
+		"english": "by lying to her parents",
+		"soundmark": "/baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "他是有病的",
-		"english": "he is sick",
-		"soundmark": "/hi/ /ɪz/ /sɪk/"
+		"nativeText": "cô ấy đã tránh nói sự thật",
+		"english": "she avoided telling the truth",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/"
 	},
 	{
-		"chinese": "假装",
-		"english": "to pretend",
-		"soundmark": "/tə/ /prɪ'tɛnd/"
+		"nativeText": "cô ấy đã tránh nói sự thật bằng cách nói dối cha mẹ của cô ấy",
+		"english": "she avoided telling the truth by lying to her parents",
+		"soundmark": "/ʃi/ /əˈvɔɪdɪd/ /ˈtɛlɪŋ/ /ðə/ /trʊθ/ /baɪ/ /'laɪɪŋ/ /tə/ /hɚ/ /'pɛrənts/"
 	},
 	{
-		"chinese": "假装是有病的",
-		"english": "to pretend to be sick",
-		"soundmark": "/tə/ /prɪ'tɛnd/ /tə/ /bi/ /sɪk/"
+		"nativeText": "làm tổn thương",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
 	},
 	{
-		"chinese": "假装是有病的(ing形式)",
-		"english": "pretending to be sick",
-		"soundmark": "/prɪ'tɛndɪŋ/ /tə/ /bi/ /sɪk/"
+		"nativeText": "cô ấy",
+		"english": "her",
+		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "否认",
-		"english": "to deny",
-		"soundmark": "/tə/ /dɪ'naɪ/"
+		"nativeText": "làm tổn thương cô ấy",
+		"english": "to hurt her",
+		"soundmark": "/tə/ /hɝt/ /hɚ/"
 	},
 	{
-		"chinese": "他(过去)否认",
-		"english": "he denied",
-		"soundmark": "/hi/ /dɪ'naɪd/"
+		"nativeText": "đang làm tổn thương cô ấy",
+		"english": "hurting her",
+		"soundmark": "/ˈhɝtɪŋ/ /hɚ/"
 	},
 	{
-		"chinese": "他(过去)否认假装是有病的",
-		"english": "he denied pretending to be sick",
-		"soundmark": "/hi/ /dɪ'naɪd/ /prɪ'tɛndɪŋ/ /tə/ /bi/ /sɪk/"
+		"nativeText": "tránh",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "监狱",
-		"english": "prison",
-		"soundmark": "/'prɪzn/"
+		"nativeText": "tôi đã tránh",
+		"english": "I avoided",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/"
 	},
 	{
-		"chinese": "从监狱",
-		"english": "from prison",
-		"soundmark": "/frʌm/ /'prɪzn/"
+		"nativeText": "tôi đã tránh làm tổn thương cô ấy",
+		"english": "I avoided hurting her",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/"
 	},
 	{
-		"chinese": "逃跑",
-		"english": "to escape",
-		"soundmark": "/tə/ /ɪ'skep/"
+		"nativeText": "giữ",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "越狱",
-		"english": "to escape from prison",
-		"soundmark": "/tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+		"nativeText": "im lặng",
+		"english": "silent",
+		"soundmark": "/'saɪlənt/"
 	},
 	{
-		"chinese": "计划",
-		"english": "to plan",
-		"soundmark": "/tə/ /plæn/"
+		"nativeText": "giữ im lặng",
+		"english": "to keep silent",
+		"soundmark": "/tə/ /kip/ /'saɪlənt/"
 	},
 	{
-		"chinese": "计划越狱",
-		"english": "to plan to escape from prison",
-		"soundmark": "/tə/ /plæn/ /tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+		"nativeText": "đang giữ im lặng",
+		"english": "keeping silent",
+		"soundmark": "/'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "计划越狱(ing形式)",
-		"english": "planning to escape from prison",
-		"soundmark": "/'plænɪŋ/ /tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+		"nativeText": "bằng cách",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "否认",
-		"english": "to deny",
-		"soundmark": "/tə/ /dɪ'naɪ/"
+		"nativeText": "bằng cách giữ im lặng",
+		"english": "by keeping silent",
+		"soundmark": "/baɪ/ /'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "他们(过去)否认",
-		"english": "they denied",
-		"soundmark": "/ðe/ /dɪ'naɪd/"
+		"nativeText": "tôi đã tránh làm tổn thương cô ấy bằng cách giữ im lặng",
+		"english": "I avoided hurting her by keeping silent",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈhɝtɪŋ/ /hɚ/ /baɪ/ /'kipɪŋ/ /'saɪlənt/"
 	},
 	{
-		"chinese": "他们(过去)否认计划越狱",
-		"english": "they denied planning to escape from prison",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /'plænɪŋ/ /tə/ /ɪ'skep/ /frʌm/ /'prɪzn/"
+		"nativeText": "trễ",
+		"english": "late",
+		"soundmark": "/let/"
 	},
 	{
-		"chinese": "偷",
-		"english": "to steal",
-		"soundmark": "/tə/ /stil/"
+		"nativeText": "tôi trễ",
+		"english": "I am late",
+		"soundmark": "/aɪ/ /æm/ /let/"
 	},
 	{
-		"chinese": "钱",
-		"english": "the money",
-		"soundmark": "/ðə/ /'mʌni/"
+		"nativeText": "đang là",
+		"english": "being",
+		"soundmark": "/ˈbiɪŋ/"
 	},
 	{
-		"chinese": "偷钱",
-		"english": "to steal the money",
-		"soundmark": "/tə/ /stil/ /ðə/ /'mʌni/"
+		"nativeText": "tôi đã tránh bị trễ",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
 	},
 	{
-		"chinese": "偷钱(ing形式)",
-		"english": "stealing the money",
-		"soundmark": "/stilɪŋ/ /ðə/ /'mʌni/"
+		"nativeText": "taxi",
+		"english": "taxi",
+		"soundmark": "/'tæksi/"
 	},
 	{
-		"chinese": "银行",
-		"english": "the bank",
-		"soundmark": "/ðə/ /bæŋk/"
+		"nativeText": "đi",
+		"english": "to take",
+		"soundmark": "/tə/ /tek/"
 	},
 	{
-		"chinese": "从银行",
-		"english": "from the bank",
-		"soundmark": "/frʌm/ /ðə/ /bæŋk/"
+		"nativeText": "đi một chiếc taxi",
+		"english": "to take a taxi",
+		"soundmark": "/tə/ /tek/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "从银行偷钱(ing形式)",
-		"english": "stealing the money from the bank",
-		"soundmark": "/stilɪŋ/ /ðə/ /'mʌni/ /frʌm/ /ðə/ /bæŋk/"
+		"nativeText": "đang đi một chiếc taxi",
+		"english": "taking a taxi",
+		"soundmark": "/ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "否认",
-		"english": "to deny",
-		"soundmark": "/tə/ /dɪ'naɪ/"
+		"nativeText": "bằng cách",
+		"english": "by",
+		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "他(过去)否认",
-		"english": "he denied",
-		"soundmark": "/hi/ /dɪ'naɪd/"
+		"nativeText": "bằng cách đi một chiếc taxi",
+		"english": "by taking a taxi",
+		"soundmark": "/baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "他(过去)否认从银行偷钱",
-		"english": "he denied stealing the money from the bank",
-		"soundmark": "/hi/ /dɪ'naɪd/ /stilɪŋ/ /ðə/ /'mʌni/ /frʌm/ /ðə/ /bæŋk/"
+		"nativeText": "tôi đã tránh bị trễ",
+		"english": "I avoided being late",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/"
 	},
 	{
-		"chinese": "接受",
-		"english": "to accept",
-		"soundmark": "/tə/ /ək'sɛpt/"
+		"nativeText": "tôi đã tránh bị trễ bằng cách đi một chiếc taxi",
+		"english": "I avoided being late by taking a taxi",
+		"soundmark": "/aɪ/ /əˈvɔɪdɪd/ /ˈbiɪŋ/ /let/ /baɪ/ /ˈtekɪŋ/ /ə/ /'tæksi/"
 	},
 	{
-		"chinese": "接受(过去分词)",
-		"english": "accepted",
-		"soundmark": "/ək'sɛptɪd/"
+		"nativeText": "tránh",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "被接受了",
-		"english": "be accepted",
-		"soundmark": "/bi/ /ək'sɛptɪd/"
+		"nativeText": "anh ấy tránh",
+		"english": "he avoids",
+		"soundmark": "/hi/ /əˈvɔɪdz/"
 	},
 	{
-		"chinese": "他被接受了",
-		"english": "he is accepted",
-		"soundmark": "/hi/ /ɪz/ /ək'sɛptɪd/"
+		"nativeText": "hút thuốc",
+		"english": "to smoke",
+		"soundmark": "/tə/ /smok/"
 	},
 	{
-		"chinese": "他(过去)被接受了",
-		"english": "he was accepted",
-		"soundmark": "/hi/ /wəz/ /ək'sɛptɪd/"
+		"nativeText": "đang hút thuốc",
+		"english": "smoking",
+		"soundmark": "/'smokɪŋ/"
 	},
 	{
-		"chinese": "大学",
-		"english": "the university",
-		"soundmark": "/ðə/ /ˌjunɪ'vɝsəti/"
+		"nativeText": "anh ấy tránh hút thuốc",
+		"english": "he avoids smoking",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/"
 	},
 	{
-		"chinese": "通过大学",
-		"english": "by the university",
-		"soundmark": "/baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+		"nativeText": "lành mạnh",
+		"english": "healthy",
+		"soundmark": "/'hɛlθi/"
 	},
 	{
-		"chinese": "他(过去)被大学录取了",
-		"english": "he was accepted by the university",
-		"soundmark": "/hi/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+		"nativeText": "sức khỏe",
+		"english": "health",
+		"soundmark": "/hɛlθ/"
 	},
 	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
+		"nativeText": "sức khỏe của anh ấy",
+		"english": "his health",
+		"soundmark": "/hɪz/ /hɛlθ/"
 	},
 	{
-		"chinese": "那个他(过去)被大学录取了",
-		"english": "that he was accepted by the university",
-		"soundmark": "/ðæt/ /hi/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+		"nativeText": "bảo vệ",
+		"english": "to protect",
+		"soundmark": "/tə/ /prə'tɛkt/"
 	},
 	{
-		"chinese": "他(过去)否认",
-		"english": "he denied",
-		"soundmark": "/hi/ /dɪ'naɪd/"
+		"nativeText": "bảo vệ sức khỏe của anh ấy",
+		"english": "to protect his health",
+		"soundmark": "/tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
 	},
 	{
-		"chinese": "他(过去)否认(那个)他(过去)被大学录取了",
-		"english": "he denied that he was accepted by the university",
-		"soundmark": "/hi/ /dɪ'naɪd/ /ðæt/ /hi/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðə/ /ˌjunɪ'vɝsəti/"
+		"nativeText": "anh ấy tránh hút thuốc để bảo vệ sức khỏe của anh ấy",
+		"english": "he avoids smoking to protect his health",
+		"soundmark": "/hi/ /əˈvɔɪdz/ /'smokɪŋ/ /tə/ /prə'tɛkt/ /hɪz/ /hɛlθ/"
 	},
 	{
-		"chinese": "他(过去)否认(那个)",
-		"english": "he denied that",
-		"soundmark": "/hi/ /dɪ'naɪd/ /ðæt/"
+		"nativeText": "lời nói dối",
+		"english": "lie",
+		"soundmark": "/laɪ/"
 	},
 	{
-		"chinese": "他们(过去)否认(那个)",
-		"english": "they denied that",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/"
+		"nativeText": "một lời nói dối",
+		"english": "a lie",
+		"soundmark": "/ə/ /laɪ/"
 	},
 	{
-		"chinese": "邀请",
-		"english": "to invite",
-		"soundmark": "/tə/ /ɪn'vaɪt/"
+		"nativeText": "trắng",
+		"english": "white",
+		"soundmark": "/waɪt/"
 	},
 	{
-		"chinese": "邀请(过去分词)",
-		"english": "invited",
-		"soundmark": "/ɪn'vaɪtɪd/"
+		"nativeText": "một lời nói dối thiện ý",
+		"english": "a white lie",
+		"soundmark": "/ə/ /waɪt/ /laɪ/"
 	},
 	{
-		"chinese": "被邀请",
-		"english": "be invited",
-		"soundmark": "/bi/ /ɪn'vaɪtɪd/"
+		"nativeText": "nói",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "他们被邀请",
-		"english": "they are invited",
-		"soundmark": "/ðe/ /ɚ/ /ɪn'vaɪtɪd/"
+		"nativeText": "nói một lời nói dối thiện ý",
+		"english": "to tell a white lie",
+		"soundmark": "/tə/ /tɛl/ /ə/ /waɪt/ /laɪ/"
 	},
 	{
-		"chinese": "他们(过去)被邀请",
-		"english": "they were invited",
-		"soundmark": "/ðe/ /wɚ/ /ɪn'vaɪtɪd/"
+		"nativeText": "đang nói một lời nói dối thiện ý",
+		"english": "telling a white lie",
+		"soundmark": "/ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
 	},
 	{
-		"chinese": "总统",
-		"english": "the president",
-		"soundmark": "/ðə/ /'prɛzɪdənt/"
+		"nativeText": "thừa nhận",
+		"english": "to admit",
+		"soundmark": "/tə/ /ədˈmɪt/"
 	},
 	{
-		"chinese": "通过总统",
-		"english": "by the president",
-		"soundmark": "/baɪ/ /ðə/ /'prɛzɪdənt/"
+		"nativeText": "anh ấy đã thừa nhận",
+		"english": "he admitted",
+		"soundmark": "/hi/ /ədˈmɪtɪd/"
 	},
 	{
-		"chinese": "他们(过去)被总统邀请",
-		"english": "they were invited by the president",
-		"soundmark": "/ðe/ /wɚ/ /ɪn'vaɪtɪd/ /baɪ/ /ðə/ /'prɛzɪdənt/"
+		"nativeText": "anh ấy đã thừa nhận nói một lời nói dối thiện ý",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
 	},
 	{
-		"chinese": "他们(过去)否认(那个)",
-		"english": "they denied that",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/"
+		"nativeText": "cảm thấy",
+		"english": "to feel",
+		"soundmark": "/tə/ /fil/"
 	},
 	{
-		"chinese": "他们(过去)否认(那个)他们(过去)被总统邀请",
-		"english": "they denied that they were invited by the president",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/ /ðe/ /wɚ/ /ɪn'vaɪtɪd/ /baɪ/ /ðə/ /'prɛzɪdənt/"
+		"nativeText": "cảm xúc",
+		"english": "feelings",
+		"soundmark": "/'filɪŋz/"
 	},
 	{
-		"chinese": "教",
-		"english": "to teach",
-		"soundmark": "/tə/ /titʃ/"
+		"nativeText": "ai đó",
+		"english": "someone",
+		"soundmark": "/'sʌmwʌn/"
 	},
 	{
-		"chinese": "教(过去分词)",
-		"english": "taught",
-		"soundmark": "/tɔt/"
+		"nativeText": "cảm xúc của ai đó",
+		"english": "someone's feelings",
+		"soundmark": "/'sʌmwʌnz/ /'filɪŋz/"
 	},
 	{
-		"chinese": "被教",
-		"english": "be taught",
-		"soundmark": "/bi/ /tɔt/"
+		"nativeText": "làm tổn thương",
+		"english": "to hurt",
+		"soundmark": "/tə/ /hɝt/"
 	},
 	{
-		"chinese": "他们被教",
-		"english": "they are taught",
-		"soundmark": "/ðe/ /ɚ/ /tɔt/"
+		"nativeText": "làm tổn thương cảm xúc của ai đó",
+		"english": "to hurt someone's feelings",
+		"soundmark": "/tə/ /hɝt/ /'sʌmwʌnz/ /'filɪŋz/"
 	},
 	{
-		"chinese": "他们(过去)被教",
-		"english": "they were taught",
-		"soundmark": "/ðe/ /wɚ/ /tɔt/"
+		"nativeText": "đang làm tổn thương cảm xúc của ai đó",
+		"english": "hurting someone's feelings",
+		"soundmark": "/ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	},
 	{
-		"chinese": "教授",
-		"english": "professor",
-		"soundmark": "/prə'fɛsər/"
+		"nativeText": "tránh",
+		"english": "to avoid",
+		"soundmark": "/tə/ /əˈvɔɪd/"
 	},
 	{
-		"chinese": "有名的",
-		"english": "famous",
-		"soundmark": "/'feməs/"
+		"nativeText": "tránh làm tổn thương cảm xúc của ai đó",
+		"english": "to avoid hurting someone's feelings",
+		"soundmark": "/tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	},
 	{
-		"chinese": "一个有名的教授",
-		"english": "a famous professor",
-		"soundmark": "/ə/ /'feməs/ /prə'fɛsər/"
+		"nativeText": "anh ấy đã thừa nhận nói một lời nói dối thiện ý",
+		"english": "he admitted telling a white lie",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /ˈtɛlɪŋ/ /ə/ /waɪt/ /laɪ/"
 	},
 	{
-		"chinese": "通过一个有名的教授",
-		"english": "by a famous professor",
-		"soundmark": "/baɪ/ /ə/ /'feməs/ /prə'fɛsər/"
-	},
-	{
-		"chinese": "他们(过去)被教",
-		"english": "they were taught",
-		"soundmark": "/ðe/ /wɚ/ /tɔt/"
-	},
-	{
-		"chinese": "他们(过去)被一个有名的教授所教",
-		"english": "they were taught by a famous professor",
-		"soundmark": "/ðe/ /wɚ/ /tɔt/ /baɪ/ /ə/ /'feməs/ /prə'fɛsər/"
-	},
-	{
-		"chinese": "他们(过去)否认(那个)",
-		"english": "they denied that",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/"
-	},
-	{
-		"chinese": "他们(过去)否认(那个)他们(过去)被一个有名的教授所教",
-		"english": "they denied that they were taught by a famous professor",
-		"soundmark": "/ðe/ /dɪ'naɪd/ /ðæt/ /ðe/ /wɚ/ /tɔt/ /baɪ/ /ə/ /'feməs/ /prə'fɛsər/"
+		"nativeText": "anh ấy đã thừa nhận nói một lời nói dối thiện ý để tránh làm tổn thương cảm xúc của ai đó",
+		"english": "he admitted telling a white lie to avoid hurting someone's feelings",
+		"soundmark": "/hi/ /ədˈmɪtɪd/ /tə/ /ədˈmɪt/ /tə/ /əˈvɔɪd/ /ˈhɝtɪŋ/ /'sʌmwʌnz/ /'filɪŋz/"
 	}
 ]

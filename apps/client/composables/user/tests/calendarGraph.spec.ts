@@ -167,7 +167,7 @@ describe("use calendar graph", () => {
       if (count < 10) return "high";
       return "higher";
     },
-    tipFormatter: (item) => `${item.duration}次学习, ${item.date}`,
+    tipFormatter: (item) => `${item.duration} lần học, ${item.date}`,
   };
 
   const {
@@ -268,18 +268,18 @@ describe("use calendar graph", () => {
     const { thead } = initData(2024);
     const data = renderHead(thead);
     expect(data).toEqual([
-      { colSpan: 5, month: "一月" },
-      { colSpan: 4, month: "二月" },
-      { colSpan: 5, month: "三月" },
-      { colSpan: 4, month: "四月" },
-      { colSpan: 4, month: "五月" },
-      { colSpan: 5, month: "六月" },
-      { colSpan: 4, month: "七月" },
-      { colSpan: 4, month: "八月" },
-      { colSpan: 5, month: "九月" },
-      { colSpan: 4, month: "十月" },
-      { colSpan: 4, month: "十一月" },
-      { colSpan: 5, month: "十二月" },
+      { colSpan: 5, month: "T1" },
+      { colSpan: 4, month: "T2" },
+      { colSpan: 5, month: "T3" },
+      { colSpan: 4, month: "T4" },
+      { colSpan: 4, month: "T5" },
+      { colSpan: 5, month: "T6" },
+      { colSpan: 4, month: "T7" },
+      { colSpan: 4, month: "T8" },
+      { colSpan: 5, month: "T9" },
+      { colSpan: 4, month: "T10" },
+      { colSpan: 4, month: "T11" },
+      { colSpan: 5, month: "T12" },
     ]);
   });
 
@@ -292,13 +292,13 @@ describe("use calendar graph", () => {
       { date: "2024-01-04", duration: 10 },
     ];
     const tbody = renderBody(apiData);
-    expect(tbody[1][0]?.tips).toBe("1次学习, 2024-01-01");
+    expect(tbody[1][0]?.tips).toBe("1 lần học, 2024-01-01");
     expect(tbody[1][0]?.bg).toBe("low");
-    expect(tbody[2][0]?.tips).toBe("3次学习, 2024-01-02");
+    expect(tbody[2][0]?.tips).toBe("3 lần học, 2024-01-02");
     expect(tbody[2][0]?.bg).toBe("moderate");
-    expect(tbody[3][0]?.tips).toBe("5次学习, 2024-01-03");
+    expect(tbody[3][0]?.tips).toBe("5 lần học, 2024-01-03");
     expect(tbody[3][0]?.bg).toBe("high");
-    expect(tbody[4][0]?.tips).toBe("10次学习, 2024-01-04");
+    expect(tbody[4][0]?.tips).toBe("10 lần học, 2024-01-04");
     expect(tbody[4][0]?.bg).toBe("higher");
   });
 });

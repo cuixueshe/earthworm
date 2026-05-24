@@ -1,581 +1,581 @@
 [
 	{
-		"chinese": "吃",
+		"nativeText": "ăn",
 		"english": "to eat",
 		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "鸡蛋",
+		"nativeText": "trứng",
 		"english": "eggs",
 		"soundmark": "/ɛgz/"
 	},
 	{
-		"chinese": "吃鸡蛋",
+		"nativeText": "ăn trứng",
 		"english": "to eat eggs",
 		"soundmark": "/tə/ /it/ /ɛgz/"
 	},
 	{
-		"chinese": "正在吃",
+		"nativeText": "đang ăn",
 		"english": "eating",
 		"soundmark": "/'itɪŋ/"
 	},
 	{
-		"chinese": "正在吃鸡蛋",
+		"nativeText": "đang ăn trứng",
 		"english": "eating eggs",
 		"soundmark": "/'itɪŋ/ /ɛgz/"
 	},
 	{
-		"chinese": "我是",
+		"nativeText": "tôi là",
 		"english": "I am",
 		"soundmark": "/aɪ/ /æm/"
 	},
 	{
-		"chinese": "我是星荣",
+		"nativeText": "tôi là Xingrong",
 		"english": "I am Xingrong",
 		"soundmark": "/aɪ/ /æm/"
 	},
 	{
-		"chinese": "正在吃鸡蛋",
+		"nativeText": "đang ăn trứng",
 		"english": "eating eggs",
 		"soundmark": "/'itɪŋ/ /ɛgz/"
 	},
 	{
-		"chinese": "我正在吃鸡蛋",
+		"nativeText": "tôi đang ăn trứng",
 		"english": "I am eating eggs",
 		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/"
 	},
 	{
-		"chinese": "厨房",
+		"nativeText": "nhà bếp",
 		"english": "the kitchen",
 		"soundmark": "/ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "在厨房里",
+		"nativeText": "trong nhà bếp",
 		"english": "in the kitchen",
 		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "我在厨房里（现在）正在吃鸡蛋",
+		"nativeText": "tôi đang ăn trứng trong nhà bếp",
 		"english": "I am eating eggs in the kitchen",
 		"soundmark": "/aɪ/ /æm/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"nativeText": "lúc đó tôi đang ăn trứng trong nhà bếp",
 		"english": "I was eating eggs in the kitchen",
 		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你在厨房里（现在）正在吃鸡蛋",
+		"nativeText": "bạn đang ăn trứng trong nhà bếp",
 		"english": "you are eating eggs in the kitchen",
 		"soundmark": "/ju/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "你在厨房里（过去）正在吃鸡蛋",
+		"nativeText": "lúc đó bạn đang ăn trứng trong nhà bếp",
 		"english": "you were eating eggs in the kitchen",
 		"soundmark": "/ju/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们在厨房里（现在）正在吃鸡蛋",
+		"nativeText": "họ đang ăn trứng trong nhà bếp",
 		"english": "they are eating eggs in the kitchen",
 		"soundmark": "/ðe/ /ɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "他们在厨房里（过去）正在吃鸡蛋",
+		"nativeText": "lúc đó họ đang ăn trứng trong nhà bếp",
 		"english": "they were eating eggs in the kitchen",
 		"soundmark": "/ðe/ /wɚ/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "喝",
+		"nativeText": "uống",
 		"english": "to drink",
 		"soundmark": "/tə/ /drɪŋk/"
 	},
 	{
-		"chinese": "茶",
+		"nativeText": "trà",
 		"english": "tea",
 		"soundmark": "/ti/"
 	},
 	{
-		"chinese": "喝茶",
+		"nativeText": "uống trà",
 		"english": "to drink tea",
 		"soundmark": "/tə/ /drɪŋk/ /ti/"
 	},
 	{
-		"chinese": "正在喝",
+		"nativeText": "đang uống",
 		"english": "drinking",
 		"soundmark": "/'drɪŋkɪŋ/"
 	},
 	{
-		"chinese": "正在喝茶",
+		"nativeText": "đang uống trà",
 		"english": "drinking tea",
 		"soundmark": "/'drɪŋkɪŋ/ /ti/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们（现在）正在喝茶",
+		"nativeText": "họ đang uống trà",
 		"english": "they are drinking tea",
 		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/"
 	},
 	{
-		"chinese": "花园",
+		"nativeText": "khu vườn",
 		"english": "the garden",
 		"soundmark": "/ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "在花园里",
+		"nativeText": "trong khu vườn",
 		"english": "in the garden",
 		"soundmark": "/ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "他们在花园里（现在）正在喝茶",
+		"nativeText": "họ đang uống trà trong khu vườn",
 		"english": "they are drinking tea in the garden",
 		"soundmark": "/ðe/ /ɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "茶",
+		"nativeText": "trà",
 		"english": "tea",
 		"soundmark": "/tiː/"
 	},
 	{
-		"chinese": "他们在花园里（过去）正在喝茶",
+		"nativeText": "lúc đó họ đang uống trà trong khu vườn",
 		"english": "they were drinking tea in the garden",
 		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/"
 	},
 	{
-		"chinese": "我在厨房里（过去）正在吃鸡蛋",
+		"nativeText": "lúc đó tôi đang ăn trứng trong nhà bếp",
 		"english": "I was eating eggs in the kitchen",
 		"soundmark": "/aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "与此同时",
+		"nativeText": "trong khi",
 		"english": "while",
 		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "他们在花园里（过去）正在喝茶与此同时我在厨房里（过去）正在吃鸡蛋",
+		"nativeText": "lúc đó họ đang uống trà trong khu vườn trong khi tôi đang ăn trứng trong nhà bếp",
 		"english": "they were drinking tea in the garden while I was eating eggs in the kitchen",
 		"soundmark": "/ðe/ /wɚ/ /'drɪŋkɪŋ/ /ti/ /ɪn/ /ðə/ /ˈɡɑrdn/ /waɪl/ /aɪ/ /wəz/ /'itɪŋ/ /ɛgz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
 	},
 	{
-		"chinese": "教",
+		"nativeText": "dạy",
 		"english": "to teach",
 		"soundmark": "/tə/ /titʃ/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "us",
 		"soundmark": "/ʌs/"
 	},
 	{
-		"chinese": "教我们",
+		"nativeText": "dạy chúng ta",
 		"english": "to teach us",
 		"soundmark": "/tə/ /titʃ/ /ʌs/"
 	},
 	{
-		"chinese": "正在教",
+		"nativeText": "đang dạy",
 		"english": "teaching",
 		"soundmark": "/'titʃɪŋ/"
 	},
 	{
-		"chinese": "正在教我们",
+		"nativeText": "đang dạy chúng ta",
 		"english": "teaching us",
 		"soundmark": "/'titʃɪŋ/ /ʌs/"
 	},
 	{
-		"chinese": "说",
+		"nativeText": "nói",
 		"english": "to speak",
 		"soundmark": "/tə/ /spik/"
 	},
 	{
-		"chinese": "英语",
+		"nativeText": "tiếng Anh",
 		"english": "English",
 		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "说英语",
+		"nativeText": "nói tiếng Anh",
 		"english": "to speak English",
 		"soundmark": "/tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "如何说英语",
+		"nativeText": "nói tiếng Anh như thế nào",
 		"english": "how to speak English",
 		"soundmark": "/haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "正在教我们如何说英语",
+		"nativeText": "đang dạy chúng ta nói tiếng Anh như thế nào",
 		"english": "teaching us how to speak English",
 		"soundmark": "/'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "星荣正在教我们如何说英语",
+		"nativeText": "Xingrong đang dạy chúng ta nói tiếng Anh như thế nào",
 		"english": "Xingrong is teaching us how to speak English",
 		"soundmark": "/ɪz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "星荣（过去）正在教我们如何说英语",
+		"nativeText": "lúc đó Xingrong đang dạy chúng ta nói tiếng Anh như thế nào",
 		"english": "Xingrong was teaching us how to speak English",
 		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "学习",
+		"nativeText": "học",
 		"english": "to learn",
 		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "英语",
+		"nativeText": "tiếng Anh",
 		"english": "English",
 		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "学习英语",
+		"nativeText": "học tiếng Anh",
 		"english": "to learn English",
 		"soundmark": "/tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "正在学习",
+		"nativeText": "đang học",
 		"english": "learning",
 		"soundmark": "/'lɝnɪŋ/"
 	},
 	{
-		"chinese": "正在学习英语",
+		"nativeText": "đang học tiếng Anh",
 		"english": "learning English",
 		"soundmark": "/'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我正在学习英语",
+		"nativeText": "tôi đang học tiếng Anh",
 		"english": "I am learning English",
 		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "视频",
+		"nativeText": "video",
 		"english": "videos",
 		"soundmark": "/'vɪdɪoz/"
 	},
 	{
-		"chinese": "他的",
+		"nativeText": "của anh ấy",
 		"english": "his",
 		"soundmark": "/hɪz/"
 	},
 	{
-		"chinese": "他的视频",
+		"nativeText": "video của anh ấy",
 		"english": "his videos",
 		"soundmark": "/hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "观看",
+		"nativeText": "xem",
 		"english": "to watch",
 		"soundmark": "/tə/ /wɑtʃ/"
 	},
 	{
-		"chinese": "观看他的视频",
+		"nativeText": "xem video của anh ấy",
 		"english": "to watch his videos",
 		"soundmark": "/tə/ /wɑtʃ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "正在观看",
+		"nativeText": "đang xem",
 		"english": "watching",
 		"soundmark": "/'wɑtʃɪŋ/"
 	},
 	{
-		"chinese": "正在观看他的视频",
+		"nativeText": "đang xem video của anh ấy",
 		"english": "watching his videos",
 		"soundmark": "/'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "通过......的方式",
+		"nativeText": "bằng cách",
 		"english": "by",
 		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "通过观看他的视频的方式",
+		"nativeText": "bằng cách xem video của anh ấy",
 		"english": "by watching his videos",
 		"soundmark": "/baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "我正在学习英语",
+		"nativeText": "tôi đang học tiếng Anh",
 		"english": "I am learning English",
 		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我正在通过观看他的视频的方式学习英语",
+		"nativeText": "tôi đang học tiếng Anh bằng cách xem video của anh ấy",
 		"english": "I am learning English by watching his videos",
 		"soundmark": "/aɪ/ /æm/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "我（过去）正在通过观看他的视频的方式学习英语",
+		"nativeText": "lúc đó tôi đang học tiếng Anh bằng cách xem video của anh ấy",
 		"english": "I was learning English by watching his videos",
 		"soundmark": "/aɪ/ /wəz/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "星荣（过去）正在教我们如何说英语",
+		"nativeText": "lúc đó Xingrong đang dạy chúng ta nói tiếng Anh như thế nào",
 		"english": "Xingrong was teaching us how to speak English",
 		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "与此同时",
+		"nativeText": "trong khi",
 		"english": "while",
 		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "星荣（过去）正在教我们如何说英语与此同时我（过去）正在通过观看他的视频的方式学习英语",
+		"nativeText": "lúc đó Xingrong đang dạy chúng ta nói tiếng Anh như thế nào trong khi tôi đang học tiếng Anh bằng cách xem video của anh ấy",
 		"english": "Xingrong was teaching us how to speak English while I was learning English by watching his videos",
 		"soundmark": "/wəz/ /'titʃɪŋ/ /ʌs/ /haʊ/ /tə/ /spik/ /ˈɪŋɡlɪʃ/ /waɪl/ /aɪ/ /wəz/ /'lɝnɪŋ/ /ˈɪŋɡlɪʃ/ /baɪ/ /'wɑtʃɪŋ/ /hɪz/ /'vɪdɪoz/"
 	},
 	{
-		"chinese": "走路",
+		"nativeText": "đi bộ",
 		"english": "to walk",
 		"soundmark": "/tə/ /wɔk/"
 	},
 	{
-		"chinese": "家",
+		"nativeText": "nhà",
 		"english": "home",
 		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "走路回家",
+		"nativeText": "đi bộ về nhà",
 		"english": "to walk home",
 		"soundmark": "/tə/ /wɔk/ /hom/"
 	},
 	{
-		"chinese": "学校",
+		"nativeText": "trường học",
 		"english": "school",
 		"soundmark": "/skul/"
 	},
 	{
-		"chinese": "从",
+		"nativeText": "từ",
 		"english": "from",
 		"soundmark": "/frʌm/"
 	},
 	{
-		"chinese": "从学校",
+		"nativeText": "từ trường học",
 		"english": "from school",
 		"soundmark": "/frʌm/ /skul/"
 	},
 	{
-		"chinese": "从学校走路回家",
+		"nativeText": "đi bộ về nhà từ trường học",
 		"english": "to walk home from school",
 		"soundmark": "/tə/ /wɔk/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "正在从学校走路回家",
+		"nativeText": "đang đi bộ về nhà từ trường học",
 		"english": "walking home from school",
 		"soundmark": "/'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "我正在从学校走路回家",
+		"nativeText": "tôi đang đi bộ về nhà từ trường học",
 		"english": "I am walking home from school",
 		"soundmark": "/aɪ/ /æm/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "我（过去）正在从学校走路回家",
+		"nativeText": "lúc đó tôi đang đi bộ về nhà từ trường học",
 		"english": "I was walking home from school",
 		"soundmark": "/aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "朋友",
+		"nativeText": "bạn",
 		"english": "friend",
 		"soundmark": "/frɛnd/"
 	},
 	{
-		"chinese": "老的",
+		"nativeText": "lâu năm",
 		"english": "old",
 		"soundmark": "/old/"
 	},
 	{
-		"chinese": "一个老朋友",
+		"nativeText": "một người bạn lâu năm",
 		"english": "an old friend",
 		"soundmark": "/ən/ /old/ /frɛnd/"
 	},
 	{
-		"chinese": "遇见",
+		"nativeText": "gặp",
 		"english": "to meet",
 		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "遇见一个老朋友",
+		"nativeText": "gặp một người bạn lâu năm",
 		"english": "to meet an old friend",
 		"soundmark": "/tə/ /mit/ /ən/ /old/ /frɛnd/"
 	},
 	{
-		"chinese": "我（过去）遇见一个老朋友",
+		"nativeText": "tôi đã gặp một người bạn lâu năm",
 		"english": "I met an old friend",
 		"soundmark": "/aɪ/ /mɛt/ /ən/ /old/ /frɛnd/"
 	},
 	{
-		"chinese": "我（过去）正在从学校走路回家",
+		"nativeText": "lúc đó tôi đang đi bộ về nhà từ trường học",
 		"english": "I was walking home from school",
 		"soundmark": "/aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "当......的时候",
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我（过去）正在从学校走路回家的时候",
+		"nativeText": "khi lúc đó tôi đang đi bộ về nhà từ trường học",
 		"english": "when I was walking home from school",
 		"soundmark": "/wɛn/ /aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "当我（过去）正在从学校走路回家的时候我（过去）遇见一个老朋友",
+		"nativeText": "tôi đã gặp một người bạn lâu năm khi lúc đó tôi đang đi bộ về nhà từ trường học",
 		"english": "I met an old friend when I was walking home from school",
 		"soundmark": "/aɪ/ /mɛt/ /ən/ /old/ /frɛnd/ /wɛn/ /aɪ/ /wəz/ /'wɔkɪŋ/ /hom/ /frʌm/ /skul/"
 	},
 	{
-		"chinese": "睡觉",
+		"nativeText": "ngủ",
 		"english": "to sleep",
 		"soundmark": "/tə/ /slip/"
 	},
 	{
-		"chinese": "卧室",
+		"nativeText": "phòng ngủ",
 		"english": "the bedroom",
 		"soundmark": "/ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "在卧室里",
+		"nativeText": "trong phòng ngủ",
 		"english": "in the bedroom",
 		"soundmark": "/ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "在卧室里睡觉",
+		"nativeText": "ngủ trong phòng ngủ",
 		"english": "to sleep in the bedroom",
 		"soundmark": "/tə/ /slip/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "正在睡觉",
+		"nativeText": "đang ngủ",
 		"english": "sleeping",
 		"soundmark": "/ˈslipɪŋ/"
 	},
 	{
-		"chinese": "正在在卧室里睡觉",
+		"nativeText": "đang ngủ trong phòng ngủ",
 		"english": "sleeping in the bedroom",
 		"soundmark": "/ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "我正在在卧室里睡觉",
+		"nativeText": "tôi đang ngủ trong phòng ngủ",
 		"english": "I am sleeping in the bedroom",
 		"soundmark": "/aɪ/ /æm/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "我（过去）正在在卧室里睡觉",
+		"nativeText": "lúc đó tôi đang ngủ trong phòng ngủ",
 		"english": "I was sleeping in the bedroom",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "打电话",
+		"nativeText": "gọi điện",
 		"english": "to call",
 		"soundmark": "/tə/ /kɔl/"
 	},
 	{
-		"chinese": "打电话给我",
+		"nativeText": "gọi điện cho tôi",
 		"english": "to call me",
 		"soundmark": "/tə/ /kɔl/ /mi/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她（过去）打电话给我",
+		"nativeText": "cô ấy đã gọi điện cho tôi",
 		"english": "she called me",
 		"soundmark": "/ʃi/ /kɔld/ /mi/"
 	},
 	{
-		"chinese": "当......的时候",
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当她（过去）打电话给我的时候",
+		"nativeText": "khi cô ấy đã gọi điện cho tôi",
 		"english": "when she called me",
 		"soundmark": "/wɛn/ /ʃi/ /kɔld/ /mi/"
 	},
 	{
-		"chinese": "我（过去）正在在卧室里睡觉",
+		"nativeText": "lúc đó tôi đang ngủ trong phòng ngủ",
 		"english": "I was sleeping in the bedroom",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "当她打电话给我的时候我（过去）正在在卧室里睡觉",
+		"nativeText": "tôi đang ngủ trong phòng ngủ khi cô ấy gọi điện cho tôi",
 		"english": "I was sleeping in the bedroom when she called me",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/ /wɛn/ /ʃi/ /kɔld/ /mi/"
 	},
 	{
-		"chinese": "玩",
+		"nativeText": "chơi",
 		"english": "to play",
 		"soundmark": "/tə/ /ple/"
 	},
 	{
-		"chinese": "钢琴",
+		"nativeText": "đàn piano",
 		"english": "the piano",
 		"soundmark": "/ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "弹钢琴",
+		"nativeText": "chơi đàn piano",
 		"english": "to play the piano",
 		"soundmark": "/tə/ /ple/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "正在玩",
+		"nativeText": "đang chơi",
 		"english": "playing",
 		"soundmark": "/pleɪŋ/"
 	},
 	{
-		"chinese": "正在弹钢琴",
+		"nativeText": "đang chơi đàn piano",
 		"english": "playing the piano",
 		"soundmark": "/pleɪŋ/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "她正在弹钢琴",
+		"nativeText": "cô ấy đang chơi đàn piano",
 		"english": "she is playing the piano",
 		"soundmark": "/ʃi/ /ɪz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "她（过去）正在弹钢琴",
+		"nativeText": "lúc đó cô ấy đang chơi đàn piano",
 		"english": "she was playing the piano",
 		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "起居室；客厅",
+		"nativeText": "phòng khách",
 		"english": "the living room",
 		"soundmark": "/ðə/ /'lɪvɪŋ/ /rum/"
 	},
 	{
-		"chinese": "在客厅",
+		"nativeText": "trong phòng khách",
 		"english": "in the living room",
 		"soundmark": "/ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
 	},
 	{
-		"chinese": "她（过去）正在在客厅弹钢琴",
+		"nativeText": "lúc đó cô ấy đang chơi đàn piano trong phòng khách",
 		"english": "she was playing the piano in the living room",
 		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/"
 	},
 	{
-		"chinese": "与此同时",
+		"nativeText": "trong khi",
 		"english": "while",
 		"soundmark": "/waɪl/"
 	},
 	{
-		"chinese": "我（过去）正在在卧室里睡觉",
+		"nativeText": "lúc đó tôi đang ngủ trong phòng ngủ",
 		"english": "I was sleeping in the bedroom",
 		"soundmark": "/aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	},
 	{
-		"chinese": "她（过去）正在在客厅弹钢琴与此同时我（过去）正在在卧室里睡觉",
+		"nativeText": "lúc đó cô ấy đang chơi đàn piano trong phòng khách trong khi tôi đang ngủ trong phòng ngủ",
 		"english": "she was playing the piano in the living room while I was sleeping in the bedroom",
 		"soundmark": "/ʃi/ /wəz/ /pleɪŋ/ /ðə/ /pɪ'æno/ /ɪn/ /ðə/ /'lɪvɪŋ/ /rum/ /waɪl/ /aɪ/ /wəz/ /ˈslipɪŋ/ /ɪn/ /ðə/ /'bɛdrum/"
 	}

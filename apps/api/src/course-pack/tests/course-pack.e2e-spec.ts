@@ -85,11 +85,11 @@ describe("course-pack e2e", () => {
 
     const { id: courseId } = await insertCourse(db, coursePackId, {
       order: 1,
-      title: "第一课",
+      title: "Bài 1",
     });
     const { id: courseIdNext } = await insertCourse(db, coursePackId, {
       order: 2,
-      title: "第二课",
+      title: "Bài 2",
     });
 
     return request(app.getHttpServer())
@@ -106,11 +106,11 @@ describe("course-pack e2e", () => {
 
     const { id: courseId } = await insertCourse(db, coursePackId, {
       order: 1,
-      title: "第一课",
+      title: "Bài 1",
     });
     const { id: courseIdNext } = await insertCourse(db, coursePackId, {
       order: 2,
-      title: "第二课",
+      title: "Bài 2",
     });
 
     return request(app.getHttpServer())

@@ -50,7 +50,7 @@ export const clearCanvas = (canvasEl: HTMLCanvasElement) => {
 };
 
 let preLoadEnFontData: Promise<ArrayBuffer> | undefined;
-let preLoadZhFontData: Promise<ArrayBuffer> | undefined;
+let preLoadNativeFontData: Promise<ArrayBuffer> | undefined;
 
 export const fontEn = () => {
   if (preLoadEnFontData) {
@@ -64,17 +64,17 @@ export const fontEn = () => {
   );
 };
 
-export const fontZh = () => {
-  if (preLoadZhFontData) {
-    return preLoadZhFontData;
+export const fontNative = () => {
+  if (preLoadNativeFontData) {
+    return preLoadNativeFontData;
   }
   return fontFetch(new URL(SourceHanSerifSCBold, import.meta.url)).then((res) => {
-    preLoadZhFontData = res.arrayBuffer();
-    return preLoadZhFontData;
+    preLoadNativeFontData = res.arrayBuffer();
+    return preLoadNativeFontData;
   });
 };
 
 export const clearFontCache = () => {
   preLoadEnFontData = undefined;
-  preLoadZhFontData = undefined;
+  preLoadNativeFontData = undefined;
 };

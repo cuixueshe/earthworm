@@ -35,9 +35,9 @@ export class UserService {
   }
 
   /**
-   * 返回当前登录用户的信息
-   * logto 相关的信息是在 client 获取得
-   * 所以这里只需要返回 earthworm 服务相关的信息就可以了(比如是否为会员)
+   * Return current logged-in user info
+   * Logto-related info is fetched on the client side
+   * So here we only need to return earthworm service-related info (e.g. membership status)
    * @param uId
    * @returns
    */

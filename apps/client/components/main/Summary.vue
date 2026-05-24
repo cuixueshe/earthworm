@@ -10,7 +10,7 @@
       }"
     >
       <div class="flex justify-between">
-        <h3 className="font-bold text-lg mb-4">🎉 恭喜!</h3>
+        <h3 className="font-bold text-lg mb-4">🎉 Chúc mừng!</h3>
         <button
           tabindex="0"
           class="btn btn-ghost btn-sm mx-1 h-7 w-7 rounded-md p-0"
@@ -35,16 +35,16 @@
         <div class="flex">
           <span class="invisible text-3xl font-bold sm:text-4xl lg:text-6xl">"</span>
           <div class="flex-1 text-center text-sm leading-loose sm:text-base lg:text-xl">
-            {{ zhSentence }}
+            {{ nativeSentence }}
           </div>
           <span class="text-3xl font-bold sm:text-4xl lg:text-6xl">"</span>
         </div>
-        <p class="text-right text-xs text-gray-200 sm:text-sm">—— 金山词霸「每日一句」</p>
+        <p class="text-right text-xs text-gray-200 sm:text-sm">—— Câu nói mỗi ngày</p>
         <p
           class="pl-2 text-xs leading-loose text-gray-600 sm:pl-4 sm:text-sm lg:pl-14 lg:text-base"
         >
           {{
-            `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
+            `Chúc mừng bạn đã hoàn thành ${courseTimer.totalRecordNumber()} câu, thời gian ${formatSecondsToTime(
               courseTimer.calculateTotalTime(),
             )} `
           }}
@@ -53,8 +53,9 @@
           v-if="isAuthenticated()"
           class="pl-2 text-xs leading-loose text-gray-400 sm:pl-4 sm:text-sm lg:pl-14 lg:text-base"
         >
-          今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
-          <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
+          Hôm nay đã học tổng cộng
+          <span class="text-purple-500">{{ formattedMinutes }} phút</span> rồi!
+          <span v-if="totalMinutes >= 30">Quá giỏi, tự vỗ tay thưởng cho mình 😄</span>
         </p>
       </div>
       <div className="modal-action flex flex-col sm:flex-row gap-2 justify-center sm:justify-end">
@@ -62,25 +63,25 @@
           class="btn btn-primary w-full sm:w-auto"
           @click="toShare"
         >
-          生成打卡图
+          Tạo ảnh chia sẻ
         </button>
         <button
           class="btn w-full sm:w-auto"
           @click="handleDoAgain"
         >
-          再来一次
+          Làm lại
         </button>
         <button
           class="btn w-full sm:w-auto"
           @click="handleGoToCourseList"
         >
-          课程列表
+          Danh sách bài
         </button>
         <button
           class="btn w-full sm:w-auto"
           @click="goToNextCourse"
         >
-          下一课
+          Bài tiếp
           <UKbd> ↵ </UKbd>
         </button>
       </div>
@@ -123,7 +124,7 @@ const { showQuestion } = useGameMode();
 const { handleGoToCourseList, goToNextCourse, completeCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
 const { showModal, hideSummary } = useSummary();
-const { zhSentence, enSentence } = useDailySentence();
+const { nativeSentence, enSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
 const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
@@ -176,7 +177,7 @@ function useDoAgain() {
     // 看看是不是没有全部掌握了
     // 如果是全部掌握了 那么给个提示 然后挑战到课程列表
     if (courseStore.isAllMastered()) {
-      toast.info("你已经全部都掌握 自动帮你跳转到课程列表啦", {
+      toast.info("Bạn đã thuộc tất cả rồi, tự động chuyển đến danh sách bài", {
         duration: 1500,
         onAutoClose: () => {
           handleGoToCourseList();
@@ -212,12 +213,13 @@ function useCourse() {
     if (!isAuthenticated()) {
       // 去注册
       modal.open(Dialog, {
-        title: "✨ 解锁更多学习体验",
-        content: "注册后可以进行下一课学习 记录每日学习数据 开启更多功能哦",
+        title: "✨ Mở khóa thêm trải nghiệm học tập",
+        content:
+          "Đăng ký để học bài tiếp theo, ghi lại dữ liệu học tập hàng ngày và mở thêm nhiều tính năng",
         showCancel: true,
         showConfirm: true,
-        cancelText: "稍后再说",
-        confirmText: "立即注册",
+        cancelText: "Để sau",
+        confirmText: "Đăng ký ngay",
         async onConfirm() {
           courseStore.resetStatementIndex();
           showQuestion();
@@ -231,7 +233,7 @@ function useCourse() {
     hideSummary();
 
     if (!haveNextCourse.value) {
-      toast.info("已经是最后一课 自动帮你跳转到课程列表啦", {
+      toast.info("Đã là bài cuối cùng rồi, tự động chuyển đến danh sách bài", {
         duration: 1500,
         onAutoClose: () => {
           handleGoToCourseList();

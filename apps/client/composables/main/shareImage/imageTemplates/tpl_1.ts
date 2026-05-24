@@ -5,7 +5,7 @@
 import type { ShareImageTemplateData } from "../share";
 
 export const tpl_1 = ({
-  zhSentence,
+  nativeSentence,
   enSentence,
   coursePackTitle,
   courseTitle,
@@ -47,7 +47,7 @@ export const tpl_1 = ({
                 type: "div",
                 props: {
                   tw: "text-slate-400 text-lg mb-6",
-                  children: `恭喜您一共完成 ${totalRecordNumber} 道题，用时${totalTime}`,
+                  children: `Chúc mừng bạn đã hoàn thành ${totalRecordNumber} câu, thời gian: ${totalTime}`,
                 },
               },
               {
@@ -68,7 +68,7 @@ export const tpl_1 = ({
                     {
                       type: "div",
                       props: {
-                        children: zhSentence,
+                        children: nativeSentence,
                       },
                     },
                   ],

@@ -4,7 +4,7 @@ import { getHttp } from "./http";
 export interface StatementApiResponse {
   id: string;
   order: number;
-  chinese: string;
+  nativeText: string;
   english: string;
   soundmark: string;
   isMastered: boolean;

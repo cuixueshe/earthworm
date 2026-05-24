@@ -25,7 +25,7 @@ describe("useCurrentStatementEnglishSound", () => {
       order: 1,
       english: "I",
       soundmark: "/I/",
-      chinese: "我",
+      nativeText: "我",
       isMastered: false,
     };
 
@@ -50,7 +50,7 @@ describe("useCurrentStatementEnglishSound", () => {
       order: 2,
       english: "like",
       soundmark: "/like/",
-      chinese: "喜欢",
+      nativeText: "喜欢",
       isMastered: false,
     };
     await vi.advanceTimersToNextTimerAsync();
@@ -67,7 +67,7 @@ describe("useCurrentStatementEnglishSound", () => {
       order: 1,
       english: "I",
       soundmark: "/I/",
-      chinese: "我",
+      nativeText: "我",
       isMastered: false,
     };
 

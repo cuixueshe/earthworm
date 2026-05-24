@@ -1,63 +1,100 @@
 <template>
   <div>
-    <h1>用户条款</h1>
+    <h1>Điều khoản sử dụng</h1>
     <section>
-      <h2>1. 接受条款</h2>
+      <h2>1. Chấp nhận điều khoản</h2>
       <p>
-        用户在使用本服务前，必须仔细阅读并同意本条款。如果用户不同意本条款，不应注册或使用本服务。
+        Trước khi sử dụng dịch vụ, bạn phải đọc kỹ và đồng ý với các điều khoản này. Nếu bạn không
+        đồng ý, vui lòng không đăng ký hoặc sử dụng dịch vụ.
       </p>
       <p>
-        本条款可能随时更新，更新后的条款一旦发布即生效。用户继续使用本服务将被视为接受更新后的条款。
-      </p>
-    </section>
-
-    <section>
-      <h2>2. 账户注册与使用</h2>
-      <p>用户应提供真实、准确、完整的个人信息，并保持信息的及时更新。</p>
-      <p>用户对其账户下的所有行为负责，应妥善保管账户信息和密码，防止未授权使用。</p>
-    </section>
-
-    <section>
-      <h2>3. 隐私政策</h2>
-      <p>本服务尊重用户隐私，承诺不泄露用户的个人信息，除非得到用户的授权或根据法律法规的要求。</p>
-      <p>本服务可能会收集用户信息以提供个性化服务，具体请参考隐私政策。 知识产权</p>
-    </section>
-
-    <section>
-      <h2>4. 知识产权</h2>
-      <p>本服务中的所有内容，包括但不限于文本、图片、音频、视频等，均受知识产权法律的保护。</p>
-      <p>未经许可，用户不得复制、传播、展示或以其他方式使用本服务中的内容。</p>
-    </section>
-
-    <section>
-      <h2>5. 用户行为规范</h2>
-      <p>用户应遵守法律法规，不得利用本服务从事违法活动。</p>
-      <p>用户不得上传、发布或传播侵犯他人合法权益的内容。</p>
-    </section>
-
-    <section>
-      <h2>6. 服务使用限制</h2>
-      <p>本服务可能设置使用限制，包括但不限于使用频率、存储空间等。</p>
-      <p>本服务有权根据需要调整使用限制，并提前通知用户。</p>
-    </section>
-    <section>
-      <h2>7. 责任限制与免责</h2>
-      <p>本服务按现状提供，不承担因使用本服务造成的任何损失。</p>
-      <p>本服务不保证服务的连续性、安全性、准确性或及时性。</p>
-    </section>
-
-    <section>
-      <h2>8. 法律适用与争议解决</h2>
-      <p>本条款的解释、有效性和执行均适用服务提供方所在地的法律。</p>
-      <p>
-        如发生争议，双方应友好协商解决；协商不成的，任何一方可以向服务提供方所在地的人民法院提起诉讼。
+        Các điều khoản này có thể được cập nhật bất cứ lúc nào và có hiệu lực ngay khi được đăng.
+        Việc bạn tiếp tục sử dụng dịch vụ đồng nghĩa với việc chấp nhận các điều khoản đã cập nhật.
       </p>
     </section>
 
     <section>
-      <h2>9. 终止与服务提供方的关系</h2>
-      <p>用户可随时终止使用本服务，本服务也可根据条款终止或限制用户的使用。</p>
-      <p>终止后，用户使用本服务的权利立即终止。</p>
+      <h2>2. Đăng ký và sử dụng tài khoản</h2>
+      <p>Bạn nên cung cấp thông tin cá nhân chính xác, đầy đủ và cập nhật.</p>
+      <p>
+        Bạn chịu trách nhiệm về mọi hoạt động dưới tài khoản của mình, nên giữ kín thông tin đăng
+        nhập để tránh sử dụng trái phép.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Chính sách bảo mật</h2>
+      <p>
+        Dịch vụ tôn trọng quyền riêng tư của người dùng, cam kết không tiết lộ thông tin cá nhân trừ
+        khi được ủy quyền hoặc theo yêu cầu pháp luật.
+      </p>
+      <p>
+        Dịch vụ có thể thu thập thông tin người dùng để cung cấp dịch vụ cá nhân hóa, vui lòng tham
+        khảo chính sách bảo mật để biết thêm chi tiết.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Quyền sở hữu trí tuệ</h2>
+      <p>
+        Tất cả nội dung trong dịch vụ, bao gồm nhưng không giới hạn văn bản, hình ảnh, âm thanh,
+        video, đều được bảo vệ bởi luật sở hữu trí tuệ.
+      </p>
+      <p>
+        Nếu không có sự cho phép, bạn không được sao chép, phân phối, hiển thị hoặc sử dụng nội dung
+        trong dịch vụ dưới bất kỳ hình thức nào.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Quy tắc ứng xử</h2>
+      <p>Bạn phải tuân thủ pháp luật, không được sử dụng dịch vụ cho các hoạt động bất hợp pháp.</p>
+      <p>
+        Bạn không được tải lên, đăng hoặc truyền bá nội dung vi phạm quyền lợi hợp pháp của người
+        khác.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Giới hạn sử dụng dịch vụ</h2>
+      <p>
+        Dịch vụ có thể đặt giới hạn sử dụng, bao gồm nhưng không giới hạn tần suất sử dụng, dung
+        lượng lưu trữ, v.v.
+      </p>
+      <p>
+        Dịch vụ có quyền điều chỉnh giới hạn sử dụng theo nhu cầu và sẽ thông báo trước cho người
+        dùng.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Giới hạn trách nhiệm</h2>
+      <p>
+        Dịch vụ được cung cấp theo trạng thái hiện tại, không chịu trách nhiệm về bất kỳ tổn thất
+        nào do việc sử dụng dịch vụ gây ra.
+      </p>
+      <p>Dịch vụ không đảm bảo tính liên tục, an toàn, chính xác hoặc kịp thời của dịch vụ.</p>
+    </section>
+
+    <section>
+      <h2>8. Luật áp dụng và giải quyết tranh chấp</h2>
+      <p>
+        Việc giải thích, tính hiệu lực và thực thi các điều khoản này tuân theo pháp luật nơi cung
+        cấp dịch vụ.
+      </p>
+      <p>
+        Trong trường hợp xảy ra tranh chấp, các bên sẽ ưu tiên thương lượng giải quyết; nếu không
+        thể thương lượng, bất kỳ bên nào cũng có thể khởi kiện theo quy định pháp luật.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Chấm dứt sử dụng</h2>
+      <p>
+        Bạn có thể ngừng sử dụng dịch vụ bất cứ lúc nào. Dịch vụ cũng có thể chấm dứt hoặc hạn chế
+        sử dụng của bạn theo các điều khoản này.
+      </p>
+      <p>Sau khi chấm dứt, quyền sử dụng dịch vụ của bạn sẽ kết thúc ngay lập tức.</p>
     </section>
   </div>
 </template>

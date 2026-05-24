@@ -62,26 +62,26 @@ describe("date util", () => {
 
 describe("formatSecondsToTime", () => {
   it("formats seconds correctly", () => {
-    expect(formatSecondsToTime(45)).toBe("45秒");
+    expect(formatSecondsToTime(45)).toBe("45 giây");
   });
 
   it("formats minutes correctly", () => {
-    expect(formatSecondsToTime(600)).toBe("10分");
+    expect(formatSecondsToTime(600)).toBe("10 phút");
   });
 
   it("formats minutes and seconds correctly", () => {
-    expect(formatSecondsToTime(605)).toBe("10分5秒");
+    expect(formatSecondsToTime(605)).toBe("10 phút 5 giây");
   });
 
   it("formats hours correctly", () => {
-    expect(formatSecondsToTime(3600)).toBe("1时");
+    expect(formatSecondsToTime(3600)).toBe("1 giờ");
   });
 
   it("formats hours, minutes, and seconds correctly", () => {
-    expect(formatSecondsToTime(3661)).toBe("1时1分1秒");
+    expect(formatSecondsToTime(3661)).toBe("1 giờ 1 phút 1 giây");
   });
 
   it("formats 0 seconds correctly", () => {
-    expect(formatSecondsToTime(0)).toBe("0秒");
+    expect(formatSecondsToTime(0)).toBe("0 giây");
   });
 });

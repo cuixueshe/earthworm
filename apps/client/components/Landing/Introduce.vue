@@ -14,87 +14,91 @@
         <div
           class="hide-scrollbar h-[96%] w-[97%] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-700 bg-[#17172e] px-5 py-4"
         >
-          <h2 class="mb-3 rounded-lg bg-[#232339] py-4 text-center text-xl font-bold">快速上手</h2>
-          <h3 class="pb-2 text-base font-semibold">当前页面</h3>
+          <h2 class="mb-3 rounded-lg bg-[#232339] py-4 text-center text-xl font-bold">
+            Bắt đầu nhanh
+          </h2>
+          <h3 class="pb-2 text-base font-semibold">Trang hiện tại</h3>
           <p class="py-1">
-            点击按钮
+            Nhấn nút
             <span
               class="mx-1 inline-block rounded-lg border border-solid border-fuchsia-300 px-1 text-fuchsia-300"
-              >Get Started</span
+              >Bắt đầu</span
             >
-            <span class="text-gray-500">（或快捷键 Enter ⏎）</span>
-            开启你的第一节课！
+            <span class="text-gray-500">(hoặc phím tắt Enter ⏎)</span>
+            để bắt đầu bài học đầu tiên!
           </p>
-          <h3 class="py-2 text-base font-semibold">答题页面</h3>
+          <h3 class="py-2 text-base font-semibold">Trang làm bài</h3>
           <p class="py-1 leading-7">
-            看到
-            <span class="text-fuchsia-500">紫色下划线</span>
-            亮起，输入单词，按下空格键
-            <span class="text-gray-500">（Space ␣）</span>
-            向后切换单词，待输入完成后再按下回车键
-            <span class="text-gray-500">（Enter ⏎）</span>
-            来提交题目
-          </p>
-          <p class="py-1 leading-7">
-            题目提交后若出现
-            <span class="text-red-500">红色</span>
-            单词和下划线显示，代表这部分单词存在某些错误需要更正，此时可按下空格键
-            <span class="text-gray-500">（Space ␣）</span>
-            快速定位到第一个错误单词并清空，完成更改后再按一次空格继续定位到下个错词
+            Khi thấy
+            <span class="text-fuchsia-500">gạch dưới màu tím</span>
+            sáng lên, nhập từ, nhấn phím cách
+            <span class="text-gray-500">(Space ␣)</span>
+            để chuyển sang từ tiếp theo, sau khi nhập xong nhấn Enter
+            <span class="text-gray-500">(Enter ⏎)</span>
+            để gửi câu trả lời
           </p>
           <p class="py-1 leading-7">
-            此时若发现上个错词未正确修改，可按下退格键
-            <span class="text-gray-500">（Backspace ⌫）</span>
-            来回退到上一个错词，直到所有错词被更正完成，按下回车键提交即可
+            Sau khi gửi, nếu có từ hiển thị
+            <span class="text-red-500">màu đỏ</span>
+            và gạch dưới, tức là từ đó có lỗi cần sửa. Lúc này nhấn phím cách
+            <span class="text-gray-500">(Space ␣)</span>
+            để nhảy đến từ sai đầu tiên và xóa, sau khi sửa xong nhấn cách tiếp để đến từ sai tiếp
+            theo
           </p>
           <p class="py-1 leading-7">
-            验证通过后会显示答案页面，同时会播放对应题目语音用于辅助记忆。
+            Nếu phát hiện từ sai trước chưa sửa đúng, nhấn phím Backspace
+            <span class="text-gray-500">(Backspace ⌫)</span>
+            để quay lại từ sai trước đó, cho đến khi tất cả từ sai được sửa xong, nhấn Enter để gửi
           </p>
-          <h3 class="py-2 text-base font-semibold">答题小技巧</h3>
           <p class="py-1 leading-7">
-            底部提示面板的按钮
+            Sau khi xác minh đúng, trang đáp án sẽ hiển thị, đồng thời phát âm câu tương ứng để hỗ
+            trợ ghi nhớ.
+          </p>
+          <h3 class="py-2 text-base font-semibold">Mẹo làm bài</h3>
+          <p class="py-1 leading-7">
+            Nút ở bảng gợi ý phía dưới
             <a
               class="ml-1 text-[#3498db] hover:text-theme-dark"
               href="https://www.bilibili.com/video/BV1py421q7Mp/"
             >
-              👉 一分钟点我快速了解</a
+              👉 Nhấn vào đây để tìm hiểu nhanh trong 1 phút</a
             >
           </p>
           <p class="p-1">
             <button class="instruction-btn">⌃ Ctrl+'</button>
-            <span class="text-gray-500">（或快捷键 Ctrl+'）</span>
-            播放题目语音
+            <span class="text-gray-500">(hoặc phím tắt Ctrl+')</span>
+            Phát âm câu hỏi
           </p>
           <p class="p-1">
             <button class="instruction-btn">⌃ Ctrl+;</button>
-            <span class="text-gray-500">（或快捷键 Ctrl+;）</span>
-            显示题目答案
+            <span class="text-gray-500">(hoặc phím tắt Ctrl+;)</span>
+            Hiển thị đáp án
           </p>
-          <h3 class="py-2 text-base font-semibold">答案页面</h3>
-          <p class="py-1 leading-7">答案下方的按钮</p>
+          <h3 class="py-2 text-base font-semibold">Trang đáp án</h3>
+          <p class="py-1 leading-7">Các nút bên dưới đáp án</p>
           <p class="py-1">
             <button class="instruction-btn">again</button>
-            <span class="text-gray-500">（或快捷键 Ctrl+;）</span>
-            再来亿次，怎能不会！
+            <span class="text-gray-500">(hoặc phím tắt Ctrl+;)</span>
+            Làm lại, chắc chắn sẽ thuộc!
           </p>
           <p class="py-1">
             <button class="instruction-btn">next</button>
-            <span class="text-gray-500">（或快捷键 Enter）</span>
-            下一题，冲冲冲霸占榜首！🏄‍♂️
+            <span class="text-gray-500">(hoặc phím tắt Enter)</span>
+            Câu tiếp theo, tiến lên nhé! 🏄‍♂️
           </p>
 
-          <h2 class="py-4 text-xl font-bold">帮助</h2>
-          <h3 class="pb-2 text-base font-semibold">课程页面</h3>
+          <h2 class="py-4 text-xl font-bold">Trợ giúp</h2>
+          <h3 class="pb-2 text-base font-semibold">Trang khóa học</h3>
           <p class="py-1 leading-7">
-            输入下划线全是灰色，没有
-            <span class="text-fuchsia-500">紫色</span>
-            亮起时无法输入，需要你动动小手移动鼠标点击输入框进行聚焦哦~
+            Khi gạch dưới toàn màu xám, không có
+            <span class="text-fuchsia-500">màu tím</span>
+            sáng lên thì không thể nhập, bạn cần di chuột và nhấn vào ô nhập để focus nhé~
           </p>
-          <h3 class="py-2 text-base font-semibold">用户设置页面</h3>
+          <h3 class="py-2 text-base font-semibold">Trang cài đặt người dùng</h3>
           <p class="py-1 leading-7">
-            右上角图标进入 User Info
-            切换到设置页面，自定义你喜欢的快捷键，也可以控制语音是否自动播放、单词下划线固定长度、使用空格提交等等……更多个人设置会持续更新
-            😊
+            Nhấn vào biểu tượng góc phải trên vào User Info chuyển sang trang cài đặt, tùy chỉnh
+            phím tắt yêu thích, điều khiển phát âm tự động, độ dài gạch dưới cố định, dùng phím cách
+            để gửi... nhiều cài đặt cá nhân hơn sẽ được cập nhật liên tục 😊
             <i
               class="mx-2 inline h-8 w-1 animate-wink bg-slate-900 p-[2px] text-sm dark:bg-white"
             ></i>
@@ -108,20 +112,26 @@
           class="hide-scrollbar h-[96%] w-[97%] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-700 bg-[#17172e] px-5 py-4"
         >
           <h2 class="mb-3 rounded-lg bg-[#232339] py-4 text-center text-xl font-bold">
-            学习原理：通过连词造句的方法来练习英语 😄
+            Nguyên lý học tập: Luyện tập tiếng Anh qua phương pháp ghép từ thành câu 😄
           </h2>
-          <h3 class="pb-2 text-base font-semibold">以句子为核心</h3>
-          <p class="py-1">每个句子包含单词/词组/语法，所以学会一个句子后，就可以清晰地表达出来。</p>
-          <h3 class="py-2 text-base font-semibold">任务拆分</h3>
-          <p class="py-1 leading-7">将一个长难句拆分成一个个的小单元（单词/词组）</p>
-          <h3 class="py-2 text-base font-semibold">重复</h3>
-          <p class="py-1 leading-7">通过不断地重复来形成肌肉记忆</p>
+          <h3 class="pb-2 text-base font-semibold">Lấy câu làm cốt lõi</h3>
+          <p class="py-1">
+            Mỗi câu bao gồm từ vựng/cụm từ/ngữ pháp, nên khi học được một câu, bạn có thể diễn đạt
+            rõ ràng.
+          </p>
+          <h3 class="py-2 text-base font-semibold">Chia nhỏ nhiệm vụ</h3>
+          <p class="py-1 leading-7">Chia một câu dài khó thành các đơn vị nhỏ (từ vựng/cụm từ)</p>
+          <h3 class="py-2 text-base font-semibold">Lặp lại</h3>
+          <p class="py-1 leading-7">Thông qua việc lặp lại liên tục để tạo phản xạ tự nhiên</p>
           <h3 class="py-2 text-base font-semibold">i+1</h3>
-          <p class="py-1 leading-7">循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念</p>
-          <h3 class="pb-2 text-base font-semibold">正向反馈来的快</h3>
           <p class="py-1 leading-7">
-            当自己可以写出长难句时，会非常有成就感，所以也会越学越想学。打破了传统且非常痛苦的英语学习方案
-            ——背单词（还记得 abandon 吗？ oh 不，现在是 aback 了）
+            Tăng dần độ khó, bắt đầu từ câu đơn giản nhất rồi đến những khái niệm phong phú hơn
+          </p>
+          <h3 class="pb-2 text-base font-semibold">Phản hồi tích cực đến nhanh</h3>
+          <p class="py-1 leading-7">
+            Khi có thể viết được câu dài khó, bạn sẽ rất có thành tựu cảm, nên càng học càng muốn
+            học. Phá vỡ phương pháp học tiếng Anh truyền thống nhàm chán — học thuộc từ vựng (bạn
+            còn nhớ abandon không? oh không, giờ là aback rồi)
           </p>
         </div>
       </div>

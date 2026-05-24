@@ -8,7 +8,7 @@
         class="clickable-item flex items-center justify-center"
         :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
       >
-        <UTooltip text="课程列表">
+        <UTooltip text="Danh sách bài">
           <IconsExpand class="h-7 w-7" />
         </UTooltip>
       </NuxtLink>
@@ -16,7 +16,7 @@
         class="clickable-item ml-4"
         @click="openCourseContents"
       >
-        <UTooltip text="课程题目列表">
+        <UTooltip text="Danh sách câu hỏi">
           {{ currentCourseInfo }}
         </UTooltip>
       </div>
@@ -29,7 +29,7 @@
         @click="openGameSettingModal"
         v-if="isDictationMode()"
       >
-        <UTooltip text="游戏设置">
+        <UTooltip text="Cài đặt trò chơi">
           <UIcon
             name="i-ph-gear"
             class="clickable-item h-6 w-6"
@@ -42,7 +42,7 @@
         @click="pauseGame"
       >
         <UTooltip
-          text="暂停游戏"
+          text="Tạm dừng"
           :shortcuts="parseShortcut(shortcutKeys.pause)"
         >
           <UIcon
@@ -53,7 +53,7 @@
       </div>
 
       <div @click="handleDoAgain">
-        <UTooltip text="重置当前课程进度">
+        <UTooltip text="Đặt lại tiến độ bài hiện tại">
           <UIcon
             name="i-ph-arrow-counter-clockwise"
             class="clickable-item h-6 w-6"
@@ -61,7 +61,7 @@
         </UTooltip>
       </div>
       <div @click="rankingStore.showRankModal">
-        <UTooltip text="排行榜">
+        <UTooltip text="Bảng xếp hạng">
           <UIcon
             name="i-ph-ranking"
             class="clickable-item h-6 w-6"
@@ -133,8 +133,8 @@ function useDoAgain() {
 
   function handleDoAgain() {
     modal.open(Dialog, {
-      title: "重置进度",
-      content: "是否确认重置当前课程进度？",
+      title: "Đặt lại tiến độ",
+      content: "Bạn có chắc chắn muốn đặt lại tiến độ bài hiện tại không?",
       showCancel: true,
       showConfirm: true,
       async onCancel() {

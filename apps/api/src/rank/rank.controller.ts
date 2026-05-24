@@ -13,7 +13,7 @@ export class RankController {
   constructor(private readonly rankService: RankService) {}
 
   @ApiOperation({
-    summary: "获取排行榜信息",
+    summary: "Lấy thông tin bảng xếp hạng",
   })
   @UncheckAuth()
   @UseGuards(AuthGuard)

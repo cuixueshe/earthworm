@@ -1,667 +1,692 @@
 [
 	{
-		"chinese": "这里",
-		"english": "here",
-		"soundmark": "/hɪr/"
+		"nativeText": "giữ",
+		"english": "to keep",
+		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "我",
-		"english": "I",
-		"soundmark": "/aɪ/"
+		"nativeText": "tiết kiệm",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
 	},
 	{
-		"chinese": "我在这里",
-		"english": "I am here",
-		"soundmark": "/aɪ/ /æm/ /hɪr/"
+		"nativeText": "tiền",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "想要",
-		"english": "want",
-		"soundmark": "/wɑnt/"
+		"nativeText": "tiết kiệm tiền",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "我在这里",
-		"english": "I am here",
-		"soundmark": "/aɪ/ /æm/ /hɪr/"
+		"nativeText": "một ít; vài",
+		"english": "some",
+		"soundmark": "/sʌm/"
 	},
 	{
-		"chinese": "我想要在这里",
-		"english": "I want to be here",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /hɪr/"
+		"nativeText": "tiết kiệm một ít tiền",
+		"english": "to save some money",
+		"soundmark": "/tə/ /sev/ /sʌm/ /ˈmʌni/"
 	},
 	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
+		"nativeText": "tôi cần",
+		"english": "I need",
+		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我不想在这里",
-		"english": "I don't want to be here",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/"
+		"nativeText": "tôi cần tiết kiệm một ít tiền",
+		"english": "I need to save some money",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/"
 	},
 	{
-		"chinese": "那里",
-		"english": "there",
-		"soundmark": "/ðɛr/"
+		"nativeText": "mua",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "我不想去那里",
-		"english": "I don't want to be there",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+		"nativeText": "xe",
+		"english": "car",
+		"soundmark": "/kɑr/"
 	},
 	{
-		"chinese": "我想要去那里",
-		"english": "I want to be there",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+		"nativeText": "mới",
+		"english": "new",
+		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "我不想在这里我想要去那里",
-		"english": "I don't want to be here I want to be there",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+		"nativeText": "một chiếc xe mới",
+		"english": "a new car",
+		"soundmark": "/ə/ /nu/ /kɑr/"
 	},
 	{
-		"chinese": "我在这里",
-		"english": "I am here",
-		"soundmark": "/aɪ/ /æm/ /hɪr/"
+		"nativeText": "mua một chiếc xe mới",
+		"english": "to buy a new car",
+		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /kɑr/"
 	},
 	{
-		"chinese": "当......时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
+		"nativeText": "tôi cần tiết kiệm một ít tiền để mua một chiếc xe mới",
+		"english": "I need to save some money to buy a new car",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /nu/ /kɑr/"
 	},
 	{
-		"chinese": "当我在这里的时候",
-		"english": "when I am here",
-		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/"
+		"nativeText": "tương lai",
+		"english": "the future",
+		"soundmark": "/ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我想要去那里",
-		"english": "I want to be there",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+		"nativeText": "cho; vì",
+		"english": "for",
+		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "当我在这里的时候，我想要去那里",
-		"english": "when I am here I want to be there",
-		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+		"nativeText": "cho tương lai",
+		"english": "for the future",
+		"soundmark": "/fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "当我(过去)在这里的时候，我(过去)想要去那里",
-		"english": "when I was here I wanted to be there",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /aɪ/ /wɑntɪd/ /tə/ /bi/ /ðɛr/"
+		"nativeText": "tôi cần tiết kiệm một ít tiền",
+		"english": "I need to save some money",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/"
 	},
 	{
-		"chinese": "老师",
-		"english": "teacher",
-		"soundmark": "/'titʃɚ/"
+		"nativeText": "tôi cần tiết kiệm một ít tiền cho tương lai",
+		"english": "I need to save some money for the future",
+		"soundmark": "/aɪ/ /nid/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我是一名老师",
-		"english": "I am a teacher",
-		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/"
+		"nativeText": "mỗi; mọi",
+		"english": "every",
+		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "想要",
-		"english": "want",
-		"soundmark": "/wɑnt/"
+		"nativeText": "cơ thể",
+		"english": "body",
+		"soundmark": "/'bɑdi/"
 	},
 	{
-		"chinese": "我想要成为一名老师",
-		"english": "I want to be a teacher",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ə/ /'titʃɚ/"
+		"nativeText": "mọi người",
+		"english": "everybody",
+		"soundmark": "/'ɛvrɪbɑdi/"
 	},
 	{
-		"chinese": "富有的",
-		"english": "rich",
-		"soundmark": "/rɪtʃ/"
+		"nativeText": "cần",
+		"english": "need",
+		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "我是富有的",
-		"english": "I am rich",
-		"soundmark": "/aɪ/ /æm/ /rɪtʃ/"
+		"nativeText": "mọi người cần",
+		"english": "everybody needs",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/"
 	},
 	{
-		"chinese": "想要",
-		"english": "want",
-		"soundmark": "/wɑnt/"
+		"nativeText": "tiết kiệm một ít tiền cho tương lai",
+		"english": "to save some money for the future",
+		"soundmark": "/tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我想要变得富有",
-		"english": "I want to be rich",
-		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /rɪtʃ/"
+		"nativeText": "mọi người cần tiết kiệm một ít tiền cho tương lai",
+		"english": "everybody needs to save some money for the future",
+		"soundmark": "/'ɛvrɪbɑdi/ /nidz/ /tə/ /sev/ /sʌm/ /ˈmʌni/ /fɝ/ /ðə/ /'fjʊtʃɚ/"
 	},
 	{
-		"chinese": "我在这里",
-		"english": "I am here",
-		"soundmark": "/aɪ/ /æm/ /hɪr/"
+		"nativeText": "tiết kiệm tiền",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
 	},
 	{
-		"chinese": "我(过去)在这里",
-		"english": "I was here",
-		"soundmark": "/aɪ/ /wəz/ /hɪr/"
-	},
-	{
-		"chinese": "当......时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
-	},
-	{
-		"chinese": "当我(过去)在这里的时候",
-		"english": "when I was here",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/"
-	},
-	{
-		"chinese": "在......之前；以前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
-	},
-	{
-		"chinese": "当我以前在这里的时候",
-		"english": "when I was here before",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
-	},
-	{
-		"chinese": "注意到；察觉到",
-		"english": "to notice",
-		"soundmark": "/tə/ /ˈnotɪs/"
-	},
-	{
-		"chinese": "我",
-		"english": "I",
-		"soundmark": "/aɪ/"
-	},
-	{
-		"chinese": "我注意到",
-		"english": "I notice",
-		"soundmark": "/aɪ/ /ˈnotɪs/"
-	},
-	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
-	},
-	{
-		"chinese": "我注意到那个",
-		"english": "I notice that",
-		"soundmark": "/aɪ/ /ˈnotɪs/ /ðæt/"
-	},
-	{
-		"chinese": "我(过去)注意到那个",
-		"english": "I noticed that",
-		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/"
-	},
-	{
-		"chinese": "我(过去)没有注意到那个",
-		"english": "I didn't notice that",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/"
-	},
-	{
-		"chinese": "当我以前在这里的时候",
-		"english": "when I was here before",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
-	},
-	{
-		"chinese": "我(过去)没有注意那个当我以前在这里的时候",
-		"english": "I didn't notice that when I was here before",
-		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/ /wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
-	},
-	{
-		"chinese": "我(过去)注意到",
-		"english": "I noticed",
-		"soundmark": "/aɪ/ /ˈnotɪst/"
-	},
-	{
-		"chinese": "某个东西",
-		"english": "something",
-		"soundmark": "/'sʌmθɪŋ/"
-	},
-	{
-		"chinese": "错误的",
-		"english": "wrong",
-		"soundmark": "/rɔŋ/"
-	},
-	{
-		"chinese": "错误的某个东西",
-		"english": "something wrong",
-		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/"
-	},
-	{
-		"chinese": "那里",
-		"english": "there",
-		"soundmark": "/ðɛr/"
-	},
-	{
-		"chinese": "错误的某个东西在那里",
-		"english": "something wrong is there",
-		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/ /ɪz/ /ðɛr/"
-	},
-	{
-		"chinese": "存在",
-		"english": "there is",
-		"soundmark": "/ðɛr/ /ɪz/"
-	},
-	{
-		"chinese": "存在错误的某个东西",
-		"english": "there is something wrong",
-		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/"
-	},
-	{
-		"chinese": "这里",
-		"english": "here",
-		"soundmark": "/hɪr/"
-	},
-	{
-		"chinese": "这里有错误的某个东西",
-		"english": "there is something wrong here",
-		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
-	},
-	{
-		"chinese": "这里(过去)有错误的某个东西",
-		"english": "there was something wrong here",
-		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
-	},
-	{
-		"chinese": "我(过去)注意到",
-		"english": "I noticed",
-		"soundmark": "/aɪ/ /ˈnotɪst/"
-	},
-	{
-		"chinese": "我(过去)注意到这里(过去)有错误的某个东西",
-		"english": "I noticed there was something wrong here",
-		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
-	},
-	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
-	},
-	{
-		"chinese": "我(过去)注意到(那个)这里(过去)有错误的某个东西",
-		"english": "I noticed that there was something wrong here",
-		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
-	},
-	{
-		"chinese": "不同的",
-		"english": "different",
-		"soundmark": "/'dɪfrənt/"
-	},
-	{
-		"chinese": "某个东西",
-		"english": "something",
-		"soundmark": "/'sʌmθɪŋ/"
-	},
-	{
-		"chinese": "不同的某个东西",
-		"english": "something different",
-		"soundmark": "/'sʌmθɪŋ/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "存在不同的某个东西",
-		"english": "there is something different",
-		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/"
-	},
-	{
-		"chinese": "这里",
-		"english": "here",
-		"soundmark": "/hɪr/"
-	},
-	{
-		"chinese": "这里有不同的某个东西",
-		"english": "there is something different here",
-		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
-	},
-	{
-		"chinese": "这里(过去)有不同的某个东西",
-		"english": "there was something different here",
-		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
-	},
-	{
-		"chinese": "我(过去)注意到",
-		"english": "I noticed",
-		"soundmark": "/aɪ/ /ˈnotɪst/"
-	},
-	{
-		"chinese": "我(过去)注意到这里(过去)存在不同的某个东西",
-		"english": "I noticed there was something different here",
-		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
-	},
-	{
-		"chinese": "那个",
-		"english": "that",
-		"soundmark": "/ðæt/"
-	},
-	{
-		"chinese": "我(过去)注意到(那个)这里(过去)存在不同的某个东西",
-		"english": "I noticed that there was something different here",
-		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
-	},
-	{
-		"chinese": "不同的",
-		"english": "different",
-		"soundmark": "/'dɪfrənt/"
-	},
-	{
-		"chinese": "不同之处",
-		"english": "difference",
-		"soundmark": "/'dɪfrəns/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "和",
-		"english": "and",
-		"soundmark": "/ənd/"
-	},
-	{
-		"chinese": "你和我",
-		"english": "you and me",
-		"soundmark": "/ju/ /ənd/ /mi/"
-	},
-	{
-		"chinese": "在你和我之间",
-		"english": "between you and me",
-		"soundmark": "/bɪ'twin/ /ju/ /ənd/ /mi/"
-	},
-	{
-		"chinese": "在你和我之间的不同",
-		"english": "difference between you and me",
-		"soundmark": "/'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
-	},
-	{
-		"chinese": "大的",
-		"english": "big",
-		"soundmark": "/bɪɡ/"
-	},
-	{
-		"chinese": "一个大的不同",
-		"english": "a big difference",
-		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/"
-	},
-	{
-		"chinese": "在你和我之间的一个大的不同",
-		"english": "a big difference between you and me",
-		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
-	},
-	{
-		"chinese": "那里",
-		"english": "there",
-		"soundmark": "/ðɛr/"
-	},
-	{
-		"chinese": "在你和我之间的一个大的不同在那里",
-		"english": "a big difference between you and me is there",
-		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/ /ɪz/ /ðɛr/"
-	},
-	{
-		"chinese": "存在",
-		"english": "there is",
-		"soundmark": "/ðɛr/ /ɪz/"
-	},
-	{
-		"chinese": "存在在你和我之间的一个大的不同",
-		"english": "there is a big difference between you and me",
-		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
-	},
-	{
-		"chinese": "武器",
-		"english": "weapon",
-		"soundmark": "/ˈwɛpən/"
-	},
-	{
-		"chinese": "工具",
-		"english": "tool",
-		"soundmark": "/tul/"
-	},
-	{
-		"chinese": "一个武器和一个工具",
-		"english": "a weapon and a tool",
-		"soundmark": "/ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "在一个武器和一个工具之间",
-		"english": "between a weapon and a tool",
-		"soundmark": "/bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
-	},
-	{
-		"chinese": "存在一个大的不同",
-		"english": "there is a big difference",
-		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/"
-	},
-	{
-		"chinese": "存在在一个武器和一个工具之间的一个大的不同",
-		"english": "there is a big difference between a weapon and a tool",
-		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
-	},
-	{
-		"chinese": "正确",
-		"english": "right",
-		"soundmark": "/raɪt/"
-	},
-	{
-		"chinese": "错误",
-		"english": "wrong",
-		"soundmark": "/rɔŋ/"
-	},
-	{
-		"chinese": "正确和错误",
-		"english": "right and wrong",
-		"soundmark": "/raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "在对和错之间",
-		"english": "between right and wrong",
-		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "不同之处",
-		"english": "difference",
-		"soundmark": "/'dɪfrəns/"
-	},
-	{
-		"chinese": "那个不同之处(区别)",
-		"english": "the difference",
-		"soundmark": "/ðə/ /'dɪfrəns/"
-	},
-	{
-		"chinese": "在对和错之间的区别",
-		"english": "the difference between right and wrong",
-		"soundmark": "/ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "知道",
-		"english": "to know",
-		"soundmark": "/tə/ /no/"
-	},
-	{
-		"chinese": "知道对与错的区别",
-		"english": "to know the difference between right and wrong",
-		"soundmark": "/tə/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "我们",
-		"english": "we",
-		"soundmark": "/wi/"
-	},
-	{
-		"chinese": "我们知道",
-		"english": "we know",
-		"soundmark": "/wi/ /no/"
-	},
-	{
-		"chinese": "所有；全部",
-		"english": "all",
-		"soundmark": "/ɔl/"
-	},
-	{
-		"chinese": "我们都知道",
-		"english": "we all know",
-		"soundmark": "/wi/ /ɔl/ /no/"
-	},
-	{
-		"chinese": "我们都知道对与错的区别",
-		"english": "we all know the difference between right and wrong",
-		"soundmark": "/wi/ /ɔl/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "你必须知道",
-		"english": "you have to know",
-		"soundmark": "/ju/ /hæv/ /tə/ /no/"
-	},
-	{
-		"chinese": "你必须知道对与错的区别",
-		"english": "you have to know the difference between right and wrong",
-		"soundmark": "/ju/ /hæv/ /tə/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
-	},
-	{
-		"chinese": "区别",
-		"english": "the difference",
-		"soundmark": "/ðə/ /'dɪfrəns/"
-	},
-	{
-		"chinese": "分辨区别",
-		"english": "to tell the difference",
-		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "正确和错误",
-		"english": "right and wrong",
-		"soundmark": "/raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "在对和错之间",
-		"english": "between right and wrong",
-		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "对与错的区别",
-		"english": "the difference between right and wrong",
-		"soundmark": "/ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "分辨是非",
-		"english": "to tell the difference between right and wrong",
-		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
-	},
-	{
-		"chinese": "年龄大的；老的",
-		"english": "old",
-		"soundmark": "/old/"
-	},
-	{
-		"chinese": "足够",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "足够年龄大",
-		"english": "old enough",
-		"soundmark": "/old/ /ɪ'nʌf/"
+		"nativeText": "tiết kiệm đủ tiền",
+		"english": "to save enough money",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "你是",
-		"english": "you are",
-		"soundmark": "/ju/ /ɚ/"
+		"nativeText": "mua",
+		"english": "to buy",
+		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "你是足够年龄大的",
-		"english": "you are old enough",
-		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/"
+		"nativeText": "một ngôi nhà",
+		"english": "a house",
+		"soundmark": "/ə/ /haʊs/"
 	},
 	{
-		"chinese": "你是年龄大的足够分辨是非",
-		"english": "you are old enough to tell the difference between right and wrong",
-		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+		"nativeText": "mua một ngôi nhà",
+		"english": "to buy a house",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "孩子",
-		"english": "child",
-		"soundmark": "/tʃaɪld/"
+		"nativeText": "tiết kiệm đủ tiền để mua một ngôi nhà",
+		"english": "to save enough money to buy a house",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "孩子们",
-		"english": "children",
-		"soundmark": "/'tʃɪldrən/"
+		"nativeText": "gia đình",
+		"english": "family",
+		"soundmark": "/ˈfæməli/"
 	},
 	{
-		"chinese": "我们的",
-		"english": "our",
-		"soundmark": "/'aʊɚ/"
+		"nativeText": "của anh ấy",
+		"english": "his",
+		"soundmark": "/hɪz/"
 	},
 	{
-		"chinese": "我们的孩子们",
-		"english": "our children",
-		"soundmark": "/'aʊɚ/ /'tʃɪldrən/"
+		"nativeText": "gia đình của anh ấy",
+		"english": "his family",
+		"soundmark": "/hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "教",
-		"english": "to teach",
-		"soundmark": "/tə/ /titʃ/"
+		"nativeText": "cho; vì",
+		"english": "for",
+		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "我们需要",
-		"english": "we need",
-		"soundmark": "/wi/ /nid/"
+		"nativeText": "cho gia đình của anh ấy",
+		"english": "for his family",
+		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "我们需要教",
-		"english": "we need to teach",
-		"soundmark": "/wi/ /nid/ /tə/ /titʃ/"
+		"nativeText": "mua một ngôi nhà",
+		"english": "to buy a house",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "我们需要教我们的孩子们",
-		"english": "we need to teach our children",
-		"soundmark": "/wi/ /nid/ /tə/ /titʃ/ /'aʊɚ/ /'tʃɪldrən/"
+		"nativeText": "mua một ngôi nhà cho gia đình của anh ấy",
+		"english": "to buy a house for his family",
+		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "分辨区别",
-		"english": "to tell the difference",
-		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/"
+		"nativeText": "tiết kiệm đủ tiền",
+		"english": "to save enough money",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "在对和错之间",
-		"english": "between right and wrong",
-		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+		"nativeText": "tiết kiệm đủ tiền để mua một ngôi nhà cho gia đình của anh ấy",
+		"english": "to save enough money to buy a house for his family",
+		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "辨别是非",
-		"english": "to tell the difference between right and wrong",
-		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+		"nativeText": "thử; cố gắng",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "如何",
-		"english": "how",
-		"soundmark": "/haʊ/"
+		"nativeText": "đang cố gắng",
+		"english": "trying",
+		"soundmark": "/ˈtraɪɪŋ/"
 	},
 	{
-		"chinese": "如何辨别是非",
-		"english": "how to tell the difference between right and wrong",
-		"soundmark": "/haʊ/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+		"nativeText": "đang cố gắng",
+		"english": "be trying",
+		"soundmark": "/bi/ /'traɪɪŋ/"
 	},
 	{
-		"chinese": "我们需要教我们的孩子们如何辨别是非",
-		"english": "we need to teach our children how to tell the difference between right and wrong",
-		"soundmark": "/wi/ /nid/ /tə/ /titʃ/ /'aʊɚ/ /'tʃɪldrən/ /haʊ/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+		"nativeText": "anh ấy",
+		"english": "he",
+		"soundmark": "/hi/"
+	},
+	{
+		"nativeText": "anh ấy đang cố gắng",
+		"english": "he is trying",
+		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/"
+	},
+	{
+		"nativeText": "anh ấy đang cố gắng tiết kiệm đủ tiền để mua một ngôi nhà cho gia đình của anh ấy",
+		"english": "he is trying to save enough money to buy a house for his family",
+		"soundmark": "/hi/ /ɪz/ /ˈtraɪɪŋ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /tə/ /baɪ/ /ə/ /haʊs/ /fɝ/ /hɪz/ /ˈfæməli/"
+	},
+	{
+		"nativeText": "tiết kiệm tiền",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "cách; phương pháp",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"nativeText": "tốt",
+		"english": "good",
+		"soundmark": "/ɡʊd/"
+	},
+	{
+		"nativeText": "một cách tốt",
+		"english": "a good way",
+		"soundmark": "/ə/ /ɡʊd/ /we/"
+	},
+	{
+		"nativeText": "tiết kiệm tiền",
+		"english": "to save money",
+		"soundmark": "/tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "một cách tốt để tiết kiệm tiền",
+		"english": "a good way to save money",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "này",
+		"english": "this",
+		"soundmark": "/ðɪs/"
+	},
+	{
+		"nativeText": "là",
+		"english": "is",
+		"soundmark": "/ɪz/"
+	},
+	{
+		"nativeText": "đây là",
+		"english": "this is",
+		"soundmark": "/ðɪs/ /ɪz/"
+	},
+	{
+		"nativeText": "đây là một cách tốt để tiết kiệm tiền",
+		"english": "this is a good way to save money",
+		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "một cách tốt để tiết kiệm tiền là cái này",
+		"english": "a good way to save money is this",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /ˈmʌni/ /ɪz/ /ðɪs/"
+	},
+	{
+		"nativeText": "tiết kiệm",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"nativeText": "thời gian",
+		"english": "time",
+		"soundmark": "/taɪm/"
+	},
+	{
+		"nativeText": "tiết kiệm thời gian",
+		"english": "to save time",
+		"soundmark": "/tə/ /sev/ /taɪm/"
+	},
+	{
+		"nativeText": "tiền",
+		"english": "money",
+		"soundmark": "/ˈmʌni/"
+	},
+	{
+		"nativeText": "tiết kiệm thời gian và tiền",
+		"english": "to save time and money",
+		"soundmark": "/tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "đang cố gắng",
+		"english": "trying",
+		"soundmark": "/ˈtraɪɪŋ/"
+	},
+	{
+		"nativeText": "tôi đang cố gắng",
+		"english": "I am trying",
+		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/"
+	},
+	{
+		"nativeText": "tôi đang cố gắng tiết kiệm thời gian và tiền",
+		"english": "I am trying to save time and money",
+		"soundmark": "/aɪ/ /æm/ /'traɪɪŋ/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "tốt nhất",
+		"english": "the best",
+		"soundmark": "/ðə/ /bɛst/"
+	},
+	{
+		"nativeText": "cách; phương pháp",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"nativeText": "cách tốt nhất",
+		"english": "the best way",
+		"soundmark": "/ðə/ /bɛst/ /we/"
+	},
+	{
+		"nativeText": "tiết kiệm thời gian và tiền",
+		"english": "to save time and money",
+		"soundmark": "/tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "cách tốt nhất để tiết kiệm thời gian và tiền",
+		"english": "the best way to save time and money",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "làm",
+		"english": "to make",
+		"soundmark": "/tə/ /mek/"
+	},
+	{
+		"nativeText": "kế hoạch",
+		"english": "plan",
+		"soundmark": "/plæn/"
+	},
+	{
+		"nativeText": "làm một kế hoạch",
+		"english": "to make a plan",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
+	},
+	{
+		"nativeText": "điều; việc",
+		"english": "thing",
+		"soundmark": "/θɪŋ/"
+	},
+	{
+		"nativeText": "bất kỳ",
+		"english": "any",
+		"soundmark": "/'ɛni/"
+	},
+	{
+		"nativeText": "bất cứ điều gì",
+		"english": "anything",
+		"soundmark": "/'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "làm",
+		"english": "to do",
+		"soundmark": "/tə/ /du/"
+	},
+	{
+		"nativeText": "làm bất cứ điều gì",
+		"english": "to do anything",
+		"soundmark": "/tə/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "bạn làm bất cứ điều gì",
+		"english": "you do anything",
+		"soundmark": "/ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "trước khi",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"nativeText": "trước khi bạn làm bất cứ điều gì",
+		"english": "before you do anything",
+		"soundmark": "/bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "làm một kế hoạch",
+		"english": "to make a plan",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/"
+	},
+	{
+		"nativeText": "làm một kế hoạch trước khi bạn làm bất cứ điều gì",
+		"english": "to make a plan before you do anything",
+		"soundmark": "/tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "cách tốt nhất để tiết kiệm thời gian và tiền",
+		"english": "the best way to save time and money",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/"
+	},
+	{
+		"nativeText": "cách tốt nhất để tiết kiệm thời gian và tiền là làm một kế hoạch trước khi bạn làm bất cứ điều gì",
+		"english": "the best way to save time and money is to make a plan before you do anything",
+		"soundmark": "/ðə/ /bɛst/ /we/ /tə/ /sev/ /taɪm/ /ənd/ /ˈmʌni/ /ɪz/ /tə/ /mek/ /ə/ /plæn/ /bɪ'fɔr/ /ju/ /du/ /'ɛnɪθɪŋ/"
+	},
+	{
+		"nativeText": "tiết kiệm",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"nativeText": "nước",
+		"english": "water",
+		"soundmark": "/'wɔtɚ/"
+	},
+	{
+		"nativeText": "tiết kiệm nước",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "chúng ta",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"nativeText": "chúng ta phải tiết kiệm nước",
+		"english": "we have to save water",
+		"soundmark": "/wi/ /hæv/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "một cách tốt",
+		"english": "a good way",
+		"soundmark": "/ə/ /ɡʊd/ /we/"
+	},
+	{
+		"nativeText": "tiết kiệm nước",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "một cách tốt để tiết kiệm nước",
+		"english": "a good way to save water",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "đây là",
+		"english": "this is",
+		"soundmark": "/ðɪs/ /ɪz/"
+	},
+	{
+		"nativeText": "đây là một cách tốt để tiết kiệm nước",
+		"english": "this is a good way to save water",
+		"soundmark": "/ðɪs/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "một cách tốt để tiết kiệm nước là cái này",
+		"english": "a good way to save water is this",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɪs/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"nativeText": "một cách tốt để tiết kiệm nước ở đây",
+		"english": "a good way to save water is here",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /hɪr/"
+	},
+	{
+		"nativeText": "ở đó",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "một cách tốt để tiết kiệm nước ở đó",
+		"english": "a good way to save water is there",
+		"soundmark": "/ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/ /ɪz/ /ðɛr/"
+	},
+	{
+		"nativeText": "có một cách tốt để tiết kiệm nước",
+		"english": "there is a good way to save water",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /ɡʊd/ /we/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "một cuốn sách",
+		"english": "a book",
+		"soundmark": "/ə/ /bʊk/"
+	},
+	{
+		"nativeText": "ở đó",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "một cuốn sách ở đó",
+		"english": "a book is there",
+		"soundmark": "/ə/ /bʊk/ /ɪz/ /ðɛr/"
+	},
+	{
+		"nativeText": "có một cuốn sách ở đó",
+		"english": "there is a book",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/"
+	},
+	{
+		"nativeText": "cái bàn",
+		"english": "desk",
+		"soundmark": "/dɛsk/"
+	},
+	{
+		"nativeText": "trên",
+		"english": "on",
+		"soundmark": "/ɑn/"
+	},
+	{
+		"nativeText": "trên cái bàn",
+		"english": "on the desk",
+		"soundmark": "/ɑn/ /ðə/ /dɛsk/"
+	},
+	{
+		"nativeText": "có một cuốn sách trên cái bàn",
+		"english": "there is a book on the desk",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /ɑn/ /ðə/ /dɛsk/"
+	},
+	{
+		"nativeText": "có một cuốn sách ở đó",
+		"english": "there is a book there",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /ðɛr/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"nativeText": "có một cuốn sách ở đây",
+		"english": "there is a book here",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bʊk/ /hɪr/"
+	},
+	{
+		"nativeText": "có (số ít)",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"nativeText": "một con dao",
+		"english": "a knife",
+		"soundmark": "/ə/ /naɪf/"
+	},
+	{
+		"nativeText": "có một con dao",
+		"english": "there is a knife",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /naɪf/"
+	},
+	{
+		"nativeText": "nhà bếp",
+		"english": "kitchen",
+		"soundmark": "/'kɪtʃɪn/"
+	},
+	{
+		"nativeText": "trong nhà bếp",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"nativeText": "có một con dao trong nhà bếp",
+		"english": "there is a knife in the kitchen",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /naɪf/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"nativeText": "quả trứng",
+		"english": "egg",
+		"soundmark": "/ɛɡ/"
+	},
+	{
+		"nativeText": "năm",
+		"english": "five",
+		"soundmark": "/faɪv/"
+	},
+	{
+		"nativeText": "năm quả trứng",
+		"english": "five eggs",
+		"soundmark": "/faɪv/ /ɛɡz/"
+	},
+	{
+		"nativeText": "có (số nhiều)",
+		"english": "there are",
+		"soundmark": "/ðɛr/ /ɚ/"
+	},
+	{
+		"nativeText": "có năm quả trứng",
+		"english": "there are five eggs",
+		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/"
+	},
+	{
+		"nativeText": "trong nhà bếp",
+		"english": "in the kitchen",
+		"soundmark": "/ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"nativeText": "có năm quả trứng trong nhà bếp",
+		"english": "there are five eggs in the kitchen",
+		"soundmark": "/ðɛr/ /ɚ/ /faɪv/ /ɛɡz/ /ɪn/ /ðə/ /'kɪtʃɪn/"
+	},
+	{
+		"nativeText": "tiết kiệm",
+		"english": "to save",
+		"soundmark": "/tə/ /sev/"
+	},
+	{
+		"nativeText": "nước",
+		"english": "water",
+		"soundmark": "/'wɔtɚ/"
+	},
+	{
+		"nativeText": "tiết kiệm nước",
+		"english": "to save water",
+		"soundmark": "/tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "cách; phương pháp",
+		"english": "way",
+		"soundmark": "/we/"
+	},
+	{
+		"nativeText": "nhiều",
+		"english": "many",
+		"soundmark": "/'mɛni/"
+	},
+	{
+		"nativeText": "nhiều cách",
+		"english": "many ways",
+		"soundmark": "/'mɛni/ /wez/"
+	},
+	{
+		"nativeText": "nhiều cách để tiết kiệm nước",
+		"english": "many ways to save water",
+		"soundmark": "/'mɛni/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "khác nhau",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"nativeText": "nhiều cách khác nhau để tiết kiệm nước",
+		"english": "many different ways to save water",
+		"soundmark": "/'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
+	},
+	{
+		"nativeText": "có (số nhiều)",
+		"english": "there are",
+		"soundmark": "/ðɛr/ /ɚ/"
+	},
+	{
+		"nativeText": "có nhiều cách khác nhau để tiết kiệm nước",
+		"english": "there are many different ways to save water",
+		"soundmark": "/ðɛr/ /ɚ/ /'mɛni/ /'dɪfrənt/ /wez/ /tə/ /sev/ /'wɔtɚ/"
 	}
 ]

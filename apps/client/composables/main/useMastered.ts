@@ -21,7 +21,7 @@ export function useMastered() {
   const addLoading = ref(false);
   async function markStatementAsMastered() {
     if (!isAuthenticated()) {
-      toast.warning("需要登录哦");
+      toast.warning("Bạn cần đăng nhập");
       return;
     }
 
@@ -66,9 +66,9 @@ export function useMastered() {
       cancelShortcut(undoShortcut);
       registerShortcut(undoShortcut, handleUndo);
 
-      toastId = toast("成功添加到掌握列表中", {
+      toastId = toast("Đã thêm vào danh sách từ đã thuộc", {
         action: {
-          label: "撤销",
+          label: "Hoàn tác",
           onClick: () => handleUndo(new KeyboardEvent("keydown")),
         },
         onAutoClose() {

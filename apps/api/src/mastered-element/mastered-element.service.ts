@@ -18,7 +18,7 @@ export class MasteredElementService {
     }
 
     if (await this.isMastered(userId, content)) {
-      throw new BadRequestException("这个内容已经掌握了");
+      throw new BadRequestException("Nội dung này đã được thuộc");
     }
 
     const [entity] = await this.db

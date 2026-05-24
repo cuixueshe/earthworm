@@ -2,8 +2,8 @@
   <template v-if="isDictationMode()">
     <ModeDictationMode />
   </template>
-  <template v-else-if="isChineseToEnglishMode()">
-    <ModeChineseToEnglishMode />
+  <template v-else-if="isNativeToEnglishMode()">
+    <ModeNativeToEnglishMode />
   </template>
 
   <MainLearningTimer v-if="isAuthenticated()"></MainLearningTimer>
@@ -23,7 +23,7 @@ import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { isAuthenticated } from "~/services/auth";
 import { useGameStore } from "~/store/game";
 
-const { isChineseToEnglishMode, isDictationMode } = useGamePlayMode();
+const { isNativeToEnglishMode, isDictationMode } = useGamePlayMode();
 const gameStore = useGameStore();
 
 onMounted(() => {

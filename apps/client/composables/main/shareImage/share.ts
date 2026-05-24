@@ -4,7 +4,7 @@ import satori from "satori";
 import { ref } from "vue";
 
 import { useDailySentence } from "../summary";
-import { convertSVGtoImg, copyImage, fontEn, fontZh, initCanvas } from "./helper";
+import { convertSVGtoImg, copyImage, fontEn, fontNative, initCanvas } from "./helper";
 import { tpl_1 } from "./imageTemplates/tpl_1";
 import { tpl_2 } from "./imageTemplates/tpl_2";
 
@@ -16,7 +16,7 @@ export enum ShareImageTemplate {
 export interface ShareImageTemplateData {
   coursePackTitle: string;
   courseTitle: string;
-  zhSentence: string;
+  nativeSentence: string;
   enSentence: string;
   userName: string;
   dateStr: string;
@@ -51,7 +51,7 @@ export function useShareModal() {
 
 const generateConfig = async () => {
   const fontEnData = await fontEn();
-  const fontZhData = await fontZh();
+  const fontNativeData = await fontNative();
   return {
     width: 400,
     height: 600,
@@ -63,7 +63,7 @@ const generateConfig = async () => {
       },
       {
         name: "SourceHanSerifSCBold",
-        data: fontZhData,
+        data: fontNativeData,
       },
     ],
   };
@@ -75,7 +75,7 @@ export interface GalleryItem {
 }
 
 export function useGenerateShareImage() {
-  const { zhSentence, enSentence } = useDailySentence();
+  const { nativeSentence, enSentence } = useDailySentence();
 
   const currImageSrc = ref("");
   const currImageIndex = ref(0);
@@ -95,7 +95,7 @@ export function useGenerateShareImage() {
     return imageTemplates[templateKey]({
       coursePackTitle,
       courseTitle,
-      zhSentence: zhSentence.value,
+      nativeSentence: nativeSentence.value,
       enSentence: enSentence.value,
       userName,
       dateStr,
@@ -186,7 +186,7 @@ export function useGenerateShareImage() {
 
   const preLoadFont = () => {
     fontEn();
-    fontZh();
+    fontNative();
   };
 
   preLoadFont();

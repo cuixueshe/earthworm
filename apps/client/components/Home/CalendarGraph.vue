@@ -26,10 +26,10 @@
           <tbody>
             <tr
               v-for="(row, i) in tbody"
-              :key="weeksZh[i]"
+              :key="weeksNative[i]"
             >
               <td class="relative hidden w-8 md:block">
-                <span class="absolute">{{ i % 2 !== 0 ? weeksZh[i] : "" }}</span>
+                <span class="absolute">{{ i % 2 !== 0 ? weeksNative[i] : "" }}</span>
               </td>
               <td
                 v-for="(cell, j) in row"
@@ -49,7 +49,7 @@
 
       <div class="mt-2 flex justify-between px-1">
         <span class="justify-self-end text-sm dark:text-gray-400">
-          {{ totalLearningTime > 0 ? "一共学习" : "还没有开始学习" }}
+          {{ totalLearningTime > 0 ? "Tổng thời gian học" : "Chưa bắt đầu học" }}
           <span
             v-if="totalLearningTime > 0"
             class="font-semibold text-purple-500"
@@ -57,13 +57,13 @@
           >
         </span>
         <div class="flex items-center gap-1 text-xs">
-          <div class="text-gray-500">更少</div>
+          <div class="text-gray-500">Ít</div>
           <div class="cell"></div>
           <div class="cell low"></div>
           <div class="cell moderate"></div>
           <div class="cell high"></div>
           <div class="cell higher"></div>
-          <div class="text-gray-500">更多</div>
+          <div class="text-gray-500">Nhiều</div>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ const emits = defineEmits<EmitsType>();
 const calendarTable = ref<HTMLTableElement>();
 const tableContainer = ref<HTMLDivElement | null>(null);
 
-const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalendarGraph(emits, {
+const { initTable, renderBody, thead, tbody, weeksNative, yearOptions } = useCalendarGraph(emits, {
   getActivityLevel(item) {
     if (!item) return "";
 
@@ -113,16 +113,16 @@ const { initTable, renderBody, thead, tbody, weeksZh, yearOptions } = useCalenda
     return ActivityLevel.Higher;
   },
   tipFormatter(current) {
-    if (current.duration === 0) return `${current?.date} 没有学习`;
+    if (current.duration === 0) return `${current?.date} chưa học`;
 
     let tip = "";
     const minutes = secondToMinutes(current.duration);
     if (minutes < 1) {
-      tip = "不足 1 分钟";
+      tip = "dưới 1 phút";
     } else {
-      tip = ` ${secondToMinutes(current.duration)} 分钟`;
+      tip = ` ${secondToMinutes(current.duration)} phút`;
     }
-    return `${current.date} 学习${tip}`;
+    return `${current.date} đã học ${tip}`;
   },
 });
 
@@ -135,12 +135,12 @@ function formatLearningTime(totalSeconds: number) {
   const minutes = Math.floor((totalSeconds % 3600) / 60);
 
   if (hours > 0) {
-    return `${hours}小时${minutes}分钟`;
+    return `${hours} giờ ${minutes} phút`;
   } else {
     if (minutes === 0) {
-      return `不足 1 分钟`;
+      return `dưới 1 phút`;
     } else {
-      return `${minutes}分钟`;
+      return `${minutes} phút`;
     }
   }
 }

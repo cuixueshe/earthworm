@@ -1,636 +1,636 @@
 [
 	{
-		"chinese": "去",
+		"nativeText": "đi",
 		"english": "to go",
 		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "外面",
+		"nativeText": "ngoài",
 		"english": "out",
 		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "去外面",
+		"nativeText": "đi ra ngoài",
 		"english": "to go out",
 		"soundmark": "/tə/ /ɡo/ /aʊt/"
 	},
 	{
-		"chinese": "晚上",
+		"nativeText": "tối",
 		"english": "night",
 		"soundmark": "/naɪt/"
 	},
 	{
-		"chinese": "在",
+		"nativeText": "ở",
 		"english": "at",
 		"soundmark": "/ət/"
 	},
 	{
-		"chinese": "在晚上",
+		"nativeText": "vào buổi tối",
 		"english": "at night",
 		"soundmark": "/ət/ /naɪt/"
 	},
 	{
-		"chinese": "在晚上去外面",
+		"nativeText": "đi ra ngoài vào buổi tối",
 		"english": "to go out at night",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/"
 	},
 	{
-		"chinese": "和......一起",
+		"nativeText": "cùng với",
 		"english": "with",
 		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "和我一起",
+		"nativeText": "cùng với tôi",
 		"english": "with me",
 		"soundmark": "/wɪð/ /mi/"
 	},
 	{
-		"chinese": "和我一起在晚上去外面",
+		"nativeText": "đi ra ngoài vào buổi tối cùng với tôi",
 		"english": "to go out at night with me",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /mi/"
 	},
 	{
-		"chinese": "和......一起",
+		"nativeText": "cùng với",
 		"english": "with",
 		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "外面",
+		"nativeText": "ngoài",
 		"english": "out",
 		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "不和......一起",
+		"nativeText": "không cùng với",
 		"english": "without",
 		"soundmark": "/wɪ'θaʊt/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "不和我一起",
+		"nativeText": "không cùng với tôi",
 		"english": "without me",
 		"soundmark": "/wɪ'θaʊt/ /mi/"
 	},
 	{
-		"chinese": "不和我一起在晚上去外面",
+		"nativeText": "đi ra ngoài vào buổi tối không cùng với tôi",
 		"english": "to go out at night without me",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪ'θaʊt/ /mi/"
 	},
 	{
-		"chinese": "父母",
+		"nativeText": "bố mẹ",
 		"english": "parents",
 		"soundmark": "/'pɛrənts/"
 	},
 	{
-		"chinese": "你的",
+		"nativeText": "của bạn",
 		"english": "your",
 		"soundmark": "/jʊr/"
 	},
 	{
-		"chinese": "你的父母",
+		"nativeText": "bố mẹ của bạn",
 		"english": "your parents",
 		"soundmark": "/jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "和......一起",
+		"nativeText": "cùng với",
 		"english": "with",
 		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "和你的父母一起",
+		"nativeText": "cùng với bố mẹ của bạn",
 		"english": "with your parents",
 		"soundmark": "/wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "在晚上去外面",
+		"nativeText": "đi ra ngoài vào buổi tối",
 		"english": "to go out at night",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/"
 	},
 	{
-		"chinese": "和你的父母一起在晚上去外面",
+		"nativeText": "đi ra ngoài vào buổi tối cùng với bố mẹ của bạn",
 		"english": "to go out at night with your parents",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以和你父母一起在晚上去外面",
+		"nativeText": "bạn có thể đi ra ngoài vào buổi tối cùng với bố mẹ của bạn",
 		"english": "you can go out at night with your parents",
 		"soundmark": "/ju/ /kæn/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "和......一起",
+		"nativeText": "cùng với",
 		"english": "with",
 		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "外面",
+		"nativeText": "ngoài",
 		"english": "out",
 		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "不和......一起",
+		"nativeText": "không cùng với",
 		"english": "without",
 		"soundmark": "/wɪ'θaʊt/"
 	},
 	{
-		"chinese": "不和你的父母一起",
+		"nativeText": "không cùng với bố mẹ của bạn",
 		"english": "without your parents",
 		"soundmark": "/wɪ'θaʊt/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "不和你的父母一起在晚上去外面",
+		"nativeText": "đi ra ngoài vào buổi tối không cùng với bố mẹ của bạn",
 		"english": "to go out at night without your parents",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪ'θaʊt/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你不可以",
+		"nativeText": "bạn không thể",
 		"english": "you can't",
 		"soundmark": "/ju/ /kænt/"
 	},
 	{
-		"chinese": "你不可以不和你的父母一起在晚上去外面",
+		"nativeText": "bạn không thể đi ra ngoài vào buổi tối không cùng với bố mẹ của bạn",
 		"english": "you can't go out at night without your parents",
 		"soundmark": "/ju/ /kænt/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "成年人",
+		"nativeText": "người lớn",
 		"english": "adult",
 		"soundmark": "/əˈdʌlt/"
 	},
 	{
-		"chinese": "一个成年人",
+		"nativeText": "một người lớn",
 		"english": "an adult",
 		"soundmark": "/ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "我是",
+		"nativeText": "tôi là",
 		"english": "I am",
 		"soundmark": "/aɪ/ /æm/"
 	},
 	{
-		"chinese": "我是一个成年人",
+		"nativeText": "tôi là một người lớn",
 		"english": "I am an adult",
 		"soundmark": "/aɪ/ /æm/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你是",
+		"nativeText": "bạn là",
 		"english": "you are",
 		"soundmark": "/ju/ /ɚ/"
 	},
 	{
-		"chinese": "你是一个成年人",
+		"nativeText": "bạn là một người lớn",
 		"english": "you are an adult",
 		"soundmark": "/ju/ /ɚ/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你不是一个成年人",
+		"nativeText": "bạn không phải là một người lớn",
 		"english": "you are not an adult",
 		"soundmark": "/ju/ /ɚ/ /nɑt/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "如果",
+		"nativeText": "nếu",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "如果你不是一个成年人",
+		"nativeText": "nếu bạn không phải là một người lớn",
 		"english": "if you are not an adult",
 		"soundmark": "/ɪf/ /ju/ /ɚ/ /nɑt/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你不可以不和你的父母一起在晚上去外面",
+		"nativeText": "bạn không thể đi ra ngoài vào buổi tối không cùng với bố mẹ của bạn",
 		"english": "you can't go out at night without your parents",
 		"soundmark": "/ju/ /kænt/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "你不可以不和你的父母一起在晚上去外面如果你不是一个成年人",
+		"nativeText": "bạn không thể đi ra ngoài vào buổi tối không cùng với bố mẹ của bạn nếu bạn không phải là một người lớn",
 		"english": "you can't go out at night without your parents if you are not an adult",
 		"soundmark": "/ju/ /kænt/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/ /ɪf/ /ju/ /ɚ/ /nɑt/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你可以不和你的父母一起在晚上去外面",
+		"nativeText": "bạn có thể đi ra ngoài vào buổi tối không cùng với bố mẹ của bạn",
 		"english": "you can go out at night without your parents",
 		"soundmark": "/ju/ /kæn/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "你是一个成年人",
+		"nativeText": "bạn là một người lớn",
 		"english": "you are an adult",
 		"soundmark": "/ju/ /ɚ/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "如果你是一个成年人",
+		"nativeText": "nếu bạn là một người lớn",
 		"english": "if you are an adult",
 		"soundmark": "/ɪf/ /ju/ /ɚ/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "你可以不和你的父母一起在晚上去外面如果你是一个成年人",
+		"nativeText": "bạn có thể đi ra ngoài vào buổi tối không cùng với bố mẹ của bạn nếu bạn là một người lớn",
 		"english": "you can go out at night without your parents if you are an adult",
 		"soundmark": "/ju/ /kæn/ /ɡo/ /aʊt/ /ət/ /naɪt/ /wɪð/ /jʊr/ /'pɛrənts/ /ɪf/ /ju/ /ɚ/ /ən/ /əˈdʌlt/"
 	},
 	{
-		"chinese": "驾驶；开车",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以开车",
+		"nativeText": "bạn có thể lái xe",
 		"english": "you can drive",
 		"soundmark": "/ju/ /kæn/ /draɪv/"
 	},
 	{
-		"chinese": "不可以",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "你不可以开车",
+		"nativeText": "bạn không thể lái xe",
 		"english": "you can't drive",
 		"soundmark": "/ju/ /kænt/ /draɪv/"
 	},
 	{
-		"chinese": "驾驶员",
+		"nativeText": "tài xế",
 		"english": "driver",
 		"soundmark": "/'draɪvɚ/"
 	},
 	{
-		"chinese": "执照",
+		"nativeText": "giấy phép",
 		"english": "license",
 		"soundmark": "/'laɪsns/"
 	},
 	{
-		"chinese": "驾照",
+		"nativeText": "bằng lái xe",
 		"english": "driver's license",
 		"soundmark": "/'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "一个驾照",
+		"nativeText": "một bằng lái xe",
 		"english": "a driver's license",
 		"soundmark": "/ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "不和......在一起；没有......",
+		"nativeText": "không có",
 		"english": "without",
 		"soundmark": "/wɪ'θaʊt/"
 	},
 	{
-		"chinese": "没有一个驾照",
+		"nativeText": "không có bằng lái xe",
 		"english": "without a driver's license",
 		"soundmark": "/wɪ'θaʊt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "没有一个驾照你不可以开车",
+		"nativeText": "bạn không thể lái xe không có bằng lái xe",
 		"english": "you can't drive without a driver's license",
 		"soundmark": "/ju/ /kænt/ /draɪv/ /wɪ'θaʊt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "应该",
+		"nativeText": "nên",
 		"english": "should",
 		"soundmark": "/ʃʊd/"
 	},
 	{
-		"chinese": "不应该",
+		"nativeText": "không nên",
 		"english": "should not",
 		"soundmark": "/ʃʊd/ /nɑt/"
 	},
 	{
-		"chinese": "没有一个驾照你不应该开车",
+		"nativeText": "bạn không nên lái xe không có bằng lái xe",
 		"english": "you should not drive without a driver's license",
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /draɪv/ /wɪ'θaʊt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "朋友",
+		"nativeText": "bạn",
 		"english": "friend",
 		"soundmark": "/frɛnd/"
 	},
 	{
-		"chinese": "老的",
+		"nativeText": "già",
 		"english": "old",
 		"soundmark": "/old/"
 	},
 	{
-		"chinese": "老朋友",
+		"nativeText": "bạn cũ",
 		"english": "old friend",
 		"soundmark": "/old/ /frɛnd/"
 	},
 	{
-		"chinese": "一个老朋友",
+		"nativeText": "một bạn cũ",
 		"english": "an old friend",
 		"soundmark": "/ən/ /old/ /frɛnd/"
 	},
 	{
-		"chinese": "老的；年龄大的",
+		"nativeText": "lớn tuổi",
 		"english": "old",
 		"soundmark": "/old/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她是年龄大的",
+		"nativeText": "cô ấy đã lớn tuổi",
 		"english": "she is old",
 		"soundmark": "/ʃi/ /ɪz/ /old/"
 	},
 	{
-		"chinese": "足够",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "她是足够年龄大的",
+		"nativeText": "cô ấy đủ lớn tuổi",
 		"english": "she is old enough",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "开车",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "她是年龄大的足够开车",
+		"nativeText": "cô ấy đủ lớn tuổi để lái xe",
 		"english": "she is old enough to drive",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "not",
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "她不是年龄大的足够开车",
+		"nativeText": "cô ấy chưa đủ lớn tuổi để lái xe",
 		"english": "she is not old enough to drive",
 		"soundmark": "/ʃi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "认为",
+		"nativeText": "nghĩ",
 		"english": "to think",
 		"soundmark": "/tə/ /θɪŋk/"
 	},
 	{
-		"chinese": "我认为",
+		"nativeText": "tôi nghĩ",
 		"english": "I think",
 		"soundmark": "/aɪ/ /θɪŋk/"
 	},
 	{
-		"chinese": "我认为她年龄不够开车",
+		"nativeText": "tôi nghĩ cô ấy chưa đủ lớn tuổi để lái xe",
 		"english": "I think she is not old enough to drive",
 		"soundmark": "/aɪ/ /θɪŋk/ /ʃi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我不认为她足够年龄开车",
+		"nativeText": "tôi không nghĩ cô ấy đủ lớn tuổi để lái xe",
 		"english": "I don't think she is old enough to drive",
 		"soundmark": "/aɪ/ /dont/ /θɪŋk/ /ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "为了",
+		"nativeText": "cho",
 		"english": "for",
 		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "自己",
+		"nativeText": "bản thân",
 		"english": "self",
 		"soundmark": "/sɛlf/"
 	},
 	{
-		"chinese": "她自己",
+		"nativeText": "bản thân cô ấy",
 		"english": "herself",
 		"soundmark": "/hɝ'sɛlf/"
 	},
 	{
-		"chinese": "为了她自己",
+		"nativeText": "cho bản thân cô ấy",
 		"english": "for herself",
 		"soundmark": "/fɝ/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "为了她自己决定",
+		"nativeText": "quyết định cho bản thân cô ấy",
 		"english": "to decide for herself",
 		"soundmark": "/tə/ /dɪ'saɪd/ /fɝ/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "她是年龄大的",
+		"nativeText": "cô ấy đã lớn tuổi",
 		"english": "she is old",
 		"soundmark": "/ʃi/ /ɪz/ /old/"
 	},
 	{
-		"chinese": "足够",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "她是足够年龄大的",
+		"nativeText": "cô ấy đủ lớn tuổi",
 		"english": "she is old enough",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "她是年龄大的足够决定",
+		"nativeText": "cô ấy đủ lớn tuổi để quyết định",
 		"english": "she is old enough to decide",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "为了她自己决定",
+		"nativeText": "quyết định cho bản thân cô ấy",
 		"english": "to decide for herself",
 		"soundmark": "/tə/ /dɪ'saɪd/ /fɝ/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "她是年龄大的足够为了她自己决定",
+		"nativeText": "cô ấy đủ lớn tuổi để quyết định cho bản thân mình",
 		"english": "she is old enough to decide for herself",
 		"soundmark": "/ʃi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /dɪ'saɪd/ /fɝ/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "外面",
+		"nativeText": "ngoài",
 		"english": "out",
 		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "去",
+		"nativeText": "đi",
 		"english": "to go",
 		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "去外面",
+		"nativeText": "đi ra ngoài",
 		"english": "to go out",
 		"soundmark": "/tə/ /ɡo/ /aʊt/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要去外面",
+		"nativeText": "tôi muốn đi ra ngoài",
 		"english": "I want to go out",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡo/ /aʊt/"
 	},
 	{
-		"chinese": "家",
+		"nativeText": "nhà",
 		"english": "home",
 		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "去家",
+		"nativeText": "đi về nhà",
 		"english": "to go home",
 		"soundmark": "/tə/ /ɡo/ /hom/"
 	},
 	{
-		"chinese": "我想要去家",
+		"nativeText": "tôi muốn đi về nhà",
 		"english": "I want to go home",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡo/ /hom/"
 	},
 	{
-		"chinese": "学校",
+		"nativeText": "trường",
 		"english": "school",
 		"soundmark": "/skul/"
 	},
 	{
-		"chinese": "去",
+		"nativeText": "đi",
 		"english": "to go",
 		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "去上学",
+		"nativeText": "đi đến trường",
 		"english": "to go to school",
 		"soundmark": "/tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想去上学",
+		"nativeText": "tôi muốn đi đến trường",
 		"english": "I want to go to school",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "老的；年龄大的",
+		"nativeText": "lớn tuổi",
 		"english": "old",
 		"soundmark": "/old/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "he",
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他是年龄大的",
+		"nativeText": "anh ấy đã lớn tuổi",
 		"english": "he is old",
 		"soundmark": "/hi/ /ɪz/ /old/"
 	},
 	{
-		"chinese": "足够",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "他是足够年龄大的",
+		"nativeText": "anh ấy đủ lớn tuổi",
 		"english": "he is old enough",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "去上学",
+		"nativeText": "đi đến trường",
 		"english": "to go to school",
 		"soundmark": "/tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学",
+		"nativeText": "anh ấy đủ lớn tuổi để đi đến trường",
 		"english": "he is old enough to go to school",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "酒",
+		"nativeText": "rượu",
 		"english": "alcohol",
 		"soundmark": "/'ælkəhɔl/"
 	},
 	{
-		"chinese": "买酒",
+		"nativeText": "mua rượu",
 		"english": "to buy alcohol",
 		"soundmark": "/tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "他是足够年龄大的",
+		"nativeText": "anh ấy đủ lớn tuổi",
 		"english": "he is old enough",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "not",
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "他不是足够年龄大的",
+		"nativeText": "anh ấy chưa đủ lớn tuổi",
 		"english": "he is not old enough",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "他不是年龄大的足够去买酒",
+		"nativeText": "anh ấy chưa đủ lớn tuổi để mua rượu",
 		"english": "he is not old enough to buy alcohol",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是他不是年龄大的足够去买酒",
+		"nativeText": "nhưng anh ấy chưa đủ lớn tuổi để mua rượu",
 		"english": "but he is not old enough to buy alcohol",
 		"soundmark": "/bʌt/ /hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学",
+		"nativeText": "anh ấy đủ lớn tuổi để đi đến trường",
 		"english": "he is old enough to go to school",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学但是他不是年龄大的足够去买酒",
+		"nativeText": "anh ấy đủ lớn tuổi để đi đến trường nhưng chưa đủ lớn tuổi để mua rượu",
 		"english": "he is old enough to go to school but he is not old enough to buy alcohol",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/ /bʌt/ /hi/ /ɪz/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	},
 	{
-		"chinese": "他是年龄大的足够去上学但是不是年龄大的足够去买酒",
+		"nativeText": "anh ấy đủ lớn tuổi để đi đến trường nhưng chưa đủ lớn tuổi để mua rượu",
 		"english": "he is old enough to go to school but not old enough to buy alcohol",
 		"soundmark": "/hi/ /ɪz/ /old/ /ɪ'nʌf/ /tə/ /ɡo/ /tə/ /skul/ /bʌt/ /nɑt/ /old/ /ɪ'nʌf/ /tə/ /baɪ/ /'ælkəhɔl/"
 	}

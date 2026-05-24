@@ -1,666 +1,666 @@
 [
 	{
-		"chinese": "清洗",
+		"nativeText": "rửa",
 		"english": "to wash",
 		"soundmark": "/tə/ /wɑʃ/"
 	},
 	{
-		"chinese": "清洗(ing形式)",
+		"nativeText": "rửa (dạng V-ing)",
 		"english": "washing",
 		"soundmark": "/'wɑʃɪŋ/"
 	},
 	{
-		"chinese": "正在清洗",
+		"nativeText": "đang rửa",
 		"english": "be washing",
 		"soundmark": "/bi/ /'wɑʃɪŋ/"
 	},
 	{
-		"chinese": "我(现在)正在清洗",
+		"nativeText": "tôi đang rửa",
 		"english": "I am washing",
 		"soundmark": "/aɪ/ /æm/ /'wɑʃɪŋ/"
 	},
 	{
-		"chinese": "我的车",
+		"nativeText": "xe của tôi",
 		"english": "my car",
 		"soundmark": "/maɪ/ /kɑr/"
 	},
 	{
-		"chinese": "我(现在)正在清洗我的车",
+		"nativeText": "tôi đang rửa xe của tôi",
 		"english": "I am washing my car",
 		"soundmark": "/aɪ/ /æm/ /'wɑʃɪŋ/ /maɪ/ /kɑr/"
 	},
 	{
-		"chinese": "正在清洗",
+		"nativeText": "đang rửa",
 		"english": "be washing",
 		"soundmark": "/bi/ /'wɑʃɪŋ/"
 	},
 	{
-		"chinese": "清洗(过去分词)",
+		"nativeText": "rửa (quá khứ phân từ)",
 		"english": "washed",
 		"soundmark": "/wɑʃt/"
 	},
 	{
-		"chinese": "被清洗了",
+		"nativeText": "được rửa rồi",
 		"english": "be washed",
 		"soundmark": "/bi/ /wɑʃt/"
 	},
 	{
-		"chinese": "我的车",
+		"nativeText": "xe của tôi",
 		"english": "my car",
 		"soundmark": "/maɪ/ /kɑr/"
 	},
 	{
-		"chinese": "我的车被清洗了",
+		"nativeText": "xe của tôi đã được rửa rồi",
 		"english": "my car is washed",
 		"soundmark": "/maɪ/ /kɑr/ /ɪz/ /wɑʃt/"
 	},
 	{
-		"chinese": "我(已经)洗完了我的车",
+		"nativeText": "tôi đã rửa xong xe của tôi",
 		"english": "I have washed my car",
 		"soundmark": "/aɪ/ /hæv/ /wɑʃt/ /maɪ/ /kɑr/"
 	},
 	{
-		"chinese": "手",
+		"nativeText": "tay",
 		"english": "hand",
 		"soundmark": "/hænd/"
 	},
 	{
-		"chinese": "我(已经)洗完了我的手",
+		"nativeText": "tôi đã rửa xong tay của tôi",
 		"english": "I have washed my hands",
 		"soundmark": "/aɪ/ /hæv/ /wɑʃt/ /maɪ/ /hændz/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "完成(过去分词)",
+		"nativeText": "hoàn thành (quá khứ phân từ)",
 		"english": "finished",
 		"soundmark": "/'fɪnɪʃt/"
 	},
 	{
-		"chinese": "我(已经)完成了",
+		"nativeText": "tôi đã hoàn thành",
 		"english": "I have finished",
 		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "homework",
 		"soundmark": "/'homwɝk/"
 	},
 	{
-		"chinese": "我的家庭作业",
+		"nativeText": "bài tập về nhà của tôi",
 		"english": "my homework",
 		"soundmark": "/maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "我(已经)完成了我的家庭作业",
+		"nativeText": "tôi đã hoàn thành bài tập về nhà của tôi",
 		"english": "I have finished my homework",
 		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/ /maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "we",
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们(已经)完成了",
+		"nativeText": "chúng ta đã hoàn thành",
 		"english": "we have finished",
 		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "项目",
+		"nativeText": "dự án",
 		"english": "project",
 		"soundmark": "/ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们的项目",
+		"nativeText": "dự án của chúng ta",
 		"english": "our project",
 		"soundmark": "/'aʊɚ/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们(已经)完成了我们的项目",
+		"nativeText": "chúng ta đã hoàn thành dự án của chúng ta",
 		"english": "we have finished our project",
 		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/ /'aʊɚ/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "去",
+		"nativeText": "đi",
 		"english": "to go",
 		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "公园",
+		"nativeText": "công viên",
 		"english": "the park",
 		"soundmark": "/ðə/ /pɑrk/"
 	},
 	{
-		"chinese": "去公园",
+		"nativeText": "đi đến công viên",
 		"english": "to go to the park",
 		"soundmark": "/tə/ /ɡo/ /tə/ /ðə/ /pɑrk/"
 	},
 	{
-		"chinese": "去(过去分词)",
+		"nativeText": "đi (quá khứ phân từ)",
 		"english": "gone",
 		"soundmark": "/ɡɔn/"
 	},
 	{
-		"chinese": "他们(已经)去了",
+		"nativeText": "họ đã đi",
 		"english": "they have gone",
 		"soundmark": "/ðe/ /hæv/ /ɡɔn/"
 	},
 	{
-		"chinese": "他们(已经)去了公园",
+		"nativeText": "họ đã đi đến công viên",
 		"english": "they have gone to the park",
 		"soundmark": "/ðe/ /hæv/ /ɡɔn/ /tə/ /ðə/ /pɑrk/"
 	},
 	{
-		"chinese": "阅读",
+		"nativeText": "đọc",
 		"english": "to read",
 		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "读(过去分词)",
+		"nativeText": "đọc (quá khứ phân từ)",
 		"english": "read",
 		"soundmark": "/rid/"
 	},
 	{
-		"chinese": "我(已经)读过",
+		"nativeText": "tôi đã đọc",
 		"english": "I have read",
 		"soundmark": "/aɪ/ /hæv/ /rid/"
 	},
 	{
-		"chinese": "那本书",
+		"nativeText": "cuốn sách đó",
 		"english": "that book",
 		"soundmark": "/ðæt/ /bʊk/"
 	},
 	{
-		"chinese": "我(已经)读过那本书",
+		"nativeText": "tôi đã đọc cuốn sách đó",
 		"english": "I have read that book",
 		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/"
 	},
 	{
-		"chinese": "次",
+		"nativeText": "lần",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "两次",
+		"nativeText": "hai lần",
 		"english": "two times",
 		"soundmark": "/tu/ /taɪmz/"
 	},
 	{
-		"chinese": "两次",
+		"nativeText": "hai lần",
 		"english": "twice",
 		"soundmark": "/twaɪs/"
 	},
 	{
-		"chinese": "我(已经)读过那本书两次了",
+		"nativeText": "tôi đã đọc cuốn sách đó hai lần rồi",
 		"english": "I have read that book twice",
 		"soundmark": "/aɪ/ /hæv/ /rid/ /ðæt/ /bʊk/ /twaɪs/"
 	},
 	{
-		"chinese": "学到",
+		"nativeText": "học",
 		"english": "to learn",
 		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "学到(过去分词)",
+		"nativeText": "học (quá khứ phân từ)",
 		"english": "learned",
 		"soundmark": "/lɝnd/"
 	},
 	{
-		"chinese": "我(已经)学到了",
+		"nativeText": "tôi đã học",
 		"english": "I have learned",
 		"soundmark": "/aɪ/ /hæv/ /lɝnd/"
 	},
 	{
-		"chinese": "大量的",
+		"nativeText": "nhiều",
 		"english": "lot",
 		"soundmark": "/lɑt/"
 	},
 	{
-		"chinese": "很多",
+		"nativeText": "rất nhiều",
 		"english": "a lot",
 		"soundmark": "/ə/ /lɑt/"
 	},
 	{
-		"chinese": "我(已经)学到了很多",
+		"nativeText": "tôi đã học được rất nhiều",
 		"english": "I have learned a lot",
 		"soundmark": "/aɪ/ /hæv/ /lɝnd/ /ə/ /lɑt/"
 	},
 	{
-		"chinese": "课程",
+		"nativeText": "khóa học",
 		"english": "course",
 		"soundmark": "/kɔrs/"
 	},
 	{
-		"chinese": "这个课程",
+		"nativeText": "khóa học này",
 		"english": "this course",
 		"soundmark": "/ðɪs/ /kɔrs/"
 	},
 	{
-		"chinese": "从",
+		"nativeText": "từ",
 		"english": "from",
 		"soundmark": "/frʌm/"
 	},
 	{
-		"chinese": "从这个课程",
+		"nativeText": "từ khóa học này",
 		"english": "from this course",
 		"soundmark": "/frʌm/ /ðɪs/ /kɔrs/"
 	},
 	{
-		"chinese": "我从这个课程(已经)学到了很多",
+		"nativeText": "tôi đã học được rất nhiều từ khóa học này",
 		"english": "I have learned a lot from this course",
 		"soundmark": "/aɪ/ /hæv/ /lɝnd/ /ə/ /lɑt/ /frʌm/ /ðɪs/ /kɔrs/"
 	},
 	{
-		"chinese": "提高",
+		"nativeText": "cải thiện",
 		"english": "to improve",
 		"soundmark": "/tə/ /ɪmˈpruv/"
 	},
 	{
-		"chinese": "提高(过去分词)",
+		"nativeText": "cải thiện (quá khứ phân từ)",
 		"english": "improved",
 		"soundmark": "/ɪmˈpruvd/"
 	},
 	{
-		"chinese": "你(已经)提高了",
+		"nativeText": "bạn đã cải thiện",
 		"english": "you have improved",
 		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/"
 	},
 	{
-		"chinese": "英文",
+		"nativeText": "tiếng Anh",
 		"english": "English",
 		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "你的英文",
+		"nativeText": "tiếng Anh của bạn",
 		"english": "your English",
 		"soundmark": "/jʊr/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "你(已经)提高了你的英文",
+		"nativeText": "bạn đã cải thiện tiếng Anh của bạn",
 		"english": "you have improved your English",
 		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/ /jʊr/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "大量的",
+		"nativeText": "nhiều",
 		"english": "lot",
 		"soundmark": "/lɑt/"
 	},
 	{
-		"chinese": "很多",
+		"nativeText": "rất nhiều",
 		"english": "a lot",
 		"soundmark": "/ə/ /lɑt/"
 	},
 	{
-		"chinese": "你(已经)提高了你的英文很多",
+		"nativeText": "bạn đã cải thiện tiếng Anh của bạn rất nhiều",
 		"english": "you have improved your English a lot",
 		"soundmark": "/ju/ /hæv/ /ɪmˈpruvd/ /jʊr/ /ˈɪŋɡlɪʃ/ /ə/ /lɑt/"
 	},
 	{
-		"chinese": "参观",
+		"nativeText": "thăm",
 		"english": "to visit",
 		"soundmark": "/tə/ /'vɪzɪt/"
 	},
 	{
-		"chinese": "参观(过去分词)",
+		"nativeText": "thăm (quá khứ phân từ)",
 		"english": "visited",
 		"soundmark": "/'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "我(已经)参观过",
+		"nativeText": "tôi đã thăm",
 		"english": "I have visited",
 		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "墙",
+		"nativeText": "bức tường",
 		"english": "wall",
 		"soundmark": "/wɔl/"
 	},
 	{
-		"chinese": "伟大的",
+		"nativeText": "vĩ đại",
 		"english": "great",
 		"soundmark": "/ɡret/"
 	},
 	{
-		"chinese": "长城",
+		"nativeText": "Vạn Lý Trường Thành",
 		"english": "The Great Wall",
 		"soundmark": "/ðə/ /ɡret/ /wɔl/"
 	},
 	{
-		"chinese": "我(已经)参观过长城",
+		"nativeText": "tôi đã thăm Vạn Lý Trường Thành",
 		"english": "I have visited The Great Wall",
 		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/ /ðə/ /ɡret/ /wɔl/"
 	},
 	{
-		"chinese": "两次",
+		"nativeText": "hai lần",
 		"english": "twice",
 		"soundmark": "/twaɪs/"
 	},
 	{
-		"chinese": "我(已经)参观过长城两次了",
+		"nativeText": "tôi đã thăm Vạn Lý Trường Thành hai lần rồi",
 		"english": "I have visited the Great Wall twice",
 		"soundmark": "/aɪ/ /hæv/ /'vɪzɪtɪd/ /ðə/ /ɡret/ /wɔl/ /twaɪs/"
 	},
 	{
-		"chinese": "写",
+		"nativeText": "viết",
 		"english": "to write",
 		"soundmark": "/raɪt/"
 	},
 	{
-		"chinese": "写(过去分词)",
+		"nativeText": "viết (quá khứ phân từ)",
 		"english": "written",
 		"soundmark": "/'rɪtn/"
 	},
 	{
-		"chinese": "我(已经)写了",
+		"nativeText": "tôi đã viết",
 		"english": "I have written",
 		"soundmark": "/aɪ/ /hæv/ /'rɪtn/"
 	},
 	{
-		"chinese": "书",
+		"nativeText": "sách",
 		"english": "book",
 		"soundmark": "/bʊk/"
 	},
 	{
-		"chinese": "三本书",
+		"nativeText": "ba cuốn sách",
 		"english": "three books",
 		"soundmark": "/θri/ /bʊks/"
 	},
 	{
-		"chinese": "我(已经)写了三本书",
+		"nativeText": "tôi đã viết ba cuốn sách",
 		"english": "I have written three books",
 		"soundmark": "/aɪ/ /hæv/ /'rɪtn/ /θri/ /bʊks/"
 	},
 	{
-		"chinese": "职业生涯",
+		"nativeText": "sự nghiệp",
 		"english": "career",
 		"soundmark": "/kəˈrɪr/"
 	},
 	{
-		"chinese": "我的职业生涯",
+		"nativeText": "sự nghiệp của tôi",
 		"english": "my career",
 		"soundmark": "/maɪ/ /kəˈrɪr/"
 	},
 	{
-		"chinese": "在我的职业生涯里",
+		"nativeText": "trong sự nghiệp của tôi",
 		"english": "in my career",
 		"soundmark": "/ɪn/ /maɪ/ /kəˈrɪr/"
 	},
 	{
-		"chinese": "我在我的职业生涯里(已经)写了三本书",
+		"nativeText": "tôi đã viết ba cuốn sách trong sự nghiệp của tôi",
 		"english": "I have written three books in my career",
 		"soundmark": "/aɪ/ /hæv/ /'rɪtn/ /θri/ /bʊks/ /ɪn/ /maɪ/ /kəˈrɪr/"
 	},
 	{
-		"chinese": "教",
+		"nativeText": "dạy",
 		"english": "to teach",
 		"soundmark": "/tə/ /titʃ/"
 	},
 	{
-		"chinese": "教(过去分词)",
+		"nativeText": "dạy (quá khứ phân từ)",
 		"english": "taught",
 		"soundmark": "/tɔt/"
 	},
 	{
-		"chinese": "我(已经)教了",
+		"nativeText": "tôi đã dạy",
 		"english": "I have taught",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/"
 	},
 	{
-		"chinese": "我(已经)教了你",
+		"nativeText": "tôi đã dạy bạn",
 		"english": "I have taught you",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/ /ju/"
 	},
 	{
-		"chinese": "每一个",
+		"nativeText": "mỗi",
 		"english": "every",
 		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "东西",
+		"nativeText": "thứ",
 		"english": "thing",
 		"soundmark": "/θɪŋ/"
 	},
 	{
-		"chinese": "一切",
+		"nativeText": "mọi thứ",
 		"english": "everything",
 		"soundmark": "/'ɛvriθɪŋ/"
 	},
 	{
-		"chinese": "我知道",
+		"nativeText": "tôi biết",
 		"english": "I know",
 		"soundmark": "/aɪ/ /no/"
 	},
 	{
-		"chinese": "我知道的一切",
+		"nativeText": "mọi thứ tôi biết",
 		"english": "everything I know",
 		"soundmark": "/'ɛvriθɪŋ/ /aɪ/ /no/"
 	},
 	{
-		"chinese": "我(已经)教了你我知道的一切",
+		"nativeText": "tôi đã dạy bạn mọi thứ tôi biết",
 		"english": "I have taught you everything I know",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/ /ju/ /'ɛvriθɪŋ/ /aɪ/ /no/"
 	},
 	{
-		"chinese": "我(已经)教了",
+		"nativeText": "tôi đã dạy",
 		"english": "I have taught",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/"
 	},
 	{
-		"chinese": "我自己",
+		"nativeText": "bản thân tôi",
 		"english": "myself",
 		"soundmark": "/maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我(已经)教了我自己",
+		"nativeText": "tôi đã tự học",
 		"english": "I have taught myself",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "玩",
+		"nativeText": "chơi",
 		"english": "to play",
 		"soundmark": "/tə/ /ple/"
 	},
 	{
-		"chinese": "钢琴",
+		"nativeText": "đàn piano",
 		"english": "the piano",
 		"soundmark": "/ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "弹钢琴",
+		"nativeText": "chơi đàn piano",
 		"english": "to play the piano",
 		"soundmark": "/tə/ /ple/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "如何弹钢琴",
+		"nativeText": "chơi đàn piano như thế nào",
 		"english": "how to play the piano",
 		"soundmark": "/haʊ/ /tə/ /ple/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "我(已经)自学了",
+		"nativeText": "tôi đã tự học",
 		"english": "I have taught myself",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我(已经)自学了如何弹钢琴",
+		"nativeText": "tôi đã tự học chơi đàn piano",
 		"english": "I have taught myself how to play the piano",
 		"soundmark": "/aɪ/ /hæv/ /tɔt/ /maɪ'sɛlf/ /haʊ/ /tə/ /ple/ /ðə/ /pɪ'æno/"
 	},
 	{
-		"chinese": "居住",
+		"nativeText": "sống",
 		"english": "to live",
 		"soundmark": "/tə/ /lɪv/"
 	},
 	{
-		"chinese": "居住(过去分词)",
+		"nativeText": "sống (quá khứ phân từ)",
 		"english": "lived",
 		"soundmark": "/lɪvd/"
 	},
 	{
-		"chinese": "我(已经)居住了",
+		"nativeText": "tôi đã sống",
 		"english": "I have lived",
 		"soundmark": "/aɪ/ /hæv/ /lɪvd/"
 	},
 	{
-		"chinese": "城市",
+		"nativeText": "thành phố",
 		"english": "city",
 		"soundmark": "/'sɪti/"
 	},
 	{
-		"chinese": "这个城市",
+		"nativeText": "thành phố này",
 		"english": "this city",
 		"soundmark": "/ðɪs/ /'sɪti/"
 	},
 	{
-		"chinese": "在这个城市里",
+		"nativeText": "ở thành phố này",
 		"english": "in this city",
 		"soundmark": "/ɪn/ /ðɪs/ /'sɪti/"
 	},
 	{
-		"chinese": "我(已经)在这个城市里居住了",
+		"nativeText": "tôi đã sống ở thành phố này",
 		"english": "I have lived in this city",
 		"soundmark": "/aɪ/ /hæv/ /lɪvd/ /ɪn/ /ðɪs/ /'sɪti/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "五年",
+		"nativeText": "năm năm",
 		"english": "five years",
 		"soundmark": "/faɪv/ /jɪrz/"
 	},
 	{
-		"chinese": "我(已经)在这个城市里居住了五年了",
+		"nativeText": "tôi đã sống ở thành phố này năm năm rồi",
 		"english": "I have lived in this city for five years",
 		"soundmark": "/aɪ/ /hæv/ /lɪvd/ /ɪn/ /ðɪs/ /'sɪti/ /fɚ/ /faɪv/ /jɪrz/"
 	},
 	{
-		"chinese": "工作",
+		"nativeText": "làm việc",
 		"english": "to work",
 		"soundmark": "/tə/ /wɝk/"
 	},
 	{
-		"chinese": "工作(过去分词)",
+		"nativeText": "làm việc (quá khứ phân từ)",
 		"english": "worked",
 		"soundmark": "/wɝkt/"
 	},
 	{
-		"chinese": "我(已经)工作了",
+		"nativeText": "tôi đã làm việc",
 		"english": "I have worked",
 		"soundmark": "/aɪ/ /hæv/ /wɝkt/"
 	},
 	{
-		"chinese": "公司",
+		"nativeText": "công ty",
 		"english": "company",
 		"soundmark": "/ˈkʌmpəni/"
 	},
 	{
-		"chinese": "那个公司",
+		"nativeText": "công ty đó",
 		"english": "that company",
 		"soundmark": "/ðæt/ /ˈkʌmpəni/"
 	},
 	{
-		"chinese": "在那个公司",
+		"nativeText": "ở công ty đó",
 		"english": "at that company",
 		"soundmark": "/ət/ /ðæt/ /ˈkʌmpəni/"
 	},
 	{
-		"chinese": "我(已经)在那个公司工作了",
+		"nativeText": "tôi đã làm việc ở công ty đó",
 		"english": "I have worked at that company",
 		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "三年",
+		"nativeText": "ba năm",
 		"english": "three years",
 		"soundmark": "/θri/ /jɪrz/"
 	},
 	{
-		"chinese": "我(已经)在那个公司工作了三年了",
+		"nativeText": "tôi đã làm việc ở công ty đó ba năm rồi",
 		"english": "I have worked at that company for three years",
 		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/ /fɚ/ /θri/ /jɪrz/"
 	},
 	{
-		"chinese": "自从......以来",
+		"nativeText": "từ khi",
 		"english": "since",
 		"soundmark": "/sɪns/ /twenty twenty/ /'twɛnti/ /'twɛnti/"
 	},
 	{
-		"chinese": "自从2020年以来",
+		"nativeText": "từ năm 2020",
 		"english": "since 2020",
 		"soundmark": "/sɪns/ /'twɛnti/ /'twɛnti/"
 	},
 	{
-		"chinese": "我自从2020年以来(已经)在那个公司工作了",
+		"nativeText": "tôi đã làm việc ở công ty đó từ năm 2020",
 		"english": "I have worked at that company since 2020",
 		"soundmark": "/aɪ/ /hæv/ /wɝkt/ /ət/ /ðæt/ /ˈkʌmpəni/ /sɪns/ /'twɛnti/ /'twɛnti/"
 	},
 	{
-		"chinese": "学习",
+		"nativeText": "học",
 		"english": "to study",
 		"soundmark": "/tə/ /'stʌdi/"
 	},
 	{
-		"chinese": "学习(过去分词)",
+		"nativeText": "học (quá khứ phân từ)",
 		"english": "studied",
 		"soundmark": "/ˈstʌdid/"
 	},
 	{
-		"chinese": "我们(已经)学习了",
+		"nativeText": "chúng ta đã học",
 		"english": "we have studied",
 		"soundmark": "/wi/ /hæv/ /ˈstʌdid/"
 	},
 	{
-		"chinese": "英文",
+		"nativeText": "tiếng Anh",
 		"english": "English",
 		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "我们(已经)学习了英文",
+		"nativeText": "chúng ta đã học tiếng Anh",
 		"english": "we have studied English",
 		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "三年",
+		"nativeText": "ba năm",
 		"english": "three years",
 		"soundmark": "/θri/ /jɪrz/"
 	},
 	{
-		"chinese": "我们(已经)学习了英文三年了",
+		"nativeText": "chúng ta đã học tiếng Anh ba năm rồi",
 		"english": "we have studied English for three years",
 		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/ /fɚ/ /θri/ /jɪrz/"
 	},
 	{
-		"chinese": "自从......以来",
+		"nativeText": "từ khi",
 		"english": "since",
 		"soundmark": "/sɪns/ /twenty twenty/ /'twɛnti/ /'twɛnti/"
 	},
 	{
-		"chinese": "自从2020年以来",
+		"nativeText": "từ năm 2020",
 		"english": "since 2020",
 		"soundmark": "/sɪns/ /'twɛnti/ /'twɛnti/"
 	},
 	{
-		"chinese": "我们自从2020年以来(已经)学习英文了",
+		"nativeText": "chúng ta đã học tiếng Anh từ năm 2020",
 		"english": "we have studied English since 2020",
 		"soundmark": "/wi/ /hæv/ /ˈstʌdid/ /ˈɪŋɡlɪʃ/ /sɪns/ /'twɛnti/ /'twɛnti/"
 	}

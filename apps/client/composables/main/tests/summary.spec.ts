@@ -23,19 +23,19 @@ describe("summary", () => {
 
     it("should load the daily sentence", async () => {
       const { wrapper } = useSetup(() => {
-        const { zhSentence, enSentence } = useDailySentence();
+        const { nativeSentence, enSentence } = useDailySentence();
         return {
-          zhSentence,
+          nativeSentence,
           enSentence,
         };
       });
 
       await flushPromises();
 
-      const { zhSentence, enSentence } = wrapper.vm;
+      const { nativeSentence, enSentence } = wrapper.vm;
 
       expect(toolApi.fetchDailySentence).toBeCalled();
-      expect(zhSentence).toBe(dummyRes.zh);
+      expect(nativeSentence).toBe(dummyRes.zh);
       expect(enSentence).toBe(dummyRes.en);
     });
 

@@ -5,7 +5,7 @@
     class="flex cursor-pointer items-center fill-current text-xl hover:text-fuchsia-500"
     :href="video"
   >
-    <UTooltip text="边看边练">
+    <UTooltip text="Xem và luyện tập">
       <UIcon
         name="i-simple-icons-bilibili"
         class="h-5 w-5"

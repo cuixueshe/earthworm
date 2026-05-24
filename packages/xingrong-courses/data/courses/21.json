@@ -1,676 +1,676 @@
 [
 	{
-		"chinese": "支付；付出",
+		"nativeText": "trả tiền; trả",
 		"english": "to pay",
 		"soundmark": "/tə/ /pe/"
 	},
 	{
-		"chinese": "注意力",
+		"nativeText": "sự chú ý",
 		"english": "attention",
 		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
-		"chinese": "需要",
+		"nativeText": "cần",
 		"english": "need",
 		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "你需要",
+		"nativeText": "bạn cần",
 		"english": "you need",
 		"soundmark": "/ju/ /nid/"
 	},
 	{
-		"chinese": "你需要注意",
+		"nativeText": "bạn cần chú ý",
 		"english": "you need to pay attention",
 		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "问题",
+		"nativeText": "câu hỏi",
 		"english": "question",
 		"soundmark": "/'kwɛstʃən/"
 	},
 	{
-		"chinese": "这个",
+		"nativeText": "cái này",
 		"english": "this",
 		"soundmark": "/ðɪs/"
 	},
 	{
-		"chinese": "这个问题",
+		"nativeText": "câu hỏi này",
 		"english": "this question",
 		"soundmark": "/ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "注意",
+		"nativeText": "chú ý",
 		"english": "to pay attention",
 		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "注意这个问题",
+		"nativeText": "chú ý đến câu hỏi này",
 		"english": "to pay attention to this question",
 		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "你需要",
+		"nativeText": "bạn cần",
 		"english": "you need",
 		"soundmark": "/ju/ /nid/"
 	},
 	{
-		"chinese": "你需要注意这个问题",
+		"nativeText": "bạn cần chú ý đến câu hỏi này",
 		"english": "you need to pay attention to this question",
 		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你不需要注意这个问题",
+		"nativeText": "bạn không cần chú ý đến câu hỏi này",
 		"english": "you don't need to pay attention to this question",
 		"soundmark": "/ju/ /dont/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "你(过去)需要注意这个问题",
+		"nativeText": "bạn đã cần chú ý đến câu hỏi này",
 		"english": "you needed to pay attention to this question",
 		"soundmark": "/ju/ /nidɪd/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "你(过去)不需要注意这个问题",
+		"nativeText": "bạn đã không cần chú ý đến câu hỏi này",
 		"english": "you didn't need to pay attention to this question",
 		"soundmark": "/ju/ /ˈdɪdnt/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "你需要注意这个问题",
+		"nativeText": "bạn cần chú ý đến câu hỏi này",
 		"english": "you need to pay attention to this question",
 		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "信息",
+		"nativeText": "thông tin",
 		"english": "information",
 		"soundmark": "/ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "这个",
+		"nativeText": "cái này",
 		"english": "this",
 		"soundmark": "/ðɪs/"
 	},
 	{
-		"chinese": "这个信息",
+		"nativeText": "thông tin này",
 		"english": "this information",
 		"soundmark": "/ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你需要注意这个信息",
+		"nativeText": "bạn cần chú ý đến thông tin này",
 		"english": "you need to pay attention to this information",
 		"soundmark": "/ju/ /nid/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你注意这个信息",
+		"nativeText": "bạn chú ý đến thông tin này",
 		"english": "you pay attention to this information",
 		"soundmark": "/ju/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你没有注意这个信息",
+		"nativeText": "bạn không chú ý đến thông tin này",
 		"english": "you don't pay attention to this information",
 		"soundmark": "/ju/ /dont/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "注意力",
+		"nativeText": "sự chú ý",
 		"english": "attention",
 		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
-		"chinese": "你(过去)注意这个信息",
+		"nativeText": "bạn đã chú ý đến thông tin này",
 		"english": "you paid attention to this information",
 		"soundmark": "/ju/ /ped/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你(过去)没有注意这个信息",
+		"nativeText": "bạn đã không chú ý đến thông tin này",
 		"english": "you didn't pay attention to this information",
 		"soundmark": "/ju/ /ˈdɪdnt/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "应该",
+		"nativeText": "nên",
 		"english": "should",
 		"soundmark": "/ʃʊd/"
 	},
 	{
-		"chinese": "你应该",
+		"nativeText": "bạn nên",
 		"english": "you should",
 		"soundmark": "/ju/ /ʃʊd/"
 	},
 	{
-		"chinese": "你应该注意这个信息",
+		"nativeText": "bạn nên chú ý đến thông tin này",
 		"english": "you should pay attention to this information",
 		"soundmark": "/ju/ /ʃʊd/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你不应该",
+		"nativeText": "bạn không nên",
 		"english": "you should not",
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/"
 	},
 	{
-		"chinese": "你不应该注意这个信息",
+		"nativeText": "bạn không nên chú ý đến thông tin này",
 		"english": "you should not pay attention to this information",
 		"soundmark": "/ju/ /ʃʊd/ /nɑt/ /pe/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "支付；付出(ing形式)",
+		"nativeText": "đang trả (dạng ing)",
 		"english": "paying",
 		"soundmark": "/peɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在付出",
+		"nativeText": "đang chú ý",
 		"english": "be paying",
 		"soundmark": "/bi/ /peɪŋ/"
 	},
 	{
-		"chinese": "注意力",
+		"nativeText": "sự chú ý",
 		"english": "attention",
 		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
-		"chinese": "正在注意(付出注意力)",
+		"nativeText": "đang chú ý",
 		"english": "be paying attention",
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "信息",
+		"nativeText": "thông tin",
 		"english": "information",
 		"soundmark": "/ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "这个信息",
+		"nativeText": "thông tin này",
 		"english": "this information",
 		"soundmark": "/ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "正在注意这个信息",
+		"nativeText": "đang chú ý đến thông tin này",
 		"english": "be paying attention to this information",
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你(现在)正在注意这个信息",
+		"nativeText": "bạn đang chú ý đến thông tin này",
 		"english": "you are paying attention to this information",
 		"soundmark": "/ju/ /ɚ/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我(现在)正在注意这个信息",
+		"nativeText": "tôi đang chú ý đến thông tin này",
 		"english": "I am paying attention to this information",
 		"soundmark": "/aɪ/ /æm/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "he",
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他(现在)正在注意这个信息",
+		"nativeText": "anh ấy đang chú ý đến thông tin này",
 		"english": "he is paying attention to this information",
 		"soundmark": "/hi/ /ɪz/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "not",
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "他(现在)没有正在注意这个信息",
+		"nativeText": "anh ấy không đang chú ý đến thông tin này",
 		"english": "he is not paying attention to this information",
 		"soundmark": "/hi/ /ɪz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "他(过去)正在注意这个信息",
+		"nativeText": "anh ấy đã đang chú ý đến thông tin này",
 		"english": "he was paying attention to this information",
 		"soundmark": "/hi/ /wəz/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "not",
 		"soundmark": "/nɑt/"
 	},
 	{
-		"chinese": "他(过去)没有正在注意这个信息",
+		"nativeText": "anh ấy đã không đang chú ý đến thông tin này",
 		"english": "he was not paying attention to this information",
 		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "昨天",
+		"nativeText": "hôm qua",
 		"english": "yesterday",
 		"soundmark": "/'jɛstɚde/"
 	},
 	{
-		"chinese": "在这个时候",
+		"nativeText": "vào lúc này",
 		"english": "at this time",
 		"soundmark": "/ət/ /ðɪs/ /taɪm/"
 	},
 	{
-		"chinese": "在昨天这个时候",
+		"nativeText": "vào lúc này hôm qua",
 		"english": "at this time yesterday",
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "他在昨天这个时候没有注意到这个信息",
+		"nativeText": "anh ấy đã không chú ý đến thông tin này vào lúc này hôm qua",
 		"english": "he was not paying attention to this information at this time yesterday",
 		"soundmark": "/hi/ /wəz/ /nɑt/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在注意(付出注意力)",
+		"nativeText": "đang chú ý",
 		"english": "be paying attention",
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "正在注意这个信息",
+		"nativeText": "đang chú ý đến thông tin này",
 		"english": "be paying attention to this information",
 		"soundmark": "/bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "他将会",
+		"nativeText": "anh ấy sẽ",
 		"english": "he will",
 		"soundmark": "/hi/ /wɪl/"
 	},
 	{
-		"chinese": "他将会正在注意这个信息",
+		"nativeText": "anh ấy sẽ đang chú ý đến thông tin này",
 		"english": "he will be paying attention to this information",
 		"soundmark": "/hi/ /wɪl/ /bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "在这个时候",
+		"nativeText": "vào lúc này",
 		"english": "at this time",
 		"soundmark": "/ət/ /ðɪs/ /taɪm/"
 	},
 	{
-		"chinese": "在明天这个时候",
+		"nativeText": "vào lúc này ngày mai",
 		"english": "at this time tomorrow",
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "他在明天这个时候将会正在注意这个信息",
+		"nativeText": "anh ấy sẽ đang chú ý đến thông tin này vào lúc này ngày mai",
 		"english": "he will be paying attention to this information at this time tomorrow",
 		"soundmark": "/hi/ /wɪl/ /bi/ /peɪŋ/ /ə'tɛnʃən/ /tə/ /ðɪs/ /ɪnfɚ'meʃən/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "细节",
+		"nativeText": "chi tiết",
 		"english": "the detail",
 		"soundmark": "/ðə/ /ˈditel/"
 	},
 	{
-		"chinese": "细节(复数)",
+		"nativeText": "các chi tiết",
 		"english": "the details",
 		"soundmark": "/ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "所有的",
+		"nativeText": "tất cả",
 		"english": "all",
 		"soundmark": "/ɔl/"
 	},
 	{
-		"chinese": "所有的细节",
+		"nativeText": "tất cả các chi tiết",
 		"english": "all the details",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "支付；付出",
+		"nativeText": "trả tiền; trả",
 		"english": "to pay",
 		"soundmark": "/tə/ /pe/"
 	},
 	{
-		"chinese": "注意力",
+		"nativeText": "sự chú ý",
 		"english": "attention",
 		"soundmark": "/ə'tɛnʃən/"
 	},
 	{
-		"chinese": "注意(付出注意力)",
+		"nativeText": "chú ý",
 		"english": "to pay attention",
 		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/"
 	},
 	{
-		"chinese": "注意所有的细节",
+		"nativeText": "chú ý đến tất cả các chi tiết",
 		"english": "to pay attention to all the details",
 		"soundmark": "/tə/ /pe/ /ə'tɛnʃən/ /tə/ /ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "它",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "它是重要的",
+		"nativeText": "nó quan trọng",
 		"english": "it is important",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "rất",
 		"english": "very",
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "它是非常重要的",
+		"nativeText": "nó rất quan trọng",
 		"english": "it is very important",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "注意所有的细节(它)是非常重要的",
+		"nativeText": "chú ý đến tất cả các chi tiết là rất quan trọng",
 		"english": "it is very important to pay attention to all the details",
 		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /ɪm'pɔrtnt/ /tə/ /pe/ /ə'tɛnʃən/ /tə/ /ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "讨论",
+		"nativeText": "thảo luận",
 		"english": "to discuss",
 		"soundmark": "/tə/ /dɪ'skʌs/"
 	},
 	{
-		"chinese": "某件事情",
+		"nativeText": "điều gì đó",
 		"english": "something",
 		"soundmark": "/'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "讨论某件事情",
+		"nativeText": "thảo luận điều gì đó",
 		"english": "to discuss something",
 		"soundmark": "/tə/ /dɪ'skʌs/ /'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "想要(直接地)",
+		"nativeText": "muốn (trực tiếp)",
 		"english": "want",
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "愿意;想要(委婉地)",
+		"nativeText": "muốn; mong muốn (lịch sự)",
 		"english": "would like",
 		"soundmark": "/wʊd/ /laɪk/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I would like",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/"
 	},
 	{
-		"chinese": "我想要讨论某件事情",
+		"nativeText": "tôi muốn thảo luận điều gì đó",
 		"english": "I would like to discuss something",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/"
 	},
 	{
-		"chinese": "重要的",
+		"nativeText": "quan trọng",
 		"english": "important",
 		"soundmark": "/ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "重要的某件事情",
+		"nativeText": "điều gì đó quan trọng",
 		"english": "something important",
 		"soundmark": "/'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我想要讨论重要的某件事情",
+		"nativeText": "tôi muốn thảo luận điều gì đó quan trọng",
 		"english": "I would like to discuss something important",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "和......一起",
+		"nativeText": "với; cùng với",
 		"english": "with",
 		"soundmark": "/wɪð/"
 	},
 	{
-		"chinese": "和你一起",
+		"nativeText": "với bạn",
 		"english": "with you",
 		"soundmark": "/wɪð/ /ju/"
 	},
 	{
-		"chinese": "我想要和你一起讨论重要的某件事情",
+		"nativeText": "tôi muốn cùng bạn thảo luận điều gì đó quan trọng",
 		"english": "I would like to discuss something important with you",
 		"soundmark": "/aɪ/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/ /wɪð/ /ju/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "we",
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们想要讨论重要的某件事情",
+		"nativeText": "chúng ta muốn thảo luận điều gì đó quan trọng",
 		"english": "we would like to discuss something important",
 		"soundmark": "/wi/ /wʊd/ /laɪk/ /tə/ /dɪ'skʌs/ /'sʌmθɪŋ/ /ɪm'pɔrtnt/"
 	},
 	{
-		"chinese": "我们讨论",
+		"nativeText": "chúng ta thảo luận",
 		"english": "we discuss",
 		"soundmark": "/wi/ /dɪ'skʌs/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kən/"
 	},
 	{
-		"chinese": "我们可以讨论",
+		"nativeText": "chúng ta có thể thảo luận",
 		"english": "we can discuss",
 		"soundmark": "/wi/ /kən/ /dɪ'skʌs/"
 	},
 	{
-		"chinese": "所有的",
+		"nativeText": "tất cả",
 		"english": "all",
 		"soundmark": "/ɔl/"
 	},
 	{
-		"chinese": "细节(复数)",
+		"nativeText": "các chi tiết",
 		"english": "the details",
 		"soundmark": "/ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "所有的细节",
+		"nativeText": "tất cả các chi tiết",
 		"english": "all the details",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "我们可以讨论所有的细节",
+		"nativeText": "chúng ta có thể thảo luận tất cả các chi tiết",
 		"english": "we can discuss all the details",
 		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "这个计划",
+		"nativeText": "kế hoạch này",
 		"english": "the plan",
 		"soundmark": "/ðə/ /plæn/"
 	},
 	{
-		"chinese": "所有的细节",
+		"nativeText": "tất cả các chi tiết",
 		"english": "all the details",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
+		"nativeText": "tất cả các chi tiết của kế hoạch này",
 		"english": "all the details of the plan",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "我们可以讨论这个计划的所有的细节",
+		"nativeText": "chúng ta có thể thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we can discuss all the details of the plan",
 		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "一起",
+		"nativeText": "cùng nhau",
 		"english": "together",
 		"soundmark": "/tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们可以一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta có thể cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we can discuss all the details of the plan together",
 		"soundmark": "/wi/ /kən/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我们将会一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta sẽ cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we will discuss all the details of the plan together",
 		"soundmark": "/wi/ /wɪl/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "早上",
+		"nativeText": "buổi sáng",
 		"english": "morning",
 		"soundmark": "/'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "明天早上",
+		"nativeText": "sáng ngày mai",
 		"english": "tomorrow morning",
 		"soundmark": "/tə'mɔro/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我们明天早上将会一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta sẽ cùng nhau thảo luận tất cả các chi tiết của kế hoạch này vào sáng ngày mai",
 		"english": "we will discuss all the details of the plan together tomorrow morning",
 		"soundmark": "/wi/ /wɪl/ /dɪ'skʌs/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /tə'mɔro/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "讨论(ing形式)",
+		"nativeText": "đang thảo luận (dạng ing)",
 		"english": "discussing",
 		"soundmark": "/dɪ'skʌsɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在讨论",
+		"nativeText": "đang thảo luận",
 		"english": "be discussing",
 		"soundmark": "/bi/ /dɪ'skʌsɪŋ/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
+		"nativeText": "tất cả các chi tiết của kế hoạch này",
 		"english": "all the details of the plan",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "正在讨论这个计划的所有细节",
+		"nativeText": "đang thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "be discussing all the details of the plan",
 		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "一起",
+		"nativeText": "cùng nhau",
 		"english": "together",
 		"soundmark": "/tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "正在一起讨论这个计划的所有细节",
+		"nativeText": "đang cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "be discussing all the details of the plan together",
 		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们(现在)正在讨论",
+		"nativeText": "chúng ta đang thảo luận",
 		"english": "we are discussing",
 		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/"
 	},
 	{
-		"chinese": "这个计划的所有的细节",
+		"nativeText": "tất cả các chi tiết của kế hoạch này",
 		"english": "all the details of the plan",
 		"soundmark": "/ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "我们(现在)正在讨论这个计划的所有的细节",
+		"nativeText": "chúng ta đang thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we are discussing all the details of the plan",
 		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/"
 	},
 	{
-		"chinese": "一起",
+		"nativeText": "cùng nhau",
 		"english": "together",
 		"soundmark": "/tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们(现在)正在一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta đang cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we are discussing all the details of the plan together",
 		"soundmark": "/wi/ /ɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们(过去)正在一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta đã đang cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we were discussing all the details of the plan together",
 		"soundmark": "/wi/ /wɚ/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在讨论",
+		"nativeText": "đang thảo luận",
 		"english": "be discussing",
 		"soundmark": "/bi/ /dɪ'skʌsɪŋ/"
 	},
 	{
-		"chinese": "正在一起讨论这个计划的所有细节",
+		"nativeText": "đang cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "be discussing all the details of the plan together",
 		"soundmark": "/bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "我们将会",
+		"nativeText": "chúng ta sẽ",
 		"english": "we will",
 		"soundmark": "/wi/ /wɪl/"
 	},
 	{
-		"chinese": "我们将会正在一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta sẽ đang cùng nhau thảo luận tất cả các chi tiết của kế hoạch này",
 		"english": "we will be discussing all the details of the plan together",
 		"soundmark": "/wi/ /wɪl/ /bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "在这个时候",
+		"nativeText": "vào lúc này",
 		"english": "at this time",
 		"soundmark": "/ət/ /ðɪs/ /taɪm/"
 	},
 	{
-		"chinese": "在明天这个时候",
+		"nativeText": "vào lúc này ngày mai",
 		"english": "at this time tomorrow",
 		"soundmark": "/ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	},
 	{
-		"chinese": "我们在明天这个时候将会正在一起讨论这个计划的所有的细节",
+		"nativeText": "chúng ta sẽ đang cùng nhau thảo luận tất cả các chi tiết của kế hoạch này vào lúc này ngày mai",
 		"english": "we will be discussing all the details of the plan together at this time tomorrow",
 		"soundmark": "/wi/ /wɪl/ /bi/ /dɪ'skʌsɪŋ/ /ɔl/ /ðə/ /ˈditelz/ /əv/ /ðə/ /plæn/ /tə'ɡɛðɚ/ /ət/ /ðɪs/ /taɪm/ /tə'mɔro/"
 	}

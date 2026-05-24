@@ -1,7 +1,7 @@
 import type { ShareImageTemplateData } from "../share";
 
 export const tpl_2 = ({
-  zhSentence,
+  nativeSentence,
   enSentence,
   coursePackTitle,
   courseTitle,
@@ -94,7 +94,7 @@ export const tpl_2 = ({
                   {
                     type: "p",
                     props: {
-                      children: zhSentence,
+                      children: nativeSentence,
                     },
                   },
                 ],

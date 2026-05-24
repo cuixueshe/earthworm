@@ -1,871 +1,871 @@
 [
 	{
-		"chinese": "惊喜",
+		"nativeText": "niềm ngạc nhiên",
 		"english": "surprise",
 		"soundmark": "/sɚ'praɪz/"
 	},
 	{
-		"chinese": "一个惊喜",
+		"nativeText": "một niềm ngạc nhiên",
 		"english": "a surprise",
 		"soundmark": "/ə/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "大的",
+		"nativeText": "lớn",
 		"english": "big",
 		"soundmark": "/bɪɡ/"
 	},
 	{
-		"chinese": "一个大惊喜",
+		"nativeText": "một niềm ngạc nhiên lớn",
 		"english": "a big surprise",
 		"soundmark": "/ə/ /bɪɡ/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "给",
+		"nativeText": "cho",
 		"english": "to give",
 		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "给她",
+		"nativeText": "cho cô ấy",
 		"english": "to give her",
 		"soundmark": "/tə/ /ɡɪv/ /hɚ/"
 	},
 	{
-		"chinese": "给她一个大惊喜",
+		"nativeText": "cho cô ấy một niềm ngạc nhiên lớn",
 		"english": "to give her a big surprise",
 		"soundmark": "/tə/ /ɡɪv/ /hɚ/ /ə/ /bɪɡ/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要给她一个大惊喜",
+		"nativeText": "tôi muốn cho cô ấy một niềm ngạc nhiên lớn",
 		"english": "I want to give her a big surprise",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /ɡɪv/ /hɚ/ /ə/ /bɪɡ/ /sɚ'praɪz/"
 	},
 	{
-		"chinese": "给",
+		"nativeText": "cho",
 		"english": "to give",
 		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "建议",
+		"nativeText": "lời khuyên",
 		"english": "advice",
 		"soundmark": "/əd'vaɪs/"
 	},
 	{
-		"chinese": "一些",
+		"nativeText": "một vài",
 		"english": "some",
 		"soundmark": "/səm/"
 	},
 	{
-		"chinese": "一些建议",
+		"nativeText": "một vài lời khuyên",
 		"english": "some advice",
 		"soundmark": "/səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "给一些建议",
+		"nativeText": "cho một vài lời khuyên",
 		"english": "to give some advice",
 		"soundmark": "/tə/ /ɡɪv/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "给我",
+		"nativeText": "cho tôi",
 		"english": "to give me",
 		"soundmark": "/tə/ /ɡɪv/ /mi/"
 	},
 	{
-		"chinese": "给我一些建议",
+		"nativeText": "cho tôi một vài lời khuyên",
 		"english": "to give me some advice",
 		"soundmark": "/tə/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以给我一些建议",
+		"nativeText": "bạn có thể cho tôi một vài lời khuyên",
 		"english": "you can give me some advice",
 		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "你可以给我一些建议吗？",
+		"nativeText": "bạn có thể cho tôi một vài lời khuyên không?",
 		"english": "can you give me some advice",
 		"soundmark": "/kæn/ /ju/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "希望",
+		"nativeText": "hy vọng",
 		"english": "to hope",
 		"soundmark": "/tə/ /hop/"
 	},
 	{
-		"chinese": "我希望",
+		"nativeText": "tôi hy vọng",
 		"english": "I hope",
 		"soundmark": "/aɪ/ /hop/"
 	},
 	{
-		"chinese": "我希望你可以给我一些建议",
+		"nativeText": "tôi hy vọng bạn có thể cho tôi một vài lời khuyên",
 		"english": "I hope you can give me some advice",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /səm/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "希望",
+		"nativeText": "hy vọng",
 		"english": "hope",
 		"soundmark": "/hop/"
 	},
 	{
-		"chinese": "给",
+		"nativeText": "cho",
 		"english": "to give",
 		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "给希望",
+		"nativeText": "cho hy vọng",
 		"english": "to give hope",
 		"soundmark": "/tə/ /ɡɪv/ /hop/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "给我希望",
+		"nativeText": "cho tôi hy vọng",
 		"english": "to give me hope",
 		"soundmark": "/tə/ /ɡɪv/ /mi/ /hop/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你给我希望",
+		"nativeText": "bạn cho tôi hy vọng",
 		"english": "you give me hope",
 		"soundmark": "/ju/ /ɡɪv/ /mi/ /hop/"
 	},
 	{
-		"chinese": "手",
+		"nativeText": "tay",
 		"english": "hand",
 		"soundmark": "/hænd/"
 	},
 	{
-		"chinese": "你的手",
+		"nativeText": "tay của bạn",
 		"english": "your hand",
 		"soundmark": "/jʊr/ /hænd/"
 	},
 	{
-		"chinese": "给我",
+		"nativeText": "cho tôi",
 		"english": "to give me",
 		"soundmark": "/tə/ /ɡɪv/ /mi/"
 	},
 	{
-		"chinese": "给我你的手",
+		"nativeText": "cho tôi tay của bạn",
 		"english": "to give me your hand",
 		"soundmark": "/tə/ /ɡɪv/ /mi/ /jʊr/ /hænd/"
 	},
 	{
-		"chinese": "给我帮把手",
+		"nativeText": "giúp tôi một tay",
 		"english": "to give me a hand",
 		"soundmark": "/tə/ /ɡɪv/ /mi/ /ə/ /hænd/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以给我帮把手",
+		"nativeText": "bạn có thể giúp tôi một tay",
 		"english": "you can give me a hand",
 		"soundmark": "/ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
 	},
 	{
-		"chinese": "你可以给我帮把手?",
+		"nativeText": "bạn có thể giúp tôi một tay không?",
 		"english": "can you give me a hand",
 		"soundmark": "/kæn/ /ju/ /ɡɪv/ /mi/ /ə/ /hænd/"
 	},
 	{
-		"chinese": "希望",
+		"nativeText": "hy vọng",
 		"english": "to hope",
 		"soundmark": "/tə/ /hop/"
 	},
 	{
-		"chinese": "我希望",
+		"nativeText": "tôi hy vọng",
 		"english": "I hope",
 		"soundmark": "/aɪ/ /hop/"
 	},
 	{
-		"chinese": "我希望你可以给我帮把手",
+		"nativeText": "tôi hy vọng bạn có thể giúp tôi một tay",
 		"english": "I hope you can give me a hand",
 		"soundmark": "/aɪ/ /hop/ /ju/ /kæn/ /ɡɪv/ /mi/ /ə/ /hænd/"
 	},
 	{
-		"chinese": "递",
+		"nativeText": "đưa",
 		"english": "to hand",
 		"soundmark": "/tə/ /hænd/"
 	},
 	{
-		"chinese": "刀",
+		"nativeText": "con dao",
 		"english": "knife",
 		"soundmark": "/naɪf/"
 	},
 	{
-		"chinese": "那把刀",
+		"nativeText": "con dao đó",
 		"english": "the knife",
 		"soundmark": "/ðə/ /naɪf/"
 	},
 	{
-		"chinese": "递那把刀",
+		"nativeText": "đưa con dao đó",
 		"english": "to hand the knife",
 		"soundmark": "/tə/ /hænd/ /ðə/ /naɪf/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "递给我",
+		"nativeText": "đưa tôi",
 		"english": "to hand me",
 		"soundmark": "/tə/ /hænd/ /mi/"
 	},
 	{
-		"chinese": "那把刀",
+		"nativeText": "con dao đó",
 		"english": "the knife",
 		"soundmark": "/ðə/ /naɪf/"
 	},
 	{
-		"chinese": "递给我那把刀",
+		"nativeText": "đưa tôi con dao đó",
 		"english": "to hand me the knife",
 		"soundmark": "/tə/ /hænd/ /mi/ /ðə/ /naɪf/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以递给我那把刀",
+		"nativeText": "bạn có thể đưa tôi con dao đó",
 		"english": "you can hand me the knife",
 		"soundmark": "/ju/ /kæn/ /hænd/ /mi/ /ðə/ /naɪf/"
 	},
 	{
-		"chinese": "你可以递给我那把刀吗?",
+		"nativeText": "bạn có thể đưa tôi con dao đó không?",
 		"english": "can you hand me the knife",
 		"soundmark": "/kæn/ /ju/ /hænd/ /mi/ /ðə/ /naɪf/"
 	},
 	{
-		"chinese": "可以（礼貌版）",
+		"nativeText": "có thể (lịch sự)",
 		"english": "could",
 		"soundmark": "/kʊd/"
 	},
 	{
-		"chinese": "你可以（礼貌版）递给我那把刀吗？",
+		"nativeText": "bạn có thể (lịch sự) đưa tôi con dao đó không?",
 		"english": "could you hand me the knife",
 		"soundmark": "/kʊd/ /ju/ /hænd/ /mi/ /ðə/ /naɪf/"
 	},
 	{
-		"chinese": "读",
+		"nativeText": "đọc",
 		"english": "to read",
 		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "故事",
+		"nativeText": "câu chuyện",
 		"english": "story",
 		"soundmark": "/'stɔri/"
 	},
 	{
-		"chinese": "读一个故事",
+		"nativeText": "đọc một câu chuyện",
 		"english": "to read a story",
 		"soundmark": "/tə/ /rid/ /ə/ /'stɔri/"
 	},
 	{
-		"chinese": "床",
+		"nativeText": "giường",
 		"english": "bed",
 		"soundmark": "/bɛd/"
 	},
 	{
-		"chinese": "时间",
+		"nativeText": "thời gian",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "就寝时间",
+		"nativeText": "giờ đi ngủ",
 		"english": "bedtime",
 		"soundmark": "/'bɛdtaɪm/"
 	},
 	{
-		"chinese": "故事",
+		"nativeText": "câu chuyện",
 		"english": "story",
 		"soundmark": "/'stɔri/"
 	},
 	{
-		"chinese": "睡前故事",
+		"nativeText": "câu chuyện trước khi ngủ",
 		"english": "a bedtime story",
 		"soundmark": "/ə/ /'bɛdtaɪm/ /'stɔri/"
 	},
 	{
-		"chinese": "读",
+		"nativeText": "đọc",
 		"english": "to read",
 		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "读一个睡前故事",
+		"nativeText": "đọc một câu chuyện trước khi ngủ",
 		"english": "to read a bedtime story",
 		"soundmark": "/tə/ /rid/ /ə/ /'bɛdtaɪm/ /'stɔri/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "读给她",
+		"nativeText": "đọc cho cô ấy",
 		"english": "to read her",
 		"soundmark": "/tə/ /rid/ /hɚ/"
 	},
 	{
-		"chinese": "读给她一个睡前故事",
+		"nativeText": "đọc cho cô ấy một câu chuyện trước khi ngủ",
 		"english": "to read her a bedtime story",
 		"soundmark": "/tə/ /rid/ /hɚ/ /ə/ /'bɛdtaɪm/ /'stɔri/"
 	},
 	{
-		"chinese": "我的女儿",
+		"nativeText": "con gái của tôi",
 		"english": "my daughter",
 		"soundmark": "/maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "想要",
+		"nativeText": "muốn",
 		"english": "wants",
 		"soundmark": "/wɑnts/"
 	},
 	{
-		"chinese": "我的女儿想要我",
+		"nativeText": "con gái của tôi muốn tôi",
 		"english": "my daughter wants me",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /wɑnts/ /mi/"
 	},
 	{
-		"chinese": "我的女儿想要我读给她一个睡前故事",
+		"nativeText": "con gái của tôi muốn tôi đọc cho cô ấy một câu chuyện trước khi ngủ",
 		"english": "my daughter wants me to read her a bedtime story",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /wɑnts/ /mi/ /tə/ /rid/ /hɚ/ /ə/ /'bɛdtaɪm/ /'stɔri/"
+		"soundmark": "/maɪ/ /'dɔtɚ' /wɑnts/ /mi/ /tə/ /rid/ /hɚ/ /ə/ /'bɛdtaɪm/ /'stɔri/"
 	},
 	{
-		"chinese": "打电话",
+		"nativeText": "gọi điện",
 		"english": "to call",
 		"soundmark": "/tə/ /kɔl/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "打电话给我",
+		"nativeText": "gọi điện cho tôi",
 		"english": "to call me",
 		"soundmark": "/tə/ /kɔl/ /mi/"
 	},
 	{
-		"chinese": "忘记",
+		"nativeText": "quên",
 		"english": "to forget",
 		"soundmark": "/tə/ /fɚ'ɡɛt/"
 	},
 	{
-		"chinese": "忘记打电话给我",
+		"nativeText": "quên gọi điện cho tôi",
 		"english": "to forget to call me",
 		"soundmark": "/tə/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你忘记打电话给我",
+		"nativeText": "bạn quên gọi điện cho tôi",
 		"english": "you forget to call me",
 		"soundmark": "/ju/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
 	},
 	{
-		"chinese": "不要",
+		"nativeText": "đừng",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你不要忘记打电话给我",
+		"nativeText": "bạn đừng quên gọi điện cho tôi",
 		"english": "you don't forget to call me",
 		"soundmark": "/ju/ /dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
 	},
 	{
-		"chinese": "不要忘记打电话给我",
+		"nativeText": "đừng quên gọi điện cho tôi",
 		"english": "don't forget to call me",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to get",
 		"soundmark": "/tə/ /ɡɛt/"
 	},
 	{
-		"chinese": "那里",
+		"nativeText": "đó",
 		"english": "there",
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "到达那里",
+		"nativeText": "đến đó",
 		"english": "to get there",
 		"soundmark": "/tə/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你到达那里",
+		"nativeText": "bạn đến đó",
 		"english": "you get there",
 		"soundmark": "/ju/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "当......时候",
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当你达到那里的时候",
+		"nativeText": "khi bạn đến đó",
 		"english": "when you get there",
 		"soundmark": "/wɛn/ /ju/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "不要忘记打电话给我当你到达那里的时候",
+		"nativeText": "đừng quên gọi điện cho tôi khi bạn đến đó",
 		"english": "don't forget to call me when you get there",
 		"soundmark": "/dont/ /fɚ'ɡɛt/ /tə/ /kɔl/ /mi/ /wɛn/ /ju/ /ɡɛt/ /ðɛr/"
 	},
 	{
-		"chinese": "买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "裙子",
+		"nativeText": "váy",
 		"english": "dress",
 		"soundmark": "/drɛs/"
 	},
 	{
-		"chinese": "新的",
+		"nativeText": "mới",
 		"english": "new",
 		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "一件新裙子",
+		"nativeText": "một chiếc váy mới",
 		"english": "a new dress",
 		"soundmark": "/ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "买一件新裙子",
+		"nativeText": "mua một chiếc váy mới",
 		"english": "to buy a new dress",
 		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "买给她",
+		"nativeText": "mua cho cô ấy",
 		"english": "to buy her",
 		"soundmark": "/tə/ /baɪ/ /hɚ/"
 	},
 	{
-		"chinese": "买给她一件新裙子",
+		"nativeText": "mua cho cô ấy một chiếc váy mới",
 		"english": "to buy her a new dress",
 		"soundmark": "/tə/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我买给她一件新裙子",
+		"nativeText": "tôi mua cho cô ấy một chiếc váy mới",
 		"english": "I buy her a new dress",
 		"soundmark": "/aɪ/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "我（过去）买给她一件新裙子",
+		"nativeText": "tôi đã mua cho cô ấy một chiếc váy mới",
 		"english": "I bought her a new dress",
 		"soundmark": "/aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "女儿",
+		"nativeText": "con gái",
 		"english": "daughter",
 		"soundmark": "/'dɔtɚ/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我的女儿",
+		"nativeText": "con gái của tôi",
 		"english": "my daughter",
 		"soundmark": "/maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "我（过去）买给我的女儿一件新裙子",
+		"nativeText": "tôi đã mua cho con gái của tôi một chiếc váy mới",
 		"english": "I bought my daughter a new dress",
 		"soundmark": "/aɪ/ /bɔt/ /maɪ/ /'dɔtɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "周",
+		"nativeText": "tuần",
 		"english": "week",
 		"soundmark": "/wik/"
 	},
 	{
-		"chinese": "上一个",
+		"nativeText": "trước",
 		"english": "last",
 		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "上周",
+		"nativeText": "tuần trước",
 		"english": "last week",
 		"soundmark": "/læst/ /wik/"
 	},
 	{
-		"chinese": "我上周买给我女儿一件新裙子",
+		"nativeText": "tôi đã mua cho con gái tôi một chiếc váy mới vào tuần trước",
 		"english": "I bought my daughter a new dress last week",
 		"soundmark": "/aɪ/ /bɔt/ /maɪ/ /'dɔtɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
 	},
 	{
-		"chinese": "出生",
+		"nativeText": "sinh",
 		"english": "birth",
 		"soundmark": "/bɝθ/"
 	},
 	{
-		"chinese": "日",
+		"nativeText": "ngày",
 		"english": "day",
 		"soundmark": "/de/"
 	},
 	{
-		"chinese": "生日",
+		"nativeText": "sinh nhật",
 		"english": "birthday",
 		"soundmark": "/'bɝθde/"
 	},
 	{
-		"chinese": "礼物",
+		"nativeText": "quà",
 		"english": "gift",
 		"soundmark": "/ɡɪft/"
 	},
 	{
-		"chinese": "生日礼物",
+		"nativeText": "quà sinh nhật",
 		"english": "birthday gift",
 		"soundmark": "/'bɝθde/ /ɡɪft/"
 	},
 	{
-		"chinese": "一个生日礼物",
+		"nativeText": "một món quà sinh nhật",
 		"english": "a birthday gift",
 		"soundmark": "/ə/ /'bɝθde/ /ɡɪft/"
 	},
 	{
-		"chinese": "买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "买一个生日礼物",
+		"nativeText": "mua một món quà sinh nhật",
 		"english": "to buy a birthday gift",
 		"soundmark": "/tə/ /baɪ/ /ə/ /'bɝθde/ /ɡɪft/"
 	},
 	{
-		"chinese": "我的女儿",
+		"nativeText": "con gái của tôi",
 		"english": "my daughter",
 		"soundmark": "/maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "买给我的女儿",
+		"nativeText": "mua cho con gái của tôi",
 		"english": "to buy my daughter",
 		"soundmark": "/tə/ /baɪ/ /maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "买给我的女儿一个生日礼物",
+		"nativeText": "mua cho con gái của tôi một món quà sinh nhật",
 		"english": "to buy my daughter a birthday gift",
 		"soundmark": "/tə/ /baɪ/ /maɪ/ /'dɔtɚ/ /ə/ /'bɝθde/ /ɡɪft/"
 	},
 	{
-		"chinese": "我将会",
+		"nativeText": "tôi sẽ",
 		"english": "I will",
 		"soundmark": "/aɪ/ /wɪl/"
 	},
 	{
-		"chinese": "我将会买给我的女儿一个生日礼物",
+		"nativeText": "tôi sẽ mua cho con gái của tôi một món quà sinh nhật",
 		"english": "I will buy my daughter a birthday gift",
 		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /maɪ/ /'dɔtɚ/ /ə/ /'bɝθde/ /ɡɪft/"
 	},
 	{
-		"chinese": "月",
+		"nativeText": "tháng",
 		"english": "month",
 		"soundmark": "/mʌnθ/"
 	},
 	{
-		"chinese": "下一个",
+		"nativeText": "tiếp theo",
 		"english": "next",
 		"soundmark": "/nɛkst/"
 	},
 	{
-		"chinese": "下个月",
+		"nativeText": "tháng tới",
 		"english": "next month",
 		"soundmark": "/nɛkst/ /mʌnθ/"
 	},
 	{
-		"chinese": "下个月我将会买给我女儿一个生日礼物",
+		"nativeText": "tôi sẽ mua cho con gái tôi một món quà sinh nhật vào tháng tới",
 		"english": "I will buy my daughter a birthday gift next month",
 		"soundmark": "/aɪ/ /wɪl/ /baɪ/ /maɪ/ /'dɔtɚ/ /ə/ /'bɝθde/ /ɡɪft/ /nɛkst/ /mʌnθ/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to make",
 		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "杯",
+		"nativeText": "cốc",
 		"english": "cup",
 		"soundmark": "/kʌp/"
 	},
 	{
-		"chinese": "一杯",
+		"nativeText": "một cốc",
 		"english": "a cup",
 		"soundmark": "/ə/ /kʌp/"
 	},
 	{
-		"chinese": "咖啡",
+		"nativeText": "cà phê",
 		"english": "coffee",
 		"soundmark": "/'kɔfi/"
 	},
 	{
-		"chinese": "一杯咖啡",
+		"nativeText": "một cốc cà phê",
 		"english": "a cup of coffee",
 		"soundmark": "/ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "做一杯咖啡",
+		"nativeText": "pha một cốc cà phê",
 		"english": "to make a cup of coffee",
 		"soundmark": "/tə/ /mek/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我做一杯咖啡",
+		"nativeText": "tôi pha một cốc cà phê",
 		"english": "I make a cup of coffee",
 		"soundmark": "/aɪ/ /mek/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "我自己",
+		"nativeText": "bản thân tôi",
 		"english": "myself",
 		"soundmark": "/maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我做给我自己一杯咖啡",
+		"nativeText": "tôi pha cho bản thân mình một cốc cà phê",
 		"english": "I make myself a cup of coffee",
 		"soundmark": "/aɪ/ /mek/ /maɪ'sɛlf/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "早晨",
+		"nativeText": "buổi sáng",
 		"english": "morning",
 		"soundmark": "/'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "每个",
+		"nativeText": "mỗi",
 		"english": "every",
 		"soundmark": "/'ɛvri/"
 	},
 	{
-		"chinese": "每天早晨",
+		"nativeText": "mỗi buổi sáng",
 		"english": "every morning",
 		"soundmark": "/'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "每天早晨我做给自己一杯咖啡",
+		"nativeText": "mỗi buổi sáng tôi pha cho bản thân mình một cốc cà phê",
 		"english": "I make myself a cup of coffee every morning",
 		"soundmark": "/aɪ/ /mek/ /maɪ'sɛlf/ /ə/ /kʌp/ /əv/ /'kɔfi/ /'ɛvri/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "做给我",
+		"nativeText": "pha cho tôi",
 		"english": "to make me",
 		"soundmark": "/tə/ /mek/ /mi/"
 	},
 	{
-		"chinese": "做给我一杯咖啡",
+		"nativeText": "pha cho tôi một cốc cà phê",
 		"english": "to make me a cup of coffee",
 		"soundmark": "/tə/ /mek/ /mi/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "你可以",
+		"nativeText": "bạn có thể",
 		"english": "you can",
 		"soundmark": "/ju/ /kæn/"
 	},
 	{
-		"chinese": "你可以做给我一杯咖啡",
+		"nativeText": "bạn có thể pha cho tôi một cốc cà phê",
 		"english": "you can make me a cup of coffee",
 		"soundmark": "/ju/ /kæn/ /mek/ /mi/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "你可以做给我一杯咖啡吗？",
+		"nativeText": "bạn có thể pha cho tôi một cốc cà phê không?",
 		"english": "can you make me a cup of coffee",
 		"soundmark": "/kæn/ /ju/ /mek/ /mi/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "做给她",
+		"nativeText": "pha cho cô ấy",
 		"english": "to make her",
 		"soundmark": "/tə/ /mek/ /hɚ/"
 	},
 	{
-		"chinese": "你可以做给她一杯咖啡吗？",
+		"nativeText": "bạn có thể pha cho cô ấy một cốc cà phê không?",
 		"english": "can you make her a cup of coffee",
 		"soundmark": "/kæn/ /ju/ /mek/ /hɚ/ /ə/ /kʌp/ /əv/ /'kɔfi/"
 	},
 	{
-		"chinese": "开心",
+		"nativeText": "vui vẻ",
 		"english": "happy",
 		"soundmark": "/'hæpi/"
 	},
 	{
-		"chinese": "你可以让她开心吗？",
+		"nativeText": "bạn có thể làm cho cô ấy vui vẻ không?",
 		"english": "can you make her happy",
 		"soundmark": "/kæn/ /ju/ /mek/ /hɚ/ /'hæpi/"
 	},
 	{
-		"chinese": "让她开心",
+		"nativeText": "làm cho cô ấy vui vẻ",
 		"english": "to make her happy",
 		"soundmark": "/tə/ /mek/ /hɚ/ /'hæpi/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要让她开心",
+		"nativeText": "tôi muốn làm cho cô ấy vui vẻ",
 		"english": "I want to make her happy",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /mek/ /hɚ/ /'hæpi/"
 	},
 	{
-		"chinese": "生日",
+		"nativeText": "sinh nhật",
 		"english": "birthday",
 		"soundmark": "/'bɝθde/"
 	},
 	{
-		"chinese": "小月亮的生日",
+		"nativeText": "sinh nhật của Tiểu Nguyệt Lượng",
 		"english": "Xiaoyueliang's birthday",
 		"soundmark": "/'bɝθde/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "明天是小月亮的生日",
+		"nativeText": "ngày mai là sinh nhật của Tiểu Nguyệt Lượng",
 		"english": "tomorrow is Xiaoyueliang's birthday",
 		"soundmark": "/tə'mɔro/ /ɪz/ /'bɝθde/"
 	},
 	{
-		"chinese": "明天是小月亮的生日而且我想要让她开心",
+		"nativeText": "ngày mai là sinh nhật của Tiểu Nguyệt Lượng và tôi muốn làm cho cô ấy vui vẻ",
 		"english": "tomorrow is Xiaoyueliang's birthday and I want to make her happy",
 		"soundmark": "/tə'mɔro/ /ɪz/ /'bɝθde/ /ənd/ /aɪ/ /wɑnt/ /tə/ /mek/ /hɚ/ /'hæpi/"
 	},
 	{
-		"chinese": "买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "一件新裙子",
+		"nativeText": "một chiếc váy mới",
 		"english": "a new dress",
 		"soundmark": "/ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "买一件新裙子",
+		"nativeText": "mua một chiếc váy mới",
 		"english": "to buy a new dress",
 		"soundmark": "/tə/ /baɪ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "买给她",
+		"nativeText": "mua cho cô ấy",
 		"english": "to buy her",
 		"soundmark": "/tə/ /baɪ/ /hɚ/"
 	},
 	{
-		"chinese": "买给她一件新裙子",
+		"nativeText": "mua cho cô ấy một chiếc váy mới",
 		"english": "to buy her a new dress",
 		"soundmark": "/tə/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "我买给她一件新裙子",
+		"nativeText": "tôi mua cho cô ấy một chiếc váy mới",
 		"english": "I buy her a new dress",
 		"soundmark": "/aɪ/ /baɪ/ /hɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "我（过去）买给她一件新裙子",
+		"nativeText": "tôi đã mua cho cô ấy một chiếc váy mới",
 		"english": "I bought her a new dress",
 		"soundmark": "/aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/"
 	},
 	{
-		"chinese": "上周",
+		"nativeText": "tuần trước",
 		"english": "last week",
 		"soundmark": "/læst/ /wik/"
 	},
 	{
-		"chinese": "我上周买给她一件新裙子",
+		"nativeText": "tôi đã mua cho cô ấy một chiếc váy mới vào tuần trước",
 		"english": "I bought her a new dress last week",
 		"soundmark": "/aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
 	},
 	{
-		"chinese": "所以",
+		"nativeText": "vì vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "所以我上周买给她一件新裙子",
+		"nativeText": "vì vậy tôi đã mua cho cô ấy một chiếc váy mới vào tuần trước",
 		"english": "so I bought her a new dress last week",
 		"soundmark": "/so/ /aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
 	},
 	{
-		"chinese": "明天是小月亮的生日而且我想要让她开心所以我上周买给她一件新裙子",
+		"nativeText": "ngày mai là sinh nhật của Tiểu Nguyệt Lượng và tôi muốn làm cho cô ấy vui vẻ nên tôi đã mua cho cô ấy một chiếc váy mới vào tuần trước",
 		"english": "tomorrow is Xiaoyueliang's birthday and I want to make her happy so I bought her a new dress last week",
 		"soundmark": "/tə'mɔro/ /ɪz/ /'bɝθde/ /ənd/ /aɪ/ /wɑnt/ /tə/ /mek/ /hɚ/ /'hæpi/ /so/ /aɪ/ /bɔt/ /hɚ/ /ə/ /nu/ /drɛs/ /læst/ /wik/"
 	}

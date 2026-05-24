@@ -6,8 +6,8 @@
       class="w-16"
       :rank="rank"
     />
-    <div class="flex-1 truncate text-center">{{ username || "匿名" }}</div>
-    <div class="w-16 text-right">{{ count }} 课</div>
+    <div class="flex-1 truncate text-center">{{ username || "Ẩn danh" }}</div>
+    <div class="w-16 text-right">{{ count }} bài</div>
   </div>
 </template>
 

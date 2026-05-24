@@ -8,8 +8,8 @@ type CoursePackInsert = typeof coursePack.$inferInsert;
 export async function insertCoursePack(db: DbType, values?: Partial<CoursePackInsert>) {
   const defaultCoursePack = {
     order: 1,
-    title: "课程包",
-    description: "这是一个课程包",
+    title: "Gói bài học",
+    description: "Đây là một gói bài học",
     isFree: true,
     creatorId: "test",
     shareLevel: "public",
@@ -34,7 +34,7 @@ export async function insertCourse(
 ) {
   const defaultCourse = {
     order: 1,
-    title: "第一课",
+    title: "Bài 1",
     coursePackId,
   } satisfies CourseInsert;
 
@@ -59,7 +59,7 @@ export async function insertStatement(
   const defaultStatement = {
     order,
     courseId,
-    chinese: "你好",
+    nativeText: "Xin chào",
     english: "hello",
     soundmark: "nihao",
   } satisfies StatementInsert;

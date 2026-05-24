@@ -5,7 +5,7 @@ import Redis from "ioredis";
 import { UserEntity } from "../user/user.decorators";
 import { UserService } from "../user/user.service";
 
-// 定义周期枚举
+// Define period enum
 export enum RankPeriod {
   WEEKLY = "weekly",
   MONTHLY = "monthly",
@@ -126,9 +126,9 @@ export class RankService {
     const rankKey = this.rankKeys[period];
     try {
       await this.redis.del(rankKey);
-      this.logger.verbose(`${period}重置排行榜成功: ${new Date()}`);
+      this.logger.verbose(`${period} leaderboard reset successfully: ${new Date()}`);
     } catch (error) {
-      this.logger.error(`${period}重置排行榜时发生错误: ${error}`);
+      this.logger.error(`Error resetting ${period} leaderboard: ${error}`);
     }
   }
 }

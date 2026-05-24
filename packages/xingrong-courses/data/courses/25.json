@@ -1,761 +1,761 @@
 [
 	{
-		"chinese": "工作",
+		"nativeText": "công việc",
 		"english": "job",
 		"soundmark": "/dʒɑb/"
 	},
 	{
-		"chinese": "工作；付出劳动",
+		"nativeText": "làm việc",
 		"english": "to work",
 		"soundmark": "/tə/ /wɝk/"
 	},
 	{
-		"chinese": "需要",
+		"nativeText": "cần",
 		"english": "need",
 		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "he",
 		"soundmark": "/hi/"
 	},
 	{
-		"chinese": "他需要",
+		"nativeText": "anh ấy cần",
 		"english": "he needs",
 		"soundmark": "/hi/ /nidz/"
 	},
 	{
-		"chinese": "他需要工作",
+		"nativeText": "anh ấy cần làm việc",
 		"english": "he needs to work",
 		"soundmark": "/hi/ /nidz/ /tə/ /wɝk/"
 	},
 	{
-		"chinese": "家",
+		"nativeText": "nhà",
 		"english": "home",
 		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "homework",
 		"soundmark": "/'homwɝk/"
 	},
 	{
-		"chinese": "他的",
+		"nativeText": "của anh ấy",
 		"english": "his",
 		"soundmark": "/hɪz/"
 	},
 	{
-		"chinese": "他的家庭作业",
+		"nativeText": "bài tập về nhà của anh ấy",
 		"english": "his homework",
 		"soundmark": "/hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "在......上",
+		"nativeText": "trên",
 		"english": "on",
 		"soundmark": "/ɑn/"
 	},
 	{
-		"chinese": "在他的家庭作业上",
+		"nativeText": "trên bài tập về nhà của anh ấy",
 		"english": "on his homework",
 		"soundmark": "/ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他需要在他的家庭作业上工作",
+		"nativeText": "anh ấy cần làm việc trên bài tập về nhà của anh ấy",
 		"english": "he needs to work on his homework",
 		"soundmark": "/hi/ /nidz/ /tə/ /wɝk/ /ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他在他的家庭作业上工作",
+		"nativeText": "anh ấy làm việc trên bài tập về nhà của anh ấy",
 		"english": "he works on his homework",
 		"soundmark": "/hi/ /wɝks/ /ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "工作(ing形式)",
+		"nativeText": "đang làm việc (dạng ing)",
 		"english": "working",
 		"soundmark": "/'wɝkɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在工作",
+		"nativeText": "đang làm việc",
 		"english": "be working",
 		"soundmark": "/bi/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "他(现在)正在工作",
+		"nativeText": "anh ấy đang làm việc",
 		"english": "he is working",
 		"soundmark": "/hi/ /ɪz/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "在他的家庭作业上",
+		"nativeText": "trên bài tập về nhà của anh ấy",
 		"english": "on his homework",
 		"soundmark": "/ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他(现在)正在在他的家庭作业上工作",
+		"nativeText": "anh ấy đang làm việc trên bài tập về nhà của anh ấy",
 		"english": "he is working on his homework",
 		"soundmark": "/hi/ /ɪz/ /'wɝkɪŋ/ /ɑn/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我的家庭作业",
+		"nativeText": "bài tập về nhà của tôi",
 		"english": "my homework",
 		"soundmark": "/maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "正在工作",
+		"nativeText": "đang làm việc",
 		"english": "be working",
 		"soundmark": "/bi/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "我(现在)正在工作",
+		"nativeText": "tôi đang làm việc",
 		"english": "I am working",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "在......上",
+		"nativeText": "trên",
 		"english": "on",
 		"soundmark": "/ɑn/"
 	},
 	{
-		"chinese": "我(现在)正在在我的家庭作业上工作",
+		"nativeText": "tôi đang làm việc trên bài tập về nhà của tôi",
 		"english": "I am working on my homework",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/ /ɑn/ /maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "它；那件事",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "我(现在)正在在那件事上工作",
+		"nativeText": "tôi đang làm việc trên việc đó",
 		"english": "I am working on it",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
 	{
-		"chinese": "仍然",
+		"nativeText": "vẫn",
 		"english": "still",
 		"soundmark": "/stɪl/"
 	},
 	{
-		"chinese": "我(现在)仍然正在在那件事上工作",
+		"nativeText": "tôi vẫn đang làm việc trên việc đó",
 		"english": "I am still working on it",
 		"soundmark": "/aɪ/ /æm/ /stɪl/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "we",
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们(现在)正在在那件事上工作",
+		"nativeText": "chúng ta đang làm việc trên việc đó",
 		"english": "we are working on it",
 		"soundmark": "/wi/ /ɚ/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
 	{
-		"chinese": "项目",
+		"nativeText": "dự án",
 		"english": "project",
 		"soundmark": "/ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "新的",
+		"nativeText": "mới",
 		"english": "new",
 		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "一个新的项目",
+		"nativeText": "một dự án mới",
 		"english": "a new project",
 		"soundmark": "/ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们(现在)正在在一个新的项目上工作",
+		"nativeText": "chúng ta đang làm việc trên một dự án mới",
 		"english": "we are working on a new project",
 		"soundmark": "/wi/ /ɚ/ /'wɝkɪŋ/ /ɑn/ /ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "正在工作",
+		"nativeText": "đang làm việc",
 		"english": "be working",
 		"soundmark": "/bi/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "将会正在工作",
+		"nativeText": "sẽ đang làm việc",
 		"english": "will be working",
 		"soundmark": "/wɪl/ /bi/ /'wɝkɪŋ/"
 	},
 	{
-		"chinese": "一个新的项目",
+		"nativeText": "một dự án mới",
 		"english": "a new project",
 		"soundmark": "/ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们将会正在在一个新的项目上工作",
+		"nativeText": "chúng ta sẽ đang làm việc trên một dự án mới",
 		"english": "we will be working on a new project",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'wɝkɪŋ/ /ɑn/ /ə/ /nu/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "周；星期",
+		"nativeText": "tuần",
 		"english": "week",
 		"soundmark": "/wik/"
 	},
 	{
-		"chinese": "下一个",
+		"nativeText": "tiếp theo",
 		"english": "next",
 		"soundmark": "/nɛkst/"
 	},
 	{
-		"chinese": "下周",
+		"nativeText": "tuần sau",
 		"english": "next week",
 		"soundmark": "/nɛkst/ /wik/"
 	},
 	{
-		"chinese": "我们下周将会正在在一个新的项目上工作",
+		"nativeText": "chúng ta sẽ đang làm việc trên một dự án mới vào tuần sau",
 		"english": "we will be working on a new project next week",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'wɝkɪŋ/ /ɑn/ /ə/ /nu/ /ˈprɑdʒɛkt/ /nɛkst/ /wik/"
 	},
 	{
-		"chinese": "它；那件事",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "我们下周将会正在在那件事上工作",
+		"nativeText": "chúng ta sẽ đang làm việc trên việc đó vào tuần sau",
 		"english": "we will be working on it next week",
 		"soundmark": "/wi/ /wɪl/ /bi/ /'wɝkɪŋ/ /ɑn/ /ɪt/ /nɛkst/ /wik/"
 	},
 	{
-		"chinese": "我(现在)正在在那件事上工作",
+		"nativeText": "tôi đang làm việc trên việc đó",
 		"english": "I am working on it",
 		"soundmark": "/aɪ/ /æm/ /'wɝkɪŋ/ /ɑn/ /ɪt/"
 	},
 	{
-		"chinese": "寻找",
+		"nativeText": "tìm kiếm",
 		"english": "to look for",
 		"soundmark": "/tə/ /lʊk/ /fɝ/"
 	},
 	{
-		"chinese": "寻找(ing形式)",
+		"nativeText": "đang tìm kiếm (dạng ing)",
 		"english": "looking for",
 		"soundmark": "/ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "be (nguyên mẫu)",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在寻找",
+		"nativeText": "đang tìm kiếm",
 		"english": "be looking for",
 		"soundmark": "/bi/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她(现在)正在寻找",
+		"nativeText": "cô ấy đang tìm kiếm",
 		"english": "she is looking for",
 		"soundmark": "/ʃi/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/"
 	},
 	{
-		"chinese": "她的",
+		"nativeText": "của cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "玩具",
+		"nativeText": "đồ chơi",
 		"english": "toy",
 		"soundmark": "/tɔɪ/"
 	},
 	{
-		"chinese": "她的玩具",
+		"nativeText": "đồ chơi của cô ấy",
 		"english": "her toy",
 		"soundmark": "/hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "她(现在)正在寻找她的玩具",
+		"nativeText": "cô ấy đang tìm đồ chơi của cô ấy",
 		"english": "she is looking for her toy",
 		"soundmark": "/ʃi/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "女儿",
+		"nativeText": "con gái",
 		"english": "daughter",
 		"soundmark": "/'dɔtɚ/"
 	},
 	{
-		"chinese": "我的女儿",
+		"nativeText": "con gái của tôi",
 		"english": "my daughter",
 		"soundmark": "/maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "我的女儿(现在)正在寻找她的玩具",
+		"nativeText": "con gái của tôi đang tìm đồ chơi của cô ấy",
 		"english": "my daughter is looking for her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm thấy",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "她的玩具",
+		"nativeText": "đồ chơi của cô ấy",
 		"english": "her toy",
 		"soundmark": "/hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "找到她的玩具",
+		"nativeText": "tìm thấy đồ chơi của cô ấy",
 		"english": "to find her toy",
 		"soundmark": "/tə/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "我的女儿",
+		"nativeText": "con gái của tôi",
 		"english": "my daughter",
 		"soundmark": "/maɪ/ /'dɔtɚ/"
 	},
 	{
-		"chinese": "我的女儿找到她的玩具",
+		"nativeText": "con gái của tôi tìm thấy đồ chơi của cô ấy",
 		"english": "my daughter finds her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /faɪndz/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "能",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "我的女儿可以找到她的玩具",
+		"nativeText": "con gái của tôi có thể tìm thấy đồ chơi của cô ấy",
 		"english": "my daughter can find her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /kæn/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "不能",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "我的女儿不能找到她的玩具",
+		"nativeText": "con gái của tôi không thể tìm thấy đồ chơi của cô ấy",
 		"english": "my daughter can't find her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /kænt/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是我的女儿不能找到她的玩具",
+		"nativeText": "nhưng con gái của tôi không thể tìm thấy đồ chơi của cô ấy",
 		"english": "but my daughter can't find her toy",
 		"soundmark": "/bʌt/ /maɪ/ /'dɔtɚ/ /kænt/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "我的女儿(现在)正在寻找她的玩具",
+		"nativeText": "con gái của tôi đang tìm đồ chơi của cô ấy",
 		"english": "my daughter is looking for her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "我的女儿(现在)正在寻找她的玩具但是我的女儿不能找到她的玩具",
+		"nativeText": "con gái của tôi đang tìm đồ chơi của cô ấy nhưng con gái của tôi không thể tìm thấy đồ chơi của cô ấy",
 		"english": "my daughter is looking for her toy but my daughter can't find her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /maɪ/ /'dɔtɚ/ /kænt/ /faɪnd/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "它",
+		"nativeText": "nó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "但是她不能找到它",
+		"nativeText": "nhưng cô ấy không thể tìm thấy nó",
 		"english": "but she can't find it",
 		"soundmark": "/bʌt/ /ʃi/ /kænt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "我的女儿(现在)正在寻找她的玩具但是她不能找到它",
+		"nativeText": "con gái của tôi đang tìm đồ chơi của cô ấy nhưng cô ấy không thể tìm thấy nó",
 		"english": "my daughter is looking for her toy but she can't find it",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /ʃi/ /kænt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "我的女儿(过去)正在寻找她的玩具",
+		"nativeText": "con gái của tôi đã đang tìm đồ chơi của cô ấy",
 		"english": "my daughter was looking for her toy",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/"
 	},
 	{
-		"chinese": "但是她(过去)不能找到它",
+		"nativeText": "nhưng cô ấy đã không thể tìm thấy nó",
 		"english": "but she couldn't find it",
 		"soundmark": "/bʌt/ /ʃi/ /kʊdnt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "我的女儿(过去)正在寻找她的玩具但是她(过去)不能找到它",
+		"nativeText": "con gái của tôi đã đang tìm đồ chơi của cô ấy nhưng cô ấy đã không thể tìm thấy nó",
 		"english": "my daughter was looking for her toy but she couldn't find it",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /ˈlʊkɪŋ/ /fɝ/ /hɚ/ /tɔɪ/ /bʌt/ /ʃi/ /kʊdnt/ /faɪnd/ /ɪt/"
 	},
 	{
-		"chinese": "听见；听说",
+		"nativeText": "nghe; nghe nói",
 		"english": "to hear",
 		"soundmark": "/tə/ /hɪr/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "听见我",
+		"nativeText": "nghe tôi",
 		"english": "to hear me",
 		"soundmark": "/tə/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你听见我",
+		"nativeText": "bạn nghe tôi",
 		"english": "you hear me",
 		"soundmark": "/ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "你可以听见我",
+		"nativeText": "bạn có thể nghe tôi",
 		"english": "you can hear me",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "是否",
+		"nativeText": "liệu có hay không",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "是否你可以听见我",
+		"nativeText": "liệu bạn có thể nghe tôi không",
 		"english": "if you can hear me",
 		"soundmark": "/ɪf/ /ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我想要知道",
+		"nativeText": "tôi muốn biết",
 		"english": "I want to know",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/"
 	},
 	{
-		"chinese": "我想要知道是否你可以听见我",
+		"nativeText": "tôi muốn biết liệu bạn có thể nghe tôi không",
 		"english": "I want to know if you can hear me",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /no/ /ɪf/ /ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "我知道",
+		"nativeText": "tôi biết",
 		"english": "I know",
 		"soundmark": "/aɪ/ /no/"
 	},
 	{
-		"chinese": "我知道你可以听见我",
+		"nativeText": "tôi biết bạn có thể nghe tôi",
 		"english": "I know you can hear me",
 		"soundmark": "/aɪ/ /no/ /ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你可以听见我",
+		"nativeText": "bạn có thể nghe tôi",
 		"english": "you can hear me",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "你可以听见我吗？",
+		"nativeText": "bạn có thể nghe tôi không?",
 		"english": "can you hear me",
 		"soundmark": "/kæn/ /ju/ /hɪr/ /mi/"
 	},
 	{
-		"chinese": "音乐",
+		"nativeText": "âm nhạc",
 		"english": "music",
 		"soundmark": "/'mjuzɪk/"
 	},
 	{
-		"chinese": "你可以听见音乐",
+		"nativeText": "bạn có thể nghe âm nhạc",
 		"english": "you can hear music",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "一些",
+		"nativeText": "một chút; vài",
 		"english": "some",
 		"soundmark": "/səm/"
 	},
 	{
-		"chinese": "你可以听见一些音乐",
+		"nativeText": "bạn có thể nghe một chút âm nhạc",
 		"english": "you can hear some music",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /səm/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "听",
+		"nativeText": "lắng nghe",
 		"english": "to listen",
 		"soundmark": "/tə/ /'lɪsn/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要听",
+		"nativeText": "tôi muốn lắng nghe",
 		"english": "I want to listen",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /'lɪsn/"
 	},
 	{
-		"chinese": "我听",
+		"nativeText": "tôi lắng nghe",
 		"english": "I listen",
 		"soundmark": "/aɪ/ /'lɪsn/"
 	},
 	{
-		"chinese": "听(ing形式)",
+		"nativeText": "đang lắng nghe (dạng ing)",
 		"english": "listening",
 		"soundmark": "/ˈlɪsnɪŋ/"
 	},
 	{
-		"chinese": "我(现在)正在听",
+		"nativeText": "tôi đang lắng nghe",
 		"english": "I am listening",
 		"soundmark": "/aɪ/ /æm/ /ˈlɪsnɪŋ/"
 	},
 	{
-		"chinese": "音乐",
+		"nativeText": "âm nhạc",
 		"english": "music",
 		"soundmark": "/'mjuzɪk/"
 	},
 	{
-		"chinese": "我(现在)正在听音乐",
+		"nativeText": "tôi đang nghe nhạc",
 		"english": "I am listening to music",
 		"soundmark": "/aɪ/ /æm/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她(现在)正在听音乐",
+		"nativeText": "cô ấy đang nghe nhạc",
 		"english": "she is listening to music",
 		"soundmark": "/ʃi/ /ɪz/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "她(过去)正在听音乐",
+		"nativeText": "cô ấy đã đang nghe nhạc",
 		"english": "she was listening to music",
 		"soundmark": "/ʃi/ /wəz/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我(过去)正在听音乐",
+		"nativeText": "tôi đã đang nghe nhạc",
 		"english": "I was listening to music",
 		"soundmark": "/aɪ/ /wəz/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "一些",
+		"nativeText": "một chút; vài",
 		"english": "some",
 		"soundmark": "/səm/"
 	},
 	{
-		"chinese": "我(过去)正在听一些音乐",
+		"nativeText": "tôi đã đang nghe một chút nhạc",
 		"english": "I was listening to some music",
 		"soundmark": "/aɪ/ /wəz/ /ˈlɪsnɪŋ/ /tə/ /səm/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "你(现在)正在听",
+		"nativeText": "bạn đang lắng nghe",
 		"english": "you are listening",
 		"soundmark": "/ju/ /ɚ/ /ˈlɪsnɪŋ/"
 	},
 	{
-		"chinese": "你(现在)正在听音乐",
+		"nativeText": "bạn đang nghe nhạc",
 		"english": "you are listening to music",
 		"soundmark": "/ju/ /ɚ/ /ˈlɪsnɪŋ/ /tə/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "你听",
+		"nativeText": "bạn lắng nghe",
 		"english": "you listen",
 		"soundmark": "/ju/ /'lɪsn/"
 	},
 	{
-		"chinese": "认真地",
+		"nativeText": "cẩn thận",
 		"english": "carefully",
 		"soundmark": "/'kɛrfəli/"
 	},
 	{
-		"chinese": "你认真地听",
+		"nativeText": "bạn lắng nghe cẩn thận",
 		"english": "you listen carefully",
 		"soundmark": "/ju/ /'lɪsn/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "如果",
+		"nativeText": "nếu",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "如果你认真地听",
+		"nativeText": "nếu bạn lắng nghe cẩn thận",
 		"english": "if you listen carefully",
 		"soundmark": "/ɪf/ /ju/ /'lɪsn/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "你可以听到一些音乐",
+		"nativeText": "bạn có thể nghe một chút âm nhạc",
 		"english": "you can hear some music",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /səm/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "如果你认真地听你可以听到一些音乐",
+		"nativeText": "nếu bạn lắng nghe cẩn thận bạn có thể nghe một chút âm nhạc",
 		"english": "if you listen carefully you can hear some music",
 		"soundmark": "/ɪf/ /ju/ /'lɪsn/ /'kɛrfəli/ /ju/ /kæn/ /hɪr/ /səm/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "这段音乐",
+		"nativeText": "bản nhạc này",
 		"english": "the music",
 		"soundmark": "/ðə/ /'mjuzɪk/"
 	},
 	{
-		"chinese": "如果你认真地听这段音乐",
+		"nativeText": "nếu bạn lắng nghe bản nhạc này cẩn thận",
 		"english": "if you listen to the music carefully",
 		"soundmark": "/ɪf/ /ju/ /'lɪsn/ /tə/ /ðə/ /'mjuzɪk/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "吉他",
+		"nativeText": "đàn ghi-ta",
 		"english": "guitar",
 		"soundmark": "/ɡɪ'tɑr/"
 	},
 	{
-		"chinese": "一把吉他",
+		"nativeText": "một cây đàn ghi-ta",
 		"english": "a guitar",
 		"soundmark": "/ə/ /ɡɪ'tɑr/"
 	},
 	{
-		"chinese": "你可以听见",
+		"nativeText": "bạn có thể nghe",
 		"english": "you can hear",
 		"soundmark": "/ju/ /kæn/ /hɪr/"
 	},
 	{
-		"chinese": "你可以听见一把吉他",
+		"nativeText": "bạn có thể nghe một cây đàn ghi-ta",
 		"english": "you can hear a guitar",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /ə/ /ɡɪ'tɑr/"
 	},
 	{
-		"chinese": "后面的",
+		"nativeText": "phía sau",
 		"english": "back",
 		"soundmark": "/bæk/"
 	},
 	{
-		"chinese": "场地",
+		"nativeText": "mặt đất; khu vực",
 		"english": "ground",
 		"soundmark": "/ɡraʊnd/"
 	},
 	{
-		"chinese": "背景",
+		"nativeText": "nền; bối cảnh",
 		"english": "background",
 		"soundmark": "/'bækɡraʊnd/"
 	},
 	{
-		"chinese": "在背景里",
+		"nativeText": "trong nền",
 		"english": "in the background",
 		"soundmark": "/ɪn/ /ðə/ /'bækɡraʊnd/"
 	},
 	{
-		"chinese": "你可以听见一把吉他在背景里",
+		"nativeText": "bạn có thể nghe một cây đàn ghi-ta trong nền",
 		"english": "you can hear a guitar in the background",
 		"soundmark": "/ju/ /kæn/ /hɪr/ /ə/ /ɡɪ'tɑr/ /ɪn/ /ðə/ /background/ /'bækɡraʊnd/"
 	},
 	{
-		"chinese": "如果你认真地听这段音乐你可以听见一把吉他在背景里",
+		"nativeText": "nếu bạn lắng nghe bản nhạc này cẩn thận bạn có thể nghe một cây đàn ghi-ta trong nền",
 		"english": "if you listen to the music carefully you can hear a guitar in the background",
 		"soundmark": "/ɪf/ /ju/ /'lɪsn/ /tə/ /ðə/ /'mjuzɪk/ /'kɛrfəli/ /ju/ /kæn/ /hɪr/ /ə/ /ɡɪ'tɑr/ /ɪn/ /ðə/ /'bækɡraʊnd/"
 	},
 	{
-		"chinese": "你认真地听",
+		"nativeText": "bạn lắng nghe cẩn thận",
 		"english": "you listen carefully",
 		"soundmark": "/ju/ /'lɪsn/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你不认真地听",
+		"nativeText": "bạn không lắng nghe cẩn thận",
 		"english": "you don't listen carefully",
-		"soundmark": "/ju/ /dont/ /'lɪsn/ /'kɛrfəli/"
+		"soundmark": "/ju/ /dont/ /'lɪsn' /'kɛrfəli/"
 	},
 	{
-		"chinese": "如果",
+		"nativeText": "nếu",
 		"english": "if",
 		"soundmark": "/ɪf/"
 	},
 	{
-		"chinese": "如果你不认真地听",
+		"nativeText": "nếu bạn không lắng nghe cẩn thận",
 		"english": "if you don't listen carefully",
 		"soundmark": "/ɪf/ /ju/ /dont/ /'lɪsn/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "听见",
+		"nativeText": "nghe",
 		"english": "to hear",
 		"soundmark": "/tə/ /hɪr/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你将会听见",
+		"nativeText": "bạn sẽ nghe",
 		"english": "you will hear",
 		"soundmark": "/ju/ /wɪl/ /hɪr/"
 	},
 	{
-		"chinese": "东西",
+		"nativeText": "vật; thứ",
 		"english": "thing",
 		"soundmark": "/θɪŋ/"
 	},
 	{
-		"chinese": "没有东西",
+		"nativeText": "không có gì",
 		"english": "nothing",
 		"soundmark": "/'nʌθɪŋ/"
 	},
 	{
-		"chinese": "你将会听见没有东西",
+		"nativeText": "bạn sẽ không nghe thấy gì",
 		"english": "you will hear nothing",
 		"soundmark": "/ju/ /wɪl/ /hɪr/ /'nʌθɪŋ/"
 	},
 	{
-		"chinese": "如果你不认真地听",
+		"nativeText": "nếu bạn không lắng nghe cẩn thận",
 		"english": "if you don't listen carefully",
 		"soundmark": "/ɪf/ /ju/ /dont/ /'lɪsn/ /'kɛrfəli/"
 	},
 	{
-		"chinese": "如果你不认真地听你将会什么都听不到",
+		"nativeText": "nếu bạn không lắng nghe cẩn thận bạn sẽ không nghe thấy gì",
 		"english": "if you don't listen carefully you will hear nothing",
 		"soundmark": "/ɪf/ /ju/ /dont/ /'lɪsn/ /'kɛrfəli/ /ju/ /wɪl/ /hɪr/ /'nʌθɪŋ/"
 	}

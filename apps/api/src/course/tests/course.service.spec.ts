@@ -169,11 +169,11 @@ async function setupDBData(db: DbType) {
   const userId = "cxr";
   const coursePackEntity = await insertCoursePack(db);
   const courseEntityFirst = await insertCourse(db, coursePackEntity.id, {
-    title: "第一课",
+    title: "Bài 1",
     order: 1,
   });
   const courseEntitySecond = await insertCourse(db, coursePackEntity.id, {
-    title: "第二课",
+    title: "Bài 2",
     order: 2,
   });
   const statementEntityFirst = await insertStatement(db, courseEntityFirst.id, 1);

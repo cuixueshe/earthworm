@@ -3,11 +3,11 @@
     class="mx-auto my-8 w-full max-w-screen-lg space-y-8 rounded-lg bg-base-100 px-6 py-8 shadow-even-lg dark:bg-gray-900 dark:shadow-gray-700 md:px-12"
   >
     <section>
-      <h2 class="text-xl font-medium">游戏模式</h2>
+      <h2 class="text-xl font-medium">Chế độ chơi</h2>
       <table class="table text-base">
         <tbody>
           <tr class="hover">
-            <td class="label-text">模式</td>
+            <td class="label-text">Chế độ</td>
             <td class="text-right">
               <div class="join">
                 <input
@@ -28,13 +28,13 @@
     </section>
 
     <section>
-      <h2 class="text-xl font-medium">快捷键设置</h2>
+      <h2 class="text-xl font-medium">Cài đặt phím tắt</h2>
       <table class="table text-base">
         <thead>
           <tr class="text-base">
-            <th class="">功能</th>
-            <th class="w-1/6 text-center">快捷键</th>
-            <th class="w-2/6 pr-6 text-right">操作</th>
+            <th class="">Chức năng</th>
+            <th class="w-1/6 text-center">Phím tắt</th>
+            <th class="w-2/6 pr-6 text-right">Thao tác</th>
           </tr>
         </thead>
         <tbody>
@@ -53,7 +53,7 @@
                   class="btn btn-outline btn-secondary btn-sm"
                   @click="handleEdit(item.type)"
                 >
-                  编辑
+                  Sửa
                 </button>
               </td>
             </tr>
@@ -63,11 +63,11 @@
     </section>
 
     <section>
-      <h2 class="text-xl font-medium">声音设置</h2>
+      <h2 class="text-xl font-medium">Cài đặt âm thanh</h2>
       <table class="table">
         <tbody>
           <tr class="hover">
-            <td class="label-text">开启键盘打字音效</td>
+            <td class="label-text">Bật âm thanh gõ phím</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -78,7 +78,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">答案页面自动播放声音</td>
+            <td class="label-text">Tự động phát âm thanh ở trang đáp án</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -89,7 +89,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">答题时自动播放声音</td>
+            <td class="label-text">Tự động phát âm thanh khi làm bài</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -100,7 +100,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">切换口音</td>
+            <td class="label-text">Chọn giọng phát âm</td>
             <td class="text-right">
               <div class="join">
                 <input
@@ -121,11 +121,11 @@
     </section>
 
     <section>
-      <h2 class="text-xl font-medium">答题设置</h2>
+      <h2 class="text-xl font-medium">Cài đặt làm bài</h2>
       <table class="table">
         <tbody>
           <tr class="hover">
-            <td class="label-text">显示每个单词长度</td>
+            <td class="label-text">Hiển thị độ dài mỗi từ</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -136,7 +136,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">开启空格提交答案</td>
+            <td class="label-text">Dùng phím cách để gửi đáp án</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -147,7 +147,7 @@
             </td>
           </tr>
           <tr class="hover">
-            <td class="label-text">答题正确后自动下一题</td>
+            <td class="label-text">Tự động sang câu tiếp theo khi trả lời đúng</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -159,7 +159,7 @@
           </tr>
 
           <tr class="hover">
-            <td class="label-text">自动显示答案（输错三次）</td>
+            <td class="label-text">Tự động hiển thị đáp án (sai 3 lần)</td>
             <td class="text-right">
               <input
                 type="checkbox"
@@ -210,27 +210,27 @@ const { getGamePlayModeOptions, currentGamePlayMode, toggleGamePlayMode } = useG
 
 const shortcutKeyBindList = [
   {
-    label: "播放发音",
+    label: "Phát âm",
     type: SHORTCUT_KEY_TYPES.SOUND,
   },
   {
-    label: "显示隐藏/答案预览/再来一次",
+    label: "Hiển thị/ẩn xem đáp án/làm lại",
     type: SHORTCUT_KEY_TYPES.ANSWER,
   },
   {
-    label: "返回上个问题",
+    label: "Quay lại câu trước",
     type: SHORTCUT_KEY_TYPES.PREVIOUS,
   },
   {
-    label: "跳过当前问题",
+    label: "Bỏ qua câu hiện tại",
     type: SHORTCUT_KEY_TYPES.SKIP,
   },
   {
-    label: "标记内容已经掌握",
+    label: "Đánh dấu đã thuộc",
     type: SHORTCUT_KEY_TYPES.MASTERED,
   },
   {
-    label: "暂停游戏/继续游戏",
+    label: "Tạm dừng/Tiếp tục trò chơi",
     type: SHORTCUT_KEY_TYPES.PAUSE,
   },
 ];

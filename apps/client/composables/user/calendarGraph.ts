@@ -10,14 +10,14 @@ const weeks: Record<number, string> = {
   5: "Fri",
   6: "Sat",
 };
-const weeksZh: Record<number, string> = {
-  0: "周日",
-  1: "周一",
-  2: "周二",
-  3: "周三",
-  4: "周四",
-  5: "周五",
-  6: "周六",
+const weeksNative: Record<number, string> = {
+  0: "CN",
+  1: "T2",
+  2: "T3",
+  3: "T4",
+  4: "T5",
+  5: "T6",
+  6: "T7",
 };
 const months: Record<number, string> = {
   0: "January",
@@ -33,19 +33,19 @@ const months: Record<number, string> = {
   10: "November",
   11: "December",
 };
-const monthsZh: Record<number, string> = {
-  0: "一月",
-  1: "二月",
-  2: "三月",
-  3: "四月",
-  4: "五月",
-  5: "六月",
-  6: "七月",
-  7: "八月",
-  8: "九月",
-  9: "十月",
-  10: "十一月",
-  11: "十二月",
+const monthsNative: Record<number, string> = {
+  0: "Tháng 1",
+  1: "Tháng 2",
+  2: "Tháng 3",
+  3: "Tháng 4",
+  4: "Tháng 5",
+  5: "Tháng 6",
+  6: "Tháng 7",
+  7: "Tháng 8",
+  8: "Tháng 9",
+  9: "Tháng 10",
+  10: "Tháng 11",
+  11: "Tháng 12",
 };
 
 export interface EmitsType {
@@ -136,7 +136,7 @@ export function useCalendarGraph(emits: EmitsType, config: CalendarConfig) {
     return thead.map((item, i) => {
       const nextItem = thead[i + 1] || { offset: 53 };
       const colSpan = nextItem.offset - item.offset;
-      const month = monthsZh[item.month]?.slice(0, 3);
+      const month = monthsNative[item.month]?.replace("Tháng ", "T");
       return { colSpan, month };
     });
   }
@@ -225,7 +225,7 @@ export function useCalendarGraph(emits: EmitsType, config: CalendarConfig) {
     renderHead,
     renderBody,
     weeks,
-    weeksZh,
+    weeksNative,
     thead,
     tbody,
     year,

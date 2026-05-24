@@ -1,626 +1,626 @@
 [
 	{
-		"chinese": "支付；付钱",
+		"nativeText": "trả tiền",
 		"english": "to pay",
 		"soundmark": "/tə/ /pe/"
 	},
 	{
-		"chinese": "账单",
+		"nativeText": "hóa đơn",
 		"english": "the bill",
 		"soundmark": "/ðə/ /bɪl/"
 	},
 	{
-		"chinese": "支付账单",
+		"nativeText": "trả hóa đơn",
 		"english": "to pay the bill",
 		"soundmark": "/tə/ /pe/ /ðə/ /bɪl/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "him",
 		"soundmark": "/hɪm/"
 	},
 	{
-		"chinese": "付钱给他",
+		"nativeText": "trả tiền cho anh ấy",
 		"english": "to pay him",
 		"soundmark": "/tə/ /pe/ /hɪm/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你(过去)付钱给他",
+		"nativeText": "bạn đã trả tiền cho anh ấy",
 		"english": "you paid him",
 		"soundmark": "/ju/ /ped/ /hɪm/"
 	},
 	{
-		"chinese": "十",
+		"nativeText": "mười",
 		"english": "ten",
 		"soundmark": "/tɛn/"
 	},
 	{
-		"chinese": "美元",
+		"nativeText": "đô la",
 		"english": "dollars",
 		"soundmark": "/'dɑlɚz/"
 	},
 	{
-		"chinese": "十美元",
+		"nativeText": "mười đô la",
 		"english": "ten dollars",
 		"soundmark": "/tɛn/ /'dɑlɚz/"
 	},
 	{
-		"chinese": "你(过去)付给他十美元",
+		"nativeText": "bạn đã trả cho anh ấy mười đô la",
 		"english": "you paid him ten dollars",
 		"soundmark": "/ju/ /ped/ /hɪm/ /tɛn/ /'dɑlɚz/"
 	},
 	{
-		"chinese": "你(过去)没有付给他十美元",
+		"nativeText": "bạn đã không trả cho anh ấy mười đô la",
 		"english": "you didn't pay him ten dollars",
 		"soundmark": "/ju/ /'dɪdnt/ /pe/ /hɪm/ /tɛn/ /'dɑlɚz/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to do",
 		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc này",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)付钱给他去做这件事",
+		"nativeText": "bạn đã trả tiền cho anh ấy để làm việc này",
 		"english": "you paid him to do it",
 		"soundmark": "/ju/ /ped/ /hɪm/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)没有付钱给他去做这件事",
+		"nativeText": "bạn đã không trả tiền cho anh ấy để làm việc này",
 		"english": "you didn't pay him to do it",
 		"soundmark": "/ju/ /'dɪdnt/ /pe/ /hɪm/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)付给他十美元去做这件事",
+		"nativeText": "bạn đã trả cho anh ấy mười đô la để làm việc này",
 		"english": "you paid him ten dollars to do it",
 		"soundmark": "/ju/ /ped/ /hɪm/ /tɛn/ /'dɑlɚz/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)没有付给他十美元去做这件事",
+		"nativeText": "bạn đã không trả cho anh ấy mười đô la để làm việc này",
 		"english": "you didn't pay him ten dollars to do it",
 		"soundmark": "/ju/ /'dɪdnt/ /pe/ /hɪm/ /tɛn/ /'dɑlɚz/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "我们必须决定",
+		"nativeText": "chúng ta phải quyết định",
 		"english": "we have to decide",
 		"soundmark": "/wi/ /hæv/ /tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "今晚",
+		"nativeText": "tối nay",
 		"english": "tonight",
 		"soundmark": "/tə'naɪt/"
 	},
 	{
-		"chinese": "我们必须今晚决定",
+		"nativeText": "chúng ta phải quyết định vào tối nay",
 		"english": "we have to decide tonight",
 		"soundmark": "/wi/ /hæv/ /tə/ /dɪ'saɪd/ /tə'naɪt/"
 	},
 	{
-		"chinese": "我们不必今晚决定",
+		"nativeText": "chúng ta không phải quyết định vào tối nay",
 		"english": "we don't have to decide tonight",
 		"soundmark": "/wi/ /dont/ /hæv/ /tə/ /dɪ'saɪd/ /tə'naɪt/"
 	},
 	{
-		"chinese": "我们决定",
+		"nativeText": "chúng ta quyết định",
 		"english": "we decide",
 		"soundmark": "/wi/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "去",
+		"nativeText": "đi",
 		"english": "to go",
 		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "外面",
+		"nativeText": "ra ngoài",
 		"english": "out",
 		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "去外面",
+		"nativeText": "đi ra ngoài",
 		"english": "to go out",
 		"soundmark": "/tə/ /ɡo/ /aʊt/"
 	},
 	{
-		"chinese": "我们决定去外面",
+		"nativeText": "chúng ta quyết định đi ra ngoài",
 		"english": "we decide to go out",
 		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /ɡo/ /aʊt/"
 	},
 	{
-		"chinese": "为了",
+		"nativeText": "cho",
 		"english": "for",
 		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "晚餐",
+		"nativeText": "bữa tối",
 		"english": "dinner",
 		"soundmark": "/'dɪnɚ/"
 	},
 	{
-		"chinese": "为了晚餐",
+		"nativeText": "cho bữa tối",
 		"english": "for dinner",
 		"soundmark": "/fɝ/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "我们决定去外面为了晚餐",
+		"nativeText": "chúng ta quyết định đi ra ngoài cho bữa tối",
 		"english": "we decide to go out for dinner",
 		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /ɡo/ /aʊt/ /fɝ/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "决定(过去)",
+		"nativeText": "đã quyết định",
 		"english": "decided",
 		"soundmark": "/dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "我们(过去)决定",
+		"nativeText": "chúng ta đã quyết định",
 		"english": "we decided",
 		"soundmark": "/wi/ /dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "我们(过去)决定去外面为了晚餐",
+		"nativeText": "chúng ta đã quyết định đi ra ngoài cho bữa tối",
 		"english": "we decided to go out for dinner",
 		"soundmark": "/wi/ /dɪ'saɪdɪd/ /tə/ /ɡo/ /aʊt/ /fɝ/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "驾驶",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "那辆汽车",
+		"nativeText": "chiếc xe hơi",
 		"english": "the car",
 		"soundmark": "/ðə/ /kɑr/"
 	},
 	{
-		"chinese": "开那辆车",
+		"nativeText": "lái chiếc xe hơi",
 		"english": "to drive the car",
 		"soundmark": "/tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)决定",
+		"nativeText": "tôi đã quyết định",
 		"english": "I decided",
 		"soundmark": "/aɪ/ /dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "我(过去)决定开那辆车",
+		"nativeText": "tôi đã quyết định lái chiếc xe hơi",
 		"english": "I decided to drive the car",
 		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我开那辆车",
+		"nativeText": "tôi lái chiếc xe hơi",
 		"english": "I drive the car",
 		"soundmark": "/aɪ/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)开那辆车",
+		"nativeText": "tôi đã lái chiếc xe hơi",
 		"english": "I drove the car",
 		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "昨天",
+		"nativeText": "hôm qua",
 		"english": "yesterday",
 		"soundmark": "/'jɛstɚde/"
 	},
 	{
-		"chinese": "我昨天开了那辆车",
+		"nativeText": "tôi đã lái chiếc xe hơi vào hôm qua",
 		"english": "I drove the car yesterday",
 		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "我昨天没有开那辆车",
+		"nativeText": "tôi đã không lái chiếc xe hơi vào hôm qua",
 		"english": "I didn't drive the car yesterday",
 		"soundmark": "/aɪ/ /'dɪdnt/ /draɪv/ /ðə/ /kɑr/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "相信",
+		"nativeText": "tin",
 		"english": "to believe",
 		"soundmark": "/tə/ /bɪ'liv/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "相信我",
+		"nativeText": "tin tôi",
 		"english": "to believe me",
 		"soundmark": "/tə/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "你需要",
+		"nativeText": "bạn cần",
 		"english": "you need",
 		"soundmark": "/ju/ /nid/"
 	},
 	{
-		"chinese": "你需要相信我",
+		"nativeText": "bạn cần tin tôi",
 		"english": "you need to believe me",
 		"soundmark": "/ju/ /nid/ /tə/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "你相信我",
+		"nativeText": "bạn tin tôi",
 		"english": "you believe me",
 		"soundmark": "/ju/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "你不相信我",
+		"nativeText": "bạn không tin tôi",
 		"english": "you don't believe me",
 		"soundmark": "/ju/ /dont/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "你(过去)相信我",
+		"nativeText": "bạn đã tin tôi",
 		"english": "you believed me",
 		"soundmark": "/ju/ /bɪ'livd/ /mi/"
 	},
 	{
-		"chinese": "你(过去)不相信我",
+		"nativeText": "bạn đã không tin tôi",
 		"english": "you didn't believe me",
 		"soundmark": "/ju/ /'dɪdnt/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bət/"
 	},
 	{
-		"chinese": "但是你(过去)不相信我",
+		"nativeText": "nhưng bạn đã không tin tôi",
 		"english": "but you didn't believe me",
 		"soundmark": "/bət/ /ju/ /'dɪdnt/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "我昨天开了那辆车但是你(过去)不相信我",
+		"nativeText": "tôi đã lái chiếc xe hơi vào hôm qua nhưng bạn đã không tin tôi",
 		"english": "I drove the car yesterday but you didn't believe me",
 		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/ /'jɛstɚde/ /bət/ /ju/ /'dɪdnt/ /bɪ'liv/ /mi/"
 	},
 	{
-		"chinese": "改变",
+		"nativeText": "thay đổi",
 		"english": "to change",
 		"soundmark": "/tə/ /tʃendʒ/"
 	},
 	{
-		"chinese": "想法",
+		"nativeText": "ý nghĩ",
 		"english": "mind",
 		"soundmark": "/maɪnd/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我的想法",
+		"nativeText": "ý nghĩ của tôi",
 		"english": "my mind",
 		"soundmark": "/maɪ/ /maɪnd/"
 	},
 	{
-		"chinese": "改变我的想法",
+		"nativeText": "thay đổi ý nghĩ của tôi",
 		"english": "to change my mind",
 		"soundmark": "/tə/ /tʃendʒ/ /maɪ/ /maɪnd/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要改变我的想法",
+		"nativeText": "tôi muốn thay đổi ý nghĩ của tôi",
 		"english": "I want to change my mind",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /tʃendʒ/ /maɪ/ /maɪnd/"
 	},
 	{
-		"chinese": "我改变我的想法",
+		"nativeText": "tôi thay đổi ý nghĩ của tôi",
 		"english": "I change my mind",
 		"soundmark": "/aɪ/ /tʃendʒ/ /maɪ/ /maɪnd/"
 	},
 	{
-		"chinese": "改变了",
+		"nativeText": "đã thay đổi",
 		"english": "changed",
 		"soundmark": "/tʃendʒd/"
 	},
 	{
-		"chinese": "我改变了我的想法",
+		"nativeText": "tôi đã thay đổi ý nghĩ của tôi",
 		"english": "I changed my mind",
 		"soundmark": "/aɪ/ /tʃendʒd/ /maɪ/ /maɪnd/"
 	},
 	{
-		"chinese": "再次",
+		"nativeText": "lần nữa",
 		"english": "again",
 		"soundmark": "/ə'ɡɛn/"
 	},
 	{
-		"chinese": "我再次改变了我的想法",
+		"nativeText": "tôi đã thay đổi ý nghĩ của tôi lần nữa",
 		"english": "I changed my mind again",
 		"soundmark": "/aɪ/ /tʃendʒd/ /maɪ/ /maɪnd/ /ə'ɡɛn/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "开那辆车",
+		"nativeText": "lái chiếc xe hơi",
 		"english": "to drive the car",
 		"soundmark": "/tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)决定开那辆车",
+		"nativeText": "tôi đã quyết định lái chiếc xe hơi",
 		"english": "I decided to drive the car",
 		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我再次改变了我的想法我(过去)决定开那辆车",
+		"nativeText": "tôi đã thay đổi ý nghĩ của tôi lần nữa tôi đã quyết định lái chiếc xe hơi",
 		"english": "I changed my mind again I decided to drive the car",
 		"soundmark": "/aɪ/ /tʃendʒd/ /maɪ/ /maɪnd/ /ə'ɡɛn/ /aɪ/ /dɪ'saɪdɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "尝试",
+		"nativeText": "thử",
 		"english": "to try",
 		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "我(过去)决定尝试",
+		"nativeText": "tôi đã quyết định thử",
 		"english": "I decided to try",
 		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /traɪ/"
 	},
 	{
-		"chinese": "我(过去)决定尝试开那辆车",
+		"nativeText": "tôi đã quyết định thử lái chiếc xe hơi",
 		"english": "I decided to try to drive the car",
 		"soundmark": "/aɪ/ /dɪ'saɪdɪd/ /tə/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)没有决定尝试开那辆车",
+		"nativeText": "tôi đã không quyết định thử lái chiếc xe hơi",
 		"english": "I didn't decide to try to drive the car",
 		"soundmark": "/aɪ/ /'dɪdnt/ /dɪ'saɪd/ /tə/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我尝试开那辆车",
+		"nativeText": "tôi thử lái chiếc xe hơi",
 		"english": "I try to drive the car",
 		"soundmark": "/aɪ/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我不尝试开那辆车",
+		"nativeText": "tôi không thử lái chiếc xe hơi",
 		"english": "I don't try to drive the car",
 		"soundmark": "/aɪ/ /dont/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)尝试开那辆车",
+		"nativeText": "tôi đã thử lái chiếc xe hơi",
 		"english": "I tried to drive the car",
 		"soundmark": "/aɪ/ /traɪd/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)没有尝试开那辆车",
+		"nativeText": "tôi đã không thử lái chiếc xe hơi",
 		"english": "I didn't try to drive the car",
 		"soundmark": "/aɪ/ /'dɪdnt/ /traɪ/ /tə/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我开那辆车",
+		"nativeText": "tôi lái chiếc xe hơi",
 		"english": "I drive the car",
 		"soundmark": "/aɪ/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我不开那辆车",
+		"nativeText": "tôi không lái chiếc xe hơi",
 		"english": "I don't drive the car",
 		"soundmark": "/aɪ/ /dont/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)开那辆车",
+		"nativeText": "tôi đã lái chiếc xe hơi",
 		"english": "I drove the car",
 		"soundmark": "/aɪ/ /drov/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "我(过去)没有开那辆车",
+		"nativeText": "tôi đã không lái chiếc xe hơi",
 		"english": "I didn't drive the car",
 		"soundmark": "/aɪ/ /'dɪdnt/ /draɪv/ /ðə/ /kɑr/"
 	},
 	{
-		"chinese": "停止；阻止",
+		"nativeText": "dừng lại",
 		"english": "to stop",
 		"soundmark": "/tə/ /stɑp/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "him",
 		"soundmark": "/hɪm/"
 	},
 	{
-		"chinese": "阻止他",
+		"nativeText": "ngăn anh ấy lại",
 		"english": "to stop him",
 		"soundmark": "/tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)尝试阻止他",
+		"nativeText": "tôi đã thử ngăn anh ấy lại",
 		"english": "I tried to stop him",
 		"soundmark": "/aɪ/ /traɪd/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)没有尝试阻止他",
+		"nativeText": "tôi đã không thử ngăn anh ấy lại",
 		"english": "I didn't try to stop him",
 		"soundmark": "/aɪ/ /'dɪdnt/ /traɪ/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm thấy",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "一个方法",
+		"nativeText": "một cách",
 		"english": "a way",
 		"soundmark": "/ə/ /we/"
 	},
 	{
-		"chinese": "找到一个方法",
+		"nativeText": "tìm thấy một cách",
 		"english": "to find a way",
 		"soundmark": "/tə/ /faɪnd/ /ə/ /we/"
 	},
 	{
-		"chinese": "我必须找到一个方法",
+		"nativeText": "tôi phải tìm thấy một cách",
 		"english": "I have to find a way",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /faɪnd/ /ə/ /we/"
 	},
 	{
-		"chinese": "阻止他",
+		"nativeText": "ngăn anh ấy lại",
 		"english": "to stop him",
 		"soundmark": "/tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我必须找到一个方法阻止他",
+		"nativeText": "tôi phải tìm thấy một cách ngăn anh ấy lại",
 		"english": "I have to find a way to stop him",
 		"soundmark": "/aɪ/ /hæv/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我不必找到一个方法阻止他",
+		"nativeText": "tôi không phải tìm thấy một cách ngăn anh ấy lại",
 		"english": "I don't have to find a way to stop him",
 		"soundmark": "/aɪ/ /dont/ /hæv/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)必须",
+		"nativeText": "tôi đã phải",
 		"english": "I had to",
 		"soundmark": "/aɪ/ /hæd/ /tə/"
 	},
 	{
-		"chinese": "我(过去)必须找到一个方法",
+		"nativeText": "tôi đã phải tìm thấy một cách",
 		"english": "I had to find a way",
 		"soundmark": "/aɪ/ /hæd/ /tə/ /faɪnd/ /ə/ /we/"
 	},
 	{
-		"chinese": "我(过去)必须找到一个方法阻止他",
+		"nativeText": "tôi đã phải tìm thấy một cách ngăn anh ấy lại",
 		"english": "I had to find a way to stop him",
 		"soundmark": "/aɪ/ /hæd/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)不必找到一个方法阻止他",
+		"nativeText": "tôi đã không phải tìm thấy một cách ngăn anh ấy lại",
 		"english": "I didn't have to find a way to stop him",
 		"soundmark": "/aɪ/ /'dɪdnt/ /hæv/ /tə/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我找到一个方法阻止他",
+		"nativeText": "tôi tìm thấy một cách ngăn anh ấy lại",
 		"english": "I find a way to stop him",
 		"soundmark": "/aɪ/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)找到一个方法阻止他",
+		"nativeText": "tôi đã tìm thấy một cách ngăn anh ấy lại",
 		"english": "I found a way to stop him",
 		"soundmark": "/aɪ/ /faʊnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)没有找到一个方法阻止他",
+		"nativeText": "tôi đã không tìm thấy một cách ngăn anh ấy lại",
 		"english": "I didn't find a way to stop him",
 		"soundmark": "/aɪ/ /'dɪdnt/ /faɪnd/ /ə/ /we/ /tə/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我阻止他",
+		"nativeText": "tôi ngăn anh ấy lại",
 		"english": "I stop him",
 		"soundmark": "/aɪ/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "我阻止了他",
+		"nativeText": "tôi đã ngăn anh ấy lại",
 		"english": "I stopped him",
 		"soundmark": "/aɪ/ /stɑpt/ /hɪm/"
 	},
 	{
-		"chinese": "我(过去)没有阻止他",
+		"nativeText": "tôi đã không ngăn anh ấy lại",
 		"english": "I didn't stop him",
 		"soundmark": "/aɪ/ /'dɪdnt/ /stɑp/ /hɪm/"
 	},
 	{
-		"chinese": "问",
+		"nativeText": "hỏi",
 		"english": "to ask",
 		"soundmark": "/tə/ /æsk/"
 	},
 	{
-		"chinese": "问过",
+		"nativeText": "đã hỏi",
 		"english": "asked",
 		"soundmark": "/æskt/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "them",
 		"soundmark": "/ðəm/"
 	},
 	{
-		"chinese": "问过他们",
+		"nativeText": "đã hỏi họ",
 		"english": "asked them",
 		"soundmark": "/æskt/ /ðəm/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我问过他们",
+		"nativeText": "tôi đã hỏi họ",
 		"english": "I asked them",
 		"soundmark": "/aɪ/ /æskt/ /ðəm/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "câu hỏi đó",
 		"english": "the question",
 		"soundmark": "/ðə/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "相同的",
+		"nativeText": "giống nhau",
 		"english": "same",
 		"soundmark": "/sem/"
 	},
 	{
-		"chinese": "那个相同的问题",
+		"nativeText": "câu hỏi giống nhau đó",
 		"english": "the same question",
 		"soundmark": "/ðə/ /sem/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "我问过他们那个相同的问题",
+		"nativeText": "tôi đã hỏi họ câu hỏi giống nhau đó",
 		"english": "I asked them the same question",
 		"soundmark": "/aɪ/ /æskt/ /ðəm/ /ðə/ /sem/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "我没有问过他们那个相同的问题",
+		"nativeText": "tôi đã không hỏi họ câu hỏi giống nhau đó",
 		"english": "I didn't ask them the same question",
 		"soundmark": "/aɪ/ /'dɪdnt/ /æsk/ /ðəm/ /ðə/ /sem/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "回答",
+		"nativeText": "trả lời",
 		"english": "to answer",
 		"soundmark": "/tə/ /'ænsɚ/"
 	},
 	{
-		"chinese": "回答过",
+		"nativeText": "đã trả lời",
 		"english": "answered",
 		"soundmark": "/'ænsɚd/"
 	},
 	{
-		"chinese": "没有人",
+		"nativeText": "không ai",
 		"english": "nobody",
 		"soundmark": "/ˈnobɑdi/"
 	},
 	{
-		"chinese": "没有人回答过",
+		"nativeText": "không ai đã trả lời",
 		"english": "nobody answered",
 		"soundmark": "/ˈnobɑdi/ /'ænsɚd/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bət/"
 	},
 	{
-		"chinese": "但是没有人回答过",
+		"nativeText": "nhưng không ai đã trả lời",
 		"english": "but nobody answered",
 		"soundmark": "/bət/ /ˈnobɑdi/ /'ænsɚd/"
 	},
 	{
-		"chinese": "我问过他们那个相同的问题但是没有人回答过",
+		"nativeText": "tôi đã hỏi họ câu hỏi giống nhau đó nhưng không ai đã trả lời",
 		"english": "I asked them the same question but nobody answered",
 		"soundmark": "/aɪ/ /æskt/ /ðəm/ /ðə/ /sem/ /'kwɛstʃən/ /bət/ /ˈnobɑdi/ /'ænsɚd/"
 	}

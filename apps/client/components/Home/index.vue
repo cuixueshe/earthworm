@@ -34,11 +34,11 @@
     <!-- 右侧课程包区域 -->
     <div class="min-w-0 flex-1">
       <div class="mb-4 flex justify-between border-b pb-2 dark:border-gray-700">
-        <div class="text-xl font-medium">最近使用的课程包</div>
+        <div class="text-xl font-medium">Gói bài gần đây</div>
         <NuxtLink
           href="/course-pack"
           class="link text-blue-500 no-underline hover:opacity-75"
-          >更多课程包
+          >Thêm gói bài
         </NuxtLink>
       </div>
       <HomeRecentCoursePack />

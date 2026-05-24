@@ -1,4 +1,4 @@
-<!-- 用于 logto 的登录回调 -->
+<!-- Logto login callback page -->
 <script setup lang="ts">
 import { useHandleSignInCallback } from "@logto/vue";
 import { navigateTo } from "nuxt/app";
@@ -38,7 +38,7 @@ const { isLoading, error } = useHandleSignInCallback(async () => {
   const res = await fetchCurrentUser();
   userStore.initUser(res);
 
-  // 新用户并且没有用户名需要设置
+  // New user who needs to set a username
   if (userStore.isNewUser()) {
     isShowSettingUsernameModal.value = true;
   } else {
@@ -54,11 +54,11 @@ onUnmounted(() => {
   stopAutoRedirect();
 });
 
-// 如果登录失败，则跳转到首页
+// If login fails, redirect to home page
 watch(error, (newError) => {
   if (newError) {
-    toast.error(`登录失败`, {
-      description: `请清空缓存后重新尝试 报错信息: ${newError}`,
+    toast.error(`Đăng nhập thất bại`, {
+      description: `Vui lòng xóa bộ nhớ cache và thử lại. Lỗi: ${newError}`,
       duration: 4000,
       onAutoClose: () => {
         navigateTo("/");
@@ -89,9 +89,10 @@ function useUsername() {
   function checkUsername() {
     const minLength = 2;
     const errorMessage = {
-      empty: "用户名不能为空",
-      minLength: `用户名至少输入 ${minLength} 个字符`,
-      invalid: "用户名只能包含字母、数字和下划线，且首字符必须是字母或下划线",
+      empty: "Tên người dùng không được để trống",
+      minLength: `Tên người dùng phải có ít nhất ${minLength} ký tự`,
+      invalid:
+        "Tên người dùng chỉ được chứa chữ cái, số và dấu gạch dưới, và phải bắt đầu bằng chữ cái hoặc dấu gạch dưới",
     };
 
     if (!username.value) {
@@ -134,11 +135,11 @@ function useUsername() {
       prevent-close
     >
       <UCard>
-        <h3 class="mb-4 text-lg font-bold">设置用户名</h3>
+        <h3 class="mb-4 text-lg font-bold">Thiết lập tên người dùng</h3>
         <input
           v-model="username"
           type="text"
-          placeholder="请输入用户名"
+          placeholder="Nhập tên người dùng"
           class="input input-sm input-bordered w-full"
           maxlength="20"
           @keydown.enter="handleChangeUsername"
@@ -148,7 +149,7 @@ function useUsername() {
             type="submit"
             @click="handleChangeUsername"
           >
-            确定
+            Xác nhận
             <span
               v-if="isLoadingFetchUserSetup"
               class="loading loading-spinner loading-lg"

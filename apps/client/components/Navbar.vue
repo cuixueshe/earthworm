@@ -71,7 +71,7 @@
             class="btn btn-sm mr-1 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 focus:outline-none"
             @click="signIn()"
           >
-            登录
+            Đăng nhập
           </button>
         </div>
       </div>
@@ -104,10 +104,10 @@ interface AnchorAttributes extends Record<string, any> {
   download?: string;
 }
 const HEADER_OPTIONS: AnchorAttributes[] = [
-  { name: "文档", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
-  { name: "功能", href: "#features" },
-  { name: "问题", href: "#faq" },
-  { name: "联系我们", href: "#contact" },
+  { name: "Tài liệu", href: runtimeConfig.public.helpDocsURL as string, target: "_blank" },
+  { name: "Tính năng", href: "#features" },
+  { name: "Câu hỏi", href: "#faq" },
+  { name: "Liên hệ", href: "#contact" },
 ];
 
 // TODO: 设置需要固定导航栏的页面

@@ -45,12 +45,12 @@ export function useDeviceTip() {
     isMessageShow.value = (isIpad.value && !isLandscape.value) || isMobile.value;
 
     if (isMobile.value) {
-      messageContent.value = "目前暂时不支持移动设备哦，请关注后续更新";
+      messageContent.value = "Thiết bị di động chưa được hỗ trợ, vui lòng đợi cập nhật";
       return;
     }
 
     if (isIpad.value && !isLandscape.value) {
-      messageContent.value = "横屏使用效果更佳哦~";
+      messageContent.value = "Xoay ngang màn hình để trải nghiệm tốt hơn~";
       return;
     }
   });

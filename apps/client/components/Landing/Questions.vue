@@ -4,8 +4,11 @@
     id="faq"
   >
     <CommonTitle
-      title="常见问题解答"
-      :description="[`如果您找不到所需的内容，请加入 Telegram 群组`, `我们会尽快回复您！`]"
+      title="Câu hỏi thường gặp"
+      :description="[
+        `Nếu bạn không tìm thấy thông tin cần, hãy tham gia nhóm Telegram`,
+        `Chúng tôi sẽ phản hồi sớm nhất có thể!`,
+      ]"
     />
     <div class="divide-y divide-gray-100 py-16 dark:divide-gray-800">
       <template
@@ -48,29 +51,29 @@
 <script setup lang="ts">
 const QUESTIONS = [
   {
-    title: "如何向开发团队提出更多的功能需求？",
+    title: "Làm thế nào để đề xuất thêm tính năng cho đội ngũ phát triển?",
     content: [
-      "可以加入我们官方 Telegram 群组, 详细的描述您想要的功能以及告知这个功能想要解决的问题是什么",
-      "也可以去 github/issues 来提交您想要的功能需求",
+      "Bạn có thể tham gia nhóm Telegram chính thức, mô tả chi tiết tính năng bạn muốn và vấn đề mà tính năng đó giải quyết",
+      "Hoặc bạn cũng có thể gửi yêu cầu tính năng tại github/issues",
     ],
   },
   {
-    title: "如何向开发团队报告我在应用中遇到的错误或漏洞？",
+    title: "Làm thế nào để báo cáo lỗi hoặc vấn đề trong ứng dụng?",
     content: [
-      "如果您在应用中发现了错误或漏洞，可以加入我们官方 Telegram 群组，提供详细的描述和重现问题的步骤，当然最好提供一个小视频 🤪",
+      "Nếu bạn phát hiện lỗi trong ứng dụng, hãy tham gia nhóm Telegram chính thức, cung cấp mô tả chi tiết và các bước tái hiện vấn đề, tốt nhất là kèm theo một video ngắn 🤪",
     ],
   },
   {
-    title: "如何为 Earthworm 贡献代码？",
+    title: "Làm thế nào để đóng góp mã cho Earthworm?",
     content: [
-      "我们提供了完整的贡献代码指南，可以先读一读(页脚处有链接)",
-      "去 github/issues 逛一逛， 也可以基于你在使用中遇到的问题提一个 issue 并且自己尝试修复",
+      "Chúng tôi có hướng dẫn đóng góp mã hoàn chỉnh, hãy đọc trước nhé (có liên kết ở chân trang)",
+      "Tham khảo github/issues, hoặc tạo issue dựa trên vấn đề bạn gặp phải và tự thử sửa chữa",
     ],
   },
   {
-    title: "Earthworm 项目是完全免费的吗？",
+    title: "Earthworm có hoàn toàn miễn phí không?",
     content: [
-      "不完全免费，因为想要长久发展收费是必然的。未来会采用订阅模式，为会员提供更多的学习内容和功能",
+      "Không hoàn toàn miễn phí, vì để phát triển lâu dài thì thu phí là điều tất yếu. Tương lai sẽ áp dụng mô hình đăng ký, cung cấp thêm nội dung và tính năng cho thành viên",
     ],
   },
 ];

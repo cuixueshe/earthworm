@@ -7,54 +7,54 @@ import fs from "fs-extra";
 import inquirer from "inquirer";
 import semver from "semver";
 
-// 执行命令的通用函数
+// Generic function to execute commands
 function executeCommand(command: string): Promise<string> {
   return new Promise((resolve, reject) => {
-    console.log(`执行命令: ${command}`);
-    console.log("当前目录:", process.cwd());
+    console.log(`Executing command: ${command}`);
+    console.log("Current directory:", process.cwd());
     childProcessExec(command, (error, stdout, stderr) => {
       if (error) {
-        console.error(`错误: ${error.message}`);
+        console.error(`Error: ${error.message}`);
         return reject(error);
       }
       if (stderr) {
         console.log(`${stderr}`);
       }
-      console.log(`标准输出: ${stdout}`);
+      console.log(`stdout: ${stdout}`);
       resolve(stdout);
     });
   });
 }
 
-// 模拟上传到服务器的函数
+// Function to upload to server
 function uploadToServer(filePath: string, serverPath: string): Promise<void> {
   return new Promise((resolve, reject) => {
-    console.log(`正在上传 ${filePath} 到 ${serverPath}`);
+    console.log(`Uploading ${filePath} to ${serverPath}`);
     const uploadCommand = `scp ${filePath} earthworm-server:${serverPath}`;
     executeCommand(uploadCommand)
       .then(() => {
-        console.log(`文件成功上传到服务器`);
+        console.log(`File successfully uploaded to server`);
         resolve();
       })
       .catch((error) => {
-        console.error(`上传失败: ${error.message}`);
+        console.error(`Upload failed: ${error.message}`);
         reject(error);
       });
   });
 }
 
-// 模拟在服务器上解压文件的函数
+// Function to unzip files on server
 function unzipOnServer(filePath: string, serverPath: string): Promise<void> {
   return new Promise((resolve, reject) => {
-    console.log(`正在服务器上解压 ${filePath} 到 ${serverPath}`);
+    console.log(`Unzipping ${filePath} to ${serverPath} on server`);
     const unzipCommand = `ssh earthworm-server "cd ${serverPath} && unzip -o ${path.basename(filePath)}"`;
     executeCommand(unzipCommand)
       .then(() => {
-        console.log(`文件成功在服务器上解压`);
+        console.log(`File successfully unzipped on server`);
         resolve();
       })
       .catch((error) => {
-        console.error(`解压失败: ${error.message}`);
+        console.error(`Unzip failed: ${error.message}`);
         reject(error);
       });
   });
@@ -81,7 +81,7 @@ async function buildAndPackage(
 
 async function askForGitHubCommit(version: string, packageName: string): Promise<void> {
   const { shouldCommit } = await inquirer.prompt<{ shouldCommit: boolean }>([
-    { type: "confirm", name: "shouldCommit", message: "是否要提交到 GitHub？" },
+    { type: "confirm", name: "shouldCommit", message: "Commit to GitHub?" },
   ]);
 
   if (shouldCommit) {
@@ -89,18 +89,18 @@ async function askForGitHubCommit(version: string, packageName: string): Promise
       const commitMessage = `release(${packageName}): v${version}`;
       await executeCommand(`git add .`);
       await executeCommand(`git commit -m "${commitMessage}"`);
-      console.log(`已创建 commit: ${commitMessage}`);
+      console.log(`Commit created: ${commitMessage}`);
 
       await executeCommand(`git push origin main`);
-      console.log("已成功推送到 GitHub");
+      console.log("Successfully pushed to GitHub");
     } catch (error) {
-      console.error("GitHub 操作过程中出错:", error);
+      console.error("Error during GitHub operation:", error);
     }
   }
 }
 
 async function buildClient(): Promise<void> {
-  console.log("正在构建 Client...");
+  console.log("Building Client...");
   await executeCommand("npm run build:client");
 
   const clientPackageJson = await fs.readJson(
@@ -123,7 +123,7 @@ async function buildClient(): Promise<void> {
     {
       type: "confirm",
       name: "shouldUpgradeVersion",
-      message: "是否要升级版本？",
+      message: "Upgrade version?",
     },
   ]);
 
@@ -140,13 +140,13 @@ async function buildClient(): Promise<void> {
   }
 
   const { shouldUpload } = await inquirer.prompt<{ shouldUpload: boolean }>([
-    { type: "confirm", name: "shouldUpload", message: "是否要上传到服务器？" },
+    { type: "confirm", name: "shouldUpload", message: "Upload to server?" },
   ]);
 
   if (shouldUpload) {
     const serverPath = process.env.CLIENT_SERVER_PATH;
     if (!serverPath) {
-      console.error("错误：未设置 CLIENT_SERVER_PATH 环境变量");
+      console.error("Error: CLIENT_SERVER_PATH environment variable is not set");
       return;
     }
 
@@ -154,14 +154,14 @@ async function buildClient(): Promise<void> {
       try {
         await uploadToServer(zipFileName, serverPath);
         await unzipOnServer(zipFileName, serverPath);
-        // 在服务器端解压成功后，删除本地压缩包
+        // Delete local zip after successful server-side extraction
         await fs.remove(zipFileName);
-        console.log(`已删除本地压缩包: ${zipFileName}`);
+        console.log(`Deleted local zip: ${zipFileName}`);
       } catch (error) {
-        console.error("上传或解压过程中出错:", error);
+        console.error("Error during upload or extraction:", error);
       }
     } else {
-      console.log(`警告：未找到压缩包 ${zipFileName}`);
+      console.log(`Warning: Zip file not found ${zipFileName}`);
     }
   }
 
@@ -169,7 +169,7 @@ async function buildClient(): Promise<void> {
 }
 
 async function buildServer(): Promise<void> {
-  console.log("正在构建 Api...");
+  console.log("Building Api...");
   await executeCommand("npm run build:server");
 
   const serverPackageJson = await fs.readJson(path.resolve(__dirname, "../apps/api/package.json"));
@@ -196,7 +196,7 @@ async function buildServer(): Promise<void> {
     {
       type: "confirm",
       name: "shouldUpgradeVersion",
-      message: "是否要升级版本？",
+      message: "Upgrade version?",
     },
   ]);
 
@@ -212,13 +212,13 @@ async function buildServer(): Promise<void> {
   }
 
   const { shouldUpload } = await inquirer.prompt<{ shouldUpload: boolean }>([
-    { type: "confirm", name: "shouldUpload", message: "是否要上传到服务器？" },
+    { type: "confirm", name: "shouldUpload", message: "Upload to server?" },
   ]);
 
   if (shouldUpload) {
     const serverPath = process.env.SERVER_SERVER_PATH;
     if (!serverPath) {
-      console.error("错误：未设置 SERVER_SERVER_PATH 环境变量");
+      console.error("Error: SERVER_SERVER_PATH environment variable is not set");
       return;
     }
 
@@ -226,14 +226,14 @@ async function buildServer(): Promise<void> {
       try {
         await uploadToServer(zipFileName, serverPath);
         await unzipOnServer(zipFileName, serverPath);
-        // 在服务器端解压成功后，删除本地压缩包
+        // Delete local zip after successful server-side extraction
         await fs.remove(zipFileName);
-        console.log(`已删除本地压缩包: ${zipFileName}`);
+        console.log(`Deleted local zip: ${zipFileName}`);
       } catch (error) {
-        console.error("上传或解压过程中出错:", error);
+        console.error("Error during upload or extraction:", error);
       }
     } else {
-      console.log(`警告：未找到压缩包 ${zipFileName}`);
+      console.log(`Warning: Zip file not found ${zipFileName}`);
     }
   }
 
@@ -265,10 +265,10 @@ async function createZip(options: ZipOptions): Promise<void> {
       }
       if (includeBaseFolder) {
         archive.directory(source, path.basename(source));
-        console.log(`正在添加目录到压缩包: ${path.basename(source)}`);
+        console.log(`Adding directory to zip: ${path.basename(source)}`);
       } else {
         archive.directory(source, false);
-        console.log(`正在添加目录内容到压缩包: ${source}`);
+        console.log(`Adding directory contents to zip: ${source}`);
       }
     } else if (type === "server") {
       if (!Array.isArray(source)) {
@@ -279,10 +279,10 @@ async function createZip(options: ZipOptions): Promise<void> {
         const stats = fs.statSync(file);
         if (stats.isDirectory()) {
           archive.directory(file, name);
-          console.log(`正在添加目录到压缩包: ${name}`);
+          console.log(`Adding directory to zip: ${name}`);
         } else {
           archive.file(file, { name });
-          console.log(`正在添加文件到压缩包: ${name}`);
+          console.log(`Adding file to zip: ${name}`);
         }
       });
     }
@@ -299,7 +299,7 @@ async function main(): Promise<void> {
     {
       type: "list",
       name: "buildType",
-      message: "您想要构建什么？",
+      message: "What would you like to build?",
       choices: ["client", "server", "game-data-sdk", "schema", "all"],
     },
   ]);
@@ -308,35 +308,35 @@ async function main(): Promise<void> {
 }
 
 function changeToProjectRoot() {
-  // 假设脚本位于项目根目录的 scripts 文件夹中
+  // Assume script is in the scripts folder at project root
   chdir(__dirname + "/..");
 }
 
 async function buildGameDataSDK() {
   const sdkPath = path.resolve(__dirname, "..", "packages", "game-data-sdk");
 
-  // 切换到 game-data-sdk 目录
+  // Switch to game-data-sdk directory
   process.chdir(sdkPath);
 
   try {
     await executeCommand("pnpm run build");
 
-    console.log("正在更新 game-data-sdk 版本...");
+    console.log("Updating game-data-sdk version...");
     const versionOutput = await executeCommand("npm version patch");
     const version = versionOutput.trim().replace("v", "");
-    console.log(`game-data-sdk 版本已更新到 ${version}`);
+    console.log(`game-data-sdk version updated to ${version}`);
 
     try {
       await executeCommand("pnpm run release");
 
-      console.log("game-data-sdk 发布成功");
+      console.log("game-data-sdk published successfully");
     } catch (error) {
-      console.error("game-data-sdk 发布过程中出现错误:", error);
+      console.error("Error during game-data-sdk publish:", error);
     }
 
     await askForGitHubCommit(version, "game-data-sdk");
   } finally {
-    // 切回原目录
+    // Switch back to original directory
     process.chdir("../..");
   }
 }
@@ -344,27 +344,27 @@ async function buildGameDataSDK() {
 async function buildSchema() {
   const sdkPath = path.resolve(__dirname, "..", "packages", "schema");
 
-  // 切换到 schema 目录
+  // Switch to schema directory
   process.chdir(sdkPath);
 
   try {
     await executeCommand("pnpm run build");
 
-    console.log("正在更新 schema 版本...");
+    console.log("Updating schema version...");
     const versionOutput = await executeCommand("npm version patch");
     const version = versionOutput.trim().replace("v", "");
-    console.log(`schema 版本已更新到 ${version}`);
+    console.log(`schema version updated to ${version}`);
 
     try {
       await executeCommand("pnpm run release");
-      console.log("schema 发布成功");
+      console.log("schema published successfully");
     } catch (error) {
-      console.error("schema 发布过程中出现错误:", error);
+      console.error("Error during schema publish:", error);
     }
 
     await askForGitHubCommit(version, "schema");
   } finally {
-    // 切回原目录
+    // Switch back to original directory
     process.chdir("../..");
   }
 }

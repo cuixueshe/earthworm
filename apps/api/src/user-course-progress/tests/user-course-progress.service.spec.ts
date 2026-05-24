@@ -74,16 +74,16 @@ describe("user-progress service", () => {
     beforeEach(async () => {
       coursePackEntityFirst = await insertCoursePack(db, {
         order: 1,
-        title: "零基础",
-        description: "这是零基础学英语",
+        title: "Cơ bản",
+        description: "Học tiếng Anh từ cơ bản",
         isFree: true,
         cover: "",
       });
 
       coursePackEntitySecond = await insertCoursePack(db, {
         order: 2,
-        title: "300个基础句子",
-        description: "快乐学英语",
+        title: "300 câu cơ bản",
+        description: "Học tiếng Anh vui vẻ",
         isFree: true,
         cover: "",
       });

@@ -11,9 +11,9 @@ type Statement = typeof statementSchema.$inferInsert;
 (async function () {
   const courseId = "";
   const courseFileName = "";
-  // 先删除
-  // 然后在添加
-  // 重置所有的课程 statement
+  // Delete first
+  // Then add
+  // Reset all course statements
   const courseDataJsonText = fs.readFileSync(
     path.resolve(__dirname, `../data/courses/${courseFileName}`),
     "utf-8",
@@ -33,9 +33,9 @@ export async function deleteCourseAllStatements(courseId: string) {
 }
 
 export async function addCourseStatements(courseId: string, statements: Statement[]) {
-  const createStatementTasks = statements.map(({ chinese, english, soundmark }, sIndex) => {
+  const createStatementTasks = statements.map(({ nativeText, english, soundmark }, sIndex) => {
     return db.insert(statementSchema).values({
-      chinese,
+      nativeText,
       english,
       soundmark,
       order: sIndex + 1,

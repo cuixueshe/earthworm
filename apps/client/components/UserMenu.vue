@@ -84,43 +84,43 @@ const modal = useModal();
 const showMenuOptions = computed(() => {
   return [
     {
-      title: "设置",
+      title: "Cài đặt",
       name: "setting",
       eventName: handleSetting,
       icon: "i-ph-gear",
     },
     {
-      title: "掌握列表",
+      title: "Từ đã thuộc",
       name: "setting",
       eventName: handleMasteredElements,
       icon: "i-ph-book",
     },
     {
-      title: "编辑器",
+      title: "Trình chỉnh sửa",
       name: "setting",
       eventName: handleGoToEditor,
       icon: "i-ph-planet-duotone",
     },
     {
-      title: "帮助文档",
+      title: "Tài liệu",
       name: "helpDocs",
       eventName: handleHelpDocs,
       icon: "i-ph-book-open-text-duotone",
     },
     {
-      title: "建议反馈",
+      title: "Phản hồi",
       name: "feedback",
       eventName: handleFeedback,
       icon: "i-ph-hands-praying-duotone",
     },
     {
-      title: "主题切换",
+      title: "Giao diện",
       name: "changeTheme",
       eventName: toggleDarkMode,
       icon: isDarkMode.value ? "i-ph-moon" : "i-ph-sun",
     },
     {
-      title: "登出",
+      title: "Đăng xuất",
       name: "logout",
       eventName: handleLogout,
       icon: "i-ph-sign-out",
@@ -152,8 +152,8 @@ function handleLogout() {
   closeUserMenu();
 
   modal.open(Dialog, {
-    title: "退出登录",
-    content: "是否确认退出登录？",
+    title: "Đăng xuất",
+    content: "Bạn có chắc chắn muốn đăng xuất không?",
     showCancel: true,
     showConfirm: true,
     async onConfirm() {

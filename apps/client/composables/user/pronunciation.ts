@@ -13,8 +13,8 @@ export enum PronunciationType {
 }
 
 export const pronunciationLabels: { [key in PronunciationType]: string } = {
-  [PronunciationType.American]: "美音",
-  [PronunciationType.British]: "英音",
+  [PronunciationType.American]: "Giọng Mỹ",
+  [PronunciationType.British]: "Giọng Anh",
 };
 
 const PRONUNCIATION_TYPE = "pronunciationType";

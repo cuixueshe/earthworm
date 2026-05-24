@@ -18,7 +18,7 @@ export class MembershipService {
     const membershipEntity = await this.findMembership(userId);
 
     if (membershipEntity && membershipEntity.isActive) {
-      // 如果用户是激活状态的会员，则延长会员期限
+      // If user is an active member, extend membership period
       const endDate = this.calculateEndDate(membershipEntity.end_date, buyMembershipDto);
       await this.db
         .update(membership)
@@ -31,11 +31,11 @@ export class MembershipService {
 
       return { endDate, startDate, isActive: true };
     } else {
-      // 如果用户不是会员或会员已过期，则创建新会员或重置会员期限
+      // If user is not a member or membership has expired, create new or reset membership
       const endDate = this.calculateEndDate(startDate, buyMembershipDto);
 
       if (!membershipEntity) {
-        // 如果用户不是会员，则创建新会员记录
+        // If user is not a member, create a new membership record
         await this.db.insert(membership).values({
           userId,
           start_date: startDate,
@@ -101,7 +101,7 @@ export class MembershipService {
   }
 
   public async isFounderMembership(userId: string) {
-    // 创始会员永久有效 所以不需要检查 active
+    // Founder membership is permanent so no need to check active
     const result = await this.db.query.membership.findFirst({
       where: and(eq(membership.userId, userId), eq(membership.type, MembershipType.FOUNDER)),
     });

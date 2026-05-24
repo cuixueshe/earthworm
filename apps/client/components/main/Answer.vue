@@ -18,7 +18,7 @@
       {{ courseStore.currentStatement?.soundmark }}
     </div>
     <div class="my-6 text-xl text-gray-500">
-      {{ courseStore.currentStatement?.chinese }}
+      {{ courseStore.currentStatement?.nativeText }}
     </div>
     <div class="space-y-3">
       <div>
@@ -26,13 +26,13 @@
           class="btn btn-outline btn-sm"
           @click="showQuestion"
         >
-          再来一次
+          Làm lại
         </button>
         <button
           class="btn btn-outline btn-sm ml-6"
           @click="goToNextQuestion"
         >
-          下一题
+          Câu tiếp theo
         </button>
       </div>
       <div class="md:hidden">

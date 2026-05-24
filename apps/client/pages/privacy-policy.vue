@@ -1,59 +1,94 @@
 <template>
   <div>
-    <h1>隐私政策</h1>
+    <h1>Chính sách bảo mật</h1>
     <section>
-      <h2>1. 个人信息的收集</h2>
-      <p>用户注册时，我们将收集用户的个人信息，包括但不限于姓名、电子邮件地址、电话号码等。</p>
-      <p>我们收集这些信息是为了验证用户身份、提供服务以及与用户沟通。</p>
-    </section>
-
-    <section>
-      <h2>2. 个人信息的使用</h2>
-      <p>我们将使用收集到的个人信息来提供用户注册服务，并用于改进我们的服务。</p>
-      <p>我们不会将个人信息出售给第三方，除非得到用户的明确同意。</p>
-    </section>
-
-    <section>
-      <h2>3. 个人信息的存储</h2>
-      <p>我们将采取合理的安全措施来保护用户个人信息，防止未经授权的访问、使用或披露。</p>
-      <p>个人信息的存储期限将根据法律法规和业务需求进行确定。</p>
-    </section>
-
-    <section>
-      <h2>4. 个人信息的共享</h2>
-      <p>我们不会将用户的个人信息共享给第三方，除非得到用户的明确同意或法律法规的要求。</p>
-      <p>我们可能会与服务提供商共享必要的信息，以提供和改善我们的服务。</p>
-    </section>
-
-    <section>
-      <h2>5. 用户的权利</h2>
-      <p>用户有权访问、更正或删除其个人信息。</p>
-      <p>用户有权选择是否接受来自我们的营销邮件或其他促销信息。</p>
-    </section>
-
-    <section>
-      <h2>6. 隐私政策的更新</h2>
-      <p>我们可能会随时更新本隐私政策，以反映我们的服务变化或遵守新的法律法规。</p>
-      <p>更新后的隐私政策一旦发布即生效。</p>
-    </section>
-
-    <section>
-      <h2>7. 产品如何使用 Cookie 和其他追踪技术</h2>
+      <h2>1. Thu thập thông tin</h2>
       <p>
-        为确保产品正常运转，产品会在您的计算机或移动设备上存储名为 Cookie 的小数据文件。Cookie
-        通常包含标识符、产品名称以及一些号码和字符。借助于
-        Cookie，产品能够存储您的偏好或商品等数据，并用以判断注册用户是否已经登录，提升服务和产品质量及优化用户体验。
+        Chúng tôi thu thập thông tin cá nhân của bạn khi bạn đăng ký, bao gồm nhưng không giới hạn
+        tên, địa chỉ email, và số điện thoại.
+      </p>
+      <p>Thông tin này được sử dụng để xác minh danh tính, cung cấp dịch vụ và liên lạc với bạn.</p>
+    </section>
+
+    <section>
+      <h2>2. Sử dụng thông tin</h2>
+      <p>
+        Chúng tôi sử dụng thông tin cá nhân đã thu thập để cung cấp dịch vụ đăng ký và cải thiện
+        trải nghiệm người dùng.
       </p>
       <p>
-        产品出于不同的目的使用各种 Cookie，包括：严格必要型 Cookie、性能 Cookie、营销 Cookie 和功能
-        Cookie。某些 Cookie 可能由外部第三方提供，以向产品提供其它功能。产品不会将 Cookie
-        用于本政策所述目的之外的任何用途。您可根据自己的偏好管理或删除 Cookie。
+        Chúng tôi không bán thông tin cá nhân của bạn cho bên thứ ba, trừ khi có sự đồng ý rõ ràng
+        từ bạn.
       </p>
+    </section>
 
+    <section>
+      <h2>3. Lưu trữ và bảo vệ thông tin</h2>
       <p>
-        您可以清除计算机上或手机中保存的所有 Cookie，大部分网络浏览器都设有阻止或禁用 Cookie
-        的功能，您可对浏览器进行配置。阻止或禁用 Cookie
-        功能后，可能影响您使用或不能充分使用产品的产品和服务。
+        Chúng tôi áp dụng các biện pháp bảo mật hợp lý để bảo vệ thông tin cá nhân của bạn, ngăn
+        chặn truy cập, sử dụng hoặc tiết lộ trái phép.
+      </p>
+      <p>
+        Thời hạn lưu trữ thông tin cá nhân được xác định theo quy định pháp luật và nhu cầu hoạt
+        động.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Chia sẻ thông tin</h2>
+      <p>
+        Chúng tôi không chia sẻ thông tin cá nhân của bạn cho bên thứ ba, trừ khi có sự đồng ý của
+        bạn hoặc theo yêu cầu của pháp luật.
+      </p>
+      <p>
+        Chúng tôi có thể chia sẻ thông tin cần thiết với các nhà cung cấp dịch vụ để cung cấp và cải
+        thiện dịch vụ của mình.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Quyền của người dùng</h2>
+      <p>Bạn có quyền truy cập, chỉnh sửa hoặc xóa thông tin cá nhân của mình.</p>
+      <p>
+        Bạn có quyền chọn có nhận thư quảng cáo hoặc thông tin khuyến mãi từ chúng tôi hay không.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Cập nhật chính sách bảo mật</h2>
+      <p>
+        Chúng tôi có thể cập nhật chính sách bảo mật này bất cứ lúc nào để phản ánh thay đổi trong
+        dịch vụ hoặc tuân thủ quy định pháp luật mới.
+      </p>
+      <p>Chính sách bảo mật cập nhật sẽ có hiệu lực ngay khi được đăng.</p>
+    </section>
+
+    <section>
+      <h2>7. Cookie và công nghệ theo dõi</h2>
+      <p>
+        Để đảm bảo sản phẩm hoạt động bình thường, chúng tôi lưu trữ các tệp dữ liệu nhỏ gọi là
+        Cookie trên máy tính hoặc thiết bị di động của bạn. Cookie thường chứa mã định danh, tên sản
+        phẩm và một số ký tự. Nhờ Cookie, sản phẩm có thể lưu trữ sở thích của bạn và xác định người
+        dùng đã đăng nhập, nâng cao chất lượng dịch vụ và tối ưu trải nghiệm.
+      </p>
+      <p>
+        Sản phẩm sử dụng nhiều loại Cookie cho các mục đích khác nhau, bao gồm: Cookie cần thiết,
+        Cookie hiệu suất, Cookie tiếp thị và Cookie chức năng. Một số Cookie có thể được cung cấp
+        bởi bên thứ ba. Chúng tôi không sử dụng Cookie cho mục đích khác ngoài những gì được mô tả
+        trong chính sách này. Bạn có thể quản lý hoặc xóa Cookie theo sở thích của mình.
+      </p>
+      <p>
+        Bạn có thể xóa tất cả Cookie trên máy tính hoặc điện thoại. Hầu hết trình duyệt đều có chức
+        năng chặn hoặc vô hiệu hóa Cookie. Tuy nhiên, việc chặn Cookie có thể ảnh hưởng đến việc sử
+        dụng sản phẩm và dịch vụ.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Liên hệ</h2>
+      <p>
+        Nếu bạn có bất kỳ câu hỏi nào về chính sách bảo mật này, vui lòng liên hệ với chúng tôi qua
+        nhóm Telegram chính thức.
       </p>
     </section>
   </div>

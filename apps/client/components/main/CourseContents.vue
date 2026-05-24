@@ -7,7 +7,7 @@
       }"
     >
       <CommonModalHeader
-        title="课程目录"
+        title="Mục lục khóa học"
         @close="hideCourseContents"
       />
       <!-- 添加选项菜单 -->
@@ -47,7 +47,7 @@
               <div
                 class="truncate text-lg text-purple-600 group-hover:text-clip group-hover:whitespace-normal dark:text-purple-300"
               >
-                {{ item.chinese }}
+                {{ item.nativeText }}
               </div>
               <div
                 class="truncate text-lg text-gray-500 group-hover:text-clip group-hover:whitespace-normal dark:text-gray-400"
@@ -59,7 +59,7 @@
               @click=""
               class="flex w-11 flex-shrink-0 cursor-pointer items-center justify-center transition-transform duration-300 hover:scale-110"
             >
-              <UTooltip text="播放发音">
+              <UTooltip text="Phát âm thanh">
                 <UIcon
                   name="i-ph-speaker-simple-high"
                   class="ml-1 inline-block h-7 w-7 cursor-pointer"
@@ -93,9 +93,9 @@ const contentsList = computed(() => {
 
 const filterOption = ref("all"); // 新增过滤选项
 const options = [
-  { label: "全部", value: "all" },
-  { label: "已经掌握", value: "mastered" },
-  { label: "未掌握", value: "notMastered" },
+  { label: "Tất cả", value: "all" },
+  { label: "Đã thành thạo", value: "mastered" },
+  { label: "Chưa thành thạo", value: "notMastered" },
 ];
 const filteredContentsList = computed(() => {
   if (filterOption.value === "mastered") {

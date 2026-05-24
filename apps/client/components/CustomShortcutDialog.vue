@@ -5,7 +5,7 @@
   >
     <UContainer>
       <h3 class="mb-4 text-center text-base font-bold">
-        请先按下单键/组合键，通过回车键（Enter ⏎）来设置
+        Nhấn phím đơn hoặc tổ hợp phím, sau đó nhấn Enter (Enter ⏎) để cài đặt
       </h3>
       <div class="h-8 rounded border border-solid text-center leading-8">
         {{ shortcutKeyStr }}
@@ -22,7 +22,7 @@
         class="mt-4 text-center text-xs"
         :class="'text-[rgba(136,136,136,1)]'"
       >
-        已有相同的按键绑定，请重新设置
+        Đã có phím tắt giống nhau, vui lòng cài đặt lại
       </div>
     </UContainer>
   </UModal>

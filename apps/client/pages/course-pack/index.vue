@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full flex-col">
-    <h2 class="mb-4 text-center text-3xl dark:border-gray-600">课程包列表</h2>
+    <h2 class="mb-4 text-center text-3xl dark:border-gray-600">Danh sách gói bài</h2>
     <template v-if="isLoading">
       <Loading></Loading>
     </template>
@@ -56,7 +56,7 @@ function handleGoToCoursePack(coursePack: CoursePack) {
   } else {
     // 看看是不是会员 不是的话 直接弹出消息告知 需要是会员
     // TODO 还没有检测是不是会员的功能函数
-    console.log("需要是会员");
+    console.log("Membership required");
   }
 }
 </script>

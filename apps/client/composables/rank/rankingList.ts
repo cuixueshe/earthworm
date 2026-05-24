@@ -42,15 +42,15 @@ export const useRanking = defineStore("ranking", () => {
   const rankingSelf = ref<RankingSelf | null>(null);
   const rankingPeriodList = [
     {
-      label: "周排行",
+      label: "Tuần",
       value: "weekly",
     },
     {
-      label: "月排行",
+      label: "Tháng",
       value: "monthly",
     },
     {
-      label: "年排行",
+      label: "Năm",
       value: "yearly",
     },
   ];
@@ -86,7 +86,7 @@ export const useRanking = defineStore("ranking", () => {
 
     // 加载中不允许切换
     if (isLoading.value) {
-      toast.warning("请等待当前排行榜加载完成", { duration: 1200 });
+      toast.warning("Vui lòng đợi bảng xếp hạng hiện tại tải xong", { duration: 1200 });
       return;
     }
 

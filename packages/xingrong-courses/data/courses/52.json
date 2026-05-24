@@ -1,721 +1,721 @@
 [
 	{
-		"chinese": "聪明的",
+		"nativeText": "thông minh",
 		"english": "smart",
 		"soundmark": "/smɑrt/"
 	},
 	{
-		"chinese": "人",
+		"nativeText": "người",
 		"english": "person",
 		"soundmark": "/'pɝsn/"
 	},
 	{
-		"chinese": "聪明的人",
+		"nativeText": "người thông minh",
 		"english": "smart person",
 		"soundmark": "/smɑrt/ /'pɝsn/"
 	},
 	{
-		"chinese": "最聪明的",
+		"nativeText": "thông minh nhất",
 		"english": "the smartest",
 		"soundmark": "/ðə/ /'smɑrtɪst/"
 	},
 	{
-		"chinese": "最聪明的人",
+		"nativeText": "người thông minh nhất",
 		"english": "the smartest person",
 		"soundmark": "/ðə/ /'smɑrtɪst/ /'pɝsn/"
 	},
 	{
-		"chinese": "认识",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "认识(ed形式)",
+		"nativeText": "đã biết (ed dạng)",
 		"english": "known",
 		"soundmark": "/non/"
 	},
 	{
-		"chinese": "我曾经...",
+		"nativeText": "tôi từng...",
 		"english": "I have ever",
 		"soundmark": "/aɪ/ /hæv/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "我曾经认识",
+		"nativeText": "tôi từng biết",
 		"english": "I have ever known",
 		"soundmark": "/aɪ/ /hæv/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "最聪明的人",
+		"nativeText": "người thông minh nhất",
 		"english": "the smartest person",
 		"soundmark": "/ðə/ /'smɑrtɪst/ /'pɝsn/"
 	},
 	{
-		"chinese": "我曾经认识的最聪明的人",
+		"nativeText": "người thông minh nhất mà tôi từng biết",
 		"english": "the smartest person I have ever known",
 		"soundmark": "/ðə/ /'smɑrtɪst/ /'pɝsn/ /aɪ/ /hæv/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "她是",
+		"nativeText": "cô ấy là",
 		"english": "she is",
 		"soundmark": "/ʃi/ /ɪz/"
 	},
 	{
-		"chinese": "她是我曾经认识的最聪明的人",
+		"nativeText": "cô ấy là người thông minh nhất mà tôi từng biết",
 		"english": "she is the smartest person I have ever known",
 		"soundmark": "/ʃi/ /ɪz/ /ðə/ /'smɑrtɪst/ /'pɝsn/ /aɪ/ /hæv/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "我曾经知道",
+		"nativeText": "tôi từng biết",
 		"english": "I have ever known",
 		"soundmark": "/aɪ/ /hæv/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "他曾经知道",
+		"nativeText": "anh ấy từng biết",
 		"english": "he has ever known",
 		"soundmark": "/hi/ /hæz/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "动物",
+		"nativeText": "động vật",
 		"english": "animal",
 		"soundmark": "/'ænɪml/"
 	},
 	{
-		"chinese": "危险的",
+		"nativeText": "nguy hiểm",
 		"english": "dangerous",
 		"soundmark": "/ˈdendʒərəs/"
 	},
 	{
-		"chinese": "危险的动物",
+		"nativeText": "động vật nguy hiểm",
 		"english": "dangerous animal",
 		"soundmark": "/ˈdendʒərəs/ /'ænɪml/"
 	},
 	{
-		"chinese": "最",
+		"nativeText": "nhất",
 		"english": "the most",
 		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "最危险的",
+		"nativeText": "nguy hiểm nhất",
 		"english": "the most dangerous",
 		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/"
 	},
 	{
-		"chinese": "最危险的动物",
+		"nativeText": "động vật nguy hiểm nhất",
 		"english": "the most dangerous animal",
 		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/ /'ænɪml/"
 	},
 	{
-		"chinese": "他曾经知道",
+		"nativeText": "anh ấy từng biết",
 		"english": "he has ever known",
 		"soundmark": "/hi/ /hæz/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "他曾经知道的最危险的动物",
+		"nativeText": "động vật nguy hiểm nhất mà anh ấy từng biết",
 		"english": "the most dangerous animal he has ever known",
 		"soundmark": "/ðə/ /most/ /ˈdendʒərəs/ /'ænɪml/ /hi/ /hæz/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "这是",
+		"nativeText": "đây là",
 		"english": "this is",
 		"soundmark": "/ðɪs/ /ɪz/"
 	},
 	{
-		"chinese": "这是他曾经知道的最危险的动物",
+		"nativeText": "đây là động vật nguy hiểm nhất mà anh ấy từng biết",
 		"english": "this is the most dangerous animal he has ever known",
 		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /ˈdendʒərəs/ /'ænɪml/ /hi/ /hæz/ /'ɛvɚ/ /non/"
 	},
 	{
-		"chinese": "他曾经...",
+		"nativeText": "anh ấy từng...",
 		"english": "he has ever",
 		"soundmark": "/hi/ /hæz/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "她曾经...",
+		"nativeText": "cô ấy từng...",
 		"english": "she has ever",
 		"soundmark": "/ʃi/ /hæz/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "建议",
+		"nativeText": "lời khuyên",
 		"english": "advice",
 		"soundmark": "/əd'vaɪs/"
 	},
 	{
-		"chinese": "好的",
+		"nativeText": "tốt",
 		"english": "good",
 		"soundmark": "/ɡʊd/"
 	},
 	{
-		"chinese": "好的建议",
+		"nativeText": "lời khuyên tốt",
 		"english": "good advice",
 		"soundmark": "/ɡʊd/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "最好的",
+		"nativeText": "tốt nhất",
 		"english": "the best",
 		"soundmark": "/ðə/ /bɛst/"
 	},
 	{
-		"chinese": "最好的建议",
+		"nativeText": "lời khuyên tốt nhất",
 		"english": "the best advice",
 		"soundmark": "/ðə/ /bɛst/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "给",
+		"nativeText": "cho",
 		"english": "to give",
 		"soundmark": "/tə/ /ɡɪv/"
 	},
 	{
-		"chinese": "给(ed形式)",
+		"nativeText": "đã cho (ed dạng)",
 		"english": "given",
 		"soundmark": "/ˈɡɪvn/"
 	},
 	{
-		"chinese": "她曾经...",
+		"nativeText": "cô ấy từng...",
 		"english": "she has ever",
 		"soundmark": "/ʃi/ /hæz/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "她曾经给",
+		"nativeText": "cô ấy từng cho",
 		"english": "she has ever given",
 		"soundmark": "/ʃi/ /hæz/ /'ɛvɚ/ /ˈɡɪvn/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "她曾经给我",
+		"nativeText": "cô ấy từng cho tôi",
 		"english": "she has ever given me",
 		"soundmark": "/ʃi/ /hæz/ /'ɛvɚ/ /ˈɡɪvn/ /mi/"
 	},
 	{
-		"chinese": "最好的建议",
+		"nativeText": "lời khuyên tốt nhất",
 		"english": "the best advice",
 		"soundmark": "/ðə/ /bɛst/ /əd'vaɪs/"
 	},
 	{
-		"chinese": "她曾经给我的最好的建议",
+		"nativeText": "lời khuyên tốt nhất mà cô ấy từng cho tôi",
 		"english": "the best advice she has ever given me",
 		"soundmark": "/ðə/ /bɛst/ /əd'vaɪs/ /ʃi/ /hæz/ /'ɛvɚ/ /ˈɡɪvn/ /mi/"
 	},
 	{
-		"chinese": "这是",
+		"nativeText": "đây là",
 		"english": "this is",
 		"soundmark": "/ðɪs/ /ɪz/"
 	},
 	{
-		"chinese": "这是她曾经给我的最好的建议",
+		"nativeText": "đây là lời khuyên tốt nhất mà cô ấy từng cho tôi",
 		"english": "this is the best advice she has ever given me",
 		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /bɛst/ /əd'vaɪs/ /ʃi/ /hæz/ /'ɛvɚ/ /ˈɡɪvn/ /mi/"
 	},
 	{
-		"chinese": "她曾经...",
+		"nativeText": "cô ấy từng...",
 		"english": "she has ever",
 		"soundmark": "/ʃi/ /hæz/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "星荣曾经...",
+		"nativeText": "Xingrong từng...",
 		"english": "Xingrong has ever",
 		"soundmark": "/hæz/ /'ɛvɚ/"
 	},
 	{
-		"chinese": "设计",
+		"nativeText": "thiết kế",
 		"english": "to design",
 		"soundmark": "/tə/ /dɪˈzaɪn/"
 	},
 	{
-		"chinese": "设计(ed形式)",
+		"nativeText": "đã thiết kế (ed dạng)",
 		"english": "designed",
 		"soundmark": "/dɪˈzaɪnd/"
 	},
 	{
-		"chinese": "星荣曾经设计",
+		"nativeText": "Xingrong từng thiết kế",
 		"english": "Xingrong has ever designed",
 		"soundmark": "/hæz/ /'ɛvɚ/ /dɪˈzaɪnd/"
 	},
 	{
-		"chinese": "挑战",
+		"nativeText": "thử thách",
 		"english": "to challenge",
 		"soundmark": "/tə/ /'tʃælɪndʒ/"
 	},
 	{
-		"chinese": "有挑战性的",
+		"nativeText": "có tính thử thách",
 		"english": "challenging",
 		"soundmark": "/ˈtʃælɪndʒɪŋ/"
 	},
 	{
-		"chinese": "最",
+		"nativeText": "nhất",
 		"english": "the most",
 		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "最有挑战性的",
+		"nativeText": "có tính thử thách nhất",
 		"english": "the most challenging",
 		"soundmark": "/ðə/ /most/ /ˈtʃælɪndʒɪŋ/"
 	},
 	{
-		"chinese": "课程",
+		"nativeText": "khóa học",
 		"english": "course",
 		"soundmark": "/kɔrs/"
 	},
 	{
-		"chinese": "最有挑战性的课程",
+		"nativeText": "khóa học có tính thử thách nhất",
 		"english": "the most challenging course",
 		"soundmark": "/ðə/ /most/ /ˈtʃælɪndʒɪŋ/ /kɔrs/"
 	},
 	{
-		"chinese": "星荣曾经设计",
+		"nativeText": "Xingrong từng thiết kế",
 		"english": "Xingrong has ever designed",
 		"soundmark": "/hæz/ /'ɛvɚ/ /dɪˈzaɪnd/"
 	},
 	{
-		"chinese": "星荣曾经设计的最有挑战性的课程",
+		"nativeText": "khóa học có tính thử thách nhất mà Xingrong từng thiết kế",
 		"english": "the most challenging course Xingrong has ever designed",
 		"soundmark": "/ðə/ /most/ /ˈtʃælɪndʒɪŋ/ /kɔrs/ /hæz/ /'ɛvɚ/ /dɪˈzaɪnd/"
 	},
 	{
-		"chinese": "这是",
+		"nativeText": "đây là",
 		"english": "this is",
 		"soundmark": "/ðɪs/ /ɪz/"
 	},
 	{
-		"chinese": "这是星荣曾经设计的最有挑战性的课程",
+		"nativeText": "đây là khóa học có tính thử thách nhất mà Xingrong từng thiết kế",
 		"english": "this is the most challenging course Xingrong has ever designed",
 		"soundmark": "/ðɪs/ /ɪz/ /ðə/ /most/ /ˈtʃælɪndʒɪŋ/ /kɔrs/ /hæz/ /'ɛvɚ/ /dɪˈzaɪnd/"
 	},
 	{
-		"chinese": "星荣(已经)设计",
+		"nativeText": "Xingrong đã thiết kế",
 		"english": "Xingrong has designed",
 		"soundmark": "/hæz/ /dɪˈzaɪnd/"
 	},
 	{
-		"chinese": "课程",
+		"nativeText": "khóa học",
 		"english": "course",
 		"soundmark": "/kɔrs/"
 	},
 	{
-		"chinese": "英文",
+		"nativeText": "tiếng Anh",
 		"english": "English",
 		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "英文课程",
+		"nativeText": "khóa học tiếng Anh",
 		"english": "English course",
 		"soundmark": "/ˈɪŋɡlɪʃ/ /kɔrs/"
 	},
 	{
-		"chinese": "多个",
+		"nativeText": "vài",
 		"english": "several",
 		"soundmark": "/'sɛvrəl/"
 	},
 	{
-		"chinese": "多个英文课程",
+		"nativeText": "vài khóa học tiếng Anh",
 		"english": "several English courses",
 		"soundmark": "/'sɛvrəl/ /ˈɪŋɡlɪʃ/ /kɔrsɪz/"
 	},
 	{
-		"chinese": "星荣(已经)设计了多个英文课程",
+		"nativeText": "Xingrong đã thiết kế vài khóa học tiếng Anh",
 		"english": "Xingrong has designed several English courses",
 		"soundmark": "/hæz/ /dɪˈzaɪnd/ /'sɛvrəl/ /ˈɪŋɡlɪʃ/ /kɔrsɪz/"
 	},
 	{
-		"chinese": "访问",
+		"nativeText": "thăm",
 		"english": "to visit",
 		"soundmark": "/tə/ /'vɪzɪt/"
 	},
 	{
-		"chinese": "访问(ed形式)",
+		"nativeText": "đã thăm (ed dạng)",
 		"english": "visited",
 		"soundmark": "/'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "她(已经)访问",
+		"nativeText": "cô ấy đã thăm",
 		"english": "she has visited",
 		"soundmark": "/ʃi/ /hæz/ /'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "法国",
+		"nativeText": "Pháp",
 		"english": "France",
 		"soundmark": "/fræns/"
 	},
 	{
-		"chinese": "她(已经)访问过法国",
+		"nativeText": "cô ấy đã thăm Pháp",
 		"english": "she has visited France",
 		"soundmark": "/ʃi/ /hæz/ /'vɪzɪtɪd/ /fræns/"
 	},
 	{
-		"chinese": "次",
+		"nativeText": "lần",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "三次",
+		"nativeText": "ba lần",
 		"english": "three times",
 		"soundmark": "/θri/ /taɪmz/"
 	},
 	{
-		"chinese": "她(已经)访问过法国三次",
+		"nativeText": "cô ấy đã thăm Pháp ba lần",
 		"english": "she has visited France three times",
 		"soundmark": "/ʃi/ /hæz/ /'vɪzɪtɪd/ /fræns/ /θri/ /taɪmz/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "完成(ed形式)",
+		"nativeText": "đã hoàn thành (ed dạng)",
 		"english": "finished",
 		"soundmark": "/'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他们(已经)完成",
+		"nativeText": "họ đã hoàn thành",
 		"english": "they have finished",
 		"soundmark": "/ðe/ /hæv/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "项目",
+		"nativeText": "dự án",
 		"english": "project",
 		"soundmark": "/ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "他们的",
+		"nativeText": "của họ",
 		"english": "their",
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "他们的项目",
+		"nativeText": "dự án của họ",
 		"english": "their project",
 		"soundmark": "/ðɛr/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "他们(已经)完成了他们的项目",
+		"nativeText": "họ đã hoàn thành dự án của họ",
 		"english": "they have finished their project",
 		"soundmark": "/ðe/ /hæv/ /'fɪnɪʃt/ /ðɛr/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我们(已经)完成了我们的项目",
+		"nativeText": "chúng ta đã hoàn thành dự án của chúng ta",
 		"english": "we have finished our project",
 		"soundmark": "/wi/ /hæv/ /'fɪnɪʃt/ /'aʊɚ/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "我(已经)完成了我的项目",
+		"nativeText": "tôi đã hoàn thành dự án của tôi",
 		"english": "I have finished my project",
 		"soundmark": "/aɪ/ /hæv/ /'fɪnɪʃt/ /maɪ/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "你(已经)完成了你的项目",
+		"nativeText": "bạn đã hoàn thành dự án của bạn",
 		"english": "you have finished your project",
-		"soundmark": "/ju/ /hæv/ /'fɪnɪʃt/ /jʊr/ /ˈprɑdʒɛkt/"
+		"soundmark": "/ju/ /hæv/ /'fɪnɪʃt' /jʊr/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "他(已经)完成了他的项目",
+		"nativeText": "anh ấy đã hoàn thành dự án của anh ấy",
 		"english": "he has finished his project",
 		"soundmark": "/hi/ /hæz/ /'fɪnɪʃt/ /hɪz/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "她(已经)完成了她的项目",
+		"nativeText": "cô ấy đã hoàn thành dự án của cô ấy",
 		"english": "she has finished her project",
 		"soundmark": "/ʃi/ /hæz/ /'fɪnɪʃt/ /hɚ/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "星荣(已经)完成了他的项目",
+		"nativeText": "Xingrong đã hoàn thành dự án của anh ấy",
 		"english": "Xingrong has finished his project",
 		"soundmark": "/hæz/ /'fɪnɪʃt/ /hɪz/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "它(已经)完成了它的项目",
+		"nativeText": "nó đã hoàn thành dự án của nó",
 		"english": "it has finished its project",
 		"soundmark": "/ɪt/ /hæz/ /'fɪnɪʃt/ /ɪts/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "她(已经)完成了她的项目",
+		"nativeText": "cô ấy đã hoàn thành dự án của cô ấy",
 		"english": "she has finished her project",
 		"soundmark": "/ʃi/ /hæz/ /'fɪnɪʃt/ /hɚ/ /ˈprɑdʒɛkt/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "homework",
 		"soundmark": "/'homwɝk/"
 	},
 	{
-		"chinese": "她(已经)完成了她的家庭作业",
+		"nativeText": "cô ấy đã hoàn thành bài tập về nhà của cô ấy",
 		"english": "she has finished her homework",
 		"soundmark": "/ʃi/ /hæz/ /'fɪnɪʃt/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "她(过去已经)完成了她的家庭作业",
+		"nativeText": "cô ấy đã hoàn thành bài tập về nhà của cô ấy (quá khứ hoàn thành)",
 		"english": "she had finished her homework",
 		"soundmark": "/ʃi/ /hæd/ /'fɪnɪʃt/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "去",
+		"nativeText": "đi",
 		"english": "to go",
 		"soundmark": "/tə/ /ɡo/"
 	},
 	{
-		"chinese": "外面",
+		"nativeText": "ra ngoài",
 		"english": "out",
 		"soundmark": "/aʊt/"
 	},
 	{
-		"chinese": "去外面",
+		"nativeText": "đi ra ngoài",
 		"english": "to go out",
 		"soundmark": "/tə/ /ɡo/ /aʊt/"
 	},
 	{
-		"chinese": "玩",
+		"nativeText": "chơi",
 		"english": "to play",
 		"soundmark": "/tə/ /ple/"
 	},
 	{
-		"chinese": "去外面玩",
+		"nativeText": "đi ra ngoài chơi",
 		"english": "to go out to play",
 		"soundmark": "/tə/ /ɡo/ /aʊt/ /tə/ /ple/"
 	},
 	{
-		"chinese": "她去外面玩",
+		"nativeText": "cô ấy đi ra ngoài chơi",
 		"english": "she goes out to play",
 		"soundmark": "/ʃi/ /ɡoz/ /aʊt/ /tə/ /ple/ /(过去)去 went/ /wɛnt/"
 	},
 	{
-		"chinese": "她(过去)去外面玩",
+		"nativeText": "cô ấy đã đi ra ngoài chơi",
 		"english": "she went out to play",
 		"soundmark": "/ʃi/ /wɛnt/ /aʊt/ /tə/ /ple/"
 	},
 	{
-		"chinese": "在...之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在她(过去)去外面玩之前",
+		"nativeText": "trước khi cô ấy đã đi ra ngoài chơi",
 		"english": "before she went out to play",
 		"soundmark": "/bɪ'fɔr/ /ʃi/ /wɛnt/ /aʊt/ /tə/ /ple/"
 	},
 	{
-		"chinese": "她(过去已经)完成了她的家庭作业",
+		"nativeText": "cô ấy đã hoàn thành bài tập về nhà của cô ấy (quá khứ hoàn thành)",
 		"english": "she had finished her homework",
 		"soundmark": "/ʃi/ /hæd/ /'fɪnɪʃt/ /hɚ/ /'homwɝk/"
 	},
 	{
-		"chinese": "在她(过去)去外面玩之前，她(过去已经)完成了她的家庭作业",
+		"nativeText": "trước khi cô ấy đi ra ngoài chơi, cô ấy đã hoàn thành bài tập về nhà của mình",
 		"english": "she had finished her homework before she went out to play",
 		"soundmark": "/ʃi/ /hæd/ /'fɪnɪʃt/ /hɚ/ /'homwɝk/ /bɪ'fɔr/ /ʃi/ /wɛnt/ /aʊt/ /tə/ /ple/"
 	},
 	{
-		"chinese": "离开",
+		"nativeText": "rời khỏi",
 		"english": "to leave",
 		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "离开(ed形式)",
+		"nativeText": "đã rời khỏi (ed dạng)",
 		"english": "left",
 		"soundmark": "/lɛft/"
 	},
 	{
-		"chinese": "他们(过去已经)离开",
+		"nativeText": "họ đã rời khỏi (quá khứ hoàn thành)",
 		"english": "they had left",
 		"soundmark": "/ðe/ /hæd/ /lɛft/"
 	},
 	{
-		"chinese": "派对",
+		"nativeText": "tiệc",
 		"english": "party",
 		"soundmark": "/'pɑrti/"
 	},
 	{
-		"chinese": "他们(过去已经)离开了那个派对",
+		"nativeText": "họ đã rời khỏi bữa tiệc đó",
 		"english": "they had left the party",
 		"soundmark": "/ðe/ /hæd/ /lɛft/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to arrive",
 		"soundmark": "/tə/ /ə'raɪv/ /(过去)到达 arrived/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "我(过去)到达",
+		"nativeText": "tôi đã đến",
 		"english": "I arrived",
 		"soundmark": "/aɪ/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "在...之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在我(过去)到达之前",
+		"nativeText": "trước khi tôi đến",
 		"english": "before I arrived",
 		"soundmark": "/bɪ'fɔr/ /aɪ/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "他们(过去已经)离开了那个派对",
+		"nativeText": "họ đã rời khỏi bữa tiệc đó",
 		"english": "they had left the party",
 		"soundmark": "/ðe/ /hæd/ /lɛft/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "在我(过去)到达之前他们(过去已经)离开了那个派对",
+		"nativeText": "trước khi tôi đến, họ đã rời khỏi bữa tiệc đó",
 		"english": "they had left the party before I arrived",
 		"soundmark": "/ðe/ /hæd/ /lɛft/ /ðə/ /'pɑrti/ /bɪ'fɔr/ /aɪ/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "吃",
+		"nativeText": "ăn",
 		"english": "to eat",
 		"soundmark": "/tə/ /it/"
 	},
 	{
-		"chinese": "吃(ed形式)",
+		"nativeText": "đã ăn (ed dạng)",
 		"english": "eaten",
 		"soundmark": "/'itn/"
 	},
 	{
-		"chinese": "她(过去已经)吃",
+		"nativeText": "cô ấy đã ăn (quá khứ hoàn thành)",
 		"english": "she had eaten",
 		"soundmark": "/ʃi/ /hæd/ /'itn/"
 	},
 	{
-		"chinese": "晚饭",
+		"nativeText": "bữa tối",
 		"english": "dinner",
 		"soundmark": "/'dɪnɚ/"
 	},
 	{
-		"chinese": "她(过去已经)吃了晚饭",
+		"nativeText": "cô ấy đã ăn bữa tối",
 		"english": "she had eaten dinner",
 		"soundmark": "/ʃi/ /hæd/ /'itn/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "已经",
+		"nativeText": "đã rồi",
 		"english": "already",
 		"soundmark": "/ɔl'rɛdi/"
 	},
 	{
-		"chinese": "她(过去)已经吃了晚饭",
+		"nativeText": "cô ấy đã ăn bữa tối rồi",
 		"english": "she had already eaten dinner",
 		"soundmark": "/ʃi/ /hæd/ /ɔl'rɛdi/ /'itn/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to arrive",
 		"soundmark": "/tə/ /ə'raɪv/ /(过去)到达 arrived/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "我(过去)到达",
+		"nativeText": "tôi đã đến",
 		"english": "I arrived",
 		"soundmark": "/aɪ/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "家",
+		"nativeText": "nhà",
 		"english": "home",
 		"soundmark": "/hom/"
 	},
 	{
-		"chinese": "我(过去)到达家",
+		"nativeText": "tôi đã đến nhà",
 		"english": "I arrived home",
 		"soundmark": "/aɪ/ /ə'raɪvd/ /hom/"
 	},
 	{
-		"chinese": "当...的时候",
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我(过去)到达家的时候",
+		"nativeText": "khi tôi đã đến nhà",
 		"english": "when I arrived home",
 		"soundmark": "/wɛn/ /aɪ/ /ə'raɪvd/ /hom/"
 	},
 	{
-		"chinese": "她(过去)已经吃了晚饭",
+		"nativeText": "cô ấy đã ăn bữa tối rồi",
 		"english": "she had already eaten dinner",
 		"soundmark": "/ʃi/ /hæd/ /ɔl'rɛdi/ /'itn/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "当我(过去)到达家的时候她(过去)已经吃了晚饭",
+		"nativeText": "khi tôi đến nhà, cô ấy đã ăn bữa tối rồi",
 		"english": "she had already eaten dinner when I arrived home",
 		"soundmark": "/ʃi/ /hæd/ /ɔl'rɛdi/ /'itn/ /'dɪnɚ/ /wɛn/ /aɪ/ /ə'raɪvd/ /hom/"
 	},
 	{
-		"chinese": "阅读",
+		"nativeText": "đọc",
 		"english": "to read",
 		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "阅读(ed形式)",
+		"nativeText": "đã đọc (ed dạng)",
 		"english": "read",
 		"soundmark": "/rɛd/"
 	},
 	{
-		"chinese": "我(过去已经)阅读",
+		"nativeText": "tôi đã đọc (quá khứ hoàn thành)",
 		"english": "I had read",
 		"soundmark": "/aɪ/ /hæd/ /rɛd/"
 	},
 	{
-		"chinese": "那本书",
+		"nativeText": "cuốn sách đó",
 		"english": "the book",
 		"soundmark": "/ðə/ /bʊk/"
 	},
 	{
-		"chinese": "我(过去已经)阅读过那本书",
+		"nativeText": "tôi đã đọc cuốn sách đó",
 		"english": "I had read the book",
 		"soundmark": "/aɪ/ /hæd/ /rɛd/ /ðə/ /bʊk/"
 	},
 	{
-		"chinese": "改编",
+		"nativeText": "chuyển thể",
 		"english": "to adapt",
 		"soundmark": "/tə/ /əˈdæpt/"
 	},
 	{
-		"chinese": "改编",
+		"nativeText": "bản chuyển thể",
 		"english": "adaptation",
 		"soundmark": "/ˌædæpˈteʃn/"
 	},
 	{
-		"chinese": "那个电影",
+		"nativeText": "bộ phim đó",
 		"english": "the movie",
 		"soundmark": "/ðə/ /'muvi/"
 	},
 	{
-		"chinese": "那个电影改编",
+		"nativeText": "bản chuyển thể phim",
 		"english": "the movie adaptation",
 		"soundmark": "/ðə/ /'muvi/ /ˌædæpˈteʃn/"
 	},
 	{
-		"chinese": "看",
+		"nativeText": "xem",
 		"english": "to watch",
 		"soundmark": "/tə/ /wɑtʃ/"
 	},
 	{
-		"chinese": "(过去)看 ",
+		"nativeText": "đã xem",
 		"english": "watched",
 		"soundmark": "/wɑtʃt/"
 	},
 	{
-		"chinese": "(过去)看那个电影改编",
+		"nativeText": "đã xem bản chuyển thể phim",
 		"english": "watched the movie adaptation",
 		"soundmark": "/wɑtʃt/ /ðə/ /'muvi/ /ˌædæpˈteʃn/"
 	},
 	{
-		"chinese": "我(过去)看那个电影改编",
+		"nativeText": "tôi đã xem bản chuyển thể phim",
 		"english": "I watched the movie adaptation",
 		"soundmark": "/aɪ/ /wɑtʃt/ /ðə/ /'muvi/ /ˌædæpˈteʃn/"
 	},
 	{
-		"chinese": "在...之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在我(过去)看那个电影改编之前",
+		"nativeText": "trước khi tôi đã xem bản chuyển thể phim",
 		"english": "before I watched the movie adaptation",
 		"soundmark": "/bɪ'fɔr/ /aɪ/ /wɑtʃt/ /ðə/ /'muvi/ /ˌædæpˈteʃn/"
 	},
 	{
-		"chinese": "我(过去已经)阅读过那本书",
+		"nativeText": "tôi đã đọc cuốn sách đó",
 		"english": "I had read the book",
 		"soundmark": "/aɪ/ /hæd/ /rɛd/ /ðə/ /bʊk/"
 	},
 	{
-		"chinese": "在我(过去)看那个电影改编之前我(过去已经)阅读过那本书",
+		"nativeText": "trước khi tôi xem bản chuyển thể phim, tôi đã đọc cuốn sách đó",
 		"english": "I had read the book before I watched the movie adaptation",
 		"soundmark": "/aɪ/ /hæd/ /rɛd/ /ðə/ /bʊk/ /bɪ'fɔr/ /aɪ/ /wɑtʃt/ /ðə/ /'muvi/ /ˌædæpˈteʃn/"
 	}

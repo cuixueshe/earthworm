@@ -1,866 +1,866 @@
 [
 	{
-		"chinese": "解决",
+		"nativeText": "giải quyết",
 		"english": "to solve",
 		"soundmark": "/tə/ /sɑlv/"
 	},
 	{
-		"chinese": "解决办法",
+		"nativeText": "giải pháp",
 		"english": "solution",
 		"soundmark": "/səˈluʃn/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "那个问题的一个解决办法",
+		"nativeText": "một giải pháp cho vấn đề đó",
 		"english": "a solution to the problem",
 		"soundmark": "/ə/ /səˈluʃn/ /tə/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "找到",
+		"nativeText": "tìm thấy",
 		"english": "to find",
 		"soundmark": "/tə/ /faɪnd/"
 	},
 	{
-		"chinese": "找到(过去分词)",
+		"nativeText": "tìm thấy (quá khứ phân từ)",
 		"english": "found",
 		"soundmark": "/faʊnd/"
 	},
 	{
-		"chinese": "我们(已经)找到",
+		"nativeText": "chúng ta đã tìm thấy",
 		"english": "we have found",
 		"soundmark": "/wi/ /hæv/ /faʊnd/"
 	},
 	{
-		"chinese": "我们(已经)找到那个问题的一个解决办法",
+		"nativeText": "chúng ta đã tìm thấy một giải pháp cho vấn đề đó",
 		"english": "we have found a solution to the problem",
 		"soundmark": "/wi/ /hæv/ /faʊnd/ /ə/ /səˈluʃn/ /tə/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "我们(还没有)找到那个问题的一个解决办法",
+		"nativeText": "chúng ta chưa tìm thấy một giải pháp cho vấn đề đó",
 		"english": "we haven't found a solution to the problem",
 		"soundmark": "/wi/ /ˈhævnt/ /faʊnd/ /ə/ /səˈluʃn/ /tə/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "参观",
+		"nativeText": "thăm",
 		"english": "to visit",
 		"soundmark": "/tə/ /'vɪzɪt/"
 	},
 	{
-		"chinese": "参观(过去分词)",
+		"nativeText": "thăm (quá khứ phân từ)",
 		"english": "visited",
 		"soundmark": "/'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "他们(已经)参观过",
+		"nativeText": "họ đã thăm",
 		"english": "they have visited",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "博物馆",
+		"nativeText": "bảo tàng",
 		"english": "museum",
 		"soundmark": "/mjuˈziəm/"
 	},
 	{
-		"chinese": "那个博物馆",
+		"nativeText": "bảo tàng đó",
 		"english": "that museum",
 		"soundmark": "/ðæt/ /mjuˈziəm/"
 	},
 	{
-		"chinese": "他们(已经)参观过那个博物馆",
+		"nativeText": "họ đã thăm bảo tàng đó",
 		"english": "they have visited that museum",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/"
 	},
 	{
-		"chinese": "两次",
+		"nativeText": "hai lần",
 		"english": "twice",
 		"soundmark": "/twaɪs/"
 	},
 	{
-		"chinese": "他们(已经)参观过那个博物馆两次",
+		"nativeText": "họ đã thăm bảo tàng đó hai lần",
 		"english": "they have visited that museum twice",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/ /twaɪs/"
 	},
 	{
-		"chinese": "遗弃",
+		"nativeText": "bỏ rơi",
 		"english": "to abandon",
 		"soundmark": "/tə/ /əˈbændən/"
 	},
 	{
-		"chinese": "遗弃(过去分词)",
+		"nativeText": "bỏ rơi (quá khứ phân từ)",
 		"english": "abandoned",
 		"soundmark": "/ə'bændənd/"
 	},
 	{
-		"chinese": "被遗弃了",
+		"nativeText": "bị bỏ rơi",
 		"english": "be abandoned",
 		"soundmark": "/bi/ /ə'bændənd/"
 	},
 	{
-		"chinese": "那个博物馆",
+		"nativeText": "bảo tàng đó",
 		"english": "that museum",
 		"soundmark": "/ðæt/ /mjuˈziəm/"
 	},
 	{
-		"chinese": "那个博物馆被遗弃了",
+		"nativeText": "bảo tàng đó bị bỏ rơi",
 		"english": "that museum is abandoned",
 		"soundmark": "/ðæt/ /mjuˈziəm/ /ɪz/ /ə'bændənd/"
 	},
 	{
-		"chinese": "被遗弃了的",
+		"nativeText": "bị bỏ rơi",
 		"english": "abandoned",
 		"soundmark": "/ə'bændənd/"
 	},
 	{
-		"chinese": "那个博物馆",
+		"nativeText": "bảo tàng đó",
 		"english": "that museum",
 		"soundmark": "/ðæt/ /mjuˈziəm/"
 	},
 	{
-		"chinese": "那个被遗弃的博物馆",
+		"nativeText": "bảo tàng bị bỏ rơi đó",
 		"english": "that abandoned museum",
 		"soundmark": "/ðæt/ /ə'bændənd/ /mjuˈziəm/"
 	},
 	{
-		"chinese": "他们(已经)参观过那个被遗弃的博物馆两次",
+		"nativeText": "họ đã thăm bảo tàng bị bỏ rơi đó hai lần",
 		"english": "they have visited that abandoned museum twice",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /ə'bændənd/ /mjuˈziəm/ /twaɪs/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "今年",
+		"nativeText": "năm nay",
 		"english": "this year",
 		"soundmark": "/ðɪs/ /jɪr/"
 	},
 	{
-		"chinese": "他们今年(已经)参观过那个被遗弃的博物馆两次",
+		"nativeText": "năm nay họ đã thăm bảo tàng bị bỏ rơi đó hai lần",
 		"english": "they have visited that abandoned museum twice this year",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /ə'bændənd/ /mjuˈziəm/ /twaɪs/ /ðɪs/ /jɪr/"
 	},
 	{
-		"chinese": "许多",
+		"nativeText": "nhiều",
 		"english": "many",
 		"soundmark": "/'mɛni/"
 	},
 	{
-		"chinese": "次数",
+		"nativeText": "lần",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "多次",
+		"nativeText": "nhiều lần",
 		"english": "many times",
 		"soundmark": "/'mɛni/ /taɪmz/"
 	},
 	{
-		"chinese": "他们(已经)参观过那个被遗弃的博物馆多次",
+		"nativeText": "họ đã thăm bảo tàng bị bỏ rơi đó nhiều lần",
 		"english": "they have visited that abandoned museum many times",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðæt/ /ə'bændənd/ /mjuˈziəm/ /'mɛni/ /taɪmz/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "他们(还没)参观过那个博物馆",
+		"nativeText": "họ chưa thăm bảo tàng đó",
 		"english": "they haven't visited that museum",
 		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/"
 	},
 	{
-		"chinese": "以前",
+		"nativeText": "trước đây",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "他们以前(还没有)参观过那个博物馆",
+		"nativeText": "họ chưa từng thăm bảo tàng đó trước đây",
 		"english": "they haven't visited that museum before",
 		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðæt/ /mjuˈziəm/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "地",
+		"nativeText": "đất",
 		"english": "land",
 		"soundmark": "/lænd/"
 	},
 	{
-		"chinese": "标志",
+		"nativeText": "dấu",
 		"english": "mark",
 		"soundmark": "/mɑrk/"
 	},
 	{
-		"chinese": "地标",
+		"nativeText": "dấu mốc",
 		"english": "landmark",
 		"soundmark": "/ˈlændmɑrk/"
 	},
 	{
-		"chinese": "有名的",
+		"nativeText": "nổi tiếng",
 		"english": "famous",
 		"soundmark": "/'feməs/"
 	},
 	{
-		"chinese": "最",
+		"nativeText": "nhất",
 		"english": "the most",
 		"soundmark": "/ðə/ /most/"
 	},
 	{
-		"chinese": "最有名的",
+		"nativeText": "nổi tiếng nhất",
 		"english": "the most famous",
 		"soundmark": "/ðə/ /most/ /'feməs/"
 	},
 	{
-		"chinese": "最有名的地标",
+		"nativeText": "dấu mốc nổi tiếng nhất",
 		"english": "the most famous landmark",
 		"soundmark": "/ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "他们(已经)参观过",
+		"nativeText": "họ đã thăm",
 		"english": "they have visited",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "他们(已经)参观过那个最有名的地标",
+		"nativeText": "họ đã thăm dấu mốc nổi tiếng nhất",
 		"english": "they have visited the most famous landmark",
 		"soundmark": "/ðe/ /hæv/ /'vɪzɪtɪd/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "他们(还没有)参观过",
+		"nativeText": "họ chưa thăm",
 		"english": "they haven't visited",
 		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/"
 	},
 	{
-		"chinese": "他们(还没有)参观过那个最有名的地标",
+		"nativeText": "họ chưa thăm dấu mốc nổi tiếng nhất",
 		"english": "they haven't visited the most famous landmark",
 		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/"
 	},
 	{
-		"chinese": "以前",
+		"nativeText": "trước đây",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "他们以前(还没有)参观过那个最有名的地标",
+		"nativeText": "họ chưa từng thăm dấu mốc nổi tiếng nhất trước đây",
 		"english": "they haven't visited the most famous landmark before",
 		"soundmark": "/ðe/ /ˈhævnt/ /'vɪzɪtɪd/ /ðə/ /most/ /'feməs/ /ˈlændmɑrk/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "那个餐厅",
+		"nativeText": "nhà hàng",
 		"english": "the restaurant",
 		"soundmark": "/ðe/ /'rɛstrɑnt/"
 	},
 	{
-		"chinese": "新的",
+		"nativeText": "mới",
 		"english": "new",
 		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "那个新餐厅",
+		"nativeText": "nhà hàng mới",
 		"english": "the new restaurant",
 		"soundmark": "/ðə/ /nu/ /'rɛstrɑnt/"
 	},
 	{
-		"chinese": "城镇",
+		"nativeText": "thị trấn",
 		"english": "town",
 		"soundmark": "/taʊn/"
 	},
 	{
-		"chinese": "在镇上",
+		"nativeText": "ở thị trấn",
 		"english": "in town",
 		"soundmark": "/ɪn/ /taʊn/"
 	},
 	{
-		"chinese": "在镇上的那家新餐厅",
+		"nativeText": "nhà hàng mới ở thị trấn",
 		"english": "the new restaurant in town",
 		"soundmark": "/ðə/ /nu/ /'rɛstrɑnt/ /ɪn/ /taʊn/"
 	},
 	{
-		"chinese": "尝试",
+		"nativeText": "thử",
 		"english": "to try",
 		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "尝试(过去分词)",
+		"nativeText": "thử (quá khứ phân từ)",
 		"english": "tried",
 		"soundmark": "/traɪd/"
 	},
 	{
-		"chinese": "我们(已经)尝试了",
+		"nativeText": "chúng ta đã thử",
 		"english": "we have tried",
 		"soundmark": "/wi/ /hæv/ /traɪd/"
 	},
 	{
-		"chinese": "我们(已经)尝试了在镇上的那家新餐厅",
+		"nativeText": "chúng ta đã thử nhà hàng mới ở thị trấn",
 		"english": "we have tried the new restaurant in town",
 		"soundmark": "/wi/ /hæv/ /traɪd/ /ðə/ /nu/ /'rɛstrɑnt/ /ɪn/ /taʊn/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "我们(还没有)尝试在镇上的那家新餐厅",
+		"nativeText": "chúng ta chưa thử nhà hàng mới ở thị trấn",
 		"english": "we haven't tried the new restaurant in town",
 		"soundmark": "/wi/ /ˈhævnt/ /traɪd/ /ðə/ /nu/ /'rɛstrɑnt/ /ɪn/ /taʊn/"
 	},
 	{
-		"chinese": "见",
+		"nativeText": "gặp",
 		"english": "to meet",
 		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "见(过去分词)",
+		"nativeText": "gặp (quá khứ phân từ)",
 		"english": "met",
 		"soundmark": "/mɛt/"
 	},
 	{
-		"chinese": "他们(已经)见过",
+		"nativeText": "họ đã gặp",
 		"english": "they have met",
 		"soundmark": "/ðe/ /hæv/ /mɛt/"
 	},
 	{
-		"chinese": "邻居",
+		"nativeText": "hàng xóm",
 		"english": "neighbor",
 		"soundmark": "/ˈnebɚ/"
 	},
 	{
-		"chinese": "新的邻居",
+		"nativeText": "hàng xóm mới",
 		"english": "new neighbor",
 		"soundmark": "/nu/ /ˈnebɚ/"
 	},
 	{
-		"chinese": "他们的",
+		"nativeText": "của họ",
 		"english": "their",
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "他们的新邻居",
+		"nativeText": "hàng xóm mới của họ",
 		"english": "their new neighbors",
 		"soundmark": "/ðɛr/ /nu/ /ˈnebɚ/"
 	},
 	{
-		"chinese": "他们(已经)见过",
+		"nativeText": "họ đã gặp",
 		"english": "they have met",
 		"soundmark": "/ðe/ /hæv/ /mɛt/"
 	},
 	{
-		"chinese": "他们(已经)见过他们的新邻居",
+		"nativeText": "họ đã gặp hàng xóm mới của họ",
 		"english": "they have met their new neighbors",
 		"soundmark": "/ðe/ /hæv/ /mɛt/ /ðɛr/ /nu/ /ˈnebɚ/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "他们(还没有)见过他们的新邻居",
+		"nativeText": "họ chưa gặp hàng xóm mới của họ",
 		"english": "they haven't met their new neighbors",
 		"soundmark": "/ðe/ /ˈhævnt/ /mɛt/ /ðɛr/ /nu/ /ˈnebɚ/"
 	},
 	{
-		"chinese": "参加",
+		"nativeText": "tham gia",
 		"english": "to attend",
 		"soundmark": "/tə/ /əˈtɛnd/"
 	},
 	{
-		"chinese": "参加(过去分词)",
+		"nativeText": "tham gia (quá khứ phân từ)",
 		"english": "attended",
 		"soundmark": "/əˈtɛndɪd/"
 	},
 	{
-		"chinese": "她(已经)参加过",
+		"nativeText": "cô ấy đã tham gia",
 		"english": "she has attended",
 		"soundmark": "/ʃi/ /hæz/ /əˈtɛndɪd/"
 	},
 	{
-		"chinese": "课程",
+		"nativeText": "lớp học",
 		"english": "class",
 		"soundmark": "/klæs/"
 	},
 	{
-		"chinese": "瑜伽",
+		"nativeText": "yoga",
 		"english": "yoga",
 		"soundmark": "/ˈjoɡə/"
 	},
 	{
-		"chinese": "一个瑜伽课程",
+		"nativeText": "một lớp yoga",
 		"english": "a yoga class",
 		"soundmark": "/ə/ /ˈjoɡə/ /klæs/"
 	},
 	{
-		"chinese": "她(已经)参加过一个瑜伽课程",
+		"nativeText": "cô ấy đã tham gia một lớp yoga",
 		"english": "she has attended a yoga class",
 		"soundmark": "/ʃi/ /hæz/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "hasn't",
 		"soundmark": "/ˈhæzənt/"
 	},
 	{
-		"chinese": "她(还没)参加过一个瑜伽课程",
+		"nativeText": "cô ấy chưa tham gia một lớp yoga",
 		"english": "she hasn't attended a yoga class",
 		"soundmark": "/ʃi/ /ˈhæzənt/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/"
 	},
 	{
-		"chinese": "以前",
+		"nativeText": "trước đây",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "她以前(还没有)参加过一个瑜伽课程",
+		"nativeText": "cô ấy chưa từng tham gia một lớp yoga trước đây",
 		"english": "she hasn't attended a yoga class before",
 		"soundmark": "/ʃi/ /ˈhæzənt/ /əˈtɛndɪd/ /ə/ /ˈjoɡə/ /klæs/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "修理",
+		"nativeText": "sửa",
 		"english": "to fix",
 		"soundmark": "/tə/ /fɪks/"
 	},
 	{
-		"chinese": "修理(过去分词)",
+		"nativeText": "sửa (quá khứ phân từ)",
 		"english": "fixed",
 		"soundmark": "/fɪkst/"
 	},
 	{
-		"chinese": "他(已经)修理了",
+		"nativeText": "anh ấy đã sửa",
 		"english": "he has fixed",
 		"soundmark": "/hi/ /hæz/ /fɪkst/"
 	},
 	{
-		"chinese": "那个窗户",
+		"nativeText": "cái cửa sổ đó",
 		"english": "the window",
 		"soundmark": "/ðə/ /'wɪndo/"
 	},
 	{
-		"chinese": "他(已经)修理了那个窗户",
+		"nativeText": "anh ấy đã sửa cái cửa sổ đó",
 		"english": "he has fixed the window",
 		"soundmark": "/hi/ /hæz/ /fɪkst/ /ðə/ /'wɪndo/"
 	},
 	{
-		"chinese": "打破",
+		"nativeText": "làm vỡ",
 		"english": "to break",
 		"soundmark": "/tə/ /brek/"
 	},
 	{
-		"chinese": "打破(过去分词)",
+		"nativeText": "làm vỡ (quá khứ phân từ)",
 		"english": "broken",
 		"soundmark": "/'brokən/"
 	},
 	{
-		"chinese": "被打破",
+		"nativeText": "bị vỡ",
 		"english": "be broken",
 		"soundmark": "/bi/ /'brokən/"
 	},
 	{
-		"chinese": "那个窗户",
+		"nativeText": "cái cửa sổ đó",
 		"english": "the window",
 		"soundmark": "/ðə/ /'wɪndo/"
 	},
 	{
-		"chinese": "那个窗户被打破了",
+		"nativeText": "cái cửa sổ đó bị vỡ",
 		"english": "the window is broken",
 		"soundmark": "/ðə/ /'wɪndo/ /ɪz/ /'brokən/"
 	},
 	{
-		"chinese": "被打破的",
+		"nativeText": "bị vỡ",
 		"english": "broken",
 		"soundmark": "/'brokən/"
 	},
 	{
-		"chinese": "那个被打破了的窗户",
+		"nativeText": "cái cửa sổ bị vỡ đó",
 		"english": "the broken window",
 		"soundmark": "/ðə/ /'brokən/ /'wɪndo/"
 	},
 	{
-		"chinese": "他(已经)修理了那个被打破的窗户",
+		"nativeText": "anh ấy đã sửa cái cửa sổ bị vỡ đó",
 		"english": "he has fixed the broken window",
 		"soundmark": "/hi/ /hæz/ /fɪkst/ /ðə/ /'brokən/ /'wɪndo/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "hasn't",
 		"soundmark": "/ˈhæzənt/"
 	},
 	{
-		"chinese": "他(还没有)修理那个被打破的窗户",
+		"nativeText": "anh ấy chưa sửa cái cửa sổ bị vỡ đó",
 		"english": "he hasn't fixed the broken window",
 		"soundmark": "/hi/ /ˈhæzənt/ /fɪkst/ /ðə/ /'brokən/ /'wɪndo/"
 	},
 	{
-		"chinese": "收到",
+		"nativeText": "nhận",
 		"english": "to receive",
 		"soundmark": "/tə/ /rɪ'siv/"
 	},
 	{
-		"chinese": "收到(过去分词)",
+		"nativeText": "nhận (quá khứ phân từ)",
 		"english": "received",
 		"soundmark": "/rɪ'sivd/"
 	},
 	{
-		"chinese": "他(已经)收到",
+		"nativeText": "anh ấy đã nhận",
 		"english": "he has received",
 		"soundmark": "/hi/ /hæz/ /rɪ'sivd/"
 	},
 	{
-		"chinese": "那个电子邮件",
+		"nativeText": "email đó",
 		"english": "the email",
 		"soundmark": "/ði/ /ˈimel/"
 	},
 	{
-		"chinese": "他(已经)收到那个电子邮件",
+		"nativeText": "anh ấy đã nhận email đó",
 		"english": "he has received the email",
 		"soundmark": "/hi/ /hæz/ /rɪ'sivd/ /ði/ /ˈimel/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "hasn't",
 		"soundmark": "/ˈhæzənt/"
 	},
 	{
-		"chinese": "他(还没有)收到那个电子邮件",
+		"nativeText": "anh ấy chưa nhận email đó",
 		"english": "he hasn't received the email",
 		"soundmark": "/hi/ /ˈhæzənt/ /rɪ'sivd/ /ði/ /ˈimel/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "完成(过去分词)",
+		"nativeText": "hoàn thành (quá khứ phân từ)",
 		"english": "finished",
 		"soundmark": "/'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他(已经)完成了",
+		"nativeText": "anh ấy đã hoàn thành",
 		"english": "he has finished",
 		"soundmark": "/hi/ /hæz/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "homework",
 		"soundmark": "/'homwɝk/"
 	},
 	{
-		"chinese": "他的家庭作业",
+		"nativeText": "bài tập về nhà của anh ấy",
 		"english": "his homework",
 		"soundmark": "/hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "他(已经)完成了他的家庭作业",
+		"nativeText": "anh ấy đã hoàn thành bài tập về nhà của anh ấy",
 		"english": "he has finished his homework",
 		"soundmark": "/hi/ /hæz/ /'fɪnɪʃt/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "hasn't",
 		"soundmark": "/ˈhæzənt/"
 	},
 	{
-		"chinese": "他(还没有)完成他的家庭作业",
+		"nativeText": "anh ấy chưa hoàn thành bài tập về nhà của anh ấy",
 		"english": "he hasn't finished his homework",
 		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/ /hɪz/ /'homwɝk/"
 	},
 	{
-		"chinese": "那份报告",
+		"nativeText": "báo cáo đó",
 		"english": "the report",
 		"soundmark": "/ðə/ /rɪ'pɔrt/"
 	},
 	{
-		"chinese": "写",
+		"nativeText": "viết",
 		"english": "to write",
 		"soundmark": "/tə/ /raɪt/"
 	},
 	{
-		"chinese": "写那份报告",
+		"nativeText": "viết báo cáo đó",
 		"english": "to write the report",
 		"soundmark": "/tə/ /raɪt/ /ðə/ /rɪ'pɔrt/"
 	},
 	{
-		"chinese": "写(ing形式)",
+		"nativeText": "viết (dạng V-ing)",
 		"english": "writing",
 		"soundmark": "/'raɪtɪŋ/"
 	},
 	{
-		"chinese": "写那份报告(ing形式)",
+		"nativeText": "viết báo cáo đó (dạng V-ing)",
 		"english": "writing the report",
 		"soundmark": "/'raɪtɪŋ/ /ðə/ /rɪ'pɔrt/"
 	},
 	{
-		"chinese": "他(还没有)完成",
+		"nativeText": "anh ấy chưa hoàn thành",
 		"english": "he hasn't finished",
 		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他(还没有)完成写那份报告",
+		"nativeText": "anh ấy chưa hoàn thành việc viết báo cáo đó",
 		"english": "he hasn't finished writing the report",
 		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/ /'raɪtɪŋ/ /ðə/ /rɪ'pɔrt/"
 	},
 	{
-		"chinese": "阅读",
+		"nativeText": "đọc",
 		"english": "to read",
 		"soundmark": "/tə/ /rid/"
 	},
 	{
-		"chinese": "那本小说",
+		"nativeText": "cuốn tiểu thuyết đó",
 		"english": "the novel",
 		"soundmark": "/ðə/ /ˈnɑvl/"
 	},
 	{
-		"chinese": "阅读那本小说",
+		"nativeText": "đọc cuốn tiểu thuyết đó",
 		"english": "to read the novel",
 		"soundmark": "/tə/ /rid/ /ðə/ /ˈnɑvl/"
 	},
 	{
-		"chinese": "阅读(ing形式)",
+		"nativeText": "đọc (dạng V-ing)",
 		"english": "reading",
 		"soundmark": "/'ridɪŋ/"
 	},
 	{
-		"chinese": "阅读那本小说(ing形式)",
+		"nativeText": "đọc cuốn tiểu thuyết đó (dạng V-ing)",
 		"english": "reading the novel",
 		"soundmark": "/'ridɪŋ/ /ðə/ /ˈnɑvl/"
 	},
 	{
-		"chinese": "他(还没有)完成",
+		"nativeText": "anh ấy chưa hoàn thành",
 		"english": "he hasn't finished",
 		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "他(还没有)完成阅读那本小说",
+		"nativeText": "anh ấy chưa hoàn thành việc đọc cuốn tiểu thuyết đó",
 		"english": "he hasn't finished reading the novel",
 		"soundmark": "/hi/ /ˈhæzənt/ /'fɪnɪʃt/ /'ridɪŋ/ /ðə/ /ˈnɑvl/"
 	},
 	{
-		"chinese": "树",
+		"nativeText": "cây",
 		"english": "tree",
 		"soundmark": "/tri/"
 	},
 	{
-		"chinese": "圣诞节",
+		"nativeText": "Giáng sinh",
 		"english": "Christmas",
 		"soundmark": "/ˈkrɪsməs/"
 	},
 	{
-		"chinese": "一棵圣诞树",
+		"nativeText": "một cây Giáng sinh",
 		"english": "a Christmas tree",
 		"soundmark": "/ə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "买一棵圣诞树",
+		"nativeText": "mua một cây Giáng sinh",
 		"english": "to buy a Christmas tree",
 		"soundmark": "/tə/ /baɪ/ /ə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "买(过去分词)",
+		"nativeText": "mua (quá khứ phân từ)",
 		"english": "bought",
 		"soundmark": "/bɔt/"
 	},
 	{
-		"chinese": "他(已经)买了",
+		"nativeText": "anh ấy đã mua",
 		"english": "he has bought",
 		"soundmark": "/hi/ /hæz/ /bɔt/"
 	},
 	{
-		"chinese": "他(已经)买了一棵圣诞树",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh",
 		"english": "he has bought a Christmas tree",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "家庭",
+		"nativeText": "gia đình",
 		"english": "family",
 		"soundmark": "/ˈfæməli/"
 	},
 	{
-		"chinese": "他的家庭",
+		"nativeText": "gia đình của anh ấy",
 		"english": "his family",
 		"soundmark": "/hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "为了他的家庭",
+		"nativeText": "cho gia đình của anh ấy",
 		"english": "for his family",
 		"soundmark": "/fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy",
 		"english": "he has bought a Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "装饰",
+		"nativeText": "trang trí",
 		"english": "to decorate",
 		"soundmark": "/tə/ /ˈdɛkəret/"
 	},
 	{
-		"chinese": "装饰(过去分词)",
+		"nativeText": "trang trí (quá khứ phân từ)",
 		"english": "decorated",
 		"soundmark": "/ˈdɛkəretɪd/"
 	},
 	{
-		"chinese": "被装饰",
+		"nativeText": "được trang trí",
 		"english": "be decorated",
 		"soundmark": "/bi/ /ˈdɛkəretɪd/"
 	},
 	{
-		"chinese": "那棵圣诞树",
+		"nativeText": "cây Giáng sinh đó",
 		"english": "the Christmas tree",
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "那棵圣诞树被装饰了的",
+		"nativeText": "cây Giáng sinh đó đã được trang trí rồi",
 		"english": "the Christmas tree is decorated",
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/ /ɪz/ /ˈdɛkəretɪd/"
 	},
 	{
-		"chinese": "一棵被装饰的圣诞树",
+		"nativeText": "một cây Giáng sinh đã được trang trí",
 		"english": "a decorated Christmas tree",
 		"soundmark": "/ə/ /ˈdɛkəretɪd/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵装饰好了的圣诞树",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh đã trang trí cho gia đình của anh ấy",
 		"english": "he has bought a decorated Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈdɛkəretɪd/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "装饰",
+		"nativeText": "trang trí",
 		"english": "to decorate",
 		"soundmark": "/tə/ /ˈdɛkəret/"
 	},
 	{
-		"chinese": "装饰(过去分词)",
+		"nativeText": "trang trí (quá khứ phân từ)",
 		"english": "decorated",
 		"soundmark": "/ˈdɛkəretɪd/"
 	},
 	{
-		"chinese": "他(已经)装饰了",
+		"nativeText": "anh ấy đã trang trí",
 		"english": "he has decorated",
 		"soundmark": "/hi/ /hæz/ /ˈdɛkəretɪd/"
 	},
 	{
-		"chinese": "那棵圣诞树",
+		"nativeText": "cây Giáng sinh đó",
 		"english": "the Christmas tree",
 		"soundmark": "/ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他(已经)装饰了那棵圣诞树",
+		"nativeText": "anh ấy đã trang trí cây Giáng sinh đó",
 		"english": "he has decorated the Christmas tree",
 		"soundmark": "/hi/ /hæz/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "hasn't",
 		"soundmark": "/ˈhæzənt/"
 	},
 	{
-		"chinese": "他(还没有)装饰那棵圣诞树",
+		"nativeText": "anh ấy chưa trang trí cây Giáng sinh đó",
 		"english": "he hasn't decorated the Christmas tree",
 		"soundmark": "/hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bʌt/"
 	},
 	{
-		"chinese": "但是他(还没有)装饰那棵圣诞树",
+		"nativeText": "nhưng anh ấy chưa trang trí cây Giáng sinh đó",
 		"english": "but he hasn't decorated the Christmas tree",
 		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy",
 		"english": "he has bought a Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰那棵圣诞树",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy nhưng anh ấy chưa trang trí cây Giáng sinh đó",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated the Christmas tree",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ðə/ /ˈkrɪsməs/ /tri/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是他(还没有)装饰它",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy nhưng anh ấy chưa trang trí nó",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated it",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/"
 	},
 	{
-		"chinese": "迄今为止",
+		"nativeText": "cho đến nay",
 		"english": "yet",
 		"soundmark": "/jɛt/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy nhưng cho đến nay anh ấy chưa trang trí nó",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated it yet",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/"
 	},
 	{
-		"chinese": "繁忙的",
+		"nativeText": "bận rộn",
 		"english": "busy",
 		"soundmark": "/'bɪzi/"
 	},
 	{
-		"chinese": "他是繁忙的",
+		"nativeText": "anh ấy bận rộn",
 		"english": "he is busy",
 		"soundmark": "/hi/ /ɪz/ /'bɪzi/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "quá",
 		"english": "too",
 		"soundmark": "/tu/"
 	},
 	{
-		"chinese": "他是非常忙的",
+		"nativeText": "anh ấy quá bận rộn",
 		"english": "he is too busy",
 		"soundmark": "/hi/ /ɪz/ /tu/ /'bɪzi/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为他太忙了",
+		"nativeText": "bởi vì anh ấy quá bận rộn",
 		"english": "because he is too busy",
 		"soundmark": "/bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
 	},
 	{
-		"chinese": "但是迄今为止他(还没有)装饰它",
+		"nativeText": "nhưng cho đến nay anh ấy chưa trang trí nó",
 		"english": "but he hasn't decorated it yet",
 		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/"
 	},
 	{
-		"chinese": "但是迄今为止他(还没有)装饰它因为他太忙了",
+		"nativeText": "nhưng cho đến nay anh ấy chưa trang trí nó bởi vì anh ấy quá bận rộn",
 		"english": "but he hasn't decorated it yet because he is too busy",
 		"soundmark": "/bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy",
 		"english": "he has bought a Christmas tree for his family",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/"
 	},
 	{
-		"chinese": "他为了他的家庭(已经)买了一棵圣诞树但是迄今为止他(还没有)装饰它因为他太忙了",
+		"nativeText": "anh ấy đã mua một cây Giáng sinh cho gia đình của anh ấy nhưng cho đến nay anh ấy chưa trang trí nó bởi vì anh ấy quá bận rộn",
 		"english": "he has bought a Christmas tree for his family but he hasn't decorated it yet because he is too busy",
 		"soundmark": "/hi/ /hæz/ /bɔt/ /ə/ /ˈkrɪsməs/ /tri/ /fɝ/ /hɪz/ /ˈfæməli/ /bʌt/ /hi/ /ˈhæzənt/ /ˈdɛkəretɪd/ /ɪt/ /jɛt/ /bɪ'kɔz/ /hi/ /ɪz/ /tu/ /'bɪzi/"
 	}

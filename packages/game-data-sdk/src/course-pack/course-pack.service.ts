@@ -47,9 +47,9 @@ export async function createCoursePack(coursePackInfo: CreateCoursePack) {
       courseIds.push(courseEntity.id.toString());
 
       const createStatementTasks = course.statements.map(
-        ({ chinese, english, phonetic }, sIndex) => {
+        ({ nativeText, english, phonetic }, sIndex) => {
           return tx.insert(statementSchema).values({
-            chinese,
+            nativeText,
             english,
             soundmark: phonetic,
             order: sIndex + 1,
@@ -105,8 +105,8 @@ export async function deleteCoursePack(coursePackId: string) {
     await tx.delete(courseSchema).where(eq(courseSchema.coursePackId, coursePackId));
     await tx.delete(coursePackSchema).where(eq(coursePackSchema.id, coursePackId));
 
-    // 还需要删除 course_history
-    // 和 user_course_progress 里面的记录
+    // Also need to delete course_history
+    // and records in user_course_progress
     await tx.delete(courseHistorySchema).where(eq(courseHistorySchema.coursePackId, coursePackId));
 
     await tx
@@ -145,7 +145,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
         coursePackInfo.courses.map((course) => [course.publishCourseId, course]),
       );
 
-      // 新的在老的里面存在  那么更新
+      // If the new course exists in the old courses, update it
       for (const [newCourseIndex, newCourseInfo] of coursePackInfo.courses.entries()) {
         if (oldCourseMap.has(newCourseInfo.publishCourseId)) {
           // Update existing course
@@ -164,7 +164,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
           await _updateStatements(newCourseInfo.publishCourseId, newCourseInfo.statements);
         } else {
           // Create new course
-          // 新的在老的里面不存在 那么创建
+          // If the new course does not exist in the old courses, create it
           const [courseEntity] = await tx
             .insert(courseSchema)
             .values({
@@ -183,9 +183,9 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
           courseIds.push(courseEntity.id.toString());
 
           const createStatementTasks = newCourseInfo.statements.map(
-            async ({ chinese, english, phonetic }, sIndex) => {
+            async ({ nativeText, english, phonetic }, sIndex) => {
               return tx.insert(statementSchema).values({
-                chinese,
+                nativeText,
                 english,
                 soundmark: phonetic,
                 order: sIndex + 1,
@@ -198,7 +198,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
         }
       }
 
-      // 老的在新的里面不存在 那么删除
+      // If an old course does not exist in the new courses, delete it
       for (const oldCourse of oldCourses) {
         if (!newCourseMap.has(oldCourse.id)) {
           // Delete course if it is not in the new course pack info
@@ -246,7 +246,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
           .update(statementSchema)
           .set({
             english: newStatementInfo.english,
-            chinese: newStatementInfo.chinese,
+            nativeText: newStatementInfo.nativeText,
             soundmark: newStatementInfo.phonetic,
           })
           .where(eq(statementSchema.id, oldStatement.id));
@@ -255,12 +255,12 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
         newIndex++;
       }
 
-      // 如果新的课程statements更多，创建剩余的新课程
+      // If there are more new statements than old ones, create the remaining new statements
       while (newIndex < newStatements.length) {
         const newStatementInfo = newStatements[newIndex];
         await tx.insert(statementSchema).values({
           english: newStatementInfo.english,
-          chinese: newStatementInfo.chinese,
+          nativeText: newStatementInfo.nativeText,
           soundmark: newStatementInfo.phonetic,
           order: newIndex + 1,
           courseId,
@@ -268,7 +268,7 @@ export async function updateCoursePack(coursePackId: string, coursePackInfo: Upd
         newIndex++;
       }
 
-      // 如果旧的课程信息更多，删除剩余的旧课程
+      // If there are more old statements than new ones, delete the remaining old statements
       while (oldIndex < oldStatements.length) {
         const oldStatement = oldStatements[oldIndex];
         await tx.delete(statementSchema).where(and(eq(statementSchema.id, oldStatement.id)));

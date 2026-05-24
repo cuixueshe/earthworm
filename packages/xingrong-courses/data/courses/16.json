@@ -1,676 +1,676 @@
 [
 	{
-		"chinese": "聚会",
+		"nativeText": "bữa tiệc",
 		"english": "the party",
 		"soundmark": "/ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "参加；加入",
+		"nativeText": "tham gia",
 		"english": "to join",
 		"soundmark": "/tə/ /dʒɔɪn/"
 	},
 	{
-		"chinese": "参加聚会",
+		"nativeText": "tham gia bữa tiệc",
 		"english": "to join the party",
 		"soundmark": "/tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "邀请",
+		"nativeText": "mời",
 		"english": "to invite",
 		"soundmark": "/tə/ /'ɪnvaɪt/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "邀请她",
+		"nativeText": "mời cô ấy",
 		"english": "to invite her",
 		"soundmark": "/tə/ /'ɪnvaɪt/ /hɚ/"
 	},
 	{
-		"chinese": "参加聚会",
+		"nativeText": "tham gia bữa tiệc",
 		"english": "to join the party",
 		"soundmark": "/tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "邀请她参加聚会",
+		"nativeText": "mời cô ấy tham gia bữa tiệc",
 		"english": "to invite her to join the party",
 		"soundmark": "/tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "我们想要",
+		"nativeText": "chúng ta muốn",
 		"english": "we want",
 		"soundmark": "/wi/ /wɑnt/"
 	},
 	{
-		"chinese": "我们想要邀请她参加聚会",
+		"nativeText": "chúng ta muốn mời cô ấy tham gia bữa tiệc",
 		"english": "we want to invite her to join the party",
 		"soundmark": "/wi/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "我们不想邀请她参加聚会",
+		"nativeText": "chúng ta không muốn mời cô ấy tham gia bữa tiệc",
 		"english": "we don't want to invite her to join the party",
 		"soundmark": "/wi/ /dont/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "我们（过去）想要邀请她参加聚会",
+		"nativeText": "chúng ta đã muốn mời cô ấy tham gia bữa tiệc",
 		"english": "we wanted to invite her to join the party",
 		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "昨天",
+		"nativeText": "hôm qua",
 		"english": "yesterday",
 		"soundmark": "/'jɛstɚde/"
 	},
 	{
-		"chinese": "我们昨天想要邀请她参加聚会",
+		"nativeText": "hôm qua chúng ta đã muốn mời cô ấy tham gia bữa tiệc",
 		"english": "we wanted to invite her to join the party yesterday",
 		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "我们昨天不想邀请她参加聚会",
+		"nativeText": "hôm qua chúng ta đã không muốn mời cô ấy tham gia bữa tiệc",
 		"english": "we didn't want to invite her to join the party yesterday",
 		"soundmark": "/wi/ /ˈdɪdnt/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "我们邀请她参加聚会",
+		"nativeText": "chúng ta mời cô ấy tham gia bữa tiệc",
 		"english": "we invite her to join the party",
 		"soundmark": "/wi/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "经常",
+		"nativeText": "thường xuyên",
 		"english": "often",
 		"soundmark": "/'ɔfn/"
 	},
 	{
-		"chinese": "我们经常邀请她参加聚会",
+		"nativeText": "chúng ta thường xuyên mời cô ấy tham gia bữa tiệc",
 		"english": "we often invite her to join the party",
 		"soundmark": "/wi/ /'ɔfn/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "我们（过去）邀请她参加聚会",
+		"nativeText": "chúng ta đã mời cô ấy tham gia bữa tiệc",
 		"english": "we invited her to join the party",
 		"soundmark": "/wi/ /'ɪnvaɪtɪd/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "我们（过去）没有邀请她参加聚会",
+		"nativeText": "chúng ta đã không mời cô ấy tham gia bữa tiệc",
 		"english": "we didn't invite her to join the party",
 		"soundmark": "/wi/ /ˈdɪdnt/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "参加；加入",
+		"nativeText": "tham gia",
 		"english": "to join",
 		"soundmark": "/tə/ /dʒɔɪn/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "us",
 		"soundmark": "/ʌs/"
 	},
 	{
-		"chinese": "加入我们",
+		"nativeText": "tham gia cùng chúng ta",
 		"english": "to join us",
 		"soundmark": "/tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她想要加入我们",
+		"nativeText": "cô ấy muốn tham gia cùng chúng ta",
 		"english": "she wants to join us",
 		"soundmark": "/ʃi/ /wɑnts/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "她（过去）想要加入我们",
+		"nativeText": "cô ấy đã muốn tham gia cùng chúng ta",
 		"english": "she wanted to join us",
 		"soundmark": "/ʃi/ /wɑntɪd/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "真的",
+		"nativeText": "thật sự",
 		"english": "really",
 		"soundmark": "/'rili/"
 	},
 	{
-		"chinese": "她真的（过去）想要加入我们",
+		"nativeText": "cô ấy thật sự đã muốn tham gia cùng chúng ta",
 		"english": "she really wanted to join us",
 		"soundmark": "/ʃi/ /'rili/ /wɑntɪd/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "她（过去）不想加入我们",
+		"nativeText": "cô ấy đã không muốn tham gia cùng chúng ta",
 		"english": "she didn't want to join us",
 		"soundmark": "/ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bət/"
 	},
 	{
-		"chinese": "但是她（过去）不想加入我们",
+		"nativeText": "nhưng cô ấy đã không muốn tham gia cùng chúng ta",
 		"english": "but she didn't want to join us",
 		"soundmark": "/bət/ /ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "我们昨天想要邀请她参加聚会",
+		"nativeText": "hôm qua chúng ta đã muốn mời cô ấy tham gia bữa tiệc",
 		"english": "we wanted to invite her to join the party yesterday",
 		"soundmark": "/wi/ /wɑntɪd/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "但是她（过去）不想加入我们",
+		"nativeText": "nhưng cô ấy đã không muốn tham gia cùng chúng ta",
 		"english": "but she didn't want to join us",
 		"soundmark": "/bət/ /ʃi/ /ˈdɪdnt/ /wɑnt/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "我们昨天不想邀请她参加聚会但是她真的（过去）想要加入我们",
+		"nativeText": "hôm qua chúng ta đã không muốn mời cô ấy tham gia bữa tiệc nhưng cô ấy thật sự đã muốn tham gia cùng chúng ta",
 		"english": "we didn't want to invite her to join the party yesterday but she really wanted to join us",
 		"soundmark": "/wi/ /ˈdɪdnt/ /wɑnt/ /tə/ /'ɪnvaɪt/ /hɚ/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /'jɛstɚde/ /bət/ /ʃi/ /'rili/ /wɑntɪd/ /tə/ /dʒɔɪn/ /ʌs/"
 	},
 	{
-		"chinese": "拒绝",
+		"nativeText": "từ chối",
 		"english": "to refuse",
 		"soundmark": "/tə/ /ri'fjuz/"
 	},
 	{
-		"chinese": "她（过去）拒绝",
+		"nativeText": "cô ấy đã từ chối",
 		"english": "she refused",
 		"soundmark": "/ʃi/ /ri'fjuzd/"
 	},
 	{
-		"chinese": "参加聚会",
+		"nativeText": "tham gia bữa tiệc",
 		"english": "to join the party",
 		"soundmark": "/tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "她（过去）拒绝参加聚会",
+		"nativeText": "cô ấy đã từ chối tham gia bữa tiệc",
 		"english": "she refused to join the party",
 		"soundmark": "/ʃi/ /ri'fjuzd/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "她（过去）没有拒绝参加聚会",
+		"nativeText": "cô ấy đã không từ chối tham gia bữa tiệc",
 		"english": "she didn't refuse to join the party",
 		"soundmark": "/ʃi/ /ˈdɪdnt/ /ri'fjuz/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/"
 	},
 	{
-		"chinese": "时间",
+		"nativeText": "thời gian",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "拥有",
+		"nativeText": "có",
 		"english": "have",
 		"soundmark": "/hæv/"
 	},
 	{
-		"chinese": "她有时间",
+		"nativeText": "cô ấy có thời gian",
 		"english": "she has time",
 		"soundmark": "/ʃi/ /hæz/ /taɪm/"
 	},
 	{
-		"chinese": "足够的",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "她有足够的时间",
+		"nativeText": "cô ấy có đủ thời gian",
 		"english": "she has enough time",
 		"soundmark": "/ʃi/ /hæz/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "她（过去）有足够的时间",
+		"nativeText": "cô ấy đã có đủ thời gian",
 		"english": "she had enough time",
 		"soundmark": "/ʃi/ /hæd/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "她（过去）没有足够的时间",
+		"nativeText": "cô ấy đã không có đủ thời gian",
 		"english": "she didn't have enough time",
 		"soundmark": "/ʃi/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为她（过去）没有足够的时间",
+		"nativeText": "bởi vì cô ấy đã không có đủ thời gian",
 		"english": "because she didn't have enough time",
 		"soundmark": "/bɪ'kɔz/ /ʃi/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "她（过去）拒绝参加聚会因为她（过去）没有足够的时间",
+		"nativeText": "cô ấy đã từ chối tham gia bữa tiệc bởi vì cô ấy đã không có đủ thời gian",
 		"english": "she refused to join the party because she didn't have enough time",
 		"soundmark": "/ʃi/ /ri'fjuzd/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /bɪ'kɔz/ /ʃi/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "她（过去）没有拒绝参加聚会因为她（过去）有足够的时间",
+		"nativeText": "cô ấy đã không từ chối tham gia bữa tiệc bởi vì cô ấy đã có đủ thời gian",
 		"english": "she didn't refuse to join the party because she had enough time",
 		"soundmark": "/ʃi/ /ˈdɪdnt/ /ri'fjuz/ /tə/ /dʒɔɪn/ /ðə/ /'pɑrti/ /bɪ'kɔz/ /ʃi/ /hæd/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "接受；承担",
+		"nativeText": "chấp nhận",
 		"english": "to accept",
 		"soundmark": "/tə/ /ək'sɛpt/"
 	},
 	{
-		"chinese": "责任",
+		"nativeText": "trách nhiệm",
 		"english": "the responsibility",
 		"soundmark": "/ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "承担责任",
+		"nativeText": "chấp nhận trách nhiệm",
 		"english": "to accept the responsibility",
 		"soundmark": "/tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "拒绝",
+		"nativeText": "từ chối",
 		"english": "to refuse",
 		"soundmark": "/tə/ /ri'fjuz/"
 	},
 	{
-		"chinese": "他拒绝承担责任",
+		"nativeText": "anh ấy từ chối chấp nhận trách nhiệm",
 		"english": "he refuses to accept the responsibility",
 		"soundmark": "/hi/ /ri'fjuzɪz/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "他（过去）拒绝承担责任",
+		"nativeText": "anh ấy đã từ chối chấp nhận trách nhiệm",
 		"english": "he refused to accept the responsibility",
 		"soundmark": "/hi/ /ri'fjuzd/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "他（过去）没有拒绝承担责任",
+		"nativeText": "anh ấy đã không từ chối chấp nhận trách nhiệm",
 		"english": "he didn't refuse to accept the responsibility",
 		"soundmark": "/hi/ /ˈdɪdnt/ /ri'fjuz/ /tə/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "他承担责任",
+		"nativeText": "anh ấy chấp nhận trách nhiệm",
 		"english": "he accepts the responsibility",
 		"soundmark": "/hi/ /ək'sɛpts/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "承担了",
+		"nativeText": "đã chấp nhận",
 		"english": "accepted",
 		"soundmark": "/ək'sɛptɪd/"
 	},
 	{
-		"chinese": "他承担了责任",
+		"nativeText": "anh ấy đã chấp nhận trách nhiệm",
 		"english": "he accepted the responsibility",
 		"soundmark": "/hi/ /ək'sɛptɪd/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "他（过去）没有承担责任",
+		"nativeText": "anh ấy đã không chấp nhận trách nhiệm",
 		"english": "he didn't accept the responsibility",
 		"soundmark": "/hi/ /ˈdɪdnt/ /ək'sɛpt/ /ðə/ /rɪspɑnsə'bɪləti/"
 	},
 	{
-		"chinese": "驾驶；开车",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "如何开车",
+		"nativeText": "lái xe như thế nào",
 		"english": "how to drive",
 		"soundmark": "/haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "学习",
+		"nativeText": "học",
 		"english": "to learn",
 		"soundmark": "/tə/ /lɝn/"
 	},
 	{
-		"chinese": "学习如何开车",
+		"nativeText": "học lái xe như thế nào",
 		"english": "to learn how to drive",
 		"soundmark": "/tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我想要学习如何开车",
+		"nativeText": "tôi muốn học lái xe như thế nào",
 		"english": "I want to learn how to drive",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "真的",
+		"nativeText": "thật sự",
 		"english": "really",
 		"soundmark": "/'rili/"
 	},
 	{
-		"chinese": "我真的想要学习如何开车",
+		"nativeText": "tôi thật sự muốn học lái xe như thế nào",
 		"english": "I really want to learn how to drive",
 		"soundmark": "/aɪ/ /'rili/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我真的不想学习如何开车",
+		"nativeText": "tôi thật sự không muốn học lái xe như thế nào",
 		"english": "I really don't want to learn how to drive",
 		"soundmark": "/aɪ/ /'rili/ /dont/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我真的（过去）想要学习如何开车",
+		"nativeText": "tôi thật sự đã muốn học lái xe như thế nào",
 		"english": "I really wanted to learn how to drive",
 		"soundmark": "/aɪ/ /'rili/ /wɑntɪd/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我真的（过去）不想学习如何开车",
+		"nativeText": "tôi thật sự đã không muốn học lái xe như thế nào",
 		"english": "I really didn't want to learn how to drive",
 		"soundmark": "/aɪ/ /'rili/ /ˈdɪdnt/ /wɑnt/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "驾驶；开车",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "驾驶员",
+		"nativeText": "tài xế",
 		"english": "driver",
 		"soundmark": "/'draɪvɚ/"
 	},
 	{
-		"chinese": "执照",
+		"nativeText": "giấy phép",
 		"english": "license",
 		"soundmark": "/'laɪsns/"
 	},
 	{
-		"chinese": "驾照",
+		"nativeText": "bằng lái xe",
 		"english": "driver's license",
 		"soundmark": "/'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "一个驾照",
+		"nativeText": "một cái bằng lái xe",
 		"english": "a driver's license",
 		"soundmark": "/ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "达到；获得",
+		"nativeText": "đạt được",
 		"english": "to get",
 		"soundmark": "/tə/ /gɛt/"
 	},
 	{
-		"chinese": "获得一个驾照",
+		"nativeText": "đạt được một cái bằng lái xe",
 		"english": "to get a driver's license",
 		"soundmark": "/tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "我需要",
+		"nativeText": "tôi cần",
 		"english": "I need",
 		"soundmark": "/aɪ/ /nid/"
 	},
 	{
-		"chinese": "我需要获得一个驾照",
+		"nativeText": "tôi cần đạt được một cái bằng lái xe",
 		"english": "I need to get a driver's license",
 		"soundmark": "/aɪ/ /nid/ /tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "而且",
+		"nativeText": "và",
 		"english": "and",
 		"soundmark": "/ənd/"
 	},
 	{
-		"chinese": "而且我需要获得一个驾照",
+		"nativeText": "và tôi cần đạt được một cái bằng lái xe",
 		"english": "and I need to get a driver's license",
 		"soundmark": "/ənd/ /aɪ/ /nid/ /tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "我真的（过去）想要学习如何开车",
+		"nativeText": "tôi thật sự đã muốn học lái xe như thế nào",
 		"english": "I really wanted to learn how to drive",
 		"soundmark": "/aɪ/ /'rili/ /wɑntɪd/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/"
 	},
 	{
-		"chinese": "我真的（过去）想要学习如何开车而且我需要获得一个驾照",
+		"nativeText": "tôi thật sự đã muốn học lái xe như thế nào và tôi cần đạt được một cái bằng lái xe",
 		"english": "I really wanted to learn how to drive and I need to get a driver's license",
 		"soundmark": "/aɪ/ /'rili/ /wɑntɪd/ /tə/ /lɝn/ /haʊ/ /tə/ /draɪv/ /ənd/ /aɪ/ /nid/ /tə/ /gɛt/ /ə/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "工作",
+		"nativeText": "công việc",
 		"english": "work",
 		"soundmark": "/wɝk/"
 	},
 	{
-		"chinese": "我的工作",
+		"nativeText": "công việc của tôi",
 		"english": "my work",
 		"soundmark": "/maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "完成我的工作",
+		"nativeText": "hoàn thành công việc của tôi",
 		"english": "to finish my work",
 		"soundmark": "/tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "我想要",
+		"nativeText": "tôi muốn",
 		"english": "I want",
 		"soundmark": "/aɪ/ /wɑnt/"
 	},
 	{
-		"chinese": "我想要完成我的工作",
+		"nativeText": "tôi muốn hoàn thành công việc của tôi",
 		"english": "I want to finish my work",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "我不想完成我的工作",
+		"nativeText": "tôi không muốn hoàn thành công việc của tôi",
 		"english": "I don't want to finish my work",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "只是",
+		"nativeText": "chỉ",
 		"english": "just",
 		"soundmark": "/dʒʌst/"
 	},
 	{
-		"chinese": "我只是想要完成我的工作",
+		"nativeText": "tôi chỉ muốn hoàn thành công việc của tôi",
 		"english": "I just want to finish my work",
 		"soundmark": "/aɪ/ /dʒʌst/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "我只是（过去）想要完成我的工作",
+		"nativeText": "tôi chỉ đã muốn hoàn thành công việc của tôi",
 		"english": "I just wanted to finish my work",
 		"soundmark": "/aɪ/ /dʒʌst/ /wɑntɪd/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "时间",
+		"nativeText": "thời gian",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "准时",
+		"nativeText": "đúng giờ",
 		"english": "on time",
 		"soundmark": "/ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "我只是（过去）想要准时完成我的工作",
+		"nativeText": "tôi chỉ đã muốn hoàn thành công việc của tôi đúng giờ",
 		"english": "I just wanted to finish my work on time",
 		"soundmark": "/aɪ/ /dʒʌst/ /wɑntɪd/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "我（过去）不想准时完成我的工作",
+		"nativeText": "tôi đã không muốn hoàn thành công việc của tôi đúng giờ",
 		"english": "I didn't want to finish my work on time",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "我准时完成我的工作",
+		"nativeText": "tôi hoàn thành công việc của tôi đúng giờ",
 		"english": "I finish my work on time",
 		"soundmark": "/aɪ/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "我没有准时完成我的工作",
+		"nativeText": "tôi không hoàn thành công việc của tôi đúng giờ",
 		"english": "I don't finish my work on time",
 		"soundmark": "/aɪ/ /dont/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "完成了",
+		"nativeText": "đã hoàn thành",
 		"english": "finished",
 		"soundmark": "/'fɪnɪʃt/"
 	},
 	{
-		"chinese": "我准时完成了我的工作",
+		"nativeText": "tôi đã hoàn thành công việc của tôi đúng giờ",
 		"english": "I finished my work on time",
 		"soundmark": "/aɪ/ /'fɪnɪʃt/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "我没有准时（过去）完成我的工作",
+		"nativeText": "tôi đã không hoàn thành công việc của tôi đúng giờ",
 		"english": "I didn't finish my work on time",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /'fɪnɪʃ/ /maɪ/ /wɝk/ /ɑn/ /taɪm/"
 	},
 	{
-		"chinese": "看",
+		"nativeText": "xem",
 		"english": "to watch",
 		"soundmark": "/tə/ /wɔtʃ/"
 	},
 	{
-		"chinese": "一个电影",
+		"nativeText": "một bộ phim",
 		"english": "a movie",
 		"soundmark": "/ə/ /'muvi/"
 	},
 	{
-		"chinese": "看一个电影",
+		"nativeText": "xem một bộ phim",
 		"english": "to watch a movie",
 		"soundmark": "/tə/ /wɔtʃ/ /ə/ /'muvi/"
 	},
 	{
-		"chinese": "我想看一个电影",
+		"nativeText": "tôi muốn xem một bộ phim",
 		"english": "I want to watch a movie",
 		"soundmark": "/aɪ/ /wɑnt/ /tə/ /wɔtʃ/ /ə/ /'muvi/"
 	},
 	{
-		"chinese": "我不想看那个电影",
+		"nativeText": "tôi không muốn xem bộ phim đó",
 		"english": "I don't want to watch the movie",
 		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /wɔtʃ/ /ðə/ /'muvi/"
 	},
 	{
-		"chinese": "我（过去）想要看一个电影",
+		"nativeText": "tôi đã muốn xem một bộ phim",
 		"english": "I wanted to watch a movie",
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/"
 	},
 	{
-		"chinese": "周；星期",
+		"nativeText": "tuần",
 		"english": "week",
 		"soundmark": "/wik/"
 	},
 	{
-		"chinese": "周末",
+		"nativeText": "cuối tuần",
 		"english": "weekend",
 		"soundmark": "/'wikɛnd/"
 	},
 	{
-		"chinese": "上一个",
+		"nativeText": "vừa qua",
 		"english": "last",
 		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "上周末",
+		"nativeText": "cuối tuần qua",
 		"english": "last weekend",
 		"soundmark": "/læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "我上周末想看一个电影",
+		"nativeText": "cuối tuần qua tôi đã muốn xem một bộ phim",
 		"english": "I wanted to watch a movie last weekend",
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "我上周末不想看那个电影",
+		"nativeText": "cuối tuần qua tôi đã không muốn xem bộ phim đó",
 		"english": "I didn't want to watch the movie last weekend",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /wɑnt/ /tə/ /wɔtʃ/ /ðə/ /'muvi/ /læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "时间",
+		"nativeText": "thời gian",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "足够的",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "足够的时间",
+		"nativeText": "đủ thời gian",
 		"english": "enough time",
 		"soundmark": "/ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "拥有",
+		"nativeText": "có",
 		"english": "have",
 		"soundmark": "/hæv/"
 	},
 	{
-		"chinese": "我有足够的时间",
+		"nativeText": "tôi có đủ thời gian",
 		"english": "I have enough time",
 		"soundmark": "/aɪ/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "我没有足够的时间",
+		"nativeText": "tôi không có đủ thời gian",
 		"english": "I don't have enough time",
 		"soundmark": "/aɪ/ /dont/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "我（过去）有足够的时间",
+		"nativeText": "tôi đã có đủ thời gian",
 		"english": "I had enough time",
 		"soundmark": "/aɪ/ /hæd/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "我（过去）没有足够的时间",
+		"nativeText": "tôi đã không có đủ thời gian",
 		"english": "I didn't have enough time",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "但是",
+		"nativeText": "nhưng",
 		"english": "but",
 		"soundmark": "/bət/"
 	},
 	{
-		"chinese": "但是我（过去）没有足够的时间",
+		"nativeText": "nhưng tôi đã không có đủ thời gian",
 		"english": "but I didn't have enough time",
 		"soundmark": "/bət/ /aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "我上周末想看一个电影",
+		"nativeText": "cuối tuần qua tôi đã muốn xem một bộ phim",
 		"english": "I wanted to watch a movie last weekend",
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/"
 	},
 	{
-		"chinese": "我上周末想看一个电影但是我（过去）没有足够的时间",
+		"nativeText": "cuối tuần qua tôi đã muốn xem một bộ phim nhưng tôi đã không có đủ thời gian",
 		"english": "I wanted to watch a movie last weekend but I didn't have enough time",
 		"soundmark": "/aɪ/ /wɑntɪd/ /tə/ /wɔtʃ/ /ə/ /'muvi/ /læst/ /'wikɛnd/ /bət/ /aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "我的工作",
+		"nativeText": "công việc của tôi",
 		"english": "my work",
 		"soundmark": "/maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "完成我的工作",
+		"nativeText": "hoàn thành công việc của tôi",
 		"english": "to finish my work",
 		"soundmark": "/tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	},
 	{
-		"chinese": "我没有足够的时间",
+		"nativeText": "tôi không có đủ thời gian",
 		"english": "I don't have enough time",
 		"soundmark": "/aɪ/ /dont/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "我（过去）没有足够的时间",
+		"nativeText": "tôi đã không có đủ thời gian",
 		"english": "I didn't have enough time",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/"
 	},
 	{
-		"chinese": "我（过去）没有足够的时间完成我的工作",
+		"nativeText": "tôi đã không có đủ thời gian để hoàn thành công việc của tôi",
 		"english": "I didn't have enough time to finish my work",
 		"soundmark": "/aɪ/ /ˈdɪdnt/ /hæv/ /ɪ'nʌf/ /taɪm/ /tə/ /'fɪnɪʃ/ /maɪ/ /wɝk/"
 	}

@@ -7,7 +7,7 @@
       }"
     >
       <CommonModalHeader
-        title="排行榜"
+        title="Bảng xếp hạng"
         @close="rankingStore.hideRankModal"
       />
 
@@ -48,7 +48,7 @@
             v-else
             class="flex flex-1 items-center justify-center text-gray-500"
           >
-            还没有小伙伴上榜哦，快来霸榜吧！🏆
+            Chưa có ai lên bảng, nhanh tay chiếm top nhé! 🏆
           </div>
         </template>
       </div>

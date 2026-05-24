@@ -15,7 +15,7 @@
           </div>
 
           <p class="typing mt-4 max-w-[16rem] text-base leading-relaxed">
-            一起来加入我们
+            Hãy cùng tham gia
             <span
               class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:to-gray-100"
               >Earthworm</span
@@ -73,7 +73,7 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="hover:opacity-80"
                 >
-                  开源
+                  Mã nguồn mở
                 </a>
               </li>
 
@@ -82,7 +82,7 @@
                   href="https://github.com/cuixueshe/earthworm/issues"
                   class="hover:opacity-80"
                 >
-                  问题
+                  Vấn đề
                 </a>
               </li>
 
@@ -91,14 +91,14 @@
                   href="https://github.com/cuixueshe/earthworm/issues/91"
                   class="hover:opacity-80"
                 >
-                  贡献代码
+                  Đóng góp mã
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <p class="text-lg font-medium">团队</p>
+            <p class="text-lg font-medium">Nhóm</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -106,7 +106,7 @@
                   href="https://t.me/+dohhXSz-5n1kZDQ1"
                   class="hover:opacity-80"
                 >
-                  联系我们
+                  Liên hệ chúng tôi
                 </a>
               </li>
 
@@ -115,14 +115,14 @@
                   href="#faq"
                   class="transition hover:opacity-75"
                 >
-                  常见问题
+                  Câu hỏi thường gặp
                 </a>
               </li> -->
             </ul>
           </div>
 
           <!-- <div>
-            <p class="font-medium text-lg">教学</p>
+            <p class="font-medium text-lg">Giảng dạy</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -130,7 +130,7 @@
                   href="https://github.com/cuixueshe/earthworm"
                   class="transition hover:opacity-75"
                 >
-                  关于我们
+                  Về chúng tôi
                 </a>
               </li>
             </ul>

@@ -1,751 +1,751 @@
 [
 	{
-		"chinese": "手",
+		"nativeText": "tay",
 		"english": "hand",
 		"soundmark": "/hænd/"
 	},
 	{
-		"chinese": "递给",
+		"nativeText": "đưa",
 		"english": "to hand",
 		"soundmark": "/tə/ /hænd/"
 	},
 	{
-		"chinese": "握；牵",
+		"nativeText": "nắm; cầm",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "手",
+		"nativeText": "tay",
 		"english": "hand",
 		"soundmark": "/hænd/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "我的手",
+		"nativeText": "tay của tôi",
 		"english": "my hand",
 		"soundmark": "/maɪ/ /hænd/"
 	},
 	{
-		"chinese": "牵我的手",
+		"nativeText": "nắm tay tôi",
 		"english": "to hold my hand",
 		"soundmark": "/tə/ /hold/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "想要",
+		"nativeText": "muốn",
 		"english": "want",
 		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "我想要你",
+		"nativeText": "tôi muốn bạn",
 		"english": "I want you",
 		"soundmark": "/aɪ/ /wɑnt/ /ju/"
 	},
 	{
-		"chinese": "牵我的手",
+		"nativeText": "nắm tay tôi",
 		"english": "to hold my hand",
 		"soundmark": "/tə/ /hold/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "我想要你牵我的手",
+		"nativeText": "tôi muốn bạn nắm tay tôi",
 		"english": "I want you to hold my hand",
 		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /hold/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "握；牵",
+		"nativeText": "nắm; cầm",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "牵（ing形式）",
+		"nativeText": "đang cầm",
 		"english": "holding",
 		"soundmark": "/'holdɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "là",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在牵着",
+		"nativeText": "đang cầm",
 		"english": "be holding",
 		"soundmark": "/bi/ /'holdɪŋ/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我（现在）正在牵着",
+		"nativeText": "tôi đang cầm",
 		"english": "I am holding",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/"
 	},
 	{
-		"chinese": "你的",
+		"nativeText": "của bạn",
 		"english": "your",
 		"soundmark": "/jʊr/"
 	},
 	{
-		"chinese": "你的手",
+		"nativeText": "tay của bạn",
 		"english": "your hand",
 		"soundmark": "/jʊr/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在牵着你的手",
+		"nativeText": "tôi đang nắm tay bạn",
 		"english": "I am holding your hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /jʊr/ /hænd/"
 	},
 	{
-		"chinese": "刀",
+		"nativeText": "dao",
 		"english": "knife",
 		"soundmark": "/naɪf/"
 	},
 	{
-		"chinese": "我（现在）正在握着",
+		"nativeText": "tôi đang cầm",
 		"english": "I am holding",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把刀",
+		"nativeText": "tôi đang cầm một con dao",
 		"english": "I am holding a knife",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/"
 	},
 	{
-		"chinese": "我的手",
+		"nativeText": "tay của tôi",
 		"english": "my hand",
 		"soundmark": "/maɪ/ /hænd/"
 	},
 	{
-		"chinese": "在......里",
+		"nativeText": "trong",
 		"english": "in",
 		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "在我的手里",
+		"nativeText": "trong tay tôi",
 		"english": "in my hand",
 		"soundmark": "/ɪn/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在在我的手里握着一把刀",
+		"nativeText": "tôi đang cầm một con dao trong tay",
 		"english": "I am holding a knife in my hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/ /ɪn/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "右",
+		"nativeText": "phải",
 		"english": "right",
 		"soundmark": "/raɪt/"
 	},
 	{
-		"chinese": "右手",
+		"nativeText": "tay phải",
 		"english": "right hand",
 		"soundmark": "/raɪt/ /hænd/"
 	},
 	{
-		"chinese": "在我的右手里",
+		"nativeText": "trong tay phải của tôi",
 		"english": "in my right hand",
 		"soundmark": "/ɪn/ /maɪ/ /raɪt/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把刀",
+		"nativeText": "tôi đang cầm một con dao",
 		"english": "I am holding a knife",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/"
 	},
 	{
-		"chinese": "我（现在）正在在我的右手里握着一把刀",
+		"nativeText": "tôi đang cầm một con dao trong tay phải",
 		"english": "I am holding a knife in my right hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /naɪf/ /ɪn/ /maɪ/ /raɪt/ /hænd/"
 	},
 	{
-		"chinese": "叉子",
+		"nativeText": "nĩa",
 		"english": "fork",
 		"soundmark": "/fɔrk/"
 	},
 	{
-		"chinese": "我（现在）正在握着",
+		"nativeText": "tôi đang cầm",
 		"english": "I am holding",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把叉子",
+		"nativeText": "tôi đang cầm một chiếc nĩa",
 		"english": "I am holding a fork",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /fɔrk/"
 	},
 	{
-		"chinese": "在我的手里",
+		"nativeText": "trong tay tôi",
 		"english": "in my hand",
 		"soundmark": "/ɪn/ /maɪ/ /hænd/"
 	},
 	{
-		"chinese": "左",
+		"nativeText": "trái",
 		"english": "left",
 		"soundmark": "/lɛft/"
 	},
 	{
-		"chinese": "在我的左手里",
+		"nativeText": "trong tay trái của tôi",
 		"english": "in my left hand",
 		"soundmark": "/ɪn/ /maɪ/ /lɛft/ /hænd/"
 	},
 	{
-		"chinese": "我（现在）正在握着一把叉子",
+		"nativeText": "tôi đang cầm một chiếc nĩa",
 		"english": "I am holding a fork",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /fɔrk/"
 	},
 	{
-		"chinese": "我（现在）正在在我的左手里握着一把叉子",
+		"nativeText": "tôi đang cầm một chiếc nĩa trong tay trái",
 		"english": "I am holding a fork in my left hand",
 		"soundmark": "/aɪ/ /æm/ /'holdɪŋ/ /ə/ /fɔrk/ /ɪn/ /maɪ/ /lɛft/ /hænd/"
 	},
 	{
-		"chinese": "人",
+		"nativeText": "người",
 		"english": "people",
 		"soundmark": "/'pipl/"
 	},
 	{
-		"chinese": "四个",
+		"nativeText": "bốn",
 		"english": "four",
 		"soundmark": "/fɔr/"
 	},
 	{
-		"chinese": "四个人",
+		"nativeText": "bốn người",
 		"english": "four people",
 		"soundmark": "/fɔr/ /'pipl/"
 	},
 	{
-		"chinese": "汽车",
+		"nativeText": "xe hơi",
 		"english": "car",
 		"soundmark": "/kɑr/"
 	},
 	{
-		"chinese": "这辆车",
+		"nativeText": "chiếc xe này",
 		"english": "this car",
 		"soundmark": "/ðɪs/ /kɑr/"
 	},
 	{
-		"chinese": "握；容纳",
+		"nativeText": "nắm; chứa đựng",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "容纳四个人",
+		"nativeText": "chứa đựng bốn người",
 		"english": "to hold four people",
 		"soundmark": "/tə/ /hold/ /fɔr/ /'pipl/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "这辆汽车可以容纳四个人",
+		"nativeText": "chiếc xe này có thể chứa bốn người",
 		"english": "this car can hold four people",
 		"soundmark": "/ðɪs/ /kɑr/ /kæn/ /hold/ /fɔr/ /'pipl/"
 	},
 	{
-		"chinese": "不可以",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "这辆汽车不可以容纳四个人",
+		"nativeText": "chiếc xe này không thể chứa bốn người",
 		"english": "this car can't hold four people",
 		"soundmark": "/ðɪs/ /kɑr/ /kænt/ /hold/ /fɔr/ /'pipl/"
 	},
 	{
-		"chinese": "人",
+		"nativeText": "người",
 		"english": "people",
 		"soundmark": "/'pipl/"
 	},
 	{
-		"chinese": "十个",
+		"nativeText": "mười",
 		"english": "ten",
 		"soundmark": "/tɛn/"
 	},
 	{
-		"chinese": "十个人",
+		"nativeText": "mười người",
 		"english": "ten people",
 		"soundmark": "/tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "握；容纳",
+		"nativeText": "nắm; chứa đựng",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "容纳十个人",
+		"nativeText": "chứa đựng mười người",
 		"english": "to hold ten people",
 		"soundmark": "/tə/ /hold/ /tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "房间",
+		"nativeText": "phòng",
 		"english": "room",
 		"soundmark": "/rum/"
 	},
 	{
-		"chinese": "这个房间",
+		"nativeText": "phòng này",
 		"english": "this room",
 		"soundmark": "/ðɪs/ /rum/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "这个房间可以容纳十个人",
+		"nativeText": "phòng này có thể chứa mười người",
 		"english": "this room can hold ten people",
 		"soundmark": "/ðɪs/ /rum/ /kæn/ /hold/ /tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "不可以",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "这个房间不可以容纳十个人",
+		"nativeText": "phòng này không thể chứa mười người",
 		"english": "this room can't hold ten people",
 		"soundmark": "/ðɪs/ /rum/ /kænt/ /hold/ /tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "这个房间",
+		"nativeText": "phòng này",
 		"english": "this room",
 		"soundmark": "/ðɪs/ /rum/"
 	},
 	{
-		"chinese": "大的",
+		"nativeText": "lớn",
 		"english": "big",
 		"soundmark": "/bɪɡ/"
 	},
 	{
-		"chinese": "是",
+		"nativeText": "là",
 		"english": "is",
 		"soundmark": "/ɪz/"
 	},
 	{
-		"chinese": "这个房间是大的",
+		"nativeText": "phòng này lớn",
 		"english": "this room is big",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/"
 	},
 	{
-		"chinese": "容纳十个人",
+		"nativeText": "chứa đựng mười người",
 		"english": "to hold ten people",
 		"soundmark": "/tə/ /hold/ /tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "足够",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "足够容纳十个人",
+		"nativeText": "đủ để chứa mười người",
 		"english": "enough to hold ten people",
 		"soundmark": "/ɪ'nʌf/ /tə/ /hold/ /tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "这个房间是大的",
+		"nativeText": "phòng này lớn",
 		"english": "this room is big",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/"
 	},
 	{
-		"chinese": "这个房间是大的（大到）足够容纳十个人",
+		"nativeText": "phòng này lớn đủ để chứa mười người",
 		"english": "this room is big enough to hold ten people",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/ /ɪ'nʌf/ /tə/ /hold/ /tɛn/ /'pipl/"
 	},
 	{
-		"chinese": "这个房间是足够大的",
+		"nativeText": "phòng này đủ lớn",
 		"english": "this room is big enough",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "us",
 		"soundmark": "/ʌs/"
 	},
 	{
-		"chinese": "对......来说",
+		"nativeText": "cho",
 		"english": "for",
 		"soundmark": "/fɝ/"
 	},
 	{
-		"chinese": "对我们来说",
+		"nativeText": "cho chúng ta",
 		"english": "for us",
 		"soundmark": "/fɝ/ /ʌs/"
 	},
 	{
-		"chinese": "这个房间是足够大的对我们来说",
+		"nativeText": "phòng này đủ lớn cho chúng ta",
 		"english": "this room is big enough for us",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/ /ɪ'nʌf/ /fɝ/ /ʌs/"
 	},
 	{
-		"chinese": "遇见；碰面",
+		"nativeText": "gặp gỡ",
 		"english": "to meet",
 		"soundmark": "/tə/ /mit/"
 	},
 	{
-		"chinese": "碰面（ing形式）",
+		"nativeText": "cuộc gặp gỡ",
 		"english": "meeting",
 		"soundmark": "/'mitɪŋ/"
 	},
 	{
-		"chinese": "会议",
+		"nativeText": "cuộc họp",
 		"english": "meeting",
 		"soundmark": "/'mitɪŋ/"
 	},
 	{
-		"chinese": "握；容纳；举行",
+		"nativeText": "nắm; chứa đựng; tổ chức",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "举行一次会议",
+		"nativeText": "tổ chức một cuộc họp",
 		"english": "to hold a meeting",
 		"soundmark": "/tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "我们",
+		"nativeText": "chúng ta",
 		"english": "we",
 		"soundmark": "/wi/"
 	},
 	{
-		"chinese": "我们决定",
+		"nativeText": "chúng ta quyết định",
 		"english": "we decide",
 		"soundmark": "/wi/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "我们决定举行一次会议",
+		"nativeText": "chúng ta quyết định tổ chức một cuộc họp",
 		"english": "we decide to hold a meeting",
 		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "在......里",
+		"nativeText": "trong",
 		"english": "in",
 		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "这个房间",
+		"nativeText": "phòng này",
 		"english": "this room",
 		"soundmark": "/ðɪs/ /rum/"
 	},
 	{
-		"chinese": "在这个房间里",
+		"nativeText": "trong phòng này",
 		"english": "in this room",
 		"soundmark": "/ɪn/ /ðɪs/ /rum/"
 	},
 	{
-		"chinese": "我们决定在这个房间里举行一次会议",
+		"nativeText": "chúng ta quyết định tổ chức một cuộc họp trong phòng này",
 		"english": "we decide to hold a meeting in this room",
 		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /hold/ /ə/ /'mitɪŋ/ /ɪn/ /ðɪs/ /rum/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "早上",
+		"nativeText": "buổi sáng",
 		"english": "morning",
 		"soundmark": "/'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "明天早上",
+		"nativeText": "sáng mai",
 		"english": "tomorrow morning",
 		"soundmark": "/tə'mɔro/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "我们决定明天早上在这个房间里举行一次会议",
+		"nativeText": "chúng ta quyết định tổ chức một cuộc họp trong phòng này vào sáng mai",
 		"english": "we decide to hold a meeting in this room tomorrow morning",
 		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /hold/ /ə/ /'mitɪŋ/ /ɪn/ /ðɪs/ /rum/ /tə'mɔro/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我们将会举行一次会议",
+		"nativeText": "chúng ta sẽ tổ chức một cuộc họp",
 		"english": "we will hold a meeting",
 		"soundmark": "/wi/ /wɪl/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "明天早上我们将会在这个房间里举行一次会议",
+		"nativeText": "chúng ta sẽ tổ chức một cuộc họp trong phòng này vào sáng mai",
 		"english": "we will hold a meeting in this room tomorrow morning",
 		"soundmark": "/wi/ /wɪl/ /hold/ /ə/ /'mitɪŋ/ /ɪn/ /ðɪs/ /rum/ /tə'mɔro/ /'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "大的",
+		"nativeText": "lớn",
 		"english": "big",
 		"soundmark": "/bɪɡ/"
 	},
 	{
-		"chinese": "这个房间",
+		"nativeText": "phòng này",
 		"english": "this room",
 		"soundmark": "/ðɪs/ /rum/"
 	},
 	{
-		"chinese": "这个房间是大的",
+		"nativeText": "phòng này lớn",
 		"english": "this room is big",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/"
 	},
 	{
-		"chinese": "足够",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "举行一次会议",
+		"nativeText": "tổ chức một cuộc họp",
 		"english": "to hold a meeting",
 		"soundmark": "/tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "足够举行一次会议",
+		"nativeText": "đủ để tổ chức một cuộc họp",
 		"english": "enough to hold a meeting",
 		"soundmark": "/ɪ'nʌf/ /tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "这个房间是大的（大到）足够举行一次会议",
+		"nativeText": "phòng này lớn đủ để tổ chức một cuộc họp",
 		"english": "this room is big enough to hold a meeting",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/ /ɪ'nʌf/ /tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "这个房间是足够大的",
+		"nativeText": "phòng này đủ lớn",
 		"english": "this room is big enough",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /bɪɡ/ /ɪ'nʌf/"
 	},
 	{
-		"chinese": "小的",
+		"nativeText": "nhỏ",
 		"english": "small",
 		"soundmark": "/smɔl/"
 	},
 	{
-		"chinese": "这个房间是小的",
+		"nativeText": "phòng này nhỏ",
 		"english": "this room is small",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /smɔl/"
 	},
 	{
-		"chinese": "非常",
+		"nativeText": "rất",
 		"english": "very",
 		"soundmark": "/ˈvɛri/"
 	},
 	{
-		"chinese": "这个房间是非常小的",
+		"nativeText": "phòng này rất nhỏ",
 		"english": "this room is very small",
 		"soundmark": "/ðɪs/ /rum/ /ɪz/ /ˈvɛri/ /smɔl/"
 	},
 	{
-		"chinese": "因为",
+		"nativeText": "bởi vì",
 		"english": "because",
 		"soundmark": "/bɪ'kɔz/"
 	},
 	{
-		"chinese": "因为这个房间是非常小的",
+		"nativeText": "bởi vì phòng này rất nhỏ",
 		"english": "because this room is very small",
 		"soundmark": "/bɪ'kɔz/ /ðɪs/ /rum/ /ɪz/ /ˈvɛri/ /smɔl/"
 	},
 	{
-		"chinese": "会议",
+		"nativeText": "cuộc họp",
 		"english": "meeting",
 		"soundmark": "/'mitɪŋ/"
 	},
 	{
-		"chinese": "握；容纳；举行",
+		"nativeText": "nắm; chứa đựng; tổ chức",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "举行一次会议",
+		"nativeText": "tổ chức một cuộc họp",
 		"english": "to hold a meeting",
 		"soundmark": "/tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "在......里",
+		"nativeText": "trong",
 		"english": "in",
 		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "这个房间",
+		"nativeText": "phòng này",
 		"english": "this room",
 		"soundmark": "/ðɪs/ /rum/"
 	},
 	{
-		"chinese": "在这个房间里",
+		"nativeText": "trong phòng này",
 		"english": "in this room",
 		"soundmark": "/ɪn/ /ðɪs/ /rum/"
 	},
 	{
-		"chinese": "在这个房间里举行一次会议",
+		"nativeText": "tổ chức một cuộc họp trong phòng này",
 		"english": "to hold a meeting in this room",
 		"soundmark": "/tə/ /hold/ /ə/ /'mitɪŋ/ /ɪn/ /ðɪs/ /rum/"
 	},
 	{
-		"chinese": "不可能的",
+		"nativeText": "không thể; bất khả thi",
 		"english": "impossible",
 		"soundmark": "/ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "它；这件事情",
+		"nativeText": "nó; điều đó",
 		"english": "it",
 		"soundmark": "/ɪt/"
 	},
 	{
-		"chinese": "它是不可能的",
+		"nativeText": "nó là bất khả thi",
 		"english": "it is impossible",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/"
 	},
 	{
-		"chinese": "在这个房间里举行一次会议是不可能的",
+		"nativeText": "tổ chức một cuộc họp trong phòng này là bất khả thi",
 		"english": "it is impossible to hold a meeting in this room",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /hold/ /ə/ /'mitɪŋ/ /ɪn/ /ðɪs/ /rum/"
 	},
 	{
-		"chinese": "因为这个房间是非常小的",
+		"nativeText": "bởi vì phòng này rất nhỏ",
 		"english": "because this room is very small",
 		"soundmark": "/bɪ'kɔz/ /ðɪs/ /rum/ /ɪz/ /ˈvɛri/ /smɔl/"
 	},
 	{
-		"chinese": "在这个房间里举行一次会议是不可能的因为这个房间是非常小的",
+		"nativeText": "tổ chức một cuộc họp trong phòng này là bất khả thi bởi vì phòng này rất nhỏ",
 		"english": "it is impossible to hold a meeting in this room because this room is very small",
 		"soundmark": "/ɪt/ /ɪz/ /ɪm'pɑsəbl/ /tə/ /hold/ /ə/ /'mitɪŋ/ /ɪn/ /ðɪs/ /rum/ /bɪ'kɔz/ /ðɪs/ /rum/ /ɪz/ /ˈvɛri/ /smɔl/"
 	},
 	{
-		"chinese": "握；容纳；举行",
+		"nativeText": "nắm; chứa đựng; tổ chức",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "举行一次会议",
+		"nativeText": "tổ chức một cuộc họp",
 		"english": "to hold a meeting",
 		"soundmark": "/tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们（过去）决定",
+		"nativeText": "họ đã quyết định",
 		"english": "they decided",
 		"soundmark": "/ðe/ /dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "他们（过去）决定举行一次会议",
+		"nativeText": "họ đã quyết định tổ chức một cuộc họp",
 		"english": "they decided to hold a meeting",
 		"soundmark": "/ðe/ /dɪ'saɪdɪd/ /tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "脸",
+		"nativeText": "khuôn mặt",
 		"english": "face",
 		"soundmark": "/fes/"
 	},
 	{
-		"chinese": "面对",
+		"nativeText": "đối mặt",
 		"english": "to face",
 		"soundmark": "/tə/ /fes/"
 	},
 	{
-		"chinese": "面对(ing形式)",
+		"nativeText": "đang đối mặt",
 		"english": "facing",
 		"soundmark": "/'fesɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "là",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在面对",
+		"nativeText": "đang đối mặt",
 		"english": "be facing",
 		"soundmark": "/bi/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们(现在)正在面对",
+		"nativeText": "họ đang đối mặt",
 		"english": "they are facing",
 		"soundmark": "/ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "他们(现在)正在面对的那个问题",
+		"nativeText": "vấn đề mà họ đang đối mặt",
 		"english": "the problem they are facing",
 		"soundmark": "/ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "解决",
+		"nativeText": "giải quyết",
 		"english": "to solve",
 		"soundmark": "/tə/ /sɔlv/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "解决那个问题",
+		"nativeText": "giải quyết vấn đề đó",
 		"english": "to solve the problem",
 		"soundmark": "/tə/ /sɔlv/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "解决他们（现在）正在面对的那个问题",
+		"nativeText": "giải quyết vấn đề mà họ đang đối mặt",
 		"english": "to solve the problem they are facing",
 		"soundmark": "/tə/ /sɔlv/ /ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "如何解决他们（现在）正在面对的那个问题",
+		"nativeText": "cách giải quyết vấn đề mà họ đang đối mặt",
 		"english": "how to solve the problem they are facing",
 		"soundmark": "/haʊ/ /tə/ /sɔlv/ /ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "讨论",
+		"nativeText": "thảo luận",
 		"english": "to discuss",
 		"soundmark": "/tə/ /dɪ'skʌs/"
 	},
 	{
-		"chinese": "讨论如何解决他们（现在）正在面对的那个问题",
+		"nativeText": "thảo luận cách giải quyết vấn đề mà họ đang đối mặt",
 		"english": "to discuss how to solve the problem they are facing",
 		"soundmark": "/tə/ /dɪ'skʌs/ /haʊ/ /tə/ /sɔlv/ /ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "举行一次会议",
+		"nativeText": "tổ chức một cuộc họp",
 		"english": "to hold a meeting",
 		"soundmark": "/tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "他们（过去）决定",
+		"nativeText": "họ đã quyết định",
 		"english": "they decided",
 		"soundmark": "/ðe/ /dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "他们（过去）决定举行一次会议",
+		"nativeText": "họ đã quyết định tổ chức một cuộc họp",
 		"english": "they decided to hold a meeting",
 		"soundmark": "/ðe/ /dɪ'saɪdɪd/ /tə/ /hold/ /ə/ /'mitɪŋ/"
 	},
 	{
-		"chinese": "他们（过去）决定举行一次会议讨论如何解决他们（现在）正在面对的那个问题",
+		"nativeText": "họ đã quyết định tổ chức một cuộc họp để thảo luận cách giải quyết vấn đề mà họ đang đối mặt",
 		"english": "they decided to hold a meeting to discuss how to solve the problem they are facing",
 		"soundmark": "/ðe/ /dɪ'saɪdɪd/ /tə/ /hold/ /ə/ /'mitɪŋ/ /tə/ /dɪ'skʌs/ /haʊ/ /tə/ /sɔlv/ /ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	}

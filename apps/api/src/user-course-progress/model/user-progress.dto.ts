@@ -3,20 +3,20 @@ import { IsNotEmpty } from "class-validator";
 
 export class CreateUserProgressDto {
   @ApiProperty()
-  @IsNotEmpty({ message: "课程不能为空" })
+  @IsNotEmpty({ message: "Khóa học không được để trống" })
   courseId: string;
 }
 
 export class UpsertUserProgressDto {
   @ApiProperty()
-  @IsNotEmpty({ message: "课程不能为空" })
+  @IsNotEmpty({ message: "Khóa học không được để trống" })
   courseId: string;
 
   @ApiProperty()
-  @IsNotEmpty({ message: "课程包不能为空" })
+  @IsNotEmpty({ message: "Gói bài học không được để trống" })
   coursePackId: string;
 
   @ApiProperty()
-  @IsNotEmpty({ message: "课程进度不能为空" })
+  @IsNotEmpty({ message: "Tiến độ khóa học không được để trống" })
   statementIndex: number;
 }

@@ -2,19 +2,24 @@ import { ref } from "vue";
 
 export enum GamePlayMode {
   Dictation = "DICTATION",
-  ChineseToEnglish = "CHINESE_TO_ENGLISH",
+  NativeToEnglish = "NATIVE_TO_ENGLISH",
 }
 
 export const gamePlayModeLabels: { [key in GamePlayMode]: string } = {
-  [GamePlayMode.ChineseToEnglish]: "中译英",
-  [GamePlayMode.Dictation]: "听写",
+  [GamePlayMode.NativeToEnglish]: "Việt - Anh",
+  [GamePlayMode.Dictation]: "Chính tả",
 };
 
 const GamePlayModeKey = "gamePlayMode";
-const currentGamePlayMode = ref<GamePlayMode>(GamePlayMode.ChineseToEnglish);
+const currentGamePlayMode = ref<GamePlayMode>(GamePlayMode.NativeToEnglish);
 
 function loadCache() {
-  const mode = getStore() || currentGamePlayMode.value;
+  let mode = getStore() || currentGamePlayMode.value;
+  // Migration: rename old CHINESE_TO_ENGLISH value to NATIVE_TO_ENGLISH
+  if (mode === ("CHINESE_TO_ENGLISH" as GamePlayMode)) {
+    mode = GamePlayMode.NativeToEnglish;
+    setStore(mode);
+  }
   currentGamePlayMode.value = mode;
 }
 
@@ -47,8 +52,8 @@ export function useGamePlayMode() {
     return currentGamePlayMode.value === GamePlayMode.Dictation;
   }
 
-  function isChineseToEnglishMode() {
-    return currentGamePlayMode.value === GamePlayMode.ChineseToEnglish;
+  function isNativeToEnglishMode() {
+    return currentGamePlayMode.value === GamePlayMode.NativeToEnglish;
   }
 
   return {
@@ -56,6 +61,6 @@ export function useGamePlayMode() {
     getGamePlayModeOptions,
     currentGamePlayMode,
     isDictationMode,
-    isChineseToEnglishMode,
+    isNativeToEnglishMode,
   };
 }

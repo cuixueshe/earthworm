@@ -9,7 +9,7 @@ export class ToolController {
   constructor(private readonly toolService: ToolService) {}
 
   @ApiOperation({
-    summary: "生成课程打卡图",
+    summary: "Tạo ảnh chia sẻ khóa học",
   })
   @Get("dailySentence")
   dailySentence() {

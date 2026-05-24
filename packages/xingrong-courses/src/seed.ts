@@ -21,8 +21,8 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
     .insert(coursePack)
     .values({
       order: 1,
-      title: "星荣零基础学英语",
-      description: "最适合零基础入门的课程",
+      title: "Earthworm - Học tiếng Anh từ cơ bản",
+      description: "Khóa học phù hợp nhất cho người mới bắt đầu",
       creatorId: "1",
       shareLevel: "public",
       isFree: true,
@@ -40,11 +40,11 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
           coursePackId: coursePackEntity.id,
           // Index starts from 0
           order: index + 1,
-          title: convertToChineseNumber(courseName),
+          title: convertToVietnameseTitle(courseName),
         })
         .returning({ id: courseSchema.id, order: courseSchema.order, title: courseSchema.title });
 
-      console.log(`创建: id-${course.id} order-${course.order} title-${course.title}`);
+      console.log(`Created: id-${course.id} order-${course.order} title-${course.title}`);
 
       return {
         ...course,
@@ -76,31 +76,16 @@ const courses = fs.readdirSync(path.resolve(__dirname, "../data/courses"));
         });
       });
 
-      console.log(`courseName: ${meta.courseFileName} 开始上传`);
+      console.log(`courseName: ${meta.courseFileName} uploading started`);
       await Promise.all(statementInsertTask);
-      console.log(`courseName: ${meta.courseFileName} 全部上传成功`);
+      console.log(`courseName: ${meta.courseFileName} upload complete`);
     }),
   );
 
-  console.log("全部创建完成");
+  console.log("All courses created successfully");
   process.exit(0);
 })();
 
-function convertToChineseNumber(numStr: string): string {
-  const chineseNumbers = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
-  let chineseStr = "第";
-  if (parseInt(numStr) >= 10) {
-    const [tens, ones] = numStr.split("");
-    if (tens !== "1") {
-      chineseStr += chineseNumbers[parseInt(tens, 10)];
-    }
-    chineseStr += "十";
-    if (ones !== "0") {
-      chineseStr += chineseNumbers[parseInt(ones, 10)];
-    }
-  } else {
-    chineseStr += chineseNumbers[parseInt(numStr, 10)];
-  }
-  chineseStr += "课";
-  return chineseStr;
+function convertToVietnameseTitle(numStr: string): string {
+  return `Bài ${numStr}`;
 }

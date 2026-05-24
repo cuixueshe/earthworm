@@ -1,4 +1,4 @@
-// 来自 logto 的文档
+// From logto documentation
 // https://openapi.logto.io/operation/operation-getuser
 export interface LogtoUserInfo {
   id: string;

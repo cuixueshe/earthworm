@@ -1,916 +1,916 @@
 [
 	{
-		"chinese": "清洗",
+		"nativeText": "rửa",
 		"english": "to wash",
 		"soundmark": "/tə/ /wɔʃ/"
 	},
 	{
-		"chinese": "清洗（过去分词）",
+		"nativeText": "rửa (phân từ quá khứ)",
 		"english": "washed",
 		"soundmark": "/wɔʃt/"
 	},
 	{
-		"chinese": "被清洗了",
+		"nativeText": "được rửa",
 		"english": "be washed",
 		"soundmark": "/bi/ /wɔʃt/"
 	},
 	{
-		"chinese": "这辆车",
+		"nativeText": "chiếc xe",
 		"english": "the car",
 		"soundmark": "/ðə/ /kɑr/"
 	},
 	{
-		"chinese": "这辆车被清洗了",
+		"nativeText": "chiếc xe được rửa",
 		"english": "the car is washed",
 		"soundmark": "/ðə/ /kɑr/ /ɪz/ /wɔʃt/"
 	},
 	{
-		"chinese": "他",
+		"nativeText": "anh ấy",
 		"english": "him",
 		"soundmark": "/hɪm/"
 	},
 	{
-		"chinese": "通过",
+		"nativeText": "bởi",
 		"english": "by",
 		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "通过他",
+		"nativeText": "bởi anh ấy",
 		"english": "by him",
 		"soundmark": "/baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "这辆车通过他被清洗了",
+		"nativeText": "chiếc xe được rửa bởi anh ấy",
 		"english": "the car is washed by him",
 		"soundmark": "/ðə/ /kɑr/ /ɪz/ /wɔʃt/ /baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "这辆车（过去）被他清洗了",
+		"nativeText": "chiếc xe đã được anh ấy rửa",
 		"english": "the car was washed by him",
 		"soundmark": "/ðə/ /kɑr/ /wəz/ /wɔʃt/ /baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "昨天",
+		"nativeText": "hôm qua",
 		"english": "yesterday",
 		"soundmark": "/'jɛstɚde/"
 	},
 	{
-		"chinese": "这辆车昨天被他清洗了",
+		"nativeText": "chiếc xe đã được anh ấy rửa hôm qua",
 		"english": "the car was washed by him yesterday",
 		"soundmark": "/ðə/ /kɑr/ /wəz/ /wɔʃt/ /baɪ/ /hɪm/ /'jɛstɚde/"
 	},
 	{
-		"chinese": "回答",
+		"nativeText": "trả lời",
 		"english": "to answer",
 		"soundmark": "/tə/ /'ænsɚ/"
 	},
 	{
-		"chinese": "回答（过去分词）",
+		"nativeText": "trả lời (phân từ quá khứ)",
 		"english": "answered",
 		"soundmark": "/'ænsɚd/"
 	},
 	{
-		"chinese": "被回答了",
+		"nativeText": "được trả lời",
 		"english": "be answered",
 		"soundmark": "/bi/ /'ænsɚd/"
 	},
 	{
-		"chinese": "这个问题",
+		"nativeText": "câu hỏi",
 		"english": "the question",
 		"soundmark": "/ðə/ /'kwɛstʃən/"
 	},
 	{
-		"chinese": "这个问题被回答了",
+		"nativeText": "câu hỏi được trả lời",
 		"english": "the question is answered",
 		"soundmark": "/ðə/ /'kwɛstʃən/ /ɪz/ /'ænsɚd/"
 	},
 	{
-		"chinese": "那个学生",
+		"nativeText": "học sinh đó",
 		"english": "the student",
 		"soundmark": "/ðə/ /'studnt/"
 	},
 	{
-		"chinese": "通过那个学生",
+		"nativeText": "bởi học sinh đó",
 		"english": "by the student",
 		"soundmark": "/baɪ/ /ðə/ /'studnt/"
 	},
 	{
-		"chinese": "这个问题被那个学生回答了",
+		"nativeText": "câu hỏi được học sinh đó trả lời",
 		"english": "the question is answered by the student",
 		"soundmark": "/ðə/ /'kwɛstʃən/ /ɪz/ /'ænsɚd/ /baɪ/ /ðə/ /'studnt/"
 	},
 	{
-		"chinese": "这个问题（过去）被那个学生回答了",
+		"nativeText": "câu hỏi đã được học sinh đó trả lời",
 		"english": "the question was answered by the student",
 		"soundmark": "/ðə/ /'kwɛstʃən/ /wəz/ /'ænsɚd/ /baɪ/ /ðə/ /'studnt/"
 	},
 	{
-		"chinese": "解决",
+		"nativeText": "giải quyết",
 		"english": "to solve",
 		"soundmark": "/tə/ /sɑlv/"
 	},
 	{
-		"chinese": "解决（过去分词）",
+		"nativeText": "giải quyết (phân từ quá khứ)",
 		"english": "solved",
 		"soundmark": "/sɑlvd/"
 	},
 	{
-		"chinese": "被解决了",
+		"nativeText": "được giải quyết",
 		"english": "be solved",
 		"soundmark": "/bi/ /sɑlvd/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "那个问题被解决了",
+		"nativeText": "vấn đề đó được giải quyết",
 		"english": "the problem is solved",
 		"soundmark": "/ðə/ /'prɑbləm/ /ɪz/ /sɑlvd/"
 	},
 	{
-		"chinese": "那个问题（过去）被解决了",
+		"nativeText": "vấn đề đó đã được giải quyết",
 		"english": "the problem was solved",
 		"soundmark": "/ðə/ /'prɑbləm/ /wəz/ /sɑlvd/"
 	},
 	{
-		"chinese": "紧急",
+		"nativeText": "khẩn cấp",
 		"english": "urgent",
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "那个紧急的问题",
+		"nativeText": "vấn đề khẩn cấp đó",
 		"english": "the urgent problem",
 		"soundmark": "/ðə/ /'ɝdʒənt/ /'prɑbləm/"
 	},
 	{
-		"chinese": "那个紧急的问题（过去）被解决了",
+		"nativeText": "vấn đề khẩn cấp đó đã được giải quyết",
 		"english": "the urgent problem was solved",
 		"soundmark": "/ðə/ /'ɝdʒənt/ /'prɑbləm/ /wəz/ /sɑlvd/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "them",
 		"soundmark": "/ðəm/"
 	},
 	{
-		"chinese": "通过他们",
+		"nativeText": "bởi họ",
 		"english": "by them",
 		"soundmark": "/baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "那个紧急的问题（过去）被他们解决了",
+		"nativeText": "vấn đề khẩn cấp đó đã được họ giải quyết",
 		"english": "the urgent problem was solved by them",
 		"soundmark": "/ðə/ /'ɝdʒənt/ /'prɑbləm/ /wəz/ /sɑlvd/ /baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "告诉",
+		"nativeText": "kể",
 		"english": "to tell",
 		"soundmark": "/tə/ /tɛl/"
 	},
 	{
-		"chinese": "告诉（过去分词）",
+		"nativeText": "kể (phân từ quá khứ)",
 		"english": "told",
 		"soundmark": "/told/"
 	},
 	{
-		"chinese": "被告诉",
+		"nativeText": "được kể",
 		"english": "be told",
 		"soundmark": "/bi/ /told/"
 	},
 	{
-		"chinese": "故事",
+		"nativeText": "câu chuyện",
 		"english": "story",
 		"soundmark": "/'stɔri/"
 	},
 	{
-		"chinese": "这个故事",
+		"nativeText": "câu chuyện này",
 		"english": "the story",
 		"soundmark": "/ðə/ /'stɔri/"
 	},
 	{
-		"chinese": "这个故事被讲述",
+		"nativeText": "câu chuyện này được kể",
 		"english": "the story is told",
 		"soundmark": "/ðə/ /'stɔri/ /ɪz/ /told/"
 	},
 	{
-		"chinese": "这个故事（过去）被讲述",
+		"nativeText": "câu chuyện này đã được kể",
 		"english": "the story was told",
 		"soundmark": "/ðə/ /'stɔri/ /wəz/ /told/"
 	},
 	{
-		"chinese": "父亲",
+		"nativeText": "cha",
 		"english": "father",
 		"soundmark": "/'fɑðɚ/"
 	},
 	{
-		"chinese": "爷爷",
+		"nativeText": "ông nội",
 		"english": "grandfather",
 		"soundmark": "/'grænfɑðɚ/"
 	},
 	{
-		"chinese": "我的爷爷",
+		"nativeText": "ông nội của tôi",
 		"english": "my grandfather",
 		"soundmark": "/maɪ/ /'grænfɑðɚ/"
 	},
 	{
-		"chinese": "通过我的爷爷",
+		"nativeText": "bởi ông nội của tôi",
 		"english": "by my grandfather",
 		"soundmark": "/baɪ/ /maɪ/ /'grænfɑðɚ/"
 	},
 	{
-		"chinese": "这个故事（过去）被我的爷爷讲述",
+		"nativeText": "câu chuyện này đã được ông nội tôi kể",
 		"english": "the story was told by my grandfather",
 		"soundmark": "/ðə/ /'stɔri/ /wəz/ /told/ /baɪ/ /maɪ/ /'grænfɑðɚ/"
 	},
 	{
-		"chinese": "被告诉",
+		"nativeText": "được kể",
 		"english": "be told",
 		"soundmark": "/bi/ /told/"
 	},
 	{
-		"chinese": "她（过去）被告诉",
+		"nativeText": "cô ấy đã được kể",
 		"english": "she was told",
 		"soundmark": "/ʃi/ /wəz/ /told/"
 	},
 	{
-		"chinese": "喝",
+		"nativeText": "uống",
 		"english": "to drink",
 		"soundmark": "/tə/ /drɪŋk/"
 	},
 	{
-		"chinese": "水",
+		"nativeText": "nước",
 		"english": "water",
 		"soundmark": "/'wɔtɚ/"
 	},
 	{
-		"chinese": "喝水",
+		"nativeText": "uống nước",
 		"english": "to drink water",
 		"soundmark": "/tə/ /drɪŋk/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "更多",
+		"nativeText": "nhiều hơn",
 		"english": "more",
 		"soundmark": "/mɔr/"
 	},
 	{
-		"chinese": "喝更多的水",
+		"nativeText": "uống nhiều nước hơn",
 		"english": "to drink more water",
 		"soundmark": "/tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "她（过去）被告诉",
+		"nativeText": "cô ấy đã được kể",
 		"english": "she was told",
 		"soundmark": "/ʃi/ /wəz/ /told/"
 	},
 	{
-		"chinese": "她（过去）被告诉喝更多的水",
+		"nativeText": "cô ấy đã được bảo uống nhiều nước hơn",
 		"english": "she was told to drink more water",
 		"soundmark": "/ʃi/ /wəz/ /told/ /tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "医生",
+		"nativeText": "bác sĩ",
 		"english": "the doctor",
 		"soundmark": "/ðə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "通过医生",
+		"nativeText": "bởi bác sĩ",
 		"english": "by the doctor",
 		"soundmark": "/baɪ/ /ðə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "她被医生告诉",
+		"nativeText": "cô ấy đã được bác sĩ bảo",
 		"english": "she was told by the doctor",
 		"soundmark": "/ʃi/ /wəz/ /told/ /baɪ/ /ðə/ /'dɑktɚ/"
 	},
 	{
-		"chinese": "喝更多的水",
+		"nativeText": "uống nhiều nước hơn",
 		"english": "to drink more water",
 		"soundmark": "/tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "她（过去）被医生告诉喝更多的水",
+		"nativeText": "cô ấy đã được bác sĩ bảo uống nhiều nước hơn",
 		"english": "she was told by the doctor to drink more water",
 		"soundmark": "/ʃi/ /wəz/ /told/ /baɪ/ /ðə/ /'dɑktɚ/ /tə/ /drɪŋk/ /mɔr/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "水",
+		"nativeText": "nước",
 		"english": "water",
 		"soundmark": "/'wɔtɚ/"
 	},
 	{
-		"chinese": "浇水",
+		"nativeText": "tưới nước",
 		"english": "to water",
 		"soundmark": "/tə/ /'wɔtɚ/"
 	},
 	{
-		"chinese": "浇水（过去分词）",
+		"nativeText": "tưới nước (phân từ quá khứ)",
 		"english": "watered",
 		"soundmark": "/'wɔtɚd/"
 	},
 	{
-		"chinese": "被浇水",
+		"nativeText": "được tưới nước",
 		"english": "be watered",
 		"soundmark": "/bi/ /'wɔtɚd/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "将会被浇水",
+		"nativeText": "sẽ được tưới nước",
 		"english": "will be watered",
 		"soundmark": "/wɪl/ /bi/ /'wɔtɚd/"
 	},
 	{
-		"chinese": "花",
+		"nativeText": "hoa",
 		"english": "flower",
 		"soundmark": "/'flaʊɚ/"
 	},
 	{
-		"chinese": "这些花",
+		"nativeText": "những bông hoa",
 		"english": "the flowers",
 		"soundmark": "/ðə/ /'flaʊɚz/"
 	},
 	{
-		"chinese": "这些花将会被浇水",
+		"nativeText": "những bông hoa sẽ được tưới nước",
 		"english": "the flowers will be watered",
 		"soundmark": "/ðə/ /'flaʊɚz/ /wɪl/ /bi/ /'wɔtɚd/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "me",
 		"soundmark": "/mi/"
 	},
 	{
-		"chinese": "通过我",
+		"nativeText": "bởi tôi",
 		"english": "by me",
 		"soundmark": "/baɪ/ /mi/"
 	},
 	{
-		"chinese": "这些花将会被我浇水",
+		"nativeText": "những bông hoa sẽ được tôi tưới nước",
 		"english": "the flowers will be watered by me",
 		"soundmark": "/ðə/ /'flaʊɚz/ /wɪl/ /bi/ /'wɔtɚd/ /baɪ/ /mi/"
 	},
 	{
-		"chinese": "说",
+		"nativeText": "nói",
 		"english": "to speak",
 		"soundmark": "/tə/ /spik/"
 	},
 	{
-		"chinese": "演讲者",
+		"nativeText": "diễn giả",
 		"english": "speaker",
 		"soundmark": "/'spikɚ/"
 	},
 	{
-		"chinese": "那个演讲者",
+		"nativeText": "diễn giả đó",
 		"english": "the speaker",
 		"soundmark": "/ðə/ /'spikɚ/"
 	},
 	{
-		"chinese": "邀请",
+		"nativeText": "mời",
 		"english": "to invite",
 		"soundmark": "/tə/ /ɪn'vaɪt/"
 	},
 	{
-		"chinese": "邀请（过去分词）",
+		"nativeText": "mời (phân từ quá khứ)",
 		"english": "invited",
 		"soundmark": "/ɪn'vaɪtɪd/"
 	},
 	{
-		"chinese": "被邀请",
+		"nativeText": "được mời",
 		"english": "be invited",
 		"soundmark": "/bi/ /ɪn'vaɪtɪd/"
 	},
 	{
-		"chinese": "那个演讲者被邀请了",
+		"nativeText": "diễn giả đó được mời",
 		"english": "the speaker is invited",
 		"soundmark": "/ðə/ /'spikɚ/ /ɪz/ /ɪn'vaɪtɪd/"
 	},
 	{
-		"chinese": "那个演讲者（过去）被邀请了",
+		"nativeText": "diễn giả đó đã được mời",
 		"english": "the speaker was invited",
 		"soundmark": "/ðə/ /'spikɚ/ /wəz/ /ɪn'vaɪtɪd/"
 	},
 	{
-		"chinese": "通过他们",
+		"nativeText": "bởi họ",
 		"english": "by them",
 		"soundmark": "/baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "那个演讲者（过去）被他们邀请了",
+		"nativeText": "diễn giả đó đã được họ mời",
 		"english": "the speaker was invited by them",
 		"soundmark": "/ðə/ /'spikɚ/ /wəz/ /ɪn'vaɪtɪd/ /baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "邀请",
+		"nativeText": "mời",
 		"english": "to invite",
 		"soundmark": "/tə/ /ɪn'vaɪt/"
 	},
 	{
-		"chinese": "邀请（名词）",
+		"nativeText": "lời mời",
 		"english": "invitation",
 		"soundmark": "/ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "那个邀请",
+		"nativeText": "lời mời đó",
 		"english": "the invitation",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "接受",
+		"nativeText": "chấp nhận",
 		"english": "to accept",
 		"soundmark": "/tə/ /ək'sɛpt/"
 	},
 	{
-		"chinese": "接受（过去分词）",
+		"nativeText": "chấp nhận (phân từ quá khứ)",
 		"english": "accepted",
 		"soundmark": "/ək'sɛptɪd/"
 	},
 	{
-		"chinese": "被接受了",
+		"nativeText": "được chấp nhận",
 		"english": "be accepted",
 		"soundmark": "/bi/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "那个邀请被接受了",
+		"nativeText": "lời mời đó được chấp nhận",
 		"english": "the invitation is accepted",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /ɪz/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "那个邀请（过去）被接受了",
+		"nativeText": "lời mời đó đã được chấp nhận",
 		"english": "the invitation was accepted",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wəz/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "通过他们",
+		"nativeText": "bởi họ",
 		"english": "by them",
 		"soundmark": "/baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "那个邀请（过去）被他们接受了",
+		"nativeText": "lời mời đó đã được họ chấp nhận",
 		"english": "the invitation was accepted by them",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "加入",
+		"nativeText": "tham gia",
 		"english": "to join",
 		"soundmark": "/tə/ /dʒɔɪn/"
 	},
 	{
-		"chinese": "团队",
+		"nativeText": "đội",
 		"english": "team",
 		"soundmark": "/tim/"
 	},
 	{
-		"chinese": "我们的团队",
+		"nativeText": "đội của chúng ta",
 		"english": "our team",
 		"soundmark": "/'aʊɚ/ /tim/"
 	},
 	{
-		"chinese": "加入我们的团队",
+		"nativeText": "tham gia đội của chúng ta",
 		"english": "to join our team",
 		"soundmark": "/tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
 	},
 	{
-		"chinese": "那个邀请",
+		"nativeText": "lời mời đó",
 		"english": "the invitation",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "加入我们团队的那个邀请",
+		"nativeText": "lời mời tham gia đội của chúng ta",
 		"english": "the invitation to join our team",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/"
 	},
 	{
-		"chinese": "被接受了",
+		"nativeText": "được chấp nhận",
 		"english": "be accepted",
 		"soundmark": "/bi/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "加入我们团队的那个邀请（过去）被接受了",
+		"nativeText": "lời mời tham gia đội của chúng ta đã được chấp nhận",
 		"english": "the invitation to join our team was accepted",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/ /wəz/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "通过他们",
+		"nativeText": "bởi họ",
 		"english": "by them",
 		"soundmark": "/baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "加入我们团队的那个邀请（过去）被他们接受了",
+		"nativeText": "lời mời tham gia đội của chúng ta đã được họ chấp nhận",
 		"english": "the invitation to join our team was accepted by them",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/ /tə/ /dʒɔɪn/ /'aʊɚ/ /tim/ /wəz/ /ək'sɛptɪd/ /baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "被接受",
+		"nativeText": "được chấp nhận",
 		"english": "be accepted",
 		"soundmark": "/bi/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "将会被接受",
+		"nativeText": "sẽ được chấp nhận",
 		"english": "will be accepted",
 		"soundmark": "/wɪl/ /bi/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "那个挑战",
+		"nativeText": "thử thách đó",
 		"english": "the challenge",
 		"soundmark": "/ðə/ /ˈtʃælɪndʒ/"
 	},
 	{
-		"chinese": "那个挑战将会被接受",
+		"nativeText": "thử thách đó sẽ được chấp nhận",
 		"english": "the challenge will be accepted",
 		"soundmark": "/ðə/ /ˈtʃælɪndʒ/ /wɪl/ /bi/ /ək'sɛptɪd/"
 	},
 	{
-		"chinese": "通过我们",
+		"nativeText": "bởi chúng ta",
 		"english": "by us",
 		"soundmark": "/baɪ/ /ʌs/"
 	},
 	{
-		"chinese": "那个挑战将会被我们接受",
+		"nativeText": "thử thách đó sẽ được chúng ta chấp nhận",
 		"english": "the challenge will be accepted by us",
 		"soundmark": "/ðə/ /ˈtʃælɪndʒ/ /wɪl/ /bi/ /ək'sɛptɪd/ /baɪ/ /ʌs/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /'fɪnɪʃ/"
 	},
 	{
-		"chinese": "完成（过去分词）",
+		"nativeText": "hoàn thành (phân từ quá khứ)",
 		"english": "finished",
 		"soundmark": "/'fɪnɪʃt/"
 	},
 	{
-		"chinese": "被完成",
+		"nativeText": "được hoàn thành",
 		"english": "be finished",
 		"soundmark": "/bi/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "应该",
+		"nativeText": "nên",
 		"english": "should",
 		"soundmark": "/ʃʊd/"
 	},
 	{
-		"chinese": "应该被完成",
+		"nativeText": "nên được hoàn thành",
 		"english": "should be finished",
 		"soundmark": "/ʃʊd/ /bi/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "the homework",
 		"soundmark": "/ðə/ /'homwɝk/"
 	},
 	{
-		"chinese": "家庭作业应该被完成",
+		"nativeText": "bài tập về nhà nên được hoàn thành",
 		"english": "the homework should be finished",
 		"soundmark": "/ðə/ /'homwɝk/ /ʃʊd/ /bi/ /'fɪnɪʃt/"
 	},
 	{
-		"chinese": "通过你",
+		"nativeText": "bởi bạn",
 		"english": "by you",
 		"soundmark": "/baɪ/ /ju/"
 	},
 	{
-		"chinese": "家庭作业应该被你完成",
+		"nativeText": "bài tập về nhà nên được bạn hoàn thành",
 		"english": "the homework should be finished by you",
 		"soundmark": "/ðə/ /'homwɝk/ /ʃʊd/ /bi/ /'fɪnɪʃt/ /baɪ/ /ju/"
 	},
 	{
-		"chinese": "晚饭",
+		"nativeText": "bữa tối",
 		"english": "dinner",
 		"soundmark": "/'dɪnɚ/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在晚饭之前",
+		"nativeText": "trước bữa tối",
 		"english": "before dinner",
 		"soundmark": "/bɪ'fɔr/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "家庭作业应该在晚饭之前被你完成",
+		"nativeText": "bài tập về nhà nên được bạn hoàn thành trước bữa tối",
 		"english": "the homework should be finished by you before dinner",
 		"soundmark": "/ðə/ /'homwɝk/ /ʃʊd/ /bi/ /'fɪnɪʃt/ /baɪ/ /ju/ /bɪ'fɔr/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "烹饪；做饭",
+		"nativeText": "nấu ăn",
 		"english": "to cook",
 		"soundmark": "/tə/ /kʊk/"
 	},
 	{
-		"chinese": "烹饪（过去分词）",
+		"nativeText": "nấu (phân từ quá khứ)",
 		"english": "cooked",
 		"soundmark": "/kʊkt/"
 	},
 	{
-		"chinese": "被烹饪",
+		"nativeText": "được nấu",
 		"english": "be cooked",
 		"soundmark": "/bi/ /kʊkt/"
 	},
 	{
-		"chinese": "母亲",
+		"nativeText": "mẹ",
 		"english": "mother",
 		"soundmark": "/'mʌðɚ/"
 	},
 	{
-		"chinese": "我的母亲",
+		"nativeText": "mẹ của tôi",
 		"english": "my mother",
 		"soundmark": "/maɪ/ /'mʌðɚ/"
 	},
 	{
-		"chinese": "通过我的母亲",
+		"nativeText": "bởi mẹ của tôi",
 		"english": "by my mother",
 		"soundmark": "/baɪ/ /maɪ/ /'mʌðɚ/"
 	},
 	{
-		"chinese": "被我妈烹饪",
+		"nativeText": "được mẹ tôi nấu",
 		"english": "be cooked by my mother",
 		"soundmark": "/bi/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
 	},
 	{
-		"chinese": "晚饭",
+		"nativeText": "bữa tối",
 		"english": "dinner",
 		"soundmark": "/'dɪnɚ/"
 	},
 	{
-		"chinese": "这顿晚饭",
+		"nativeText": "bữa tối này",
 		"english": "the dinner",
 		"soundmark": "/ðə/ /'dɪnɚ/"
 	},
 	{
-		"chinese": "这顿晚饭是被我妈做的",
+		"nativeText": "bữa tối này do mẹ tôi nấu",
 		"english": "the dinner is cooked by my mother",
 		"soundmark": "/ðə/ /'dɪnɚ/ /ɪz/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
 	},
 	{
-		"chinese": "这顿晚饭（过去）是被我妈做的",
+		"nativeText": "bữa tối này đã do mẹ tôi nấu",
 		"english": "the dinner was cooked by my mother",
 		"soundmark": "/ðə/ /'dɪnɚ/ /wəz/ /kʊkt/ /baɪ/ /maɪ/ /'mʌðɚ/"
 	},
 	{
-		"chinese": "打破",
+		"nativeText": "làm vỡ",
 		"english": "to break",
 		"soundmark": "/tə/ /brek/"
 	},
 	{
-		"chinese": "打破（过去分词）",
+		"nativeText": "vỡ (phân từ quá khứ)",
 		"english": "broken",
 		"soundmark": "/'brokən/"
 	},
 	{
-		"chinese": "被打破",
+		"nativeText": "bị vỡ",
 		"english": "be broken",
 		"soundmark": "/bi/ /'brokən/"
 	},
 	{
-		"chinese": "窗户",
+		"nativeText": "cửa sổ",
 		"english": "window",
 		"soundmark": "/'wɪndo/"
 	},
 	{
-		"chinese": "那个窗户",
+		"nativeText": "cửa sổ đó",
 		"english": "the window",
 		"soundmark": "/ðə/ /'wɪndo/"
 	},
 	{
-		"chinese": "那个窗户被打破了",
+		"nativeText": "cửa sổ đó bị vỡ",
 		"english": "the window is broken",
 		"soundmark": "/ðə/ /'wɪndo/ /ɪz/ /'brokən/"
 	},
 	{
-		"chinese": "石头",
+		"nativeText": "đá",
 		"english": "stone",
 		"soundmark": "/ston/"
 	},
 	{
-		"chinese": "通过",
+		"nativeText": "bởi",
 		"english": "by",
 		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "通过一个石头",
+		"nativeText": "bởi một viên đá",
 		"english": "by a stone",
 		"soundmark": "/baɪ/ /ə/ /ston/"
 	},
 	{
-		"chinese": "那个窗户被一个石头打破了",
+		"nativeText": "cửa sổ đó bị vỡ bởi một viên đá",
 		"english": "the window is broken by a stone",
 		"soundmark": "/ðə/ /'wɪndo/ /ɪz/ /'brokən/ /baɪ/ /ə/ /ston/"
 	},
 	{
-		"chinese": "那个窗户（过去）被一个石头打破了",
+		"nativeText": "cửa sổ đó đã bị vỡ bởi một viên đá",
 		"english": "the window was broken by a stone",
 		"soundmark": "/ðə/ /'wɪndo/ /wəz/ /'brokən/ /baɪ/ /ə/ /ston/"
 	},
 	{
-		"chinese": "关闭",
+		"nativeText": "đóng",
 		"english": "to close",
 		"soundmark": "/tə/ /kloz/"
 	},
 	{
-		"chinese": "关闭（过去分词）",
+		"nativeText": "đóng (phân từ quá khứ)",
 		"english": "closed",
 		"soundmark": "/klozd/"
 	},
 	{
-		"chinese": "被关闭",
+		"nativeText": "được đóng",
 		"english": "be closed",
 		"soundmark": "/bi/ /klozd/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "将会被关闭",
+		"nativeText": "sẽ được đóng",
 		"english": "will be closed",
 		"soundmark": "/wɪl/ /bi/ /klozd/"
 	},
 	{
-		"chinese": "那个窗户",
+		"nativeText": "cửa sổ đó",
 		"english": "the window",
 		"soundmark": "/ðə/ /'wɪndo/"
 	},
 	{
-		"chinese": "那个窗户将会被关闭",
+		"nativeText": "cửa sổ đó sẽ được đóng",
 		"english": "the window will be closed",
 		"soundmark": "/ðə/ /'wɪndo/ /wɪl/ /bi/ /klozd/"
 	},
 	{
-		"chinese": "通过我",
+		"nativeText": "bởi tôi",
 		"english": "by me",
 		"soundmark": "/baɪ/ /mi/"
 	},
 	{
-		"chinese": "那个窗户将会被我关闭",
+		"nativeText": "cửa sổ đó sẽ được tôi đóng",
 		"english": "the window will be closed by me",
 		"soundmark": "/ðə/ /'wɪndo/ /wɪl/ /bi/ /klozd/ /baɪ/ /mi/"
 	},
 	{
-		"chinese": "保持",
+		"nativeText": "giữ",
 		"english": "to keep",
 		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "保持（过去分词）",
+		"nativeText": "giữ (phân từ quá khứ)",
 		"english": "kept",
 		"soundmark": "/kɛpt/"
 	},
 	{
-		"chinese": "被保持",
+		"nativeText": "được giữ",
 		"english": "be kept",
 		"soundmark": "/bi/ /kɛpt/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "将会被保持",
+		"nativeText": "sẽ được giữ",
 		"english": "will be kept",
 		"soundmark": "/wɪl/ /bi/ /kɛpt/"
 	},
 	{
-		"chinese": "秘密",
+		"nativeText": "bí mật",
 		"english": "secret",
 		"soundmark": "/'sikrət/"
 	},
 	{
-		"chinese": "这个秘密",
+		"nativeText": "bí mật này",
 		"english": "the secret",
 		"soundmark": "/ðə/ /'sikrət/"
 	},
 	{
-		"chinese": "这个秘密将会被保持",
+		"nativeText": "bí mật này sẽ được giữ",
 		"english": "the secret will be kept",
 		"soundmark": "/ðə/ /'sikrət/ /wɪl/ /bi/ /kɛpt/"
 	},
 	{
-		"chinese": "通过他",
+		"nativeText": "bởi anh ấy",
 		"english": "by him",
 		"soundmark": "/baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "这个秘密将会被他保持",
+		"nativeText": "bí mật này sẽ được anh ấy giữ",
 		"english": "the secret will be kept by him",
 		"soundmark": "/ðə/ /'sikrət/ /wɪl/ /bi/ /kɛpt/ /baɪ/ /hɪm/"
 	},
 	{
-		"chinese": "保存；拯救",
+		"nativeText": "cứu",
 		"english": "to save",
 		"soundmark": "/tə/ /sev/"
 	},
 	{
-		"chinese": "拯救（过去分词）",
+		"nativeText": "cứu (phân từ quá khứ)",
 		"english": "saved",
 		"soundmark": "/sevd/"
 	},
 	{
-		"chinese": "被拯救",
+		"nativeText": "được cứu",
 		"english": "be saved",
 		"soundmark": "/bi/ /sevd/"
 	},
 	{
-		"chinese": "将会被拯救",
+		"nativeText": "sẽ được cứu",
 		"english": "will be saved",
 		"soundmark": "/wɪl/ /bi/ /sevd/"
 	},
 	{
-		"chinese": "世界",
+		"nativeText": "thế giới",
 		"english": "the world",
 		"soundmark": "/ðə/ /wɝld/"
 	},
 	{
-		"chinese": "世界将会被拯救",
+		"nativeText": "thế giới sẽ được cứu",
 		"english": "the world will be saved",
 		"soundmark": "/ðə/ /wɝld/ /wɪl/ /bi/ /sevd/"
 	},
 	{
-		"chinese": "通过他们",
+		"nativeText": "bởi họ",
 		"english": "by them",
 		"soundmark": "/baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "世界将会被他们拯救",
+		"nativeText": "thế giới sẽ được họ cứu",
 		"english": "the world will be saved by them",
 		"soundmark": "/ðə/ /wɝld/ /wɪl/ /bi/ /sevd/ /baɪ/ /ðəm/"
 	},
 	{
-		"chinese": "脚",
+		"nativeText": "bàn chân",
 		"english": "foot",
 		"soundmark": "/fʊt/"
 	},
 	{
-		"chinese": "球",
+		"nativeText": "quả bóng",
 		"english": "ball",
 		"soundmark": "/bɔl/"
 	},
 	{
-		"chinese": "足球",
+		"nativeText": "bóng đá",
 		"english": "football",
 		"soundmark": "/'fʊtbɔl/"
 	},
 	{
-		"chinese": "比赛",
+		"nativeText": "trận đấu",
 		"english": "match",
 		"soundmark": "/mætʃ/"
 	},
 	{
-		"chinese": "足球比赛",
+		"nativeText": "trận bóng đá",
 		"english": "football match",
 		"soundmark": "/'fʊtbɔl/ /mætʃ/"
 	},
 	{
-		"chinese": "那场足球比赛",
+		"nativeText": "trận bóng đá đó",
 		"english": "the football match",
 		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/"
 	},
 	{
-		"chinese": "举行",
+		"nativeText": "tổ chức",
 		"english": "to hold",
 		"soundmark": "/tə/ /hold/"
 	},
 	{
-		"chinese": "举行（过去分词）",
+		"nativeText": "tổ chức (phân từ quá khứ)",
 		"english": "held",
 		"soundmark": "/hɛld/"
 	},
 	{
-		"chinese": "被举行",
+		"nativeText": "được tổ chức",
 		"english": "be held",
 		"soundmark": "/bi/ /hɛld/"
 	},
 	{
-		"chinese": "将会被举行",
+		"nativeText": "sẽ được tổ chức",
 		"english": "will be held",
 		"soundmark": "/wɪl/ /bi/ /hɛld/"
 	},
 	{
-		"chinese": "那场足球比赛将会被举行",
+		"nativeText": "trận bóng đá đó sẽ được tổ chức",
 		"english": "the football match will be held",
 		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/ /wɪl/ /bi/ /hɛld/"
 	},
 	{
-		"chinese": "明天",
+		"nativeText": "ngày mai",
 		"english": "tomorrow",
 		"soundmark": "/tə'mɔro/"
 	},
 	{
-		"chinese": "那场足球比赛明天将会被举行",
+		"nativeText": "trận bóng đá đó sẽ được tổ chức vào ngày mai",
 		"english": "the football match will be held tomorrow",
 		"soundmark": "/ðə/ /'fʊtbɔl/ /mætʃ/ /wɪl/ /bi/ /hɛld/ /tə'mɔro/"
 	}

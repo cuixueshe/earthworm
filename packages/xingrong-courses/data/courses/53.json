@@ -1,777 +1,777 @@
 [
 	{
-		"chinese": "存",
+		"nativeText": "tiết kiệm",
 		"english": "to save",
 		"soundmark": "/tə/ /sev/"
 	},
 	{
-		"chinese": "存(ed形式)",
+		"nativeText": "đã tiết kiệm (ed dạng)",
 		"english": "saved",
 		"soundmark": "/sevd/"
 	},
 	{
-		"chinese": "我们(过去已经)存",
+		"nativeText": "chúng ta đã tiết kiệm (quá khứ hoàn thành)",
 		"english": "we had saved",
 		"soundmark": "/wi/ /hæd/ /sevd/"
 	},
 	{
-		"chinese": "钱",
+		"nativeText": "tiền",
 		"english": "money",
 		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "足够的",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "足够的钱",
+		"nativeText": "đủ tiền",
 		"english": "enough money",
 		"soundmark": "/ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "我们(过去已经)存了足够的钱",
+		"nativeText": "chúng ta đã tiết kiệm đủ tiền",
 		"english": "we had saved enough money",
 		"soundmark": "/wi/ /hæd/ /sevd/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "购买",
+		"nativeText": "mua",
 		"english": "to buy",
 		"soundmark": "/tə/ /baɪ/"
 	},
 	{
-		"chinese": "房子",
+		"nativeText": "ngôi nhà",
 		"english": "house",
 		"soundmark": "/haʊs/"
 	},
 	{
-		"chinese": "买一套房子",
+		"nativeText": "mua một ngôi nhà",
 		"english": "to buy a house",
 		"soundmark": "/tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "决定",
+		"nativeText": "quyết định",
 		"english": "to decide",
 		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "决定买一套房子",
+		"nativeText": "quyết định mua một ngôi nhà",
 		"english": "to decide to buy a house",
 		"soundmark": "/tə/ /dɪ'saɪd/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "我们决定买一套房子",
+		"nativeText": "chúng ta quyết định mua một ngôi nhà",
 		"english": "we decide to buy a house",
 		"soundmark": "/wi/ /dɪ'saɪd/ /tə/ /baɪ/ /ə/ /haʊs/ /(过去)决定 decided/ /dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "我们(过去)决定买一套房子",
+		"nativeText": "chúng ta đã quyết định mua một ngôi nhà",
 		"english": "we decided to buy a house",
 		"soundmark": "/wi/ /dɪ'saɪdɪd/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在我们(过去)决定买一套房子之前",
+		"nativeText": "trước khi chúng ta quyết định mua một ngôi nhà",
 		"english": "before we decided to buy a house",
 		"soundmark": "/bɪ'fɔr/ /wi/ /dɪ'saɪdɪd/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "我们(过去已经)存了足够的钱",
+		"nativeText": "chúng ta đã tiết kiệm đủ tiền",
 		"english": "we had saved enough money",
 		"soundmark": "/wi/ /hæd/ /sevd/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "在我们(过去)决定买一个房子之前我们(过去已经)存了足够的钱。",
+		"nativeText": "trước khi chúng ta quyết định mua nhà, chúng ta đã tiết kiệm đủ tiền",
 		"english": "we had saved enough money before we decided to buy a house",
 		"soundmark": "/wi/ /hæd/ /sevd/ /ɪ'nʌf/ /ˈmʌni/ /bɪ'fɔr/ /wi/ /dɪ'saɪdɪd/ /tə/ /baɪ/ /ə/ /haʊs/"
 	},
 	{
-		"chinese": "打扫",
+		"nativeText": "dọn dẹp",
 		"english": "to clean",
 		"soundmark": "/tə/ /klin/"
 	},
 	{
-		"chinese": "打扫(ed形式)",
+		"nativeText": "đã dọn dẹp (ed dạng)",
 		"english": "cleaned",
 		"soundmark": "/klind/"
 	},
 	{
-		"chinese": "他们(过去已经)打扫",
+		"nativeText": "họ đã dọn dẹp (quá khứ hoàn thành)",
 		"english": "they had cleaned",
 		"soundmark": "/ðe/ /hæd/ /klind/"
 	},
 	{
-		"chinese": "房子",
+		"nativeText": "ngôi nhà",
 		"english": "house",
 		"soundmark": "/haʊs/"
 	},
 	{
-		"chinese": "他们(过去已经)打扫了那个房子",
+		"nativeText": "họ đã dọn dẹp ngôi nhà đó",
 		"english": "they had cleaned the house",
 		"soundmark": "/ðe/ /hæd/ /klind/ /ðə/ /haʊs/"
 	},
 	{
-		"chinese": "整个",
+		"nativeText": "toàn bộ",
 		"english": "entire",
 		"soundmark": "/ɪnˈtaɪɚ/"
 	},
 	{
-		"chinese": "他们(过去已经)打扫了整个房子",
+		"nativeText": "họ đã dọn dẹp toàn bộ ngôi nhà",
 		"english": "they had cleaned the entire house",
 		"soundmark": "/ðe/ /hæd/ /klind/ /ði/ /ɪnˈtaɪɚ/ /haʊs/"
 	},
 	{
-		"chinese": "父母",
+		"nativeText": "cha mẹ",
 		"english": "parents",
 		"soundmark": "/'pɛrənts/"
 	},
 	{
-		"chinese": "他们的",
+		"nativeText": "của họ",
 		"english": "their",
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "他们的父母",
+		"nativeText": "cha mẹ của họ",
 		"english": "their parents",
 		"soundmark": "/ðɛr/ /'pɛrənts/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to arrive",
 		"soundmark": "/tə/ /ə'raɪv/ /(过去)达到 arrived/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "他们的父母(过去)到达",
+		"nativeText": "cha mẹ của họ đã đến",
 		"english": "their parents arrived",
 		"soundmark": "/ðɛr/ /'pɛrənts/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "在他们的父母(过去)到达之前",
+		"nativeText": "trước khi cha mẹ của họ đến",
 		"english": "before their parents arrived",
 		"soundmark": "/bɪ'fɔr/ /ðɛr/ /'pɛrənts/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "他们(过去已经)打扫了整个房子",
+		"nativeText": "họ đã dọn dẹp toàn bộ ngôi nhà",
 		"english": "they had cleaned the entire house",
 		"soundmark": "/ðe/ /hæd/ /klind/ /ðə/ /ɪnˈtaɪɚ/ /haʊs/"
 	},
 	{
-		"chinese": "在他们的父母(过去)到达之前他们(过去已经)打扫了整个房子。",
+		"nativeText": "trước khi cha mẹ của họ đến, họ đã dọn dẹp toàn bộ ngôi nhà",
 		"english": "they had cleaned the entire house before their parents arrived",
 		"soundmark": "/ðe/ /hæd/ /klind/ /ði/ /ɪnˈtaɪɚ/ /haʊs/ /bɪ'fɔr/ /ðɛr/ /'pɛrənts/ /ə'raɪvd/"
 	},
 	{
-		"chinese": "搬家",
+		"nativeText": "dọn nhà",
 		"english": "move",
 		"soundmark": "/muv/"
 	},
 	{
-		"chinese": "搬家(ed形式)",
+		"nativeText": "đã dọn nhà (ed dạng)",
 		"english": "moved",
 		"soundmark": "/muvd/"
 	},
 	{
-		"chinese": "他们(过去已经)搬家",
+		"nativeText": "họ đã dọn nhà (quá khứ hoàn thành)",
 		"english": "they had moved",
 		"soundmark": "/ðe/ /hæd/ /muvd/"
 	},
 	{
-		"chinese": "城市",
+		"nativeText": "thành phố",
 		"english": "city",
 		"soundmark": "/'sɪti/"
 	},
 	{
-		"chinese": "新的",
+		"nativeText": "mới",
 		"english": "new",
 		"soundmark": "/nu/"
 	},
 	{
-		"chinese": "一个新的城市",
+		"nativeText": "một thành phố mới",
 		"english": "a new city",
 		"soundmark": "/ə/ /nu/ /'sɪti/"
 	},
 	{
-		"chinese": "他们(过去已经)搬家到了一个新的城市",
+		"nativeText": "họ đã dọn đến một thành phố mới",
 		"english": "they had moved to a new city",
 		"soundmark": "/ðe/ /hæd/ /muvd/ /tə/ /ə/ /nu/ /'sɪti/"
 	},
 	{
-		"chinese": "出生",
+		"nativeText": "sinh ra",
 		"english": "to bear",
 		"soundmark": "/tə/ /bɜːθ/"
 	},
 	{
-		"chinese": "出生(ed形式)",
+		"nativeText": "đã sinh ra (ed dạng)",
 		"english": "born",
 		"soundmark": "/bɔrn/"
 	},
 	{
-		"chinese": "被出生",
+		"nativeText": "được sinh ra",
 		"english": "be born",
 		"soundmark": "/bi/ /bɔrn/"
 	},
 	{
-		"chinese": "那个婴儿",
+		"nativeText": "em bé đó",
 		"english": "the baby",
 		"soundmark": "/ðə/ /'bebi/"
 	},
 	{
-		"chinese": "那个婴儿(过去)出生",
+		"nativeText": "em bé đó đã được sinh ra",
 		"english": "the baby was born",
 		"soundmark": "/ðə/ /'bebi/ /wəz/ /bɔrn/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在那个婴儿(过去)出生之前",
+		"nativeText": "trước khi em bé đó được sinh ra",
 		"english": "before the baby was born",
 		"soundmark": "/bɪ'fɔr/ /ðə/ /'bebi/ /wəz/ /bɔrn/"
 	},
 	{
-		"chinese": "他们(过去已经)搬家到了一个新的城市",
+		"nativeText": "họ đã dọn đến một thành phố mới",
 		"english": "they had moved to a new city",
 		"soundmark": "/ðe/ /hæd/ /muvd/ /tə/ /ə/ /nu/ /'sɪti/"
 	},
 	{
-		"chinese": "在那个婴儿(过去)出生之前他们,(过去已经)搬到了一个新的城市",
+		"nativeText": "trước khi em bé được sinh ra, họ đã dọn đến một thành phố mới",
 		"english": "they had moved to a new city before the baby was born",
 		"soundmark": "/ðe/ /hæd/ /muvd/ /tə/ /ə/ /nu/ /'sɪti/ /bɪ'fɔr/ /ðə/ /'bebi/ /wəz/ /bɔrn/"
 	},
 	{
-		"chinese": "计划",
+		"nativeText": "lên kế hoạch",
 		"english": "to plan",
 		"soundmark": "/tə/ /plæn/"
 	},
 	{
-		"chinese": "计划(ed形式)",
+		"nativeText": "đã lên kế hoạch (ed dạng)",
 		"english": "planned",
 		"soundmark": "/plænd/"
 	},
 	{
-		"chinese": "他们(过去已经)计划",
+		"nativeText": "họ đã lên kế hoạch (quá khứ hoàn thành)",
 		"english": "they had planned",
 		"soundmark": "/ðe/ /hæd/ /plænd/"
 	},
 	{
-		"chinese": "已经",
+		"nativeText": "đã rồi",
 		"english": "already",
 		"soundmark": "/ɔl'rɛdi/"
 	},
 	{
-		"chinese": "他们(过去)已经计划",
+		"nativeText": "họ đã lên kế hoạch rồi",
 		"english": "they had already planned",
 		"soundmark": "/ðe/ /hæd/ /ɔl'rɛdi/ /plænd/"
 	},
 	{
-		"chinese": "假期",
+		"nativeText": "kỳ nghỉ",
 		"english": "vacation",
 		"soundmark": "/veˈkeʃn/"
 	},
 	{
-		"chinese": "他们的",
+		"nativeText": "của họ",
 		"english": "their",
 		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "他们的假期",
+		"nativeText": "kỳ nghỉ của họ",
 		"english": "their vacation",
 		"soundmark": "/ðɛr/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "他们(过去)已经计划了他们的假期",
+		"nativeText": "họ đã lên kế hoạch cho kỳ nghỉ của họ rồi",
 		"english": "they had already planned their vacation",
 		"soundmark": "/ðe/ /hæd/ /ɔl'rɛdi/ /plænd/ /ðɛr/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "邀请",
+		"nativeText": "mời",
 		"english": "to invite",
 		"soundmark": "/tə/ /ɪn'vaɪt/"
 	},
 	{
-		"chinese": "邀请",
+		"nativeText": "lời mời",
 		"english": "invitation",
 		"soundmark": "/ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "那个邀请",
+		"nativeText": "lời mời đó",
 		"english": "the invitation",
 		"soundmark": "/ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "收到",
+		"nativeText": "nhận",
 		"english": "to receive",
 		"soundmark": "/tə/ /rɪ'siv/"
 	},
 	{
-		"chinese": "收到那个邀请",
+		"nativeText": "nhận lời mời đó",
 		"english": "to receive the invitation",
 		"soundmark": "/tə/ /rɪ'siv/ /ði/ /ɪnvɪ'teʃən/ /(过去)收到 received/ /rɪ'sivd/ /(过去)收到那个邀请 received the invitation/ /rɪ'sivd/ /ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "他们(过去)收到那个邀请",
+		"nativeText": "họ đã nhận lời mời đó",
 		"english": "they received the invitation",
 		"soundmark": "/ðe/ /rɪ'sivd/ /ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在他们(过去)收到那个邀请之前",
+		"nativeText": "trước khi họ nhận lời mời đó",
 		"english": "before they received the invitation",
 		"soundmark": "/bɪ'fɔr/ /ðe/ /rɪ'sivd/ /ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "他们(过去)已经计划了他们的假期",
+		"nativeText": "họ đã lên kế hoạch cho kỳ nghỉ của họ rồi",
 		"english": "they had already planned their vacation",
 		"soundmark": "/ðe/ /hæd/ /ɔl'rɛdi/ /plænd/ /ðɛr/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "在他们(过去)收到那个邀请之前他们(过去)已经计划了他们的假期",
+		"nativeText": "trước khi họ nhận được lời mời, họ đã lên kế hoạch cho kỳ nghỉ của mình rồi",
 		"english": "they had already planned their vacation before they received the invitation",
 		"soundmark": "/ðe/ /hæd/ /ɔl'rɛdi/ /plænd/ /ðɛr/ /veˈkeʃn/ /bɪ'fɔr/ /ðe/ /rɪ'sivd/ /ði/ /ɪnvɪ'teʃən/"
 	},
 	{
-		"chinese": "离开",
+		"nativeText": "rời khỏi",
 		"english": "to leave",
 		"soundmark": "/tə/ /liv/"
 	},
 	{
-		"chinese": "办公室",
+		"nativeText": "văn phòng",
 		"english": "office",
 		"soundmark": "/ði/ /'ɑfɪs/"
 	},
 	{
-		"chinese": "离开办公室",
+		"nativeText": "rời khỏi văn phòng",
 		"english": "to leave the office",
 		"soundmark": "/tə/ /liv/ /ði/ /'ɑfɪs/"
 	},
 	{
-		"chinese": "离开(ed形式)",
+		"nativeText": "đã rời khỏi (ed dạng)",
 		"english": "left",
 		"soundmark": "/lɛft/"
 	},
 	{
-		"chinese": "她(过去已经)离开",
+		"nativeText": "cô ấy đã rời khỏi (quá khứ hoàn thành)",
 		"english": "she had left",
 		"soundmark": "/ʃi/ /hæd/ /lɛft/"
 	},
 	{
-		"chinese": "她(过去已经)离开办公室",
+		"nativeText": "cô ấy đã rời khỏi văn phòng",
 		"english": "she had left the office",
 		"soundmark": "/ʃi/ /hæd/ /lɛft/ /ði/ /'ɑfɪs/"
 	},
 	{
-		"chinese": "刚刚",
+		"nativeText": "vừa mới",
 		"english": "just",
 		"soundmark": "/dʒʌst/"
 	},
 	{
-		"chinese": "她(过去已经)刚刚离开办公室",
+		"nativeText": "cô ấy vừa mới rời khỏi văn phòng",
 		"english": "she had just left the office",
 		"soundmark": "/ʃi/ /hæd/ /dʒʌst/ /lɛft/ /ði/ /'ɑfɪs/"
 	},
 	{
-		"chinese": "老板",
+		"nativeText": "sếp",
 		"english": "boss",
 		"soundmark": "/bɔs/"
 	},
 	{
-		"chinese": "她的",
+		"nativeText": "của cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "她的老板",
+		"nativeText": "sếp của cô ấy",
 		"english": "her boss",
 		"soundmark": "/hɚ/ /bɔs/"
 	},
 	{
-		"chinese": "打电话",
+		"nativeText": "gọi điện",
 		"english": "to call",
 		"soundmark": "/tə/ /kɔl/ /(过去)打电话 called/ /kɔld/"
 	},
 	{
-		"chinese": "她的老板(过去)打电话",
+		"nativeText": "sếp của cô ấy đã gọi điện",
 		"english": "her boss called",
 		"soundmark": "/hɚ/ /bɔs/ /kɔld/"
 	},
 	{
-		"chinese": "当......时候",
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当她的老板(过去)打电话的时候",
+		"nativeText": "khi sếp của cô ấy gọi điện",
 		"english": "when her boss called",
 		"soundmark": "/wɛn/ /hɚ/ /bɔs/ /kɔld/"
 	},
 	{
-		"chinese": "她(过去已经)刚刚离开办公室",
+		"nativeText": "cô ấy vừa mới rời khỏi văn phòng",
 		"english": "she had just left the office",
 		"soundmark": "/ʃi/ /hæd/ /dʒʌst/ /lɛft/ /ði/ /'ɑfɪs/"
 	},
 	{
-		"chinese": "她(过去已经)刚刚离开办公室当她的老板(过去)打电话的时候",
+		"nativeText": "khi sếp của cô ấy gọi điện, cô ấy vừa mới rời khỏi văn phòng",
 		"english": "she had just left the office when her boss called",
 		"soundmark": "/ʃi/ /hæd/ /dʒʌst/ /lɛft/ /ði/ /'ɑfɪs/ /wɛn/ /hɚ/ /bɔs/ /kɔld/"
 	},
 	{
-		"chinese": "任务",
+		"nativeText": "nhiệm vụ",
 		"english": "task",
 		"soundmark": "/tæsk/"
 	},
 	{
-		"chinese": "紧急的",
+		"nativeText": "khẩn cấp",
 		"english": "urgent",
 		"soundmark": "/'ɝdʒənt/"
 	},
 	{
-		"chinese": "一项紧急的任务",
+		"nativeText": "một nhiệm vụ khẩn cấp",
 		"english": "an urgent task",
 		"soundmark": "/ən/ /'ɝdʒənt/ /tæsk/"
 	},
 	{
-		"chinese": "她的老板(过去)打电话",
+		"nativeText": "sếp của cô ấy đã gọi điện",
 		"english": "her boss called",
 		"soundmark": "/hɚ/ /bɔs/ /kɔld/"
 	},
 	{
-		"chinese": "她的老板(过去)打电话给她安排一项紧急的任务",
+		"nativeText": "sếp của cô ấy đã gọi điện về một nhiệm vụ khẩn cấp",
 		"english": "her boss called with an urgent task",
 		"soundmark": "/hɚ/ /bɔs/ /kɔld/ /wɪð/ /ən/ /'ɝdʒənt/ /tæsk/"
 	},
 	{
-		"chinese": "当她的老板(过去)打电话给她安排一项紧急的任务的时候",
+		"nativeText": "khi sếp của cô ấy gọi điện về một nhiệm vụ khẩn cấp",
 		"english": "when her boss called with an urgent task",
 		"soundmark": "/wɛn/ /hɚ/ /bɔs/ /kɔld/ /wɪð/ /ən/ /'ɝdʒənt/ /tæsk/"
 	},
 	{
-		"chinese": "她(过去已经)刚刚离开办公室",
+		"nativeText": "cô ấy vừa mới rời khỏi văn phòng",
 		"english": "she had just left the office",
 		"soundmark": "/ʃi/ /hæd/ /dʒʌst/ /lɛft/ /ði/ /'ɑfɪs/"
 	},
 	{
-		"chinese": "当她的老板(过去)打电话给她安排一项紧急任务的时候她刚刚离开办公室",
+		"nativeText": "khi sếp của cô ấy gọi điện về một nhiệm vụ khẩn cấp, cô ấy vừa mới rời khỏi văn phòng",
 		"english": "she had just left the office when her boss called with an urgent task",
 		"soundmark": "/ʃi/ /hæd/ /dʒʌst/ /lɛft/ /ði/ /'ɑfɪs/ /wɛn/ /hɚ/ /bɔs/ /kɔld/ /wɪð/ /ən/ /'ɝdʒənt/ /tæsk/"
 	},
 	{
-		"chinese": "在国外",
+		"nativeText": "ở nước ngoài",
 		"english": "abroad",
 		"soundmark": "/ə'brɔd/"
 	},
 	{
-		"chinese": "我在国外",
+		"nativeText": "tôi đang ở nước ngoài",
 		"english": "I am abroad",
 		"soundmark": "/aɪ/ /æm/ /ə'brɔd/ /be(ed形式) been/ /bɪn/"
 	},
 	{
-		"chinese": "我(已经)去过国外",
+		"nativeText": "tôi đã ở nước ngoài",
 		"english": "I have been abroad",
 		"soundmark": "/aɪ/ /hæv/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "还没有",
+		"nativeText": "chưa",
 		"english": "haven't",
 		"soundmark": "/ˈhævnt/"
 	},
 	{
-		"chinese": "我还没有去过国外",
+		"nativeText": "tôi chưa ở nước ngoài",
 		"english": "I haven't been abroad",
 		"soundmark": "/aɪ/ /ˈhævnt/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "从来没有",
+		"nativeText": "chưa từng",
 		"english": "never",
 		"soundmark": "/'nɛvɚ/"
 	},
 	{
-		"chinese": "我从来没有去过国外",
+		"nativeText": "tôi chưa từng ở nước ngoài",
 		"english": "I have never been abroad",
 		"soundmark": "/aɪ/ /hæv/ /'nɛvɚ/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "我(过去)从来没有去过国外",
+		"nativeText": "tôi chưa từng ở nước ngoài (quá khứ hoàn thành)",
 		"english": "I had never been abroad",
 		"soundmark": "/aɪ/ /hæd/ /'nɛvɚ/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "她(过去)从来没有去过国外",
+		"nativeText": "cô ấy chưa từng ở nước ngoài (quá khứ hoàn thành)",
 		"english": "she had never been abroad",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "旅行",
+		"nativeText": "chuyến đi",
 		"english": "trip",
 		"soundmark": "/trɪp/"
 	},
 	{
-		"chinese": "她的旅行",
+		"nativeText": "chuyến đi của cô ấy",
 		"english": "her trip",
 		"soundmark": "/hɚ/ /trɪp/"
 	},
 	{
-		"chinese": "西班牙",
+		"nativeText": "Tây Ban Nha",
 		"english": "Spain",
 		"soundmark": "/spen/"
 	},
 	{
-		"chinese": "她的去西班牙的旅行",
+		"nativeText": "chuyến đi Tây Ban Nha của cô ấy",
 		"english": "her trip to Spain",
 		"soundmark": "/hɚ/ /trɪp/ /tə/ /spen/"
 	},
 	{
-		"chinese": "上一个",
+		"nativeText": "vừa qua",
 		"english": "last",
 		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "年",
+		"nativeText": "năm",
 		"english": "year",
 		"soundmark": "/jɪr/"
 	},
 	{
-		"chinese": "去年",
+		"nativeText": "năm ngoái",
 		"english": "last year",
 		"soundmark": "/læst/ /jɪr/"
 	},
 	{
-		"chinese": "去年她的去西班牙的旅行",
+		"nativeText": "chuyến đi Tây Ban Nha của cô ấy vào năm ngoái",
 		"english": "her trip to Spain last year",
 		"soundmark": "/hɚ/ /trɪp/ /tə/ /spen/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在去年她的去西班牙的旅行之前",
+		"nativeText": "trước chuyến đi Tây Ban Nha của cô ấy vào năm ngoái",
 		"english": "before her trip to Spain last year",
 		"soundmark": "/bɪ'fɔr/ /hɚ/ /trɪp/ /tə/ /spen/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "她(过去)从来没有去过国外",
+		"nativeText": "cô ấy chưa từng ở nước ngoài (quá khứ hoàn thành)",
 		"english": "she had never been abroad",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "在去年她的去西班牙的旅行之前她(过去)从来没有去过国外",
+		"nativeText": "trước chuyến đi Tây Ban Nha của cô ấy vào năm ngoái, cô ấy chưa từng ở nước ngoài",
 		"english": "she had never been abroad before her trip to Spain last year",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /ə'brɔd/ /bɪ'fɔr/ /hɚ/ /trɪp/ /tə/ /spen/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "国家",
+		"nativeText": "quốc gia",
 		"english": "country",
 		"soundmark": "/ˈkʌntri/"
 	},
 	{
-		"chinese": "外国的",
+		"nativeText": "nước ngoài",
 		"english": "foreign",
 		"soundmark": "/ˈfɔrən/"
 	},
 	{
-		"chinese": "外国",
+		"nativeText": "một quốc gia nước ngoài",
 		"english": "a foreign country",
 		"soundmark": "/ə/ /ˈfɔrən/ /ˈkʌntri/"
 	},
 	{
-		"chinese": "在国外",
+		"nativeText": "ở nước ngoài",
 		"english": "abroad",
 		"soundmark": "/ə'brɔd/"
 	},
 	{
-		"chinese": "她(过去)从来没有去过国外",
+		"nativeText": "cô ấy chưa từng ở nước ngoài (quá khứ hoàn thành)",
 		"english": "she had never been abroad",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /ə'brɔd/"
 	},
 	{
-		"chinese": "她(过去)从来没有去过外国",
+		"nativeText": "cô ấy chưa từng đến một quốc gia nước ngoài nào",
 		"english": "she had never been to a foreign country",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ə/ /ˈfɔrən/ /ˈkʌntri/"
 	},
 	{
-		"chinese": "在去年她的去西班牙的旅行之前",
+		"nativeText": "trước chuyến đi Tây Ban Nha của cô ấy vào năm ngoái",
 		"english": "before her trip to Spain last year",
 		"soundmark": "/bɪ'fɔr/ /hɚ/ /trɪp/ /tə/ /spen/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "在去年她的去西班牙的旅行之前她(过去)从来没有去过外国",
+		"nativeText": "trước chuyến đi Tây Ban Nha của cô ấy vào năm ngoái, cô ấy chưa từng đến một quốc gia nước ngoài nào",
 		"english": "she had never been to a foreign country before her trip to Spain last year",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ə/ /ˈfɔrən/ /ˈkʌntri/ /bɪ'fɔr/ /hɚ/ /trɪp/ /tə/ /spen/ /læst/ /jɪr/"
 	},
 	{
-		"chinese": "她(过去)从来没有去过",
+		"nativeText": "cô ấy chưa từng đến",
 		"english": "she had never been",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/"
 	},
 	{
-		"chinese": "加州",
+		"nativeText": "California",
 		"english": "California",
 		"soundmark": "/ˌkælɪˈfɔrnjə/"
 	},
 	{
-		"chinese": "她(过去)从来没有去过加州",
+		"nativeText": "cô ấy chưa từng đến California",
 		"english": "she had never been to California",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ˌkælɪˈfɔrnjə/"
 	},
 	{
-		"chinese": "夏天",
+		"nativeText": "mùa hè",
 		"english": "summer",
 		"soundmark": "/'sʌmɚ/"
 	},
 	{
-		"chinese": "上一个",
+		"nativeText": "vừa qua",
 		"english": "last",
 		"soundmark": "/læst/"
 	},
 	{
-		"chinese": "去年夏天",
+		"nativeText": "mùa hè năm ngoái",
 		"english": "last summer",
 		"soundmark": "/læst/ /'sʌmɚ/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在去年夏天之前",
+		"nativeText": "trước mùa hè năm ngoái",
 		"english": "before last summer",
 		"soundmark": "/bɪ'fɔr/ /læst/ /'sʌmɚ/"
 	},
 	{
-		"chinese": "在去年夏天之前她(过去)从来没有去过加州",
+		"nativeText": "trước mùa hè năm ngoái, cô ấy chưa từng đến California",
 		"english": "she had never been to California before last summer",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /tə/ /ˌkælɪˈfɔrnjə/ /bɪ'fɔr/ /læst/ /'sʌmɚ/"
 	},
 	{
-		"chinese": "迟到",
+		"nativeText": "trễ",
 		"english": "late",
 		"soundmark": "/let/"
 	},
 	{
-		"chinese": "她(过去)从来没有迟到过",
+		"nativeText": "cô ấy chưa từng bị trễ",
 		"english": "she had never been late",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /let/"
 	},
 	{
-		"chinese": "工作",
+		"nativeText": "công việc",
 		"english": "work",
 		"soundmark": "/wɝk/"
 	},
 	{
-		"chinese": "她(过去)从来没有上班迟到过",
+		"nativeText": "cô ấy chưa từng đi làm trễ",
 		"english": "she had never been late to work",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /let/ /tə/ /wɝk/"
 	},
 	{
-		"chinese": "天",
+		"nativeText": "ngày",
 		"english": "day",
 		"soundmark": "/de/"
 	},
 	{
-		"chinese": "那天",
+		"nativeText": "ngày hôm đó",
 		"english": "that day",
 		"soundmark": "/ðæt/ /de/"
 	},
 	{
-		"chinese": "在那天之前",
+		"nativeText": "trước ngày hôm đó",
 		"english": "before that day",
 		"soundmark": "/bɪ'fɔr/ /ðæt/ /de/"
 	},
 	{
-		"chinese": "在那天之前她(过去)从来没有上班迟到过",
+		"nativeText": "trước ngày hôm đó, cô ấy chưa từng đi làm trễ",
 		"english": "she had never been late to work before that day",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /bɪn/ /let/ /tə/ /wɝk/ /bɪ'fɔr/ /ðæt/ /de/"
 	},
 	{
-		"chinese": "驾驶",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "驾驶(ed形式)",
+		"nativeText": "đã lái xe (ed dạng)",
 		"english": "driven",
 		"soundmark": "/'drɪvn/"
 	},
 	{
-		"chinese": "她(过去)从来没有驾驶过",
+		"nativeText": "cô ấy chưa từng lái xe",
 		"english": "she had never driven",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/"
 	},
 	{
-		"chinese": "车",
+		"nativeText": "xe",
 		"english": "car",
 		"soundmark": "/kɑr/"
 	},
 	{
-		"chinese": "她(过去)从来没有驾驶过一辆车",
+		"nativeText": "cô ấy chưa từng lái một chiếc xe",
 		"english": "she had never driven a car",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/ /ə/ /kɑr/"
 	},
 	{
-		"chinese": "驾驶",
+		"nativeText": "lái xe",
 		"english": "to drive",
 		"soundmark": "/tə/ /draɪv/"
 	},
 	{
-		"chinese": "驾驶员",
+		"nativeText": "tài xế",
 		"english": "driver",
 		"soundmark": "/'draɪvɚ/"
 	},
 	{
-		"chinese": "执照",
+		"nativeText": "giấy phép",
 		"english": "license",
 		"soundmark": "/'laɪsns/"
 	},
 	{
-		"chinese": "驾照",
+		"nativeText": "bằng lái xe",
 		"english": "driver's license",
 		"soundmark": "/'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "她的驾照",
+		"nativeText": "bằng lái xe của cô ấy",
 		"english": "her driver's license",
 		"soundmark": "/hɚ/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "拿到",
+		"nativeText": "lấy",
 		"english": "to get",
 		"soundmark": "/tə/ /ɡɛt/ /(过去)拿到 got/ /ɡɑt/"
 	},
 	{
-		"chinese": "她(过去)拿到",
+		"nativeText": "cô ấy đã lấy",
 		"english": "she got",
 		"soundmark": "/ʃi/ /ɡɑt/"
 	},
 	{
-		"chinese": "她(过去)拿到她的驾照",
+		"nativeText": "cô ấy đã lấy bằng lái xe của cô ấy",
 		"english": "she got her driver's license",
 		"soundmark": "/ʃi/ /ɡɑt/ /hɚ/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "在她(过去)拿到她的驾照之前",
+		"nativeText": "trước khi cô ấy lấy bằng lái xe của cô ấy",
 		"english": "before she got her driver's license",
 		"soundmark": "/bɪ'fɔr/ /ʃi/ /ɡɑt/ /hɚ/ /'draɪvɚz/ /'laɪsns/"
 	},
 	{
-		"chinese": "她(过去)从来没有驾驶过一辆车",
+		"nativeText": "cô ấy chưa từng lái một chiếc xe",
 		"english": "she had never driven a car",
 		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/ /ə/ /kɑr/"
 	},
 	{
-		"chinese": "在她(过去)拿到她的驾照之前她,(过去)从来没有驾驶过一辆车",
+		"nativeText": "trước khi cô ấy lấy bằng lái xe, cô ấy chưa từng lái xe",
 		"english": "she had never driven a car before she got her driver's license",
-		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/ /ə/ /kɑr/ /bɪ'fɔr/ /ʃi/ /ɡɑt/ /hɚ/ /'draɪvɚz/ /'laɪsns/"
+		"soundmark": "/ʃi/ /hæd/ /'nɛvɚ/ /'drɪvn/ /ə/ /kɑr/ /bɪ'fɔr/ /ʃi/ /ɡɑt/ /hɚ/ /'draɪvɚz' /'laɪsns/"
 	}
 ]

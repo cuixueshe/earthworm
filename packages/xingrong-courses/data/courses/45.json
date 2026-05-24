@@ -1,622 +1,642 @@
 [
 	{
-		"chinese": "允许",
-		"english": "to permit",
-		"soundmark": "/tə/ /pɚˈmɪt/"
+		"nativeText": "thành thạo",
+		"english": "to master",
+		"soundmark": "/tə/ /'mæstɚ/"
 	},
 	{
-		"chinese": "老师",
-		"english": "the teacher",
-		"soundmark": "/ðə/ /'titʃɚ/"
+		"nativeText": "tiếng Anh",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "老师允许",
-		"english": "the teacher permits",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/"
+		"nativeText": "thành thạo tiếng Anh",
+		"english": "to master English",
+		"soundmark": "/tə/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "唱歌",
-		"english": "to sing",
-		"soundmark": "/tə/ /sɪŋ/"
+		"nativeText": "thử",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "课堂",
-		"english": "class",
-		"soundmark": "/klæs/"
+		"nativeText": "thử thành thạo tiếng Anh",
+		"english": "to try to master English",
+		"soundmark": "/tə/ /traɪ/ /tə/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
 	},
 	{
-		"chinese": "在",
+		"nativeText": "quyết định",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã quyết định",
+		"english": "she decided",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/"
+	},
+	{
+		"nativeText": "thử thành thạo tiếng Anh",
+		"english": "to try to master English",
+		"soundmark": "/tə/ /traɪ/ /tə/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "cô ấy đã quyết định thử thành thạo tiếng Anh",
+		"english": "she decided to try to master English",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/ /tə/ /traɪ/ /tə/ /'mæstɚ/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "nhà hàng",
+		"english": "restaurant",
+		"soundmark": "/'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "mới",
+		"english": "new",
+		"soundmark": "/nu/"
+	},
+	{
+		"nativeText": "nhà hàng mới",
+		"english": "new restaurant",
+		"soundmark": "/nu/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "nhà hàng mới đó",
+		"english": "the new restaurant",
+		"soundmark": "/ðə/ /nu/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "cô ấy đã quyết định thử",
+		"english": "she decided to try",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/ /tə/ /traɪ/"
+	},
+	{
+		"nativeText": "cô ấy đã quyết định thử nhà hàng mới đó",
+		"english": "she decided to try the new restaurant",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/ /tə/ /traɪ/ /ðə/ /nu/ /'rɛstrɑnt/"
+	},
+	{
+		"nativeText": "đọc",
+		"english": "to read",
+		"soundmark": "/tə/ /rid/"
+	},
+	{
+		"nativeText": "sách",
+		"english": "books",
+		"soundmark": "/bʊks/"
+	},
+	{
+		"nativeText": "đọc sách",
+		"english": "to read books",
+		"soundmark": "/tə/ /rid/ /bʊks/"
+	},
+	{
+		"nativeText": "tiếng Anh",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "đọc sách tiếng Anh",
+		"english": "to read English books",
+		"soundmark": "/tə/ /rid/ /ˈɪŋɡlɪʃ/ /bʊks/"
+	},
+	{
+		"nativeText": "đang đọc sách tiếng Anh",
+		"english": "reading English books",
+		"soundmark": "/'ridɪŋ/ /ˈɪŋɡlɪʃ/ /bʊks/"
+	},
+	{
+		"nativeText": "thử",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
+	},
+	{
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử đọc sách tiếng Anh",
+		"english": "she tried reading English books",
+		"soundmark": "/ʃi/ /traɪd/ /'ridɪŋ/ /ˈɪŋɡlɪʃ/ /bʊks/"
+	},
+	{
+		"nativeText": "đường dây",
+		"english": "line",
+		"soundmark": "/laɪn/"
+	},
+	{
+		"nativeText": "trực tuyến",
+		"english": "online",
+		"soundmark": "/ɑnˈlaɪn/"
+	},
+	{
+		"nativeText": "khóa học",
+		"english": "course",
+		"soundmark": "/kɔrsɪz/"
+	},
+	{
+		"nativeText": "khóa học trực tuyến",
+		"english": "online courses",
+		"soundmark": "/ɑnˈlaɪn/ /kɔrsɪz/"
+	},
+	{
+		"nativeText": "sử dụng",
+		"english": "to use",
+		"soundmark": "/tə/ /juz/"
+	},
+	{
+		"nativeText": "sử dụng khóa học trực tuyến",
+		"english": "to use online courses",
+		"soundmark": "/tə/ /juz/ /ɑnˈlaɪn/ /kɔrsɪz/"
+	},
+	{
+		"nativeText": "đang sử dụng khóa học trực tuyến",
+		"english": "using online courses",
+		"soundmark": "/juzɪŋ/ /ɑnˈlaɪn/ /kɔrsɪz/"
+	},
+	{
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử sử dụng khóa học trực tuyến",
+		"english": "she tried using online courses",
+		"soundmark": "/ʃi/ /traɪd/ /juzɪŋ/ /ɑnˈlaɪn/ /kɔrsɪz/"
+	},
+	{
+		"nativeText": "bài hát",
+		"english": "song",
+		"soundmark": "/sɔŋ/"
+	},
+	{
+		"nativeText": "bài hát tiếng Anh",
+		"english": "English songs",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /sɔŋz/"
+	},
+	{
+		"nativeText": "nghe",
+		"english": "to listen",
+		"soundmark": "/tə/ /'lɪsn/"
+	},
+	{
+		"nativeText": "nghe bài hát tiếng Anh",
+		"english": "to listen to English songs",
+		"soundmark": "/tə/ /'lɪsn/ /tə/ /ˈɪŋɡlɪʃ/ /sɔŋz/"
+	},
+	{
+		"nativeText": "đang nghe bài hát tiếng Anh",
+		"english": "listening to English songs",
+		"soundmark": "/'lɪsnɪŋ/ /tə/ /ˈɪŋɡlɪʃ/ /sɔŋz/"
+	},
+	{
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử nghe bài hát tiếng Anh",
+		"english": "she tried listening to English songs",
+		"soundmark": "/ʃi/ /traɪd/ /'lɪsnɪŋ/ /tə/ /ˈɪŋɡlɪʃ/ /sɔŋz/"
+	},
+	{
+		"nativeText": "nói",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
+	},
+	{
+		"nativeText": "người nói",
+		"english": "speaker",
+		"soundmark": "/'spikɚ/"
+	},
+	{
+		"nativeText": "bản địa",
+		"english": "native",
+		"soundmark": "/ˈnetɪv/"
+	},
+	{
+		"nativeText": "người bản ngữ",
+		"english": "native speakers",
+		"soundmark": "/ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "nói",
+		"english": "to speak",
+		"soundmark": "/tə/ /spik/"
+	},
+	{
+		"nativeText": "với",
+		"english": "with",
+		"soundmark": "/wɪð/"
+	},
+	{
+		"nativeText": "nói chuyện với người bản ngữ",
+		"english": "to speak with native speakers",
+		"soundmark": "/tə/ /spik/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "đang nói chuyện với người bản ngữ",
+		"english": "speaking with native speakers",
+		"soundmark": "/'spikɪŋ/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "luyện tập",
+		"english": "to practice",
+		"soundmark": "/tə/ /ˈpræktɪs/"
+	},
+	{
+		"nativeText": "luyện tập nói chuyện với người bản ngữ",
+		"english": "to practice speaking with native speakers",
+		"soundmark": "/tə/ /ˈpræktɪs/ /'spikɪŋ/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "đang luyện tập nói chuyện với người bản ngữ",
+		"english": "practicing speaking with native speakers",
+		"soundmark": "/ˈpræktɪsɪŋ/ /'spikɪŋ/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử luyện tập nói chuyện với người bản ngữ",
+		"english": "she tried practicing speaking with native speakers",
+		"soundmark": "/ʃi/ /traɪd/ /ˈpræktɪsɪŋ/ /'spikɪŋ/ /wɪð/ /ˈnetɪv/ /'spikɚz/"
+	},
+	{
+		"nativeText": "đang nói",
+		"english": "speaking",
+		"soundmark": "/'spikɪŋ/"
+	},
+	{
+		"nativeText": "tiếng Anh",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"nativeText": "nói tiếng Anh",
+		"english": "English-speaking",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /'spikɪŋ/"
+	},
+	{
+		"nativeText": "môi trường",
+		"english": "environment",
+		"soundmark": "/ɪnˈvaɪrənmənt/"
+	},
+	{
+		"nativeText": "môi trường nói tiếng Anh",
+		"english": "English-speaking environment",
+		"soundmark": "/ˈɪŋɡlɪʃ/ /'spikɪŋ/ /ɪnˈvaɪrənmənt/"
+	},
+	{
+		"nativeText": "một môi trường nói tiếng Anh",
+		"english": "an English-speaking environment",
+		"soundmark": "/ən/ /ˈɪŋɡlɪʃ/ /'spikɪŋ/ /ɪnˈvaɪrənmənt/"
+	},
+	{
+		"nativeText": "trong",
 		"english": "in",
 		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "在课堂",
-		"english": "in the class",
-		"soundmark": "/ɪn/ /ðə/ /klæs/"
+		"nativeText": "trong một môi trường nói tiếng Anh",
+		"english": "in an English-speaking environment",
+		"soundmark": "/ɪn/ /ən/ /ˈɪŋɡlɪʃ/ /'spikɪŋ' /ɪnˈvaɪrənmənt/"
 	},
 	{
-		"chinese": "音乐",
-		"english": "music",
-		"soundmark": "/'mjuzɪk/"
+		"nativeText": "đắm chìm",
+		"english": "to immerse",
+		"soundmark": "/tə/ /ɪˈmɝs/"
 	},
 	{
-		"chinese": "在音乐课",
-		"english": "in the music class",
-		"soundmark": "/ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"nativeText": "chính cô ấy",
+		"english": "herself",
+		"soundmark": "/hɝ'sɛlf/"
 	},
 	{
-		"chinese": "在音乐课唱歌",
-		"english": "to sing in the music class",
-		"soundmark": "/tə/ /sɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"nativeText": "đắm chìm chính cô ấy",
+		"english": "to immerse herself",
+		"soundmark": "/tə/ /ɪˈmɝs/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "在音乐课唱歌(ing形式)",
-		"english": "singing in the music class",
-		"soundmark": "/'sɪŋɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"nativeText": "đắm chìm chính cô ấy trong một môi trường nói tiếng Anh",
+		"english": "to immerse herself in an English-speaking environment",
+		"soundmark": "/tə/ /ɪˈmɝs/ /hɝ'sɛlf/ /ɪn/ /ən/ /ˈɪŋɡlɪʃ/ /'spikɪŋ/ /ɪnˈvaɪrənmənt/"
 	},
 	{
-		"chinese": "老师允许",
-		"english": "the teacher permits",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/"
+		"nativeText": "đang đắm chìm",
+		"english": "immersing",
+		"soundmark": "/ɪˈmɝsɪŋ/"
 	},
 	{
-		"chinese": "老师允许在音乐课唱歌",
-		"english": "the teacher permits singing in the music class",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/ /'sɪŋɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"nativeText": "đang đắm chìm chính cô ấy trong một môi trường nói tiếng Anh",
+		"english": "immersing herself in an English-speaking environment",
+		"soundmark": "/ɪˈmɝsɪŋ/ /hɝ'sɛlf/ /ɪn/ /ən/ /ˈɪŋɡlɪʃ/ /'spikɪŋ/ /ɪnˈvaɪrənmənt/"
 	},
 	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
 	},
 	{
-		"chinese": "老师允许他",
-		"english": "the teacher permits him",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/ /hɪm/"
+		"nativeText": "cô ấy đã thử đắm chìm chính mình trong một môi trường nói tiếng Anh",
+		"english": "she tried immersing herself in an English-speaking environment",
+		"soundmark": "/ʃi/ /traɪd/ /ɪˈmɝsɪŋ/ /hɝ'sɛlf/ /ɪn/ /ən/ /ˈɪŋɡlɪʃ/ /'spikɪŋ/ /ɪnˈvaɪrənmənt/"
 	},
 	{
-		"chinese": "在音乐课唱歌",
-		"english": "to sing in the music class",
-		"soundmark": "/tə/ /sɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
+		"nativeText": "thể lực",
+		"english": "fitness",
+		"soundmark": "/'fɪtnəs/"
 	},
 	{
-		"chinese": "老师允许他在音乐课唱歌",
-		"english": "the teacher permits him to sing in the music class",
-		"soundmark": "/ðə/ /'titʃɚ/ /pɚˈmɪts/ /hɪm/ /tə/ /sɪŋ/ /ɪn/ /ðə/ /'mjuzɪk/ /klæs/"
-	},
-	{
-		"chinese": "大海",
-		"english": "the sea",
-		"soundmark": "/ðə/ /si/"
-	},
-	{
-		"chinese": "在......里",
-		"english": "in",
-		"soundmark": "/ɪn/"
-	},
-	{
-		"chinese": "在大海里",
-		"english": "in the sea",
-		"soundmark": "/ɪn/ /ðə/ /si/"
-	},
-	{
-		"chinese": "游泳",
-		"english": "to swim",
-		"soundmark": "/tə/ /swɪm/"
-	},
-	{
-		"chinese": "在大海里游泳",
-		"english": "to swim in the sea",
-		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/"
-	},
-	{
-		"chinese": "日落",
-		"english": "sunset",
-		"soundmark": "/'sʌnsɛt/"
-	},
-	{
-		"chinese": "在......之前",
-		"english": "before",
-		"soundmark": "/bɪ'fɔr/"
-	},
-	{
-		"chinese": "在日落之前",
-		"english": "before sunset",
-		"soundmark": "/bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "在日落之前在大海里游泳",
-		"english": "to swim in the sea before sunset",
-		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "在日落之前在大海里游泳(ing形式)",
-		"english": "swimming in the sea before sunset",
-		"soundmark": "/'swɪmɪŋ/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "允许",
-		"english": "to permit",
-		"soundmark": "/tə/ /pɚˈmɪt/"
-	},
-	{
-		"chinese": "政策",
-		"english": "the policy",
-		"soundmark": "/ðə/ /ˈpɑləsi/"
-	},
-	{
-		"chinese": "政策允许",
-		"english": "the policy permits",
-		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/"
-	},
-	{
-		"chinese": "政策允许在日落之前在大海里游泳",
-		"english": "the policy permits swimming in the sea before sunset",
-		"soundmark": "/ðə/ /ˈpɑləsi/ /pɚˈmɪts/ /'swɪmɪŋ/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "父亲",
-		"english": "father",
-		"soundmark": "/'fɑðɚ/"
-	},
-	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
-	},
-	{
-		"chinese": "他的父亲",
-		"english": "his father",
-		"soundmark": "/hɪz/ /'fɑðɚ/"
-	},
-	{
-		"chinese": "允许",
-		"english": "to permit",
-		"soundmark": "/tə/ /pɚˈmɪt/"
-	},
-	{
-		"chinese": "他的父亲允许",
-		"english": "his father permits",
-		"soundmark": "/hɪz/ /'fɑðɚ/ /pɚˈmɪts/"
-	},
-	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
-	},
-	{
-		"chinese": "他的父亲允许他",
-		"english": "his father permits him",
-		"soundmark": "/hɪz/ /'fɑðɚ/ /pɚˈmɪts/ /hɪm/"
-	},
-	{
-		"chinese": "在日落之前在大海里游泳",
-		"english": "to swim in the sea before sunset",
-		"soundmark": "/tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "他的父亲允许他在日落之前在大海里游泳",
-		"english": "his father permits him to swim in the sea before sunset",
-		"soundmark": "/hɪz/ /'fɑðɚ/ /pɚˈmɪts/ /hɪm/ /tə/ /swɪm/ /ɪn/ /ðə/ /si/ /bɪ'fɔr/ /'sʌnsɛt/"
-	},
-	{
-		"chinese": "停止",
-		"english": "to stop",
-		"soundmark": "/tə/ /stɑp/"
-	},
-	{
-		"chinese": "他",
-		"english": "he",
-		"soundmark": "/hi/"
-	},
-	{
-		"chinese": "他停止",
-		"english": "he stops",
-		"soundmark": "/hi/ /stɑps/"
-	},
-	{
-		"chinese": "他停止(过去)",
-		"english": "he stopped",
-		"soundmark": "/hi/ /stɑpt/"
-	},
-	{
-		"chinese": "抽烟",
-		"english": "to smoke",
-		"soundmark": "/tə/ /smok/"
-	},
-	{
-		"chinese": "抽烟(ing形式)",
-		"english": "smoking",
-		"soundmark": "/'smokɪŋ/"
-	},
-	{
-		"chinese": "他停止抽烟",
-		"english": "he stopped smoking",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/"
-	},
-	{
-		"chinese": "健康",
-		"english": "health",
-		"soundmark": "/hɛlθ/"
-	},
-	{
-		"chinese": "他的健康",
-		"english": "his health",
-		"soundmark": "/hɪz/ /hɛlθ/"
-	},
-	{
-		"chinese": "为了",
-		"english": "for",
-		"soundmark": "/fɚ/"
-	},
-	{
-		"chinese": "为了他的健康",
-		"english": "for his health",
-		"soundmark": "/fɚ/ /hɪz/ /hɛlθ/"
-	},
-	{
-		"chinese": "他停止抽烟",
-		"english": "he stopped smoking",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/"
-	},
-	{
-		"chinese": "他为了他的健康停止抽烟",
-		"english": "he stopped smoking for his health",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/ /fɚ/ /hɪz/ /hɛlθ/"
-	},
-	{
-		"chinese": "他停止抽烟",
-		"english": "he stopped smoking",
-		"soundmark": "/hi/ /stɑpt/ /'smokɪŋ/"
-	},
-	{
-		"chinese": "抽烟",
-		"english": "to smoke",
-		"soundmark": "/tə/ /smok/"
-	},
-	{
-		"chinese": "他停下来去抽烟",
-		"english": "he stopped to smoke",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /smok/"
-	},
-	{
-		"chinese": "公交车",
-		"english": "bus",
-		"soundmark": "/bʌs/"
-	},
-	{
-		"chinese": "停止",
-		"english": "stop",
-		"soundmark": "/stɑp/"
-	},
-	{
-		"chinese": "公交车站",
-		"english": "bus stop",
-		"soundmark": "/bʌs/ /stɑp/"
-	},
-	{
-		"chinese": "在公交车站",
-		"english": "at the bus stop",
-		"soundmark": "/ət/ /ðə/ /bʌs/ /stɑp/"
-	},
-	{
-		"chinese": "他停下来去抽烟",
-		"english": "he stopped to smoke",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /smok/"
-	},
-	{
-		"chinese": "他在公交车站停下来去抽烟",
-		"english": "he stopped to smoke at the bus stop",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /smok/ /ət/ /ðə/ /bʌs/ /stɑp/"
-	},
-	{
-		"chinese": "买",
-		"english": "to buy",
-		"soundmark": "/tə/ /baɪ/"
-	},
-	{
-		"chinese": "花",
-		"english": "flower",
-		"soundmark": "/'flaʊɚ/"
-	},
-	{
-		"chinese": "一些",
-		"english": "some",
-		"soundmark": "/səm/"
-	},
-	{
-		"chinese": "一些花",
-		"english": "some flowers",
-		"soundmark": "/səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "买一些花",
-		"english": "to buy some flowers",
-		"soundmark": "/tə/ /baɪ/ /səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "他停止",
-		"english": "he stopped",
-		"soundmark": "/hi/ /stɑpt/"
-	},
-	{
-		"chinese": "他停下来去买一些花",
-		"english": "he stopped to buy some flowers",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "路",
-		"english": "way",
-		"soundmark": "/we/"
-	},
-	{
-		"chinese": "他的",
-		"english": "his",
-		"soundmark": "/hɪz/"
-	},
-	{
-		"chinese": "他的路",
-		"english": "his way",
-		"soundmark": "/hɪz/ /we/"
-	},
-	{
-		"chinese": "家",
-		"english": "home",
-		"soundmark": "/hom/"
-	},
-	{
-		"chinese": "他回家的路",
-		"english": "his way home",
-		"soundmark": "/hɪz/ /we/ /hom/"
-	},
-	{
-		"chinese": "在他回家的路上",
-		"english": "on his way home",
-		"soundmark": "/ɑn/ /hɪz/ /we/ /hom/"
-	},
-	{
-		"chinese": "他停下来去买一些花",
-		"english": "he stopped to buy some flowers",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "他在他回家的路上停下来去买一些花",
-		"english": "he stopped to buy some flowers on his way home",
-		"soundmark": "/hi/ /stɑpt/ /tə/ /baɪ/ /səm/ /'flaʊɚz/ /ɑn/ /hɪz/ /we/ /hom/"
-	},
-	{
-		"chinese": "买(ing形式)",
-		"english": "buying",
-		"soundmark": "/'baɪɪŋ/"
-	},
-	{
-		"chinese": "花",
-		"english": "flowers",
-		"soundmark": "/'flaʊɚz/"
-	},
-	{
-		"chinese": "买花(ing形式)",
-		"english": "buying flowers",
-		"soundmark": "/'baɪɪŋ/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "他停止",
-		"english": "he stopped",
-		"soundmark": "/hi/ /stɑpt/"
-	},
-	{
-		"chinese": "他停止买花",
-		"english": "he stopped buying flowers",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/"
-	},
-	{
-		"chinese": "她",
+		"nativeText": "của cô ấy",
 		"english": "her",
 		"soundmark": "/hɚ/"
 	},
 	{
-		"chinese": "为了",
-		"english": "for",
-		"soundmark": "/fɚ/"
+		"nativeText": "thể lực của cô ấy",
+		"english": "her fitness",
+		"soundmark": "/hɚ/ /'fɪtnəs/"
 	},
 	{
-		"chinese": "为她",
-		"english": "for her",
-		"soundmark": "/fɚ/ /hɚ/"
+		"nativeText": "cải thiện",
+		"english": "to improve",
+		"soundmark": "/tə/ /ɪmˈpruv/"
 	},
 	{
-		"chinese": "他停止为她买花",
-		"english": "he stopped buying flowers for her",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/"
+		"nativeText": "cải thiện thể lực của cô ấy",
+		"english": "to improve her fitness",
+		"soundmark": "/tə/ /ɪmˈpruv/ /hɚ/ /'fɪtnəs/"
 	},
 	{
-		"chinese": "争吵",
-		"english": "fight",
-		"soundmark": "/faɪt/"
+		"nativeText": "thử",
+		"english": "to try",
+		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "一次争吵",
-		"english": "a fight",
-		"soundmark": "/ə/ /faɪt/"
+		"nativeText": "thử cải thiện thể lực của cô ấy",
+		"english": "to try to improve her fitness",
+		"soundmark": "/tə/ /traɪ/ /tə/ /ɪmˈpruv/ /hɚ/ /'fɪtnəs/"
 	},
 	{
-		"chinese": "他们",
-		"english": "they",
-		"soundmark": "/ðe/"
+		"nativeText": "quyết định",
+		"english": "to decide",
+		"soundmark": "/tə/ /dɪ'saɪd/"
 	},
 	{
-		"chinese": "有",
-		"english": "have",
-		"soundmark": "/hæv/"
+		"nativeText": "cô ấy đã quyết định",
+		"english": "she decided",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/"
 	},
 	{
-		"chinese": "他们有",
-		"english": "they have",
-		"soundmark": "/ðe/ /hæv/"
+		"nativeText": "cô ấy đã quyết định thử cải thiện thể lực của mình",
+		"english": "she decided to try to improve her fitness",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/ /tə/ /traɪ/ /tə/ /ɪmˈpruv/ /hɚ/ /'fɪtnəs/"
 	},
 	{
-		"chinese": "他们有一次争吵",
-		"english": "they have a fight",
-		"soundmark": "/ðe/ /hæv/ /ə/ /faɪt/"
+		"nativeText": "cô ấy đã quyết định thử nhà hàng mới đó",
+		"english": "she decided to try the new restaurant",
+		"soundmark": "/ʃi/ /dɪ'saɪdɪd/ /tə/ /traɪ/ /ðə/ /nu/ /'rɛstrɑnt/"
 	},
 	{
-		"chinese": "他们(过去)有一次争吵",
-		"english": "they had a fight",
-		"soundmark": "/ðe/ /hæd/ /ə/ /faɪt/"
+		"nativeText": "buổi sáng",
+		"english": "morning",
+		"soundmark": "/'mɔrnɪŋ/"
 	},
 	{
-		"chinese": "在......之后",
+		"nativeText": "vào buổi sáng",
+		"english": "in the mornings",
+		"soundmark": "/ɪn/ /ðə/ /'mɔrnɪŋz/"
+	},
+	{
+		"nativeText": "chạy bộ",
+		"english": "to run",
+		"soundmark": "/tə/ /rʌn/"
+	},
+	{
+		"nativeText": "chạy bộ vào buổi sáng",
+		"english": "to run in the mornings",
+		"soundmark": "/tə/ /rʌn/ /ɪn/ /ðə/ /'mɔrnɪŋz/"
+	},
+	{
+		"nativeText": "đang chạy bộ vào buổi sáng",
+		"english": "running in the mornings",
+		"soundmark": "/'rʌnɪŋ/ /ɪn/ /ðə/ /'mɔrnɪŋz/"
+	},
+	{
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử chạy bộ vào buổi sáng",
+		"english": "she tried running in the mornings",
+		"soundmark": "/ʃi/ /traɪd/ /'rʌnɪŋ/ /ɪn/ /ðə/ /'mɔrnɪŋz/"
+	},
+	{
+		"nativeText": "sau khi",
 		"english": "after",
 		"soundmark": "/'æftɚ/"
 	},
 	{
-		"chinese": "在他们(过去)有一次争吵之后",
-		"english": "after they had a fight",
-		"soundmark": "/'æftɚ/ /ðe/ /hæd/ /ə/ /faɪt/"
+		"nativeText": "buổi trưa",
+		"english": "noon",
+		"soundmark": "/nun/"
 	},
 	{
-		"chinese": "他停止为她买花",
-		"english": "he stopped buying flowers for her",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/"
+		"nativeText": "buổi chiều",
+		"english": "afternoon",
+		"soundmark": "/æftɚ'nun/"
 	},
 	{
-		"chinese": "在他们(过去)有一次争吵之后他停止为她买花",
-		"english": "he stopped buying flowers for her after they had a fight",
-		"soundmark": "/hi/ /stɑpt/ /'baɪɪŋ/ /'flaʊɚz/ /fɚ/ /hɚ/ /'æftɚ/ /ðe/ /hæd/ /ə/ /faɪt/"
+		"nativeText": "vào buổi chiều",
+		"english": "in the afternoons",
+		"soundmark": "/ɪn/ /ði/ /æftɚ'nunz/"
 	},
 	{
-		"chinese": "记得",
-		"english": "to remember",
-		"soundmark": "/tə/ /rɪ'mɛmbɚ/"
+		"nativeText": "đạp xe",
+		"english": "to cycle",
+		"soundmark": "/tə/ /ˈsaɪkl/"
 	},
 	{
-		"chinese": "我需要",
-		"english": "I need",
-		"soundmark": "/aɪ/ /nid/"
+		"nativeText": "đạp xe vào buổi chiều",
+		"english": "to cycle in the afternoons",
+		"soundmark": "/tə/ /ˈsaɪkl/ /ɪn/ /ði/ /æftɚ'nunz/"
 	},
 	{
-		"chinese": "我需要记得",
-		"english": "I need to remember",
-		"soundmark": "/aɪ/ /nid/ /tə/ /rɪ'mɛmbɚ/"
+		"nativeText": "đang đạp xe vào buổi chiều",
+		"english": "cycling in the afternoons",
+		"soundmark": "/ˈsaɪklɪŋ/ /ɪn/ /ði/ /æftɚ'nunz/"
 	},
 	{
-		"chinese": "打电话给......",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
 	},
 	{
-		"chinese": "妈妈",
-		"english": "mom",
-		"soundmark": "/mɑm/"
+		"nativeText": "cô ấy đã thử đạp xe vào buổi chiều",
+		"english": "she tried cycling in the afternoons",
+		"soundmark": "/ʃi/ /traɪd/ /ˈsaɪklɪŋ/ /ɪn/ /ði/ /æftɚ'nunz/"
 	},
 	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
+		"nativeText": "buổi tối",
+		"english": "night",
+		"soundmark": "/naɪt/"
 	},
 	{
-		"chinese": "我的妈妈",
-		"english": "my mom",
-		"soundmark": "/maɪ/ /mɑm/"
+		"nativeText": "vào buổi tối",
+		"english": "in the nights",
+		"soundmark": "/ɪn/ /ðə/ /naɪts/"
 	},
 	{
-		"chinese": "打电话给我的妈妈",
-		"english": "to call my mom",
-		"soundmark": "/tə/ /kɔl/ /maɪ/ /mɑm/"
+		"nativeText": "yoga",
+		"english": "yoga",
+		"soundmark": "/ˈjoɡə/"
 	},
 	{
-		"chinese": "明天",
-		"english": "tomorrow",
-		"soundmark": "/tə'mɔro/"
+		"nativeText": "lớp học",
+		"english": "classes",
+		"soundmark": "/klæsɪz/"
 	},
 	{
-		"chinese": "明天打电话给我的妈妈",
-		"english": "to call my mom tomorrow",
-		"soundmark": "/tə/ /kɔl/ /maɪ/ /mɑm/ /tə'mɔro/"
+		"nativeText": "lớp học yoga",
+		"english": "yoga classes",
+		"soundmark": "/ˈjoɡə/ /klæsɪz/"
 	},
 	{
-		"chinese": "我需要记得",
-		"english": "I need to remember",
-		"soundmark": "/aɪ/ /nid/ /tə/ /rɪ'mɛmbɚ/"
+		"nativeText": "tham gia",
+		"english": "to attend",
+		"soundmark": "/tə/ /əˈtɛnd/"
 	},
 	{
-		"chinese": "我需要记得明天打电话给我的妈妈",
-		"english": "I need to remember to call my mom tomorrow",
-		"soundmark": "/aɪ/ /nid/ /tə/ /rɪ'mɛmbɚ/ /tə/ /kɔl/ /maɪ/ /mɑm/ /tə'mɔro/"
+		"nativeText": "tham gia lớp học yoga",
+		"english": "to attend yoga classes",
+		"soundmark": "/tə/ /əˈtɛnd/ /ˈjoɡə/ /klæsɪz/"
 	},
 	{
-		"chinese": "打电话给......",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
+		"nativeText": "vào buổi tối",
+		"english": "in the nights",
+		"soundmark": "/ɪn/ /ðə/ /naɪts/"
 	},
 	{
-		"chinese": "打电话给你",
-		"english": "to call you",
-		"soundmark": "/tə/ /kɔl/ /ju/"
+		"nativeText": "tham gia lớp học yoga vào buổi tối",
+		"english": "to attend yoga classes in the nights",
+		"soundmark": "/tə/ /əˈtɛnd/ /ˈjoɡə/ /klæsɪz/ /ɪn/ /ðə/ /naɪts/"
 	},
 	{
-		"chinese": "打电话给你(ing形式)",
-		"english": "calling you",
-		"soundmark": "/ˈkɔlɪŋ/ /ju/"
+		"nativeText": "đang tham gia",
+		"english": "attending",
+		"soundmark": "/əˈtɛndɪŋ/"
 	},
 	{
-		"chinese": "昨天晚上",
-		"english": "last night",
-		"soundmark": "/læst/ /naɪt/"
+		"nativeText": "đang tham gia lớp học yoga vào buổi tối",
+		"english": "attending yoga classes in the nights",
+		"soundmark": "/əˈtɛndɪŋ/ /ˈjoɡə/ /klæsɪz/ /ɪn/ /ðə/ /naɪts/"
 	},
 	{
-		"chinese": "昨天晚上打电话给你(ing形式)",
-		"english": "calling you last night",
-		"soundmark": "/ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
 	},
 	{
-		"chinese": "我记得",
-		"english": "I remember",
-		"soundmark": "/aɪ/ /rɪ'mɛmbɚ/"
+		"nativeText": "cô ấy đã thử tham gia lớp học yoga vào buổi tối",
+		"english": "she tried attending yoga classes in the nights",
+		"soundmark": "/ʃi/ /traɪd/ /əˈtɛndɪŋ/ /ˈjoɡə/ /klæsɪz/ /ɪn/ /ðə/ /naɪts/"
 	},
 	{
-		"chinese": "我记得昨天晚上打电话给你",
-		"english": "I remember calling you last night",
-		"soundmark": "/aɪ/ /rɪ'mɛmbɚ/ /ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"nativeText": "phòng gym",
+		"english": "gym",
+		"soundmark": "/dʒɪm/"
 	},
 	{
-		"chinese": "忘记",
-		"english": "to forget",
-		"soundmark": "/tə/ /fɚ'ɡɛt/"
+		"nativeText": "ở trong phòng gym",
+		"english": "in the gym",
+		"soundmark": "/ɪn/ /ðə/ /dʒɪm/"
 	},
 	{
-		"chinese": "我忘记",
-		"english": "I forget",
-		"soundmark": "/aɪ/ /fɚ'ɡɛt/"
+		"nativeText": "tạ",
+		"english": "weights",
+		"soundmark": "/wets/"
 	},
 	{
-		"chinese": "我忘记(过去)",
-		"english": "I forgot",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/"
+		"nativeText": "nâng",
+		"english": "to lift",
+		"soundmark": "/tə/ /lɪft/"
 	},
 	{
-		"chinese": "昨天晚上打电话给你(ing形式)",
-		"english": "calling you last night",
-		"soundmark": "/ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"nativeText": "nâng tạ",
+		"english": "to lift weights",
+		"soundmark": "/tə/ /lɪft/ /wets/"
 	},
 	{
-		"chinese": "我忘记昨天晚上打电话给你",
-		"english": "I forgot calling you last night",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /ˈkɔlɪŋ/ /ju/ /læst/ /naɪt/"
+		"nativeText": "ở trong phòng gym",
+		"english": "in the gym",
+		"soundmark": "/ɪn/ /ðə/ /dʒɪm/"
 	},
 	{
-		"chinese": "打电话给......",
-		"english": "to call",
-		"soundmark": "/tə/ /kɔl/"
+		"nativeText": "nâng tạ ở trong phòng gym",
+		"english": "to lift weights in the gym",
+		"soundmark": "/tə/ /lɪft/ /wets/ /ɪn/ /ðə/ /dʒɪm/"
 	},
 	{
-		"chinese": "昨天晚上打电话给你",
-		"english": "to call you last night",
-		"soundmark": "/tə/ /kɔl/ /ju/ /læst/ /naɪt/"
+		"nativeText": "đang nâng tạ ở trong phòng gym",
+		"english": "lifting weights in the gym",
+		"soundmark": "/lɪftɪŋ/ /wets/ /ɪn/ /ðə/ /dʒɪm/"
 	},
 	{
-		"chinese": "我忘记昨晚去给你打电话",
-		"english": "I forgot to call you last night",
-		"soundmark": "/aɪ/ /fɚ'ɡɑt/ /tə/ /kɔl/ /ju/ /læst/ /naɪt/"
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử nâng tạ ở trong phòng gym",
+		"english": "she tried lifting weights in the gym",
+		"soundmark": "/ʃi/ /traɪd/ /lɪftɪŋ/ /wets/ /ɪn/ /ðə/ /dʒɪm/"
+	},
+	{
+		"nativeText": "tuần",
+		"english": "week",
+		"soundmark": "/wik/"
+	},
+	{
+		"nativeText": "cuối",
+		"english": "end",
+		"soundmark": "/ɛnd/"
+	},
+	{
+		"nativeText": "cuối tuần",
+		"english": "weekend",
+		"soundmark": "/'wikɛnd/"
+	},
+	{
+		"nativeText": "vào cuối tuần",
+		"english": "on the weekends",
+		"soundmark": "/ɑn/ /ðə/ /'wikɛndz/"
+	},
+	{
+		"nativeText": "bơi",
+		"english": "to swim",
+		"soundmark": "/tə/ /swɪm/"
+	},
+	{
+		"nativeText": "bơi vào cuối tuần",
+		"english": "to swim on the weekends",
+		"soundmark": "/tə/ /swɪm/ /ɑn/ /ðə/ /'wikɛndz/"
+	},
+	{
+		"nativeText": "đang bơi vào cuối tuần",
+		"english": "swimming on the weekends",
+		"soundmark": "/swɪmɪŋ/ /ɑn/ /ðə/ /'wikɛndz/"
+	},
+	{
+		"nativeText": "cô ấy đã thử",
+		"english": "she tried",
+		"soundmark": "/ʃi/ /traɪd/"
+	},
+	{
+		"nativeText": "cô ấy đã thử bơi vào cuối tuần",
+		"english": "she tried swimming on the weekends",
+		"soundmark": "/ʃi/ /traɪd/ /swɪmɪŋ/ /ɑn/ /ðə/ /'wikɛndz/"
 	}
 ]

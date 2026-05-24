@@ -1,646 +1,646 @@
 [
 	{
-		"chinese": "这个",
+		"nativeText": "cái này",
 		"english": "this",
 		"soundmark": "/ðɪs/"
 	},
 	{
-		"chinese": "问题",
+		"nativeText": "vấn đề",
 		"english": "problem",
 		"soundmark": "/'prɑbləm/"
 	},
 	{
-		"chinese": "这个问题",
+		"nativeText": "vấn đề này",
 		"english": "this problem",
 		"soundmark": "/ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "解决",
+		"nativeText": "giải quyết",
 		"english": "to solve",
 		"soundmark": "/tə/ /sɑlv/"
 	},
 	{
-		"chinese": "解决这个问题",
+		"nativeText": "giải quyết vấn đề này",
 		"english": "to solve this problem",
 		"soundmark": "/tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "应该",
+		"nativeText": "nên",
 		"english": "should",
 		"soundmark": "/ʃʊd/"
 	},
 	{
-		"chinese": "我们应该",
+		"nativeText": "chúng ta nên",
 		"english": "we should",
 		"soundmark": "/wi/ /ʃʊd/"
 	},
 	{
-		"chinese": "尝试",
+		"nativeText": "thử",
 		"english": "to try",
 		"soundmark": "/tə/ /traɪ/"
 	},
 	{
-		"chinese": "我们应该尝试",
+		"nativeText": "chúng ta nên thử",
 		"english": "we should try",
 		"soundmark": "/wi/ /ʃʊd/ /traɪ/"
 	},
 	{
-		"chinese": "解决这个问题",
+		"nativeText": "giải quyết vấn đề này",
 		"english": "to solve this problem",
 		"soundmark": "/tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "我们应该尝试解决这个问题",
+		"nativeText": "chúng ta nên thử giải quyết vấn đề này",
 		"english": "we should try to solve this problem",
 		"soundmark": "/wi/ /ʃʊd/ /traɪ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "很快",
+		"nativeText": "sớm",
 		"english": "soon",
 		"soundmark": "/sun/"
 	},
 	{
-		"chinese": "可能",
+		"nativeText": "có thể",
 		"english": "possible",
 		"soundmark": "/'pɑsəbl/"
 	},
 	{
-		"chinese": "尽可能地快",
+		"nativeText": "càng sớm càng tốt",
 		"english": "as soon as possible",
 		"soundmark": "/əz/ /sun/ /əz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "我们应该尝试尽快解决这个问题",
+		"nativeText": "chúng ta nên thử giải quyết vấn đề này càng sớm càng tốt",
 		"english": "we should try to solve this problem as soon as possible",
 		"soundmark": "/wi/ /ʃʊd/ /traɪ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/ /əz/ /sun/ /əz/ /'pɑsəbl/"
 	},
 	{
-		"chinese": "将会",
+		"nativeText": "sẽ",
 		"english": "will",
 		"soundmark": "/wɪl/"
 	},
 	{
-		"chinese": "我将会尝试解决这个问题",
+		"nativeText": "tôi sẽ thử giải quyết vấn đề này",
 		"english": "I will try to solve this problem",
 		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "设法做到",
+		"nativeText": "xoay xở",
 		"english": "to manage",
 		"soundmark": "/tə/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "我将会设法解决这个问题",
+		"nativeText": "tôi sẽ xoay xở giải quyết vấn đề này",
 		"english": "I will manage to solve this problem",
 		"soundmark": "/aɪ/ /wɪl/ /ˈmænɪdʒ/ /tə/ /sɑlv/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "家庭作业",
+		"nativeText": "bài tập về nhà",
 		"english": "homework",
-		"soundmark": "/’homwɝk/"
+		"soundmark": "/'homwɝk/"
 	},
 	{
-		"chinese": "我的家庭作业",
+		"nativeText": "bài tập về nhà của tôi",
 		"english": "my homework",
-		"soundmark": "/maɪ/ /’homwɝk/"
+		"soundmark": "/maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "完成",
+		"nativeText": "hoàn thành",
 		"english": "to finish",
 		"soundmark": "/tə/ /ˈfɪnɪʃ/"
 	},
 	{
-		"chinese": "完成我的家庭作业",
+		"nativeText": "hoàn thành bài tập về nhà của tôi",
 		"english": "to finish my homework",
-		"soundmark": "/tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/"
+		"soundmark": "/tə/ /ˈfɪnɪʃ/ /maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "我将会尝试完成我的家庭作业",
+		"nativeText": "tôi sẽ thử hoàn thành bài tập về nhà của tôi",
 		"english": "I will try to finish my homework",
-		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/"
+		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /'homwɝk/"
 	},
 	{
-		"chinese": "就寝时间",
+		"nativeText": "giờ đi ngủ",
 		"english": "bedtime",
 		"soundmark": "/'bɛdtaɪm/"
 	},
 	{
-		"chinese": "在......之前",
+		"nativeText": "trước khi",
 		"english": "before",
 		"soundmark": "/bɪ'fɔr/"
 	},
 	{
-		"chinese": "在睡觉之前",
+		"nativeText": "trước khi đi ngủ",
 		"english": "before bedtime",
 		"soundmark": "/bɪ'fɔr/ /'bɛdtaɪm/"
 	},
 	{
-		"chinese": "我将会尝试在睡觉之前完成我的家庭作业",
+		"nativeText": "tôi sẽ thử hoàn thành bài tập về nhà trước khi đi ngủ",
 		"english": "I will try to finish my homework before bedtime",
-		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/ /bɪ'fɔr/ /'bɛdtaɪm/"
+		"soundmark": "/aɪ/ /wɪl/ /traɪ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /'homwɝk/ /bɪ'fɔr/ /'bɛdtaɪm/"
 	},
 	{
-		"chinese": "设法做到",
+		"nativeText": "xoay xở",
 		"english": "to manage",
 		"soundmark": "/tə/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "我将会设法在睡觉之前完成我的家庭作业",
+		"nativeText": "tôi sẽ xoay xở hoàn thành bài tập về nhà trước khi đi ngủ",
 		"english": "I will manage to finish my homework before bedtime",
-		"soundmark": "/aɪ/ /wɪl/ /ˈmænɪdʒ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /’homwɝk/ /bɪ'fɔr/ /'bɛdtaɪm/"
+		"soundmark": "/aɪ/ /wɪl/ /ˈmænɪdʒ/ /tə/ /ˈfɪnɪʃ/ /maɪ/ /'homwɝk/ /bɪ'fɔr/ /'bɛdtaɪm/"
 	},
 	{
-		"chinese": "设法做到",
+		"nativeText": "xoay xở",
 		"english": "to manage",
 		"soundmark": "/tə/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "làm",
 		"english": "to do",
 		"soundmark": "/tə/ /du/"
 	},
 	{
-		"chinese": "做这件事",
+		"nativeText": "làm việc đó",
 		"english": "to do it",
 		"soundmark": "/tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你做这件事",
+		"nativeText": "bạn làm việc đó",
 		"english": "you do it",
 		"soundmark": "/ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "没有",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你没有做这件事",
+		"nativeText": "bạn không làm việc đó",
 		"english": "you don't do it",
 		"soundmark": "/ju/ /dont/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你有做这件事",
+		"nativeText": "bạn có làm việc đó",
 		"english": "you do do it",
 		"soundmark": "/ju/ /du/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你没有做这件事",
+		"nativeText": "bạn không làm việc đó",
 		"english": "you don't do it",
 		"soundmark": "/ju/ /dont/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)没有做这件事",
+		"nativeText": "bạn đã không làm việc đó",
 		"english": "you didn't do it",
 		"soundmark": "/ju/ /ˈdɪdnt/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)有做这件事",
+		"nativeText": "bạn đã có làm việc đó",
 		"english": "you did do it",
 		"soundmark": "/ju/ /dɪd/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)有做这件事吗？",
+		"nativeText": "bạn đã làm việc đó chưa?",
 		"english": "did you do it",
 		"soundmark": "/dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "你(过去)如何做这件事的？ ",
+		"nativeText": "bạn đã làm việc đó như thế nào?",
 		"english": "how did you do it",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "设法做到",
+		"nativeText": "xoay xở",
 		"english": "to manage",
 		"soundmark": "/tə/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到这件事的？",
+		"nativeText": "bạn đã xoay xở làm việc đó như thế nào?",
 		"english": "how did you manage to do it",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /du/ /ɪt/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到......",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "到达",
+		"nativeText": "đến",
 		"english": "to get",
 		"soundmark": "/tə/ /ɡɛt/"
 	},
 	{
-		"chinese": "这里",
+		"nativeText": "đây",
 		"english": "here",
 		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "到达这里",
+		"nativeText": "đến đây",
 		"english": "to get here",
 		"soundmark": "/tə/ /ɡɛt/ /hɪr/"
 	},
 	{
-		"chinese": "迅速地",
+		"nativeText": "nhanh chóng",
 		"english": "quickly",
 		"soundmark": "/ˈkwɪklɪ/"
 	},
 	{
-		"chinese": "如此",
+		"nativeText": "như vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "如此迅速地",
+		"nativeText": "nhanh như vậy",
 		"english": "so quickly",
 		"soundmark": "/so/ /ˈkwɪklɪ/"
 	},
 	{
-		"chinese": "如此迅速地到达这里",
+		"nativeText": "đến đây nhanh như vậy",
 		"english": "to get here so quickly",
 		"soundmark": "/tə/ /ɡɛt/ /hɪr/ /so/ /ˈkwɪklɪ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到如此迅速地到达这里的？",
+		"nativeText": "bạn đã xoay xở đến đây nhanh như vậy như thế nào?",
 		"english": "how did you manage to get here so quickly",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /ɡɛt/ /hɪr/ /so/ /ˈkwɪklɪ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "钱",
+		"nativeText": "tiền",
 		"english": "money",
 		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "kiếm",
 		"english": "to make",
 		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "赚钱",
+		"nativeText": "kiếm tiền",
 		"english": "to make money",
 		"soundmark": "/tə/ /mek/ /ˈmʌni/"
 	},
 	{
-		"chinese": "如此",
+		"nativeText": "như vậy",
 		"english": "so",
 		"soundmark": "/so/"
 	},
 	{
-		"chinese": "多",
+		"nativeText": "nhiều",
 		"english": "much",
 		"soundmark": "/mʌtʃ/"
 	},
 	{
-		"chinese": "如此多",
+		"nativeText": "nhiều như vậy",
 		"english": "so much",
 		"soundmark": "/so/ /mʌtʃ/"
 	},
 	{
-		"chinese": "钱",
+		"nativeText": "tiền",
 		"english": "money",
 		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "如此多的钱",
+		"nativeText": "nhiều tiền như vậy",
 		"english": "so much money",
 		"soundmark": "/so/ /mʌtʃ/ /ˈmʌni/"
 	},
 	{
-		"chinese": "做",
+		"nativeText": "kiếm",
 		"english": "to make",
 		"soundmark": "/tə/ /mek/"
 	},
 	{
-		"chinese": "赚如此多的钱",
+		"nativeText": "kiếm nhiều tiền như vậy",
 		"english": "to make so much money",
 		"soundmark": "/tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到赚如此多的钱的？",
+		"nativeText": "bạn đã xoay xở kiếm nhiều tiền như vậy như thế nào?",
 		"english": "how did you manage to make so much money",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
 	},
 	{
-		"chinese": "时间",
+		"nativeText": "thời gian",
 		"english": "time",
 		"soundmark": "/taɪm/"
 	},
 	{
-		"chinese": "短",
+		"nativeText": "ngắn",
 		"english": "short",
 		"soundmark": "/ʃɔrt/"
 	},
 	{
-		"chinese": "一段短的时间",
+		"nativeText": "một thời gian ngắn",
 		"english": "a short time",
 		"soundmark": "/ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "在......里",
+		"nativeText": "trong",
 		"english": "in",
 		"soundmark": "/ɪn/"
 	},
 	{
-		"chinese": "在一段短的时间里",
+		"nativeText": "trong một thời gian ngắn",
 		"english": "in a short time",
 		"soundmark": "/ɪn/ /ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "如此",
+		"nativeText": "như thế",
 		"english": "such",
 		"soundmark": "/sʌtʃ/"
 	},
 	{
-		"chinese": "在一段如此短的时间里",
+		"nativeText": "trong một thời gian ngắn như thế",
 		"english": "in such a short time",
 		"soundmark": "/ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到赚如此多的钱的？",
+		"nativeText": "bạn đã xoay xở kiếm nhiều tiền như vậy như thế nào?",
 		"english": "how did you manage to make so much money",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到在一段如此短的时间里赚如此多的钱的？",
+		"nativeText": "bạn đã xoay xở kiếm nhiều tiền như vậy trong một thời gian ngắn như thế như thế nào?",
 		"english": "how did you manage to make so much money in such a short time",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /mek/ /so/ /mʌtʃ/ /ˈmʌni/ /ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "写",
+		"nativeText": "viết",
 		"english": "to write",
 		"soundmark": "/tə/ /raɪt/"
 	},
 	{
-		"chinese": "这本书",
+		"nativeText": "cuốn sách này",
 		"english": "this book",
 		"soundmark": "/ðɪs/ /bʊk/"
 	},
 	{
-		"chinese": "写这本书",
+		"nativeText": "viết cuốn sách này",
 		"english": "to write this book",
 		"soundmark": "/tə/ /raɪt/ /ðɪs/ /bʊk/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到写这本书的？",
+		"nativeText": "bạn đã xoay xở viết cuốn sách này như thế nào?",
 		"english": "how did you manage to write this book",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/"
 	},
 	{
-		"chinese": "监狱",
+		"nativeText": "nhà tù",
 		"english": "prison",
 		"soundmark": "/ˈprɪzn/"
 	},
 	{
-		"chinese": "在监狱里",
+		"nativeText": "trong nhà tù",
 		"english": "in prison",
 		"soundmark": "/ɪn/ /ˈprɪzn/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你在监狱里",
+		"nativeText": "bạn đang ở trong nhà tù",
 		"english": "you are in prison",
 		"soundmark": "/ju/ /ɚ/ /ɪn/ /ˈprɪzn/"
 	},
 	{
-		"chinese": "你(过去)在监狱里",
+		"nativeText": "bạn đã ở trong nhà tù",
 		"english": "you were in prison",
 		"soundmark": "/ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
 	},
 	{
-		"chinese": "当",
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当你(过去)在监狱里",
+		"nativeText": "khi bạn đang ở trong nhà tù",
 		"english": "when you were in prison",
 		"soundmark": "/wɛn/ /ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到写这本书的？",
+		"nativeText": "bạn đã xoay xở viết cuốn sách này như thế nào?",
 		"english": "how did you manage to write this book",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到写这本书的当你(过去)在监狱里？",
+		"nativeText": "bạn đã xoay xở viết cuốn sách này khi ở trong nhà tù như thế nào?",
 		"english": "how did you manage to write this book when you were in prison",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /raɪt/ /ðɪs/ /bʊk/ /wɛn/ /ju/ /wɚ/ /ɪn/ /ˈprɪzn/"
 	},
 	{
-		"chinese": "说话",
+		"nativeText": "nói",
 		"english": "to speak",
 		"soundmark": "/tə/ /spik/"
 	},
 	{
-		"chinese": "演讲",
+		"nativeText": "việc nói",
 		"english": "speaking",
 		"soundmark": "/'spikɪŋ/"
 	},
 	{
-		"chinese": "公开的",
+		"nativeText": "công khai",
 		"english": "public",
 		"soundmark": "/ˈpʌblɪk/"
 	},
 	{
-		"chinese": "公开演讲",
+		"nativeText": "nói trước công chúng",
 		"english": "public speaking",
 		"soundmark": "/ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "恐惧",
+		"nativeText": "nỗi sợ",
 		"english": "fear",
 		"soundmark": "/fɪr/"
 	},
 	{
-		"chinese": "公开演讲的恐惧",
+		"nativeText": "nỗi sợ nói trước công chúng",
 		"english": "fear of public speaking",
 		"soundmark": "/fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "你的公开演讲的恐惧",
+		"nativeText": "nỗi sợ nói trước công chúng của bạn",
 		"english": "your fear of public speaking",
 		"soundmark": "/jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "克服",
+		"nativeText": "vượt qua",
 		"english": "to overcome",
 		"soundmark": "/tə/ /ˌovɚˈkʌm/"
 	},
 	{
-		"chinese": "克服你的公开演讲的恐惧",
+		"nativeText": "vượt qua nỗi sợ nói trước công chúng của bạn",
 		"english": "to overcome your fear of public speaking",
 		"soundmark": "/tə/ /ˌovɚˈkʌm/ /jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到克服你的公开演讲的恐惧的？",
+		"nativeText": "bạn đã xoay xở vượt qua nỗi sợ nói trước công chúng của mình như thế nào?",
 		"english": "how did you manage to overcome your fear of public speaking",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /ˌovɚˈkʌm/ /jʊr/ /fɪr/ /əv/ /ˈpʌblɪk/ /'spikɪŋ/"
 	},
 	{
-		"chinese": "工作",
+		"nativeText": "công việc",
 		"english": "work",
 		"soundmark": "/wɝk/"
 	},
 	{
-		"chinese": "生活",
+		"nativeText": "cuộc sống",
 		"english": "life",
 		"soundmark": "/laɪf/"
 	},
 	{
-		"chinese": "工作和生活",
+		"nativeText": "công việc và cuộc sống",
 		"english": "work and life",
 		"soundmark": "/wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "在......之间",
+		"nativeText": "giữa",
 		"english": "between",
 		"soundmark": "/bɪ'twin/"
 	},
 	{
-		"chinese": "在工作和生活之间",
+		"nativeText": "giữa công việc và cuộc sống",
 		"english": "between work and life",
 		"soundmark": "/bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "平衡",
+		"nativeText": "sự cân bằng",
 		"english": "the balance",
 		"soundmark": "/ðə/ /'bæləns/"
 	},
 	{
-		"chinese": "在工作和生活之间的平衡",
+		"nativeText": "sự cân bằng giữa công việc và cuộc sống",
 		"english": "the balance between work and life",
 		"soundmark": "/ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "保持",
+		"nativeText": "giữ",
 		"english": "to keep",
 		"soundmark": "/tə/ /kip/"
 	},
 	{
-		"chinese": "保持在工作和生活之间的平衡",
+		"nativeText": "giữ sự cân bằng giữa công việc và cuộc sống",
 		"english": "to keep the balance between work and life",
 		"soundmark": "/tə/ /kip/ /ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到保持在工作和生活之间的平衡的？",
+		"nativeText": "bạn đã xoay xở giữ sự cân bằng giữa công việc và cuộc sống như thế nào?",
 		"english": "how did you manage to keep the balance between work and life",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /kip/ /ðə/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
 	},
 	{
-		"chinese": "钱",
+		"nativeText": "tiền",
 		"english": "money",
 		"soundmark": "/ˈmʌni/"
 	},
 	{
-		"chinese": "足够的",
+		"nativeText": "đủ",
 		"english": "enough",
 		"soundmark": "/ɪ'nʌf/"
 	},
 	{
-		"chinese": "足够的钱",
+		"nativeText": "đủ tiền",
 		"english": "enough money",
 		"soundmark": "/ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "存",
+		"nativeText": "tiết kiệm",
 		"english": "to save",
 		"soundmark": "/tə/ /sev/"
 	},
 	{
-		"chinese": "存足够的钱",
+		"nativeText": "tiết kiệm đủ tiền",
 		"english": "to save enough money",
 		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/"
 	},
 	{
-		"chinese": "度假",
+		"nativeText": "kỳ nghỉ",
 		"english": "vacation",
 		"soundmark": "/veˈkeʃn/"
 	},
 	{
-		"chinese": "那个度假",
+		"nativeText": "kỳ nghỉ đó",
 		"english": "that vacation",
 		"soundmark": "/ðæt/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "为那个度假存足够的钱",
+		"nativeText": "tiết kiệm đủ tiền cho kỳ nghỉ đó",
 		"english": "to save enough money for that vacation",
 		"soundmark": "/tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到",
+		"nativeText": "bạn đã xoay xở như thế nào",
 		"english": "how did you manage",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
+		"nativeText": "bạn đã xoay xở tiết kiệm đủ tiền cho kỳ nghỉ đó như thế nào?",
 		"english": "how did you manage to save enough money for that vacation",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "短",
+		"nativeText": "ngắn",
 		"english": "short",
 		"soundmark": "/ʃɔrt/"
 	},
 	{
-		"chinese": "一段短的时间",
+		"nativeText": "một thời gian ngắn",
 		"english": "a short time",
 		"soundmark": "/ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "在一段短的时间里",
+		"nativeText": "trong một thời gian ngắn",
 		"english": "in a short time",
 		"soundmark": "/ɪn/ /ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "在一段如此短的时间里",
+		"nativeText": "trong một thời gian ngắn như thế",
 		"english": "in such a short time",
 		"soundmark": "/ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到为那个度假存足够的钱的？",
+		"nativeText": "bạn đã xoay xở tiết kiệm đủ tiền cho kỳ nghỉ đó như thế nào?",
 		"english": "how did you manage to save enough money for that vacation",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/"
 	},
 	{
-		"chinese": "你(过去)如何设法做到在一段如此短的时间里为那个度假存足够的钱的？",
+		"nativeText": "bạn đã xoay xở tiết kiệm đủ tiền cho kỳ nghỉ đó trong một thời gian ngắn như thế như thế nào?",
 		"english": "how did you manage to save enough money for that vacation in such a short time",
 		"soundmark": "/haʊ/ /dɪd/ /ju/ /ˈmænɪdʒ/ /tə/ /sev/ /ɪ'nʌf/ /ˈmʌni/ /ðæt/ /veˈkeʃn/ /ɪn/ /sʌtʃ/ /ə/ /ʃɔrt/ /taɪm/"
 	}

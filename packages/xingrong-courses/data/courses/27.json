@@ -1,646 +1,646 @@
 [
 	{
-		"chinese": "手",
+		"nativeText": "tay",
 		"english": "hand",
 		"soundmark": "/hænd/"
 	},
 	{
-		"chinese": "把手",
+		"nativeText": "tay cầm",
 		"english": "handle",
 		"soundmark": "/'hændl/"
 	},
 	{
-		"chinese": "门",
+		"nativeText": "cửa",
 		"english": "door",
 		"soundmark": "/dɔr/"
 	},
 	{
-		"chinese": "门把手",
+		"nativeText": "tay nắm cửa",
 		"english": "door handle",
 		"soundmark": "/dɔr/ /'hændl/"
 	},
 	{
-		"chinese": "刀",
+		"nativeText": "dao",
 		"english": "knife",
 		"soundmark": "/naɪf/"
 	},
 	{
-		"chinese": "把手",
+		"nativeText": "tay cầm",
 		"english": "handle",
 		"soundmark": "/'hændl/"
 	},
 	{
-		"chinese": "刀柄",
+		"nativeText": " cán dao",
 		"english": "knife handle",
 		"soundmark": "/naɪf/ /'hændl/"
 	},
 	{
-		"chinese": "把手",
+		"nativeText": "tay cầm",
 		"english": "handle",
 		"soundmark": "/'hændl/"
 	},
 	{
-		"chinese": "操作",
+		"nativeText": "xử lý",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "机器",
+		"nativeText": "máy móc",
 		"english": "machine",
 		"soundmark": "/mə'ʃin/"
 	},
 	{
-		"chinese": "这个",
+		"nativeText": "cái này",
 		"english": "this",
 		"soundmark": "/ðɪs/"
 	},
 	{
-		"chinese": "这台机器",
+		"nativeText": "cái máy này",
 		"english": "this machine",
 		"soundmark": "/ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "操作",
+		"nativeText": "xử lý",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "操作这台机器",
+		"nativeText": "xử lý cái máy này",
 		"english": "to handle this machine",
 		"soundmark": "/tə/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我知道",
+		"nativeText": "tôi biết",
 		"english": "I know",
 		"soundmark": "/aɪ/ /no/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "我知道如何操作这台机器",
+		"nativeText": "tôi biết cách xử lý cái máy này",
 		"english": "I know how to handle this machine",
 		"soundmark": "/aɪ/ /no/ /haʊ/ /tə/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "我不知道",
+		"nativeText": "tôi không biết",
 		"english": "I don't know",
 		"soundmark": "/aɪ/ /dont/ /no/"
 	},
 	{
-		"chinese": "我不知道如何操作这台机器",
+		"nativeText": "tôi không biết cách xử lý cái máy này",
 		"english": "I don't know how to handle this machine",
 		"soundmark": "/aɪ/ /dont/ /no/ /haʊ/ /tə/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "操作这台机器",
+		"nativeText": "xử lý cái máy này",
 		"english": "to handle this machine",
 		"soundmark": "/tə/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "可以",
+		"nativeText": "có thể",
 		"english": "can",
 		"soundmark": "/kæn/"
 	},
 	{
-		"chinese": "我可以操作这台机器",
+		"nativeText": "tôi có thể xử lý cái máy này",
 		"english": "I can handle this machine",
 		"soundmark": "/aɪ/ /kæn/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "不可以",
+		"nativeText": "không thể",
 		"english": "can't",
 		"soundmark": "/kænt/"
 	},
 	{
-		"chinese": "我不可以",
+		"nativeText": "tôi không thể",
 		"english": "I can't",
 		"soundmark": "/aɪ/ /kænt/"
 	},
 	{
-		"chinese": "操作这台机器",
+		"nativeText": "xử lý cái máy này",
 		"english": "to handle this machine",
 		"soundmark": "/tə/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "我不可以操作这台机器",
+		"nativeText": "tôi không thể xử lý cái máy này",
 		"english": "I can't handle this machine",
 		"soundmark": "/aɪ/ /kænt/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "单独",
+		"nativeText": "một mình",
 		"english": "alone",
 		"soundmark": "/ə'lon/"
 	},
 	{
-		"chinese": "我不可以单独操作这台机器",
+		"nativeText": "tôi không thể xử lý cái máy này một mình",
 		"english": "I can't handle this machine alone",
 		"soundmark": "/aɪ/ /kænt/ /'hændl/ /ðɪs/ /mə'ʃin/ /ə'lon/"
 	},
 	{
-		"chinese": "我的",
+		"nativeText": "của tôi",
 		"english": "my",
 		"soundmark": "/maɪ/"
 	},
 	{
-		"chinese": "自己",
+		"nativeText": "bản thân",
 		"english": "self",
 		"soundmark": "/sɛlf/"
 	},
 	{
-		"chinese": "我自己一个人",
+		"nativeText": "chính tôi",
 		"english": "myself",
 		"soundmark": "/maɪ'sɛlf/"
 	},
 	{
-		"chinese": "通过......的方式",
+		"nativeText": "bằng cách",
 		"english": "by",
 		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "通过我自己一个人的方式",
+		"nativeText": "một mình tôi",
 		"english": "by myself",
 		"soundmark": "/baɪ/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我不可以操作这台机器",
+		"nativeText": "tôi không thể xử lý cái máy này",
 		"english": "I can't handle this machine",
 		"soundmark": "/aɪ/ /kænt/ /'hændl/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "我不可以一个人操作这台机器",
+		"nativeText": "tôi không thể tự mình xử lý cái máy này",
 		"english": "I can't handle this machine by myself",
 		"soundmark": "/aɪ/ /kænt/ /'hændl/ /ðɪs/ /mə'ʃin/ /baɪ/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "你的",
+		"nativeText": "của bạn",
 		"english": "your",
 		"soundmark": "/jʊr/"
 	},
 	{
-		"chinese": "自己",
+		"nativeText": "bản thân",
 		"english": "self",
 		"soundmark": "/sɛlf/"
 	},
 	{
-		"chinese": "你自己一个人",
+		"nativeText": "chính bạn",
 		"english": "yourself",
 		"soundmark": "/jɔr'sɛlf/"
 	},
 	{
-		"chinese": "通过......的方式",
+		"nativeText": "bằng cách",
 		"english": "by",
 		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "通过你自己一个人的方式",
+		"nativeText": "một mình bạn",
 		"english": "by yourself",
 		"soundmark": "/baɪ/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "你",
+		"nativeText": "bạn",
 		"english": "you",
 		"soundmark": "/ju/"
 	},
 	{
-		"chinese": "你不可以一个人操作这台机器",
+		"nativeText": "bạn không thể tự mình xử lý cái máy này",
 		"english": "you can't handle this machine by yourself",
 		"soundmark": "/ju/ /kænt/ /'hændl/ /ðɪs/ /mə'ʃin/ /baɪ/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "她自己一个人",
+		"nativeText": "chính cô ấy",
 		"english": "herself",
 		"soundmark": "/hɝ'sɛlf/"
 	},
 	{
-		"chinese": "她",
+		"nativeText": "cô ấy",
 		"english": "she",
 		"soundmark": "/ʃi/"
 	},
 	{
-		"chinese": "她不可以一个人操作这台机器",
+		"nativeText": "cô ấy không thể tự mình xử lý cái máy này",
 		"english": "she can't handle this machine by herself",
 		"soundmark": "/ʃi/ /kænt/ /'hændl/ /ðɪs/ /mə'ʃin/ /baɪ/ /hɝ'sɛlf/"
 	},
 	{
-		"chinese": "操作",
+		"nativeText": "xử lý",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "操作(ing形式)",
+		"nativeText": "đang xử lý",
 		"english": "handling",
 		"soundmark": "/'hændlɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "là",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在操作",
+		"nativeText": "đang xử lý",
 		"english": "be handling",
 		"soundmark": "/bi/ /'hændlɪŋ/"
 	},
 	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我(现在)正在操作",
+		"nativeText": "tôi đang xử lý",
 		"english": "I am handling",
 		"soundmark": "/aɪ/ /æm/ /'hændlɪŋ/"
 	},
 	{
-		"chinese": "这台机器",
+		"nativeText": "cái máy này",
 		"english": "this machine",
 		"soundmark": "/ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "我(现在)正在操作这台机器",
+		"nativeText": "tôi đang xử lý cái máy này",
 		"english": "I am handling this machine",
 		"soundmark": "/aɪ/ /æm/ /'hændlɪŋ/ /ðɪs/ /mə'ʃin/"
 	},
 	{
-		"chinese": "问题",
+		"nativeText": "vấn đề",
 		"english": "problem",
 		"soundmark": "/'prɑbləm/"
 	},
 	{
-		"chinese": "这个问题",
+		"nativeText": "vấn đề này",
 		"english": "this problem",
 		"soundmark": "/ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "操作；处理",
+		"nativeText": "xử lý; giải quyết",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "处理这个问题",
+		"nativeText": "giải quyết vấn đề này",
 		"english": "to handle this problem",
 		"soundmark": "/tə/ /'hændl/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我知道",
+		"nativeText": "tôi biết",
 		"english": "I know",
 		"soundmark": "/aɪ/ /no/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "我知道如何处理这个问题",
+		"nativeText": "tôi biết cách giải quyết vấn đề này",
 		"english": "I know how to handle this problem",
 		"soundmark": "/aɪ/ /no/ /haʊ/ /tə/ /'hændl/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "我不知道",
+		"nativeText": "tôi không biết",
 		"english": "I don't know",
 		"soundmark": "/aɪ/ /dont/ /no/"
 	},
 	{
-		"chinese": "我不知道如何处理这个问题",
+		"nativeText": "tôi không biết cách giải quyết vấn đề này",
 		"english": "I don't know how to handle this problem",
 		"soundmark": "/aɪ/ /dont/ /no/ /haʊ/ /tə/ /'hændl/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "自己",
+		"nativeText": "bản thân",
 		"english": "self",
 		"soundmark": "/sɛlf/"
 	},
 	{
-		"chinese": "我自己一个人",
+		"nativeText": "chính tôi",
 		"english": "myself",
 		"soundmark": "/maɪ'sɛlf/"
 	},
 	{
-		"chinese": "通过......的方式",
+		"nativeText": "bằng cách",
 		"english": "by",
 		"soundmark": "/baɪ/"
 	},
 	{
-		"chinese": "通过我自己一个人的方式",
+		"nativeText": "một mình tôi",
 		"english": "by myself",
 		"soundmark": "/baɪ/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我不知道如何处理这个问题",
+		"nativeText": "tôi không biết cách giải quyết vấn đề này",
 		"english": "I don't know how to handle this problem",
 		"soundmark": "/aɪ/ /dont/ /no/ /haʊ/ /tə/ /'hændl/ /ðɪs/ /'prɑbləm/"
 	},
 	{
-		"chinese": "我不知道如何一个人处理这个问题",
+		"nativeText": "tôi không biết cách tự mình giải quyết vấn đề này",
 		"english": "I don't know how to handle this problem by myself",
 		"soundmark": "/aɪ/ /dont/ /no/ /haʊ/ /tə/ /'hændl/ /ðɪs/ /'prɑbləm/ /baɪ/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "操作；处理",
+		"nativeText": "xử lý; giải quyết",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "处理(ing形式)",
+		"nativeText": "đang xử lý",
 		"english": "handling",
 		"soundmark": "/'hændlɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "là",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在处理",
+		"nativeText": "đang xử lý",
 		"english": "be handling",
 		"soundmark": "/bi/ /'hændlɪŋ/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们(现在)正在处理",
+		"nativeText": "họ đang xử lý",
 		"english": "they are handling",
 		"soundmark": "/ðe/ /ɚ/ /'hændlɪŋ/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "他们(现在)正在处理那个问题",
+		"nativeText": "họ đang xử lý vấn đề đó",
 		"english": "they are handling the problem",
 		"soundmark": "/ðe/ /ɚ/ /'hændlɪŋ/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "警察",
+		"nativeText": "cảnh sát",
 		"english": "the police",
 		"soundmark": "/ðə/ /pə'lis/"
 	},
 	{
-		"chinese": "警察(现在)正在处理那个问题",
+		"nativeText": "cảnh sát đang xử lý vấn đề đó",
 		"english": "the police are handling the problem",
 		"soundmark": "/ðə/ /pə'lis/ /ɚ/ /'hændlɪŋ/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "脸",
+		"nativeText": "khuôn mặt",
 		"english": "face",
 		"soundmark": "/fes/"
 	},
 	{
-		"chinese": "面对",
+		"nativeText": "đối mặt",
 		"english": "to face",
 		"soundmark": "/tə/ /fes/"
 	},
 	{
-		"chinese": "面对(ing形式)",
+		"nativeText": "đang đối mặt",
 		"english": "facing",
 		"soundmark": "/'fesɪŋ/"
 	},
 	{
-		"chinese": "是；赋值(原型)",
+		"nativeText": "là",
 		"english": "be",
 		"soundmark": "/bi/"
 	},
 	{
-		"chinese": "正在面对",
+		"nativeText": "đang đối mặt",
 		"english": "be facing",
 		"soundmark": "/bi/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "他们",
+		"nativeText": "họ",
 		"english": "they",
 		"soundmark": "/ðe/"
 	},
 	{
-		"chinese": "他们(现在)正在面对",
+		"nativeText": "họ đang đối mặt",
 		"english": "they are facing",
 		"soundmark": "/ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "那个问题",
+		"nativeText": "vấn đề đó",
 		"english": "the problem",
 		"soundmark": "/ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "他们(现在)正在面对的那个问题",
+		"nativeText": "vấn đề mà họ đang đối mặt",
 		"english": "the problem they are facing",
 		"soundmark": "/ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "警察(现在)正在处理那个问题",
+		"nativeText": "cảnh sát đang xử lý vấn đề đó",
 		"english": "the police are handling the problem",
 		"soundmark": "/ðə/ /pə'lis/ /ɚ/ /'hændlɪŋ/ /ðə/ /'prɑbləm/"
 	},
 	{
-		"chinese": "警察(现在)正在处理他们(现在)正在面对的那个问题",
+		"nativeText": "cảnh sát đang xử lý vấn đề mà họ đang đối mặt",
 		"english": "the police are handling the problem they are facing",
 		"soundmark": "/ðə/ /pə'lis/ /ɚ/ /'hændlɪŋ/ /ðə/ /'prɑbləm/ /ðe/ /ɚ/ /'fesɪŋ/"
 	},
 	{
-		"chinese": "挑战",
+		"nativeText": "thử thách",
 		"english": "challenge",
 		"soundmark": "/'tʃælɪndʒ/"
 	},
 	{
-		"chinese": "挑战(复数)",
+		"nativeText": "những thử thách",
 		"english": "challenges",
 		"soundmark": "/ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "操作；处理；应对",
+		"nativeText": "xử lý; giải quyết; đối phó",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "应对挑战",
+		"nativeText": "đối phó với thử thách",
 		"english": "to handle challenges",
 		"soundmark": "/tə/ /'hændl/ /ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "生活",
+		"nativeText": "cuộc sống",
 		"english": "life",
 		"soundmark": "/laɪf/"
 	},
 	{
-		"chinese": "生活的",
+		"nativeText": "của cuộc sống",
 		"english": "life's",
 		"soundmark": "/laɪfs/"
 	},
 	{
-		"chinese": "生活的挑战",
+		"nativeText": "thử thách của cuộc sống",
 		"english": "life's challenges",
 		"soundmark": "/laɪfs/ /ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "操作；处理；应对",
+		"nativeText": "xử lý; giải quyết; đối phó",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "应对生活的挑战",
+		"nativeText": "đối phó với thử thách của cuộc sống",
 		"english": "to handle life's challenges",
 		"soundmark": "/tə/ /'hændl/ /laɪfs/ /ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "知道",
+		"nativeText": "biết",
 		"english": "to know",
 		"soundmark": "/tə/ /no/"
 	},
 	{
-		"chinese": "我知道",
+		"nativeText": "tôi biết",
 		"english": "I know",
 		"soundmark": "/aɪ/ /no/"
 	},
 	{
-		"chinese": "我不知道",
+		"nativeText": "tôi không biết",
 		"english": "I don't know",
 		"soundmark": "/aɪ/ /dont/ /no/"
 	},
 	{
-		"chinese": "如何",
+		"nativeText": "như thế nào",
 		"english": "how",
 		"soundmark": "/haʊ/"
 	},
 	{
-		"chinese": "我不知道如何应对生活的挑战",
+		"nativeText": "tôi không biết cách đối phó với thử thách của cuộc sống",
 		"english": "I don't know how to handle life's challenges",
 		"soundmark": "/aɪ/ /dont/ /no/ /haʊ/ /tə/ /'hændl/ /laɪfs/ /ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "我自己一个人",
+		"nativeText": "một mình tôi",
 		"english": "by myself",
 		"soundmark": "/baɪ/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "我不知道如何一个人应对生活的挑战",
+		"nativeText": "tôi không biết cách tự mình đối phó với thử thách của cuộc sống",
 		"english": "I don't know how to handle life's challenges by myself",
 		"soundmark": "/aɪ/ /dont/ /no/ /haʊ/ /tə/ /'hændl/ /laɪfs/ /ˈtʃælɪndʒɪz/ /baɪ/ /maɪ'sɛlf/"
 	},
 	{
-		"chinese": "力量",
+		"nativeText": "sức mạnh; lực",
 		"english": "force",
 		"soundmark": "/fɔrs/"
 	},
 	{
-		"chinese": "强迫",
+		"nativeText": "ép buộc",
 		"english": "to force",
 		"soundmark": "/tə/ /fɔrs/"
 	},
 	{
-		"chinese": "你的",
+		"nativeText": "của bạn",
 		"english": "your",
 		"soundmark": "/jʊr/"
 	},
 	{
-		"chinese": "自己",
+		"nativeText": "bản thân",
 		"english": "self",
 		"soundmark": "/sɛlf/"
 	},
 	{
-		"chinese": "你自己",
+		"nativeText": "chính bạn",
 		"english": "yourself",
 		"soundmark": "/jɔr'sɛlf/"
 	},
 	{
-		"chinese": "强迫你自己",
+		"nativeText": "ép buộc chính bạn",
 		"english": "to force yourself",
 		"soundmark": "/tə/ /fɔrs/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "需要",
+		"nativeText": "cần",
 		"english": "need",
 		"soundmark": "/nid/"
 	},
 	{
-		"chinese": "你需要",
+		"nativeText": "bạn cần",
 		"english": "you need",
 		"soundmark": "/ju/ /nid/"
 	},
 	{
-		"chinese": "不",
+		"nativeText": "không",
 		"english": "don't",
 		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "你不需要",
+		"nativeText": "bạn không cần",
 		"english": "you don't need",
 		"soundmark": "/ju/ /dont/ /nid/"
 	},
 	{
-		"chinese": "你不需要强迫你自己",
+		"nativeText": "bạn không cần ép buộc chính bạn",
 		"english": "you don't need to force yourself",
 		"soundmark": "/ju/ /dont/ /nid/ /tə/ /fɔrs/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "生活",
+		"nativeText": "cuộc sống",
 		"english": "life",
 		"soundmark": "/laɪf/"
 	},
 	{
-		"chinese": "挑战(复数)",
+		"nativeText": "những thử thách",
 		"english": "challenges",
 		"soundmark": "/ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "生活的挑战",
+		"nativeText": "thử thách của cuộc sống",
 		"english": "life's challenges",
 		"soundmark": "/laɪfs/ /ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "操作；处理；应对",
+		"nativeText": "xử lý; giải quyết; đối phó",
 		"english": "to handle",
 		"soundmark": "/tə/ /'hændl/"
 	},
 	{
-		"chinese": "应对生活的挑战",
+		"nativeText": "đối phó với thử thách của cuộc sống",
 		"english": "to handle life's challenges",
 		"soundmark": "/tə/ /'hændl/ /laɪfs/ /ˈtʃælɪndʒɪz/"
 	},
 	{
-		"chinese": "独自",
+		"nativeText": "một mình",
 		"english": "alone",
 		"soundmark": "/ə'lon/"
 	},
 	{
-		"chinese": "独自应对生活的挑战",
+		"nativeText": "đối phó với thử thách của cuộc sống một mình",
 		"english": "to handle life's challenges alone",
 		"soundmark": "/tə/ /'hændl/ /laɪfs/ /ˈtʃælɪndʒɪz/ /ə'lon/"
 	},
 	{
-		"chinese": "你不需要强迫你自己",
+		"nativeText": "bạn không cần ép buộc chính bạn",
 		"english": "you don't need to force yourself",
 		"soundmark": "/ju/ /dont/ /nid/ /tə/ /fɔrs/ /jɔr'sɛlf/"
 	},
 	{
-		"chinese": "你不需要强迫你自己独自应对生活的挑战",
+		"nativeText": "bạn không cần ép buộc chính mình đối phó với thử thách của cuộc sống một mình",
 		"english": "you don't need to force yourself to handle life's challenges alone",
 		"soundmark": "/ju/ /dont/ /nid/ /tə/ /fɔrs/ /jɔr'sɛlf/ /tə/ /'hændl/ /laɪfs/ /ˈtʃælɪndʒɪz/ /ə'lon/"
 	}

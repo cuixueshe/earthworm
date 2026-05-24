@@ -1,787 +1,667 @@
 [
 	{
-		"chinese": "做",
-		"english": "to make",
-		"soundmark": "/tə/ /mek/"
+		"nativeText": "đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
 	},
 	{
-		"chinese": "承诺",
-		"english": "promise",
-		"soundmark": "/'prɑmɪs/"
-	},
-	{
-		"chinese": "做一个承诺",
-		"english": "to make a promise",
-		"soundmark": "/tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "你",
-		"english": "you",
-		"soundmark": "/ju/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need",
-		"soundmark": "/nid/"
-	},
-	{
-		"chinese": "你需要",
-		"english": "you need",
-		"soundmark": "/ju/ /nid/"
-	},
-	{
-		"chinese": "你需要做一个承诺",
-		"english": "you need to make a promise",
-		"soundmark": "/ju/ /nid/ /tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "做一个承诺",
-		"english": "to make a promise",
-		"soundmark": "/tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "我想要你",
-		"english": "I want you",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/"
-	},
-	{
-		"chinese": "我想要你做一个承诺",
-		"english": "I want you to make a promise",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "不",
-		"english": "don't",
-		"soundmark": "/dont/"
-	},
-	{
-		"chinese": "我不想要你做一个承诺",
-		"english": "I don't want you to make a promise",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /ju/ /tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "承诺",
-		"english": "promise",
-		"soundmark": "/'prɑmɪs/"
-	},
-	{
-		"chinese": "这个承诺",
-		"english": "the promise",
-		"soundmark": "/ðə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "遵守这个承诺",
-		"english": "to keep the promise",
-		"soundmark": "/tə/ /kip/ /ðə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "你需要",
-		"english": "you need",
-		"soundmark": "/ju/ /nid/"
-	},
-	{
-		"chinese": "你需要遵守这个承诺",
-		"english": "you need to keep the promise",
-		"soundmark": "/ju/ /nid/ /tə/ /kip/ /ðə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "能够",
-		"english": "can",
-		"soundmark": "/kæn/"
-	},
-	{
-		"chinese": "你能够遵守这个承诺",
-		"english": "you can keep the promise",
-		"soundmark": "/ju/ /kæn/ /kip/ /ðə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "不能",
-		"english": "can't",
-		"soundmark": "/kænt/"
-	},
-	{
-		"chinese": "你不能遵守这个承诺",
-		"english": "you can't keep the promise",
-		"soundmark": "/ju/ /kænt/ /kip/ /ðə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "你不能遵守的这个承诺",
-		"english": "the promise you can't keep",
-		"soundmark": "/ðə/ /'prɑmɪs/ /ju/ /kænt/ /kip/"
-	},
-	{
-		"chinese": "你不能遵守",
-		"english": "you can't keep",
-		"soundmark": "/ju/ /kænt/ /kip/"
-	},
-	{
-		"chinese": "我不想要你做一个承诺",
-		"english": "I don't want you to make a promise",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /ju/ /tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "我不想要你做一个你不能遵守的承诺",
-		"english": "I don't want you to make a promise you can't keep",
-		"soundmark": "/aɪ/ /dont/ /wɑnt/ /ju/ /tə/ /mek/ /ə/ /'prɑmɪs/ /ju/ /kænt/ /kip/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "安静",
-		"english": "quiet",
-		"soundmark": "/'kwaɪət/"
-	},
-	{
-		"chinese": "保持安静",
-		"english": "to keep quiet",
-		"soundmark": "/tə/ /kip/ /'kwaɪət/"
-	},
-	{
-		"chinese": "你必须保持安静",
-		"english": "you have to keep quiet",
-		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /'kwaɪət/"
-	},
-	{
-		"chinese": "鱼",
-		"english": "fish",
-		"soundmark": "/fɪʃ/"
-	},
-	{
-		"chinese": "钓鱼",
-		"english": "to fish",
-		"soundmark": "/tə/ /fɪʃ/"
-	},
-	{
-		"chinese": "钓鱼(ing形式）",
-		"english": "fishing",
-		"soundmark": "/'fɪʃɪŋ/"
-	},
-	{
-		"chinese": "正在钓鱼",
-		"english": "be fishing",
-		"soundmark": "/bi/ /'fɪʃɪŋ/"
-	},
-	{
-		"chinese": "你（现在）正在钓鱼",
-		"english": "you are fishing",
-		"soundmark": "/ju/ /ɚ/ /'fɪʃɪŋ/"
-	},
-	{
-		"chinese": "当......时候",
-		"english": "when",
-		"soundmark": "/wɛn/"
-	},
-	{
-		"chinese": "当你（现在）正在钓鱼的时候",
-		"english": "when you are fishing",
-		"soundmark": "/wɛn/ /ju/ /ɚ/ /'fɪʃɪŋ/"
-	},
-	{
-		"chinese": "你必须保持安静",
-		"english": "you have to keep quiet",
-		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /'kwaɪət/"
-	},
-	{
-		"chinese": "你必须保持安静当你（现在）正在钓鱼的时候",
-		"english": "you have to keep quiet when you are fishing",
-		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /'kwaɪət/ /wɛn/ /ju/ /ɚ/ /'fɪʃɪŋ/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "秘密",
-		"english": "secret",
-		"soundmark": "/'sikrət/"
-	},
-	{
-		"chinese": "保守一个秘密",
-		"english": "to keep a secret",
-		"soundmark": "/tə/ /kip/ /ə/ /'sikrət/"
-	},
-	{
-		"chinese": "我们的",
-		"english": "our",
-		"soundmark": "/'aʊɚ/"
-	},
-	{
-		"chinese": "我们的秘密",
-		"english": "our secret",
-		"soundmark": "/'aʊɚ/ /'sikrət/"
-	},
-	{
-		"chinese": "保守我们的秘密",
-		"english": "to keep our secret",
-		"soundmark": "/tə/ /kip/ /'aʊɚ/ /'sikrət/"
-	},
-	{
-		"chinese": "你必须保守我们的秘密",
-		"english": "you have to keep our secret",
-		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /'aʊɚ/ /'sikrət/"
-	},
-	{
-		"chinese": "保守一个秘密",
-		"english": "to keep a secret",
-		"soundmark": "/tə/ /kip/ /ə/ /'sikrət/"
-	},
-	{
-		"chinese": "她",
-		"english": "she",
-		"soundmark": "/ʃi/"
-	},
-	{
-		"chinese": "不可以",
-		"english": "can't",
-		"soundmark": "/kænt/"
-	},
-	{
-		"chinese": "她不可以",
-		"english": "she can't",
-		"soundmark": "/ʃi/ /kænt/"
-	},
-	{
-		"chinese": "她不可以保守一个秘密",
-		"english": "she can't keep a secret",
-		"soundmark": "/ʃi/ /kænt/ /kip/ /ə/ /'sikrət/"
-	},
-	{
-		"chinese": "分钟",
-		"english": "minute",
-		"soundmark": "/'mɪnɪt/"
-	},
-	{
-		"chinese": "五",
-		"english": "five",
-		"soundmark": "/faɪv/"
-	},
-	{
-		"chinese": "五分钟",
-		"english": "five minutes",
-		"soundmark": "/faɪv/ /'mɪnɪts/"
-	},
-	{
-		"chinese": "她不可以保守一个秘密五分钟",
-		"english": "she can't keep a secret for five minutes",
-		"soundmark": "/ʃi/ /kænt/ /kip/ /ə/ /'sikrət/ /fɝ/ /faɪv/ /'mɪnɪts/"
-	},
-	{
-		"chinese": "说",
-		"english": "to say",
-		"soundmark": "/tə/ /seɪ/"
-	},
-	{
-		"chinese": "她（过去）说",
-		"english": "she said",
-		"soundmark": "/ʃi/ /sɛd/"
-	},
-	{
-		"chinese": "她（过去）说她不可以保守一个秘密五分钟",
-		"english": "she said she can't keep a secret for five minutes",
-		"soundmark": "/ʃi/ /sɛd/ /ʃi/ /kænt/ /kip/ /ə/ /'sikrət/ /fɝ/ /faɪv/ /'mɪnɪts/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "平衡",
-		"english": "balance",
-		"soundmark": "/'bæləns/"
-	},
-	{
-		"chinese": "保持平衡",
-		"english": "to keep balance",
-		"soundmark": "/tə/ /kip/ /'bæləns/"
-	},
-	{
-		"chinese": "好的",
-		"english": "good",
-		"soundmark": "/ɡʊd/"
-	},
-	{
-		"chinese": "保持一个好的平衡",
-		"english": "to keep a good balance",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
-	},
-	{
-		"chinese": "工作",
-		"english": "work",
-		"soundmark": "/wɝk/"
-	},
-	{
-		"chinese": "生活",
-		"english": "life",
-		"soundmark": "/laɪf/"
-	},
-	{
-		"chinese": "和",
-		"english": "and",
-		"soundmark": "/ənd/"
-	},
-	{
-		"chinese": "工作和生活",
-		"english": "work and life",
-		"soundmark": "/wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "在工作和生活之间",
-		"english": "between work and life",
-		"soundmark": "/bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "保持一个好的平衡",
-		"english": "to keep a good balance",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
-	},
-	{
-		"chinese": "在工作和生活之间保持一个好的平衡",
-		"english": "to keep a good balance between work and life",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "你",
-		"english": "you",
-		"soundmark": "/ju/"
-	},
-	{
-		"chinese": "你必须在工作和生活之间保持一个好的平衡",
-		"english": "you have to keep a good balance between work and life",
-		"soundmark": "/ju/ /hæv/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "困难的",
-		"english": "difficult",
-		"soundmark": "/'dɪfɪkəlt/"
-	},
-	{
-		"chinese": "它；这件事情",
-		"english": "it",
-		"soundmark": "/ɪt/"
-	},
-	{
-		"chinese": "它是困难的",
-		"english": "it is difficult",
-		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/"
-	},
-	{
-		"chinese": "一个好的平衡",
-		"english": "a good balance",
-		"soundmark": "/ə/ /ɡʊd/ /'bæləns/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "保持一个好的平衡",
-		"english": "to keep a good balance",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/"
-	},
-	{
-		"chinese": "工作和生活",
-		"english": "work and life",
-		"soundmark": "/wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "在......之间",
-		"english": "between",
-		"soundmark": "/bɪ'twin/"
-	},
-	{
-		"chinese": "在工作和生活之间",
-		"english": "between work and life",
-		"soundmark": "/bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "在工作和生活之间保持一个好的平衡",
-		"english": "to keep a good balance between work and life",
-		"soundmark": "/tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "它是困难的",
-		"english": "it is difficult",
-		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/"
-	},
-	{
-		"chinese": "在工作和生活之间保持一个好的平衡（它）是困难的",
-		"english": "it is difficult to keep a good balance between work and life",
-		"soundmark": "/ɪt/ /ɪz/ /'dɪfɪkəlt/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "非常",
-		"english": "very",
-		"soundmark": "/ˈvɛri/"
-	},
-	{
-		"chinese": "在工作和生活之间保持一个好的平衡（它）是非常困难的",
-		"english": "it is very difficult to keep a good balance between work and life",
-		"soundmark": "/ɪt/ /ɪz/ /ˈvɛri/ /'dɪfɪkəlt/ /tə/ /kip/ /ə/ /ɡʊd/ /'bæləns/ /bɪ'twin/ /wɝk/ /ənd/ /laɪf/"
-	},
-	{
-		"chinese": "保持",
-		"english": "to keep",
-		"soundmark": "/tə/ /kip/"
-	},
-	{
-		"chinese": "安静",
-		"english": "quiet",
-		"soundmark": "/'kwaɪət/"
-	},
-	{
-		"chinese": "保持安静",
-		"english": "to keep quiet",
-		"soundmark": "/tə/ /kip/ /'kwaɪət/"
-	},
-	{
-		"chinese": "关于",
-		"english": "about",
-		"soundmark": "/ə'baʊt/"
-	},
-	{
-		"chinese": "那件事",
-		"english": "it",
-		"soundmark": "/ɪt/"
-	},
-	{
-		"chinese": "关于那件事",
-		"english": "about it",
-		"soundmark": "/ə'baʊt/ /ɪt/"
-	},
-	{
-		"chinese": "对于那件事保持沉默",
-		"english": "to keep quiet about it",
-		"soundmark": "/tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /ɪt/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
-	},
-	{
-		"chinese": "我（过去）告诉你",
-		"english": "I told you",
-		"soundmark": "/aɪ/ /told/ /ju/"
-	},
-	{
-		"chinese": "我（过去）告诉你对于那件事保持沉默",
-		"english": "I told you to keep quiet about it",
-		"soundmark": "/aɪ/ /told/ /ju/ /tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /ɪt/"
-	},
-	{
-		"chinese": "计划",
-		"english": "plan",
-		"soundmark": "/plæn/"
-	},
-	{
-		"chinese": "我的",
-		"english": "my",
-		"soundmark": "/maɪ/"
-	},
-	{
-		"chinese": "我的计划",
-		"english": "my plan",
-		"soundmark": "/maɪ/ /plæn/"
-	},
-	{
-		"chinese": "关于我的计划",
-		"english": "about my plan",
-		"soundmark": "/ə'baʊt/ /maɪ/ /plæn/"
-	},
-	{
-		"chinese": "保持沉默",
-		"english": "to keep quiet",
-		"soundmark": "/tə/ /kip/ /'kwaɪət/"
-	},
-	{
-		"chinese": "对于我的计划保持沉默",
-		"english": "to keep quiet about my plan",
-		"soundmark": "/tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /maɪ/ /plæn/"
-	},
-	{
-		"chinese": "我（过去）告诉你",
-		"english": "I told you",
-		"soundmark": "/aɪ/ /told/ /ju/"
-	},
-	{
-		"chinese": "我（过去）告诉你对于我的计划保持沉默",
-		"english": "I told you to keep quiet about my plan",
-		"soundmark": "/aɪ/ /told/ /ju/ /tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /maɪ/ /plæn/"
-	},
-	{
-		"chinese": "做一个承诺",
-		"english": "to make a promise",
-		"soundmark": "/tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "承诺",
-		"english": "to promise",
-		"soundmark": "/tə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "你（过去）承诺",
-		"english": "you promised",
-		"soundmark": "/ju/ /'prɑmɪst/"
-	},
-	{
-		"chinese": "你（过去）承诺对于我的计划保持沉默",
-		"english": "you promised to keep quiet about my plan",
-		"soundmark": "/ju/ /'prɑmɪst/ /tə/ /kip/ /'kwaɪət/ /ə'baʊt/ /maɪ/ /plæn/"
-	},
-	{
-		"chinese": "承诺",
-		"english": "to promise",
-		"soundmark": "/tə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "我",
-		"english": "me",
-		"soundmark": "/mi/"
-	},
-	{
-		"chinese": "承诺我",
-		"english": "to promise me",
-		"soundmark": "/tə/ /'prɑmɪs/ /mi/"
-	},
-	{
-		"chinese": "我想要你",
-		"english": "I want you",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/"
-	},
-	{
-		"chinese": "我想要你承诺我",
-		"english": "I want you to promise me",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'prɑmɪs/ /mi/"
-	},
-	{
-		"chinese": "你将会",
-		"english": "you will",
-		"soundmark": "/ju/ /wɪl/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "to tell",
-		"soundmark": "/tə/ /tɛl/"
-	},
-	{
-		"chinese": "你将会告诉",
-		"english": "you will tell",
-		"soundmark": "/ju/ /wɪl/ /tɛl/"
-	},
-	{
-		"chinese": "你将不会告诉",
-		"english": "you will not tell",
-		"soundmark": "/ju/ /wɪl/ /nɑt/ /tɛl/"
-	},
-	{
-		"chinese": "他",
-		"english": "him",
-		"soundmark": "/hɪm/"
-	},
-	{
-		"chinese": "你将不会告诉他",
-		"english": "you will not tell him",
-		"soundmark": "/ju/ /wɪl/ /nɑt/ /tɛl/ /hɪm/"
-	},
-	{
-		"chinese": "真相",
-		"english": "the truth",
-		"soundmark": "/ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "你将不会告诉他真相",
-		"english": "you will not tell him the truth",
-		"soundmark": "/ju/ /wɪl/ /nɑt/ /tɛl/ /hɪm/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "我想要你承诺我你将不会告诉他真相",
-		"english": "I want you to promise me you will not tell him the truth",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'prɑmɪs/ /mi/ /ju/ /wɪl/ /nɑt/ /tɛl/ /hɪm/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "绝不",
-		"english": "never",
-		"soundmark": "/'nɛvɚ/"
-	},
-	{
-		"chinese": "我想要你承诺我你将绝不会告诉他真相",
-		"english": "I want you to promise me you will never tell him the truth",
-		"soundmark": "/aɪ/ /wɑnt/ /ju/ /tə/ /'prɑmɪs/ /mi/ /ju/ /wɪl/ /'nɛvɚ/ /tɛl/ /hɪm/ /ðə/ /trʊθ/"
-	},
-	{
-		"chinese": "做",
-		"english": "to make",
-		"soundmark": "/tə/ /mek/"
-	},
-	{
-		"chinese": "承诺",
-		"english": "promise",
-		"soundmark": "/'prɑmɪs/"
-	},
-	{
-		"chinese": "做一个承诺",
-		"english": "to make a promise",
-		"soundmark": "/tə/ /mek/ /ə/ /'prɑmɪs/"
-	},
-	{
-		"chinese": "我",
+		"nativeText": "tôi",
 		"english": "I",
 		"soundmark": "/aɪ/"
 	},
 	{
-		"chinese": "我做一个承诺",
-		"english": "I make a promise",
-		"soundmark": "/aɪ/ /mek/ /ə/ /'prɑmɪs/"
+		"nativeText": "tôi ở đây",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "我自己",
-		"english": "myself",
-		"soundmark": "/maɪ'sɛlf/"
+		"nativeText": "muốn",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "我对我自己做一个承诺",
-		"english": "I make a promise to myself",
-		"soundmark": "/aɪ/ /mek/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/"
+		"nativeText": "tôi ở đây",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "我对我自己做了一个承诺",
-		"english": "I made a promise to myself",
-		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/"
+		"nativeText": "tôi muốn ở đây",
+		"english": "I want to be here",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "年轻",
-		"english": "young",
-		"soundmark": "/jʌŋ/"
+		"nativeText": "không",
+		"english": "don't",
+		"soundmark": "/dont/"
 	},
 	{
-		"chinese": "我是年轻的",
-		"english": "I am young",
-		"soundmark": "/aɪ/ /æm/ /jʌŋ/"
+		"nativeText": "tôi không muốn ở đây",
+		"english": "I don't want to be here",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/"
 	},
 	{
-		"chinese": "我（过去）是年轻的",
-		"english": "I was young",
-		"soundmark": "/aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "đó; kia",
+		"english": "there",
+		"soundmark": "/ðɛr/"
 	},
 	{
-		"chinese": "当......什么时候",
+		"nativeText": "tôi không muốn ở đó",
+		"english": "I don't want to be there",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+	},
+	{
+		"nativeText": "tôi muốn ở đó",
+		"english": "I want to be there",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+	},
+	{
+		"nativeText": "tôi không muốn ở đây, tôi muốn ở đó",
+		"english": "I don't want to be here I want to be there",
+		"soundmark": "/aɪ/ /dont/ /wɑnt/ /tə/ /bi/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
+	},
+	{
+		"nativeText": "tôi ở đây",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
+	},
+	{
+		"nativeText": "khi",
 		"english": "when",
 		"soundmark": "/wɛn/"
 	},
 	{
-		"chinese": "当我（过去）是年轻的时候",
-		"english": "when I was young",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /jʌŋ/"
+		"nativeText": "khi tôi ở đây",
+		"english": "when I am here",
+		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "更年轻的",
-		"english": "younger",
-		"soundmark": "/ˈjʌŋɡər/"
+		"nativeText": "tôi muốn ở đó",
+		"english": "I want to be there",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "当我是更年轻的时候",
-		"english": "when I was younger",
-		"soundmark": "/wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/"
+		"nativeText": "khi tôi ở đây, tôi muốn ở đó",
+		"english": "when I am here I want to be there",
+		"soundmark": "/wɛn/ /aɪ/ /æm/ /hɪr/ /aɪ/ /wɑnt/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "我对我自己做了一个承诺",
-		"english": "I made a promise to myself",
-		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/"
+		"nativeText": "khi tôi ở đây trước đây, tôi đã muốn ở đó",
+		"english": "when I was here I wanted to be there",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /aɪ/ /wɑntɪd/ /tə/ /bi/ /ðɛr/"
 	},
 	{
-		"chinese": "当我年轻一点的时候我对自己做了一个承诺",
-		"english": "I made a promise to myself when I was younger",
-		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/"
+		"nativeText": "giáo viên",
+		"english": "teacher",
+		"soundmark": "/'titʃɚ/"
 	},
 	{
-		"chinese": "学",
-		"english": "to learn",
-		"soundmark": "/tə/ /lɝn/"
+		"nativeText": "tôi là một giáo viên",
+		"english": "I am a teacher",
+		"soundmark": "/aɪ/ /æm/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "英语",
-		"english": "English",
-		"soundmark": "/ˈɪŋɡlɪʃ/"
+		"nativeText": "muốn",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "学英语",
-		"english": "to learn English",
-		"soundmark": "/tə/ /lɝn/ /ˈɪŋɡlɪʃ/"
+		"nativeText": "tôi muốn trở thành một giáo viên",
+		"english": "I want to be a teacher",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /ə/ /'titʃɚ/"
 	},
 	{
-		"chinese": "每一个",
-		"english": "every",
-		"soundmark": "/'ɛvri/"
+		"nativeText": "giàu có",
+		"english": "rich",
+		"soundmark": "/rɪtʃ/"
 	},
 	{
-		"chinese": "天",
-		"english": "day",
-		"soundmark": "/de/"
+		"nativeText": "tôi giàu có",
+		"english": "I am rich",
+		"soundmark": "/aɪ/ /æm/ /rɪtʃ/"
 	},
 	{
-		"chinese": "每天",
-		"english": "every day",
-		"soundmark": "/'ɛvri/ /de/"
+		"nativeText": "muốn",
+		"english": "want",
+		"soundmark": "/wɑnt/"
 	},
 	{
-		"chinese": "每天学英语",
-		"english": "to learn English every day",
-		"soundmark": "/tə/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
+		"nativeText": "tôi muốn giàu có",
+		"english": "I want to be rich",
+		"soundmark": "/aɪ/ /wɑnt/ /tə/ /bi/ /rɪtʃ/"
 	},
 	{
-		"chinese": "我将会",
-		"english": "I will",
-		"soundmark": "/aɪ/ /wɪl/"
+		"nativeText": "tôi ở đây",
+		"english": "I am here",
+		"soundmark": "/aɪ/ /æm/ /hɪr/"
 	},
 	{
-		"chinese": "我将会每天学英语",
-		"english": "I will learn English every day",
-		"soundmark": "/aɪ/ /wɪl/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
+		"nativeText": "tôi đã ở đây",
+		"english": "I was here",
+		"soundmark": "/aɪ/ /wəz/ /hɪr/"
 	},
 	{
-		"chinese": "那个",
+		"nativeText": "khi",
+		"english": "when",
+		"soundmark": "/wɛn/"
+	},
+	{
+		"nativeText": "khi tôi đã ở đây",
+		"english": "when I was here",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/"
+	},
+	{
+		"nativeText": "trước; trước đây",
+		"english": "before",
+		"soundmark": "/bɪ'fɔr/"
+	},
+	{
+		"nativeText": "khi tôi đã ở đây trước đây",
+		"english": "when I was here before",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
+	},
+	{
+		"nativeText": "nhận ra; chú ý",
+		"english": "to notice",
+		"soundmark": "/tə/ /ˈnotɪs/"
+	},
+	{
+		"nativeText": "tôi",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"nativeText": "tôi nhận ra",
+		"english": "I notice",
+		"soundmark": "/aɪ/ /ˈnotɪs/"
+	},
+	{
+		"nativeText": "rằng",
 		"english": "that",
 		"soundmark": "/ðæt/"
 	},
 	{
-		"chinese": "那个我将会每天学英语",
-		"english": "that I will learn English every day",
-		"soundmark": "/ðæt/ /aɪ/ /wɪl/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
+		"nativeText": "tôi nhận ra rằng",
+		"english": "I notice that",
+		"soundmark": "/aɪ/ /ˈnotɪs/ /ðæt/"
 	},
 	{
-		"chinese": "当我年轻一点的时候我对自己做了一个承诺",
-		"english": "I made a promise to myself when I was younger",
-		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/"
+		"nativeText": "tôi đã nhận ra rằng",
+		"english": "I noticed that",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/"
 	},
 	{
-		"chinese": "当我年轻一点的时候我对自己做了一个承诺（那个）我将会每天学英语",
-		"english": "I made a promise to myself when I was younger that I will learn English every day",
-		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/ /ðæt/ /aɪ/ /wɪl/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
+		"nativeText": "tôi đã không nhận ra rằng",
+		"english": "I didn't notice that",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/"
 	},
 	{
-		"chinese": "我（过去）将会每天学英语",
-		"english": "I would learn English every day",
-		"soundmark": "/aɪ/ /wʊd/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
+		"nativeText": "khi tôi đã ở đây trước đây",
+		"english": "when I was here before",
+		"soundmark": "/wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
 	},
 	{
-		"chinese": "当我年轻一点的时候我对自己做了一个承诺（那个）我过去将会每天学英语",
-		"english": "I made a promise to myself when I was younger that I would learn English every day",
-		"soundmark": "/aɪ/ /med/ /ə/ /'prɑmɪs/ /tə/ /maɪ'sɛlf/ /wɛn/ /aɪ/ /wəz/ /ˈjʌŋɡər/ /aɪ/ /wʊd/ /lɝn/ /ˈɪŋɡlɪʃ/ /'ɛvri/ /de/"
+		"nativeText": "tôi đã không nhận ra điều đó khi tôi ở đây trước đây",
+		"english": "I didn't notice that when I was here before",
+		"soundmark": "/aɪ/ /ˈdɪdnt/ /ˈnotɪs/ /ðæt/ /wɛn/ /aɪ/ /wəz/ /hɪr/ /bɪ'fɔr/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra",
+		"english": "I noticed",
+		"soundmark": "/aɪ/ /ˈnotɪst/"
+	},
+	{
+		"nativeText": "cái gì đó",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"nativeText": "sai; sai lầm",
+		"english": "wrong",
+		"soundmark": "/rɔŋ/"
+	},
+	{
+		"nativeText": "cái gì đó sai",
+		"english": "something wrong",
+		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/"
+	},
+	{
+		"nativeText": "ở đó",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "có cái gì đó sai ở đó",
+		"english": "something wrong is there",
+		"soundmark": "/'sʌmθɪŋ/ /rɔŋ/ /ɪz/ /ðɛr/"
+	},
+	{
+		"nativeText": "có; tồn tại",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"nativeText": "có cái gì đó sai",
+		"english": "there is something wrong",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"nativeText": "có cái gì đó sai ở đây",
+		"english": "there is something wrong here",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"nativeText": "đã có cái gì đó sai ở đây",
+		"english": "there was something wrong here",
+		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra",
+		"english": "I noticed",
+		"soundmark": "/aɪ/ /ˈnotɪst/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra đã có cái gì đó sai ở đây",
+		"english": "I noticed there was something wrong here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"nativeText": "rằng",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra rằng đã có cái gì đó sai ở đây",
+		"english": "I noticed that there was something wrong here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /rɔŋ/ /hɪr/"
+	},
+	{
+		"nativeText": "khác; khác biệt",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"nativeText": "cái gì đó",
+		"english": "something",
+		"soundmark": "/'sʌmθɪŋ/"
+	},
+	{
+		"nativeText": "cái gì đó khác",
+		"english": "something different",
+		"soundmark": "/'sʌmθɪŋ/ /'dɪfrənt/"
+	},
+	{
+		"nativeText": "có cái gì đó khác",
+		"english": "there is something different",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/"
+	},
+	{
+		"nativeText": "ở đây",
+		"english": "here",
+		"soundmark": "/hɪr/"
+	},
+	{
+		"nativeText": "có cái gì đó khác ở đây",
+		"english": "there is something different here",
+		"soundmark": "/ðɛr/ /ɪz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"nativeText": "đã có cái gì đó khác ở đây",
+		"english": "there was something different here",
+		"soundmark": "/ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra",
+		"english": "I noticed",
+		"soundmark": "/aɪ/ /ˈnotɪst/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra đã có cái gì đó khác ở đây",
+		"english": "I noticed there was something different here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"nativeText": "rằng",
+		"english": "that",
+		"soundmark": "/ðæt/"
+	},
+	{
+		"nativeText": "tôi đã nhận ra rằng đã có cái gì đó khác ở đây",
+		"english": "I noticed that there was something different here",
+		"soundmark": "/aɪ/ /ˈnotɪst/ /ðæt/ /ðɛr/ /wəz/ /'sʌmθɪŋ/ /'dɪfrənt/ /hɪr/"
+	},
+	{
+		"nativeText": "khác; khác biệt",
+		"english": "different",
+		"soundmark": "/'dɪfrənt/"
+	},
+	{
+		"nativeText": "sự khác biệt",
+		"english": "difference",
+		"soundmark": "/'dɪfrəns/"
+	},
+	{
+		"nativeText": "giữa",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"nativeText": "và",
+		"english": "and",
+		"soundmark": "/ənd/"
+	},
+	{
+		"nativeText": "bạn và tôi",
+		"english": "you and me",
+		"soundmark": "/ju/ /ənd/ /mi/"
+	},
+	{
+		"nativeText": "giữa bạn và tôi",
+		"english": "between you and me",
+		"soundmark": "/bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"nativeText": "sự khác biệt giữa bạn và tôi",
+		"english": "difference between you and me",
+		"soundmark": "/'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"nativeText": "lớn",
+		"english": "big",
+		"soundmark": "/bɪɡ/"
+	},
+	{
+		"nativeText": "một sự khác biệt lớn",
+		"english": "a big difference",
+		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/"
+	},
+	{
+		"nativeText": "một sự khác biệt lớn giữa bạn và tôi",
+		"english": "a big difference between you and me",
+		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"nativeText": "ở đó",
+		"english": "there",
+		"soundmark": "/ðɛr/"
+	},
+	{
+		"nativeText": "có một sự khác biệt lớn giữa bạn và tôi ở đó",
+		"english": "a big difference between you and me is there",
+		"soundmark": "/ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/ /ɪz/ /ðɛr/"
+	},
+	{
+		"nativeText": "có; tồn tại",
+		"english": "there is",
+		"soundmark": "/ðɛr/ /ɪz/"
+	},
+	{
+		"nativeText": "có một sự khác biệt lớn giữa bạn và tôi",
+		"english": "there is a big difference between you and me",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ju/ /ənd/ /mi/"
+	},
+	{
+		"nativeText": "vũ khí",
+		"english": "weapon",
+		"soundmark": "/ˈwɛpən/"
+	},
+	{
+		"nativeText": "công cụ",
+		"english": "tool",
+		"soundmark": "/tul/"
+	},
+	{
+		"nativeText": "một vũ khí và một công cụ",
+		"english": "a weapon and a tool",
+		"soundmark": "/ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
+	},
+	{
+		"nativeText": "giữa",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"nativeText": "giữa một vũ khí và một công cụ",
+		"english": "between a weapon and a tool",
+		"soundmark": "/bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
+	},
+	{
+		"nativeText": "có một sự khác biệt lớn",
+		"english": "there is a big difference",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/"
+	},
+	{
+		"nativeText": "có một sự khác biệt lớn giữa một vũ khí và một công cụ",
+		"english": "there is a big difference between a weapon and a tool",
+		"soundmark": "/ðɛr/ /ɪz/ /ə/ /bɪɡ/ /'dɪfrəns/ /bɪ'twin/ /ə/ /ˈwɛpən/ /ənd/ /ə/ /tul/"
+	},
+	{
+		"nativeText": "đúng",
+		"english": "right",
+		"soundmark": "/raɪt/"
+	},
+	{
+		"nativeText": "sai",
+		"english": "wrong",
+		"soundmark": "/rɔŋ/"
+	},
+	{
+		"nativeText": "đúng và sai",
+		"english": "right and wrong",
+		"soundmark": "/raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "giữa",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"nativeText": "giữa đúng và sai",
+		"english": "between right and wrong",
+		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "sự khác biệt",
+		"english": "difference",
+		"soundmark": "/'dɪfrəns/"
+	},
+	{
+		"nativeText": "sự khác biệt đó",
+		"english": "the difference",
+		"soundmark": "/ðə/ /'dɪfrəns/"
+	},
+	{
+		"nativeText": "sự khác biệt giữa đúng và sai",
+		"english": "the difference between right and wrong",
+		"soundmark": "/ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "biết",
+		"english": "to know",
+		"soundmark": "/tə/ /no/"
+	},
+	{
+		"nativeText": "biết sự khác biệt giữa đúng và sai",
+		"english": "to know the difference between right and wrong",
+		"soundmark": "/tə/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "chúng ta",
+		"english": "we",
+		"soundmark": "/wi/"
+	},
+	{
+		"nativeText": "chúng ta biết",
+		"english": "we know",
+		"soundmark": "/wi/ /no/"
+	},
+	{
+		"nativeText": "tất cả",
+		"english": "all",
+		"soundmark": "/ɔl/"
+	},
+	{
+		"nativeText": "tất cả chúng ta đều biết",
+		"english": "we all know",
+		"soundmark": "/wi/ /ɔl/ /no/"
+	},
+	{
+		"nativeText": "tất cả chúng ta đều biết sự khác biệt giữa đúng và sai",
+		"english": "we all know the difference between right and wrong",
+		"soundmark": "/wi/ /ɔl/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "bạn phải biết",
+		"english": "you have to know",
+		"soundmark": "/ju/ /hæv/ /tə/ /no/"
+	},
+	{
+		"nativeText": "bạn phải biết sự khác biệt giữa đúng và sai",
+		"english": "you have to know the difference between right and wrong",
+		"soundmark": "/ju/ /hæv/ /tə/ /no/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "nói; phân biệt",
+		"english": "to tell",
+		"soundmark": "/tə/ /tɛl/"
+	},
+	{
+		"nativeText": "sự khác biệt",
+		"english": "the difference",
+		"soundmark": "/ðə/ /'dɪfrəns/"
+	},
+	{
+		"nativeText": "phân biệt sự khác biệt",
+		"english": "to tell the difference",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/"
+	},
+	{
+		"nativeText": "giữa",
+		"english": "between",
+		"soundmark": "/bɪ'twin/"
+	},
+	{
+		"nativeText": "đúng và sai",
+		"english": "right and wrong",
+		"soundmark": "/raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "giữa đúng và sai",
+		"english": "between right and wrong",
+		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "sự khác biệt giữa đúng và sai",
+		"english": "the difference between right and wrong",
+		"soundmark": "/ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "phân biệt đúng và sai",
+		"english": "to tell the difference between right and wrong",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "lớn tuổi; cũ",
+		"english": "old",
+		"soundmark": "/old/"
+	},
+	{
+		"nativeText": "đủ",
+		"english": "enough",
+		"soundmark": "/ɪ'nʌf/"
+	},
+	{
+		"nativeText": "đủ lớn",
+		"english": "old enough",
+		"soundmark": "/old/ /ɪ'nʌf/"
+	},
+	{
+		"nativeText": "bạn là",
+		"english": "you are",
+		"soundmark": "/ju/ /ɚ/"
+	},
+	{
+		"nativeText": "bạn đủ lớn rồi",
+		"english": "you are old enough",
+		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/"
+	},
+	{
+		"nativeText": "bạn đã đủ lớn để phân biệt đúng và sai",
+		"english": "you are old enough to tell the difference between right and wrong",
+		"soundmark": "/ju/ /ɚ/ /old/ /ɪ'nʌf/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "đứa trẻ",
+		"english": "child",
+		"soundmark": "/tʃaɪld/"
+	},
+	{
+		"nativeText": "những đứa trẻ",
+		"english": "children",
+		"soundmark": "/'tʃɪldrən/"
+	},
+	{
+		"nativeText": "của chúng ta",
+		"english": "our",
+		"soundmark": "/'aʊɚ/"
+	},
+	{
+		"nativeText": "những đứa trẻ của chúng ta",
+		"english": "our children",
+		"soundmark": "/'aʊɚ/ /'tʃɪldrən/"
+	},
+	{
+		"nativeText": "dạy",
+		"english": "to teach",
+		"soundmark": "/tə/ /titʃ/"
+	},
+	{
+		"nativeText": "chúng ta cần",
+		"english": "we need",
+		"soundmark": "/wi/ /nid/"
+	},
+	{
+		"nativeText": "chúng ta cần dạy",
+		"english": "we need to teach",
+		"soundmark": "/wi/ /nid/ /tə/ /titʃ/"
+	},
+	{
+		"nativeText": "chúng ta cần dạy những đứa trẻ của chúng ta",
+		"english": "we need to teach our children",
+		"soundmark": "/wi/ /nid/ /tə/ /titʃ/ /'aʊɚ/ /'tʃɪldrən/"
+	},
+	{
+		"nativeText": "phân biệt sự khác biệt",
+		"english": "to tell the difference",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/"
+	},
+	{
+		"nativeText": "giữa đúng và sai",
+		"english": "between right and wrong",
+		"soundmark": "/bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "phân biệt đúng và sai",
+		"english": "to tell the difference between right and wrong",
+		"soundmark": "/tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "như thế nào",
+		"english": "how",
+		"soundmark": "/haʊ/"
+	},
+	{
+		"nativeText": "cách phân biệt đúng và sai",
+		"english": "how to tell the difference between right and wrong",
+		"soundmark": "/haʊ/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
+	},
+	{
+		"nativeText": "chúng ta cần dạy những đứa trẻ của chúng ta cách phân biệt đúng và sai",
+		"english": "we need to teach our children how to tell the difference between right and wrong",
+		"soundmark": "/wi/ /nid/ /tə/ /titʃ/ /'aʊɚ/ /'tʃɪldrən/ /haʊ/ /tə/ /tɛl/ /ðə/ /'dɪfrəns/ /bɪ'twin/ /raɪt/ /ənd/ /rɔŋ/"
 	}
 ]

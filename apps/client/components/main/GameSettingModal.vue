@@ -7,7 +7,7 @@
       }"
     >
       <CommonModalHeader
-        title="游戏设置"
+        title="Cài đặt trò chơi"
         @close="closeGameSettingModal"
       />
       <div class="mt-6 px-4">
@@ -33,7 +33,7 @@
             color="primary"
             variant="solid"
           >
-            重置
+            Đặt lại
           </UButton>
         </div>
       </div>
@@ -65,7 +65,7 @@ function handleReset() {
 
 const TOOLBAR_LIST = [
   {
-    label: "倍速",
+    label: "Tốc độ",
     key: "rate",
     options: [
       {
@@ -87,7 +87,7 @@ const TOOLBAR_LIST = [
     ],
   },
   {
-    label: "播放次数",
+    label: "Số lần phát",
     key: "times",
     options: [
       {
@@ -109,7 +109,7 @@ const TOOLBAR_LIST = [
     ],
   },
   {
-    label: "播放间隔",
+    label: "Khoảng thời gian phát",
     key: "interval",
     options: [
       {

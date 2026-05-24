@@ -32,8 +32,8 @@ describe("pronunciation", () => {
     const { getPronunciationOptions } = usePronunciation();
 
     expect(getPronunciationOptions()).toEqual([
-      { label: "美音", value: "American" },
-      { label: "英音", value: "British" },
+      { label: "Giọng Mỹ", value: "American" },
+      { label: "Giọng Anh", value: "British" },
     ]);
   });
 

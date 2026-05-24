@@ -133,7 +133,7 @@ describe("UserService", () => {
       const user = { userId: "newUserId" };
       const dto = { username: "newUser", avatar: "" };
       jest.spyOn(userService as any, "updateUser").mockResolvedValue({});
-      jest.spyOn(userService as any, "getRandomNumber").mockReturnValue(5); // 模拟随机数
+      jest.spyOn(userService as any, "getRandomNumber").mockReturnValue(5); // Mock random number
       const coursePackEntity = await insertCoursePack(db);
       const courseEntity = await insertCourse(db, coursePackEntity.id);
       const result = await userService.setupNewUser(user, dto);

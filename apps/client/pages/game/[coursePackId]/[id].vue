@@ -41,7 +41,7 @@ onMounted(async () => {
   await coursePackStore.setupCoursePack(coursePackId as string);
 
   if (courseStore.isAllMastered()) {
-    toast.info("你已经全部都掌握 自动帮你跳转到课程列表啦", {
+    toast.info("Bạn đã thuộc tất cả rồi, tự động chuyển đến danh sách bài", {
       duration: 1500,
       onAutoClose: () => {
         gotoCourseList(coursePackId as string);

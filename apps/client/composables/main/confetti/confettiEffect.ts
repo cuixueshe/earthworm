@@ -4,7 +4,7 @@ export function redFireworksEffect(customConfetti: ReturnType<typeof confetti.cr
   const duration = 15 * 1000;
   const animationEnd = Date.now() + duration;
   const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-  const chineseReds = ["#ed5a65", "#c04851", "#c02c38", "#7c1823"];
+  const accentReds = ["#ed5a65", "#c04851", "#c02c38", "#7c1823"];
 
   function randomInRange(min: number, max: number) {
     return Math.random() * (max - min) + min;
@@ -23,13 +23,13 @@ export function redFireworksEffect(customConfetti: ReturnType<typeof confetti.cr
       ...defaults,
       particleCount,
       origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
-      colors: chineseReds,
+      colors: accentReds,
     });
     customConfetti({
       ...defaults,
       particleCount,
       origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
-      colors: chineseReds,
+      colors: accentReds,
     });
   }, 250);
 }

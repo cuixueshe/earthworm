@@ -17,8 +17,8 @@ describe("course pack store", () => {
   it("should ", async () => {
     const coursePack: CoursePack = {
       id: "coursePackId",
-      title: "课程包1",
-      description: "这是一个课程包",
+      title: "Gói bài học 1",
+      description: "Đây là một gói bài học",
       isFree: true,
       courses: [],
       cover: "",
@@ -26,7 +26,7 @@ describe("course pack store", () => {
 
     const firstCourse: Course = {
       id: "1",
-      title: "第一课",
+      title: "Bài học 1",
       description: "",
       video: "",
       order: 1,
@@ -34,12 +34,19 @@ describe("course pack store", () => {
       completionCount: 0,
       statementIndex: 0,
       statements: [
-        { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/", isMastered: false },
+        {
+          id: "1",
+          order: 1,
+          english: "I",
+          nativeText: "Tôi",
+          soundmark: "/aɪ/",
+          isMastered: false,
+        },
         {
           id: "2",
           order: 2,
           english: "like",
-          chinese: "喜欢",
+          nativeText: "thích",
           soundmark: "/laɪk/",
           isMastered: false,
         },
@@ -48,7 +55,7 @@ describe("course pack store", () => {
 
     const secondCourse: Course = {
       id: "2",
-      title: "第二课",
+      title: "Bài học 2",
       order: 2,
       description: "",
       video: "",
@@ -56,12 +63,19 @@ describe("course pack store", () => {
       completionCount: 0,
       statementIndex: 0,
       statements: [
-        { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/", isMastered: false },
+        {
+          id: "1",
+          order: 1,
+          english: "I",
+          nativeText: "Tôi",
+          soundmark: "/aɪ/",
+          isMastered: false,
+        },
         {
           id: "2",
           order: 2,
           english: "like",
-          chinese: "喜欢",
+          nativeText: "thích",
           soundmark: "/laɪk/",
           isMastered: false,
         },

@@ -7,24 +7,27 @@
       <h2
         class="bg-gradient-to-r from-purple-600 to-gray-200 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent dark:from-purple-600 dark:to-gray-100 lg:text-4xl xl:text-5xl"
       >
-        让你上瘾的英语学习工具
+        Công cụ học tiếng Anh gây nghiện
       </h2>
 
       <div class="mt-5 text-sm md:text-base xl:text-lg">
         <p class="pt-2 text-center text-gray-500 dark:text-gray-300 lg:text-xl">
-          使用<span class="text-purple-400 dark:text-purple-200"> 连词成句 </span>、<span
+          Sử dụng các phương pháp như
+          <span class="text-purple-400 dark:text-purple-200"> ghép từ thành câu </span>、<span
             class="text-purple-400 dark:text-purple-200"
           >
             i + 1 </span
-          >、<span class="text-purple-400 dark:text-purple-200"> 以终为始 </span
-          >等学习理论来帮助你习得英语
+          >、<span class="text-purple-400 dark:text-purple-200"> học từ mục tiêu </span>để giúp bạn
+          tiếp thu tiếng Anh
         </p>
         <p class="pt-2 text-center text-gray-500 dark:text-gray-300 lg:text-xl">
-          通过不断的<span class="text-purple-400 dark:text-purple-200"> 重复 </span>形成肌肉记忆
+          Thông qua việc <span class="text-purple-400 dark:text-purple-200"> lặp lại </span> liên
+          tục để tạo ra phản xạ tự nhiên
         </p>
         <p class="pt-2 text-center text-gray-500 dark:text-gray-300 lg:text-xl">
-          最重要的是<span class="text-purple-400 dark:text-purple-200"> 游戏化 </span
-          >的形式让学习英语从此不再痛苦
+          Quan trọng nhất là hình thức
+          <span class="text-purple-400 dark:text-purple-200"> trò chơi hóa </span>giúp việc học
+          tiếng Anh không còn nhàm chán nữa
         </p>
       </div>
     </div>
@@ -34,7 +37,7 @@
         class="btn relative"
         type="button"
       >
-        <strong>开启Earthworm</strong>
+        <strong>Bắt đầu Earthworm</strong>
         <div id="container-stars">
           <div id="stars"></div>
         </div>

@@ -13,7 +13,7 @@ import { createCoursePack, deleteCoursePack, updateCoursePack } from "../course-
 
 describe("course pack service", () => {
   beforeEach(async () => {
-    // 清空数据库
+    // Clean the database
     await cleanDB(db);
   });
 
@@ -334,7 +334,7 @@ describe("course pack service", () => {
               statements: [
                 {
                   english: "New English Statement",
-                  chinese: "New Chinese Statement",
+                  nativeText: "New Vietnamese Statement",
                   phonetic: "New Phonetic",
                 },
               ],
@@ -378,7 +378,7 @@ describe("course pack service", () => {
           ],
         };
         await updateCoursePack(result.coursePackId, updateInfo);
-        // 删除了一个 只剩下一个
+        // Deleted one, only one remains
         const courses = await db.query.course.findMany();
         expect(courses.length).toBe(1);
       });
@@ -584,7 +584,7 @@ describe("course pack service", () => {
               statements: [
                 {
                   english: "Updated English Statement",
-                  chinese: "Updated Chinese Statement",
+                  nativeText: "Updated Vietnamese Statement",
                   phonetic: "Updated Phonetic",
                 },
               ],
@@ -602,7 +602,7 @@ describe("course pack service", () => {
 
         expect(updatedStatement).toBeDefined();
         expect(updatedStatement!.english).toBe(updateInfo.courses[0].statements[0].english);
-        expect(updatedStatement!.chinese).toBe(updateInfo.courses[0].statements[0].chinese);
+        expect(updatedStatement!.nativeText).toBe(updateInfo.courses[0].statements[0].nativeText);
         expect(updatedStatement!.soundmark).toBe(updateInfo.courses[0].statements[0].phonetic);
       });
 
@@ -627,7 +627,7 @@ describe("course pack service", () => {
                 ...mockData.courses[0].statements,
                 {
                   english: "New English Statement",
-                  chinese: "New Chinese Statement",
+                  nativeText: "New Vietnamese Statement",
                   phonetic: "New Phonetic",
                 },
               ],
@@ -647,7 +647,7 @@ describe("course pack service", () => {
         });
 
         expect(newStatement).toBeDefined();
-        expect(newStatement!.chinese).toBe("New Chinese Statement");
+        expect(newStatement!.nativeText).toBe("New Vietnamese Statement");
         expect(newStatement!.soundmark).toBe("New Phonetic");
       });
 
@@ -671,7 +671,7 @@ describe("course pack service", () => {
               statements: [
                 {
                   english: "Updated English Statement",
-                  chinese: "Updated Chinese Statement",
+                  nativeText: "Updated Vietnamese Statement",
                   phonetic: "Updated Phonetic",
                 },
               ],
@@ -749,12 +749,12 @@ function createCoursePackMockData() {
           {
             english: "The quick brown fox jumps over the lazy dog.",
             phonetic: "/ðə kwɪk braʊn fɑks dʒʌmps oʊvər ðə leɪzi dɔɡ/",
-            chinese: "快速的棕色狐狸跳过懒狗。",
+            nativeText: "Con cáo nâu nhanh nhẹn nhảy qua con chó lười biếng.",
           },
           {
             english: "She sells seashells by the seashore.",
             phonetic: "/ʃi sɛlz siːʃɛlz baɪ ðə siːʃɔːr/",
-            chinese: "她在海边卖贝壳。",
+            nativeText: "Cô ấy bán vỏ sò bên bờ biển.",
           },
         ],
       },
@@ -766,12 +766,12 @@ function createCoursePackMockData() {
           {
             english: "He is an erudite scholar with extensive knowledge.",
             phonetic: "/hiː ɪz ən ˈɜːr.daɪt ˈskɒl.ər wɪð ɪkˈstɛn.sɪv ˈnɒl.ɪdʒ/",
-            chinese: "他是一位博学的学者，拥有广泛的知识。",
+            nativeText: "Anh ấy là một học giả uyên bác với kiến thức sâu rộng.",
           },
           {
             english: "The symposium encompassed a wide range of topics.",
             phonetic: "/ðə ˈsɪm.pə.zi.əm ɛn.kʌmp.əsəd ə waɪd reɪndʒ ʌv ˈtɑ.pɪks/",
-            chinese: "研讨会涵盖了广泛的主题。",
+            nativeText: "Hội thảo bao gồm nhiều chủ đề đa dạng.",
           },
         ],
       },

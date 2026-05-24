@@ -26,8 +26,8 @@ export class CoursePackService {
       const userIdOwnedCoursePacks = await this.findAllForUser(userId);
       result.push(...userIdOwnedCoursePacks);
 
-      // 看看是不是创始会员
-      // 是的话 需要去查所有课程包的 shareLevel 为 founder_only 的
+      // Check if user is a founder member
+      // If so, query all course packs with shareLevel founder_only
       if (await this.membershipService.isFounderMembership(userId)) {
         const founderOnlyCoursePacks = await this.findFounderOnly();
         result.push(...founderOnlyCoursePacks);
@@ -40,7 +40,7 @@ export class CoursePackService {
   async findFounderOnly() {
     const coursePacks = await this.db.query.coursePack.findMany({
       orderBy: asc(coursePack.order),
-      where: and(eq(coursePack.shareLevel, "founder_only")), // TODO 缺一个 shareLevel 的枚举类型
+      where: and(eq(coursePack.shareLevel, "founder_only")), // TODO Missing a shareLevel enum type
     });
 
     return coursePacks;

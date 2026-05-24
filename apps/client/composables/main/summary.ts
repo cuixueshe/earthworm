@@ -20,10 +20,10 @@ export function useSummary() {
 }
 
 export const defaultEnSentence = "To be, or not to be, that is the question.";
-export const defaultZhSentence = "生存还是毁灭，这是一个问题。";
+export const defaultNativeSentence = "Sống hay chết, đó là vấn đề.";
 
 const enSentence = ref(defaultEnSentence);
-const zhSentence = ref(defaultZhSentence);
+const nativeSentence = ref(defaultNativeSentence);
 const hasLoadingDailySentence = ref(false);
 
 export const resetSentenceLoading = () => (hasLoadingDailySentence.value = false);
@@ -37,7 +37,7 @@ export function useDailySentence() {
         return Promise.reject(err);
       });
       enSentence.value = en;
-      zhSentence.value = zh;
+      nativeSentence.value = zh;
     }
   };
 
@@ -47,7 +47,7 @@ export function useDailySentence() {
 
   return {
     enSentence,
-    zhSentence,
+    nativeSentence,
     getDailySentence,
   };
 }
