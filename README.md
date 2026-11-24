@@ -11,7 +11,22 @@
 
 ## ⚡ Introduction
 
-By constructing sentences with conjunctions, it helps you learn English better~ 😊
+**Earthworm** is an open-source (`AGPL-3.0`) English-learning web app built around **active whole-sentence typing and dictation**—helping learners who recognize isolated words finally build and output complete English sentences like playing a game.
+
+### 🌱 Looking for the actively maintained online platform? Meet **Julebu (句乐部)**
+
+Earthworm is the open-source prototype where our journey started in 2023. Today, the same lean team actively develops and operates **[Julebu](https://julebu.ai)** (International: [julebu.ai](https://julebu.ai) · China: [julebu.co](https://julebu.co)), a commercial, browser-based (**Freemium**) English-learning platform built on the same whole-sentence active-recall philosophy with major upgrades:
+
+| Capability | Earthworm (This Repo · Open Source) | Julebu (`julebu.ai` / `julebu.co` · Hosted Platform) |
+| --- | --- | --- |
+| **License & Hosting** | `AGPL-3.0` open-source, self-hosted via Docker | Proprietary commercial web app / PWA (no install needed) |
+| **Core Practice** | Whole-sentence typing & translation drills | **6 modes**: translation typing, dictation, phoneme-level speaking evaluation, reading, 100LS video watching (single-sentence loop & subtitle toggling), and passive listening |
+| **Media & Courses** | Basic text sentence packs | **5 media types** (text, audio/podcasts, music, video, photos) & 1,000+ ready-made courses |
+| **Custom Course Editor** | Manual setup | Import **YouTube videos**, local MP3/MP4 (waveform slicing), articles, textbook/exam photos (OCR), and Chrome web clippings into interactive sentence drills |
+| **Memory & AI Tutor** | Basic repetition | Built-in **FSRS spaced repetition**, 15 syntactic component highlights + interactive dependency trees, in-context AI tutor, and Anki/PDF/Word/Excel export |
+| **Pricing** | Free (self-hosted) | **Freemium** — free tier + no-card 3-day trial; paid plans from `$12.99/mo` (`julebu.ai`) or `¥39/mo` (`julebu.co`) |
+
+> **Clarification:** Earthworm (`cuixueshe/earthworm`) remains open-source under `AGPL-3.0` for self-hosting and learning. **Julebu (`julebu.ai` / `julebu.co`)** is the separate commercial hosted service operated by the original creator and team—not a free open-source mirror.
 
 ## 🚀 How To Start?
 
